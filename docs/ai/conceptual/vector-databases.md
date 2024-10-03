@@ -47,21 +47,7 @@ Other benefits of the RAG pattern include:
 
 ## Available vector database solutions
 
-You can use the following resources as vector database solutions in .NET:
-
-| Resource | SK support | AOAI support |
-|:-|:-|:-|
-| [Azure AI Search](/azure/search/vector-search-overview) | ✔️ | ✔️ |
-| [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-tutorial-vector-similarity) | ❌ | ✔️ |
-| [Azure Cosmos DB for MongoDB vCore](/azure/cosmos-db/mongodb/vcore/vector-search) | ✔️ | ✔️ |
-| [Azure Cosmos DB for NoSQL](/azure/cosmos-db/vector-search) | ❌ | ✔️ |
-| [Azure Cosmos DB for PostgreSQL](/azure/cosmos-db/postgresql/howto-use-pgvector) | ❌ | ✔️ |
-| [Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/how-to-use-pgvector) | ✔️ | ✔️ |
-| [Azure SQL Database](/azure/azure-sql/database/ai-artificial-intelligence-intelligent-applications?&preserve-view=true#vector-search) | ✔️ | ✔️ |
-| [Open-source vector databases](/azure/cosmos-db/mongodb/vcore/vector-search-ai) | ✔️ | ❌ |
-| | | |
-
-You use [connectors](/semantic-kernel/memories/vector-db#available-connectors-to-vector-databases) to access vector databases solutions with Semantic Kernel. Because in Semantic Kernel you build connectors into the [kernel](/semantic-kernel/agents/kernel/?tabs=Csharp), you can use [planners](/semantic-kernel/agents/planners/?tabs=Csharp) to orchestrate vector database functions.
+[!INCLUDE [vector-databases](../includes/vector-databases.md)]
 
 ## Related content
 

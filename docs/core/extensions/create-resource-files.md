@@ -144,7 +144,7 @@ csc greeting.cs -resource:GreetingResources.resources
 </data>
 ```
 
-> [!WARNING]
+> [!CAUTION]
 > Do not use resource files to store passwords, security-sensitive information, or private data.
 
  For resource objects, the **data** tag includes a `type` attribute that indicates the data type of the resource. For objects that consist of binary data, the `data` tag also includes a `mimetype` attribute, which indicates the `base64` type of the binary data.
@@ -183,7 +183,7 @@ You can use the <xref:System.Resources.ResourceWriter?displayProperty=nameWithTy
 
 3. Call the <xref:System.Resources.ResourceWriter.Close%2A?displayProperty=nameWithType> method to write the resources to the file and to close the <xref:System.Resources.ResourceWriter> object.
 
-> [!NOTE]
+> [!CAUTION]
 > Do not use resource files to store passwords, security-sensitive information, or private data.
 
  The following example programmatically creates a .resources file named CarResources.resources that stores six strings, an icon, and two application-defined objects (two `Automobile` objects). The `Automobile` class, which is defined and instantiated in the example, is tagged with the <xref:System.SerializableAttribute> attribute, which allows it to be persisted by the binary serialization formatter.

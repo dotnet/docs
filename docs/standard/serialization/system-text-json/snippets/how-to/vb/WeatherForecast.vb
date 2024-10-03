@@ -91,7 +91,7 @@ Namespace SystemTextJsonSamples
     ' </WFWithConverterAttribute>
 
     ' <WFWithPropertyNameAttribute>
-    Public Class WeatherForecastWithPropertyNameAttribute
+    Public Class WeatherForecastWithPropertyName
         Public Property [Date] As DateTimeOffset
         Public Property TemperatureCelsius As Integer
         Public Property Summary As String
@@ -262,7 +262,7 @@ Namespace SystemTextJsonSamples
         End Sub
 
         <Extension()>
-        Public Sub DisplayPropertyValues(wf As WeatherForecastWithPropertyNameAttribute)
+        Public Sub DisplayPropertyValues(wf As WeatherForecastWithPropertyName)
             Utilities.DisplayPropertyValues(wf)
             Console.WriteLine()
         End Sub
@@ -406,8 +406,8 @@ Namespace SystemTextJsonSamples
             Return weatherForecast1
         End Function
 
-        Public Function CreateWeatherForecastWithPropertyNameAttribute() As WeatherForecastWithPropertyNameAttribute
-            Dim weatherForecast1 As WeatherForecastWithPropertyNameAttribute = New WeatherForecastWithPropertyNameAttribute With {
+        Public Function CreateWeatherForecastWithPropertyName() As WeatherForecastWithPropertyName
+            Dim weatherForecast1 As WeatherForecastWithPropertyName = New WeatherForecastWithPropertyName With {
                 .[Date] = Date.Parse("2019-08-01"),
                 .TemperatureCelsius = 25,
                 .Summary = "Hot",

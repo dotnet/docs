@@ -49,7 +49,7 @@ Expression trees won't support new expression node types. It would be a breaking
 - Method group expressions, including [*address-of* (`&`)](../../language-reference/operators/pointer-related-operators.md) a method group, and anonymous method expressions
 - References to [local functions](../../programming-guide/classes-and-structs/local-functions.md)
 - Statements, including assignment (`=`) and statement bodied expressions
-- [Partial methods](../../language-reference/keywords/partial-method.md) with only a defining declaration
+- [Partial methods](../../language-reference/keywords/partial-member.md) with only a defining declaration
 - [Unsafe pointer operations](../../language-reference/unsafe-code.md#pointer-types)
 - [`dynamic` operations](../../language-reference/builtin-types/reference-types.md#the-dynamic-type)
 - [Coalescing operators with `null` or `default` literal left side, null coalescing assignment](../../language-reference/operators/assignment-operator.md#null-coalescing-assignment), and the [null propagating operator (`?.`)](../../language-reference/operators/null-coalescing-operator.md)

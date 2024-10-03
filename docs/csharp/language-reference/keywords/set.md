@@ -1,13 +1,12 @@
 ---
-description: "set keyword - C# Reference"
-title: "set keyword"
-ms.date: 03/10/2017
+description: "The C# set keyword declares a set accessor in a property or indexer. It defines the code to set the value of the property or indexed property."
+title: "set keyword: property accessor"
+ms.date: 08/15/2024
 f1_keywords: 
   - "set"
   - "set_CSharpKeyword"
 helpviewer_keywords: 
   - "set keyword [C#]"
-ms.assetid: 30d7e4e5-cc2e-4635-a597-14a724879619
 ---
 # set (C# Reference)
 
@@ -15,16 +14,19 @@ The `set` keyword defines an *accessor* method in a property or indexer that ass
 
 The following example defines both a `get` and a `set` accessor for a property named `Seconds`. It uses a private field named `_seconds` to back the property value.
 
-[!code-csharp[set#1](~/samples/snippets/csharp/language-reference/keywords/get/get-1.cs)]
+:::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetAccessors":::
 
 Often, the `set` accessor consists of a single statement that assigns a value, as it did in the previous example. You can implement the `set` accessor as an expression-bodied member. The following example implements both the `get` and the `set` accessors as expression-bodied members.
 
-[!code-csharp[set#3](~/samples/snippets/csharp/language-reference/keywords/get/get-3.cs)]
+:::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetExpressions":::
   
 For simple cases in which a property's `get` and `set` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for auto-implemented properties. The following example implements `Hours` as an auto-implemented property.
 
-[!code-csharp[set#2](~/samples/snippets/csharp/language-reference/keywords/get/get-2.cs)]
-  
+:::code language="csharp" source="./snippets/PropertyAccessors.cs" id="AutoImplementedProperties":::
+
+> [!IMPORTANT]
+> Auto-implemented properties aren't allowed for [interface property declarations](../../programming-guide/classes-and-structs/interface-properties.md) or [partial property declarations](./partial-member.md). In both cases, the compiler interprets syntax matching an auto-implemented property as the declaring declaration, not an implementing declaration.
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

@@ -6,9 +6,7 @@ description: The supported keywords and values of connection strings.
 ---
 # Connection strings
 
-A connection string is used to specify how to connect to the database. Connection strings in Microsoft.Data.Sqlite
-follow the standard [ADO.NET syntax](../../../framework/data/adonet/connection-strings.md) as a semicolon-separated list of
-keywords and values.
+A connection string is used to specify how to connect to the database. Connection strings in Microsoft.Data.Sqlite follow the standard [ADO.NET syntax](../../../framework/data/adonet/connection-strings.md) as a semicolon-separated list of keywords and values.
 
 ## Keywords
 
@@ -113,6 +111,8 @@ A value indicating whether the connection will be pooled.
 You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a strongly typed way of creating connection strings. It can also be used to prevent connection string injection attacks.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 ## Examples
 

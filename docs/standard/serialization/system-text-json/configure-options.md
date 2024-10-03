@@ -59,7 +59,7 @@ The metadata cache of the existing `JsonSerializerOptions` instance isn't copied
 The following options have different defaults for web apps:
 
 * <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive%2A> = `true`
-* <xref:System.Text.Json.JsonNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
+* <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy> = <xref:System.Text.Json.JsonNamingPolicy.CamelCase>
 * <xref:System.Text.Json.JsonSerializerOptions.NumberHandling%2A> = <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString>
 
 In .NET 9 and later versions, you can use the `JsonSerializerOptions.Web` <!-- <xref:System.Text.Json.JsonSerializerOptions.Web?displayProperty=nameWithType> --> singleton to serialize with the default options that ASP.NET Core uses for web apps. In earlier versions, call the [JsonSerializerOptions constructor](xref:System.Text.Json.JsonSerializerOptions.%23ctor(System.Text.Json.JsonSerializerDefaults)) to create a new instance with the web defaults, as shown in the following example:

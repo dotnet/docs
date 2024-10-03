@@ -26,7 +26,7 @@ The Web.config file configures the WCF service with 3 endpoints:
 
 - The ~/service.svc/soap endpoint that allows the clients to access the service using the SOAP over HTTP binding.
 
-The HTTP endpoint is configured with a <`webHttp`> standard endpoint which has `helpEnabled` set to `true`. As a result, the service exposes an XHTML based help page at ~/service.svc/http/help that HTTP-based clients can use to access the service.
+The HTTP endpoint is configured with a `<webHttp>` standard endpoint which has `helpEnabled` set to `true`. As a result, the service exposes an XHTML based help page at ~/service.svc/http/help that HTTP-based clients can use to access the service.
 
 The client project demonstrates accessing the service using a SOAP proxy (generated through **Add Service Reference**) and accessing the service using <xref:System.Net.WebClient>.
 

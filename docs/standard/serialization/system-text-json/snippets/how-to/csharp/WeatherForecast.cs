@@ -111,7 +111,7 @@ namespace SystemTextJsonSamples
     // </WFWithConverterAttribute>
 
     // <WFWithPropertyNameAttribute>
-    public class WeatherForecastWithPropertyNameAttribute
+    public class WeatherForecastWithPropertyName
     {
         public DateTimeOffset Date { get; set; }
         public int TemperatureCelsius { get; set; }
@@ -360,9 +360,9 @@ namespace SystemTextJsonSamples
             return weatherForecast;
         }
 
-        public static WeatherForecastWithPropertyNameAttribute CreateWeatherForecastWithPropertyNameAttribute()
+        public static WeatherForecastWithPropertyName CreateWeatherForecastWithPropertyName()
         {
-            var weatherForecast = new WeatherForecastWithPropertyNameAttribute
+            var weatherForecast = new WeatherForecastWithPropertyName
             {
                 Date = DateTime.Parse("2019-08-01"),
                 TemperatureCelsius = 25,

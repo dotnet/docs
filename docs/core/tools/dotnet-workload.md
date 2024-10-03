@@ -25,6 +25,10 @@ The `dotnet workload` command provides commands for working with .NET workloads.
 
 ## Options
 
+- **`--version`**
+
+  Displays the current workload set version.
+
 - **`--info`**
 
   Prints out detailed information about installed workloads, including their installation source, manifest version, manifest path, and install type.

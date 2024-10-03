@@ -2,7 +2,7 @@
 title: Collect a distributed trace - .NET
 description: Tutorials to collect distributed traces in .NET applications using OpenTelemetry, Application Insights, or ActivityListener
 ms.topic: tutorial
-ms.date: 03/14/2021
+ms.date: 08/27/2024
 ---
 
 # Collect a distributed trace
@@ -27,7 +27,7 @@ configure OpenTelemetry to send information elsewhere, see the
 
 #### Prerequisites
 
-- [.NET Core 7.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- [.NET Core 8.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 #### Create an example application
 
@@ -45,15 +45,11 @@ if we browse the web page.
 To use OpenTelemetry, you need to add references to several NuGet packages.
 
 ```dotnetcli
-dotnet add package OpenTelemetry --version 1.4.0-rc1
-dotnet add package OpenTelemetry.Exporter.Console --version 1.4.0-rc1
-dotnet add package OpenTelemetry.Extensions.Hosting --version 1.4.0-rc1
-dotnet add package OpenTelemetry.Instrumentation.AspNetCore --version 1.0.0-rc9.10
+dotnet add package OpenTelemetry
+dotnet add package OpenTelemetry.Exporter.Console
+dotnet add package OpenTelemetry.Extensions.Hosting
+dotnet add package OpenTelemetry.Instrumentation.AspNetCore
 ```
-
-> [!NOTE]
-> At the time of writing, the 1.4.0 Release Candidate 1 build was the latest version of OpenTelemetry available. Once a final version
-> is available, use that instead.
 
 Next, modify the source code in *Program.cs* so it looks like this:
 
@@ -70,7 +66,7 @@ builder.Services.AddOpenTelemetry()
     {
         builder.AddAspNetCoreInstrumentation();
         builder.AddConsoleExporter();
-    }).StartWithHost();
+    });
 
 var app = builder.Build();
 
@@ -98,26 +94,28 @@ Run the app and use a web browser to browse to the web page being hosted. Now th
 tracing, you should see information about the browser web requests printed to the console:
 
 ```
-Activity.TraceId:            9c4519ce65a667280daedb3808d376f0
-Activity.SpanId:             727c6a8a6cff664f
+Activity.TraceId:            4510acfc49c6f8a582c6a40004df9a76
+Activity.SpanId:             65fe2c5c15f05ed8
 Activity.TraceFlags:         Recorded
 Activity.ActivitySourceName: Microsoft.AspNetCore
-Activity.DisplayName:        /
+Activity.DisplayName:        GET
 Activity.Kind:               Server
-Activity.StartTime:          2023-01-08T01:56:05.4529879Z
-Activity.Duration:           00:00:00.1048255
+Activity.StartTime:          2024-08-27T23:12:58.7837908Z
+Activity.Duration:           00:00:00.1297070
 Activity.Tags:
-    net.host.name: localhost
-    net.host.port: 5163
-    http.method: GET
-    http.scheme: http
-    http.target: /
-    http.url: http://localhost:5163/
-    http.flavor: 1.1
-    http.user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76
-    http.status_code: 200
+    server.address: localhost
+    server.port: 5005
+    http.request.method: GET
+    url.scheme: http
+    url.path: /
+    network.protocol.version: 1.1
+    user_agent.original: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+    http.response.status_code: 200
 Resource associated with Activity:
-    service.name: unknown_service:demo
+    telemetry.sdk.name: opentelemetry
+    telemetry.sdk.language: dotnet
+    telemetry.sdk.version: 1.9.0
+    service.name: unknown_service:webapp
 ```
 
 All of the OpenTelemetry configuration occurs in the new source lines that start with `builder.Services.AddOpenTelemetry()`. You used
@@ -131,7 +129,7 @@ another monitoring service you've chosen to use.
 
 #### Prerequisites
 
-- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- [.NET Core 8.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 #### Create an example application
 
@@ -148,10 +146,6 @@ dotnet new console
 Applications that target .NET 5 and later already have the necessary distributed tracing APIs included. For apps targeting older
 .NET versions, add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
 version 5 or greater.
-
-```dotnetcli
-dotnet add package System.Diagnostics.DiagnosticSource
-```
 
 Replace the contents of the generated Program.cs with this example source:
 
@@ -174,7 +168,7 @@ namespace Sample.DistributedTracing
 
         static async Task DoSomeWork()
         {
-            using (Activity a = s_source.StartActivity("SomeWork"))
+            using (Activity? a = s_source.StartActivity("SomeWork"))
             {
                 await StepOne();
                 await StepTwo();
@@ -183,7 +177,7 @@ namespace Sample.DistributedTracing
 
         static async Task StepOne()
         {
-            using (Activity a = s_source.StartActivity("StepOne"))
+            using (Activity? a = s_source.StartActivity("StepOne"))
             {
                 await Task.Delay(500);
             }
@@ -191,7 +185,7 @@ namespace Sample.DistributedTracing
 
         static async Task StepTwo()
         {
-            using (Activity a = s_source.StartActivity("StepTwo"))
+            using (Activity? a = s_source.StartActivity("StepTwo"))
             {
                 await Task.Delay(1000);
             }
@@ -246,34 +240,52 @@ Now the app collects distributed trace information and displays it to the consol
 
 ```dotnetcli
 > dotnet run
-Activity.Id:          00-7759221f2c5599489d455b84fa0f90f4-6081a9b8041cd840-01
-Activity.ParentId:    00-7759221f2c5599489d455b84fa0f90f4-9a52f72c08a9d447-01
-Activity.DisplayName: StepOne
-Activity.Kind:        Internal
-Activity.StartTime:   2021-03-18T10:46:46.8649754Z
-Activity.Duration:    00:00:00.5069226
+Activity.TraceId:            48d7509cc4f06db6f48f2207f19c3918
+Activity.SpanId:             406a1de6b5e8192e
+Activity.TraceFlags:         Recorded
+Activity.ParentSpanId:       345f5f98015b589a
+Activity.ActivitySourceName: Sample.DistributedTracing
+Activity.DisplayName:        StepOne
+Activity.Kind:               Internal
+Activity.StartTime:          2024-08-27T23:22:44.9900801Z
+Activity.Duration:           00:00:00.5077426
 Resource associated with Activity:
     service.name: MySample
-    service.instance.id: 909a4624-3b2e-40e4-a86b-4a2c8003219e
+    service.instance.id: a87f9e7d-d28c-4a91-9bb3-939a50cac7db
+    telemetry.sdk.name: opentelemetry
+    telemetry.sdk.language: dotnet
+    telemetry.sdk.version: 1.9.0
 
-Activity.Id:          00-7759221f2c5599489d455b84fa0f90f4-d2b283db91cf774c-01
-Activity.ParentId:    00-7759221f2c5599489d455b84fa0f90f4-9a52f72c08a9d447-01
-Activity.DisplayName: StepTwo
-Activity.Kind:        Internal
-Activity.StartTime:   2021-03-18T10:46:47.3838737Z
-Activity.Duration:    00:00:01.0142278
+Activity.TraceId:            48d7509cc4f06db6f48f2207f19c3918
+Activity.SpanId:             458fb58342ca127a
+Activity.TraceFlags:         Recorded
+Activity.ParentSpanId:       345f5f98015b589a
+Activity.ActivitySourceName: Sample.DistributedTracing
+Activity.DisplayName:        StepTwo
+Activity.Kind:               Internal
+Activity.StartTime:          2024-08-27T23:22:45.5906581Z
+Activity.Duration:           00:00:01.0023729
 Resource associated with Activity:
     service.name: MySample
-    service.instance.id: 909a4624-3b2e-40e4-a86b-4a2c8003219e
+    service.instance.id: a87f9e7d-d28c-4a91-9bb3-939a50cac7db
+    telemetry.sdk.name: opentelemetry
+    telemetry.sdk.language: dotnet
+    telemetry.sdk.version: 1.9.0
 
-Activity.Id:          00-7759221f2c5599489d455b84fa0f90f4-9a52f72c08a9d447-01
-Activity.DisplayName: SomeWork
-Activity.Kind:        Internal
-Activity.StartTime:   2021-03-18T10:46:46.8634510Z
-Activity.Duration:    00:00:01.5402045
+Activity.TraceId:            48d7509cc4f06db6f48f2207f19c3918
+Activity.SpanId:             345f5f98015b589a
+Activity.TraceFlags:         Recorded
+Activity.ActivitySourceName: Sample.DistributedTracing
+Activity.DisplayName:        SomeWork
+Activity.Kind:               Internal
+Activity.StartTime:          2024-08-27T23:22:44.9894135Z
+Activity.Duration:           00:00:01.6059128
 Resource associated with Activity:
     service.name: MySample
-    service.instance.id: 909a4624-3b2e-40e4-a86b-4a2c8003219e
+    service.instance.id: a87f9e7d-d28c-4a91-9bb3-939a50cac7db
+    telemetry.sdk.name: opentelemetry
+    telemetry.sdk.language: dotnet
+    telemetry.sdk.version: 1.9.0
 
 Example work done
 ```
@@ -316,7 +328,7 @@ it to the console.
 
 ### Prerequisites
 
-- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
+- [.NET Core 8.0 SDK](https://dotnet.microsoft.com/download/dotnet) or a later version
 
 ### Create an example application
 
@@ -329,10 +341,6 @@ dotnet new console
 Applications that target .NET 5 and later already have the necessary distributed tracing APIs included. For apps targeting older
 .NET versions, add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
 version 5 or greater.
-
-```dotnetcli
-dotnet add package System.Diagnostics.DiagnosticSource
-```
 
 Replace the contents of the generated Program.cs with this example source:
 
@@ -355,7 +363,7 @@ namespace Sample.DistributedTracing
 
         static async Task DoSomeWork()
         {
-            using (Activity a = s_source.StartActivity("SomeWork"))
+            using (Activity? a = s_source.StartActivity("SomeWork"))
             {
                 await StepOne();
                 await StepTwo();
@@ -364,7 +372,7 @@ namespace Sample.DistributedTracing
 
         static async Task StepOne()
         {
-            using (Activity a = s_source.StartActivity("StepOne"))
+            using (Activity? a = s_source.StartActivity("StepOne"))
             {
                 await Task.Delay(500);
             }
@@ -372,7 +380,7 @@ namespace Sample.DistributedTracing
 
         static async Task StepTwo()
         {
-            using (Activity a = s_source.StartActivity("StepTwo"))
+            using (Activity? a = s_source.StartActivity("StepTwo"))
             {
                 await Task.Delay(1000);
             }

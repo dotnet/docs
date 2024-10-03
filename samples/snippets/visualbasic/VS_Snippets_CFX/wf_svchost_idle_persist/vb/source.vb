@@ -1,11 +1,8 @@
-﻿Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
-Imports System.ServiceModel.Activities.Description
+﻿Imports System.Activities.DurableInstancing
+Imports System.Activities.Statements
 Imports System.ServiceModel
 Imports System.ServiceModel.Activities
-Imports System.Activities.Statements
-Imports System.Activities.DurableInstancing
+Imports System.ServiceModel.Activities.Description
 Namespace ConsoleX
 
     Class Program
@@ -14,13 +11,13 @@ Namespace ConsoleX
 
             ' host As WorkflowServiceHost
 
-            Static Dim connectionString As String = _
-            "Server=.\\SQLEXPRESS;Initial Catalog=Persistence;Integrated Security=SSPI"
-            ' The Throw class derives from the Activity class, needed to 
+            Static Dim connectionString As String =
+            "..."
+            ' The Throw class derives from the Activity class, needed to
             ' construct a WorkflowServiceHost.
             Dim throwError As [Throw] = New [Throw]()
 
-            Dim host As WorkflowServiceHost = New WorkflowServiceHost(throwError, _
+            Dim host As WorkflowServiceHost = New WorkflowServiceHost(throwError,
                New Uri("http://microsoft/services/"))
             '<snippet1>
             ' Code to create a WorkflowServiceHost not shown here.
@@ -42,16 +39,11 @@ Namespace ConsoleX
             Console.ReadLine()
         End Sub
 
-
     End Class
-
 
     <ServiceContract()> Interface ICalculator
         <OperationContract()> Function Add(ByVal a As Integer, ByVal b As Integer) As Integer
     End Interface
-
-
-
 
     Public Class Calculator
         Implements ICalculator
@@ -61,6 +53,5 @@ Namespace ConsoleX
         End Function
 
     End Class
-
 
 End Namespace

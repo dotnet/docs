@@ -25,6 +25,10 @@ Design rules will help you create and maintain test suites that adhere to proper
 
 Rules that support high-performance testing.
 
+**[Suppression rules](suppression-rules.md)**
+
+Rules that support suppressing diagnostics from other rules.
+
 **[Usage rules](usage-rules.md)**
 
 Rules that support proper usage of MSTest.

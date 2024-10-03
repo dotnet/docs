@@ -24,6 +24,8 @@ ms.topic: reference
 | `8` | The exit code `8` indicates that the test session ran zero tests. |
 | `9` | The exit code `9` indicates that the minimum execution policy for the executed tests was violated. |
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
+| `11` | The exit code `11` indicates that the test process will exit if dependent process exits. |
+| `12` | The exit code `12` indicates that the test session was unable to run because the client does not support any of the supported protocol versions. |
 
 To enable verbose logging and troubleshoot issues, see [Microsoft.Testing.Platform Diagnostics extensions](unit-testing-platform-extensions-diagnostics.md#built-in-options).
 

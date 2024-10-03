@@ -92,7 +92,7 @@ In .NET, a <xref:System.String> object can include embedded null characters, whi
 
 - The value returned by the `strlen` or `wcslen` functions does not necessarily equal <xref:System.String.Length%2A?displayProperty=nameWithType>.
 
-- The string created by the `strcpy_s` or `wcscpy_s` functions is not necessarily identical to the string created by the <xref:System.String.Copy%2A?displayProperty=nameWithType> method.
+- The string created by the `strcpy_s` or `wcscpy_s` functions is not necessarily identical to the string being copied.
 
 You should ensure that native C and C++ code that instantiates <xref:System.String> objects, and code that is passed <xref:System.String> objects through platform invoke, don't assume that an embedded null character marks the end of the string.
 
@@ -450,7 +450,6 @@ For detailed information about formatting operations and examples, see the <xref
 You can call the following <xref:System.String> methods to make a copy of a string:
 
 - <xref:System.String.Clone%2A> returns a reference to an existing <xref:System.String> object.
-- <xref:System.String.Copy%2A> creates a copy of an existing string.
 - <xref:System.String.CopyTo%2A> copies a portion of a string to a character array.
 
 ### Normalize a string

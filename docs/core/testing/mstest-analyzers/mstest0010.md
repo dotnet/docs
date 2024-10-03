@@ -22,6 +22,7 @@ ms.author: enjieid
 | **Enabled by default**              | Yes                                              |
 | **Default severity**                | Warning                                          |
 | **Introduced in version**           | 3.3.0                                            |
+| **There is a code fix**             | Yes                                              |
 
 ## Cause
 
@@ -39,6 +40,12 @@ Methods marked with `[ClassInitialize]` should follow the following layout to be
 - it should not be generic
 - it should take one parameter of type `TestContext`
 - return type should be `void`, `Task` or `ValueTask`
+- `InheritanceBehavior.BeforeEachDerivedClass` attribute parameter should be specified if the class is `abstract`.
+- `InheritanceBehavior.BeforeEachDerivedClass` attribute parameter should not be specified if the class is `sealed`.
+
+[!INCLUDE [test-class-rules](includes/test-class-rules.md)]
+
+- the class should not be generic
 
 ## How to fix violations
 

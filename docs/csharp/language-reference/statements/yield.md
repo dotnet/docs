@@ -38,6 +38,7 @@ You can't use the `yield` statements in:
 - methods with [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameters
 - [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md)
 - [unsafe blocks](../keywords/unsafe.md). Before C# 13, `yield` was invalid in any method with an `unsafe` block. Beginning with C# 13, you can use `yield` in methods with `unsafe` blocks, but not in the `unsafe` block.
+- `yield return` and `yield break` can not be used in [try](../statements/exception-handling-statements.md), [catch](../statements/exception-handling-statements.md) and [finally](../statements/exception-handling-statements.md) blocks.
 
 ## Execution of an iterator
 

@@ -35,6 +35,8 @@ To enable encryption on a new database, specify the key using the `Password` con
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
+
 > [!TIP]
 > The method for encrypting and decrypting existing databases varies depending on which solution you're using. For example, you need to use the `sqlcipher_export()` function on SQLCipher. Check your solution's documentation for details.
 

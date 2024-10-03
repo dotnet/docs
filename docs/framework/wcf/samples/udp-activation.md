@@ -44,7 +44,7 @@ When the callback `ConfigManagerInitializationCompleted` is received, it indicat
 
 When a new request comes in the first time for an application, the listener adapter calls `WebhostOpenListenerChannelInstance` into WAS, which starts the worker process if it is not started yet. Then the protocol handlers are loaded and the communication between the listener adapter and the virtual application can start.
 
-The listener adapter is registered in the %SystemRoot%\System32\inetsrv\ApplicationHost.config in the <`listenerAdapters`> section as following:
+The listener adapter is registered in the %SystemRoot%\System32\inetsrv\ApplicationHost.config in the `<listenerAdapters>` section as following:
 
 ```xml
 <add name="net.udp" identity="S-1-5-21-2127521184-1604012920-1887927527-387045" />

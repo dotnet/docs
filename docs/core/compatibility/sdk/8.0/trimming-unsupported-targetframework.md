@@ -34,7 +34,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 Allowing the use of `<PublishTrimmed>` in a .NET Standard or .NET Framework project might have given the false impression that this setting was trimming the output, when in fact it had no effect.
 
-Allowing the use of `<IsTrimmable>` or `<EnableTrimAnalyzer>` in a .NET Standard or .NET Framework project meant that it was easy for library authors to opt into trimming, without being alerted about trim incompatibilities. Because the .NET Standard and .NET Framework reference assemblies aren't annotated for trimming, there were no warnings about uses of framework APIs that are incompatible with trimming.
+Allowing the use of `<IsTrimmable>` or `<EnableTrimAnalyzer>` in a .NET Standard or .NET Framework project meant that it was easy for library authors to opt in to trimming, without being alerted about trim incompatibilities. Because the .NET Standard and .NET Framework reference assemblies aren't annotated for trimming, there were no warnings about uses of framework APIs that are incompatible with trimming.
 
 ## Recommended action
 

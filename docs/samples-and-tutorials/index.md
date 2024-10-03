@@ -42,7 +42,7 @@ See the [ASP.NET Core tutorials](/aspnet/core/tutorials/). Many articles in the 
 
 This sample demonstrates the syntax and features for creating and consuming C# iterators. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/iterators) is available in the dotnet/samples repository on GitHub.
 
-**[Indexers](../csharp/indexers.md)**
+**[Indexers](/dotnet/csharp/programming-guide/indexers)**
 
 This sample demonstrates the syntax and features for C# indexers. The [completed sample](https://github.com/dotnet/samples/tree/main/csharp/indexers) is available in the dotnet/samples repository on GitHub.
 

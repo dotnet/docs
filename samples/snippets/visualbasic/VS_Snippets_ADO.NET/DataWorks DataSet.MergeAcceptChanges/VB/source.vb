@@ -7,17 +7,17 @@ Imports System.Data.SqlClient
 Module Module1
 
     Sub Main()
-        Dim connectionString As String = _
+        Dim connectionString As String =
             GetConnectionString()
         ConnectToData(connectionString)
     End Sub
-    Private Sub ConnectToData( _
+    Private Sub ConnectToData(
          ByVal connectionString As String)
 
-        Using connection As SqlConnection = New SqlConnection( _
+        Using connection As SqlConnection = New SqlConnection(
            connectionString)
 
-            Dim adapter As New SqlDataAdapter( _
+            Dim adapter As New SqlDataAdapter(
               "SELECT CustomerID, CompanyName FROM Customers", connection)
             Dim dataSet As New DataSet
 
@@ -30,7 +30,7 @@ Module Module1
             Dim dataSetChanges As DataSet = dataSet.GetChanges()
 
             ' Add an event handler to handle the errors during Update.
-            AddHandler adapter.RowUpdated, New SqlRowUpdatedEventHandler( _
+            AddHandler adapter.RowUpdated, New SqlRowUpdatedEventHandler(
               AddressOf OnRowUpdated)
 
             connection.Open()
@@ -56,7 +56,7 @@ Module Module1
         End Using
     End Sub
     ' <Snippet2>
-    Private Sub OnRowUpdated( _
+    Private Sub OnRowUpdated(
         ByVal sender As Object, ByVal args As SqlRowUpdatedEventArgs)
         If args.Status = UpdateStatus.ErrorsOccurred Then
             args.Row.RowError = args.Errors.Message
@@ -66,10 +66,7 @@ Module Module1
     ' </Snippet2>
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file.
-        Return "Data Source=(local);Initial Catalog=Northwind;" _
-           & "Integrated Security=SSPI;"
+        Throw New NotImplementedException()
     End Function
 
 End Module

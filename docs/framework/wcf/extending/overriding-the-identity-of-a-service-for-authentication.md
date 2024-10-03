@@ -48,7 +48,7 @@ Typically, you do not have to set the identity on a service because the selectio
 
  If you change the client credential type in the binding previously shown to `Certificate`, then the generated WSDL contains a Base64 serialized X.509 certificate for the identity value as shown in the following code. This is the default for all client credential types other than Windows.
 
- You can change the value of the default service identity or change the type of the identity by using the <`identity`> element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.
+ You can change the value of the default service identity or change the type of the identity by using the `<identity>` element in configuration or by setting the identity in code. The following configuration code sets a domain name system (DNS) identity with the value `contoso.com`.
 
 ### Set Identity Programmatically
 

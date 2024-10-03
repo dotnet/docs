@@ -5,7 +5,6 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: c0043c89-2192-43c9-986d-3ecec4dd8c9c
 ---
 # How to create and run a long-running workflow
 
@@ -114,6 +113,8 @@ The steps in this section add properties and helper methods to the form class th
     ```
 
 3. Add the following member declarations to the **WorkflowHostForm** class.
+
+   [!INCLUDE [managed-identities](../../includes/managed-identities.md)]
 
     ```vb
     Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI"

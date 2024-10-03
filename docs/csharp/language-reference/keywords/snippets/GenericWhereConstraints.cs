@@ -49,6 +49,17 @@ namespace Keywords
     }
     // </Snippet5>
 
+    // <SnippetRefStruct>
+    public class GenericRefStruct<T> where T : allows ref struct
+    {
+        // Scoped is allowed because T might be a ref struct
+        public void M(scoped T parm)
+        {
+
+        }
+    }
+    // </SnippetRefStruct>
+
     // <Snippet6>
     public interface IMyInterface { }
 

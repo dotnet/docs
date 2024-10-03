@@ -8,7 +8,6 @@ static class Program
     static void Main()
     {
         DbConnection? c = CreateFactoryConnection("System.Data.OleDb");
-        //DbConnection? c = CreateFactoryConnection("System.Data.SqlClient");
         if (c != null)
         {
             DbCommandSelect(c);

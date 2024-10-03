@@ -176,7 +176,7 @@ services:
       - "5672:5672"
   sqldata:
     environment:
-      - SA_PASSWORD=Pass@word
+      - SA_PASSWORD=[PLACEHOLDER]
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"
@@ -184,6 +184,8 @@ services:
     ports:
       - "27017:27017"
 ```
+
+[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
 So, to run the functional/integration tests you must first run this command, from the solution test folder:
 

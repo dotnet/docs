@@ -9,7 +9,7 @@ Module Module1
     Sub Main()
         ' <Snippet1>
         ' Assumes GetConnectionString returns a valid connection string
-        ' where pooling is turned off by setting Pooling=False;. 
+        ' where pooling is turned off by setting Pooling=False;.
         Dim connectionString As String = GetConnectionString()
 
         Using connection1 As New SqlConnection(connectionString)
@@ -140,11 +140,7 @@ Module Module1
     End Sub
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file, using the
-        ' System.Configuration.ConfigurationSettings.AppSettings property
-        Return "Data Source=(local);Database=AdventureWorks;" _
-          & "Integrated Security=SSPI;Pooling=False"
+        Throw New NotImplementedException()
     End Function
 
 End Module

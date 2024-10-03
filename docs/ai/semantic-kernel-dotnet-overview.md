@@ -10,12 +10,12 @@ ms.author: alexwolf
 
 # Semantic Kernel overview for .NET
 
-In this article, you explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. You discover why Semantic Kernel is a powerful and recommended choice for working with AI in .NET applications, and you learn:
+In this article, you explore [Semantic Kernel](/semantic-kernel/overview) core concepts and capabilities. Semantic Kernel is a powerful and recommended choice for working with AI in .NET applications. In the sections ahead, you learn:
 
 - How to add semantic kernel to your project
 - Semantic Kernel core concepts
 
-The sections ahead serve as an introductory overview of Semantic Kernel specifically in the context of .NET. For more comprehensive information and training about Semantic Kernel, see the following resources:
+This article serves as an introductory overview of Semantic Kernel specifically in the context of .NET. For more comprehensive information and training about Semantic Kernel, see the following resources:
 
 - [Semantic Kernel documentation](/semantic-kernel/overview)
 - [Semantic Kernel training](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
@@ -115,7 +115,7 @@ string skPrompt = @"Summarize the provided unstructured text in a sentence that 
 
 // Register the function
 kernel.CreateSemanticFunction(
-    promptTemplate: skPrompt, 
+    promptTemplate: skPrompt,
     functionName: "SummarizeText",
     pluginName: "SemanticFunctions"
 );
@@ -132,9 +132,9 @@ The following code snippet defines and registers a native function:
 public class NativeFunctions {
 
     [SKFunction, Description("Retrieve content from local file")]
-    public async Task<string> RetrieveLocalFile(string fileName, int maxSize = 5000) 
+    public async Task<string> RetrieveLocalFile(string fileName, int maxSize = 5000)
     {
-        string content = await File.ReadAllTextAsync(fileName); 
+        string content = await File.ReadAllTextAsync(fileName);
         if (content.Length <= maxSize) return content;
         return content.Substring(0, maxSize);
     }
@@ -159,7 +159,7 @@ Consider the following pseudo-code snippet:
 
 // Configure and create the plan
 string planDefinition = "Read content from a local file and summarize the content.";
-SequentialPlanner sequentialPlanner = new SequentialPlanner(kernel);      
+SequentialPlanner sequentialPlanner = new SequentialPlanner(kernel);
 
 string assetsFolder = @"../../assets";
 string fileName = Path.Combine(assetsFolder,"docs","06_SemanticKernel", "aci_documentation.txt");
@@ -178,21 +178,21 @@ The preceding code creates an executable, sequential plan to read content from a
 
 ### Memory
 
-Semantic Kernel's [Memory](/semantic-kernel/memories) provides abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Memory is agnostic to the underlying LLM or Vector DB, offering a uniform developer experience. You can configure memory features to store data in a variety of sources or service, including Azure AI Search, Azure Cache for Redis, and more.
+Semantic Kernel's [Vector stores](/semantic-kernel/concepts/vector-store-connectors/) provide abstractions over embedding models, vector databases, and other data to simplify context management for AI applications. Vector stores are agnostic to the underlying LLM or Vector database, offering a uniform developer experience. You can configure memory features to store data in a variety of sources or service, including Azure AI Search and Azure Cache for Redis.
 
 Consider the following code snippet:
 
 ```csharp
 var facts = new Dictionary<string,string>();
 facts.Add(
-    "Azure Machine Learning; https://docs.microsoft.com/en-us/azure/machine-learning/", 
-    @"Azure Machine Learning is a cloud service for accelerating and 
-    managing the machine learning project lifecycle. Machine learning professionals, 
+    "Azure Machine Learning; https://learn.microsoft.com/en-us/azure/machine-learning/",
+    @"Azure Machine Learning is a cloud service for accelerating and
+    managing the machine learning project lifecycle. Machine learning professionals,
     data scientists, and engineers can use it in their day-to-day workflows"
 );
 
 facts.Add(
-    "Azure SQL Service; https://docs.microsoft.com/en-us/azure/azure-sql/", 
+    "Azure SQL Service; https://learn.microsoft.com/en-us/azure/azure-sql/",
     @"Azure SQL is a family of managed, secure, and intelligent products
     that use the SQL Server database engine in the Azure cloud."
 );

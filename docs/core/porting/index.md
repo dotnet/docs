@@ -2,13 +2,13 @@
 title: Port from .NET Framework to .NET 7
 description: Understand the porting process and discover tools you might find helpful when porting a .NET Framework project to .NET 7.
 author: adegeo
-ms.date: 02/28/2023
-ms.custom: devdivchpfy22
+ms.date: 07/23/2024
+ms.custom: devdivchpfy22, updateeachrelease
 no-loc: ["package.config", PackageReference]
 ---
 # Overview of porting from .NET Framework to .NET
 
-This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework for many projects is relatively straightforward. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
+This article provides an overview of what you should consider when porting your code from .NET Framework to .NET (formerly named .NET Core). Porting to .NET from .NET Framework is relatively straightforward for many projects. The complexity of your projects dictates how much work you'll need to do after the initial migration of the project files.
 
 Projects where the app model is available in .NET, such as libraries, console apps, and desktop apps, usually require little change. Projects that require a new app model, such as moving to [ASP.NET Core from ASP.NET](/aspnet/core/migration/proper-to-2x/), require more work. Many patterns from the old app model have equivalents that can be used during the conversion.
 
@@ -161,9 +161,9 @@ When porting your application to .NET, consider the following suggestions in ord
 
 ✔️ DO retarget your .NET Framework project to at least .NET Framework 4.7.2. This ensures the availability of the latest API alternatives for cases where .NET Standard doesn't support existing APIs.
 
-✔️ CONSIDER targeting .NET 6, which is a long-term support (LTS) release.
+✔️ CONSIDER targeting .NET 8, which is a long-term support (LTS) release.
 
-✔️ DO target .NET 6+ for **Windows Forms and WPF** projects. .NET 6 contains many improvements for Desktop apps.
+✔️ DO target .NET 6+ for **Windows Forms and WPF** projects. .NET 6 and later versions contain many improvements for Desktop apps.
 
 ✔️ CONSIDER targeting .NET Standard 2.0 if you're migrating a library that might also be used with .NET Framework projects. You can also multitarget your library, targeting both .NET Framework and .NET Standard.
 

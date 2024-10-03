@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk.Desktop
 description: Reference for the MSBuild properties and items that are understood by the .NET Desktop SDK, which includes WPF and WinForms.
-ms.date: 04/26/2024
+ms.date: 08/13/2024
 ms.topic: reference
 author: adegeo
 ms.author: adegeo
@@ -92,7 +92,7 @@ The `UseWPF` property controls whether or not to include references to WPF libra
 </PropertyGroup>
 ```
 
-When this property is set to `true`, .NET 5+ projects automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
+When this property is set to `true`, .NET projects automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 ### EnableDefaultApplicationDefinition
 
@@ -202,25 +202,7 @@ The `UseWindowsForms` property controls whether or not your application is built
 </PropertyGroup>
 ```
 
-When this property is set to `true`, .NET 5+ projects automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
-
-## Shared settings
-
-- [DisableWinExeOutputInference](#disablewinexeoutputinference)
-
-### DisableWinExeOutputInference
-
-Applies to .NET 5 SDK and later.
-
-When an app has the `Exe` value set for the `OutputType` property, a console window is created if the app isn't running from a console. This behavior is generally not desirable for a Windows Desktop app. With the `WinExe` value, a console window isn't created. Starting with the .NET 5 SDK, the `Exe` value is automatically transformed to `WinExe`.
-
-The `DisableWinExeOutputInference` property reverts the behavior of treating `Exe` as `WinExe`. Set this value to `true` to restore the behavior of the `OutputType` property value of `Exe`. The default value is `false`.
-
-```xml
-<PropertyGroup>
-  <DisableWinExeOutputInference>true</DisableWinExeOutputInference>
-</PropertyGroup>
-```
+When this property is set to `true`, .NET projects automatically import the [.NET Desktop SDK](#enable-net-desktop-sdk).
 
 ## See also
 

@@ -160,7 +160,7 @@ C# tuples, which are backed by <xref:System.ValueTuple?displayProperty=nameWithT
 For more information, see:
 
 - [Tuple types](/dotnet/csharp/language-reference/language-specification/types#8311-tuple-types)
-- [Tuple equality operators](/dotnet/csharp/language-reference/language-specification/expressions#111211-tuple-equality-operators)
+- [Tuple equality operators](/dotnet/csharp/language-reference/language-specification/expressions#121211-tuple-equality-operators)
 
 ## See also
 

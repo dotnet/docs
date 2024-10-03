@@ -19,11 +19,11 @@ interface IFoo
     void Method(int i);
 }
 
-[DllImport("MyComObjectProvider.dll")]
-static nint GetPointerToComInterface();
+[DllImport("MyComObjectProvider")]
+static nint GetPointerToComInterface(); // C definition - IUnknown* GetPointerToComInterface();
 
-[DllImport("MyComObjectProvider.dll")]
-static void GivePointerToComInterface(nint comObject);
+[DllImport("MyComObjectProvider")]
+static void GivePointerToComInterface(nint comObject); // C definition - void GivePointerToComInterface(IUnknown* pUnk);
 
 // Use the system to create a Runtime Callable Wrapper to use in managed code
 nint ptr = GetPointerToComInterface();
@@ -67,22 +67,22 @@ internal partial class Foo : IFoo
 At compile time, the generator creates an implementation of the ComWrappers API, and you can use the <xref:System.Runtime.InteropServices.Marshalling.StrategyBasedComWrappers> type or a custom derived type to consume or expose the COM interface.
 
 ```csharp
-[LibraryImport("MyComObjectProvider.dll")]
-static nint GetPointerToComInterface();
+[LibraryImport("MyComObjectProvider")]
+private static partial nint GetPointerToComInterface(); // C definition - IUnknown* GetPointerToComInterface();
 
-[LibraryImport("MyComObjectProvider.dll")]
-static void GivePointerToComInterface(nint comObject);
+[LibraryImport("MyComObjectProvider")]
+private static partial void GivePointerToComInterface(nint comObject); // C definition - void GivePointerToComInterface(IUnknown* pUnk);
 
 // Use the ComWrappers API to create a Runtime Callable Wrapper to use in managed code
 ComWrappers cw = new StrategyBasedComWrappers();
 nint ptr = GetPointerToComInterface();
-IFoo foo = (IFoo)cw.GetOrCreateObjectForComInterface(ptr);
+IFoo foo = (IFoo)cw.GetOrCreateObjectForComInstance(ptr, CreateObjectFlags.None);
 foo.Method(0);
 ...
 // Use the system to create a COM Callable Wrapper to pass to unmanaged code
 ComWrappers cw = new StrategyBasedComWrappers();
 Foo foo = new();
-nint ptr = cw.GetOrCreateComInterfaceForObject(foo);
+nint ptr = cw.GetOrCreateComInterfaceForObject(foo, CreateComInterfaceFlags.None);
 GivePointerToComInterface(ptr);
 ```
 
@@ -185,6 +185,20 @@ interface IDerived : IBase
 ```
 
 Note that an interface with the `GeneratedComInterface` attribute can only inherit from one base interface that has the `GeneratedComInterface` attribute.
+
+#### Derived interfaces across assembly boundaries
+
+In .NET 8, it isn't supported to define an interface with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute that derives from a `GeneratedComInterface`-attributed interface that's defined in another assembly.
+
+In .NET 9 and later versions, this scenario is supported with the following restrictions:
+
+- The base interface type must be compiled targeting the same target framework as the derived type.
+- The base interface type must not shadow any members of its base interface, if it has one.
+
+Additionally, any changes to any generated virtual method offsets in the base interface chain defined in another assembly won't be accounted for in the derived interfaces until the project is rebuilt.
+
+> [!NOTE]
+> In .NET 9 and later versions, a warning is emitted when inheriting generated COM interfaces across assembly boundaries to inform you about the restrictions and pitfalls of using this feature. You can disable this warning to acknowledge the limitations and inherit across assembly boundaries.
 
 ### Marshal APIs
 

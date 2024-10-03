@@ -1,7 +1,7 @@
 ---
 title: Azure Queue streams overview
 description: Explore the streaming implementation with Azure Queue in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 09/10/2024
 ---
 
 # Azure Queue streams overview
@@ -17,7 +17,7 @@ hostBuilder
         configurator.ConfigureAzureQueue(
             ob => ob.Configure(options =>
             {
-                options.ConnectionString = "xxx";
+                options.ConnectionString = "[PLACEHOLDER]";
                 options.QueueNames = new List<string> { "yourprefix-azurequeueprovider-0" };
             }));
     configurator.ConfigureCacheSize(1024);
@@ -28,7 +28,7 @@ hostBuilder
   })
   // a PubSubStore could be needed, as example Azure Table Storage
   .AddAzureTableGrainStorage("PubSubStore", options => {
-    options.ConnectionString = "xxx";
+    options.ConnectionString = "[PLACEHOLDER]";
   })
 ```
 
@@ -47,7 +47,7 @@ hostBuilder
         optionsBuilder => optionsBuilder.Configure(
             options =>
             {
-                options.ConnectionString = "xxx";
+                options.ConnectionString = "[PLACEHOLDER]";
                 options.QueueNames =
                     new List<string>
                     {
@@ -99,7 +99,7 @@ hostBuilder
   .AddAzureQueueStreams("AzureQueueProvider", configurator => {
     configurator.ConfigureAzureQueue(
       ob => ob.Configure(options => {
-        options.ConnectionString = "xxx";
+        options.ConnectionString = "[PLACEHOLDER]";
         options.QueueNames = new List<string> {
           "yourprefix-azurequeueprovider-1",
           [...]

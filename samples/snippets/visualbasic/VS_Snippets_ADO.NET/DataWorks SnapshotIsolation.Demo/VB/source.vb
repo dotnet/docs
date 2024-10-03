@@ -9,7 +9,7 @@ Module Module1
     Sub Main()
         ' <Snippet1>
         ' Assumes GetConnectionString returns a valid connection string
-        ' where pooling is turned off by setting Pooling=False;. 
+        ' where pooling is turned off by setting Pooling=False;.
         Dim connectionString As String = GetConnectionString()
 
         Using connection1 As New SqlConnection(connectionString)
@@ -25,7 +25,7 @@ Module Module1
                 Console.WriteLine(ex.Message)
             End Try
 
-            ' Enable SNAPSHOT isolation 
+            ' Enable SNAPSHOT isolation
             command1.CommandText = _
             "ALTER DATABASE AdventureWorks SET ALLOW_SNAPSHOT_ISOLATION ON"
             command1.ExecuteNonQuery()
@@ -38,9 +38,9 @@ Module Module1
               "INSERT INTO TestSnapshot VALUES (1,1)"
             command1.ExecuteNonQuery()
 
-            ' Begin, but do not complete, a transaction to update the data 
+            ' Begin, but do not complete, a transaction to update the data
             ' with the Serializable isolation level, which locks the table
-            ' pending the commit or rollback of the update. The original 
+            ' pending the commit or rollback of the update. The original
             ' value in valueCol was 1, the proposed new value is 22.
             Dim transaction1 As SqlTransaction = _
               connection1.BeginTransaction(IsolationLevel.Serializable)
@@ -55,7 +55,7 @@ Module Module1
                 connection2.Open()
 
                 ' Initiate a second transaction to read from TestSnapshot
-                ' using Snapshot isolation. This will read the original 
+                ' using Snapshot isolation. This will read the original
                 ' value of 1 since transaction1 has not yet committed.
                 Dim command2 As SqlCommand = connection2.CreateCommand()
                 Dim transaction2 As SqlTransaction = _
@@ -76,7 +76,7 @@ Module Module1
             ' Open a third connection to AdventureWorks and
             ' initiate a third transaction to read from TestSnapshot
             ' using the ReadCommitted isolation level. This transaction
-            ' will not be able to view the data because of 
+            ' will not be able to view the data because of
             ' the locks placed on the table in transaction1
             ' and will time out after 4 seconds.
             ' You would see the same behavior with the
@@ -108,8 +108,8 @@ Module Module1
             ' Open a fourth connection to AdventureWorks and
             ' initiate a fourth transaction to read from TestSnapshot
             ' using the ReadUncommitted isolation level. ReadUncommitted
-            ' will not hit the table lock, and will allow a dirty read  
-            ' of the proposed new value 22. If the first transaction 
+            ' will not hit the table lock, and will allow a dirty read
+            ' of the proposed new value 22. If the first transaction
             ' transaction rolls back, this value will never actually have
             ' existed in the database.
             Dim connection4 As SqlConnection = New SqlConnection(connectionString)
@@ -157,11 +157,7 @@ Module Module1
     End Sub
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file, using the
-        ' System.Configuration.ConfigurationSettings.AppSettings property
-        Return "Data Source=(Local);Initial Catalog=AdventureWorks;" _
-        & "Integrated Security=SSPI;Pooling=False"
+        Throw New NotImplementedException()
     End Function
 
 End Module

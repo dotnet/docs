@@ -3,7 +3,7 @@ title: Use dependency injection
 description: Learn how to use dependency injection in your .NET apps with this comprehensive tutorial. Follow along with this pragmatic guide to understand DI in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/08/2024
+ms.date: 07/18/2024
 ms.topic: tutorial
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
@@ -126,5 +126,6 @@ From the app output, you can see that:
 
 ## See also
 
-* [Dependency injection guidelines](dependency-injection-guidelines.md)
-* [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)
+- [Dependency injection guidelines](dependency-injection-guidelines.md)
+- [Understand dependency injection basics in .NET](dependency-injection-basics.md)
+- [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)

@@ -14,6 +14,9 @@ If your codebase is relatively small, you can turn on the [feature in your proje
 
 Regardless of how you update your codebase, the goal is that nullable warnings and nullable annotations are enabled in your project. Once you reach that goal, you'll have the `<nullable>Enable</nullable>` setting in your project. You won't need any of the preprocessor directives to adjust settings elsewhere.
 
+> [!NOTE]
+> You can designate a `Nullable` setting for your project using a `<Nullable>` tag. Refer to [Compiler options](language-reference/compiler-options/language.md#nullable) for more information.
+
 The first choice is setting the default for the project. Your choices are:
 
 1. ***Nullable disable as the default***: *disable* is the default if you don't add a `Nullable` element to your project file. Use this default when you're not actively adding new files to the codebase. The main activity is to update the library to use nullable reference types. Using this default means you add a nullable preprocessor directive to each file as you update its code.

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: EntityClient Provider for the Entity Framework"
+description: "Learn more about EntityClient Provider for Entity Framework, a data provider used by Entity Framework apps to access data described in a conceptual model."
 title: "EntityClient Provider for the Entity Framework"
 ms.date: "03/30/2017"
-ms.assetid: 8c5db787-78e6-4a34-8dc1-188bca0aca5e
 ---
-# EntityClient Provider for the Entity Framework
+# EntityClient Provider for Entity Framework
 
 The EntityClient provider is a data provider used by Entity Framework applications to access data described in a conceptual model. For information about conceptual models, see [Modeling and Mapping](modeling-and-mapping.md). EntityClient uses other .NET Framework data providers to access the data source. For example, EntityClient uses the .NET Framework Data Provider for SQL Server (SqlClient) when accessing a SQL Server database. For information about the SqlClient provider, see [SqlClient for the Entity Framework](sqlclient-for-the-entity-framework.md). The EntityClient provider is implemented in the <xref:System.Data.EntityClient> namespace.
 
@@ -14,7 +13,7 @@ The EntityClient provider is a data provider used by Entity Framework applicatio
 
  You can specify a connection string in app.config file.
 
- The <xref:System.Data.EntityClient> also includes the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class. This class enables developers to programmatically create syntactically correct connection strings, and parse and rebuild existing connection strings, by using properties and methods of the class. For more information, see [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md).
+ The <xref:System.Data.EntityClient> also includes the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class. This class enables developers to programmatically create syntactically correct connection strings, and parse and rebuild existing connection strings, by using properties and methods of the class.
 
 ## Creating Queries
 
@@ -42,8 +41,6 @@ cmd.CommandText = @"SELECT VALUE p
  To update data that is exposed through a conceptual model, see [How to: Manage Transactions in the Entity Framework](/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100)).
 
 ## In This Section
-
- [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md)
 
  [How to: Execute a Query that Returns PrimitiveType Results](how-to-execute-a-query-that-returns-primitivetype-results.md)
 

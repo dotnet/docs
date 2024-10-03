@@ -73,6 +73,8 @@ The resulting output will have a `ProjectName.dll`, `ProjectName.deps.json`, `Pr
 
 Open an elevated command prompt and run `regsvr32 ProjectName.comhost.dll`. That will register all of your exposed .NET objects with COM.
 
+If you intend to [embed a type library (TLB)](#embed_tlb), it's recommended to also define functions using [`ComRegisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comregisterfunctionattribute) and [`ComUnregisterFunctionAttribute`](/dotnet/api/system.runtime.interopservices.comunregisterfunctionattribute). These functions can be used to register and unregister the TLB for the COM server. For a complete example, see the [`OutOfProcCOM`](https://github.com/dotnet/samples/tree/main/core/extensions/OutOfProcCOM) sample.
+
 ## Enabling RegFree COM
 
 1. Open the `.csproj` project file and add `<EnableRegFreeCom>true</EnableRegFreeCom>` inside a `<PropertyGroup></PropertyGroup>` tag.
@@ -80,7 +82,7 @@ Open an elevated command prompt and run `regsvr32 ProjectName.comhost.dll`. That
 
 The resulting output will now also have a `ProjectName.X.manifest` file. This file is the side-by-side manifest for use with Registry-Free COM.
 
-## Embedding type libraries in the COM host
+## <a name="embed_tlb"></a> Embedding type libraries in the COM host
 
 Unlike in .NET Framework, there is no support in .NET Core or .NET 5+ for generating a [COM Type Library (TLB)](/windows/win32/midl/com-dcom-and-type-libraries#type-library) from a .NET assembly. The guidance is to either manually write an IDL file or a C/C++ header for the native declarations of the COM interfaces. If you decide to write an IDL file, you can compile it with the Visual C++ SDK's MIDL compiler to produce a TLB.
 

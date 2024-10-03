@@ -1,7 +1,7 @@
 ---
-description: "C# Keywords"
-title: "Keywords"
-ms.date: 09/15/2022
+description: "C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language."
+title: "C# Keywords and contextual keywords"
+ms.date: 08/14/2024
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:
@@ -112,8 +112,9 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
 :::row:::
     :::column:::
         [`add`](add.md)  
-        [`and`](../operators/patterns.md#logical-patterns)  
+        [`allows`](where-generic-type-constraint.md)  
         [`alias`](extern-alias.md)  
+        [`and`](../operators/patterns.md#logical-patterns)  
         [`ascending`](ascending.md)  
         [`args`](../../fundamentals/program-structure/top-level-statements.md#args)  
         [`async`](async.md)  
@@ -122,10 +123,10 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`descending`](descending.md)  
         [`dynamic`](../builtin-types/reference-types.md)  
         [`equals`](equals.md)  
-        [`file`](file.md)  
-        [`from`](from-clause.md)  
     :::column-end:::
     :::column:::
+        [`file`](file.md)  
+        [`from`](from-clause.md)  
         [`get`](get.md)  
         [`global`](../operators/namespace-alias-qualifier.md)  
         [`group`](group-clause.md)  
@@ -136,16 +137,16 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`managed` (function pointer calling convention)](../unsafe-code.md#function-pointers)  
         [`nameof`](../operators/nameof.md)  
         [`nint`](../builtin-types/integral-numeric-types.md)  
-        [`not`](../operators/patterns.md#logical-patterns)  
     :::column-end:::
     :::column:::
+        [`not`](../operators/patterns.md#logical-patterns)  
         [`notnull`](../../programming-guide/generics/constraints-on-type-parameters.md#notnull-constraint)  
         [`nuint`](../builtin-types/integral-numeric-types.md)  
         [`on`](on.md)  
         [`or`](../operators/patterns.md#logical-patterns)  
         [`orderby`](orderby-clause.md)  
         [`partial` (type)](partial-type.md)  
-        [`partial` (method)](partial-method.md)  
+        [`partial` (member)](partial-member.md)  
         [`record`](../../fundamentals/types/records.md)  
         [`remove`](remove.md)  
         [`required`](required.md)  

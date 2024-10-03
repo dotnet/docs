@@ -1,7 +1,7 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 11/17/2020
+ms.date: 08/22/2024
 ms.topic: reference
 ---
 # dotnet-trace performance analysis utility
@@ -28,9 +28,6 @@ There are two ways to download and install `dotnet-trace`:
   | --- | -------- |
   | Windows | [x86](https://aka.ms/dotnet-trace/win-x86) \| [x64](https://aka.ms/dotnet-trace/win-x64) \| [Arm](https://aka.ms/dotnet-trace/win-arm) \| [Arm-x64](https://aka.ms/dotnet-trace/win-arm64) |
   | Linux   | [x64](https://aka.ms/dotnet-trace/linux-x64) \| [Arm](https://aka.ms/dotnet-trace/linux-arm) \| [Arm64](https://aka.ms/dotnet-trace/linux-arm64) \| [musl-x64](https://aka.ms/dotnet-trace/linux-musl-x64) \| [musl-Arm64](https://aka.ms/dotnet-trace/linux-musl-arm64) |
-
-> [!NOTE]
-> To use `dotnet-trace` on an x86 app, you need a corresponding x86 version of the tool.
 
 ## Synopsis
 
@@ -207,7 +204,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   After the collection configuration parameters, the user can append `--` followed by a command to start a .NET application with at least a 5.0 runtime. This may be helpful when diagnosing issues that happen early in the process, such as startup performance issue or assembly loader and binder errors.
 
   > [!NOTE]
-  > Using this option monitors the first .NET 5 process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
+  > Using this option monitors the first .NET process that communicates back to the tool, which means if your command launches multiple .NET applications, it will only collect the first app. Therefore, it is recommended you use this option on self-contained applications, or using the `dotnet exec <app.dll>` option.
 
 - **`--show-child-io`**
 
@@ -236,8 +233,6 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 > - On Linux and macOS, this command expects the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
 > - To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running the target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
-
-> - If you see an error message similar to: `[ERROR] System.ComponentModel.Win32Exception (299): A 32 bit processes cannot access modules of a 64 bit process.`, you are trying to use a version of `dotnet-trace` that has mismatched bitness against the target process. Make sure to download the correct bitness of the tool in the [install](#install) link.
 
 > - If you experience an unhandled exception while running `dotnet-trace collect`, this results in an incomplete trace. If finding the root cause of the exception is your priority, navigate to [Collect dumps on crash](collect-dumps-crash.md). As a result of the unhandled exception, the trace is truncated when the runtime shuts down to prevent other undesired behavior such as a hang or data corruption. Even though the trace is incomplete, you can still open it to see what happened leading up to the failure. However, it will be missing Rundown information (this happens at the end of a trace) so stacks might be unresolved (depending on what providers were turned on). Open the trace by executing PerfView with the `/ContinueOnError` flag at the command line. The logs will also contain the location the exception was fired.
 
@@ -276,6 +271,9 @@ dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>
 
  Lists the dotnet processes that traces can be collected from.
  `dotnet-trace` 6.0.320703 and later, also display the command-line arguments that each process was started with, if available.
+
+> [!NOTE]
+> To get full information for enumerated 64 bit processes, you need to use a 64-bit version of the `dotnet-trace` tool.
 
 ### Synopsis
 
@@ -376,9 +374,6 @@ To collect traces using `dotnet-trace`:
 
 ## Launch a child application and collect a trace from its startup using dotnet-trace
 
-> [!IMPORTANT]
-> This works for apps running .NET 5 or later only.
-
 Sometimes it may be useful to collect a trace of a process from its startup. For apps running .NET 5 or later, it is possible to do this by using dotnet-trace.
 
 This will launch `hello.exe` with `arg1` and `arg2` as its command-line arguments and collect a trace from its runtime startup:
@@ -412,9 +407,6 @@ You can stop collecting the trace by pressing `<Enter>` or `<Ctrl + C>` key. Doi
 > If the child process exits before the tool, the tool will exit as well and the trace should be safely viewable.
 
 ## Use diagnostic port to collect a trace from app startup
-
-  > [!IMPORTANT]
-  > This works for apps running .NET 5 or later only.
 
 [Diagnostic port](./diagnostic-port.md) is a runtime feature added in .NET 5 that allows you to start tracing from app startup. To do this using `dotnet-trace`, you can either use `dotnet-trace collect -- <command>` as described in the examples above, or use the `--diagnostic-port` option.
 
@@ -463,29 +455,6 @@ For traces collected on non-Windows platforms, you can also move the trace file 
 
 > [!NOTE]
 > The .NET Core runtime generates traces in the `nettrace` format. The traces are converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
-
-## Use dotnet-trace to collect counter values over time
-
-`dotnet-trace` can:
-
-* Use `EventCounter` for basic health monitoring in performance-sensitive environments. For example, in production.
-* Collect traces so they don't need to be viewed in real time.
-
-For example, to collect runtime performance counter values, use the following command:
-
-```dotnetcli
-dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
-```
-
-The preceding command tells the runtime counters to report once every second for lightweight health monitoring. Replacing `EventCounterIntervalSec=1` with a higher value (for example, 60) allows collection of a smaller trace with less granularity in the counter data.
-
-The following command reduces overhead and trace size more than the preceding one:
-
-```dotnetcli
-dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
-```
-
-The preceding command disables runtime events and the managed stack profiler.
 
 ## Use .rsp file to avoid typing long commands
 

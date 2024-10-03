@@ -272,6 +272,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
         },
         {
+            "source_path_from_root": "/docs/csharp/indexers.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/indexers"
+        },
+        {
             "source_path_from_root": "/docs/csharp/interactive-with-bash.md",
             "redirect_url": "/dotnet/csharp/index"
         },
@@ -304,6 +308,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types#native-sized-integers"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0034.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0178.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
         },
@@ -318,6 +326,10 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0246.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0260.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1683.md",
@@ -358,6 +370,23 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0854.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-tree-restrictions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1019.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1063.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
+
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1067.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-types"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1501.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1704.md",
@@ -460,12 +489,24 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
         },
         {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8795.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-types"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8817.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-types"
+        },
+        {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8892.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/warning-waves#cs8892"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs8964.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/parameter-argument-mismatch"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs9050.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/ref-struct-errors"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-options/addmodule-compiler-option.md",
@@ -942,6 +983,11 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/params.md",
             "redirect_url": "/dotnet/csharp/language-reference/keywords/method-parameters#params-modifier"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/keywords/partial-method.md",
+            "redirect_url": "/dotnet/csharp/language-reference/keywords/partial-member",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/reference-tables-for-types.md",
@@ -1441,8 +1487,20 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs0035.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs0105.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-directive-errors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0111.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0121.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs0138.md",
@@ -1489,6 +1547,38 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/feature-version-errors"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs0261.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0262.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0263.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0264.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0265.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0267.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0282.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0501.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs0400.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/assembly-references"
         },
@@ -1503,6 +1593,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs0440.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/using-directive-errors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0457.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs0466.md",
@@ -1581,6 +1675,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/parameter-argument-mismatch"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs0663.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs0674.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/params-arrays"
         },
@@ -1605,8 +1703,52 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/lambda-expression-errors#lambda-expression-parameters-and-returns"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs0750.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0751.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0754.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0755.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0756.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0757.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs0758.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/params-arrays"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0759.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0761.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0762.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0763.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs0764.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs0765.md",
@@ -1645,8 +1787,16 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/parameter-argument-mismatch"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs1020.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs1104.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/params-arrays"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1007.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs1510.md",
@@ -1721,6 +1871,14 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/lambda-expression-errors#syntax-limitations-in-lambda-expressions"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs1534.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1535.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs1637.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/iterator-yield"
         },
@@ -1769,6 +1927,14 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs1928.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1929.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs1939.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/ref-modifiers-errors"
         },
@@ -1779,6 +1945,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs1945.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/expression-tree-restrictions"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1950.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs1951.md",
@@ -1795,6 +1965,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs1954.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/array-declaration-errors"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs3006.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs3016.md",
@@ -3229,6 +3403,10 @@
             "redirect_url": "/dotnet/standard/events/how-to-handle-multiple-events-using-event-properties"
         },
         {
+            "source_path_from_root": "/docs/csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md",
+            "redirect_url": "/dotnet/standard/events"
+        },
+        {
             "source_path_from_root": "/docs/csharp/programming-guide/exceptions/compiler-generated-exceptions.md",
             "redirect_url": "/dotnet/csharp/fundamentals/exceptions/compiler-generated-exceptions"
         },
@@ -3802,6 +3980,10 @@
         {
             "source_path_from_root": "/docs/csharp/programming-guide/xmldoc/xml-documentation-comments.md",
             "redirect_url": "/dotnet/csharp/programming-guide/xmldoc"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/properties.md",
+            "redirect_url": "/dotnet/csharp/programming-guide/classes-and-structs/properties"
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/arrays-and-collections.md",

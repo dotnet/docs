@@ -71,7 +71,7 @@ Windows Forms apps that run under Windows versions starting with Windows 10 Crea
 
 - Improvements in the scaling and layout of a number of Windows Forms controls, such as the <xref:System.Windows.Forms.MonthCalendar> control and the <xref:System.Windows.Forms.CheckedListBox> control.
 
-High DPI awareness is an opt-in feature; by default, the value of `DpiAwareness` is `false`. You can opt into Windows Forms' support for DPI awareness by setting the value of this key to `PerMonitorV2` in the application configuration file. If DPI awareness is enabled, all individual DPI features are also enabled. These include:
+High DPI awareness is an opt-in feature; by default, the value of `DpiAwareness` is `false`. You can opt in to Windows Forms' support for DPI awareness by setting the value of this key to `PerMonitorV2` in the application configuration file. If DPI awareness is enabled, all individual DPI features are also enabled. These include:
 
 - DPI changed messages, which are controlled by the `DisableDpiChangedMessageHandling` key.
 

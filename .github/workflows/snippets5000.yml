@@ -19,6 +19,9 @@ env:
   DOTNET_DO_INSTALL: 'true' # To install a version of .NET not provided by the runner, set to true
   EnableNuGetPackageRestore: 'True'
 
+permissions:
+  contents: read
+
 jobs:
   snippets-build:
     runs-on: windows-2022
@@ -27,8 +30,13 @@ jobs:
 
     steps:
     # Checkout the repository for the PR
+    - name: Harden Runner
+      uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+      with:
+        egress-policy: audit
+
     - name: Checkout repository
-      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 #@v4.1.7
+      uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 #@v4.2.0
 
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET
@@ -52,5 +60,7 @@ jobs:
     - name: Run snippets 5000 for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
+        ExtensionsCodeTriggers: .cs;.vb;.fs;.xaml;.razor;.cshtml;.vbhtml;.sln;.csproj;.fsproj;.vbproj;.proj
+        ExtensionsProjects: .sln;.csproj;.fsproj;.vbproj;.proj
       run: |
         dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}

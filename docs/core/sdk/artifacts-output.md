@@ -38,7 +38,7 @@ The following table shows examples of paths that might be created.
 
 ## How to configure
 
-To opt into the centralized output path format, add one of the following MSBuild properties to your *Directory.Build.props* file:
+To opt in to the centralized output path format, add one of the following MSBuild properties to your *Directory.Build.props* file:
 
 - To use the default output location, set the `UseArtifactsOutput` property to `true`.
 

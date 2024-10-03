@@ -18,13 +18,40 @@ The dependency on OS libraries also means that .NET apps can only use cryptograp
 
 This article assumes you have a working familiarity with cryptography in .NET. For more information, see [.NET Cryptography Model](cryptography-model.md) and [.NET Cryptographic Services](cryptographic-services.md).
 
-## Hash algorithms
+## Hash and Message Authentication Algorithms
 
-All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries with the exception of .NET on Browser WASM. In Browser WASM, SHA-1, SHA-2-256, SHA-2-384, SHA-2-512, are implemented using managed code.
+All hash algorithm and hash-based message authentication (HMAC) classes, including the `*Managed` classes, defer to the OS libraries with the exception of .NET on Browser WASM. In Browser WASM, SHA-1, SHA-2-256, SHA-2-384, SHA-2-512 and the HMAC equivalents are implemented using managed code.
 
-### SHA-3
+|Algorithm                  |Windows                 |Linux                       |macOS|iOS, tvOS, MacCatalyst|Android|Browser|
+|---------------------------|------------------------|----------------------------|-----|----------------------|-------|-------|
+|MD5                        | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |❌     |
+|SHA-1                      | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-2-256                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-2-384                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-2-512                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|SHA-3-256<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHA-3-384<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHA-3-512<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHAKE-128<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                   |❌     |❌     |
+|SHAKE-256<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                   |❌     |❌     |
+|HMAC-MD5                   | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |❌     |
+|HMAC-SHA-1                 | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-2-256             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-2-384             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-2-512             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
+|HMAC-SHA-3-256<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|HMAC-SHA-3-384<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|HMAC-SHA-3-512<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|KMAC-128<sup>2</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-256<sup>2</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-XOF-128<sup>2</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-XOF-256<sup>2</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
 
-.NET 8 introduced support for the SHA-3 hash algorithms, including SHAKE-128 and SHAKE-256. SHA-3 support is currently supported on Windows 11 build 25324 or later, and Linux with OpenSSL 1.1.1 or later.
+<sup>1</sup>Available starting in .NET 8.
+
+<sup>2</sup>Available starting in .NET 9.
+
+<sup>3</sup>Streaming extensible output function (XOF) is available starting in .NET 9. On Linux, this requires OpenSSL 3.3.
 
 ## Symmetric encryption
 
@@ -55,9 +82,9 @@ Since authenticated encryption requires newer platform APIs to support the algor
 
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS, tvOS, MacCatalyst | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|------------------------|---------------|---------|
-| AES-GCM           | ✔️                      | ✔️            | ⚠️      | ❌                     | ✔️            | ❌      |
+| AES-GCM           | ✔️                      | ✔️            | ⚠️      | ⚠️                     | ✔️            | ❌      |
 | AES-CCM           | ✔️                      | ✔️            | ⚠️      | ❌                     | ✔️            | ❌      |
-| ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ⚠️      | ❌                     | API Level 28+ | ❌      |
+| ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ⚠️      | ⚠️                     | API Level 28+ | ❌      |
 
 ### AES-CCM on macOS
 
@@ -70,6 +97,10 @@ The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in ma
 macOS did not support AES-GCM or ChaCha20Poly1305 until macOS 10.15 for third-party code. Prior to .NET 8, <xref:System.Security.Cryptography.AesGcm> and <xref:System.Security.Cryptography.ChaCha20Poly1305> have the same requirement as AES-CCM and users must install OpenSSL for these types to function.
 
 Starting in .NET 8, .NET on macOS will use the Apple's CryptoKit framework for AES-GCM and ChaCha20Poly1305. Users will not need to install or configure any additional dependencies for AES-GCM or ChaCha20Poly1305 on macOS.
+
+### AES-GCM and ChaCha20Poly1305 on iOS, tvOS, and MacCatalyst
+
+Support for AES-GCM and ChaCha20Poly1305 is available starting in .NET 9 on iOS and tvOS 13.0 and later, and all versions of MacCatalyst.
 
 ### AES-CCM keys, nonces, and tags
 
@@ -96,7 +127,7 @@ Starting in .NET 8, .NET on macOS will use the Apple's CryptoKit framework for A
   The <xref:System.Security.Cryptography.AesGcm> class supports only 96-bit (12-byte) nonces.
 
 * Tag Sizes
-  On Windows and Linux, the <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags. On macOS, the tag size is limited to 128-bit (16-byte) due to limitations of the CryptoKit framework.
+  On Windows and Linux, the <xref:System.Security.Cryptography.AesGcm> class supports creating or processing 96, 104, 112, 120, and 128-bit (12, 13, 14, 15, and 16-byte) tags. On Apple platforms, the tag size is limited to 128-bit (16-byte) due to limitations of the CryptoKit framework.
 
 ### ChaCha20Poly1305 keys, nonces, and tags.
 

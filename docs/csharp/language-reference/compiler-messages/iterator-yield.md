@@ -1,6 +1,6 @@
 ---
 title: Errors and warnings for iterator methods and `yield return`
-description: Use article to diagnose and correct compiler errors and warnings when you write iterator methods that use `yield return` to enumerate a sequence of elements.
+description: Use this article to diagnose and correct compiler errors and warnings when you write iterator methods that use `yield return` to enumerate a sequence of elements.
 f1_keywords:
   - "CS1622"
   - "CS1624"

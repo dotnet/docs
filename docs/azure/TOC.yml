@@ -35,6 +35,10 @@
         href: ./migration/appcat/dotnet-cli.md
       - name: Interpret the results
         href: ./migration/appcat/interpret-results.md
+      - name: Custom configuration
+        href: ./migration/appcat/custom-configuration.md
+      - name: FAQ
+        href: ./migration/appcat/faq.md
     - name: Choose the right Azure hosting option
       href: ./migration/choose.md
     - name: Migrate a .NET web app or service to Azure App Service
@@ -67,6 +71,8 @@
         href: ./sdk/authentication/create-token-credentials-from-configuration.md
       - name: Additional auth methods
         href: ./sdk/authentication/additional-methods.md
+      - name: Credential chains
+        href: ./sdk/authentication/credential-chains.md
     - name: Resource management
       href: ./sdk/resource-management.md
     - name: Dependency injection
@@ -81,6 +87,8 @@
       href: ./sdk/unit-testing-mocking.md
     - name: Configure a proxy server
       href: ./sdk/azure-sdk-configure-proxy.md
+    - name: Library method types
+      href: ./sdk/protocol-convenience-methods.md
     - name: Packages list
       href: ./sdk/packages.md
     - name: SDK example

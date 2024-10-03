@@ -192,7 +192,7 @@ Preview releases are **not** available in the Microsoft package repository. For 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
-# Get OS version info
+# Get OS version info which adds the $ID and $VERSION_ID variables
 source /etc/os-release
 
 # Download Microsoft signing key and repository

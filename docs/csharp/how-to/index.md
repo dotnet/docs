@@ -92,7 +92,7 @@ Events provide a mechanism to publish or subscribe to notifications.
 
 - [Subscribe and unsubscribe from events](../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 - [Implement events declared in interfaces](../programming-guide/events/how-to-implement-interface-events.md).
-- [Conform to .NET guidelines when your code publishes events](../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
+- [Conform to .NET guidelines when your code publishes events](/dotnet/standard/events).
 - [Raise events defined in base classes from derived classes](../programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md).
 - [Implement custom event accessors](../programming-guide/events/how-to-implement-custom-event-accessors.md).
 

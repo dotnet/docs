@@ -102,6 +102,7 @@ The following commands are installed by default:
 ### Workload management commands
 
 - [`workload`](dotnet-workload.md) (Available since .NET 7 SDK)
+- [`workload config`](dotnet-workload-config.md) (Available since .NET 8.0.400 SDK)
 - [`workload install`](dotnet-workload-install.md) (Available since .NET 6 SDK)
 - [`workload list`](dotnet-workload-list.md) (Available since .NET 6 SDK)
 - [`workload update`](dotnet-workload-update.md) (Available since .NET 6 SDK)

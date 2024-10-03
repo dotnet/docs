@@ -29,4 +29,4 @@ Setting `OptimizationPreference` to `Speed` instructs the publishing process to 
 
 ## Further size optimization options
 
-Since Native AOT deployments imply the use of trimming, it's possible to further improve the size of the application by specifying more [trimming options](../trimming/trimming-options.md). For example, the [Trimming framework library features section](../trimming/trimming-options.md#trimming-framework-library-features) discusses how to disable library features such as globalization.
+Since Native AOT deployments imply the use of trimming, it's possible to further improve the size of the application by specifying more [trimming options](../trimming/trimming-options.md). For example, the [Trim framework library features section](../trimming/trimming-options.md#trim-framework-library-features) discusses how to disable library features such as globalization.

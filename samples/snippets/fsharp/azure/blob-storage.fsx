@@ -30,7 +30,7 @@ File.WriteAllText(localFile, "some data")
 //
 
  // Create a blob container client.
-let container = BlobContainerClient(storageConnString, "myContainer")
+let container = BlobContainerClient(storageConnString, "mycontainer")
 
 // Create the container if it doesn't already exist.
 container.CreateIfNotExists()

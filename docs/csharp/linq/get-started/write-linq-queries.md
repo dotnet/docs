@@ -64,7 +64,7 @@ If the method has <xref:System.Action?displayProperty=fullName> or <xref:System.
 
 In the previous queries, only Query #4 executes immediately, because it returns a single value, and not a generic <xref:System.Collections.Generic.IEnumerable%601> collection. The method itself uses `foreach` or similar code in order to compute its value.
 
-Each of the previous queries can be written by using implicit typing with [`var``](../../language-reference/statements/declarations.md#implicitly-typed-local-variables), as shown in the following example:
+Each of the previous queries can be written by using implicit typing with [`var`](../../language-reference/statements/declarations.md#implicitly-typed-local-variables), as shown in the following example:
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_4":::
 

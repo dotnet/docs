@@ -24,7 +24,7 @@ Module Class1
                "SELECT CategoryID, CategoryName FROM dbo.Categories", _
                connection)
 
-            ' Create a SqlCommand to execute the stored procedure. 
+            ' Create a SqlCommand to execute the stored procedure.
             adapter.InsertCommand = New SqlCommand("dbo.InsertCategory", _
                connection)
             adapter.InsertCommand.CommandType = CommandType.StoredProcedure
@@ -71,10 +71,7 @@ Module Class1
     End Sub
 
     Private Function GetConnectionString() As String
-        ' To avoid storing the connection string in your code,  
-        ' you can retrieve it from a configuration file.
-        Return "Data Source=(local);Initial Catalog=Northwind;" _
-           & "Integrated Security=true;"
+        Throw New NotImplementedException()
     End Function
 
 End Module

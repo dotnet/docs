@@ -55,15 +55,14 @@ The following complex types are also blittable types:
 
 | Non-blittable type                                | Description                                   |
 |---------------------------------------------------|-----------------------------------------------|
-| [System.Array](default-marshalling-for-arrays.md) | Converts to a C-style array or a `SAFEARRAY`. |
+|[System.Array](default-marshalling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|
 |[System.Boolean](/previous-versions/dotnet/netframework-4.0/t2t3725f(v=vs.100))|Converts to a 1, 2, or 4-byte value with `true` as 1 or -1.|
 |[System.Char](/previous-versions/dotnet/netframework-4.0/6tyybbf2(v=vs.100))|Converts to a Unicode or ANSI character.|
 |[System.Class](/previous-versions/dotnet/netframework-4.0/s0968xy8(v=vs.100))|Converts to a class interface.|
 |[System.Object](default-marshalling-for-objects.md)|Converts to a variant or an interface.|
-|[System.Mdarray](default-marshalling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|
 |[System.String](default-marshalling-for-strings.md)|Converts to a string terminating in a null reference or to a BSTR.|
-|[System.Valuetype](/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|
-|[System.Szarray](default-marshalling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|
+|[System.ValueType](/previous-versions/dotnet/netframework-4.0/0t2cwe11(v=vs.100))|Converts to a structure with a fixed memory layout.|
+|[T[]](default-marshalling-for-arrays.md)|Converts to a C-style array or a `SAFEARRAY`.|
 
 Class and object types are supported only by COM interop. For corresponding types in Visual Basic, C#, and C++, see the [Class Library Overview](../../standard/class-library-overview.md).
 

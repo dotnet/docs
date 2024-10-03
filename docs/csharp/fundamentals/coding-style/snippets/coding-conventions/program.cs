@@ -112,9 +112,13 @@ namespace Coding_Conventions_Examples
             foreach (char ch in laugh)
             {
                 if (ch == 'h')
+                {
                     Console.Write("H");
+                }
                 else
+                {
                     Console.Write(ch);
+                }
             }
             Console.WriteLine();
             //</snippet12>

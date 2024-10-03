@@ -161,7 +161,7 @@ Another set of features supports high-performance computing in C#:
 Another set of improvements supports scenarios where *code generators* add functionality:
 
 - [Module initializers](../language-reference/attributes/general.md#moduleinitializer-attribute) are methods that the runtime calls when an assembly loads.
-- [Partial methods](../language-reference/keywords/partial-method.md) support new accessibly modifiers and non-void return types. In those cases, an implementation must be provided.
+- [Partial methods](../language-reference/keywords/partial-member.md) support new accessibly modifiers and non-void return types. In those cases, an implementation must be provided.
 
 ### Fit and finish features
 
@@ -303,7 +303,7 @@ Version 6.0, released with Visual Studio 2015, released many smaller features th
 
 - [Static imports](../language-reference/keywords/using-directive.md)
 - [Exception filters](../language-reference/keywords/when.md)
-- [Auto-property initializers](../properties.md)
+- [Auto-property initializers](../programming-guide/classes-and-structs/properties.md)
 - [Expression bodied members](../language-reference/operators/lambda-operator.md#expression-body-definition)
 - [Null propagator](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-)
 - [String interpolation](../language-reference/tokens/interpolated.md)
@@ -363,7 +363,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Expression trees](/dotnet/csharp/advanced-topics/expression-trees)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/statements/declarations.md#implicitly-typed-local-variables)
-- [Partial methods](../language-reference/keywords/partial-method.md)
+- [Partial methods](../language-reference/keywords/partial-member.md)
 - [Object and collection initializers](../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
 In retrospect, many of these features seem both inevitable and inseparable. They all fit together strategically. This C# version's killer feature was the query expression, also known as Language-Integrated Query (LINQ).
@@ -418,7 +418,7 @@ The major features of C# 1.0 included:
 - [Structs](../language-reference/builtin-types/struct.md)
 - [Interfaces](../fundamentals/types/interfaces.md)
 - [Events](../events-overview.md)
-- [Properties](../properties.md)
+- [Properties](../programming-guide/classes-and-structs/properties.md)
 - [Delegates](../delegates-overview.md)
 - [Operators and expressions](../language-reference/operators/index.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)

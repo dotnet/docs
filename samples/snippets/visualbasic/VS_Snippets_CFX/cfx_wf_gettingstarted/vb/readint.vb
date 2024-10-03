@@ -12,8 +12,7 @@ Public NotInheritable Class ReadInt
         name = BookmarkName.Get(context)
 
         If name = String.Empty Then
-            Throw New ArgumentException("BookmarkName cannot be an Empty string.",
-                "BookmarkName")
+            Throw New Exception("BookmarkName cannot be an Empty string.")
         End If
 
         context.CreateBookmark(name, New BookmarkCallback(AddressOf OnReadComplete))

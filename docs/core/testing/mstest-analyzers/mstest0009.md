@@ -22,6 +22,7 @@ ms.author: enjieid
 | **Enabled by default**              | Yes                                         |
 | **Default severity**                | Warning                                     |
 | **Introduced in version**           | 3.3.0                                       |
+| **There is a code fix**             | Yes                                         |
 
 ## Cause
 
@@ -39,6 +40,8 @@ Methods marked with `[TestCleanup]` should follow the following layout to be val
 - it should not be generic
 - it should not take any parameter
 - return type should be `void`, `Task` or `ValueTask`
+
+[!INCLUDE [test-class-rules](includes/test-class-rules.md)]
 
 ## How to fix violations
 

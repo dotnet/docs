@@ -1,6 +1,6 @@
 ---
 title: Configuration files for code analysis rules
-description: Learn about different configuration files to configure code analysis rules.
+description: Learn about different configuration files, including editorconfig and global config files, to configure code analysis rules.
 ms.date: 07/07/2021
 no-loc: ["EditorConfig"]
 ---
@@ -112,7 +112,7 @@ You can then customize your build to only include the configuration file in test
 ```xml
 <ItemGroup Condition="'$(IsShipping)' == 'false'">
   <!-- Include CodeAnalysis.test.globalconfig to override (relax) some rules from the primary configuration. -->
-  <EditorConfigFiles Include="$(MSBuildThisFileDirectory)CodeAnalysis.test.globalconfig" />
+  <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)CodeAnalysis.test.globalconfig" />
 </ItemGroup>
 ```
 

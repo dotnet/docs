@@ -222,6 +222,9 @@ Warnings produced by these extra requirements are automatically suppressed if th
 
 Unlike `RequiresUnreferencedCode`, which simply reports the incompatibility, adding `DynamicallyAccessedMembers` makes the code compatible with trimming.
 
+> [!NOTE]
+> Using `DynamicallyAccessedMembersAttribute` will root all the specified `DynamicallyAccessedMemberTypes` members of the type. This means it will keep the members, as well as any metadata referenced by those members. This can lead to much larger apps than expected. Be careful to use the minimum `DynamicallyAccessedMemberTypes` required.
+
 ### Suppressing trimmer warnings
 
 If you can somehow determine that the call is safe, and all the code that's needed won't be trimmed away, you can also suppress the warning using <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. For example:

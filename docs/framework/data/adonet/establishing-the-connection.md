@@ -1,13 +1,12 @@
 ---
-description: "Learn more about: Establishing the Connection"
+description: "Learn more about establishing a connection to SQL Server using the .NET Framework Data Provider for SQL Server."
 title: "Establishing the Connection"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: 3af512f3-87d9-4005-9e2f-abb1060ff43f
 ---
-# Establishing the Connection
+# Establish a connection
 
 To connect to Microsoft SQL Server, use the <xref:System.Data.SqlClient.SqlConnection> object of the .NET Framework Data Provider for SQL Server. To connect to an OLE DB data source, use the <xref:System.Data.OleDb.OleDbConnection> object of the .NET Framework Data Provider for OLE DB. To connect to an ODBC data source, use the <xref:System.Data.Odbc.OdbcConnection> object of the .NET Framework Data Provider for ODBC. To connect to an Oracle data source, use the <xref:System.Data.OracleClient.OracleConnection> object of the .NET Framework Data Provider for Oracle. For securely storing and retrieving connection strings, see [Protecting Connection Information](protecting-connection-information.md).
 
@@ -23,7 +22,7 @@ To connect to Microsoft SQL Server, use the <xref:System.Data.SqlClient.SqlConne
 > [!NOTE]
 > Login and logout events will not be raised on the server when a connection is fetched from or returned to the connection pool, because the connection is not actually closed when it is returned to the connection pool. For more information, see [SQL Server Connection Pooling (ADO.NET)](sql-server-connection-pooling.md).
 
-## Connecting to SQL Server
+## Connect to SQL Server
 
  The .NET Framework Data Provider for SQL Server supports a connection string format that is similar to the OLE DB (ADO) connection string format. For valid string format names and values, see the <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A> property of the <xref:System.Data.SqlClient.SqlConnection> object. You can also use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> class to create syntactically valid connection strings at run time. For more information, see [Connection String Builders](connection-string-builders.md).
 
@@ -52,7 +51,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 
  The security identity for ASP.NET applications can be set to one of several different options. To better understand the security identity that an ASP.NET application uses when connecting to SQL Server, see [ASP.NET Impersonation](/previous-versions/aspnet/xh507fc5(v=vs.100)), [ASP.NET Authentication](/previous-versions/aspnet/eeyk640h(v=vs.100)), and [How to: Access SQL Server Using Windows Integrated Security](/previous-versions/aspnet/bsz5788z(v=vs.100)).
 
-## Connecting to an OLE DB Data Source
+## Connect to an OLE DB Data Source
 
  The .NET Framework Data Provider for OLE DB provides connectivity to data sources exposed using OLE DB (through SQLOLEDB, the OLE DB Provider for SQL Server), using the **OleDbConnection** object.
 
@@ -62,7 +61,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 
 - The **URL**, **Remote Provider**, and **Remote Server** keywords are not supported.
 
- For more information about OLE DB connection strings, see the <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> topic. You can also use the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> to create connection strings at run time.
+ For more information about OLE DB connection strings, see the <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> artcile. You can also use the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> to create connection strings at run time.
 
 > [!NOTE]
 > The **OleDbConnection** object does not support setting or retrieving dynamic properties specific to an OLE DB provider. Only properties that can be passed in the connection string for the OLE DB provider are supported.
@@ -91,7 +90,7 @@ using (OleDbConnection connection =
 
  It is possible to supply connection information for an **OleDbConnection** in a Universal Data Link (UDL) file; however you should avoid doing so. UDL files are not encrypted, and expose connection string information in clear text. Because a UDL file is an external file-based resource to your application, it cannot be secured using the .NET Framework.
 
-## Connecting to an ODBC Data Source
+## Connect to an ODBC Data Source
 
  The .NET Framework Data Provider for ODBC provides connectivity to data sources exposed using ODBC using the **OdbcConnection** object.
 
@@ -117,7 +116,7 @@ using (OdbcConnection connection =
 }
 ```
 
-## Connecting to an Oracle Data Source
+## Connect to an Oracle Data Source
 
  The .NET Framework Data Provider for Oracle provides connectivity to Oracle data sources using the **OracleConnection** object.
 
@@ -141,8 +140,6 @@ using (OracleConnection connection =
     connection.Open();
     // Do work here.
 }
-OracleConnection nwindConn = new OracleConnection("Data Source=MyOracleServer;Integrated Security=yes;");
-nwindConn.Open();
 ```
 
 ## See also

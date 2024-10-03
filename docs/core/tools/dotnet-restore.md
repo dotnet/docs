@@ -192,9 +192,11 @@ There are three specific settings that `dotnet restore` ignores:
 
 ## Audit for security vulnerabilities
 
-Starting in .NET 8, you can opt into NuGet security auditing for `dotnet restore`. This auditing produces a report of security vulnerabilities with the affected package name, the severity of the vulnerability, and a link to the advisory for more details.
+Starting in .NET 8, `dotnet restore` includes NuGet security auditing. This auditing produces a report of security vulnerabilities with the affected package name, the severity of the vulnerability, and a link to the advisory for more details.
 
-To opt into security auditing, set the `<NuGetAudit>` MSBuild property to `true` in your project file. Additionally, to retrieve the known vulnerability dataset, ensure that you have the NuGet.org central registry defined as one of your package sources:
+To opt out of the security auditing, set the `<NuGetAudit>` MSBuild property to `false` in your project file.
+
+To retrieve the known vulnerability dataset, ensure that you have the NuGet.org central registry defined as one of your package sources:
 
 ```xml
 <packageSources>
@@ -203,3 +205,7 @@ To opt into security auditing, set the `<NuGetAudit>` MSBuild property to `true`
 ```
 
 You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.
+
+Starting in .NET 9, NuGet audits both *direct* and *transitive* package references, by default. In .NET 8, only *direct* package references are audited. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
+
+For more information, see [Auditing package dependencies for security vulnerabilities](/nuget/concepts/auditing-packages).

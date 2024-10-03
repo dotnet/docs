@@ -23,6 +23,9 @@ The following options control how the C# compiler creates or imports Win32 resou
 - **Resources** / `-resource`: Embed the specified resource (Short form: /res).
 - **LinkResources** / `-linkresources`: Link the specified resource to this assembly.
 
+> [!NOTE]
+> Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
+
 ## Win32Resource
 
 The **Win32Resource** option inserts a Win32 resource in the output file.

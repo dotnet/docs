@@ -7,8 +7,7 @@ static class Class1
 {
     static void Main()
     {
-        const string c = "Data Source=(local);Integrated Security=true;" +
-        "Initial Catalog=AdventureWorks; ";
+        const string c = "my secure connection string";
         GetXmlData(c);
         Console.ReadLine();
     }

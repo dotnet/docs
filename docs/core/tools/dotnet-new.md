@@ -56,7 +56,7 @@ To activate tab completion for the .NET SDK, see [Enable tab completion](enable-
 
   Starting with .NET SDK 5.0.300, the [`search` command](dotnet-new-search.md) should be used to search for templates in NuGet.org.
 
-[!INCLUDE [](../../../includes/templates.md)]
+[!INCLUDE [templates](../../../includes/templates.md)]
 
 ## Options
 
@@ -148,7 +148,7 @@ Each template may have additional options defined. For more information, see [.N
 - Create a *global.json* in the current directory setting the SDK version to 8.0.101:
 
   ```dotnetcli
-  dotnet new globaljson --sdk-version 8.0.101
+  dotnet new globaljson --sdk-version 8.0.101 --roll-forward latestFeature
   ```
 
 - Show help for the C# console application template:

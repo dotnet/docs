@@ -2,5 +2,5 @@
 internal class Program
 {
     public static void Main()
-        => CompareExample.RunIt();
+        => CompareExample.RunIt().Wait();
 }

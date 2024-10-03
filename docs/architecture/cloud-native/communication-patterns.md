@@ -23,20 +23,15 @@ A cluster groups a pool of virtual machines together to form a highly available 
 
 **Figure 4-1**. A Kubernetes cluster in Azure
 
-Across the cluster, microservices communicate with each other through APIs and messaging technologies.
+Across the cluster, [microservices](/azure/architecture/microservices/) communicate with each other through APIs and [messaging technologies](/azure/service-bus-messaging/compare-messaging-services).
 
 While they provide many benefits, microservices are no free lunch. Local in-process method calls between components are now replaced with network calls. Each microservice must communicate over a network protocol, which adds complexity to your system:
 
 - Network congestion, latency, and transient faults are a constant concern.
-
 - Resiliency (that is, retrying failed requests) is essential.
-
-- Some calls must be [idempotent](https://www.restapitutorial.com/lessons/idempotency.html) as to keep consistent state.
-
+- Some calls must be idempotent as to keep consistent state.
 - Each microservice must authenticate and authorize calls.
-
 - Each message must be serialized and then deserialized - which can be expensive.
-
 - Message encryption/decryption becomes important.
 
 The book [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook), available for free from Microsoft, provides an in-depth coverage of communication patterns for microservice applications. In this chapter, we provide a high-level overview of these patterns along with implementation options available in the Azure cloud.

@@ -91,7 +91,7 @@ The parameter is useful for handling polymorphic cases and when using generics t
 You can use fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
 text representations are compliant with one of the "R", "l", "O", or "G"
  [standard date and time format strings](../base-types/standard-date-and-time-format-strings.md),
-or you want to write according to one of these formats. This approach is much faster than using s`DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
+or you want to write according to one of these formats. This approach is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
 
 The following example shows a custom converter that serializes and deserializes <xref:System.DateTime> values according to
  [the "R" standard format](../base-types/standard-date-and-time-format-strings.md#the-rfc1123-r-r-format-specifier):

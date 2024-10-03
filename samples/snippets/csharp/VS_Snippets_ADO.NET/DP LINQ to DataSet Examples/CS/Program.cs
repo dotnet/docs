@@ -7,7 +7,6 @@ using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
 // </SnippetImportsUsing>
-//using System.Windows.Forms;
 
 namespace LINQtoDataSetSamples
 {
@@ -2621,14 +2620,11 @@ namespace LINQtoDataSetSamples
 
         static void FillDataSet(DataSet ds)
         {
-            // <SnippetFillDataSet>
             try
             {
                 // Create a new adapter and give it a query to fetch sales order, contact,
-                // address, and product information for sales in the year 2002. Point connection
-                // information to the configuration setting "AdventureWorks".
-                string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
-                    + "Integrated Security=true;";
+                // address, and product information for sales in the year 2002.
+                string connectionString = "some secure connection string";
 
                 SqlDataAdapter da = new SqlDataAdapter(
                     "SELECT SalesOrderID, ContactID, OrderDate, OnlineOrderFlag, " +
@@ -2692,7 +2688,6 @@ namespace LINQtoDataSetSamples
             {
                 Console.WriteLine("SQL exception occurred: " + ex.Message);
             }
-            // </SnippetFillDataSet>
         }
 
         static void WriteSchemaToXSD(DataSet ds)

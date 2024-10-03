@@ -25,6 +25,7 @@ dev_langs:
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Warning                                            |
 | **Introduced in version**           | 3.2.0                                              |
+| **There is a code fix**             | Yes                                                |
 
 ## Cause
 

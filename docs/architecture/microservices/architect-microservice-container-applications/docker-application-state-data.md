@@ -29,7 +29,7 @@ From the Docker container:
 
 - **Overlay File System**. This Docker feature implements a copy-on-write task that stores updated information to the root file system of the container. That information is "on top" of the original image on which the container is based. If the container is deleted from the system, those changes are lost. Therefore, while it's possible to save the state of a container within its local storage, designing a system around this would conflict with the premise of container design, which by default is stateless.
 
-However, using Docker Volumes is now the preferred way to handle local data in Docker. If you need more information about storage in containers check on [Docker storage drivers](https://docs.docker.com/storage/storagedriver/select-storage-driver/) and [About storage drivers](https://docs.docker.com/storage/storagedriver/).
+However, using Docker Volumes is now the preferred way to handle local data in Docker. If you need more information about storage in containers check on [Docker storage drivers](https://docs.docker.com/engine/storage/drivers/select-storage-driver/) and [About storage drivers](https://docs.docker.com/engine/storage/drivers/).
 
 The following provides more detail about these options:
 

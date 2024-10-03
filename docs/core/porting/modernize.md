@@ -1,6 +1,6 @@
 ---
 title: Modernize your upgraded .NET Framework apps
-description: This article demonstrates some of the ways you can modernize your .NET Framework app after you've upgraded to .NET
+description: This article demonstrates some of the ways you can modernize a .NET Framework app after you've upgraded to .NET
 author: adegeo
 ms.date: 05/25/2023
 dev_langs: ["csharp", "vb"]
@@ -42,14 +42,14 @@ Perform the following steps to use the _appsettings.json_ file as your configura
 01. Add the `Microsoft.Extensions.Configuration.Json` NuGet package.
 01. Create a file named _appsettings.json_.
 
-    01. Right-click on the project file in the **Solution Explorer** window and select **Add** > **New Item...**.
+    01. Right-click on the project file in **Solution Explorer** and select **Add** > **New Item**.
     01. In the search box, enter `json`.
     01. Select the **JavaScript JSON Configuration File** template and set the **Name** to _appsettings.json_.
     01. Press **Add** to add the new file to the project.
 
 01. Set the _appsettings.json_ file to copy to the output directory.
 
-    In the **Solution Explorer** window, find the _appsettings.json_ file and set the following **Properties**:
+    In **Solution Explorer**, find the _appsettings.json_ file and set the following **Properties**:
 
     - **Build Action**: Content
     - **Copy to Output Directory**: Copy always
@@ -65,53 +65,53 @@ Perform the following steps to use the _appsettings.json_ file as your configura
 
     ```csharp
     using Microsoft.Extensions.Configuration;
-    
+
     internal class Program
     {
         internal static IConfiguration Config { get; private set; }
-    
+
         private static void Main(string[] args)
         {
             Config = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .Build();
-    
-            // Use the config file to get a connection string
+
+            // Use the config file to get a connection string.
             string? myConnectionString = Config.GetConnectionString("database");
-    
-            // Run the rest of your app
+
+            // Run the rest of your app.
         }
     }
     ```
 
     ```vb
     Imports Microsoft.Extensions.Configuration
-    
+
     Module Program
-    
+
         Private _config As IConfiguration
-    
+
         ' Shared not required since Program is a Module
         Friend Property Config As IConfiguration
-    
+
             Get
                 Return _config
             End Get
             Private Set(value As IConfiguration)
                 _config = value
             End Set
-    
+
         End Property
-    
+
         Sub Main(args As String())
-    
+
             Config = New ConfigurationBuilder() _
                 .AddJsonFile("appsettings.json") _
                 .Build()
-    
+
             ' Use the config file to get a connection string
             Dim myConnectionString As String = Config.GetConnectionString("database")
-    
+
             ' Run the rest of your app
         End Sub
     End Module

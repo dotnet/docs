@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Data;
-// <Snippet1>
 using System.Data.SqlClient;
 
 static class Program
 {
+    // <Snippet1>
     static void Main()
     {
         var connectionString = GetConnectionString();
@@ -159,14 +159,8 @@ static class Program
             }
         }
     }
+    // </Snippet1>
 
-    static string GetConnectionString()
-    // To avoid storing the connection string in your code,
-    // you can retrieve it from a configuration file.
-    {
-        return "Data Source=(local); " +
-            " Integrated Security=true;" +
-            "Initial Catalog=AdventureWorks;";
-    }
+    static string GetConnectionString() =>
+        throw new NotImplementedException();
 }
-// </Snippet1>

@@ -13,7 +13,7 @@ zone_pivot_groups: azure-interface
 
 This article demonstrates how to manage the connection between your App Service .NET application and a [vector database solution](../conceptual/vector-databases.md). It covers using Microsoft Entra managed identities for supported services and securely storing connection strings for others.
 
-By adding a vector database to your application, you can enable [semantic memories](/semantic-kernel/memories/) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
+By adding a vector database to your application, you can enable [semantic memories or *vector stores*]([vector stores](/semantic-kernel/concepts/vector-store-connectors/)) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ By adding a vector database to your application, you can enable [semantic memori
 * [`Microsoft.SemanticKernel` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel)
 * [`Microsoft.SemanticKernel.Plugins.Memory` NuGet package](https://www.nuget.org/packages/Microsoft.SemanticKernel.Plugins.Memory)
 * [Create and deploy a .NET application to App Service](/azure/app-service/quickstart-dotnetcore)
-* [Create and deploy a vector database solution](/semantic-kernel/memories/vector-db)
+* [Create and deploy a vector database solution](/semantic-kernel/concepts/ai-services/integrations#vector-database-solutions)
 
 ## Use Microsoft Entra managed identity for authentication
 
@@ -190,7 +190,7 @@ Before following these steps, retrieve a connection string for your vector datab
 > [!IMPORTANT]
 > Before following these steps, ensure you have [created a Key Vault using the Azure CLI](/azure/key-vault/general/quick-create-cli).
 
-1. Grant your user account permissions to your key vault through Role-Based Access Control (RBAC), assign a role using the Azure CLI command [`az role assignment create`](/cli/azure/role/assignment?view=azure-cli-latest#az-role-assignment-create):
+1. Grant your user account permissions to your key vault through Role-Based Access Control (RBAC), assign a role using the Azure CLI command [`az role assignment create`](/cli/azure/role/assignment#az-role-assignment-create):
 
     ```azurecli
     az role assignment create \
@@ -199,7 +199,7 @@ Before following these steps, retrieve a connection string for your vector datab
     --scope "/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.KeyVault/vaults/<keyVaultName>"
     ```
 
-1. Add the connection string to Key Vault using the Azure CLI command [`az keyvault secret set`](/cli/azure/keyvault/secret?view=azure-cli-latest#az-keyvault-secret-set):
+1. Add the connection string to Key Vault using the Azure CLI command [`az keyvault secret set`](/cli/azure/keyvault/secret#az-keyvault-secret-set):
 
     ```azurecli
     az keyvault secret set \
@@ -271,7 +271,7 @@ Before following these steps, retrieve a connection string for your vector datab
 
 :::zone target="docs" pivot="azure-cli"
 
-Add or edit an app setting with the Azure CLI command [`az webapp config connection-string set`](/cli/azure/webapp/config/connection-string?view=azure-cli-latest#az-webapp-config-connection-string-set):
+Add or edit an app setting with the Azure CLI command [`az webapp config connection-string set`](/cli/azure/webapp/config/connection-string#az-webapp-config-connection-string-set):
 
 ```azurecli
 az webapp config connection-string set \

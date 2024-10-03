@@ -112,11 +112,11 @@ This example creates a core dump when the StackOverflowException occurs, then lo
 
 Running the application under the debugger in [Visual Studio](/visualstudio/debugger/what-is-debugging) will show a StackOverflowException in the exception helper dialog and highlight the line of code responsible for making the final call that overflows the stack.
 
-[Visual Studio StackOverflowException dialog](media/visual_studio_stackoverflow_exception.png)
+:::image type="content" source="media/visual-studio-stackoverflow-exception.png" alt-text="Visual Studio StackOverflowException dialog.":::
 
 The callstack debugger window also shows the stack.
 
-[Visual Studio StackOverflow callstack](media/visual_studio_stackoverflow_callstack.png)
+:::image type="content" source="media/visual-studio-stackoverflow-callstack.png" alt-text="Visual Studio StackOverflow callstack.":::
 
 You can use all the normal Visual Studio debugger features to investigate each frame on the callstack, its source code, and the value of local variables.
 

@@ -325,7 +325,7 @@ Consider the following snippet:
 
 `Compare` is conveniently written such that if you wanted to compare other types, like strings or `double` values, you could reuse the same implementation. But in this example, it also has the performance drawback of requiring any value types that are passed to it to be *boxed*.
 
-The x64 assembly code generated for `Main` is as follows:
+The x64 assembly code generated for `RunIt` is as follows:
 
 ```al
 push     rbx
@@ -352,7 +352,7 @@ pop      rbx
 ret
 ```
 
-The calls to `CORINFO_HELP_NEWSFAST` are the heap allocations for the boxed integer arguments. Also, notice that there isn't any call to `Compare`; the compiler decided to inline it into `Main`. This inlining means the boxes never "escape." In other words, throughout the execution of `Compare`, it knows `x` and `y` are actually integers, and they can be safely unboxed them without affecting the comparison logic.
+The calls to `CORINFO_HELP_NEWSFAST` are the heap allocations for the boxed integer arguments. Also, notice that there isn't any call to `Compare`; the compiler decided to inline it into `RunIt`. This inlining means the boxes never "escape." In other words, throughout the execution of `Compare`, it knows `x` and `y` are actually integers, and they can be safely unboxed them without affecting the comparison logic.
 
 Starting in .NET 9, the 64-bit compiler allocates unescaped boxes on the stack, which unlocks several other optimizations. In this example, not only does the compiler avoid the heap allocations, but it also evaluates the expressions `x.Equals(y)` and `result ? 0 : 100` at compile time. Here's the updated assembly:
 

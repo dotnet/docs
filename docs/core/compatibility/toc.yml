@@ -58,6 +58,10 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+          - name: Interop
+            items:
+              - name: CET supported by default
+                href: interop/9.0/cet-support.md
           - name: JIT compiler
             items:
               - name: Floating point to integer conversions are saturating
@@ -1614,6 +1618,10 @@ items:
             href: globalization.md
       - name: Interop
         items:
+          - name: .NET 9
+            items:
+              - name: CET supported by default
+                href: interop/9.0/cet-support.md
           - name: .NET 8
             items:
               - name: CreateObjectFlags.Unwrap only unwraps on target instance

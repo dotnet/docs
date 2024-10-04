@@ -17,7 +17,6 @@ Previously, there was a single overload for each `TimeSpan.From*()` method, name
 - <xref:System.TimeSpan.FromMilliseconds(System.Double)>
 - <xref:System.TimeSpan.FromMinutes(System.Double)>
 - <xref:System.TimeSpan.FromSeconds(System.Double)>
-- <xref:System.TimeSpan.FromTicks(System.Double)>
 
 ## New behavior
 
@@ -49,4 +48,3 @@ If this change affects your F# code, specify the type of argument so the compile
 - <xref:System.TimeSpan.FromMilliseconds*>
 - <xref:System.TimeSpan.FromMinutes*>
 - <xref:System.TimeSpan.FromSeconds*>
-- <xref:System.TimeSpan.FromTicks*>

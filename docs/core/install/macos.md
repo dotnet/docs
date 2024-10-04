@@ -230,6 +230,5 @@ For more information about using .NET in a Docker container, see [Introduction t
 
 - [How to check if .NET is already installed](how-to-detect-installed-versions.md?pivots=os-macos).
 - [Working with macOS Catalina notarization](macos-notarization-issues.md).
-- [Tutorial: Get started on macOS](../tutorials/with-visual-studio-mac.md).
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET app](../docker/build-container.md).

@@ -12,19 +12,19 @@ Under normal circumstances, calling APIs annotated with <xref:System.Diagnostics
 
 Some APIs annotated `[RequiresUnreferencedCode]` can still be used without triggering the warning if they're called in a specific pattern. When used as part of a pattern, the call to the API can be statically analyzed by the compiler, does not generate a warning, and behaves as expected at run time.
 
-## MethodInfo.MakeGenericMethod(Type[]) Method
+## MethodInfo.MakeGenericMethod(Type[]) method
 
 Calls to this API don't trigger a warning if the generic method definition is statically visible within the calling method body and none of the generic method's generic parameters have the `new()` constraint or `DynamicallyAccessedMembers` attribute. For example, `typeof(SomeType).GetMethod("GenericMethod").MakeGenericMethod(someType)` doesn't generate a warning provided there are no `new()` constraints or `DynamicallyAccessedMembers` annotations on the generic parameters.
 
 If the generic method has parameters with the `new()` constraint or `DynamicallyAccessedMembers` attribute, the generic arguments used with `MakeGenericMethod` need to also be statically visible within the calling method body. Otherwise the warning is issued.
 
-## MethodInfo.MakeGenericType(Type[]) Method
+## MethodInfo.MakeGenericType(Type[]) method
 
 Calls to this API don't trigger a warning if the generic type definition is statically visible within the calling method body and none of the generic type's generic parameters have the `new()` constraint or `DynamicallyAccessedMembers` attribute. For example, `typeof(SomeType<>).MakeGenericType(someType)` doesn't generate a warning provided there are no `new()` constraints or `DynamicallyAccessedMembers` annotations on the generic parameters.
 
 If the generic type has parameters with the `new()` constraint or `DynamicallyAccessedMembers` attribute, the generic arguments used with `MakeGenericType` need to also be statically visible within the calling method body. Otherwise the warning is issued.
 
-## RuntimeHelpers.RunClassConstructor(Type) Method
+## RuntimeHelpers.RunClassConstructor(Type) method
 
 Calls to this API don't trigger a warning if the concrete type is statically visible in the calling method body. For example, `RuntimeHelpers.RunClassConstructor(typeof(string).TypeHandle)` does not trigger a warning, but `RuntimeHelpers.RunClassConstructor(typeof(T).TypeHandle)` and `RuntimeHelpers.RunClassConstructor(someTypeHandle)` do.
 

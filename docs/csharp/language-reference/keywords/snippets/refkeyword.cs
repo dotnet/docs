@@ -30,7 +30,7 @@ public class RefKeywordExamples
     // <ConditionalRef>
     public ref int RefMaxConditions(ref int left, ref int right)
     {
-        ref int returnValue = left > right ? ref left : ref right;
+        ref int returnValue = ref left > right ? ref left : ref right;
         return ref returnValue;
     }
     // </ConditionalRef>

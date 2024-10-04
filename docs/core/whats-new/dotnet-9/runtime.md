@@ -354,7 +354,7 @@ ret
 
 The calls to `CORINFO_HELP_NEWSFAST` are the heap allocations for the boxed integer arguments. Also, notice that there isn't any call to `Compare`; the compiler decided to inline it into `RunIt`. This inlining means the boxes never "escape." In other words, throughout the execution of `Compare`, it knows `x` and `y` are actually integers, and they can be safely unboxed them without affecting the comparison logic.
 
-Starting in .NET 9, the 64-bit compiler allocates unescaped boxes on the stack, which unlocks several other optimizations. In this example, the compiler now omits the heap allocations, but because it knows `x` and `y` are 3 and 4, it can also omit the body of `Compare`; the compiler can determine `x.Equals(y)` is false at compile time, so `Main` should always return 100. Here's the updated assembly:
+Starting in .NET 9, the 64-bit compiler allocates unescaped boxes on the stack, which unlocks several other optimizations. In this example, the compiler now omits the heap allocations, but because it knows `x` and `y` are 3 and 4, it can also omit the body of `Compare`; the compiler can determine `x.Equals(y)` is false at compile time, so `RunIt` should always return 100. Here's the updated assembly:
 
 ```al
 mov      eax, 100

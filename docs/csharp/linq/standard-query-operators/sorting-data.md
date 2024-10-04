@@ -25,11 +25,7 @@ The standard query operator methods that sort data are listed in the following s
 |ThenByDescending|Performs a secondary sort in descending order.|`orderby …, … descending`|<xref:System.Linq.Enumerable.ThenByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenByDescending%2A?displayProperty=nameWithType>|
 |Reverse|Reverses the order of the elements in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Reverse%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse%2A?displayProperty=nameWithType>|
 
-The following examples in this article use the common data sources for this area:
-
-:::code language="csharp" source="./snippets/standard-query-operators/DataSources.cs" id="QueryDataSource":::
-
-Each `Student` has a grade level, a primary department, and a series of scores. A `Teacher` also has a `City` property that identifies the campus where the teacher holds classes. A `Department` has a name, and a reference to a `Teacher` who serves as the department head.
+[!INCLUDE [Datasources](../includes/data-sources-definition.md)]
 
 ## Primary Ascending Sort
 

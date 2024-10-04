@@ -11,7 +11,7 @@ The latest C# compiler determines a default language version based on your proje
 
 [C# 13](../whats-new/csharp-13.md) is supported only on .NET 9 and newer versions. [C# 12](../whats-new/csharp-12.md) is supported only on .NET 8 and newer versions. [C# 11](../whats-new/csharp-11.md) is supported only on .NET 7 and newer versions.
 
-Check the [Visual Studio platform compatibility](/visualstudio/releases/2022/compatibility#-visual-studio-2022-support-for-net-development) page for details on which .NET versions are supported by versions of Visual Studio. Check the [Visual Studio for Mac platform compatibility](/visualstudio/mac/supported-versions-net) page for details on which .NET versions are supported by versions of Visual Studio for Mac. Check the [Mono page for C#](https://www.mono-project.com/docs/about-mono/languages/csharp/) for Mono compatibility with C# versions.
+Check the [Visual Studio platform compatibility](/visualstudio/releases/2022/compatibility#-visual-studio-2022-support-for-net-development) page for details on which .NET versions are supported by versions of Visual Studio. Check the [Mono page for C#](https://www.mono-project.com/docs/about-mono/languages/csharp/) for Mono compatibility with C# versions.
 
 ## Defaults
 

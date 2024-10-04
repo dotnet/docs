@@ -192,22 +192,6 @@ The **x64** .NET SDK installs to its own directory, as described in the previous
 
 Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET 6 SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET 6 SDK installation folder.
 
-## Install with Visual Studio for Mac
-
-Visual Studio for Mac installs the .NET SDK when the **.NET** workload is selected. To get started with .NET development on macOS, see [Install Visual Studio 2022 for Mac](/visualstudio/mac/installation).
-
-> [!IMPORTANT]
-> Visual Studio for Mac is being retired. For more information, see [What's happening to Visual Studio for Mac?](/visualstudio/mac/what-happened-to-vs-for-mac?view=vsmac-2022&preserve-view=true).
-
-| .NET SDK version      | Visual Studio version                                                               |
-| --------------------- | ----------------------------------------------------------------------------------- |
-| 8.0                   | Visual Studio 2022 for Mac 17.6.1 or higher. (Available as a preview feature only.) |
-| 6.0                   | Visual Studio 2022 for Mac 17.0 or higher.                                          |
-
-:::image type="content" source="media/install-sdk/mac-install-selection.png" alt-text="macOS Visual Studio 2022 for Mac with the .NET workload selected." lightbox="media/install-sdk/mac-install-selection.png":::
-
-[!INCLUDE [](~/includes/vs-mac-eol.md)]
-
 ## Install alongside Visual Studio Code
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.

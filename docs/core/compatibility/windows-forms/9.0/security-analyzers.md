@@ -25,7 +25,7 @@ Previously, properties in Windows Forms and <xref:System.Windows.Forms.UserContr
 
 ## New behavior
 
-Starting in .NET 9, the new Windows Forms security analyzers enforce stricter control over the serialization of properties in controls and <xref:System.Windows.Forms.UserControl> objects. By default, the analyzer produces an error if a property does not have its CodeDOM serialization behavior explicitly defined. This behavior ensures that properties aren't inadvertently serialized. You can adjust the *.editorconfig* settings to change the analyzer's severity or suppress the error.
+Starting in .NET 9, the new Windows Forms security analyzers enforce stricter control over the serialization of properties in controls and <xref:System.Windows.Forms.UserControl> objects. By default, the analyzer produces an error if a property does not have its CodeDOM serialization behavior explicitly defined. This behavior ensures that properties aren't inadvertently serialized. You can adjust the *.editorconfig* settings to change the analyzer's [severity](../../../../fundamentals/code-analysis/configuration-options.md#severity-level) or suppress the error.
 
 ## Version introduced
 

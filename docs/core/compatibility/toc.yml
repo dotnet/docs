@@ -40,6 +40,8 @@ items:
                 href: core-libraries/9.0/inlinearray-size.md
               - name: InMemoryDirectoryInfo prepends rootDir to files
                 href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
+              - name: New TimeSpan.From*() overloads that take integers
+                href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
               - name: Support for empty environment variables
@@ -94,6 +96,8 @@ items:
                 href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
               - name: IMsoComponent support is opt-in
                 href: windows-forms/9.0/imsocomponent-support.md
+              - name: New security analyzers
+                href: windows-forms/9.0/security-analyzers.md
               - name: No exception if DataGridView is null
                 href: windows-forms/9.0/datagridviewheadercell-nre.md
               - name: PictureBox raises HttpClient exceptions
@@ -150,6 +154,8 @@ items:
                 href: core-libraries/8.0/file-path-backslash.md
               - name: Base64.DecodeFromUtf8 methods ignore whitespace
                 href: core-libraries/8.0/decodefromutf8-whitespace.md
+              - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
+                href: core-libraries/9.0/binaryreader.md
               - name: Boolean-backed enum type support removed
                 href: core-libraries/8.0/bool-backed-enum.md
               - name: Complex.ToString format changed to `<a; b>`
@@ -238,6 +244,8 @@ items:
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets
                 href: networking/8.0/sendfile-connectionless.md
+              - name: User info in `mailto:` URIs is compared
+                href: networking/8.0/uri-comparison.md
           - name: Reflection
             items:
               - name: IntPtr no longer used for function pointer types
@@ -1242,6 +1250,8 @@ items:
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
                 href: core-libraries/9.0/biginteger-limit.md
+              - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
+                href: core-libraries/9.0/binaryreader.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
@@ -1254,6 +1264,8 @@ items:
                 href: core-libraries/9.0/inlinearray-size.md
               - name: InMemoryDirectoryInfo prepends rootDir to files
                 href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
+              - name: New TimeSpan.From*() overloads that take integers
+                href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
               - name: Support for empty environment variables
@@ -1670,6 +1682,8 @@ items:
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets
                 href: networking/8.0/sendfile-connectionless.md
+              - name: User info in `mailto:` URIs is compared
+                href: networking/8.0/uri-comparison.md
           - name: .NET 7
             items:
               - name: AllowRenegotiation default is false
@@ -1928,6 +1942,8 @@ items:
                 href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
               - name: IMsoComponent support is opt-in
                 href: windows-forms/9.0/imsocomponent-support.md
+              - name: New security analyzers
+                href: windows-forms/9.0/security-analyzers.md
               - name: No exception if DataGridView is null
                 href: windows-forms/9.0/datagridviewheadercell-nre.md
               - name: PictureBox raises HttpClient exceptions

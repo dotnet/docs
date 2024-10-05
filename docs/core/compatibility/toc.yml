@@ -54,6 +54,8 @@ items:
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
                 href: cryptography/9.0/x509-certificates.md
+              - name: Windows private key lifetime simplified
+                href: cryptography/9.0/private-key-lifetime.md
           - name: Deployment
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
@@ -1470,6 +1472,8 @@ items:
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
                 href: cryptography/9.0/x509-certificates.md
+              - name: Windows private key lifetime simplified
+                href: cryptography/9.0/private-key-lifetime.md
           - name: .NET 8
             items:
               - name: AesGcm authentication tag size on macOS

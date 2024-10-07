@@ -34,11 +34,7 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Excep
 
 :::image type="content" source="./media/set-operations/except-behavior-graphic.png" alt-text="Graphic showing the action of Except()":::
 
-The following examples in this article use the common data sources for this area:
-
-:::code language="csharp" source="./snippets/standard-query-operators/DataSources.cs" id="QueryDataSource":::
-
-Each `Student` has a grade level, a primary department, and a series of scores. A `Teacher` also has a `City` property that identifies the campus where the teacher holds classes. A `Department` has a name, and a reference to a `Teacher` who serves as the department head.
+[!INCLUDE [Datasources](../includes/data-sources-definition.md)]
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Except":::
 

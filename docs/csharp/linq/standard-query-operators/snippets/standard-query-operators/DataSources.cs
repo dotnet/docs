@@ -28,6 +28,7 @@ public class Teacher
     public required int ID { get; init; }
     public required string City { get; init; }
 }
+
 public class Department
 {
     public required string Name { get; init; }

@@ -4,11 +4,8 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>all_rules</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>$(NoWarn);BC30149</NoWarn>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Program.vb" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />

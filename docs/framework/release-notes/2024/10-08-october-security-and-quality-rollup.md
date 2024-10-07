@@ -79,7 +79,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 3.5 | [5044012](https://support.microsoft.com/kb/5044012) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5044018](https://support.microsoft.com/kb/5044018) |
 | .NET Framework 4.8 | [5044026](https://support.microsoft.com/kb/5044026) |
-| **Windows Server 2012** | **[	5044096](https://support.microsoft.com/kb/	5044096)** |
+| **Windows Server 2012** | **[5044096](https://support.microsoft.com/kb/5044096)** |
 | .NET Framework 3.5 | [5044009](https://support.microsoft.com/kb/5044009) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5044017](https://support.microsoft.com/kb/5044017) |
 | .NET Framework 4.8 | [5044024](https://support.microsoft.com/kb/5044024) |

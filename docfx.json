@@ -309,6 +309,10 @@
                 "docs/visual-basic/**/**.md": "vb"
             },
             "author": {
+                "_csharplang/**/*.md": "billwagner",
+                "_csharpstandard/**/*.md": "billwagner",
+                "_roslyn/docs/compilers/CSharp/*.md": "billwagner",
+                "_vblang/spec/*.md": "billwagner",
                 "docs/azure/**/*.*": "alexwolfmsft",
                 "docs/orleans/**/*.*": "IEvangelist",
                 "docs/architecture/**/**.md": "jamesmontemagno",

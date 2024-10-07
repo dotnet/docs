@@ -19,7 +19,7 @@ ms.topic: reference
 | `3` | The exit code `3` indicates that the test session was aborted. A session can be aborted using <kbd>Ctrl</kbd>+<kbd>C</kbd>, as an example. |
 | `4` | The exit code `4` indicates that the setup of used extensions is invalid and the tests session cannot run. |
 | `5` | The exit code `5` indicates that the command line arguments passed to the test app are invalid. |
-| `6` | The exit code `6` indicates that the test session is using a nonimplemented feature. |
+| `6` | The exit code `6` indicates that the test session is using a non-implemented feature. |
 | `7` | The exit code `7` indicates that a test session was unable to complete successfully, and likely crashed. It's possible that this was caused by a test session that was run via a test controller's extension point. |
 | `8` | The exit code `8` indicates that the test session ran zero tests. |
 | `9` | The exit code `9` indicates that the minimum execution policy for the executed tests was violated. |

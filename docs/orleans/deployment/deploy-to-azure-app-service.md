@@ -1,7 +1,7 @@
 ---
 title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
-ms.date: 07/03/2024
+ms.date: 10/01/2024
 ms.topic: tutorial
 ms.custom: devx-track-bicep
 ---
@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 
 - A [GitHub account](https://github.com/join)
 - [Read an introduction to Orleans](../overview.md)
-- The [.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet)
+- The [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet)
 - The [Azure CLI](/cli/azure/install-azure-cli)
 - A .NET integrated development environment (IDE)
   - Feel free to use [Visual Studio](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com)
@@ -112,6 +112,47 @@ When items are in your cart, you can view them and change their quantity, and ev
 > [!IMPORTANT]
 > When this app runs locally, in a development environment, the app will use localhost clustering, in-memory storage, and a local silo. It also seeds the inventory with fake data that is automatically generated using the [Bogus NuGet](https://www.nuget.org/packages/bogus) package. This is all intentional to demonstrate the functionality.
 
+## Deployment overview
+
+Orleans applications are designed to scale up and scale out efficiently. To accomplish this, instances of your application communicate directly with each other via TCP sockets and therefore Orleans requires network connectivity between silos. Azure App Service supports this requirement via [virtual network integration](https://learn.microsoft.com/azure/app-service/overview-vnet-integration) and additional configuration instructing App Service to allocate private network ports for your app instances.
+
+When deploying Orleans to Azure App Service, we need to take the following actions to ensure that hosts can communicate with eachother:
+
+- Enable virtual network integration by following the [Enable integration with an Azure virtual network](https://learn.microsoft.com/azure/app-service/configure-vnet-integration-enable) guide.
+- Configure your app with private ports using the Azure CLI as described in the [Configure private port count using Azure CLI](#configure-private-port-count-using-azure-cli) section. The Bicep template in the [Explore the Bicep templates](#explore-the-bicep-templates) section below shows how to configure the setting via Bicep.
+- If deploying to Linux, ensure that your hosts are listening on all IP addresses as described in the [Configure host networking](#configure-host-networking) section.
+
+### Configure private port count using Azure CLI
+
+```azurecli
+az webapp config set -g '<resource-group-name>' --subscription '<subscription-id>' -n '<app-service-app-name>' --generic-configurations '{\"vnetPrivatePortsCount\": "2"}'
+```
+
+### Configure host networking
+
+Once Azure App Service has been configured with virtual network (VNet) integration and configured to provide application instances with at least 2 private ports each, two additional environment variables will be provided to your app processes: `WEBSITE_PRIVATE_IP` and `WEBSITE_PRIVATE_PORTS`. These variables provide two important pieces of information:
+
+- Which IP address other hosts in your virtual network can use to contact a given app instance; and
+- Which ports on that IP address will be routed to that app instance
+
+The `WEBSITE_PRIVATE_IP` variable specifies an IP which is routable from the VNet, but not necessarily an IP address which your app instance can directly bind to. For this reason, you should instruct your host to bind to all internal addresses by passing `listenOnAnyHostAddress: true` to the `ConfigureEndpoints` method call, as in the following example which configures an `ISiloBuilder` instance to consume the injected environment variables and to listen on the correct interfaces:
+
+```csharp
+var endpointAddress = IPAddress.Parse(builder.Configuration["WEBSITE_PRIVATE_IP"]!);
+var strPorts = builder.Configuration["WEBSITE_PRIVATE_PORTS"]!.Split(',');
+if (strPorts.Length < 2)
+{
+    throw new Exception("Insufficient private ports configured.");
+}
+
+var (siloPort, gatewayPort) = (int.Parse(strPorts[0]), int.Parse(strPorts[1]));
+
+siloBuilder
+    .ConfigureEndpoints(endpointAddress, siloPort, gatewayPort, listenOnAnyHostAddress: true)
+```
+
+The above code is present in the [Azure Samples: Orleans Cluster on Azure App Service](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service) repository, too, so you can see it in the context of the rest of the host configuration.
+
 ## Deploy to Azure App Service
 
 A typical Orleans application consists of a cluster of server processes (silos) where grains live, and a set of client processes, usually web servers, that receive external requests, turn them into grain method calls and return results. Hence, the first thing one needs to do to run an Orleans application is to start a cluster of silos. For testing purposes, a cluster can consist of a single silo.
@@ -157,10 +198,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Setup .NET 7.0
+    - name: Setup .NET 8.0
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 7.0.x
+        dotnet-version: 8.0.x
 
     - name: .NET publish shopping cart app
       run: dotnet publish ./Silo/Orleans.ShoppingCart.Silo.csproj --configuration Release
@@ -417,7 +458,7 @@ resource appService 'Microsoft.Web/sites@2021-03-01' = {
     siteConfig: {
       vnetPrivatePortsCount: 2
       webSocketsEnabled: true
-      netFrameworkVersion: 'v6.0'
+      netFrameworkVersion: 'v8.0'
       appSettings: [
         {
           name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
@@ -451,7 +492,7 @@ resource stagingSlot 'Microsoft.Web/sites/slots@2022-03-01' = {
       http20Enabled: true
       vnetPrivatePortsCount: 2
       webSocketsEnabled: true
-      netFrameworkVersion: 'v7.0'
+      netFrameworkVersion: 'v8.0'
       appSettings: [
         {
           name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
@@ -494,7 +535,7 @@ resource appServiceConfig 'Microsoft.Web/sites/config@2021-03-01' = {
 }
 ```
 
-This bicep file configures the Azure App Service as a .NET 7 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally, the resource is configured to use the `vnetSubnetId` subnet and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and the `storageConnectionString` connection string. These are used by the shopping cart app.
+This bicep file configures the Azure App Service as a .NET 8 application. Both the `appServicePlan` resource and the `appService` resource are provisioned in the resource group's location. The `appService` resource is configured to use the `S1` SKU, with a capacity of `1`. Additionally, the resource is configured to use the `vnetSubnetId` subnet and to use HTTPS. It also configures the `appInsightsInstrumentationKey` instrumentation key, the `appInsightsConnectionString` connection string, and the `storageConnectionString` connection string. These are used by the shopping cart app.
 
 The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All of these bicep files are visualized as follows:
 

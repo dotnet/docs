@@ -22,7 +22,6 @@ To use the AutoML API, install the [`Microsoft.ML.AutoML`](https://www.nuget.org
 For more information on installing NuGet packages, see the following guides:
 
 - [Install and use a NuGet package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
-- [Install and use a package in Visual Studio for Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 - [Install and use a package (dotnet CLI)](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
 
 ## Quick Start

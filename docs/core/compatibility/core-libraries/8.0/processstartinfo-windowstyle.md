@@ -3,7 +3,7 @@ title: ".NET 8 breaking change: ProcessStartInfo.WindowStyle honored when UseShe
 description: Learn about the .NET 8 breaking change in core .NET libraries where ProcessStartInfo.WindowStyle is now honored even when UseShellExecute is false.
 ms.date: 11/08/2023
 ---
-# ProcessStartInfo.WindowsStyle honored when UseShellExecute is false
+# ProcessStartInfo.WindowStyle honored when UseShellExecute is false
 
 Previously, <xref:System.Diagnostics.ProcessStartInfo.WindowStyle?displayName=nameWithType> was only honored when <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute?displayName=nameWithType> was `true`. This change honors <xref:System.Diagnostics.ProcessStartInfo.WindowStyle> even when <xref:System.Diagnostics.ProcessStartInfo.UseShellExecute> is `false`.
 

@@ -854,7 +854,7 @@ Let's examine the apis and their mean:
 * `OneOrMore`: Represents an argument arity of one or more.
 * `ExactlyOne`: Represents an argument arity of exactly one.
 
-For examples, refer to the [System.CommandLine arity table](https://learn.microsoft/dotnet/standard/commandline/syntax#argument-arity).
+For examples, refer to the [System.CommandLine arity table](https://learn.microsoft.com/dotnet/standard/commandline/syntax#argument-arity).
 
 `bool isHidden`: This property signifies that the option is available for use but will not be displayed in the description when `--help` is invoked.
 

@@ -54,7 +54,7 @@ public interface ITestFrameworkCapability : ICapability
 }
 ```
 
-As you can see, the `ICapability` interface is a *marker* interface because it can represent *any capability*, and the actual implementation will be context dependent. You'll also observe the `ITestFrameworkCapability`, which inherits from `ICapability` to classify the capability. The capability system's generic nature allows for convenient grouping by context. The `ITestFrameworkCapability` groups all the capabilities implemented by the [testing framework](./unit-testing-platform-architecture-extensions.md#creating-a-testing-framework). The `ICapabilities<TCapability>` interface reveals the *set* of all capabilities implemented by an extension. Similarly, for the base one, there's a context-specific testing framework called `ITestFrameworkCapabilities`. The `ITestFrameworkCapabilities` is provided to the platform during the [testing framework registration](./unit-testing-platform-architecture-extensions.md#registering-a-testing-framework) process.
+As you can see, the `ICapability` interface is a *marker* interface because it can represent *any capability*, and the actual implementation will be context dependent. You'll also observe the `ITestFrameworkCapability`, which inherits from `ICapability` to classify the capability. The capability system's generic nature allows for convenient grouping by context. The `ITestFrameworkCapability` groups all the capabilities implemented by the [testing framework](./unit-testing-platform-architecture-extensions.md#create-a-testing-framework). The `ICapabilities<TCapability>` interface reveals the *set* of all capabilities implemented by an extension. Similarly, for the base one, there's a context-specific testing framework called `ITestFrameworkCapabilities`. The `ITestFrameworkCapabilities` is provided to the platform during the [testing framework registration](./unit-testing-platform-architecture-extensions.md#register-a-testing-framework) process.
 
 To create a capability that addresses the aforementioned scenario, you define it as follows:
 
@@ -115,7 +115,7 @@ In conclusion, let's summarize the primary aspects of the capability system:
 
 ## Framework capabilities
 
-The platform exposes a specialized interface named `ITestFrameworkCapability` that is the base of all capabilities exposed for test frameworks. These capabilities are provided when [registering the test framework to the platform](./unit-testing-platform-architecture-extensions.md#registering-a-testing-framework).
+The platform exposes a specialized interface named `ITestFrameworkCapability` that is the base of all capabilities exposed for test frameworks. These capabilities are provided when [registering the test framework to the platform](./unit-testing-platform-architecture-extensions.md#register-a-testing-framework).
 
 ### `IBannerMessageOwnerCapability`
 

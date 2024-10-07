@@ -25,8 +25,8 @@ _C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {versio
     ```console  
     xsd mySchema.xsd /classes
     ```  
+
     (The `/classes` option in this command is used to generate classes for the `mySchema` schema.)
-    
     The tool can only process schemas that reference the World Wide Web Consortium XML specification of March 16, 2001. In other words, the XML Schema namespace must be `"http://www.w3.org/2001/XMLSchema"`, as shown in the following example.  
   
     ```xml  

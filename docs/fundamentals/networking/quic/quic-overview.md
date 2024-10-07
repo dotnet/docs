@@ -63,7 +63,7 @@ Here are some examples of using a package manager to install `libmsquic`:
 - **APT**
 
   ```bash
-  sudo apt-get libmsquic 
+  sudo apt-get install libmsquic 
   ```
 
 - **APK**

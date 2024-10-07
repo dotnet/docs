@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: CET supported by default"
-description: Learn about the breaking change in interop in .NET 8 where CET is supported by default.
+description: Learn about the breaking change in interop in .NET 9 where CET is supported by default.
 ms.date: 10/04/2024
 ---
 # CET supported by default

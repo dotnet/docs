@@ -108,10 +108,6 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
 
-# [Visual Studio for Mac](#tab/vsmac)
-
-Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the CLI tab. For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
-
 ---
 
 ## Exclude files from being embedded

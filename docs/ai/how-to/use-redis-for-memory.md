@@ -13,7 +13,7 @@ ms.date: 04/17/2024
 
 This article demonstrates how to integrate a Redis database with the RediSearch module into the [Semantic Kernel SDK](/semantic-kernel/overview) and use it for memory storage and retrieval.
 
-[Memories](/semantic-kernel/memories/) represent text information that has been stored alongside a precomputed embedding vector for the whole text. When an LLM is prompted to recall a memory, it uses these precomputed embeddings to efficiently evaluate whether a memory is relevant to the prompt. After the LLM finds a matching memory, it uses the memory's text information as context for the next steps in the prompt completion.
+[Vector stores](/semantic-kernel/concepts/vector-store-connectors/) represent text information that has been stored alongside a precomputed embedding vector for the whole text. When an LLM is prompted to recall a memory, it uses these precomputed embeddings to efficiently evaluate whether a memory is relevant to the prompt. After the LLM finds a matching memory, it uses the memory's text information as context for the next steps in the prompt completion.
 
 Memory storage that's added to the Semantic Kernel SDK provides a broader context for your requests. It also enables you to store data in the same manner as you store a traditional database, but query it by using natural language.
 

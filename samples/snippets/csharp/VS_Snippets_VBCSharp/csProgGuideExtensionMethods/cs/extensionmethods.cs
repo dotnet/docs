@@ -1,38 +1,4 @@
-﻿//<Snippet1>
-namespace CustomExtensions
-{
-    // Extension methods must be defined in a static class.
-    public static class StringExtension
-    {
-        // This is the extension method.
-        // The first parameter takes the "this" modifier
-        // and specifies the type for which the method is defined.
-        public static int WordCount(this string str)
-        {
-            return str.Split(new char[] {' ', '.','?'}, StringSplitOptions.RemoveEmptyEntries).Length;
-        }
-    }
-}
-namespace Extension_Methods_Simple
-{
-    // Import the extension method namespace.
-    using CustomExtensions;
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string s = "The quick brown fox jumped over the lazy dog.";
-            // Call the method as if it were an
-            // instance method on the type. Note that the first
-            // parameter is not specified by the calling code.
-            int i = s.WordCount();
-            System.Console.WriteLine("Word count of s is {0}", i);
-        }
-    }
-}
-//</Snippet1>
-
-namespace Extension2
+﻿namespace Extension2
 {
 
     //<snippet2>
@@ -42,40 +8,40 @@ namespace Extension2
     {
         // Define an extension method in a non-nested static class.
         public static class Extensions
-    {
-        public static Grades minPassing = Grades.D;
-        public static bool Passing(this Grades grade)
         {
-            return grade >= minPassing;
+            public static Grades minPassing = Grades.D;
+            public static bool Passing(this Grades grade)
+            {
+                return grade >= minPassing;
+            }
+        }
+
+        public enum Grades { F = 0, D=1, C=2, B=3, A=4 };
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Grades g1 = Grades.D;
+                Grades g2 = Grades.F;
+                Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
+                Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
+
+                Extensions.minPassing = Grades.C;
+                Console.WriteLine("\r\nRaising the bar!\r\n");
+                Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
+                Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
+            }
+            /* Output:
+                First is a passing grade.
+                Second is not a passing grade.
+
+                Raising the bar!
+
+                First is not a passing grade.
+                Second is not a passing grade.
+            */
         }
     }
-
-    public enum Grades { F = 0, D=1, C=2, B=3, A=4 };
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Grades g1 = Grades.D;
-            Grades g2 = Grades.F;
-            Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
-            Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
-
-            Extensions.minPassing = Grades.C;
-            Console.WriteLine("\r\nRaising the bar!\r\n");
-            Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
-            Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
-        }
-    }
-  }
-/* Output:
-    First is a passing grade.
-    Second is not a passing grade.
-
-    Raising the bar!
-
-    First is not a passing grade.
-    Second is not a passing grade.
- */
     //</snippet2>
 } //namespace Extension2
 

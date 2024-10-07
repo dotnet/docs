@@ -15,6 +15,7 @@ The following types are no longer available:
 - <xref:System.Windows.Forms.DataGridCell>
 - <xref:System.Windows.Forms.DataGridColumnStyle>
 - <xref:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject>
+- <xref:System.Windows.Forms.DataGridColumnStyle.CompModSwitches>
 - <xref:System.Windows.Forms.DataGridLineStyle>
 - <xref:System.Windows.Forms.DataGridParentRowsLabelStyle>
 - <xref:System.Windows.Forms.DataGridPreferredColumnWidthTypeConverter>

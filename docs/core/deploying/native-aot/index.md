@@ -20,15 +20,6 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
 
-# [Ubuntu](#tab/linux-ubuntu)
-
-- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
-- Ubuntu (18.04+)
-
-  ```sh
-  sudo apt-get install clang zlib1g-dev
-  ```
-
 # [Alpine](#tab/linux-alpine)
 
 - The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
@@ -36,6 +27,33 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
   ```sh
   sudo apk add clang build-base zlib-dev
+  ```
+
+# [Fedora](#tab/linux-fedora)
+
+- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- Fedora (39+)
+
+  ```sh
+  sudo dnf install clang zlib-devel
+  ```
+
+# [RHEL](#tab/linux-rhel)
+
+- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- RHEL (8+)
+
+  ```sh
+  sudo dnf install clang zlib-devel
+  ```
+
+# [Ubuntu](#tab/linux-ubuntu)
+
+- The compiler toolchain and developer packages for libraries that the .NET runtime depends on.
+- Ubuntu (18.04+)
+
+  ```sh
+  sudo apt-get install clang zlib1g-dev
   ```
 
 # [macOS](#tab/macOS)

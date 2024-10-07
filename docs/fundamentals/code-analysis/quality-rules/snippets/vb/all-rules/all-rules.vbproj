@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>all_rules</RootNamespace>
     <TargetFramework>net8.0</TargetFramework>
-    <NoWarn>$(NoWarn);BC30149</NoWarn>
+    <NoWarn>$(NoWarn);SYSLIB0050</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

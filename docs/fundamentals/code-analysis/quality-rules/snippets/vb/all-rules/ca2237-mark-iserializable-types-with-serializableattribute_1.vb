@@ -20,14 +20,10 @@ Namespace ca2237
         End Sub
 
         Overridable Sub GetObjectData(
-         info As SerializationInfo, context As StreamingContext)
+         info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData
 
             info.AddValue("baseValue", baseValue)
 
-        End Sub
-
-        Private Sub ISerializable_GetObjectData(info As SerializationInfo, context As StreamingContext)
-            Throw New NotImplementedException()
         End Sub
     End Class
 

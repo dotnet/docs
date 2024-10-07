@@ -1,5 +1,5 @@
 ﻿Public Class Program
     Public Shared Sub Main()
-        TestCompare.Main(New String() {"A", "B"})
+        TestCompare.Main1036(New String() {"C", "B"})
     End Sub
 End Class

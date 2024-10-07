@@ -16,7 +16,7 @@ Public Class RatingInformation
             Throw New ArgumentException("Invalid rating value was specified.", NameOf(rating))
         End If
 
-        rating = v
+        Me.Rating = v
     End Sub
 
     Public ReadOnly Property Rating As String
@@ -30,7 +30,9 @@ Public Class RatingInformation
 
     Public Function CompareTo(other As RatingInformation) As Integer Implements IComparable(Of RatingInformation).CompareTo
         If (other Is Nothing) Then Return 1
-        Return Comparer.DefaultInvariant.Compare(Rating, other.Rating)
+        ' Ratings compare opposite To normal String order,
+        ' so reverse the value returned by String.CompareTo.
+        Return -String.Compare(Rating, other.Rating, StringComparison.OrdinalIgnoreCase)
     End Function
 
     Public Shared Operator =(one As RatingInformation, other As RatingInformation) As Boolean
@@ -77,7 +79,7 @@ End Class
 
 ' <Snippet2>
 Public Class TestCompare
-    Public Shared Sub Main(ByVal args As String())
+    Public Shared Sub Main1036(ByVal args As String())
         If (args.Length < 2) Then
             Return
         End If

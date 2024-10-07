@@ -38,7 +38,7 @@ The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient
 
 The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be just as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you F5 the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
 
-[![Aspire Dashboard](./media/aspire-dashboard-thumb.png)](./media/aspire-dashboard.png#lightbox)
+[![Aspire Dashboard](../../../core/diagnostics/media/aspire-dashboard-thumb.png)](../../../core/diagnostics/media/aspire-dashboard.png#lightbox)
 
 For more details on .NET Aspire see:
 
@@ -67,9 +67,12 @@ app.MapGet("/", () => "Hello World!");
 app.Run();
 ```
 
+For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../core/diagnostics/observability-otlp-example.md).
+
+
 ### Collecting traces manually
 
-For a walkthrough of how to collect distributed traces, as well as metrics without using Aspire Service Defaults, see  [Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) 
+For a walkthrough of how to collect distributed traces, as well as metrics without using Aspire Service Defaults, see  [Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md). 
 
 ## Extending Traces
 

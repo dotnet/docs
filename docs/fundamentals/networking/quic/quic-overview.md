@@ -47,10 +47,14 @@ On Windows, msquic.dll is distributed as part of the .NET runtime, and no other 
 > [!NOTE]
 > .NET 7+ is only compatible with 2.2+ versions of libmsquic.
 
-The `libmsquic` package is required on Linux. This package is published in Microsoft's official Linux package repository, <https://packages.microsoft.com>. You must add this repository to your package manager before installing the package. For more information, see [Linux Software Repository for Microsoft Products](/linux/packages).
+The `libmsquic` package is required on Linux. This package is published in Microsoft's official Linux package repository, <https://packages.microsoft.com> and is also available in some official repositories, such as the [Alpine Packages - libmsquic](https://pkgs.alpinelinux.org/packages?name=libmsquic&branch=edge&repo=&arch=&origin=yes&flagged=&maintainer=).
+
+#### Installing `libmsquic` from Microsoft's official Linux package repository
+
+You must add this repository to your package manager before installing the package. For more information, see [Linux Software Repository for Microsoft Products](/linux/packages).
 
 > [!CAUTION]
-> Adding the Microsoft pacakge repository may conflict with your distribution's repository when your distribution's repository provides .NET and other Microsoft packages. To avoid or troubleshoot package mixups, review [Troubleshoot .NET errors related to missing files on Linux](../../../core/install/linux-package-mixup.md#whats-going-on).
+> Adding the Microsoft package repository may conflict with your distribution's repository when your distribution's repository provides .NET and other Microsoft packages. To avoid or troubleshoot package mixups, review [Troubleshoot .NET errors related to missing files on Linux](../../../core/install/linux-package-mixup.md#whats-going-on).
 
 ##### Examples
 
@@ -85,6 +89,27 @@ Here are some examples of using a package manager to install `libmsquic`:
   ```bash
   sudo yum install libmsquic
   ```
+
+#### Installing `libmsquic` from the Distribution Package Repository
+
+Installing `libmsquic` from distribution package repository is also possible, but currently this is only available for `Alpine`.
+
+##### Examples
+
+Here are some examples of using a package manager to install `libmsquic`:
+
+- **Alpine 3.21 and later**
+
+```bash
+apk add libmsquic
+```
+
+- **Alpine 3.20 and older**
+  
+```bash
+# Get libmsquic from community repository edge branch.
+apk add --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community/ libmsquic
+```
 
 ##### Dependencies of libmsquic
 

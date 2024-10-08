@@ -14,7 +14,7 @@ ms.date: 10/08/2024
 
 The focus of this article is to provide the general steps to upgrade a project with .NET Upgrade Assistant. The general steps involve initiating the upgrade, and reviewing the results. Based on how complex your project is, you might be required to perform manual updates to your code.
 
-Some project types have specific guidance on upgrading. For more information, see [Supported project types](upgrade-assistant-overview.md#supported-project-types)
+Some project types have specific guidance on upgrading. For more information, see [Supported project types](upgrade-assistant-overview.md#supported-project-types).
 
 ## Prerequisites
 
@@ -30,13 +30,13 @@ Follow these steps to upgrade a project in Visual Studio.
 1. Open a project or solution.
 1. In the **Solution Explorer** window, right-click on the **project** > **Upgrade**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-right-click.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-right-click.png" alt-text="The Solution Explorer window in Visual Studio, showing the right-click menu of a project. The Upgrade menu item is highlighted.":::
 
 1. In the **Upgrade** tab, select the appropriate upgrade options.
 
    Based on the type of project and the target framework version, different options are presented. The following image shows two options when upgrading a Windows Forms for .NET Framework project. These options aren't displayed when upgrading a .NET project:
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-welcome-framework.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-welcome-framework.png" alt-text="The .NET Upgrade Assistant welcome screen in Visual Studio.":::
 
    In this example, select **Upgrade project to a newer .NET version**.
 
@@ -44,27 +44,23 @@ Follow these steps to upgrade a project in Visual Studio.
 
    Some projects may only present you with a single option. For more information about these options, see [How the upgrade should be performed](upgrade-assistant-overview.md#how-the-upgrade-should-be-performed).
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-type.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-type.png" alt-text="The .NET Upgrade Assistant wizard showing the 'What is your upgrade type' selection. 'In-place project upgrade' is highlighted, as is the 'Next' button.":::
 
 1. Select the target framework, for example **.NET 8.0**. Select **Next**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-target-framework.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-target-framework.png" alt-text="The .NET Upgrade Assistant wizard showing the 'What is your preferred target framework' selection. '.NET 8.0' is highlighted, as is the 'Next' button.":::
 
 1. Select the components to upgrade, then select **Upgrade selection**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-select-components.png" alt-text="TODO":::
-
-1. A progress indicator is displayed. Each project that's being processed, and the steps .NET Upgrade Assistant is taking, are listed.
-
-   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-progress.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-select-components.png" alt-text="The .NET Upgrade Assistant wizard showing the Select components to upgrade' selection. The list of components is highlighted, as is the 'Upgrade selection' button.":::
 
 1. Once the upgrade is complete, a list of processed items is shown.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-finished.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-upgrade/vs-upgrade-finished.png" alt-text="The .NET Upgrade Assistant wizard showing the summary screen. Each artifact processed by the upgrade is listed, with a status icon.":::
 
 Each artifact processed by the upgrade is listed, along with its status. For more information, see [Upgrade results](upgrade-assistant-overview.md#upgrade-results).
 
-## Create a report from the CLI
+## Upgrade a project from the CLI
 
 Follow these steps to upgrade a project using the terminal. The .NET Global Tool is an interactive tool that guides you through the upgrade options. Use the <kbd>Up arrow</kbd> and <kbd>Down arrow</kbd> keys to change the selected option, and <kbd>Return</kbd> to run the select the option. Each page presents you options on how you want to configure the upgrade.
 

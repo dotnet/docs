@@ -27,31 +27,31 @@ Follow these steps to analyze a project in Visual Studio.
 1. Open a project or solution.
 1. In the **Solution Explorer** window, right-click on the **solution** > **Upgrade**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-right-click.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-right-click.png" alt-text="The Solution Explorer window in Visual Studio, showing the right-click menu of the solution. The Upgrade menu item is highlighted.":::
 
 1. In the **Upgrade Assistant: Home** tab, select **New Report...**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-new-report.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-new-report.png" alt-text="The .NET Upgrade Assistant Analyze wizard's welcome page in Visual Studio. The 'New Report' link is highlighted.":::
 
 1. Select one or more projects to analyze, then select **Next**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-select-projs.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-select-projs.png" alt-text="The .NET Upgrade Assistant Analyze wizard's 'Select projects' page in Visual Studio. The list of projects is highlighted along with the 'Next' button.":::
 
 1. Select the target framework, for example .NET 8.0. Select **Next**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-target-framework.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-target-framework.png" alt-text="The .NET Upgrade Assistant Analyze wizard's 'Target framework' page in Visual Studio. The '.NET 8.0' item is highlighted along with the 'Next' button.":::
 
 1. Select the components to analyze, then select **Next**.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-select-components.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-select-components.png" alt-text="The .NET Upgrade Assistant Analyze wizard's 'Analysis settings' page in Visual Studio. The 'Source code and settings' option is selected. The 'Next' button is highlighted.":::
 
 1. A progress indicator is displayed. Each project that's being processed, and the steps .NET Upgrade Assistant is taking, are listed.
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-progress.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-progress.png" alt-text="The .NET Upgrade Assistant Analyze wizard running the analysis.":::
 
 1. Once the analysis is complete, the report dashboard is shown. For more information about the dashboard, see [Reports](upgrade-assistant-analyze-overview.md#reports).
 
-   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-finished.png" alt-text="TODO":::
+   :::image type="content" source="./media/upgrade-assistant-how-to-analyze/vs-upgrade-analyze-finished.png" alt-text="The .NET Upgrade Assistant Analyze wizard showing a report dashboard that contains the results from the analysis.":::
 
 ## Create a report from the CLI
 

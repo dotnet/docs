@@ -86,9 +86,7 @@ The following information helps you determine that .NET Upgrade Assistant is ins
 
   Open a command prompt and run the `upgrade-assistant` command. If the command response indicates that it doesn't know what that command is, the tool didn't install correctly or isn't in PATH.
 
-## Troubleshooting
-
-## .NET Global Tool
+## Troubleshoot - .NET Global Tool
 
 If the install fails, reporting that the NuGet package isn't available in the feed, you may have configured another NuGet feed source. Use the `--ignore-failed-sources` parameter to treat those failures as warnings instead of errors, bypassing those other NuGet feed sources:
 

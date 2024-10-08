@@ -45,7 +45,7 @@ The following sections describe areas of the report in detail.
 
 The **Dashboard** page provides a view of the incidents detected by the scan, grouped into individual panels:
 
-:::image type="content" source="./media/upgrade-assistant-analyze-overview/dashboard.png" alt-text="TODO":::
+:::image type="content" source="./media/upgrade-assistant-analyze-overview/dashboard.png" alt-text="The .NET Upgrade Assistant Analyze results, showing the dashboard's starting page.":::
 
 01. **Summary**
 
@@ -73,13 +73,13 @@ The **Dashboard** page provides a view of the incidents detected by the scan, gr
 
 The **Projects** page breaks down the issues, incidents, and story points, by project. Each project is a link that opens a drill-down report filtered to that project.
 
-:::image type="content" source="./media/upgrade-assistant-analyze-overview/projects.png" alt-text="TODO":::
+:::image type="content" source="./media/upgrade-assistant-analyze-overview/projects.png" alt-text="The .NET Upgrade Assistant Analyze results, showing the dashboard's 'Projects' page.":::
 
 ### Aggregate issues
 
 The **Aggregate issues** page details each issue that was triggered. Each issue can be expanded to list every incident of that issue. The **State** column helps you track which issues you've fixed or deemed not applicable.
 
-:::image type="content" source="./media/upgrade-assistant-analyze-overview/aggregate-issues.png" alt-text="TODO":::
+:::image type="content" source="./media/upgrade-assistant-analyze-overview/aggregate-issues.png" alt-text="The .NET Upgrade Assistant Analyze results, showing the dashboard's 'Aggregate issues' page.":::
 
 ## Incident severity
 

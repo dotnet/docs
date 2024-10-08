@@ -48,9 +48,13 @@ One key feature of .NET Upgrade Assistant is designing upgrade extensions for yo
 - .NET MAUI
 - .NET Native UWP
 
-Some products have written documentation that walks you through upgrading a project.
+Some products provide guidance on how to use .NET Upgrade Assistant.
 
-- 
+- [ASP.NET](/aspnet/core/migration/mvc)
+- [Windows Presentation Foundation](/dotnet/desktop/wpf/migration/)
+- [Windows Forms](/dotnet/desktop/winforms/migration/)
+- [Universal Windows Platform](/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant)
+- [Windows Communication Foundation](../../core/porting/upgrade-assistant-wcf.md)
 
 ## Upgrade paths
 
@@ -103,15 +107,9 @@ Additionally, the actions the Upgrade Assistant performed are logged to the **Ou
 
 After upgrading your project, test it thoroughly.
 
-<!-- Optional: Related content - H2
-
 ## Related content
 
-- [Related article title](link.md)
-- [Related article title](link.md)
-- [Related article title](link.md)
-
-Consider including a "Related content" H2 section that 
-lists links to 1 to 3 articles the user might find helpful.
-
--->
+- [What is code analysis with .NET Upgrade Assistant?](upgrade-assistant-analyze-overview.md)
+- [Install .NET Upgrade Assistant](upgrade-assistant-install.md)
+- [Analyze projects with .NET Upgrade Assistant](upgrade-assistant-how-to-analyze.md)
+- [Upgrade projects with .NET Upgrade Assistant](upgrade-assistant-how-to-upgrade.md)

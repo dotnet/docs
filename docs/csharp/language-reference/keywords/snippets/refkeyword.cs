@@ -13,7 +13,8 @@ public class RefKeywordExamples
         if (left > right)
         {
             return ref left;
-        } else
+        }
+        else
         {
             return ref right;
         }

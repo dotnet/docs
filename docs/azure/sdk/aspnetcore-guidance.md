@@ -16,7 +16,7 @@ The Azure SDK for .NET enables ASP.NET Core apps to integrate with many differen
 - Configure common web app concerns such as logging and retries.
 - Get started with additional topics such unit testing.
 
-## Register service clients and subclients
+## Register service clients
 
 The Azure SDK for .NET provides many service clients to connect your app to services such as Azure Blob Storage and Azure Key Vault. Register these services with the dependency container in the `Program.cs` file of your app to make them available to your app using Dependency Injection. The [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) library provides helper methods to properly register your services and handles various concerns for you, such as setting up logging, handling service lifetimes, and assisting with authentication credential management.
 
@@ -101,7 +101,7 @@ To register the services you need, complete the following steps.
 
     ---
 
-## Handle configuration
+## Set up service configurations
 
 Azure service clients support configurations to change their default behaviors. You can define service client configurations directly in your code when you register a service. For example, in the [Register clients and subclients](#register-service-clients-and-subclients) section, you explicitly passed the Uri-typed variables to the client constructors. However, the recommended approach is to [store configurations in environment-dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). For example, use an `appsettings.Development.json` file to store development environment settings and an `appsettings.Production.json` file to contain production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class into the JSON file.
 
@@ -177,21 +177,15 @@ Update your configuration file to set a new default retry policy, as well as a s
     "Retry": {
       "maxRetries": 10
     }
-  },
-  "ServiceBus": {
-    "Namespace": "<your_namespace>.servicebus.windows.net"
-  },
-  "Storage": {
-    "ServiceUri": "https://mydemoaccount.storage.windows.net"
   }
 }
 ```
 
-## Configure authentication
+## Authenticate using Microsoft Entra ID
 
-Application requests to Azure services must be authorized. Use the Azure Identity client library to implement secretless connections to Azure services in your code, such as Azure Blob Storage. The Azure Identity client library provides tools such as `DefaultAzureCredential` to simplify configuring secure connections. `DefaultAzureCredential` is a class provided by the Azure Identity client library for .NET, which you can learn more about on the [`DefaultAzureCredential`](/dotnet/azure/sdk/authentication#defaultazurecredential). `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
+Microsoft Entra ID is the recommended approach to authorize requests to Azure services. Use the [Azure Identity client library]() to implement secretless connections to Azure services in your code. The Azure Identity client library provides tools such as `DefaultAzureCredential` to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
 
-Some Azure services allow all you to authorize requests using secrets keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.
+Some Azure services also allow you to authorize requests using secrets keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the service and data.
 
 Consider the following service client registrations:
 
@@ -215,9 +209,9 @@ builder.Services.AddAzureClients(clientBuilder =>
 });
 ```
 
-In the preceding code, the `clientBuilder.UseCredential()` method accepts an instance of `DefaultAzureCredential` that will be reused across your registered services. This single line of code discovers available credentials in the current environment and use them to connect to Azure services, such as locally or when deployed in the cloud. No code changes are required for this transition.
+In the preceding code, the `clientBuilder.UseCredential()` method accepts an instance of `DefaultAzureCredential` that will be reused across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The full order and locations in which `DefaultAzureCredential` looks for credentials can be found in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential).
 
-The full order and locations in which `DefaultAzureCredential` looks for credentials can be found in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential). For example, when you run the app locally, `DefaultAzureCredential` discovers and uses credentials from the following developer tools:
+For example, when you run the app locally, `DefaultAzureCredential` discovers and uses credentials from the following developer tools:
 
 - Environment variables
 - Visual Studio
@@ -225,7 +219,7 @@ The full order and locations in which `DefaultAzureCredential` looks for credent
 - Azure PowerShell
 - Azure Developer CLI
 
-`DefaultAzureCredential` also discovers and uses credentials from deployed services:
+`DefaultAzureCredential` also discovers credentials after you deploy your app from the following:
 
 - Environment variables
 - Workload identity
@@ -233,7 +227,7 @@ The full order and locations in which `DefaultAzureCredential` looks for credent
 
 ## Configure logging
 
-The Azure SDK for .NET client libraries include the ability to log client library operations. This logging allows you to monitor requests and responses between services clients and Azure services. When you register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, some logging configurations are handled for you. 
+The Azure SDK for .NET client libraries include the ability to log client library operations. This logging allows you to monitor requests and responses between services clients and Azure services. When you register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, some logging configurations are handled for you.
 
 ```csharp
     ```csharp
@@ -263,7 +257,7 @@ In the preceding sample, the `AddAzureClients` method:
   - Azure Service Bus client
 - Sets the default token credential to be used for all registered clients.
 
-You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#configure-authentiation) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#configure-authentication) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
 ```json
 {

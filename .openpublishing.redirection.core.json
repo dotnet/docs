@@ -878,6 +878,14 @@
             "redirect_url": "/aspnet/core/migration/mvc"
         },
         {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-install-legacy.md",
+            "redirect_url": "/dotnet/core/porting/upgrade-assistant-wcf"
+        },
+        {
+            "source_path_from_root": "/docs/core/porting/upgrade-assistant-uwp-framework.md",
+            "redirect_url": "/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant"
+        },
+        {
             "source_path_from_root": "/docs/core/porting/upgrade-assistant-winforms-framework.md",
             "redirect_url": "/dotnet/desktop/winforms/migration/"
         },
@@ -1325,10 +1333,6 @@
         {
             "source_path_from_root": "/docs/fundamentals/networking/tcp/tcp-overview.md",
             "redirect_url": "/dotnet/fundamentals/networking/sockets/tcp-classes"
-        },
-        {
-            "source_path_from_root": "/docs/core/porting/upgrade-assistant-uwp-framework.md",
-            "redirect_url": "/windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant"
         }
     ]
 }

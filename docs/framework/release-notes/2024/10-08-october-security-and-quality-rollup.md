@@ -16,7 +16,7 @@ _Released October 8, 2024_
 
 #### CVE-2024-43483 – Denial of service vulnerability
 
-This security update addresses an denial of service vulnerability detailed in [CVE 2024-43483](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43483).
+This security update addresses a denial of service vulnerability detailed in [CVE 2024-43483](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-43483).
 
 #### CVE-2024-43484 – Denial of service vulnerability
 

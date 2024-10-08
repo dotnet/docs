@@ -218,11 +218,11 @@ Use the following settings to manage the garbage collector's memory and processo
 - [Affinitize ranges](#affinitize-ranges)
 - [CPU groups](#cpu-groups)
 - [Heap count](#heap-count)
-- [Heap limit](#heap-limit)
-- [Heap limit percent](#heap-limit-percent)
+- [Heap hard limit](#heap-hard-limit)
+- [Heap hard limit percent](#heap-hard-limit-percent)
+- [Per-object-heap hard limits](#per-object-heap-hard-limits)
+- [Per-object-heap hard limit percents](#per-object-heap-hard-limit-percents)
 - [High memory percent](#high-memory-percent)
-- [Per-object-heap limits](#per-object-heap-limits)
-- [Per-object-heap limit percents](#per-object-heap-limit-percents)
 - [Retain VM](#retain-vm)
 
 For more information about some of these settings, see the [Middle ground between workstation and server GC](https://devblogs.microsoft.com/dotnet/middle-ground-between-server-and-workstation-gc/) blog entry.
@@ -417,15 +417,12 @@ For more information about some of these settings, see the [Middle ground betwee
 }
 ```
 
-### Heap limit
+### Heap hard limit
 
-- Specifies the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
+- The heap hard limit is defined as the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 - This setting only applies to 64-bit computers.
+- If this is not configured but the process is running in a memory constraint environment, ie, inside a container with a specified memory limit, a default value is set which is the greater of 20 MB or 75% of the memory limit on the container.
 - This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
-- The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
-
-  - The process is running inside a container that has a specified memory limit.
-  - [System.GC.HeapHardLimitPercent](#heap-limit-percent) is not set.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -462,17 +459,11 @@ For more information about some of these settings, see the [Middle ground betwee
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 200 mebibytes (MiB), the values would be 209715200 for the JSON file and 0xC800000 or C800000 for the environment variable.
 
-### Heap limit percent
+### Heap hard limit percent
 
-- Specifies the allowable GC heap usage as a percentage of the total physical memory.
-- If [System.GC.HeapHardLimit](#heap-limit) is also set, this setting is ignored.
+- Specifies the heap hard limit as a percentage of the total physical memory. If the process is running in a memory constraint environment, ie, inside a container with a specified memory limit, the total physical memory is the memory limit; otherwise it's what's available on the machine.
 - This setting only applies to 64-bit computers.
-- If the process is running inside a container that has a specified memory limit, the percentage is calculated as a percentage of that memory limit.
-- This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
-- The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
-
-  - The process is running inside a container that has a specified memory limit.
-  - [System.GC.HeapHardLimit](#heap-limit) is not set.
+- This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured or the [heap hard limit](#heap-hard-limit) is configured.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -509,9 +500,9 @@ For more information about some of these settings, see the [Middle ground betwee
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the values would be 30 for the JSON file and 0x1E or 1E for the environment variable.
 
-### Per-object-heap limits
+### Per-object-heap hard limits
 
-You can specify the GC's allowable heap usage on a per-object-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
+You can specify the GC's heap hard limit on a per-object-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
 
 - If you specify a value for any of the `DOTNET_GCHeapHardLimitSOH`, `DOTNET_GCHeapHardLimitLOH`, or `DOTNET_GCHeapHardLimitPOH` settings, you must also specify a value for `DOTNET_GCHeapHardLimitSOH` and `DOTNET_GCHeapHardLimitLOH`. If you don't, the runtime will fail to initialize.
 - The default value for `DOTNET_GCHeapHardLimitPOH` is 0. `DOTNET_GCHeapHardLimitSOH` and `DOTNET_GCHeapHardLimitLOH` don't have default values.
@@ -539,9 +530,9 @@ These configuration settings don't have specific MSBuild properties. However, yo
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 200 mebibytes (MiB), the values would be 209715200 for the JSON file and 0xC800000 or C800000 for the environment variable.
 
-### Per-object-heap limit percents
+### Per-object-heap hard limit percents
 
-You can specify the GC's allowable heap usage on a per-object-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
+You can specify the GC's heap hard limit on a per-object-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
 
 - If you specify a value for any of the `DOTNET_GCHeapHardLimitSOHPercent`, `DOTNET_GCHeapHardLimitLOHPercent`, or `DOTNET_GCHeapHardLimitPOHPercent` settings, you must also specify a value for `DOTNET_GCHeapHardLimitSOHPercent` and `DOTNET_GCHeapHardLimitLOHPercent`. If you don't, the runtime will fail to initialize.
 - These settings are ignored if `DOTNET_GCHeapHardLimitSOH`, `DOTNET_GCHeapHardLimitLOH`, and `DOTNET_GCHeapHardLimitPOH` are specified.

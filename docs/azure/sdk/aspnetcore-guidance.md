@@ -231,7 +231,7 @@ The full order and locations in which `DefaultAzureCredential` looks for credent
 - Workload identity
 - Managed identity
 
-## Logging
+## Configure logging
 
 The Azure SDK for .NET client libraries include the ability to log client library operations. This logging allows you to monitor requests and responses between services clients and Azure services. When you register the Azure SDK library's client via a call to the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, some logging configurations are handled for you. 
 
@@ -275,4 +275,39 @@ You can change default log levels and other settings using the same JSON configu
         }
     }
 }
+```
+
+## Unit testing considerations
+
+Unit testing is an important part of a sustainable development process that can improve code quality and prevent regressions or bugs in your apps. This section provides a basic introduction to Unit Testing with the Azure SDK for .NET. Visit the [Unit testing and mocking with the Azure SDK for .NET](/dotnet/azure/sdk/unit-testing-mocking) article for a detailed exploration of these unit testing concepts.
+
+Unit testing presents challenges when the code you're testing performs network calls, such as those made to Azure resources by Azure service clients. Tests that run against live services can experience issues, such as latency that slows down test execution, dependencies on code outside of the isolated test, and issues with managing service state and costs every time the test is run. Instead of testing against live Azure services, replace the service clients with mocked or in-memory implementations to avoid these issues.
+
+Each of the Azure SDK clients follows [mocking guidelines](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-mocking) that allow their behavior to be overridden:
+
+* Each client offers at least one protected constructor to allow inheritance for testing.
+* All public client members are virtual to allow overriding.
+
+To create a test service client, you can either use a mocking library or standard C# features such as inheritance. Mocking frameworks allow you to simplify the code that you must write to override member behavior. (These frameworks also have other useful features that are beyond the scope of this article.)
+
+```csharp
+KeyVaultSecret keyVaultSecret = SecretModelFactory.KeyVaultSecret(
+    new SecretProperties("secret"), "secretValue");
+
+Mock<SecretClient> clientMock = new Mock<SecretClient>();
+clientMock.Setup(c => c.GetSecret(
+        It.IsAny<string>(),
+        It.IsAny<string>(),
+        It.IsAny<CancellationToken>())
+    )
+    .Returns(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
+
+clientMock.Setup(c => c.GetSecretAsync(
+        It.IsAny<string>(),
+        It.IsAny<string>(),
+        It.IsAny<CancellationToken>())
+    )
+    .ReturnsAsync(Response.FromValue(keyVaultSecret, Mock.Of<Response>()));
+
+SecretClient secretClient = clientMock.Object;
 ```

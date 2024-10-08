@@ -6,7 +6,7 @@ ms.custom: devx-track-dotnet
 ms.date: 10/08/2024
 ---
 
-# Azure SDK for .NET overview
+# Azure SDK for .NET guidance and best practices
 
 The Azure SDK for .NET enables ASP.NET Core apps to integrate with many different Azure services. In this article, you'll learn best practices and the steps to properly implement the Azure SDK for .NET in your ASP.NET Core apps. You'll learn how to:
 

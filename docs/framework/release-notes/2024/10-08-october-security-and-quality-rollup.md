@@ -20,7 +20,7 @@ This security update addresses a denial of service vulnerability detailed in [CV
 
 #### CVE-2024-43484 – Denial of service vulnerability
 
-This security update addresses an denial of service vulnerability detailed in [CVE 2024-43484](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-434843).
+This security update addresses a denial of service vulnerability detailed in [CVE 2024-43484](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-434843).
 
 ### Quality and reliability improvements
 

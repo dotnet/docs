@@ -1,1 +1,2 @@
-﻿Tiktoken.RunIt();
+﻿//Tiktoken.RunIt();
+Llama.RunIt();

@@ -2,13 +2,13 @@
 title: What's new in the SDK for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, terminal logger, tool roll-forward, and build script analyzers.
 titleSuffix: ""
-ms.date: 09/09/2024
+ms.date: 10/08/2024
 ms.topic: whats-new
 ---
 
 # What's new in the SDK for .NET 9
 
-This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET RC 1.
+This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET RC 2.
 
 ## Unit testing
 

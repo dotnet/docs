@@ -58,7 +58,7 @@ The following example depicts the behavior of <xref:System.Linq.Enumerable.Inter
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="Intersect":::
 
-The <xref:System.Linq.Enumerable.IntersectBy%2A> method is an alternative approach to `Intersect` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following student and teacher arrays. The query matches items in each sequence by name to find those students who aren't also teachers:
+The <xref:System.Linq.Enumerable.IntersectBy%2A> method is an alternative approach to `Intersect` that takes two sequences of possibly heterogenous types and a `keySelector`. The `keySelector` is used as the comparative discriminator of the second collection's type. Consider the following student and teacher arrays. The query matches items in each sequence by name to find those students who are also teachers:
 
 :::code language="csharp" source="./snippets/standard-query-operators/SetOperations.cs" id="IntersectBy":::
 

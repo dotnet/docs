@@ -74,6 +74,82 @@ For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standa
 
 For a walkthrough of how to collect distributed traces, as well as metrics without using Aspire Service Defaults, see  [Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md). 
 
+## Experimental connection spans in .NET 9
+
+.NET 9 adds a handful of new spans for collecting detailed connection information:
+
+| Activity Source | Description |
+| --- | --- |
+| Experimental.System.Net.NameResolution | Tracks DNS resolution for anything using the .NET DNS api's such as HttpClient |
+| Experimental.System.Net.Sockets | Tracks socket connection activity |
+| Experimental.System.Net.Security | Tracks TLS handshake for inbound and outbound connections |
+| Experimental.System.Net.Http.Connections | Tracks the Connection pool for HttpClient |
+
+These spans are available starting with .NET 9. The ActivitySource Names start with `Experimental` as these spans are not yet included in the OpenTelemetry Semantic conventions, and may be changed as we learn more about how well they work in production. 
+
+These spans are probably too verbose for use 24x7 in production scenarios with high workloads - they are somewhat noisy and this level of data is not normally needed. However if you are trying to diagnose connection issues or get a deeper understanding of how network and connection latency is affecting your services, then they provide insight that is hard to collect by other means. 
+
+Note: When enabled, the http connection span is linked to from HttpClient request spans. As an http connection can be long lived, this could result in many links to the connection span from each of the request spans. Some APM monitoring tools aggresively walk links between spans to build up their views and so including this span may cause issues when the tools were not designed to account for large numbers of links.
+
+### Walkthrough: Using the experimental spans in .NET 9
+
+This walkthough uses an Aspire Application such as the __.NET Aspire Starter App__.
+
+1. Modify each of the service projects to use .NET 9 by updating the `TargetFramework` to `net9.0` in each of the service's __.csproj__ files. The AppHost project does not need to be updated as it does not emit telemetry.
+2. Similarly modify the `TargetFramework` to `net9.0` in the __ServiceDefaults__ project
+3. Add the `ActivitySource` names to the initialization code in __Extensions.cs__ in the Service Defaults project:
+
+``` csharp
+    public static IHostApplicationBuilder ConfigureOpenTelemetry(this IHostApplicationBuilder builder)
+    {
+        builder.Logging.AddOpenTelemetry(logging =>
+        {
+            logging.IncludeFormattedMessage = true;
+            logging.IncludeScopes = true;
+        });
+
+        builder.Services.AddOpenTelemetry()
+            .WithMetrics(metrics =>
+            {
+                metrics.AddAspNetCoreInstrumentation()
+                    .AddHttpClientInstrumentation()
+                    .AddRuntimeInstrumentation();
+            })
+            .WithTracing(tracing =>
+            {
+                tracing.AddAspNetCoreInstrumentation()
+                    // Uncomment the following line to enable gRPC instrumentation (requires the OpenTelemetry.Instrumentation.GrpcNetClient package)
+                    //.AddGrpcClientInstrumentation()
+                    .AddSource("System.Net.Http")
+                    .AddSource("Experimental.System.Net.NameResolution")
+                    .AddSource("Experimental.System.Net.Sockets")
+                    .AddSource("Experimental.System.Net.Security")
+                    .AddSource("Experimental.System.Net.Http.Connections");
+                    // .AddHttpClientInstrumentation();
+            });
+
+        builder.AddOpenTelemetryExporters();
+
+        return builder;
+    }
+```
+
+In this example, the `AddHttpClientInstrumentation()` has been replaced with the built-in instrumentation to HttpClient in .NET 9 using `.AddSource("System.Net.Http")`.
+
+When http requests are made with this instrumentation enabled, the HttpClient span will have the following changes:
+
+[![HttpClient Spans in Aspire Dashboard](media/aspire-httpclient-get-thumb.png)](media/aspire-httpclient-get.png#lightbox)
+
+- If a connection needs to be established, or waiting for a connection from the connection pool, then an additional __Http wait_for_connection__ span will be shown which represents the delay for waiting for a connection to be made. This helps to understand delays between the HttpClient request being made in code, and when the destination server actually recieves and processes the request. In the picture above:
+  - The selected span is the HttpClient request.
+  - The one below it is the delay waiting for a connection to be established.
+  - The lasts span in yellow is from the destination processing the request.
+- The HttpClient span will have a link to the http connection setup span which shows the activity to create the http connection used by the request. 
+
+[![Http Connection Spans in Aspire Dashboard](media/aspire-http-connections-thumb.png)](aspire-http-connections.png#lightbox)
+
+The http connection setup span is a separate span with its own TraceId as its lifetime is independent from each individual HttpClient request. Many HttpClient requests can be made over the same http connection, and if its already established and available (http 1.1 supports sequential requests over the same connection, http 2 & 3 enable parallel requests) then the request can reuse that connection. This span will have child spans for DNS lookup, TCP socket connecting and the TLS handshake as applicable.
+
 ## Extending Traces
 
 There are a couple of approaches that can be taken to augment the existing tracing functionality from System.Net.

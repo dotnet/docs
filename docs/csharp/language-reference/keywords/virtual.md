@@ -28,13 +28,11 @@ When a virtual method is invoked, the run-time type of the object is checked for
 
 By default, methods are non-virtual. You cannot override a non-virtual method.
 
-You cannot use the `virtual` modifier with the `static`, `abstract`, `private`, or `override` modifiers. The following example shows a virtual property:
+The following example shows a virtual property:
 
 [!code-csharp[csrefKeywordsModifiers#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#26)]
 
 Virtual properties behave like virtual methods, except for the differences in declaration and invocation syntax.
-
-- It is an error to use the `virtual` modifier on a static property.
 
 - A virtual inherited property can be overridden in a derived class by including a property declaration that uses the `override` modifier.
 

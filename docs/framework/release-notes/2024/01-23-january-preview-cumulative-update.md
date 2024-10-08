@@ -22,7 +22,7 @@ This release contains the following quality and reliability improvements.
 
 #### ASP.NET
 
-Addresses an issue with “System.ArgumentException: Illegal characters in path” in some ASP.NET MVC requests. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
+Addresses an issue with "System.ArgumentException: Illegal characters in path" in some ASP.NET MVC requests. (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 
 #### .NET libraries
 

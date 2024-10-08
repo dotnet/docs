@@ -27,7 +27,7 @@ dotnet run -h|--help
 
 ## Description
 
-The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build, such as that the project must be restored first, apply to `dotnet run` as well.
+The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build apply to `dotnet run` as well.
 
 > [!NOTE]
 > `dotnet run` doesn't respect arguments like `/property:property=value`, which are respected by `dotnet build`.

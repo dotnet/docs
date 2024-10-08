@@ -11,12 +11,12 @@ f1_keywords:
 
 In .NET 9 and later versions, defining an interface with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute that derives from a `GeneratedComInterface`-attributed interface that's defined in another assembly is supported with the following restrictions:
 
-- The base interface type must be compiled targeting the same target framework as the derived type.
+- The base interface type must be compiled targeting the same framework as the derived type.
 - The base interface type must not shadow any members of its base interface, if it has one.
 
 Additionally, any changes to any generated virtual method offsets in the base interface chain defined in another assembly won't be accounted for in the derived interfaces until the project is rebuilt.
 
-A `SYSLIB1230` warning is emitted when defining an interface with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute that derives from a `GeneratedComInterface`-attributed interface that's defined in another assembly to inform you of the limitations. To acknowledge the limitations, suppress the warning in code as follows:
+When you define an interface with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute that derives from a `GeneratedComInterface`-attributed interface that's defined in another assembly, the SYSLIB1230 warning is emitted to inform you of the limitations. To acknowledge the limitations, suppress the warning in code as follows:
 
 ```csharp
 // Disable the warning.

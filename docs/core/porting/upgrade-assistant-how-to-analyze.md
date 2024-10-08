@@ -83,4 +83,5 @@ Follow these steps to analyze a project using the terminal. The .NET Global Tool
 ## Related content
 
 - [What is code analysis with .NET Upgrade Assistant?](upgrade-assistant-analyze-overview.md)
-- 
+- [What is .NET Upgrade Assistant?](upgrade-assistant-overview.md)
+- [Install .NET Upgrade Assistant](upgrade-assistant-install.md)

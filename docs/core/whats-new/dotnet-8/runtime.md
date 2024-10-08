@@ -500,11 +500,11 @@ IDataView predictions = model.Transform(split.TestSet);
 
 .NET 8 introduces several new types aimed at improving app performance.
 
-- The new <xref:System.Collections.Frozen?displayProperty=fullName> namespace includes the collection types <xref:System.Collections.Frozen.FrozenDictionary%602> and <xref:System.Collections.Frozen.FrozenSet%601>. These types don't allow any changes to keys and values once a collection created. That requirement allows faster read operations (for example, `TryGetValue()`). These types are particularly useful for collections that are populated on first use and then persisted for the duration of a long-lived service, for example:
+- The new <xref:System.Collections.Frozen?displayProperty=fullName> namespace includes the collection types <xref:System.Collections.Frozen.FrozenDictionary%602> and <xref:System.Collections.Frozen.FrozenSet%601>. These types don't allow any changes to keys and values once a collection is created. That requirement allows faster read operations (for example, `TryGetValue()`). These types are particularly useful for collections that are populated on first use and then persisted for the duration of a long-lived service, for example:
 
   ```csharp
   private static readonly FrozenDictionary<string, bool> s_configurationData =
-      LoadConfigurationData().ToFrozenDictionary(optimizeForReads: true);
+      LoadConfigurationData().ToFrozenDictionary();
 
   // ...
   if (s_configurationData.TryGetValue(key, out bool setting) && setting)

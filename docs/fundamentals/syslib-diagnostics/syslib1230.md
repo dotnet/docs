@@ -1,7 +1,8 @@
 ---
 title: SYSLIB1230 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1230.
-ms.date: 10/26/2023
+ms.date: 10/08/2024
+
 f1_keywords:
   - syslib1039
 ---

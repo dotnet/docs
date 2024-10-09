@@ -167,6 +167,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1227][1227] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1228][1228] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1229][1229] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1230][1230] | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]
@@ -311,3 +312,4 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1227]: syslib1220-1229.md
 [1228]: syslib1220-1229.md
 [1229]: syslib1220-1229.md
+[1230]: syslib1230.md

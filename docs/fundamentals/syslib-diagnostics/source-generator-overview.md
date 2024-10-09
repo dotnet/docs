@@ -167,6 +167,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1227][1227] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1228][1228] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1229][1229] | (Reserved for System.Text.Json.SourceGeneration.) |
+| [SYSLIB1230][1230] | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]
@@ -253,16 +254,16 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1087]: syslib1070-1089.md
 [1088]: syslib1070-1089.md
 [1089]: syslib1070-1089.md
-[1090]: syslib1090-1099.md
-[1091]: syslib1090-1099.md
-[1092]: syslib1090-1099.md
-[1093]: syslib1090-1099.md
-[1094]: syslib1090-1099.md
-[1095]: syslib1090-1099.md
-[1096]: syslib1090-1099.md
-[1097]: syslib1090-1099.md
-[1098]: syslib1090-1099.md
-[1099]: syslib1090-1099.md
+[1090]: syslib-cominterfacegenerator.md
+[1091]: syslib-cominterfacegenerator.md
+[1092]: syslib-cominterfacegenerator.md
+[1093]: syslib-cominterfacegenerator.md
+[1094]: syslib-cominterfacegenerator.md
+[1095]: syslib-cominterfacegenerator.md
+[1096]: syslib-cominterfacegenerator.md
+[1097]: syslib-cominterfacegenerator.md
+[1098]: syslib-cominterfacegenerator.md
+[1099]: syslib-cominterfacegenerator.md
 [1100]: syslib1100-1118.md
 [1101]: syslib1100-1118.md
 [1102]: syslib1100-1118.md
@@ -311,3 +312,4 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1227]: syslib1220-1229.md
 [1228]: syslib1220-1229.md
 [1229]: syslib1220-1229.md
+[1230]: syslib1230.md

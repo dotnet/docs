@@ -8,7 +8,9 @@ ms.date: 10/09/2024
 
 # Configuration source generator
 
-Starting with .NET 8, a configuration source generator was introduced to intercept specific call sites and generate their functionality. This feature provides an AOT and trim-friendly way to use the [configuration binder](configuration.md#binding), without the use of the reflection-based configuration binder.
+Starting with .NET 8, a configuration binding source generator was introduced that intercepts specific call sites and generates their functionality. This feature provides a [Native ahead-of-time (AOT)](../deploying/native-aot/index.md) and [trim-friendly](../deploying/trimming/trim-self-contained.md) way to use the [configuration binder](configuration.md#binding), without the use of the reflection-based implementation. Reflection requires dynamic code generation, which isn't supported in AOT scenarios.
+
+This feature is possible with the advent of [C# interceptors](/dotnet/csharp/whats-new/csharp-12#interceptors) that were introduced in C# 12. Interceptors allow the compiler to generate source code that intercepts specific calls and substitutes them with generated code.
 
 ## Enable the configuration source generator
 
@@ -26,11 +28,11 @@ When the configuration source generator is enabled, the compiler generates a sou
 - <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions?displayProperty=fullName>
 - <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions?displayProperty=nameWithType>
 
-All other APIs that eventually call these methods will instead use the source generated alternative functionality that's intercepted.
+In other words, all APIs that eventually call into these various binding methods are intercepted and replaced with generated code.
 
 ## Example usage
 
-Consider a .NET console application that's configured to publish as a native AOT app. The following code demonstrates how to use the configuration source generator to bind configuration settings:
+Consider a .NET console application configured to publish as a native AOT app. The following code demonstrates how to use the configuration source generator to bind configuration settings:
 
 :::code language="xml" source="snippets/configuration/console-binder-gen/console-binder-gen.csproj" highlight="9,11":::
 
@@ -43,7 +45,7 @@ Next, consider a _Program.cs_ file:
 The preceding code:
 
 - Instantiates a configuration builder instance.
-- Chains a call to <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection%2A> and defines three configuration source values.
+- Calls <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection%2A> and defines three configuration source values.
 - Calls <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build> to build the configuration.
 - Uses the <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue%2A?displayProperty=nameWithType> extension method to get the value for each configuration key.
 

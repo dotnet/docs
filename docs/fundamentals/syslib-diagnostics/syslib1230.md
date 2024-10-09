@@ -33,4 +33,5 @@ interface IDerived : IBaseInOtherAssembly
 
 ## See also
 
-- [SYSLIB diagnostics for COM interop source generation](syslib-cominteropgenerator.md)
+- [SYSLIB diagnostics for COM interop source generation](syslib-cominterfacegenerator.md)
+

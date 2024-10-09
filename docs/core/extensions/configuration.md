@@ -3,7 +3,7 @@ title: Configuration
 description: Learn how to use the Configuration API to configure .NET applications. Explore various inbuilt configuration providers.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/19/2023
+ms.date: 10/09/2024
 ms.topic: overview
 ---
 
@@ -64,7 +64,9 @@ Adding a configuration provider overrides previous configuration values. For exa
 
 ### Binding
 
-One of the key advantages of using the .NET configuration abstractions is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with [dependency injection](dependency-injection.md). This enables the [options pattern](options.md), which uses classes to provide strongly typed access to groups of related settings. .NET configuration provides various abstractions. Consider the following interfaces:
+One of the key advantages of using the .NET configuration abstractions is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with [dependency injection](dependency-injection.md). This enables the [options pattern](options.md), which uses classes to provide strongly typed access to groups of related settings. The default binder is reflection-based, but there's a [source generator alternative](configuration-generator.md) that's easy to enable.
+
+.NET configuration provides various abstractions. Consider the following interfaces:
 
 - <xref:Microsoft.Extensions.Configuration.IConfiguration>: Represents a set of key/value application configuration properties.
 - <xref:Microsoft.Extensions.Configuration.IConfigurationRoot>: Represents the root of an `IConfiguration` hierarchy.

@@ -197,10 +197,12 @@ namespace Microsoft.Extensions.Configuration.Binder.SourceGeneration
 }
 ```
 
+> [!NOTE]
+> This generated code is subject to change based on the version of the configuration source generator.
+
 The generated code contains the `BindingExtensions` class, which contains the `GetValueCore` method that performs the actual binding. The `GetValue<T>` extension method calls the `GetValueCore` method and casts the result to the specified type.
 
-> [!TIP]
-> To see the generated code, set the `<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>` in the project file. This ensures that the files are visible to the developer for inspection.
+To see the generated code, set the `<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>` in the project file. This ensures that the files are visible to the developer for inspection.
 
 ## See also
 

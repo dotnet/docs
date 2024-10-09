@@ -38,7 +38,7 @@ The preceding project file enables the configuration source generator by setting
 
 Next, consider a _Program.cs_ file:
 
-:::code language="csharp source="snippets/configuration/console-binder-gen/Program.cs" highlight="12-14":::
+:::code source="snippets/configuration/console-binder-gen/Program.cs" highlight="12-14":::
 
 The preceding code:
 

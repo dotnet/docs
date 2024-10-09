@@ -180,7 +180,7 @@ A garbage collection has the following phases:
   Ordinarily, the large object heap (LOH) isn't compacted because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
 
   - A memory limit on a container.
-  - The [GCHeapHardLimit](../../core/runtime-config/garbage-collector.md#heap-limit) or [GCHeapHardLimitPercent](../../core/runtime-config/garbage-collector.md#heap-limit-percent) runtime configuration options.
+  - The [GCHeapHardLimit](../../core/runtime-config/garbage-collector.md#heap-hard-limit) or [GCHeapHardLimitPercent](../../core/runtime-config/garbage-collector.md#heap-hard-limit-percent) runtime configuration options.
 
 The garbage collector uses the following information to determine whether objects are live:
 

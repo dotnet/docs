@@ -13,16 +13,6 @@ f1_keywords:
   - syslib1097
   - syslib1098
   - syslib1099
-  - syslib1230
-  - syslib1231
-  - syslib1232
-  - syslib1233
-  - syslib1234
-  - syslib1235
-  - syslib1236
-  - syslib1237
-  - syslib1238
-  - syslib1239
 ---
 # SYSLIB diagnostics for COM interop source generation
 
@@ -41,4 +31,4 @@ The following table shows the diagnostic IDs for COM interop source-generation a
 | `SYSLIB1098` | .NET COM hosting with `EnableComHosting` only supports built-in COM interop. It does not support source-generated COM interop with `GeneratedComInterfaceAttribute`. |
 | `SYSLIB1099` | COM Interop APIs on `System.Runtime.InteropServices.Marshal` do not support source-generated COM and will fail at run time. |
 | Diagnostic ID | Description |
-| `SYSLIB1230` | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |
+| [`SYSLIB1230`](syslib1230.md) | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |

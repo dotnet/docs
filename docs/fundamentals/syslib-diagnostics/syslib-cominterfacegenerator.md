@@ -1,5 +1,5 @@
 ---
-title: SYSLIB diagnostics for Microsoft.Interop.COMInteropGenerator
+title: SYSLIB diagnostics for Microsoft.Interop.ComInterfaceGenerator
 description: Learn about the COM interop source-generation analyzers that generate compile-time suggestions SYSLIB1090 through SYSLIB1099 and SYSLIB1230 through SYSLIB1239.
 ms.date: 10/08/2024
 f1_keywords:

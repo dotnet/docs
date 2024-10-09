@@ -56,4 +56,6 @@ When the application is built, the configuration source generator intercepts the
 
 ## See also
 
+- [Configuration in .NET](configuration.md)
 - [Roslyn: Interceptors feature](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md)
+- [Options pattern in .NET](options.md)

@@ -30,5 +30,4 @@ The following table shows the diagnostic IDs for COM interop source-generation a
 | `SYSLIB1097` | This type implements at least one type with the `GeneratedComInterfaceAttribute` attribute. Add the `GeneratedComClassAttribute` to enable passing this type to COM and exposing the COM interfaces for the types with the `GeneratedComInterfaceAttribute` from objects of this type. |
 | `SYSLIB1098` | .NET COM hosting with `EnableComHosting` only supports built-in COM interop. It does not support source-generated COM interop with `GeneratedComInterfaceAttribute`. |
 | `SYSLIB1099` | COM Interop APIs on `System.Runtime.InteropServices.Marshal` do not support source-generated COM and will fail at run time. |
-| Diagnostic ID | Description |
 | [`SYSLIB1230`](syslib1230.md) | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |

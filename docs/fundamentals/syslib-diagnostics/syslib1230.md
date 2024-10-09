@@ -2,12 +2,11 @@
 title: SYSLIB1230 warning
 description: Learn about the diagnostic that generates compile-time warning SYSLIB1230.
 ms.date: 10/08/2024
-
 f1_keywords:
   - syslib1039
 ---
 
-# SYSLIB1230: Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported.
+# SYSLIB1230: Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported
 
 In .NET 9 and later versions, defining an interface with the <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> attribute that derives from a `GeneratedComInterface`-attributed interface that's defined in another assembly is supported with the following restrictions:
 
@@ -31,3 +30,7 @@ interface IDerived : IBaseInOtherAssembly
 ```
 
 [!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+
+## See also
+
+- [SYSLIB diagnostics for COM interop source generation](syslib-cominteropgenerator.md)

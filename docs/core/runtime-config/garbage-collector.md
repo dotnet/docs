@@ -461,7 +461,7 @@ For more information about some of these settings, see the [Middle ground betwee
 
 ### Heap hard limit percent
 
-- Specifies the heap hard limit as a percentage of the total physical memory. If the process is running in a memory constraint environment, ie, inside a container with a specified memory limit, the total physical memory is the memory limit; otherwise it's what's available on the machine.
+- Specifies the heap hard limit as a percentage of the total physical memory. If the process is running in a memory-constrained environment, that is, inside a container with a specified memory limit, the total physical memory is the memory limit; otherwise it's what's available on the machine.
 - This setting only applies to 64-bit computers.
 - This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured or the [heap hard limit](#heap-hard-limit) is configured.
 

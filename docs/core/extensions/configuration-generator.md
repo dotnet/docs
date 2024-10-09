@@ -52,7 +52,7 @@ The preceding code:
 When the application is built, the configuration source generator intercepts the call to `GetValue<T>` and generates the binding code.
 
 > [!IMPORTANT]
-> If the `PublishAot` property is set to `true` and the `EnabledConfigurationBindingGenerator` property is set to `false`, warning `IL2026` is raised. This warning indicates that members are attributed with [RequiresUnreferencedCode](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) may break when trimming. For more information, see [IL2026](/dotnet/core/deploying/trimming/trim-warnings/il2026).
+> When the `PublishAot` property is set to `true` (or any other AOT warnings are enabled) and the `EnabledConfigurationBindingGenerator` property is set to `false`, warning `IL2026` is raised. This warning indicates that members are attributed with [RequiresUnreferencedCode](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) may break when trimming. For more information, see [IL2026](/dotnet/core/deploying/trimming/trim-warnings/il2026).
 
 ## See also
 

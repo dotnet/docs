@@ -1,6 +1,6 @@
 ---
 title: .NET Upgrade Assistant code analysis overview
-description: "."
+description: "Describes how the code analysis function of .NET Upgrade Assistant works. The analysis generates a report that lists what aspects of your project will be upgraded, and if any manual work is involved."
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
@@ -12,7 +12,7 @@ ms.date: 10/08/2024
 
 # What is code analysis with .NET Upgrade Assistant?
 
-This article provides an overview of the code analysis function of .NET Upgrade Assistant. Code analysis generates a report based on your projects and code. The report contains information about potential issues and problems you may encounter during the upgrade, and what steps you could take to remediate those problems.
+This article provides an overview of the code analysis function of .NET Upgrade Assistant. Code analysis generates a report based on your project configuration, dependencies, and code. The report contains information about potential issues and problems you might encounter during the upgrade, and what steps you could take to remediate those problems.
 
 ## Types of analysis
 
@@ -26,9 +26,15 @@ There are two types of analysis you can perform on your code:
 
   Analyzes the external binary dependencies (such as NuGet packages) for your projects.
 
+<!--
+
+Cutting this out until the extension docs are written
+
 ## Custom configuration
 
 You can use a configuration file for the code analysis engine to control how the analysis is performed.
+
+-->
 
 ## Reports
 
@@ -37,37 +43,37 @@ A dashboard report is generated after the analysis completes. This report breaks
 > [!TIP]
 > Story points are an Agile concept that helps estimate complexity and effort required to fix a problem. For more information, see the [Incident story points](#incident-story-points) section.
 
-Each issue in the report is categorized by [severity](#incident-severity), to assist you in prioritizing any fixes you need to make. Issues are either mandatory, which block the upgrade, or optional, which provide an opportunity to upgrade to a newer feature, library, or code enhancement.
+Each issue in the report is categorized by [severity](#incident-severity) to assist you in prioritizing any fixes you need to make. Issues are either mandatory or optional. Mandatory issues block the upgrade. Optional issues provide an opportunity to upgrade to a newer feature, library, or code enhancement.
 
 The following sections describe areas of the report in detail.
 
 ### Dashboard
 
-The **Dashboard** page provides a view of the incidents detected by the scan, grouped into individual panels:
+The **Dashboard** page provides a view of the incidents detected by the scan, grouped into panels:
 
 :::image type="content" source="./media/upgrade-assistant-analyze-overview/dashboard.png" alt-text="The .NET Upgrade Assistant Analyze results, showing the dashboard's starting page.":::
 
-01. **Summary**
+- **Summary**
 
-    - **Projects**
+  - **Projects**
 
-      This is the number of projects where an incident was detected.
+    This is the number of projects where an incident was detected.
 
-    - **Issues**
+  - **Issues**
 
-      The number of unique rules that triggered during the scan. Each issue has its own severity and story point, along with each detected instance (incident).
+    The number of unique rules that triggered during the scan. Each issue has its own severity and story point, along with each detected instance (incident).
 
-    - **Incidents**
+  - **Incidents**
 
-      An incident is an instance of a detected issue at a specific location, such as a piece of code or binary file. Each incident contains the contextual information that triggered the issue.
+    An incident is an instance of a detected issue at a specific location, such as a piece of code or binary file. Each incident contains the contextual information that triggered the issue.
 
-    - **Story Points**
+  - **Story Points**
 
-      The total number of story points required to complete the upgrade. For more information about what a story point is, see the [Incident story points](#incident-story-points) section.
+    The total number of story points required to complete the upgrade. For more information about what a story point is, see the [Incident story points](#incident-story-points) section.
 
-01. **Severity** and **Categories**
+- **Severity** and **Categories**
 
-    These two panels show charts that group the incidents by severity and category. For more information about severity, see the [Incident severity](#incident-severity) section.
+  These two panels show charts that group the incidents by severity and category. For more information about severity, see the [Incident severity](#incident-severity) section.
 
 ### Projects
 
@@ -83,18 +89,18 @@ The **Aggregate issues** page details each issue that was triggered. Each issue 
 
 ## Incident severity
 
-Each issue incident has an associated severity, which might block the upgrade. The severity helps you understand what has to be updated for the upgrade to succeed.
+Each issue incident has an associated severity, which might block the upgrade. The severity helps you understand what must be updated for the upgrade to succeed.
 
 | Severity | Description |
 | --- | --- |
-| Mandatory | Must be addressed. The upgrade process may handle these issues for you, such as updating the target framework runtime (TFM). |
-| Optional | These shouldn't pose a problem with upgrading, but you may want to consider addressing them either before or after the upgrade. |
-| Potential | Problems that if not addressed, have a chance of causing issues now or in the future. |
+| Mandatory | Must be addressed. The upgrade process might handle these issues for you, such as updating the target framework runtime (TFM). |
+| Optional | These shouldn't pose a problem with upgrading, but you might want to consider addressing them before or after the upgrade. |
+| Potential | Problems that might cause issue after upgrading, if you don't address them now. |
 | Information | Extra information related to the upgrade. |
 
 ## Incident story points
 
-Each issue incident has an associated story point. A story point is a unit of measure to gauge the complexity of an incident, which helps estimate the time involved on resolving that incident. .NET Upgrade Assistant defines story point values by the following table:
+Each issue incident has an associated story point. A story point is a unit of measure to gauge the complexity of an incident, which helps estimate the time involved to resolve that incident. .NET Upgrade Assistant defines story point values by the following table:
 
 | Story Points | Size           |
 |--------------|----------------|
@@ -104,15 +110,6 @@ Each issue incident has an associated story point. A story point is a unit of me
 | 7            | Rearchitecture |
 | 13           | Unknown        |
 
-<!-- Optional: Related content - H2
-
 ## Related content
 
-- [Related article title](link.md)
-- [Related article title](link.md)
-- [Related article title](link.md)
-
-Consider including a "Related content" H2 section that 
-lists links to 1 to 3 articles the user might find helpful.
-
--->
+- [Analyze projects with .NET Upgrade Assistant](upgrade-assistant-how-to-analyze.md)

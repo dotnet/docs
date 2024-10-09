@@ -12,11 +12,13 @@ ms.date: 10/08/2024
 
 # What is .NET Upgrade Assistant?
 
-This article describes the different features of .NET Upgrade Assistant. .NET Upgrade Assistant helps upgrade projects to newer versions of .NET, and analyzes your code to spot and fix potential incompatibilities. The tool can be used to migrate a project from .NET Framework, .NET Core, or .NET, to the latest version of .NET.  installed as a Visual Studio Extension, or installed as a command-line interface (CLI) tool. You use the extension or tool to upgrade entire .NET projects, or some aspect of the project, such migrating a configuration file from an older type to a newer type.
+.NET Upgrade Assistant helps upgrade projects to newer versions of .NET, and analyzes your code to spot and fix potential incompatibilities. One focus of the tool is to help migrate a project from .NET Framework, .NET Core, or .NET, to the latest version of .NET. You use the extension or tool to upgrade entire .NET projects, or some aspect of the project, such migrating a configuration file from an older type to a newer type.
+
+.NET Upgrade Assistant is distributed as a Visual Studio extension or a command-line interface (CLI) tool.
 
 ## Analyze and upgrade
 
-.NET Upgrade Assistant includes an analysis engine that scans your project and dependencies, and provides a report with recommended steps if incompatibilities are detected. After you've analyzed a project, you can upgrade either the entire project or specific parts of the project.
+.NET Upgrade Assistant includes an analysis engine that scans your projects and their dependencies. After the scan is complete, a report is generated with detailed information about performing an upgrade. You can use this information to upgrade either the entire project or specific parts of the project.
 
 <!-- I don't have this information ready yet
 
@@ -70,11 +72,11 @@ The following upgrade paths are supported:
 
 ## Upgrade details and options
 
-When you start an upgrade, you're presented with a wizard that walks you through configuring some options before starting the upgrade. Based on the type of project you're upgrading, you'll experience different paths through the wizard. For an example of upgrading a project, see [Upgrade projects with .NET Upgrade Assistant](upgrade-assistant-how-to-upgrade.md).
+When an upgrade is started, a wizard walks you through configuring some of the options before the upgrade is initiated. Based on the type of project you're upgrading, the wizard presents different options. For an example of upgrading a project, see [Upgrade projects with .NET Upgrade Assistant](upgrade-assistant-how-to-upgrade.md).
 
 ### How the upgrade should be performed
 
-There are a few different ways to perform the upgrade on a project. Based on type of project you're upgrading, one or more of the following items may be missing from your list of options.
+Based on the type of project you're upgrading, you might be able to change how the upgrade is performed. The type of project affects which options are available, and one or more of the following items might be missing:
 
 - In-place project upgrade
 
@@ -86,26 +88,26 @@ There are a few different ways to perform the upgrade on a project. Based on typ
 
 - Side-by-side incremental
 
-  A good choice for complicated web apps. Upgrading from ASP.NET to ASP.NET Core requires quite a bit of work and at times manual refactoring. This mode puts a .NET project next to your existing .NET Framework project, and routes endpoints that are implemented in the .NET project, while all other calls are sent to .NET Framework application.
+  This is a good choice for complicated web apps. Upgrading from ASP.NET to ASP.NET Core requires quite a bit of work and at times manual refactoring. This mode puts a .NET project next to the existing .NET Framework project. Endpoints are routed through the .NET project, while all other calls are sent to .NET Framework application.
 
   This mode lets you slowly upgrade your ASP.NET or library app piece-by-piece.
 
 ### Upgrade results
 
-Once your app has been upgraded, a status screen is displayed which shows all of the artifacts related to your project that were associated with the upgrade. Each upgrade artifact can be expanded to read more information about the status. The following list describes the status icons:
+Once the upgrade is finished, a status screen is displayed which shows all of the artifacts associated with the upgrade. Each upgrade artifact can be expanded to read more information about the status. The following list describes the status icons:
 
-- **Filled green checkmark**: The artifact was upgraded and completed successfully.
 - **Unfilled green checkmark**: The tool didn't find anything about the artifact to upgrade.
+- **Filled green checkmark**: The artifact was upgraded and completed successfully.
 - **Yellow warning sign**: The artifact was upgraded, but there's important information you should consider.
-- **Red _X_**: The artifact was to be upgraded, but the upgrade failed.
+- **Red _X_**: The artifact upgrade was unsuccessful.
 
 :::image type="content" source="media/upgrade-assistant-overview/visual-studio-upgrade-results.png" alt-text="The .NET Upgrade Assistant's Upgrade results tab in Visual Studio.":::
 
-Additionally, the actions the Upgrade Assistant performed are logged to the **Output** window under the **Upgrade Assistant** source, as shown in the following image:
+Additionally, the actions the performed during the upgrade are logged to the **Output** window under the **Upgrade Assistant** source, as shown in the following image:
 
 :::image type="content" source="media/upgrade-assistant-overview/visual-studio-output-window.png" alt-text="The output window in Visual Studio showing the results from the .NET Upgrade Assistant.":::
 
-After upgrading your project, test it thoroughly.
+After upgrading your project, test it thoroughly!
 
 ## Related content
 

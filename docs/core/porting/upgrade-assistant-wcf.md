@@ -51,7 +51,7 @@ dotnet tool install upgrade-assistant -g --version 0.4.421302
 ```
 
 > [!IMPORTANT]
-> Installing this tool may fail if you've configured additional NuGet feed sources. Use the `--ignore-failed-sources` parameter to treat those failures as warnings instead of errors:
+> If you configured extra NuGet feed sources, the install might fail with an error indicating that the NuGet package isn't available in the feed. Use the `--ignore-failed-sources` parameter to treat those failures as warnings instead of errors, bypassing the other NuGet feed sources:
 >
 > ```dotnetcli
 > dotnet tool install upgrade-assistant -g --ignore-failed-sources --version 0.4.421302

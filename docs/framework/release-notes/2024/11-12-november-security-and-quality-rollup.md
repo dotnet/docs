@@ -28,8 +28,7 @@ This security update addresses an information disclosure vulnerability with the 
 
 Addresses an issue where  "The type initializer for ‘System.Web.UI.Util’ threw an exception." error with design-time compilation in Visual Studio for .NET Framework ASP.NET projects (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
-#### CLR Runtime
-
+#### CLR
 Address an issue where in rare cases where an infinite loop could occur when a thread enters CLR for the first (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)
 
 Address an issue in cases where incorrect interface call devirtualization could occur when JIT optimizations are enabled (*Applies to: .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1.*)

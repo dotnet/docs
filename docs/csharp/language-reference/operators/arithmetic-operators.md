@@ -277,7 +277,7 @@ You can use the `checked` modifier only when you overload any of the following o
 
 For more information, see the following sections of the [C# language specification](~/_csharpstandard/standard/README.md):
 
-- [Postfix increment and decrement operators](~/_csharpstandard/standard/expressions.md#12815-postfix-increment-and-decrement-operators)
+- [Postfix increment and decrement operators](~/_csharpstandard/standard/expressions.md#12816-postfix-increment-and-decrement-operators)
 - [Prefix increment and decrement operators](~/_csharpstandard/standard/expressions.md#1296-prefix-increment-and-decrement-operators)
 - [Unary plus operator](~/_csharpstandard/standard/expressions.md#1292-unary-plus-operator)
 - [Unary minus operator](~/_csharpstandard/standard/expressions.md#1293-unary-minus-operator)
@@ -287,7 +287,7 @@ For more information, see the following sections of the [C# language specificati
 - [Addition operator](~/_csharpstandard/standard/expressions.md#12105-addition-operator)
 - [Subtraction operator](~/_csharpstandard/standard/expressions.md#12106-subtraction-operator)
 - [Compound assignment](~/_csharpstandard/standard/expressions.md#12214-compound-assignment)
-- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12819-the-checked-and-unchecked-operators)
+- [The checked and unchecked operators](~/_csharpstandard/standard/expressions.md#12820-the-checked-and-unchecked-operators)
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 
 ## See also

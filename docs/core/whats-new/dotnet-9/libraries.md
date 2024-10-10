@@ -2,13 +2,13 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 09/09/2024
+ms.date: 10/08/2024
 ms.topic: whats-new
 ---
 
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 RC 1.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 RC 2.
 
 ## Base64Url
 
@@ -44,7 +44,7 @@ The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLo
 
 ### `OrderedDictionary<TKey, TValue>`
 
-In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as <xref:System.Collections.Generic.OrderedDictionary%602> collection, which provides an efficient, generic type to support these scenarios.
+In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested <xref:System.Collections.Generic.OrderedDictionary%602> collection, which provides an efficient, generic type to support these scenarios.
 
 The following code uses the new class.
 

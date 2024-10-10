@@ -1,8 +1,8 @@
-﻿using Microsoft.ML.Tokenizers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net.Http;
+using System.Linq;
+using Microsoft.ML.Tokenizers;
 
 internal class Llama
 {
@@ -12,7 +12,7 @@ internal class Llama
         // Create the Tokenizer.
         string modelUrl = @"https://huggingface.co/hf-internal-testing/llama-llamaTokenizer/resolve/main/llamaTokenizer.model";
         using Stream remoteStream = File.OpenRead(modelUrl);
-        Tokenizer llamaTokenizer = Tokenizer.CreateLlama(remoteStream);
+        Tokenizer llamaTokenizer = LlamaTokenizer.Create(remoteStream);
 
         string text = "Hello, World!";
 
@@ -32,27 +32,21 @@ internal class Llama
         // idsCount = 5
 
         // Full encoding.
-        EncodingResult result = llamaTokenizer.Encode(text);
-        Console.WriteLine($"result.Tokens = {{'{string.Join("', '", result.Tokens)}'}}");
+        IReadOnlyList<EncodedToken> result = llamaTokenizer.EncodeToTokens(text, out string? normalizedString);
+        Console.WriteLine($"result.Tokens = {{'{string.Join("', '", result.Select(t => t.Value))}'}}");
         // result.Tokens = {'<s>', '▁Hello', ',', '▁World', '!'}
-        Console.WriteLine($"result.Offsets = {{{string.Join(", ", result.Offsets)}}}");
-        // result.Offsets = {(0, 0), (0, 6), (6, 1), (7, 6), (13, 1)}
-        Console.WriteLine($"result.Ids = {{{string.Join(", ", result.Ids)}}}");
+        Console.WriteLine($"result.Ids = {{{string.Join(", ", result.Select(t => t.Id))}}}");
         // result.Ids = {1, 15043, 29892, 2787, 29991}
 
         // Encode up 2 tokens.
-        int index1 = llamaTokenizer.IndexOfTokenCount(text, maxTokenCount: 2, out string processedText1, out int tokenCount1);
-        Console.WriteLine($"processedText1 = {processedText1}");
-        // processedText1 =  ▁Hello,▁World!
+        int index1 = llamaTokenizer.GetIndexByTokenCount(text, maxTokenCount: 2, out string? processedText1, out int tokenCount1);
         Console.WriteLine($"tokenCount1 = {tokenCount1}");
         // tokenCount1 = 2
         Console.WriteLine($"index1 = {index1}");
         // index1 = 6
 
         // Encode from end up to one token.
-        int index2 = llamaTokenizer.LastIndexOfTokenCount(text, maxTokenCount: 1, out string processedText2, out int tokenCount2);
-        Console.WriteLine($"processedText2 = {processedText2}");
-        // processedText2 =  ▁Hello,▁World!
+        int index2 = llamaTokenizer.GetIndexByTokenCountFromEnd(text, maxTokenCount: 1, out string? processedText2, out int tokenCount2);
         Console.WriteLine($"tokenCount2 = {tokenCount2}");
         // tokenCount2 = 1
         Console.WriteLine($"index2 = {index2}");

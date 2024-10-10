@@ -12,7 +12,7 @@ internal class CodeGen
         using Stream vocabStream = File.OpenRead(phi2VocabPath);
         using Stream mergesStream = File.OpenRead(phi2MergePath);
 
-        Tokenizer phi2Tokenizer = Tokenizer.CreateCodeGen(vocabStream, mergesStream);
+        Tokenizer phi2Tokenizer = CodeGenTokenizer.Create(vocabStream, mergesStream);
         IReadOnlyList<int> ids = phi2Tokenizer.EncodeToIds("Hello, World");
         // </CodeGen>
     }

@@ -1,0 +1,27 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+      - description: Flag PRs that change policy files.
+        triggerOnOwnActions: true
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - filesMatchPattern:
+              pattern: .github/policies/*
+              matchAny: true
+          - not:
+              activitySenderHasPermission:
+                permission: Admin
+        then:
+          - addReply:
+              reply: >-
+                  @${issueAuthor} - This PR edits a policy file, which is not allowed.
+          - closePullRequest

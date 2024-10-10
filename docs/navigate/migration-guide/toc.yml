@@ -20,19 +20,31 @@ items:
           - name: Install
             href: ../../core/porting/upgrade-assistant-install.md
             displayName: upgrade assistant
-          - name: Install (legacy version)
-            href: ../../core/porting/upgrade-assistant-install-legacy.md
+          - name: How to upgrade
+            href: ../../core/porting/upgrade-assistant-how-to-upgrade.md
             displayName: upgrade assistant
-          - name: Windows Communication Foundation
-            href: ../../core/porting/upgrade-assistant-wcf.md
-          - name: Windows Presentation Foundation
-            href: /dotnet/desktop/wpf/migration/
-          - name: Windows Forms
-            href: /dotnet/desktop/winforms/migration/
-          - name: Universal Windows Platform
-            href: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant
-          - name: ASP.NET
-            href: /aspnet/core/migration/mvc
+          - name: Analyze
+            expanded: true
+            items:
+              - name: Overview
+                href: ../../core/porting/upgrade-assistant-analyze-overview.md
+                displayName: upgrade assistant
+              - name: How to analyze a project
+                href: ../../core/porting/upgrade-assistant-how-to-analyze.md
+                displayName: upgrade assistant
+          - name: Project upgrade guide
+            expanded: true
+            items:
+              - name: ASP.NET
+                href: /aspnet/core/migration/mvc
+              - name: Windows Presentation Foundation
+                href: /dotnet/desktop/wpf/migration/
+              - name: Windows Forms
+                href: /dotnet/desktop/winforms/migration/
+              - name: Universal Windows Platform
+                href: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/upgrade-assistant
+              - name: Windows Communication Foundation
+                href: ../../core/porting/upgrade-assistant-wcf.md
           - name: Telemetry
             href: ../../core/porting/upgrade-assistant-telemetry.md
       - name: Breaking changes

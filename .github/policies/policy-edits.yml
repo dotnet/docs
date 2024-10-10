@@ -24,7 +24,7 @@ configuration:
                 - activitySenderHasPermission:
                     permission: admin
                 - activitySenderHasPermission:
-                    permission: maintain
+                    permission: write
         then:
           - addReply:
               reply: >-

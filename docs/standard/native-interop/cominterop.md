@@ -17,3 +17,4 @@ COM interop functionality can be achieved through a built-in system in the .NET 
 - [Runtime Callable Wrappers](./runtime-callable-wrapper.md)
 - [Qualifying .NET Types for COM Interoperation](./qualify-net-types-for-interoperation.md)
 - [Trimmer and Native AOT-friendly COM interop](./tutorial-comwrappers.md)
+- [Lifetimes and Ownership in COM](./com-parameter-ownership.md)

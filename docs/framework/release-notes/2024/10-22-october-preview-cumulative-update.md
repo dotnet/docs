@@ -20,7 +20,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 #### ASP.NET
 
-Addresses an issue where  "The type initializer for ‘System.Web.UI.Util’ threw an exception." error with design-time compilation in Visual Studio for .NET Framework ASP.Net projects (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Addresses an issue where  "The type initializer for ‘System.Web.UI.Util’ threw an exception." error with design-time compilation in Visual Studio for .NET Framework ASP.NET projects (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 #### CLR Runtime
 
@@ -33,10 +33,6 @@ Addresses an issue with out of memory exceptions during garbage collection while
 #### .NET fundamentals
 
 Addresses an issue with .NET API UserPrincipal.GetAuthorizationGroups to retrieve the  Membership of a particular user (*Applies to: .NET Framework 4.8, 4.8.1.*)
-
-#### WPF
-
-Addresses an issue with printing large number of pages due to an OutOfMemory exception (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 ## Known issues in this release
 

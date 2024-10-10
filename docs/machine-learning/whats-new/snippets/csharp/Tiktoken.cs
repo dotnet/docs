@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.ML.Tokenizers;
 
 internal class Tiktoken
@@ -7,7 +8,7 @@ internal class Tiktoken
     public static void RunIt()
     {
         // <Tiktoken>
-        Tokenizer tokenizer = Tokenizer.CreateTiktokenForModel("gpt-4");
+        Tokenizer tokenizer = TiktokenTokenizer.CreateForModel("gpt-4");
         string text = "Hello, World!";
 
         // Encode to IDs.
@@ -26,36 +27,30 @@ internal class Tiktoken
         // idsCount = 4
 
         // Full encoding.
-        EncodingResult result = tokenizer.Encode(text);
-        Console.WriteLine($"result.Tokens = {{'{string.Join("', '", result.Tokens)}'}}");
+        IReadOnlyList<EncodedToken> result = tokenizer.EncodeToTokens(text, out string? normalizedString);
+        Console.WriteLine($"result.Tokens = {{'{string.Join("', '", result.Select(t => t.Value))}'}}");
         // result.Tokens = {'Hello', ',', ' World', '!'}
-        Console.WriteLine($"result.Offsets = {{{string.Join(", ", result.Offsets)}}}");
-        // result.Offsets = {(0, 5), (5, 1), (6, 6), (12, 1)}
-        Console.WriteLine($"result.Ids = {{{string.Join(", ", result.Ids)}}}");
+        Console.WriteLine($"result.Ids = {{{string.Join(", ", result.Select(t => t.Id))}}}");
         // result.Ids = {9906, 11, 4435, 0}
 
         // Encode up to number of tokens limit.
-        int index1 = tokenizer.IndexOfTokenCount(
+        int index1 = tokenizer.GetIndexByTokenCount(
             text,
             maxTokenCount: 1,
-            out string processedText1,
+            out string? processedText1,
             out int tokenCount1
             ); // Encode up to one token.
-        Console.WriteLine($"processedText1 = {processedText1}");
-        // processedText1 = Hello, World!
         Console.WriteLine($"tokenCount1 = {tokenCount1}");
         // tokenCount1 = 1
         Console.WriteLine($"index1 = {index1}");
         // index1 = 5
 
-        int index2 = tokenizer.LastIndexOfTokenCount(
+        int index2 = tokenizer.GetIndexByTokenCountFromEnd(
             text,
             maxTokenCount: 1,
-            out string processedText2,
+            out string? processedText2,
             out int tokenCount2
             ); // Encode from end up to one token.
-        Console.WriteLine($"processedText2 = {processedText2}");
-        // processedText2 = Hello, World!
         Console.WriteLine($"tokenCount2 = {tokenCount2}");
         // tokenCount2 = 1
         Console.WriteLine($"index2 = {index2}");

@@ -53,6 +53,7 @@ The compiler uses static analysis to determine the most performant way to create
 
 Many APIs are overloaded with multiple collection types as parameters. Because a collection expression can be converted to many different expression types, these APIs might require casts on the collection expression to specify the correct conversion. The following conversion rules resolve some of the ambiguities:
 
+- A better element conversion is preferred over a better collection type conversion. In other words, the type of elements in the collection expression has more importance than the type of the collection. These rules are described in the feature spec for [better conversion from collection expression](~/_csharplang/proposals/csharp-13.0/collection-expressions-better-conversion.md).
 - Conversion to <xref:System.Span%601>, <xref:System.ReadOnlySpan%601>, or another [`ref struct`](../builtin-types/ref-struct.md) type is better than a conversion to a non-ref struct type.
 - Conversion to a noninterface type is better than a conversion to an interface type.
 

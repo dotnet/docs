@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 09/10/2024
+ms.date: 10/08/2024
 ms.topic: whats-new
 ---
 

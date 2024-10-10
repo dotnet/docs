@@ -7,7 +7,7 @@ ms.custom: "updateeachrelease"
 # Welcome to .NET
 
 - <xref:System.Text.Json.JsonSerializer.Serialize*>
-- <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.Bind*
+- <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.Bind*>
 - <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure*>
 - <xref:Microsoft.Extensions.Options.OptionsBuilder`1.Configure``1(System.Action{`0,``0})>
 - <xref:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner.Add*>

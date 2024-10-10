@@ -8,20 +8,25 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-      - description: Flag PRs that change policy files.
+      - description: Flag PRs that change .github folder files.
         triggerOnOwnActions: true
         if:
           - payloadType: Pull_Request
           - isAction:
               action: Opened
           - filesMatchPattern:
-              pattern: .github/policies/*
+              pattern: .github/*
               matchAny: true
+              excludedFiles:
+                - .github/CODEOWNERS
           - not:
-              activitySenderHasPermission:
-                permission: Admin
+              - or:
+                  - activitySenderHasPermission:
+                      permission: admin
+                  - activitySenderHasPermission:
+                      permission: maintain
         then:
           - addReply:
               reply: >-
-                  @${issueAuthor} - This PR edits a policy file, which is not allowed.
+                  @${issueAuthor} - This PR edits a file in the .github folder, which is not allowed. CC @dotnet/docs.
           - closePullRequest

@@ -6,10 +6,13 @@ ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
 
-- <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.Bind``1*>
-- <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure``1*>
 - <xref:System.Text.Json.JsonSerializer.Serialize*>
-- <xref:System.Text.Json.JsonSerializer.Serialize``1*>
+- <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.Bind*
+- <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure*>
+- <xref:Microsoft.Extensions.Options.OptionsBuilder`1.Configure``1(System.Action{`0,``0})>
+- <xref:Microsoft.DotNet.PlatformAbstractions.HashCodeCombiner.Add*>
+- <xref:System.Collections.Generic.Dictionary`2.%23ctor*>
+- <xref:System.Collections.Generic.Dictionary`2.Remove*>
 
 See [Get started with .NET](core/get-started.md) to learn how to create .NET apps.
 

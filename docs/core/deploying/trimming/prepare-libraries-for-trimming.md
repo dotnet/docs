@@ -220,7 +220,7 @@ Consider code that:
 * The intent can't be expressed with the annotations.
 * Generates a warning but doesn't represent a real issue at run time.
 
-The warnings can be suppressed <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
+The warnings can be suppressed by <xref:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute>. This is similar to `SuppressMessageAttribute`, but it's persisted in IL and respected during trim analysis.
 
 > [!WARNING]
 > When suppressing warnings, you are responsible for guaranteeing the trim compatibility of the code based on invariants that you know to be true by inspection and testing. Use caution with these annotations, because if they are incorrect, or if invariants of your code change, they might end up hiding incorrect code.

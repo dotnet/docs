@@ -20,11 +20,11 @@ configuration:
               excludedFiles:
                 - .github/CODEOWNERS
           - not:
-              - or:
-                  - activitySenderHasPermission:
-                      permission: admin
-                  - activitySenderHasPermission:
-                      permission: maintain
+              or:
+                - activitySenderHasPermission:
+                    permission: admin
+                - activitySenderHasPermission:
+                    permission: maintain
         then:
           - addReply:
               reply: >-

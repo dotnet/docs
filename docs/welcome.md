@@ -6,6 +6,11 @@ ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
 
+- <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderConfigurationExtensions.Bind``1*>
+- <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure``1*>
+- <xref:System.Text.Json.JsonSerializer.Serialize*>
+- <xref:System.Text.Json.JsonSerializer.Serialize``1*>
+
 See [Get started with .NET](core/get-started.md) to learn how to create .NET apps.
 
 You can build many types of apps with .NET, such as cloud, IoT, and games, using free cross-platform tools. Your apps can run on Android, iOS, Linux, macOS, and Windows. Deploy apps to servers or desktops and publish to app stores for deployment on mobile devices. .NET is accessible to students and hobbyists, and all are welcome to participate in a lively international developer community and make direct contributions to many of the .NET technologies.

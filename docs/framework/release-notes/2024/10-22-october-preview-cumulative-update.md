@@ -22,7 +22,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 Addresses an issue where  "The type initializer for ‘System.Web.UI.Util’ threw an exception." error with design-time compilation in Visual Studio for .NET Framework ASP.NET projects (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
-#### CLR Runtime
+#### CLR
 
 Address an issue where in rare cases where an infinite loop could occur when a thread enters CLR for the first (*Applies to: .NET Framework 4.8, 4.8.1.*)
 

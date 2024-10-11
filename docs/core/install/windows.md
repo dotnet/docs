@@ -4,7 +4,7 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 05/15/2024
+ms.date: 10/10/2024
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -16,30 +16,30 @@ ms.date: 05/15/2024
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-There are many different ways to install .NET on Windows. This article helps you understand the difference between the SDK and Runtime, which runtime you should install, and the method you should use to install .NET.
+This article teaches you about which versions of .NET are supported on Windows, how to install .NET, and what the difference is between the SDK and runtime.
+
+Unlike .NET Framework, .NET isn't tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. But .NET is standalone and can be installed anywhere on your computer. Some apps might include their own copy of .NET.
+
+By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the installation method chooses a different directory.
 
 .NET is made up of the runtime and the SDK. The runtime runs .NET apps, and the SDK is used to create apps.
 
-Unlike .NET Framework, .NET isn't installed and tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. .NET can be installed anywhere on your computer and some apps might include their own copy of .NET.
-
-By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the install method chooses a different directory.
-
 ## Choose the correct runtime
 
-There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes. If you install a specific runtime, it might include other runtimes. The following table describes which runtime is included with a particular .NET installer:
+There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes, and an installer for a runtime might include an additional runtime. The following table describes which runtime is included with a particular .NET installer:
 
-|                          | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
+| Installer                | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
 | ------------------------ | ----------------------------- | ----------------------------- | ----------------------------- |
 | **.NET Runtime**         | Yes                           | No                            | No                            |
 | **.NET Desktop Runtime** | Yes                           | Yes                           | No                            |
 | **ASP.NET Core Runtime** | No                            | No                            | Yes                           |
 | **.NET SDK**             | Yes                           | Yes                           | Yes                           |
 
-To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs any web apps, and the .NET Desktop Runtime runs any desktop app, such as a Windows Presentation Foundation (WPF) or Windows Forms (WinForms) app.
+To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs web-based apps, and the .NET Desktop Runtime runs desktop apps, such as a Windows Presentation Foundation (WPF) or Windows Forms app.
 
 ## Choose how to install .NET
 
-There are different ways to install .NET, and some products, like Visual Studio, might manage their own version of .NET. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
+There are different ways to install .NET, and some products might manage their own version of .NET. If you install .NET through software that manages its own version of .NET, it might not be enabled system-wide. Make sure you understand the implications of installing .NET through other software.
 
 If you're unsure which method you should choose after reviewing the lists in the following sections, you probably want to use the [.NET Installer](#net-installer).
 
@@ -203,7 +203,7 @@ The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provi
 1. Find the SDK or Runtime box that contains the links for downloading .NET.
 1. Under the **Installers** column, find the **Windows** row and select the link for your CPU architecture. If you're unsure, select **x64** as it's the most common.
 
-   The browser automatically downloads the MSI package.
+   The browser should automatically download the installer.
 
    > [!TIP]
    > The following image shows the SDK, but you can also download the Runtime.
@@ -215,7 +215,7 @@ The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provi
 
    The Windows Installer dialog is opened.
 
-   :::image type="content" source="media/windows/msi-installer.png" alt-text="A screenshot of the .NET MSI installer app window.":::
+   :::image type="content" source="media/windows/msi-installer.png" alt-text="A screenshot of the .NET installer app window.":::
 
 1. Select **Install** and follow the instructions to install .NET.
 
@@ -223,7 +223,9 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ### Command-line options
 
-If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following Windows Installer options:
+Use the `/?` parameter to display a list of options.
+
+If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following options:
 
 - `/install`\
 Installs .NET.
@@ -237,8 +239,6 @@ Suppresses any attempts to restart.
 ```console
 dotnet-sdk-8.0.100-win-x64.exe /install /quiet /norestart
 ```
-
-For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).
 
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
@@ -261,7 +261,7 @@ The .NET WinGet packages are:
 If you install the SDK, you don't need to install the corresponding runtime.
 
 01. [Install WinGet](/windows/package-manager/winget/#install-winget).
-01. Open a terminal, such as PowerShell or `cmd.exe`.
+01. Open a terminal, such as PowerShell or Command Prompt.
 01. Run the `winget install` command and pass the name of the SDK package:
 
     ```cmd

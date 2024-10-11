@@ -16,9 +16,9 @@ ms.date: 10/10/2024
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-This article teaches you about which versions of .NET are supported on Windows, how to install .NET, and what the difference is between the SDK and Runtime.
+This article teaches you about which versions of .NET are supported on Windows, how to install .NET, and what the difference is between the SDK and runtime.
 
-Unlike .NET Framework, .NET isn't tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. But .NET is standalone and can be installed anywhere on your computer and some apps might include their own copy of .NET.
+Unlike .NET Framework, .NET isn't tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. But .NET is standalone and can be installed anywhere on your computer. Some apps might include their own copy of .NET.
 
 By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the installation method chooses a different directory.
 
@@ -35,7 +35,7 @@ There are three different runtimes for Windows, which enable different types of 
 | **ASP.NET Core Runtime** | No                            | No                            | Yes                           |
 | **.NET SDK**             | Yes                           | Yes                           | Yes                           |
 
-To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs web-based apps, and the .NET Desktop Runtime runs desktop apps, such as a Windows Presentation Foundation (WPF) or Windows Forms (WinForms) app.
+To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs web-based apps, and the .NET Desktop Runtime runs desktop apps, such as a Windows Presentation Foundation (WPF) or Windows Forms app.
 
 ## Choose how to install .NET
 

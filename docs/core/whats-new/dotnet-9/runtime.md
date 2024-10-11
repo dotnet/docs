@@ -66,6 +66,16 @@ Dynamic adaptation to application sizes (DATAS) is now enabled by default. It ai
 
 For more information, see [Dynamic adaptation to application sizes (DATAS)](../../../standard/garbage-collection/datas.md).
 
+## Control-flow enforcement technology
+
+[Control-flow enforcement technology (CET)](/cpp/build/reference/cetcompat) is [enabled by default](../../compatibility/interop/9.0/cet-support.md) for apps on Windows. It significantly improves security by adding hardware-enforced stack protection against return-oriented programming (ROP) exploits. It's the latest [.NET Runtime Security Mitigation](https://github.com/dotnet/designs/blob/main/accepted/2021/runtime-security-mitigations.md).
+
+CET imposes some limitations on CET-enabled processes and can result in a small performance regression. There are various controls to opt-out of CET.
+
+## .NET install search behavior
+
+.NET apps can now be configured for how they should [search for the .NET runtime](../../deploying/deploy-with-cli.md#configure-net-install-search-behavior). This capability can be used with private runtime installations or to more strongly control the execution environment.
+
 ## Performance improvements
 
 The following performance improvements have been made for .NET 9:

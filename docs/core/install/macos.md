@@ -30,11 +30,12 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Operating System       | .NET 8 (LTS) | .NET 6 (LTS) |
 |------------------------|--------------|--------------|
-| macOS 14.0 "Sonoma"    | ✔️ 8.0       | ✔️ 6.0        |
-| macOS 13.0 "Ventura"   | ✔️ 8.0       | ✔️ 6.0        |
-| macOS 12.0 "Monterey"  | ✔️ 8.0       | ✔️ 6.0        |
-| macOS 11.0 "Big Sur"   | ❌           | ✔️ 6.0        |
-| macOS 10.15 "Catalina" | ❌           | ✔️ 6.0        |
+| macOS 15 "Sequoia"     | ✔️ 8.0        | ✔️ 6.0        |
+| macOS 14 "Sonoma"      | ✔️ 8.0        | ✔️ 6.0        |
+| macOS 13 "Ventura"     | ✔️ 8.0        | ✔️ 6.0        |
+| macOS 12 "Monterey"    | ❌            | ❌            |
+| macOS 11 "Big Sur"     |              | ❌            |
+| macOS 10.15 "Catalina" |              | ❌            |
 
 For a full list of .NET versions and their support life cycle, see [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 

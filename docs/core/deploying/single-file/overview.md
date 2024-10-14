@@ -42,7 +42,7 @@ These properties have the following functions:
 
 Single file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
 
-Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file. If an extra, non-runtime configuration file is needed separate from the single file executable, you can [exclude it from being embedded](#exclude-files-from-being-embedded) such that it will be placed beside the single file.
+Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file.
 
 ## Publish a single-file app
 

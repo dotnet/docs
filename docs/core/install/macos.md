@@ -132,7 +132,7 @@ As an alternative to the macOS installers, you can download and manually install
 
 01. Select the link to the SDK or Runtime you want to install. Look for the **Binaries** column in the **macOS** row.
 
-    :::image type="content" source="media/macos/download-page.png" alt-text="The .NET download website. Versions 6.0 through 9.0 are listed. A red box highlights those download links.":::
+    :::image type="content" source="media/macos/manual-download-page.png" alt-text="The .NET download website showing the SDK download links. The SDK header is highlighted with a red box. The box has an arrow pointing down to the macOS section.":::
 
     - If you're running an Apple processor, such as an **M1** or an **M3 Pro**, select **Arm64**.
     - If you're running an Intel processor, select **x64**.

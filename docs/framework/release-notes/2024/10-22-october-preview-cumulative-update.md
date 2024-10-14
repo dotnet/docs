@@ -28,7 +28,7 @@ Address an issue where in rare cases, an infinite loop could occur when a thread
 
 Addresses an issue where incorrect interface call devirtualization could occur when JIT optimizations are enabled. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
-Addresses an issue with out of memory exceptions during garbage collection while running applications running under job limits (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Addresses an issue with out-of-memory exceptions during garbage collection while running applications under job limits. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 #### .NET fundamentals
 

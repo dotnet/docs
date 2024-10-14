@@ -32,7 +32,7 @@ Addresses an issue with out-of-memory exceptions during garbage collection while
 
 #### .NET fundamentals
 
-Addresses an issue with .NET API UserPrincipal.GetAuthorizationGroups to retrieve the  Membership of a particular user (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Addresses an issue with the `UserPrincipal.GetAuthorizationGroups` API to retrieve the membership of a particular user. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 ## Known issues in this release
 

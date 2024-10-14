@@ -57,10 +57,10 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.8 | [5044025](https://support.microsoft.com/kb/5044025) |
 | .NET Framework 3.5, 4.8.1 | [5044035](https://support.microsoft.com/kb/5044035) |
 | **Windows 10, version 22H2** | **[5044091](https://support.microsoft.com/kb/5044091)** |
-| .NET Framework 3.5, 4.8 | [5044023](https://support.microsoft.com/kb/5044023) |
+| .NET Framework 3.5, 4.8 | [5044020](https://support.microsoft.com/kb/5044020) |
 | .NET Framework 3.5, 4.8.1 | [5044029](https://support.microsoft.com/kb/5044029) |
 | **Windows 10, version 21H2** | **[5044090](https://support.microsoft.com/kb/5044090)** |
-| .NET Framework 3.5, 4.8 | [5044023](https://support.microsoft.com/kb/5044023) |
+| .NET Framework 3.5, 4.8 | [5044020](https://support.microsoft.com/kb/5044020) |
 | .NET Framework 3.5, 4.8.1 | [5044029](https://support.microsoft.com/kb/5044029) |
 | **Windows 10 1809 and Windows Server 2019** | **[5044089](https://support.microsoft.com/kb/5044089)** |
 | .NET Framework 3.5, 4.7.2 | [5044016](https://support.microsoft.com/kb/5044016) |

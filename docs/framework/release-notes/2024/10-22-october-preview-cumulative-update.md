@@ -24,7 +24,7 @@ Addresses the "The type initializer for 'System.Web.UI.Util' threw an exception.
 
 #### CLR
 
-Address an issue where in rare cases where an infinite loop could occur when a thread enters CLR for the first (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Address an issue where in rare cases, an infinite loop could occur when a thread enters CLR for the first time. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 Address an issue in cases where incorrect interface call devirtualization could occur when JIT optimizations are enabled (*Applies to: .NET Framework 4.8, 4.8.1.*)
 

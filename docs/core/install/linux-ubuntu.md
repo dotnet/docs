@@ -211,7 +211,7 @@ sudo apt update
 > [!TIP]  
 > The previous script was written for Ubuntu and might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$ID` and `$VERSION_ID` variables won't be assigned the correct values, making the URI for the `wget` command invalid. The `$ID` corresponds to the distribution (e.g., `ubuntu`), while `$VERSION_ID` maps to the specific version of Ubuntu you want to get packages for, such as 22.04 or 23.10.
 >
-> For example, on Ubuntu 22.04, `$ID` would be `ubuntu`, and `$VERSION_ID` would be `22.04`, so the resulting URL would look like:  
+> For example, on Ubuntu 22.04 `$ID` would be `ubuntu` and `$VERSION_ID` would be `22.04`. The URL would look like:  
 > `https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb`.  
 >
 > You can use a web browser and navigate to <https://packages.microsoft.com/config/ubuntu/> to see which versions of Ubuntu are available to use as the `$repo_version` value.

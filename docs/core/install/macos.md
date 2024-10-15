@@ -62,13 +62,13 @@ If you're unsure which method you should choose after reviewing the lists in the
 
 ### Developers
 
-- [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
+- [Visual Studio Code - C# Dev Kit](#install-net-for-visual-studio-code)
 
   Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. The extension can use an already installed SDK or install one for you.
 
 ### Users and Developers
 
-- [.NET Installer](#net-installer)
+- [.NET Installer](#install-net)
 
   Use the standalone installer to install .NET. This method is the typical way to install .NET on your developer or user machine.
 

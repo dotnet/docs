@@ -78,7 +78,7 @@ Here's a list of exceptions thrown by constructors that don't include pointer pa
 | Exception | Condition | Thrown by |
 |-----------|-----------|-----------|
 |<xref:System.ArgumentNullException>|`value` is `null`.|<xref:System.String.%23ctor(System.Char%5B%5D,System.Int32,System.Int32)>|
-|<xref:System.ArgumentOutOfRangeException>|`startIndex`,`length`, or `count` is less than zero.<br /><br /> -or-<br /><br /> The sum of `startIndex` and `length` is greater than the number of elements in `value`.<br /><br /> -or-<br /><br /> `count` is less than zero.|<xref:System.String.%23ctor(System.Char,System.Int32)><br /><br /> <xref:System.String.%23ctor(System.Char%5B%5D,System.Int32,System.Int32)>|
+|<xref:System.ArgumentOutOfRangeException>|`startIndex`, `length`, or `count` is less than zero.<br /><br /> -or-<br /><br /> The sum of `startIndex` and `length` is greater than the number of elements in `value`.<br /><br /> -or-<br /><br /> `count` is less than zero.|<xref:System.String.%23ctor(System.Char,System.Int32)><br /><br /> <xref:System.String.%23ctor(System.Char%5B%5D,System.Int32,System.Int32)>|
 
 Here's a list of exceptions thrown by constructors that include pointer parameters.
 

@@ -109,7 +109,7 @@ Installer packages are available for macOS, an easy way of installing .NET.
 01. Once the download completes, open it.
 01. The macOS Installer is shown. Follow the steps in the Installer and use the default options.
 
-    :::image type="content" source="media/macos/installer.png" alt-text="A screenshot showing just the .NET Runtime download table from the .NET download website. The macOS row is highlighted with a red box.":::
+    :::image type="content" source="media/macos/installer.png" alt-text="A screenshot showing just the .NET installer running on macOS.":::
 
 ## Install .NET manually
 

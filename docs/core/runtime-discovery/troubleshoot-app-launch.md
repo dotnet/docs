@@ -237,7 +237,7 @@ For example, the error message in the previous section would correspond to:
 ./dotnet-install.sh --architecture x64 --install-dir /usr/local/share/dotnet/ --runtime dotnet --version 5.0.15
 ```
 
-For more information on installation using the script, see [Install with bash automation](../install/macos.md#install-with-bash-automation).
+For more information on installation using the script, see [Install .NET with a script](../install/macos.md#install-net-with-a-script).
 ::: zone-end
 
 ### Download binaries
@@ -253,7 +253,7 @@ For more information about manual installation, see [Install .NET on Linux](../i
 ::: zone-end
 
 ::: zone pivot="os-macos"
-For more information about manual installation, see [Install .NET on macOS](../install/macos.md#manual-install)
+For more information about manual installation, see [Install .NET on macOS](../install/macos.md#install-net-manually)
 ::: zone-end
 
 ### Configure roll-forward behavior

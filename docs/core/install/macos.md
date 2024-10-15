@@ -19,7 +19,7 @@ ms.custom: linux-related-content
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-In this article, you learn how to install .NET on macOS. .NET is made up of the runtime and the SDK. The runtime is used to run a .NET app and might or might not be included with the app. The SDK is used to create .NET apps and libraries. The .NET runtime is always installed with the SDK.
+This article teaches you about which versions of .NET are supported on macOS, how to install .NET, and what the difference is between the SDK and runtime.
 
 The latest version of .NET is 8.
 
@@ -28,7 +28,7 @@ The latest version of .NET is 8.
 
 ## Supported versions
 
-The following table is a list of currently supported .NET releases on macOS. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of macOS is no longer supported.
+The following table lists the supported .NET releases, and which macOS they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of macOS is no longer supported.
 
 | macOS Version          | .NET     |
 |------------------------|----------|
@@ -40,9 +40,7 @@ The following table is a list of currently supported .NET releases on macOS. The
 
 ## Runtime or SDK
 
-**The SDK** is used to build and publish .NET apps and libraries. Installing the SDK includes both the standard .NET and the ASP.NET Core runtimes. The latest SDK supports building apps for previous versions of .NET. For example, you can use .NET 8.0 SDK to build apps that target .NET 6.0.
-
-**The runtime** is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the correct runtime.
+The **runtime** is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the correct runtime.
 
 There are two runtimes you can install on macOS, and both are included with the SDK.
 
@@ -52,21 +50,35 @@ There are two runtimes you can install on macOS, and both are included with the 
 - _.NET Runtime_\
   This runs standard console-based .NET apps.
 
-## Methods
+The **SDK** is used to build and publish .NET apps and libraries. The latest SDK supports building apps for previous versions of .NET. In normal circumstances, you would only need the latest SDK installed.
 
-Install .NET using one of the following methods:
+Installing the SDK includes both the standard .NET Runtime and the ASP.NET Core Runtime. For example, if you have .NET SDK 8.0 installed, then .NET Runtime 8.0 and ASP.NET Core 8.0 Runtime are both installed. However, any other runtime version wouldn't be installed with the SDK and would require you to install it separately.
 
-- [Install .NET](#install-net)\
-Use the standalone installer to install .NET. This method is the typical way to install .NET on your developer or user machine.
+## Choose how to install .NET
 
-- [Install .NET for Visual Studio Code](#install-net-for-visual-studio-code)\
-This section provides the requirements for using .NET with Visual Studio Code.
+There are different ways to install .NET, and some products might manage their own version of .NET. If you install .NET through software that manages its own version of .NET, it might not be enabled system-wide. Make sure you understand the implications of installing .NET through other software.
 
-- [Install .NET manually](#install-net-manually)\
-Use this installation method when you need to install .NET to a specific folder, and run it apart from other copies of .NET.
+If you're unsure which method you should choose after reviewing the lists in the following sections, you probably want to use the [.NET Installer package](#install-net).
+
+### Developers
+
+- [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
+
+  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. The extension can use an already installed SDK or install one for you.
+
+### Users and Developers
+
+- [.NET Installer](#net-installer)
+
+  Use the standalone installer to install .NET. This method is the typical way to install .NET on your developer or user machine.
 
 - [Install .NET with a script](#install-net-with-a-script)
-This installation method automates the manual install process by using a Bash shells script. Typically for continuous integration scenarios.
+
+  A bash script that can automate the install of the SDK or Runtime. You can choose which version of .NET to install.
+
+- [Install .NET manually](#install-net-manually)
+
+  Use this installation method when you need to install .NET to a specific folder, and run it apart from other copies of .NET.
 
 ## Install .NET
 
@@ -99,7 +111,9 @@ Installer packages are available for macOS, an easy way of installing .NET.
 
     - Section 2 (Runtime)
 
-      This section contains the runtime downloads. Notice that links for the **Installers** column in the **macOS** row are empty! This section is empty because this particular Runtime, **ASP.NET Core**, is only provided in the SDK. Scroll further down to find the standard **.NET Runtime** for download.
+      This section contains the runtime downloads. Notice that links for the **Installers** column in the **macOS** row are empty! This section is empty because the **ASP.NET Core Runtime**, is only provided in the SDK, or through [binary installation](#install-net-manually).
+
+      Scroll further down to find the standard **.NET Runtime** for download.
 
       :::image type="content" source="media/macos/runtime-links.png" alt-text="A screenshot showing just the .NET Runtime download table from the .NET download website. The macOS row is highlighted with a red box.":::
 
@@ -107,7 +121,7 @@ Installer packages are available for macOS, an easy way of installing .NET.
       - If you're running an Intel processor, select **x64**.
 
 01. Once the download completes, open it.
-01. The macOS Installer is shown. Follow the steps in the Installer and use the default options.
+01. Follow the steps in the Installer.
 
     :::image type="content" source="media/macos/installer.png" alt-text="A screenshot showing just the .NET installer running on macOS.":::
 
@@ -162,7 +176,7 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 > These commands are provided a script snippet at the end of this procedure.
 
 01. Open a terminal.
-01. Navigate to a folder where the script will be downloaded, such as _~/Downloads_.
+01. Navigate to a folder where you want to download the script, such as _~/Downloads_.
 01. If you don't have the `wget` command, install it with **Brew**
 
     ```bash
@@ -211,7 +225,9 @@ chdir ~/.dotnet
 
 ## Install .NET for Visual Studio Code
 
-Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. While Visual Studio Code doesn't come with an automated .NET installer like Visual Studio does, adding .NET support is managed through the  [.NET Install Tool](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime) extension. For more information, see [Using .NET in Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet).
+Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system. Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension will install .NET for you if it's not already installed.
+
+For instructions on installing .NET through Visual Studio Code, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started).
 
 ## Notarization
 

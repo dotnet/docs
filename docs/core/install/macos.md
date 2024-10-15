@@ -48,7 +48,7 @@ There are two runtimes you can install on macOS, and both are included with the 
   Runs ASP.NET Core apps. Includes the .NET runtime. **Not available as an installer.**
 
 - _.NET Runtime_\
-  This runs standard console-based .NET apps.
+  This runs normal .NET apps, but not specialized apps, such as apps built on ASP.NET Core.
 
 The **SDK** is used to build and publish .NET apps and libraries. The latest SDK supports building apps for previous versions of .NET. In normal circumstances, you would only need the latest SDK installed.
 

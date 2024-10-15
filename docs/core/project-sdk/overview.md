@@ -43,8 +43,11 @@ For Windows Forms and Windows Presentation Foundation (WPF) projects, you specif
 Starting with .NET Aspire 9, the preceding example could instead use the .NET Aspire SDK.
 
 ```xml
-<Project Sdk="Aspire.AppHost.Sdk">
-  ...
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0-rc.1.24511.1" />
+    <!-- Omitted for brevity... -->
+
 </Project>
 ```
 

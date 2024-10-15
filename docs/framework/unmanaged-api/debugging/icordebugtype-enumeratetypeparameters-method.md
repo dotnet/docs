@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: ICorDebugType::EnumerateTypeParameters Method"
 title: "ICorDebugType::EnumerateTypeParameters Method"
+description: "Learn more about: ICorDebugType::EnumerateTypeParameters Method"
 ms.date: "03/30/2017"
 api_name:
   - "ICorDebugType.EnumerateTypeParameters"
@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "EnumerateTypeParameters method, ICorDebugType interface [.NET Framework debugging]"
   - "ICorDebugType::EnumerateTypeParameters method [.NET Framework debugging]"
-ms.assetid: 1ee1f6e6-1bd7-4ebb-83b8-ff9a08ca03de
 topic_type:
   - "apiref"
 ---
@@ -42,7 +41,7 @@ HRESULT EnumerateTypeParameters (
 
 - ELEMENT_TYPE_FNPTR: The number of type parameters contained in the `ICorDebugTypeEnum` will be one greater than the number of arguments accepted by the function. The first type parameter contained in the `ICorDebugTypeEnum` is the return type for the function, and the subsequent type parameters are the function's parameters.
 
-- ELEMENT_TYPE_ARRAY, ELEMENT_TYPE_SZARRAY, ELEMENT_TYPE_BYREF, or ELEMENT_TYPE_PTR: One type parameter will be returned. For example, if the type is an array type such as `int32[]`,`EnumerateTypeParameters` will return an `ICorDebugTypeEnum` that contains an object representing `int32`.
+- ELEMENT_TYPE_ARRAY, ELEMENT_TYPE_SZARRAY, ELEMENT_TYPE_BYREF, or ELEMENT_TYPE_PTR: One type parameter will be returned. For example, if the type is an array type such as `int32[]`, `EnumerateTypeParameters` will return an `ICorDebugTypeEnum` that contains an object representing `int32`.
 
 ## Requirements
 

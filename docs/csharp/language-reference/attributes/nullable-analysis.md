@@ -1,7 +1,7 @@
 ---
 title: "Attributes interpreted by the compiler: Nullable static analysis"
-ms.date: 05/20/2022
 description: Learn about attributes that are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
+ms.date: 05/20/2022
 ---
 # Attributes for null-state static analysis interpreted by the C# compiler
 
@@ -22,7 +22,7 @@ The preceding example follows the familiar `Try*` pattern in .NET. There are two
 
 - Callers shouldn't pass `null` as the argument for `key`.
 - Callers can pass a variable whose value is `null` as the argument for `message`.
-- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false,` the value of `message` is null.
+- If the `TryGetMessage` method returns `true`, the value of `message` isn't null. If the return value is `false`, the value of `message` is null.
 
 The rule for `key` can be expressed succinctly: `key` should be a non-nullable reference type. The `message` parameter is more complex. It allows a variable that is `null` as the argument, but guarantees, on success, that the `out` argument isn't `null`. For these scenarios, you need a richer vocabulary to describe the expectations. The `NotNullWhen` attribute, described below describes the *null-state* for the argument used for the `message` parameter.
 

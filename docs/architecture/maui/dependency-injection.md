@@ -55,7 +55,7 @@ There are many dependency injection containers available in .NET; the eShop mult
 
 In .NET MAUI, the `MauiProgram` class will call into the `CreateMauiApp` method to create a `MauiAppBuilder` object. The `MauiAppBuilder` object has a `Services` property of type `IServiceCollection`, which provides a place to register our components, such as views, view models, and services for dependency injection. Any components registered with the `Services` property will be provided to the dependency injection container when the `MauiAppBuilder.Build` method is called.
 
-At runtime, the container must know which implementation of the services are being requested in order to instantiate them for the requested objects. In the eShop multi-platform app, the `IAppEnvironmentService`, `IDialogService` , `INavigationService`, and `ISettingsService` interfaces need to be resolved before it can instantiate a `ProfileViewModel` object. This involves the container performing the following actions:
+At runtime, the container must know which implementation of the services are being requested in order to instantiate them for the requested objects. In the eShop multi-platform app, the `IAppEnvironmentService`, `IDialogService`, `INavigationService`, and `ISettingsService` interfaces need to be resolved before it can instantiate a `ProfileViewModel` object. This involves the container performing the following actions:
 
 - Deciding how to instantiate an object that implements the interface. This is known as *registration*.
 - Instantiating the object that implements the required interface and the `ProfileViewModel` object. This is known as *resolution*.

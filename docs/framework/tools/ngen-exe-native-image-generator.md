@@ -18,7 +18,6 @@ helpviewer_keywords:
   - "invalid images"
   - "BypassNGenAttribute"
   - "System.Runtime.BypassNGenAttribute"
-ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
 ---
 # Ngen.exe (Native Image Generator)
 
@@ -436,7 +435,7 @@ When locating assemblies and their dependencies, Ngen.exe uses the same probing 
 > [!NOTE]
 > This is a change from Ngen.exe behavior in the .NET Framework versions 1.0 and 1.1, where the application base is set to the current directory.
 
-An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll,` using the configuration information from `MyApp.exe`.
+An assembly can have a dependency without a reference, for example if it loads a .dll file by using the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method. You can create a native image for such a .dll file by using configuration information for the application assembly, with the `/ExeConfig` option. The following command generates a native image for `MyLib.dll` using the configuration information from `MyApp.exe`.
 
 ```console
 ngen install c:\myfiles\MyLib.dll /ExeConfig:c:\myapps\MyApp.exe
@@ -534,7 +533,7 @@ The following command uninstalls all scenarios for a specific version of `Client
 ngen uninstall "ClientApp, Version=1.0.0.0"
 ```
 
-The following commands uninstall all scenarios for `"ClientApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL",` or just the debug scenario for that assembly:
+The following commands uninstall all scenarios for `"ClientApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3c7ba247adcd2081, processorArchitecture=MSIL"`, or just the debug scenario for that assembly:
 
 ```console
 ngen uninstall "ClientApp, Version=1.0.0.0, Culture=neutral,

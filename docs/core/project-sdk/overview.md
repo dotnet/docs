@@ -2,7 +2,7 @@
 title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
-ms.date: 06/30/2022
+ms.date: 10/15/2024
 ms.topic: conceptual
 no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
@@ -16,6 +16,7 @@ The following SDKs are available:
 
 | ID                         | Description                                             | Repo                                   |
 |----------------------------|---------------------------------------------------------|----------------------------------------|
+| `Aspire.AppHost.Sdk`       | The .NET [Aspire SDK](/dotnet/aspire/sdk)               | <https://github.com/dotnet/aspire>     |
 | `Microsoft.NET.Sdk`        | The .NET SDK                                            | <https://github.com/dotnet/sdk>        |
 | `Microsoft.NET.Sdk.Web`    | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk)    | <https://github.com/dotnet/sdk>        |
 | `Microsoft.NET.Sdk.Razor`  | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk)      | <https://github.com/dotnet/aspnetcore> |
@@ -38,6 +39,19 @@ For Windows Forms and Windows Presentation Foundation (WPF) projects, you specif
   ...
 </Project>
 ```
+
+Starting with .NET Aspire 9, the preceding example could instead use the .NET Aspire SDK.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0-rc.1.24511.1" />
+    <!-- Omitted for brevity... -->
+
+</Project>
+```
+
+For more information, see [.NET Aspire tooling and setup](/dotnet/aspire/fundamentals/setup-tooling) or the .
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 

@@ -800,9 +800,9 @@ The <xref:System.Text.Json?displayProperty=fullName> DOM can't add, remove, or m
 
 ### JsonElement is a union struct
 
-`JsonDocument` exposes the `RootElement` as a property of type <xref:System.Text.Json.JsonElement>, which is a union struct type that encompasses any JSON element. `Newtonsoft.Json` uses dedicated hierarchical types like `JObject`,`JArray`, `JToken`, and so forth. `JsonElement` is what you can search and enumerate over, and you can use `JsonElement` to materialize JSON elements into .NET types.
+`JsonDocument` exposes the `RootElement` as a property of type <xref:System.Text.Json.JsonElement>, which is a union struct type that encompasses any JSON element. `Newtonsoft.Json` uses dedicated hierarchical types like `JObject`, `JArray`, `JToken`, and so forth. `JsonElement` is what you can search and enumerate over, and you can use `JsonElement` to materialize JSON elements into .NET types.
 
-Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and types in the <xref:System.Text.Json.Nodes> namespace that correspond to `JObject`,`JArray`, and `JToken`. For more information, see [Use `JsonNode`](use-dom.md#use-jsonnode).
+Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and types in the <xref:System.Text.Json.Nodes> namespace that correspond to `JObject`, `JArray`, and `JToken`. For more information, see [Use `JsonNode`](use-dom.md#use-jsonnode).
 
 ### How to search a JsonDocument and JsonElement for sub-elements
 

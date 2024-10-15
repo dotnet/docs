@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Inheritance Basics (Visual Basic)"
 title: "Inheritance Basics"
+description: "Learn more about: Inheritance Basics (Visual Basic)"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "derived classes [Visual Basic], inheritance"
@@ -20,7 +20,6 @@ helpviewer_keywords:
   - "base classes [Visual Basic], inheritance"
   - "abstract classes [Visual Basic], inheritance"
   - "overriding, Overrides keyword"
-ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
 ---
 # Inheritance Basics (Visual Basic)
 
@@ -58,7 +57,7 @@ Suppose you want to define classes to handle payroll. You could define a generic
 
 The `BonusPayroll` class can inherit, and override, the `PayEmployee` method defined in the base `Payroll` class.
 
-The following example defines a base class, `Payroll,` and a derived class, `BonusPayroll`, which overrides an inherited method, `PayEmployee`. A procedure, `RunPayroll`, creates and then passes a `Payroll` object and a `BonusPayroll` object to a function, `Pay`, that executes the `PayEmployee` method of both objects.
+The following example defines a base class, `Payroll`, and a derived class, `BonusPayroll`, which overrides an inherited method, `PayEmployee`. A procedure, `RunPayroll`, creates and then passes a `Payroll` object and a `BonusPayroll` object to a function, `Pay`, that executes the `PayEmployee` method of both objects.
 
 [!code-vb[VbVbalrOOP#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#28)]
 

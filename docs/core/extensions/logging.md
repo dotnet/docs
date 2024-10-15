@@ -563,6 +563,7 @@ The following providers support scopes:
 
 - `Console`
 - [AzureAppServicesFile and AzureAppServicesBlob](xref:Microsoft.Extensions.Logging.AzureAppServices.BatchingLoggerOptions.IncludeScopes)
+- [ApplicationInsightsLoggerProvider](/azure/azure-monitor/app/ilogger?tabs=dotnet6#logging-scopes)
 
 Use a scope by wrapping logger calls in a `using` block:
 

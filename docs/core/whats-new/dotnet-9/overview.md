@@ -82,6 +82,11 @@ C# 13 ships with the .NET 9 SDK and includes the following new features:
 - New escape sequence - `\e`
 - Method group natural type improvements
 - Implicit indexer access in object initializers
+- Enable `ref` locals and `unsafe` contexts in iterators and async methods
+- Enable `ref struct` types to implement interfaces
+- Allow ref struct types as arguments for type parameters in generics.
+- Partial properties and indexers are now allowed in `partial` types.
+- Overload resolution priority allows library authors to designate one overload as better than others.
 
 For more information, see [What's new in C# 13](../../../csharp/whats-new/csharp-13.md).
 

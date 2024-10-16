@@ -51,7 +51,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 
 - [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
 
-  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. This method uses the SDKs you've previously installed.
+  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. The extension can use an SDK that's already installed or install one for you.
 
 ### Users and Developers
 
@@ -182,17 +182,9 @@ For more information about, see [.NET SDK, MSBuild, and Visual Studio versioning
 
 ## Install with Visual Studio Code
 
-Visual Studio Code uses the versions of .NET already installed on your system. Install .NET using either [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget). Visual Studio installs its own copy of .NET that can't be used by Visual Studio Code.
+Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system. Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension will install .NET for you if it's not already installed.
 
-.NET apps are created in Visual Studio Code with the C# Dev Kit extension.
-
-1. First, install the .NET SDK by following the steps in one of the other sections, except for the section on Visual Studio.
-
-   - [.NET Installer](#net-installer)
-   - [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
-
-1. Next, install Visual Studio Code, if you haven't already. For more information, see [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows).
-1. Lastly, install the C# Dev Kit extension. For more information, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started#_install).
+For instructions on installing .NET through Visual Studio Code, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started).
 
 ## .NET Installer
 

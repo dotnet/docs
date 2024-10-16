@@ -16,7 +16,7 @@ ms.topic: how-to
 
 # How to enable case-insensitive property name matching with System.Text.Json
 
-In this article, you will learn how to enable case-insensitive property name matching with the `System.Text.Json` namespace.
+In this article, you learn how to enable case-insensitive property name matching with the `System.Text.Json` namespace.
 
 ## Case-insensitive property matching
 

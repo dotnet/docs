@@ -25,6 +25,12 @@ configuration:
                     permission: admin
                 - activitySenderHasPermission:
                     permission: write
+                - isActivitySender:
+                    user: dependabot
+                - isActivitySender:
+                    user: dependabot[bot]
+                - isActivitySender:
+                    user: dotnet-policy-service[bot]
         then:
           - addReply:
               reply: >-

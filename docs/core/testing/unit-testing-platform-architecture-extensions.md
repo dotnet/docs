@@ -59,7 +59,7 @@ public interface IExtension
     string Uid { get; }
     string Version { get; }
     string DisplayName { get; }
-    string Description { get;
+    string Description { get; }
     Task<bool> IsEnabledAsync();
 }
 ```

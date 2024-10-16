@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "control patterns, Scroll"
   - "Scroll control pattern"
 ---
-# Implement the UI automation scroll control pattern
+# Implement the UI Automation scroll control pattern
 
 > [!NOTE]
 > This documentation is intended for .NET Framework developers who want to use the managed UI Automation classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about UI Automation, see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).

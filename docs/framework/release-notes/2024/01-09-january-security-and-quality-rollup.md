@@ -40,7 +40,7 @@ There are no new Quality and Reliability Improvements in this update.
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -88,7 +88,7 @@ The following table is for earlier Windows and Windows Server versions for Secur
 | .NET Framework 3.5 | [5033897](https://support.microsoft.com/kb/5033897) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5033905](https://support.microsoft.com/kb/5033905) |
 | .NET Framework 4.8 | [5033913](https://support.microsoft.com/kb/5033913) |
-| **Windows Server 2008 R2** | **[5034277](https://support.microsoft.com/kb/5033977)** |
+| **Windows Server 2008 R2** | **5034277** |
 | .NET Framework 3.5.1 | [5033899](https://support.microsoft.com/kb/5033899) |
 | .NET Framework 4.6.2, 4.7, 4.7.1, 4.7.2 | [5033907](https://support.microsoft.com/kb/5033907) |
 | .NET Framework 4.8 |[5033916](https://support.microsoft.com/kb/5033916) |

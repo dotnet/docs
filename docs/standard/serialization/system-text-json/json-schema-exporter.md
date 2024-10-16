@@ -8,7 +8,7 @@ dev_langs:
 
 # JSON schema exporter
 
-The new <xref:System.Text.Json.Schema.JsonSchemaExporter> class lets you extract [JSON schema](https://json-schema.org/) documents from .NET types using either an <xref:System.Text.Json.JsonSerializerOptions> or <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> instance. The resultant schema provides a specification of the JSON serialization contract for the type.
+The new <xref:System.Text.Json.Schema.JsonSchemaExporter> class lets you extract [JSON schema](https://json-schema.org/) documents from .NET types using either a <xref:System.Text.Json.JsonSerializerOptions> or <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfo> instance. The resultant schema provides a specification of the JSON serialization contract for the type.
 
 The following code snippet shows an example.
 

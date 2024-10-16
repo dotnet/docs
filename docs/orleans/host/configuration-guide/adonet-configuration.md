@@ -30,10 +30,12 @@ The following sections contain links to SQL scripts to configure your database a
 
 | Database | Script | NuGet package| ADO.NET invariant |
 |--|--|--|--|
-| SQL Server | [SQLServer-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
+| SQL Server* | [SQLServer-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql) | [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/) | `System.Data.SqlClient` |
 | MySQL / MariaDB | [MySQL-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/MySQL-Persistence.sql) | [MySql.Data](https://www.nuget.org/packages/MySql.Data/) | `MySql.Data.MySqlClient` |
 | PostgreSQL | [PostgreSQL-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/PostgreSQL-Persistence.sql) | [Npgsql](https://www.nuget.org/packages/Npgsql/) | `Npgsql` |
 | Oracle | [Oracle-Persistence.sql](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Orleans.Persistence.AdoNet/Oracle-Persistence.sql) | [ODP.net](https://www.nuget.org/packages/Oracle.ManagedDataAccess/) | `Oracle.DataAccess.Client` |
+
+\* If you're using Orleans v3.x use this script template: <https://github.com/dotnet/orleans/blob/3.x/src/AdoNet/Orleans.Persistence.AdoNet/SQLServer-Persistence.sql>
 
 ## Reminders
 

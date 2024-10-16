@@ -18,11 +18,7 @@ configuration:
             branch: main
         - or:
             - isActivitySender:
-                user: azure-sdk
-            - isActivitySender:
-                user: dependabot
-            - isActivitySender:
-                user: dependabot[bot]
+                user: dotnet-policy-service[bot]
       then:
         - enableAutoMerge:
             mergeMethod: Squash

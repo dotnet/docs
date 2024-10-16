@@ -104,7 +104,7 @@ Use these guidelines to determine which TFM to use in your app:
 
 You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net6.0-ios15.0`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
 
-When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform value for iOS in .NET 6 is `15.0`, which means that `net6.0-ios` is shorthand for the canonical `net6.0-ios15.0` TFM. The implied platform version for a newer base TFM may be higher, for example, a future `net8.0-ios` TFM could map to `net8.0-ios16.0`. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
+When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform value for Android in .NET 6 is `31.0`, which means that `net6.0-android` is shorthand for the canonical `net6.0-android31.0` TFM. The implied platform version for a newer base TFM may be higher, for example, a future `net8.0-android` TFM could map to `net8.0-android34.0`. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
 
 The following table shows the default target platform values (TPV) for each .NET release.
 
@@ -131,7 +131,18 @@ The following table shows the default target platform values (TPV) for each .NET
 | .NET 7       | Windows      | 7.0         |
 | .NET 8       | Windows      | 7.0         |
 
-The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the iOS platform added iOS 15.1 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-ios15.1`.
+> [!NOTE]
+> On Apple platforms (iOS, macOS, tvOS and Mac Catalyst) and on .NET 8 or earlier,
+> the default TPV is the latest supported version in the currently installed workload.
+> For instance, this means that updating the iOS workload in .NET 8 may result in a higher default
+> TPV, if we've added support for a new version of iOS in that workload. In the table above,
+> the default TPV is the one in the initial release for the .NET version in question.
+>
+> Starting in .NET 9, we've changed this special behavior to only apply to executable projects,
+> while the default TPV for library projects will stay the same for the entirety of
+> a major .NET release, like all other platforms.
+
+The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 32 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-android32.0`.
 
 #### Precedence
 

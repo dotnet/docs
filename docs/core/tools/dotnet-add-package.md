@@ -112,6 +112,7 @@ Scenario 4: `<PackageReference>` does not exist in the project file, `<PackageVe
   ```xml
   <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
   ```
+
   The `<PackageReference>` element is added to the project file.
 
   ```xml

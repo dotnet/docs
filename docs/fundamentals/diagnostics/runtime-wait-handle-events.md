@@ -14,6 +14,7 @@ These runtime events capture information about wait handles. They can be useful 
 ## WaitHandleWaitStart event
 
 This event is emitted at the start of a wait operation on a wait handle. Here is a non-exhaustive list of managed method that could emit this event:
+
 - `Monitor.Wait`
 - `Monitor.Enter` or the C# lock keyword
 - `ManualResetEvent.WaitOne`

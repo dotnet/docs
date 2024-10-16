@@ -108,28 +108,11 @@ When an OS-specific TFM doesn't specify the platform version explicitly, it has 
 
 The following table shows the default target platform values (TPV) for each .NET release.
 
-| .NET version | Platform     | Default TPV |
-|--------------|--------------|-------------|
-| .NET 6       | Android      | 31.0        |
-| .NET 7       | Android      | 33.0        |
-| .NET 8       | Android      | 34.0        |
-| .NET 6       | iOS          | 15.0        |
-| .NET 7       | iOS          | 16.1        |
-| .NET 8       | iOS          | 17.2        |
-| .NET 6       | Mac Catalyst | 15.0        |
-| .NET 7       | Mac Catalyst | 16.1        |
-| .NET 8       | Mac Catalyst | 17.2        |
-| .NET 6       | macOS        | 12.0        |
-| .NET 7       | macOS        | 13.0        |
-| .NET 8       | macOS        | 14.2        |
-| .NET 6       | tvOS         | 15.1        |
-| .NET 7       | tvOS         | 16.1        |
-| .NET 8       | tvOS         | 17.1        |
-| .NET 7       | Tizen        | 7.0         |
-| .NET 8       | Tizen        | 8.0         |
-| .NET 6       | Windows      | 7.0         |
-| .NET 7       | Windows      | 7.0         |
-| .NET 8       | Windows      | 7.0         |
+| .NET version | Android | iOS  | Mac Catalyst | macOS | tvOS | Tizen | Windows |
+|--------------|--------:|-----:|-------------:|------:|-----:|------:|--------:|
+| .NET 6       |    31.0 | 15.0 |         15.0 | 12.0  | 15.1 |     - |     7.0 |
+| .NET 7       |    33.0 | 16.1 |         16.1 | 13.0  | 16.1 |   7.0 |     7.0 |
+| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |   8.0 |     7.0 |
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the iOS platform added iOS 15.1 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-ios15.1`.
 

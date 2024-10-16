@@ -16,7 +16,7 @@ ms.topic: how-to
 
 # How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
 
-This article shows how to handle overflow JSON with the [`System.Text.Json`](xref:System.Text.Json) namespace. It also shows how to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>, as an alternative for other scenarios where the target type might not perfectly match all of the JSON being deserialized.
+This article shows how to handle overflow JSON with the <xref:System.Text.Json> namespace. It also shows how to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>, as an alternative for other scenarios where the target type might not perfectly match all of the JSON being deserialized.
 
 ## Handle overflow JSON
 
@@ -51,12 +51,12 @@ If you deserialize the JSON shown into the type shown, the `DatesAvailable` and 
 
 The following table shows the result of deserializing the JSON shown earlier into this sample type. The extra data becomes key-value pairs of the `ExtensionData` property:
 
-| Property | Value | Notes |
-|--|--|--|
-| `Date` | `"8/1/2019 12:00:00 AM -07:00"` |  |
+| Property  | Value                           | Notes |
+|-----------|---------------------------------|-------|
+| `Date`    | `"8/1/2019 12:00:00 AM -07:00"` |       |
 | `TemperatureCelsius` | `0` | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
-| `Summary` | `"Hot"` |  |
-| `ExtensionData` | `"temperatureCelsius": 25,`<br>`"DatesAvailable": ["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],`<br>`"SummaryWords": ["Cool","Windy","Humid"]`| Since the case didn't match, `temperatureCelsius` is an extra and becomes a key-value pair in the dictionary. <br>Each extra array from the JSON becomes a key-value pair, with an array as the value object.|
+| `Summary` | `"Hot"`                         |       |
+| `ExtensionData` | `"temperatureCelsius": 25,`<br>`"DatesAvailable": ["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],`<br>`"SummaryWords": ["Cool","Windy","Humid"]` | Since the case didn't match, `temperatureCelsius` is an extra and becomes a key-value pair in the dictionary. <br>Each extra array from the JSON becomes a key-value pair, with an array as the value object. |
 
 When the target object is serialized, the extension data key value pairs become JSON properties just as they were in the incoming JSON:
 

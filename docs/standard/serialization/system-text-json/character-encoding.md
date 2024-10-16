@@ -28,7 +28,7 @@ By default, the serializer escapes all non-ASCII characters. That is, it replace
 
 ## Serialize language character sets
 
-To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
+To serialize the character sets of one or more languages without escaping, specify [Unicode ranges](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
 :::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="Usings":::
@@ -86,7 +86,7 @@ Examples of encoder-specific blocked code points include `'<'` and `'&'` for the
 
 ## Serialize all characters
 
-To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, as shown in the following example:
+To minimize escaping, you can use <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, as shown in the following example:
 
 :::code language="csharp" source="snippets/how-to/csharp/SerializeCustomEncoding.cs" id="Usings":::
 :::code language="vb" source="snippets/how-to/vb/SerializeCustomEncoding.vb" id="Usings":::

@@ -110,7 +110,7 @@ In the same fashion, C# 13 allows `unsafe` contexts in iterator methods. However
 
 Before C# 13, `ref struct` types couldn't be declared as the type argument for a generic type or method. Now, generic type declarations can add an anti-constraint, `allows ref struct`. This anti-constraint declares that the type argument supplied for that type parameter can be a `ref struct` type. The compiler enforces ref safety rules on all instances of that type parameter.
 
-For example, you may declare an interface like the following code:
+For example, you may declare a generic type like the following code:
 
 ```csharp
 public class C<T> where T : allows ref struct

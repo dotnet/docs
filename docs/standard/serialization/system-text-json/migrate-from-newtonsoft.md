@@ -782,8 +782,8 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 Starting in .NET 9, you can customize the indentation character and size for <xref:System.Text.Json.Utf8JsonWriter> using options exposed by the <xref:System.Text.Json.JsonWriterOptions> struct:
 
-* `JsonWriterOptions.IndentCharacter` <!-- <xref:System.Text.Json.JsonWriterOptions.IndentCharacter> -->
-* `JsonWriterOptions.IndentSize` <!-- <xref:System.Text.Json.JsonWriterOptions.IndentSize> -->
+* <xref:System.Text.Json.JsonWriterOptions.IndentCharacter?displayProperty=nameWithType>
+* <xref:System.Text.Json.JsonWriterOptions.IndentSize?displayProperty=nameWithType>
 
 ::: zone-end
 

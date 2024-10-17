@@ -65,10 +65,10 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 | net5.0-windows     | netcoreapp1..3.1 (plus everything else inherited from `net5.0`)                                                         |
 | net6.0             | (Subsequent version of `net5.0`)                                                                                        |
 | net6.0-android     | `xamarin.android` (plus everything else inherited from `net6.0`)                                                            |
-| net6.0-ios         | `xamarin.ios` (plus everything else inherited from `net6.0`)                                                                |
-| net6.0-maccatalyst | `xamarin.ios` (plus everything else inherited from `net6.0`)                                                                |
-| net6.0-macos       | `xamarin.mac` (plus everything else inherited from `net6.0`)                                                                |
-| net6.0-tvos        | `xamarin.tvos` (plus everything else inherited from `net6.0`)                                                               |
+| net6.0-ios         | Everything inherited from `net6.0`                                                                                      |
+| net6.0-maccatalyst | Everything inherited from `net6.0`                                                                                      |
+| net6.0-macos       | Everything inherited from `net6.0`                                                                                      |
+| net6.0-tvos        | Everything inherited from `net6.0`                                                                                      |
 | net6.0-windows     | (Subsequent version of `net5.0-windows`)                                                                                |
 | net7.0             | (Subsequent version of `net6.0`)                                                                                        |
 | net7.0-android     | (Subsequent version of `net6.0-android`)                                                                                |

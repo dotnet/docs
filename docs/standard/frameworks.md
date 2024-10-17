@@ -132,14 +132,14 @@ The following table shows the default target platform values (TPV) for each .NET
 | .NET 8       | Windows      | 7.0         |
 
 > [!NOTE]
-> On Apple platforms (iOS, macOS, tvOS and Mac Catalyst) and on .NET 8 or earlier,
+> On Apple platforms (iOS, macOS, tvOS, and Mac Catalyst) in .NET 8 and earlier,
 > the default TPV is the latest supported version in the currently installed workload.
-> For instance, this means that updating the iOS workload in .NET 8 may result in a higher default
-> TPV, if we've added support for a new version of iOS in that workload. In the table above,
-> the default TPV is the one in the initial release for the .NET version in question.
+> That means that updating the iOS workload in .NET 8, for example, might result in a higher default
+> TPV, if support for a new version of iOS has been added in that workload. In the preceding table,
+> the default TPV is the one in the initial release for the stated .NET version.
 >
-> Starting in .NET 9, we've changed this special behavior to only apply to executable projects,
-> while the default TPV for library projects will stay the same for the entirety of
+> Starting in .NET 9, this special behavior only applies to executable projects.
+> The default TPV for library projects now stays the same for the entirety of
 > a major .NET release, like all other platforms.
 
 The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 32 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-android32.0`.

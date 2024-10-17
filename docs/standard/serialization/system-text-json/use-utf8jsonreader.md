@@ -104,15 +104,15 @@ while (reader.Read())
 
 In .NET 9 and later versions, you can read multiple, white space&ndash;separated JSON documents from a single buffer or stream. By default, `Utf8JsonReader` throws an exception if it detects any non-white-space characters that trail the first top-level document. However, you can configure that behavior using the <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues?displayProperty=nameWithType> flag.
 
-:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/ReadMultipleDocs.cs" id="1":::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/ReadMultipleDocs.cs" id="Snippet1":::
 
 When <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues> is set to `true`, you can also read JSON from payloads that contain trailing data that's invalid JSON.
 
-:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/ReadMultipleDocs.cs" id="2":::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/ReadMultipleDocs.cs" id="Snippet2":::
 
 To stream multiple top-level values, use the <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable``1(System.IO.Stream,System.Boolean,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)> or <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable``1(System.IO.Stream,System.Text.Json.Serialization.Metadata.JsonTypeInfo{``0},System.Boolean,System.Threading.CancellationToken)> overload. By default, `DeserializeAsyncEnumerable` attempts to stream elements that are contained in a single, top-level JSON array. Pass `true` for the `topLevelValues` parameter to stream multiple top-level values.
 
-:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/ReadMultipleDocs.cs" id="3":::
+:::code language="csharp" source="snippets/use-dom-utf8jsonreader-utf8jsonwriter/csharp/ReadMultipleDocs.cs" id="Snippet3":::
 
 ## Property name lookups
 

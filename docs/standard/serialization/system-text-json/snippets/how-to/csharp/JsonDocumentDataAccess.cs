@@ -77,10 +77,12 @@ namespace SystemTextJsonSamples
 
         private static void Compare()
         {
+            // <DeepEquals>
             JsonElement left = JsonDocument.Parse("10e-3").RootElement;
             JsonElement right = JsonDocument.Parse("0.01").RootElement;
             bool equal = JsonElement.DeepEquals(left, right);
             Console.WriteLine(equal); // True.
+            // </DeepEquals>
         }
     }
 }

@@ -29,7 +29,7 @@ Namespace ImmutableTypes
             Console.WriteLine($"forecast.TemperatureC: {forecast1.TemperatureC}")
             Console.WriteLine($"forecast.Summary: {forecast1.Summary}")
 
-            Dim roundTrippedJson As String = JsonSerializer.Serialize(forecast1, options)
+            Dim roundTrippedJson As String = JsonSerializer.Serialize(forecast1, JsonSerializerOptions.Web)
 
             Console.WriteLine($"Output JSON: {roundTrippedJson}")
         End Sub

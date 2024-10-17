@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-# How to handle overflow JSON or use JsonElement or JsonNode in System.Text.Json
+# How to handle overflow JSON or use JsonElement or JsonNode
 
 This article shows how to handle overflow JSON with the <xref:System.Text.Json> namespace. It also shows how to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>, as an alternative for other scenarios where the target type might not perfectly match all of the JSON being deserialized.
 
@@ -86,7 +86,7 @@ The following example shows a round trip from JSON to a deserialized object and 
 
 ## Deserialize into JsonElement or JsonNode
 
-If you just want to be flexible about what JSON is acceptable for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>. Any valid JSON property can be deserialized into `JsonElement` or `JsonNode`. Choose `JsonElement` to create an immutable object or `JsonNode` to create a mutable object.
+If you just want to be flexible about what JSON is acceptable for a particular property, an alternative is to deserialize into <xref:System.Text.Json.JsonElement> or <xref:System.Text.Json.Nodes.JsonNode>. Any valid JSON property can be deserialized into `JsonElement` or `JsonNode`. Choose `JsonElement` to create an *immutable* object or `JsonNode` to create a *mutable* object.
 
 The following example shows a round trip from JSON and back to JSON for a class that includes properties of type `JsonElement` and `JsonNode`.
 

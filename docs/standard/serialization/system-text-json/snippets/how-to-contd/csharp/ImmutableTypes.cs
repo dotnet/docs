@@ -8,7 +8,7 @@ namespace ImmutableTypes
         public DateTime Date { get; }
         public int TemperatureC { get; }
         public string Summary { get; }
- 
+
         [JsonConstructor]
         public Forecast(DateTime date, int temperatureC, string summary) =>
             (Date, TemperatureC, Summary) = (date, temperatureC, summary);
@@ -27,7 +27,7 @@ namespace ImmutableTypes
                 """;
             Console.WriteLine($"Input JSON: {json}");
 
-            var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
+            var options = JsonSerializerOptions.Web;
 
             Forecast forecast = JsonSerializer.Deserialize<Forecast>(json, options);
 

@@ -251,7 +251,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--tenant-id <ID>`**
 
-  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `aaaabbbb-0000-cccc-1111-dddd2222eeee`.
 
 - **`--callback-path <PATH>`**
 
@@ -418,7 +418,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--tenant-id <ID>`**
 
-  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `aaaabbbb-0000-cccc-1111-dddd2222eeee`.
 
 - **`-r|--org-read-access`**
 
@@ -555,7 +555,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--tenant-id <ID>`**
 
-  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `aaaabbbb-0000-cccc-1111-dddd2222eeee`.
 
 - **`--callback-path <PATH>`**
 
@@ -764,7 +764,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
 - **`--tenant-id <ID>`**
 
-  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `aaaabbbb-0000-cccc-1111-dddd2222eeee`.
 
 - **`-r|--org-read-access`**
 

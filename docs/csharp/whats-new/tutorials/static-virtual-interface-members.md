@@ -66,6 +66,26 @@ AAAAAAAAAA
 
 This small example demonstrates the motivation for this feature. You can use natural syntax for operators, constant values, and other static operations. You can explore these techniques when you create multiple types that rely on static members, including overloaded operators. Define the interfaces that match your types' capabilities and then declare those types' support for the new interface.
 
+## Static virtual interface methods
+
+Similar can be achieved using the static virtual methods of an interface. This is done with the syntax of `static` and `virtual` modifiers added to any member that should be implemented in the type implementing that interface. The following example defines the `IGetDuplicated<T>` interface, providing any type with a constraint that a type will implement the `operator ++`:
+
+:::code language="csharp" source="./snippets/staticinterfaces/GetDuplicated.cs":::
+
+Because virtual methods aren't abstract, they must declare their body. However, for now it's throwing the `NotImplementedException` exception by default, to highlight the lack of implementation.
+
+The next snippet creates a structure that implements the `IGetDuplicated<T>` interface. This `Duplicate` structure uses the `++` operator implementation to duplicate the initial number given when creating the structure:
+
+:::code language="csharp" source="./snippets/staticinterfaces/Duplicate.cs":::
+
+You can use this `Duplicate` type by calling the `operator ++`:
+
+:::code language="csharp" source="./snippets/staticinterfaces/Program.cs" id="TestDuplication":::
+
+which will print the result of `4`.
+
+Note that without having the `operator ++` implemented, calling `num++` would still not compile, leading to [CS0023](../../misc/cs0023.md). Reason for that is that even if we have the default implementation in the static virtual method of an interface, this is still only an interface and the type implementing that interface has no such operator implemented.
+
 ## Generic math
 
 The motivating scenario for allowing static methods, including operators, in interfaces is to support [generic math](../../../standard/generics/math.md) algorithms. The .NET 7 base class library contains interface definitions for many arithmetic operators, and derived interfaces that combine many arithmetic operators in an `INumber<T>` interface. Let's apply those types to build a `Point<T>` record that can use any numeric type for `T`. The point can be moved by some `XOffset` and `YOffset` using the `+` operator.

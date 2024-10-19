@@ -51,7 +51,7 @@ Starting with .NET Aspire 9, the preceding example could instead use the .NET As
 </Project>
 ```
 
-For more information, see [.NET Aspire tooling and setup](/dotnet/aspire/fundamentals/setup-tooling) or the .
+For more information, see [.NET Aspire tooling and setup](/dotnet/aspire/fundamentals/setup-tooling).
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 

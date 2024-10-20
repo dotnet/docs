@@ -544,6 +544,8 @@ The <xref:System.Json.JsonObject> type now exposes ordered dictionary&ndash;like
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="PropertyOrder":::
 
+For more information, see [Manipulate property order](../../../standard/serialization/system-text-json/use-dom.md#manipulate-property-order).
+
 ### Customize enum member names
 
 The new <xref:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute?displayProperty=nameWithType> attribute can be used to customize the names of individual enum members for types that are serialized as strings:

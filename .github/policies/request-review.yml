@@ -19,6 +19,10 @@ configuration:
         then:
           - requestReview:
               reviewer: diberry
+          - mentionUsers:
+              mentionees:
+                - diberry
+              replyTemplate: "Mentioning as a test: ${mentionees}"
               
       - description: Request review from gewarren and dotnet/docs for ML files.
         if:
@@ -32,3 +36,7 @@ configuration:
           - requestReview:
               reviewer: gewarren
               teamReviewer: dotnet/docs
+          - mentionUsers:
+              mentionees:
+                - gewarren
+              replyTemplate: "Mentioning as a test: ${mentionees}"

@@ -25,7 +25,6 @@ The following table provides an index to the `SYSLIB5XXX` experimental APIs in .
 | SYSLIB5004 | .NET 9 | <xref:System.Runtime.Intrinsics.X86.X86Base.DivRem(System.UInt32,System.Int32,System.Int32)> is experimental since performance is not as optimized as `T.DivRem` |
 | SYSLIB5005 | .NET 9 | <xref:System.Formats.Nrbf> is experimental |
 
-
 ## Suppress warnings
 
 Using an experimental feature offers the opportunity to submit feedback on the API shape and functionality before the feature is marked as stable and fully supported, but using the feature will produce a warning from the compiler. Suppressing the warning acknowledges that the API shape or functionality might change in the next major release. The warning can be suppressed through a `#pragma` directive in code or a `<NoWarn>` project setting.
@@ -62,4 +61,4 @@ To suppress the warnings in a project file:
 
 ## See also
 
-- [Preview APIs](../../../fundamentals/apicompat/preview-apis.md)
+- [Preview APIs](../apicompat/preview-apis.md)

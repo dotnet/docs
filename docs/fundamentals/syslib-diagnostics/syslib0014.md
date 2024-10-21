@@ -14,8 +14,12 @@ The following APIs are marked as obsolete, starting in .NET 6. Using them in cod
 - <xref:System.Net.WebRequest.CreateHttp%2A?displayProperty=fullName>
 - <xref:System.Net.WebRequest.CreateDefault(System.Uri)?displayProperty=fullName>
 - <xref:System.Net.HttpWebRequest.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)>
-- <xref:System.Net.ServicePointManager.FindServicePoint%2A?displayProperty=fullName>
+- <xref:System.Net.ServicePointManager>
 - <xref:System.Net.WebClient.%23ctor>
+
+To reduce the number of analyzer warnings, the <xref:System.Net.ServicePoint> class is not marked as obsolete, but all ways of obtaining its instances are.
+
+Settings on <xref:System.Net.ServicePointManager> and <xref:System.Net.ServicePoint> no longer affect <xref:System.Net.Security.SslStream> or <xref:System.Net.Http.HttpClient>.
 
 ## Workarounds
 

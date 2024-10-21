@@ -175,7 +175,7 @@ In .NET 9, the JIT compiler *automatically* transforms the first indexing patter
 
 #### Loop counter variable direction
 
-The 64-bit compiler now recognizes when the direction of a loop's counter variable can be flipped without affecting the program's behavior, and then performs the transformation.
+The 64-bit compiler now recognizes when a loop's counter variable is used only to control the number of iterations, and transforms the loop to count down instead of up.
 
 In the idiomatic `for (int i = ...)` pattern, the counter variable typically increases. Consider the following example:
 

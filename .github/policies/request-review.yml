@@ -17,5 +17,5 @@ configuration:
               pattern: docs/fundamentals/code-analysis/*
               matchAny: true
         then:
-          - requestReviewer:
+          - requestReview:
               reviewer: gewarren

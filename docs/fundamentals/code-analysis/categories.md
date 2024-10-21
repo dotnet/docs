@@ -5,7 +5,7 @@ ms.date: 10/04/2021
 helpviewer_keywords:
   - code analysis, categories
 ---
-# Rule categories
+# Rule categoriez
 
 Each code analysis rule belongs to a category of rules. For example, design rules support adherence to the .NET design guidelines, and security rules help prevent security flaws. You can [configure the severity level](configuration-options.md#scope) for an entire category of rules. You can also [configure additional options](code-quality-rule-options.md#category-of-rules) on a per-category basis.
 

@@ -4,7 +4,7 @@ description: Learn how to specify additional configuration options for code qual
 ms.date: 05/19/2023
 no-loc: ["EditorConfig"]
 ---
-# Code quality rule configuration options
+# Code quality rule configuration options - test
 
 The *code quality* rules have additional configuration options, besides just [configuring their severity](configuration-options.md#severity-level). For example, each code quality analyzer can be configured to only apply to specific parts of your codebase. You specify these options by adding key-value pairs to the same [EditorConfig](https://editorconfig.org) file where you specify rule severities and general editor preferences.
 

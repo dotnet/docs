@@ -8,7 +8,7 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-      - description: Assign PR reviewers for certain files
+      - description: Request review from gewarren for code analysis files.
         if:
           - payloadType: Pull_Request
           - isAction:

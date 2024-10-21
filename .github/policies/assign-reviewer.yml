@@ -1,0 +1,21 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+      - description: Assign PR reviewers for certain files
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - filesMatchPattern:
+              pattern: docs/fundamentals/code-analysis/*
+              matchAny: true
+        then:
+          - requestReviewer:
+              reviewer: gewarren

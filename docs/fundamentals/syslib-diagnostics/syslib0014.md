@@ -25,6 +25,8 @@ Settings on <xref:System.Net.ServicePointManager> and <xref:System.Net.ServicePo
 
 Use <xref:System.Net.Http.HttpClient> instead.
 
+See the [HttpWebRequest to HttpClient migration guide](https://learn.microsoft.com/dotnet/fundamentals/networking/http/httpclient-migrate-from-httpwebrequest) for more info.
+
 ## Suppress a warning
 
 If you must use the obsolete APIs, you can suppress the warning in code or in your project file.

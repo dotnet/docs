@@ -360,6 +360,10 @@ Notice that the enum doesn't have the <xref:System.Text.Json.Serialization.JsonC
 
 :::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithPrecipEnumNoConverter":::
 
+### Custom enum member names
+
+Starting in .NET 9, you can customize enum member names using the [JsonStringEnumMemberName attribute](xref:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute). For more information, see [Custom enum member names](customize-properties.md#custom-enum-member-names).
+
 :::zone-end
 
 ## See also

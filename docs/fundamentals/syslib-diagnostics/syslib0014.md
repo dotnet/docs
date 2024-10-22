@@ -1,7 +1,7 @@
 ---
 title: SYSLIB0014 warning
 description: Learn about the System.Net obsoletions that generate compile-time warning SYSLIB0014.
-ms.date: 04/24/2021
+ms.date: 10/21/2024
 f1_keywords:
   - syslib0014
 ---
@@ -25,7 +25,7 @@ Settings on <xref:System.Net.ServicePointManager> and <xref:System.Net.ServicePo
 
 Use <xref:System.Net.Http.HttpClient> instead.
 
-See the [HttpWebRequest to HttpClient migration guide](https://learn.microsoft.com/dotnet/fundamentals/networking/http/httpclient-migrate-from-httpwebrequest) for more info.
+For more information, see [HttpWebRequest to HttpClient migration guide](../networking/http/httpclient-migrate-from-httpwebrequest.md).
 
 ## Suppress a warning
 

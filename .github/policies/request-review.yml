@@ -17,12 +17,11 @@ configuration:
               pattern: docs/fundamentals/code-analysis/*
               matchAny: true
         then:
-          - requestReview:
-              reviewer: diberry
           - mentionUsers:
               mentionees:
                 - diberry
               replyTemplate: "Mentioning as a test: ${mentionees}"
+              assignMentionees: true
               
       - description: Request review from gewarren and dotnet/docs for ML files.
         if:
@@ -33,9 +32,6 @@ configuration:
               pattern: docs/machine-learning/*
               matchAny: true
         then:
-          - requestReview:
-              reviewer: gewarren
-              teamReviewer: dotnet/docs
           - mentionUsers:
               mentionees:
                 - gewarren

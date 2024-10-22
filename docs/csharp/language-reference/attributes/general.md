@@ -83,7 +83,7 @@ The `AttributeUsage` attribute determines how a custom attribute class can be us
   - Field
   - Event
   - Method
-  - Param
+  - Parameter
   - Property
   - Return
   - Type

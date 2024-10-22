@@ -27,7 +27,7 @@ Access modifiers are keywords used to specify the declared accessibility of a me
 
  This section also introduces the following concepts:
 
-- [Accessibility Levels](./accessibility-levels.md): Using the four access modifiers to declare six levels of accessibility.
+- [Accessibility Levels](./accessibility-levels.md): Using the access modifiers to declare levels of accessibility.
 - [Accessibility Domain](./accessibility-domain.md): Specifies where, in the program sections, a member can be referenced.
 - [Restrictions on Using Accessibility Levels](./restrictions-on-using-accessibility-levels.md): A summary of the restrictions on using declared accessibility levels.
 

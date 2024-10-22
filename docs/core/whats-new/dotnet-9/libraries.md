@@ -528,15 +528,7 @@ The `MyPoco` type is defined as follows:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Poco":::
 
-You can also enable this setting globally using the `System.Text.Json.Serialization.RespectRequiredConstructorParametersDefault` feature switch in your project file (for example, _.csproj_ file):
-
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.RespectRequiredConstructorParametersDefault" Value="true" />
-</ItemGroup>
-```
-
-As with earlier versions of <xref:System.Text.Json>, you can configure whether individual properties are required using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType> property.
+For more information, see [Non-optional constructor parameters](../../../standard/serialization/system-text-json/required-properties.md#non-optional-constructor-parameters).
 
 ### Order JsonObject properties
 

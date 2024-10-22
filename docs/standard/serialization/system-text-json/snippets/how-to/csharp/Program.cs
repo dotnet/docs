@@ -45,6 +45,8 @@ public class Program
         //Console.WriteLine("\n============================= Roundtrip enum as string\n");
         //RoundtripEnumAsString.Run();
 
+        SerializeEnumCustomName.Run();
+
         //Console.WriteLine("\n============================= Roundtrip enum using JsonConverterAttribute\n");
         //RoundtripEnumUsingConverterAttribute.Run();
 
@@ -123,8 +125,8 @@ public class Program
         //Console.WriteLine("\n============================= Runtime property exclusion\n");
         //SerializeRuntimePropertyExclusion.Run();
 
-        Console.WriteLine("\n============================= JsonDocument data access\n");
-        JsonDocumentDataAccess.Run();
+        //Console.WriteLine("\n============================= JsonDocument data access\n");
+        //JsonDocumentDataAccess.Run();
 
         //Console.WriteLine("\n============================= JsonDocument write JSON\n");
         //JsonDocumentWriteJson.Run();

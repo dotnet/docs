@@ -11,13 +11,23 @@ ms.date: 10/22/2024
 The Azure SDK for .NET enables ASP.NET Core apps to integrate with many different Azure services. In this article, you'll learn best practices and the steps to implement the Azure SDK for .NET in your ASP.NET Core apps. You'll learn how to:
 
 - Register services for dependency injection.
-- Implement centralized, standardized configuration.
 - Authenticate to Azure without using passwords or secrets.
+- Implement centralized, standardized configuration.
 - Configure common web app concerns such as logging and retries.
+
+## Explore common Azure SDK client libraries
+
+ASP.NET Core apps that connect to Azure services generally depend on the following client libraries:
+
+- [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) provides helper methods to properly register your services and handles various concerns for you, such as setting up logging, handling service lifetimes, and authentication credential management.
+- [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) provides Microsoft Entra ID authentication support across the Azure SDK. It provides a set of [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet) implementations that can be used to construct Azure SDK clients that support Microsoft Entra authentication.
+- `Azure.<service-namespace>` libraries such as [Azure.Storage.Blob](https://www.nuget.org/packages/Azure.Storage.Blobs) and [Azure.Messaging.ServiceBus](https://www.nuget.org/packages/Azure.Messaging.ServiceBus) provide service clients and other types to help you connect to and consume specific Azure services.
+
+In the sections ahead, you'll explore how to implement these libraries in an ASP.NET Core app.
 
 ## Register service clients
 
-The Azure SDK for .NET provides service clients to connect your app to Azure services such as Azure Blob Storage and Azure Key Vault. Register these services with the dependency container in the `Program.cs` file of your app to make them available to your app using Dependency Injection. The [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) library provides helper methods to properly register your services and handles various concerns for you, such as setting up logging, handling service lifetimes, and authentication credential management.
+The Azure SDK for .NET provides service clients to connect your app to Azure services such as Azure Blob Storage and Azure Key Vault. Register these services with the dependency container in the `Program.cs` file of your app to make them available to your app using Dependency Injection.
 
 Complete the following steps to register the services you need:
 
@@ -39,7 +49,7 @@ Complete the following steps to register the services you need:
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,11-16":::
 
-4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint methods:
+4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint:
 
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
@@ -89,7 +99,7 @@ Azure service clients support configurations to change their default behaviors. 
 - [Configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify app deployments between environments and reduce hard coded values.
 - Inline code configurations when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the Uri-typed variables to the client constructors.
 
-In the following sections, complete the steps using the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
+Complete the steps in the following sections to update your app to use JSON file configuration. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
 
 ### Configure registered services
 
@@ -104,11 +114,11 @@ In the following sections, complete the steps using the `appsettings.Development
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="4-5,7-8,10-11":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="4-5,7-8,11-12":::
 
 ### Configure Azure defaults and retries
 
-At some point, you may want to change default Azure client configurations globally or for a specific service client. For example, you may want different retry settings or to use a different service API version. You can set the retry settings globally or on a per-service basis.
+You may want to change default Azure client configurations globally or for a specific service client. For example, you may want different retry settings or to use a different service API version. You can set the retry settings globally or on a per-service basis.
 
 1. Update your configuration file to set default Azure settings, such as a new default retry policy:
 
@@ -116,7 +126,7 @@ At some point, you may want to change default Azure client configurations global
 
 2. In the `Program.cs` file, the `ConfigureDefaults` extension method `AddAzureClients` retrieves the default settings and applies them to your services:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="16-17":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="17-18":::
 
 ## Configure logging
 

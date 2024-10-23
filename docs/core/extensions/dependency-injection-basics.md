@@ -3,7 +3,7 @@ title: Dependency injection basics
 description: Learn how to use dependency injection (DI) in your .NET apps with this simple example. Follow along with this pragmatic guide to understand DI basics in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/30/2024
+ms.date: 10/23/2024
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
 
@@ -28,7 +28,7 @@ You need to add the package reference to the [Microsoft.Extensions.DependencyInj
 
 ## Dependency injection basics
 
-Dependency injection is a design pattern that allows you to remove hard-coded dependencies and make your application more maintainable and testable. DI is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies.
+Dependency injection is a design pattern that allows you to remove hard-coded dependencies and make your application more maintainable and testable. DI is a technique for achieving _Inversion of Control (IoC)_ between classes and their dependencies.
 
 The abstractions for DI in .NET are defined in the [Microsoft.Extensions.DependencyInjection.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions) NuGet package:
 

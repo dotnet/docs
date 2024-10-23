@@ -40,11 +40,11 @@ Complete the following steps to register the services you need:
     :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30":::
 
 4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint methods:
-
+    <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
     :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="44,47,48":::
-
+    <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
 
     :::code source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="5,21":::
@@ -80,12 +80,12 @@ For example, when you run the app locally, `DefaultAzureCredential` discovers an
 - Workload identity
 - Managed identity
 
-## Set up configurations
+## Apply configurations
 
 Azure service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
 - [Store configurations in environment-dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). Configuration files are generally the recommended approach because they simplify app deployments between environments and reduce hard coded values.
-- Apply configurations directly in your code when you register the service client. For example, in the [Register clients and subclients](#register-service-clients-and-subclients) section, you explicitly passed the Uri-typed variables to the client constructors.
+- Apply configurations directly in your code when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the Uri-typed variables to the client constructors.
 
 In the following sections, complete the steps using the `appsettings.Development.json` file for development settings and the `appsettings.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
 
@@ -131,6 +131,6 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 | `Verbose`              | `Debug`                 |
 | `LogAlways`            | `Information`           |
 
-You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#configure-authentication) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#authenticate-using-microsoft-entra-id) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
-:::code source="snippets/aspnetcore-guidance/BlazorSample/appsettings.Development.json" range="2-8":::
+    :::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="2-8":::

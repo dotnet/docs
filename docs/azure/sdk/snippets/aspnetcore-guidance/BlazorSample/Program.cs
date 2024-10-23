@@ -1,4 +1,4 @@
-using AspNetCoreAzureSDK.Components;
+using BlazorSample.Components;
 using Azure.Identity;
 using Azure.Messaging.ServiceBus;
 using Microsoft.Extensions.Azure;

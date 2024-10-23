@@ -40,10 +40,12 @@ Complete the following steps to register the services you need:
     :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30":::
 
 4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint methods:
+
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
     :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="44,47,48":::
+
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
 
@@ -133,4 +135,4 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#authenticate-using-microsoft-entra-id) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
-    :::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="2-8":::
+:::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="2-8":::

@@ -1,6 +1,6 @@
 ---
 title: Development process for Docker-based applications
-description: Get a high-level overview of the options for developing Docker-based applications. Using your choice of Visual Studio for Windows, Visual Studio for Mac, or Visual Studio Code for multiplatform support (Windows, macOS, and Linux).
+description: Get a high-level overview of the options for developing Docker-based applications. Using your choice of Visual Studio for Windows or Visual Studio Code for multiplatform support (Windows, macOS, and Linux).
 ms.date: 11/19/2021
 ---
 # Development process for Docker-based applications
@@ -16,8 +16,6 @@ ms.date: 11/19/2021
 Whether you prefer a full and powerful IDE or a lightweight and agile editor, Microsoft has tools that you can use for developing Docker applications.
 
 **Visual Studio (for Windows).** Docker-based .NET 8 application development with Visual Studio requires Visual Studio 2022 version 17.0 or later. Visual Studio 2022 comes with tools for Docker already built in. The tools for Docker let you develop, run, and validate your applications directly in the target Docker environment. You can press <kbd>F5</kbd> to run and debug your application (single container or multiple containers) directly into a Docker host, or press <kbd>CTRL</kbd> + <kbd>F5</kbd> to edit and refresh your application without having to rebuild the container. This IDE is the most powerful development choice for Docker-based apps.
-
-**Visual Studio for Mac.** It's an IDE, evolution of Xamarin Studio, running in macOS. This tool should be the preferred choice for developers working in macOS machines who also want to use a powerful IDE.
 
 **Visual Studio Code and Docker CLI**. If you prefer a lightweight and cross-platform editor that supports any development language, you can use Visual Studio Code and the Docker CLI. This IDE is a cross-platform development approach for macOS, Linux, and Windows. Additionally, Visual Studio Code supports extensions for Docker such as IntelliSense for Dockerfiles and shortcut tasks to run Docker commands from the editor.
 

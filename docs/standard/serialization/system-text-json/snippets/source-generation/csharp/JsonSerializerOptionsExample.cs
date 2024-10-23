@@ -33,10 +33,10 @@ namespace JsonSerializerOptionsExample
 
             // <Deserialize>
             weatherForecast = JsonSerializer.Deserialize(
-                jsonString, 
-                typeof(WeatherForecast), 
+                jsonString,
+                typeof(WeatherForecast),
                 new OptionsExampleContext(
-                    new JsonSerializerOptions(JsonSerializerDefaults.Web)))
+                    JsonSerializerOptions.Web))
                     as WeatherForecast;
             // </Deserialize>
             Console.WriteLine($"Date={weatherForecast?.Date}");
@@ -48,7 +48,7 @@ namespace JsonSerializerOptionsExample
                 weatherForecast,
                 typeof(WeatherForecast),
                 new OptionsExampleContext(
-                    new JsonSerializerOptions(JsonSerializerDefaults.Web)));
+                    JsonSerializerOptions.Web));
             // </Serialize>
             Console.WriteLine(jsonString);
             // output:

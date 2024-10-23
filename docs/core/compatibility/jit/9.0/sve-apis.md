@@ -33,15 +33,15 @@ Stop using the removed APIs and instead use the overloads that take 64-bit addre
 
 ## Affected APIs
 
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch16Bit(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch16Bit(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch32Bit(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch32Bit(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch64Bit(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch64Bit(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch8Bit(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch8Bit(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherVectorInt16SignExtendFirstFaulting(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.UInt32})?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherVectorInt16SignExtendFirstFaulting(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherVectorSByteSignExtendFirstFaulting(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.UInt32})?displayProperty=fullName>
-- <xref:System.Runtime.Intrinsics.Arm.Sve.GatherVectorSByteSignExtendFirstFaulting(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})?displayProperty=fullName>
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch16Bit(System.Numerics.Vector{System.Int16},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch16Bit(System.Numerics.Vector{System.UInt16},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch32Bit(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch32Bit(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch64Bit(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch64Bit(System.Numerics.Vector{System.UInt64},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch8Bit(System.Numerics.Vector{System.Byte},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherPrefetch8Bit(System.Numerics.Vector{System.SByte},System.Numerics.Vector{System.UInt32},System.Runtime.Intrinsics.Arm.SvePrefetchType)
+- System.Runtime.Intrinsics.Arm.Sve.GatherVectorInt16SignExtendFirstFaulting(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.UInt32})
+- System.Runtime.Intrinsics.Arm.Sve.GatherVectorInt16SignExtendFirstFaulting(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})
+- System.Runtime.Intrinsics.Arm.Sve.GatherVectorSByteSignExtendFirstFaulting(System.Numerics.Vector{System.Int32},System.Numerics.Vector{System.UInt32})
+- System.Runtime.Intrinsics.Arm.Sve.GatherVectorSByteSignExtendFirstFaulting(System.Numerics.Vector{System.UInt32},System.Numerics.Vector{System.UInt32})

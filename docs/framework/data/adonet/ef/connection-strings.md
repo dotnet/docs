@@ -94,7 +94,7 @@ Metadata=.\
 
 `DataDirectory` and the ~ operator should be specified only at the beginning of a path, they are not resolved at any other position. The Entity Framework will try to resolve `~/data`, but it will treat `/data/~` as a physical path.
 
-A path that starts with the `DataDirectory` or the ~ operator cannot resolve to a physical path outside the branch of the `DataDirectory` and the ~ operator. For example, the following paths will resolve: `~` , `~/data` , `~/bin/Model/SqlServer`. The following paths will fail to resolve: `~/..`, `~/../other`.
+A path that starts with the `DataDirectory` or the ~ operator cannot resolve to a physical path outside the branch of the `DataDirectory` and the ~ operator. For example, the following paths will resolve: `~`, `~/data`, `~/bin/Model/SqlServer`. The following paths will fail to resolve: `~/..`, `~/../other`.
 
 `DataDirectory` and the ~ operator can be extended to include sub-directories, as follows: `|DataDirectory|\Model`, `~/bin/Model`
 

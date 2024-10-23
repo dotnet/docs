@@ -146,11 +146,11 @@ A method can return only a single value. Frequently, though, you'd like a method
 
 - You can use a tuple, which provides a lightweight solution to retrieving multiple return values.
 
-For example, the **TryParse** methods in .NET return a `Boolean` value that indicates whether the parsing operation succeeded. The result of the parsing operation is returned in a variable passed by reference to the method. Normally, a call to a parsing method such as <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> looks like the following:
+For example, the **TryParse** methods in .NET return a `Boolean` value that indicates whether the parsing operation succeeded. The result of the parsing operation is returned in a variable passed by reference to the method. Normally, a call to a parsing method such as [Integer.TryParse](xref:System.Int32.TryParse%2A) looks like the following:
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="StandardMethodCall":::
 
-We can return a tuple from the parsing operation if we wrap the call to the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method in our own method. In the following example, `NumericLibrary.ParseInteger` calls the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method and returns a named tuple with two elements.
+We can return a tuple from the parsing operation if we wrap the call to the [Integer.TryParse](xref:System.Int32.TryParse%2A) method in our own method. In the following example, `NumericLibrary.ParseInteger` calls the [Integer.TryParse](xref:System.Int32.TryParse%2A) method and returns a named tuple with two elements.
 
 :::code language="vb" source="../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuples/tuple-returns.vb" id="ParseIntegerReturnsTuple":::
 

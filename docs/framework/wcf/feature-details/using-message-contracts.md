@@ -2,12 +2,11 @@
 title: "Using Message Contracts"
 description: Learn how to use the message contract attributes to create a message contract specifying the structure of a SOAP message in WFC.
 ms.date: "03/30/2017"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "message contracts [WCF]"
-ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249
 ---
 # Using Message Contracts
 
@@ -96,7 +95,7 @@ public class BankingTransaction
 </s:Envelope>  
 ```  
   
- Notice that `operation` and `transactionDate` appear as SOAP headers and the SOAP body consists of a wrapper element `BankingTransaction` containing `sourceAccount`,`targetAccount`, and `amount`.  
+ Notice that `operation` and `transactionDate` appear as SOAP headers and the SOAP body consists of a wrapper element `BankingTransaction` containing `sourceAccount`, `targetAccount`, and `amount`.  
   
  You can apply the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> to all fields, properties, and events, regardless of whether they are public, private, protected, or internal.  
   

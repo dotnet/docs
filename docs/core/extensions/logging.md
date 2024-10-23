@@ -364,7 +364,7 @@ public async Task<T> GetAsync<T>(string id)
 }
 ```
 
-In the preceding code, the first `Log{LogLevel}` parameter,`AppLogEvents.Read`, is the [Log event ID](#log-event-id). The second parameter is a message template with placeholders for argument values provided by the remaining method parameters. The method parameters are explained in the [message template](#log-message-template) section later in this article.
+In the preceding code, the first `Log{LogLevel}` parameter, `AppLogEvents.Read`, is the [Log event ID](#log-event-id). The second parameter is a message template with placeholders for argument values provided by the remaining method parameters. The method parameters are explained in the [message template](#log-message-template) section later in this article.
 
 Configure the appropriate log level and call the correct `Log{LogLevel}` methods to control how much log output is written to a particular storage medium. For example:
 
@@ -563,6 +563,7 @@ The following providers support scopes:
 
 - `Console`
 - [AzureAppServicesFile and AzureAppServicesBlob](xref:Microsoft.Extensions.Logging.AzureAppServices.BatchingLoggerOptions.IncludeScopes)
+- [ApplicationInsightsLoggerProvider](/azure/azure-monitor/app/ilogger?tabs=dotnet6#logging-scopes)
 
 Use a scope by wrapping logger calls in a `using` block:
 

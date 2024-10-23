@@ -42,7 +42,7 @@ These properties have the following functions:
 
 Single file apps are always OS and architecture specific. You need to publish for each configuration, such as Linux x64, Linux Arm64, Windows x64, and so forth.
 
-Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file. If an extra configuration file is needed, you can place it beside the single file.
+Runtime configuration files, such as _\*.runtimeconfig.json_ and _\*.deps.json_, are included in the single file.
 
 ## Publish a single-file app
 
@@ -107,10 +107,6 @@ Visual Studio creates reusable publishing profiles that control how your applica
 1. Choose **Publish** to publish your app as a single file.
 
 For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
-
-# [Visual Studio for Mac](#tab/vsmac)
-
-Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the CLI tab. For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
 
 ---
 

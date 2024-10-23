@@ -29,82 +29,18 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
-We're investing in adding the features that are most often requested. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) in the dotnet/runtime GitHub repository to find out if support for your scenario can be added.
+The `System.Text.Json` team is investing in adding the features that are most often requested. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) in the dotnet/runtime GitHub repository to find out if support for your scenario can be added.
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), <xref:System.Text.Json.Utf8JsonReader>, and <xref:System.Text.Json.Utf8JsonWriter> types.
 
 In Visual Basic, you can't use <xref:System.Text.Json.Utf8JsonReader>, which also means you can't write custom converters. Most of the workarounds presented here require that you write custom converters. You can write a custom converter in C# and register it in a Visual Basic project. For more information, see [Visual Basic support](visual-basic-support.md).
 
-## Use GitHub Copilot to migrate
-
-You can get coding help from GitHub Copilot to convert your code within your IDE.
-
-If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
-
->[!NOTE]
->GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
-
-**Example prompt for Copilot Chat**
-
-```
-convert the following code to use System.Text.Json
-Product product = new Product();
-
-product.Name = "Apple";
-product.ExpiryDate = new DateTime(2024, 08, 08);
-product.Price = 3.99M;
-product.Sizes = new string[] { "Small", "Medium", "Large" };
-
-string output = JsonConvert.SerializeObject(product);
-Console.WriteLine(output);
-```
-
-**Example Copilot Chat response**
-
-```output
-To convert the code to use System.Text.Json, you can use the JsonSerializer class. Here's the updated code:
-using System;
-using System.Text.Json;
-
-public class Product
-{
-    public string Name { get; set; }
-    public DateTime ExpiryDate { get; set; }
-    public decimal Price { get; set; }
-    public string[] Sizes { get; set; }
-}
-
-public class Program
-{
-    public static void Main()
-    {
-        Product product = new Product();
-
-        product.Name = "Apple";
-        product.ExpiryDate = new DateTime(2024, 08, 08);
-        product.Price = 3.99M;
-        product.Sizes = new string[] { "Small", "Medium", "Large" };
-
-        string output = JsonSerializer.Serialize(product);
-        Console.WriteLine(output);
-    }
-}
-This code uses System.Text.Json.JsonSerializer.Serialize to convert the Product object to a JSON string.
-```
-
-Note that your results might be different from what is shown in these example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
-
-:::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
-
-You can use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
-For example, if your code file `filename` is open in the IDE, you can [reference the file](/visualstudio/ide/copilot-chat-context#reference-a-file) in your prompt to Copilot Chat with "convert `#filename` to use `System.Text.Json`". Or you can [reference the solution](/visualstudio/ide/copilot-chat-context#reference-the-entire-solution) with "convert `@workspace` to use `System.Text.Json`" in the chat window or in inline chat.
-
 ## Table of differences
 
 The following table lists `Newtonsoft.Json` features and `System.Text.Json` equivalents. The equivalents fall into the following categories:
 
-* ✔️ Supported by built-in functionality. Getting similar behavior from `System.Text.Json` may require the use of an attribute or global option.
-* ⚠️ Not supported, but workaround is possible. The workarounds are [custom converters](converters-how-to.md), which may not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
+* ✔️ Supported by built-in functionality. Getting similar behavior from `System.Text.Json` might require the use of an attribute or global option.
+* ⚠️ Not supported, but workaround is possible. The workarounds are [custom converters](converters-how-to.md), which might not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
 * ❌ Not supported, and workaround is not practical or possible. If you rely on these `Newtonsoft.Json` features, migration will not be possible without significant changes.
 
 ::: zone pivot="dotnet-9-0, dotnet-8-0"
@@ -800,9 +736,9 @@ The <xref:System.Text.Json?displayProperty=fullName> DOM can't add, remove, or m
 
 ### JsonElement is a union struct
 
-`JsonDocument` exposes the `RootElement` as a property of type <xref:System.Text.Json.JsonElement>, which is a union struct type that encompasses any JSON element. `Newtonsoft.Json` uses dedicated hierarchical types like `JObject`,`JArray`, `JToken`, and so forth. `JsonElement` is what you can search and enumerate over, and you can use `JsonElement` to materialize JSON elements into .NET types.
+`JsonDocument` exposes the `RootElement` as a property of type <xref:System.Text.Json.JsonElement>, which is a union struct type that encompasses any JSON element. `Newtonsoft.Json` uses dedicated hierarchical types like `JObject`, `JArray`, `JToken`, and so forth. `JsonElement` is what you can search and enumerate over, and you can use `JsonElement` to materialize JSON elements into .NET types.
 
-Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and types in the <xref:System.Text.Json.Nodes> namespace that correspond to `JObject`,`JArray`, and `JToken`. For more information, see [Use `JsonNode`](use-dom.md#use-jsonnode).
+Starting in .NET 6, you can use <xref:System.Text.Json.Nodes.JsonNode> type and types in the <xref:System.Text.Json.Nodes> namespace that correspond to `JObject`, `JArray`, and `JToken`. For more information, see [Use `JsonNode`](use-dom.md#use-jsonnode).
 
 ### How to search a JsonDocument and JsonElement for sub-elements
 
@@ -846,8 +782,8 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 Starting in .NET 9, you can customize the indentation character and size for <xref:System.Text.Json.Utf8JsonWriter> using options exposed by the <xref:System.Text.Json.JsonWriterOptions> struct:
 
-* `JsonWriterOptions.IndentCharacter` <!-- <xref:System.Text.Json.JsonWriterOptions.IndentCharacter> -->
-* `JsonWriterOptions.IndentSize` <!-- <xref:System.Text.Json.JsonWriterOptions.IndentSize> -->
+* <xref:System.Text.Json.JsonWriterOptions.IndentCharacter?displayProperty=nameWithType>
+* <xref:System.Text.Json.JsonWriterOptions.IndentSize?displayProperty=nameWithType>
 
 ::: zone-end
 
@@ -894,6 +830,70 @@ System.Text.Json sets limits that can't be changed for some values, such as the 
 ## NaN, Infinity, -Infinity
 
 Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With System.Text.Json, use <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowNamedFloatingPointLiterals?displayProperty=nameWithType>. For information about how to use this setting, see [Allow or write numbers in quotes](invalid-json.md#allow-or-write-numbers-in-quotes).
+
+## Use GitHub Copilot to migrate
+
+You can get coding help from GitHub Copilot to convert your code within your IDE.
+
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to help migrate your `Newtonsoft.Json` code to use `System.Text.Json`. Submit your question and the code to convert as a prompt in the copilot chat window, as in the following example.
+
+> [!NOTE]
+> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
+**Example prompt for Copilot Chat**
+
+```
+convert the following code to use System.Text.Json
+Product product = new Product();
+
+product.Name = "Apple";
+product.ExpiryDate = new DateTime(2024, 08, 08);
+product.Price = 3.99M;
+product.Sizes = new string[] { "Small", "Medium", "Large" };
+
+string output = JsonConvert.SerializeObject(product);
+Console.WriteLine(output);
+```
+
+**Example Copilot Chat response**
+
+```output
+To convert the code to use System.Text.Json, you can use the JsonSerializer class. Here's the updated code:
+using System;
+using System.Text.Json;
+
+public class Product
+{
+    public string Name { get; set; }
+    public DateTime ExpiryDate { get; set; }
+    public decimal Price { get; set; }
+    public string[] Sizes { get; set; }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        Product product = new Product();
+
+        product.Name = "Apple";
+        product.ExpiryDate = new DateTime(2024, 08, 08);
+        product.Price = 3.99M;
+        product.Sizes = new string[] { "Small", "Medium", "Large" };
+
+        string output = JsonSerializer.Serialize(product);
+        Console.WriteLine(output);
+    }
+}
+This code uses System.Text.Json.JsonSerializer.Serialize to convert the Product object to a JSON string.
+```
+
+Note that your results might be different from what is shown in these example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
+
+:::image type="content" source="./media/migrate-newtonsoft-json-using-github-copilot.gif" alt-text="Animated screenshot that shows using GitHub Copilot Chat in Visual Studio to migrate from newtonsoft" lightbox="./media/migrate-newtonsoft-json-using-github-copilot.gif":::
+
+You can use chat features, such as [slash commands, references, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context.
+For example, if your code file `filename` is open in the IDE, you can [reference the file](/visualstudio/ide/copilot-chat-context#reference-a-file) in your prompt to Copilot Chat with "convert `#filename` to use `System.Text.Json`". Or you can [reference the solution](/visualstudio/ide/copilot-chat-context#reference-the-entire-solution) with "convert `@workspace` to use `System.Text.Json`" in the chat window or in inline chat.
 
 ## Additional resources
 

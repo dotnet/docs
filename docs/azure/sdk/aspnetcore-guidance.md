@@ -37,19 +37,19 @@ Complete the following steps to register the services you need:
 
 3. In the `Program.cs` file of your app, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client for each service. Some services use additional subclients, which you can also register for dependency injection.
 
-    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30":::
 
 4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint methods:
 
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
-    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="44,47,48":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="44,47,48":::
 
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
 
-    :::code source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="5,21":::
+    :::code language="cshtml" source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="5,21":::
 
     ---
 
@@ -64,7 +64,7 @@ Use the [Azure Identity client library](/dotnet/api/overview/azure/identity-read
 
 Consider the following use of `DefaultAzureCredential`:
 
-:::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="29":::
+:::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="29":::
 
 In the preceding code, the `clientBuilder.UseCredential()` method accepts an instance of `DefaultAzureCredential` to reuse across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The complete order and locations that `DefaultAzureCredential` looks for credentials lives in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential).
 
@@ -95,7 +95,7 @@ In the following sections, complete the steps using the `appsettings.Development
 
 1. Update the `appsettings.<environment>.json` file in your app with the highlighted service configurations:
 
-    :::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="19-27":::
+    :::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="19-27":::
 
     In the preceding JSON sample:
 
@@ -104,7 +104,7 @@ In the following sections, complete the steps using the `appsettings.Development
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
-    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="29-30":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="29-30":::
 
 ### Configure Azure defaults and retries
 
@@ -112,11 +112,11 @@ At some point, you may want to change default Azure client configurations global
 
 1. Update your configuration file to set default Azure settings, such as a new default retry policy:
 
-    :::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="9-18":::
+    :::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="9-18":::
 
 2. In the `Program.cs` file, the `ConfigureDefaults` extension method `AddAzureClients` retrieves the default settings and applies them to your services:
 
-    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="29,30":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="29,30":::
 
 ## Configure logging
 
@@ -135,4 +135,4 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#authenticate-using-microsoft-entra-id) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
-:::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="2-8":::
+:::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="2-8":::

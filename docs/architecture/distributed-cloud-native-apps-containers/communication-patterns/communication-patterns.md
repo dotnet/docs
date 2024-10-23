@@ -1,7 +1,7 @@
 ---
 title: Communication patterns
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Communication patterns
-ms.date: 04/06/2024
+ms.date: 10/23/2024
 ---
 
 # Communication patterns

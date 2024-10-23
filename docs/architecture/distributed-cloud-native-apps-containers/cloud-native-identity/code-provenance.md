@@ -1,7 +1,7 @@
 ---
 title: Code provenance
 description: Architecting Cloud Native .NET Apps for Azure | Code provenance
-ms.date: 06/03/2024
+ms.date: 10/23/2024
 ---
 
 # Code provenance: the lineage of code

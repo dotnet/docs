@@ -1,7 +1,7 @@
 ---
 title: Reverse proxies with YARP
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Reverse proxies with YARP
-ms.date: 01/13/2021
+ms.date: 10/23/2024
 ---
 # Reverse proxies with YARP
 

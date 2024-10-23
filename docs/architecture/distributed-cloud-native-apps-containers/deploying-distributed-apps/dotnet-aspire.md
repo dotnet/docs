@@ -1,7 +1,7 @@
 ---
 title: Deploying distributed apps with .NET Aspire
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Deploying distributed apps with .NET Aspire
-ms.date: 06/12/2024
+ms.date: 10/23/2024
 ---
 
 # Deploying distributed apps with .NET Aspire

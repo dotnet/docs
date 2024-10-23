@@ -1,7 +1,7 @@
 ---
 title: Cloud infrastructure resiliency with Azure
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Cloud infrastructure resiliency with Azure
-ms.date: 04/06/2022
+ms.date: 10/23/2024
 ---
 
 # Azure platform resiliency

@@ -1,7 +1,7 @@
 ---
 title: Introduction to cloud-native service-to-service communication patterns 
 description: Cloud-native service-to-service communication patterns | Introduction to cloud-native service-to-service communication patterns
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # Introduction to cloud-native service-to-service communication patterns

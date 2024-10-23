@@ -1,10 +1,10 @@
 ---
-title: Deployment with or without .Net Aspire
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Deployment with or without the .Net Aspire
-ms.date: 06/12/2024
+title: Deployment with or without .NET Aspire
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Deployment with or without the .NET Aspire
+ms.date: 10/23/2024
 ---
 
-# Deployment with or without .Net Aspire
+# Deployment with or without .NET Aspire
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

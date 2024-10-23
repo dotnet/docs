@@ -1,7 +1,7 @@
 ---
 title: Creating a simple data-driven CRUD microservice
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Creating a simple data-driven CRUD microservice
-ms.date: 03/04/2024
+ms.date: 10/23/2024
 ---
 
 # Creating a simple data-driven CRUD microservice

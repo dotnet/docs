@@ -1,7 +1,7 @@
 ---
 title: Caching in a cloud-native application
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Caching in a cloud-native application
-ms.date: 04/06/2022
+ms.date: 10/23/2024
 ---
 
 # Caching in a cloud-native application

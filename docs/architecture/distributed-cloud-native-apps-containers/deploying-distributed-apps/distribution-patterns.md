@@ -1,7 +1,7 @@
 ---
 title: Distribution patterns
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Distribution patterns
-ms.date: 06/12/2024
+ms.date: 10/23/2024
 ---
 
 # Distribution patterns

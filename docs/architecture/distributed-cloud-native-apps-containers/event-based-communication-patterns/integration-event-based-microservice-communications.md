@@ -1,7 +1,7 @@
 ---
 title: Implementing event-based communication between microservices
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand integration events to implement event-based communication between microservices.
-ms.date: 01/13/2021
+ms.date: 10/23/2024
 ---
 
 # Implementing event-based communication between microservices

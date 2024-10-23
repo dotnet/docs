@@ -1,7 +1,7 @@
 ---
 title: Official .NET container images & SDK tooling
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Official .NET container images & SDK tooling
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # Official .NET container images & SDK tooling

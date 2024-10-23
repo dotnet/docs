@@ -1,7 +1,7 @@
 ---
 title: Service Mesh communication infrastructure
 description: Cloud-native service to service communication patterns | Service Mesh communication infrastructure
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # Service Mesh communication infrastructure

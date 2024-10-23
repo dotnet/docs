@@ -1,7 +1,7 @@
 ---
 title: The challenges of distributed app testing
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | The challenges of distributed app testing
-ms.date: 06/05/2024
+ms.date: 10/23/2024
 ---
 
 # The challenges of distributed app testing

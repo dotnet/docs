@@ -1,7 +1,7 @@
 ---
 title: gRPC
 description: Cloud-native service to service communication patterns | gRPC
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # gRPC

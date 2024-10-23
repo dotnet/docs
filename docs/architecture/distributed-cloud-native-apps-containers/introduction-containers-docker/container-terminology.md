@@ -1,7 +1,7 @@
 ---
 title: Container terminology
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Container terminology
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # Containers, images, repositories, and registries

@@ -1,7 +1,7 @@
 ---
 title: What is Docker?
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | What is Docker
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # What is Docker?

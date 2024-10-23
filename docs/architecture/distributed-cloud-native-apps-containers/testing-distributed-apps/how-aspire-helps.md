@@ -1,7 +1,7 @@
 ---
 title: How .NET Aspire helps with the challenges of distributed app testing
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | How .NET Aspire helps with the challenges of distributed app testing
-ms.date: 06/05/2024
+ms.date: 10/23/2024
 ---
 
 # How .NET Aspire helps with the challenges of distributed app testing

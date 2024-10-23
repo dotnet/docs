@@ -1,7 +1,7 @@
 ---
 title: Code security and secure supply chain
 description: Architecting Cloud Native .NET Apps for Azure | Code security and secure supply chain
-ms.date: 06/03/2024
+ms.date: 10/23/2024
 ---
 
 # Ensuring code security in the age of digital supply chain vulnerabilities

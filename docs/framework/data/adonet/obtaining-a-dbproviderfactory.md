@@ -39,7 +39,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 | Column ordinal | Column name     | Example output                             | Description                               |
 |----------------|-----------------|--------------------------------------------|-------------------------------------------|
 | 0              | **Name**        | SqlClient Data Provider                    | Readable name for the data provider       |
-| 1              | **Description** | .Net Framework Data Provider for SqlServer | Readable description of the data provider |
+| 1              | **Description** | .NET Framework Data Provider for SqlServer | Readable description of the data provider |
 | 2              | **InvariantName** | System.Data.SqlClient | Name that can be used programmatically to refer to the data provider|
 | 3              | **AssemblyQualifiedName** | System.Data.SqlClient.SqlClientFactory, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 | Fully qualified name of the factory class, which contains enough information to instantiate the object |
 

@@ -1,7 +1,7 @@
 ---
 title: How to choose the right communication pattern
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | How to choose the right communication pattern
-ms.date: 04/06/2024
+ms.date: 10/23/2024
 ---
 
 # How to choose the right communication pattern

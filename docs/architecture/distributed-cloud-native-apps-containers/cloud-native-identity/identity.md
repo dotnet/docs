@@ -1,7 +1,7 @@
 ---
 title: Cloud-native identity
 description: Architecting Cloud Native .NET Apps for Azure | Cloud-native identity
-ms.date: 06/03/2024
+ms.date: 10/23/2024
 ---
 
 # Cloud-native identity

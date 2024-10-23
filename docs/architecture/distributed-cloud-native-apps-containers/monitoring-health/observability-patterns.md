@@ -1,7 +1,7 @@
 ---
 title: Observability patterns
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Observability patterns
-ms.date: 04/06/2022
+ms.date: 10/23/2024
 ---
 
 # Observability patterns

@@ -1,7 +1,7 @@
 ---
 title: Service discovery
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Service discovery
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # Service discovery

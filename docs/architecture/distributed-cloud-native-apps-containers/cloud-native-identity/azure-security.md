@@ -1,7 +1,7 @@
 ---
 title: Azure security for cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Azure security for cloud-native apps
-ms.date: 04/06/2022
+ms.date: 10/23/2024
 ---
 
 # Azure security for cloud-native apps

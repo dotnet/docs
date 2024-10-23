@@ -1,8 +1,10 @@
 ---
 title: Cloud-native resiliency
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Cloud-native resiliency
-ms.date: 09/30/2024
+ms.date: 10/23/2024
 ---
+
+# Cloud-native resiliency
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

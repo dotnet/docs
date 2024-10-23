@@ -1,7 +1,7 @@
 ---
 title: .NET Aspire overview
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | .NET Aspire overview
-ms.date: 05/30/2024
+ms.date: 10/23/2024
 ---
 
 # .NET Aspire overview

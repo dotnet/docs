@@ -1,7 +1,7 @@
 ---
 title: Relational versus NoSQL data
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Relational versus NoSQL data
-ms.date: 04/06/2022
+ms.date: 10/23/2024
 ---
 
 # Relational versus NoSQL data

@@ -1,7 +1,7 @@
 ---
 title: .NET Aspire integrations 
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | .NET Aspire integrations
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # .NET Aspire integrations: Empowering cloud-native applications

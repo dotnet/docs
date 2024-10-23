@@ -1,7 +1,7 @@
 ---
 title: Using OpenTelemetry in your .NET app
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Using OpenTelemetry in your .NET app
-ms.date: 04/06/2022
+ms.date: 10/23/2024
 ---
 
 # Using OpenTelemetry in your .NET app

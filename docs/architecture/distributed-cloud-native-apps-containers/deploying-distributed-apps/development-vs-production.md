@@ -1,7 +1,7 @@
 ---
 title: Development versus production and what .NET Aspire can do for you
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Development versus production and what .NET Aspire can do for you
-ms.date: 06/12/2024
+ms.date: 10/23/2024
 ---
 
 # Development versus production and what .NET Aspire can do for you

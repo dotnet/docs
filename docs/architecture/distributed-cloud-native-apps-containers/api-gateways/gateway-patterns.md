@@ -1,7 +1,7 @@
 ---
 title: Gateway patterns
 description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Gateway patterns
-ms.date: 04/25/2024
+ms.date: 10/23/2024
 ---
 
 # Gateway patterns

@@ -356,16 +356,16 @@
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
 | Communication Calling Windows Client | NuGet [1.9.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.9.0)<br>NuGet [1.10.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.10.0-beta.1) |  |  |
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
-| HTTP ASPNETCore Analyzers | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.2) |  |  |
+| HTTP ASPNETCore Analyzers | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.3) |  |  |
 | Item Templates NetCore | NuGet [4.0.5040](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5040) |  |  |
 | Item Templates NetFx | NuGet [4.0.5040](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5040) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
-| Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview3) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.1-beta.3](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Image/1.0.1-beta.3) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.3](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.3) |  |  |
-| Unknown Display Name | NuGet [1.0.2-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.2-preview) |  |  |
-| Unknown Display Name | NuGet [1.0.2-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.2-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.3-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.3-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.3-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.3-preview) |  |  |
 | Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.41.1) |  |  |
 | Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.41.1) |  |  |
 | Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.41.1) |  |  |
@@ -498,7 +498,7 @@
 | Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Functions Extensions - Dapr | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/1.0.1) |  |  |
 | Functions Extensions - Dapr Core | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/1.0.1) |  |  |
-| Functions Extensions - HTTP AspNet Core | NuGet [1.3.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.3.2)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/2.0.0-preview2) |  |  |
+| Functions Extensions - HTTP AspNet Core | NuGet [1.3.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/1.3.2)<br>NuGet [2.0.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/2.0.0-preview3) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.1) |  |  |
@@ -513,9 +513,9 @@
 | Microsoft.Azure.Cosmos.Templates | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Templates/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Analyzers | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Analyzers/1.0.0) |  |  |
 | Microsoft.Azure.Functions.Authentication.WebAssembly | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.0)<br>NuGet [1.0.1-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Authentication.WebAssembly/1.0.1-preview) |  |  |
-| Microsoft.Azure.Functions.Worker | NuGet [1.23.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.23.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/2.0.0-preview2) |  |  |
-| Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/2.0.0-preview2) |  |  |
-| Microsoft.Azure.Functions.Worker.Core | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.19.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.0.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker | NuGet [1.23.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/1.23.0)<br>NuGet [2.0.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker/2.0.0-preview3) |  |  |
+| Microsoft.Azure.Functions.Worker.ApplicationInsights | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/1.4.0)<br>NuGet [2.0.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ApplicationInsights/2.0.0-preview3) |  |  |
+| Microsoft.Azure.Functions.Worker.Core | NuGet [1.19.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/1.19.0)<br>NuGet [2.0.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.0.0-preview3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.11.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.11.0) |  |  |
@@ -538,7 +538,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.4.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.4.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
-| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.17.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.17.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.0.0-preview2) |  |  |
+| Microsoft.Azure.Functions.Worker.Grpc | NuGet [1.17.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/1.17.0)<br>NuGet [2.0.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.0.0-preview3) |  |  |
 | Microsoft.Azure.Functions.Worker.ItemTemplates | NuGet [4.0.5040](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates/4.0.5040) |  |  |
 | Microsoft.Azure.Functions.Worker.ProjectTemplates | NuGet [4.0.5040](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ProjectTemplates/4.0.5040) |  |  |
 | Microsoft.Azure.Functions.Worker.Sdk | NuGet [1.17.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/1.17.4)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Sdk/2.0.0-preview2) |  |  |

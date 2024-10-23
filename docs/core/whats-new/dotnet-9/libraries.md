@@ -499,22 +499,11 @@ For more information, see [JSON schema exporter](../../../standard/serialization
 
 <xref:System.Text.Json> now recognizes nullability annotations of properties and can be configured to enforce those during serialization and deserialization using the <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations> flag.
 
-The following code shows how to set the option (the `Book` type definition is shown in the previous section):
+The following code shows how to set the option:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectNullable":::
 
-> [!NOTE]
-> Due to how nullability annotations are represented in IL, the feature is restricted to annotations of non-generic properties.
-
-You can also enable this setting globally using the `System.Text.Json.Serialization.RespectNullableAnnotationsDefault` feature switch in your project file (for example, _.csproj_ file):
-
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.RespectNullableAnnotationsDefault" Value="true" />
-</ItemGroup>
-```
-
-You can configure nullability at an individual property level using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsGetNullable> and <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsSetNullable> properties.
+For more information, see [Respect nullable annotations](../../../standard/serialization/system-text-json/nullable-annotations.md).
 
 ### Require non-optional constructor parameters
 

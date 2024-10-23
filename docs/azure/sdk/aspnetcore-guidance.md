@@ -63,11 +63,13 @@ Complete the following steps to register the services you need:
 
     ---
 
+Visit the [Dependency injection with the Azure SDK for .NET](https://review.learn.microsoft.com/en-us/dotnet/azure/sdk/dependency-injection) page for more detailed guidance.
+
 ## Authenticate using Microsoft Entra ID
 
 [Microsoft Entra ID](/entra/fundamentals/whatis) is the recommended approach to authenticate requests to Azure services. This identity service supports [role-based access control (RBAC)](/azure/role-based-access-control/overview) to manage access to Azure resources based on a user's Entra ID account and assigned roles.
 
-Use the [Azure.Identity](/dotnet/api/overview/azure/identity-readme) client library to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
+Use the [Azure.Identity](/dotnet/api/overview/azure/identity-readme) client library to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code. Visit the [Authentication](/dotnet/azure/sdk/authentication) section of the Azure SDK for .NET docs for more details on these topics.
 
 > [!NOTE]
 > Many Azure services also allow you to authorize requests using secrets keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the service and data.
@@ -94,7 +96,7 @@ For example, when you run the app locally, `DefaultAzureCredential` discovers an
 
 ## Apply configurations
 
-Azure service clients support configurations to change their default behaviors. There are two ways to configure service clients:
+Azure SDK service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
 - [Configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify app deployments between environments and reduce hard coded values.
 - Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the URI variables to the client constructors.
@@ -132,7 +134,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 The Azure SDK for .NET client libraries can log client library operations to monitor requests and responses to Azure services. When you register an Azure SDK client using the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> is registered with the dependency injection container. This service forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory> to enables you to use the standard ASP.NET Core logging configuration for logging.
 
-The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`.
+The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`. Visit the [Logging with the Azure SDK for .NET](/dotnet/azure/sdk/logging) page to learn more.
 
 | Azure SDK `EventLevel` | ASP.NET Core `LogLevel` |
 |------------------------|-------------------------|

@@ -37,70 +37,17 @@ Complete the following steps to register the services you need:
 
 3. In the `Program.cs` file, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client for each service. Some services use additional subclients, which you can also register for dependency injection.
 
-    ```csharp
-    builder.Services.AddAzureClients(clientBuilder =>
-    {
-        // Register clients for each Azure service
-        clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
-        clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
-        clientBuilder.AddServiceBusClientWithNamespace(
-            "<your_namespace>.servicebus.windows.net");
-
-        // Register a shared credential for Microsoft Entra ID authentication
-        clientBuilder.UseCredential(new DefaultAzureCredential());
-    
-        // Register a subclient for each Azure Service Bus Queue
-        foreach (string queue in queueNames)
-        {
-            clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>(
-                (_, _, provider) => provider.GetService<ServiceBusClient>()
-                        .CreateSender(queue)).WithName(queue);
-        }
-    });
-    ```
+    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30":::
 
 4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint methods:
 
     ## [Minimal API](#tab/api)
 
-    ```csharp
-    app.MapPost("/reports", async (BlobServiceClient blobServiceClient) =>
-    {
-        // Use the blob client
-        BlobContainerClient containerClient 
-            = await blobServiceClient.CreateBlobContainerAsync("reports");
-    });
-    ```
+    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59":::
 
     ## [Blazor](#tab/blazor)
 
-    ```csharp
-    @page "/reports"
-    @inject BlobServiceClient blobservice
-    
-    <h1>Reports</h1>
-    
-    <ul>
-    @foreach(var report in reports)
-    {
-        <li>@report.Name</li>
-    }
-    </ul>
-    
-    @code {
-        List<BlobItem> reports = new();
-    
-        protected override async Task OnInitializedAsync()
-        {
-            BlobContainerClient containerClient = blobservice.GetBlobContainerClient("reports");
-    
-            await foreach (BlobItem blobItem in containerClient.GetBlobsAsync())
-            {
-                reports.Add(blobItem);
-            }
-        }
-    }
-    ```
+    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="1-28" highlight="5,21":::
 
     ---
 
@@ -112,27 +59,7 @@ Some Azure services also allow you to authorize requests using secrets keys. How
 
 Consider the following service client registrations:
 
-```csharp
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    // Register clients for each Azure service
-    clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
-    clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
-    clientBuilder.AddServiceBusClientWithNamespace(
-        "<your_namespace>.servicebus.windows.net");
-
-    // Register a shared credential for Microsoft Entra ID authentication
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-
-    // Register a subclient for each Azure Service Bus Queue
-    foreach (string queue in queueNames)
-    {
-        clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>(
-            (_, _, provider) => provider.GetService<ServiceBusClient>()
-                    .CreateSender(queue)).WithName(queue);
-    }
-});
-```
+:::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="29":::
 
 In the preceding code, the `clientBuilder.UseCredential()` method accepts an instance of `DefaultAzureCredential` that will be reused across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The full order and locations in which `DefaultAzureCredential` looks for credentials can be found in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential).
 
@@ -150,102 +77,41 @@ For example, when you run the app locally, `DefaultAzureCredential` discovers an
 - Workload identity
 - Managed identity
 
-## Set up service configurations
+## Set up configurations
 
 Azure service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
 - You can [store configurations in environment-dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). Configuration files are generally the recommended approach because they simplify app deployments between environments and help eliminate hard coded values.
 - You can also configurations directly in your code when you register the service client. For example, in the [Register clients and subclients](#register-service-clients-and-subclients) section, you explicitly passed the Uri-typed variables to the client constructors.
 
-The following example uses an `appsettings.Development.json` file to store development environment settings and an `appsettings.Production.json` file to contain production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class into the JSON file.
+The following steps use an `appsettings.Development.json` file to store development environment settings and an `appsettings.Production.json` file to contain production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class into the JSON file.
 
-1. Update the `appsettings.<environment>.json` file in your app to match the following structure:
+### Configure registered services
 
-    ```json
-    {
-      "KeyVault": {
-        "VaultUri": "https://<your-key-vault-name>.vault.azure.net"
-      },
-      "Storage": {
-        "ServiceUri": "https://<your-storage-account-name>.storage.windows.net"
-      },
-      "ServiceBus": {
-        "Namespace": "<your_service-bus_namespace>.servicebus.windows.net"
-      }
-    }
-    ```
+1. Update the `appsettings.<environment>.json` file in your app with the highlighted service configurations:
+
+    :::code source="snippets/aspnetcore-guidance/BlazorSample/appsettings.Development.json" range="19-27":::
 
     In the preceding JSON sample:
 
     - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
     - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=fullName>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
 
-1. Retrieve the settings in the JSON configuration file using `IConfiguration` and pass them into your service registrations:
+1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
-    ```csharp
-    builder.Services.AddAzureClients(clientBuilder =>
-    {
-        clientBuilder.AddSecretClient(
-            builder.Configuration.GetSection("KeyVault"));
-    
-        clientBuilder.AddBlobServiceClient(
-            builder.Configuration.GetSection("Storage"));
-    
-        clientBuilder.AddServiceBusClientWithNamespace(
-            builder.Configuration["ServiceBus:Namespace"]);
-    
-        clientBuilder.UseCredential(new DefaultAzureCredential());
-    });
-    ```
+    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="13-31":::
 
-### Configure retries and Azure defaults
+### Configure Azure defaults and retries
 
 At some point, you may want to change default Azure client configurations globally or for a specific service client. For example, you may want different retry settings or to use a different service API version. You can set the retry settings globally or on a per-service basis.
 
 1. Update your configuration file to set default Azure settings, such as a new default retry policy and a specific retry policy for Azure Key Vault:
 
-```json
-{
-  "AzureDefaults": {
-    "Diagnostics": {
-      "IsTelemetryDisabled": false,
-      "IsLoggingContentEnabled": true
-    },
-    "Retry": {
-      "MaxRetries": 3,
-      "Mode": "Exponential"
-    }
-  },
-  "KeyVault": {
-    "VaultUri": "https://mykeyvault.vault.azure.net",
-    "Retry": {
-      "maxRetries": 10
-    }
-  }
-}
-```
+    :::code source="snippets/aspnetcore-guidance/BlazorSample/appsettings.Development.json" range="9-23":::
 
-2. Add a call to the `ConfigureDefaults` extension method in your `AddAzureClients` setup:
+2. In the `Program.cs` file, the `ConfigureDefaults` extension method `AddAzureClients` retrieves the default settings and applies them to your services:
 
-```csharp
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddSecretClient(
-        builder.Configuration.GetSection("KeyVault"));
-
-    clientBuilder.AddBlobServiceClient(
-        builder.Configuration.GetSection("Storage"));
-
-    clientBuilder.AddServiceBusClientWithNamespace(
-        builder.Configuration["ServiceBus:Namespace"]);
-
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-
-    // Set up any default settings
-    clientBuilder.ConfigureDefaults(
-        builder.Configuration.GetSection("AzureDefaults"));
-});
-```
+    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="13-31":::
 
 ## Configure logging
 
@@ -264,14 +130,4 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#configure-authentication) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
-```json
-{
-"Logging": {
-        "LogLevel": {
-            "Default": "Information",
-            "Microsoft.AspNetCore": "Warning",
-            "Azure.Messaging.ServiceBus": "Debug"
-        }
-    }
-}
-```
+:::code source="snippets/aspnetcore-guidance/BlazorSample/appsettings.Development.json" range="2-8":::

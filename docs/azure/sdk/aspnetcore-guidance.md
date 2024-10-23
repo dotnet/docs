@@ -20,7 +20,7 @@ The Azure SDK for .NET enables ASP.NET Core apps to integrate with many differen
 ASP.NET Core apps that connect to Azure services generally depend on the following client libraries:
 
 - [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) provides helper methods to properly register your services and handles various concerns for you, such as setting up logging, handling service lifetimes, and authentication credential management.
-- [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) provides Microsoft Entra ID authentication support across the Azure SDK. It provides a set of [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet) implementations that can be used to construct Azure SDK clients that support Microsoft Entra authentication.
+- [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) enables Microsoft Entra ID authentication support across the Azure SDK. It provides a set of [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet) implementations to construct Azure SDK clients that support Microsoft Entra authentication.
 - `Azure.<service-namespace>` libraries such as [Azure.Storage.Blob](https://www.nuget.org/packages/Azure.Storage.Blobs) and [Azure.Messaging.ServiceBus](https://www.nuget.org/packages/Azure.Messaging.ServiceBus) provide service clients and other types to help you connect to and consume specific Azure services.
 
 In the sections ahead, you'll explore how to implement these libraries in an ASP.NET Core app.
@@ -31,13 +31,13 @@ The Azure SDK for .NET provides service clients to connect your app to Azure ser
 
 Complete the following steps to register the services you need:
 
-1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) package:
+1. Add the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) package:
 
     ```dotnetcli
     dotnet add package Microsoft.Extensions.Azure
     ```
 
-2. Install the `Azure.*` service packages you need for your app:
+2. Add the relevant `Azure.*` service packages:
 
     ```dotnetcli
     dotnet add package Azure.Security.KeyVault.Secrets
@@ -67,7 +67,7 @@ Complete the following steps to register the services you need:
 
 [Microsoft Entra ID](/entra/fundamentals/whatis) is the recommended approach to authenticate requests to Azure services. This identity service supports [role-based access control (RBAC)](/azure/role-based-access-control/overview) to manage access to Azure resources based on a user's Entra ID account and assigned roles.
 
-Use the [Azure Identity client library](/dotnet/api/overview/azure/identity-readme) to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as `DefaultAzureCredential` to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
+Use the [Azure.Identity](/dotnet/api/overview/azure/identity-readme) client library to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as `DefaultAzureCredential` to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
 
 > [!NOTE]
 > Many Azure services also allow you to authorize requests using secrets keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the service and data.
@@ -97,9 +97,9 @@ For example, when you run the app locally, `DefaultAzureCredential` discovers an
 Azure service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
 - [Configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify app deployments between environments and reduce hard coded values.
-- Inline code configurations when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the Uri-typed variables to the client constructors.
+- Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the URI variables to the client constructors.
 
-Complete the steps in the following sections to update your app to use JSON file configuration. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
+Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
 
 ### Configure registered services
 
@@ -109,7 +109,7 @@ Complete the steps in the following sections to update your app to use JSON file
 
     In the preceding JSON sample:
 
-    - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
+    - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code. All other key names map to specific service options, and JSON serialization is performed in a case-insensitive manner.
     - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=name>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=name>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=name> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=name> method call.
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:

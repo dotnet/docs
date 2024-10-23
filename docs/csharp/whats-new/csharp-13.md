@@ -139,7 +139,7 @@ You can declare `partial` properties and `partial` indexers in C# 13. Partial pr
 public partial class C
 {
     // Declaring declaration
-    public partial string Name;
+    public partial string Name { }
 }
 
 public partial class C

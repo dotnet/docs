@@ -44,7 +44,7 @@ Complete the following steps to register the services you need:
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="1,3,4":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="1,4,5":::
 
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
@@ -104,7 +104,7 @@ In the following sections, complete the steps using the `appsettings.Development
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="6-7":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="4-5,7-8,10-11":::
 
 ### Configure Azure defaults and retries
 
@@ -116,7 +116,7 @@ At some point, you may want to change default Azure client configurations global
 
 2. In the `Program.cs` file, the `ConfigureDefaults` extension method `AddAzureClients` retrieves the default settings and applies them to your services:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="6-7":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="16-17":::
 
 ## Configure logging
 

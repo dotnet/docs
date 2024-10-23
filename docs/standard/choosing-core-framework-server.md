@@ -1,7 +1,7 @@
 ---
 title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
-ms.date: 06/04/2024
+ms.date: 10/23/2024
 ms.custom: updateeachrelease
 ---
 # .NET vs. .NET Framework for server apps
@@ -27,7 +27,7 @@ There are two supported [.NET implementations](glossary.md#implementation-of-net
 
   There are many infrastructure platforms available. [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) is designed for large and complex microservice systems. [Azure App Service](https://azure.microsoft.com/services/app-service/) is a good choice for stateless microservices. Microservices alternatives based on Docker fit any microservices approach, as explained in the next section (Supports Docker containers). All these platforms support .NET and make them ideal for hosting your microservices.
 
-  For more information about microservices architecture, see [.NET Microservices: Architecture for containerized .NET apps](../architecture/microservices/index.md).
+  For more information about microservices architecture, see [.NET Microservices: Architecture for containerized .NET apps](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf).
 
 - **Supports Docker containers.**
 
@@ -87,4 +87,4 @@ As previously mentioned, the *.NET* implementation offers significant benefits f
 - [Porting from .NET Framework to .NET 5](../core/porting/index.md)
 - [Introduction to .NET and Docker](../core/docker/introduction.md)
 - [.NET implementations](../fundamentals/implementations.md)
-- [.NET Microservices. Architecture for Containerized .NET Applications](../architecture/microservices/index.md)
+- [.NET Microservices. Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf)

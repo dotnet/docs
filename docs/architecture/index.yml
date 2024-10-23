@@ -8,7 +8,7 @@ metadata:
   title: .NET application architecture documentation
   description: Learn recommended practices for architecting, building, and migrating .NET apps.
   ms.topic: hub-page
-  ms.date: 12/14/2023
+  ms.date: 10/23/2024
   ms.service: dotnet
   ms.collection: collection
 
@@ -17,57 +17,12 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: ".NET Microservices: Architecture for containerized .NET apps"
-      itemType: architecture
-      url: microservices/index.md
     - title: Blazor for ASP.NET Web Forms developers
       itemType: architecture
       url: blazor-for-web-forms-developers/index.md
     - title: Architecting cloud-native .NET apps for Azure
       itemType: architecture
       url: cloud-native/index.md
-    - title: Architect modern web apps with ASP.NET Core and Azure
-      itemType: architecture
-      url: modern-web-apps-azure/index.md
     - title: Enterprise Application Patterns Using .NET MAUI
       itemType: architecture
       url: maui/index.md
-
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  items:
-    - title: Migrate .NET apps to Azure
-      links:
-          - text: Migrate your .NET app to Azure
-            itemType: get-started
-            url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
-
-    - title: Develop mobile and desktop apps
-      links:
-          - text: Build mobile and desktop apps with .NET MAUI
-            itemType: learn
-            url: /training/paths/build-apps-with-dotnet-maui
-
-    - title: Develop cloud-native .NET apps for Azure
-      links:
-          - text: Hello World Microservice tutorial
-            itemType: learn
-            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
-          - text: Create and deploy a cloud-native ASP.NET Core microservice
-            itemType: learn
-            url: /training/modules/microservices-aspnet-core
-          - text: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
-            itemType: learn
-            url: /training/modules/microservices-devops-aspnet-core
-          - text: Implement resiliency in a cloud-native ASP.NET Core microservice
-            itemType: learn
-            url: /training/modules/microservices-resiliency-aspnet-core
-
-    - title: Design guidelines
-      links:
-        - text: Framework design guidelines
-          itemType: concept
-          url: ../standard/design-guidelines/index.md
-        - text: Library design guidelines
-          itemType: concept
-          url: ../standard/library-guidance/index.md

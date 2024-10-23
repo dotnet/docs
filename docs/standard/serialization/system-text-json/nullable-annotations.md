@@ -27,8 +27,8 @@ Similarly, <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotatio
 
 Due to how non-nullable reference types are implemented, this feature comes with some important limitations. Familiarize yourself with these limitations before turning the feature on. The root of the issue is that reference type nullability has no first-class representation in intermediate language (IL). As such, the expressions `MyPoco` and `MyPoco?` are indistinguishable from the perspective of run-time reflection. While the compiler will try to make up for that by [emitting attribute metadata where possible](https://sharplab.io/#v2:D4AQTAjAsAULBOBTAxge3gEwAQFkCeACqmgBQgQAMWAcqgC7UCuANswMp3wCWAdgOYAaLOQoB+Gi2YBDAEbNEHbvwCUAbiA=), this metadata is restricted to non-generic member annotations that are scoped to a particular type definition. This is the reason that the flag only validates nullability annotations that are present on non-generic properties, fields, and constructor parameters. System.Text.Json does not support nullability enforcement on:
 
-- Top-level types, or the type that's passed when making the first `JsonSerializer.(De)serialize` call.
-- Collection element types&mdash;the `List<string>` and `List<string?>` types are indistinguishable.
+- Top-level types, or the type that's passed when making the first `JsonSerializer.Deserialize()` or `JsonSerializer.Serialize()` call.
+- Collection element types&mdash;for example, the `List<string>` and `List<string?>` types are indistinguishable.
 - Any properties, fields, or constructor parameters that are generic.
 
 If you want to add nullability enforcement in these cases, either model your type to be a struct (since they don't admit null values), or author a custom converter that overrides its <xref:System.Text.Json.Serialization.JsonConverter`1.HandleNull> property to `true`.
@@ -78,7 +78,8 @@ record MyPoco(
     string RequiredNonNullable,
     string? RequiredNullable,
     string OptionalNonNullable = "default",
-    string? OptionalNullable = "default");
+    string? OptionalNullable = "default"
+    );
 ```
 
 ## See also

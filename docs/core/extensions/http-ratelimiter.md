@@ -3,7 +3,7 @@ title: Rate limiting an HTTP handler in .NET
 description: Learn how to create a client-side HTTP handler that limits the number of requests, with the inbuilt rate limiter API from .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 10/23/2024
 ---
 
 # Rate limit an HTTP handler in .NET
@@ -177,4 +177,4 @@ In this article, you learned how to implement a custom `ClientSideRateLimitedHan
 - [Announcing Rate Limiting for .NET](https://devblogs.microsoft.com/dotnet/announcing-rate-limiting-for-dotnet)
 - [Rate limiting middleware in ASP.NET Core](/aspnet/core/performance/rate-limit)
 - [Azure Architecture: Rate limiting pattern](/azure/architecture/patterns/rate-limiting-pattern)
-- [Automatic retry logic in .NET](../../architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md)
+- [Automatic retry logic in .NET](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf)

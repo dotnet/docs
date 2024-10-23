@@ -3,15 +3,15 @@ title: Options pattern
 author: IEvangelist
 description: Learn the options pattern to represent groups of related settings in .NET apps. The options pattern uses classes to provide strongly-typed access to settings.
 ms.author: dapine
-ms.date: 08/13/2024
+ms.date: 10/23/2024
 ---
 
 # Options pattern in .NET
 
 The options pattern uses classes to provide strongly-typed access to groups of related settings. When [configuration settings](configuration.md) are isolated by scenario into separate classes, the app adheres to two important software engineering principles:
 
-- The [Interface Segregation Principle (ISP) or Encapsulation](../../architecture/modern-web-apps-azure/architectural-principles.md#encapsulation): Scenarios (classes) that depend on configuration settings depend only on the configuration settings that they use.
-- [Separation of Concerns](../../architecture/modern-web-apps-azure/architectural-principles.md#separation-of-concerns): Settings for different parts of the app aren't dependent or coupled with one another.
+- The _Interface Segregation Principle (ISP) or Encapsulation_: Scenarios (classes) that depend on configuration settings depend only on the configuration settings that they use.
+- _Separation of Concerns_: Settings for different parts of the app aren't dependent or coupled with one another.
 
 Options also provide a mechanism to validate configuration data. For more information, see the [Options validation](#options-validation) section.
 

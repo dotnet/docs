@@ -35,7 +35,7 @@ Complete the following steps to register the services you need:
     dotnet add package Azure.Messaging.ServiceBus
     ```
 
-3. In the `Program.cs` file, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client for each service. Some services use additional subclients, which you can also register for dependency injection.
+3. In the `Program.cs` file of your app, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client for each service. Some services use additional subclients, which you can also register for dependency injection.
 
     :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30":::
 
@@ -43,25 +43,28 @@ Complete the following steps to register the services you need:
 
     ## [Minimal API](#tab/api)
 
-    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59":::
+    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="44,47,48":::
 
     ## [Blazor](#tab/blazor)
 
-    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="1-28" highlight="5,21":::
+    :::code source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="5,21":::
 
     ---
 
 ## Authenticate using Microsoft Entra ID
 
-Microsoft Entra ID is the recommended approach to authorize requests to Azure services. Use the [Azure Identity client library]() to implement secretless connections to Azure services in your code. The Azure Identity client library provides tools such as `DefaultAzureCredential` to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
+[Microsoft Entra ID](/entra/fundamentals/whatis) is the recommended approach to authenticate requests to Azure services. This identity service supports [role-based access control (RBAC)](/azure/role-based-access-control/overview) to manage access to Azure resources based on a user's Entra ID account and assigned roles.
 
-Some Azure services also allow you to authorize requests using secrets keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the service and data.
+Use the [Azure Identity client library](/dotnet/api/overview/azure/identity-readme) to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as `DefaultAzureCredential` to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
 
-Consider the following service client registrations:
+> [!NOTE]
+> Many Azure services also allow you to authorize requests using secrets keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the service and data.
 
-:::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="29":::
+Consider the following use of `DefaultAzureCredential`:
 
-In the preceding code, the `clientBuilder.UseCredential()` method accepts an instance of `DefaultAzureCredential` that will be reused across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The full order and locations in which `DefaultAzureCredential` looks for credentials can be found in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential).
+:::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="29":::
+
+In the preceding code, the `clientBuilder.UseCredential()` method accepts an instance of `DefaultAzureCredential` to reuse across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The complete order and locations that `DefaultAzureCredential` looks for credentials lives in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential).
 
 For example, when you run the app locally, `DefaultAzureCredential` discovers and uses credentials from the following developer tools:
 
@@ -81,16 +84,16 @@ For example, when you run the app locally, `DefaultAzureCredential` discovers an
 
 Azure service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
-- You can [store configurations in environment-dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). Configuration files are generally the recommended approach because they simplify app deployments between environments and help eliminate hard coded values.
-- You can also configurations directly in your code when you register the service client. For example, in the [Register clients and subclients](#register-service-clients-and-subclients) section, you explicitly passed the Uri-typed variables to the client constructors.
+- [Store configurations in environment-dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). Configuration files are generally the recommended approach because they simplify app deployments between environments and reduce hard coded values.
+- Apply configurations directly in your code when you register the service client. For example, in the [Register clients and subclients](#register-service-clients-and-subclients) section, you explicitly passed the Uri-typed variables to the client constructors.
 
-The following steps use an `appsettings.Development.json` file to store development environment settings and an `appsettings.Production.json` file to contain production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class into the JSON file.
+In the following sections, complete the steps using the `appsettings.Development.json` file for development settings and the `appsettings.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
 
 ### Configure registered services
 
 1. Update the `appsettings.<environment>.json` file in your app with the highlighted service configurations:
 
-    :::code source="snippets/aspnetcore-guidance/BlazorSample/appsettings.Development.json" range="19-27":::
+    :::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="19-27":::
 
     In the preceding JSON sample:
 
@@ -99,19 +102,19 @@ The following steps use an `appsettings.Development.json` file to store developm
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
-    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="13-31":::
+    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="29-30":::
 
 ### Configure Azure defaults and retries
 
 At some point, you may want to change default Azure client configurations globally or for a specific service client. For example, you may want different retry settings or to use a different service API version. You can set the retry settings globally or on a per-service basis.
 
-1. Update your configuration file to set default Azure settings, such as a new default retry policy and a specific retry policy for Azure Key Vault:
+1. Update your configuration file to set default Azure settings, such as a new default retry policy:
 
-    :::code source="snippets/aspnetcore-guidance/BlazorSample/appsettings.Development.json" range="9-23":::
+    :::code source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="9-18":::
 
 2. In the `Program.cs` file, the `ConfigureDefaults` extension method `AddAzureClients` retrieves the default settings and applies them to your services:
 
-    :::code source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="13-31":::
+    :::code source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="29,30":::
 
 ## Configure logging
 

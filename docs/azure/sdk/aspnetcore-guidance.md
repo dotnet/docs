@@ -86,10 +86,10 @@ For example, when you run the app locally, `DefaultAzureCredential` discovers an
 
 Azure service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
-- [Store configurations in environment-dependent JSON files](/dotnet/core/extensions/configuration-providers#json-configuration-provider). Configuration files are generally the recommended approach because they simplify app deployments between environments and reduce hard coded values.
-- Apply configurations directly in your code when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the Uri-typed variables to the client constructors.
+- [Configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify app deployments between environments and reduce hard coded values.
+- Inline code configurations when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the Uri-typed variables to the client constructors.
 
-In the following sections, complete the steps using the `appsettings.Development.json` file for development settings and the `appsettings.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
+In the following sections, complete the steps using the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
 
 ### Configure registered services
 
@@ -100,11 +100,11 @@ In the following sections, complete the steps using the `appsettings.Development
     In the preceding JSON sample:
 
     - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code. All other key names hold significance, and JSON serialization is performed in a case-insensitive manner.
-    - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=fullName>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=fullName>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=fullName> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=fullName> method call.
+    - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the `Uri`- and `string`-typed arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=name>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=name>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=name> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=name> method call.
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="29-30":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="6-7":::
 
 ### Configure Azure defaults and retries
 

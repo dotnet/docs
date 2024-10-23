@@ -6,9 +6,9 @@ ms.date: 10/23/2024
 
 # Architecture for Distributed Cloud-Native Apps with .NET & Containers
 
-![cover image Enterprise Application Patterns Using .NET MAUI](./media/enterprise-app-patterns-ebook.png)
+![cover image Architecture for Distributed Cloud-Native Apps with .NET & Containers](https://placehold.co/613x793/cyan/magenta.png?text=James,%20we%20need%20this!&font=roboto)
 
-DOWNLOAD available at: <https://aka.ms/maui-ebook>
+DOWNLOAD available at: <https://aka.ms/aspireebook>
 
 **EDITION v1.0**
 

@@ -47,9 +47,12 @@ C# provides the following built-in value types, also known as *simple types*:
 
 All simple types are structure types and differ from other structure types in that they permit certain additional operations:
 
-- You can use literals to provide a value of a simple type. For example, `'A'` is a literal of the type `char` and `2001` is a literal of the type `int`.
+- You can use literals to provide a value of a simple type.
+<br/>For example, `'A'` is a literal of the type `char`, `2001` is a literal of the type `int` and `12.34m` is a literal of the type `decimal`.
 
-- You can declare constants of the simple types with the [const](../keywords/const.md) keyword. It's not possible to have constants of other structure types.
+- You can declare constants of the simple types with the [const](../keywords/const.md) keyword.
+<br/>For example, you can define `const decimal = 12.34m`.
+<br/>It's not possible to have constants of other structure types.
 
 - Constant expressions, whose operands are all constants of the simple types, are evaluated at compile time.
 

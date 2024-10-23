@@ -67,7 +67,7 @@ Complete the following steps to register the services you need:
 
 [Microsoft Entra ID](/entra/fundamentals/whatis) is the recommended approach to authenticate requests to Azure services. This identity service supports [role-based access control (RBAC)](/azure/role-based-access-control/overview) to manage access to Azure resources based on a user's Entra ID account and assigned roles.
 
-Use the [Azure.Identity](/dotnet/api/overview/azure/identity-readme) client library to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as `DefaultAzureCredential` to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
+Use the [Azure.Identity](/dotnet/api/overview/azure/identity-readme) client library to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code.
 
 > [!NOTE]
 > Many Azure services also allow you to authorize requests using secrets keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key is able to authorize requests against the service and data.
@@ -76,7 +76,7 @@ Consider the following use of `DefaultAzureCredential`:
 
 :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
 
-In the preceding code, the `clientBuilder.UseCredential()` method accepts an instance of `DefaultAzureCredential` to reuse across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The complete order and locations that `DefaultAzureCredential` looks for credentials lives in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential).
+In the preceding code, the `UseCredential()` method accepts an instance of `DefaultAzureCredential` to reuse across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The complete order and locations that `DefaultAzureCredential` looks for credentials lives in the [`Azure Identity library overview`](/dotnet/api/overview/azure/Identity-readme#defaultazurecredential).
 
 For example, when you run the app locally, `DefaultAzureCredential` discovers and uses credentials from the following developer tools:
 

@@ -2,7 +2,7 @@
 @using Azure.Storage.Blobs
 @using Azure.Storage.Blobs.Models
 
-@inject BlobServiceClient blobservice
+@inject BlobServiceClient blobServiceClient
 
 <h1>Reports</h1>
 
@@ -18,7 +18,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        BlobContainerClient containerClient = blobservice.GetBlobContainerClient("reports");
+        BlobContainerClient containerClient = 
+            blobServiceClient.GetBlobContainerClient("reports");
 
         await foreach (BlobItem blobItem in containerClient.GetBlobsAsync())
         {

@@ -1,4 +1,4 @@
-using Azure.Core;
+﻿using Azure.Core;
 using Azure.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.SemanticKernel;
@@ -94,7 +94,7 @@ class IdentityExamples
         // Build a SemanticMemoryStore with Azure AI Search as the store.
         // Must also include a text embedding generation service.
         ISemanticTextMemory memory = new MemoryBuilder()
-            .WithAzureOpenAITextEmbeddingGeneration(embeddingModel, openAiEndpoint, credentials)
+            .WithOpenAITextEmbeddingGeneration(embeddingModel, openAiEndpoint)
             .WithMemoryStore(memoryStore)
             .Build();
         // </aiStore>
@@ -165,7 +165,7 @@ class IdentityExamples
         // Build a SemanticMemoryStore with Azure AI Search as the store.
         // Must also include a text embedding generation service.
         ISemanticTextMemory memory = new MemoryBuilder()
-            .WithAzureOpenAITextEmbeddingGeneration(embeddingModel, openAiEndpoint, credentials)
+            .WithOpenAITextEmbeddingGeneration(embeddingModel, openAiEndpoint)
             .WithMemoryStore(memoryStore)
             .Build();
         // </redisStore>

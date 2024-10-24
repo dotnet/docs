@@ -1,12 +1,12 @@
 ---
 title: Architecture for Distributed Cloud-Native Apps with .NET & Containers
 description: Learn how to build distributed cloud-native applications with .NET and containers.
-ms.date: 10/23/2024
+ms.date: 10/24/2024
 ---
 
 # Architecture for Distributed Cloud-Native Apps with .NET & Containers
 
-![cover image Architecture for Distributed Cloud-Native Apps with .NET & Containers](https://placehold.co/613x793/cyan/magenta.png?text=James,%20we%20need%20this!&font=roboto)
+![cover image Architecture for Distributed Cloud-Native Apps with .NET & Containers](./media/cover.png)
 
 DOWNLOAD available at: <https://aka.ms/aspireebook>
 
@@ -36,11 +36,13 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-<!-- TODO: James to fill in... -->
+> **[Geoff Allix](https://github.com/GeoffAllix)**, Chief Technologist, Civica
+
+> **[Alistair Matthews](https://github.com/alistairmatthews)**, Principal Technologist, Civica
 
 Participants and Reviewers:
 
-<!-- TODO: James to fill in... -->
+> **[James Montemagno](https://github.com/jamesmontemagno)**, Principal Lead Program Manager, Developer Community, Microsoft
 
 > **[David Pine](https://github.com/IEvangelist)**, Senior Content Developer, .NET Aspire, Microsoft
 
@@ -50,7 +52,7 @@ Editors:
 
 ## Acknowledgments
 
-This book was inspired by the [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf) and [Architecting Cloud Native .NET Applications for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) eBooks. Some chapters were adapted from these eBooks to provide a more focused and in-depth look at building enterprise applications using .NET Aspire.
+This book was inspired by the [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf) and [Architecting Cloud Native .NET Applications for Azure](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) eBooks. Some chapters were adapted from these eBooks to provide a more focused and in-depth look at architecting distributed cloud-native applications using .NET Aspire.
 
 ## Introduction
 
@@ -60,13 +62,13 @@ With the advent of .NET Aspire, it's never been a better time to be a .NET devel
 
 This book is for .NET developers that want to learn how to architect and build distributed cloud-native applications using .NET Aspire. The book assumes that you have a basic understanding of .NET and .NET Aspire. If you are new to .NET Aspire, you can learn more about it in the [Building your first app](/dotnet/aspire/get-started/build-your-first-aspire-app) guide in the .NET Aspire documentation.
 
-## How to use the book
+<!-- TODO: James to fill in...
 
-<!-- TODO: James to fill in... -->
+## How to use the book 
 
 ## What this book doesn't cover
 
-<!-- TODO: James to fill in... -->
+-->
 
 ### Additional resources
 

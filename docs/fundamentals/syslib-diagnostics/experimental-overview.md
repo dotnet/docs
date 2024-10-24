@@ -27,7 +27,7 @@ The following table provides an index to the `SYSLIB5XXX` experimental APIs in .
 
 ## Suppress warnings
 
-Using an experimental feature gives you the opportunity to submit feedback on the API shape and functionality before the feature is marked as stable and fully supported. But using the feature produces a warning from the compiler. When you suppress the warning, you acknowledge that the API shape or functionality might change in the next major release. The API might even be removed. You can suppress the warning through a `#pragma` directive in code or a `<NoWarn>` project setting.
+Using an experimental feature gives you the opportunity to submit feedback on the API shape and functionality before the feature is marked as stable and fully supported. But using the feature produces a warning from the compiler. When you suppress the warning, you acknowledge that the API shape or functionality might change in the next major release. The API might even be removed. You can suppress the warning through a `<NoWarn>` project setting (recommended) or a `#pragma` directive in code.
 
 To suppress the warnings in a project file:
 

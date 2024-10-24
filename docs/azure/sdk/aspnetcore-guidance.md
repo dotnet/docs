@@ -47,7 +47,7 @@ Complete the following steps to register the services you need:
 
 3. In the `Program.cs` file of your app, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client for each service. Some services use additional subclients, which you can also register for dependency injection via the `AddClient` extension method.
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,11-16":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,12-15":::
 
 4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint:
 
@@ -120,7 +120,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 The Azure SDK for .NET client libraries can log client library operations to monitor requests and responses to Azure services. When you register an Azure SDK client using the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> is registered with the dependency injection container. This service forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory> to enables you to use the standard ASP.NET Core logging configuration for logging.
 
-The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`. Visit the [Logging with the Azure SDK for .NET](/dotnet/azure/sdk/logging) page to learn more.
+The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`. For more information on these topics and other scenarios, visit the [Logging with the Azure SDK for .NET](/dotnet/azure/sdk/logging) and [Dependency injection with the Azure SDK for .NET](/dotnet/azure/sdk/dependency-injection) pages.
 
 | Azure SDK `EventLevel` | ASP.NET Core `LogLevel` |
 |------------------------|-------------------------|

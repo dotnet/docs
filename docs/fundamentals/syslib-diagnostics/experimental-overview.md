@@ -29,19 +29,6 @@ The following table provides an index to the `SYSLIB5XXX` experimental APIs in .
 
 Using an experimental feature gives you the opportunity to submit feedback on the API shape and functionality before the feature is marked as stable and fully supported. But using the feature produces a warning from the compiler. When you suppress the warning, you acknowledge that the API shape or functionality might change in the next major release. The API might even be removed. You can suppress the warning through a `#pragma` directive in code or a `<NoWarn>` project setting.
 
-To suppress the warnings in code:
-
-```csharp
-// Disable the warning.
-#pragma warning disable SYSLIB5001
-
-// Code that uses an experimental API that produces the diagnostic SYSLIB5001
-//...
-
-// Re-enable the warning.
-#pragma warning restore SYSLIB5001
-```
-
 To suppress the warnings in a project file:
 
 ```xml
@@ -57,6 +44,19 @@ To suppress the warnings in a project file:
    <NoWarn>$(NoWarn);SYSLIB5001;SYSLIB5002;SYSLIB5003</NoWarn>
   </PropertyGroup>
 </Project>
+```
+
+To suppress the warnings in code:
+
+```csharp
+// Disable the warning.
+#pragma warning disable SYSLIB5001
+
+// Code that uses an experimental API that produces the diagnostic SYSLIB5001
+//...
+
+// Re-enable the warning.
+#pragma warning restore SYSLIB5001
 ```
 
 ## See also

@@ -27,7 +27,7 @@ In the sections ahead, you'll explore how to implement these libraries in an ASP
 
 ## Register service clients
 
-The Azure SDK for .NET client libraries provide service clients to connect your app to Azure services such as Azure Blob Storage and Azure Key Vault. Register these services with the dependency container in the `Program.cs` file of your app to make them available to your app via [dependency injection](/aspnet/core/fundamentals/dependency-injection).
+The Azure SDK for .NET client libraries provide service clients to connect your app to Azure services such as Azure Blob Storage and Azure Key Vault. Register these services with the dependency container in the `Program.cs` file of your app to make them available via [dependency injection](/aspnet/core/fundamentals/dependency-injection).
 
 Complete the following steps to register the services you need:
 
@@ -59,7 +59,7 @@ Complete the following steps to register the services you need:
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
 
-    :::code language="razor" source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="5,21":::
+    :::code language="razor" source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="5,21-22":::
 
     ---
 
@@ -67,9 +67,9 @@ For more information, see [Dependency injection with the Azure SDK for .NET](/do
 
 ## Authenticate using Microsoft Entra ID
 
-[Microsoft Entra ID](/entra/fundamentals/whatis) is the recommended approach to authenticate requests to Azure services. This identity service supports [role-based access control (RBAC)](/azure/role-based-access-control/overview) to manage access to Azure resources based on a user's Entra ID account and assigned roles.
+Token-based authentication with [Microsoft Entra ID](/entra/fundamentals/whatis) is the recommended approach to authenticate requests to Azure services. To authorize those requests, [Azure role-based access control (RBAC)](/azure/role-based-access-control/overview) manages access to Azure resources based on a user's Microsoft Entra identity and assigned roles.
 
-Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) client library to implement secretless connections to Azure services in your code with Microsoft Entra ID. The Azure Identity client library provides tools such as [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code. Visit the [Authentication](/dotnet/azure/sdk/authentication) section of the Azure SDK for .NET docs for more details on these topics.
+Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for the aforementioned token-based authentication support. The library provides classes such as [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) to simplify configuring secure connections. `DefaultAzureCredential` supports multiple authentication methods and determines which method should be used at runtime. This approach enables your app to use different authentication methods in different environments (local vs. production) without implementing environment-specific code. Visit the [Authentication](/dotnet/azure/sdk/authentication) section of the Azure SDK for .NET docs for more details on these topics.
 
 > [!NOTE]
 > Many Azure services also allow you to authorize requests using keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key can authorize requests against the associated Azure resource.
@@ -78,13 +78,13 @@ Consider the following use of `DefaultAzureCredential`:
 
 :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
 
-In the preceding code, the `UseCredential` method accepts an instance of `DefaultAzureCredential` to reuse across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and use them to connect to Azure services. The order and locations in which `DefaultAzureCredential` looks for credentials lives in the [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview).
+In the preceding code, the `UseCredential` method accepts an instance of `DefaultAzureCredential` to reuse across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview).
 
 ## Apply configurations
 
 Azure SDK service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
-- [JSON configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify app deployments between environments and reduce hardcoded values.
+- [JSON configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify managing differences in app deployments between environments.
 - Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the URI variables to the client constructors.
 
 Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
@@ -112,7 +112,7 @@ You may want to change default Azure client configurations globally or for a spe
 
     :::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="9-18":::
 
-2. In the `Program.cs` file, the `ConfigureDefaults` extension method `AddAzureClients` retrieves the default settings and applies them to your services:
+2. In the `Program.cs` file, the `ConfigureDefaults` extension method retrieves the default settings and applies them to your services:
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="17-18":::
 
@@ -131,6 +131,6 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 | `Verbose`              | `Debug`                 |
 | `LogAlways`            | `Information`           |
 
-You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#authenticate-using-microsoft-entra-id) section. For example, toggle a the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
+You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#authenticate-using-microsoft-entra-id) section. For example, toggle the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
 :::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="2-8":::

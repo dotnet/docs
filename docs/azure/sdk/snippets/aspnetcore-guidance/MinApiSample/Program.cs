@@ -47,7 +47,7 @@ app.MapGet("/reports", async (BlobServiceClient blobServiceClient) =>
     BlobContainerClient containerClient
         = blobServiceClient.GetBlobContainerClient("reports");
 
-    var reports = new List<BlobItem>();
+    List<BlobItem> reports = new();
     await foreach (BlobItem blobItem in containerClient.GetBlobsAsync())
     {
         reports.Add(blobItem);

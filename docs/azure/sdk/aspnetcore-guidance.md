@@ -47,7 +47,7 @@ Complete the following steps to register the services you need:
 
 3. In the `Program.cs` file of your app, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client for each service. Some services use additional subclients, which you can also register for dependency injection via the `AddClient` extension method.
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,12-15":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,13-15":::
 
 4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint:
 

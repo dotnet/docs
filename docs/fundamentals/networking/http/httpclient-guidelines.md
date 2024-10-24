@@ -3,7 +3,7 @@ title: HttpClient guidelines for .NET
 description: Learn about using HttpClient instances to send HTTP requests and how you can manage clients using IHttpClientFactory in your .NET apps.
 author: gewarren
 ms.author: gewarren
-ms.date: 03/08/2024
+ms.date: 10/23/2024
 ---
 
 # Guidelines for using HttpClient
@@ -101,4 +101,4 @@ The preceding code:
 - [HTTP support in .NET](http-overview.md)
 - [HTTP client factory with .NET](../../../core/extensions/httpclient-factory.md)
 - [Make HTTP requests with the HttpClient](httpclient.md)
-- [Use IHttpClientFactory to implement resilient HTTP requests](../../../architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md)
+- [Build resilient HTTP apps: Key development patterns](../../../core/resilience/http-resilience.md)

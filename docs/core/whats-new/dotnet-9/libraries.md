@@ -499,22 +499,11 @@ For more information, see [JSON schema exporter](../../../standard/serialization
 
 <xref:System.Text.Json> now recognizes nullability annotations of properties and can be configured to enforce those during serialization and deserialization using the <xref:System.Text.Json.JsonSerializerOptions.RespectNullableAnnotations> flag.
 
-The following code shows how to set the option (the `Book` type definition is shown in the previous section):
+The following code shows how to set the option:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="RespectNullable":::
 
-> [!NOTE]
-> Due to how nullability annotations are represented in IL, the feature is restricted to annotations of non-generic properties.
-
-You can also enable this setting globally using the `System.Text.Json.Serialization.RespectNullableAnnotationsDefault` feature switch in your project file (for example, _.csproj_ file):
-
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.RespectNullableAnnotationsDefault" Value="true" />
-</ItemGroup>
-```
-
-You can configure nullability at an individual property level using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsGetNullable> and <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsSetNullable> properties.
+For more information, see [Respect nullable annotations](../../../standard/serialization/system-text-json/nullable-annotations.md).
 
 ### Require non-optional constructor parameters
 
@@ -528,15 +517,7 @@ The `MyPoco` type is defined as follows:
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Poco":::
 
-You can also enable this setting globally using the `System.Text.Json.Serialization.RespectRequiredConstructorParametersDefault` feature switch in your project file (for example, _.csproj_ file):
-
-```xml
-<ItemGroup>
-  <RuntimeHostConfigurationOption Include="System.Text.Json.Serialization.RespectRequiredConstructorParametersDefault" Value="true" />
-</ItemGroup>
-```
-
-As with earlier versions of <xref:System.Text.Json>, you can configure whether individual properties are required using the <xref:System.Text.Json.Serialization.Metadata.JsonPropertyInfo.IsRequired?displayProperty=nameWithType> property.
+For more information, see [Non-optional constructor parameters](../../../standard/serialization/system-text-json/required-properties.md#non-optional-constructor-parameters).
 
 ### Order JsonObject properties
 
@@ -561,6 +542,8 @@ enum MyEnum
     Value2 = 2,
 }
 ```
+
+For more information, see [Custom enum member names](../../../standard/serialization/system-text-json/customize-properties.md#custom-enum-member-names).
 
 ### Stream multiple JSON documents
 

@@ -1,0 +1,29 @@
+﻿@page "/"
+@using Azure.Storage.Blobs
+@using Azure.Storage.Blobs.Models
+
+@inject BlobServiceClient blobServiceClient
+
+<h1>Reports</h1>
+
+<ul>
+    @foreach (var report in reports)
+    {
+        <li>@report.Name</li>
+    }
+</ul>
+
+@code {
+    List<BlobItem> reports = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        BlobContainerClient containerClient = 
+            blobServiceClient.GetBlobContainerClient("reports");
+
+        await foreach (BlobItem blobItem in containerClient.GetBlobsAsync())
+        {
+            reports.Add(blobItem);
+        }
+    }
+}

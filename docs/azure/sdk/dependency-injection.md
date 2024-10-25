@@ -42,15 +42,15 @@ In the *Program.cs* file, invoke the <xref:Microsoft.Extensions.Azure.AzureClien
 
 ### [WebApplicationBuilder](#tab/web-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="11-32":::
+:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="11-35":::
 
 ### [HostApplicationBuilder](#tab/host-app-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="13-36":::
+:::code language="csharp" source="snippets/dependency-injection/HostApplicationBuilder/Program.cs" highlight="13-39":::
 
 ### [HostBuilder](#tab/host-builder)
 
-:::code language="csharp" source="snippets/dependency-injection/HostBuilder/Program.cs" id="snippet_HostBuilder" highlight="12-32":::
+:::code language="csharp" source="snippets/dependency-injection/HostBuilder/Program.cs" id="snippet_HostBuilder" highlight="12-35":::
 
 ---
 

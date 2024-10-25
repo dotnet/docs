@@ -283,3 +283,23 @@ this isn't required. Following is an example `EventListener` implementation that
 > - **Avoid Complex Operations**: Refrain from performing complex operations within the callback that might acquire additional locks. For example, during some event callbacks, attempting to use File or Console APIs may encounter issues. Instead, you can update an in-memory datastructure or add some information about the event to a queue. If more processing is needed it can be done from a separate thread after the callback has already returned.
 > - **Minimize Lock Duration**: Ensure that any locks acquired within the callback are not held for extended periods.
 > - **Use Non-blocking APIs**: Prefer using non-blocking APIs within the callback to avoid potential deadlocks.
+> - **Implement Re-entrancy Guard**: Use a re-entrancy guard to prevent infinite recursion. For example:
+>
+>   ```csharp
+>   [ThreadStatic] private static bool t_insideCallback;
+>
+>   public void OnEventWritten(...)
+>   {
+>       if (t_insideCallback) return; // if our callback triggered the event to occur recursively
+>                                     // exit now to avoid infinite recursion
+>       try
+>       {
+>           t_insideCallback = true;
+>           // do callback work
+>       }
+>       finally
+>       {
+>           t_insideCallback = false;
+>       }
+>   }
+>   ```

@@ -276,7 +276,7 @@ this isn't required. Following is an example `EventListener` implementation that
 > [!WARNING]
 > Potential Pitfalls when implementing EventSource Callbacks via EventListener include deadlocks, infinite recursions, and uninitialized types.
 >
-> When implementing EventSources, be cautious with invoking lock-acquiring APIs within EventSource callbacks. EventSource instances are initialized early in the runtime, before some core features are fully initialized. As a result, the re-entrant behavior of EventSource callbacks may cause deadlocks if the callback attempts to acquire locks already held by the thread that triggered the callback.
+> EventSource instances are initialized early in the runtime, before some core features are fully initialized. As a result, acquiring locks inside an EventSource callback like <xref:System.Diagnostics.Tracing.EventListener.OnEventWritten%2A> when the thread normally would not have done so may cause deadlocks.
 >
 > To mitigate this risk, consider the following precautions:
 >

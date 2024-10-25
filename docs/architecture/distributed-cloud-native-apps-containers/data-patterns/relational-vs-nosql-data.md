@@ -1,10 +1,10 @@
 ---
-title: Relational versus NoSQL data
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Relational versus NoSQL data
+title: Relational and NoSQL data
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Relational and NoSQL data
 ms.date: 10/23/2024
 ---
 
-# Relational versus NoSQL data
+# Relational and NoSQL data
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

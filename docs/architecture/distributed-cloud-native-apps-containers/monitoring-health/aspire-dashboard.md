@@ -1,10 +1,10 @@
 ---
-title: .NET Aspire dashboard
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | .NET Aspire dashboard
+title: The .NET Aspire dashboard
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | The .NET Aspire dashboard
 ms.date: 10/23/2024
 ---
 
-# .NET Aspire dashboard
+# The .NET Aspire dashboard
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

@@ -1,10 +1,10 @@
 ---
-title: Service discovery introduction
+title: Service discovery
 description: Cloud-native service to service communication patterns | Service discovery
 ms.date: 10/23/2024
 ---
 
-# Service discovery introduction
+# Service discovery
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 

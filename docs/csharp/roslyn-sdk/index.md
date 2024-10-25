@@ -121,9 +121,9 @@ practices.
 ## Source generators
 
 Source generators aim to enable *compile time metaprogramming*, that is, code that can be created
-at compile time and added to the compilation. Source generators will be able to read the contents of
-the compilation before running, as well as access any *additional files*, enabling generators to
-introspect both user C# code and generator specific files. You can learn how to build incremental
+at compile time and added to the compilation. Source generators are able to read the contents of
+the compilation before running, as well as access any *additional files*. This ability enables them to
+introspect both user C# code and generator-specific files. You can learn how to build incremental
 source generators using the [source generator cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.cookbook.md).
 
 ## Next steps

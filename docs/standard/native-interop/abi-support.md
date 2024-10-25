@@ -10,14 +10,14 @@ ms.date: 10/25/2024
 ## Support table
 
 |   | Support | APIs |
-|---|---------|----------------|
-| **C**                          | ✔️       | <xref:System.Runtime.InteropServices.LibraryImportAttribute> provides source generated support in .NET 7+. Use <xref:System.Runtime.InteropServices.DllImportAttribute> when targeting earlier .NET versions. |
-| **C++**                        | ❌       | [Guidance](#cpp) |
-| **COM and `IUnknown`**         | ✔️       | In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. The built-in COM interop system is limited to the Windows platforms and required on versions prior to .NET 5. |
-| **Swift**                      | ✔️       | For .NET 9+, <xref:System.Runtime.InteropServices.Swift> namespace.      |
-| **Objective-C**                | ✔️       | For .NET 8+, <xref:System.Runtime.InteropServices.ObjectiveC> namespace. |
-| **golang**                     | ❌       | [Guidance](#golang) |
-| **ARM64EC**                    | ❌       | [Note](#arm64ec)    |
+|---|---------|------|
+| **C**                  | ✔️ | <xref:System.Runtime.InteropServices.LibraryImportAttribute> provides source generated support in .NET 7+. Use <xref:System.Runtime.InteropServices.DllImportAttribute> when targeting earlier .NET versions. Refer to [Interop best practices](./best-practices.md) for additional guidance. |
+| **C++**                | ❌ | [Guidance](#cpp) |
+| **COM and `IUnknown`** | ✔️ | In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. The built-in COM interop system is limited to the Windows platforms and required on versions prior to .NET 5. |
+| **Swift**              | ✔️ | For .NET 9+, <xref:System.Runtime.InteropServices.Swift> namespace.      |
+| **Objective-C**        | ✔️ | For .NET 8+, <xref:System.Runtime.InteropServices.ObjectiveC> namespace. |
+| **golang**             | ❌ | [Guidance](#golang) |
+| **ARM64EC**            | ❌ | [Note](#arm64ec)    |
 
 ### <a name="cpp"></a> C++
 

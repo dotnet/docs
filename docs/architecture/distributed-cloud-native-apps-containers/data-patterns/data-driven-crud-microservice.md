@@ -16,13 +16,13 @@ From a design point of view, this type of containerized microservice is very sim
 
 ![Diagram showing a simple CRUD microservice internal design pattern.](media/internal-design-simple-crud-microservices.png)
 
-**Figure 6-4**. Internal design for simple CRUD microservices
+**Figure 8-15**. Internal design for simple CRUD microservices
 
 An example of this kind of simple data-drive service is the catalog microservice from the eShop Reference Architecture sample application. This type of service implements all its functionality in a single ASP.NET Core Web API project that includes classes for its data model, its business logic, and its data access code. It also stores its related data in a database running in SQL Server (as another container for dev/test purposes), but could also be any regular SQL Server host:
 
 ![Diagram showing a data-driven/CRUD microservice container.](media/simple-data-driven-crud-microservice.png)
 
-**Figure 6-5**. Simple data-driven/CRUD microservice design
+**Figure 8-16**. Simple data-driven/CRUD microservice design
 
 This diagram shows the logical Catalog microservice, that includes its Catalog database, which can be or not in the same Docker host. Having the database in the same Docker host might be good for development, but not for production. When you are developing this kind of service, you only need [ASP.NET Core](/aspnet/core/) and a data-access API or ORM like [Entity Framework Core](/ef/core/index).
 
@@ -36,13 +36,13 @@ To implement a simple CRUD microservice using .NET and Visual Studio, you start 
 
 ![Screenshot of Visual Studios showing the set up of the project.](media/create-asp-net-core-web-api-project.png)
 
-**Figure 6-6**. Creating an ASP.NET Core Web API project in Visual Studio 2019
+**Figure 8-17**. Creating an ASP.NET Core Web API project in Visual Studio 2019
 
 To create an ASP.NET Core Web API Project, first select an ASP.NET Core Web Application and then select the API type. After creating the project, you can implement your MVC controllers as you would in any other Web API project, using the Entity Framework API or other API. In a new Web API project, you can see that the only dependency you have in that microservice is on ASP.NET Core itself.
 
 ![Screenshot of VS showing the NuGet dependencies of Catalog.Api](media/simple-crud-web-api-microservice-dependencies.png)
 
-**Figure 6-7**. Dependencies in a simple CRUD Web API microservice
+**Figure 8-18**. Dependencies in a simple CRUD Web API microservice
 
 The API project includes references to Microsoft.AspNetCore.App NuGet package, that includes references to all essential packages. It could include some other packages as well.
 
@@ -247,7 +247,7 @@ This means you can complement your API with a nice discovery UI to help develope
 
 ![Screenshot of Swagger API Explorer displaying eShopOContainers API.](media/swagger-metadata-eshoponcontainers-catalog-microservice.png)
 
-**Figure 6-8**. Swashbuckle API Explorer based on Swagger metadata—eShopOnContainers catalog microservice
+**Figure 8-19**. Swashbuckle API Explorer based on Swagger metadata—eShopOnContainers catalog microservice
 
 The Swashbuckle generated Swagger UI API documentation includes all published actions. The API explorer is not the most important thing here. You can use tools like [swagger-codegen](https://github.com/swagger-api/swagger-codegen) which allow code generation of API client libraries, server stubs, and documentation automatically.
 
@@ -285,11 +285,11 @@ Once this is done, you can start your application and browse the following Swagg
   http://<your-root-url>/swagger/
 ```
 
-You previously saw the generated UI created by Swashbuckle for a URL like `http://<your-root-url>/swagger`. In Figure 6-9, you can also see how you can test any API method.
+You previously saw the generated UI created by Swashbuckle for a URL like `http://<your-root-url>/swagger`. In Figure 8-20, you can also see how you can test any API method.
 
 ![Screenshot of Swagger UI showing available testing tools.](media/swashbuckle-ui-testing.png)
 
-**Figure 6-9**. Swashbuckle UI testing the Catalog/Items API method
+**Figure 8-20**. Swashbuckle UI testing the Catalog/Items API method
 
 The Swagger UI API detail shows a sample of the response and can be used to execute the real API, which is great for developer discovery.
 

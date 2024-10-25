@@ -138,6 +138,8 @@ Then you can use Grafana to create dashboards and view the metrics gathered by P
 
 ![A screenshot of a Grafana dashboard.](media/grafana.png)
 
+**Figure 10-6**. The Grafana dashboard
+
 To do configure Grafana, you:
 
 1. Add a Grafana container for your app, in the same way as Prometheus.

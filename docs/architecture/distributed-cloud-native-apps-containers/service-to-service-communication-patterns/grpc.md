@@ -52,17 +52,17 @@ gRPC is integrated into .NET Core 3.0 SDK and later. The following tools support
 - Visual Studio Code
 - The `dotnet` CLI
 
-The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 6-20 shows a Visual Studio 2022 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
+The SDK includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 6-12 shows a Visual Studio 2022 template that scaffolds a skeleton project for a gRPC service. Note how .NET fully supports Windows, Linux, and macOS.
 
 ![gRPC Support in Visual Studio 2022 diagram](./media/visual-studio-2022-grpc-template.png)
 
-**Figure 6-18**. gRPC support in Visual Studio 2022
+**Figure 6-13**. gRPC support in Visual Studio 2022
   
-Figure 6-19 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2022.  
+Figure 6-14 shows the skeleton gRPC service generated from the built-in scaffolding included in Visual Studio 2022.
 
 ![gRPC project in Visual Studio 2022 diagram](./media/grpc-project.png  )
 
-**Figure 6-19**. gRPC project in Visual Studio 2022
+**Figure 6-14**. gRPC project in Visual Studio 2022
 
 In the previous figure, note the proto description file and service code. As you'll see shortly, Visual Studio generates additional configuration in both the Startup class and underlying project file.
 
@@ -88,7 +88,7 @@ The microservice reference architecture, [eShop Reference Application](https://g
 
 ![Backend architecture for eShop application diagram](./media/eshop-architecture.png)
 
-**Figure 6-20**. Backend architecture for eShop application
+**Figure 6-15**. Backend architecture for eShop application
 
 The eShop App Workshop adds gRPC as a worked example in the [Add shopping basket capabilities to the web site lab](https://github.com/dotnet-presentations/eshop-app-workshop/tree/main/labs/4-Add-Shopping-Basket)
 

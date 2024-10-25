@@ -27,11 +27,11 @@ Then there are legacy systems. While we'd all like to build new applications, we
 
 ## Modernizing legacy apps
 
-The free Microsoft e-book [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook) provides guidance about migrating on-premises workloads into the cloud. Figure 1-10 shows that there isn't a single, one-size-fits-all strategy for modernizing legacy applications.
+The free Microsoft e-book [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook) provides guidance about migrating on-premises workloads into the cloud. Figure 1-8 shows that there isn't a single, one-size-fits-all strategy for modernizing legacy applications.
 
 ![Strategies for migrating legacy workloads](./media/strategies-for-migrating-legacy-workloads.png)
 
-**Figure 1-10**. Strategies for migrating legacy workloads
+**Figure 1-8**. Strategies for migrating legacy workloads
 
 Monolithic apps that are non-critical might benefit from a quick **lift-and-shift** migration. Here, the on-premises workload is moved to a cloud-based virtual machine (VM), without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-iaas/). Azure includes several tools such as [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/) to help streamline the move. While this strategy can yield some cost savings, such applications typically weren't designed to unlock and leverage the benefits of cloud computing.
 

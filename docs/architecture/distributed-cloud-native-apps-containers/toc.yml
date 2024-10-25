@@ -18,7 +18,7 @@ items:
             href: introduction-containers-docker/what-is-docker.md
           - name: Container terminology
             href: introduction-containers-docker/container-terminology.md
-          - name: Official .NET container images & SDK tooling
+          - name: Official .NET container images and SDK tooling
             href: introduction-containers-docker/official-container-images-tooling.md
       - name: Introduction to .NET Aspire
         items:
@@ -28,7 +28,7 @@ items:
             href: introduction-dotnet-aspire/orchestration.md
           - name: Service discovery
             href: introduction-dotnet-aspire/service-discovery.md
-          - name: Integrations
+          - name: .NET Aspire integrations
             href: introduction-dotnet-aspire/integrations.md
           - name: Observability and dashboard
             href: introduction-dotnet-aspire/observability-and-dashboard.md
@@ -48,7 +48,7 @@ items:
         items:
           - name: Introduction
             href: service-to-service-communication-patterns/introduction.md
-          - name: Service discovery introduction
+          - name: Service discovery
             href: service-to-service-communication-patterns/service-discovery.md
           - name: Service-to-service communication
             href: service-to-service-communication-patterns/service-to-service-communication.md
@@ -62,7 +62,7 @@ items:
             href: event-based-communication-patterns/integration-event-based-microservice-communications.md
           - name: Implementing an event bus with RabbitMQ
             href: event-based-communication-patterns/rabbitmq-event-bus-development-test-environment.md
-          - name: Implement background tasks in microservices
+          - name: Implementing background tasks in microservices
             href: event-based-communication-patterns/background-tasks-with-ihostedservice.md
           - name: Subscribing to events
             href: event-based-communication-patterns/subscribe-events.md
@@ -70,7 +70,7 @@ items:
         items:
           - name: Data patterns for distributed applications
             href: data-patterns/distributed-data.md
-          - name: Relational versus NoSQL data
+          - name: Relational and NoSQL data
             href: data-patterns/relational-vs-nosql-data.md
           - name: Caching in a cloud-native application
             href: data-patterns/azure-caching.md
@@ -88,7 +88,7 @@ items:
             href: cloud-native-resiliency/resilient-communication.md
           - name: Add resiliency with .NET
             href: cloud-native-resiliency/resiliency-with-aspire.md
-      - name: Monitoring, Diagnostics, and Health
+      - name: Monitoring, diagnostics, and health
         items:
           - name: Observability patterns
             href: monitoring-health/observability-patterns.md
@@ -96,7 +96,7 @@ items:
             href: monitoring-health/open-telemetry-grafana-prometheus.md
           - name: Health checks and probes
             href: monitoring-health/health-checks-probes.md
-          - name: .NET Aspire dashboard
+          - name: The .NET Aspire dashboard
             href: monitoring-health/aspire-dashboard.md
           - name: Observability platforms
             href: monitoring-health/observability-platforms.md
@@ -130,7 +130,7 @@ items:
             href: testing-distributed-apps/challenges-of-distributed-app-testing.md
           - name: Testing ASP.NET Core services and web apps
             href: testing-distributed-apps/test-aspnet-core-services-web-apps.md
-          - name: How .NET Aspire helps
+          - name: How .NET Aspire helps testing
             href: testing-distributed-apps/how-aspire-helps.md
       - name: API Gateways
         items:
@@ -142,7 +142,7 @@ items:
         items:
           - name: Deploying distributed apps
             href: deploying-distributed-apps/how-deployment-affects-your-architecture.md
-          - name: Development vs. production
+          - name: Development and production
             href: deploying-distributed-apps/development-vs-production.md
           - name: Deployment with or without .NET Aspire
             href: deploying-distributed-apps/deploy-with-dotnet-aspire.md

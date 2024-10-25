@@ -1,9 +1,9 @@
 ---
-title: Implement background tasks in microservices with IHostedService and the BackgroundService class
+title: Implementing background tasks in microservices
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the new ways to use IHostedService and BackgroundService to implement background tasks in microservices.
 ms.date: 10/23/2024
 ---
-# Implement background tasks in microservices with IHostedService and the BackgroundService class
+# Implementing background tasks in microservices
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
@@ -13,11 +13,11 @@ Background tasks and scheduled jobs are something you might need to use in any a
 
 From a generic point of view, in .NET we called these type of tasks **hosted services**, because they are services that you host within your application or microservice. Note that in this case, the hosted service simply means a class with the background task logic.
 
-Since .NET Core 2.0, the framework provides a new interface named <xref:Microsoft.Extensions.Hosting.IHostedService>, which helps you to implement hosted services easily. The basic idea is that you can register multiple background tasks (hosted services) that run in the background while your web host or host is running, as shown in the image 7-26.
+Since .NET Core 2.0, the framework provides a new interface named <xref:Microsoft.Extensions.Hosting.IHostedService>, which helps you to implement hosted services easily. The basic idea is that you can register multiple background tasks (hosted services) that run in the background while your web host or host is running, as shown in the image 7-5.
 
 ![Diagram comparing ASP.NET Core IWebHost and .NET Core IHost.](./media/ihosted-service-webhost-vs-host.png)
 
-**Figure 7-26**. Using IHostedService in a WebHost or a Host
+**Figure 7-5**. Using IHostedService in a WebHost or a Host
 
 ASP.NET Core 1.x and 2.x support `IWebHost` for background processes in web apps. .NET Core 2.1 and later versions support `IHost` for background processes with plain console apps. Note the difference made between `WebHost` and `Host`.
 
@@ -80,7 +80,7 @@ The following image shows a visual summary of the classes and interfaces involve
 
 ![Class diagram showing the multiple classes and interfaces related to IHostedService.](./media/class-diagram-custom-ihostedservice.png)
 
-**Figure 7-27**. Class diagram showing the multiple classes and interfaces related to IHostedService
+**Figure 7-6**. Class diagram showing the multiple classes and interfaces related to IHostedService
 
 `IWebHost` and `IHost` can host many services, which inherit from `BackgroundService`, which implements `IHostedService`.
 

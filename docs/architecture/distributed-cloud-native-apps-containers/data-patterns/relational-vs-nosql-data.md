@@ -1,10 +1,10 @@
 ---
-title: Relational versus NoSQL data
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Relational versus NoSQL data
+title: Relational and NoSQL data
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | Relational and NoSQL data
 ms.date: 10/23/2024
 ---
 
-# Relational versus NoSQL data
+# Relational and NoSQL data
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
@@ -18,7 +18,7 @@ NoSQL databases include several different models for accessing and managing data
 
 ![A diagram showing NoSQL data models.](media/types-of-nosql-datastores.png)
 
-**Figure 5-9**: Data models for NoSQL databases
+**Figure 8-8**: Data models for NoSQL databases
 
 | Model | Characteristics |
 | :-------- | :-------- |
@@ -33,7 +33,7 @@ As a way to understand the differences between these types of databases, conside
 
 ![A diagram showing CAP theorem.](media/cap-theorem.png)
 
-**Figure 5-10**. The CAP theorem
+**Figure 8-9**. The CAP theorem
 
 The theorem states that a databases in distributed data systems can only guarantee *two* of the following three properties:
 
@@ -74,11 +74,11 @@ They can be configured across cloud availability zones and regions to achieve hi
 
 ## Azure relational databases
 
-For cloud-native microservices that require relational data, Azure offers four managed relational databases as a service (DBaaS) offerings, shown in Figure 5-11.
+For cloud-native microservices that require relational data, Azure offers four managed relational databases as a service (DBaaS) offerings, shown in Figure 8-10.
 
 ![A diagram showing managed relational databases in Azure.](media/azure-managed-databases.png)
 
-**Figure 5-11**. Managed relational databases available in Azure
+**Figure 8-10**. Managed relational databases available in Azure
 
 The features shown in the figure are especially important to organizations who provision large numbers of databases, but have limited resources to administer them. You can provision an Azure database in minutes by selecting the amount of processing cores, memory, and underlying storage. You can scale the database on-the-fly and dynamically adjust resources with little to no downtime.
 
@@ -115,11 +115,11 @@ You can easily self-host any open-source database on an Azure VM. But this means
 
 Cosmos DB is a fully managed, globally distributed NoSQL database service in the Azure cloud. It has been adopted by many large companies across the world, including Coca-Cola, Skype, ExxonMobil, and Liberty Mutual.
 
-If your services require fast response from anywhere in the world, high availability, or elastic scalability, Cosmos DB is a great choice. Figure 5-12 shows Cosmos DB.
+If your services require fast response from anywhere in the world, high availability, or elastic scalability, Cosmos DB is a great choice. Figure 8-11 shows Cosmos DB.
 
 ![A diagram showing overview of Cosmos DB.](media/cosmos-db-overview.png)
 
-**Figure 5-12**: Overview of Azure Cosmos DB
+**Figure 8-11**: Overview of Azure Cosmos DB
 
 The previous figure presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we'll take a closer look at them.
 
@@ -160,11 +160,11 @@ Cloud-native services with distributed data rely on replication and must make a 
 
 Most distributed databases allow developers to choose between two consistency models: strong consistency and eventual consistency. **Strong consistency** is the gold standard of data programmability. It guarantees that a query will always return the most current data - even if the system must incur latency waiting for an update to replicate across all database copies. While a database configured for **eventual consistency** will return data immediately, even if that data isn't the most current copy. The latter option enables higher availability, greater scale, and increased performance.
 
-Azure Cosmos DB offers five well-defined [consistency models](/azure/cosmos-db/consistency-levels) shown in Figure 5-13.
+Azure Cosmos DB offers five well-defined [consistency models](/azure/cosmos-db/consistency-levels) shown in Figure 8-12.
 
 ![A diagram showing Cosmos DB consistency graph.](media/cosmos-consistency-level-graph.png)
 
-**Figure 5-13**: Cosmos DB Consistency Levels
+**Figure 8-12**: Cosmos DB Consistency Levels
 
 | Consistency Level | Description  |
 | :-------- | :-------- |
@@ -182,11 +182,11 @@ Containers live in a Cosmos DB database and represent a schema-agnostic grouping
 
 Don't get Cosmos DB containers confused with the virtualization containers we've discussed elsewhere in this book. They are data storage entities in a database, not a code execution environment.
 
-To partition the container, items are divided into distinct subsets called logical partitions. Logical partitions are populated based on the value of a partition key that is associated with each item in a container. Figure 5-14 shows two containers each with a logical partition based on a partition key value:
+To partition the container, items are divided into distinct subsets called logical partitions. Logical partitions are populated based on the value of a partition key that is associated with each item in a container. Figure 8-13 shows two containers each with a logical partition based on a partition key value:
 
 ![A diagram showing Cosmos DB partitioning mechanics.](media/cosmos-db-partitioning.png)
 
-**Figure 5-14**: Cosmos DB partitioning mechanics
+**Figure 8-13**: Cosmos DB partitioning mechanics
 
 ## Using databases in a .NET Aspire app
 

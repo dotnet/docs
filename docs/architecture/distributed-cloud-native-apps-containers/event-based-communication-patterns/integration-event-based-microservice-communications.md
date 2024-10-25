@@ -10,13 +10,13 @@ ms.date: 10/23/2024
 
 When you use [event-based communication](/azure/architecture/guide/architecture-styles/event-driven), a [microservice](/azure/architecture/microservices/) publishes an event when something notable happens, such as when a product is added to a customer's basket. Other microservices subscribe to those events. When a microservice receives an event, it can update its own business entities, which might lead to more events being published. This is the essence of the eventual consistency concept. This [publish/subscribe](/azure/architecture/patterns/publisher-subscriber) system is usually performed by using an event bus. You can design the event bus as an interface with the API needed to subscribe and unsubscribe to events and to publish events. It can also have one or more implementations based on any inter-process or messaging communication, such as a messaging queue or a service bus that supports asynchronous communication and a publish/subscribe model.
 
-You can use events to implement business transactions that span multiple services, which give you eventual consistency between those services. An eventually consistent transaction consists of a series of distributed actions. At each action, the microservice updates a business entity and publishes an event that triggers the next action. Be aware that transactions don't span the underlying persistence and event bus, so [idempotence needs to be handled](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#idempotent-message-processing). Figure 7-18 below, shows a `PriceUpdated` event published through an event bus, so the price update is propagated to the Basket and other microservices.
+You can use events to implement business transactions that span multiple services, which give you eventual consistency between those services. An eventually consistent transaction consists of a series of distributed actions. At each action, the microservice updates a business entity and publishes an event that triggers the next action. Be aware that transactions don't span the underlying persistence and event bus, so [idempotence needs to be handled](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform#idempotent-message-processing). Figure 7-1 below, shows a `PriceUpdated` event published through an event bus, so the price update is propagated to the Basket and other microservices.
 
 ![Diagram of asynchronous event-driven communication with an event bus.](./media/event-driven-communication.png)
 
-**Figure 7-18**. Event-driven communication based on an event bus
+**Figure 7-1**. Event-driven communication based on an event bus
 
-This section describes how you can implement this type of communication with .NET by using a generic event bus interface, as shown in Figure 7-18. There are multiple potential implementations, each using a different technology or infrastructure such as RabbitMQ, Azure Service Bus, or any other third-party open-source or commercial service bus.
+This section describes how you can implement this type of communication with .NET by using a generic event bus interface, as shown in Figure 7-1. There are multiple potential implementations, each using a different technology or infrastructure such as RabbitMQ, Azure Service Bus, or any other third-party open-source or commercial service bus.
 
 ## Using message brokers and service buses for production systems
 
@@ -147,11 +147,11 @@ There are only a few kinds of libraries you should share across microservices. O
 
 ## The event bus
 
-An event bus allows publish/subscribe-style communication between microservices without requiring the components to explicitly be aware of each other, as shown in Figure 7-19.
+An event bus allows publish/subscribe-style communication between microservices without requiring the components to explicitly be aware of each other, as shown in Figure 7-2.
 
 ![A diagram showing the basic publish/subscribe pattern.](./media/publish-subscribe-basics.png)
 
-**Figure 7-19**. Publish/subscribe basics with an event bus
+**Figure 7-2**. Publish/subscribe basics with an event bus
 
 The above diagram shows that microservice A publishes to the event bus, which distributes to subscribing microservices B and C, without the publisher needing to know the subscribers. The event bus is related to the observer pattern and the publish-subscribe pattern.
 
@@ -172,13 +172,13 @@ An event bus is typically composed of two parts:
 - The abstraction or interface.
 - One or more implementations.
 
-In Figure 7-19 you can see how, from an application point of view, the event bus is nothing more than a pub/sub channel. The way you implement this asynchronous communication can vary. It can have multiple implementations so that you can swap between them, depending on the environment requirements (for example, production or development environments).
+In Figure 7-2 you can see how, from an application point of view, the event bus is nothing more than a pub/sub channel. The way you implement this asynchronous communication can vary. It can have multiple implementations so that you can swap between them, depending on the environment requirements (for example, production or development environments).
 
-In Figure 7-20, you can see an abstraction of an event bus with multiple implementations based on infrastructure messaging technologies like RabbitMQ, Azure Service Bus, or another event/message broker.
+In Figure 7-3, you can see an abstraction of an event bus with multiple implementations based on infrastructure messaging technologies like RabbitMQ, Azure Service Bus, or another event/message broker.
 
 ![Diagram showing the addition of an event bus abstraction layer.](./media/multiple-implementations-event-bus.png)
 
-**Figure 7- 20.** Multiple implementations of an event bus
+**Figure 7-3** Multiple implementations of an event bus
 
 It's good to have the event bus defined through an interface so it can be implemented with several technologies, like RabbitMQ, Azure Service Bus or others. However, and as mentioned previously, using your own abstractions is good only if you need basic event bus features. If you need richer service bus features, you should probably use the API and abstractions provided by your preferred commercial service bus instead.
 

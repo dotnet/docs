@@ -1,10 +1,10 @@
 ---
-title: .NET Aspire dashboard
-description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | .NET Aspire dashboard
+title: The .NET Aspire dashboard
+description: Architecture for Distributed Cloud-Native Apps with .NET Aspire & Containers | The .NET Aspire dashboard
 ms.date: 10/23/2024
 ---
 
-# .NET Aspire dashboard
+# The .NET Aspire dashboard
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
@@ -14,7 +14,7 @@ The dashboard is available after you add .NET Aspire to your solution. The dashb
 
 ![A screenshot of the .NET Aspire dashboard.](media/aspire-dashboard-projects.png)
 
-**Figure 10-9**. The .NET Aspire dashboard.
+**Figure 10-10**. The .NET Aspire dashboard.
 
 There are five main sections in the dashboard:
 

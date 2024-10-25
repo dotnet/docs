@@ -26,11 +26,11 @@ Also consider caching to avoid repetitive computations. If an operation transfor
 
 ## Caching architecture
 
-Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a cloud-based backing service, separate from the microservices. Figure 5-15 shows the architecture.
+Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a cloud-based backing service, separate from the microservices. Figure 8-14 shows the architecture.
 
 ![A diagram showing how a cache is implemented in a cloud-native app.](media/distributed-data.png)
 
-**Figure 5-15**. Caching in a cloud-native app
+**Figure 8-14**. Caching in a cloud-native app
 
 The previous figure presents a common caching pattern known as the [cache-aside pattern](/azure/architecture/patterns/cache-aside). For an incoming request, you first query the cache (step \#1) for a response. If found, the data is returned immediately. If the data doesn't exist in the cache (known as a [cache miss](https://www.techopedia.com/definition/6308/cache-miss)), it's retrieved from a local database in a downstream service (step \#2). It's then written to the cache for future requests (step \#3), and returned to the caller. Care must be taken to periodically evict cached data so that the system remains timely and consistent.
 

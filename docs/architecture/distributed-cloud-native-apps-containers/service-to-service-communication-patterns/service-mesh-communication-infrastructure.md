@@ -18,7 +18,7 @@ A key component of a service mesh is a proxy. In a cloud-native application, an 
 
 ![Service mesh with a side car diagram](media/service-mesh-with-side-car.png)
 
-**Figure 6-22**. Service mesh with a side car
+**Figure 6-16**. Service mesh with a side car
 
 Note in the previous figure how messages are intercepted by a proxy that runs alongside each microservice. Each proxy can be configured with traffic rules specific to the microservice. It understands messages and can route them across your services and the outside world.
 

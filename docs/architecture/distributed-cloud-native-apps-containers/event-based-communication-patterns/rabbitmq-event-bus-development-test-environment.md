@@ -9,11 +9,11 @@ ms.date: 10/23/2024
 
 We should start by saying that if you create your custom event bus based on [RabbitMQ](https://www.rabbitmq.com/) running in a container, it should be used only for your development and test environments. Don't use it for your production environment, unless you're building it as a part of a production-ready service bus as described in the [Additional resources section below](rabbitmq-event-bus-development-test-environment.md#additional-resources). A simple custom event bus might be missing many production-ready critical features that a commercial service bus has.
 
-The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 7-21.
+The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 7-4.
 
 ![Diagram showing RabbitMQ between message sender and message receiver.](./media/rabbitmq-implementation.png)
 
-**Figure 7-21.** RabbitMQ implementation of an event bus
+**Figure 7-4.** RabbitMQ implementation of an event bus
 
 RabbitMQ functions as an intermediary between a message publisher and subscribers, to handle distribution. In the code, the `EventBusRabbitMQ` class implements the generic `IEventBus` interface. This implementation is based on dependency injection so that you can swap from this development and test version to a production version.
 
@@ -25,7 +25,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
 }
 ```
 
-The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. It has to handle the connection to the RabbitMQ server and publish a message event to the queues. It also has to implement a collection of integration event handlers for each event type. These event types can have a different instantiation and different subscriptions for each receiver microservice, as shown in Figure 7-21.
+The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. It has to handle the connection to the RabbitMQ server and publish a message event to the queues. It also has to implement a collection of integration event handlers for each event type. These event types can have a different instantiation and different subscriptions for each receiver microservice, as shown in Figure 7-4.
 
 ## Implementing a simple publish method with RabbitMQ
 

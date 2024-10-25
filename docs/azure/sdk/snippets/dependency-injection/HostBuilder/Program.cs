@@ -24,6 +24,11 @@ IHost host = Host.CreateDefaultBuilder(args)
                     provider.GetService<ServiceBusClient>().CreateSender(queue)
                 ).WithName(queue);
             }
+
+            // Register a custom client factory
+            clientBuilder.AddClient<AzureOpenAIClient, AzureOpenAIClientOptions>(
+                    (options, _, _) => new AzureOpenAIClient(
+                        new Uri("<url_here>"), new DefaultAzureCredential(), options)); 
         });
     }).Build();
 

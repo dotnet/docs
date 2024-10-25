@@ -27,6 +27,11 @@ IHost host = Host.CreateDefaultBuilder(args)
                     _ => throw new InvalidOperationException("Unable to create ServiceBusClient")
                 }).WithName(queueName);
             }
+
+            // Register a custom client factory
+            clientBuilder.AddClient<AzureOpenAIClient, AzureOpenAIClientOptions>(
+                (options, _, _) => new AzureOpenAIClient(
+                    new Uri("<url_here>"), new DefaultAzureCredential(), options)); 
         });
     }).Build();
 

@@ -40,4 +40,3 @@ It is recommended that users with golang dependencies use a cross-process commun
 ## ARM64EC
 
 There are currently no plans to add support for [ARM64EC](https://learn.microsoft.com/cpp/build/arm64ec-windows-abi-conventions) in .NET 5+.
-

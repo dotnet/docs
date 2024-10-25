@@ -94,7 +94,7 @@ Many improvements have been made in <xref:System.Text.Json?displayProperty=fullN
 
 ### Source generator
 
-.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for <xref:System.Text.Json?displayProperty=fullName>. Source generation works with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. For more information, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation-modes.md) and [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation.md).
+.NET 6 adds a new [source generator](../../csharp/roslyn-sdk/index.md#source-generators) for <xref:System.Text.Json?displayProperty=fullName>. Source generation works with <xref:System.Text.Json.JsonSerializer> and can be configured in multiple ways. It can improve performance, reduce memory usage, and facilitate assembly trimming. For more information, see [How to choose reflection or source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation-modes.md) and [How to use source generation in System.Text.Json](../../standard/serialization/system-text-json/source-generation.md).
 
 ### Writeable DOM
 

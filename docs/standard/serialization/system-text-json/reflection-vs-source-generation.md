@@ -27,7 +27,7 @@ By default, <xref:System.Text.Json.JsonSerializer> collects metadata at run time
 
 ## Source generation
 
-As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/source-generators-overview.md) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. In addition, certain reflection APIs can't be used in [Native AOT applications](../../../core/deploying/native-aot/index.md), so you must use source generation for those apps.
+As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/index.md#source-generators) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size. In addition, certain reflection APIs can't be used in [Native AOT applications](../../../core/deploying/native-aot/index.md), so you must use source generation for those apps.
 
 Source generation can be used in two modes:
 

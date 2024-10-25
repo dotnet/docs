@@ -272,3 +272,14 @@ this isn't required. Following is an example `EventListener` implementation that
    3/24/2022 9:23:35 AM RequestStart
    3/24/2022 9:23:35 AM RequestStop
    ```
+
+> [!WARNING]
+> Potential Deadlocks with EventSource Callbacks
+>
+> When implementing EventSources, be cautious with invoking lock-acquiring APIs within EventSource callbacks. EventSource instances are initialized early in the runtime, before some core features are fully initialized. As a result, the re-entrant behavior of EventSource callbacks may cause deadlocks if the callback attempts to acquire locks already held by the thread that triggered the callback.
+>
+> To mitigate this risk, consider the following precautions:
+>
+> - **Avoid Complex Operations**: Refrain from performing complex operations within the callback that might acquire additional locks.
+> - **Minimize Lock Duration**: Ensure that any locks acquired within the callback are not held for extended periods.
+> - **Use Non-blocking APIs**: Prefer using non-blocking APIs within the callback to avoid potential deadlocks.

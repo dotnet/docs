@@ -9,11 +9,11 @@ ms.date: 10/25/2024
 
 |   | Support | APIs |
 |---|---------|----------------|
-| **C**                          | ✔️       | <xref:System.Runtime.InteropServices.LibraryImportAttribute> <xref:System.Runtime.InteropServices.DllImportAttribute> |
+| **C**                          | ✔️       | <xref:System.Runtime.InteropServices.LibraryImportAttribute> provides source generated support in .NET 7+. Use <xref:System.Runtime.InteropServices.DllImportAttribute> when targeting earlier .NET versions. |
 | **C++**                        | ❌       | [Guidance](#cpp) |
-| **COM and `IUnknown`**         | ✔️       | <xref:System.Runtime.InteropServices.ComWrappers> <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> |
-| **Swift**                      | ✔️       | <xref:System.Runtime.InteropServices.Swift> namespace      |
-| **Objective-C**                | ✔️       | <xref:System.Runtime.InteropServices.ObjectiveC> namespace |
+| **COM and `IUnknown`**         | ✔️       | In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. The built-in COM interop system is limited to the Windows platforms and required on versions prior to .NET 5. |
+| **Swift**                      | ✔️       | For .NET 9+, <xref:System.Runtime.InteropServices.Swift> namespace.      |
+| **Objective-C**                | ✔️       | For .NET 8+, <xref:System.Runtime.InteropServices.ObjectiveC> namespace. |
 | **golang**                     | ❌       | [Guidance](#golang) |
 | **ARM64EC**                    | ❌       | [Note](#arm64ec)    |
 

@@ -16,6 +16,9 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
     clientBuilder.AddServiceBusClientWithNamespace(
         "<your_namespace>.servicebus.windows.net");
+
+    // Set a credential for all clients to use by default
+    DefaultAzureCredential credential = new();
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Register a subclient for each Service Bus Queue
@@ -29,7 +32,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     // Register a custom client factory
     clientBuilder.AddClient<AzureOpenAIClient, AzureOpenAIClientOptions>(
         (options, _, _) => new AzureOpenAIClient(
-            new Uri("<url_here>"), new DefaultAzureCredential(), options)); 
+            new Uri("<url_here>"), credential, options)); 
 });
 
 WebApplication app = builder.Build();

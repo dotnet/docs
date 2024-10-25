@@ -742,7 +742,7 @@ The following codes shows some of the APIs included with the new `Tensor<T>` typ
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Tensors.cs" id="Tensor":::
 
 > [!NOTE]
-> This API is marked as [experimental](../../../fundamentals/apicompat/preview-apis.md#experimentalattribute) for .NET 9.
+> This API is marked as [experimental](../../../fundamentals/syslib-diagnostics/experimental-overview.md) for .NET 9.
 
 ### TensorPrimitives
 

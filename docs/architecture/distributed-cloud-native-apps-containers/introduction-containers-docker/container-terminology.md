@@ -14,7 +14,7 @@ To run the app or service, the app's image is instantiated to create a container
 
 Developers should store images in a registry, which acts as a library of images and is needed when deploying to production orchestrators. Docker maintains a public registry via [Docker Hub](https://hub.docker.com/); other vendors provide registries for different collections of images, including [Azure Container Registry](https://azure.microsoft.com/services/container-registry/). Alternatively, enterprises can have a private registry on-premises for their own Docker images.
 
-Figure 2-4 shows how images and registries in Docker relate to other components. It also shows the multiple registry offerings from vendors.
+Figure 2-5 shows how images and registries in Docker relate to other components. It also shows the multiple registry offerings from vendors.
 
 ![A diagram showing the basic taxonomy in Docker.](media/5-taxonomy-of-docker-terms-and-concepts.png)
 

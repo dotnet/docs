@@ -50,7 +50,7 @@ You can add it to your applications using its NuGet packages. The main package i
 
 ## Configuration
 
-IdentityServer supports different kinds of protocols and social authentication providers that can be configured as part of each custom installation. This is typically done in the ASP.NET Core application's `Program` class (or in the `Startup` class in the `ConfigureServices` method). The configuration involves specifying the supported protocols and the paths to the servers and endpoints that will be used. Figure 11-2 shows an example configuration taken from the IdentityServer Quickstart UI project:
+IdentityServer supports different kinds of protocols and social authentication providers that can be configured as part of each custom installation. This is typically done in the ASP.NET Core application's `Program` class (or in the `Startup` class in the `ConfigureServices` method). The configuration involves specifying the supported protocols and the paths to the servers and endpoints that will be used. The following code shows an example configuration taken from the IdentityServer Quickstart UI project:
 
 ```csharp
 public class Startup

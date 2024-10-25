@@ -14,7 +14,7 @@ The dashboard is available after you add .NET Aspire to your solution. The dashb
 
 ![A screenshot of the .NET Aspire dashboard.](media/aspire-dashboard-projects.png)
 
-**Figure 10-9**. The .NET Aspire dashboard.
+**Figure 10-10**. The .NET Aspire dashboard.
 
 There are five main sections in the dashboard:
 

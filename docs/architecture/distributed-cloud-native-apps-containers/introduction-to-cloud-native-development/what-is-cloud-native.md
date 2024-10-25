@@ -199,11 +199,11 @@ Containerizing a microservice is simple and straightforward. The code, its depen
 
 When an application starts or scales, you transform the container image into a running container instance. The instance runs on any computer that has a [container runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) engine installed. You can have as many instances of the containerized service as needed.
 
-Figure 1-6 shows three different microservices, each in its own container, all running on a single host.
+Figure 1-4 shows three different microservices, each in its own container, all running on a single host.
 
 ![Multiple containers running on a container host](./media/hosting-mulitple-containers.png)
 
-**Figure 1-6**. Multiple containers running on a container host
+**Figure 1-4**. Multiple containers running on a container host
 
 Note how each container maintains its own set of dependencies and runtime, which can be different from one another. Here, we see different versions of the **Product** microservice running on the same host. Each container shares a slice of the underlying host operating system, memory, and processor, but is isolated from the others.
 
@@ -227,11 +227,11 @@ By sharing the underlying operating system and host resources, a container has a
 
 While tools such as Docker create images and run containers, you also need tools to manage them. Container management is done with a special software program called a **container orchestrator**. When operating at scale with many independent running containers, orchestration is essential.
 
-Figure 1-7 shows management tasks that container orchestrators automate.
+Figure 1-5 shows management tasks that container orchestrators automate.
 
 ![What container orchestrators do](./media/what-container-orchestrators-do.png)
 
-**Figure 1-7**. What container orchestrators do
+**Figure 1-5**. What container orchestrators do
 
 The following table describes common orchestration tasks.
 
@@ -260,11 +260,11 @@ You could host your own instance of Kubernetes, but then you'd be responsible fo
 
 Cloud-native systems depend upon many different ancillary resources, such as data stores, message brokers, monitoring, and identity services. These services are known as [backing services](https://12factor.net/backing-services).
 
-Figure 1-8 shows many common backing services that cloud-native systems consume.
+Figure 1-6 shows many common backing services that cloud-native systems consume.
 
 ![Common backing services](./media/common-backing-services.png)
 
-**Figure 1-8**. Common backing services
+**Figure 1-6**. Common backing services
 
 You could host your own backing services, but then you'd be responsible for licensing, provisioning, and managing those resources.
 
@@ -312,11 +312,11 @@ The [Twelve-Factor Application](https://12factor.net/), discussed earlier, calls
 
 Modern CI/CD systems help fulfill this principle. They provide separate build and delivery steps that help ensure consistent and quality code that's readily available to users.
 
-Figure 1-9 shows the separation across the deployment process.
+Figure 1-7 shows the separation across the deployment process.
 
 ![Deployments Steps in CI/CD Pipeline](./media/build-release-run-pipeline.png)
 
-**Figure 1-9**. Deployment steps in a CI/CD Pipeline
+**Figure 1-7**. Deployment steps in a CI/CD Pipeline
 
 In the previous figure, pay special attention to separation of tasks:
 

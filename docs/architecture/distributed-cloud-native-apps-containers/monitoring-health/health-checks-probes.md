@@ -110,11 +110,11 @@ When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health che
 
 ### Query your microservices to report about their health status
 
-When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `host.docker.internal`, as shown in figure 10.6.
+When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `host.docker.internal`, as shown in figure 10-7.
 
 ![Screenshot of the JSON response returned by a health check.](media/health-check-json-response.png)
 
-**Figure 10-6**. Checking health status of a single service from a browser
+**Figure 10-7**. Checking health status of a single service from a browser
 
 In that test, you can see that the `Catalog.API` microservice (running on port 5101) is healthy, returning HTTP status 200 and status information in JSON. The service also checked the health of its SQL Server database dependency and RabbitMQ, so the health check reported itself as healthy.
 
@@ -130,13 +130,13 @@ Fortunately, you have many options to add such a service. For example if you hav
 
 ![Screenshot of the Health Checks UI eShopOnContainers health statuses.](media/health-check-status-ui.png)
 
-**Figure 10-7**. Sample health check report
+**Figure 10-8**. Sample health check report
 
 With the introduction of .NET Aspire, you now get a built-in dashboard that has many of the same features as the open source package. You'll see more about the dashboard in the next section.
 
 ![A screenshot of the .NET Aspire dashboard.](media/aspire-dashboard-projects.png)
 
-**Figure 10-8**. The .NET Aspire dashboard
+**Figure 10-9**. The .NET Aspire dashboard
 
 In summary, a watchdog service queries each microservice's endpoint. This will execute all the health checks defined within it and return an overall health state depending on all those checks. The `HealthChecksUI` is easy to consume with a few configuration entries and two lines of code that needs to be added into the *Startup.cs* of the watchdog service.
 

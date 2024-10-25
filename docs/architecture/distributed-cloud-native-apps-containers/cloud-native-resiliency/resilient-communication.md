@@ -30,7 +30,7 @@ A better approach is an evolving technology entitled *Service Mesh*. A [service 
 
 :::image type="content" source="media/service-mesh-with-side-car.png" alt-text="A diagram showing a service mesh using sidecars." border="false":::
 
-**Figure 9-7**. Service mesh with a sidecar
+**Figure 9-6**. Service mesh with a sidecar
 
 In the previous figure, note how the proxy intercepts and manages communication among the microservices and the cluster.
 
@@ -38,7 +38,7 @@ A service mesh is logically split into two disparate components: A [data plane](
 
 :::image type="content" source="media/istio-control-and-data-plane.png" alt-text="A diagram showing a service mesh control and data plane" border="false":::
 
-**Figure 9-8.** Service mesh control and data plane
+**Figure 9-7.** Service mesh control and data plane
 
 Once configured, a service mesh is highly functional. It can retrieve a corresponding pool of instances from a service discovery endpoint. The mesh can then send a request to a specific instance, recording the latency and response type of the result. A mesh can choose the instance most likely to return a fast response based on many factors, including its observed latency for recent requests.
 

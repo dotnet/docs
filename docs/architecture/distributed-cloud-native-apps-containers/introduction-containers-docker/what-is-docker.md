@@ -12,7 +12,7 @@ ms.date: 10/23/2024
 
 ![Diagram showing the places Docker containers can run.](media/3-docker-containers-run-anywhere.png)
 
-Figure 2-3. Docker deploys containers at all layers of the hybrid cloud.
+**Figure 2-2**. Docker deploys containers at all layers of the hybrid cloud.
 
 Docker containers can run anywhere, on-premises in the customer datacenter, in an external service provider or in the cloud, such as on Azure. Docker containers can run natively on Linux and Windows. However, Windows images can run only on Windows hosts and Linux images can run on Linux hosts and Windows hosts (using a Hyper-V Linux VM), where host means a server or a VM.
 
@@ -36,7 +36,7 @@ Let's examine VMs and containers in more detail to understand their uses.
 
 ![Diagram showing the hardware/software stack of a traditional VM.](media/3-virtual-machine-hardware-software.png)
 
-Figure 3-2. Diagram showing the hardware/software stack of a traditional VM.
+**Figure 2-3**. Diagram showing the hardware/software stack of a traditional VM.
 
 Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization.
 
@@ -44,7 +44,7 @@ Virtual machines include the application, the required libraries or binaries, an
 
 ![Diagram showing the hardware/software stack for Docker containers.](media/3-docker-containers-run-anywhere.png)
 
-Figure 2-4. Diagram showing the hardware/software stack for Docker containers.
+**Figure 2-4**. Diagram showing the hardware/software stack for Docker containers.
 
 Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)
 

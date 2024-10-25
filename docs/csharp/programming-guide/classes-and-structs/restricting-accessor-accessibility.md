@@ -20,7 +20,7 @@ The [get](../../language-reference/keywords/get.md) and [set](../../language-ref
 In this example, a property called `Name` defines a `get` and `set` accessor. The `get` accessor receives the accessibility level of the property itself, `public` in this case, while the `set` accessor is explicitly restricted by applying the [protected](../../language-reference/keywords/protected.md) access modifier to the accessor itself.
 
 > [!NOTE]
-> The examples in this article don't use [auto-implemented properties](./properties.md#auto-implemented-properties). *Auto-implemented properties* provide a concise syntax for declaring properties when a custom backing field isn't required.
+> The examples in this article don't use [automatically implemented properties](./properties.md#auto-implemented-properties). *Automatically implemented properties* provide a concise syntax for declaring properties when a custom backing field isn't required.
 
 ## Restrictions on Access Modifiers on Accessors
 

@@ -112,7 +112,7 @@ An implementation isn't required for a partial method when the signature obeys t
 
 The method and all calls to the method are removed at compile time when there's no implementation.
 
-Any method that doesn't conform to all those restrictions, including properties and indexers, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using auto-implemented properties. The compiler can't distinguish between an auto-implemented property, and the declaring declaration of a partial property.
+Any method that doesn't conform to all those restrictions, including properties and indexers, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using automatically implemented properties. The compiler can't distinguish between an automatically implemented property, and the declaring declaration of a partial property.
 
 Partial methods enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 

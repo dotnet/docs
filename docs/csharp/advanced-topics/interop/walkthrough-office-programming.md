@@ -49,7 +49,7 @@ In **Solution Explorer**, right-click the **ThisAddIn.cs** file and then select 
 
 ## Create a list of bank accounts
 
-In **Solution Explorer**, right-click your project's name, select **Add**, and then select **Class**. Name the class Account.cs. Select **Add**. Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*.
+In **Solution Explorer**, right-click your project's name, select **Add**, and then select **Class**. Name the class Account.cs. Select **Add**. Replace the definition of the `Account` class with the following code. The class definitions use *automatically implemented properties*.
 
 :::code language="csharp" source="./snippets/OfficeWalkthrough/account.cs" id="AccountClass":::
 
@@ -122,13 +122,13 @@ In Visual Studio, select **Clean Solution** on the **Build** menu. Otherwise, th
 
 ## See also
 
-- [Auto-Implemented Properties (C#)](../../programming-guide/classes-and-structs/auto-implemented-properties.md)
-- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
+- [Automatically implemented properties (C#)](../../programming-guide/classes-and-structs/auto-implemented-properties.md)
+- [Object and collection initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 - [Visual Studio Tools for Office (VSTO)](/visualstudio/vsto/visual-studio-tools-for-office-runtime-overview)
-- [Named and Optional Arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
+- [Named and optional arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
-- [Using Type dynamic](using-type-dynamic.md)
-- [Lambda Expressions (C#)](../../language-reference/operators/lambda-expressions.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))
-- [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md)
-- [Walkthrough: Creating Your First VSTO Add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)
+- [Using type dynamic](using-type-dynamic.md)
+- [Lambda expressions (C#)](../../language-reference/operators/lambda-expressions.md)
+- [Walkthrough: Embedding type information from Microsoft Office assemblies in Visual Studio](/previous-versions/visualstudio/visual-studio-2013/ee317478(v=vs.120))
+- [Walkthrough: Embedding types from managed assemblies](../../../standard/assembly/embed-types-visual-studio.md)
+- [Walkthrough: Creating your first VSTO add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)

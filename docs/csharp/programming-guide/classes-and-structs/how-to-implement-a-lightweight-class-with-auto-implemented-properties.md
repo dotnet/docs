@@ -1,15 +1,15 @@
 ---
-title: "How to implement a lightweight class with auto-implemented properties"
-description: Learn how to create an immutable lightweight class in C# that encapsulates auto-implemented properties. There are two implementation approaches.
+title: "How to implement a lightweight class with automatically implemented properties"
+description: Learn how to create an immutable lightweight class in C# that encapsulates automatically implemented properties. There are two implementation approaches.
 ms.date: 07/29/2022
 helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.topic: how-to
 ---
-# How to implement a lightweight class with auto-implemented properties (C# Programming Guide)
+# How to implement a lightweight class with automatically implemented properties
 
-This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.
+This example shows how to create an immutable lightweight class that serves only to encapsulate a set of automatically implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.
 
 You can make an immutable property in the following ways:
 
@@ -44,7 +44,7 @@ class Contact
 
 ## Example
 
-The following example shows two ways to implement an immutable class that has auto-implemented properties. Each way declares one of the properties with a private `set` and one of the properties with a `get` only.  The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.
+The following example shows two ways to implement an immutable class that has automatically implemented properties. Each way declares one of the properties with a private `set` and one of the properties with a `get` only.  The first class uses a constructor only to initialize the properties, and the second class uses a static factory method that calls a constructor.
 
 ```csharp
 // This class is immutable. After an object is created,
@@ -135,7 +135,7 @@ public class Program
 */
 ```
 
-The compiler creates backing fields for each auto-implemented property. The fields aren't accessible directly from source code.
+The compiler creates backing fields for each automatically implemented property. The fields aren't accessible directly from source code.
 
 ## See also
 

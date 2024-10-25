@@ -28,7 +28,7 @@ Because structure types have value semantics, we recommend you define *immutable
 You use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
-- Any property, including auto-implemented ones, must be read-only or [`init` only](../keywords/init.md). Note that init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
+- Any property, including automatically implemented ones, must be read-only or [`init` only](../keywords/init.md). Note that init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
 
 That guarantees that no member of a `readonly` struct modifies the state of the struct. That means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
@@ -62,7 +62,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
   If you need to apply the `readonly` modifier to both accessors of a property or indexer, apply it in the declaration of the property or indexer.
 
   > [!NOTE]
-  > The compiler declares a `get` accessor of an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
+  > The compiler declares a `get` accessor of an [automatically implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
 
   You may apply the `readonly` modifier to a property or indexer with an `init` accessor:
 

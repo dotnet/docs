@@ -8,7 +8,7 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-      - description: Request review from diberry (non-write perms) for code analysis files.
+      - description: (Test policy) Request review for code analysis files.
         if:
           - payloadType: Pull_Request
           - isAction:
@@ -22,17 +22,5 @@ configuration:
                 - diberry
               replyTemplate: "Mentioning as a test: ${mentionees}"
               assignMentionees: true
-              
-      - description: Request review from gewarren and dotnet/docs for ML files.
-        if:
-          - payloadType: Pull_Request
-          - isAction:
-              action: Opened
-          - filesMatchPattern:
-              pattern: docs/machine-learning/*
-              matchAny: true
-        then:
-          - mentionUsers:
-              mentionees:
-                - gewarren
-              replyTemplate: "Mentioning as a test: ${mentionees}"
+          - requestReview:
+              reviewer: BillWagner

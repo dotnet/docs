@@ -31,4 +31,4 @@ The recommended way to interoperate with golang is using a golang hosted process
 
 ## <a name="arm64ec"></a> ARM64EC
 
-The [ARM64EC](https://learn.microsoft.com/cpp/build/arm64ec-windows-abi-conventions) ABI is not supported.
+The [ARM64EC](/cpp/build/arm64ec-windows-abi-conventions) ABI is not supported.

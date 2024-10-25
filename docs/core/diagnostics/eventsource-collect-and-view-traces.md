@@ -280,6 +280,6 @@ this isn't required. Following is an example `EventListener` implementation that
 >
 > To mitigate this risk, consider the following precautions:
 >
-> - **Avoid Complex Operations**: Refrain from performing complex operations within the callback that might acquire additional locks.
+> - **Avoid Complex Operations**: Refrain from performing complex operations within the callback that might acquire additional locks. For example, during some event callbacks, attempting to use File or Console APIs may encounter issues. Instead, you can update an in-memory datastructure or add some information about the event to a queue. If more processing is needed it can be done from a separate thread after the callback has already returned.
 > - **Minimize Lock Duration**: Ensure that any locks acquired within the callback are not held for extended periods.
 > - **Use Non-blocking APIs**: Prefer using non-blocking APIs within the callback to avoid potential deadlocks.

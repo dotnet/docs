@@ -14,6 +14,7 @@
     <PackageReference Include="Microsoft.Extensions.Azure" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Azure.AI.OpenAI" />
   </ItemGroup>
 
 </Project>

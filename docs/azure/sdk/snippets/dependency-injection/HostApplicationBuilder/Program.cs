@@ -3,6 +3,7 @@ using Azure.Messaging.ServiceBus;
 using Azure.Messaging.ServiceBus.Administration;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Hosting;
+using Azure.AI.OpenAI;
 
 List<string> queueNames = await GetQueueNames();
 

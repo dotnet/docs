@@ -61,14 +61,6 @@ In the preceding code:
 * Service Bus subclients are registered for each queue on the service using the subclient and corresponding options types. The queue names for the subclients are retrieved using a separate method outside of the service registration because the `GetQueuesAsync` method must be run asynchronously.
 * An Azure OpenAI client is registered using a custom client factory through the `AddClient<TClient, TOptions>` method, which provides control over how a client instance is created. Custom client factories are useful when you need to use other dependencies during the client construction, or if a service registration extension method does not exist for the service you want to register.
 
-### Register a custom client factory
-
-If you want to take control over how the client instance is created or need to use other dependencies during the client construction use the `AddClient<TClient, TOptions>` method.
-
-Here's an example of how to use `IOptions<T>` instance to construct the client:
-
-:::code language="csharp" source="snippets/dependency-injection/WebApplicationBuilder/Program.cs" id="snippet_WebApplicationBuilder" highlight="10-26":::
-
 ## Use the registered clients
 
 With the clients registered, as described in the [Register clients and subclients](#register-clients-and-subclients) section, you can now use them. In the following example, [constructor injection](../../core/extensions/dependency-injection.md#constructor-injection-behavior) is used to obtain the Blob Storage client and a factory for Service Bus sender subclients in an ASP.NET Core API controller:
@@ -133,7 +125,6 @@ In the [Register clients and subclients](#register-clients-and-subclients) secti
   }
 }
 ```
-
 
 You can add any properties from the <xref:Azure.Core.ClientOptions> class into the JSON file. The settings in the JSON configuration file can be retrieved using <xref:Microsoft.Extensions.Configuration.IConfiguration>.
 

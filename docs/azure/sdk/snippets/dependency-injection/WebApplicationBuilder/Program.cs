@@ -19,7 +19,7 @@ builder.Services.AddAzureClients(clientBuilder =>
 
     // Set a credential for all clients to use by default
     DefaultAzureCredential credential = new();
-    clientBuilder.UseCredential(credential );
+    clientBuilder.UseCredential(credential);
 
     // Register a subclient for each Service Bus Queue
     foreach (string queue in queueNames)

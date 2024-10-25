@@ -60,7 +60,7 @@ Use a composite key when you want to group elements according to more than one k
 group person by new {name = person.surname, city = person.city};
 ```
 
-Use a named type if you must pass the query variable to another method. Create a special class using auto-implemented properties for the keys, and then override the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods. You can also use a struct, in which case you do not strictly have to override those methods. For more information see [How to implement a lightweight class with auto-implemented properties](../../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md) and [How to query for duplicate files in a directory tree](../../linq/how-to-query-files-and-directories.md). The latter article has a code example that demonstrates how to use a composite key with a named type.
+Use a named type if you must pass the query variable to another method. Create a special class using automatically implemented properties for the keys, and then override the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> methods. You can also use a struct, in which case you do not strictly have to override those methods. For more information see [How to implement a lightweight class with automatically implemented properties](../../programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md) and [How to query for duplicate files in a directory tree](../../linq/how-to-query-files-and-directories.md). The latter article has a code example that demonstrates how to use a composite key with a named type.
 
 ## Example 1
 

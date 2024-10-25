@@ -58,7 +58,7 @@ You can try this feature by working with the tutorial on [static abstract member
 
 ## Interface inheritance
 
-Interfaces may not contain instance state. While static fields are now permitted, instance fields aren't permitted in interfaces. [Instance auto-properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) aren't supported in interfaces, as they would implicitly declare a hidden field. This rule has a subtle effect on property declarations. In an interface declaration, the following code doesn't declare an auto-implemented property as it does in a `class` or `struct`. Instead, it declares a property that doesn't have a default implementation but must be implemented in any type that implements the interface:
+Interfaces may not contain instance state. While static fields are now permitted, instance fields aren't permitted in interfaces. [Instance auto-properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) aren't supported in interfaces, as they would implicitly declare a hidden field. This rule has a subtle effect on property declarations. In an interface declaration, the following code doesn't declare an automatically implemented property as it does in a `class` or `struct`. Instead, it declares a property that doesn't have a default implementation but must be implemented in any type that implements the interface:
 
 ```csharp
 public interface INamed

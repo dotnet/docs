@@ -229,4 +229,4 @@ The following warning indicates a signature difference in the declaring and impl
 
 - **CS9256**: *Partial property declarations have signature differences.*
 
-A partial property or indexer must have both a *declaring declaration* and an *implementing declaration*. The signatures for both declarations must match. Because the *declaring declaration* uses the same syntax as an auto-implemented property, the *implementing declaration* can't be an auto-implemented property. The accessors must have bodies.
+A partial property or indexer must have both a *declaring declaration* and an *implementing declaration*. The signatures for both declarations must match. Because the *declaring declaration* uses the same syntax as an automatically implemented property, the *implementing declaration* can't be an automatically implemented property. The accessors must have bodies.

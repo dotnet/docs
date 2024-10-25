@@ -33,7 +33,7 @@ Indexers enable *indexed* properties: properties referenced using one or more ar
 - Indexers can have one or more formal parameters, for example, when accessing a two-dimensional array.
 - You can declare [`partial` indexers](../../language-reference/keywords/partial-member.md) in [`partial` types](../../language-reference/keywords/partial-type.md).
 
-You can apply almost everything you learned from working with properties to indexers. The only exception to that rule is *auto implemented properties*. The compiler can't always generate the correct storage for an indexer. You can define multiple indexers on a type, as long as the argument lists for each indexer is unique.
+You can apply almost everything you learned from working with properties to indexers. The only exception to that rule is *automatically implemented properties*. The compiler can't always generate the correct storage for an indexer. You can define multiple indexers on a type, as long as the argument lists for each indexer is unique.
 
 ## Uses of indexers
 

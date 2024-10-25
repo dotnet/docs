@@ -14,13 +14,13 @@ A *property* is a member that provides a flexible mechanism to read, write, or c
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Field":::
 
-## Auto-implemented properties
+## Automatically implemented properties
 
 A property definition contains declarations for a `get` and `set` accessor that retrieves and assigns the value of that property:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="AutoImplemented":::
 
-The preceding example shows an *auto-implemented property*. The compiler generates a hidden backing field for the property. The compiler also implements the body of the `get` and `set` accessors. Any attributes are applied to the auto-implemented property. You can apply the attribute to the compiler-generated backing field by specifying the `field:` tag on the attribute.
+The preceding example shows an *automatically implemented property*. The compiler generates a hidden backing field for the property. The compiler also implements the body of the `get` and `set` accessors. Any attributes are applied to the automatically implemented property. You can apply the attribute to the compiler-generated backing field by specifying the `field:` tag on the attribute.
 
 You can initialize a property to a value other than the default by setting a value after the closing brace for the property. You might prefer the initial value for the `FirstName` property to be the empty string rather than `null`. You would specify that as shown in the following code:
 
@@ -39,7 +39,7 @@ You can add any restrictive access modifier to either the set or get accessors. 
 There are two special access modifiers for `set` accessors:
 
 - A `set` accessor can have `init` as its access modifier. That `set` accessor can be called only from an object initializer or the type's constructors. It's more restrictive than `private` on the `set` accessor.
-- An auto-implemented property can declare a `get` accessor without a `set` accessor. In that case, the compiler allows the `set` accessor to be called only from the type's constructors. It's more restrictive than the `init` accessor on the `set` accessor.
+- An automatically implemented property can declare a `get` accessor without a `set` accessor. In that case, the compiler allows the `set` accessor to be called only from the type's constructors. It's more restrictive than the `init` accessor on the `set` accessor.
 
 Modify the `Person` class so as follows:
 
@@ -86,13 +86,13 @@ This implementation works because the `FirstName` and `LastName` properties are 
 
 This final version evaluates the `FullName` property only when needed. The previously calculated version is used if valid. Otherwise, the calculation updates the cached value. Developers using this class don't need to know the details of the implementation. None of these internal changes affect the use of the Person object.
 
-Beginning with C# 13, you can create [`partial` properties](../../language-reference/keywords/partial-member.md) in `partial` classes. The implementing declaration for a `partial` property can't be an auto-implemented property. An auto-implemented property uses the same syntax as a declaring partial property declaration.
+Beginning with C# 13, you can create [`partial` properties](../../language-reference/keywords/partial-member.md) in `partial` classes. The implementing declaration for a `partial` property can't be an automatically implemented property. An automatically implemented property uses the same syntax as a declaring partial property declaration.
 
 ## Properties
 
 Properties are a form of smart fields in a class or object. From outside the object, they appear like fields in the object. However, properties can be implemented using the full palette of C# functionality. You can provide validation, different accessibility, lazy evaluation, or any requirements your scenarios need.
 
-- Simple properties that require no custom accessor code can be implemented either as expression body definitions or as [auto-implemented properties](./auto-implemented-properties.md).
+- Simple properties that require no custom accessor code can be implemented either as expression body definitions or as [automatically implemented properties](./auto-implemented-properties.md).
 - Properties enable a class to expose a public way of getting and setting values, while hiding implementation or verification code.
 - A [get](../../language-reference/keywords/get.md) property accessor is used to return the property value, and a [set](../../language-reference/keywords/set.md) property accessor is used to assign a new value. An [init](../../language-reference/keywords/init.md) property accessor is used to assign a new value only during object construction. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](./restricting-accessor-accessibility.md).
 - The [value](../../language-reference/keywords/value.md) keyword is used to define the value the `set` or `init` accessor is assigning.

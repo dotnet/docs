@@ -40,6 +40,8 @@ Authors:
 
 > **[Alistair Matthews](https://github.com/alistairmatthews)**, Principal Technologist, Civica
 
+> **[Phil Stollery](https://github.com/PhilStollery)**, Principal Technologist, Civica
+
 Participants and Reviewers:
 
 > **[James Montemagno](https://github.com/jamesmontemagno)**, Principal Lead Program Manager, Developer Community, Microsoft

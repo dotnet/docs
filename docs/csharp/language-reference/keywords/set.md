@@ -25,7 +25,7 @@ For simple cases in which a property's `get` and `set` accessors perform no othe
 :::code language="csharp" source="./snippets/PropertyAccessors.cs" id="AutoImplementedProperties":::
 
 > [!IMPORTANT]
-> Automatically implemented properties aren't allowed for [interface property declarations](../../programming-guide/classes-and-structs/interface-properties.md)  or the implementing declaration for a [partial property](./partial-member.md). The compiler interprets syntax matching an automatically implemented property as the declaring declaration, not an implementing declaration.
+> Automatically implemented properties aren't allowed for [interface property declarations](../../programming-guide/classes-and-structs/interface-properties.md) or the implementing declaration for a [partial property](./partial-member.md). The compiler interprets syntax matching an automatically implemented property as the declaring declaration, not an implementing declaration.
 
 ## C# language specification
 

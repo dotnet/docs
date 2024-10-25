@@ -36,6 +36,6 @@ For more information, see [How to implement a lightweight class with automatical
 
 ## See also
 
-- [Use autok-implemented properties (style rule IDE0032)](../../../fundamentals/code-analysis/style-rules/ide0032.md)
+- [Use auto-implemented properties (style rule IDE0032)](../../../fundamentals/code-analysis/style-rules/ide0032.md)
 - [Properties](./properties.md)
 - [Modifiers](../../language-reference/keywords/index.md)

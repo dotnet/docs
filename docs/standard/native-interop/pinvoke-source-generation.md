@@ -6,7 +6,7 @@ ms.date: 07/25/2022
 
 # Source generation for platform invokes
 
-.NET 7 introduces a [source generator](../../csharp/roslyn-sdk/source-generators-overview.md) for P/Invokes that recognizes the <xref:System.Runtime.InteropServices.LibraryImportAttribute> in C# code.
+.NET 7 introduces a [source generator](../../csharp/roslyn-sdk/index.md#source-generators) for P/Invokes that recognizes the <xref:System.Runtime.InteropServices.LibraryImportAttribute> in C# code.
 
 When it's not using source generation, the built-in interop system in the .NET runtime generates an IL stub&mdash;a stream of IL instructions that is JIT-ed&mdash;at run time to facilitate the transition from managed to unmanaged. The following code shows defining and then calling a P/Invoke that uses this mechanism:
 

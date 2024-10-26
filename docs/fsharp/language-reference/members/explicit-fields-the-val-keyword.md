@@ -5,7 +5,7 @@ ms.date: 08/15/2020
 ---
 # Explicit Fields: The val Keyword
 
-The `val` keyword is used to declare a location to store a value in a class or structure type, without initializing it. Storage locations declared in this manner are called *explicit fields*. Another use of the `val` keyword is in conjunction with the `member` keyword to declare an auto-implemented property. For more information on auto-implemented properties, see [Properties](properties.md).
+The `val` keyword is used to declare a location to store a value in a class or structure type, without initializing it. Storage locations declared in this manner are called *explicit fields*. Another use of the `val` keyword is in conjunction with the `member` keyword to declare an automatically implemented property. For more information on automatically implemented properties, see [Properties](properties.md).
 
 ## Syntax
 

@@ -56,7 +56,7 @@ ms.date: 07/30/2024
 
 A [`ref struct`](../builtin-types/ref-struct.md) type can include `ref` fields. Other types aren't allowed `ref` fields. The compiler enforces restrictions on the declarations and use of `ref struct` types to enforce ref safety rules on instances of any `ref struct` type:
 
-- Only `ref struct` types can contain auto-implemented `ref` properties.
+- Only `ref struct` types can contain automatically implemented `ref` properties.
 - Only `ref struct` types or `ref` variables can have the `scoped` modifier.
 - A `ref` field can be declared only in a `ref struct` type.
 - A `ref` field can't refer to a `ref struct` type/

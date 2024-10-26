@@ -10,7 +10,7 @@ ms.date: 10/09/2024
 
 Starting with .NET 8, a configuration binding source generator was introduced that intercepts specific call sites and generates their functionality. This feature provides a [Native ahead-of-time (AOT)](../deploying/native-aot/index.md) and [trim-friendly](../deploying/trimming/trim-self-contained.md) way to use the [configuration binder](configuration.md#binding), without the use of the reflection-based implementation. Reflection requires dynamic code generation, which isn't supported in AOT scenarios.
 
-This feature is possible with the advent of [C# interceptors](/dotnet/csharp/whats-new/csharp-12#interceptors) that were introduced in C# 12. Interceptors allow the compiler to generate source code that intercepts specific calls and substitutes them with generated code.
+This feature is possible with the advent of [C# interceptors](../../csharp/whats-new/csharp-12.md#interceptors) that were introduced in C# 12. Interceptors allow the compiler to generate source code that intercepts specific calls and substitutes them with generated code.
 
 ## Enable the configuration source generator
 
@@ -52,7 +52,7 @@ The preceding code:
 When the application is built, the configuration source generator intercepts the call to `GetValue<T>` and generates the binding code.
 
 > [!IMPORTANT]
-> When the `PublishAot` property is set to `true` (or any other AOT warnings are enabled) and the `EnabledConfigurationBindingGenerator` property is set to `false`, warning `IL2026` is raised. This warning indicates that members are attributed with [RequiresUnreferencedCode](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) may break when trimming. For more information, see [IL2026](/dotnet/core/deploying/trimming/trim-warnings/il2026).
+> When the `PublishAot` property is set to `true` (or any other AOT warnings are enabled) and the `EnabledConfigurationBindingGenerator` property is set to `false`, warning `IL2026` is raised. This warning indicates that members are attributed with [RequiresUnreferencedCode](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) may break when trimming. For more information, see [IL2026](../deploying/trimming/trim-warnings/il2026.md).
 
 ### Explore the source generated code
 

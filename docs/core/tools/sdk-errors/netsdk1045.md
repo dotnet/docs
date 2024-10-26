@@ -58,7 +58,7 @@ Check the MSBuildSDKPath environment variable. This optional environment variabl
 
 ## global.json file
 
-Check for a *global.json* file in the root folder in your project and up the directory chain to the root of the volume, since it can be anywhere in the folder structure. If it contains an SDK version, delete the `sdk` node and all its children, or update it to the desired newer .NET Core version.
+Check for a *global.json* file in the root folder in your project and in your solution, and up the directory chain to the root of the volume, since it can be anywhere in the folder structure. If it contains an SDK version, delete the `sdk` node and all its children, or update it to the desired newer .NET Core version.
 
 ```json
 {

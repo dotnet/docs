@@ -687,5 +687,5 @@ When used with an option like `RegexOptions.NonBacktracking` for which the sourc
 - [.NET regular expressions](regular-expressions.md)
 - [Backtracking in regular expressions](backtracking-in-regular-expressions.md)
 - [Compilation and reuse in regular expressions](compilation-and-reuse-in-regular-expressions.md)
-- [Source generators](../../csharp/roslyn-sdk/source-generators-overview.md)
+- [Source generators](../../csharp/roslyn-sdk/index.md#source-generators)
 - [.NET Blog: Regular Expression improvements in .NET 7](https://devblogs.microsoft.com/dotnet/regular-expression-improvements-in-dotnet-7)

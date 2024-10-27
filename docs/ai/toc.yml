@@ -1,16 +1,18 @@
 items:
 - name: AI for .NET developers
   href: index.yml
-- name: Overview
-  href: get-started/dotnet-ai-overview.md
-- name: Ecosystem tools and SDKs
-  href: dotnet-ai-ecosystem.md
-- name: Learning resources and samples
-  href: azure-ai-for-dotnet-developers.md
-- name: What is Semantic Kernel?
-  href: semantic-kernel-dotnet-overview.md
-- name: Authenticate to Azure AI services with .NET
-  href: azure-ai-services-authentication.md
+- name: Get Started
+  items:
+  - name: Overview
+    href: get-started/dotnet-ai-overview.md
+  - name: Ecosystem tools and SDKs
+    href: dotnet-ai-ecosystem.md
+  - name: Learning resources and samples
+    href: azure-ai-for-dotnet-developers.md
+  - name: What is Semantic Kernel?
+    href: semantic-kernel-dotnet-overview.md
+  - name: Authenticate to Azure AI services with .NET
+    href: azure-ai-services-authentication.md
 - name: Quickstarts
   items:
   - name: Summarize text
@@ -25,7 +27,7 @@ items:
     href: quickstarts/quickstart-openai-generate-images.md
   - name: Chat with a local AI model
     href: quickstarts/quickstart-local-ai.md
-- name: Concepts
+- name: Fundamentals
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
@@ -47,25 +49,38 @@ items:
     href: conceptual/rag.md
   - name: Understand OpenAI function calling
     href: conceptual/understanding-openai-functions.md
-- name: How-to articles
+  - name: Use custom & local AI models with Semantic Kernel
+    href: how-to/work-with-local-models.md
+- name: Use Cases
+  items:
+- name: Working with Data
+  items:
+  - name: Get started with the chat using your data sample 
+    href: get-started-app-chat-template.md
+  - name: Implement RAG using vector search
+    href: tutorials/tutorial-ai-vector-search.md
+- name: Security & Safety
   items:
   - name: Authenticate App Service to Azure OpenAI
     href: how-to/app-service-aoai-auth.md
   - name: Authenticate App Service to a vector database
     href: how-to/app-service-db-auth.md
-  - name: Use Redis with Semantic Kernel
-    href: how-to/use-redis-for-memory.md
-  - name: Use custom & local AI models with Semantic Kernel
-    href: how-to/work-with-local-models.md
   - name: Work with content filtering
     href: how-to/content-filtering.md
-- name: Tutorials
+- names: Testing & Evaluation
   items:
-  - name: Get started with the chat using your data sample 
-    href: get-started-app-chat-template.md
   - name: Evaluate LLM prompt completions
     href: tutorials/llm-eval.md
-  - name: Implement RAG using vector search
-    href: tutorials/tutorial-ai-vector-search.md
+- name: Debugging
+  items:
+- name: Monitoring
+  items:
+- name: Performance
+  items: 
+  - name: Use Redis with Semantic Kernel
+    href: how-to/use-redis-for-memory.md
   - name: Scale Azure OpenAI with Azure Container Apps
     href: get-started-app-chat-scaling-with-azure-container-apps.md
+- name: Training
+  items:
+- 

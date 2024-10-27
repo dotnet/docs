@@ -49,6 +49,7 @@ The following rules are enabled, by default, as errors or warnings in .NET 8. Ad
 | [CA2017](quality-rules/ca2017.md) | Reliability | Warning | .NET 6 | Parameter count mismatch |
 | [CA2018](quality-rules/ca2018.md) | Reliability | Warning | .NET 6 | The `count` argument to `Buffer.BlockCopy` should specify the number of bytes to copy |
 | [CA2021](quality-rules/ca2021.md) | Reliability | Warning | .NET 8 | Do not call `Enumerable.Cast<T>` or `Enumerable.OfType<T>` with incompatible types |
+| [CA2022](quality-rules/ca2022.md) | Reliability | Warning | .NET 9 | Avoid inexact read with `Stream.Read` |
 | [CA2200](quality-rules/ca2200.md) | Usage | Warning | .NET 5 | Rethrow to preserve stack details |
 | [CA2247](quality-rules/ca2247.md) | Usage | Warning | .NET 5 | Argument passed to `TaskCompletionSource` constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
 | [CA2252](quality-rules/ca2252.md) | Usage | Error | .NET 6 | Opt in to preview features |

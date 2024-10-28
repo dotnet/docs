@@ -1,7 +1,7 @@
 ---
 title: Native interoperability ABI support - .NET
 description: Defines the current support for interoperability with various ABIs.
-ms.date: 10/27/2024
+ms.date: 10/28/2024
 ---
 # Native interoperability ABI support
 
@@ -13,15 +13,9 @@ The C language represents a stable ABI across all platforms where .NET is suppor
 
 In .NET 7+, <xref:System.Runtime.InteropServices.LibraryImportAttribute> provides source generated support for calling C functions. When targeting .NET 6 or earlier, use <xref:System.Runtime.InteropServices.DllImportAttribute>. Refer to [Interop best practices](./best-practices.md) for additional guidance.
 
-Many virtual machine based languages define a foreign function interface (FFI) in C to interoperate with other platforms. A list of examples is below.
-
-* Java Virtual Machine (JVM)
-* CPython
-
 Additional links:
 
-* [CsWin32](https://github.com/microsoft/CsWin32) a source generator for access Windows Win32 API
-* [Java binding generator](https://github.com/dotnet/java-interop)
+* [CsWin32](https://github.com/microsoft/CsWin32) is a source generator for accessing the Windows Win32 API surface
 
 ## C++
 
@@ -47,6 +41,14 @@ Additional links:
 * [COM source generator sample](/dotnet/standard/native-interop/comwrappers-source-generation)
 * [ClangSharp](https://github.com/dotnet/ClangSharp) binding generator
 
+## Java Virtual Machine (JVM) based languages
+
+The Java Virtual Machine (JVM) defines a foreign function interface (FFI) in C to interoperate with other platforms. Interoperability between .NET and Java can be achieved via this interface.
+
+Additional links:
+
+* [Java binding generator](https://github.com/dotnet/java-interop)
+
 ## Swift
 
 The Swift programming environment has a well-defined stable ABI that is [supported in .NET](https://github.com/dotnet/designs/blob/main/proposed/swift-interop.md). In .NET 9+, specific APIs that support interop with Swift can be found under the <xref:System.Runtime.InteropServices.Swift> namespace.
@@ -58,7 +60,15 @@ The Objective-C language follows the C language's ABI and is [supported in .NET]
 Additional links:
 
 * [Objective-Sharpie](/previous-versions/xamarin/cross-platform/macios/binding/)
-* [Objective-C binding](/dotnet/maui/migration/ios-binding-projects) sample
+* [Objective-C binding sample](/dotnet/maui/migration/ios-binding-projects)
+
+## Python
+
+The reference implementation of the Python run-time, [CPython](https://github.com/python/cpython), defines a foreign function interface (FFI) in C to interoperate with other platforms. Interoperability between .NET and Python can be achieved via this interface.
+
+Additional links:
+
+* [Providing a C API for an Extension Module](https://docs.python.org/3/extending/extending.html#providing-a-c-api-for-an-extension-module)
 
 ## golang
 

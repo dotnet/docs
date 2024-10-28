@@ -18,11 +18,20 @@ Many virtual machine based languages define a foreign function interface (FFI) i
 * Java Virtual Machine (JVM)
 * CPython
 
+Additional links:
+
+* [CsWin32](https://github.com/microsoft/CsWin32) a source generator for access Windows Win32 API
+* [Java binding generator](https://github.com/dotnet/java-interop)
+
 ## C++
 
 The [C++ language](https://isocpp.org/) has no defined ABI across all .NET supported platforms and the most popular C++ compiler implementations (that is, MSVC, clang, and GCC). This lack of a consistent ABI makes support difficult to provide.
 
 The recommended way to interoperate with C++ is to export functions marked with [`extern "C"`](/cpp/cpp/extern-cpp) and call them as C functions.
+
+Additional links:
+
+* [ClangSharp](https://github.com/dotnet/ClangSharp) binding generator
 
 ## COM and `IUnknown`
 
@@ -32,6 +41,12 @@ In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided b
 
 The WinRT platform represents an evolution of the COM and `IUknown` ABI. Support for this is provided by the [CsWinRT toolkit](/windows/apps/develop/platform/csharp-winrt/) and is built upon <xref:System.Runtime.InteropServices.ComWrappers>.
 
+Additional links:
+
+* [`ComWrappers` sample](/dotnet/standard/native-interop/tutorial-comwrappers)
+* [COM source generator sample](/dotnet/standard/native-interop/comwrappers-source-generation)
+* [ClangSharp](https://github.com/dotnet/ClangSharp) binding generator
+
 ## Swift
 
 The Swift programming environment has a well-defined stable ABI that is [supported in .NET](https://github.com/dotnet/designs/blob/main/proposed/swift-interop.md). In .NET 9+, specific APIs that support interop with Swift can be found under the <xref:System.Runtime.InteropServices.Swift> namespace.
@@ -39,6 +54,11 @@ The Swift programming environment has a well-defined stable ABI that is [support
 ## Objective-C
 
 The Objective-C language follows the C language's ABI and is [supported in .NET](https://github.com/dotnet/designs/blob/main/accepted/2021/objectivec-interop.md). In .NET 8+, specific APIs that support interop with Objective-C can be found under the <xref:System.Runtime.InteropServices.ObjectiveC> namespace.
+
+Additional links:
+
+* [Objective-Sharpie](/previous-versions/xamarin/cross-platform/macios/binding/)
+* [Objective-C binding](/dotnet/maui/migration/ios-binding-projects) sample
 
 ## golang
 

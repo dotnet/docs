@@ -13,7 +13,10 @@ The C language represents a stable ABI across all platforms where .NET is suppor
 
 <xref:System.Runtime.InteropServices.LibraryImportAttribute> provides source generated support in .NET 7+. Use <xref:System.Runtime.InteropServices.DllImportAttribute> when targeting earlier .NET versions. Refer to [Interop best practices](./best-practices.md) for additional guidance.
 
-Many virtual machine languages define a foreign function interface in C to interoperate with other platforms. The Java Virtual Machine (JVM) and Python runtimes are examples of this.
+Many virtual machine languages define a foreign function interface (FFI) in C to interoperate with other platforms. A list of examples is below.
+
+* Java Virtual Machine (JVM)
+* CPython
 
 ## C++
 

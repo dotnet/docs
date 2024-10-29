@@ -15,6 +15,7 @@ In .NET 7+, <xref:System.Runtime.InteropServices.LibraryImportAttribute> provide
 
 Additional links:
 
+* [`LibraryImportAttribute` walkthrough](/dotnet/standard/native-interop/pinvoke-source-generation)
 * [CsWin32](https://github.com/microsoft/CsWin32) is a source generator for accessing the Windows Win32 API surface
 
 ## C++
@@ -33,11 +34,11 @@ The COM and `IUnknown` ABI was defined to align with the C language. It was spec
 
 In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. When targeting versions prior to .NET 5, the [built-in COM interop system](/dotnet/standard/native-interop/cominterop) must be used and is limited to the Windows platforms.
 
-The WinRT platform represents an evolution of the COM and `IUknown` ABI. Support for this is provided by the [CsWinRT toolkit](/windows/apps/develop/platform/csharp-winrt/) and is built upon <xref:System.Runtime.InteropServices.ComWrappers>.
+The WinRT platform represents an evolution of the COM and `IUnknown` ABI. Support for this is provided by the [CsWinRT toolkit](/windows/apps/develop/platform/csharp-winrt/) and is built upon <xref:System.Runtime.InteropServices.ComWrappers>.
 
 Additional links:
 
-* [`ComWrappers` sample](/dotnet/standard/native-interop/tutorial-comwrappers)
+* [`ComWrappers` walkthrough](/dotnet/standard/native-interop/tutorial-comwrappers)
 * [COM source generator sample](/dotnet/standard/native-interop/comwrappers-source-generation)
 * [ClangSharp](https://github.com/dotnet/ClangSharp) binding generator
 
@@ -60,7 +61,7 @@ The Objective-C language follows the C language's ABI and is [supported in .NET]
 Additional links:
 
 * [Objective-Sharpie](/previous-versions/xamarin/cross-platform/macios/binding/)
-* [Objective-C binding sample](/dotnet/maui/migration/ios-binding-projects)
+* [Objective-C binding walkthrough](/dotnet/maui/migration/ios-binding-projects)
 
 ## Python
 

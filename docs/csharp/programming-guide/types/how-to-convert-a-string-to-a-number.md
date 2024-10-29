@@ -1,13 +1,15 @@
 ---
 title: "How to convert a string to a number"
 description: Learn how to convert a string to a number in C# by calling the Parse, TryParse, or Convert class methods.
-ms.date: 03/15/2024
+ms.date: 10/31/2024
 helpviewer_keywords: 
   - "conversions [C#]"
   - "conversions [C#], string to int"
   - "converting strings to int [C#]"
   - "strings [C#], converting to int"
 ms.topic: how-to
+ms.collection: ce-skilling-ai-copilot
+ms.custom: vs-copilot-horizontal
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
 adobe-target: true
 ---
@@ -50,3 +52,68 @@ The following table lists some of the methods from the <xref:System.Convert> cla
 The following example calls the <xref:System.Convert.ToInt32%28System.String%29?displayProperty=nameWithType> method to convert an input string to an [int](../../language-reference/builtin-types/integral-numeric-types.md). The example catches the two most common exceptions thrown by this method: <xref:System.FormatException> and <xref:System.OverflowException>. If the resulting number can be incremented without exceeding <xref:System.Int32.MaxValue?displayProperty=nameWithType>, the example adds 1 to the result and displays the output.
 
 [!code-csharp[Parsing with Convert methods](~/samples/snippets/csharp/programming-guide/string-to-number/convert/program.cs)]
+
+## Use GitHub Copilot to serialize to JSON
+
+You can use GitHub Copilot in your IDE to generate code to convert a string to a number in C#.
+
+If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code to convert a string to a number. Submit your question as a prompt in the Copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
+
+> [!NOTE]
+> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+
+The following text shows an example prompt for Copilot Chat:
+
+> Generate code to convert the string "123" to a number. Provide example output.
+
+You can customize the prompt to use a string per your requirements.
+
+You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing class in a project that's open in the IDE, you can prompt GitHub Copilot with `/generate code to convert the string "123" to a number`.
+
+The following output shows an example Copilot Chat response:
+
+```output
+Here is the code to convert the string "123" to a number using int.TryParse, along with example output:
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string str = "123";
+        int number;
+
+        bool isConvertible = int.TryParse(str, out number);
+
+        if (isConvertible)
+        {
+            // Conversion succeeded, 'number' contains the integer value
+            Console.WriteLine($"The string was successfully converted to the number: {number}");
+        }
+        else
+        {
+            // Conversion failed
+            Console.WriteLine("The string could not be converted to a number.");
+        }
+    }
+}
+
+**Example Output**
+The string was successfully converted to the number: 123
+
+In this example:
+• The string "123" is successfully converted to the integer 123.
+• The output confirms the successful conversion.
+```
+
+When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
+
+> [!NOTE]
+> Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
+
+For more information, see:
+
+* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
+* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

@@ -19,7 +19,7 @@ IHost host = Host.CreateDefaultBuilder(args)
             
             // Set a credential for all clients to use by default
             DefaultAzureCredential credential = new();
-            clientBuilder.UseCredential(new DefaultAzureCredential());
+            clientBuilder.UseCredential(credential);
 
             // Register subclients for Service Bus
             foreach (string queueName in queueNames)

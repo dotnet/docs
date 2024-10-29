@@ -53,7 +53,7 @@ The following example calls the <xref:System.Convert.ToInt32%28System.String%29?
 
 [!code-csharp[Parsing with Convert methods](~/samples/snippets/csharp/programming-guide/string-to-number/convert/program.cs)]
 
-## Use GitHub Copilot to serialize to JSON
+## Use GitHub Copilot to convert a string to a number
 
 You can use GitHub Copilot in your IDE to generate code to convert a string to a number in C#.
 

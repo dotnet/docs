@@ -280,10 +280,10 @@ this isn't required. Following is an example `EventListener` implementation that
 >
 > To mitigate this risk, consider the following precautions:
 >
-> - **Avoid Complex Operations**: Refrain from performing complex operations within the callback that might acquire additional locks. For example, during some event callbacks, attempting to use File or Console APIs may encounter issues. Instead, you can update an in-memory datastructure or add some information about the event to a queue. If more processing is needed it can be done from a separate thread after the callback has already returned.
+> - **Use Queues to Defer Work**: There are a variety of APIs you might want to call in OnEventWritten() that do non-trivial work, for example File IO, Console, or Http. For most events, these APIs work fine, but if you tried to call Console.WriteLine() in an event handler during the initialization of the Console class then it would probably fail. If you don't know whether a given event handler occurs at a time when APIs are safe to call, consider adding some information about the event to an in-memory queue instead. Then, on a separate thread, process items in the queue.
 > - **Minimize Lock Duration**: Ensure that any locks acquired within the callback are not held for extended periods.
 > - **Use Non-blocking APIs**: Prefer using non-blocking APIs within the callback to avoid potential deadlocks.
-> - **Implement Re-entrancy Guard**: Use a re-entrancy guard to prevent infinite recursion. For example:
+> - **Implement a Re-entrancy Guard**: Use a re-entrancy guard to prevent infinite recursion. For example:
 >
 >   ```csharp
 >   [ThreadStatic] private static bool t_insideCallback;

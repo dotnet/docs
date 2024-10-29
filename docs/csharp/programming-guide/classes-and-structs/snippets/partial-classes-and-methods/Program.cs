@@ -16,15 +16,15 @@ public partial class Employee
 }
 
 // Main program demonstrating the Employee class usage
-public class Program
-{
-    public static void Main()
-    {
-        Employee emp = new Employee();
-        emp.DoWork();
-        emp.GoToLunch();
-    }
-}
+// public class Program
+// {
+//     public static void Main()
+//     {
+//         Employee emp = new Employee();
+//         emp.DoWork();
+//         emp.GoToLunch();
+//     }
+// }
 
 // Expected Output:
 // Employee is working.

@@ -30,6 +30,8 @@ items:
                 href: core-libraries/9.0/biginteger-limit.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
+              - name: EnumConverter validates registered types to be enum
+                href: core-libraries/9.0/enumconverter.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
               - name: FromKeyedServicesAttribute no longer injects non-keyed parameter
@@ -58,10 +60,6 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
-          - name: Extensions
-            items:
-              - name: EnumConverter validates registered types to be enum
-                href: networking/9.0/enumconverter.md
           - name: JIT compiler
             items:
               - name: Floating point to integer conversions are saturating
@@ -1256,6 +1254,8 @@ items:
                 href: core-libraries/9.0/binaryreader.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
+              - name: EnumConverter validates registered types to be enum
+                href: core-libraries/9.0/enumconverter.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
               - name: FromKeyedServicesAttribute no longer injects non-keyed parameter
@@ -1550,10 +1550,6 @@ items:
             href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
-          - name: .NET 9
-            items:
-              - name: EnumConverter validates registered types to be enum
-                href: networking/9.0/enumconverter.md
           - name: .NET 8
             items:
               - name: ActivatorUtilities.CreateInstance behaves consistently

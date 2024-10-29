@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: EnumConverter validates registered types to be enum"
-description: Learn about the .NET 9 breaking change in networking where EnumConverter now validates that the type to be registered is an enum type.
+description: Learn about the .NET 9 breaking change where EnumConverter now validates that the type to be registered is an enum type.
 ms.date: 10/04/2024
 ---
 # EnumConverter validates registered types to be enum
@@ -21,7 +21,7 @@ Starting in .NET 9, <xref:System.ComponentModel.EnumConverter> throws an <xref:S
 
 ## Type of breaking change
 
-This change can affect [binary compatibility](../../categories.md#binary-compatibility) and is also a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

@@ -174,16 +174,16 @@ You can opt out of verification by setting the environment variable `DOTNET_NUGE
 .NET 8 includes several new code analyzers and fixers to help verify that you're using .NET library APIs correctly and efficiently. The following table summarizes the new analyzers.
 
 | Rule ID | Category | Description |
-|--|--|--|
-| CA1856 | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
-| CA1857 | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
+|---------|----------|-------------|
+| [CA1856](../../../fundamentals/code-analysis/quality-rules/ca1856.md) | Performance | Fires when the <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> attribute is not applied correctly on a parameter. |
+| [CA1857](../../../fundamentals/code-analysis/quality-rules/ca1857.md) | Performance | Fires when a parameter is annotated with <xref:System.Diagnostics.CodeAnalysis.ConstantExpectedAttribute> but the provided argument isn't a constant. |
 | [CA1858](../../../fundamentals/code-analysis/quality-rules/ca1858.md) | Performance | To determine whether a string starts with a given prefix, it's better to call <xref:System.String.StartsWith%2A?displayProperty=nameWithType> than to call <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and then compare the result with zero. |
 | [CA1859](../../../fundamentals/code-analysis/quality-rules/ca1859.md) | Performance | This rule recommends upgrading the type of specific local variables, fields, properties, method parameters, and method return types from interface or abstract types to concrete types when possible. Using concrete types leads to higher quality generated code. |
 | [CA1860](../../../fundamentals/code-analysis/quality-rules/ca1860.md) | Performance | To determine whether a collection type has any elements, it's better to use `Length`, `Count`, or `IsEmpty` than to call <xref:System.Linq.Enumerable.Any%2A?displayProperty=nameWithType>. |
 | [CA1861](../../../fundamentals/code-analysis/quality-rules/ca1861.md) | Performance | Constant arrays passed as arguments aren't reused when called repeatedly, which implies a new array is created each time. To improve performance, consider extracting the array to a static readonly field. |
 | [CA1865-CA1867](../../../fundamentals/code-analysis/quality-rules/ca1865-ca1867.md) | Performance | The char overload is a better-performing overload for a string with a single char. |
-| CA2021 | Reliability | <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> require compatible types to function correctly. Widening and user-defined conversions aren't supported with generic types. |
-| CA1510-CA1513 | Maintainability | Throw helpers are simpler and more efficient than an `if` block constructing a new exception instance. These four analyzers were created for the following exceptions: <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, <xref:System.ArgumentOutOfRangeException> and <xref:System.ObjectDisposedException>. |
+| [CA2021](../../../fundamentals/code-analysis/quality-rules/ca2021.md) | Reliability | <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> and <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> require compatible types to function correctly. Widening and user-defined conversions aren't supported with generic types. |
+| [CA1510-CA1513](../../../fundamentals/code-analysis/quality-rules/ca1510.md) | Maintainability | Throw helpers are simpler and more efficient than an `if` block constructing a new exception instance. These four analyzers were created for the following exceptions: <xref:System.ArgumentNullException>, <xref:System.ArgumentException>, <xref:System.ArgumentOutOfRangeException> and <xref:System.ObjectDisposedException>. |
 
 ## Diagnostics
 

@@ -407,13 +407,15 @@ For example, for a .NET 5 app and an RID of `win-x64`, the following setting cha
 
 ### CopyLocalLockFileAssemblies
 
-The `CopyLocalLockFileAssemblies` property is useful for plugin projects that have dependencies on other libraries. If you set this property to `true`, any NuGet package dependencies are copied to the output directory. That means you can use the output of `dotnet build` to run your plugin on any machine.
+The `CopyLocalLockFileAssemblies` property is useful for plugin projects that have dependencies on other libraries. If you set this property to `true`, any transitive NuGet package dependencies are copied to the output directory. That means you can use the output of `dotnet build` to run your plugin on any machine.
 
 ```xml
 <PropertyGroup>
   <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 </PropertyGroup>
 ```
+
+The default value of `CopyLocalLockFileAssemblies` can vary based on the output type. For example, for class libraries the default value is `false`, while for console applications the default is `true`. You can specify this property explicitly to override the default if needed.
 
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).

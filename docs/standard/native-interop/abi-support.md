@@ -20,7 +20,7 @@ Additional links:
 
 ## C++
 
-The [C++ language](https://isocpp.org/) has no defined ABI across all .NET supported platforms and the most popular C++ compiler implementations (that is, MSVC, clang, and GCC). This lack of a consistent ABI makes support difficult to provide.
+The [C++ language](https://isocpp.org/) has no defined ABI across all .NET supported platforms and the most popular C++ compiler implementations (that is, MSVC, clang, and GCC). This lack of a consistent ABI makes it difficult to target directly.
 
 The recommended way to interoperate with C++ is to export functions marked with [`extern "C"`](/cpp/cpp/extern-cpp) and call them as C functions.
 
@@ -70,6 +70,7 @@ The reference implementation of the Python run-time, [CPython](https://github.co
 Additional links:
 
 * [Providing a C API for an Extension Module](https://docs.python.org/3/extending/extending.html#providing-a-c-api-for-an-extension-module)
+* [Python for .NET](https://github.com/pythonnet/pythonnet)
 
 ## golang
 

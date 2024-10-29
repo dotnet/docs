@@ -68,7 +68,7 @@ The following text shows an example prompt for Copilot Chat:
 
 You can customize the prompt to use a string per your requirements.
 
-You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing class in a project that's open in the IDE, you can prompt GitHub Copilot with `/generate code to convert the string "123" to a number`.
+You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing file open in the IDE, you can prompt GitHub Copilot with `/generate code to convert the string string1 in #Filename to a number`.
 
 The following output shows an example Copilot Chat response:
 

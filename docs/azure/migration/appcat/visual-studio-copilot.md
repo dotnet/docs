@@ -9,7 +9,7 @@ ms.author: alexwolf
 
 # Use Copilot Conversational Analysis with the Azure Migrate application and code assessment tool
 
-Azure Migrate application and code assessment for .NET integrates with the GitHub Copilot extension for Visual Studio. Together, they provide conversational analysis about your migration reports. GitHub Copilot can help you learn more about the overall results, specific issues and determine next steps. In this article, you learn how to use GitHub Copilot to analyze the results of a completed Azure migration report.
+Azure Migrate application and code assessment for .NET integrates with the GitHub Copilot extension for Visual Studio. Together, they provide conversational analysis about your migration reports. GitHub Copilot can help you learn more about the overall results and specific issues and determine next steps. In this article, you learn how to use GitHub Copilot to analyze the results of a completed Azure migration report.
 
 > [!NOTE]
 > Copilot integration is not available natively using the [.NET CLI version](/dotnet/azure/migration/appcat/dotnet-cli) of Azure Migrate application and code assessment for .NET.
@@ -17,9 +17,9 @@ Azure Migrate application and code assessment for .NET integrates with the GitHu
 ## Prerequisites
 
 - Install [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) version 17.10 or later
-- [Install GitHub Copilot for Visual Studio extension](/dotnet/azure/migration/appcat/visual-studio)
+- [Install GitHub Copilot for Visual Studio extension](visual-studio.md)
 - [Install a version of .NET](https://dotnet.microsoft.com/download) that supports the app you're trying to migrate
-- [Scan your application in Visual Studio](/dotnet/azure/migration/appcat/visual-studio) to use Copilot conversational analysis. Copilot relies on a completed scan report to provide suggestions.
+- [Scan your application in Visual Studio](visual-studio.md) to use Copilot conversational analysis. Copilot relies on a completed scan report to provide suggestions.
 
 ## Analyze the Azure compatibility report with Copilot
 
@@ -27,7 +27,7 @@ Visual Studio displays the results of the Azure Migrate application and code ass
 
 ### Chat about the dashboard results
 
-The main dashboard of the Azure compatibility report shows a summary of the scan, including next steps, issue severity and issue categories. You can use Github Copilot to chat about these results and specific follow up tasks.
+The main dashboard of the Azure compatibility report shows a summary of the scan, including next steps, issue severity, and issue categories. You can use GitHub Copilot to chat about these results and specific follow-up tasks.
 
 1. In the **NEXT STEPS** section of the Azure compatibility report, select the **Open chat** button to launch a chat session with GitHub Copilot.
 1. Visual Studio sends a default prompt asking for assistance with migrating the scanned solution. Copilot responds with a summary of the identified issues and provides clickable links to select specific issues to follow up on.
@@ -39,13 +39,13 @@ The main dashboard of the Azure compatibility report shows a summary of the scan
 
 ### Chat about a specific issue
 
-The Azure compatibility report also provides specific details about the aggregate issues discovered during the scan. You can use Copilot to investigate and learn more about these issues, as well as options or next steps to resolve them.
+The Azure compatibility report also provides specific details about the aggregate issues discovered during the scan. You can use Copilot to investigate and learn more about these issues, as well as discover options or next steps to resolve them.
 
 1. On the main dashboard page of the Azure compatibility report, select **Aggregate issues** on the left navigation to switch to the issues view. The new view displays a list of issues and related information, such as their estimated severity and state.
 1. Select the arrow icon next to an issue you're interested in to see more details, and then select the **Ask Copilot** button to start a new Copilot chat about that specific issue.
 
     > [!NOTE]
-    > THe **Ask Copilot** feature shares the description of the issue as well details about the code snippet that triggered the issue with GitHub Copilot. Only select **Ask Copilot** if you are comfortable sending the details of that issue to Copilot.
+    > The **Ask Copilot** feature shares the description of the issue and details about the code snippet that triggered the issue with GitHub Copilot. Only select **Ask Copilot** if you're comfortable sending the details of that issue to Copilot.
 
     :::image type="content" source="media/vs/copilot-issue-analyze.png" lightbox="media/vs/copilot-issue-analyze.png" alt-text="A screenshot showing GitHub Copilot integration with the Azure Migrate application and code assessment tool issues report page.":::
 
@@ -56,5 +56,5 @@ The Azure compatibility report also provides specific details about the aggregat
 ## Next steps
 
 - [Interpret the analysis results from the Azure Migrate application and code assessment for .NET](./interpret-results.md).
-- [Customize analysis using run configs](/dotnet/azure/migration/appcat/custom-configuration)
-- [Frequently asked questions](/dotnet/azure/migration/appcat/faq)
+- [Customize analysis using run configs](custom-configuration.md)
+- [Frequently asked questions](faq.md)

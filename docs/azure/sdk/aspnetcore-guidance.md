@@ -74,11 +74,17 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 > [!NOTE]
 > Many Azure services also allow you to authorize requests using keys. However, this approach should be used with caution. Developers must be diligent to never expose the access key in an unsecure location. Anyone who has the access key can authorize requests against the associated Azure resource.
 
-Consider the following use of `DefaultAzureCredential`:
+1. Add the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package:
+
+```dotnetcli
+dotnet add package Azure.Identity
+```
+
+1. In the `Program.cs` file of your app, invoke the `UseCredential` extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
 :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
 
-In the preceding code, the `UseCredential` method accepts an instance of `DefaultAzureCredential` to reuse across your registered services. `DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview).
+`DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview).
 
 ## Apply configurations
 

@@ -21,7 +21,7 @@ There are several situations when splitting a class definition is desirable:
 
 To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier. In practice, each partial class is typically defined in a separate file, making it easier to manage and expand the class over time.
 
-The following Employee example demonstrates how the class might be divided across two files: Employee_Part1.cs and Employee_Part2.cs.
+The following `Employee` example demonstrates how the class might be divided across two files: Employee_Part1.cs and Employee_Part2.cs.
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet1":::
 

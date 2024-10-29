@@ -32,6 +32,7 @@ For demonstration purposes, the sample code in this article uses the Key Vault S
 dotnet add package Azure.Security.KeyVault.Secrets
 dotnet add package Azure.Storage.Blobs
 dotnet add package Azure.Messaging.ServiceBus
+dotnet add package Azure.AI.OpenAI
 ```
 
 ## Register clients and subclients

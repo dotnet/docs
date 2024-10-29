@@ -5,17 +5,17 @@ ms.date: 10/28/2024
 ---
 # Native interoperability ABI support
 
-The [Application Binary Interface](https://wikipedia.org/wiki/Application_binary_interface) (ABI) is the interface which run-times and operating systems express low-level binary details. This can include calling conventions (that is, how parameters are passed and results returned), exception handling, as well as symbol mangling. The below list contains the names of languages, run-times and even general technologies since these names tend to represent what users will be working with when looking for guidance on interoperability.
+The [Application Binary Interface](https://wikipedia.org/wiki/Application_binary_interface) (ABI) is the interface that runtimes and operating systems use to express low-level binary details. Those details can include calling conventions (that is, how parameters are passed and results returned), exception handling, and symbol mangling. The list that follows contains the names of languages, runtimes, and even general technologies that you might use when looking for guidance on interoperability.
 
 ## C
 
-The C language represents a stable ABI across all platforms where .NET is supported. It is what most .NET interop APIs assume is the target. This is the recommended target language for most interop scenarios using .NET.
+The C language represents a stable ABI across all platforms where .NET is supported. In general, C is the assumed target for .NET interop APIs and is the recommended target language for most interop scenarios.
 
-In .NET 7+, <xref:System.Runtime.InteropServices.LibraryImportAttribute> provides source generated support for calling C functions. When targeting .NET 6 or earlier, use <xref:System.Runtime.InteropServices.DllImportAttribute>. Refer to [Interop best practices](./best-practices.md) for additional guidance.
+In .NET 7+, <xref:System.Runtime.InteropServices.LibraryImportAttribute> provides source-generated support for calling C functions. If you're targeting .NET 6 or earlier, use <xref:System.Runtime.InteropServices.DllImportAttribute>. For more information, see [Interop best practices](./best-practices.md).
 
 Additional links:
 
-* [`LibraryImportAttribute` walkthrough](/dotnet/standard/native-interop/pinvoke-source-generation)
+* [`LibraryImportAttribute` walkthrough](pinvoke-source-generation.md)
 * [CsWin32](https://github.com/microsoft/CsWin32) is a source generator for accessing the Windows Win32 API surface
 
 ## C++
@@ -30,16 +30,16 @@ Additional links:
 
 ## COM and `IUnknown`
 
-The COM and `IUnknown` ABI was defined to align with the C language. It was specifically designed to support Object Oriented Programming, similar to C++, but to provide a stable ABI. .NET has a deep history with COM and `IUnknown` and as this ABI was originally designed to align with C, it is supported on all .NET platforms.
+The COM and `IUnknown` ABI was defined to align with the C language. It was specifically designed to support object-oriented programming, similar to C++, but to provide a stable ABI. .NET has a deep history with COM and `IUnknown`, and as this ABI was originally designed to align with C, it's supported on all .NET platforms.
 
-In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. When targeting versions prior to .NET 5, the [built-in COM interop system](/dotnet/standard/native-interop/cominterop) must be used and is limited to the Windows platforms.
+In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. If you're targeting versions prior to .NET 5, you must use the [built-in COM interop system](/dotnet/standard/native-interop/cominterop), and this support is limited to Windows.
 
 The WinRT platform represents an evolution of the COM and `IUnknown` ABI. Support for this is provided by the [CsWinRT toolkit](/windows/apps/develop/platform/csharp-winrt/) and is built upon <xref:System.Runtime.InteropServices.ComWrappers>.
 
 Additional links:
 
-* [`ComWrappers` walkthrough](/dotnet/standard/native-interop/tutorial-comwrappers)
-* [COM source generator sample](/dotnet/standard/native-interop/comwrappers-source-generation)
+* [`ComWrappers` walkthrough](tutorial-comwrappers.md)
+* [COM source generator sample](comwrappers-source-generation.md)
 * [ClangSharp](https://github.com/dotnet/ClangSharp) binding generator
 
 ## Java Virtual Machine (JVM) based languages
@@ -74,9 +74,9 @@ Additional links:
 
 ## golang
 
-The Go programming language is not supported for in-process interoperability. The Go runtime [imposes requirements](https://pkg.go.dev/os/signal#hdr-Non_Go_programs_that_call_Go_code) on being hosted in a process with another run-time. Specifically, the use of the `SA_ONSTACK` flag on threads that run signal handlers. These requirements are not currently met by .NET.
+The Go programming language is not supported for in-process interoperability. The Go runtime [imposes requirements](https://pkg.go.dev/os/signal#hdr-Non_Go_programs_that_call_Go_code) on being hosted in a process with another runtime. Specifically, that requirement is the use of the `SA_ONSTACK` flag on threads that run signal handlers. These requirements are not currently met by .NET.
 
-The recommended way to interoperate with golang is using a golang hosted process and communicate through an inter-process communication mechanism.
+The recommended way to interoperate with golang is to use a golang-hosted process and communicate through an inter-process communication mechanism.
 
 ## ARM64EC
 

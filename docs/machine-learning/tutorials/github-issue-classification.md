@@ -62,7 +62,7 @@ Add the following additional `using` directives to the top of the *Program.cs* f
 
 [!code-csharp[AddUsings](./snippets/github-issue-classification/csharp/Program.cs#AddUsings)]
 
-Create three global fields to hold the paths to the recently downloaded files, and global variables for the `MLContext`,`DataView`, and `PredictionEngine`:
+Create three global fields to hold the paths to the recently downloaded files, and global variables for the `MLContext`, `DataView`, and `PredictionEngine`:
 
 * `_trainDataPath` has the path to the dataset used to train the model.
 * `_testDataPath` has the path to the dataset used to evaluate the model.

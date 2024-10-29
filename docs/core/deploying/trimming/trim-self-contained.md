@@ -79,10 +79,6 @@ For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.m
 
 For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
 
-### Publish with Visual Studio for Mac
-
-Visual Studio for Mac doesn't provide options to publish your app. You'll need to publish manually by following the instructions from the [Publishing with the CLI](#publish-with-the-cli) section. For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.md).
-
 ## See also
 
 - [.NET Core application deployment](../index.md).

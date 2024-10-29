@@ -56,10 +56,16 @@ items:
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
                 href: cryptography/9.0/x509-certificates.md
+              - name: Windows private key lifetime simplified
+                href: cryptography/9.0/private-key-lifetime.md
           - name: Deployment
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+          - name: Interop
+            items:
+              - name: CET supported by default
+                href: interop/9.0/cet-support.md
           - name: JIT compiler
             items:
               - name: Floating point to integer conversions are saturating
@@ -98,6 +104,8 @@ items:
                 href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
               - name: IMsoComponent support is opt-in
                 href: windows-forms/9.0/imsocomponent-support.md
+              - name: New security analyzers
+                href: windows-forms/9.0/security-analyzers.md
               - name: No exception if DataGridView is null
                 href: windows-forms/9.0/datagridviewheadercell-nre.md
               - name: PictureBox raises HttpClient exceptions
@@ -1472,6 +1480,8 @@ items:
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
                 href: cryptography/9.0/x509-certificates.md
+              - name: Windows private key lifetime simplified
+                href: cryptography/9.0/private-key-lifetime.md
           - name: .NET 8
             items:
               - name: AesGcm authentication tag size on macOS
@@ -1618,6 +1628,10 @@ items:
             href: globalization.md
       - name: Interop
         items:
+          - name: .NET 9
+            items:
+              - name: CET supported by default
+                href: interop/9.0/cet-support.md
           - name: .NET 8
             items:
               - name: CreateObjectFlags.Unwrap only unwraps on target instance
@@ -1944,6 +1958,8 @@ items:
                 href: windows-forms/9.0/datagridviewrowaccessibleobject-name-row.md
               - name: IMsoComponent support is opt-in
                 href: windows-forms/9.0/imsocomponent-support.md
+              - name: New security analyzers
+                href: windows-forms/9.0/security-analyzers.md
               - name: No exception if DataGridView is null
                 href: windows-forms/9.0/datagridviewheadercell-nre.md
               - name: PictureBox raises HttpClient exceptions

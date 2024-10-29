@@ -1,6 +1,4 @@
-﻿Imports System
-Imports System.Runtime.Serialization
-Imports System.Security.Permissions
+﻿Imports System.Runtime.Serialization
 
 Namespace ca2237
 
@@ -22,13 +20,11 @@ Namespace ca2237
         End Sub
 
         Overridable Sub GetObjectData(
-         info As SerializationInfo, context As StreamingContext) _
-         Implements ISerializable.GetObjectData
+         info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData
 
             info.AddValue("baseValue", baseValue)
 
         End Sub
-
     End Class
 
 End Namespace

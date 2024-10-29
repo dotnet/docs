@@ -148,7 +148,7 @@ For more information, see the following sections of the [C# language specificati
 - [The is operator](~/_csharpstandard/standard/expressions.md#121212-the-is-operator)
 - [The as operator](~/_csharpstandard/standard/expressions.md#121213-the-as-operator)
 - [Cast expressions](~/_csharpstandard/standard/expressions.md#1297-cast-expressions)
-- [The typeof operator](~/_csharpstandard/standard/expressions.md#12817-the-typeof-operator)
+- [The typeof operator](~/_csharpstandard/standard/expressions.md#12818-the-typeof-operator)
 
 ## See also
 

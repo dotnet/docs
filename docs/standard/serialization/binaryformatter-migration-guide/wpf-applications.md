@@ -55,7 +55,7 @@ In the case when we need to store or load a state while managing the navigation 
 
 To load/save we call [LoadSubStreams](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationFramework/MS/Internal/DataStreams.cs#L244)/ [SaveSubStreams](https://github.com/dotnet/wpf/blob/0354a597996adae43b12efc72bd705f76d4ba497/src/Microsoft.DotNet.Wpf/src/PresentationFramework/MS/Internal/DataStreams.cs#L86) of `DataStream` class. If the element used in not part of know type handled by the new implementation, it will use [BinaryFormatter].
 
-When a developer navigates through JournalEntry using `Navigate`,`GoForward`,or `GoBack`, the node's data is loaded or saved to a stream to save the state. If the type involved is not intrinsically handled during serialization/deserialization, [BinaryFormatter] is used.
+When a developer navigates through JournalEntry using `Navigate`, `GoForward`, or `GoBack`, the node's data is loaded or saved to a stream to save the state. If the type involved is not intrinsically handled during serialization/deserialization, [BinaryFormatter] is used.
 
 Ref: [DataStream.cs](https://github.com/dotnet/wpf/blob/4e977f5fe8c73094ee5826dbfa7a0f37c3bf0e33/src/Microsoft.DotNet.Wpf/src/PresentationFramework/MS/Internal/DataStreams.cs)
 

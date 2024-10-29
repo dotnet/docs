@@ -133,26 +133,6 @@ items:
               - name: Create and publish a package
                 href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
                 displayName: tutorials
-          - name: Use Visual Studio for Mac
-            items:
-              - name: Create a console app
-                href: ../core/tutorials/with-visual-studio-mac.md
-                displayName: tutorials, visual studio for mac, vs for mac, cli
-              - name: Debug an app
-                href: ../core/tutorials/debugging-with-visual-studio-mac.md
-                displayName: tutorials, visual studio for mac, vs for mac
-              - name: Publish an app
-                href: ../core/tutorials/publishing-with-visual-studio-mac.md
-                displayName: tutorials, visual studio for mac, vs for mac
-              - name: Create a library
-                href: ../core/tutorials/library-with-visual-studio-mac.md
-                displayName: tutorials, visual studio for mac, vs for mac
-              - name: Unit test a library
-                href: ../core/tutorials/testing-library-with-visual-studio-mac.md
-                displayName: tutorials, visual studio for mac, vs for mac
-              - name: Install and use a package
-                href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
-                displayName: tutorials, visual studio for mac, vs for mac
           - name: More tutorials
             href: ../core/tutorials/index.md
   - name: What's new in .NET
@@ -805,6 +785,8 @@ items:
                     href: ../standard/serialization/system-text-json/converters-how-to.md
                   - name: Customize contracts
                     href: ../standard/serialization/system-text-json/custom-contracts.md
+                  - name: Extract JSON schema
+                    href: ../standard/serialization/system-text-json/extract-schema.md
           - name: XML and SOAP serialization
             items:
               - name: Overview
@@ -1034,6 +1016,8 @@ items:
           - name: Configuration providers
             href: ../core/extensions/configuration-providers.md
             displayName: configuration providers,config providers
+          - name: Configuration source generation
+            href: ../core/extensions/configuration-generator.md
           - name: Implement a custom configuration provider
             href: ../core/extensions/custom-configuration-provider.md
             displayName: custom configuration,custom config,custom configuration provider,custom config provider

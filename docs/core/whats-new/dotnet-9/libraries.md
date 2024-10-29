@@ -2,13 +2,13 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 09/09/2024
+ms.date: 10/08/2024
 ms.topic: whats-new
 ---
 
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 RC 1.
+This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 RC 2.
 
 ## Base64Url
 
@@ -44,7 +44,7 @@ The following example demonstrates using [Dictionary<TKey,TValue>.GetAlternateLo
 
 ### `OrderedDictionary<TKey, TValue>`
 
-In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as <xref:System.Collections.Generic.OrderedDictionary%602> collection, which provides an efficient, generic type to support these scenarios.
+In many scenarios, you might want to store key-value pairs in a way where order can be maintained (a list of key-value pairs) but where fast lookup by key is also supported (a dictionary of key-value pairs). Since the early days of .NET, the <xref:System.Collections.Specialized.OrderedDictionary> type has supported this scenario, but only in a non-generic manner, with keys and values typed as `object`. .NET 9 introduces the long-requested <xref:System.Collections.Generic.OrderedDictionary%602> collection, which provides an efficient, generic type to support these scenarios.
 
 The following code uses the new class.
 
@@ -493,33 +493,7 @@ If you want to serialize with the [default options that ASP.NET Core uses](../..
 
 JSON is frequently used to represent types in method signatures as part of remote procedure&ndash;calling schemes. It's used, for example, as part of OpenAPI specifications, or as part of tool calling with AI services like those from OpenAI. Developers can serialize and deserialize .NET types as JSON using <xref:System.Text.Json>. But they also need to be able to get a JSON schema that describes the shape of the .NET type (that is, describes the shape of what would be serialized and what can be deserialized). <xref:System.Text.Json> now provides the <xref:System.Text.Json.Schema.JsonSchemaExporter> type, which supports generating a JSON schema that represents a .NET type.
 
-The following code generates a JSON schema from a type.
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Schema":::
-
-The type is defined as follows:
-
-:::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="Book":::
-
-The generated schema is:
-
-```json
-{
-    "type": ["object", "null"],
-    "properties": {
-        "Title": {
-            "type": "string"
-        },
-        "Author": {
-            "type": ["string", "null"]
-        },
-        "PublishYear": {
-            "type": "integer"
-        }
-    },
-    "required": ["Title"]
-}
-```
+For more information, see [JSON schema exporter](../../../standard/serialization/system-text-json/extract-schema.md).
 
 ### Respect nullable annotations
 
@@ -570,6 +544,8 @@ The <xref:System.Json.JsonObject> type now exposes ordered dictionary&ndash;like
 
 :::code language="csharp" source="../snippets/dotnet-9/csharp/Serialization.cs" id="PropertyOrder":::
 
+For more information, see [Manipulate property order](../../../standard/serialization/system-text-json/use-dom.md#manipulate-property-order).
+
 ### Customize enum member names
 
 The new <xref:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute?displayProperty=nameWithType> attribute can be used to customize the names of individual enum members for types that are serialized as strings:
@@ -588,50 +564,9 @@ enum MyEnum
 
 ### Stream multiple JSON documents
 
-<xref:System.Text.Json.Utf8JsonReader?displayProperty=nameWithType> now supports reading multiple, whitespace-separated JSON documents from a single buffer or stream. By default, the reader throws an exception if it detects any non-whitespace characters that are trailing the first top-level document. You can change this behavior using the <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues> flag:
+<xref:System.Text.Json.Utf8JsonReader?displayProperty=nameWithType> now supports reading multiple, whitespace-separated JSON documents from a single buffer or stream. By default, the reader throws an exception if it detects any non-whitespace characters that are trailing the first top-level document. You can change this behavior using the <xref:System.Text.Json.JsonReaderOptions.AllowMultipleValues> flag.
 
-```csharp
-JsonReaderOptions options = new() { AllowMultipleValues = true };
-Utf8JsonReader reader = new("null {} 1 \r\n [1,2,3]"u8, options);
-
-reader.Read();
-Console.WriteLine(reader.TokenType); // Null
-
-reader.Read();
-Console.WriteLine(reader.TokenType); // StartObject
-reader.Skip();
-
-reader.Read();
-Console.WriteLine(reader.TokenType); // Number
-
-reader.Read();
-Console.WriteLine(reader.TokenType); // StartArray
-reader.Skip();
-
-Console.WriteLine(reader.Read()); // False
-```
-
-This flag also makes it possible to read JSON from payloads that might contain trailing data that's invalid JSON:
-
-```csharp
-Utf8JsonReader reader = new("[1,2,3]    <NotJson/>"u8, new() { AllowMultipleValues = true });
-
-reader.Read();
-reader.Skip(); // Success
-reader.Read(); // throws JsonReaderException
-```
-
-When it comes to streaming deserialization, a new <xref:System.Text.Json.JsonSerializer.DeserializeAsyncEnumerable%60%601(System.IO.Stream,System.Boolean,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> overload makes streaming multiple top-level values possible. By default, the method attempts to stream elements that are contained in a top-level JSON array. You can toggle this behavior using the new `topLevelValues` flag:
-
-```csharp
-ReadOnlySpan<byte> utf8Json = """[0] [0,1] [0,1,1] [0,1,1,2] [0,1,1,2,3]"""u8;
-using var stream = new MemoryStream(utf8Json.ToArray());
-
-await foreach (int[] item in JsonSerializer.DeserializeAsyncEnumerable<int[]>(stream, topLevelValues: true))
-{
-    Console.WriteLine(item.Length);
-}
-```
+For more information, see [Read multiple JSON documents](../../../standard/serialization/system-text-json/use-utf8jsonreader.md#read-multiple-json-documents).
 
 ## Spans
 

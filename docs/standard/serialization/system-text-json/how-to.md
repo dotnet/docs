@@ -33,7 +33,7 @@ The following example creates JSON as a string:
 :::code language="csharp" source="snippets/how-to/csharp/SerializeBasic.cs" id="all" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="Serialize":::
 
-The JSON output is minified (whitespace, indentation, and new-line characters are removed) by default.
+The JSON output is *minified* (whitespace, indentation, and new-line characters are removed) by default.
 
 The following example uses synchronous code to create a JSON file:
 
@@ -103,6 +103,8 @@ To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOption
 
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWriteIndented.cs" highlight="24":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializePrettyPrint":::
+
+Starting in .NET 9, you can also customize the indent character and size using <xref:System.Text.Json.JsonSerializerOptions.IndentCharacter> and <xref:System.Text.Json.JsonSerializerOptions.IndentSize>.
 
 > [!TIP]
 > If you use `JsonSerializerOptions` repeatedly with the same options, don't create a new `JsonSerializerOptions` instance each time you use it. Reuse the same instance for every call. For more information, see [Reuse JsonSerializerOptions instances](configure-options.md#reuse-jsonserializeroptions-instances).

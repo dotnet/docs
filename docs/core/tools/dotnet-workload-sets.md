@@ -63,7 +63,7 @@ To "pin" the `install` command:
    dotnet workload install maui-ios
    ```
 
-   This command installs the `maui-ios` workload using the workload version from the workload set version `9.0.100-preview.7.24414.1`, since the preceding `install` command example pinned that workload set.
+   This command installs the `maui-ios` workload using the workload version from the workload-set version `9.0.100-preview.7.24414.1`, since the preceding `install` command example pinned that workload set.
 
 Using `--version` with either `install` or `update` pins `install` to the specified version, but `update` is only configured for `workload-set` update mode, not to a specific workload-set version. If you then run `dotnet workload update` without the `--version` option, the `update` command:
 
@@ -97,7 +97,7 @@ To specify a workload-set version to update to when you're not specifying it in 
    dotnet workload update --version 8.0.400
    ```
 
-`workload-set` update mode will be selected if it wasn't already selected.
+   `workload-set` update mode will be selected if it wasn't already selected.
 
 ## Use global.json for the workload-set version
 
@@ -115,7 +115,7 @@ To use a `global.json` file to specify the workload-set version for a repository
    }
    ```
 
-With the current directory in the same repository and the CLI in `workload-set` update mode, the `install`, `update`, and `restore` commands install workloads for the specified workload-set version. If you don't have a global.json file, and you're in `workload-set` update mode, the `restore` command installs the workload-set version that was established when you switched from manifests update mode to `workload-set` update mode.
+With the current directory in the same repository and the CLI in `workload-set` update mode, the `install`, `update`, and `restore` commands install workloads for the specified workload-set version. If you don't have a global.json file and you're in `workload-set` update mode, the `restore` command installs the workload-set version that was established when you switched from manifests update mode to `workload-set` update mode.
 <!--If you're using SDK 9, you defaulted to `workload-set` update mode, and you might not have established a workload-set version. In that case, `restore` installs the latest workload set available on the configured feeds.-->
 
 If you have a workload-set version in the global.json file, the workload commands are in `workload-set` mode even if you haven't run the `config` command or used `--version`. The global.json file overrides those.
@@ -127,7 +127,7 @@ In manifests update mode, `restore` installs or updates workloads to the latest 
 
 ## Check the update mode and version
 
-To see the current update mode, run the `config` command with the `--update-mode` option without an argument. The mode is either workload-set` or `manifests`. For example:
+To see the current update mode, run the `config` command with the `--update-mode` option without an argument. The mode is either `workload-set` or `manifests`. For example:
 
 ```dotnetcli
 dotnet workload config --update-mode
@@ -159,11 +159,11 @@ dotnet workload --version
 
 ## Choose a workload-set version
 
-Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`. For a stable version of the SDK, we plan on always having a matching workload-set version. So 8.0.400 SDK can install an 8.0.400 workload set, 401 can install a 401 set. In general, we recommend that you install the matching workload set for a stable SDK.
+Workload sets are published to nuget.org with each release of the .NET SDK, under the package ID `Microsoft.NET.Workloads.<feature band>`. For a stable version of the SDK, there is always a matching workload-set version. So 8.0.400 SDK can install an 8.0.400 workload set, and 401 can install a 401 set. In general, we recommend that you install the matching workload set for a stable SDK.
 
 For preview releases, find the corresponding workload-set version in the package's README tab. For example, see [the README tab for the .NET 9 Preview 7 package](https://www.nuget.org/packages/Microsoft.NET.Workloads.9.0.100-preview.7/9.100.0-preview.7.24414.1#readme-body-tab).
 
-This is a preview release. In the future we'll give you ways to list workload set versions to see what's available and what they contain.
+In the future, you'll be able to see a list of workload-set versions and what they contain.
 
 ## Ignore workload sets
 
@@ -173,7 +173,7 @@ To install, or update to, the latest version of each individual workload availab
 dotnet workload config --update-mode manifests
 ```
 
-In .NET 8.0.4xx SDK, manifests mode is the default. You need to select manifests mode explicitly only if you earlier explicitly selected `workload-set` update mode.
+In .NET 8.0.4xx SDK, manifests mode is the default. In this version, you need to select manifests mode explicitly only if you explicitly selected `workload-set` update mode previously.
 
 ## Related content
 

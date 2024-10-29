@@ -1,0 +1,42 @@
+id:
+name: GitOps.PullRequestIssueManagement
+description: GitOps.PullRequestIssueManagement primitive
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+      - description: Request review from diberry (non-write perms) for code analysis files.
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - filesMatchPattern:
+              pattern: docs/fundamentals/code-analysis/*
+              matchAny: true
+        then:
+          - requestReview:
+              reviewer: diberry
+          - mentionUsers:
+              mentionees:
+                - diberry
+              replyTemplate: "Mentioning as a test: ${mentionees}"
+              
+      - description: Request review from gewarren and dotnet/docs for ML files.
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - filesMatchPattern:
+              pattern: docs/machine-learning/*
+              matchAny: true
+        then:
+          - requestReview:
+              reviewer: gewarren
+              teamReviewer: dotnet/docs
+          - mentionUsers:
+              mentionees:
+                - gewarren
+              replyTemplate: "Mentioning as a test: ${mentionees}"

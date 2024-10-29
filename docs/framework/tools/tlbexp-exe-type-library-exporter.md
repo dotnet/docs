@@ -2,13 +2,12 @@
 title: "Tlbexp.exe (Type Library Exporter)"
 description: Review Tlbexp.exe, the Type Library Exporter. This tool generates a type library that describes the types defined in a common language runtime (CLR) assembly.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "exporting type library [.NET Framework]"
   - "exporter tool [.NET Framework]"
   - "Tlbexp.exe"
   - "Type Library Exporter"
   - "type libraries [.NET Framework], exporting"
-ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
 ---
 # Tlbexp.exe (Type Library Exporter)
 
@@ -111,7 +110,7 @@ tlbexp myTest.dll /out:clipper.tlb
 tlbimp myLib.tlb /out:myLib.dll  
 ```  
   
- The following command uses the C# compiler to compile the `Sample.dll,` which references `myLib.dll` created in the previous example.  
+ The following command uses the C# compiler to compile the `Sample.dll`, which references `myLib.dll` created in the previous example.  
   
 ```console  
 CSC Sample.cs /reference:myLib.dll /out:Sample.dll  

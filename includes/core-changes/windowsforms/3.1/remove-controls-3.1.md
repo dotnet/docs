@@ -11,6 +11,7 @@ The following types are no longer available:
 - <xref:System.Windows.Forms.ContextMenu>
 - <xref:System.Windows.Forms.DataGrid>
 - <xref:System.Windows.Forms.DataGrid.HitTestType>
+- <xref:System.Windows.Forms.DataGrid.HitTestInfo>
 - <xref:System.Windows.Forms.DataGridBoolColumn>
 - <xref:System.Windows.Forms.DataGridCell>
 - <xref:System.Windows.Forms.DataGridColumnStyle>

@@ -1336,7 +1336,7 @@ let y = myList.[ 0 .. 1 ]
 
 ### Formatting quoted expressions
 
-The delimiter symbols (`<@` , `@>`, `<@@`, `@@>`) should be placed on separate lines if the quoted expression is a multi-line expression.
+The delimiter symbols (`<@`, `@>`, `<@@`, `@@>`) should be placed on separate lines if the quoted expression is a multi-line expression.
 
 ```fsharp
 // ✔️ OK

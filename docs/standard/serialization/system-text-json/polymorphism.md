@@ -1,7 +1,7 @@
 ---
 title: How to serialize properties of derived classes with System.Text.Json
 description: "Learn how to serialize polymorphic objects while serializing to and deserializing from JSON in .NET."
-ms.date: 09/30/2022
+ms.date: 10/18/2024
 no-loc: [System.Text.Json, Newtonsoft.Json]
 zone_pivot_groups: dotnet-version
 dev_langs:
@@ -17,7 +17,7 @@ ms.topic: how-to
 
 # How to serialize properties of derived classes with System.Text.Json
 
-In this article, you will learn how to serialize properties of derived classes with the `System.Text.Json` namespace.
+In this article, you learn how to serialize properties of derived classes with the `System.Text.Json` namespace.
 
 ## Serialize properties of derived classes
 
@@ -148,7 +148,7 @@ The following example shows the JSON that results from the preceding code:
 Beginning with .NET 7, `System.Text.Json` supports polymorphic type hierarchy serialization and deserialization with attribute annotations.
 
 | Attribute | Description |
-|--|--|
+|-----------|-------------|
 | <xref:System.Text.Json.Serialization.JsonDerivedTypeAttribute> | When placed on a type declaration, indicates that the specified subtype should be opted into polymorphic serialization. It also exposes the ability to specify a type discriminator. |
 | <xref:System.Text.Json.Serialization.JsonPolymorphicAttribute> | When placed on a type declaration, indicates that the type should be serialized polymorphically. It also exposes various options to configure polymorphic serialization and deserialization for that type. |
 
@@ -240,7 +240,7 @@ Public Class WeatherForecastWithCity
 End Class
 ```
 
-With the added metadata, specifically, the type discriminator, the serializer can serialize and deserialize the payload as the `WeatherForecastWithCity` type from its base type `WeatherForecastBase`. Serialization will emit JSON along with the type discriminator metadata:
+With the added metadata, specifically, the type discriminator, the serializer can serialize and deserialize the payload as the `WeatherForecastWithCity` type from its base type `WeatherForecastBase`. Serialization emits JSON along with the type discriminator metadata:
 
 ```csharp
 WeatherForecastBase weather = new WeatherForecastWithCity
@@ -289,13 +289,22 @@ WeatherForecastBase value = JsonSerializer.Deserialize<WeatherForecastBase>(json
 Console.WriteLine(value is WeatherForecastWithCity); // True
 ```
 
-> [!NOTE]
-> The type discriminator must be placed at the start of the JSON object, grouped together with other metadata properties like `$id` and `$ref`.
-
 ```vb
 Dim value As WeatherForecastBase = JsonSerializer.Deserialize(json)
 Console.WriteLine(value is WeatherForecastWithCity) // True
 ```
+
+<!--markdownlint-disable MD031-->
+> [!NOTE]
+> By default, the `$type` discriminator must be placed at the start of the JSON object, grouped together with other metadata properties like `$id` and `$ref`. If you're reading data off an external API that places the `$type` discriminator in the middle of the JSON object, set <xref:System.Text.Json.JsonSerializerOptions.AllowOutOfOrderMetadataProperties?displayProperty=nameWithType> to `true`:
+>
+> ```csharp
+> JsonSerializerOptions options = new() { AllowOutOfOrderMetadataProperties = true };
+> JsonSerializer.Deserialize<Base>("""{"Name":"Name","$type":"derived"}""", options);
+> ```
+>
+> Be careful when you enable this flag, as it might result in over-buffering (and out-of-memory failures) when performing streaming deserialization of very large JSON objects.
+<!--markdownlint-enable MD031-->
 
 ### Mix and match type discriminator formats
 

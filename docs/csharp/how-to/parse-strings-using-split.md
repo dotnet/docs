@@ -47,7 +47,7 @@ Consecutive instances of any separator produce the empty string in the output ar
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ParseStringsUsingSplit.cs" id="Snippet5":::
 
-## Use GitHub Copilot to split a string using String.Split in C\#
+## Use GitHub Copilot to split a string
 
 You can use GitHub Copilot in your IDE to generate code to split strings using `String.Split` in C#.
 
@@ -62,7 +62,7 @@ The following text shows an example prompt for Copilot Chat:
 
 You can customize the prompt to use strings and delimiters per your requirements.
 
-You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing class in a project that's open in the IDE, you can prompt GitHub Copilot with `/generate code to convert the string "123" to a number`.
+You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing file open in the IDE, you can prompt GitHub Copilot using the `/generate` slash command as follows: `/generate code to split string1 in #Filename by delimiter spaces`.
 
 The following output shows an example Copilot Chat response:
 

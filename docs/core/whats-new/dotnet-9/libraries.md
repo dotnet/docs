@@ -91,7 +91,6 @@ For more information, see the [API proposal](https://github.com/dotnet/runtime/i
 - [X.509 certificate loading](#x509-certificate-loading)
 - [OpenSSL providers support](#openssl-providers-support)
 - [Windows CNG virtualization-based security](#windows-cng-virtualization-based-security)
--
 
 ### CryptographicOperations.HashData() method
 

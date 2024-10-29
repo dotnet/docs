@@ -599,7 +599,7 @@ Instead of falling back to the base type, you can use the `FallBackToNearestAnce
 ```csharp
 [JsonPolymorphic(
     UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FallBackToNearestAncestor)]
-[JsonDerivedType(typeof(BasePoint)]
+[JsonDerivedType(typeof(BasePoint))]
 public interface IPoint { }
 
 public class BasePoint : IPoint { }

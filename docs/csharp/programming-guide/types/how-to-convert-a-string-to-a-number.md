@@ -64,16 +64,16 @@ If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/release
 
 The following text shows an example prompt for Copilot Chat:
 
-> Generate code to convert the string "123" to a number. Provide example output.
+> Generate C# code to convert the string "123" to a number using TryParse. Provide example output.
 
 You can customize the prompt to use a string per your requirements.
 
-You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing file open in the IDE, you can prompt GitHub Copilot with `/generate code to convert the string string1 in #Filename to a number`.
+You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing file that's open in the IDE, you can prompt GitHub Copilot using inline chat with `/generate code to convert the string string1 in #Filename to a number`.
 
 The following output shows an example Copilot Chat response:
 
 ```output
-Here is the code to convert the string "123" to a number using int.TryParse, along with example output:
+Here is a C# code snippet to convert the string "123" to a number using TryParse:
 
 using System;
 
@@ -81,30 +81,24 @@ class Program
 {
     static void Main()
     {
-        string str = "123";
+        string numberString = "123";
         int number;
-
-        bool isConvertible = int.TryParse(str, out number);
-
-        if (isConvertible)
+        bool success = int.TryParse(numberString, out number);
+        
+        if (success)
         {
-            // Conversion succeeded, 'number' contains the integer value
-            Console.WriteLine($"The string was successfully converted to the number: {number}");
+            // Example output
+            Console.WriteLine("The converted number is: " + number);
         }
         else
         {
-            // Conversion failed
-            Console.WriteLine("The string could not be converted to a number.");
+            Console.WriteLine("Conversion failed.");
         }
     }
 }
 
-**Example Output**
-The string was successfully converted to the number: 123
-
-In this example:
-• The string "123" is successfully converted to the integer 123.
-• The output confirms the successful conversion.
+When you run this code, the output will be:
+The converted number is: 123
 ```
 
 When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.

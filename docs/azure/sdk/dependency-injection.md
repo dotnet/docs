@@ -26,7 +26,7 @@ To register and configure service clients from an [`Azure.`-prefixed package](pa
     dotnet add package Azure.Identity
     ```
 
-For demonstration purposes, the sample code in this article uses the Key Vault Secrets, Blob Storage, and Service Bus libraries. Install the following packages to follow along:
+For demonstration purposes, the sample code in this article uses the Key Vault Secrets, Blob Storage, Service Bus, and Azure OpenAI libraries. Install the following packages to follow along:
 
 ```dotnetcli
 dotnet add package Azure.Security.KeyVault.Secrets

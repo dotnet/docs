@@ -54,7 +54,7 @@ Complete the following steps to create a .NET console app that will connect to y
     dotnet new console
     ```
 
-1. Add the Semantic Kernel SDK package to your app:
+1. Add the [Semantic Kernel SDK](https://www.nuget.org/packages/Microsoft.SemanticKernel) and the [Semantic Kernel Ollama Connector](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Ollama/1.25.0-alpha) packages to your app:
 
     ```dotnetcli
     dotnet add package Microsoft.SemanticKernel

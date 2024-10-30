@@ -4,6 +4,7 @@ description: Learn about the new .NET features introduced in .NET 9 for the runt
 titleSuffix: ""
 ms.date: 10/08/2024
 ms.topic: whats-new
+appliesto: .NET 9
 ---
 
 # What's new in .NET 9

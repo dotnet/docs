@@ -199,7 +199,7 @@ Consider the following steps that are required to migrate to the MSTest SDK.
 
 ### Update your project
 
-When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk/3.3.1"`
+When migrating an existing MSTest test project to MSTest SDK, start by replacing the `Sdk="Microsoft.NET.Sdk"` entry at the top of your test project with `Sdk="MSTest.Sdk"`
 
 ```diff
 - Sdk="Microsoft.NET.Sdk"

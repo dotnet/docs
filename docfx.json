@@ -166,6 +166,9 @@
             }
         },
         "fileMetadata": {
+            "appliesto": {
+                "docs/framework/**/**.md": ".NET Framework"
+            },{
             "uhfHeaderId": {
                 "docs/csharp/**/**.*": "MSDocsHeader-DotNetCSharp",
                 "_csharplang/**.*": "MSDocsHeader-DotNetCSharp",

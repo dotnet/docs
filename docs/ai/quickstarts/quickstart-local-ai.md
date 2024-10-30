@@ -54,10 +54,11 @@ Complete the following steps to create a .NET console app that will connect to y
     dotnet new console
     ```
 
-1. Add the Semantic Kernel SDK package to your app:
+1. Add the [Semantic Kernel SDK](https://www.nuget.org/packages/Microsoft.SemanticKernel) and the [Semantic Kernel Ollama Connector](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Ollama/1.25.0-alpha) packages to your app:
 
     ```dotnetcli
     dotnet add package Microsoft.SemanticKernel
+    dotnet add package Microsoft.SemanticKernel.Connectors.Ollama
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -72,45 +73,7 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
 
 1. Open the _Program.cs_ file and replace the contents of the file with the following code:
 
-    ```csharp
-    using Microsoft.SemanticKernel;
-    using Microsoft.SemanticKernel.ChatCompletion;
-    
-    // Create a kernel with OpenAI chat completion
-    #pragma warning disable SKEXP0010
-    Kernel kernel = Kernel.CreateBuilder()
-                        .AddOpenAIChatCompletion(
-                            modelId: "phi3:mini",
-                            endpoint: new Uri("http://localhost:11434"),
-                            apiKey: "")
-                        .Build();
-    
-    var aiChatService = kernel.GetRequiredService<IChatCompletionService>();
-    var chatHistory = new ChatHistory();
-    
-    while (true)
-    {
-        // Get user prompt and add to chat history
-        Console.WriteLine("Your prompt:");
-        var userPrompt = Console.ReadLine();
-        chatHistory.Add(new ChatMessageContent(AuthorRole.User, userPrompt));
-    
-        // Stream the AI response and add to chat history
-        Console.WriteLine("AI Response:");
-        var response = "";
-        await foreach(var item in 
-            aiChatService.GetStreamingChatMessageContentsAsync(chatHistory))
-        {
-            Console.Write(item.Content);
-            response += item.Content;
-        }
-        chatHistory.Add(new ChatMessageContent(AuthorRole.Assistant, response));
-        Console.WriteLine();
-    }
-    ```
-
-    > [!NOTE]
-    > The `#pragma warning disable SKEXP0010` line is included due to the experimental state of some Semantic Kernel SDK features.
+    :::code language="csharp" source="snippets/local-ai/program.cs" :::
 
     The preceding code accomplishes the following tasks:
     - Creates a `Kernel` object and uses it to retrieve a chat completion service.

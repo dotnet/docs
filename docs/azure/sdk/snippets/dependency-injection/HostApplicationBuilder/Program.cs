@@ -5,7 +5,6 @@ using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Hosting;
 using Azure.AI.OpenAI;
 
-
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
     {

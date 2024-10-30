@@ -7,9 +7,7 @@ using Azure.AI.OpenAI;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-List<string> queueNames = await GetQueueNames();
-
-builder.Services.AddAzureClients(clientBuilder =>
+builder.Services.AddAzureClients(async clientBuilder =>
 {
     // Register clients for each service
     clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
@@ -22,11 +20,12 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.UseCredential(credential);
 
     // Register a subclient for each Service Bus Queue
+    List<string> queueNames = await GetQueueNames(credential);
     foreach (string queue in queueNames)
     {
         clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>(
             (_, _, provider) => provider.GetService<ServiceBusClient>()
-                    .CreateSender(queue)).WithName(queue);
+                .CreateSender(queue)).WithName(queue);
     }
 
     // Register a custom client factory
@@ -37,11 +36,11 @@ builder.Services.AddAzureClients(clientBuilder =>
 
 WebApplication app = builder.Build();
 
-async Task<List<string>> GetQueueNames()
+async Task<List<string>> GetQueueNames(DefaultAzureCredential credential)
 {
     // Query the available queues for the Service Bus namespace.
     var adminClient = new ServiceBusAdministrationClient
-        ("<your_namespace>.servicebus.windows.net", new DefaultAzureCredential());
+        ("<your_namespace>.servicebus.windows.net", credential);
     var queueNames = new List<string>();
 
     // Because the result is async, the queue names need to be captured

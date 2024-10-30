@@ -23,7 +23,8 @@ For more details, watch out for an [upcoming blog post about this feature](https
 
 Here are some examples:
 
-<pre><code class="language-fsharp">// Declared type at let-binding
+```fsharp
+// Declared type at let-binding
 let notAValue: string | null = null
 
 let isAValue: string | null = "hello world"
@@ -54,56 +55,62 @@ let findOrNull (index: int) (list: 'T list) : 'T | null when 'T : not struct =
     match List.tryItem index list with
     | Some item -> item
     | None -> null
-</code></pre>
+```
 
 ### Discriminated union `.Is*` properties
 
 Discriminated unions now have auto-generated properties for each case, allowing you to check if a value is of a particular case. For example, for the following type:
 
-<pre><code class="language-fsharp">type Contact =
+```fsharp
+type Contact =
     | Email of address: string
     | Phone of countryCode: int * number: string
 
 type Person = { name: string; contact: Contact }
-</code></pre>
+```
 
 Previously, you would have to write something like:
 
-<pre><code class="language-fsharp">let canSendEmailTo person =
+```fsharp
+let canSendEmailTo person =
     match person.contact with
     | Email _ -> true
     | _ -> false
-</code></pre>
+```
 
 Now, you can instead write:
 
-<pre><code class="language-fsharp">let canSendEmailTo person =
+```fsharp
+let canSendEmailTo person =
     person.contact.IsEmail
-</code></pre>
+```
 
 ### Partial active patterns can return `bool` instead of `unit option`
 
 Previously, partial active patterns would return `Some ()` to indicate a match and `None` otherwise. Now, they can also return `bool`.
 
 For example, the active pattern for the following:
-<pre><code class="language-fsharp">match key with
+```fsharp
+match key with
 | CaseInsensitive "foo" -> ...
 | CaseInsensitive "bar" -> ...
-</code></pre>
+```
 
 Would previously be written as:
-<pre><code class="language-fsharp">let (|CaseInsensitive|_|) (pattern: string) (value: string) =
+```fsharp
+let (|CaseInsensitive|_|) (pattern: string) (value: string) =
     if String.Equals(value, pattern, StringComparison.OrdinalIgnoreCase) then
         Some ()
     else
         None
-</code></pre>
+```
 
 Now, you can instead write:
 
-<pre><code class="language-fsharp">let (|CaseInsensitive|_|) (pattern: string) (value: string) =
+```fsharp
+let (|CaseInsensitive|_|) (pattern: string) (value: string) =
     String.Equals(value, pattern, StringComparison.OrdinalIgnoreCase)
-</code></pre>
+```
 
 ### Prefer extension methods to intrinsic properties when arguments are provided
 
@@ -111,7 +118,8 @@ To align with a pattern seen in some .NET libraries, where extension methods are
 
 Example:
 
-<pre><code class="language-fsharp">type Foo() =
+```fsharp
+type Foo() =
     member val X : int = 0 with get, set
 
 [&ltExtension&gt;]
@@ -122,19 +130,20 @@ type FooExt =
 let f = Foo()
 
 f.X(1) // We can now call the extension method to set the property and chain further calls
-</code></pre>
+```
 
 ### Support for empty-bodied computation expressions
 
 F# now supports empty [computation expressions](https://learn.microsoft.com/dotnet/fsharp/language-reference/computation-expressions).
 
-<pre class="language-fsharp"><code>let xs = seq { } // Empty sequence</code></pre>
+<pre class="language-fsharp"><code>let xs = seq { } // Empty sequence```
 
-<pre><code class="language-fsharp">let html =
+```fsharp
+let html =
     div {
         p { "Some content." }
         p { } // Empty paragraph
-    }</code></pre>
+    }```
 
 Writing an empty computation expression will result in a call to the CE builder's `Zero` method.
 
@@ -145,12 +154,14 @@ This is a more natural syntax compared to the previously available `builder { ()
 Hash directives for the compiler previously only allowed string arguments passed in quotes. Now, they can take any type of argument.
 
 Previously, you had:
-<pre><code class="language-fsharp">#nowarn "0070"
-#time "on"</code></pre>
+```fsharp
+#nowarn "0070"
+#time "on"```
 
 Now, you can write:
-<pre><code class="language-fsharp">#nowarn 0070
-#time on</code></pre>
+```fsharp
+#nowarn 0070
+#time on```
 
 This also ties into the next two changes.
 
@@ -178,7 +189,7 @@ inputs |> List.map (fun x -> x.Length)
 
 Full name: Microsoft.FSharp.Collections.ListModule.map
 Assembly: FSharp.Core.dll
-</code></pre>
+```
 
 ### Allow #nowarn to support the FS prefix on error codes to disable warnings
 
@@ -187,14 +198,15 @@ Previously, when you wanted to disable a warning and wrote `#nowarn "FS0057"`, y
 Now, you won't have to spend time figuring that out because the warning numbers are accepted even with the prefix.
 
 All of these will now work:
-<pre><code class="language-fsharp">#nowarn 57
+```fsharp
+#nowarn 57
 #nowarn 0057
 #nowarn FS0057
 
 #nowarn "57"
 #nowarn "0057"
 #nowarn "FS0057"
-</code></pre>
+```
 
 It's probably a good idea to stick to the same style throughout your project.
 
@@ -203,7 +215,8 @@ It's probably a good idea to stick to the same style throughout your project.
 F# will now emit a warning when you put the `[<TailCall>]` attribute somewhere it doesn't belong. While it has no effect on what the code does, it could confuse someone reading it.
 
 For example, these will now emit a warning:
-<pre><code class="language-fsharp">[&lt;TailCall&gt;]
+```fsharp
+[&lt;TailCall&gt;]
 let someNonRecFun x = x + x
 
 [&lt;TailCall&gt;]
@@ -211,7 +224,7 @@ let someX = 23
 
 [&lt;TailCall&gt;]
 let rec someRecLetBoundValue = nameof(someRecLetBoundValue)
-</code></pre>
+```
 
 ### Enforce attribute targets
 
@@ -219,10 +232,11 @@ The compiler now correctly enforces the `AttributeTargets` on let values, functi
 
 Previously, you could have written:
 
-<pre><code class="language-fsharp">[&lt;Fact&gt;]
+```fsharp
+[&lt;Fact&gt;]
 let ``this test always fails`` =
   Assert.True(false)
-</code></pre>
+```
 
 Run the tests with `dotnet test` and they would pass. Since the test function is not actually a function, it is ignored by the test runner.
 
@@ -246,9 +260,10 @@ There are four functions (each with three variants) available:
 
 The shuffle functions return a new collection of the same type and size, with each item in a randomly mixed position. The chance to end up in any position is weighted evenly on the length of the collection.
 
-<pre><code class="language-fsharp">let allPlayers = [ "Alice"; "Bob"; "Charlie"; "Dave" ]
+```fsharp
+let allPlayers = [ "Alice"; "Bob"; "Charlie"; "Dave" ]
 let round1Order = allPlayers |> List.randomShuffle // [ "Charlie"; "Dave"; "Alice"; "Bob" ]
-</code></pre>
+```
 
 For arrays, there are also `InPlace` variants that shuffle the array in place.
 
@@ -256,25 +271,28 @@ For arrays, there are also `InPlace` variants that shuffle the array in place.
 
 The choice functions return a single random element from the given collection. The random choice is weighted evenly on the size of the collection.
 
-<pre><code class="language-fsharp">let allPlayers = [ "Alice"; "Bob"; "Charlie"; "Dave" ]
+```fsharp
+let allPlayers = [ "Alice"; "Bob"; "Charlie"; "Dave" ]
 let randomPlayer = allPlayers |> List.randomChoice // "Charlie"
-</code></pre>
+```
 
 #### Choices
 
 Choices select N elements from the input collection in random order, allowing elements to be selected more than once.
 
-<pre><code class="language-fsharp">let weather = [ "Raining"; "Sunny"; "Snowing"; "Windy" ]
+```fsharp
+let weather = [ "Raining"; "Sunny"; "Snowing"; "Windy" ]
 let forecastForNext3Days = weather |> List.randomChoices 3 // [ "Windy"; "Snowing"; "Windy" ]
-</code></pre>
+```
 
 #### Sample
 
 Sample selects N elements from the input collection in random order, without allowing elements to be selected more than once. N cannot be greater than the collection length.
 
-<pre><code class="language-fsharp">let foods = [ "Apple"; "Banana"; "Carrot"; "Donut"; "Egg" ]
+```fsharp
+let foods = [ "Apple"; "Banana"; "Carrot"; "Donut"; "Egg" ]
 let today'sMenu = foods |> List.randomSample 3 // [ "Donut"; "Apple"; "Egg" ]
-</code></pre>
+```
 
 For a full list of functions and their variants, see ([RFC #1135](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1135-random-functions-for-collections.md)).
 
@@ -282,10 +300,11 @@ For a full list of functions and their variants, see ([RFC #1135](https://github
 
 This makes it easier to create a custom operation for a computation expression builder. It will use the name of the method instead of having to explicitly name it (when in most cases the name matches the method name already).
 
-<pre><code class="language-fsharp">type FooBuilder() =
+```fsharp
+type FooBuilder() =
     [&lt;CustomOperation&gt;]  // Previously would have to be [&lt;CustomOperation("bar")&gt;]
     member _.bar(state) = state
-</code></pre>
+```
 
 ### C# collection expression support for F# lists and sets
 
@@ -294,12 +313,12 @@ When using F# lists and sets from C#, you can now use collection expressions to 
 Instead of:
 
 <pre><code class="language-csharp">FSharpSet&lt;int&gt; mySet = SetModule.FromArray([1, 2, 3]);
-</code></pre>
+```
 
 You can now write:
 
 <pre><code class="language-csharp">FSharpSet&lt;int&gt; mySet = [ 1, 2, 3 ];
-</code></pre>
+```
 
 This makes it easier to use the F# immutable collections from C#, for example when you need their structural equality, which `System.Collections.Immutable` collections don't have.
 
@@ -334,7 +353,7 @@ Now, there is an opt-in fix for this behavior available via the `--realsig+` com
 <pre><code class="language-xml">&lt;PropertyGroup&gt;
     &lt;OtherFlags&gt;--realsig+&lt;/OtherFlags&gt;
 &lt;/PropertyGroup&gt;
-</code></pre>
+```
 
 ## Performance improvements
 
@@ -344,7 +363,8 @@ Equality checks are now faster and allocate less memory.
 
 For example:
 
-<pre><code class="language-fsharp">[&lt;Struct&gt;]
+```fsharp
+[&lt;Struct&gt;]
 type MyId =
     val Id: int
     new id = { Id = id }
@@ -353,7 +373,7 @@ let ids = Array.init 1000 MyId
 let missingId = MyId -1
 
 // used to box 1000 times, doesn't box anymore
-let _ = ids |> Array.contains missingId</code></pre>
+let _ = ids |> Array.contains missingId```
 
 You can read all the details here: [F# Developer Stories: How we’ve finally fixed a 9-year-old performance issue](https://devblogs.microsoft.com/dotnet/fsharp-developer-stories-how-weve-finally-fixed-a-9yearold-performance-issue/).
 
@@ -367,15 +387,18 @@ The compiler now generates optimized code for more instances of `start..finish` 
 
 This leads to anywhere from 1.25× up to 8× speed up in loops:
 
-<pre><code class="language-fsharp">for … in start..finish do …</code></pre>
+```fsharp
+for … in start..finish do …```
 
 List/array expressions:
 
-<pre><code class="language-fsharp">[start..step..finish]</code></pre>
+```fsharp
+[start..step..finish]```
 
 and comprehensions:
 
-<pre><code class="language-fsharp">[for n in start..finish -> f n]</code></pre>
+```fsharp
+[for n in start..finish -> f n]```
 
 ### Optimized `for x in xs -> …` in list and array comprehensions
 
@@ -392,8 +415,9 @@ This previously opt-in feature has been thoroughly tested and is now enabled by 
 Sometimes extra parentheses are used for clarity, but sometimes they are just noise. For the latter case, you now get a code fix in Visual Studio to remove them.
 
 For example:
-<pre><code class="language-fsharp">let f (x) = x // -> let f x = x
-let _ = (2 * 2) + 3 // -> let _ = 2 * 2 + 3</code></pre>
+```fsharp
+let f (x) = x // -> let f x = x
+let _ = (2 * 2) + 3 // -> let _ = 2 * 2 + 3```
 
 ### Custom Visualizer support for F# in Visual Studio
 

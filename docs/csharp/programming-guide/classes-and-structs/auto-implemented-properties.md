@@ -1,7 +1,7 @@
 ---
 title: "Automatically Implemented Properties"
 description: For an automatically implemented property in C#, the compiler creates a private, anonymous backing field accessed only through get and set accessors of the property.
-ms.date: 08/20/2024
+ms.date: 10/30/2024
 f1_keywords:
   - "propertyInitializer_CSharpKeyword"
 helpviewer_keywords:
@@ -33,6 +33,8 @@ The class that is shown in the previous example is mutable. Client code can chan
 * Declare the `set` accessor as [private](../../language-reference/keywords/private.md) (immutable to consumers).
 
 For more information, see [How to implement a lightweight class with automatically implemented properties](./how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
+
+TODO: Add `field` backed properties to make the slope smooth.
 
 ## See also
 

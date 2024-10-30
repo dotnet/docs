@@ -1,7 +1,7 @@
 ---
 title: "Using Properties"
 description: These examples illustrate using properties in C#. See how the get and set accessors implement read and write access and find out about uses for properties.
-ms.date: 08/20/2024
+ms.date: 10/30/2024
 helpviewer_keywords: 
   - "set accessor [C#]"
   - "get accessor [C#]"

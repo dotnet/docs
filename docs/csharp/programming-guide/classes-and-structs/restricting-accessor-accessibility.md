@@ -1,7 +1,7 @@
 ---
 title: "Restricting Accessor Accessibility"
 description: The get and set accessors of a property in C# have the same visibility or access level by default as property to which they belong. You can restrict access.
-ms.date: 07/29/2022
+ms.date: 10/30/2024
 helpviewer_keywords: 
   - "read-only properties [C#]"
   - "read-only indexers [C#]"
@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "properties [C#], read-only"
   - "asymmetric accessor accessibility [C#]"
   - "indexers [C#], read-only"
-ms.assetid: 6e655798-e112-4301-a680-6310a6e012e1
 ---
 # Restricting Accessor Accessibility (C# Programming Guide)
 

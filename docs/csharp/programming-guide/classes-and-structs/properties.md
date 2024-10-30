@@ -1,7 +1,7 @@
 ---
 title: "Properties"
 description: A property in C# is a member that uses accessor methods to read, write, or compute the value of a private field as if it were a public data member.
-ms.date: 08/16/2024
+ms.date: 10/30/2024
 f1_keywords:
   - "cs.properties"
 helpviewer_keywords:
@@ -25,6 +25,33 @@ The preceding example shows an *automatically implemented property*. The compile
 You can initialize a property to a value other than the default by setting a value after the closing brace for the property. You might prefer the initial value for the `FirstName` property to be the empty string rather than `null`. You would specify that as shown in the following code:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Initializer":::
+
+## Required properties
+
+The preceding example allows a caller to create a `Person` using the default constructor, without setting the `FirstName` property. The property changed type to a *nullable* string. Beginning in C# 11, you can *require* callers to set a property:
+
+:::code language="csharp" source="./snippets/properties/Person.cs" id="Required":::
+
+The preceding code makes two changes to the `Person` class. First, the `FirstName` property declaration includes the `required` modifier. That means any code that creates a new `Person` must set this property using an [object initializer](./object-and-collection-initializers.md). Second, the constructor that takes a `firstName` parameter has the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute. This attribute informs the compiler that this constructor sets *all* `required` members. Callers using this constructor aren't required to set `required` properties with an object initializer.
+
+> [!IMPORTANT]
+> Don't confuse `required` with *non-nullable*. It's valid to set a `required` property to `null` or `default`. If the type is non-nullable, such as `string` in these examples, the compiler issues a warning.
+
+:::code language="csharp" source="./snippets/properties/Program.cs" id="SnippetInitialize":::
+
+## Field backed properties
+
+TODO:  `field` discussion
+
+## Expression body definitions
+
+Property accessors often consist of single-line statements. The accessors assign or return the result of an expression. You can implement these properties as expression-bodied members. Expression body definitions consist of the `=>` token followed by the expression to assign to or retrieve from the property.
+
+Read-only properties can implement the `get` accessor as an expression-bodied member. The following example implements the read-only `Name` property as an expression-bodied member:
+
+:::code language="csharp" source="./snippets/properties/Person.cs" id="ExpressionBodiedProperty":::
+
+The `Name` property is a computed property. There's no backing field for `Name`. The property computes it each time.
 
 ## Access control
 
@@ -50,29 +77,6 @@ The preceding example requires callers to use the constructor that includes the 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="InitOnly":::
 
 These modifiers are often used with the `required` modifier to force proper initialization.
-
-## Required properties
-
-The preceding example allows a caller to create a `Person` using the default constructor, without setting the `FirstName` property. The property changed type to a *nullable* string. Beginning in C# 11, you can *require* callers to set a property:
-
-:::code language="csharp" source="./snippets/properties/Person.cs" id="Required":::
-
-The preceding code makes two changes to the `Person` class. First, the `FirstName` property declaration includes the `required` modifier. That means any code that creates a new `Person` must set this property using an [object initializer](./object-and-collection-initializers.md). Second, the constructor that takes a `firstName` parameter has the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=fullName> attribute. This attribute informs the compiler that this constructor sets *all* `required` members. Callers using this constructor aren't required to set `required` properties with an object initializer.
-
-> [!IMPORTANT]
-> Don't confuse `required` with *non-nullable*. It's valid to set a `required` property to `null` or `default`. If the type is non-nullable, such as `string` in these examples, the compiler issues a warning.
-
-:::code language="csharp" source="./snippets/properties/Program.cs" id="SnippetInitialize":::
-
-## Expression body definitions
-
-Property accessors often consist of single-line statements. The accessors assign or return the result of an expression. You can implement these properties as expression-bodied members. Expression body definitions consist of the `=>` token followed by the expression to assign to or retrieve from the property.
-
-Read-only properties can implement the `get` accessor as an expression-bodied member. The following example implements the read-only `Name` property as an expression-bodied member:
-
-:::code language="csharp" source="./snippets/properties/Person.cs" id="ExpressionBodiedProperty":::
-
-The `Name` property is a computed property. There's no backing field for `Name`. The property computes it each time.
 
 ## Properties with backing fields
 

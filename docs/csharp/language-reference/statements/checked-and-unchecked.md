@@ -1,7 +1,7 @@
 ---
-title: "checked and unchecked statements - control the overflow-checking context"
-description: "The `checked` and `unchecked` statements control the overflow-checking context. In a checked context, overflow causes an exception to be thrown. In an unchecked context, the result is truncated."
-ms.date: 11/22/2022
+title: "checked, unchecked statements - overflow-checking context"
+description: "Control the overflow-checking context. In a checked context, overflow causes an exception to be thrown. In an unchecked context, the result is truncated."
+ms.date: 10/29/2022
 f1_keywords: 
   - "checked_CSharpKeyword"
   - "unchecked_CSharpKeyword"
@@ -31,6 +31,16 @@ The `checked` and `unchecked` statements and operators only affect the overflow-
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="ScopeExample":::
 
 At the preceding example, the first invocation of the `Multiply` local function shows that the `checked` statement doesn't affect the overflow-checking context within the `Multiply` function as no exception is thrown. At the second invocation of the `Multiply` function, the expression that calculates the second argument of the function is evaluated in a checked context and results in an exception as it's textually inside the block of the `checked` statement.
+
+The behavior of `checked` and `unchecked` depends on the type and the operation. Even for integers, things like `unchecked(x / 0)` will always throw because there is no sensible behavior. Developers need to check the behavior for the type being used and the operation being done to understand how the `checked` and `unchecked` keywords will impact their code.
+
+## Numeric types and overflow-checking context
+
+The `checked` and `unchecked` primarily apply to integral types where there is a sensible overflow behavior. The wraparound behavior where `T.MaxValue + 1` becomes `T.MinValue` is sensible in a two's complement value. The represented value is not *correct* since it cannot fit in the storage for the type. Therefore, the bits are representative of the lower n-bits of the full result.
+
+For types like `decimal`, `float`, `double` or `Half` where you have a more complex value being represented or a one's complement representation, wraparound no longer becomes sensible. It can't be used to compute larger or more accurate results, so `unchecked` isn't beneficial.
+
+For `float`, `double`, and `Half` you do have sensible saturating values for `PositiveInfinity` and `NegativeInfinity` so you can detect overflow in an `unchecked` context. For `decimal`, no such limits exist and saturating at `MaxValue` can lead to errors or confusion, so operations using those types throw in both a `checked` and `unchecked` context.
 
 ## Operations affected by the overflow-checking context
 

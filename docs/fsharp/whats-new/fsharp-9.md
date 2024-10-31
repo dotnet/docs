@@ -130,7 +130,7 @@ let f = Foo()
 f.X(1) // We can now call the extension method to set the property and chain further calls
 ```
 
-## Support for empty-bodied computation expressions
+## Empty-bodied computation expressions
 
 F# now supports empty [computation expressions](../language-reference/computation-expressions.md).
 

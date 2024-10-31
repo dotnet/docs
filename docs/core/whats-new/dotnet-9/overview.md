@@ -98,7 +98,7 @@ F# 9 ships with the .NET 9 SDK and includes the following new features:
 - Discriminated union .Is* properties
 - Partial active patterns can return bool instead of unit option
 - Prefer extension methods to intrinsic properties when arguments are provided
-- Support for empty-bodied computation expressions
+- Empty-bodied computation expressions
 - Hash directives are allowed to take non-string arguments
 - Extended #help directive in fsi to show documentation in the REPL
 - Allow #nowarn to support the FS prefix on error codes to disable warnings

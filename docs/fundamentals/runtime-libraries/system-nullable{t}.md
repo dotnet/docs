@@ -1,7 +1,7 @@
 ---
-title: System.Nullable\<T> structure
-description: Learn about the System.Nullable\<T> structure.
-ms.date: 12/31/2023
+title: System.Nullable<T> structure
+description: Learn about the System.Nullable<T> structure.
+ms.date: 10/31/2024
 ---
 # System.Nullable\<T> structure
 

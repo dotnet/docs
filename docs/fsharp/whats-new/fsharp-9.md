@@ -86,6 +86,7 @@ let canSendEmailTo person =
 Previously, partial active patterns returned `Some ()` to indicate a match and `None` otherwise. Now, they can also return `bool`.
 
 For example, the active pattern for the following:
+
 ```fsharp
 match key with
 | CaseInsensitive "foo" -> ...
@@ -154,12 +155,14 @@ This is a more natural syntax compared to the previously available `builder { ()
 Hash directives for the compiler previously only allowed string arguments passed in quotes. Now, they can take any type of argument.
 
 Previously, you had:
+
 ```fsharp
 #nowarn "0070"
 #time "on"
 ```
 
 Now, you can write:
+
 ```fsharp
 #nowarn 0070
 #time on
@@ -201,6 +204,7 @@ Previously, when you wanted to disable a warning and wrote `#nowarn "FS0057"`, y
 Now, you won't have to spend time figuring that out because the warning numbers are accepted even with the prefix.
 
 All of these will now work:
+
 ```fsharp
 #nowarn 57
 #nowarn 0057
@@ -218,6 +222,7 @@ It's a good idea to use the same style throughout your project.
 F# now emits a warning when you put the `[<TailCall>]` attribute somewhere it doesn't belong. While it has no effect on what the code does, it could confuse someone reading it.
 
 For example, these usages will now emit a warning:
+
 ```fsharp
 [<TailCall>]
 let someNonRecFun x = x + x
@@ -268,7 +273,9 @@ let allPlayers = [ "Alice"; "Bob"; "Charlie"; "Dave" ]
 let round1Order = allPlayers |> List.randomShuffle // [ "Charlie"; "Dave"; "Alice"; "Bob" ]
 ```
 
-For arrays, there are also `InPlace` variants that shuffle the array in place.
+For arrays, there are also `InPlace` variants that shuffle the items in the existing array instead of creating a new one.
+
+```fsharp
 
 #### Choice
 
@@ -358,7 +365,7 @@ Now, there is an opt-in fix for this behavior available via the `--realsig+` com
 
 ```xml
 <PropertyGroup>
-    <OtherFlags>--realsig+</OtherFlags>
+    <RealSig>true</RealSig>
 </PropertyGroup>
 ```
 
@@ -387,7 +394,40 @@ You can read all the details here: [F# Developer Stories: How we’ve finally fi
 
 ### Field sharing for struct discriminated unions
 
-If fields in multiple cases of a struct discriminated union have the same name and type, they can share the same location, reducing the struct's memory footprint. (Previously, same field names weren't allowed, so there are no issues with binary compatibility.)
+If fields in multiple cases of a struct discriminated union have the same name and type, they can share the same memory location, reducing the struct's memory footprint. (Previously, same field names weren't allowed, so there are no issues with binary compatibility.)
+
+For example:
+
+```fsharp
+[<Struct>]
+type MyStructDU =
+    | Length of int64<meter>
+    | Time of int64<second>
+    | Temperature of int64<kelvin>
+    | Pressure of int64<pascal>
+    | Abbrev of TypeAbbreviationForInt64
+    | JustPlain of int64
+    | MyUnit of int64<MyUnit>
+
+sizeof<MyStructDU> // 16 bytes
+```
+
+Comparing to previous verion (where you had to use unique field names):
+
+```fsharp
+[<Struct>]
+type MyStructDU =
+    | Length of length: int64<meter>
+    | Time of time: int64<second>
+    | Temperature of temperature: int64<kelvin>
+    | Pressure of pressure: int64<pascal>
+    | Abbrev of abbrev: TypeAbbreviationForInt64
+    | JustPlain of plain: int64
+    | MyUnit of myUnit: int64<MyUnit>
+
+sizeof<MyStructDU> // 60 bytes
+```
+
 
 ### Integral range optimizations
 
@@ -426,6 +466,7 @@ This previously opt-in feature has been thoroughly tested and is now enabled by 
 Sometimes extra parentheses are used for clarity, but sometimes they are just noise. For the latter case, you now get a code fix in Visual Studio to remove them.
 
 For example:
+
 ```fsharp
 let f (x) = x // -> let f x = x
 let _ = (2 * 2) + 3 // -> let _ = 2 * 2 + 3

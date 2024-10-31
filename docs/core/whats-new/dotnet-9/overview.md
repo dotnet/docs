@@ -90,6 +90,26 @@ C# 13 ships with the .NET 9 SDK and includes the following new features:
 
 For more information, see [What's new in C# 13](../../../csharp/whats-new/csharp-13.md).
 
+## F# 9
+
+F# 9 ships with the .NET 9 SDK and includes the following new features:
+
+- Nullable reference types
+- Discriminated union .Is* properties
+- Partial active patterns can return bool instead of unit option
+- Prefer extension methods to intrinsic properties when arguments are provided
+- Support for empty-bodied computation expressions
+- Hash directives are allowed to take non-string arguments
+- Extended #help directive in fsi to show documentation in the REPL
+- Allow #nowarn to support the FS prefix on error codes to disable warnings
+- Warning about TailCall attribute on non-rec functions or let-bound values
+- Enforce attribute targets
+- Random functions for collections
+- C# collection expression support for F# lists and sets
+- Various quality of life, performance and tooling improvements
+
+For more information, see [What's new in F# 9](../../../fsharp/whats-new/fsharp-9.md).
+
 ## Windows Presentation Foundation
 
 Windows Presentation Foundation (WPF) includes support for Windows 11 theming and hyphen-based ligatures. For more information, see [WPF in .NET 9 Preview 4 - Release Notes](https://github.com/dotnet/core/blob/main/release-notes/9.0/preview/preview4/wpf.md).

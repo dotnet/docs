@@ -26,6 +26,14 @@ You can initialize a property to a value other than the default by setting a val
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Initializer":::
 
+## Field backed properties
+
+In C# 13, you can add validation or other logic in the accessor for a property using the [`field`](../../language-reference/keywords/field.md) keyword preview feature. The `field` keyword accesses the compiler generated backing field for a property. It enables you to write a property accessor without explicitly declaring a separate backing field.
+
+:::code language="csharp" source="./snippets/properties/Person.cs" id="FieldBackedProperty":::
+
+[!INCLUDE[field-preview](../../includes/field-preview.md)]
+
 ## Required properties
 
 The preceding example allows a caller to create a `Person` using the default constructor, without setting the `FirstName` property. The property changed type to a *nullable* string. Beginning in C# 11, you can *require* callers to set a property:
@@ -38,10 +46,6 @@ The preceding code makes two changes to the `Person` class. First, the `FirstNam
 > Don't confuse `required` with *non-nullable*. It's valid to set a `required` property to `null` or `default`. If the type is non-nullable, such as `string` in these examples, the compiler issues a warning.
 
 :::code language="csharp" source="./snippets/properties/Program.cs" id="SnippetInitialize":::
-
-## Field backed properties
-
-TODO:  `field` discussion
 
 ## Expression body definitions
 

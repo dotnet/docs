@@ -165,3 +165,20 @@ partial struct S1
     void Struct_Test2() { }
 }
 //</Snippet10>
+
+// <FieldProperty>
+// in file1.cs
+public partial class Container
+{
+    // Defining declaration
+    public int MyProperty { get; set; }
+}
+
+// In file2.cs
+public partial class Container
+{
+    // Defining declaration
+    public int MyProperty { get => field; set; }
+}
+
+// </FieldProperty>

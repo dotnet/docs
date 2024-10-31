@@ -11,11 +11,7 @@ F# 9 introduces a range of enhancements that make your programs safer, more resi
 
 You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
-## F# language changes
-
-This section describes updates to the language itself, changes you will notice when writing or reading F# code.
-
-### Nullable reference types
+## Nullable reference types
 
 Although F# is designed to avoid `null`, it can creep in when interfacing with .NET libraries written in C#. F# now provides a type-safe way to deal with reference types that can have `null` as a valid value.
 
@@ -57,7 +53,7 @@ let findOrNull (index: int) (list: 'T list) : 'T | null when 'T : not struct =
     | None -> null
 ```
 
-### Discriminated union `.Is*` properties
+## Discriminated union `.Is*` properties
 
 Discriminated unions now have auto-generated properties for each case, allowing you to check if a value is of a particular case. For example, for the following type:
 
@@ -85,7 +81,7 @@ let canSendEmailTo person =
     person.contact.IsEmail
 ```
 
-### Partial active patterns can return `bool` instead of `unit option`
+## Partial active patterns can return `bool` instead of `unit option`
 
 Previously, partial active patterns returned `Some ()` to indicate a match and `None` otherwise. Now, they can also return `bool`.
 
@@ -113,7 +109,7 @@ let (|CaseInsensitive|_|) (pattern: string) (value: string) =
     String.Equals(value, pattern, StringComparison.OrdinalIgnoreCase)
 ```
 
-### Prefer extension methods to intrinsic properties when arguments are provided
+## Prefer extension methods to intrinsic properties when arguments are provided
 
 To align with a pattern seen in some .NET libraries, where extension methods are defined with the same names as intrinsic properties of a type, F# now resolves these extension methods instead of failing the type check.
 
@@ -123,9 +119,9 @@ Example:
 type Foo() =
     member val X : int = 0 with get, set
 
-[&ltExtension&gt;]
+[&ltExtension>]
 type FooExt =
-    [&ltExtension&gt;]
+    [&ltExtension>]
     static member X (f: Foo, i: int) = f.X <- i; f
 
 let f = Foo()
@@ -133,44 +129,50 @@ let f = Foo()
 f.X(1) // We can now call the extension method to set the property and chain further calls
 ```
 
-### Support for empty-bodied computation expressions
+## Support for empty-bodied computation expressions
 
 F# now supports empty [computation expressions](../language-reference/computation-expressions.md).
 
-<pre class="language-fsharp"><code>let xs = seq { } // Empty sequence```
+```fsharp
+let xs = seq { } // Empty sequence
+```
 
 ```fsharp
 let html =
     div {
         p { "Some content." }
         p { } // Empty paragraph
-    }```
+    }
+```
 
 Writing an empty computation expression will result in a call to the CE builder's `Zero` method.
 
 This is a more natural syntax compared to the previously available `builder { () }`.
 
-### Hash directives are allowed to take non-string arguments
+## Hash directives are allowed to take non-string arguments
 
 Hash directives for the compiler previously only allowed string arguments passed in quotes. Now, they can take any type of argument.
 
 Previously, you had:
 ```fsharp
 #nowarn "0070"
-#time "on"```
+#time "on"
+```
 
 Now, you can write:
 ```fsharp
 #nowarn 0070
-#time on```
+#time on
+```
 
 This also ties into the next two changes.
 
-### Extended #help directive in fsi to show documentation in the REPL
+## Extended #help directive in fsi to show documentation in the REPL
 
 The `#help` directive in F# Interactive now shows documentation for a given object or function, which you can now pass without quotes.
 
-<pre><code>&gt; #help List.map;;
+```
+> #help List.map;;
 
 Description:
 Builds a new collection whose elements are the results of applying the given function
@@ -192,7 +194,7 @@ Full name: Microsoft.FSharp.Collections.ListModule.map
 Assembly: FSharp.Core.dll
 ```
 
-### Allow #nowarn to support the FS prefix on error codes to disable warnings
+## Allow #nowarn to support the FS prefix on error codes to disable warnings
 
 Previously, when you wanted to disable a warning and wrote `#nowarn "FS0057"`, you would get an `Invalid warning number 'FS0057'`. Even though the warning number is correct, it just wasn't supposed to have the `FS` prefix.
 
@@ -211,30 +213,30 @@ All of these will now work:
 
 It's a good idea to use the same style throughout your project.
 
-### Warning about TailCall attribute on non-rec functions or let-bound values
+## Warning about TailCall attribute on non-rec functions or let-bound values
 
 F# now emits a warning when you put the `[<TailCall>]` attribute somewhere it doesn't belong. While it has no effect on what the code does, it could confuse someone reading it.
 
 For example, these usages will now emit a warning:
 ```fsharp
-[&lt;TailCall&gt;]
+[<TailCall>]
 let someNonRecFun x = x + x
 
-[&lt;TailCall&gt;]
+[<TailCall>]
 let someX = 23
 
-[&lt;TailCall&gt;]
+[<TailCall>]
 let rec someRecLetBoundValue = nameof(someRecLetBoundValue)
 ```
 
-### Enforce attribute targets
+## Enforce attribute targets
 
 The compiler now correctly enforces the `AttributeTargets` on let values, functions, union case declarations, implicit constructors, structs, and classes. This can prevent some hard-to-notice bugs, such as forgetting to add the unit argument to an Xunit test.
 
 Previously, you could write:
 
 ```fsharp
-[&lt;Fact&gt;]
+[<Fact>]
 let ``this test always fails`` =
   Assert.True(false)
 ```
@@ -303,7 +305,7 @@ This constructor makes it easier to create a custom operation for a computation 
 
 ```fsharp
 type FooBuilder() =
-    [&lt;CustomOperation&gt;]  // Previously had to be [&lt;CustomOperation("bar")&gt;]
+    [<CustomOperation>]  // Previously had to be [<CustomOperation("bar")>]
     member _.bar(state) = state
 ```
 
@@ -314,13 +316,13 @@ When using F# lists and sets from C#, you can now use collection expressions to 
 Instead of:
 
 ```csharp
-FSharpSet&lt;int&gt; mySet = SetModule.FromArray([1, 2, 3]);
+FSharpSet<int> mySet = SetModule.FromArray([1, 2, 3]);
 ```
 
 You can now write:
 
 ```csharp
-FSharpSet&lt;int&gt; mySet = [ 1, 2, 3 ];
+FSharpSet<int> mySet = [ 1, 2, 3 ];
 ```
 
 Collection expressions make it easier to use the F# immutable collections from C#. You might want to use the F# collections when you need their structural equality, which <xref:System.Collections.Immutable> collections don't have.
@@ -356,8 +358,8 @@ Now, there is an opt-in fix for this behavior available via the `--realsig+` com
 
 ```xml
 <PropertyGroup>
-    &lt;OtherFlags&gt;--realsig+&lt;/OtherFlags&gt;
-&lt;/PropertyGroup&gt;
+    <OtherFlags>--realsig+</OtherFlags>
+</PropertyGroup>
 ```
 
 ## Performance improvements
@@ -369,7 +371,7 @@ Equality checks are now faster and allocate less memory.
 For example:
 
 ```fsharp
-[&lt;Struct&gt;]
+[<Struct>]
 type MyId =
     val Id: int
     new id = { Id = id }

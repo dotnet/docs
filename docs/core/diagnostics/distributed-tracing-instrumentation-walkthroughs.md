@@ -29,7 +29,7 @@ dotnet new console
 
 Applications that target .NET 5 and later already have the necessary distributed tracing APIs included. For apps targeting older
 .NET versions, add the [System.Diagnostics.DiagnosticSource NuGet package](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/)
-version 5 or greater.
+version 5 or greater. For libraries targetting netstandard, we recommend referencing the latest version of NuGet package.
 
 ```dotnetcli
 dotnet add package System.Diagnostics.DiagnosticSource

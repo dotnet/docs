@@ -197,6 +197,8 @@ Full name: Microsoft.FSharp.Collections.ListModule.map
 Assembly: FSharp.Core.dll
 ```
 
+See [Enhancing #help in F# Interactive blog post](https://devblogs.microsoft.com/dotnet/enhancing-help-in-fsi/) for more details.
+
 ## Allow #nowarn to support the FS prefix on error codes to disable warnings
 
 Previously, when you wanted to disable a warning and wrote `#nowarn "FS0057"`, you would get an `Invalid warning number 'FS0057'`. Even though the warning number is correct, it just wasn't supposed to have the `FS` prefix.
@@ -389,6 +391,34 @@ let missingId = MyId -1
 // used to box 1000 times, doesn't box anymore
 let _ = ids |> Array.contains missingId
 ```
+
+#### Benchmark results for affected array functions, applied to a 2-member struct
+
+Before:
+
+| Method                       | Mean        | Error      | Gen0   | Allocated |
+|----------------------------- |------------:|-----------:|-------:|----------:|
+| ArrayContainsExisting        |    15.48 ns |   0.398 ns | 0.0008 |      48 B |
+| ArrayContainsNonexisting     | 5,190.95 ns | 103.533 ns | 0.3891 |   24000 B |
+| ArrayExistsExisting          |    17.97 ns |   0.389 ns | 0.0012 |      72 B |
+| ArrayExistsNonexisting       | 5,316.64 ns | 103.776 ns | 0.3891 |   24024 B |
+| ArrayTryFindExisting         |    24.80 ns |   0.554 ns | 0.0015 |      96 B |
+| ArrayTryFindNonexisting      | 5,139.58 ns | 260.949 ns | 0.3891 |   24024 B |
+| ArrayTryFindIndexExisting    |    15.92 ns |   0.526 ns | 0.0015 |      96 B |
+| ArrayTryFindIndexNonexisting | 4,349.13 ns | 100.750 ns | 0.3891 |   24024 B |
+
+After:
+
+| Method                       | Mean         | Error      | Gen0   | Allocated |
+|----------------------------- |-------------:|-----------:|-------:|----------:|
+| ArrayContainsExisting        |     4.865 ns |  0.3452 ns |      - |         - |
+| ArrayContainsNonexisting     |   766.005 ns | 15.2003 ns |      - |         - |
+| ArrayExistsExisting          |     8.025 ns |  0.1966 ns | 0.0004 |      24 B |
+| ArrayExistsNonexisting       |   834.811 ns | 16.2784 ns |      - |      24 B |
+| ArrayTryFindExisting         |    16.401 ns |  0.3932 ns | 0.0008 |      48 B |
+| ArrayTryFindNonexisting      | 1,140.515 ns | 22.7372 ns |      - |      24 B |
+| ArrayTryFindIndexExisting    |    14.864 ns |  0.3648 ns | 0.0008 |      48 B |
+| ArrayTryFindIndexNonexisting |   990.028 ns | 19.7157 ns |      - |      24 B |
 
 You can read all the details here: [F# Developer Stories: How we’ve finally fixed a 9-year-old performance issue](https://devblogs.microsoft.com/dotnet/fsharp-developer-stories-how-weve-finally-fixed-a-9yearold-performance-issue/).
 

@@ -458,7 +458,6 @@ type MyStructDU =
 sizeof<MyStructDU> // 60 bytes
 ```
 
-
 ### Integral range optimizations
 
 The compiler now generates optimized code for more instances of `start..finish` and `start..step..finish` expressions. Previously, these were only optimized when the type was `int`/`int32` and the step was a constant `1` or `-1`. Other integral types and different step values used an inefficient `IEnumerable`-based implementation. Now, all of these are optimized.

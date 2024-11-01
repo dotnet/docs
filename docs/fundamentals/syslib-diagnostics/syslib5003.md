@@ -10,13 +10,13 @@ f1_keywords:
 
 In .NET 9, the first set of non-streaming SVE APIs were introduced and annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. This indicates that both the internal implementation and the generated code for SVE may undergo changes. This includes potential modifications to method signatures, parameters, or namespaces in future updates, aimed at ensuring robust support for upcoming SVE technologies and streaming SVE designs. If you are using these APIs in your project, the `SYSLIB5003` diagnostic will need to be suppressed.
 
-```csharp
-<PropertyGroup>    
-    <EnablePreviewFeatures>True</EnablePreviewFeatures>
-  </PropertyGroup>
-```
+To suppress the warnings in a project file:
 
-[!INCLUDE [suppress-syslib-warning](includes/suppress-source-generator-diagnostics.md)]
+```xml
+<PropertyGroup>
+   <!-- SYSLIB50003: System.Runtime.Intrinsics.Arm.Sve is experimental -->
+   <NoWarn>$(NoWarn);SYSLIB5003</NoWarn>
+</PropertyGroup>
 
 ## See also
 

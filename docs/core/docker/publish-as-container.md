@@ -222,7 +222,7 @@ To publish to an archive, add the `ContainerArchiveOutputPath` property to your 
 
 ```dotnetcli
 dotnet publish \
-  -p PublishProfile=DefaultContainer \
+  /t:PublishContainer \
   -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
 ```
 

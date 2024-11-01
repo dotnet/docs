@@ -171,14 +171,14 @@ partial struct S1
 public partial class Container
 {
     // Defining declaration
-    public int MyProperty { get; set; }
+    public partial int MyProperty { get; set; }
 }
 
 // In file2.cs
 public partial class Container
 {
     // Defining declaration
-    public int MyProperty { get => field; set; }
+    public partial int MyProperty { get => field; set; }
 }
 
 // </FieldProperty>

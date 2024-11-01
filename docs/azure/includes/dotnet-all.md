@@ -354,7 +354,7 @@
 | App Configuration Extension | NuGet [8.0.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.0.0)<br>NuGet [8.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.1.0-preview) |  |  |
 | App Configuration Provider | NuGet [8.0.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.0.0)<br>NuGet [8.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.1.0-preview) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
-| Communication Calling Windows Client | NuGet [1.9.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.9.0)<br>NuGet [1.10.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.10.0-beta.1) |  |  |
+| Communication Calling Windows Client | NuGet [1.9.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.9.0)<br>NuGet [1.10.0-beta.2](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.10.0-beta.2) |  |  |
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.3) |  |  |
 | Item Templates NetCore | NuGet [4.0.5049](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5049) |  |  |

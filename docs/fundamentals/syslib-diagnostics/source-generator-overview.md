@@ -168,6 +168,7 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 | [SYSLIB1228][1228] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1229][1229] | (Reserved for System.Text.Json.SourceGeneration.) |
 | [SYSLIB1230][1230] | Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported. |
+| [SYSLIB5003][5003] | SVE is a preview feature can be used by enabling `EnablePreviewFeatures` flag. |
 
 <!-- Include adds ## Suppress warnings (H2 heading) -->
 [!INCLUDE [suppress-source-generator-diagnostics](includes/suppress-source-generator-diagnostics.md)]
@@ -313,3 +314,4 @@ The following table provides an index to the `SYSLIB1XXX` diagnostics in .NET 6 
 [1228]: syslib1220-1229.md
 [1229]: syslib1220-1229.md
 [1230]: syslib1230.md
+[5003]: syslib5003.md

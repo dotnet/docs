@@ -20,4 +20,5 @@ To suppress the warnings in a project file:
 
 ## See also
 
+- [Experimental features](experimental-overview.md)
 - [Future work](https://devblogs.microsoft.com/dotnet/engineering-sve-in-dotnet/#8.-future)

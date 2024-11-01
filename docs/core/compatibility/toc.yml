@@ -30,6 +30,8 @@ items:
                 href: core-libraries/9.0/biginteger-limit.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
+              - name: EnumConverter validates registered types to be enum
+                href: core-libraries/9.0/enumconverter.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
               - name: FromKeyedServicesAttribute no longer injects non-keyed parameter
@@ -1260,6 +1262,8 @@ items:
                 href: core-libraries/9.0/binaryreader.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
+              - name: EnumConverter validates registered types to be enum
+                href: core-libraries/9.0/enumconverter.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
               - name: FromKeyedServicesAttribute no longer injects non-keyed parameter

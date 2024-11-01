@@ -168,14 +168,14 @@ partial struct S1
 
 // <FieldProperty>
 // in file1.cs
-public partial class Container
+public partial class PropertyBag
 {
     // Defining declaration
     public partial int MyProperty { get; set; }
 }
 
 // In file2.cs
-public partial class Container
+public partial class PropertyBag
 {
     // Defining declaration
     public partial int MyProperty { get => field; set; }

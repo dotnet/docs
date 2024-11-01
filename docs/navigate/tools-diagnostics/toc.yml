@@ -1809,6 +1809,9 @@ items:
           - name: Overview
             displayName: syslib, experimental
             href: ../../fundamentals/syslib-diagnostics/experimental-overview.md
+          - name: SYSLIB5003
+            href: ../../fundamentals/syslib-diagnostics/syslib5003.md
+            displayProperty: syslib5003          
       - name: Source-generated code
         items:
           - name: Overview
@@ -1902,9 +1905,6 @@ items:
           - name: SYSLIB1230
             href: ../../fundamentals/syslib-diagnostics/syslib1230.md
             displayProperty: syslib1230, syslib1231, syslib1232, syslib1233, syslib1234, syslib1235, syslib1236, syslib1237, syslib1238, syslib1239
-          - name: SYSLIB5003
-            href: ../../fundamentals/syslib-diagnostics/syslib5003.md
-            displayProperty: syslib5003
   - name: API compatibility
     items:
       - name: Overview

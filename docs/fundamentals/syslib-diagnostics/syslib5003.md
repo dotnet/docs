@@ -8,7 +8,7 @@ f1_keywords:
 
 # SYSLIB5003: SVE is a preview feature can be used by enabling EnablePreviewFeatures flag
 
-In .NET 9, the first set of non-streaming SVE APIs were introduced and annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. This indicates that both the internal implementation and the generated code for SVE may undergo changes. This includes potential modifications to method signatures, parameters, or namespaces in future updates, aimed at ensuring robust support for upcoming SVE technologies and streaming SVE designs. If you are using these APIs in your project, the `SYSLIB5003` diagnostic will need to be suppressed.
+In .NET 9, the first set of non-streaming SVE APIs were introduced and annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. This attribute indicates that both the internal implementation and the generated code for SVE might undergo changes. These potential changes include modifications to method signatures, parameters, or namespaces in future updates, aimed at ensuring robust support for upcoming SVE technologies and streaming SVE designs. If you're using these APIs in your project, you'll need to suppress the `SYSLIB5003` diagnostic.
 
 To suppress the warnings in a project file:
 

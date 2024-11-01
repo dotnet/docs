@@ -32,7 +32,7 @@ The class that is shown in the previous example is mutable. Client code can chan
 
 For more information, see [How to implement a lightweight class with automatically implemented properties](./how-to-implement-a-lightweight-class-with-auto-implemented-properties.md).
 
-You might need to add validation to an automatically implemented property. C# 13 adds [field backed properties](../../language-reference/keywords/field.md) as a preview feature. You use the `field` keyword to access the compiler generated backing field of an automatically implemented property. For example, you could ensure that the `FirstName` property in the preceding example can't be set to `null` or the empty string:
+You might need to add validation to an automatically implemented property. C# 13 adds [field backed properties](../../language-reference/keywords/field.md) as a preview feature. You use the `field` keyword to access the compiler synthesized backing field of an automatically implemented property. For example, you could ensure that the `FirstName` property in the preceding example can't be set to `null` or the empty string:
 
 ```csharp
 public string FirstName 

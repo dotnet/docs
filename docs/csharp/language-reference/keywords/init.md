@@ -17,7 +17,7 @@ The following code demonstrates an `init` accessor in an automatically implement
 
 :::code language="csharp" source="snippets/InitExample2.cs":::
 
-You might need to implement one of the accessors to provide parameter validation. You can do that using the `field` keyword, introduced as a preview feature in C# 13. The `field` keyword accesses the compiler generated backing field for that property. The following example shows a property where the `init` accessor validates the range of the `value` parameter"
+You might need to implement one of the accessors to provide parameter validation. You can do that using the `field` keyword, introduced as a preview feature in C# 13. The `field` keyword accesses the compiler synthesized backing field for that property. The following example shows a property where the `init` accessor validates the range of the `value` parameter"
 
 :::code language="csharp" source="snippets/InitExample5.cs":::
 

@@ -28,7 +28,7 @@ You can initialize a property to a value other than the default by setting a val
 
 ## Field backed properties
 
-In C# 13, you can add validation or other logic in the accessor for a property using the [`field`](../../language-reference/keywords/field.md) keyword preview feature. The `field` keyword accesses the compiler generated backing field for a property. It enables you to write a property accessor without explicitly declaring a separate backing field.
+In C# 13, you can add validation or other logic in the accessor for a property using the [`field`](../../language-reference/keywords/field.md) keyword preview feature. The `field` keyword accesses the compiler synthesized backing field for a property. It enables you to write a property accessor without explicitly declaring a separate backing field.
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="FieldBackedProperty":::
 

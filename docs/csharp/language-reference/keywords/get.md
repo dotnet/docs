@@ -23,7 +23,7 @@ Often, the `get` accessor consists of a single statement that returns a value, a
 
 :::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetExpressions":::
 
-You might find that you need to implement one of the accessor bodies. You can use a field backed property to let the compiler generate one accessor while you write the other by hand. You use the `field` keyword, added as a preview feature in C# 13, to access the compiler generated backing field:
+You might find that you need to implement one of the accessor bodies. You can use a field backed property to let the compiler generate one accessor while you write the other by hand. You use the `field` keyword, added as a preview feature in C# 13, to access the compiler synthesized backing field:
 
 :::code language="csharp" source="./snippets/PropertyAccessors.cs" id="FieldBackedProperty":::
 

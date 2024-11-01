@@ -116,7 +116,7 @@ The method and all calls to the method are removed at compile time when there's 
 
 Any method that doesn't conform to all those restrictions, including properties and indexers, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using automatically implemented properties. The compiler can't distinguish between an automatically implemented property, and the declaring declaration of a partial property.
 
-Beginning with C# 13, the implementing declaration for a partial property can use [field backed properties](../../language-reference/keywords/field.md) to define the implementing declaration. A field backed property provides a concise syntax where the `field` keyword accesses the compiler generated backing field for the property. For example, you could write the following:
+Beginning with C# 13, the implementing declaration for a partial property can use [field backed properties](../../language-reference/keywords/field.md) to define the implementing declaration. A field backed property provides a concise syntax where the `field` keyword accesses the compiler synthesized backing field for the property. For example, you could write the following:
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="FieldProperty":::
 

@@ -166,7 +166,7 @@ This feature is intended for library authors to avoid ambiguity when adding new 
 
 ## The `field` keyword
 
-The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. The token `field` accesses the compiler generated backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.
+The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. The token `field` accesses the compiler synthesized backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.
 
 The `field` feature is released as a preview feature. We want to learn from your experiences using it. There's a potential a breaking change or confusion reading code in types that also include a field named `field`.  You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier.
 

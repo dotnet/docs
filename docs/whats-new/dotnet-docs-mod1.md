@@ -41,7 +41,7 @@ Welcome to what's new in the .NET docs for October 2024. This article lists some
 - [SYSLIB1230: Deriving from a `GeneratedComInterface`-attributed interface defined in another assembly is not supported](../fundamentals/syslib-diagnostics/syslib1230.md)
 - [Upgrade projects with .NET Upgrade Assistant](../core/porting/upgrade-assistant-how-to-upgrade.md)
 - [What is code analysis with .NET Upgrade Assistant?](../core/porting/upgrade-assistant-analyze-overview.md)
-- [ZZZ - Title not found in: #43074](../standard/serialization/system-text-json/json-schema-exporter.md)
+- [Extract schema](../standard/serialization/system-text-json/extract-schema.md)
 
 ### Updated articles
 

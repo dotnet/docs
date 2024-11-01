@@ -1,4 +1,4 @@
-name: "clean repo"
+name: "clean repo - includes"
 
 on:
   schedule:
@@ -26,29 +26,18 @@ jobs:
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: dotnet/docs-tools/cleanrepo@2a815a6c0976e888a49264f513dc230008b4a1f2
+        uses: dotnet/docs-tools/cleanrepo@1c13adc87741beab84bb6e286d17b3b95ce687d8
         with:
+          function: 'FindOrphanedIncludes'
           docfx_directory: '.'
-          articles_directory: 'docs'
-          media_directory: 'docs'
-          snippets_directory: '.' # This includes the ./samples and ./docs directories, which both contain snippets.
-          includes_directory: 'includes'
+          target_directory: '.'
           url_base_path: '/dotnet'
-          delete: true
-          orphaned_articles: true
-          orphaned_images: true
-          catalog_images: false
-          orphaned_snippets: true
-          orphaned_includes: true
-          replace_redirects: true
-          relative_links: true
-          remove_hops: true
         
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request
         uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f
         with:
           branch: create-cleanrepo-pull-request/patch
-          title: "Monthly chores: Automated repo cleanup"
+          title: "Monthly chores: Delete orphaned include files"
           commit-message: 'Bot 🤖 generated CleanRepo tool run'
-          body: "Find and delete orphaned articles, images, snippets, and include files. Remove redirection hops, update redirected links in articles, and replace site-relative links with file-relative links. Contributes to #..."
+          body: "Find and delete orphaned include files. Contributes to #..."

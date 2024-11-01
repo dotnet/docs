@@ -1,4 +1,4 @@
-name: "clean repo - redirect hops"
+name: "clean repo - articles"
 
 on:
   schedule:
@@ -26,18 +26,18 @@ jobs:
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: dotnet/docs-tools/cleanrepo@1c13adc87741beab84bb6e286d17b3b95ce687d8
+        uses: dotnet/docs-tools/cleanrepo@b1ebc174a5bbd18e6904a12069a8fae2c5cc3b6f
         with:
-          function: 'RemoveRedirectHops'
-          docfx_directory: '.'
-          target_directory: 'docs'
-          url_base_path: '/dotnet'
-        
+          function: "FindOrphanedArticles"
+          docfx_directory: "."
+          target_directory: "docs"
+          url_base_path: "/dotnet"
+
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request
         uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f
         with:
-          branch: create-cleanrepo-pull-request/patch
-          title: "Monthly chores: Remove redirect hops"
-          commit-message: 'Bot 🤖 generated CleanRepo tool run'
-          body: "Remove redirect hops, for example, if a -> b and b -> c, replace a -> b with a -> c. Contributes to #..."
+          branch: cleanrepo-orphaned-articles
+          title: "Monthly chores: Delete orphaned articles"
+          commit-message: "Bot 🤖 generated CleanRepo tool run"
+          body: "Find and delete orphaned articles. Contributes to #..."

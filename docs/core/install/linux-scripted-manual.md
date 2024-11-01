@@ -21,15 +21,18 @@ The following table lists the support status of each version of .NET (and .NET C
 
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
-| 8 (LTS)     | 7             |
-| 6 (LTS)     | 5             |
-|             | 3.1           |
+| 9 (STS)     | 7             |
+| 8 (LTS)     | 5             |
+| 6 (LTS)     | 3.1           |
 |             | 3.0           |
 |             | 2.2           |
 |             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
+
+> [!IMPORTANT]
+> .NET 9 is currently in preview.
 
 ## Dependencies
 

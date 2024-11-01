@@ -25,7 +25,7 @@ This article describes how .NET is available on various Linux distributions. .NE
 - [Debian](linux-debian.md)
 - [Fedora](linux-fedora.md)
 - [openSUSE](linux-opensuse.md)
-- [SLES](linux-sles.md)
+- [SUSE Enterprise Linux](linux-sles.md)
 - [Ubuntu](linux-ubuntu.md)
 
 .NET is [supported by Microsoft](https://github.com/dotnet/core/blob/main/microsoft-support.md) when downloaded from a Microsoft source. Best effort support is offered from Microsoft when downloaded from elsewhere. You can open issues at [dotnet/core](https://github.com/dotnet/core) if you run into problems.

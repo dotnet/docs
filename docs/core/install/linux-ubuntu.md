@@ -9,7 +9,8 @@ ms.custom: updateeachrelease, linux-related-content
 
 # Overview of .NET on Ubuntu
 
-This article describes how to install .NET on Ubuntu. Starting with Ubuntu 22.04, most supported versions of .NET are available in the built-in Ubuntu feed. The Ubuntu .NET backports package repository contains the remaining supported .NET versions, which are not available in the built-in Ubuntu package feed for these Ubuntu versions. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
+This article describes how to install .NET on Ubuntu. Starting with Ubuntu 22.04, most supported versions of .NET are available in the built-in Ubuntu feed. The Ubuntu .NET backports package repository contains the remaining supported .NET versions. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
+
 Additionally, for Ubuntu 23.10 and previous versions, the Microsoft package repository contains every version of .NET that is currently, or was previously, supported.
 
 > [!WARNING]
@@ -112,7 +113,7 @@ Starting with .NET 8 on Ubuntu 24.04, Canonical supports .NET for the IBM System
 
 Install .NET through the built-in Ubuntu feed. For more information, see the following page:
 
-- [Install .NET 8 on Ubuntu 24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404&tabs=dotnet8).
+- [Install .NET 8 on Ubuntu 24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404&tabs=dotnet8).
 
 ## Supported distributions
 
@@ -122,12 +123,16 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Ubuntu                                                             | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](#register-the-ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](#register-the-microsoft-package-repository) |
 |--------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 8.0, 6.0                | 8.0                                  | 7.0, 6.0                                                                                               | None                                                                         |
+| [24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410)       | 9.0, 8.0                | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
+| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 9.0, 8.0, 6.0           | 8.0                                  | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
 | [23.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2310)       | 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0                                                                |
-| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                   | 8.0, 7.0, 6.0, 3.1                                                           |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 9.0, 8.0, 6.0           | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
 | [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 6.0                | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
 | [18.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1804) | 6.0                     | None                                 | None                                                                                                   | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1                                                 |
 | [16.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-1604) | 6.0                     | None                                 | None                                                                                                   | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0                                            |
+
+> [!IMPORTANT]
+> .NET 9 is currently in preview.
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
 

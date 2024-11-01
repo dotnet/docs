@@ -1,4 +1,4 @@
-name: "clean repo - images"
+name: "clean repo - relative links"
 
 on:
   schedule:
@@ -26,9 +26,9 @@ jobs:
       # Call clean repo
       - name: Clean repo
         id: clean-repo-step
-        uses: dotnet/docs-tools/cleanrepo@4beec484bfcae02e62fcf430b70c2cb18dac2828
+        uses: dotnet/docs-tools/cleanrepo@b1ebc174a5bbd18e6904a12069a8fae2c5cc3b6f
         with:
-          function: "FindOrphanedImages"
+          function: "ReplaceWithRelativeLinks"
           docfx_directory: "."
           target_directory: "docs"
           url_base_path: "/dotnet"
@@ -37,7 +37,7 @@ jobs:
       - name: create-pull-request
         uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f
         with:
-          branch: create-cleanrepo-pull-request/patch
-          title: "Monthly chores: Delete orphaned images"
+          branch: cleanrepo-relative-links
+          title: "Monthly chores: Use relative links"
           commit-message: "Bot 🤖 generated CleanRepo tool run"
-          body: "Find and delete orphaned images. Contributes to #..."
+          body: "Find and replace absolute links with relative links. Contributes to #..."

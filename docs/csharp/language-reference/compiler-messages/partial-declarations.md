@@ -45,6 +45,8 @@ f1_keywords:
   - "CS9255"
   - "CS9256"
   - "CS9257"
+  - "CS9258"
+  - "CS9263"
 helpviewer_keywords:
   - "CS0260"
   - "CS0261"
@@ -89,7 +91,9 @@ helpviewer_keywords:
   - "CS9255"
   - "CS9256"
   - "CS9257"
-ms.date: 08/21/2024
+  - "CS9258"
+  - "CS9263"
+ms.date: 11/01/2024
 ---
 # Errors and warnings related to `partial` type and `partial` member declarations
 
@@ -141,6 +145,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9255**](#partial-properties): *Both partial property declarations must have the same type.*
 - [**CS9256**](#partial-properties): *Partial property declarations have signature differences.*
 - [**CS9257**](#partial-properties): *Both partial property declarations must be required or neither may be required*
+- [**CS9258**](#field-backed-properties): *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
+- [**CS9263**](#field-backed-properties): *A partial property cannot have an initializer on both the definition and implementation.*
 
 The following sections explain the cause and fixes for these errors and warnings.
 
@@ -235,4 +241,13 @@ A partial property or indexer must have both a *declaring declaration* and an *i
 public partial int ImplementingDeclaration { get => field; set; }
 ```
 
+## field backed properties
+
+- **CS9258**: *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
+- **CS9263**: *A partial property cannot have an initializer on both the definition and implementation.*
+
 [!INCLUDE[field-preview](../../includes/field-preview.md)]
+
+Beginning with C# 13, the preview feature, `field` backed properties allows you to access the compiler synthesized backing field for a property. **CS9258** indicates that you have a variable named `field`, which can be hidden by the contextual keyword `field`.
+
+**CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property.

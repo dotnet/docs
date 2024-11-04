@@ -117,7 +117,7 @@ Starting in .NET 8, `dotnet restore` [audits NuGet package references for known 
 
 ## Faster NuGet dependency resolution for large repos
 
-The NuGet dependency resolver has been overhauled to improve performance and scalability for all `<PackageReference>` projects. Enabled by default, the new algorithm speeds up restore operations without compromising on functionality, strictly adhering to the core dependency resolution rules. 
+The NuGet dependency resolver has been overhauled to improve performance and scalability for all `<PackageReference>` projects. Enabled by default, the new algorithm speeds up restore operations without compromising on functionality, strictly adhering to the core dependency resolution rules.
 
 If you encounter any issues, such as restore failures or unexpected package versions compared to previous releases, you can [revert to the legacy resolver](https://learn.microsoft.com/nuget/consume-packages/Package-References-in-Project-Files#nuget-dependency-resolver).
 

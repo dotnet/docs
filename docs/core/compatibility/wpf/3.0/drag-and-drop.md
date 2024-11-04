@@ -1,11 +1,11 @@
 ---
 title: "Breaking change: 'Text drag-and-drop operations'"
-description: Learn about a breaking change in Windows Presentation Foundation (WPF) and .NET Core 3.0. Drag-and-drop behavior changed when dragging text from a text editor control.
+description: Learn about a breaking change in Windows Presentation Foundation (WPF) in .NET Core 3.0. Drag-and-drop behavior changed when dragging text from a text editor control.
 ms.date: 11/4/2024
 ai-usage: ai-assisted
 ---
 
-# .NET Core 3.0 altered drag-and-drop behavior on text editors
+# Altered drag-and-drop behavior on text editors
 
 .NET Core 3.0 introduced a change in how text editor controls create a <xref:System.Windows.DataObject?displayProperty=fullName> when dragging text to another control. The change disabled autoconversion, causing the operation to keep the data as <xref:System.Windows.DataFormats.Text?displayProperty=nameWithType> or <xref:System.Windows.DataFormats.UnicodeText?displayProperty=nameWithType> instead of converting it to <xref:System.Windows.DataFormats.StringFormat?displayProperty=nameWithType>.
 

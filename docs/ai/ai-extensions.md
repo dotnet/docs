@@ -12,13 +12,13 @@ ms.author: alexwolf
 
 The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [`Microsoft.Extensions.AI.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) libraries. The .NET team also enhanced the core `Microsoft.Extensions.*` libraries with these abstractions for .NET Generative AI applications and libraries. In the sections ahead, you learn:
 
-- Core concepts and capabilities of the `Microsoft.Extensions.AI` and `Microsoft.Extensions.AI.Abstractions` libraries
-- How to work with AI abstractions in your apps and the benefits they offer
-- Essential AI middleware concepts
+- Core concepts and capabilities of the `Microsoft.Extensions.AI` library.
+- How to work with AI abstractions in your apps and the benefits they offer.
+- Essential AI middleware concepts.
 
 ## What is the Microsoft.Extensions.AI library?
 
-`Microsoft.Extensions.AI` is a set of core .NET libraries developed in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
+`Microsoft.Extensions.AI` is a set of core .NET libraries created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
 
 :::image type="content" source="media/ai-extensions/meai-architecture-diagram.png" alt-text="An architectural diagram of the AI extensions libraries.":::
 
@@ -52,9 +52,11 @@ var response = await chatClient.CompleteAsync(
 Console.WriteLine(response.Message);  
 ```
 
-These abstractions allow for idiomatic C# code for various scenarios with minimal code changes, whether you're using different services for development or production, addressing hybrid scenarios, or exploring other service providers. Library authors who implement these abstractions make their clients interoperable with the broader `Microsoft.Extensions.AI` ecosystem. Service-specific APIs remain accessible if needed, allowing consumers to code against the standard abstractions and pass through to proprietary APIs only when required.
+These abstractions allow for idiomatic C# code for various scenarios with minimal code changes, whether you're using different services for development or production, addressing hybrid scenarios, or exploring other service providers. 
 
-As of this preview, `Microsoft.Extensions.AI` provides implementations for the following services:
+Library authors who implement these abstractions make their clients interoperable with the broader `Microsoft.Extensions.AI` ecosystem. Service-specific APIs remain accessible if needed, allowing consumers to code against the standard abstractions and pass through to proprietary APIs only when required.
+
+As of this preview, `Microsoft.Extensions.AI` provides implementations for the following services through additional packages:
 
 - [OpenAI](https://aka.ms/meai-openai-nuget)
 - [Azure OpenAI](https://aka.ms/meai-openai-nuget)
@@ -92,3 +94,7 @@ We have a set of samples in the [dotnet/ai-samples](https://aka.ms/meai-samples)
 
 For an end-to-end sample using `Microsoft.Extensions.AI`, see [eShopSupport](https://github.com/dotnet/eShopSupport).
 
+## Next Steps
+
+- [Build an AI chat app with .NET](/dotnet/ai/quickstarts/get-started-openai)
+- [Quickstart - Summarize text using Azure AI chat app with .NET](./quickstarts/quickstart-openai-summarize-text.md)

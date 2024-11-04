@@ -19,7 +19,7 @@ If you're using Docker, consider using [official .NET Docker images](../docker/i
 
 ## Install .NET
 
-[!INCLUDE [linux-apk-install-60](includes/linux-install-80-apk.md)]
+[!INCLUDE [linux-apk-install-80](includes/linux-install-80-apk.md)]
 
 ## Supported distributions
 

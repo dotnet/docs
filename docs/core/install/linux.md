@@ -4,7 +4,7 @@ description: Learn about how .NET is available on Linux. .NET can be installed t
 author: adegeo
 ms.author: adegeo
 ms.custom: updateeachrelease, linux-related-content
-ms.date: 12/15/2023
+ms.date: 11/04/2024
 ---
 
 # Install .NET on Linux
@@ -19,16 +19,21 @@ This article describes how .NET is available on various Linux distributions. .NE
 
 ## Packages
 
-.NET is available in [official package archives](https://github.com/dotnet/core/blob/main/linux.md) for various Linux distributions and [packages.microsoft.com](https://packages.microsoft.com/).
+Starting with .NET 9 (currently in preview), Microsoft only publishes packages for supported Linux distributions that don't publish their own packages. Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>. This includes the following Linux distributions:
 
-- [Alpine](linux-alpine.md)
+- Azure Linux 3.0
 - [Debian](linux-debian.md)
-- [Fedora](linux-fedora.md)
-- [openSUSE](linux-opensuse.md)
+- [openSUSE Leap](linux-opensuse.md)
 - [SUSE Enterprise Linux](linux-sles.md)
-- [Ubuntu](linux-ubuntu.md)
 
-.NET is [supported by Microsoft](https://github.com/dotnet/core/blob/main/microsoft-support.md) when downloaded from a Microsoft source. Best effort support is offered from Microsoft when downloaded from elsewhere. You can open issues at [dotnet/core](https://github.com/dotnet/core) if you run into problems.
+The following Linux distributions officially support .NET, and publish their own .NET packages:
+
+- Azure Linux 2.0 (CBL-Mariner)
+- [Alpine](linux-alpine.md)
+- [CentOS Stream](linux-rhel.md#centos-stream-9)
+- [Fedora](linux-fedora.md)
+- [Red Hat Enterprise Linux (RHEL)](linux-rhel.md)
+- [Ubuntu](linux-ubuntu.md)
 
 ## Snap
 

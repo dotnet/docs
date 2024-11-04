@@ -9,7 +9,7 @@ ms.topic: whats-new
 
 F# 9 introduces a range of enhancements that make your programs safer, more resilient, and performant. This article highlights the major changes in F# 9, developed in the [F# open source code repository](https://github.com/dotnet/fsharp).
 
-You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
+F# 9 is available in .NET 9. You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
 ## Nullable reference types
 
@@ -146,7 +146,7 @@ let html =
     }
 ```
 
-Writing an empty computation expression will result in a call to the CE builder's `Zero` method.
+Writing an empty computation expression will result in a call to the computation expression builder's `Zero` method.
 
 This is a more natural syntax compared to the previously available `builder { () }`.
 
@@ -252,7 +252,7 @@ When you ran the tests with `dotnet test`, they would pass. Since the test funct
 
 Now, with correct attribute enforcement, you will get an `error FS0842: This attribute is not valid for use on this language element`.
 
-## Updates to the standard library (FSharp.Core)
+## Updates to the [standard library (FSharp.Core)](https://fsharp.github.io/fsharp-core-docs/)
 
 ### Random functions for collections
 
@@ -512,4 +512,3 @@ The debugger visualizer in Visual Studio now works with F# projects.
 Previously, signature help wasn't offered in a situation like the following, where a function in the middle of a pipeline already had a complex curried parameter (for example, a lambda) applied to it. Now, the signature tooltip shows up for the next parameter (`state`):
 
 ![tooltip](../media/whats-new/fsharp-9/help.png)
-

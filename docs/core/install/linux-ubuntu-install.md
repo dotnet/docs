@@ -44,6 +44,10 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 [!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
+# [.NET 6](#tab/dotnet6)
+
+Not available.
+
 ---
 
 ## Dependencies
@@ -85,6 +89,10 @@ The following versions of .NET are supported or available for Ubuntu 24.04:
 | 8.0, 6.0                | 8.0                                  | 7.0, 6.0                                                                                                 |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -140,6 +148,10 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -201,6 +213,10 @@ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -281,6 +297,10 @@ The following versions of .NET were supported or available for Ubuntu 23.10:
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
+# [.NET 9](#tab/dotnet9)
+
+Not available.
+
 # [.NET 8](#tab/dotnet8)
 
 [!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
@@ -329,6 +349,10 @@ The following versions of .NET were supported or available for Ubuntu 23.04:
 | 8.0, 6.0                | 7.0, 6.0                             | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -380,6 +404,10 @@ The following versions of .NET are supported or available for Ubuntu 22.10:
 | 6.0                     | 7.0, 6.0                             |  None                                                                                                    | 7.0, 6.0, 3.1                                                                               |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 

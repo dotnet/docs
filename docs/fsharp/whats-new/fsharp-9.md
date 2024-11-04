@@ -7,7 +7,7 @@ ms.topic: whats-new
 
 # What's new in F# 9
 
-F# 9 introduces a range of enhancements that make your programs safer, more resilient, and performant. This article highlights the major changes in F# 9, developed in the [F#'s open source code repository](https://github.com/dotnet/fsharp).
+F# 9 introduces a range of enhancements that make your programs safer, more resilient, and performant. This article highlights the major changes in F# 9, developed in the [F# open source code repository](https://github.com/dotnet/fsharp).
 
 You can download the latest .NET SDK from the [.NET downloads page](https://dotnet.microsoft.com/download).
 
@@ -219,7 +219,7 @@ All of these will now work:
 
 It's a good idea to use the same style throughout your project.
 
-## Warning about TailCall attribute on non-rec functions or let-bound values
+## Warning about TailCall attribute on non-recursive functions or let-bound values
 
 F# now emits a warning when you put the `[<TailCall>]` attribute somewhere it doesn't belong. While it has no effect on what the code does, it could confuse someone reading it.
 
@@ -336,7 +336,7 @@ FSharpSet<int> mySet = [ 1, 2, 3 ];
 
 Collection expressions make it easier to use the F# immutable collections from C#. You might want to use the F# collections when you need their structural equality, which <xref:System.Collections.Immutable> collections don't have.
 
-## Quality of life improvements
+## Developer productivity improvements
 
 ### Parser recovery
 
@@ -357,7 +357,7 @@ These include:
 - Unions with duplicated fields
 - Using `use!` with `and!` in computation expressions
 
-There is also a new compile-time error for classes with over 65,520 methods in generated [IL](../../standard/managed-code.md#intermediate-language--execution). Such classes aren't loadable by the CLR and would result in a run-time error. (Not that you would ever really want to have so many methods, but there have been cases with generated code.)
+There is also a new compile-time error for classes with over 65,520 methods in generated [IL](../../standard/managed-code.md#intermediate-language--execution). Such classes aren't loadable by the CLR and result in a run-time error. (You won't author that many methods, but there have been cases with generated code.)
 
 ### Real visibility
 
@@ -509,6 +509,7 @@ The debugger visualizer in Visual Studio now works with F# projects.
 
 ### Signature tooltips shown mid-pipeline
 
-Previously, no signature help was offered in a situation like the following, where a function in the middle of a pipeline already had a complex curried parameter (for example, a lambda) applied to it. Now, the signature tooltip shows up for the next parameter (`state`):
+Previously, signature help wasn't offered in a situation like the following, where a function in the middle of a pipeline already had a complex curried parameter (for example, a lambda) applied to it. Now, the signature tooltip shows up for the next parameter (`state`):
 
 ![tooltip](../media/whats-new/fsharp-9/help.png)
+

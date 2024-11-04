@@ -100,13 +100,13 @@ F# 9 ships with the .NET 9 SDK and includes the following new features:
 - Prefer extension methods to intrinsic properties when arguments are provided
 - Empty-bodied computation expressions
 - Hash directives are allowed to take non-string arguments
-- Extended #help directive in fsi to show documentation in the REPL
+- Extended #help directive in fsi to show documentation in the read-eval-print loop (REPL)
 - Allow #nowarn to support the FS prefix on error codes to disable warnings
-- Warning about TailCall attribute on non-rec functions or let-bound values
+- Warning about TailCall attribute on non-recursive functions or let-bound values
 - Enforce attribute targets
 - Random functions for collections
 - C# collection expression support for F# lists and sets
-- Various quality of life, performance and tooling improvements
+- Various developer productivity, performance and tooling improvements
 
 For more information, see [What's new in F# 9](../../../fsharp/whats-new/fsharp-9.md).
 

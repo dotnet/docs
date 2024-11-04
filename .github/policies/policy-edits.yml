@@ -31,6 +31,8 @@ configuration:
                     user: dependabot[bot]
                 - isActivitySender:
                     user: dotnet-policy-service[bot]
+                - isActivitySender:
+                    user: github-actions[bot]
         then:
           - addReply:
               reply: >-

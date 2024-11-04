@@ -52,7 +52,7 @@ var response = await chatClient.CompleteAsync(
 Console.WriteLine(response.Message);  
 ```
 
-These abstractions allow for idiomatic C# code for various scenarios with minimal code changes, whether you're using different services for development or production, addressing hybrid scenarios, or exploring other service providers. 
+These abstractions allow for idiomatic C# code for various scenarios with minimal code changes, whether you're using different services for development or production, addressing hybrid scenarios, or exploring other service providers.
 
 Library authors who implement these abstractions make their clients interoperable with the broader `Microsoft.Extensions.AI` ecosystem. Service-specific APIs remain accessible if needed, allowing consumers to code against the standard abstractions and pass through to proprietary APIs only when required.
 

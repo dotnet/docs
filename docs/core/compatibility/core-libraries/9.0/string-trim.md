@@ -118,6 +118,6 @@ return input.Trim(s_trimChars);
 
 ## Affected APIs
 
-- <xref:System.String.Trim(System.ReadOnlySpan{System.Char})?displayProperty=fullName>
-- <xref:System.String.TrimEnd(System.ReadOnlySpan{System.Char})?displayProperty=fullName>
-- <xref:System.String.TrimStart(System.ReadOnlySpan{System.Char})?displayProperty=fullName>
+- `System.String.Trim(System.ReadOnlySpan{System.Char})`
+- `System.String.TrimEnd(System.ReadOnlySpan{System.Char})`
+- `System.String.TrimStart(System.ReadOnlySpan{System.Char})`

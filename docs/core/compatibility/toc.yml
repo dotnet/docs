@@ -78,6 +78,8 @@ items:
                 href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
+              - name: HttpClientFactory uses SocketsHttpHandler as primary handler
+                href: networking/9.0/default-handler.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
               - name: Uri query redaction in HttpClient EventSource events
@@ -1704,6 +1706,8 @@ items:
                 href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
+              - name: HttpClientFactory uses SocketsHttpHandler as primary handler
+                href: networking/9.0/default-handler.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
               - name: Uri query redaction in HttpClient EventSource events

@@ -61,32 +61,32 @@ The following table shows the compatibility of the .NET 5+ TFMs.
 
 | TFM                | Compatible with                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|
-| net5.0             | net1..4 (with NU1701 warning)<br />netcoreapp1..3.1 (warning when WinForms or WPF is referenced)<br />netstandard1..2.1 |
-| net5.0-windows     | netcoreapp1..3.1 (plus everything else inherited from `net5.0`)                                                         |
-| net6.0             | (Subsequent version of `net5.0`)                                                                                        |
-| net6.0-android     | `xamarin.android` (plus everything else inherited from `net6.0`)                                                            |
-| net6.0-ios         | Everything inherited from `net6.0`                                                                                      |
-| net6.0-maccatalyst | Everything inherited from `net6.0`                                                                                      |
-| net6.0-macos       | Everything inherited from `net6.0`                                                                                      |
-| net6.0-tvos        | Everything inherited from `net6.0`                                                                                      |
-| net6.0-windows     | (Subsequent version of `net5.0-windows`)                                                                                |
-| net7.0             | (Subsequent version of `net6.0`)                                                                                        |
-| net7.0-android     | (Subsequent version of `net6.0-android`)                                                                                |
-| net7.0-ios         | (Subsequent version of `net6.0-ios`)                                                                                    |
-| net7.0-maccatalyst | (Subsequent version of `net6.0-maccatalyst`)                                                                            |
-| net7.0-macos       | (Subsequent version of `net6.0-macos`)                                                                                  |
-| net7.0-tizen       | `tizen40` (plus everything else inherited from `net7.0`)                                                                |
-| net7.0-tvos        | (Subsequent version of `net6.0-tvos`)                                                                                   |
-| net7.0-windows     | (Subsequent version of `net6.0-windows`)                                                                                |
-| net8.0             | (Subsequent version of `net7.0`)                                                                                        |
-| net8.0-android     | (Subsequent version of `net7.0-android`)                                                                                |
-| net8.0-browser     | Everything inherited from `net8.0`                                                                                         |
-| net8.0-ios         | (Subsequent version of `net7.0-ios`)                                                                                    |
-| net8.0-maccatalyst | (Subsequent version of `net7.0-maccatalyst`)                                                                            |
-| net8.0-macos       | (Subsequent version of `net7.0-macos`)                                                                                  |
-| net8.0-tizen       | (Subsequent version of `net7.0-tizen`)                                                                                  |
-| net8.0-tvos        | (Subsequent version of `net7.0-tvos`)                                                                                   |
-| net8.0-windows     | (Subsequent version of `net7.0-windows`)                                                                                |
+| `net5.0`             | net1..4 (with NU1701 warning)<br />netcoreapp1..3.1 (warning when WinForms or WPF is referenced)<br />netstandard1..2.1 |
+| `net5.0-windows`     | netcoreapp1..3.1 (plus everything else inherited from `net5.0`)                                                         |
+| `net6.0`             | (Subsequent version of `net5.0`)                                                                                        |
+| `net6.0-android`     | `xamarin.android` (plus everything else inherited from `net6.0`)                                                            |
+| `net6.0-ios`         | Everything inherited from `net6.0`                                                                                      |
+| `net6.0-maccatalyst` | Everything inherited from `net6.0`                                                                                      |
+| `net6.0-macos`       | Everything inherited from `net6.0`                                                                                      |
+| `net6.0-tvos`        | Everything inherited from `net6.0`                                                                                      |
+| `net6.0-windows`     | (Subsequent version of `net5.0-windows`)                                                                                |
+| `net7.0`             | (Subsequent version of `net6.0`)                                                                                        |
+| `net7.0-android`     | (Subsequent version of `net6.0-android`)                                                                                |
+| `net7.0-ios`         | (Subsequent version of `net6.0-ios`)                                                                                    |
+| `net7.0-maccatalyst` | (Subsequent version of `net6.0-maccatalyst`)                                                                            |
+| `net7.0-macos`       | (Subsequent version of `net6.0-macos`)                                                                                  |
+| `net7.0-tizen`       | `tizen40` (plus everything else inherited from `net7.0`)                                                                |
+| `net7.0-tvos`        | (Subsequent version of `net6.0-tvos`)                                                                                   |
+| `net7.0-windows`     | (Subsequent version of `net6.0-windows`)                                                                                |
+| `net8.0`             | (Subsequent version of `net7.0`)                                                                                        |
+| `net8.0-android`     | (Subsequent version of `net7.0-android`)                                                                                |
+| `net8.0-browser`     | Everything inherited from `net8.0`                                                                                         |
+| `net8.0-ios`         | (Subsequent version of `net7.0-ios`)                                                                                    |
+| `net8.0-maccatalyst` | (Subsequent version of `net7.0-maccatalyst`)                                                                            |
+| `net8.0-macos`       | (Subsequent version of `net7.0-macos`)                                                                                  |
+| `net8.0-tizen`       | (Subsequent version of `net7.0-tizen`)                                                                                  |
+| `net8.0-tvos`        | (Subsequent version of `net7.0-tvos`)                                                                                   |
+| `net8.0-windows`     | (Subsequent version of `net7.0-windows`)                                                                                |
 
 To make your app portable across different platforms but still have access to OS-specific APIs, you can target multiple OS-specific TFMs and add platform guards around OS-specific API calls using `#if` preprocessor directives. For a list of the available symbols, see [Preprocessor symbols](#preprocessor-symbols).
 

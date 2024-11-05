@@ -25,7 +25,7 @@ ASP.NET Core apps that connect to Azure services generally depend on the followi
 
 In the sections ahead, you'll explore how to implement these libraries in an ASP.NET Core app.
 
-## Register service clients
+## Register Azure SDK clients with the DI service collection
 
 The Azure SDK for .NET client libraries provide service clients to connect your app to Azure services such as Azure Blob Storage and Azure Key Vault. Register these services with the dependency container in the `Program.cs` file of your app to make them available via [dependency injection](/aspnet/core/fundamentals/dependency-injection).
 
@@ -76,9 +76,9 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 
 1. Add the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package:
 
-```dotnetcli
-dotnet add package Azure.Identity
-```
+    ```dotnetcli
+    dotnet add package Azure.Identity
+    ```
 
 1. In the `Program.cs` file of your app, invoke the `UseCredential` extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
@@ -88,7 +88,7 @@ dotnet add package Azure.Identity
 
 ## Apply configurations
 
-Azure SDK service clients support configurations to change their default behaviors. There are two ways to configure service clients:
+Azure SDK service clients support configurations to change their default behaviors. `IConfiguration` precedence rules are respected by the `Microsoft.Extensions.Azure` extension methods, which are detailed in the [Configuration Providers](/dotnet/core/extensions/configuration#configuration-providers) documentation. There are two ways to configure service clients:
 
 - [JSON configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify managing differences in app deployments between environments.
 - Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the URI variables to the client constructors.
@@ -124,7 +124,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 ## Configure logging
 
-The Azure SDK for .NET client libraries can log client library operations to monitor requests and responses to Azure services. When you register an Azure SDK client using the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> is registered with the dependency injection container. This service forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory> to enables you to use the standard ASP.NET Core logging configuration for logging.
+The Azure SDK for .NET client libraries can log client library operations to monitor requests and responses to Azure services. Client libraries can also log a variety of other events, including retries, token retrieval, and service-specific events from various clients. When you register an Azure SDK client using the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> is registered with the dependency injection container. The `AzureEventSourceLogForwarder` forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory> to enables you to use the standard ASP.NET Core logging configuration for logging.
 
 The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`. For more information on these topics and other scenarios, visit the [Logging with the Azure SDK for .NET](/dotnet/azure/sdk/logging) and [Dependency injection with the Azure SDK for .NET](/dotnet/azure/sdk/dependency-injection) pages.
 

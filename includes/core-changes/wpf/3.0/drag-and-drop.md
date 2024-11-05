@@ -36,7 +36,7 @@ The change was unintentional.
 
 #### Recommended action
 
-This change was reverted in .NET 7. Upgrade to .NET 7 or later.
+This change was [reverted in .NET 7](../../../../docs/core/compatibility/wpf/7.0/drag-and-drop.md). Upgrade to .NET 7 or later.
 
 #### Affected APIs
 

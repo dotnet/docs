@@ -1,6 +1,6 @@
 ---
 title:  Unified AI building blocks for .NET
-description: Learn how to developer with unified AI building blocks for .NET using Microsoft.Extensions.AI and Microsoft.Extensions.AI.Abstractions libraries
+description: Learn how to develop with unified AI building blocks for .NET using Microsoft.Extensions.AI and Microsoft.Extensions.AI.Abstractions libraries
 ms.date: 11/04/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -52,11 +52,11 @@ var response = await chatClient.CompleteAsync(
 Console.WriteLine(response.Message);  
 ```
 
-These abstractions allow for idiomatic C# code for various scenarios with minimal code changes, whether you're using different services for development or production, addressing hybrid scenarios, or exploring other service providers.
+These abstractions allow for idiomatic C# code for various scenarios with minimal code changes, whether you're using different services for development and production, addressing hybrid scenarios, or exploring other service providers.
 
 Library authors who implement these abstractions make their clients interoperable with the broader `Microsoft.Extensions.AI` ecosystem. Service-specific APIs remain accessible if needed, allowing consumers to code against the standard abstractions and pass through to proprietary APIs only when required.
 
-As of this preview, `Microsoft.Extensions.AI` provides implementations for the following services through additional packages:
+`Microsoft.Extensions.AI` provides implementations for the following services through additional packages:
 
 - [OpenAI](https://aka.ms/meai-openai-nuget)
 - [Azure OpenAI](https://aka.ms/meai-openai-nuget)
@@ -67,7 +67,7 @@ In the future, implementations of these `Microsoft.Extensions.AI` abstractions w
 
 ## Middleware implementations for AI services
 
-Connecting to and using AI services is just one aspect of building robust applications. Production-ready applications require additional features like telemetry, logging, and tool calling capabilities. The `Microsoft.Extensions.AI` abstractions enable developers to easily integrate these components into their applications using familiar patterns.
+Connecting to and using AI services is just one aspect of building robust applications. Production-ready applications require additional features like telemetry, logging, and tool calling capabilities. The `Microsoft.Extensions.AI` abstractions enable you to easily integrate these components into your applications using familiar patterns.
 
 The following sample demonstrates how to register an OpenAI `IChatClient`. `IChatClient` allows you to attach the capabilities in a consistent way across various providers.
 
@@ -80,9 +80,9 @@ app.Services.AddChatClient(builder => builder
     .Use(new OpenAIClient(...)).AsChatClient(...)); 
 ```
 
-The capabilities demonstrated above are included in the `Microsoft.Extensions.AI` library, but they are only a small subset of the capabilities that can be layered in with this approach. .NET developers are able to expose many types of middleware to create powerful AI functionality.
+The capabilities demonstrated in this snippet are included in the `Microsoft.Extensions.AI` library, but they are only a small subset of the capabilities that can be layered in with this approach. .NET developers are able to expose many types of middleware to create powerful AI functionality.
 
-## Building with Microsoft.Extensions.AI
+## Build with Microsoft.Extensions.AI
 
 You can start building with `Microsoft.Extensions.AI` in the following ways:
 
@@ -90,11 +90,11 @@ You can start building with `Microsoft.Extensions.AI` in the following ways:
 - **Service Consumers**: If you're developing libraries that consume AI services, use the abstractions instead of hardcoding to a specific AI service. This approach gives your consumers the flexibility to choose their preferred service.
 - **Application Developers**: Use the abstractions to simplify integration into your apps. This enables portability across models and services, facilitates testing and mocking, leverages middleware provided by the ecosystem, and maintains a consistent API throughout your app, even if you use different services in different parts of your application.
 - **Ecosystem Contributors**: If you're interested in contributing to the ecosystem, consider writing custom middleware components.
-We have a set of samples in the [dotnet/ai-samples](https://aka.ms/meai-samples) GitHub repository to help you get started.
+To get started, see the samples in the [dotnet/ai-samples](https://aka.ms/meai-samples) GitHub repository.
 
 For an end-to-end sample using `Microsoft.Extensions.AI`, see [eShopSupport](https://github.com/dotnet/eShopSupport).
 
-## Next Steps
+## Next steps
 
-- [Build an AI chat app with .NET](/dotnet/ai/quickstarts/get-started-openai)
+- [Build an AI chat app with .NET](./quickstarts/get-started-openai.md)
 - [Quickstart - Summarize text using Azure AI chat app with .NET](./quickstarts/quickstart-openai-summarize-text.md)

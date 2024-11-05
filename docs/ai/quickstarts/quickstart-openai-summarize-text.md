@@ -1,6 +1,6 @@
 ---
 title: Quickstart - Summarize text using an AI chat app with .NET
-description: Create a simple chat app using OpenAI and the Semantic Kernel SDK to summarize a text.
+description: Create a simple chat app using Microsoft.Extensions.AI and the Semantic Kernel SDK to summarize a text.
 ms.date: 07/17/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -16,6 +16,8 @@ zone_pivot_groups: dotnet-ai-library
 
 Get started with AI by creating a simple .NET 8.0 console chat app to summarize text. You'll learn how to use the `Microsoft.Extensions.AI` library to connect to an AI model from a local application. This library provides essential abstractions for integrating AI services into .NET applications and libraries.
 
+## Prerequisites
+
 [!INCLUDE [prerequisites](includes/prerequisites-openai.md)]
 
 ## Get the sample project
@@ -23,6 +25,8 @@ Get started with AI by creating a simple .NET 8.0 console chat app to summarize 
 [!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
 ## Try the hiking benefits sample
+
+The sample project includes completed apps you can run to connect to your AI model of choice:
 
 # [OpenAI](#tab/openai)
 
@@ -256,8 +260,6 @@ When you no longer need the sample application or resources, remove the correspo
 ```azdeveloper
 azd down
 ```
-
-[!INCLUDE [troubleshoot](includes/troubleshoot.md)]
 
 :::zone-end
 

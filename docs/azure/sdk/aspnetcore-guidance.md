@@ -19,11 +19,11 @@ The Azure SDK for .NET enables ASP.NET Core apps to integrate with many differen
 
 ASP.NET Core apps that connect to Azure services generally depend on the following Azure SDK client libraries:
 
-- [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) provides helper methods to properly register your services and handles various concerns for you, such as setting up logging, handling service lifetimes, and authentication credential management.
+- [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) provides helper methods to register clients with the dependency injection service collection and handles various concerns for you, such as setting up logging, handling DI service lifetimes, and authentication credential management.
 - [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) enables Microsoft Entra ID authentication support across the Azure SDK. It provides a set of [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet) implementations to construct Azure SDK clients that support Microsoft Entra authentication.
 - `Azure.<service-namespace>` libraries, such as [Azure.Storage.Blob](https://www.nuget.org/packages/Azure.Storage.Blobs) and [Azure.Messaging.ServiceBus](https://www.nuget.org/packages/Azure.Messaging.ServiceBus), provide service clients and other types to help you connect to and consume specific Azure services. For a complete inventory of these libraries, see [Libraries using Azure.Core](/dotnet/azure/sdk/packages#libraries-using-azurecore).
 
-In the sections ahead, you'll explore how to implement these libraries in an ASP.NET Core app.
+In the sections ahead, you'll explore how to implement an ASP.NET Core application that uses these libraries.
 
 ## Register service clients
 
@@ -37,7 +37,7 @@ Complete the following steps to register the services you need:
     dotnet add package Microsoft.Extensions.Azure
     ```
 
-2. Add the relevant `Azure.*` service packages:
+2. Add the relevant `Azure.*` service client packages:
 
     ```dotnetcli
     dotnet add package Azure.Security.KeyVault.Secrets
@@ -45,11 +45,11 @@ Complete the following steps to register the services you need:
     dotnet add package Azure.Messaging.ServiceBus
     ```
 
-3. In the `Program.cs` file of your app, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client for each service. Some services use additional subclients, which you can also register for dependency injection via the `AddClient` extension method.
+3. In the `Program.cs` file of your app, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client to communicate with each Azure service.  Some client libraries provide additional subclients for specific subgroups of Azure service functionality.  You can register such subclients for dependency injection via the `AddClient` extension method.
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,13-15":::
 
-4. Inject the registered services into your ASP.NET Core app components, services, or API endpoint:
+4. Inject the registered clients into your ASP.NET Core app components, services, or API endpoint:
 
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
@@ -93,7 +93,7 @@ Azure SDK service clients support configurations to change their default behavio
 - [JSON configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify managing differences in app deployments between environments.
 - Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the URI variables to the client constructors.
 
-Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add any properties from the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
+Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add configuration settings whose names are public properties on the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
 
 ### Configure registered services
 
@@ -103,7 +103,7 @@ Complete the steps in the following sections to update your app to use JSON file
 
     In the preceding JSON sample:
 
-    - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code. All other key names map to specific service options, and JSON serialization is performed in a case-insensitive manner.
+    - The top-level key names, `KeyVault`, `ServiceBus`, and `Storage`, are arbitrary names used to reference the config sections from your code.  You will pass these names to `AddClient` extension methods to configure a given client. All other key names map to specific client options, and JSON serialization is performed in a case-insensitive manner.
     - The `KeyVault:VaultUri`, `ServiceBus:Namespace`, and `Storage:ServiceUri` key values map to the arguments of the <xref:Azure.Security.KeyVault.Secrets.SecretClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Secrets.SecretClientOptions)?displayProperty=name>, <xref:Azure.Messaging.ServiceBus.ServiceBusClient.%23ctor(System.String)?displayProperty=name>, and <xref:Azure.Storage.Blobs.BlobServiceClient.%23ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)?displayProperty=name> constructor overloads, respectively. The `TokenCredential` variants of the constructors are used because a default `TokenCredential` is set via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)?displayProperty=name> method call.
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
@@ -114,7 +114,7 @@ Complete the steps in the following sections to update your app to use JSON file
 
 You may want to change default Azure client configurations globally or for a specific service client. For example, you may want different retry settings or to use a different service API version. You can set the retry settings globally or on a per-service basis.
 
-1. Update your configuration file to set default Azure settings, such as a new default retry policy:
+1. Update your configuration file to set default Azure settings, such as a new default retry policy that all registered Azure clients will use:
 
     :::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="9-18":::
 

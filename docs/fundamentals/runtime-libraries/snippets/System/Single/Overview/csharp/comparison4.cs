@@ -14,6 +14,12 @@ public class Example3
         Console.WriteLine("{0:R} is approximately equal to {1:R}: {2}",
                           one1, one2,
                           IsApproximatelyEqual(one1, one2, .000001f));
+        
+        float negativeOne1 = -1 * one1;
+        float negativeOne2 = -1 * one2;
+        Console.WriteLine("{0:R} is approximately equal to {1:R}: {2}",
+                            negativeOne1, negativeOne2,
+                            IsApproximatelyEqual(negativeOne1, negativeOne2, .000001f));
     }
 
     static bool IsApproximatelyEqual(float value1, float value2, float epsilon)
@@ -33,7 +39,7 @@ public class Example3
         if (divisor.Equals(0))
             divisor = Math.Min(value1, value2);
 
-        return Math.Abs(value1 - value2) / divisor <= epsilon;
+        return Math.Abs((value1 - value2) / divisor) <= epsilon;
     }
 }
 // The example displays the following output:

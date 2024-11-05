@@ -28,7 +28,7 @@ The localizability review consists of the following three checks:
 >
 > * [Are the globalization recommendations implemented?](#global)
 > * [Are culture-sensitive features handled correctly?](#culture)
-> * [Have you tested your application with international data?](#test)
+> * [Have you tested your application with international data?](#mstest)
 
 <a name="global"></a>
 

@@ -130,7 +130,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 ***
 
-## <a name="test"></a> `mstest`
+## <a name="mstest"></a> `mstest`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -199,7 +199,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ***
 
-## <a name="test"></a> `xunit`
+## <a name="xunit"></a> `xunit`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -228,7 +228,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ***
 
-## `nunit`
+## <a name="nunit"></a> `nunit`
 
 - **`-f|--framework <FRAMEWORK>`**
 

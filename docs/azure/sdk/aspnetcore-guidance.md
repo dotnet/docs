@@ -8,7 +8,7 @@ ms.date: 10/22/2024
 
 # Use the Azure SDK for .NET in ASP.NET Core apps
 
-The Azure SDK for .NET enables ASP.NET Core apps to integrate with many different Azure services. In this article, you'll learn best practices and the steps to implement the Azure SDK for .NET in your ASP.NET Core apps. You'll learn how to:
+The Azure SDK for .NET enables ASP.NET Core apps to integrate with many different Azure services. In this article, you'll learn best practices and the steps to adopt the Azure SDK for .NET in your ASP.NET Core apps. You'll learn how to:
 
 - Register services for dependency injection.
 - Authenticate to Azure without using passwords or secrets.
@@ -88,10 +88,12 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 
 ## Apply configurations
 
-Azure SDK service clients support configurations to change their default behaviors. `IConfiguration` precedence rules are respected by the `Microsoft.Extensions.Azure` extension methods, which are detailed in the [Configuration Providers](/dotnet/core/extensions/configuration#configuration-providers) documentation. There are two ways to configure service clients:
+Azure SDK service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
 - [JSON configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify managing differences in app deployments between environments.
 - Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the URI variables to the client constructors.
+
+`IConfiguration` precedence rules are respected by the `Microsoft.Extensions.Azure` extension methods, which are detailed in the [Configuration Providers](/dotnet/core/extensions/configuration#configuration-providers) documentation.
 
 Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add configuration settings whose names are public properties on the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
 

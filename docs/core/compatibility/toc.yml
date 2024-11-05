@@ -512,6 +512,10 @@ items:
                 href: windows-forms/7.0/apis-throw-argumentnullexception.md
               - name: Obsoletions and warnings
                 href: windows-forms/7.0/obsolete-apis.md
+          - name: WPF
+            items:
+              - name: Revert behavior with text drag-and-drop operations
+                href: wpf/7.0/drag-and-drop.md  
       - name: .NET 6
         items:
           - name: Overview
@@ -2034,20 +2038,26 @@ items:
                 href: sdk/5.0/sdk-and-target-framework-change.md
               - name: Removed status bar controls
                 href: windows-forms/5.0/winforms-deprecated-controls.md
-              - name: .NET Core 3.0-3.1
-                href: winforms.md
+          - name: .NET Core 3.0-3.1
+            href: winforms.md
       - name: WPF
         items:
           - name: .NET 9
             items:
               - name: "'GetXmlNamespaceMaps' type change"
                 href: wpf/9.0/xml-namespace-maps.md
+          - name: .NET 7
+            items:
+              - name: "Revert behavior with text drag-and-drop operations"
+                href: wpf/7.0/drag-and-drop.md
           - name: .NET 5
             items:
               - name: OutputType set to WinExe
                 href: sdk/5.0/automatically-infer-winexe-output-type.md
               - name: WPF apps use Microsoft.NET.Sdk
                 href: sdk/5.0/sdk-and-target-framework-change.md
+          - name: .NET Core 3.0
+            href: wpf.md
       - name: XML and XSLT
         items:
           - name: .NET 7

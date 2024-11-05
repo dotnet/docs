@@ -78,6 +78,10 @@ items:
                 href: networking/9.0/redact-headers.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
+              - name: Uri query redaction in HttpClient EventSource events
+                href: networking/9.0/query-redaction-events.md
+              - name: Uri query redaction in IHttpClientFactory logs
+                href: networking/9.0/query-redaction-logs.md
           - name: SDK and MSBuild
             items:
               - name: "'dotnet workload' commands output change"
@@ -515,7 +519,7 @@ items:
           - name: WPF
             items:
               - name: Revert behavior with text drag-and-drop operations
-                href: wpf/7.0/drag-and-drop.md  
+                href: wpf/7.0/drag-and-drop.md
       - name: .NET 6
         items:
           - name: Overview
@@ -1698,6 +1702,10 @@ items:
                 href: networking/9.0/redact-headers.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
+              - name: Uri query redaction in HttpClient EventSource events
+                href: networking/9.0/query-redaction-events.md
+              - name: Uri query redaction in IHttpClientFactory logs
+                href: networking/9.0/query-redaction-logs.md
           - name: .NET 8
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets

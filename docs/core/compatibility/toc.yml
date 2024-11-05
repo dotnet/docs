@@ -2034,8 +2034,8 @@ items:
                 href: sdk/5.0/sdk-and-target-framework-change.md
               - name: Removed status bar controls
                 href: windows-forms/5.0/winforms-deprecated-controls.md
-              - name: .NET Core 3.0-3.1
-                href: winforms.md
+          - name: .NET Core 3.0-3.1
+            href: winforms.md
       - name: WPF
         items:
           - name: .NET 9
@@ -2053,9 +2053,7 @@ items:
               - name: WPF apps use Microsoft.NET.Sdk
                 href: sdk/5.0/sdk-and-target-framework-change.md
           - name: .NET Core 3.0
-            items:
-              - name: "Text drag-and-drop operations"
-                href: wpf/3.0/drag-and-drop.md
+            href: wpf.md
       - name: XML and XSLT
         items:
           - name: .NET 7

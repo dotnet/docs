@@ -199,6 +199,24 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 ***
 
+## <a name="mstest-class"></a> `mstest-class`
+
+- **`--fixture <FIXTURE>`**
+
+  The fixture kinds to include in the test project. The possible values are:
+
+  - `None` - No fixture methods.
+  - `AssemblyInitialize` - AssemblyInitialize fixture method.
+  - `AssemblyCleanup` - AssemblyCleanup fixture method.
+  - `ClassInitialize` - ClassInitialize fixture method.
+  - `ClassCleanup` - ClassCleanup fixture method.
+  - `TestInitialize` - TestInitialize fixture method.
+  - `TestCleanup` - TestCleanup fixture method.
+
+  Where multiple values are allowed.
+
+***
+
 ## <a name="xunit"></a> `xunit`
 
 - **`-f|--framework <FRAMEWORK>`**

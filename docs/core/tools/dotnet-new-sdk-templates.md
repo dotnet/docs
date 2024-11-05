@@ -130,7 +130,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 ***
 
-## <a name="test"></a> `mstest`, `xunit`
+## <a name="test"></a> `mstest`
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -140,6 +140,76 @@ The templates that ship with the .NET SDK have the following additional options:
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
+  | 8.0         | `net8.0`        |
+  | 7.0         | `net7.0`        |
+  | 6.0         | `net6.0`        |
+  | 5.0         | `net5.0`        |
+  | 3.1         | `netcoreapp3.1` |
+
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
+
+- **`--sdk`**
+
+  Use MSTest.Sdk project style.
+
+- **`--test-runner <TEST_RUNNER>`**
+
+   The runner/platform for the test project. The possible values are:
+
+  - `VSTest` - VSTest platform (Default).
+  - `MSTest` - MSTest Runner (i.e. Microsoft.Testing.Platform).
+
+- **`--coverage-tool <COVERAGE_TOOL>`**
+
+  The coverage tool to use for the test project. The possible values are:
+
+  - `Microsoft.CodeCoverage` - Microsoft Code Coverage (Default).
+  - `coverlet` - coverlet coverage tool.
+
+- **`--extensions-profile <EXTENSIONS_PROFILE>`**
+
+  The SDK extensions profile when using MSTest Runner. The possible values are:
+
+  - `Default` - Default extensions profile (Default).
+  - `None` - No extensions are enabled.
+  - `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
+
+- **`--fixture <FIXTURE>`**
+
+  The fixture kinds to include in the test project. The possible values are:
+
+  - `None` - No fixture methods.
+  - `AssemblyInitialize` - AssemblyInitialize fixture method.
+  - `AssemblyCleanup` - AssemblyCleanup fixture method.
+  - `ClassInitialize` - ClassInitialize fixture method.
+  - `ClassCleanup` - ClassCleanup fixture method.
+  - `TestInitialize` - TestInitialize fixture method.
+  - `TestCleanup` - TestCleanup fixture method.
+
+  Where multiple values are allowed.
+
+- **`-p|--enable-pack`**
+
+  Enables packaging for the project using [dotnet pack](dotnet-pack.md).
+
+***
+
+## <a name="test"></a> `xunit`
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  Specifies the [framework](../../standard/frameworks.md) to target. Option available since .NET Core 3.0 SDK.
+
+  The following table lists the default values according to the SDK version number you're using:
+
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |
@@ -168,6 +238,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
   | 6.0         | `net6.0`        |

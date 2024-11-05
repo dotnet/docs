@@ -11,7 +11,8 @@ The following table shows the templates that come pre-installed with the .NET SD
 | Windows Forms (WinForms) Application         | [`winforms`](../docs/core/tools/dotnet-new-sdk-templates.md#winforms)               | [C#], VB     | Common/WinForms                       | 3.0 (5.0 for VB) |
 | Windows Forms (WinForms) Class library       | [`winformslib`](../docs/core/tools/dotnet-new-sdk-templates.md#winforms)            | [C#], VB     | Common/WinForms                       | 3.0 (5.0 for VB) |
 | Worker Service                               | [`worker`](../docs/core/tools/dotnet-new-sdk-templates.md#web-others)               | [C#]         | Common/Worker/Web                     | 3.0              |
-| Unit Test Project                            | [`mstest`](../docs/core/tools/dotnet-new-sdk-templates.md#test)                     | [C#], F#, VB | Test/MSTest                           | 1.0              |
+| MSTest Test Project                          | [`mstest`](../docs/core/tools/dotnet-new-sdk-templates.md#test)                     | [C#], F#, VB | Test/MSTest                           | 1.0              |
+| MSTest Test Class                            | `mstest-class`                                                                      | [C#], F#, VB | Test/MSTest                           | 1.0              |
 | NUnit 3 Test Project                         | [`nunit`](../docs/core/tools/dotnet-new-sdk-templates.md#nunit)                     | [C#], F#, VB | Test/NUnit                            | 2.1.400          |
 | NUnit 3 Test Item                            | `nunit-test`                                                                        | [C#], F#, VB | Test/NUnit                            | 2.2              |
 | xUnit Test Project                           | [`xunit`](../docs/core/tools/dotnet-new-sdk-templates.md#test)                      | [C#], F#, VB | Test/xUnit                            | 1.0              |

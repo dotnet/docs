@@ -2,7 +2,6 @@
 title: "HttpClientFactory uses SocketsHttpHandler as primary handler"
 description: Learn about the breaking change in networking in .NET 9 where HttpClientFactory now uses SocketsHttpHandler as the default primary handler.
 ms.date: 11/5/2024
-ai-usage: ai-assisted
 ---
 
 # HttpClientFactory uses SocketsHttpHandler as primary handler

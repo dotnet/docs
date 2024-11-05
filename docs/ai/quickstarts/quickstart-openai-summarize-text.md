@@ -12,9 +12,9 @@ zone_pivot_groups: dotnet-ai-library
 
 # Summarize text using AI chat app with .NET
 
-:::zone target="docs" pivot="semantic-kernel"
+:::zone target="docs" pivot="microsoft-extensions-ai"
 
-Get started with AI by creating a simple .NET 8.0 console chat application to summarize text. The application runs locally and uses the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use the `Microsoft.Extensions.AI` library.
+Get started with AI by creating a simple .NET 8.0 console chat app to summarize text. You'll learn how to use the `Microsoft.Extensions.AI` library to connect to an AI model from a local application. This library provides essential abstractions for integrating AI services into .NET applications and libraries.
 
 [!INCLUDE [prerequisites](includes/prerequisites-openai.md)]
 
@@ -85,7 +85,6 @@ string key = config["AzureOpenAIKey"];
 ---
 
 The following code obtains an `IChatClient` service configured to connect to the AI Model. The `OpenAI` and `Azure.AI.OpenAI` libraries implement types defined in the `Microsoft.Extensions.AI` library, which enables you to code using the `IChatClient` interface abstraction. This abstraction allows you to change the underlying AI provider to other services by updating only a few lines of code, such as Ollama or Azure Inference models.
-
 
 # [OpenAI](#tab/openai)
 

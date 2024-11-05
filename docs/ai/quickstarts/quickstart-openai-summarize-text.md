@@ -95,8 +95,8 @@ The following code obtains an `IChatClient` service configured to connect to the
 ```csharp
 // Create the IChatClient
 IChatClient client =
-    new OpenAIClient(new Uri(endpoint), new ApiKeyCredential(key))
-        .AsChatClient(deployment);
+    new OpenAIClient(key)
+        .AsChatClient(model);
 ```
 
 # [Azure OpenAI](#tab/azure-openai)
@@ -104,8 +104,8 @@ IChatClient client =
 ```csharp
 // Create the IChatClient
 IChatClient client =
-    new OpenAIClient(key)
-        .AsChatClient(model);
+    new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(key))
+        .AsChatClient(deployment);
 ```
 
 ---

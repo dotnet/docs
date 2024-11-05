@@ -1,13 +1,13 @@
 ---
-title: "Breaking change: String.Trim(params ReadOnlySpan<char>) removed"
-description: Learn about the breaking change in core .NET libraries where the String.Trim(params ReadOnlySpan<char>) method has been removed due to potential behavioral changes.
+title: "Breaking change: String.Trim*(params ReadOnlySpan<char>) overloads removed"
+description: Learn about the breaking change in core .NET libraries where the String.Trim*(params ReadOnlySpan<char>) methods have been removed due to potential behavioral changes.
 ms.date: 11/5/2024
 ai-usage: ai-assisted
 ---
 
-# String.Trim(params ReadOnlySpan\<char>) overload removed
+# String.Trim*(params ReadOnlySpan\<char>) overloads removed
 
-`ReadOnlySpan<char>` is used for two different things in the .NET ecosystem:
+In the .NET ecosystem, `ReadOnlySpan<char>` can represent:
 
 - A specific sequence of characters, often as a slice of a larger <xref:System.String?displayProperty=fullName> instance.
 - A collection of single characters, often as a slice of a `char[]`.
@@ -37,7 +37,7 @@ public static class SomeExtensions {
 }
 ```
 
-For existing .NET runtimes, this extension method removes the specified sequence from the end of the string. However, due to the overload resolution rules of C#, `"12345!!!!".TrimEnd("!!!")` will prefer the new method overload over the existing extension method, and change the result from `"12345!"` (removing only a full set of three exclamation marks) to `"12345"` (removing all exclamation marks from the end).
+For existing .NET runtimes, this extension method removes the specified sequence from the end of the string. However, due to the overload resolution rules of C#, `"12345!!!!".TrimEnd("!!!")` will prefer the new `TrimEnd` overload over the existing extension method, and change the result from `"12345!"` (removing only a full set of three exclamation marks) to `"12345"` (removing all exclamation marks from the end).
 
 To resolve this break, there were two possible paths: Introduce an instance method `public string TrimEnd(string trimString)` that's an even better target, or remove the new method. The first option carries additional risk, as it needs to decide whether it returns one instance of the target string or all of them. And there are undoubtedly callers with existing code that uses each approach. Therefore, the second option was the most appropriate choice for this stage of the release cycle.
 

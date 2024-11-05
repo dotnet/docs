@@ -154,3 +154,12 @@ groups:
       title: OpenAI
     - id: azure-openai
       title: Azure OpenAI
+- id: dotnet-ai-library
+  title: .NET AI Library
+  prompt: Choose a .NET AI SDK
+  pivots:
+    - id: microsoft-extensions-ai
+      title: Microsoft.Extensions.AI
+    - id: semantic-kernel
+      title: Semantic Kernel
+

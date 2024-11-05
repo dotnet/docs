@@ -28,7 +28,7 @@ The data type on <xref:System.Windows.DataObject?displayProperty=fullName> when 
 
 #### Type of breaking change
 
-This change is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../../../docs/core/compatibility/categories.md).
 
 #### Reason for change
 

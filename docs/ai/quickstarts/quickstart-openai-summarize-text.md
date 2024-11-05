@@ -139,6 +139,8 @@ Customize the text content of the file or the length of the summary to see the d
 
 Get started with AI by creating a simple .NET 8.0 console chat application to summarize text. The application runs locally and uses the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
 
+## Prerequisites
+
 # [OpenAI](#tab/openai)
 
 [!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]

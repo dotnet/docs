@@ -74,6 +74,8 @@ items:
                 href: jit/9.0/sve-apis.md
           - name: Networking
             items:
+              - name: HttpClient metrics report `server.port` unconditionally
+                href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
               - name: HttpListenerRequest.UserAgent is nullable
@@ -1698,6 +1700,8 @@ items:
         items:
           - name: .NET 9
             items:
+              - name: HttpClient metrics report `server.port` unconditionally
+                href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
               - name: HttpListenerRequest.UserAgent is nullable

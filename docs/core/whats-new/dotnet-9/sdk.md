@@ -115,6 +115,12 @@ If you have feedback about the terminal logger, you can provide it in the [MSBui
 
 Starting in .NET 8, `dotnet restore` [audits NuGet package references for known vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities). In .NET 9, the default mode has changed from auditing only _direct_ package references to auditing both _direct_ and _transitive_ package references.
 
+## Faster NuGet dependency resolution for large repos
+
+The NuGet dependency resolver has been overhauled to improve performance and scalability for all `<PackageReference>` projects. Enabled by default, the new algorithm speeds up restore operations without compromising on functionality, strictly adhering to the core dependency resolution rules.
+
+If you encounter any issues, such as restore failures or unexpected package versions, you can [revert to the legacy resolver](/nuget/consume-packages/Package-References-in-Project-Files#nuget-dependency-resolver).
+
 ## MSBuild script analyzers ("BuildChecks")
 
 .NET 9 introduces a feature that helps guard against defects and regressions in your build scripts. To run the build checks, add the `/check` flag to any command that invokes MSBuild. For example, `dotnet build myapp.sln /check` builds the `myapp` solution and runs all configured build checks.

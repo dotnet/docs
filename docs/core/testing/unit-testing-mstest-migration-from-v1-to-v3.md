@@ -177,4 +177,10 @@ public void ExampleTestMethod(int number, string data) {
 public void ExampleTestMethod(int number, string data) {
     Assert.AreEqual<int>(number, Convert.ToInt32(data));
 }
+```
 
+---
+
+## Additional Resources
+
+- [New testin platform](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-platform-intro?tabs=dotnetcli)

@@ -97,14 +97,14 @@ Choose the option that best suits your project setup. Both methods ensure your p
   
   - **Assert.AreEqual/AreNotEqual (with object)** → Use generic versions.
 
-    **Before** (deprecated):
+    - **Before** (deprecated):
 
     ```csharp
     Assert.AreEqual(expectedObject, actualObject);
     Assert.AreNotEqual(expectedObject, actualObject);
     ```
 
-    **After** (using generics):
+    - **After (using generics)**:
 
     ```csharp
     Assert.AreEqual<object>(expectedObject, actualObject);
@@ -113,14 +113,14 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
   - **Assert.AreSame/AreNotSame (with object)** → Use generic versions.
 
-    **Before** (deprecated):
+    - **Before** (deprecated):
 
     ```csharp
     Assert.AreSame(expectedObject, actualObject);
     Assert.AreNotSame(expectedObject, actualObject);
     ```
 
-    **After** (using generics):
+    - **After (using generics)**:
 
     ```csharp
     Assert.AreSame<object>(expectedObject, actualObject);

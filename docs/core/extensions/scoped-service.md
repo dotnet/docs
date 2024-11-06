@@ -48,7 +48,7 @@ The preceding interface defines a single `DoWorkAsync` method. Create an impleme
 
 Replace the existing `Worker` class with the following C# code, and rename the file to *ScopedBackgroundService.cs*:
 
-:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="22-28":::
+:::code source="snippets/workers/scoped-service/ScopedBackgroundService.cs" highlight="14-24":::
 
 In the preceding code, while the `stoppingToken` isn't canceled, the `IServiceScopeFactory` is used to create a scope. From the `IServiceScope`, the `IScopedProcessingService` is resolved. The `DoWorkAsync` method is awaited, and the `stoppingToken` is passed to the method. Finally, the execution is delayed for 10 seconds and the loop continues. Each time the `DoWorkAsync` method is called, a new instance of the `DefaultScopedProcessingService` is created and the instance identifier is logged.
 

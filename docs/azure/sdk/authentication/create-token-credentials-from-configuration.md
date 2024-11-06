@@ -3,7 +3,7 @@ title: Create token credentials from configuration
 description: This article describes how to create Microsoft Entra token credentials from configuration files.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 1/16/2024
+ms.date: 11/05/2024
 ---
 
 # Create Microsoft Entra credential types using configuration files
@@ -68,25 +68,39 @@ You can create both user-assigned and system-assigned managed identities using c
 
 #### User-assigned managed identities
 
-Specify a user-assigned managed identity via a client ID:
+A user-assigned managed identity can be used by providing a client ID, resource ID, or object ID:
 
-```json
-{
-    "credential": "managedidentity",
-    "clientId":  "<clientId>"
-}
-```
+- **Client ID:**
 
-Alternatively, specify a user-assigned managed identity via a resource ID:
+    ```json
+    {
+        "credential": "managedidentity",
+        "clientId":  "<clientId>"
+    }
+    ```
 
-```json
-{
-    "credential": "managedidentity",
-    "managedIdentityResourceId":  "<managedIdentityResourceId>"
-}
-```
+- **Resource ID:**
 
-The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
+    ```json
+    {
+        "credential": "managedidentity",
+        "managedIdentityResourceId":  "<managedIdentityResourceId>"
+    }
+    ```
+
+    The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
+
+- **Object ID:**
+
+    ```json
+    {
+        "credential": "managedidentity",
+        "managedIdentityObjectId":  "<managedIdentityObjectId>"
+    }    
+    ```
+
+    > [!IMPORTANT]
+    > The `managedIdentityObjectId` JSON property is supported in `Microsoft.Extensions.Azure` versions 1.8.0 and later.
 
 #### System-assigned managed identities
 

@@ -45,7 +45,7 @@ Complete the following steps to register the services you need:
     dotnet add package Azure.Messaging.ServiceBus
     ```
 
-3. In the `Program.cs` file of your app, invoke the `AddAzureClients` extension method from the `Microsoft.Extensions.Azure` library to register a client to communicate with each Azure service.  Some client libraries provide additional subclients for specific subgroups of Azure service functionality.  You can register such subclients for dependency injection via the `AddClient` extension method.
+3. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method from the `Microsoft.Extensions.Azure` library to register a client to communicate with each Azure service. Some client libraries provide additional subclients for specific subgroups of Azure service functionality. You can register such subclients for dependency injection via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> extension method.
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="4-7,13-15":::
 
@@ -80,7 +80,7 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
     dotnet add package Azure.Identity
     ```
 
-1. In the `Program.cs` file of your app, invoke the `UseCredential` extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
+1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
 :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
 
@@ -95,7 +95,7 @@ Azure SDK service clients support configurations to change their default behavio
 
 `IConfiguration` precedence rules are respected by the `Microsoft.Extensions.Azure` extension methods, which are detailed in the [Configuration Providers](/dotnet/core/extensions/configuration#configuration-providers) documentation.
 
-Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add configuration settings whose names are public properties on the [`ClientOptions`](/dotnet/api/azure.core.clientoptions) class to the JSON file.
+Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add configuration settings whose names are public properties on the <xref:Azure.Core.ClientOptions> class to the JSON file.
 
 ### Configure registered services
 

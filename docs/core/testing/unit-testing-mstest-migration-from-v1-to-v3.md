@@ -186,7 +186,29 @@ public void MyTestMethod(int number, string text) { ... }
 
 ### Timeout Settings
 
-Timeout settings are standardized across frameworks in MSTest v3. Verify and adjust any timeout configurations in existing tests for compatibility.
+In MSTest v3, the handling of `Timeout` settings has been standardized to ensure consistent behavior across different .NET environments. This change may impact tests that rely on specific timeout values, especially if those tests are asynchronous or run under different frameworks.
+
+- In MSTest v1 or v2, certain timeout settings might have been interpreted differently depending on the framework (e.g., .NET Framework vs. .NET Core).
+- MSTest v3 enforces consistent timeout behavior, which might mean that tests configured with timeouts in previous versions may fail or behave differently if the timeout values are too short under the new standard.
+
+**What This Means**:
+
+1. **Tests with Timeouts Might Need Adjustment**: If your tests have a `Timeout` attribute with specific durations, verify that those values still allow the test to complete under MSTest v3. Tests that previously passed with a certain timeout might need a higher or lower timeout value to work correctly under the new rules.
+
+2. **Unified Timeout Handling**: MSTest v3 unified timeout handling makes timeouts more predictable, but requires checking and potentially updating `Timeout` values in older tests.
+
+**Example**:
+
+```csharp
+// Old (v1/v2) - Timeout was sometimes interpreted inconsistently
+[TestMethod]
+[Timeout(2000)] // Timeout in milliseconds
+public void TestMethod() { ... }
+
+// New (v3) - Unified handling of timeout
+[TestMethod]
+[Timeout(2000)] // Verify this value still works under MSTest v3
+public async Task TestMethod() { ... } 
 
 ---
 
@@ -196,7 +218,7 @@ Timeout settings are standardized across frameworks in MSTest v3. Verify and adj
 
 MSTest v3 supports both XML and JSON formats for configuration files.
 
-1. **Verify Configurations**: Ensure that existing `.runsettings` files align with MSTest v3’s syntax and structure.
+1. **Verify Configurations**: Ensure that existing `.runsettings` files align with MSTest v3 syntax and structure.
 2. **Convert to JSON (if applicable)**: For JSON-based configurations, convert XML settings to JSON format.
 
 ---

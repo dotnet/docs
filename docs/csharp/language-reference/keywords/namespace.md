@@ -24,7 +24,7 @@ The `namespace` keyword is used to declare a scope that contains a set of relate
 
 When using *file-scoped namespaces*, the placement of `using` statements affects their scope within the file. File-scoped namespaces lower to the equivalent traditional namespace declaration that ends with a closing bracket at the end of the file. This behavior determines where `using` directives are applied as follows:
 
-- If the `using` statements are placed before the file-scoped namespace declaration, they are treated as being outside of the namespace and apply globally.
+- If the `using` statements are placed before the file-scoped namespace declaration, they are treated as being outside of the namespace and are interpreted as fully-qualified namespaces.
 - If the `using` statements are placed after the file-scoped namespace declaration, they are scoped within the namespace itself.
 
 For example:

@@ -223,4 +223,4 @@ public void ExampleTestMethod(int number, string data)
 
 ## Additional Resources
 
-- [New testing platform](https://learn.microsoft.com/dotnet/core/testing/unit-testing-platform-intro?tabs=dotnetcli)
+- [New testing platform](unit-testing-platform-intro.md)

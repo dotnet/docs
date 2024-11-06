@@ -213,7 +213,8 @@ public void ExampleTestMethod(int number, string data)
 [TestMethod]
 [Timeout(1000)]
 [DataRow(1, "data")]
-public void ExampleTestMethod(int number, string data) {
+public void ExampleTestMethod(int number, string data)
+{
     Assert.AreEqual<int>(number, Convert.ToInt32(data));
 }
 ```

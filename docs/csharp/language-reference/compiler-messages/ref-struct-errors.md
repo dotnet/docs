@@ -15,6 +15,7 @@ f1_keywords:
   - "CS9245"
   - "CS9246"
   - "CS9247"
+  - "CS9267"
 helpviewer_keywords:
   - "CS8343"
   - "CS8344"
@@ -29,7 +30,8 @@ helpviewer_keywords:
   - "CS9245"
   - "CS9246"
   - "CS9247"
-ms.date: 07/30/2024
+  - "CS9267"
+ms.date: 11/06/2024
 ---
 # Errors and warnings associated with `ref struct` types
 
@@ -46,6 +48,7 @@ ms.date: 07/30/2024
 - [**CS9245**](#ref-struct-interface-implementations): *Type cannot implement interface member for `ref struct` type.*
 - [**CS9246**](#ref-struct-interface-implementations): *A non-virtual instance interface member cannot be accessed on a type parameter that allows ref struct.*
 - [**CS9247**](#ref-struct-interface-implementations): *foreach statement cannot operate on enumerators of type because it is a type parameter that allows ref struct and it is not known at compile time to implement `IDisposable`.*
+- [**CS9267**](#ref-struct-interface-implementations): *Element type of an iterator may not be a ref struct or a type parameter allowing ref structs*
 
 ## ref safety violations
 
@@ -74,6 +77,7 @@ Violating any of these rules produces one of the listed errors. If you intended 
 - **CS9245**: *Type cannot implement interface member for `ref struct` type.*
 - **CS9246**: *A non-virtual instance interface member cannot be accessed on a type parameter that allows ref struct.*
 - **CS9247**: *foreach statement cannot operate on enumerators of type because it is a type parameter that allows ref struct and it is not known at compile time to implement `IDisposable`.*
+- **CS9267**: *Element type of an iterator may not be a ref struct or a type parameter allowing ref structs*
 
 Prior to C# 13, [`ref struct`](../builtin-types/ref-struct.md) types can't implement interfaces; the compiler generates *CS8343*. Beginning with C# 13, `ref struct` types can implement interfaces, subject to the following rules:
 
@@ -84,3 +88,4 @@ Beginning with C# 13, a `ref struct` can be used as a type argument for a generi
 
 - A `ref struct` is used as a type argument, the type parameter *must* have the `allows ref struct` anti-constraint.- The `allows ref struct` anti-constraint must be last in the `where` clause for that parameter
 - Uses of instances the type parameter must obey ref safety rules.
+- A `ref struct` or a type argument that can be a `ref struct` type can't be used as the element type for an [iterator method](../statements/yield.md).

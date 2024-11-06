@@ -8,7 +8,7 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-      - description: Flag PRs that change .github folder files.
+      - description: Close PRs that change .github folder files.
         triggerOnOwnActions: true
         if:
           - payloadType: Pull_Request
@@ -37,4 +37,25 @@ configuration:
           - addReply:
               reply: >-
                   @${issueAuthor} - This PR edits a file in the .github folder, which is not allowed. CC @dotnet/docs.
+          - closePullRequest
+
+      - description: Close PRs that change Framework Design Guidelines.
+        triggerOnOwnActions: true
+        if:
+          - payloadType: Pull_Request
+          - isAction:
+              action: Opened
+          - filesMatchPattern:
+              pattern: docs/standard/design-guidelines/*
+              matchAny: true
+          - not:
+              or:
+                - activitySenderHasPermission:
+                    permission: admin
+                - activitySenderHasPermission:
+                    permission: write
+        then:
+          - addReply:
+              reply: >-
+                  @${issueAuthor} - This PR edits a file in the design-guidelines folder, which is disallowed. This content is reprinted by permission of Pearson Education, Inc. from Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition, and cannot be edited. CC @dotnet/docs.
           - closePullRequest

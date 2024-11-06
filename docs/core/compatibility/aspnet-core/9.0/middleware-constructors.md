@@ -21,12 +21,12 @@ public class CookiePolicyMiddleware
 {
     public CookiePolicyMiddleware(RequestDelegate next, IOptions<CookiePolicyOptions> options, ILoggerFactory factory)
     {
-        // Omitted for brevity
+        // ...
     }
 
     public CookiePolicyMiddleware(RequestDelegate next, IOptions<CookiePolicyOptions> options)
     {
-        // Omitted for brevity
+        // ...
     }
 }
 ```

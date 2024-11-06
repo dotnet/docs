@@ -84,7 +84,7 @@ Remove the `Microsoft.VisualStudio.QualityTools.UnitTestFramework` reference fro
     Assert.AreSame<object>(expectedObject, actualObject);
     Assert.AreNotSame<object>(expectedObject, actualObject);
     ```
-    
+
 - **Test Initialization**: Use `TestInitialize` methods for async initialization.
 - **Cleanup**: Use `TestCleanup` methods or the `Dispose` pattern for cleanup.
 - **RunSettings**: The `.testsettings` file is no longer supported, meaning `<LegacySettings>` is also no longer available. Use [.runsettings](https://learn.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2022) for test configuration.

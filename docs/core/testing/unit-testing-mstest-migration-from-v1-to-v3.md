@@ -201,7 +201,8 @@ MSTest v3 includes built-in code analyzers for best practices, avoiding configur
 [TestMethod]
 [Timeout(1000)]
 [DataRow(1, "data")]
-public void ExampleTestMethod(int number, string data) {
+public void ExampleTestMethod(int number, string data)
+{
     Assert.AreEqual(number, Convert.ToInt32(data));
 }
 ```

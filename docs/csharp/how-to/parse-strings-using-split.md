@@ -100,7 +100,7 @@ When Copilot returns a code block, the response includes options to copy the cod
 > [!NOTE]
 > Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
 
-:::image type="content" source="./media/parse-strings-using-string-split/github-copilot-chat-string-split.png" alt-text="Screenshot that shows using GitHub Copilot Chat in Visual Studio to split a string into substrings." lightbox="./media/parse-strings-using-string-split/github-copilot-chat-string-split.png":::
+:::image type="content" source="./media/parse-strings-using-split/github-copilot-chat-string-split.png" alt-text="Screenshot that shows using GitHub Copilot Chat in Visual Studio to split a string into substrings." lightbox="./media/parse-strings-using-split/github-copilot-chat-string-split.png":::
 
 For more information, see:
 

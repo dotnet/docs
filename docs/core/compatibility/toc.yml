@@ -12,8 +12,12 @@ items:
             items:
               - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
                 href: aspnet-core/9.0/key-resolution.md
+              - name: Dev cert export no longer creates folder
+                href: aspnet-core/9.0/certificate-export.md
               - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
                 href: aspnet-core/9.0/hostbuilder-validation.md
+              - name: Middleware types with multiple constructors
+                href: aspnet-core/9.0/middleware-constructors.md
           - name: Containers
             items:
               - name: .NET 9 container images no longer install zlib
@@ -515,7 +519,7 @@ items:
           - name: WPF
             items:
               - name: Revert behavior with text drag-and-drop operations
-                href: wpf/7.0/drag-and-drop.md  
+                href: wpf/7.0/drag-and-drop.md
       - name: .NET 6
         items:
           - name: Overview
@@ -1018,8 +1022,12 @@ items:
             items:
               - name: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
                 href: aspnet-core/9.0/key-resolution.md
+              - name: Dev cert export no longer creates folder
+                href: aspnet-core/9.0/certificate-export.md
               - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
                 href: aspnet-core/9.0/hostbuilder-validation.md
+              - name: Middleware types with multiple constructors
+                href: aspnet-core/9.0/middleware-constructors.md
           - name: .NET 8
             items:
               - name: ConcurrencyLimiterMiddleware is obsolete

@@ -141,4 +141,4 @@ The following table depicts how the Azure SDK for .NET `EventLevel` maps to the 
 
 You can change default log levels and other settings using the same JSON configurations outlined in the [configure authentication](#authenticate-using-microsoft-entra-id) section. For example, toggle the `ServiceBusClient` log level to `Debug` by setting the `Logging:LogLevel:Azure.Messaging.ServiceBus` key as follows:
 
-:::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="2-8":::
+:::code language="json" source="snippets/aspnetcore-guidance/MinApiSample/appsettings.Development.json" highlight="6":::

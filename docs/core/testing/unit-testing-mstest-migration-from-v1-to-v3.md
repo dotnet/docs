@@ -71,8 +71,15 @@ For those comfortable editing XML directly, you can manually remove the referenc
 
 ### 2. Update Your Project
 
-- **NuGet Package**: Install the latest [MSTest](https://www.nuget.org/packages/MSTest).
-- **Project File**: Update your project file to use MSTest SDK.
+You can update your project to MSTest v3 in one of two ways:
+
+- **Install via NuGet Package**: Install the latest [MSTest](https://www.nuget.org/packages/MSTest) package using the NuGet Package Manager in Visual Studio or by running the following command in the NuGet Package Manager Console:
+
+    ```shell
+    Install-Package MSTest.TestFramework -Version 3.3.1
+    ```
+
+- **Or update the project file directly**: Update your `.csproj` file to specify the MSTest SDK version.
 
     ```xml
     <Project Sdk="MSTest.Sdk/3.3.1">
@@ -81,6 +88,8 @@ For those comfortable editing XML directly, you can manually remove the referenc
       </PropertyGroup>
     </Project>
     ```
+
+Choose the option that best suits your project setup. Both methods ensure your project is upgraded to use MSTest v3.
 
 ### 3. Update Your Code
 

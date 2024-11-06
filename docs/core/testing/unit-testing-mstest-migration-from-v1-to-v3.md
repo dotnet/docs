@@ -19,6 +19,7 @@ Migrating to MSTest v3 offers several benefits:
 ## Steps to Migrate
 
 ### 1. Remove Assembly Reference
+
 Remove the `Microsoft.VisualStudio.QualityTools.UnitTestFramework` reference from your project.
 
 ```xml
@@ -28,6 +29,7 @@ Remove the `Microsoft.VisualStudio.QualityTools.UnitTestFramework` reference fro
 ```
 
 ### 2. Update Your Project
+
 - **NuGet Package**: Install the latest [MSTest](https://www.nuget.org/packages/MSTest).
 - **Project File**: Update your project file to use MSTest SDK.
 
@@ -40,6 +42,7 @@ Remove the `Microsoft.VisualStudio.QualityTools.UnitTestFramework` reference fro
 ```
 
 ### 3. Update Your Code
+
 - **Replace Deprecated Methods**: Update deprecated methods to newer versions.
   - `Assert.AreEqual/AreNotEqual` (with object) → Use generic versions.
   - `Assert.AreSame/AreNotSame` (with object) → Use generic versions.

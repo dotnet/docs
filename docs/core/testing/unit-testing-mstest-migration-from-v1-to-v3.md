@@ -2,6 +2,7 @@
 # MSTest v3 Migration Guide
 
 ## Overview
+
 This guide assists users in upgrading their MSTest projects from v0/v1 to MSTest v3. MSTest v3 introduces new features, improvements, and some breaking changes.
 
 ---
@@ -74,6 +75,7 @@ Remove the `Microsoft.VisualStudio.QualityTools.UnitTestFramework` reference fro
 ## Breaking Changes and Removed APIs
 
 ### Assertion Overloads
+
 MSTest v3 removes certain `Assert` overloads that accept object types to promote type-safe assertions. Update tests using these overloads to specify types explicitly.
 
 **Example**:
@@ -87,6 +89,7 @@ Assert.AreEqual<int>(expectedInt, actualInt); // specify the type
 ```
 
 ### DataRowAttribute Updates
+
 The `DataRowAttribute` constructors have been simplified in MSTest v3. Update parameterized tests using `DataRow` to align with the revised constructors.
 
 **Example**:
@@ -98,6 +101,7 @@ public void MyTestMethod(int number, string text) { ... }
 ```
 
 ### Timeout Settings
+
 Timeout settings are standardized across frameworks in MSTest v3. Verify and adjust any timeout configurations in existing tests for compatibility.
 
 ---
@@ -105,6 +109,7 @@ Timeout settings are standardized across frameworks in MSTest v3. Verify and adj
 ## Configuration Changes
 
 ### Settings and Configuration Files
+
 MSTest v3 supports both XML and JSON formats for configuration files.
 
 1. **Verify Configurations**: Ensure that existing `.runsettings` files align with MSTest v3’s syntax and structure.
@@ -115,6 +120,7 @@ MSTest v3 supports both XML and JSON formats for configuration files.
 ## Parallel Execution and Performance Optimization
 
 ### New Parallelism Options
+
 Configure parallel execution in `.runsettings` or JSON configuration files to improve performance.
 
 **Example**:
@@ -128,16 +134,19 @@ Configure parallel execution in `.runsettings` or JSON configuration files to im
 ```
 
 ### Improved Resource Usage
+
 MSTest v3 optimizes resource management, resulting in lower memory usage and better CPU efficiency.
 
 ---
 
 ## Handling Obsolete Attributes and Migrating Custom Extensions
+
 Review deprecated attributes, such as `[DeploymentItem]`, and replace them with MSTest v3 alternatives where possible.
 
 ---
 
 ## Code Analyzers and Best Practices
+
 MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings.
 
 ---
@@ -145,6 +154,7 @@ MSTest v3 includes built-in code analyzers for best practices, avoiding configur
 ## Sample Code: Migration Example
 
 ### Before (MSTest v1)
+
 ```csharp
 [TestMethod]
 [Timeout(1000)]
@@ -155,6 +165,7 @@ public void ExampleTestMethod(int number, string data) {
 ```
 
 ### After (MSTest v3)
+
 ```csharp
 [TestMethod]
 [Timeout(1000)]

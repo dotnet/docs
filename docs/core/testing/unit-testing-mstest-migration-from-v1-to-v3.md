@@ -10,7 +10,16 @@ ms.date: 11/06/2024
 
 ## Overview
 
-This guide assists users in upgrading their MSTest projects from v0/v1 to MSTest v3. MSTest v3 introduces new features, improvements, and some breaking changes.
+This guide assists users in upgrading their MSTest projects from MSTest v1 to MSTest v3. MSTest v3 introduces significant new features, optimizations, and some breaking changes to improve test reliability, execution speed, and compatibility with modern .NET frameworks.
+
+---
+
+### Who Is Impacted?
+This guide is intended for projects currently using MSTest v1 via either:
+- **Assembly references**: Projects referencing `Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll` directly in their project files.
+- **NuGet packages**: Projects using MSTest v1 through the `MSTest.TestFramework` NuGet package.
+
+If your project relies on MSTest for unit testing and includes the above references, it will benefit from the improvements in MSTest v3 and requires adjustments outlined in this guide.
 
 ---
 

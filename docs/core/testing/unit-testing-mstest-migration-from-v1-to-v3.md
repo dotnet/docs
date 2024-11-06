@@ -10,6 +10,7 @@ This guide assists users in upgrading their MSTest projects from v0/v1 to MSTest
 ## Introduction and Motivation
 
 Migrating to MSTest v3 offers several benefits:
+
 - Improved test execution speeds and memory efficiency.
 - Stricter validation for more reliable tests.
 - Leveraging modern .NET features and cross-platform compatibility.

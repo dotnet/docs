@@ -48,7 +48,20 @@ By upgrading, you’re setting up your tests to be faster, more reliable, and ad
 
 ### 1. Remove Assembly Reference
 
-Remove the `Microsoft.VisualStudio.QualityTools.UnitTestFramework` reference from your project.
+For projects using MSTest v1 through assembly references, it’s common to find references to either or both of the following DLLs:
+
+- `Microsoft.VisualStudio.QualityTools.UnitTestFramework`
+- `Microsoft.VisualStudio.TestPlatform.TestFramework`
+
+In non-SDK style projects, these references are often added through Visual Studio rather than by directly editing the XML. To remove these references using the Visual Studio GUI:
+
+1. **Open Solution Explorer** in Visual Studio.
+2. **Right-click on the project** using MSTest and select **Properties**.
+3. Navigate to the **References** tab.
+4. Locate and **select the MSTest DLL references** (`Microsoft.VisualStudio.QualityTools.UnitTestFramework` and/or `Microsoft.VisualStudio.TestPlatform.TestFramework`).
+5. **Right-click** the selected reference(s) and choose **Remove**.
+
+For those comfortable editing XML directly, you can manually remove the references from your `.csproj` file as follows:
 
 ```xml
 <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">

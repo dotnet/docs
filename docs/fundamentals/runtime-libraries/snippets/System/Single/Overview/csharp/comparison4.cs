@@ -45,4 +45,5 @@ public class Example3
 // The example displays the following output:
 //       1 = 1.00000012: False
 //       1 is approximately equal to 1.00000012: True
+//       -1 is approximately equal to -1.00000012: True
 // </Snippet12>

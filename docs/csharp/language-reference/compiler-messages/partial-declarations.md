@@ -47,6 +47,8 @@ f1_keywords:
   - "CS9257"
   - "CS9258"
   - "CS9263"
+  - "CS9264"
+  - "CS9266"
 helpviewer_keywords:
   - "CS0260"
   - "CS0261"
@@ -93,7 +95,8 @@ helpviewer_keywords:
   - "CS9257"
   - "CS9258"
   - "CS9263"
-ms.date: 11/01/2024
+  - "CS9266"
+ms.date: 11/06/2024
 ---
 # Errors and warnings related to `partial` type and `partial` member declarations
 
@@ -147,6 +150,11 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9257**](#partial-properties): *Both partial property declarations must be required or neither may be required*
 - [**CS9258**](#field-backed-properties): *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - [**CS9263**](#field-backed-properties): *A partial property cannot have an initializer on both the definition and implementation.*
+
+The following warnings can be generated for field backed properties:
+
+- [**CS9264**](#field-backed-properties): *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.**
+- [**CS9266**](#field-backed-properties): *One accessor of property  should use '`field`' because the other accessor is using it.*
 
 The following sections explain the cause and fixes for these errors and warnings.
 
@@ -245,9 +253,11 @@ public partial int ImplementingDeclaration { get => field; set; }
 
 - **CS9258**: *In this language version, the '`field`' keyword binds to a synthesized backing field for the property. To avoid generating a synthesized backing field, and to refer to the existing member, use '`this.field`' or '`@field`' instead.*
 - **CS9263**: *A partial property cannot have an initializer on both the definition and implementation.*
+- **CS9264**: *Non-nullable property must contain a non-null value when exiting constructor. Consider adding the 'required' modifier, or declaring the property as nullable, or adding '`[field: MaybeNull, AllowNull]`' attributes.**
+- **CS9266**: *One accessor of property  should use '`field`' because the other accessor is using it.*
 
 [!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 Beginning with C# 13, the preview feature, `field` backed properties allows you to access the compiler synthesized backing field for a property. **CS9258** indicates that you have a variable named `field`, which can be hidden by the contextual keyword `field`.
 
-**CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property.
+**CS9263** indicates that your declaring declaration includes an implementation. That implementation might be accessing the compiler synthesized backing field for that property. **CS9264** indicates that the your use of `field` assumes a non-nullable backing field while the property declaration is nullable. The compiler assumes both the backing field and the property have the same nullability. You need to add the `[field:MaybeNull, AllowNull]` attribute to the property declaration to indicate that the `field` value should be considered nullable. **CS9266** indicates that one of a properties accessors uses the `field` keyword, but the other uses a hand-declared backing field. The warning indicates you may have done that by accident.

@@ -4,7 +4,7 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 10/10/2024
+ms.date: 11/01/2024
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -78,15 +78,13 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 | Operating System                    | .NET 8 (Architectures) | .NET 6 (Architectures) |
 |-------------------------------------|------------------------|------------------------|
-| Windows 11                          | ✔️ x64, x86, Arm64    | ✔️ x64, Arm64          |
-| Windows Server 2022                 | ✔️ x64, x86           | ✔️ x64, x86            |
-| Windows 10, Version 1607 or later   | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64     |
+| Windows 11 (24H2, 23H2, 22H2 Ent/Edu) | ✔️ x64, x86, Arm64    | ✔️ x64, Arm64          |
+| Windows 10 (22H2+)                  | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64     |
 | Windows 8.1                         | ❌                     | ✔️ x64, x86            |
 | Windows 7 SP1 [ESU][esu]            | ❌                     | ✔️ x64, x86            |
-| Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86           | ✔️ x64, x86            |
+| Windows Server 2025<br>Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86           | ✔️ x64, x86            |
 | Windows Server Core 2012 (and R2)   | ✔️ x64, x86           | ✔️ x64, x86            |
-| Nano Server, Version 1809+          | ✔️ x64                | ✔️ x64                 |
-| Nano Server, Version 1803           | ❌                     | ❌                      |
+| Nano Server (2022, 2019)            | ✔️ x64                | ✔️ x64                 |
 
 > [!TIP]
 > A `+` symbol represents the minimum version.
@@ -95,7 +93,11 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 ### Windows 7 / 8.1 / Server 2012
 
-While Windows 2012 is still supported with the latest version of .NET, .NET 6 was the last version to support Windows 7 and Windows 8.1. All three of these versions of Windows require further dependencies to be installed:
+Windows 7 and Windows 8.1 only support .NET 6. However, .NET 6 is out of support starting November 12, 2024.
+
+Windows Server 2012 is still supported by any version of .NET that's still in support.
+
+All three of these versions of Windows require further dependencies to be installed:
 
 | Operating System         | Prerequisites                                                                    |
 |--------------------------|----------------------------------------------------------------------------------|
@@ -112,30 +114,15 @@ The previous requirements are also required if you receive an error related to e
 
 ## Arm-based Windows PCs
 
-The following sections describe things you should consider when installing .NET on an Arm-based Windows PC.
+.NET is supported on Arm-based Windows PCs. The following sections describe things you should consider when installing .NET.
 
-<!-- This section is mirrored in the macos.md file. Changes here should be applied there -->
-
-### What is supported
-
-The following table describes which versions of .NET are supported on an Arm-based Windows PC:
-
-| .NET Version | SDK | Runtime | [Path conflict](#path-conflicts) | Supported |
-|--------------|-----|---------|----------------------------------| --------- |
-| 8            | Yes | Yes     | No                               | ✔️       |
-| 8            | Yes | Yes     | No                               | ✔️       |
-| 6            | Yes | Yes     | No                               | ✔️       |
-| 6            | Yes | Yes     | No                               | ✔️       |
+### SDK differences
 
 The x86, x64, and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
 
 ### Path differences
 
 On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, the **x64** version of the .NET SDK is installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
-
-### Path conflicts
-
-The **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK older than 6.0, isn't supported and installs to the same location as the Arm64 version, the _C:\\Program Files\\dotnet\\_ folder. If you want to install an unsupported x64 SDK, you must uninstall the Arm64 version first. The opposite is also true. You must uninstall the unsupported x64 SDK to install the Arm64 version.
 
 ### Path variables
 

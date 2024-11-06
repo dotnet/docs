@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 07/29/2024
+ms.date: 11/01/2024
 ms.custom: linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -15,6 +15,62 @@ This article discusses how to install .NET on Ubuntu.
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 [!INCLUDE [linux-install-package-manager-x64-vs-arm-ubuntu](includes/linux-install-package-manager-x64-vs-arm-ubuntu.md)]
+
+<!--
+===== Ubuntu 24.10
+-->
+
+::: zone pivot="os-linux-ubuntu-2410"
+
+## Ubuntu 24.10
+
+[!INCLUDE [linux-ubuntu-package-feed-only](includes/linux-ubuntu-package-feed-only.md)]
+
+The following versions of .NET are supported or available for Ubuntu 24.10:
+
+- 9.0
+- 8.0
+
+> [!IMPORTANT]
+> .NET 9 is currently in preview.
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 9](#tab/dotnet9)
+
+[!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
+# [.NET 6](#tab/dotnet6)
+
+Not available.
+
+---
+
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- ca-certificates
+- libc6
+- libgcc-s1
+- libicu74
+- liblttng-ust1
+- libssl3
+- libstdc++6
+- libunwind8
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+
+::: zone-end
 
 <!--
 ===== Ubuntu 24.04
@@ -33,6 +89,10 @@ The following versions of .NET are supported or available for Ubuntu 24.04:
 | 8.0, 6.0                | 8.0                                  | 7.0, 6.0                                                                                                 |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -70,63 +130,10 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 ::: zone-end
 
 <!--
-===== Ubuntu 23.10
--->
-
-::: zone pivot="os-linux-ubuntu-2310"
-
-## Ubuntu 23.10
-
-[!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
-
-The following versions of .NET are supported or available for Ubuntu 23.10:
-
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
-|-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
-
-[!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
-
-When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
-
-# [.NET 8](#tab/dotnet8)
-
-[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
-
-# [.NET 6](#tab/dotnet6)
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
-
----
-
-## Dependencies
-
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
-
-- ca-certificates
-- libc6
-- libgcc-s1
-- libgssapi-krb5-2
-- libicu72
-- liblttng-ust1
-- libssl3
-- libstdc++6
-- libunwind8
-- zlib1g
-
-[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
-
-::: zone-end
-
-::: zone pivot="os-linux-ubuntu-2204"
-
-<!--
 ===== Ubuntu 22.04
 -->
+
+::: zone pivot="os-linux-ubuntu-2204"
 
 ## Ubuntu 22.04
 
@@ -141,6 +148,10 @@ The following versions of .NET are supported or available for Ubuntu 22.04:
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -203,6 +214,10 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
+# [.NET 9](#tab/dotnet9)
+
+Not available.
+
 # [.NET 8](#tab/dotnet8)
 
 [!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
@@ -235,128 +250,10 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 ::: zone-end
 
 <!--
-===== Ubuntu 18.04
--->
-
-::: zone pivot="os-linux-ubuntu-1804"
-
-## Ubuntu 18.04
-
-[!INCLUDE [linux-ubuntu-package-feed-ms](includes/linux-ubuntu-package-feed-ms.md)]
-
-The following versions of .NET are supported or available for Ubuntu 18.04:
-
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
-|-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 6.0                     | None                                 | None                                                                                                     | 7.0. 6.0, 5.0, 3.1, 2.2, 2.1                                                                |
-
-When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
-
-## Add the Microsoft package repository
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-# [.NET 8](#tab/dotnet8)
-
-.NET 8 isn't supported on Ubuntu 18.04.
-
-# [.NET 6](#tab/dotnet6)
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
-
----
-
-## Dependencies
-
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
-
-- ca-certificates
-- libc6
-- libgcc1
-- libgssapi-krb5-2
-- libicu60
-- libssl1.1
-- libstdc++6
-- zlib1g
-
-[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
-
-::: zone-end
-
-<!--
-===== Ubuntu 16.04
--->
-
-::: zone pivot="os-linux-ubuntu-1604"
-
-## Ubuntu 16.04
-
-[!INCLUDE [linux-ubuntu-package-feed-ms](includes/linux-ubuntu-package-feed-ms.md)]
-
-The following versions of .NET are supported or available for Ubuntu 16.04:
-
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
-|-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 6.0                     | None                                 | None                                                                                                     | 6.0, 5.0, 3.1, 3.0, 2.2, 2.1, 2.0                                                           |
-
-When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
-
-## Add the Microsoft package repository
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-# [.NET 8](#tab/dotnet8)
-
-.NET 8 isn't supported on Ubuntu 16.04.
-
-# [.NET 6](#tab/dotnet6)
-
-[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
-
----
-
-## Dependencies
-
-When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
-
-- ca-certificates
-- libc6
-- libgcc1
-- libgssapi-krb5-2
-- libicu55
-- libssl1.0.0
-- libstdc++6
-- zlib1g
-
-[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
-
-::: zone-end
-
-<!--
 ===== All versions
 -->
 
-::: zone pivot="os-linux-ubuntu-2404,os-linux-ubuntu-2310,os-linux-ubuntu-2204,os-linux-ubuntu-2004,os-linux-ubuntu-1804,os-linux-ubuntu-1604"
+::: zone pivot="os-linux-ubuntu-2410,os-linux-ubuntu-2404,os-linux-ubuntu-2204,os-linux-ubuntu-2004"
 
 ## Unsupported versions
 
@@ -381,25 +278,81 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 If your Ubuntu version isn't supported, you most likely need to install .NET by manually extracting the binaries, by using the install script. For more information, see [Install .NET on Linux without using a package manager](linux-scripted-manual.md).
 
 <!--
+===== Ubuntu 23.10
+-->
+
+## Ubuntu 23.10
+
+[!INCLUDE [linux-ubuntu-not-supported](includes/linux-ubuntu-not-supported.md)]
+
+[!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
+
+The following versions of .NET were supported or available for Ubuntu 23.10:
+
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
+
+[!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
+
+When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
+
+# [.NET 8](#tab/dotnet8)
+
+[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+
+# [.NET 6](#tab/dotnet6)
+
+[!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
+
+---
+
+## Dependencies
+
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- ca-certificates
+- libc6
+- libgcc-s1
+- libgssapi-krb5-2
+- libicu72
+- liblttng-ust1
+- libssl3
+- libstdc++6
+- libunwind8
+- zlib1g
+
+[!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
+
+[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
+
+You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
+
+<!--
 ===== Ubuntu 23.04
 -->
 
 ## Ubuntu 23.04
 
-> [!WARNING]
-> This version of Ubuntu is no longer supported.
->
-> Running .NET on this version of Ubuntu is no longer supported.
+[!INCLUDE [linux-ubuntu-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 [!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
 
-The following versions of .NET are supported or available for Ubuntu 23.04:
+The following versions of .NET were supported or available for Ubuntu 23.04:
 
 | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 8.0, 6.0                | 7.0, 6.0                             | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -440,10 +393,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 ## Ubuntu 22.10
 
-> [!WARNING]
-> This version of Ubuntu is no longer supported.
->
-> Running .NET on this version of Ubuntu is no longer supported.
+[!INCLUDE [linux-ubuntu-not-supported](includes/linux-ubuntu-not-supported.md)]
 
 [!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
 
@@ -454,6 +404,10 @@ The following versions of .NET are supported or available for Ubuntu 22.10:
 | 6.0                     | 7.0, 6.0                             |  None                                                                                                    | 7.0, 6.0, 3.1                                                                               |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
+
+# [.NET 9](#tab/dotnet9)
+
+Not available.
 
 # [.NET 8](#tab/dotnet8)
 

@@ -1,13 +1,13 @@
 ---
-title: "Uri query redaction in IHttpClientFactory logs"
+title: "URI query redaction in IHttpClientFactory logs"
 description: Learn about the breaking change in networking in .NET 9 where the IHttpClientFactory implementation scrubs query strings in logs to enhance privacy.
 ms.date: 11/5/2024
 ai-usage: ai-assisted
 ---
 
-# Uri query redaction in IHttpClientFactory logs
+# URI query redaction in IHttpClientFactory logs
 
-In .NET 9, the default implementation of <xref:System.Net.Http.IHttpClientFactory> has been modified to scrub query strings when logging Uri information. This change enhances privacy by preventing the logging of potentially sensitive information contained in query strings. For scenarios where logging query strings is necessary and deemed safe, you can override this behavior.
+In .NET 9, the default implementation of <xref:System.Net.Http.IHttpClientFactory> has been modified to scrub query strings when logging URI information. This change enhances privacy by preventing the logging of potentially sensitive information contained in query strings. For scenarios where logging query strings is necessary and deemed safe, you can override this behavior.
 
 ## Version introduced
 
@@ -23,7 +23,7 @@ The messages passed to <xref:Microsoft.Extensions.Logging.ILogger> now have quer
 
 ## Type of breaking change
 
-This change is a [behavioral change](../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
@@ -60,7 +60,7 @@ If your application relies on logging query strings and you're confident that it
 Otherwise, no action is required, and the default behavior will help enhance the privacy aspects of your application.
 
 > [!NOTE]
-> This switch also disables query string redaction in `HttpClient` EventSource events. For more information, see [Uri query redaction in HttpClient EventSource events](query-redaction-events.md).
+> This switch also disables query string redaction in `HttpClient` EventSource events. For more information, see [URI query redaction in HttpClient EventSource events](query-redaction-events.md).
 
 ## Affected APIs
 

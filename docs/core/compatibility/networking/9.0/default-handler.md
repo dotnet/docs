@@ -41,7 +41,7 @@ For example, the same code from the [Previous behavior](#previous-behavior) sect
 
 ## Type of breaking change
 
-This change is a [behavioral change](../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

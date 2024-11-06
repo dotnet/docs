@@ -1,11 +1,11 @@
 ---
-title: "Uri query redaction in HttpClient EventSource events"
+title: "URI query redaction in HttpClient EventSource events"
 description: "Learn about the breaking change in networking in .NET 9 where HttpClient EventSource events scrub query strings by default to enhance privacy."
 ms.date: 11/5/2024
 ai-usage: ai-assisted
 ---
 
-# Uri query redaction in HttpClient EventSource events
+# URI query redaction in HttpClient EventSource events
 
 In .NET 9, the default behavior of <xref:System.Diagnostics.Tracing.EventSource> events emitted by <xref:System.Net.Http.HttpClient> and <xref:System.Net.Http.SocketsHttpHandler> (`EventSource` name: `System.Net.Http`) has been modified to scrub query strings. This change enhances privacy by preventing the logging of potentially sensitive information contained in query strings. If necessary, you can override this behavior.
 
@@ -23,7 +23,7 @@ With the change in [dotnet/runtime#104741](https://github.com/dotnet/runtime/pul
 
 ## Type of breaking change
 
-This change is a [behavioral change](../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
@@ -60,7 +60,7 @@ If you need query string information when consuming `HttpClient` or `SocketsHttp
 Otherwise, no action is required, and the default behavior will help enhance the privacy aspects of your application.
 
 > [!NOTE]
-> This switch also disables query string redaction in the default `IHttpClientFactory` logs. For more information, see [Uri query redaction in IHttpClientFactory logs](query-redaction-logs.md).
+> This switch also disables query string redaction in the default `IHttpClientFactory` logs. For more information, see [URI query redaction in IHttpClientFactory logs](query-redaction-logs.md).
 
 ## Affected APIs
 

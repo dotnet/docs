@@ -17,7 +17,7 @@ The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
-## String.Split examples 
+## String.Split examples
 
 The following code splits a common phrase into an array of strings for each word.
 

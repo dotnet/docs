@@ -120,9 +120,9 @@ Example:
 type Foo() =
     member val X : int = 0 with get, set
 
-[&ltExtension>]
+[<Extension>]
 type FooExt =
-    [&ltExtension>]
+    [<Extension>]
     static member X (f: Foo, i: int) = f.X <- i; f
 
 let f = Foo()

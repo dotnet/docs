@@ -6,7 +6,7 @@ ms.date: 11/5/2024
 
 # HttpClient metrics report `server.port` unconditionally
 
-When [HttpClient metrics](../../../../fundamentals/networking/telemetry/metrics.md) was implemented in .NET 8, `server.port` was introduced as a [`Conditionally Required`](https://opentelemetry.io/docs/specs/semconv/general/attribute-requirement-level/#conditionally-required) attribute in accordance with the state of the standard at that time. Being conditionally required meant that the port was only reported if it did not match the default port of the corresponding protocol (80 for HTTP, 443 for HTTPS). However, the standard [requirement level of the attribute](https://opentelemetry.io/docs/specs/semconv/http/http-spans/#http-client) has since been changed to `Required`.
+When [HttpClient metrics](../../../../fundamentals/networking/telemetry/metrics.md) were added in .NET 8, `server.port` was introduced as a [`Conditionally Required`](https://opentelemetry.io/docs/specs/semconv/general/attribute-requirement-level/#conditionally-required) attribute in accordance with the state of the standard at that time. Being conditionally required meant that the port was only reported if it did not match the default port of the corresponding protocol (80 for HTTP, 443 for HTTPS). However, the standard [requirement level of the attribute](https://opentelemetry.io/docs/specs/semconv/http/http-spans/#http-client) has since been changed to `Required`.
 
 To maintain compliance with the Open Telemetry standard while keeping the instrument's behaviors consistent with each other, the instruments `http.client.request.duration`, `http.client.connection.duration`, and `http.client.open_connections` have been changed to unconditionally report the `server.port` attribute.
 

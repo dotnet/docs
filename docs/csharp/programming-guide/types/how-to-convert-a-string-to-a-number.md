@@ -106,7 +106,7 @@ When Copilot returns a code block, the response includes options to copy the cod
 > [!NOTE]
 > Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
 
-:::image type="content" source="./media/how-to-convert-a-string-to-a-number/github-copilot-chat-convert-string-to-number.png" alt-text="Screenshot that shows using GitHub Copilot Chat in Visual Studio to convert a string to a number." lightbox="../../../media/github-copilot-chat-convert-string-to-number.png":::
+:::image type="content" source="./media/how-to-convert-a-string-to-a-number/github-copilot-chat-convert-string-to-number.png" alt-text="Screenshot that shows using GitHub Copilot Chat in Visual Studio to convert a string to a number." lightbox="./media/how-to-convert-a-string-to-a-number/github-copilot-chat-convert-string-to-number.png":::
 
 For more information, see:
 

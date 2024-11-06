@@ -46,6 +46,8 @@ items:
                 href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
+              - name: String.Trim(params ReadOnlySpan<char>) overload removed
+                href: core-libraries/9.0/string-trim.md
               - name: Support for empty environment variables
                 href: core-libraries/9.0/empty-env-variable.md
               - name: ZipArchiveEntry names and comments respect UTF8 flag
@@ -1290,6 +1292,8 @@ items:
                 href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
+              - name: String.Trim(params ReadOnlySpan<char>) overload removed
+                href: core-libraries/9.0/string-trim.md
               - name: Support for empty environment variables
                 href: core-libraries/9.0/empty-env-variable.md
               - name: ZipArchiveEntry names and comments respect UTF8 flag

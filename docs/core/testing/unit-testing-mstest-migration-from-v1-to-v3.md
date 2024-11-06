@@ -41,13 +41,13 @@ Remove the `Microsoft.VisualStudio.QualityTools.UnitTestFramework` reference fro
 - **NuGet Package**: Install the latest [MSTest](https://www.nuget.org/packages/MSTest).
 - **Project File**: Update your project file to use MSTest SDK.
 
-```xml
-<Project Sdk="MSTest.Sdk/3.3.1">
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-  </PropertyGroup>
-</Project>
-```
+    ```xml
+    <Project Sdk="MSTest.Sdk/3.3.1">
+      <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+      </PropertyGroup>
+    </Project>
+    ```
 
 ### 3. Update Your Code
 

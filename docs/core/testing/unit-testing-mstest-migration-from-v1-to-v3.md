@@ -83,7 +83,7 @@ You can update your project to MSTest v3 in one of two ways:
 - **Or update the project file directly**: Update your `.csproj` file to specify the MSTest SDK version.
 
     ```xml
-    <Project Sdk="MSTest.Sdk/3.3.1">
+    <Project Sdk="MSTest.Sdk/3.6.2">
       <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
       </PropertyGroup>

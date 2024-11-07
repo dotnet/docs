@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 12/01/2023
+ms.date: 11/07/2024
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -58,6 +58,37 @@ The `ApiCompatValidateAssemblies` property enables a series of validations on th
 </PropertyGroup>
 ```
 
+## Assembly attribute properties
+
+- [GenerateAssemblyInfo](#generateassemblyinfo)
+- [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+
+### GenerateAssemblyInfo
+
+The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
+```
+
+The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
+
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes.
+
+For more information about generating assembly attributes using a project file, see [Set assembly attributes in a project file](../../standard/assembly/set-attributes-project-file.md).
+
+### GeneratedAssemblyInfoFile
+
+The `GeneratedAssemblyInfoFile` property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
+
+```xml
+<PropertyGroup>
+  <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
+</PropertyGroup>
+```
+
 ## Framework properties
 
 The following MSBuild properties are documented in this section:
@@ -104,37 +135,6 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 <PropertyGroup>
   <TargetFramework>netstandard1.3</TargetFramework>
   <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-</PropertyGroup>
-```
-
-## Assembly attribute properties
-
-- [GenerateAssemblyInfo](#generateassemblyinfo)
-- [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
-
-### GenerateAssemblyInfo
-
-The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-</PropertyGroup>
-```
-
-The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
-
-When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes.
-
-For more information about generating assembly attributes using a project file, see [Set assembly attributes in a project file](../../standard/assembly/set-attributes-project-file.md).
-
-### GeneratedAssemblyInfoFile
-
-The `GeneratedAssemblyInfoFile` property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
-
-```xml
-<PropertyGroup>
-  <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
 </PropertyGroup>
 ```
 
@@ -1422,6 +1422,26 @@ The `RunWorkingDirectory` property defines the working directory for the applica
   <RunWorkingDirectory>c:\temp</RunWorkingDirectory>
 </PropertyGroup>
 ```
+
+## SDK-related properties
+
+The following MSBuild properties are documented in this section:
+
+- [SdkAnalysisLevel](#sdkanalysislevel)
+
+### SdkAnalysisLevel
+
+The `SdkAnalysisLevel` property can be used to configure how *strict* SDK tooling is. It helps you manage SDK warning levels in situations where you might not be able to pin SDKs via *global.json* or other means. You can use this property to tell a newer SDK to behave as if it were an older SDK, with regards to a specific tool or feature, without having to install the older SDK.
+
+The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value would be 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
+
+```xml
+<PropertyGroup>
+  <SdkAnalysisLevel>8.0.400</SdkAnalysisLevel>
+</PropertyGroup>
+```
+
+For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
 ## Test project&ndash;related properties
 

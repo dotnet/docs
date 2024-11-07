@@ -58,10 +58,11 @@ For projects using MSTest v1 through assembly references, it’s common to find 
 In non-SDK style projects, these references are often added through Visual Studio rather than by directly editing the XML. To remove these references using the Visual Studio GUI:
 
 1. **Open Solution Explorer** in Visual Studio.
-2. **Right-click on the project** using MSTest and select **Properties**.
-3. Navigate to the **References** tab.
-4. Locate and **select the MSTest DLL references** (`Microsoft.VisualStudio.QualityTools.UnitTestFramework` and/or `Microsoft.VisualStudio.TestPlatform.TestFramework`).
-5. **Right-click** the selected reference(s) and choose **Remove**.
+2. **Expand the project node** for the project using MSTest.
+3. Locate the **References** folder within the project.
+4. Inside the **References** folder, **find and select** the MSTest DLL references, such as `Microsoft.VisualStudio.QualityTools.UnitTestFramework` or `Microsoft.VisualStudio.TestPlatform.TestFramework`.
+5. **Right-click** the selected reference(s) and choose **Remove** from the context menu.
+6. **Save the project** to apply changes.
 
 For those comfortable editing XML directly, you can manually remove the references from your `.csproj` file as follows:
 

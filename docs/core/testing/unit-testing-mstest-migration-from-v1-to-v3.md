@@ -16,7 +16,7 @@ This guide assists users in upgrading their MSTest projects from MSTest v1 to MS
 
 ### Who Is Impacted?
 
-This guide is intended for projects currently using MSTest v1 via either:
+This guide is intended for projects currently .NET Framework projects using MSTest v1 via either:
 
 - **Assembly references**: Projects referencing `Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll` directly.
 - **NuGet packages**: Projects using `MSTest.TestFramework` NuGet package with version 1.0.0-1.4.0.

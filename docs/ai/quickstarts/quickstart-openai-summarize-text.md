@@ -48,7 +48,7 @@ The sample project includes completed apps you can run to connect to your AI mod
 # [Azure OpenAI](#tab/azure-openai)
 
 > [!NOTE]
-> The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) using another tool such as the Azure portal or Azure CLI. 
+> The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) using another tool such as the Azure portal or Azure CLI.
 
 1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
 

@@ -96,10 +96,10 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 ### 3. Update Your Code
 
-  - **Assert.AreEqual/AreNotEqual or Assert.AreSame/AreNotSame (with object)**
-    If one of these assertions causes errors, we recommend verifying that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.
+- **Assert.AreEqual/AreNotEqual or Assert.AreSame/AreNotSame (with object)**
+  If one of these assertions causes errors, we recommend verifying that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.
 
-    - **using generics**:
+- **using generics**:
 
     ```csharp
     Assert.AreEqual<customObject>(expectedObject, actualObject);

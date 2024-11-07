@@ -18,7 +18,15 @@ Get started with AI by creating a simple .NET 8.0 console chat app to summarize 
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites](includes/prerequisites-openai.md)]
+# [OpenAI](#tab/openai)
+
+[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
+
+# [Azure OpenAI](#tab/azure-openai)
+
+[!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
+
+---
 
 ## Get the sample project
 
@@ -47,11 +55,11 @@ The sample project includes completed apps you can run to connect to your AI mod
 
 # [Azure OpenAI](#tab/azure-openai)
 
-> [!NOTE]
-> The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
-
 1. From a terminal or command prompt, navigate to the `src\quickstarts\microsoft-extensions-ai\azure-openai\01-HikeBenefitsSummary` directory.
 
+    > [!NOTE]
+    > The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
+    
 1. Run the `azd up` command to provision the Azure OpenAI resource and configure the necessary permissions. The command may take a few minutes to finish.
 
     ```bash
@@ -97,15 +105,9 @@ The following code obtains an `IChatClient` service configured to connect to the
 
 ---
 
-The `CompleteAsync` function sends the `prompt` to the model to generate a response.
-
-# [OpenAI](#tab/openai)
+The `CompleteAsync` function sends the `prompt` to the model to generate a response. The `Microsoft.Extensions.AI` library enables this code to be agnostic towards a specific AI service because it uses an `IChatClient` abstraction rather than a specific SDK implementation.
 
 :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="14-22":::
-
-# [Azure OpenAI](#tab/azure-openai)
-
-:::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="15-23":::
 
 :::zone-end
 

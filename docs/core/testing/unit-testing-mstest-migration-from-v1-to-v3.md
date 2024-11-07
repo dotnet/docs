@@ -249,7 +249,7 @@ MSTest v3 optimizes resource management, resulting in lower memory usage and bet
 
 ## Handling Obsolete Attributes and Migrating Custom Extensions
 
-Review deprecated attributes, such as `[DeploymentItem]`, and replace them with MSTest v3 alternatives where possible.
+Review deprecated attributes, and replace them with MSTest v3 alternatives where possible.
 
 ---
 

@@ -221,7 +221,6 @@ public async Task TestMethod() { ... }
 MSTest v3 supports both XML and JSON formats for configuration files.
 
 1. **Verify Configurations**: Ensure that existing `.runsettings` files align with MSTest v3 syntax and structure.
-2. **Convert to JSON (if applicable)**: For JSON-based configurations, convert XML settings to JSON format.
 
 ---
 

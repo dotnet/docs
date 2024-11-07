@@ -10,7 +10,7 @@ zone_pivot_groups: dotnet-ai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
 
-# Summarize text using AI chat app with .NET
+# Connect to and prompt an AI model using .NET
 
 :::zone target="docs" pivot="microsoft-extensions-ai"
 
@@ -47,13 +47,15 @@ The sample project includes completed apps you can run to connect to your AI mod
 
 # [Azure OpenAI](#tab/azure-openai)
 
+> [!NOTE]
+> The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) using another tool such as the Azure portal or Azure CLI. 
+
 1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
 
-1. Run the following commands to configure your Azure OpenAI API key as a secret for the sample app:
+1. Run the `azd up` command to provision the Azure OpenAI resource and configure the necessary permissions.
 
     ```bash
-    dotnet user-secrets init
-    dotnet user-secrets set AzureOpenAIKey <your-azure-openai-key>
+    azd up
     ```
 
 1. Use the `dotnet run` command to run the app:
@@ -68,13 +70,16 @@ The sample project includes completed apps you can run to connect to your AI mod
 
 The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) package to send and receive requests to the OpenAI service.
 
-The **Program.cs** file contains all of the app code. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
+The **Program.cs** file contains all of the app code. The first several lines of code set configuration values to connect and authenticate to the AI model.
 
 # [OpenAI](#tab/openai)
 
 :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="5-7":::
 
 # [Azure OpenAI](#tab/azure-openai)
+
+> [!NOTE]
+> `DefaultAzureCredential` searches for credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI.
 
 :::code language="csharp" source="./snippets/prompt-completion/extensions-azure-openai/openai/program.cs" range="6-8":::
 

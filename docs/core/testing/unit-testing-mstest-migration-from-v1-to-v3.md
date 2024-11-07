@@ -95,38 +95,15 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 ### 3. Update Your Code
 
-- **Replace Deprecated Methods**: Update deprecated methods to newer versions.
-  
-  - **Assert.AreEqual/AreNotEqual (with object)** → Use generic versions.
-
-    - **Before** (deprecated):
-
-    ```csharp
-    Assert.AreEqual(expectedObject, actualObject);
-    Assert.AreNotEqual(expectedObject, actualObject);
-    ```
-
-    - **After (using generics)**:
+  - **Assert.AreEqual/AreNotEqual or Assert.AreSame/AreNotSame (with object)**
+    
+    If one of these assertions causes errors, we recommend verifying that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.
+    
+    - **using generics**:
 
     ```csharp
-    Assert.AreEqual<object>(expectedObject, actualObject);
-    Assert.AreNotEqual<object>(expectedObject, actualObject);
-    ```
-
-  - **Assert.AreSame/AreNotSame (with object)** → Use generic versions.
-
-    - **Before** (deprecated):
-
-    ```csharp
-    Assert.AreSame(expectedObject, actualObject);
-    Assert.AreNotSame(expectedObject, actualObject);
-    ```
-
-    - **After (using generics)**:
-
-    ```csharp
-    Assert.AreSame<object>(expectedObject, actualObject);
-    Assert.AreNotSame<object>(expectedObject, actualObject);
+    Assert.AreEqual<customObject>(expectedObject, actualObject);
+    Assert.AreNotEqual<customObject>(expectedObject, actualObject);
     ```
 
 - **Test Initialization**: Use `TestInitialize` methods for async initialization.
@@ -162,18 +139,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 ### Assertion Overloads
 
-MSTest v3 removes certain `Assert` overloads that accept object type to promote type-safe assertions. In most of cases it will work but not with exact `object` type or custum inherited ones.
-Update tests using these overloads to specify types explicitly.
-
-**Example**:
-
-```csharp
-// Old (v0/v1)
-Assert.AreEqual(expected, actual); // both are objects
-
-// New (v3)
-Assert.AreEqual<object>(expectedInt, actualInt); // specify the type
-```
+If AreEqual, AreNotEqual, AreSame, or AreNotSame assertions cause errors, we recommend checking that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.
 
 ### DataRowAttribute Updates
 

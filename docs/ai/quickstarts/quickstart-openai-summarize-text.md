@@ -107,9 +107,9 @@ The `CompleteAsync` function sends the `prompt` to the model to generate a respo
 
 :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="15-23":::
 
-Customize the text content of the file or the length of the summary to see the differences in the responses.
-
 :::zone-end
+
+Customize the text content of the file or the length of the summary to see the differences in the responses.
 
 :::zone target="docs" pivot="semantic-kernel"
 
@@ -168,61 +168,28 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
 
 The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
 
-The **Program.cs** file contains all of the app code. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
+The **Program.cs** file contains all of the app code. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command. The `Kernel` class facilitates the requests and responses and registers an `OpenAIChatCompletion` service.
 
 # [OpenAI](#tab/openai)
 
-```csharp
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string model = "gpt-3.5-turbo";
-string key = config["OpenAIKey"];
-```
+:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/openai/program.cs" range="5-13":::
 
 # [Azure OpenAI](#tab/azure-openai)
 
-```csharp
-// Retrieve the local secrets saved during the Azure deployment
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string endpoint = config["AZURE_OPENAI_ENDPOINT"];
-string deployment = config["AZURE_OPENAI_GPT_NAME"];
-string key = config["AZURE_OPENAI_KEY"];
-```
+> [!NOTE]
+> `DefaultAzureCredential` searches for credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI.
+
+:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/azure-openai/program.cs" range="6-14":::
 
 ---
 
-The `Kernel` class facilitates the requests and responses and registers an `OpenAIChatCompletion` service.
-
-```csharp
-// Create a Kernel containing the OpenAI Chat Completion Service
-Kernel kernel = Kernel.CreateBuilder()
-    .AddOpenAIChatCompletion(model, key)
-    .Build();
-```
-
 Once the `Kernel` is created, the app code reads the `benefits.md` file content and uses it to create a `prompt` for model. The prompt instructs the model to summarize the file text content.
 
-```csharp
-// Create and print out the prompt
-string prompt = $"""
-    Please summarize the the following text in 20 words or less:
-    {File.ReadAllText("benefits.md")}
-    """;
-Console.WriteLine($"user >>> {prompt}");
-```
+:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/openai/program.cs" range="15-20":::
 
 The `InvokePromptAsync` function sends the `prompt` to the model to generate a response.
 
-```csharp
-// Submit the prompt and print out the response
-string response = await kernel.InvokePromptAsync<string>(
-    prompt,
-    new(new OpenAIPromptExecutionSettings() 
-        { 
-            MaxTokens = 400 
-        })
-    );
-Console.WriteLine($"assistant >>> {response}");
-```
+:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/openai/program.cs" range="22-24":::
 
 Customize the text content of the file or the length of the summary to see the differences in the responses.
 

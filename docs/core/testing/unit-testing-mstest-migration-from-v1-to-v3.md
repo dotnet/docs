@@ -29,6 +29,7 @@ If your project relies on MSTest for unit testing and includes the above referen
 
 Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v3 unlocks substantial advantages that improve both the quality and future-readiness of your tests. Here’s why making the switch now can be a valuable step forward:
 
+- **Enhanced security**: MSTest v1 has known security vulnerabilities. With MSTest v3, we’ve implemented extensive security improvements to safeguard your testing environment.
 - **Immediate Performance Boosts**: MSTest v3 significantly reduces test execution time and optimizes resource usage. This is particularly beneficial in CI/CD pipelines, where faster tests can shorten deployment cycles and cut infrastructure costs.
 
 - **Future-Proofing Your Tests**: MSTest v3 offers robust support for modern .NET versions, including .NET 6, .NET 7, and future iterations, along with cross-platform compatibility. This means your tests will be more adaptable and ready for upgrades, avoiding the technical debt of outdated testing frameworks.

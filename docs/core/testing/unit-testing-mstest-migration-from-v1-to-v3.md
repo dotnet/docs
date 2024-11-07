@@ -50,10 +50,10 @@ By upgrading, you’re setting up your tests to be faster, more reliable, and ad
 
 ### 1. Remove Assembly Reference
 
-For projects using MSTest v1 through assembly references, it’s common to find references to either or both of the following DLLs:
+For projects using MSTest v1 through assembly references, it’s common to find references to the following DLLs:
 
 - `Microsoft.VisualStudio.QualityTools.UnitTestFramework`
-- `Microsoft.VisualStudio.TestPlatform.TestFramework`
+- `Microsoft.VisualStudio.QualityTools.Common`
 
 In non-SDK style projects, these references are often added through Visual Studio rather than by directly editing the XML. To remove these references using the Visual Studio GUI:
 
@@ -162,7 +162,8 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 ### Assertion Overloads
 
-MSTest v3 removes certain `Assert` overloads that accept object types to promote type-safe assertions. Update tests using these overloads to specify types explicitly.
+MSTest v3 removes certain `Assert` overloads that accept object type to promote type-safe assertions. In most of cases it will work but not with exact `object` type or custum inherited ones.
+Update tests using these overloads to specify types explicitly.
 
 **Example**:
 

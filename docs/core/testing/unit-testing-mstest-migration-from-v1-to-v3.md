@@ -97,7 +97,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 - **Replace Deprecated Methods**: Update deprecated methods to newer versions.
   
-  - **Assert.AreEqual/AreNotEqual (with object)** → Use generic versions.
+  - **Assert.AreEqual/AreNotEqual or Assert.AreSame/AreNotSame (with object)** → Use generic versions.
 
     - **Before** (deprecated):
 
@@ -131,7 +131,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 - **Test Initialization**: Use `TestInitialize` methods for async initialization.
 - **Cleanup**: Use `TestCleanup` methods or the `Dispose` pattern for cleanup.
-- **RunSettings**: The `.testsettings` file is no longer supported, meaning `<LegacySettings>` is also no longer available. Use [.runsettings](https://learn.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) for test configuration.
+- **RunSettings**: The `.testsettings` file is no longer supported, meaning `<LegacySettings>` is also no longer available. Use [.runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) for test configuration.
 
 ---
 
@@ -171,7 +171,7 @@ MSTest v3 removes certain `Assert` overloads that accept object types to promote
 Assert.AreEqual(expected, actual); // both are objects
 
 // New (v3)
-Assert.AreEqual<int>(expectedInt, actualInt); // specify the type
+Assert.AreEqual<object>(expectedInt, actualInt); // specify the type
 ```
 
 ### DataRowAttribute Updates
@@ -255,34 +255,6 @@ Review deprecated attributes, and replace them with MSTest v3 alternatives where
 ## Code Analyzers and Best Practices
 
 MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings. This is automatically available when using MSTest package or MSTest.Sdk.
-
----
-
-## Sample Code: Migration Example
-
-### Before (MSTest v1)
-
-```csharp
-[TestMethod]
-[Timeout(1000)]
-[DataRow(1, "data")]
-public void ExampleTestMethod(int number, string data)
-{
-    Assert.AreEqual(number, Convert.ToInt32(data));
-}
-```
-
-### After (MSTest v3)
-
-```csharp
-[TestMethod]
-[Timeout(1000)]
-[DataRow(1, "data")]
-public void ExampleTestMethod(int number, string data)
-{
-    Assert.AreEqual<int>(number, Convert.ToInt32(data));
-}
-```
 
 ---
 

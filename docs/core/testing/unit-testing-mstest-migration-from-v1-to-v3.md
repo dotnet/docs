@@ -255,7 +255,7 @@ Review deprecated attributes, such as `[DeploymentItem]`, and replace them with 
 
 ## Code Analyzers and Best Practices
 
-MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings.
+MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings. This is automatically available when using MSTest package or MSTest.Sdk.
 
 ---
 

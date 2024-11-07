@@ -109,9 +109,9 @@ The `CompleteAsync` function sends the `prompt` to the model to generate a respo
 
 :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="14-22":::
 
-:::zone-end
-
 Customize the text content of the file or the length of the summary to see the differences in the responses.
+
+:::zone-end
 
 :::zone target="docs" pivot="semantic-kernel"
 

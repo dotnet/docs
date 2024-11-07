@@ -97,7 +97,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 - **Replace Deprecated Methods**: Update deprecated methods to newer versions.
   
-  - **Assert.AreEqual/AreNotEqual or Assert.AreSame/AreNotSame (with object)** → Use generic versions.
+  - **Assert.AreEqual/AreNotEqual (with object)** → Use generic versions.
 
     - **Before** (deprecated):
 

@@ -82,7 +82,7 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 
 1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:
 
-:::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
 
 `DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview).
 

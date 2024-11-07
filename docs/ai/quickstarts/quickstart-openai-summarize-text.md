@@ -30,7 +30,7 @@ The sample project includes completed apps you can run to connect to your AI mod
 
 # [OpenAI](#tab/openai)
 
-1. From a terminal or command prompt, navigate to the `openai\01-HikeBenefitsSummary` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\microsoft-extensions-ai\openai\01-HikeBenefitsSummary` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -50,9 +50,9 @@ The sample project includes completed apps you can run to connect to your AI mod
 > [!NOTE]
 > The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
 
-1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\microsoft-extensions-ai\azure-openai\01-HikeBenefitsSummary` directory.
 
-1. Run the `azd up` command to provision the Azure OpenAI resource and configure the necessary permissions.
+1. Run the `azd up` command to provision the Azure OpenAI resource and configure the necessary permissions. The command may take a few minutes to finish.
 
     ```bash
     azd up
@@ -135,7 +135,7 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
 
 # [OpenAI](#tab/openai)
 
-1. From a terminal or command prompt, navigate to the `openai\01-HikeBenefitsSummary` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\semantic-kernel\openai\01-HikeBenefitsSummary` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -152,7 +152,7 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
 
 # [Azure OpenAI](#tab/azure-openai)
 
-1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\semantic-kernel\azure-openai\01-HikeBenefitsSummary` directory.
 
 1. Run the `azd up` command to provision the Azure OpenAI resource using the [Azure Developer CLI](/developer/azure-developer-cli/overview). `azd` provisions the Azure OpenAI resources and configures permissions for you.
 

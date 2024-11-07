@@ -46,6 +46,8 @@ items:
                 href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
+              - name: String.Trim(params ReadOnlySpan<char>) overload removed
+                href: core-libraries/9.0/string-trim.md
               - name: Support for empty environment variables
                 href: core-libraries/9.0/empty-env-variable.md
               - name: ZipArchiveEntry names and comments respect UTF8 flag
@@ -74,10 +76,18 @@ items:
                 href: jit/9.0/sve-apis.md
           - name: Networking
             items:
+              - name: HttpClient metrics report `server.port` unconditionally
+                href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
+              - name: HttpClientFactory uses SocketsHttpHandler as primary handler
+                href: networking/9.0/default-handler.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
+              - name: Uri query redaction in HttpClient EventSource events
+                href: networking/9.0/query-redaction-events.md
+              - name: Uri query redaction in IHttpClientFactory logs
+                href: networking/9.0/query-redaction-logs.md
           - name: SDK and MSBuild
             items:
               - name: "'dotnet workload' commands output change"
@@ -515,7 +525,7 @@ items:
           - name: WPF
             items:
               - name: Revert behavior with text drag-and-drop operations
-                href: wpf/7.0/drag-and-drop.md  
+                href: wpf/7.0/drag-and-drop.md
       - name: .NET 6
         items:
           - name: Overview
@@ -1282,6 +1292,8 @@ items:
                 href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
+              - name: String.Trim(params ReadOnlySpan<char>) overload removed
+                href: core-libraries/9.0/string-trim.md
               - name: Support for empty environment variables
                 href: core-libraries/9.0/empty-env-variable.md
               - name: ZipArchiveEntry names and comments respect UTF8 flag
@@ -1694,10 +1706,18 @@ items:
         items:
           - name: .NET 9
             items:
+              - name: HttpClient metrics report `server.port` unconditionally
+                href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
+              - name: HttpClientFactory uses SocketsHttpHandler as primary handler
+                href: networking/9.0/default-handler.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
+              - name: Uri query redaction in HttpClient EventSource events
+                href: networking/9.0/query-redaction-events.md
+              - name: Uri query redaction in IHttpClientFactory logs
+                href: networking/9.0/query-redaction-logs.md
           - name: .NET 8
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets

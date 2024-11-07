@@ -139,18 +139,6 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 If AreEqual, AreNotEqual, AreSame, or AreNotSame assertions cause errors, we recommend checking that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.
 
-### DataRowAttribute Updates
-
-The `DataRowAttribute` constructors have been simplified in MSTest v3. Update parameterized tests using `DataRow` to align with the revised constructors.
-
-**Example**:
-
-```csharp
-[TestMethod]
-[DataRow(1, "test")]
-public void MyTestMethod(int number, string text) { ... }
-```
-
 ### Timeout Settings
 
 In MSTest v3, the handling of `Timeout` settings has been standardized to ensure consistent behavior across different .NET environments. This change may impact tests that rely on specific timeout values, especially if those tests are asynchronous or run under different frameworks.

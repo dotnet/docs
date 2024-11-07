@@ -48,7 +48,7 @@ The sample project includes completed apps you can run to connect to your AI mod
 # [Azure OpenAI](#tab/azure-openai)
 
 > [!NOTE]
-> The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) using another tool such as the Azure portal or Azure CLI.
+> The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
 
 1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
 
@@ -81,7 +81,7 @@ The **Program.cs** file contains all of the app code. The first several lines of
 > [!NOTE]
 > `DefaultAzureCredential` searches for credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI.
 
-:::code language="csharp" source="./snippets/prompt-completion/extensions-azure-openai/openai/program.cs" range="6-8":::
+:::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="6-8":::
 
 ---
 
@@ -93,7 +93,7 @@ The following code obtains an `IChatClient` service configured to connect to the
 
 # [Azure OpenAI](#tab/azure-openai)
 
-:::code language="csharp" source="./snippets/prompt-completion/extensions-azure-openai/openai/program.cs" range="10-12":::
+:::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="10-12":::
 
 ---
 
@@ -105,7 +105,7 @@ The `CompleteAsync` function sends the `prompt` to the model to generate a respo
 
 # [Azure OpenAI](#tab/azure-openai)
 
-:::code language="csharp" source="./snippets/prompt-completion/extensions-azure-openai/openai/program.cs" range="15-23":::
+:::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="15-23":::
 
 Customize the text content of the file or the length of the summary to see the differences in the responses.
 
@@ -154,14 +154,7 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
 
 1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
 
-1. Run the `azd up` command to provision the Azure OpenAI resource using the [Azure Developer CLI](/developer/azure-developer-cli/overview). `azd` provisions the Azure OpenAI resources and configures user secrets for you.
-
-1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
-
-    ```bash
-    dotnet user-secrets init
-    dotnet user-secrets set AzureOpenAIKey <your-openai-key>
-    ```
+1. Run the `azd up` command to provision the Azure OpenAI resource using the [Azure Developer CLI](/developer/azure-developer-cli/overview). `azd` provisions the Azure OpenAI resources and configures permissions for you.
 
 1. Use the `dotnet run` command to run the app:
 

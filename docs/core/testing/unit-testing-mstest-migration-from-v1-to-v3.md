@@ -77,7 +77,7 @@ You can update your project to MSTest v3 in one of two ways:
 - **Install via NuGet Package**: Install the latest [MSTest](https://www.nuget.org/packages/MSTest) package using the NuGet Package Manager in Visual Studio or by running the following command in the NuGet Package Manager Console:
 
     ```shell
-    Install-Package MSTest.TestFramework -Version 3.3.1
+    Install-Package MSTest-Version 3.6.2
     ```
 
 - **Or update the project file directly**: Update your `.csproj` file to specify the MSTest SDK version.

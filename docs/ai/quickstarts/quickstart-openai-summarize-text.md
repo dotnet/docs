@@ -14,7 +14,7 @@ zone_pivot_groups: dotnet-ai-library
 
 :::zone target="docs" pivot="microsoft-extensions-ai"
 
-Get started with AI by creating a simple .NET 8.0 console chat app to summarize text. You'll learn how to use the `Microsoft.Extensions.AI` library to connect to an AI model from a local application. This library provides essential abstractions for integrating AI services into .NET applications and libraries.
+In this quickstart, get started with AI by creating a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses abstractions from the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library that allow you to easily update the underlying AI model without requiring changes to your app logic.
 
 ## Prerequisites
 
@@ -58,8 +58,8 @@ The sample project includes completed apps you can run to connect to your AI mod
 1. From a terminal or command prompt, navigate to the `src\quickstarts\microsoft-extensions-ai\azure-openai\01-HikeBenefitsSummary` directory.
 
     > [!NOTE]
-    > The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. If you prefer not to use `azd`, you can [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
-    
+    > The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. Your can also [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
+
 1. Run the `azd up` command to provision the Azure OpenAI resource and configure the necessary permissions. The command may take a few minutes to finish.
 
     ```bash
@@ -87,7 +87,7 @@ The **Program.cs** file contains all of the app code. The first several lines of
 # [Azure OpenAI](#tab/azure-openai)
 
 > [!NOTE]
-> `DefaultAzureCredential` searches for credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI.
+> `DefaultAzureCredential` searches for credentials from your local environment and tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, assign the `Azure AI Developer` role manually to the account you used to sign-in to Visual Studio or the Azure CLI.
 
 :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="6-8":::
 
@@ -105,17 +105,17 @@ The following code obtains an `IChatClient` service configured to connect to the
 
 ---
 
-The `CompleteAsync` function sends the `prompt` to the model to generate a response. The `Microsoft.Extensions.AI` library enables this code to be agnostic towards a specific AI service because it uses an `IChatClient` abstraction rather than a specific SDK implementation.
+The `CompleteAsync` function sends the `prompt` to the model to generate a response. The `Microsoft.Extensions.AI` library enables this code to be agnostic towards a specific AI service because it uses an `IChatClient` abstraction rather than a platform-specific SDK implementation.
 
 :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="14-22":::
 
-Customize the text content of the file or the length of the summary to see the differences in the responses.
+Customize the text content of the `benefits.md` file or the length of the summary to see the differences in the responses.
 
 :::zone-end
 
 :::zone target="docs" pivot="semantic-kernel"
 
-Get started with AI by creating a simple .NET 8.0 console chat application to summarize text. The application runs locally and uses the OpenAI `gpt-3.5-turbo` model. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
+In this quickstart, get started with AI by creating a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app runs locally and uses the [Semantic Kernel](/semantic-kernel/overview/) SDK.
 
 ## Prerequisites
 
@@ -156,6 +156,9 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
 
 1. From a terminal or command prompt, navigate to the `src\quickstarts\semantic-kernel\azure-openai\01-HikeBenefitsSummary` directory.
 
+    > [!NOTE]
+    > The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. Your can also [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
+
 1. Run the `azd up` command to provision the Azure OpenAI resource using the [Azure Developer CLI](/developer/azure-developer-cli/overview). `azd` provisions the Azure OpenAI resources and configures permissions for you.
 
 1. Use the `dotnet run` command to run the app:
@@ -193,7 +196,7 @@ The `InvokePromptAsync` function sends the `prompt` to the model to generate a r
 
 :::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/openai/program.cs" range="22-24":::
 
-Customize the text content of the file or the length of the summary to see the differences in the responses.
+Customize the text content of the `benefits.md` file or the length of the summary to see the differences in the responses.
 
 ## Clean up resources
 

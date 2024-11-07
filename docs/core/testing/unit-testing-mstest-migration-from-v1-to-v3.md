@@ -35,6 +35,7 @@ Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v
 
 - **Increased Code Reliability with New Analyzers**: MSTest v3 built-in code analyzers enforce best practices, helping to catch issues early and promoting cleaner, more maintainable test code:
   - **Proactive Issue Detection**: The analyzers provide real-time feedback, suggesting improvements and flagging potential issues as you write your tests.
+  
   - **Stronger Type-Safe Assertions**: Replacing ambiguous overloads, MSTest v3 enforces type-safe assertions, reducing the risk of incorrect test behavior and making tests more reliable.
   - **Cleaner Code, Less Maintenance**: By aligning your tests with MSTest standards and best practices, MSTest v3 helps you maintain a cleaner, more manageable codebase, reducing technical debt over time.
 

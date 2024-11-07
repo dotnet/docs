@@ -186,7 +186,7 @@ public async Task TestMethod() { ... }
 
 MSTest v3 supports both XML and JSON formats for configuration files.
 
-1. **Verify Configurations**: Ensure that existing `.runsettings` files align with MSTest v3 syntax and structure.
+1. **Verify Configurations**: Ensure that `.runsettings` files align with MSTest v3 syntax and structure.
 
 ---
 
@@ -194,16 +194,16 @@ MSTest v3 supports both XML and JSON formats for configuration files.
 
 ### New Parallelism Options
 
-Configure parallel execution in `.runsettings` or JSON configuration files to improve performance.
+Configure parallel execution in `.runsettings` to improve performance.
 
 **Example**:
 
-```json
-{
-  "RunConfiguration": {
-    "MaxCpuCount": -1 // Uses all available processors
-  }
-}
+```xml
+<RunSettings>
+  <RunConfiguration>
+    <MaxCpuCount>-1</MaxCpuCount> <!-- Uses all available processors -->
+  </RunConfiguration>
+</RunSettings>
 ```
 
 ### Improved Resource Usage

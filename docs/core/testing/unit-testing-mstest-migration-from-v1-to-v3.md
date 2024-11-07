@@ -105,6 +105,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
     Assert.AreEqual<customObject>(expectedObject, actualObject);
     Assert.AreNotEqual<customObject>(expectedObject, actualObject);
     ```
+
 - **Test Initialization**: Use `TestInitialize` methods for async initialization.
 - **Cleanup**: Use `TestCleanup` methods or the `Dispose` pattern for cleanup.
 - **RunSettings**: The `.testsettings` file is no longer supported, meaning `<LegacySettings>` is also no longer available. Use [.runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) for test configuration.
@@ -151,6 +152,7 @@ The DataRowAttribute constructors in MSTest v3 have been simplified to enforce t
 [DataRow(1, "test")] // Correct: matches parameter types (int, string)
 public void MyTestMethod(int number, string text) { ... }
 ```
+
 In cases where types don’t match exactly, MSTest v3 will now raise an error rather than attempting a conversion.
 
 ### Timeout Settings
@@ -179,6 +181,7 @@ public void TestMethod() { ... }
 [Timeout(2000)] // Verify this value still works under MSTest v3
 public async Task TestMethod() { ... } 
 ```
+
 ---
 
 ## Configuration Changes

@@ -72,19 +72,11 @@ The **Program.cs** file contains all of the app code. The first several lines of
 
 # [OpenAI](#tab/openai)
 
-```csharp
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string model = "gpt-3.5-turbo";
-string key = config["OpenAIKey"];
-```
+:::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="5-7":::
 
 # [Azure OpenAI](#tab/azure-openai)
 
-```csharp
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string model = "gpt-3.5-turbo";
-string key = config["AzureOpenAIKey"];
-```
+:::code language="csharp" source="./snippets/prompt-completion/extensions-azure-openai/openai/program.cs" range="6-8":::
 
 ---
 
@@ -92,44 +84,23 @@ The following code obtains an `IChatClient` service configured to connect to the
 
 # [OpenAI](#tab/openai)
 
-```csharp
-// Create the IChatClient
-IChatClient client =
-    new OpenAIClient(key)
-        .AsChatClient(model);
-```
+:::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="10-11":::
 
 # [Azure OpenAI](#tab/azure-openai)
 
-```csharp
-// Create the IChatClient
-IChatClient client =
-    new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(key))
-        .AsChatClient(deployment);
-```
+:::code language="csharp" source="./snippets/prompt-completion/extensions-azure-openai/openai/program.cs" range="10-12":::
 
 ---
 
-The following code creates a prompt on behalf to send to the AI model.
-
-```csharp
-string prompt = $"""
-    Please summarize the the following text in 20 words or less:
-    {File.ReadAllText("benefits.md")}
-    """;
-
-Console.WriteLine($"user >>> {prompt}");
-```
-
 The `CompleteAsync` function sends the `prompt` to the model to generate a response.
 
-```csharp
-// Submit the prompt and print out the response
-ChatCompletion response = 
-    await client.CompleteAsync(prompt, new ChatOptions { MaxOutputTokens = 400 });
+# [OpenAI](#tab/openai)
 
-Console.WriteLine($"assistant >>> {response}");
-```
+:::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="14-22":::
+
+# [Azure OpenAI](#tab/azure-openai)
+
+:::code language="csharp" source="./snippets/prompt-completion/extensions-azure-openai/openai/program.cs" range="15-23":::
 
 Customize the text content of the file or the length of the summary to see the differences in the responses.
 
@@ -177,6 +148,8 @@ Get started with AI by creating a simple .NET 8.0 console chat application to su
 # [Azure OpenAI](#tab/azure-openai)
 
 1. From a terminal or command prompt, navigate to the `azure-openai\01-HikeBenefitsSummary` directory.
+
+1. Run the `azd up` command to provision the Azure OpenAI resource using the [Azure Developer CLI](/developer/azure-developer-cli/overview). `azd` provisions the Azure OpenAI resources and configures user secrets for you.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 

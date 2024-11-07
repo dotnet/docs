@@ -30,6 +30,8 @@ items:
                 href: core-libraries/9.0/biginteger-limit.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
+              - name: EnumConverter validates registered types to be enum
+                href: core-libraries/9.0/enumconverter.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
               - name: FromKeyedServicesAttribute no longer injects non-keyed parameter
@@ -44,6 +46,8 @@ items:
                 href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
+              - name: String.Trim(params ReadOnlySpan<char>) overload removed
+                href: core-libraries/9.0/string-trim.md
               - name: Support for empty environment variables
                 href: core-libraries/9.0/empty-env-variable.md
               - name: ZipArchiveEntry names and comments respect UTF8 flag
@@ -72,10 +76,18 @@ items:
                 href: jit/9.0/sve-apis.md
           - name: Networking
             items:
+              - name: HttpClient metrics report `server.port` unconditionally
+                href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
+              - name: HttpClientFactory uses SocketsHttpHandler as primary handler
+                href: networking/9.0/default-handler.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
+              - name: Uri query redaction in HttpClient EventSource events
+                href: networking/9.0/query-redaction-events.md
+              - name: Uri query redaction in IHttpClientFactory logs
+                href: networking/9.0/query-redaction-logs.md
           - name: SDK and MSBuild
             items:
               - name: "'dotnet workload' commands output change"
@@ -510,6 +522,10 @@ items:
                 href: windows-forms/7.0/apis-throw-argumentnullexception.md
               - name: Obsoletions and warnings
                 href: windows-forms/7.0/obsolete-apis.md
+          - name: WPF
+            items:
+              - name: Revert behavior with text drag-and-drop operations
+                href: wpf/7.0/drag-and-drop.md
       - name: .NET 6
         items:
           - name: Overview
@@ -1260,6 +1276,8 @@ items:
                 href: core-libraries/9.0/binaryreader.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
+              - name: EnumConverter validates registered types to be enum
+                href: core-libraries/9.0/enumconverter.md
               - name: "`Equals`/`GetHashCode` throw for `InlineArrayAttribute` types"
                 href: core-libraries/9.0/inlinearrayattribute.md
               - name: FromKeyedServicesAttribute no longer injects non-keyed parameter
@@ -1274,6 +1292,8 @@ items:
                 href: core-libraries/9.0/timespan-from-overloads.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
+              - name: String.Trim(params ReadOnlySpan<char>) overload removed
+                href: core-libraries/9.0/string-trim.md
               - name: Support for empty environment variables
                 href: core-libraries/9.0/empty-env-variable.md
               - name: ZipArchiveEntry names and comments respect UTF8 flag
@@ -1686,10 +1706,18 @@ items:
         items:
           - name: .NET 9
             items:
+              - name: HttpClient metrics report `server.port` unconditionally
+                href: networking/9.0/server-port-attribute.md
               - name: HttpClientFactory logging redacts header values by default
                 href: networking/9.0/redact-headers.md
+              - name: HttpClientFactory uses SocketsHttpHandler as primary handler
+                href: networking/9.0/default-handler.md
               - name: HttpListenerRequest.UserAgent is nullable
                 href: networking/9.0/useragent-nullable.md
+              - name: Uri query redaction in HttpClient EventSource events
+                href: networking/9.0/query-redaction-events.md
+              - name: Uri query redaction in IHttpClientFactory logs
+                href: networking/9.0/query-redaction-logs.md
           - name: .NET 8
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets
@@ -2030,20 +2058,26 @@ items:
                 href: sdk/5.0/sdk-and-target-framework-change.md
               - name: Removed status bar controls
                 href: windows-forms/5.0/winforms-deprecated-controls.md
-              - name: .NET Core 3.0-3.1
-                href: winforms.md
+          - name: .NET Core 3.0-3.1
+            href: winforms.md
       - name: WPF
         items:
           - name: .NET 9
             items:
               - name: "'GetXmlNamespaceMaps' type change"
                 href: wpf/9.0/xml-namespace-maps.md
+          - name: .NET 7
+            items:
+              - name: "Revert behavior with text drag-and-drop operations"
+                href: wpf/7.0/drag-and-drop.md
           - name: .NET 5
             items:
               - name: OutputType set to WinExe
                 href: sdk/5.0/automatically-infer-winexe-output-type.md
               - name: WPF apps use Microsoft.NET.Sdk
                 href: sdk/5.0/sdk-and-target-framework-change.md
+          - name: .NET Core 3.0
+            href: wpf.md
       - name: XML and XSLT
         items:
           - name: .NET 7

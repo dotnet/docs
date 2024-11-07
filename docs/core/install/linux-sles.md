@@ -1,15 +1,15 @@
 ---
-title: Install .NET on SLES
-description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SLES.
+title: Install .NET on SUSE Enterprise Linux
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SUSE Enterprise Linux (SLES).
 author: adegeo
 ms.author: adegeo
-ms.date: 05/14/2024
+ms.date: 11/01/2024
 ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
 
-.NET is supported on SLES. This article describes how to install .NET on SLES.
+.NET is supported on SUSE Enterprise Linux (SLES). This article describes how to install .NET on SLES.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -19,8 +19,12 @@ The following table is a list of currently supported .NET releases on both SLES 
 
 | SLES   | .NET |
 |--------|------|
-| 15     | 8.0, 6.0 |
-| 12 SP5 | 8.0, 6.0 |
+| 15.6     | 9.0, 8.0, 6.0 |
+| 15.5     | 9.0, 8.0, 6.0 |
+| 12 SP5   | 8.0, 6.0 |
+
+> [!IMPORTANT]
+> .NET 9 is currently in preview.
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

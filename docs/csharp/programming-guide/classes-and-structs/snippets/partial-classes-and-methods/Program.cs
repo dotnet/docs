@@ -1,4 +1,5 @@
 ﻿//<Snippet1>
+// This is in Employee_Part1.cs
 public partial class Employee
 {
     public void DoWork()
@@ -6,12 +7,29 @@ public partial class Employee
     }
 }
 
+// This is in Employee_Part2.cs
 public partial class Employee
 {
     public void GoToLunch()
     {
     }
 }
+
+//Main program demonstrating the Employee class usage
+public class Program
+{
+    public static void Main()
+    {
+        Employee emp = new Employee();
+        emp.DoWork();
+        emp.GoToLunch();
+    }
+}
+
+// Expected Output:
+// Employee is working.
+// Employee is at lunch.
+
 //</Snippet1>
 
 //<Snippet2>
@@ -87,6 +105,7 @@ partial class ClassWithNestedClass
 namespace WrapCoords2
 {
     //<Snippet9>
+    // This is in Coords_Part1.cs
     public partial class Coords
     {
         private int x;
@@ -99,6 +118,7 @@ namespace WrapCoords2
         }
     }
 
+    // This is in Coords_Part2.cs
     public partial class Coords
     {
         public void PrintCoords()
@@ -107,6 +127,7 @@ namespace WrapCoords2
         }
     }
 
+   // Main program demonstrating the Coords class usage
     class TestCoords
     {
         static void Main()

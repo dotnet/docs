@@ -68,7 +68,7 @@ Every type that is derived from <xref:System.Object?displayProperty=nameWithType
 [!code-vb[Conceptual.Formatting.Overview#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/default1.vb#1)]
 
 > [!WARNING]
-> Starting with Windows 8.1, the Windows Runtime includes an <xref:Windows.Foundation.IStringable> interface with a single method, [IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see "The Windows Runtime and the `IStringable` Interface" section on the <xref:System.Object.ToString%2A?displayProperty=nameWithType> reference page.
+> Starting with Windows 8.1, the Windows Runtime includes an <xref:Windows.Foundation.IStringable> interface with a single method, [IStringable.ToString](xref:Windows.Foundation.IStringable.ToString%2A), which provides default formatting support. However, we recommend that managed types do not implement the `IStringable` interface. For more information, see [The Windows Runtime and the IStringable Interface](../../fundamentals/runtime-libraries/system-object-tostring.md#the-windows-runtime-and-the-istringable-interface).
 
 Because all types other than interfaces are derived from <xref:System.Object>, this functionality is automatically provided to your custom classes or structures. However, the functionality offered by the default `ToString` method, is limited: Although it identifies the type, it fails to provide any information about an instance of the type. To provide a string representation of an object that provides information about that object, you must override the `ToString` method.
 

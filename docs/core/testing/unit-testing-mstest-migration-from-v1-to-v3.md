@@ -178,7 +178,7 @@ public void TestMethod() { ... }
 [TestMethod]
 [Timeout(2000)] // Verify this value still works under MSTest v3
 public async Task TestMethod() { ... } 
-
+```
 ---
 
 ## Configuration Changes

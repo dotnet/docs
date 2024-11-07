@@ -1,6 +1,6 @@
 ---
 title: MSTest migration to v3
-description: Migration guide.
+description: Learn about migrating from legacy MSTest (MSTest v1) to latest MSTest (MSTest v3).
 author: engyebrahim
 ms.author: enjieid
 ms.date: 11/06/2024

@@ -12,7 +12,17 @@ zone_pivot_groups: dotnet-ai-library
 
 # Connect to and prompt an AI model using .NET
 
-In this quickstart, get started with AI by creating a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses abstractions from the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library that allow you to easily update the underlying AI model without requiring changes to your app logic.
+:::zone target="docs" pivot="microsoft-extensions-ai"
+
+In this quickstart, learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+
+:::zone-end
+
+:::zone target="docs" pivot="semantic-kernel"
+
+In this quickstart, learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model using [`Semantic Kernel`](/semantic-kernel/overview). Semantic Kernel is a lightweight, open-source development kit that lets you easily build AI agents and integrate the latest AI models into your C#, Python, or Java codebase. It serves as an efficient middleware that enables rapid delivery of enterprise-grade solutions.
+
+:::zone-end
 
 ## Prerequisites
 
@@ -60,7 +70,7 @@ If you plan to use an OpenAI Model, this quickstart assumes you already have a s
 
 :::zone target="docs" pivot="semantic-kernel"
 
-[!INCLUDE [extensions-ai](includes/connect-prompt/semantic-kernel.md)]
+[!INCLUDE [semantic-kernel](includes/connect-prompt/semantic-kernel.md)]
 
 :::zone-end
 
@@ -71,7 +81,6 @@ When you no longer need the sample application or resources, remove the correspo
 ```azdeveloper
 azd down
 ```
-
 
 ## Next steps
 

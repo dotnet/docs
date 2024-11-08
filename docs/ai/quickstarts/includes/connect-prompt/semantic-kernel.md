@@ -22,9 +22,9 @@
 
 1. Open the app in Visual Studio code or your editor of choice
 
-```bash
-code .
-```
+    ```bash
+    code .
+    ```
 
 ## Build the app
 

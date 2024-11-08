@@ -30,6 +30,8 @@ You can also author your own SDK that can be distributed via NuGet.
 
 For Windows Forms and Windows Presentation Foundation (WPF) projects, you specify the .NET SDK (`Microsoft.NET.Sdk`) and set some additional properties in the project file. For more information, see [Enable .NET Desktop SDK](msbuild-props-desktop.md#enable-net-desktop-sdk).
 
+Additional Microsoft-provided project SDKs are available at the [Microsoft MSBuild SDKs GitHub](https://github.com/microsoft/MSBuildSdks).
+
 ## Project files
 
 .NET projects are based on the [MSBuild](/visualstudio/msbuild/msbuild) format. Project files, which have extensions like *.csproj* for C# projects and *.fsproj* for F# projects, are in XML format. The root element of an MSBuild project file is the [Project](/visualstudio/msbuild/project-element-msbuild) element. The `Project` element has an optional `Sdk` attribute that specifies which SDK (and version) to use. To use the .NET tools and build your code, set the `Sdk` attribute to one of the IDs in the [Available SDKs](#available-sdks) table.

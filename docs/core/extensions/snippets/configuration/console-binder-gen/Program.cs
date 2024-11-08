@@ -9,14 +9,20 @@ var builder = new ConfigurationBuilder()
 
 var configuration = builder.Build();
 
-var port = configuration.GetValue<int>("port");
-var enabled = configuration.GetValue<bool>("enabled");
-var apiUrl = configuration.GetValue<Uri>("apiUrl");
+var settings = new Settings();
+configuration.Bind(settings);
 
 // Write the values to the console.
-Console.WriteLine($"Port = {port}");
-Console.WriteLine($"Enabled = {enabled}");
-Console.WriteLine($"API URL = {apiUrl}");
+Console.WriteLine($"Port = {settings.Port}");
+Console.WriteLine($"Enabled = {settings.Enabled}");
+Console.WriteLine($"API URL = {settings.ApiUrl}");
+
+class Settings
+{
+    public int Port { get; set; }
+    public bool Enabled { get; set; }
+    public string? ApiUrl { get; set; }
+}
 
 // This will output the following:
 //   Port = 5001

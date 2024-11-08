@@ -12,8 +12,6 @@ zone_pivot_groups: dotnet-ai-library
 
 # Connect to and prompt an AI model using .NET
 
-:::zone target="docs" pivot="microsoft-extensions-ai"
-
 In this quickstart, get started with AI by creating a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses abstractions from the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library that allow you to easily update the underlying AI model without requiring changes to your app logic.
 
 ## Prerequisites
@@ -28,160 +26,43 @@ In this quickstart, get started with AI by creating a .NET console chat app to c
 
 ---
 
-## Create the app
+## Clone the sample repository
 
-1. In an empty directory on your computer, use the `dotnet new` command to create a new console app:
+[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
-    ```dotnetcli
-    dotnet new console -o ExtensionsAI
-    ```
+## Create the AI service
 
-1. Change directory into the app folder:
+# [Azure OpenAI](#tab/azd)
 
-    ```dotnetcli
-    cd ExtensionsAI
-    ```
+Choose of the options below to create an Azure OpenAI service.
 
-1. Install the required packages:
+### Use the Azure Developer CLI
 
-    ```bash
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
-    ```
+[!INCLUDE [deploy-azd](includes/deploy-azd.md)]
 
-1. Open the app in Visual Studio code or your editor of choice
+### Use the Azure portal or Azure CLI
 
-```bash
-code.
-```
+1. To provision an Azure OpenAI service using another tool such as the Azure portal or Azure CLI, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=cli) article.
 
-## Add the code
+1. Assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. The sample app uses a secretless approach to connect to the Azure OpenAI service using Microsoft Entra ID.
 
-The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) package to send and receive requests to the OpenAI service.
+# [OpenAI](#tab/openai)
 
-1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model:
+If you plan to use an OpenAI Model, this quickstart assumes you already have a service setup and available. You'll need the access key and AI service endpoint  to connect your code.
 
-    # [OpenAI](#tab/openai)
+---
 
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="5-7":::
+:::zone target="docs" pivot="microsoft-extensions-ai"
 
-    # [Azure OpenAI](#tab/azure-openai)
-
-    > [!NOTE]
-    > `DefaultAzureCredential` searches for credentials from your local environment and tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, assign the `Azure AI Developer` role manually to the account you used to sign-in to Visual Studio or the Azure CLI.
-
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="6-8":::
-
-    ---
-
-1. Add the following code to create an `IChatClient` service configured to connect to the AI Model:
-
-    # [OpenAI](#tab/openai)
-
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="10-11":::
-
-    # [Azure OpenAI](#tab/azure-openai)
-
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="10-12":::
-
-    ---
-
-     The `OpenAI` and `Azure.AI.OpenAI` libraries implement types defined in the `Microsoft.Extensions.AI` library, which enables you to code using the `IChatClient` interface abstraction. This abstraction allows you to change the underlying AI provider to other services by updating only a few lines of code, such as Ollama or Azure Inference models.
-
-1. Use the `CompleteAsync` function to send a `prompt` to the model to generate a response.
-
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="14-22":::
-
-Customize the text content of the `benefits.md` file or the length of the summary to see the differences in the responses.
+[!INCLUDE [extensions-ai](includes/connect-prompt/extensions-ai.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="semantic-kernel"
 
-In this quickstart, get started with AI by creating a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app runs locally and uses the [Semantic Kernel](/semantic-kernel/overview/) SDK.
+[!INCLUDE [extensions-ai](includes/connect-prompt/semantic-kernel.md)]
 
-## Prerequisites
-
-# [OpenAI](#tab/openai)
-
-[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
-
-# [Azure OpenAI](#tab/azure-openai)
-
-[!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
-
----
-
-## Get the sample project
-
-[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
-
-## Try the hiking benefits sample
-
-# [OpenAI](#tab/openai)
-
-1. From a terminal or command prompt, navigate to the `src\quickstarts\semantic-kernel\openai\01-HikeBenefitsSummary` directory.
-
-1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
-
-    ```bash
-    dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-    ```
-
-1. Use the `dotnet run` command to run the app:
-
-    ```dotnetcli
-    dotnet run
-    ```
-
-# [Azure OpenAI](#tab/azure-openai)
-
-1. From a terminal or command prompt, navigate to the `src\quickstarts\semantic-kernel\azure-openai\01-HikeBenefitsSummary` directory.
-
-    > [!NOTE]
-    > The Azure OpenAI scenario assumes the use of `azd` to provision an Azure OpenAI resource and configure essential permissions. Your can also [provision an Azure OpenAI resource](/azure/ai-services/openai/how-to/create-resource) using another tool such as the Azure portal or Azure CLI.
-
-1. Run the `azd up` command to provision the Azure OpenAI resource using the [Azure Developer CLI](/developer/azure-developer-cli/overview). `azd` provisions the Azure OpenAI resources and configures permissions for you.
-
-1. Use the `dotnet run` command to run the app:
-
-    ```dotnetcli
-    dotnet run
-    ```
-
----
-
-## Explore the code
-
-The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
-
-The **Program.cs** file contains all of the app code. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command. The `Kernel` class facilitates the requests and responses and registers an `OpenAIChatCompletion` service.
-
-# [OpenAI](#tab/openai)
-
-:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/openai/program.cs" range="5-13":::
-
-# [Azure OpenAI](#tab/azure-openai)
-
-> [!NOTE]
-> `DefaultAzureCredential` searches for credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI.
-
-:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/azure-openai/program.cs" range="6-14":::
-
----
-
-Once the `Kernel` is created, the app code reads the `benefits.md` file content and uses it to create a `prompt` for model. The prompt instructs the model to summarize the file text content.
-
-:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/openai/program.cs" range="15-20":::
-
-The `InvokePromptAsync` function sends the `prompt` to the model to generate a response.
-
-:::code language="csharp" source="./snippets/prompt-completion/semantic-kernel/openai/program.cs" range="22-24":::
-
-Customize the text content of the `benefits.md` file or the length of the summary to see the differences in the responses.
+:::zone-end
 
 ## Clean up resources
 
@@ -191,7 +72,6 @@ When you no longer need the sample application or resources, remove the correspo
 azd down
 ```
 
-:::zone-end
 
 ## Next steps
 

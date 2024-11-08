@@ -40,7 +40,7 @@ public string FirstName
     get; 
     set 
     { 
-        field = ((string.IsNullOrWhiteSpace(value) == false) 
+        field = (string.IsNullOrWhiteSpace(value) is false
             ? value
             : throw new ArgumentException(nameof(value), "First name can't be whitespace or null"));
     }

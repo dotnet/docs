@@ -66,6 +66,7 @@ f1_keywords:
   - "CS9199"
   - "CS9200"
   - "CS9201"
+  - "CS9265"
 helpviewer_keywords:
   - "CS0192"
   - "CS0199"
@@ -131,7 +132,8 @@ helpviewer_keywords:
   - "CS9199"
   - "CS9200"
   - "CS9201"
-ms.date: 11/02/2023
+  - "CS9265"
+ms.date: 11/06/2024
 ---
 # Errors and warnings associated with reference parameters, variables, and returns
 
@@ -207,6 +209,7 @@ The following warnings are generated when reference variables are used incorrect
 - [**CS9198**](#reference-variable-restrictions): *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
 - [**CS9200**](#reference-variable-restrictions): *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
 - [**CS9201**](#reference-variable-restrictions): *Ref field should be ref-assigned before use.*
+- [**CS9265**](#reference-variable-restrictions): *Field is never ref-assigned to, and will always have its default value (null reference)*
 
 These errors and warnings follow these themes:
 
@@ -261,6 +264,7 @@ The following warnings indicate that a reference variable shouldn't be used, and
 - **CS9198**:  *Reference kind modifier of parameter doesn't match the corresponding parameter in target.*
 - **CS9200**:  *A default value is specified for `ref readonly` parameter, but `ref readonly` should be used only for references. Consider declaring the parameter as `in`.*
 - **CS9201**:  *Ref field should be ref-assigned before use.*
+- **CS9265**: *Field is never ref-assigned to, and will always have its default value (null reference)*
 
 To fix the error, remove the reference variable where it isn't allowed:
 
@@ -277,6 +281,7 @@ To fix the error, remove the reference variable where it isn't allowed:
 - Methods attributed with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType> can't use reference parameters.
 - A Windows runtime event can't be passed as a reference variable.
 - A `ref readonly` parameter can't have the <xref:System.Runtime.InteropServices.OutAttribute?displayProperty=nameWithType> applied to it in remoting API.
+- Initialize a `ref` field in the constructor or as a field initializer.
 
 ## `unscoped ref` restrictions
 

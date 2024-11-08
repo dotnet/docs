@@ -366,8 +366,8 @@
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.3](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.3) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Developer.MicrosoftPlaywrightTesting.NUnit/1.0.0-beta.2) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.Developer.MicrosoftPlaywrightTesting.TestLogger/1.0.0-beta.2) |  |  |
-| Unknown Display Name | NuGet [1.0.3-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.3-preview) |  |  |
-| Unknown Display Name | NuGet [1.0.3-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.3-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.4-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.4-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.4-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.4-preview) |  |  |
 | Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.41.1) |  |  |
 | Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.41.1) |  |  |
 | Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.41.1) |  |  |
@@ -571,8 +571,8 @@
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.4.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
-| MSBuild | NuGet [0.30.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.30.0) |  |  |
-| ProviderHub Controller | NuGet [0.16.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.16.0) |  |  |
-| ProviderHub Templates | NuGet [1.8.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.8.0) |  |  |
+| MSBuild | NuGet [0.31.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.31.0) |  |  |
+| ProviderHub Controller | NuGet [0.17.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.17.0) |  |  |
+| ProviderHub Templates | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.9.0) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
 | Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/mgmt-legacy/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

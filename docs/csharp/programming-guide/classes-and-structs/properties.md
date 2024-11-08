@@ -59,7 +59,7 @@ The `Name` property is a computed property. There's no backing field for `Name`.
 
 ## Access control
 
-The preceding examples showed read / write properties. You can also create read-only properties, or give different accessibility to the set and get accessors. Suppose that your `Person` class should only enable changing the value of the `FirstName` property from other methods in that class. You could give the set accessor `private` accessibility instead of `public`:
+The preceding examples showed read / write properties. You can also create read-only properties, or give different accessibility to the set and get accessors. Suppose that your `Person` class should only enable changing the value of the `FirstName` property from other methods in the class. You could give the set accessor `private` accessibility instead of `internal` or `public`:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="AccessorModifiers":::
 

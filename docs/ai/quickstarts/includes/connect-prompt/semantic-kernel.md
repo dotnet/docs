@@ -26,7 +26,7 @@
     code .
     ```
 
-[!INCLUDE [create-ai-service](includes/create-ai-service.md)]
+[!INCLUDE [create-ai-service](../includes/create-ai-service.md)]
 
 ## Add the app code
 

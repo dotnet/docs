@@ -6,7 +6,7 @@ Choose of the options below to create an Azure OpenAI service.
 
 ### Use the Azure Developer CLI
 
-[!INCLUDE [deploy-azd](includes/deploy-azd.md)]
+[!INCLUDE [deploy-azd](deploy-azd.md)]
 
 ### Use the Azure portal or Azure CLI
 

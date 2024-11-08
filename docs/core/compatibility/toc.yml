@@ -78,6 +78,8 @@ items:
                 href: networking/9.0/useragent-nullable.md
           - name: SDK and MSBuild
             items:
+              - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
+                href: sdk/9.0/dotnet-watch.md
               - name: "'dotnet workload' commands output change"
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "'installer' repo version no longer documented"
@@ -1734,6 +1736,8 @@ items:
         items:
           - name: .NET 9
             items:
+              - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
+                href: sdk/9.0/dotnet-watch.md
               - name: "'dotnet workload' commands output change"
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "'installer' repo version no longer documented"

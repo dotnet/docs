@@ -277,8 +277,6 @@ let round1Order = allPlayers |> List.randomShuffle // [ "Charlie"; "Dave"; "Alic
 
 For arrays, there are also `InPlace` variants that shuffle the items in the existing array instead of creating a new one.
 
-```fsharp
-
 #### Choice
 
 The `Choice` functions return a single random element from the given collection. The random choice is weighted evenly on the size of the collection.

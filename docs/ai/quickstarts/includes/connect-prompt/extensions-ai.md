@@ -15,6 +15,7 @@
 
 1. Install the required packages:
 
+    <!-- markdownlint-disable MD023 -->
     # [Azure OpenAI](#tab/azure-openai)
 
     ```bash
@@ -37,9 +38,9 @@
 
 1. Open the app in Visual Studio code or your editor of choice
 
-```bash
-code .
-```
+    ```bash
+    code .
+    ```
 
 ## Build the app
 

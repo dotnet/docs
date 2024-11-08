@@ -15,6 +15,3 @@ The sample GitHub repository is structured as an Azure Developer CLI (`azd`) tem
    ```
 
    `azd` also configures the required user secrets for the sample app, such as the OpenAI access key.
-
-   > [!NOTE]
-   > If you encounter an error during the `azd up` deployment, visit the [troubleshooting](#troubleshoot) section.

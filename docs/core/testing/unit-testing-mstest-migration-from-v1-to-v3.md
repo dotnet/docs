@@ -63,12 +63,8 @@ In non-SDK style projects, these references are often added through Visual Studi
 5. **Right-click** the selected reference(s) and choose **Remove** from the context menu.
 6. **Save the project** to apply changes.
 
-For those comfortable editing XML directly, you can manually remove the references from your `.csproj` file as follows:
+    <img width="295" alt="image" src="https://github.com/user-attachments/assets/7aff1afb-e26b-4450-bc2e-903a577e3df2">
 
-```xml
-<Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-    <Private>False</Private>
-</Reference>
 ```
 
 ### 2. Update Your Project

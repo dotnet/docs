@@ -50,7 +50,7 @@ By upgrading, you’re setting up your tests to be faster, more reliable, and ad
 
 ### 1. Remove Assembly Reference
 
-For projects using MSTest v1 through assembly references, it’s common to find references to the following DLLs:
+For projects using MSTest v1 through assembly references, there are a reference to the following DLL:
 
 - `Microsoft.VisualStudio.QualityTools.UnitTestFramework`
 

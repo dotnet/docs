@@ -16,13 +16,13 @@ In this quickstart, get started with AI by creating a .NET console chat app to c
 
 ## Prerequisites
 
-# [OpenAI](#tab/openai)
-
-[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
-
 # [Azure OpenAI](#tab/azure-openai)
 
 [!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
+
+# [OpenAI](#tab/openai)
+
+[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
 
 ---
 

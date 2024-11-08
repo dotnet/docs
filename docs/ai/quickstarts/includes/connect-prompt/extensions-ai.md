@@ -42,6 +42,8 @@
     code .
     ```
 
+[!INCLUDE [create-ai-service](includes/create-ai-service.md)]
+
 ## Add the app code
 
 The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) package to send and receive requests to the OpenAI service.

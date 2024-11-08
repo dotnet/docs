@@ -26,6 +26,8 @@
     code .
     ```
 
+[!INCLUDE [create-ai-service](includes/create-ai-service.md)]
+
 ## Add the app code
 
 The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.

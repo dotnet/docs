@@ -68,13 +68,20 @@ In non-SDK style projects, these references are often added through Visual Studi
 
 You can update your project to MSTest v3 in one of two ways:
 
-- **Update NuGet Package** (for SDK-style projects): Install the latest [MSTest](https://www.nuget.org/packages/MSTest) package using the NuGet Package Manager in Visual Studio or by running the following command in the NuGet Package Manager Console:
+- **Update Packages**: If you have NuGet package references to the [MSTest.TestFramework](https://www.nuget.org/packages/MSTest.TestFramework) and the [MSTest.TestAdapter](https://www.nuget.org/packages/MSTest.TestAdapter/), update them using the NuGet Package Manager in Visual Studio or by running the following command in the NuGet Package Manager Console:
 
     ```shell
-    Install-Package MSTest-Version 3.6.2
+    Update-Package MSTest.TestFramework -Version 3.6.2
+    Update-Package MSTest.TestAdapter -Version 3.6.2
     ```
 
-- **Or update the project file directly**: Update your `.csproj` file to specify the MSTest SDK version.
+- **Or Install MSTest Package**: Install the latest [MSTest](https://www.nuget.org/packages/MSTest) package using the NuGet Package Manager in Visual Studio or by running the following command in the NuGet Package Manager Console:
+
+    ```shell
+    Install-Package MSTest -Version 3.6.2
+    ```
+
+- **Or update the project file directly** (for SDK-style projects): Update your `.csproj` file to specify the MSTest SDK version.
 
     ```xml
     <Project Sdk="MSTest.Sdk/3.6.2">
@@ -216,7 +223,7 @@ Review deprecated attributes, and replace them with MSTest v3 alternatives where
 
 ## Code Analyzers and Best Practices
 
-MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings. This is automatically available when using MSTest package or MSTest.Sdk.
+MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings. This is automatically available when using MSTest package or MSTest.Sdk, or you can install [MSTest Analyzer package](https://www.nuget.org/packages/MSTest.Analyzers).
 
 ---
 

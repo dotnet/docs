@@ -65,8 +65,6 @@ In non-SDK style projects, these references are often added through Visual Studi
 
     <img width="295" alt="image" src="https://github.com/user-attachments/assets/7aff1afb-e26b-4450-bc2e-903a577e3df2">
 
-```
-
 ### 2. Update Your Project
 
 You can update your project to MSTest v3 in one of two ways:

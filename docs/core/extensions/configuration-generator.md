@@ -206,7 +206,7 @@ namespace Microsoft.Extensions.Configuration.Binder.SourceGeneration
 
 The generated code contains the `BindingExtensions` class, which contains the `BindCore` method that performs the actual binding. The `Bind_Settings` method calls the `BindCore` method and casts the instance to the specified type.
 
-To see the generated code, set the `<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>` in the project file. This ensures that the files are visible to the developer for inspection. You can also view the generated code in Visual Studio's Solution Explorer under your project's `Dependencies` -> `Analyzers` -> `Microsoft.Extensions.Configuration.Binder.SourceGeneration` node.
+To see the generated code, set the `<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>` in the project file. This ensures that the files are visible to the developer for inspection. You can also view the generated code in Visual Studio's Solution Explorer under your project's **Dependencies** > **Analyzers** > `Microsoft.Extensions.Configuration.Binder.SourceGeneration` node.
 
 ## See also
 

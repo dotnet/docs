@@ -42,7 +42,7 @@ In this quickstart, learn how to create a .NET console chat app to connect to an
 
 ## Create the AI service
 
-# [Azure OpenAI](#tab/azd)
+# [Azure OpenAI](#tab/azure-openai)
 
 Choose of the options below to create an Azure OpenAI service.
 

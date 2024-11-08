@@ -53,11 +53,11 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
     > [!NOTE]
     > `DefaultAzureCredential` searches for credentials from your local environment and tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, assign the `Azure AI Developer` role manually to the account you used to sign-in to Visual Studio or the Azure CLI.
 
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="6-8":::
+    :::code language="csharp" source="../../snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="6-8":::
 
     # [OpenAI](#tab/openai)
 
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="5-7":::
+    :::code language="csharp" source="../../snippets/prompt-completion/extensions-ai/openai/program.cs" range="5-7":::
 
     ---
 
@@ -65,11 +65,11 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     # [Azure OpenAI](#tab/azure-openai)
 
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="10-12":::
+    :::code language="csharp" source="../../snippets/prompt-completion/extensions-ai/azure-openai/program.cs" range="10-12":::
 
     # [OpenAI](#tab/openai)
 
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="10-11":::
+    :::code language="csharp" source="../../snippets/prompt-completion/extensions-ai/openai/program.cs" range="10-11":::
 
     ---
 
@@ -77,6 +77,6 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
 1. Use the `CompleteAsync` function to send a `prompt` to the model to generate a response.
 
-    :::code language="csharp" source="./snippets/prompt-completion/extensions-ai/openai/program.cs" range="14-22":::
+    :::code language="csharp" source="../../snippets/prompt-completion/extensions-ai/openai/program.cs" range="14-22":::
 
 Customize the text content of the `benefits.md` file or the length of the summary to see the differences in the responses.

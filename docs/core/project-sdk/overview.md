@@ -12,7 +12,7 @@ Modern .NET projects are associated with a project software development kit (SDK
 
 ## Available SDKs
 
-The following SDKs are available:
+The available SDKs include:
 
 | ID                         | Description                                             | Repo                                   |
 |----------------------------|---------------------------------------------------------|----------------------------------------|
@@ -26,11 +26,11 @@ The following SDKs are available:
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
 
-You can also author your own SDK that can be distributed via NuGet.
-
 For Windows Forms and Windows Presentation Foundation (WPF) projects, you specify the .NET SDK (`Microsoft.NET.Sdk`) and set some additional properties in the project file. For more information, see [Enable .NET Desktop SDK](msbuild-props-desktop.md#enable-net-desktop-sdk).
 
-Additional Microsoft-provided project SDKs are available at the [Microsoft MSBuild SDKs GitHub](https://github.com/microsoft/MSBuildSdks).
+MSBuild SDKs, which you can use to configure and extend your build, are listed at [MSBuild SDKs](https://github.com/microsoft/MSBuildSdks/blob/main/README.md).
+
+You can also author your own SDK that can be distributed via NuGet.
 
 ## Project files
 

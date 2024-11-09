@@ -524,7 +524,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.3.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.3.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.2.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [3.10.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/3.10.1) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/4.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.11-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.11-Preview) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.0.3) |  |  |

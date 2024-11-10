@@ -42,11 +42,25 @@ Authors:
 
 > **[Phil Stollery](https://github.com/PhilStollery)**, Principal Technologist, Civica
 
+Addition Author Acknowledgments:
+
+> **Rob Vettor**, Principal Architect, Microsoft
+
+> **Cesar de la Torre**, Principal Program Manager, Microsoft
+
+> **Bill Wagner**, Principal Content Developer, Microsoft
+
+> **Mike Rousos**, Principal Software Engineer, Microsoft
+
+> **Steve "ardalis" Smith**, Software Architect and Trainer, Ardalis.com
+
 Participants and Reviewers:
 
 > **[James Montemagno](https://github.com/jamesmontemagno)**, Principal Lead Program Manager, Developer Community, Microsoft
 
 > **[David Pine](https://github.com/IEvangelist)**, Senior Content Developer, .NET Aspire, Microsoft
+> 
+> **[Nish Anil](https://github.com/nishanil)**, Senior Content Developer, .NET Aspire, Microsoft
 
 Editors:
 

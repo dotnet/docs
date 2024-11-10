@@ -932,15 +932,15 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 8 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `7`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release has a set of code analysis rules. Of that set, the rules that are enabled by default for that release analyze your code. For example, if you upgrade from .NET 8 to .NET 9 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `8`.
 
 ```xml
 <PropertyGroup>
-  <AnalysisLevel>preview</AnalysisLevel>
+  <AnalysisLevel>8</AnalysisLevel>
 </PropertyGroup>
 ```
 
-Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<version>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
+Optionally, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<version>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the `preview` version of code analyzers, and enables the `recommended` set of rules.
 
 ```xml
 <PropertyGroup>
@@ -955,12 +955,16 @@ Default value:
 
 The following table shows the values you can specify.
 
-| Value | Meaning |
-|-|-|
+| Value    | Meaning                                                                          |
+|----------|----------------------------------------------------------------------------------|
 | `latest` | The latest code analyzers that have been released are used. This is the default. |
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `9.0` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
+| `9.0-<mode>` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `9` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
+| `9-<mode>` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `8.0` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. |
 | `8.0-<mode>` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `8` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. |
@@ -969,18 +973,10 @@ The following table shows the values you can specify.
 | `7.0-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `7` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
 | `7-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `6.0` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
-| `6.0-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `6` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
-| `6-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `5.0` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. |
-| `5.0-<mode>` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `5` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. |
-| `5-<mode>` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 
 > [!NOTE]
 >
-> - Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
+> - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you set a compound value for `AnalysisLevel`, you don't need to specify an [AnalysisMode](#analysismode). However, if you do, `AnalysisLevel` takes precedence over `AnalysisMode`.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
@@ -1002,8 +998,8 @@ This property is the same as [AnalysisLevel](#analysislevel), except that it onl
 
 The following table lists the property name for each rule category.
 
-| Property name | Rule category |
-| - |
+| Property name           | Rule category                                                                     |
+|-------------------------|-----------------------------------------------------------------------------------|
 | `<AnalysisLevelDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
 | `<AnalysisLevelDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
 | `<AnalysisLevelGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
@@ -1033,8 +1029,8 @@ The following table shows the available option values. They're listed in increas
 
 > [!NOTE]
 >
-> - Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
-> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>8-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
+> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>9-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>
@@ -1049,8 +1045,8 @@ This property is the same as [AnalysisMode](#analysismode), except that it only 
 
 The following table lists the property name for each rule category.
 
-| Property name | Rule category |
-| - |
+| Property name          | Rule category                                                                     |
+|------------------------|-----------------------------------------------------------------------------------|
 | `<AnalysisModeDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
 | `<AnalysisModeDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
 | `<AnalysisModeGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |

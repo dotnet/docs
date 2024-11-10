@@ -59,7 +59,7 @@ Participants and Reviewers:
 > **[James Montemagno](https://github.com/jamesmontemagno)**, Principal Lead Program Manager, Developer Community, Microsoft
 
 > **[David Pine](https://github.com/IEvangelist)**, Senior Content Developer, .NET Aspire, Microsoft
-> 
+
 > **[Nish Anil](https://github.com/nishanil)**, Senior Content Developer, .NET Aspire, Microsoft
 
 Editors:

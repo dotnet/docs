@@ -55,6 +55,10 @@ For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
 ## AI Building Blocks and Fundamentals
 
+### Microsoft.Extensions.AI & Microsoft.Extensions.VectorData
+
+.NET 9 introduces a unified layer of C# abstractions through [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions/) and [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/). These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
+
 ### Tokenizers
 
 The Microsoft.ML.Tokenizers library provides .NET developer with capabilities for encoding and decoding text to tokens. For AI scenarios, this is important to manage context, calculate cost, and pre-process text when working with local models.
@@ -89,10 +93,6 @@ Improvements in the latest release of System.Numerics.Tensors include:
 - Builds on top of `TensorPrimitives` for efficient math operations.
 - Provides efficient interop with AI libraries (ML.NET, TorchSharp, ONNX Runtime) using zero copies where possible.
 - Enables easy and efficient data manipulation with indexing and slicing operations.
-
-### Microsoft.Extensions.AI & Microsoft.Extensions.VectorData
-
-.NET 9 introduces a unified layer of C# abstractions through Microsoft.Extensions.AI and Microsoft.Extensions.VectorData. These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
 
 ## ML.NET
 

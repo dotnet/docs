@@ -122,7 +122,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 If AreEqual, AreNotEqual, AreSame, or AreNotSame assertions cause errors, we recommend checking that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.
 
-### DataRowAttribute Updates
+### `DataRowAttribute` updates
 
 The DataRowAttribute constructors in MSTest v3 have been simplified to enforce type matching for parameters. This means you must specify values in DataRow that precisely match the types of the method parameters.
 

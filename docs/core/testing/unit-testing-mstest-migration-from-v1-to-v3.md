@@ -116,9 +116,6 @@ Choose the option that best suits your project setup. Both methods ensure your p
   - **UWP versions before 16299**
   - **WinUI versions before 18362**
   - **.NET 5** (use .NET Core 3.1 or .NET 6)
-
----
-
 ## Breaking Changes and Removed APIs
 
 ### Assertion Overloads

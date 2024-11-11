@@ -33,7 +33,7 @@ let getLength (x: string | null) = x.Length // gives a nullability warning since
 let len (str: string | null) =
     match str with
     | null -> -1
-    | NonNull s -> s.Length  // binds a non-null result
+    | s -> s.Length  // binds a non-null result - compiler eliminated "null" after the first clause
 
 // Parameter to a function
 let len (str: string | null) =

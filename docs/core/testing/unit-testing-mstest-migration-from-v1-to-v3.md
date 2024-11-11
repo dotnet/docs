@@ -203,7 +203,7 @@ Configure parallel execution in `.runsettings` to improve performance.
 </RunSettings>
 ```
 
-### Improved Resource Usage
+### Improved resource usage
 
 MSTest v3 optimizes resource management, resulting in lower memory usage and better CPU efficiency.
 

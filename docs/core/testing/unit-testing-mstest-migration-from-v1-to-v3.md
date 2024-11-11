@@ -204,9 +204,7 @@ Configure parallel execution in `.runsettings` to improve performance.
 
 MSTest v3 optimizes resource management, resulting in lower memory usage and better CPU efficiency.
 
----
-
-## Handling Obsolete Attributes and Migrating Custom Extensions
+## Handling obsolete attributes and migrating custom extensions
 
 Review deprecated attributes, and replace them with MSTest v3 alternatives where possible.
 

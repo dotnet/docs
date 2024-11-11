@@ -5,6 +5,8 @@ ms.date: 07/03/2024
 ms.topic: include
 ---
 
+## Clone the sample repository
+
  You can create your own app and follow along the steps in the sections ahead, or you can clone the GitHub repository that contains the completed sample apps for all of the quickstarts. The sample repo is also structured as an Azure Developer CLI template that can provision an Azure OpenAI resource for you.
 
 ```bash

@@ -61,7 +61,7 @@ For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
 ### Tokenizers
 
-The Microsoft.ML.Tokenizers library provides .NET developer with capabilities for encoding and decoding text to tokens. For AI scenarios, this is important to manage context, calculate cost, and pre-process text when working with local models.
+The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides .NET developer with capabilities for encoding and decoding text to tokens. For AI scenarios, this is important to manage context, calculate cost, and pre-process text when working with local models.
 
 The latest release introduces significant new capabilities:
 
@@ -80,7 +80,7 @@ The latest release introduces significant new capabilities:
 
 In .NET 9, `TensorPrimitives` and the new `Tensor<T>` type expand AI capabilities by enabling efficient encoding, manipulation, and computation of multi-dimensional data.
 
-Improvements in the latest release of System.Numerics.Tensors include:
+Improvements in the latest release of [System.Numerics.Tensors](https://www.nuget.org/packages/System.Numerics.Tensors/) include:
 
 #### TensorPrimitives
 
@@ -96,7 +96,7 @@ Improvements in the latest release of System.Numerics.Tensors include:
 
 ## ML.NET
 
-ML.NET is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications.
+[ML.NET](https://www.nuget.org/packages/Microsoft.ML/) is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications.
 
 ML.NET 4.0 brings the following improvements:
 

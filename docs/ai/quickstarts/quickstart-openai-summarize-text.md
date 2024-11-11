@@ -48,11 +48,28 @@ In this quickstart, learn how to create a .NET console chat app to connect to an
 
 1. Install the required packages:
 
+:::zone target="docs" pivot="azure-openai"
+
     ```bash
-    dotnet add package Microsoft.SemanticKernel
+    dotnet add package Azure.Identity
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
+
+:::zone-end
+
+:::zone target="docs" pivot="openai"
+
+    ```bash
+    dotnet add package OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    ```
+
+:::zone-end
 
 1. Open the app in Visual Studio code or your editor of choice
 

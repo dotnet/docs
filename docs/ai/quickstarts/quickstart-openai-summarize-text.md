@@ -83,6 +83,8 @@ Complete the following steps to create a .NET console app to connect to an AI se
 
 :::zone target="docs" pivot="openai"
 
+## Configure the app
+
 1. From a terminal or command prompt, run the following commands to configure your OpenAI API key as a secret for the sample app:
 
     ```bash
@@ -97,7 +99,6 @@ Complete the following steps to create a .NET console app to connect to an AI se
     ```
 
 :::zone-end
-
 
 ## Add the app code
 

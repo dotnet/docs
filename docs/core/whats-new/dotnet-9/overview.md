@@ -62,30 +62,49 @@ The Microsoft.ML.Tokenizers library provides .NET developer with capabilities fo
 The latest release introduces significant new capabilities:
 
 - Tokenizers
+  - Byte-Level BPE
   - SentencePiece
   - WordPiece
-  - BERT
-  - CodeGen
 - Built-in tokenizers for the following models:
   - GPT (3, 3.5, 4, 4o, o1)
   - Llama
   - Phi
+  - BERT
+  - CodeGen
 
 ### Tensors
 
-<!-- TODO -->
+In .NET 9, `TensorPrimitives` and the new `Tensor<T>` type expand AI capabilities by enabling efficient encoding, manipulation, and computation of multi-dimensional data.
 
-### Microsoft.Extensions.AI
+Improvements in the latest release of System.Numerics.Tensors include:
 
-<!-- TODO -->
+#### TensorPrimitives
 
-### Microsoft.Extensions.VectorData
+- **Expanded Method Scope:** Increased from 40 to nearly 200 overloads, now including numerical operations similar to `Math`, `MathF`, and `INumber<T>`, but for spans of values.
+- **Performance Enhancements:** Many operations are now SIMD-optimized for better performance.
+- **Generic Overloads:** Supports any T that implements a certain interface, expanding beyond just spans of float values in .NET 
 
-<!-- TODO -->
+#### Tensor
+
+- Builds on top of `TensorPrimitives` for efficient math operations.
+- Provides efficient interop with AI libraries (ML.NET, TorchSharp, ONNX Runtime) using zero copies where possible.
+- Enables easy and efficient data manipulation with indexing and slicing operations.
+
+### Microsoft.Extensions.AI & Microsoft.Extensions.VectorData
+
+.NET 9 introduces a unified layer of C# abstractions through Microsoft.Extensions.AI and Microsoft.Extensions.VectorData. These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
 
 ## ML.NET
 
-ML.NET is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications. The latest version, ML.NET 4.0, adds [additional tokenizer support](../../../machine-learning/whats-new/overview.md#additional-tokenizer-support) for tokenizers such as Tiktoken and models such as Llama and CodeGen. <!--Add info about `Tensor<T>` here and in what's new for ML.NET.-->
+ML.NET is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications.
+
+ML.NET 4.0 brings the following improvements:
+
+- New ways to programatically configure `MLContext` options.
+- Load ONNX models as `Stream`.
+- DataFrame improvements.
+- (Experimental) TorchSharp ports of Llama and Phi family of models.
+- (Experimental) CausalLM pipeline APIs
 
 ## .NET Aspire
 

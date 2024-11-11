@@ -208,9 +208,7 @@ MSTest v3 optimizes resource management, resulting in lower memory usage and bet
 
 Review deprecated attributes, and replace them with MSTest v3 alternatives where possible.
 
----
-
-## Code Analyzers and Best Practices
+## Code analyzers and best practices
 
 MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings. This is automatically available when using MSTest package or MSTest.Sdk, or you can install [MSTest Analyzer package](https://www.nuget.org/packages/MSTest.Analyzers).
 

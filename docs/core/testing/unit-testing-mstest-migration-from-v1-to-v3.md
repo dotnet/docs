@@ -84,7 +84,7 @@ You can update your project to MSTest v3 in one of two ways:
 
 Choose the option that best suits your project setup. Both methods ensure your project is upgraded to use MSTest v3.
 
-### 3. Update Your Code
+### 3. Update your code
 
 - **Assert.AreEqual/AreNotEqual or Assert.AreSame/AreNotSame (with object)**
   If one of these assertions causes errors, we recommend verifying that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.

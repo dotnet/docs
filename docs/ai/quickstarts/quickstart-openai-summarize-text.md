@@ -81,6 +81,24 @@ Complete the following steps to create a .NET console app to connect to an AI se
 
 :::zone-end
 
+:::zone target="docs" pivot="openai"
+
+1. From a terminal or command prompt, run the following commands to configure your OpenAI API key as a secret for the sample app:
+
+    ```bash
+    dotnet user-secrets init
+    dotnet user-secrets set OpenAIKey <your-openai-key>
+    ```
+
+1. Use the `dotnet run` command to run the app:
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+:::zone-end
+
+
 ## Add the app code
 
 The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.

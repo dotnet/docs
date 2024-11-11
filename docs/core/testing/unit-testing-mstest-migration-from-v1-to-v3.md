@@ -35,9 +35,6 @@ Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v
 - **Greater Flexibility and Extensibility**: MSTest v3 supports advanced testing scenarios, including dynamic data sources and in-assembly parallel execution. This flexibility enables more sophisticated testing approaches and speeds up test suites without complex configurations.
 
 By upgrading, you’re setting up your tests to be faster, more reliable, and adaptable to future .NET developments, positioning your project for long-term success and easier maintenance.
-
----
-
 ## Steps to Migrate
 
 ### 1. Remove Assembly Reference

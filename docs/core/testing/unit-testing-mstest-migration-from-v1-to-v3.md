@@ -172,9 +172,7 @@ MSTest v3 supports both XML and JSON formats for configuration files.
 
 ---
 
-## Parallel Execution and Performance Optimization
-
-### New Parallelism Options
+## Parallel execution and performance optimization
 
 Configure parallel execution in `.runsettings` to improve performance.
 

@@ -9,6 +9,7 @@ ms.date: 11/06/2024
 # MSTest v3 migration guide
 
 This guide assists users in upgrading their MSTest projects from MSTest v1 to MSTest v3. MSTest v3 introduces significant new features, optimizations, and some breaking changes to improve test reliability, execution speed, and compatibility with modern .NET frameworks.
+
 ### Who is impacted?
 
 This guide is intended for projects currently **.NET Framework projects** using MSTest v1 via either:
@@ -17,6 +18,7 @@ This guide is intended for projects currently **.NET Framework projects** using 
 - **NuGet packages**: Projects using `MSTest.TestFramework` NuGet package with version 1.0.0-1.4.0.
 
 If your project relies on MSTest for unit testing and includes the above references, it will benefit from the improvements in MSTest v3 and requires adjustments outlined in this guide.
+
 ### Why migrate to MSTest v3?
 
 Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v3 unlocks substantial advantages that improve both the quality and future-readiness of your tests. Here’s why making the switch now can be a valuable step forward:
@@ -35,6 +37,7 @@ Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v
 - **Greater Flexibility and Extensibility**: MSTest v3 supports advanced testing scenarios, including dynamic data sources and in-assembly parallel execution. This flexibility enables more sophisticated testing approaches and speeds up test suites without complex configurations.
 
 By upgrading, you’re setting up your tests to be faster, more reliable, and adaptable to future .NET developments, positioning your project for long-term success and easier maintenance.
+
 ## Migration steps
 
 ### 1. Remove assembly reference
@@ -99,6 +102,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 - **Test Initialization**: Use `TestInitialize` methods for async initialization.
 - **Cleanup**: Use `TestCleanup` methods or the `Dispose` pattern for cleanup.
 - **RunSettings**: The `.testsettings` file is no longer supported, meaning `<LegacySettings>` is also no longer available. Use [.runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) for test configuration.
+
 ## New Features in MSTest v3
 
 - Improved defaults for test projects
@@ -108,6 +112,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 - Support for WinUI applications
 - In-assembly parallel execution
 - Dynamic data sources for data-driven tests
+
 ## Deprecated Features
 
 - Dropped support for:
@@ -116,6 +121,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
   - **UWP versions before 16299**
   - **WinUI versions before 18362**
   - **.NET 5** (use .NET Core 3.1 or .NET 6)
+
 ## Breaking Changes and Removed APIs
 
 ### Assertion overloads
@@ -162,6 +168,7 @@ public void TestMethod() { ... }
 [Timeout(2000)] // Verify this value still works under MSTest v3
 public async Task TestMethod() { ... } 
 ```
+
 ## Configuration changes
 MSTest v3 supports both XML and JSON formats for configuration files.
 

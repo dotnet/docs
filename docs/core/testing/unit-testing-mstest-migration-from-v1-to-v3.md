@@ -99,9 +99,6 @@ Choose the option that best suits your project setup. Both methods ensure your p
 - **Test Initialization**: Use `TestInitialize` methods for async initialization.
 - **Cleanup**: Use `TestCleanup` methods or the `Dispose` pattern for cleanup.
 - **RunSettings**: The `.testsettings` file is no longer supported, meaning `<LegacySettings>` is also no longer available. Use [.runsettings](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) for test configuration.
-
----
-
 ## New Features in MSTest v3
 
 - Improved defaults for test projects

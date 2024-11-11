@@ -37,7 +37,7 @@ Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v
 By upgrading, you’re setting up your tests to be faster, more reliable, and adaptable to future .NET developments, positioning your project for long-term success and easier maintenance.
 ## Steps to Migrate
 
-### 1. Remove Assembly Reference
+### 1. Remove assembly reference
 
 For projects using MSTest v1 through assembly references, there are a reference to the following DLL:
 

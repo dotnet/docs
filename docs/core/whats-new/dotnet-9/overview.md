@@ -53,7 +53,7 @@ The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
-## ML.NET
+## AI and Machine Learning
 
 ML.NET is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications. The latest version, ML.NET 4.0, adds [additional tokenizer support](../../../machine-learning/whats-new/overview.md#additional-tokenizer-support) for tokenizers such as Tiktoken and models such as Llama and CodeGen. <!--Add info about `Tensor<T>` here and in what's new for ML.NET.-->
 

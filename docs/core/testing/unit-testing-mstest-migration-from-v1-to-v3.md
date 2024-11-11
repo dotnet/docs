@@ -108,9 +108,6 @@ Choose the option that best suits your project setup. Both methods ensure your p
 - Support for WinUI applications
 - In-assembly parallel execution
 - Dynamic data sources for data-driven tests
-
----
-
 ## Deprecated Features
 
 - Dropped support for:

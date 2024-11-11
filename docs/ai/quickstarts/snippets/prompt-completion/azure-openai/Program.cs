@@ -12,10 +12,10 @@ IChatClient client =
         .AsChatClient(deployment);
 
 // Create and print out the prompt
-string prompt = $"""
-    Please summarize the the following text in 20 words or less:
-    {File.ReadAllText("benefits.md")}
-    """;
+string prompt = 
+    $"""Please summarize the the following text in 20 words or less:
+    {File.ReadAllText("benefits.md")}""";
+    
 Console.WriteLine($"user >>> {prompt}");
 
 // Submit the prompt and print out the response

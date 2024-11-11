@@ -92,7 +92,7 @@ The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Mic
 
     :::zone-end
 
-    :::zone target="docs" pivot="azure-openai"
+    :::zone target="docs" pivot="openai"
 
     :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="5-13":::
 

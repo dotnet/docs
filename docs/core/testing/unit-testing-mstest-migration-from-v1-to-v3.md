@@ -118,7 +118,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
   - **.NET 5** (use .NET Core 3.1 or .NET 6)
 ## Breaking Changes and Removed APIs
 
-### Assertion Overloads
+### Assertion overloads
 
 If AreEqual, AreNotEqual, AreSame, or AreNotSame assertions cause errors, we recommend checking that the types being compared are compatible. If they are, consider adding explicit generic typing to resolve the issue.
 

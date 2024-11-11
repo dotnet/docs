@@ -501,8 +501,12 @@ items:
             href: ../../core/deploying/native-aot/diagnostics.md
           - name: Native code interop
             href: ../../core/deploying/native-aot/interop.md
-          - name: Build native libraries
-            href: ../../core/deploying/native-aot/libraries.md
+          - name: Native libraries
+            items:
+              - name: Overview
+                href: ../../core/deploying/native-aot/libraries/index.md
+              - name: iOS-like platforms
+                href: ../../core/deploying/native-aot/libraries/ios-like-native-libraries-with-nativeaot.md
           - name: Cross-compilation
             href: ../../core/deploying/native-aot/cross-compile.md
           - name: Security

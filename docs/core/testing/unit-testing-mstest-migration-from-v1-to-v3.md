@@ -17,7 +17,7 @@ This guide is intended for projects currently **.NET Framework projects** using 
 - **NuGet packages**: Projects using `MSTest.TestFramework` NuGet package with version 1.0.0-1.4.0.
 
 If your project relies on MSTest for unit testing and includes the above references, it will benefit from the improvements in MSTest v3 and requires adjustments outlined in this guide.
-### Why Migrate to MSTest v3?
+### Why migrate to MSTest v3?
 
 Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v3 unlocks substantial advantages that improve both the quality and future-readiness of your tests. Here’s why making the switch now can be a valuable step forward:
 

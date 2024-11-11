@@ -50,7 +50,7 @@ In this quickstart, learn how to create a .NET console chat app to connect to an
 
 :::zone target="docs" pivot="azure-openai"
 
-    <!-- markdownlint-disable MD047 -->
+    <!-- markdownlint-disable MD046 -->
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
@@ -63,6 +63,7 @@ In this quickstart, learn how to create a .NET console chat app to connect to an
 
 :::zone target="docs" pivot="openai"
 
+    <!-- markdownlint-disable MD046 -->
     ```bash
     dotnet add package OpenAI
     dotnet add package Microsoft.Extensions.AI.OpenAI
@@ -88,6 +89,7 @@ The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Mic
 
 :::zone target="docs" pivot="azure-openai"
 
+    <!-- markdownlint-disable MD046 -->
     :::code language="csharp" source="snippets/prompt-completion/azure-openai/program.cs" range="6-14":::
 
     > [!NOTE]
@@ -97,6 +99,7 @@ The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Mic
 
 :::zone target="docs" pivot="azure-openai"
 
+    <!-- markdownlint-disable MD046 -->
     # [OpenAI](#tab/openai)
 
     :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="5-13":::

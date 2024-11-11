@@ -88,6 +88,8 @@ C# 13 ships with the .NET 9 SDK and includes the following new features:
 - Partial properties and indexers are now allowed in `partial` types.
 - Overload resolution priority allows library authors to designate one overload as better than others.
 
+In addition, C# 13 adds a preview feature: `field` backed properties.
+
 For more information, see [What's new in C# 13](../../../csharp/whats-new/csharp-13.md).
 
 ## F# 9

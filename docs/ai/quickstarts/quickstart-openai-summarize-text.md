@@ -61,7 +61,7 @@ In this quickstart, learn how to create a .NET console chat app to connect to an
     code .
     ```
 
-[!INCLUDE [create-ai-service](../create-ai-service.md)]
+[!INCLUDE [create-ai-service](includes/create-ai-service.md)]
 
 ## Add the app code
 

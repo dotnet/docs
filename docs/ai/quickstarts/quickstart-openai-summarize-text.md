@@ -6,12 +6,11 @@ ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
-zone_pivot_groups: dotnet-ai-library
+zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
 
 # Connect to and prompt an AI model using .NET
-
 
 In this quickstart, learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 

@@ -9,9 +9,6 @@ ms.date: 11/06/2024
 # MSTest v3 migration guide
 
 This guide assists users in upgrading their MSTest projects from MSTest v1 to MSTest v3. MSTest v3 introduces significant new features, optimizations, and some breaking changes to improve test reliability, execution speed, and compatibility with modern .NET frameworks.
-
----
-
 ### Who Is Impacted?
 
 This guide is intended for projects currently **.NET Framework projects** using MSTest v1 via either:

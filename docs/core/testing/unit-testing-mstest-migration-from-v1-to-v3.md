@@ -136,7 +136,7 @@ public void MyTestMethod(int number, string text) { ... }
 
 In cases where types don’t match exactly, MSTest v3 will now raise an error rather than attempting a conversion.
 
-### Timeout Settings
+### Timeout settings
 
 In MSTest v3, the handling of `Timeout` settings has been standardized to ensure consistent behavior across different .NET environments. This change may impact tests that rely on specific timeout values, especially if those tests are asynchronous or run under different frameworks.
 

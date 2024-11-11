@@ -151,9 +151,9 @@ In MSTest v3, the handling of `Timeout` settings has been standardized to ensure
 
 **What This Means**:
 
-1. **Tests with Timeouts Might Need Adjustment**: If your tests have a `Timeout` attribute with specific durations, verify that those values still allow the test to complete under MSTest v3. Tests that previously passed with a certain timeout might need a higher or lower timeout value to work correctly under the new rules.
+- **Tests with Timeouts Might Need Adjustment**: If your tests have a `Timeout` attribute with specific durations, verify that those values still allow the test to complete under MSTest v3. Tests that previously passed with a certain timeout might need a higher or lower timeout value to work correctly under the new rules.
 
-2. **Unified Timeout Handling**: MSTest v3 unified timeout handling makes timeouts more predictable, but requires checking and potentially updating `Timeout` values in older tests.
+- **Unified Timeout Handling**: MSTest v3 unified timeout handling makes timeouts more predictable, but requires checking and potentially updating `Timeout` values in older tests.
 
 **Example**:
 
@@ -171,9 +171,7 @@ public async Task TestMethod() { ... }
 
 ## Configuration changes
 
-MSTest v3 supports both XML and JSON formats for configuration files.
-
-1. **Verify Configurations**: Ensure that `.runsettings` files align with MSTest v3 syntax and structure.
+Ensure that `.runsettings` files align with MSTest v3 syntax and structure.
 
 ## Parallel execution and performance optimization
 

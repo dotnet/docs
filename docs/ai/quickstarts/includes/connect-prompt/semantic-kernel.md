@@ -25,6 +25,7 @@
     ```bash
     code .
     ```
+
 [!INCLUDE [create-ai-service](../create-ai-service.md)]
 
 ## Add the app code

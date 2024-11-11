@@ -39,7 +39,7 @@ This change can affect [source compatibility](../../categories.md#source-compati
 
 ## Reason for change
 
-This is our standard support policy for the SDK as we can't support all prior versions of Visual Studio and MSBuild.
+This is part of the standard support policy for the SDK as not all prior versions of Visual Studio and MSBuild can be supported.
 
 ## Recommended action
 

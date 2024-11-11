@@ -55,7 +55,7 @@ In non-SDK style projects, these references are often added through Visual Studi
 
 6. **Save the project** to apply changes.
 
-### 2. Update Your Project
+### 2. Update your project
 
 You can update your project to MSTest v3 in one of two ways:
 

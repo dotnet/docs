@@ -105,7 +105,15 @@ The latest release introduces significant new capabilities for tokenizers:
 
 ## ASP.NET Core
 
-ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, OpenAPI, and authentication and authorization. For more information, see [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0).
+ASP.NET Core apps built with .NET 9 are secure by default, have expanded support for ahead-of-time complication, and have improved monitoring and tracing. With the performance improvements, you'll see higher throughput and faster startup time, and all with less memory usage. ASP.NET Core in .NET 9 includes:
+
+- Optimized handling of static files, like JavaScript and CSS, at build and publish time with automatic fingerprinted versioning.
+- Blazor: New Hybrid and Web app templates, detection of component render mode, new reconnection experience with server rendering.
+- APIs: Built in support for OpenAPI document generation using `Microsoft.AspNetCore.OpenAPI`, enhanced native AOT support.
+- Improved security with new APIs for authentication and authorization.
+- Easier setup for trusted development certificate on Linux to enable HTTPS during development.
+
+These are just some of the features and enhancements in .NET 9. For more information, see [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0).
 
 ## .NET MAUI
 

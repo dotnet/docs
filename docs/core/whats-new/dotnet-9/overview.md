@@ -120,6 +120,8 @@ For more information, see [What's new in F# 9](../../../fsharp/whats-new/fsharp-
 
 ## Windows Presentation Foundation
 
+WPF in .NET 9 bring enhanced support for building modern apps with several theming enhancements and more:
+
 - Support for the Windows Fluent theme.
 - Theme support for Windows light and dark modes added.
 - Themes support the Windows Accent color now.

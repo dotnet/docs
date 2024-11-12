@@ -59,7 +59,7 @@ ML.NET is an open-source, cross-platform framework that enables integration of c
 
 ## .NET Aspire
 
-.NET Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ .NET Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. .NET Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in .NET Aspire 9](/dotnet/aspire/whats-new/dotnet-aspire-9).
+.NET Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ .NET Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. .NET Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in .NET Aspire 9](/dotnet/aspire/whats-new/dotnet-aspire-9-release-candidate-1).
 
 ## ASP.NET Core
 

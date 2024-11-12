@@ -75,7 +75,7 @@ The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is enhanced perfor
 - Control handlers automatically disconnect from their controls when possible
 - `MainPage` is deprecated in favor of setting the primary page of the app by overriding `CreateWindow` in the `App` class
   
-For more information about that and new features, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
+For more information about that these new features and more, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
 
 ## EF Core
 

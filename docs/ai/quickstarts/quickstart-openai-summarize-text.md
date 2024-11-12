@@ -90,7 +90,9 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 ## Configure the app
 
-1. From a terminal or command prompt, run the following commands to configure your OpenAI API key as a secret for the sample app:
+1. Navigate to the root of your .NET projet from a terminal or command prompt.
+
+1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
     ```bash
     dotnet user-secrets init
@@ -111,7 +113,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
     :::code language="csharp" source="snippets/prompt-completion/azure-openai/program.cs" range="1-12":::
 
     > [!NOTE]
-    > `DefaultAzureCredential` searches for credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI.
+    > [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet) searches for authentication credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. Visit the [Authenticate to Azure AI services with .NET](/dotnet/ai/azure-ai-services-authentication) page for more information.
 
     :::zone-end
 

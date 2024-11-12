@@ -6,7 +6,7 @@ zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
 

@@ -6,7 +6,7 @@ zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Test a .NET class library using Visual Studio Code
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial shows how to automate unit testing by adding a test project to a solution.
 

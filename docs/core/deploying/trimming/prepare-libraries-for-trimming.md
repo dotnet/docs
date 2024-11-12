@@ -4,7 +4,6 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 06/12/2023
-zone_pivot_groups: dotnet-version
 ---
 
 # Prepare .NET libraries for trimming
@@ -16,33 +15,7 @@ The .NET SDK makes it possible to reduce the size of self-contained apps by [tri
 
 ## Prerequisites
 
-:::zone pivot="dotnet-6-0"
-
-[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
-
-To get the most up-to-date trimming warnings and analyzer coverage:
-
-* Install and use the .NET 8 SDK or later.
-* Target `net8.0` or later.
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-
-[.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
-
-To get the most up-to-date trimming warnings and analyzer coverage:
-
-* Install and use the .NET 8 SDK or later.
-* Target `net8.0` or later.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
 [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
-
-:::zone-end
 
 ## Enable library trim warnings
 
@@ -93,55 +66,14 @@ To create the trimming test app:
 
 If library targets a TFM that is not trimmable, for example `net472` or `netstandard2.0`, there's no benefit to creating a trimming test app. Trimming is only supported for .NET 6 and later.
 
-:::zone pivot="dotnet-6-0"
-
-* Set `<TrimmerDefaultAction>` to `link`. <!-- only diff with .NET7+ -->
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-
-* Add `<PublishTrimmed>true</PublishTrimmed>`.
-* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
-* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
-* Add `<PublishTrimmed>true</PublishTrimmed>`.
-* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
-* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
-
-:::zone-end
 
 ### .csproj file
 
-:::zone pivot="dotnet-6-0"
-
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/XMLFile1.xml":::
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
-
-**Note:** In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
-
-:::zone-end
 
 Once the project file is updated, run `dotnet publish` with the target [runtime identifier (RID)](../../rid-catalog.md).
 
@@ -151,7 +83,8 @@ dotnet publish -c Release -r <RID>
 
 Follow the preceding pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. Adding all the libraries to the same project with `ProjectReference` and `TrimmerRootAssembly` items warns about dependencies if ***any*** of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 
-***Note:*** The analysis results depend on the implementation details of the dependencies. Updating to a new version of a dependency may introduce analysis warnings:
+> [!NOTE]
+> The analysis results depend on the implementation details of the dependencies. Updating to a new version of a dependency may introduce analysis warnings:
 
 * If the new version added non-understood reflection patterns.
 * Even if there were no API changes.

@@ -128,6 +128,7 @@ Mode                 LastWriteTime         Length Name
 -a---           9/22/2023  9:17 AM         157696 DotNet.Docker.exe
 -a---           9/22/2023  9:17 AM          11688 DotNet.Docker.pdb
 -a---           9/22/2023  9:17 AM            353 DotNet.Docker.runtimeconfig.json
+```
 
 #### [Linux](#tab/linux)
 
@@ -136,6 +137,7 @@ Use the `ls` command to get a directory listing and verify that the *DotNet.Dock
 ```bash
 me@DESKTOP:/docker-working/app$ ls bin/Release/net8.0/publish
 DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
+```
 
 ---
 
@@ -208,6 +210,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /App
 COPY --from=build-env /App/out .
 ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
+```
 
 The `FROM` command specifies the base image and tag to use. The `WORKDIR` command changes the **current directory** inside of the container to *App*.
 
@@ -435,6 +438,7 @@ Next, delete any images that you no longer want on your machine. Delete the imag
 ```console
 docker rmi counter-image:latest
 docker rmi mcr.microsoft.com/dotnet/aspnet:8.0
+```
 
 Use the `docker images` command to see a list of images installed.
 

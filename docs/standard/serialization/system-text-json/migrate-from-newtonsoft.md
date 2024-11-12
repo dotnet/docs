@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
+zone_pivot_groups: dotnet-version
 ms.collection: ce-skilling-ai-copilot
 ms.custom: vs-copilot-horizontal
 ---

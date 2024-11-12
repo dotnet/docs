@@ -1,7 +1,7 @@
 ---
 title: "MSTEST0006: Avoid '[ExpectedException]'"
 description: "Learn about code analysis rule MSTEST0006: Avoid '[ExpectedException]'"
-ms.date: 01/03/2024
+ms.date: 11/12/2024
 f1_keywords:
 - MSTEST0006
 - AvoidExpectedExceptionAttributeAnalyzer
@@ -25,7 +25,7 @@ dev_langs:
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Info                                               |
 | **Introduced in version**           | 3.2.0                                              |
-| **There is a code fix**             | Yes                                                |
+| **There is a code fix**             | Yes, starting with 3.7.0                           |
 
 ## Cause
 

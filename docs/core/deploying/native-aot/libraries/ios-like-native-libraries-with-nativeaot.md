@@ -16,7 +16,7 @@ This enables users to create self-contained native libraries that can be consume
 
 ## Building shared libraries
 
-This section describes steps to create a simple .NET Class Library project with NativeAOT support.
+This section describes steps to create a simple .NET Class Library project with NativeAOT support and produce a native library for iOS-like platforms from it.
 
 1. Download .NET 9 SDK
 2. Create a class library project
@@ -48,39 +48,22 @@ This section describes steps to create a simple .NET Class Library project with 
     }
     ```
 
-### Building iOS shared libraries
+5. Publish the class library and target desired iOS-like platform by specifying appropriate runtime identifier (referenced bellow as `<rid>`):
 
-This section covers building shared libraries for iOS physical devices (RID: `ios-arm64`).
-Targeting iOS simulators (RIDs: `iossimulator-arm64`, `iossimulator-x64`) is almost identical and is not covered in this guide.
-
-1. Publish the class library and target desired iOS platform
-
-    ```bash
-    dotnet publish -r ios-arm64 MyNativeAOTLibrary/MyNativeAOTLibrary.csproj
-    ```
-
-2. Shared library `MyNativeAOTLibrary.dylib` and debug symbols `MyNativeAOTLibrary.dylib.dSYM` will be located at: `MyNativeAOTLibrary/bin/Release/net9.0/ios-arm64/publish/`
-
-### Building MacCatalyst shared libraries
-
-This section covers building shared libraries for MacCatalyst (RIDs: `maccatalyst-arm64`, `maccatalyst-x64`).
-
-1. Publish the class library and target MacCatalyst for `Arm64` architecture
+    - For iOS physical devices use: `ios-arm64`
+    - For iOS simulator devices use: `iossimulator-arm64` or `iossimulator-x64`
+    - For MacCatalyst use: `maccatalyst-arm64` or `maccatalyst-x64`
 
     ```bash
-    dotnet publish -r maccatalyst-arm64 MyNativeAOTLibrary/MyNativeAOTLibrary.csproj
+    dotnet publish -r <rid> MyNativeAOTLibrary/MyNativeAOTLibrary.csproj
     ```
 
-2. (and/or) Publish the class library and target MacCatalyst for `x64` architecture
-
-    ```bash
-    dotnet publish -r maccatalyst-x64 MyNativeAOTLibrary/MyNativeAOTLibrary.csproj
-    ```
-
-3. Previous steps will produce two pairs of files: a shared library `MyNativeAOTLibrary.dylib` and its debug symbols `MyNativeAOTLibrary.dylib.dSYM` for each of the two architectures, which will be located in their respective publish folders: `MyNativeAOTLibrary/bin/Release/net9.0/<rid>/publish/`
+Successful completion of the previous step will produce a pair of files: a shared library `MyNativeAOTLibrary.dylib` and its debug symbols `MyNativeAOTLibrary.dylib.dSYM` which are located at: `MyNativeAOTLibrary/bin/Release/net9.0/<rid>/publish/`
 
 > [!NOTE]
-> Both step 1. and step 2. are required if a universal MacCatalyst framework is being created (more info available [below](#packaging-the-shared-library-into-a-custom-maccatalyst-universal-framework))
+> For creating universal frameworks, it is required to publish the class library for both `Arm64` and `x64` architectures for a given platform.
+> This means that step `5.` needs to be repeated twice with different runtime identifiers.
+> For example, we would publish the class library with both `maccatalyst-arm64` and `maccatalyst-x64` runtime identifiers as a prerequisite for [Packaging the shared library into a custom MacCatalyst universal framework](#packaging-the-shared-library-into-a-custom-maccatalyst-universal-framework).
 
 ## Creating and consuming a custom framework (optional)
 

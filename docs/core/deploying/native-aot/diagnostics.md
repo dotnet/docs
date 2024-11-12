@@ -13,7 +13,7 @@ Native AOT shares some, but not all, diagnostics and instrumentation capabilitie
 ## Native AOT diagnostic support
 
 > [!NOTE]
-> Starting from .NET 9, Native AOT supports targeting iOS-like platforms with .NET MAUI for which diagnostics support is described in the following [document](https://github.com/dotnet/docs-maui/blob/7ff3052a0b3535316775bba2583ee09ffdd9befa/docs/deployment/nativeaot.md#native-aot-diagnostic-support-on-ios-like-platforms).
+> Starting from .NET 9, Native AOT supports targeting iOS-like platforms with .NET MAUI for which diagnostics support is described in the following [document](https://learn.microsoft.com/dotnet/maui/deployment/nativeaot?view=net-maui-9.0#native-aot-diagnostic-support-on-ios-and-mac-catalyst).
 
 The following table summarizes diagnostic features supported for Native AOT deployments:
 

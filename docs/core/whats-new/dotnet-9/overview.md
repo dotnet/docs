@@ -132,7 +132,7 @@ For more information, see [What's new in WPF for .NET 9](/dotnet/desktop/wpf/wha
 
 ## Windows Forms
 
-WinForms in .NET 9 brings support for new themes, enhancements for asynchronous development, and more: 
+WinForms in .NET 9 brings support for new themes, enhancements for asynchronous development, and more:
 
 - `Form` and `TaskDialog` support `ShowDialogAsync` now. (Experimental feature)
 - `BinaryFormatter` is no longer supported.

@@ -44,7 +44,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 1. To provision an Azure OpenAI service and model using the Azure CLI, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=cli) article.
 
-1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\05-HikeImages` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\semantic-kernel\05-HikeImages` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -56,7 +56,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 1. To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article.
 
-1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\05-HikeImages` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\semantic-kernel\05-HikeImages` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -91,7 +91,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone target="docs" pivot="azure-openai"
 
-1. From a terminal or command prompt, navigate to the `azure-openai\05-HikeImages` directory.
+1. From a terminal or command prompt, navigate to the `azure-openai\semantic-kernel\05-HikeImages` directory.
 
 2. Use the `dotnet run` command to run the app:
 
@@ -136,13 +136,12 @@ The _Program.cs_ file contains all of the app code. The first several lines of c
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
-string key = config["AZURE_OPENAI_KEY"];
 ```
 
 The `AzureOpenAITextToImageService` service facilitates the requests and responses.
 
 ```csharp
-AzureOpenAITextToImageService textToImageService = new(deployment, endpoint, key, null);
+AzureOpenAITextToImageService textToImageService = new(deployment, endpoint, new DefaultAzureCredential(), null);
 ```
 
 :::zone-end

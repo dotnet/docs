@@ -1,6 +1,6 @@
 ## Create the AI service
 
-# [Use the Azure Developer CLI](#tab/azd)
+# [Azure Developer CLI](#tab/azd)
 
 [!INCLUDE [deploy-azd](deploy-azd.md)]
 
@@ -14,7 +14,8 @@
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
+    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
+    dotnet user-secrets set AZURE_OPENAI_GPT_NAME <your-azure-openai-model-name>
     ```
 
 # [Azure Portal](#tab/azure-portal)
@@ -27,7 +28,8 @@
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
+    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-openai-key>
+    dotnet user-secrets set AZURE_OPENAI_GPT_NAME <your-azure-openai-model-name>
     ```
 
 ---

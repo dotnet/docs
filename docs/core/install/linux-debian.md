@@ -19,13 +19,10 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-| Debian  | .NET   |
-|---------|--------|
-| 12      | 9, 8, 6 |
-| 11      | 8, 6   |
-
-> [!IMPORTANT]
-> .NET 9 is currently in preview.
+| Debian | .NET    |
+|--------|---------|
+| 12     | 9, 8, 6 |
+| 11     | 8, 6    |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

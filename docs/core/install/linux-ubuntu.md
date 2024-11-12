@@ -131,9 +131,6 @@ The following table is a list of currently supported .NET releases and the versi
 | [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 9.0, 8.0, 6.0           | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
 | [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 6.0                | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
 
-> [!IMPORTANT]
-> .NET 9 is currently in preview.
-
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
 
 Canonical supports .NET versions in the built-in Ubuntu feed for the lifetime of that Ubuntu version, even beyond the Microsoft-provided support lifetime and provides best-effort support for .NET versions in the .NET backports package repository, which does not extend beyond the Microsoft-provided support lifetime.
@@ -216,11 +213,11 @@ rm packages-microsoft-prod.deb
 sudo apt update
 ```
 
-> [!TIP]  
+> [!TIP]
 > The previous script was written for Ubuntu and might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$ID` and `$VERSION_ID` variables won't be assigned the correct values, making the URI for the `wget` command invalid. The `$ID` corresponds to the distribution (e.g., `ubuntu`), while `$VERSION_ID` maps to the specific version of Ubuntu you want to get packages for, such as 22.04 or 23.10.
 >
-> For example, on Ubuntu 22.04 `$ID` would be `ubuntu` and `$VERSION_ID` would be `22.04`. The URL would look like:  
-> `https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb`.  
+> For example, on Ubuntu 22.04 `$ID` would be `ubuntu` and `$VERSION_ID` would be `22.04`. The URL would look like:
+> `https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb`.
 >
 > You can use a web browser and navigate to <https://packages.microsoft.com/config/ubuntu/> to see which versions of Ubuntu are available to use as the `$repo_version` value.
 

@@ -17,14 +17,11 @@ ms.custom: linux-related-content
 
 The following table is a list of currently supported .NET releases on both SLES 12 SP2 and SLES 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
 
-| SLES   | .NET |
-|--------|------|
-| 15.6     | 9.0, 8.0, 6.0 |
-| 15.5     | 9.0, 8.0, 6.0 |
-| 12 SP5   | 8.0, 6.0 |
-
-> [!IMPORTANT]
-> .NET 9 is currently in preview.
+| SLES   | .NET          |
+|--------|---------------|
+| 15.6   | 9.0, 8.0, 6.0 |
+| 15.5   | 9.0, 8.0, 6.0 |
+| 12 SP5 | 8.0, 6.0      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

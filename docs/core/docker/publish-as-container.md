@@ -127,6 +127,7 @@ Determining projects to restore...
   DotNet.ContainerImage -> .\Worker\bin\Release\net8.0\linux-x64\publish\
   Building image 'dotnet-worker-image' with tags latest on top of base image mcr.microsoft.com/dotnet/aspnet:8.0
   Pushed container 'dotnet-worker-image:latest' to Docker daemon
+```
 
 This command compiles your worker app to the *publish* folder and pushes the container to your local docker registry.
 

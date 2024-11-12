@@ -58,7 +58,7 @@ While `DataContractSerializer` carries those functional benefits when migrating 
 
 [Migrate to DataContractSerializer (XML)](./migrate-to-datacontractserializer.md).
 
-[!INCLUDE [netdatacontractserializer-warning](../../../../netdatacontractserializer-warning.md)]
+[!INCLUDE [netdatacontractserializer-warning](../../../../includes/netdatacontractserializer-warning.md)]
 
 ## Binary using MessagePack
 

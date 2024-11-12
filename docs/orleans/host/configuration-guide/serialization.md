@@ -389,7 +389,7 @@ Alternatively, the fallback serialization provider can be specified in XML confi
 
 The <xref:Orleans.Serialization.BinaryFormatterSerializer> is the default fallback serializer.
 
-[!INCLUDE [binary-serialization-warning](../../../../binary-serialization-warning.md)]
+[!INCLUDE [binary-serialization-warning](../../../../includes/binary-serialization-warning.md)]
 
 ## Exception serialization
 

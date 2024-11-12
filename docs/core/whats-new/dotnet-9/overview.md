@@ -66,7 +66,6 @@ The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokeni
 The latest release introduces significant new capabilities:
 
 - Tokenizers
-  - Byte-Level BPE
   - SentencePiece
   - WordPiece
 - Built-in tokenizers for the following models:
@@ -86,7 +85,7 @@ Improvements in the latest release of [System.Numerics.Tensors](https://www.nuge
 
 - **Expanded Method Scope:** Increased from 40 to nearly 200 overloads, now including numerical operations similar to `Math`, `MathF`, and `INumber<T>`, but for spans of values.
 - **Performance Enhancements:** Many operations are now SIMD-optimized for better performance.
-- **Generic Overloads:** Supports any T that implements a certain interface, expanding beyond just spans of float values in .NET 
+- **Generic Overloads:** Supports any T that implements a certain interface, expanding beyond just spans of float values in .NET.
 
 #### Tensor
 

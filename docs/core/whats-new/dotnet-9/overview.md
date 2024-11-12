@@ -126,7 +126,7 @@ For more information, see [What's new in F# 9](../../../fsharp/whats-new/fsharp-
 - Font render has been improved to support hyphen-based ligatures.
 - `BinaryFormatter` is no longer supported.
 
-For more information, see [What's new in WPF for .NET 9](/dotnet/desktop/wpf/whats-new/net90?view=netdesktop-9.0).
+For more information, see [What's new in WPF for .NET 9](/dotnet/desktop/wpf/whats-new/net90).
 
 ## Windows Forms
 
@@ -136,7 +136,7 @@ For more information, see [What's new in WPF for .NET 9](/dotnet/desktop/wpf/wha
 - `FolderBrowserDialog` and `ToolStrip` had some minor improvements.
 - The **System.Drawing** library has had many improvements, including wrapping GDI+ effects, support for `ReadOnlySpan`, and better interop code generation.
 
-For more information, see [What's new in Windows Forms for .NET 9](/dotnet/desktop/winforms/whats-new/net90?view=netdesktop-9.0).
+For more information, see [What's new in Windows Forms for .NET 9](/dotnet/desktop/winforms/whats-new/net90).
 
 ## See also
 

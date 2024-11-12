@@ -46,7 +46,7 @@ Each .NET Runtime is published as an individual snap package. The following tabl
 
 | .NET version                                      | Snap package        | .NET version supported by Microsoft |
 |---------------------------------------------------|---------------------|-----|
-| [9 (STS)](https://snapcraft.io/dotnet-runtime-90) | `dotnet-runtime-90` | Yes |
+| 9 (STS) *Not yet available                        | `dotnet-runtime-90` | Yes |
 | [8 (LTS)](https://snapcraft.io/dotnet-runtime-80) | `dotnet-runtime-80` | Yes |
 | [7 (STS)](https://snapcraft.io/dotnet-runtime-70) | `dotnet-runtime-70` | No  |
 | [6 (LTS)](https://snapcraft.io/dotnet-runtime-60) | `dotnet-runtime-60` | No  |

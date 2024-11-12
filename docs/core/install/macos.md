@@ -293,12 +293,12 @@ The following sections describe things you should consider when installing .NET 
 
 The following table describes which versions of .NET are supported on an Arm-based Mac:
 
-| .NET Version | SDK | Runtime | [Path conflict](#path-conflicts) |
-|--------------|-----|---------|----------------------------------|
-| 8            | Yes | Yes     | No                               |
-| 8            | Yes | Yes     | No                               |
-| 6            | Yes | Yes     | No                               |
-| 6            | Yes | Yes     | No                               |
+| .NET Version | SDK | Runtime |
+|--------------|-----|---------|
+| 8            | Yes | Yes     |
+| 8            | Yes | Yes     |
+| 6            | Yes | Yes     |
+| 6            | Yes | Yes     |
 
 The x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
 

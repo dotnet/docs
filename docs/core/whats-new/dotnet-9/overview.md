@@ -67,7 +67,7 @@ ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, OpenAPI, an
 
 ## .NET MAUI
 
-The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is to improve product quality. In addition:
+The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is enhanced performance, reliability, and deeper integrations for desktop and mobile applications. .NET MAUI includes a new more performant implementation of `CollectionView` & `CarouselView` for iOS & Mac Catalyst, updates to existing controls, new app lifecycle events, and Native AOT and trimming enhancements to improve app size and startup time.  In addition:
 
 - A new `TitleBar` desktop control is available for Windows
 - A new `HybridWebView` control enables easier inclusion of JavaScript enabled content from frameworks like ReactJS, Vue.js, and Angular

@@ -4,7 +4,7 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 11/01/2024
+ms.date: 11/11/2024
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -76,15 +76,15 @@ The following table is a list of currently supported .NET releases and the versi
 
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
-| Operating System                    | .NET 8 (Architectures) | .NET 6 (Architectures) |
-|-------------------------------------|------------------------|------------------------|
-| Windows 11 (24H2, 23H2, 22H2 Ent/Edu) | ✔️ x64, x86, Arm64    | ✔️ x64, Arm64          |
-| Windows 10 (22H2+)                  | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64     |
-| Windows 8.1                         | ❌                     | ✔️ x64, x86            |
-| Windows 7 SP1 [ESU][esu]            | ❌                     | ✔️ x64, x86            |
-| Windows Server 2025<br>Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86           | ✔️ x64, x86            |
-| Windows Server Core 2012 (and R2)   | ✔️ x64, x86           | ✔️ x64, x86            |
-| Nano Server (2022, 2019)            | ✔️ x64                | ✔️ x64                 |
+| Operating System                      | .NET 9 (Architectures) | .NET 8 (Architectures) |
+|---------------------------------------|------------------------|------------------------|
+| Windows 11 (24H2, 23H2, 22H2 Ent/Edu) | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64    |
+| Windows 10 (22H2+)                    | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64    |
+| Windows Server 2025<br>Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86           | ✔️ x64, x86           |
+| Windows Server Core 2012 (and R2)     | ✔️ x64, x86           | ✔️ x64, x86           |
+| Nano Server (2022, 2019)              | ✔️ x64                | ✔️ x64                |
+| Windows 8.1                           | ❌                    | ❌                    |
+| Windows 7 SP1 [ESU][esu]              | ❌                    | ❌                    |
 
 > [!TIP]
 > A `+` symbol represents the minimum version.
@@ -93,9 +93,9 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 ### Windows 7 / 8.1 / Server 2012
 
-Windows 7 and Windows 8.1 only support .NET 6. However, .NET 6 is out of support starting November 12, 2024.
+There is no longer a version of .NET that's supported on **Windows 7 and Windows 8.1**. The last supported releases was .NET 6 and support ended on November 12, 2024.
 
-Windows Server 2012 is still supported by any version of .NET that's still in support.
+**Windows Server 2012** is still supported by any version of .NET that's still in support.
 
 All three of these versions of Windows require further dependencies to be installed:
 
@@ -178,7 +178,7 @@ For instructions on installing .NET through Visual Studio Code, see [Getting Sta
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
 1. Open a web browser and navigate to <https://dotnet.microsoft.com/download/dotnet>.
-1. Select the version of .NET you want to download, such as 8.0.
+1. Select the version of .NET you want to download, such as 9.0.
 1. Find the SDK or Runtime box that contains the links for downloading .NET.
 1. Under the **Installers** column, find the **Windows** row and select the link for your CPU architecture. If you're unsure, select **x64** as it's the most common.
 
@@ -216,7 +216,7 @@ Prevents any UI and prompts from displaying.
 Suppresses any attempts to restart.
 
 ```console
-dotnet-sdk-8.0.100-win-x64.exe /install /quiet /norestart
+dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 ```
 
 > [!TIP]
@@ -230,7 +230,11 @@ If you're installing .NET system-wide, install with administrative privileges.
 
 The .NET WinGet packages are:
 
-- `Microsoft.DotNet.Runtime.8`&mdash;.NET Runtime 8.0.
+- `Microsoft.DotNet.Runtime.9`&mdash;.NET Runtime 9.0
+- `Microsoft.DotNet.AspNetCore.9`&mdash;ASP.NET Core Runtime 9.0
+- `Microsoft.DotNet.DesktopRuntime.9`&mdash;.NET Desktop Runtime 9.0
+- `Microsoft.DotNet.SDK.9`&mdash;.NET SDK 9.0
+- `Microsoft.DotNet.Runtime.8`&mdash;.NET Runtime 8.0
 - `Microsoft.DotNet.AspNetCore.8`&mdash;ASP.NET Core Runtime 8.0
 - `Microsoft.DotNet.DesktopRuntime.8`&mdash;.NET Desktop Runtime 8.0
 - `Microsoft.DotNet.SDK.8`&mdash;.NET SDK 8.0
@@ -244,7 +248,7 @@ If you install the SDK, you don't need to install the corresponding runtime.
 01. Run the `winget install` command and pass the name of the SDK package:
 
     ```cmd
-    winget install Microsoft.DotNet.SDK.8
+    winget install Microsoft.DotNet.SDK.9
     ```
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
@@ -258,8 +262,8 @@ There are different runtimes you can install. Refer to the [Choose the correct r
 01. Run the `winget install` command and pass the name of the SDK package:
 
     ```cmd
-    winget install Microsoft.DotNet.DesktopRuntime.8
-    winget install Microsoft.DotNet.AspNetCore.8
+    winget install Microsoft.DotNet.DesktopRuntime.9
+    winget install Microsoft.DotNet.AspNetCore.9
     ```
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
@@ -277,7 +281,7 @@ The search results are printed in a table with each package identifier.
 ```output
 Name                           Id                           Version                    Source
 ----------------------------------------------------------------------------------------------
-Microsoft .NET SDK 9.0 Preview Microsoft.DotNet.SDK.Preview 9.0.100-preview.3.24204.13 winget
+Microsoft .NET SDK 9.0         Microsoft.DotNet.SDK.9       9.0.100                    winget
 Microsoft .NET SDK 8.0         Microsoft.DotNet.SDK.8       8.0.300                    winget
 Microsoft .NET SDK 7.0         Microsoft.DotNet.SDK.7       7.0.409                    winget
 Microsoft .NET SDK 6.0         Microsoft.DotNet.SDK.6       6.0.422                    winget
@@ -287,7 +291,7 @@ Microsoft .NET SDK 3.1         Microsoft.DotNet.SDK.3_1     3.1.426             
 
 ### Install preview versions
 
-You can install preview versions by substituting the version number, such as `8`, with the word `Preview`. The following example installs the preview release of the .NET Desktop Runtime:
+If a preview version is available, substitute the version number in the **Id** with the word `Preview`. The following example installs the preview release of the .NET Desktop Runtime:
 
 ```cmd
 winget install Microsoft.DotNet.DesktopRuntime.Preview

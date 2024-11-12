@@ -25,21 +25,19 @@ The following table is a list of currently supported .NET releases and the versi
 | Fedora | .NET          |
 |--------|---------------|
 | 41     | 9.0, 8.0      |
-| 40     | 9.0, 8.0, 6.0 |
-| 39     | 8.0, 6.0      |
-
-> [!IMPORTANT]
-> Fedora 39 reaches end-of-life on November 12, 2024.
+| 40     | 9.0, 8.0      |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
+
+## Install .NET 9
+
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+[!INCLUDE [linux-dnf-install-80](includes/linux-install-90-dnf.md)]
 
 ## Install .NET 8
 
 [!INCLUDE [linux-dnf-install-80](includes/linux-install-80-dnf.md)]
-
-## Install .NET 6
-
-[!INCLUDE [linux-dnf-install-60](includes/linux-install-60-dnf.md)]
 
 ## Install preview versions
 
@@ -52,37 +50,6 @@ The following table is a list of currently supported .NET releases and the versi
 ## Dependencies
 
 [!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
-
-## Install on older distributions
-
-Older versions of Fedora don't contain .NET in the default package repositories. You can install .NET with the [_dotnet-install.sh_ script](linux-scripted-manual.md#scripted-install), or use Microsoft's repository to install .NET:
-
-01. First, add the Microsoft signing key to your list of trusted keys.
-
-    ```bash
-    sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    ```
-
-01. Next, add the Microsoft package repository. The source of the repository is based on your version of Fedora.
-
-    | Fedora Version | Package repository |
-    | -------------- | ------- |
-    | 36             | `https://packages.microsoft.com/config/fedora/36/prod.repo` |
-    | 35             | `https://packages.microsoft.com/config/fedora/35/prod.repo` |
-    | 34             | `https://packages.microsoft.com/config/fedora/34/prod.repo` |
-    | 33             | `https://packages.microsoft.com/config/fedora/33/prod.repo` |
-    | 32             | `https://packages.microsoft.com/config/fedora/32/prod.repo` |
-    | 31             | `https://packages.microsoft.com/config/fedora/31/prod.repo` |
-    | 30             | `https://packages.microsoft.com/config/fedora/30/prod.repo` |
-    | 29             | `https://packages.microsoft.com/config/fedora/29/prod.repo` |
-    | 28             | `https://packages.microsoft.com/config/fedora/28/prod.repo` |
-    | 27             | `https://packages.microsoft.com/config/fedora/27/prod.repo` |
-
-    ```bash
-    sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/31/prod.repo
-    ```
-
-01. Use the `sudo dnf install` command to install a .NET package.
 
 ## How to install other versions
 

@@ -31,6 +31,7 @@ The following table is a list of currently supported .NET releases on openSUSE L
 
 ## openSUSE Leap 15
 
+
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
 ```bash
@@ -41,7 +42,9 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+[!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 ## How to install other versions
 

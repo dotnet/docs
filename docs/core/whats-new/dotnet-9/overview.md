@@ -120,15 +120,27 @@ For more information, see [What's new in F# 9](../../../fsharp/whats-new/fsharp-
 
 ## Windows Presentation Foundation
 
-Windows Presentation Foundation (WPF) includes support for Windows 11 theming and hyphen-based ligatures. For more information, see [WPF in .NET 9 Preview 4 - Release Notes](https://github.com/dotnet/core/blob/main/release-notes/9.0/preview/preview4/wpf.md).
+WPF in .NET 9 bring enhanced support for building modern apps with several theming enhancements and more:
 
-<!--
+- Support for the Windows Fluent theme.
+- Theme support for Windows light and dark modes added.
+- Themes support the Windows Accent color now.
+- Font render has been improved to support hyphen-based ligatures.
+- `BinaryFormatter` is no longer supported.
+
+For more information, see [What's new in WPF for .NET 9](/dotnet/desktop/wpf/whats-new/net90).
 
 ## Windows Forms
 
-...
+WinForms in .NET 9 brings support for new themes, enhancements for asynchronous development, and more:
 
--->
+- `Form` and `TaskDialog` support `ShowDialogAsync` now. (Experimental feature)
+- `BinaryFormatter` is no longer supported.
+- Experimental support for rendering the app in dark mode, as supported by Windows.
+- `FolderBrowserDialog` and `ToolStrip` had some minor improvements.
+- The **System.Drawing** library has had many improvements, including wrapping GDI+ effects, support for `ReadOnlySpan`, and better interop code generation.
+
+For more information, see [What's new in Windows Forms for .NET 9](/dotnet/desktop/winforms/whats-new/net90).
 
 ## See also
 

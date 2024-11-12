@@ -64,4 +64,4 @@ Since MU executes the local system account (NT Authority\SYSTEM), framework-depe
 - *nextSession* defers the removal until the next logon session from members in the Administrators group.
 - Values are case-insensitive and invalid values default to *always*.
 
-When the removal is deferred, the installer writes a command to the [RunOnce](https://learn.microsoft.com/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if users in the Administrators group logs on to the machine.
+When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if users in the Administrators group logs on to the machine.

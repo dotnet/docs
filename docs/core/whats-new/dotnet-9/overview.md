@@ -103,7 +103,7 @@ ML.NET 4.0 brings the following improvements:
 - (Experimental) TorchSharp ports of Llama and Phi family of models.
 - (Experimental) CausalLM pipeline APIs
 
-For more information, see [What's new in ML.NET](dotnet/machine-learning/whats-new/overview).
+For more information, see [What's new in ML.NET](../../../machine-learning/whats-new/overview.md).
 
 ## .NET Aspire
 

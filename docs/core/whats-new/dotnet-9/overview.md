@@ -67,7 +67,15 @@ ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, OpenAPI, an
 
 ## .NET MAUI
 
-The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is to improve product quality. For more information about that and new features, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
+The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is to improve product quality. In addition:
+
+- A new `TitleBar` desktop control is available for Windows
+- A new `HybridWebView` control enables easier inclusion of JavaScript enabled content from frameworks like ReactJS, Vue.js, and Angular
+- `Entry` now supports additional keyboard modes
+- Control handlers automatically disconnect from their controls when possible
+- `MainPage` is deprecated in favor of setting the primary page of the app by overriding `CreateWindow` in the `App` class
+  
+For more information about that and new features, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
 
 ## EF Core
 

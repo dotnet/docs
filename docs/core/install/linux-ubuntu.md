@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Learn about the ways you can install .NET on Ubuntu, either from the built-in package feed, the .NET backports repository, or the Microsoft repository.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/04/2024
+ms.date: 11/11/2024
 ms.custom: updateeachrelease, linux-related-content
 ---
 
@@ -116,7 +116,7 @@ Starting with .NET 8 on Ubuntu 24.04, Canonical supports .NET for the IBM System
 
 Install .NET through the built-in Ubuntu feed. For more information, see the following page:
 
-- [Install .NET 8 on Ubuntu 24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410&tabs=dotnet8).
+- [Install .NET 9 on Ubuntu 24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410&tabs=dotnet9).
 
 ## Supported distributions
 
@@ -127,9 +127,9 @@ The following table is a list of currently supported .NET releases and the versi
 | Ubuntu                                                             | Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](#register-the-ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](#register-the-microsoft-package-repository) |
 |--------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | [24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410)       | 9.0, 8.0                | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
-| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 9.0, 8.0, 6.0           | 8.0                                  | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
-| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 9.0, 8.0, 6.0           | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
-| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 8.0, 6.0                | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
+| [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 9.0, 8.0                | 8.0                                  | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
+| [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 9.0, 8.0                | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
+| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 9.0, 8.0                | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
 
@@ -223,16 +223,18 @@ sudo apt update
 
 ## Install .NET
 
-Install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 8.0, use the command `sudo apt install dotnet-sdk-8.0`. The following table lists the currently supported .NET packages (which [might vary by your Ubuntu version](#supported-distributions)):
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+Install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 9.0, use the command `sudo apt install dotnet-sdk-9.0`. The following table lists the currently supported .NET packages (which [might vary by your Ubuntu version](#supported-distributions)):
 
 || Product      | Type    | Package                  |
 |---------|--------------|---------|--------------------------|
+| **9.0**    | ASP.NET Core | Runtime | `aspnetcore-runtime-9.0` |
+| **9.0**    | .NET         | Runtime | `dotnet-runtime-9.0`     |
+| **9.0**    | .NET         | SDK     | `dotnet-sdk-9.0`         |
 | **8.0**    | ASP.NET Core | Runtime | `aspnetcore-runtime-8.0` |
 | **8.0**    | .NET         | Runtime | `dotnet-runtime-8.0`     |
 | **8.0**    | .NET         | SDK     | `dotnet-sdk-8.0`         |
-| **6.0**    | ASP.NET Core | Runtime | `aspnetcore-runtime-6.0` |
-| **6.0**    | .NET         | Runtime | `dotnet-runtime-6.0`     |
-| **6.0**    | .NET         | SDK     | `dotnet-sdk-6.0`         |
 
 > [!TIP]
 > If you're not creating .NET apps, install the ASP.NET Core runtime as it includes the .NET runtime and also supports ASP.NET Core apps.
@@ -259,11 +261,11 @@ For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md?pivots
 
 ## Use APT to update .NET
 
-If you installed .NET through a package manager, you can upgrade the package with the `apt upgrade` command. For example, the following commands upgrade the `dotnet-sdk-8.0` package with the latest version:
+If you installed .NET through a package manager, you can upgrade the package with the `apt upgrade` command. For example, the following commands upgrade the `dotnet-sdk-9.0` package with the latest version:
 
 ```bash
 sudo apt update
-sudo apt upgrade dotnet-sdk-8.0
+sudo apt upgrade dotnet-sdk-9.0
 ```
 
 > [!TIP]

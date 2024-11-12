@@ -31,7 +31,6 @@ The following table is a list of currently supported .NET releases on openSUSE L
 
 ## openSUSE Leap 15
 
-
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
 ```bash

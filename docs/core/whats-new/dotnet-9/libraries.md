@@ -2,13 +2,13 @@
 title: What's new in .NET libraries for .NET 9
 description: Learn about the new .NET libraries features introduced in .NET 9.
 titleSuffix: ""
-ms.date: 10/08/2024
+ms.date: 11/11/2024
 ms.topic: whats-new
 ---
 
 # What's new in .NET libraries for .NET 9
 
-This article describes new features in the .NET libraries for .NET 9. It's been updated for .NET 9 RC 2.
+This article describes new features in the .NET libraries for .NET 9.
 
 ## Base64Url
 

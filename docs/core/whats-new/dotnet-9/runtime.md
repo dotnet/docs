@@ -2,12 +2,12 @@
 title: What's new in .NET 9 runtime
 description: Learn about the new .NET features introduced in the .NET 9 runtime.
 titleSuffix: ""
-ms.date: 10/08/2024
+ms.date: 11/11/2024
 ms.topic: whats-new
 ---
 # What's new in the .NET 9 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 9. It's been updated for .NET 9 RC 2.
+This article describes new features and performance improvements in the .NET runtime for .NET 9.
 
 ## Attribute model for feature switches with trimming support
 

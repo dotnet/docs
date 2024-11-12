@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 10/08/2024
+ms.date: 11/11/2024
 ms.topic: whats-new
 ---
 
@@ -59,7 +59,7 @@ ML.NET is an open-source, cross-platform framework that enables integration of c
 
 ## .NET Aspire
 
-.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 9. For more information, see [.NET Aspire](/dotnet/aspire).
+.NET Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ .NET Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. .NET Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in .NET Aspire 9](/dotnet/aspire/whats-new/dotnet-aspire-9-release-candidate-1).
 
 ## ASP.NET Core
 
@@ -67,7 +67,15 @@ ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, OpenAPI, an
 
 ## .NET MAUI
 
-The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is to improve product quality. For more information about that and new features, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
+The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is enhanced performance and reliability, and deeper integrations for desktop and mobile applications. .NET MAUI includes a new, more performant implementation of <xref:Microsoft.Maui.Controls.CollectionView> and <xref:Microsoft.Maui.Controls.CarouselView> for iOS and Mac Catalyst, updates to existing controls, new app lifecycle events, and Native AOT and trimming enhancements to improve app size and startup time.  In addition:
+
+- A new <xref:Microsoft.Maui.Controls.TitleBar> desktop control is available for Windows.
+- A new <xref:Microsoft.Maui.Controls.HybridWebView> control enables easier inclusion of JavaScript-enabled content from frameworks like ReactJS, Vue.js, and Angular.
+- <xref:Microsoft.Maui.Controls.Entry> now supports additional keyboard modes.
+- Control handlers automatically disconnect from their controls when possible.
+- <xref:Microsoft.Maui.Controls.Application.MainPage> is deprecated in favor of setting the primary page of the app by overriding <xref:Microsoft.Maui.Controls.Application.CreateWindow(Microsoft.Maui.IActivationState)?displayProperty=nameWithType> class.
+  
+For more information about that these new features and more, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
 
 ## EF Core
 
@@ -112,15 +120,27 @@ For more information, see [What's new in F# 9](../../../fsharp/whats-new/fsharp-
 
 ## Windows Presentation Foundation
 
-Windows Presentation Foundation (WPF) includes support for Windows 11 theming and hyphen-based ligatures. For more information, see [WPF in .NET 9 Preview 4 - Release Notes](https://github.com/dotnet/core/blob/main/release-notes/9.0/preview/preview4/wpf.md).
+WPF in .NET 9 bring enhanced support for building modern apps with several theming enhancements and more:
 
-<!--
+- Support for the Windows Fluent theme.
+- Theme support for Windows light and dark modes added.
+- Themes support the Windows Accent color now.
+- Font render has been improved to support hyphen-based ligatures.
+- `BinaryFormatter` is no longer supported.
+
+For more information, see [What's new in WPF for .NET 9](/dotnet/desktop/wpf/whats-new/net90).
 
 ## Windows Forms
 
-...
+WinForms in .NET 9 brings support for new themes, enhancements for asynchronous development, and more:
 
--->
+- `Form` and `TaskDialog` support `ShowDialogAsync` now. (Experimental feature)
+- `BinaryFormatter` is no longer supported.
+- Experimental support for rendering the app in dark mode, as supported by Windows.
+- `FolderBrowserDialog` and `ToolStrip` had some minor improvements.
+- The **System.Drawing** library has had many improvements, including wrapping GDI+ effects, support for `ReadOnlySpan`, and better interop code generation.
+
+For more information, see [What's new in Windows Forms for .NET 9](/dotnet/desktop/winforms/whats-new/net90).
 
 ## See also
 

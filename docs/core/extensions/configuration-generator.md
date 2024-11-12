@@ -40,16 +40,16 @@ The preceding project file enables the configuration source generator by setting
 
 Next, consider the _Program.cs_ file:
 
-:::code source="snippets/configuration/console-binder-gen/Program.cs" highlight="12-14":::
+:::code source="snippets/configuration/console-binder-gen/Program.cs" highlight="13":::
 
 The preceding code:
 
 - Instantiates a configuration builder instance.
 - Calls <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection%2A> and defines three configuration source values.
 - Calls <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build> to build the configuration.
-- Uses the <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue%2A?displayProperty=nameWithType> extension method to get the value for each configuration key.
+- Uses the <xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Bind%2A?displayProperty=nameWithType> method to bind the `Settings` object to the configuration values.
 
-When the application is built, the configuration source generator intercepts the call to `GetValue<T>` and generates the binding code.
+When the application is built, the configuration source generator intercepts the call to `Bind` and generates the binding code.
 
 > [!IMPORTANT]
 > When the `PublishAot` property is set to `true` (or any other AOT warnings are enabled) and the `EnabledConfigurationBindingGenerator` property is set to `false`, warning `IL2026` is raised. This warning indicates that members are attributed with [RequiresUnreferencedCode](xref:System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute) may break when trimming. For more information, see [IL2026](../deploying/trimming/trim-warnings/il2026.md).
@@ -72,13 +72,11 @@ namespace System.Runtime.CompilerServices
     using System;
     using System.CodeDom.Compiler;
 
-    [GeneratedCode(
-        "Microsoft.Extensions.Configuration.Binder.SourceGeneration",
-        "8.0.10.31311")]
+    [GeneratedCode("Microsoft.Extensions.Configuration.Binder.SourceGeneration", "9.0.10.47305")]
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
     file sealed class InterceptsLocationAttribute : Attribute
     {
-        public InterceptsLocationAttribute(string filePath, int line, int column)
+        public InterceptsLocationAttribute(int version, string data)
         {
         }
     }
@@ -89,78 +87,105 @@ namespace Microsoft.Extensions.Configuration.Binder.SourceGeneration
     using Microsoft.Extensions.Configuration;
     using System;
     using System.CodeDom.Compiler;
+    using System.Collections.Generic;
     using System.Globalization;
     using System.Runtime.CompilerServices;
 
-    [GeneratedCode(
-        "Microsoft.Extensions.Configuration.Binder.SourceGeneration",
-        "8.0.10.31311")]
+    [GeneratedCode("Microsoft.Extensions.Configuration.Binder.SourceGeneration", "9.0.10.47305")]
     file static class BindingExtensions
     {
         #region IConfiguration extensions.
-        /// <summary>
-        /// Extracts the value with the specified key and converts it to the specified type.
-        /// </summary>
-        [InterceptsLocation(@"C:\source\configuration\console-binder-gen\Program.cs", 12, 26)]
-        [InterceptsLocation(@"C:\source\configuration\console-binder-gen\Program.cs", 13, 29)]
-        [InterceptsLocation(@"C:\source\configuration\console-binder-gen\Program.cs", 14, 28)]
-        public static T? GetValue<T>(this IConfiguration configuration, string key) =>
-            (T?)(BindingExtensions.GetValueCore(configuration, typeof(T), key) ?? default(T));
+        /// <summary>Attempts to bind the given object instance to configuration values by matching property names against configuration keys recursively.</summary>
+        [InterceptsLocation(1, "uDIs2gDFz/yEvxOzjNK4jnIBAABQcm9ncmFtLmNz")] // D:\source\WorkerService1\WorkerService1\Program.cs(13,15)
+        public static void Bind_Settings(this IConfiguration configuration, object? instance)
+        {
+            ArgumentNullException.ThrowIfNull(configuration);
+
+            if (instance is null)
+            {
+                return;
+            }
+
+            var typedObj = (global::Settings)instance;
+            BindCore(configuration, ref typedObj, defaultValueIfNotFound: false, binderOptions: null);
+        }
         #endregion IConfiguration extensions.
 
         #region Core binding extensions.
-        public static object? GetValueCore(
-            this IConfiguration configuration, Type type, string key)
+        private readonly static Lazy<HashSet<string>> s_configKeys_Settings = new(() => new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "Port", "Enabled", "ApiUrl" });
+
+        public static void BindCore(IConfiguration configuration, ref global::Settings instance, bool defaultValueIfNotFound, BinderOptions? binderOptions)
         {
-            if (configuration is null)
+            ValidateConfigurationKeys(typeof(global::Settings), s_configKeys_Settings, configuration, binderOptions);
+
+            if (configuration["Port"] is string value0 && !string.IsNullOrEmpty(value0))
             {
-                throw new ArgumentNullException(nameof(configuration));
+                instance.Port = ParseInt(value0, configuration.GetSection("Port").Path);
+            }
+            else if (defaultValueIfNotFound)
+            {
+                instance.Port = instance.Port;
             }
 
-            IConfigurationSection section = configuration.GetSection(key);
-
-            if (section.Value is not string value)
+            if (configuration["Enabled"] is string value1 && !string.IsNullOrEmpty(value1))
             {
-                return null;
+                instance.Enabled = ParseBool(value1, configuration.GetSection("Enabled").Path);
+            }
+            else if (defaultValueIfNotFound)
+            {
+                instance.Enabled = instance.Enabled;
             }
 
-            if (type == typeof(int))
+            if (configuration["ApiUrl"] is string value2)
             {
-                return ParseInt(value, () => section.Path);
+                instance.ApiUrl = value2;
             }
-            else if (type == typeof(bool))
+            else if (defaultValueIfNotFound)
             {
-                return ParseBool(value, () => section.Path);
+                var currentValue = instance.ApiUrl;
+                if (currentValue is not null)
+                {
+                    instance.ApiUrl = currentValue;
+                }
             }
-            else if (type == typeof(global::System.Uri))
-            {
-                return ParseSystemUri(value, () => section.Path);
-            }
-
-            return null;
         }
 
-        public static int ParseInt(
-            string value, Func<string?> getPath)
+
+        /// <summary>If required by the binder options, validates that there are no unknown keys in the input configuration object.</summary>
+        public static void ValidateConfigurationKeys(Type type, Lazy<HashSet<string>> keys, IConfiguration configuration, BinderOptions? binderOptions)
+        {
+            if (binderOptions?.ErrorOnUnknownConfiguration is true)
+            {
+                List<string>? temp = null;
+        
+                foreach (IConfigurationSection section in configuration.GetChildren())
+                {
+                    if (!keys.Value.Contains(section.Key))
+                    {
+                        (temp ??= new List<string>()).Add($"'{section.Key}'");
+                    }
+                }
+        
+                if (temp is not null)
+                {
+                    throw new InvalidOperationException($"'ErrorOnUnknownConfiguration' was set on the provided BinderOptions, but the following properties were not found on the instance of {type}: {string.Join(", ", temp)}");
+                }
+            }
+        }
+
+        public static int ParseInt(string value, string? path)
         {
             try
             {
-                return int.Parse(
-                    value, 
-                    NumberStyles.Integer,
-                    CultureInfo.InvariantCulture);
+                return int.Parse(value, NumberStyles.Integer, CultureInfo.InvariantCulture);
             }
             catch (Exception exception)
             {
-                throw new InvalidOperationException(
-                    $"Failed to convert configuration value at " +
-                    "'{getPath()}' to type '{typeof(int)}'.",
-                    exception);
+                throw new InvalidOperationException($"Failed to convert configuration value at '{path}' to type '{typeof(int)}'.", exception);
             }
         }
 
-        public static bool ParseBool(
-            string value, Func<string?> getPath)
+        public static bool ParseBool(string value, string? path)
         {
             try
             {
@@ -168,28 +193,7 @@ namespace Microsoft.Extensions.Configuration.Binder.SourceGeneration
             }
             catch (Exception exception)
             {
-                throw new InvalidOperationException(
-                    $"Failed to convert configuration value at " +
-                    "'{getPath()}' to type '{typeof(bool)}'.",
-                    exception);
-            }
-        }
-
-        public static global::System.Uri ParseSystemUri(
-            string value, Func<string?> getPath)
-        {
-            try
-            {
-                return new Uri(
-                    value,
-                    UriKind.RelativeOrAbsolute);
-            }
-            catch (Exception exception)
-            {
-                throw new InvalidOperationException(
-                    $"Failed to convert configuration value at " +
-                    "'{getPath()}' to type '{typeof(global::System.Uri)}'.",
-                    exception);
+                throw new InvalidOperationException($"Failed to convert configuration value at '{path}' to type '{typeof(bool)}'.", exception);
             }
         }
         #endregion Core binding extensions.
@@ -200,9 +204,9 @@ namespace Microsoft.Extensions.Configuration.Binder.SourceGeneration
 > [!NOTE]
 > This generated code is subject to change based on the version of the configuration source generator.
 
-The generated code contains the `BindingExtensions` class, which contains the `GetValueCore` method that performs the actual binding. The `GetValue<T>` extension method calls the `GetValueCore` method and casts the result to the specified type.
+The generated code contains the `BindingExtensions` class, which contains the `BindCore` method that performs the actual binding. The `Bind_Settings` method calls the `BindCore` method and casts the instance to the specified type.
 
-To see the generated code, set the `<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>` in the project file. This ensures that the files are visible to the developer for inspection.
+To see the generated code, set the `<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>` in the project file. This ensures that the files are visible to the developer for inspection. You can also view the generated code in Visual Studio's **Solution Explorer** under your project's **Dependencies** > **Analyzers** > **Microsoft.Extensions.Configuration.Binder.SourceGeneration** node.
 
 ## See also
 

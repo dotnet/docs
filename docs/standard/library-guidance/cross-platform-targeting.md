@@ -1,7 +1,7 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 11/14/2023
+ms.date: 11/11/2024
 ---
 
 # Cross-platform targeting
@@ -33,7 +33,7 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 
 ✔️ DO include a `net6.0` target or later if you require new APIs introduced in a modern .NET.
 
-> .NET 6 and later apps can use a `netstandard2.0` target, so `net6.0` isn't required. You should explicitly target `net6.0`, `net7.0`, or `net8.0` when you want to use newer .NET APIs.
+> .NET 6 and later apps can use a `netstandard2.0` target, so `net6.0` isn't required. You should explicitly target `net6.0`, `net7.0`, `net8.0`, or `net9.0` when you want to use newer .NET APIs.
 
 ❌ AVOID including a `netstandard1.x` target.
 

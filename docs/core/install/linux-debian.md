@@ -19,13 +19,10 @@ This article describes how to install .NET on Debian. When a Debian version fall
 
 The following table is a list of currently supported .NET releases and the versions of Debian they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Debian reaches end-of-life](https://wiki.debian.org/DebianReleases).
 
-| Debian  | .NET   |
-|---------|--------|
-| 12      | 9, 8, 6 |
-| 11      | 8, 6   |
-
-> [!IMPORTANT]
-> .NET 9 is currently in preview.
+| Debian | .NET    |
+|--------|---------|
+| 12     | 9, 8    |
+| 11     | 8       |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -39,6 +36,8 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Debian 12
 
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
@@ -47,7 +46,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
-[!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
+[!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
 ## Debian 11
 
@@ -116,13 +115,13 @@ If you're using a Debian version prior to 12, try the following commands:
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
-### 10.x
+### 12.x
 
 - libc6
-- libgcc1
+- libgcc-s1
 - libgssapi-krb5-2
-- libicu63
-- libssl1.1
+- libicu72
+- libssl3
 - libstdc++6
 - zlib1g
 
@@ -136,15 +135,17 @@ When you install with a package manager, these libraries are installed for you. 
 - libstdc++6
 - zlib1g
 
-### 12.x
+### 10.x
 
 - libc6
-- libgcc-s1
+- libgcc1
 - libgssapi-krb5-2
-- libicu72
-- libssl3
+- libicu63
+- libssl1.1
 - libstdc++6
 - zlib1g
+
+### Other notes
 
 Dependencies can be installed with the `apt install` command. The following snippet demonstrates installing the `libc6` library:
 

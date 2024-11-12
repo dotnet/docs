@@ -1648,6 +1648,10 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0304.md
                   - name: IDE0305
                     href: ../../fundamentals/code-analysis/style-rules/ide0305.md
+                  - name: IDE0320
+                    href: ../../fundamentals/code-analysis/style-rules/ide0320.md
+                  - name: IDE0330
+                    href: ../../fundamentals/code-analysis/style-rules/ide0330.md
                   - name: IDE1005
                     href: ../../fundamentals/code-analysis/style-rules/ide1005.md
               - name: Miscellaneous rules
@@ -1809,6 +1813,9 @@ items:
           - name: Overview
             displayName: syslib, experimental
             href: ../../fundamentals/syslib-diagnostics/experimental-overview.md
+          - name: SYSLIB5003
+            href: ../../fundamentals/syslib-diagnostics/syslib5003.md
+            displayProperty: syslib5003          
       - name: Source-generated code
         items:
           - name: Overview

@@ -10,7 +10,7 @@ ms.custom: vs-dotnet
 ---
 # Tutorial: Create a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial shows how to create and run a .NET console application in Visual Studio 2022.
 

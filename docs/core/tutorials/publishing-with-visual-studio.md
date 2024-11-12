@@ -10,7 +10,7 @@ ms.custom: "vs-dotnet"
 ---
 # Tutorial: Publish a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 

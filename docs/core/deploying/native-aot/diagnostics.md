@@ -10,7 +10,10 @@ ms.date: 08/07/2023
 
 Native AOT shares some, but not all, diagnostics and instrumentation capabilities with CoreCLR. Because of CoreCLR's rich selection of diagnostic utilities, it's sometimes appropriate to diagnose and debug problems in CoreCLR. Apps that are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) shouldn't have behavioral differences, so investigations often apply to both runtimes. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
 
-## .NET 8 Native AOT diagnostic support
+## Native AOT diagnostic support
+
+> [!NOTE]
+> Starting from .NET 9, Native AOT supports targeting iOS-like platforms with .NET MAUI for which diagnostics support is described in the following [document](https://github.com/dotnet/docs-maui/blob/7ff3052a0b3535316775bba2583ee09ffdd9befa/docs/deployment/nativeaot.md#native-aot-diagnostic-support-on-ios-like-platforms).
 
 The following table summarizes diagnostic features supported for Native AOT deployments:
 

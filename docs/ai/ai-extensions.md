@@ -12,7 +12,7 @@ ms.author: alexwolf
 
 The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [`Microsoft.Extensions.AI.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) libraries. The .NET team also enhanced the core `Microsoft.Extensions.*` libraries with these abstractions for .NET Generative AI applications and libraries. In the sections ahead, you learn:
 
-- Core concepts and capabilities of the `Microsoft.Extensions.AI` library.
+- Core concepts and capabilities of the `Microsoft.Extensions.AI` libraries.
 - How to work with AI abstractions in your apps and the benefits they offer.
 - Essential AI middleware concepts.
 

@@ -13,6 +13,14 @@ The .NET ecosystem provides many powerful tools, libraries, and services to deve
 > [!IMPORTANT]
 > Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support, and compatibility to ensure they meet your requirements.
 
+## Microsoft.Extensions.AI library for .NET
+
+`Microsoft.Extensions.AI` is a set of core .NET libraries created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
+
+:::image type="content" source="media/ai-extensions/meai-architecture-diagram.png" alt-text="An architectural diagram of the AI extensions libraries.":::
+
+`Microsoft.Extensions.AI` provides abstractions that can be implemented by various services, all adhering to the same core concepts. This library is not intended to provide APIs tailored to any specific provider's services. The goal of `Microsoft.Extensions.AI` is to act as a unifying layer within the .NET ecosystem, enabling developers to choose their preferred frameworks and libraries while ensuring seamless integration and collaboration across the ecosystem.
+
 ## Semantic Kernel for .NET
 
 [Semantic Kernel](semantic-kernel-dotnet-overview.md) is an open-source SDK that enables AI integration and orchestration capabilities in your .NET apps. This SDK is generally the recommended AI orchestration tool for .NET apps that use one or more AI services in combination with other APIs or web services, data stores, and custom code. Semantic Kernel benefits enterprise developers in the following ways:

@@ -32,6 +32,10 @@ Serialization is the process of converting an object into a format that can be r
 
  ❌ AVOID supporting Runtime Serialization or XML Serialization just for general persistence reasons. Prefer Data Contract Serialization instead.
 
+[!INCLUDE [binary-serialization-warning](../../../binary-serialization-warning.md)]
+
+[!INCLUDE [netdatacontractserializer-warning](../../../netdatacontractserializer-warning.md)]
+
 ## Supporting Data Contract Serialization
 
  Types can support Data Contract Serialization by applying the <xref:System.Runtime.Serialization.DataContractAttribute> to the type and the <xref:System.Runtime.Serialization.DataMemberAttribute> to the members (fields and properties) of the type.

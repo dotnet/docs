@@ -346,6 +346,10 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 [!INCLUDE [verify-download-windows](includes/verify-download-windows.md)]
 
+## Microsoft Update
+
+[!INCLUDE [microsoft-update](includes/microsoft-update.md)]
+
 ## Troubleshooting
 
 After installing the .NET SDK, you might run into problems trying to run .NET CLI commands. This section collects those common problems and provides solutions.

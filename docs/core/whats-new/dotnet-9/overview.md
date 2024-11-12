@@ -53,15 +53,15 @@ The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
-## AI Building Blocks and Fundamentals
+## AI building blocks and fundamentals
 
 ### Microsoft.Extensions.AI & Microsoft.Extensions.VectorData
 
-.NET 9 introduces a unified layer of C# abstractions through [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions/) and [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/). These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
+.NET 9 introduces a unified layer of C# abstractions through the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions/) and [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) packages. These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
 
 ### Tokenizers
 
-The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides .NET developer with capabilities for encoding and decoding text to tokens. For AI scenarios, this is important to manage context, calculate cost, and pre-process text when working with local models.
+The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides .NET developers with capabilities for encoding and decoding text to tokens. For AI scenarios, this is important to manage context, calculate cost, and preprocess text when working with local models.
 
 The latest release introduces significant new capabilities:
 
@@ -104,6 +104,8 @@ ML.NET 4.0 brings the following improvements:
 - DataFrame improvements.
 - (Experimental) TorchSharp ports of Llama and Phi family of models.
 - (Experimental) CausalLM pipeline APIs
+
+For more information, see [What's new in ML.NET](dotnet/machine-learning/whats-new/overview).
 
 ## .NET Aspire
 

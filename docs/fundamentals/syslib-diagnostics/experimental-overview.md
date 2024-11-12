@@ -21,7 +21,7 @@ The following table provides an index to the `SYSLIB5XXX` experimental APIs in .
 | - | - | - |
 | SYSLIB5001 | .NET 9 | <xref:System.Numerics.Tensors.Tensor%601> and related APIs in <xref:System.Numerics.Tensors> are experimental |
 | SYSLIB5002 | .NET 9 | <xref:System.Drawing.SystemColors> alternate colors are experimental |
-| SYSLIB5003 | .NET 9 | <xref:System.Runtime.Intrinsics.Arm.Sve> is experimental |
+| [SYSLIB5003](./syslib5003.md) | .NET 9 | <xref:System.Runtime.Intrinsics.Arm.Sve> is experimental |
 | SYSLIB5004 | .NET 9 | <xref:System.Runtime.Intrinsics.X86.X86Base.DivRem(System.UInt32,System.Int32,System.Int32)> is experimental since performance is not as optimized as `T.DivRem` |
 | SYSLIB5005 | .NET 9 | <xref:System.Formats.Nrbf> is experimental |
 

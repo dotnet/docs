@@ -12,7 +12,10 @@ zone_pivot_groups: openai-library
 
 # Connect to and prompt an AI model using .NET
 
-In this quickstart, learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+In this quickstart, you learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+
+> [!NOTE]
+> The [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) library is currently in Preview.
 
 :::zone target="docs" pivot="openai"
 
@@ -26,11 +29,13 @@ In this quickstart, learn how to create a .NET console chat app to connect to an
 
 :::zone-end
 
+[!INCLUDE [semantic-kernel](../../azure/includes/semantic-kernel.md)]
+
 [!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
 ## Create the app
 
-Complete the following steps to create a .NET console app to connect to an AI service.
+Complete the following steps to create a .NET console app to connect to an AI model.
 
 1. In an empty directory on your computer, use the `dotnet new` command to create a new console app:
 
@@ -90,19 +95,14 @@ Complete the following steps to create a .NET console app to connect to an AI se
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set OpenAIKey <your-openai-key>
-    ```
-
-1. Use the `dotnet run` command to run the app:
-
-    ```dotnetcli
-    dotnet run
+    dotnet user-secrets set ModelName <your-openai-model-name>
     ```
 
 :::zone-end
 
 ## Add the app code
 
-The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
+The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) package to send and receive requests to the AI model.
 
 1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model.
 
@@ -129,7 +129,15 @@ The app uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Mic
 
     :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="20-22":::
 
-    Customize the text content of the `benefits.md` file or the length of the summary to see the differences in the responses.
+1. Use the `dotnet run` command to run the app:
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+    The app prints out the completion response from the AI model. Customize the text content of the `benefits.md` file or the length of the summary to see the differences in the responses.
+
+:::zone target="docs" pivot="azure-openai"
 
 ## Clean up resources
 
@@ -138,6 +146,8 @@ When you no longer need the sample application or resources, remove the correspo
 ```azdeveloper
 azd down
 ```
+
+:::zone-end
 
 ## Next steps
 

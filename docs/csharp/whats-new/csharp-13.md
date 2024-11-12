@@ -1,12 +1,12 @@
 ---
 title: What's new in C# 13
-description: Get an overview of the new features in C# 13. Follow the release of new preview features as .NET 9 and C# 13 previews are released.
+description: Get an overview of the new features in C# 13.
 ms.date: 09/30/2024
 ms.topic: whats-new
 ---
 # What's new in C# 13
 
-C# 13 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 9 Preview SDK](https://dotnet.microsoft.com/download/dotnet):
+C# 13 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet):
 
 - [`params` collections](#params-collections)
 - [New `lock` type and semantics](#new-lock-object).
@@ -21,7 +21,7 @@ C# 13 includes the following new features. You can try these features using the 
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
-You can download the latest .NET 9 preview SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022 - preview](https://visualstudio.microsoft.com/vs/), which includes the .NET 9 Preview SDK.
+You can download the latest .NET 9 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 9 SDK.
 
 New features are added to the "What's new in C#" page when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
 
@@ -146,7 +146,7 @@ public partial class C
 {
     // implementation declaration:
     private string _name;
-    public partial string Name 
+    public partial string Name
     {
         get => _name;
         set => _name = value;

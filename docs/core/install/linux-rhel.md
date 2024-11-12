@@ -26,17 +26,14 @@ To install .NET from Red Hat on RHEL, you first need to register using the Red H
 
 The following table is a list of currently supported .NET releases on both RHEL and CentOS Stream. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the Linux distribution is no longer supported.
 
-| Distribution                                                  | .NET     |
-|---------------------------------------------------------------|----------|
+| Distribution                                                  | .NET          |
+|---------------------------------------------------------------|---------------|
 | [RHEL 9](#rhel-9)                                             | 9.0, 8.0, 6.0 |
 | [RHEL 8](#rhel-8)                                             | 9.0, 8.0, 6.0 |
-| [RHEL 7](#rhel-7--net-8)                                      | 6.0      |
+| [RHEL 7](#rhel-7--net-8)                                      | 6.0           |
 | [CentOS Stream 9](#centos-stream-9)                           | 9.0, 8.0, 6.0 |
-| [CentOS Stream 8](#centos-stream-8)                           | 8.0, 6.0 |
-| [CentOS Linux is no longer supported](#where-is-centos-linux) |          |
-
-> [!IMPORTANT]
-> .NET 9 is currently in preview and may not be available in the package repository.
+| [CentOS Stream 8](#centos-stream-8)                           | 8.0, 6.0      |
+| [CentOS Linux is no longer supported](#where-is-centos-linux) |               |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 

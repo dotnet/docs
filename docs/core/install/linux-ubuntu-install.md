@@ -31,9 +31,6 @@ The following versions of .NET are supported or available for Ubuntu 24.10:
 - 9.0
 - 8.0
 
-> [!IMPORTANT]
-> .NET 9 is currently in preview.
-
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 9](#tab/dotnet9)

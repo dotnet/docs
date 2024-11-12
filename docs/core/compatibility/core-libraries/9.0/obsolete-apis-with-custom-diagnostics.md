@@ -1,8 +1,8 @@
 ---
 title: "Breaking change: .NET 9 obsoletions with custom IDs"
 titleSuffix: ""
-description: Learn about the .NET 9 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
-ms.date: 08/07/2024
+description: Learn about the APIs that have been marked as obsolete in .NET 9 with a custom diagnostic ID.
+ms.date: 11/06/2024
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 9)
 
@@ -17,6 +17,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | Diagnostic ID | Description | Severity |
 | - | - |
 | [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. | Warning |
+| [SYSLIB0014: WebRequest, HttpWebRequest, ServicePoint, WebClient are obsolete](../../../../fundamentals/syslib-diagnostics/syslib0014.md) | <xref:System.Net.ServicePointManager> is fully obsolete. Settings on <xref:System.Net.ServicePointManager> don't affect <xref:System.Net.Security.SslStream> or <xref:System.Net.Http.HttpClient> (this behavior hasn't changed since .NET 6). | Warning |
 | [SYSLIB0054](../../../../fundamentals/syslib-diagnostics/syslib0054.md) | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. | Warning |
 | [SYSLIB0055](../../../../fundamentals/syslib-diagnostics/syslib0055.md) | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. | Warning |
 | [SYSLIB0056](../../../../fundamentals/syslib-diagnostics/syslib0056.md) | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. | Warning |
@@ -41,6 +42,10 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 ### SYSLIB0009
 
 - <xref:System.Net.AuthenticationManager?displayProperty=fullName>
+
+### SYSLIB0014
+
+- <xref:System.Net.ServicePointManager?displayProperty=fullName>
 
 ### SYSLIB0054
 

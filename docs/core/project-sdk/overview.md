@@ -2,7 +2,7 @@
 title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
-ms.date: 06/30/2022
+ms.date: 10/15/2024
 ms.topic: conceptual
 no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
@@ -12,22 +12,25 @@ Modern .NET projects are associated with a project software development kit (SDK
 
 ## Available SDKs
 
-The following SDKs are available:
+The available SDKs include:
 
-| ID                         | Description                                             | Repo                                   |
-|----------------------------|---------------------------------------------------------|----------------------------------------|
-| `Microsoft.NET.Sdk`        | The .NET SDK                                            | <https://github.com/dotnet/sdk>        |
-| `Microsoft.NET.Sdk.Web`    | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk)    | <https://github.com/dotnet/sdk>        |
-| `Microsoft.NET.Sdk.Razor`  | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk)      | <https://github.com/dotnet/aspnetcore> |
+| ID                         | Description                                                                          | Repo                                   |
+|----------------------------|--------------------------------------------------------------------------------------|----------------------------------------|
+| `Microsoft.NET.Sdk`        | The .NET SDK                                                                         | <https://github.com/dotnet/sdk>        |
+| `Microsoft.NET.Sdk.Web`    | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk)                                 | <https://github.com/dotnet/sdk>        |
+| `Microsoft.NET.Sdk.Razor`  | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk)                                   | <https://github.com/dotnet/aspnetcore> |
 | `Microsoft.NET.Sdk.BlazorWebAssembly` | The .NET [Blazor WebAssembly SDK](/aspnet/core/blazor#blazor-webassembly) | <https://github.com/dotnet/aspnetcore> |
-| `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service](../extensions/workers.md) SDK |                                        |
-| `MSTest.Sdk`               | The [MSTest SDK](../testing/unit-testing-mstest-sdk.md) | <https://github.com/microsoft/testfx>  |
+| `Microsoft.NET.Sdk.Worker` | The .NET [Worker Service SDK](../extensions/workers.md)                              | <https://github.com/dotnet/aspnetcore> |
+| `Aspire.AppHost.Sdk`       | The .NET [Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk)                 | <https://github.com/dotnet/aspire>     |
+| `MSTest.Sdk`               | The [MSTest SDK](../testing/unit-testing-mstest-sdk.md)                              | <https://github.com/microsoft/testfx>  |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
 
-You can also author your own SDK that can be distributed via NuGet.
-
 For Windows Forms and Windows Presentation Foundation (WPF) projects, you specify the .NET SDK (`Microsoft.NET.Sdk`) and set some additional properties in the project file. For more information, see [Enable .NET Desktop SDK](msbuild-props-desktop.md#enable-net-desktop-sdk).
+
+MSBuild SDKs, which you can use to configure and extend your build, are listed at [MSBuild SDKs](https://github.com/microsoft/MSBuildSdks/blob/main/README.md).
+
+You can also author your own SDK that can be distributed via NuGet.
 
 ## Project files
 
@@ -35,9 +38,22 @@ For Windows Forms and Windows Presentation Foundation (WPF) projects, you specif
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
-  ...
+    <!-- Omitted for brevity... -->
 </Project>
 ```
+
+The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the following example, where the .NET Aspire SDK (`Aspire.AppHost.Sdk`) is added to the project atop the `Microsoft.NET.Sdk`:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+    <!-- Omitted for brevity... -->
+
+</Project>
+```
+
+In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [.NET Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk)
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 

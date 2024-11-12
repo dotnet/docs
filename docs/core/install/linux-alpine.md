@@ -3,7 +3,7 @@ title: Install .NET on Alpine
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/22/2024
+ms.date: 11/01/2024
 ms.custom: linux-related-content
 ---
 
@@ -17,23 +17,11 @@ If you're using Docker, consider using [official .NET Docker images](../docker/i
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
-The Alpine package manager supports installing some versions of .NET. If the .NET package is unavailable, you'll need to install .NET in one of the following alternative ways:
+## Install .NET
 
-- [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
-- [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
-## Install .NET 8
-
-.NET 8 isn't yet available in the default branch of the Alpine package repository. Use the `edge` branch to install .NET 8. Alternatively, use one of the following ways to install .NET 8:
-
-- [Use the .NET install script.](linux-scripted-manual.md#scripted-install)
-- [Download and install .NET manually.](linux-scripted-manual.md#manual-install)
-
-To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
-
-## Install .NET 6
-
-[!INCLUDE [linux-apk-install-60](includes/linux-install-60-apk.md)]
+[!INCLUDE [linux-apk-install-90](includes/linux-install-90-apk.md)]
 
 ## Supported distributions
 
@@ -41,10 +29,13 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version | Available in Package Manager |
 |--------|-------------------|------------------------------|
-| 3.20   | 8.0, 6.0          | 8.0, 6.0                     |
-| 3.19   | 8.0, 6.0          | 7.0, 6.0                     |
-| 3.18   | 8.0, 6.0          | 7.0, 6.0                     |
-| 3.17   | 8.0, 6.0          | 7.0, 6.0                     |
+| 3.20   | 9.0, 8.0          | 8.0, 6.0                     |
+| 3.19   | 9.0, 8.0          | 7.0, 6.0                     |
+| 3.18   | 8.0               | 7.0, 6.0                     |
+| 3.17   | 8.0               | 7.0, 6.0                     |
+
+> [!IMPORTANT]
+> Alpine 3.17 reaches end-of-life on November 22, 2024.
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -52,16 +43,16 @@ The following table is a list of currently supported .NET releases and the versi
 
 The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
 
-| Architecture     | .NET 6           | .NET 8  |
-|------------------|------------------|---------|
-| x86_64           | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
-| x86              | None             | None       |
-| aarch64          | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
-| armv7            | 3.16, 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
-| armhf            | None             | None |
-| s390x            | 3.17             | 3.17 |
-| ppc64le          | None             | None |
-| riscv64          | None             | None |
+| Architecture | .NET 9                 | .NET 8                 |
+|--------------|------------------------|------------------------|
+| x86_64       | 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| x86          | None                   | None                   |
+| aarch64      | 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| armv7        | 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| armhf        | None                   | None                   |
+| s390x        | 3.17                   | 3.17                   |
+| ppc64le      | None                   | None                   |
+| riscv64      | None                   | None                   |
 
 ## Install preview versions
 

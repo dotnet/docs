@@ -29,6 +29,7 @@ The following runsettings entries let you configure how MSTest behaves.
 |**ClassCleanupLifecycle**|EndOfClass|If you want the class cleanup to occur at the end of assembly, set it to **EndOfAssembly**. (No longer supported starting from MSTest v4 as EndOfClass is the default and only [ClassCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) behavior)|
 |**ClassCleanupTimeout**|0|Specify globally the timeout to apply on each instance of class cleanup method. `[Timeout]` attribute specified on the class cleanup method overrides the global timeout.|
 |**ClassInitializeTimeout**|0|Specify globally the timeout to apply on each instance of class initialize method. `[Timeout]` attribute specified on the class initialize method overrides the global timeout.|
+|**ConsiderFixturesAsSpecialTests**|false|To display `AssemblyInitialize`, `AssemblyCleanup`, `ClassInitialize`, `ClassCleanup` as individual entries in Visual Studio and Visual Studio Code `Test Explorer` and _.trx_ log, set this value to **true**|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|To retain the deployment directory after a test run, set this value to **false**.|
 |**DeploymentEnabled**|true|If you set the value to **false**, deployment items that you specify in your test method aren't copied to the deployment directory.|
 |**DeployTestSourceDependencies**|true|A value indicating whether the test source references are to be deployed.|
@@ -36,6 +37,7 @@ The following runsettings entries let you configure how MSTest behaves.
 |**ForcedLegacyMode**|false|In older versions of Visual Studio, the MSTest adapter was optimized to make it faster and more scalable. Some behavior, such as the order in which tests are run, might not be exactly as it was in previous editions of Visual Studio. Set the value to **true** to use the older test adapter.<br /><br />For example, you might use this setting if you have an *app.config* file specified for a unit test.<br /><br />We recommend that you consider refactoring your tests to allow you to use the newer adapter.|
 |**MapInconclusiveToFailed**|false|If a test completes with an inconclusive status, it's mapped to the skipped status in **Test Explorer**. If you want inconclusive tests to be shown as failed, set the value to **true**.|
 |**MapNotRunnableToFailed**|true|A value indicating whether a not runnable result is mapped to failed test.|
+|**OrderTestsByNameInClass**|false|If you want to run tests by test names both in Test Explorers and on the command line, set this value to **true**.|
 |**Parallelize**||Used to set the parallelization settings:<br /><br />**Workers**: The number of threads/workers to be used for parallelization, which is by default **the number of processors on the current machine**.<br /><br />**SCOPE**: The scope of parallelization. You can set it to **MethodLevel**. By default, it's **ClassLevel**.<br /><br />`<Parallelize><Workers>32</Workers><Scope>MethodLevel</Scope></Parallelize>`|
 |**SettingsFile**||You can specify a test settings file to use with the MSTest adapter here. You can also specify a test settings file [from the settings menu](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file#specify-a-run-settings-file-in-the-ide).<br /><br />If you specify this value, you must also set the **ForcedLegacyMode** to **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**TestCleanupTimeout**|0|Specify globally the timeout to apply on each instance of test cleanup method. `[Timeout]` attribute specified on the test cleanup method overrides the global timeout.|
@@ -43,7 +45,6 @@ The following runsettings entries let you configure how MSTest behaves.
 |**TestTimeout**|0|Gets specified global test case timeout.|
 |**TreatClassAndAssemblyCleanupWarningsAsErrors**|false|To see your failures in class cleanups as errors, set this value to **true**.|
 |**TreatDiscoveryWarningsAsErrors**|false|To report test discovery warnings as errors, set this value to **true**.|
-|**ConsiderFixturesAsSpecialTests**|false|To display `AssemblyInitialize`, `AssemblyCleanup`, `ClassInitialize`, `ClassCleanup` as individual entries in Visual Studio and Visual Studio Code `Test Explorer` and _.trx_ log, set this value to **true**|
 
 ### `TestRunParameter` element
 

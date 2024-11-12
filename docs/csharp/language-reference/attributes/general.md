@@ -83,7 +83,7 @@ The `AttributeUsage` attribute determines how a custom attribute class can be us
   - Field
   - Event
   - Method
-  - Param
+  - Parameter
   - Property
   - Return
   - Type
@@ -120,7 +120,7 @@ If <xref:System.AttributeUsageAttribute.Inherited> is `false`, then derived clas
 
 In this case, `NonInheritedAttribute` isn't applied to `DClass` via inheritance.
 
-You can also use these keywords to specify where an attribute should be applied. For example, you can use the `field:` specifier to add an attribute to the backing field of an [autoimplemented property](../../programming-guide/classes-and-structs/properties.md#auto-implemented-properties). Or you can use the `field:`, `property:` or `param:` specifier to apply an attribute to any of the elements generated from a positional record. For an example, see [Positional syntax for property definition](../builtin-types/record.md#positional-syntax-for-property-definition).
+You can also use these keywords to specify where an attribute should be applied. For example, you can use the `field:` specifier to add an attribute to the backing field of an [automatically implemented property](../../programming-guide/classes-and-structs/properties.md#automatically-implemented-properties). Or you can use the `field:`, `property:` or `param:` specifier to apply an attribute to any of the elements generated from a positional record. For an example, see [Positional syntax for property definition](../builtin-types/record.md#positional-syntax-for-property-definition).
 
 ## `AsyncMethodBuilder` attribute
 

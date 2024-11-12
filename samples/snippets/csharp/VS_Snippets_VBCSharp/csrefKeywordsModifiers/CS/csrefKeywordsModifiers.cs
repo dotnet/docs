@@ -759,7 +759,7 @@ namespace csrefKeywordsModifiers
     //<snippet26>
     class MyBaseClass
     {
-        // virtual auto-implemented property. Overrides can only
+        // virtual automatically implemented property. Overrides can only
         // provide specialized behavior if they implement get and set accessors.
         public virtual string Name { get; set; }
 
@@ -776,7 +776,7 @@ namespace csrefKeywordsModifiers
     {
         private string _name;
 
-        // Override auto-implemented property with ordinary property
+        // Override automatically implemented property with ordinary property
         // to provide specialized accessor behavior.
         public override string Name
         {

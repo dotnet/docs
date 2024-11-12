@@ -4,7 +4,7 @@ description: Learn about the versioning relationship between the .NET SDK and MS
 author: StephenBonikowsky
 ms.author: stebon
 ms.custom: updateeachrelease
-ms.date: 11/15/2023
+ms.date: 11/06/2024
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 
@@ -34,6 +34,10 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 5.0.2xx     | 16.9                          | March '21 | May '22   |
 | 5.0.3xx     | 16.10                         | May '21   | Aug '21   |
 | 5.0.4xx     | 16.11                         | Aug '21   | May '22   |
+| 6.0.1xx     | 17.0                          | Nov '21   | Nov '24   |
+| 6.0.2xx     | 17.1                          | Feb '22   | May '22   |
+| 6.0.3xx     | 17.2<sup>3</sup>              | May '22   | Oct '23   |
+| 6.0.4xx     | 17.3                          | Aug '22   | Nov '24   |
 | 7.0.1xx     | 17.4                          | Nov '22   | May '24   |
 | 7.0.2xx     | 17.5<sup>3</sup>              | Feb '23   | May '23   |
 | 7.0.3xx     | 17.6                          | May '23   | May '24   |
@@ -46,12 +50,8 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 
 | SDK version | MSBuild/Visual Studio version | Ship date | Lifecycle           |
 |-------------|-------------------------------|-----------|---------------------|
-| 6.0.1xx     | 17.0                          | Nov '21   | Nov '24<sup>1</sup> |
-| 6.0.2xx     | 17.1                          | Feb '22   | May '22             |
-| 6.0.3xx     | 17.2<sup>3</sup>              | May '22   | Oct '23             |
-| 6.0.4xx     | 17.3                          | Aug '22   | Nov '24<sup>2</sup> |
 | 8.0.1xx     | 17.8                          | Nov '23   | Nov '25<sup>1</sup> |
-| 8.0.2xx     | 17.9<sup>3</sup>              | Feb '24   | May '24             |
+| 8.0.2xx     | 17.9<sup>3</sup>              | Feb '24   | May '24<sup>3</sup> |
 | 8.0.3xx     | 17.10                         | May '24   | TBD                 |
 | 8.0.4xx     | 17.11                         | Aug '24   | Nov '25<sup>2</sup> |
 | 9.0.1xx     | 17.12                         | Nov '24   | May '26<sup>1</sup> |
@@ -65,7 +65,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 >
 > <sup>2</sup> .4xx .NET SDK feature bands are supported for the life of the matching runtime as stand-alone installs.
 >
-> <sup>3</sup> 6.0.300, 7.0.200, and 8.0.200 require newer Visual Studio versions. For more information, see the [support rules](#targeting-and-support-rules).
+> <sup>3</sup> 8.0.200 requires a newer Visual Studio version. For more information, see the [support rules](#targeting-and-support-rules).
 >
 > [Visual Studio 2019 Lifecycle](/lifecycle/products/visual-studio-2019)
 >
@@ -73,7 +73,7 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 
 ## Targeting and support rules
 
-Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into place regarding which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in. The policy is:
+A the following policy dictates which versions of MSBuild and Visual Studio a given version of the .NET SDK will run in:
 
 - Each new TargetFramework **requires** a new Visual Studio version or a new `dotnet` version.
 - The first version of Visual Studio that supports a new TargetFramework becomes a floor for the feature bands of that SDK for Roslyn API surface, MSBuild targets, source generators, analyzers, and so on.
@@ -95,7 +95,7 @@ Starting with .NET SDK 7.0.100 and .NET SDK 6.0.300, a policy has been put into 
 | 9.0.100 | 17.12 | 17.11            | Net8.0 | Net9.0 |
 
 > [!NOTE]
-> The table depicts how these versioning rules will be applied going forward, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
+> The table depicts how these versioning rules are applied, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
 
 > <sup>1</sup> A breaking change in 7.0.300 for Blazor and Razor development requires Visual Studio version 17.6 or newer. For more information, see [dotnet/razor issue 8718](https://github.com/dotnet/razor/issues/8718).
 
@@ -103,7 +103,7 @@ To ensure consistent tooling, you should use `dotnet build` rather than `msbuild
 
 ## Preview versioning
 
-Major versions of the .NET SDK are typically released within a few days of a Visual Studio preview version. While there may be other combinations that work, only the latest preview released is tested and officially supported. The following table shows which version of Visual Studio each .NET preview version was tested with prior to release.
+Major versions of the .NET SDK are typically released within a few days of a Visual Studio preview version. While there might be other combinations that work, only the latest preview released is tested and officially supported. The following table shows which version of Visual Studio each .NET preview version was tested with prior to release.
 
 | SDK preview version | Visual Studio version |
 |---------------------|-----------------------|
@@ -116,6 +116,7 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | 9.0.100 Preview 7   | 17.12 Preview 1       |
 | 9.0.100 RC 1        | 17.12 Preview 2       |
 | 9.0.100 RC 2        | 17.12 Preview 3       |
+| 9.0.100 GA          | 17.12 GA              |
 
 ## Reference
 

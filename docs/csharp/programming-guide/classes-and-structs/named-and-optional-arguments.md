@@ -109,7 +109,7 @@ In the following example, the constructor for `ExampleClass` has one parameter, 
 
 The preceding code shows a number of examples where optional parameters aren't applied correctly. The first illustrates that an argument must be supplied for the first parameter, which is required.
 
-## Caller infomation attributes
+## Caller information attributes
 
 [Caller information attributes](../../language-reference/attributes/caller-information.md), such as <xref:System.Runtime.CompilerServices.CallerFilePathAttribute>, <xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>, <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>, and <xref:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute>, are used to obtain information about the caller to a method. These attributes are especially useful when you're debugging or when you need to log information about method calls.
 

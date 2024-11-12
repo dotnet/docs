@@ -11,20 +11,16 @@ public sealed class ScopedBackgroundService(
         logger.LogInformation(
             "{Name} is running.", ClassName);
 
-        await DoWorkAsync(stoppingToken);
-    }
-
-    private async Task DoWorkAsync(CancellationToken stoppingToken)
-    {
-        logger.LogInformation(
-            "{Name} is working.", ClassName);
-
-        using (IServiceScope scope = serviceScopeFactory.CreateScope())
+        while (!stoppingToken.IsCancellationRequested)
         {
+            using IServiceScope scope = serviceScopeFactory.CreateScope();
+
             IScopedProcessingService scopedProcessingService =
                 scope.ServiceProvider.GetRequiredService<IScopedProcessingService>();
 
             await scopedProcessingService.DoWorkAsync(stoppingToken);
+
+            await Task.Delay(10_000, stoppingToken);
         }
     }
 

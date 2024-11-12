@@ -2,12 +2,12 @@
 title: What's new in .NET 9 runtime
 description: Learn about the new .NET features introduced in the .NET 9 runtime.
 titleSuffix: ""
-ms.date: 10/08/2024
+ms.date: 11/11/2024
 ms.topic: whats-new
 ---
 # What's new in the .NET 9 runtime
 
-This article describes new features and performance improvements in the .NET runtime for .NET 9. It's been updated for .NET 9 RC 2.
+This article describes new features and performance improvements in the .NET runtime for .NET 9.
 
 ## Attribute model for feature switches with trimming support
 
@@ -65,6 +65,16 @@ The <xref:System.Runtime.CompilerServices.UnsafeAccessorAttribute> feature allow
 Dynamic adaptation to application sizes (DATAS) is now enabled by default. It aims to adapt to application memory requirements, meaning the application heap size should be roughly proportional to the long-lived data size. DATAS was introduced as an opt-in feature in .NET 8 and has been significantly updated and improved in .NET 9.
 
 For more information, see [Dynamic adaptation to application sizes (DATAS)](../../../standard/garbage-collection/datas.md).
+
+## Control-flow enforcement technology
+
+[Control-flow enforcement technology (CET)](/cpp/build/reference/cetcompat) is [enabled by default](../../compatibility/interop/9.0/cet-support.md) for apps on Windows. It significantly improves security by adding hardware-enforced stack protection against return-oriented programming (ROP) exploits. It's the latest [.NET Runtime Security Mitigation](https://github.com/dotnet/designs/blob/main/accepted/2021/runtime-security-mitigations.md).
+
+CET imposes some limitations on CET-enabled processes and can result in a small performance regression. There are various controls to opt-out of CET.
+
+## .NET install search behavior
+
+.NET apps can now be configured for how they should [search for the .NET runtime](../../deploying/deploy-with-cli.md#configure-net-install-search-behavior). This capability can be used with private runtime installations or to more strongly control the execution environment.
 
 ## Performance improvements
 
@@ -165,7 +175,7 @@ In .NET 9, the JIT compiler *automatically* transforms the first indexing patter
 
 #### Loop counter variable direction
 
-The 64-bit compiler now recognizes when the direction of a loop's counter variable can be flipped without affecting the program's behavior, and then performs the transformation.
+The 64-bit compiler now recognizes when a loop's counter variable is used only to control the number of iterations, and transforms the loop to count down instead of up.
 
 In the idiomatic `for (int i = ...)` pattern, the counter variable typically increases. Consider the following example:
 

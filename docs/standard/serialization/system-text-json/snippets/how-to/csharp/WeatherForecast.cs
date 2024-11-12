@@ -224,6 +224,24 @@ namespace SystemTextJsonSamples
     }
     // </WFWithEnum>
 
+    // <WFWithEnumCustomName>
+    public class WeatherForecastWithEnumCustomName
+    {
+        public DateTimeOffset Date { get; set; }
+        public int TemperatureCelsius { get; set; }
+        public CloudCover? Sky { get; set; }
+    }
+
+    [JsonConverter(typeof(JsonStringEnumConverter))]
+    public enum CloudCover
+    {
+        Clear,
+        [JsonStringEnumMemberName("Partly cloudy")]
+        Partial,
+        Overcast
+    }
+    // </WFWithEnumCustomName>
+
     // <WFWithConverterEnum>
     public class WeatherForecastWithPrecipEnum
     {
@@ -345,6 +363,17 @@ namespace SystemTextJsonSamples
                 Date = DateTime.Parse("2019-08-01"),
                 TemperatureCelsius = 25,
                 Summary = Summary.Hot
+            };
+            return weatherForecast;
+        }
+
+        public static WeatherForecastWithEnumCustomName CreateWeatherForecastWithEnumCustomName()
+        {
+            var weatherForecast = new WeatherForecastWithEnumCustomName
+            {
+                Date = DateTime.Parse("2019-08-01"),
+                TemperatureCelsius = 25,
+                Sky = CloudCover.Partial
             };
             return weatherForecast;
         }

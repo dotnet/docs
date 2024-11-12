@@ -16,7 +16,7 @@ You can view the completed template in the [.NET Samples GitHub repository](http
 
 In this part of the series you'll learn how to:
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 > [!div class="checklist"]
 >
@@ -180,7 +180,7 @@ The settings under `<PropertyGroup>` in the XML snippet are broken into two grou
 The first group deals with properties required for a NuGet package. The four `<Package*>` settings have to do with the NuGet package properties to identify your package on a NuGet feed. The `<PackageId>` value, while used by NuGet, is also used to uninstall the template package. The remaining settings, such as `<Title>` and `<PackageTags>`, have to do with metadata displayed on the NuGet feed and .NET package manager. For more information about NuGet settings, see [NuGet and MSBuild properties](/nuget/reference/msbuild-targets).
 
 > [!NOTE]
-> To ensure that the template package appears in `dotnet new search` results,`<PackageType>` must be set to `Template`.
+> To ensure that the template package appears in `dotnet new search` results, `<PackageType>` must be set to `Template`.
 
 In the second group, the `<TargetFramework>` setting ensures that MSBuild runs properly when you run the pack command to compile and pack the project. The group also includes settings that have to do with configuring the project to include the templates in the appropriate folder in the NuGet package when it's created:
 

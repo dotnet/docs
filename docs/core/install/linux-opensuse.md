@@ -1,15 +1,15 @@
 ---
-title: Install .NET on openSUSE
-description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on openSUSE.
+title: Install .NET on openSUSE Leap
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on openSUSE Leap.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/14/2024
+ms.date: 11/01/2024
 ms.custom: linux-related-content
 ---
 
-# Install the .NET SDK or the .NET Runtime on openSUSE
+# Install the .NET SDK or the .NET Runtime on openSUSE Leap
 
-.NET is supported on openSUSE. This article describes how to install .NET on openSUSE.
+.NET is supported on openSUSE Leap. This article describes how to install .NET on openSUSE Leap.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
@@ -17,11 +17,7 @@ ms.custom: linux-related-content
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases on openSUSE 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE is no longer supported.
-
-| openSUSE   | .NET      |
-|------------|-----------|
-| 15.4+      | 8, 6      |
+The following table is a list of currently supported .NET releases on openSUSE Leap 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of openSUSE Leap is no longer supported.
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -33,7 +29,7 @@ The following table is a list of currently supported .NET releases on openSUSE 1
 
 [!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
-## openSUSE 15
+## openSUSE Leap 15
 
 [!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
 
@@ -45,7 +41,9 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
+[!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 ## How to install other versions
 

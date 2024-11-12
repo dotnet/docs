@@ -63,7 +63,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
 2. In Windows Vista, use the Netsh.exe tool, as shown in the following example.  
   
     ```console  
-    netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}
+    netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00001111-aaaa-2222-bbbb-3333cccc4444}
     ```  
   
     - The **certhash** parameter specifies the thumbprint of the certificate.  
@@ -85,7 +85,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
 2. In Windows Vista, to support clients that authenticate with X.509 certificates at the transport layer, follow the preceding procedure, but with an additional parameter, as shown in the following example.  
   
     ```console  
-    netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF} clientcertnegotiation=enable  
+    netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00001111-aaaa-2222-bbbb-3333cccc4444} clientcertnegotiation=enable  
     ```  
   
 ## Delete an SSL certificate from a port number  

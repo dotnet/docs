@@ -124,7 +124,7 @@
         using System;
         class TwoDPoint : IEquatable<TwoDPoint>
         {
-            // Readonly auto-implemented properties.
+            // Readonly automatically implemented properties.
             public int X { get; private set; }
             public int Y { get; private set; }
 
@@ -394,7 +394,7 @@
         using System;
         struct TwoDPoint : IEquatable<TwoDPoint>
         {
-            // Read/write auto-implemented properties.
+            // Read/write automatically implemented properties.
             public int X { get; private set; }
             public int Y { get; private set; }
 

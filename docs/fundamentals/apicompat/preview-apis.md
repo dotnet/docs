@@ -54,6 +54,8 @@ When building against an experimental API, the compiler will produce an error. E
 
 Since each experimental feature has a separate ID, consenting to using one experimental feature doesn't consent to using another.
 
+For more information, see [Experimental features][experimental-overview].
+
 ## Choose between the options
 
 Library developers should only use prerelease NuGet packages or mark APIs with `[Experimental]`:
@@ -67,3 +69,4 @@ The `[RequiresPreviewFeatures]` attribute is only meant for components of the .N
 The exception to this rule is if you're building a stable library and want to expose certain features that in turn depend on runtime or language preview behaviors. In that case you should use `[RequiresPreviewFeatures]` for the entry points of that feature. However, you need to consider that users of such APIs have to turn on preview features too, which exposes them to all runtime, library, and language preview behaviors.
 
 [choosing-diagnostic-ids]: ../../csharp/roslyn-sdk/choosing-diagnostic-ids.md
+[experimental-overview]: ../syslib-diagnostics/experimental-overview.md

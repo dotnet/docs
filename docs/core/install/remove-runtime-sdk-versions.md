@@ -3,7 +3,7 @@ title: Remove the .NET runtime and SDK
 description: This article describes how to uninstall .NET on Windows, macOS, and Linux. Uninstall .NET manually, through a package manager, or with the .NET Uninstall Tool.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/14/2024
+ms.date: 11/11/2024
 ms.custom: linux-related-content
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -14,7 +14,7 @@ Over time, as you install updated versions of the .NET runtime and SDK, you may 
 
 ## Should I remove a version?
 
-The [.NET version selection](../versions/selection.md) behaviors and the runtime compatibility of .NET across updates enables safe removal of previous versions. .NET runtime updates are compatible within a major version **band** such as 7.x and 6.x. Additionally, newer releases of the .NET SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
+The [.NET version selection](../versions/selection.md) behaviors and the runtime compatibility of .NET across updates enables safe removal of previous versions. .NET runtime updates are compatible within a major version **band** such as 8.x and 7.x. Additionally, newer releases of the .NET SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
 
 In general, you only need the latest SDK and latest patch version of the runtimes required for your application. Instances where you might want to keep older SDK or runtime versions include maintaining *project.json*-based applications. Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.
 

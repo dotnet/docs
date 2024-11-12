@@ -3,7 +3,7 @@ title: Troubleshoot .NET package mix ups on Linux
 description: Learn about how to troubleshoot strange .NET package errors on Linux. These errors may occur when you run the dotnet command.
 author: omajid
 ms.author: adegeo
-ms.date: 03/01/2023
+ms.date: 11/04/2024
 ms.custom: linux-related-content
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 zone_pivot_groups: operating-systems-set-two
@@ -39,6 +39,9 @@ One symptom of these problems is that both the `/usr/lib64/dotnet` and `/usr/sha
 > Use the `dotnet --info` command to list which SDKs and Runtimes are installed. For more information, see [How to check that .NET is already installed](how-to-detect-installed-versions.md?pivots=os-linux).
 
 ## What's going on
+
+> [!IMPORTANT]
+> Starting with .NET 9, Microsoft only publishes packages for supported Linux distributions that don't publish their own packages. For more information, see [Install .NET on Linux](linux.md#packages).
 
 These errors usually occur when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages. These distributions include:
 
@@ -194,7 +197,7 @@ Configure your package manager to ignore the .NET packages from the distribution
     ```
     Package: dotnet* aspnet* netstandard*
     Pin: origin "<your-package-source>"
-    Pin-Priority: -10    
+    Pin-Priority: -10
     ```
 
     Make sure to replace `<your-package-source>` with your distribution's package source.

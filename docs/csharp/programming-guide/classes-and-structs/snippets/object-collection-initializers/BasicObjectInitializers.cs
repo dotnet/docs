@@ -6,7 +6,7 @@ public class BasicObjectInitializers
     // <SnippetCatDeclaration>
     public class Cat
     {
-        // Auto-implemented properties.
+        // Automatically implemented properties.
         public int Age { get; set; }
         public string? Name { get; set; }
 
@@ -151,7 +151,7 @@ public class InitializationSample
 {
     public class Cat
     {
-        // Auto-implemented properties.
+        // Automatically implemented properties.
         public int Age { get; set; }
         public string? Name { get; set; }
 

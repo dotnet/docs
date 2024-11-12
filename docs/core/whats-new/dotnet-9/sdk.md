@@ -1,14 +1,14 @@
 ---
-title: What's new in the SDK for .NET 9
+title: What's new in the SDK and tooling for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, terminal logger, tool roll-forward, and build script analyzers.
 titleSuffix: ""
-ms.date: 10/08/2024
+ms.date: 11/11/2024
 ms.topic: whats-new
 ---
 
-# What's new in the SDK for .NET 9
+# What's new in the SDK and tooling for .NET 9
 
-This article describes new features in the .NET SDK for .NET 9. It's been updated for .NET RC 2.
+This article describes new features in the .NET SDK and tooling for .NET 9.
 
 ## Unit testing
 
@@ -115,6 +115,12 @@ If you have feedback about the terminal logger, you can provide it in the [MSBui
 
 Starting in .NET 8, `dotnet restore` [audits NuGet package references for known vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities). In .NET 9, the default mode has changed from auditing only _direct_ package references to auditing both _direct_ and _transitive_ package references.
 
+## Faster NuGet dependency resolution for large repos
+
+The NuGet dependency resolver has been overhauled to improve performance and scalability for all `<PackageReference>` projects. Enabled by default, the new algorithm speeds up restore operations without compromising on functionality, strictly adhering to the core dependency resolution rules.
+
+If you encounter any issues, such as restore failures or unexpected package versions, you can [revert to the legacy resolver](/nuget/consume-packages/Package-References-in-Project-Files#nuget-dependency-resolver).
+
 ## MSBuild script analyzers ("BuildChecks")
 
 .NET 9 introduces a feature that helps guard against defects and regressions in your build scripts. To run the build checks, add the `/check` flag to any command that invokes MSBuild. For example, `dotnet build myapp.sln /check` builds the `myapp` solution and runs all configured build checks.
@@ -200,3 +206,19 @@ Requirements (depending on your environment):
 ### Environment variable naming
 
 Environment variables that the container publish tooling uses to control some of the finer aspects of registry communication and security now start with the prefix `DOTNET` instead of `SDK`. The `SDK` prefix will continue to be supported in the near term.
+
+## Code analysis
+
+.NET 9 includes several new code analyzers and fixers to help verify that you're using .NET library APIs correctly and efficiently. The following table summarizes the new analyzers.
+
+| Rule ID | Category | Description |
+|---------|----------|-------------|
+| [CA1514: Avoid redundant length argument](../../../fundamentals/code-analysis/quality-rules/ca1514.md) | Maintainability | An explicitly calculated length argument can be error-prone and is unnecessary when you're slicing to the end of a string or buffer. |
+| [CA1515: Consider making public types internal](../../../fundamentals/code-analysis/quality-rules/ca1515.md) | Maintainability | Types inside an executable assembly should be declared as `internal`. |
+| [CA1871: Do not pass a nullable struct to 'ArgumentNullException.ThrowIfNull'](../../../fundamentals/code-analysis/quality-rules/ca1871.md) | Performance | For improved performance, it's better to check the `HasValue` property and manually throw an exception than to pass a nullable struct to `ArgumentNullException.ThrowIfNull`. |
+| [CA1872: Prefer 'Convert.ToHexString' and 'Convert.ToHexStringLower' over call chains based on 'BitConverter.ToString'](../../../fundamentals/code-analysis/quality-rules/ca1872.md) | Performance | Use <xref:System.Convert.ToHexString*?displayProperty=nameWithType> or <xref:System.Convert.ToHexStringLower*?displayProperty=nameWithType> when encoding bytes to a hexadecimal string representation. |
+| [CA2022: Avoid inexact read with Stream.Read](../../../fundamentals/code-analysis/quality-rules/ca2022.md) | Reliability | A call to `Stream.Read` might return fewer bytes than requested, resulting in unreliable code if the return value isn't checked. |
+| [CA2262: Set 'MaxResponseHeadersLength' properly](../../../fundamentals/code-analysis/quality-rules/ca2262.md) | Usage | The <xref:System.Net.Http.HttpClientHandler.MaxResponseHeadersLength?displayProperty=nameWithType> property is measured in kilobytes, not bytes. |
+| [CA2263: Prefer generic overload when type is known](../../../fundamentals/code-analysis/quality-rules/ca2263.md) | Usage | Generic overloads are preferable to overloads that accept an argument of type <xref:System.Type?displayProperty=fullName> when the type is known at compile time. |
+| [CA2264: Do not pass a non-nullable value to 'ArgumentNullException.ThrowIfNull'](../../../fundamentals/code-analysis/quality-rules/ca2264.md) | Usage | Certain constructs like non-nullable structs (except for <xref:System.Nullable%601>), 'nameof()' expressions, and 'new' expressions are known to never be null, so `ArgumentNullException.ThrowIfNull` will never throw. |
+| [CA2265](../../../fundamentals/code-analysis/quality-rules/ca2265.md) | Usage | Comparing a span to `null` or `default` might not do what you intended. `default` and the `null` literal are implicitly converted to <xref:System.Span`1.Empty?displayProperty=nameWithType>. Remove the redundant comparison or make the code more explicit by using `IsEmpty`. |

@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Claims and Tokens"
 title: "Claims and Tokens"
+description: "Learn more about: Claims and Tokens"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "claims [WCF], and tokens"
-ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
 ---
 # Claims and Tokens
 
@@ -64,7 +63,7 @@ Where the client authenticates with a Security Assertions Markup Language (SAML)
 
 ## Identity Claims and ServiceSecurityContext.IsAnonymous
 
-If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity,` then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.
+If none of the `ClaimSet` objects resulting from the client credentials contain a claim with a `Right` of `Identity`, then the <xref:System.ServiceModel.ServiceSecurityContext.IsAnonymous%2A> property returns `true`. If one or more such claims are present, the `IsAnonymous` property returns `false`.
 
 ## See also
 

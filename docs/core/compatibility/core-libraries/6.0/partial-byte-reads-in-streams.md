@@ -123,3 +123,7 @@ In general, code should:
 - <xref:System.Security.Cryptography.CryptoStream.Read%2A?displayProperty=fullName>
 - <xref:System.Security.Cryptography.CryptoStream.ReadAsync%2A?displayProperty=fullName>
 - <xref:System.Security.Cryptography.CryptoStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)?displayProperty=fullName>
+
+## See also
+
+- [CA2022: Avoid inexact read with Stream.Read](../../../../fundamentals/code-analysis/quality-rules/ca2022.md)

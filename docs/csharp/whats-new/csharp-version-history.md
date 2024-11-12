@@ -220,7 +220,7 @@ The following enhancements were made to existing features:
 
 - You can test `==` and `!=` with tuple types.
 - You can use expression variables in more locations.
-- You can attach attributes to the backing field of auto-implemented properties.
+- You can attach attributes to the backing field of automatically implemented properties.
 - Method resolution when arguments differ by `in` was improved.
 - Overload resolution now has fewer ambiguous cases.
 

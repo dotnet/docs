@@ -58,7 +58,7 @@ By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can en
 
 In this mode, you can supply extra parameters that are used to call the testing application in one of the following ways:
 
-- Beginning with `Microsoft.Testing.Platform` version 1.4 (included with MSTest version 3.6), you can options after the double dash `--` on the command line:
+- Beginning with `Microsoft.Testing.Platform` version 1.4 (included with MSTest version 3.6), you can add options after the double dash `--` on the command line:
 
     ```dotnetcli
     dotnet test -- --minimum-expected-tests 10

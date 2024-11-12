@@ -31,6 +31,19 @@ When running outside of Test Explorer, tests are executed in the order in which 
 
 :::code language="csharp" source="snippets/order-unit-tests/csharp/MSTest.Project/ByAlphabeticalOrder.cs":::
 
+Starting with MSTest 3.6, a new runsettings option lets you run tests by test names both in Test Explorers and on the command line. To enable this feature, add the `OrderTestsByNameInClass` setting to your runsettings file:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+
+  <MSTest>
+    <OrderTestsByNameInClass>true</OrderTestsByNameInClass>
+  </MSTest>
+
+</RunSettings>
+```
+
 :::zone-end
 :::zone pivot="xunit"
 

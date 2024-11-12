@@ -17,9 +17,11 @@ There are several situations when splitting a class definition is desirable:
 
 - Declaring a class over separate files enables multiple programmers to work on it at the same time.
 - You can add code to the class without having to recreate the source file that includes automatically generated source. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
-- [Source generators](../../roslyn-sdk/source-generators-overview.md) can generate extra functionality in a class.
+- [Source generators](../../roslyn-sdk/index.md#source-generators) can generate extra functionality in a class.
 
-To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier, as shown here:
+To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier. In practice, each partial class is typically defined in a separate file, making it easier to manage and expand the class over time.
+
+The following `Employee` example demonstrates how the class might be divided across two files: Employee_Part1.cs and Employee_Part2.cs.
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet1":::
 
@@ -86,7 +88,7 @@ For more information, see [Constraints on Type Parameters](../generics/constrain
 
 ## Examples
 
-In the following example, the fields and the constructor of the class, `Coords`, are declared in one partial class definition, and the member, `PrintCoords`, is declared in another partial class definition.
+In the following example, the fields and constructor of the `Coords` class are declared in one partial class definition (`Coords_Part1.cs`), and the `PrintCoords` method is declared in another partial class definition (`Coords_Part2.cs`). This separation demonstrates how partial classes can be divided across multiple files for easier maintainability.
 
 :::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="Snippet9":::
 
@@ -112,7 +114,7 @@ An implementation isn't required for a partial method when the signature obeys t
 
 The method and all calls to the method are removed at compile time when there's no implementation.
 
-Any method that doesn't conform to all those restrictions, including properties and indexers, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using auto-implemented properties. The compiler can't distinguish between an auto-implemented property, and the declaring declaration of a partial property.
+Any method that doesn't conform to all those restrictions, including properties and indexers, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using automatically implemented properties. The compiler can't distinguish between an automatically implemented property, and the declaring declaration of a partial property.
 
 Partial methods enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 

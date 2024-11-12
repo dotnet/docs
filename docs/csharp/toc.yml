@@ -149,19 +149,19 @@ items:
   - name: C# 13
     displayName: what's New
     href: whats-new/csharp-13.md
-  - name: Breaking changes in C# 13
+  - name: Breaking changes since C# 12
     href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%209.md
   - name: C# 12
     displayName: what's New
     href: whats-new/csharp-12.md
-  - name: Breaking changes in C# 12
+  - name: Breaking changes since C# 11
     href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%208.md
   - name: C# 11
     items:
     - name: New features
       displayName: what's new
       href: whats-new/csharp-11.md
-    - name: Breaking changes in C# 11
+    - name: Breaking changes since C# 10
       href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md
   - name: C# 10
     href: whats-new/csharp-10.md
@@ -418,8 +418,6 @@ items:
     href: roslyn-sdk/work-with-workspace.md
   - name: Explore code with the syntax visualizer
     href: roslyn-sdk/syntax-visualizer.md
-  - name: Source Generators
-    href: roslyn-sdk/source-generators-overview.md
   - name: Choose diagnostic IDs
     href: roslyn-sdk/choosing-diagnostic-ids.md
   - name: Quick starts
@@ -547,9 +545,9 @@ items:
         href: programming-guide/classes-and-structs/restricting-accessor-accessibility.md
       - name: "How to declare and use read write properties"
         href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
-      - name: Auto-Implemented Properties
+      - name: Automatically implemented properties
         href: programming-guide/classes-and-structs/auto-implemented-properties.md
-      - name: "How to implement a lightweight class with auto-implemented properties"
+      - name: "How to implement a lightweight class with automatically implemented properties"
         href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
     - name: Methods
       items:

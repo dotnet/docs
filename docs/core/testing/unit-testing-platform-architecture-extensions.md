@@ -51,7 +51,7 @@ Due to these reasons, the extension points are categorized into two types:
 
 The `IExtension` interface serves as the foundational interface for all extensibility points within the testing platform. It's primarily used to obtain descriptive information about the extension and, most importantly, to enable or disable the extension itself.
 
-Consider the following `IExension` interface:
+Consider the following `IExtension` interface:
 
 ```csharp
 public interface IExtension
@@ -59,7 +59,7 @@ public interface IExtension
     string Uid { get; }
     string Version { get; }
     string DisplayName { get; }
-    string Description { get; 
+    string Description { get; }
     Task<bool> IsEnabledAsync();
 }
 ```
@@ -74,7 +74,7 @@ public interface IExtension
 
 * `IsEnabledAsync()`: This method is invoked by the testing platform when the extension is being instantiated. If the method returns `false`, the extension will be excluded. This method typically makes decisions based on the [configuration file](./unit-testing-platform-architecture-services.md#the-iconfiguration-service) or some [custom command line options](./unit-testing-platform-architecture-services.md#the-icommandlineoptions-service). Users often specify `--customExtensionOption` in the command line to opt into the extension itself.
 
-## Test Framework extension
+## Test framework extension
 
 The test framework is the primary extension that provides the testing platform with the ability to discover and execute tests. The test framework is responsible for communicating the results of the tests back to the testing platform. The test framework is the only mandatory extension required to execute a testing session.
 
@@ -305,7 +305,7 @@ var testNode = new TestNode
 };
 
 await context.MessageBus.PublishAsync(
-    this, 
+    this,
     new TestNodeUpdateMessage(
         discoverTestExecutionRequest.Session.SessionUid,
         testNode));
@@ -358,7 +358,7 @@ var successfulTestNode = new TestNode()
 await context.MessageBus.PublishAsync(
     this,
     new TestNodeUpdateMessage(
-        runTestExecutionRequest.Session.SessionUid, 
+        runTestExecutionRequest.Session.SessionUid,
         successfulTestNode));
 
 // ...
@@ -460,16 +460,16 @@ The `PropertyBag` type is typically accessible in every `IData` and is utilized 
 Finally this section makes clear that you test framework implementation needs to implement the `IDataProducer` that produces `TestNodeUpdateMessage`s like in the sample below:
 
 ```csharp
-internal sealed class TestingFramework 
+internal sealed class TestingFramework
     : ITestFramework, IDataProducer
 {
    // ...
-   
+
    public Type[] DataTypesProduced =>
-   [ 
+   [
        typeof(TestNodeUpdateMessage)
    ];
-   
+
    // ...
 }
 ```
@@ -477,17 +477,17 @@ internal sealed class TestingFramework
 If your test adapter requires the publication of *files* during execution, you can find the recognized properties in this source file: <https://github.com/microsoft/testfx/blob/main/src/Platform/Microsoft.Testing.Platform/Messages/FileArtifacts.cs>. As you can see, you can provide file assets in a general manner or associate them with a specific `TestNode`. Remember, if you intend to push a `SessionFileArtifact`, you must declare it to the platform in advance, as shown below:
 
 ```csharp
-internal sealed class TestingFramework 
+internal sealed class TestingFramework
     : ITestFramework, IDataProducer
 {
    // ...
-   
+
    public Type[] DataTypesProduced =>
-   [ 
-       typeof(TestNodeUpdateMessage), 
+   [
+       typeof(TestNodeUpdateMessage),
        typeof(SessionFileArtifact)
    ];
-   
+
    // ...
 }
 ```
@@ -517,8 +517,8 @@ Optional properties, on the other hand, enhance the testing experience by provid
 
 ```csharp
 public record KeyValuePairStringProperty(
-    string Key, 
-    string Value) 
+    string Key,
+    string Value)
         : IProperty;
 ```
 
@@ -526,16 +526,16 @@ The `KeyValuePairStringProperty` stands for a general key/value pair data.
 
 ```csharp
 public record struct LinePosition(
-    int Line, 
+    int Line,
     int Column);
 
 public record struct LinePositionSpan(
-    LinePosition Start, 
+    LinePosition Start,
     LinePosition End);
 
 public abstract record FileLocationProperty(
-    string FilePath, 
-    LinePositionSpan LineSpan) 
+    string FilePath,
+    LinePositionSpan LineSpan)
         : IProperty;
 
 public sealed record TestFileLocationProperty(
@@ -548,7 +548,7 @@ public sealed record TestFileLocationProperty(
 
 ```csharp
 public sealed record TestMethodIdentifierProperty(
-    string AssemblyFullName, 
+    string AssemblyFullName,
     string Namespace,
     string TypeName,
     string MethodName,
@@ -563,7 +563,7 @@ public sealed record TestMethodIdentifierProperty(
 
 ```csharp
 public sealed record TestMetadataProperty(
-    string Key, 
+    string Key,
     string Value)
 ```
 
@@ -598,13 +598,13 @@ Take note of the handy cached value offered by the `CachedInstance` property.
 
 ```csharp
 public readonly record struct TimingInfo(
-    DateTimeOffset StartTime, 
-    DateTimeOffset EndTime, 
+    DateTimeOffset StartTime,
+    DateTimeOffset EndTime,
     TimeSpan Duration);
 
 public sealed record StepTimingInfo(
-    string Id, 
-    string Description, 
+    string Id,
+    string Description,
     TimingInfo Timing);
 
 public sealed record TimingProperty : IProperty
@@ -615,7 +615,7 @@ public sealed record TimingProperty : IProperty
     }
 
     public TimingProperty(
-        TimingInfo globalTiming, 
+        TimingInfo globalTiming,
         StepTimingInfo[] stepTimings)
     {
         GlobalTiming = globalTiming;
@@ -634,10 +634,10 @@ The `TimingProperty` is utilized to relay timing details about the `TestNode` ex
 
 ```csharp
 public sealed record PassedTestNodeStateProperty(
-    string? Explanation = null) 
+    string? Explanation = null)
         : TestNodeStateProperty(Explanation)
 {
-    public static PassedTestNodeStateProperty CachedInstance 
+    public static PassedTestNodeStateProperty CachedInstance
         { get; } = new PassedTestNodeStateProperty();
 }
 ```
@@ -647,10 +647,10 @@ Take note of the handy cached value offered by the `CachedInstance` property.
 
 ```csharp
 public sealed record SkippedTestNodeStateProperty(
-    string? Explanation = null) 
+    string? Explanation = null)
         : TestNodeStateProperty(Explanation)
 {
-    public static SkippedTestNodeStateProperty CachedInstance 
+    public static SkippedTestNodeStateProperty CachedInstance
         { get; } =  new SkippedTestNodeStateProperty();
 }
 ```
@@ -672,7 +672,7 @@ public sealed record FailedTestNodeStateProperty : TestNodeStateProperty
     }
 
     public FailedTestNodeStateProperty(
-        Exception exception, 
+        Exception exception,
         string? explanation = null)
         : base(explanation ?? exception.Message)
     {
@@ -699,7 +699,7 @@ public sealed record ErrorTestNodeStateProperty : TestNodeStateProperty
     }
 
     public ErrorTestNodeStateProperty(
-        Exception exception, 
+        Exception exception,
         string? explanation = null)
             : base(explanation ?? exception.Message)
     {
@@ -726,7 +726,7 @@ public sealed record TimeoutTestNodeStateProperty : TestNodeStateProperty
     }
 
     public TimeoutTestNodeStateProperty(
-        Exception exception, 
+        Exception exception,
         string? explanation = null)
             : base(explanation ?? exception.Message)
     {
@@ -755,7 +755,7 @@ public sealed record CancelledTestNodeStateProperty : TestNodeStateProperty
     }
 
     public CancelledTestNodeStateProperty(
-        Exception exception, 
+        Exception exception,
         string? explanation = null)
         : base(explanation ?? exception.Message)
     {
@@ -804,7 +804,7 @@ public interface ICommandLineOptionsProvider : IExtension
     IReadOnlyCollection<CommandLineOption> GetCommandLineOptions();
 
     Task<ValidationResult> ValidateOptionArgumentsAsync(
-        CommandLineOption commandOption, 
+        CommandLineOption commandOption,
         string[] arguments);
 
     Task<ValidationResult> ValidateCommandLineOptionsAsync(
@@ -826,7 +826,7 @@ public interface ICommandLineOptions
     bool IsOptionSet(string optionName);
 
     bool TryGetOptionArgumentList(
-        string optionName, 
+        string optionName,
         out string[]? arguments);
 }
 ```
@@ -854,7 +854,7 @@ Let's examine the apis and their mean:
 * `OneOrMore`: Represents an argument arity of one or more.
 * `ExactlyOne`: Represents an argument arity of exactly one.
 
-For examples, refer to the [System.CommandLine arity table](https://learn.microsoft.com/dotnet/standard/commandline/syntax#argument-arity).
+For examples, refer to the [System.CommandLine arity table](../../standard/commandline/syntax.md#argument-arity).
 
 `bool isHidden`: This property signifies that the option is available for use but will not be displayed in the description when `--help` is invoked.
 
@@ -866,7 +866,7 @@ A possible implementation for the sample above could be:
 
 ```csharp
 public Task<ValidationResult> ValidateOptionArgumentsAsync(
-    CommandLineOption commandOption, 
+    CommandLineOption commandOption,
     string[] arguments)
 {
     if (commandOption.Name == "dop")
@@ -926,11 +926,11 @@ The `ITestSessionLifeTimeHandler` interface includes the following methods:
 public interface ITestSessionLifetimeHandler : ITestHostExtension
 {
     Task OnTestSessionStartingAsync(
-        SessionUid sessionUid, 
+        SessionUid sessionUid,
         CancellationToken cancellationToken);
 
     Task OnTestSessionFinishingAsync(
-        SessionUid sessionUid, 
+        SessionUid sessionUid,
         CancellationToken cancellationToken);
 }
 
@@ -985,7 +985,7 @@ public interface ITestApplicationLifecycleCallbacks : ITestHostExtension
     Task BeforeRunAsync(CancellationToken cancellationToken);
 
     Task AfterRunAsync(
-        int exitCode, 
+        int exitCode,
         CancellationToken cancellation);
 }
 
@@ -1034,8 +1034,8 @@ public interface IDataConsumer : ITestHostExtension
     Type[] DataTypesConsumed { get; }
 
     Task ConsumeAsync(
-        IDataProducer dataProducer, 
-        IData value, 
+        IDataProducer dataProducer,
+        IData value,
         CancellationToken cancellationToken);
 }
 
@@ -1060,8 +1060,8 @@ internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
     public Type[] DataTypesConsumed => new[] { typeof(TestNodeUpdateMessage) };
     ...
     public Task ConsumeAsync(
-        IDataProducer dataProducer, 
-        IData value, 
+        IDataProducer dataProducer,
+        IData value,
         CancellationToken cancellationToken)
     {
         var testNodeUpdateMessage = (TestNodeUpdateMessage)value;
@@ -1149,7 +1149,7 @@ public interface IEnvironmentVariables : IReadOnlyEnvironmentVariables
 public interface IReadOnlyEnvironmentVariables
 {
     bool TryGetVariable(
-        string variable, 
+        string variable,
         [NotNullWhen(true)] out OwnedEnvironmentVariable? environmentVariable);
 }
 
@@ -1158,10 +1158,10 @@ public sealed class OwnedEnvironmentVariable : EnvironmentVariable
     public IExtension Owner { get; }
 
     public OwnedEnvironmentVariable(
-        IExtension owner, 
-        string variable, 
-        string? value, 
-        bool isSecret, 
+        IExtension owner,
+        string variable,
+        string? value,
+        bool isSecret,
         bool isLocked);
 }
 
@@ -1220,11 +1220,11 @@ public interface ITestHostProcessLifetimeHandler : ITestHostControllersExtension
     Task BeforeTestHostProcessStartAsync(CancellationToken cancellationToken);
 
     Task OnTestHostProcessStartedAsync(
-        ITestHostProcessInformation testHostProcessInformation, 
+        ITestHostProcessInformation testHostProcessInformation,
         CancellationToken cancellation);
 
     Task OnTestHostProcessExitedAsync(
-        ITestHostProcessInformation testHostProcessInformation, 
+        ITestHostProcessInformation testHostProcessInformation,
         CancellationToken cancellation);
 }
 

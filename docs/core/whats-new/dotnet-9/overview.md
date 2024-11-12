@@ -63,7 +63,15 @@ ML.NET is an open-source, cross-platform framework that enables integration of c
 
 ## ASP.NET Core
 
-ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, OpenAPI, and authentication and authorization. For more information, see [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0).
+ASP.NET Core apps built with .NET 9 are secure by default, have expanded support for ahead-of-time complication, improved monitoring and tracing, and with the performance improvements built in you will see higher throughput, faster startup time, and all with less memory usage. ASP.NET Core in .NET 9 includes improvements across:
+
+- Optimized handling of static files, like JavaScript and CSS, at build & publish time with automatic fingerprinted verisioning.
+- Blazor: New Blazor Hybrid and Web app templates, detection of component render mode, new reconnection experience with server rendering.
+- APIs: Built in support for OpenAPI document generation using `Microsoft.AspNetCore.OpenAPI`, enhanced native AOT support,
+- Improved security with new APIs for authentication and authorization.
+- Easier setup for trusted development certificate on Linux to enable HTTPS during development.
+
+These are just some of the features and enhancements you will find in .NET 9, for more information, see [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0).
 
 ## .NET MAUI
 

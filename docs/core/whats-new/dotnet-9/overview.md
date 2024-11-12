@@ -66,14 +66,12 @@ The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokeni
 The latest release introduces significant new capabilities:
 
 - Tokenizers
-  - SentencePiece
+  - Tiktoken for GPT (3, 3.5, 4, 4o, o1) and Llam3 models
+  - Llama (based on SentencePiece) for Llama and Mistral models
+  - CodeGen for code generation models like codegen-350M-mono
+  - Phi2 (based on CodeGen) for Microsoft Phi2 model
   - WordPiece
-- Built-in tokenizers for the following models:
-  - GPT (3, 3.5, 4, 4o, o1)
-  - Llama
-  - Phi
-  - BERT
-  - CodeGen
+  - Bert (based on WordPiece) for Bert supported models like optimum--all-MiniLM-L6-v2
 
 ### Tensors
 

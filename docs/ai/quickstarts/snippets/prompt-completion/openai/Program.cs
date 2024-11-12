@@ -11,9 +11,10 @@ IChatClient client =
     new OpenAIClient(key).AsChatClient(model);
 
 // Create and print out the prompt
-string prompt = 
-    $"""Please summarize the the following text in 20 words or less:
-    {File.ReadAllText("benefits.md")}""";
+string prompt = $"""
+    summarize the the following text in 20 words or less:
+    {File.ReadAllText("benefits.md")}
+    """;
 
 Console.WriteLine($"user >>> {prompt}");
 

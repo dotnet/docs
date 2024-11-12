@@ -123,11 +123,11 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
 1. Read the `benefits.md` file content and use it to create a `prompt` for model. The prompt instructs the model to summarize the file text content.
 
-    :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="13-18":::
+    :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="13-19":::
 
 1. Call the `InvokePromptAsync` function to send the `prompt` to the model to generate a response.
 
-    :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="20-22":::
+    :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="21-23":::
 
 1. Use the `dotnet run` command to run the app:
 

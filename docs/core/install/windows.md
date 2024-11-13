@@ -232,9 +232,9 @@ The installer executables always install new content before removing the previou
 
 | .NET Version | Registry Key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
-| All | HKLM\SOFWARE\Microsoft\.NET | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
-| .NET 9 | HKLM\SOFWARE\Microsoft\.NET\9.0 | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
-| .NET 8 | HKLM\SOFWARE\Microsoft\.NET\8.0 | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
+| All | HKLM\SOFTWARE\Microsoft\\.NET | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
+| .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
+| .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
 
 - _never_ retains previous installations and requires manual intervention to remove previous .NET installations.
 - _always_ removes previous installations after the new version is installed. This is the default behavior in .NET.

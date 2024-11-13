@@ -17,14 +17,14 @@ While most users prefer to be kept up to date, it is possible to block .NET upda
 
 | .NET Version | Registry Key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
-| All | HKLM\SOFWARE\Microsoft\\.NET | BlockMU | REG_DWORD | 0x00000001 |
-| .NET 9 | HKLM\SOFWARE\Microsoft\\.NET\9.0 | BlockMU | REG_DWORD | 0x00000001 |
-| .NET 8 | HKLM\SOFWARE\Microsoft\\.NET\8.0 | BlockMU | REG_DWORD | 0x00000001 |
-| .NET 7 | HKLM\SOFWARE\Microsoft\\.NET\7.0 | BlockMU | REG_DWORD | 0x00000001 |
-| .NET 6 | HKLM\SOFWARE\Microsoft\\.NET\6.0 | BlockMU | REG_DWORD | 0x00000001 |
-| .NET 5 | HKLM\SOFWARE\Microsoft\\.NET\5.0 | BlockMU | REG_DWORD | 0x00000001 |
-| .NET Core 3.1 | HKLM\SOFWARE\Microsoft\\.NET\3.1 | BlockMU | REG_DWORD | 0x00000001 |
-| .NET Core 2.1 | HKLM\SOFWARE\Microsoft\\.NET\2.1 | BlockMU | REG_DWORD | 0x00000001 |
+| All | HKLM\SOFTWARE\Microsoft\\.NET | BlockMU | REG_DWORD | 0x00000001 |
+| .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | BlockMU | REG_DWORD | 0x00000001 |
+| .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | BlockMU | REG_DWORD | 0x00000001 |
+| .NET 7 | HKLM\SOFTWARE\Microsoft\\.NET\7.0 | BlockMU | REG_DWORD | 0x00000001 |
+| .NET 6 | HKLM\SOFTWARE\Microsoft\\.NET\6.0 | BlockMU | REG_DWORD | 0x00000001 |
+| .NET 5 | HKLM\SOFTWARE\Microsoft\\.NET\5.0 | BlockMU | REG_DWORD | 0x00000001 |
+| .NET Core 3.1 | HKLM\SOFTWARE\Microsoft\\.NET\3.1 | BlockMU | REG_DWORD | 0x00000001 |
+| .NET Core 2.1 | HKLM\SOFTWARE\Microsoft\\.NET\2.1 | BlockMU | REG_DWORD | 0x00000001 |
 
 #### Automatic Updates for Server OS
 
@@ -32,10 +32,10 @@ Updates for server operating systems are supported by WSUS and Microsoft Update 
 
 | .NET Version | Registry Key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
-| All | HKLM\SOFWARE\Microsoft\\.NET | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
-| .NET 9 | HKLM\SOFWARE\Microsoft\\.NET\9.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
-| .NET 8 | HKLM\SOFWARE\Microsoft\\.NET\8.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
-| .NET 7 | HKLM\SOFWARE\Microsoft\\.NET\7.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
-| .NET 6 | HKLM\SOFWARE\Microsoft\\.NET\6.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
-| .NET 5 | HKLM\SOFWARE\Microsoft\\.NET\5.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
-| .NET Core 3.1 | HKLM\SOFWARE\Microsoft\\.NET\3.1 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| All | HKLM\SOFTWARE\Microsoft\\.NET | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| .NET 7 | HKLM\SOFTWARE\Microsoft\\.NET\7.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| .NET 6 | HKLM\SOFTWARE\Microsoft\\.NET\6.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| .NET 5 | HKLM\SOFTWARE\Microsoft\\.NET\5.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+| .NET Core 3.1 | HKLM\SOFTWARE\Microsoft\\.NET\3.1 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |

@@ -116,6 +116,7 @@ For more information, see [Install .NET on Windows](install/windows.md#supported
 - `linux-arm` (Linux distributions running on Arm like Raspbian on Raspberry Pi Model 2+)
 - `linux-arm64` (Linux distributions running on 64-bit Arm like Ubuntu Server 64-bit on Raspberry Pi Model 3+)
 - `linux-bionic-arm64` (Distributions using Android's bionic libc, for example, Termux)
+- `linux-loongarch64` (Linux distributions running on LoongArch64)
 
 For more information, see [.NET dependencies and requirements](./install/linux.md).
 

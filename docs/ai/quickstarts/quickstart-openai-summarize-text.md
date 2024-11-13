@@ -113,7 +113,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
     :::code language="csharp" source="snippets/prompt-completion/azure-openai/program.cs" range="1-12":::
 
     > [!NOTE]
-    > [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet) searches for authentication credentials from  your local tooling. If you are not using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. Visit the [Authenticate to Azure AI services with .NET](/dotnet/ai/azure-ai-services-authentication) page for more information.
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](/dotnet/ai/azure-ai-services-authentication).
 
     :::zone-end
 
@@ -123,11 +123,11 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone-end
 
-1. Read the `benefits.md` file content and use it to create a `prompt` for model. The prompt instructs the model to summarize the file text content.
+1. Read the `benefits.md` file content and use it to create a prompt for the model. The prompt instructs the model to summarize the file text content.
 
     :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="13-19":::
 
-1. Call the `InvokePromptAsync` function to send the `prompt` to the model to generate a response.
+1. Call the `InvokePromptAsync` function to send the prompt to the model to generate a response.
 
     :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="21-23":::
 

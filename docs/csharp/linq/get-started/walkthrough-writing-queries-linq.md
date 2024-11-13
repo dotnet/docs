@@ -29,7 +29,7 @@ The first step is to create a data source for your queries. The data source for 
 
 Note the following characteristics:
 
-- The `Student` record consists of autoimplemented properties.
+- The `Student` record consists of automatically implemented properties.
 - Each student in the list is initialized with the primary constructor.
 - The sequence of scores for each student is initialized with a primary constructor.
 

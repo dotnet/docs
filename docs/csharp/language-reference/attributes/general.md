@@ -104,7 +104,7 @@ The first <xref:System.AttributeUsageAttribute> argument must be one or more ele
 
 :::code language="csharp" source="snippets/NewPropertyOrFieldAttribute.cs" ID="SnippetDefinePropertyAttribute" :::
 
-Attributes can be applied to either the property or the backing field for an autoimplemented property. The attribute applies to the property, unless you specify the `field` specifier on the attribute. Both are shown in the following example:
+Attributes can be applied to either the property or the backing field for an automatically implemented property. The attribute applies to the property, unless you specify the `field` specifier on the attribute. Both are shown in the following example:
 
 :::code language="csharp" source="snippets/NewPropertyOrFieldAttribute.cs" ID="SnippetUsePropertyAttribute" :::
 

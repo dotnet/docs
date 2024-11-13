@@ -24,6 +24,22 @@ namespace VersionTwo
     // </AutoImplemented>
 }
 
+namespace VersionTwoPointFive
+{
+    // <FieldBackedProperty>
+    public class Person
+    {
+        public string? FirstName 
+        { 
+            get;
+            set => field = value.Trim(); 
+        }
+
+        // Omitted for brevity.
+    }
+    // </FieldBackedProperty>
+}
+
 namespace VersionThree
 {
     // <Initializer>

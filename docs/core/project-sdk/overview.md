@@ -144,6 +144,7 @@ You can specify additional implicit `global using` directives by adding `Using` 
     <Using Include="System.IO.Pipes" />
   </ItemGroup>
   ```
+System.Net.Http is [no longer included](https://learn.microsoft.com/dotnet/core/compatibility/sdk/8.0/implicit-global-using-netfx) in Microsoft.NET.Sdk when targeting .NET Framework starting in the .NET 8 SDK
 
 ## Implicit package references
 

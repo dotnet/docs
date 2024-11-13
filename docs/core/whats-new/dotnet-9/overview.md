@@ -105,7 +105,7 @@ The latest release introduces significant new capabilities for tokenizers:
 
 ## ASP.NET Core
 
-ASP.NET Core apps built with .NET 9 are secure by default, have expanded support for ahead-of-time complication, and have improved monitoring and tracing. With the performance improvements, you'll see higher throughput and faster startup time, and all with less memory usage. ASP.NET Core in .NET 9 includes:
+ASP.NET Core apps built with .NET 9 are secure by default, have expanded support for ahead-of-time compilation, and have improved monitoring and tracing. With the performance improvements, you'll see higher throughput and faster startup time, and all with less memory usage. ASP.NET Core in .NET 9 includes:
 
 - Optimized handling of static files, like JavaScript and CSS, at build and publish time with automatic fingerprinted versioning.
 - Blazor: New Hybrid and Web app templates, detection of component render mode, new reconnection experience with server rendering.

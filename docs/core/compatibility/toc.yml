@@ -326,10 +326,6 @@ items:
                 href: serialization/8.0/publishtrimmed.md
               - name: Reflection-based deserializer resolves metadata eagerly
                 href: serialization/8.0/metadata-resolving.md
-          - name: WCF client
-            items:
-              - name: Removal of WCF APIs with a `configurationName` parameter
-                href: wcf-client/8.0/configurationname-apis.md
           - name: Windows Forms
             items:
               - name: Anchor layout changes
@@ -1986,7 +1982,7 @@ items:
             href: visualbasic.md
       - name: WCF Client
         items:
-          - name: .NET 8
+          - name: "8.0"
             items:
               - name: Removal of WCF APIs with a `configurationName` parameter
                 href: wcf-client/8.0/configurationname-apis.md

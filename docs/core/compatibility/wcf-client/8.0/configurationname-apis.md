@@ -24,7 +24,7 @@ The APIs no longer exist. If you upgrade to .NET 8 and recompile your code, it w
 
 ## Type of breaking change
 
-This change is a [binary incompatible](../categories.md#binary-incompatible) and [source incompatible](../categories.md#source-incompatible) change.
+This change is a [binary incompatible](../../categories.md#binary-incompatible) and [source incompatible](../../categories.md#source-incompatible) change.
 
 ## Reason for change
 

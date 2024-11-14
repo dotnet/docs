@@ -22,9 +22,9 @@ If you must specify your C# version explicitly, you can do so in several ways:
 >
 > To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. See [#error (C# Reference)](preprocessor-directives.md#error-and-warning-information) for more information.
 
-## Why can't I select a different C# version?
+## Why you can't select a different C# version in Visual Studio
 
-In Visual Studio, the option to change the language version through the UI may be disabled because the default version is aligned with the project's target framework (`TFM`). This default configuration ensures compatibility between language features and runtime support.
+In Visual Studio, the option to change the language version through the UI might be disabled because the default version is aligned with the project's target framework (`TFM`). This default configuration ensures compatibility between language features and runtime support.
 
 For example, changing the target `TFM` (e.g., from [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) to [.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)) will update the language version accordingly, from C# 10 to C# 13. This approach prevents issues with runtime compatibility and minimizes unexpected build errors due to unsupported language features.
 

@@ -12,7 +12,7 @@ C# lets you instantiate an object or collection and perform member assignments i
 
 ## Object initializers
 
-Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax). The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the parameterless constructor. Note the use of autoimplemented properties in the `Cat` class. For more information, see [Automatically implemented properties](auto-implemented-properties.md).
+Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax). The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the parameterless constructor. Note the use of automatically implemented properties in the `Cat` class. For more information, see [Automatically implemented properties](auto-implemented-properties.md).
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="CatDeclaration":::
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ObjectPropertyInitialization":::

@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 Code-style language rules affect how various constructs of .NET programming languages, for example, modifiers, and parentheses, are used.
 
-This category also includes rules that identify parts of the code base that are unnecessary and can be refactored or removed. The presence of unnecessary code indicates one of more of the following problems:
+This category also includes rules that identify parts of the code base that are unnecessary and can be refactored or removed. The presence of unnecessary code indicates one or more of the following problems:
 
 - Readability: Code that unnecessarily degrades readability.
 - Maintainability: Code that's no longer used after refactoring and is maintained unnecessarily.

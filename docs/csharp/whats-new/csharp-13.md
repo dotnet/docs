@@ -19,6 +19,8 @@ C# 13 includes the following new features. You can try these features using the 
 - [Partial properties and indexers](#more-partial-members) are now allowed in `partial` types.
 - [Overload resolution priority](#overload-resolution-priority) allows library authors to designate one overload as better than others.
 
+Beginning with Visual Studio 17.12, C# 13 includes the [`field`](#the-field-keyword) contextual keyword as a preview feature.
+
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 9 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 9 SDK.
@@ -110,7 +112,7 @@ In the same fashion, C# 13 allows `unsafe` contexts in iterator methods. However
 
 Before C# 13, `ref struct` types couldn't be declared as the type argument for a generic type or method. Now, generic type declarations can add an anti-constraint, `allows ref struct`. This anti-constraint declares that the type argument supplied for that type parameter can be a `ref struct` type. The compiler enforces ref safety rules on all instances of that type parameter.
 
-For example, you may declare a generic type like the following code:
+For example, you might declare a generic type like the following code:
 
 ```csharp
 public class C<T> where T : allows ref struct
@@ -127,7 +129,7 @@ This enables types such as <xref:System.Span%601?displayProperty=nameWithType> a
 
 ## `ref struct` interfaces
 
-Before C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. You can declare that a `ref struct` type implements interfaces. However, to ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That is a boxing conversion, and could violate ref safety. From that rule, `ref struct` types can't declare methods that explicitly implement an interface method. Also, `ref struct` types must implement all methods declared in an interface, including those with a default implementation.
+Before C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. You can declare that a `ref struct` type implements an interface. However, to ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That conversion is a boxing conversion, and could violate ref safety. From that rule, `ref struct` types can't declare methods that explicitly implement an interface method. Also, `ref struct` types must implement all methods declared in an interface, including those methods with a default implementation.
 
 Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface).
 
@@ -161,6 +163,16 @@ You can learn more in the article on [partial members](../language-reference/key
 In C# 13, the compiler recognizes the <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> to prefer one overload over another. Library authors can use this attribute to ensure that a new, better overload is preferred over an existing overload. For example, you might add a new overload that's more performant. You don't want to break existing code that uses your library, but you want users to update to the new version when they recompile. You can use [Overload resolution priority](../language-reference/attributes/general.md#overloadresolutionpriority-attribute) to inform the compiler which overload should be preferred. Overloads with the highest priority are preferred.
 
 This feature is intended for library authors to avoid ambiguity when adding new overloads. Library authors should use care with this attribute to avoid confusion.
+
+## The `field` keyword
+
+The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. The token `field` accesses the compiler synthesized backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.
+
+The `field` feature is released as a preview feature. We want to learn from your experiences using it. There's a potential a breaking change or confusion reading code in types that also include a field named `field`.  You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier.
+
+[!INCLUDE[field-preview](../includes/field-preview.md)]
+
+If you try this feature and have feedback, add it to the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
 
 ## See also
 

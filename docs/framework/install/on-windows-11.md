@@ -7,11 +7,13 @@ ms.date: 10/06/2021
 
 .NET Framework 4.8 is included with Windows 11, and runs any .NET Framework 4.x app.
 
+## .NET Framework 4.8.1
+
+.NET 4.8.1 is supported on Windows 11, version 22H2 and newer operating systems.
+
 ## .NET Framework 3.5
 
-Follow the instructions to install [.NET Framework 3.5 on Windows 11](dotnet-35-windows.md).
-
-.NET Framework 3.5 supports apps built for .NET Framework 2.0 through 3.5.
+[!INCLUDE [server-35](includes/server-35.md)]
 
 ## See also
 

@@ -67,7 +67,7 @@ public static class LogicalPatterns
 
     // <SpecifyBindingOrder>
     // Correct pattern. Force `and` before `not`
-    static bool IsNotLowerCaseLetter(char c) => c is not (>= 'a' and <= 'z');
+    static bool IsNotLowerCaseLetterParentheses(char c) => c is not (>= 'a' and <= 'z');
     // </SpecifyBindingOrder>
 
     // <WithParentheses>

@@ -24,7 +24,7 @@ The [affected APIs](#affected-apis) no longer exist. If you upgrade to WCF 8 and
 
 ## Type of breaking change
 
-This change is a [binary incompatible](../../categories.md#binary-compatibility) and [source incompatible](../../categories.md#source-compatibility) change.
+This change is a [source incompatible](../../categories.md#source-compatibility) change.
 
 ## Reason for change
 

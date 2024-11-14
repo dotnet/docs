@@ -148,16 +148,17 @@ The Visual Studio documentation provides instructions on how to:
 
 If you're using Visual Studio to develop .NET apps, the following table describes the minimum required version of Visual Studio based on the target .NET SDK version.
 
-| .NET SDK version      | Visual Studio version                      |
-| --------------------- | ------------------------------------------ |
-| 8                     | Visual Studio 2022 version 17.8 or higher. |
-| 7                     | Visual Studio 2022 version 17.4 or higher. |
-| 6                     | Visual Studio 2022 version 17.0 or higher. |
-| 5                     | Visual Studio 2019 version 16.8 or higher. |
-| 3.1                   | Visual Studio 2019 version 16.4 or higher. |
-| 3.0                   | Visual Studio 2019 version 16.3 or higher. |
-| 2.2                   | Visual Studio 2017 version 15.9 or higher. |
-| 2.1                   | Visual Studio 2017 version 15.7 or higher. |
+| .NET SDK version      | Visual Studio version                       |
+| --------------------- | ------------------------------------------- |
+| 9                     | Visual Studio 2022 version 17.12 or higher. |
+| 8                     | Visual Studio 2022 version 17.8 or higher.  |
+| 7                     | Visual Studio 2022 version 17.4 or higher.  |
+| 6                     | Visual Studio 2022 version 17.0 or higher.  |
+| 5                     | Visual Studio 2019 version 16.8 or higher.  |
+| 3.1                   | Visual Studio 2019 version 16.4 or higher.  |
+| 3.0                   | Visual Studio 2019 version 16.3 or higher.  |
+| 2.2                   | Visual Studio 2017 version 15.9 or higher.  |
+| 2.1                   | Visual Studio 2017 version 15.7 or higher.  |
 
 If you already have Visual Studio installed, you can check your version with the following steps.
 

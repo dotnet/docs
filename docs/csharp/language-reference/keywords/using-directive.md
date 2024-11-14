@@ -1,12 +1,11 @@
 ---
-description: "using directive - C# Reference"
-title: "using directive"
-ms.date: 08/19/2021
+description: "The `using` directive imports types from a namespace, or creates an alias for a given type. Using directives enable you to use simple names for types instead of the fully qualified type name."
+title: "The using directive: Import types from a namespace"
+ms.date: 11/14/2024
 f1_keywords:
   - "using_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
-ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
 ---
 # using directive
 
@@ -21,7 +20,7 @@ You can apply two modifiers to a `using` directive:
 - The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.
 - The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace.
 
-You can combine both modifiers to import the static members from a type in all source files in your project.
+You can combine both modifiers to import the static members from a type to all source files in your project.
 
 You can also create an alias for a namespace or a type with a *using alias directive*.
 
@@ -36,12 +35,14 @@ You can use the `global` modifier on a *using alias directive*.
 
 The scope of a `using` directive without the `global` modifier is the file in which it appears.
 
-The `using` directive can appear:
+The `global using` directive must appear before all namespace and type declarations. All global using directives must appear in a source file before any non-global `using` directives.
+
+Other `using` directives can appear:
 
 - At the beginning of a source code file, before any namespace or type declarations.
-- In any namespace, but before any namespaces or types declared in that namespace, unless the `global` modifier is used, in which case the directive must appear before all namespace and type declarations.
+- In any blocked-scoped namespace, but before any namespaces or types declared in that namespace.
 
-Otherwise, compiler error [CS1529](../compiler-messages/using-directive-errors.md) is generated.
+Otherwise, a compiler error is generated.
 
 Create a `using` directive to use the types in a namespace without having to specify the namespace. A `using` directive doesn't give you access to any namespaces that are nested in the namespace you specify. Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](../../../../api/index.md).
 
@@ -69,6 +70,8 @@ global using static System.Math;
 ```
 
 You can also globally include a namespace by adding a `<Using>` item to your project file, for example, `<Using Include="My.Awesome.Namespace" />`. For more information, see [`<Using>` item](../../../core/project-sdk/msbuild-props.md#using).
+
+Analyzers issue diagnostics if you've duplicated `global` using directives in different locations. These same analyzers also inform you if you add a `using` directive for a namespace or type that is already referenced by a `global` using directive. You might find it easier to manage your `global` usings by keeping them together in one file in the project.
 
 [!INCLUDE [csharp10-templates](../../../../includes/csharp10-templates.md)]
 
@@ -159,6 +162,14 @@ The following example shows how to define a `using` directive and a `using` alia
 :::code language="csharp" source="./snippets/csrefKeywordsNamespace2.cs" id="Snippet9":::
 
 Beginning with C# 12, you can create aliases for types that were previously restricted, including [tuple types](../builtin-types/value-tuples.md#tuple-field-names), pointer types, and other unsafe types. For more information on the updated rules, see the [feature spec](~/_csharplang/proposals/csharp-12.0/using-alias-types.md).
+
+## Qualified alias member
+
+The namespace alias qualifier, `::` provides explicit access to the global namespace or other using aliases that are potentially hidden by other entities.
+
+The `global::` ensures that the namespace lookup for the namespace to the right of the `::` token is relative to the global namespace. Otherwise, the token must resolve to a using alias, and the token to the right must resolve to a type in that aliased namespace. The following example shows both forms:
+
+:::code language="csharp" source="./snippets/UsingAliasQualifier.cs" id="UsingAliasQualifier":::
 
 ## C# language specification
 

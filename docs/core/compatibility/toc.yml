@@ -1982,6 +1982,10 @@ items:
             href: visualbasic.md
       - name: WCF Client
         items:
+          - name: "8.0"
+            items:
+              - name: Removal of WCF APIs with a `configurationName` parameter
+                href: wcf-client/8.0/configurationname-apis.md
           - name: "6.0"
             items:
               - name: .NET Standard 2.0 no longer supported

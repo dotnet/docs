@@ -154,7 +154,7 @@ In addition, if you define an alias named `global`, the compiler issues **CS0440
 
 ## Alias name conflicts
 
-You can declare an [alias](../keywords/using-directive.md#using-alias) to a namespace or a type with a `using` directive:
+You can declare an [alias](../keywords/using-directive.md#the-using-alias) to a namespace or a type with a `using` directive:
 
 :::code language="csharp" source="./snippets/UsingDirectives/Program.cs" id="UsingAlias":::
 

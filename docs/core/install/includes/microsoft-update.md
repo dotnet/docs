@@ -11,7 +11,7 @@ Both security and non-security fixes for supported versions of .NET are provided
 
 The .NET installer executables support side-by-side (SxS) installations across major/minor releases for different architectures and components (runtime, SDK, etc.). For example, users can install both the 6.0.15 (x64) and 6.0.17 (x86) runtime. When MU triggers, it will offer the latest installer for both installations.
 
-#### Blocking Updates
+#### Block updates
 
 While most users prefer to be kept up to date, it is possible to block .NET updates using the registry keys in the following table.
 

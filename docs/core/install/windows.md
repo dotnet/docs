@@ -230,7 +230,7 @@ dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 
 The installer executables always install new content before removing the previous installation. Running applications may be interrupted or crash when older runtimes are. To minimize the impact of updating .NET, users can specify when a previous .NET installation should be removed using a registry key.
 
-| .NET Version | Registry Key | Name | Type | Value |
+| .NET version | Registry key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
 | All | HKLM\SOFTWARE\Microsoft\\.NET | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
 | .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |

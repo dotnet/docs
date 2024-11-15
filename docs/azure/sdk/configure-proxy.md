@@ -29,7 +29,21 @@ Using the Azure Key Vault Secrets library as an example, you'd have the followin
 
 ## Configure using environment variables
 
-Depending on whether your proxy server uses HTTP or HTTPS, set either the environment variable `HTTP_PROXY` or `HTTPS_PROXY`, respectively. The proxy server URL takes the form `http[s]://[username:password@]<ip_address_or_hostname>:<port>/`, where the `username:password` combination is optional. To get the IP address or hostname, port, and credentials for your proxy server, consult your network administrator.
+The following table provides an inventory of environment variables that can be set to configure a proxy for use.
+
+| Environment variable | Purpose                                                                                                      |
+|----------------------|--------------------------------------------------------------------------------------------------------------|
+| `HTTP_PROXY`         | The proxy server used on HTTP requests.                                                                      |
+| `HTTPS_PROXY`        | The proxy server used on HTTPS requests.                                                                     |
+| `ALL_PROXY`          | The proxy server used for both HTTP and HTTPS requests, in case `HTTP_PROXY` or `HTTPS_PROXY` are undefined. |
+| `NO_PROXY`           | A comma-delimited list of hostnames to exclude from proxying.                                                |
+
+Be aware of the following behaviors:
+
+- Each environment variable in the preceding table can alternatively be defined as lowercase. For example, `http_proxy`. The lowercase form takes precedence over the uppercase form.
+- Protocol-specific environment variables take precedence over `ALL_PROXY`.
+
+The proxy server URL takes the form `http[s]://[username:password@]<ip_address_or_hostname>:<port>/`, where the `username:password` combination is optional. To get the IP address or hostname, port, and credentials for your proxy server, consult your network administrator.
 
 The following examples show how to set the appropriate environment variables in command shell (Windows) and bash (Linux/macOS) environments. Setting the appropriate environment variable causes the Azure SDK for .NET libraries to use the proxy server at runtime.
 
@@ -43,10 +57,10 @@ rem Authenticated HTTP server:
 set HTTP_PROXY=http://username:password@10.10.1.10:1180
 
 rem Non-authenticated HTTPS server:
-set HTTPS_PROXY=http://10.10.1.10:1180
+set HTTPS_PROXY=https://10.10.1.10:1180
 
 rem Authenticated HTTPS server:
-set HTTPS_PROXY=http://username:password@10.10.1.10:1180
+set HTTPS_PROXY=https://username:password@10.10.1.10:1180
 ```
 
 ### [bash](#tab/bash)
@@ -59,10 +73,10 @@ HTTP_PROXY=http://10.10.1.10:1180
 HTTP_PROXY=http://username:password@10.10.1.10:1180
 
 # Non-authenticated HTTPS server:
-HTTPS_PROXY=http://10.10.1.10:1180
+HTTPS_PROXY=https://10.10.1.10:1180
 
 # Authenticated HTTPS server:
-HTTPS_PROXY=http://username:password@10.10.1.10:1180
+HTTPS_PROXY=https://username:password@10.10.1.10:1180
 ```
 
 ---

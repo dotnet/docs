@@ -223,6 +223,30 @@ dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
 
+### Microsoft Update
+
+[!INCLUDE [microsoft-update](includes/microsoft-update.md)]
+
+### Choose when previous versions are removed
+
+The installer executables always install new content before removing the previous installation. Applications that are running might be interrupted or crash when older runtimes are removed. To minimize the impact of updating .NET, you can specify when a previous .NET installation should be removed using a registry key.
+
+| .NET version | Registry key | Name | Type | Value |
+| -------------- | :--------- | :---------- | :---------- | :---------- |
+| All | HKLM\SOFTWARE\Microsoft\\.NET | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+
+- `never` retains previous installations and requires manual intervention to remove previous .NET installations.
+- `always` removes previous installations after the new version is installed. This is the default behavior in .NET.
+- `nextSession` defers the removal until the next logon session from members in the Administrators group.
+- Values are case-insensitive and invalid values default to `always`.
+
+When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if a user in the Administrators group logs on to the machine.
+
+> [!NOTE]
+> This feature is only available in .NET 8 (8.0.11), 9, and later versions of .NET. It only applies to the standalone installer executables and impacts distributions like WinGet that use them.
+
 ## Install with Windows Package Manager (WinGet)
 
 You can install and manage .NET through the Windows Package Manager service, using the `winget.exe` tool. For more information about how to install and use **WinGet**, see [Use the winget tool to install and manage applications](/windows/package-manager/winget/).

@@ -81,4 +81,4 @@ Managed heap analysis isn't currently supported in Native AOT. Heap analysis too
 
 ## See also
 
-- [Native AOT diagnostic support on iOS and Mac Catalyst](https://learn.microsoft.com/dotnet/maui/deployment/nativeaot?view=net-maui-9.0&preserve-view=true#native-aot-diagnostic-support-on-ios-and-mac-catalyst)
+- [Native AOT diagnostic support on iOS and Mac Catalyst](/dotnet/maui/deployment/nativeaot#native-aot-diagnostic-support-on-ios-and-mac-catalyst)

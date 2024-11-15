@@ -5,7 +5,7 @@ ms.date: 11/12/2024
 ms.topic: include
 ---
 
-The .NET installer executables are independent products that can be serviced using Microsoft Update (MU) on Windows. This is different from Windows Update (WU) that is used to service operating system components like .NET Framework.
+The .NET installer executables are independent products that can be serviced using Microsoft Update (MU) on Windows. MU is different to Windows Update (WU), which is used to service operating system components like .NET Framework.
 
 Both security and non-security fixes for supported versions of .NET are provided through MU using multiple distribution channels. Automatic Updates (AU) is relevant to end users and consumers, while Window Server Update Services (WSUS) and Windows Update Catalog are relevant to IT administrators.
 

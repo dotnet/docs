@@ -7,11 +7,11 @@ ms.date: 08/29/2024
 
 .NET 8 Debian 12 container images use different default cipher suites for TLS than .NET 7 Debian 11 container images. The same is true for .NET 8 Ubuntu 24.04 containers images as compared to Ubuntu 22.04.
 
-This change will prevent applications from securely connecting to servers that do not support TLS 1.3.
+This change prevents applications from securely connecting to servers that don't support TLS 1.3.
 
 .NET, on Linux, respects the OpenSSL configuration for default cipher suites when doing TLS/SSL via the <xref:System.Net.Security.SslStream> class or higher-level operations, such as HTTPS via the <xref:System.Net.Http.HttpClient> class. When default cipher suites aren't explicitly configured, .NET on Linux uses a tightly restricted list of permitted cipher suites. This behavior was [added in .NET 5 as a breaking change](../../cryptography/5.0/default-cipher-suites-for-tls-on-linux.md).
 
-Debian 12 and Ubuntu 24.04 do not configure default cipher suites for OpenSSL. Alpine (all known versions) do not configure default cipher suites for OpenSSL.
+Debian 12 and Ubuntu 24.04 do not configure default cipher suites for OpenSSL. Alpine (all known versions) doesn't configure default cipher suites for OpenSSL.
 
 ## Previous behavior
 
@@ -27,7 +27,7 @@ Debian 12 and Ubuntu 24.04 do not configure default cipher suites for OpenSSL. A
 
 ## Version introduced
 
-.NET 5
+.NET 8 container images
 
 ## Type of change
 
@@ -39,12 +39,10 @@ Debian and Ubuntu maintainers presumably made this change to align with industry
 
 ## Recommended action
 
-Upgrade components that do not support TLS 1.3. This is required to create secure workflows.
+To create secure workflows, upgrade components that don't support TLS 1.3.
 
 More information is available at [dotnet/dotnet-docker #6039](https://github.com/dotnet/dotnet-docker/issues/6039).
 
 ## Affected APIs
 
 None.
-
-## See also

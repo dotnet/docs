@@ -22,7 +22,8 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(
         new Uri("https://<account-name>.blob.core.windows.net"));
     #region snippet_Dac
-    clientBuilder.UseCredential(new DefaultAzureCredential());
+    DefaultAzureCredential credential = new();
+    clientBuilder.UseCredential(credential);
     #endregion snippet_Dac
 
     #region snippet_DacExcludes

@@ -2,7 +2,7 @@
 title: 'Credential chains in the Azure Identity library for .NET'
 description: 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 11/15/2024
 ---
 
 # Credential chains in the Azure Identity library for .NET
@@ -63,7 +63,10 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="1":::
+
+> [!TIP]
+> The `UseCredential` method in the preceding code snippet is recommended for use in ASP.NET Core apps. For more information, see [Use the Azure SDK for .NET in ASP.NET Core apps](../aspnetcore-guidance.md#authenticate-using-microsoft-entra-id).
 
 ### How to customize DefaultAzureCredential
 

@@ -80,7 +80,7 @@ On 64-bit operating systems, .NET Framework supports both WOW64 (32-bit processi
 
 | Operating system              | Compatible editions | Preinstalled with the OS | Installable separately |
 |-------------------------------|---------------------|--------------------------|------------------------|
-| Windows Server 2022 and newer | 64-bit              | .NET Framework 4.8.1     | --   |
+| Windows Server 2025 and newer | 64-bit              | .NET Framework 4.8.1     | --   |
 | Windows Server 2022           | 64-bit              | .NET Framework 4.8       | .NET Framework 4.8.1   |
 | Windows Server 2019†          | 64-bit              | .NET Framework 4.7.2     | .NET Framework 4.8     |
 | Windows Server, version 1809† | 64-bit              | .NET Framework 4.7.2     | .NET Framework 4.8     |

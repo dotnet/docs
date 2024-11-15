@@ -54,7 +54,7 @@ Complete the following steps to register the services you need:
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="53-73" highlight="1-3,5-6,8-10":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="52-71" highlight="1-3,5-6,8-10":::
 
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
@@ -91,7 +91,7 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 Azure SDK service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
 - [JSON configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify managing differences in app deployments between environments.
-- Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-service-clients) section, you explicitly passed the URI variables to the client constructors.
+- Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-Azure-SDK-clients-with-the-DI-service-collection) section, you explicitly passed the URI variables to the client constructors.
 
 `IConfiguration` precedence rules are respected by the `Microsoft.Extensions.Azure` extension methods, which are detailed in the [Configuration Providers](/dotnet/core/extensions/configuration#configuration-providers) documentation.
 

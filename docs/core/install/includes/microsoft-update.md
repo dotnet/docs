@@ -13,7 +13,7 @@ The .NET installer executables support side-by-side (SxS) installations across m
 
 #### Blocking Updates
 
-While most users prefer to be kept up to date, it is possible to block .NET updates using the registry keys in the table below.  
+While most users prefer to be kept up to date, it is possible to block .NET updates using the registry keys in the following table.
 
 | .NET Version | Registry Key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |

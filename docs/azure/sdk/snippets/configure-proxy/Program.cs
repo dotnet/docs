@@ -5,7 +5,7 @@ using Azure.Security.KeyVault.Secrets;
 
 using HttpClientHandler handler = new()
 {
-    Proxy = new WebProxy(new Uri("<http://example.com>")),
+    Proxy = new WebProxy(new Uri("<proxy-url>")),
 };
 
 SecretClientOptions options = new()

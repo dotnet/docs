@@ -244,7 +244,7 @@ The installer executables always install new content before removing the previou
 When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if a user in the Administrators group logs on to the machine.
 
 > [!NOTE]
-> This feature is only available starting with .NET 8 (8.0.11), 9 and later versions of .NET. It only applies to the standalone installer executables and will impact distributions like WinGet that use them.
+> This feature is only available in .NET 8 (8.0.11), 9, and later versions of .NET. It only applies to the standalone installer executables and impacts distributions like WinGet that use them.
 
 ## Install with Windows Package Manager (WinGet)
 

@@ -249,7 +249,7 @@ Available starting in: .NET 8.0.
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
-| `error.type` | string | The full name of exception type. | `System.OperationCanceledException`; `Contoso.MyException` | If an exception was thrown. |
+| `error.type` | string | Describes a type of error the connection ended with, or the unhandled exception type thrown during the connection pipeline. Known connection errors can be found [here](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelconnectionduration). | `connection_reset`; `invalid_request_headers`; `System.OperationCanceledException` | If the connection ended with a known error or an exception was thrown. |
 | `network.protocol.name` | string | [OSI application layer](https://osi-model.com/application-layer/) or non-OSI equivalent. | `http`; `web_sockets` | Always |
 | `network.protocol.version` | string | Version of the protocol specified in `network.protocol.name`. | `1.1`; `2` | Always |
 | `network.transport` | string | [OSI transport layer](https://osi-model.com/transport-layer/) or [inter-process communication method](https://en.wikipedia.org/wiki/Inter-process_communication). | `tcp`; `unix` | Always |
@@ -259,6 +259,8 @@ Available starting in: .NET 8.0.
 | `tls.protocol.version` | string | TLS protocol version. | `1.2`; `1.3` | If the connection is secured with TLS. |
 
 As this metric is tracking the connection duration, and ideally http connections are used for multiple requests, the buckets should be longer than those used for request durations. For example, using [ 0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10, 30, 60, 120, 300] provides an upper bucket of 5 mins.
+
+Starting in .NET 9.0, when a connection ends with a known error the `error.type` attribute value is set to the known error type. Known connection errors can be found [here](https://opentelemetry.io/docs/specs/semconv/dotnet/dotnet-kestrel-metrics/#metric-kestrelconnectionduration).
 
 Available starting in: .NET 8.0.
 

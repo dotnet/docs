@@ -54,7 +54,7 @@ Complete the following steps to register the services you need:
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="52-71" highlight="1-3,6,9-10":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="52-73" highlight="1-3,6,8,11-12":::
 
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)

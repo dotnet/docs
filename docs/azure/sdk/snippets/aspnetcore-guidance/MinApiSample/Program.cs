@@ -56,6 +56,8 @@ app.MapGet("/reports", async (
     // Create the named client
     ServiceBusSender serviceBusSender = senderFactory.CreateClient("queue1");
 
+    await serviceBusSender.SendMessageAsync(new ServiceBusMessage("Hello world"));
+
     // Use the blob client
     BlobContainerClient containerClient
         = blobServiceClient.GetBlobContainerClient("reports");

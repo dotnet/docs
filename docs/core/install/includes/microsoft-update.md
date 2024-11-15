@@ -15,7 +15,7 @@ The .NET installer executables support side-by-side (SxS) installations across m
 
 While most users prefer to be kept up to date, it is possible to block .NET updates using the registry keys in the following table.
 
-| .NET Version | Registry Key | Name | Type | Value |
+| .NET version | Registry key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
 | All | HKLM\SOFTWARE\Microsoft\\.NET | BlockMU | REG_DWORD | 0x00000001 |
 | .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | BlockMU | REG_DWORD | 0x00000001 |

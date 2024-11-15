@@ -25,7 +25,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         builder.Configuration["ServiceBus:Namespace"]);
 
     // Register a subclient for each Azure Service Bus Queue
-    var queueNames = new string[] { "queue1", "queue2" };
+    string[] queueNames = [ "queue1", "queue2" ];
     foreach (string queue in queueNames)
     {
         clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>(

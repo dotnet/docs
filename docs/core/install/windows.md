@@ -241,7 +241,7 @@ The installer executables always install new content before removing the previou
 - `nextSession` defers the removal until the next logon session from members in the Administrators group.
 - Values are case-insensitive and invalid values default to `always`.
 
-When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if users in the Administrators group logs on to the machine.
+When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if a user in the Administrators group logs on to the machine.
 
 > [!NOTE]
 > This feature is only available starting with .NET 8 (8.0.11), 9 and later versions of .NET. It only applies to the standalone installer executables and will impact distributions like WinGet that use them.

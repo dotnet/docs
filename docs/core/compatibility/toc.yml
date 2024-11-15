@@ -94,6 +94,8 @@ items:
                 href: networking/9.0/query-redaction-logs.md
           - name: SDK and MSBuild
             items:
+              - name: 'dotnet restore' audits transitive packages
+                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
               - name: "'dotnet workload' commands output change"
@@ -1776,6 +1778,8 @@ items:
         items:
           - name: .NET 9
             items:
+              - name: 'dotnet restore' audits transitive packages
+                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
               - name: "'dotnet workload' commands output change"

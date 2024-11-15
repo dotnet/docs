@@ -26,7 +26,7 @@ While most users prefer to be kept up to date, it is possible to block .NET upda
 | .NET Core 3.1 | HKLM\SOFTWARE\Microsoft\\.NET\3.1 | BlockMU | REG_DWORD | 0x00000001 |
 | .NET Core 2.1 | HKLM\SOFTWARE\Microsoft\\.NET\2.1 | BlockMU | REG_DWORD | 0x00000001 |
 
-#### Automatic Updates for Server OS
+#### Automatic updates for Server OS
 
 Updates for server operating systems are supported by WSUS and Microsoft Update Catalog, but not AU. Server operating systems can opt in to receive updates through AU using the following registry keys.
 

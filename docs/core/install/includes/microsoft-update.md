@@ -30,7 +30,7 @@ While most users prefer to be kept up to date, it is possible to block .NET upda
 
 Updates for server operating systems are supported by WSUS and Microsoft Update Catalog, but not AU. Server operating systems can opt in to receive updates through AU using the following registry keys.
 
-| .NET Version | Registry Key | Name | Type | Value |
+| .NET version | Registry key | Name | Type | Value |
 | -------------- | :--------- | :---------- | :---------- | :---------- |
 | All | HKLM\SOFTWARE\Microsoft\\.NET | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
 | .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |

@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 01/30/2023
+ms.date: 11/14/2024
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -12,9 +12,9 @@ helpviewer_keywords:
   - "or keyword [C#]"
   - "not keyword [C#]"
 ---
-# Pattern matching - the `is` and `switch` expressions, and operators `and`, `or` and `not` in patterns
+# Pattern matching - the `is` and `switch` expressions, and operators `and`, `or`, and `not` in patterns
 
-You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement) and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using Boolean logic keywords `and`, `or`, and `not`.
+You use the [`is` expression](is.md), the [switch statement](../statements/selection-statements.md#the-switch-statement), and the [switch expression](switch-expression.md) to match an input expression against any number of characteristics. C# supports multiple patterns, including declaration, type, constant, relational, property, list, var, and discard. Patterns can be combined using Boolean logic keywords `and`, `or`, and `not`.
 
 The following C# expressions and statements support pattern matching:
 
@@ -26,14 +26,14 @@ In those constructs, you can match an input expression against any of the follow
 
 - [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
 - [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression.
-- [Constant pattern](#constant-pattern): to test if an expression result equals a specified constant.
+- [Constant pattern](#constant-pattern): to test that an expression result equals a specified constant.
 - [Relational patterns](#relational-patterns): to compare an expression result with a specified constant.
-- [Logical patterns](#logical-patterns): to test if an expression matches a logical combination of patterns.
-- [Property pattern](#property-pattern): to test if an expression's properties or fields match nested patterns.
+- [Logical patterns](#logical-patterns): to test that an expression matches a logical combination of patterns.
+- [Property pattern](#property-pattern): to test that an expression's properties or fields match nested patterns.
 - [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
 - [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
 - [Discard pattern](#discard-pattern): to match any expression.
-- [List patterns](#list-patterns): to test if sequence elements match corresponding nested patterns. Introduced in C# 11.
+- [List patterns](#list-patterns): to test that a sequence of elements matches corresponding nested patterns. Introduced in C# 11.
 
 [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
@@ -71,7 +71,7 @@ For that purpose you can use a *type pattern*, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="TypePattern":::
 
-Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its run-time type satisfies any of the conditions listed above.
+Like a declaration pattern, a type pattern matches an expression when an expression result is non-null and its run-time type satisfies any of the preceding conditions.
 
 To check for non-null, you can use a [negated](#logical-patterns) `null` [constant pattern](#constant-pattern), as the following example shows:
 
@@ -145,20 +145,30 @@ As the preceding example shows, you can repeatedly use the pattern combinators i
 
 ### Precedence and order of checking
 
-The pattern combinators are ordered from the highest precedence to the lowest as follows:
+The pattern combinators are ordered based on the binding order of expressions as follows:
 
 - `not`
 - `and`
 - `or`
 
-When a logical pattern is a pattern of an `is` expression, the precedence of logical pattern combinators is **higher** than the precedence of logical operators (both [bitwise logical](bitwise-and-shift-operators.md) and [Boolean logical](boolean-logical-operators.md) operators). Otherwise, the precedence of logical pattern combinators is **lower** than the precedence of logical and conditional logical operators. For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
+The `not` pattern binds to its operand first. The `and` pattern binds after any `not` pattern expression binding. The `or` pattern binds after all `not` and `and` patterns are bound to operands. The following example tries to match all characters that aren't lower case letters, `a` - `z`. It has an error, because the `not` pattern binds before the `and` pattern:
 
-To explicitly specify the precedence, use parentheses, as the following example shows:
+:::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="NegationWithoutParens":::
+
+The default binding means the previous example is parsed as the following example:
+
+:::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="DefaultBinding":::
+
+To fix it, you must specify that you want the `not` to bind to the `>= 'a' and <= 'z'` expression:
+
+:::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="SpecifyBindingOrder":::
+
+Adding parentheses becomes more important as your patterns become more complicated. In general, use parentheses to clarify your patterns for other developers, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="WithParentheses":::
 
 > [!NOTE]
-> The order in which patterns are checked is undefined. At run time, the right-hand nested patterns of `or` and `and` patterns can be checked first.
+> The order in which patterns having the same binding order are checked is undefined. At run time, the right-hand nested patterns of multiple `or` patterns and multiple `and` patterns can be checked first.
 
 For more information, see the [Pattern combinators](~/_csharplang/proposals/csharp-9.0/patterns3.md#pattern-combinators) section of the feature proposal note.
 
@@ -270,7 +280,7 @@ Beginning with C# 11, you can match an array or a list against a *sequence* of p
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="BasicExample":::
 
-As the preceding example shows, a list pattern is matched when each nested pattern is matched by the corresponding element of an input sequence. You can use any pattern within a list pattern. To match any element, use the [discard pattern](#discard-pattern) or, if you also want to capture the element, the [var pattern](#var-pattern), as the following example shows:
+As the preceding example shows, a list pattern is matched when each nested pattern matches the corresponding element of an input sequence. You can use any pattern within a list pattern. To match any element, use the [discard pattern](#discard-pattern) or, if you also want to capture the element, the [var pattern](#var-pattern), as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ListPattern.cs" id="MatchAnyElement":::
 

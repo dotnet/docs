@@ -2,6 +2,7 @@ using Azure.Identity;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Azure;
+using Azure.Messaging.ServiceBus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,15 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddServiceBusClientWithNamespace(
         builder.Configuration["ServiceBus:Namespace"]);
 
+    // Register a subclient for each Azure Service Bus Queue
+    var queueNames = new string[] { "queue1", "queue2" };
+    foreach (string queue in queueNames)
+    {
+        clientBuilder.AddClient<ServiceBusSender, ServiceBusClientOptions>(
+            (_, _, provider) => provider.GetService<ServiceBusClient>()
+                    .CreateSender(queue)).WithName(queue);
+    }
+
     clientBuilder.UseCredential(new DefaultAzureCredential());
 
     // Set up any default settings
@@ -41,8 +51,13 @@ if (app.Environment.IsDevelopment())
 
 
 app.UseHttpsRedirection();
-app.MapGet("/reports", async (BlobServiceClient blobServiceClient) =>
+app.MapGet("/reports", async (
+        BlobServiceClient blobServiceClient,
+        IAzureClientFactory<ServiceBusSender> senderFactory) =>
 {
+    // Create the named client
+    ServiceBusSender serviceBusSender = senderFactory.CreateClient("queue1");
+
     // Use the blob client
     BlobContainerClient containerClient
         = blobServiceClient.GetBlobContainerClient("reports");

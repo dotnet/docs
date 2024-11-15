@@ -54,12 +54,12 @@ Complete the following steps to register the services you need:
     <!-- markdownlint-disable MD023 -->
     ## [Minimal API](#tab/api)
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="44-59" highlight="1,4,5":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="53-73" highlight="1-3,5-6,8-10":::
 
     <!-- markdownlint-disable MD023 -->
     ## [Blazor](#tab/blazor)
 
-    :::code language="razor" source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="5,21-22":::
+    :::code language="razor" source="snippets/aspnetcore-guidance/BlazorSample/Components/Pages/Home.razor" range="1-28" highlight="17-26":::
 
     ---
 
@@ -84,7 +84,7 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 
     :::code language="csharp" source="snippets/aspnetcore-guidance/BlazorSample/Program.cs" range="11-30" highlight="19":::
 
-`DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview).
+    `DefaultAzureCredential` discovers available credentials in the current environment and uses them to authenticate to Azure services. For the order and locations in which `DefaultAzureCredential` scans for credentials, see [DefaultAzureCredential overview](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview). Using a shared `DefaultAzureCredential` instance ensures the underlying token cache is used, which improves application resilience and performance due to fewer requests for a new token.
 
 ## Apply configurations
 

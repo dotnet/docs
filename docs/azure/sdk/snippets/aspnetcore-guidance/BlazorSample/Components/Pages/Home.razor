@@ -1,8 +1,8 @@
 ﻿@page "/"
 @using Azure.Storage.Blobs
 @using Azure.Storage.Blobs.Models
-
-@inject BlobServiceClient blobServiceClient
+@using Azure.Messaging.ServiceBus
+@using Microsoft.Extensions.Azure;
 
 <h1>Reports</h1>
 
@@ -16,10 +16,21 @@
 @code {
     List<BlobItem> reports = new();
 
+    private BlobServiceClient _blobServiceClient;
+    private ServiceBusSender _serviceBusSender;
+
+    public Home(
+        BlobServiceClient blobServiceClient,
+        IAzureClientFactory<ServiceBusSender> senderFactory)
+    {
+         _blobServiceClient = blobServiceClient;
+        _serviceBusSender = senderFactory.CreateClient("queue1");
+    }
+
     protected override async Task OnInitializedAsync()
     {
         BlobContainerClient containerClient = 
-            blobServiceClient.GetBlobContainerClient("reports");
+            _blobServiceClient.GetBlobContainerClient("reports");
 
         await foreach (BlobItem blobItem in containerClient.GetBlobsAsync())
         {

@@ -236,10 +236,10 @@ The installer executables always install new content before removing the previou
 | .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
 | .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | RemovePreviousVersion | REG_SZ | _always_, _never_, or _nextSession_ |
 
-- _never_ retains previous installations and requires manual intervention to remove previous .NET installations.
-- _always_ removes previous installations after the new version is installed. This is the default behavior in .NET.
-- _nextSession_ defers the removal until the next logon session from members in the Administrators group.
-- Values are case-insensitive and invalid values default to _always_.
+- `never` retains previous installations and requires manual intervention to remove previous .NET installations.
+- `always` removes previous installations after the new version is installed. This is the default behavior in .NET.
+- `nextSession` defers the removal until the next logon session from members in the Administrators group.
+- Values are case-insensitive and invalid values default to `always`.
 
 When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if users in the Administrators group logs on to the machine.
 

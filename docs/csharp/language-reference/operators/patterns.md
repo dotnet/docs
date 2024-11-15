@@ -159,7 +159,7 @@ The default binding means the previous example is parsed as the following exampl
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="DefaultBinding":::
 
-In order to fix it, you must specify that you want the `not` to bind to the `>= 'a' and <= 'z'` expression:
+To fix it, you must specify that you want the `not` to bind to the `>= 'a' and <= 'z'` expression:
 
 :::code language="csharp" source="snippets/patterns/LogicalPatterns.cs" id="SpecifyBindingOrder":::
 

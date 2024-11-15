@@ -7,7 +7,7 @@ ms.topic: include
 
 The .NET installer executables are independent products that can be serviced using Microsoft Update (MU) on Windows. This is different from Windows Update (WU) that is used to service operating system components like .NET Framework.
 
-Both security and non-security fixes for supported versions of .NET are provided through MU using multiple distribution channels. Automatic Updates (AU) is relevant to end-users and consumers while Window Server Update Services (WSUS) and Windows Update Catalog are relevant to IT administrators.
+Both security and non-security fixes for supported versions of .NET are provided through MU using multiple distribution channels. Automatic Updates (AU) is relevant to end users and consumers, while Window Server Update Services (WSUS) and Windows Update Catalog are relevant to IT administrators.
 
 The .NET installer executables support side-by-side (SxS) installations across major/minor releases for different architectures and components (runtime, SDK, etc.). For example, users can install both the 6.0.15 (x64) and 6.0.17 (x86) runtime. When MU triggers, it will offer the latest installer for both installations.
 

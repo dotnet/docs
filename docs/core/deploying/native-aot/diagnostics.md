@@ -8,7 +8,7 @@ ms.date: 08/07/2023
 
 # Diagnostics and instrumentation
 
-Native AOT shares some, but not all, diagnostics and instrumentation capabilities with the full .NET runtime. Apps that are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) shouldn't have behavioral differences, so investigations often apply to both runtimes and it's sometimes appropriate to diagnose and debug problems in the full .NET runtime, as it has a rich selection of available diagnostic utilities. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
+Native AOT shares some, but not all, diagnostics and instrumentation capabilities with the full .NET runtime. Apps that are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) shouldn't have behavioral differences, so investigations often apply to both runtimes. As such, it's sometimes appropriate to diagnose and debug problems in the full .NET runtime, as it has a rich selection of available diagnostic utilities. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
 
 ## Native AOT diagnostic support
 

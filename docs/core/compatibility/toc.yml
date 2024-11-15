@@ -160,6 +160,8 @@ items:
                 href: containers/8.0/ca-certificates-package.md
               - name: Container images upgraded to Debian 12
                 href: containers/8.0/debian-version.md
+              - name: Container images no longer support TLS 1.2
+                href: containers/8.0/default-cipher-suites-for-tls-on-linux.md
               - name: Default ASP.NET Core port changed to 8080
                 href: containers/8.0/aspnet-port.md
               - name: Kerberos package removed from Alpine and Debian images

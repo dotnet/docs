@@ -20,7 +20,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 #### CLR
 
-Addresses an issue where in rare cases where an infinite loop could occur when a thread enters CLR for the first time. (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Addresses an issue where, in rare cases, an infinite loop could occur when a thread enters CLR for the first time. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 ## Known issues in this release
 

@@ -1751,7 +1751,7 @@ For more information, see [Trimming options](../deploying/trimming/trimming-opti
 
 ### Using
 
-The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
+The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#the-global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
 
 ```xml
 <ItemGroup>
@@ -1772,7 +1772,7 @@ For example:
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
 
-For more information, see [aliased `using` directives](../../csharp/language-reference/keywords/using-directive.md#using-alias) and [`using static <type>` directives](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
+For more information, see [aliased `using` directives](../../csharp/language-reference/keywords/using-directive.md#the-using-alias) and [`using static <type>` directives](../../csharp/language-reference/keywords/using-directive.md#the-static-modifier).
 
 ## Item metadata
 

@@ -14,7 +14,7 @@ The following example shows a complete query operation. The complete operation i
 
 :::code language="csharp" source="./snippets/linq-index/Index.cs" id="intro":::
 
-You might need to add a [`using`](../language-reference/keywords/using-directive.md) directive, `using System.Linq;`, for the preceding example to compile. The most recent versions of .NET make use of [implicit usings](../../core/project-sdk/overview.md#implicit-using-directives) to add this directive as a [global using](../language-reference/keywords/using-directive.md#global-modifier). Older versions require you to add it in your source.
+You might need to add a [`using`](../language-reference/keywords/using-directive.md) directive, `using System.Linq;`, for the preceding example to compile. The most recent versions of .NET make use of [implicit usings](../../core/project-sdk/overview.md#implicit-using-directives) to add this directive as a [global using](../language-reference/keywords/using-directive.md#the-global-modifier). Older versions require you to add it in your source.
 
 ## Query expression overview
 

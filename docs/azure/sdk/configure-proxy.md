@@ -37,10 +37,12 @@ The following table provides an inventory of environment variables that can be s
 | `HTTPS_PROXY`        | The proxy server used on HTTPS requests.                                                                     |
 | `ALL_PROXY`          | The proxy server used for both HTTP and HTTPS requests, in case `HTTP_PROXY` or `HTTPS_PROXY` are undefined. |
 | `NO_PROXY`           | A comma-delimited list of hostnames to exclude from proxying.                                                |
+| `GATEWAY_INTERFACE`  | Set if running in a CGI environment. Example value: `CGI/1.1` |
 
 Be aware of the following behaviors:
 
-- Each environment variable in the preceding table can alternatively be defined as lowercase. For example, `http_proxy`. The lowercase form takes precedence over the uppercase form.
+- Each environment variable in the preceding table, except `GATEWAY_INTERFACE`, can alternatively be defined as lowercase. For example, `http_proxy`. The lowercase form takes precedence over the uppercase form.
+- If both `http_proxy` and `GATEWAY_INTERFACE` are undefined, `HTTP_PROXY` is used.
 - Protocol-specific environment variables take precedence over `ALL_PROXY`.
 
 The proxy server URL takes the form `http[s]://[username:password@]<ip_address_or_hostname>:<port>/`, where the `username:password` combination is optional. To get the IP address or hostname, port, and credentials for your proxy server, consult your network administrator.

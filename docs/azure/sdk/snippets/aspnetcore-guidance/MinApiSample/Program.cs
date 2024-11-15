@@ -70,8 +70,7 @@ app.MapGet("/reports", async (
 
     return reports;
 })
-.WithName("GetReports")
-.WithOpenApi();
+.WithName("GetReports");
 
 app.Run();
 

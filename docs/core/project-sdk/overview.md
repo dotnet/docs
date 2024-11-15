@@ -145,6 +145,9 @@ You can specify additional implicit `global using` directives by adding `Using` 
   </ItemGroup>
   ```
 
+> [!NOTE]
+> Starting with the .NET 8 SDK, <xref:System.Net.Http> is [no longer included](../compatibility/sdk/8.0/implicit-global-using-netfx.md) in `Microsoft.NET.Sdk` when targeting .NET Framework.
+
 ## Implicit package references
 
 When your project targets .NET Standard 1.0-2.0, the .NET SDK adds implicit references to certain *metapackages*. A metapackage is a framework-based package that consists only of dependencies on other packages. Metapackages are implicitly referenced based on the target frameworks specified in the [TargetFramework](msbuild-props.md#targetframework) or [TargetFrameworks (plural)](msbuild-props.md#targetframeworks) property of your project file.

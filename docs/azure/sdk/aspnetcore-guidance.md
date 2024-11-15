@@ -122,7 +122,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 2. In the `Program.cs` file, call the `ConfigureDefaults` extension method to retrieve the default settings and apply them to your service clients:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="17-18":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="14-41" highlight="26-27":::
 
 ## Configure logging
 

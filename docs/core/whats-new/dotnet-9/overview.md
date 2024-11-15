@@ -70,6 +70,7 @@ For more information, see [What's new in the SDK for .NET 9](sdk.md).
 - Builds on top of `TensorPrimitives` for efficient math operations.
 - Provides efficient interop with AI libraries (ML.NET, TorchSharp, ONNX Runtime) using zero copies where possible.
 - Enables easy and efficient data manipulation with indexing and slicing operations.
+- Is [experimental](../../../fundamentals/apicompat/preview-apis.md#experimentalattribute) in .NET 9.
 
 ### ML.NET
 

@@ -49,7 +49,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CLRDataOtherNotifyFlag Enumeration](clrdataothernotifyflag-enumeration.md)\
  Indicates the type of notifications that should be delivered. Used in calls to [IXCLRDataProcess::SetOtherNotificationFlags Method](ixclrdataprocess-setothernotificationflags-method.md).
 
- [CLRDataSimpleFrameType Enumeraiton](clrdatasimpleframetype-enumeration.md)\
+ [CLRDataSimpleFrameType Enumeration](clrdatasimpleframetype-enumeration.md)\
  Describes a type of frame in the call stack from [IXCLRDataStackWalk::GetFrameType](ixclrdatastackwalk-getframetype-method.md).
 
  [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)\

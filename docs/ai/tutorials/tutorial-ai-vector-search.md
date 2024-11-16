@@ -12,7 +12,7 @@ ms.author: alexwolf
 
 This tutorial explores integration of the RAG pattern using Open AI models and vector search capabilities in a .NET app. The sample application performs vector searches on custom data stored in Azure Cosmos DB for MongoDB and further refines the responses using generative AI models, such as GPT-35 and GPT-4. In the sections that follow, you'll set up a sample application and explore key code examples that demonstrate these concepts.
 
-## Prerequsites
+## Prerequisites
 
 - [.NET 8.0 installed](https://dotnet.microsoft.com/)
 - An [Azure Account](https://azure.microsoft.com/free)

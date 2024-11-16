@@ -116,7 +116,7 @@ If you explicitly define any of these items in your project file, you're likely 
 
 ## Implicit using directives
 
-Starting in .NET 6, implicit [`global using` directives](../../csharp/language-reference/keywords/using-directive.md#global-modifier) are added to new C# projects. This means that you can use types defined in these namespaces without having to specify their fully qualified name or manually add a `using` directive. The *implicit* aspect refers to the fact that the `global using` directives are added to a generated file in the project's *obj* directory.
+Starting in .NET 6, implicit [`global using` directives](../../csharp/language-reference/keywords/using-directive.md#the-global-modifier) are added to new C# projects. This means that you can use types defined in these namespaces without having to specify their fully qualified name or manually add a `using` directive. The *implicit* aspect refers to the fact that the `global using` directives are added to a generated file in the project's *obj* directory.
 
 Implicit `global using` directives are added for projects that use one of the following SDKs:
 
@@ -144,6 +144,9 @@ You can specify additional implicit `global using` directives by adding `Using` 
     <Using Include="System.IO.Pipes" />
   </ItemGroup>
   ```
+
+> [!NOTE]
+> Starting with the .NET 8 SDK, <xref:System.Net.Http> is [no longer included](../compatibility/sdk/8.0/implicit-global-using-netfx.md) in `Microsoft.NET.Sdk` when targeting .NET Framework.
 
 ## Implicit package references
 

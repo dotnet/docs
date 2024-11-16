@@ -8,11 +8,11 @@ ms.date: 11/12/2024
 
 # The `TestContext` class
 
-The `TestContext` class provides contextual information and support for test execution, making it easier to retrieve information about the test run and manipulate aspects of the environment. It's defined in the `Microsoft.VisualStudio.TestTools.UnitTesting` namespace and is available when using the MSTest Framework.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class provides contextual information and support for test execution, making it easier to retrieve information about the test run and manipulate aspects of the environment. It's defined in the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace and is available when using the MSTest Framework.
 
 ## Accessing the `TestContext` object
 
-The `TestContext` object is available in the following contexts:
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> object is available in the following contexts:
 
 - As a parameter to `[AssemblyInitialize]` and `[ClassInitialize]` methods. In this context, the properties related to the test run are not available.
 - As a property of a test class. In this context, the properties related to the test run are available.
@@ -44,7 +44,7 @@ public class MyTestClass
 }
 ```
 
-or with MSTest 3.6+
+Or with MSTest 3.6+:
 
 ```csharp
 [TestClass]
@@ -79,7 +79,7 @@ public class MyTestClass
 
 ## The `TestContext` members
 
-The `TestContext` class provides properties about the test run along with methods to manipulate the test environment. In this section, we will cover the most commonly used properties and methods.
+The `TestContext` class provides properties about the test run along with methods to manipulate the test environment. This section covers the most commonly used properties and methods.
 
 ### Test run information
 
@@ -98,13 +98,13 @@ In MSTest 3.7 and later, the `TestContext` class also provides new properties he
 
 - `TestData` – the data that will be provided to the parameterized test method or `null` if the test is not parameterized.
 - `TestDisplayName` - the display name of the test method.
-- `TestException` - the exception thrown by either the test method or test initialize or `null` if the test method did not throw an exception.
+- `TestException` - the exception thrown by either the test method or test initialize, or `null` if the test method did not throw an exception.
 
 ### Data-driven tests
 
 `TestContext` is essential for data-driven testing in MSTest. It enables you to retrieve and set data for each iteration in a data-driven test, using properties like `DataRow` and `DataConnection` (for datasource based tests).
 
-Assuming the following CSV file `TestData.csv`:
+Consider the following CSV file `TestData.csv`:
 
 ```csv
 Number,Name
@@ -150,7 +150,7 @@ namespace YourNamespace
 
 In MSTest 3.7 and later, the property `TestData` can be used to access the data for the current test during `TestInitialize` and `TestCleanup` methods.
 
-### Storing and Retrieving Runtime Data
+### Store and retrieve runtime data
 
 You can use `TestContext.Properties` to store custom key-value pairs that can be accessed across different methods in the same test session.
 
@@ -159,9 +159,9 @@ TestContext.Properties["MyKey"] = "MyValue";
 string value = TestContext.Properties["MyKey"]?.ToString();
 ```
 
-### Associating data to a test
+### Associate data to a test
 
-The `TestContext.AddResultFile` method allows you to add a file to the test results, making it available for review in the test output. This can be useful if you generate files during your test (e.g., log files, screenshots, or data files) that you want to attach to the test results.
+The `TestContext.AddResultFile` method allows you to add a file to the test results, making it available for review in the test output. This can be useful if you generate files during your test (for example, log files, screenshots, or data files) that you want to attach to the test results.
 
 ```csharp
 [TestMethod]

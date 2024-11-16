@@ -49,9 +49,9 @@ MSTest assertions are divided into the following classes:
 
 ## The `TestContext` class
 
-The `TestContext` class provides contextual information and support for test execution, making it easier to retrieve information about the test run and manipulate aspects of the environment. It's defined in the `Microsoft.VisualStudio.TestTools.UnitTesting` namespace and is available when using the MSTest Framework.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class provides contextual information and support for test execution, making it easier to retrieve information about the test run and manipulate aspects of the environment. It's defined in the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace and is available when using the MSTest Framework.
 
-You can learn about [accessing the `TestContext` object](./unit-testing-mstest-writing-tests-testcontext.md#accessing-the-testcontext-object) or [the `TestContext` members](./unit-testing-mstest-writing-tests-testcontext.md#the-testcontext-members).
+For more information, see [Accessing the `TestContext` object](./unit-testing-mstest-writing-tests-testcontext.md#accessing-the-testcontext-object) or [The `TestContext` members](./unit-testing-mstest-writing-tests-testcontext.md#the-testcontext-members).
 
 ## Testing private members
 

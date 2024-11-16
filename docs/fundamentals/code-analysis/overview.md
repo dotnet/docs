@@ -31,7 +31,7 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 # [.NET 9](#tab/net-9)
 
-The following rules are enabled, by default, as errors or warnings in .NET 8. Additional rules are enabled as suggestions.
+The following rules are enabled, by default, as errors or warnings in .NET 9. Additional rules are enabled as suggestions.
 
 | Diagnostic ID | Category | Severity | Version added | Description |
 | - | - | - | - | - |

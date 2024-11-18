@@ -28,6 +28,7 @@ Review your code and, if necessary, update it to prevent constructing the affect
 The following table lists the affected APIs:
 
 > [!div class="mx-tdBreakAll"]
+>
 > | Affected method or property | Validated property | Version added |
 > |-|-|-|
 > | <xref:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject.DoDefaultAction?displayProperty=nameWithType> | <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> | 5.0 |

@@ -32,6 +32,7 @@ The code-style rules are organized into the following subcategories:
 The following table list all the code-style rules by ID and [options](../code-style-rule-options.md), if any.
 
 > [!div class="mx-tdCol3BreakAll"]
+>
 > | Rule ID | Title | Option |
 > | - | - | - |
 > | [IDE0001](ide0001.md) | Simplify name | |

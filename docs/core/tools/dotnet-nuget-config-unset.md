@@ -43,7 +43,7 @@ The `dotnet nuget config unset` unsets the values for NuGet configuration settin
 * Removes's the `repositoryPath` config value from the specified configuration file:
 
   ```dotnetcli
-  dotnet nuget config unset repositoryPath --configfile "C:/nugte.config"
+  dotnet nuget config unset repositoryPath --configfile "C:/nuget.config"
   ```
 
 ## See also

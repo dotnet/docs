@@ -44,7 +44,7 @@ appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInf
   
 ## Enabling an Application to Use Non-HTTP Protocols  
 
- You can enable or disable individual network protocolsat the application level. The following command illustrates how to enable both the HTTP and net.tcp protocols for an application that runs in the `Default Web Site`.  
+ You can enable or disable individual network protocols at the application level. The following command illustrates how to enable both the HTTP and net.tcp protocols for an application that runs in the `Default Web Site`.  
   
 ```console  
 appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp  

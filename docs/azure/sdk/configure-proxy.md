@@ -3,7 +3,7 @@ title: Configure a proxy when using the Azure SDK for .NET
 description: Learn different approaches for configuring a proxy for use with the Azure SDK for .NET client libraries.
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 11/15/2024
+ms.date: 11/18/2024
 ---
 
 # Configure a proxy when using the Azure SDK for .NET
@@ -31,17 +31,17 @@ Using the Azure Key Vault Secrets library as an example, you'd have the followin
 
 The following table provides an inventory of environment variables that can be set to configure a proxy for use.
 
-| Environment variable | Purpose                                                                                                     |
-|----------------------|-------------------------------------------------------------------------------------------------------------|
-| `HTTP_PROXY`         | The proxy server used on HTTP requests.                                                                     |
-| `HTTPS_PROXY`        | The proxy server used on HTTPS requests.                                                                    |
-| `ALL_PROXY`          | The proxy server used for both HTTP and HTTPS requests.                                                     |
-| `NO_PROXY`           | A comma-delimited list of hostnames to exclude from proxying.                                               |
-| `GATEWAY_INTERFACE`  | Indicator that the app is running in a Common Gateway Interface (CGI) environment. Example value: `CGI/1.1` |
+| Environment variable           | Purpose                                                                                                     |
+|--------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `HTTP_PROXY` or `http_proxy`   | The proxy server used on HTTP requests.                                                                     |
+| `HTTPS_PROXY` or `https_proxy` | The proxy server used on HTTPS requests.                                                                    |
+| `ALL_PROXY` or `all_proxy`     | The proxy server used for both HTTP and HTTPS requests.                                                     |
+| `NO_PROXY` or `no_proxy`       | A comma-delimited list of hostnames to exclude from proxying.                                               |
+| `GATEWAY_INTERFACE`            | Indicator that the app is running in a Common Gateway Interface (CGI) environment. Example value: `CGI/1.1` |
 
 Be aware of the following behaviors:
 
-- Each environment variable in the preceding table, except `GATEWAY_INTERFACE`, can alternatively be defined as lowercase. For example, `http_proxy`. The lowercase form takes precedence over the uppercase form.
+- Each environment variable in the preceding table, except `GATEWAY_INTERFACE`, can alternatively be defined as lowercase. The lowercase form takes precedence over the uppercase form.
 - If both `http_proxy` and `GATEWAY_INTERFACE` are undefined, `HTTP_PROXY` is used.
 - `ALL_PROXY` is considered only when either an HTTP or an HTTPS proxy is undefined.
 - Protocol-specific environment variables take precedence over `ALL_PROXY`.

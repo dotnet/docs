@@ -102,6 +102,16 @@ Additionally, these strategies handle the following exceptions:
 - `HttpRequestException`
 - `TimeoutRejectedException`
 
+#### Disabling retries for a given list of HTTP methods
+
+By default, the standard resilience handler is configured to make retries for all HTTP methods. For some applications such behavior could be undesirable or even harmful. For example, if a POST request inserts a new record to a database, then making retries for such a request could lead to data duplication. If you need to disable retries for a given list of HTTP methods you can use a method <xref:Microsoft.Extensions.Http.Resilience.HttpRetryStrategyOptionsExtensions.DisableFor> for that:
+
+:::code language="csharp" source="snippets/http-resilience/Program.RetryOptions.cs" id="disable_for":::
+
+Alternatively, you can use a method <xref:Microsoft.Extensions.Http.Resilience.HttpRetryStrategyOptionsExtensions.DisableForUnsafeHttpMethods> which disables retries for `POST`, `PATCH`, `PUT`, `DELETE`, and `CONNECT` HTTP methods. According to [RFC](https://www.rfc-editor.org/rfc/rfc7231#section-4.2.1) these methods are considered unsafe meaning their semantics is non readonly:
+
+:::code language="csharp" source="snippets/http-resilience/Program.RetryOptions.cs" id="disable_for_unsafe_http_methods":::
+
 ## Add standard hedging handler
 
 The standard hedging handler wraps the execution of the request with a standard hedging mechanism. Hedging retries slow requests in parallel.

@@ -127,7 +127,7 @@ QUIC is now partially supported on macOS through a non-standard Homebrew package
 brew install libmsquic
 ```
 
-To run a .NET application and ensure it uses `libmsquic`, you need to set the environment variable before running the application. This ensures the application can find the `libmsquic` library during runtime dynamic loading. You can do this by adding the following command before your main command:
+To run a .NET application that uses `libmsquic`, you need to set the environment variable before running it. This ensures the application can find the `libmsquic` library during runtime dynamic loading. You can do this by adding the following command before your main command:
 
 ```bash
 DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:$(brew --prefix)/lib dotnet run

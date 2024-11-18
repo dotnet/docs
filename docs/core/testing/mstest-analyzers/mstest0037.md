@@ -19,7 +19,7 @@ ms.author: ygerges
 | **Title**                           | Use proper 'Assert' methods                                            |
 | **Category**                        | Usage                                                                  |
 | **Fix is breaking or non-breaking** | Non-breaking                                                           |
-| **Enabled by default**              | No                                                                     |
+| **Enabled by default**              | Yes                                                                    |
 | **Default severity**                | Info                                                                   |
 | **Introduced in version**           | 3.7.0                                                                  |
 | **There is a code fix**             | No                                                                     |
@@ -56,4 +56,4 @@ Use the better alternative method.
 
 ## When to suppress warnings
 
-You usually don't want to suppress warnings from this rule if you decided to opt-in for it.
+You usually don't want to suppress warnings from this rule.

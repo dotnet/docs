@@ -1,26 +1,26 @@
 ---
-title: Install .NET on SLES
-description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SLES.
+title: Install .NET on SUSE Enterprise Linux
+description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on SUSE Enterprise Linux (SLES).
 author: adegeo
 ms.author: adegeo
-ms.date: 05/14/2024
+ms.date: 11/11/2024
 ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on SLES
 
-.NET is supported on SLES. This article describes how to install .NET on SLES.
+.NET is supported on SUSE Enterprise Linux (SLES). This article describes how to install .NET on SLES.
 
 [!INCLUDE [linux-intro-sdk-vs-runtime](includes/linux-intro-sdk-vs-runtime.md)]
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases on both SLES 12 SP2 and SLES 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
+The following table is a list of currently supported .NET releases on SLES 15. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of SLES is no longer supported.
 
-| SLES   | .NET |
-|--------|------|
-| 15     | 8.0, 6.0 |
-| 12 SP5 | 8.0, 6.0 |
+| SLES   | .NET     |
+|--------|----------|
+| 15.6   | 9.0, 8.0 |
+| 15.5   | 9.0, 8.0 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -46,19 +46,9 @@ Currently, the SLES 15 Microsoft repository setup package installs the *microsof
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
-## SLES 12
-
-.NET requires SP2 as a minimum for the SLES 12 family.
-
-[!INCLUDE [linux-prep-intro-generic](includes/linux-prep-intro-generic.md)]
-
-```bash
-sudo rpm -Uvh https://packages.microsoft.com/config/sles/12/packages-microsoft-prod.rpm
-```
-
-[!INCLUDE [linux-zyp-install-80](includes/linux-install-80-zyp.md)]
+[!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 ## How to install other versions
 

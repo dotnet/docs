@@ -58,8 +58,7 @@ While `DataContractSerializer` carries those functional benefits when migrating 
 
 [Migrate to DataContractSerializer (XML)](./migrate-to-datacontractserializer.md).
 
-> [!NOTE]
-> Do not confuse <xref:System.Runtime.Serialization.DataContractSerializer> with <xref:System.Runtime.Serialization.NetDataContractSerializer>. <xref:System.Runtime.Serialization.NetDataContractSerializer> is also identified as a [dangerous serializer](../binaryformatter-security-guide.md#dangerous-alternatives).
+[!INCLUDE [netdatacontractserializer-warning](../../../../includes/netdatacontractserializer-warning.md)]
 
 ## Binary using MessagePack
 

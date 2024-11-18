@@ -6,4 +6,5 @@
 //Channels.RunIt();
 //RegularExpressions.RunIt();
 //Collections.RunIt();
-Diagnostics.RunIt();
+//Diagnostics.RunIt();
+Tensors.RunIt();

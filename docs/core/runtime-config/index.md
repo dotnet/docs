@@ -4,28 +4,20 @@ description: Learn how to configure the .NET runtime using configuration setting
 ms.topic: conceptual
 ms.date: 07/23/2021
 ---
-# .NET Runtime configuration settings
-
-.NET 5+ (including .NET Core versions) supports the use of configuration files and environment variables to configure the behavior of .NET applications.
-
-> [!NOTE]
-> The articles in this section concern configuration of the .NET Runtime itself. If you're migrating an app from .NET Framework to .NET and are looking for a replacement for the *app.config* file, or if you simply want a way to use custom configuration values in your .NET app, see the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder?displayProperty=fullName> class and [Configuration in .NET](../extensions/configuration.md).
-
-Using these settings is an attractive option if:
-
-- You don't own or control the source code for an application and therefore are unable to configure it programmatically.
-- Multiple instances of your application run at the same time on a single system, and you want to configure each for optimum performance.
+# .NET runtime configuration settings
 
 .NET provides the following mechanisms for configuring behavior of the .NET runtime:
 
-- The [runtimeconfig.json file](#runtimeconfigjson)
-- [MSBuild properties](#msbuild-properties)
-- [Environment variables](#environment-variables)
-
-> [!TIP]
-> Configuring an option by using an environment variable applies the setting to all .NET apps. Configuring an option in the *runtimeconfig.json* or project file applies the setting to that application only.
+| Mechanism                                         | Notes                                  |
+|---------------------------------------------------|----------------------------------------|
+| The [runtimeconfig.json file](#runtimeconfigjson) | Applies the setting to a specific app. Use this file if multiple instances of your app run at the same time on a single system, and you want to configure each for optimum performance. |
+| [MSBuild properties](#msbuild-properties)         | Applies the setting to a specific app. MSBuild properties take precedence over settings in *runtimeconfig.json*. |
+| [Environment variables](#environment-variables)   | Applies the setting to all .NET apps.  |
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
+
+> [!NOTE]
+> The articles in this section concern configuration of the .NET runtime itself. If you're migrating an app from .NET Framework to .NET and are looking for a replacement for the *app.config* file, see [Modernize after upgrading to .NET](../porting/modernize.md#appconfig). For information about supplying custom configuration values to .NET apps, see [Configuration in .NET](../extensions/configuration.md).
 
 The articles in this section of the documentation are organized by category, for example, [debugging](debugging-profiling.md) and [garbage collection](garbage-collector.md). Where applicable, configuration options are shown for *runtimeconfig.json* files, MSBuild properties, environment variables, and, for cross-reference, *app.config* files for .NET Framework projects.
 
@@ -49,7 +41,7 @@ Specify runtime configuration options in the **configProperties** section of the
 
 ### Example [appname].runtimeconfig.json file
 
-If you're placing the options in the output JSON file, nest them under the `runtimeOptions` property.
+If you're placing the options in the *output* JSON file, nest them under the `runtimeOptions` property.
 
 ```json
 {
@@ -72,7 +64,7 @@ If you're placing the options in the output JSON file, nest them under the `runt
 
 ### Example runtimeconfig.template.json file
 
-If you're placing the options in the template JSON file, omit the `runtimeOptions` property.
+If you're placing the options in the *template* JSON file, **omit** the `runtimeOptions` property.
 
 ```json
 {

@@ -1,19 +1,18 @@
 ---
-description: "Learn more about: CorBindToRuntimeHost Function"
 title: "CorBindToRuntimeHost Function"
+description: "Learn more about: CorBindToRuntimeHost Function"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "CorBindToRuntimeHost"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "CorBindToRuntimeHost"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CorBindToRuntimeHost function [.NET Framework hosting]"
-ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # CorBindToRuntimeHost Function
@@ -46,7 +45,7 @@ HRESULT CorBindToRuntimeHost (
   
  Some versions of the CLR are installed with a policy statement that specifies compatibility with previous versions of the CLR. By default, the startup shim evaluates `pwszVersion` against policy statements and loads the latest version of the runtime that is compatible with the version being requested. A host can force the shim to skip policy evaluation and load the exact version specified in `pwszVersion` by passing a value of STARTUP_LOADER_SAFEMODE for the `startupFlags` parameter.  
   
- If `pwszVersion` is `null,` the method does not load any version of the CLR. Instead, it returns CLR_E_SHIM_RUNTIMELOAD, which indicates that it failed to load the runtime.  
+ If `pwszVersion` is `null`, the method does not load any version of the CLR. Instead, it returns CLR_E_SHIM_RUNTIMELOAD, which indicates that it failed to load the runtime.  
   
  `pwszBuildFlavor`  
  [in] A string that specifies whether to load the server or the workstation build of the CLR. Valid values are `svr` and `wks`. The server build is optimized to take advantage of multiple processors for garbage collections, and the workstation build is optimized for client applications running on a single-processor machine.  

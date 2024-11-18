@@ -30,7 +30,7 @@ This change can affect [binary compatibility](../../categories.md#binary-compati
 
 ## Reason for change
 
-Enabling CET enhances the security of .NET applications by adding hardware-enforced stack protection that offers robust protection against ROP exploits (return-oriented programming).
+Enabling CET enhances the security of .NET applications by adding hardware-enforced stack protection against return-oriented programming (ROP) exploits.
 
 ## Recommended action
 

@@ -32,6 +32,7 @@ The code-style rules are organized into the following subcategories:
 The following table list all the code-style rules by ID and [options](../code-style-rule-options.md), if any.
 
 > [!div class="mx-tdCol3BreakAll"]
+>
 > | Rule ID | Title | Option |
 > | - | - | - |
 > | [IDE0001](ide0001.md) | Simplify name | |
@@ -89,7 +90,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0059](ide0059.md) | Remove unnecessary value assignment | [csharp_style_unused_value_assignment_preference](ide0059.md#csharp_style_unused_value_assignment_preference)<br/> [visual_basic_style_unused_value_assignment_preference](ide0059.md#visual_basic_style_unused_value_assignment_preference) |
 > | [IDE0060](ide0060.md) | Remove unused parameter | [dotnet_code_quality_unused_parameters](ide0060.md#dotnet_code_quality_unused_parameters) |
 > | [IDE0061](ide0061.md) | Use expression body for local functions | [csharp_style_expression_bodied_local_functions](ide0061.md#csharp_style_expression_bodied_local_functions) |
-> | [IDE0062](ide0062.md) | Make local function static | [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function) |
+> | [IDE0062](ide0062.md) | Make local function `static` | [csharp_prefer_static_local_function](ide0062.md#csharp_prefer_static_local_function) |
 > | [IDE0063](ide0063.md) | Use simple `using` statement | [csharp_prefer_simple_using_statement](ide0063.md#csharp_prefer_simple_using_statement) |
 > | [IDE0064](ide0064.md) | Make struct fields writable | |
 > | [IDE0065](ide0065.md) | `using` directive placement | [csharp_using_directive_placement](ide0065.md#csharp_using_directive_placement) |
@@ -139,6 +140,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0303](ide0303.md) | Use collection expression for `Create()` | [dotnet_style_prefer_collection_expression](ide0303.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0304](ide0304.md) | Use collection expression for builder | [dotnet_style_prefer_collection_expression](ide0304.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0305](ide0305.md) | Use collection expression for fluent | [dotnet_style_prefer_collection_expression](ide0305.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0320](ide0320.md) | Make anonymous function `static` | [csharp_prefer_static_anonymous_function](ide0320.md#csharp_prefer_static_anonymous_function) |
+> | [IDE0330](ide0330.md) | Prefer 'System.Threading.Lock' | [csharp_prefer_system_threading_lock](ide0330.md#csharp_prefer_system_threading_lock) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

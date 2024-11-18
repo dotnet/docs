@@ -11,7 +11,7 @@ You can use the `ref` modifier in the declaration of a [structure type](struct.m
 - A `ref struct` can't be a declared type of a field of a class or a non-`ref struct`.
 - A `ref struct` can't be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
 - A `ref struct` variable can't be captured in a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
-- Before C# 13,`ref struct` variables can't be used in an `async` method. Beginning with C# 13, a `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+- Before C# 13, `ref struct` variables can't be used in an `async` method. Beginning with C# 13, a `ref struct` variable can't be used in the same block as the [`await`](../operators/await.md) expression in an [`async`](../keywords/async.md) method. However, you can use `ref struct` variables in synchronous methods, for example, in methods that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - Before C# 13, a `ref struct` variable can't be used in [iterators](../../iterators.md). Beginning with C# 13, `ref struct` types and `ref` locals can be used in iterators, provided they aren't in code segments with the `yield return` statement.
 - Before C# 13, a `ref struct` can't implement interfaces. Beginning with C# 13, a `ref` struct can implement interfaces, but must adhere to the [ref safety](~/_csharpstandard/standard/structs.md#1623-ref-modifier) rules. For example, a `ref struct` type can't be converted to the interface type because that requires a boxing conversion.
 - Before C# 13, a `ref struct` can't be a type argument. Beginning with C# 13, a `ref struct` can be the type argument when the type parameter specifies the `allows ref struct` in its `where` clause.
@@ -60,7 +60,7 @@ The `Span<T>` type stores a reference through which it accesses the contiguous e
 
 You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type. You can use the [using statement or declaration](../statements/using.md) with an instance of a disposable `ref struct`.
 
-Beginning with C# 13, you can also implement the <xref:System.IDisposable?displayName=nameWithType> on `ref struct` types. However, overload resolution prefers the disposable pattern to the interface method. The compiler resolves to an `IDisposable.Dispose` method only whan a suitable `Dispose` method isn't found.
+Beginning with C# 13, you can also implement the <xref:System.IDisposable?displayName=nameWithType> on `ref struct` types. However, overload resolution prefers the disposable pattern to the interface method. The compiler resolves to an `IDisposable.Dispose` method only when a suitable `Dispose` method isn't found.
 
 ## Restrictions for `ref struct` types that implement an interface
 

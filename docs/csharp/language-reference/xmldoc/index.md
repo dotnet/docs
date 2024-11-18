@@ -124,7 +124,7 @@ The compiler observes the following rules when it generates the ID strings:
 
   | Character | Member type | Notes |
   |--|--|--|
-  | `N` | namespace | You can't add documentation comments to a namespace, but you can make cref ferences to them, where supported. |
+  | `N` | namespace | You can't add documentation comments to a namespace, but you can make `cref` references to them, where supported. |
   | `T` | type | A type is a class, interface, struct, enum, or delegate. |
   | `F` | field |  |
   | `P` | property | Includes indexers or other indexed properties. |

@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 02/15/2024
+ms.date: 11/08/2024
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 Code-style language rules affect how various constructs of .NET programming languages, for example, modifiers, and parentheses, are used.
 
-This category also includes rules that identify parts of the code base that are unnecessary and can be refactored or removed. The presence of unnecessary code indicates one of more of the following problems:
+This category also includes rules that identify parts of the code base that are unnecessary and can be refactored or removed. The presence of unnecessary code indicates one or more of the following problems:
 
 - Readability: Code that unnecessarily degrades readability.
 - Maintainability: Code that's no longer used after refactoring and is maintained unnecessarily.
@@ -95,6 +95,7 @@ C# style rules:
 - [Convert to top-level statements (IDE0210)](ide0210.md)
 - [Convert to 'Program.Main' style program (IDE0211)](ide0211.md)
 - [Use primary constructor (IDE0290)](ide0290.md)
+- [Prefer 'System.Threading.Lock' (IDE0330)](ide0330.md)
 
 ### Expression-bodied members
 
@@ -199,6 +200,7 @@ C# style rules:
 - [Make struct fields writable (IDE0064)](ide0064.md)
 - [Struct can be made 'readonly' (IDE0250)](ide0250.md)
 - [Member can be made 'readonly' (IDE0251)](ide0251.md)
+- [Make anonymous function static (IDE0320)](ide0320.md)
 
 ### New-line preferences
 

@@ -64,23 +64,6 @@ internal class Serialization
         // </PropertyOrder>
     }
 
-    public static void RunIt2()
-    {
-        // <RespectNullable>
-        JsonSerializerOptions options = new() { RespectNullableAnnotations = true };
-
-        // Throws exception: System.Text.Json.JsonException: The property or field
-        // 'Title' on type 'Serialization+Book' doesn't allow getting null values.
-        // Consider updating its nullability annotation.
-        JsonSerializer.Serialize(new Book { Title = null! }, options);
-
-        // Throws exception: System.Text.Json.JsonException: The property or field
-        // 'Title' on type 'Serialization+Book' doesn't allow setting null values.
-        // Consider updating its nullability annotation. 
-        JsonSerializer.Deserialize<Book>("""{ "Title" : null }""", options);
-        // </RespectNullable>
-    }
-
     public static void RunIt3()
     {
         // <RespectRequired>
@@ -104,4 +87,31 @@ internal class Serialization
     // <Poco>
     record MyPoco(string Value);
     // </Poco>
+}
+
+public static class Serialization2
+{
+    // <RespectNullable>
+    public static void RunIt()
+    {
+        JsonSerializerOptions options = new() { RespectNullableAnnotations = true };
+
+        // Throws exception: System.Text.Json.JsonException: The property or field
+        // 'Title' on type 'Serialization+Book' doesn't allow getting null values.
+        // Consider updating its nullability annotation.
+        JsonSerializer.Serialize(new Book { Title = null! }, options);
+
+        // Throws exception: System.Text.Json.JsonException: The property or field
+        // 'Title' on type 'Serialization+Book' doesn't allow setting null values.
+        // Consider updating its nullability annotation.
+        JsonSerializer.Deserialize<Book>("""{ "Title" : null }""", options);
+    }
+
+    public class Book
+    {
+        public required string Title { get; set; }
+        public string? Author { get; set; }
+        public int PublishYear { get; set; }
+    }
+    // </RespectNullable>
 }

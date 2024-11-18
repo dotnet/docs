@@ -6,7 +6,7 @@ zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Debug a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial introduces the debugging tools available in Visual Studio Code for working with .NET apps.
 
@@ -241,7 +241,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
-1. Select the **Debug Conosle** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
+1. Select the **Debug Console** tab to see the "What is your name?" prompt that the program displays before waiting for a response.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-terminal-net6.png" alt-text="Select the Terminal tab":::
 

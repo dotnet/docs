@@ -1,5 +1,5 @@
 | Value | Description |
-|-|-|
+|-------|-------------|
 | `None` | All rules are disabled. You can selectively [opt in to](../configuration-options.md) individual rules to enable them. |
 | `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and the remainder are disabled. |
 | `Minimum` | More aggressive mode than `Default` mode. Certain suggestions that are highly recommended for build enforcement are enabled as build warnings. To see which rules this includes, inspect the *%ProgramFiles%/dotnet/sdk/\[version]/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_\[level]_minimum.editorconfig* file. |

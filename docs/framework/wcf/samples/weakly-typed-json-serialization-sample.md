@@ -53,7 +53,7 @@ public class PersonalInfo
 
 This can be cumbersome, especially if the client has to handle more than one type of JSON object.
 
-The `JsonObject` type provided by this sample introduces a weakly-typed representation of the deserialized JSON object. `JsonObject` relies on the natural mapping between JSON objects and .NET Framework dictionaries, and the mapping between JSON arrays and .NET Framework arrays. The following code shows the `JsonObject` type.
+The `JsonObject` type provided by this sample introduces a weakly typed representation of the deserialized JSON object. `JsonObject` relies on the natural mapping between JSON objects and .NET Framework dictionaries, and the mapping between JSON arrays and .NET Framework arrays. The following code shows the `JsonObject` type.
 
 ```csharp
 // Instantiation of JsonObject json omitted

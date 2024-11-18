@@ -40,6 +40,8 @@ The following counters are published as part of .NET runtime (CoreCLR) and are m
 | :::no-loc text="IL Bytes Jitted"::: (`il-bytes-jitted`) | The total size of ILs that are JIT-compiled, in bytes | .NET 5 |
 | :::no-loc text="Methods Jitted Count"::: (`methods-jitted-count`) | The number of methods that are JIT-compiled | .NET 5 |
 | :::no-loc text="GC Committed Bytes"::: (`gc-committed`) | The number of bytes committed by the GC | .NET 6 |
+| :::no-loc text="Time paused by GC"::: (`total-pause-time-by-gc`) | The total amount of time program execution was paused by the GC | .NET 8 |
+| :::no-loc text="Gen 0 GC Budget"::: (`gen-0-gc-budget`) | The Gen 0 memory budget | .NET 8 |
 
 ## Microsoft.AspNetCore.Hosting counters
 
@@ -101,7 +103,7 @@ The following counters are published by the HTTP stack and are maintained in [_H
 
 ## System.Net.NameResolution counters
 
-The following counters track metrics related to DNS lookups and are mantained in [_NameResolutionTelemetry.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.NameResolution/src/System/Net/NameResolutionTelemetry.cs).
+The following counters track metrics related to DNS lookups and are maintained in [_NameResolutionTelemetry.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.NameResolution/src/System/Net/NameResolutionTelemetry.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -111,7 +113,7 @@ The following counters track metrics related to DNS lookups and are mantained in
 
 ## System.Net.Security counters
 
-The following counters track metrics related to the Transport Layer Security protocol and are mantained in [_NetSecurityTelemetry.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Security/src/System/Net/Security/NetSecurityTelemetry.cs).
+The following counters track metrics related to the Transport Layer Security protocol and are maintained in [_NetSecurityTelemetry.cs_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Security/src/System/Net/Security/NetSecurityTelemetry.cs).
 
 | Counter | Description | First available in |
 |--|--|--|
@@ -132,7 +134,7 @@ The following counters track metrics related to the Transport Layer Security pro
 
 ## System.Net.Sockets counters
 
-The following counters track metrics related to <xref:System.Net.Sockets.Socket> and are mantained in [_SocketsTelemetry_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Sockets/src/System/Net/Sockets/SocketsTelemetry.cs).
+The following counters track metrics related to <xref:System.Net.Sockets.Socket> and are maintained in [_SocketsTelemetry_](https://github.com/dotnet/runtime/blob/main/src/libraries/System.Net.Sockets/src/System/Net/Sockets/SocketsTelemetry.cs).
 
 | Counter | Description | First available in |
 |--|--|--|

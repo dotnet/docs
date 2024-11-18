@@ -4,7 +4,7 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 05/15/2024
+ms.date: 11/11/2024
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -16,30 +16,30 @@ ms.date: 05/15/2024
 > - [Install on macOS](macos.md)
 > - [Install on Linux](linux.md)
 
-There are many different ways to install .NET on Windows. This article helps you understand the difference between the SDK and Runtime, which runtime you should install, and the method you should use to install .NET.
+This article teaches you about which versions of .NET are supported on Windows, how to install .NET, and what the difference is between the SDK and runtime.
+
+Unlike .NET Framework, .NET isn't tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. But .NET is standalone and can be installed anywhere on your computer. Some apps might include their own copy of .NET.
+
+By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the installation method chooses a different directory.
 
 .NET is made up of the runtime and the SDK. The runtime runs .NET apps, and the SDK is used to create apps.
 
-Unlike .NET Framework, .NET isn't installed and tied to your version of Windows. You can only have a single version of .NET Framework installed on Windows. .NET can be installed anywhere on your computer and some apps might include their own copy of .NET.
-
-By default, .NET is installed to the _Program Files\\dotnet_ directory on your computer, unless the install method chooses a different directory.
-
 ## Choose the correct runtime
 
-There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes. If you install a specific runtime, it might include other runtimes. The following table describes which runtime is included with a particular .NET installer:
+There are three different runtimes for Windows, which enable different types of apps to run. The SDK includes all three runtimes, and an installer for a runtime might include an additional runtime. The following table describes which runtime is included with a particular .NET installer:
 
-|                          | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
+| Installer                | Includes .NET Runtime         | Includes .NET Desktop Runtime | Includes ASP.NET Core Runtime |
 | ------------------------ | ----------------------------- | ----------------------------- | ----------------------------- |
 | **.NET Runtime**         | Yes                           | No                            | No                            |
 | **.NET Desktop Runtime** | Yes                           | Yes                           | No                            |
 | **ASP.NET Core Runtime** | No                            | No                            | Yes                           |
 | **.NET SDK**             | Yes                           | Yes                           | Yes                           |
 
-To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs any web apps, and the .NET Desktop Runtime runs any desktop app, such as a Windows Presentation Foundation (WPF) or Windows Forms (WinForms) app.
+To ensure that you can run all .NET apps on Windows, install both the ASP.NET Core Runtime and the .NET Desktop Runtime. The ASP.NET Core Runtime runs web-based apps, and the .NET Desktop Runtime runs desktop apps, such as a Windows Presentation Foundation (WPF) or Windows Forms app.
 
 ## Choose how to install .NET
 
-There are different ways to install .NET, and some products, like Visual Studio, might manage their own version of .NET. If you install .NET through software that manages its own version of .NET, you should also install the .NET runtime separately so that you can run .NET apps.
+There are different ways to install .NET, and some products might manage their own version of .NET. If you install .NET through software that manages its own version of .NET, it might not be enabled system-wide. Make sure you understand the implications of installing .NET through other software.
 
 If you're unsure which method you should choose after reviewing the lists in the following sections, you probably want to use the [.NET Installer](#net-installer).
 
@@ -51,7 +51,7 @@ If you're unsure which method you should choose after reviewing the lists in the
 
 - [Visual Studio Code - C# Dev Kit](#install-with-visual-studio-code)
 
-  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. This method uses the SDKs you've previously installed.
+  Install the **C# Dev Kit** extension for Visual Studio Code to develop .NET apps. The extension can use an SDK that's already installed or install one for you.
 
 ### Users and Developers
 
@@ -76,17 +76,15 @@ The following table is a list of currently supported .NET releases and the versi
 
 Windows 10 versions end-of-service dates are segmented by edition. Only **Home**, **Pro**, **Pro Education**, and **Pro for Workstations** editions are considered in the following table. Check the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) for specific details.
 
-| Operating System                    | .NET 8 (Architectures) | .NET 6 (Architectures) |
-|-------------------------------------|------------------------|------------------------|
-| Windows 11                          | ✔️ x64, x86, Arm64    | ✔️ x64, Arm64          |
-| Windows Server 2022                 | ✔️ x64, x86           | ✔️ x64, x86            |
-| Windows 10, Version 1607 or later   | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64     |
-| Windows 8.1                         | ❌                     | ✔️ x64, x86            |
-| Windows 7 SP1 [ESU][esu]            | ❌                     | ✔️ x64, x86            |
-| Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86           | ✔️ x64, x86            |
-| Windows Server Core 2012 (and R2)   | ✔️ x64, x86           | ✔️ x64, x86            |
-| Nano Server, Version 1809+          | ✔️ x64                | ✔️ x64                 |
-| Nano Server, Version 1803           | ❌                     | ❌                      |
+| Operating System                      | .NET 9 (Architectures) | .NET 8 (Architectures) |
+|---------------------------------------|------------------------|------------------------|
+| Windows 11 (24H2, 23H2, 22H2 Ent/Edu) | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64    |
+| Windows 10 (22H2+)                    | ✔️ x64, x86, Arm64    | ✔️ x64, x86, Arm64    |
+| Windows Server 2025<br>Windows Server 2022<br>Windows Server 2019<br>Windows Server, Version 1903 or later<br>Windows Server 2016<br>Windows Server 2012 R2<br>Windows Server 2012 | ✔️ x64, x86           | ✔️ x64, x86           |
+| Windows Server Core 2012 (and R2)     | ✔️ x64, x86           | ✔️ x64, x86           |
+| Nano Server (2022, 2019)              | ✔️ x64                | ✔️ x64                |
+| Windows 8.1                           | ❌                    | ❌                    |
+| Windows 7 SP1 [ESU][esu]              | ❌                    | ❌                    |
 
 > [!TIP]
 > A `+` symbol represents the minimum version.
@@ -95,7 +93,11 @@ Windows 10 versions end-of-service dates are segmented by edition. Only **Home**
 
 ### Windows 7 / 8.1 / Server 2012
 
-While Windows 2012 is still supported with the latest version of .NET, .NET 6 was the last version to support Windows 7 and Windows 8.1. All three of these versions of Windows require further dependencies to be installed:
+There is no longer a version of .NET that's supported on **Windows 7 and Windows 8.1**. The last supported releases was .NET 6 and support ended on November 12, 2024.
+
+**Windows Server 2012** is still supported by any version of .NET that's still in support.
+
+All three of these versions of Windows require further dependencies to be installed:
 
 | Operating System         | Prerequisites                                                                    |
 |--------------------------|----------------------------------------------------------------------------------|
@@ -112,30 +114,15 @@ The previous requirements are also required if you receive an error related to e
 
 ## Arm-based Windows PCs
 
-The following sections describe things you should consider when installing .NET on an Arm-based Windows PC.
+.NET is supported on Arm-based Windows PCs. The following sections describe things you should consider when installing .NET.
 
-<!-- This section is mirrored in the macos.md file. Changes here should be applied there -->
-
-### What is supported
-
-The following table describes which versions of .NET are supported on an Arm-based Windows PC:
-
-| .NET Version | SDK | Runtime | [Path conflict](#path-conflicts) | Supported |
-|--------------|-----|---------|----------------------------------| --------- |
-| 8            | Yes | Yes     | No                               | ✔️       |
-| 8            | Yes | Yes     | No                               | ✔️       |
-| 6            | Yes | Yes     | No                               | ✔️       |
-| 6            | Yes | Yes     | No                               | ✔️       |
+### SDK differences
 
 The x86, x64, and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
 
 ### Path differences
 
 On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, the **x64** version of the .NET SDK is installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
-
-### Path conflicts
-
-The **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK older than 6.0, isn't supported and installs to the same location as the Arm64 version, the _C:\\Program Files\\dotnet\\_ folder. If you want to install an unsupported x64 SDK, you must uninstall the Arm64 version first. The opposite is also true. You must uninstall the unsupported x64 SDK to install the Arm64 version.
 
 ### Path variables
 
@@ -161,16 +148,17 @@ The Visual Studio documentation provides instructions on how to:
 
 If you're using Visual Studio to develop .NET apps, the following table describes the minimum required version of Visual Studio based on the target .NET SDK version.
 
-| .NET SDK version      | Visual Studio version                      |
-| --------------------- | ------------------------------------------ |
-| 8                     | Visual Studio 2022 version 17.8 or higher. |
-| 7                     | Visual Studio 2022 version 17.4 or higher. |
-| 6                     | Visual Studio 2022 version 17.0 or higher. |
-| 5                     | Visual Studio 2019 version 16.8 or higher. |
-| 3.1                   | Visual Studio 2019 version 16.4 or higher. |
-| 3.0                   | Visual Studio 2019 version 16.3 or higher. |
-| 2.2                   | Visual Studio 2017 version 15.9 or higher. |
-| 2.1                   | Visual Studio 2017 version 15.7 or higher. |
+| .NET SDK version      | Visual Studio version                       |
+| --------------------- | ------------------------------------------- |
+| 9                     | Visual Studio 2022 version 17.12 or higher. |
+| 8                     | Visual Studio 2022 version 17.8 or higher.  |
+| 7                     | Visual Studio 2022 version 17.4 or higher.  |
+| 6                     | Visual Studio 2022 version 17.0 or higher.  |
+| 5                     | Visual Studio 2019 version 16.8 or higher.  |
+| 3.1                   | Visual Studio 2019 version 16.4 or higher.  |
+| 3.0                   | Visual Studio 2019 version 16.3 or higher.  |
+| 2.2                   | Visual Studio 2017 version 15.9 or higher.  |
+| 2.1                   | Visual Studio 2017 version 15.7 or higher.  |
 
 If you already have Visual Studio installed, you can check your version with the following steps.
 
@@ -182,28 +170,20 @@ For more information about, see [.NET SDK, MSBuild, and Visual Studio versioning
 
 ## Install with Visual Studio Code
 
-Visual Studio Code uses the versions of .NET already installed on your system. Install .NET using either [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget). Visual Studio installs its own copy of .NET that can't be used by Visual Studio Code.
+Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system. Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension will install .NET for you if it's not already installed.
 
-.NET apps are created in Visual Studio Code with the C# Dev Kit extension.
-
-1. First, install the .NET SDK by following the steps in one of the other sections, except for the section on Visual Studio.
-
-   - [.NET Installer](#net-installer)
-   - [Windows Package Manager (WinGet)](#install-with-windows-package-manager-winget)
-
-1. Next, install Visual Studio Code, if you haven't already. For more information, see [Visual Studio Code on Windows](https://code.visualstudio.com/docs/setup/windows).
-1. Lastly, install the C# Dev Kit extension. For more information, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started#_install).
+For instructions on installing .NET through Visual Studio Code, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started).
 
 ## .NET Installer
 
 The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provides Windows Installer executables.
 
 1. Open a web browser and navigate to <https://dotnet.microsoft.com/download/dotnet>.
-1. Select the version of .NET you want to download, such as 8.0.
+1. Select the version of .NET you want to download, such as 9.0.
 1. Find the SDK or Runtime box that contains the links for downloading .NET.
 1. Under the **Installers** column, find the **Windows** row and select the link for your CPU architecture. If you're unsure, select **x64** as it's the most common.
 
-   The browser automatically downloads the MSI package.
+   The browser should automatically download the installer.
 
    > [!TIP]
    > The following image shows the SDK, but you can also download the Runtime.
@@ -215,7 +195,7 @@ The [download page](https://dotnet.microsoft.com/download/dotnet) for .NET provi
 
    The Windows Installer dialog is opened.
 
-   :::image type="content" source="media/windows/msi-installer.png" alt-text="A screenshot of the .NET MSI installer app window.":::
+   :::image type="content" source="media/windows/msi-installer.png" alt-text="A screenshot of the .NET installer app window.":::
 
 1. Select **Install** and follow the instructions to install .NET.
 
@@ -223,7 +203,9 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 ### Command-line options
 
-If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following Windows Installer options:
+Use the `/?` parameter to display a list of options.
+
+If you want to install .NET silently, such as in a production environment or to support continuous integration, use the following options:
 
 - `/install`\
 Installs .NET.
@@ -235,13 +217,35 @@ Prevents any UI and prompts from displaying.
 Suppresses any attempts to restart.
 
 ```console
-dotnet-sdk-8.0.100-win-x64.exe /install /quiet /norestart
+dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 ```
-
-For more information, see [Standard Installer Command-Line Options](/windows/win32/msi/standard-installer-command-line-options).
 
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
+
+### Microsoft Update
+
+[!INCLUDE [microsoft-update](includes/microsoft-update.md)]
+
+### Choose when previous versions are removed
+
+The installer executables always install new content before removing the previous installation. Applications that are running might be interrupted or crash when older runtimes are removed. To minimize the impact of updating .NET, you can specify when a previous .NET installation should be removed using a registry key.
+
+| .NET version | Registry key | Name | Type | Value |
+| -------------- | :--------- | :---------- | :---------- | :---------- |
+| All | HKLM\SOFTWARE\Microsoft\\.NET | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+
+- `never` retains previous installations and requires manual intervention to remove previous .NET installations.
+- `always` removes previous installations after the new version is installed. This is the default behavior in .NET.
+- `nextSession` defers the removal until the next logon session from members in the Administrators group.
+- Values are case-insensitive and invalid values default to `always`.
+
+When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if a user in the Administrators group logs on to the machine.
+
+> [!NOTE]
+> This feature is only available in .NET 8 (8.0.11), 9, and later versions of .NET. It only applies to the standalone installer executables and impacts distributions like WinGet that use them.
 
 ## Install with Windows Package Manager (WinGet)
 
@@ -251,7 +255,11 @@ If you're installing .NET system-wide, install with administrative privileges.
 
 The .NET WinGet packages are:
 
-- `Microsoft.DotNet.Runtime.8`&mdash;.NET Runtime 8.0.
+- `Microsoft.DotNet.Runtime.9`&mdash;.NET Runtime 9.0
+- `Microsoft.DotNet.AspNetCore.9`&mdash;ASP.NET Core Runtime 9.0
+- `Microsoft.DotNet.DesktopRuntime.9`&mdash;.NET Desktop Runtime 9.0
+- `Microsoft.DotNet.SDK.9`&mdash;.NET SDK 9.0
+- `Microsoft.DotNet.Runtime.8`&mdash;.NET Runtime 8.0
 - `Microsoft.DotNet.AspNetCore.8`&mdash;ASP.NET Core Runtime 8.0
 - `Microsoft.DotNet.DesktopRuntime.8`&mdash;.NET Desktop Runtime 8.0
 - `Microsoft.DotNet.SDK.8`&mdash;.NET SDK 8.0
@@ -261,11 +269,11 @@ The .NET WinGet packages are:
 If you install the SDK, you don't need to install the corresponding runtime.
 
 01. [Install WinGet](/windows/package-manager/winget/#install-winget).
-01. Open a terminal, such as PowerShell or `cmd.exe`.
+01. Open a terminal, such as PowerShell or Command Prompt.
 01. Run the `winget install` command and pass the name of the SDK package:
 
     ```cmd
-    winget install Microsoft.DotNet.SDK.8
+    winget install Microsoft.DotNet.SDK.9
     ```
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
@@ -279,8 +287,8 @@ There are different runtimes you can install. Refer to the [Choose the correct r
 01. Run the `winget install` command and pass the name of the SDK package:
 
     ```cmd
-    winget install Microsoft.DotNet.DesktopRuntime.8
-    winget install Microsoft.DotNet.AspNetCore.8
+    winget install Microsoft.DotNet.DesktopRuntime.9
+    winget install Microsoft.DotNet.AspNetCore.9
     ```
 
 To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
@@ -298,7 +306,7 @@ The search results are printed in a table with each package identifier.
 ```output
 Name                           Id                           Version                    Source
 ----------------------------------------------------------------------------------------------
-Microsoft .NET SDK 9.0 Preview Microsoft.DotNet.SDK.Preview 9.0.100-preview.3.24204.13 winget
+Microsoft .NET SDK 9.0         Microsoft.DotNet.SDK.9       9.0.100                    winget
 Microsoft .NET SDK 8.0         Microsoft.DotNet.SDK.8       8.0.300                    winget
 Microsoft .NET SDK 7.0         Microsoft.DotNet.SDK.7       7.0.409                    winget
 Microsoft .NET SDK 6.0         Microsoft.DotNet.SDK.6       6.0.422                    winget
@@ -308,7 +316,7 @@ Microsoft .NET SDK 3.1         Microsoft.DotNet.SDK.3_1     3.1.426             
 
 ### Install preview versions
 
-You can install preview versions by substituting the version number, such as `8`, with the word `Preview`. The following example installs the preview release of the .NET Desktop Runtime:
+If a preview version is available, substitute the version number in the **Id** with the word `Preview`. The following example installs the preview release of the .NET Desktop Runtime:
 
 ```cmd
 winget install Microsoft.DotNet.DesktopRuntime.Preview

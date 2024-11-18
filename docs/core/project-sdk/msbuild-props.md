@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
-ms.date: 12/01/2023
+ms.date: 11/07/2024
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
@@ -58,6 +58,37 @@ The `ApiCompatValidateAssemblies` property enables a series of validations on th
 </PropertyGroup>
 ```
 
+## Assembly attribute properties
+
+- [GenerateAssemblyInfo](#generateassemblyinfo)
+- [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
+
+### GenerateAssemblyInfo
+
+The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
+
+```xml
+<PropertyGroup>
+  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+</PropertyGroup>
+```
+
+The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
+
+When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes.
+
+For more information about generating assembly attributes using a project file, see [Set assembly attributes in a project file](../../standard/assembly/set-attributes-project-file.md).
+
+### GeneratedAssemblyInfoFile
+
+The `GeneratedAssemblyInfoFile` property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
+
+```xml
+<PropertyGroup>
+  <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
+</PropertyGroup>
+```
+
 ## Framework properties
 
 The following MSBuild properties are documented in this section:
@@ -104,37 +135,6 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 <PropertyGroup>
   <TargetFramework>netstandard1.3</TargetFramework>
   <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-</PropertyGroup>
-```
-
-## Assembly attribute properties
-
-- [GenerateAssemblyInfo](#generateassemblyinfo)
-- [GeneratedAssemblyInfoFile](#generatedassemblyinfofile)
-
-### GenerateAssemblyInfo
-
-The `GenerateAssemblyInfo` property controls `AssemblyInfo` attribute generation for the project. The default value is `true`. Use `false` to disable generation of the file:
-
-```xml
-<PropertyGroup>
-  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-</PropertyGroup>
-```
-
-The [GeneratedAssemblyInfoFile](#generatedassemblyinfofile) setting controls the name of the generated file.
-
-When the `GenerateAssemblyInfo` value is `true`, [package-related project properties](#package-properties) are transformed into assembly attributes.
-
-For more information about generating assembly attributes using a project file, see [Set assembly attributes in a project file](../../standard/assembly/set-attributes-project-file.md).
-
-### GeneratedAssemblyInfoFile
-
-The `GeneratedAssemblyInfoFile` property defines the relative or absolute path of the generated assembly info file. Defaults to a file named *[project-name].AssemblyInfo.[cs|vb]* in the `$(IntermediateOutputPath)` (usually the *obj*) directory.
-
-```xml
-<PropertyGroup>
-  <GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
 </PropertyGroup>
 ```
 
@@ -407,13 +407,15 @@ For example, for a .NET 5 app and an RID of `win-x64`, the following setting cha
 
 ### CopyLocalLockFileAssemblies
 
-The `CopyLocalLockFileAssemblies` property is useful for plugin projects that have dependencies on other libraries. If you set this property to `true`, any NuGet package dependencies are copied to the output directory. That means you can use the output of `dotnet build` to run your plugin on any machine.
+The `CopyLocalLockFileAssemblies` property is useful for plugin projects that have dependencies on other libraries. If you set this property to `true`, any transitive NuGet package dependencies are copied to the output directory. That means you can use the output of `dotnet build` to run your plugin on any machine.
 
 ```xml
 <PropertyGroup>
   <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 </PropertyGroup>
 ```
+
+The default value of `CopyLocalLockFileAssemblies` can vary based on the output type. For example, for class libraries the default value is `false`, while for console applications the default is `true`. You can specify this property explicitly to override the default if needed.
 
 > [!TIP]
 > Alternatively, you can use `dotnet publish` to publish the class library. For more information, see [dotnet publish](../tools/dotnet-publish.md).
@@ -930,15 +932,15 @@ The following MSBuild properties are documented in this section:
 
 ### AnalysisLevel
 
-The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release, starting in .NET 5, has a set of code analysis rules. Of that set, the rules that are enabled by default for that release will analyze your code. For example, if you upgrade to .NET 8 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `7`.
+The `AnalysisLevel` property lets you specify a set of code analyzers to run according to a .NET release. Each .NET release has a set of code analysis rules. Of that set, the rules that are enabled by default for that release analyze your code. For example, if you upgrade from .NET 8 to .NET 9 but don't want the default set of code analysis rules to change, set `AnalysisLevel` to `8`.
 
 ```xml
 <PropertyGroup>
-  <AnalysisLevel>preview</AnalysisLevel>
+  <AnalysisLevel>8</AnalysisLevel>
 </PropertyGroup>
 ```
 
-Optionally, starting in .NET 6, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<version>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the preview version of code analyzers, and enables the recommended set of rules.
+Optionally, you can specify a compound value for this property that also specifies how aggressively to enable rules. Compound values take the form `<version>-<mode>`, where the `<mode>` value is one of the [AnalysisMode](#analysismode) values. The following example uses the `preview` version of code analyzers, and enables the `recommended` set of rules.
 
 ```xml
 <PropertyGroup>
@@ -953,12 +955,16 @@ Default value:
 
 The following table shows the values you can specify.
 
-| Value | Meaning |
-|-|-|
+| Value    | Meaning                                                                          |
+|----------|----------------------------------------------------------------------------------|
 | `latest` | The latest code analyzers that have been released are used. This is the default. |
 | `latest-<mode>` | The latest code analyzers that have been released are used. The `<mode>` value determines which rules are enabled. |
 | `preview` | The latest code analyzers are used, even if they are in preview. |
 | `preview-<mode>` | The latest code analyzers are used, even if they are in preview. The `<mode>` value determines which rules are enabled. |
+| `9.0` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
+| `9.0-<mode>` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
+| `9` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. |
+| `9-<mode>` | The set of rules that was available for the .NET 9 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `8.0` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. |
 | `8.0-<mode>` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `8` | The set of rules that was available for the .NET 8 release is used, even if newer rules are available. |
@@ -967,18 +973,10 @@ The following table shows the values you can specify.
 | `7.0-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 | `7` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. |
 | `7-<mode>` | The set of rules that was available for the .NET 7 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `6.0` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
-| `6.0-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `6` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. |
-| `6-<mode>` | The set of rules that was available for the .NET 6 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `5.0` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. |
-| `5.0-<mode>` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
-| `5` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. |
-| `5-<mode>` | The set of rules that was available for the .NET 5 release is used, even if newer rules are available. The `<mode>` value determines which rules are enabled. |
 
 > [!NOTE]
 >
-> - Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
+> - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
 > - If you set a compound value for `AnalysisLevel`, you don't need to specify an [AnalysisMode](#analysismode). However, if you do, `AnalysisLevel` takes precedence over `AnalysisMode`.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
@@ -1000,8 +998,8 @@ This property is the same as [AnalysisLevel](#analysislevel), except that it onl
 
 The following table lists the property name for each rule category.
 
-| Property name | Rule category |
-| - |
+| Property name           | Rule category                                                                     |
+|-------------------------|-----------------------------------------------------------------------------------|
 | `<AnalysisLevelDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
 | `<AnalysisLevelDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
 | `<AnalysisLevelGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
@@ -1031,8 +1029,8 @@ The following table shows the available option values. They're listed in increas
 
 > [!NOTE]
 >
-> - Starting in .NET 6, if you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
-> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>8-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
+> - If you set [EnforceCodeStyleInBuild](#enforcecodestyleinbuild) to `true`, this property affects [code-style (IDEXXXX) rules](../../fundamentals/code-analysis/style-rules/index.md) (in addition to code-quality rules).
+> - If you use a compound value for [AnalysisLevel](#analysislevel), for example, `<AnalysisLevel>9-recommended</AnalysisLevel>`, you can omit this property entirely. However, if you specify both properties, `AnalysisLevel` takes precedence over `AnalysisMode`.
 > - This property has no effect on code analysis in projects that don't reference a [project SDK](overview.md), for example, legacy .NET Framework projects that reference the Microsoft.CodeAnalysis.NetAnalyzers NuGet package.
 
 ### AnalysisMode\<Category>
@@ -1047,8 +1045,8 @@ This property is the same as [AnalysisMode](#analysismode), except that it only 
 
 The following table lists the property name for each rule category.
 
-| Property name | Rule category |
-| - |
+| Property name          | Rule category                                                                     |
+|------------------------|-----------------------------------------------------------------------------------|
 | `<AnalysisModeDesign>` | [Design rules](../../fundamentals/code-analysis/quality-rules/design-warnings.md) |
 | `<AnalysisModeDocumentation>` | [Documentation rules](../../fundamentals/code-analysis/quality-rules/documentation-warnings.md) |
 | `<AnalysisModeGlobalization>` | [Globalization rules](../../fundamentals/code-analysis/quality-rules/globalization-warnings.md) |
@@ -1421,6 +1419,26 @@ The `RunWorkingDirectory` property defines the working directory for the applica
 </PropertyGroup>
 ```
 
+## SDK-related properties
+
+The following MSBuild properties are documented in this section:
+
+- [SdkAnalysisLevel](#sdkanalysislevel)
+
+### SdkAnalysisLevel
+
+Introduced in .NET 9, the `SdkAnalysisLevel` property can be used to configure how *strict* SDK tooling is. It helps you manage SDK warning levels in situations where you might not be able to pin SDKs via *global.json* or other means. You can use this property to tell a newer SDK to behave as if it were an older SDK, with regards to a specific tool or feature, without having to install the older SDK.
+
+The allowed values of this property are SDK feature bands, for example, 8.0.100 and 8.0.400. The value defaults to the SDK feature band of the running SDK. For example, for SDK 9.0.102, the value would be 9.0.100. (For information about how the .NET SDK is versioned, see [How .NET is versioned](../versions/index.md).)
+
+```xml
+<PropertyGroup>
+  <SdkAnalysisLevel>8.0.400</SdkAnalysisLevel>
+</PropertyGroup>
+```
+
+For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
+
 ## Test project&ndash;related properties
 
 The following MSBuild properties are documented in this section:
@@ -1733,7 +1751,7 @@ For more information, see [Trimming options](../deploying/trimming/trimming-opti
 
 ### Using
 
-The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
+The `Using` item lets you [globally include a namespace](../../csharp/language-reference/keywords/using-directive.md#the-global-modifier) across your C# project, such that you don't have to add a `using` directive for the namespace at the top of your source files. This item is similar to the `Import` item that can be used for the same purpose in Visual Basic projects. This property is available starting in .NET 6.
 
 ```xml
 <ItemGroup>
@@ -1754,7 +1772,7 @@ For example:
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Alias="Results" />` emits `global using Results = global::Microsoft.AspNetCore.Http.Results;`
 - `<Using Include="Microsoft.AspNetCore.Http.Results" Static="True" />` emits `global using static global::Microsoft.AspNetCore.Http.Results;`
 
-For more information, see [aliased `using` directives](../../csharp/language-reference/keywords/using-directive.md#using-alias) and [`using static <type>` directives](../../csharp/language-reference/keywords/using-directive.md#static-modifier).
+For more information, see [aliased `using` directives](../../csharp/language-reference/keywords/using-directive.md#the-using-alias) and [`using static <type>` directives](../../csharp/language-reference/keywords/using-directive.md#the-static-modifier).
 
 ## Item metadata
 

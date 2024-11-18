@@ -2,7 +2,7 @@
 title: 'Credential chains in the Azure Identity library for .NET'
 description: 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
 ms.topic: conceptual
-ms.date: 08/15/2024
+ms.date: 11/15/2024
 ---
 
 # Credential chains in the Azure Identity library for .NET
@@ -43,7 +43,7 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 
 | Order | Credential          | Description | Enabled by default? |
 |-------|---------------------|-------------|---------------------|
-| 1     | [Environment][env-cred]         |Reads a collection of environment variables to determine if an application service principal (application user) is configured for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure. This method is most often used in server environments but can also be used when developing locally.             | Yes                 |
+| 1     | [Environment][env-cred]         |Reads a collection of [environment variables][env-vars] to determine if an application service principal (application user) is configured for the app. If so, `DefaultAzureCredential` uses these values to authenticate the app to Azure. This method is most often used in server environments but can also be used when developing locally.             | Yes                 |
 | 2     | [Workload Identity][wi-cred]   |If the app is deployed to an Azure host with Workload Identity enabled, authenticate that account.             | Yes                 |
 | 3     | [Managed Identity][mi-cred]    |If the app is deployed to an Azure host with Managed Identity enabled, authenticate the app to Azure using that Managed Identity.             | Yes                 |
 | 4     | [Visual Studio][vs-cred]       |If the developer authenticated to Azure by logging into Visual Studio, authenticate the app to Azure using that same account.             | Yes                 |
@@ -63,7 +63,10 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="1":::
+
+> [!TIP]
+> The `UseCredential` method in the preceding code snippet is recommended for use in ASP.NET Core apps. For more information, see [Use the Azure SDK for .NET in ASP.NET Core apps](../aspnetcore-guidance.md#authenticate-using-microsoft-entra-id).
 
 ### How to customize DefaultAzureCredential
 
@@ -114,7 +117,7 @@ Here's why:
 
 - **Debugging challenges**: When authentication fails, it can be challenging to debug and identify the offending credential. You must enable logging to see the progression from one credential to the next and the success/failure status of each. For more information, see [Debug a chained credential](#debug-a-chained-credential).
 - **Performance overhead**: The process of sequentially trying multiple credentials can introduce performance overhead. For example, when running on a local development machine, managed identity is unavailable. Consequently, `ManagedIdentityCredential` always fails in the local development environment, unless explicitly disabled via its corresponding `Exclude`-prefixed property.
-- **Unpredictable behavior**: `DefaultAzureCredential` checks for the presence of certain [environment variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md#environment-variables). It's possible that someone could add or modify these environment variables at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine.
+- **Unpredictable behavior**: `DefaultAzureCredential` checks for the presence of certain [environment variables][env-vars]. It's possible that someone could add or modify these environment variables at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine.
 
 ## Debug a chained credential
 
@@ -130,3 +133,6 @@ In the preceding output, notice that:
 
 - `EnvironmentCredential`, `WorkloadIdentityCredential`, and `ManagedIdentityCredential` each failed to acquire a Microsoft Entra access token, in that order.
 - The `DefaultAzureCredential credential selected:`-prefixed entry indicates the credential that was selected&mdash;`VisualStudioCredential` in this case. Since `VisualStudioCredential` succeeded, no credentials beyond it were used.
+
+<!-- LINKS -->
+[env-vars]: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md#environment-variables

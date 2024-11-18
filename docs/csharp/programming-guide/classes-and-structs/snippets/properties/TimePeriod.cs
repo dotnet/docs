@@ -18,3 +18,20 @@ public class Date
     }
 }
 //</UsingExample>
+
+//<FieldExample>
+public class DateExample
+{
+    public int Month
+    {
+        get;
+        set
+        {
+            if ((value > 0) && (value < 13))
+            {
+                field = value;
+            }
+        }
+    }
+}
+//</FieldExample>

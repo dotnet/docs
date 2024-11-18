@@ -63,7 +63,7 @@ namespace System.Numbers
 
 ### Create test projects
 
-Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new-sdk-templates.md#test) command:
+Create two new **xUnit Test Project (.NET Core)** templates from the same command prompt using the [`dotnet new xunit`](../tools/dotnet-new-sdk-templates.md#xunit) command:
 
 ```dotnetcli
 dotnet new xunit -n XUnit.Coverlet.Collector

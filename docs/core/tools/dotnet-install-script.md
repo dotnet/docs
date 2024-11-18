@@ -46,7 +46,7 @@ The bash script also reads PowerShell switches, so you can use PowerShell switch
 The `dotnet-install` scripts perform a non-admin installation of the .NET SDK, which includes the .NET CLI and the shared runtime. There are two scripts:
 
 * A PowerShell script that works on Windows. For installation instructions, see [Install on Windows](../install/windows.md#install-with-powershell).
-* A bash script that works on Linux/macOS. For installation instructions, see [Install on Linux](../install/linux-scripted-manual.md#scripted-install) and [Install on macOS](../install/macos.md#install-with-bash-automation).
+* A bash script that works on Linux/macOS. For installation instructions, see [Install on Linux](../install/linux-scripted-manual.md#scripted-install) and [Install on macOS](../install/macos.md#install-net-with-a-script).
 
 > [!NOTE]
 > .NET collects telemetry data. To learn more and how to opt out, see [.NET SDK telemetry](telemetry.md).

@@ -1,7 +1,7 @@
 ---
 title: Standard numeric format strings
 description: In this article, learn to use standard numeric format strings to format common numeric types into text representations in .NET.
-ms.date: 04/08/2021
+ms.date: 10/22/2024
 ms.topic: reference
 dev_langs:
   - "csharp"

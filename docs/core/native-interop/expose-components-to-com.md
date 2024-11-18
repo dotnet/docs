@@ -125,4 +125,6 @@ There is a fully functional [COM server sample](https://github.com/dotnet/sample
 
 [Self-contained deployments](../deploying/index.md#publish-self-contained) of COM components are not supported. Only [framework-dependent deployments](../deploying/index.md#publish-framework-dependent) of COM components are supported.
 
+Exposing COM components from [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) via the [EnableComHosting property](../project-sdk/msbuild-props.md#enablecomhosting) is not supported.
+
 Additionally, loading both .NET Framework and .NET Core into the same process does have diagnostic limitations. The primary limitation is the debugging of managed components as it is not possible to debug both .NET Framework and .NET Core at the same time. In addition, the two runtime instances don't share managed assemblies. This means that it isn't possible to share actual .NET types across the two runtimes and instead all interactions must be restricted to the exposed COM interface contracts.

@@ -48,7 +48,7 @@ There are multiple cases where you get this warning:
 
     Using `Assert.IsNull(<expression>)` or `Assert.IsNotNull<expression>` is a better alternative.
 
-In many cases, the better alternative provides better messages when they fail and are also easier to read.
+In many cases, the better alternatives provide better messages when they fail and are also easier to read.
 
 ## How to fix violations
 

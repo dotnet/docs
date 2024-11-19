@@ -2,7 +2,7 @@
 title: Creating Metrics
 description: How to add new metrics to a .NET library or application
 ms.topic: tutorial
-ms.date: 08/27/2024
+ms.date: 11/19/2024
 ---
 
 # Creating metrics
@@ -223,6 +223,11 @@ Types of instruments currently available:
   describe a set of measurements, but tools are recommended to use histograms or computed percentiles. For example, assume the caller invoked
   <xref:System.Diagnostics.Metrics.Histogram%601.Record%2A> to record these measurements during the collection tool's update interval: 1,5,2,3,10,9,7,4,6,8. A collection tool
   might report that the 50th, 90th, and 95th percentiles of these measurements are 5, 9, and 9 respectively.
+
+  > [!NOTE]
+  > For details about how to set the recommended bucket boundaries when creating
+  > a Histogram instrument see: [Using Advice to customize Histogram
+  > instruments](#using-advice-to-customize-histogram-instruments).
 
 ### Best practices when selecting an instrument type
 
@@ -541,6 +546,66 @@ Name                                                  Current Value
 
 > [!NOTE]
 > OpenTelemetry refers to tags as 'attributes'. These are two different names for the same functionality.
+
+## Using Advice to customize Histogram instruments
+
+Consumers of Histogram instruments can choose different aggregation strategies.
+The default mode when using OpenTelemetry is [Explicit Bucket Histogram
+Aggregation](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/sdk.md#explicit-bucket-histogram-aggregation).
+
+When using explicit bucket aggregation the measurements recorded through a
+Histogram will be grouped into buckets which track the sum and count of values
+to that bucket.
+
+The default bucket configuration is described in the OpenTelemetry
+Specification: `[ 0, 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000,
+7500, 10000 ]`.
+
+The default values may not lead to the best granularity for every Histogram. For
+example, sub-second request durations would all fall into the `0` bucket.
+
+To solve this problem the `9.0.0` version of the
+`System.Diagnostics.DiagnosticSource` package introduced the
+(<xref:System.Diagnostics.Metrics.InstrumentAdvice%2A>) API.
+
+The `InstrumentAdvice` API may be used by instrumentation authors to specify the
+set of recommended default bucket boundaries for a given Histogram. Consumers
+can then choose to use those values when configuring aggregation.
+
+The following code shows an example using the `InstrumentAdvice` API to set
+recommended default buckets.
+
+```csharp
+using System;
+using System.Diagnostics.Metrics;
+using System.Threading;
+
+class Program
+{
+    static Meter s_meter = new Meter("HatCo.Store");
+    static readonly IReadOnlyList<double> s_shortSecondsBucketBoundaries = [0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10];
+    static Histogram<double> s_orderProcessingTime = s_meter.CreateHistogram<double>(
+        name: "hatco.store.order_processing_time",
+        unit: "s",
+        description: "Duration order processing.",
+        advice: new InstrumentAdvice<double> { HistogramBucketBoundaries = s_shortSecondsBucketBoundaries });
+
+    static Random s_rand = new Random();
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Press any key to exit");
+        while (!Console.KeyAvailable)
+        {
+            // Pretend our store has one transaction each 100ms
+            Thread.Sleep(100);
+
+            // Pretend that we measured how long it took to do the transaction (for example we could time it with Stopwatch)
+            s_orderProcessingTime.Record(s_rand.Next(5, 15) / 1000.0);
+        }
+    }
+}
+```
 
 ## Test custom metrics
 

@@ -192,7 +192,7 @@ Configure your package manager to ignore the .NET packages from the distribution
     touch /etc/apt/preferences
     ```
 
-01. Open `/etc/apt/preferences` in an editor and add an apt preferences fragement to prevent packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
+01. Open `/etc/apt/preferences` in an editor and add an apt preferences fragment to prevent packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
 
     ```
     Package: dotnet* aspnet* netstandard*

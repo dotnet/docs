@@ -33,7 +33,7 @@ Beginning with C# 13, you can use [field backed properties](../../language-refer
 
 ## The get accessor
 
-The body of the `get` accessor resembles that of a method. It must return a value of the property type. The C# compiler and Just-in-time (JIT) compiler detect common patterns for implementing the `get` accessor, and optimizes those patterns. For example, a `get` accessor that returns a field without performing any computation is likely optimized to a memory read of that field. Automatically mplemented properties follow this pattern and benefit from these optimizations. However, a virtual `get` accessor method can't be inlined because the compiler doesn't know at compile time which method might actually be called at run time. The following example shows a `get` accessor that returns the value of a private field `_name`:
+The body of the `get` accessor resembles that of a method. It must return a value of the property type. The C# compiler and Just-in-time (JIT) compiler detect common patterns for implementing the `get` accessor, and optimizes those patterns. For example, a `get` accessor that returns a field without performing any computation is likely optimized to a memory read of that field. Automatically implemented properties follow this pattern and benefit from these optimizations. However, a virtual `get` accessor method can't be inlined because the compiler doesn't know at compile time which method might actually be called at run time. The following example shows a `get` accessor that returns the value of a private field `_name`:
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="UsingEmployeeExample":::
 

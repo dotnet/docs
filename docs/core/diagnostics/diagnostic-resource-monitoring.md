@@ -25,7 +25,7 @@ The preceding code:
 - Gets an instance of the <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor> interface from the `ServiceProvider` instance.
 
 > [!IMPORTANT]
-> The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring?displayProperty=fullName> package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception. Furthemore, you can enable internal library logging by configuring the [`Debug`](xref:Microsoft.Extensions.Logging.LogLevel.Debug) log level for the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` category as per the [guide](../extensions/logging.md#log-category).
+> The <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring?displayProperty=fullName> package assumes that the consumer will register logging providers with the `Microsoft.Extensions.Logging` package. If you don't register logging, the call to `AddResourceMonitoring` will throw an exception. Furthermore, you can enable internal library logging by configuring the [`Debug`](xref:Microsoft.Extensions.Logging.LogLevel.Debug) log level for the `Microsoft.Extensions.Diagnostics.ResourceMonitoring` category as per the [guide](../extensions/logging.md#log-category).
 
 At this point, with the `IResourceMonitor` implementation you'll ask for resource utilization with the <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.IResourceMonitor.GetUtilization%2A?displayProperty=nameWithType> method. The `GetUtilization` method returns a <xref:Microsoft.Extensions.Diagnostics.ResourceMonitoring.ResourceUtilization> instance that contains the following information:
 

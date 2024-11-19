@@ -3,7 +3,7 @@ description: "Learn more about: IXCLRDataModule::EnumEnumMethodInstancesByName M
 title: "IXCLRDataModule::EndEnumMethodInstancesByName Method"
 ms.date: "07/01/2024"
 api.name:
-  - "IXCLRDataModule::EndEnumMethodInstnacesByName Method"
+  - "IXCLRDataModule::EndEnumMethodInstancesByName Method"
 api.location:
   - "mscordacwks.dll"
 api.type:

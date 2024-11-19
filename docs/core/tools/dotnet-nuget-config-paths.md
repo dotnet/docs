@@ -10,7 +10,7 @@ ms.date: 05/14/2024
 
 ## Name
 
-`dotnet nuget config paths` - Lists nuget configuration files currently being appplied to a directory.
+`dotnet nuget config paths` - Lists nuget configuration files currently being applied to a directory.
 
 ## Synopsis
 

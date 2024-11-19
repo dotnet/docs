@@ -110,7 +110,7 @@ Complete the steps in the following sections to update your app to use JSON file
 
 1. Update the the `Program.cs` file to retrieve the JSON file configurations using `IConfiguration` and pass them into your service registrations:
 
-    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="13-31" highlight="5-6,8-9,12-13":::
+    :::code language="csharp" source="snippets/aspnetcore-guidance/MinApiSample/Program.cs" range="14-25" highlight="4-5,7-8,11-12":::
 
 ### Configure Azure defaults and retries
 

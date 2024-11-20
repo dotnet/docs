@@ -125,7 +125,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
 1. Create a system prompt to provide the AI model with initial role context and instructions about hiking recommendations:
 
-    :::code language="csharp" source="snippets/build-chat-app/openai/program.cs" range="14-31":::
+    :::code language="csharp" source="snippets/build-chat-app/openai/program.cs" range="13-30":::
 
 1. Create a conversational loop that accepts an input prompt from the user, sends the prompt to the model, and prints the response completion:
 

@@ -1,14 +1,13 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.AI;
-using Azure.AI.OpenAI;
-using Azure.Identity;
+using OpenAI;
 
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string endpoint = config["AZURE_OPENAI_ENDPOINT"];
-string deployment = config["AZURE_OPENAI_GPT_NAME"];
+string model = config["ModelName"];
+string key = config["OpenAIKey"];
 
 // Create the IChatClient
-IChatClient client =
+IChatClient chatClient =
     new OpenAIClient(key).AsChatClient(model);
 
 // Start the conversation with context for the AI model

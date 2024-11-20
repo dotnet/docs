@@ -245,6 +245,20 @@ For more information about how enforced-notarization affects .NET (and your .NET
 
 [!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
 
+## Arm-based Macs
+
+The following sections describe things you should consider when installing .NET on an Arm-based Mac.
+
+<!-- This section is mirrored in the windows.md file. Changes here should be applied there -->
+
+### Path differences
+
+On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
+
+### Path variables
+
+Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
+
 ## Troubleshooting
 
 The following sections are available to help troubleshoot issues:
@@ -282,33 +296,6 @@ Set the following two environment variables in your shell profile:
   ```bash
   export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
   ```
-
-### Arm-based Macs
-
-The following sections describe things you should consider when installing .NET on an Arm-based Mac.
-
-<!-- This section is mirrored in the windows.md file. Changes here should be applied there -->
-
-#### .NET Versions
-
-The following table describes which versions of .NET are supported on an Arm-based Mac:
-
-| .NET Version | SDK | Runtime |
-|--------------|-----|---------|
-| 8            | Yes | Yes     |
-| 8            | Yes | Yes     |
-| 6            | Yes | Yes     |
-| 6            | Yes | Yes     |
-
-The x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
-
-#### Path differences
-
-On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
-
-#### Path variables
-
-Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
 
 ### System.Drawing.Common and libgdiplus
 

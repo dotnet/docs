@@ -116,10 +116,6 @@ The previous requirements are also required if you receive an error related to e
 
 .NET is supported on Arm-based Windows PCs. The following sections describe things you should consider when installing .NET.
 
-### SDK differences
-
-The x86, x64, and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
-
 ### Path differences
 
 On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, the **x64** version of the .NET SDK is installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.

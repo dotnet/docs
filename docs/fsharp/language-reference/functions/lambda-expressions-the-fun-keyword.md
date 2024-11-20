@@ -13,6 +13,14 @@ The `fun` keyword is used to define a lambda expression, that is, an anonymous f
 fun parameter-list -> expression
 ```
 
+or using the _.Property shorthand notation:
+
+```fsharp
+_.
+```
+
+where `fun`, *parameter-list* and lambda arrow (`->`) is omitted and the `_.` is a part of *expression* where `_` replaces the parameter call.
+
 ## Remarks
 
 The *parameter-list* typically consists of names and, optionally, types of parameters. More generally, the *parameter-list* can be composed of any F# patterns. For a full list of possible patterns, see [Pattern Matching](../pattern-matching.md). Lists of valid parameters include the following examples.

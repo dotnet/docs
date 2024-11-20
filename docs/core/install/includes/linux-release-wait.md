@@ -7,4 +7,4 @@ ms.custom: linux-related-content
 ---
 
 > [!IMPORTANT]
-> .NET 9 was released on November 12, 2024. It may take time for the packages to appear in the package manager feeds, or for your specific Linux distribution to include it.
+> .NET 9 was released on November 12, 2024. It may take time for the packages to appear in the package manager feeds or for your specific Linux distribution to include it.

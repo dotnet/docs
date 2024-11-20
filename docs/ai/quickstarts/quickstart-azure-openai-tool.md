@@ -111,7 +111,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone target="docs" pivot="azure-openai"
 
-    :::code language="csharp" source="snippets/prompt-completion/azure-openai/program.cs" range="1-16":::
+    :::code language="csharp" source="snippets/function-calling/azure-openai/program.cs" range="1-16":::
 
     > [!NOTE]
     > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](/dotnet/ai/azure-ai-services-authentication).
@@ -120,17 +120,17 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone target="docs" pivot="openai"
 
-    :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="1-14":::
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="1-14":::
 
     :::zone-end
 
 1. Create a new `ChatOptions` object that contains an inline function the AI model can call to get the current weather. The function declaration include a delegate to run logic and name and description parameters to describe the purpose of the function to the AI model.
 
-    :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="18-28":::
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="18-28":::
 
 1. Add a system prompt to the chat history to provide context and instructions to the model. Send a user prompt with a question that requires the AI model to call the registered function to properly answer the question.
 
-    :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="32-50":::
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="32-50":::
 
 1. Use the `dotnet run` command to run the app:
 

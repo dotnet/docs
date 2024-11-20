@@ -19,13 +19,13 @@ In this quickstart, you create a .NET console AI chat app to connect to an AI mo
 
 :::zone target="docs" pivot="openai"
 
-[!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
+[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
 
 :::zone-end
 
 :::zone target="docs" pivot="azure-openai"
 
-[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
+[!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
 

@@ -199,12 +199,12 @@ MyNativeAOTLibrary.framework
 6. Edit `main.m` by calling the exposed managed method `aotsample_add` and printing the result
 
     ```objc
-        extern int aotsample_add(int a, int b);
-        int main(int argc, char * argv[]) {
-            ...
-            NSLog(@"2 + 5 = %d", aotsample_add(2, 5));
-            ...
-        }
+    extern int aotsample_add(int a, int b);
+    int main(int argc, char * argv[]) {
+        ...
+        NSLog(@"2 + 5 = %d", aotsample_add(2, 5));
+        ...
+    }
     ```
 
 7. Select your physical iOS device and build/run the app

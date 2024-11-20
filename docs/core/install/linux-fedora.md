@@ -31,8 +31,6 @@ The following table is a list of currently supported .NET releases and the versi
 
 # [.NET 9](#tab/dotnet9)
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-dnf-install-90](includes/linux-install-90-dnf.md)]
 
 # [.NET 8](#tab/dotnet8)

@@ -549,16 +549,20 @@ Name                                                  Current Value
 
 ## Using Advice to customize Histogram instruments
 
-Consumers of Histogram instruments can choose different aggregation strategies.
-The default mode when using OpenTelemetry is [Explicit Bucket Histogram
-Aggregation](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/sdk.md#explicit-bucket-histogram-aggregation).
+When using Histograms, it is the responsibility of the tool or library
+collecting the data to decide how best to represent the distribution of values
+that were recorded. A common strategy (and the [default mode when using
+OpenTelemetry](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/sdk.md#explicit-bucket-histogram-aggregation))
+is to divide up the range of possible values into sub-ranges called buckets and
+report how many recorded values were in each bucket. For example a tool might
+divide numbers into three buckets, those less than 1, those between 1-10, and
+those greater than 10. If your app recorded the values 0.5, 6, 0.1, 12 then
+there would be two data points the first bucket, one in the second, and one in
+the 3rd.
 
-When using explicit bucket aggregation the measurements recorded through a
-Histogram will be grouped into buckets which track the sum and count of values
-to that bucket.
-
-The default bucket configuration is described in the OpenTelemetry
-Specification: `[ 0, 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000,
+The tool or library collecting the Histogram data is responsible for defining
+the buckets it will use. The default bucket configuration when using
+OpenTelemetry is: `[ 0, 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000,
 7500, 10000 ]`.
 
 The default values may not lead to the best granularity for every Histogram. For
@@ -569,8 +573,17 @@ To solve this problem the `9.0.0` version of the
 (<xref:System.Diagnostics.Metrics.InstrumentAdvice%2A>) API.
 
 The `InstrumentAdvice` API may be used by instrumentation authors to specify the
-set of recommended default bucket boundaries for a given Histogram. Consumers
-can then choose to use those values when configuring aggregation.
+set of recommended default bucket boundaries for a given Histogram. The tool or
+library collecting the Histogram data can then choose to use those values when
+configuring aggregation. This is supported in the OpenTelemetry .NET SDK as of
+version `1.10.0`.
+
+> [!IMPORTANT]
+> In general more buckets will lead to more precise data for a given Histogram
+> but each bucket requires memory to store the aggregated details. It is
+> important to understand this tradeoff between precision and memory consumption
+> when choosing the number of buckets to recommend via the `InstrumentAdvice`
+> API.
 
 The following code shows an example using the `InstrumentAdvice` API to set
 recommended default buckets.
@@ -583,12 +596,11 @@ using System.Threading;
 class Program
 {
     static Meter s_meter = new Meter("HatCo.Store");
-    static readonly IReadOnlyList<double> s_shortSecondsBucketBoundaries = [0.005, 0.01, 0.025, 0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1, 2.5, 5, 7.5, 10];
     static Histogram<double> s_orderProcessingTime = s_meter.CreateHistogram<double>(
         name: "hatco.store.order_processing_time",
         unit: "s",
-        description: "Duration order processing.",
-        advice: new InstrumentAdvice<double> { HistogramBucketBoundaries = s_shortSecondsBucketBoundaries });
+        description: "Order processing duration",
+        advice: new InstrumentAdvice<double> { HistogramBucketBoundaries = [0.01, 0.05, 0.1, 0.5, 1, 5] });
 
     static Random s_rand = new Random();
 
@@ -606,6 +618,14 @@ class Program
     }
 }
 ```
+
+### Additional information
+
+For more details about explicit bucket Histograms in OpenTelemetry see:
+
+* [Why Histograms?](https://opentelemetry.io/blog/2023/why-histograms/)
+
+* [Histograms vs Summaries](https://opentelemetry.io/blog/2023/histograms-vs-summaries/)
 
 ## Test custom metrics
 

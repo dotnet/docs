@@ -220,6 +220,8 @@ Suppresses any attempts to restart.
 dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 ```
 
+You can replace the `/install` option with `/uninstall` or `/repair` to remove or modify an installation.
+
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
 

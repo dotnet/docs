@@ -22,7 +22,6 @@ The following table is a list of currently supported .NET releases and the versi
 | Debian | .NET    |
 |--------|---------|
 | 12     | 9, 8    |
-| 11     | 8       |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -36,8 +35,6 @@ The following table is a list of currently supported .NET releases and the versi
 
 ## Debian 12
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
 ```bash
@@ -46,35 +43,15 @@ sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
 ```
 
+# [.NET 9](#tab/dotnet9)
+
 [!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
-## Debian 11
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
+# [.NET 8](#tab/dotnet8)
 
 [!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
-## Debian 10
-
-[!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
-
-```bash
-wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-rm packages-microsoft-prod.deb
-```
-
-[!INCLUDE [linux-apt-install-70](includes/linux-install-70-apt.md)]
-
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+---
 
 ## Use APT to update .NET
 

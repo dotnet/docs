@@ -129,7 +129,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
 1. Create a conversational loop that accepts an input prompt from the user, sends the prompt to the model, and prints the response completion:
 
-    :::code language="csharp" source="snippets/build-chat-app/openai/program.cs" range="33-51":::
+    :::code language="csharp" source="snippets/build-chat-app/openai/program.cs" range="32-51":::
 
 1. Use the `dotnet run` command to run the app:
 

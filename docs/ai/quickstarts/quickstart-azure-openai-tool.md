@@ -107,7 +107,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) package to send and receive requests to the AI model.
 
-1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model. The code also configures the `ChatClient` to use function invocation.
+1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model. The `ChatClient` is also configured to use function invocation, which allows .NET functions in your code to be called by the AI model.
 
     :::zone target="docs" pivot="azure-openai"
 
@@ -124,11 +124,11 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone-end
 
-1. Create a new `ChatOptions` object that contains an inline function the AI model can call to get the current weather. The function declaration include a delegate to run logic and name and description parameters to describe the purpose of the function to the AI model.
+1. Create a new `ChatOptions` object that contains an inline function the AI model can call to get the current weather. The function declaration includes a delegate to run logic and name and description parameters to describe the purpose of the function to the AI model.
 
     :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="16-26":::
 
-1. Add a system prompt to the chat history to provide context and instructions to the model. Send a user prompt with a question that requires the AI model to call the registered function to properly answer the question.
+1. Add a system prompt to the `chatHistory` to provide context and instructions to the model. Send a user prompt with a question that requires the AI model to call the registered function to properly answer the question.
 
     :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="28-40":::
 
@@ -138,7 +138,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
     dotnet run
     ```
 
-    The app prints a the completion response from the AI model that includes data provided by the .NET function.
+    The app prints a the completion response from the AI model that includes data provided by the .NET function. The AI model understood the registered function was available and called it automatically to generate a proper response.
 
 :::zone target="docs" pivot="azure-openai"
 

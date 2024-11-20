@@ -48,7 +48,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 1. To provision an Azure OpenAI service and model using the Azure CLI, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=cli) article.
 
-1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\04-HikerAIPro` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\semantic-kernel\04-HikerAIPro` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -60,7 +60,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 1. To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article.
 
-1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\04-HikerAIPro` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\semantic-kernel\04-HikerAIPro` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -77,7 +77,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 <!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
-1. From a terminal or command prompt, navigate to the `azure-openai\04-HikerAIPro` directory.
+1. From a terminal or command prompt, navigate to the `src\quickstarts\openai\semantic-kernel\04-HikerAIPro` directory.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -96,7 +96,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
 
 :::zone target="docs" pivot="azure-openai"
 
-1. From a terminal or command prompt, navigate to the `azure-openai\04-HikerAIPro` directory.
+1. From a terminal or command prompt, navigate to the `semantic-kernel\04-HikerAIPro` directory.
 
 2. Use the `dotnet run` command to run the app:
 
@@ -149,7 +149,6 @@ The entire application is contained within the **Program.cs** file. The first se
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
-string key = config["AZURE_OPENAI_KEY"];
 ```
 
 The `Kernel` class facilitates the requests and responses with the help of `AzureOpenAIChatCompletion` service.
@@ -159,7 +158,7 @@ The `Kernel` class facilitates the requests and responses with the help of `Azur
 IKernelBuilder b = Kernel.CreateBuilder();
 
 Kernel kernel = b
-    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
+    .AddAzureOpenAIChatCompletion(deployment, endpoint, new DefaultAzureCredential())
     .Build();
 ```
 

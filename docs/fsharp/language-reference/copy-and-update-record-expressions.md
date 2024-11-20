@@ -32,6 +32,32 @@ To update only two fields in that record you can use the *copy and update record
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1906.fs)]
 
+## Nested Record Copy and Update
+
+In F# 7.0 and later, the *copy and update expression* has been enhanced to support updates on nested record fields. This feature allows for more concise syntax when working with deeply nested records.
+
+Consider the following example:
+
+### Before
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet19061.fs)]
+
+### After
+
+With the new feature, you can use dot-notation to reach nested fields and update them directly:
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet19062.fs)]
+
+This syntax eliminates the need for multiple `with` expressions. Instead, it allows for specifying updates on nested fields directly, while still allowing multiple fields (even at different levels of nesting) to be updated in the same expression.
+
+### Anonymous Records
+
+The same syntax extension works for anonymous records as well. Additionally, you can use this syntax to copy and update regular records into anonymous ones, adding new fields in the process:
+
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet19063.fs)]
+
+This flexibility ensures that the same concise syntax applies whether you're working with regular or anonymous records.
+
 ## See also
 
 - [Records](records.md)

@@ -10,7 +10,7 @@ zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code how to extend the model using Tools.
 ---
 
-# Configure an AI model to run a .NET function
+# Invoke .NET functions using an AI model
 
 In this quickstart, you create a .NET console AI chat app to connect to an AI model and configure them to call .NET functions when necessary. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 

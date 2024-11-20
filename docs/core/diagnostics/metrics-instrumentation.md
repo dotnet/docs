@@ -580,10 +580,11 @@ version `1.10.0`.
 
 > [!IMPORTANT]
 > In general more buckets will lead to more precise data for a given Histogram
-> but each bucket requires memory to store the aggregated details. It is
-> important to understand this tradeoff between precision and memory consumption
-> when choosing the number of buckets to recommend via the `InstrumentAdvice`
-> API.
+> but each bucket requires memory to store the aggregated details and there is
+> CPU cost to find the correct bucket when processing a measurement. It is
+> important to understand the tradeoffs between precision and CPU/memory
+> consumption when choosing the number of buckets to recommend via the
+> `InstrumentAdvice` API.
 
 The following code shows an example using the `InstrumentAdvice` API to set
 recommended default buckets.

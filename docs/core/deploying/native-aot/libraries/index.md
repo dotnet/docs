@@ -15,4 +15,4 @@ Publishing .NET class libraries as Native AOT allows creating libraries that can
 
 Publishing a class library as Native AOT creates a native library that exposes methods of the class library annotated with <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute> with a non-null `EntryPoint` field. For more information, see the [native library sample](https://github.com/dotnet/samples/tree/main/core/nativeaot/NativeLibrary) available in the dotnet/samples repository on GitHub.
 
-For specifics of building and consuming native libraries on iOS-like platforms, refer to [How to build and consume native libraries with Native AOT for iOS-like platforms](./ios-like-native-libraries-with-nativeaot.md).
+For specifics of building and consuming native libraries on iOS-like platforms, see [How to build and consume native libraries with Native AOT for iOS-like platforms](./ios-like-native-libraries-with-nativeaot.md).

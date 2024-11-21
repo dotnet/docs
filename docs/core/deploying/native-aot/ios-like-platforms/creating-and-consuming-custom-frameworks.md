@@ -3,7 +3,7 @@ title: Building native libraries for iOS-like platforms
 description: How to build and consume native libraries with Native AOT for iOS-like platforms
 author: ivanpovazan
 ms.author: ivanpovazan
-ms.date: 11/11/2024
+ms.date: 11/21/2024
 ---
 
 # Build native libraries for iOS-like platforms

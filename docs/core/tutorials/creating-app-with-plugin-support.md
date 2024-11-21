@@ -20,10 +20,7 @@ This tutorial shows you how to create a custom <xref:System.Runtime.Loader.Assem
 
 ## Prerequisites
 
-- Install the [.NET 5 SDK](https://dotnet.microsoft.com/download) or a newer version.
-
-> [!NOTE]
-> The sample code targets .NET 5, but all the features it uses were introduced in .NET Core 3.0 and are available in all .NET releases since then.
+- Install the [.NET SDK](https://dotnet.microsoft.com/download).
 
 ## Create the application
 

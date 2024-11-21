@@ -568,15 +568,22 @@ OpenTelemetry is: `[ 0, 5, 10, 25, 50, 75, 100, 250, 500, 750, 1000, 2500, 5000,
 The default values may not lead to the best granularity for every Histogram. For
 example, sub-second request durations would all fall into the `0` bucket.
 
-To solve this problem the `9.0.0` version of the
+The tool or library collecting the Histogram data may offer mechanism(s) to
+allow users to customize the bucket configuration. For example, OpenTelemetry
+defines a [View
+API](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/sdk.md#view).
+This however requires end user action and makes it the user's responsibility to
+understand the data distribution well enough to choose correct buckets.
+
+To improve the experience the `9.0.0` version of the
 `System.Diagnostics.DiagnosticSource` package introduced the
 (<xref:System.Diagnostics.Metrics.InstrumentAdvice%2A>) API.
 
 The `InstrumentAdvice` API may be used by instrumentation authors to specify the
 set of recommended default bucket boundaries for a given Histogram. The tool or
 library collecting the Histogram data can then choose to use those values when
-configuring aggregation. This is supported in the OpenTelemetry .NET SDK as of
-version `1.10.0`.
+configuring aggregation leading to a more seamless onboarding experience for
+users. This is supported in the OpenTelemetry .NET SDK as of version `1.10.0`.
 
 > [!IMPORTANT]
 > In general more buckets will lead to more precise data for a given Histogram

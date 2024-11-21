@@ -63,7 +63,7 @@ C# 10 adds the following features and enhancements to the C# language:
 
 - [Record structs](../language-reference/builtin-types/record.md)
 - [Improvements of structure types](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values)
-- [Interpolated string handlers](./language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
+- [Interpolated string handlers](../language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
 - [`global using` directives](../language-reference/keywords/using-directive.md)
 - [File-scoped namespace declaration](../language-reference/keywords/namespace.md)
 - [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)

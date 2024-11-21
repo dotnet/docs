@@ -1,7 +1,7 @@
 ---
 title: "Structure types"
 description: Learn about the struct type in C#
-ms.date: 04/05/2023
+ms.date: 11/22/2024
 f1_keywords:
   - "struct_CSharpKeyword"
 helpviewer_keywords:
@@ -74,13 +74,13 @@ The compiler may make use of the `readonly` modifier for performance optimizatio
 
 ## Nondestructive mutation
 
-Beginning with C# 10, you can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+You can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 
 ## `record` struct
 
-Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
+You can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
 
 ## Inline arrays
 
@@ -174,10 +174,10 @@ For more information about `struct` features, see the following feature proposal
 
 - [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
 - [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
-- [C# 10 - Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
-- [C# 10 - Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
-- [C# 10 - Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
-- [C# 11 - Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
+- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
+- [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
+- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
+- [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
 
 ## See also
 

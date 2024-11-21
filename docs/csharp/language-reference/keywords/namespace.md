@@ -1,7 +1,7 @@
 ---
 description: "namespace keyword - C# Reference"
 title: "namespace keyword"
-ms.date: 08/19/2021
+ms.date: 11/22/2024
 f1_keywords: 
   - "namespace_CSharpKeyword"
   - "namespace"
@@ -16,7 +16,7 @@ The `namespace` keyword is used to declare a scope that contains a set of relate
 
 :::code language="csharp" source="snippets/csrefKeywordsNamespace.cs" id="Snippet1":::
 
-*File scoped namespace declarations* enable you to declare that all types in a file are in a single namespace. File scoped namespace declarations are available with C# 10. The following example is similar to the previous example, but uses a file scoped namespace declaration:
+*File scoped namespace declarations* enable you to declare that all types in a file are in a single namespace. The following example is similar to the previous example, but uses a file scoped namespace declaration:
 
 :::code language="csharp" source="snippets/filescopednamespace.cs" :::
 

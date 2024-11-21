@@ -1,7 +1,7 @@
 ---
 description: "const keyword - C# Reference"
 title: "const keyword"
-ms.date: 06/20/2021
+ms.date: 11/22/2024
 f1_keywords: 
   - "const_CSharpKeyword"
   - "const"
@@ -19,7 +19,7 @@ public const double GravitationalConstant = 6.673e-11;
 private const string ProductName = "Visual C#";
 ```
 
-Beginning with C# 10, [interpolated strings](../tokens/interpolated.md) may be constants, if all expressions used are also constant strings. This feature can improve the code that builds constant strings:
+[Interpolated strings](../tokens/interpolated.md) may be constants, if all expressions used are also constant strings. This feature can improve the code that builds constant strings:
 
 ```csharp
 const string Language = "C#";

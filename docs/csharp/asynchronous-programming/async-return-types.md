@@ -1,7 +1,7 @@
 ---
 title: Async return types
 description: Learn about the return types that async methods can have in C# with code examples for each type.
-ms.date: 02/08/2023
+ms.date: 11/22/2024
 ---
 
 # Async return types (C#)
@@ -81,7 +81,7 @@ This feature is the complement to [awaitable expressions](~/_csharpstandard/stan
 
 Writing a generalized async return type is an advanced scenario, and is targeted for use in specialized environments. Consider using the `Task`, `Task<T>`, and `ValueTask<T>` types instead, which cover most scenarios for asynchronous code.
 
-In C# 10 and later, you can apply the `AsyncMethodBuilder` attribute to an async method (instead of the async return type declaration) to override the builder for that type. Typically you'd apply this attribute to use a different builder provided in the .NET runtime.
+You can apply the `AsyncMethodBuilder` attribute to an async method (instead of the async return type declaration) to override the builder for that type. Typically you'd apply this attribute to use a different builder provided in the .NET runtime.
 
 ## Async streams with IAsyncEnumerable\<T\>
 

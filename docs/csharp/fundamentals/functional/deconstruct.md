@@ -1,7 +1,7 @@
 ---
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
-ms.date: 11/10/2021
+ms.date: 11/22/2024
 ---
 # Deconstructing tuples and other types
 
@@ -41,7 +41,7 @@ There are three ways to deconstruct a tuple:
 
     :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple5.cs" ID="Snippet1":::
 
-- Beginning in C# 10, you can mix variable declaration and assignment in a deconstruction.
+- You can mix variable declaration and assignment in a deconstruction.
 
     :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple6.cs" ID="Snippet1":::
 

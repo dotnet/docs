@@ -1,7 +1,7 @@
 ---
 title: Top-level statements tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
-ms.date: 11/14/2023
+ms.date: 11/22/2024
 ---
 # Tutorial: Explore ideas using top-level statements to build code as you learn
 
@@ -15,7 +15,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6, which includes the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [.NET 6 SDK](https://dot.net/get-dotnet6).
+You'll need to set up your machine to run .NET 6 or later. The C# compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [.NET SDK](https://dot.net/get-dotnet6).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 

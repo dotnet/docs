@@ -89,7 +89,7 @@ helpviewer_keywords:
  - "CS9124"
  - "CS9136"
  - "CS9179"
-ms.date: 01/11/2024
+ms.date: 11/22/2024
 ---
 # Resolve errors and warnings in constructor declarations
 
@@ -182,7 +182,7 @@ When a constructor is marked `extern`, the compiler can't guarantee the construc
 - **CS8982**: *A constructor declared in a 'struct' with parameter list must have a 'this' initializer that calls the primary constructor or an explicitly declared constructor.*
 - **CS8983**: *A 'struct' with field initializers must include an explicitly declared constructor.*
 
-Recent features in C# remove earlier restrictions to `struct` types. **CS0568** is generated when you declare a parameterless instance constructor in older versions of C#. Once you're using C# 10, you can declare an explicit parameterless instance constructor. That explicit parameterless constructor must be `public`. If your `struct` declares any [field initializers](../../programming-guide/classes-and-structs/fields.md), you must also declare an explicit instance constructor. This constructor can be a parameterless constructor with an empty body.
+Recent features in C# remove earlier restrictions to `struct` types. **CS0568** is generated when you declare a parameterless instance constructor in older versions of C#. You can declare an explicit parameterless instance constructor in newer versions of C#. That explicit parameterless constructor must be `public`. If your `struct` declares any [field initializers](../../programming-guide/classes-and-structs/fields.md), you must also declare an explicit instance constructor. This constructor can be a parameterless constructor with an empty body.
 
 When a `struct` type declares a primary constructor, including `record struct` types, all other instance constructors except a parameterless constructor must call the primary constructor or another explicitly declared constructor using `this()`.
 

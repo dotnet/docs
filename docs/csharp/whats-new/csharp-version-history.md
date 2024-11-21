@@ -61,20 +61,22 @@ C# 11 introduces *generic math* and several features that support that goal. You
 
 C# 10 adds the following features and enhancements to the C# language:
 
-- [Record structs](./csharp-10.md#record-structs)
-- [Improvements of structure types](./csharp-10.md#improvements-of-structure-types)
-- [Interpolated string handlers](./csharp-10.md#interpolated-string-handler)
-- [`global using` directives](./csharp-10.md#global-using-directives)
-- [File-scoped namespace declaration](./csharp-10.md#file-scoped-namespace-declaration)
-- [Extended property patterns](./csharp-10.md#extended-property-patterns)
-- [Improvements on lambda expressions](./csharp-10.md#lambda-expression-improvements)
-- [Allow `const` interpolated strings](./csharp-10.md#constant-interpolated-strings)
-- [Record types can seal `ToString()`](./csharp-10.md#record-types-can-seal-tostring)
-- [Improved definite assignment](./csharp-10.md#improved-definite-assignment)
-- [Allow both assignment and declaration in the same deconstruction](./csharp-10.md#assignment-and-declaration-in-same-deconstruction)
-- [Allow `AsyncMethodBuilder` attribute on methods](./csharp-10.md#allow-asyncmethodbuilder-attribute-on-methods)
-- [CallerArgumentExpression attribute](./csharp-10.md#callerargumentexpression-attribute-diagnostics)
-- [Enhanced `#line` pragma](./csharp-10.md#enhanced-line-pragma)
+- [Record structs](../language-reference/builtin-types/record.md)
+- [Improvements of structure types](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values)
+- [Interpolated string handlers](./language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
+- [`global using` directives](../language-reference/keywords/using-directive.md)
+- [File-scoped namespace declaration](../language-reference/keywords/namespace.md)
+- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- Lambda expressions may have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
+- Lambda expressions may declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
+- [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
+- In C# 10, `const` strings may be initialized using [string interpolation](../language-reference/tokens/interpolated.md) if all the placeholders are themselves constant strings.
+- In C# 10, you can add the `sealed` modifier when you override `ToString` in a [record](../language-reference/builtin-types/record.md) type.
+- Warnings for definite assignment and null-state analysis are more accurate.
+- Allow both assignment and declaration in the same deconstruction.
+- [Allow `AsyncMethodBuilder` attribute on methods](../language-reference/attributes/general.md#asyncmethodbuilder-attribute)
+- [CallerArgumentExpression attribute](../language-reference/attributes/caller-information.md#argument-expressions)
+- C# 10 supports a new format for the `#line` pragma.
 
 More features were available in *preview* mode. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
 

@@ -1,11 +1,11 @@
 ---
 title: Use record types tutorial
 description: Learn about how to use record types, build hierarchies of records, and when to choose records over classes.
-ms.date: 11/08/2023
+ms.date: 11/22/2024
 ---
 # Create record types
 
-[*Records*](../language-reference/builtin-types/record.md) are types that use *value-based equality*. C# 10 adds *record structs* so that you can define records as value types. Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. Two variables of a class type are equal if the objects referred to are the same class type and the variables refer to the same object. Value-based equality implies other capabilities you'll probably want in record types. The compiler generates many of those members when you declare a `record` instead of a `class`. The compiler generates those same methods for `record struct` types.
+[*Records*](../language-reference/builtin-types/record.md) are types that use *value-based equality*. You can define records as reference types or value types. Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. Two variables of a class type are equal if the objects referred to are the same class type and the variables refer to the same object. Value-based equality implies other capabilities you'll probably want in record types. The compiler generates many of those members when you declare a `record` instead of a `class`. The compiler generates those same methods for `record struct` types.
 
 In this tutorial, you'll learn how to:
 
@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6 or later, including the C# 10 or later compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
+You'll need to set up your machine to run .NET 6 or later. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/vs) or the [.NET SDK](https://dotnet.microsoft.com/download).
 
 ## Characteristics of records
 
@@ -125,7 +125,7 @@ You declare a `PrintMembers` method in the `DegreeDays` record that doesn't prin
 
 The signature declares a `virtual protected` method to match the compiler's version. Don't worry if you get the accessors wrong; the language enforces the correct signature. If you forget the correct modifiers for any synthesized method, the compiler issues warnings or errors that help you get the right signature.
 
-In C# 10 and later, you can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
+You can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
 
 ## Non-destructive mutation
 

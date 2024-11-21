@@ -1,7 +1,7 @@
 ---
 title: Explore C# string interpolation handlers
 description: This advanced tutorial shows how you can write a custom string interpolation handler that hooks into the runtime processing of an interpolated string.
-ms.date: 03/24/2022
+ms.date: 11/22/2022
 ---
 # Tutorial: Write a custom string interpolation handler
 
@@ -16,13 +16,11 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6, including the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or [.NET 6 SDK](https://dotnet.microsoft.com/download).
+You'll need to set up your machine to run .NET. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/) or the [.NET SDK](https://dotnet.microsoft.com/download).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
-## New outline
-
-C# 10 adds support for a custom [*interpolated string handler*](#implement-the-handler-pattern). An interpolated string handler is a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
+You can write a custom [*interpolated string handler*](#implement-the-handler-pattern). An interpolated string handler is a type that processes the placeholder expression in an interpolated string. Without a custom handler, placeholders are processed similar to <xref:System.String.Format%2A?displayProperty=nameWithType>. Each placeholder is formatted as text, and then the components are concatenated to form the resulting string.
 
 You can write a handler for any scenario where you use information about the resulting string. Will it be used? What constraints are on the format? Some examples include:
 

@@ -164,12 +164,8 @@ items:
       href: whats-new/csharp-11.md
     - name: Breaking changes since C# 10
       href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md
-  - name: C# 10
-    items:
-    - name: New features in C# 10
-      href: whats-new/csharp-10.md
-    - name: Breaking changes since earlier versions
-      href: whats-new/breaking-changes.md
+  - name: Breaking before C# 10
+    href: whats-new/breaking-changes.md
   - name: C# version history
     href: whats-new/csharp-version-history.md
   - name: Relationships to .NET library

@@ -1,7 +1,7 @@
 ---
 title: "Local functions"
 description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
-ms.date: 10/16/2020
+ms.date: 11/22/2024
 helpviewer_keywords:
   - "local functions [C#]"
 ---
@@ -90,7 +90,7 @@ Local functions are explicitly named like methods. Lambda expressions are anonym
 
 Lambda expressions rely on the type of the `Action`/`Func` variable that they're assigned to determine the argument and return types. In local functions, since the syntax is much like writing a normal method, argument types and return type are already part of the function declaration.
 
-Beginning with C# 10, some lambda expressions have a *natural type*, which enables the compiler to infer the return type and parameter types of the lambda expression.
+Some lambda expressions have a *natural type*, which enables the compiler to infer the return type and parameter types of the lambda expression.
 
 ### Definite assignment
 

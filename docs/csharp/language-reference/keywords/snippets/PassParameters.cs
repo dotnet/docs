@@ -231,5 +231,5 @@ public class PassByReferenceReassignment
         // After called Reassign:          Point3D { X = 13, Y = 29, Z = -42 }
     }
 }
-// </PassByValueReassignment>
+// </PassByReferenceReassignment>
 

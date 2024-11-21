@@ -1,7 +1,7 @@
 ---
 title: "Assignment operators - assign an expression to a variable"
 description: "C# Assignment sets the value of the expression. Alternatively, `ref` assignment sets the reference of a reference variable."
-ms.date: 11/19/2024
+ms.date: 11/21/2024
 f1_keywords:
   - "=_CSharpKeyword"
 helpviewer_keywords:

@@ -1,6 +1,6 @@
 ---
-title: Building native libraries for iOS-like platforms
-description: How to build and consume native libraries with Native AOT for iOS-like platforms
+title: Create and consume custom frameworks for iOS-like platforms
+description: How to create and consume custom frameworks with Native AOT for iOS-like platforms
 author: ivanpovazan
 ms.author: ivanpovazan
 ms.date: 11/21/2024
@@ -50,10 +50,6 @@ This section describes steps to create a simple .NET Class Library project with 
 
 5. Publish the class library and target the desired iOS-like platform by specifying the appropriate runtime identifier (referenced below as `<rid>`):
 
-    - For iOS physical devices use: `ios-arm64`
-    - For iOS simulator devices use: `iossimulator-arm64` or `iossimulator-x64`
-    - For MacCatalyst use: `maccatalyst-arm64` or `maccatalyst-x64`
-
     ```bash
     dotnet publish -r <rid> MyNativeAOTLibrary/MyNativeAOTLibrary.csproj
     ```
@@ -65,7 +61,7 @@ Successful completion of the previous step produces a pair of files: a shared li
 > This means that you need to repeat step 5 with a different runtime identifier.
 > For example, you'd publish the class library with both `maccatalyst-arm64` and `maccatalyst-x64` runtime identifiers as a prerequisite for [Packaging the shared library into a custom MacCatalyst universal framework](#package-the-shared-library-into-a-custom-maccatalyst-universal-framework).
 
-## Create and consume a custom framework (optional)
+## Create and consume a custom framework
 
 Apple imposes a requirement that shared libraries (.dylibs) need to be packaged into frameworks in order to be consumed from applications.
 

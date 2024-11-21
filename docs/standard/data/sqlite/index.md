@@ -37,5 +37,5 @@ This library implements the common ADO.NET abstractions for connections, command
 ## See also
 
 * [Connection strings](connection-strings.md)
-* [API Reference](../../../../api/index.md?view=msdata-sqlite-3.0&preserve-view=true)
+* [API Reference](/dotnet/api/microsoft.data.sqlite)
 * [SQL Syntax](https://www.sqlite.org/lang.html)

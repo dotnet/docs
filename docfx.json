@@ -71,7 +71,9 @@
                     "csharp-8.0/shadowing-in-nested-functions.md",
                     "csharp-8.0/static-local-functions.md",
                     "csharp-8.0/unconstrained-null-coalescing.md",
-                    "csharp-8.0/nullable-reference-types-specification.md"
+                    "csharp-8.0/nullable-reference-types.md",
+                    "csharp-8.0/nullable-reference-types-specification.md",
+                    "csharp-9.0/nullable-reference-types-specification.md"
                 ]
             },
             {
@@ -599,7 +601,6 @@
                 "_csharpstandard/standard/standard-library.md": "Standard library",
                 "_csharpstandard/standard/documentation-comments.md": "Documentation comments",
                 "_csharpstandard/standard/Bibliography.md": "Bibliography",
-                "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "Null reference types - proposal",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "Recursive pattern matching",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "Default interface methods",
                 "_csharplang/proposals/csharp-8.0/async-streams.md": "Async streams",
@@ -617,7 +618,6 @@
                 "_csharplang/proposals/csharp-9.0/local-function-attributes.md": "Attributes on local functions",
                 "_csharplang/proposals/csharp-9.0/module-initializers.md": "Module initializers",
                 "_csharplang/proposals/csharp-9.0/native-integers.md": "Native sized integers",
-                "_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md": "Nullable reference types - specification",
                 "_csharplang/proposals/csharp-9.0/patterns3.md": "Pattern matching changes",
                 "_csharplang/proposals/csharp-9.0/records.md": "Records",
                 "_csharplang/proposals/csharp-9.0/skip-localsinit.md": "Suppress emitting localsinit flag",
@@ -722,7 +722,6 @@
                 "_csharpstandard/standard/standard-library.md": "This appendix lists requirements of the specification library. The C# language relies on these types for some of its behavior.",
                 "_csharpstandard/standard/documentation-comments.md": "This appendix describes XML comments that are used to document your program.",
                 "_csharpstandard/standard/Bibliography.md": "This appendix lists external standards referenced in this specification.",
-                "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "This feature specification describes nullable reference types.",
                 "_csharplang/proposals/csharp-8.0/patterns.md": "This feature specification describes recursive pattern matching, where patterns can nest inside other patterns.",
                 "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "This feature specification describe the syntax updates necessary to support default interface methods. This includes declaring bodies in interface declarations, and supporting modifiers on declarations.",
                 "_csharplang/proposals/csharp-8.0/async-streams.md": "This feature specification describes async streams, which return streams of data asynchronously, typically as each element is produced or available.",
@@ -740,7 +739,6 @@
                 "_csharplang/proposals/csharp-9.0/local-function-attributes.md": "This feature specification describes rules to apply attributes on local functions.",
                 "_csharplang/proposals/csharp-9.0/module-initializers.md": "This feature specification describes how to declare module initializers, which are methods called by the runtime when a module, or assembly, is loaded.",
                 "_csharplang/proposals/csharp-9.0/native-integers.md": "This feature specification describes native sized integers, which are integer types that use the processor's natural integral types.",
-                "_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md": "This feature specification provides a more complete specification for nullable reference types.",
                 "_csharplang/proposals/csharp-9.0/patterns3.md": "This feature specification describes the additional pattern matching syntax added in C# 9.0. This includes relational patterns, 'and' and 'or' patterns, negated patterns and parenthesized patterns.",
                 "_csharplang/proposals/csharp-9.0/records.md": "This feature specification describes records. Records are reference types that provide value based equality semantics.",
                 "_csharplang/proposals/csharp-9.0/skip-localsinit.md": "This feature specification describes a performance enhancement to suppress emitting localsinit flag. This will prevent the runtime from initializing memory to 0 as part of allocating it.",

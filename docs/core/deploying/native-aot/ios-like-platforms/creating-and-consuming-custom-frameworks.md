@@ -6,7 +6,7 @@ ms.author: ivanpovazan
 ms.date: 11/21/2024
 ---
 
-# Build native libraries for iOS-like platforms
+# Create and consume custom frameworks for iOS-like platforms
 
 Starting from .NET 9, Native AOT supports publishing .NET class libraries that don't depend on iOS workloads for iOS-like platforms.
 This support enables you to create self-contained native libraries that can be consumed from iOS, Mac Catalyst, and tvOS applications.

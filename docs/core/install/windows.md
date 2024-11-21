@@ -227,6 +227,7 @@ Remove this version of .NET.
 
 - `/repair`\
 Check if the installations key files or components are damaged and restore them.
+
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
 

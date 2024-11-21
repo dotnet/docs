@@ -16,7 +16,7 @@ This tutorial shows you how to create a custom <xref:System.Runtime.Loader.Assem
 - Author plugins that can be easily deployed by just copying the build artifacts.
 
 > [!NOTE]
-> Untrusted code cannot be safely loaded into a trusted .NET process. To provide a security or reliability boundary, consider a technology provided by your OS or virtualization platform. 
+> Untrusted code cannot be safely loaded into a trusted .NET process. To provide a security or reliability boundary, consider a technology provided by your OS or virtualization platform.
 
 ## Prerequisites
 

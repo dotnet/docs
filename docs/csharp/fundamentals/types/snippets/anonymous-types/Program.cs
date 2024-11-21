@@ -4,11 +4,16 @@ using System.Linq;
 
 namespace anonymous_types
 {
+    // <ProductDefinition>
     class Product
     {
         public string? Color {get;set;}
         public  decimal Price {get;set;}
+        public string? Name {get;set;}
+        public string? Category {get;set;}
+        public string? Size {get;set;}
     }
+    // </ProductDefinition>
     class Anonymous
     {
         static void Main()

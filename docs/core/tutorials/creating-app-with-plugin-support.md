@@ -8,7 +8,7 @@ ms.date: 11/20/2024
 
 # Create a .NET Core application with plugins
 
-This tutorial shows you how to create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> to load plugins. An <xref:System.Runtime.Loader.AssemblyDependencyResolver> is used to resolve the dependencies of the plugin. The tutorial provides a separate namespace for the plugin's dependencies, allowing different assembly dependencies between the plugins and the hosting application. You'll learn how to:
+This tutorial shows you how to create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> to load plugins. An <xref:System.Runtime.Loader.AssemblyDependencyResolver> is used to resolve the dependencies of the plugin. The tutorial provides a separate assembly context for the plugin's dependencies, allowing different assembly dependencies between the plugins and the hosting application. You'll learn how to:
 
 - Structure a project to support plugins.
 - Create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> to load each plugin.

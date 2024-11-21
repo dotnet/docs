@@ -190,11 +190,11 @@ MyNativeAOTLibrary.framework
     - In the dialog, choose **Add Other** -> **Add Files** and then browse to the location of `MyNativeAOTLibrary.framework` and select it
     - Once selected, set `Embed and Sign` option for `MyNativeAOTLibrary` framework
 
-    ![Drop](./xcode-add-framework-reference.png)
+    ![Xcode add framework reference](../../media/native-aot-ios-like-platforms/xcode-add-framework-reference.png)
 
 5. Add `MyNativeAOTLibrary.framework` location to the list of **Framework Search Paths** in the **Build Settings** tab
 
-    ![Drop](./xcode-add-framework-search-path.png)
+    ![Xcode add framework search path](../../media/native-aot-ios-like-platforms/xcode-add-framework-search-path.png)
 
 6. Edit `main.m` by calling the exposed managed method `aotsample_add` and printing the result
 
@@ -215,7 +215,7 @@ MyNativeAOTLibrary.framework
 
 ## Build static libraries with NativeAOT for iOS-like platforms
 
-As described in [building native libraries overview](./index.md#building-native-libraries), it's better to build shared libraries over static ones due to several limitations.
+As described in [building native libraries overview](../libraries.md#building-native-libraries), it's better to build shared libraries over static ones due to several limitations.
 
 However, if desired, you can build a static library by following the steps for building a shared one and including an additional property in the project file:
 

@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "joining strings [C#]"
   - "concatenating strings [C#]"
   - "strings [C#], concatenation"
-ms.assetid: 8e16736f-4096-4f3f-be0f-9d4c3ff63520
 ---
 # How to concatenate multiple strings (C# Guide)
 
@@ -43,7 +42,7 @@ Another method to concatenate strings is <xref:System.String.Format%2A?displayPr
 
 ## `StringBuilder`
 
-In other cases, you may be combining strings in a loop where you don't know how many source strings you're combining, and the actual number of source strings may be large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.
+In other cases, you might be combining strings in a loop where you don't know how many source strings you're combining, and the actual number of source strings can be large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet4":::
 

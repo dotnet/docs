@@ -1,6 +1,6 @@
 ---
-description: "namespace keyword - C# Reference"
-title: "namespace keyword"
+description: "Organize related types and functionality using the namespace keyword - C# Reference"
+title: "The namespace keyword"
 ms.date: 11/22/2024
 f1_keywords: 
   - "namespace_CSharpKeyword"
@@ -8,9 +8,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "namespace keyword [C#]"
   - "scope [C#]"
-ms.assetid: 0a788423-9110-42e0-97d9-bda41ca4870f
 ---
-# namespace
+# The namespace keyword
 
 The `namespace` keyword is used to declare a scope that contains a set of related objects. You can use a namespace to organize code elements and to create globally unique types.
 
@@ -22,10 +21,10 @@ The `namespace` keyword is used to declare a scope that contains a set of relate
 
 ## Using Statements in File Scoped Namespaces
 
-When using *file-scoped namespaces*, the placement of `using` statements affects their scope within the file. File-scoped namespaces lower to the equivalent traditional namespace declaration that ends with a closing bracket at the end of the file. This behavior determines where `using` directives are applied as follows:
+When you use *file-scoped namespaces*, the placement of `using` statements affects their scope within the file. File-scoped namespaces lower to the equivalent traditional namespace declaration that ends with a closing bracket at the end of the file. This behavior determines where `using` directives are applied as follows:
 
-- If the `using` statements are placed before the file-scoped namespace declaration, they are treated as being outside of the namespace and are interpreted as fully-qualified namespaces.
-- If the `using` statements are placed after the file-scoped namespace declaration, they are scoped within the namespace itself.
+- If the `using` statements are placed before the file-scoped namespace declaration, they're treated as being outside of the namespace and are interpreted as fully qualified namespaces.
+- If the `using` statements are placed after the file-scoped namespace declaration, they're scoped within the namespace itself.
 
 For example:
 
@@ -44,9 +43,9 @@ public class SampleClass
 }
 ```
 
-In the above example, `System` is globally accessible, while `System.Text` applies only within `SampleNamespace`.
+In the preceding example, `System` is globally accessible, while `System.Text` applies only within `SampleNamespace`.
 
-The preceding example doesn't include a nested namespace. File scoped namespaces can't include additional namespace declarations. You cannot declare a nested namespace or a second file-scoped namespace:
+The preceding example doesn't include a nested namespace. File scoped namespaces can't include more namespace declarations. You can't declare a nested namespace or a second file-scoped namespace:
 
 ```csharp
 namespace SampleNamespace;

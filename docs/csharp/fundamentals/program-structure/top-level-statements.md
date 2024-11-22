@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 You don't have to explicitly include a `Main` method in a console application project. Instead, you can use the *top-level statements* feature to minimize the code you have to write.
 
-Top-level statements allows you to write executable code directly at the root of a file, eliminating the need for wrapping your code in a class or method.
+Top-level statements allow you to write executable code directly at the root of a file, eliminating the need for wrapping your code in a class or method.
 This means you can create programs without the ceremony of a `Program` class and a `Main` method.
 In this case, the compiler generates a `Program` class with an entry point method for the application. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly.
 
@@ -30,7 +30,7 @@ An application must have only one entry point. A project can have only one file 
 
 > CS8802 Only one compilation unit can have top-level statements.
 
-A project can have any number of additional source code files that don't have top-level statements.
+A project can have any number of source code files that don't have top-level statements.
 
 ## No other entry points
 

@@ -1,6 +1,6 @@
 ---
-title: "Default values of built in types"
-description: "Learn the default values of C# types such as bool, char, int, float, double and more."
+title: "Default values of built-in types"
+description: "Learn the default values of C# types such as bool, char, int, float, double, and more."
 ms.date: 11/22/2024
 helpviewer_keywords: 
   - "default [C#]"

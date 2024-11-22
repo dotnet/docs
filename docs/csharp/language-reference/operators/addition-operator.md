@@ -52,13 +52,13 @@ An expression using the `+=` operator, such as
 x += y
 ```
 
-is equivalent to
+Is equivalent to
 
 ```csharp
 x = x + y
 ```
 
-except that `x` is only evaluated once.
+Except that `x` is only evaluated once.
 
 The following example demonstrates the usage of the `+=` operator:
 

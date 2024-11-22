@@ -587,7 +587,7 @@ Starting in .NET 9, you can customize the indentation character and size for <xr
 
 ::: zone-end
 
-::: zone pivot="dotnet-8-0, dotnet-7-0, dotnet-6-0"
+::: zone pivot="dotnet-8-0"
 
 `JsonTextWriter` includes the following settings, for which `Utf8JsonWriter` has no equivalent:
 

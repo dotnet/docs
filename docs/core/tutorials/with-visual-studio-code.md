@@ -5,6 +5,8 @@ ms.date: 09/12/2024
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
 
+::: zone pivot="dotnet-9-0,dotnet-8-0"
+
 This tutorial shows how to create and run a .NET console application by using Visual Studio Code.
 
 ## Prerequisites
@@ -98,3 +100,5 @@ In this tutorial, you created a .NET console application. In the next tutorial, 
 
 > [!div class="nextstepaction"]
 > [Debug a .NET console application using Visual Studio Code](debugging-with-visual-studio-code.md)
+
+::: zone-end

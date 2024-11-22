@@ -22,9 +22,9 @@ _.
 where `fun`, *parameter-list* and lambda arrow (`->`) is omitted and the `_.` is a part of *expression* where `_` replaces the parameter symbol.
 
 The following snippets are equivalent:
+
 `(fun x -> x.Property)`
 `_.Property`
-
 
 ## Remarks
 

@@ -8,14 +8,17 @@ ms.date: 11/21/2024
 
 # Native AOT support for iOS-like platforms
 
-Starting from .NET 8, Native AOT supports targeting iOS-like platforms. The term *iOS-like platforms* refers to Apple platforms that use similar APIs such as: iOS, MacCatalyst and tvOS.
-
-In the first release, the support was experimental, while in .NET 9 these platforms received full support with Native AOT.
+Starting from .NET 9, Native AOT supports targeting iOS-like platforms. The term *iOS-like platforms* refers to Apple platforms that use similar APIs such as: iOS, MacCatalyst and tvOS.
 
 Based on the use case, the support can be divided into:
 
-- support for applications and libraries without OS-specific API dependencies
 - support for applications and libraries referencing OS-specific APIs
+- support for applications and libraries without OS-specific API dependencies
+
+## Support for applications and libraries referencing OS-specific APIs
+
+This refers to .NET MAUI projects targeting OS-specific target frameworks (like: `net9.0-ios`).
+How Native AOT can be enabled for .NET MAUI apps, see [Native AOT deployment on iOS and Mac Catalyst](/dotnet/maui/deployment/nativeaot).
 
 ## Support for applications and libraries without OS-specific API dependencies
 
@@ -43,9 +46,3 @@ This refers to .NET projects targeting the general or non-OS-specific target fra
     ```
 
 For specifics of building and consuming native libraries on iOS-like platforms, see [How to create and consume custom frameworks with Native AOT for iOS-like platforms](./creating-and-consuming-custom-frameworks.md).
-
-## Support for applications and libraries referencing OS-specific APIs
-
-This refers to .NET MAUI projects targeting OS-specific target frameworks (like: `net9.0-ios`).
-
-How Native AOT can be enabled for .NET MAUI apps, see [Native AOT deployment on iOS and Mac Catalyst](/dotnet/maui/deployment/nativeaot).

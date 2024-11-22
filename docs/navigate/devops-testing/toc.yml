@@ -503,12 +503,6 @@ items:
             href: ../../core/deploying/native-aot/interop.md
           - name: Build native libraries
             href: ../../core/deploying/native-aot/libraries.md
-          - name: iOS-like platforms
-            items:
-              - name: Overview
-                href: ../../core/deploying/native-aot/ios-like-platforms/index.md
-              - name: Creating and consuming custom frameworks
-                href: ../../core/deploying/native-aot/ios-like-platforms/creating-and-consuming-custom-frameworks.md
           - name: Cross-compilation
             href: ../../core/deploying/native-aot/cross-compile.md
           - name: Security
@@ -533,6 +527,12 @@ items:
                 href: ../../core/deploying/native-aot/warnings/il3055.md
               - name: IL3056
                 href: ../../core/deploying/native-aot/warnings/il3056.md
+          - name: iOS-like platforms
+            items:
+              - name: Overview
+                href: ../../core/deploying/native-aot/ios-like-platforms/index.md
+              - name: Creating and consuming custom frameworks
+                href: ../../core/deploying/native-aot/ios-like-platforms/creating-and-consuming-custom-frameworks.md
       - name: Runtime package store
         href: ../../core/deploying/runtime-store.md
       - name: Runtime Identifier (RID) catalog

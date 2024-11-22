@@ -1,0 +1,132 @@
+---
+title: Testing ASP.NET Core services and web apps
+description: .NET Microservices Architecture for Containerized .NET Applications | Testing ASP.NET Core services and web apps
+ms.date: 10/23/2024
+---
+
+# Testing ASP.NET Core services and web apps
+
+[!INCLUDE [download-alert](../includes/download-alert.md)]
+
+Controllers are a central part of any ASP.NET Core API microservice. As such, you should have confidence they behave as intended for your application. Automated tests can provide you with this confidence and can detect errors before they reach production.
+
+You need to test how the controller behaves based on valid or invalid inputs, and test controller responses based on the result of the business operation it performs. You should have these types of tests for your microservices:
+
+- **Unit tests**: These tests ensure that individual components of the application work as expected. Assertions test the component API.
+
+- **Integration tests**: These tests ensure that component interactions work as expected against external artifacts like databases. Assertions can test the component API, user interface, or the side effects of actions like database I/O, logging, and so on.
+
+- **Functional tests**: These tests ensure that the application works as expected from the user's perspective.
+
+- **Service tests**: These tests check that end-to-end service use cases, including testing multiple services at the same time, are working. For this type of testing, you need to prepare the environment first. In this case, it means starting the services, for example, by using the `docker-compose up` command.
+
+## Implementing unit tests for ASP.NET Core web APIs
+
+Unit testing involves testing a small part of an application in isolation from its infrastructure and dependencies. When you unit test controller logic, only the content of a single action or method is tested, not the behavior of its dependencies or of the framework itself. Unit tests do not detect issues in the interaction between components — that is the purpose of integration testing.
+
+As you unit test your controller actions, make sure you focus only on their behavior. A controller unit test avoids things like filters, routing, or model binding (the mapping of request data to a view model or DTO). Because they focus on testing just one thing, unit tests are generally simple to write and quick to run. A well-written set of unit tests can be run frequently without much overhead. If a unit test fails, it's usually quick to identify and fix the problem.
+
+Unit tests are implemented based on test frameworks like **xUnit.net**, **MSTest**, **Moq**, or **NUnit**. In this example, we are using xUnit.
+
+When you write a unit test for a Web API controller, you instantiate the controller class directly using the new keyword in C\#, so that the test will run as fast as possible. The following example shows how to do this when using [xUnit](https://xunit.net/) as the test framework.
+
+```csharp
+[Fact]
+public async Task Get_order_detail_success()
+{
+    //Arrange
+    var fakeOrderId = "12";
+    var fakeOrder = GetFakeOrder();
+
+    //...
+
+    //Act
+    var orderController = new OrderController(
+        _orderServiceMock.Object,
+        _basketServiceMock.Object,
+        _identityParserMock.Object);
+
+    orderController.ControllerContext.HttpContext = _contextMock.Object;
+    var actionResult = await orderController.Detail(fakeOrderId);
+
+    //Assert
+    var viewResult = Assert.IsType<ViewResult>(actionResult);
+    Assert.IsAssignableFrom<Order>(viewResult.ViewData.Model);
+}
+```
+
+## Implementing integration and functional tests for each microservice
+
+As noted, integration tests and functional tests have different purposes and goals. However, the way you implement both when testing ASP.NET Core controllers is similar, so in this section we concentrate on integration tests.
+
+Integration testing ensures that an application's components function correctly when assembled. ASP.NET Core supports integration testing using unit test frameworks and a built-in test web host that can be used to handle requests without network overhead.
+
+Unlike unit tests, integration tests frequently involve application infrastructure concerns, such as databases, file systems, network resources, or web requests and responses. Unit tests use fakes or mock objects in place of these concerns but the purpose of integration tests is to confirm that the system works as expected with these systems, so for integration testing you do not use fakes or mock objects. Instead, you include the infrastructure, like databases or remote services.
+
+Because integration tests exercise larger segments of code than unit tests, and because integration tests rely on infrastructure elements, they tend to be orders of magnitude slower than unit tests. Thus, it is a good idea to limit how many integration tests you write and run simultaneously.
+
+ASP.NET Core includes a built-in test web host that can be used to handle HTTP requests without network overhead, so you can run those tests faster than when using a real web host. The test web host (TestServer) is available in the NuGet package [Microsoft.AspNetCore.TestHost](https://www.nuget.org/packages/Microsoft.AspNetCore.TestHost). It can be added to integration test projects and used to host ASP.NET Core applications.
+
+As you can see in the following code, when you create integration tests for ASP.NET Core controllers, you instantiate the controllers through the test host. This functionality is comparable to an HTTP request, but it runs faster.
+
+```csharp
+public class PrimeWebDefaultRequestShould
+{
+    private readonly TestServer _server;
+    private readonly HttpClient _client;
+
+    public PrimeWebDefaultRequestShould()
+    {
+        // Arrange
+        _server = new TestServer(new WebHostBuilder()
+           .UseStartup<Startup>());
+        _client = _server.CreateClient();
+    }
+
+    [Fact]
+    public async Task ReturnHelloWorld()
+    {
+        // Act
+        var response = await _client.GetAsync("/");
+        response.EnsureSuccessStatusCode();
+        var responseString = await response.Content.ReadAsStringAsync();
+        // Assert
+        Assert.Equal("Hello World!", responseString);
+    }
+}
+```
+
+#### Additional resources
+
+- **Steve Smith. Testing controllers** (ASP.NET Core) \
+    [/aspnet/core/mvc/controllers/testing](/aspnet/core/mvc/controllers/testing)
+
+- **Steve Smith. Integration testing** (ASP.NET Core) \
+    [/aspnet/core/test/integration-tests](/aspnet/core/test/integration-tests)
+
+- **Unit testing in .NET using dotnet test** \
+    [/dotnet/core/testing/unit-testing-with-dotnet-test](/dotnet/core/testing/unit-testing-with-dotnet-test)
+
+- **xUnit.net**. Official site. \
+    <https://xunit.net/>
+
+- **Unit test basics.** \
+    [/visualstudio/test/unit-test-basics](/visualstudio/test/unit-test-basics)
+
+- **Moq**. GitHub repo. \
+    <https://github.com/moq/moq>
+
+- **NUnit**. Official site. \
+    <https://nunit.org/>
+
+## Implementing service tests on a multi-container application
+
+As noted earlier, when you test multi-container applications, all the microservices need to be running within the Docker host or container cluster. End-to-end service tests that include multiple operations involving several microservices require you to deploy and start the whole application in the Docker host by running `docker-compose up`, or a comparable mechanism if you are using an orchestrator. Once the whole application and all its services are running, you can execute end-to-end integration and functional tests.
+
+There are a few approaches you can use. In the _docker-compose.yml_ file that you use to deploy the application at the solution level, you can expand the entry point to use [dotnet test](/dotnet/core/tools/dotnet-test). You can also use another compose file that would run your tests in the image you are targeting. By using another compose file for integration tests that includes your microservices and databases on containers, you can make sure that the related data is always reset to its original state before running the tests.
+
+Once the compose application is up and running, you can take advantage of breakpoints and exceptions if you are running Visual Studio. Or you can run the integration tests automatically in your CI pipeline in Azure DevOps Services or any other CI/CD system that supports Docker containers.
+
+> [!div class="step-by-step"]
+> [Previous](challenges-of-distributed-app-testing.md)
+> [Next](how-aspire-helps.md)

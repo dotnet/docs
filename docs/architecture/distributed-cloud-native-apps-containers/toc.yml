@@ -1,0 +1,154 @@
+items:
+  - name: Architecture for distributed cloud-native apps with containers
+    href: index.md
+    items:
+      - name: Introduction to cloud-native development
+        items:
+          - name: Introduction to cloud-native applications
+            href: introduction-to-cloud-native-development/introduction-to-cloud-native-applications.md
+          - name: What is cloud-native?
+            href: introduction-to-cloud-native-development/what-is-cloud-native.md
+          - name: Candidate apps for cloud-native
+            href: introduction-to-cloud-native-development/candidate-apps-for-cloud-native.md
+      - name: Introduction to containers and Docker
+        items:
+          - name: What are containers?
+            href: introduction-containers-docker/what-are-containers.md
+          - name: What is Docker?
+            href: introduction-containers-docker/what-is-docker.md
+          - name: Container terminology
+            href: introduction-containers-docker/container-terminology.md
+          - name: Official .NET container images and SDK tooling
+            href: introduction-containers-docker/official-container-images-tooling.md
+      - name: Introduction to .NET Aspire
+        items:
+          - name: .NET Aspire overview
+            href: introduction-dotnet-aspire/dotnet-aspire-overview.md
+          - name: Orchestration
+            href: introduction-dotnet-aspire/orchestration.md
+          - name: Service discovery
+            href: introduction-dotnet-aspire/service-discovery.md
+          - name: .NET Aspire integrations
+            href: introduction-dotnet-aspire/integrations.md
+          - name: Observability and dashboard
+            href: introduction-dotnet-aspire/observability-and-dashboard.md
+      - name: Architecting distributed cloud-native apps
+        items:
+          - name: Why choose distributed architecture?
+            href: architecting-distributed-cloud-native-applications/why-choose-distributed-architecture.md
+          - name: Different types of distributed architecture
+            href: architecting-distributed-cloud-native-applications/different-distributed-architectures.md
+      - name: Communication patterns
+        items:
+          - name: Communication patterns
+            href: communication-patterns/communication-patterns.md
+          - name: How to choose the right communication pattern
+            href: communication-patterns/when-to-use-each-approach.md
+      - name: Service-to-service communication patterns
+        items:
+          - name: Introduction
+            href: service-to-service-communication-patterns/introduction.md
+          - name: Service discovery
+            href: service-to-service-communication-patterns/service-discovery.md
+          - name: Service-to-service communication
+            href: service-to-service-communication-patterns/service-to-service-communication.md
+          - name: gRPC
+            href: service-to-service-communication-patterns/grpc.md
+          - name: Service Mesh communication infrastructure
+            href: service-to-service-communication-patterns/service-mesh-communication-infrastructure.md
+      - name: Event-based communication patterns
+        items:
+          - name: Implementing event-based communication between microservices
+            href: event-based-communication-patterns/integration-event-based-microservice-communications.md
+          - name: Implementing an event bus with RabbitMQ
+            href: event-based-communication-patterns/rabbitmq-event-bus-development-test-environment.md
+          - name: Implementing background tasks in microservices
+            href: event-based-communication-patterns/background-tasks-with-ihostedservice.md
+          - name: Subscribing to events
+            href: event-based-communication-patterns/subscribe-events.md
+      - name: Data patterns
+        items:
+          - name: Data patterns for distributed applications
+            href: data-patterns/distributed-data.md
+          - name: Relational and NoSQL data
+            href: data-patterns/relational-vs-nosql-data.md
+          - name: Caching in a cloud-native application
+            href: data-patterns/azure-caching.md
+          - name: Creating a simple data-driven CRUD microservice
+            href: data-patterns/data-driven-crud-microservice.md
+      - name: Resiliency
+        items:
+          - name: Cloud-native resiliency
+            href: cloud-native-resiliency/cloud-native-resiliency.md
+          - name: Application resiliency patterns
+            href: cloud-native-resiliency/application-resiliency-patterns.md
+          - name: Azure platform resiliency
+            href: cloud-native-resiliency/cloud-infrastructure-resiliency-azure.md
+          - name: Resilient communication
+            href: cloud-native-resiliency/resilient-communication.md
+          - name: Add resiliency with .NET
+            href: cloud-native-resiliency/resiliency-with-aspire.md
+      - name: Monitoring, diagnostics, and health
+        items:
+          - name: Observability patterns
+            href: monitoring-health/observability-patterns.md
+          - name: Using OpenTelemetry in your .NET app
+            href: monitoring-health/open-telemetry-grafana-prometheus.md
+          - name: Health checks and probes
+            href: monitoring-health/health-checks-probes.md
+          - name: The .NET Aspire dashboard
+            href: monitoring-health/aspire-dashboard.md
+          - name: Observability platforms
+            href: monitoring-health/observability-platforms.md
+          - name: Azure Monitor
+            href: monitoring-health/azure-monitor.md
+      - name: Cloud-native security
+        items:
+          - name: Security in cloud-native applications
+            href: cloud-native-identity/cloud-native-security.md
+          - name: Cloud-native identity
+            href: cloud-native-identity/identity.md
+          - name: Cloud security concepts
+            href: cloud-native-identity/security-concepts.md
+          - name: Code security
+            href: cloud-native-identity/code-security.md
+          - name: Code provenance
+            href: cloud-native-identity/code-provenance.md
+          - name: Azure security for cloud-native apps
+            href: cloud-native-identity/azure-security.md
+          - name: Authentication and authorization in cloud-native apps
+            href: cloud-native-identity/authentication-authorization.md
+          - name: Azure Entra ID
+            href: cloud-native-identity/azure-entra.md
+          - name: IdentityServer for cloud-native apps
+            href: cloud-native-identity/identity-server.md
+          - name: Keycloak for cloud-native apps
+            href: cloud-native-identity/keycloak.md
+      - name: Testing distributed apps
+        items:
+          - name: The challenges of distributed app testing
+            href: testing-distributed-apps/challenges-of-distributed-app-testing.md
+          - name: Testing ASP.NET Core services and web apps
+            href: testing-distributed-apps/test-aspnet-core-services-web-apps.md
+          - name: How .NET Aspire helps testing
+            href: testing-distributed-apps/how-aspire-helps.md
+      - name: API Gateways
+        items:
+          - name: Gateway patterns
+            href: api-gateways/gateway-patterns.md
+          - name: Reverse proxies with YARP
+            href: api-gateways/reverse-proxies-with-yarp.md
+      - name: Deploying distributed apps
+        items:
+          - name: Deploying distributed apps
+            href: deploying-distributed-apps/how-deployment-affects-your-architecture.md
+          - name: Development and production
+            href: deploying-distributed-apps/development-vs-production.md
+          - name: Deployment with or without .NET Aspire
+            href: deploying-distributed-apps/deploy-with-dotnet-aspire.md
+          - name: Deployment patterns
+            href: deploying-distributed-apps/deployment-patterns.md
+          - name: Distribution patterns
+            href: deploying-distributed-apps/distribution-patterns.md
+          - name: Deploying distributed apps with .NET Aspire
+            href: deploying-distributed-apps/dotnet-aspire.md

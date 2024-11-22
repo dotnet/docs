@@ -148,8 +148,8 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 
 [.NET Application Architecture](https://dotnet.microsoft.com/learn/dotnet/architecture-guides) gives you access to a set of e-books that provide guidance, best practices, and sample applications when using .NET to build:
 
-- [Microservices and Docker containers](../../architecture/microservices/index.md)
-- [Web applications with ASP.NET](../../architecture/modern-web-apps-azure/index.md)
+- [Microservices and Docker containers](https://dotnet.microsoft.com/download/e-book/microservices-architecture/pdf)
+- [Web applications with ASP.NET](https://dotnet.microsoft.com/en-us/download/e-book/aspnet/pdf)
 - [Mobile applications with Xamarin](/xamarin/xamarin-forms/enterprise-application-patterns/index)
 - [Applications that are deployed to the Cloud with Azure](/azure/architecture/reference-architectures/index)
 

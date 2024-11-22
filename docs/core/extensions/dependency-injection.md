@@ -3,13 +3,13 @@ title: Dependency injection
 description: Learn how to use dependency injection within your .NET apps. Discover how to registration services, define service lifetimes, and express dependencies in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/18/2024
+ms.date: 10/23/2024
 ms.topic: overview
 ---
 
 # .NET dependency injection
 
-.NET supports the dependency injection (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](../../architecture/modern-web-apps-azure/architectural-principles.md#dependency-inversion) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
+.NET supports the dependency injection (DI) software design pattern, which is a technique for achieving [Inversion of Control (IoC)](https://dotnet.microsoft.com/en-us/download/e-book/aspnet/pdf) between classes and their dependencies. Dependency injection in .NET is a built-in part of the framework, along with configuration, logging, and the options pattern.
 
 A *dependency* is an object that another object depends on. Examine the following `MessageWriter` class with a `Write` method that other classes depend on:
 
@@ -451,6 +451,5 @@ public class ExampleService
 - [Dependency injection guidelines](dependency-injection-guidelines.md)
 - [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection)
 - [NDC Conference Patterns for DI app development](https://www.youtube.com/watch?v=x-C-CNBVTaY)
-- [Explicit dependencies principle](../../architecture/modern-web-apps-azure/architectural-principles.md#explicit-dependencies)
 - [Inversion of control containers and the dependency injection pattern (Martin Fowler)](https://www.martinfowler.com/articles/injection.html)
 - DI bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo

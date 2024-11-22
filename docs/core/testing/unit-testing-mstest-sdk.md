@@ -254,6 +254,14 @@ Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 +    arguments: '--configuration Release -p:TestingPlatformCommandLineArguments="--report-trx --results-directory $(Agent.TempDirectory) --coverage"'
 ```
 
+## Known limitations
+
+The MSTest SDK has limited integration with NuGet meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages won't work as expected. See this issue for more details: [NuGet#13127](https://github.com/NuGet/Home/issues/13127).
+
+> [!NOTE]
+> This limitation is not specific to MSTest SDK but to any MSBuild SDK.
+> Dependabot will handle updating the version in the global.json file, but you will need to manually update the version in the project file.
+
 ## See also
 
 - [Test project&ndash;related properties](../project-sdk/msbuild-props.md#test-projectrelated-properties)

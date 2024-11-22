@@ -19,7 +19,7 @@ Or using the `_.Property` shorthand notation:
 _.
 ```
 
-where `fun`, *parameter-list* and lambda arrow (`->`) is omitted and the `_.` is a part of *expression* where `_` replaces the parameter symbol.
+`fun`, *parameter-list*, and lambda arrow (`->`) are omitted, and the `_.` is a part of *expression* where `_` replaces the parameter symbol.
 
 The following snippets are equivalent:
 

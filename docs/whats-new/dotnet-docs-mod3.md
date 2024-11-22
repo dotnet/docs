@@ -174,13 +174,13 @@ This article lists some of the major changes to docs for .NET 9.
   - Add C# 13 small fixes
 - [where (generic type constraint) (C# Reference)](../csharp/language-reference/keywords/where-generic-type-constraint.md) - Add reference and conceptual content for `ref struct` allowed in interfaces
 - [yield statement - provide the next element](../csharp/language-reference/statements/yield.md) - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods
-- [ZZZ - Title not found in: #42177](../csharp/language-reference/compiler-messages/cs8795.md) - Add conceptual content for partial properties
-- [ZZZ - Title not found in: #42177](../csharp/misc/cs0501.md) - Add conceptual content for partial properties
-- [ZZZ - Title not found in: #42177](../csharp/misc/cs0751.md) - Add conceptual content for partial properties
-- [ZZZ - Title not found in: #41614](../csharp/language-reference/compiler-messages/cs4013.md) - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods
-- [ZZZ - Title not found in: #41614](../csharp/language-reference/compiler-messages/cs8176.md) - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods
-- [ZZZ - Title not found in: #41614](../csharp/misc/cs1629.md) - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods
-- [ZZZ - Title not found in: #40978](../csharp/misc/cs0225.md) - Add params collections
+- [ZZZ - Title not found in: #42177](/dotnet/csharp/language-reference/compiler-messages/partial-types) - Add conceptual content for partial properties
+- [ZZZ - Title not found in: #42177](../csharp/language-reference/compiler-messages/partial-declarations.md) - Add conceptual content for partial properties
+- [ZZZ - Title not found in: #42177](../csharp/language-reference/compiler-messages/partial-declarations.md) - Add conceptual content for partial properties
+- [ZZZ - Title not found in: #41614](../csharp/language-reference/compiler-messages/iterator-yield.md) - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods
+- [ZZZ - Title not found in: #41614](../csharp/language-reference/compiler-messages/iterator-yield.md) - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods
+- [ZZZ - Title not found in: #41614](../csharp/language-reference/compiler-messages/iterator-yield.md) - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods
+- [ZZZ - Title not found in: #40978](../csharp/language-reference/compiler-messages/params-arrays.md) - Add params collections
 
 ## .NET Framework
 

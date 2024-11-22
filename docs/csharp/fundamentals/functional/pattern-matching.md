@@ -110,6 +110,6 @@ This article provided a tour of the kinds of code you can write with pattern mat
 ## See also
 
 - [Use pattern matching to avoid 'is' check followed by a cast (style rules IDE0020 and IDE0038)](../../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md)
-- [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)
+- [Exploration: Use pattern matching to build your class behavior for better code](../../tutorials/patterns-objects.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../tutorials/pattern-matching.md)
 - [Reference: Pattern matching](../../language-reference/operators/patterns.md)

@@ -133,15 +133,7 @@ C# 9 includes new pattern matching improvements:
 - ***Negated `not` patterns*** require that a pattern doesn't match
 - ***Relational patterns*** require the input be less than, greater than, less than or equal, or greater than or equal to a given constant
 
-These patterns enrich the syntax for patterns. Consider these examples:
-
-:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterPattern":::
-
-With optional parentheses to make it clear that `and` has higher precedence than `or`:
-
-:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterOrSeparatorPattern":::
-
-One of the most common uses is a new syntax for a null check:
+These patterns enrich the syntax for patterns. One of the most common uses is a new syntax for a null check:
 
 ```csharp
 if (e is not null)

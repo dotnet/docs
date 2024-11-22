@@ -583,7 +583,8 @@ The `InstrumentAdvice` API may be used by instrumentation authors to specify the
 set of recommended default bucket boundaries for a given Histogram. The tool or
 library collecting the Histogram data can then choose to use those values when
 configuring aggregation leading to a more seamless onboarding experience for
-users. This is supported in the OpenTelemetry .NET SDK as of version `1.10.0`.
+users. This is supported in the [OpenTelemetry .NET SDK as of version
+1.10.0](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/docs/metrics/customizing-the-sdk#configuring-the-aggregation-of-a-histogram).
 
 > [!IMPORTANT]
 > In general more buckets will lead to more precise data for a given Histogram

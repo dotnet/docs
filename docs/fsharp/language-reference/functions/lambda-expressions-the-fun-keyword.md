@@ -13,7 +13,7 @@ The `fun` keyword is used to define a lambda expression, that is, an anonymous f
 fun parameter-list -> expression
 ```
 
-or using the _.Property shorthand notation:
+Or using the `_.Property` shorthand notation:
 
 ```fsharp
 _.

@@ -40,6 +40,8 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: .NET 9 all up
+      url: dotnet-docs-mod3.md
     - text: October 2024
       url: dotnet-docs-mod1.md
     - text: September 2024
@@ -50,10 +52,10 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
-    - text: What's new in C# 12
-      url: ../csharp/whats-new/csharp-12.md
-    - text: What's new in F# 8
-      url: ../fsharp/whats-new/fsharp-8.md
+    - text: What's new in C# 13
+      url: ../csharp/whats-new/csharp-13.md
+    - text: What's new in F# 9
+      url: ../fsharp/whats-new/fsharp-9.md
     - text: What's new for Visual Basic
       url: ../visual-basic/whats-new/index.md
 - title: Contribute to docs
@@ -98,8 +100,8 @@ landingContent:
     links:
     - text: .NET
       url: https://github.com/dotnet/core/blob/main/release-notes/README.md
-    - text: ASP.NET Core 8.0
-      url: /aspnet/core/release-notes/aspnetcore-8.0
+    - text: ASP.NET Core 9.0
+      url: /aspnet/core/release-notes/aspnetcore-9.0
     - text: Visual Studio 2022
       url: /visualstudio/releases/2022/release-notes
     - text: Visual Studio Code

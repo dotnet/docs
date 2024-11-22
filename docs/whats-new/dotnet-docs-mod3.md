@@ -1,13 +1,13 @@
 ---
-title: ".NET docs: What's new for 2023-11-09 - 2024-11-12"
-description: "What's new in the .NET docs for 2023-11-09 - 2024-11-12."
+title: ".NET docs: What's new for .NET 9"
+description: "What's new in the .NET docs for .NET 9."
 ms.custom: October-2024
 ms.date: 11/11/2024
 ---
 
-# .NET docs: What's new for 2023-11-09 - 2024-11-12
+# .NET docs: What's new for .NET 9
 
-Welcome to what's new in the .NET docs for 2023-11-09 - 2024-11-12. This article lists some of the major changes to docs during this period.
+This article lists some of the major changes to docs for .NET 9.
 
 ## .NET security
 
@@ -19,6 +19,7 @@ Welcome to what's new in the .NET docs for 2023-11-09 - 2024-11-12. This article
 
 ### New articles
 
+- [Breaking changes in .NET 9](../core/compatibility/9.0.md)
 - [`dotnet workload` commands output change](../core/compatibility/sdk/9.0/dotnet-workload-output.md)
 - [`GetXmlNamespaceMaps` type change](../core/compatibility/wpf/9.0/xml-namespace-maps.md)
 - [`installer` repo version no longer included in `productcommits` files](../core/compatibility/sdk/9.0/productcommits-versions.md)
@@ -44,25 +45,6 @@ Welcome to what's new in the .NET docs for 2023-11-09 - 2024-11-12. This article
 - [Terminal logger is default](../core/compatibility/sdk/9.0/terminal-logger.md)
 - [Warning emitted for .NET Standard 1.x targets](../core/compatibility/sdk/9.0/netstandard-warning.md)
 
-### Updated articles
-
-- [Breaking changes in .NET 9](../core/compatibility/9.0.md)
-  - Breaking change for floating point to int conversions
-  - BinaryFormatter removal
-  - Deprecated MonoVM packages
-  - Core libraries breaking changes for Preview 6
-  - PictureBox breaking change
-  - Two SDK breaking changes
-  - Breaking change for ShouldGenerateNewKey
-  - XmlNamespacesMap breaking change
-  - InMemoryDirectoryInfo breaking change
-  - Inline array size limit breaking change
-  - .NET 9 Preview 1 breaking changes
-  - WinForms breaking changes for .NET 9 Preview 1
-  - .NET SDK breaking changes
-  - Update diagnostic docs for SYSLIB0009
-- [Partial and zero-byte reads in DeflateStream, GZipStream, and CryptoStream](../core/compatibility/core-libraries/6.0/partial-byte-reads-in-streams.md) - Add CA2022 to docs
-
 ## .NET fundamentals
 
 ### New articles
@@ -73,22 +55,14 @@ Welcome to what's new in the .NET docs for 2023-11-09 - 2024-11-12. This article
 
 ### Updated articles
 
-- [.NET Standard](../standard/net-standard.md) - Two SDK breaking changes
-- [CA1872: Prefer 'Convert.ToHexString' and 'Convert.ToHexStringLower' over call chains based on 'BitConverter.ToString'](../fundamentals/code-analysis/quality-rules/ca1872.md) - Add CA2022 to docs
-- [CA2264: Do not pass a non-nullable value to 'ArgumentNullException.ThrowIfNull'](../fundamentals/code-analysis/quality-rules/ca2264.md) - Add CA2022 to docs
+- [.NET Standard](../standard/net-standard.md)
 - [Code quality rules](../fundamentals/code-analysis/quality-rules/index.md)
-  - Add CA2265 docs
-  - Add CA2022 to docs
 - [Configuration in .NET](../core/extensions/configuration.md) - Add content for config source gen with interceptors
 - [Obsolete features in .NET 5+](../fundamentals/syslib-diagnostics/obsoletions-overview.md) - Update diagnostic docs for SYSLIB0009
-- [Overview of .NET source code analysis](../fundamentals/code-analysis/overview.md) - Add CA2022 to docs
+- [Overview of .NET source code analysis](../fundamentals/code-analysis/overview.md)
 - [Synchronizing data for multithreading](../standard/threading/synchronizing-data-for-multithreading.md) - Add language reference for `lock`
 - [SYSLIB0009: AuthenticationManager is not supported](../fundamentals/syslib-diagnostics/syslib0009.md) - Update diagnostic docs for SYSLIB0009
-- [Usage rules](../fundamentals/code-analysis/quality-rules/usage-warnings.md) - Add CA2265 docs
-- [What's new in the SDK and tooling for .NET 8](../core/whats-new/dotnet-8/sdk.md) - Add CA2022 to docs
 - [What's new in the SDK and tooling for .NET 9](../core/whats-new/dotnet-9/sdk.md)
-  - Add CA2265 docs
-  - Add CA2022 to docs
 
 ## C# language
 
@@ -214,4 +188,3 @@ Welcome to what's new in the .NET docs for 2023-11-09 - 2024-11-12. This article
 
 - [Add Business Logic By Using Partial Methods](../framework/data/adonet/sql/linq/adding-business-logic-by-using-partial-methods.md) - Add conceptual content for partial properties
 - [dangerousThreadingAPI MDA](../framework/debug-trace-profile/dangerousthreadingapi-mda.md) - Add language reference for `lock`
-

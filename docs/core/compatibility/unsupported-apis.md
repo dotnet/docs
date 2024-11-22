@@ -123,7 +123,7 @@ This article organizes the affected APIs by namespace.
 
 | Member                                                            | Platforms that throw |
 |-------------------------------------------------------------------|----------------------|
-| <xref:System.Net.AuthenticationManager?displayProperty=fullName>* | All                  |
+| <xref:System.Net.AuthenticationManager?displayProperty=fullName>\* | All                  |
 | <xref:System.Net.AuthenticationManager.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)?displayProperty=nameWithType> | All |
 | <xref:System.Net.AuthenticationManager.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)?displayProperty=nameWithType> | All |
 | <xref:System.Net.FileWebRequest.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)> | All |
@@ -206,7 +206,7 @@ This article organizes the affected APIs by namespace.
 | <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)?displayProperty=nameWithType>† | All |
 | <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas?displayProperty=nameWithType> | All |
 
-\* .NET 9 and later versions only
+\* .NET 9 and later versions.
 † .NET 8 only for all project types except Windows Forms and WPF.
 
 ## System.Security

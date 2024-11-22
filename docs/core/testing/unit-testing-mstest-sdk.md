@@ -8,7 +8,7 @@ ms.date: 02/13/2024
 
 # MSTest SDK overview
 
-Introduced in .NET 9, [MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk) is a [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps. It's possible to build a MSTest app without this SDK, however, the MSTest SDK is:
+[MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk) is a [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps. It's possible to build a MSTest app without this SDK, however, the MSTest SDK is:
 
 * Tailored towards providing a first-class experience for testing with MSTest.
 * The recommended target for most users.

@@ -31,6 +31,9 @@ builder.Services.AddAzureClients(clientBuilder =>
 #region snippet_DacExcludes
 builder.Services.AddAzureClients(clientBuilder =>
 {
+    clientBuilder.AddBlobServiceClient(
+        new Uri("https://<account-name>.blob.core.windows.net"));
+
     clientBuilder.UseCredential(new DefaultAzureCredential(
         new DefaultAzureCredentialOptions
         {
@@ -44,6 +47,9 @@ builder.Services.AddAzureClients(clientBuilder =>
 #region snippet_Ctc
 builder.Services.AddAzureClients(clientBuilder =>
 {
+    clientBuilder.AddBlobServiceClient(
+        new Uri("https://<account-name>.blob.core.windows.net"));
+
     clientBuilder.UseCredential(new ChainedTokenCredential(
         new ManagedIdentityCredential(clientId: userAssignedClientId),
         new VisualStudioCredential()));

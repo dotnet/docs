@@ -180,8 +180,6 @@ items:
       href: whats-new/tutorials/static-virtual-interface-members.md
     - name: Explore patterns in objects
       href: whats-new/tutorials/patterns-objects.md
-    - name: Write a custom string interpolation handler
-      href: whats-new/tutorials/interpolated-string-handler.md
 - name: Tutorials
   items:
   - name: Explore record types
@@ -403,6 +401,8 @@ items:
       href: advanced-topics/performance/index.md
     - name: Tutorial - reduce allocations
       href: advanced-topics/performance/ref-tutorial.md
+    - name: Tutorial - Write a custom string interpolation handler
+      href: advanced-topics/performance/interpolated-string-handler.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
   - name: The .NET Compiler Platform SDK (Roslyn APIs) overview

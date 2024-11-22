@@ -94,7 +94,7 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 - Install version 2.0 of the SPA templates for ASP.NET Core from a custom NuGet source using interactive mode:
 
   ```dotnetcli
-  dotnet new --install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0 --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
+  dotnet new install Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0 --add-source "https://api.my-custom-nuget.com/v3/index.json" --interactive
   ```
 
 ## See also

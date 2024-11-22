@@ -6,7 +6,7 @@ zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Publish a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run an application. To deploy the files, copy them to the target machine.
 
@@ -32,7 +32,7 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
    dotnet publish
    ```
 
-   The default build configuration is *Release*, which is appropriate for a deployed site running in producction. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
+   The default build configuration is *Release*, which is appropriate for a deployed site running in production. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
 
    The command output is similar to the following example:
 

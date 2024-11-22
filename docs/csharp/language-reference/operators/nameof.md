@@ -26,7 +26,7 @@ Beginning with C# 11, you can use a `nameof` expression with a method parameter 
 
 A `nameof` expression with a parameter is useful when you use the [nullable analysis attributes](../attributes/nullable-analysis.md) or the [CallerArgumentExpression attribute](../attributes/caller-information.md#argument-expressions).
 
-When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` character isn't the part of a name, as the following example shows:
+When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` character isn't part of the name, as the following example shows:
 
 [!code-csharp-interactive[nameof verbatim](snippets/shared/NameOfOperator.cs#Verbatim)]
 

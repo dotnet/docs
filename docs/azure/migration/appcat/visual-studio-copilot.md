@@ -7,7 +7,7 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Use Copilot Conversational Assessment with the Azure Migrate application and code assessment tool.
+# Use Copilot Conversational Assessment with the Azure Migrate application and code assessment tool
 
 Azure Migrate application and code assessment for .NET integrates with the GitHub Copilot extension for Visual Studio. Together, they provide conversational analysis about your migration reports. GitHub Copilot can help you learn more about the overall results and specific issues and determine next steps. In this article, you learn how to use GitHub Copilot to analyze the results of a completed Azure migration report.
 

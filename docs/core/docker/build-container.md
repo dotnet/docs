@@ -4,7 +4,6 @@ description: In this tutorial, you learn how to containerize a .NET application 
 ms.date: 03/20/2024
 ms.topic: tutorial
 ms.custom: "mvc"
-zone_pivot_groups: dotnet-version-7-8
 #Customer intent: As a developer, I want to containerize my .NET app so that I can deploy it to the cloud.
 ---
 
@@ -30,22 +29,10 @@ You explore the Docker container build and deploy tasks for a .NET application. 
 
 Install the following prerequisites:
 
-:::zone pivot="dotnet-8-0"
-
 - [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0).\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop).
 - A temporary working folder for the *Dockerfile* and .NET example app. In this tutorial, the name *docker-working* is used as the working folder.
-
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-- [.NET 7+ SDK](https://dotnet.microsoft.com/download/dotnet/7.0).\
-If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
-- [Docker Community Edition](https://www.docker.com/products/docker-desktop).
-- A temporary working folder for the *Dockerfile* and .NET example app. In this tutorial, the name *docker-working* is used as the working folder.
-
-:::zone-end
 
 ## Create .NET app
 
@@ -97,16 +84,7 @@ Console.WriteLine("Hello World!");
 
 Replace the file with the following code that counts numbers every second:
 
-:::zone pivot="dotnet-8-0"
-
 :::code source="snippets/8.0/App/Program.cs":::
-
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-:::code source="snippets/7.0/App/Program.cs":::
-
-:::zone-end
 
 Save the file and test the program again with `dotnet run`. Remember that this app runs indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it. Consider the following example output:
 
@@ -132,25 +110,11 @@ In order for the app to be suitable for an image creation it has to be built. Th
 dotnet publish -c Release
 ```
 
-:::zone pivot="dotnet-8-0"
-
 This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\App\bin\Release\net8.0\publish\`.
-
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\App\bin\Release\net7.0\publish\`.
-
-> [!NOTE]
-> Application publishing is needed for image creation but this is rather orchestrated by the _Dockerfile_. See [Create the Dockerfile](#create-the-dockerfile).
-
-:::zone-end
 
 #### [Windows](#tab/windows)
 
 From the *App* folder, get a directory listing of the publish folder to verify that the *DotNet.Docker.dll* file was created.
-
-:::zone pivot="dotnet-8-0"
 
 ```powershell
 dir .\bin\Release\net8.0\publish\
@@ -166,45 +130,14 @@ Mode                 LastWriteTime         Length Name
 -a---           9/22/2023  9:17 AM            353 DotNet.Docker.runtimeconfig.json
 ```
 
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-```powershell
-dir .\bin\Release\net7.0\publish\
-
-    Directory: C:\Users\default\App\bin\Release\net7.0\publish
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a---           2/13/2023  1:52 PM            431 DotNet.Docker.deps.json
--a---           2/13/2023  1:52 PM           6144 DotNet.Docker.dll
--a---           2/13/2023  1:52 PM         153600 DotNet.Docker.exe
--a---           2/13/2023  1:52 PM          11052 DotNet.Docker.pdb
--a---           2/13/2023  1:52 PM            253 DotNet.Docker.runtimeconfig.json
-```
-
-:::zone-end
-
 #### [Linux](#tab/linux)
 
 Use the `ls` command to get a directory listing and verify that the *DotNet.Docker.dll* file was created.
-
-:::zone pivot="dotnet-8-0"
 
 ```bash
 me@DESKTOP:/docker-working/app$ ls bin/Release/net8.0/publish
 DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
 ```
-
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-```bash
-me@DESKTOP:/docker-working/app$ ls bin/Release/net7.0/publish
-DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb  DotNet.Docker.runtimeconfig.json
-```
-
-:::zone-end
 
 ---
 
@@ -213,8 +146,6 @@ DotNet.Docker.deps.json  DotNet.Docker.dll  DotNet.Docker.exe  DotNet.Docker.pdb
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a text file named *Dockerfile* that doesn't have an extension.
 
 Create a file named *Dockerfile* in the directory containing the *.csproj* and open it in a text editor. This tutorial uses the ASP.NET Core runtime image (which contains the .NET runtime image) and corresponds with the .NET console application.
-
-:::zone pivot="dotnet-8-0"
 
 :::code language="docker" source="snippets/8.0/App/Dockerfile":::
 
@@ -250,42 +181,6 @@ Save the *Dockerfile* file. The directory structure of the working folder should
             └──...
 ```
 
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-:::code language="docker" source="snippets/7.0/App/Dockerfile":::
-
-> [!NOTE]
-> The ASP.NET Core runtime image is used intentionally here, although the `mcr.microsoft.com/dotnet/runtime:7.0` image could have been used.
-
-> [!TIP]
-> This _Dockerfile_ uses multi-stage builds, which optimizes the final size of the image by layering the build and leaving only required artifacts. For more information, see [Docker Docs: multi-stage builds](https://docs.docker.com/build/building/multi-stage/).
-
-The `FROM` keyword requires a fully qualified Docker container image name. The Microsoft Container Registry (MCR, mcr.microsoft.com) is a syndicate of Docker Hub—which hosts publicly accessible containers. The `dotnet` segment is the container repository, whereas the `sdk` or `aspnet` segment is the container image name. The image is tagged with `7.0`, which is used for versioning. Thus, `mcr.microsoft.com/dotnet/aspnet:7.0` is the .NET 7.0 runtime. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET 7.0 SDK and the base image referred to in the *Dockerfile* is tagged with **7.0**.
-
-Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
-
-```Directory
-📁 docker-working
-    └──📂 App
-        ├── Dockerfile
-        ├── DotNet.Docker.csproj
-        ├── Program.cs
-        ├──📂 bin
-        │   └──📂 Release
-        │       └──📂 net7.0
-        │           └──📂 publish
-        │               ├── DotNet.Docker.deps.json
-        │               ├── DotNet.Docker.exe
-        │               ├── DotNet.Docker.dll
-        │               ├── DotNet.Docker.pdb
-        │               └── DotNet.Docker.runtimeconfig.json
-        └──📁 obj
-            └──...
-```
-
-:::zone-end
-
 The `ENTRYPOINT` instruction sets `dotnet` as the host for the `DotNet.Docker.dll`. However, it's possible to instead define the `ENTRYPOINT` as the app executable itself, relying on the OS as the app host:
 
 ```dockerfile
@@ -302,8 +197,6 @@ docker build -t counter-image -f Dockerfile .
 
 Docker will process each line in the *Dockerfile*. The `.` in the `docker build` command sets the build context of the image. The `-f` switch is the path to the _Dockerfile_. This command builds the image and creates a local repository named **counter-image** that points to that image. After this command finishes, run `docker images` to see a list of images installed:
 
-:::zone pivot="dotnet-8-0"
-
 ```console
 docker images
 REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
@@ -318,26 +211,6 @@ WORKDIR /App
 COPY --from=build-env /App/out .
 ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
 ```
-
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-```console
-docker images
-REPOSITORY       TAG       IMAGE ID       CREATED          SIZE
-counter-image    latest    2f15637dc1f6   10 minutes ago   208MB
-```
-
-The `counter-image` repository is the name of the image. The `latest` tag is the tag that is used to identify the image. The `2f15637dc1f6` is the image ID. The `10 minutes ago` is the time the image was created. The `208MB` is the size of the image. The final steps of the _Dockerfile_ are to create a container from the image and run the app, copy the published app to the container, and define the entry point.
-
-```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
-WORKDIR /App
-COPY --from=build-env /App/out .
-ENTRYPOINT ["dotnet", "DotNet.Docker.dll"]
-```
-
-:::zone-end
 
 The `FROM` command specifies the base image and tag to use. The `WORKDIR` command changes the **current directory** inside of the container to *App*.
 
@@ -562,22 +435,10 @@ During this tutorial, you created containers and images. If you want, delete the
 
 Next, delete any images that you no longer want on your machine. Delete the image created by your *Dockerfile* and then delete the .NET image the *Dockerfile* was based on. You can use the **IMAGE ID** or the **REPOSITORY:TAG** formatted string.
 
-:::zone pivot="dotnet-8-0"
-
 ```console
 docker rmi counter-image:latest
 docker rmi mcr.microsoft.com/dotnet/aspnet:8.0
 ```
-
-:::zone-end
-:::zone pivot="dotnet-7-0"
-
-```console
-docker rmi counter-image:latest
-docker rmi mcr.microsoft.com/dotnet/aspnet:7.0
-```
-
-:::zone-end
 
 Use the `docker images` command to see a list of images installed.
 

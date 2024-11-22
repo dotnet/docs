@@ -27,6 +27,7 @@ Throwing an <xref:System.ArgumentOutOfRangeException> conforms to the behavior o
 The following table lists the affected properties and parameters:
 
 > [!div class="mx-tdBreakAll"]
+>
 > | Property | Parameter name | Version added |
 > |-|-|-|
 > | <xref:System.Windows.Forms.ListBox.IntegerCollection.Item(System.Int32)?displayProperty=nameWithType> | `index` | 5.0 Preview 5 |

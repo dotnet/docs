@@ -94,11 +94,13 @@ items:
                 href: networking/9.0/query-redaction-logs.md
           - name: SDK and MSBuild
             items:
+              - name: "`dotnet restore` audits transitive packages"
+                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
-              - name: "'dotnet workload' commands output change"
+              - name: "`dotnet workload` commands output change"
                 href: sdk/9.0/dotnet-workload-output.md
-              - name: "'installer' repo version no longer documented"
+              - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
               - name: Terminal logger is default
                 href: sdk/9.0/terminal-logger.md
@@ -1776,11 +1778,13 @@ items:
         items:
           - name: .NET 9
             items:
+              - name: "`dotnet restore` audits transitive packages"
+                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
-              - name: "'dotnet workload' commands output change"
+              - name: "`dotnet workload` commands output change"
                 href: sdk/9.0/dotnet-workload-output.md
-              - name: "'installer' repo version no longer documented"
+              - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
               - name: Terminal logger is default
                 href: sdk/9.0/terminal-logger.md
@@ -1982,6 +1986,10 @@ items:
             href: visualbasic.md
       - name: WCF Client
         items:
+          - name: "8.0"
+            items:
+              - name: Removal of WCF APIs with a `configurationName` parameter
+                href: wcf-client/8.0/configurationname-apis.md
           - name: "6.0"
             items:
               - name: .NET Standard 2.0 no longer supported

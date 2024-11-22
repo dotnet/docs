@@ -16,7 +16,7 @@ You can view the completed template in the [.NET Samples GitHub repository](http
 
 In this part of the series you'll learn how to:
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 > [!div class="checklist"]
 >

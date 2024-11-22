@@ -1,7 +1,7 @@
 ---
 title: "Partial Classes and Methods"
 description: Partial classes and methods in C# split the definition of a class, a struct, an interface, or a method over two or more source files.
-ms.date: 08/20/2024
+ms.date: 10/31/2024
 helpviewer_keywords:
   - "partial methods [C#]"
   - "partial classes [C#]"
@@ -116,6 +116,14 @@ The method and all calls to the method are removed at compile time when there's 
 
 Any method that doesn't conform to all those restrictions, including properties and indexers, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using automatically implemented properties. The compiler can't distinguish between an automatically implemented property, and the declaring declaration of a partial property.
 
+Beginning with C# 13, the implementing declaration for a partial property can use [field backed properties](../../language-reference/keywords/field.md) to define the implementing declaration. A field backed property provides a concise syntax where the `field` keyword accesses the compiler synthesized backing field for the property. For example, you could write the following:
+
+:::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="FieldProperty":::
+
+You can use `field` in either the `get` or `set` accessor, or both.
+
+[!INCLUDE[field-preview](../../includes/field-preview.md)]
+
 Partial methods enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 
 - **Template code**: The template reserves a method name and signature so that generated code can call the method. These methods follow the restrictions that enable a developer to decide whether to implement the method. If the method isn't implemented, then the compiler removes the method signature and all calls to the method. The calls to the method, including any results that would occur from evaluation of arguments in the calls, have no effect at run time. Therefore, any code in the partial class can freely use a partial method, even if the implementation isn't supplied. No compile-time or run-time errors result if the method is called but not implemented.
@@ -140,7 +148,7 @@ partial void OnNameChanged()
 
 ## C# Language Specification
 
-For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The additional features for partial methods are defined in the [feature specification](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md).
+For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The new features for partial methods are defined in the [feature specification](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md).
 
 ## See also
 

@@ -29,6 +29,9 @@ First, restore the project in Visual Studio, or `msbuild.exe`.
 By default the assets file is in the project's `obj\` directory, but you can find the location with `msbuild.exe path\to\project.proj -getProperty:ProjectAssetsFile`.
 Finally, run `dotnet nuget why path\to\project.assets.json SomePackage`.
 
+Starting with version 9.0.200, the command introduces support for runtime identifier (RID) specific packages by generating separate dependency trees for each RID and framework combination.
+For example, if a project targets `net9.0` with the `win-x64` RID, the command generates trees for `net9.0/win-x64` and `net9.0`.
+
 ## Arguments
 
 - **`PROJECT|SOLUTION`**

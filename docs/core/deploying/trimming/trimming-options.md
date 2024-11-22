@@ -5,7 +5,6 @@ author: sbomer
 ms.author: svbomer
 ms.date: 08/29/2024
 ms.topic: reference
-zone_pivot_groups: dotnet-version
 ---
 
 # Trimming options
@@ -25,23 +24,11 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-:::zone pivot="dotnet-8-0,dotnet-7-0"
-
 This setting enables trimming and trims all assemblies by default. In .NET 6, only assemblies that opted-in to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` (added in projects that set `<IsTrimmable>true</IsTrimmable>`) were trimmed by default. You can return to the previous behavior by using `<TrimMode>partial</TrimMode>`.
-
-:::zone-end
-
-:::zone pivot="dotnet-6-0"
-
-This setting trims any assemblies that have been configured for trimming. With `Microsoft.NET.Sdk` in .NET 6, this includes any assemblies with `[AssemblyMetadata("IsTrimmable", "True")]`, which is the case for the .NET runtime assemblies. In .NET 5, assemblies from the netcoreapp runtime pack are configured for trimming via `<IsTrimmable>` MSBuild metadata. Other SDKs might define different defaults.
-
-:::zone-end
 
 This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
 
 ## Trimming granularity
-
-:::zone pivot="dotnet-8-0,dotnet-7-0"
 
 Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
 
@@ -64,65 +51,6 @@ If you change the trim mode to `partial`, you can opt-in individual assemblies t
 ```
 
 This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
-
-:::zone-end
-
-:::zone pivot="dotnet-6-0"
-
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property affecting all trimmer input assemblies, or as metadata on an [individual assembly](#trimming-settings-for-individual-assemblies), which overrides the property setting.
-
-- `<TrimMode>link</TrimMode>`
-
-  Enable member-level trimming, which removes unused members from types. This is the default in .NET 6+.
-
-- `<TrimMode>copyused</TrimMode>`
-
-  Enable assembly-level trimming, which keeps an entire assembly if any part of it is used (in a statically understood way).
-
-Assemblies with `<IsTrimmable>true</IsTrimmable>` metadata but no explicit `TrimMode` will use the global `TrimMode`. The default `TrimMode` for `Microsoft.NET.Sdk` is `link` in .NET 6+, and `copyused` in previous versions.
-
-## Trim additional assemblies
-
-In .NET 6+, `PublishTrimmed` trims assemblies with the following assembly-level attribute:
-
-```csharp
-[AssemblyMetadata("IsTrimmable", "True")]
-```
-
-The framework libraries have this attribute. In .NET 6+, you can also opt in to trimming for a library without this attribute, specifying the assembly by name (without the `.dll` extension).
-
-## Trimming settings for individual assemblies
-
-When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` might have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
-
-```xml
-<Target Name="ConfigureTrimming"
-        BeforeTargets="PrepareForILLink">
-  <ItemGroup>
-    <ManagedAssemblyToLink Condition="'%(Filename)' == 'MyAssembly'">
-      <IsTrimmable>true</IsTrimmable>
-    </ManagedAssemblyToLink>
-  </ItemGroup>
-</Target>
-```
-
-You can also use this target to override the trimming behavior specified by the library author, by setting `<IsTrimmable>false</IsTrimmable>` for an assembly with `[AssemblyMetadata("IsTrimmable", "True"])`.
-
-Do not add or remove items from `ManagedAssemblyToLink`, because the SDK computes this set during publish and expects it not to change. The supported metadata is:
-
-- `<IsTrimmable>true</IsTrimmable>`
-
-  Control whether the given assembly is trimmed.
-
-- `<TrimMode>copyused</TrimMode>` or `<TrimMode>link</TrimMode>`
-
-  Control the [trimming granularity](#trimming-granularity) of this assembly. This metadata takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
-
-- `<TrimmerSingleWarn>True</TrimmerSingleWarn>`
-
-  Control whether to show [single warnings](#show-detailed-warnings) for this assembly.
-
-:::zone-end
 
 ## Root assemblies
 

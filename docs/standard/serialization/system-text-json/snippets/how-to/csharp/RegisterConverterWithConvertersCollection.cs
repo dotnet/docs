@@ -13,12 +13,9 @@ namespace SystemTextJsonSamples
             // <Serialize>
             var serializeOptions = new JsonSerializerOptions
             {
-                WriteIndented = true,
-                Converters =
-                {
-                    new DateTimeOffsetJsonConverter()
-                }
+                WriteIndented = true
             };
+			serializeOptions.Converters.Add(new DateTimeOffsetJsonConverter());
             
             jsonString = JsonSerializer.Serialize(weatherForecast, serializeOptions);
             // </Serialize>

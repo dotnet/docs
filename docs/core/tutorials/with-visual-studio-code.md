@@ -6,7 +6,7 @@ zone_pivot_groups: dotnet-version
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial shows how to create and run a .NET console application by using Visual Studio Code.
 

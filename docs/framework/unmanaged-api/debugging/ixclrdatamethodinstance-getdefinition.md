@@ -34,7 +34,7 @@ HRESULT GetDefinition(
 ## Parameters
 
 `methodDefinition`\
-[out] The methood definition which matches this method instance.
+[out] The method definition which matches this method instance.
 
 ## Remarks
 

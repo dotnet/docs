@@ -61,5 +61,5 @@ This structure lives inside the runtime and is not exposed through any headers o
 - [Debugging](index.md)
 - [IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)
 - [IXCLRDataMethodDefinition::StartEnumExtents Method](ixclrdatamethoddefinition-startenumextents.md)
-- [IXCLRDataMethdDefinition::EnumExtent Method](ixclrdatamethoddefinition-enumextent-method.md)
+- [IXCLRDataMethodDefinition::EnumExtent Method](ixclrdatamethoddefinition-enumextent-method.md)
 - [IXCLRDataMethodDefinition::EndEnumExtents Method](ixclrdatamethoddefinition-endenumextents-method.md)

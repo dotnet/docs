@@ -10,7 +10,7 @@ ms.date: 08/21/2024
 
 In this article, you'll learn some of the most common problems you can run into when using `IHttpClientFactory` to create `HttpClient` instances.
 
-`IHttpClientFactory` is a convenient way to set up multiple `HttpClient` configurations in the DI container, configure logging, set up resilience strategies, and more. `IHttpClientFactory` also incapsulates the lifetime management of `HttpClient` and `HttpMessageHandler` instances, to prevent problems like socket exhaustion and losing DNS changes. For an overview on how to use `IHttpClientFactory` in your .NET application, see [IHttpClientFactory with .NET](httpclient-factory.md).
+`IHttpClientFactory` is a convenient way to set up multiple `HttpClient` configurations in the DI container, configure logging, set up resilience strategies, and more. `IHttpClientFactory` also encapsulates the lifetime management of `HttpClient` and `HttpMessageHandler` instances, to prevent problems like socket exhaustion and losing DNS changes. For an overview on how to use `IHttpClientFactory` in your .NET application, see [IHttpClientFactory with .NET](httpclient-factory.md).
 
 Due to a complex nature of `IHttpClientFactory` integration with DI, you can hit some issues that might be hard to catch and troubleshoot. The scenarios listed in this article also contain recommendations, which you can apply proactively to avoid potential problems.
 

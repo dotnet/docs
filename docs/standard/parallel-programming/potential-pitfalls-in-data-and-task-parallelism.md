@@ -31,7 +31,7 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
   
 - You are performing an expensive computation on each order. (The operation shown in the example is not expensive.)  
   
-- The target system is known to have enough processors to handle the number of threads that will be produced by parallelizing the query on `cust.Orders`.  
+- The target system is known to have enough processors to handle the number of threads that will be produced by parallelizing the processing.  
   
  In all cases, the best way to determine the optimum query shape is to test and measure.  
   

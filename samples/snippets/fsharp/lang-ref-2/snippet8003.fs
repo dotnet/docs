@@ -1,5 +1,6 @@
 open System.Net
 open Microsoft.FSharp.Control.WebExtensions
+open System.Net.Http
 
 let urlList = [ "Microsoft.com", "http://www.microsoft.com/"
                 "MSDN", "http://msdn.microsoft.com/"
@@ -10,8 +11,8 @@ let fetchAsync(name, url:string) =
     async {
         try
             let uri = new System.Uri(url)
-            let webClient = new WebClient()
-            let! html = webClient.AsyncDownloadString(uri)
+            let httpClient = new HttpClient()
+            let! html = httpClient.GetStringAsync(uri) |> Async.AwaitTask
             printfn "Read %d characters for %s" html.Length name
         with
             | ex -> printfn "%s" (ex.Message);

@@ -10,7 +10,7 @@ ms.custom: vs-dotnet
 ---
 # Tutorial: Create a .NET class library using Visual Studio
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 In this tutorial, you create a simple class library that contains a single string-handling method.
 

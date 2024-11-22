@@ -389,8 +389,7 @@ In the preceding example, the declaration of the array shows it holds non-nullab
 
 ## See also
 
-- [Nullable reference types proposal](~/_csharplang/proposals/csharp-8.0/nullable-reference-types.md)
-- [Draft nullable reference types specification](~/_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md)
+- [Nullable reference types specification](~/_csharpstandard/standard/types.md#893-nullable-reference-types)
 - [Unconstrained type parameter annotations](~/_csharplang/proposals/csharp-9.0/unconstrained-type-parameter-annotations.md)
 - [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
 - [**Nullable** (C# Compiler option)](language-reference/compiler-options/language.md#nullable)

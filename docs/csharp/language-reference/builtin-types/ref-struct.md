@@ -60,7 +60,7 @@ The `Span<T>` type stores a reference through which it accesses the contiguous e
 
 You can define a disposable `ref struct`. To do that, ensure that a `ref struct` fits the [disposable pattern](~/_csharplang/proposals/csharp-8.0/using.md#pattern-based-using). That is, it has an instance `Dispose` method, which is accessible, parameterless and has a `void` return type. You can use the [using statement or declaration](../statements/using.md) with an instance of a disposable `ref struct`.
 
-Beginning with C# 13, you can also implement the <xref:System.IDisposable?displayName=nameWithType> on `ref struct` types. However, overload resolution prefers the disposable pattern to the interface method. The compiler resolves to an `IDisposable.Dispose` method only whan a suitable `Dispose` method isn't found.
+Beginning with C# 13, you can also implement the <xref:System.IDisposable?displayName=nameWithType> on `ref struct` types. However, overload resolution prefers the disposable pattern to the interface method. The compiler resolves to an `IDisposable.Dispose` method only when a suitable `Dispose` method isn't found.
 
 ## Restrictions for `ref struct` types that implement an interface
 

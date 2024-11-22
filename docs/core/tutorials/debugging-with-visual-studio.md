@@ -10,7 +10,7 @@ ms.custom: "vs-dotnet"
 ---
 # Tutorial: Debug a .NET console application using Visual Studio
 
-::: zone pivot="dotnet-8-0"
+::: zone pivot="dotnet-9-0,dotnet-8-0"
 
 This tutorial introduces the debugging tools available in Visual Studio.
 

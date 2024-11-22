@@ -104,7 +104,7 @@ Console.WriteLine(foo.EndsWith('\0'));
 > False
 > ```
 
-To avoid this behavior, use the `char` parameter overload or `StringComparison.Oridinal`.
+To avoid this behavior, use the `char` parameter overload or `StringComparison.Ordinal`.
 
 #### String.StartsWith
 

@@ -35,8 +35,8 @@ Provides methods for querying information about a process.
 | [StartEnumMethodInstancesByAddress](ixclrdataprocess-startenummethodinstancesbyaddress-method.md) | Provides a handle to enumerate the method instances of `AppDomain` starting at a given address. |
 | [EnumMethodInstanceByAddress](ixclrdataprocess-enummethodinstancebyaddress-method.md)             | Enumerates the method instances of this process starting at an address offset.                  |
 | [EndEnumMethodInstancesByAddress](ixclrdataprocess-endenummethodinstancesbyaddress-method.md)     | Releases the resources used by internal iterators used during instance enumeration.             |
-| [GetTaskByOSThreadID](ixclrdataprocess-gettaskbyosthreadid-method.md)                             | Gets a managed task by its OS thread id. |
-| [GetTaskByUniqueID](ixclrdataprocess-gettaskbyuniqueid-method.md)                                 | Gets a managed task by its unqiue id. |
+| [GetTaskByOSThreadID](ixclrdataprocess-gettaskbyosthreadid-method.md)                             | Gets a managed task by its OS thread ID. |
+| [GetTaskByUniqueID](ixclrdataprocess-gettaskbyuniqueid-method.md)                                 | Gets a managed task by its unique ID. |
 | [GetModuleByAddress](ixclrdataprocess-getmodulebyaddress-method.md)                               | Looks up a managed module by address. |
 | [StartEnumMethodDefinitionsByAddress](ixclrdataprocess-startenummethoddefinitionsbyaddress-method.md) | Provides a handle to enumerate method instances by IL code address. |
 | [EnumMethodDefinitionByAddress](ixclrdataprocess-enummethoddefinitionbyaddress-method.md)         | Enumerates method instances by IL code address. |

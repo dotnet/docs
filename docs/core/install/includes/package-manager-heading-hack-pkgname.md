@@ -1,7 +1,7 @@
 ---
 author: adegeo
 ms.author: adegeo
-ms.date: 03/18/2024
+ms.date: 11/11/2024
 ms.topic: include
 ---
 
@@ -24,8 +24,8 @@ Chooses the SDK or the runtime. Valid options are:
 - **version**\
 The version of the SDK or runtime to install. Valid options are any released version, such as:
 
+  - `9.0`
   - `8.0`
-  - `6.0`
   - `3.1`
   - `2.1`
 
@@ -33,7 +33,7 @@ The version of the SDK or runtime to install. Valid options are any released ver
 
 ### Examples
 
-- Install the ASP.NET Core 8.0 runtime: `aspnetcore-runtime-8.0`
+- Install the ASP.NET Core 9.0 runtime: `aspnetcore-runtime-9.0`
 - Install the .NET Core 2.1 runtime: `dotnet-runtime-2.1`
 - Install the .NET 5 SDK: `dotnet-sdk-5.0`
 - Install the .NET Core 3.1 SDK: `dotnet-sdk-3.1`

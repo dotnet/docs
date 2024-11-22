@@ -140,7 +140,7 @@ The view for the metrics will depend on the type of metric that is being used:
 
 ### 8.3 Viewing the tracing
 
-The tracing view will show a list of traces - each trace is a set of activites that share the same traceId. Work is tracked with spans which represent a unit of work. Processing an ASP.NET request will create a span. Making an HttpClient request will be a span. By tracking the span's parent a heiarchy of spans can be visualized. By collecting spans from a each resource (process) we track the work that happens across a series of services. Http requests have a header which is used to pass the traceId and parent spanId to the next service. Each resource needs to collect telemetry and send it to the same collector. It will then aggregate and present a hierarchy of the spans.
+The tracing view will show a list of traces - each trace is a set of activities that share the same traceId. Work is tracked with spans which represent a unit of work. Processing an ASP.NET request will create a span. Making an HttpClient request will be a span. By tracking the span's parent, a hierarchy of spans can be visualized. By collecting spans from a each resource (process) we track the work that happens across a series of services. Http requests have a header which is used to pass the traceId and parent spanId to the next service. Each resource needs to collect telemetry and send it to the same collector. It will then aggregate and present a hierarchy of the spans.
 
 [![Traces in standalone dashboard](./media/aspire-dashboard-traces-thumb.png)](./media/aspire-dashboard-traces.png#lightbox)
 

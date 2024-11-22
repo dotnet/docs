@@ -41,7 +41,7 @@ One symptom of these problems is that both the `/usr/lib64/dotnet` and `/usr/sha
 ## What's going on
 
 > [!IMPORTANT]
-> Starting with .NET 9 (currently in preview), Microsoft only publishes packages for supported Linux distributions that don't publish their own packages. For more information, see [Install .NET on Linux](linux.md#packages).
+> Starting with .NET 9, Microsoft only publishes packages for supported Linux distributions that don't publish their own packages. For more information, see [Install .NET on Linux](linux.md#packages).
 
 These errors usually occur when two Linux package repositories provide .NET packages. While Microsoft provides a Linux package repository to source .NET packages, some Linux distributions also provide .NET packages. These distributions include:
 
@@ -192,12 +192,12 @@ Configure your package manager to ignore the .NET packages from the distribution
     touch /etc/apt/preferences
     ```
 
-01. Open `/etc/apt/preferences` in an editor and add an apt preferences fragement to prevent packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
+01. Open `/etc/apt/preferences` in an editor and add an apt preferences fragment to prevent packages that start with `dotnet`, `aspnetcore`, or `netstandard` from being sourced from the distribution's repository.
 
     ```
     Package: dotnet* aspnet* netstandard*
     Pin: origin "<your-package-source>"
-    Pin-Priority: -10    
+    Pin-Priority: -10
     ```
 
     Make sure to replace `<your-package-source>` with your distribution's package source.

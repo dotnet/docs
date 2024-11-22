@@ -29,29 +29,27 @@ All hash algorithm and hash-based message authentication (HMAC) classes, includi
 |SHA-2-256                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
 |SHA-2-384                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
 |SHA-2-512                  | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
-|SHA-3-256<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
-|SHA-3-384<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
-|SHA-3-512<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
-|SHAKE-128<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                   |❌     |❌     |
-|SHAKE-256<sup>1</sup>      | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>3</sup> |❌    |❌                   |❌     |❌     |
+|SHA-3-256                  | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHA-3-384                  | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHA-3-512                  | Windows 11 Build 25324+| OpenSSL 1.1.1+             |❌    |❌                   |❌     |❌     |
+|SHAKE-128                  | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>2</sup> |❌    |❌                   |❌     |❌     |
+|SHAKE-256                  | Windows 11 Build 25324+| OpenSSL 1.1.1+<sup>2</sup> |❌    |❌                   |❌     |❌     |
 |HMAC-MD5                   | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |❌     |
 |HMAC-SHA-1                 | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
 |HMAC-SHA-2-256             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
 |HMAC-SHA-2-384             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
 |HMAC-SHA-2-512             | ✔️                     | ✔️                        |✔️   |✔️                    |✔️     |✔️     |
-|HMAC-SHA-3-256<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
-|HMAC-SHA-3-384<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
-|HMAC-SHA-3-512<sup>1</sup> | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
-|KMAC-128<sup>2</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
-|KMAC-256<sup>2</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
-|KMAC-XOF-128<sup>2</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
-|KMAC-XOF-256<sup>2</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|HMAC-SHA-3-256             | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|HMAC-SHA-3-384             | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|HMAC-SHA-3-512             | Windows 11 Build 25324+| OpenSSL 1.1.1+            |❌    |❌                   |❌      |❌     |
+|KMAC-128<sup>1</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-256<sup>1</sup>       | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-XOF-128<sup>1</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
+|KMAC-XOF-256<sup>1</sup>   | Windows 11 Build 26016+| OpenSSL 3.0+              |❌    |❌                   |❌      |❌     |
 
-<sup>1</sup>Available starting in .NET 8.
+<sup>1</sup>Available starting in .NET 9.
 
-<sup>2</sup>Available starting in .NET 9.
-
-<sup>3</sup>Streaming extensible output function (XOF) is available starting in .NET 9. On Linux, this requires OpenSSL 3.3.
+<sup>2</sup>Streaming extensible output function (XOF) is available starting in .NET 9. On Linux, this requires OpenSSL 3.3.
 
 ## Symmetric encryption
 
@@ -82,21 +80,15 @@ Since authenticated encryption requires newer platform APIs to support the algor
 
 | Cipher + Mode     | Windows                 | Linux          | macOS   | iOS, tvOS, MacCatalyst | Android       | Browser |
 |-------------------|-------------------------|----------------|---------|------------------------|---------------|---------|
-| AES-GCM           | ✔️                      | ✔️            | ⚠️      | ⚠️                     | ✔️            | ❌      |
+| AES-GCM           | ✔️                      | ✔️            | ✔️      | ⚠️                     | ✔️            | ❌      |
 | AES-CCM           | ✔️                      | ✔️            | ⚠️      | ❌                     | ✔️            | ❌      |
-| ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ⚠️      | ⚠️                     | API Level 28+ | ❌      |
+| ChaCha20Poly1305  | Windows 10 Build 20142+ | OpenSSL 1.1.0+ | ✔️      | ⚠️                     | API Level 28+ | ❌      |
 
 ### AES-CCM on macOS
 
 On macOS, the system libraries don't support AES-CCM for third-party code, so the <xref:System.Security.Cryptography.AesCcm> class uses OpenSSL for support. Users on macOS need to obtain an appropriate copy of OpenSSL (libcrypto) for this type to function, and it must be in a path that the system would load a library from by default. We recommend that you install OpenSSL from a package manager such as Homebrew.
 
 The `libcrypto.0.9.7.dylib` and `libcrypto.0.9.8.dylib` libraries included in macOS are from earlier versions of OpenSSL and will not be used. The `libcrypto.35.dylib`, `libcrypto.41.dylib`, and `libcrypto.42.dylib` libraries are from LibreSSL and will not be used.
-
-### AES-GCM and ChaCha20Poly1305 on macOS
-
-macOS did not support AES-GCM or ChaCha20Poly1305 until macOS 10.15 for third-party code. Prior to .NET 8, <xref:System.Security.Cryptography.AesGcm> and <xref:System.Security.Cryptography.ChaCha20Poly1305> have the same requirement as AES-CCM and users must install OpenSSL for these types to function.
-
-Starting in .NET 8, .NET on macOS will use the Apple's CryptoKit framework for AES-GCM and ChaCha20Poly1305. Users will not need to install or configure any additional dependencies for AES-GCM or ChaCha20Poly1305 on macOS.
 
 ### AES-GCM and ChaCha20Poly1305 on iOS, tvOS, and MacCatalyst
 
@@ -157,15 +149,13 @@ Padding and digest support vary by platform:
 | PKCS1 Encryption                    | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ✔️               |
 | OAEP - SHA-1                        | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ✔️               |
 | OAEP - SHA-2                        | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ❌               |
-| OAEP - SHA-3<sup>2</sup>            | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     | ❌                     | ❌     | ❌               |
+| OAEP - SHA-3                        | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     | ❌                     | ❌     | ❌               |
 | PKCS1 Signature (MD5, SHA-1)        | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ✔️               |
 | PKCS1 Signature (SHA-2)             | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ⚠️<sup>1</sup> |
-| PKCS1 Signature (SHA-3)<sup>2</sup> | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     |  ❌                    | ❌     | ❌               |
+| PKCS1 Signature (SHA-3)             | Windows 11 Build 25324+  | OpenSSL 1.1.1+  | ❌     |  ❌                    | ❌     | ❌               |
 | PSS                                 | ✔️                       | ✔️              | ✔️    | ✔️                     | ✔️      | ❌               |
 
 <sup>1</sup> Windows CryptoAPI (CAPI) is capable of PKCS1 signature with a SHA-2 algorithm. But the individual RSA object may be loaded in a cryptographic service provider (CSP) that doesn't support it.
-
-<sup>2</sup> Requires .NET 8.
 
 #### RSA on Windows
 
@@ -237,8 +227,6 @@ The <xref:System.Security.Cryptography.ECDiffieHellman> class supports the "raw"
 * HMAC(Z, Z)
 * HMAC(Z, prepend || Z || append)
 * Tls11Prf(label, seed)
-
-"Raw" key derivation was introduced in .NET 8.
 
 ECDH key curves are defined by the OS libraries and are subject to their limitations.
 

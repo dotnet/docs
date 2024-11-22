@@ -1,27 +1,29 @@
-﻿namespace generics
+namespace generics
 {
     //---------------------------------------------------------------------------
     //<Snippet1>
     // Declare the generic class.
     public class GenericList<T>
     {
-        public void Add(T input) { }
+        public void Add(T item) { }
     }
+
+    public class ExampleClass { }
+
     class TestGenericList
     {
-        private class ExampleClass { }
         static void Main()
         {
-            // Declare a list of type int.
-            GenericList<int> list1 = new GenericList<int>();
+            // Create a list of type int.
+            GenericList<int> list1 = new();
             list1.Add(1);
 
-            // Declare a list of type string.
-            GenericList<string> list2 = new GenericList<string>();
+            // Create a list of type string.
+            GenericList<string> list2 = new();
             list2.Add("");
 
-            // Declare a list of type ExampleClass.
-            GenericList<ExampleClass> list3 = new GenericList<ExampleClass>();
+            // Create a list of type ExampleClass.
+            GenericList<ExampleClass> list3 = new();
             list3.Add(new ExampleClass());
         }
     }
@@ -29,58 +31,36 @@
     namespace SecondExample
     {
         //<Snippet2>
-        // type parameter T in angle brackets
+        // Type parameter T in angle brackets.
         public class GenericList<T>
         {
-            // The nested class is also generic on T.
-            private class Node
+            // The nested class is also generic, and
+            // holds a data item of type T.
+            private class Node(T t)
             {
-                // T used in non-generic constructor.
-                public Node(T t)
-                {
-                    next = null;
-                    data = t;
-                }
+                // T as property type.
+                public T Data { get; set; } = t;
 
-                private Node? next;
-                public Node? Next
-                {
-                    get { return next; }
-                    set { next = value; }
-                }
-
-                // T as private member data type.
-                private T data;
-
-                // T as return type of property.
-                public T Data
-                {
-                    get { return data; }
-                    set { data = value; }
-                }
+                public Node? Next { get; set; }
             }
 
+            // First item in the linked list
             private Node? head;
 
-            // constructor
-            public GenericList()
-            {
-                head = null;
-            }
-
-            // T as method parameter type:
+            // T as parameter type.
             public void AddHead(T t)
             {
-                Node n = new Node(t);
+                Node n = new(t);
                 n.Next = head;
                 head = n;
             }
 
+            // T in method return type.
             public IEnumerator<T> GetEnumerator()
             {
                 Node? current = head;
 
-                while (current != null)
+                while (current is not null)
                 {
                     yield return current.Data;
                     current = current.Next;
@@ -92,27 +72,29 @@
     namespace ThirdExample
     {
         using SecondExample;
-        //<Snippet3>
         class TestGenericList
         {
             static void Main()
             {
-                // int is the type argument
-                GenericList<int> list = new GenericList<int>();
+                //<Snippet3>
+                // A generic list of int.
+                GenericList<int> list = new();
 
+                // Add ten int values.
                 for (int x = 0; x < 10; x++)
                 {
                     list.AddHead(x);
                 }
 
+                // Write them to the console.
                 foreach (int i in list)
                 {
-                    System.Console.Write(i + " ");
+                    Console.WriteLine(i);
                 }
-                System.Console.WriteLine("\nDone");
+
+                Console.WriteLine("Done");
+                //</Snippet3>
             }
         }
-        //</Snippet3>
     }
-
 }

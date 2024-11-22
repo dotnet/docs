@@ -3,13 +3,13 @@ title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
 ms.date: 08/26/2024
-zone_pivot_groups: dotnet-preview-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
+zone_pivot_groups: dotnet-version
 ms.collection: ce-skilling-ai-copilot
 ms.custom: vs-copilot-horizontal
 ---
@@ -42,8 +42,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 * ✔️ Supported by built-in functionality. Getting similar behavior from `System.Text.Json` might require the use of an attribute or global option.
 * ⚠️ Not supported, but workaround is possible. The workarounds are [custom converters](converters-how-to.md), which might not provide complete parity with `Newtonsoft.Json` functionality. For some of these, sample code is provided as examples. If you rely on these `Newtonsoft.Json` features, migration will require modifications to your .NET object models or other code changes.
 * ❌ Not supported, and workaround is not practical or possible. If you rely on these `Newtonsoft.Json` features, migration will not be possible without significant changes.
-
-::: zone pivot="dotnet-9-0, dotnet-8-0"
 
 | Newtonsoft.Json feature                               | System.Text.Json equivalent |
 |-------------------------------------------------------|-----------------------------|
@@ -90,108 +88,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `TypeNameHandling.All` global setting                 | ❌ [Not supported by design](#typenamehandlingall-not-supported) |
 | Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
 | Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
-
-::: zone-end
-
-::: zone pivot="dotnet-7-0"
-
-| Newtonsoft.Json feature                               | System.Text.Json equivalent |
-|-------------------------------------------------------|-----------------------------|
-| Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-a-built-in-naming-policy) |
-| Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
-| `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](ignore-properties.md#ignore-all-null-value-properties) |
-| Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
-| Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
-| Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
-| Default maximum depth 64, configurable                | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
-| `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
-| Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
-| Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
-| Support for fields                                    | ✔️ [IncludeFields global setting, [JsonInclude] attribute](#public-and-non-public-fields) |
-| `DefaultValueHandling` global setting                 | ✔️ [DefaultIgnoreCondition global setting](#conditionally-ignore-a-property) |
-| `NullValueHandling` setting on `[JsonProperty]`       | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
-| `DefaultValueHandling` setting on `[JsonProperty]`    | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
-| Deserialize `Dictionary` with non-string key          | ✔️ [Supported](#dictionary-with-non-string-key) |
-| Support for non-public property setters and getters   | ✔️ [JsonInclude attribute](#non-public-property-setters-and-getters) |
-| `[JsonConstructor]` attribute                         | ✔️ [[JsonConstructor] attribute](#specify-constructor-to-use-when-deserializing) |
-| `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
-| Callbacks                                             | ✔️ [Callbacks](#callbacks) |
-| NaN, Infinity, -Infinity                              | ✔️ [Supported](#nan-infinity--infinity) |
-| `Required` setting on `[JsonProperty]` attribute      | ✔️ [[JsonRequired] attribute and C# required modifier](#required-properties) |
-| `DefaultContractResolver` to ignore properties        | ✔️ [DefaultJsonTypeInfoResolver class](#conditionally-ignore-a-property) |
-| Polymorphic serialization                             | ✔️ [[JsonDerivedType] attribute](#polymorphic-serialization) |
-| Polymorphic deserialization                           | ✔️ [Type discriminator on [JsonDerivedType] attribute](#polymorphic-deserialization) |
-| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
-| Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
-| Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
-| Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
-| `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
-| `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
-| `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                    | ⚠️ [Not supported, workaround](#populate-properties-without-setters) |
-| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
-| Support for `System.Runtime.Serialization` attributes | ⚠️ [Not supported, workaround, sample](#systemruntimeserialization-attributes) |
-| `MissingMemberHandling` global setting                | ⚠️ [Not supported, workaround, sample](#handle-missing-members) |
-| `JsonObjectAttribute`                                 | ⚠️ [Not supported, workaround](#jsonobjectattribute) |
-| Allow property names without quotes                   | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
-| Allow single quotes around string values              | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
-| Allow non-string JSON values for string properties    | ❌ [Not supported by design](#non-string-values-for-string-properties) |
-| `TypeNameHandling.All` global setting                 | ❌ [Not supported by design](#typenamehandlingall-not-supported) |
-| Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
-| Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
-
-::: zone-end
-
-::: zone pivot="dotnet-6-0"
-
-| Newtonsoft.Json feature                               | System.Text.Json equivalent |
-|-------------------------------------------------------|-----------------------------|
-| Case-insensitive deserialization by default           | ✔️ [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Camel-case property names                             | ✔️ [PropertyNamingPolicy global setting](customize-properties.md#use-a-built-in-naming-policy) |
-| Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#minimal-character-escaping) |
-| `NullValueHandling.Ignore` global setting             | ✔️ [DefaultIgnoreCondition global option](ignore-properties.md#ignore-all-null-value-properties) |
-| Allow comments                                        | ✔️ [ReadCommentHandling global setting](#comments) |
-| Allow trailing commas                                 | ✔️ [AllowTrailingCommas global setting](#trailing-commas) |
-| Custom converter registration                         | ✔️ [Order of precedence differs](#converter-registration-precedence) |
-| Default maximum depth 64, configurable                | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
-| `PreserveReferencesHandling` global setting           | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
-| Serialize or deserialize numbers in quotes            | ✔️ [NumberHandling global setting, [JsonNumberHandling] attribute](#allow-or-write-numbers-in-quotes) |
-| Deserialize to immutable classes and structs          | ✔️ [JsonConstructor, C# 9 Records](#deserialize-to-immutable-classes-and-structs) |
-| Support for fields                                    | ✔️ [IncludeFields global setting, [JsonInclude] attribute](#public-and-non-public-fields) |
-| `DefaultValueHandling` global setting                 | ✔️ [DefaultIgnoreCondition global setting](#conditionally-ignore-a-property) |
-| `NullValueHandling` setting on `[JsonProperty]`       | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
-| `DefaultValueHandling` setting on `[JsonProperty]`    | ✔️ [JsonIgnore attribute](#conditionally-ignore-a-property)  |
-| Deserialize `Dictionary` with non-string key          | ✔️ [Supported](#dictionary-with-non-string-key) |
-| Support for non-public property setters and getters   | ✔️ [JsonInclude attribute](#non-public-property-setters-and-getters) |
-| `[JsonConstructor]` attribute                         | ✔️ [[JsonConstructor] attribute](#specify-constructor-to-use-when-deserializing) |
-| `ReferenceLoopHandling` global setting                | ✔️ [ReferenceHandling global setting](#preserve-object-references-and-handle-loops) |
-| Callbacks                                             | ✔️ [Callbacks](#callbacks) |
-| NaN, Infinity, -Infinity                              | ✔️ [Supported](#nan-infinity--infinity) |
-| Deserialize string enum value                         | ✔️ [Deserialize string enum values](#deserialize-string-enum-values) |
-| Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
-| Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
-| Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
-| Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
-| Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
-| `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
-| `DefaultContractResolver` to ignore properties       | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |
-| `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |
-| `JsonConvert.PopulateObject` method                   | ⚠️ [Not supported, workaround](#populate-existing-objects) |
-| `ObjectCreationHandling` global setting               | ⚠️ [Not supported, workaround](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                    | ⚠️ [Not supported, workaround](#populate-properties-without-setters) |
-| Snake-case property names                             | ⚠️ [Not supported, workaround](#snake-case-naming-policy)|
-| `JsonObjectAttribute`                                 | ⚠️ [Not supported, workaround](#jsonobjectattribute) |
-| Support for `System.Runtime.Serialization` attributes | ❌ [Not supported](#systemruntimeserialization-attributes) |
-| `MissingMemberHandling` global setting                | ❌ [Not supported](#handle-missing-members) |
-| Allow property names without quotes                   | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
-| Allow single quotes around string values              | ❌ [Not supported by design](#json-strings-property-names-and-string-values) |
-| Allow non-string JSON values for string properties    | ❌ [Not supported by design](#non-string-values-for-string-properties) |
-| `TypeNameHandling.All` global setting                 | ❌ [Not supported by design](#typenamehandlingall-not-supported) |
-| Support for `JsonPath` queries                        | ❌ [Not supported](#json-path-queries-not-supported) |
-| Configurable limits                                   | ❌ [Not supported](#some-limits-not-configurable) |
-
-::: zone-end
 
 This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the **Feedback** section at the bottom of this page. That creates an issue in this documentation's GitHub repo and lists it in the **Feedback** section on this page too.
 
@@ -328,12 +224,6 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 * The `DefaultIgnoreCondition` global option lets you [ignore all value type properties that have default values](ignore-properties.md#ignore-all-default-value-properties), or [ignore all reference type properties that have null values](ignore-properties.md#ignore-all-null-value-properties).
 
 In addition, in .NET 7 and later versions, you can customize the JSON contract to ignore properties based on arbitrary criteria. For more information, see [Custom contracts](custom-contracts.md).
-
-::: zone pivot="dotnet-6-0"
-
-These options **don't** let you ignore selected properties based on arbitrary criteria evaluated at run time.
-
-::: zone-end
 
 ### Public and non-public fields
 
@@ -482,67 +372,7 @@ In <xref:System.Text.Json?displayProperty=fullName>, use the [[JsonConstructor]]
 
 In `Newtonsoft.Json`, you specify that a property is required by setting `Required` on the `[JsonProperty]` attribute. `Newtonsoft.Json` throws an exception if no value is received in the JSON for a property marked as required.
 
-::: zone pivot="dotnet-9-0, dotnet-8-0, dotnet-7-0"
-
 Starting in .NET 7, you can use the C# `required` modifier or the <xref:System.Text.Json.Serialization.JsonRequiredAttribute> attribute on a required property. System.Text.Json throws an exception if the JSON payload doesn't contain a value for the marked property. For more information, see [Required properties](required-properties.md).
-
-::: zone-end
-
-::: zone pivot="dotnet-6-0"
-
-<xref:System.Text.Json?displayProperty=fullName> doesn't throw an exception if no value is received for one of the properties of the target type. For example, if you have a `WeatherForecast` class:
-
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WF":::
-
-The following JSON is deserialized without error:
-
-```json
-{
-    "TemperatureCelsius": 25,
-    "Summary": "Hot"
-}
-```
-
-To make deserialization fail if no `Date` property is in the JSON, choose one of the following options:
-
-* Use the .NET 7 or later version of the [System.Text.Json package](https://www.nuget.org/packages/System.Text.Json) and add the `required` modifier (available starting in C# 11) or the <xref:System.Text.Json.Serialization.JsonRequiredAttribute> attribute to the property.
-* Implement a custom converter.
-* Implement an [`OnDeserialized` callback (.NET 6 and later)](migrate-from-newtonsoft.md?pivots=dotnet-6-0#callbacks).
-
-The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
-
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecastRequiredPropertyConverter.cs":::
-
-Register this custom converter by [adding the converter](converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> collection.
-
-This pattern of recursively calling the converter requires that you register the converter by using <xref:System.Text.Json.JsonSerializerOptions>, not by using an attribute. If you register the converter by using an attribute, the custom converter recursively calls into itself. The result is an infinite loop that ends in a stack overflow exception.
-
-When you register the converter by using the options object, avoid an infinite loop by not passing in the options object when recursively calling <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. The options object contains the <xref:System.Text.Json.JsonSerializerOptions.Converters%2A> collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
-
-There is an alternative pattern that can use `JsonConverterAttribute` registration on the class to be converted. In this approach, the converter code calls `Serialize` or `Deserialize` on a class that derives from the class to be converted. The derived class doesn't have a `JsonConverterAttribute` applied to it. In the following example of this alternative:
-
-* `WeatherForecastWithRequiredPropertyConverterAttribute` is the class to be deserialized and has the `JsonConverterAttribute` applied to it.
-* `WeatherForecastWithoutRequiredPropertyConverterAttribute` is the derived class that doesn't have the converter attribute.
-* The code in the converter calls `Serialize` and `Deserialize` on `WeatherForecastWithoutRequiredPropertyConverterAttribute` to avoid an infinite loop. There is a performance cost to this approach on serialization due to an extra object instantiation and copying of property values.
-
-Here are the `WeatherForecast*` types:
-
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecast.cs" id="WFWithReqPptyConverterAttr":::
-
-And here is the converter:
-
-:::code language="csharp" source="snippets/how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration.cs":::
-
-The required properties converter would require additional logic if you need to handle attributes such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options, such as custom encoders. Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
-
-* A property is missing from the JSON.
-* A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
-* A property for a nullable value type is present in the JSON, but the value is null.
-
-> [!NOTE]
-> If you're using System.Text.Json from an ASP.NET Core controller, you might be able to use a [`[Required]`](xref:System.ComponentModel.DataAnnotations.RequiredAttribute) attribute on properties of the model class instead of implementing a System.Text.Json converter.
-
-::: zone-end
 
 ### Specify date format
 
@@ -593,37 +423,15 @@ The `JsonConvert.PopulateObject` method in `Newtonsoft.Json` deserializes a JSON
 
 ### Reuse rather than replace properties
 
-:::zone pivot="dotnet-9-0, dotnet-8-0"
-
 Starting in .NET 8, System.Text.Json supports reusing initialized properties rather than replacing them. There are some differences in behavior, which you can read about in the [API proposal](https://github.com/dotnet/runtime/issues/78556).
 
 For more information, see [Populate initialized properties](populate-properties.md).
 
-:::zone-end
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
-The `ObjectCreationHandling` setting in `Newtonsoft.Json` lets you specify that objects in properties should be reused rather than replaced during deserialization. <xref:System.Text.Json?displayProperty=fullName> always replaces objects in properties. Custom converters can provide this functionality, or you can upgrade to .NET 8, which provides populate functionality.
-
-:::zone-end
-
 ### Populate properties without setters
-
-:::zone pivot="dotnet-9-0, dotnet-8-0"
 
 Starting in .NET 8, System.Text.Json supports populating properties, including those that don't have a setter. For more information, see [Populate initialized properties](populate-properties.md).
 
-:::zone-end
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
-During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. System.Text.Json ignores properties that don't have setters. Custom converters can provide this functionality, or you can upgrade to .NET 8, which can populate read-only properties.
-
-:::zone-end
-
 ### Snake case naming policy
-
-:::zone pivot="dotnet-9-0, dotnet-8-0"
 
 System.Text.Json includes a built-in naming policy for snake case. However, there are some behavior differences with `Newtonsoft.Json` for some inputs. The following table shows some of these differences when converting input using the <xref:System.Text.Json.JsonNamingPolicy.SnakeCaseLower?displayProperty=nameWithType> policy.
 
@@ -633,14 +441,6 @@ System.Text.Json includes a built-in naming policy for snake case. However, ther
 | "SHA512Managed" | "sh_a512_managed"      | "sha512_managed"        |
 | "abc123DEF456"  | "abc123_de_f456"       | "abc123_def456"         |
 | "KEBAB-CASE"    | "keba_b-_case"         | "kebab-case"            |
-
-::: zone-end
-
-:::zone pivot="dotnet-7-0, dotnet-6-0"
-
-The only built-in property naming policy in System.Text.Json is for camel case. `Newtonsoft.Json` can convert property names to snake case. A [custom naming policy](customize-properties.md#use-a-custom-json-property-naming-policy) can provide this functionality, or upgrade to .NET 8 or later, which includes built-in snake case naming policies.
-
-::: zone-end
 
 ### System.Runtime.Serialization attributes
 

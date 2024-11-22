@@ -3,7 +3,6 @@ title: How to choose reflection or source generation in System.Text.Json
 description: "Learn how to choose reflection or source generation in System.Text.Json."
 ms.date: 10/30/2023
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-version
 ---
 
 # Reflection versus source generation in System.Text.Json
@@ -47,8 +46,6 @@ Source generation for `System.Text.Json` requires C# 9.0 or a later version.
 
 Choose reflection or source-generation modes based on the following benefits that each one offers:
 
-:::zone pivot="dotnet-8-0"
-
 | Benefit                                              | Reflection | Source generation<br/>(Metadata-based mode) | Source generation<br/>(Serialization-optimization mode) |
 |------------------------------------------------------|------------|---------------------|----------------------------|
 | Simpler to code.                                     | ✔️        | ❌                  | ❌                        |
@@ -63,22 +60,3 @@ Choose reflection or source-generation modes based on the following benefits tha
 
 \* The source generator supports *some* non-public members, for example, internal types in the same assembly.
 † Source-generated contracts can be modified using the contract customization API.
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
-| Benefit                                              | Reflection | Source generation<br/>(Metadata-based mode) | Source generation<br/>(Serialization-optimization mode) |
-|------------------------------------------------------|------------|---------------------|----------------------------|
-| Simpler to code.                                     | ✔️        | ❌                  | ❌                        |
-| Simpler to debug.                                    | ❌        | ❌                  | ✔️                        |
-| Supports non-public accessors.                       | ✔️        | ❌                  | ❌                        |
-| Supports required properties.                        | ✔️        | ❌                  | ❌                        |
-| Supports init-only properties.                       | ✔️        | ❌                  | ❌                        |
-| Reduces start-up time.                               | ❌        | ✔️                  | ✔️                        |
-| Reduces private memory usage.                        | ❌        | ✔️                  | ✔️                        |
-| Eliminates run-time reflection.                      | ❌        | ✔️                  | ✔️                        |
-| Facilitates trim-safe app size reduction.            | ❌        | ✔️                  | ✔️                        |
-| Increases serialization throughput.                  | ❌        | ❌                  | ✔️                        |
-
-:::zone-end

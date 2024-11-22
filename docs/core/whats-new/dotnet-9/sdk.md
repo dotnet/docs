@@ -2,13 +2,13 @@
 title: What's new in the SDK and tooling for .NET 9
 description: Learn about the new .NET SDK features introduced in .NET 9, including for unit testing, terminal logger, tool roll-forward, and build script analyzers.
 titleSuffix: ""
-ms.date: 10/26/2024
+ms.date: 11/11/2024
 ms.topic: whats-new
 ---
 
 # What's new in the SDK and tooling for .NET 9
 
-This article describes new features in the .NET SDK and tooling for .NET 9. It's been updated for .NET RC 2.
+This article describes new features in the .NET SDK and tooling for .NET 9.
 
 ## Unit testing
 
@@ -221,4 +221,4 @@ Environment variables that the container publish tooling uses to control some of
 | [CA2262: Set 'MaxResponseHeadersLength' properly](../../../fundamentals/code-analysis/quality-rules/ca2262.md) | Usage | The <xref:System.Net.Http.HttpClientHandler.MaxResponseHeadersLength?displayProperty=nameWithType> property is measured in kilobytes, not bytes. |
 | [CA2263: Prefer generic overload when type is known](../../../fundamentals/code-analysis/quality-rules/ca2263.md) | Usage | Generic overloads are preferable to overloads that accept an argument of type <xref:System.Type?displayProperty=fullName> when the type is known at compile time. |
 | [CA2264: Do not pass a non-nullable value to 'ArgumentNullException.ThrowIfNull'](../../../fundamentals/code-analysis/quality-rules/ca2264.md) | Usage | Certain constructs like non-nullable structs (except for <xref:System.Nullable%601>), 'nameof()' expressions, and 'new' expressions are known to never be null, so `ArgumentNullException.ThrowIfNull` will never throw. |
-| [CA2265](../../../fundamentals/code-analysis/quality-rules/ca2265.md) | Usage | Comparing a span to `null` or `default` might not do what you intended. `default` and the `null` literal are implicitly converted to <xref:System.Span`1.Empty?displayProperty=nameWithType>. Remove the redundant comparison or make the code more explicit by using `IsEmpty`. |
+| [CA2265: Do not compare `Span<T>` to null or default](../../../fundamentals/code-analysis/quality-rules/ca2265.md) | Usage | Comparing a span to `null` or `default` might not do what you intended. `default` and the `null` literal are implicitly converted to <xref:System.Span`1.Empty?displayProperty=nameWithType>. Remove the redundant comparison or make the code more explicit by using `IsEmpty`. |

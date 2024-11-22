@@ -58,7 +58,7 @@ Lambda expressions are especially useful when you want to perform operations on 
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet302.fs)]
 
-The above shows both notations: using the `fun` keyword, and the shorthand `_.Property` notation.
+The previous code snippet shows both notations: using the `fun` keyword, and the shorthand `_.Property` notation.
 
 ## See also
 

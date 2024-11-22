@@ -22,7 +22,7 @@ Starting in .NET 9, the <xref:System.IO.Compression.CompressionLevel> parameter 
 | `CompressionLevel` | Bit 1 | Bit 2 |
 |--------------------|-------|-------|
 | `NoCompression`    | 0     | 0     |
-| `Optimal`          | 0     | 0     |
+| `Optimal`          | 0     | 1     |
 | `SmallestSize`     | 1     | 0     |
 | `Fastest`          | 1     | 1     |
 

@@ -577,7 +577,7 @@ understand the data distribution well enough to choose correct buckets.
 
 To improve the experience the `9.0.0` version of the
 `System.Diagnostics.DiagnosticSource` package introduced the
-(<xref:System.Diagnostics.Metrics.InstrumentAdvice%2A>) API.
+(<xref:System.Diagnostics.Metrics.InstrumentAdvice`1>) API.
 
 The `InstrumentAdvice` API may be used by instrumentation authors to specify the
 set of recommended default bucket boundaries for a given Histogram. The tool or

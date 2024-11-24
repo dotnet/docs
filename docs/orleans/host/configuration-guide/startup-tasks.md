@@ -69,7 +69,7 @@ public class GrainPingService : BackgroundService
 }
 ```
 
-Registration order is significant, since services added to the host builder are started one-by-once, in the order they are registered. You can register the background service as follows:
+Registration order is significant, since services added to the host builder are started one-by-one, in the order they are registered. You can register the background service as follows:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);

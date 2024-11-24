@@ -32,7 +32,7 @@ This section describes steps to create a simple .NET Class Library project with 
     <PublishAotUsingRuntimePack>true</PublishAotUsingRuntimePack>
     ```
 
-4. Edit the `MyNativeAOTLibrary/Class1.cs` source code to expose a managed method to the native world as `aotsample_add`. For example:
+4. Edit the `MyNativeAOTLibrary/Class1.cs` source code to expose a managed method so that it can be referenced from the native code as `aotsample_add`. For example:
 
     ```cs
     using System.Runtime.InteropServices;

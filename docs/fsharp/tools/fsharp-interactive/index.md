@@ -258,6 +258,7 @@ The `#help` directive now supports displaying documentation for specific objects
 ```
 
 The output is as follows:
+
 ```console
 Description:
 Builds a new collection whose elements are the results of applying the given function

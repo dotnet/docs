@@ -1,7 +1,7 @@
 ---
 title: Overview of the .NET + AI ecosystem
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
-ms.date: 04/04/2024
+ms.date: 11/24/2024
 ms.topic: overview
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---

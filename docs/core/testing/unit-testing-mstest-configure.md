@@ -103,7 +103,9 @@ Each element of the file is optional because it has a default value.
 
 ## testconfig.json
 
-Starting with MSTest 3.7, when running your tests through MSTest runner (a.k.a Microsoft.Testing.Platform), you can use a `testconfig.json` file to configure the behavior of the test runner. The `testconfig.json` file is a JSON file that contains the configuration settings for the test runner. The file is used to configure the test runner and the test execution environment. For more information, refer to [Microsoft.Testing.Platform testconfig.json documentation](unit-testing-platform-config.md#testconfigjson).
+When running your tests with MSTest, you can use a `testconfig.json` file to configure the behavior of the test runner. The `testconfig.json` file is a JSON file that contains the configuration settings for the test runner. The file is used to configure the test runner and the test execution environment. For more information, refer to [Microsoft.Testing.Platform testconfig.json documentation](unit-testing-platform-config.md#testconfigjson).
+
+Starting with MSTest 3.7, you can also configure MSTest runs in the same configuration file. The sections below describe the settings that you can use in the `testconfig.json` file.
 
 ### MSTest element
 

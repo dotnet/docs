@@ -259,8 +259,8 @@ Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 The MSTest SDK has limited integration with NuGet, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages won't work as expected. See this issue for more details: [NuGet#13127](https://github.com/NuGet/Home/issues/13127).
 
 > [!NOTE]
-> This limitation is not specific to MSTest SDK but to any MSBuild SDK.
-> Dependabot will handle updating the version in the global.json file, but you will need to manually update the version in the project file.
+> This limitation is not specific to MSTest SDK but to any NuGet-provided MSBuild SDK.
+> Dependabot will handle updating the version in the `global.json` file, but you will need to [manually update the version in the project file](https://github.com/dependabot/dependabot-core/issues/8615).
 
 ## See also
 

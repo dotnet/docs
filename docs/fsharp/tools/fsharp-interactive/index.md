@@ -251,7 +251,7 @@ When you specify files or paths in F# Interactive, a string literal is expected.
 
 ### Extended #help directive
 
-The `#help` directive now supports displaying documentation for specific objects or functions. You can pass the name of the object or function directly (without quotes) to retrieve details.
+The `#help` directive now supports displaying documentation for specific functions. You can pass the name of the function directly (without quotes) to retrieve details.
 
 ```fsharp
 #help List.map;;

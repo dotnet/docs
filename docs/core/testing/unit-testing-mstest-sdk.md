@@ -106,7 +106,7 @@ Extension/Profile | None | Default | AllMicrosoft
 --- | :---: | :---: | :---:
 [Code Coverage](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) | | :heavy_check_mark: | :heavy_check_mark:
 [Crash Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump) | | | :heavy_check_mark:
-[Fakes](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Fakes) | | | :heavy_check_mark: starting with MSTest.Sdk 3.7.0
+[Fakes](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Fakes) | | | :heavy_check_mark: (MSTest.Sdk 3.7.0+)
 [Hang Dump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump) | | | :heavy_check_mark:
 [Hot Reload](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload) | | | :heavy_check_mark:
 [Retry](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry) | | | :heavy_check_mark:

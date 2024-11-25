@@ -190,6 +190,23 @@ type Shape =
             | Rectangle(l, w) -> printfn $"Rectangle with length %f{l} and width %f{w}"
 ```
 
+## `.Is*` properties on cases
+
+Since F# 9, discriminated unions expose auto-generated `.Is*` properties for each case, allowing you to check if a value is of a particular case. 
+
+This is how it can be used:
+
+```fsharp
+type Contact =
+    | Email of address: string
+    | Phone of countryCode: int * number: string
+
+type Person = { name: string; contact: Contact }
+
+let canSendEmailTo person =
+    person.contact.IsEmail      // .IsEmail is auto-generated
+```
+
 ## Common attributes
 
 The following attributes are commonly seen in discriminated unions:

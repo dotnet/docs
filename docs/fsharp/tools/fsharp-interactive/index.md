@@ -243,15 +243,17 @@ The `#r` and `#load` directives seen previously are only available in F# Interac
 |`#help`|Displays information about available directives or documentation for specific functions.|
 |`#I`|Specifies an assembly search path in quotation marks.|
 |`#quit`|Terminates an F# Interactive session.|
-|`#time "on"` or `#time "off"`|By itself, `#time` toggles whether to display performance information. When it is `"on"`, F# Interactive measures real time, CPU time, and garbage collection information for each section of code that is interpreted and executed.|
+|`#time on` or `#time off`|By itself, `#time` toggles whether to display performance information. When it is `on`, F# Interactive measures real time, CPU time, and garbage collection information for each section of code that is interpreted and executed.|
 
 [^1]: More about [F# Interactive extensions](https://aka.ms/dotnetdepmanager).
 
 When you specify files or paths in F# Interactive, a string literal is expected. Therefore, files and paths must be in quotation marks, and the usual escape characters apply. You can use the `@` character to cause F# Interactive to interpret a string that contains a path as a verbatim string. This causes F# Interactive to ignore any escape characters.
 
+For other cases, quotation marks are optional, starting with F# 9.
+
 ### Extended #help directive
 
-The `#help` directive now supports displaying documentation for specific functions. You can pass the name of the function directly (without quotes) to retrieve details.
+The `#help` directive now supports displaying documentation for specific functions. You can pass the name of the function directly to retrieve details.
 
 ```fsharp
 #help List.map;;

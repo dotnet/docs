@@ -48,15 +48,11 @@ The following table is a list of currently supported .NET releases on both RHEL 
 
 .NET is included in the [AppStream repositories](https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle) for RHEL 9.
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-dnf-install-90](includes/linux-install-90-dnf.md)]
 
 ## RHEL 8
 
 .NET is included in the [AppStream repositories](https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle) for RHEL 8.
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-dnf-install-90](includes/linux-install-90-dnf.md)]
 

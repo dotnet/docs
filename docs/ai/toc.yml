@@ -5,6 +5,8 @@ items:
   href: get-started/dotnet-ai-overview.md
 - name: Ecosystem tools and SDKs
   href: dotnet-ai-ecosystem.md
+- name: Microsoft.Extensions.AI building blocks
+  href: ai-extensions.md
 - name: Learning resources and samples
   href: azure-ai-for-dotnet-developers.md
 - name: What is Semantic Kernel?
@@ -13,7 +15,7 @@ items:
   href: azure-ai-services-authentication.md
 - name: Quickstarts
   items:
-  - name: Summarize text
+  - name: Connect to and prompt an AI model
     href: quickstarts/quickstart-openai-summarize-text.md
   - name: Build a chat app
     href: quickstarts/get-started-openai.md

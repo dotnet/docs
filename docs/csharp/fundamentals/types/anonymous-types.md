@@ -28,9 +28,13 @@ Anonymous types are typically used in the [`select`](../../language-reference/ke
 
 Anonymous types contain one or more public read-only properties. No other kinds of class members, such as methods or events, are valid. The expression that is used to initialize a property cannot be `null`, an anonymous function, or a pointer type.
 
-The most common scenario is to initialize an anonymous type with properties from another type. In the following example, assume that a class exists that is named `Product`. Class `Product` includes `Color` and `Price` properties, together with other properties that you are not interested in. Variable `products` is a collection of `Product` objects. The anonymous type declaration starts with the `new` keyword. The declaration initializes a new type that uses only two properties from `Product`. Using anonymous types causes a smaller amount of data to be returned in the query.
+The most common scenario is to initialize an anonymous type with properties from another type. In the following example, assume that a class exists that is named `Product`. Class `Product` includes `Color` and `Price` properties, together with other properties that you are not interested in:
 
-If you don't specify member names in the anonymous type, the compiler gives the anonymous type members the same name as the property being used to initialize them. You provide a name for a property that's being initialized with an expression, as shown in the previous example. In the following example, the names of the properties of the anonymous type are `Color` and `Price`.
+:::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="ProductDefinition":::
+
+The anonymous type declaration starts with the `new` keyword. The declaration initializes a new type that uses only two properties from `Product`. Using anonymous types causes a smaller amount of data to be returned in the query.
+
+If you don't specify member names in the anonymous type, the compiler gives the anonymous type members the same name as the property being used to initialize them. You provide a name for a property that's being initialized with an expression, as shown in the previous example. In the following example, the names of the properties of the anonymous type are `Color` and `Price`. The instances are item from the `products` collection of `Product` types:
 
 :::code language="csharp" source="snippets/anonymous-types/Program.cs" ID="snippet81":::
 

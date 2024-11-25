@@ -32,7 +32,7 @@ The .NET CLI is used to publish the app, so you can follow this tutorial with a 
    dotnet publish
    ```
 
-   The default build configuration is *Release*, which is appropriate for a deployed site running in producction. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
+   The default build configuration is *Release*, which is appropriate for a deployed site running in production. The output from the Release build configuration has minimal symbolic debug information and is fully optimized.
 
    The command output is similar to the following example:
 

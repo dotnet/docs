@@ -5,7 +5,7 @@ description: Learn how to interoperate with other SQLite libraries.
 ---
 # Interoperability
 
-Microsoft.Data.Sqlite uses SQLitePCLRaw to interact with the native SQLite library. SQLitePCLRaw provides a thin .NET API over the native SQLite API. SqliteConnection and SqliteDataReader provide access to the underlying SQLitePCLRaw objects letting you call these APIs directly.
+`Microsoft.Data.Sqlite` uses `SQLitePCLRaw` to interact with the native SQLite library. `SQLitePCLRaw` provides a thin .NET API over the native SQLite API. `SqliteConnection` and `SqliteDataReader` provide access to the underlying SQLitePCLRaw objects letting you call these APIs directly.
 
 The following example shows how to call `sqlite3_trace` to write executed SQL statements to the console:
 

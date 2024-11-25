@@ -83,7 +83,7 @@ let parsed = StringTokenization.parse s // Must qualify to use 'parse'
 
 ### Sort `open` statements topologically
 
-In F#, the order of declarations matters, including with `open` statements (and `open type`, just refered as `open` farther down). This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
+In F#, the order of declarations matters, including with `open` statements (and `open type`, just referred as `open` farther down). This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
 
 In F#, elements opened into a scope can shadow others already present. This means that reordering `open` statements could alter the meaning of code. As a result, any arbitrary sorting of all `open` statements (for example, alphanumerically) is not recommended, lest you generate different behavior that you might expect.
 
@@ -535,7 +535,7 @@ F# values are immutable by default, which allows you to avoid certain classes of
 
 Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a function. This allows you to write a functional interface over a mutation-based implementation for performance-critical code.
 
-Also, F# `let` binding constructs allow you to nest bindings into another one, this can be leveraged to keep the scope of `mutable` variable close or at its theoritical smallest.
+Also, F# `let` binding constructs allow you to nest bindings into another one, this can be leveraged to keep the scope of `mutable` variable close or at its theoretical smallest.
 
 ```fsharp
 let data =

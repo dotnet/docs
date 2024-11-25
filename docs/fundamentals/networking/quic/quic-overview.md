@@ -117,11 +117,39 @@ All the following dependencies are stated in the `libmsquic` package manifest an
 
 - OpenSSL 3+ or 1.1 - depends on the default OpenSSL version for the distribution version, for example, OpenSSL 3 for [Ubuntu 22](https://packages.ubuntu.com/jammy/openssl) and OpenSSL 1.1 for [Ubuntu 20](https://packages.ubuntu.com/focal/utils/openssl).
 
-- libnuma 1
+- libnuma1
 
 ### macOS
 
-QUIC isn't currently supported on macOS but may be available in a future release.
+QUIC is now partially supported on macOS through a non-standard Homebrew package manager with some limitations. You can install `libmsquic` on macOS using Homebrew with the following command:
+
+```bash
+brew install libmsquic
+```
+
+To run a .NET application that uses `libmsquic`, you need to set the environment variable before running it. This ensures the application can find the `libmsquic` library during runtime dynamic loading. You can do this by adding the following command before your main command:
+
+```bash
+DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:$(brew --prefix)/lib dotnet run
+```
+
+or
+
+```bash
+DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:$(brew --prefix)/lib ./binaryname
+```
+
+Alternatively, you can set the environment variable with:
+
+```bash
+export DYLD_FALLBACK_LIBRARY_PATH=$DYLD_FALLBACK_LIBRARY_PATH:$(brew --prefix)/lib
+```
+
+and then run your main command:
+
+```bash
+./binaryname
+```
 
 ## API overview
 

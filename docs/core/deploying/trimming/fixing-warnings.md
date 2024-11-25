@@ -9,7 +9,7 @@ ms.date: 10/30/2023
 
 Conceptually, [trimming](trim-self-contained.md) is simple: when you publish an application, the .NET SDK analyzes the entire application and removes all unused code. However, it can be difficult to determine what is unused, or more precisely, what is used.
 
-To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of trim compatibility through **trim warnings**. The trimmer produces trim warnings when it finds code that might not be compatible with trimming. Code that's not trim-compatible can produce behavioral changes, or even crashes, in an application after it has been trimmed.  Ideally, all applications that use trimming shouldn't produce any trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to ensure that there are no behavior changes.
+To prevent changes in behavior when trimming applications, the .NET SDK provides static analysis of trim compatibility through **trim warnings**. The trimmer produces trim warnings when it finds code that might not be compatible with trimming. Code that's not trim-compatible can produce behavioral changes, or even crashes, in an application after it has been trimmed. An app that uses trimming shouldn't produce any trim warnings. If there are any trim warnings, the app should be thoroughly tested after trimming to ensure that there are no behavior changes.
 
 This article helps you understand why some patterns produce trim warnings, and how these warnings can be addressed.
 

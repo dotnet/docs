@@ -116,10 +116,6 @@ The previous requirements are also required if you receive an error related to e
 
 .NET is supported on Arm-based Windows PCs. The following sections describe things you should consider when installing .NET.
 
-### SDK differences
-
-The x86, x64, and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
-
 ### Path differences
 
 On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, the **x64** version of the .NET SDK is installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
@@ -148,16 +144,17 @@ The Visual Studio documentation provides instructions on how to:
 
 If you're using Visual Studio to develop .NET apps, the following table describes the minimum required version of Visual Studio based on the target .NET SDK version.
 
-| .NET SDK version      | Visual Studio version                      |
-| --------------------- | ------------------------------------------ |
-| 8                     | Visual Studio 2022 version 17.8 or higher. |
-| 7                     | Visual Studio 2022 version 17.4 or higher. |
-| 6                     | Visual Studio 2022 version 17.0 or higher. |
-| 5                     | Visual Studio 2019 version 16.8 or higher. |
-| 3.1                   | Visual Studio 2019 version 16.4 or higher. |
-| 3.0                   | Visual Studio 2019 version 16.3 or higher. |
-| 2.2                   | Visual Studio 2017 version 15.9 or higher. |
-| 2.1                   | Visual Studio 2017 version 15.7 or higher. |
+| .NET SDK version      | Visual Studio version                       |
+| --------------------- | ------------------------------------------- |
+| 9                     | Visual Studio 2022 version 17.12 or higher. |
+| 8                     | Visual Studio 2022 version 17.8 or higher.  |
+| 7                     | Visual Studio 2022 version 17.4 or higher.  |
+| 6                     | Visual Studio 2022 version 17.0 or higher.  |
+| 5                     | Visual Studio 2019 version 16.8 or higher.  |
+| 3.1                   | Visual Studio 2019 version 16.4 or higher.  |
+| 3.0                   | Visual Studio 2019 version 16.3 or higher.  |
+| 2.2                   | Visual Studio 2017 version 15.9 or higher.  |
+| 2.1                   | Visual Studio 2017 version 15.7 or higher.  |
 
 If you already have Visual Studio installed, you can check your version with the following steps.
 
@@ -221,6 +218,30 @@ dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
+
+### Microsoft Update
+
+[!INCLUDE [microsoft-update](includes/microsoft-update.md)]
+
+### Choose when previous versions are removed
+
+The installer executables always install new content before removing the previous installation. Applications that are running might be interrupted or crash when older runtimes are removed. To minimize the impact of updating .NET, you can specify when a previous .NET installation should be removed using a registry key.
+
+| .NET version | Registry key | Name | Type | Value |
+| -------------- | :--------- | :---------- | :---------- | :---------- |
+| All | HKLM\SOFTWARE\Microsoft\\.NET | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 9 | HKLM\SOFTWARE\Microsoft\\.NET\9.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+| .NET 8 | HKLM\SOFTWARE\Microsoft\\.NET\8.0 | RemovePreviousVersion | REG_SZ | `always`, `never`, or `nextSession` |
+
+- `never` retains previous installations and requires manual intervention to remove previous .NET installations.
+- `always` removes previous installations after the new version is installed. This is the default behavior in .NET.
+- `nextSession` defers the removal until the next logon session from members in the Administrators group.
+- Values are case-insensitive and invalid values default to `always`.
+
+When the removal is deferred, the installer writes a command to the [RunOnce](/windows/win32/setupapi/run-and-runonce-registry-keys) registry key to uninstall the previous version. The command only executes if a user in the Administrators group logs on to the machine.
+
+> [!NOTE]
+> This feature is only available in .NET 8 (8.0.11), 9, and later versions of .NET. It only applies to the standalone installer executables and impacts distributions like WinGet that use them.
 
 ## Install with Windows Package Manager (WinGet)
 

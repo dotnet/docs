@@ -52,4 +52,4 @@ Omit assembly name attributes that have a wildcard value. For example, change `S
 
 - <xref:System.Reflection.Assembly.Load(System.String)?displayProperty=fullName>
 - <xref:System.Type.GetType(System.String)?displayProperty=fullName>
-- <xref:System.Reflection.AssemblyName.#ctor(System.String)?displayProperty=fullName>
+- <xref:System.Reflection.AssemblyName.%23ctor(System.String)?displayProperty=fullName>

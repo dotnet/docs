@@ -8,9 +8,9 @@ metadata:
   description: Find information about .NET Framework, a development platform for building apps for web, Windows, and Microsoft Azure.
   ms.topic: landing-page
   ms.custom: updateeachrelease
-  f1_keywords: 
+  f1_keywords:
     - "f61f02f2-2f20-483d-8f56-a9c8f3a54986"
-  helpviewer_keywords: 
+  helpviewer_keywords:
     - ".NET Framework guide"
   ms.date: 04/22/2020
 
@@ -43,7 +43,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: .NET Framework APIs
-            url: ../../api/index.md?view=netframework-4.8
+            url: ../../api/index.md?view=netframework-4.8.1
 
   # Card
   - title: Install .NET Framework
@@ -54,21 +54,21 @@ landingContent:
           url: https://dotnet.microsoft.com/download
       - linkListType: overview
         links:
-          - text: Installation guide 
+          - text: Installation guide
             url: install/index.md
       - linkListType: concept
         links:
-          - text: .NET Framework & Windows versions 
+          - text: .NET Framework & Windows versions
             url: migration-guide/versions-and-dependencies.md
       - linkListType: how-to-guide
         links:
-          - text: Determine which versions are installed 
+          - text: Determine which versions are installed
             url: migration-guide/how-to-determine-which-versions-are-installed.md
-          - text: Install .NET Framework on Windows 10 
-            url: install/on-windows-10.md
+          - text: Install .NET Framework on Windows 11
+            url: install/on-windows-11.md
           - text: Install .NET Framework 3.5
             url: ./install/dotnet-35-windows.md
-          - text: Install the developer pack or redistributable 
+          - text: Install the developer pack or redistributable
             url: install/guide-for-developers.md
           - text: Troubleshoot blocked installations
             url: install/troubleshoot-blocked-installations-and-uninstallations.md
@@ -82,11 +82,11 @@ landingContent:
             url: windows-services/introduction-to-windows-service-applications.md
       - linkListType: tutorial
         links:
-          - text: Create a Windows service app 
+          - text: Create a Windows service app
             url: windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md
       - linkListType: how-to-guide
         links:
-          - text: Install and uninstall Windows services 
+          - text: Install and uninstall Windows services
             url: windows-services/how-to-install-and-uninstall-services.md
 
   # Card
@@ -94,7 +94,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Desktop guide Introduction
+          - text: Desktop guide introduction
             url: /dotnet/desktop/
           - text: .NET Framework WPF
             url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
@@ -134,13 +134,13 @@ landingContent:
             url: data/adonet/sql-server-connection-pooling.md
       - linkListType: how-to-guide
         links:
-          - text: Retrieve data using a DataReader 
+          - text: Retrieve data using a DataReader
             url: data/adonet/retrieving-data-using-a-datareader.md
           - text: Add data to a DataTable
             url: data/adonet/dataset-datatable-dataview/adding-data-to-a-datatable.md
       - linkListType: reference
         links:
-          - text: Connection string syntax 
+          - text: Connection string syntax
             url: data/adonet/connection-string-syntax.md
           - text: Sample SQL Server databases
             url: data/adonet/sql/linq/downloading-sample-databases.md

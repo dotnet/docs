@@ -31,7 +31,7 @@ You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute 
 ```
 
 > [!NOTE]
-> `/3.6.3` is given as example as it's the first version of the SDK, but it can be replaced with any newer version.
+> `/3.6.3` is given as example and can be replaced with any newer version.
 
 To simplify handling of versions, we recommend setting the SDK version at solution level using the _global.json_ file. For example, your project file would look like:
 

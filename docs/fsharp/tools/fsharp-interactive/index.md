@@ -240,7 +240,7 @@ The `#r` and `#load` directives seen previously are only available in F# Interac
 |`#r "extname:..."`|Reference a package from `extname` extension[^1] (such as `paket`)|
 |`#r "assembly-name.dll"`|References an assembly on disk|
 |`#load "file-name.fsx"`|Reads a source file, compiles it, and runs it.|
-|`#help`|Displays information about available directives or documentation for specific objects and functions.|
+|`#help`|Displays information about available directives or documentation for specific functions.|
 |`#I`|Specifies an assembly search path in quotation marks.|
 |`#quit`|Terminates an F# Interactive session.|
 |`#time "on"` or `#time "off"`|By itself, `#time` toggles whether to display performance information. When it is `"on"`, F# Interactive measures real time, CPU time, and garbage collection information for each section of code that is interpreted and executed.|

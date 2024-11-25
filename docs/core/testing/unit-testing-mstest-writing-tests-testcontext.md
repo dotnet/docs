@@ -16,7 +16,7 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> object is av
 
 - As a parameter to `[AssemblyInitialize]` and `[ClassInitialize]` methods. In this context, the properties related to the test run are not available.
 - As a property of a test class. In this context, the properties related to the test run are available.
-- As a constructor parameter of a test class (starting with v3.6) as an alternative to the property. This construct is recommended over the property because it gives access to the object in the constructor (while the property is only available after the constructor has run). It's also helping to ensure immutability of the object and finally it helps the compiler to enforce that the object is not null.
+- As a constructor parameter of a test class (starting with v3.6). This way is recommended over using the property, because it gives access to the object in the constructor. While the property is only available after the constructor has run. This way also helps to ensure immutability of the object and allows the compiler to enforce that the object is not null.
 
 ```csharp
 [TestClass]
@@ -86,7 +86,7 @@ The `TestContext` class provides properties about the test run along with method
 The `TestContext` provides information about the test run, such as:
 
 - `TestName` – the name of the currently executing test.
-- `CurrentTestOutcome` – the result status of the current test.
+- `CurrentTestOutcome` – the result of the current test.
 - `FullyQualifiedTestClassName` – the full name of the test class.
 - `TestRunDirectory` – the directory where the test run is executed.
 - `DeploymentDirectory` – the directory where the deployment items are located.

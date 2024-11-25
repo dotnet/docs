@@ -8,7 +8,7 @@ ms.date: 11/12/2024
 
 # The `TestContext` class
 
-The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class provides contextual information and support for test execution, making it easier to retrieve information about the test run and manipulate aspects of the environment. It's defined in the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace and is available when using the MSTest Framework.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class gives useful information and tools to help manage test execution. It lets you access details about the test run and adjust the test environment. This class is part of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting> namespace.
 
 ## Accessing the `TestContext` object
 
@@ -18,64 +18,11 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> object is av
 - As a property of a test class. In this context, the properties related to the test run are available.
 - As a constructor parameter of a test class (starting with v3.6). This way is recommended over using the property, because it gives access to the object in the constructor. While the property is only available after the constructor has run. This way also helps to ensure immutability of the object and allows the compiler to enforce that the object is not null.
 
-```csharp
-[TestClass]
-public class MyTestClass
-{
-    public TestContext TestContext { get; set; }
-
-    [AssemblyInitialize]
-    public static void AssemblyInitialize(TestContext context)
-    {
-        // Access TestContext properties and methods here. The properties related to the test run are not available.
-    }
-
-    [ClassInitialize]
-    public static void ClassInitialize(TestContext context)
-    {
-        // Access TestContext properties and methods here. The properties related to the test run are not available.
-    }
-
-    [TestMethod]
-    public void MyTestMethod()
-    {
-        // Access TestContext properties and methods here
-    }
-}
-```
+:::code language="csharp" source="snippets/testcontext/csharp/TestContext.cs":::
 
 Or with MSTest 3.6+:
 
-```csharp
-[TestClass]
-public class MyTestClass
-{
-    private readonly TestContext _testContext;
-
-    public MyTestClass(TestContext testContext)
-    {
-        _testContext = testContext;
-    }
-
-    [AssemblyInitialize]
-    public static void AssemblyInitialize(TestContext context)
-    {
-        // Access TestContext properties and methods here. The properties related to the test run are not available.
-    }
-
-    [ClassInitialize]
-    public static void ClassInitialize(TestContext context)
-    {
-        // Access TestContext properties and methods here. The properties related to the test run are not available.
-    }
-
-    [TestMethod]
-    public void MyTestMethod()
-    {
-        // Access TestContext properties and methods here
-    }
-}
-```
+:::code language="csharp" source="snippets/testcontext/csharp/TestContextCtor.cs":::
 
 ## The `TestContext` members
 
@@ -102,7 +49,9 @@ In MSTest 3.7 and later, the `TestContext` class also provides new properties he
 
 ### Data-driven tests
 
-`TestContext` is essential for data-driven testing in MSTest. It enables you to retrieve and set data for each iteration in a data-driven test, using properties like `DataRow` and `DataConnection` (for datasource based tests).
+In MSTest 3.7 and later, the property `TestData` can be used to access the data for the current test during `TestInitialize` and `TestCleanup` methods.
+
+When targeting .NET framework, the `TestContext` enables you to retrieve and set data for each iteration in a data-driven test, using properties like `DataRow` and `DataConnection` (for datasource based tests).
 
 Consider the following CSV file `TestData.csv`:
 
@@ -115,40 +64,7 @@ Number,Name
 
 You can use the `DataSource` attribute to read the data from the CSV file:
 
-```csharp
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-
-namespace YourNamespace
-{
-    [TestClass]
-    public class CsvDataDrivenTest
-    {
-        public TestContext TestContext { get; set; }
-
-        [TestMethod]
-        [DataSource(
-            "Microsoft.VisualStudio.TestTools.DataSource.CSV", 
-            "|DataDirectory|\\TestData.csv", 
-            "TestData#csv", 
-            DataAccessMethod.Sequential)]
-        public void TestWithCsvDataSource()
-        {
-            // Access data from the current row
-            int number = Convert.ToInt32(TestContext.DataRow["Number"]);
-            string name = TestContext.DataRow["Name"].ToString();
-
-            Console.WriteLine($"Number: {number}, Name: {name}");
-
-            // Example assertions or logic
-            Assert.IsTrue(number > 0);
-            Assert.IsFalse(string.IsNullOrEmpty(name));
-        }
-    }
-}
-```
-
-In MSTest 3.7 and later, the property `TestData` can be used to access the data for the current test during `TestInitialize` and `TestCleanup` methods.
+:::code language="csharp" source="snippets/testcontext/csharp/CsvDataSource.cs":::
 
 ### Store and retrieve runtime data
 
@@ -163,21 +79,6 @@ string value = TestContext.Properties["MyKey"]?.ToString();
 
 The `TestContext.AddResultFile` method allows you to add a file to the test results, making it available for review in the test output. This can be useful if you generate files during your test (for example, log files, screenshots, or data files) that you want to attach to the test results.
 
-```csharp
-[TestMethod]
-public void TestMethodWithResultFile()
-{
-    // Simulate creating a log file for this test
-    string logFilePath = Path.Combine(TestContext.TestRunDirectory, "TestLog.txt");
-    File.WriteAllText(logFilePath, "This is a sample log entry for the test.");
-
-    // Add the log file to the test result
-    TestContext.AddResultFile(logFilePath);
-
-    // Perform some assertions (example only)
-    Assert.IsTrue(File.Exists(logFilePath), "The log file was not created.");
-    Assert.IsTrue(new FileInfo(logFilePath).Length > 0, "The log file is empty.");
-}
-```
+:::code language="csharp" source="snippets/testcontext/csharp/AddResultFile.cs":::
 
 You can also use `TestContext.Write` or `TestContext.WriteLine` methods to write custom messages directly to the test output. This is especially useful for debugging purposes, as it provides real-time logging information within your test execution context.

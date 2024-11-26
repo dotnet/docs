@@ -14,10 +14,10 @@ This article gives an overview of which types are supported for serialization an
 
 The following types serialize as JSON objects (unless they implement <xref:System.Collections.Generic.IEnumerable`1>):
 
-- Classes
-- Structs
-- Interfaces
-- Records and struct records
+* Classes
+* Structs
+* Interfaces
+* Records and struct records
 
 The following code snippet shows the serialization of a simple struct.
 
@@ -27,8 +27,8 @@ The following code snippet shows the serialization of a simple struct.
 
 .NET collection types serialize as JSON arrays. <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> supports a collection type for serialization if it:
 
-- Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>
-- Contains elements that are serializable.
+* Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>
+* Contains elements that are serializable.
 
 The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method and writes the elements.
 
@@ -191,10 +191,10 @@ All custom collections (everything that derives from `IEnumerable`) are supporte
 
 A custom collection is supported for deserialization if it:
 
-- Isn't an interface or abstract.
-- Has a parameterless constructor.
-- Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
-- Implements or inherits one or more of the following interfaces or classes:
+* Isn't an interface or abstract.
+* Has a parameterless constructor.
+* Contains element types that are supported by <xref:System.Text.Json.JsonSerializer>.
+* Implements or inherits one or more of the following interfaces or classes:
   - <xref:System.Collections.Concurrent.ConcurrentQueue%601>
   - <xref:System.Collections.Concurrent.ConcurrentStack%601> \*
   - <xref:System.Collections.Generic.ICollection%601>
@@ -215,11 +215,11 @@ A custom collection is supported for deserialization if it:
 
 There are known issues with the following custom collections:
 
-- <xref:System.Dynamic.ExpandoObject>: See [dotnet/runtime#29690](https://github.com/dotnet/runtime/issues/29690).
-- <xref:System.Dynamic.DynamicObject>: See [dotnet/runtime#1808](https://github.com/dotnet/runtime/issues/1808).
-- <xref:System.Data.DataTable>: See [dotnet/docs#21366](https://github.com/dotnet/docs/issues/21366).
-- <xref:Microsoft.AspNetCore.Http.FormFile?displayProperty=fullName>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).
-- <xref:Microsoft.AspNetCore.Http.IFormCollection?displayProperty=fullName>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).
+* <xref:System.Dynamic.ExpandoObject>: See [dotnet/runtime#29690](https://github.com/dotnet/runtime/issues/29690).
+* <xref:System.Dynamic.DynamicObject>: See [dotnet/runtime#1808](https://github.com/dotnet/runtime/issues/1808).
+* <xref:System.Data.DataTable>: See [dotnet/docs#21366](https://github.com/dotnet/docs/issues/21366).
+* <xref:Microsoft.AspNetCore.Http.FormFile?displayProperty=fullName>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).
+* <xref:Microsoft.AspNetCore.Http.IFormCollection?displayProperty=fullName>: See [dotnet/runtime#1559](https://github.com/dotnet/runtime/issues/1559).
 
 For more information about known issues, see the [open issues in System.Text.Json](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json).
 
@@ -227,33 +227,33 @@ For more information about known issues, see the [open issues in System.Text.Jso
 
 Supported types for the keys of `Dictionary` and `SortedList` types include the following:
 
-- `Boolean`
-- `Byte`
-- `DateTime`
-- `DateTimeOffset`
-- `Decimal`
-- `Double`
-- `Enum`
-- `Guid`
-- `Int16`
-- `Int32`
-- `Int64`
-- `Object` (Only on serialization and if the runtime type is one of the supported types in this list.)
-- `SByte`
-- `Single`
-- `String`
-- `UInt16`
-- `UInt32`
-- `UInt64`
+* `Boolean`
+* `Byte`
+* `DateTime`
+* `DateTimeOffset`
+* `Decimal`
+* `Double`
+* `Enum`
+* `Guid`
+* `Int16`
+* `Int32`
+* `Int64`
+* `Object` (Only on serialization and if the runtime type is one of the supported types in this list.)
+* `SByte`
+* `Single`
+* `String`
+* `UInt16`
+* `UInt32`
+* `UInt64`
 
 ## Unsupported types
 
 The following types aren't supported for serialization:
 
-- <xref:System.Type?displayProperty=fullName> and <xref:System.Reflection.MemberInfo?displayProperty=fullName>
-- <xref:System.ReadOnlySpan`1>, <xref:System.Span`1>, and ref structs in general
-- Delegate types
-- <xref:System.IntPtr> and <xref:System.UIntPtr>
+* <xref:System.Type?displayProperty=fullName> and <xref:System.Reflection.MemberInfo?displayProperty=fullName>
+* <xref:System.ReadOnlySpan`1>, <xref:System.Span`1>, and ref structs in general
+* Delegate types
+* <xref:System.IntPtr> and <xref:System.UIntPtr>
 
 ### System.Data namespace
 
@@ -261,7 +261,7 @@ There are no built-in converters for <xref:System.Data.DataSet>, <xref:System.Da
 
 ## See also
 
-- [Populate initialized properties](populate-properties.md)
-- [System.Text.Json overview](overview.md)
-- [System.Text.Json API reference](xref:System.Text.Json)
-- [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)
+* [Populate initialized properties](populate-properties.md)
+* [System.Text.Json overview](overview.md)
+* [System.Text.Json API reference](xref:System.Text.Json)
+* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

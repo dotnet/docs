@@ -11,7 +11,7 @@ ms.date: 11/24/2024
 
 # Chain of thought prompting
 
-GPT model performance benefits from *prompt engineering*, which is the practice of providing instructions and examples to a model to prime or refine its output. As they process instructions, models make more reasoning errors when they try to answer right away rather than taking time to work out an answer. You can help the model reason its way toward correct answers more reliably by asking for the model to include its chain of thought&mdash;that is, the steps it took to follow an instruction, along with the results of each step.
+GPT model performance and response quality benefits from *prompt engineering*, which is the practice of providing instructions and examples to a model to prime or refine its output. As they process instructions, models make more reasoning errors when they try to answer right away rather than taking time to work out an answer. You can help the model reason its way toward correct answers more reliably by asking for the model to include its chain of thought&mdash;that is, the steps it took to follow an instruction, along with the results of each step.
 
 *Chain of thought prompting* is the practice of prompting a model to perform a task step-by-step and to present each step and its result in order in the output. This simplifies prompt engineering by offloading some execution planning to the model, and makes it easier to connect any problem to a specific step so you know where to focus further efforts.
 
@@ -22,7 +22,8 @@ It's generally simpler to just instruct the model to include its chain of though
 To use an instruction for chain of thought prompting, include a directive that tells the model to perform the task step-by-step and to output the result of each step.
 
 ```csharp
-prompt= "Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles. Break the task into steps, and output the result of each step as you perform it."; 
+prompt= """Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles.
+Break the task into steps, and output the result of each step as you perform it."""; 
 ```
 
 ## Use chain of thought prompting in examples

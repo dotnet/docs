@@ -257,7 +257,7 @@ For more information, see [Preserve references and handle circular references](p
 
 ### Dictionary with non-string key
 
-Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`. However, in `System.Text.Json`, `TKey` must be a primitive type, not a custom type. For more information, see [Supported key types](supported-collection-types.md#supported-key-types).
+Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`. However, in `System.Text.Json`, `TKey` must be a primitive type, not a custom type. For more information, see [Supported key types](supported-types.md#supported-key-types).
 
 > [!CAUTION]
 > Deserializing to a `Dictionary<TKey, TValue>` where `TKey` is typed as anything other than `string` could introduce a security vulnerability in the consuming application. For more information, see [dotnet/runtime#4761](https://github.com/dotnet/runtime/issues/4761).
@@ -266,7 +266,7 @@ Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dicti
 
 <xref:System.Text.Json?displayProperty=fullName> doesn't provide built-in support for the following types:
 
-* <xref:System.Data.DataTable> and related types (for more information, see [Supported collection types](supported-collection-types.md#systemdata-namespace))
+* <xref:System.Data.DataTable> and related types (for more information, see [Supported types](supported-types.md#systemdata-namespace))
 * <xref:System.Dynamic.ExpandoObject>
 * <xref:System.TimeZoneInfo>
 * <xref:System.Numerics.BigInteger>

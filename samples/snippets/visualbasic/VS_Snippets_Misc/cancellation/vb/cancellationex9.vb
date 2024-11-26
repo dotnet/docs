@@ -9,7 +9,7 @@ Class CancelOldStyleEvents
     ' Old-style MRE that doesn't support unified cancellation.
     Shared mre As New ManualResetEvent(False)
 
-    Shared Sub Main()
+    Shared Sub Main9()
         Dim cts As New CancellationTokenSource()
 
         ' Pass the same token source to the delegate and to the task instance.

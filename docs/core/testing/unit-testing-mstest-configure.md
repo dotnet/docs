@@ -180,6 +180,8 @@ Each element of the file is optional because it has a default value.
 
 ```json
 {
+  "platformOptions": {
+  },
   "mstest": {
     "execution": {
         "mapInconclusiveToFailed" : true,

@@ -192,7 +192,7 @@ type Shape =
 
 ## `.Is*` properties on cases
 
-Since F# 9, discriminated unions expose auto-generated `.Is*` properties for each case, allowing you to check if a value is of a particular case. 
+Since F# 9, discriminated unions expose auto-generated `.Is*` properties for each case, allowing you to check if a value is of a particular case.
 
 This is how it can be used:
 

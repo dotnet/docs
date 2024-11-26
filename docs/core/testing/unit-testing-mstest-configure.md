@@ -145,7 +145,7 @@ MSTest settings are grouped by functionality that are described in the sections 
 | scope | class | The scope of parallelization. You can set it to `method`. The default, `class`, corresponds to running all tests of a given class sequentially but multiple classes in parallel. |
 | workers | 0 | The number of threads/workers to be used for parallelization. The default value maps to the number of processors on the current machine. |
 
-#### Run settings
+#### Execution settings
 
 | Entry | Default | Description |
 |-------|---------|-------------|

@@ -18,7 +18,7 @@ let (|identifier|) [arguments] valueToMatch = expression
 let (|identifier1|identifier2|...|) valueToMatch = expression
 
 // Partial active pattern definition.
-// Can use either FSharp.Core.option<_> or bool to represent if the type is satisfied at the call site.
+// Can use FSharp.Core.option<_>, FSharp.Core.voption<_> or bool to represent if the type is satisfied at the call site.
 let (|identifier|_|) [arguments] valueToMatch = expression
 ```
 

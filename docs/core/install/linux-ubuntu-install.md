@@ -79,7 +79,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 ## Ubuntu 24.04
 
-[!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
+[!INCLUDE [linux-ubuntu-package-feed-only](includes/linux-ubuntu-package-feed-only.md)]
 
 The following versions of .NET are supported or available for Ubuntu 24.04:
 
@@ -101,8 +101,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 # [.NET 6](#tab/dotnet6)
 
-> [!IMPORTANT]
-> .NET 6 is available in the Ubuntu backports package repository for Ubuntu 24.04, and not the built-in package repository. For more information, see [Register the Ubuntu backports package repository](linux-ubuntu.md#register-the-ubuntu-net-backports-package-repository). After the repository is registered, use the following sections to install .NET.
+[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
 
 > [!WARNING]
 > .NET 6 is no longer supported.

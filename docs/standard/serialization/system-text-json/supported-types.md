@@ -36,14 +36,14 @@ Deserialization is more complicated and is not supported for some collection typ
 
 The following sections are organized by namespace and show which types are supported for serialization and deserialization.
 
-- [System.Array namespace](#systemarray-namespace)
-- [System.Collections namespace](#systemcollections-namespace)
-- [System.Collections.Generic namespace](#systemcollectionsgeneric-namespace)
-- [System.Collections.Immutable namespace](#systemcollectionsimmutable-namespace)
-- [System.Collections.Specialized namespace](#systemcollectionsspecialized-namespace)
-- [System.Collections.Concurrent namespace](#systemcollectionsconcurrent-namespace)
-- [System.Collections.ObjectModel namespace](#systemcollectionsobjectmodel-namespace)
-- [Custom collections](#custom-collections)
+* [System.Array namespace](#systemarray-namespace)
+* [System.Collections namespace](#systemcollections-namespace)
+* [System.Collections.Generic namespace](#systemcollectionsgeneric-namespace)
+* [System.Collections.Immutable namespace](#systemcollectionsimmutable-namespace)
+* [System.Collections.Specialized namespace](#systemcollectionsspecialized-namespace)
+* [System.Collections.Concurrent namespace](#systemcollectionsconcurrent-namespace)
+* [System.Collections.ObjectModel namespace](#systemcollectionsobjectmodel-namespace)
+* [Custom collections](#custom-collections)
 
 ### System.Array namespace
 

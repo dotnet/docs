@@ -12,7 +12,7 @@ This article gives an overview of which types are supported for serialization an
 
 ## Types that serialize as JSON objects
 
-The following types serialize as JSON objects (unless they implement <xref:System.Collections.Generic.IEnumerable`1>):
+The following types serialize as JSON objects (unless they implement <xref:System.Collections.Generic.IEnumerable`1>, in which case they serialize as JSON arrays):
 
 * Classes
 * Structs
@@ -35,6 +35,15 @@ The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> met
 Deserialization is more complicated and is not supported for some collection types.
 
 The following sections are organized by namespace and show which types are supported for serialization and deserialization.
+
+- [System.Array namespace](#systemarray-namespace)
+- [System.Collections namespace](#systemcollections-namespace)
+- [System.Collections.Generic namespace](#systemcollectionsgeneric-namespace)
+- [System.Collections.Immutable namespace](#systemcollectionsimmutable-namespace)
+- [System.Collections.Specialized namespace](#systemcollectionsspecialized-namespace)
+- [System.Collections.Concurrent namespace](#systemcollectionsconcurrent-namespace)
+- [System.Collections.ObjectModel namespace](#systemcollectionsobjectmodel-namespace)
+- [Custom collections](#custom-collections)
 
 ### System.Array namespace
 

@@ -36,7 +36,7 @@ When migrating from BinaryFormatter to `System.Text.Json`, it's crucial to note 
 
 - It supports serialization and deserialization of many collections, but there are limitations. See the [supported types](../system-text-json/supported-types.md) documentation for details on which types and collections are supported for serialization and deserialization.
 
-- Under [certain conditions](../system-text-json/supported-types.md#custom-collections-with-deserialization-support), it supports serialization and deserialization of custom generic collections.
+- Under [certain conditions](../system-text-json/supported-types.md#deserialization-support), it supports serialization and deserialization of custom generic collections.
 
 - Other types [without built-in support](../system-text-json/migrate-from-newtonsoft.md#types-without-built-in-support) are: `DataSet`, `DataTable`, `DBNull`, `TimeZoneInfo`, `Type`, `ValueTuple`. However, you can write a custom converter to support these types.
 

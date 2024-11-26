@@ -17,16 +17,23 @@ using AzureEventSourceListener listener = new((args, message) =>
 }, EventLevel.LogAlways);
 #endregion snippet_FilteredLogging
 
+#region snippet_Dac
 builder.Services.AddAzureClients(clientBuilder =>
 {
     clientBuilder.AddBlobServiceClient(
         new Uri("https://<account-name>.blob.core.windows.net"));
-    #region snippet_Dac
+
     DefaultAzureCredential credential = new();
     clientBuilder.UseCredential(credential);
-    #endregion snippet_Dac
+});
+#endregion snippet_Dac
 
-    #region snippet_DacExcludes
+#region snippet_DacExcludes
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddBlobServiceClient(
+        new Uri("https://<account-name>.blob.core.windows.net"));
+
     clientBuilder.UseCredential(new DefaultAzureCredential(
         new DefaultAzureCredentialOptions
         {
@@ -34,14 +41,21 @@ builder.Services.AddAzureClients(clientBuilder =>
             ExcludeWorkloadIdentityCredential = true,
             ManagedIdentityClientId = userAssignedClientId,
         }));
-    #endregion snippet_DacExcludes
+});
+#endregion snippet_DacExcludes
 
-    #region snippet_Ctc
+#region snippet_Ctc
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddBlobServiceClient(
+        new Uri("https://<account-name>.blob.core.windows.net"));
+
     clientBuilder.UseCredential(new ChainedTokenCredential(
         new ManagedIdentityCredential(clientId: userAssignedClientId),
         new VisualStudioCredential()));
-    #endregion snippet_Ctc
 });
+#endregion snippet_Ctc
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

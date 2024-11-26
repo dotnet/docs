@@ -26,7 +26,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 
 In Visual Studio, the option to change the language version through the UI might be disabled because the default version is aligned with the project's target framework (`TFM`). This default configuration ensures compatibility between language features and runtime support.
 
-For example, changing the target `TFM` (e.g., from [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) to [.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)) will update the language version accordingly, from C# 10 to C# 13. This approach prevents issues with runtime compatibility and minimizes unexpected build errors due to unsupported language features.
+For example, changing the target `TFM` (for example, from [.NET 6](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) to [.NET 9](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)) will update the language version accordingly, from C# 10 to C# 13. This approach prevents issues with runtime compatibility and minimizes unexpected build errors due to unsupported language features.
 
 If you need a specific language version that differs from the one automatically selected, refer to the methods below to override the default settings directly in the project file.
 

@@ -29,6 +29,8 @@ The platform will automatically detect and load the *[appname].testconfig.json* 
 
 When using [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild), you can simply create a *testconfig.json* file that will be automatically renamed to *[appname].testconfig.json* and moved to the output directory of the test project.
 
+Starting with Microsoft.Testing.Platform 1.5, the command-line argument `--config-file` can be used to specify the path to the *testconfig.json*. This takes precedence over the *[appname].testconfig.json* file.
+
 > [!NOTE]
 > The *[appname].testconfig.json* file will get overwritten on subsequent builds.
 
@@ -38,3 +40,7 @@ Environment variables can be used to supply some runtime configuration informati
 
 > [!NOTE]
 > Environment variables take precedence over configuration settings in the *testconfig.json* file.
+
+### `TESTINGPLATFORM_UI_LANGUAGE` environment variable
+
+Starting with Microsoft.Testing.Platform 1.5, this environment variable specifies the culture used by the platform for displaying messages and logs. This takes precedence over the Visual Studio and .NET SDK languages.

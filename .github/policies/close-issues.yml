@@ -19,3 +19,12 @@ configuration:
               - addReply:
                   reply: This issue has been automatically closed due to no response from the original author. Feel free to reopen it if you have more information that can help us investigate the issue further.
               - closeIssue
+
+        eventResponderTasks:
+            - description: Close issues labeled 'code-of-conduct'
+              if:
+                - payloadType: Issues
+                - hasLabel:
+                    label: code-of-conduct
+              then:
+                - closeIssue

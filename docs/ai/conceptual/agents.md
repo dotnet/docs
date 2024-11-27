@@ -3,7 +3,7 @@ title: "Agents and Copilots Bring Automation and Interactive Assistance to Your 
 description: "Learn how agents and copilots intelligently extend the functionality of LLMs to automatically meet user goals in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 04/15/2024
+ms.date: 11/24/2024
 
 #customer intent: As a .NET developer, I want to understand how agents and copilots extend the functionality of LLMs, so that my apps can handle any type of content and automatically meet user goals.
 

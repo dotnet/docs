@@ -10,7 +10,7 @@ zone_pivot_groups: dotnet-version
 
 In this tutorial, you create a simple utility library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 8, it can be called by any application that targets .NET 8. This tutorial shows how to target .NET 8.
+A *class library* defines types and methods that are called by an application. If the library targets .NET Standard 2.0, it can be called by any .NET implementation (including .NET Framework) that supports .NET Standard 2.0. If the library targets .NET 9, it can be called by any application that targets .NET 9. This tutorial shows how to target .NET 9.
 
 When you create a class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
 
@@ -20,7 +20,7 @@ When you create a class library, you can distribute it as a third-party componen
 
   For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
-* The [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
+* The [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0).
 
 ## Create a class library project
 
@@ -36,21 +36,21 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Then select the location where you would like the new project to be created: Create a folder named `ClassLibraryProjects` and select it.
 
-1. Name the project **StringLibrary**, select **Show all template options**, select **.NET 8** and select **Create Project**.
+1. Name the project **StringLibrary**, select **Show all template options**, select **.NET 9** and select **Create Project**.
 
 1. Name the project **StringLibrary** and select **Create Project**.
 
 1. Press Enter at the prompt **Project will be created in \<path>**.
 
-1. Check to make sure that the library targets .NET 8. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
+1. Check to make sure that the library targets .NET 9. In **Explorer**, open *StringLibrary/StringLibrary.csproj*.
 
-   The `TargetFramework` element shows that the project targets .NET 8.0.
+   The `TargetFramework` element shows that the project targets .NET 9.0.
 
    ```xml
    <Project Sdk="Microsoft.NET.Sdk">
 
      <PropertyGroup>
-       <TargetFramework>net8.0</TargetFramework>
+       <TargetFramework>net9.0</TargetFramework>
      </PropertyGroup>
 
    </Project>
@@ -58,7 +58,7 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Open *Class1.cs* and replace the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/StringLibrary/Class1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
@@ -77,7 +77,7 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net8.0\StringLibrary.dll
+     StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\net9.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
        0 Error(s)
@@ -96,7 +96,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/ShowCase/Program.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -195,7 +195,7 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Open *Class1.cs* and replace the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/StringLibrary/Class1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
@@ -231,7 +231,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/ShowCase/Program.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
@@ -328,7 +328,7 @@ Start by creating a .NET class library project named "StringLibrary" and an asso
 
 1. Open *Class1.cs* and replace the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/StringLibrary/Class1.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/StringLibrary/Class1.cs":::
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
@@ -364,7 +364,7 @@ Add a console application that uses the class library. The app will prompt the u
 
 1. Open *ShowCase/Program.cs* and replace all of the code with the following code.
 
-   :::code language="csharp" source="./snippets/library-with-visual-studio-6-0/csharp/ShowCase/Program.cs":::
+   :::code language="csharp" source="./snippets/library-with-visual-studio/csharp/ShowCase/Program.cs":::
 
    The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 

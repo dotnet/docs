@@ -6,7 +6,7 @@ Imports System.Threading
 Imports System.Threading.Tasks
 
 Class LinkedTokenSourceDemo
-    Shared Sub Main()
+    Shared Sub Main13()
         Dim worker As New WorkerWithTimer()
         Dim cts As New CancellationTokenSource()
 

@@ -61,12 +61,12 @@ Ensure that arguments do not contain `(?.)` or `?[]` when passed to the assertio
 
 ```csharp
 Company? company = GetCompany();
-Assert.AreEqual(company?.Name, "Contoso"); // MSTEST0026
+Assert.AreEqual("Contoso", company?.Name); // MSTEST0026
 StringAssert.Contains(company?.Address, "Brazil"); // MSTEST0026
 
 // Fixed code
 Assert.IsNotNull(company);
-Assert.AreEqual(company.Name, "Contoso");
+Assert.AreEqual("Contoso", company.Name);
 StringAssert.Contains(company.Address, "Brazil");
 ```
 

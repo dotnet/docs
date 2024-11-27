@@ -8,7 +8,7 @@ ms.date: 02/13/2024
 
 # MSTest SDK overview
 
-Introduced in .NET 9, [MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk) is a [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps. It's possible to build a MSTest app without this SDK, however, the MSTest SDK is:
+[MSTest.Sdk](https://www.nuget.org/packages/MSTest.Sdk) is a [MSBuild project SDK](/visualstudio/msbuild/how-to-use-project-sdk) for building MSTest apps. It's possible to build a MSTest app without this SDK, however, the MSTest SDK is:
 
 * Tailored towards providing a first-class experience for testing with MSTest.
 * The recommended target for most users.
@@ -19,7 +19,7 @@ The MSTest SDK discovers and runs your tests using the [MSTest runner](./unit-te
 You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute of the `Project` node of your project:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.3.1">
+<Project Sdk="MSTest.Sdk/3.6.3">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -31,7 +31,7 @@ You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute 
 ```
 
 > [!NOTE]
-> `/3.3.1` is given as example as it's the first version of the SDK, but it can be replaced with any newer version.
+> `/3.6.3` is given as example and can be replaced with any newer version.
 
 To simplify handling of versions, we recommend setting the SDK version at solution level using the _global.json_ file. For example, your project file would look like:
 
@@ -52,7 +52,7 @@ Then, specify the `MSTest.Sdk` version in the _global.json_ file as follows:
 ```json
 {
     "msbuild-sdks": {
-        "MSTest.Sdk": "3.3.1"
+        "MSTest.Sdk": "3.6.3"
     }
 }
 ```
@@ -114,7 +114,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
 Here's a full example, using the `None` profile:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.3.1">
+<Project Sdk="MSTest.Sdk/3.6.3">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -143,7 +143,7 @@ Extensions can be enabled and disabled by MSBuild properties with the pattern `E
 For example, to enable the crash dump extension (NuGet package [Microsoft.Testing.Extensions.CrashDump](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump)), you can use the following property `EnableMicrosoftTestingExtensionsCrashDump` set to `true`:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.3.1">
+<Project Sdk="MSTest.Sdk/3.6.3">
 
 <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -167,7 +167,7 @@ This property pattern can be used to enable an additional extension on top of th
 You can also disable an extension that's coming from the selected profile. For example, disable the `MS Code Coverage` extension by setting `<EnableMicrosoftTestingExtensionsCodeCoverage>false</EnableMicrosoftTestingExtensionsCodeCoverage>`:
 
 ```xml
-<Project Sdk="MSTest.Sdk/3.3.1">
+<Project Sdk="MSTest.Sdk/3.6.3">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -245,7 +245,7 @@ Add the version to your `global.json`:
 ```json
 {
     "msbuild-sdks": {
-        "MSTest.Sdk": "3.3.1"
+        "MSTest.Sdk": "3.6.3"
     }
 }
 ```

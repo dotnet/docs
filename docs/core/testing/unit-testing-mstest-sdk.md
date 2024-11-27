@@ -83,9 +83,33 @@ The concept of *profiles* allows you to select the default set of configurations
 
 You can set the profile using the property `TestingExtensionsProfile` with one of the following three profiles:
 
-* `Default` - Enables the recommended extensions for this version of MSTest.SDK. This is the default when the property isn't set explicitly.
 * `None` - No extensions are enabled.
+
+* `Default` - Enables the recommended extensions for this version of MSTest.SDK. This is the default when the property isn't set explicitly.
+
+  Enables the following extensions:
+
+  * [Code Coverage](./unit-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
+
+  * [Trx Report](./unit-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
+  
 * `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
+
+  Enables the following extensions:
+
+  * [Code Coverage](./unit-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
+
+  * [Crash Dump](./unit-testing-platform-extensions-diagnostics.md#crash-dump)
+
+  * [Fakes](./unit-testing-platform-extensions-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
+
+  * [Hang Dump](./unit-testing-platform-extensions-diagnostics.md#hang-dump)
+
+  * [Hot Reload](./unit-testing-platform-extensions-hosting.md#hot-reload)
+
+  * [Retry](./unit-testing-platform-extensions-policy.md#retry)
+  
+  * [Trx Report](./unit-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
 
 Here's a full example, using the `None` profile:
 

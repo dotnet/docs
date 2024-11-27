@@ -185,7 +185,28 @@ The list below described only the platform options. To see the specific options 
 
 - **`@`**
 
-  Specifies a response file (rsp).
+  Specifies a response file (rsp). A response file is a file that includes command-line arguments, each in a separate line. This helps for very long commands that may exceed the terminal limits. You can also specify a response file along with extra command-line arguments. For example:
+
+  ```console
+  ./TestExecutable.exe @"filter.rsp" --timeout 10s
+  ```
+
+  where *filter.rsp* can have the following contents:
+
+  ```rsp
+  --filter "A very long filter"
+  ```
+
+  Or a single rsp file can be used to specify both timeout and filter as follows:
+
+  ```console
+  ./TestExecutable.exe @"arguments.rsp"
+  ```
+
+  ```rsp
+  --filter "A very long filter"
+  --timeout 10s
+  ```
 
 - **`--config-file`**
 

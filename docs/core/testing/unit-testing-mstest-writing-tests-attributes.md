@@ -69,12 +69,12 @@ Use the following elements to set up data-driven tests. For more information, se
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataTestMethodAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute>
 
 ### `DataRowAttribute`
 
-The `DataRowAttribute` allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute` or `DataTestMethodAttribute`.
+The `DataRowAttribute` allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute`.
 
 The number and types of arguments must exactly match the test method signature. Consider the following example of a valid test class demonstrating the `DataRow` attribute usage with inline arguments that align to test method parameters:
 

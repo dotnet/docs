@@ -60,8 +60,8 @@ namespace BinaryFormatterEventSample
         private static byte[] SerializePerson(Person p)
         {
             MemoryStream memStream = new MemoryStream();
+#pragma warning disable SYSLIB0011 // BinaryFormatter is obsolete
             BinaryFormatter formatter = new BinaryFormatter();
-#pragma warning disable SYSLIB0011 // BinaryFormatter.Serialize is obsolete
             formatter.Serialize(memStream, p);
 #pragma warning restore SYSLIB0011
 
@@ -71,9 +71,9 @@ namespace BinaryFormatterEventSample
         private static Person DeserializePerson(byte[] serializedData)
         {
             MemoryStream memStream = new MemoryStream(serializedData);
+#pragma warning disable SYSLIB0011 // BinaryFormatter is obsolete
             BinaryFormatter formatter = new BinaryFormatter();
 
-#pragma warning disable SYSLIB0011 // Danger: BinaryFormatter.Deserialize is insecure for untrusted input
             return (Person)formatter.Deserialize(memStream);
 #pragma warning restore SYSLIB0011
         }

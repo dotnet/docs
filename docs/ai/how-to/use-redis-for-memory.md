@@ -57,8 +57,5 @@ Before you integrate your Redis database to the Semantic Kernel SDK, make sure t
 
 ## Related content
 
-<!-- TODO: update these links once the other docs are done -->
-
-* [Use RAG with SQL]<!-- (link.md) -->
-* [Data ingestion from SharePoint]<!-- (link.md) -->
-* [Working with vector databases]<!-- (link.md) -->
+* [Working with vector databases](../tutorials/tutorial-ai-vector-search.md)
+* [Chat using your own data sample for .NET](../get-started-app-chat-template.md)

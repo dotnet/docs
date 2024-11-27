@@ -3,10 +3,11 @@ Option Strict On
 
 ' <Snippet4>
 Imports System.Net
+Imports System.Net.Http
 Imports System.Threading
 
-Class Example
-    Private Shared Sub Main()
+Class Example4
+    Private Shared Sub Main4()
         Dim cts As New CancellationTokenSource()
 
         StartWebRequest(cts.Token)
@@ -17,19 +18,15 @@ Class Example
     End Sub
 
     Private Shared Sub StartWebRequest(token As CancellationToken)
-        Dim wc As New WebClient()
-        wc.DownloadStringCompleted += Function(s, e) Console.WriteLine("Request completed.")
+        Dim client As New HttpClient()
 
-        ' Cancellation on the token will 
-        ' call CancelAsync on the WebClient.
-        token.Register(Function()
-                           wc.CancelAsync()
+        token.Register(Sub()
+                           client.CancelPendingRequests()
                            Console.WriteLine("Request cancelled!")
-
-                       End Function)
+                       End Sub)
 
         Console.WriteLine("Starting request.")
-        wc.DownloadStringAsync(New Uri("http://www.contoso.com"))
+        client.GetStringAsync(New Uri("http://www.contoso.com"))
     End Sub
 End Class
 ' </Snippet4>

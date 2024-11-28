@@ -27,7 +27,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The primary reason for this change was to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data, and redacting them from logs by default helps protect this information. The fragment part is being scrubbed to keep the implementation simple and efficient.
+The primary reason for this change was to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data, and redacting them from logs by default helps protect this information. To keep the implementation simple and efficient, the fragment part is also being scrubbed together with the query.
 
 ## Recommended action
 

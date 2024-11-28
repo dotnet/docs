@@ -43,4 +43,4 @@ Environment variables can be used to supply some runtime configuration informati
 
 ### `TESTINGPLATFORM_UI_LANGUAGE` environment variable
 
-Starting with Microsoft.Testing.Platform 1.5, this environment variable specifies the culture used by the platform for displaying messages and logs. This takes precedence over the Visual Studio and .NET SDK languages.
+Starting with Microsoft.Testing.Platform 1.5, this environment variable sets the language of the platform for displaying messages and logs using a locale value such as `en-us`. This takes precedence over the Visual Studio and .NET SDK languages. The supported values are the same as for Visual Studio. For more information, see the section on changing the installer language in the [Visual Studio installation documentation](/visualstudio/install/install-visual-studio).

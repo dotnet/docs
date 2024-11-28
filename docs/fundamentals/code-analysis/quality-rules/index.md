@@ -335,6 +335,7 @@ The following table lists code quality analysis rules.
 > | [IL3001: Avoid accessing Assembly file path when publishing as a single-file](../../../core/deploying/single-file/warnings/il3001.md) | Avoid accessing Assembly file path when publishing as a single file. |
 > | [IL3002: Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file](../../../core/deploying/single-file/warnings/il3002.md) | Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file|
 > | [IL3003: 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.](../../../core/deploying/single-file/warnings/il3003.md) | 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.|
+> | [IL3005: `RequiresAssemblyFilesAttribute` cannot be placed directly on application entry point.](../../../core/deploying/single-file/warnings/il3005.md)|`RequiresAssemblyFilesAttribute` cannot be placed directly on application entry point. |
 
 ## Legend
 

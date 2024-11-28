@@ -56,4 +56,4 @@ Use the better alternative method.
 
 ## When to suppress warnings
 
-You usually don't want to suppress warnings from this rule.
+If the assert is intended to verify the behavior of a user-defined operator, you can and should suppress the warning.

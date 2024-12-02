@@ -52,7 +52,7 @@ The [dotnet-stack](dotnet-stack.md) tool allows you to quickly print the managed
 
 ### dotnet-debugger-extensions
 
-[dotnet-debugger-extensions](dotnet-debugger-extensions.md) installs the [.NET debugger extensions](debugger-extensions.md) on Linux and macOS (and on Windows if you're using [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools)).
+[dotnet-debugger-extensions](dotnet-debugger-extensions.md) installs the [.NET debugger extensions](debugger-extensions.md) on Linux, macOS, and Windows.  [LLDB](https://lldb.llvm.org/) is required for Linux and macOS, and  [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools) is needed for Windows.  
 
 ## Other tools
 

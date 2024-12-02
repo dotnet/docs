@@ -22,7 +22,7 @@ ms.author: enjieid
 | **Enabled by default**              | Yes                                                                    |
 | **Default severity**                | Warning                                                                |
 | **Introduced in version**           | 3.6.0                                                                  |
-| **There is a code fix**             | No                                                                     |
+| **Is there a code fix**             | No                                                                     |
 
 ## Cause
 

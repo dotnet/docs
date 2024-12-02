@@ -36,14 +36,20 @@ public class LeftOuterJoins
     private static void LeftOuterJoinMethodSyntax()
     {
         // <LeftOuterJoinMethod>
-        var query = students.GroupJoin(departments, student => student.DepartmentID, department => department.ID,
-            (student, departmentList) => new { student, subgroup = departmentList.AsQueryable() })
-            .SelectMany(joinedSet => joinedSet.subgroup.DefaultIfEmpty(), (student, department) => new
-            {
-                student.student.FirstName,
-                student.student.LastName,
-                Department = department.Name
-            });
+        var query = students
+            .GroupJoin(
+                departments,
+                student => student.DepartmentID,
+                department => department.ID,
+                (student, departmentList) => new { student, subgroup = departmentList })
+            .SelectMany(
+                joinedSet => joinedSet.subgroup.DefaultIfEmpty(),
+                (student, department) => new
+                {
+                    student.student.FirstName,
+                    student.student.LastName,
+                    Department = department.Name
+                });
 
         foreach (var v in query)
         {

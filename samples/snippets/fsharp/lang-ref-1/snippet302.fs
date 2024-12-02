@@ -1,2 +1,5 @@
-let list = List.map (fun i -> i + 1) [ 1; 2; 3 ]
-printfn "%A" list
+let fullNotation = [ "a"; "ab"; "abc" ] |> List.find ( fun text -> text.EndsWith("c") )
+printfn "%A" fullNotation         // Output: "abc"
+
+let shorthandNotation = [ "a"; "ab"; "abc" ] |> List.find ( _.EndsWith("b") )
+printfn "%A" shorthandNotation    // Output: "ab"

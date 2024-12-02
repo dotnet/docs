@@ -664,8 +664,8 @@ Project file:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.LOHThreshold` | *decimal value* | .NET Core 1.0 |
-| **Environment variable** | `COMPlus_GCLOHThreshold` | *hexadecimal value* | .NET Core 1.0 |
+| **runtimeconfig.json** | `System.GC.LOHThreshold` | *decimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCLOHThreshold` | *hexadecimal value* | .NET Core 3.0 |
 | **Environment variable** | `DOTNET_GCLOHThreshold` | *hexadecimal value* | .NET 6 |
 | **app.config for .NET Framework** | [GCLOHThreshold](../../framework/configure-apps/file-schema/runtime/gclohthreshold-element.md) | *decimal value* | .NET Framework 4.8 |
 

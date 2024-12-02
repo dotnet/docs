@@ -19,7 +19,7 @@ Previously, the default implementation of `IHttpClientFactory` logging included 
 
 ## New behavior
 
-The messages passed to <xref:Microsoft.Extensions.Logging.ILogger> now have the query and the fragment part replaced by a `*` character.
+The messages passed to <xref:Microsoft.Extensions.Logging.ILogger> now have the query and fragment part replaced by a `*` character.
 
 ## Type of breaking change
 
@@ -27,7 +27,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The primary reason for this change is to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data and excluding them from logs by default helps protect this information. The fragment part is being scrubbed to keep the implementation simple and efficient.
+The primary reason for this change is to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data and excluding them from logs by default helps protect this information. To keep the implementation simple and efficient, the fragment part is also scrubbed.
 
 ## Recommended action
 

@@ -22,7 +22,7 @@ ms.author: ygerges
 | **Enabled by default**              | Yes                                                                    |
 | **Default severity**                | Info                                                                   |
 | **Introduced in version**           | 3.7.0                                                                  |
-| **There is a code fix**             | Yes                                                                    |
+| **Is there a code fix**             | Yes                                                                    |
 
 ## Cause
 

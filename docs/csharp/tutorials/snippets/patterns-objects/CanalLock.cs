@@ -34,7 +34,7 @@ public class CanalLock
         {
             (false, _, _) => false,
             (true, _, WaterLevel.Low) => true,
-            (true, false, WaterLevel.High) => throw new InvalidOperationException("Cannot open high gate when the water is low"),
+            (true, false, WaterLevel.High) => throw new InvalidOperationException("Cannot open low gate when the water is high"),
             _ => throw new InvalidOperationException("Invalid internal state"),
         };
     }

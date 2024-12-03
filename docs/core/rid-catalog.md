@@ -132,10 +132,15 @@ For more information, see [.NET dependencies and requirements](./install/macos.m
 ### iOS RIDs
 
 - `ios-arm64`
+- `iossimulator-arm64`
+- `iossimulator-x64`
 
 ### Android RIDs
 
 - `android-arm64`
+- `android-arm`
+- `android-x64`
+- `android-x86`
 
 ## See also
 

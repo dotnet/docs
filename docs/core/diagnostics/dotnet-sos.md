@@ -10,7 +10,7 @@ ms.custom: linux-related-content
 **This article applies to:** ✔️ .NET 6.0 SDK and later versions
 
 > [!NOTE]
-Consider using the [.NET debugger extensions](dotnet-debugger-extensions.md) instead which include the SOS functionality and additional features.
+Consider using the [.NET debugger extensions](dotnet-debugger-extensions.md) instead, which include the SOS functionality and additional features.
 
 ## Install
 
@@ -41,7 +41,7 @@ dotnet-sos [-h|--help] [options] [command]]
 
 ## Description
 
-The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md). This extension lets you inspect managed .NET Core state from native debuggers like LLDB and windbg.
+The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md). This extension lets you inspect managed .NET Core state from native debuggers like LLDB and WinDbg.
 
 ## Options
 

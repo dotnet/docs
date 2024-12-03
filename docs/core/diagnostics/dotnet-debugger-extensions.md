@@ -25,7 +25,7 @@ dotnet-debugger-extensions [-h|--help] [options] [command]]
 
 ## Description
 
-The `dotnet-debugger-extensions` global tool installs the [.NET debugger extension](debugger-extensions.md) that enable better debugging experience in native debuggers like windbg and LLDB.
+The `dotnet-debugger-extensions` global tool installs the [.NET debugger extensions](debugger-extensions.md), which enable better debugging experience in native debuggers like WinDbg and LLDB.
 
 > [!NOTE]
 > The Windows Debugger (>= version 10.0.18317.1001 of WinDbg or cdb) automatically loads the extensions from the Microsoft extension gallery.
@@ -71,7 +71,7 @@ dotnet-debugger-extensions install [--architecture <arch>]
 
 ## dotnet-debugger-extensions uninstall
 
-Uninstalls the [.NET debugger extensions](debugger-extensions.md) and, on Linux and macOS, removes it from lldb configuration.
+Uninstalls the [.NET debugger extensions](debugger-extensions.md) and, on Linux and macOS, removes it from LLDB configuration.
 
 ### Synopsis
 

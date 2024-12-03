@@ -12,12 +12,14 @@ This article gives an overview of which types are supported for serialization an
 
 ## Types that serialize as JSON objects
 
-The following types serialize as JSON objects (unless they implement <xref:System.Collections.Generic.IEnumerable`1>, in which case they serialize as JSON arrays):
+The following types serialize as JSON objects:
 
-* Classes
+* Classes<sup>*</sup>
 * Structs
 * Interfaces
 * Records and struct records
+
+\* Non-dictionary types that implement <xref:System.Collections.Generic.IEnumerable`1> serialize as JSON arrays. Dictionary types, which do implement <xref:System.Collections.Generic.IEnumerable`1>, serialize as JSON objects.
 
 The following code snippet shows the serialization of a simple struct.
 
@@ -234,7 +236,7 @@ For more information about known issues, see the [open issues in System.Text.Jso
 
 ### Supported key types
 
-Supported types for the keys of `Dictionary` and `SortedList` types include the following:
+When used as the keys of `Dictionary` and `SortedList` types, the following types have built-in support:
 
 * `Boolean`
 * `Byte`
@@ -251,9 +253,14 @@ Supported types for the keys of `Dictionary` and `SortedList` types include the 
 * `SByte`
 * `Single`
 * `String`
+* <xref:System.TimeSpan>
 * `UInt16`
 * `UInt32`
 * `UInt64`
+* <xref:System.Uri>
+* <xref:System.Version>
+
+In addition, the <xref:System.Text.Json.Serialization.JsonConverter`1.WriteAsPropertyName(System.Text.Json.Utf8JsonWriter,`0,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> and <xref:System.Text.Json.Serialization.JsonConverter`1.ReadAsPropertyName(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)?displayProperty=nameWithType> methods let you add dictionary key support for any type of your choosing.
 
 ## Unsupported types
 

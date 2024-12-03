@@ -257,7 +257,7 @@ For more information, see [Preserve references and handle circular references](p
 
 ### Dictionary with non-string key
 
-Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`. However, in `System.Text.Json`, `TKey` must be a primitive type, not a custom type. For more information, see [Supported key types](supported-types.md#supported-key-types).
+Both `Newtonsoft.Json` and `System.Text.Json` support collections of type `Dictionary<TKey, TValue>`. For information about supported key types, see [Supported key types](supported-types.md#supported-key-types).
 
 > [!CAUTION]
 > Deserializing to a `Dictionary<TKey, TValue>` where `TKey` is typed as anything other than `string` could introduce a security vulnerability in the consuming application. For more information, see [dotnet/runtime#4761](https://github.com/dotnet/runtime/issues/4761).

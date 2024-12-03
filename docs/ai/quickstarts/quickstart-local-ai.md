@@ -8,9 +8,9 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Chat with a local AI model using .NET and Semantic Kernel
+# Chat with a local AI model using .NET
 
-Local AI models provide powerful and flexible options for building AI solutions. In this quickstart, you'll explore how to set up and connect to a local AI model using .NET and the Semantic Kernel SDK. For this example, you'll run the local AI model using Ollama.
+In this quickstart, you learn how to create a conversational .NET console chat app using an OpenAI or Azure OpenAI model. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
 ## Prerequisites
 
@@ -54,11 +54,10 @@ Complete the following steps to create a .NET console app that will connect to y
     dotnet new console
     ```
 
-1. Add the [Semantic Kernel SDK](https://www.nuget.org/packages/Microsoft.SemanticKernel) and the [Semantic Kernel Ollama Connector](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.Ollama/1.25.0-alpha) packages to your app:
+1. Add the [Microsoft.Extensions.AI.Ollama](https://aka.ms/meai-ollama-nuget) packages to your app:
 
     ```dotnetcli
-    dotnet add package Microsoft.SemanticKernel
-    dotnet add package Microsoft.SemanticKernel.Connectors.Ollama
+    dotnet add package Microsoft.Extensions.AI.Ollama
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -76,7 +75,7 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
     :::code language="csharp" source="snippets/local-ai/program.cs" :::
 
     The preceding code accomplishes the following tasks:
-    - Creates a `Kernel` object and uses it to retrieve a chat completion service.
+    - Creates an `OllamaChatClient` that implements the `IChatClient` interface. This interface provides a loosely coupled abstraction you can use to chat with AI Models. You can later change the underlying chat client implementation to another model such as Azure OpenAI without changing any other code.
     - Creates a `ChatHistory` object to store the messages between the user and the AI model.
     - Retrieves a prompt from the user and stores it in the `ChatHistory`.
     - Sends the chat data to the AI model to generate a response.

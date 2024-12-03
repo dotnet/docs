@@ -185,7 +185,7 @@ The list below described only the platform options. To see the specific options 
 
 - **`@`**
 
-  Specifies a response file (rsp). A response file is a file that includes command-line arguments, each in a separate line. This helps for very long commands that may exceed the terminal limits. You can also specify a response file along with extra command-line arguments. For example:
+  Specifies a response file (rsp). A response file is a file that includes command-line arguments, each in a separate line. This helps for very long commands that might exceed the terminal limits. You can also specify a response file along with extra command-line arguments. For example:
 
   ```console
   ./TestExecutable.exe @"filter.rsp" --timeout 10s
@@ -250,8 +250,8 @@ The list below described only the platform options. To see the specific options 
 
   - The platform.
   - The environment.
-  - Each registered command line provider, such as its, `name`, `version`, `description` and `options`.
-  - Each registered tool, such as its, `command`, `name`, `version`, `description`, and all command line providers.
+  - Each registered command line provider, such as its `name`, `version`, `description`, and `options`.
+  - Each registered tool, such as its `command`, `name`, `version`, `description`, and all command-line providers.
 
   This feature is used to understand extensions that would be registering the same command line option or the changes in available options between multiple versions of an extension (or the platform).
 

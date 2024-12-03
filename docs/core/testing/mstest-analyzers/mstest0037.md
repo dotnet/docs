@@ -22,7 +22,7 @@ ms.author: ygerges
 | **Enabled by default**              | Yes                                                                    |
 | **Default severity**                | Info                                                                   |
 | **Introduced in version**           | 3.7.0                                                                  |
-| **There is a code fix**             | No                                                                     |
+| **Is there a code fix**             | Yes                                                                    |
 
 ## Cause
 
@@ -56,4 +56,4 @@ Use the better alternative method.
 
 ## When to suppress warnings
 
-You usually don't want to suppress warnings from this rule.
+If the assert is intended to verify the behavior of a user-defined operator, you can and should suppress the warning.

@@ -109,7 +109,7 @@ Starting with MSTest 3.7, you can also configure MSTest runs in the same configu
 
 ### MSTest element
 
-MSTest settings are grouped by functionality that are described in the sections below.
+MSTest settings are grouped by functionality that are described in the sections that follow.
 
 | Entry | Default | Description |
 |-------|---------|-------------|

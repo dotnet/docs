@@ -27,7 +27,7 @@ The following code snippet shows the serialization of a simple struct.
 
 .NET collection types serialize as JSON arrays. <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> supports a collection type for serialization if it:
 
-* Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>
+* Derives from <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IAsyncEnumerable%601>.
 * Contains elements that are serializable.
 
 The serializer calls the <xref:System.Collections.IEnumerable.GetEnumerator> method and writes the elements.

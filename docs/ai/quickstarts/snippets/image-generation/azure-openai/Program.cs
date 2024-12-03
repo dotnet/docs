@@ -9,11 +9,10 @@ using Azure.AI.OpenAI;
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_DALLE_NAME"];
-string key = config["AZURE_OPENAI_KEY"];
 
 // Create the Azure OpenAI ImageClient
 ImageClient client =
-    new AzureOpenAIClient(new Uri(endpoint), new ApiKeyCredential(key))
+    new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
         .GetImageClient(deployment);
 
 // Generate the image

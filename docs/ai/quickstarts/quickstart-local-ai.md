@@ -1,6 +1,6 @@
 ---
-title: Quickstart - Connect to and chat with a local AI using .NET and Semantic Kernel
-description: Set up a local AI model and chat with it using a .NET console app and the Semantic Kernel SDK
+title: Quickstart - Connect to and chat with a local AI using .NET
+description: Set up a local AI model and chat with it using a .NET console app and the Microsoft.Extensions.AI libraries
 ms.date: 11/24/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai

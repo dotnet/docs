@@ -257,13 +257,12 @@ This must be done for all the ICU binaries for the supported runtimes. Also, the
 
 By default, when using ICU on Linux, .NET attempts to load the latest installed version of ICU from the system. However, you can specify a specific version of ICU to load by setting the `DOTNET_ICU_VERSION_OVERRIDE` environment variable. Here's how it works:
 
-- **Use the build-time ICU version**
-
-  When you set the environment variable to `build`, .NET uses the exact ICU version that was used during its build process. This version is typically defined in the ICU C header file `unicode/uvernum.h`, generated during ICU's build process. The version is determined by the constant [U_ICU_VERSION_MAJOR_NUM](https://github.com/microsoft/icu/blob/bfb7d6bd5b03d2f5322389d21efee8fd1a167269/icu/icu4c/source/common/unicode/uvernum.h#L56) in the header file.
-
 - **Specify a custom ICU version**
 
   If the environment variable is set to a specific version number, such as `67.1`, .NET attempts to load that version of ICU. For example, .NET looks for the libraries `libicuuc.so.67.1` and `libicui18n.so.67.1`.
+
+> [!NOTE]
+> This environment variable is only supported on .NET portable builds that are not obtained from Linux distribution package feeds.
 
 - **Fallback mechanism**
 

@@ -185,7 +185,9 @@ The list below described only the platform options. To see the specific options 
 
 - **`@`**
 
-  Specifies a response file (rsp). A response file is a file that includes command-line arguments, each in a separate line. This helps for very long commands that might exceed the terminal limits. You can also specify a response file along with extra command-line arguments. For example:
+  Specifies the name of the response file. The response file name must immediately follow the @ character with no white space between the @ character and the response file name.
+
+  Options in a response file are interpreted as if they were present at that place in the command line. Each argument in a response file must begin and end on the same line. You cannot use the backslash character (\) to concatenate lines. Using a response file helps for very long commands that might exceed the terminal limits. You can combine a response file with inline command-line arguments. For example:
 
   ```console
   ./TestExecutable.exe @"filter.rsp" --timeout 10s

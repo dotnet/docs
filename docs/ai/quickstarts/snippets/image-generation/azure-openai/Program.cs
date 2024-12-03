@@ -2,6 +2,7 @@
 using OpenAI.Images;
 using System.ClientModel;
 using Azure.AI.OpenAI;
+using Azure.Identity;
 
 // Retrieve the local secrets saved during the Azure deployment. If you skipped the deployment
 // because you already have an Azure OpenAI available, edit the following lines to use your information,

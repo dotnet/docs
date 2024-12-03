@@ -128,7 +128,7 @@ MSTest settings are grouped by functionality that are described in the sections 
 | Entry | Default | Description |
 |-------|---------|-------------|
 | deleteDeploymentDirectoryAfterTestRunIsComplete | true | To retain the deployment directory after a test run, set this value to **false**. |
-| deployTestSourceDependencies | true |A value indicating whether the test source references are to be deployed. |
+| deployTestSourceDependencies | true | Indicates whether the test source references are to be deployed. |
 | enabled | true | If you set the value to **false**, deployment items that you specify in your test method aren't copied to the deployment directory. |
 
 #### Output settings

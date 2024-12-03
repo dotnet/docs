@@ -167,7 +167,7 @@ MSTest settings are grouped by functionality that are described in the sections 
 | test | 0 | Specify globally the test timeout. |
 | testCleanup | 0 | Specify globally the timeout to apply on each instance of test cleanup method. |
 | testInitialize | 0 | Specify globally the timeout to apply on each instance of test initialize method. |
-| useCooperativeCancellation | false | When set to `true`, in case of timeout, MSTest will only trigger cancellation of the `CancellationToken` but will not stop observing the method. This is more performant but relies on user to correctly flow the token through all paths. |
+| useCooperativeCancellation | false | When set to `true`, in case of timeout, MSTest will only trigger cancellation of the `CancellationToken` but will not stop observing the method. This behavior is more performant but relies on the user to correctly flow the token through all paths. |
 
 > [!NOTE]
 > `[Timeout]` attribute specified on a method overrides the global timeout. For example, `[Timeout(1000)]` on a method marked with [AssemblyCleanup] will override the global `assemblyCleanup` timeout.

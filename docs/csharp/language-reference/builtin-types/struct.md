@@ -158,7 +158,7 @@ Structs have most of the capabilities of a [class](../keywords/class.md) type. T
 
 When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the `ref`, `out`, `in`, or `ref readonly` method parameter modifiers to indicate that an argument must be [passed by reference](../keywords/method-parameters.md#reference-parameters). Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Avoid allocations](../../advanced-topics/performance/index.md).
 
-## Struct constraint
+## `struct` constraint
 
 You also use the `struct` keyword in the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and [enumeration](enum.md) types satisfy the `struct` constraint.
 

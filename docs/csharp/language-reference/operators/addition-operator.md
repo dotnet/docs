@@ -52,7 +52,7 @@ An expression using the `+=` operator, such as
 x += y
 ```
 
-Is equivalent to
+Is equivalent to:
 
 ```csharp
 x = x + y

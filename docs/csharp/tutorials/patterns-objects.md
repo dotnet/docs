@@ -100,7 +100,7 @@ Run your tests again, and they pass. Here's the final version of the `SetHighGat
 
 ## Implement patterns yourself
 
-Now that you saw the technique, fill in the `SetLowGate` and `SetWaterLevel` methods yourself. Start by adding the following code to test invalid operations on those methods:
+Now that you've seen the technique, fill in the `SetLowGate` and `SetWaterLevel` methods yourself. Start by adding the following code to test invalid operations on those methods:
 
 :::code language="csharp" source="snippets/patterns-objects/Program.cs" ID="FinalTestCode":::
 

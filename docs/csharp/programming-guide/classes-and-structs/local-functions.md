@@ -96,9 +96,9 @@ Some lambda expressions have a *natural type*, which enables the compiler to inf
 
 Lambda expressions are objects that are declared and assigned at run time. In order for a lambda expression to be used, it needs to be definitely assigned: the `Action`/`Func` variable that it's assigned to must be declared and the lambda expression assigned to it. Notice that `LambdaFactorial` must declare and initialize the lambda expression `nthFactorial` before defining it. Not doing so results in a compile time error for referencing `nthFactorial` before assigning it.
 
-Local functions are defined at compile time. As they're not assigned to variables, they can be referenced from any code location **where it is in scope**; in our first example `LocalFunctionFactorial`, we could declare our local function either before or after the `return` statement and not trigger any compiler errors.
+Local functions are defined at compile time. As they're not assigned to variables, they can be referenced from any code location **where it is in scope**; in the first example `LocalFunctionFactorial`, you could declare the local function either before or after the `return` statement and not trigger any compiler errors.
 
-These differences mean that recursive algorithms are easier to create using local functions. You can declare and define a local function that calls itself. Lambda expressions must be declared, and assigned a default value before they can be reassigned to a body that references the same lambda expression.
+These differences mean that recursive algorithms are easier to create using local functions. You can declare and define a local function that calls itself. Lambda expressions must be declared and assigned a default value before they can be reassigned to a body that references the same lambda expression.
 
 ### Implementation as a delegate
 

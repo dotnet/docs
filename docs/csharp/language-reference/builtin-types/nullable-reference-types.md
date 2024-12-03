@@ -8,7 +8,7 @@ ms.date: 11/22/2024
 > [!NOTE]
 > This article covers nullable reference types. You can also declare [nullable value types](nullable-value-types.md).
 
-Nullable reference types are available in code that in a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
+Nullable reference types are available in code that's in a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
 
 > [!IMPORTANT]
 > All project templates enable the *nullable context* for the project. Projects created with earlier templates don't include this element, and these features are off unless you enable them in the project file or use pragmas.

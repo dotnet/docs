@@ -112,8 +112,6 @@ You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a stro
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 
-[!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
-
 ## Examples
 
 ### Basic

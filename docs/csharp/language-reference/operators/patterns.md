@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 11/14/2024
+ms.date: 11/22/2024
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -190,7 +190,7 @@ A property pattern is a recursive pattern. That is, you can use any pattern as a
 
 The preceding example uses the `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-Beginning with C# 10, you can reference nested properties or fields within a property pattern. This capability is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
+You can reference nested properties or fields within a property pattern. This capability is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 
@@ -304,7 +304,7 @@ For information about features added in C# 8 and later, see the following featur
 
 - [Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
-- [C# 10 - Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 - [C# 11 - List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
 - [C# 11 - Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)
 

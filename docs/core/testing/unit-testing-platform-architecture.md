@@ -43,7 +43,7 @@ By following this structured approach, you will gain a comprehensive understandi
 
 To introduce the architecture of the testing platform, this document will use the classic console application (for Windows) as the host. The samples in this document are written in C#, but you can use the testing platform with any language that supports the .NET Ecma specification, and run on any OS supported by .NET. To use the platform, simply reference the `Microsoft.Testing.Platform.dll` assembly, which can be consumed through the official NuGet package available at <https://www.nuget.org/packages/Microsoft.Testing.Platform>.
 
-In a console project `Contoso.UnitTests.exe` the following `Main` method defines the entry point:
+In a console project `Contoso.UnitTests.exe`, the following `Main` method defines the entry point:
 
 ```csharp
 public static async Task<int> Main(string[] args)
@@ -164,4 +164,4 @@ Let's start by getting familiar with the concept of [capabilities](./unit-testin
 
 The testing platform offers valuable services to both the testing framework and extension points. These services cater to common needs such as accessing the configuration, parsing and retrieving command-line arguments, obtaining the logging factory, and accessing the logging system, among others. `IServiceProvider` implements the _service locator pattern_ for the testing platform.
 
-All the services, helpers and technical information about how to access and use these services is listed [here](./unit-testing-platform-architecture-services.md).
+All the services, helpers, and technical information about how to access and use these services is listed in [Microsoft.Testing.Platform Services documentation](./unit-testing-platform-architecture-services.md).

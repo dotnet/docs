@@ -183,56 +183,95 @@ To run a test project in CI add one step for each test executable that you wish 
 
 The list below described only the platform options. To see the specific options brought by each extension, either refer to the extension documentation page or use the `--help` option.
 
+- **`@`**
+
+  Specifies the name of the response file. The response file name must immediately follow the @ character with no white space between the @ character and the response file name.
+
+  Options in a response file are interpreted as if they were present at that place in the command line. Each argument in a response file must begin and end on the same line. You cannot use the backslash character (\) to concatenate lines. Using a response file helps for very long commands that might exceed the terminal limits. You can combine a response file with inline command-line arguments. For example:
+
+  ```console
+  ./TestExecutable.exe @"filter.rsp" --timeout 10s
+  ```
+
+  where *filter.rsp* can have the following contents:
+
+  ```rsp
+  --filter "A very long filter"
+  ```
+
+  Or a single rsp file can be used to specify both timeout and filter as follows:
+
+  ```console
+  ./TestExecutable.exe @"arguments.rsp"
+  ```
+
+  ```rsp
+  --filter "A very long filter"
+  --timeout 10s
+  ```
+
+- **`--config-file`**
+
+  Specifies a [*testconfig.json*](unit-testing-platform-config.md) file.
+
 - **`--diagnostic`**
 
-Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
+  Enables the diagnostic logging. The default log level is `Trace`. The file is written in the output directory with the following name format, `log_[MMddHHssfff].diag`.
 
 - **`--diagnostic-filelogger-synchronouswrite`**
 
-Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
+  Forces the built-in file logger to synchronously write logs. Useful for scenarios where you don't want to lose any log entries (if the process crashes). This does slow down the test execution.
 
 - **`--diagnostic-output-directory`**
 
-The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
+  The output directory of the diagnostic logging, if not specified the file is generated in the default _TestResults_ directory.
 
 - **`--diagnostic-output-fileprefix`**
 
-The prefix for the log file name. Defaults to `"log_"`.
+  The prefix for the log file name. Defaults to `"log_"`.
 
 - **`--diagnostic-verbosity`**
 
-Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.
+  Defines the verbosity level when the `--diagnostic` switch is used. The available values are `Trace`, `Debug`, `Information`, `Warning`, `Error`, or `Critical`.
+
+- **`--exit-on-process-exit`**
+
+  Exit the test process if dependent process exits. PID must be provided.
 
 - **`--help`**
 
-Prints out a description of how to use the command.
+  Prints out a description of how to use the command.
 
 - **`-ignore-exit-code`**
 
-Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./unit-testing-platform-exit-codes.md#ignore-specific-exit-codes).
+  Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./unit-testing-platform-exit-codes.md#ignore-specific-exit-codes).
 
 - **`--info`**
 
-Displays advanced information about the .NET Test Application such as:
+  Displays advanced information about the .NET Test Application such as:
 
-- The platform.
-- The environment.
-- Each registered command line provider, such as its, `name`, `version`, `description` and `options`.
-- Each registered tool, such as its, `command`, `name`, `version`, `description`, and all command line providers.
+  - The platform.
+  - The environment.
+  - Each registered command line provider, such as its `name`, `version`, `description`, and `options`.
+  - Each registered tool, such as its `command`, `name`, `version`, `description`, and all command-line providers.
 
-This feature is used to understand extensions that would be registering the same command line option or the changes in available options between multiple versions of an extension (or the platform).
+  This feature is used to understand extensions that would be registering the same command line option or the changes in available options between multiple versions of an extension (or the platform).
 
 - **`--list-tests`**
 
-List available tests. Tests will not be executed.
+  List available tests. Tests will not be executed.
 
 - **`--minimum-expected-tests`**
 
-Specifies the minimum number of tests that are expected to run. By default, at least one test is expected to run.
+  Specifies the minimum number of tests that are expected to run. By default, at least one test is expected to run.
 
 - **`--results-directory`**
 
-The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+  The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created. The default is `TestResults` in the directory that contains the test application.
+
+- **`--timeout`**
+
+  A global test execution timeout. Takes one argument as string in the format `<value>[h|m|s]` where `<value>` is float.
 
 ## MSBuild integration
 

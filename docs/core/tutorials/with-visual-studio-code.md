@@ -1,7 +1,7 @@
 ---
 title: Create a .NET console application using Visual Studio Code
 description: Learn how to create a .NET console application using Visual Studio Code.
-ms.date: 09/12/2024
+ms.date: 11/22/2024
 ---
 # Tutorial: Create a .NET console application using Visual Studio Code
 

@@ -6,7 +6,7 @@ Namespace PrimeService.Tests
     Public Class PrimeService_IsPrimeShould
         Private _primeService As Prime.Services.PrimeService = New Prime.Services.PrimeService()
 
-        <DataTestMethod>
+        <TestMethod>
         <DataRow(-1)>
         <DataRow(0)>
         <DataRow(1)>
@@ -16,7 +16,7 @@ Namespace PrimeService.Tests
             Assert.IsFalse(result, $"{value} should not be prime")
         End Sub
 
-        <DataTestMethod>
+        <TestMethod>
         <DataRow(2)>
         <DataRow(3)>
         <DataRow(5)>
@@ -27,7 +27,7 @@ Namespace PrimeService.Tests
             Assert.IsTrue(result, $"{value} should be prime")
         End Sub
 
-        <DataTestMethod>
+        <TestMethod>
         <DataRow(4)>
         <DataRow(6)>
         <DataRow(8)>

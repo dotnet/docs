@@ -1,7 +1,7 @@
 ---
 title: "Using Constructors"
 description: This example shows how a class is instantiated by using the new operator in C#. The simple constructor is invoked after memory is allocated for the new object.
-ms.date: 05/25/2023
+ms.date: 11/22/2024
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
 ---
@@ -23,7 +23,7 @@ You can prevent a class from being instantiated by making the constructor privat
 
 For more information, see [Private Constructors](./private-constructors.md).
 
-Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors. When a struct type is instantiated with `new`, a constructor is invoked. When a `struct` is set to its `default` value, the runtime initializes all memory in the struct to 0. Prior to C# 10, `structs` can't contain an explicit parameterless constructor because one is provided automatically by the compiler. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
+Constructors for [struct](../../language-reference/builtin-types/struct.md) types resemble class constructors. When a struct type is instantiated with `new`, a constructor is invoked. When a `struct` is set to its `default` value, the runtime initializes all memory in the struct to 0. If you declare any field initializers in a `struct` type, you must supply a parameterless constructor. For more information, see the [Struct initialization and default values](../../language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](../../language-reference/builtin-types/struct.md) article.
 
 The following code uses the parameterless constructor for <xref:System.Int32>, so that you're assured that the integer is initialized:
 

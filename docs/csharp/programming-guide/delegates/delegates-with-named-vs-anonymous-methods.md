@@ -1,7 +1,7 @@
 ---
 title: "Delegates with Named vs. Anonymous Methods"
 description: Learn about delegates with named vs. anonymous methods. See code examples and view additional available resources.
-ms.date: 11/08/2021
+ms.date: 11/22/2024
 helpviewer_keywords: 
   - "delegates [C#], with named vs. anonymous methods"
   - "methods [C#], in delegates"
@@ -20,7 +20,7 @@ The method that you pass as a delegate parameter must have the same signature as
 > [!NOTE]
 > Although the delegate can use an [out](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter, we do not recommend its use with multicast event delegates because you cannot know which delegate will be called.
 
-Beginning with C# 10, method groups with a single overload have a *natural type*. This means the compiler can infer the return type and parameter types for the delegate type:
+Method groups with a single overload have a *natural type*. This means the compiler can infer the return type and parameter types for the delegate type:
 
 ```csharp
 var read = Console.Read; // Just one overload; Func<int> inferred

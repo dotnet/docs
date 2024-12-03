@@ -11,7 +11,7 @@ Class CancelNewStyleEvents
     ' in its Wait methods.
     Shared mres As ManualResetEventSlim = New ManualResetEventSlim(False)
 
-    Shared Sub Main()
+    Shared Sub Main10()
 
         Dim cts As New CancellationTokenSource()
 

@@ -2,7 +2,7 @@
 title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
-ms.date: 03/06/2024
+ms.date: 11/22/2024
 ms.custom: "updateeachrelease, UpdateFrequency1"
 ---
 
@@ -61,20 +61,22 @@ C# 11 introduces *generic math* and several features that support that goal. You
 
 C# 10 adds the following features and enhancements to the C# language:
 
-- [Record structs](./csharp-10.md#record-structs)
-- [Improvements of structure types](./csharp-10.md#improvements-of-structure-types)
-- [Interpolated string handlers](./csharp-10.md#interpolated-string-handler)
-- [`global using` directives](./csharp-10.md#global-using-directives)
-- [File-scoped namespace declaration](./csharp-10.md#file-scoped-namespace-declaration)
-- [Extended property patterns](./csharp-10.md#extended-property-patterns)
-- [Improvements on lambda expressions](./csharp-10.md#lambda-expression-improvements)
-- [Allow `const` interpolated strings](./csharp-10.md#constant-interpolated-strings)
-- [Record types can seal `ToString()`](./csharp-10.md#record-types-can-seal-tostring)
-- [Improved definite assignment](./csharp-10.md#improved-definite-assignment)
-- [Allow both assignment and declaration in the same deconstruction](./csharp-10.md#assignment-and-declaration-in-same-deconstruction)
-- [Allow `AsyncMethodBuilder` attribute on methods](./csharp-10.md#allow-asyncmethodbuilder-attribute-on-methods)
-- [CallerArgumentExpression attribute](./csharp-10.md#callerargumentexpression-attribute-diagnostics)
-- [Enhanced `#line` pragma](./csharp-10.md#enhanced-line-pragma)
+- [Record structs](../language-reference/builtin-types/record.md)
+- [Improvements of structure types](../language-reference/builtin-types/struct.md#struct-initialization-and-default-values)
+- [Interpolated string handlers](../language-reference/tokens/interpolated.md#compilation-of-interpolated-strings)
+- [`global using` directives](../language-reference/keywords/using-directive.md)
+- [File-scoped namespace declaration](../language-reference/keywords/namespace.md)
+- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- Lambda expressions can have a [natural type](../language-reference/operators/lambda-expressions.md#natural-type-of-a-lambda-expression), where the compiler can infer a delegate type from the lambda expression or method group.
+- Lambda expressions can declare a [return type](../language-reference/operators/lambda-expressions.md#explicit-return-type) when the compiler can't infer it.
+- [Attributes](../language-reference/operators/lambda-expressions.md#attributes) can be applied to lambda expressions.
+- In C# 10, `const` strings can be initialized using [string interpolation](../language-reference/tokens/interpolated.md) if all the placeholders are themselves constant strings.
+- In C# 10, you can add the `sealed` modifier when you override `ToString` in a [record](../language-reference/builtin-types/record.md) type.
+- Warnings for definite assignment and null-state analysis are more accurate.
+- Allow both assignment and declaration in the same deconstruction.
+- [Allow `AsyncMethodBuilder` attribute on methods](../language-reference/attributes/general.md#asyncmethodbuilder-attribute)
+- [CallerArgumentExpression attribute](../language-reference/attributes/caller-information.md#argument-expressions)
+- C# 10 supports a new format for the `#line` pragma.
 
 More features were available in *preview* mode. In order to use these features, you must [set `<LangVersion>` to `Preview`](../language-reference/compiler-options/language.md#langversion) in your project:
 
@@ -131,15 +133,7 @@ C# 9 includes new pattern matching improvements:
 - ***Negated `not` patterns*** require that a pattern doesn't match
 - ***Relational patterns*** require the input be less than, greater than, less than or equal, or greater than or equal to a given constant
 
-These patterns enrich the syntax for patterns. Consider these examples:
-
-:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterPattern":::
-
-With optional parentheses to make it clear that `and` has higher precedence than `or`:
-
-:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" ID="IsLetterOrSeparatorPattern":::
-
-One of the most common uses is a new syntax for a null check:
+These patterns enrich the syntax for patterns. One of the most common uses is a new syntax for a null check:
 
 ```csharp
 if (e is not null)
@@ -243,7 +237,7 @@ C# 7.2 added several small language features:
 - Add the `in` modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
 - Use the `ref readonly` modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
 - Declare `ref struct` types, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
-- Use additional generic constraints.
+- Use more generic constraints.
 - [Non-trailing named arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md):
   - Positional arguments can follow named arguments.
 - Leading underscores in numeric literals:

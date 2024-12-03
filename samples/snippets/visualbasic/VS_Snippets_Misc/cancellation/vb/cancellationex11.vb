@@ -11,7 +11,7 @@ Public Structure Rectangle
 End Structure
 
 Class CancelByPolling
-    Shared Sub Main()
+    Shared Sub Main11()
         Dim tokenSource As New CancellationTokenSource()
         ' Toy object for demo purposes
         Dim rect As New Rectangle()
@@ -46,10 +46,10 @@ Class CancelByPolling
             ' Assume that we know that the inner loop is very fast.
             ' Therefore, polling once per column in the outer loop condition
             ' is sufficient.
-            For col As Integer = 0 To rect.rows - 1
+            For row As Integer = 0 To rect.rows - 1
                 ' Simulating work.
                 Thread.SpinWait(5000)
-                Console.Write("0',1' ", x, y)
+                Console.Write("0',1' ", col, row)
             Next
         Next
 

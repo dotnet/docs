@@ -29,7 +29,7 @@ In this quickstart, you create a .NET console AI chat app to connect to an AI mo
 
 :::zone-end
 
-[!INCLUDE [semantic-kernel](../../azure/includes/semantic-kernel.md)]
+[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
 [!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 

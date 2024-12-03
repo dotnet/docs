@@ -29,7 +29,7 @@ In this quickstart, you learn how to create a conversational .NET console chat a
 
 :::zone-end
 
-[!INCLUDE [semantic-kernel](../../azure/includes/semantic-kernel.md)]
+[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
 [!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 

@@ -51,13 +51,13 @@ Complete the following steps to create a .NET console app that will connect to y
 1. In a terminal window, navigate to an empty directory on your device and create a new app with the `dotnet new` command:
 
     ```dotnetcli
-    dotnet new console
+    dotnet new console -o LocalAI
     ```
 
 1. Add the [Microsoft.Extensions.AI.Ollama](https://aka.ms/meai-ollama-nuget) packages to your app:
 
     ```dotnetcli
-    dotnet add package Microsoft.Extensions.AI.Ollama
+    dotnet add package Microsoft.Extensions.AI.Ollama --prerelease
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -74,8 +74,11 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
 
     :::code language="csharp" source="snippets/local-ai/program.cs" :::
 
-    The preceding code accomplishes the following tasks:
-    - Creates an `OllamaChatClient` that implements the `IChatClient` interface. This interface provides a loosely coupled abstraction you can use to chat with AI Models. You can later change the underlying chat client implementation to another model such as Azure OpenAI without changing any other code.
+    The preceding code accomplishes the following:
+
+    - Creates an `OllamaChatClient` that implements the `IChatClient` interface.
+        - This interface provides a loosely coupled abstraction you can use to chat with AI Models.
+        - You can later change the underlying chat client implementation to another model such as Azure OpenAI without changing any other code.
     - Creates a `ChatHistory` object to store the messages between the user and the AI model.
     - Retrieves a prompt from the user and stores it in the `ChatHistory`.
     - Sends the chat data to the AI model to generate a response.

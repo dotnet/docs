@@ -174,7 +174,7 @@ MSTest settings are grouped by functionality that are described in the sections 
 
 ### Example *testconfig.json* file
 
-The following json shows the contents of a typical *.testconfig.json* file. Copy this code and edit it to suit your needs.
+The following JSON shows the contents of a typical *.testconfig.json* file. Copy this code and edit it to suit your needs.
 
 Each element of the file is optional because it has a default value.
 

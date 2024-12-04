@@ -1,12 +1,11 @@
 ---
 title: "How to concatenate multiple strings"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
-ms.date: 03/15/2024
+ms.date: 11/22/2024
 helpviewer_keywords: 
   - "joining strings [C#]"
   - "concatenating strings [C#]"
   - "strings [C#], concatenation"
-ms.assetid: 8e16736f-4096-4f3f-be0f-9d4c3ff63520
 ---
 # How to concatenate multiple strings (C# Guide)
 
@@ -35,7 +34,7 @@ In some expressions, it's easier to concatenate strings using string interpolati
 > [!NOTE]
 > In string concatenation operations, the C# compiler treats a null string the same as an empty string.
 
-Beginning with C# 10, you can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
+You can use string interpolation to initialize a constant string when all the expressions used for placeholders are also constant strings.
 
 ## `String.Format`
 
@@ -43,7 +42,7 @@ Another method to concatenate strings is <xref:System.String.Format%2A?displayPr
 
 ## `StringBuilder`
 
-In other cases, you may be combining strings in a loop where you don't know how many source strings you're combining, and the actual number of source strings may be large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.
+In other cases, you might be combining strings in a loop where you don't know how many source strings you're combining, and the actual number of source strings can be large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet4":::
 

@@ -58,6 +58,10 @@ Builds in all subdirectories of the directory containing that file now use the p
 
 ## C# language version reference
 
+> [!IMPORTANT]
+>
+> Using a C# language version newer than the version associated with your target TFM is unsupported.
+
 The following table shows all current C# language versions. Older compilers might not understand every value. If you install the latest .NET SDK, you have access to everything listed.
 
 [!INCLUDE [langversion-table](includes/langversion-table.md)]

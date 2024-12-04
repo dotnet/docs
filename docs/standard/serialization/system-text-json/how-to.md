@@ -77,7 +77,7 @@ Supported types include:
   * <xref:System.Collections.Specialized>
   * <xref:System.Collections.ObjectModel>
 
-  For more information, see [Supported collection types in System.Text.Json](supported-collection-types.md).
+  For more information, see [Supported types in System.Text.Json](supported-types.md).
 
 You can [implement custom converters](converters-how-to.md) to handle additional types or to provide functionality that isn't supported by the built-in converters.
 

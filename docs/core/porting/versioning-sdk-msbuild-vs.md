@@ -16,6 +16,11 @@ The first part of the .NET SDK version matches the .NET version that it includes
 
 For example, version 7.0.203 ships with .NET 7, is the second minor Visual Studio release since 7.0.100 first came out, and is the third patch since 7.0.200 released.
 
+An install of Visual Studio includes a single matching copy of the .NET SDK. Updating your Visual Studio instance will update the .NET SDK installed by Visual Studio including upgrading you across .NET SDK feature bands and major bands. If you want to use a different .NET SDK than what is installed by Visual Studio, you can install it from our [download page](https://aka.ms/dotnet/download) and Visual Studio upgrade will not touch that version. You will be responsible for updating that copy of the .NET SDK from then on.
+
+> [!NOTE]
+The .NET SDK supports targeting downlevel versions of .NET so we recommend always updating your .NET SDK along with your Visual Studio version.
+
 ## Lifecycle
 
 The support timeframe for the SDK typically matches that of the Visual Studio version it's included in.

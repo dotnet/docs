@@ -255,23 +255,19 @@ This must be done for all the ICU binaries for the supported runtimes. Also, the
 
 ## Load specific ICU version on Linux
 
-By default, when using ICU on Linux, .NET attempts to load the latest installed version of ICU from the system. However, you can specify a specific version of ICU to load by setting the `DOTNET_ICU_VERSION_OVERRIDE` environment variable. Here's how it works:
+By default, when using ICU on Linux, .NET attempts to load the latest installed version of ICU from the system. However, you can specify a specific version of ICU to load by setting the `DOTNET_ICU_VERSION_OVERRIDE` environment variable.
 
-- **Specify a custom ICU version**
-
-  If the environment variable is set to a specific version number, such as `67.1`, .NET attempts to load that version of ICU. For example, .NET looks for the libraries `libicuuc.so.67.1` and `libicui18n.so.67.1`.
+For example, if the environment variable is set to a specific version number, such as `67.1`, .NET attempts to load that version of ICU. For example, .NET looks for the libraries `libicuuc.so.67.1` and `libicui18n.so.67.1`.
 
 > [!NOTE]
 > This environment variable is supported only on .NET builds provided by Microsoft and is not supported on builds supplied by Linux distributions.
+> For .NET versions earlier than .NET 10, the environment variable is called `CLR_ICU_VERSION_OVERRIDE`.
 
 - **Fallback mechanism**
 
   If the specified version isn't found, .NET falls back to loading the highest installed ICU version from the system.
 
 This configuration provides flexibility in controlling ICU version usage, ensuring compatibility with application-specific or system-provided ICU versions.
-
-> [!NOTE]
-> For .NET versions earlier than .NET 10, the environment variable is called `CLR_ICU_VERSION_OVERRIDE`.
 
 ## macOS behavior
 

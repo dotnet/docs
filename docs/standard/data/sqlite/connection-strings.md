@@ -108,7 +108,7 @@ A value indicating whether the connection will be pooled.
 
 ### Vfs
 
-A value indicating which [VFS](https://www.sqlite.org/vfs.html) implementation to use. When empty or not specified, the default VFS on given platform is used.
+A value indicating which [virtual file system (VFS)](https://www.sqlite.org/vfs.html) implementation to use. When empty or not specified, the default VFS for the platform is used.
 
 > [!NOTE]
 > The Vfs keyword was added in version 10.0.

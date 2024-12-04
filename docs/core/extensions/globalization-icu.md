@@ -263,9 +263,7 @@ For example, if the environment variable is set to a specific version number, su
 > This environment variable is supported only on .NET builds provided by Microsoft and is not supported on builds supplied by Linux distributions.
 > For .NET versions earlier than .NET 10, the environment variable is called `CLR_ICU_VERSION_OVERRIDE`.
 
-- **Fallback mechanism**
-
-  If the specified version isn't found, .NET falls back to loading the highest installed ICU version from the system.
+If the specified version isn't found, .NET falls back to loading the highest installed ICU version from the system.
 
 This configuration provides flexibility in controlling ICU version usage, ensuring compatibility with application-specific or system-provided ICU versions.
 

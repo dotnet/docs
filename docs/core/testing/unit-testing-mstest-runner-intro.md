@@ -74,6 +74,9 @@ Consider the following example project file:
 </Project>
 ```
 
+> [!TIP]
+> It's advised to set the `EnableMSTestRunner` property in *Directory.Build.props* file instead of *csproj* file to ensure all test projects in your solution are using the MSTest runner.
+
 ## Configurations and filters
 
 ### .runsettings

@@ -9,7 +9,7 @@ This topic describes arithmetic operators that are available in F#.
 
 ## Summary of Binary Arithmetic Operators
 
-Arithmetic operations in F# can be performed in two modes: **Unchecked** and **Checked**. Unchecked operators prioritize performance but allow overflow/underflow, while checked operators prioritize safety by throwing exceptions in such cases.
+Arithmetic operations in F# can be performed in two modes: **Unchecked** and **Checked**. By default, arithmetic operations use unchecked behavior, which prioritizes performance but allows overflow/underflow. Checked operators prioritize safety by throwing exceptions in such cases.
 
 ### Unchecked Arithmetic Operators
 
@@ -24,17 +24,17 @@ The following table summarizes the binary arithmetic operators that are availabl
 |`%` (remainder, rem)|Returns the remainder of a division operation. The sign of the result is the same as the sign of the first operand.|
 |`**` (exponentiation, to the power of)|Possible overflow condition when the result exceeds the maximum absolute value for the type.<br /><br />The exponentiation operator works only with floating-point types.|
 
-The unchecked behavior does not throw exceptions when overflow occurs, making it less safe for arithmetic on large or edge-case values.
+The unchecked behavior does not throw exceptions when overflow or underflow occurs, making it less safe for arithmetic on large or edge-case values.
 
 ### Checked Arithmetic Operators
 
 The following table summarizes the binary arithmetic operators that are available for **Checked Arithmetic** with unboxed integral types. Checked operators ensure that calculations are verified for overflow or underflow, providing safer arithmetic for critical applications.
 
-| Binary Operator | Notes                                                                                  |
-|------------------|----------------------------------------------------------------------------------------|
-| `+` (addition, plus) | Throws an <xref:System.OverflowException> if the result exceeds the maximum absolute value supported by the type. |
-| `-` (subtraction, minus) | Throws an <xref:System.OverflowException> if the result goes below the minimum value supported by the type. |
-| `*` (multiplication, times) | Throws an <xref:System.OverflowException> if the product exceeds the maximum absolute value supported by the type. |
+| Binary Operator | Notes                                                                                  |  
+|------------------|----------------------------------------------------------------------------------------|  
+| `+` (addition, plus) | Throws an <xref:System.OverflowException> if the result exceeds the maximum value or goes below the minimum value supported by the type. Both **Overflow** and **Underflow** are possible. |  
+| `-` (subtraction, minus) | Throws an <xref:System.OverflowException> if the result exceeds the maximum value or goes below the minimum value supported by the type. Both **Overflow** and **Underflow** are possible. |  
+| `*` (multiplication, times) | Throws an <xref:System.OverflowException> if the product exceeds the maximum value or goes below the minimum value supported by the type. Both **Overflow** and **Underflow** are possible. |  
 
 The checked operators are useful for ensuring that arithmetic overflows are caught and handled explicitly.
 
@@ -46,7 +46,7 @@ Here’s an example:
 
 **Checked Operators:** Ideal for scenarios where overflow errors must be detected and handled explicitly.
 
-**Unchecked Operators:** Provide faster arithmetic operations but may silently produce incorrect results when overflow occurs. You can use with caution.
+**Unchecked Operators:** By default, F# uses unchecked arithmetic for performance reasons. These operations may silently produce incorrect results when overflow or underflow occurs. Use with caution.
 
 ## Summary of Unary Arithmetic Operators
 

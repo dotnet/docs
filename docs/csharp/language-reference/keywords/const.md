@@ -1,17 +1,16 @@
 ---
-description: "const keyword - C# Reference"
-title: "const keyword"
-ms.date: 06/20/2021
+description: "Declare compile time constants with the `const` keyword"
+title: "The const keyword"
+ms.date: 11/22/2024
 f1_keywords: 
   - "const_CSharpKeyword"
   - "const"
 helpviewer_keywords: 
   - "const keyword [C#]"
-ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db
 ---
-# const (C# Reference)
+# The const keyword
 
-You use the `const` keyword to declare a constant field or a local constant. Constant fields and locals aren't variables and may not be modified. Constants can be numbers, Boolean values, strings, or a null reference. Don’t create a constant to represent information that you expect to change at any time. For example, don’t use a constant field to store the price of a service, a product version number, or the brand name of a company. These values can change over time, and because compilers propagate constants, other code compiled with your libraries will have to be recompiled to see the changes. See also the [readonly](readonly.md) keyword. For example:
+You use the `const` keyword to declare a constant field or a local constant. Constant fields and locals aren't variables and can't be modified. Constants can be numbers, Boolean values, strings, or a null reference. Don’t create a constant to represent information that you expect to change at any time. For example, don’t use a constant field to store the price of a service, a product version number, or the brand name of a company. These values can change over time, and because compilers propagate constants, other code compiled with your libraries will have to be recompiled to see the changes. See also the [readonly](readonly.md) keyword. For example:
 
 ```csharp
 const int X = 0;
@@ -19,7 +18,7 @@ public const double GravitationalConstant = 6.673e-11;
 private const string ProductName = "Visual C#";
 ```
 
-Beginning with C# 10, [interpolated strings](../tokens/interpolated.md) may be constants, if all expressions used are also constant strings. This feature can improve the code that builds constant strings:
+[Interpolated strings](../tokens/interpolated.md) can be constants, if all expressions used are also constant strings. This feature can improve the code that builds constant strings:
 
 ```csharp
 const string Language = "C#";
@@ -39,7 +38,7 @@ The constant declaration can declare multiple constants, such as:
 public const double X = 1.0, Y = 2.0, Z = 3.0;
 ```
 
-The `static` modifier is not allowed in a constant declaration.
+The `static` modifier isn't allowed in a constant declaration.
 
 A constant can participate in a constant expression, as follows:
 

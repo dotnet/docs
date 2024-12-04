@@ -1,7 +1,7 @@
 ---
 description: "The `using` directive imports types from a namespace, or creates an alias for a given type. Using directives enable you to use simple names for types instead of the fully qualified type name."
 title: "The using directive: Import types from a namespace"
-ms.date: 11/14/2024
+ms.date: 11/24/2024
 f1_keywords:
   - "using_CSharpKeyword"
 helpviewer_keywords:
@@ -17,7 +17,7 @@ using System.Text;
 
 You can apply two modifiers to a `using` directive:
 
-- The `global` modifier has the same effect as adding the same `using` directive to every source file in your project. This modifier was introduced in C# 10.
+- The `global` modifier has the same effect as adding the same `using` directive to every source file in your project.
 - The `static` modifier imports the `static` members and nested types from a single type rather than importing all the types in a namespace.
 
 You can combine both modifiers to import the static members from a type to all source files in your project.
@@ -48,7 +48,7 @@ Create a `using` directive to use the types in a namespace without having to spe
 
 ## The `global` modifier
 
-Adding the `global` modifier to a `using` directive means that using is applied to all files in the compilation (typically a project). The `global using` directive was added in C# 10. Its syntax is:
+Adding the `global` modifier to a `using` directive means that using is applied to all files in the compilation (typically a project):
 
 ```csharp
 global using <fully-qualified-namespace>;
@@ -175,7 +175,7 @@ The `global::` ensures that the namespace lookup for the namespace following the
 
 For more information, see [Using directives](~/_csharpstandard/standard/namespaces.md#145-using-directives) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
 
-For more information on the *global using* modifier, see the [global usings feature specification - C# 10](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
+For more information on the *global using* modifier, see the [global usings feature specification](~/_csharplang/proposals/csharp-10.0/GlobalUsingDirective.md).
 
 ## See also
 

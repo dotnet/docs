@@ -262,7 +262,7 @@ By default, when using ICU on Linux, .NET attempts to load the latest installed 
   If the environment variable is set to a specific version number, such as `67.1`, .NET attempts to load that version of ICU. For example, .NET looks for the libraries `libicuuc.so.67.1` and `libicui18n.so.67.1`.
 
 > [!NOTE]
-> This environment variable is only supported on .NET portable builds that are not obtained from Linux distribution package feeds.
+> This environment variable is supported only on .NET builds provided by Microsoft and is not supported on builds supplied by Linux distributions.
 
 - **Fallback mechanism**
 

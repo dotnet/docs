@@ -573,7 +573,7 @@
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
-| Microsoft.Azure.SignalR.Emulator | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.4.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
+| Microsoft.Azure.SignalR.Emulator | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.6.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | MSBuild | NuGet [0.31.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.31.0) |  |  |
 | ProviderHub Controller | NuGet [0.17.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.17.0) |  |  |
 | ProviderHub Templates | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.9.0) |  |  |

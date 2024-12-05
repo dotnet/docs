@@ -114,6 +114,7 @@ Available starting in: .NET 8
 | `url.scheme` | string | The [URI scheme](https://www.rfc-editor.org/rfc/rfc3986#section-3.1) component identifying the used protocol. | `http`; `https`; `ftp` | Always |
 
 **[1] `error.type`:** If the request has failed, the value is set to one of the following:
+
 - An exception name with type, e.g., `System.Threading.Tasks.TaskCanceledException`
 - A status code that indicates a client or server error, e.g., `500`
 - In case an <xref:System.Net.Http.HttpRequestException> occurred and with a <xref:System.Net.Http.HttpRequestError> other than `Unknown`; the enum value in snake case, e.g., `name_resolution_error`
@@ -122,7 +123,7 @@ Available starting in: .NET 8
 
 **[3] `server.port`:** The Presence of the value is version-dependent:
 
-- *.NET 8*: Present if not default (`80` for `http` scheme, `443` for `https`) 
+- *.NET 8*: Present if not default (`80` for `http` scheme, `443` for `https`)
 - *.NET 9+*: Always present
 
 HTTP client request duration measures the time the underlying client handler takes to complete the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body.

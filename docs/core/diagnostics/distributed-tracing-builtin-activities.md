@@ -148,4 +148,3 @@ This activity describes the TLS client or server handshake performed via <xref:S
 | `server.address` | string | he [server name indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication) used in the 'Client Hello' message during TLS handshake. | `example.com` | When authenticating as client. |
 | `tls.protocol.name` | string | Normalized lowercase protocol name parsed from original string of the negotiated [SSL/TLS protocol version](https://www.openssl.org/docs/man1.1.1/man3/SSL_get_version.html#RETURN-VALUES) | `ssl`; `tls` | When the protocol info is available. |
 | `tls.protocol.version` | string | Numeric part of the version parsed from the original string of the negotiated [SSL/TLS protocol version](https://www.openssl.org/docs/man1.1.1/man3/SSL_get_version.html#RETURN-VALUES) | `1.2`; `1.3` | When the protocol info is available. |
- 

@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class MyTestClass
+public class TestClassResultFile
 {
     [TestMethod]
     public void TestMethodWithResultFile()

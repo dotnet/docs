@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 [TestClass]
-public class MyTestClass
+public class MyTestClassTestContextThroughCtor
 {
     private readonly TestContext _testContext;
 

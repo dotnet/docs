@@ -1,7 +1,7 @@
 ---
 title: Install .NET Framework on Windows Server 2025
 description: Learn how to install .NET Framework on Windows Server 2025.
-ms.date: 11/21/2024
+ms.date: 12/05/2024
 ---
 
 # Install .NET Framework on Windows Server 2025

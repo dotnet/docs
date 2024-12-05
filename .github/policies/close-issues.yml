@@ -21,10 +21,24 @@ configuration:
               - closeIssue
 
         eventResponderTasks:
-            - description: Close issues labeled 'code-of-conduct'
-              if:
-                - payloadType: Issues
-                - hasLabel:
-                    label: code-of-conduct
-              then:
-                - closeIssue
+          - description: Remove needs-more-info label when author comments on issue
+            if:
+              - payloadType: Issue_Comment
+              - isAction:
+                  action: Created
+              - isActivitySender:
+                  issueAuthor: True
+              - hasLabel:
+                  label: needs-more-info
+              - isOpen
+            then:
+              - removeLabel:
+                  label: needs-more-info
+              
+          - description: Close issues labeled 'code-of-conduct'
+            if:
+              - payloadType: Issues
+              - hasLabel:
+                  label: code-of-conduct
+            then:
+              - closeIssue

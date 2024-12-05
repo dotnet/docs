@@ -110,7 +110,7 @@ This activity describes DNS lookups performed via <xref:System.Net.Dns> calls. I
 
 ### Socket connect (experimental)
 
-This activity describes the establishment of a <xref:System.Net.Sockets.Socket> connection via. <xref:System.Net.Sockets.Socket.Connect> or <xref:System.Net.Socket.ConnectAsync>. When the *socket connect* activity is reported along with an *HTTP connection setup* activity, *socket connect* becomes a child of *HTTP connection setup*.
+This activity describes the establishment of a <xref:System.Net.Sockets.Socket> connection via. <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.ConnectAsync%2A>. When the *socket connect* activity is reported along with an *HTTP connection setup* activity, *socket connect* becomes a child of *HTTP connection setup*.
 
 | Availability | <xref:System.Diagnostics.ActivitySource> name | <xref:System.Diagnostics.Activity.OperationName> | <xref:System.Diagnostics.Activity.DisplayName> |
 |---|---|---|---|

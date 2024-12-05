@@ -54,7 +54,7 @@ From the perspective of the .NET Monitor tool, both distros provided a similar c
 
 ## Recommended action
 
-Updated your tag usage to indicate which image from the .NET Monitor 9 image offering you want to use. The following examples show some recommended migrations:
+Update your tag usage to indicate which image from the .NET Monitor 9 image offering you want to use. The following examples show some recommended migrations:
 
 - `8-cbl-mariner-distroless` -> `9`
 - `8.0-cbl-mariner-distroless` -> `9.0`

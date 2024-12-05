@@ -32,26 +32,26 @@ The `TestContext` class provides properties about the test run along with method
 
 The `TestContext` provides information about the test run, such as:
 
-- `TestName` – the name of the currently executing test.
-- `CurrentTestOutcome` – the result of the current test.
-- `FullyQualifiedTestClassName` – the full name of the test class.
-- `TestRunDirectory` – the directory where the test run is executed.
-- `DeploymentDirectory` – the directory where the deployment items are located.
-- `ResultsDirectory` – the directory where the test results are stored.  Typically a subdirectory of the `TestRunDirectory`.
-- `TestRunResultsDirectory` – the directory where the test results are stored. Typically a subdirectory of the `ResultsDirectory`.
-- `TestResultsDirectory` – the directory where the test results are stored. Typically a subdirectory of the `ResultsDirectory`.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestName> – the name of the currently executing test.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.CurrentTestOutcome> - the result of the current test.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.FullyQualifiedTestClassName> - the full name of the test class.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunDirectory> - the directory where the test run is executed.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DeploymentDirectory> - the directory where the deployment items are located.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.ResultsDirectory> - the directory where the test results are stored.  Typically a subdirectory of the `TestRunDirectory`.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestRunResultsDirectory> - the directory where the test results are stored. Typically a subdirectory of the `ResultsDirectory`.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestResultsDirectory> - the directory where the test results are stored. Typically a subdirectory of the `ResultsDirectory`.
 
 In MSTest 3.7 and later, the `TestContext` class also provides new properties helpful for `TestInitialize` and `TestCleanup` methods:
 
-- `TestData` – the data that will be provided to the parameterized test method or `null` if the test is not parameterized.
-- `TestDisplayName` - the display name of the test method.
-- `TestException` - the exception thrown by either the test method or test initialize, or `null` if the test method did not throw an exception.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestData> - the data that will be provided to the parameterized test method or `null` if the test is not parameterized.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestDisplayName> - the display name of the test method.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestException> - the exception thrown by either the test method or test initialize, or `null` if the test method did not throw an exception.
 
 ### Data-driven tests
 
 In MSTest 3.7 and later, the property `TestData` can be used to access the data for the current test during `TestInitialize` and `TestCleanup` methods.
 
-When targeting .NET framework, the `TestContext` enables you to retrieve and set data for each iteration in a data-driven test, using properties like `DataRow` and `DataConnection` (for datasource based tests).
+When targeting .NET framework, the `TestContext` enables you to retrieve and set data for each iteration in a data-driven test, using properties like `DataRow` and `DataConnection` (for [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute)-based tests).
 
 Consider the following CSV file `TestData.csv`:
 
@@ -68,7 +68,7 @@ You can use the `DataSource` attribute to read the data from the CSV file:
 
 ### Store and retrieve runtime data
 
-You can use `TestContext.Properties` to store custom key-value pairs that can be accessed across different methods in the same test session.
+You can use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties?displayProperty=nameWithType> to store custom key-value pairs that can be accessed across different methods in the same test session.
 
 ```csharp
 TestContext.Properties["MyKey"] = "MyValue";
@@ -77,7 +77,7 @@ string value = TestContext.Properties["MyKey"]?.ToString();
 
 ### Associate data to a test
 
-The `TestContext.AddResultFile` method allows you to add a file to the test results, making it available for review in the test output. This can be useful if you generate files during your test (for example, log files, screenshots, or data files) that you want to attach to the test results.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.AddResultFile(System.String)?displayProperty=nameWithType> method allows you to add a file to the test results, making it available for review in the test output. This can be useful if you generate files during your test (for example, log files, screenshots, or data files) that you want to attach to the test results.
 
 :::code language="csharp" source="snippets/testcontext/csharp/AddResultFile.cs":::
 

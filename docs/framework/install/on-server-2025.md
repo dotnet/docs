@@ -21,4 +21,4 @@ ms.date: 11/21/2024
 - [.NET Downloads](https://dotnet.microsoft.com/download)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
 - [Install .NET Framework for developers](guide-for-developers.md)
-- [Determine which .NET Framework versions are installed](../migration-guide/how-to-determine-which-versions-are-installed.md)
+- [Determine which .NET Framework versions are installed](../migration-guide/how-to-determine-which-versions-are-installed.md)[EOF]

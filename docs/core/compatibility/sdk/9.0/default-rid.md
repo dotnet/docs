@@ -1,6 +1,6 @@
 ---
 title: "Default RID used when targeting .NET Framework"
-description: "Learn about the breaking change in the .NET 9 SDK where the default RID is used for apps that target .NET Framework."
+description: "Learn about the breaking change in the .NET 9 SDK where a new default RID is used for apps that target .NET Framework."
 ms.date: 12/5/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43692
@@ -43,7 +43,7 @@ For more information, see [dotnet/sdk issue #35575](https://github.com/dotnet/sd
 If you're affected by this change, choose one of the following actions:
 
 - Update your runtime identifier to a value supported by the portable RID graph. Project file example:
-In the project file
+
    ```xml
    <PropertyGroup>
       <RuntimeIdentifier>win-x64</RuntimeIdentifier>

@@ -4,6 +4,8 @@ namespace MethodParameters;
 
 // <DataTypes>
 public record struct Point(int X, int Y);
+// This doesn't use a primary constructor because the properties implemented for `record` types are 
+// readonly in record class types. That would prevent the mutations necessary for this example.
 public record class Point3D
 {
     public int X { get; set; }

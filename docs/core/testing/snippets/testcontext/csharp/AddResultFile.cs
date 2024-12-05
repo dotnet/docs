@@ -3,6 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 [TestClass]
 public class TestClassResultFile
 {
+    public TestContext TestContext { get; set; }
+
     [TestMethod]
     public void TestMethodWithResultFile()
     {

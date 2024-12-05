@@ -2,24 +2,25 @@
 title: Built-in Activities in .NET
 description: Overview of activities emitted by the .NET libraries
 ms.date: 12/05/2024
+ms.topic: reference
 ---
 
-# Built-in Activities in .NET
+# Built-in activities in .NET
 
-This is a reference for distributed tracing Activities (<xref:System.Diagnostics.Activity>) emitted natively by .NET-s built-in <xref:System.Diagnostics.ActivitySource> instances.
+This is a reference for distributed tracing [activities](xref:System.Diagnostics.Activity) emitted natively by .NET's built-in <xref:System.Diagnostics.ActivitySource> instances.
 
-## System.Net Activities
+## System.Net activities
 
 ### HTTP client request
 
-<xref:System.Net.Http.SocketsHttpHandler> and <xref:System.Net.Http.HttpClientHandler> report the the HTTP client request activity following the recommendations defined in OpenTelemetry [HTTP Client Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/http/http-spans/#http-client). It describes the HTTP request sent by <xref:System.Net.Http.HttpClient>'s send overloads during the time interval the underlying handler completes the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body.
+<xref:System.Net.Http.SocketsHttpHandler> and <xref:System.Net.Http.HttpClientHandler> report the HTTP client request activity following the recommendations defined in OpenTelemetry [HTTP Client Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/http/http-spans/#http-client). It describes the HTTP request sent by <xref:System.Net.Http.HttpClient>'s send overloads during the time interval the underlying handler completes the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body.
 
 | Availability | <xref:System.Diagnostics.ActivitySource> name | <xref:System.Diagnostics.Activity.OperationName> | <xref:System.Diagnostics.Activity.DisplayName> |
 |---|---|---|---|
 | .NET 9+ | `System.Net.Http` | `System.Net.Http.HttpRequestOut` | `{HTTP method}`  |
 
 > [!NOTE]
-> The `System.Net.Http.HttpRequestOut` activity is in fact available on earlier versions of .NET, however its' <xref:System.Diagnostics.Activity.Status>, <xref:System.Diagnostics.Activity.DisplayName> and attributes (tags) are only populated starting with .NET 9. On earlier versions the [OpenTelemetry.Instrumentation.Http](https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Http/) package is recommended to fill the gaps of the built-in instrumentation.
+> The `System.Net.Http.HttpRequestOut` activity is in fact available on earlier versions of .NET, however its <xref:System.Diagnostics.Activity.Status>, <xref:System.Diagnostics.Activity.DisplayName>, and attributes (tags) are only populated starting with .NET 9. On earlier versions, the [OpenTelemetry.Instrumentation.Http](https://www.nuget.org/packages/OpenTelemetry.Instrumentation.Http/) package is recommended to fill the gaps of the built-in instrumentation.
 
 #### Attributes (tags)
 
@@ -34,9 +35,9 @@ This is a reference for distributed tracing Activities (<xref:System.Diagnostics
 | `http.response.status_code` | int | [HTTP response status code](https://tools.ietf.org/html/rfc7231#section-6). | `200` | If response was received. |
 | `network.protocol.version` | string | Version of the HTTP protocol used. | `1.1`; `2` | If response was received. |
 
-**[1] `http.request.method`:** The value contains the method name, if the method is one of the well-known methods listed in [RFC9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-methods); otherwise the value is `_OTHER`. The user-provided method names will be mapped to known names in a case-insensitive manner, e.g. if the user provides the name `GeT`, it will be mapped to `GET`, and `http.request.method_original` will not be populated.
+**[1] `http.request.method`:** The value contains the method name, if the method is one of the well-known methods listed in [RFC9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-methods); otherwise the value is `_OTHER`. The user-provided method names are mapped to known names in a case-insensitive manner. For example, if the user provides the name `GeT`, it will be mapped to `GET`, and `http.request.method_original` will not be populated.
 
-**[2] `url.full`:** To avoid leaking secrets the value is redacted: the entire query is replaced with a `*` character and the fragment is missing. See the [URI redaction breaking change docs](../compatibility/networking/9.0/query-redaction-logs.md) for more details and opt-out switches.
+**[2] `url.full`:** To avoid leaking secrets the value is redacted: the entire query is replaced with a `*` character and the fragment is missing. For more information and opt-out switches, see the [URI redaction breaking change docs](../compatibility/networking/9.0/query-redaction-logs.md).
 
 ### HTTP client request: wait for connection (experimental)
 
@@ -50,7 +51,7 @@ This activity is a child of an *HTTP client request* activity. It represents the
 > The time it takes to get a connection from the pool is also reported by the [`http.client.request.time_in_queue`](built-in-metrics-system-net.md#metric-httpclientrequesttime_in_queue) metric.
 
 > [!WARNING]
-> This activity is experimental. It might be altered or deleted in future versions!
+> This activity is experimental. It might be altered or deleted in a future version.
 
 #### Attributes (tags)
 
@@ -66,13 +67,13 @@ This activity describes the establishment of an HTTP connection. Typically, this
 |---|---|---|---|
 | .NET 9+ | `Experimental.System.Net.Http.Connections` | `Experimental.System.Net.Http.Connections.ConnectionSetup` | `HTTP connection_setup {address}:{port}`  |
 
-There is no parent-child relationship between the *HTTP client request* and the *HTTP connection setup* activities; the latter will always be a root activity, living in a separate trace. However, if the connection attempt represented by *HTTP connection setup* results in a succesful HTTP connection, and that connection is picked up by a request to serve it, the instrumentation adds an <xref:System.Diagnostics.ActivityLink> to the *HTTP client request* activity pointing to the *HTTP connection setup* activity. I.e., each request is linked to the connection that served the request.
+There is no parent-child relationship between the *HTTP client request* and the *HTTP connection setup* activities; the latter will always be a root activity, living in a separate trace. However, if the connection attempt represented by *HTTP connection setup* results in a succesful HTTP connection, and that connection is picked up by a request to serve it, the instrumentation adds an <xref:System.Diagnostics.ActivityLink> to the *HTTP client request* activity pointing to the *HTTP connection setup* activity. That is, each request is linked to the connection that served the request.
 
 > [!NOTE]
-> If *HTTP connection setup* fails, it will be not linked to any *HTTP client request*!
+> If *HTTP connection setup* fails, it won't be linked to any *HTTP client request*.
 
 > [!WARNING]
-> This activity is experimental. It might be altered or deleted in future versions!
+> This activity is experimental. It might be altered or deleted in a future version.
 
 #### Attributes (tags)
 
@@ -96,7 +97,7 @@ This activity describes DNS lookups performed via <xref:System.Net.Dns> calls. I
 > The DNS lookup duration is also reported by the [`dns.lookup.duration`](built-in-metrics-system-net.md#metric-dnslookupduration) metric.
 
 > [!WARNING]
-> This activity is experimental. It might be altered or deleted in future versions!
+> This activity is experimental. It might be altered or deleted in a future version.
 
 #### Attributes (tags)
 
@@ -110,14 +111,14 @@ This activity describes DNS lookups performed via <xref:System.Net.Dns> calls. I
 
 ### Socket connect (experimental)
 
-This activity describes the establishment of a <xref:System.Net.Sockets.Socket> connection via. <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.ConnectAsync%2A>. When the *socket connect* activity is reported along with an *HTTP connection setup* activity, *socket connect* becomes a child of *HTTP connection setup*.
+This activity describes the establishment of a <xref:System.Net.Sockets.Socket> connection via <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.ConnectAsync%2A>. When the *socket connect* activity is reported along with an *HTTP connection setup* activity, *socket connect* becomes a child of *HTTP connection setup*.
 
 | Availability | <xref:System.Diagnostics.ActivitySource> name | <xref:System.Diagnostics.Activity.OperationName> | <xref:System.Diagnostics.Activity.DisplayName> |
 |---|---|---|---|
 | .NET 9+ | `Experimental.System.Net.Sockets` | `Experimental.System.Net.Sockets.Connect` | `socket connect {address}[:{port}]` |
 
 > [!WARNING]
-> This activity is experimental. It might be altered or deleted in future versions!
+> This activity is experimental. It might be altered or deleted in a future version.
 
 #### Attributes (tags)
 
@@ -138,13 +139,13 @@ This activity describes the TLS client or server handshake performed via <xref:S
 | .NET 9+ | `Experimental.System.Net.Security` | `Experimental.System.Net.Security.TlsHandshake` | `TLS client handshake {host}` -or- `TLS server handshake` |
 
 > [!WARNING]
-> This activity is experimental. It might be altered or deleted in future versions!
+> This activity is experimental. It might be altered or deleted in future versions.
 
 #### Attributes (tags)
 
 | Attribute  | Type | Description  | Examples  | Presence |
 |---|---|---|---|---|
 | `error.type` | string | Describes a class of error the operation ended with. | `System.Net.Security.Authentication.AuthenticationException`; `System.OperationCanceledException` | If the handshake fails. |
-| `server.address` | string | he [server name indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication) used in the 'Client Hello' message during TLS handshake. | `example.com` | When authenticating as client. |
+| `server.address` | string | The [server name indication (SNI)](https://en.wikipedia.org/wiki/Server_Name_Indication) used in the 'Client Hello' message during TLS handshake. | `example.com` | When authenticating as client. |
 | `tls.protocol.name` | string | Normalized lowercase protocol name parsed from original string of the negotiated [SSL/TLS protocol version](https://www.openssl.org/docs/man1.1.1/man3/SSL_get_version.html#RETURN-VALUES) | `ssl`; `tls` | When the protocol info is available. |
 | `tls.protocol.version` | string | Numeric part of the version parsed from the original string of the negotiated [SSL/TLS protocol version](https://www.openssl.org/docs/man1.1.1/man3/SSL_get_version.html#RETURN-VALUES) | `1.2`; `1.3` | When the protocol info is available. |

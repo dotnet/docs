@@ -115,11 +115,11 @@ Available starting in: .NET 8
 
 **[1] `error.type`:** If the request has failed, the value is set to one of the following:
 
-- An exception name with type, e.g., `System.Threading.Tasks.TaskCanceledException`
-- A status code that indicates a client or server error, e.g., `500`
-- In case an <xref:System.Net.Http.HttpRequestException> occurred and with a <xref:System.Net.Http.HttpRequestError> other than `Unknown`; the enum value in snake case, e.g., `name_resolution_error`
+- An exception name with type, for example, <xref:System.Threading.Tasks.TaskCanceledException>.
+- A status code that indicates a client or server error, for example, `500`.
+- If an <xref:System.Net.Http.HttpRequestException> occurred with an <xref:System.Net.Http.HttpRequestError> other than `Unknown`, the enum value in snake case, for example, `name_resolution_error`.
 
-**[2] `http.request.method`:** `http.request.method`:** The value contains the method name, if the method is one of the well-known methods listed in [RFC9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-methods); otherwise the value is `_OTHER`. The user-provided method names will be mapped to known names in a case-insensitive manner, e.g. if the user provides the name `GeT`, it will be mapped to `GET`.
+**[2] `http.request.method`:** `http.request.method`:** The value contains the method name, if the method is one of the well-known methods listed in [RFC9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-methods); otherwise the value is `_OTHER`. The user-provided method names will be mapped to known names in a case-insensitive manner. For example, if the user provides the name `GeT`, it will be mapped to `GET`.
 
 **[3] `server.port`:** The Presence of the value is version-dependent:
 

@@ -16,20 +16,20 @@ New versions of some out-of-band (OOB) packages were generated. The following ch
 
 Additionally, the source code of these packages was migrated from their old location, which was a branch of .NET that is no longer in support, to the <https://github.com/dotnet/maintenance-packages> repo.
 
-| Package                                 | Old source code location   | New package version |
-|-----------------------------------------|----------------------------|---------------------|
-| Microsoft.Bcl.HashCode                  | dotnet/corefx, 3.1 branch  | 6.0.0               |
-| Microsoft.IO.Redist                     | dotnet/runtime, 6.0 branch | 6.1.0               |
-| System.Buffers                          | dotnet/corefx, 2.1 branch  | 4.6.0               |
-| System.Data.SqlClient                   | dotnet/corefx, 3.1 branch  | 4.9.0               |
-| System.Json                             | dotnet/corefx, 3.1 branch  | 4.8.0               |
-| System.Memory                           | dotnet/corefx, 2.1 branch  | 4.6.0               |
-| System.Net.WebSockets.WebSocketProtocol | dotnet/runtime, 5.0 branch | 5.1.0               |
-| System.Numerics.Vectors                 | dotnet/corefx, 2.1 branch  | 4.6.0               |
-| System.Reflection.DispatchProxy         | dotnet/corefx, 3.1 branch  | 4.8.0               |
-| System.Runtime.CompilerServices.Unsafe  | dotnet/runtime, 6.0 branch | 6.1.0               |
-| System.Threading.Tasks.Extensions       | dotnet/corefx, 2.1 branch  | 4.6.0               |
-| System.Xml.XPath.XmlDocument            | dotnet/corefx, 1.1 branch  | 4.7.0               |
+| Package                                 | Old source code location                                        | New package version |
+|-----------------------------------------|-----------------------------------------------------------------|---------------------|
+| Microsoft.Bcl.HashCode                  | [dotnet/corefx](https://github.com/dotnet/corefx), 3.1 branch   | 6.0.0               |
+| Microsoft.IO.Redist                     | [dotnet/runtime](https://github.com/dotnet/runtime), 6.0 branch | 6.1.0               |
+| System.Buffers                          | [dotnet/corefx](https://github.com/dotnet/corefx), 2.1 branch   | 4.6.0               |
+| System.Data.SqlClient                   | [dotnet/corefx](https://github.com/dotnet/corefx), 3.1 branch   | 4.9.0               |
+| System.Json                             | [dotnet/corefx](https://github.com/dotnet/corefx), 3.1 branch   | 4.8.0               |
+| System.Memory                           | [dotnet/corefx](https://github.com/dotnet/corefx), 2.1 branch   | 4.6.0               |
+| System.Net.WebSockets.WebSocketProtocol | [dotnet/runtime](https://github.com/dotnet/runtime), 5.0 branch | 5.1.0               |
+| System.Numerics.Vectors                 | [dotnet/corefx](https://github.com/dotnet/corefx), 2.1 branch   | 4.6.0               |
+| System.Reflection.DispatchProxy         | [dotnet/corefx](https://github.com/dotnet/corefx), 3.1 branch   | 4.8.0               |
+| System.Runtime.CompilerServices.Unsafe  | [dotnet/runtime](https://github.com/dotnet/runtime), 6.0 branch | 6.1.0               |
+| System.Threading.Tasks.Extensions       | [dotnet/corefx](https://github.com/dotnet/corefx), 2.1 branch   | 4.6.0               |
+| System.Xml.XPath.XmlDocument            | [dotnet/corefx](https://github.com/dotnet/corefx), 1.1 branch   | 4.7.0               |
 
 ## Version introduced
 
@@ -45,7 +45,7 @@ Some TFMs that were previously supported are no longer supported. However, there
 
 ## Type of breaking change
 
-This change can affect [source compatibility](../categories.md#source-incompatible).
+This change can affect [source compatibility](../../categories.md#source-incompatible).
 
 ## Reason for change
 

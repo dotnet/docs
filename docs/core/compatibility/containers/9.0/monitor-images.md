@@ -44,7 +44,7 @@ The `latest` tag has been updated from the Ubuntu Chiseled images to Azure Linux
 
 ## Type of breaking change
 
-This change is a [behavioral change](../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

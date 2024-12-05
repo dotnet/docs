@@ -16,6 +16,8 @@ items:
                 href: aspnet-core/9.0/certificate-export.md
               - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
                 href: aspnet-core/9.0/hostbuilder-validation.md
+              - name: Legacy Mono and Emscripten APIs not exported to global namespace
+                href: aspnet-core/9.0/legacy-apis.md
               - name: Middleware types with multiple constructors
                 href: aspnet-core/9.0/middleware-constructors.md
           - name: Containers
@@ -1050,6 +1052,8 @@ items:
                 href: aspnet-core/9.0/certificate-export.md
               - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
                 href: aspnet-core/9.0/hostbuilder-validation.md
+              - name: Legacy Mono and Emscripten APIs not exported to global namespace
+                href: aspnet-core/9.0/legacy-apis.md
               - name: Middleware types with multiple constructors
                 href: aspnet-core/9.0/middleware-constructors.md
           - name: .NET 8

@@ -5,7 +5,7 @@ public class MyTestClassTestContextThroughCtor
 {
     private readonly TestContext _testContext;
 
-    public MyTestClass(TestContext testContext)
+    public MyTestClassTestContextThroughCtor(TestContext testContext)
     {
         _testContext = testContext;
     }

@@ -43,9 +43,9 @@ The `TestContext` provides information about the test run, such as:
 
 In MSTest 3.7 and later, the `TestContext` class also provides new properties helpful for `TestInitialize` and `TestCleanup` methods:
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestData> - the data that will be provided to the parameterized test method or `null` if the test is not parameterized.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestDisplayName> - the display name of the test method.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestException> - the exception thrown by either the test method or test initialize, or `null` if the test method did not throw an exception.
+- `TestContext.TestData` - the data that will be provided to the parameterized test method or `null` if the test is not parameterized.
+- `TestContext.TestDisplayName` - the display name of the test method.
+- `TestContext.TestException` - the exception thrown by either the test method or test initialize, or `null` if the test method did not throw an exception.
 
 ### Data-driven tests
 

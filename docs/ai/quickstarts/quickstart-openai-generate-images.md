@@ -68,7 +68,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     :::zone-end
 
-1. Open the app in Visual Studio code or your editor of choice
+1. Open the app in Visual Studio Code or your editor of choice.
 
     ```bash
     code .
@@ -84,7 +84,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 ## Configure the app
 
-1. Navigate to the root of your .NET projet from a terminal or command prompt.
+1. Navigate to the root of your .NET project from a terminal or command prompt.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -128,7 +128,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     dotnet run
     ```
 
-    Navigate to the image URL in the console output to view the generated image. Customize the text content of the prompt to create new images or modify the original..
+    Navigate to the image URL in the console output to view the generated image. Customize the text content of the prompt to create new images or modify the original.
 
 :::zone target="docs" pivot="azure-openai"
 

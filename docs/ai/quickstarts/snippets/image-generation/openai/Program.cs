@@ -15,7 +15,7 @@ ImageClient client = new(modelName, key);
 
 // Generate the image
 GeneratedImage generatedImage = await client.GenerateImageAsync("""
-    A postal card with an happy hiker waving and a beautiful mountain in the background.
+    A postal card with a happy hiker waving and a beautiful mountain in the background.
     There is a trail visible in the foreground.
     The postal card has text in red saying: 'You are invited for a hike!'
     """,

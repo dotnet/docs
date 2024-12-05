@@ -78,7 +78,7 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
 
     - Creates an `OllamaChatClient` that implements the `IChatClient` interface.
         - This interface provides a loosely coupled abstraction you can use to chat with AI Models.
-        - You can later change the underlying chat client implementation to another model such as Azure OpenAI without changing any other code.
+        - You can later change the underlying chat client implementation to another model, such as Azure OpenAI, without changing any other code.
     - Creates a `ChatHistory` object to store the messages between the user and the AI model.
     - Retrieves a prompt from the user and stores it in the `ChatHistory`.
     - Sends the chat data to the AI model to generate a response.

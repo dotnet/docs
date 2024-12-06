@@ -440,7 +440,7 @@ You can define a custom operation on a computation expression and use a custom o
 
 If you already have a builder class, its custom operations can be extended from outside of this builder class. Extensions must be declared in modules. Namespaces cannot contain extension members except in the same file and the same namespace declaration group where the type is defined.
 
-The following example shows the extension of the existing `FSharp.Linq.QueryBuilder` class.
+The following example shows the extensions of the existing `FSharp.Linq.QueryBuilder` class.
 
 ```fsharp
 open System
@@ -448,9 +448,13 @@ open FSharp.Linq
 
 type QueryBuilder with
 
-    [<CustomOperation("existsNot")>]
-    member _.ExistsNot (source: QuerySource<'T, 'Q>, predicate) =
-        System.Linq.Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
+    [<CustomOperation>]
+    member _.any (source: QuerySource<'T, 'Q>, predicate) =
+        System.Linq.Enumerable.Any (source.Source, Func<_,_>(predicate))
+
+    [<CustomOperation("singleSafe")>] // you can specify your own operation name in the constructor 
+    member _.singleOrDefault (source: QuerySource<'T, 'Q>, predicate) =
+        System.Linq.Enumerable.SingleOrDefault (source.Source, Func<_,_>(predicate))
 ```
 
 Custom operations can be overloaded. For more information, see [F# RFC FS-1056 - Allow overloads of custom keywords in computation expressions](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1056-allow-custom-operation-overloads.md).

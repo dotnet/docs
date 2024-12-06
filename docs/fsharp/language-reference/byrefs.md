@@ -179,6 +179,8 @@ A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated
 * They cannot be static or instance members of a class or normal struct.
 * They cannot be captured by any closure construct (`async` methods or lambda expressions).
 * They cannot be used as a generic parameter.
+  * Starting with F# 9, this restriction is relaxed if the generic parameter is defined in C# using the allows ref struct anti-constraint. F# can instantiate such generics in types and methods with byref-like types. As a few examples, this affects BCL delegate types (`Action<>`, `Func<>`), interfaces (`IEnumerable<>`, `IComparable<>`) and generic arguments with a user-provided accumulator function (`String.string Create<TState>(int length, TState state, SpanAction<char, TState> action)`).
+  * It is impossible to author generic code supporting byref-like types in F#.
 
 This last point is crucial for F# pipeline-style programming, as `|>` is a generic function that parameterizes its input types. This restriction may be relaxed for `|>` in the future, as it is inline and does not make any calls to non-inlined generic functions in its body.
 

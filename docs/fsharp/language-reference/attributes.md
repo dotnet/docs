@@ -84,6 +84,82 @@ Although you do not usually need to specify the attribute target explicitly, val
 </td>
   </tr>
   <tr>
+    <td>method</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnMethods>]
+let someFunction() = 42
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>class</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnClasses>]
+type MyClass(myValue: int) =
+    member _.MyValue = myValue
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>struct</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnStructs>]
+[<Struct>]
+type MyStruct(myValue: int) =
+    member _.MyValue = myValue
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>interface</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnInterfaces>]
+type MyInterface =
+    abstract member Prop: string
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>enum</td>
+    <td>
+
+```fsharp
+[<MyCustomAttributeThatWorksOnEnums>]
+type Color =
+    | Red = 0
+    | Green = 1
+    | Blue = 2
+```
+
+</td>
+  </tr>
+  <tr>
+    <td>constructor</td>
+    <td>
+
+```fsharp
+type MyClass(myValue: int) =
+    member _.MyValue = myValue
+
+    [<MyCustomAttributeThatWorksOnCtors>]
+    new () = MyClass 42
+```
+
+</td>
+  </tr>
+  <tr>
     <td>return</td>
     <td>
 

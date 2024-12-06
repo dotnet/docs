@@ -1,6 +1,6 @@
 using System;
 
-namespace myproject;
+namespace ExampleProject;
 
 //<CalendarHelper>
 public static class CalendarHelper

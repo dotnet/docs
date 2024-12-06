@@ -44,7 +44,7 @@ The following example demonstrates capturing elapsed time with <xref:System.Time
 
 ## FakeTimeProvider implementation
 
-The [**Microsoft.Extensions.TimeProvider.Testing** NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.TimeProvider.Testing/) provides a controllable `TimeProvider` implementation that's suitable for unit testing.
+The [**Microsoft.Extensions.TimeProvider.Testing** NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.TimeProvider.Testing/) provides a controllable `TimeProvider` implementation designed for unit testing.
 
 The following list describes some of the capabilities of the <xref:Microsoft.Extensions.Time.Testing.FakeTimeProvider> class:
 
@@ -54,33 +54,33 @@ The following list describes some of the capabilities of the <xref:Microsoft.Ext
 
 ## Custom implementation
 
-While [FakeTimeProvider](#faketimeprovider-implementation) should cover most scenarios requiring control over time, you can still provide your own. Create a new class that derives from <xref:System.TimeProvider> and override members to control how time is provided. For example, the following class only provides a single date, the date of the moon landing:
+While [FakeTimeProvider](#faketimeprovider-implementation) should cover most scenarios requiring predictability with time, you can still provide your own implementation. Create a new class that derives from <xref:System.TimeProvider> and override members to control how time is provided. For example, the following class only provides a single date, the date of the moon landing:
 
 :::code language="csharp" source="./snippets/timeprovider-overview/csharp/MoonLandingTimeProviderPST.cs" id="CustomProvider":::
 :::code language="vb" source="./snippets/timeprovider-overview/vb/MoonLandingTimeProviderPST.vb" id="CustomProvider":::
 
 If code using this class calls `MoonLandingTimeProviderPST.GetUtcNow`, the date of the moon landing in UTC is returned. If `MoonLandingTimeProviderPST.GetLocalNow` is called, the base class applies `MoonLandingTimeProviderPST.LocalTimeZone` to `GetUtcNow` and returns the moon landing date and time in the PST timezone.
 
-To demonstrate the usefulness of controlling time, consider the following example. Let's say that you're writing a calendar app that sends a greeting to the user when the app is first opened each day. The app has many hardcoded greetings for special days, such as the anniversary of the moon landing.
+To demonstrate the usefulness of controlling time, consider the following example. Let's say that you're writing a calendar app that sends a greeting to the user when the app is first opened each day. The app says a special greeting when the current day has an event associated with it, such as the anniversary of the moon landing.
 
 :::code language="csharp" source="./snippets/timeprovider-overview/csharp/CalendarHelper.cs" id="CalendarHelper":::
 :::code language="vb" source="./snippets/timeprovider-overview/vb/CalendarHelper.vb" id="CalendarHelper":::
 
-You might be inclined to write the previous code with <xref:System.DateTime> or <xref:System.DateTimeOffset> to get the current time, instead of <xref:System.TimeProvider>. But with unit testing, it's hard to work around <xref:System.DateTime> or <xref:System.DateTimeOffset> directly. You would need to either run the tests on the day and month of the moon landing or further abstract the code into smaller but testable units.
+You might be inclined to write the previous code with <xref:System.DateTime> or <xref:System.DateTimeOffset> to get the current date and time, instead of <xref:System.TimeProvider>. But with unit testing, it's hard to work around <xref:System.DateTime> or <xref:System.DateTimeOffset> directly. You would need to either run the tests on the day and month of the moon landing or further abstract the code into smaller but testable units.
 
 The normal operation of your app uses `TimeProvider.System` to retrieve the current date and time:
 
 :::code language="csharp" source="./snippets/timeprovider-overview/csharp/Program.cs" id="GreetingNormal":::
 :::code language="vb" source="./snippets/timeprovider-overview/vb/Program.vb" id="GreetingNormal":::
 
-And unit tests are written to test special use cases:
+And unit tests can be written to test specific scenarios, such as testing the anniversary of the moon landing:
 
 :::code language="csharp" source="./snippets/timeprovider-overview/csharp/Program.cs" id="GreetingMoon":::
 :::code language="vb" source="./snippets/timeprovider-overview/vb/Program.vb" id="GreetingMoon":::
 
 ## Use with .NET
 
-Starting with .NET 8, the <xref:System.TimeProvider> class is provided by the runtime library. Older versions of .NET or libraries targeting .NET Standard 2.0 should use the NuGet package as described in the [Use with .NET Framework](#use-with-net-framework) section.
+Starting with .NET 8, the <xref:System.TimeProvider> class is provided by the runtime library. Older versions of .NET or libraries targeting .NET Standard 2.0, must reference the [**Microsoft.Bcl.TimeProvider** NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
 
 ## Use with .NET Framework
 

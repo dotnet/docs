@@ -114,6 +114,8 @@ items:
             items:
               - name: BinaryFormatter always throws
                 href: serialization/9.0/binaryformatter-removal.md
+              - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
+                href: serialization/9.0/jsondocument-props.md
           - name: Windows Forms
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -1930,6 +1932,8 @@ items:
             items:
               - name: BinaryFormatter always throws
                 href: serialization/9.0/binaryformatter-removal.md
+              - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
+                href: serialization/9.0/jsondocument-props.md
           - name: .NET 8
             items:
               - name: BinaryFormatter disabled for most projects

@@ -12,7 +12,7 @@ zone_pivot_groups: openai-library
 
 # Build a .NET AI app to integrate with vector stores
 
-In this quickstart, you create a .NET console app that integrates with AI embedding models and vector stores. You learn how to generate embeddings for user prompts and use those embeddings to query a vector data store. The app uses the [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
+In this quickstart, you create a .NET console app that integrates with AI embedding models and vector stores. You learn how to generate embeddings for user prompts and use those embeddings to query a vector data store. The app uses the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
 
 :::zone target="docs" pivot="openai"
 
@@ -99,7 +99,7 @@ Complete the following steps to create a .NET console app that can query and upd
 
     The following list describes what each package is used for in the `VectorDataAI` app:
 
-    - [`Microsoft.Extensions.AI.OpenAI`](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) provides of generative AI abstractions for OpenAI-compatible endpoints. This library also includes the official [`OpenAI`](https://www.nuget.org/packages/OpenAI) library for the OpenAI service API as a dependency.
+    - [`Microsoft.Extensions.AI.OpenAI`](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) provides generative AI abstractions for OpenAI-compatible endpoints. This library also includes the official [`OpenAI`](https://www.nuget.org/packages/OpenAI) library for the OpenAI service API as a dependency.
     - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
     - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides Implementation of key-value pair based configuration.
@@ -139,13 +139,13 @@ Complete the following steps to create a .NET console app that can query and upd
 
 1. Add a new classed named **CloudService** to your project with the following properties:
 
-   :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" range="1-11":::
+   :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
 
     The C# attributes provided by `Microsoft.Extensions.VectorData` influence how each property is handled when used in a vector store.
 
 1. In the **Program.cs** file, add the following code to create a data set that describes a collection of cloud services:
 
-   :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" range="8-46":::
+   :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="8-46":::
 
 1. Create and configure an `IEmbeddingGenerator` implementation to send requests to an embedding AI model:
 
@@ -166,13 +166,13 @@ Complete the following steps to create a .NET console app that can query and upd
 
 1. Create and populate a vector store with the cloud service data. Use the `IEmbeddingGenerator` implementation to create and assign an embedding vector for each record in the cloud service data:
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="60-69":::
+    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="61-70":::
 
    The embeddings are numerical representations of the semantic meaning for each data record, which makes them compatible with vector search features.
 
 1. Create an embedding for a search query and use it to perform a vector search on the vector store:
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="71-87":::
+    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="72-88":::
 
 1. Use the `dotnet run` command to run the app:
 

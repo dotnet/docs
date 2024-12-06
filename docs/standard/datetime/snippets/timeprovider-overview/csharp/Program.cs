@@ -1,4 +1,4 @@
-﻿using myproject;
+﻿using ExampleProject;
 
 Console.WriteLine(@"_./-==--======- getlocal -======--==-\._");
 

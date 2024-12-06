@@ -1,6 +1,4 @@
-using System;
-
-namespace ExampleProject;
+﻿namespace ExampleProject;
 
 //<CalendarHelper>
 public static class CalendarHelper

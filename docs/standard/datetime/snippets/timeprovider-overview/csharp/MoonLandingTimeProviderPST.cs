@@ -1,6 +1,4 @@
-using System;
-
-namespace myproject;
+﻿namespace ExampleProject;
 
 //<CustomProvider>
 public class MoonLandingTimeProviderPST: TimeProvider

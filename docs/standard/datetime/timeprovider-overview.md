@@ -26,7 +26,7 @@ The <xref:System.TimeProvider> class defines the following capabilities:
 
 ## Default implementation
 
-.NET provides an implementation of <xref:System.TimeProvider> through the <xref:System.TimeProvider.System?displayProperty=nameWithType> property, using the following characteristics:
+.NET provides an implementation of <xref:System.TimeProvider> through the <xref:System.TimeProvider.System?displayProperty=nameWithType> property, with the following characteristics:
 
 - Date and time are calculated with <xref:System.DateTimeOffset.UtcNow?displayProperty=nameWithType> and <xref:System.TimeZoneInfo.Local?displayProperty=nameWithType>.
 - Timestamps are provided by <xref:System.Diagnostics.Stopwatch?displayProperty=fullName>.

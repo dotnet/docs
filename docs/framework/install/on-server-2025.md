@@ -1,15 +1,16 @@
 ---
-title: Install .NET Framework on Windows 11
-description: Learn how to install .NET Framework on Windows 11.
-ms.date: 10/06/2021
+title: Install .NET Framework on Windows Server 2025
+description: Learn how to install .NET Framework on Windows Server 2025.
+ms.date: 12/05/2024
 ---
-# Install .NET Framework on Windows 11
 
-.NET Framework 4.8 is included with Windows 11, and runs any .NET Framework 4.x app.
+# Install .NET Framework on Windows Server 2025
+
+.NET Framework 4.8.1 is included with Server 2025, and runs any .NET Framework 4.x app.
 
 ## .NET Framework 4.8.1
 
-.NET 4.8.1 is supported on Windows 11, version 22H2 and newer operating systems.
+.NET 4.8.1 is supported on Windows Server 2025 and newer operating systems.
 
 ## .NET Framework 3.5
 

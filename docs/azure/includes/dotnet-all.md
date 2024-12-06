@@ -486,8 +486,8 @@
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.284](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.284) |  |  |
 | Functions extension for Cosmos DB | NuGet [4.8.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.8.1) |  | GitHub [4.8.1](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for Durable Task Framework | NuGet [3.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.0.1) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [3.0.1](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
-| Functions extension for Durable Task Framework - isolated worker | NuGet [1.2.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.2.1) |  |  |
+| Functions extension for Durable Task Framework | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.0.2) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [3.0.2](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
+| Functions extension for Durable Task Framework - isolated worker | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.2.2) |  |  |
 | Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
 | Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
 | Functions extension for Kafka | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.0.0)<br>NuGet [4.1.0-preview3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.1.0-preview3) |  | GitHub [4.0.0](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |
@@ -573,7 +573,7 @@
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
-| Microsoft.Azure.SignalR.Emulator | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.4.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
+| Microsoft.Azure.SignalR.Emulator | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.6.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | MSBuild | NuGet [0.31.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.31.0) |  |  |
 | ProviderHub Controller | NuGet [0.17.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.17.0) |  |  |
 | ProviderHub Templates | NuGet [1.9.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.9.0) |  |  |

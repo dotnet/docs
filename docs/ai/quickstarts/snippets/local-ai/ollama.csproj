@@ -8,8 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SemanticKernel" Version="1.31.0" />
-    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.22.0-alpha" />
+    <PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.0.1-preview.1.24570.5" />
   </ItemGroup>
 
 </Project>

@@ -36,8 +36,6 @@ Complete the following steps to configure and run a local AI Model on your devic
     ollama serve
     ```
 
-    If Ollama is running, it displays a list of available commands.
-
 1. Pull the `phi3:mini` model from the Ollama registry and wait for it to download:
 
     ```bash

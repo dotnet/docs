@@ -29,7 +29,6 @@ Complete the following steps to configure and run a local AI Model on your devic
     ```
 
     If Ollama is available, it displays a list of available commands.
-   
 1. Start Ollama:
 
     ```bash

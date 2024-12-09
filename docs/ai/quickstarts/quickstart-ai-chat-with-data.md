@@ -80,7 +80,7 @@ Complete the following steps to create a .NET console app that can query and upd
     - [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) is the official package for using OpenAI's .NET library with the Azure OpenAI Service.
     - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
-    - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides Implementation of key-value pair based configuration.
+    - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides implementation of key-value pair based configuration.
     - [`Microsoft.Extensions.Configuration.UserSecrets`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.UserSecrets) is a user secrets configuration provider implementation for `Microsoft.Extensions.Configuration`.
 
     :::zone-end
@@ -97,10 +97,10 @@ Complete the following steps to create a .NET console app that can query and upd
 
     The following list describes what each package is used for in the `VectorDataAI` app:
 
-    - [`Microsoft.Extensions.AI.OpenAI`](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) provides generative AI abstractions for OpenAI-compatible endpoints. This library also includes the official [`OpenAI`](https://www.nuget.org/packages/OpenAI) library for the OpenAI service API as a dependency.
+    - [`Microsoft.Extensions.AI.OpenAI`](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) provides AI abstractions for OpenAI-compatible models or endpoints. This library also includes the official [`OpenAI`](https://www.nuget.org/packages/OpenAI) library for the OpenAI service API as a dependency.
     - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
-    - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides Implementation of key-value pair based configuration.
+    - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides implementation of key-value pair based configuration.
     - [`Microsoft.Extensions.Configuration.UserSecrets`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.UserSecrets) is a user secrets configuration provider implementation for `Microsoft.Extensions.Configuration`.
 
     :::zone-end
@@ -139,7 +139,9 @@ Complete the following steps to create a .NET console app that can query and upd
 
    :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
 
-    The C# attributes provided by `Microsoft.Extensions.VectorData` influence how each property is handled when used in a vector store.
+    In the preceding code:
+    - The C# attributes provided by `Microsoft.Extensions.VectorData` influence how each property is handled when used in a vector store
+    - The **Vector** property stores a generated embedding that represents the semantic meaning of the **Name** and **Description** for vector searches
 
 1. In the **Program.cs** file, add the following code to create a data set that describes a collection of cloud services:
 

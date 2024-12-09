@@ -6,7 +6,7 @@ ms.date: 12/09/2024
 ---
 # Nullable reference types
 
-*Nullable reference types* refers to a group of features that minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. *Nullable reference types* includes three features that help you avoid these exceptions, including the ability to explicitly mark a reference type as *nullable*:
+*Nullable reference types* are a group of features that minimize the likelihood that your code causes the runtime to throw <xref:System.NullReferenceException?displayProperty=nameWithType>. Three features that help you avoid these exceptions, including the ability to explicitly mark a reference type as *nullable*:
 
 - Improved static flow analysis that determines if a variable might be `null` before dereferencing it.
 - Attributes that annotate APIs so that the flow analysis determines *null-state*.
@@ -57,7 +57,7 @@ You'll learn about:
 
 - The compiler's [null-state analysis](#null-state-analysis): how the compiler determines if an expression is not-null, or maybe-null.
 - [Attributes](#attributes-on-api-signatures) that are applied to APIs that provide more context for the compiler's null-state analysis.
-- [Nullable variable annotations](#nullable-variable-annotations) that provide information about your intent for variables.  Annotations are useful for fields, parameters and return values to set the default null-state.
+- [Nullable variable annotations](#nullable-variable-annotations) that provide information about your intent for variables. Annotations are useful for fields, parameters, and return values to set the default null-state.
 - The rules governing [generic type arguments](#generics). New constraints were added because type parameters can be reference types or value types. The `?` suffix is implemented differently for nullable value types and nullable reference types.
 - The [Nullable context](#nullable-context) help you migrate large projects. You can enable warnings and annotations in the nullable context in parts of your app as you migrate. After you address more warnings, you can enable both settings for the entire project.
 
@@ -65,14 +65,14 @@ Finally, you learn known pitfalls for null-state analysis in `struct` types and 
 
 You can also explore these concepts in our Learn module on [Nullable safety in C#](/training/modules/csharp-null-safety).
 
-## null-state analysis
+## Null-state analysis
 
 ***Null-state analysis*** tracks the *null-state* of references. An expression is either *not-null* or *maybe-null*. The compiler determines that a variable is *not-null* in two ways:
 
-1. The variable has been assigned a value that is known to be *not-null*.
-1. The variable has been checked against `null` and hasn't been modified since that check.
+1. The variable was assigned a value that is known to be *not-null*.
+1. The variable was checked against `null` and wasn't assigned since that check.
 
-Any variable that the compiler hasn't determined as *not-null* is considered *maybe-null*. The analysis provides warnings in situations where you might accidentally dereference a `null` value. The compiler produces warnings based on the *null-state*.
+Any variable that the compiler can't determined as *not-null* is considered *maybe-null*. The analysis provides warnings in situations where you might accidentally dereference a `null` value. The compiler produces warnings based on the *null-state*.
 
 - When a variable is *not-null*, that variable can be dereferenced safely.
 - When a variable is *maybe-null*, that variable must be checked to ensure that it isn't `null` before dereferencing it.
@@ -203,7 +203,7 @@ These constraints help provide more information to the compiler on how `T` is us
 
 ## Nullable context
 
-The *nullable context* determines how nullable reference type annotations are handled and what warnings are produced by static null state analysis. The nullable context contains two flags: the *annotation* setting and the *warning* setting. 
+The *nullable context* determines how nullable reference type annotations are handled and what warnings are produced by static null state analysis. The nullable context contains two flags: the *annotation* setting and the *warning* setting.
 
 Both the *annotation* and *warning* settings are disabled by default for existing projects. Starting in .NET 6, both flags are enabled by default for *new* projects. The reason for two distinct flags for the nullable context is to make it easier to migrate large projects that predate the introduction of nullable reference types.
 

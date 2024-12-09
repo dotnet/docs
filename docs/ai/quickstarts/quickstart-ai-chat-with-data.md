@@ -26,25 +26,23 @@ In this quickstart, you create a .NET console app that integrates with AI embedd
 
 :::zone-end
 
-[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
-
 [!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
-## What is Microsoft.Extensions.VectorData?
+## Work with vector stores
+
+Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG) and other scenarios that require grounding Generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
+
+### Explore the Microsoft.Extensions.VectorData.Abstractions library
 
 [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores.
 
-The abstractions in `Microsoft.Extensions.VectorData` provide library authors and developers with the following functionality:
+The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
 
 - Perform Create-Read-Update-Delete (CRUD) operations on vector stores
 - Use vector and text search on vector stores
 
 > [!NOTE]
 > The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in Preview.
-
-## What are vector stores?
-
-Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG) and other scenarios that require grounding Generative AI responses. Similar to how relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
 
 ## Create the app
 

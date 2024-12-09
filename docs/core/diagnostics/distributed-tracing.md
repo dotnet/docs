@@ -35,6 +35,10 @@ For more information, see [Understand distributed tracing concepts](distributed-
 
 For third-party telemetry collection services, follow the setup instructions provided by the vendor.
 
+## Built-in activities emitted by .NET
+
+For a comprehensive list of activities built into .NET see [Built-in activities in .NET](distributed-tracing-builtin-activities.md).
+
 ## Getting started for .NET library developers
 
 .NET libraries don't need to be concerned with how telemetry is ultimately collected, only

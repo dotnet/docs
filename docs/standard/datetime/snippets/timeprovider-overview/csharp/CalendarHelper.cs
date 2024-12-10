@@ -14,9 +14,10 @@ public static class CalendarHelper
 
         if (localTime.Date.Month == MoonLandingDateTime.Date.Month
             && localTime.Date.Day == MoonLandingDateTime.Date.Day)
-            
+        {
             Console.WriteLine("Did you know that on this day in 1969 humans landed on the Moon?");
-        
+        }
+
         Console.WriteLine($"I hope you enjoy your day!");
     }
 }

@@ -47,7 +47,7 @@ The following classes to support working with time:
 
   For .NET Framework and .NET Standard, `TimeProvider` is provided by the [**Microsoft.Bcl.TimeProvider** NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
 
-The following classes to support working with time:
+The following classes to support working with dates:
 
 * <xref:System.DateOnly>
 

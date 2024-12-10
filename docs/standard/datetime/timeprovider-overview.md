@@ -82,6 +82,21 @@ And unit tests can be written to test specific scenarios, such as testing the an
 
 Starting with .NET 8, the <xref:System.TimeProvider> class is provided by the runtime library. Older versions of .NET or libraries targeting .NET Standard 2.0, must reference the [**Microsoft.Bcl.TimeProvider** NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
 
+The following methods related to asynchronous programming work with `TimeProvider`:
+
+- <xref:System.Threading.CancellationTokenSource.%23ctor(System.TimeSpan,System.TimeProvider)>
+- <xref:System.Threading.Tasks.Task.Delay(System.TimeSpan,System.TimeProvider)?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task.Delay(System.TimeSpan,System.TimeProvider,System.Threading.CancellationToken)?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task.WaitAsync(System.TimeSpan,System.TimeProvider)?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task.WaitAsync(System.TimeSpan,System.TimeProvider,System.Threading.CancellationToken)?displayProperty=nameWithType>
+
 ## Use with .NET Framework
 
 <xref:System.TimeProvider> is implemented by the [**Microsoft.Bcl.TimeProvider** NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
+
+Support for working with `TimeProvider` in asynchronous programming scenarios was added through the following extension methods:
+
+- <xref:System.Threading.Tasks.TimeProviderTaskExtensions.CreateCancellationTokenSource(System.TimeProvider,System.TimeSpan)?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.TimeProviderTaskExtensions.Delay(System.TimeProvider,System.TimeSpan,System.Threading.CancellationToken)?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.TimeProviderTaskExtensions.WaitAsync(System.Threading.Tasks.Task,System.TimeSpan,System.TimeProvider,System.Threading.CancellationToken)?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.TimeProviderTaskExtensions.WaitAsync``1(System.Threading.Tasks.Task{``0},System.TimeSpan,System.TimeProvider,System.Threading.CancellationToken)?displayProperty=nameWithType>

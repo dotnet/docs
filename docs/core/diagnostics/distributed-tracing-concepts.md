@@ -134,3 +134,5 @@ recorded.
 
 For example code to get started
 using distributed tracing in .NET applications, see the [Distributed Tracing Instrumentation](distributed-tracing-instrumentation-walkthroughs.md).
+
+For a list of activities emitted natively by .NET, see [Built-in activities in .NET](distributed-tracing-builtin-activities.md).

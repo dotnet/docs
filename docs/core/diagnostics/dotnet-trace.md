@@ -150,6 +150,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   | `compilationdiagnostic` | `0x2000000000` |
   | `methoddiagnostic` | `0x4000000000` |
   | `typediagnostic` | `0x8000000000` |
+  | `waithandle` | `0x40000000000` |
 
   You can read about the CLR provider more in detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
 

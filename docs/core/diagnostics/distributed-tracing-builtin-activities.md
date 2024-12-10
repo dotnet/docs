@@ -37,7 +37,7 @@ This is a reference for distributed tracing [activities](xref:System.Diagnostics
 
 **[1] `http.request.method`:** The value contains the method name, if the method is one of the well-known methods listed in [RFC9110](https://www.rfc-editor.org/rfc/rfc9110.html#name-methods); otherwise the value is `_OTHER`. The user-provided method names are mapped to known names in a case-insensitive manner. For example, if the user provides the name `GeT`, it will be mapped to `GET`, and `http.request.method_original` will not be populated.
 
-**[2] `url.full`:** To avoid leaking secrets the value is redacted: the entire query is replaced with a `*` character and the fragment is missing. For more information and opt-out switches, see the [URI redaction breaking change docs](../compatibility/networking/9.0/query-redaction-logs.md).
+**[2] `url.full`:** To avoid leaking secrets the value is redacted by default: the entire query is replaced with a `*` character and the user info & fragment are removed. For more information and opt-out switches, see the [URI redaction breaking change docs](../compatibility/networking/9.0/query-redaction-logs.md).
 
 ### HTTP client request: wait for connection (experimental)
 

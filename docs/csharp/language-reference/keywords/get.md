@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # The `get` keyword
 
-The `get` keyword defines an *accessor* method in a property or indexer that returns the property value or the indexer element. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Automatically implemented Properties](../../programming-guide/classes-and-structs/automatically implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
+The `get` keyword defines an *accessor* method in a property or indexer that returns the property value or the indexer element. For more information, see [Properties](../../programming-guide/classes-and-structs/properties.md), [Automatically implemented Properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md), and [Indexers](../../programming-guide/indexers/index.md).
 
 For simple cases in which a property's `get` and `set` accessors perform no other operation than setting or retrieving a value in a private backing field, you can take advantage of the C# compiler's support for automatically implemented properties. The following example implements `Hours` as an automatically implemented property.
 

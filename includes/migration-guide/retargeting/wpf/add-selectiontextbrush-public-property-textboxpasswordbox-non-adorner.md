@@ -2,7 +2,7 @@
 
 #### Details
 
-In WPF applications using [non-adorner based text selection](https://github.com/Microsoft/dotnet/blob/master/Documentation/compatibility/wpf-TextBox-PasswordBox-text-selection-does-not-follow-system-colors.md) for <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.PasswordBox>, developers may now set the newly added SelectionTextBrush property in order to alter the rendering of the selected text.  By default, this color changes with <xref:System.Windows.SystemColors.HighlightTextBrushKey>.  If non-adorner based text selection is not enabled, this property does nothing.
+In WPF applications using [non-adorner based text selection](https://github.com/Microsoft/dotnet/blob/main/Documentation/compatibility/wpf-TextBox-PasswordBox-text-selection-does-not-follow-system-colors.md) for <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.PasswordBox>, developers may now set the newly added SelectionTextBrush property in order to alter the rendering of the selected text.  By default, this color changes with <xref:System.Windows.SystemColors.HighlightTextBrushKey>.  If non-adorner based text selection is not enabled, this property does nothing.
 
 #### Suggestion
 

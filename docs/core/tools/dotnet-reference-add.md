@@ -1,28 +1,28 @@
 ---
-title: dotnet add reference command
-description: The dotnet add reference command provides a convenient option to add project-to-project references.
+title: dotnet reference add command
+description: The dotnet reference add command provides a convenient option to add project-to-project references.
 ms.date: 03/21/2023
 ---
-# dotnet add reference
+# dotnet reference add
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
-`dotnet add reference` - Adds project-to-project (P2P) references.
+`dotnet reference add` - Adds project-to-project (P2P) references.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet add [<PROJECT>] reference [-f|--framework <FRAMEWORK>]
-     [--interactive] <PROJECT_REFERENCES>
+dotnet reference add reference [-f|--framework <FRAMEWORK>]
+     [--interactive] <PROJECT_REFERENCES> [--project <PROJECT>]
 
-dotnet add reference -h|--help
+dotnet reference add -h|--help
 ```
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the `<ProjectReference>` elements are added to the project file.
+The `dotnet reference add` command provides a convenient option to add project references to a project. After running the command, the `<ProjectReference>` elements are added to the project file.
 
 ```xml
 <ItemGroup>
@@ -69,17 +69,17 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 - Add a project reference:
 
   ```dotnetcli
-  dotnet add app/app.csproj reference lib/lib.csproj
+  dotnet reference add lib/lib.csproj --project app/app.csproj
   ```
 
 - Add multiple project references to the project in the current directory:
 
   ```dotnetcli
-  dotnet add reference lib1/lib1.csproj lib2/lib2.csproj
+  dotnet reference add lib1/lib1.csproj lib2/lib2.csproj
   ```
 
 - Add multiple project references using a globbing pattern on Linux/Unix:
 
   ```dotnetcli
-  dotnet add app/app.csproj reference **/*.csproj
+  dotnet reference add **/*.csproj --project app/app.csproj
   ```

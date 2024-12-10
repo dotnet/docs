@@ -102,6 +102,8 @@ items:
             items:
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/9.0/nugetaudit-transitive-packages.md
+              - name: "`dotnet sln add` doesn't allow invalid file names"
+                href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
               - name: "`dotnet workload` commands output change"
@@ -1798,6 +1800,8 @@ items:
             items:
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/9.0/nugetaudit-transitive-packages.md
+              - name: "`dotnet sln add` doesn't allow invalid file names"
+                href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
               - name: "`dotnet workload` commands output change"

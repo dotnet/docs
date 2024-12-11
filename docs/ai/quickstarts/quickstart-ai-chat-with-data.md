@@ -30,7 +30,7 @@ In this quickstart, you create a .NET console app that integrates with AI embedd
 
 ## Work with vector stores
 
-Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG) and other scenarios that require grounding Generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
+Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
 
 ### Explore the Microsoft.Extensions.VectorData.Abstractions library
 
@@ -135,7 +135,7 @@ Complete the following steps to create a .NET console app that can query and upd
 
 ## Add the app code
 
-1. Add a new classed named **CloudService** to your project with the following properties:
+1. Add a new class named **CloudService** to your project with the following properties:
 
    :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
 

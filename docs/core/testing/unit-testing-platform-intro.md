@@ -261,6 +261,13 @@ The list below described only the platform options. To see the specific options 
 
   List available tests. Tests will not be executed.
 
+- **`--maximum-failed-tests`**
+
+  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [Microsoft.Testing.Platform exit codes](unit-testing-platform-exit-codes.md).
+
+  > [!NOTE]
+  > This feature is available in Microsoft.Testing.Platform starting with version 1.5.
+
 - **`--minimum-expected-tests`**
 
   Specifies the minimum number of tests that are expected to run. By default, at least one test is expected to run.

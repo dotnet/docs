@@ -30,7 +30,6 @@ The following options control how the compiler reports errors and warnings.
 | `ErrorLog`              | `-errorlog`       | Specify a file to log all compiler and analyzer diagnostics. [More info.](#errorlog)              |
 | `ReportAnalyzer`        | `-reportanalyzer` | Report additional analyzer information, such as execution time. [More info.](#reportanalyzer)     |
 
-
 > [!NOTE]
 > Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.
 

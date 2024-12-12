@@ -225,7 +225,7 @@ To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.C
 
 # [IHostApplicationBuilder](#tab/appbuilder)
 
-App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The public<xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property allows consumers to read from or make changes to the existing configuration using available extension methods.
+App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A> on an <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder>. The public <xref:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration?displayProperty=nameWithType> property allows consumers to read from or make changes to the existing configuration using available extension methods.
 
 # [IHostBuilder](#tab/hostbuilder)
 
@@ -243,13 +243,13 @@ There are several ways in which a hosted process is stopped. Most commonly, a ho
 
 - If someone doesn't call <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdown%2A?displayProperty=nameWithType> and the app exits normally with `Main` completing.
 - If the app crashes.
-- If the app is forcefully shut down using [SIGKILL][sigkill] (or <kbd>CTRL</kbd>+<kbd>Z</kbd>).
+- If the app is forcefully shut down using [SIGKILL][sigkill] (or <kbd>Ctrl</kbd>+<kbd>Z</kbd>).
 
 The hosting code isn't responsible for handling these scenarios. The owner of the process needs to deal with them the same as any other app. There are several other ways in which a hosted service process can be stopped:
 
 - If `ConsoleLifetime` is used (<xref:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.UseConsoleLifetime%2A>), it listens for the following signals and attempts to stop the host gracefully.
-  - [SIGINT][sigint] (or <kbd>CTRL</kbd>+<kbd>C</kbd>).
-  - [SIGQUIT][sigquit] (or <kbd>CTRL</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>CTRL</kbd>+<kbd>\\</kbd> on Unix).
+  - [SIGINT][sigint] (or <kbd>Ctrl</kbd>+<kbd>C</kbd>).
+  - [SIGQUIT][sigquit] (or <kbd>Ctrl</kbd>+<kbd>BREAK</kbd> on Windows, <kbd>Ctrl</kbd>+<kbd>\\</kbd> on Unix).
   - [SIGTERM][sigterm] (sent by other apps, such as `docker stop`).
 - If the app calls <xref:System.Environment.Exit%2A?displayProperty=nameWithType>.
 
@@ -305,7 +305,7 @@ to exit gracefully.
 
 There are various other common scenarios in which graceful shutdown works in Kestrel for both HTTP/1.1 and HTTP/2 protocols, and how you can configure it in different environments with a load balancer to drain traffic smoothly. While web server configuration is beyond the scope of this article, you can find more information on [Configure options for the ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel/options) documentation.
 
-When the Host receives a shutdown signal (for example, <kbd>CTL</kbd>+<kbd>C</kbd> or `StopAsync`), it notifies the application by signaling <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.ApplicationStopping>. You should subscribe to this event if you have any long-running operations that need to finish gracefully.
+When the Host receives a shutdown signal (for example, <kbd>Ctrl</kbd>+<kbd>C</kbd> or `StopAsync`), it notifies the application by signaling <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.ApplicationStopping>. You should subscribe to this event if you have any long-running operations that need to finish gracefully.
 
 Next, the Host calls <xref:Microsoft.AspNetCore.Hosting.Server.IServer.StopAsync%2A?displayProperty=nameWithType> with a shutdown timeout that you can configure (default 30s). Kestrel (and Http.Sys) close their port bindings and stop accepting new connections. They also tell the current connections to stop processing new requests. For HTTP/2 and HTTP/3, a preliminary `GOAWAY` message is sent to the client. For HTTP/1.1, they stop the connection loop because requests are processed in order. IIS behaves differently, by rejecting new requests with a 503 status code.
 

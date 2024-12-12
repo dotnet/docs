@@ -116,10 +116,6 @@ The previous requirements are also required if you receive an error related to e
 
 .NET is supported on Arm-based Windows PCs. The following sections describe things you should consider when installing .NET.
 
-### SDK differences
-
-The x86, x64, and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each architecture install needs to be upgraded.
-
 ### Path differences
 
 On an Arm-based Windows PC, all Arm64 versions of .NET are installed to the normal _C:\\Program Files\\dotnet\\_ folder. However, the **x64** version of the .NET SDK is installed to the _C:\\Program Files\\dotnet\\x64\\_ folder.
@@ -219,6 +215,14 @@ Suppresses any attempts to restart.
 ```console
 dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 ```
+
+If you've already installed .NET, use the .NET Installer to manage the installation. Instead of `/install`, use one of the following options:
+
+- `/uninstall`\
+Remove this version of .NET.
+
+- `/repair`\
+Check if the installations key files or components are damaged and restore them.
 
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.

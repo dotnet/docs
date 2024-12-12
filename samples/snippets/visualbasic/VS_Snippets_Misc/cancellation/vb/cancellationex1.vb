@@ -4,8 +4,8 @@ Option Strict On
 ' <Snippet1>
 Imports System.Threading
 
-Module Example
-    Public Sub Main()
+Module Example1
+    Public Sub Main1()
         ' Create the token source.
         Dim cts As New CancellationTokenSource()
 

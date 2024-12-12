@@ -1,7 +1,7 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
 title: "Preprocessor directives"
-ms.date: 01/30/2023
+ms.date: 11/22/2024
 f1_keywords:
   - "cs.preprocessor"
   - "#nullable"
@@ -274,7 +274,7 @@ A `#line hidden` directive doesn't affect file names or line numbers in error re
 
 The `#line filename` directive specifies the file name you want to appear in the compiler output. By default, the actual name of the source code file is used. The file name must be in double quotation marks ("") and must be preceded by a line number.
 
-Beginning with C# 10, you can use a new form of the `#line` directive:
+You can use a new form of the `#line` directive:
 
 ```csharp
 #line (1, 1) - (5, 60) 10 "partial-class.cs"

@@ -9,7 +9,7 @@ ms.date: 09/17/2024
 
 The latest C# compiler determines a default language version based on your project's target framework or frameworks. Visual Studio doesn't provide a UI to change the value, but you can change it by editing the *csproj* file. The choice of default ensures that you use the latest language version compatible with your target framework. You benefit from access to the latest language features compatible with your project's target. This default choice also ensures you don't use a language that requires types or runtime behavior not available in your target framework. Choosing a language version newer than the default can cause hard to diagnose compile-time and runtime errors.
 
-[C# 13](../whats-new/csharp-13.md) is supported only on .NET 9 and newer versions. [C# 12](../whats-new/csharp-12.md) is supported only on .NET 8 and newer versions. [C# 11](../whats-new/csharp-11.md) is supported only on .NET 7 and newer versions.
+[C# 13](../whats-new/csharp-13.md) is supported only on .NET 9 and newer versions. [C# 12](../whats-new/csharp-12.md) is supported only on .NET 8 and newer versions. [C# 11](../whats-new/csharp-11.md) is supported only on .NET 7 and newer versions. Using a C# language version newer than the version associated with your target TFM is unsupported.
 
 Check the [Visual Studio platform compatibility](/visualstudio/releases/2022/compatibility#-visual-studio-2022-support-for-net-development) page for details on which .NET versions are supported by versions of Visual Studio. Check the [Mono page for C#](https://www.mono-project.com/docs/about-mono/languages/csharp/) for Mono compatibility with C# versions.
 

@@ -3,7 +3,6 @@ title: Create a template package for dotnet new
 description: Learn how to create a csproj file that builds a template package for the dotnet new command.
 author: adegeo
 ms.date: 09/11/2023
-zone_pivot_groups: dotnet-version
 ms.topic: tutorial
 ms.author: adegeo
 ---
@@ -16,26 +15,11 @@ You can view the completed template in the [.NET Samples GitHub repository](http
 
 In this part of the series you'll learn how to:
 
-::: zone pivot="dotnet-9-0,dotnet-8-0"
-
 > [!div class="checklist"]
 >
 > * Create a template package by using the [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) NuGet package.
 > * Install a template package from a NuGet package file.
 > * Uninstall a template package by package ID.
-
-::: zone-end
-
-::: zone pivot="dotnet-7-0,dotnet-6-0"
-
-> [!div class="checklist"]
->
-> * Create a \*.csproj project to build a template package.
-> * Configure the project file for packing.
-> * Install a template package from a NuGet package file.
-> * Uninstall a template package by package ID.
-
-::: zone-end
 
 ## Prerequisites
 
@@ -45,20 +29,10 @@ In this part of the series you'll learn how to:
 
 * Open a terminal and navigate to the _working_ folder.
 
-::: zone pivot="dotnet-8-0"
-
-* Install .NET 8.
+* Install .NET 8 or .NET 9.
 * Install the `Microsoft.TemplateEngine.Authoring.Templates` template from the NuGet package feed.
 
   * Run the `dotnet new install Microsoft.TemplateEngine.Authoring.Templates` command from your terminal.
-
-::: zone-end
-
-::: zone pivot="dotnet-7-0,dotnet-6-0"
-
-[!INCLUDE [dotnet6-syntax-note](includes/dotnet6-syntax-note.md)]
-
-::: zone-end
 
 ## Create a template package project
 
@@ -69,8 +43,6 @@ Template packages are represented by a NuGet package (_.nupkg_) file. And, like 
 Normally you use a C# project file to compile code and produce a binary. However, the project can also be used to generate a template package. By changing the settings of the _.csproj_, you can prevent it from compiling any code and instead include all the assets of your templates as resources. When this project is built, it produces a template package NuGet package.
 
 The package you're going to generate will include the [item](cli-templates-create-item-template.md) and [project](cli-templates-create-project-template.md) templates previously created.
-
-::: zone pivot="dotnet-8-0"
 
 The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/packages/Microsoft.TemplateEngine.Authoring.Templates) package contains templates useful for template authoring. To install this package, nuget.org should be available as NuGet feed in the working directory.
 
@@ -116,63 +88,6 @@ The [Microsoft.TemplateEngine.Authoring.Templates](https://www.nuget.org/package
         ... cut for brevity ...
     ```
 
-::: zone-end
-
-::: zone pivot="dotnet-7-0,dotnet-6-0"
-
-01. In the _working_ folder, run the following command to create the template package:
-
-    ```dotnetcli
-    dotnet new console -n AdatumCorporation.Utility.Templates
-    ```
-
-    The `-n` parameter sets the project file name to _AdatumCorporation.Utility.Templates.csproj_. You should see a result similar to the following output.
-
-    ```output
-    The template "Console Application" was created successfully.
-
-    Processing post-creation actions...
-    Running 'dotnet restore' on .\AdatumCorporation.Utility.Templates.csproj...
-      Restore completed in 52.38 ms for C:\code\working\AdatumCorporation.Utility.Templates.csproj.
-
-    Restore succeeded.
-    ```
-
-01. Delete the _Program.cs_ file. The new project template generates this file but it's not used by the templates engine.
-
-01. Next, open the _AdatumCorporation.Utility.Templates.csproj_ file in your favorite editor and replace the content with the following XML:
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-
-      <PropertyGroup>
-        <PackageId>AdatumCorporation.Utility.Templates</PackageId>
-        <PackageVersion>1.0</PackageVersion>
-        <Title>AdatumCorporation Templates</Title>
-        <Authors>Me</Authors>
-        <Description>Templates to use when creating an application for Adatum Corporation.</Description>
-        <PackageTags>dotnet-new;templates;adatum</PackageTags>
-        <PackageProjectUrl>https://your-url</PackageProjectUrl>
-
-        <PackageType>Template</PackageType>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <IncludeContentInPack>true</IncludeContentInPack>
-        <IncludeBuildOutput>false</IncludeBuildOutput>
-        <ContentTargetFolders>content</ContentTargetFolders>
-        <NoWarn>$(NoWarn);NU5128</NoWarn>
-        <NoDefaultExcludes>true</NoDefaultExcludes>
-      </PropertyGroup>
-
-      <ItemGroup>
-        <Content Include="content\**\*" Exclude="content\**\bin\**;content\**\obj\**" />
-        <Compile Remove="**\*" />
-      </ItemGroup>
-
-    </Project>
-    ```
-
-::: zone-end
-
 ### Description of the project XML
 
 The settings under `<PropertyGroup>` in the XML snippet are broken into two groups.
@@ -193,8 +108,6 @@ In the second group, the `<TargetFramework>` setting ensures that MSBuild runs p
 > [!TIP]
 > For more information about NuGet metadata settings, see [Pack a template into a NuGet package (nupkg file)](../tools/custom-templates.md#pack-a-template-into-a-nuget-package-nupkg-file).
 
-::: zone pivot="dotnet-8-0"
-
 The created project file includes [template authoring MSBuild tasks](https://aka.ms/templating-authoring-tools) and localization settings.
 
 ```xml
@@ -211,8 +124,6 @@ The created project file includes [template authoring MSBuild tasks](https://aka
 > The _content_ content folder contains a _SampleTemplate_ folder. **Delete** this folder, as it was added to the authoring template for demonstration purposes.
 
 These MSBuild tasks provide template validation and [localization of the templates](https://aka.ms/templating-localization) capabilities. Localization is disabled by default. To enable creation of localization files, set `LocalizeTemplates` to `true`.
-
-::: zone-end
 
 ## Pack and install
 

@@ -16,12 +16,16 @@ items:
                 href: aspnet-core/9.0/certificate-export.md
               - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
                 href: aspnet-core/9.0/hostbuilder-validation.md
+              - name: Legacy Mono and Emscripten APIs not exported to global namespace
+                href: aspnet-core/9.0/legacy-apis.md
               - name: Middleware types with multiple constructors
                 href: aspnet-core/9.0/middleware-constructors.md
           - name: Containers
             items:
-              - name: .NET 9 container images no longer install zlib
+              - name: Container images no longer install zlib
                 href: containers/9.0/no-zlib.md
+              - name: .NET Monitor images simplified to version-only tags
+                href: containers/9.0/monitor-images.md
           - name: Core .NET libraries
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -48,6 +52,8 @@ items:
                 href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
               - name: New TimeSpan.From*() overloads that take integers
                 href: core-libraries/9.0/timespan-from-overloads.md
+              - name: New version of some OOB packages
+                href: core-libraries/9.0/oob-packages.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
               - name: String.Trim(params ReadOnlySpan<char>) overload removed
@@ -114,6 +120,8 @@ items:
             items:
               - name: BinaryFormatter always throws
                 href: serialization/9.0/binaryformatter-removal.md
+              - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
+                href: serialization/9.0/jsondocument-props.md
           - name: Windows Forms
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -394,6 +402,8 @@ items:
                 href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+              - name: Asterisk no longer accepted for assembly name attributes
+                href: core-libraries/7.0/assembly-name-wildcard.md
               - name: BrotliStream no longer allows undefined CompressionLevel values
                 href: core-libraries/7.0/brotlistream-ctor.md
               - name: C++/CLI projects in Visual Studio
@@ -1044,6 +1054,8 @@ items:
                 href: aspnet-core/9.0/certificate-export.md
               - name: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
                 href: aspnet-core/9.0/hostbuilder-validation.md
+              - name: Legacy Mono and Emscripten APIs not exported to global namespace
+                href: aspnet-core/9.0/legacy-apis.md
               - name: Middleware types with multiple constructors
                 href: aspnet-core/9.0/middleware-constructors.md
           - name: .NET 8
@@ -1252,8 +1264,10 @@ items:
         items:
           - name: .NET 9
             items:
-              - name: .NET 9 container images no longer install zlib
+              - name: Container images no longer install zlib
                 href: containers/9.0/no-zlib.md
+              - name: .NET Monitor images simplified to version-only tags
+                href: containers/9.0/monitor-images.md
           - name: .NET 8
             items:
               - name: "'ca-certificates' removed from Alpine images"
@@ -1306,6 +1320,8 @@ items:
                 href: core-libraries/9.0/inmemorydirinfo-prepends-rootdir.md
               - name: New TimeSpan.From*() overloads that take integers
                 href: core-libraries/9.0/timespan-from-overloads.md
+              - name: New version of some OOB packages
+                href: core-libraries/9.0/oob-packages.md
               - name: RuntimeHelpers.GetSubArray returns different type
                 href: core-libraries/9.0/getsubarray-return.md
               - name: String.Trim(params ReadOnlySpan<char>) overload removed
@@ -1362,6 +1378,8 @@ items:
                 href: core-libraries/7.0/obsolete-apis-with-default-diagnostic.md
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/7.0/obsolete-apis-with-custom-diagnostics.md
+              - name: Asterisk no longer accepted for assembly name attributes
+                href: core-libraries/7.0/assembly-name-wildcard.md
               - name: BrotliStream no longer allows undefined CompressionLevel values
                 href: core-libraries/7.0/brotlistream-ctor.md
               - name: C++/CLI projects in Visual Studio
@@ -1926,6 +1944,8 @@ items:
             items:
               - name: BinaryFormatter always throws
                 href: serialization/9.0/binaryformatter-removal.md
+              - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
+                href: serialization/9.0/jsondocument-props.md
           - name: .NET 8
             items:
               - name: BinaryFormatter disabled for most projects

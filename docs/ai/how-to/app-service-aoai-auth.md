@@ -4,14 +4,14 @@ description: "Learn how to authenticate and authorize your app service applicati
 author: haywoodsloan
 ms.topic: how-to
 ms.custom: devx-track-azurecli
-ms.date: 04/19/2024
+ms.date: 11/24/2024
 zone_pivot_groups: azure-interface
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to Azure OpenAI by using Microsoft Entra so that I can securely use AI in my .NET application.
 ---
 
-# Authenticate and authorize App Service to Azure OpenAI using Microsoft Entra and the Semantic Kernel SDK
+# Authenticate an AI app hosted on Azure App Service to Azure OpenAI using Microsoft Entra ID
 
-This article demonstrates how to use [Microsoft Entra-managed identities](/azure/app-service/overview-managed-identity) to authenticate and authorize an App Service application to an Azure OpenAI resource.
+This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) to authenticate and authorize an App Service application to an Azure OpenAI resource.
 
 This article also demonstrates how to use the [Semantic Kernel SDK](/semantic-kernel/overview) to easily implement Microsoft Entra authentication in your .NET application.
 
@@ -33,31 +33,17 @@ Your application can be granted two types of identities:
 * A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can have only one system-assigned identity.
 * A **user-assigned identity** is a standalone Azure resource that can be assigned to your app. An app can have multiple user-assigned identities.
 
-### Add a system-assigned identity
-
 :::zone target="docs" pivot="azure-portal"
+
+# [System-assigned](#tab/system-assigned)
 
 1. Navigate to your app's page in the [Azure portal](https://aka.ms/azureportal), and then scroll down to the **Settings** group.
 1. Select **Identity**.
 1. On the **System assigned** tab, toggle *Status* to **On**, and then select **Save**.
 
-:::zone-end
-
-:::zone target="docs" pivot="azure-cli"
-
-Run the `az webapp identity assign` command to create a system-assigned identity:
-
-```azurecli
-az webapp identity assign --name <appName> --resource-group <groupName>
-```
-
-:::zone-end
-
-### Add a user-assigned identity
+## [User-assigned](#tab/user-assigned)
 
 To add a user-assigned identity to your app, create the identity, and then add its resource identifier to your app config.
-
-:::zone target="docs" pivot="azure-portal"
 
 1. Create a user-assigned managed identity resource by following [these instructions](/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal#create-a-user-assigned-managed-identity).
 1. In the left navigation pane of your app's page, scroll down to the **Settings** group.
@@ -68,9 +54,21 @@ To add a user-assigned identity to your app, create the identity, and then add i
     > [!IMPORTANT]
     > After you select **Add**, the app restarts.
 
+---
+
 :::zone-end
 
 :::zone target="docs" pivot="azure-cli"
+
+## [System-assigned](#tab/system-assigned)
+
+Run the `az webapp identity assign` command to create a system-assigned identity:
+
+```azurecli
+az webapp identity assign --name <appName> --resource-group <groupName>
+```
+
+## [User-assigned](#tab/user-assigned)
 
 1. Create a user-assigned identity:
 
@@ -83,6 +81,8 @@ To add a user-assigned identity to your app, create the identity, and then add i
     ```azurecli
     az webapp identity assign --resource-group <groupName> --name <appName> --identities <identityId>
     ```
+
+---
 
 :::zone-end
 
@@ -135,7 +135,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 
 :::zone-end
 
-## Implement token-based authentication by using Semantic Kernel SDK
+## Implement token-based authentication using Semantic Kernel SDK
 
 1. Initialize a `DefaultAzureCredential` object to assume your app's managed identity:
 

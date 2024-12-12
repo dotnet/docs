@@ -421,6 +421,8 @@ items:
             href: ../../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
           - name: Collection
             href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+          - name: Built-in activities
+            href: ../../core/diagnostics/distributed-tracing-builtin-activities.md
       - name: Specialized diagnostics
         items:
           - name: Overview
@@ -471,6 +473,8 @@ items:
                 href: ../../core/diagnostics/dumps.md
               - name: Linux dumps
                 href: ../../core/diagnostics/debug-linux-dumps.md
+              - name: .NET debugger extensions
+                href: ../../core/diagnostics/debugger-extensions.md
               - name: SOS debugger extension
                 href: ../../core/diagnostics/sos-debugging-extension.md
               - name: Debug Windows dumps
@@ -524,6 +528,8 @@ items:
             href: ../../core/diagnostics/dotnet-stack.md
           - name: dotnet-symbol
             href: ../../core/diagnostics/dotnet-symbol.md
+          - name: dotnet-debugger-extensions
+            href: ../../core/diagnostics/dotnet-debugger-extensions.md
           - name: dotnet-sos
             href: ../../core/diagnostics/dotnet-sos.md
           - name: dotnet-dsrouter
@@ -1100,6 +1106,8 @@ items:
                     href: ../../core/deploying/single-file/warnings/il3002.md
                   - name: IL3003
                     href: ../../core/deploying/single-file/warnings/il3003.md
+                  - name: IL3005
+                    href: ../../core/deploying/single-file/warnings/il3005.md
               - name: Reliability rules
                 items:
                   - name: Overview

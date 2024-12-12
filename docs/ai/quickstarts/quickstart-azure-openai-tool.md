@@ -10,81 +10,127 @@ zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code how to extend the model using Tools.
 ---
 
-# Extend OpenAI using Tools and execute a local Function with .NET
+# Invoke .NET functions using an AI model
 
-<!-- markdownlint-disable MD044 -->
+In this quickstart, you create a .NET console AI chat app to connect to an AI model with local function calling enabled. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+
+> [!NOTE]
+> The [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) library is currently in Preview.
+
 :::zone target="docs" pivot="openai"
-<!-- markdownlint-enable MD044 -->
 
-Get started with AI by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-3.5-turbo` model, using Tools to extend the model's capabilities by calling a local .NET method. Follow these steps to get access to OpenAI and learn how to use Semantic Kernel.
-
-[!INCLUDE [download-alert](includes/prerequisites-openai.md)]
+[!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
 
 :::zone-end
 
-<!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="azure-openai"
-<!-- markdownlint-enable MD044 -->
 
-Get started with AI by creating a simple .NET 8 console chat application. The application will run locally and use the OpenAI `gpt-35-turbo` model deployed into an Azure OpenAI account. It uses Tools to extend the model's capabilities by calling a local .NET method. Follow these steps to provision Azure OpenAI and learn how to use Semantic Kernel.
-
-[!INCLUDE [download-alert](includes/prerequisites-azure-openai.md)]
+[!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
 
-## Get the sample project
+[!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
 [!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
+## Create the app
+
+Complete the following steps to create a .NET console app to connect to an AI model.
+
+1. In an empty directory on your computer, use the `dotnet new` command to create a new console app:
+
+    ```dotnetcli
+    dotnet new console -o FunctionCallingAI
+    ```
+
+1. Change directory into the app folder:
+
+    ```dotnetcli
+    cd FunctionCallingAI
+    ```
+
+1. Install the required packages:
+
+    :::zone target="docs" pivot="azure-openai"
+
+    ```bash
+    dotnet add package Azure.Identity
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI
+    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    ```
+
+    :::zone-end
+
+    :::zone target="docs" pivot="openai"
+
+    ```bash
+    dotnet add package Microsoft.Extensions.AI
+    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    ```
+
+    :::zone-end
+
+1. Open the app in Visual Studio code or your editor of choice
+
+    ```bash
+    code .
+    ```
+
 :::zone target="docs" pivot="azure-openai"
 
-## Create the Azure OpenAI service
-
-# [Azure Developer CLI](#tab/azd)
-
-[!INCLUDE [deploy-azd](includes/deploy-azd.md)]
-
-# [Azure CLI](#tab/azure-cli)
-
-1. To provision an Azure OpenAI service and model using the Azure CLI, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=cli) article.
-
-1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\04-HikerAIPro` directory.
-
-1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
-
-    ```bash
-    dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-
-# [Azure Portal](#tab/azure-portal)
-
-1. To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article.
-
-1. From a terminal or command prompt, navigate to the `src\quickstarts\azure-openai\04-HikerAIPro` directory.
-
-1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
-
-    ```bash
-    dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-
----
+[!INCLUDE [create-ai-service](includes/create-ai-service.md)]
 
 :::zone-end
 
-## Try the the hiker pro sample
-
-<!-- markdownlint-disable MD029 MD044 -->
 :::zone target="docs" pivot="openai"
 
-1. From a terminal or command prompt, navigate to the `azure-openai\04-HikerAIPro` directory.
+## Configure the app
+
+1. Navigate to the root of your .NET projet from a terminal or command prompt.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set OpenAIKey <your-openai-key>
+    dotnet user-secrets set ModelName <your-openai-model-name>
     ```
+
+:::zone-end
+
+## Add the app code
+
+The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) package to send and receive requests to the AI model.
+
+1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model. The `ChatClient` is also configured to use function invocation, which allows .NET functions in your code to be called by the AI model.
+
+    :::zone target="docs" pivot="azure-openai"
+
+    :::code language="csharp" source="snippets/function-calling/azure-openai/program.cs" range="1-16":::
+
+    > [!NOTE]
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+
+    :::zone-end
+
+    :::zone target="docs" pivot="openai"
+
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="1-14":::
+
+    :::zone-end
+
+1. Create a new `ChatOptions` object that contains an inline function the AI model can call to get the current weather. The function declaration includes a delegate to run logic and name and description parameters to describe the purpose of the function to the AI model.
+
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="16-26":::
+
+1. Add a system prompt to the `chatHistory` to provide context and instructions to the model. Send a user prompt with a question that requires the AI model to call the registered function to properly answer the question.
+
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="28-40":::
 
 1. Use the `dotnet run` command to run the app:
 
@@ -92,139 +138,7 @@ Get started with AI by creating a simple .NET 8 console chat application. The ap
     dotnet run
     ```
 
-:::zone-end
-
-:::zone target="docs" pivot="azure-openai"
-
-1. From a terminal or command prompt, navigate to the `azure-openai\04-HikerAIPro` directory.
-
-2. Use the `dotnet run` command to run the app:
-
-    ```dotnetcli
-    dotnet run
-    ```
-
-    > [!TIP]
-    > If you get an error message, the Azure OpenAI resources might not have finished deploying. Wait a couple of minutes and try again.
-
-:::zone-end
-<!-- markdownlint-enable MD029 MD044  -->
-
-## Understand the code
-
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="openai"
-
-The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
-
-The entire application is contained within the **Program.cs** file. The first several lines of code set configuration values and get the OpenAI Key that was previously set using the `dotnet user-secrets` command.
-
-```csharp
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string model = "gpt-3.5-turbo";
-string key = config["OpenAIKey"];
-```
-
-The `Kernel` class facilitates the requests and responses with the help of `AddOpenAIChatCompletion` service.
-
-```csharp
-// Create a Kernel containing the OpenAI Chat Completion Service
-IKernelBuilder b = Kernel.CreateBuilder();
-
-Kernel kernel = b
-    .AddOpenAIChatCompletion(model, key)
-    .Build();
-```
-
-:::zone-end
-
-:::zone target="docs" pivot="azure-openai"
-<!-- markdownlint-enable MD044 -->
-
-The application uses the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package to send and receive requests to the OpenAI service.
-
-The entire application is contained within the **Program.cs** file. The first several lines of code loads up secrets and configuration values that were set in the `dotnet user-secrets` for you during the application provisioning.
-
-```csharp
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string endpoint = config["AZURE_OPENAI_ENDPOINT"];
-string deployment = config["AZURE_OPENAI_GPT_NAME"];
-string key = config["AZURE_OPENAI_KEY"];
-```
-
-The `Kernel` class facilitates the requests and responses with the help of `AzureOpenAIChatCompletion` service.
-
-```csharp
-// Create a Kernel containing the Azure OpenAI Chat Completion Service
-IKernelBuilder b = Kernel.CreateBuilder();
-
-Kernel kernel = b
-    .AddAzureOpenAIChatCompletion(deployment, endpoint, key)
-    .Build();
-```
-
-:::zone-end
-
-The functions `ImportPluginFromFunctions` and `CreateFromMethod` define the local function that will be called by the model.
-
-```csharp
-// Add a new plugin with a local .NET function that should be available to the AI model
-// For convenience and clarity of into the code, this standalone local method handles tool call responses. It will fake a call to a weather API and return the current weather for the specified location.
-kernel.ImportPluginFromFunctions("WeatherPlugin",
-[
-    KernelFunctionFactory.CreateFromMethod(
-        ([Description("The city, e.g. Montreal, Sidney")] string location, string unit = null) =>
-    {
-        // Here you would call a weather API to get the weather for the location
-        return "Periods of rain or drizzle, 15 C";
-    }, "get_current_weather", "Get the current weather in a given location")
-]);
-```
-
-Once the `kernel` client is created, the code uses a system prompt to provide context and influence the completion tone and content. Note how the weather is emphasized in the system prompt.
-
-```csharp
-ChatHistory chatHistory = new("""
-    You are a hiking enthusiast who helps people discover fun hikes in their area.
-    You are upbeat and friendly. Good weather is important for a good hike. 
-    Only make recommendations if the weather is good or if people insist.
-    You introduce yourself when first saying hello. When helping people out,
-    you always ask them for this information to inform the hiking recommendation you provide:
-
-    1. Where they are located
-    2. What hiking intensity they are looking for
-
-    You will then provide three suggestions for nearby hikes that vary in length
-    after you get that information. You will also share an interesting fact about the local
-    nature on the hikes when making a recommendation.
-    """);
-```
-
-The app also adds a user message to the model using the `AddUserMessage` function. The `GetChatMessageContentAsync` function sends the chat history to the model to generate a response based off the system and user prompts.
-
-```csharp
-chatHistory.AddUserMessage("""
-    Is the weather is good today for a hike?
-    If yes, I live in the greater Montreal area and would like an easy hike. 
-    I don't mind driving a bit to get there. I don't want the hike to be over 10 miles round trip.
-    I'd consider a point-to-point hike.
-    I want the hike to be as isolated as possible. I don't want to see many people.
-    I would like it to be as bug free as possible.
-    """);
-
-Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
-
-chatHistory.Add(await service.GetChatMessageContentAsync(
-    chatHistory, 
-    new OpenAIPromptExecutionSettings()
-    { 
-        MaxTokens = 400 
-    }));
-
-Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last().Content}");
-```
-
-Customize the system prompt and user message to see how the model responds to help you find a hike that you'll like.
+    The app prints a the completion response from the AI model that includes data provided by the .NET function. The AI model understood the registered function was available and called it automatically to generate a proper response.
 
 :::zone target="docs" pivot="azure-openai"
 
@@ -236,11 +150,9 @@ When you no longer need the sample application or resources, remove the correspo
 azd down
 ```
 
-[!INCLUDE [troubleshoot](includes/troubleshoot.md)]
-
 :::zone-end
 
 ## Next steps
 
-- [Quickstart - Get insight about your data from a .NET AI chat app](quickstart-ai-chat-with-data.md)
+- [Quickstart - Build an AI chat app with .NET](get-started-openai.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

@@ -240,14 +240,52 @@ The `#r` and `#load` directives seen previously are only available in F# Interac
 |`#r "extname:..."`|Reference a package from `extname` extension[^1] (such as `paket`)|
 |`#r "assembly-name.dll"`|References an assembly on disk|
 |`#load "file-name.fsx"`|Reads a source file, compiles it, and runs it.|
-|`#help`|Displays information about available directives.|
+|`#help`|Displays information about available directives or documentation for specific functions.|
 |`#I`|Specifies an assembly search path in quotation marks.|
 |`#quit`|Terminates an F# Interactive session.|
-|`#time "on"` or `#time "off"`|By itself, `#time` toggles whether to display performance information. When it is `"on"`, F# Interactive measures real time, CPU time, and garbage collection information for each section of code that is interpreted and executed.|
+|`#time on` or `#time off`|By itself, `#time` toggles whether to display performance information. When it is `on`, F# Interactive measures real time, CPU time, and garbage collection information for each section of code that is interpreted and executed.|
 
 [^1]: More about [F# Interactive extensions](https://aka.ms/dotnetdepmanager).
 
 When you specify files or paths in F# Interactive, a string literal is expected. Therefore, files and paths must be in quotation marks, and the usual escape characters apply. You can use the `@` character to cause F# Interactive to interpret a string that contains a path as a verbatim string. This causes F# Interactive to ignore any escape characters.
+
+For other cases, quotation marks are optional, starting with F# 9.
+
+### Extended #help directive
+
+The `#help` directive now supports displaying documentation for specific functions. You can pass the name of the function directly to retrieve details.
+
+```fsharp
+#help List.map;;
+```
+
+The output is as follows:
+
+```console
+Description:
+Builds a new collection whose elements are the results of applying the given function
+to each of the elements of the collection.
+
+Parameters:
+- mapping: The function to transform elements from the input list.
+- list: The input list.
+
+Returns:
+The list of transformed elements.
+
+Examples:
+let inputs = [ "a"; "bbb"; "cc" ]
+
+inputs |> List.map (fun x -> x.Length)
+// Evaluates to [ 1; 3; 2 ]
+
+Full name: Microsoft.FSharp.Collections.ListModule.map
+Assembly: FSharp.Core.dll
+```
+
+This enhancement makes it easier to explore and understand F# libraries interactively.
+
+For more details, refer to the [official devblog](https://devblogs.microsoft.com/dotnet/enhancing-help-in-fsi/).
 
 ## Interactive and compiled preprocessor directives
 

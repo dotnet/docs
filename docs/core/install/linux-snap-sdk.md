@@ -50,7 +50,7 @@ Snap packages for the .NET SDK are all published under the same identifier: `dot
     ```
 
     - The `--classic` parameter is required.
-    - Use the `--channel` parameter to specify which version to install. If this parameter is omitted, `latest/stable` is used. For example, `--channel 9.0/stable` installs .NET SDK 9.0.
+    - Use the `--channel` parameter to specify which version to install. If this parameter is omitted, `latest/stable` is used. For example, `--channel 8.0/stable` installs .NET SDK 8.0.
 
 The `dotnet` snap alias is automatically created and mapped to the snap package's `dotnet` command.
 
@@ -58,7 +58,7 @@ The following table lists the package channels you can install:
 
 | .NET version | Snap package channel            |
 |--------------|---------------------------------|
-| 9 (STS)      | `9.0/stable`<br>`latest/stable` |
+| 9 (STS)      | *Not yet available              |
 | 8 (LTS)      | `8.0/stable`<br>`lts/stable`    |
 | 7 (STS)      | `7.0/stable` (out of support)   |
 | 6 (LTS)      | `6.0/stable` (out of support)   |

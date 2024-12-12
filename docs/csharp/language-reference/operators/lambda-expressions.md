@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions - Lambda expressions and anonymous functions"
 description: C# lambda expressions that are used to create anonymous functions and expression bodied members.
-ms.date: 05/17/2024
+ms.date: 11/22/2024
 helpviewer_keywords:
   - "lambda expressions [C#]"
   - "outer variables [C#]"
@@ -228,7 +228,7 @@ The general rules for type inference for lambdas are as follows:
 
 A lambda expression in itself doesn't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression. That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
 
-Beginning with C# 10, a lambda expression can have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler can infer the delegate type from the lambda expression. For example, consider the following declaration:
+A lambda expression can have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler can infer the delegate type from the lambda expression. For example, consider the following declaration:
 
 ```csharp
 var parse = (string s) => int.Parse(s);
@@ -275,7 +275,7 @@ Typically, the return type of a lambda expression is obvious and inferred. For s
 var choose = (bool b) => b ? 1 : "two"; // ERROR: Can't infer return type
 ```
 
-Beginning with C# 10, you can specify the return type of a lambda expression before the input parameters. When you specify an explicit return type, you must parenthesize the input parameters:
+You can specify the return type of a lambda expression before the input parameters. When you specify an explicit return type, you must parenthesize the input parameters:
 
 ```csharp
 var choose = object (bool b) => b ? 1 : "two"; // Func<bool, object>
@@ -283,7 +283,7 @@ var choose = object (bool b) => b ? 1 : "two"; // Func<bool, object>
 
 ## Attributes
 
-Beginning with C# 10, you can add attributes to a lambda expression and its parameters. The following example shows how to add attributes to a lambda expression:
+You can add attributes to a lambda expression and its parameters. The following example shows how to add attributes to a lambda expression:
 
 ```csharp
 Func<string?, int?> parse = [ProvidesNullCheck] (s) => (s is not null) ? int.Parse(s) : null;
@@ -329,7 +329,7 @@ For more information about these features, see the following feature proposal no
 
 - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
 - [Static anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
-- [Lambda improvements (C# 10)](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
+- [Lambda improvements](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
 
 ## See also
 

@@ -60,20 +60,20 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
 
 // Create and populate the vector store
 var vectorStore = new InMemoryVectorStore();
-var movies = vectorStore.GetCollection<int, CloudService>("movies");
-await movies.CreateCollectionIfNotExistsAsync();
+var cloudServices = vectorStore.GetCollection<int, CloudService>("cloudServices");
+await cloudServices.CreateCollectionIfNotExistsAsync();
 
 foreach (var movie in cloudService)
 {
     movie.Vector = await generator.GenerateEmbeddingVectorAsync(movie.Description);
-    await movies.UpsertAsync(movie);
+    await cloudServices.UpsertAsync(movie);
 }
 
 // Convert a search query to a vector and search the vector store
 var query = "Which Azure service should I use to store my Word documents?";
 var queryEmbedding = await generator.GenerateEmbeddingVectorAsync(query);
 
-var results = await movies.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions()
+var results = await cloudServices.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions()
 {
     Top = 1,
     VectorPropertyName = "Vector"

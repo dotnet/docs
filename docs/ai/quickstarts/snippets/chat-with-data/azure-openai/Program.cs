@@ -63,10 +63,10 @@ var vectorStore = new InMemoryVectorStore();
 var cloudServices = vectorStore.GetCollection<int, CloudService>("cloudServices");
 await cloudServices.CreateCollectionIfNotExistsAsync();
 
-foreach (var movie in cloudService)
+foreach (var cloudService in cloudServices)
 {
-    movie.Vector = await generator.GenerateEmbeddingVectorAsync(movie.Description);
-    await cloudServices.UpsertAsync(movie);
+    cloudService.Vector = await generator.GenerateEmbeddingVectorAsync(cloudService.Description);
+    await cloudServices.UpsertAsync(cloudService);
 }
 
 // Convert a search query to a vector and search the vector store

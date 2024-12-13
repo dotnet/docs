@@ -22,7 +22,7 @@ In F#, the access control specifiers `public`, `internal`, and `private` can be 
 
 The access specifier is put in front of the name of the entity.
 
-If no access specifier is used, the default is `public`, except for `let` bindings in a type, which are always `private` to the type.
+If no access specifier is used, the default is `public`, except for `let` bindings in a type or a function, which are always `private` to the type.
 
 Signatures in F# provide another mechanism for controlling access to F# program elements. Signatures are not required for access control. For more information, see [Signatures](signature-files.md).
 

@@ -10,7 +10,7 @@ zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
 
-# Build a .NET AI app to work with embeddings and vector stores
+# Build a minimal .NET AI RAG app
 
 In this quickstart, you create a .NET console app that integrates with AI embedding models and vector stores. You learn how to generate embeddings for user prompts and use those embeddings to query a vector data store. The app uses the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
 

@@ -205,7 +205,7 @@ These constraints help provide more information to the compiler on how `T` is us
 
 The *nullable context* determines how nullable reference type annotations are handled and what warnings are produced by static null state analysis. The nullable context contains two flags: the *annotation* setting and the *warning* setting.
 
-Both the *annotation* and *warning* settings are disabled by default for existing projects. Starting in .NET 6, both flags are enabled by default for *new* projects. The reason for two distinct flags for the nullable context is to make it easier to migrate large projects that predate the introduction of nullable reference types.
+Both the *annotation* and *warning* settings are disabled by default for existing projects. Starting in .NET 6 (C# 10), both flags are enabled by default for *new* projects. The reason for two distinct flags for the nullable context is to make it easier to migrate large projects that predate the introduction of nullable reference types.
 
 For small projects, you can enable nullable reference types, fix warnings, and continue. However, for larger projects and multi-project solutions, that might generate a large number of warnings. You can use pragmas to enable nullable reference types file-by-file as you begin using nullable reference types. The new features that protect against throwing a <xref:System.NullReferenceException?displayProperty=nameWithType> can be disruptive when turned on in an existing codebase:
 

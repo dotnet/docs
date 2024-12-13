@@ -26,7 +26,7 @@ You can store multiple variables of the same type in an array data structure. Yo
 type[] arrayName;
 ```
 
-An array is a reference type, so the array can be a nullable reference type. The element types might be reference types, so an array can be declared to hold nullable reference types. The following example declarations show the different syntax used to declare the nullability of the array or the elements:
+An array is a reference type, so the array can be a [nullable reference](../nullable-references.md) type. The element types might be reference types, so an array can be declared to hold nullable reference types. The following example declarations show the different syntax used to declare the nullability of the array or the elements:
 
 ```csharp
 type?[] arrayName; // non nullable array of nullable element types.

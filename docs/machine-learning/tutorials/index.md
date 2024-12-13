@@ -14,7 +14,7 @@ The following tutorials help you understand how to use [ML.NET](../index.yml) to
 - [Recommendation](movie-recommendation.md): Generate movie **recommendations** based on previous user ratings
 - [Image classification](image-classification.md): Retrain an existing TensorFlow model to create a custom image classifier using ML.NET.
 - [Anomaly detection](sales-anomaly-detection.md): Build an anomaly detection application for product sales data analysis.
-- [Detect objects in images](object-detection-onnx.md): Detect objects in images using a pre-trained ONNX model.
+- [Detect objects in images](object-detection-onnx.md): Detect objects in images using a pretrained ONNX model.
 - [Categorize an image from Custom Vision ONNX model](object-detection-custom-vision-onnx.md): Detect objects in images using an ONNX model trained in the Microsoft Custom Vision service.
 - [Classify sentiment of movie reviews](text-classification-tf.md): Load a pretrained TensorFlow model to classify the sentiment of movie reviews.
 

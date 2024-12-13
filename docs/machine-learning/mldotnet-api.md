@@ -11,7 +11,7 @@ ms.custom: mvc
 
 ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application. Machine learning applications make use of patterns in the data to make predictions rather than needing to be explicitly programmed.
 
-Central to ML.NET is a machine learning **model**. The model specifies the steps needed to transform your input data into a prediction. With ML.NET, you can train a custom model by specifying an algorithm, or you can import pre-trained TensorFlow and ONNX models.
+Central to ML.NET is a machine learning *model*. The model specifies the steps needed to transform your input data into a prediction. With ML.NET, you can train a custom model by specifying an algorithm, or you can import pretrained TensorFlow and Open Neural Network Exchange (ONNX) models.
 
 Once you have a model, you can add it to your application to make the predictions.
 
@@ -22,80 +22,33 @@ The following table shows examples of the type of predictions that you can make 
 | Prediction type                      | Example                                                                                   |
 |--------------------------------------|-------------------------------------------------------------------------------------------|
 | Classification/Categorization        | Automatically divide customer feedback into positive and negative categories.             |
-| Regression/Predict continuous values | Predict the price of houses based on size and location.                                   |
-| Anomaly Detection                    | Detect fraudulent banking transactions.                                                   |
-| Recommendations                      | Suggest products that online shoppers may want to buy, based on their previous purchases. |
+| [Regression](resources/tasks.md#regression)/Predict continuous values | Predict the price of houses based on size and location.                                   |
+| [Anomaly detection](resources/tasks.md#anomaly-detection) | Detect fraudulent banking transactions.                                                   |
+| [Recommendations](resources/tasks.md#recommendation) | Suggest products that online shoppers might want to buy, based on their previous purchases. |
 | Time series/sequential data          | Forecast the weather or product sales.                                                    |
-| Image classification                 | Categorize pathologies in medical images.                                                 |
+| [Image classification](resources/tasks.md#image-classification) | Categorize pathologies in medical images.                                                 |
 | Text classification                  | Categorize documents based on their content.                                              |
 | Sentence similarity                  | Measure how similar two sentences are.                                                    |
 
-## Hello ML.NET World
+## Simple ML.NET app
 
 The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data.
 
- ```csharp
-    using System;
-    using Microsoft.ML;
-    using Microsoft.ML.Data;
-
-    class Program
-    {
-        public class HouseData
-        {
-            public float Size { get; set; }
-            public float Price { get; set; }
-        }
-
-        public class Prediction
-        {
-            [ColumnName("Score")]
-            public float Price { get; set; }
-        }
-
-        static void Main(string[] args)
-        {
-            MLContext mlContext = new MLContext();
-
-            // 1. Import or create training data
-            HouseData[] houseData = {
-                new HouseData() { Size = 1.1F, Price = 1.2F },
-                new HouseData() { Size = 1.9F, Price = 2.3F },
-                new HouseData() { Size = 2.8F, Price = 3.0F },
-                new HouseData() { Size = 3.4F, Price = 3.7F } };
-            IDataView trainingData = mlContext.Data.LoadFromEnumerable(houseData);
-
-            // 2. Specify data preparation and model training pipeline
-            var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
-                .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
-
-            // 3. Train model
-            var model = pipeline.Fit(trainingData);
-
-            // 4. Make a prediction
-            var size = new HouseData() { Size = 2.5F };
-            var price = mlContext.Model.CreatePredictionEngine<HouseData, Prediction>(model).Predict(size);
-
-            Console.WriteLine($"Predicted price for size: {size.Size*1000} sq ft= {price.Price*100:C}k");
-
-            // Predicted price for size: 2500 sq ft= $261.98k
-        }
-    }
-```
+:::code language="csharp" source="./snippets/mldotnet-api/csharp/Program.cs":::
 
 ## Code workflow
 
-The following diagram represents the application code structure, as well as the iterative process of model development:
+The following diagram represents the application code structure and the iterative process of model development:
 
-- Collect and load training data into an **IDataView** object
+- Collect and load training data into an <xref:Microsoft.ML.IDataView> object
 - Specify a pipeline of operations to extract features and apply a machine learning algorithm
-- Train a model by calling **Fit()** on the pipeline
+- Train a model by calling <xref:Microsoft.ML.IEstimator`1.Fit(Microsoft.ML.IDataView)> on the pipeline
 - Evaluate the model and iterate to improve
 - Save the model into binary format, for use in an application
-- Load the model back into an **ITransformer** object
-- Make predictions by calling **CreatePredictionEngine.Predict()**
+- Load the model back into an <xref:Microsoft.ML.ITransformer> object
+- Make predictions by calling <xref:Microsoft.ML.PredictionEngineBase`2.Predict*?displayProperty=nameWithType>
 
-![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png)
+![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage.](./media/mldotnet-annotated-workflow.png)
 
 Let's dig a little deeper into those concepts.
 
@@ -105,9 +58,9 @@ An ML.NET model is an object that contains transformations to perform on your in
 
 ### Basic
 
-The most basic model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above.
+The most basic model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example shown previously.
 
-![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.svg)
+![Linear Regression Model with bias and weight parameters.](./media/linear-regression-model.svg)
 
 The model is simply: $Price = b + Size * w$. The parameters $b$ and $w$ are estimated by fitting a line on a set of (size, price) pairs. The data used to find the parameters of the model is called **training data**. The inputs of a machine learning model are called **features**. In this example, $Size$ is the only feature. The ground-truth values used to train a machine learning model are called **labels**. Here, the $Price$ values in the training data set are the labels.
 
@@ -119,11 +72,11 @@ Each transaction description is broken down into a set of features by removing r
 
 ![Text Classification Model](./media/text-classification-model.svg)
 
-Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you are solving, you can also use **decision tree** models, **generalized additive** models, and others. You can find out more about the models in [Tasks](./resources/tasks.md).
+Both the house price model and the text classification model are **linear** models. Depending on the nature of your data and the problem you're solving, you can also use **decision tree** models, **generalized additive** models, and others. You can find out more about the models in [Tasks](./resources/tasks.md).
 
 ## Data preparation
 
-In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed, before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled.
+In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or preprocessed, before it can be used to find the parameters of your model. Your data might need to be converted from string values to a numerical representation. You might have redundant information in your input data. You might need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled.
 
 The [ML.NET tutorials](./tutorials/index.md) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
 
@@ -133,11 +86,11 @@ You can find an appendix of all of the [available transformations](./resources/t
 
 ## Model evaluation
 
-Once you have trained your model, how do you know how well it will make future predictions? With ML.NET, you can evaluate your model against some new test data.
+Once you've trained your model, how do you know how well it will make future predictions? With ML.NET, you can evaluate your model against some new test data.
 
 Each type of machine learning task has metrics used to evaluate the accuracy and precision of the model against the test data set.
 
-For our house price example, we used the **Regression** task. To evaluate the model, add the following code to the original sample.
+The house price example shown earlier used the **Regression** task. To evaluate the model, add the following code to the original sample.
 
 ```csharp
         HouseData[] testHouseData =
@@ -183,7 +136,7 @@ An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This 
 | Time series               | <xref:Microsoft.ML.TimeSeriesCatalog>               |
 | Model usage               | <xref:Microsoft.ML.ModelOperationsCatalog>          |
 
-You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
+You can navigate to the creation methods in each of the listed categories. If you use Visual Studio, the catalogs also show up via IntelliSense.
 
 ![Intellisense for Regression Trainers](./media/catalog-intellisense.png)
 
@@ -196,7 +149,7 @@ var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
     .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
 ```
 
-In the snippet, `Concatenate` and `Sdca` are both methods in the catalog. They each create an [IEstimator](xref:Microsoft.ML.IEstimator%601) object that's appended to the pipeline.
+In the snippet, `Concatenate` and `Sdca` are both methods in the catalog. They each create an [IEstimator](xref:Microsoft.ML.IEstimator`1) object that's appended to the pipeline.
 
 At this point, the objects have been created, but no execution has happened.
 
@@ -220,7 +173,7 @@ IDataView predictions = model.Transform(inputData);
 
 ### Use the model
 
-You can transform input data into predictions in bulk, or one input at a time. The house price example did both: in bulk for the purpose of evaluating the model, and one at a time to make a new prediction. Let's look at making single predictions.
+You can transform input data into predictions in bulk, or one input at a time. The house price example did both: in bulk to evaluate the model, and one at a time to make a new prediction. Let's look at making single predictions.
 
 ```csharp
 var size = new HouseData() { Size = 2.5F };
@@ -238,7 +191,7 @@ Each transformation in the pipeline has an input schema (data names, types, and 
 
 If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 
-A data view object has columns and rows. Each column has a name and a type and a length. For example, the input columns in the house price example are **Size** and **Price**. They are both type and they are scalar quantities rather than vector ones.
+A data view object has columns and rows. Each column has a name and a type and a length. For example, the input columns in the house price example are **Size** and **Price**. They are both type <xref:System.Single> and they're scalar quantities rather than vector ones.
 
 ![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 
@@ -260,26 +213,27 @@ public class Prediction
 
 You can find out more about output columns of different machine learning tasks in the [Machine Learning Tasks](resources/tasks.md) guide.
 
-An important property of DataView objects is that they're evaluated **lazily**. Data views are only loaded and operated on during model training and evaluation, and data prediction. While you are writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.DebuggerExtensions.Preview%2A) method.
+An important property of DataView objects is that they're evaluated **lazily**. Data views are only loaded and operated on during model training and evaluation, and data prediction. While you're writing and testing your ML.NET application, you can use the Visual Studio debugger to take a peek at any data view object by calling the [Preview](xref:Microsoft.ML.DebuggerExtensions.Preview%2A) method.
 
 ```csharp
 var debug = testPriceDataView.Preview();
 ```
 
-You can watch the `debug` variable in the debugger and examine its contents. Do not use the Preview method in production code, as it significantly degrades performance.
+You can watch the `debug` variable in the debugger and examine its contents.
+
+> [!NOTE]
+> Don't use the <xref:Microsoft.ML.DebuggerExtensions.Preview(Microsoft.ML.IDataView,System.Int32)> method in production code, as it significantly degrades performance.
 
 ### Model deployment
 
 In real-life applications, your model training and evaluation code will be separate from your prediction. In fact, these two activities are often performed by separate teams. Your model development team can save the model for use in the prediction application.
 
 ```csharp
-mlContext.Model.Save(model, trainingData.Schema,"model.zip");
+mlContext.Model.Save(model, trainingData.Schema, "model.zip");
 ```
 
 ## Next steps
 
 * Learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
-
-* Learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
-
-* If you're super keen, you can dive straight into the [API Reference documentation](../../api/index.md?preserve-view=ml-dotnet).
+* Learn about specific topics in more depth in the [how-to guides](./how-to-guides/index.md).
+* Dive straight into the [API reference documentation](../../api/index.md?preserve-view=ml-dotnet).

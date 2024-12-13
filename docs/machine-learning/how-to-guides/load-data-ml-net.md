@@ -10,7 +10,7 @@ ms.topic: how-to
 
 # Load data from files and other sources
 
-Learn how to load data into ML.NET for processing and training, using the API. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
+Learn how to load data into ML.NET for processing and training, using the API. The data is originally stored in files or other data sources such as databases, JSON, XML, or in-memory collections.
 
 If you're using Model Builder, see [Load training data into Model Builder](load-data-model-builder.md).
 
@@ -105,7 +105,7 @@ IDataView data = textLoader.Load("DataFolder/SubFolder1/1.txt", "DataFolder/SubF
 
 ## Load data from a relational database
 
-ML.NET supports loading data from a variety of relational databases supported by [`System.Data`](xref:System.Data) that include SQL Server, Azure SQL Database, Oracle, SQLite, PostgreSQL, Progress, IBM DB2, and many more.
+ML.NET supports loading data from a variety of relational databases supported by [`System.Data`](xref:System.Data), which include SQL Server, Azure SQL Database, Oracle, SQLite, PostgreSQL, Progress, and IBM DB2.
 
 > [!NOTE]
 > To use `DatabaseLoader`, reference the [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient) NuGet package.
@@ -153,7 +153,7 @@ string sqlCommand = "SELECT CAST(Size as REAL) as Size, CAST(NumBed as REAL) as 
 DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance, connectionString, sqlCommand);
 ```
 
-Numerical data that's not of type [`Real`](xref:System.Data.SqlDbType) has to be converted to [`Real`](xref:System.Data.SqlDbType). The [`Real`](xref:System.Data.SqlDbType) type is represented as a single-precision floating-point value or [`Single`](xref:System.Single), the input type expected by ML.NET algorithms. In this sample, the `Size` and `NumBed` columns are integers in the database. Using the `CAST` built-in function, it's converted to [`Real`](xref:System.Data.SqlDbType). Because the `Price` property is already of type [`Real`](xref:System.Data.SqlDbType), it's loaded as is.
+Numerical data that's not of type [`Real`](xref:System.Data.SqlDbType) has to be converted to [`Real`](xref:System.Data.SqlDbType). The [`Real`](xref:System.Data.SqlDbType) type is represented as a single-precision floating-point value or [`Single`](xref:System.Single), the input type expected by ML.NET algorithms. In this sample, the `Size` and `NumBed` columns are integers in the database. Using the `CAST` built-in function, it's converted to [`Real`](xref:System.Data.SqlDbType). Because the `Price` property is already of type [`Real`](xref:System.Data.SqlDbType), it's loaded as-is.
 
 Use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
 

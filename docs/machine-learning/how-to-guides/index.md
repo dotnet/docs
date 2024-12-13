@@ -5,7 +5,7 @@ ms.date: 03/01/2019
 ---
 # .NET Machine learning how-to guides
 
-In the How to section of the ML.NET Guide, you can find quick answers to common questions. In some cases, articles may be listed in multiple sections to make them easy to find.
+In the How to section of the ML.NET Guide, you can find quick answers to common questions. In some cases, articles might be listed in multiple sections to make them easy to find.
 
 ## Load data
 

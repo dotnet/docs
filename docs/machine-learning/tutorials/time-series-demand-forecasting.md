@@ -43,7 +43,7 @@ The algorithm used in this tutorial is [Singular Spectrum Analysis(SSA)](http://
 
 1. Create a C# **Console Application** called "BikeDemandForecasting". Click the **Next** button.
 
-1. Choose .NET 6 as the framework to use. Click the **Create** button.
+1. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 1. Install **Microsoft.ML** version NuGet package
 

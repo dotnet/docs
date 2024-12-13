@@ -126,9 +126,9 @@ In [classification](#classification), the recall for a class is the number of it
 
 ## Regularization
 
- Regularization penalizes a linear model for being too complicated. There are two types of regularization:
+Regularization penalizes a linear model for being too complicated. There are two types of regularization:
 
-- $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
+- $L_1$ regularization zeros weights for insignificant features. The size of the saved model might become smaller after this type of regularization.
 - $L_2$ regularization minimizes weight range for insignificant features. This is a more general process and is less sensitive to outliers.
 
 ## Regression
@@ -149,7 +149,7 @@ In [regression](#regression), an evaluation metric that is the square root of th
 
 ## Scoring
 
-Scoring is the process of applying new data to a trained machine learning model, and generating predictions. Scoring is also known as inferencing. Depending on the type of model, the score may be a raw value, a probability, or a category.
+Scoring is the process of applying new data to a trained machine learning model, and generating predictions. Scoring is also known as inferencing. Depending on the type of model, the score can be a raw value, a probability, or a category.
 
 ## Supervised machine learning
 

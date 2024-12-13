@@ -61,7 +61,7 @@ LinearRegressionModelParameters originalModelParameters =
 
 ## Retrain a model
 
-The process for retraining a model is no different than that of training a model. The only difference is, the [`Fit`](xref:Microsoft.ML.Trainers.OnlineLinearTrainer%602.Fit%2A) method in addition to the data also takes the original learned model parameters as input and uses them as a starting point in the retraining process.
+The process for retraining a model is no different than that of training a model. The only difference is that you pass an additional argument to the <xref:Microsoft.ML.Trainers.OnlineLinearTrainer`2.Fit(Microsoft.ML.IDataView,Microsoft.ML.Trainers.LinearModelParameters)> method: the original learned model parameters. `Fit()` uses them as a starting point in the retraining process.
 
 ```csharp
 // New Data
@@ -99,11 +99,11 @@ RegressionPredictionTransformer<LinearRegressionModelParameters> retrainedModel 
         .Fit(transformedNewData, originalModelParameters);
 ```
 
-At this point, you can save your retrained model and use it in your application. For more information, see the [save and load a trained model](save-load-machine-learning-models-ml-net.md) and [make predictions with a trained model](machine-learning-model-predictions-ml-net.md) guides.
+At this point, you can save your retrained model and use it in your application. For more information, see [Save and load a trained model](save-load-machine-learning-models-ml-net.md) and [Make predictions with a trained model](machine-learning-model-predictions-ml-net.md).
 
 ## Compare model parameters
 
-How do you know if retraining actually happened? One way would be to compare whether the retrained model's parameters are different than those of the original model. The following code sample compares the original against the retrained model weights and outputs them to the console.
+How do you know if retraining actually happened? One way is to compare whether the retrained model's parameters are different than those of the original model. The following code sample compares the original against the retrained model weights and outputs them to the console.
 
 ```csharp
 // Extract Model Parameters of re-trained model

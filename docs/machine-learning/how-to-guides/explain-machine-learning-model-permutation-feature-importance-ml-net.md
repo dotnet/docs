@@ -13,21 +13,21 @@ ms.topic: how-to
 
 Using Permutation Feature Importance (PFI), learn how to interpret ML.NET machine learning model predictions. PFI gives the relative contribution each feature makes to a prediction.
 
-Machine learning models are often thought of as opaque boxes that take inputs and generate an output. The intermediate steps or interactions among the features that influence the output are rarely understood. As machine learning is introduced into more aspects of everyday life such as healthcare, it's of utmost importance to understand why a machine learning model makes the decisions it does. For example, if diagnoses are made by a machine learning model, healthcare professionals need a way to look into the factors that went into making that diagnoses. Providing the right diagnosis could make a great difference on whether a patient has a speedy recovery or not. Therefore the higher the level of explainability in a model, the greater confidence healthcare professionals have to accept or reject the decisions made by the model.
+Machine learning models are often thought of as opaque boxes that take inputs and generate an output. The intermediate steps or interactions among the features that influence the output are rarely understood. As machine learning is introduced into more aspects of everyday life, such as healthcare, it's of utmost importance to understand why a machine learning model makes the decisions it does. For example, if diagnoses are made by a machine learning model, healthcare professionals need a way to look into the factors that went into making that diagnosis. Providing the right diagnosis could make a great difference on whether a patient has a speedy recovery or not. Therefore the higher the level of explainability in a model, the greater confidence healthcare professionals have to accept or reject the decisions made by the model.
 
-Various techniques are used to explain models, one of which is PFI. PFI is a technique used to explain classification and regression models that is inspired by [Breiman's *Random Forests* paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) (see section 10). At a high level, the way it works is by randomly shuffling data one feature at a time for the entire dataset and calculating how much the performance metric of interest decreases. The larger the change, the more important that feature is.
+Various techniques are used to explain models, one of which is PFI. PFI is a technique used to explain classification and regression models that's inspired by [Breiman's *Random Forests* paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) (see section 10). At a high level, the way it works is by randomly shuffling data one feature at a time for the entire dataset and calculating how much the performance metric of interest decreases. The larger the change, the more important that feature is.
 
-Additionally, by highlighting the most important features, model builders can focus on using a subset of more meaningful features which can potentially reduce noise and training time.
+Additionally, by highlighting the most important features, model builders can focus on using a subset of more meaningful features, which can potentially reduce noise and training time.
 
 ## Load the data
 
-The features in the dataset being used for this sample are in columns 1-12. The goal is to predict `Price`.
+The features in the dataset used for this sample are in columns 1-12. The goal is to predict `Price`.
 
 | Column | Feature                       | Description                                |
 |--------|-------------------------------|--------------------------------------------|
 | 1      | CrimeRate                     | Per capita crime rate                      |
 | 2      | ResidentialZones              | Residential zones in town                  |
-| 3      | CommercialZones               | Non-residential zones in town              |
+| 3      | CommercialZones               | Nonresidential zones in town              |
 | 4      | NearWater                     | Proximity to body of water                 |
 | 5      | ToxicWasteLevels              | Toxicity levels (PPM)                      |
 | 6      | AverageRoomNumber             | Average number of rooms in house           |
@@ -39,7 +39,7 @@ The features in the dataset being used for this sample are in columns 1-12. The 
 | 12     | PercentPopulationBelowPoverty | Percent of population living below poverty |
 | 13     | Price                         | Price of the home                          |
 
-A sample of the dataset is shown below:
+A sample of the dataset is shown here:
 
 ```text
 1,24,13,1,0.59,3,96,11,23,608,14,13,32
@@ -96,7 +96,7 @@ class HousingPriceData
 
 ## Train the model
 
-The code sample below illustrates the process of training a linear regression model to predict house prices.
+The following code sample illustrates the process of training a linear regression model to predict house prices.
 
 ```csharp
 // 1. Get the column name of input features.
@@ -105,19 +105,19 @@ string[] featureColumnNames =
         .Select(column => column.Name)
         .Where(columnName => columnName != "Label").ToArray();
 
-// 2. Define training pipeline
+// 2. Define training pipeline.
 IEstimator<ITransformer> sdcaEstimator =
     mlContext.Transforms.Concatenate("Features", featureColumnNames)
         .Append(mlContext.Transforms.NormalizeMinMax("Features"))
         .Append(mlContext.Regression.Trainers.Sdca());
 
-// 3. Train machine learning model
+// 3. Train machine learning model.
 var sdcaModel = sdcaEstimator.Fit(data);
 ```
 
 ## Explain the model with Permutation Feature Importance (PFI)
 
-In ML.NET use the [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) method for your respective task.
+In ML.NET, use the [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) method for your respective task.
 
 ```csharp
 // Use the model to make predictions
@@ -132,12 +132,12 @@ ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance =
 
 The result of using [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) on the training dataset is an [`ImmutableArray`](xref:System.Collections.Immutable.ImmutableArray) of [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) objects. [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) provides summary statistics like mean and standard deviation for multiple observations of [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics) equal to the number of permutations specified by the `permutationCount` parameter.
 
-The metric used to measure feature importance depends on the machine learning task used to solve your problem. For example, regression tasks may use a common evaluation metric such as R-squared to measure importance. For more information on model evaluation metrics, see [evaluate your ML.NET model with metrics](../resources/metrics.md).
+The metric used to measure feature importance depends on the machine learning task used to solve your problem. For example, regression tasks might use a common evaluation metric such as R-squared to measure importance. For more information on model evaluation metrics, see [evaluate your ML.NET model with metrics](../resources/metrics.md).
 
-The importance, or in this case, the absolute average decrease in R-squared metric calculated by [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) can then be ordered from most important to least important.
+The importance, or in this case, the absolute average decrease in R-squared metric, calculated by [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions), can then be ordered from most important to least important.
 
 ```csharp
-// Order features by importance
+// Order features by importance.
 var featureImportanceMetrics =
     permutationFeatureImportance
         .Select((metric, index) => new { index, metric.RSquared })
@@ -151,7 +151,7 @@ foreach (var feature in featureImportanceMetrics)
 }
 ```
 
-Printing the values for each of the features in `featureImportanceMetrics` would generate output similar to that below. Keep in mind that you should expect to see different results because these values vary based on the data that they are given.
+Printing the values for each of the features in `featureImportanceMetrics` generates output similar to the output that follows. You should expect to see different results because these values vary based on the data that they're given.
 
 | Feature                             | Change to R-Squared |
 |:------------------------------------|:-------------------:|
@@ -168,7 +168,7 @@ Printing the values for each of the features in `featureImportanceMetrics` would
 | PercentPopulationLivingBelowPoverty | 0.000031            |
 | ToxicWasteLevels                    | -0.000019           |
 
-Taking a look at the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.
+If you look at the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate, and average number of rooms in the home.
 
 ## Next steps
 

@@ -1,5 +1,5 @@
 ---
-title: Getting started with DataFrames
+title: Get started with DataFrames
 description: Learn how to use DataFrame to manipulate and prepare data.
 author: beccamc
 ms.date: 3/10/2023
@@ -7,13 +7,13 @@ ms.custom: mvc, how-to, title-hack-0625
 ms.topic: how-to
 ---
 
-# Getting started with DataFrames
+# Get started with DataFrames
 
-Learn how to get started with DataFrames. [DataFrames](/dotnet/api/microsoft.data.analysis.dataframe) are a two-dimensional data structure for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning.
+Learn how to get started with [DataFrames](/dotnet/api/microsoft.data.analysis.dataframe), which are two-dimensional data structures for storing and manipulating data. DataFrames help with preparation of data for a machine learning model. DataFrames can also be used for data manipulation unrelated to machine learning.
 
 ## Install Microsoft.Data.Analysis
 
-In most cases, accessing DataFrame is as simple as referencing the [Microsoft.Data.Analysis](https://www.nuget.org/packages/Microsoft.Data.Analysis/) NuGet package.
+In most cases, accessing <xref:Microsoft.Data.Analysis.DataFrame> is as simple as referencing the [Microsoft.Data.Analysis](https://www.nuget.org/packages/Microsoft.Data.Analysis/) NuGet package.
 
 ```dotnetcli
 dotnet add package Microsoft.Data.Analysis
@@ -47,7 +47,7 @@ var dataPath = Path.GetFullPath(@"housing-prices.csv");
 var dataFrame = DataFrame.LoadCsv(dataPath);
 ```
 
-## Inspect Data
+## Inspect data
 
 DataFrames store data as a collection of columns. This makes it easy to interact with the data.
 
@@ -63,11 +63,11 @@ To get a summary of the data, run <xref:Microsoft.Data.Analysis.DataFrame.Descri
 dataFrame.Description();
 ```
 
-## Transform Data
+## Transform data
 
-There are a variety of transformative options for data. The <xref:Microsoft.Data.Analysis.DataFrame> and <xref:Microsoft.Data.Analysis.DataFrameColumn> classes expose a number of useful APIs: binary operations, computations, joins, merges, handling missing values and more.
+There are a variety of transformative options for data. The <xref:Microsoft.Data.Analysis.DataFrame> and <xref:Microsoft.Data.Analysis.DataFrameColumn> classes expose a number of useful APIs including binary operations, computations, joins, merges, and handling missing values.
 
-For example, this data can be edited to compare historical prices to current prices accounting for inflation. We can apply a computation to all of the values and save the results in a new column.
+For example, this data can be edited to compare historical prices to current prices accounting for inflation. You can apply a computation to all of the values and save the results in a new column.
 
 ```csharp
 dataFrame["ComputedPrices"] = dataFrame["HistoricalPrice"].Multiply(2);
@@ -79,14 +79,16 @@ Data can be sorted into groups from the values in a specific column.
 var sortedDataFrame = dataFrame.GroupBy("Size");
 ```
 
-Data can be filtered based on different equality metrics. This example uses a ElementWise equality function, and then filters based on the boolean result column to get a new DataFrame with only the appropriate values.
+Data can be filtered based on different equality metrics. This example uses a [ElementWise](xref:Microsoft.Data.Analysis.DataFrame.ElementwiseGreaterThan``1(``0)) equality function, and then filters based on the Boolean result column to get a new DataFrame with only the appropriate values.
 
 ```csharp
 PrimitiveDataFrameColumn<bool> boolFilter = dataFrame["CurrentPrice"].ElementwiseGreaterThan(200000);
 DataFrame filteredDataFrame = dataFrame.Filter(boolFilter);
 ```
 
-## Combine Data Sources
+## Combine data sources
+
+Consider the following raw data:
 
 ```text
 Id, Bedrooms
@@ -98,7 +100,7 @@ Id, Bedrooms
 6, 1
 ```
 
-DataFrames can be constructed from individual data columns. Create a DataFrame from a list of the raw data above.
+DataFrames can be constructed from individual data columns. Create a DataFrame from a list of the raw data.
 
 ```csharp
 var ids = new List<Single>() {1,2,3,4,5,6};
@@ -109,7 +111,7 @@ var bedroomColumn = new SingleDataFrameColumn("BedroomNumber", bedrooms);
 var dataFrame2 = new DataFrame(idColumn, bedroomColumn);
 ```
 
-The two DataFrames can be merged based on the Id value. The merge function will take both DataFrames, and combine rows based on their id.
+The two DataFrames can be merged based on the `Id` value. The merge function takes both DataFrames and combine rows based on their `Id` value.
 
 ```csharp
 dataFrame = dataFrame.Merge(dataFrame2, new string[] {"Id"}, new string[] {"Id"});

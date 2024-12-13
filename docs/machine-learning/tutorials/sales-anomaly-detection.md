@@ -35,7 +35,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Create a C# **Console Application** called "ProductSalesAnomalyDetection". Click the **Next** button.
 
-2. Choose .NET 6 as the framework to use. Click the **Create** button.
+2. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 3. Create a directory named *Data* in your project to save your data set files.
 
@@ -43,7 +43,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select **Install**. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
 
 5. Add the following `using` directives at the top of your *Program.cs* file:
 
@@ -77,7 +77,7 @@ Add a new class to your project:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add > New Item**.
 
-2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *ProductSalesData.cs*. Then, select the **Add** button.
+2. In the **Add New Item dialog box**, select **Class** and change the **Name** field to *ProductSalesData.cs*. Then, select **Add**.
 
    The *ProductSalesData.cs* file opens in the code editor.
 

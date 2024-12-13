@@ -46,7 +46,7 @@ To create an Azure Machine Learning compute, the following are required:
     Visit the [NC-series Linux VM documentation](/azure/virtual-machines/nc-series?bc=%252fazure%252fvirtual-machines%252flinux%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fvirtual-machines%252flinux%252ftoc.json) for more details on GPU optimized compute types.
 - Compute priority
 
-  - Low-priority: Suited for tasks with shorter execution times. May be impacted by interruptions and lack of availability. Usually costs less because it takes advantage of surplus capacity in Azure.
+  - Low-priority: Suited for tasks with shorter execution times. Can be impacted by interruptions and lack of availability. Usually costs less because it takes advantage of surplus capacity in Azure.
   - Dedicated: Suited for tasks of any duration, but especially long-running jobs. Not impacted by interruptions or lack of availability. Usually costs more because it reserves a dedicated set of compute resources in Azure for your tasks.
 
 ## Training

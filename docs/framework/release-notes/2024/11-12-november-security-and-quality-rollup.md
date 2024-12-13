@@ -51,7 +51,9 @@ The following table outlines the updates in this release.
 | Product version | Cumulative update |
 | --- | --- |
 | **Windows 11, version 24H2** | |
-| .NET Framework 3.5, 4.8.1 | [5045045934](https://support.microsoft.com/kb/5045934) |
+| .NET Framework 3.5, 4.8.1 | [5045934](https://support.microsoft.com/kb/5045934) |
+| **Microsoft server operating system, version 24H2** | |
+| .NET Framework 3.5, 4.8.1 | [5045934](https://support.microsoft.com/kb/5045934) |
 | **Microsoft server operating system, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5046270](https://support.microsoft.com/kb/5046270) |
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |

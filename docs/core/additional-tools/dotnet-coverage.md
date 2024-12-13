@@ -424,7 +424,7 @@ dotnet-coverage instrument
 
 ## dotnet-coverage uninstrument
 
-The uninstrument command is used to restore original binary from the instrumented binary. 
+The uninstrument command is used to restore original binary from the instrumented binary.
 
 ### Synopsis
 

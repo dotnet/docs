@@ -10,6 +10,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/machine-learning/how-does-mldotnet-work.md",
+            "redirect_url": "/dotnet/machine-learning/mldotnet-api",
+            "redirect_document_id": true
+        },
+        {
             "source_path_from_root": "/docs/machine-learning/how-to-guides/consuming-model-ml-net.md",
             "redirect_url": "/dotnet/machine-learning/how-to-guides/save-load-machine-learning-models-ml-net",
             "redirect_document_id": true
@@ -79,6 +84,11 @@
         {
             "source_path_from_root": "/docs/machine-learning/resources/what-is-mldotnet.md",
             "redirect_url": "/dotnet/machine-learning/how-does-mldotnet-work"
+        },
+        {
+            "source_path_from_root": "/docs/machine-learning/resources/index.md",
+            "redirect_url": "/dotnet/machine-learning/resources/glossary",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/machine-learning/tutorials/ml-cli.md",

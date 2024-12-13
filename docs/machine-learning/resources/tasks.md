@@ -24,7 +24,7 @@ Once you've decided which task works for your scenario, then you need to choose 
 - [Multiclass classification](#multiclass-classification)
 - [Image classification](#image-classification)
 
-## Binary classification
+### Binary classification
 
 Binary classification is a [supervised machine learning](glossary.md#supervised-machine-learning) task that's used to predict which of *exactly two* classes (categories) an instance of data belongs to. The input of a classification algorithm is a set of labeled examples, where each label is an integer of either 0 or 1. The output of a binary classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of binary classification scenarios include:
 
@@ -35,7 +35,7 @@ Binary classification is a [supervised machine learning](glossary.md#supervised-
 
 For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
 
-### Binary classification trainers
+#### Binary classification trainers
 
 You can train a binary classification model using the following algorithms:
 
@@ -52,7 +52,7 @@ You can train a binary classification model using the following algorithms:
 * <xref:Microsoft.ML.Trainers.PriorTrainer>
 * <xref:Microsoft.ML.Trainers.LinearSvmTrainer>
 
-### Binary classification inputs and outputs
+#### Binary classification inputs and outputs
 
 For best results with binary classification, the training data should be balanced (that is, equal numbers of positive and negative training data). Missing values should be handled before training.
 
@@ -66,7 +66,7 @@ These trainers output the following columns:
 | `Score`            | <xref:System.Single> | The raw score that the model calculated. |
 | `PredictedLabel`   | <xref:System.Boolean> | The predicted label, based on the sign of the score. A negative score maps to `false` and a positive score maps to `true`. |
 
-## Multiclass classification
+### Multiclass classification
 
 Multiclass classification is a [supervised machine learning](glossary.md#supervised-machine-learning) task that's used to classify an instance of data into one of *three or more* classes (categories). The input of a classification algorithm is a set of labeled examples. Each label normally starts as text. It's then run through the TermTransform, which converts it to the Key (numeric) type. The output of a classification algorithm is a classifier, which you can use to predict the class of new unlabeled instances. Examples of multiclass classification scenarios include:
 
@@ -79,7 +79,7 @@ For more information, see the [Multiclass classification](https://en.wikipedia.o
 > [!NOTE]
 > [One-vs.-rest](https://en.wikipedia.org/wiki/Multiclass_classification#One-vs.-rest) upgrades any [binary classification learner](#binary-classification) to act on multiclass datasets.
 
-### Multiclass classification trainers
+#### Multiclass classification trainers
 
 You can train a multiclass classification model using the following training algorithms:
 
@@ -92,7 +92,7 @@ You can train a multiclass classification model using the following training alg
 * <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
 * <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>
 
-### Multiclass classification inputs and outputs
+#### Multiclass classification inputs and outputs
 
 The input label column data must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
 The feature column must be a fixed size vector of <xref:System.Single>.
@@ -104,7 +104,7 @@ This trainer outputs the following:
 | `Score`     | Vector of <xref:System.Single> | The scores of all classes. Higher value means higher probability to fall into the associated class. If the `i`-th element has the largest value, the predicted label index would be `i`. Note that `i` is zero-based index. |
 | `PredictedLabel` | [key](xref:Microsoft.ML.Data.KeyDataViewType) | The predicted label's index. If its value is `i`, the actual label would be the `i`-th category in the key-valued input label type. |
 
-### Text classification
+#### Text classification
 
 Text classification is a subcategory of multiclass classification that deals specifically with raw text. Text poses interesting challenges because you have to account for the context and semantics in which the text occurs. As such, it can be difficult to encode meaning and context.
 
@@ -118,7 +118,7 @@ The ML.NET text classification API is powered by [TorchSharp](https://github.com
 
 For a text classification example, see [Get started with the text classification API](https://devblogs.microsoft.com/dotnet/introducing-the-ml-dotnet-text-classification-api-preview/).
 
-## Image classification
+### Image classification
 
 Image classification is a [supervised machine learning](glossary.md#supervised-machine-learning) task that's used to predict the class (category) of an image. The input is a set of labeled examples. Each label normally starts as text. It's then run through the TermTransform, which converts it to the Key (numeric) type. The output of the image classification algorithm is a classifier, which you can use to predict the class of new images. The image classification task is a type of multiclass classification. Examples of image classification scenarios include:
 
@@ -126,13 +126,13 @@ Image classification is a [supervised machine learning](glossary.md#supervised-m
 * Determining if a manufacturing product is defective or not.
 * Determining what types of flowers as "Rose", "Sunflower", etc.
 
-### Image classification trainers
+#### Image classification trainers
 
 You can train an image classification model using the following training algorithms:
 
 * <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
 
-### Image classification inputs and outputs
+#### Image classification inputs and outputs
 
 The input label column data must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
 The feature column must be a variable-sized vector of <xref:System.Byte>.

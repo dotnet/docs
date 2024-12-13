@@ -6,7 +6,7 @@ using VectorDataAI;
 using System.ClientModel;
 using Microsoft.Extensions.Configuration;
 
-var cloudService = new List<CloudService>()
+var cloudServices = new List<CloudService>()
 {
     new CloudService
         {
@@ -58,20 +58,20 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
 
 // Create and populate the vector store
 var vectorStore = new InMemoryVectorStore();
-var cloudServices = vectorStore.GetCollection<int, CloudService>("cloudServices");
-await cloudServices.CreateCollectionIfNotExistsAsync();
+var cloudServicesStore = vectorStore.GetCollection<int, CloudService>("cloudServices");
+await cloudServicesStore.CreateCollectionIfNotExistsAsync();
 
-foreach (var cloudService in cloudServices)
+foreach (var service in cloudServices)
 {
-    cloudService.Vector = await generator.GenerateEmbeddingVectorAsync(cloudService.Description);
-    await cloudServices.UpsertAsync(cloudService);
+    service.Vector = await generator.GenerateEmbeddingVectorAsync(service.Description);
+    await cloudServicesStore.UpsertAsync(service);
 }
 
 // Convert a search query to a vector and search the vector store
 var query = "Which Azure service should I use to store my Word documents?";
 var queryEmbedding = await generator.GenerateEmbeddingVectorAsync(query);
 
-var results = await cloudServices.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions()
+var results = await cloudServicesStore.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions()
 {
     Top = 1,
     VectorPropertyName = "Vector"

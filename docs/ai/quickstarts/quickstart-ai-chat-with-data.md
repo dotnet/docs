@@ -10,9 +10,9 @@ zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
 
-# Build a minimal .NET AI RAG app
+# Build a .NET AI vector search app
 
-In this quickstart, you create a .NET console app that integrates with AI embedding models and vector stores. You learn how to generate embeddings for user prompts and use those embeddings to query a vector data store. The app uses the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
+In this quickstart, you create a .NET console app to perform semantic search on a vector store to find relevant results for the user's query. You learn how to generate embeddings for user prompts and use those embeddings to query the vector data store. Vector search functionality is also a key component for Retrieval Augmented Generation (RAG) scenarios. The app uses the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
 
 :::zone target="docs" pivot="openai"
 
@@ -28,11 +28,11 @@ In this quickstart, you create a .NET console app that integrates with AI embedd
 
 [!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
-## Work with vector stores
+## Interact with your data using vector stores
 
 Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
 
-### Explore the Microsoft.Extensions.VectorData.Abstractions library
+### Manage your data using Microsoft.Extensions.VectorData.Abstractions
 
 [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores.
 
@@ -46,7 +46,12 @@ The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide libra
 
 ## Create the app
 
-Complete the following steps to create a .NET console app that can query and update a vector store.
+Complete the following steps to create a .NET console app that can accomplish the following:
+
+- Create and populate a vector store by generating embeddings for a data set
+- Generate an embedding for the user prompt
+- Query the vector store using the user prompt embedding
+- Displays the relevant results from the vector search
 
 1. In an empty directory on your computer, use the `dotnet new` command to create a new console app:
 

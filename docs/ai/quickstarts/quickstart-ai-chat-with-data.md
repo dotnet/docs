@@ -32,7 +32,7 @@ In this quickstart, you create a .NET console app to perform semantic search on 
 
 Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
 
-### Manage your data using Microsoft.Extensions.VectorData.Abstractions
+### Explore Microsoft.Extensions.VectorData.Abstractions
 
 [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores.
 

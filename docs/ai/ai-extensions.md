@@ -1,7 +1,7 @@
 ---
 title:  Unified AI building blocks for .NET
 description: Learn how to develop with unified AI building blocks for .NET using Microsoft.Extensions.AI and Microsoft.Extensions.AI.Abstractions libraries
-ms.date: 11/04/2024
+ms.date: 12/16/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
@@ -16,11 +16,13 @@ The .NET ecosystem provides abstractions for integrating AI services into .NET a
 - How to work with AI abstractions in your apps and the benefits they offer.
 - Essential AI middleware concepts.
 
+For more information, see [Introduction to Microsoft.Extensions.AI](../core/extensions/artificial-intelligence.md).
+
 ## What is the Microsoft.Extensions.AI library?
 
 `Microsoft.Extensions.AI` is a set of core .NET libraries created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
 
-:::image type="content" source="media/ai-extensions/meai-architecture-diagram.png" alt-text="An architectural diagram of the AI extensions libraries.":::
+:::image type="content" source="media/ai-extensions/meai-architecture-diagram.png" lightbox="media/ai-extensions/meai-architecture-diagram.png" alt-text="An architectural diagram of the AI extensions libraries.":::
 
 `Microsoft.Extensions.AI` provides abstractions that can be implemented by various services, all adhering to the same core concepts. This library is not intended to provide APIs tailored to any specific provider's services. The goal of `Microsoft.Extensions.AI` is to act as a unifying layer within the .NET ecosystem, enabling developers to choose their preferred frameworks and libraries while ensuring seamless integration and collaboration across the ecosystem.
 

@@ -38,7 +38,7 @@
 | Dev Center | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Developer.DevCenter/1.0.0) | [docs](/dotnet/api/overview/azure/Developer.DevCenter-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Developer.DevCenter_1.0.0/sdk/devcenter/Azure.Developer.DevCenter/) |
 | Device Update | NuGet [1.0.0](https://www.nuget.org/packages/Azure.IoT.DeviceUpdate/1.0.0) | [docs](/dotnet/api/overview/azure/IoT.DeviceUpdate-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.DeviceUpdate_1.0.0/sdk/deviceupdate/Azure.IoT.DeviceUpdate/) |
 | Digital Twins | NuGet [1.4.0](https://www.nuget.org/packages/Azure.DigitalTwins.Core/1.4.0) | [docs](/dotnet/api/overview/azure/DigitalTwins.Core-readme) | GitHub [1.4.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.DigitalTwins.Core_1.4.0/sdk/digitaltwins/Azure.DigitalTwins.Core/) |
-| Document Intelligence | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.AI.DocumentIntelligence/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/AI.DocumentIntelligence-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.DocumentIntelligence_1.0.0-beta.3/sdk/documentintelligence/Azure.AI.DocumentIntelligence/) |
+| Document Intelligence | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.DocumentIntelligence/1.0.0) | [docs](/dotnet/api/overview/azure/AI.DocumentIntelligence-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.DocumentIntelligence_1.0.0/sdk/documentintelligence/Azure.AI.DocumentIntelligence/) |
 | Document Translation | NuGet [2.0.0](https://www.nuget.org/packages/Azure.AI.Translation.Document/2.0.0) | [docs](/dotnet/api/overview/azure/AI.Translation.Document-readme) | GitHub [2.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Document_2.0.0/sdk/translation/Azure.AI.Translation.Document/) |
 | Event Grid | NuGet [4.28.0](https://www.nuget.org/packages/Azure.Messaging.EventGrid/4.28.0) | [docs](/dotnet/api/overview/azure/Messaging.EventGrid-readme) | GitHub [4.28.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventGrid_4.28.0/sdk/eventgrid/Azure.Messaging.EventGrid/) |
 | Event Grid Namespaces | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Messaging.EventGrid.Namespaces/1.0.0) | [docs](/dotnet/api/overview/azure/Messaging.EventGrid.Namespaces-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Messaging.EventGrid.Namespaces_1.0.0/sdk/eventgrid/Azure.Messaging.EventGrid.Namespaces/) |
@@ -372,11 +372,11 @@
 | Unknown Display Name | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
 | Unknown Display Name | NuGet [1.0.4-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.4-preview) |  |  |
 | Unknown Display Name | NuGet [1.0.4-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.4-preview) |  |  |
-| Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.41.1) |  |  |
-| Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.41.1) |  |  |
-| Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.41.1) |  |  |
-| Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.41.1) |  |  |
-| Unknown Display Name | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.41.1) |  |  |
+| Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.42.0) |  |  |
+| Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.42.0) |  |  |
+| Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.42.0) |  |  |
+| Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.42.0) |  |  |
+| Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.42.0) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
 | Application Insights | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.ApplicationInsights/0.9.0-preview) |  |  |
@@ -457,8 +457,8 @@
 | Search - Common | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Common/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Common_10.1.0/sdk/search/Microsoft.Azure.Search.Common/) |
 | Search - Data | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Data/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Data_10.1.0/sdk/search/Microsoft.Azure.Search.Data/) |
 | Search - Service | NuGet [10.1.0](https://www.nuget.org/packages/Microsoft.Azure.Search.Service/10.1.0) |  | GitHub [10.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Search.Service_10.1.0/sdk/search/Microsoft.Azure.Search.Service/) |
-| Speech | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.41.1) |  |  |
-| Speech Remote Conversation | NuGet [1.41.1](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.41.1) |  |  |
+| Speech | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech/1.42.0) |  |  |
+| Speech Remote Conversation | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Remoteconversation/1.42.0) |  |  |
 | Speech Xamarin iOS | NuGet [1.25.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Xamarin.iOS/1.25.0) |  |  |
 | Spell Check | NuGet [4.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.SpellCheck/4.1.0-preview.1) |  | GitHub [4.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.SpellCheck_4.1.0-preview.1/sdk/cognitiveservices/Language.SpellCheck) |
 | Spring Cloud Client | NuGet [2.0.0-preview.3](https://www.nuget.org/packages/Microsoft.Azure.SpringCloud.Client/2.0.0-preview.3) |  |  |

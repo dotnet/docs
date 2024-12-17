@@ -63,7 +63,7 @@ You can use GitHub Copilot in your IDE to generate C# code to convert a string t
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-Generate C# code to convert the string "123" to a number using TryParse. Provide example output.
+Show me how to parse a string as a number, but don't throw an exception if the input string doesn't represent a number.
 ```
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).

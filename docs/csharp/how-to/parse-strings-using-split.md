@@ -57,7 +57,7 @@ You can use GitHub Copilot in your IDE to generate code to split strings using `
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-Generate C# code to use Split.String split a string into substrings. Input string is "You win some. You lose some." Delimiters are space and period.  Provide example output.
+Generate C# code to use Split.String to split a string into substrings. Input string is "You win some. You lose some." Delimiters are space and period. Provide example output.
 ```
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).

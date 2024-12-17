@@ -76,18 +76,7 @@ To request a completion, call the <xref:Microsoft.Extensions.AI.IChatClient.Comp
 
 The core `IChatClient.CompleteAsync` method accepts a list of messages. This list represents the history of all messages that are part of the conversation.
 
-```csharp
-using Microsoft.Extensions.AI;
-
-IChatClient client = new SampleChatClient(
-    new Uri("http://coolsite.ai"), "my-custom-model");
-
-Console.WriteLine(await client.CompleteAsync(
-[
-    new(ChatRole.System, "You are a helpful AI assistant"),
-    new(ChatRole.User, "What is AI?"),
-]));
-```
+:::code language="csharp" source="snippets/ai/ConsoleAI.CompleteAsyncArgs/Program.cs":::
 
 Each message in the history is represented by a <xref:Microsoft.Extensions.AI.ChatMessage> object. The `ChatMessage` class provides a <xref:Microsoft.Extensions.AI.ChatMessage.Role?displayProperty=nameWithType> property that indicates the role of the message. By default, the <xref:Microsoft.Extensions.AI.ChatRole.User?displayProperty=nameWithType> is used. The following roles are available:
 
@@ -110,17 +99,7 @@ Each chat message is instantiated, assigning to its <xref:Microsoft.Extensions.A
 
 The inputs to <xref:Microsoft.Extensions.AI.IChatClient.CompleteStreamingAsync*?displayProperty=nameWithType> are identical to those of `CompleteAsync`. However, rather than returning the complete response as part of a <xref:Microsoft.Extensions.AI.ChatCompletion> object, the method returns an <xref:System.Collections.Generic.IAsyncEnumerable`1> where `T` is <xref:Microsoft.Extensions.AI.StreamingChatCompletionUpdate>, providing a stream of updates that collectively form the single response.
 
-```csharp
-using Microsoft.Extensions.AI;
-
-IChatClient client = new SampleChatClient(
-    new Uri("http://coolsite.ai"), "my-custom-model");
-
-await foreach (var update in client.CompleteStreamingAsync("What is AI?"))
-{
-    Console.Write(update);
-}
-```
+:::code language="csharp" source="snippets/ai/ConsoleAI.CompleteStreamingAsync/Program.cs":::
 
 > [!TIP]
 > Streaming APIs are nearly synonymous with AI user experiences. C# enables compelling scenarios with its `IAsyncEnumerable<T>` support, allowing for a natural and efficient way to stream data.
@@ -135,90 +114,33 @@ Some models and services support _tool calling_, where requests can include tool
 
 Consider the following example that demonstrates a random function invocation:
 
-```csharp
-using System.ComponentModel;
-using Microsoft.Extensions.AI;
+:::code language="csharp" source="snippets/ai/ConsoleAI.ToolCalling/Program.cs":::
 
-[Description("Gets the current weather")]
-string GetCurrentWeather() => Random.Shared.NextDouble() > 0.5
-    ? "It's sunny"
-    : "It's raining";
-
-IChatClient client = new ChatClientBuilder(
-        new OllamaChatClient(new Uri("http://localhost:11434"), "llama3.1"))
-    .UseFunctionInvocation()
-    .Build();
-
-var response = client.CompleteStreamingAsync(
-    "Should I wear a rain coat?",
-    new() { Tools = [ AIFunctionFactory.Create(GetCurrentWeather) ] });
-
-await foreach (var update in response)
-{
-    Console.Write(update);
-}
-```
+The preceding example depends on the [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama) NuGet package.
 
 The preceding code:
 
 - Defines a function named `GetCurrentWeather` that returns a random weather forecast.
-  - This function is decorated with a `Description` attribute, which is used to provide a description of the function to the AI service.
-- Instantiates a `ChatClientBuilder` with an `OllamaChatClient` and configures it to use function invocation.
-- Calls `CompleteStreamingAsync` on the client, passing a prompt and a list of tools that includes a function created with `AIFunctionFactory.Create`.
+  - This function is decorated with a <xref:System.ComponentModel.DescriptionAttribute>, which is used to provide a description of the function to the AI service.
+- Instantiates a <xref:Microsoft.Extensions.AI.ChatClientBuilder> with an <xref:Microsoft.Extensions.AI.OllamaChatClient> and configures it to use function invocation.
+- Calls `CompleteStreamingAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
 - Iterates over the response, printing each update to the console.
 
 #### Cache responses
 
 If you're familiar with [Caching in .NET](caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides other such delegating `IChatClient` implementations. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a unique chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same history is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than needing to forward the request along the pipeline.
 
-```csharp
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
+:::code language="csharp" source="snippets/ai/ConsoleAI.CacheResponse/Program.cs":::
 
-var sampleChatClient = new SampleChatClient(new Uri("http://coolsite.ai"), "my-custom-model");
-IChatClient client = new ChatClientBuilder(sampleChatClient)
-    .UseDistributedCache(new MemoryDistributedCache(Options.Create(new MemoryDistributedCacheOptions())))
-    .Build();
-
-string[] prompts = ["What is AI?", "What is .NET?", "What is AI?"];
-
-foreach (var prompt in prompts)
-{
-    await foreach (var update in client.CompleteStreamingAsync(prompt))
-    {
-        Console.Write(update);
-    }
-
-    Console.WriteLine();
-}
-```
+The preceding example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory) NuGet package. For more information, see [Caching in .NET](caching.md).
 
 #### Use telemetry
 
 Another example of a delegating chat client is the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClient>. This implementation adheres to the [OpenTelemetry Semantic Conventions for Generative AI systems](https://opentelemetry.io/docs/specs/semconv/gen-ai/). Similar to other `IChatClient` delegators, it layers metrics and spans around any underlying `IChatClient` implementation, providing enhanced observability.
 
-```csharp
-using Microsoft.Extensions.AI;
-using OpenTelemetry.Trace;
+:::code language="csharp" source="snippets/ai/ConsoleAI.UseTelemetry/Program.cs":::
 
-// Configure OpenTelemetry exporter
-var sourceName = Guid.NewGuid().ToString();
-var tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
-    .AddSource(sourceName)
-    .AddConsoleExporter()
-    .Build();
-
-var sampleChatClient = new SampleChatClient(
-    new Uri("http://coolsite.ai"), "my-custom-model");
-
-IChatClient client = new ChatClientBuilder(sampleChatClient)
-    .UseOpenTelemetry(sourceName, static c => c.EnableSensitiveData = true)
-    .Build();
-
-Console.WriteLine((await client.CompleteAsync("What is AI?")).Message);
-```
+The preceding example depends on the [📦 OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console) NuGet package.
 
 #### Provide options
 
@@ -226,70 +148,21 @@ Every call to <xref:Microsoft.Extensions.AI.IChatClient.CompleteAsync*> or <xref
 
 You can also specify options when building an `IChatClient` with the fluent <xref:Microsoft.Extensions.AI.ChatClientBuilder> API and chaining a call to the `ConfigureOptions` extension method. This delegating client wraps another client and invokes the supplied delegate to populate a `ChatOptions` instance for every call. For example, to ensure that the <xref:Microsoft.Extensions.AI.ChatOptions.ModelId?displayProperty=nameWithType> property defaults to a particular model name, you can use code like the following:
 
-```csharp
-using Microsoft.Extensions.AI;
+:::code language="csharp" source="snippets/ai/ConsoleAI.ProvideOptions/Program.cs":::
 
-IChatClient client = new ChatClientBuilder(
-        new OllamaChatClient(new Uri("http://localhost:11434")))
-    .ConfigureOptions(options => options.ModelId ??= "phi3")
-    .Build();
-
-// will request "phi3"
-Console.WriteLine(await client.CompleteAsync("What is AI?"));
-
-// will request "llama3.1"
-Console.WriteLine(await client.CompleteAsync("What is AI?", new() { ModelId = "llama3.1" }));
-```
+The preceding example depends on the [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama) NuGet package.
 
 #### Functionality pipelines
 
 `IChatClient` instances can be layered to create a pipeline of components, each adding specific functionality. These components can come from `Microsoft.Extensions.AI`, other NuGet packages, or custom implementations. This approach allows you to augment the behavior of the `IChatClient` in various ways to meet your specific needs. Consider the following example code that layers a distributed cache, function invocation, and OpenTelemetry tracing around a sample chat client:
 
-```csharp
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-using OpenTelemetry.Trace;
+:::code language="csharp" source="snippets/ai/ConsoleAI.FunctionalityPipelines/Program.cs":::
 
-// Configure OpenTelemetry exporter
-var sourceName = Guid.NewGuid().ToString();
-var tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
-    .AddSource(sourceName)
-    .AddConsoleExporter()
-    .Build();
+The preceding example depends on the following NuGet packages:
 
-// Explore changing the order of the intermediate "Use" calls to see that impact
-// that has on what gets cached, traced, etc.
-IChatClient client = new ChatClientBuilder(
-        new OllamaChatClient(new Uri("http://localhost:11434"), "llama3.1"))
-    .UseDistributedCache(new MemoryDistributedCache(Options.Create(new MemoryDistributedCacheOptions())))
-    .UseFunctionInvocation()
-    .UseOpenTelemetry(sourceName, static c => c.EnableSensitiveData = true)
-    .Build();
-
-ChatOptions options = new()
-{
-    Tools =
-    [
-        AIFunctionFactory.Create(
-            () => Random.Shared.NextDouble() > 0.5 ? "It's sunny" : "It's raining",
-            name: "GetCurrentWeather", 
-            description: "Gets the current weather")
-    ]
-};
-
-for (int i = 0; i < 3; ++i)
-{
-    List<ChatMessage> history =
-    [
-        new ChatMessage(ChatRole.System, "You are a helpful AI assistant"),
-        new ChatMessage(ChatRole.User, "Do I need an umbrella?")
-    ];
-
-    Console.WriteLine(await client.CompleteAsync(history, options));
-}
-```
+- [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory)
+- [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama)
+- [📦 OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console)
 
 #### Custom `IChatClient` middleware
 
@@ -299,113 +172,25 @@ The `DelegatingChatClient` class provides default implementations for methods li
 
 The following is an example class derived from `DelegatingChatClient` to provide rate limiting functionality, utilizing the <xref:System.Threading.RateLimiting.RateLimiter>:
 
-```csharp
-using Microsoft.Extensions.AI;
-using System.Threading.RateLimiting;
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClient.cs":::
 
-public sealed class RateLimitingChatClient(
-    IChatClient innerClient, RateLimiter rateLimiter) 
-        : DelegatingChatClient(innerClient)
-{
-    public override async Task<ChatCompletion> CompleteAsync(
-        IList<ChatMessage> chatMessages,
-        ChatOptions? options = null,
-        CancellationToken cancellationToken = default)
-    {
-        using var lease = await rateLimiter.AcquireAsync(permitCount: 1, cancellationToken)
-            .ConfigureAwait(false);
+The preceding example depends on the [📦 System.Threading.RateLimiting](https://www.nuget.org/packages/System.Threading.RateLimiting) NuGet package. Composition of the `RateLimitingChatClient` with another client is straightforward:
 
-        if (!lease.IsAcquired)
-        {
-            throw new InvalidOperationException("Unable to acquire lease.");
-        }
-
-        return await base.CompleteAsync(chatMessages, options, cancellationToken)
-            .ConfigureAwait(false);
-    }
-
-    public override async IAsyncEnumerable<StreamingChatCompletionUpdate> CompleteStreamingAsync(
-        IList<ChatMessage> chatMessages,
-        ChatOptions? options = null,
-        [EnumeratorCancellation] CancellationToken cancellationToken = default)
-    {
-        using var lease = await rateLimiter.AcquireAsync(permitCount: 1, cancellationToken)
-            .ConfigureAwait(false);
-
-        if (!lease.IsAcquired)
-        {
-            throw new InvalidOperationException("Unable to acquire lease.");
-        }
-
-        await foreach (var update in base.CompleteStreamingAsync(chatMessages, options, cancellationToken)
-            .ConfigureAwait(false))
-        {
-            yield return update;
-        }
-    }
-
-    protected override void Dispose(bool disposing)
-    {
-        if (disposing)
-        {
-            rateLimiter.Dispose();
-        }
-
-        base.Dispose(disposing);
-    }
-}
-```
-
-Composition of the `RateLimitingChatClient` with another client is straightforward:
-
-```csharp
-using Microsoft.Extensions.AI;
-using System.Threading.RateLimiting;
-
-var client = new RateLimitingChatClient(
-    new SampleChatClient(new Uri("http://localhost"), "test"),
-    new ConcurrencyLimiter(new() { PermitLimit = 1, QueueLimit = int.MaxValue }));
-
-await client.CompleteAsync("What color is the sky?");
-```
+:::code language="csharp" source="snippets/ai/ConsoleAI.CustomClientMiddle/Program.cs":::
 
 To simplify the composition of such components with others, component authors should create a `Use*` extension method for registering the component into a pipeline. For example, consider the following extension method:
 
-```csharp
-public static class RateLimitingChatClientExtensions
-{
-    public static ChatClientBuilder UseRateLimiting(
-        this ChatClientBuilder builder, RateLimiter rateLimiter) =>
-        builder.Use(innerClient => new RateLimitingChatClient(innerClient, rateLimiter));
-}
-```
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.cs":::
 
 Such extensions can also query for relevant services from the DI container; the <xref:System.IServiceProvider> used by the pipeline is passed in as an optional parameter:
 
-```csharp
-public static class RateLimitingChatClientExtensions
-{
-    public static ChatClientBuilder UseRateLimiting(
-        this ChatClientBuilder builder, RateLimiter? rateLimiter = null) =>
-        builder.Use((innerClient, services) => 
-            new RateLimitingChatClient(
-                innerClient,
-                rateLimiter ?? services.GetRequiredService<RateLimiter>()));
-}
-```
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.OptionalOverload.cs":::
 
 The consumer can then easily use this in their pipeline, for example:
 
-```csharp
-var client = new SampleChatClient(new Uri("http://localhost"), "test")
-    .AsBuilder()
-    .UseDistributedCache()
-    .UseRateLimiting()
-    .UseOpenTelemetry()
-    .Build(services);
-```
+:::code language="csharp source="snippets/ai/ConsoleAI.ConsumeClientMiddleware/Program.cs" id="program":::
 
-The preceding extension methods demonstrate using a `Use` method on <xref:Microsoft.Extensions.AI.ChatClientBuilder>. The `ChatClientBuilder` also provides <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use*> overloads that make it easier to write such delegating handlers.
+This example demonstrates [hosted scenario](generic-host.md), where the consumer relies on [dependency injection](dependency-injection.md) to provide the `RateLimiter` instance. The preceding extension methods demonstrate using a `Use` method on <xref:Microsoft.Extensions.AI.ChatClientBuilder>. The `ChatClientBuilder` also provides <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use*> overloads that make it easier to write such delegating handlers.
 
 - <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(Microsoft.Extensions.AI.IChatClient)>
 - <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{Microsoft.Extensions.AI.IChatClient,Microsoft.Extensions.AI.IChatClient})>
@@ -413,59 +198,11 @@ The preceding extension methods demonstrate using a `Use` method on <xref:Micros
 
 For example, in the earlier `RateLimitingChatClient` example, the overrides of `CompleteAsync` and `CompleteStreamingAsync` only need to do work before and after delegating to the next client in the pipeline. To achieve the same thing without writing a custom class, you can use an overload of `Use` that accepts a delegate that's used for both `CompleteAsync` and `CompleteStreamingAsync`, reducing the boilerplate required:
 
-```csharp
-RateLimiter rateLimiter = new ConcurrencyLimiter(new()
-{
-    PermitLimit = 1, 
-    QueueLimit = int.MaxValue
-});
-
-var client = new SampleChatClient(new Uri("http://localhost"), "test")
-    .AsBuilder()
-    .UseDistributedCache()
-    .Use(static async (chatMessages, options, nextAsync, cancellationToken) =>
-    {
-        using var lease = await rateLimiter.AcquireAsync(permitCount: 1, cancellationToken)
-            .ConfigureAwait(false);
-
-        if (!lease.IsAcquired)
-        {
-            throw new InvalidOperationException("Unable to acquire lease.");
-        }
-
-        await nextAsync(chatMessages, options, cancellationToken);
-    })
-    .UseOpenTelemetry()
-    .Build();
-```
+:::code language="csharp" source="snippets/ai/ConsoleAI.UseExample/Program.cs":::
 
 The preceding overload internally uses an `AnonymousDelegatingChatClient`, which enables more complicated patterns with only a little additional code. For example, to achieve the same result but with the <xref:System.Threading.RateLimiting.RateLimiter> retrieved from DI:
 
-```csharp
-var client = new SampleChatClient(new Uri("http://localhost"), "test")
-    .AsBuilder()
-    .UseDistributedCache()
-    .Use(static (innerClient, services) =>
-    {
-        var rateLimiter = services.GetRequiredService<RateLimiter>();
-
-        return new AnonymousDelegatingChatClient(
-            innerClient, async (chatMessages, options, nextAsync, cancellationToken) =>
-        {
-            using var lease = await rateLimiter.AcquireAsync(permitCount: 1, cancellationToken)
-                .ConfigureAwait(false);
-
-            if (!lease.IsAcquired)
-            {
-                throw new InvalidOperationException("Unable to acquire lease.");
-            }
-
-            await nextAsync(chatMessages, options, cancellationToken);
-        });
-    })
-    .UseOpenTelemetry()
-    .Build();
-```
+:::code language="csharp" source="snippets/ai/ConsoleAI.UseExampleAlt/Program.cs":::
 
 For scenarios where the developer would like to specify delegating implementations of `CompleteAsync` and `CompleteStreamingAsync` inline, and where it's important to be able to write a different implementation for each in order to handle their unique return types specially, another overload of `Use` exists that accepts a delegate for each.
 
@@ -473,25 +210,12 @@ For scenarios where the developer would like to specify delegating implementatio
 
 <xref:Microsoft.Extensions.AI.IChatClient> implementations will typically be provided to an application via [dependency injection (DI)](dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` employs a builder that creates a pipeline containing a caching client (which will then use an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
-```csharp
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+::code language="csharp" source="snippets/ai/ConsoleAI.DependencyInjection/Program.cs":::
 
-// App Setup
-var builder = Host.CreateApplicationBuilder();
+The preceding example depends on the following NuGet packages:
 
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddChatClient(new SampleChatClient(new Uri("http://coolsite.ai"), "my-custom-model"))
-    .UseDistributedCache();
-
-var host = builder.Build();
-
-// Elsewhere in the app
-var chatClient = host.Services.GetRequiredService<IChatClient>();
-
-Console.WriteLine(await chatClient.CompleteAsync("What is AI?"));
-```
+- [📦 Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting)
+- [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory)
 
 What instance and configuration is injected can differ based on the current needs of the application, and multiple pipelines can be injected with different keys.
 
@@ -527,115 +251,23 @@ You can find actual concrete implementations in the following packages:
 
 The primary operation performed with an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> is embedding generation, which is accomplished with its <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2.GenerateAsync*> method.
 
-```csharp
-using Microsoft.Extensions.AI;
-
-IEmbeddingGenerator<string, Embedding<float>> generator =
-    new SampleEmbeddingGenerator(
-        new Uri("http://coolsite.ai"), "my-custom-model");
-
-foreach (var embedding in await generator.GenerateAsync(["What is AI?", "What is .NET?"]))
-{
-    Console.WriteLine(string.Join(", ", embedding.Vector.ToArray()));
-}
-```
+::code language="csharp" source="snippets/ai/ConsoleAI.CreateEmbeddings/Program.cs":::
 
 #### Custom `IEmbeddingGenerator` middleware
 
 As with `IChatClient`, `IEmbeddingGenerator` implementations can be layered. Just as `Microsoft.Extensions.AI` provides delegating implementations of `IChatClient` for caching and telemetry, it provides an implementation for `IEmbeddingGenerator` as well.
 
-```csharp
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.Caching.Distributed;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Options;
-using OpenTelemetry.Trace;
-
-// Configure OpenTelemetry exporter
-var sourceName = Guid.NewGuid().ToString();
-var tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
-    .AddSource(sourceName)
-    .AddConsoleExporter()
-    .Build();
-
-// Explore changing the order of the intermediate "Use" calls to see that impact
-// that has on what gets cached, traced, etc.
-var generator = new EmbeddingGeneratorBuilder<string, Embedding<float>>(
-        new SampleEmbeddingGenerator(new Uri("http://coolsite.ai"), "my-custom-model"))
-    .UseDistributedCache(
-        new MemoryDistributedCache(Options.Create(new MemoryDistributedCacheOptions())))
-    .UseOpenTelemetry(sourceName)
-    .Build();
-
-var embeddings = await generator.GenerateAsync(
-[
-    "What is AI?",
-    "What is .NET?",
-    "What is AI?"
-]);
-
-foreach (var embedding in embeddings)
-{
-    Console.WriteLine(string.Join(", ", embedding.Vector.ToArray()));
-}
-```
+:::code language="csharp" source="snippets/ai/ConsoleAI.CustomEmbeddingsMiddle/Program.cs":::
 
 The `IEmbeddingGenerator` enables building custom middleware that extends the functionality of an `IEmbeddingGenerator`. The <xref:Microsoft.Extensions.AI.DelegatingEmbeddingGenerator`2> class is an implementation of the `IEmbeddingGenerator<TInput, TEmbedding>` interface that serves as a base class for creating embedding generators that delegate their operations to another `IEmbeddingGenerator<TInput, TEmbedding>` instance. It allows for chaining multiple generators in any order, passing calls through to an underlying generator. The class provides default implementations for methods such as <xref:Microsoft.Extensions.AI.DelegatingEmbeddingGenerator`2.GenerateAsync*> and `Dispose`, which forward the calls to the inner generator instance, enabling flexible and modular embedding generation.
 
 The following is an example implementation of such a delegating embedding generator that rate limits embedding generation requests:
 
-```csharp
-using Microsoft.Extensions.AI;
-using System.Threading.RateLimiting;
-
-public class RateLimitingEmbeddingGenerator(
-    IEmbeddingGenerator<string, Embedding<float>> innerGenerator, RateLimiter rateLimiter) 
-        : DelegatingEmbeddingGenerator<string, Embedding<float>>(innerGenerator)
-{
-    public override async Task<GeneratedEmbeddings<Embedding<float>>> GenerateAsync(
-        IEnumerable<string> values,
-        EmbeddingGenerationOptions? options = null,
-        CancellationToken cancellationToken = default)
-    {
-        using var lease = await rateLimiter.AcquireAsync(permitCount: 1, cancellationToken)
-            .ConfigureAwait(false);
-
-        if (!lease.IsAcquired)
-        {
-            throw new InvalidOperationException("Unable to acquire lease.");
-        }
-
-        return await base.GenerateAsync(values, options, cancellationToken);
-    }
-
-    protected override void Dispose(bool disposing)
-    {
-        if (disposing)
-        {
-            rateLimiter.Dispose();
-        }
-
-        base.Dispose(disposing);
-    }
-}
-```
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingEmbeddingGenerator.cs":::
 
 This can then be layered around an arbitrary `IEmbeddingGenerator<string, Embedding<float>>` to rate limit all embedding generation operations performed.
 
-```csharp
-using Microsoft.Extensions.AI;
-using System.Threading.RateLimiting;
-
-IEmbeddingGenerator<string, Embedding<float>> generator =
-    new RateLimitingEmbeddingGenerator(
-        new SampleEmbeddingGenerator(new Uri("http://coolsite.ai"), "my-custom-model"),
-        new ConcurrencyLimiter(new() { PermitLimit = 1, QueueLimit = int.MaxValue }));
-
-foreach (var embedding in await generator.GenerateAsync(["What is AI?", "What is .NET?"]))
-{
-    Console.WriteLine(string.Join(", ", embedding.Vector.ToArray()));
-}
-```
+:::code language="csharp source="snippets/ai/ConsoleAI.ConsumeRateLimitingEmbedding/Program.cs" id="program":::
 
 In this way, the `RateLimitingEmbeddingGenerator` can be composed with other `IEmbeddingGenerator<string, Embedding<float>>` instances to provide rate limiting functionality.
 

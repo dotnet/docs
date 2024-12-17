@@ -86,7 +86,6 @@ These errors indicate that your code violates safety rules because an iterator r
 
 - You can't `yield return` from a `catch` or `finally` clause.
 - You can't `yield return` from a `try` block with a catch clause.
-- You can't `yield return` from inside a `lock` statement block. Doing so can cause deadlocks.
 - You can't `yield return` from an `unsafe` block. The context for an iterator creates a nested `safe` block within the enclosing `unsafe` block.
 - You can't use the `&` operator to take the address of a variable in an iterator method.
 

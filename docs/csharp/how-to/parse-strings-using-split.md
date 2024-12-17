@@ -17,6 +17,9 @@ The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
+> [!TIP]
+> You can use AI assistance to [split a string with GitHub Copilot](#use-github-copilot-to-split-a-string).
+
 ## String.Split examples
 
 The following code splits a common phrase into an array of strings for each word.
@@ -49,64 +52,17 @@ Consecutive instances of any separator produce the empty string in the output ar
 
 ## Use GitHub Copilot to split a string
 
-You can use GitHub Copilot in your IDE to generate code to split strings using `String.Split` in C#.
-
-If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code to split an input string into substrings based on one or more delimiters. Submit your question as a prompt in the Copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
-
-> [!NOTE]
-> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+You can use GitHub Copilot in your IDE to generate code to split strings using `String.Split` in C#. You can customize the prompt to use strings and delimiters per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 
-> Generate C# code to use Split.String split a string into substrings. Input string is "You win some. You lose some." Delimiters are space and period.  Provide example output.
-
-You can customize the prompt to use strings and delimiters per your requirements.
-
-You can use chat features, such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context), to set intent and get better answers with scoped context. For an existing file that's open in the IDE, you can prompt GitHub Copilot using inline chat with `/generate code to split string1 in #Filename by delimiter spaces`.
-
-The following output shows an example Copilot Chat response:
-
-```output
-Here is an example of how you can use the Split method in C# to split the string "You win some. You lose some." using space and period as delimiters:
-
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        string input = "You win some. You lose some.";
-        char[] delimiters = new char[] { ' ', '.' };
-        string[] substrings = input.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
-
-        foreach (string substring in substrings)
-        {
-            Console.WriteLine(substring);
-        }
-    }
-}
-
-**Example Output**
-You
-win
-some
-You
-lose
-some
+```copilot-prompt
+Generate C# code to use Split.String split a string into substrings. Input string is "You win some. You lose some." Delimiters are space and period.  Provide example output.
 ```
 
-When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
+GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-> [!NOTE]
-> Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
-
-:::image type="content" source="./media/parse-strings-using-split/github-copilot-chat-string-split.png" alt-text="Screenshot that shows using GitHub Copilot Chat in Visual Studio to split a string into substrings." lightbox="./media/parse-strings-using-split/github-copilot-chat-string-split.png":::
-
-For more information, see:
-
-* [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
-* [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
 
 ## See also
 

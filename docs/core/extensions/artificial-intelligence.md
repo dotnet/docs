@@ -3,7 +3,7 @@ title: Artificial Intelligence in .NET (Preview)
 description: Learn how to use the Microsoft.Extensions.AI library to integrate and interact with various AI services in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/16/2024
+ms.date: 12/17/2024
 ms.collection: ce-skilling-ai-copilot
 ---
 
@@ -38,6 +38,23 @@ The <xref:Microsoft.Extensions.AI.IChatClient> interface defines a client abstra
 
 > [!IMPORTANT]
 > For more usage examples and real-world scenarios, see [AI for .NET developers](../../ai/index.yml).
+
+**In this section**
+
+- [The `IChatClient` interface](#the-ichatclient-interface)
+  - [Request chat completion](#request-chat-completion)
+  - [Request chat completion with streaming](#request-chat-completion-with-streaming)
+  - [Tool calling](#tool-calling)
+  - [Cache responses](#cache-responses)
+  - [Use telemetry](#use-telemetry)
+  - [Provide options](#provide-options)
+  - [Functionality pipelines](#functionality-pipelines)
+  - [Custom `IChatClient` middleware](#custom-ichatclient-middleware)
+  - [Dependency injection](#dependency-injection)
+- [The `IEmbeddingGenerator` interface](#the-iembeddinggenerator-interface)
+  - [Sample implementation](#sample-implementation)
+  - [Create embeddings](#create-embeddings)
+  - [Custom `IEmbeddingGenerator` middleware](#custom-iembeddinggenerator-middleware)
 
 ### The `IChatClient` interface
 

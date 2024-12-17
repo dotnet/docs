@@ -60,7 +60,7 @@ The <xref:Microsoft.Extensions.AI.IChatClient> interface defines a client abstra
 
 The following sample implements `IChatClient` to show the general structure.
 
-:::code language="csharp" source="snippets/ai/ConsoleAI/SampleChatClient.cs":::
+:::code language="csharp" source="snippets/ai/AI.Shared/SampleChatClient.cs":::
 
 You can find other concrete implementations of `IChatClient` in the following NuGet packages:
 
@@ -130,7 +130,7 @@ The preceding code:
 
 If you're familiar with [Caching in .NET](caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides other such delegating `IChatClient` implementations. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a unique chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same prompt is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than needing to forward the request along the pipeline.
 
-:::code language="csharp" source="snippets/ai/ConsoleAI.CacheResponse/Program.cs":::
+:::code language="csharp" source="snippets/ai/ConsoleAI.CacheResponses/Program.cs":::
 
 The preceding example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory) NuGet package. For more information, see [Caching in .NET](caching.md).
 
@@ -188,7 +188,7 @@ Such extensions can also query for relevant services from the DI container; the 
 
 The consumer can then easily use this in their pipeline, for example:
 
-:::code language="csharp source="snippets/ai/ConsoleAI.ConsumeClientMiddleware/Program.cs" id="program":::
+:::code language="csharp" source="snippets/ai/ConsoleAI.ConsumeClientMiddleware/Program.cs" id="program":::
 
 This example demonstrates [hosted scenario](generic-host.md), where the consumer relies on [dependency injection](dependency-injection.md) to provide the `RateLimiter` instance. The preceding extension methods demonstrate using a `Use` method on <xref:Microsoft.Extensions.AI.ChatClientBuilder>. The `ChatClientBuilder` also provides <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use*> overloads that make it easier to write such delegating handlers.
 
@@ -231,7 +231,7 @@ The `IEmbeddingGenerator` interface defines a method to asynchronously generate 
 
 Consider the following sample implementation of an `IEmbeddingGenerator` to show the general structure but that just generates random embedding vectors.
 
-:::code language="csharp" source="snippets/ai/ConsoleAI/SampleEmbeddingGenerator.cs":::
+:::code language="csharp" source="snippets/ai/AI.Shared/SampleEmbeddingGenerator.cs":::
 
 The preceding code:
 
@@ -267,7 +267,7 @@ The following is an example implementation of such a delegating embedding genera
 
 This can then be layered around an arbitrary `IEmbeddingGenerator<string, Embedding<float>>` to rate limit all embedding generation operations performed.
 
-:::code language="csharp source="snippets/ai/ConsoleAI.ConsumeRateLimitingEmbedding/Program.cs" id="program":::
+:::code language="csharp" source="snippets/ai/ConsoleAI.ConsumeRateLimitingEmbedding/Program.cs":::
 
 In this way, the `RateLimitingEmbeddingGenerator` can be composed with other `IEmbeddingGenerator<string, Embedding<float>>` instances to provide rate limiting functionality.
 

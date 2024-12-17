@@ -116,7 +116,9 @@ You can use GitHub Copilot in your IDE to generate code that uses `System.Text.J
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-Generate code to use `System.Text.Json` to serialize an object to a JSON string. The object contains the following fields: FirstName (string), Lastname (string), Age (int). Provide example output.
+Generate code to use `System.Text.Json` to serialize an object to a JSON string.
+The object contains the following fields: FirstName (string), Lastname (string), Age (int).
+Provide example output.
 ```
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).

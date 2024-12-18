@@ -36,6 +36,8 @@ items:
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
                 href: core-libraries/9.0/biginteger-limit.md
+              - name: C# overload resolution prefers `params` span-type overloads
+                href: core-libraries/9.0/params-overloads.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
               - name: EnumConverter validates registered types to be enum
@@ -1304,6 +1306,8 @@ items:
                 href: core-libraries/9.0/biginteger-limit.md
               - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
                 href: core-libraries/9.0/binaryreader.md
+              - name: C# overload resolution prefers `params` span-type overloads
+                href: core-libraries/9.0/params-overloads.md
               - name: Creating type of array of System.Void not allowed
                 href: core-libraries/9.0/type-instance.md
               - name: EnumConverter validates registered types to be enum

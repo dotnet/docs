@@ -81,3 +81,4 @@ public struct Point3D
         y = Y;
     }
 }
+// </StructDeconstruction>

@@ -3,7 +3,7 @@ title: Rate limiting an HTTP handler in .NET
 description: Learn how to create a client-side HTTP handler that limits the number of requests, with the inbuilt rate limiter API from .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/13/2023
+ms.date: 12/16/2024
 ---
 
 # Rate limit an HTTP handler in .NET
@@ -161,12 +161,12 @@ You'll notice that the first logged entries are always the immediately returned 
 
 Note also that each URL's query string is unique: examine the `iteration` parameter to see that it's incremented by one for each request. This parameter helps to illustrate that the 429 responses aren't from the first requests, but rather from the requests that are made after the rate limit is reached. The 200 responses arrive later but these requests were made earlier&mdash;before the limit was reached.
 
-To have a better understanding of the various rate-limiting algorithms, try rewriting this code to accept a different `RateLimiter` implementation. In addition to the `TokenBucketRateLimiter` you could try:
+To have a better understanding of the various rate-limiting algorithms, try rewriting this code to accept a different <xref:System.Threading.RateLimiting.RateLimiter> implementation. In addition to the <xref:System.Threading.RateLimiting.TokenBucketRateLimiter> you could try:
 
-- `ConcurrencyLimiter`
-- `FixedWindowRateLimiter`
-- `PartitionedRateLimiter`
-- `SlidingWindowRateLimiter`
+- <xref:System.Threading.RateLimiting.ConcurrencyLimiter>
+- <xref:System.Threading.RateLimiting.FixedWindowRateLimiter>
+- <xref:System.Threading.RateLimiting.PartitionedRateLimiter>
+- <xref:System.Threading.RateLimiting.SlidingWindowRateLimiter>
 
 ## Summary
 

@@ -38,17 +38,17 @@ As you don't know to which group each flower belongs to, you choose the [unsuper
 
 1. Create a C# **Console Application** called "IrisFlowerClustering". Click the **Next** button.
 
-1. Choose .NET 6 as the framework to use. Click the **Create** button.
+1. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 1. Create a directory named *Data* in your project to store the data set and model files:
 
-    In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and hit Enter.
+    In **Solution Explorer**, right-click the project and select **Add** > **New Folder**. Type "Data" and select <kbd>Enter</kbd>.
 
 1. Install the **Microsoft.ML** NuGet package:
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML** and select **Install**. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ## Prepare the data
 
@@ -71,7 +71,7 @@ For the sake of the clustering example, this tutorial ignores the last column.
 Create classes for the input data and the predictions:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *IrisData.cs*. Then, select the **Add** button.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *IrisData.cs*. Then, select **Add**.
 1. Add the following `using` directive to the new file:
 
    [!code-csharp[Add necessary usings](./snippets/iris-clustering/csharp/IrisData.cs#Usings)]
@@ -160,7 +160,7 @@ The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience 
 Create the `TestIrisData` class to house test data instances:
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *TestIrisData.cs*. Then, select the **Add** button.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *TestIrisData.cs*. Then, select **Add**.
 1. Modify the class to be static like in the following example:
 
    [!code-csharp[Make class static](./snippets/iris-clustering/csharp/TestIrisData.cs#Static)]
@@ -195,6 +195,6 @@ In this tutorial, you learned how to:
 > - Train the model
 > - Use the model for predictions
 
-Check out our GitHub repository to continue learning and find more samples.
+Check out the dotnet/machinelearning GitHub repository to continue learning and find more samples.
 > [!div class="nextstepaction"]
 > [dotnet/machinelearning GitHub repository](https://github.com/dotnet/machinelearning/)

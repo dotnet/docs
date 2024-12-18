@@ -29,9 +29,9 @@ In this tutorial, you learn how to:
 
 You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) repository.
 
-## Pre-requisites
+## Prerequisites
 
-For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
+For a list of prerequisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 
 ## Create a Razor Pages application
 
@@ -39,8 +39,8 @@ Create an **ASP.NET Core Razor Pages Application**.
 
 1. In Visual Studio open the **Create a new project** dialog.
 1. In the "Create a new project" dialog, select the **ASP.NET Core Web App** project template.
-1. In the **Name** text box, type "SentimentRazor" and select the **Next** button.
-1. In the Additional information dialog, leave all the defaults as is and select the **Create** button.
+1. In the **Name** text box, type "SentimentRazor" and select **Next**.
+1. In the Additional information dialog, leave all the defaults as is and select **Create**.
 
 ## Prepare and understand the data
 
@@ -128,7 +128,7 @@ To make a single prediction, you have to create a <xref:Microsoft.ML.PredictionE
     1. In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source.
     1. Select the **Browse** tab and search for **Microsoft.Extensions.ML**.
-    1. Select the package in the list, and select the **Install** button.
+    1. Select the package in the list, and select **Install**.
     1. Select the **OK** button on the **Preview Changes** dialog
     1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 

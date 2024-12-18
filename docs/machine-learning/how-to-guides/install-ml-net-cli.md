@@ -13,11 +13,11 @@ Learn how to install the ML.NET CLI (command-line interface) on Windows, Mac, or
 The ML.NET CLI generates good quality ML.NET models and source code using automated machine learning (AutoML) and a training dataset.
 
 > [!NOTE]
-> This article refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
+> This article refers to ML.NET CLI and ML.NET AutoML, which are currently in preview, and material is subject to change.
 
-## Pre-requisites
+## Prerequisites
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 - (Optional) [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
@@ -114,7 +114,7 @@ You should see the help for available commands for the mlnet tool such as the 'c
 
 ## Install a specific release version
 
-If you're trying to install a pre-release version or a specific version of the tool, you can specify the OS, processor architecture, and [framework](../../standard/frameworks.md) using the following format:
+If you're trying to install a prerelease version or a specific version of the tool, you can specify the OS, processor architecture, and [framework](../../standard/frameworks.md) using the following format:
 
 ```dotnetcli
 dotnet tool install -g mlnet-<OS>-<ARCH> --framework <FRAMEWORK>

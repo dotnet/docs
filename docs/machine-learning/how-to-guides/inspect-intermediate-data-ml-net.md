@@ -1,6 +1,6 @@
 ---
 title: Inspect intermediate data during ML.NET processing
-description: Learn how to inspect intermediate data during ML.NET machine learning pipeline loading, processing and model training steps in ML.NET.
+description: Learn how to inspect intermediate data during ML.NET machine learning pipeline loading, processing, and model training steps in ML.NET.
 ms.date: 10/05/2021
 author: luisquintanilla
 ms.author: luquinta
@@ -13,7 +13,7 @@ ms.topic: how-to
 
 Learn how to inspect intermediate data during loading, processing, and model training steps in ML.NET. Intermediate data is the output of each stage in the machine learning pipeline.
 
-Intermediate data like the one represented below which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView) can be inspected in various ways in ML.NET.
+Consider the following housing data:
 
 ```csharp
 HousingData[] housingData = new HousingData[]
@@ -57,11 +57,13 @@ HousingData[] housingData = new HousingData[]
 };
 ```
 
+In ML.NET, you can inspect intermediate data like this that's loaded into an [`IDataView`](xref:Microsoft.ML.IDataView) in various ways, as described in the following sections.
+
 ## Convert IDataView to IEnumerable
 
-One of the quickest ways to inspect an [`IDataView`](xref:Microsoft.ML.IDataView) is to convert it to an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601). To convert an [`IDataView`](xref:Microsoft.ML.IDataView) to [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) use the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) method.
+One of the quickest ways to inspect an [`IDataView`](xref:Microsoft.ML.IDataView) is to convert it to an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601). To do this conversion, use the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) method.
 
-To optimize performance, set `reuseRowObject` to `true`. Doing so will lazily populate the same object with the data of the current row as it's being evaluated as opposed to creating a new object for each row in the dataset.
+To optimize performance, set `reuseRowObject` to `true`. Doing so lazily populates the same object with the data of the current row as it's being evaluated as opposed to creating a new object for each row in the dataset.
 
 ```csharp
 // Create an IEnumerable of HousingData objects from IDataView
@@ -76,14 +78,14 @@ foreach (HousingData row in housingDataEnumerable)
 }
 ```
 
-## Accessing specific indices with IEnumerable
+## Access specific indices with IEnumerable
 
 If you only need access to a portion of the data or specific indices, use [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) and set the `reuseRowObject` parameter value to `false` so a new object is created for each of the requested rows in the dataset. Then, convert the [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) to an array or list.
 
 > [!WARNING]
-> Converting the result of [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) to an array or list will load all the requested [`IDataView`](xref:Microsoft.ML.IDataView) rows into memory which may affect performance.
+> Converting the result of [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable%2A) to an array or list loads all the requested [`IDataView`](xref:Microsoft.ML.IDataView) rows into memory, which might affect performance.
 
-Once the collection has been created, you can perform operations on the data. The code snippet below takes the first three rows in the dataset and calculates the average current price.
+Once the collection has been created, you can perform operations on the data. The following code snippet takes the first three rows in the dataset and calculates the average current price.
 
 ```csharp
 // Create an Array of HousingData objects from IDataView
@@ -112,7 +114,7 @@ IEnumerable<float> sizeColumn = data.GetColumn<float>("Size").ToList();
 [`IDataView`](xref:Microsoft.ML.IDataView) is lazily evaluated. To iterate over the rows of an [`IDataView`](xref:Microsoft.ML.IDataView) without converting to an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) as demonstrated in previous sections of this document, create a [`DataViewRowCursor`](xref:Microsoft.ML.DataViewRowCursor) by using the [`GetRowCursor`](xref:Microsoft.ML.IDataView.GetRowCursor%2A) method and passing in the [DataViewSchema](xref:Microsoft.ML.DataViewSchema) of your [`IDataView`](xref:Microsoft.ML.IDataView) as a parameter. Then, to iterate over rows, use the [`MoveNext`](xref:Microsoft.ML.DataViewRowCursor.MoveNext%2A) cursor method along with [`ValueGetter`](xref:Microsoft.ML.ValueGetter%601) delegates to extract the respective values from each of the columns.
 
 > [!IMPORTANT]
-> For performance purposes, vectors in ML.NET use [`VBuffer`](xref:Microsoft.ML.Data.VBuffer%601) instead of native collection types (that is, `Vector`, `float[]`).
+> For performance purposes, vectors in ML.NET use [`VBuffer`](xref:Microsoft.ML.Data.VBuffer%601) instead of native collection types (that is, `Vector` and `float[]`).
 
 ```csharp
 // Get DataViewSchema of IDataView
@@ -142,15 +144,15 @@ using (DataViewRowCursor cursor = data.GetRowCursor(columns))
 }
 ```
 
-## Preview result of pre-processing or training on a subset of the data
+## Preview result of preprocessing or training on a subset of the data
 
 > [!WARNING]
 > Do not use `Preview` in production code because it is intended for debugging and may reduce performance.
 
-The model building process is experimental and iterative. To preview what data would look like after pre-processing or training a machine learning model on a subset of the data, use the [`Preview`](xref:Microsoft.ML.DebuggerExtensions.Preview%2A) method which returns a [`DataDebuggerPreview`](xref:Microsoft.ML.Data.DataDebuggerPreview). The result is an object with `ColumnView` and `RowView` properties which are both an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) and contain the values in a particular column or row. Specify the number of rows to apply the transformation to with the `maxRows` parameter.
+The model building process is experimental and iterative. To preview what data would look like after preprocessing or training a machine learning model on a subset of the data, use the [`Preview`](xref:Microsoft.ML.DebuggerExtensions.Preview%2A) method, which returns a [`DataDebuggerPreview`](xref:Microsoft.ML.Data.DataDebuggerPreview). The result is an object with `ColumnView` and `RowView` properties that are both an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) and contain the values in a particular column or row. Specify the number of rows to apply the transformation to with the `maxRows` parameter.
 
 ![Data Debugger Preview Object](./media/inspect-intermediate-data-ml-net/data-debugger-preview-01.png)
 
-The result of inspecting an [`IDataView`](xref:Microsoft.ML.IDataView) would look similar to the following:
+The result of inspecting an [`IDataView`](xref:Microsoft.ML.IDataView) looks similar to the following image:
 
 ![Data Debugger Preview Row View](./media/inspect-intermediate-data-ml-net/data-debugger-preview-02.png)

@@ -125,4 +125,3 @@ GitHub Copilot is powered by AI, so surprises and mistakes are possible. For mor
 
 Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
 
-

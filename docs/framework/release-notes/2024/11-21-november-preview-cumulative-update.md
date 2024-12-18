@@ -37,7 +37,7 @@ The following table outlines the updates in this release.
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5048163](https://support.microsoft.com/kb/5048163) |
 | **Windows 10, version 22H2** | **[5048292](https://support.microsoft.com/kb/5048292)** |
-| .NET Framework 3.5, 4.8 | [5048160](https://support.microsoft.com/kb/50481606) |
+| .NET Framework 3.5, 4.8 | [5048160](https://support.microsoft.com/kb/5048160) |
 | .NET Framework 3.5, 4.8.1 | [5048161](https://support.microsoft.com/kb/5048161) |
 
 The operating system row lists a KB that's used for update offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework update(s) that will be installed. Updates for individual .NET Framework versions will be installed based on the version of .NET Framework that is already present on the device. Because of this, the operating system KB is not expected to be listed as installed updates on the device. The expected update to be installed are the .NET Framework-specific version updates listed in the previous table.

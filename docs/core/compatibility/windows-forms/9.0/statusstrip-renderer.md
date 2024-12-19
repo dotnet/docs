@@ -25,7 +25,7 @@ This change is a [*behavioral change*](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The previous default behavior didn't meet accessibility standards.
+The previous default behavior didn't meet accessibility standards. The focus indicator over the `ToolStripSplitButton` was difficult to see due to the lack of contrast.
 
 ## Recommended action
 

@@ -1,6 +1,6 @@
-id:
-name: GitOps.PullRequestIssueManagement
-description: GitOps.PullRequestIssueManagement primitive
+id: label.issues
+name: GitOps.IssueManagement
+description: Management logic around issues
 owner:
 resource: repository
 disabled: false
@@ -24,6 +24,56 @@ configuration:
                         label: okr-quality
 
         eventResponderTasks:
+            - description: Label dependabot issues
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Opened
+                - or:
+                  - isActivitySender:
+                      user: dependabot
+                  - isActivitySender:
+                      user: dependabot[bot]
+              then:
+                - addLabel:
+                   label: dependencies
+
+            - description: Reopen issue so remove "won't fix" label
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Reopened
+                - hasLabel:
+                    label: "won't fix"
+                  
+              then:
+                - removeLabel:
+                   label: "won't fix"
+
+            - description: Remove "in-progress" label when issue closed
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Closed
+                - hasLabel:
+                    label: 'in-progress'
+                  
+              then:
+                - removeLabel:
+                   label: 'in-progress'
+
+            - description: Issue closed by author, add "resolved-by-customer" label
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Closed
+                - isActivitySender:
+                    issueAuthor: true
+
+              then:
+                - addLabel:
+                   label: resolved-by-customer
+
             - description: Add in-pr label to issues
               if:
                   - payloadType: Pull_Request

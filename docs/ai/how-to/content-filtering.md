@@ -37,7 +37,7 @@ To use the sample code in this article, you need to create and assign a content 
 
 1. Create a simple chat completion flow in your .NET app using the `AzureOpenAiClient`. Replace the `YOUR_MODEL_ENDPOINT` and `YOUR_MODEL_DEPLOYMENT_NAME` values with your own.
 
-    :::code language="csharp" source="./snippets/content-filtering/program.cs" id="chatCompletionFlow":::
+    :::code language="csharp" source="./snippets/content-filtering/program.cs" :::
 
 1. Replace the `YOUR_PROMPT` placeholder with your own message and run the app to experiment with content filtering results. If you enter a prompt the AI considers unsafe, the Azure OpenAI returns a `400 Bad Request` code. The app prints a message in the console similar to the following:
 

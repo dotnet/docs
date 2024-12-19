@@ -43,7 +43,6 @@ configuration:
                       label: 'needs-more-info'
               then:
                 - addLabel: ':watch: Not Triaged'
-              triggerOnOwnActions: false
 
             - description: >-
                 Remove "not triaged" label when:
@@ -64,7 +63,6 @@ configuration:
                       label: ':world_map: reQUEST'
               then:
                 - removeLabel: ':watch: Not Triaged'
-              triggerOnOwnActions: false
 
             - description: >-
                 When the label "mapQUEST" is added to an issue
@@ -78,7 +76,6 @@ configuration:
                     label: ':world_map: mapQUEST'
               then:
                 - removeLabel: ':world_map: mapQUEST'
-              triggerOnOwnActions: false
 
             - description: Label dependabot issues
               if:

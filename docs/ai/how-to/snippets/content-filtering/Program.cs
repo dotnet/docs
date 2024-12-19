@@ -1,38 +1,19 @@
-﻿// <chatCompletionFlow>
-using Azure;
-using Azure.AI.OpenAI;
+﻿using Azure.AI.OpenAI;
+using Azure.Identity;
+using Microsoft.Extensions.AI;
 
-string endpoint = "YOUR_OPENAI_ENDPOINT";
-string key = "YOUR_OPENAI_KEY";
+IChatClient client =
+    new AzureOpenAIClient(
+        new Uri("YOUR_MODEL_ENDPOINT"),
+        new DefaultAzureCredential()).AsChatClient("YOUR_MODEL_DEPLOYMENT_NAME");
 
-OpenAIClient client = new(new Uri(endpoint), new AzureKeyCredential(key));
-
-var chatCompletionsOptions = new ChatCompletionsOptions()
+try
 {
-    DeploymentName = "YOUR_DEPLOYMENT_NAME",
-    Messages =
-    {
-        new ChatRequestSystemMessage("You are a helpful assistant."),
-        new ChatRequestUserMessage("YOUR_PROMPT")
-    }
-};
+    ChatCompletion completion = await client.CompleteAsync("YOUR_PROMPT");
 
-Response<ChatCompletions> response = client.GetChatCompletions(chatCompletionsOptions);
-Console.WriteLine(response.Value.Choices[0].Message.Content);
-Console.WriteLine();
-// </chatCompletionFlow>
-
-// <printContentFilteringResult>
-foreach (var promptFilterResult in response.Value.PromptFilterResults)
+    Console.WriteLine(completion.Message);
+} 
+catch (Exception e) 
 {
-    var results = promptFilterResult.ContentFilterResults;
-    Console.WriteLine(@$"Hate category is filtered: 
-        {results.Hate.Filtered} with {results.Hate.Severity} severity.");
-    Console.WriteLine(@$"Self-harm category is filtered: 
-        {results.SelfHarm.Filtered} with {results.SelfHarm.Severity} severity.");
-    Console.WriteLine(@$"Sexual category is filtered: 
-        {results.Sexual.Filtered} with {results.Sexual.Severity} severity.");
-    Console.WriteLine(@$"Violence category is filtered: 
-        {results.Violence.Filtered} with {results.Violence.Severity} severity.");
+    Console.WriteLine(e.Message);
 }
-// </printContentFilteringResult>

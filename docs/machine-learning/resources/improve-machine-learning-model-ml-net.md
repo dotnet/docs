@@ -43,6 +43,6 @@ Training machine learning models is an iterative and exploratory process. For ex
 
 ## Choose a different algorithm
 
-Machine learning tasks like regression and classification contain various algorithm implementations. It may be the case that the problem you are trying to solve and the way your data is structured does not fit well into the current algorithm. In such case, consider using a different algorithm for your task to see if it learns better from your data.
+Machine learning tasks like regression and classification contain various algorithm implementations. It might be the case that the problem you're trying to solve and the way your data is structured does not fit well into the current algorithm. In such case, consider using a different algorithm for your task to see if it learns better from your data.
 
 The following link provides more [guidance on which algorithm to choose](../how-to-choose-an-ml-net-algorithm.md).

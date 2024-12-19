@@ -85,7 +85,7 @@ To build the ML.NET pipeline, you'll need the names of the input and output colu
 
 ## Create a C# console project
 
-1. In Visual Studio, create a C# Console Application called "StopSignDetection". Choose .NET 6 as the target framework.
+1. In Visual Studio, create a C# Console Application called "StopSignDetection". Choose .NET 8 as the target framework.
 
 1. Install the following NuGet packages for the project:
 

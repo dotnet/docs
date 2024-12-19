@@ -33,7 +33,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Create a C# **Console Application** called "SentimentAnalysis". Click the **Next** button.
 
-2. Choose .NET 6 as the framework to use. Click the **Create** button.
+2. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 3. Create a directory named *Data* in your project to save your data set files.
 
@@ -41,7 +41,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the license terms for the package you choose.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select **Install**. Proceed with the installation by agreeing to the license terms for the package you choose.
 
 ## Prepare your data
 
@@ -68,7 +68,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
    - In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-   - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
+   - In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select **Add**.
 
 1. The *SentimentData.cs* file opens in the code editor. Add the following `using` directive to the top of *SentimentData.cs*:
 

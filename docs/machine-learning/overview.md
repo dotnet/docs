@@ -6,7 +6,7 @@ ms.date: 04/15/2024
 
 # Overview of ML.NET
 
-ML.NET is an open-source, cross-platform machine learning framework for .NET developers that enables integration of custom machine learning models into .NET applications. It encompasses an [API](how-does-mldotnet-work.md), which consists of different NuGet packages, a Visual Studio extension called [Model Builder](automate-training-with-model-builder.md), and a [command-line interface](automate-training-with-cli.md) that's installed as a .NET tool.
+ML.NET is an open-source, cross-platform machine learning framework for .NET developers that enables integration of custom machine learning models into .NET applications. It encompasses an [API](mldotnet-api.md), which consists of different NuGet packages, a Visual Studio extension called [Model Builder](automate-training-with-model-builder.md), and a [command-line interface](automate-training-with-cli.md) that's installed as a .NET tool.
 
 ML.NET packages:
 

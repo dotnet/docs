@@ -5,7 +5,7 @@ ms.date: 12/17/2024
 ---
 # Discard - A `_` acts as a placeholder for a variable
 
-The `_` character services as a *discard*, which is a placeholder for an unused variable.
+The `_` character serves as a *discard*, which is a placeholder for an unused variable.
 
 There are two uses for the *discard* token:
 

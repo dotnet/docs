@@ -9,11 +9,11 @@ The `_` character services as a *discard*, which is a placeholder for an unused 
 
 There are two uses for the *discard* token:
 
-1. To declare a variable with a storage location that won't ever be read. You may need to declare a variable that you don't intend to read or otherwise use its value:
+1. To declare an unused variable. A discard can't be read or accessed.
    - Unused `out` arguments: `var r = M(out int _, out var _, out _);`
    - Unused lambda expression parameters: `Action<int> _ => WriteMessage();`
    - Unused deconstruction arguments: `(int _, var answer) = M();`
-1. In a [discard pattern](../operators/patterns.md#discard-pattern) to match any expression. You'll usually add a `_` pattern to satisfy exhaustiveness requirements.
+1. To match any expression in a [discard pattern](../operators/patterns.md#discard-pattern). You can add a `_` pattern to satisfy exhaustiveness requirements.
 
 The `_` token is a valid identifier in C#. The `_` token is interpreted as a discard only when no valid identifier named `_` is found in scope.
 

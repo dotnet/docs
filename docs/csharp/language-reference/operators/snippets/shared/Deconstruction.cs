@@ -23,6 +23,10 @@ public class Deconstruction
         var (x2, _, _) = tuple2;
         // </TupleDeconstructionWithDiscard>
 
+        // <AllDiscards>
+        var (_, _, _) = tuple2;
+        // </AllDiscards>
+
         // <RecordDeconstructionUsage>
         var house = new House(1000, "123 Coder St.")
         {

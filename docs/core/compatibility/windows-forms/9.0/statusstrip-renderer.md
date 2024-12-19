@@ -17,7 +17,7 @@ Previously, the `StatusStrip`'s `RenderMode` property was set to <xref:System.Wi
 
 ## New behavior
 
-<xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType> uses the default renderer. Minor changes to the appearance of the `StatusStrip` may be observed.
+<xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType> uses the default renderer. You might observe minor changes to the appearance of the `StatusStrip`.
 
 ## Change category
 

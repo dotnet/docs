@@ -3,7 +3,7 @@ title: "How Embeddings Extend Your AI Model's Reach"
 description: "Learn how embeddings extend the limits and capabilities of AI models in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 12/17/2024
+ms.date: 12/19/2024
 
 #customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more semantic context and better outcomes for my AI apps.
 

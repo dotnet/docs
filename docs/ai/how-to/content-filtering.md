@@ -5,7 +5,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
 ms.topic: how-to
-ms.date: 12/17/2024
+ms.date: 12/19/2024
 
 #customer intent: As a .NET developer, I want to manage OpenAI Content Filtering in a .NET app
 

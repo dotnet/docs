@@ -3,7 +3,7 @@ title: "Understanding tokens"
 description: "Understand how large language models (LLMs) use tokens to analyze semantic relationships and generate natural language outputs"
 author: haywoodsloan
 ms.topic: concept-article
-ms.date: 05/14/2024
+ms.date: 12/19/2024
 
 #customer intent: As a .NET developer, I want understand how large language models (LLMs) use tokens so I can add semantic analysis and text generation capabilities to my .NET projects.
 
@@ -11,7 +11,7 @@ ms.date: 05/14/2024
 
 # Understand tokens
 
-Tokens are words, character sets, or combinations of words and punctuation that are used by large language models (LLMs) to decompose text into. Tokenization is the first step in training. The LLM analyzes the semantic relationships between tokens, such as how commonly they're used together or whether they're used in similar contexts. After training, the LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
+Tokens are words, character sets, or combinations of words and punctuation that are used by large language models (LLMs) to decompose text. Tokenization is the first step in training. The LLM analyzes the semantic relationships between tokens, such as how commonly they're used together or whether they're used in similar contexts. After training, the LLM uses those patterns and relationships to generate a sequence of output tokens based on the input sequence.
 
 ## Turning text into tokens
 
@@ -89,11 +89,7 @@ Output generation is an iterative operation. The model appends the predicted tok
 
 ### Token limits
 
-LLMs have limitations regarding the maximum number of tokens that can be used as input or generated as output. This limitation often causes the input and output tokens to be combined into a maximum context window.
-
-For example, GPT-4 supports up to 8,192 tokens of context. The combined size of the input and output tokens can't exceed 8,192.
-
-Taken together, a model's token limit and tokenization method determine the maximum length of text that can be provided as input or generated as output.
+LLMs have limitations regarding the maximum number of tokens that can be used as input or generated as output. This limitation often causes the input and output tokens to be combined into a maximum context window.Taken together, a model's token limit and tokenization method determine the maximum length of text that can be provided as input or generated as output.
 
 For example, consider a model that has a maximum context window of 100 tokens. The model processes our example sentences as input text:
 

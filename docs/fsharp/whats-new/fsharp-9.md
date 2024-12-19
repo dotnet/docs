@@ -15,7 +15,7 @@ F# 9 is available in .NET 9. You can download the latest .NET SDK from the [.NET
 
 Although F# is designed to avoid `null`, it can creep in when interfacing with .NET libraries written in C#. F# now provides a type-safe way to deal with reference types that can have `null` as a valid value.
 
-For more details, watch out for an [upcoming blog post about this feature](https://devblogs.microsoft.com/dotnet/tag/f/).
+For more details, see the [Nullable Reference Types in F# 9](https://devblogs.microsoft.com/dotnet/nullable-reference-types-in-fsharp-9/) blog post.
 
 Here are some examples:
 

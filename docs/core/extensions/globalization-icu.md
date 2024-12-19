@@ -330,7 +330,7 @@ On Windows, .NET follow the following steps to initialize globalization:
 
 - Check whether [Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. When this mode is active, .NET bypasses loading the ICU library and avoids using NLS APIs. Instead, it relies on built-in invariant culture data, ensuring that behavior remains fully independent of the operating system and the ICU library.
 
-- Check whether [NLS mode](#use-nls-instead-of-icu) is enabled. If enabled, .NET will skip loading the ICU library and instead rely on Windows [NLS](https://learn.microsoft.com/windows/win32/intl/national-language-support) APIs for globalization support.
+- Check whether [NLS mode](#use-nls-instead-of-icu) is enabled. If enabled, .NET will skip loading the ICU library and instead rely on Windows [NLS](/windows/win32/intl/national-language-support) APIs for globalization support.
 
 - Check whether the [app-local ICU](#app-local-icu) feature is enabled. If it is, .NET will attempt to load the ICU library from the application directory by appending the specified version to the library names. For instance, if the version is 72.1, .NET will first try to load `icuuc72.dll`, `icuin72.dll`, and `icudt72.dll`. If these libraries cannot be loaded, it will then attempt to load `icuuc72.1.dll`, `icuin72.1.dll`, and `icudt72.1.dll`. If none of the libraries are found, the process will terminate with an error message such as: `Failed to load app-local ICU: {library name}`.
 

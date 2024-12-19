@@ -42,3 +42,16 @@ configuration:
                   label: code-of-conduct
             then:
               - closeIssue
+
+          - description: Close learn template issues with empty descriptions. (spam)
+            if:
+              - payloadType: Issues
+              - bodyContains:
+                  pattern: '### Description[\n\r]+\[Enter feedback here\][\n\r]+###'
+                  isRegex: true
+            then:
+              - addLabel: 'needs-more-info'
+              - removeLabel: ':watch: Not Triaged'
+              - closeIssue
+              
+            triggerOnOwnActions: false

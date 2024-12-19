@@ -6,6 +6,7 @@ ms.date: 11/21/2024
 # November 2024 cumulative update preview
 
 _Released Novemeber 21, 2024_
+_*Revised: December 18th, 2024 to updated the quality and reliability improvement.  If you have already installed this update, no action is needed.
 
 ## Summary of what's new in this release
 
@@ -20,7 +21,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 #### CLR
 
-Addresses an issue where, in rare cases, an infinite loop could occur when a thread enters CLR for the first time. (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Address crashes that can occur due to certain interactions between multi-module assembly native image usage and OS code integrity enforcement policy updates. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 ## Known issues in this release
 

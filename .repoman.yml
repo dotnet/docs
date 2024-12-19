@@ -1,4 +1,4 @@
-revision: 6
+revision: 7
 schema-version: 5
 owner-ms-alias: adegeo
 
@@ -14,81 +14,7 @@ config:
 
 issues:
 
-  unlabeled: "labeled"
-  
-  labeled:
-
-    # Temporary label to mark issues as updated for Quest. The label is instantly removed
-    - check:
-        - type: query
-          value: "length(Issue.Labels[?Name == ':world_map: mapQUEST']) != `0`"
-      pass:
-        - labels-remove: [":world_map: mapQUEST"]
-
-    # Handle issues with /svc /subsvc labels from label bot
-    - check:
-        - type: query
-          value: "length(Issue.Labels[?contains(Name, '/svc') || contains(Name, '/subsvc')]) != `0`"
-
-      # If the issue has a /svc or /subsvc label, it must be categorized otherwise it's considered untriaged
-      pass:
-        - check:
-          - type: query
-            value: "length(Issue.Labels[?Name == ':pushpin: seQUESTered' || Name == ':world_map: reQUEST' || Name == 'training-module' || Name == 'doc-enhancement' || Name == 'product-question' || Name == 'in-progress' || Name == 'test-issue' || Name == 'kudos' || Name == 'loc' || Name == 'doc-bug' || Name == 'product-feedback' || Name == 'code-of-conduct' || Name == 'support-request' || Name == 'duplicate' || Name == 'resolved-by-customer' || Name == 'docs-experience' || Name == 'doc-provided' || Name == 'doc-idea' || Name == 'needs-more-info']) != `0`"
-          pass:
-            - labels-remove: [":watch: Not Triaged"]
-          fail:
-            - labels-add: [":watch: Not Triaged"]
-
-      # Not an doc issue specifically
-      fail:
-
-        # If the issue is open, then we'll allow some further processing on it. If it's closed, ignore it and let the user do what they want.
-        - check:
-          - type: query
-            value: "Issue.State.StringValue == 'open'"
-
-          pass:
-            - check:
-              - type: query
-                value: "length(Issue.Labels[?Name == ':pushpin: seQUESTered' || Name == ':world_map: reQUEST' || Name == 'training-module' || Name == 'video-content'] || Name == 'test-issue') != `0`"
-              pass:
-                - labels-remove: [":watch: Not Triaged"]
-              fail:
-                - labels-add: [":watch: Not Triaged"]
-
-    # Checks for binary/source incompatible checkboxes and adds a label
-    - check:
-        - type: query
-          value: "contains(InstanceData.IssuePrBody, '- [x] **Binary incompatible**') == `true` || contains(InstanceData.IssuePrBody, '- [X] **Binary incompatible**') == `true`"
-      pass:
-        - labels-add: ["binary incompatible"]
-
-    - check:
-        - type: query
-          value: "contains(InstanceData.IssuePrBody, '- [x] **Source incompatible**') == `true` || contains(InstanceData.IssuePrBody, '- [X] **Source incompatible**') == `true`"
-      pass:
-        - labels-add: ["source incompatible"]
-
   opened:
-    # New issue opened, add Not Triaged  
-    - labels-add: [":watch: Not Triaged"]
-
-    # Dependabot opened issue, label it
-    - check:
-        - type: query
-          value: "Issue.User.Login == 'dependabot'"
-      pass:
-        - labels-add: ["dependencies"]
-
-    # Try to detect an empty issue
-    - check:
-        - type: comment-body
-          value: "### Description[\\n\\r]+\\[Enter feedback here\\][\\n\\r]+###"
-      pass:
-        - labels-add: ["needs-more-info"]
-        - labels-remove: [":watch: Not Triaged"]
-        - close
 
     # Add links to related issues if it's a doc issue
     - check:
@@ -98,23 +24,10 @@ issues:
       pass:
         - link-related-issues
 
-  reopened:
-
-    # Remove won't fix label
-    - labels-remove: ["won't fix"]
-
-  closed:
-
-    # Issue closed, remove in-progress and not triaged labels
-    - labels-remove: ["in-progress", ":watch: Not Triaged"]
-
-    # Check if the issue was closed by the user who opened it
     - check:
-        - type: query
-          value: "Issue.User.Id == EventPayload.sender.id"
+        - type: metadata-exists
       pass:
-        - labels-add: ["resolved-by-customer"]
-        - labels-remove: [":watch: Not Triaged"]
+        - svc_subsvc_labels: true
 
 projects_v2_item:
 
@@ -410,16 +323,3 @@ pull_request:
             - path: "(?i).*docs\/visual-basic\/misc.*"
               run:
                 - labels-add: ["dotnet-visualbasic/svc", "errors-warnings/subsvc"]
-
-issue_comment:
-
-  created:
-
-    # someone creates a comment with #please-review in it, add changes-addressed label
-    - check:
-        - type: query
-          value: "Issue.State.StringValue == 'open' && Issue.User.Id == Comment.User.Id"
-        - type: comment-body
-          value: ^#please-review$
-      pass:
-        - labels-add: ["changes-addressed"]

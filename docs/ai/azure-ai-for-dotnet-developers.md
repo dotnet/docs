@@ -1,7 +1,7 @@
 ---
 title: Develop .NET apps that use Azure AI services
 description: This article provides an organized list of resources about Azure AI scenarios for .NET developers, including documentation and code samples.
-ms.date: 05/17/2024
+ms.date: 12/19/2024
 ms.topic: overview
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---

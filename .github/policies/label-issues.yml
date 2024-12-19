@@ -38,7 +38,7 @@ configuration:
                 - addLabel:
                    label: dependencies
 
-            - description: Reopen issue so remove "won't fix" label
+            - description: Remove "won't fix" label when issue is reopened
               if:
                 - payloadType: Issues
                 - isAction: 
@@ -62,7 +62,7 @@ configuration:
                 - removeLabel:
                    label: 'in-progress'
 
-            - description: Issue closed by author, add "resolved-by-customer" label
+            - description: Add "resolved-by-customer" label when issue closed by author. 
               if:
                 - payloadType: Issues
                 - isAction: 

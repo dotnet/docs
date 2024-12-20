@@ -16,7 +16,7 @@ This example demonstrates how to create multicast delegates. A useful property o
   
 ## Example  
 
- [!code-csharp[csProgGuideDelegates#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#11)]  
+ [!code-csharp[csProgGuideDelegates#11](./snippets/Delegates.cs#11)]  
   
 ## See also
 

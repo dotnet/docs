@@ -11,7 +11,7 @@ ms.assetid: 98fa8c61-66b6-4146-986c-3236c4045733
 
 A [delegate](../../language-reference/builtin-types/reference-types.md) can be associated with a named method. When you instantiate a delegate by using a named method, the method is passed as a parameter, for example:
 
-[!code-csharp[csProgGuideDelegates#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#1)]
+[!code-csharp[csProgGuideDelegates#1](./snippets/Delegates.cs#1)]
 
 This is called using a named method. Delegates constructed with a named method can encapsulate either a [static](../../language-reference/keywords/static.md) method or an instance method. Named methods are the only way to instantiate a delegate in earlier versions of C#. However, in a situation where creating a new method is unwanted overhead, C# enables you to instantiate a delegate and immediately specify a code block that the delegate will process when it is called. The block can contain either a [lambda expression](../../language-reference/operators/lambda-expressions.md) or an [anonymous method](../../language-reference/operators/delegate-operator.md).
 
@@ -31,11 +31,11 @@ var write = Console.Write; // ERROR: Multiple overloads, can't choose
 
 The following is a simple example of declaring and using a delegate. Notice that both the delegate, `MultiplyCallback`, and the associated method, `MultiplyNumbers`, have the same signature
 
-[!code-csharp[csProgGuideDelegates#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#2)]
+[!code-csharp[csProgGuideDelegates#2](./snippets/Delegates.cs#2)]
 
 In the following example, one delegate is mapped to both static and instance methods and returns specific information from each.
 
-[!code-csharp[csProgGuideDelegates#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#3)]
+[!code-csharp[csProgGuideDelegates#3](./snippets/Delegates.cs#3)]
 
 ## See also
 

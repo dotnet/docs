@@ -1,6 +1,4 @@
 ﻿
-using System.Xml.Linq;
-
 namespace object_collection_initializers;
 
 public class BasicObjectInitializers

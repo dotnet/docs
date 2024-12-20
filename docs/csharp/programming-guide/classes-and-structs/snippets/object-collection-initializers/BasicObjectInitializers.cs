@@ -98,6 +98,10 @@ public class BasicObjectInitializers
         };
         // </SnippetListInitializerWithNull>
 
+        // <SnippetListInitializerWithSpreadOperator>
+        List<Cat> allCats = [.. cats, .. moreCats];
+        // </SnippetListInitializerWithSpreadOperator>
+
         // <SnippetDictionaryIndexerInitializer>
         var numbers = new Dictionary<int, string>
         {

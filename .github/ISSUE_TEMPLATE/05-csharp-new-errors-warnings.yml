@@ -1,0 +1,57 @@
+name: "C# 14 - New feature - Errors and warnings"
+description: Create the issue for adding reference docs for new compiler warnings and errors added in a new feature in C# 14 
+title: "[C# 14-Errors and warnings]: New Feature - "
+labels:
+  - ":checkered_flag: Release: .NET 10"
+  - okr-curation
+  - dotnet-csharp/svc
+  - whats-new/subsvc
+assignees:
+ - billwagner
+body:
+  - type: dropdown
+    id: version
+    attributes:
+      label: Visual Studio release
+      description: What Visual Studio (preview) contains this feature?
+      options:
+        - "17.13.p3"
+        - "17.13"
+        - "17.14.p1"
+        - "17.14.p2"
+        - "17.14.p3"
+        - "17.14.p4"
+        - "17.14.p5"
+        - "17.14.p6"
+        - "17.14"
+        - "other - specify below"
+  - type: input
+    id: Speclet
+    attributes:
+      label: Link to speclet
+      description: Insert the markdown format for a link to the speclet
+      value: "- [Speclet](https://github.com/dotnet/csharplang/blob/main/proposals/feature.md)"
+    validations:
+      required: true
+  - type: input
+    id: pullrequest
+    attributes:
+      label: Link to Pull request
+      description: Insert the markdown format for a link to the PR
+      value: "- [PR](https://github.com/dotnet/roslyn/pull/nnnnn)"
+    validations:
+      required: true
+  - type: textarea
+    id: errors-warnings
+    attributes:
+      label: Errors and warnings added for this feature
+      description: Add the list of IDs and message from the relevant PR
+      placeholder: |
+        - CSnnnn: Message
+  - type: textarea
+    id: theme
+    attributes:
+      label: What language theme applies, for consolidation of articles
+      description: Consider what syntax areas are affected for consolidating existing errors and warnings
+      placeholder: |
+        Consider themes in syntax affected by the new set of errors are warnings

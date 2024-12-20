@@ -39,7 +39,7 @@ To use the sample code in this article, you need to create and assign a content 
 
     :::code language="csharp" source="./snippets/content-filtering/program.cs" :::
 
-1. Replace the `YOUR_PROMPT` placeholder with your own message and run the app to experiment with content filtering results. If you enter a prompt the AI considers unsafe, the Azure OpenAI returns a `400 Bad Request` code. The app prints a message in the console similar to the following:
+1. Replace the `YOUR_PROMPT` placeholder with your own message and run the app to experiment with content filtering results. If you enter a prompt the AI considers unsafe, Azure OpenAI returns a `400 Bad Request` code. The app prints a message in the console similar to the following:
 
 ```output
 The response was filtered due to the prompt triggering Azure OpenAI's content management policy...

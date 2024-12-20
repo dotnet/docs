@@ -28,7 +28,6 @@ This ability to refer to a method as a parameter makes delegates ideal for defin
 
 Delegates have the following properties:
 
-- Delegates are similar to C++ function pointers, but delegates are fully object-oriented, and unlike C++ pointers to member functions, delegates encapsulate both an object instance and a method.
 - Delegates allow methods to be passed as parameters.
 - Delegates can be used to define callback methods.
 - Delegates can be chained together; for example, multiple methods can be called on a single event.

@@ -39,7 +39,7 @@ You can declare delegates using any of the following methods:
 
  [!code-csharp[csProgGuideDelegates#12](./snippets/Delegates.cs#12)]  
   
-## Robust Programming  
+## Work with delegates
   
 - Declaring a delegate.  
   

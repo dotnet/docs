@@ -57,6 +57,19 @@ class TestStuff
         WorkCallback d = obj.DoWork;
         //</Snippet1>
     }
+
+    class Temp2
+    {
+        static Temp2 obj = new Temp2();
+
+        //<SnippetAnonymousMethod>
+        // Declare a delegate.
+        delegate void WorkCallback(int x);
+
+        // Instantiate the delegate using an anonymous method.
+        WorkCallback d = (int k) => { /* ... */ };
+        //</SnippetAnonymousMethod>
+    }
 }
 
 //-----------------------------------------------------------------------------

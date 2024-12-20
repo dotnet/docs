@@ -13,7 +13,10 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) can be a
 
 [!code-csharp[csProgGuideDelegates#1](./snippets/Delegates.cs#1)]
 
-This is called using a named method. Delegates constructed with a named method can encapsulate either a [static](../../language-reference/keywords/static.md) method or an instance method. Named methods are the only way to instantiate a delegate in earlier versions of C#. However, in a situation where creating a new method is unwanted overhead, C# enables you to instantiate a delegate and immediately specify a code block that the delegate will process when it is called. The block can contain either a [lambda expression](../../language-reference/operators/lambda-expressions.md) or an [anonymous method](../../language-reference/operators/delegate-operator.md).
+
+This is called using a named method. Delegates constructed with a named method can encapsulate either a [static](../../language-reference/keywords/static.md) method or an instance method. Named methods are the only way to instantiate a delegate in earlier versions of C#. However, in a situation where creating a new method is unwanted overhead, C# enables you to instantiate a delegate and immediately specify a code block that the delegate will process when it is called. The block can contain either a [lambda expression](../../language-reference/operators/lambda-expressions.md) or an [anonymous method](../../language-reference/operators/delegate-operator.md), as shown in the following example:
+
+:::code language="csharp" source="./snippets/Delegates.cs" id="SnippetAnonymousMethod":::
 
 The method that you pass as a delegate parameter must have the same signature as the delegate declaration. A delegate instance may encapsulate either static or instance method.
 

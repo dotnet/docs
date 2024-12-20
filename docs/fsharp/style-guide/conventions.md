@@ -687,6 +687,36 @@ module Array =
 
 For legacy reasons some string functions in FSharp.Core still treat nulls as empty strings and do not fail on null arguments. However do not take this as guidance, and do not adopt coding patterns that attribute any semantic meaning to "null".
 
+### Leverage F# 9 null syntax at the API boundaries
+
+F# 9 adds [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to explicitly state that a value can be null. It's designed to be used on the API boundaries, to make the compiler indicate the places where null handling null is missing.
+
+Here is an example of the valid usage of the syntax:
+```fsharp
+let processStream (stream: System.IO.StreamReader) =
+    let processLine (line: string | null) =
+        match line with
+        | null -> (); false
+        | s -> printfn "%s" s; true
+
+    while processLine(stream.ReadLine()) do ()
+    stream.Close()
+```
+
+**Avoid** propagating nulls further down your F# code:
+```fsharp
+let getLineFromStream (stream: System.IO.StreamReader) : string | null =
+    stream.ReadLine()
+```
+
+Instead, use idiomatic F# means (e.g., options):
+```fsharp
+let getLineFromStream (stream: System.IO.StreamReader) : string option =
+    match stream.ReadLine() with
+    | null -> None
+    | s -> Some s
+```
+
 ## Object programming
 
 F# has full support for objects and object-oriented (OO) concepts. Although many OO concepts are powerful and useful, not all of them are ideal to use. The following lists offer guidance on categories of OO features at a high level.

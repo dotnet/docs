@@ -3,13 +3,13 @@ title: "Deconstruction expression - extract properties or fields from a tuple or
 description: "Learn about deconstruction expressions: expressions that extract individual properties or fields from a tuple or user defined type into discrete expressions."
 ms.date: 12/17/2024
 ---
-# Deconstruction expression - Extract properties of fields from a tuple or other user defined type
+# Deconstruction expression - Extract properties of fields from a tuple or other user-defined type
 
 A *deconstruction expression* extracts data fields from an instance of an object. Each discrete data element is written to a distinct variable, as shown in the following example:
 
 :::code language="csharp" source="./snippets/shared/Deconstruction.cs" id="TupleDeconstruction":::
 
-The preceding code snippet creates a [tuple](../builtin-types/value-tuples.md) that has two integer values, `X` and `Y`. The second statement *deconstructs* that tuple and stores the tuple elements in discrete variables `x`, and `y`.
+The preceding code snippet creates a [tuple](../builtin-types/value-tuples.md) that has two integer values, `X` and `Y`. The second statement *deconstructs* that tuple and stores the tuple elements in discrete variables `x` and `y`.
 
 ## Tuple deconstruction
 
@@ -23,7 +23,7 @@ In the preceding example, the `Y` and `label` members are discarded. You can spe
 
 ## Record deconstruction
 
-[Record](../builtin-types/record.md) types that have a [primary constructor](../builtin-types/record.md#positional-syntax-for-property-definition) support deconstruction for positional parameters. The compiler synthesizes a `Deconstruct` method that extracts the properties synthesized from positional parameters in the primary constructor. The compiler synthesized `Deconstruction` method doesn't extract properties declared as properties in the record type.
+[Record](../builtin-types/record.md) types that have a [primary constructor](../builtin-types/record.md#positional-syntax-for-property-definition) support deconstruction for positional parameters. The compiler synthesizes a `Deconstruct` method that extracts the properties synthesized from positional parameters in the primary constructor. The compiler-synthesized `Deconstruction` method doesn't extract properties declared as properties in the record type.
 
 The `record` shown in the following code declares two positional properties, `SquareFeet` and `Address`, along with another property, `RealtorNotes`:
 
@@ -33,7 +33,7 @@ When you deconstruct a `House` object, all positional properties, and only posit
 
 :::code language="csharp" source="./snippets/shared/Deconstruction.cs" id="RecordDeconstructionUsage":::
 
-You can make use of this behavior to specify which properties of your record types are part of the compiler synthesized `Deconstruct` method.
+You can make use of this behavior to specify which properties of your record types are part of the compiler-synthesized `Deconstruct` method.
 
 ## Declare `Deconstruct` methods
 
@@ -43,15 +43,15 @@ The following code declares a `Point3D` struct that has two `Deconstruct` method
 
 :::code language="csharp" source="./snippets/shared/Deconstruction.cs" id="StructDeconstruction":::
 
-The first method supports deconstruction expressions that extract all three axes values: `X`, `Y`, and `Z`. The second method supports deconstructing only the planar values: `X` and `Y`. The first method has an *arity* of 3; the second has an arity of 2.
+The first method supports deconstruction expressions that extract all three axis values: `X`, `Y`, and `Z`. The second method supports deconstructing only the planar values: `X` and `Y`. The first method has an *arity* of 3; the second has an arity of 2.
 
-The preceding section described the compiler synthesized `Deconstruct` method for `record` types with a primary constructor. You can declare more `Deconstruct` methods in record types. These methods can either add other properties, remove some of the default properties, or both. You can also declare a `Deconstruct` that matches the compiler synthesized signature. If you declare such a `Deconstruct` method, the compiler doesn't synthesize one.
+The preceding section described the compiler-synthesized `Deconstruct` method for `record` types with a primary constructor. You can declare more `Deconstruct` methods in record types. These methods can either add other properties, remove some of the default properties, or both. You can also declare a `Deconstruct` that matches the compiler-synthesized signature. If you declare such a `Deconstruct` method, the compiler doesn't synthesize one.
 
-Typically, multiple `Deconstruct` methods for the same type have different numbers of parameters. You can create multiple `Deconstruct` methods providing the signatures have different parameter types. As long as the compiler can determine one unique `Deconstruct` method for a deconstruction expression, the multiple `Deconstruct` methods are allowed. However, in many cases, too many `Deconstruct` methods can lead to ambiguity errors and misleading results.
+Multiple `Deconstruct` methods are allowed as long as the compiler can determine one unique `Deconstruct` method for a deconstruction expression. Typically, multiple `Deconstruct` methods for the same type have different numbers of parameters. You can also create multiple `Deconstruct` methods that differ by parameter types. However, in many cases, too many `Deconstruct` methods can lead to ambiguity errors and misleading results.
 
 ## C# language specification
 
-For more information, see the following sections of the [C# Standard](~/_csharpstandard/standard/expressions.md#127-deconstruction):
+For more information, see the deconstruction section of the [C# Standard](~/_csharpstandard/standard/expressions.md#127-deconstruction).
 
 ## See also
 

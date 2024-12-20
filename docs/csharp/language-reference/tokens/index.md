@@ -21,6 +21,6 @@ Special characters are predefined, contextual characters that modify the program
 - [@](./verbatim.md), the verbatim identifier character.
 - [$](./interpolated.md), the interpolated string character.
 - ["""](./raw-string.md), A sequence of three or more `"` characters provides the delimiters for a raw string literal.
-- [_](./discard.md), a `_` represents a *discard*, a placeholder for an unused variable.
+- [_](./discard.md), a `_` character represents a *discard*, which is a placeholder for an unused variable.
 
 This section only includes those tokens that aren't operators. See the [operators](../operators/index.md) section for all operators.

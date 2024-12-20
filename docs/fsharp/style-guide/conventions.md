@@ -692,6 +692,7 @@ For legacy reasons some string functions in FSharp.Core still treat nulls as emp
 F# 9 adds [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to explicitly state that a value can be null. It's designed to be used on the API boundaries, to make the compiler indicate the places where null handling null is missing.
 
 Here is an example of the valid usage of the syntax:
+
 ```fsharp
 let processStream (stream: System.IO.StreamReader) =
     let processLine (line: string | null) =
@@ -704,12 +705,14 @@ let processStream (stream: System.IO.StreamReader) =
 ```
 
 **Avoid** propagating nulls further down your F# code:
+
 ```fsharp
 let getLineFromStream (stream: System.IO.StreamReader) : string | null =
     stream.ReadLine()
 ```
 
 **Instead**, use idiomatic F# means (e.g., options):
+
 ```fsharp
 let getLineFromStream (stream: System.IO.StreamReader) : string option =
     match stream.ReadLine() with

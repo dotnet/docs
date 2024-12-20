@@ -47,7 +47,7 @@ type | null
 
 The bar symbol `|` has the meaning of a logical OR in the syntax, building a union of two disjoint sets of types: the underlying type, and the nullable reference. This is the same syntactical symbol which is used for declaring multiple cases of an F# discriminated union: `type AB = A | B` carries the meaning of either `A`, or `B`.
 
-The nullable annotation ` | null` can be used at all places where a reference type would be normally used:
+The nullable annotation `| null` can be used at all places where a reference type would be normally used:
 
 - Fields of union types, record types and custom types.
 - Type aliases to existing types.

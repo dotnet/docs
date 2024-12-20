@@ -1,4 +1,6 @@
 ﻿
+using System.Xml.Linq;
+
 namespace object_collection_initializers;
 
 public class BasicObjectInitializers
@@ -190,15 +192,10 @@ public class InitializationSample
             null
         };
 
+        List<Cat> allCats = [.. cats, new Cat { Name = "Łapka", Age = 5 }, cat, .. moreCats];
+
         // Display results.
-        System.Console.WriteLine(cat.Name);
-
-        foreach (Cat c in cats)
-        {
-            System.Console.WriteLine(c.Name);
-        }
-
-        foreach (Cat? c in moreCats)
+        foreach (Cat? c in allCats)
         {
             if (c != null)
             {
@@ -211,13 +208,14 @@ public class InitializationSample
         }
     }
     // Output:
-    //Fluffy
-    //Sylvester
-    //Whiskers
-    //Sasha
-    //Furrytail
-    //Peaches
-    //List element has null value.
+    // Sylvester
+    // Whiskers
+    // Sasha
+    // Łapka
+    // Fluffy
+    // Furrytail
+    // Peaches
+    // List element has null value.
 }
 // </SnippetFullExample>
 

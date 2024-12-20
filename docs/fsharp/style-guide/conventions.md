@@ -709,7 +709,7 @@ let getLineFromStream (stream: System.IO.StreamReader) : string | null =
     stream.ReadLine()
 ```
 
-Instead, use idiomatic F# means (e.g., options):
+**Instead**, use idiomatic F# means (e.g., options):
 ```fsharp
 let getLineFromStream (stream: System.IO.StreamReader) : string option =
     match stream.ReadLine() with

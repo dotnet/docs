@@ -93,7 +93,7 @@ match x with
 | null -> ...
 ```
 
-Note that all these capabilities were added to the language for the interoperability purposes. Using `| null` within F# code is not considered idiomatic for denoting missing information - for that purpose use options, as described above.
+Note that the extra null related capabilities were added to the language for the interoperability purposes. Using `| null` within F# code is not considered idiomatic for denoting missing information - for that purpose, use options (as described above). Read more about null-related [conventions](../../style-guide/conventions.md#nulls-and-default-values) in the style guide.
 
 ## See also
 

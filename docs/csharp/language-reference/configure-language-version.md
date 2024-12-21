@@ -7,7 +7,7 @@ ms.date: 09/17/2024
 
 # Configure C# language version
 
-The information in this article applies to .NET 5 and above. For UWP projects, see this information in the article on [Choosing a UWP version](/windows/uwp/updates-and-versions/choose-a-uwp-version.md).
+The information in this article applies to .NET 5 and above. For UWP projects, see this information in the article on [Choosing a UWP version](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
 In Visual Studio, the option to change the language version through the UI is disabled because the default version is aligned with the project's target framework (`TFM`). This default configuration ensures compatibility between language features and runtime support. To change the language version in Visual Studio, change the project's target framework.
 
@@ -28,7 +28,7 @@ If you must specify your C# version explicitly, you can do so in several ways:
 > [!TIP]
 > You can see the language version in Visual Studio in the project properties page. Under the *Build* tab, the *Advanced* pane displays the version selected.
 >
-> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. For more information about this pragma, see [#error (C# Reference)](preprocessor-directives.md#error-and-warning-information) for more information.
+> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler report a compiler error, CS8304, with a message containing the compiler version being used and the current selected language version. For more information about this pragma, see [#error (C# Reference)](preprocessor-directives.md#error-and-warning-information).
 
 ## Edit the project file
 

@@ -11,7 +11,7 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) is a typ
 
 :::code language="csharp" source="./snippets/UsingDelegates.cs" id="DeclareDelegate":::
 
-A delegate object is normally constructed by providing the name of the method the delegate wraps, or with a [lambda expression](../../language-reference/operators/lambda-expressions.md). A delegate can be invoked once instantiated in this manner it can be invoked. Invoking a delegate calls the method attached to the delegate instance. The parameters passed to the delegate by the caller are passed to the method. The delegate returns the return value, if any, from the method. For example:
+A delegate object is normally constructed by providing the name of the method the delegate wraps, or with a [lambda expression](../../language-reference/operators/lambda-expressions.md). A delegate can be invoked once instantiated in this manner. Invoking a delegate calls the method attached to the delegate instance. The parameters passed to the delegate by the caller are passed to the method. The delegate returns the return value, if any, from the method. For example:
 
 :::code language="csharp" source="./snippets/UsingDelegates.cs" id="DelegateMethod":::
 

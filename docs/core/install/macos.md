@@ -4,7 +4,7 @@ description: Learn about which versions of .NET SDK and .NET Runtime are support
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 11/11/2024
+ms.date: 12/20/2024
 ms.custom: linux-related-content
 
 #customer intent: As a user or developer, I want to know which versions of .NET are supported on macOS. I also need to know how to install .NET on macOS.
@@ -168,7 +168,7 @@ chdir ~/Applications/.dotnet/
 
 ## Install .NET with a script
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and unelevated installs of the runtime. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and unelevated installs of the runtime. You can download the script from <https://dot.net/v2/dotnet-install.sh>.
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `channel` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the SDK.
 
@@ -186,7 +186,7 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 01. Run the following command to download the script:
 
     ```bash
-    wget https://dot.net/v1/dotnet-install.sh
+    wget https://dot.net/v2/dotnet-install.sh
     ```
 
 01. Give the script execute permissions
@@ -208,7 +208,7 @@ Here are all the commands as a single bash script:
 ```bash
 chdir ~/Downloads
 brew install wget
-wget https://dot.net/v1/dotnet-install.sh
+wget https://dot.net/v2/dotnet-install.sh
 chmod +x dotnet-install.sh
 ./dotnet-install.sh
 ```

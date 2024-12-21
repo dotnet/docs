@@ -4,7 +4,7 @@ description: "Learn about which versions of .NET SDK and .NET Runtime are suppor
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
-ms.date: 11/11/2024
+ms.date: 12/20/2024
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -330,10 +330,10 @@ winget install Microsoft.DotNet.DesktopRuntime.Preview
 
 Installing .NET through the `dotnet-install` PowerShell script is recommended for continuous integration and nonadmin installs. If you're installing .NET for normal use on your system, use either the [.NET Installer](#net-installer) or [Windows Package Manager](#install-with-windows-package-manager-winget) installation methods.
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `-Channel` switch. Include the `-Runtime` switch to install a runtime. Otherwise, the script installs the SDK. The script is available at <https://dot.net/v1/dotnet-install.ps1> and the source code is hosted on [GitHub](https://github.com/dotnet/install-scripts).
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET 8. You can choose a specific release by specifying the `-Channel` switch. Include the `-Runtime` switch to install a runtime. Otherwise, the script installs the SDK. The script is available at <https://dot.net/v2/dotnet-install.ps1> and the source code is hosted on [GitHub](https://github.com/dotnet/install-scripts).
 
 > [!div class="button"]
-> [Download the script](https://dot.net/v1/dotnet-install.ps1)
+> [Download the script](https://dot.net/v2/dotnet-install.ps1)
 
 For more information about the script, see [dotnet-install script reference](../tools/dotnet-install-script.md).
 
@@ -341,7 +341,7 @@ For more information about the script, see [dotnet-install script reference](../
 
 The .NET Runtime is installed by providing the `-Runtime` switch.
 
-01. Download the install script from <https://dot.net/v1/dotnet-install.ps1>
+01. Download the install script from <https://dot.net/v2/dotnet-install.ps1>
 01. Open PowerShell and navigate to the folder containing the script.
 01. Run the following commands to install both the Desktop runtime and ASP.NET Core runtime for maximum compatibility:
 
@@ -356,7 +356,7 @@ To learn how to use the .NET CLI, see [.NET CLI overview](../tools/index.md).
 
 If you install the SDK, you don't need to install the runtimes.
 
-01. Download the install script from <https://dot.net/v1/dotnet-install.ps1>
+01. Download the install script from <https://dot.net/v2/dotnet-install.ps1>
 01. Open PowerShell and navigate to the folder containing the script.
 01. Run the following command to install the .NET SDK.
 

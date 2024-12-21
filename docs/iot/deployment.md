@@ -26,7 +26,7 @@ To deploy your app as a framework-dependent app, complete the following steps:
     1. Run the following command to install .NET:
 
         ```bash
-        curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel STS
+        curl -sSL https://dot.net/v2/dotnet-install.sh | bash /dev/stdin --channel STS
         ```
 
         > [!NOTE]

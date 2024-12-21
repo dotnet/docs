@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 08/01/2023
+ms.date: 12/20/2023
 ---
 # dotnet-install scripts reference
 
@@ -69,8 +69,8 @@ To set up a development environment or to run apps, use the installers rather th
 
 We recommend that you use the stable version of the scripts:
 
-- Bash (Linux/macOS): <https://dot.net/v1/dotnet-install.sh>
-- PowerShell (Windows): <https://dot.net/v1/dotnet-install.ps1>
+- Bash (Linux/macOS): <https://dot.net/v2/dotnet-install.sh>
+- PowerShell (Windows): <https://dot.net/v2/dotnet-install.ps1>
 
 The source for the scripts is in the [dotnet/install-scripts](https://github.com/dotnet/install-scripts) GitHub repository.
 
@@ -272,7 +272,7 @@ The install scripts do not update the registry on Windows. They just download th
 - Obtain script and install the 6.0.2 version behind a corporate proxy (Windows only):
 
   ```powershell
-  Invoke-WebRequest 'https://dot.net/v1/dotnet-install.ps1' -Proxy $env:HTTP_PROXY -ProxyUseDefaultCredentials -OutFile 'dotnet-install.ps1';
+  Invoke-WebRequest 'https://dot.net/v2/dotnet-install.ps1' -Proxy $env:HTTP_PROXY -ProxyUseDefaultCredentials -OutFile 'dotnet-install.ps1';
   ./dotnet-install.ps1 -InstallDir '~/.dotnet' -Version '6.0.2' -Runtime 'dotnet' -ProxyAddress $env:HTTP_PROXY -ProxyUseDefaultCredentials;
   ```
 
@@ -282,13 +282,13 @@ The install scripts do not update the registry on Windows. They just download th
 
   ```powershell
   # Run a separate PowerShell process because the script calls exit, so it will end the current PowerShell session.
-  &powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://dot.net/v1/dotnet-install.ps1'))) <additional install-script args>"
+  &powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://dot.net/v2/dotnet-install.ps1'))) <additional install-script args>"
   ```
 
   macOS/Linux:
 
   ```bash
-  curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
+  curl -sSL https://dot.net/v2/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
 
 ## Set environment variables
@@ -322,8 +322,8 @@ Signature validation is an important security measure that helps ensure the auth
 Here is a step-by-step guide on how to verify the authenticity of the `dotnet-install.sh` script using GPG:
 
 1. **Install GPG**: GPG (GNU Privacy Guard) is a free and open-source tool for encrypting and signing data. You can install it by following the [instructions on the GPG website](https://gnupg.org/download/).
-2. **Import our public key**: Download the install-scripts [public key](https://dot.net/v1/dotnet-install.asc) file, and then import it into your GPG keyring by running the command `gpg --import dotnet-install.asc`.
-3. **Download the signature file**: The signature file for our bash script is available at `https://dot.net/v1/dotnet-install.sig`. You can download it using a tool like `wget` or `curl`.
+2. **Import our public key**: Download the install-scripts [public key](https://dot.net/v2/dotnet-install.asc) file, and then import it into your GPG keyring by running the command `gpg --import dotnet-install.asc`.
+3. **Download the signature file**: The signature file for our bash script is available at `https://dot.net/v2/dotnet-install.sig`. You can download it using a tool like `wget` or `curl`.
 4. **Verify the signature**: To verify the signature of our bash script, run the command `gpg --verify dotnet-install.sig dotnet-install.sh`. This will check the signature of the `dotnet-install.sh` file against the signature in the `dotnet-install.sig` file.
 5. **Check the result**: If the signature is valid, you will see a message containing `Good signature from "Microsoft DevUXTeamPrague <devuxteamprague@microsoft.com>"`. This means that the script has not been tampered with and can be trusted.
 
@@ -333,7 +333,7 @@ Installing GPG and importing our public key is a one time operation.
 
 ```bash
 sudo apt install gpg
-wget https://dot.net/v1/dotnet-install.asc
+wget https://dot.net/v2/dotnet-install.asc
 gpg --import dotnet-install.asc
 ```
 
@@ -353,8 +353,8 @@ gpg:               imported: 1
 With the key imported, you can now download the script and the signature, then verify the script matches the signature:
 
 ```bash
-wget https://dot.net/v1/dotnet-install.sh
-wget https://dot.net/v1/dotnet-install.sig
+wget https://dot.net/v2/dotnet-install.sh
+wget https://dot.net/v2/dotnet-install.sig
 gpg --verify dotnet-install.sig dotnet-install.sh
 ```
 

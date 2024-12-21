@@ -3,7 +3,7 @@ title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 12/20/2024
 ms.custom: linux-related-content
 ---
 
@@ -73,7 +73,7 @@ You can usually install a recent version of *libgdiplus* by [adding the Mono rep
 
 ## Scripted install
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>. When .NET is installed in this way, you must install the dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v2/dotnet-install.sh>. When .NET is installed in this way, you must install the dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.
 
 > [!IMPORTANT]
 > Bash is required to run the script.
@@ -81,7 +81,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for aut
 You can download the script with `wget`:
 
 ```bash
-wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+wget https://dot.net/v2/dotnet-install.sh -O dotnet-install.sh
 ```
 
 Before running this script, make sure you grant permission for this script to run as an executable:

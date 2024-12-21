@@ -73,7 +73,7 @@ Write-Host "Downloading the CLI installer..."
 # Use the Invoke-WebRequest PowerShell cmdlet to obtain the
 #   installation script and save it into the installation directory.
 Invoke-WebRequest `
-    -Uri "https://dot.net/v1/dotnet-install.ps1" `
+    -Uri "https://dot.net/v2/dotnet-install.ps1" `
     -OutFile "$InstallDir/dotnet-install.ps1"
 
 Write-Host "Installing the CLI requested version ($CliVersion) ..."
@@ -105,7 +105,7 @@ then
 fi
 mkdir -p "$INSTALLDIR"
 echo Downloading the CLI installer.
-$DOWNLOADER https://dot.net/v1/dotnet-install.sh > "$INSTALLDIR/dotnet-install.sh"
+$DOWNLOADER https://dot.net/v2/dotnet-install.sh > "$INSTALLDIR/dotnet-install.sh"
 chmod +x "$INSTALLDIR/dotnet-install.sh"
 echo Installing the CLI requested version $CLI_VERSION. Please wait, installation may take a few minutes.
 "$INSTALLDIR/dotnet-install.sh" --install-dir "$INSTALLDIR" --version $CLI_VERSION

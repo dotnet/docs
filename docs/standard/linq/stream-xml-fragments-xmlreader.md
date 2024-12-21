@@ -33,18 +33,25 @@ static IEnumerable<XElement> StreamRootChildDoc(StringReader stringReader)
     {
         reader.MoveToContent();
         // Parse the file and display each of the nodes.
-        while (reader.Read())
+        while (true)
         {
             switch (reader.NodeType)
             {
                 case XmlNodeType.Element:
                     if (reader.Name == "Child") {
-                        XElement el = XElement.ReadFrom(reader) as XElement;
+                        XElement? el = XNode.ReadFrom(reader) as XElement;
                         if (el != null)
                             yield return el;
+
+                        // Should only call reader.Read(), if XNode.ReadFrom() was NOT called,
+                        // because XNode.ReadFrom() advances the reader to the next element by itself.
+                        continue;
                     }
                     break;
             }
+
+            if (!reader.Read())
+                break;
         }
     }
 }
@@ -144,15 +151,29 @@ Public Class StreamChildEnumerator
     End Property
 
     Public Function MoveNext() As Boolean Implements IEnumerator.MoveNext
-        While _reader.Read()
+
+        _reader.MoveToContent()
+
+        While True
             Select Case _reader.NodeType
                 Case Xml.XmlNodeType.Element
-                    Dim el = TryCast(XElement.ReadFrom(_reader), XElement)
-                    If el IsNot Nothing Then
-                        _current = el
-                        Return True
+                    If _reader.Name = "Child" Then
+                        Dim el = TryCast(XNode.ReadFrom(_reader), XElement)
+                        If el IsNot Nothing Then
+                            _current = el
+                            Return True
+                        End If
+
+                        ' Should only call _reader.Read(), if XNode.ReadFrom() was NOT called,
+                        ' because XNode.ReadFrom() advances the reader to the next element by itself.
+                        Continue While
                     End If
             End Select
+
+            If Not _reader.Read() Then
+                Exit While
+            End If
+
         End While
 
         Return False

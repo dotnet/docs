@@ -322,6 +322,9 @@ items:
   - name: with expression
     href: ./operators/with-expression.md
     displayName: "records, copy"
+  - name: Deconstruction expression
+    href: ./operators/deconstruction.md
+    displayName: deconstruct, deconstruction
   - name: Operator overloading
     href: ./operators/operator-overloading.md
 - name: Statements
@@ -364,11 +367,15 @@ items:
   - name: Comments
     displayName: /* */, //
     href: ./tokens/comments.md
+  - name: Discard
+    displayName: discard, discard pattern
+    href: ./tokens/discard.md
   - name: $ -- string interpolation
     href: ./tokens/interpolated.md
   - name: "@ -- verbatim identifier"
     href: ./tokens/verbatim.md
   - name: "\"\"\" -- raw string literal"
+    displayName: raw string, triple quote
     href: ./tokens/raw-string.md
 - name: Attributes read by the compiler
   items:

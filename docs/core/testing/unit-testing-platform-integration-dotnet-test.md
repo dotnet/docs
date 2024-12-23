@@ -132,7 +132,7 @@ Or in project file:
 
 By default, all console output that the underlying test executable writes is captured and hidden from the user. This includes the banner, version information, and formatted test information.
 
-To show this information together with MSBuild output use`<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
+To show this information together with MSBuild output, use `<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
 
 This option doesn't impact how the testing framework captures user output written by `Console.WriteLine` or other similar ways to write to the console.
 

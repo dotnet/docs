@@ -19,14 +19,17 @@ They are also [multi-dimensional](../../../core/diagnostics/metrics-instrumentat
 
 ## Collect System.Net metrics
 
-There are two parts to using metrics in a .NET app:
+In order to take advangage of the built-in metrics instrumentation, a .NET app needs to be configured to collect these metrics. This typically means transforming them for external storage and analysis, e.g., to monitoring systems. 
 
-* **Instrumentation:** Code in .NET libraries takes measurements and associates these measurements with a metric name. .NET and ASP.NET Core include many built-in metrics.
-* **Collection:** A .NET app configures named metrics to be transmitted from the app for external storage and analysis. Some tools might perform configuration outside the app using configuration files or a UI tool.
+There are several ways of collecting networking metrics in .NET.
+- For a quick overview using a simple, self-contained example, see [collecting metrics with dotnet-counters](#collecting-metrics-with-dotnet-counters).
+- For **production-time** metrics collection and monitoring, you can use [Grafana with OpenTelemetry and Prometheus](#view-metrics-in-grafana-with-opentelemetry-and-prometheus) or [Azure Monitor  Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex, and may be inconvenient to use at development time.
+- For **development-time** metrics collection and troubleshooting we recommend to use [.NET Aspire](#collecting-metrics-with-net-aspire), which provides a simple, but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
+- It is also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration API-s into your ASP.NET project.
 
-This section demonstrates various methods to collect and view System.Net metrics.
+### Collecting metrics with dotnet-counters
 
-### Example app
+[`dotnet-counters`](../../../core/diagnostics/dotnet-counters.md) is a cross-platform performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.
 
 For the sake of this tutorial, create a simple app that sends HTTP requests to various endpoints in parallel.
 
@@ -39,9 +42,7 @@ Replace the contents of `Program.cs` with the following sample code:
 
 :::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_ExampleApp":::
 
-### View metrics with dotnet-counters
-
-[`dotnet-counters`](../../../core/diagnostics/dotnet-counters.md) is a cross-platform performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.
+Make sure `dotnet-counters` is installed:
 
 ```dotnetcli
 dotnet tool install --global dotnet-counters
@@ -52,96 +53,102 @@ When running against a .NET 8+ process, `dotnet-counters` enables the instrument
 ```console
 dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n HelloBuiltinMetrics
 ```
+### Collecting metrics with .NET Aspire
 
-### View metrics in Grafana with OpenTelemetry and Prometheus
+The simplest solution for collecting metrics for ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview) which is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET.
 
-#### Overview
+The default project templates for .NET Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in a .NET Aspire solution.
 
-[OpenTelemetry](https://opentelemetry.io/):
+The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file.  For exporting telemetry .NET Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
 
-- Is a vendor-neutral, open-source project supported by the [Cloud Native Computing Foundation](https://www.cncf.io/).
-- Standardizes generating and collecting telemetry for cloud-native software.
-- Works with .NET using the .NET metric APIs.
-- Is endorsed by [Azure Monitor](/azure/azure-monitor/app/opentelemetry-overview) and many APM vendors.
+The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be just as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you F5 the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
 
-This tutorial shows one of the integrations available for OpenTelemetry metrics using the OSS [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) projects. The metrics data flow consists of the following steps:
+#### Quick walkthrough
 
-1. The .NET metric APIs record measurements from the example app.
-1. The OpenTelemetry library running in the app aggregates the measurements.
-1. The Prometheus exporter library makes the aggregated data available via an HTTP metrics endpoint. 'Exporter' is what OpenTelemetry calls the libraries that transmit telemetry to vendor-specific backends.
-1. A Prometheus server:
-
-   - Polls the metrics endpoint.
-   - Reads the data.
-   - Stores the data in a database for long-term persistence. Prometheus refers to reading and storing data as *scraping* an endpoint.
-   - Can run on a different machine.
-
-1. The Grafana server:
-
-   - Queries the data stored in Prometheus and displays it on a web-based monitoring dashboard.
-   - Can run on a different machine.
-
-#### Configure the example app to use OpenTelemetry's Prometheus exporter
-
-Add a reference to the OpenTelemetry Prometheus exporter to the example app:
+1. Create a **.NET Aspire 9 Starter App** by using `dotnet new`:
 
 ```dotnetcli
-dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
+dotnet new aspire-starter-9 --output AspireDemo
 ```
 
-> [!NOTE]
-> This tutorial uses a pre-release build of OpenTelemetry's Prometheus support available at the time of writing.
+Or in Visual Studio:
 
-Update `Program.cs` with OpenTelemetry configuration:
+![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
 
-:::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_PrometheusExporter" highlight="5-8":::
+2. Open `Extensions.cs` in the `ServiceDefaults` project, and scroll to the `ConfigureOpenTelemetry` method. Notice the `AddHttpClientInstrumentation()` call subscribing to the networking meters.
 
-In the preceding code:
+:::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_Metrics" highlight="3":::
 
-- `AddMeter("System.Net.Http", "System.Net.NameResolution")` configures OpenTelemetry to transmit all the metrics collected by the built-in `System.Net.Http` and `System.Net.NameResolution` meters.
-- `AddPrometheusHttpListener` configures OpenTelemetry to expose Prometheus' metrics HTTP endpoint on port `9184`.
+Note that on .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual meter subscription:
 
-> [!NOTE]
-> This configuration differs for ASP.NET Core apps, where metrics are exported with `OpenTelemetry.Exporter.Prometheus.AspNetCore` instead of `HttpListener`. See the [related ASP.NET Core example](/aspnet/core/log-mon/metrics/metrics#create-the-starter-app).
-
-Run the app and leave it running so measurements can be collected:
-
-```dotnetcli
-dotnet run
+```csharp
+.WithMetrics(metrics =>
+{
+    metrics.AddAspNetCoreInstrumentation()
+        .AddMeter("System.Net.Http")
+        .AddMeter("System.Net.NameResolution")
+        .AddRuntimeInstrumentation();
+})
 ```
 
-#### Set up and configure Prometheus
+3. Run the `AppHost` project. This should launch the Aspire Dashboard.
 
-Follow the [Prometheus first steps](https://prometheus.io/docs/introduction/first_steps/) to set up a Prometheus server and confirm it is working.
+4. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`. Refresh the page several times to send multiple requests.
 
-Modify the *prometheus.yml* configuration file so that Prometheus scrapes the metrics endpoint that the example app is exposing. Add the following highlighted text in the `scrape_configs` section:
+5. Return to the Dashboard, navigate to the **Metrics** page and select the `webfrontend` resource. Srolling down, you should be able to browse the built-in `System.Net` metrics.
 
-:::code language="yaml" source="snippets/metrics/prometheus.yml" highlight="31-99":::
+[![Networking metrics in Aspire Dashboard](media/aspire-metrics-thumb.png)](media/aspire-metrics.png#lightbox)
 
-#### Start prometheus
+For more details on .NET Aspire see:
 
-1. Reload the configuration or restart the Prometheus server.
-1. Confirm that OpenTelemetryTest is in the UP state in the **Status** > **Targets** page of the Prometheus web portal.
-![Prometheus status](~/docs/core/diagnostics/media/prometheus-status.png)
+- [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
+- [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
+- [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
 
-1. On the Graph page of the Prometheus web portal, enter `http` in the expression text box and select `http_client_active_requests`.
-![http_client_active_requests](~/docs/fundamentals/networking/telemetry/media/prometheus-search.png)
-  In the graph tab, Prometheus shows the value of the `http.client.active_requests` counter that's emitted by the example app.
-  ![Prometheus active requests graph](~/docs/fundamentals/networking/telemetry/media/prometheus-active-requests.png)
+### Reusing Service Defaults project without .NET Aspire Orchestration
 
-#### Show metrics on a Grafana dashboard
+Probably the easiest way to configure OTel for ASP.NET projects is to use the Aspire Service Defaults project, even if not using the rest of .NET Aspire such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application.
 
-1. Follow the [standard instructions](https://prometheus.io/docs/visualization/grafana/#installing) to install Grafana and connect it to a Prometheus data source.
+The steps to use *ServiceDefaults* outside .NET Aspire are:
 
-1. Create a Grafana dashboard by selecting the **+** icon on the top toolbar then selecting **Dashboard**. In the dashboard editor that appears, enter **Open HTTP/1.1 Connections** in the **Title** box and the following query in the PromQL expression field:
+- Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
+- Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the *ServiceDefaults* project"
+- Call its OpenTelemetry setup function as part of your application builder initialization.
 
+``` csharp
+var builder = WebApplication.CreateBuilder(args);
+builder.ConfigureOpenTelemetry();
+
+var app = builder.Build();
+
+app.MapGet("/", () => "Hello World!");
+
+app.Run();
 ```
-sum by(http_connection_state) (http_client_open_connections{network_protocol_version="1.1"})
+
+For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../core/diagnostics/observability-otlp-example.md).
+
+### View metrics in Grafana with OpenTelemetry and Prometheus 
+
+Please follow our tutorial on [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md).
+
+Note that the tutorial does not particularly discuss `HttpClient` metrics. In order to enable them, it is necessary to extend the [metrics configuration code](../../../core/diagnostics/observability-prgrja-example.md#5-configure-opentelemetry-with-the-correct-providers) with the addition of the `System.Net.*` meters:
+
+```csharp
+otel.WithMetrics(metrics => metrics
+    // Metrics provider from OpenTelemetry
+    .AddAspNetCoreInstrumentation()
+    .AddMeter(greeterMeter.Name)
+    // Metrics provided by ASP.NET Core in .NET 8
+    .AddMeter("Microsoft.AspNetCore.Hosting")
+    .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
+    // Metrics provided by System.Net libraries
+    .AddMeter("System.Net.Http")
+    .AddMeter("System.Net.NameResolution")
+    .AddPrometheusExporter());
 ```
 
-![Grafana HTTP/1.1 Connections](~/docs/fundamentals/networking/telemetry/media/grafana-connections.png)
-
-1. Select **Apply** to save and view the new dashboard. It displays the number of active vs idle HTTP/1.1 connections in the pool.
+Moreover, `HttpClient(Factory)` usage is needed to see the `System.Net` metrics in action. The `/NestedGreeting` endpoint in the paragraph [Distributed tracing with Jaeger](../../../core/diagnostics/observability-prgrja-example.md#9-distributed-tracing-with-jaeger) provides a simple example for that.
 
 ## Enrichment
 

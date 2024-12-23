@@ -73,7 +73,7 @@ There's no CLI command to add a reference to an assembly that isn't in a project
   dotnet add app/app.csproj reference lib/lib.csproj
   ```
 
-- Add a compatible .NET language project (e.g. F#) referenc, works in both ways:
+- Add a compatible .NET language (for example, F#) project reference, which works in both directions:
 
   ```dotnetcli
   dotnet add app/app.csproj reference lib/lib.fsproj

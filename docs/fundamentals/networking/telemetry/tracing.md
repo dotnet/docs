@@ -20,18 +20,20 @@ The tracing system in .NET is designed to work with OpenTelemetry (OTel), and us
 In order to emit traces, the `System.Net` libraries are [instrumented](../../../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md#add-basic-instrumentation) with built-in <xref:System.Diagnostics.ActivitySource>-s which create <xref:System.Diagnostics.Activity> objects to track work performed. Activities are only created if there are listeners subscribed to the <xref:System.Diagnostics.ActivitySource>.
 
 The built-in instrumentation has evolved with .NET versions.
+
 - On .NET 8 or earlier, the instrumentation is limited to the creation of an empty [HTTP client request activity](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request). This means that users have to rely on the [`OpenTelemetry.Instrumentation.Http`](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/tree/1ca05685cbad63d3fa813b9cab49be341048e69e/src/OpenTelemetry.Instrumentation.Http#httpclient-and-httpwebrequest-instrumentation-for-opentelemetry) library to populate the activity with the information (e.g., tags) needed to emit useful traces.
 - .NET 9 has extended the instrumentation with the emission the name, status, exception info and the most important tags according to the OTel [HTTP client semantic conventions](https://opentelemetry.io/docs/specs/semconv/http/http-spans/#http-client) on the HTTP client request activity. This means that on .NET 9+ the `OpenTelemetry.Instrumentation.Http` dependency can be omitted, unless more advanced features like [enrichment](#enrichment) are required.
-- .NET 9 has also introduced [experimental connection tracing](#experimental-connection-tracing), adding new activites across the `System.Net` libraries to support diagnosing connection issues. 
+- .NET 9 has also introduced [experimental connection tracing](#experimental-connection-tracing), adding new activites across the `System.Net` libraries to support diagnosing connection issues.
 
 > [!TIP]
 > For a comprehensive list of all built-in activities together with their tags/attributes, see [Built-in activities in .NET](../../../core/diagnostics/distributed-tracing-builtin-activities.md).
 
 ## Collecting System.Net traces
 
-At the [lowest level](../../../core/diagnostics/distributed-tracing-collection-walkthroughs#collect-traces-using-custom-logic), trace collection is supported via the <xref:System.Diagnostics.ActivitySource.AddActivityListener%2A> method that can be used to register <xref:System.Diagnostics.ActivityListener> objects containing user-defined logic. 
+At the [lowest level](../../../core/diagnostics/distributed-tracing-collection-walkthroughs#collect-traces-using-custom-logic), trace collection is supported via the <xref:System.Diagnostics.ActivitySource.AddActivityListener%2A> method that can be used to register <xref:System.Diagnostics.ActivityListener> objects containing user-defined logic.
 
 However, as an application developer, you would likely prefer to rely on the rich ecosystem built upon the features provided by the [OpenTelemetry .NET SDK](https://opentelemetry.io/docs/languages/net/) to collect, export and monitor traces.
+
 - To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs#collect-traces-using-opentelemetry).
 - For **production-time** trace collection and monitoring, you can use OpenTelemetry with [Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) or with [Azure Monitor and Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex, and may be inconvenient to use at development time.
 - For **development-time** trace collection and monitoring, we recommend to use [.NET Aspire](#collecting-traces-with-net-aspire) which provides a simple, but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
@@ -61,23 +63,23 @@ The steps to use *ServiceDefaults* outside .NET Aspire are:
 
 1. Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new`:
 
-```dotnetcli
-dotnet new aspire-servicedefaults --output ServiceDefaults
-```
+    ```dotnetcli
+    dotnet new aspire-servicedefaults --output ServiceDefaults
+    ```
 
-2. Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio use *Add -> Project Reference* and select the *ServiceDefaults* project.
-3. Call its OpenTelemetry setup function, `ConfigureOpenTelemetry` as part of your application builder initialization.
+1. Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio use *Add -> Project Reference* and select the *ServiceDefaults* project.
+1. Call its OpenTelemetry setup function, `ConfigureOpenTelemetry` as part of your application builder initialization.
 
-``` csharp
-var builder = WebApplication.CreateBuilder(args);
-builder.ConfigureOpenTelemetry();
+    ``` csharp
+    var builder = WebApplication.CreateBuilder(args);
+    builder.ConfigureOpenTelemetry();
 
-var app = builder.Build();
+    var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+    app.MapGet("/", () => "Hello World!");
 
-app.Run();
-```
+    app.Run();
+    ```
 
 For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../core/diagnostics/observability-otlp-example.md).
 
@@ -91,15 +93,16 @@ When troubleshooting `HttpClient` issues or bottlenecks, it might be crutial to 
 > In <xref:System.Net.Http.SocketsHttpHandler>, connections and requests have independent lifecycles. A pooled connection can live long and serve dozens of requests. If there is no connection immediately available in the connection pool, an incoming request will be added to a request queue to wait for an available connection. There is no relationship between requests and connections while the request is waiting. As a result, the `HTTP connection setup` span cannot be modeled as a child of the `HTTP client request` span.
 
 The following spans have been introduced in .NET 9 to enable collecting detailed connection information:
+
 - [`HTTP wait_for_connection`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request-wait-for-connection-experimental): A child span of the `HTTP client request` span that represents the time interval the request is spending in the request queue waiting for an available connection.
 - [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental): Represents the establishment of the HTTP connection.
 - [`DNS lookup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#dns-lookup-experimental): DNS lookup performed via the <xref:System.Net.Dns> class.
 - [`socket connect`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#socket-connect-experimental): Establishment of a <xref:System.Net.Sockets.Socket> connetion.
 - [`TLS handshake`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#tls-handshake-experimental): TLS client or server handshake performed by <xref:System.Net.Security.SslStream>.
 
-The corresponding `ActivitySource` names start with the prefix `Experimental` as these spans may be changed in future versions as we learn more about how well they work in production. 
+The corresponding `ActivitySource` names start with the prefix `Experimental` as these spans may be changed in future versions as we learn more about how well they work in production.
 
-These spans are probably too verbose for use 24x7 in production scenarios with high workloads - they are somewhat noisy and this level of data is not normally needed. However if you are trying to diagnose connection issues or get a deeper understanding of how network and connection latency is affecting your services, then they provide insight that is hard to collect by other means. 
+These spans are probably too verbose for use 24x7 in production scenarios with high workloads - they are somewhat noisy and this level of data is not normally needed. However if you are trying to diagnose connection issues or get a deeper understanding of how network and connection latency is affecting your services, then they provide insight that is hard to collect by other means.
 
 When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, the `HTTP connection_setup` span is linked from the `HTTP client request` span*. As an http connection can be long lived, this could result in many links to the connection span from each of the request activities. Some APM monitoring tools aggresively walk links between spans to build up their views and so including this span may cause issues when the tools were not designed to account for large numbers of links.
 
@@ -109,23 +112,23 @@ This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/b
 
 1. Create a **.NET Aspire 9 Starter App** by using `dotnet new`:
 
-```dotnetcli
-dotnet new aspire-starter-9 --output ConnectionTracingDemo
-```
+    ```dotnetcli
+    dotnet new aspire-starter-9 --output ConnectionTracingDemo
+    ```
 
-Or in Visual Studio:
+    Or in Visual Studio:
 
-![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
+    ![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
 
-2. Open `Extensions.cs` in the `ServiceDefaults` project, and edit the `ConfigureOpenTelemetry` method adding the ActivitySources for connection in the tracing configuration callback:
+1. Open `Extensions.cs` in the `ServiceDefaults` project, and edit the `ConfigureOpenTelemetry` method adding the ActivitySources for connection in the tracing configuration callback:
 
-:::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_ConnectionTracing":::
+    :::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_ConnectionTracing":::
 
-3. Start the solution. This should open the [.NET Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/overview).
+1. Start the solution. This should open the [.NET Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/overview).
 
-4. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`.
+1. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`.
 
-5. Return to the Dashboard and navigate to the **Traces** page. Open the `webfrontend: GET /weather` trace. 
+1. Return to the Dashboard and navigate to the **Traces** page. Open the `webfrontend: GET /weather` trace. 
 
 When http requests are made with the connection instrumentation enabled, you should see the following changes to the client request spans:
 
@@ -135,7 +138,7 @@ When http requests are made with the connection instrumentation enabled, you sho
   - The selected span is the HttpClient request.
   - The one below it is the delay waiting for a connection to be established.
   - The lasts span in yellow is from the destination processing the request.
-- The HttpClient span will have a link to the `HTTP connection_setup` span which represents the activity to create the http connection used by the request. 
+- The HttpClient span will have a link to the `HTTP connection_setup` span which represents the activity to create the http connection used by the request.
 
 [![Connection setup spans in Aspire Dashboard](media/aspire-connection_setup-thumb.png)](media/aspire-connection_setup.png#lightbox)
 

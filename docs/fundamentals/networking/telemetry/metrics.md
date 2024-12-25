@@ -19,9 +19,10 @@ They are also [multi-dimensional](../../../core/diagnostics/metrics-instrumentat
 
 ## Collect System.Net metrics
 
-In order to take advangage of the built-in metrics instrumentation, a .NET app needs to be configured to collect these metrics. This typically means transforming them for external storage and analysis, e.g., to monitoring systems. 
+In order to take advangage of the built-in metrics instrumentation, a .NET app needs to be configured to collect these metrics. This typically means transforming them for external storage and analysis, e.g., to monitoring systems.
 
 There are several ways of collecting networking metrics in .NET.
+
 - For a quick overview using a simple, self-contained example, see [collecting metrics with dotnet-counters](#collecting-metrics-with-dotnet-counters).
 - For **production-time** metrics collection and monitoring, you can use [Grafana with OpenTelemetry and Prometheus](#view-metrics-in-grafana-with-opentelemetry-and-prometheus) or [Azure Monitor  Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex, and may be inconvenient to use at development time.
 - For **development-time** metrics collection and troubleshooting we recommend to use [.NET Aspire](#collecting-metrics-with-net-aspire), which provides a simple, but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
@@ -53,6 +54,7 @@ When running against a .NET 8+ process, `dotnet-counters` enables the instrument
 ```console
 dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n HelloBuiltinMetrics
 ```
+
 ### Collecting metrics with .NET Aspire
 
 The simplest solution for collecting metrics for ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview) which is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET.
@@ -67,29 +69,29 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
 
 1. Create a **.NET Aspire 9 Starter App** by using `dotnet new`:
 
-```dotnetcli
-dotnet new aspire-starter-9 --output AspireDemo
-```
+    ```dotnetcli
+    dotnet new aspire-starter-9 --output AspireDemo
+    ```
 
-Or in Visual Studio:
+    Or in Visual Studio:
 
-![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
+    ![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
 
-2. Open `Extensions.cs` in the `ServiceDefaults` project, and scroll to the `ConfigureOpenTelemetry` method. Notice the `AddHttpClientInstrumentation()` call subscribing to the networking meters.
+1. Open `Extensions.cs` in the `ServiceDefaults` project, and scroll to the `ConfigureOpenTelemetry` method. Notice the `AddHttpClientInstrumentation()` call subscribing to the networking meters.
 
-:::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_Metrics" highlight="3":::
+    :::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_Metrics" highlight="3":::
 
-Note that on .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual meter subscription:
+    Note that on .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual meter subscription:
 
-```csharp
-.WithMetrics(metrics =>
-{
-    metrics.AddAspNetCoreInstrumentation()
-        .AddMeter("System.Net.Http")
-        .AddMeter("System.Net.NameResolution")
-        .AddRuntimeInstrumentation();
-})
-```
+    ```csharp
+    .WithMetrics(metrics =>
+    {
+        metrics.AddAspNetCoreInstrumentation()
+            .AddMeter("System.Net.Http")
+            .AddMeter("System.Net.NameResolution")
+            .AddRuntimeInstrumentation();
+    })
+    ```
 
 3. Run the `AppHost` project. This should launch the Aspire Dashboard.
 
@@ -97,7 +99,7 @@ Note that on .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual
 
 5. Return to the Dashboard, navigate to the **Metrics** page and select the `webfrontend` resource. Srolling down, you should be able to browse the built-in `System.Net` metrics.
 
-[![Networking metrics in Aspire Dashboard](media/aspire-metrics-thumb.png)](media/aspire-metrics.png#lightbox)
+    [![Networking metrics in Aspire Dashboard](media/aspire-metrics-thumb.png)](media/aspire-metrics.png#lightbox)
 
 For more details on .NET Aspire see:
 
@@ -128,7 +130,7 @@ app.Run();
 
 For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../core/diagnostics/observability-otlp-example.md).
 
-### View metrics in Grafana with OpenTelemetry and Prometheus 
+### View metrics in Grafana with OpenTelemetry and Prometheus
 
 Please follow our tutorial on [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md).
 

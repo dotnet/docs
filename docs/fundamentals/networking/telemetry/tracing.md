@@ -30,11 +30,11 @@ The built-in instrumentation has evolved with .NET versions.
 
 ## Collecting System.Net traces
 
-At the [lowest level](../../../core/diagnostics/distributed-tracing-collection-walkthroughs#collect-traces-using-custom-logic), trace collection is supported via the <xref:System.Diagnostics.ActivitySource.AddActivityListener%2A> method that can be used to register <xref:System.Diagnostics.ActivityListener> objects containing user-defined logic.
+At the [lowest level](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-custom-logic), trace collection is supported via the <xref:System.Diagnostics.ActivitySource.AddActivityListener%2A> method that can be used to register <xref:System.Diagnostics.ActivityListener> objects containing user-defined logic.
 
 However, as an application developer, you would likely prefer to rely on the rich ecosystem built upon the features provided by the [OpenTelemetry .NET SDK](https://opentelemetry.io/docs/languages/net/) to collect, export and monitor traces.
 
-- To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs#collect-traces-using-opentelemetry).
+- To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-opentelemetry).
 - For **production-time** trace collection and monitoring, you can use OpenTelemetry with [Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) or with [Azure Monitor and Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex, and may be inconvenient to use at development time.
 - For **development-time** trace collection and monitoring, we recommend to use [.NET Aspire](#collecting-traces-with-net-aspire) which provides a simple, but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
 - It is also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration API-s into your ASP.NET project.

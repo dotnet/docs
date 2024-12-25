@@ -108,7 +108,7 @@ When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, t
 
 ### Walkthrough: Using the experimental connection tracing in .NET 9
 
-This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/build-your-first-aspire-app) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collecting-systemnet-traces). The key step is to enable the ActivitySources. 
+This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/build-your-first-aspire-app) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collecting-systemnet-traces). The key step is to enable the ActivitySources.
 
 1. Create a **.NET Aspire 9 Starter App** by using `dotnet new`:
 
@@ -128,7 +128,7 @@ This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/b
 
 1. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`.
 
-1. Return to the Dashboard and navigate to the **Traces** page. Open the `webfrontend: GET /weather` trace. 
+1. Return to the Dashboard and navigate to the **Traces** page. Open the `webfrontend: GET /weather` trace.
 
 When http requests are made with the connection instrumentation enabled, you should see the following changes to the client request spans:
 

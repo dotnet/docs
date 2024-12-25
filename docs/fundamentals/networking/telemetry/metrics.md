@@ -93,11 +93,11 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
     })
     ```
 
-3. Run the `AppHost` project. This should launch the Aspire Dashboard.
+1. Run the `AppHost` project. This should launch the Aspire Dashboard.
 
-4. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`. Refresh the page several times to send multiple requests.
+1. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`. Refresh the page several times to send multiple requests.
 
-5. Return to the Dashboard, navigate to the **Metrics** page and select the `webfrontend` resource. Srolling down, you should be able to browse the built-in `System.Net` metrics.
+1. Return to the Dashboard, navigate to the **Metrics** page and select the `webfrontend` resource. Srolling down, you should be able to browse the built-in `System.Net` metrics.
 
     [![Networking metrics in Aspire Dashboard](media/aspire-metrics-thumb.png)](media/aspire-metrics.png#lightbox)
 

@@ -94,11 +94,14 @@ When troubleshooting `HttpClient` issues or bottlenecks, it might be crutial to 
 
 The following spans have been introduced in .NET 9 to enable collecting detailed connection information:
 
-- [`HTTP wait_for_connection`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request-wait-for-connection-experimental): A child span of the `HTTP client request` span that represents the time interval the request is spending in the request queue waiting for an available connection.
-- [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental): Represents the establishment of the HTTP connection.
-- [`DNS lookup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#dns-lookup-experimental): DNS lookup performed via the <xref:System.Net.Dns> class.
-- [`socket connect`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#socket-connect-experimental): Establishment of a <xref:System.Net.Sockets.Socket> connetion.
-- [`TLS handshake`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#tls-handshake-experimental): TLS client or server handshake performed by <xref:System.Net.Security.SslStream>.
+
+| Name | <xref:System.Diagnostics.ActivitySource> | Description |
+|---|---|---|
+| [`HTTP wait_for_connection`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request-wait-for-connection-experimental) | `Experimental.System.Net.Http.Connections` | A child span of the `HTTP client request` span that represents the time interval the request is spending in the request queue waiting for an available connection. |
+| [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental) | `Experimental.System.Net.Http.Connections	` | Represents the establishment of the HTTP connection. |
+| [`DNS lookup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#dns-lookup-experimental) | `Experimental.System.Net.NameResolution` | DNS lookup performed by the <xref:System.Net.Dns> class. |
+| [`socket connect`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#socket-connect-experimental) | `Experimental.System.Net.Sockets` | Establishment of a <xref:System.Net.Sockets.Socket> connetion. |
+| [`TLS handshake`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#tls-handshake-experimental) | `Experimental.System.Net.Security` | TLS client or server handshake performed by <xref:System.Net.Security.SslStream>. |
 
 The corresponding `ActivitySource` names start with the prefix `Experimental` as these spans may be changed in future versions as we learn more about how well they work in production.
 
@@ -134,15 +137,15 @@ When http requests are made with the connection instrumentation enabled, you sho
 
 [![HttpClient Spans in Aspire Dashboard](media/aspire-httpclient-get-thumb.png)](media/aspire-httpclient-get.png#lightbox)
 
-- If a connection needs to be established, or waiting for a connection from the connection pool, then an additional `HTTP wait_for_connection` span will be shown which represents the delay for waiting for a connection to be made. This helps to understand delays between the `HttpClient` request being made in code, and when the processing of the request actually starts. In the picture above:
+- If a connection needs to be established, or waiting for a connection from the connection pool, then an additional [`HTTP wait_for_connection`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request-wait-for-connection-experimental) span will be shown which represents the delay for waiting for a connection to be made. This helps to understand delays between the `HttpClient` request being made in code, and when the processing of the request actually starts. In the picture above:
   - The selected span is the HttpClient request.
   - The one below it is the delay waiting for a connection to be established.
   - The lasts span in yellow is from the destination processing the request.
-- The HttpClient span will have a link to the `HTTP connection_setup` span which represents the activity to create the http connection used by the request.
+- The HttpClient span will have a link to the [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental) span which represents the activity to create the http connection used by the request.
 
 [![Connection setup spans in Aspire Dashboard](media/aspire-connection_setup-thumb.png)](media/aspire-connection_setup.png#lightbox)
 
-The `HTTP connection_setup` span is a separate span with its own `TraceId` as its lifetime is independent from each individual client request. Many client requests can be made over the same http connection, and if its already established and available (http 1.1 supports sequential requests over the same connection, http 2 & 3 enable parallel requests) then the request can reuse that connection. This span will typically have child spans `DNS lookup`, (TCP) `socket connect` and `TLS client handshake`.
+The [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental) span is a separate span with its own `TraceId` as its lifetime is independent from each individual client request. Many client requests can be made over the same http connection, and if its already established and available (http 1.1 supports sequential requests over the same connection, http 2 & 3 enable parallel requests) then the request can reuse that connection. This span will typically have child spans [`DNS lookup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#dns-lookup-experimental), (TCP) [`socket connect`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#socket-connect-experimental) and [`TLS client handshake`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#tls-handshake-experimental).
 
 ## Enrichment
 

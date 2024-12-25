@@ -94,11 +94,10 @@ When troubleshooting `HttpClient` issues or bottlenecks, it might be crutial to 
 
 The following spans have been introduced in .NET 9 to enable collecting detailed connection information:
 
-
 | Name | <xref:System.Diagnostics.ActivitySource> | Description |
 |---|---|---|
 | [`HTTP wait_for_connection`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request-wait-for-connection-experimental) | `Experimental.System.Net.Http.Connections` | A child span of the `HTTP client request` span that represents the time interval the request is spending in the request queue waiting for an available connection. |
-| [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental) | `Experimental.System.Net.Http.Connections	` | Represents the establishment of the HTTP connection. |
+| [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental) | `Experimental.System.Net.Http.Connections` | Represents the establishment of the HTTP connection. |
 | [`DNS lookup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#dns-lookup-experimental) | `Experimental.System.Net.NameResolution` | DNS lookup performed by the <xref:System.Net.Dns> class. |
 | [`socket connect`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#socket-connect-experimental) | `Experimental.System.Net.Sockets` | Establishment of a <xref:System.Net.Sockets.Socket> connetion. |
 | [`TLS handshake`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#tls-handshake-experimental) | `Experimental.System.Net.Security` | TLS client or server handshake performed by <xref:System.Net.Security.SslStream>. |
@@ -111,7 +110,7 @@ When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, t
 
 ### Walkthrough: Using the experimental connection tracing in .NET 9
 
-This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/build-your-first-aspire-app) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collecting-systemnet-traces). The key step is to enable the ActivitySources.
+This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/build-your-first-aspire-app) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collecting-systemnet-traces) as well. The key step is to enable the ActivitySources.
 
 1. Create a **.NET Aspire 9 Starter App** by using `dotnet new`:
 
@@ -133,9 +132,9 @@ This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/b
 
 1. Return to the Dashboard and navigate to the **Traces** page. Open the `webfrontend: GET /weather` trace.
 
-When http requests are made with the connection instrumentation enabled, you should see the following changes to the client request spans:
-
 [![HttpClient Spans in Aspire Dashboard](media/aspire-httpclient-get-thumb.png)](media/aspire-httpclient-get.png#lightbox)
+
+When http requests are made with the connection instrumentation enabled, you should see the following changes to the client request spans:
 
 - If a connection needs to be established, or waiting for a connection from the connection pool, then an additional [`HTTP wait_for_connection`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request-wait-for-connection-experimental) span will be shown which represents the delay for waiting for a connection to be made. This helps to understand delays between the `HttpClient` request being made in code, and when the processing of the request actually starts. In the picture above:
   - The selected span is the HttpClient request.

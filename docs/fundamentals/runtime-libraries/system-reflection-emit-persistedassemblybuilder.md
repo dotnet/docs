@@ -124,7 +124,6 @@ The following example shows how to read resources from the assembly created abov
 
 :::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadataSnippets.cs" id="Snippet3":::
 
-
 > [!NOTE]
 > The metadata tokens for all members are populated on the <xref:System.Reflection.Emit.AssemblyBuilder.Save%2A> operation. Don't use the tokens of a generated type and its members before saving, as they'll have default values or throw exceptions. It's safe to use tokens for types that are referenced, not generated.
 >

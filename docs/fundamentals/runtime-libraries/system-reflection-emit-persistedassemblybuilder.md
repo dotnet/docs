@@ -120,7 +120,7 @@ The following example shows how to create resources and attach it to the assembl
 
 :::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadataSnippets.cs" id="Snippet2":::
 
-The following example shows how to read resources from the assembly created above.
+The following example shows how to read resources from the created assembly.
 
 :::code language="csharp" source="./snippets/System.Reflection.Emit/PersistedAssemblyBuilder/Overview/csharp/GenerateMetadataSnippets.cs" id="Snippet3":::
 

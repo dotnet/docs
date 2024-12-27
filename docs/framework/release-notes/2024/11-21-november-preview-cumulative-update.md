@@ -6,6 +6,7 @@ ms.date: 11/21/2024
 # November 2024 cumulative update preview
 
 _Released Novemeber 21, 2024_
+_*Revised: December 18th, 2024 to updated the quality and reliability improvement.  If you have already installed this update, no action is needed.
 
 ## Summary of what's new in this release
 
@@ -20,7 +21,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 #### CLR
 
-Addresses an issue where, in rare cases, an infinite loop could occur when a thread enters CLR for the first time. (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Address crashes that can occur due to certain interactions between multi-module assembly native image usage and OS code integrity enforcement policy updates. (*Applies to: .NET Framework 4.8, 4.8.1.*)
 
 ## Known issues in this release
 
@@ -37,7 +38,7 @@ The following table outlines the updates in this release.
 | **Windows 11, version 22H2 and Windows 11, version 23H2** | |
 | .NET Framework 3.5, 4.8.1 | [5048163](https://support.microsoft.com/kb/5048163) |
 | **Windows 10, version 22H2** | **[5048292](https://support.microsoft.com/kb/5048292)** |
-| .NET Framework 3.5, 4.8 | [5048160](https://support.microsoft.com/kb/50481606) |
+| .NET Framework 3.5, 4.8 | [5048160](https://support.microsoft.com/kb/5048160) |
 | .NET Framework 3.5, 4.8.1 | [5048161](https://support.microsoft.com/kb/5048161) |
 
 The operating system row lists a KB that's used for update offering purposes. When the operating system KB is offered, the applicability logic determines the specific .NET Framework update(s) that will be installed. Updates for individual .NET Framework versions will be installed based on the version of .NET Framework that is already present on the device. Because of this, the operating system KB is not expected to be listed as installed updates on the device. The expected update to be installed are the .NET Framework-specific version updates listed in the previous table.

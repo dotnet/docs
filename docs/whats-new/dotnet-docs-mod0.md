@@ -64,7 +64,7 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [Roshni-Gandhi](https://github.com/Roshni-Gandhi) -  ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [AptiviCEO](https://github.com/AptiviCEO) - Aptivi CEO ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [bb-froggy](https://github.com/bb-froggy) - Christoph Hannebauer ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [bravequickcleverfibreyarn](https://github.com/bravequickcleverfibreyarn) - boldswiftsmartfiberhank ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- bravequickcleverfibreyarn - boldswiftsmartfiberhank ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [ChinoUkaegbu](https://github.com/ChinoUkaegbu) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [colejohnson66](https://github.com/colejohnson66) - Cole Tobin ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [da1910](https://github.com/da1910) - Doug Addy ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

@@ -72,7 +72,8 @@ Module Program
     Private Sub Get45PlusFromRegistry()
         Const subkey As String = "SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\"
 
-        Using ndpKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32).OpenSubKey(subkey)
+        Using baseKey As RegistryKey = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry32),
+            ndpKey As RegistryKey = baseKey.OpenSubKey(subkey)
             If ndpKey IsNot Nothing AndAlso ndpKey.GetValue("Release") IsNot Nothing Then
                 Console.WriteLine($".NET Framework Version: {CheckFor45PlusVersion(ndpKey.GetValue("Release"))}")
             Else

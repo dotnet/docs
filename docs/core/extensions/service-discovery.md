@@ -9,7 +9,7 @@ ms.topic: overview
 
 # Service discovery in .NET
 
-In this article, you learn how to use the `Microsoft.Extensions.ServiceDiscovery` library. Service discovery is a way for developers to use logical names instead of physical addresses (IP address and port) to refer to external services.
+In this article, you will learn how to use the `Microsoft.Extensions.ServiceDiscovery` library. Service discovery is a way for developers to use logical names instead of physical addresses (IP address and port) to refer to external services.
 
 ## Get started
 

@@ -53,14 +53,19 @@ static IEnumerable<XElement> StreamRootChildDoc(StringReader stringReader)
     }
 }
 
-string markup = @"<Root>
-    <Child Key=""01""><GrandChild>aaa</GrandChild>fda</Child>fda<Child Key=""02"">
-    <GrandChild>bbb</GrandChild>
-    </Child>
-    <Child Key=""03"">
-    <GrandChild>ccc</GrandChild>
-    </Child>
-</Root>";
+string markup = """
+                <Root>
+                  <Child Key="01">
+                    <GrandChild>aaa</GrandChild>
+                  </Child>
+                  <Child Key="02">
+                    <GrandChild>bbb</GrandChild>
+                  </Child>
+                  <Child Key="03">
+                    <GrandChild>ccc</GrandChild>
+                  </Child>
+                </Root>
+                """;
 
 IEnumerable<string> grandChildData =
     from el in StreamRootChildDoc(new StringReader(markup))

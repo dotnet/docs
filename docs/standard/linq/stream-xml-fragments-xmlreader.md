@@ -45,8 +45,7 @@ static IEnumerable<XElement> StreamRootChildDoc(StringReader stringReader)
             // Get the current node and advance the reader to the next
             if (XNode.ReadFrom(reader) is XElement el)
                 yield return el;
-            else
-                continue;
+
         }
         else if (!reader.Read())
             break;
@@ -96,8 +95,6 @@ Module Module1
 
                     If (el IsNot Nothing) Then
                         Yield el
-                    Else
-                        Continue While
                     End If
 
                 ElseIf Not reader.Read() Then

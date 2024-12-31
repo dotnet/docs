@@ -76,7 +76,7 @@ When you install with a package manager, these libraries are installed for you. 
 - libssl3
 - libstdc++
 - zlib
-- icu-libs and icu-data-full (unless the .NET app is running in [globalization-invariant mode](../runtime-config/globalization#invariant-mode)
+- icu-libs and icu-data-full (unless the .NET app is running in [globalization-invariant mode](../runtime-config/globalization.md#invariant-mode)
 - libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 
 Use the `apk add` command to install the dependencies.

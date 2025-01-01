@@ -36,7 +36,7 @@ A test context property is not following single or multiple points of the requir
 `TestContext` properties should follow the given layout to be considered valid by MSTest:
 
 - they should be properties and not fields
-- they should be named `TestContext` (case insensitive)
+- they should be named `TestContext` (case sensitive)
 - they should be `public` (or `internal` if the `[assembly: DiscoverInternals]` assembly attribute is set)
 - they should not be `static`
 - they should not be readonly

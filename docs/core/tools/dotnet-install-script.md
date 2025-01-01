@@ -1,9 +1,12 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 08/01/2023
+ms.date: 12/26/2024
 ---
 # dotnet-install scripts reference
+
+> [!NOTE]
+> The behavior of the install script has changed. It downloads .NET from new network locations. For more information, see [Critical: .NET Install links are changing](https://devblogs.microsoft.com/dotnet/critical-dotnet-install-links-are-changing/).
 
 ## Name
 
@@ -99,7 +102,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-AzureFeed|--azure-feed`**
 
-  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://dotnetcli.azureedge.net/dotnet`.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://builds.dotnet.microsoft.com/dotnet`.
 
 - **`-Channel|--channel <CHANNEL>`**
 

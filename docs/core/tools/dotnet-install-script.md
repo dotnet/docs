@@ -5,7 +5,8 @@ ms.date: 12/26/2024
 ---
 # dotnet-install scripts reference
 
-Note: The behavior of the install script has changed. It downloads .NET from new network locations. Please see [Critical: .NET Install links are changing](https://devblogs.microsoft.com/dotnet/critical-dotnet-install-links-are-changing/) for more information.
+> [!NOTE]
+> The behavior of the install script has changed. It downloads .NET from new network locations. For more information, see [Critical: .NET Install links are changing](https://devblogs.microsoft.com/dotnet/critical-dotnet-install-links-are-changing/).
 
 ## Name
 

@@ -256,7 +256,7 @@ Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 
 ## Known limitations
 
-The MSTest SDK has limited integration with NuGet, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages **DOES NOT** work as expected. See this issue for more details: [NuGet#13127](https://github.com/NuGet/Home/issues/13127).
+The NuGet-provided MSBuild Sdks (including MSTest.Sdk) have limited tooling support when it comes to updating its version, meaning that the usual NuGet update and Visual Studio UI for managing NuGet packages does not work as expected. See this issue for more details: [NuGet#13127](https://github.com/NuGet/Home/issues/13127).
 
 > [!NOTE]
 > This limitation is not specific to MSTest SDK but to any NuGet-provided MSBuild SDK.

@@ -189,7 +189,7 @@ Setup and cleanup that is common to multiple tests can be extracted to a separat
 
 [AssemblyInitialize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>) is called right after your assembly is loaded and [AssemblyCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>) is called right before your assembly is unloaded.
 
-The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext).
 
 ```csharp
 [TestClass]
@@ -201,23 +201,7 @@ public class MyTestClass
     }
 
     [AssemblyCleanup]
-    public static void AssemblyCleanup()
-    {
-    }
-}
-```
-
-```csharp
-[TestClass]
-public class MyOtherTestClass
-{
-    [AssemblyInitialize]
-    public static async Task AssemblyInitialize(TestContext testContext)
-    {
-    }
-
-    [AssemblyCleanup]
-    public static async Task AssemblyCleanup()
+    public static void AssemblyCleanup() // Starting with MSTest 3.8, it can be AssemblyCleanup(TestContext testContext)
     {
     }
 }
@@ -231,7 +215,7 @@ It's possible to control the inheritance behavior: only for current class using 
 
 It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly.
 
-The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext).
 
 ```csharp
 [TestClass]
@@ -243,7 +227,7 @@ public class MyTestClass
     }
 
     [ClassCleanup]
-    public static void ClassCleanup()
+    public static void ClassCleanup() // Starting with MSTest 3.8, it can be ClassCleanup(TestContext testContext)
     {
     }
 }
@@ -259,7 +243,7 @@ public class MyOtherTestClass
     }
 
     [ClassCleanup]
-    public static async Task ClassCleanup()
+    public static async Task ClassCleanup() // Starting with MSTest 3.8, it can be ClassCleanup(TestContext testContext)
     {
     }
 }

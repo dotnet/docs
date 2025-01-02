@@ -38,7 +38,22 @@ The default value of `Decimal` is 0.
 
 - **Performance.** The `Decimal` data type is the slowest of all the numeric types. You should weigh the importance of precision against performance before choosing a data type.
 
-- **Widening.** The `Decimal` data type widens to `Single` or `Double`. This means you can convert `Decimal` to either of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.
+- **Widening.** The `Decimal` data type can be converted to `Single` or `Double` without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error. However, this conversion may result in **loss of precision**, as `Single` and `Double` prioritize accommodating larger values over preserving precision.
+
+```vb
+Dim decimalValue As Decimal = 1234567890123456789012345D
+Dim doubleValue As Double = CDbl(decimalValue)
+
+Console.WriteLine("Decimal value: " & decimalValue)
+Console.WriteLine("Double value: " & doubleValue)
+```
+
+The output of the preceding example shows that the **Decimal value** retains full precision, while the **Double value** loses precision due to the limitations of the `Double` data type.
+
+```console
+ Decimal value: 1234567890123456789012345
+ Double value: 1.23456789012346E+24
+```
 
 - **Trailing Zeros.** Visual Basic does not store trailing zeros in a `Decimal` literal. However, a `Decimal` variable preserves any trailing zeros acquired computationally. The following example illustrates this.
 

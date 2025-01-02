@@ -1,6 +1,6 @@
-id:
-name: GitOps.PullRequestIssueManagement
-description: GitOps.PullRequestIssueManagement primitive
+id: label.issues
+name: GitOps.IssueManagement
+description: Management logic around issues
 owner:
 resource: repository
 disabled: false
@@ -24,6 +24,109 @@ configuration:
                         label: okr-quality
 
         eventResponderTasks:
+            - description: >-
+                Add "not triaged" label when:
+                * Issue is opened
+                * Issue is reopened
+                * 'needs-more-info' label removed
+              if:
+                - payloadType: Issues
+                - or:
+                
+                  - or:
+                    - isAction: 
+                        action: Opened
+                    - isAction: 
+                        action: Reopened
+                        
+                  - labelRemoved:
+                      label: 'needs-more-info'
+              then:
+                - addLabel: ':watch: Not Triaged'
+
+            - description: >-
+                Remove "not triaged" label when:
+                * Issue author closes the issue
+                * reQUEST label is added
+              if:
+                - payloadType: Issues
+                - hasLabel:
+                    label: ':watch: Not Triaged'
+                - or:
+                  - and:
+                    - isAction: 
+                        action: Closed
+                    - isActivitySender:
+                        issueAuthor: true
+                  
+                  - labelAdded: 
+                      label: ':world_map: reQUEST'
+              then:
+                - removeLabel: ':watch: Not Triaged'
+
+            - description: >-
+                When the label "mapQUEST" is added to an issue
+                * Remove label "mapQUEST"
+              if:
+                - or:
+                  - payloadType: Issues
+                  - payloadType: Pull_Request
+
+                - labelAdded:
+                    label: ':world_map: mapQUEST'
+              then:
+                - removeLabel: ':world_map: mapQUEST'
+
+            - description: Label dependabot issues
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Opened
+                - or:
+                  - isActivitySender:
+                      user: dependabot
+                  - isActivitySender:
+                      user: dependabot[bot]
+              then:
+                - addLabel:
+                   label: dependencies
+
+            - description: Remove "won't fix" label when issue is reopened
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Reopened
+                - hasLabel:
+                    label: "won't fix"
+                  
+              then:
+                - removeLabel:
+                   label: "won't fix"
+
+            - description: Remove "in-progress" label when issue closed
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Closed
+                - hasLabel:
+                    label: 'in-progress'
+                  
+              then:
+                - removeLabel:
+                   label: 'in-progress'
+
+            - description: Add "resolved-by-customer" label when issue closed by author. 
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Closed
+                - isActivitySender:
+                    issueAuthor: true
+
+              then:
+                - addLabel:
+                   label: resolved-by-customer
+
             - description: Add in-pr label to issues
               if:
                   - payloadType: Pull_Request

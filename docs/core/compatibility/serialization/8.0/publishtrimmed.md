@@ -49,3 +49,7 @@ However, if you must use reflection, you can revert to the original behavior by 
 ## Affected APIs
 
 N/A
+
+## See also
+
+- [Trimming options: Enable trimming](../../../deploying/trimming/trimming-options.md#enable-trimming)

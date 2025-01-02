@@ -207,6 +207,22 @@ public class MyTestClass
 }
 ```
 
+```csharp
+[TestClass]
+public class MyOtherTestClass
+{
+    [AssemblyInitialize]
+    public static async Task AssemblyInitialize(TestContext testContext)
+    {
+    }
+
+    [AssemblyCleanup]
+    public static async Task AssemblyCleanup() // Starting with MSTest 3.8, it can be AssemblyCleanup(TestContext testContext)
+    {
+    }
+}
+```
+
 ### Class level
 
 [ClassInitialize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>) is called right before your class is loaded (but after static constructor) and [ClassCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) is called right after your class is unloaded.

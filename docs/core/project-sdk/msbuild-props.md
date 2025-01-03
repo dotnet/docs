@@ -1783,7 +1783,16 @@ In addition to the standard [MSBuild item attributes](/visualstudio/msbuild/item
 
 ### CopyToPublishDirectory
 
-The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item is copied to the publish directory. Allowable values are `PreserveNewest`, which only copies the item if it has changed in the source location, `IfDifferent`, which only copies the item if it has changed either in the source or target location (helpful for situations where we need to reset changs occuring after the publishing), `Always`, which always copies the item, and `Never`, which never copies the item. From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build. `Always` should be avoided - as any scenarios requiring it should be achievable with more effective `IfDifferent`.
+The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item is copied to the publish directory. The following table shows the allowable values.
+
+| Value | Description |
+| ------ | ------------ |
+| `PreserveNewest` | Only copies the item if it has changed in the source location. |
+| `IfDifferent` | Only copies the item if it has changed either in the source or target location. This setting is helpful for situations where you need to reset changes that occur after publishing. |
+| `Always` | Always copies the item. |
+| `Never` | Never copies the item. |
+
+From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build. Avoid using `Always` and use `IfDifferent` instead, which is more effective.
 
 ```xml
 <ItemGroup>

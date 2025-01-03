@@ -1792,7 +1792,7 @@ The `CopyToPublishDirectory` metadata on an MSBuild item controls when the item 
 | `Always` | Always copies the item. |
 | `Never` | Never copies the item. |
 
-From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build. Avoid using `Always` and use `IfDifferent` instead, which is more effective.
+From a performance standpoint, `PreserveNewest` is preferable because it enables an incremental build. Avoid using `Always` and use `IfDifferent` instead, which avoids I/O writes with no effect.
 
 ```xml
 <ItemGroup>

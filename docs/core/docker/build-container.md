@@ -502,6 +502,9 @@ C:\>dir
 C:\>^C
 ```
 
+> [!NOTE]
+> This example only works on Windows containers. Linux containers don't have `cmd.exe`.
+
 #### [Linux](#tab/linux)
 
 In this example, `ENTRYPOINT` is changed to `bash`. The `exit` command is run which ends the process and stop the container.
@@ -518,6 +521,9 @@ Counter: 3
 root@9f8de8fbd4a8:/App# exit
 exit
 ```
+
+> [!NOTE]
+> This example only works on Linux containers. Windows containers don't have `bash`.
 
 ---
 

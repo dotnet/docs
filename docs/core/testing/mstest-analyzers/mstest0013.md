@@ -38,7 +38,7 @@ Methods marked with `[AssemblyCleanup]` should follow the following layout to be
 - it should not be `async void`
 - it should not be a special method (finalizer, operator...).
 - it should not be generic
-- it should not take any parameter
+- it should not take any parameter, or starting with MSTest 3.8, it can have a single `TestContext` parameter
 - return type should be `void`, `Task` or `ValueTask`
 
 The type declaring these methods should also respect the following rules:

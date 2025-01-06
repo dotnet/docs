@@ -76,7 +76,6 @@ Welcome to what's new in the .NET docs for December 2024. This article lists som
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [shethaadit](https://github.com/shethaadit) - Adit Sheth ![5 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-5-green)
 - [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [DaRosenberg](https://github.com/DaRosenberg) - Daniel Rosenberg ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
 - [DonCorleone](https://github.com/DonCorleone) - Linus Wieland ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

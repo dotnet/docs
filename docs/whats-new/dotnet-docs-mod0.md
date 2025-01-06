@@ -55,9 +55,6 @@ Welcome to what's new in the .NET docs for December 2024. This article lists som
 
 ## AI in .NET
 
-### New articles
-
-
 ### Updated articles
 
 - [Build a .NET AI vector search app](../ai/quickstarts/quickstart-ai-chat-with-data.md) - New vector search quickstart

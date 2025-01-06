@@ -55,27 +55,17 @@ For more information, see [Publish .NET apps with .NET CLI](../deploy-with-cli.m
 
 ### Publish with Visual Studio
 
-01. In **Solution Explorer**, right-click on the project you want to publish and select **Publish**.
+01. In **Solution Explorer**, right-click on the project you want to publish and select **Properties**.
 
-    :::image type="content" source="../media/trim-self-contained/visual-studio-solution-explorer.png" alt-text="Solution Explorer with a right-click menu highlighting the Publish option.":::
+    :::image type="content" source="../media/trim-self-contained/vs-project-properties.png" alt-text="Solution Explorer with a right-click menu highlighting the Properties option.":::
 
-    If you don't already have a publishing profile, follow the instructions to create one and choose the **Folder** target-type.
+01. Choose **Build** > **Publish**.
 
-01. Choose **More actions** > **Edit**.
+    :::image type="content" source="../media/trim-self-contained/vs-build-publish.png" alt-text="Visual studio publish page with Publish Trimmed option.":::
 
-    :::image type="content" source="../media/trim-self-contained/visual-studio-publish-edit-settings.png" alt-text="Visual studio publish profile with edit button.":::
+01. Select **Publish trimmed** to publish your app trimmed.
 
-01. In the **Profile settings** dialog, set the following options:
-
-    - Set **Deployment mode** to **Self-contained**.
-    - Set **Target runtime** to the platform you want to publish to.
-    - Select **Trim unused code**.
-
-    Choose **Save** to save the settings and return to the **Publish** dialog.
-
-    :::image type="content" source="../media/trim-self-contained/visual-studio-publish-properties.png" alt-text="Profile settings dialog with deployment mode, target runtime, and trim unused assemblies options highlighted.":::
-
-01. Choose **Publish** to publish your app trimmed.
+    :::image type="content" source="../media/trim-self-contained/vs-publish-trimmed.png" alt-text="Visual studio publish page with Publish Trimmed selected.":::
 
 For more information, see [Publish .NET Core apps with Visual Studio](../deploy-with-vs.md).
 

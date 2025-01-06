@@ -111,7 +111,7 @@ The preceding .NET CLI command publishes the app as a container:
 - Specifying an x64 architecture (`--arch x64`).
 
 > [!IMPORTANT]
-> To build the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:
+> To publish the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:
 >
 > ```console
 > ..\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018:

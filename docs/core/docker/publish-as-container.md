@@ -1,13 +1,13 @@
 ---
 title: Containerize an app with dotnet publish
-description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish command and without the use of a Dockerfile.
-ms.date: 08/13/2024
+description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish command without the use of a Dockerfile.
+ms.date: 01/06/2025
 ms.topic: tutorial
 ---
 
 # Containerize a .NET app with dotnet publish
 
-Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command without the use of a Dockerfile. Additionally, you explore how to configure the container image and execution, and how to clean up resources.
+Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command without the use of a Dockerfile. Additionally, you explore how to configure the [container image](container-images.md) and execution, and how to clean up resources.
 
 ## Prerequisites
 
@@ -15,7 +15,14 @@ Install the following prerequisites:
 
 - [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0)\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
-- [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+
+If you plan on running the container image locally, you'll also need an OCI-compatible container runtime, such as:
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [Podman](https://podman.io/)
+
+> [!IMPORTANT]
+> The .NET SDK creates container images without Docker. Docker (or Podman) is only needed if you want to run the image locally. Alternatively, you can save the image as a tarball or push it directly to a container registry without using Docker.
 
 In addition to these prerequisites, it's recommended that you're familiar with [Worker Services in .NET](../extensions/workers.md).
 

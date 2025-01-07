@@ -390,7 +390,7 @@ public class UnitTest1
 The MSTest framework introduced <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> for marking a test method to expect an exception of a specific type. The test will pass if the expected exception is thrown and the exception message matches the expected message.
 
 > [!WARNING]
-> This attribute exists for backward compatibility and is not recommended for new tests. Instead, use the `Assert.ThrowsException` method.
+> This attribute exists for backward compatibility and is not recommended for new tests. Instead, use the `Assert.ThrowsException` (or `Assert.ThrowsExactly` if using MSTest 3.8 and later) method.
 
 ## Metadata attributes
 

@@ -87,7 +87,7 @@ There are various configuration options available when publishing an app as a co
 
 :::code language="xml" source="snippets/Worker/DotNet.ContainerImage.csproj" highlight="8":::
 
-For further reference, see [ContainerRepository](#containerrepository).
+For further reference, see [`ContainerRepository`](publish-configuration.md#containerrepository).
 
 ## Publish .NET app
 
@@ -137,7 +137,7 @@ The preceding command publishes the app as a container to a tarball:
 - Specifying an x64 architecture (`--arch x64`).
 - Setting the `ContainerArchiveOutputPath` property to `./images/container-image.tar.gz`.
 
-The command doesn't require a running OCI-compliant daemon. For more information, see [ContainerArchiveOutputPath](#containerarchiveoutputpath).
+The command doesn't require a running OCI-compliant daemon. For more information, see [`ContainerArchiveOutputPath`](publish-configuration.md#containerarchiveoutputpath).
 
 ### Load the tarball
 
@@ -164,7 +164,7 @@ The preceding code publishes the app as a container to a container registry:
 - Specifying an x64 architecture (`--arch x64`).
 - Setting the `ContainerRegistry` property to `ghcr.io`.
 
-For more information, see [ContainerRegistry](#containerregistry).
+For more information, see [ContainerRegistry](publish-configuration.md#containerregistry).
 
 ## Clean up resources
 
@@ -193,8 +193,8 @@ docker image rm 25aeb97a2e21
 ## Next steps
 
 - [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk)
-- [Tutorial: Containerize a .NET app](build-container.md)
-- [.NET container images](container-images.md)
+- [Tutorial: Containerize a .NET app](../docker/build-container.md)
+- [.NET container images](../docker/container-images.md)
 - [Review the Azure services that support containers](https://azure.microsoft.com/overview/containers/)
 - [Read about Dockerfile commands](https://docs.docker.com/engine/reference/builder/)
 - [Explore the container tools in Visual Studio](/visualstudio/containers/overview)

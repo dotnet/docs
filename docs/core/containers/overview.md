@@ -11,7 +11,7 @@ While it's possible to [containerize .NET apps with a _Dockerfile_](../docker/bu
 
 ## Telemetry
 
-When you publish a .NET app as a container, the .NET SDK container tooling collects and sends usage telemetry about how the tools are used. The collected data is in addition to the [telemetry sent by the .NET CLI](../tools/telemetry.md), but uses the same mechanisms and, importantly, adheres to the same [opt-out](../tools/telemetry#how-to-opt-out) controls.
+When you publish a .NET app as a container, the .NET SDK container tooling collects and sends usage telemetry about how the tools are used. The collected data is in addition to the [telemetry sent by the .NET CLI](../tools/telemetry.md), but uses the same mechanisms and, importantly, adheres to the same [opt-out controls](../tools/telemetry.md#how-to-opt-out).
 
 The telemetry gathered is intended to be general in nature and not leak any personal information—the intended purpose is to help measure:
 

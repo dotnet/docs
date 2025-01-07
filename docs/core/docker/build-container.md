@@ -124,7 +124,7 @@ dotnet publish -c Release
 ```
 
 > [!TIP]
-> If you're interested in publishing your .NET app as a container without the need for Docker, see [Containerize a .NET app with dotnet publish](publish-as-container.md).
+> If you're interested in publishing your .NET app as a container without the need for Docker, see [Containerize a .NET app with dotnet publish](../containers/sdk-publish.md).
 
 The `dotnet publish` command compiles your app to the _publish_ folder. The path to the _publish_ folder from the working folder should be _./App/bin/Release/\<TFM\>/publish/_:
 
@@ -593,7 +593,7 @@ Use the `docker images` command to see a list of images installed.
 
 ## Next steps
 
-- [Containerize a .NET app with dotnet publish](publish-as-container.md)
+- [Containerize a .NET app with dotnet publish](../containers/sdk-publish.md)
 - [.NET container images](container-images.md)
 - [Containerize an ASP.NET Core application](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 - [Azure services that support containers](https://azure.microsoft.com/overview/containers/)

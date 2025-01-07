@@ -397,7 +397,7 @@ dotnet publish -p ContainerUser=root
 
 Labels are often used to provide consistent metadata on container images. This package provides some default labels to encourage better maintainability of the generated images.
 
-- `org.opencontainers.image.created` is set to the ISO 8601 format of the current UTC `DateTime`.
+- `org.opencontainers.image.created` is set to the ISO 8601 format of the current value of <xref:System.DateTime.UtcNow?displayProperty=nameWithType>.
 
 For more information, see [Implement conventional labels on top of existing label infrastructure](https://github.com/dotnet/sdk-container-builds/issues/96).
 

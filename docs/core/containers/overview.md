@@ -32,10 +32,10 @@ The following information about how the base image inference process occurred is
 | `BaseImage` | The value of the base image chosen, but only if that base image is one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `mcr.microsoft.com/dotnet/aspnet` |
 | `BaseImageTag` | The value of the tag chosen, but only if that tag is for one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `8.0` |
 | `ContainerFamily` | The value of the `ContainerFamily` property if a user used the `ContainerFamily` feature to pick a 'flavor' of one of our base images. This is only set if the user picked or inferred one of the Microsoft-produced .NET images from mcr.microsoft.com | `jammy-chiseled` |
-| `ProjectType` | What kind of project was containerized | `AspNetCore` or `Console` |
-| `PublishMode` | How the application was packaged | `Aot`, `Trimmed`, `SelfContained`, or `FrameworkDependent` |
-| `IsInvariant` | If the image chosen requires invariant globalization or the user opted into it manually | `true` |
-| `TargetRuntime` | The RID that this application was published for | `linux-x64` |
+| `ProjectType` | The kind of project that's being containerized. | `AspNetCore` or `Console` |
+| `PublishMode` | How the application was packaged. | `Aot`, `Trimmed`, `SelfContained`, or `FrameworkDependent` |
+| `IsInvariant` | If the image chosen requires invariant globalization or the user opted into it manually. | `true` |
+| `TargetRuntime` | The RID that this application was published for. | `linux-x64` |
 
 ### Image creation telemetry
 

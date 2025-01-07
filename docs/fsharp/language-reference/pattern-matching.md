@@ -219,6 +219,15 @@ let len (str: string | null) =
     | s -> s.Length
 ```
 
+Similarly, you can use new dedicated nullability related [patterns](./active-patterns.md):
+
+```fsharp
+let let str =       // str is inferred to be `string | null`
+    match str with
+    | Null -> -1
+    | NonNull (s: string) -> s.Length
+```
+
 ## Nameof pattern
 
 The `nameof` pattern matches against a string when its value is equal to the expression that follows the `nameof` keyword. for example:

@@ -713,7 +713,7 @@ let checkNonNull' argName (arg: obj) =
     else ()
 ```
 
-To address the warnings, you need to explicitly specify `null` as a possible argument value:
+To address the warnings, you could explicitly specify `null` as a possible argument value:
 
 ```fsharp
 let checkNonNull argName (arg: obj | null) =
@@ -724,6 +724,24 @@ let checkNonNull argName (arg: obj | null) =
 let checkNonNull' argName (arg: obj | null) =
     if isNull arg then nullArg argName 
     else ()
+```
+
+Yet, the most succinct way to achieve this is to use the new builtin `nullArgCheck` function:
+
+```fsharp
+let checkNonNull'' argName arg =    // `arg` is inferred to be `obj | null`
+    nullArgCheck argName arg
+    |> ignore
+```
+
+The `nullArgCheck` function is also handy when you need to sanitize the input and keep it in case it's not null:
+
+```fsharp
+let processNullableList l =       
+    // `l` is inferred as `int list | null`
+    let l = nullArgCheck (nameof l) l
+    // now, `l` is inferred as `int list` and is safe to use
+    l |> List.map (fun x -> x + 1)
 ```
 
 On the other hand, you'll get a warning if the compiler detects that a possible null value is not handled:
@@ -748,8 +766,8 @@ let printLineLength (s: string) =
 let readLineFromStream (sr: System.IO.StreamReader) =
     let line = sr.ReadLine()
     match line with
-    | null -> ()
-    | s -> printLineLength s
+    | Null -> ()
+    | NonNull s -> printLineLength s
 ```
 
 #### Avoid using tuples as return values

@@ -716,8 +716,19 @@ let getLineFromStream (stream: System.IO.StreamReader) : string | null =
 ```fsharp
 let getLineFromStream (stream: System.IO.StreamReader) : string option =
     match stream.ReadLine() with
-    | null -> None
-    | s -> Some s
+    | Null -> None
+    | NonNull s -> Some s
+```
+
+For raising null related exceptions you can use special `nullArgCheck` and `nonNull` functions:
+
+```fsharp
+let inline checkNonNull arg =
+    nullArgCheck (nameof arg) arg     // throws `ArgumentNullException`
+    |> ignore
+
+let inline assertNonNull arg =
+    nonNull arg                       // throws `NullReferenceException`
 ```
 
 ## Object programming

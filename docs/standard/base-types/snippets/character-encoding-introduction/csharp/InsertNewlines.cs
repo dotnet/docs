@@ -35,7 +35,7 @@ namespace RuneSamples
                 while (enumerator.MoveNext())
                 {
                     builder.Append(enumerator.Current);
-                    if (textElementCount % 10 == 0 && textElementCount > 0)
+                    if (textElementCount % 10 == 0)
                     {
                         builder.AppendLine(); // newline
                     }

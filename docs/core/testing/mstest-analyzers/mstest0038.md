@@ -32,7 +32,7 @@ The use of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame%2A?
 
 The way <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame%2A?displayProperty=nameWithType> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame%2A?displayProperty=nameWithType> work is by comparing the *reference* of the given expected/notExpected and actual arguments via `ReferenceEquals`. Hence, when you pass a value type, it will be [boxed](../../../csharp/programming-guide/types/boxing-and-unboxing.md#boxing).
 
-If using `AreSame`, the assert will always fail. If using `AreNotSame`, the assert will always pass. 
+If using `AreSame`, the assert will always fail. If using `AreNotSame`, the assert will always pass.
 
 The only case for `AreSame` when this assert will pass is if both arguments are nullable value types whose values are both null. In this case, it's clearer to have two separate `Assert.IsNull` calls.
 

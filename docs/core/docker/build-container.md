@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with Docker tutorial
 description: In this tutorial, you learn how to containerize a .NET application with Docker.
-ms.date: 03/20/2024
+ms.date: 01/07/2025
 ms.topic: tutorial
 ms.custom: "mvc"
 zone_pivot_groups: dotnet-version
@@ -22,6 +22,9 @@ In this tutorial, you:
 > - Create and run a Docker container
 
 You explore the Docker container build and deploy tasks for a .NET application. The _Docker platform_ uses the _Docker engine_ to quickly build and package apps as _Docker images_. These images are written in the _Dockerfile_ format to be deployed and run in a layered container.
+
+> [!TIP]
+> If you're interested in publishing your .NET app as a container without the need for Docker or Podman, see [Containerize a .NET app with dotnet publish](../containers/sdk-publish.md).
 
 > [!NOTE]
 > This tutorial **is not** for ASP.NET Core apps. If you're using ASP.NET Core, see the [Learn how to containerize an ASP.NET Core application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.

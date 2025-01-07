@@ -559,8 +559,16 @@ items:
         href: ../../core/rid-catalog.md
       - name: Resource manifest names
         href: ../../core/resources/manifest-file-names.md
-      - name: Docker
+      - name: Containers
         items:
+        - name: Overview
+          href: ../../core/containers/overview.md
+        - name: .NET SDK publish container
+          href: ../../core/containers/sdk-publish.md
+        - name: .NET SDK publish configuration
+          href: ../../core/containers/publish-configuration.md
+        - name: Docker
+          items:
           - name: Introduction to .NET and Docker
             href: ../../core/docker/introduction.md
           - name: Containerize a .NET app

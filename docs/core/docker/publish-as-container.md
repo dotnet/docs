@@ -1,7 +1,7 @@
 ---
 title: Containerize an app with dotnet publish
-description: In this tutorial, you'll learn how to containerize a .NET application with dotnet publish command without the use of a Dockerfile.
-ms.date: 01/06/2025
+description: In this tutorial, you learn how to containerize a .NET application with dotnet publish command without the use of a Dockerfile.
+ms.date: 01/07/2025
 ms.topic: tutorial
 ---
 
@@ -16,25 +16,25 @@ Install the following prerequisites:
 - [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0)\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 
-If you plan on running the container image locally, you'll also need an OCI-compatible container runtime, such as:
+If you plan on running the container locally, you need an Open Container Initiative (OCI)-compatible container runtime, such as:
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- [Podman](https://podman.io/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop): Most common container runtime.
+- [Podman](https://podman.io/): An open-source daemonless alternative to Docker.
 
 > [!IMPORTANT]
-> The .NET SDK creates container images without Docker. Docker (or Podman) is only needed if you want to run the image locally. Alternatively, you can save the image as a tarball or push it directly to a container registry without using Docker.
+> The .NET SDK creates container images without Docker. Docker or Podman are only needed if you want to run the image locally. By default, when you [publish your .NET app](#publish-net-app) as a container image it's pushed to a local container runtime. Alternatively, you can save the [image as a tarball](#publish-net-app-to-a-tarball) or push it directly to a [container registry](#publish-net-app-to-container-registry) without using any container runtime at all.
 
-In addition to these prerequisites, it's recommended that you're familiar with [Worker Services in .NET](../extensions/workers.md).
+In addition to these prerequisites, it's recommended that you're familiar with [Worker Services in .NET](../extensions/workers.md) as the sample project is a worker.
 
 ## Create .NET app
 
-You need a .NET app to containerize, so start by creating a new app from a template. Open your terminal, create a working folder (*sample-directory*) if you haven't already, and change directories so that you're in it. In the working folder, run the following command to create a new project in a subdirectory named *Worker*:
+You need a .NET app to containerize, so start by creating a new app from a template. Open your terminal, create a working folder (_sample-directory_) if you haven't already, and change directories so that you're in it. In the working folder, run the following command to create a new project in a subdirectory named _Worker_:
 
 ```dotnetcli
 dotnet new worker -o Worker -n DotNet.ContainerImage
 ```
 
-Your folder tree looks like the following:
+Your folder tree looks similar to the following directory:
 
 ```Directory
 📁 sample-directory
@@ -44,6 +44,8 @@ Your folder tree looks like the following:
         ├──DotNet.ContainerImage.csproj
         ├──Program.cs
         ├──Worker.cs
+        ├──📂 Properties
+        │   └─── launchSettings.json
         └──📂 obj
             ├── DotNet.ContainerImage.csproj.nuget.dgspec.json
             ├── DotNet.ContainerImage.csproj.nuget.g.props
@@ -52,13 +54,14 @@ Your folder tree looks like the following:
             └── project.nuget.cache
 ```
 
-The `dotnet new` command creates a new folder named _Worker_ and generates a worker service that, when run, logs a message every second. From your terminal session, change directories and navigate into the *Worker* folder. Use the `dotnet run` command to start the app.
+The `dotnet new` command creates a new folder named _Worker_ and generates a worker service that, when run, logs a message every second. From your terminal session, change directories and navigate into the _Worker_ folder. Use the `dotnet run` command to start the app.
 
 ```dotnetcli
 dotnet run
+Using launch settings from ./Worker/Properties/launchSettings.json...
 Building...
 info: DotNet.ContainerImage.Worker[0]
-      Worker running at: 10/18/2022 08:56:00 -05:00
+      Worker running at: 01/06/2025 13:37:28 -06:00
 info: Microsoft.Hosting.Lifetime[0]
       Application started. Press Ctrl+C to shut down.
 info: Microsoft.Hosting.Lifetime[0]
@@ -66,26 +69,25 @@ info: Microsoft.Hosting.Lifetime[0]
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: .\Worker
 info: DotNet.ContainerImage.Worker[0]
-      Worker running at: 10/18/2022 08:56:01 -05:00
+      Worker running at: 01/06/2025 13:37:29 -06:00
 info: DotNet.ContainerImage.Worker[0]
-      Worker running at: 10/18/2022 08:56:02 -05:00
-info: DotNet.ContainerImage.Worker[0]
-      Worker running at: 10/18/2022 08:56:03 -05:00
+      Worker running at: 01/06/2025 13:37:30 -06:00
 info: Microsoft.Hosting.Lifetime[0]
       Application is shutting down...
-Attempting to cancel the build...
 ```
 
 The worker template loops indefinitely. Use the cancel command <kbd>Ctrl+C</kbd> to stop it.
 
-## Add NuGet package
+## Publishing project considerations
 
-Starting with .NET SDK version 8.0.200, the `PublishContainer` target is available for every project. To avoid depending on the `Microsoft.NET.Build.Containers` NuGet package, ensure that you're using the latest .NET SDK version. Additionally, your project file needs to have `IsPublishable` set to `true` and enable SDK container support.
+Now that you have a .NET app, you can publish it as a container. Before doing so, there are several important considerations to keep in mind. Prior to .NET SDK version 8.0.200, you needed the [📦 Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package. This package isn't required for .NET SDK version 8.0.200 and later, as the container support is included by default.
 
-> [!IMPORTANT]
-> By default, the `IsPublishable` property is set to `true` for `console`, `webapp`, and `worker` templates.
+To enable publishing a .NET app as a container, the following build properties are required:
 
-To enable SDK container support, set the `EnableSdkContainerSupport` property to `true` in your project file.
+- `IsPublishable`: Set to `true`. This property is implicitly set to `true` for executable project types, such as `console`, `webapp`, and `worker`.
+- `EnableSdkContainerSupport`: Set to `true` when your project type is a console app.
+
+To explicitly enable SDK container support, consider the following project file snippet:
 
 ```xml
 <PropertyGroup>
@@ -94,15 +96,47 @@ To enable SDK container support, set the `EnableSdkContainerSupport` property to
 </PropertyGroup>
 ```
 
+## Publish switches and build properties
+
+As with all .NET CLI commands, you can specify [MSBuild properties on the command line](/visualstudio/msbuild/msbuild-command-line-reference). There are many valid syntax forms available to provide properties, such as:
+
+- `/p:PropertyName=Value`
+- `-p:PropertyName=Value`
+- `-p PropertyName=Value`
+- `--property PropertyName=Value`
+
+You're free to use whichever syntax you prefer, but the documentation shows example using the `-p` form.
+
+> [!TIP]
+> To help troubleshoot, consider using the MSBuid logs. To generate a binary log (binlog) file, add the `-bl` switch to the `dotnet publish` command. Binlog files are useful for diagnosing build issues and can be opened in the [MSBuild Structured Log Viewer](https://msbuildlog.com/). They provide a detailed trace of the build process, essential for MSBuild analysis. For more information, see [Troubleshoot and create logs for MSBuild](/visualstudio/ide/msbuild-logs#provide-msbuild-binary-logs-for-investigation).
+
+### Publish profiles and targets
+
+When using `dotnet publish`, specifying a profile with `-p PublishProfile=DefaultContainer` can set a property that causes the SDK to trigger another target after the publish process. This is an indirect way of achieving the desired result. On the other hand, using `dotnet publish /t:PublishContainer` directly invokes the `PublishContainer` target, achieving the same outcome but in a more straightforward manner.
+
+In other words, the following .NET CLI command:
+
+```dotnetcli
+dotnet publish -p PublishProfile=DefaultContainer
+```
+
+Which sets the `PublishProfile` property to `DefaultContainer`, is equivalent to the following command:
+
+```dotnetcli
+dotnet publish /t:PublishContainer
+```
+
+The difference between the two methods is that the former uses a profile to set the property, while the latter directly invokes the target. The reason this is important is that profiles are a feature of MSBuild, and they can be used to set properties in a more complex way than just setting them directly.
+
+One key issue is that not all project types support profiles or have the same set of profiles available. Additionally, there's a disparity in the level of support for profiles between different tooling, such as Visual Studio and the .NET CLI. Therefore, using targets is generally a clearer and more widely supported method to achieve the same result.
+
 ## Set the container image name
 
-There are various configuration options available when publishing an app as a container.
+There are various configuration options available when publishing an app as a container. By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerRepository` as shown in the following project file:
 
-By default, the container image name is the `AssemblyName` of the project. If that name is invalid as a container image name, you can override it by specifying a `ContainerRepository` as shown in the following project file:
+:::code language="xml" source="snippets/Worker/DotNet.ContainerImage.csproj" highlight="8":::
 
-:::code language="xml" source="snippets/8.0/Worker/DotNet.ContainerImage.csproj" highlight="8":::
-
-For more information, see [ContainerRepository](#containerrepository).
+For further reference, see [ContainerRepository](#containerrepository).
 
 ## Publish .NET app
 
@@ -118,36 +152,81 @@ The preceding .NET CLI command publishes the app as a container:
 - Specifying an x64 architecture (`--arch x64`).
 
 > [!IMPORTANT]
-> To publish the container locally, you must have the Docker daemon running. If it isn't running when you attempt to publish the app as a container, you'll experience an error similar to the following:
+> To publish the container locally, you must have an active OCI-compliant daemon running. If it isn't running when you attempt to publish the app as a container, you experience an error similar to the following:
 >
 > ```console
 > ..\build\Microsoft.NET.Build.Containers.targets(66,9): error MSB4018:
 >    The "CreateNewImage" task failed unexpectedly. [..\Worker\DotNet.ContainerImage.csproj]
 > ```
 
-The command produces output similar to the example output:
+The `dotnet publish` command produces output similar to the example output:
 
 ```dotnetcli
-Determining projects to restore...
-  All projects are up-to-date for restore.
-  DotNet.ContainerImage -> .\Worker\bin\Release\net8.0\linux-x64\DotNet.ContainerImage.dll
-  DotNet.ContainerImage -> .\Worker\bin\Release\net8.0\linux-x64\publish\
-  Building image 'dotnet-worker-image' with tags latest on top of base image mcr.microsoft.com/dotnet/aspnet:8.0
-  Pushed container 'dotnet-worker-image:latest' to Docker daemon
+Restore complete (0.2s)
+  DotNet.ContainerImage succeeded (2.6s) → bin\Release\net9.0\linux-x64\publish\
 ```
 
-This command compiles your worker app to the *publish* folder and pushes the container to your local docker registry.
+This command compiles your worker app to the _publish_ folder and pushes the container image to your local Docker daemon by default. If you're using Podman, an alias
+
+## Publish .NET app to a tarball
+
+A tarball (or tar file) is a file that contains other files. It usually ends with a _*.tar.gz_ compound file extension to help indicate that it's a compressed archive. These file types are used to distribute software or to create backups. In this case, the tarball created is used to distribute a container image.
+
+To publish a .NET app as a container to a tarball, use the following command:
+
+```dotnetcli
+dotnet publish --os linux --arch x64 \
+    /t:PublishContainer \
+    -p ContainerArchiveOutputPath=./images/container-image.tar.gz
+```
+
+The preceding command publishes the app as a container to a tarball:
+
+- Targeting Linux as the OS (`--os linux`).
+- Specifying an x64 architecture (`--arch x64`).
+- Setting the `ContainerArchiveOutputPath` property to `./images/container-image.tar.gz`.
+
+The command doesn't require a running OCI-compliant daemon. For more information, see [ContainerArchiveOutputPath](#containerarchiveoutputpath).
+
+### Load the tarball
+
+A common use case for exporting to a tarball is for security-focused organizations. They create containers, export them as tarballs, and then run security-scanning tools over the tarballs. This approach simplifies compliance as it avoids the complexities of scanning a live system.
+
+The tarball contains the entire container, which can then be loaded using the appropriate tool:
+
+- [Docker](https://docs.docker.com/reference/cli/docker/image/load/): `docker load -i ./images/container-image.tar.gz`
+- [Podman](https://docs.podman.io/en/latest/markdown/podman-load.1.html): `podman load -i ./images/container-image.tar.gz`
+
+## Publish .NET app to container registry
+
+Container registries are services that store and manage container images. They're used to store and distribute container images across multiple environments. You can publish a .NET app as a container to a container registry by using the following command:
+
+```dotnetcli
+dotnet publish --os linux --arch x64 \
+    /t:PublishContainer \
+    -p ContainerRegistry=ghcr.io
+```
+
+The preceding code publishes the app as a container to a container registry:
+
+- Targeting Linux as the OS (`--os linux`).
+- Specifying an x64 architecture (`--arch x64`).
+- Setting the `ContainerRegistry` property to `ghcr.io`.
+
+For more information, see [ContainerRegistry](#containerregistry).
 
 ## Configure container image
 
 You can control many aspects of the generated container through MSBuild properties. In general, if you can use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
 
 > [!NOTE]
-> The only exceptions to this are `RUN` commands. Due to the way containers are built, those cannot be emulated. If you need this functionality, you'll need to use a _Dockerfile_ to build your container images.
+> The only exceptions to this are `RUN` commands. Due to the way containers are built, those can't be emulated. If you need this functionality, you might consider using a _Dockerfile_ to build your container images.
+
+There's no way of performing `RUN` commands with the .NET SDK. These commands are often used to install some OS packages or create a new OS user, or any number of arbitrary things. If you would like to keep using the .NET SDK container building feature, you can instead create a custom base image with these changes and then using this base image. For more information, see [`ContainerBaseImage`](#containerbaseimage).
 
 ### `ContainerArchiveOutputPath`
 
-Starting in .NET 8, you can create a container directly as a _tar.gz_ archive. This feature is useful if your workflow isn't straightforward and requires that you, for example, run a scanning tool over your images before pushing them. Once the archive is created, you can move it, scan it, or load it into a local Docker toolchain.
+To create a container image within a _tar.gz_ archive, use the `ContainerArchiveOutputPath` property. This feature is useful if your workflow isn't straightforward and requires that you, for example, run a scanning tool over your images before pushing them. Once the archive is created, you can move it, scan it, or load it into a local Docker toolchain.
 
 To publish to an archive, add the `ContainerArchiveOutputPath` property to your `dotnet publish` command, for example:
 
@@ -157,7 +236,7 @@ dotnet publish \
   -p ContainerArchiveOutputPath=./images/sdk-container-demo.tar.gz
 ```
 
-You can specify either a folder name or a path with a specific file name. If you specify the folder name, the filename generated for the image archive file will be `$(ContainerRepository).tar.gz`. These archives can contain multiple tags inside them, only as single file is created for all `ContainerImageTags`.
+You can specify either a folder name or a path with a specific file name. If you specify the folder name, the filename generated for the image archive file is named `$(ContainerRepository).tar.gz`. These archives can contain multiple tags inside them, only as single file is created for all `ContainerImageTags`.
 
 ### Container image naming configuration
 
@@ -203,7 +282,7 @@ If you set a value here, you should set the fully qualified name of the image to
 </PropertyGroup>
 ```
 
-Starting with .NET SDK version 8.0.200, the `ContainerBaseImage` inference has been improved to optimize the size and security:
+With .NET SDK version 8.0.200, the `ContainerBaseImage` inference is improved to optimize the size and security:
 
 - Targeting the `linux-musl-x64` or `linux-musl-arm64` Runtime Identifiers, automatically chooses the `alpine` image variants to ensure your project runs:
   - If the project uses `PublishAot=true` then the `nightly/runtime-deps` `jammy-chiseled-aot` variant of the base image for best size and security.
@@ -227,7 +306,7 @@ This field is free-form, and often can be used to select different operating sys
 
 ### `ContainerRuntimeIdentifier`
 
-The container runtime identifier property controls the operating system and architecture used by your container if your [ContainerBaseImage](#containerbaseimage) supports more than one platform. For example, the `mcr.microsoft.com/dotnet/runtime` image currently supports `linux-x64`, `linux-arm`, `linux-arm64` and `win10-x64` images all behind the same tag, so the tooling needs a way to be told which of these versions you intend to use. By default, this is set to the value of the `RuntimeIdentifier` that you chose when you published the container. This property rarely needs to be set explicitly - instead use the `-r` option to the `dotnet publish` command. If the image you've chosen doesn't support the `RuntimeIdentifier` you've chosen, results in an error that describes the RuntimeIdentifiers the image does support.
+The `ContainerRuntimeIdentifier` property specifies the OS and architecture for your container if the `ContainerBaseImage` supports multiple platforms. For example, the `mcr.microsoft.com/dotnet/runtime` image supports `linux-x64`, `linux-arm`, `linux-arm64`, and `win10-x64`. By default, this is set to the `RuntimeIdentifier` used when publishing the container. Typically, you don't need to set this property explicitly; instead, use the `-r` option with the `dotnet publish` command. If the chosen image doesn't support the specified `RuntimeIdentifier`, an error indicates the supported identifiers.
 
 You can always set the `ContainerBaseImage` property to a fully qualified image name, including the tag, to avoid needing to use this property at all.
 
@@ -251,13 +330,13 @@ The container registry property controls the destination registry, the place tha
 
 This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/). This includes the following registries explicitly (and likely many more implicitly):
 
-* [Azure Container Registry](https://azure.microsoft.com/products/container-registry)
-* [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
-* [Google Artifact Registry](https://cloud.google.com/artifact-registry)
-* [Docker Hub](https://hub.docker.com/)
-* [GitHub Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
-* [GitLab-hosted Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)
-* [Quay.io](https://quay.io/)
+- [Azure Container Registry](https://azure.microsoft.com/products/container-registry)
+- [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
+- [Google Artifact Registry](https://cloud.google.com/artifact-registry)
+- [Docker Hub](https://hub.docker.com/)
+- [GitHub Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+- [GitLab-hosted Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)
+- [Quay.io](https://quay.io/)
 
 For notes on working with these registries, see the [registry-specific notes](https://aka.ms/dotnet/containers/auth#notes-for-specific-registries).
 
@@ -303,7 +382,7 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
 
 > [!NOTE]
-> When using `ContainerImageTags`, the tags are delimited by a `;` character. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you'll need to outer wrap the values in a single `'` and inner wrap with double quotes `"`, for example (`='"tag-1;tag-2"'`). Consider the following `dotnet publish` command:
+> When using `ContainerImageTags`, the tags are delimited by a `;` character. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to outer wrap the values in a single `'` and inner wrap with double quotes `"`, for example (`='"tag-1;tag-2"'`). Consider the following `dotnet publish` command:
 >
 > ```dotnetcli
 > dotnet publish -p ContainerImageTags='"1.2.3-alpha2;latest"'
@@ -314,18 +393,18 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 > [!TIP]
 > If you experience issues with the `ContainerImageTags` property, consider scoping an environment variable `ContainerImageTags` instead:
 >
-> ```dotnetcli
-> ContainerImageTags='1.2.3;latest' dotnet publish
+> ```powershell
+> $Env:ContainerImageTags='1.2.3;latest'; dotnet publish --os linux --arch x64 /t:PublishContainer
 > ```
 
 ### `ContainerLabel`
 
-The container label adds a metadata label to the container. Labels have no impact on the container at run time, but are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
+The container label adds a metadata label to the container. Labels are often used to store version and authoring metadata for use by security scanners and other infrastructure tools. You can specify any number of container labels.
 
 The `ContainerLabel` node has two attributes:
 
 - `Include`: The key of the label.
-- `Value`: The value of the label (this may be empty).
+- `Value`: The value of the label (this might be empty).
 
 ```xml
 <ItemGroup>
@@ -353,7 +432,7 @@ By default, the `/app` directory value is used as the working directory.
 
 ### `ContainerPort`
 
-The container port adds TCP or UDP ports to the list of known ports for the container. This enables container runtimes like Docker to map these ports to the host machine automatically. This is often used as documentation for the container, but can also be used to enable automatic port mapping.
+The container port adds Transmission Control Protocol (TCP) or User Datagram Protocol (UDP) ports to the list of known ports for the container. This enables container runtimes like Docker to map these ports to the host machine automatically. This is often used as documentation for the container, but can also be used to enable automatic port mapping.
 
 The `ContainerPort` node has two attributes:
 
@@ -391,6 +470,9 @@ The `ContainerEnvironmentVariable` node has two attributes:
 
 For more information, see [.NET environment variables](../tools/dotnet-environment-variables.md).
 
+> [!NOTE]
+> It's currently not possible to set environment variables from the .NET CLI when publishing a container image. For more information, see [GitHub: .NET SDK container builds](https://github.com/dotnet/sdk-container-builds/issues/451).
+
 ## Configure container commands
 
 By default, the container tools launch your app using either the generated AppHost binary for your app (if your app uses an AppHost), or the `dotnet` command plus your app's DLL.
@@ -408,7 +490,7 @@ For more information, see the following configuration items.
 
 ### `ContainerAppCommand`
 
-The app command configuration item is the logical entry point of your app. For most apps, this is the AppHost, the generated executable binary for your app. If your app doesn't generate an AppHost, then this command will typically be `dotnet <your project dll>`. These values are applied after any `ENTRYPOINT` in your base container, or directly if no `ENTRYPOINT` is defined.
+The app command configuration item is the logical entry point of your app. For most apps, this is the AppHost, the generated executable binary for your app. If your app doesn't generate an AppHost, then this command is typically `dotnet <your project dll>`. These values are applied after any `ENTRYPOINT` in your base container, or directly if no `ENTRYPOINT` is defined.
 
 The `ContainerAppCommand` configuration has a single `Include` property, which represents the command, option, or argument to use in the entrypoint command:
 
@@ -474,7 +556,7 @@ The app command instruction configuration helps control the way the `ContainerEn
   - If both `ContainerEntrypoint` and `ContainerAppCommand` are present, then `ContainerEntrypoint` becomes the entrypoint, and `ContainerAppCommand` becomes the command.
 
 > [!NOTE]
-> The `ContainerEntrypoint` and `ContainerEntrypointArgs` configuration items have been deprecated as of .NET 8.
+> The `ContainerEntrypoint` and `ContainerEntrypointArgs` configuration items are deprecated as of .NET 8.
 
 > [!IMPORTANT]
 > This is for advanced users-most apps shouldn't need to customize their entrypoint to this degree. For more information and if you'd like to provide use cases for your scenarios, see [GitHub: .NET SDK container builds discussions](https://github.com/dotnet/sdk-container-builds/discussions).
@@ -483,14 +565,14 @@ The app command instruction configuration helps control the way the `ContainerEn
 
 The user configuration property controls the default user that the container runs as. This is often used to run the container as a non-root user, which is a best practice for security. There are a few constraints for this configuration to be aware of:
 
-- It can take various forms—username, linux user ids, group name, linux group id, `username:groupname`, and other ID variants.
+- It can take various forms—username, linux user IDs, group name, linux group ID, `username:groupname`, and other ID variants.
 - There's no verification that the user or group specified exists on the image.
 - Changing the user can alter the behavior of the app, especially in regards to things like _File System_ permissions.
 
 The default value of this field varies by project TFM and target operating system:
 
 - If you're targeting .NET 8 or higher and using the Microsoft runtime images, then:
-  - on Linux the rootless user `app` is used (though it's referenced by its user ID)
+  - on Linux, the rootless user `app` is used (though it's referenced by its user ID)
   - on Windows the rootless user `ContainerUser` is used
 - Otherwise, no default `ContainerUser` is used
 

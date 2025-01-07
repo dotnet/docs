@@ -52,6 +52,31 @@ let str = "Debugging!"
 #endif
 ```
 
+## NULLABLE directive
+
+Starting with F# 9, you can enable nullable reference types in the project:
+
+```xml
+<Nullable>enable</Nullable>
+```
+
+This automatically sets `define:NULLABLE` directive to the build. It's useful while initially rolling out the feature, to conditionally change conflicting code by `#if NULLABLE` hash directives:
+
+```fsharp
+#if NULLABLE 
+let checkNonNull argName (arg: obj) =
+    match arg with
+    // nullness warning: the type 'obj' does not support 'null'
+    | null -> nullArg argName
+    | _ -> ()
+#else
+let checkNonNull argName (arg: obj) =
+    match arg with
+    | null -> nullArg argName
+    | _ -> ()
+#endif
+```
+
 ## Line Directives
 
 When building, the compiler reports errors in F# code by referencing line numbers on which each error occurs. These line numbers start at 1 for the first line in a file. However, if you are generating F# source code from another tool, the line numbers in the generated code are generally not of interest, because the errors in the generated F# code most likely arise from another source. The `#line` directive provides a way for authors of tools that generate F# source code to pass information about the original line numbers and source files to the generated F# code.

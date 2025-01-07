@@ -39,6 +39,8 @@ In F# 9, extra capabilities are added to the language to deal with reference typ
 <Nullable>enable</Nullable>
 ```
 
+This passes the `--checknulls+` [flag](../compiler-options.md) to the F# compiler and sets a `define:NULLABLE` [preprocessor directive](../compiler-directives.md#nullable-directive) for the build.
+
 To explicitly opt-in into nullability, a type declaration has to be suffixed with the new syntax:
 
 ```fsharp

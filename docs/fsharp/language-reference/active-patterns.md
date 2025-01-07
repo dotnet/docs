@@ -181,7 +181,7 @@ The attribute must be specified, because the use of a struct return is not infer
 
 In F# 9, nullability related active patterns were added.
 
-The first one is `| Null | NonNull x |`, which is a recommended way to handle possible nulls. In the following example, parameter `s` is inferred nullable via this active pattern usage: 
+The first one is `| Null | NonNull x |`, which is a recommended way to handle possible nulls. In the following example, parameter `s` is inferred nullable via this active pattern usage:
 
 ```fsharp
  let len s =

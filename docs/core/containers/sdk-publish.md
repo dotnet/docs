@@ -7,7 +7,7 @@ ms.topic: tutorial
 
 # Containerize a .NET app with dotnet publish
 
-Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command without the use of a Dockerfile. Additionally, you explore how to configure the [container image](container-images.md) and execution, and how to clean up resources.
+Containers have many features and benefits, such as being an immutable infrastructure, providing a portable architecture, and enabling scalability. The image can be used to create containers for your local development environment, private cloud, or public cloud. In this tutorial, you learn how to containerize a .NET application using the [dotnet publish](../tools/dotnet-publish.md) command without the use of a Dockerfile. Additionally, you explore how to configure the [container image](../docker/container-images.md) and execution, and how to clean up resources.
 
 > [!TIP]
 > If you're interested in using a _Dockerfile_ to containerize your .NET app, see [Tutorial: Containerize a .NET app](../docker/build-container.md).

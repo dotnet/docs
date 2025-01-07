@@ -96,7 +96,7 @@ Starting with .NET 8, you can use the `ContainerFamily` MSBuild property to choo
 
 The preceding project configuration results in a final tag of `8.0-alpine` for a .NET 8-targeting app.
 
-This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. This field is ignored when `ContainerBaseImage` is set. For more information, see [.NET container images](container-images.md).
+This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. This field is ignored when `ContainerBaseImage` is set. For more information, see [.NET container images](../docker/container-images.md).
 
 ### `ContainerRuntimeIdentifier`
 

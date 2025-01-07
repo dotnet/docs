@@ -9,54 +9,6 @@ ms.topic: overview
 
 While it's possible to [containerize .NET apps with a _Dockerfile_](../docker/build-container.md), there are compelling reasons for [containerizing apps directly with the .NET SDK](sdk-publish.md). This article provides an overview of the .NET SDK container creation feature, with details related to telemetry, publishing considerations, build properties, and authentication to container registries.
 
-## Telemetry
-
-When you publish a .NET app as a container, the .NET SDK container tooling collects and sends usage telemetry about how the tools are used. The collected data is in addition to the [telemetry sent by the .NET CLI](../tools/telemetry.md), but uses the same mechanisms and, importantly, adheres to the same [opt-out controls](../tools/telemetry.md#how-to-opt-out).
-
-The telemetry gathered is intended to be general in nature and not leak any personal information—the intended purpose is to help measure:
-
-- Usage of the .NET SDK containerization feature overall.
-- Success and failure rates, along with general information about what kinds of failures happen most frequently.
-- Usage of specific features of the tech, like publishing to various registry kinds, or how the publish was invoked.
-
-To opt-out of telemetry, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `true`. For more information, see [.NET CLI telemetry](../tools/telemetry.md).
-
-### Inference telemetry
-
-The following information about how the base image inference process occurred is logged:
-
-| Date point | Explanation | Sample value |
-|--|--|--|
-| `InferencePerformed` | If users are manually specifying base images vs making use of inference. | `true` |
-| `TargetFramework` | The `TargetFramework` chosen when doing base image inference. | `net8.0` |
-| `BaseImage` | The value of the base image chosen, but only if that base image is one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `mcr.microsoft.com/dotnet/aspnet` |
-| `BaseImageTag` | The value of the tag chosen, but only if that tag is for one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `8.0` |
-| `ContainerFamily` | The value of the `ContainerFamily` property if a user used the `ContainerFamily` feature to pick a 'flavor' of one of our base images. This is only set if the user picked or inferred one of the Microsoft-produced .NET images from mcr.microsoft.com | `jammy-chiseled` |
-| `ProjectType` | The kind of project that's being containerized. | `AspNetCore` or `Console` |
-| `PublishMode` | How the application was packaged. | `Aot`, `Trimmed`, `SelfContained`, or `FrameworkDependent` |
-| `IsInvariant` | If the image chosen requires invariant globalization or the user opted into it manually. | `true` |
-| `TargetRuntime` | The RID that this application was published for. | `linux-x64` |
-
-### Image creation telemetry
-
-The following information about how the container creation and publishing process occurred is logged:
-
-| Date point | Explanation | Sample value |
-|--|--|--|
-| `RemotePullType` | If the base image came from a remote registry, what kind of registry was it? | Azure, AWS, Google, GitHub, DockerHub, MRC, or Other |
-| `LocalPullType` | If the base image came from a local source, like a container daemon or a tarball. | Docker, Podman, Tarball |
-| `RemotePushType` | If the image was pushed to a remote registry, what kind of registry was it? | Azure, AWS, Google, GitHub, DockerHub, MRC, or Other |
-| `LocalPushType` | If the image was pushed to a local destination, what was it? | Docker, Podman, Tarball |
-
-In addition, if various kinds of errors occur during the process that data is collected about what kind of error it was:
-
-| Date point | Explanation | Sample value |
-|--|--|--|
-| `Error` | The kind of error that occurred | `unknown_repository`, `credential_failure`, `rid_mismatch`, `local_load`. |
-| `Direction` | If the error is a `credential_failure`, was it to the push or pull registry? | `push` |
-| Target RID | If the error was a `rid_mismatch`, what RID was requested | `linux-x64` |
-| Available RIDs | If the error was a `rid_mismatch`, what RIDs did the base image support? | `linux-x64,linux-arm64` |
-
 ## Publishing project considerations
 
 Now that you have a .NET app, you can publish it as a container. Before doing so, there are several important considerations to keep in mind. Prior to .NET SDK version 8.0.200, you needed the [📦 Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) NuGet package. This package isn't required for .NET SDK version 8.0.200 and later, as the container support is included by default.
@@ -200,6 +152,54 @@ DOTNET_CONTAINER_INSECURE_REGISTRIES=localhost:5000,registry.mycorp.com dotnet p
 ```
 
 ---
+
+## Telemetry
+
+When you publish a .NET app as a container, the .NET SDK container tooling collects and sends usage telemetry about how the tools are used. The collected data is in addition to the [telemetry sent by the .NET CLI](../tools/telemetry.md), but uses the same mechanisms and, importantly, adheres to the same [opt-out controls](../tools/telemetry.md#how-to-opt-out).
+
+The telemetry gathered is intended to be general in nature and not leak any personal information—the intended purpose is to help measure:
+
+- Usage of the .NET SDK containerization feature overall.
+- Success and failure rates, along with general information about what kinds of failures happen most frequently.
+- Usage of specific features of the tech, like publishing to various registry kinds, or how the publish was invoked.
+
+To opt-out of telemetry, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `true`. For more information, see [.NET CLI telemetry](../tools/telemetry.md).
+
+### Inference telemetry
+
+The following information about how the base image inference process occurred is logged:
+
+| Date point | Explanation | Sample value |
+|--|--|--|
+| `InferencePerformed` | If users are manually specifying base images vs making use of inference. | `true` |
+| `TargetFramework` | The `TargetFramework` chosen when doing base image inference. | `net8.0` |
+| `BaseImage` | The value of the base image chosen, but only if that base image is one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `mcr.microsoft.com/dotnet/aspnet` |
+| `BaseImageTag` | The value of the tag chosen, but only if that tag is for one of the Microsoft-produced images. If a user specifies any image other than the Microsoft-produced images on mcr.microsoft.com, this value is null. | `8.0` |
+| `ContainerFamily` | The value of the `ContainerFamily` property if a user used the `ContainerFamily` feature to pick a 'flavor' of one of our base images. This is only set if the user picked or inferred one of the Microsoft-produced .NET images from mcr.microsoft.com | `jammy-chiseled` |
+| `ProjectType` | The kind of project that's being containerized. | `AspNetCore` or `Console` |
+| `PublishMode` | How the application was packaged. | `Aot`, `Trimmed`, `SelfContained`, or `FrameworkDependent` |
+| `IsInvariant` | If the image chosen requires invariant globalization or the user opted into it manually. | `true` |
+| `TargetRuntime` | The RID that this application was published for. | `linux-x64` |
+
+### Image creation telemetry
+
+The following information about how the container creation and publishing process occurred is logged:
+
+| Date point | Explanation | Sample value |
+|--|--|--|
+| `RemotePullType` | If the base image came from a remote registry, what kind of registry was it? | Azure, AWS, Google, GitHub, DockerHub, MRC, or Other |
+| `LocalPullType` | If the base image came from a local source, like a container daemon or a tarball. | Docker, Podman, Tarball |
+| `RemotePushType` | If the image was pushed to a remote registry, what kind of registry was it? | Azure, AWS, Google, GitHub, DockerHub, MRC, or Other |
+| `LocalPushType` | If the image was pushed to a local destination, what was it? | Docker, Podman, Tarball |
+
+In addition, if various kinds of errors occur during the process that data is collected about what kind of error it was:
+
+| Date point | Explanation | Sample value |
+|--|--|--|
+| `Error` | The kind of error that occurred | `unknown_repository`, `credential_failure`, `rid_mismatch`, `local_load`. |
+| `Direction` | If the error is a `credential_failure`, was it to the push or pull registry? | `push` |
+| Target RID | If the error was a `rid_mismatch`, what RID was requested | `linux-x64` |
+| Available RIDs | If the error was a `rid_mismatch`, what RIDs did the base image support? | `linux-x64,linux-arm64` |
 
 ## See also
 

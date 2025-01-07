@@ -109,7 +109,7 @@ For more information, see the [.NET 7 Preview 6](https://devblogs.microsoft.com/
 
 ### Publish to a container
 
-Containers are one of the easiest ways to distribute and run a wide variety of applications and services in the cloud. Container images are now a supported output type of the .NET SDK, and you can create containerized versions of your applications using [`dotnet publish`](../tools/dotnet-publish.md). For more information about the feature, see [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/). For a tutorial, see [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md).
+Containers are one of the easiest ways to distribute and run a wide variety of applications and services in the cloud. Container images are now a supported output type of the .NET SDK, and you can create containerized versions of your applications using [`dotnet publish`](../tools/dotnet-publish.md). For more information about the feature, see [Announcing built-in container support for the .NET SDK](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/). For a tutorial, see [Containerize a .NET app with dotnet publish](../containers/sdk-publish.md).
 
 ### Central package management
 

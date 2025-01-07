@@ -559,16 +559,22 @@ items:
         href: ../../core/rid-catalog.md
       - name: Resource manifest names
         href: ../../core/resources/manifest-file-names.md
-      - name: Docker
+      - name: Containers
         items:
+        - name: Overview
+          href: ../../core/containers/overview.md
+        - name: .NET SDK publishing tutorial
+          href: ../../core/containers/sdk-publish.md
+        - name: .NET SDK publishing reference
+          href: ../../core/containers/publish-configuration.md
+        - name: .NET container images
+          href: ../../core/docker/container-images.md
+        - name: Docker
+          items:
           - name: Introduction to .NET and Docker
             href: ../../core/docker/introduction.md
           - name: Containerize a .NET app
             href: ../../core/docker/build-container.md
-          - name: Publish app as container image
-            href: ../../core/docker/publish-as-container.md
-          - name: .NET container images
-            href: ../../core/docker/container-images.md
           - name: Container tools in Visual Studio
             href: /visualstudio/containers/overview?toc=/dotnet/navigate/devops-testing/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: .NET distribution packaging

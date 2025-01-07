@@ -85,7 +85,7 @@ The cloud thrives on scaling. The ability to increase/decrease system resources 
 
 We encouraged the best practice of implementing programmatic retry operations in an earlier section. Keep in mind that many Azure services and their corresponding client SDKs also include retry mechanisms. The following list summarizes retry features in the many of the Azure services that are discussed in this book:
 
-- *Azure Cosmos DB.* The <xref:Microsoft.Azure.Documents.Client.DocumentClient> class from the client API automatically retires failed attempts. The number of retries and maximum wait time are configurable. Exceptions thrown by the client API are either requests that exceed the retry policy or non-transient errors.
+- *Azure Cosmos DB.* The <xref:Microsoft.Azure.Documents.Client.DocumentClient> class from the client API automatically retries failed attempts. The number of retries and maximum wait time are configurable. Exceptions thrown by the client API are either requests that exceed the retry policy or non-transient errors.
 
 - *Azure Redis Cache.* The Redis StackExchange client uses a connection manager class that includes retries on failed attempts. The number of retries, specific retry policy and wait time are all configurable.
 

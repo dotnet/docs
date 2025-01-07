@@ -76,6 +76,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+          - name: Entity Framework Core
+            href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Interop
             items:
               - name: CET supported by default
@@ -104,12 +106,16 @@ items:
             items:
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/9.0/nugetaudit-transitive-packages.md
+              - name: "`dotnet sln add` doesn't allow invalid file names"
+                href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
               - name: "`dotnet workload` commands output change"
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
+              - name: New default RID used when targeting .NET Framework
+                href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
                 href: sdk/9.0/terminal-logger.md
               - name: Version requirements
@@ -1604,6 +1610,8 @@ items:
                 href: deployment/7.0/x86-host-path.md
       - name: Entity Framework Core
         items:
+          - name: EF Core 9
+            href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: EF Core 8
             href: /ef/core/what-is-new/ef-core-8.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: EF Core 7
@@ -1804,12 +1812,16 @@ items:
             items:
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/9.0/nugetaudit-transitive-packages.md
+              - name: "`dotnet sln add` doesn't allow invalid file names"
+                href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
                 href: sdk/9.0/dotnet-watch.md
               - name: "`dotnet workload` commands output change"
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
+              - name: New default RID used when targeting .NET Framework
+                href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
                 href: sdk/9.0/terminal-logger.md
               - name: Version requirements for .NET 9 SDK

@@ -2,7 +2,6 @@
 title: Valid content of XElement and XDocument objects - LINQ to XML
 description: The XElement and XDocument constructors accept many argument types, including collections returned from queries. There are other constructors and functions for adding XML content.
 ms.date: 07/20/2015
-ms.assetid: 0d253586-2b97-459f-b1a7-f30f38f3ed9f
 ---
 
 # Valid content of XElement and XDocument objects (LINQ to XML)
@@ -13,7 +12,7 @@ This article describes the valid arguments that can be passed to constructors, a
 
 Queries often evaluate to <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement> or <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XAttribute>. You can pass collections of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> objects to the <xref:System.Xml.Linq.XElement> constructor. That's why it's convenient to pass the results of a query as content into methods and constructors that you use to populate XML trees.
 
-When adding simple content, various types can be passed to this method, including::
+When adding simple content, various types can be passed to this method, including:
 
 - <xref:System.String>
 - <xref:System.Double>

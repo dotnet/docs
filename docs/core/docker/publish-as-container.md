@@ -105,7 +105,7 @@ As with all .NET CLI commands, you can specify [MSBuild properties on the comman
 - `-p PropertyName=Value`
 - `--property PropertyName=Value`
 
-You're free to use whichever syntax you prefer, but the documentation shows example using the `-p` form.
+You're free to use whichever syntax you prefer, but the documentation shows examples using the `-p` form.
 
 > [!TIP]
 > To help troubleshoot, consider using the MSBuid logs. To generate a binary log (binlog) file, add the `-bl` switch to the `dotnet publish` command. Binlog files are useful for diagnosing build issues and can be opened in the [MSBuild Structured Log Viewer](https://msbuildlog.com/). They provide a detailed trace of the build process, essential for MSBuild analysis. For more information, see [Troubleshoot and create logs for MSBuild](/visualstudio/ide/msbuild-logs#provide-msbuild-binary-logs-for-investigation).

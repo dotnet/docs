@@ -26,20 +26,20 @@ ms.author: ygerges
 
 ## Cause
 
-The use of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame%2A?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame%2A?displayProperty=nameWithType> with one or both arguments being a value type.
+The use of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame%2A?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame*?displayProperty=nameWithType> with one or both arguments being a value type.
 
 ## Rule description
 
-The way <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame%2A?displayProperty=nameWithType> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame%2A?displayProperty=nameWithType> work is by comparing the *reference* of the given expected/notExpected and actual arguments via `ReferenceEquals`. Hence, when you pass a value type, it will be [boxed](../../../csharp/programming-guide/types/boxing-and-unboxing.md#boxing).
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreSame%2A?displayProperty=nameWithType> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreNotSame%2A?displayProperty=nameWithType> work by comparing the *reference* of the given `expected`/`notExpected` and actual arguments via `ReferenceEquals`. Hence, when you pass a value type, it is [boxed](../../../csharp/programming-guide/types/boxing-and-unboxing.md#boxing).
 
 If using `AreSame`, the assert will always fail. If using `AreNotSame`, the assert will always pass.
 
-The only case for `AreSame` when this assert will pass is if both arguments are nullable value types whose values are both null. In this case, it's clearer to have two separate `Assert.IsNull` calls.
+For `AreSame`, the only case when the assert passes is if both arguments are nullable value types whose values are both null. In this case, it's clearer to have two separate `Assert.IsNull` calls.
 
 ## How to fix violations
 
 Use `Assert.AreEqual` and `Assert.AreNotEqual` instead of `Assert.AreSame` and `Assert.AreNotSame`.
-If using `Assert.AreSame` and both arguments are nullable value types whose values are expected to be null, then two separate `Assert.IsNull` calls may be a better fit than `AreEqual`, depending on the intent of the test.
+If using `Assert.AreSame` and both arguments are nullable value types whose values are expected to be null, then two separate `Assert.IsNull` calls might be a better fit than `AreEqual`, depending on the intent of the test.
 
 ## When to suppress warnings
 

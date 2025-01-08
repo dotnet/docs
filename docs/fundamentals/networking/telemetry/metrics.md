@@ -17,7 +17,7 @@ They are also [multi-dimensional](../../../core/diagnostics/metrics-instrumentat
 > [!TIP]
 > For a comprehensive list of all built-in instruments together with their attributes, see [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md).
 
-## Collect System.Net metrics
+## Collecting System.Net metrics
 
 In order to take advangage of the built-in metrics instrumentation, a .NET app needs to be configured to collect these metrics. This typically means transforming them for external storage and analysis, e.g., to monitoring systems.
 
@@ -79,9 +79,9 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
 
 1. Open `Extensions.cs` in the `ServiceDefaults` project, and scroll to the `ConfigureOpenTelemetry` method. Notice the `AddHttpClientInstrumentation()` call subscribing to the networking meters.
 
-    :::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_Metrics" highlight="3":::
+    :::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_Metrics" highlight="4":::
 
-    Note that on .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual meter subscription:
+    Note that on .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual meter subscriptions:
 
     ```csharp
     .WithMetrics(metrics =>
@@ -113,20 +113,17 @@ Probably the easiest way to configure OTel for ASP.NET projects is to use the As
 
 The steps to use *ServiceDefaults* outside .NET Aspire are:
 
-- Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
-- Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the *ServiceDefaults* project"
-- Call its OpenTelemetry setup function as part of your application builder initialization.
+1. Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
+1. Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the *ServiceDefaults* project"
+1. Call the OpenTelemetry setup function `ConfigureOpenTelemetry()` as part of your application builder initialization.
 
-``` csharp
-var builder = WebApplication.CreateBuilder(args);
-builder.ConfigureOpenTelemetry();
-
-var app = builder.Build();
-
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
-```
+    ``` csharp
+    var builder = WebApplication.CreateBuilder(args)
+    builder.ConfigureOpenTelemetry(); // Extension method from ServiceDefaults.
+    var app = builder.Build();
+    app.MapGet("/", () => "Hello World!");
+    app.Run();
+    ```
 
 For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../core/diagnostics/observability-otlp-example.md).
 
@@ -150,7 +147,7 @@ otel.WithMetrics(metrics => metrics
     .AddPrometheusExporter());
 ```
 
-Moreover, `HttpClient(Factory)` usage is needed to see the `System.Net` metrics in action. The `/NestedGreeting` endpoint in the paragraph [Distributed tracing with Jaeger](../../../core/diagnostics/observability-prgrja-example.md#9-distributed-tracing-with-jaeger) provides a simple example for that.
+Moreover, `HttpClient` usage is needed to see the `System.Net` metrics in action. The `/NestedGreeting` endpoint in the paragraph [Distributed tracing with Jaeger](../../../core/diagnostics/observability-prgrja-example.md#9-distributed-tracing-with-jaeger) provides a simple example for that.
 
 ## Enrichment
 

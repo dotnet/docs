@@ -129,25 +129,27 @@ For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standa
 
 ### View metrics in Grafana with OpenTelemetry and Prometheus
 
-Please follow our tutorial on [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md).
+Please follow our tutorial on [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md), but note that the tutorial does not particularly discuss `HttpClient` metrics.
 
-Note that the tutorial does not particularly discuss `HttpClient` metrics. In order to enable them, it is necessary to extend the [metrics configuration code](../../../core/diagnostics/observability-prgrja-example.md#5-configure-opentelemetry-with-the-correct-providers) with the addition of the `System.Net.*` meters:
+There are two additions you need to make:
 
-```csharp
-otel.WithMetrics(metrics => metrics
-    // Metrics provider from OpenTelemetry
-    .AddAspNetCoreInstrumentation()
-    .AddMeter(greeterMeter.Name)
-    // Metrics provided by ASP.NET Core in .NET 8
-    .AddMeter("Microsoft.AspNetCore.Hosting")
-    .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
-    // Metrics provided by System.Net libraries
-    .AddMeter("System.Net.Http")
-    .AddMeter("System.Net.NameResolution")
-    .AddPrometheusExporter());
-```
+1. In order to enable the client metrics, it is necessary to extend the [metrics configuration code](../../../core/diagnostics/observability-prgrja-example.md#5-configure-opentelemetry-with-the-correct-providers) with the addition of the `System.Net.*` meters:
 
-Moreover, `HttpClient` usage is needed to see the `System.Net` metrics in action. The `/NestedGreeting` endpoint in the paragraph [Distributed tracing with Jaeger](../../../core/diagnostics/observability-prgrja-example.md#9-distributed-tracing-with-jaeger) provides a simple example for that.
+    ```csharp
+    otel.WithMetrics(metrics => metrics
+        // Metrics provider from OpenTelemetry
+        .AddAspNetCoreInstrumentation()
+        .AddMeter(greeterMeter.Name)
+        // Metrics provided by ASP.NET Core in .NET 8
+        .AddMeter("Microsoft.AspNetCore.Hosting")
+        .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
+        // Metrics provided by System.Net libraries
+        .AddMeter("System.Net.Http")
+        .AddMeter("System.Net.NameResolution")
+        .AddPrometheusExporter());
+    ```
+
+1. Moreover, `HttpClient` usage is needed to see the `System.Net` metrics in action. The `/NestedGreeting` endpoint in the paragraph [Distributed tracing with Jaeger](../../../core/diagnostics/observability-prgrja-example.md#9-distributed-tracing-with-jaeger) provides a simple example for that.
 
 ## Enrichment
 

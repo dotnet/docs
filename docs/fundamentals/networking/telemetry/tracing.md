@@ -90,7 +90,7 @@ When troubleshooting `HttpClient` issues or bottlenecks, it might be crutial to 
 .NET 9 introduced experimental connection tracing adding an `HTTP connection setup` span whith 3 child spans representing the DNS, TPC and TLS phases of the connection establishment. The HTTP part of the connection tracing is implemented within <xref:System.Net.Http.SocketsHttpHandler>, meaning that the activity model has to respect the underlying connection pooling behavior.
 
 > [!NOTE]
-> In <xref:System.Net.Http.SocketsHttpHandler>, connections and requests have independent lifecycles. A [pooled connection](../http/httpclient-guidelines#pooled-connections) can live long and serve many requests. If there is no connection immediately available in the connection pool, an incoming request will be added to a request queue to wait for an available connection. There is no relationship between requests and connections while the request is waiting. As a result, the `HTTP connection setup` span cannot be modeled as a child of the `HTTP client request` span.
+> In <xref:System.Net.Http.SocketsHttpHandler>, connections and requests have independent lifecycles. A [pooled connection](../http/httpclient-guidelines.md#pooled-connections) can live long and serve many requests. If there is no connection immediately available in the connection pool, an incoming request will be added to a request queue to wait for an available connection. There is no relationship between requests and connections while the request is waiting. As a result, the `HTTP connection setup` span cannot be modeled as a child of the `HTTP client request` span.
 
 The following spans have been introduced in .NET 9 to enable collecting detailed connection information:
 

@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0031: `System.ComponentModel.DescriptionAttribute` has no effect on test methods.
+# MSTEST0031: `System.ComponentModel.DescriptionAttribute` has no effect on test methods
 
 | Property                            | Value                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------|

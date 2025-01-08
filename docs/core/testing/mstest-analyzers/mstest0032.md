@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0032: Review or remove the assertion as its condition is known to be always true.
+# MSTEST0032: Review or remove the assertion as its condition is known to be always true
 
 | Property                            | Value                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------|

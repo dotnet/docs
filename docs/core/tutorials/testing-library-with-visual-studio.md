@@ -95,7 +95,7 @@ The most common tests call members of the <xref:Microsoft.VisualStudio.TestTools
 | `Assert.IsFalse`   | Verifies that a condition is `false`. The assert fails if the condition is `true`. |
 | `Assert.IsNotNull` | Verifies that an object isn't `null`. The assert fails if the object is `null`. |
 
-You can also use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> method in a test method to indicate the type of exception it's expected to throw. The test fails if the specified exception isn't thrown.
+You can also use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> (or `Assert.Throws` and `Assert.ThrowsExactly` if using MSTest 3.8 and later) method in a test method to indicate the type of exception it's expected to throw. The test fails if the specified exception isn't thrown.
 
 In testing the `StringLibrary.StartsWithUpper` method, you want to provide a number of strings that begin with an uppercase character. You expect the method to return `true` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue%2A?displayProperty=nameWithType> method. Similarly, you want to provide a number of strings that begin with something other than an uppercase character. You expect the method to return `false` in these cases, so you can call the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse%2A?displayProperty=nameWithType> method.
 

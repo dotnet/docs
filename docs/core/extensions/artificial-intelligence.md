@@ -3,7 +3,7 @@ title: Artificial Intelligence in .NET (Preview)
 description: Learn how to use the Microsoft.Extensions.AI library to integrate and interact with various AI services in your .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/17/2024
+ms.date: 01/06/2025
 ms.collection: ce-skilling-ai-copilot
 ---
 
@@ -210,7 +210,7 @@ For scenarios where the developer would like to specify delegating implementatio
 
 <xref:Microsoft.Extensions.AI.IChatClient> implementations will typically be provided to an application via [dependency injection (DI)](dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` employs a builder that creates a pipeline containing a caching client (which will then use an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
-::code language="csharp" source="snippets/ai/ConsoleAI.DependencyInjection/Program.cs":::
+:::code language="csharp" source="snippets/ai/ConsoleAI.DependencyInjection/Program.cs":::
 
 The preceding example depends on the following NuGet packages:
 
@@ -251,7 +251,7 @@ You can find actual concrete implementations in the following packages:
 
 The primary operation performed with an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> is embedding generation, which is accomplished with its <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2.GenerateAsync*> method.
 
-::code language="csharp" source="snippets/ai/ConsoleAI.CreateEmbeddings/Program.cs":::
+:::code language="csharp" source="snippets/ai/ConsoleAI.CreateEmbeddings/Program.cs":::
 
 #### Custom `IEmbeddingGenerator` middleware
 

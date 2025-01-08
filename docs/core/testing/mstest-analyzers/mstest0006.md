@@ -33,7 +33,7 @@ A method is marked with the `[ExpectedException]` attribute.
 
 ## Rule description
 
-Prefer `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync` over the `[ExpectedException]` attribute as it ensures that only the expected line of code throws the expected exception, instead of acting on the whole body of the test. The assert APIs also provide more flexibility and allow you to assert extra properties of the exception.
+Prefer `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync` (or `Assert.ThrowsExactly`/`Assert.Throws` or `Assert.ThrowsExactlyAsync`/`Assert.ThrowsAsync` if using MSTest 3.8 and later) over the `[ExpectedException]` attribute as it ensures that only the expected line of code throws the expected exception, instead of acting on the whole body of the test. The assert APIs also provide more flexibility and allow you to assert extra properties of the exception.
 
 ```csharp
 [TestClass]
@@ -59,7 +59,7 @@ public class TestClass
 
 ## How to fix violations
 
-Replace the usage of the `[ExpectedException]` attribute by a call to `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync`.
+Replace the usage of the `[ExpectedException]` attribute by a call to `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync` (or `Assert.ThrowsExactly`/`Assert.Throws` or `Assert.ThrowsExactlyAsync`/`Assert.ThrowsAsync` if using MSTest 3.8 and later).
 
 ```csharp
 [TestClass]
@@ -77,7 +77,7 @@ public class TestClass
         person.SetAge(-1);
 
         // Act
-        Assert.ThrowsException(() => person.GrowOlder());
+        Assert.ThrowsExactly(() => person.GrowOlder());
     }
 }
 ```

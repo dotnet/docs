@@ -138,7 +138,7 @@ If you need to use the built-in startup task system, you can configure them as f
 
 ### Register a delegate
 
-A delegate can be registered as a startup task using the appropriate <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
+A delegate can be registered as a startup task using the appropriate <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
 
 ```csharp
 siloBuilder.AddStartupTask(
@@ -152,7 +152,7 @@ siloBuilder.AddStartupTask(
 
 ### Register an `IStartupTask` implementation
 
-The <xref:Orleans.Runtime.IStartupTask> interface can be implemented and registered as a startup task using the <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
+The <xref:Orleans.Runtime.IStartupTask> interface can be implemented and registered as a startup task using the <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
 
 ```csharp
 public class CallGrainStartupTask : IStartupTask

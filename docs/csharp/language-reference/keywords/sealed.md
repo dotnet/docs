@@ -27,8 +27,7 @@ In the following example, `Z` inherits from `Y` but `Z` cannot override the virt
 [!code-csharp[csrefKeywordsModifiers#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#16)]
 
 When you define new methods or properties in a class, you can prevent deriving classes from overriding them by not declaring them as [virtual](virtual.md).
-When you override method inherited from <xref:System.Object?displayProperty=nameWithType> class, which are already virtual, you can prevent deriving classes from overriding them by using sealed keyword as in example:
-(feature [introduced with C# 10](../../whats-new/csharp-version-history.md))
+When you override a `virtual` member declared in a base type, you can prevent deriving types from overriding them by using sealed keyword as in the following example:
 
 ```
 public sealed override string ToString() => Value;

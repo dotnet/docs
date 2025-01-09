@@ -47,13 +47,7 @@ VSTest also uses a JSON based communication protocol, but it's not JSON-RPC base
 
 ### Disabling the new protocol
 
-To disable the use of the new protocol in Test Explorer, you can edit the csproj and remove the `TestingPlatformServer` capability.
-
-```xml
-<ItemGroup>
-    <ProjectCapability Remove="TestingPlatformServer" />
-</ItemGroup>
-```
+To disable the use of the new protocol in Test Explorer, you can edit your project to add the following property: `<DisableTestingPlatformServerCapability>true</DisableTestingPlatformServerCapability>`.
 
 ## Executables
 

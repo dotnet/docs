@@ -27,6 +27,11 @@ In the following example, `Z` inherits from `Y` but `Z` cannot override the virt
 [!code-csharp[csrefKeywordsModifiers#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#16)]
 
 When you define new methods or properties in a class, you can prevent deriving classes from overriding them by not declaring them as [virtual](virtual.md).
+When you override method inherited from [Object](https://github.com/dotnet/runtime/blob/1d1bf92fcf43aa6981804dc53c5174445069c9e4/src/libraries/System.Private.CoreLib/src/System/Object.cs) class, which are already virtual, you can prevent deriving classes from overriding them by using sealed keyword as in example: ( [introduced with C# 10](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-10) )
+
+```
+public sealed override string ToString() => Value;
+```
 
 It is an error to use the [abstract](abstract.md) modifier with a sealed class, because an abstract class must be inherited by a class that provides an implementation of the abstract methods or properties.
 

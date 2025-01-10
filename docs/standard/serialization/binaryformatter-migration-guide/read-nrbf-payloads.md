@@ -36,7 +36,8 @@ You can think of <xref:System.Formats.Nrbf.NrbfDecoder> as being the equivalent 
 - Use collision-resistant randomized hashing to store records referenced by other records (to avoid running out of memory for dictionary backed by an array whose size depends on the number of hash-code collisions).
 - Only primitive types can be instantiated in an implicit way. Arrays can be instantiated on demand. Other types are never instantiated.
 
-When using [NrbfDecoder], it is important not to reintroduce those capabilities in general-purpose code as doing so would negate these safeguards.
+> [!CAUTION]
+> When using [NrbfDecoder], it is important not to reintroduce those capabilities in general-purpose code as doing so would negate these safeguards.
 
 ### Deserialize a closed set of types
 

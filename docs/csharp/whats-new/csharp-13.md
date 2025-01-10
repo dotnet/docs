@@ -18,15 +18,11 @@ C# 13 includes the following new features. You can try these features using the 
 - [Allow ref struct types](#allows-ref-struct) as arguments for type parameters in generics.
 - [Partial properties and indexers](#more-partial-members) are now allowed in `partial` types.
 - [Overload resolution priority](#overload-resolution-priority) allows library authors to designate one overload as better than others.
-
-Beginning with Visual Studio 17.12, C# 13 includes the [`field`](#the-field-keyword) contextual keyword as a preview feature.
+- [The `field` keyword](#the-field-keyword) is a contextual keyword that provides access to the compiler synthesized backing field in a property accessor.
 
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 9 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 9 SDK.
-
-New features are added to the "What's new in C#" page when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
-
 You can find any breaking changes introduced in C# 13 in our article on [breaking changes](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%209.md).
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
@@ -173,13 +169,8 @@ This feature is intended for library authors to avoid ambiguity when adding new 
 
 ## The `field` keyword
 
-The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. The token `field` accesses the compiler synthesized backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.
-
-The `field` feature is released as a preview feature. We want to learn from your experiences using it. There's a potential a breaking change or confusion reading code in types that also include a field named `field`.  You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier.
-
-[!INCLUDE[field-preview](../includes/field-preview.md)]
-
-If you try this feature and have feedback, add it to the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
+In C# 13, the [`field`](../language-reference/keywords/field.md) contextual keyword accesses the compiler synthesized backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.
+There's a potential a breaking change or confusion reading code that uses `field` as an identifier for type members and variables.  You can use `@field` or `this.field` to disambiguate between the `field` keyword and a `field` identifier.
 
 ## See also
 

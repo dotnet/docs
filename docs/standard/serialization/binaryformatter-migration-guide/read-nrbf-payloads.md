@@ -96,12 +96,28 @@ The <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method returns a <xref:System
 ```csharp
 using System.Formats.Nrbf;
 
-static T Pseudocode<T>(Stream payload)
+static Animal Pseudocode(Stream payload)
 {
     SerializationRecord record = NrbfDecoder.Read(payload);
-    if (!record.TypeNameMatches(typeof(T))
+    if (record.TypeNameMatches(typeof(Cat)) && record is ClassRecord catRecord)
     {
-        throw new Exception($"Expected the record to match type name `{typeof(T).AssemblyQualifiedName}`, but got `{record.TypeName.AssemblyQualifiedName}`."
+        return new Cat()
+        {
+            Name = catRecord.GetString("Name"),
+            WorshippersCount = catRecord.GetInt32("WorshippersCount")
+        };
+    }
+    else if (record.TypeNameMatches(typeof(Dog)) && record is ClassRecord dogRecord)
+    {
+        return new Dog()
+        {
+            Name = dogRecord.GetString("Name"),
+            FriendsCount = dogRecord.GetInt32("FriendsCount")
+        };
+    }
+    else
+    {
+        throw new Exception($"Unexpected record: `{record.TypeName.AssemblyQualifiedName}`.");
     }
 }
 ```

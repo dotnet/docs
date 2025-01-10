@@ -206,7 +206,7 @@ if (referenced is not null)
 <xref:System.Formats.Nrbf.ArrayRecord> defines the core behavior for NRBF array records and provides a base for derived classes. It provides two properties:
 
 - <xref:System.Formats.Nrbf.ArrayRecord.Rank> which gets the rank of the array.
-- <xref:System.Formats.Nrbf.ArrayRecord.Lengths> which get a buffer of integers that represent the number of elements in every dimension.
+- <xref:System.Formats.Nrbf.ArrayRecord.Lengths> which get a buffer of integers that represent the number of elements in every dimension. It's recommended to **check the total length of the provided array record before** calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>.
 
 It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. When used for the first time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves (in case of arrays of complex types).
 
@@ -214,10 +214,17 @@ It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. W
 
 ```csharp
 ArrayRecord arrayRecord = (ArrayRecord)NrbfDecoder.Decode(stream);
+if (arrayRecord.Rank != 2 || arrayRecord.Lengths[0] * arrayRecord.Lengths[1] > 10_000)
+{
+    throw new Exception("The array had unexpected rank or length!");
+}
 int[,] array2d = (int[,])arrayRecord.GetArray(typeof(int[,]));
 ```
 
 If there is a type mismatch (example: the attacker has provided a payload with an array of two billion strings), the method throws <xref:System.InvalidOperationException>.
+
+> [!CAUTION]
+> Unfortunatelly, the NRBF format makes it very easy for the attacker to compress a large number of null array items. That is why it's recommended to always check the total length of the array before calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. Moreover, <xref:System.Formats.Nrbf.ArrayRecord.GetArray*> accepts an optional `allowNulls` boolean argument, which when set to false will throw for nulls.
 
 [NrbfDecoder] does not load or instantiate any custom types, so in case of arrays of complex types, it returns an array of <xref:System.Formats.Nrbf.SerializationRecord>.
 
@@ -229,14 +236,18 @@ public class ComplexType3D
 }
 
 ArrayRecord arrayRecord = (ArrayRecord)NrbfDecoder.Decode(payload);
-SerializationRecord[] records = (SerializationRecord[])arrayRecord.GetArray(expectedArrayType: typeof(ComplexType3D[]));
+if (arrayRecord.Rank != 1 || arrayRecord.Lengths[0] > 10_000)
+{
+    throw new Exception("The array had unexpected rank or length!");
+}
+
+SerializationRecord[] records = (SerializationRecord[])arrayRecord.GetArray(expectedArrayType: typeof(ComplexType3D[]), allowNulls: false);
 ComplexType3D[] output = records.OfType<ClassRecord>().Select(classRecord => new ComplexType3D()
 {
     I = classRecord.GetInt32(nameof(ComplexType3D.I)),
     J = classRecord.GetInt32(nameof(ComplexType3D.J)),
     K = classRecord.GetInt32(nameof(ComplexType3D.K)),
 }).ToArray();
-
 ```
 
 .NET Framework supported non-zero indexed arrays within NRBF payloads, but this support was never ported to .NET (Core). [NrbfDecoder] therefore does not support decoding non-zero indexed arrays.

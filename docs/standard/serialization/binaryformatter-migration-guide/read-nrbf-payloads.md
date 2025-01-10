@@ -86,7 +86,12 @@ internal static T LoadFromFile<T>(string path)
 
 The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, you need to call the <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method.
 
-The <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>. It exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches*>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
+The <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>.
+
+> [!NOTE]
+> An attacker could create a payload with cycles (example: class or an array of objects with a reference to itself). The <xref:System.Formats.Nrbf.SerializationRecord.Id> returns an instance of <xref:System.Formats.Nrbf.SerializationRecordId> which implements <xref:System.IEquatable%601> and amongst other things, it can be used to detect cycles in decoded records. 
+
+<xref:System.Formats.Nrbf.SerializationRecord> exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches*>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
 ```csharp
 using System.Formats.Nrbf;
@@ -138,7 +143,8 @@ The API it provides:
 - <xref:System.Formats.Nrbf.ClassRecord.MemberNames> property that gets the names of serialized members.
 - <xref:System.Formats.Nrbf.ClassRecord.HasMember*> method that checks if member of given name was present in the payload. It was designed for handling versioning scenarios where given member could have been renamed.
 - A set of dedicated methods for retrieving primitive values of the provided member name: <xref:System.Formats.Nrbf.ClassRecord.GetString*>, <xref:System.Formats.Nrbf.ClassRecord.GetBoolean*>, <xref:System.Formats.Nrbf.ClassRecord.GetByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetSByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetChar*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetSingle*>, <xref:System.Formats.Nrbf.ClassRecord.GetDouble*>, <xref:System.Formats.Nrbf.ClassRecord.GetDecimal*>, <xref:System.Formats.Nrbf.ClassRecord.GetTimeSpan*>, and <xref:System.Formats.Nrbf.ClassRecord.GetDateTime*>.
-- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord*> and <xref:System.Formats.Nrbf.ClassRecord.GetArrayRecord*> methods to retrieve instance of given record types.
+- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord*> retrieves an instance of [ClassRecord]. In case of a cycle, it's the same instance of current [ClassRecord] with the same <xref:System.Formats.Nrbf.SerializationRecord.Id>.
+- <xref:System.Formats.Nrbf.ClassRecord.GetArrayRecord*> retrieves an instance of [ArrayRecord].
 - <xref:System.Formats.Nrbf.ClassRecord.GetSerializationRecord*> to retrieve any serialization record and <xref:System.Formats.Nrbf.ClassRecord.GetRawValue*> to retrieve any serialization record or a raw primitive value.
 
 The following code snippet shows <xref:System.Formats.Nrbf.ClassRecord> in action:
@@ -161,14 +167,22 @@ Sample output = new()
     Text = rootRecord.GetString(nameof(Sample.Text)),
     // using dedicated method to read an array of bytes
     ArrayOfBytes = ((SZArrayRecord<byte>)rootRecord.GetArrayRecord(nameof(Sample.ArrayOfBytes))).GetArray(),
-    // using GetClassRecord to read a class record
-    ClassInstance = new()
-    {
-        Text = rootRecord
-            .GetClassRecord(nameof(Sample.ClassInstance))!
-            .GetString(nameof(Sample.Text))
-    }
 };
+
+// using GetClassRecord to read a class record
+ClassRecord? referenced = rootRecord.GetClassRecord(nameof(Sample.ClassInstance));
+if (referenced is not null)
+{
+    if (referenced.Id.Equals(rootRecord.Id))
+    {
+        throw new Exception("Unexpected cycle detected!");
+    }
+
+    output.ClassInstance = new()
+    {
+        Text = referenced.GetString(nameof(Sample.Text))
+    };
+}
 ```
 
 #### ArrayRecord

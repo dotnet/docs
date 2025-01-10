@@ -129,7 +129,7 @@ There are more than a dozen different serialization [record types](/openspecs/wi
   - <xref:System.Formats.Nrbf.PrimitiveTypeRecord%601> derives from the non-generic <xref:System.Formats.Nrbf.PrimitiveTypeRecord>, which also exposes a <xref:System.Formats.Nrbf.PrimitiveTypeRecord.Value> property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
 - <xref:System.Formats.Nrbf.ClassRecord>: describes all `class` and `struct` besides the aforementioned  primitive types.
 - <xref:System.Formats.Nrbf.ArrayRecord>: describes all array records, including jagged and multi-dimensional arrays.
-- <xref:System.Formats.Nrbf.SZArrayRecord%601>: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a <xref:System.Formats.Nrbf.ClassRecord>.
+- <xref:System.Formats.Nrbf.SZArrayRecord%601>: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a <xref:System.Formats.Nrbf.SerializationRecord>.
 
 ```csharp
 SerializationRecord rootObject = NrbfDecoder.Decode(payload); // payload is a Stream

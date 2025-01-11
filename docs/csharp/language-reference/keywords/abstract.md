@@ -78,7 +78,7 @@ You will get an error saying that the compiler cannot create an instance of the 
 Nonetheless, it is possible to use an abstract class constructor, as in the  example below
 
 ## Example 3
-```csharp
+```
 public abstract class Shape
 {
     public string Color { get; set; }
@@ -109,7 +109,6 @@ public class Square: Shape
         return Side * Side;
     }
 }
-
 
 public class Program
 {

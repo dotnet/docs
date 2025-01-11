@@ -76,14 +76,16 @@
                     "csharp-8.0/nested-stackalloc.md",
                     "csharp-9.0/nullable-reference-types-specification.md",
                     "csharp-9.0/nullable-constructor-analysis.md",
-                    "csharp-9.0/nullable-parameter-default-value-analysis.md"
+                    "csharp-9.0/nullable-parameter-default-value-analysis.md",
+                    "csharp-9.0/skip-localsinit.md"
                 ]
             },
             {
                 "files": [
                     "Compiler Breaking Changes - DotNet 7.md",
                     "Compiler Breaking Changes - DotNet 8.md",
-                    "Compiler Breaking Changes - DotNet 9.md"
+                    "Compiler Breaking Changes - DotNet 9.md",
+                    "Compiler Breaking Changes - DotNet 10.md"
                 ],
                 "src": "_roslyn/docs/compilers/CSharp",
                 "dest": "csharp/whats-new/breaking-changes",
@@ -504,8 +506,9 @@
                 "_csharplang/proposals/csharp-13.0/*.md": "10/31/2024",
                 "_csharplang/proposals/*.md": "10/31/2024",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "11/08/2022",
-                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "09/26/2023",
-                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "06/26/2024",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "11/08/2023",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "11/09/2024",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 10.md": "01/09/2024",
                 "_vblang/spec/*.md": "07/21/2017"
             },
             "ms.subservice": {
@@ -625,7 +628,6 @@
                 "_csharplang/proposals/csharp-9.0/native-integers.md": "Native sized integers",
                 "_csharplang/proposals/csharp-9.0/patterns3.md": "Pattern matching changes",
                 "_csharplang/proposals/csharp-9.0/records.md": "Records",
-                "_csharplang/proposals/csharp-9.0/skip-localsinit.md": "Suppress emitting localsinit flag",
                 "_csharplang/proposals/csharp-9.0/static-anonymous-functions.md": "Static anonymous functions",
                 "_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md": "Target-typed conditional expression",
                 "_csharplang/proposals/csharp-9.0/target-typed-new.md": "Target-typed new expressions",
@@ -680,6 +682,7 @@
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "C# compiler breaking changes since C# 10",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "C# compiler breaking changes since C# 11",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "C# compiler breaking changes since C# 12",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 10.md": "C# compiler breaking changes since C# 13",
                 "_vblang/spec/introduction.md": "Introduction",
                 "_vblang/spec/lexical-grammar.md": "Lexical grammar",
                 "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -745,7 +748,6 @@
                 "_csharplang/proposals/csharp-9.0/native-integers.md": "This feature specification describes native sized integers, which are integer types that use the processor's natural integral types.",
                 "_csharplang/proposals/csharp-9.0/patterns3.md": "This feature specification describes the additional pattern matching syntax added in C# 9.0. This includes relational patterns, 'and' and 'or' patterns, negated patterns and parenthesized patterns.",
                 "_csharplang/proposals/csharp-9.0/records.md": "This feature specification describes records. Records are reference types that provide value based equality semantics.",
-                "_csharplang/proposals/csharp-9.0/skip-localsinit.md": "This feature specification describes a performance enhancement to suppress emitting localsinit flag. This will prevent the runtime from initializing memory to 0 as part of allocating it.",
                 "_csharplang/proposals/csharp-9.0/static-anonymous-functions.md": "This feature specification describes static anonymous functions. Static anonymous functions are lambda expressions that are prohibited from accessing variables in the enclosing scope. That prevents them from creating a closure.",
                 "_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md": "This feature specification describes syntax rules to find a best match for the target of a conditional expression (?:).",
                 "_csharplang/proposals/csharp-9.0/target-typed-new.md": "This feature specification describes the enhancements to 'new' where the target type can be inferred from the variable declaration.",
@@ -800,6 +802,7 @@
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10 and included in C# 11",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11 and included in C# 12",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "Learn about any breaking changes since the initial release of C# 12 and included in C# 13",
+                "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 10.md": "Learn about any breaking changes since the initial release of C# 13 and included in C# 14",
                 "_vblang/spec/introduction.md": "This chapter provides and introduction to the Visual Basic language.",
                 "_vblang/spec/lexical-grammar.md": "This chapter defines the lexical grammar for Visual Basic.",
                 "_vblang/spec/preprocessing-directives.md": "This chapter defines the preprocessing directives allowed in Visual Basic",

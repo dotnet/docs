@@ -122,7 +122,7 @@ public class Program
 The `Shape` class is declared `abstract`, which means it cannot be instantiated directly. Instead, it serves as a blueprint for other classes.
 - Even though you can't create objects of an abstract class, it can still have a constructor.  This constructor is typically `protected`, meaning it can only be accessed from derived classes.
   In this case, the `Shape` constructor takes a `color` parameter and initializes the `Color` property. It also prints a message to the console.
-  The `: base(color)` part calls the base class's constructor (`Shape`) and passes the `color` argument to it.
+  The `public Square(string color, double side) : base(color)` part calls the base class's constructor (`Shape`) and passes the `color` argument to it.
 
 ## C# Language Specification  
 

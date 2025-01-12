@@ -194,7 +194,7 @@ This example demonstrates [hosted scenario](generic-host.md), where the consumer
 
 - <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(Microsoft.Extensions.AI.AnonymousDelegatingChatClient.CompleteSharedFunc)>
 - <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{Microsoft.Extensions.AI.IChatClient,Microsoft.Extensions.AI.IChatClient})>
-- <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use((System.Func{Microsoft.Extensions.AI.IChatClient,System.IServiceProvider,Microsoft.Extensions.AI.IChatClient}))>
+- <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{Microsoft.Extensions.AI.IChatClient,System.IServiceProvider,Microsoft.Extensions.AI.IChatClient})>
 - <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Extensions.AI.ChatCompletion}},System.Func{System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Collections.Generic.IAsyncEnumerable{Microsoft.Extensions.AI.StreamingChatCompletionUpdate}})>
 
 For example, in the earlier `RateLimitingChatClient` example, the overrides of `CompleteAsync` and `CompleteStreamingAsync` only need to do work before and after delegating to the next client in the pipeline. To achieve the same thing without writing a custom class, you can use an overload of `Use` that accepts a delegate that's used for both `CompleteAsync` and `CompleteStreamingAsync`, reducing the boilerplate required:

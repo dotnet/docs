@@ -19,7 +19,7 @@ helpviewer_keywords:
 As part of .NET 9, a new [NrbfDecoder] class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that [BinaryFormatter] deserialization carries. However, [NrbfDecoder] merely decodes the data into structures an application can further process. Care must be taken when using [NrbfDecoder] to safely load the data into the appropriate instances.
 
 > [!CAUTION]
-> [NrbfDecoder] is _an_ implementation of an NRBF reader, but its behaviors don't strictly follow [BinaryFormatter]'s implementation. Thus the output of [NrbfDecoder] shouldn't be used to determine whether a call to [BinaryFormatter] would be safe.
+> [NrbfDecoder] is _an_ implementation of an NRBF reader, but its behaviors don't strictly follow [BinaryFormatter]'s implementation. Thus you shouldn't use the output of [NrbfDecoder] to determine whether a call to [BinaryFormatter] would be safe.
 
 You can think of <xref:System.Formats.Nrbf.NrbfDecoder> as being the equivalent of using a JSON/XML reader without the deserializer.
 
@@ -37,7 +37,7 @@ You can think of <xref:System.Formats.Nrbf.NrbfDecoder> as being the equivalent 
 - Only primitive types can be instantiated in an implicit way. Arrays can be instantiated on demand. Other types are never instantiated.
 
 > [!CAUTION]
-> When using [NrbfDecoder], it is important not to reintroduce those capabilities in general-purpose code as doing so would negate these safeguards.
+> When using [NrbfDecoder], it's important not to reintroduce those capabilities in general-purpose code, as doing so would negate these safeguards.
 
 ### Deserialize a closed set of types
 
@@ -159,7 +159,7 @@ The API it provides:
 - <xref:System.Formats.Nrbf.ClassRecord.MemberNames> property that gets the names of serialized members.
 - <xref:System.Formats.Nrbf.ClassRecord.HasMember*> method that checks if member of given name was present in the payload. It was designed for handling versioning scenarios where given member could have been renamed.
 - A set of dedicated methods for retrieving primitive values of the provided member name: <xref:System.Formats.Nrbf.ClassRecord.GetString*>, <xref:System.Formats.Nrbf.ClassRecord.GetBoolean*>, <xref:System.Formats.Nrbf.ClassRecord.GetByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetSByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetChar*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetSingle*>, <xref:System.Formats.Nrbf.ClassRecord.GetDouble*>, <xref:System.Formats.Nrbf.ClassRecord.GetDecimal*>, <xref:System.Formats.Nrbf.ClassRecord.GetTimeSpan*>, and <xref:System.Formats.Nrbf.ClassRecord.GetDateTime*>.
-- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord*> retrieves an instance of [ClassRecord]. In case of a cycle, it's the same instance of current [ClassRecord] with the same <xref:System.Formats.Nrbf.SerializationRecord.Id>.
+- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord*> retrieves an instance of [ClassRecord]. In case of a cycle, it's the same instance of the current [ClassRecord] with the same <xref:System.Formats.Nrbf.SerializationRecord.Id>.
 - <xref:System.Formats.Nrbf.ClassRecord.GetArrayRecord*> retrieves an instance of [ArrayRecord].
 - <xref:System.Formats.Nrbf.ClassRecord.GetSerializationRecord*> to retrieve any serialization record and <xref:System.Formats.Nrbf.ClassRecord.GetRawValue*> to retrieve any serialization record or a raw primitive value.
 
@@ -206,7 +206,7 @@ if (referenced is not null)
 <xref:System.Formats.Nrbf.ArrayRecord> defines the core behavior for NRBF array records and provides a base for derived classes. It provides two properties:
 
 - <xref:System.Formats.Nrbf.ArrayRecord.Rank> which gets the rank of the array.
-- <xref:System.Formats.Nrbf.ArrayRecord.Lengths> which get a buffer of integers that represent the number of elements in every dimension. It's recommended to **check the total length of the provided array record before** calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>.
+- <xref:System.Formats.Nrbf.ArrayRecord.Lengths>, which gets a buffer of integers that represent the number of elements in every dimension. It's recommended to **check the total length of the provided array record** before calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>.
 
 It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. When used for the first time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves (in case of arrays of complex types).
 
@@ -224,7 +224,7 @@ int[,] array2d = (int[,])arrayRecord.GetArray(typeof(int[,]));
 If there is a type mismatch (example: the attacker has provided a payload with an array of two billion strings), the method throws <xref:System.InvalidOperationException>.
 
 > [!CAUTION]
-> Unfortunatelly, the NRBF format makes it very easy for the attacker to compress a large number of null array items. That is why it's recommended to always check the total length of the array before calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. Moreover, <xref:System.Formats.Nrbf.ArrayRecord.GetArray*> accepts an optional `allowNulls` boolean argument, which when set to false will throw for nulls.
+> Unfortunately, the NRBF format makes it easy for an attacker to compress a large number of null array items. That's why it's recommended to always check the total length of the array before calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. Moreover, <xref:System.Formats.Nrbf.ArrayRecord.GetArray*> accepts an optional `allowNulls` Boolean argument, which, when set to `false`, will throw for nulls.
 
 [NrbfDecoder] does not load or instantiate any custom types, so in case of arrays of complex types, it returns an array of <xref:System.Formats.Nrbf.SerializationRecord>.
 

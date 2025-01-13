@@ -17,7 +17,7 @@ The `System.IO.File` object doesn't contain a method to rename a file, instead, 
 
 The following example renames the file located in the `My Documents` folder from `TextFile.txt` to `NewName.txt`.
 
-:::code language="csharp" source="./snippets/how-to-rename-a-file/Form1.vb" id="BCLRename":::
+:::code language="vb" source="./snippets/how-to-rename-a-file/Form1.vb" id="BCLRename":::
 
 ## Rename with the Visual Basic run-time
 
@@ -25,7 +25,7 @@ Use the `RenameFile` method of the `My.Computer.FileSystem` object to rename a f
 
 The following example renames the file located in the `My Documents` folder from `TextFile.txt` to `NewName.txt`.
 
-:::code language="csharp" source="./snippets/how-to-rename-a-file/Form1.vb" id="MyRename":::
+:::code language="vb" source="./snippets/how-to-rename-a-file/Form1.vb" id="MyRename":::
 
 Visual Studio provides an IntelliSense code snippet that uses `My.Computer.FileSystem.RenameFile`. The snippet is located in **File system - Processing Drives, Folders, and Files**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).
 

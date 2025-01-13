@@ -5,8 +5,6 @@ ms.date: 01/14/2025
 ---
 # .NET Framework Release Notes
 
-_Released January 14, 2025_
-
 The .NET Framework updates include cumulative security and reliability improvements.  We recommend that you apply updates as part of your regular maintenance routines.
 
 .NET Framework will be supported with fixes and security updates for years to come as explained in more detail in our [lifecycle and support policy](https://learn.microsoft.com/en-us/lifecycle/products/microsoft-net-framework).  You can acquire the latest most security version of .NET Framework, from Windows Update or by visiting Microsoft Update Catalog.

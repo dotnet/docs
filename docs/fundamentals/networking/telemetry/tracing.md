@@ -108,6 +108,10 @@ These spans are too verbose for use 24x7 in production scenarios with high workl
 
 When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, *the `HTTP client request` span will contain a link to the `HTTP connection_setup` span corresponding to the connection serving the request*. As an http connection can be long lived, this could result in many links to the connection span from each of the request activities. Some APM monitoring tools aggresively walk links between spans to build up their views and so including this span may cause issues when the tools were not designed to account for large numbers of links.
 
+The following diagram illustrates the behavior of the spans and their relationship:
+
+[![Connection spans over time.](media/connection-link.png)](media/connection-link.png#lightbox)
+
 ### Walkthrough: Using the experimental connection tracing in .NET 9
 
 This walkthrough uses a [.NET 9 Aspire Starter App](/dotnet/aspire/get-started/build-your-first-aspire-app) to demonstrate connection tracing, but it should be easy to set it up with [other monitoring tools](#collecting-systemnet-traces) as well. The key step is to enable the ActivitySources.

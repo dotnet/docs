@@ -78,7 +78,7 @@ You will get an error saying that the compiler cannot create an instance of the 
 Nonetheless, it is possible to use an abstract class constructor, as in the  example below
 
 ## Example 3
-[!code-csharp[csrefKeywordsModifiers#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#27)]
+[!code-csharp[csrefKeywordsModifiers#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#27)]
 
 The `Shape` class is declared `abstract`, which means it cannot be instantiated directly. Instead, it serves as a blueprint for other classes.
 - Even though you can't create objects of an abstract class, it can still have a constructor.  This constructor is typically `protected`, meaning it can only be accessed from derived classes.

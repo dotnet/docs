@@ -107,7 +107,7 @@ module rec RecursiveModule =
             raise (DontSqueezeTheBananaException self)
 
     module BananaHelpers =
-        let peel (b: Banana) =
+        let peel (banana: Banana) =
             let flip (banana: Banana) =
                 match banana.Orientation with
                 | Up ->

@@ -78,47 +78,8 @@ You will get an error saying that the compiler cannot create an instance of the 
 Nonetheless, it is possible to use an abstract class constructor, as in the  example below
 
 ## Example 3
-```
-public abstract class Shape
-{
-    public string Color { get; set; }
+[!code-csharp[csrefKeywordsModifiers#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#27)]
 
-    // Constructor of the abstract class
-    protected Shape(string color)
-    {
-        Color = color;
-        Console.WriteLine("Created a shape with color {color}.");
-    }
-
-    // Abstract method that must be implemented by derived classes
-    public abstract double CalculateArea();
-}
-
-public class Square: Shape
-{
-    public double Side { get; set; }
-
-    // Constructor of the derived class calling the base class constructor
-    public Square(string color, double side) : base(color)
-    {
-        Side = side;
-    }
-
-    public override double CalculateArea()
-    {
-        return Side * Side;
-    }
-}
-
-public class Program
-{
-    public static void Main\(string\[\] args\)
-    {
-        Square square = new Square("red", 5);
-        Console.WriteLine(Area of the square: {square.CalculateArea()}");
-    }
-}
-```
 The `Shape` class is declared `abstract`, which means it cannot be instantiated directly. Instead, it serves as a blueprint for other classes.
 - Even though you can't create objects of an abstract class, it can still have a constructor.  This constructor is typically `protected`, meaning it can only be accessed from derived classes.
   In this case, the `Shape` constructor takes a `color` parameter and initializes the `Color` property. It also prints a message to the console.

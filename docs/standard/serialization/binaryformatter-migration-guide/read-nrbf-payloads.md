@@ -205,7 +205,7 @@ if (referenced is not null)
 
 <xref:System.Formats.Nrbf.ArrayRecord> defines the core behavior for NRBF array records and provides a base for derived classes. It provides two properties:
 
-- <xref:System.Formats.Nrbf.ArrayRecord.Rank> which gets the rank of the array.
+- <xref:System.Formats.Nrbf.ArrayRecord.Rank>, which gets the rank of the array.
 - <xref:System.Formats.Nrbf.ArrayRecord.Lengths>, which gets a buffer of integers that represent the number of elements in every dimension. It's recommended to **check the total length of the provided array record** before calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>.
 
 It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. When used for the first time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves (in case of arrays of complex types).

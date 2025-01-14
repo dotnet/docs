@@ -70,6 +70,15 @@ You use four preprocessor directives to control conditional compilation:
 - `#else`: Closes the preceding conditional compilation and opens a new conditional compilation if the previous specified symbol isn't defined.
 - `#endif`: Closes the preceding conditional compilation.
 
+The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET version.
+
+[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+
+> [!NOTE]
+> For traditional, non-SDK-style projects, you have to manually configure the conditional compilation symbols for the different target frameworks in Visual Studio via the project's properties pages.
+
+Other predefined symbols include the `DEBUG` and `TRACE` constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
+
 The C# compiler compiles the code between the `#if` directive and  `#endif` directive only if the specified symbol is defined, or not defined when the `!` not operator is used. Unlike C and C++, a numeric value to a symbol can't be assigned. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example, the following code is compiled when `DEBUG` is defined:
 
 ```csharp
@@ -117,15 +126,6 @@ A conditional directive beginning with an `#if` directive must explicitly be ter
 `#else` lets you create a compound conditional directive, so that, if none of the expressions in the preceding `#if` or (optional) `#elif` directives evaluate to `true`, the compiler will evaluate all code between `#else` and the next `#endif`. `#endif`(#endif) must be the next preprocessor directive after `#else`.
 
 `#endif` specifies the end of a conditional directive, which began with the `#if` directive.
-
-The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET version.
-
-[!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
-
-> [!NOTE]
-> For traditional, non-SDK-style projects, you have to manually configure the conditional compilation symbols for the different target frameworks in Visual Studio via the project's properties pages.
-
-Other predefined symbols include the `DEBUG` and `TRACE` constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
 
 The following example shows you how to define a `MYTEST` symbol on a file and then test the values of the `MYTEST` and `DEBUG` symbols. The output of this example depends on whether you built the project on **Debug** or **Release** configuration mode.
 
@@ -336,14 +336,14 @@ Where `pragma-name` is the name of a recognized pragma and `pragma-arguments` is
 
 ### #pragma warning
 
-`#pragma warning` can enable or disable certain warnings.
+`#pragma warning` can enable or disable certain warnings. A form of the `#pragma warning disable format` and `#pragma warning enable format` affect editor commands that format code blocks.
 
 ```csharp
 #pragma warning disable warning-list
 #pragma warning restore warning-list
 ```
 
-Where `warning-list` is a comma-separated list of warning numbers. The "CS" prefix is optional. When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
+Where `warning-list` is a comma-separated list of warning numbers, such as `414, CS3021`. The "CS" prefix is optional. When no warning numbers are specified, `disable` disables all warnings and `restore` enables all warnings.
 
 > [!NOTE]
 > To find warning numbers in Visual Studio, build your project and then look for the warning numbers in the **Output** window.
@@ -373,6 +373,15 @@ public class D
     }
 }
 ```
+
+Another form of the `warning` pragma disables or restores Visual Studio code formatting commands in blocks of code:
+
+```csharp
+#pragma warning disable format
+#pragma warning restore format
+```
+
+Visual Studio code format commands don't modify text in blocks of code where `disable format` is in effect. Those regions of code aren't modified by format commands, such as <kbd>Ctrl+K</kbd>, <kbd>Ctrl+D</kbd>. This pragma gives you fine control over the visual presentation of your code.
 
 ### #pragma checksum
 

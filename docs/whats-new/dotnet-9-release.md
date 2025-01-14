@@ -79,7 +79,7 @@ This article lists some of the major changes to docs for .NET 9.
 
 ### Updated articles
 
-- [:::no-loc text=interface::: (C# Reference)](../csharp/language-reference/keywords/interface.md) - Add reference and conceptual content for `ref struct` allowed in interfaces
+- [interface (C# Reference)](../csharp/language-reference/keywords/interface.md) - Add reference and conceptual content for `ref struct` allowed in interfaces
 - [`ref` structure types (C# reference)](../csharp/language-reference/builtin-types/ref-struct.md)
   - Add reference and conceptual content for `ref struct` allowed in interfaces
   - Add information for C# 13 feature `ref` locals and `unsafe` contexts in iterators and `async` methods

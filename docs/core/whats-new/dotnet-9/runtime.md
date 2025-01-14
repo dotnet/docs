@@ -24,7 +24,7 @@ Two new attributes make it possible to define [feature switches](https://github.
       [FeatureSwitchDefinition("Feature.IsSupported")]
       internal static bool IsSupported => AppContext.TryGetSwitch("Feature.IsSupported", out bool isEnabled) ? isEnabled : true;
 
-      internal static Implementation() => ...;
+      internal static void Implementation() => ...;
   }
   ```
 
@@ -48,7 +48,7 @@ Two new attributes make it possible to define [feature switches](https://github.
       internal static bool IsSupported => RuntimeFeature.IsDynamicCodeSupported;
 
       [RequiresDynamicCode("Feature requires dynamic code support.")]
-      internal static Implementation() => ...; // Uses dynamic code
+      internal static void Implementation() => ...; // Uses dynamic code
   }
   ```
 

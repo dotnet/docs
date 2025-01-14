@@ -82,16 +82,16 @@ type PeelState = Peeled | Unpeeled
 // This exception depends on the type below.
 exception DontSqueezeTheBananaException of Banana
 
-type Banana(orientation : Orientation) =
+type Banana(orientation: Orientation) =
     member val IsPeeled = false with get, set
     member val Orientation = orientation with get, set
-    member val Sides: PeelState list = [ Unpeeled; Unpeeled; Unpeeled; Unpeeled] with get, set
+    member val Sides: PeelState list = [Unpeeled; Unpeeled; Unpeeled; Unpeeled] with get, set
 
     member self.Peel() = BananaHelpers.peel self // Note the dependency on the BananaHelpers module.
     member self.SqueezeJuiceOut() = raise (DontSqueezeTheBananaException self) // This member depends on the exception above.
 
 module BananaHelpers =
-    let peel (b: Banana) =
+    let peel (banana: Banana) =
         let flip (banana: Banana) =
             match banana.Orientation with
             | Up ->
@@ -99,15 +99,17 @@ module BananaHelpers =
                 banana
             | Down -> banana
 
+        // Update the peel state for all sides of the banana.
         let peelSides (banana: Banana) =
             banana.Sides
             |> List.map (function
                          | Unpeeled -> Peeled
                          | Peeled -> Peeled)
 
-        match b.Orientation with
-        | Up ->   b |> flip |> peelSides
-        | Down -> b |> peelSides
+        // Apply the flipping and peeling logic based on the orientation.
+        match banana.Orientation with
+        | Up ->   banana |> flip |> peelSides
+        | Down -> banana |> peelSides
 ```
 
 Note that the exception `DontSqueezeTheBananaException` and the class `Banana` both refer to each other.  Additionally, the module `BananaHelpers` and the class `Banana` also refer to each other. This wouldn't be possible to express in F# if you removed the `rec` keyword from the `MutualReferences` namespace.

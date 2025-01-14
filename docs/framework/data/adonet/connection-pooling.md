@@ -17,7 +17,6 @@ Connecting to a data source can be time consuming. To minimize the cost of openi
 - **Encryption Requirements:** Databases that enforce TLS/SSL encryption require alignment between connection pooling configurations and encryption settings. For example, omitting required encryption parameters in connection strings, such as `Encrypt=True`, can lead to connection failures, reducing pooling efficiency.
 
 - **DNS Resolution:** Private endpoints and custom DNS configurations may pose challenges for connection pooling. Misconfigured or inconsistent DNS settings can delay or block connection establishment, impacting the performance and reliability of connection reuse. This is especially relevant in environments with hybrid or private cloud setups.
-
   
 ## In This Section  
 

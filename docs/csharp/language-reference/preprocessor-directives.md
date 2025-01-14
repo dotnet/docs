@@ -109,7 +109,6 @@ The following example shows a complex directive that allows your code to take ad
 
 `#if`, along with the `#else`, `#elif`, `#endif`, `#define`, and `#undef` directives, lets you include or exclude code based on the existence of one or more symbols. Conditional compilation can be useful when compiling code for a debug build or when compiling for a specific configuration.
 
-
 `#elif` lets you create a compound conditional directive. The `#elif` expression is evaluated if neither the preceding `#if` nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If an `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:
 
 ```csharp

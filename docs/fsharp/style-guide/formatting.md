@@ -2103,13 +2103,14 @@ This section discusses formatting types and type annotations. This includes form
 
 F# allows both postfix style of writing generic types (for example, `int list`) and the prefix style (for example, `list<int>`).
 Postfix style can only be used with a single type argument.
-Always prefer the .NET style, except for five specific types:
+Always prefer the .NET style, except for six specific types:
 
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
 3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
 4. For F# arrays, use the postfix form: `int array` rather than `array<int>` or `int[]`.
 5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
+6. For F# Sequences, use the postfix form: `int seq` rather than `seq<int>`.  
 
 For all other types, use the prefix form.
 

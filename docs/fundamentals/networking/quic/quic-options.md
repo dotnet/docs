@@ -13,33 +13,59 @@ ms.date: 01/11/2025
 
 All of the options classes can be set up incrementally, meaning that they do not require any of their properties to be initialized via constructor and can be set up independently. But the moment they are being used to configure a new listener or a connection, the options are validated and an appropriate type of  <xref:System.ArgumentException> is thrown for any missing mandatory values or misconfigured ones. For example, if mandatory <xref:System.Net.Quic.QuicConnectionOptions.DefaultStreamErrorCode?displayProperty=nameWithType> is not set, calling <xref:System.Net.Quic.QuicConnection.ConnectAsync(System.Net.Quic.QuicClientConnectionOptions,System.Threading.CancellationToken)> will throw <xref:System.ArgumentOutOfRangeException>.
 
-## `QuicListenerOptions`
+## QuicListenerOptions
 
-These options are used in <xref:System.Net.Quic.QuicListener.ListenAsync(System.Net.Quic.QuicListenerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> when starting a new <xref:System.Net.Quic.QuicListener>. The individual configuration properties are:
+<xref:System.Net.Quic.QuicListenerOptions> are used in <xref:System.Net.Quic.QuicListener.ListenAsync(System.Net.Quic.QuicListenerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> when starting a new <xref:System.Net.Quic.QuicListener>. The individual configuration properties are:
 
-- <xref:System.Net.Quic.QuicListenerOptions.ApplicationProtocols>: defines the application protocols accepted by the server ([RFC 7301 - ALPN](https://www.rfc-editor.org/rfc/rfc7301.html)). It can contain multiple values for different protocols that can be unrelated. In the process of accepting a new connection, listener can narrow down or select one specific protocol for each incoming connection, see <xref:System.Net.Quic.QuicListenerOptions.ConnectionOptionsCallback?displayProperty=nameWithType>. **This property is mandatory and must contains at least one value.**
-- <xref:System.Net.Quic.QuicListenerOptions.ConnectionOptionsCallback>: delegate to choose <xref:System.Net.Quic.QuicServerConnectionOptions> for an incoming connection. The function is given a not fully initialized instance of <xref:System.Net.Quic.QuicConnection> and <xref:System.Net.Security.SslClientHelloInfo> containing the server name requested by the client ([RFC 6066 - SNI](https://www.rfc-editor.org/rfc/rfc6066.html#section-3)). The delegate is invoked for each incoming connection. It can return different options based on the provided client info or it can safely return the very same instance of the options every time. The delegate purpose and shape is intentionally similar to <xref:System.Net.Security.ServerOptionsSelectionCallback> used in <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Net.Security.ServerOptionsSelectionCallback,System.Object,System.Threading.CancellationToken)?displayProperty=nameWithType>. **This property is mandatory.**
-- <xref:System.Net.Quic.QuicListenerOptions.ListenBacklog>: determines how many incoming connections can be held by the listener before additional ones start being refused. Every attempt to establish a connection counts, even when it fails or when the connection gets shut down while waiting in the queue. Ongoing processes to establish a new connection count towards this limit as well. Connections or connection attempts are counted until they are retrieved via <xref:System.Net.Quic.QuicListener.AcceptConnectionAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. The purpose of the backlog limit is to prevent servers from being overwhelmed by more incoming connections than it can process. **This property is optional, default value is 512.**
-- <xref:System.Net.Quic.QuicListenerOptions.ListenEndPoint>: IP address and port on which the listener will accept new connections. Due to underlying implementation, `MsQuic`, the listener will always bind to dual-stack wildcard socket regardless to what is specified here. This can lead to some unexpected behaviors, especially in comparison with ordinary TCP sockets like in HTTP/1.1 and HTTP/2 cases. Please see [QUIC Troubleshooting Guide](quic-troubleshooting.md) for more details. **This property is mandatory.**
+### ApplicationProtocols
 
+<xref:System.Net.Quic.QuicListenerOptions.ApplicationProtocols> define the application protocols accepted by the server ([RFC 7301 - ALPN](https://www.rfc-editor.org/rfc/rfc7301.html)). It can contain multiple values for different protocols that can be unrelated. In the process of accepting a new connection, listener can narrow down or select one specific protocol for each incoming connection, see <xref:System.Net.Quic.QuicListenerOptions.ConnectionOptionsCallback?displayProperty=nameWithType>. **This property is mandatory and must contains at least one value.**
 
-## `QuicConnectionOptions`
+### ConnectionOptionsCallback
+
+ <xref:System.Net.Quic.QuicListenerOptions.ConnectionOptionsCallback> is a delegate to choose <xref:System.Net.Quic.QuicServerConnectionOptions> for an incoming connection. The function is given a not fully initialized instance of <xref:System.Net.Quic.QuicConnection> and <xref:System.Net.Security.SslClientHelloInfo> containing the server name requested by the client ([RFC 6066 - SNI](https://www.rfc-editor.org/rfc/rfc6066.html#section-3)). The delegate is invoked for each incoming connection. It can return different options based on the provided client info or it can safely return the very same instance of the options every time. The delegate purpose and shape is intentionally similar to <xref:System.Net.Security.ServerOptionsSelectionCallback> used in <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Net.Security.ServerOptionsSelectionCallback,System.Object,System.Threading.CancellationToken)?displayProperty=nameWithType>. **This property is mandatory.**
+
+### ListenBacklog
+
+<xref:System.Net.Quic.QuicListenerOptions.ListenBacklog> determines how many incoming connections can be held by the listener before additional ones start being refused. Every attempt to establish a connection counts, even when it fails or when the connection gets shut down while waiting in the queue. Ongoing processes to establish a new connection count towards this limit as well. Connections or connection attempts are counted until they are retrieved via <xref:System.Net.Quic.QuicListener.AcceptConnectionAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. The purpose of the backlog limit is to prevent servers from being overwhelmed by more incoming connections than it can process. **This property is optional, default value is 512.**
+
+### ListenEndPoint
+
+<xref:System.Net.Quic.QuicListenerOptions.ListenEndPoint> contains IP address and port on which the listener will accept new connections. Due to underlying implementation, `MsQuic`, the listener will always bind to dual-stack wildcard socket regardless to what is specified here. This can lead to some unexpected behaviors, especially in comparison with ordinary TCP sockets like in HTTP/1.1 and HTTP/2 cases. Please see [QUIC Troubleshooting Guide](quic-troubleshooting.md) for more details. **This property is mandatory.**
+
+## QuicConnectionOptions
 
 <xref:System.Net.Quic.QuicConnectionOptions> contains shared options between <xref:System.Net.Quic.QuicClientConnectionOptions> and <xref:System.Net.Quic.QuicServerConnectionOptions>. It's an abstract base class and cannot be used on its own. It contains these properties:
 
-- <xref:System.Net.Quic.QuicConnectionOptions.DefaultCloseErrorCode>: error code used when the connection is disposed without calling <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)?displayProperty=nameWithType>. It's required by QUIC protocol to provide an application-level reason for closing a connection ([RFC 9000 - Connection Close](https://www.rfc-editor.org/rfc/rfc9000.html#name-connection_close-frames)). <xref:System.Net.Quic.QuicConnection> has no way to force application code to call <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)> before disposing the connection. In such case, the connection needs to know what error code to use. **This property is mandatory.**
-- <xref:System.Net.Quic.QuicConnectionOptions.DefaultStreamErrorCode>: error code used when a stream is disposed before finishing reading all the data. When receiving data over QUIC stream, application can either consume all the data or if not it needs to abort its reading side. And similarly to connection closing, QUIC protocol requires an application-level reason for aborting the reading side ([RFC 9000 - Stop Sending](https://www.rfc-editor.org/rfc/rfc9000.html#name-stop_sending-frames)). **This property is mandatory.**
-- <xref:System.Net.Quic.QuicConnectionOptions.HandshakeTimeout>: sets the time limit in which the connection must be fully established; otherwise, it gets aborted. It is possible to set this value to <xref:System.Threading.Timeout.InfiniteTimeSpan> but it is discouraged. Connection attempts might hang indefinitely and there are no means to clear them apart from stoping the <xref:System.Net.Quic.QuicListener>. **This property is optional, default value is 10 seconds.**
-- <xref:System.Net.Quic.QuicConnectionOptions.IdleTimeout>: in connection is inactive for more than the idel timeout, it gets disconnected. This options is part of the QUIC protocol specification ([RFC 9000 - Idle Timeout](https://www.rfc-editor.org/rfc/rfc9000.html#name-idle-timeout)) and is sent to the peer during connection handshake. The connection then take the smaller its and the peer's idle timeouts and uses that. Thus the connection can get closed on idle timeout sooner than what this option was set up. **This property is optional, default value is based on MsQuic which is 30 seconds.**
-- <xref:System.Net.Quic.QuicConnectionOptions.InitialReceiveWindowSizes>: specifies set of values limiting how much data, initially, can be received by the connection and/or the stream. QUIC protocol defines a mechanism to limit how much data can sent over the individual streams as well as cumulatively for the whole connection ([RFC 9000 - Data Flow Control](https://www.rfc-editor.org/rfc/rfc9000.html#name-data-flow-control)). These limits only apply before the application starts consuming the data. After that, `MsQuic` will keep adjusting the receive windows size based on how fast the application reads them. This property is of <xref:System.Net.Quic.QuicReceiveWindowSizes> type which contains these options:
-  - <xref:System.Net.Quic.QuicReceiveWindowSizes.Connection>: cumulative limit for received data across all streams belonging to this connection.
-  - <xref:System.Net.Quic.QuicReceiveWindowSizes.LocallyInitiatedBidirectionalStream>: limit for received data on an outgoing bidirectional stream.
-  - <xref:System.Net.Quic.QuicReceiveWindowSizes.RemotelyInitiatedBidirectionalStream>: limit for received data on an incoming bidirectional stream.
-  - <xref:System.Net.Quic.QuicReceiveWindowSizes.UnidirectionalStream>: limit for received data on an incoming unidirectional stream.
+### DefaultCloseErrorCode
+
+<xref:System.Net.Quic.QuicConnectionOptions.DefaultCloseErrorCode>: error code used when the connection is disposed without calling <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)?displayProperty=nameWithType>. It's required by QUIC protocol to provide an application-level reason for closing a connection ([RFC 9000 - Connection Close](https://www.rfc-editor.org/rfc/rfc9000.html#name-connection_close-frames)). <xref:System.Net.Quic.QuicConnection> has no way to force application code to call <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)> before disposing the connection. In such case, the connection needs to know what error code to use. **This property is mandatory.**
+
+### DefaultStreamErrorCode
+
+<xref:System.Net.Quic.QuicConnectionOptions.DefaultStreamErrorCode>: error code used when a stream is disposed before finishing reading all the data. When receiving data over QUIC stream, application can either consume all the data or if not it needs to abort its reading side. And similarly to connection closing, QUIC protocol requires an application-level reason for aborting the reading side ([RFC 9000 - Stop Sending](https://www.rfc-editor.org/rfc/rfc9000.html#name-stop_sending-frames)). **This property is mandatory.**
+
+### HandshakeTimeout
+
+<xref:System.Net.Quic.QuicConnectionOptions.HandshakeTimeout>: sets the time limit in which the connection must be fully established; otherwise, it gets aborted. It is possible to set this value to <xref:System.Threading.Timeout.InfiniteTimeSpan> but it is discouraged. Connection attempts might hang indefinitely and there are no means to clear them apart from stoping the <xref:System.Net.Quic.QuicListener>. **This property is optional, default value is 10 seconds.**
+
+### IdleTimeout
+
+<xref:System.Net.Quic.QuicConnectionOptions.IdleTimeout>: in connection is inactive for more than the idel timeout, it gets disconnected. This options is part of the QUIC protocol specification ([RFC 9000 - Idle Timeout](https://www.rfc-editor.org/rfc/rfc9000.html#name-idle-timeout)) and is sent to the peer during connection handshake. The connection then take the smaller its and the peer's idle timeouts and uses that. Thus the connection can get closed on idle timeout sooner than what this option was set up. **This property is optional, default value is based on MsQuic which is 30 seconds.**
+
+### InitialReceiveWindowSizes
+
+<xref:System.Net.Quic.QuicConnectionOptions.InitialReceiveWindowSizes>: specifies set of values limiting how much data, initially, can be received by the connection and/or the stream. QUIC protocol defines a mechanism to limit how much data can sent over the individual streams as well as cumulatively for the whole connection ([RFC 9000 - Data Flow Control](https://www.rfc-editor.org/rfc/rfc9000.html#name-data-flow-control)). These limits only apply before the application starts consuming the data. After that, `MsQuic` will keep adjusting the receive windows size based on how fast the application reads them. This property is of <xref:System.Net.Quic.QuicReceiveWindowSizes> type which contains these options:
+
+- <xref:System.Net.Quic.QuicReceiveWindowSizes.Connection>: cumulative limit for received data across all streams belonging to this connection.
+- <xref:System.Net.Quic.QuicReceiveWindowSizes.LocallyInitiatedBidirectionalStream>: limit for received data on an outgoing bidirectional stream.
+- <xref:System.Net.Quic.QuicReceiveWindowSizes.RemotelyInitiatedBidirectionalStream>: limit for received data on an incoming bidirectional stream.
+- <xref:System.Net.Quic.QuicReceiveWindowSizes.UnidirectionalStream>: limit for received data on an incoming unidirectional stream.
 
 These values must be non-negative integer which is power of 2, this is an inhereted limitation from `MsQuic`. Setting any of these to 0 essentially means that no data will ever be received by the specific stream or a connection as a whole. **This property is optional, default values are 64KB for a stream and 64MB for a connection.**
-- <xref:System.Net.Quic.QuicConnectionOptions.X>:
-- <xref:System.Net.Quic.QuicConnectionOptions.X>:
-- <xref:System.Net.Quic.QuicConnectionOptions.X>:
-- <xref:System.Net.Quic.QuicConnectionOptions.X>:
-- <xref:System.Net.Quic.QuicConnectionOptions.X>:
+
+###
+<xref:System.Net.Quic.QuicConnectionOptions.X>
+
+###
+<xref:System.Net.Quic.QuicConnectionOptions.X>

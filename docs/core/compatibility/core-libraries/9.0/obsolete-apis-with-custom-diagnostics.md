@@ -106,6 +106,7 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ## See also
 
+- [API obsoletions with non-default diagnostic IDs (.NET 10)](../10.0/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 8)](../8.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 7)](../7.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 6)](../6.0/obsolete-apis-with-custom-diagnostics.md)

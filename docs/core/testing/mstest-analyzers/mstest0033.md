@@ -27,3 +27,22 @@ Suppress the [CS8618: Non-nullable variable must contain a non-null value when e
 ## When to disable suppressor
 
 It's _not_ recommended to disable this suppressor.
+
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable MSTEST0033
+// The code that's violating the rule is on this line.
+#pragma warning restore MSTEST0033
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0033.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

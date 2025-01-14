@@ -39,3 +39,22 @@ Delete the shadowing member.
 ## When to suppress warnings
 
 Don't suppress warnings from this rule as it could cause testing issues (such as NRE).
+
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable MSTEST0036
+// The code that's violating the rule is on this line.
+#pragma warning restore MSTEST0036
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0036.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

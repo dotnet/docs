@@ -27,3 +27,14 @@ Suppress the [VSTHRD200: Use Async suffix for async methods](https://github.com/
 ## When to disable suppressor
 
 You can disable this suppressor if you want to follow the `Async` suffix pattern also for your test methods.
+
+## Suppress a warning
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0027.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

@@ -1,7 +1,7 @@
 ---
 title: "How to: Rename a File"
 description: "Learn about how to rename a file with the Visual Basic Runtime Library or the .NET base class library."
-ms.date: 07/20/2015
+ms.date: 01/14/2025
 helpviewer_keywords: 
 - "I/O [Visual Basic], renaming files"
 - "files [Visual Basic], renaming"

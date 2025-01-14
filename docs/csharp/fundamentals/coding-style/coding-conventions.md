@@ -1,7 +1,7 @@
 ---
 title: ".NET Coding Conventions"
 description: Learn about commonly used coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code. This article also includes the docs repo coding guidelines
-ms.date: 07/27/2023
+ms.date: 01/14/2025
 helpviewer_keyword:
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
@@ -128,7 +128,7 @@ If the divisor is 0, the second clause in the `if` statement would cause a run-t
 
 ### `new` operator
 
-- Use one of the concise forms of object instantiation, as shown in the following declarations.
+- Use one of the concise forms of object instantiation when the variable type matches the object type, as shown in the following declarations. This form isn't valid when the variable is an interface type, or a base class of the runtime type.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet19":::
 
@@ -172,7 +172,7 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet26":::
 
-- Rename properties when the property names in the result would be ambiguous. For example, if your query returns a customer name and a distributor ID, instead of leaving them as `Name` and `ID` in the result, rename them to clarify that `Name` is the name of a customer, and `ID` is the ID of a distributor.
+- Rename properties when the property names in the result would be ambiguous. For example, if your query returns a customer name and a distributor name, instead of leaving them as a form of `Name` in the result, rename them to clarify `CustomerName` is the name of a customer, and `DistributorName` is the name of a distributor.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet27":::
 

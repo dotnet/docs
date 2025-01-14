@@ -1,7 +1,7 @@
 ---
 title: Top-level statements tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
-ms.date: 11/22/2024
+ms.date: 01/14/2025
 ---
 # Tutorial: Explore ideas using top-level statements to build code as you learn
 
@@ -99,6 +99,8 @@ dotnet run -- Should I use top level statements in all my programs?
 Should I use top level statements in all my programs?
 Better not tell you now.
 ```
+
+The code to generate an answer includes a variable declaration in your top level statements. The compiler includes that declaration in the compiler generated `Main` method. Because these variable declarations are local variables, you can't include the `static` modifier.
 
 This code answers the questions, but let's add one more feature. You'd like your question app to simulate thinking about the answer. You can do that by adding a bit of ASCII animation, and pausing while working. Add the following code after the line that echoes the question:
 

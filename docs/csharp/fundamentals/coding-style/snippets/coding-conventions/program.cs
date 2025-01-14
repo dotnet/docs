@@ -214,20 +214,20 @@ namespace Coding_Conventions_Examples
 
             ExampleClass.totalInstances = 1;
 
-            var customers = new List<Customer>
+            var Customers = new List<Customer>
             {
               new Customer { Name = "Jones", ID = 432, City = "Redmond" }
             };
 
             // Check shop name to use this.
-            var distributors = new List<Distributor>
+            var Distributors = new List<Distributor>
             {
               new Distributor { Name = "ShopSmart", ID = 11302, City = "Redmond" }
             };
 
             //<snippet25>
             //<snippet28>
-            var seattleCustomers = from customer in customers
+            var seattleCustomers = from customer in Customers
                                    //</snippet28>
                                    where customer.City == "Seattle"
                                    select customer.Name;
@@ -235,20 +235,20 @@ namespace Coding_Conventions_Examples
 
             //<snippet26>
             var localDistributors =
-                from customer in customers
-                join distributor in distributors on customer.City equals distributor.City
+                from customer in Customers
+                join distributor in Distributors on customer.City equals distributor.City
                 select new { Customer = customer, Distributor = distributor };
             //</snippet26>
 
             //<snippet27>
             var localDistributors2 =
-                from customer in customers
-                join distributor in distributors on customer.City equals distributor.City
-                select new { CustomerName = customer.Name, DistributorID = distributor.ID };
+                from customer in Customers
+                join distributor in Distributors on customer.City equals distributor.City
+                select new { CustomerName = customer.Name, DistributorName = distributor.Name };
             //</snippet27>
 
             //<snippet29>
-            var seattleCustomers2 = from customer in customers
+            var seattleCustomers2 = from customer in Customers
                                     where customer.City == "Seattle"
                                     orderby customer.Name
                                     select customer;
@@ -257,13 +257,13 @@ namespace Coding_Conventions_Examples
             // #30 is in class CompoundFrom
 
             var customerDistributorNames =
-                from customer in customers
-                join distributor in distributors on customer.City equals distributor.City
+                from customer in Customers
+                join distributor in Distributors on customer.City equals distributor.City
                 select new { CustomerName = customer.Name, DistributorID = distributor.ID };
 
             var customerDistributorNames2 =
-                from customer in customers
-                from distributor in distributors
+                from customer in Customers
+                from distributor in Distributors
                 where customer.City == distributor.City
                 select new { CustomerName = customer.Name, DistributorID = distributor.ID };
 
@@ -367,7 +367,7 @@ namespace Coding_Conventions_Examples
         public class Student
         {
             public string? LastName { get; set; }
-            public List<int>? Scores { get; set; }
+            public ICollection<int> Scores { get; set; } = default!;
         }
 
         static void Main()
@@ -377,16 +377,16 @@ namespace Coding_Conventions_Examples
             // each element in the list contains an inner sequence of scores.
             List<Student> students = new List<Student>
         {
-           new Student {LastName="Omelchenko", Scores= new List<int> {97, 72, 81, 60}},
-           new Student {LastName="O'Donnell", Scores= new List<int> {75, 84, 91, 39}},
-           new Student {LastName="Mortensen", Scores= new List<int> {88, 94, 65, 85}},
-           new Student {LastName="Garcia", Scores= new List<int> {97, 89, 85, 82}},
-           new Student {LastName="Beebe", Scores= new List<int> {35, 72, 91, 70}}
+           new Student {LastName="Omelchenko", Scores = [97, 72, 81, 60]},
+           new Student {LastName="O'Donnell", Scores = [75, 84, 91, 39]},
+           new Student {LastName="Mortensen", Scores = [88, 94, 65, 85]},
+           new Student {LastName="Garcia", Scores = [97, 89, 85, 82]},
+           new Student {LastName="Beebe", Scores = [35, 72, 91, 70]}
         };
 
             //<snippet30>
             var scoreQuery = from student in students
-                             from score in student.Scores!
+                             from score in student.Scores
                              where score > 90
                              select new { Last = student.LastName, score };
             //</snippet30>

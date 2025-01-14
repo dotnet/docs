@@ -1,11 +1,16 @@
 ﻿//<Snippet1>
 public class Taxi
 {
-    public bool IsInitialized;
+    private string taxiTag;
 
-    public Taxi()
+    public Taxi(string tag)
     {
-        IsInitialized = true;
+        taxiTag = tag;
+    }
+
+    public override string ToString()
+    {
+        return $"Taxi: {taxiTag}";;
     }
 }
 
@@ -13,8 +18,8 @@ class TestTaxi
 {
     static void Main()
     {
-        Taxi t = new Taxi();
-        Console.WriteLine(t.IsInitialized);
+        Taxi t = new Taxi("Tag1345");
+        Console.WriteLine(t);
     }
 }
 //</Snippet1>

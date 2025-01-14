@@ -1,7 +1,7 @@
 ---
 title: "Using Constructors"
 description: This example shows how a class is instantiated by using the new operator in C#. The simple constructor is invoked after memory is allocated for the new object.
-ms.date: 11/22/2024
+ms.date: 01/14/2025
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
 ---

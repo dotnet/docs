@@ -15,7 +15,7 @@ This article offers guidelines to help you maximize the performance and reliabil
 
 ## Reuse credential instances
 
-To improve app resilience, reuse credential instances when possible to reduce the number of access token requests issued to Microsoft Entra ID. When a credential is reused, an attempt is made to fetch a token from the app token cache managed by the underlying MSAL dependency. For more information, see [Token caching in the Azure Identity client library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md). 
+Reuse credential instances when possible to improve app resilience and reduce the number of access token requests issued to Microsoft Entra ID. When a credential is reused, an attempt is made to fetch a token from the app token cache managed by the underlying MSAL dependency. For more information, see [Token caching in the Azure Identity client library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md). 
 
 > [!NOTE]
 > A high-volume app that doesn't reuse credentials may encounter HTTP 429 throttling responses from Microsoft Entra ID, which can lead to app outages.
@@ -35,7 +35,7 @@ Other types of .NET apps can reuse credential instances as follows:
 The Azure Identity library for .NET allows you to authenticate via managed identity with `ManagedIdentityCredential`. The way you use `ManagedIdentityCredential` impacts the applied retry strategy:
 
 - When used via `DefaultAzureCredential`:
-  - No retries are attempted when token acquisition fails.
+  - No retries are attempted when token acquisition fails, which makes this the least resilient option.
 - When used via any other approach, such as `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
   - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted.
   - If the Azure service to which you're authenticating provides a `Retry-After` response header, the next retry is delayed by the duration specified in that header's value.

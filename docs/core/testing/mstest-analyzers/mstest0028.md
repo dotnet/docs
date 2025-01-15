@@ -26,23 +26,4 @@ Suppress the [VSTHRD200: Use Async suffix for async methods](https://github.com/
 
 ## When to disable suppressor
 
-You can disable this suppressor if you want to follow the `Async` suffix pattern also for your test fixture methods.
-
-## Suppress a warning
-
-If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
-
-```csharp
-#pragma warning disable MSTEST0028
-// The code that's violating the rule is on this line.
-#pragma warning restore MSTEST0028
-```
-
-To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
-
-```ini
-[*.{cs,vb}]
-dotnet_diagnostic.MSTEST0028.severity = none
-```
-
-For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).
+.NET suppressors cannot be disabled.

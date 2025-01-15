@@ -9,8 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 #region snippet_credential_reuse_Dac
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    clientBuilder.AddSecretClient(new Uri("<key_vault_url>"));
-    clientBuilder.AddBlobServiceClient(new Uri("<storage_url>"));
+    clientBuilder.AddSecretClient(new Uri("<key-vault-url>"));
+    clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-uri>"));
 
     DefaultAzureCredential credential = new();
     clientBuilder.UseCredential(credential);
@@ -28,7 +28,7 @@ BlobServiceClient blobServiceClient = new(
     credentialChain);
 
 SecretClient secretClient = new(
-    new Uri("<key_vault_url>"),
+    new Uri("<key-vault-url>"),
     credentialChain);
 #endregion snippet_credential_reuse_noDac
 

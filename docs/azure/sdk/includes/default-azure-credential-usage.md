@@ -5,9 +5,9 @@ For example, consider the following hypothetical sequence of events:
 
 1. An organization's security team mandates all apps use managed identity to authenticate to Azure resources.
 1. For months, a .NET app hosted on an Azure Virtual Machine (VM) successfully uses `DefaultAzureCredential` to authenticate via managed identity.
-1. Without telling the support team, a developer installs the Azure CLI on that VM and runs the `az login` command to sign-in to Azure.
+1. Without telling the support team, a developer installs the Azure CLI on that VM and runs the `az login` command to authenticate to Azure.
 1. Due to a separate configuration change in the Azure environment, authentication via the original managed identity unexpectedly begins to fail silently.
-1. `DefaultAzureCredential` skips the failed `ManagedIdentityCredential` and searches for the next available credential, which is the Azure CLI credentials.
+1. `DefaultAzureCredential` skips the failed `ManagedIdentityCredential` and searches for the next available credential, which is `AzureCliCredential`.
 1. The team is unaware of the hidden authentication failure because logging is disabled by default.
 
 `DefaultAzureCredential` also introduces the following challenges in some scenarios:

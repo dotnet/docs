@@ -3,15 +3,9 @@ public class Taxi
 {
     private string taxiTag;
 
-    public Taxi(string tag)
-    {
-        taxiTag = tag;
-    }
+    public Taxi(string tag) => taxiTag = tag;
 
-    public override string ToString()
-    {
-        return $"Taxi: {taxiTag}";;
-    }
+    public override string ToString() => $"Taxi: {taxiTag}";
 }
 
 class TestTaxi
@@ -42,16 +36,10 @@ public class Employee
     public Employee() { }
 
     //<Snippet9>
-    public Employee(int annualSalary)
-    {
-        Salary = annualSalary;
-    }
+    public Employee(int annualSalary) => Salary = annualSalary;
     //</Snippet9>
 
-    public Employee(int weeklySalary, int numberOfWeeks)
-    {
-        Salary = weeklySalary * numberOfWeeks;
-    }
+    public Employee(int weeklySalary, int numberOfWeeks) => Salary = weeklySalary * numberOfWeeks;
 }
 //</Snippet3>
 

@@ -1,8 +1,8 @@
 ---
-title: 'Authentication best practices with the Azure Identity library for .NET'
-description: 'This article describes authentication best practices to follow when using the Azure Identity library.'
+title: Authentication best practices with the Azure Identity library for .NET
+description: This article describes authentication best practices to follow when using the Azure Identity library.
 ms.topic: conceptual
-ms.date: 01/08/2025
+ms.date: 01/15/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -19,9 +19,9 @@ To improve app resilience, reuse credential instances when possible. When a cred
 
 In an ASP.NET Core app, implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
 
-:::code language="csharp" source="../snippets/aspnetcore-guidance/BlazorSample/Program.cs" id="snippet_credential_reuse_Dac" highlight="6,7" :::
+:::code language="csharp" source="../snippets/auth-best-practices/Program.cs" id="snippet_credential_reuse_Dac" highlight="6,7" :::
 
-For information on this approach, see [Authenticate using Microsoft Entra ID](https://learn.microsoft.com/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
+For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 
 Other types of .NET apps can reuse credential instances as follows:
 

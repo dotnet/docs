@@ -1,7 +1,7 @@
 ---
 title: ".NET Coding Conventions"
 description: Learn about commonly used coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code. This article also includes the docs repo coding guidelines
-ms.date: 01/14/2025
+ms.date: 01/15/2025
 helpviewer_keyword:
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
@@ -42,13 +42,13 @@ Code analysis produces warnings and diagnostics when the enabled rules are viola
 The following sections describe practices that the .NET docs team follows to prepare code examples and samples. In general, follow these practices:
 
 - Utilize modern language features and C# versions whenever possible.
-- Avoid obsolete or outdated language constructs.
-- Only catch exceptions that can be properly handled; avoid catching generic exceptions.
+- Avoid outdated language constructs.
+- Only catch exceptions that can be properly handled; avoid catching general exceptions. For example, sample code should not catch the <xref:System.Exception?displayProperty=fullName> type without an exception filter.
 - Use specific exception types to provide meaningful error messages.
 - Use LINQ queries and methods for collection manipulation to improve code readability.
 - Use asynchronous programming with async and await for I/O-bound operations.
 - Be cautious of deadlocks and use <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?DisplayProperty=nameWithType> when appropriate.
-- Use the language keywords for data types instead of the runtime types. For example, use `string` instead of <xref:System.String?DisplayProperty=fullName>, or `int` instead of <xref:System.Int32?displayProperty=fullName>.
+- Use the language keywords for data types instead of the runtime types. For example, use `string` instead of <xref:System.String?DisplayProperty=fullName>, or `int` instead of <xref:System.Int32?displayProperty=fullName>. This includes using the types `nint` and `nuint`.
 - Use `int` rather than unsigned types. The use of `int` is common throughout C#, and it's easier to interact with other libraries when you use `int`. Exceptions are for documentation specific to unsigned data types.
 - Use `var` only when a reader can infer the type from the expression. Readers view our samples on the docs platform. They don't have hover or tool tips that display the type of variables.
 - Write code with clarity and simplicity in mind.
@@ -66,15 +66,25 @@ More specific guidelines follow.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet7":::
 
-### Arrays
+- Prefer raw string literals to escape sequences or verbatim strings.
+- Use the expression based string interpolation rather than positional string interpolation.
 
-- Use the concise syntax when you initialize arrays on the declaration line. In the following example, you can't use `var` instead of `string[]`.
+### Constructors and initialization
 
-:::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13a":::
+- Use Pascal case for primary constructor parameters on record types:
 
-- If you use explicit instantiation, you can use `var`.
+  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="PrimaryRecord":::
 
-:::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13b":::
+- Use camel case for primary constructor parameters on class and struct types:
+- Prefer required `init` properties to constructors to initialize fields.
+
+  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="PrimaryClass":::
+
+### Arrays and collections
+
+- Use collection expressions to initialize all collection types
+
+:::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13":::
 
 ### Delegates
 

@@ -61,16 +61,18 @@ namespace Coding_Conventions_Examples
 
             // Save snippet 4 and 5 for possible additions in program structure.
 
-            Name[] nameList = {new Name { FirstName = "Anderson", LastName = "Redmond" },
-                                 new Name { FirstName = "Jones", LastName = "Seattle" },
-                                  new Name { FirstName = "Anderson", LastName = "Redmond" }};
+            Name[] nameList = [
+                new Name { FirstName = "Anderson", LastName = "Redmond" },
+                new Name { FirstName = "Jones", LastName = "Seattle" },
+                new Name { FirstName = "Anderson", LastName = "Redmond" }
+            ];
             int n = 0;
 
             //<snippet6>
             string displayName = $"{nameList[n].LastName}, {nameList[n].FirstName}";
             //</snippet6>
 
-            Console.WriteLine("{0}, {1}", nameList[n].LastName, nameList[n].FirstName);
+            Console.WriteLine($"{nameList[n].LastName}, {nameList[n].FirstName}");
             Console.WriteLine(nameList[n].LastName + ", " + nameList[n].FirstName);
 
             //<snippet7>
@@ -123,12 +125,9 @@ namespace Coding_Conventions_Examples
             Console.WriteLine();
             //</snippet12>
 
-            //<snippet13a>
-            string[] vowels1 = { "a", "e", "i", "o", "u" };
-            //</snippet13a>
-            //<snippet13b>
-            var vowels2 = new string[] { "a", "e", "i", "o", "u" };
-            //</snippet13b>
+            //<snippet13>
+            string[] vowels = [ "a", "e", "i", "o", "u" ];
+            //</snippet13>
 
             //<snippet15b>
             Del exampleDel2 = DelMethod;
@@ -152,10 +151,7 @@ namespace Coding_Conventions_Examples
             }
             finally
             {
-                if (bodyStyle != null)
-                {
-                    ((IDisposable)bodyStyle).Dispose();
-                }
+                bodyStyle?.Dispose();
             }
             //</snippet17a>
             //<snippet17b>
@@ -214,16 +210,10 @@ namespace Coding_Conventions_Examples
 
             ExampleClass.totalInstances = 1;
 
-            var Customers = new List<Customer>
-            {
-              new Customer { Name = "Jones", ID = 432, City = "Redmond" }
-            };
+            List<Customer> Customers = [ new Customer { Name = "Jones", ID = 432, City = "Redmond" } ];
 
             // Check shop name to use this.
-            var Distributors = new List<Distributor>
-            {
-              new Distributor { Name = "ShopSmart", ID = 11302, City = "Redmond" }
-            };
+            List<Distributor> Distributors = [ new Distributor { Name = "ShopSmart", ID = 11302, City = "Redmond" } ];
 
             //<snippet25>
             //<snippet28>
@@ -335,20 +325,14 @@ namespace Coding_Conventions_Examples
             return totalInstances;
         }
 
-        public static int ResultSoFar()
-        {
-            return 0;
-        }
+        public static int ResultSoFar() => 0;
     }
 
     class BaseClass
     {
         protected static int totalInstances;
 
-        static BaseClass()
-        {
-            totalInstances = 0;
-        }
+        static BaseClass() => totalInstances = 0;
 
         public static int IncrementTotal()
         {
@@ -375,14 +359,13 @@ namespace Coding_Conventions_Examples
 
             // Use a collection initializer to create the data source. Note that
             // each element in the list contains an inner sequence of scores.
-            List<Student> students = new List<Student>
-        {
-           new Student {LastName="Omelchenko", Scores = [97, 72, 81, 60]},
-           new Student {LastName="O'Donnell", Scores = [75, 84, 91, 39]},
-           new Student {LastName="Mortensen", Scores = [88, 94, 65, 85]},
-           new Student {LastName="Garcia", Scores = [97, 89, 85, 82]},
-           new Student {LastName="Beebe", Scores = [35, 72, 91, 70]}
-        };
+            List<Student> students = [
+                new Student {LastName="Omelchenko", Scores = [97, 72, 81, 60]},
+                new Student {LastName="O'Donnell", Scores = [75, 84, 91, 39]},
+                new Student {LastName="Mortensen", Scores = [88, 94, 65, 85]},
+                new Student {LastName="Garcia", Scores = [97, 89, 85, 82]},
+                new Student {LastName="Beebe", Scores = [35, 72, 91, 70]}
+            ];
 
             //<snippet30>
             var scoreQuery = from student in students
@@ -395,12 +378,8 @@ namespace Coding_Conventions_Examples
             Console.WriteLine("scoreQuery:");
             foreach (var student in scoreQuery)
             {
-                Console.WriteLine("{0} Score: {1}", student.Last, student.score);
+                Console.WriteLine($"{student.Last} Score: {student.score}");
             }
-
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
         }
     }
 }
@@ -459,7 +438,7 @@ namespace GenericTypeParameters
         //</TypeParametersOne>
 
         //<TypeParametersTwo>
-        public int IComparer<T>() { return 0; }
+        public int IComparer<T>() => 0;
         public delegate bool Predicate<T>(T item);
         public struct Nullable<T> where T : struct { /*...*/ }
         //</TypeParametersTwo>
@@ -474,4 +453,23 @@ namespace GenericTypeParameters
             //</TypeParametersThree>
         }
     }//WrapParameters
+}
+
+namespace Constructors
+{
+    // <PrimaryRecord>
+    public record Person(string FirstName, string LastName);
+    // </PrimaryRecord>
+
+    // <PrimaryClass>
+    public class LabelledContainer<T>(string label)
+    {
+        public string Label { get; } = label;
+        public required T Contents 
+        { 
+            get;
+            init;
+        }
+    }
+    // </PrimaryClass>
 }

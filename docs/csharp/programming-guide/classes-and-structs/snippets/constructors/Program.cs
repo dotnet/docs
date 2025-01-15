@@ -63,3 +63,15 @@ public class Location
 }
 // </ExpressionBodiedCtor>
 
+// <PrimaryCtor>
+public class LabelledContainer<T>(string label)
+{
+   public string Label { get; } = label;
+   public required T Contents 
+   { 
+      get;
+      init;
+   }
+}
+// </PrimaryCtor>
+

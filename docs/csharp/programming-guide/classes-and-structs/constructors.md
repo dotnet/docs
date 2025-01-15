@@ -1,7 +1,7 @@
 ---
 title: "Constructors"
 description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
-ms.date: 04/06/2023
+ms.date: 01/15/2025
 helpviewer_keywords: 
   - "constructors [C#]"
   - "classes [C#], constructors"
@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Constructors (C# programming guide)
 
-Whenever an instance of a [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/builtin-types/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Instance constructors](instance-constructors.md) and [Using constructors](using-constructors.md).
+A *constructor* is a method that is called by the runtime when an instance of a [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/builtin-types/struct.md) is created. A class or struct may have multiple constructors that take different arguments. Constructors enable you to set ensure that instances of the type are valid when created. For more information and examples, see [Instance constructors](instance-constructors.md) and [Using constructors](using-constructors.md).
 
 There are several actions that are part of initializing a new instance. Those actions take place in the following order:
 
@@ -20,23 +20,27 @@ There are several actions that are part of initializing a new instance. Those ac
 1. *The instance constructor runs*. The instance constructor for the type runs.
 1. *Object initializers run*. If the expression includes any object initializers, those run after the instance constructor runs. Object initializers run in the textual order.
 
-The preceding actions take place when a new instance is initialized. If a new instance of a `struct` is set to its `default` value, all instance fields are set to 0.
+The preceding actions take place when an instance is created using the [`new` operator](../../language-reference//operators/new-operator.md). If a new instance of a `struct` is set to its `default` value, all instance fields are set to 0. Elements of an array are set to their default value of 0 or `null`.
 
 If the [static constructor](static-constructors.md) hasn't run, the static constructor runs before any of the instance constructor actions take place.
 
 ## Constructor syntax
 
-A constructor is a method whose name is the same as the name of its type. Its method signature includes only an optional [access modifier](./access-modifiers.md), the method name and its parameter list; it does not include a return type. The following example shows the constructor for a class named `Person`.
+A constructor is declared using the same as the name of its type. Its method signature can include an optional [access modifier](./access-modifiers.md), the method name and its parameter list; it does not include a return type. The following example shows the constructor for a class named `Person`.
 
 :::code source="./snippets/constructors/Program.cs" id="InstanceCtor":::
 
-If a constructor can be implemented as a single statement, you can use an [expression body definition](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `locationName` field.
+If a constructor can be implemented as a single statement, you can use an [expression body member](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `locationName` field.
 
 :::code source="./snippets/constructors/Program.cs" id="ExpressionBodiedCtor":::
 
+If a type requires a parameter to create an instance, you can use a *primary constructor* to indicate that one or more arguments are required to instantiate the type, as shown in the following example:
+
+:::code source="./snippets/constructors/Program.cs" id="PrimaryCtor":::
+
 ## Static constructors
 
-The previous examples have all shown instance constructors, which create a new object. A class or struct can also have a static constructor, which initializes static members of the type.  Static constructors are parameterless. If you don't provide a static constructor to initialize static fields, the C# compiler initializes static fields to their default value as listed in the [Default values of C# types](../../language-reference/builtin-types/default-values.md) article.
+The previous examples have shown instance constructors, which create a new object. A class or struct can also declare a static constructor, which initializes static members of the type.  Static constructors are parameterless. If you don't provide a static constructor to initialize static fields, the C# compiler initializes static fields to their default value as listed in the [Default values of C# types](../../language-reference/builtin-types/default-values.md) article.
 
 The following example uses a static constructor to initialize a static field.
 

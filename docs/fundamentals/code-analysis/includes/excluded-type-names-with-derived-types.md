@@ -6,6 +6,9 @@ You can exclude specific types and their derived types from analysis. For exampl
 dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = MyType
 ```
 
+> [!NOTE]
+> Replace the `XXXX` part of `CAXXXX` with the ID of the applicable rule.
+
 Allowed symbol name formats in the option value (separated by `|`):
 
 - Type name only (includes all types with the name, regardless of the containing type or namespace).

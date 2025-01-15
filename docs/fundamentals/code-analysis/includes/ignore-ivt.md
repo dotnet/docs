@@ -7,6 +7,6 @@ dotnet_code_quality.CAXXXX.ignore_internalsvisibleto = true
 ```
 
 > [!NOTE]
-> The `XXXX` part in the `CAXXXX` should be replaced with the number of rule it corresponds to.
+> Replace the `XXXX` part of `CAXXXX` with the ID of the applicable rule.
 
 This option is available starting in .NET 8.

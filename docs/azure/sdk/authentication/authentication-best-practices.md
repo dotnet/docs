@@ -15,7 +15,10 @@ This article offers guidelines to help you maximize the performance and reliabil
 
 ## Reuse credential instances
 
-To improve app resilience, reuse credential instances when possible. When a credential is reused, fewer access token requests are issued to Microsoft Entra ID. Instead, an attempt is made to fetch a token from the app token cache managed by the underlying MSAL dependency. For more information, see [Token caching in the Azure Identity client library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md). A high-volume app that doesn't reuse credentials may encounter HTTP 429 throttling responses from Microsoft Entra ID, which can lead to app outages.
+To improve app resilience, reuse credential instances when possible to reduce the number of access token requests issued to Microsoft Entra ID. When a credential is reused, an attempt is made to fetch a token from the app token cache managed by the underlying MSAL dependency. For more information, see [Token caching in the Azure Identity client library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md). 
+
+> [!NOTE]
+> A high-volume app that doesn't reuse credentials may encounter HTTP 429 throttling responses from Microsoft Entra ID, which can lead to app outages.
 
 In an ASP.NET Core app, implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
 
@@ -35,8 +38,8 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
   - No retries are attempted when token acquisition fails.
 - When used via any other approach, such as `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
   - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted.
-  - When the Azure service to which you're authenticating provides a `Retry-After` response header, the next retry is delayed by the duration specified in that header's value.
-  - When the service doesn't provide a `Retry-After` header, the maximum permissible delay between retries is 1 minute.
+  - If the Azure service to which you're authenticating provides a `Retry-After` response header, the next retry is delayed by the duration specified in that header's value.
+  - If the service doesn't provide a `Retry-After` header, the maximum permissible delay between retries is 1 minute.
   - To change any of the default retry settings, use the `Retry` property on `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 
 :::code language="csharp" source="../snippets/auth-best-practices/Program.cs" id="snippet_retries" highlight="5-9":::

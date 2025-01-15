@@ -1,6 +1,6 @@
 ---
 title: Authentication best practices with the Azure Identity library for .NET
-description: This article describes authentication best practices to follow when using the Azure Identity library.
+description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
 ms.topic: conceptual
 ms.date: 01/15/2025
 ---
@@ -35,7 +35,7 @@ Other types of .NET apps can reuse credential instances as follows:
 The Azure Identity library for .NET allows you to authenticate via managed identity with `ManagedIdentityCredential`. The way you use `ManagedIdentityCredential` impacts the applied retry strategy:
 
 - When used via `DefaultAzureCredential`:
-  - No retries are attempted when token acquisition fails, which makes this the least resilient option.
+  - No retries are attempted when the initial token acquisition attempt fails or times out after a short duration, which makes this the least resilient option.
 - When used via any other approach, such as `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
   - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted.
   - To change any of the default retry settings, use the `Retry` property on `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:

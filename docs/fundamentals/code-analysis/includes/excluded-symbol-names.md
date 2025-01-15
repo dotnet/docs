@@ -6,6 +6,9 @@ You can exclude specific symbols, such as types and methods, from analysis. For 
 dotnet_code_quality.CAXXXX.excluded_symbol_names = MyType
 ```
 
+> [!NOTE]
+> Replace the `XXXX` part of `CAXXXX` with the ID of the applicable rule.
+
 Allowed symbol name formats in the option value (separated by `|`):
 
 - Symbol name only (includes all symbols with the name, regardless of the containing type or namespace).

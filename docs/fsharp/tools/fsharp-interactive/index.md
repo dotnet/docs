@@ -117,6 +117,8 @@ printfn "%A" (getOddSquares [1..10])
    ./ExecutableScript.fsx
    ```
 
+> **Note**: Shebang functionality (`#!`) is specific to Unix-like systems such as Linux and MacOS. On Windows, you can execute scripts using `dotnet fsi Script.fsx` directly in the terminal or command prompt.
+
 This feature allows for a more seamless experience when working with F# scripts in environments like Linux and macOS.
 
 F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md) and [Visual Studio Code](../../get-started/get-started-vscode.md).

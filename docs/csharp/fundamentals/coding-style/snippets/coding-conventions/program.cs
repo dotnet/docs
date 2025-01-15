@@ -374,12 +374,22 @@ namespace Coding_Conventions_Examples
                              select new { Last = student.LastName, score };
             //</snippet30>
 
+            // <interpolatedStrings>
             // Execute the queries.
             Console.WriteLine("scoreQuery:");
             foreach (var student in scoreQuery)
             {
                 Console.WriteLine($"{student.Last} Score: {student.score}");
             }
+            // </interpolatedStrings>
+
+            // <rawStringLiterals>
+            var message = """
+                This is a long message that spans across multiple lines.
+                It uses raw string literals. This means we can 
+                also include characters like \n and \t without escaping them.
+                """;
+            // </rawStringLiterals>
         }
     }
 }

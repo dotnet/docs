@@ -9,24 +9,24 @@ helpviewer_keywords:
 ---
 # Constructors (C# programming guide)
 
-A *constructor* is a method that is called by the runtime when an instance of a [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/builtin-types/struct.md) is created. A class or struct may have multiple constructors that take different arguments. Constructors enable you to set ensure that instances of the type are valid when created. For more information and examples, see [Instance constructors](instance-constructors.md) and [Using constructors](using-constructors.md).
+A *constructor* is a method called by the runtime when an instance of a [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/builtin-types/struct.md) is created. A class or struct can have multiple constructors that take different arguments. Constructors enable you to ensure that instances of the type are valid when created. For more information and examples, see [Instance constructors](instance-constructors.md) and [Using constructors](using-constructors.md).
 
-There are several actions that are part of initializing a new instance. Those actions take place in the following order:
+There are several actions that are part of initializing a new instance. The following actions take place in the following order:
 
-1. *Instance fields are set to 0*. This is typically done by the runtime.
+1. *Instance fields are set to 0*. This initialization is typically done by the runtime.
 1. *Field initializers run*. The field initializers in the most derived type run.
 1. *Base type field initializers run*. Field initializers starting with the direct base through each base type to <xref:System.Object?displayProperty=fullName>.
 1. *Base instance constructors run*. Any instance constructors, starting with <xref:System.Object.%23ctor%2A?displayProperty=nameWithType> through each base class to the direct base class.
 1. *The instance constructor runs*. The instance constructor for the type runs.
-1. *Object initializers run*. If the expression includes any object initializers, those run after the instance constructor runs. Object initializers run in the textual order.
+1. *Object initializers run*. If the expression includes any object initializers, they run after the instance constructor runs. Object initializers run in the textual order.
 
-The preceding actions take place when an instance is created using the [`new` operator](../../language-reference//operators/new-operator.md). If a new instance of a `struct` is set to its `default` value, all instance fields are set to 0. Elements of an array are set to their default value of 0 or `null`.
+The preceding actions take place when an instance is created using the [`new` operator](../../language-reference//operators/new-operator.md). If a new instance of a `struct` is set to its `default` value, all instance fields are set to 0. Elements of an array are set to their default value of 0 or `null` when an array is created.
 
-If the [static constructor](static-constructors.md) hasn't run, the static constructor runs before any of the instance constructor actions take place.
+The [static constructor](static-constructors.md), if any, runs before any of the instance constructor actions take place for any instance of the type. The static constructor runs at most once.
 
 ## Constructor syntax
 
-A constructor is declared using the same as the name of its type. Its method signature can include an optional [access modifier](./access-modifiers.md), the method name and its parameter list; it does not include a return type. The following example shows the constructor for a class named `Person`.
+A constructor is a method with the same name as its type. Its method signature can include an optional [access modifier](./access-modifiers.md), the method name, and its parameter list; it doesn't include a return type. The following example shows the constructor for a class named `Person`.
 
 :::code source="./snippets/constructors/Program.cs" id="InstanceCtor":::
 
@@ -34,13 +34,13 @@ If a constructor can be implemented as a single statement, you can use an [expre
 
 :::code source="./snippets/constructors/Program.cs" id="ExpressionBodiedCtor":::
 
-If a type requires a parameter to create an instance, you can use a *primary constructor* to indicate that one or more arguments are required to instantiate the type, as shown in the following example:
+If a type requires a parameter to create an instance, you can use a *primary constructor* to indicate that one or more parameters are required to instantiate the type, as shown in the following example:
 
 :::code source="./snippets/constructors/Program.cs" id="PrimaryCtor":::
 
 ## Static constructors
 
-The previous examples have shown instance constructors, which create a new object. A class or struct can also declare a static constructor, which initializes static members of the type.  Static constructors are parameterless. If you don't provide a static constructor to initialize static fields, the C# compiler initializes static fields to their default value as listed in the [Default values of C# types](../../language-reference/builtin-types/default-values.md) article.
+The previous examples show instance constructors, which initialize a new object. A class or struct can also declare a static constructor, which initializes static members of the type. Static constructors are parameterless. If you don't provide a static constructor to initialize static fields, the C# compiler initializes static fields to their default value as listed in the [Default values of C# types](../../language-reference/builtin-types/default-values.md) article.
 
 The following example uses a static constructor to initialize a static field.
 
@@ -52,17 +52,8 @@ You can also define a static constructor with an expression body definition, as 
 
 For more information and examples, see [Static Constructors](./static-constructors.md).
 
-## In This Section
-
-- [Using constructors](./using-constructors.md)
-- [Instance constructors](./instance-constructors.md)
-- [Private constructors](./private-constructors.md)
-- [Static constructors](./static-constructors.md)
-- [How to write a copy constructor](./how-to-write-a-copy-constructor.md)
-
 ## See also
 
 - [The C# type system](../../fundamentals/types/index.md)
-- [Finalizers](./finalizers.md)
-- [static](../../language-reference/keywords/static.md)
+- [`static`](../../language-reference/keywords/static.md)
 - [Why Do Initializers Run In The Opposite Order As Constructors? Part One](/archive/blogs/ericlippert/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)

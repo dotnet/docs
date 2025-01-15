@@ -19,19 +19,19 @@ We chose our conventions based on the following goals:
 1. *Adoption*: We aggressively update our samples to use new language features. That practice raises awareness of new features, and makes them more familiar to all C# developers.
 
 > [!IMPORTANT]
-> These guidelines are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) and [C# compiler (roslyn)](https://github.com/dotnet/roslyn/blob/main/CONTRIBUTING.md#csharp) guidelines. We chose those guidelines because they have been tested over several years of Open Source development. They've helped community members participate in the runtime and compiler projects. They are meant to be an example of common C# conventions, and not an authoritative list (see [Framework Design Guidelines](../../../standard/design-guidelines/index.md) for that).
+> These guidelines are used by Microsoft to develop samples and documentation. They were adopted from the [.NET Runtime, C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md) and [C# compiler (roslyn)](https://github.com/dotnet/roslyn/blob/main/CONTRIBUTING.md#csharp) guidelines. We chose those guidelines because of their adoption over several years of Open Source development. These guidelines help community members participate in the runtime and compiler projects. They're meant to be an example of common C# conventions, and not an authoritative list (see [Framework Design Guidelines](../../../standard/design-guidelines/index.md) for detailed guidelines).
 >
 > The *teaching* and *adoption* goals are why the docs coding convention differs from the runtime and compiler conventions. Both the runtime and compiler have strict performance metrics for hot paths. Many other applications don't. Our *teaching* goal mandates that we don't prohibit any construct. Instead, samples show when constructs should be used. We update samples more aggressively than most production applications do. Our *adoption* goal mandates that we show code you should write today, even when code written last year doesn't need changes.
 
-This article explains our guidelines. The guidelines have evolved over time, and you'll find samples that don't follow our guidelines. We welcome PRs that bring those samples into compliance, or issues that draw our attention to samples we should update. Our guidelines are Open Source and we welcome PRs and issues. However, if your submission would change these recommendations, open an issue for discussion first. You're welcome to use our guidelines, or adapt them to your needs.
+This article explains our guidelines. The guidelines evolve over time, and you'll find samples that don't follow our guidelines. We welcome PRs that bring those samples into compliance, or issues that draw our attention to samples we should update. Our guidelines are Open Source and we welcome PRs and issues. However, if your submission would change these recommendations, open an issue for discussion first. You're welcome to use our guidelines, or adapt them to your needs.
 
 ## Tools and analyzers
 
-Tools can help your team enforce your conventions. You can enable [code analysis](../../../fundamentals/code-analysis/overview.md) to enforce the rules you prefer. You can also create an [editorconfig](/visualstudio/ide/create-portable-custom-editor-options) so that Visual Studio automatically enforces your style guidelines. As a starting point, you can copy the [dotnet/docs repo's file](https://github.com/dotnet/docs/blob/main/.editorconfig) to use our style.
+Tools can help your team enforce your conventions. You can enable [code analysis](../../../fundamentals/code-analysis/overview.md) to enforce the rules you prefer. You can also create an [editorconfig](/visualstudio/ide/create-portable-custom-editor-options) so that Visual Studio automatically enforces your style guidelines. As a starting point, you can copy the [`dotnet/docs` *.editorconfig*](https://github.com/dotnet/docs/blob/main/.editorconfig) to use our style.
 
-These tools make it easier for your team to adopt your preferred guidelines. Visual Studio applies the rules in all `.editorconfig` files in scope to format your code. You can use multiple configurations to enforce corporate-wide conventions, team conventions, and even granular project conventions.
+These tools make it easier for your team to adopt your preferred guidelines. Visual Studio applies the rules in all *.editorconfig* files in scope to format your code. You can use multiple configurations to enforce corporate-wide conventions, team conventions, and even granular project conventions.
 
-Code analysis produces warnings and diagnostics when the enabled rules are violated. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
+Code analysis produces warnings and diagnostics when it detects rule are violations. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
 
 ### Diagnostic IDs
 
@@ -43,12 +43,12 @@ The following sections describe practices that the .NET docs team follows to pre
 
 - Utilize modern language features and C# versions whenever possible.
 - Avoid outdated language constructs.
-- Only catch exceptions that can be properly handled; avoid catching general exceptions. For example, sample code should not catch the <xref:System.Exception?displayProperty=fullName> type without an exception filter.
+- Only catch exceptions that can be properly handled; avoid catching general exceptions. For example, sample code shouldn't catch the <xref:System.Exception?displayProperty=fullName> type without an exception filter.
 - Use specific exception types to provide meaningful error messages.
 - Use LINQ queries and methods for collection manipulation to improve code readability.
 - Use asynchronous programming with async and await for I/O-bound operations.
 - Be cautious of deadlocks and use <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?DisplayProperty=nameWithType> when appropriate.
-- Use the language keywords for data types instead of the runtime types. For example, use `string` instead of <xref:System.String?DisplayProperty=fullName>, or `int` instead of <xref:System.Int32?displayProperty=fullName>. This includes using the types `nint` and `nuint`.
+- Use the language keywords for data types instead of the runtime types. For example, use `string` instead of <xref:System.String?DisplayProperty=fullName>, or `int` instead of <xref:System.Int32?displayProperty=fullName>. This recommendation includes using the types `nint` and `nuint`.
 - Use `int` rather than unsigned types. The use of `int` is common throughout C#, and it's easier to interact with other libraries when you use `int`. Exceptions are for documentation specific to unsigned data types.
 - Use `var` only when a reader can infer the type from the expression. Readers view our samples on the docs platform. They don't have hover or tool tips that display the type of variables.
 - Write code with clarity and simplicity in mind.
@@ -67,7 +67,12 @@ More specific guidelines follow.
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet7":::
 
 - Prefer raw string literals to escape sequences or verbatim strings.
+
+  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="rawStringLiterals":::
+
 - Use the expression based string interpolation rather than positional string interpolation.
+
+  :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="interpolatedStrings":::
 
 ### Constructors and initialization
 
@@ -76,7 +81,7 @@ More specific guidelines follow.
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="PrimaryRecord":::
 
 - Use camel case for primary constructor parameters on class and struct types:
-- Prefer required `init` properties to constructors to initialize fields.
+- Use `required` properties instead of constructors to force initialization of property values.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="PrimaryClass":::
 
@@ -170,7 +175,7 @@ The lambda expression shortens the following traditional definition.
 
 ### Static members
 
-Call [static](../../language-reference/keywords/static.md) members by using the class name: *ClassName.StaticMember*. This practice makes code more readable by making static access clear.  Don't qualify a static member defined in a base class with the name of a derived class.  While that code compiles, the code readability is misleading, and the code may break in the future if you add a static member with the same name to the derived class.
+Call [static](../../language-reference/keywords/static.md) members by using the class name: *ClassName.StaticMember*. This practice makes code more readable by making static access clear. Don't qualify a static member defined in a base class with the name of a derived class. While that code compiles, the code readability is misleading, and the code might break in the future if you add a static member with the same name to the derived class.
 
 ### LINQ queries
 
@@ -196,7 +201,7 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet29":::
 
-- Use multiple `from` clauses instead of a [`join`](../../language-reference/keywords/join-clause.md) clause to access inner collections. For example, a collection of `Student` objects might each contain a collection of test scores. When the following query is executed, it returns each score that is over 90, along with the last name of the student who received the score.
+- Access inner collections with multiple `from` clauses instead of a [`join`](../../language-reference/keywords/join-clause.md) clause. For example, a collection of `Student` objects might each contain a collection of test scores. When the following query is executed, it returns each score that is over 90, along with the family name of the student who received the score.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet30":::
 
@@ -206,7 +211,7 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet8":::
 
-- Don't use [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) when the type isn't apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a `new` operator, an explicit cast or assignment to a literal value.
+- Don't use [var](../../language-reference/statements/declarations.md#implicitly-typed-local-variables) when the type isn't apparent from the right side of the assignment. Don't assume the type is clear from a method name. A variable type is considered clear if it's a `new` operator, an explicit cast, or assignment to a literal value.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet9":::
 
@@ -231,9 +236,17 @@ Call [static](../../language-reference/keywords/static.md) members by using the 
 - use implicit type for the result sequences in LINQ queries. The section on [LINQ](#linq-queries) explains that many LINQ queries result in anonymous types where implicit types must be used. Other queries result in nested generic types where `var` is more readable.
 
   > [!NOTE]
-  > Be careful not to accidentally change a type of an element of the iterable collection. For example, it is easy to switch from <xref:System.Linq.IQueryable?displayProperty=nameWithType> to <xref:System.Collections.IEnumerable?displayProperty=nameWithType> in a `foreach` statement, which changes the execution of a query.
+  > Be careful not to accidentally change a type of an element of the iterable collection. For example, it's easy to switch from <xref:System.Linq.IQueryable?displayProperty=nameWithType> to <xref:System.Collections.IEnumerable?displayProperty=nameWithType> in a `foreach` statement, which changes the execution of a query.
 
 Some of our samples explain the *natural type* of an expression. Those samples must use `var` so that the compiler picks the natural type. Even though those examples are less obvious, the use of `var` is required for the sample. The text should explain the behavior.
+
+### File scoped namespace declarations
+
+Most code files declare a single namespace. Therefore, our examples should use the file scoped namespace declarations:
+
+```csharp
+namespace MySampleCode;
+```
 
 ### Place the using directives outside the namespace declaration
 
@@ -282,7 +295,7 @@ And it compiles today. And tomorrow. But then sometime next week the preceding (
 - error CS0103: The name 'WaitUntil' does not exist in the current context
 ```
 
-One of the dependencies has introduced this class in a namespace then ends with `.Azure`:
+One of the dependencies introduced this class in a namespace then ends with `.Azure`:
 
 ```csharp
 namespace CoolStuff.Azure
@@ -325,14 +338,14 @@ In general, use the following format for code samples:
 - Use four spaces for indentation. Don't use tabs.
 - Align code consistently to improve readability.
 - Limit lines to 65 characters to enhance code readability on docs, especially on mobile screens.
-- Break long statements into multiple lines to improve clarity.
+- Improve clarity and user experience by breaking long statements into multiple lines.
 - Use the "Allman" style for braces: open and closing brace its own new line. Braces line up with current indentation level.
 - Line breaks should occur before binary operators, if necessary.
 
 ### Comment style
 
 - Use single-line comments (`//`) for brief explanations.
-- Avoid multi-line comments (`/* */`) for longer explanations.<br/>Comments in the code samples aren't localized. That means explanations embedded in the code will not be translated. Longer, explanatory text should be placed in the companion article, so that it can be localized.
+- Avoid multi-line comments (`/* */`) for longer explanations.<br/>Comments in the code samples aren't localized. That means explanations embedded in the code aren't translated. Longer, explanatory text should be placed in the companion article, so that it can be localized.
 - For describing methods, classes, fields, and all public members use [XML comments](../../language-reference/xmldoc/index.md).
 - Place the comment on a separate line, not at the end of a line of code.
 - Begin comment text with an uppercase letter.

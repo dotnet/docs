@@ -841,6 +841,6 @@ namespace csrefKeywordsModifiers
                     Console.WriteLine("Area of the square: {square.CalculateArea()}");            
              }
         }
-        //</snippet26>
+        //</snippet27>
     } 
 }

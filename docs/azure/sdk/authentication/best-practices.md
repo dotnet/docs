@@ -25,7 +25,7 @@ For information on this approach, see [Authenticate using Microsoft Entra ID](/d
 
 Other types of .NET apps can reuse credential instances as follows:
 
-:::code language="csharp" source="../snippets/auth-best-practices/Program.cs" id="snippet_credential_reuse_noDac" highlight="7, 11" :::
+:::code language="csharp" source="../snippets/auth-best-practices/Program.cs" id="snippet_credential_reuse_noDac" highlight="8, 12" :::
 
 ## Understand the managed identity retry strategy
 
@@ -33,7 +33,7 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
 
 - When used via `DefaultAzureCredential`:
   - No retries are attempted when token acquisition fails.
-- When used via any other approach, such as through `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
+- When used via any other approach, such as `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
   - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted.
   - When the Azure service to which you're authenticating provides a `Retry-After` response header, the next retry is delayed by the duration specified in that header's value.
   - When the service doesn't provide a `Retry-After` header, the maximum permissible delay between retries is 1 minute.

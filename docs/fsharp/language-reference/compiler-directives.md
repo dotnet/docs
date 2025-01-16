@@ -64,9 +64,8 @@ This automatically sets `define:NULLABLE` directive to the build. It's useful wh
 
 ```fsharp
 #if NULLABLE 
-let checkNonNull argName (arg: obj) =
+let checkNonNull argName (arg: obj | null) =
     match arg with
-    // nullness warning: the type 'obj' does not support 'null'
     | null -> nullArg argName
     | _ -> ()
 #else

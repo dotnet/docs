@@ -193,8 +193,8 @@ The first one is `| Null | NonNull x |`, which is a recommended way to handle po
 If you rather want to automatically throw `NullReferenceException`, you can use the `| NonNullQuick |` pattern:
 
 ```fsharp
-let len (NonNullQuick str) =
-    String.length str         // throws if the argument is null
+let len (NonNullQuick str) =  // throws if the argument is null
+    String.length str
 ```
 
 ## See also

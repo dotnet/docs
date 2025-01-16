@@ -52,9 +52,6 @@ On each platform, <xref:System.Net.Http.HttpClient> tries to use the best availa
 | Windows/Mono                | <xref:System.Net.HttpWebRequest>                                                          |
 | Windows/UWP                 | Windows native <xref:System.Net.Http.WinHttpHandler> (HTTP 2.0 capable)                   |
 | Windows/.NET Core 1.0-2.0   | Windows native <xref:System.Net.Http.WinHttpHandler> (HTTP 2.0 capable)                   |
-| Android/Xamarin             | Selected at build-time. Can either use <xref:System.Net.HttpWebRequest> or be configured to use Android's native [`HttpURLConnection`](https://developer.xamarin.com/api/type/Java.Net.HttpURLConnection/) |
-| iOS, tvOS, watchOS/Xamarin  | Selected at build-time. Can either use <xref:System.Net.HttpWebRequest> or be configured to use Apple's [`NSUrlSession`](https://developer.xamarin.com/api/type/MonoTouch.Foundation.NSUrlSession/) (HTTP 2.0 capable) |
-| macOS/Xamarin               | Selected at build-time. Can either use <xref:System.Net.HttpWebRequest> or be configured to use Apple's [`NSUrlSession`](https://developer.xamarin.com/api/type/MonoTouch.Foundation.NSUrlSession/) (HTTP 2.0 capable) |
 | macOS/Mono                  | <xref:System.Net.HttpWebRequest>                                                          |
 | macOS/.NET Core 1.0-2.0     | `libcurl`-based HTTP transport (HTTP 2.0 capable)                                         |
 | Linux/Mono                  | <xref:System.Net.HttpWebRequest>                                                          |

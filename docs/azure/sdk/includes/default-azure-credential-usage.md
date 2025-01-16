@@ -1,11 +1,7 @@
 
-`DefaultAzureCredential` is the most approachable way to get started with the Azure Identity library, but that convenience also introduces certain tradeoffs:
+`DefaultAzureCredential` is the most approachable way to get started with the Azure Identity library, but that convenience also introduces certain tradeoffs. Most notably, the specific credential in the chain that will succeed and be used for request authentication can't be guaranteed ahead of time. In a production environment, this unpredictability can introduce significant and sometimes subtle problems.
 
-- **Debugging challenges**: When authentication fails, it can be difficult to identify and [debug the offending credential](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#debug-a-chained-credential). Enable logging to see the sequential progression and success or failure status of each credential.
-- **Performance overhead**: Sequential credential attempts can introduce performance overhead. For example, managed identity is unavailable on a local development machine. Consequently, `ManagedIdentityCredential` always fails locally, unless explicitly disabled via its corresponding `Exclude`-prefixed property.
-- **Unpredictable behavior**: `DefaultAzureCredential` checks for certain environment variables as part of its sequential search through a [chain](/dotnet/api/azure.identity.defaultazurecredential?view=azure-dotnet) of potential credentials. It's possible that someone could add or modify these [environment variables](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/README.md#environment-variables) at the system level on the host machine. Those changes apply globally and therefore alter the behavior of `DefaultAzureCredential` at runtime in any app running on that machine. A user could also install and sign-in to tooling such as the Azure CLI on the host machine that could potentially impact with credential is selected by `DefaultAzureCredential`.
-
-In a production environment, the unpredictability of `DefaultAzureCredential` can introduce significant and sometimes subtle problems. For example, consider the following hypothetical sequence of events:
+For example, consider the following hypothetical sequence of events:
 
 1. An organization's security team mandates all apps use managed identity to authenticate to Azure resources.
 1. For months, a .NET app hosted on an Azure Virtual Machine (VM) successfully uses `DefaultAzureCredential` to authenticate via managed identity.

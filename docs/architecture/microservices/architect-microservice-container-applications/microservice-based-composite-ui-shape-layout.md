@@ -27,33 +27,33 @@ Figure 4-21 shows a version of this composite UI approach. This approach is simp
 
 Each of those UI composition microservices would be similar to a small API Gateway. But in this case, each one is responsible for a small UI area.
 
-A composite UI approach that's driven by microservices can be more challenging or less so, depending on what UI technologies you're using. For instance, you won't use the same techniques for building a traditional web application that you use for building an SPA or for native mobile app (as when developing Xamarin apps, which can be more challenging for this approach).
+A composite UI approach that's driven by microservices can be more challenging or less so, depending on what UI technologies you're using. For instance, you won't use the same techniques for building a traditional web application that you use for building an SPA or for native mobile app (which can be more challenging for this approach).
 
-The [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) sample application uses the monolithic UI approach for multiple reasons. First, it's an introduction to microservices and containers. A composite UI is more advanced but also requires further complexity when designing and developing the UI. Second, eShopOnContainers also provides a native mobile app based on Xamarin, which would make it more complex on the client C\# side.
+The [eShopOnContainers](https://aka.ms/MicroservicesArchitecture) sample application uses the monolithic UI approach for multiple reasons. First, it's an introduction to microservices and containers. A composite UI is more advanced but also requires further complexity when designing and developing the UI. Second, eShopOnContainers also provides a native mobile app based on Xamarin (unsupported as of May 2024), which would make it more complex on the client C\# side.
 
 However, we encourage you to use the following references to learn more about composite UI based on microservices.
 
 ## Additional resources
 
-- **Micro Frontends (Martin Fowler's blog)**  
+- **Micro Frontends (Martin Fowler's blog)**
   <https://martinfowler.com/articles/micro-frontends.html>
-  
-- **Micro Frontends (Michael Geers site)**  
+
+- **Micro Frontends (Michael Geers site)**
   <https://micro-frontends.org/>
-  
-- **Composite UI using ASP.NET (Particular's Workshop)**  
+
+- **Composite UI using ASP.NET (Particular's Workshop)**
   <https://github.com/Particular/Workshop/tree/master/demos/asp-net-core>
 
-- **Ruben Oostinga. The Monolithic Frontend in the Microservices Architecture**  
+- **Ruben Oostinga. The Monolithic Frontend in the Microservices Architecture**
   <https://xebia.com/blog/the-monolithic-frontend-in-the-microservices-architecture/>
 
-- **Mauro Servienti. The secret of better UI composition**  
+- **Mauro Servienti. The secret of better UI composition**
   <https://particular.net/blog/secret-of-better-ui-composition>
 
-- **Viktor Farcic. Including Front-End Web Components Into Microservices**  
+- **Viktor Farcic. Including Front-End Web Components Into Microservices**
   <https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/>
 
-- **Managing Frontend in the Microservices Architecture**  
+- **Managing Frontend in the Microservices Architecture**
   <https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html>
 
 >[!div class="step-by-step"]

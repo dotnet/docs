@@ -39,23 +39,23 @@ All of the options classes can be set up incrementally, meaning that they do not
 
 ### DefaultCloseErrorCode
 
-<xref:System.Net.Quic.QuicConnectionOptions.DefaultCloseErrorCode>: error code used when the connection is disposed without calling <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)?displayProperty=nameWithType>. It's required by QUIC protocol to provide an application-level reason for closing a connection ([RFC 9000 - Connection Close](https://www.rfc-editor.org/rfc/rfc9000.html#name-connection_close-frames)). <xref:System.Net.Quic.QuicConnection> has no way to force application code to call <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)> before disposing the connection. In such case, the connection needs to know what error code to use. **This property is mandatory.**
+<xref:System.Net.Quic.QuicConnectionOptions.DefaultCloseErrorCode> is used when the connection is disposed without calling <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)?displayProperty=nameWithType>. It's required by QUIC protocol to provide an application-level reason for closing a connection ([RFC 9000 - Connection Close](https://www.rfc-editor.org/rfc/rfc9000.html#name-connection_close-frames)). <xref:System.Net.Quic.QuicConnection> has no way to force application code to call <xref:System.Net.Quic.QuicConnection.CloseAsync(System.Int64,System.Threading.CancellationToken)> before disposing the connection. In such case, the connection needs to know what error code to use. **This property is mandatory.**
 
 ### DefaultStreamErrorCode
 
-<xref:System.Net.Quic.QuicConnectionOptions.DefaultStreamErrorCode>: error code used when a stream is disposed before finishing reading all the data. When receiving data over QUIC stream, application can either consume all the data or if not it needs to abort its reading side. And similarly to connection closing, QUIC protocol requires an application-level reason for aborting the reading side ([RFC 9000 - Stop Sending](https://www.rfc-editor.org/rfc/rfc9000.html#name-stop_sending-frames)). **This property is mandatory.**
+<xref:System.Net.Quic.QuicConnectionOptions.DefaultStreamErrorCode> is used when a stream is disposed before finishing reading all the data. When receiving data over QUIC stream, application can either consume all the data or if not it needs to abort its reading side. And similarly to connection closing, QUIC protocol requires an application-level reason for aborting the reading side ([RFC 9000 - Stop Sending](https://www.rfc-editor.org/rfc/rfc9000.html#name-stop_sending-frames)). **This property is mandatory.**
 
 ### HandshakeTimeout
 
-<xref:System.Net.Quic.QuicConnectionOptions.HandshakeTimeout>: sets the time limit in which the connection must be fully established; otherwise, it gets aborted. It is possible to set this value to <xref:System.Threading.Timeout.InfiniteTimeSpan> but it is discouraged. Connection attempts might hang indefinitely and there are no means to clear them apart from stoping the <xref:System.Net.Quic.QuicListener>. **This property is optional, default value is 10 seconds.**
+<xref:System.Net.Quic.QuicConnectionOptions.HandshakeTimeout> sets the time limit in which the connection must be fully established; otherwise, it gets aborted. It is possible to set this value to <xref:System.Threading.Timeout.InfiniteTimeSpan> but it is discouraged. Connection attempts might hang indefinitely and there are no means to clear them apart from stoping the <xref:System.Net.Quic.QuicListener>. **This property is optional, default value is 10 seconds.**
 
 ### IdleTimeout
 
-<xref:System.Net.Quic.QuicConnectionOptions.IdleTimeout>: in connection is inactive for more than the idel timeout, it gets disconnected. This options is part of the QUIC protocol specification ([RFC 9000 - Idle Timeout](https://www.rfc-editor.org/rfc/rfc9000.html#name-idle-timeout)) and is sent to the peer during connection handshake. The connection then take the smaller its and the peer's idle timeouts and uses that. Thus the connection can get closed on idle timeout sooner than what this option was set up. **This property is optional, default value is based on MsQuic which is 30 seconds.**
+If the connection is inactive for more than the specified <xref:System.Net.Quic.QuicConnectionOptions.IdleTimeout>, it gets disconnected. This options is part of the QUIC protocol specification ([RFC 9000 - Idle Timeout](https://www.rfc-editor.org/rfc/rfc9000.html#name-idle-timeout)) and is sent to the peer during connection handshake. The connection then take the smaller its and the peer's idle timeouts and uses that. Thus the connection can get closed on idle timeout sooner than what this option was set up. **This property is optional, default value is based on MsQuic which is 30 seconds.**
 
 ### InitialReceiveWindowSizes
 
-<xref:System.Net.Quic.QuicConnectionOptions.InitialReceiveWindowSizes>: specifies set of values limiting how much data, initially, can be received by the connection and/or the stream. QUIC protocol defines a mechanism to limit how much data can sent over the individual streams as well as cumulatively for the whole connection ([RFC 9000 - Data Flow Control](https://www.rfc-editor.org/rfc/rfc9000.html#name-data-flow-control)). These limits only apply before the application starts consuming the data. After that, `MsQuic` will keep adjusting the receive windows size based on how fast the application reads them. This property is of <xref:System.Net.Quic.QuicReceiveWindowSizes> type which contains these options:
+<xref:System.Net.Quic.QuicConnectionOptions.InitialReceiveWindowSizes> specify set of values limiting how much data, initially, can be received by the connection and/or the stream. QUIC protocol defines a mechanism to limit how much data can sent over the individual streams as well as cumulatively for the whole connection ([RFC 9000 - Data Flow Control](https://www.rfc-editor.org/rfc/rfc9000.html#name-data-flow-control)). These limits only apply before the application starts consuming the data. After that, `MsQuic` will keep adjusting the receive windows size based on how fast the application reads them. This property is of <xref:System.Net.Quic.QuicReceiveWindowSizes> type which contains these options:
 
 - <xref:System.Net.Quic.QuicReceiveWindowSizes.Connection>: cumulative limit for received data across all streams belonging to this connection.
 - <xref:System.Net.Quic.QuicReceiveWindowSizes.LocallyInitiatedBidirectionalStream>: limit for received data on an outgoing bidirectional stream.
@@ -64,8 +64,70 @@ All of the options classes can be set up incrementally, meaning that they do not
 
 These values must be non-negative integer which is power of 2, this is an inhereted limitation from `MsQuic`. Setting any of these to 0 essentially means that no data will ever be received by the specific stream or a connection as a whole. **This property is optional, default values are 64KB for a stream and 64MB for a connection.**
 
-###
-<xref:System.Net.Quic.QuicConnectionOptions.X>
+### KeepAliveInterval
 
-###
-<xref:System.Net.Quic.QuicConnectionOptions.X>
+<xref:System.Net.Quic.QuicConnectionOptions.KeepAliveInterval> determines if and how often PING frames will be sent to keep the connection active and prevent it being closed on <xref:System.Net.Quic.QuicConnectionOptions.IdleTimeout> ([RFC 9000 - PING Frames](https://www.rfc-editor.org/rfc/rfc9000.html#name-ping-frames)). If setting this property consider recommendation from [RFC 9000 - Deferring Idle Timeout](https://www.rfc-editor.org/rfc/rfc9000.html#name-deferring-idle-timeout). Setting the value too low might negatively impact the performance, also setting the property too close to idle timeout might still lead to connection closures. **This property is optional, default value is <xref:System.Threading.Timeout.InfiniteTimeSpan> meaning no PINGs will be sent.**
+
+### MaxInboundBidirectionalStreams
+
+<xref:System.Net.Quic.QuicConnectionOptions.MaxInboundBidirectionalStreams> determines the maximum number of concurrently active bidirectional streams that the connection is willing to accept. Note that this differs from how QUIC specification defines handling concurrency ([RFC 9000 - Controlling Concurrency](https://www.rfc-editor.org/rfc/rfc9000.html#name-controlling-concurrency)). The QUIC protocol counts the streams cumulatively, over the connection lifetime, and uses ever increasing limit to determine the overall number of streams accepted by the connection, including already closed streams ([RFC 9000 - MAX_STREAMS Frames](https://www.rfc-editor.org/rfc/rfc9000.html#frame-max-streams)). This property simplifies this so that the application only specifies the concurrent stream limit and `MsQuic` takes care of translating this limit to the corresponding `MAX_STREAMS` frames. **This property is optional, default value is 0 for client connections and 100 for server connections.**
+
+### MaxInboundUnidirectionalStreams
+
+<xref:System.Net.Quic.QuicConnectionOptions.MaxInboundUnidirectionalStreams> determines the maximum number of concurrently active unidirectional streams that the connection is willing to accept. Note that this differs from how QUIC specification defines handling stream concurrency ([RFC 9000 - Controlling Concurrency](https://www.rfc-editor.org/rfc/rfc9000.html#name-controlling-concurrency)). The QUIC protocol counts the streams cumulatively, over the connection lifetime, and uses ever increasing limit to determine the overall number of streams accepted by the connection, including already closed streams ([RFC 9000 - MAX_STREAMS Frames](https://www.rfc-editor.org/rfc/rfc9000.html#frame-max-streams)). This property simplifies this so that the application only specifies the concurrent stream limit and `MsQuic` takes care of translating this limit to the corresponding `MAX_STREAMS` frames. **This property is optional, default value is 0 for client connections and 10 for server connections.**
+
+### StreamCapacityCallback
+
+<xref:System.Net.Quic.QuicConnectionOptions.StreamCapacityCallback> is a callback that gets invoked whenever the peer releases a new stream capacity via `MAX_STREAMS` and as a result, the current capacity is above 0. The values provided in the callback arguments are capacity increments, meaning that the sum of all values from the callback will equal to the last value received from `MAX_STREAMS` ([RFC 9000 - MAX_STREAMS Frames](https://www.rfc-editor.org/rfc/rfc9000.html#frame-max-streams)). This callback was designed to support <xref:System.Net.Http.SocketsHttpHandler.EnableMultipleHttp3Connections?displayProperty=nameWithType> functionality and comes with several caveats:
+
+- It's up to the application to keep track of all opening and opened streams to know the actual capacity at any time.
+- The callback might be called in parallel, so it's up to the application to properly handle synchronization around stream counting.
+- The first invocation (with the initial capacity) might happen before <xref:System.Net.Quic.QuicConnection> instance is handed out via either <xref:System.Net.Quic.QuicConnection.ConnectAsync(System.Net.Quic.QuicClientConnectionOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> or <xref:System.Net.Quic.QuicListener.AcceptConnectionAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>.
+
+The following simplified scenario captures the behavior of stream opening and the callback:
+
+1. client initiates connection to the server via:
+```c#
+var client = await QuicConnection.ConnectAsync(new QuicClientConnectionOptions
+{
+    ...
+    StreamCapacityCallback = (connection, args) =>
+        Console.WriteLine($"{connection} stream capacity increased by: unidi += {args.UnidirectionalIncrement}, bidi += {args.BidirectionalIncrement}")
+};
+```
+2. server sends initial settings to client with the stream limit `2` for unidirectional streams and `0` for bidirectional
+3. client's `StreamCapacityCallback` gets called and prints:
+```text
+[conn][0x58575BF805B0] stream capacity increased by: unidi += 2, bidi += 0
+```
+4. client call to `ConnectAsync` returns with `[conn][0x58575BF805B0]` connection
+5. client attempts to open a few streams:
+```c#
+var stream1 = await connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
+var stream2 = await connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
+// The following call will get suspended because the stream is limit has been reached.
+var taskStream3 = connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
+```
+6. client finishes and closes the first 2 streams:
+```c#
+await stream1.WriteAsync(data, completeWrites: true);
+await stream1.DisposeAsync();
+await stream2.WriteAsync(data, completeWrites: true);
+await stream2.DisposeAsync();
+Console.WriteLine($"Stream 3 {(taskStream3.IsCompleted ? "opened" : "pending")}");
+```
+7. client prints:
+```text
+Stream 3 pending
+```
+8. server will release additional capacity of `2` after processing the first two stream
+9. two things happen on the client:
+
+third stream gets opened:
+```c#
+var stream3 = await taskStream3;
+```
+client's `StreamCapacityCallback` gets called again and prints:
+```text
+[conn][0x58575BF805B0] stream capacity increased by: unidi += 2, bidi += 0
+```

@@ -35,7 +35,7 @@ All of the options classes can be set up incrementally, meaning that they do not
 
 ## QuicConnectionOptions
 
-<xref:System.Net.Quic.QuicConnectionOptions> contains shared options between <xref:System.Net.Quic.QuicClientConnectionOptions> and <xref:System.Net.Quic.QuicServerConnectionOptions>. It's an abstract base class and cannot be used on its own. It contains these properties:
+<xref:System.Net.Quic.QuicConnectionOptions> contain shared options between <xref:System.Net.Quic.QuicClientConnectionOptions> and <xref:System.Net.Quic.QuicServerConnectionOptions>. It's an abstract base class and cannot be used on its own. It contains these properties:
 
 ### DefaultCloseErrorCode
 
@@ -131,3 +131,40 @@ client's `StreamCapacityCallback` gets called again and prints:
 ```text
 [conn][0x58575BF805B0] stream capacity increased by: unidi += 2, bidi += 0
 ```
+
+**This property is optional.**
+
+## QuicServerConnectionOptions
+
+<xref:System.Net.Quic.QuicServerConnectionOptions> are options specific for a server side connection. Apart from inhereted properties from <xref:System.Net.Quic.QuicConnectionOptions>, it contains the following:
+
+### ServerAuthenticationOptions
+
+<xref:System.Net.Quic.QuicServerConnectionOptions.ServerAuthenticationOptions> containing TLS setting for the server connection. The options are the same as used in <xref:System.Net.Security.SslStream.AuthenticateAsServer(System.Net.Security.SslServerAuthenticationOptions)?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync(System.Net.Security.SslServerAuthenticationOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>. For the QUIC server, <xref:System.Net.Security.SslServerAuthenticationOptions> is valid if:
+
+- At least of the following properties returns a valid certificate: <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateSelectionCallback>, <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificateContext>, <xref:System.Net.Security.SslServerAuthenticationOptions.ServerCertificate>.
+- At least one application protocol is defined in <xref:System.Net.Security.SslServerAuthenticationOptions.ApplicationProtocols>.
+- If changes, <xref:System.Net.Security.SslServerAuthenticationOptions.EncryptionPolicy> is not set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption> (default is <xref:System.Net.Security.EncryptionPolicy.RequireEncryption>).
+- If set, <xref:System.Net.Security.SslServerAuthenticationOptions.CipherSuitesPolicy> contains at least one of the following: <xref:System.Net.Security.TlsCipherSuite.TLS_AES_128_GCM_SHA256>, <xref:System.Net.Security.TlsCipherSuite.TLS_AES_256_GCM_SHA384>, <xref:System.Net.Security.TlsCipherSuite.TLS_CHACHA20_POLY1305_SHA256> (default is <c>null</c> and lets `MsQuic` to use all QUIC compatible cypher suites supported by the OS).
+
+**This property is mandatory and must meet the above listed conditions.**
+
+## QuicClientConnectionOptions
+
+<xref:System.Net.Quic.QuicClientConnectionOptions> are options specific for a client side connection. Apart from inhereted properties from <xref:System.Net.Quic.QuicConnectionOptions>, it contains the following:
+
+### ClientAuthenticationOptions
+
+<xref:System.Net.Quic.QuicServerConnectionOptions.ClientAuthenticationOptions> containing TLS setting for the client connection. The options are the same as used in <xref:System.Net.Security.SslStream.AuthenticateAsClient(System.Net.Security.SslClientAuthenticationOptions)?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.Net.Security.SslClientAuthenticationOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>. For the QUIC client, <xref:System.Net.Security.SslClientAuthenticationOptions> is valid if:
+
+- At least one application protocol is defined in <xref:System.Net.Security.SslServerAuthenticationOptions.ApplicationProtocols>.
+- If changed, <xref:System.Net.Security.SslServerAuthenticationOptions.EncryptionPolicy> is not set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption> (default is <xref:System.Net.Security.EncryptionPolicy.RequireEncryption>).
+- If set, <xref:System.Net.Security.SslServerAuthenticationOptions.CipherSuitesPolicy> contains at least one of the following: <xref:System.Net.Security.TlsCipherSuite.TLS_AES_128_GCM_SHA256>, <xref:System.Net.Security.TlsCipherSuite.TLS_AES_256_GCM_SHA384>, <xref:System.Net.Security.TlsCipherSuite.TLS_CHACHA20_POLY1305_SHA256> (default is <c>null</c> and lets `MsQuic` to use all QUIC compatible cypher suites supported by the OS).
+
+**This property is mandatory and must meet the above listed conditions.**
+
+### LocalEndPoint
+
+<xref:System.Net.Quic.QuicServerConnectionOptions.LocalEndPoint> contains IP address and port to which the client connection will bind. **This property is optional.**
+
+**This property is mandatory and must meet the above listed conditions.**

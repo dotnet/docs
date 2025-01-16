@@ -135,7 +135,7 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
     through platforms like .NET Core, promoting accessibility (Windows, Linux, macOS).
 
     **Extensive Ecosystem:** Offers a vast library selection via NuGet and tools for web
-    (.NET Framework), mobile development (Maui), IoT, AI, providing rich
+    (.NET Framework), mobile development (.NET MAUI), IoT, AI, providing rich
     capabilities to developers.
 
     **Type Safety & Reliability:** .NET's CLI model enforces strong typing and automatic

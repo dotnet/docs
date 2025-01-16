@@ -714,21 +714,22 @@ let getLineFromStream (stream: System.IO.StreamReader) : string | null =
 **Instead**, use idiomatic F# means (e.g., options):
 
 ```fsharp
-let getLineFromStream (stream: System.IO.StreamReader) : string option =
-    match stream.ReadLine() with
-    | Null -> None
-    | NonNull s -> Some s
+let getLineFromStream (stream: System.IO.StreamReader) =
+    stream.ReadLine() |> Option.ofObj
 ```
 
-For raising null related exceptions you can use special `nullArgCheck` and `nonNull` functions:
+For raising null related exceptions you can use special `nullArgCheck` and `nonNull` functions. They're handy also because in case the value is not null, they [shadow](../language-reference/functions/index.md#scope) the argument with its sanitized value - the further code cannot access possible null pointers anymore.
 
 ```fsharp
-let inline checkNonNull arg =
-    nullArgCheck (nameof arg) arg     // throws `ArgumentNullException`
-    |> ignore
+let inline processNullableList list =
+   let list = nullArgCheck (nameof list) list   // throws `ArgumentNullException`
+   // 'list' is safe to use from now on
+   list |> List.distinct
 
-let inline assertNonNull arg =
-    nonNull arg                       // throws `NullReferenceException`
+let inline processNullableList' list =
+    let list = nonNull list                     // throws `NullReferenceException`
+    // 'list' is safe to use from now on
+    list |> List.distinct
 ```
 
 ## Object programming

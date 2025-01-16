@@ -12,8 +12,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddSecretClient(new Uri("<key-vault-url>"));
     clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-uri>"));
 
-    DefaultAzureCredential credential = new();
-    clientBuilder.UseCredential(credential);
+    clientBuilder.UseCredential(new DefaultAzureCredential());
 });
 #endregion snippet_credential_reuse_Dac
 

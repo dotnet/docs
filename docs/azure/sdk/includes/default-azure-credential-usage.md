@@ -11,7 +11,7 @@ In a production environment, the unpredictability of `DefaultAzureCredential` ca
 1. For months, a .NET app hosted on an Azure Virtual Machine (VM) successfully uses `DefaultAzureCredential` to authenticate via managed identity.
 1. Without telling the support team, a developer installs the Azure CLI on that VM and runs the `az login` command to authenticate to Azure.
 1. Due to a separate configuration change in the Azure environment, authentication via the original managed identity unexpectedly begins to fail silently.
-1. `DefaultAzureCredential` skips the failed `ManagedIdentityCredential` and searches for the next available credential, which is the Azure CLI credentials.
+1. `DefaultAzureCredential` skips the failed `ManagedIdentityCredential` and searches for the next available credential, which is `AzureCliCredential`.
 1. The application starts utilizing the Azure CLI credentials rather than the managed identity, which may fail or result in unexpected elevation or reduction of privileges.
 
 To prevent these types of subtle issues or silent failures in production apps, strongly consider moving from `DefaultAzureCredential` to one of the following deterministic solutions:
@@ -19,11 +19,11 @@ To prevent these types of subtle issues or silent failures in production apps, s
 - A specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
 - A pared-down `ChainedTokenCredential` implementation optimized for the Azure environment in which your app runs. `ChainedTokenCredential` essentially creates a specific allow-list of acceptable credential options, such as `ManagedIdentity` for production and `VisualStudioCredential` for development.
 
-For example, consider the following `DefaultAzureCredential` configuration:
+For example, consider the following `DefaultAzureCredential` configuration in an ASP.NET Core project:
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="6,7":::
 
-Replace the preceding code with the following `ChainedTokenCredential` implementation to intentionally specify your desired credentials:
+Replace the preceding code with a `ChainedTokenCredential` implementation that specifies only the necessary credentials:
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc" highlight="6-8":::
 

@@ -108,14 +108,14 @@ printfn "%A" (getOddSquares [1..10])
 1. **Make the Script Executable:**
    Use the `chmod` command to make the script executable:
  
-     ```bash
+   ```bash
    chmod +x ExecutableScript.fsx
    ```
 
 2. **Run the Script Directly:**
    Now, you can execute the script directly from the terminal:
 
-      ```bash
+   ```bash
    ./ExecutableScript.fsx
    ```
 

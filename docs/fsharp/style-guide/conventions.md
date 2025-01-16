@@ -689,19 +689,15 @@ For legacy reasons some string functions in FSharp.Core still treat nulls as emp
 
 ### Leverage F# 9 null syntax at the API boundaries
 
-F# 9 adds [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to explicitly state that a value can be null. It's designed to be used on the API boundaries, to make the compiler indicate the places where null handling null is missing.
+F# 9 adds [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to explicitly state that a value can be null. It's designed to be used on the API boundaries, to make the compiler indicate the places where null handling is missing.
 
 Here is an example of the valid usage of the syntax:
 
 ```fsharp
-let processStream (stream: System.IO.StreamReader) =
-    let processLine (line: string | null) =
-        match line with
-        | null -> (); false
-        | s -> printfn "%s" s; true
-
-    while processLine(stream.ReadLine()) do ()
-    stream.Close()
+let processLineFromStream (line: string | null) =
+    match line with
+    | null -> (); false
+    | s -> printfn "%s" s; true
 ```
 
 **Avoid** propagating nulls further down your F# code:

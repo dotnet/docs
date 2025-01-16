@@ -64,15 +64,13 @@ This automatically sets `NULLABLE` directive to the build. It's useful while ini
 
 ```fsharp
 #if NULLABLE 
-let checkNonNull argName (arg: obj | null) =
-    match arg with
-    | null -> nullArg argName
-    | _ -> ()
+let length (arg: 'T when 'T: not null) =
+    Seq.length arg
 #else
-let checkNonNull argName (arg: obj) =
+let length arg =
     match arg with
-    | null -> nullArg argName
-    | _ -> ()
+    | null -> -1
+    | s -> Seq.length s
 #endif
 ```
 

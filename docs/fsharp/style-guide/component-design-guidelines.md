@@ -698,22 +698,7 @@ let checkNonNull' argName (arg: obj) =
     else ()
 ```
 
-Starting with F# 9, you can leverage the new `| null` [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to make the compiler indicate possible null values and where they need handling. The above code will then start producing warnings:
-
-```fsharp
-let checkNonNull argName (arg: obj) =
-    match arg with
-    // nullness warning: the type 'obj' does not support 'null'
-    | null -> nullArg argName
-    | _ -> ()
-
-let checkNonNull' argName (arg: obj) =
-    // nullness warning: the type 'obj' does not support 'null'
-    if isNull arg then nullArg argName 
-    else ()
-```
-
-To address the warnings, you could explicitly specify `null` as a possible argument value:
+Starting with F# 9, you can leverage the new `| null` [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to make the compiler indicate possible null values and where they need handling:
 
 ```fsharp
 let checkNonNull argName (arg: obj | null) =
@@ -726,31 +711,14 @@ let checkNonNull' argName (arg: obj | null) =
     else ()
 ```
 
-Yet, the most succinct way to achieve this is to use the new builtin `nullArgCheck` function:
-
-```fsharp
-let checkNonNull'' argName arg =    // `arg` is inferred to be `obj | null`
-    nullArgCheck argName arg
-    |> ignore
-```
-
-The `nullArgCheck` function is also handy when you need to sanitize the input and keep it in case it's not null:
-
-```fsharp
-let processNullableList l =       
-    // `l` is inferred as `int list | null`
-    let l = nullArgCheck (nameof l) l
-    // now, `l` is inferred as `int list` and is safe to use
-    l |> List.map (fun x -> x + 1)
-```
-
-On the other hand, you'll get a warning if the compiler detects that a possible null value is not handled:
+In F# 9, the compiler emits a warning when it detects that a possible null value is not handled:
 
 ```fsharp
 let printLineLength (s: string) =
     printfn "%i" s.Length
 
 let readLineFromStream (sr: System.IO.StreamReader) =
+    // `ReadLine` may return null here - when the stream is finished
     let line = sr.ReadLine()
     // nullness warning: The types 'string' and 'string | null'
     // do not have equivalent nullability
@@ -766,8 +734,8 @@ let printLineLength (s: string) =
 let readLineFromStream (sr: System.IO.StreamReader) =
     let line = sr.ReadLine()
     match line with
-    | Null -> ()
-    | NonNull s -> printLineLength s
+    | null -> ()
+    | s -> printLineLength s
 ```
 
 #### Avoid using tuples as return values

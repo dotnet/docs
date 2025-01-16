@@ -3,9 +3,13 @@
 public static class Basics
 {
 
-    static readonly int[] scores = [
-        0, 30, 50, 70, 80, 85, 94, 87, 96, 88, 59, 90, 91, 85, 60, 49, 100
-        ];
+    static readonly int[] scores =
+    [
+        0, 30, 50, 70, 80,
+        85, 94, 87, 96, 88,
+        59, 90, 91, 85, 60,
+        49, 100
+    ];
 
     // <SourceData>
     static readonly City[] cities = [
@@ -355,7 +359,8 @@ public static class Basics
     public static void Basics17()
     {
         string[] categories = ["brass", "winds", "percussion"];
-        Product[] products = [
+        Product[] products =
+        [
             new Product("Trumpet", "brass"),
             new Product("Trombone", "brass"),
             new Product("French Horn", "brass"),

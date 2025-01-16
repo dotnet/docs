@@ -165,6 +165,6 @@ client's `StreamCapacityCallback` gets called again and prints:
 
 ### LocalEndPoint
 
-<xref:System.Net.Quic.QuicServerConnectionOptions.LocalEndPoint> contains IP address and port to which the client connection will bind. **This property is optional.**
+<xref:System.Net.Quic.QuicServerConnectionOptions.LocalEndPoint> contains IP address and port to which the client connection will bind. If not specified, the OS will assign an IP address and a port. **This property is optional.**
 
 **This property is mandatory and must meet the above listed conditions.**

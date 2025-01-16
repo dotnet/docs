@@ -70,7 +70,7 @@ The following code implements the examples from this section along with some add
 
 ## Optional arguments
 
-The definition of a method, constructor, indexer, or delegate can specify its parameters as required or optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters. Additionally, nullable reference types (`T?`) implicitly have `null` as their default value.
+The definition of a method, constructor, indexer, or delegate can specify its parameters are required or optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters. Additionally, nullable reference types (`T?`) implicitly have `null` as their default value.
 
 Each optional parameter has a default value as part of its definition. If no argument is sent for that parameter, the default value is used. A default value must be one of the following types of expressions:
   

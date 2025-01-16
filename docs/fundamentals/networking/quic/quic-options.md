@@ -167,4 +167,6 @@ client's `StreamCapacityCallback` gets called again and prints:
 
 <xref:System.Net.Quic.QuicServerConnectionOptions.LocalEndPoint> contains IP address and port to which the client connection will bind. If not specified, the OS will assign an IP address and a port. **This property is optional.**
 
-**This property is mandatory and must meet the above listed conditions.**
+### RemoteEndPoint
+
+<xref:System.Net.Quic.QuicServerConnectionOptions.RemoteEndPoint> can either be <xref:System.Net.DnsEndPoint> or <xref:System.Net.IPEndPoint> of the peer to which the connection is being established. If it's a <xref:System.Net.DnsEndPoint>, the first IP address returned by <xref:System.Net.Dns.GetHostAddressesAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> is used. **This property is mandatory.**

@@ -119,8 +119,6 @@ public static class GpsLocation
 </Project>
 ```
 
-✔️ CONSIDER using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
-
 ❌ AVOID changing the assembly name or using different assembly names for each TFM your library compiles. Due to dependencies between libraries, multi-targeting with different assembly names per TFM can break package consumers. An assembly should have the same name across all TFMs.
 
 ## Older targets

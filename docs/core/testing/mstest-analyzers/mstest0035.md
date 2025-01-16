@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0035: `[DeploymentItem]` can be specified only on test class or test method.
+# MSTEST0035: `[DeploymentItem]` can be specified only on test class or test method
 
 | Property                            | Value                                                                  |
 |-------------------------------------|------------------------------------------------------------------------|

@@ -60,7 +60,6 @@ The Objective-C language follows the C language's ABI and is [supported in .NET]
 
 Additional links:
 
-* [Objective-Sharpie](/previous-versions/xamarin/cross-platform/macios/binding/)
 * [Objective-C binding walkthrough](/dotnet/maui/migration/ios-binding-projects)
 
 ## Python

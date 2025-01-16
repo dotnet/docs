@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0034: Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`.
+# MSTEST0034: Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`
 
 | Property                            | Value                                                            |
 |-------------------------------------|------------------------------------------------------------------|

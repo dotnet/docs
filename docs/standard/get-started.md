@@ -19,7 +19,7 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
 * [Create a remote procedure call web app](/aspnet/core/tutorials/grpc/grpc-start)
 * [Create a real-time web app](/aspnet/core/tutorials/signalr)
 * [Create a serverless function in the cloud](/azure/azure-functions/functions-create-first-function-vs-code?pivots=programming-language-csharp)
-* [Create a mobile app for Android and iOS](https://dotnet.microsoft.com/learn/xamarin/hello-world-tutorial/intro) (Windows)
+* [Build your first multi-platform app using .NET MAUI](https://dotnet.microsoft.com/learn/maui/first-app-tutorial/intro)
 * Create a Windows desktop app
   * [WPF](/visualstudio/get-started/csharp/tutorial-wpf)
   * [Windows Forms](/visualstudio/ide/create-csharp-winform-visual-studio)

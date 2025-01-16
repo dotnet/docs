@@ -9,7 +9,7 @@ dev_langs:
 
 # Handle unmapped members during deserialization
 
-By default, if the JSON payload you're deserializing contains properties that don't exist in the plain old CLR object (POCO) type, they're simply ignored. Starting in .NET 8, you can specify that *all members in the payload must exist in the POCO*. If they're not, a <xref:System.Text.Json.JsonException> exception is thrown during deserialization. You can configure this behavior in one of three ways:
+By default, if the JSON payload you're deserializing contains properties that don't exist in the plain old CLR object (POCO) type, they're simply ignored. Starting in .NET 8, you can specify that *all payload properties must exist in the POCO*. If they're not, a <xref:System.Text.Json.JsonException> exception is thrown during deserialization. You can configure this behavior in one of three ways:
 
 - Annotate your POCO type with the <xref:System.Text.Json.Serialization.JsonUnmappedMemberHandlingAttribute> attribute, specifying either to <xref:System.Text.Json.Serialization.JsonUnmappedMemberHandling.Skip> or <xref:System.Text.Json.Serialization.JsonUnmappedMemberHandling.Disallow> unmapped members.
 

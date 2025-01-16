@@ -36,6 +36,7 @@ The properties mentioned in the recommended actions can be set either in your pr
   ```xml
   <PropertyGroup>
     ...
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsNotAsErrors>NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
   </PropertyGroup>
   ```

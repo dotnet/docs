@@ -11,7 +11,7 @@ helpviewer_keywords:
 author: engyebrahim
 ms.author: enjieid
 ---
-# MSTEST0036: Do not use shadowing inside test class.
+# MSTEST0036: Do not use shadowing inside test class
 
 | Property                            | Value                                                                  |
 |-------------------------------------|------------------------------------------------------------------------|

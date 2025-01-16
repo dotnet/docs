@@ -60,7 +60,7 @@ Starting with F# 9, you can enable nullable reference types in the project:
 <Nullable>enable</Nullable>
 ```
 
-This automatically sets `define:NULLABLE` directive to the build. It's useful while initially rolling out the feature, to conditionally change conflicting code by `#if NULLABLE` hash directives:
+This automatically sets `NULLABLE` directive to the build. It's useful while initially rolling out the feature, to conditionally change conflicting code by `#if NULLABLE` hash directives:
 
 ```fsharp
 #if NULLABLE 

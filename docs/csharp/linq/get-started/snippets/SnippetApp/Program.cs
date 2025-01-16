@@ -2,6 +2,7 @@
 
 WriteSeparator(nameof(PartsOfAQuery));
 PartsOfAQuery();
+Console.WriteLine();
 
 WriteSeparator(nameof(Linq.GetStarted.Basics.Basics1));
 Linq.GetStarted.Basics.Basics1();
@@ -41,6 +42,7 @@ WriteSeparator(nameof(Linq.GetStarted.Basics.Basics17));
 Linq.GetStarted.Basics.Basics17();
 WriteSeparator(nameof(Linq.GetStarted.Basics.Basics18));
 Linq.GetStarted.Basics.Basics18();
+Console.WriteLine();
 WriteSeparator(nameof(Linq.GetStarted.Basics.Basics19));
 Linq.GetStarted.Basics.Basics19();
 

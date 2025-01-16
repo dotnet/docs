@@ -1,7 +1,7 @@
 ---
 title: Write LINQ queries
 description: Learn how to write LINQ queries in C#.
-ms.date: 04/19/2024
+ms.date: 01/16/2025
 ---
 # Write C# LINQ queries to query data
 
@@ -96,6 +96,13 @@ In some cases, you don't know until run time how many predicates you have to app
 
 :::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_1":::
 
+> [!NOTE]
+> This example uses the following data source and data:
+
+:::code language="csharp" source="./snippets/SnippetApp/DataSources.cs" id="basics_datasource":::
+
+:::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="SourceData":::
+
 You can use control flow statements, such as `if... else` or `switch`, to select among predetermined alternative queries. In the following example, `studentQuery` uses a different `where` clause if the run-time value of `oddYear` is `true` or `false`.
 
 :::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_2":::
@@ -103,6 +110,12 @@ You can use control flow statements, such as `if... else` or `switch`, to select
 ## Handle null values in query expressions
 
 This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](../../language-reference/keywords/null.md). If a source collection is `null` or contains an element whose value is `null`, and your query doesn't handle `null` values, a <xref:System.NullReferenceException> is thrown when you execute the query.
+
+The following example uses these types and static data arrays:
+
+:::code language="csharp" source="./snippets/SnippetApp/NullValues.cs" id="dataSourceTypes":::
+
+:::code language="csharp" source="./snippets/SnippetApp/NullValues.cs" id="source":::
 
 You can code defensively to avoid a null reference exception as shown in the following example:
 

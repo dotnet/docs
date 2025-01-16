@@ -1,7 +1,7 @@
 ---
 title: Query expression basics (LINQ)
 description: Introduces concepts related to query expressions
-ms.date: 03/06/2024
+ms.date: 01/16/2025
 ---
 # Query expression basics
 

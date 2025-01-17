@@ -30,7 +30,7 @@ The use of any assertion method in an `async void` method, local function, or la
 
 ## Rule description
 
-Exceptions that are thrown in an `async void` context are unobserved. So, a failing assertion in an `async void` method may go unnoticed. When using VSTest, such exceptions are very likely to be unnoticed. When using Microsoft.Testing.Platform, such exception *may* crash the process
+Exceptions that are thrown in an `async void` context are unhandled. A failing assertion in an `async void` method will be swallowed and will not crash the process when using VSTest under .NET Framework, and may crash the process when using Microsoft.Testing.Platform or VSTest under modern .NET.
 
 ## How to fix violations
 

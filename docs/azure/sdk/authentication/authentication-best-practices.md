@@ -11,7 +11,7 @@ This article offers guidelines to help you maximize the performance and reliabil
 
 ## Use deterministic credentials in production environments
 
-`DefaultAzureCredential` is the most approachable way to get started with the Azure Identity library, but that convenience also introduces certain tradeoffs. Most notably, the specific credential in the chain that will succeed and be used for request authentication can't be guaranteed ahead of time. In a production environment, this unpredictability can introduce significant and sometimes subtle problems.
+[`DefaultAzureCredential`](/dotnet/azure/sdk/authentication/credential-chains?tabs=dac#defaultazurecredential-overview) is the most approachable way to get started with the Azure Identity library, but that convenience also introduces certain tradeoffs. Most notably, the specific credential in the chain that will succeed and be used for request authentication can't be guaranteed ahead of time. In a production environment, this unpredictability can introduce significant and sometimes subtle problems.
 
 For example, consider the following hypothetical sequence of events:
 

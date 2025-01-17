@@ -41,12 +41,14 @@ In this example, `ManagedIdentityCredential` would be automatically discovered i
 
 Reuse credential instances when possible to improve app resilience and reduce the number of access token requests issued to Microsoft Entra ID. When a credential is reused, an attempt is made to fetch a token from the app token cache managed by the underlying MSAL dependency. For more information, see [Token caching in the Azure Identity client library](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md).
 
-> [!NOTE]
+> [!IMPORTANT]
 > A high-volume app that doesn't reuse credentials may encounter HTTP 429 throttling responses from Microsoft Entra ID, which can lead to app outages.
 
-Implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
+The recommended credential reuse strategy differs by .NET application type.
 
 # [ASP.NET Core](#tab/aspdotnet)
+
+Implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
 
 :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_Dac" highlight="6" :::
 

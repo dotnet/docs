@@ -87,6 +87,7 @@ These values must be non-negative integer which is power of 2, this is an inhere
 The following simplified scenario captures the behavior of stream opening and the callback:
 
 1. client initiates connection to the server via:
+
 ```c#
 var client = await QuicConnection.ConnectAsync(new QuicClientConnectionOptions
 {
@@ -95,20 +96,26 @@ var client = await QuicConnection.ConnectAsync(new QuicClientConnectionOptions
         Console.WriteLine($"{connection} stream capacity increased by: unidi += {args.UnidirectionalIncrement}, bidi += {args.BidirectionalIncrement}")
 };
 ```
+
 2. server sends initial settings to client with the stream limit `2` for unidirectional streams and `0` for bidirectional
 3. client's `StreamCapacityCallback` gets called and prints:
+
 ```text
 [conn][0x58575BF805B0] stream capacity increased by: unidi += 2, bidi += 0
 ```
+
 4. client call to `ConnectAsync` returns with `[conn][0x58575BF805B0]` connection
 5. client attempts to open a few streams:
+
 ```c#
 var stream1 = await connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
 var stream2 = await connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
 // The following call will get suspended because the stream is limit has been reached.
 var taskStream3 = connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
 ```
+
 6. client finishes and closes the first 2 streams:
+
 ```c#
 await stream1.WriteAsync(data, completeWrites: true);
 await stream1.DisposeAsync();
@@ -116,18 +123,24 @@ await stream2.WriteAsync(data, completeWrites: true);
 await stream2.DisposeAsync();
 Console.WriteLine($"Stream 3 {(taskStream3.IsCompleted ? "opened" : "pending")}");
 ```
+
 7. client prints:
+
 ```text
 Stream 3 pending
 ```
+
 8. server will release additional capacity of `2` after processing the first two stream
 9. two things happen on the client:
 
 third stream gets opened:
+
 ```c#
 var stream3 = await taskStream3;
 ```
+
 client's `StreamCapacityCallback` gets called again and prints:
+
 ```text
 [conn][0x58575BF805B0] stream capacity increased by: unidi += 2, bidi += 0
 ```
@@ -159,7 +172,7 @@ client's `StreamCapacityCallback` gets called again and prints:
 
 - At least one application protocol is defined in <xref:System.Net.Security.SslServerAuthenticationOptions.ApplicationProtocols>.
 - If changed, <xref:System.Net.Security.SslServerAuthenticationOptions.EncryptionPolicy> is not set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption> (default is <xref:System.Net.Security.EncryptionPolicy.RequireEncryption>).
-- If set, <xref:System.Net.Security.SslServerAuthenticationOptions.CipherSuitesPolicy> contains at least one of the following: <xref:System.Net.Security.TlsCipherSuite.TLS_AES_128_GCM_SHA256>, <xref:System.Net.Security.TlsCipherSuite.TLS_AES_256_GCM_SHA384>, <xref:System.Net.Security.TlsCipherSuite.TLS_CHACHA20_POLY1305_SHA256> (default is <c>null</c> and lets `MsQuic` to use all QUIC compatible cypher suites supported by the OS).
+- If set, <xref:System.Net.Security.SslServerAuthenticationOptions.CipherSuitesPolicy> contains at least one of the following: <xref:System.Net.Security.TlsCipherSuite.TLS_AES_128_GCM_SHA256>, <xref:System.Net.Security.TlsCipherSuite.TLS_AES_256_GCM_SHA384>, <xref:System.Net.Security.TlsCipherSuite.TLS_CHACHA20_POLY1305_SHA256> (default is `null` and lets `MsQuic` to use all QUIC compatible cypher suites supported by the OS).
 
 **This property is mandatory and must meet the above listed conditions.**
 

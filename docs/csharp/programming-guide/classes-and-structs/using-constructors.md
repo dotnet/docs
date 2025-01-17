@@ -5,7 +5,7 @@ ms.date: 01/15/2025
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
 ---
-# Using Constructors (C# Programming Guide)
+# Use constructors (C# programming guide)
 
 When a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is instantiated, the runtime calls its constructor. Constructors have the same name as the class or struct, and they usually initialize the data members of the new object.
 
@@ -13,7 +13,7 @@ In the following example, a class named `Taxi` is defined by using a simple cons
 
 :::code source="./snippets/using-constructors/Program.cs" id="snippet1":::
 
-A constructor that takes no parameters is called a *parameterless constructor*. The runtime invokes the parameterless constructor when an object is instantiated using the `new` operator and no arguments are provided to `new`. C# 12 introduces *primary constructors*. A primary constructor specifies parameters that must be provided to initialize a new object. For more information, see [Instance Constructors](./instance-constructors.md).
+A constructor that takes no parameters is called a *parameterless constructor*. The runtime invokes the parameterless constructor when an object is instantiated using the `new` operator and no arguments are provided to `new`. C# 12 introduced *primary constructors*. A primary constructor specifies parameters that must be provided to initialize a new object. For more information, see [Instance Constructors](./instance-constructors.md).
 
 Unless the class is [static](../../language-reference/keywords/static.md), classes without constructors are given a public parameterless constructor by the C# compiler in order to enable class instantiation. For more information, see [Static Classes and Static Class Members](./static-classes-and-static-class-members.md).
 

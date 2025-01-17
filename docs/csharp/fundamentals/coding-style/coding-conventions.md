@@ -31,7 +31,7 @@ Tools can help your team enforce your conventions. You can enable [code analysis
 
 These tools make it easier for your team to adopt your preferred guidelines. Visual Studio applies the rules in all *.editorconfig* files in scope to format your code. You can use multiple configurations to enforce corporate-wide conventions, team conventions, and even granular project conventions.
 
-Code analysis produces warnings and diagnostics when it detects rule are violations. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
+Code analysis produces warnings and diagnostics when it detects rule violations. You configure the rules you want applied to your project. Then, each CI build notifies developers when they violate any of the rules.
 
 ### Diagnostic IDs
 
@@ -70,7 +70,7 @@ More specific guidelines follow.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="rawStringLiterals":::
 
-- Use the expression based string interpolation rather than positional string interpolation.
+- Use the expression-based string interpolation rather than positional string interpolation.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="interpolatedStrings":::
 
@@ -80,14 +80,14 @@ More specific guidelines follow.
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="PrimaryRecord":::
 
-- Use camel case for primary constructor parameters on class and struct types:
-- Use `required` properties instead of constructors to force initialization of property values.
+- Use camel case for primary constructor parameters on class and struct types.
+- Use `required` properties instead of constructors to force initialization of property values:
 
   :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="PrimaryClass":::
 
 ### Arrays and collections
 
-- Use collection expressions to initialize all collection types
+- Use collection expressions to initialize all collection types:
 
 :::code language="csharp" source="./snippets/coding-conventions/program.cs" id="Snippet13":::
 

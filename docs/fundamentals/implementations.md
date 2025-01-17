@@ -44,7 +44,7 @@ For more information, see the [.NET Framework guide](../framework/index.yml).
 
 ## Mono
 
-Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
+Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powered Xamarin applications (now unsupported) on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
 
 It supports all of the currently published .NET Standard versions.
 

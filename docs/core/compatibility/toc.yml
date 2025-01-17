@@ -4,6 +4,14 @@ items:
   - name: Breaking changes by version
     expanded: true
     items:
+      - name: .NET 10
+        items:
+          - name: Overview
+            href: 10.0.md
+          - name: Core .NET libraries
+            items:
+              - name: API obsoletions with non-default diagnostic IDs
+                href: core-libraries/10.0/obsolete-apis.md
       - name: .NET 9
         items:
           - name: Overview
@@ -1302,6 +1310,10 @@ items:
                 href: https://github.com/dotnet/dotnet-docker/discussions/3699
       - name: Core .NET libraries
         items:
+          - name: .NET 10
+            items:
+              - name: API obsoletions with non-default diagnostic IDs
+                href: core-libraries/10.0/obsolete-apis.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags

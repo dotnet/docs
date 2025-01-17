@@ -70,7 +70,7 @@ The code's formatting is preserved, and there is a double semicolon (`;;`) termi
 
 Evaluating code interactively in F# Interactive can be a great learning tool, but you'll quickly find that it's not as productive as writing code in a normal editor. To support normal code editing, you can write F# scripts.
 
-Scripts use the file extension **.fsx**. Instead of compiling source code and then later running the compiled assembly, you can just run **dotnet fsi** and specify the filename of the script of F# source code, and F# interactive reads the code and executes it in real time. For example, consider the following script called `Script.fsx`:
+Scripts use the file extension **.fsx**. Instead of compiling source code and then later running the compiled assembly, you can just run **dotnet fsi** and specify the filename of the script, and F# Interactive reads the code and executes it in real time. For example, consider the following script called `Script.fsx`:
 
 ```fsharp
 let getOddSquares xs =
@@ -87,6 +87,41 @@ When this file is created in your machine, you can run it with `dotnet fsi` and 
 dotnet fsi Script.fsx
 [1; 9; 25; 49; 81]
 ```
+
+### Executing Scripts with a Shebang
+
+To make F# scripts executable without explicitly invoking `dotnet fsi`, you can use a shebang line at the top of the script. This enables you to run the script directly from the terminal, like a shell script.
+
+For example, create a script file called `ExecutableScript.fsx` with the following content:
+
+```fsharp
+#!/usr/bin/env -S dotnet fsi
+
+let getOddSquares xs =
+    xs
+    |> List.filter (fun x -> x % 2 <> 0)
+    |> List.map (fun x -> x * x)
+
+printfn "%A" (getOddSquares [1..10])
+```
+
+1. **Make the Script Executable:**
+   Use the `chmod` command to make the script executable:
+
+   ```bash
+   chmod +x ExecutableScript.fsx
+   ```
+
+2. **Run the Script Directly:**
+   Now, you can execute the script directly from the terminal:
+
+   ```bash
+   ./ExecutableScript.fsx
+   ```
+
+> **Note**: Shebang functionality (`#!`) is specific to Unix-like systems such as Linux and MacOS. On Windows, you can execute scripts using `dotnet fsi Script.fsx` directly in the terminal or command prompt.
+
+This feature allows for a more seamless experience when working with F# scripts in environments like Linux and macOS.
 
 F# scripting is natively supported in [Visual Studio](../../get-started/get-started-visual-studio.md) and [Visual Studio Code](../../get-started/get-started-vscode.md).
 

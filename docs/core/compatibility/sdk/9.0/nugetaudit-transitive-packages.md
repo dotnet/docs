@@ -14,7 +14,7 @@ In .NET 8, [NuGetAudit](../8.0/dotnet-restore-audit.md) was introduced to emit w
 ## New behavior
 
 Starting in .NET 9, `NuGetAuditMode` defaults to `all` if it hasn't been explicitly set. This setting means that *transitive packages* (dependencies of packages your project directly references) with known vulnerabilities now cause warnings to be reported.
-If your project treats errors as warnings, this behavior can cause restore failures.
+If your project treats warnings as errors, this behavior can cause restore failures.
 
 ## Version introduced
 

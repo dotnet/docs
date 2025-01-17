@@ -1147,6 +1147,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2021.md
                   - name: CA2022
                     href: ../../fundamentals/code-analysis/quality-rules/ca2022.md
+                  - name: CA2024
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2024.md
               - name: Security rules
                 items:
                   - name: Overview
@@ -1816,6 +1818,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0056.md
           - name: SYSLIB0057
             href: ../../fundamentals/syslib-diagnostics/syslib0057.md
+          - name: SYSLIB0059
+            href: ../../fundamentals/syslib-diagnostics/syslib0059.md
       - name: Experimental features
         items:
           - name: Overview
@@ -1823,7 +1827,6 @@ items:
             href: ../../fundamentals/syslib-diagnostics/experimental-overview.md
           - name: SYSLIB5003
             href: ../../fundamentals/syslib-diagnostics/syslib5003.md
-            displayProperty: syslib5003          
       - name: Source-generated code
         items:
           - name: Overview

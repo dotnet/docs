@@ -22,7 +22,6 @@ class MainClass
 {
     static int Main(string[] args)
     {
-        // Test if input arguments were supplied.
         if (args.Length == 0)
         {
             Console.WriteLine("Please enter a numeric argument.");
@@ -30,9 +29,6 @@ class MainClass
             return 1;
         }
 
-        // Try to convert the input arguments to numbers. This will throw
-        // an exception if the argument is not a number.
-        // num = int.Parse(args[0]);
         int num;
         bool test = int.TryParse(args[0], out num);
         if (!test)
@@ -42,10 +38,8 @@ class MainClass
             return 1;
         }
 
-        // Calculate factorial.
         long result = Functions.Factorial(num);
 
-        // Print result.
         if (result == -1)
             Console.WriteLine("Input must be >= 0 and <= 20.");
         else
@@ -54,6 +48,3 @@ class MainClass
         return 0;
     }
 }
-// If 3 is entered on command line, the
-// output reads: The factorial of 3 is 6.
-

@@ -5,7 +5,7 @@ ms.date: 01/16/2025
 ---
 # Write C# LINQ queries to query data
 
-Most queries in the introductory Language Integrated Query (LINQ) documentation are written by using the LINQ declarative query syntax. The C# compiler translates query syntax into method calls. These method calls implement the standard query operators, which have names such as `Where`, `Select`, `GroupBy`, `Join`, `Max`, and `Average`. You can call them directly by using method syntax instead of query syntax.
+Most queries in the introductory Language Integrated Query (LINQ) documentation are written by using the LINQ declarative query syntax. The C# compiler translates query syntax into method calls. These method calls implement the standard query operators, and have names such as `Where`, `Select`, `GroupBy`, `Join`, `Max`, and `Average`. You can call them directly by using method syntax instead of query syntax.
 
 Query syntax and method syntax are semantically identical, but query syntax is often simpler and easier to read. Some queries must be expressed as method calls. For example, you must use a method call to express a query that retrieves the number of elements that match a specified condition. You also must use a method call for a query that retrieves the element that has the maximum value in a source sequence. The reference documentation for the standard query operators in the <xref:System.Linq> namespace generally uses method syntax. You should become familiar with how to use method syntax in queries and in query expressions themselves.
 

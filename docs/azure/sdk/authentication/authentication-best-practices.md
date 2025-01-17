@@ -22,7 +22,7 @@ Reuse credential instances when possible to improve app resilience and reduce th
 
 In an ASP.NET Core app, implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
 
-:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_Dac" highlight="6,7" :::
+:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_Dac" highlight="6" :::
 
 For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 

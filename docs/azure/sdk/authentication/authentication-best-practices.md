@@ -11,7 +11,31 @@ This article offers guidelines to help you maximize the performance and reliabil
 
 ## Use deterministic credentials in production environments
 
-[!INCLUDE [default-azure-credential-usage](../includes/default-azure-credential-usage.md)]
+`DefaultAzureCredential` is the most approachable way to get started with the Azure Identity library, but that convenience also introduces certain tradeoffs. Most notably, the specific credential in the chain that will succeed and be used for request authentication can't be guaranteed ahead of time. In a production environment, this unpredictability can introduce significant and sometimes subtle problems.
+
+For example, consider the following hypothetical sequence of events:
+
+1. An organization's security team mandates all apps use managed identity to authenticate to Azure resources.
+1. For months, a .NET app hosted on an Azure Virtual Machine (VM) successfully uses `DefaultAzureCredential` to authenticate via managed identity.
+1. Without telling the support team, a developer installs the Azure CLI on that VM and runs the `az login` command to authenticate to Azure.
+1. Due to a separate configuration change in the Azure environment, authentication via the original managed identity unexpectedly begins to fail silently.
+1. `DefaultAzureCredential` skips the failed `ManagedIdentityCredential` and searches for the next available credential, which is `AzureCliCredential`.
+1. The application starts utilizing the Azure CLI credentials rather than the managed identity, which may fail or result in unexpected elevation or reduction of privileges.
+
+To prevent these types of subtle issues or silent failures in production apps, strongly consider moving from `DefaultAzureCredential` to one of the following deterministic solutions:
+
+- A specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
+- A pared-down `ChainedTokenCredential` implementation optimized for the Azure environment in which your app runs. `ChainedTokenCredential` essentially creates a specific allow-list of acceptable credential options, such as `ManagedIdentity` for production and `VisualStudioCredential` for development.
+
+For example, consider the following `DefaultAzureCredential` configuration in an ASP.NET Core project:
+
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="6,7":::
+
+Replace the preceding code with a `ChainedTokenCredential` implementation that specifies only the necessary credentials:
+
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc" highlight="6-8":::
+
+In this example, `ManagedIdentityCredential` would be automatically discovered in production, while `VisualStudioCredential` would work in local development environments.
 
 ## Reuse credential instances
 
@@ -20,15 +44,19 @@ Reuse credential instances when possible to improve app resilience and reduce th
 > [!NOTE]
 > A high-volume app that doesn't reuse credentials may encounter HTTP 429 throttling responses from Microsoft Entra ID, which can lead to app outages.
 
-In an ASP.NET Core project, implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
+Implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
+
+# [ASP.NET Core](#tab/aspdotnet)
 
 :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_Dac" highlight="6" :::
 
 For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 
-Other types of .NET apps can reuse credential instances as follows:
+# [Other](#tab/other)
 
 :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_noDac" highlight="8, 12" :::
+
+---
 
 ## Understand the managed identity retry strategy
 

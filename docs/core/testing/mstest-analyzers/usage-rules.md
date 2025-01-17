@@ -35,3 +35,5 @@ Identifier | Name | Description
 [MSTEST0035](mstest0035.md) | UseDeploymentItemWithTestMethodOrTestClassTitle | `[DeploymentItem]` can be specified only on test class or test method
 [MSTEST0037](mstest0037.md) | UseProperAssertMethodsAnalyzer | Use proper `Assert` methods
 [MSTEST0038](mstest0038.md) | AvoidAssertAreSameWithValueTypesAnalyzer | Don't use `Assert.AreSame` or `Assert.AreNotSame` with value types
+[MSTEST0039](mstest0039.md) | UseNewerAssertThrowsAnalyzer | Use newer 'Assert.Throws' methods
+[MSTEST0040](mstest0040.md) | AvoidUsingAssertsInAsyncVoidContextAnalyzer | Do not assert inside 'async void' contexts

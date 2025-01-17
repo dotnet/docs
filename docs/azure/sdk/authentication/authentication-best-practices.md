@@ -64,9 +64,9 @@ For information on this approach, see [Authenticate using Microsoft Entra ID](/d
 
 The Azure Identity library for .NET allows you to authenticate via managed identity with `ManagedIdentityCredential`. The way in which you use `ManagedIdentityCredential` impacts the applied retry strategy. When used via:
 
-- `DefaultAzureCredential`, no retries are attempted when the initial token acquisition attempt fails or times out after a short duration, which makes this the least resilient option.
+- `DefaultAzureCredential`, no retries are attempted when the initial token acquisition attempt fails or times out after a short duration. This is the least resilient option because it is optimized to "fail fast" for an efficient development inner-loop.
 - Any other approach, such as `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
-  - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted.
+  - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted, by default. This option is optimized for resilience but introduces potentially unwanted delays in the development inner-loop.
   - To change any of the default retry settings, use the `Retry` property on `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 
     :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_retries" highlight="5-9" :::

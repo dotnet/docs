@@ -46,12 +46,12 @@ The theorem states that distributed data systems will offer a trade-off between 
 
 - *Partition Tolerance.* Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
-CAP theorem explains the tradeoffs associated with managing consistency and availability during a network partition; however tradeoffs with respect to consistency and performance also exist with the absence of a network partition. 
+CAP theorem explains the tradeoffs associated with managing consistency and availability during a network partition; however tradeoffs with respect to consistency and performance also exist with the absence of a network partition.
 
 > [!NOTE]  
 > Even if you choose availability over consistency, in times of network partition, availability will suffer. CAP available system is more available to some of its clients but it's not necessarily "highly available" to all its clients.
 
-CAP theorem is often further extended to [PACELC](http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to explain the tradeoffs more comprehensively. The CAP theorem is particularly relevant in intermittently connected environments, such as those related to the Internet of Things (IoT), environmental monitoring, and mobile applications. In these contexts, devices may become partitioned due to challenging physical conditions, such as power outages or when entering confined spaces like elevators. For distributed systems, such as cloud applications, it is more appropriate to use the PACELC theorem, which is more comprehensive and considers trade-offs such as latency and consistency even in the absence of network partitions. 
+CAP theorem is often further extended to [PACELC](http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf) to explain the tradeoffs more comprehensively. The CAP theorem is particularly relevant in intermittently connected environments, such as those related to the Internet of Things (IoT), environmental monitoring, and mobile applications. In these contexts, devices may become partitioned due to challenging physical conditions, such as power outages or when entering confined spaces like elevators. For distributed systems, such as cloud applications, it is more appropriate to use the PACELC theorem, which is more comprehensive and considers trade-offs such as latency and consistency even in the absence of network partitions.
 
 Relational databases typically provide consistency and availability, but not partition tolerance. They're typically provisioned to a single server and scale vertically by adding more resources to the machine.
 

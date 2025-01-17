@@ -2,6 +2,7 @@
 
 WriteSeparator(nameof(PartsOfAQuery));
 PartsOfAQuery();
+Console.WriteLine();
 
 WriteSeparator(nameof(Linq.GetStarted.Basics.Basics1));
 Linq.GetStarted.Basics.Basics1();
@@ -41,6 +42,7 @@ WriteSeparator(nameof(Linq.GetStarted.Basics.Basics17));
 Linq.GetStarted.Basics.Basics17();
 WriteSeparator(nameof(Linq.GetStarted.Basics.Basics18));
 Linq.GetStarted.Basics.Basics18();
+Console.WriteLine();
 WriteSeparator(nameof(Linq.GetStarted.Basics.Basics19));
 Linq.GetStarted.Basics.Basics19();
 
@@ -103,10 +105,9 @@ static void PartsOfAQuery()
 
     // 2. Query creation.
     // numQuery is an IEnumerable<int>
-    var numQuery =
-        from num in numbers
-        where (num % 2) == 0
-        select num;
+    var numQuery = from num in numbers
+                   where (num % 2) == 0
+                   select num;
 
     // 3. Query execution.
     foreach (int num in numQuery)
@@ -123,26 +124,23 @@ static void PartsOfAQuery()
     // </QueryExecution>
 
     // <EagerEvaluation>
-    var evenNumQuery =
-        from num in numbers
-        where (num % 2) == 0
-        select num;
+    var evenNumQuery = from num in numbers
+                       where (num % 2) == 0
+                       select num;
 
     int evenNumCount = evenNumQuery.Count();
     //</EagerEvaluation>
 
     //<MoreEagerEvaluation>
-    List<int> numQuery2 =
-        (from num in numbers
-            where (num % 2) == 0
-            select num).ToList();
+    List<int> numQuery2 = (from num in numbers
+                           where (num % 2) == 0
+                           select num).ToList();
 
     // or like this:
     // numQuery3 is still an int[]
 
-    var numQuery3 =
-        (from num in numbers
-            where (num % 2) == 0
-            select num).ToArray();
+    var numQuery3 = (from num in numbers
+                     where (num % 2) == 0
+                     select num).ToArray();
     //</MoreEagerEvaluation>
 }

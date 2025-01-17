@@ -23,9 +23,8 @@ public static class Exceptions
         if (dataSource is not null)
         {
             // If we get here, it is safe to proceed.
-            var query =
-                from i in dataSource
-                select i * i;
+            var query = from i in dataSource
+                        select i * i;
 
             foreach (var i in query)
             {
@@ -42,16 +41,15 @@ public static class Exceptions
         string SomeMethodThatMightThrow(string s) =>
             s[4] == 'C' ?
                 throw new InvalidOperationException() :
-                @"C:\newFolder\" + s;
+                $"""C:\newFolder\{s}""";
 
         // Data source.
         string[] files = ["fileA.txt", "fileB.txt", "fileC.txt"];
 
         // Demonstration query that throws.
-        var exceptionDemoQuery =
-            from file in files
-            let n = SomeMethodThatMightThrow(file)
-            select n;
+        var exceptionDemoQuery = from file in files
+                                 let n = SomeMethodThatMightThrow(file)
+                                 select n;
 
         try
         {

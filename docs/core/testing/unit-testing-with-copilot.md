@@ -11,7 +11,7 @@ In this article, you explore how to generate unit tests and test projects in C# 
 
 ## Generate a test project and a stub method
 
-There is a `ProductService` class with a `GetProductById` method that depends on the `IProductDataStorage` and `ICacheClient` interfaces.
+Imagine that there's a `ProductService` class with a `GetProductById` method that depends on the `IProductDataStorage` and `ICacheClient` interfaces.
 
 ```csharp
 public class ProductService(

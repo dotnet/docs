@@ -20,7 +20,7 @@ public class ProductService(
 {
     public async Task<Product?> GetProductById(int productId)
     {
-        var product = await _cacheClient.GetProduct(productId);
+        var product = await cacheClient.GetProduct(productId);
 
         if (product != null)
         {

@@ -71,7 +71,7 @@ After a few seconds, Visual Studio will pull in the necessary packages, and we w
 
 :::image type="content" source="media/test-copilot-prompt.png" lightbox="media/test-copilot-prompt.png" alt-text="Prompt for generate tests":::
 
-Execute the prompt, click Accept, and Copilot generates the test code. After that, it remains to install the necessary packages.
+Execute the prompt, click **Accept**, and Copilot generates the test code. After that, it remains to install the necessary packages.
 
 When the packages are installed, the tests can be run. This example worked on the first try: Copilot knows very well how to work with NSubstitute, and all dependencies were defined through interfaces. 
 

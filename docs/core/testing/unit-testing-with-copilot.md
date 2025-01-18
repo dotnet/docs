@@ -77,4 +77,4 @@ When the packages are installed, the tests can be run. This example worked on th
 
 :::image type="content" source="media/test-mehod-stub.png" lightbox="media/test-mehod-stub.png" alt-text="Generated tests":::
 
-Thus, using 𝗩𝗶𝘀𝘂𝗮𝗹 𝗦𝘁𝘂𝗱𝗶𝗼 in combination with 𝗚𝗶𝘁𝗛𝘂𝗯 𝗖𝗼𝗽𝗶𝗹𝗼𝘁 significantly simplifies the process of generating and writing unit tests. 
+Thus, using **Visual Studio** in combination with **GitHub Copilot** significantly simplifies the process of generating and writing unit tests. 

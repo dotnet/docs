@@ -27,7 +27,7 @@ public class ProductService(
             return product;
         }
 
-        product = await _productDataStorage.GetProduct(productId);
+        product = await productDataStorage.GetProduct(productId);
 
         if (product != null)
         {

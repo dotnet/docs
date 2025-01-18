@@ -29,7 +29,7 @@ public class ProductService(
 
         product = await productDataStorage.GetProduct(productId);
 
-        if (product != null)
+        if (product is not null)
         {
             await _cacheClient.SetProduct(product);
         }

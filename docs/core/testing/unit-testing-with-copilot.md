@@ -22,7 +22,7 @@ public class ProductService(
     {
         var product = await cacheClient.GetProduct(productId);
 
-        if (product != null)
+        if (product is not null)
         {
             return product;
         }

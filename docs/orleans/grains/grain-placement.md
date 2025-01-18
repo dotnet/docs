@@ -154,13 +154,7 @@ private static async Task<ISiloHost> StartSilo()
 
 private static void ConfigureServices(IServiceCollection services)
 {
-    services.AddSingletonNamedService<
-        PlacementStrategy, SamplePlacementStrategy>(
-            nameof(SamplePlacementStrategy));
-
-    services.AddSingletonKeyedService<
-        Type, IPlacementDirector, SamplePlacementStrategyFixedSiloDirector>(
-            typeof(SamplePlacementStrategy));
+    services.AddPlacementDirector<SamplePlacementStrategy, SamplePlacementStrategyFixedSiloDirector>();
 }
 ```
 

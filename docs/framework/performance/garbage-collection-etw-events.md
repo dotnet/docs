@@ -266,7 +266,7 @@ The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`GCKeyword` (0x1)|Informational (4)|
+|`GCKeyword` (0x1)|Verbose (5)|
 
 The following table shows the event information:
 
@@ -292,7 +292,7 @@ The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`GCKeyword` (0x1)|Informational (4)|
+|`GCKeyword` (0x1)|Verbose (5)|
 
 The following table shows the event information:
 

@@ -8,6 +8,12 @@ ms.date: 01/10/2022
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
+Before reading this article, we recommend you first read [Modern Web App pattern for .NET](/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance). The [Modern Web App pattern for .NET](/azure/architecture/web-apps/guides/enterprise-app-patterns/modern-web-app/dotnet/guidance) article:
+
+* Is Microsoft's recommended guide to modern web app patterns. It provides a prescriptive architecture, code, and configuration guidance on how to modernize web apps in the cloud.
+* Provides a [GitHub reference implementation](https://github.com/Azure/modern-web-app-pattern-dotnet): A production-grade web app that uses best practices. Contains concrete examples to build Modern Web Apps in Azure.
+* Is more up to date than this article and is actively updated.
+
 ![Book cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
 
 **EDITION v8.0** - Updated to ASP.NET Core 8.0

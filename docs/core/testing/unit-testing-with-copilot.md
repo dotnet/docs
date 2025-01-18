@@ -44,7 +44,7 @@ To generate a test project and a stub method, follow these steps:
 * Select the method.
 * Right-click and select 𝗖𝗿𝗲𝗮𝘁𝗲 𝗨𝗻𝗶𝘁 𝗧𝗲𝘀𝘁𝘀. 
 
-:::image type="content" source="media/create-unit-test.png" lightbox="media/create-unit-test.png" alt-text="Command 𝗖𝗿𝗲𝗮𝘁𝗲 𝗨𝗻𝗶𝘁 𝗧𝗲𝘀𝘁𝘀":::
+:::image type="content" source="media/create-unit-test.png" lightbox="media/create-unit-test.png" alt-text="Command Create Unit Tests":::
 
 In the dialog that appears, select xUnit from the Test Framework dropdown menu
 

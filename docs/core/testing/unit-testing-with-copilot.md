@@ -18,9 +18,6 @@ public class ProductService(
     IProductDataStorage productDataStorage,
     ICacheClient cacheClient)
 {
-    private readonly IProductDataStorage _productDataStorage = productDataStorage;
-    private readonly ICacheClient _cacheClient = cacheClient;
-
     public async Task<Product?> GetProductById(int productId)
     {
         var product = await _cacheClient.GetProduct(productId);

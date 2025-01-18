@@ -67,7 +67,7 @@ After a few seconds, Visual Studio will pull in the necessary packages, and we w
 * Enter a simple prompt, such as: <br> `generate unit tests using xunit, nsubstitute and insert the result into ProductServiceTests`</br> You need to select your test class using #. 
 
 > [!TIP]
-> For quick search, it is desirable that `ProductServiceTests` is open in a separate tab.
+> For quick search, it's desirable that `ProductServiceTests` is open in a separate tab.
 
 :::image type="content" source="media/test-copilot-prompt.png" lightbox="media/test-copilot-prompt.png" alt-text="Prompt for generate tests":::
 

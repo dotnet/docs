@@ -46,7 +46,7 @@ To generate a test project and a stub method, follow these steps:
 
 :::image type="content" source="media/create-unit-test.png" lightbox="media/create-unit-test.png" alt-text="Command Create Unit Tests":::
 
-In the dialog that appears, select xUnit from the Test Framework dropdown menu
+In the **Create Unit Tests** dialog, select **xUnit** from the **Test Framework** dropdown menu.
 
 > [!NOTE]
 > The "Create Unit Tests" command defaults to the MSTest framework. However, since this example uses xUnit, you need to install the Visual Studio extension xUnit.net.TestGenerator2022.

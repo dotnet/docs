@@ -54,8 +54,8 @@ Method signatures are:
 
 Because the `public`, non-virtual (`NotOverridable` in Visual Basic), parameterless `Dispose` method is called when it's no longer needed (by a consumer of the type), its purpose is to free unmanaged resources, perform general cleanup, and to indicate that the finalizer, if one is present, doesn't have to run. Freeing the actual memory associated with a managed object is always the domain of the [garbage collector](index.md). Because of this, it has a standard implementation:
 
-:::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Disposable.cs" id="Dispose":::
-:::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Disposable.vb" id="Dispose":::
+:::code language="csharp" source="./snippets/dispose-pattern/csharp/Disposable.cs" id="Dispose":::
+:::code language="vb" source="./snippets/dispose-pattern/vb/Disposable.vb" id="Dispose":::
 
 The `Dispose` method performs all object cleanup, so the garbage collector no longer needs to call the objects' <xref:System.Object.Finalize%2A?displayProperty=nameWithType> override. Therefore, the call to the <xref:System.GC.SuppressFinalize%2A> method prevents the garbage collector from running the finalizer. If the type has no finalizer, the call to <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> has no effect. The actual cleanup is performed by the `Dispose(bool)` method overload.
 
@@ -63,8 +63,8 @@ The `Dispose` method performs all object cleanup, so the garbage collector no lo
 
 In the overload, the `disposing` parameter is a <xref:System.Boolean> that indicates whether the method call comes from a <xref:System.IDisposable.Dispose%2A> method (its value is `true`) or from a finalizer (its value is `false`).
 
-  :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Disposable.cs" id="DisposeBool":::
-  :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Disposable.vb" id="DisposeBool":::
+  :::code language="csharp" source="./snippets/dispose-pattern/csharp/Disposable.cs" id="DisposeBool":::
+  :::code language="vb" source="./snippets/dispose-pattern/vb/Disposable.vb" id="DisposeBool":::
 
   > [!IMPORTANT]
   > The `disposing` parameter should be `false` when called from a finalizer, and `true` when called from the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method. In other words, it is `true` when deterministically called and `false` when nondeterministically called.

@@ -23,11 +23,12 @@ public class Disposable : IDisposable
 
         if (disposing)
         {
-            // TODO: dispose managed state (managed objects).
+            // Dispose managed state (managed objects).
+            // ...
         }
 
-        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-        // TODO: set large fields to null.
+        // Free unmanaged resources.
+        // ...
 
         _disposed = true;
     }

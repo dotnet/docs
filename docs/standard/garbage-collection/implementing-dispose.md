@@ -67,17 +67,17 @@ In the overload, the `disposing` parameter is a <xref:System.Boolean> that indic
   :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Disposable.vb" id="DisposeBool":::
 
   > [!IMPORTANT]
-  > The `disposing` parameter should be `false` when called from a finalizer, and `true` when called from the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method. In other words, it is `true` when deterministically called and `false` when non-deterministically called.
+  > The `disposing` parameter should be `false` when called from a finalizer, and `true` when called from the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> method. In other words, it is `true` when deterministically called and `false` when nondeterministically called.
 
 The body of the method consists of three blocks of code:
 
 - A block for conditional return if object is already disposed.
-- A block that frees unmanaged resources. This block executes regardless of the value of the `disposing` parameter.
 - A conditional block that frees managed resources. This block executes if the value of `disposing` is `true`. The managed resources that it frees can include:
 
   - **Managed objects that implement <xref:System.IDisposable>.** The conditional block can be used to call their <xref:System.IDisposable.Dispose%2A> implementation (cascade dispose). If you have used a derived class of <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> to wrap your unmanaged resource, you should call the <xref:System.Runtime.InteropServices.SafeHandle.Dispose?displayProperty=nameWithType> implementation here.
-
   - **Managed objects that consume large amounts of memory or consume scarce resources.** Assign large managed object references to `null` to make them more likely to be unreachable. This releases them faster than if they were reclaimed nondeterministically.
+
+- A block that frees unmanaged resources. This block executes regardless of the value of the `disposing` parameter.
 
 If the method call comes from a finalizer, only the code that frees unmanaged resources should execute. The implementer is responsible for ensuring that the false path doesn't interact with managed objects that may have been disposed. This is important because the order in which the garbage collector disposes managed objects during finalization is nondeterministic.
 

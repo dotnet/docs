@@ -36,7 +36,7 @@ All of the options classes can be set up incrementally, meaning that they don't 
 
 ### ListenEndPoint
 
-<xref:System.Net.Quic.QuicListenerOptions.ListenEndPoint> contains IP address and port on which the listener will accept new connections. Due to underlying implementation, `MsQuic`, the listener will always bind to dual-stack wildcard socket regardless to what is specified here. This can lead to some unexpected behaviors, especially in comparison with ordinary TCP sockets like in HTTP/1.1 and HTTP/2 cases. For more information, see [QUIC Troubleshooting Guide](quic-troubleshooting.md). **This property is mandatory.**
+<xref:System.Net.Quic.QuicListenerOptions.ListenEndPoint> contains the IP address and port on which the listener will accept new connections. Due to underlying implementation, `MsQuic`, the listener, always binds to a dual-stack wildcard socket regardless of what's specified here. This can lead to some unexpected behaviors, especially in comparison with ordinary TCP sockets like in HTTP/1.1 and HTTP/2 cases. For more information, see [QUIC Troubleshooting Guide](quic-troubleshooting.md). **This property is mandatory.**
 
 ## QuicConnectionOptions
 

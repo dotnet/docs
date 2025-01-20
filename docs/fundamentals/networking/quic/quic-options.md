@@ -187,7 +187,7 @@ The following simplified scenario captures the behavior of stream opening and th
 
 ### ClientAuthenticationOptions
 
-<xref:System.Net.Quic.QuicServerConnectionOptions.ClientAuthenticationOptions> contains the TLS setting for the client connection. The options are the same as used in <xref:System.Net.Security.SslStream.AuthenticateAsClient(System.Net.Security.SslClientAuthenticationOptions)?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.Net.Security.SslClientAuthenticationOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>. For the QUIC client, <xref:System.Net.Security.SslClientAuthenticationOptions> is valid if:
+<xref:System.Net.Quic.QuicClientConnectionOptions.ClientAuthenticationOptions> contains the TLS setting for the client connection. The options are the same as used in <xref:System.Net.Security.SslStream.AuthenticateAsClient(System.Net.Security.SslClientAuthenticationOptions)?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream.AuthenticateAsClientAsync(System.Net.Security.SslClientAuthenticationOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>. For the QUIC client, <xref:System.Net.Security.SslClientAuthenticationOptions> is valid if:
 
 - At least one application protocol is defined in <xref:System.Net.Security.SslServerAuthenticationOptions.ApplicationProtocols>.
 - If changed, <xref:System.Net.Security.SslServerAuthenticationOptions.EncryptionPolicy> isn't set to <xref:System.Net.Security.EncryptionPolicy.NoEncryption> (default is <xref:System.Net.Security.EncryptionPolicy.RequireEncryption>).
@@ -197,8 +197,8 @@ The following simplified scenario captures the behavior of stream opening and th
 
 ### LocalEndPoint
 
-<xref:System.Net.Quic.QuicServerConnectionOptions.LocalEndPoint> contains the IP address and port to which the client connection will bind. If not specified, the OS assigns an IP address and a port. **This property is optional.**
+<xref:System.Net.Quic.QuicClientConnectionOptions.LocalEndPoint> contains the IP address and port to which the client connection will bind. If not specified, the OS assigns an IP address and a port. **This property is optional.**
 
 ### RemoteEndPoint
 
-<xref:System.Net.Quic.QuicServerConnectionOptions.RemoteEndPoint> can either be <xref:System.Net.DnsEndPoint> or <xref:System.Net.IPEndPoint> of the peer to which the connection is being established. If it's a <xref:System.Net.DnsEndPoint>, the first IP address returned by <xref:System.Net.Dns.GetHostAddressesAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> is used. **This property is mandatory.**
+<xref:System.Net.Quic.QuicClientConnectionOptions.RemoteEndPoint> can either be <xref:System.Net.DnsEndPoint> or <xref:System.Net.IPEndPoint> of the peer to which the connection is being established. If it's a <xref:System.Net.DnsEndPoint>, the first IP address returned by <xref:System.Net.Dns.GetHostAddressesAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> is used. **This property is mandatory.**

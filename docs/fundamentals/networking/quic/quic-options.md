@@ -93,7 +93,7 @@ These values must be non-negative integer which is power of 2; this is an inheri
 
 ### StreamCapacityCallback
 
-<xref:System.Net.Quic.QuicConnectionOptions.StreamCapacityCallback> is a callback that gets invoked whenever the peer releases a new stream capacity via `MAX_STREAMS` and as a result, the current capacity is above 0. The values provided in the callback arguments are capacity increments, meaning that the sum of all values from the callback will equal to the last value received from `MAX_STREAMS` ([RFC 9000 - MAX_STREAMS Frames](https://www.rfc-editor.org/rfc/rfc9000.html#frame-max-streams)). This callback was designed to support <xref:System.Net.Http.SocketsHttpHandler.EnableMultipleHttp3Connections?displayProperty=nameWithType> functionality and comes with several caveats:
+<xref:System.Net.Quic.QuicConnectionOptions.StreamCapacityCallback> is a callback that's invoked whenever the peer releases a new stream capacity via `MAX_STREAMS` and as a result, the current capacity is above 0. The values provided in the callback arguments are capacity increments, meaning that the sum of all values from the callback will equal the last value received from `MAX_STREAMS` ([RFC 9000 - MAX_STREAMS Frames](https://www.rfc-editor.org/rfc/rfc9000.html#frame-max-streams)). This callback was designed to support <xref:System.Net.Http.SocketsHttpHandler.EnableMultipleHttp3Connections?displayProperty=nameWithType> functionality and comes with several caveats:
 
 - It's up to the application to keep track of all opening and opened streams to know the actual capacity at any time.
 - The callback might be called in parallel, so it's up to the application to properly handle synchronization around stream counting.

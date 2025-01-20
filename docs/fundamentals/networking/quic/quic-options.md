@@ -32,7 +32,7 @@ All of the options classes can be set up incrementally, meaning that they don't 
 
 ### ListenBacklog
 
-<xref:System.Net.Quic.QuicListenerOptions.ListenBacklog> determines how many incoming connections can be held by the listener before additional ones start being refused. Every attempt to establish a connection counts, even when it fails or when the connection gets shut down while waiting in the queue. Ongoing processes to establish a new connection count towards this limit as well. Connections or connection attempts are counted until they're retrieved via <xref:System.Net.Quic.QuicListener.AcceptConnectionAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. The purpose of the backlog limit is to prevent servers from being overwhelmed by more incoming connections than it can process. **This property is optional, default value is 512.**
+<xref:System.Net.Quic.QuicListenerOptions.ListenBacklog> determines how many incoming connections can be held by the listener before additional ones start being refused. Every attempt to establish a connection counts, even when it fails or when the connection gets shut down while waiting in the queue. Ongoing processes to establish a new connection count towards this limit as well. Connections or connection attempts are counted until they're retrieved via <xref:System.Net.Quic.QuicListener.AcceptConnectionAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>. The purpose of the backlog limit is to prevent servers from being overwhelmed by more incoming connections than they can process. **This property is optional, default value is 512.**
 
 ### ListenEndPoint
 

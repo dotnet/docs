@@ -58,7 +58,7 @@ All of the options classes can be set up incrementally, meaning that they don't 
 
 ### DefaultStreamErrorCode
 
-<xref:System.Net.Quic.QuicConnectionOptions.DefaultStreamErrorCode> is used when a stream is disposed before finishing reading all the data. When receiving data over QUIC stream, application can either consume all the data or if not it needs to abort its reading side. And similarly to connection closing, QUIC protocol requires an application-level reason for aborting the reading side ([RFC 9000 - Stop Sending](https://www.rfc-editor.org/rfc/rfc9000.html#name-stop_sending-frames)). **This property is mandatory.**
+<xref:System.Net.Quic.QuicConnectionOptions.DefaultStreamErrorCode> is used when a stream is disposed before all the data is read. When receiving data over QUIC stream, an application can either consume all the data or, if not, it needs to abort its reading side. And similarly to connection closing, QUIC protocol requires an application-level reason for aborting the reading side ([RFC 9000 - Stop Sending](https://www.rfc-editor.org/rfc/rfc9000.html#name-stop_sending-frames)). **This property is mandatory.**
 
 ### HandshakeTimeout
 

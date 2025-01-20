@@ -77,7 +77,7 @@ If the connection is inactive for more than the specified <xref:System.Net.Quic.
 - <xref:System.Net.Quic.QuicReceiveWindowSizes.RemotelyInitiatedBidirectionalStream>: limit for received data on an incoming bidirectional stream.
 - <xref:System.Net.Quic.QuicReceiveWindowSizes.UnidirectionalStream>: limit for received data on an incoming unidirectional stream.
 
-These values must be non-negative integer which is power of 2; this is an inherited limitation from `MsQuic`. Setting any of these values to 0 essentially means that no data will ever be received by the specific stream or a connection as a whole. **This property is optional, default values are 64KB for a stream and 64MB for a connection.**
+These values must be a non-negative integer that's a power of 2; this is an inherited limitation from `MsQuic`. Setting any of these values to 0 essentially means that no data will ever be received by the specific stream or a connection as a whole. **This property is optional, default values are 64 KB for a stream and 64 MB for a connection.**
 
 ### KeepAliveInterval
 

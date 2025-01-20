@@ -66,7 +66,7 @@ All of the options classes can be set up incrementally, meaning that they don't 
 
 ### IdleTimeout
 
-If the connection is inactive for more than the specified <xref:System.Net.Quic.QuicConnectionOptions.IdleTimeout>, it gets disconnected. This option is part of the QUIC protocol specification ([RFC 9000 - Idle Timeout](https://www.rfc-editor.org/rfc/rfc9000.html#name-idle-timeout)) and is sent to the peer during connection handshake. The connection then takes the smaller of its and the peer's idle timeouts and uses that. Thus the connection can get closed on idle timeout sooner than what this option was set up. **This property is optional, default value is based on MsQuic which is 30 seconds.**
+If the connection is inactive for more than the specified <xref:System.Net.Quic.QuicConnectionOptions.IdleTimeout>, it gets disconnected. This option is part of the QUIC protocol specification ([RFC 9000 - Idle Timeout](https://www.rfc-editor.org/rfc/rfc9000.html#name-idle-timeout)) and is sent to the peer during connection handshake. The connection then takes the smaller of it and the peer's idle timeouts and uses that. Thus the connection can get closed on idle timeout sooner than what this option was set to. **This property is optional, default value is based on MsQuic, which is 30 seconds.**
 
 ### InitialReceiveWindowSizes
 

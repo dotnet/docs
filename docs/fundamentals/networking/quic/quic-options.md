@@ -125,7 +125,7 @@ The following simplified scenario captures the behavior of stream opening and th
    ```csharp
    var stream1 = await connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
    var stream2 = await connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
-   // The following call will get suspended because the stream is limit has been reached.
+   // The following call will get suspended because the stream's limit has been reached.
    var taskStream3 = connection.OpenOutboundStreamAsync(QuicStreamType.Unidirectional);
    ```
 

@@ -32,12 +32,12 @@ A method marked with `[AssemblyInitialize]` should have valid layout.
 
 Methods marked with `[AssemblyInitialize]` should follow the following layout to be valid:
 
-- it can't be declared on a generic class
 - it should be `public`
 - it should be `static`
 - it should not be `async void`
 - it should not be a special method (finalizer, operator...).
 - it should not be generic
+- it should not be abstract
 - it should take one parameter of type `TestContext`
 - return type should be `void`, `Task` or `ValueTask`
 
@@ -45,7 +45,6 @@ The type declaring these methods should also respect the following rules:
 
 - The type should be a class.
 - The class should be public or internal (if the test project is using the [DiscoverInternals] attribute).
-- The class shouldn't be static.
 - The class should be marked with [TestClass] (or a derived attribute)
 - the class should not be generic
 

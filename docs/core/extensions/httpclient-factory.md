@@ -293,6 +293,79 @@ A further workaround can follow with an extension method for registering a scope
 
 For more information, see the [full example](https://github.com/dotnet/docs/tree/main/docs/core/extensions/snippets/http/scopeworkaround).
 
+## Avoid depending on "factory-default" Primary Handler
+
+In this section, we use the term _"factory-default" Primary Handler_, by which we mean the Primary Handler that the default `IHttpClientFactory` implementation (or more precisely, the default `HttpMessageHandlerBuilder` implementation) will assign if _not configured in any way_ whatsoever.
+
+> [!NOTE]
+> The "factory-default" Primary Handler is an _implementation detail_ and subject to change.
+> It is strongly advised to AVOID depending on a specific implementation being used as a "factory-default" (e.g. `HttpClientHandler`).
+
+There are cases in which you need to depended on the specific type of a Primary Handler, especially if working on a class library. While preserving the end-user's configuration, you might want to update, for example, `HttpClientHandler`-specific properies like `ClientCertificates`, `UseCookies`, `UseProxy`, etc.
+
+It might be tempting to simply cast the Primary handler to `HttpClientHandler`, which _happened to_ work while `HttpClientHandler` was used as the "factory-default" Primary Handler. But as any code depending on implementation details, such a workaround is _fragile_ and bound to break.
+
+It is advised to leverage `ConfigureHttpClientDefaults` to set up an "app-level" default Primary Handler instance instead of relying on the "factory-default" one:
+
+```csharp
+// Contract with the end-user: Only HttpClientHandler is supported.
+
+// --- "Pre-configure" stage ---
+// The default is fixed as HttpClientHandler to avoid depending on the "factory-default"
+// Primary Handler.
+services.ConfigureHttpClientDefaults(b =>
+    b.ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler() { UseCookies = false }));
+
+// --- "End-user" stage ---
+// IHttpClientBuilder builder = services.AddHttpClient("test", /* ... */);
+// ...
+
+// --- "Post-configure" stage ---
+// The code can rely on the contract, and cast to HttpClientHandler only.
+builder.ConfigurePrimaryHttpMessageHandler((handler, provider) =>
+    {
+        if (handler is not HttpClientHandler h)
+        {
+            throw new InvalidOperationException("Only HttpClientHandler is supported");
+        }
+
+        h.ClientCertificates.Add(GetClientCert(provider, builder.Name));
+
+        //X509Certificate2 GetClientCert(IServiceProvider p, string name) { ... }
+    });
+```
+
+Alternatively, you can consider checking the Primary Handler type, and configure the specifics like client certificates only in the well-known supporting types (most likely, `HttpClientHandler` and `SocketsHttpHandler`):
+
+```csharp
+// --- "End-user" stage ---
+// IHttpClientBuilder builder = services.AddHttpClient("test", /* ... */);
+// ...
+
+// --- "Post-configure" stage ---
+// No contract is in place. Trying to configure main handler types supporting client
+// certs, logging and skipping otherwise.
+builder.ConfigurePrimaryHttpMessageHandler((handler, provider) =>
+    {
+        if (handler is HttpClientHandler h)
+        {
+            h.ClientCertificates.Add(GetClientCert(provider, builder.Name));
+        }
+        else if (handler is SocketsHttpHandler s)
+        {
+            s.SslOptions ??= new System.Net.Security.SslClientAuthenticationOptions();
+            s.SslOptions.ClientCertificates ??= new X509CertificateCollection();
+            s.SslOptions.ClientCertificates!.Add(GetClientCert(provider, builder.Name));
+        }
+        else
+        {
+            // Log warning
+        }
+
+        //X509Certificate2 GetClientCert(IServiceProvider p, string name) { ... }
+    });
+```
+
 ## See also
 
 - [Common `IHttpClientFactory` usage issues][hcf-issues]

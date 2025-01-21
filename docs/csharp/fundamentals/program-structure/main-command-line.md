@@ -210,9 +210,9 @@ To compile and run the application from a command prompt, follow these steps:
 
     :::code language="csharp" source="./snippets/main-command-line/Factorial.cs":::
 
-At the beginning of the `Main` method the program tests if input arguments were not supplied comparing length of `args` argument to `0` and displays the help if no argument are found.
-<br/>If arguments are provided (`args.Length` is greater than 0) program tries to convert the input arguments to numbers. This will throw an exception if the argument is not a number.
-<br/>After factorial is calculated (stored in `result` variable of type `long`) the verbose result is printed depending on the `result` variable.
+    At the beginning of the `Main` method the program tests if input arguments were not supplied comparing length of `args` argument to `0` and displays the help if no argument are found.<br/>
+    If arguments are provided (`args.Length` is greater than 0) program tries to convert the input arguments to numbers. This will throw an exception if the argument is not a number.<br/>
+    After factorial is calculated (stored in `result` variable of type `long`) the verbose result is printed depending on the `result` variable.
 
 2. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you created.
 

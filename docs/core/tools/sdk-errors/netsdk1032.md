@@ -14,11 +14,9 @@ The error `NETSDK1032` occurs when there's a mismatch between the `RuntimeIdenti
 
 > The `RuntimeIdentifier` platform '{RID}' and the `PlatformTarget` '{Target}' must be compatible.
 
-The RID is specified in the project file or passed into the build process from the command line. If not specified, the default RID used is `win-x64` for Windows, `linux-x64` for Linux, and `osx-x64` for macOS.
+The RID is specified in the project file or the command line. If not specified, the default RID used is `win-x64` for Windows, `linux-x64` for Linux, and `osx-x64` for macOS.
 
-The `PlatformTarget` is specified in the project file or passed into the build process from the command line. If not specified, the default is `AnyCPU`.
-
-With `PlatformTarget` set to `AnyCPU`, the application can run on both 32-bit and 64-bit platforms. The runtime executes the app as 64-bit if the OS is 64-bit, and as 32-bit if the OS is 32-bit.
+The `PlatformTarget` is specified in the project file or the command line. If not specified, the default is `AnyCPU`.
 
 Here's an example of a `.csproj` file with incompatible RID and `PlatformTarget` settings:
 
@@ -33,7 +31,7 @@ Here's an example of a `.csproj` file with incompatible RID and `PlatformTarget`
 </Project>
 ```
 
-Fix the error in the preceding `.csproj` file by changing either `PlatformTarget` or `RuntimeIdentifier`. For example, change the PlatformTarget to match the RID:
+Fix the preceding `.csproj` file by changing either `PlatformTarget` or `RuntimeIdentifier`. For example, change `PlatformTarget` to match the RID:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

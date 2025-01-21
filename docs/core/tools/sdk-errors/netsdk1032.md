@@ -18,51 +18,43 @@ The RID is specified in the project file or passed into the build process from t
 
 The `PlatformTarget` is specified in the project file or passed into the build process from the command line. If not specified, the default is `AnyCPU`.
 
-With `PlatformTarget` set to `AnyCPU`, the application can run on both 32-bit and 64-bit platforms. The runtime executes the app as 64-bit if the OS is 64-bit, and as 32-bit for a 32-bit OS.
+With `PlatformTarget` set to `AnyCPU`, the application can run on both 32-bit and 64-bit platforms. The runtime executes the app as 64-bit if the OS is 64-bit, and as 32-bit if the OS is 32-bit.
 
 Here's an example of a `.csproj` file with incompatible RID and `PlatformTarget` settings (an x86 RID and an x64 `PlatformTarget`):
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <PlatformTarget>x86</PlatformTarget>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
-
 </Project>
 ```
 
-Fix the error in the preceding `.csproj` file by changing either `PlatformTarget` or `RuntimeIdentifier`. For example:
+Fix the error in the preceding `.csproj` file by changing either `PlatformTarget` or `RuntimeIdentifier`. For example, change the PlatformTarget to match the RID:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <!-- Change the PlatformTarget to match the RID. -->
     <PlatformTarget>x64</PlatformTarget>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
-
 </Project>
 ```
 
-Or:
+Or change the RID to match the `PlatformTarget`:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <PlatformTarget>x86</PlatformTarget>
-    <!-- Change the RID to match the PlatformTarget. -->
     <RuntimeIdentifier>win-x86</RuntimeIdentifier>
   </PropertyGroup>
-
 </Project>
 ```

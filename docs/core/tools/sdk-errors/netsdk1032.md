@@ -20,7 +20,7 @@ The `PlatformTarget` is specified in the project file or passed into the build p
 
 With `PlatformTarget` set to `AnyCPU`, the application can run on both 32-bit and 64-bit platforms. The runtime executes the app as 64-bit if the OS is 64-bit, and as 32-bit if the OS is 32-bit.
 
-Here's an example of a `.csproj` file with incompatible RID and `PlatformTarget` settings (an x86 RID and an x64 `PlatformTarget`):
+Here's an example of a `.csproj` file with incompatible RID and `PlatformTarget` settings:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

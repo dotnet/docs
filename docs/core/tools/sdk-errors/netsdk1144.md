@@ -16,7 +16,7 @@ The error `NETSDK1144` is reported when an error occurs in the trimming process.
 
 > Optimizing assemblies for size failed. Optimization can be disabled by setting the `PublishTrimmed` property to false.
 
-Set the `PublishTrimmed` property to `false` in the project file or the command line:
+To disable trimming, set the `PublishTrimmed` property to `false` in the project file or the command line:
 
    ```xml
    <PropertyGroup>
@@ -32,13 +32,11 @@ Here's an example of a `.csproj` file with trimming disabled:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <RuntimeIdentifier>linux-arm</RuntimeIdentifier>
     <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>
-
 </Project>
 ```

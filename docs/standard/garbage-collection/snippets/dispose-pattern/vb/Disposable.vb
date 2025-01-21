@@ -13,16 +13,19 @@
 
     ' <SnippetDisposeBool>
    Protected Overridable Sub Dispose(disposing As Boolean)
-		If disposed Then Exit Sub	
+		If disposed Then Exit Sub
 
-		' A block that frees unmanaged resources.
-		
 		If disposing Then
-			' Deterministic call…
-    		' A conditional block that frees managed resources.    	
-		End If
-		
-		disposed = True
+
+            ' Free managed resources.
+            ' ...
+
+        End If
+
+        ' Free unmanaged resources.
+        ' ...
+
+        disposed = True
    End Sub
     ' </SnippetDisposeBool>
 

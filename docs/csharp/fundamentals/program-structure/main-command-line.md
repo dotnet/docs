@@ -17,14 +17,14 @@ helpviewer_keywords:
 The `Main` method is the entry point of a C# application. When the application is started, the `Main` method is the first method that is invoked.
 
 There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject).
-<br/>Below is the example which first line executed will display the number of command line arguments:
+<br/>Below is the example where the first line executed will display the number of command line arguments:
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
 You can also use Top-level statements in one file as the entry point for your application.
 Just as the `Main` method, top-level statements can also [return values](#main-return-values) and access [command-line arguments](#command-line-arguments).
 For more information, see [Top-level statements](top-level-statements.md).
-<br/>The following example uses `foreach` loop to display the command line arguments using the args variable, and at the end of the program returns a success code (`0`):
+<br/>The following example uses a `foreach` loop to display the command line arguments using the `args` variable, and at the end of the program returns a success code (`0`):
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 

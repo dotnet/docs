@@ -725,7 +725,7 @@ let readLineFromStream (sr: System.IO.StreamReader) =
     printLineLength line
 ```
 
-These warnings should be addressed using idiomatic F# [null pattern](../language-reference/pattern-matching.md#null-pattern) via pattern matching:
+These warnings should be addressed using F# [null pattern](../language-reference/pattern-matching.md#null-pattern) in matching:
 
 ```fsharp
 let printLineLength (s: string) =

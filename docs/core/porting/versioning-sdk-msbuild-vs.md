@@ -63,7 +63,6 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 | 9.0.2xx     | 17.13                         | Feb '25   | May '26             |
 | 9.0.3xx     | 17.14                         | May '25   | May '26             |
 
-
 > [!NOTE]
 > <sup>1</sup> .1xx .NET SDK feature bands are supported throughout the lifecycle of major .NET versions. During the extended support period, support is limited to security fixes and minimal high-priority non-security fixes for Linux only. To learn more about the reasoning for this extended support, see [Source-build support](https://github.com/dotnet/source-build#support).
 >
@@ -93,11 +92,10 @@ A the following policy dictates which versions of MSBuild and Visual Studio a gi
 
 > [!NOTE]
 > The table depicts how these versioning rules are applied, starting with .NET SDK 7.0.100 and .NET SDK 6.0.300. It also depicts how the policy would have applied to previously shipped versions of the .NET SDK, had it been in place then. However, the requirements for previous versions of the SDK don't change&mdash;that is, the minimum required version of Visual Studio for .NET SDK 6.0.100 or 6.0.200 remains 16.10.
-> 
-> Targeting `net8.0` is officially supported in Visual Studio 17.8+ only.
-> 
-> Targeting `net9.0` is officially supported in Visual Studio 17.12+ only.
 >
+> Targeting `net8.0` is officially supported in Visual Studio 17.8+ only.
+>
+> Targeting `net9.0` is officially supported in Visual Studio 17.12+ only.
 
 To ensure consistent tooling, you should use `dotnet build` rather than `msbuild` to build your application when possible.
 

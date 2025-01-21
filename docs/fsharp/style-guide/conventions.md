@@ -694,10 +694,17 @@ F# 9 adds [syntax](../language-reference/values/null-values.md#null-values-start
 Here is an example of the valid usage of the syntax:
 
 ```fsharp
-let processLineFromStream (line: string | null) =
-    match line with
-    | null -> (); false
-    | s -> printfn "%s" s; true
+type CustomType(m1, m2) =
+    member _.M1 = m1
+    member _.M2 = m2
+
+    override this.Equals(obj: obj | null) =
+        match obj with
+        | :? CustomType as other -> this.M1 = other.M1 && this.M2 = other.M2
+        | _ -> false
+
+    override this.GetHashCode() =
+        hash (this.M1, this.M2)
 ```
 
 **Avoid** propagating nulls further down your F# code:

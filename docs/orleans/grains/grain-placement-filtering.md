@@ -109,7 +109,8 @@ builder.ConfigureServices(services =>
 [ActivationCountBasedPlacement]
 public class MyGrain() : Grain, IMyGrain
 {
-    ...
+    // ...
+
 }
 ```
 

@@ -32,7 +32,8 @@ Orleans provides various built-in filters for you to choose from. However, if yo
 
 These filters work with [*Silo Metadata*](../grains/silo-metadata.md) to filter candidate silos.
 
-#### RequiredMatchSiloMetadata
+#### `RequiredMatchSiloMetadata`
+
 
 Silo Metadata is used to filter candidate silos to only ones that matches all of the specified metadata keys with the calling silo. If there are no compatible silos that match all of the keys then an empty set of silos will be returned and placement will ultimately fail for the grain.
 

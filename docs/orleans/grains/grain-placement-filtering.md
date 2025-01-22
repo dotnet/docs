@@ -78,7 +78,8 @@ public class ExamplePreferLocalPlacementFilterStrategy(int order) : PlacementFil
 ```
 
 ```csharp
-internal class ExamplePreferLocalPlacementFilterDirector(ILocalSiloDetails localSiloDetails)
+internal class ExamplePreferLocalPlacementFilterDirector(
+    ILocalSiloDetails localSiloDetails)
     : IPlacementFilterDirector
 {
     public IEnumerable<SiloAddress> Filter(PlacementFilterStrategy filterStrategy, PlacementTarget target, IEnumerable<SiloAddress> silos)

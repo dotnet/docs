@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - format string output"
 description: String interpolation using the `$` token provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 07/31/2024
+ms.date: 11/22/2024
 f1_keywords:
     - "$_CSharpKeyword"
     - "$"
@@ -20,7 +20,7 @@ String interpolation provides a more readable, convenient syntax to format strin
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/string-interpolation.cs" id="CompareWithCompositeFormatting":::
 
-Beginning with C# 10, you can use an interpolated string to initialize a [constant](../keywords/const.md) string. You can do that only if all interpolation expressions within the interpolated string are constant strings as well.
+You can use an interpolated string to initialize a [constant](../keywords/const.md) string. You can do that only if all interpolation expressions within the interpolated string are constant strings as well.
 
 ## Structure of an interpolated string
 
@@ -92,12 +92,12 @@ If you're new to string interpolation, see the [String interpolation in C#](../.
 
 ## Compilation of interpolated strings
 
-Beginning with C# 10 and .NET 6, the compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, it's processed by the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName>. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../whats-new/tutorials/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
+The compiler checks if an interpolated string is assigned to a type that satisfies the [_interpolated string handler pattern_](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern). An _interpolated string handler_ is a type that converts the interpolated string into a result string. When an interpolated string has the type `string`, it's processed by the <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=fullName>. For the example of a custom interpolated string handler, see the [Write a custom string interpolation handler](../../advanced-topics/performance/interpolated-string-handler.md) tutorial. Use of an interpolated string handler is an advanced scenario, typically required for performance reasons.
 
 > [!NOTE]
 > One side effect of interpolated string handlers is that a custom handler, including <xref:System.Runtime.CompilerServices.DefaultInterpolatedStringHandler?displayProperty=nameWithType>, may not evaluate all the interpolation expressions within the interpolated string under all conditions. That means side effects of those expressions may not occur.
 
-Before C# 10, if an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
+If an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler can replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 
 If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
 
@@ -105,7 +105,7 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 
 For more information, see the [Interpolated string expressions](~/_csharpstandard/standard/expressions.md#1283-interpolated-string-expressions) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the following new feature specifications:
 
-- [C# 10 - Improved interpolated strings](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md)
+- [Improved interpolated strings](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md)
 - [C# 11 - Raw string literals](~/_csharplang/proposals/csharp-11.0/raw-string-literal.md)
 - [C# 11 - New-lines in string interpolations](~/_csharplang/proposals/csharp-11.0/new-line-in-interpolation.md)
 

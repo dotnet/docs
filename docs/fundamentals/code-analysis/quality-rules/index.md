@@ -12,6 +12,7 @@ ms.date: 01/31/2024
 The following table lists code quality analysis rules.
 
 > [!div class="mx-tdCol2BreakAll"]
+>
 > | Rule ID and warning | Description |
 > | ------------------- | ----------- |
 > | [CA1000: Do not declare static members on generic types](ca1000.md) | When a static member of a generic type is called, the type argument must be specified for the type. When a generic instance member that does not support inference is called, the type argument must be specified for the member. In these two cases, the syntax for specifying the type argument is different and easily confused. |
@@ -188,6 +189,7 @@ The following table lists code quality analysis rules.
 > | [CA2020: Prevent behavioral change caused by built-in operators of IntPtr/UIntPtr](ca2020.md) | Some built-in operators added in .NET 7 behave differently than the user-defined operators in .NET 6 and earlier versions. Some operators that used to throw in unchecked context while overflowing don't throw anymore unless wrapped within checked context. Some operators that previously didn't throw in checked context now throw unless wrapped within unchecked context. |
 > | [CA2021: Don't call Enumerable.Cast\<T> or Enumerable.OfType\<T> with incompatible types](ca2021.md) | A call to <xref:System.Linq.Enumerable.Cast%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> or <xref:System.Linq.Enumerable.OfType%60%601(System.Collections.IEnumerable)?displayProperty=nameWithType> specifies a type parameter that's incompatible with the type of the input collection. |
 > | [CA2022: Avoid inexact read with Stream.Read](ca2022.md) | A call to `Stream.Read` might return fewer bytes than requested, resulting in unreliable code if the return value isn't checked. |
+> | [CA2024: Do not use StreamReader.EndOfStream in async methods](ca2024.md) | The property <xref:System.IO.StreamReader.EndOfStream?displayProperty=nameWithType> can cause unintended synchronous blocking when no data is buffered. Instead, use <xref:System.IO.StreamReader.ReadLineAsync?displayProperty=nameWithType> directly, which returns `null` when reaching the end of the stream. |
 > | [CA2100: Review SQL queries for security vulnerabilities](ca2100.md) | A method sets the System.Data.IDbCommand.CommandText property by using a string that is built from a string argument to the method. This rule assumes that the string argument contains user input. A SQL command string that is built from user input is vulnerable to SQL injection attacks. |
 > | [CA2101: Specify marshalling for P/Invoke string arguments](ca2101.md) | A platform invoke member allows partially trusted callers, has a string parameter, and does not explicitly marshal the string. This can cause a potential security vulnerability. |
 > | [CA2109: Review visible event handlers](ca2109.md) | A public or protected event-handling method was detected. Event-handling methods should not be exposed unless absolutely necessary. |
@@ -334,6 +336,7 @@ The following table lists code quality analysis rules.
 > | [IL3001: Avoid accessing Assembly file path when publishing as a single-file](../../../core/deploying/single-file/warnings/il3001.md) | Avoid accessing Assembly file path when publishing as a single file. |
 > | [IL3002: Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file](../../../core/deploying/single-file/warnings/il3002.md) | Avoid calling members annotated with 'RequiresAssemblyFilesAttribute' when publishing as a single file|
 > | [IL3003: 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.](../../../core/deploying/single-file/warnings/il3003.md) | 'RequiresAssemblyFilesAttribute' annotations must match across all interface implementations or overrides.|
+> | [IL3005: `RequiresAssemblyFilesAttribute` cannot be placed directly on application entry point.](../../../core/deploying/single-file/warnings/il3005.md)|`RequiresAssemblyFilesAttribute` cannot be placed directly on application entry point. |
 
 ## Legend
 

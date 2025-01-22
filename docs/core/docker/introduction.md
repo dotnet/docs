@@ -21,7 +21,7 @@ Official .NET container images are published to the [Microsoft Artifact Registry
 
 ## Building container images
 
-You can build a container image with a **Dockerfile** or rely on the [.NET SDK to produce an image](publish-as-container.md). For samples on building images, see [dotnet/dotnet-docker](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md) and [dotnet/sdk-container-builds](https://github.com/dotnet/sdk-container-builds).
+You can build a container image with a **Dockerfile** or rely on the [.NET SDK to produce an image](../containers/sdk-publish.md). For samples on building images, see [dotnet/dotnet-docker](https://github.com/dotnet/dotnet-docker/blob/main/samples/README.md) and [dotnet/sdk-container-builds](https://github.com/dotnet/sdk-container-builds).
 
 The following example demonstrates building and running a container image in a few quick steps (supported with .NET 8 and .NET 7.0.300).
 

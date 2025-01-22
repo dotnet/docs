@@ -8,13 +8,13 @@ helpviewer_keywords:
 ---
 # Generics and Attributes
 
-Attributes can be applied to generic types in the same way as nongeneric types. However, you can apply attributes only on *open generic types* and *closed constructed generic types*, not on *partially constructed generic types*. An *open generic type* is one where none of the type arguments are specified, such as `Dictionary<TKey, TValue>` A *closed constructed generic type* specifies all type arguments, such as `Dictionary<string, object>`. A *partially constructed generic type* specifies some, but not all, type arguments. An example is `Dictionary<string, TValue>`.
+Attributes can be applied to generic types in the same way as nongeneric types. However, you can apply attributes only on *open generic types* and *closed constructed generic types*, not on *partially constructed generic types*. An *open generic type* is one where none of the type arguments are specified, such as `Dictionary<TKey, TValue>` A *closed constructed generic type* specifies all type arguments, such as `Dictionary<string, object>`. A *partially constructed generic type* specifies some, but not all, type arguments. An example is `Dictionary<string, TValue>`. An *unbound generic type* is one where type arguments are omitted, such as `Dictionary<,>`.
 
 The following examples use this custom attribute:
 
 :::code language="csharp" source="./snippets/conceptual/GenericsAndAttributes.cs" id="CustomAttribute":::
 
-An attribute can reference an open generic type:
+An attribute can reference an unbound generic type:
 
 :::code language="csharp" source="./snippets/conceptual/GenericsAndAttributes.cs" id="GenericClassAsAttribute":::
 

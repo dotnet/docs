@@ -38,8 +38,7 @@ public class Program
         double sum = 0;
         JsonNode document = JsonNode.Parse(jsonString)!;
 
-        JsonNode root = document.Root;
-        JsonArray studentsArray = root["Students"]!.AsArray();
+        JsonArray studentsArray = document["Students"]!.AsArray();
 
         int count = studentsArray.Count;
         foreach (JsonNode? student in studentsArray)

@@ -50,9 +50,9 @@ The [dotnet-stack](dotnet-stack.md) tool allows you to quickly print the managed
 
 [dotnet-symbol](dotnet-symbol.md) downloads files (for example, symbols, DAC/DBI, and host files) needed to open a core dump or minidump. Use this tool if you need symbols and modules to debug a dump file captured on a different machine.
 
-### dotnet-sos
+### dotnet-debugger-extensions
 
-[dotnet-sos](dotnet-sos.md) installs the [SOS debugging extension](sos-debugging-extension.md) on Linux and macOS (and on Windows if you're using [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools)).
+[dotnet-debugger-extensions](dotnet-debugger-extensions.md) installs the [.NET debugger extensions](debugger-extensions.md) on Linux, macOS, and Windows.  [LLDB](https://lldb.llvm.org/) is required for Linux and macOS, and  [Windbg/cdb](/windows-hardware/drivers/debugger/debugger-download-tools) is needed for Windows.  
 
 ## Other tools
 

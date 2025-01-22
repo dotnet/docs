@@ -9,7 +9,7 @@ api.location:
 api.type:
   - "COM"
 f1.keywords:
-  - "IXCLRDataModule::EndEnumExtnets Method"
+  - "IXCLRDataModule::EndEnumExtents Method"
 helpviewer.keywords:
   - "IXCLRDataModule::EndEnumExtents Method [.NET Framework debugging]"
 topic_type:

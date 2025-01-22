@@ -1,11 +1,11 @@
 ---
 title: Write LINQ queries
 description: Learn how to write LINQ queries in C#.
-ms.date: 04/19/2024
+ms.date: 01/16/2025
 ---
 # Write C# LINQ queries to query data
 
-Most queries in the introductory Language Integrated Query (LINQ) documentation are written by using the LINQ declarative query syntax. However, the query syntax must be translated into method calls for the .NET common language runtime (CLR) when the code is compiled. These method calls invoke the standard query operators, which have names such as `Where`, `Select`, `GroupBy`, `Join`, `Max`, and `Average`. You can call them directly by using method syntax instead of query syntax.
+Most queries in the introductory Language Integrated Query (LINQ) documentation are written by using the LINQ declarative query syntax. The C# compiler translates query syntax into method calls. These method calls implement the standard query operators, and have names such as `Where`, `Select`, `GroupBy`, `Join`, `Max`, and `Average`. You can call them directly by using method syntax instead of query syntax.
 
 Query syntax and method syntax are semantically identical, but query syntax is often simpler and easier to read. Some queries must be expressed as method calls. For example, you must use a method call to express a query that retrieves the number of elements that match a specified condition. You also must use a method call for a query that retrieves the element that has the maximum value in a source sequence. The reference documentation for the standard query operators in the <xref:System.Linq> namespace generally uses method syntax. You should become familiar with how to use method syntax in queries and in query expressions themselves.
 
@@ -15,30 +15,28 @@ The following example shows a simple *query expression* and the semantically equ
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="MethodSyntax":::
 
-The output from the two examples is identical. You can see that the type of the query variable is the same in both forms: <xref:System.Collections.Generic.IEnumerable%601>.
+The output from the two examples is identical. The type of the query variable is the same in both forms: <xref:System.Collections.Generic.IEnumerable%601>.
 
-To understand the method-based query, let's examine it more closely. On the right side of the expression, notice that the `where` clause is now expressed as an instance method on the `numbers` object, which has a type of `IEnumerable<int>`. If you're familiar with the generic <xref:System.Collections.Generic.IEnumerable%601> interface, you know that it doesn't have a `Where` method. However, if you invoke the IntelliSense completion list in the Visual Studio IDE, you see not only a `Where` method, but many other methods such as `Select`, `SelectMany`, `Join`, and `Orderby`. These methods implement the standard query operators.
+On the right side of the expression, notice that the `where` clause is now expressed as an instance method on the `numbers` object, which has a type of `IEnumerable<int>`. If you're familiar with the generic <xref:System.Collections.Generic.IEnumerable%601> interface, you know that it doesn't have a `Where` method. However, if you invoke the IntelliSense completion list in the Visual Studio IDE, you see not only a `Where` method, but many other methods such as `Select`, `SelectMany`, `Join`, and `Orderby`. These methods implement the standard query operators.
 
 ![Screenshot showing all the standard query operators in Intellisense.](./media/write-linq-queries/standard-query-operators.png)
 
-Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> includes more methods, it doesn't. The standard query operators are implemented as *extension methods*. Extensions methods "extend" an existing type; they can be called as if they were instance methods on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable%601> and that is why you can write `numbers.Where(...)`.
-
-To use extension methods, you bring them into scope with `using` directives. From your application's point of view, an extension method and a regular instance method are the same.
+Although it looks as if <xref:System.Collections.Generic.IEnumerable%601> includes more methods, it doesn't. The standard query operators are implemented as *extension methods*. Extensions methods "extend" an existing type; they can be called as if they were instance methods on the type. The standard query operators extend <xref:System.Collections.Generic.IEnumerable%601> and that is why you can write `numbers.Where(...)`. You bring extensions into scope with `using` directives before calling them.
 
 For more information about extension methods, see [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md). For more information about standard query operators, see [Standard Query Operators Overview (C#)](../standard-query-operators/index.md). Some LINQ providers, such as [Entity Framework](/ef/core/) and LINQ to XML, implement their own standard query operators and extension methods for other types besides <xref:System.Collections.Generic.IEnumerable%601>.
 
 ## Lambda expressions
 
-In the previous example, notice that the conditional expression (`num % 2 == 0`) is passed as an in-line argument to the <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> method: `Where(num => num % 2 == 0).` This inline expression is a [lambda expression](../../language-reference/operators/lambda-expressions.md). It's a convenient way to write code that would otherwise have to be written in more cumbersome form. The `num` on the left of the operator is the input variable, which corresponds to `num` in the query expression. The compiler can infer the type of `num` because it knows that `numbers` is a generic <xref:System.Collections.Generic.IEnumerable%601> type. The body of the lambda is just the same as the expression in query syntax or in any other C# expression or statement. It can include method calls and other complex logic. The return value is just the expression result. Certain queries can only be expressed in method syntax and some of those require lambda expressions. Lambda expressions are a powerful and flexible tool in your LINQ toolbox.
+In the preceding example, the conditional expression (`num % 2 == 0`) is passed as an in-line argument to the <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> method: `Where(num => num % 2 == 0).` This inline expression is a [lambda expression](../../language-reference/operators/lambda-expressions.md). It's a convenient way to write code that would otherwise have to be written in more cumbersome form. The `num` on the left of the operator is the input variable, which corresponds to `num` in the query expression. The compiler can infer the type of `num` because it knows that `numbers` is a generic <xref:System.Collections.Generic.IEnumerable%601> type. The body of the lambda is the same as the expression in query syntax or in any other C# expression or statement. It can include method calls and other complex logic. The return value is the expression result. Certain queries can only be expressed in method syntax and some of those queries require lambda expressions. Lambda expressions are a powerful and flexible tool in your LINQ toolbox.
 
 ## Composability of queries
 
-In the previous code example, the <xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType> method is invoked by using the dot operator on the call to `Where`. `Where` produces a filtered sequence, and then `Orderby` sorts the sequence produced by `Where`. Because queries return an `IEnumerable`, you compose them in method syntax by chaining the method calls together. The compiler does this composition when you write queries using query syntax. Because a query variable doesn't store the results of the query, you can modify it or use it as the basis for a new query at any time, even after you execute it.
+In the preceding code example, the <xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType> method is invoked by using the dot operator on the call to `Where`. `Where` produces a filtered sequence, and then `Orderby` sorts the sequence produced by `Where`. Because queries return an `IEnumerable`, you compose them in method syntax by chaining the method calls together. The compiler does this composition when you write queries using query syntax. Because a query variable doesn't store the results of the query, you can modify it or use it as the basis for a new query at any time, even after you execute it.
 
-The following examples demonstrate some simple LINQ queries by using each approach listed previously.
+The following examples demonstrate some basic LINQ queries by using each approach listed previously.
 
 > [!NOTE]
-> These queries operate on simple in-memory collections; however, the basic syntax is identical to that used in LINQ to Entities and LINQ to XML.
+> These queries operate on in-memory collections; however, the syntax is identical to that used in LINQ to Entities and LINQ to XML.
 
 ## Example - Query syntax
 
@@ -54,7 +52,7 @@ In each previous example, the queries don't actually execute until you iterate o
 
 ## Example - Method syntax
 
-Some query operations must be expressed as a method call. The most common such methods are those methods that return singleton numeric values, such as <xref:System.Linq.Enumerable.Sum%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. These methods must always be called last in any query because they return a single value and can't serve as the source for an extra query operation. The following example shows a method call in a query expression:
+Some query operations must be expressed as a method call. The most common such methods are those methods that return singleton numeric values, such as <xref:System.Linq.Enumerable.Sum%2A>, <xref:System.Linq.Enumerable.Max%2A>, <xref:System.Linq.Enumerable.Min%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. These methods must always be called last in any query because they return a single value and can't serve as the source for an additional query operation. The following example shows a method call in a query expression:
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_2":::
 
@@ -70,7 +68,7 @@ Each of the previous queries can be written by using implicit typing with [`var`
 
 ## Example - Mixed query and method syntax
 
-This example shows how to use method syntax on the results of a query clause. Just enclose the query expression in parentheses, and then apply the dot operator and call the method. In the following example, query #7 returns a count of the numbers whose value is between 3 and 7. In general, however, it's better to use a second variable to store the result of the method call. In this manner, the query is less likely to be confused with the results of the query.
+This example shows how to use method syntax on the results of a query clause. Just enclose the query expression in parentheses, and then apply the dot operator and call the method. In the following example, query #7 returns a count of the numbers whose value is between 3 and 7.
 
 :::code language="csharp" source="./snippets/SnippetApp/WriteLinqQueries.cs" id="write_linq_queries_5":::
 
@@ -96,6 +94,13 @@ In some cases, you don't know until run time how many predicates you have to app
 
 :::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_1":::
 
+> [!NOTE]
+> This example uses the following data source and data:
+
+:::code language="csharp" source="./snippets/SnippetApp/DataSources.cs" id="basics_datasource":::
+
+:::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="SourceData":::
+
 You can use control flow statements, such as `if... else` or `switch`, to select among predetermined alternative queries. In the following example, `studentQuery` uses a different `where` clause if the run-time value of `oddYear` is `true` or `false`.
 
 :::code language="csharp" source="./snippets/SnippetApp/RuntimeFiltering.cs" id="runtime_filtering_2":::
@@ -103,6 +108,12 @@ You can use control flow statements, such as `if... else` or `switch`, to select
 ## Handle null values in query expressions
 
 This example shows how to handle possible null values in source collections. An object collection such as an <xref:System.Collections.Generic.IEnumerable%601> can contain elements whose value is [null](../../language-reference/keywords/null.md). If a source collection is `null` or contains an element whose value is `null`, and your query doesn't handle `null` values, a <xref:System.NullReferenceException> is thrown when you execute the query.
+
+The following example uses these types and static data arrays:
+
+:::code language="csharp" source="./snippets/SnippetApp/NullValues.cs" id="dataSourceTypes":::
+
+:::code language="csharp" source="./snippets/SnippetApp/NullValues.cs" id="source":::
 
 You can code defensively to avoid a null reference exception as shown in the following example:
 
@@ -124,7 +135,7 @@ In each of the examples, the `equals` query keyword is used. You can also use [p
 
 ## Handle exceptions in query expressions
 
-It's possible to call any method in the context of a query expression. Don't call any method in a query expression that can create a side effect such as modifying the contents of the data source or throwing an exception. This example shows how to avoid raising exceptions when you call methods in a query expression without violating the general .NET guidelines on exception handling. Those guidelines state that it's acceptable to catch a specific exception when you understand why it's thrown in a given context. For more information, see [Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md).
+It's possible to call any method in the context of a query expression. Don't call any method in a query expression that can create a side effect such as modifying the contents of the data source or throwing an exception. This example shows how to avoid raising exceptions when you call methods in a query expression without violating the general .NET guidelines on exception handling. Those guidelines state that it's acceptable to catch a specific exception when you understand why it was thrown in a given context. For more information, see [Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md).
 
 The final example shows how to handle those cases when you must throw an exception during execution of a query.
 
@@ -144,7 +155,6 @@ Remember to catch whatever exception you expect to raise and/or do any necessary
 
 ## See also
 
-- [Walkthrough: Writing Queries in C#](walkthrough-writing-queries-linq.md)
 - [where clause](../../language-reference/keywords/where-clause.md)
 - [Querying based on runtime state](../../advanced-topics/expression-trees/debugview-syntax.md)
 - <xref:System.Nullable%601>

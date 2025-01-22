@@ -35,7 +35,7 @@ This change ensures that trimmed applications use appropriate defaults. It also 
 
 ## Recommended action
 
-To ensure that serialization suceeds, we recommend that you migrate your trimmed applications to use the source generator.
+To ensure that serialization succeeds, we recommend that you migrate your trimmed applications to use the source generator.
 
 However, if you must use reflection, you can revert to the original behavior by explicitly enabling the `JsonSerializerIsReflectionEnabledByDefault` property in your project file:
 
@@ -49,3 +49,7 @@ However, if you must use reflection, you can revert to the original behavior by 
 ## Affected APIs
 
 N/A
+
+## See also
+
+- [Trimming options: Enable trimming](../../../deploying/trimming/trimming-options.md#enable-trimming)

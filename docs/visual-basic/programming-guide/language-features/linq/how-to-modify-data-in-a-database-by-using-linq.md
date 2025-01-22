@@ -20,7 +20,7 @@ Language-Integrated Query (LINQ) queries make it easy to access database informa
 
 The following example shows how to create a new application that retrieves and updates information in a SQL Server database.
 
-The examples in this topic use the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft Download Center. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).
+The examples in this article use the Northwind sample database. To obtain the database, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).
 
 ### To create a connection to a database
 

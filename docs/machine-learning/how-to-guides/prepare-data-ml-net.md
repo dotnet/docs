@@ -134,7 +134,7 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-Notice that the last element in our list has a missing value for `Price`. To replace the missing values in the `Price` column, use the [`ReplaceMissingValues`](xref:Microsoft.ML.ExtensionsCatalog.ReplaceMissingValues%2A) method to fill in that missing value.
+Notice that the last element in the list has a missing value for `Price`. To replace the missing values in the `Price` column, use the [`ReplaceMissingValues`](xref:Microsoft.ML.ExtensionsCatalog.ReplaceMissingValues%2A) method to fill in that missing value.
 
 > [!IMPORTANT]
 > [`ReplaceMissingValue`](xref:Microsoft.ML.ExtensionsCatalog.ReplaceMissingValues%2A) only works with numerical data.
@@ -152,13 +152,13 @@ IDataView transformedData = replacementTransformer.Transform(data);
 ```
 
 ML.NET supports various [replacement modes](xref:Microsoft.ML.Transforms.MissingValueReplacingEstimator.ReplacementMode). The sample above uses the `Mean` replacement mode, which fills in the missing value with that column's average value. The replacement
-'s result fills in the `Price` property for the last element in our data with 200,000 since it's the average of 100,000 and 300,000.
+'s result fills in the `Price` property for the last element in the data with 200,000 since it's the average of 100,000 and 300,000.
 
 ## Use normalizers
 
-[Normalization](https://en.wikipedia.org/wiki/Feature_scaling) is a data pre-processing technique used to scale features to be in the same range, usually between 0 and 1, so that they can be more accurately processed by a machine learning algorithm. For example, the ranges for age and income vary significantly with age generally being in the range of 0-100 and income generally being in the range of zero to thousands. Visit the [transforms page](../resources/transforms.md) for a more detailed list and description of normalization transforms.
+[Normalization](https://en.wikipedia.org/wiki/Feature_scaling) is a data preprocessing technique used to scale features to be in the same range, usually between 0 and 1, so that they can be more accurately processed by a machine learning algorithm. For example, the ranges for age and income vary significantly with age generally being in the range of 0-100 and income generally being in the range of zero to thousands. Visit the [transforms page](../resources/transforms.md) for a more detailed list and description of normalization transforms.
 
-### Min-Max normalization
+### Min-max normalization
 
 Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
 
@@ -328,11 +328,11 @@ Using the first entry as an example, the following is a detailed description of 
 
 **Original Text: This is a good product**
 
-| Transform                 | Description                                  | Result                             |
-|---------------------------|----------------------------------------------|------------------------------------|
-| 1. NormalizeText          | Converts all letters to lowercase by default | this is a good product             |
-| 2. TokenizeWords          | Splits string into individual words          | ["this","is","a","good","product"] |
-| 3. RemoveDefaultStopWords | Removes stop words like *is* and *a*.        | ["good","product"]                 |
-|4. MapValueToKey | Maps the values to keys (categories) based on the input data | [1,2] |
-|5. ProduceNGrams | Transforms text into sequence of consecutive words | [1,1,1,0,0] |
-|6. NormalizeLpNorm | Scale inputs by their lp-norm | [ 0.577350529, 0.577350529, 0.577350529, 0, 0 ] |
+| Transform                 | Description                                                  | Result                             |
+|---------------------------|--------------------------------------------------------------|------------------------------------|
+| 1. NormalizeText          | Converts all letters to lowercase by default                 | this is a good product             |
+| 2. TokenizeWords          | Splits string into individual words                          | ["this","is","a","good","product"] |
+| 3. RemoveDefaultStopWords | Removes stop words like *is* and *a*.                        | ["good","product"]                 |
+| 4. MapValueToKey          | Maps the values to keys (categories) based on the input data | [1,2]                              |
+| 5. ProduceNGrams          | Transforms text into sequence of consecutive words           | [1,1,1,0,0]                        |
+| 6. NormalizeLpNorm        | Scale inputs by their lp-norm                                | [ 0.577350529, 0.577350529, 0.577350529, 0, 0 ] |

@@ -3,7 +3,7 @@ title: "How Embeddings Extend Your AI Model's Reach"
 description: "Learn how embeddings extend the limits and capabilities of AI models in .NET."
 author: catbutler
 ms.topic: concept-article #Don't change.
-ms.date: 05/14/2024
+ms.date: 12/19/2024
 
 #customer intent: As a .NET developer, I want to understand how embeddings extend LLM limits and capabilities in .NET so that I have more semantic context and better outcomes for my AI apps.
 
@@ -34,7 +34,7 @@ Use embeddings to help a model understand the meaning and context of text, and t
 
 Use audio embeddings to process audio files or inputs in your app.
 
-For example, [Speech service](/azure/ai-services/speech-service/) supports a range of audio embeddings, including [speech to text](/azure/ai-services/speech-service/speech-to-text) and [text to speech](/azure/ai-services/speech-service/text-to-speech). You can process audio in real-time or in batches.
+For example, [Azure AI Speech](/azure/ai-services/speech-service/) supports a range of audio embeddings, including [speech to text](/azure/ai-services/speech-service/speech-to-text) and [text to speech](/azure/ai-services/speech-service/text-to-speech). You can process audio in real-time or in batches.
 
 ### Turn text into images or images into text
 

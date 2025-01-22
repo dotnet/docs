@@ -6,4 +6,7 @@ By default, this rule is disabled if the assembly being analyzed uses <xref:Syst
 dotnet_code_quality.CAXXXX.ignore_internalsvisibleto = true
 ```
 
+> [!NOTE]
+> Replace the `XXXX` part of `CAXXXX` with the ID of the applicable rule.
+
 This option is available starting in .NET 8.

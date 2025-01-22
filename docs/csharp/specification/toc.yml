@@ -85,14 +85,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
     - name: Module initializers
       href: ../../../_csharplang/proposals/csharp-9.0/module-initializers.md
-    - name: Suppress emitting localsinit flag
-      href: ../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
   - name: Types
     items:
-    - name: Nullable reference types - proposal
-      href: ../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
-    - name: Nullable reference types - specification
-      href: ../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
     - name: Records
       href: ../../../_csharplang/proposals/csharp-9.0/records.md
     - name: Record structs
@@ -185,8 +179,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-8.0/using.md
     - name: Async streams
       href: ../../../_csharplang/proposals/csharp-8.0/async-streams.md
-    - name: Nested stackalloc
-      href: ../../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
     - name: Lock object semantics
       href: ../../../_csharplang/proposals/csharp-13.0/lock-object.md
     - name: Allow `ref` and `unsafe`

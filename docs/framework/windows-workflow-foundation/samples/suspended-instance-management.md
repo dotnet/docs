@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Suspended Instance Management"
 title: "Suspended Instance Management"
+description: "Learn more about: Suspended Instance Management"
 ms.date: "03/30/2017"
-ms.assetid: f5ca3faa-ba1f-4857-b92c-d927e4b29598
 ---
 # Suspended Instance Management
 
@@ -58,7 +57,7 @@ The [SuspendedInstanceManagement sample](https://github.com/dotnet/samples/tree/
 
     1. In Visual Studio, run the SampleWorkflowApp project again without debugging by pressing <kbd>Ctrl</kbd>+<kbd>F5</kbd>. Two endpoint addresses will be printed in the console window: one for the application endpoint and then other from the <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>. A workflow instance is then created, and tracking records for that instance will appear in the console window. The workflow instance will throw an exception causing the instance to be suspended and aborted.
 
-    2. The command-line utility can then be used to take further action on any of these instances. The syntax for command line arguments is as follows::
+    2. The command-line utility can then be used to take further action on any of these instances. The syntax for command line arguments is as follows:
 
          `SuspendedInstanceManagement -Command:[CommandName] -Server:[ServerName] -Database:[DatabaseName] -InstanceId:[InstanceId]`
 

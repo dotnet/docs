@@ -27,7 +27,7 @@ The Model Builder price prediction template can be used for any scenario requiri
 
 ## Prerequisites
 
-For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
+For a list of prerequisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 
 ## Create a console application
 

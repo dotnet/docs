@@ -76,6 +76,11 @@ You can read the details of the changes in the [proposal specification](~/_cshar
 The implicit "from the end" index operator, `^`, is now allowed in an object initializer expression. For example, you can now initialize an array in an object initializer as shown in the following code:
 
 ```csharp
+public class TimerRemaining
+{
+    public int[] buffer { get; set; } = new int[10];
+}
+
 var countdown = new TimerRemaining()
 {
     buffer =
@@ -94,7 +99,9 @@ var countdown = new TimerRemaining()
 };
 ```
 
-The preceding example creates an array that counts down from 9 to 0. In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
+The `TimerRemaining` class includes a `buffer` array initialized to a length of 10. The preceding example assigns values to this array using the "from the end" index operator (`^`), effectively creating an array that counts down from 9 to 0.
+
+In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
 
 ## `ref` and `unsafe` in iterators and `async` methods
 
@@ -135,7 +142,7 @@ Learn more in the updates on [`ref struct` types](../language-reference/builtin-
 
 ## More partial members
 
-You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for a partial property. Properties that don't declare a body are considered the *declaring declaration*.
+You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for *implementing* a partial property. Properties that don't declare a body are considered the *declaring declaration*.
 
 ```csharp
 public partial class C

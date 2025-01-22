@@ -1,21 +1,21 @@
 ---
 title: 'Tutorial: Analyze review sentiment using a TensorFlow model'
-description: This tutorial shows you how to use a pre-trained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
+description: This tutorial shows you how to use a pretrained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a developer, I want to use ML.NET to make inferences with a pre-trained TensorFlow model.
+#Customer intent: As a developer, I want to use ML.NET to make inferences with a pretrained TensorFlow model.
 ---
-# Tutorial: Analyze sentiment of movie reviews using a pre-trained TensorFlow model in ML.NET
+# Tutorial: Analyze sentiment of movie reviews using a pretrained TensorFlow model in ML.NET
 
-This tutorial shows you how to use a pre-trained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
+This tutorial shows you how to use a pretrained TensorFlow model to classify sentiment in website comments. The binary sentiment classifier is a C# console application developed using Visual Studio.
 
 The TensorFlow model used in this tutorial was trained using movie reviews from the IMDB database. Once you have finished developing the application, you will be able to supply movie review text and the application will tell you whether the review has positive or negative sentiment.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
-> * Load a pre-trained TensorFlow model
+> * Load a pretrained TensorFlow model
 > * Transform website comment text into features suitable for the model
 > * Use the model to make a prediction
 
@@ -31,7 +31,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Create a C# **Console Application** called "TextClassificationTF". Click the **Next** button.
 
-2. Choose .NET 6 as the framework to use. Click the **Create** button.
+2. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 3. Create a directory named *Data* in your project to save your data set files.
 
@@ -39,7 +39,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select the **Install** button. Proceed with the installation by agreeing to the license terms for the package you choose. Repeat these steps for **Microsoft.ML.TensorFlow**, **Microsoft.ML.SampleUtils** and **SciSharp.TensorFlow.Redist**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the package source, and then select the **Browse** tab. Search for **Microsoft.ML**, select the package you want, and then select **Install**. Proceed with the installation by agreeing to the license terms for the package you choose. Repeat these steps for **Microsoft.ML.TensorFlow**, **Microsoft.ML.SampleUtils** and **SciSharp.TensorFlow.Redist**.
 
 ### Add the TensorFlow model to the project
 
@@ -148,7 +148,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
    [!code-csharp[ResizeFeatures](./snippets/text-classification-tf/csharp/Program.cs#ResizeFeatures)]
 
-## Load the pre-trained TensorFlow model
+## Load the pretrained TensorFlow model
 
 1. Add code to load the TensorFlow model:
 
@@ -194,7 +194,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
     [!code-csharp[SnippetCreateModel](./snippets/text-classification-tf/csharp/Program.cs#SnippetCreateModel)]
 
-    An ML.NET model is created from the chain of estimators in the pipeline by calling the `Fit` method. In this case, we are not fitting any data to create the model, as the TensorFlow model has already been previously trained. We supply an empty data view object to satisfy the requirements of the `Fit` method.
+    An ML.NET model is created from the chain of estimators in the pipeline by calling the `Fit` method. In this case, you're not fitting any data to create the model, as the TensorFlow model has already been previously trained. You supply an empty data view object to satisfy the requirements of the `Fit` method.
 
 ## Use the model to make a prediction
 
@@ -249,13 +249,13 @@ Number of classes: 2
 Is sentiment/review positive ? Yes
 ```
 
-Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment by reusing a pre-trained `TensorFlow` model in ML.NET.
+Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment by reusing a pretrained `TensorFlow` model in ML.NET.
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TextClassificationTF) repository.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
 >
-> * Load a pre-trained TensorFlow model
+> * Load a pretrained TensorFlow model
 > * Transform website comment text into features suitable for the model
 > * Use the model to make a prediction

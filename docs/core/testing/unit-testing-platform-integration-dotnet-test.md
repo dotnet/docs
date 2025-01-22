@@ -132,7 +132,7 @@ Or in project file:
 
 By default, all console output that the underlying test executable writes is captured and hidden from the user. This includes the banner, version information, and formatted test information.
 
-To show this information together with MSBuild output use`<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
+To show this information together with MSBuild output, use `<TestingPlatformCaptureOutput>false</TestingPlatformCaptureOutput>`.
 
 This option doesn't impact how the testing framework captures user output written by `Console.WriteLine` or other similar ways to write to the console.
 
@@ -169,3 +169,6 @@ Or in project file:
 
 </Project>
 ```
+
+> [!IMPORTANT]
+> All examples above add properties like `EnableMSTestRunner`, `TestingPlatformDotnetTestSupport`, and `TestingPlatformCaptureOutput` in the csproj file. However, it's highly recommended that you set these properties in `Directory.Build.props`. That way, you don't have to add it to every test project file, and you don't risk introducing a new project that doesn't set these properties and end up with a solution where some projects are VSTest while others are Microsoft.Testing.Platform, which may not work correctly and is unsupported scenario.

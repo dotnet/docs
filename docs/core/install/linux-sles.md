@@ -46,8 +46,6 @@ Currently, the SLES 15 Microsoft repository setup package installs the *microsof
 sudo ln -s /etc/yum.repos.d/microsoft-prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 [!INCLUDE [linux-zyp-install-90](includes/linux-install-90-zyp.md)]
 
 ## How to install other versions

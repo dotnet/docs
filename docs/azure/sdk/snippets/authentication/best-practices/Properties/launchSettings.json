@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "AuthBestPractices": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:56902;http://localhost:56903"
+    }
+  }
+}

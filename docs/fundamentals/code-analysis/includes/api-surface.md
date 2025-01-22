@@ -5,3 +5,6 @@ You can configure which parts of your codebase to run this rule on, based on the
 ```ini
 dotnet_code_quality.CAXXXX.api_surface = private, internal
 ```
+
+> [!NOTE]
+> Replace the `XXXX` part of `CAXXXX` with the ID of the applicable rule.

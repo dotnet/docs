@@ -11,7 +11,7 @@ ms.topic: how-to
 
 # Train and evaluate a model
 
-Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout a majority of the other algorithms.
+Learn how to build machine learning models, collect metrics, and measure performance with ML.NET. Although this sample trains a regression model, the concepts are applicable throughout most of the other algorithms.
 
 ## Split data for training and testing
 
@@ -79,7 +79,7 @@ HousingData[] housingData = new HousingData[]
 };
 ```
 
-Use the [`TrainTestSplit`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A) method to split the data into train and test sets. The result will be a [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) object which contains two [`IDataView`](xref:Microsoft.ML.IDataView) members, one for the train set and the other for the test set. The data split percentage is determined by the `testFraction` parameter. The snippet below is holding out 20 percent of the original data for the test set.
+Use the [`TrainTestSplit`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestSplit%2A) method to split the data into train and test sets. The result is a [`TrainTestData`](xref:Microsoft.ML.DataOperationsCatalog.TrainTestData) object which contains two [`IDataView`](xref:Microsoft.ML.IDataView) members, one for the train set and the other for the test set. The data split percentage is determined by the `testFraction` parameter. The following snippet holds out 20 percent of the original data for the test set.
 
 ```csharp
 DataOperationsCatalog.TrainTestData dataSplit = mlContext.Data.TrainTestSplit(data, testFraction: 0.2);
@@ -89,17 +89,17 @@ IDataView testData = dataSplit.TestSet;
 
 ## Prepare the data
 
-The data needs to be pre-processed before training a machine learning model. More information on data preparation can be found on the [data prep how-to article](prepare-data-ml-net.md) as well as the [`transforms page`](../resources/transforms.md).
+The data needs to be preprocessed before training a machine learning model. More information on data preparation can be found on the [data prep how-to article](prepare-data-ml-net.md) and the [`transforms page`](../resources/transforms.md).
 
 ML.NET algorithms have constraints on input column types. Additionally, default values are used for input and output column names when no values are specified.
 
 ### Working with expected column types
 
-The machine learning algorithms in ML.NET expect a float vector of known size as input. Apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to your data model when all of the data is already in numerical format and is intended to be processed together (i.e. image pixels).
+The machine learning algorithms in ML.NET expect a float vector of known size as input. Apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to your data model when all of the data is already in numerical format and is intended to be processed together (that is, image pixels).
 
-If data is not all numerical and you want to apply different data transformations on each of the columns individually, use the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A) method after all of the columns have been processed to combine all of the individual columns into a single feature vector that is output to a new column.
+If data isn't all numerical and you want to apply different data transformations on each of the columns individually, use the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A) method after all of the columns have been processed to combine all of the individual columns into a single feature vector that is output to a new column.
 
-The following snippet combines the `Size` and `HistoricalPrices` columns into a single feature vector that is output to a new column called `Features`. Because there is a difference in scales, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A) is applied to the `Features` column to normalize the data.
+The following snippet combines the `Size` and `HistoricalPrices` columns into a single feature vector that is output to a new column called `Features`. Because there's a difference in scales, [`NormalizeMinMax`](xref:Microsoft.ML.NormalizationCatalog.NormalizeMinMax%2A) is applied to the `Features` column to normalize the data.
 
 ```csharp
 // Define Data Prep Estimator
@@ -120,7 +120,7 @@ IDataView transformedTrainingData = dataPrepTransformer.Transform(trainData);
 
 ML.NET algorithms use default column names when none are specified. All trainers have a parameter called `featureColumnName` for the inputs of the algorithm and when applicable they also have a parameter for the expected value called `labelColumnName`. By default those values are `Features` and `Label` respectively.
 
-By using the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A) method during pre-processing to create a new column called `Features`, there is no need to specify the feature column name in the parameters of the algorithm since it already exists in the pre-processed `IDataView`. The label column is `CurrentPrice`, but since the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute is used in the data model, ML.NET renames the `CurrentPrice` column to `Label` which removes the need to provide the `labelColumnName` parameter to the machine learning algorithm estimator.
+By using the [`Concatenate`](xref:Microsoft.ML.TransformExtensionsCatalog.Concatenate%2A) method during preprocessing to create a new column called `Features`, there's no need to specify the feature column name in the parameters of the algorithm since it already exists in the preprocessed `IDataView`. The label column is `CurrentPrice`, but since the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute is used in the data model, ML.NET renames the `CurrentPrice` column to `Label` which removes the need to provide the `labelColumnName` parameter to the machine learning algorithm estimator.
 
 If you don't want to use the default column names, pass in the names of the feature and label columns as parameters when defining the machine learning algorithm estimator as demonstrated by the subsequent snippet:
 
@@ -130,7 +130,7 @@ var UserDefinedColumnSdcaEstimator = mlContext.Regression.Trainers.Sdca(labelCol
 
 ## Caching data
 
-By default, when data is processed, it is lazily loaded or streamed which means that trainers may load the data from disk and iterate over it multiple times during training. Therefore, caching is recommended for datasets that fit into memory to reduce the number of times data is loaded from disk. Caching is done as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) by using [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A).
+By default, when data is processed, it's lazily loaded or streamed, which means that trainers might load the data from disk and iterate over it multiple times during training. Therefore, caching is recommended for datasets that fit into memory to reduce the number of times data is loaded from disk. Caching is done as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) by using [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A).
 
 It's recommended to use [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) before any trainers in the pipeline.
 
@@ -150,7 +150,7 @@ IEstimator<ITransformer> dataPrepEstimator =
 
 ## Train the machine learning model
 
-Once the data is pre-processed, use the [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase%602.Fit%2A) method to train the machine learning model with the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) regression algorithm.
+Once the data is preprocessed, use the [`Fit`](xref:Microsoft.ML.Trainers.TrainerEstimatorBase%602.Fit%2A) method to train the machine learning model with the [`StochasticDualCoordinateAscent`](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer) regression algorithm.
 
 ```csharp
 // Define StochasticDualCoordinateAscent regression algorithm estimator
@@ -173,7 +173,7 @@ var trainedModelParameters = trainedModel.Model as LinearRegressionModelParamete
 
 ## Evaluate model quality
 
-To help choose the best performing model, it is essential to evaluate its performance on test data. Use the [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate%2A) method, to measure various metrics for the trained model.
+To help choose the best performing model, it's essential to evaluate its performance on test data. Use the [`Evaluate`](xref:Microsoft.ML.RegressionCatalog.Evaluate%2A) method, to measure various metrics for the trained model.
 
 > [!NOTE]
 > The `Evaluate` method produces different metrics depending on which machine learning task was performed. For more details, visit the [`Microsoft.ML.Data` API Documentation](xref:Microsoft.ML.Data) and look for classes that contain `Metrics` in their name.
@@ -193,7 +193,7 @@ double rSquared = trainedModelMetrics.RSquared;
 
 In the previous code sample:
 
-1. Test data set is pre-processed using the data preparation transforms previously defined.
+1. Test data set is preprocessed using the data preparation transforms previously defined.
 2. The trained machine learning model is used to make predictions on the test data.
 3. In the `Evaluate` method, the values in the `CurrentPrice` column of the test data set are compared against the `Score` column of the newly output predictions to calculate the metrics for the regression model, one of which, R-Squared is stored in the `rSquared` variable.
 

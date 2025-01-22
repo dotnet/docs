@@ -69,12 +69,12 @@ Use the following elements to set up data-driven tests. For more information, se
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataTestMethodAttribute>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute>
 
 ### `DataRowAttribute`
 
-The `DataRowAttribute` allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute` or `DataTestMethodAttribute`.
+The `DataRowAttribute` allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute`.
 
 The number and types of arguments must exactly match the test method signature. Consider the following example of a valid test class demonstrating the `DataRow` attribute usage with inline arguments that align to test method parameters:
 
@@ -189,7 +189,7 @@ Setup and cleanup that is common to multiple tests can be extracted to a separat
 
 [AssemblyInitialize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>) is called right after your assembly is loaded and [AssemblyCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>) is called right before your assembly is unloaded.
 
-The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext).
 
 ```csharp
 [TestClass]
@@ -201,7 +201,7 @@ public class MyTestClass
     }
 
     [AssemblyCleanup]
-    public static void AssemblyCleanup()
+    public static void AssemblyCleanup() // Starting with MSTest 3.8, it can be AssemblyCleanup(TestContext testContext)
     {
     }
 }
@@ -217,7 +217,7 @@ public class MyOtherTestClass
     }
 
     [AssemblyCleanup]
-    public static async Task AssemblyCleanup()
+    public static async Task AssemblyCleanup() // Starting with MSTest 3.8, it can be AssemblyCleanup(TestContext testContext)
     {
     }
 }
@@ -231,7 +231,7 @@ It's possible to control the inheritance behavior: only for current class using 
 
 It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly.
 
-The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one argument of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup no argument.
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext).
 
 ```csharp
 [TestClass]
@@ -243,7 +243,7 @@ public class MyTestClass
     }
 
     [ClassCleanup]
-    public static void ClassCleanup()
+    public static void ClassCleanup() // Starting with MSTest 3.8, it can be ClassCleanup(TestContext testContext)
     {
     }
 }
@@ -259,7 +259,7 @@ public class MyOtherTestClass
     }
 
     [ClassCleanup]
-    public static async Task ClassCleanup()
+    public static async Task ClassCleanup() // Starting with MSTest 3.8, it can be ClassCleanup(TestContext testContext)
     {
     }
 }
@@ -390,7 +390,7 @@ public class UnitTest1
 The MSTest framework introduced <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> for marking a test method to expect an exception of a specific type. The test will pass if the expected exception is thrown and the exception message matches the expected message.
 
 > [!WARNING]
-> This attribute exists for backward compatibility and is not recommended for new tests. Instead, use the `Assert.ThrowsException` method.
+> This attribute exists for backward compatibility and is not recommended for new tests. Instead, use the `Assert.ThrowsException` (or `Assert.ThrowsExactly` if using MSTest 3.8 and later) method.
 
 ## Metadata attributes
 

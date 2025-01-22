@@ -445,6 +445,8 @@ items:
             href: ../standard/datetime/how-to-use-dateonly-timeonly.md
           - name: Perform arithmetic operations
             href: ../standard/datetime/performing-arithmetic-operations.md
+          - name: Use TimeProvider to write predictable code
+            href: ../standard/datetime/timeprovider-overview.md
           - name: "DateTime and DateTimeOffset support in System.Text.Json"
             href: ../standard/datetime/system-text-json-support.md
           - name: Time zones
@@ -759,6 +761,8 @@ items:
                     href: ../standard/serialization/system-text-json/preserve-references.md
                   - name: Serialize polymorphic types
                     href: ../standard/serialization/system-text-json/polymorphism.md
+                  - name: Use extension methods on HttpClient
+                    href: ../standard/serialization/system-text-json/httpclient-extensions.md
                   - name: Read/write JSON without using JsonSerializer
                     items:
                       - name: Use DOM
@@ -769,8 +773,8 @@ items:
                         href: ../standard/serialization/system-text-json/use-utf8jsonreader.md
               - name: Visual Basic support
                 href: ../standard/serialization/system-text-json/visual-basic-support.md
-              - name: Supported collection types
-                href: ../standard/serialization/system-text-json/supported-collection-types.md
+              - name: Supported types
+                href: ../standard/serialization/system-text-json/supported-types.md
               - name: Advanced
                 items:
                   - name: Source generation
@@ -996,6 +1000,9 @@ items:
             href: runtime-libraries/system-console.md
       - name: The System.Random class
         href: runtime-libraries/system-random.md
+      - name: Artificial intelligence (AI)
+        displayName: microsoft.extensions.ai,ollama,ai,openai,azure inference,ichatclient
+        href: ../core/extensions/artificial-intelligence.md
       - name: Dependency injection
         items:
           - name: Overview
@@ -1147,6 +1154,8 @@ items:
             items:
               - name: QUIC support
                 href: networking/quic/quic-overview.md
+              - name: QUIC configuration options
+                href: networking/quic/quic-options.md
               - name: QUIC troubleshooting
                 href: networking/quic/quic-troubleshooting.md
           - name: Telemetry

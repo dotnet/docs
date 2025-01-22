@@ -700,13 +700,11 @@ items:
           - name: Bulk insert
             href: ../../standard/data/sqlite/bulk-insert.md
           - name: Entity Framework Core
-            href: /ef/core/providers/sqlite/limitations/?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
+            href: /ef/core/providers/sqlite/limitations
           - name: Dapper
             href: ../../standard/data/sqlite/dapper-limitations.md
           - name: System.Data.SQLite
             href: ../../standard/data/sqlite/compare.md
-          - name: Xamarin
-            href: ../../standard/data/sqlite/xamarin.md
   - name: Supplemental API remarks for System.Data types
     items:
     - name: CommandBehavior enum
@@ -717,9 +715,9 @@ items:
       href: ../../fundamentals/runtime-libraries/system-data-dataset.md
     - name: DataTable class
       href: ../../fundamentals/runtime-libraries/system-data-datatable.md
-  - name: Entity Framework
-    href: /ef/core/?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: Entity Framework Core
+    href: /ef/core/
   - name: Azure Storage
-    href: /dotnet/api/overview/azure/storage/?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
+    href: /dotnet/api/overview/azure/storage
   - name: Azure Cosmos DB .NET SDK
-    href: /azure/cosmos-db/nosql/sdk-dotnet-v3/?toc=/dotnet/navigate/data-access/toc.json&bc=/dotnet/breadcrumb/toc.json
+    href: /azure/cosmos-db/nosql/sdk-dotnet-v3

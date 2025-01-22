@@ -4,7 +4,7 @@ The `Switch.System.Windows.Forms.UseLegacyImages` compatibility switch, which wa
 
 #### Change description
 
-Starting with .NET Framework 4.8, the `Switch.System.Windows.Forms.UseLegacyImages` compatibility switch addressed possible image scaling issues in ClickOnce scenarios in high DPI environments. When set to `true`, the switch allows the user to restore legacy image scaling on high DPI displays whose scale is set to greater than 100%. For more information, see [.NET Framework 4.8 Release Notes](https://github.com/microsoft/dotnet/blob/master/releases/net48/dotnet48-changes.md#clickonce) on GitHub.
+Starting with .NET Framework 4.8, the `Switch.System.Windows.Forms.UseLegacyImages` compatibility switch addressed possible image scaling issues in ClickOnce scenarios in high DPI environments. When set to `true`, the switch allows the user to restore legacy image scaling on high DPI displays whose scale is set to greater than 100%. For more information, see [.NET Framework 4.8 Release Notes](https://github.com/microsoft/dotnet/blob/main/releases/net48/dotnet48-changes.md#clickonce) on GitHub.
 
 In .NET Core and .NET 5.0 and later, the `Switch.System.Windows.Forms.UseLegacyImages` switch is not supported.
 

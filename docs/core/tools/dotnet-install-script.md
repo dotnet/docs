@@ -1,9 +1,12 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET SDK and the shared runtime.
-ms.date: 08/01/2023
+ms.date: 01/15/2024
 ---
 # dotnet-install scripts reference
+
+> [!NOTE]
+> The behavior of the install script has changed. It downloads .NET from new network locations. For more information, see [Critical: .NET Install links are changing](https://devblogs.microsoft.com/dotnet/critical-dotnet-install-links-are-changing/).
 
 ## Name
 
@@ -17,7 +20,7 @@ Windows:
 dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-Channel <CHANNEL>] [-DryRun] [-FeedCredential]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
-    [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
+    [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
     [-ProxyUseDefaultCredentials] [-Quality <QUALITY>] [-Runtime <RUNTIME>]
     [-SkipNonVersionedFiles] [-UncachedFeed] [-KeepZip] [-ZipPath <PATH>] [-Verbose]
     [-Version <VERSION>]
@@ -31,7 +34,7 @@ Linux/macOS:
 dotnet-install.sh  [--architecture <ARCHITECTURE>] [--azure-feed]
     [--channel <CHANNEL>] [--dry-run] [--feed-credential]
     [--install-dir <DIRECTORY>] [--jsonfile <JSONFILE>]
-    [--no-cdn] [--no-path] [--quality <QUALITY>]
+    [--no-path] [--quality <QUALITY>]
     [--runtime <RUNTIME>] [--runtime-id <RID>]
     [--skip-non-versioned-files] [--uncached-feed] [--keep-zip] [--zip-path <PATH>] [--verbose]
     [--version <VERSION>]
@@ -99,7 +102,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-AzureFeed|--azure-feed`**
 
-  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is false. The default is `https://dotnetcli.azureedge.net/dotnet`.
+  For internal use only. Allows using a different storage to download SDK archives from. The default is `https://builds.dotnet.microsoft.com/dotnet`.
 
 - **`-Channel|--channel <CHANNEL>`**
 
@@ -133,10 +136,6 @@ The install scripts do not update the registry on Windows. They just download th
 - **`-JSonFile|--jsonfile <JSONFILE>`**
 
   Specifies a path to a [global.json](global-json.md) file that will be used to determine the SDK version. The *global.json* file must have a value for `sdk:version`.
-
-- **`-NoCdn|--no-cdn`**
-
-  Disables downloading from the [Azure Content Delivery Network (CDN)](/azure/cdn/cdn-overview) and uses the uncached feed directly.
 
 - **`-NoPath|--no-path`**
 
@@ -202,7 +201,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-UncachedFeed|--uncached-feed`**
 
-  For internal use only. Allows using a different storage to download SDK archives from. This parameter is only used if --no-cdn is true.
+  For internal use only. Allows using a different storage to download SDK archives from. This parameter overwrites `-AzureFeed|--azure-feed`.
 
 - **`-KeepZip|--keep-zip`**
 

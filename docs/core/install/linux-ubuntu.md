@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Learn about the ways you can install .NET on Ubuntu, either from the built-in package feed, the .NET backports repository, or the Microsoft repository.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 12/13/2024
 ms.custom: updateeachrelease, linux-related-content
 ---
 
@@ -222,8 +222,6 @@ sudo apt update
 > You can use a web browser and navigate to <https://packages.microsoft.com/config/ubuntu/> to see which versions of Ubuntu are available to use as the `$repo_version` value.
 
 ## Install .NET
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 Install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 9.0, use the command `sudo apt install dotnet-sdk-9.0`. The following table lists the currently supported .NET packages (which [might vary by your Ubuntu version](#supported-distributions)):
 

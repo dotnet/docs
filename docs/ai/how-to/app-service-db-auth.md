@@ -4,7 +4,7 @@ description: "Learn how to authenticate and authorize your App Service .NET appl
 author: haywoodsloan
 ms.topic: how-to
 ms.custom: devx-track-azurecli
-ms.date: 04/24/2024
+ms.date: 11/24/2024
 zone_pivot_groups: azure-interface
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to a vector database so that I can securely add memories to the AI in my .NET application.
 ---
@@ -13,7 +13,7 @@ zone_pivot_groups: azure-interface
 
 This article demonstrates how to manage the connection between your App Service .NET application and a [vector database solution](../conceptual/vector-databases.md). It covers using Microsoft Entra managed identities for supported services and securely storing connection strings for others.
 
-By adding a vector database to your application, you can enable [semantic memories or *vector stores*]([vector stores](/semantic-kernel/concepts/vector-store-connectors/)) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
+By adding a vector database to your application, you can enable [semantic memories or *vector stores*](/semantic-kernel/concepts/vector-store-connectors/) for your AI. The [Semantic Kernel SDK](/semantic-kernel/overview) for .NET enables you to easily implement memory storage and recall using your preferred vector database solution.
 
 ## Prerequisites
 
@@ -35,31 +35,17 @@ Your application can be granted two types of identities:
 * A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can have only one system-assigned identity.
 * A **user-assigned identity** is a standalone Azure resource that can be assigned to your app. An app can have multiple user-assigned identities.
 
-#### Add a system-assigned identity
-
 :::zone target="docs" pivot="azure-portal"
+
+# [System-assigned](#tab/system-assigned)
 
 1. Navigate to your app's page in the [Azure portal](https://aka.ms/azureportal), and then scroll down to the **Settings** group.
 1. Select **Identity**.
 1. On the **System assigned** tab, toggle *Status* to **On**, and then select **Save**.
 
-:::zone-end
-
-:::zone target="docs" pivot="azure-cli"
-
-Run the `az webapp identity assign` command to create a system-assigned identity:
-
-```azurecli
-az webapp identity assign --name <appName> --resource-group <groupName>
-```
-
-:::zone-end
-
-#### Add a user-assigned identity
+## [User-assigned](#tab/user-assigned)
 
 To add a user-assigned identity to your app, create the identity, and then add its resource identifier to your app config.
-
-:::zone target="docs" pivot="azure-portal"
 
 1. Create a user-assigned managed identity resource by following [these instructions](/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal#create-a-user-assigned-managed-identity).
 1. In the left navigation pane of your app's page, scroll down to the **Settings** group.
@@ -70,9 +56,21 @@ To add a user-assigned identity to your app, create the identity, and then add i
     > [!IMPORTANT]
     > After you select **Add**, the app restarts.
 
+---
+
 :::zone-end
 
 :::zone target="docs" pivot="azure-cli"
+
+## [System-assigned](#tab/system-assigned)
+
+Run the `az webapp identity assign` command to create a system-assigned identity:
+
+```azurecli
+az webapp identity assign --name <appName> --resource-group <groupName>
+```
+
+## [User-assigned](#tab/user-assigned)
 
 1. Create a user-assigned identity:
 
@@ -85,6 +83,8 @@ To add a user-assigned identity to your app, create the identity, and then add i
     ```azurecli
     az webapp identity assign --resource-group <groupName> --name <appName> --identities <identityId>
     ```
+
+---
 
 :::zone-end
 

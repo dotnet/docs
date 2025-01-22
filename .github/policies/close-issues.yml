@@ -1,5 +1,5 @@
-name: Stale issues
-description: Close needs-more-info issues that haven't had a response in 14 days
+name: Close issues
+description: Close issues based on label
 resource: repository
 where:
 configuration:
@@ -18,4 +18,41 @@ configuration:
             actions:
               - addReply:
                   reply: This issue has been automatically closed due to no response from the original author. Feel free to reopen it if you have more information that can help us investigate the issue further.
+              - closeIssue
+
+        eventResponderTasks:
+          - description: Remove needs-more-info label when author comments on issue
+            if:
+              - payloadType: Issue_Comment
+              - isAction:
+                  action: Created
+              - isActivitySender:
+                  issueAuthor: True
+              - hasLabel:
+                  label: needs-more-info
+              - isOpen
+            then:
+              - removeLabel:
+                  label: needs-more-info
+            triggerOnOwnActions: true
+              
+          - description: Close issues labeled 'code-of-conduct'
+            if:
+              - payloadType: Issues
+              - hasLabel:
+                  label: code-of-conduct
+            then:
+              - closeIssue
+
+          - description: Close learn template issues with empty descriptions. (spam)
+            if:
+              - payloadType: Issues
+              - bodyContains:
+                  pattern: '### Description[\n\r]+\[Enter feedback here\][\n\r]+###'
+                  isRegex: true
+            then:
+              - addLabel: 'needs-more-info'
+              - removeLabel: ':watch: Not Triaged'
+              - addReply:
+                  reply: This issue has been automatically closed due to an empty issue description from the original author. Feel free to reopen it if you have more information that can help us investigate the issue further.
               - closeIssue

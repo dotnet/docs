@@ -562,6 +562,8 @@ The `SYSLIB0051` API obsoletions are organized here by namespace.
 
 ## See also
 
+- [API obsoletions with non-default diagnostic IDs (.NET 10)](../10.0/obsolete-apis.md)
+- [API obsoletions with non-default diagnostic IDs (.NET 9)](../9.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 7)](../7.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 6)](../6.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 5)](../5.0/obsolete-apis-with-custom-diagnostics.md)

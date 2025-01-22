@@ -319,6 +319,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/docs/standard/data/sqlite/xamarin.md",
+            "redirect_url": "/dotnet/standard/data/sqlite/",
+            "redirect_document_id": false
+        },
+        {
             "source_path_from_root": "/docs/standard/data/xml/resolving-external-xslt-style-sheets-and-documents.md",
             "redirect_url": "/previous-versions/dotnet/framework/data/xml/xslt/resolving-external-xslt-style-sheets-and-documents",
             "redirect_document_id": false
@@ -523,6 +528,10 @@
         {
             "source_path_from_root": "/docs/standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md",
             "redirect_url": "/dotnet/standard/serialization/binaryformatter-security-guide"
+        },
+        {
+            "source_path_from_root": "/docs/standard/serialization/system-text-json/supported-collection-types.md",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/supported-types"
         },
         {
             "source_path_from_root": "/docs/standard/index.yml",
@@ -732,7 +741,7 @@
         },
         {
             "source_path_from_root": "/docs/standard/serialization/system-text-json-supported-collection-types.md",
-            "redirect_url": "/dotnet/standard/serialization/system-text-json/supported-collection-types",
+            "redirect_url": "/dotnet/standard/serialization/system-text-json/supported-types",
             "redirect_document_id": true
         },
         {

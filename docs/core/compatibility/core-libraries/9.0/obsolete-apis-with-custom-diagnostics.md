@@ -15,9 +15,9 @@ In previous .NET versions, these APIs can be used without any build warning. In 
 The following table lists the custom diagnostic IDs and their corresponding warning messages for obsoleted APIs.
 
 | Diagnostic ID | Description | Severity |
-| - | - |
+|---------------|-------------|----------|
 | [SYSLIB0009](../../../../fundamentals/syslib-diagnostics/syslib0009.md) | <xref:System.Net.AuthenticationManager> is not supported. Methods will no-op or throw <xref:System.PlatformNotSupportedException>. | Warning |
-| [SYSLIB0014: WebRequest, HttpWebRequest, ServicePoint, WebClient are obsolete](../../../../fundamentals/syslib-diagnostics/syslib0014.md) | <xref:System.Net.ServicePointManager> is fully obsolete. Settings on <xref:System.Net.ServicePointManager> don't affect <xref:System.Net.Security.SslStream> or <xref:System.Net.Http.HttpClient> (this behavior hasn't changed since .NET 6). | Warning |
+| [SYSLIB0014](../../../../fundamentals/syslib-diagnostics/syslib0014.md) | <xref:System.Net.ServicePointManager> is fully obsolete. Settings on <xref:System.Net.ServicePointManager> don't affect <xref:System.Net.Security.SslStream> or <xref:System.Net.Http.HttpClient> (this behavior hasn't changed since .NET 6). | Warning |
 | [SYSLIB0054](../../../../fundamentals/syslib-diagnostics/syslib0054.md) | <xref:System.Threading.Thread.VolatileRead%2A?displayProperty=nameWithType> and <xref:System.Threading.Thread.VolatileWrite%2A?displayProperty=nameWithType> are obsolete. Use <xref:System.Threading.Volatile.Read%2A?displayProperty=nameWithType> or <xref:System.Threading.Volatile.Write%2A?displayProperty=nameWithType> instead. | Warning |
 | [SYSLIB0055](../../../../fundamentals/syslib-diagnostics/syslib0055.md) | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. | Warning |
 | [SYSLIB0056](../../../../fundamentals/syslib-diagnostics/syslib0056.md) | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. | Warning |
@@ -106,6 +106,7 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ## See also
 
+- [API obsoletions with non-default diagnostic IDs (.NET 10)](../10.0/obsolete-apis.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 8)](../8.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 7)](../7.0/obsolete-apis-with-custom-diagnostics.md)
 - [API obsoletions with non-default diagnostic IDs (.NET 6)](../6.0/obsolete-apis-with-custom-diagnostics.md)

@@ -322,6 +322,9 @@ items:
   - name: with expression
     href: ./operators/with-expression.md
     displayName: "records, copy"
+  - name: Deconstruction expression
+    href: ./operators/deconstruction.md
+    displayName: deconstruct, deconstruction
   - name: Operator overloading
     href: ./operators/operator-overloading.md
 - name: Statements
@@ -364,11 +367,15 @@ items:
   - name: Comments
     displayName: /* */, //
     href: ./tokens/comments.md
+  - name: Discard
+    displayName: discard, discard pattern
+    href: ./tokens/discard.md
   - name: $ -- string interpolation
     href: ./tokens/interpolated.md
   - name: "@ -- verbatim identifier"
     href: ./tokens/verbatim.md
   - name: "\"\"\" -- raw string literal"
+    displayName: raw string, triple quote
     href: ./tokens/raw-string.md
 - name: Attributes read by the compiler
   items:
@@ -1464,7 +1471,7 @@ items:
     - name: CS1113
       href: ../misc/cs1113.md
     - name: CS1502
-      href: ./compiler-messages/cs1502.md
+      href: ../misc/cs1503.md
     - name: CS1503
       href: ../misc/cs1503.md
     - name: CS1504
@@ -1949,6 +1956,8 @@ items:
       href: ./compiler-messages/cs8422.md
     - name: CS8515
       href: ./compiler-messages/cs8515.md
+    - name: CS8802
+      href: ./compiler-messages/cs8802.md
     - name: CS8803
       href: ./compiler-messages/cs8803.md
     - name: CS8812

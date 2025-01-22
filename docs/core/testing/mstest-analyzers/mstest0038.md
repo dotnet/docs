@@ -1,5 +1,5 @@
 ---
-title: "Don't use 'Assert.AreSame' or 'Assert.AreNotSame' with value types"
+title: "MSTEST0038: Don't use 'Assert.AreSame' or 'Assert.AreNotSame' with value types"
 description: "Learn about code analysis rule MSTEST0038: Don't use 'Assert.AreSame' or 'Assert.AreNotSame' with value types"
 ms.date: 01/06/2025
 f1_keywords:

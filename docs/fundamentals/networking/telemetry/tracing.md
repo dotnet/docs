@@ -37,7 +37,7 @@ However, as an application developer, you would likely prefer to rely on the ric
 - To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-opentelemetry).
 - For **production-time** trace collection and monitoring, you can use OpenTelemetry with [Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) or with [Azure Monitor and Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex, and may be inconvenient to use at development time.
 - For **development-time** trace collection and monitoring, we recommend to use [.NET Aspire](#collecting-traces-with-net-aspire) which provides a simple, but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
-- It is also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration API-s into your ASP.NET project.
+- It is also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET projects.
 
 ### Collecting traces with .NET Aspire
 
@@ -87,10 +87,10 @@ For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standa
 
 When troubleshooting `HttpClient` issues or bottlenecks, it might be crutial to see where time is being spent when sending HTTP requests. Often, the problem occurs during HTTP connection establishment which typically breaks down to DNS lookup, TCP connection and TLS handshake.
 
-.NET 9 introduced experimental connection tracing adding an `HTTP connection setup` span whith 3 child spans representing the DNS, TPC and TLS phases of the connection establishment. The HTTP part of the connection tracing is implemented within <xref:System.Net.Http.SocketsHttpHandler>, meaning that the activity model has to respect the underlying connection pooling behavior.
+.NET 9 introduced experimental connection tracing adding an `HTTP connection setup` span whith 3 child spans representing the DNS, TCP and TLS phases of the connection establishment. The HTTP part of the connection tracing is implemented within <xref:System.Net.Http.SocketsHttpHandler>, meaning that the activity model has to respect the underlying connection pooling behavior.
 
 > [!NOTE]
-> In <xref:System.Net.Http.SocketsHttpHandler>, connections and requests have independent lifecycles. A [pooled connection](../http/httpclient-guidelines.md#pooled-connections) can live long and serve many requests. If there is no connection immediately available in the connection pool, an incoming request will be added to a request queue to wait for an available connection. There is no relationship between requests and connections while the request is waiting. As a result, the `HTTP connection setup` span cannot be modeled as a child of the `HTTP client request` span.
+> In <xref:System.Net.Http.SocketsHttpHandler>, connections and requests have independent lifecycles. A [pooled connection](../http/httpclient-guidelines.md#pooled-connections) can live for a long time and serve many requests. When making a request, if there is no connection immediately available in the connection pool, the request will be added to a request queue to wait for an available connection. There is no direct relationship between waiting requests and connections. The connection process may have started when another connection becomes available for use, in which case the freed connection will be used. As a result, the `HTTP connection setup` span is not modeled as a child of the `HTTP client request` span, instead span links are used.
 
 The following spans have been introduced in .NET 9 to enable collecting detailed connection information:
 
@@ -104,9 +104,11 @@ The following spans have been introduced in .NET 9 to enable collecting detailed
 
 The corresponding `ActivitySource` names start with the prefix `Experimental` as these spans may be changed in future versions as we learn more about how well they work in production.
 
-These spans are too verbose for use 24x7 in production scenarios with high workloads - they are somewhat noisy and this level of data is not normally needed. However if you are trying to diagnose connection issues or get a deeper understanding of how network and connection latency is affecting your services, then they provide insight that is hard to collect by other means.
+> [!NOTE]
+> These spans are probably too verbose for use 24x7 in production scenarios with high workloads - they are somewhat noisy and this level of instrumentation is not normally needed. However, if you are trying to diagnose connection issues or get a deeper understanding of how network and connection latency is affecting your services, then they provide insight that is hard to collect by other means.
 
-When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, *the `HTTP client request` span will contain a link to the `HTTP connection_setup` span corresponding to the connection serving the request*. As an http connection can be long lived, this could result in many links to the connection span from each of the request activities. Some APM monitoring tools aggresively walk links between spans to build up their views and so including this span may cause issues when the tools were not designed to account for large numbers of links.
+> [!NOTE]
+> When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, *the `HTTP client request` span will contain a link to the `HTTP connection_setup` span corresponding to the connection serving the request*. As an http connection can be long lived, this could result in many links to the connection span from each of the request activities. Some APM monitoring tools aggresively walk links between spans to build up their views and so including this span may cause issues when the tools were not designed to account for large numbers of links.
 
 The following diagram illustrates the behavior of the spans and their relationship:
 

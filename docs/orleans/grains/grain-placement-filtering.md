@@ -45,8 +45,6 @@ This filtering will attempt to be filtered to only silos that match all of the c
 The `minCandidates` value configures how many candidates must be found to stop the filtering process. This value is used to prevent a single silo from getting quickly overloaded if it would be the only match.
 For example, if filtering on `[PreferredMatchSiloMetadata(["cloud.availability-zone", "cloud.region"], minCandidates:2)]` and there is only one matching silo on both `cloud.availability-zone` and `cloud.region`, then all activations would get placed on that one silo. It is often desirable to not focus activation (or do scheduling in general) on one target. With the above `minCandidates` value of 2, this scenario would fail to match on both keys because only one silo matches both metadata keys. Then it would then fall back to matching only on `cloud.region`. If there were 2 or more silos that match only that key then those would get returned. Otherwise, it would fall back to returning all of the candidates. Note that this config is a minimum value; more candidates could be returned. If you would prefer a most specific matching only then setting this to 1 would only return the best match (the one silo in the above scenario). This could be preferable in specific use cases where there is low activation throughput and where there is a great penalty when moving to a less specific match from a more specific one. In general use, the default value of 2 should be used (and not need to be specified in the attribute).
 
----
-
 ## Implement placement filters
 
 

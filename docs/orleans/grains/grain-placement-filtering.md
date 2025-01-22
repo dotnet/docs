@@ -17,7 +17,8 @@ For example, the existing `PreferLocal` placement strategy is hard coded to fall
 ## How placement filtering works
 
 
-Placement Filtering operates as an additional step in the grain placement process. After all compatible silos for the grain type are identified, all Placement Filters configured for that grain type, if any, are applied to allow further refinement of the selection by eliminating silos that do not meet the defined criteria.
+Placement filtering operates as an additional step in the grain placement process. After all compatible silos for the grain type are identified, all placement filters configured for that grain type, if any, are applied to allow further refinement of the selection by eliminating silos that do not meet the defined criteria.
+
 
 ### Ordering
 

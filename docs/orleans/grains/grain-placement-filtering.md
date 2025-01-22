@@ -1,6 +1,7 @@
 ---
 title: Grain placement filtering
-description: Learn about grain placement filtering in .NET Orleans.
+description: Learn about grain placement filtering in Microsoft Orleans.
+
 ms.date: 01/08/2025
 ---
 

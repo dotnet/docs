@@ -100,7 +100,10 @@ After implementing this filter, it can be registered and applied to grains.
 ```csharp
 builder.ConfigureServices(services =>
 {
-    services.AddPlacementFilter<ExamplePreferLocalPlacementFilterStrategy, ExamplePreferLocalPlacementFilterDirector>();
+    services.AddPlacementFilter<
+        ExamplePreferLocalPlacementFilterStrategy, 
+        ExamplePreferLocalPlacementFilterDirector>();
+
 });
 ```
 

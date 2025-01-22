@@ -7,7 +7,8 @@ ms.date: 01/08/2025
 
 # Grain placement filtering
 
-Placement Filtering in Orleans allows developers additional control over the placement of grains within a cluster. It works in conjunction with placement strategies, adding an additional layer of filtering to determine candidate silos for grain activation.  
+Glain placement filtering in Orleans allows developers additional control over the placement of grains within a cluster. It works in conjunction with placement strategies, adding an additional layer of filtering to determine candidate silos for grain activation.  
+
 
 This filterting takes place before candidate silos are passed on to the configured placement method allowing for more flexibility and reuse of the filters.
 For example, the existing PreferLocal placement strategy is hard coded to fall back to Random placement if the local silo is unable to host the grain type. But by using filters, a `PreferLocalPlacementFilter` could be implemented to filter down to either the local silo or all compatible silos. Then any placement strategy (Random, Resource Optimised Placement, Activation Count, etc.) could be configured for that grain type. This allows for any set of filters and any placement strategy to be configured for a grain type.

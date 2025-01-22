@@ -4,9 +4,7 @@ description: Learn about grain placement filtering in .NET Orleans.
 ms.date: 01/08/2025
 ---
 
-# Grain Placement Filtering
-
-## Overview  
+# Grain placement filtering
 
 Placement Filtering in Orleans allows developers additional control over the placement of grains within a cluster. It works in conjunction with placement strategies, adding an additional layer of filtering to determine candidate silos for grain activation.  
 

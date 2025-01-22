@@ -24,11 +24,11 @@ Placement filtering operates as an additional step in the grain placement proces
 
 Filters running in different orders may result in different behavior so explicit ordering is required when two or more filters are defined on a type. This needs to be configured with the `order:` parameter, as the type metadata pulled at runtime may return the attributes on a type in a different order from how they appear in the source code. Ordering must have unique values so an explicit ordering can be determined.
 
----
+## Built-in filters
 
-## Built-in Filters
+Orleans provides various built-in filters for you to choose from. However, if you are unable to find one that suits your needs you can always [implement your own](#implement-placement-filters).
 
-### Silo Metadata
+### Silo metadata
 
 These filters work with [*Silo Metadata*](../grains/silo-metadata.md) to filter candidate silos.
 

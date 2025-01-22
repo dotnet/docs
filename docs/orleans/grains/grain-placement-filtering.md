@@ -12,7 +12,8 @@ Placement Filtering in Orleans allows developers additional control over the pla
 
 This filterting takes place before candidate silos are passed on to the configured placement method allowing for more flexibility and reuse of the filters.
 For example, the existing PreferLocal placement strategy is hard coded to fall back to Random placement if the local silo is unable to host the grain type. But by using filters, a `PreferLocalPlacementFilter` could be implemented to filter down to either the local silo or all compatible silos. Then any placement strategy (Random, Resource Optimised Placement, Activation Count, etc.) could be configured for that grain type. This allows for any set of filters and any placement strategy to be configured for a grain type.
-## How Placement Filtering Works
+## How placement filtering works
+
 
 Placement Filtering operates as an additional step in the grain placement process. After all compatible silos for the grain type are identified, all Placement Filters configured for that grain type, if any, are applied to allow further refinement of the selection by eliminating silos that do not meet the defined criteria.
 

@@ -48,7 +48,8 @@ For example, if filtering on `[PreferredMatchSiloMetadata(["cloud.availability-z
 ## Implement placement filters
 
 
-To implement a custom Placement Filter in Orleans, follow these steps:
+To implement a custom placement filter in Orleans, follow these steps:
+
 
 1. **Implementation**
    - Create marker Attribute derived from `PlacementFilterAttribute`

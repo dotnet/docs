@@ -52,5 +52,3 @@ When working with the [Windows App SDK](https://github.com/microsoft/WindowsAppS
 ## Affected APIs
 
 Windows APIs in .NET 5 and later versions that are provided by the [Windows SDK targeting package](https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref).
-
-

@@ -210,6 +210,24 @@ The following example uses the null pattern and the variable pattern.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4817.fs)]
 
+Null pattern is also recommended for the F# 9 [nullability capabilities](./values/null-values.md#null-values-starting-with-f-9):
+
+```fsharp
+let len (str: string | null) =
+    match str with
+    | null -> -1
+    | s -> s.Length
+```
+
+Similarly, you can use new dedicated nullability related [patterns](./active-patterns.md):
+
+```fsharp
+let let str =       // str is inferred to be `string | null`
+    match str with
+    | Null -> -1
+    | NonNull (s: string) -> s.Length
+```
+
 ## Nameof pattern
 
 The `nameof` pattern matches against a string when its value is equal to the expression that follows the `nameof` keyword. for example:

@@ -37,7 +37,7 @@ Test methods (methods marked with the `[TestMethod]` attribute) should follow th
 
 - they should be `public` (or `internal` if `[assembly: DiscoverInternals]` attribute is set)
 - they should not be `static`
-- they should not be generic
+- they should not be generic if using MSTest 3.7 or earlier
 - they should not be `abstract`
 - they should return `void` or `Task`
 - they should not be `async void`

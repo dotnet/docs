@@ -10,7 +10,6 @@ class Program
 
     private static async Task<int> AsyncConsoleWork()
     {
-        // main body here 
         return 0;
     }
 }

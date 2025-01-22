@@ -70,22 +70,22 @@ The following code implements the examples from this section along with some add
 
 ## Optional arguments
 
-The definition of a method, constructor, indexer, or delegate can specify its parameters are required or optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters.
+The definition of a method, constructor, indexer, or delegate can specify its parameters are required or optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters. A nullable reference type (`T?`) allows arguments to be explicitly `null` but does not inherently make a parameter optional.
 
 Each optional parameter has a default value as part of its definition. If no argument is sent for that parameter, the default value is used. A default value must be one of the following types of expressions:
-  
+
 - a constant expression;  
 - an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/builtin-types/enum.md) or a [struct](../../language-reference/builtin-types/struct.md);
 - an expression of the form [default(ValType)](../../language-reference/operators/default.md),  where `ValType` is a value type.
 
-Optional parameters are defined at the end of the parameter list, after any required parameters. If the caller provides an argument for any one of a succession of optional parameters, it must provide arguments for all preceding optional parameters. Comma-separated gaps in the argument list aren't supported. For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.
+Optional parameters are defined at the end of the parameter list, after any required parameters. The caller must provide arguments for all required parameters and any optional parameters preceding those it specifies. Comma-separated gaps in the argument list aren't supported.For example, in the following code, instance method `ExampleMethod` is defined with one required and two optional parameters.
 
 :::code language="csharp" source="./snippets/NamedAndOptional/optional.cs" id="Snippet15":::
 
 The following call to `ExampleMethod` causes a compiler error, because an argument is provided for the third parameter but not for the second.
 
 ```csharp
-//anExample.ExampleMethod(3, ,4);
+// anExample.ExampleMethod(3, ,4);
 ```
 
 However, if you know the name of the third parameter, you can use a named argument to accomplish the task.
@@ -107,7 +107,7 @@ In the following example, the constructor for `ExampleClass` has one parameter, 
 
 :::code language="csharp" source="./snippets/NamedAndOptional/optional.cs" id="Snippet2":::
 
-The preceding code shows a number of examples where optional parameters aren't applied correctly. The first illustrates that an argument must be supplied for the first parameter, which is required.
+The preceding code illustrates several cases where optional parameters are used correctly and incorrectly. Arguments must be supplied for all required parameters. Gaps in optional arguments must be filled with named parameters.
 
 ## Caller information attributes
 

@@ -49,11 +49,19 @@ Make sure `dotnet-counters` is installed:
 dotnet tool install --global dotnet-counters
 ```
 
-When running against a .NET 8+ process, `dotnet-counters` enables the instruments defined by the `--counters` argument and displays the measurements. It continuously refreshes the console with the latest numbers:
+Start the HelloBuiltinMetrics app.
+
+```dotnetcli
+dotnet run -c Release
+```
+
+Start `dotnet-counters` in a separate CLI window and specifying the process name and the meters to watch, then press a key in the HelloBuiltinMetrics app so it starts sending requests. As soon as measurements start landing, `dotnet-counters` continuously refreshes the console with the latest numbers:
 
 ```console
 dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n HelloBuiltinMetrics
 ```
+
+![`dotnet-counters` output](media/dotnet-counters.png)
 
 ### Collecting metrics with .NET Aspire
 

@@ -17,8 +17,12 @@ while (!Console.KeyAvailable)
     await Parallel.ForAsync(0, Random.Shared.Next(20), async (_, ct) =>
     {
         string uri = uris[Random.Shared.Next(uris.Length)];
-        byte[] bytes = await client.GetByteArrayAsync(uri, ct);
-        await Console.Out.WriteLineAsync($"{uri} - received {bytes.Length} bytes.");
+        try
+        {
+            byte[] bytes = await client.GetByteArrayAsync(uri, ct);
+            await Console.Out.WriteLineAsync($"{uri} - received {bytes.Length} bytes.");
+        }
+        catch { await Console.Out.WriteLineAsync($"{uri} - failed."); }
     });
 }
 // </snippet_ExampleApp>

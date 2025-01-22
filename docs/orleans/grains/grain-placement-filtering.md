@@ -37,7 +37,8 @@ These filters work with [*Silo Metadata*](../grains/silo-metadata.md) to filter 
 
 Silo Metadata is used to filter candidate silos to only ones that matches all of the specified metadata keys with the calling silo. If there are no compatible silos that match all of the keys then an empty set of silos will be returned and placement will ultimately fail for the grain.
 
-#### PreferredMatchSiloMetadata
+#### `PreferredMatchSiloMetadata`
+
 
 This filtering will attempt to be filtered to only silos that match all of the configured metadata keys with the calling silo. However, instead of returning an empty set if there are not matches as the above Required filtering this will then fall back to partial matches. The first configured metadata key is dropped and a match is made against the remaining keys. This will continue, dropping the initial keys, until a sufficient number of matches are made. If there are not any compatible silos that match *any* of the metadata keys, then all of the candidate silos are returned.
 

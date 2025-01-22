@@ -30,7 +30,7 @@ There are several ways of collecting networking metrics in .NET.
 
 ### Collecting metrics with dotnet-counters
 
-[`dotnet-counters`](../../../core/diagnostics/dotnet-counters.md) is a cross-platform performance monitoring tool for ad-hoc health monitoring and first-level performance investigation.
+[`dotnet-counters`](../../../core/diagnostics/dotnet-counters.md) is a cross-platform command line tool for ad-hoc examination of .NET metrics and first-level performance investigation.
 
 For the sake of this tutorial, create a simple app that sends HTTP requests to various endpoints in parallel.
 

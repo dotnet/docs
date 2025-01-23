@@ -43,7 +43,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
     Replace the link in the following command with the link you copied.
 
     ```bash
-    curl -O https://dotnetcli.blob.core.windows.net/dotnet/checksums/8.0.0-sha.txt
+    curl -O https://builds.dotnet.microsoft.com/dotnet/checksums/8.0.0-sha.txt
     ```
 
 01. With both the checksum file and the .NET release file downloaded to the same directory, use the `sha512sum -c {file} --ignore-missing` command to validate the downloaded file.

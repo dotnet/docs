@@ -1,6 +1,6 @@
 | Name | Package | Docs | Source |
 | ---- | ------- | ---- | ------ |
-| AI Foundry | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.AI.Projects/1.0.0-beta.2) | [docs](/dotnet/api/overview/azure/AI.Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.0.0-beta.2/sdk/ai/Azure.AI.Projects/) |
+| AI Foundry | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.AI.Projects/1.0.0-beta.3) | [docs](/dotnet/api/overview/azure/AI.Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.0.0-beta.3/sdk/ai/Azure.AI.Projects/) |
 | AI Model Inference | NuGet [1.0.0-beta.2](https://www.nuget.org/packages/Azure.AI.Inference/1.0.0-beta.2) | [docs](/dotnet/api/overview/azure/AI.Inference-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Inference_1.0.0-beta.2/sdk/ai/Azure.AI.Inference/) |
 | Anomaly Detector | NuGet [3.0.0-preview.7](https://www.nuget.org/packages/Azure.AI.AnomalyDetector/3.0.0-preview.7) | [docs](/dotnet/api/overview/azure/AI.AnomalyDetector-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [3.0.0-preview.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AnomalyDetector_3.0.0-preview.7/sdk/anomalydetector/Azure.AI.AnomalyDetector/) |
 | App Configuration | NuGet [1.5.0](https://www.nuget.org/packages/Azure.Data.AppConfiguration/1.5.0) | [docs](/dotnet/api/overview/azure/Data.AppConfiguration-readme) | GitHub [1.5.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Data.AppConfiguration_1.5.0/sdk/appconfiguration/Azure.Data.AppConfiguration/) |
@@ -556,12 +556,12 @@
 | Microsoft.Azure.WebJobs.Extensions.Rpc | NuGet [3.0.41](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Rpc/3.0.41) |  |  |
 | Microsoft.Azure.WebJobs.Rpc.Core | NuGet [3.0.41](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Rpc.Core/3.0.41) |  |  |
 | Service Bus - Message ID plugin | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus.MessageIdPlugin/2.0.0) |  |  |
-| SignalR | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.29.0)<br>NuGet [1.25.0-preview1-11147](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.25.0-preview1-11147) |  | GitHub [1.29.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
-| SignalR - ASP.NET | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.29.0) |  | GitHub [1.29.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
+| SignalR | NuGet [1.30.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.30.0)<br>NuGet [1.25.0-preview1-11147](https://www.nuget.org/packages/Microsoft.Azure.SignalR/1.25.0-preview1-11147) |  | GitHub [1.30.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR) |
+| SignalR - ASP.NET | NuGet [1.30.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.AspNet/1.30.0) |  | GitHub [1.30.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.AspNet) |
 | SignalR - Benchmark | NuGet [1.0.0-preview1-10415](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Benchmark/1.0.0-preview1-10415) |  | GitHub [1.0.0-preview1-10415](https://github.com/azure/azure-signalr-bench) |
-| SignalR - Protocols | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.29.0) |  | GitHub [1.29.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
-| SignalR - Serverless Protocols | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.10.0) |  | GitHub [1.10.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
-| SignalR Management | NuGet [1.29.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.29.0) |  | GitHub [1.29.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
+| SignalR - Protocols | NuGet [1.30.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Protocols/1.30.0) |  | GitHub [1.30.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Protocols) |
+| SignalR - Serverless Protocols | NuGet [1.11.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Serverless.Protocols/1.11.0) |  | GitHub [1.11.0](https://github.com/Azure/azure-functions-signalrservice-extension/tree/v1.2.0/src/Microsoft.Azure.SignalR.Serverless.Protocols) |
+| SignalR Management | NuGet [1.30.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Management/1.30.0) |  | GitHub [1.30.0](https://github.com/Azure/azure-signalr/tree/v1.5.0/src/Microsoft.Azure.SignalR.Management) |
 | SQL Database Elastic Scale Client | NuGet [2.4.2](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Client/2.4.2) |  | GitHub [2.4.2](https://github.com/Azure/elastic-db-tools/tree/v2.3.0/Src/ElasticScale.Client) |
 | SQL Database Elastic Scale Service SplitMerge | NuGet [1.2.0](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.ElasticScale.Service.SplitMerge/1.2.0) |  |  |
 | SQL Database Jobs | NuGet [0.8.3362.1](https://www.nuget.org/packages/Microsoft.Azure.SqlDatabase.Jobs/0.8.3362.1) |  |  |
@@ -574,7 +574,7 @@
 | Hyak Common | NuGet [1.2.2](https://www.nuget.org/packages/Hyak.Common/1.2.2) |  |  |
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
-| Microsoft.Azure.SignalR.Emulator | NuGet [1.6.0](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.6.0)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
+| Microsoft.Azure.SignalR.Emulator | NuGet [1.6.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.6.1)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
 | MSBuild | NuGet [0.32.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.32.0) |  |  |
 | ProviderHub Controller | NuGet [0.18.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.18.0) |  |  |
 | ProviderHub Templates | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.10.0) |  |  |

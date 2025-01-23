@@ -1,5 +1,5 @@
 ---
-title: "Use proper 'Assert' methods"
+title: "MSTEST0037: Use proper 'Assert' methods"
 description: "Learn about code analysis rule MSTEST0037: Use proper 'Assert' methods."
 ms.date: 11/17/2024
 f1_keywords:

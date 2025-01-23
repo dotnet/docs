@@ -137,27 +137,21 @@ For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standa
 
 ### View metrics in Grafana with OpenTelemetry and Prometheus
 
-Please follow our tutorial on [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md), but note that the tutorial does not particularly discuss `HttpClient` metrics.
+Please follow the walkthrough in [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) to see how to connect an example app with Prometheus and Grafana.
 
-There are two additions you need to make:
+In order to stress `HttpClient` by sending parallel requests to various endpoints, extend the example app with the following endpoint:
 
-1. In order to enable the client metrics, it is necessary to extend the [metrics configuration code](../../../core/diagnostics/observability-prgrja-example.md#5-configure-opentelemetry-with-the-correct-providers) with the addition of the `System.Net.*` meters:
+:::code language="csharp" source="../../../core/diagnostics/snippets/OTel-Prometheus-Grafana-Jaeger/csharp/Program.cs" id="Snippet_ClientStress":::
 
-    ```csharp
-    otel.WithMetrics(metrics => metrics
-        // Metrics provider from OpenTelemetry
-        .AddAspNetCoreInstrumentation()
-        .AddMeter(greeterMeter.Name)
-        // Metrics provided by ASP.NET Core in .NET 8
-        .AddMeter("Microsoft.AspNetCore.Hosting")
-        .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
-        // Metrics provided by System.Net libraries
-        .AddMeter("System.Net.Http")
-        .AddMeter("System.Net.NameResolution")
-        .AddPrometheusExporter());
-    ```
+Create a Grafana dashboard by selecting the **+** icon on the top toolbar then selecting **Dashboard**. In the dashboard editor that appears, enter **Open HTTP/1.1 Connections** in the **Title** box and the following query in the PromQL expression field:
 
-1. Moreover, `HttpClient` usage is needed to see the `System.Net` metrics in action. The `/NestedGreeting` endpoint in the paragraph [Distributed tracing with Jaeger](../../../core/diagnostics/observability-prgrja-example.md#9-distributed-tracing-with-jaeger) provides a simple example for that.
+```
+sum by(http_connection_state) (http_client_open_connections{network_protocol_version="1.1"})
+```
+
+Select **Apply** to save and view the new dashboard. It displays the number of active vs idle HTTP/1.1 connections in the pool.
+
+[![HTTP/1.1 Connections in Grafana](../../../core/diagnostics/media/grafana-http11-connections.png)](../../../core/diagnostics/media/grafana-http11-connections.png#lightbox)
 
 ## Enrichment
 

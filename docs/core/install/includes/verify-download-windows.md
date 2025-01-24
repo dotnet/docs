@@ -43,7 +43,7 @@ The .NET release notes contain a link to a checksum file you can use to validate
 01. Use the following script, but replace the link to download the appropriate checksum file:
 
     ```powershell
-    Invoke-WebRequest https://dotnetcli.blob.core.windows.net/dotnet/checksums/8.0.0-sha.txt -OutFile 8.0.0-sha.txt
+    Invoke-WebRequest https://builds.dotnet.microsoft.com/dotnet/checksums/8.0.0-sha.txt -OutFile 8.0.0-sha.txt
     ```
 
 01. With both the checksum file and the .NET release file downloaded to the same directory, search the checksum file for the checksum of the .NET download:

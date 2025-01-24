@@ -39,15 +39,15 @@ csharp_new_line_between_query_expression_clauses = true
 
 This option concerns whether an open brace `{` should be placed on the same line as the preceding code, or on a new line. For this rule, you specify **all**, **none**, or one or more code elements such as **methods** or **properties**, to define when this rule should be applied. To specify multiple code elements, separate them with a comma (,).
 
-| Property                 | Value                             | Description                                                              |
-|--------------------------|-----------------------------------|--------------------------------------------------------------------------|
-| **Option name**          | csharp_new_line_before_open_brace |                                                                          |
-| **Applicable languages** | C#                                |                                                                          |
-| **Introduced version**   | Visual Studio 2017                |                                                                          |
+| Property                 | Value                             | Description |
+|--------------------------|-----------------------------------|-------------|
+| **Option name**          | csharp_new_line_before_open_brace |             |
+| **Applicable languages** | C#                                |             |
+| **Introduced version**   | Visual Studio 2017                |             |
 | **Option values**        | `all`                             | Require braces to be on a new line for all expressions ("Allman" style). |
-|                          | `none`                            | Require braces to be on the same line for all expressions ("K&R").       |
+|                          | `none`                            | Require braces to be on the same line for all expressions ("K&R"). |
 |                          | `accessors`, `anonymous_methods`, `anonymous_types`, `control_blocks`, `events`, `indexers`,</br>`lambdas`, `local_functions`, `methods`, `object_collection_array_initializers`, `properties`, `types` | Require braces to be on a new line for the specified code element ("Allman" style). |
-| **Default option value** | `all`                             |                                                                          |
+| **Default option value** | `all`                             |              |
 
 Code examples:
 
@@ -101,14 +101,14 @@ if (...) {
 
 ### csharp_new_line_before_catch
 
-| Property                 | Value                           | Description                                |
-| ------------------------ | ------------------------------- | ------------------------------------------ |
-| **Option name**          | csharp_new_line_before_catch    |                                            |
-| **Applicable languages** | C#                              |                                            |
-| **Introduced version**   | Visual Studio 2017 |                                            |
-| **Option values**        | `true`                          | Place `catch` statements on a new line.    |
-|                          | `false`                         | Place `catch` statements on the same line. |
-| **Default option value** | `true`                          |                                            |
+| Property                 | Value                        | Description                                |
+|--------------------------|------------------------------|--------------------------------------------|
+| **Option name**          | csharp_new_line_before_catch |                                            |
+| **Applicable languages** | C#                           |                                            |
+| **Introduced version**   | Visual Studio 2017           |                                            |
+| **Option values**        | `true`                       | Place `catch` statements on a new line.    |
+|                          | `false`                      | Place `catch` statements on the same line. |
+| **Default option value** | `true`                       |                                            |
 
 Code examples:
 
@@ -131,14 +131,14 @@ try {
 
 ### csharp_new_line_before_finally
 
-| Property                 | Value                           | Description                                                               |
-| ------------------------ | ------------------------------- | ------------------------------------------------------------------------- |
-| **Option name**          | csharp_new_line_before_finally  |                                                                           |
-| **Applicable languages** | C#                              |                                                                           |
-| **Introduced version**   | Visual Studio 2017 |                                                                           |
-| **Option values**        | `true`                          | Require `finally` statements to be on a new line after the closing brace. |
-|                          | `false`                         | Require `finally` statements to be on the same line as the closing brace. |
-| **Default option value** | `true`                          |                                                                           |
+| Property                 | Value                          | Description |
+|--------------------------|--------------------------------|-------------|
+| **Option name**          | csharp_new_line_before_finally |             |
+| **Applicable languages** | C#                             |             |
+| **Introduced version**   | Visual Studio 2017             |             |
+| **Option values**        | `true`                         | Require `finally` statements to be on a new line after the closing brace. |
+|                          | `false`                        | Require `finally` statements to be on the same line as the closing brace. |
+| **Default option value** | `true`                         |             |
 
 Code examples:
 
@@ -166,14 +166,14 @@ try {
 
 ### csharp_new_line_before_members_in_object_initializers
 
-| Property                 | Value                                                 | Description                                                    |
-| ------------------------ | ----------------------------------------------------- | -------------------------------------------------------------- |
-| **Option name**          | csharp_new_line_before_members_in_object_initializers |                                                                |
-| **Applicable languages** | C#                                                    |                                                                |
-| **Introduced version**   | Visual Studio 2017                                    |                                                                |
+| Property                 | Value                                                 | Description |
+|--------------------------|-------------------------------------------------------|-------------|
+| **Option name**          | csharp_new_line_before_members_in_object_initializers |             |
+| **Applicable languages** | C#                                                    |             |
+| **Introduced version**   | Visual Studio 2017                                    |             |
 | **Option values**        | `true`                                                | Require members of object initializers to be on separate lines |
-|                          | `false`                                               | Require members of object initializers to be on the same line  |
-| **Default option value** | `true`                                                |                                                                |
+|                          | `false`                                               | Require members of object initializers to be on the same line |
+| **Default option value** | `true`                                                |             |
 
 Code examples:
 
@@ -194,14 +194,14 @@ var z = new B()
 
 ### csharp_new_line_before_members_in_anonymous_types
 
-| Property                 | Value                                             | Description                                                |
-| ------------------------ | ------------------------------------------------- | ---------------------------------------------------------- |
-| **Option name**          | csharp_new_line_before_members_in_anonymous_types |                                                            |
-| **Applicable languages** | C#                                                |                                                            |
-| **Introduced version**   | Visual Studio 2017                                |                                                            |
+| Property                 | Value                                             | Description |
+|--------------------------|---------------------------------------------------|-------------|
+| **Option name**          | csharp_new_line_before_members_in_anonymous_types |             |
+| **Applicable languages** | C#                                                |             |
+| **Introduced version**   | Visual Studio 2017                                |             |
 | **Option values**        | `true`                                            | Require members of anonymous types to be on separate lines |
 |                          | `false`                                           | Require members of anonymous types to be on the same line  |
-| **Default option value** | `true`                                            |                                                            |
+| **Default option value** | `true`                                            |             |
 
 Code examples:
 

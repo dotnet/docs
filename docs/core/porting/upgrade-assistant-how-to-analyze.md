@@ -16,8 +16,8 @@ This article teaches you how to perform code analysis on your projects with .NET
 
 ## Prerequisites
 
-- For Visual Studio, see [Install .NET Upgrade Assistant - Visual Studio extension](upgrade-assistant-install.md#visual-studio-extension)
-- For the .NET Global Tool, see [Install .NET Upgrade Assistant - .NET Global Tool](upgrade-assistant-install.md#net-global-tool)
+- For Visual Studio, see [Install .NET Upgrade Assistant - Visual Studio extension](upgrade-assistant-install.md#visual-studio-extension).
+- For the .NET Global Tool, see [Install .NET Upgrade Assistant - .NET Global Tool](upgrade-assistant-install.md#net-global-tool).
 
 ## Create a report in Visual Studio
 

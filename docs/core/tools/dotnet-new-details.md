@@ -34,7 +34,7 @@ If the package is installed locally or is found on the official NuGet website, i
 - **`--add-source|--nuget-source <SOURCE>`**
 
   By default, `dotnet new details` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source is added to the list of sources to be checked.
-  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
+  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
 [!INCLUDE [interactive](../../../includes/cli-interactive.md)]
 

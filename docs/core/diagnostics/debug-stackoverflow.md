@@ -49,7 +49,7 @@ Often just seeing this callstack on the console above is enough to identify the 
 
 This example creates a core dump when the StackOverflowException occurs, then loads the dump into [lldb](https://lldb.llvm.org/) (a common Linux command-line debugger) and debugs it.
 
-1. Run the app with it configured to collect a dump on crash
+1. Run the app with it configured to collect a dump on crash.
 
     ````
     > export DOTNET_DbgEnableMiniDump=1
@@ -61,7 +61,7 @@ This example creates a core dump when the StackOverflowException occurs, then lo
 
    [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
-2. Install the SOS extension using [dotnet-sos](dotnet-sos.md)
+2. Install the SOS extension using [dotnet-sos](dotnet-sos.md).
 
     ````
     dotnet-sos install
@@ -85,7 +85,7 @@ This example creates a core dump when the StackOverflowException occurs, then lo
     ...
     ````
 
-4. The top frame `0x00007f59b40900cc` is repeated several times. Use the [SOS](sos-debugging-extension.md) `ip2md` command to figure out what managed method is located at the `0x00007f59b40900cc` address
+4. The top frame `0x00007f59b40900cc` is repeated several times. Use the [SOS](sos-debugging-extension.md) `ip2md` command to figure out what managed method is located at the `0x00007f59b40900cc` address.
 
     ````
     (lldb) ip2md 0x00007f59b40900cc
@@ -120,7 +120,7 @@ The callstack debugger window also shows the stack.
 
 You can use all the normal Visual Studio debugger features to investigate each frame on the callstack, its source code, and the value of local variables.
 
-## See Also
+## See also
 
 * [An introduction to dumps in .NET](dumps.md)
 * [Debug Linux dumps](debug-linux-dumps.md)

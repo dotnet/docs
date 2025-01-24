@@ -244,7 +244,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use Github Copilot to customize property names and order
+## Use GitHub Copilot to customize property names and order
 
 You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
 

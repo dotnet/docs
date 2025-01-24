@@ -158,4 +158,4 @@ private static void ConfigureServices(IServiceCollection services)
 }
 ```
 
-For a second simple example showing further use of the placement context, refer to the `PreferLocalPlacementDirector` in the [Orleans source repo](https://github.com/dotnet/orleans/blob/main/src/Orleans.Runtime/Placement/PreferLocalPlacementDirector.cs)
+For a second simple example showing further use of the placement context, refer to the `PreferLocalPlacementDirector` in the [Orleans source repo](https://github.com/dotnet/orleans/blob/main/src/Orleans.Runtime/Placement/PreferLocalPlacementDirector.cs).

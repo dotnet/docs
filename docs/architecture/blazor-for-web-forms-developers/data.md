@@ -1,7 +1,7 @@
 ---
 title: Data access and management
 description: Learn how to access and handle data in ASP.NET Web Forms and Blazor.
-author: csharpfritz    
+author: csharpfritz
 ms.author: jefritz
 no-loc: [Blazor]
 ms.date: 04/11/2022
@@ -48,7 +48,7 @@ public class Product
 }
 ```
 
-Product has a primary key and three additional fields that would be created in our database:  
+Product has a primary key and three additional fields that would be created in our database:
 
 - EF will identify the `Id` property as a primary key by convention.
 - `Name` will be stored in a column configured for text storage. The `[Required]` attribute decorating this property will add a `not null` constraint to help enforce this declared behavior of the property.
@@ -105,9 +105,9 @@ When ASP.NET was first released, SOAP services were the preferred way for web se
 builder.Services.AddHttpClient("github", client =>
 {
     client.BaseAddress = new Uri("http://api.github.com/");
-    // Github API versioning
+    // GitHub API versioning
     client.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
-    // Github requires a user-agent
+    // GitHub requires a user-agent
     client.DefaultRequestHeaders.Add("User-Agent", "BlazorWebForms-Sample");
 });
 ```

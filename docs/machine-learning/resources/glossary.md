@@ -106,7 +106,7 @@ A feature extraction scheme for text data: any sequence of N words turns into a 
 
 ## Normalization
 
-Normalization is the process of scaling floating point data to values between 0 and 1. Many of the training algorithms used in ML.NET require input feature data to be normalized. ML.NET provides a series of [transforms for normalization](transforms.md#normalization-and-scaling)
+Normalization is the process of scaling floating point data to values between 0 and 1. Many of the training algorithms used in ML.NET require input feature data to be normalized. ML.NET provides a series of [transforms for normalization](transforms.md#normalization-and-scaling).
 
 ## Numerical feature vector
 

@@ -18,9 +18,11 @@ You add these attributes to your code for the compiler to emit specified Interme
 - <xref:System.Runtime.InteropServices.PreserveSigAttribute?displayProperty=fullName>: Specifies the IL `preservesig` modifier.
 - <xref:System.SerializableAttribute?displayProperty=fullName>: Specifies the IL `serializable` modifier.
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>: Specifies the IL `auto`, `sequential`, or `explicit` modifiers. Layout options can be set using the parameters.
+- <xref:System.Runtime.CompilerServices.IndexerNameAttribute?displayProperty=fullName>: You add this attribute to an indexer to set a different method name. By default, indexers are compiled to a property named `Item`. You can specify a different name using this attribute.
 
 Other custom attributes are generally applied using other C# syntax rather than adding the attribute to your source code.
 
 - <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute?displayProperty=fullName>: Specifies the default value for the parameter. Use the [default parameter syntax](../../methods.md#optional-parameters-and-arguments)
 - <xref:System.Runtime.InteropServices.InAttribute?displayProperty=fullName>: Specifies the IL `[in]` modifier. Use the [`in`](../keywords/method-parameters.md#in-parameter-modifier) or [`ref readonly`](../keywords/method-parameters.md#ref-readonly-modifier).
 - <xref:System.Runtime.CompilerServices.SpecialNameAttribute?displayProperty=fullName>: Specifies the IL `specialname` modifier. The compiler automatically uses the for methods that require the `specialname` modifier.
+- <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType>: This attribute is required for the `delegate*` feature. The compiler adds it to any [`delegate*`](../unsafe-code.md#function-pointers) requires its use.

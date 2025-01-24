@@ -138,7 +138,7 @@ The difference is that the compiler can take advantage of known information abou
 
 ## Experimental attribute
 
-Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types included in an assembly marked with the `Experimental` attribute are experimental. You can read more in the article on [General attributes read by the compiler](../language-reference/attributes/general.md#experimental-attribute), or the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
+Types, methods, or assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types included in an assembly marked with the `Experimental` attribute are experimental. You can read more in the article on [General attributes read by the compiler](../language-reference/attributes/general.md#experimental-attributes), or the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
 
 ## Interceptors
 

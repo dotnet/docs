@@ -10,7 +10,7 @@ There are several attributes that can be applied to elements in your code that a
 - [`Conditional`](#conditional-attribute): Make execution of a method dependent on a preprocessor identifier.
 - [`Obsolete`](#obsolete-and-deprecated-attribute): Mark a type or member for (potential) future removal.
 - [`Deprecated`](#obsolete-and-deprecated-attribute): (Windows Foundation) Mark a type or member for (potential) future removal.
-- [`Experimental`](#experimental-attribute): Mark a type or member as experimental.
+- [`Experimental`](#experimental-attributes): Mark a type or member as experimental.
 - [`SetsRequiredMembers`](#setsrequiredmembers-attribute): Indicate that a constructor sets all required properties.
 - [`AttributeUsage`](#attributeusage-attribute): Declare the language elements where an attribute can be applied.
 - [`AsyncMethodBuilder`](#asyncmethodbuilder-attribute): Declare an async method builder type.
@@ -72,7 +72,7 @@ The Windows Foundation Metadata libraries use the <xref:Windows.Foundation.Metad
 Beginning in C# 12, types, methods, and assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types declared in an assembly or module marked with the `Experimental` attribute are experimental. The compiler issues a warning if you access any of them. You can disable these warnings to pilot an experimental feature.
 
 > [!WARNING]
-> Experimental features are subject to changes. The APIs may change, or they may be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
+> Experimental features are subject to changes. The APIs can change, or they can be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
 
 You can read more details about the `Experimental` attribute in the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
 
@@ -255,11 +255,11 @@ All overloads with a lower priority than the highest overload priority are remov
 
 ## EnumeratorCancellation attribute
 
-This attributes specifies which parameter should receive the cancellation token from <xref:System.Collections.Generic.IAsyncEnumerable%2A1.GetAsyncEnumerator(System.Threading.CancellationToken)?displayProperty=nameWithType> API. It's part of the infrastructure for the [async streams](../../asynchronous-programming/generate-consume-asynchronous-stream.md) feature.
+The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?displayProperty=nameWithType> attribute specifies which parameter should receive the cancellation token from <xref:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)?displayProperty=fullName> API. It's part of the infrastructure for the [async streams](../../asynchronous-programming/generate-consume-asynchronous-stream.md) feature.
 
 ## CollectionBuilder attribute
 
-The <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType> specifies a method that builds an instance of a collection type from a [collection expression](../operators/collection-expressions.md). You use this attribute to specify a method that builds the collection. The compiler will generate code to call that method when a collection expression is converted to that type.
+The <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType> specifies a method that builds an instance of a collection type from a [collection expression](../operators/collection-expressions.md). You use this attribute to specify a method that builds the collection. The compiler generates code to call that method when a collection expression is converted to that type.
 
 ## InlineArray attribute
 

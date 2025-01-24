@@ -62,7 +62,7 @@ For information on this approach, see [Authenticate using Microsoft Entra ID](/d
 
 ## Understand when token lifetime and caching logic is needed
 
-If you use an Azure Identity library credential outside the context of [an Azure SDK client library that depends on Azure Core](../packages.md##libraries-using-azurecore), it becomes your responsibility to manage [token lifetime](/entra/identity-platform/access-tokens#token-lifetime) and caching behavior in your app.
+If you use an Azure Identity library credential outside the context of [an Azure SDK client library that depends on Azure Core](../packages.md#libraries-using-azurecore), it becomes your responsibility to manage [token lifetime](/entra/identity-platform/access-tokens#token-lifetime) and caching behavior in your app.
 
 The <xref:Azure.Core.AccessToken.RefreshOn%2A> property on `AccessToken`, which provides a hint to consumers as to when token refresh can be attempted, will be automatically used by Azure SDK client libraries that depend on the Azure Core library to refresh the token. For direct usage of Azure Identity library [credentials that support token caching](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md#credentials-supporting-token-caching), the underlying MSAL cache automatically refreshes proactively when the `RefreshOn` time occurs. This design allows the client code to call `GetToken` each time a token is needed and delegate the refresh to the library.
 

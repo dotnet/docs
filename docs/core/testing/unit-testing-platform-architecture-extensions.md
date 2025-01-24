@@ -453,7 +453,7 @@ The third attribute is `Properties`, which is a `PropertyBag` type. As demonstra
 
 ***The testing platform identifies specific properties added to a `TestNode.Properties` to determine whether a test has passed, failed, or been skipped.***
 
-You can find the current list of available properties with the relative description in the section [TestNodeUpdateMessage.TestNode](#the-testnodeupdatemessage-data)
+You can find the current list of available properties with the relative description in the section [TestNodeUpdateMessage.TestNode](#the-testnodeupdatemessage-data).
 
 The `PropertyBag` type is typically accessible in every `IData` and is utilized to store miscellaneous properties that can be queried by the platform and extensions. This mechanism allows us to enhance the platform with new information without introducing breaking changes. If a component recognizes the property, it can query it; otherwise, it will disregard it.
 

@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 # .NET runtime interop events
 
-These runtime events capture information about Common Intermediate Language (CIL) stub generation. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+These runtime events capture information about Common Intermediate Language (CIL) stub generation. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 ## ILStubGenerated event
 

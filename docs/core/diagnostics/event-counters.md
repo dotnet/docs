@@ -13,7 +13,7 @@ ms.date: 08/27/2024
 
 EventCounters are .NET APIs used for lightweight, cross-platform, and near real-time performance metric collection. EventCounters were added as a cross-platform alternative to the "performance counters" of .NET Framework on Windows. In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
 
-The .NET runtime and a few .NET libraries publish basic diagnostics information using EventCounters starting in .NET Core 3.0. Apart from the EventCounters that are provided by the .NET runtime, you may choose to implement your own EventCounters. EventCounters can be used to track various metrics. Learn more about them in [well-known EventCounters in .NET](available-counters.md)
+The .NET runtime and a few .NET libraries publish basic diagnostics information using EventCounters starting in .NET Core 3.0. Apart from the EventCounters that are provided by the .NET runtime, you may choose to implement your own EventCounters. EventCounters can be used to track various metrics. Learn more about them in [well-known EventCounters in .NET](available-counters.md).
 
 EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and [EventPipe](./eventpipe.md). This article focuses on the cross-platform capabilities of EventCounters, and intentionally excludes PerfView and ETW (Event Tracing for Windows) - although both can be used with EventCounters.
 
@@ -157,15 +157,15 @@ _requestRateCounter = new IncrementingPollingCounter("request-rate", this, () =>
 There are two primary ways of consuming EventCounters: in-proc and out-of-proc. The consumption of EventCounters can be distinguished into three layers of various consuming technologies.
 
 - Transporting events in a raw stream via ETW or EventPipe:
-  
+
   ETW APIs come with the Windows OS, and EventPipe is accessible as a [.NET API](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/diagnostics-client-library.md#1-attaching-to-a-process-and-dumping-out-all-the-runtime-gc-events-in-real-time-to-the-console), or the diagnostic [IPC protocol](https://github.com/dotnet/diagnostics/blob/main/documentation/design-docs/ipc-protocol.md).
 
 - Decoding the binary event stream into events:
-  
+
   The [TraceEvent library](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.TraceEvent) handles both ETW and EventPipe stream formats.
 
 - Command-line and GUI tools:
-  
+
   Tools like PerfView (ETW or EventPipe), dotnet-counters (EventPipe only), and dotnet-monitor (EventPipe only).
 
 ### Consume out-of-proc

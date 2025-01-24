@@ -2,9 +2,9 @@
 description: "Use the `interface` keyword to define contracts that any implementing type must support. Interfaces provide the means to create common behavior among a set of unrelated types."
 title: "interface keyword"
 ms.date: 07/26/2024
-f1_keywords: 
+f1_keywords:
   - "interface_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "interface keyword [C#]"
 ---
 # :::no-loc text="interface"::: (C# Reference)
@@ -87,7 +87,7 @@ The following example demonstrates interface implementation. In this example, th
 
 ## C# language specification
 
-For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), the feature specification for [C# 8 - Default interface members](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md), and the feature spec for [C# 11 - static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md)
+For more information, see the [Interfaces](~/_csharpstandard/standard/interfaces.md) section of the [C# language specification](~/_csharpstandard/standard/README.md), the feature specification for [C# 8 - Default interface members](~/_csharplang/proposals/csharp-8.0/default-interface-methods.md), and the feature spec for [C# 11 - static abstract members in interfaces](~/_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md).
 
 ## See also
 

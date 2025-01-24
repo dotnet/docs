@@ -14,7 +14,7 @@ ms.date: 04/15/2022
 ## Synopsis
 
 ```dotnetcli
-dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source <SOURCE>] [--force] 
+dotnet new install <PATH|NUGET_ID>  [--interactive] [--add-source|--nuget-source <SOURCE>] [--force]
     [-d|--diagnostics] [--verbosity <LEVEL>] [-h|--help]
 ```
 
@@ -52,9 +52,9 @@ Starting with .NET SDK 6.0.100, installed template packages are available in lat
 ## Options
 
 - **`--add-source|--nuget-source <SOURCE>`**
-  
-  By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.  
-  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior)
+
+  By default, `dotnet new install` uses the hierarchy of NuGet configuration files from the current directory to determine the NuGet source the package can be installed from. If `--nuget-source` is specified, the source will be added to the list of sources to be checked.
+  To check the configured sources for the current directory use [`dotnet nuget list source`](dotnet-nuget-list-source.md). For more information, see [Common NuGet Configurations](/nuget/consume-packages/configuring-nuget-behavior).
 
   > [!NOTE]
   > Following NuGet's [Https Everywhere](https://devblogs.microsoft.com/nuget/https-everywhere/) initiative, `dotnet new` is phasing out `http` feeds. If an `http` feed is passed, it isn't queried for packages and a warning is displayed. The `--force` option can be used to override this behavior if necessary.

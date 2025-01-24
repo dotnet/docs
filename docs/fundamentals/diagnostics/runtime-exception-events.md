@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 # .NET runtime exception events
 
-These runtime events capture information about exceptions that are thrown. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+These runtime events capture information about exceptions that are thrown. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 ## ExceptionThrown_V1 event
 

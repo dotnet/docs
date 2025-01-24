@@ -137,7 +137,7 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 * When code is incompatible with trimming, annotate it with `RequiresUnreferencedCode` and propagate this annotation to callers until the relevant public APIs are annotated.
 * Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using statically unanalyzable reflection in static constructors result in the warning propagating to all members of the class.
 * Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
-* If an API is mostly trim-incompatible, alternative coding approaches to the API might need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md)
+* If an API is mostly trim-incompatible, alternative coding approaches to the API might need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md).
 
 ## Resolve warnings for non-analyzable patterns
 

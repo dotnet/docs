@@ -17,7 +17,7 @@ When upgrading a .NET Framework app, you'll most likely have some incompatibilit
 
 ### Windows Compatibility Pack
 
-If after migration you have some dependencies on .NET Framework APIs that are not supported on your new version of .NET, you might find them in the [`Microsoft.Windows.Compatibility` NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility). It adds around 20,000 APIs to your .NET project, significantly increasing the API set available to your project. These APIs include Windows-only APIs such as those related to Windows Management Instrumentation (WMI) and the Windows EventLog. For more information, see [Use the Windows Compatibility Pack to port code to .NET](windows-compat-pack.md)
+If after migration you have some dependencies on .NET Framework APIs that are not supported on your new version of .NET, you might find them in the [`Microsoft.Windows.Compatibility` NuGet package](https://www.nuget.org/packages/Microsoft.Windows.Compatibility). It adds around 20,000 APIs to your .NET project, significantly increasing the API set available to your project. These APIs include Windows-only APIs such as those related to Windows Management Instrumentation (WMI) and the Windows EventLog. For more information, see [Use the Windows Compatibility Pack to port code to .NET](windows-compat-pack.md).
 
 ## Web browser control
 

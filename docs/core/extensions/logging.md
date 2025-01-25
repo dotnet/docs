@@ -93,7 +93,7 @@ The preceding example:
 
 ## Configure logging
 
-Logging configuration is set in code or via external sources, such as, config files and environment variables. Using external configuration is beneficial when possible because it can be changed without rebuilding the application. However, some tasks, such as setting logging providers, can only be configured from code.
+Logging configuration is set in code or via external sources, such as config files and environment variables. Using external configuration is beneficial when possible because it can be changed without rebuilding the application. However, some tasks, such as setting logging providers, can only be configured from code.
 
 ### Configure logging without code
 
@@ -141,7 +141,7 @@ Any logs below the minimum level are ***not***:
 
 To suppress all logs, specify [LogLevel.None](xref:Microsoft.Extensions.Logging.LogLevel). `LogLevel.None` has a value of 6, which is higher than `LogLevel.Critical` (5).
 
-If a provider supports [log scopes](#log-scopes), `IncludeScopes` indicates whether they're enabled. For more information, see [log scopes](#log-scopes)
+If a provider supports [log scopes](#log-scopes), `IncludeScopes` indicates whether they're enabled. For more information, see [log scopes](#log-scopes).
 
 The following *appsettings.json* file contains settings for all of the built-in providers:
 

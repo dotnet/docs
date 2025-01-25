@@ -2,11 +2,11 @@
 title: "Named and Optional Arguments"
 description: Named arguments in C# specify arguments by name, not position. Optional arguments can be omitted.
 ms.date: 03/14/2024
-f1_keywords: 
+f1_keywords:
   - "namedParameter_CSharpKeyword"
   - "optionalParameter_CSharpKeyword"
   - "cs_namedParameter"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "parameters [C#], named"
   - "named arguments [C#]"
   - "arguments [C#], named"
@@ -26,7 +26,7 @@ Named and optional parameters enable you to supply arguments for selected parame
 
 ## Named arguments
 
-Named arguments free you from matching the order of arguments to the order of parameters in the parameter lists of called methods. The argument for each parameter can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called by sending arguments by position, in the order defined by the function.
+Named arguments free you from matching the order of arguments to the order of parameters in the parameter lists of called methods. The argument for each parameter can be specified by parameter name. For example, a function that prints order details (such as seller name, order number, and product name) can be called by sending arguments by position, in the order defined by the function.
 
 ```csharp
 PrintOrderDetails("Gift Shop", 31, "Red Mug");
@@ -40,7 +40,7 @@ PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31)
 ```
 
 Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` can't be null or white space. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
-  
+
 Named arguments, when used with positional arguments, are valid as long as
 
 - they're not followed by any positional arguments, or
@@ -64,7 +64,7 @@ PrintOrderDetails(productName: "Red Mug", 31, "Gift Shop");
 
 ### Example
 
-The following code implements the examples from this section along with some additional ones.  
+The following code implements the examples from this section along with some additional ones.
 
 :::code language="csharp" source="./snippets/NamedAndOptional/program.cs" id="Snippet1":::
 
@@ -74,7 +74,7 @@ The definition of a method, constructor, indexer, or delegate can specify its pa
 
 Each optional parameter has a default value as part of its definition. If no argument is sent for that parameter, the default value is used. A default value must be one of the following types of expressions:
 
-- a constant expression;  
+- a constant expression;
 - an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/builtin-types/enum.md) or a [struct](../../language-reference/builtin-types/struct.md);
 - an expression of the form [default(ValType)](../../language-reference/operators/default.md),  where `ValType` is a value type.
 
@@ -128,15 +128,15 @@ However, you can greatly simplify the call to `AutoFormat` by using named and op
 :::code language="csharp" source="./snippets/NamedAndOptional/namedandoptcom.cs" id="Snippet13":::
 
 For more information and examples, see [How to use named and optional arguments in Office programming](../../advanced-topics/interop/how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../../advanced-topics/interop/how-to-access-office-interop-objects.md).
-  
+
 ## Overload resolution
 
 Use of named and optional arguments affects overload resolution in the following ways:
 
-- A method, indexer, or constructor is a candidate for execution if each of its parameters either is optional or corresponds, by name or by position, to a single argument in the calling statement, and that argument can be converted to the type of the parameter.  
+- A method, indexer, or constructor is a candidate for execution if each of its parameters either is optional or corresponds, by name or by position, to a single argument in the calling statement, and that argument can be converted to the type of the parameter.
 - If more than one candidate is found, overload resolution rules for preferred conversions are applied to the arguments that are explicitly specified. Omitted arguments for optional parameters are ignored.
 - If two candidates are judged to be equally good, preference goes to a candidate that doesn't have optional parameters for which arguments were omitted in the call. Overload resolution generally prefers candidates that have fewer parameters.
-  
+
 ## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]

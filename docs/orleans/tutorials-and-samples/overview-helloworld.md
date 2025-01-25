@@ -14,7 +14,7 @@ Creating an Orleans app involves configuring the silo, configuring the client, a
 ## Configure the silo
 
 Silos are configured programmatically via `SiloHostBuilder` and several supplemental option classes.
-A list of all of the options can be found [here.](../host/configuration-guide/list-of-options-classes.md)
+A list of all of the options can be found [here](../host/configuration-guide/list-of-options-classes.md).
 
 ```csharp
 static async Task<ISiloHost> StartSilo()
@@ -80,13 +80,13 @@ static async Task<IClusterClient> StartClientWithRetries()
 | `.UseLocalhostClustering()` | Same as for `SiloHost` |
 | `ClusterOptions`            | Same as for `SiloHost` |
 
-A more in-depth guide to configuring your client can be found [in the Client Configuration section of the Configuration Guide.](../host/configuration-guide/client-configuration.md)
+A more in-depth guide to configuring your client can be found [in the Client Configuration section of the Configuration Guide](../host/configuration-guide/client-configuration.md).
 
 ## Writing a grain
 
 Grains are the key primitives of the Orleans programming model. Grains are the building blocks of an Orleans application, they are atomic units of isolation, distribution, and persistence. Grains are objects that represent application entities. Just like in the classic Object-Oriented Programming, a grain encapsulates the state of an entity and encodes its behavior in the code logic. Grains can hold references to each other and interact by invoking each other's methods exposed via interfaces.
 
-You can read more about them in the [Core Concepts section of the Orleans documentation.](../grains/index.md)
+You can read more about them in the [Core Concepts section of the Orleans documentation](../grains/index.md).
 
 This is the main body of code for the Hello World grain:
 
@@ -103,7 +103,7 @@ public class HelloGrain : Orleans.Grain, IHello
 }
 ```
 
-A grain class implements one or more grain interfaces, as you can read [here, in the Grains section.](../grains/index.md)
+A grain class implements one or more grain interfaces. For more information, see the [Grains section](../grains/index.md).
 
 ```csharp
 namespace HelloWorld.Interfaces;

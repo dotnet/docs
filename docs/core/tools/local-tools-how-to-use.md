@@ -198,4 +198,4 @@ If you get an error message while following the tutorial, see [Troubleshoot .NET
 
 ## See also
 
-For more information, see [.NET tools](global-tools.md)
+For more information, see [.NET tools](global-tools.md).

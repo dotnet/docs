@@ -18,5 +18,5 @@ This is a reference for [metrics](metrics.md) built-in for .NET, produced using 
 
 ## Older metric APIs
 
-For built-in metrics produced by [alternative metric APIs](compare-metric-apis.md)
+For built-in metrics produced by [alternative metric APIs](compare-metric-apis.md),
 see the [EventCounters reference](available-counters.md) and [Windows Performance Counter reference](../../framework/debug-trace-profile/performance-counters.md).

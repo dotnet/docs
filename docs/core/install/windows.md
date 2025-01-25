@@ -395,7 +395,7 @@ Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the
     C:\Program Files\dotnet\dotnet.exe
     ```
 
-    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=)
+    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=).
 
 01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
 

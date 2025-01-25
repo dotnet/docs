@@ -57,7 +57,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 
  Programmatic access provides the ability to imitate, through code, any interaction and experience exposed by traditional mouse and keyboard input. UI Automation enables programmatic access through five components:
 
-- The UI Automation tree facilitates navigation through the structure of the UI. The tree is built from the collection of hWnd's. For more information, see [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- The UI Automation tree facilitates navigation through the structure of the UI. The tree is built from the collection of hWnd's. For more information, see [UI Automation Tree Overview](ui-automation-tree-overview.md).
 
 - Automation elements are individual components in the UI. These can often be more granular than an hWnd. For more information, see [UI Automation Control Types Overview](ui-automation-control-types-overview.md).
 

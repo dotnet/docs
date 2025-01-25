@@ -164,4 +164,4 @@ at k8s.KubernetesClientConfiguration.InClusterConfig()
 
 * Check that `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` environment variables are set inside your Pod.
 You can check by executing the following command `kubectl exec -it <pod_name> /bin/bash -c env`.
-* Ensure that `automountServiceAccountToken` set to **true** on your Kubernetes `deployment.yaml`. For more information, see [Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+* Ensure that `automountServiceAccountToken` set to **true** on your Kubernetes `deployment.yaml`. For more information, see [Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/).

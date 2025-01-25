@@ -53,7 +53,7 @@ The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the
 </Project>
 ```
 
-In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [.NET Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk)
+In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [.NET Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk).
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 

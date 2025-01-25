@@ -117,7 +117,7 @@ For training, AutoML provides a sweepable pipeline with default trainers and sea
 - <xref:Microsoft.ML.AutoML.AutoCatalog.MultiClassification%2A>
 - <xref:Microsoft.ML.AutoML.AutoCatalog.Regression%2A>
 
-For the taxi fare prediction problem, since the goal is to predict a numerical value, use `Regression`. For more information on choosing a task, see [Machine learning tasks in ML.NET](../resources/tasks.md)
+For the taxi fare prediction problem, since the goal is to predict a numerical value, use `Regression`. For more information on choosing a task, see [Machine learning tasks in ML.NET](../resources/tasks.md).
 
 ### Configure your experiment
 

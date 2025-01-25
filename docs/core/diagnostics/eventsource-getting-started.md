@@ -83,7 +83,7 @@ This demo shows an [EventPipe](./eventpipe.md) example for .NET Core apps. To le
 technology built into the .NET Core runtime to give .NET developers trace collection tools and a portable compact trace
 format (*.nettrace files). [dotnet-trace](./dotnet-trace.md) is a command-line tool that collects EventPipe traces.
 
-1. Download and Install [dotnet-trace](./dotnet-trace.md#install)
+1. Download and Install [dotnet-trace](./dotnet-trace.md#install).
 1. Build the console app above. This demo assumes the app is named EventSourceDemo.exe and it is in the current directory. At the command-line run:
 
 ```dotnetcli

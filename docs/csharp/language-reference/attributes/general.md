@@ -72,7 +72,7 @@ The Windows Foundation Metadata libraries use the <xref:Windows.Foundation.Metad
 Beginning in C# 12, types, methods, and assemblies can be marked with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute?displayProperty=nameWithType> to indicate an experimental feature. The compiler issues a warning if you access a method or type annotated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. All types declared in an assembly or module marked with the `Experimental` attribute are experimental. The compiler issues a warning if you access any of them. You can disable these warnings to pilot an experimental feature.
 
 > [!WARNING]
-> Experimental features are subject to changes. The APIs can change, or they can be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental.
+> Experimental features are subject to changes. The APIs can change, or they can be removed in future updates. Including experimental features is a way for library authors to get feedback on ideas and concepts for future development. Use extreme caution when using any feature marked as experimental. You can learn more about how APIs are marked as experimental in our article on [preview APIs](../../../fundamentals/runtime-libraries/preview-apis.md#experimentalattribute).
 
 You can read more details about the `Experimental` attribute in the [feature specification](~/_csharplang/proposals/csharp-12.0/experimental-attribute.md).
 

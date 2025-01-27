@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAzureClients(clientBuilder =>
 {
     clientBuilder.AddSecretClient(new Uri("<key-vault-url>"));
-    clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-uri>"));
+    clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-url>"));
 
     clientBuilder.UseCredential(new DefaultAzureCredential());
 });
@@ -23,7 +23,7 @@ ChainedTokenCredential credentialChain = new(
     new VisualStudioCredential());
 
 BlobServiceClient blobServiceClient = new(
-    new Uri("<blob-storage-uri>"),
+    new Uri("<blob-storage-url>"),
     credentialChain);
 
 SecretClient secretClient = new(

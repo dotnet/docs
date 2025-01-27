@@ -176,9 +176,7 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
 
 > [!NOTE]
-> When using `ContainerImageTags` or any MSBuild property that needs to configure `;` delimited values. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to understand the limitations of the environment's inability to disambiguate delimiters and quotations, thus requiring proper escaping. This differs between PowerShell and Bash. Consider the following `dotnet publish` command:
->
-> ### [PowerShell](#tab/powershell)
+> When using `ContainerImageTags` or any MSBuild property that needs to configure `;` delimited values. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to understand the limitations of the environment's inability to disambiguate delimiters and quotations, thus requiring proper escaping. This differs between PowerShell and Bash. Consider the following `dotnet publish` commands in their respective environments:
 >
 > ```powershell
 > dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=`"1.2.3-alpha2`;latest`"
@@ -186,16 +184,11 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 >
 > In PowerShell, both the `;` and `"` characters need to be escaped.
 >
->
-> ### [Bash](#tab/bash)
->
 > ```bash
 > dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=\"1.2.3-alpha2;latest\"
 > ```
 >
 > In Bash, only the `"` character needs to be escaped.
->
-> ---
 >
 > This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
 

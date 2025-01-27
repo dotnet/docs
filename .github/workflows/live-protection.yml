@@ -6,7 +6,7 @@ permissions:
 
 jobs:
   live_protection_job:
-    name: Check branch
+    name: Create comment
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner

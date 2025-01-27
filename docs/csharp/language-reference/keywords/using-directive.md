@@ -4,8 +4,10 @@ title: "The using directive: Import types from a namespace"
 ms.date: 11/24/2024
 f1_keywords:
   - "using_CSharpKeyword"
+  - "using-static_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
+  - "using static directive [C#]"
 ---
 # The `using` directive
 

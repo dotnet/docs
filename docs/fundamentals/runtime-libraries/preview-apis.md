@@ -1,7 +1,7 @@
 ---
 title: Preview APIs
 description: Learn how to mark .NET APIs as preview.
-ms.date: 4/4/2024
+ms.date: 01/27/2025
 ---
 
 # Preview APIs
@@ -10,7 +10,7 @@ The .NET platform takes compatibility seriously. As such, the library ecosystem 
 
 Nonetheless, when designing APIs, it's important to be able to collect feedback from users and make changes to the API based on that feedback if necessary. To avoid surprises, you should understand which APIs you use are considered stable and which ones are still in active development and might change.
 
-There are multiple ways an API can express to be in preview form:
+There are multiple ways an API can express that it's in preview form:
 
 * The entire component is considered preview if it's exposed:
 

@@ -8,8 +8,6 @@ jobs:
   live_protection_job:
     name: Create comment
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
 
     steps:
       - name: Harden Runner
@@ -19,14 +17,9 @@ jobs:
 
       - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
-          SHOULD_COMMENT: ${{ github.base_ref == 'live' && github.head_ref != 'main' }}
+          LIVE_BASE: ${{ github.base_ref == 'live' && github.head_ref != 'main' }}
         with:
           script: |
-            if (process.env.SHOULD_COMMENT == 'true') {
-              github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: 'It looks like this pull request was opened on the live branch by mistake. In general, PRs should target main.'
-              })
+            if (process.env.LIVE_BASE == 'true') {
+              core.setFailed('PR targets live branch')
             }

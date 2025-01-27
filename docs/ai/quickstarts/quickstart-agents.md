@@ -11,15 +11,33 @@ zone_pivot_groups: openai-library
 
 # Create a minimal AI assistant using .NET
 
-In this quickstart, you will learn how to create a basic AI assistant using the OpenAI or Azure OpenAI SDK libraries. AI assistants provide agentic functionality to help users complete tasks using AI tools and models. In the sections ahead, you'll learn the following:
+In this quickstart, you'll learn how to create a minimal AI assistant using the OpenAI or Azure OpenAI SDK libraries. AI assistants provide agentic functionality to help users complete tasks using AI tools and models. In the sections ahead, you'll learn the following:
 
 - Core components and concepts of AI assistants
 - How to create an assistant using the Azure OpenAI SDK
 - How to enhance and customize the capabilities of an assistant
 
+## Prerequisites
+
+::: zone pivot="openai"
+
+* [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
+* [Visual Studio Code](https://code.visualstudio.com/) (optional)
+* An access key for an OpenAI model
+
+:::zone-end
+
+::: zone pivot="azure-openai"
+
+* [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
+* [Visual Studio Code](https://code.visualstudio.com/) (optional)
+* Access to an Azure OpenAI instance via Azure Identity or an access key
+
+:::zone-end
+
 ## Core Components of AI Assistants
 
-AI assistants are based around conversational threads with a user. The user sends prompts to the assistant on a conversation thread, which directs the assistant to complete tasks using the tools it has available. Assistants can process and analyze data, make decisions, and interact with users or other systems to achieve specific goals. The most basic assistant includes the following components:
+AI assistants are based around conversational threads with a user. The user sends prompts to the assistant on a conversation thread, which directs the assistant to complete tasks using the tools it has available. Assistants can process and analyze data, make decisions, and interact with users or other systems to achieve specific goals. Most assistants include the following components:
 
 | **Component** | **Description** |
 |---|---|
@@ -31,20 +49,15 @@ AI assistants are based around conversational threads with a user. The user send
 
 Assistants can also be configured to use multiple tools in parallel to complete tasks, including the following:
 
-- **Code Interpreter Tool**: Writes and runs code in a sandboxed execution environment.
-- **Function Calling**: Runs local custom functions you define in your code.
-- **File Search Capabilities**: Augments the assistant with knowledge from outside its model.
+- **Code interpreter tool**: Writes and runs code in a sandboxed execution environment.
+- **Function calling**: Runs local custom functions you define in your code.
+- **File search capabilities**: Augments the assistant with knowledge from outside its model.
 
 By understanding these core components and how they interact, you can build and customize powerful AI assistants to meet your specific needs.
 
-## Prerequisites
-
-* [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
-* [Visual Studio Code](https://code.visualstudio.com/) (optional)
-
 ## Create the .NET app
 
-Complete the following steps to create a .NET AI assistant using a console app:
+Complete the following steps to create a .NET console app and add the package needed to work with assistants:
 
 ::: zone pivot="openai"
 
@@ -106,11 +119,11 @@ Complete the following steps to create a .NET AI assistant using a console app:
 
     :::code language="csharp" source="snippets/assistants/openai/program.cs" range="12-46" :::
 
-1. Enable file search and code interpreter tooling capabilities via the `AssistantClientOptions`:
+1. Enable file search and code interpreter tooling capabilities via the `AssistantCreationOptions`:
 
     :::code language="csharp" source="snippets/assistants/openai/program.cs" range="48-71" :::
 
-1. Create the `AssistantClient` and a thread to manage interactions between the user and the assistant:
+1. Create the `Assistant` and a thread to manage interactions between the user and the assistant:
 
     :::code language="csharp" source="snippets/assistants/openai/program.cs" range="73-98" :::
 

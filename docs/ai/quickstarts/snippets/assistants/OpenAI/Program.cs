@@ -3,12 +3,13 @@ using OpenAI.Assistants;
 using OpenAI.Files;
 using System.ClientModel;
 
+// Create the necessary clients
 OpenAIClient openAIClient = new("your-apy-key");
-
 #pragma warning disable OPENAI001
 AssistantClient assistantClient = openAIClient.GetAssistantClient();
 OpenAIFileClient fileClient = openAIClient.GetOpenAIFileClient();
 
+// Create an in-memory document to upload to the file client
 using Stream document = BinaryData.FromBytes("""
     {
         "description": "This document contains the sale history data for Contoso products.",
@@ -38,11 +39,13 @@ using Stream document = BinaryData.FromBytes("""
     }
     """u8.ToArray()).ToStream();
 
+// Upload the document to the file client
 OpenAIFile salesFile = fileClient.UploadFile(
     document,
     "monthly_sales.json",
     FileUploadPurpose.Assistants);
 
+// Configure the assistant options
 AssistantCreationOptions assistantOptions = new()
 {
     Name = "Example: Contoso sales RAG",
@@ -52,8 +55,8 @@ AssistantCreationOptions assistantOptions = new()
         + " the code interpreter tool to do so.",
     Tools =
     {
-        new FileSearchToolDefinition(),
-        new CodeInterpreterToolDefinition(),
+        new FileSearchToolDefinition(), // Enable the assistant to search and access files
+        new CodeInterpreterToolDefinition(), // Enable the assistant to run code for data analysis
     },
     ToolResources = new()
     {
@@ -67,8 +70,10 @@ AssistantCreationOptions assistantOptions = new()
     },
 };
 
+// Create the assistant
 Assistant assistant = assistantClient.CreateAssistant("gpt-4o", assistantOptions);
 
+// Configure and create the conversation thread
 ThreadCreationOptions threadOptions = new()
 {
     InitialMessages = { "How well did product 113045 sell in February? Graph its trend over time." }
@@ -76,6 +81,7 @@ ThreadCreationOptions threadOptions = new()
 
 ThreadRun threadRun = assistantClient.CreateThreadAndRun(assistant.Id, threadOptions);
 
+// Sent the prompt and monitor progress until the thread run is complete
 do
 {
     Thread.Sleep(TimeSpan.FromSeconds(1));
@@ -83,6 +89,7 @@ do
 }
 while (!threadRun.Status.IsTerminal);
 
+// Get the messages from the thread run
 var messages = assistantClient.GetMessagesAsync(
     threadRun.ThreadId,
     new MessageCollectionOptions()
@@ -92,6 +99,7 @@ var messages = assistantClient.GetMessagesAsync(
 
 await foreach (ThreadMessage message in messages)
 {
+    // Print out the messages from the assistant
     Console.Write($"[{message.Role.ToString().ToUpper()}]: ");
     foreach (MessageContent contentItem in message.Content)
     {
@@ -104,6 +112,7 @@ await foreach (ThreadMessage message in messages)
                 Console.WriteLine();
             }
 
+            // Include annotations, if any
             foreach (TextAnnotation annotation in contentItem.TextAnnotations)
             {
                 if (!string.IsNullOrEmpty(annotation.InputFileId))
@@ -116,6 +125,7 @@ await foreach (ThreadMessage message in messages)
                 }
             }
         }
+        // Save the generated image file
         if (!string.IsNullOrEmpty(contentItem.ImageFileId))
         {
             OpenAIFile imageInfo = fileClient.GetFile(contentItem.ImageFileId);

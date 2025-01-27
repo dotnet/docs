@@ -1,6 +1,6 @@
 ---
-title: Quickstart - Create a simple AI assistant using .NET
-description: Learn to create a basic AI assistant with tooling capabilities using .NET and the Azure OpenAI SDK libraries
+title: Quickstart - Create a minimal AI assistant using .NET
+description: Learn to create a minimal AI assistant with tooling capabilities using .NET and the Azure OpenAI SDK libraries
 ms.date: 01/25/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -9,9 +9,9 @@ ms.author: alexwolf
 zone_pivot_groups: openai-library
 ---
 
-# Chat with a Local AI Model Using .NET
+# Create a minimal AI assistant using .NET
 
-In this quickstart, you will learn how to create a basic AI assistant using the Azure OpenAI or OpenAI SDK libraries. AI assistants provide agentic functionality to help users complete tasks using AI tools and models. They can process and analyze data, make decisions, and interact with users or other systems to achieve specific goals. They also understand and respond to user inputs, providing valuable assistance and automating repetitive tasks. In the sections ahead, you'll learn the following:
+In this quickstart, you will learn how to create a basic AI assistant using the OpenAI or Azure OpenAI SDK libraries. AI assistants provide agentic functionality to help users complete tasks using AI tools and models. In the sections ahead, you'll learn the following:
 
 - Core components and concepts of AI assistants
 - How to create an assistant using the Azure OpenAI SDK
@@ -19,7 +19,7 @@ In this quickstart, you will learn how to create a basic AI assistant using the 
 
 ## Core Components of AI Assistants
 
-AI assistants are based around conversational threads with a user. The user sends prompts to the assistant on a conversation thread, which directs the assistant to complete tasks using the tools it has available. The most basic assistant includes the following components:
+AI assistants are based around conversational threads with a user. The user sends prompts to the assistant on a conversation thread, which directs the assistant to complete tasks using the tools it has available. Assistants can process and analyze data, make decisions, and interact with users or other systems to achieve specific goals. The most basic assistant includes the following components:
 
 | **Component** | **Description** |
 |---|---|
@@ -44,7 +44,7 @@ By understanding these core components and how they interact, you can build and 
 
 ## Create the .NET app
 
-Complete the following steps to create a .NET console app that will connect to your local `phi3:mini` AI model:
+Complete the following steps to create a .NET AI assistant using a console app:
 
 ::: zone pivot="openai"
 
@@ -92,61 +92,33 @@ Complete the following steps to create a .NET console app that will connect to y
 
 ## Create the AI Assistant client
 
-1. Open the _Program.cs_ file and replace the contents of the file with the following code:
+1. Open the _Program.cs_ file and replace the contents of the file with the following code to create the required clients:
 
     ::: zone pivot="openai"
     :::code language="csharp" source="snippets/assistants/openai/program.cs" range="0-10" :::
-
-    The preceding code:
-      - Creates an `OpenAIClient` to interact with OpenAI models and components
-      - Creates an `AssistantClient` to work with AI assistants
-      - Creates an `OpenAIFileClient` the assistant will use to work with files
     ::: zone-end
 
     ::: zone pivot="azure-openai"
     :::code language="csharp" source="snippets/assistants/azureopenai/program.cs" range="0-10" :::
-
-    The preceding code:
-      - Creates an `AzureOpenAIClient` to interact with OpenAI models and components
-      - Creates an `AssistantClient` to work with AI assistants
-      - Creates an `OpenAIFileClient` the assistant will use to work with files
     ::: zone-end
 
-1. Create an in-memory document and upload it to the `OpenAIFileClient`:
+1. Create an in-memory sample document and upload it to the `OpenAIFileClient`:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="12-44" :::
+    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="12-46" :::
 
-    The preceding code:
-    - Creates an in-memory document containing sample data.
-    - Uploads the document to the `OpenAIFileClient` for the assistant to access.
+1. Enable file search and code interpreter tooling capabilities via the `AssistantClientOptions`:
 
-1. Enable tooling capabilities via the `AssistantClientOptions`:
-
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="46-68" :::
-
-    The preceding code:
-    - Configures the `FileSearchToolDefinition` to enable the assistant to search and access files.
-    - Configures the `CodeInterpreterToolDefinition` to enable the assistant to run code for data analysis.
+    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="48-71" :::
 
 1. Create the `AssistantClient` and a thread to manage interactions between the user and the assistant:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="70-91" :::
+    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="73-98" :::
 
-    The preceding code:
-    - Initializes the `AssistantClient` with the configured options.
-    - Creates a conversation thread to manage interactions.
-    - Sends an initial prompt to the assistant to analyze and project sales data.
+1. Print the messages and save the generated image from the conversation with the assistant:
 
-1. Print and save the results from the conversation with the assistant:
+    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="100-140" :::
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="93-126" :::
-
-    The preceding code:
-    - Retrieves the results from the assistant's analysis.
-    - Prints the results to the console.
-    - Saves the generated graph image to the root directory of the app.
-
-    Locate and open the saved image in teh app bin directory, which should resemble the following:
+    Locate and open the saved image in the app bin directory, which should resemble the following:
 
     :::image type="content" source="../media/assistants/generated-sales-graph.png" alt-text="A graph showing the visualization generated by the AI model.":::
 

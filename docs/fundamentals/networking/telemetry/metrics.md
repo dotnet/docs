@@ -8,31 +8,31 @@ ms.date: 11/14/2023
 
 # Networking metrics in .NET
 
-[Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They are typically used to monitor the health of an app and generate alerts.
+[Metrics](../../../core/diagnostics/metrics.md) are numerical measurements reported over time. They're typically used to monitor the health of an app and generate alerts.
 
 Starting with .NET 8, the `System.Net.Http` and the `System.Net.NameResolution` components are instrumented to publish metrics using .NET's new [System.Diagnostics.Metrics API](../../../core/diagnostics/metrics.md).
 These metrics were designed in cooperation with [OpenTelemetry](https://opentelemetry.io/) to make sure they're consistent with the standard and work well with popular tools like [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/).
-They are also [multi-dimensional](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics), meaning that measurements are associated with key-value pairs called tags (a.k.a. attributes or labels) that allow data to be categorized for analysis.
+They're also [multi-dimensional](../../../core/diagnostics/metrics-instrumentation.md#multi-dimensional-metrics), meaning that measurements are associated with key-value pairs called tags (also known as attributes or labels). Tags enable the categorization of the measurement to help analysis.
 
 > [!TIP]
 > For a comprehensive list of all built-in instruments together with their attributes, see [System.Net metrics](../../../core/diagnostics/built-in-metrics-system-net.md).
 
-## Collecting System.Net metrics
+## Collect System.Net metrics
 
-In order to take advangage of the built-in metrics instrumentation, a .NET app needs to be configured to collect these metrics. This typically means transforming them for external storage and analysis, e.g., to monitoring systems.
+To take advantage of the built-in metrics instrumentation, a .NET app needs to be configured to collect these metrics. This typically means transforming them for external storage and analysis, for example, to monitoring systems.
 
-There are several ways of collecting networking metrics in .NET.
+There are several ways to collect networking metrics in .NET.
 
-- For a quick overview using a simple, self-contained example, see [collecting metrics with dotnet-counters](#collecting-metrics-with-dotnet-counters).
-- For **production-time** metrics collection and monitoring, you can use [Grafana with OpenTelemetry and Prometheus](#view-metrics-in-grafana-with-opentelemetry-and-prometheus) or [Azure Monitor  Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex, and may be inconvenient to use at development time.
-- For **development-time** metrics collection and troubleshooting we recommend to use [.NET Aspire](#collecting-metrics-with-net-aspire), which provides a simple, but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
-- It is also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration API-s into your ASP.NET project.
+- For a quick overview using a simple, self-contained example, see [collect metrics with dotnet-counters](#collect-metrics-with-dotnet-counters).
+- For **production-time** metrics collection and monitoring, you can use [Grafana with OpenTelemetry and Prometheus](#view-metrics-in-grafana-with-opentelemetry-and-prometheus) or [Azure Monitor  Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools might be inconvenient to use at development time because of their complexity.
+- For **development-time** metrics collection and troubleshooting we recommend using [.NET Aspire](#collect-metrics-with-net-aspire), which provides a simple, but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
+- It's also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration, which is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET project.
 
-### Collecting metrics with dotnet-counters
+### Collect metrics with dotnet-counters
 
 [`dotnet-counters`](../../../core/diagnostics/dotnet-counters.md) is a cross-platform command line tool for ad-hoc examination of .NET metrics and first-level performance investigation.
 
-For the sake of this tutorial, create a simple app that sends HTTP requests to various endpoints in parallel.
+For the sake of this tutorial, create an app that sends HTTP requests to various endpoints in parallel.
 
 ```dotnetcli
 dotnet new console -o HelloBuiltinMetrics
@@ -63,15 +63,15 @@ dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n 
 
 ![`dotnet-counters` output](media/dotnet-counters.png)
 
-### Collecting metrics with .NET Aspire
+### Collect metrics with .NET Aspire
 
-The simplest solution for collecting metrics for ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview) which is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET.
+The simplest solution to collect metrics in ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview) which is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET.
 
-The default project templates for .NET Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. The Service Defaults project is referenced and initialized by each service in a .NET Aspire solution.
+The default project templates for .NET Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. Each service in the .NET Aspire solution has a reference to the Service Defaults project.
 
-The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file.  For exporting telemetry .NET Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
+The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages. These instrumentation components are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file. .NET Aspire also includes the OTLP exporter by default, so that it can provide telemetry visualization using the Aspire Dashboard.
 
-The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be just as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you F5 the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
+The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you F5 the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
 
 #### Quick walkthrough
 
@@ -105,11 +105,11 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
 
 1. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`. Refresh the page several times to send multiple requests.
 
-1. Return to the Dashboard, navigate to the **Metrics** page and select the `webfrontend` resource. Srolling down, you should be able to browse the built-in `System.Net` metrics.
+1. Return to the Dashboard, navigate to the **Metrics** page and select the `webfrontend` resource. Scrolling down, you should be able to browse the built-in `System.Net` metrics.
 
     [![Networking metrics in Aspire Dashboard](media/aspire-metrics-thumb.png)](media/aspire-metrics.png#lightbox)
 
-For more details on .NET Aspire see:
+For more information on .NET Aspire, see:
 
 - [Aspire Overview](/dotnet/aspire/get-started/aspire-overview)
 - [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
@@ -155,12 +155,12 @@ Select **Apply** to save and view the new dashboard. It displays the number of a
 
 ## Enrichment
 
-*Enrichment* is the addition of custom tags (a.k.a. attributes or labels) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics.
+*Enrichment* is the addition of custom tags (also known as attributes or labels) to a metric. This is useful if an app wants to add a custom categorization to dashboards or alerts built with metrics.
 The [`http.client.request.duration`](../../../core/diagnostics/built-in-metrics-system-net.md#metric-httpclientrequestduration) instrument supports enrichment by registering callbacks with the <xref:System.Net.Http.Metrics.HttpMetricsEnrichmentContext>.
 Note that this is a low-level API and a separate callback registration is needed for each `HttpRequestMessage`.
 
 A simple way to do the callback registration at a single place is to implement a custom <xref:System.Net.Http.DelegatingHandler>.
-This will allow you to intercept and modify the requests before they are forwarded to the inner handler and sent to the server:
+This allows you to intercept and modify the requests before they're forwarded to the inner handler and sent to the server:
 
 :::code language="csharp" source="snippets/metrics/Program.cs" id="snippet_Enrichment":::
 
@@ -175,7 +175,7 @@ If you're working with [`IHttpClientFactory`](../../../core/extensions/httpclien
 ## `IMeterFactory` and `IHttpClientFactory` integration
 
 HTTP metrics were designed with isolation and testability in mind. These aspects are supported by the use of <xref:System.Diagnostics.Metrics.IMeterFactory>, which enables publishing metrics by a custom <xref:System.Diagnostics.Metrics.Meter> instance in order to keep Meters isolated from each other.
-By default, all metrics are emitted by a global <xref:System.Diagnostics.Metrics.Meter> internal to the `System.Net.Http` library. This behavior can be overriden by assigning a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance to <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType>.
+By default, a global <xref:System.Diagnostics.Metrics.Meter> is used to emit all metrics. This <xref:System.Diagnostics.Metrics.Meter> internal to the `System.Net.Http` library. This behavior can be overridden by assigning a custom <xref:System.Diagnostics.Metrics.IMeterFactory> instance to <xref:System.Net.Http.SocketsHttpHandler.MeterFactory?displayProperty=nameWithType> or <xref:System.Net.Http.HttpClientHandler.MeterFactory?displayProperty=nameWithType>.
 
 > [!NOTE]
 > The <xref:System.Diagnostics.Metrics.Meter.Name?displayProperty=nameWithType> is `System.Net.Http` for all metrics emitted by `HttpClientHandler` and `SocketsHttpHandler`.
@@ -183,7 +183,7 @@ By default, all metrics are emitted by a global <xref:System.Diagnostics.Metrics
 When working with [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/microsoft.extensions.http) and [`IHttpClientFactory`](../../../core/extensions/httpclient-factory.md) on .NET 8+, the default `IHttpClientFactory` implementation automatically picks the `IMeterFactory` instance registered in the <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection> and assigns it to the primary handler it creates internally.
 
 > [!NOTE]
-> Starting with .NET 8, the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> method automatically calls <xref:Microsoft.Extensions.DependencyInjection.MetricsServiceExtensions.AddMetrics%2A> to initialize the metrics services and register the default <xref:System.Diagnostics.Metrics.IMeterFactory> implementation with <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The default <xref:System.Diagnostics.Metrics.IMeterFactory> caches <xref:System.Diagnostics.Metrics.Meter> instances by name, meaning that there will be one <xref:System.Diagnostics.Metrics.Meter> with the name `System.Net.Http` per <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>.
+> Starting with .NET 8, the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> method automatically calls <xref:Microsoft.Extensions.DependencyInjection.MetricsServiceExtensions.AddMetrics%2A> to initialize the metrics services and register the default <xref:System.Diagnostics.Metrics.IMeterFactory> implementation with <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The default <xref:System.Diagnostics.Metrics.IMeterFactory> caches <xref:System.Diagnostics.Metrics.Meter> instances by name, meaning that there's one <xref:System.Diagnostics.Metrics.Meter> with the name `System.Net.Http` per <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>.
 
 ### Test metrics
 
@@ -197,7 +197,7 @@ Metrics are [more feature-rich](../../../core/diagnostics/compare-metric-apis.md
 
 Nevertheless, as of .NET 8, only the `System.Net.Http` and the `System.Net.NameResolutions` components are instrumented using Metrics, meaning that if you need counters from the lower levels of the stack such as `System.Net.Sockets` or `System.Net.Security`, you must use EventCounters.
 
-Moreover, there are some semantical differences between Metrics and their matching EventCounters.
+Moreover, there are some semantic differences between Metrics and their matching EventCounters.
 For example, when using `HttpCompletionOption.ResponseContentRead`, the [`current-requests` EventCounter](../../../core/diagnostics/available-counters.md) considers a request to be active until the moment when the last byte of the request body has been read.
 Its metrics counterpart [`http.client.active_requests`](../../../core/diagnostics/built-in-metrics-system-net.md#metric-httpclientactive_requests) doesn't include the time spent reading the response body when counting the active requests.
 

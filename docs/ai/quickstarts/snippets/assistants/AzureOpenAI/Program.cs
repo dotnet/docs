@@ -6,7 +6,7 @@ using OpenAI.Files;
 AzureOpenAIClient openAIClient = new(new Uri("your-azure-openai-endpoint"), new DefaultAzureCredential());
 OpenAIFileClient fileClient = openAIClient.GetOpenAIFileClient();
 
-#pragma warning disable OPENAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+#pragma warning disable OPENAI001
 AssistantClient assistantClient = openAIClient.GetAssistantClient();
 
 using Stream document = BinaryData.FromBytes("""
@@ -82,7 +82,12 @@ do
 }
 while (!threadRun.Status.IsTerminal);
 
-var messages = assistantClient.GetMessagesAsync(threadRun.ThreadId, new MessageCollectionOptions() { Order = MessageCollectionOrder.Ascending });
+var messages = assistantClient.GetMessagesAsync(
+    threadRun.ThreadId,
+    new MessageCollectionOptions()
+    { 
+        Order = MessageCollectionOrder.Ascending
+    });
 
 await foreach (ThreadMessage message in messages)
 {
@@ -98,7 +103,6 @@ await foreach (ThreadMessage message in messages)
                 Console.WriteLine();
             }
 
-            // Include annotations, if any.
             foreach (TextAnnotation annotation in contentItem.TextAnnotations)
             {
                 if (!string.IsNullOrEmpty(annotation.InputFileId))

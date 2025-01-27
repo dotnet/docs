@@ -57,7 +57,7 @@ Complete the following steps to create a .NET console app that will connect to y
 1. Add the [OpenAI](https://www.nuget.org/packages/OpenAI) package to your app:
 
     ```dotnetcli
-    dotnet add packageOpenAI --prerelease
+    dotnet add package OpenAI --prerelease
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -94,12 +94,23 @@ Complete the following steps to create a .NET console app that will connect to y
 
 1. Open the _Program.cs_ file and replace the contents of the file with the following code:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="6-10" :::
+    ::: zone pivot="openai"
+    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="0-10" :::
 
     The preceding code:
       - Creates an `OpenAIClient` to interact with OpenAI models and components
       - Creates an `AssistantClient` to work with AI assistants
       - Creates an `OpenAIFileClient` the assistant will use to work with files
+    ::: zone-end
+
+    ::: zone pivot="azure-openai"
+    :::code language="csharp" source="snippets/assistants/azureopenai/program.cs" range="0-10" :::
+
+    The preceding code:
+      - Creates an `AzureOpenAIClient` to interact with OpenAI models and components
+      - Creates an `AssistantClient` to work with AI assistants
+      - Creates an `OpenAIFileClient` the assistant will use to work with files
+    ::: zone-end
 
 1. Create an in-memory document and upload it to the `OpenAIFileClient`:
 
@@ -119,7 +130,7 @@ Complete the following steps to create a .NET console app that will connect to y
 
 1. Create the `AssistantClient` and a thread to manage interactions between the user and the assistant:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="70-86" :::
+    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="70-91" :::
 
     The preceding code:
     - Initializes the `AssistantClient` with the configured options.
@@ -128,7 +139,7 @@ Complete the following steps to create a .NET console app that will connect to y
 
 1. Print and save the results from the conversation with the assistant:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="88-126" :::
+    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="93-126" :::
 
     The preceding code:
     - Retrieves the results from the assistant's analysis.

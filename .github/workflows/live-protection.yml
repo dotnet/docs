@@ -8,6 +8,9 @@ jobs:
   live_protection_job:
     name: Create comment
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@cb605e52c26070c328afc4562f0b4ada7618a84e # v2.10.4

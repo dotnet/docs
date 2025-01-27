@@ -4,7 +4,8 @@ permissions:
   contents: read
 
 jobs:
-  comment:
+  live_protection_job:
+    name: Prevent unintended merge to live
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
@@ -14,7 +15,7 @@ jobs:
 
       - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
-          SHOULD_COMMENT: ${{ github.base_ref == 'refs/heads/live' && !(github.event.issue.user.login == 'cxwtool' || github.head_ref == 'refs/heads/main') }}
+          SHOULD_COMMENT: ${{ github.base_ref == 'live' && github.head_ref != 'main' }}
         with:
           script: |
             if (process.env.SHOULD_COMMENT == 'true') {
@@ -22,6 +23,6 @@ jobs:
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: 'It looks like this pull request may have been opened on the `live` branch by mistake. In general, PRs should target the `main` branch.'
+                body: 'It looks like this pull request was opened on the `live` branch by mistake. In general, PRs should target the `main` branch.'
               })
             }

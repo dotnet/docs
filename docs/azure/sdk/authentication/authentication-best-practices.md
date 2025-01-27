@@ -2,7 +2,7 @@
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
 ms.topic: conceptual
-ms.date: 01/15/2025
+ms.date: 01/24/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -25,7 +25,7 @@ For example, consider the following hypothetical sequence of events:
 To prevent these types of subtle issues or silent failures in production apps, strongly consider moving from `DefaultAzureCredential` to one of the following deterministic solutions:
 
 - A specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
-- A pared-down `ChainedTokenCredential` implementation optimized for the Azure environment in which your app runs. `ChainedTokenCredential` essentially creates a specific allow-list of acceptable credential options, such as `ManagedIdentity` for production and `VisualStudioCredential` for development.
+- A pared-down `ChainedTokenCredential` implementation optimized for the Azure environment in which your app runs. `ChainedTokenCredential` essentially creates a specific allowlist of acceptable credential options, such as `ManagedIdentity` for production and `VisualStudioCredential` for development.
 
 For example, consider the following `DefaultAzureCredential` configuration in an ASP.NET Core project:
 
@@ -60,13 +60,21 @@ For information on this approach, see [Authenticate using Microsoft Entra ID](/d
 
 ---
 
+## Understand when token lifetime and caching logic is needed
+
+If you use an Azure Identity library credential outside the context of [an Azure SDK client library that depends on Azure Core](../packages.md#libraries-using-azurecore), it becomes your responsibility to manage [token lifetime](/entra/identity-platform/access-tokens#token-lifetime) and caching behavior in your app.
+
+The <xref:Azure.Core.AccessToken.RefreshOn%2A> property on `AccessToken`, which provides a hint to consumers as to when token refresh can be attempted, will be automatically used by Azure SDK client libraries that depend on the Azure Core library to refresh the token. For direct usage of Azure Identity library [credentials that support token caching](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/samples/TokenCache.md#credentials-supporting-token-caching), the underlying MSAL cache automatically refreshes proactively when the `RefreshOn` time occurs. This design allows the client code to call `GetToken` each time a token is needed and delegate the refresh to the library.
+
+To only call `GetToken` when necessary, observe the `RefreshOn` date and proactively attempt to refresh the token after that time. The specific implementation is up to the customer.
+
 ## Understand the managed identity retry strategy
 
 The Azure Identity library for .NET allows you to authenticate via managed identity with `ManagedIdentityCredential`. The way in which you use `ManagedIdentityCredential` impacts the applied retry strategy. When used via:
 
-- `DefaultAzureCredential`, no retries are attempted when the initial token acquisition attempt fails or times out after a short duration. This is the least resilient option because it is optimized to "fail fast" for an efficient development inner-loop.
+- `DefaultAzureCredential`, no retries are attempted when the initial token acquisition attempt fails or times out after a short duration. This is the least resilient option because it's optimized to "fail fast" for an efficient development inner loop.
 - Any other approach, such as `ChainedTokenCredential` or `ManagedIdentityCredential` directly:
-  - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted, by default. This option is optimized for resilience but introduces potentially unwanted delays in the development inner-loop.
+  - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted, by default. This option is optimized for resilience but introduces potentially unwanted delays in the development inner loop.
   - To change any of the default retry settings, use the `Retry` property on `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 
     :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_retries" highlight="5-9" :::

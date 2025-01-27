@@ -207,6 +207,7 @@ For more information, see [Implement a custom logging provider in .NET](custom-l
 Here are some third-party logging frameworks that work with various .NET workloads:
 
 - [elmah.io](https://elmah.io) ([GitHub repo](https://github.com/elmahio/Elmah.Io.Extensions.Logging))
+- [EFLogger](https://github.com/msmolka/ZNetCS.AspNetCore.Logging.EntityFrameworkCore/blob/master/README.md) ([GitHub repo](https://github.com/msmolka/ZNetCS.AspNetCore.Logging.EntityFrameworkCore))
 - [Gelf](https://go2docs.graylog.org/5-0/getting_in_log_data/ingest_gelf.html) ([GitHub repo](https://github.com/mattwcole/gelf-extensions-logging))
 - [JSNLog](http://jsnlog.com) ([GitHub repo](https://github.com/mperdeck/jsnlog))
 - [KissLog.net](https://kisslog.net) ([GitHub repo](https://github.com/catalingavan/KissLog-net))

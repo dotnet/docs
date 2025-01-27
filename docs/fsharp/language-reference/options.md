@@ -73,6 +73,7 @@ let defaultString = optionString |> Option.defaultValue ""
 let optionInt = None
 let defaultInt = optionInt |> Option.defaultValue 0
 // defaultInt is 0
+```
 
 The `Option.defaultValue` function allows you to handle both `Some` and `None` cases seamlessly without pattern matching.
 

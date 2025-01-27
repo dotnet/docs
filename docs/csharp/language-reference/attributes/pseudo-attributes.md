@@ -5,13 +5,13 @@ description: "Learn about attributes you can add to code that are written to IL 
 ---
 # Custom attributes that generate flags or options in the Intermediate Language (IL) output
 
-You add these attributes to your code for the compiler to emit specified Intermediate Language (IL) modifier. These attributes instruct the compiler to include the corresponding IL modifier in the output. These IL modifiers can be controlled in C# using these attributes:
+You add these attributes to your code for the compiler to emit a specified Intermediate Language (IL) modifier. These attributes instruct the compiler to include the corresponding IL modifier in the output.
 
 - <xref:System.Runtime.InteropServices.ComImportAttribute?displayProperty=fullName>: Specifies the `import` modifier.
 - <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>: Specifies the `pinvokeimpl` modifier. You can add options listed in the constructor.
 - <xref:System.Runtime.InteropServices.FieldOffsetAttribute?displayProperty=fullName>: Specifies the `.field` offset modifier.
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>: Specifies the IL `marshal` modifier. You can set options listed in the constructor.
-4- <xref:System.Runtime.CompilerServices.MethodImplAttribute?displayProperty=fullName>: maps to the IL `flag` modifier. Constructor arguments specify specific named flags such as `aggressiveinlining` or `forwardref`. These flags also specify the `native`, `managed`, or `optil` modifiers for the <xref:System.Runtime.CompilerServices.MethodCodeType?displayProperty=fullName> field.
+4- <xref:System.Runtime.CompilerServices.MethodImplAttribute?displayProperty=fullName>: Maps to the IL `flag` modifier. Constructor arguments specify specific named flags such as `aggressiveinlining` or `forwardref`. These flags also specify the `native`, `managed`, or `optil` modifiers for the <xref:System.Runtime.CompilerServices.MethodCodeType?displayProperty=fullName> field.
 - <xref:System.NonSerializedAttribute?displayProperty=fullName>: Specifies the IL `notserialized` modifier.
 - <xref:System.Runtime.InteropServices.OptionalAttribute?displayProperty=fullName>: Specifies the IL `[opt]` modifier.
 - <xref:System.Runtime.InteropServices.OutAttribute?displayProperty=fullName>: Specifies the IL `[out]` modifier.
@@ -22,10 +22,10 @@ You add these attributes to your code for the compiler to emit specified Interme
 
 Some of these custom attributes are applied using other C# syntax rather than adding the attribute to your source code.
 
-- <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute?displayProperty=fullName>: Specifies the default value for the parameter. Use the [default parameter syntax](../../methods.md#optional-parameters-and-arguments)
+- <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute?displayProperty=fullName>: Specifies the default value for the parameter. Use the [default parameter syntax](../../methods.md#optional-parameters-and-arguments).
 - <xref:System.Runtime.InteropServices.InAttribute?displayProperty=fullName>: Specifies the IL `[in]` modifier. Use the [`in`](../keywords/method-parameters.md#in-parameter-modifier) or [`ref readonly`](../keywords/method-parameters.md#ref-readonly-modifier).
 - <xref:System.Runtime.CompilerServices.SpecialNameAttribute?displayProperty=fullName>: Specifies the IL `specialname` modifier. The compiler automatically uses the for methods that require the `specialname` modifier.
-- <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType>: This attribute is required for the `delegate*` feature. The compiler adds it to any [`delegate*`](../unsafe-code.md#function-pointers) requires its use.
+- <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType>: This attribute is required for the `delegate*` feature. The compiler adds it to any [`delegate*`](../unsafe-code.md#function-pointers) that requires its use.
 
 The following custom attributes are generally disallowed in C# source. They're listed here to aid library authors who use reflection, and to ensure you don't create custom attributes with the same name.
 
@@ -41,7 +41,7 @@ The following custom attributes are generally disallowed in C# source. They're l
 - <xref:System.Runtime.CompilerServices.IsUnmanagedAttribute?displayProperty=fullName> - This attribute specifies the `unmanaged` constraint on a type parameter.
 - <xref:System.Runtime.CompilerServices.NullableAttribute?displayProperty=fullName>, <xref:System.Runtime.CompilerServices.NullableContextAttribute?displayProperty=fullName>, <xref:System.Runtime.CompilerServices.NullablePublicOnlyAttribute?displayProperty=fullName>: These attributes encode nullable annotations in your source code.
 - <xref:System.ParamArrayAttribute?displayProperty=fullName>: This attribute encodes the `params` modifier on array parameters.
-- <xref:System.Runtime.CompilerServices.ParamCollectionAttribute?displayProperty=fullName> This attribute encodes the `params` on non-array parameters.
+- <xref:System.Runtime.CompilerServices.ParamCollectionAttribute?displayProperty=fullName> This attribute encodes the `params` modifier on non-array parameters.
 - <xref:System.Runtime.CompilerServices.RefSafetyRulesAttribute?displayProperty=fullName>: This attribute specifies the C# version that is required in order to understand ref safety annotations in the assembly. Ref safety rules evolve as C# gets new features.
 - <xref:System.Runtime.CompilerServices.RequiredMemberAttribute?displayProperty=fullName>: This attribute indicates that the `required` modifier was placed on a member declaration. It's the encoding of the [required members](../keywords/required.md) language feature.
 - <xref:System.Runtime.CompilerServices.TupleElementNamesAttribute?displayProperty=fullName>: This attribute encodes tuple element names used in signatures.

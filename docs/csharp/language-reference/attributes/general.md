@@ -255,11 +255,11 @@ All overloads with a lower priority than the highest overload priority are remov
 
 ## EnumeratorCancellation attribute
 
-The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?displayProperty=nameWithType> attribute specifies which parameter should receive the cancellation token from <xref:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)?displayProperty=fullName> API. It's part of the infrastructure for the [async streams](../../asynchronous-programming/generate-consume-asynchronous-stream.md) feature.
+The <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute?displayProperty=nameWithType> attribute specifies which parameter should receive the cancellation token from the <xref:System.Collections.Generic.IAsyncEnumerable`1.GetAsyncEnumerator(System.Threading.CancellationToken)?displayProperty=fullName> API. It's part of the infrastructure for the [async streams](../../asynchronous-programming/generate-consume-asynchronous-stream.md) feature.
 
 ## CollectionBuilder attribute
 
-The <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType> specifies a method that builds an instance of a collection type from a [collection expression](../operators/collection-expressions.md). You use this attribute to specify a method that builds the collection. The compiler generates code to call that method when a collection expression is converted to that type.
+The <xref:System.Runtime.CompilerServices.CollectionBuilderAttribute?displayProperty=nameWithType> attribute specifies a method that builds an instance of a collection type from a [collection expression](../operators/collection-expressions.md). You use this attribute to specify a method that builds the collection. The compiler generates code to call that method when a collection expression is converted to that type.
 
 ## InlineArray attribute
 

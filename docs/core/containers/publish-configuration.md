@@ -2,7 +2,7 @@
 title: Containerize a .NET app reference
 description: Reference material for containerizing a .NET app and configuring the container image.
 ms.topic: reference
-ms.date: 01/07/2025
+ms.date: 01/27/2025
 ---
 
 # Containerize a .NET app reference
@@ -176,11 +176,26 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
 
 > [!NOTE]
-> When using `ContainerImageTags`, the tags are delimited by a `;` character. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to outer wrap the values in a single `'` and inner wrap with double quotes `"`, for example (`='"tag-1;tag-2"'`). Consider the following `dotnet publish` command:
+> When using `ContainerImageTags` or any MSBuild property that needs to configure `;` delimited values. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to understand the limitations of the environment's inability to disambiguate delimiters and quotations, thus requiring proper escaping. This differs between PowerShell and Bash. Consider the following `dotnet publish` command:
 >
-> ```dotnetcli
-> dotnet publish -p ContainerImageTags='"1.2.3-alpha2;latest"'
+> ### [PowerShell](#tab/powershell)
+>
+> ```powershell
+> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=`"1.2.3-alpha2`;latest`"
 > ```
+>
+> In PowerShell, both the `;` and `"` characters need to be escaped.
+>
+>
+> ### [Bash](#tab/bash)
+>
+> ```bash
+> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=\"1.2.3-alpha2;latest\"
+> ```
+>
+> In Bash, only the `"` character needs to be escaped.
+>
+> ---
 >
 > This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
 

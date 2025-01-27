@@ -75,7 +75,7 @@ class Program
         {
             Console.WriteLine($"Observation description: {observation.Annotation}");
         }
-        // <NotNullPropertyPattern>
+        // </NotNullPropertyPattern>
     }
 
     // <Observation>

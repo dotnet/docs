@@ -1,3 +1,4 @@
+name: Base branch checker
 on: [pull_request]
 
 permissions:
@@ -5,7 +6,7 @@ permissions:
 
 jobs:
   live_protection_job:
-    name: Prevent unintended merge to live
+    name: Create comment
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
@@ -19,10 +20,10 @@ jobs:
         with:
           script: |
             if (process.env.SHOULD_COMMENT == 'true') {
-              github.issues.createComment({
+              github.rest.issues.createComment({
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: 'It looks like this pull request was opened on the `live` branch by mistake. In general, PRs should target the `main` branch.'
+                body: 'It looks like this pull request was opened on the live branch by mistake. In general, PRs should target main.'
               })
             }

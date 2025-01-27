@@ -48,7 +48,7 @@ As an example, in .NET 6 the *generic math* library was marked with <xref:System
 
 .NET 8 added <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>, which doesn't require any runtime or language preview features and simply indicates that a given API isn't stable yet.
 
-When building against an experimental API, the compiler produces an error. Each feature that's marked as experimental has its own separate diagnostic ID. To express consent to using an experimental API, you suppress the specific diagnostic. You can do that via any of the means for suppressing diagnostics, but the recommended way is to add the diagnostic to the project's `<NoWarn>` property. The C# compiler 
+When building against an experimental API, the compiler produces an error. Each feature that's marked as experimental has its own separate diagnostic ID. To express consent to using an experimental API, you suppress the specific diagnostic. You can do that via any of the means for suppressing diagnostics, but the recommended way is to add the diagnostic to the project's `<NoWarn>` property.
 
 Since each experimental feature has a separate ID, consenting to using one experimental feature doesn't consent to using another.
 

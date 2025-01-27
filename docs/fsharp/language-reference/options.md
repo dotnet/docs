@@ -61,6 +61,22 @@ The option module also includes functions that correspond to the functions that 
 
 Options can be converted to lists or arrays. When an option is converted into either of these data structures, the resulting data structure has zero or one element. To convert an option to an array, use [`Option.toArray`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#toArray). To convert an option to a list, use [`Option.toList`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-optionmodule.html#toList).
 
+### Converting Options with Default Values
+
+In addition to converting to lists and arrays, options can be converted to other types by providing default values using the `Option.defaultValue` function. This is particularly useful when you want to ensure that the value is not `None`. For example:
+
+```fsharp
+let optionString = Some("F#")
+let defaultString = optionString |> Option.defaultValue ""
+// defaultString is "F#"
+
+let optionInt = None
+let defaultInt = optionInt |> Option.defaultValue 0
+// defaultInt is 0
+```
+
+The `Option.defaultValue` function allows you to handle both `Some` and `None` cases seamlessly without pattern matching.
+
 ## See also
 
 - [F# Language Reference](index.md)

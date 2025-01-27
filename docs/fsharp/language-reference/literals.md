@@ -48,6 +48,13 @@ let x = "a" + "b" // evaluated at run-time
 let y = "a" + "b" // evaluated at compile-time
 ```
 
+> [!NOTE]
+> Functions cannot be used to compute [<Literal>] values because literals must be determined at compile-time and cannot depend on runtime evaluation.
+
+### Why functions cannot compute literals
+
+The `[<Literal>]` attribute requires values to be known at compile-time. Functions, even if they seem to produce constant outputs, are evaluated at runtime, making them unsuitable for `[<Literal>]`. This restriction ensures that literals can be safely used in scenarios like pattern matching, attribute arguments, and interop with external functions.
+
 For example, this distinction matters when calling an [external function](functions/external-functions.md), because `DllImport` is an attribute that needs to know the value of `myDLL` during compilation. Without the `[<Literal>]` declaration, this code would fail to compile:
 
 ```fsharp
@@ -75,6 +82,20 @@ let Literal2 = 1 ||| 64
 
 [<Literal>]
 let Literal3 = System.IO.FileAccess.Read ||| System.IO.FileAccess.Write
+```
+
+### Example of concise pattern matching using Named literals
+
+Named literals can make pattern matching more concise by avoiding the need for `when` clauses or additional logic. For example:
+
+```fsharp
+[<Literal>]
+let ErrorCode = 404
+
+let handleResponse code =
+    match code with
+    | ErrorCode -> "Not Found"
+    | _ -> "Other Response"
 ```
 
 ## Remarks

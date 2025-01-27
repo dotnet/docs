@@ -52,7 +52,7 @@ When building against an experimental API, the compiler produces an error. Each 
 
 Since each experimental feature has a separate ID, consenting to using one experimental feature doesn't consent to using another.
 
-For more information, see [Experimental features][experimental-overview].
+For more information, see [Experimental features][experimental-overview] and the article in the C# guide on [general attributes](../../csharp/language-reference/attributes/general.md#experimental-attributes).
 
 ## Guidance for library developers
 

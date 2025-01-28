@@ -24,6 +24,9 @@ A <xref:System.Collections.Generic.Dictionary%602> contains a collection of key/
 > <xref:System.Collections.Generic.Dictionary%602.Add%2A> method will throw <xref:System.ArgumentException>: `'An item with the same key has already been added. Key: 111'`,
 > while the second part of example, the public read / write indexer method, will quietly overwrite the already existing entry with the same key.
 
+> [!TIP]
+> You can use AI assistance to [initialize a dictionary with GitHub Copilot](#use-github-copilot-to-initialize-a-dictionary).
+
 ## Example
 
 In the following code example, a <xref:System.Collections.Generic.Dictionary%602> is initialized with instances of type `StudentName`. The first initialization uses the `Add` method with two arguments. The compiler generates a call to `Add` for each of the pairs of `int` keys and `StudentName` values. The second uses a public read / write indexer method of the `Dictionary` class:

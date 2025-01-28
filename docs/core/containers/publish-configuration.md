@@ -98,7 +98,7 @@ The preceding project configuration results in a final tag of `8.0-alpine` for a
 
 This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. This field is ignored when `ContainerBaseImage` is set. For more information, see [.NET container images](../docker/container-images.md).
 
-### `ContainerRuntimeIdentifier`
+### `ContainerRuntimeIdentifier(s)`
 
 The `ContainerRuntimeIdentifier` property specifies the OS and architecture for your container if the `ContainerBaseImage` supports multiple platforms. For example, the `mcr.microsoft.com/dotnet/runtime` image supports `linux-x64`, `linux-arm`, `linux-arm64`, and `win10-x64`. By default, this is set to the `RuntimeIdentifier` used when publishing the container. Typically, you don't need to set this property explicitly; instead, use the `-r` option with the `dotnet publish` command. If the chosen image doesn't support the specified `RuntimeIdentifier`, an error indicates the supported identifiers.
 
@@ -107,6 +107,14 @@ You can always set the `ContainerBaseImage` property to a fully qualified image 
 ```xml
 <PropertyGroup>
     <ContainerRuntimeIdentifier>linux-arm64</ContainerRuntimeIdentifier>
+</PropertyGroup>
+```
+
+To specify multiple container runtime identifiers for multi-architecture images, use a semicolon-delimited set of runtime identifiers in the `ContainerRuntimeIdentifiers` property, similar to setting multiple `TargetFrameworks`:
+
+```xml
+<PropertyGroup>
+    <ContainerRuntimeIdentifiers>linux-x64;linux-arm64</ContainerRuntimeIdentifiers>
 </PropertyGroup>
 ```
 

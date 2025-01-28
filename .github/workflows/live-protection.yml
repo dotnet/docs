@@ -6,7 +6,7 @@ permissions:
 
 jobs:
   live_protection_job:
-    name: Create comment
+    name: Check base branch
     runs-on: ubuntu-latest
 
     steps:

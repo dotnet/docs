@@ -160,7 +160,7 @@ public class MySingleton([FromKeyedServices("shared")] HttpClient shared) // { .
 
 ### Beware Of Scope Mismatch
 
-While Scoped lifetime is much less problematic for the Named `HttpClient`s (compared to Singleton and Transient pitfalls), it has its own catch. 
+While Scoped lifetime is much less problematic for the Named `HttpClient`s (compared to Singleton and Transient pitfalls), it has its own catch.
 
 > [!IMPORTANT]
 > Keyed Scoped lifetime of a specific `HttpClient` instance is bound&mdash;as expected&mdash;to the "ordinary" application scope (for example, incoming request scope) where it was resolved from. However, it does NOT apply to the underlying message handler chain, which is still managed by the `HttpClientFactory`, in the same way it is for the Named clients created directly from factory. `HttpClient`s with the _same_ name, but resolved (within a `HandlerLifetime` timeframe) in two different scopes (for example, two concurrent requests to the same endpoint), can reuse the _same_ `HttpMessageHandler` instance. Which in turn has its own separate scope, as illustrated in the [docs](httpclient-factory.md#message-handler-scopes-in-ihttpclientfactory).
@@ -258,7 +258,7 @@ Even though the "global" opt-in is a one-liner, it's unfortunate that the featur
 
 ## HOW-TO: Opt-Out From Keyed Registration
 
-You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.httpclientbuilderextensions.RemoveAsKeyed%2A> extension method, either per client name: 
+You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.httpclientbuilderextensions.RemoveAsKeyed%2A> extension method, either per client name:
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());      // opt IN by default

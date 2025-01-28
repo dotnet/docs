@@ -50,13 +50,13 @@ The recommended credential reuse strategy differs by .NET application type.
 
 Implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
 
-:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="12" :::
+:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="16":::
 
 For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 
 # [Other](#tab/other)
 
-:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="8, 12" :::
+:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="12, 16":::
 
 ---
 

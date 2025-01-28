@@ -1,4 +1,5 @@
-﻿using Azure.Identity;
+﻿using Azure.Core;
+using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
 using Azure.Storage.Blobs;
 using Microsoft.Extensions.Azure;
@@ -12,29 +13,38 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddSecretClient(new Uri("<key-vault-url>"));
     clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-url>"));
 
-    string clientId = builder.Configuration["UserAssignedClientId"]!;
-    ChainedTokenCredential credentialChain = new(
-        new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedClientId(clientId)),
-        new VisualStudioCredential());
+    string? clientId = builder.Configuration["UserAssignedClientId"];
 
-    clientBuilder.UseCredential(credentialChain);
+    TokenCredential credential = clientId is not null
+        ? new ManagedIdentityCredential(
+            ManagedIdentityId.FromUserAssignedClientId(clientId))
+        : new ChainedTokenCredential(
+            new VisualStudioCredential(),
+            new AzureCliCredential(),
+            new AzurePowerShellCredential());
+
+    clientBuilder.UseCredential(credential);
 });
 #endregion snippet_credential_reuse_AspNetCore
 
 #region snippet_credential_reuse_nonAspNetCore
-ChainedTokenCredential credentialChain = new(
-    new ManagedIdentityCredential(
-        ManagedIdentityId.FromUserAssignedClientId(clientId)),
-    new VisualStudioCredential());
+clientId = Environment.GetEnvironmentVariable("UserAssignedClientId");
+
+TokenCredential credential = clientId is not null
+    ? new ManagedIdentityCredential(
+        ManagedIdentityId.FromUserAssignedClientId(clientId))
+    : new ChainedTokenCredential(
+        new VisualStudioCredential(),
+        new AzureCliCredential(),
+        new AzurePowerShellCredential());
 
 BlobServiceClient blobServiceClient = new(
     new Uri("<blob-storage-url>"),
-    credentialChain);
+    credential);
 
 SecretClient secretClient = new(
     new Uri("<key-vault-url>"),
-    credentialChain);
+    credential);
 #endregion snippet_credential_reuse_nonAspNetCore
 
 #region snippet_retries

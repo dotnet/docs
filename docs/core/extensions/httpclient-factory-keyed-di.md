@@ -213,7 +213,7 @@ The name doesn't have to be `nameof(Foo)`, but the example aimed to minimize the
 
 Technically, the example "unwraps" the Typed client, so that the previously "hidden" Named client becomes "exposed," and the dependency is satisfied via the Keyed DI infra instead of the Typed client infra.
 
-## HOW-TO: Opt-In To Keyed DI By Default
+## HOW-TO: Opt In To Keyed DI By Default
 
 You don't have to call `AddAsKeyed` for every single client&mdash;you can easily opt in "globally" (for any client name) via `ConfigureHttpClientDefaults`. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
 
@@ -256,9 +256,9 @@ provider.GetRequiredKeyedService<HttpClient>("unknown"); // OK (unconfigured ins
 
 Even though the "global" opt-in is a one-liner, it's unfortunate that the feature still requires it, instead of just working "out of the box." For full context and reasoning on that decision, see [dotnet/runtime#89755](https://github.com/dotnet/runtime/issues/89755) and [dotnet/runtime#104943](https://github.com/dotnet/runtime/pull/104943). In short, the main blocker for "on by default" is the `ServiceLifetime` "controversy": for the current (`9.0.0`) state of the DI and `HttpClientFactory` implementations, there's no single `ServiceLifetime` that would be reasonably safe for all `HttpClient`s in all possible situations. There's an intention, however, to address the caveats in the upcoming releases, and switch the strategy from "opt-in" to "opt-out".
 
-## HOW-TO: Opt-Out From Keyed Registration
+## HOW-TO: Opt Out From Keyed Registration
 
-You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.httpclientbuilderextensions.RemoveAsKeyed%2A> extension method, either per client name:
+You can explicitly opt out from Keyed DI for `HttpClient`s by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.RemoveAsKeyed%2A> extension method, either per client name:
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());      // opt IN by default

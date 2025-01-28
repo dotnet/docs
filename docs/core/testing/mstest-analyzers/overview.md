@@ -19,7 +19,7 @@ The rules are organized into categories such as performance usage...
 
 ### Design rules
 
-[Design rules](design-rules.md) will help you create and maintain test suites that adhere to proper design and good practices.
+[Design rules](design-rules.md) help you create and maintain test suites that adhere to proper design and good practices.
 
 ### Performance rules
 
@@ -37,7 +37,7 @@ The rules are organized into categories such as performance usage...
 
 Several APIs of MSTest are decorated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. This attribute indicates that the API is experimental and may be removed or changed in future versions of MSTest. The attribute is used to identify APIs that aren't yet stable and may not be suitable for production use.
 
-To suppress this diagnostic with the `SuppressMessageAttribute`, add the following code to your project:
+The MSTESTEXP diagnostic alerts you to use of an experimental API in your code. To suppress this diagnostic with the `SuppressMessageAttribute`, add the following code to your project:
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;

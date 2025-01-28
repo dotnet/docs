@@ -295,17 +295,15 @@ For more information, see the [full example](https://github.com/dotnet/docs/tree
 
 ## Avoid depending on "factory-default" Primary Handler
 
-In this section, we use the term _"factory-default" Primary Handler_, by which we mean the Primary Handler that the default `IHttpClientFactory` implementation (or more precisely, the default `HttpMessageHandlerBuilder` implementation) will assign if _not configured in any way_ whatsoever.
+In this section, we use the term _"factory-default" Primary Handler_, by which we mean the Primary Handler that the default `IHttpClientFactory` implementation (or more precisely, the default `HttpMessageHandlerBuilder` implementation) assigns if _not configured in any way_ whatsoever.
 
 > [!NOTE]
 > The "factory-default" Primary Handler is an _implementation detail_ and subject to change.
-> It is strongly advised to AVOID depending on a specific implementation being used as a "factory-default" (e.g. `HttpClientHandler`).
+> ❌ AVOID depending on a specific implementation being used as a "factory-default" (for example, `HttpClientHandler`).
 
-There are cases in which you need to depended on the specific type of a Primary Handler, especially if working on a class library. While preserving the end-user's configuration, you might want to update, for example, `HttpClientHandler`-specific properies like `ClientCertificates`, `UseCookies`, `UseProxy`, etc.
+There are cases in which you need to know the specific type of a Primary Handler, especially if working on a class library. While preserving the end-user's configuration, you might want to update, for example, `HttpClientHandler`-specific properties like `ClientCertificates`, `UseCookies`, `UseProxy`, etc. It might be tempting to cast the Primary handler to `HttpClientHandler`, which _happened to_ work while `HttpClientHandler` was used as the "factory-default" Primary Handler. But as any code depending on implementation details, such a workaround is _fragile_ and bound to break.
 
-It might be tempting to simply cast the Primary handler to `HttpClientHandler`, which _happened to_ work while `HttpClientHandler` was used as the "factory-default" Primary Handler. But as any code depending on implementation details, such a workaround is _fragile_ and bound to break.
-
-It is advised to leverage `ConfigureHttpClientDefaults` to set up an "app-level" default Primary Handler instance instead of relying on the "factory-default" one:
+Instead, you can use `ConfigureHttpClientDefaults` to set up an "app-level" default Primary Handler instance instead of relying on the "factory-default" one:
 
 ```csharp
 // Contract with the end-user: Only HttpClientHandler is supported.

@@ -56,7 +56,7 @@ For information on this approach, see [Authenticate using Microsoft Entra ID](/d
 
 # [Other](#tab/other)
 
-:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="12, 16":::
+:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="13, 17":::
 
 ---
 

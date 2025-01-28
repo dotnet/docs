@@ -17,18 +17,38 @@ The rules are organized into categories such as performance usage...
 
 ## Categories
 
-**[Design rules](design-rules.md)**
+### Design rules
 
-Design rules will help you create and maintain test suites that adhere to proper design and good practices.
+[Design rules](design-rules.md) help you create and maintain test suites that adhere to proper design and good practices.
 
-**[Performance rules](performance-rules.md)**
+### Performance rules
 
-Rules that support high-performance testing.
+[Performance rules](performance-rules.md) support high-performance testing.
 
-**[Suppression rules](suppression-rules.md)**
+### Suppression rules
 
-Rules that support suppressing diagnostics from other rules.
+[Suppression rules](suppression-rules.md) support suppressing diagnostics from other rules.
 
-**[Usage rules](usage-rules.md)**
+### Usage rules
 
-Rules that support proper usage of MSTest.
+[Usage rules](usage-rules.md) support proper usage of MSTest.
+
+### MSTESTEXP
+
+Several APIs of MSTest are decorated with the <xref:System.Diagnostics.CodeAnalysis.ExperimentalAttribute>. This attribute indicates that the API is experimental and may be removed or changed in future versions of MSTest. The attribute is used to identify APIs that aren't yet stable and may not be suitable for production use.
+
+The MSTESTEXP diagnostic alerts you to use of an experimental API in your code. To suppress this diagnostic with the `SuppressMessageAttribute`, add the following code to your project:
+
+```csharp
+using System.Diagnostics.CodeAnalysis;
+
+[assembly: SuppressMessage("MSTESTEXP", "Justification")]
+```
+
+Alternatively, you can suppress this diagnostic with preprocessor directive by adding the following code to your project:
+
+```csharp
+#pragma warning disable MSTESTEXP
+        // API that is causing the warning.
+#pragma warning restore MSTESTEXP
+```

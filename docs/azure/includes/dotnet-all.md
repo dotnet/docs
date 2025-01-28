@@ -371,8 +371,8 @@
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.TimeZones/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
-| Unknown Display Name | NuGet [1.0.6-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.6-preview) |  |  |
-| Unknown Display Name | NuGet [1.0.6-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.6-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.14-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.14-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.14-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.14-preview) |  |  |
 | Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.42.0) |  |  |
 | Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.42.0) |  |  |
 | Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.42.0) |  |  |

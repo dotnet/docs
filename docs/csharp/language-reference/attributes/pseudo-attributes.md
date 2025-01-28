@@ -26,8 +26,8 @@ Some of these custom attributes are applied using other C# syntax rather than ad
 | Attribute                                                                                        | Comments |
 |--------------------------------------------------------------------------------------------------|----------|
 | <xref:System.Runtime.InteropServices.DefaultParameterValueAttribute?displayProperty=fullName>    | Specifies the default value for the parameter. Use the [default parameter syntax](../../methods.md#optional-parameters-and-arguments). |
-| <xref:System.Runtime.InteropServices.InAttribute?displayProperty=fullName>                       | Specifies the IL `[in]` modifier. Use the [`in`](../keywords/method-parameters.md#in-parameter-modifier) or [`ref readonly`](../keywords/method-parameters.md#ref-readonly-modifier). |
-| <xref:System.Runtime.InteropServices.OutAttribute?displayProperty=fullName>                       | Specifies the IL`[out] modifier. Use the [`out`](../keywords/method-parameters.md#out-parameter-modifier). |
+| <xref:System.Runtime.InteropServices.InAttribute?displayProperty=fullName>                       | Specifies the IL `[in]` modifier. Use the [`in`](../keywords/method-parameters.md#in-parameter-modifier) or [`ref readonly`](../keywords/method-parameters.md#ref-readonly-modifier) modifiers. |
+| <xref:System.Runtime.InteropServices.OutAttribute?displayProperty=fullName>                       | Specifies the IL `[out]` modifier. Use the [`out`](../keywords/method-parameters.md#out-parameter-modifier) modifier. |
 | <xref:System.Runtime.CompilerServices.SpecialNameAttribute?displayProperty=fullName>             | Specifies the IL `specialname` modifier. The compiler automatically adds this modifier for methods that require it. |
 | <xref:System.Runtime.InteropServices.UnmanagedCallersOnlyAttribute?displayProperty=nameWithType> | This attribute is required for the `delegate*` feature. The compiler adds it to any [`delegate*`](../unsafe-code.md#function-pointers) that requires its use. However, you must add this attribute to any method declaration when that method is assigned to a function pointer. |
 

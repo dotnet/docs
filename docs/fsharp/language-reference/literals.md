@@ -49,7 +49,7 @@ let y = "a" + "b" // evaluated at compile-time
 ```
 
 > [!NOTE]
-> Functions cannot be used to compute [<Literal>] values because literals must be determined at compile-time and cannot depend on runtime evaluation.
+> Functions cannot be used to compute `[<Literal>]` values because literals must be determined at compile-time and cannot depend on runtime evaluation.
 
 ### Why functions cannot compute literals
 

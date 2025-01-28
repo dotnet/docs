@@ -86,7 +86,7 @@ az webapp identity assign --name <appName> --resource-group <groupName>
 
 :::zone-end
 
-## Add an Azure OpenAI user role to your managed identity
+## Add an Azure OpenAI user role to the identity
 
 :::zone target="docs" pivot="azure-portal"
 
@@ -139,7 +139,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 
 :::zone-end
 
-## Implement token-based authentication in your app code
+## Implement identity authentication in your app code
 
 1. Create a `DefaultAzureCredential` object to discover and configure available credentials:
 
@@ -147,11 +147,11 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 
 1. Create an AI service such as `IChatClient` and register it with the service collection:
 
-    :::code language="csharp" source="./snippets/hosted-app-auth/IdentityExamples.cs" range="24-30":::
+    :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="24-30":::
 
 1. Inject the `IChatClient` for use in your endpoints:
 
-    :::code language="csharp" source="./snippets/hosted-app-auth/IdentityExamples.cs" range="42-46":::
+    :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="42-46":::
 
 ## Related content
 

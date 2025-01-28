@@ -9,7 +9,7 @@ zone_pivot_groups: azure-interface
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to Azure OpenAI by using Microsoft Entra so that I can securely use AI in my .NET application.
 ---
 
-# Authenticate an AI app hosted on Azure App Service to Azure OpenAI using Microsoft Entra ID
+# Authenticate an app hosted on Azure App Service to Azure OpenAI using Microsoft Entra ID
 
 This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) to authenticate and authorize an App Service application to an Azure OpenAI resource.
 
@@ -101,7 +101,9 @@ az webapp identity assign --name <appName> --resource-group <groupName>
 
 :::zone target="docs" pivot="azure-cli"
 
-**Resource scope**
+You can use the Azure CLI to assign the Cognitive Services OpenAI User role to your managed identity at varying scopes.
+
+# [Resource](#tab/resource)
 
 ```azurecli
 az role assignment create --assignee "<managedIdentityObjectID>" \
@@ -109,7 +111,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 --scope "/subscriptions/<subscriptionId>/resourcegroups/<resourceGroupName>/providers/<providerName>/<resourceType>/<resourceSubType>/<resourceName>"
 ```
 
-**Resource group scope**
+# [Resource group](#tab/resource-group)
 
 ```azurecli
 az role assignment create --assignee "<managedIdentityObjectID>" \
@@ -117,7 +119,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 --scope "/subscriptions/<subscriptionId>/resourcegroups/<resourceGroupName>"
 ```
 
-**Subscription scope**
+# [Subscription](#tab/subscription)
 
 ```azurecli
 az role assignment create --assignee "<managedIdentityObjectID>" \
@@ -125,7 +127,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 --scope "/subscriptions/<subscriptionId>"
 ```
 
-**Management group scope**
+# [Management group](#tab/management-group)
 
 ```azurecli
 az role assignment create --assignee "<managedIdentityObjectID>" \
@@ -133,21 +135,23 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 --scope "/providers/Microsoft.Management/managementGroups/<managementGroupName>"
 ```
 
+---
+
 :::zone-end
 
-## Implement token-based authentication using Semantic Kernel SDK
+## Implement token-based authentication in your app code
 
-1. Initialize a `DefaultAzureCredential` object to assume your app's managed identity:
+1. Create a `DefaultAzureCredential` object to discover and configure available credentials:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="tokenCredential":::
+    :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="13-22":::
 
-1. Build a `Kernel` object that includes the Azure OpenAI Chat Completion Service, and use the previously created credentials:
+1. Create an AI service such as `IChatClient` and register it with the service collection:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="kernelBuild":::
+    :::code language="csharp" source="./snippets/hosted-app-auth/IdentityExamples.cs" range="24-30":::
 
-1. Use the `Kernel` object to invoke prompt completion through Azure OpenAI:
+1. Inject the `IChatClient` for use in your endpoints:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="invokePrompt":::
+    :::code language="csharp" source="./snippets/hosted-app-auth/IdentityExamples.cs" range="42-46":::
 
 ## Related content
 

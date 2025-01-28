@@ -45,7 +45,7 @@ In the previous example, the query is executed in the call to `Count`, because `
 
 A *query expression* is a query expressed in query syntax. A query expression is a first-class language construct. It's just like any other expression and can be used in any context in which a C# expression is valid. A query expression consists of a set of clauses written in a declarative syntax similar to SQL or XQuery. Each clause in turn contains one or more C# expressions, and these expressions might themselves be either a query expression or contain a query expression.
 
-A query expression must begin with a [from](../../language-reference/keywords/from-clause.md) clause and must end with a [select](../../language-reference/keywords/select-clause.md) or [group](../../language-reference/keywords/group-clause.md) clause. Between the first `from` clause and the last `select` or `group` clause, it can contain one or more of these optional clauses: [where](../../language-reference/keywords/where-clause.md), [orderby](../../language-reference/keywords/orderby-clause.md), [join](../../language-reference/keywords/join-clause.md), [let](../../language-reference/keywords/let-clause.md) and even another [from](../../language-reference/keywords/from-clause.md) clauses. You can also use the [into](../../language-reference/keywords/into.md) keyword to enable the result of a `join` or `group` clause to serve as the source for more query clauses in the same query expression.
+A query expression must begin with a [from](../../language-reference/keywords/from-clause.md) clause and must end with a [select](../../language-reference/keywords/select-clause.md) or [group](../../language-reference/keywords/group-clause.md) clause. Between the first `from` clause and the last `select` or `group` clause, it can contain one or more of these optional clauses: [where](../../language-reference/keywords/where-clause.md), [orderby](../../language-reference/keywords/orderby-clause.md), [join](../../language-reference/keywords/join-clause.md), [let](../../language-reference/keywords/let-clause.md) and even another [from](../../language-reference/keywords/from-clause.md) clauses. You can also use the [`into`](../../language-reference/keywords/into.md) keyword to enable the result of a `join` or `group` clause to serve as the source for more query clauses in the same query expression.
 
 ### Query variable
 
@@ -128,7 +128,7 @@ You can use the `into` keyword in a `select` or `group` clause to create a tempo
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics14":::
 
-For more information, see [into](../../language-reference/keywords/into.md).
+For more information, see [`into`](../../language-reference/keywords/into.md).
 
 ### Filtering, ordering, and joining
 
@@ -156,7 +156,7 @@ Use the `join` clause to associate and/or combine elements from one data source 
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics17":::
 
-You can also perform a group join by storing the results of the `join` operation into a temporary variable by using the [into](../../language-reference/keywords/into.md) keyword. For more information, see [join clause](../../language-reference/keywords/join-clause.md).
+You can also perform a group join by storing the results of the `join` operation into a temporary variable by using the [`into`](../../language-reference/keywords/into.md) keyword. For more information, see [join clause](../../language-reference/keywords/join-clause.md).
 
 #### The let clause
 

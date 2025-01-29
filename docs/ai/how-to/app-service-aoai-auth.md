@@ -178,7 +178,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 
 1. Inject the registered service for use in your endpoints:
 
-    :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="42-46":::
+    :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="41-46":::
 
     > [!TIP]
     > Learn more about ASP.NET Core dependency injection and how to register other AI services types in the Azure SDK for .NET [Dependency injection](/en-us/dotnet/azure/sdk/dependency-injection) documentation.

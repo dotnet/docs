@@ -89,17 +89,17 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
 
     :::code language="csharp" source="snippets/tracing/ConnectionTracingDemo.ServiceDefaults/Extensions.cs" id="snippet_Metrics" highlight="4":::
 
-    Note that on .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual meter subscriptions:
-
-    ```csharp
-    .WithMetrics(metrics =>
-    {
-        metrics.AddAspNetCoreInstrumentation()
-            .AddMeter("System.Net.Http")
-            .AddMeter("System.Net.NameResolution")
-            .AddRuntimeInstrumentation();
-    })
-    ```
+    > [!NOTE] On .NET 8+, `AddHttpClientInstrumentation()` can be replaced by manual meter subscriptions:
+    >
+    > ```csharp
+    > .WithMetrics(metrics =>
+    > {
+    >     metrics.AddAspNetCoreInstrumentation()
+    >         .AddMeter("System.Net.Http")
+    >         .AddMeter("System.Net.NameResolution")
+    >         .AddRuntimeInstrumentation();
+    > })
+    > ```
 
 1. Run the `AppHost` project. This should launch the Aspire Dashboard.
 

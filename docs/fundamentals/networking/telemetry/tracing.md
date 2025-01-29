@@ -6,7 +6,7 @@ ms.author: samsp
 ms.date: 10/4/2024
 ---
 
-# Networking distributed traces in .NET
+# Distributed Tracing in `Sysem.Net` libraries
 
 [Distributed tracing](../../../core/diagnostics/distributed-tracing.md) is a diagnostic technique that helps engineers localize failures and performance issues within applications, especially those that are distributed across multiple machines or processes. This technique tracks requests through an application by correlating together work done by different components and separating it from other work the application might be doing for concurrent requests. For example, a request to a typical web service might be first received by a load balancer and then forwarded to a web server process, which then makes several queries to a database. Distributed tracing allows engineers to distinguish if any of those steps failed and how long each step took. It can also log messages produced by each step as it ran.
 
@@ -144,7 +144,7 @@ When HTTP requests are made with the connection instrumentation enabled, you sho
 
 - If a connection needs to be established, or if the app is waiting for a connection from the connection pool, then an additional [`HTTP wait_for_connection`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request-wait-for-connection-experimental) span is shown, which represents the delay for waiting for a connection to be made. This helps to understand delays between the `HttpClient` request being made in code, and when the processing of the request actually starts. In the previous image:
   - The selected span is the HttpClient request.
-  - The one below it's the delay waiting for a connection to be established.
+  - The span below represents the time the request spends waiting for a connection to be established.
   - The last span in yellow is from the destination processing the request.
 - The HttpClient span will have a link to the [`HTTP connection_setup`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-connection-setup-experimental) span, which represents the activity to create the HTTP connection used by the request.
 

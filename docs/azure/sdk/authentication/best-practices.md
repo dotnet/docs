@@ -2,7 +2,7 @@
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
 ms.topic: conceptual
-ms.date: 01/24/2025
+ms.date: 01/29/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -48,13 +48,15 @@ The recommended credential reuse strategy differs by .NET application type.
 
 # [ASP.NET Core](#tab/aspdotnet)
 
-Implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
+Implement credential reuse through the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method of `Microsoft.Extensions.Azure`. For example, imagine an ASP.NET Core app hosted on Azure App Service, with a `UserAssignedClientId` environment variable set. The .NET configuration provider determines the environment variable exists, and `ManagedIdentityCredential` will be used to authenticate the Key Vault Secrets and Blob Storage clients. Otherwise, a chained sequence of development-time credentials is used.
 
 :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="16":::
 
 For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 
 # [Other](#tab/other)
+
+In non-ASP.NET Core apps, credential reuse is accomplished by passing the same credential instance to each client constructor.
 
 :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="13, 17":::
 

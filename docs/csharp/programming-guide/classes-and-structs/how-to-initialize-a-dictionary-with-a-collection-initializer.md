@@ -42,7 +42,7 @@ You can use GitHub Copilot in your IDE to generate C# code to initialize a dicti
 The following text shows an example prompt for Copilot Chat:
 
 ```copilot-prompt
-/generate C# code to initialize Dictionary<int, Employee> using key-value pairs within the collection initializer. The employee class has two properties: Name and Age.
+Generate C# code to initialize Dictionary<int, Employee> using key-value pairs within the collection initializer. The employee class is a record class with two properties: Name and Age.
 ```
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).

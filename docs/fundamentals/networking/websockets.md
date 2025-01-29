@@ -111,13 +111,13 @@ On **.NET 8** and earlier, the only available Keep-Alive strategy is _Unsolicite
 2. **Unsolicited PONG**, if
     - `KeepAliveInterval` is a positive finite `TimeSpan`, -AND-
     - `KeepAliveTimeout` is `TimeSpan.Zero` or `Timeout.InfiniteTimeSpan`
-2. **PING/PONG**, if
+3. **PING/PONG**, if
     - `KeepAliveInterval` is a positive finite `TimeSpan`, -AND-
     - `KeepAliveTimeout` is a positive finite `TimeSpan`
 
 The default `KeepAliveTimeout` value is `Timeout.InfiniteTimeSpan`, so the default Keep-Alive behavior remains consistent between .NET versions.
 
-If you use `ClientWebSocket`, the default <xref:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval?displayProperty=nameWithType> value is <xref:System.Net.WebSockets.WebSocket.DefaultKeepAliveInterval?displayProperty=nameWithType> (typically 30 seconds). That means, `ClientWebSocket` has the Keep-Alive ON by default, with Unsolicited PONG as the default strategy. 
+If you use `ClientWebSocket`, the default <xref:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval?displayProperty=nameWithType> value is <xref:System.Net.WebSockets.WebSocket.DefaultKeepAliveInterval?displayProperty=nameWithType> (typically 30 seconds). That means, `ClientWebSocket` has the Keep-Alive ON by default, with Unsolicited PONG as the default strategy.
 
 If you want to switch to the PING/PONG strategy, overriding <xref:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveTimeout?displayProperty=nameWithType> is enough:
 

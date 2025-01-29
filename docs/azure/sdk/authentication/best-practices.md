@@ -2,7 +2,7 @@
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
 ms.topic: conceptual
-ms.date: 01/24/2025
+ms.date: 01/29/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -48,15 +48,17 @@ The recommended credential reuse strategy differs by .NET application type.
 
 # [ASP.NET Core](#tab/aspdotnet)
 
-Implement credential reuse through the `UseCredential` method of `Microsoft.Extensions.Azure`:
+Implement credential reuse through the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method of `Microsoft.Extensions.Azure`. For example, imagine an ASP.NET Core app hosted on Azure App Service, with a `UserAssignedClientId` environment variable set. The .NET configuration provider determines the environment variable exists, and `ManagedIdentityCredential` will be used to authenticate the Key Vault Secrets and Blob Storage clients. Otherwise, a chained sequence of development-time credentials is used.
 
-:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_Dac" highlight="6" :::
+:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="16":::
 
 For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 
 # [Other](#tab/other)
 
-:::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_credential_reuse_noDac" highlight="8, 12" :::
+In non-ASP.NET Core apps, credential reuse is accomplished by passing the same credential instance to each client constructor. For example, imagine a WPF app using the authentication broker on Windows.
+
+:::code language="csharp" source="../snippets/authentication/best-practices/PCA/MainWindow.xaml.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="12, 16":::
 
 ---
 
@@ -77,6 +79,6 @@ The Azure Identity library for .NET allows you to authenticate via managed ident
   - The time interval between retries starts at 0.8 seconds, and a maximum of five retries are attempted, by default. This option is optimized for resilience but introduces potentially unwanted delays in the development inner loop.
   - To change any of the default retry settings, use the `Retry` property on `ManagedIdentityCredentialOptions`. For example, retry a maximum of three times, with a starting interval of 0.5 seconds:
 
-    :::code language="csharp" source="../snippets/authentication/best-practices/Program.cs" id="snippet_retries" highlight="5-9" :::
+    :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_retries" highlight="5-9":::
 
 For more information on customizing retry policies, see [Setting a custom retry policy](https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/Configuration.md#setting-a-custom-retry-policy).

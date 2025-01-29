@@ -1,39 +1,33 @@
-﻿using Azure.Identity;
-using Azure.Security.KeyVault.Secrets;
-using Azure.Storage.Blobs;
+﻿using Azure.Core;
+using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
-var userAssignedClientId = "<user-assigned-client-id>";
+var clientId = "<user-assigned-client-id>";
 var builder = WebApplication.CreateBuilder(args);
 
-#region snippet_credential_reuse_Dac
+#region snippet_credential_reuse_AspNetCore
 builder.Services.AddAzureClients(clientBuilder =>
 {
     clientBuilder.AddSecretClient(new Uri("<key-vault-url>"));
     clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-url>"));
 
-    clientBuilder.UseCredential(new DefaultAzureCredential());
+    string? clientId = builder.Configuration["UserAssignedClientId"];
+
+    TokenCredential credential = clientId is not null
+        ? new ManagedIdentityCredential(
+            ManagedIdentityId.FromUserAssignedClientId(clientId))
+        : new ChainedTokenCredential(
+            new VisualStudioCredential(),
+            new AzureCliCredential(),
+            new AzurePowerShellCredential());
+
+    clientBuilder.UseCredential(credential);
 });
-#endregion snippet_credential_reuse_Dac
-
-#region snippet_credential_reuse_noDac
-ChainedTokenCredential credentialChain = new(
-    new ManagedIdentityCredential(
-        ManagedIdentityId.FromUserAssignedClientId(userAssignedClientId)),
-    new VisualStudioCredential());
-
-BlobServiceClient blobServiceClient = new(
-    new Uri("<blob-storage-url>"),
-    credentialChain);
-
-SecretClient secretClient = new(
-    new Uri("<key-vault-url>"),
-    credentialChain);
-#endregion snippet_credential_reuse_noDac
+#endregion snippet_credential_reuse_AspNetCore
 
 #region snippet_retries
 ManagedIdentityCredentialOptions miCredentialOptions = new(
-        ManagedIdentityId.FromUserAssignedClientId(userAssignedClientId)
+        ManagedIdentityId.FromUserAssignedClientId(clientId)
     )
     {
         Retry =

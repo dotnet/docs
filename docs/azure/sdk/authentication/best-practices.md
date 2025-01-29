@@ -58,7 +58,7 @@ For information on this approach, see [Authenticate using Microsoft Entra ID](/d
 
 In non-ASP.NET Core apps, credential reuse is accomplished by passing the same credential instance to each client constructor. For example, imagine a WPF app using the authentication broker on Windows.
 
-:::code language="csharp" source="../snippets/authentication/best-practices/PCA/Program.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="12, 16":::
+:::code language="csharp" source="../snippets/authentication/best-practices/PCA/MainWindow.xaml.cs" id="snippet_credential_reuse_nonAspNetCore" highlight="12, 16":::
 
 ---
 

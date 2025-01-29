@@ -37,7 +37,7 @@ Note the two pairs of braces in each element of the collection in the first decl
 
 ## Use GitHub Copilot to initialize a dictionary
 
-You can use GitHub Copilot in your IDE to generate C# code to initialize a dictionary with a collection initialzier. You can customize the prompt to add specifics per your requirements.
+You can use GitHub Copilot in your IDE to generate C# code to initialize a dictionary with a collection initializer. You can customize the prompt to add specifics per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 

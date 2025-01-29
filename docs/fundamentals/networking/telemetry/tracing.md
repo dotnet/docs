@@ -6,7 +6,7 @@ ms.author: samsp
 ms.date: 10/4/2024
 ---
 
-# Distributed Tracing in `Sysem.Net` libraries
+# Distributed tracing in System.Net libraries
 
 [Distributed tracing](../../../core/diagnostics/distributed-tracing.md) is a diagnostic technique that helps engineers localize failures and performance issues within applications, especially those that are distributed across multiple machines or processes. This technique tracks requests through an application by correlating together work done by different components and separating it from other work the application might be doing for concurrent requests. For example, a request to a typical web service might be first received by a load balancer and then forwarded to a web server process, which then makes several queries to a database. Distributed tracing allows engineers to distinguish if any of those steps failed and how long each step took. It can also log messages produced by each step as it ran.
 
@@ -22,7 +22,7 @@ The tracing system in .NET is designed to work with OpenTelemetry (OTel), and us
 
 To emit traces, the <xref:System.Net> libraries are [instrumented](../../../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md#add-basic-instrumentation) with built-in <xref:System.Diagnostics.ActivitySource> sources, which create <xref:System.Diagnostics.Activity> objects to track the work performed. Activities are only created if there are listeners subscribed to the <xref:System.Diagnostics.ActivitySource>.
 
-The built-in instrumentation has evolved with .NET versions.
+The built-in instrumentation evolved with .NET versions.
 
 - On .NET 8 and earlier, the instrumentation is limited to the creation of an empty [HTTP client request activity](../../../core/diagnostics/distributed-tracing-builtin-activities.md#http-client-request). This means that users have to rely on the [`OpenTelemetry.Instrumentation.Http`](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/tree/1ca05685cbad63d3fa813b9cab49be341048e69e/src/OpenTelemetry.Instrumentation.Http#httpclient-and-httpwebrequest-instrumentation-for-opentelemetry) library to populate the activity with the information (for example, tags) needed to emit useful traces.
 - .NET 9 extended the instrumentation by emitting the name, status, exception info, and the most important tags according to the OTel [HTTP client semantic conventions](https://opentelemetry.io/docs/specs/semconv/http/http-spans/#http-client) on the HTTP client request activity. This means that on .NET 9+, the `OpenTelemetry.Instrumentation.Http` dependency can be omitted, unless more advanced features like [enrichment](#enrichment) are required.
@@ -36,8 +36,8 @@ However, as an application developer, you would likely prefer to rely on the ric
 
 - To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-opentelemetry).
 - For **production-time** trace collection and monitoring, you can use OpenTelemetry with [Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) or with [Azure Monitor and Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex and might be inconvenient to use at development time.
-- For **development-time** trace collection and monitoring, we recommend using [.NET Aspire](#collect-traces-with-net-aspire). which provides a simple but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
-- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET projects.
+- For **development-time** trace collection and monitoring, we recommend using [.NET Aspire](#collect-traces-with-net-aspire) which provides a simple but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
+- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce and configure OpenTelemetry tracing and metrics in your ASP.NET projects.
 
 ### Collect traces with .NET Aspire
 
@@ -74,13 +74,12 @@ When troubleshooting `HttpClient` issues or bottlenecks, it might be crucial to 
 | [`socket connect`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#socket-connect-experimental) | `Experimental.System.Net.Sockets` | Establishment of a <xref:System.Net.Sockets.Socket> connection. |
 | [`TLS handshake`](../../../core/diagnostics/distributed-tracing-builtin-activities.md#tls-handshake-experimental) | `Experimental.System.Net.Security` | TLS client or server handshake performed by <xref:System.Net.Security.SslStream>. |
 
-The corresponding `ActivitySource` names start with the prefix `Experimental`, as these spans might be changed in future versions as we learn more about how well they work in production.
-
 > [!NOTE]
-> These spans are probably too verbose for use 24x7 in production scenarios with high workloads - they're noisy and this level of instrumentation isn't normally needed. However, if you're trying to diagnose connection issues or get a deeper understanding of how network and connection latency is affecting your services, then they provide insight that's hard to collect by other means.
+> The corresponding `ActivitySource` names start with the prefix `Experimental`, as these spans might be changed in future versions as we learn more about how well they work in production.
 
-> [!NOTE]
-> When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, *the `HTTP client request` span contains a link to the `HTTP connection_setup` span corresponding to the connection serving the request*. As an HTTP connection can be long lived, this could result in many links to the connection span from each of the request activities. Some APM monitoring tools aggressively walk links between spans to build up their views, and so including this span can cause issues when the tools weren't designed to account for large numbers of links.
+These spans are too verbose for use 24x7 in production scenarios with high workloads - they're noisy and this level of instrumentation isn't normally needed. However, if you're trying to diagnose connection issues or get a deeper understanding of how network and connection latency is affecting your services, then they provide insight that's hard to collect by other means.
+
+When the `Experimental.System.Net.Http.Connections` ActivitySource is enabled, *the `HTTP client request` span contains a link to the `HTTP connection_setup` span corresponding to the connection serving the request*. As an HTTP connection can be long lived, this could result in many links to the connection span from each of the request activities. Some APM monitoring tools aggressively walk links between spans to build up their views, and so including this span can cause issues when the tools weren't designed to account for large numbers of links.
 
 The following diagram illustrates the behavior of the spans and their relationship:
 

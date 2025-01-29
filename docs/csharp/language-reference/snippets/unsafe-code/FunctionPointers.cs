@@ -1,6 +1,6 @@
 ﻿namespace UnsafeCodePointers;
 
-public unsafe class FunctionPointers
+public class FunctionPointers
 {
     public static void PointerExamples()
     {
@@ -10,35 +10,36 @@ public unsafe class FunctionPointers
         Console.WriteLine();
 
         // <InvokeViaFunctionPointer>
-        static int localMultiply(int x, int y) => x * y;
-        int product = UnsafeCombine(&localMultiply, 3, 4);
+        int product = 0;
+        unsafe
+        {
+            static int localMultiply(int x, int y) => x * y;
+            product = UnsafeCombine(&localMultiply, 3, 4);
+        }
         // </InvokeViaFunctionPointer>
         Console.WriteLine(product);
-
-
     }
 
     // <UseDelegateOrPointer>
     public static T Combine<T>(Func<T, T, T> combinator, T left, T right) => 
         combinator(left, right);
 
-    public static T UnsafeCombine<T>(delegate*<T, T, T> combinator, T left, T right) => 
+    public static unsafe T UnsafeCombine<T>(delegate*<T, T, T> combinator, T left, T right) => 
         combinator(left, right);
     // </UseDelegateOrPointer>
 
     // <UnmanagedFunctionPointers>
-    public static T ManagedCombine<T>(delegate* managed<T, T, T> combinator, T left, T right) =>
+    public static unsafe T ManagedCombine<T>(delegate* managed<T, T, T> combinator, T left, T right) =>
         combinator(left, right);
-    public static T CDeclCombine<T>(delegate* unmanaged[Cdecl]<T, T, T> combinator, T left, T right) =>
+    public static unsafe T CDeclCombine<T>(delegate* unmanaged[Cdecl]<T, T, T> combinator, T left, T right) =>
         combinator(left, right);
-    public static T StdcallCombine<T>(delegate* unmanaged[Stdcall]<T, T, T> combinator, T left, T right) =>
+    public static unsafe T StdcallCombine<T>(delegate* unmanaged[Stdcall]<T, T, T> combinator, T left, T right) =>
         combinator(left, right);
-    public static T FastcallCombine<T>(delegate* unmanaged[Fastcall]<T, T, T> combinator, T left, T right) =>
+    public static unsafe T FastcallCombine<T>(delegate* unmanaged[Fastcall]<T, T, T> combinator, T left, T right) =>
         combinator(left, right);
-    public static T ThiscallCombine<T>(delegate* unmanaged[Thiscall]<T, T, T> combinator, T left, T right) =>
+    public static unsafe T ThiscallCombine<T>(delegate* unmanaged[Thiscall]<T, T, T> combinator, T left, T right) =>
         combinator(left, right);
-    public static T UnmanagedCombine<T>(delegate* unmanaged<T, T, T> combinator, T left, T right) =>
+    public static unsafe T UnmanagedCombine<T>(delegate* unmanaged<T, T, T> combinator, T left, T right) =>
         combinator(left, right);
     // </UnmanagedFunctionPointers>
-
 }

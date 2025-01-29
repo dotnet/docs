@@ -5,8 +5,8 @@
   <ItemGroup>
     <!-- Azure SDK packages -->
     <PackageVersion Include="Microsoft.Extensions.Azure" Version="1.7.5" />
-    <PackageVersion Include="Azure.Identity" Version="1.13.1" />
-    <PackageVersion Include="Azure.Identity.Broker" Version="1.1.0" />
+    <PackageVersion Include="Azure.Identity" Version="1.13.2" />
+    <PackageVersion Include="Azure.Identity.Broker" Version="1.2.0" />
 	  <PackageVersion Include="Azure.Security.KeyVault.Secrets" Version="4.7.0" />
     <PackageVersion Include="Azure.Storage.Blobs" Version="12.21.2" />
 

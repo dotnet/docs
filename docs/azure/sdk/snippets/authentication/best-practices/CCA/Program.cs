@@ -1,7 +1,5 @@
 ﻿using Azure.Core;
 using Azure.Identity;
-using Azure.Security.KeyVault.Secrets;
-using Azure.Storage.Blobs;
 using Microsoft.Extensions.Azure;
 
 var clientId = "<user-assigned-client-id>";
@@ -26,26 +24,6 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.UseCredential(credential);
 });
 #endregion snippet_credential_reuse_AspNetCore
-
-#region snippet_credential_reuse_nonAspNetCore
-clientId = Environment.GetEnvironmentVariable("UserAssignedClientId");
-
-TokenCredential credential = clientId is not null
-    ? new ManagedIdentityCredential(
-        ManagedIdentityId.FromUserAssignedClientId(clientId))
-    : new ChainedTokenCredential(
-        new VisualStudioCredential(),
-        new AzureCliCredential(),
-        new AzurePowerShellCredential());
-
-BlobServiceClient blobServiceClient = new(
-    new Uri("<blob-storage-url>"),
-    credential);
-
-SecretClient secretClient = new(
-    new Uri("<key-vault-url>"),
-    credential);
-#endregion snippet_credential_reuse_nonAspNetCore
 
 #region snippet_retries
 ManagedIdentityCredentialOptions miCredentialOptions = new(

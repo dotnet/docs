@@ -11,7 +11,7 @@ zone_pivot_groups: azure-interface
 
 # Authenticate to Azure OpenAI from an Azure hosted app using Microsoft Entra ID
 
-This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) and the [Microsoft.Extensions.AI library](/dotnet/ai/ai-extensions) to authenticate and authorize an Azure hosted app to an Azure OpenAI resource.
+This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) and the [Microsoft.Extensions.AI library](/dotnet/ai/ai-extensions) to authenticate an Azure hosted app to an Azure OpenAI resource.
 
 A managed identity from Microsoft Entra ID allows your app to easily access other Microsoft Entra protected resources such as Azure OpenAI. The identity is managed by the Azure platform and does not require you to provision, manage or rotate any secrets.
 
@@ -24,7 +24,7 @@ A managed identity from Microsoft Entra ID allows your app to easily access othe
 
 ## Add a managed identity to App Service
 
-Your application can be granted two types of identities:
+Managed identities provide an automatically managed identity in Microsoft Entra ID for applications to use when connecting to resources that support Microsoft Entra authentication. Applications can use managed identities to obtain Microsoft Entra tokens without having to manage any credentials. Your application can be assigned two types of identities:
 
 * A **system-assigned identity** is tied to your application and is deleted if your app is deleted. An app can have only one system-assigned identity.
 * A **user-assigned identity** is a standalone Azure resource that can be assigned to your app. An app can have multiple user-assigned identities.
@@ -160,25 +160,28 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
     dotnet add package Microsoft.Extensions.AI.OpenAI
     ```
 
-    These packages each handle the following concerns for this scenario:
+    The preceding packages each handle the following concerns for this scenario:
 
-    **Azure.Identity**: Provides core functionality to work with Microsoft Entra ID
-    **Azure.AI.OpenAI**: Enables your app to interface with the Azure OpenAI service.
-    **Microsoft.Extensions.Azure**: Provides helper extensions to register services for dependency injection.
-    **Microsoft.Extensions.AI**: Provides AI abstractions for common AI tasks
-    **Microsoft.Extensions.AI.OpenAI**: Enables you to use OpenAI service types as AI abstractions provided by **Microsoft.Extensions.AI**.
+    - **Azure.Identity**: Provides core functionality to work with Microsoft Entra ID
+    - **Azure.AI.OpenAI**: Enables your app to interface with the Azure OpenAI service.
+    - **Microsoft.Extensions.Azure**: Provides helper extensions to register services for dependency injection.
+    - **Microsoft.Extensions.AI**: Provides AI abstractions for common AI tasks
+    - **Microsoft.Extensions.AI.OpenAI**: Enables you to use OpenAI service types as AI abstractions provided by **Microsoft.Extensions.AI**
 
-1. Create a `DefaultAzureCredential` object to discover and configure available credentials:
+1. In the `Program.cs` file of your app, create a `DefaultAzureCredential` object to discover and configure available credentials:
 
     :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="13-22":::
 
-1. Create an AI service such as `IChatClient` and register it with the service collection:
+1. Create an AI service and register it with the service collection:
 
     :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="24-30":::
 
-1. Inject the `IChatClient` for use in your endpoints:
+1. Inject the registered service for use in your endpoints:
 
     :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="42-46":::
+
+    > [!TIP]
+    > Learn more about ASP.NET Core dependency injection and how to register other AI services types in the Azure SDK for .NET [Dependency injection](/en-us/dotnet/azure/sdk/dependency-injection) documentation.
 
 ## Related content
 

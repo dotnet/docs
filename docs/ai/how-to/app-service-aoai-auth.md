@@ -162,11 +162,11 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 
     The preceding packages each handle the following concerns for this scenario:
 
-    - **Azure.Identity**: Provides core functionality to work with Microsoft Entra ID
-    - **Azure.AI.OpenAI**: Enables your app to interface with the Azure OpenAI service.
-    - **Microsoft.Extensions.Azure**: Provides helper extensions to register services for dependency injection.
-    - **Microsoft.Extensions.AI**: Provides AI abstractions for common AI tasks
-    - **Microsoft.Extensions.AI.OpenAI**: Enables you to use OpenAI service types as AI abstractions provided by **Microsoft.Extensions.AI**
+    - **[Azure.Identity](https://www.nuget.org/packages/Azure.Identity)**: Provides core functionality to work with Microsoft Entra ID
+    - **[Azure.AI.OpenAI](https://www.nuget.org/packages/Azure.AI.OpenAI)**: Enables your app to interface with the Azure OpenAI service
+    - **[Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure)**: Provides helper extensions to register services for dependency injection
+    - **[Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI)**: Provides AI abstractions for common AI tasks
+    - **[Microsoft.Extensions.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI)**: Enables you to use OpenAI service types as AI abstractions provided by **Microsoft.Extensions.AI**
 
 1. In the `Program.cs` file of your app, create a `DefaultAzureCredential` object to discover and configure available credentials:
 

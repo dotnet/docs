@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.topic: how-to
 zone_pivot_groups: dotnet-version
 ms.collection: ce-skilling-ai-copilot
-ms.custom: vs-copilot-horizontal
+ms.custom: copilot-scenario-highlight
 ---
 
 # Migrate from Newtonsoft.Json to System.Text.Json

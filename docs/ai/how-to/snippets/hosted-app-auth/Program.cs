@@ -1,8 +1,7 @@
-﻿using Azure.Identity;
-using Microsoft.Extensions.Azure;
+﻿using Azure.AI.OpenAI;
+using Azure.Identity;
 using Microsoft.Extensions.AI;
-using Azure.AI.OpenAI;
-using System.ClientModel;
+using Microsoft.Extensions.Azure;
 
 var builder = WebApplication.CreateBuilder(args);
 

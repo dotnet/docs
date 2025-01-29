@@ -24,7 +24,7 @@ Starting from .NET 9 (`Microsoft.Extensions.Http` and `Microsoft.Extensions.Depe
 
 As of .NET 9, you need to _opt in_ to the feature by calling the <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed%2A> extension method. If opted in, the Named client applying the configuration is added to the DI container as a Keyed `HttpClient` service, using the client's name as a service key, so you can use the standard Keyed Services APIs (for example, <xref:Microsoft.Extensions.DependencyInjection.FromKeyedServicesAttribute>) to obtain the desired Named `HttpClient` instances (created and configured by `IHttpClientFactory`). By default, the clients are registered with _Scoped_ lifetime.
 
-The following code illustrates the integration between `HttpClientFactory`, Keyed DI, and ASP.NET Core 9.0 Minimal APIs:
+The following code illustrates the integration between `IHttpClientFactory`, Keyed DI, and ASP.NET Core 9.0 Minimal APIs:
 
 :::code source="snippets/http/keyedservices/Program.cs" highlight="4,10,16":::
 
@@ -144,7 +144,7 @@ If you call `AddAsKeyed()` within a Typed client registration, only the underlyi
 > - as a Keyed _Scoped_ or _Transient_, and injected within a _long-running_ (longer than `HandlerLifetime`) application Scope, -OR-
 > - as a Keyed _Transient_, and injected into a _Singleton_ service,
 >
-> &mdash;the `HttpClient` instance becomes _captive_, and will likely outlive its expected `HandlerLifetime`. `HttpClientFactory` has no control over captive clients, they're NOT able to participate in the handler rotation, and it can result in [the loss of DNS changes](httpclient-factory-troubleshooting.md#httpclient-doesnt-respect-dns-changes). A similar issue [already exists](httpclient-factory.md#avoid-typed-clients-in-singleton-services) for Typed clients, which are registered as Transient services.
+> &mdash;the `HttpClient` instance becomes _captive_, and will likely outlive its expected `HandlerLifetime`. `IHttpClientFactory` has no control over captive clients, they're NOT able to participate in the handler rotation, and it can result in [the loss of DNS changes](httpclient-factory-troubleshooting.md#httpclient-doesnt-respect-dns-changes). A similar issue [already exists](httpclient-factory.md#avoid-typed-clients-in-singleton-services) for Typed clients, which are registered as Transient services.
 
 In cases when client's longevity can't be avoided&mdash;or if it's consciously desired, for example, for a Keyed Singleton&mdash;it's advised to [leverage `SocketsHttpHandler`](httpclient-factory.md#using-ihttpclientfactory-together-with-socketshttphandler) by setting `PooledConnectionLifetime` to a reasonable value.
 
@@ -163,19 +163,19 @@ public class MySingleton([FromKeyedServices("shared")] HttpClient shared) // { .
 While Scoped lifetime is much less problematic for the Named `HttpClient`s (compared to Singleton and Transient pitfalls), it has its own catch.
 
 > [!IMPORTANT]
-> Keyed Scoped lifetime of a specific `HttpClient` instance is bound&mdash;as expected&mdash;to the "ordinary" application scope (for example, incoming request scope) where it was resolved from. However, it does NOT apply to the underlying message handler chain, which is still managed by the `HttpClientFactory`, in the same way it is for the Named clients created directly from factory. `HttpClient`s with the _same_ name, but resolved (within a `HandlerLifetime` timeframe) in two different scopes (for example, two concurrent requests to the same endpoint), can reuse the _same_ `HttpMessageHandler` instance. That instance, in turn, has its own separate scope, as illustrated in the [Message handler scopes](httpclient-factory.md#message-handler-scopes-in-ihttpclientfactory).
+> Keyed Scoped lifetime of a specific `HttpClient` instance is bound&mdash;as expected&mdash;to the "ordinary" application scope (for example, incoming request scope) where it was resolved from. However, it does NOT apply to the underlying message handler chain, which is still managed by the `IHttpClientFactory`, in the same way it is for the Named clients created directly from factory. `HttpClient`s with the _same_ name, but resolved (within a `HandlerLifetime` timeframe) in two different scopes (for example, two concurrent requests to the same endpoint), can reuse the _same_ `HttpMessageHandler` instance. That instance, in turn, has its own separate scope, as illustrated in the [Message handler scopes](httpclient-factory.md#message-handler-scopes-in-ihttpclientfactory).
 
 > [!NOTE]
 > The [Scope Mismatch](httpclient-factory-troubleshooting.md#httpclient-doesnt-respect-scoped-lifetime) problem is nasty and long-existing one, and as of .NET 9 still remains [unsolved](https://github.com/dotnet/runtime/issues/47091). From a service injected through the regular DI infra, you would expect all the dependencies to be satisfied from the same scope&mdash;but for the Keyed Scoped `HttpClient` instances, that's unfortunately not the case.
 
 ## Keyed message handler chain
 
-For some advanced scenarios, you might want to access `HttpMessageHandler` chain directly, instead of an `HttpClient` object. `HttpClientFactory` provides `IHttpMessageHandlerFactory` interface to create the handlers; and if you enable Keyed DI, then not only `HttpClient`, but also the respective `HttpMessageHandler` chain is registered as a Keyed service:
+For some advanced scenarios, you might want to access `HttpMessageHandler` chain directly, instead of an `HttpClient` object. `IHttpClientFactory` provides `IHttpMessageHandlerFactory` interface to create the handlers; and if you enable Keyed DI, then not only `HttpClient`, but also the respective `HttpMessageHandler` chain is registered as a Keyed service:
 
 ```csharp
-services.AddHttpClient("foo").AddAsKeyed();
+services.AddHttpClient("keyed-handler").AddAsKeyed();
 
-var handler = provider.GetRequiredKeyedService<HttpMessageHandler>("foo");
+var handler = provider.GetRequiredKeyedService<HttpMessageHandler>("keyed-handler");
 var invoker = new HttpMessageInvoker(handler, disposeHandler: false);
 ```
 
@@ -187,47 +187,47 @@ var invoker = new HttpMessageInvoker(handler, disposeHandler: false);
 A minimal-change switch from an existing Typed client to a Keyed dependency can look as follows:
 
 ```diff
-- services.AddHttpClient<Foo>(        // (1) Typed client
-+ services.AddHttpClient(nameof(Foo), // (1) Named client
-      c => { /* ... */ }              // HttpClient configuration
+- services.AddHttpClient<Service>(         // (1) Typed client
++ services.AddHttpClient(nameof(Service),  // (1) Named client
+      c => { /* ... */ }                   // HttpClient configuration
   //).Configure....
 - );
-+ ).AddAsKeyed();                     // (1) + Keyed DI opt-in
++ ).AddAsKeyed();                          // (1) + Keyed DI opt-in
 
-+ services.AddTransient<Foo>();       // (1) Plain Transient service
++ services.AddTransient<Service>();        // (1) Plain Transient service
 
-  public class Foo(
--                                      // (2) Implicit ("hidden" Named) dependency
-+     [FromKeyedServices(nameof(Foo))] // (2) Explicit Keyed Service dependency
+  public class Service(
+-                                          // (2) "Hidden" Named dependency
++     [FromKeyedServices(nameof(Service))] // (2) Explicit Keyed dependency
       HttpClient httpClient) // { ...
 ```
 
 In the example:
 
-1. The registration of the Typed client `Foo` is split into:
-    - A registration of a Named client `nameof(Foo)` with the same `HttpClient` configuration, and an opt-in to Keyed DI; and
-    - Plain Transient service `Foo`.
-2. `HttpClient` dependency in `Foo` is explicitly bound to a Keyed Service with a key `nameof(Foo)`.
+1. The registration of the Typed client `Service` is split into:
+    - A registration of a Named client `nameof(Service)` with the same `HttpClient` configuration, and an opt-in to Keyed DI; and
+    - Plain Transient service `Service`.
+2. `HttpClient` dependency in `Service` is explicitly bound to a Keyed Service with a key `nameof(Service)`.
 
-The name doesn't have to be `nameof(Foo)`, but the example aimed to minimize the behavioral changes. Internally, typed clients use Named clients, and by default, such "hidden" Named clients go by the linked Typed client's type name. In this case, the "hidden" name was `nameof(Foo)`, so the example preserved it.
+The name doesn't have to be `nameof(Service)`, but the example aimed to minimize the behavioral changes. Internally, typed clients use Named clients, and by default, such "hidden" Named clients go by the linked Typed client's type name. In this case, the "hidden" name was `nameof(Service)`, so the example preserved it.
 
 Technically, the example "unwraps" the Typed client, so that the previously "hidden" Named client becomes "exposed," and the dependency is satisfied via the Keyed DI infra instead of the Typed client infra.
 
 ## How to: Opt in to Keyed DI by default
 
-You don't have to call `AddAsKeyed` for every single client&mdash;you can easily opt in "globally" (for any client name) via `ConfigureHttpClientDefaults`. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
+You don't have to call `AddAsKeyed` for every single client&mdash;you can easily opt in "globally" (for any client name) via <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());
 
-services.AddHttpClient("foo", /* ... */);
-services.AddHttpClient("bar", /* ... */);
-services.AddHttpClient("baz", /* ... */);
+services.AddHttpClient("first", /* ... */);
+services.AddHttpClient("second", /* ... */);
+services.AddHttpClient("third", /* ... */);
 
-public class FooBarBazController(
-    [FromKeyedServices("foo")] HttpClient foo,
-    [FromKeyedServices("bar")] HttpClient bar,
-    [FromKeyedServices("baz")] HttpClient baz)
+public class MyController(
+    [FromKeyedServices("first")] HttpClient first,
+    [FromKeyedServices("second")] HttpClient second,
+    [FromKeyedServices("third")] HttpClient third)
 //{ ...
 ```
 
@@ -242,7 +242,7 @@ public class FooBarBazController(
 The same is true for the plain Named clients: `IHttpClientFactory` doesn't require the client name to be explicitly registered (aligning with the way the [Options pattern](options.md) works). The factory gives you an unconfigured&mdash;or, more precisely, default-configured&mdash;`HttpClient` for any unknown name.
 
 > [!NOTE]
-> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient`s, but all the clients that `HttpClientFactory` is _able to create_.
+> Therefore, it's important to keep in mind: the "Keyed by default" approach covers not only all _registered_ `HttpClient`s, but all the clients that `IHttpClientFactory` is _able to create_.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());
@@ -254,7 +254,7 @@ provider.GetRequiredKeyedService<HttpClient>("unknown"); // OK (unconfigured ins
 
 ### "Opt-in" strategy considerations
 
-Even though the "global" opt-in is a one-liner, it's unfortunate that the feature still requires it, instead of just working "out of the box." For full context and reasoning on that decision, see [dotnet/runtime#89755](https://github.com/dotnet/runtime/issues/89755) and [dotnet/runtime#104943](https://github.com/dotnet/runtime/pull/104943). In short, the main blocker for "on by default" is the `ServiceLifetime` "controversy": for the current (`9.0.0`) state of the DI and `HttpClientFactory` implementations, there's no single `ServiceLifetime` that would be reasonably safe for all `HttpClient`s in all possible situations. There's an intention, however, to address the caveats in the upcoming releases, and switch the strategy from "opt-in" to "opt-out".
+Even though the "global" opt-in is a one-liner, it's unfortunate that the feature still requires it, instead of just working "out of the box." For full context and reasoning on that decision, see [dotnet/runtime#89755](https://github.com/dotnet/runtime/issues/89755) and [dotnet/runtime#104943](https://github.com/dotnet/runtime/pull/104943). In short, the main blocker for "on by default" is the `ServiceLifetime` "controversy": for the current (`9.0.0`) state of the DI and `IHttpClientFactory` implementations, there's no single `ServiceLifetime` that would be reasonably safe for all `HttpClient`s in all possible situations. There's an intention, however, to address the caveats in the upcoming releases, and switch the strategy from "opt-in" to "opt-out".
 
 ## How to: Opt out from keyed registration
 
@@ -270,7 +270,7 @@ provider.GetRequiredKeyedService<HttpClient>("not-keyed"); // Throws: No service
 provider.GetRequiredKeyedService<HttpClient>("unknown");   // OK (unconfigured instance)
 ```
 
-Or "globally" with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Microsoft.Extensions.DependencyInjection.IHttpClientBuilder>)>:
+Or "globally" with <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>:
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.RemoveAsKeyed()); // opt OUT by default
@@ -284,7 +284,7 @@ provider.GetRequiredKeyedService<HttpClient>("unknown");   // Throws: No service
 
 ## Order of precedence
 
-If called together or any of them more than once, `AddAsKeyed()` and `RemoveAsKeyed()` generally follow the rules of `HttpClientFactory` configs and DI registrations:
+If called together or any of them more than once, `AddAsKeyed()` and `RemoveAsKeyed()` generally follow the rules of `IHttpClientFactory` configs and DI registrations:
 
 1. If called for the same name, the last setting wins: the lifetime from the last `AddAsKeyed()` is used to create the Keyed registration (unless `RemoveAsKeyed()` was called last, in which case the name is excluded).
 2. If used only within `ConfigureHttpClientDefaults`, the last setting wins.

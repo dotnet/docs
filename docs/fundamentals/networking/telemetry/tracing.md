@@ -37,15 +37,11 @@ However, as an application developer, you would likely prefer to rely on the ric
 - To get a fundamental understanding on trace collection with OTel, see our guide on [collecting traces using OpenTelemetry](../../../core/diagnostics/distributed-tracing-collection-walkthroughs.md#collect-traces-using-opentelemetry).
 - For **production-time** trace collection and monitoring, you can use OpenTelemetry with [Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) or with [Azure Monitor and Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools are quite complex and might be inconvenient to use at development time.
 - For **development-time** trace collection and monitoring, we recommend using [.NET Aspire](#collect-traces-with-net-aspire). which provides a simple but extensible way to kickstart distributed tracing in your application and to diagnose issues locally.
-- It's also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET projects.
+- It's also possible to [reuse the Aspire Service Defaults](#reuse-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration. This is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET projects.
 
 ### Collect traces with .NET Aspire
 
-The simplest way to collect traces for ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview), which is a set of extensions to .NET that make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET. The default project templates for .NET Aspire contain a `ServiceDefaults` project, part of which set ups and configures OTel. The Service Defaults project is referenced and initialized by each service in a .NET Aspire solution.
-
-The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient, and Runtime Instrumentation packages, and those are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/39912824d33de54be24baf842bf9228a6a84ac33/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/9.0/Extensions.cs) file. For exporting telemetry, .NET Aspire includes the OTLP exporter by default so that it can provide telemetry visualization using the Aspire Dashboard.
-
-The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you <kbd>F5</kbd> the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project from the command line.
+[!INCLUDE[Aspire Telemetry Overview](./includes/aspire-telemetry-overview.md)]
 
 [![Aspire Dashboard](../../../core/diagnostics/media/aspire-dashboard-thumb.png)](../../../core/diagnostics/media/aspire-dashboard.png#lightbox)
 
@@ -55,33 +51,9 @@ For more information on .NET Aspire, see:
 - [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
 - [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
 
-### Reusing Service Defaults project without .NET Aspire Orchestration
+### Reuse Service Defaults project without .NET Aspire Orchestration
 
-The Aspire Service Defaults project provides an easy way to configure OTel for ASP.NET projects, *even if not using the rest of .NET Aspire* such as the AppHost for orchestration. It's available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/c94c422e31b2a5181a97b2dcf4bdc984f37ac1ff/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application.
-
-The steps to use *ServiceDefaults* outside .NET Aspire are:
-
-1. Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new`:
-
-    ```dotnetcli
-    dotnet new aspire-servicedefaults --output ServiceDefaults
-    ```
-
-1. Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio, use *Add -> Project Reference* and select the *ServiceDefaults* project.
-1. Call its OpenTelemetry setup function, `ConfigureOpenTelemetry` as part of your application builder initialization.
-
-    ``` csharp
-    var builder = WebApplication.CreateBuilder(args);
-    builder.ConfigureOpenTelemetry();
-
-    var app = builder.Build();
-
-    app.MapGet("/", () => "Hello World!");
-
-    app.Run();
-    ```
-
-For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../core/diagnostics/observability-otlp-example.md).
+[!INCLUDE[Aspire Service Defaults](./includes/aspire-service-defaults.md)]
 
 ## Experimental connection tracing
 

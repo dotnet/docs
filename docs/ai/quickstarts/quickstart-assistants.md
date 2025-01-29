@@ -23,6 +23,7 @@ In this quickstart, you'll learn how to create a minimal AI assistant using the 
 
 * [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
 * [Visual Studio Code](https://code.visualstudio.com/) (optional)
+* [Visual Studio](https://visualstudio.com/) (optional)
 * An access key for an OpenAI model
 
 :::zone-end
@@ -31,6 +32,7 @@ In this quickstart, you'll learn how to create a minimal AI assistant using the 
 
 * [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
 * [Visual Studio Code](https://code.visualstudio.com/) (optional)
+* [Visual Studio](https://visualstudio.com/) (optional)
 * Access to an Azure OpenAI instance via Azure Identity or an access key
 
 :::zone-end
@@ -107,29 +109,23 @@ Complete the following steps to create a .NET console app and add the package ne
 
 1. Open the _Program.cs_ file and replace the contents of the file with the following code to create the required clients:
 
-    ::: zone pivot="openai"
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="0-10" :::
-    ::: zone-end
-
-    ::: zone pivot="azure-openai"
-    :::code language="csharp" source="snippets/assistants/azureopenai/program.cs" range="0-10" :::
-    ::: zone-end
+    :::code language="csharp" source="snippets/assistants/program.cs" range="0-17" :::
 
 1. Create an in-memory sample document and upload it to the `OpenAIFileClient`:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="12-46" :::
+    :::code language="csharp" source="snippets/assistants/program.cs" range="19-53" :::
 
 1. Enable file search and code interpreter tooling capabilities via the `AssistantCreationOptions`:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="48-71" :::
+    :::code language="csharp" source="snippets/assistants/program.cs" range="55-78" :::
 
 1. Create the `Assistant` and a thread to manage interactions between the user and the assistant:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="73-98" :::
+    :::code language="csharp" source="snippets/assistants/program.cs" range="80-105" :::
 
 1. Print the messages and save the generated image from the conversation with the assistant:
 
-    :::code language="csharp" source="snippets/assistants/openai/program.cs" range="100-140" :::
+    :::code language="csharp" source="snippets/assistants/program.cs" range="107-147" :::
 
     Locate and open the saved image in the app bin directory, which should resemble the following:
 

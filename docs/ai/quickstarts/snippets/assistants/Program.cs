@@ -1,13 +1,20 @@
-﻿using Azure.AI.OpenAI;
-using Azure.Identity;
+﻿using OpenAI;
 using OpenAI.Assistants;
 using OpenAI.Files;
+using Azure.AI.OpenAI;
+using Azure.Identity;
 
-// Create the necessary clients
-AzureOpenAIClient openAIClient = new(new Uri("your-azure-openai-endpoint"), new DefaultAzureCredential());
-OpenAIFileClient fileClient = openAIClient.GetOpenAIFileClient();
+// Create the OpenAI client
+OpenAIClient openAIClient = new("your-apy-key");
+
+// For Azure OpenAI, use the following client instead:
+AzureOpenAIClient azureAIClient = new(
+        new Uri("your-azure-openai-endpoint"),
+        new DefaultAzureCredential());
+
 #pragma warning disable OPENAI001
 AssistantClient assistantClient = openAIClient.GetAssistantClient();
+OpenAIFileClient fileClient = openAIClient.GetOpenAIFileClient();
 
 // Create an in-memory document to upload to the file client
 using Stream document = BinaryData.FromBytes("""

@@ -23,9 +23,9 @@ To take advantage of the built-in metrics instrumentation, a .NET app needs to b
 
 There are several ways to collect networking metrics in .NET.
 
-- For a quick overview using a simple, self-contained example, see [collect metrics with dotnet-counters](#collect-metrics-with-dotnet-counters).
+- For a quick overview using a simple, self-contained example, see [Collect metrics with dotnet-counters](#collect-metrics-with-dotnet-counters).
 - For **production-time** metrics collection and monitoring, you can use [Grafana with OpenTelemetry and Prometheus](#view-metrics-in-grafana-with-opentelemetry-and-prometheus) or [Azure Monitor  Application Insights](../../../core/diagnostics/observability-applicationinsights.md). However, these tools might be inconvenient to use at development time because of their complexity.
-- For **development-time** metrics collection and troubleshooting we recommend using [.NET Aspire](#collect-metrics-with-net-aspire), which provides a simple, but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
+- For **development-time** metrics collection and troubleshooting, we recommend using [.NET Aspire](#collect-metrics-with-net-aspire), which provides a simple but extensible way to kickstart metrics and distributed tracing in your application and to diagnose issues locally.
 - It's also possible to [reuse the Aspire Service Defaults](#reusing-service-defaults-project-without-net-aspire-orchestration) project without the Aspire orchestration, which is a handy way to introduce the OpenTelemetry tracing and metrics configuration APIs into your ASP.NET project.
 
 ### Collect metrics with dotnet-counters
@@ -55,7 +55,7 @@ Start the HelloBuiltinMetrics app.
 dotnet run -c Release
 ```
 
-Start `dotnet-counters` in a separate CLI window and specifying the process name and the meters to watch, then press a key in the HelloBuiltinMetrics app so it starts sending requests. As soon as measurements start landing, `dotnet-counters` continuously refreshes the console with the latest numbers:
+Start `dotnet-counters` in a separate CLI window and specify the process name and the meters to watch, then press a key in the HelloBuiltinMetrics app so it starts sending requests. As soon as measurements start landing, `dotnet-counters` continuously refreshes the console with the latest numbers:
 
 ```console
 dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n HelloBuiltinMetrics
@@ -65,13 +65,13 @@ dotnet-counters monitor --counters System.Net.Http,System.Net.NameResolution -n 
 
 ### Collect metrics with .NET Aspire
 
-The simplest solution to collect metrics in ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview) which is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET.
+The simplest solution to collect metrics in ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview), which is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET.
 
-The default project templates for .NET Aspire contain a `ServiceDefaults` project, part of which is to setup and configure OTel. Each service in the .NET Aspire solution has a reference to the Service Defaults project.
+The default project templates for .NET Aspire contain a `ServiceDefaults` project, part of which is to set up and configure OTel. Each service in the .NET Aspire solution has a reference to the Service Defaults project.
 
-The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient and Runtime Instrumentation packages. These instrumentation components are configured in the [`Extensions.cs`](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file. .NET Aspire also includes the OTLP exporter by default, so that it can provide telemetry visualization using the Aspire Dashboard.
+The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient, and Runtime Instrumentation packages. These instrumentation components are configured in the [Extensions.cs](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/Extensions.cs) file. .NET Aspire also includes the OTLP exporter by default, so that it can provide telemetry visualization using the Aspire Dashboard.
 
-The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is proving to be as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you F5 the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
+The Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to not only ensure that the applications are producing telemetry, but also use that telemetry to diagnose those applications locally. Being able to observe the calls between services is as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you <kbd>F5</kbd> the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project.
 
 #### Quick walkthrough
 
@@ -81,7 +81,7 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
     dotnet new aspire-starter-9 --output AspireDemo
     ```
 
-    Or in Visual Studio:
+    Or in Visual Studio, create a new project and select the **.NET Aspire 9 Starter App** template:
 
     ![Create a .NET Aspire 9 Starter App in Visual Studio](media/aspire-starter.png)
 
@@ -105,7 +105,7 @@ The Aspire Dashboard is designed to bring telemetry observation to the local deb
 
 1. Navigate to the Weather page of the `webfrontend` app to generate an `HttpClient` request towards `apiservice`. Refresh the page several times to send multiple requests.
 
-1. Return to the Dashboard, navigate to the **Metrics** page and select the `webfrontend` resource. Scrolling down, you should be able to browse the built-in `System.Net` metrics.
+1. Return to the Dashboard, navigate to the **Metrics** page, and select the `webfrontend` resource. Scrolling down, you should be able to browse the built-in `System.Net` metrics.
 
     [![Networking metrics in Aspire Dashboard](media/aspire-metrics-thumb.png)](media/aspire-metrics.png#lightbox)
 
@@ -115,14 +115,14 @@ For more information on .NET Aspire, see:
 - [Telemetry in Aspire](/dotnet/aspire/fundamentals/telemetry)
 - [Aspire Dashboard](/dotnet/aspire/fundamentals/dashboard/explore)
 
-### Reusing Service Defaults project without .NET Aspire Orchestration
+### Reuse Service Defaults project without .NET Aspire orchestration
 
-Probably the easiest way to configure OTel for ASP.NET projects is to use the Aspire Service Defaults project, even if not using the rest of .NET Aspire such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to, and provide the resource properties for the application.
+The easiest way to configure OTel for ASP.NET projects is to use the Aspire Service Defaults project, even if you're not using the rest of .NET Aspire, such as the AppHost for orchestration. The Service Defaults project is available as a project template via Visual Studio or `dotnet new`. It configures OTel and sets up the OTLP exporter. You can then use the [OTel environment variables](https://github.com/open-telemetry/opentelemetry-dotnet/tree/main/src/OpenTelemetry.Exporter.OpenTelemetryProtocol#exporter-configuration) to configure the OTLP endpoint to send telemetry to and provide the resource properties for the application.
 
 The steps to use *ServiceDefaults* outside .NET Aspire are:
 
-1. Add the *ServiceDefaults* project to the solution using Add New Project in Visual Studio, or use `dotnet new aspire-servicedefaults --output ServiceDefaults`
-1. Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio use "Add -> Project Reference" and select the *ServiceDefaults* project"
+1. Add the *ServiceDefaults* project to the solution using **Add New Project** in Visual Studio, or, from the command line, use `dotnet new aspire-servicedefaults --output ServiceDefaults`.
+1. Reference the *ServiceDefaults* project from your ASP.NET application. In Visual Studio, select **Add** > **Project Reference** and select the **ServiceDefaults** project"
 1. Call the OpenTelemetry setup function `ConfigureOpenTelemetry()` as part of your application builder initialization.
 
     ``` csharp
@@ -137,7 +137,7 @@ For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standa
 
 ### View metrics in Grafana with OpenTelemetry and Prometheus
 
-Please follow the walkthrough in [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md) to see how to connect an example app with Prometheus and Grafana.
+To see how to connect an example app with Prometheus and Grafana, follow the walkthrough in [Using OpenTelemetry with Prometheus, Grafana, and Jaeger](../../../core/diagnostics/observability-prgrja-example.md).
 
 In order to stress `HttpClient` by sending parallel requests to various endpoints, extend the example app with the following endpoint:
 

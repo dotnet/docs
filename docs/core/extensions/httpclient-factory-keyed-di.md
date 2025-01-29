@@ -37,7 +37,7 @@ Endpoint response:
 
 In the example, the configured `HttpClient` is injected into the request handler through the standard Keyed DI infrastructure, which is integrated into ASP.NET Core parameter binding. For more information on Keyed Services in ASP.NET Core, see [Dependency injection in ASP.NET Core](/aspnet/core/fundamentals/dependency-injection#keyed-services).
 
-## Approach comparison
+## Comparison of Keyed, Named, and Typed approaches
 
 Consider only the `IHttpClientFactory`-related code from the [Basic Usage](#basic-usage) example:
 
@@ -131,7 +131,7 @@ If you call `AddAsKeyed()` within a Typed client registration, only the underlyi
 ### Avoid transient HttpClient memory leak
 
 > [!IMPORTANT]
-> `HttpClient` is `IDisposable`, so we strongly recommend _avoiding_ Transient lifetime for Keyed `HttpClient`s.
+> `HttpClient` is `IDisposable`, so we strongly recommend _avoiding_ Transient lifetime for Keyed `HttpClient` instances.
 >
 > Registering the client as a Keyed Transient service leads to the `HttpClient` and `HttpMessageHandler` instances being _captured by DI container_, as both implement `IDisposable`. This can result in _memory leaks_ if the client is resolved multiple times within Singleton services.
 
@@ -215,7 +215,7 @@ Technically, the example "unwraps" the Typed client, so that the previously "hid
 
 ## How to: Opt in to Keyed DI by default
 
-You don't have to call `AddAsKeyed` for every single client&mdash;you can easily opt in "globally" (for any client name) via <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
+You don't have to call <xref:Microsoft.Extensions.DependencyInjection.HttpClientBuilderExtensions.AddAsKeyed%2A> for every single client&mdash;you can easily opt in "globally" (for any client name) via <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.ConfigureHttpClientDefaults%2A>. From Keyed Services perspective, it results in the <xref:Microsoft.Extensions.DependencyInjection.KeyedService.AnyKey?displayProperty=nameWithType> registration.
 
 ```csharp
 services.ConfigureHttpClientDefaults(b => b.AddAsKeyed());

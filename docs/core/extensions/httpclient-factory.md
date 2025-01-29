@@ -303,7 +303,7 @@ In this section, the term _"factory-default" Primary Handler_ refers to the Prim
 
 There are cases in which you need to know the specific type of a Primary Handler, especially if working on a class library. While preserving the end user's configuration, you might want to update, for example, `HttpClientHandler`-specific properties like `ClientCertificates`, `UseCookies`, and `UseProxy`. It might be tempting to cast the Primary handler to `HttpClientHandler`, which _happened to_ work while `HttpClientHandler` was used as the "factory-default" Primary Handler. But as any code depending on implementation details, such a workaround is _fragile_ and bound to break.
 
-Instead, you can use `ConfigureHttpClientDefaults` to set up an "app-level" default Primary Handler instance instead of relying on the "factory-default" one:
+Instead of relying on the "factory-default" Primary Handler, you can use `ConfigureHttpClientDefaults` to set up an "app-level" default Primary Handler instance:
 
 ```csharp
 // Contract with the end-user: Only HttpClientHandler is supported.

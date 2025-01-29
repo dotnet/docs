@@ -38,7 +38,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 | Target Framework           | TFM |
 | -------------------------- | --- |
-| .NET 5+ (and .NET Core)    | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0*<br>net6.0*<br>net7.0*<br>net8.0* |
+| .NET 5+ (and .NET Core)    | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0*<br>net6.0*<br>net7.0*<br>net8.0*<br>net9.0* |
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0<br>netstandard2.1 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472<br>net48<br>net481 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
@@ -51,7 +51,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 ### .NET 5+ OS-specific TFMs
 
-The `net5.0`, `net6.0`, `net7.0`, `net8.0`, and `net.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net9.0` TFM.
+The `net5.0`, `net6.0`, `net7.0`, `net8.0`, and `net9.0` TFMs include technologies that work across different platforms. Specifying an *OS-specific TFM* makes APIs that are specific to an operating system available to your app, for example, Windows Forms or iOS bindings. OS-specific TFMs also inherit every API available to their base TFM, for example, the `net9.0` TFM.
 
 .NET 5 introduced the `net5.0-windows` OS-specific TFM, which includes Windows-specific bindings for WinForms, WPF, and UWP APIs. .NET 6 and later versions have additional OS-specific TFMs, for example, `net6.0-ios`.
 

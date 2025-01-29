@@ -47,7 +47,7 @@ On Windows, Native AOT uses a prepopulated list of direct P/Invoke methods that 
 
 ### Linking
 
-To statically link against an unmanaged library, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems.
+To statically link against one or more unmanaged libraries, you need to specify `<NativeLibrary Include="filename" />` pointing to a `.lib` file on Windows and a `.a` file on Unix-like systems for each library.
 
 Examples:
 
@@ -56,8 +56,11 @@ Examples:
   <!-- Generate direct PInvokes for Dependency -->
   <DirectPInvoke Include="Dependency" />
   <!-- Specify library to link against -->
-  <NativeLibrary Include="Dependency.lib" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
-  <NativeLibrary Include="Dependency.a" Condition="!$(RuntimeIdentifier.StartsWith('win'))" />
+  <NativeLibrary Include="/path/to/Dependency.lib" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
+  <NativeLibrary Include="/path/to/Dependency.a" Condition="!$(RuntimeIdentifier.StartsWith('win'))" />
+  <!-- Specify an additional library to link against, if necessary -->
+  <NativeLibrary Include="/path/to/TransitiveDependency.lib" Condition="$(RuntimeIdentifier.StartsWith('win'))" />
+  <NativeLibrary Include="/path/to/TransitiveDependency.a" Condition="!$(RuntimeIdentifier.StartsWith('win'))" />
 </ItemGroup>
 ```
 

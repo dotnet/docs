@@ -19,4 +19,4 @@ The steps to use *ServiceDefaults* outside .NET Aspire are:
     app.Run();
     ```
 
-For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../core/diagnostics/observability-otlp-example.md).
+For a full walkthrough, see [Example: Use OpenTelemetry with OTLP and the standalone Aspire Dashboard](../../../../core/diagnostics/observability-otlp-example.md).

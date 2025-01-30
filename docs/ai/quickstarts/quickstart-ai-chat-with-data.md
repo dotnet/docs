@@ -12,7 +12,7 @@ zone_pivot_groups: openai-library
 
 # Build a .NET AI vector search app
 
-In this quickstart, you create a .NET console app to perform semantic search on a vector store to find relevant results for the user's query. You learn how to generate embeddings for user prompts and use those embeddings to query the vector data store. Vector search functionality is also a key component for Retrieval Augmented Generation (RAG) scenarios. The app uses the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
+In this quickstart, you create a .NET console app to perform semantic search on a vector store to find relevant results for the user's query. You learn how to generate embeddings for user prompts and use those embeddings to query the vector data store. Vector search functionality is also a key component for Retrieval Augmented Generation (RAG) scenarios. The app uses the <Microsoft.Extensions.AI> and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
 
 :::zone target="docs" pivot="openai"
 
@@ -42,7 +42,7 @@ The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide libra
 - Use vector and text search on vector stores
 
 > [!NOTE]
-> The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in Preview.
+> The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in preview.
 
 ## Create the app
 
@@ -148,8 +148,9 @@ Complete the following steps to create a .NET console app that can accomplish th
    :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
 
     In the preceding code:
-    - The C# attributes provided by `Microsoft.Extensions.VectorData` influence how each property is handled when used in a vector store
-    - The **Vector** property stores a generated embedding that represents the semantic meaning of the **Name** and **Description** for vector searches
+
+    - The C# attributes provided by `Microsoft.Extensions.VectorData` influence how each property is handled when used in a vector store.
+    - The **Vector** property stores a generated embedding that represents the semantic meaning of the **Name** and **Description** for vector searches.
 
 1. In the **Program.cs** file, add the following code to create a data set that describes a collection of cloud services:
 

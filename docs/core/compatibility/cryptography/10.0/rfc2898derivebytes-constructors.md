@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: Rfc2898DeriveBytes constructors are obsolete"
 description: Learn about the .NET 10 breaking change in core .NET libraries where Rfc2898DeriveBytes constructors are obsolete.
-ms.date: 10/10/2023
+ms.date: 01/30/2025
 ---
 # Rfc2898DeriveBytes constructors are obsolete
 
@@ -23,7 +23,7 @@ The `Rfc2898DeriveBytes` constructors are obsolete with SYSLIB0060 diagnostic ID
 
 ## Type of breaking change
 
-This change is a [source incompatible](../../categories.md#source-incompatible) change.
+These obsoletions can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 
@@ -50,4 +50,4 @@ byte[] derivedKey = Rfc2898DeriveBytes.Pbkdf2(password, salt, iterations, hashAl
 
 ## Affected APIs
 
-- <xref:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor>
+- <xref:System.Security.Cryptography.Rfc2898DeriveBytes.#ctor> (all overloads)

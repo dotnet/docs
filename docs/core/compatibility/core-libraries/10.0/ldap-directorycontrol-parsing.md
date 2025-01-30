@@ -57,6 +57,6 @@ Servers should comply with the RFCs and specifications. Users should be aware of
 
 ## Affected APIs
 
-- <xref:System.DirectoryServices.Protocols.LdapConnection.SendRequest>
-- <xref:System.DirectoryServices.Protocols.LdapConnection.EndSendRequest>
-- <xref:System.DirectoryServices.Protocols.VlvRequestControl..ctor>
+- <xref:System.DirectoryServices.Protocols.LdapConnection.SendRequest*?displayProperty=fullName>
+- <xref:System.DirectoryServices.Protocols.LdapConnection.EndSendRequest*?displayProperty=fullName>
+- <xref:System.DirectoryServices.Protocols.VlvRequestControl.%23ctor*>

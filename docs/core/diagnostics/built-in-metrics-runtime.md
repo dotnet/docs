@@ -100,6 +100,10 @@ Available starting in: .NET 9.0.
 | -------- | --------------- | ----------- | -------------- |
 | `dotnet.gc.last_collection.heap.fragmentation.size` | UpDownCounter | `By` | The heap fragmentation, as observed during the latest garbage collection. |
 
+| Attribute | Type | Description | Examples | Presence |
+|---|---|---|---|---|
+| `gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`;`loh`;`poh` | Always |
+
 This metric reports the same values as calling <xref:System.GCGenerationInfo.FragmentationAfterBytes?displayProperty=nameWithType>.
 
 When .NET objects are allocated, initially they tend to be laid out contiguously in memory. However, if some of those objects are later collected by the GC, this creates gaps of unused memory between the live objects that remain. These gaps represent the portion of the GC heap that's not currently being used to store objects, often called "fragmentation."  The GC can reuse the fragmentation bytes in the future for new object allocations if the object size is small enough to fit in one of the gaps. The GC can also perform a special compacting garbage collection that moves remaining live objects next to each other as long as the objects haven't been pinned in place.

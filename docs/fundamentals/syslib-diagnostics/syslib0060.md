@@ -7,15 +7,15 @@ f1_keywords:
 ---
 # SYSLIB0060: Rfc2898DeriveBytes constructors are obsolete
 
-Starting in .NET 10, all of the constructors on <xref:system.security.cryptography.rfc2898derivebytes?displayProperty=nameWithType> are obsolete. Referencing this event in code generates warning `SYSLIB0060` at compile time.
+Starting in .NET 10, all of the constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Referencing this event in code generates warning `SYSLIB0060` at compile time.
 
 ## Reason for obsoletion
 
-The instance-based implementation of PBKDF2, which <xref:system.security.cryptography.rfc2898derivebytes?displayProperty=nameWithType> provides, offers a non-standard usage by "streaming" bytes back by allowing successive calls to `GetBytes`. This is not the intended use of PBKDF2, the algorithm should be used as a one-shot. The one-shot functionality exists as the static method <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> and should be used instead of instantiating <xref:system.security.cryptography.rfc2898derivebytes?displayProperty=nameWithType>.
+The instance-based implementation of PBKDF2, which <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> provides, offers a non-standard usage by "streaming" bytes back by allowing successive calls to `GetBytes`. This is not the intended use of PBKDF2, the algorithm should be used as a one-shot. The one-shot functionality exists as the static method <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> and should be used instead of instantiating <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType>.
 
 ## Workaround
 
-Change instances of <xref:system.security.cryptography.rfc2898derivebytes?displayProperty=nameWithType> and calls to `GetBytes` to use the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> one-shot static method instead.
+Change instances of <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> and calls to `GetBytes` to use the <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> one-shot static method instead.
 
 For example, change:
 

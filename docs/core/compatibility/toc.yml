@@ -18,6 +18,10 @@ items:
                 href: core-libraries/10.0/csharp-overload-resolution.md
               - name: LDAP DirectoryControl parsing is now more stringent
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
+          - name: Globalization
+            items:
+              - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
+                href: globalization/10.0/version-override.md
           - name: Windows Forms
             items:
               - name: TreeView checkbox image truncation
@@ -1690,6 +1694,10 @@ items:
                 href: extensions/6.0/service-provider-disposed.md
       - name: Globalization
         items:
+          - name: .NET 10
+            items:
+              - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
+                href: globalization/10.0/version-override.md
           - name: .NET 8
             items:
               - name: Date and time converters honor culture argument

@@ -1,7 +1,7 @@
 ---
 title: SYSLIB0060 warning - Rfc2898DeriveBytes constructors are obsolete
 description: Learn about the obsoletion of Rfc2898DeriveBytes constructors. Use of these constructors generates compile-time warning SYSLIB0060.
-ms.date: 01/01/2025
+ms.date: 01/30/2025
 f1_keywords:
   - SYSLIB0060
 ---

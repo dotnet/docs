@@ -12,6 +12,8 @@ items:
             items:
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/10.0/obsolete-apis.md
+              - name: ActivitySource.CreateActivity and ActivitySource.StartActivity behavior change
+                href: core-libraries/10.0/activity-sampling.md
           - name: Windows Forms
             items:
               - name: TreeView checkbox image truncation
@@ -1316,6 +1318,8 @@ items:
             items:
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/10.0/obsolete-apis.md
+              - name: ActivitySource.CreateActivity and ActivitySource.StartActivity behavior change
+                href: core-libraries/10.0/activity-sampling.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags

@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Unified AI building blocks for .NET using Microsoft.Extensions.AI
 
-The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the <Microsoft.Extensions.AI> and [`Microsoft.Extensions.AI.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) libraries. The .NET team also enhanced the core `Microsoft.Extensions.*` libraries with these abstractions for .NET generative AI applications and libraries. In the sections ahead, you learn:
+The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the <xref:Microsoft.Extensions.AI> and [`Microsoft.Extensions.AI.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) libraries. The .NET team also enhanced the core `Microsoft.Extensions.*` libraries with these abstractions for .NET generative AI applications and libraries. In the sections ahead, you learn:
 
 - Core concepts and capabilities of the `Microsoft.Extensions.AI` libraries.
 - How to work with AI abstractions in your apps and the benefits they offer.
@@ -20,7 +20,7 @@ For more information, see [Introduction to Microsoft.Extensions.AI](../core/exte
 
 ## What is the Microsoft.Extensions.AI library?
 
-<Microsoft.Extensions.AI> is a set of core .NET libraries created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
+<xref:Microsoft.Extensions.AI> is a set of core .NET libraries created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
 
 :::image type="content" source="media/ai-extensions/meai-architecture-diagram.png" lightbox="media/ai-extensions/meai-architecture-diagram.png" alt-text="An architectural diagram of the AI extensions libraries.":::
 

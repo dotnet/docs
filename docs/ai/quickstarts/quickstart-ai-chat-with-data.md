@@ -12,7 +12,7 @@ zone_pivot_groups: openai-library
 
 # Build a .NET AI vector search app
 
-In this quickstart, you create a .NET console app to perform semantic search on a vector store to find relevant results for the user's query. You learn how to generate embeddings for user prompts and use those embeddings to query the vector data store. Vector search functionality is also a key component for Retrieval Augmented Generation (RAG) scenarios. The app uses the <Microsoft.Extensions.AI> and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
+In this quickstart, you create a .NET console app to perform semantic search on a vector store to find relevant results for the user's query. You learn how to generate embeddings for user prompts and use those embeddings to query the vector data store. Vector search functionality is also a key component for Retrieval Augmented Generation (RAG) scenarios. The app uses the <xref:Microsoft.Extensions.AI> and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
 
 :::zone target="docs" pivot="openai"
 

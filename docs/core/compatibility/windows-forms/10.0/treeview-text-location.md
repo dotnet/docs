@@ -8,6 +8,7 @@ ms.date: 01/30/2025
 The TreeNode in the TreeView control allows users to customize the DrawMode and add checkboxes. However, the checkbox image will be truncated due to the position of the TreeNode text drawing. To avoid affecting normal common use, an AppContext switch setting is added to solve the problem of checkbox truncation in these specific situations.
 
 The conditions under which the checkbox image is truncated are:
+
 - `CheckBoxes` is set to `true`
 - `DrawMode` is set to `OwnerDrawText`
 - `DrawDefault` is set to `true` in the `OnDrawNode` event

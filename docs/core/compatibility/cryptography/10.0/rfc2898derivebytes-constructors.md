@@ -23,7 +23,7 @@ The `Rfc2898DeriveBytes` constructors are obsolete with SYSLIB0060 diagnostic ID
 
 ## Type of breaking change
 
-These obsoletions can affect [source compatibility](../../categories.md#source-compatibility).
+This change can affect[source compatibility](../../categories.md#source-compatibility).
 
 ## Reason for change
 

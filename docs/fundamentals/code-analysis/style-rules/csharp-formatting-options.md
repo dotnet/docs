@@ -1,7 +1,7 @@
 ---
 title: C# formatting options
 description: Learn about the code style options for formatting C# code files.
-ms.date: 12/13/2022
+ms.date: 01/30/2025
 dev_langs:
 - CSharp
 ---
@@ -593,10 +593,10 @@ for(int i;i<x;i++) { ... }
 | **Option values**        | `control_flow_statements`        | Place space between parentheses of control flow statements |
 |                          | `expressions`                    | Place space between parentheses of expressions |
 |                          | `type_casts`                     | Place space between parentheses in type casts |
-|                          | `false` (or any other value)     | Ignore spaces between parentheses |
-| **Default option value** | ``                            |             |
+|                          | `false` (or any other value)     | Prefer no spaces between parentheses† |
+| **Default option value** | `false`†                         |             |
 
-If you omit this rule or use a value other than `control_flow_statements`, `expressions`, or `type_casts`, spaces between parentheses are ignored, meaning new spaces aren't added and existing spaces aren't removed.
+†If you omit this rule or use any value other than `control_flow_statements`, `expressions`, or `type_casts`, spaces between parentheses of control flow statements, expressions, and type casts are removed.
 
 Code examples:
 
@@ -611,6 +611,8 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 
 // csharp_space_between_parentheses = false
+for (int i = 0; i < 10; i++) { }
+var z = (x * y) - ((y - x) * 3);
 int y = (int)x;
 ```
 

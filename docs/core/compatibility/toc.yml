@@ -20,6 +20,10 @@ items:
                 href: core-libraries/10.0/generic-math.md
               - name: LDAP DirectoryControl parsing is now more stringent
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
+          - name: Cryptography
+            items:
+              - name: X500DistinguishedName validation is stricter
+                href: cryptography/10.0/x500distinguishedname-validation.md
           - name: Globalization
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
@@ -1570,6 +1574,10 @@ items:
             href: corefx.md
       - name: Cryptography
         items:
+          - name: .NET 10
+            items:
+              - name: X500DistinguishedName validation is stricter
+                href: cryptography/10.0/x500distinguishedname-validation.md
           - name: .NET 9
             items:
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle

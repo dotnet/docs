@@ -137,7 +137,7 @@ Complete the following steps to create a .NET console app that can accomplish th
     ```
 
     > [!NOTE]
-    > For the `ModelName` value, you need to specify an OpenAI text embedding model such as `text-embedding-3-small` or `text-embedding-3-large`to generate embeddings for vector search in the sections head.
+    > For the `ModelName` value, you need to specify an OpenAI text embedding model such as `text-embedding-3-small` or `text-embedding-3-large` to generate embeddings for vector search in the sections that follow.
 
 :::zone-end
 

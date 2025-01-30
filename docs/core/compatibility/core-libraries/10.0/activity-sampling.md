@@ -56,5 +56,5 @@ Users using OpenTelemetry .NET should verify their sampler configuration. The de
 
 ## Affected APIs
 
-- <xref:System.Diagnostics.ActivitySource.CreateActivity?displayProperty=fullName>
-- <xref:System.Diagnostics.ActivitySource.StartActivity?displayProperty=fullName>
+- <xref:System.Diagnostics.ActivitySource.CreateActivity*?displayProperty=fullName>
+- <xref:System.Diagnostics.ActivitySource.StartActivity*?displayProperty=fullName>

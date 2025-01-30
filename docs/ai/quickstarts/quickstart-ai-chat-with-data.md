@@ -136,6 +136,9 @@ Complete the following steps to create a .NET console app that can accomplish th
     dotnet user-secrets set ModelName <your-openai-model-name>
     ```
 
+    > [!NOTE]
+    > For the `ModelName` value, you need to specify an OpenAI text embedding model such as `text-embedding-3-small` or `text-embedding-3-large` to generate embeddings for vector search in the sections that follow.
+
 :::zone-end
 
 ## Add the app code

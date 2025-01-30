@@ -29,13 +29,44 @@ Many users want to know whether the packages they restore contain any known secu
 
 ## Recommended action
 
-- To explicitly reduce the probability of this breaking your build due to warnings, you can consider your usage of `<TreatWarningsAsErrors>` and use `<WarningsNotAsErrors>NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>` to ensure known security vulnerabilities are still allowed in your environment.
+The properties mentioned in the recommended actions can be set either in your project file (for example, \*.csproj or \*.fsproj file) or *Directory.Build.props* file.
+
+- To explicitly reduce the probability of this breaking your build due to warnings, you can consider your usage of `<TreatWarningsAsErrors>` and set `<WarningsNotAsErrors>NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>` to ensure known security vulnerabilities are still allowed in your environment.
+
+  ```xml
+  <PropertyGroup>
+    ...
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsNotAsErrors>NU1901;NU1902;NU1903;NU1904</WarningsNotAsErrors>
+  </PropertyGroup>
+  ```
 
 - If you want to set a different security audit level, add the `<NuGetAuditLevel>` property to your project file with possible values of `low`, `moderate`, `high`, and `critical`.
 
+  ```xml
+  <PropertyGroup>
+    ...
+    <NuGetAuditLevel>low</NuGetAuditLevel>
+  </PropertyGroup>
+  ```
+
 - If you want to ignore these warnings, you can use `<NoWarn>` to suppress `NU1901-NU1904` warnings.
 
+  ```xml
+  <PropertyGroup>
+    ...
+    <NoWarn>$(NoWarn);NU1901-NU1904</NoWarn>
+  </PropertyGroup>
+  ```
+
 - To disable the new behavior entirely, you can set the `<NuGetAudit>` project property to `false`.
+
+  ```xml
+  <PropertyGroup>
+    ...
+    <NuGetAudit>false</NuGetAudit>
+  </PropertyGroup>
+  ```
 
 ## See also
 

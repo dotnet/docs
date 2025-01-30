@@ -12,6 +12,10 @@ items:
             items:
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/10.0/obsolete-apis.md
+          - name: Cryptography
+            items:
+              - name: RRfc2898DeriveBytes constructors are obsolete
+                href: cryptography/10.0/rfc2898derivebytes-constructors.md
       - name: .NET 9
         items:
           - name: Overview
@@ -1546,6 +1550,10 @@ items:
             href: corefx.md
       - name: Cryptography
         items:
+          - name: .NET 10
+            items:
+              - name: Rfc2898DeriveBytes constructors are obsolete
+                href: cryptography/10.0/rfc2898derivedbytes-constructors.md
           - name: .NET 9
             items:
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle

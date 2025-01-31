@@ -353,16 +353,14 @@ The [DoNotParallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotP
 > [!NOTE]
 > By default, MSTest runs tests in sequential order so you only need to use this attribute if you have applied the `[Parallelize]` attribute at the assembly level.
 
-### `RetryBaseAttribute`
+### `RetryAttribute`
 
-The `RetryBaseAttribute` was introduced in MSTest 3.8. It's an abstract attribute that encapsulates a retry logic to be used when a test fails or timeouts. Implementors of this attribute must implement `ExecuteAsync` method which takes `RetryContext` as a parameter. Whenever a test times out or fails and an implementation of `RetryBaseAttribute` is present on the test method, MSTest will call `ExecuteAsync` of the attribute.
+The `RetryAttribute` was introduced in MSTest 3.8. It causes the test method to be re-tried when it fails or timeouts. It allows you to specify the maximum number of retry attempts, the time delay between retries, and a delay backoff type which is either constant or exponential.
+
+Only one `RetryAttribute` is expected to be present on a test method, and `RetryAttribute` cannot be used on methods that are not marked with `TestMethodAttribute`.
 
 > [!NOTE]
-> `RetryBaseAttribute.ExecuteAsync` is currently marked as experimental API.
->
-> [!NOTE]
-> MSTest provides a built-in implementation of `RetryBaseAttribute`, named `RetryAttribute`.
-> The built-in `RetryAttribute` allows to control the maximum number of retry attempts, time delay between retries, and a delay backoff type which is either constant or exponential. You can check out the implementation of `RetryAttribute` on [GitHub](https://github.com/microsoft/testfx/blob/27e0f3da163f3cd651e34395c8759772012b55f9/src/TestFramework/TestFramework/Attributes/TestMethod/RetryAttribute.cs) to have better understanding of how to implement your own custom `RetryBaseAttribute`.
+> `RetryAttribute` derives from an abstract `RetryBaseAttribute`. You can also create your own retry implementations if the built-in `RetryAttribute` doesn't suite your needs.
 
 ## Utilities attributes
 

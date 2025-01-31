@@ -7,11 +7,11 @@ f1_keywords:
 ---
 # SYSLIB0060: Rfc2898DeriveBytes constructors are obsolete
 
-Starting in .NET 10, all of the constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Referencing this event in code generates warning `SYSLIB0060` at compile time.
+Starting in .NET 10, all of the constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Calling these constructors in code generates warning `SYSLIB0060` at compile time.
 
 ## Reason for obsoletion
 
-The instance-based implementation of PBKDF2, which <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> provides, offers a non-standard usage by "streaming" bytes back by allowing successive calls to `GetBytes`. This is not the intended use of PBKDF2, the algorithm should be used as a one-shot. The one-shot functionality exists as the static method <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> and should be used instead of instantiating <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType>.
+The instance-based implementation of PBKDF2, which <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> provides, offers a non-standard usage by "streaming" bytes back by allowing successive calls to `GetBytes`. This is not the intended use of PBKDF2; the algorithm should be used as a one-shot. The one-shot functionality exists as the static method <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> and should be used instead of instantiating <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType>.
 
 ## Workaround
 

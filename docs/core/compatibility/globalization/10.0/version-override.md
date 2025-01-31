@@ -1,6 +1,6 @@
 ---
 title: "Breaking change: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE"
-description: Learn about the .NET 10 breaking change in core .NET libraries where the environment variable CLR_ICU_VERSION_OVERRIDE was renamed to DOTNET_ICU_VERSION_OVERRIDE.
+description: Learn about the .NET 10 breaking change in globalization where the environment variable CLR_ICU_VERSION_OVERRIDE was renamed to DOTNET_ICU_VERSION_OVERRIDE.
 ms.date: 01/30/2025
 ---
 # Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
@@ -9,7 +9,7 @@ ms.date: 01/30/2025
 
 ## Previous behavior
 
-The `CLR_ICU_VERSION_OVERRIDE` environment variable is used to specify the preferred ICU version to be loaded in the application.
+The `CLR_ICU_VERSION_OVERRIDE` environment variable was used to specify the preferred ICU version to be loaded in the application.
 
 ## New behavior
 
@@ -29,4 +29,4 @@ This change ensures the environment variable is consistent with the naming conve
 
 ## Recommended action
 
-Users running .NET 10 apps who previously used the `CLR_ICU_VERSION_OVERRIDE` environment variable will now need to use `DOTNET_ICU_VERSION_OVERRIDE` instead.
+If you have a .NET 10 app that previously used the `CLR_ICU_VERSION_OVERRIDE` environment variable, use `DOTNET_ICU_VERSION_OVERRIDE` instead.

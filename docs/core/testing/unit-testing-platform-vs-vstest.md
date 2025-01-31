@@ -55,7 +55,7 @@ VSTest ships multiple executables, notably `vstest.console.exe`, `testhost.exe`,
 
 ## Migrating from VSTest
 
-In addition to the steps specific to your test framework, you will need to update your test infrastructure to accommodate to `Microsoft.Testing.Platform`.
+In addition to the steps specific to your test framework, you need to update your test infrastructure to accommodate to `Microsoft.Testing.Platform`.
 
 ### `dotnet test`
 
@@ -99,7 +99,7 @@ The test related arguments are VSTest specific and so need to be transformed to 
 | `-- <RunSettings arguments>` | Not supported |
 
 > [!IMPORTANT]
-> Before specifying any `Microsoft.Testing.Platform`, you will need to add `--` to separate the `dotnet test` arguments from the new platform arguments.
+> Before specifying any `Microsoft.Testing.Platform`, you need to add `--` to separate the `dotnet test` arguments from the new platform arguments.
 
 ### `vstest.console.exe`
 
@@ -107,11 +107,11 @@ If you are using `vstest.console.exe` directly, we recommend replacing it with t
 
 ### Test Explorer
 
-When using Visual Studio or Visual Studio Code Test Explorer, you may need to enable the support for the new test platform.
+When using Visual Studio or Visual Studio Code Test Explorer, you might need to enable the support for the new test platform.
 
 #### Visual Studio
 
-Visual Studio Test Explorer supports the new test platform starting with version 17.14. If you are using an earlier version, you may need to update your Visual Studio to the latest version.
+Visual Studio Test Explorer supports the new test platform starting with version 17.14. If you are using an earlier version, you might need to update your Visual Studio to the latest version.
 
 #### Visual Studio Code
 
@@ -119,7 +119,7 @@ Visual Studio Code Test Explorer supports the new test platform starting with ve
 
 ### Azure DevOps
 
-When using Azure DevOps tasks, you may need to update your pipeline to use the new test platform.
+When using Azure DevOps tasks, you might need to update your pipeline to use the new test platform.
 
 #### VSTest task
 

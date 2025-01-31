@@ -45,15 +45,15 @@ Many different SDKs are available for .NET to build apps with AI capabilities de
 
 Azure offers many other AI services to build specific application capabilities and workflows. Most of these services provide a .NET SDK to integrate their functionality into custom apps. Some of the most commonly used services are shown in the following table. For a complete list of available services and learning resources, see the [Azure AI Services](/azure/ai-services/what-are-ai-services) documentation.
 
-| Service | Description |
-| --- | --- |
-| [Azure AI Search](/azure/search/) | Bring AI-powered cloud search to your mobile and web apps. |
-| [Azure AI Content Safety](/azure/ai-services/content-safety/) | Detect unwanted or offensive content. |
+| Service                                                       | Description                                                |
+|---------------------------------------------------------------|------------------------------------------------------------|
+| [Azure AI Search](/azure/search/)                             | Bring AI-powered cloud search to your mobile and web apps. |
+| [Azure AI Content Safety](/azure/ai-services/content-safety/) | Detect unwanted or offensive content.                      |
 | [Azure AI Document Intelligence](/azure/ai-services/document-intelligence/) | Turn documents into intelligent data-driven solutions. |
-| [Azure AI Language](/azure/ai-services/language-service/) | Build apps with industry-leading natural language understanding capabilities. |
-| [Azure AI Speech](/azure/ai-services/speech-service/) | Speech to text, text to speech, translation, and speaker recognition. |
-| [Azure AI Translator](/azure/ai-services/translator/) | AI-powered translation technology with support for more than 100 languages and dialects. |
-| [Azure AI Vision](/azure/ai-services/computer-vision/) | Analyze content in images and videos. |
+| [Azure AI Language](/azure/ai-services/language-service/)     | Build apps with industry-leading natural language understanding capabilities. |
+| [Azure AI Speech](/azure/ai-services/speech-service/)         | Speech to text, text to speech, translation, and speaker recognition. |
+| [Azure AI Translator](/azure/ai-services/translator/)         | AI-powered translation technology with support for more than 100 languages and dialects. |
+| [Azure AI Vision](/azure/ai-services/computer-vision/)        | Analyze content in images and videos.                      |
 
 ## Develop with local AI models
 
@@ -61,10 +61,10 @@ Azure offers many other AI services to build specific application capabilities a
 
 For example, you can use [Ollama](https://ollama.com/) to [connect to local AI models with .NET](quickstarts/quickstart-local-ai.md), including several Small Language Models (SLMs) developed by Microsoft:
 
-| Model | Description |
-| --- | --- |
-| [phi3 models](https://azure.microsoft.com/products/phi-3) | A family of powerful SLMs with groundbreaking performance at low cost and low latency. |
-| [orca models](https://www.microsoft.com/en-us/research/project/orca/) | Research models in tasks such as reasoning over user given data, reading comprehension, math problem solving, and text summarization. |
+| Model               | Description                                                                            |
+|---------------------|----------------------------------------------------------------------------------------|
+| [phi3 models][phi3] | A family of powerful SLMs with groundbreaking performance at low cost and low latency. |
+| [orca models][orca] | Research models in tasks such as reasoning over user-provided data, reading comprehension, math problem solving, and text summarization. |
 
 > [!NOTE]
 > The preceding SLMs can also be hosted on other services such as Azure.
@@ -81,3 +81,6 @@ This article summarized the tools and SDKs in the .NET ecosystem, with a focus o
 
 - [What is Semantic Kernel?](/semantic-kernel/overview/)
 - [Quickstart - Summarize text using Azure AI chat app with .NET](./quickstarts/quickstart-openai-summarize-text.md)
+
+[phi3]: https://azure.microsoft.com/products/phi-3
+[orca]: https://www.microsoft.com/en-us/research/project/orca/

@@ -12,7 +12,7 @@ zone_pivot_groups: openai-library
 
 # Connect to and prompt an AI model using .NET
 
-In this quickstart, you learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+In this quickstart, you learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
 > [!NOTE]
 > The [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) library is currently in Preview.
@@ -90,7 +90,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 ## Configure the app
 
-1. Navigate to the root of your .NET projet from a terminal or command prompt.
+1. Navigate to the root of your .NET project from a terminal or command prompt.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 
@@ -123,7 +123,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone-end
 
-1. Read the `benefits.md` file content and use it to create a prompt for the model. The prompt instructs the model to summarize the file text content.
+1. Read the *benefits.md* file content and use it to create a prompt for the model. The prompt instructs the model to summarize the file text content.
 
     :::code language="csharp" source="snippets/prompt-completion/openai/program.cs" range="13-19":::
 

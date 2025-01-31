@@ -14,7 +14,7 @@ You do not have to implement any custom logic to support reference equality comp
   
  The following example shows how to determine whether two variables have *reference equality*, which means that they refer to the same object in memory.  
   
-The example also shows why <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> always returns `false` for value types. This is due to **boxing**, which creates separate object instances for each value type argument. Additionally, you should not use <xref:System.Object.ReferenceEquals%2A> to determine string equality. 
+The example also shows why <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> always returns `false` for value types. This is due to **boxing**, which creates separate object instances for each value type argument. Additionally, you should not use <xref:System.Object.ReferenceEquals%2A> to determine string equality.
   
 ## Example  
 
@@ -26,7 +26,6 @@ The example also shows why <xref:System.Object.ReferenceEquals%2A?displayPropert
 
 > [!NOTE]
 > `ReferenceEquals` returns `false` for value types due to **boxing**, as each argument is independently boxed into a separate object.
-  
   
 ## See also
 

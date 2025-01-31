@@ -14,7 +14,7 @@ You do not have to implement any custom logic to support reference equality comp
   
  The following example shows how to determine whether two variables have *reference equality*, which means that they refer to the same object in memory.  
   
-The example also shows why <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> always returns `false` for value types. This is due to **boxing**, which creates separate object instances for each value type argument, rather than due to copying. Additionally, you should not use <xref:System.Object.ReferenceEquals%2A> to determine string equality. 
+The example also shows why <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> always returns `false` for value types. This is due to **boxing**, which creates separate object instances for each value type argument. Additionally, you should not use <xref:System.Object.ReferenceEquals%2A> to determine string equality. 
   
 ## Example  
 
@@ -25,7 +25,7 @@ The example also shows why <xref:System.Object.ReferenceEquals%2A?displayPropert
  Constant strings within the same assembly are always interned by the runtime. That is, only one instance of each unique literal string is maintained. However, the runtime does not guarantee that strings created at run time are interned, nor does it guarantee that two equal constant strings in different assemblies are interned.
 
 > [!NOTE]
-> `ReferenceEquals` returns `false` for value types due to **boxing**, not copying, as each argument is independently boxed into a separate object.
+> `ReferenceEquals` returns `false` for value types due to **boxing**, as each argument is independently boxed into a separate object.
   
   
 ## See also

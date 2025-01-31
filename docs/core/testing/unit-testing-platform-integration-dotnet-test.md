@@ -60,7 +60,7 @@ By default, `dotnet test` is using VSTest behavior to run tests. You can enable 
 > It's highly recommended that you set the `TestingPlatformDotnetTestSupport` property in `Directory.Build.props`. That way, you don't have to add it to every test project file, and you don't risk introducing a new project that doesn't set this property and end up with a solution where some projects are VSTest while others are Microsoft.Testing.Platform, which may not work correctly and is unsupported scenario.
 
 > [!IMPORTANT]
-> Despite `TestingPlatformDotnetTestSupport` being set to `true`, most of the command line options defined in [dotnet test](../tools/dotnet-test.md) remain VSTest oriented and won't impact `Microsoft.Testing.Platform` based tests. To supply arguments to `Microsoft.Testing.Platform`, you will need to use one of the methods described in [Microsoft.Testing.Platform command line arguments with dotnet test](#microsofttestingplatform-command-line-arguments-with-dotnet-test).
+> Despite `TestingPlatformDotnetTestSupport` being set to `true`, most of the command line options defined in [dotnet test](../tools/dotnet-test.md) remain VSTest oriented and don't impact `Microsoft.Testing.Platform` based tests. To supply arguments to `Microsoft.Testing.Platform`, you need to use one of the methods described in [Microsoft.Testing.Platform command line arguments with dotnet test](#microsofttestingplatform-command-line-arguments-with-dotnet-test).
 
 The list below described all `dotnet test` command line options that are supported by `Microsoft.Testing.Platform`:
 

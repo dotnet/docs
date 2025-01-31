@@ -525,7 +525,7 @@
 | Microsoft.Azure.Functions.Worker.Core | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.11.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.11.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.12.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.12.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.3.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.3.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.3.0) |  |  |

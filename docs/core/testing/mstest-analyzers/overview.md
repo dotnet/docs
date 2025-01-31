@@ -15,6 +15,42 @@ ms.date: 12/20/2023
 
 The rules are organized into categories such as performance usage...
 
+Starting with MSTest.TestFramework 3.7, the MSTest.Analyzers NuGet package is a dependency of the framework. For earlier versions, you need to use `MSTest` metapackage or add a package reference for `MSTest.Analyzers` explicitly.
+
+## MSTestAnalysisMode
+
+Starting with MSTest 3.8, an MSBuild property named `MSTestAnalysisMode` is available to determine which analyzers are enabled at which severity.
+
+The available values are:
+
+### `None`
+
+This sets all analyzers to `none` severity, making all of them disabled. You can then enable individual analyzers using `.editorconfig` or `.globalconfig` files.
+
+### `Default`
+
+This follows the default documented behavior for each rule.
+
+- Rules that are enabled by default will use their default severity.
+- Rules that are disabled by default will use `none` severity.
+
+### `Recommended`
+
+This mode is more aggressive than `Default`. Rules that are enabled by default with Info (`suggestion`) severity are escalated to be warnings. Moreover, certain rules may decide that they are escalated to be errors in both `Recommended` and `All` modes. For example, [MSTEST0003: Test methods should have valid layout](mstest0003.md) is escalated to error in `Recommended` and `All` modes.
+
+### `All`
+
+This mode is more aggressive than `All`. All rules are enabled as warnings. As mentioned for `Recommended` mode, certain rules may decide that they are escalated to be errors in both `Recommended` and `All` modes. For example, [MSTEST0003: Test methods should have valid layout](./mstest0003.md) is escalated to error in `Recommended` and `All` modes.
+
+> [!NOTE]
+> The following rules are completely opt-in and are not enabled in `Default`, `Recommended`, or `All` modes:
+>
+> - [MSTEST0015: Test method should not be ignored](mstest0015.md)
+> - [MSTEST0019: Prefer TestInitialize methods over constructors](mstest0019.md)
+> - [MSTEST0020: Prefer constructors over TestInitialize methods](mstest0020.md)
+> - [MSTEST0021: Prefer Dispose over TestCleanup methods](mstest0021.md)
+> - [MSTEST0022: Prefer TestCleanup over Dispose methods](mstest0022.md)
+
 ## Categories
 
 ### Design rules

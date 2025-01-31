@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Overload Resolution (Visual Basic)"
 title: "Overload Resolution"
-ms.date: 07/20/2015
+ms.date:01/31/2025
 helpviewer_keywords: 
   - "Visual Basic code, procedures"
   - "overload resolution"
@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "procedure overloading [Visual Basic], overload resolution"
   - "signatures [Visual Basic], procedure"
   - "overloads [Visual Basic], resolution"
-ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 ---
 # Overload Resolution (Visual Basic)
 
@@ -27,8 +26,10 @@ When the Visual Basic compiler encounters a call to a procedure that is defined 
 4. **Narrowing Conversions.** It eliminates any overload that requires a narrowing conversion from the calling argument types to the defined parameter types. This is true whether the type checking switch ([Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)) is `On` or `Off`.  
   
 5. **Least Widening.** The compiler considers the remaining overloads in pairs. For each pair, it compares the data types of the defined parameters. If the types in one of the overloads all widen to the corresponding types in the other, the compiler eliminates the latter. That is, it retains the overload that requires the least amount of widening.  
+
+6. **Overload Resolution Priority.** The compiler removes any overload that has a lower <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute> than the highest value. Any overload without this attribute is assigned the default value of zero.
   
-6. **Single Candidate.** It continues considering overloads in pairs until only one overload remains, and it resolves the call to that overload. If the compiler cannot reduce the overloads to a single candidate, it generates an error.  
+7. **Single Candidate.** It continues considering overloads in pairs until only one overload remains, and it resolves the call to that overload. If the compiler cannot reduce the overloads to a single candidate, it generates an error.  
   
  The following illustration shows the process that determines which of a set of overloaded versions to call.  
   

@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Generic Types in Visual Basic (Visual Basic)"
 title: "Generic Types"
-ms.date: 07/20/2015
+ms.date: 01/31/2025
 helpviewer_keywords: 
   - "generic interfaces"
   - "data type arguments [Visual Basic], defining"
@@ -36,7 +36,6 @@ helpviewer_keywords:
   - "data type parameters [Visual Basic], defining"
   - "type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], type"
-ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
 ---
 # Generic Types in Visual Basic (Visual Basic)
 
@@ -125,6 +124,8 @@ A *generic type* is a single programming element that adapts to perform the same
 - The type argument must expose a parameterless constructor accessible to the code that creates objects from it  
   
 - The type argument must be a *reference type*, or it must be a *value type*  
+
+- The type argument must be an [*unmanaged type*](../../../../csharp/programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint). The Visual Basic compiler enforces this constraint on type arguments. Visual Basic can't declare this constraint on a generic type or method.
   
  If you need to impose more than one requirement, you use a comma-separated *constraint list* inside braces (`{ }`). To require an accessible constructor, you include the [New Operator](../../../language-reference/operators/new-operator.md) keyword in the list. To require a reference type, you include the `Class` keyword; to require a value type, you include the `Structure` keyword.  
   

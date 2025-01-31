@@ -73,7 +73,7 @@ For a more complete example, see [How to: Define a Class That Can Provide Identi
 
 ## Eligible programming elements
 
-You can define and use generic classes, structures, interfaces, procedures, and delegates. The .NET Framework defines several generic classes, structures, and interfaces that represent commonly used generic elements. The <xref:System.Collections.Generic?displayProperty=nameWithType> namespace provides dictionaries, lists, queues, and stacks. Before defining your own generic element, see if it's already available in <xref:System.Collections.Generic?displayProperty=nameWithType>.
+You can define and use generic classes, structures, interfaces, procedures, and delegates. .NET defines several generic classes, structures, and interfaces that represent commonly used generic elements. The <xref:System.Collections.Generic?displayProperty=nameWithType> namespace provides dictionaries, lists, queues, and stacks. Before defining your own generic element, see if it's already available in <xref:System.Collections.Generic?displayProperty=nameWithType>.
 
 Procedures aren't types, but you can define and use generic procedures. See [Generic Procedures in Visual Basic](generic-procedures.md).
 
@@ -133,7 +133,7 @@ Generic types introduce and use the following terms:
 - *Generic Type*. A definition of a class, structure, interface, procedure, or delegate for which you supply at least one data type when you declare it.
 - *Type Parameter*. In a generic type definition, a placeholder for a data type you supply when you declare the type.
 - *Type Argument*. A specific data type that replaces a type parameter when you declare a constructed type from a generic type.
-- *Constraint*. A condition on a type parameter that restricts the type argument you can supply for it. A constraint required that the type argument must implement a particular interface, inherit from a particular class, have an accessible parameterless constructor, or be a reference type or a value type. You can combine these constraints, but you can specify at most one base class.
+- *Constraint*. A condition on a type parameter that restricts the type argument you can supply for it. A constraint can require that the type argument implement a particular interface, inherit from a particular class, have an accessible parameterless constructor, or be a reference type or a value type. You can combine these constraints, but you can specify at most one base class.
 - *Constructed Type*. A class, structure, interface, procedure, or delegate declared from a generic type by supplying type arguments for its type parameters.
 
 ## See also

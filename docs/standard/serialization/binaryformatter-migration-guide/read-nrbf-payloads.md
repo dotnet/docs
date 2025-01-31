@@ -18,6 +18,9 @@ helpviewer_keywords:
 
 As part of .NET 9, a new [NrbfDecoder] class was introduced to decode NRBF payloads without performing _deserialization_ of the payload. This API can safely be used to decode trusted or untrusted payloads without any of the risks that [BinaryFormatter] deserialization carries. However, [NrbfDecoder] merely decodes the data into structures an application can further process. Care must be taken when using [NrbfDecoder] to safely load the data into the appropriate instances.
 
+> [!CAUTION]
+> [NrbfDecoder] is _an_ implementation of an NRBF reader, but its behaviors don't strictly follow [BinaryFormatter]'s implementation. Thus you shouldn't use the output of [NrbfDecoder] to determine whether a call to [BinaryFormatter] would be safe.
+
 You can think of <xref:System.Formats.Nrbf.NrbfDecoder> as being the equivalent of using a JSON/XML reader without the deserializer.
 
 ## NrbfDecoder
@@ -33,7 +36,8 @@ You can think of <xref:System.Formats.Nrbf.NrbfDecoder> as being the equivalent 
 - Use collision-resistant randomized hashing to store records referenced by other records (to avoid running out of memory for dictionary backed by an array whose size depends on the number of hash-code collisions).
 - Only primitive types can be instantiated in an implicit way. Arrays can be instantiated on demand. Other types are never instantiated.
 
-When using [NrbfDecoder], it is important not to reintroduce those capabilities in general-purpose code as doing so would negate these safeguards.
+> [!CAUTION]
+> When using [NrbfDecoder], it's important not to reintroduce those capabilities in general-purpose code, as doing so would negate these safeguards.
 
 ### Deserialize a closed set of types
 
@@ -82,17 +86,38 @@ internal static T LoadFromFile<T>(string path)
 
 The NRBF payload consists of serialization records that represent the serialized objects and their metadata. To read the whole payload and get the root object, you need to call the <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method.
 
-The <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>. It exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches*>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
+The <xref:System.Formats.Nrbf.NrbfDecoder.Decode*> method returns a <xref:System.Formats.Nrbf.SerializationRecord> instance. <xref:System.Formats.Nrbf.SerializationRecord> is an abstract class that represents the serialization record and provides three self-describing properties: <xref:System.Formats.Nrbf.SerializationRecord.Id>, <xref:System.Formats.Nrbf.SerializationRecord.RecordType>, and <xref:System.Formats.Nrbf.SerializationRecord.TypeName>.
+
+> [!NOTE]
+> An attacker could create a payload with cycles (example: class or an array of objects with a reference to itself). The <xref:System.Formats.Nrbf.SerializationRecord.Id> returns an instance of <xref:System.Formats.Nrbf.SerializationRecordId> which implements <xref:System.IEquatable%601> and amongst other things, it can be used to detect cycles in decoded records.
+
+<xref:System.Formats.Nrbf.SerializationRecord> exposes one method, <xref:System.Formats.Nrbf.SerializationRecord.TypeNameMatches*>, which compares the type name read from the payload (and exposed via <xref:System.Formats.Nrbf.SerializationRecord.TypeName> property) against the specified type. This method ignores assembly names, so users don't need to worry about type forwarding and assembly versioning. It also does not consider member names or their types (because getting this information would require type loading).
 
 ```csharp
 using System.Formats.Nrbf;
 
-static T Pseudocode<T>(Stream payload)
+static Animal Pseudocode(Stream payload)
 {
     SerializationRecord record = NrbfDecoder.Read(payload);
-    if (!record.TypeNameMatches(typeof(T))
+    if (record.TypeNameMatches(typeof(Cat)) && record is ClassRecord catRecord)
     {
-        throw new Exception($"Expected the record to match type name `{typeof(T).AssemblyQualifiedName}`, but got `{record.TypeName.AssemblyQualifiedName}`."
+        return new Cat()
+        {
+            Name = catRecord.GetString("Name"),
+            WorshippersCount = catRecord.GetInt32("WorshippersCount")
+        };
+    }
+    else if (record.TypeNameMatches(typeof(Dog)) && record is ClassRecord dogRecord)
+    {
+        return new Dog()
+        {
+            Name = dogRecord.GetString("Name"),
+            FriendsCount = dogRecord.GetInt32("FriendsCount")
+        };
+    }
+    else
+    {
+        throw new Exception($"Unexpected record: `{record.TypeName.AssemblyQualifiedName}`.");
     }
 }
 ```
@@ -104,7 +129,7 @@ There are more than a dozen different serialization [record types](/openspecs/wi
   - <xref:System.Formats.Nrbf.PrimitiveTypeRecord%601> derives from the non-generic <xref:System.Formats.Nrbf.PrimitiveTypeRecord>, which also exposes a <xref:System.Formats.Nrbf.PrimitiveTypeRecord.Value> property. But on the base class, the value is returned as `object` (which introduces boxing for value types).
 - <xref:System.Formats.Nrbf.ClassRecord>: describes all `class` and `struct` besides the aforementioned  primitive types.
 - <xref:System.Formats.Nrbf.ArrayRecord>: describes all array records, including jagged and multi-dimensional arrays.
-- <xref:System.Formats.Nrbf.SZArrayRecord%601>: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a <xref:System.Formats.Nrbf.ClassRecord>.
+- <xref:System.Formats.Nrbf.SZArrayRecord%601>: describes single-dimensional, zero-indexed array records, where `T` can be either a primitive type or a <xref:System.Formats.Nrbf.SerializationRecord>.
 
 ```csharp
 SerializationRecord rootObject = NrbfDecoder.Decode(payload); // payload is a Stream
@@ -134,7 +159,8 @@ The API it provides:
 - <xref:System.Formats.Nrbf.ClassRecord.MemberNames> property that gets the names of serialized members.
 - <xref:System.Formats.Nrbf.ClassRecord.HasMember*> method that checks if member of given name was present in the payload. It was designed for handling versioning scenarios where given member could have been renamed.
 - A set of dedicated methods for retrieving primitive values of the provided member name: <xref:System.Formats.Nrbf.ClassRecord.GetString*>, <xref:System.Formats.Nrbf.ClassRecord.GetBoolean*>, <xref:System.Formats.Nrbf.ClassRecord.GetByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetSByte*>, <xref:System.Formats.Nrbf.ClassRecord.GetChar*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt16*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt32*>, <xref:System.Formats.Nrbf.ClassRecord.GetInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetUInt64*>, <xref:System.Formats.Nrbf.ClassRecord.GetSingle*>, <xref:System.Formats.Nrbf.ClassRecord.GetDouble*>, <xref:System.Formats.Nrbf.ClassRecord.GetDecimal*>, <xref:System.Formats.Nrbf.ClassRecord.GetTimeSpan*>, and <xref:System.Formats.Nrbf.ClassRecord.GetDateTime*>.
-- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord*> and <xref:System.Formats.Nrbf.ClassRecord.GetArrayRecord*> methods to retrieve instance of given record types.
+- <xref:System.Formats.Nrbf.ClassRecord.GetClassRecord*> retrieves an instance of [ClassRecord]. In case of a cycle, it's the same instance of the current [ClassRecord] with the same <xref:System.Formats.Nrbf.SerializationRecord.Id>.
+- <xref:System.Formats.Nrbf.ClassRecord.GetArrayRecord*> retrieves an instance of [ArrayRecord].
 - <xref:System.Formats.Nrbf.ClassRecord.GetSerializationRecord*> to retrieve any serialization record and <xref:System.Formats.Nrbf.ClassRecord.GetRawValue*> to retrieve any serialization record or a raw primitive value.
 
 The following code snippet shows <xref:System.Formats.Nrbf.ClassRecord> in action:
@@ -157,22 +183,30 @@ Sample output = new()
     Text = rootRecord.GetString(nameof(Sample.Text)),
     // using dedicated method to read an array of bytes
     ArrayOfBytes = ((SZArrayRecord<byte>)rootRecord.GetArrayRecord(nameof(Sample.ArrayOfBytes))).GetArray(),
-    // using GetClassRecord to read a class record
-    ClassInstance = new()
-    {
-        Text = rootRecord
-            .GetClassRecord(nameof(Sample.ClassInstance))!
-            .GetString(nameof(Sample.Text))
-    }
 };
+
+// using GetClassRecord to read a class record
+ClassRecord? referenced = rootRecord.GetClassRecord(nameof(Sample.ClassInstance));
+if (referenced is not null)
+{
+    if (referenced.Id.Equals(rootRecord.Id))
+    {
+        throw new Exception("Unexpected cycle detected!");
+    }
+
+    output.ClassInstance = new()
+    {
+        Text = referenced.GetString(nameof(Sample.Text))
+    };
+}
 ```
 
 #### ArrayRecord
 
 <xref:System.Formats.Nrbf.ArrayRecord> defines the core behavior for NRBF array records and provides a base for derived classes. It provides two properties:
 
-- <xref:System.Formats.Nrbf.ArrayRecord.Rank> which gets the rank of the array.
-- <xref:System.Formats.Nrbf.ArrayRecord.Lengths> which get a buffer of integers that represent the number of elements in every dimension.
+- <xref:System.Formats.Nrbf.ArrayRecord.Rank>, which gets the rank of the array.
+- <xref:System.Formats.Nrbf.ArrayRecord.Lengths>, which gets a buffer of integers that represent the number of elements in every dimension. It's recommended to **check the total length of the provided array record** before calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>.
 
 It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. When used for the first time, it allocates an array and fills it with the data provided in the serialized records (in case of the natively supported primitive types like `string` or `int`) or the serialized records themselves (in case of arrays of complex types).
 
@@ -180,10 +214,17 @@ It also provides one method: <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. W
 
 ```csharp
 ArrayRecord arrayRecord = (ArrayRecord)NrbfDecoder.Decode(stream);
+if (arrayRecord.Rank != 2 || arrayRecord.Lengths[0] * arrayRecord.Lengths[1] > 10_000)
+{
+    throw new Exception("The array had unexpected rank or length!");
+}
 int[,] array2d = (int[,])arrayRecord.GetArray(typeof(int[,]));
 ```
 
 If there is a type mismatch (example: the attacker has provided a payload with an array of two billion strings), the method throws <xref:System.InvalidOperationException>.
+
+> [!CAUTION]
+> Unfortunately, the NRBF format makes it easy for an attacker to compress a large number of null array items. That's why it's recommended to always check the total length of the array before calling <xref:System.Formats.Nrbf.ArrayRecord.GetArray*>. Moreover, <xref:System.Formats.Nrbf.ArrayRecord.GetArray*> accepts an optional `allowNulls` Boolean argument, which, when set to `false`, will throw for nulls.
 
 [NrbfDecoder] does not load or instantiate any custom types, so in case of arrays of complex types, it returns an array of <xref:System.Formats.Nrbf.SerializationRecord>.
 
@@ -195,14 +236,18 @@ public class ComplexType3D
 }
 
 ArrayRecord arrayRecord = (ArrayRecord)NrbfDecoder.Decode(payload);
-SerializationRecord[] records = (SerializationRecord[])arrayRecord.GetArray(expectedArrayType: typeof(ComplexType3D[]));
+if (arrayRecord.Rank != 1 || arrayRecord.Lengths[0] > 10_000)
+{
+    throw new Exception("The array had unexpected rank or length!");
+}
+
+SerializationRecord[] records = (SerializationRecord[])arrayRecord.GetArray(expectedArrayType: typeof(ComplexType3D[]), allowNulls: false);
 ComplexType3D[] output = records.OfType<ClassRecord>().Select(classRecord => new ComplexType3D()
 {
     I = classRecord.GetInt32(nameof(ComplexType3D.I)),
     J = classRecord.GetInt32(nameof(ComplexType3D.J)),
     K = classRecord.GetInt32(nameof(ComplexType3D.K)),
 }).ToArray();
-
 ```
 
 .NET Framework supported non-zero indexed arrays within NRBF payloads, but this support was never ported to .NET (Core). [NrbfDecoder] therefore does not support decoding non-zero indexed arrays.

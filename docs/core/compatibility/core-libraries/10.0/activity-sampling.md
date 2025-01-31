@@ -50,6 +50,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 The previous behavior did not follow the OpenTelemetry specification.
 
 ## Recommended action
+
 If you've implemented `ActivityListener.Sample` directly AND use `ActivitySamplingResult.PropagationData`, verify that you're not reliant on the flawed behavior. To restore the previous behavior, you can set `Activity.ActivityTraceFlags` to `Recorded` after the `CreateActivity` or `StartActivity` call.
 
 If you use OpenTelemetry .NET and have customized the sampler, verify your sampler configuration. The default OpenTelemetry .NET configuration uses a parent-based algorithm that isn't impacted.

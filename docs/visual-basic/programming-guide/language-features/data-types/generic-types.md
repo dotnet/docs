@@ -115,7 +115,7 @@ Your constraint can specify the following requirements in any combination:
 - The type argument must expose a parameterless constructor accessible to the code that creates objects from it
 - The type argument must be a *reference type*, or it must be a *value type*
 
-C# code can declare that a type argument must be an [*unmanaged type*](../../../../csharp/programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint). Visual Basic enforces this constraint when your Visual Basic code uses a generic type or method with this constraint. However, Visual Basic code can't declare an *unmanaged* constraint on a type parameter.
+C# code can declare that a type argument must be an [*unmanaged type*](../../../../csharp/programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint). Visual Basic enforces this constraint for Visual Basic code that uses a generic type or method that was defined with this constraint (in C#). However, you can't declare an `unmanaged` constraint on a type parameter in Visual Basic.
 
 If you need to impose more than one requirement, you use a comma-separated *constraint list* inside braces (`{ }`). To require an accessible constructor, you include the [New Operator](../../../language-reference/operators/new-operator.md) keyword in the list. To require a reference type, you include the `Class` keyword; to require a value type, you include the `Structure` keyword.  
 

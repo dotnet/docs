@@ -371,8 +371,8 @@
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.TimeZones/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
-| Unknown Display Name | NuGet [1.0.6-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.6-preview) |  |  |
-| Unknown Display Name | NuGet [1.0.6-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.6-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.14-preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.14-preview) |  |  |
+| Unknown Display Name | NuGet [1.0.14-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.14-preview) |  |  |
 | Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.42.0) |  |  |
 | Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.42.0) |  |  |
 | Unknown Display Name | NuGet [1.42.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.42.0) |  |  |
@@ -400,7 +400,7 @@
 | Common | NuGet [2.2.1](https://www.nuget.org/packages/Microsoft.Azure.Common/2.2.1) |  |  |
 | Common - Dependencies | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Common.Dependencies/1.0.0) |  |  |
 | Computer Vision | NuGet [7.0.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.ComputerVision/7.0.1) |  | GitHub [7.0.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Vision.ComputerVision_6.0.0-preview.1/sdk/cognitiveservices/Vision.ComputerVision) |
-| Cosmos DB | NuGet [3.42.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.42.0)<br>NuGet [3.47.0-preview.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.47.0-preview.0) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/cosmosdb) | GitHub [3.42.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
+| Cosmos DB | NuGet [3.42.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.42.0)<br>NuGet [3.47.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.47.0-preview.1) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/cosmosdb) | GitHub [3.42.0](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/3.12.0/Microsoft.Azure.Cosmos) |
 | Custom Image Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingCustomImageSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingCustomImageSearch) |
 | Custom Image Search | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.CustomImageSearch/2.0.0) |  |  |
 | Custom Search | NuGet [2.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Search.BingCustomSearch/2.1.0-preview.1) |  | GitHub [2.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Search.BingCustomSearch_2.1.0-preview.1/sdk/cognitiveservices/Search.BingCustomSearch) |
@@ -478,7 +478,7 @@
 | App Service - API Apps Service | NuGet [0.9.64](https://www.nuget.org/packages/Microsoft.Azure.AppService.ApiApps.Service/0.9.64) |  |  |
 | Code Analyzers for Durable Functions | NuGet [0.5.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask.Analyzers/0.5.0) |  | GitHub [0.5.0](https://github.com/Azure/azure-functions-durable-extension/tree/Analyzer-v0.3.0/src/WebJobs.Extensions.DurableTask.Analyzers) |
 | Cosmos DB - BulkExecutor | NuGet [2.5.1-preview](https://www.nuget.org/packages/Microsoft.Azure.CosmosDB.BulkExecutor/2.5.1-preview) |  | GitHub [2.5.1-preview](https://github.com/Azure/azure-cosmosdb-bulkexecutor-dotnet-getting-started) |
-| Cosmos DB - Direct | NuGet [3.37.7](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.37.7) |  | GitHub [3.37.7](https://github.com/Azure/azure-cosmos-dotnet-v3) |
+| Cosmos DB - Direct | NuGet [3.37.9](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Direct/3.37.9) |  | GitHub [3.37.9](https://github.com/Azure/azure-cosmos-dotnet-v3) |
 | Cosmos DB - Encryption | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.0.3)<br>NuGet [2.1.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption/2.1.0-preview4) |  | GitHub [2.0.3](https://github.com/Azure/azure-cosmos-dotnet-v3/tree/releases/encryption/1.0.0-preview4/Microsoft.Azure.Cosmos.Encryption) |
 | Cosmos DB - Encryption | NuGet [1.0.0-preview07](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.Encryption.Custom/1.0.0-preview07) |  |  |
 | Extensions - Caching Cosmos | NuGet [1.7.0](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Cosmos/1.7.0) |  | GitHub [1.7.0](https://github.com/Azure/Microsoft.Extensions.Caching.Cosmos/tree/v1.0.0-preview4) |
@@ -486,7 +486,7 @@
 | Functions extension for Application Insights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Functions extension for Azure Mobile Apps | NuGet [3.0.0-beta8](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MobileApps/3.0.0-beta8) |  | GitHub [3.0.0-beta8](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.0-beta8/src/WebJobs.Extensions.MobileApps) |
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.284](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.284) |  |  |
-| Functions extension for Cosmos DB | NuGet [4.8.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.8.1) |  | GitHub [4.8.1](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
+| Functions extension for Cosmos DB | NuGet [4.9.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.9.0) |  | GitHub [4.9.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
 | Functions extension for Durable Task Framework | NuGet [3.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.0.2) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [3.0.2](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
 | Functions extension for Durable Task Framework - isolated worker | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.2.2) |  |  |
@@ -505,7 +505,7 @@
 | Functions Extensions - Cosmos DB Mongo | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.Mongo/1.0.2) |  |  |
 | Functions Extensions - Dapr | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/1.0.1) |  |  |
 | Functions Extensions - Dapr Core | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/1.0.1) |  |  |
-| Functions Extensions - HTTP AspNet Core | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/2.0.0) |  |  |
+| Functions Extensions - HTTP AspNet Core | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/2.0.1) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.1) |  |  |
@@ -525,17 +525,17 @@
 | Microsoft.Azure.Functions.Worker.Core | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Core/2.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.11.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.11.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.12.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.12.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.3.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.3.6) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.2.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/4.0.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kusto | NuGet [1.0.11-Preview](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kusto/1.0.11-Preview) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.OpenApi | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Rpc | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Rpc/1.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.0.3) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.22.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.22.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.22.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.22.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.14.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.14.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.1.284](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.1.284) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.6.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.6.0) |  |  |

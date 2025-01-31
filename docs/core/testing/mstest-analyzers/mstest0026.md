@@ -19,7 +19,7 @@ ms.author: faisalhafeez
 | **Title**                           | Avoid conditional access in assertions                |
 | **Category**                        | Usage                                                 |
 | **Fix is breaking or non-breaking** | Non-breaking                                          |
-| **Enabled by default**              | Yes                                                   |
+| **Enabled by default**              | Yes (from 3.5 to 3.7). No (starting with 3.8)         |
 | **Default severity**                | Info                                                  |
 | **Introduced in version**           | 3.5.0                                                 |
 | **Is there a code fix**             | No                                                    |

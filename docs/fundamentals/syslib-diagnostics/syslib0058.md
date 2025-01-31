@@ -12,11 +12,11 @@ The following properties of <xref:System.Net.Security.SslStream?displayProperty=
 - <xref:System.Net.Security.SslStream.KeyExchangeAlgorithm>
 - <xref:System.Net.Security.SslStream.KeyExchangeStrength>
 - <xref:System.Net.Security.SslStream.CipherAlgorithm>
-- <xref:System.Net.Security.SslStream.CipherAlgorithmStrength>
+- <xref:System.Net.Security.SslStream.CipherStrength>
 - <xref:System.Net.Security.SslStream.HashAlgorithm>
 - <xref:System.Net.Security.SslStream.HashStrength>
 
-<xref:System.Security.Authentication.ExchangeAlgorithmType>, <xref:System.Security.Authentication.CipherAlgorithmType>, and <xref:System.Security.Authentication.HashAlgorithmType> enums are obsolete since they were only used by the <xref:System.Security.Authentication.SslStream> class.
+<xref:System.Security.Authentication.ExchangeAlgorithmType>, <xref:System.Security.Authentication.CipherAlgorithmType>, and <xref:System.Security.Authentication.HashAlgorithmType> enums are obsolete since they were only used by the <xref:System.Net.Security.SslStream> class.
 
 ## Reason for obsoletion
 

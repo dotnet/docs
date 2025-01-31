@@ -16,6 +16,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID | Description | Severity |
 |---------------|-------------|----------|
+| SYSLIB0058 | Warning | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. |
 | [SYSLIB0059](../../../../fundamentals/syslib-diagnostics/syslib0059.md) | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead.  | Warning |
 | [SYSLIB0060](../../../../fundamentals/syslib-diagnostics/syslib0060.md) | <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> constructors are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> instead. | Warning |
 

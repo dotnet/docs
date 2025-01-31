@@ -2,6 +2,7 @@
 title: SYSLIB0058 warning - Certain SslStream properties are obsolete
 description: Learn about the obsoletion of ExchangeAlgorithmType, CipherAlgorithmType, and HashAlgorithmType enums that generates compile-time warning SYSLIB0058.
 ms.date: 01/01/2025
+ai-usage: ai-assisted
 f1_keywords:
   - SYSLIB0058
 ---

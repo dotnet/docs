@@ -3,6 +3,7 @@ title: "Breaking change: .NET 10 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the APIs that have been marked as obsolete in .NET 10 with a custom diagnostic ID.
 ms.date: 01/14/2025
+ai-usage: ai-assisted
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 10)
 
@@ -16,7 +17,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 | Diagnostic ID | Description | Severity |
 |---------------|-------------|----------|
-| SYSLIB0058 | Warning | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. |
+| [SYSLIB0058](../../../../fundamentals/syslib-diagnostics/syslib0058.md) | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. | Warning |
 | [SYSLIB0059](../../../../fundamentals/syslib-diagnostics/syslib0059.md) | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead.  | Warning |
 | [SYSLIB0060](../../../../fundamentals/syslib-diagnostics/syslib0060.md) | <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> constructors are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> instead. | Warning |
 
@@ -36,9 +37,26 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 ## Affected APIs
 
+### SYSLIB0058
+
+- <xref:System.Net.Security.SslStream.KeyExchangeAlgorithm?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.KeyExchangeStrength?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.CipherAlgorithm?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.CipherStrength?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.HashAlgorithm?displayProperty=fullName>
+- <xref:System.Net.Security.SslStream.HashStrength?displayProperty=fullName>
+- <xref:System.Security.Authentication.ExchangeAlgorithmType?displayProperty=fullName>
+- <xref:System.Security.Authentication.CipherAlgorithmType?displayProperty=fullName>
+- <xref:System.Security.Authentication.HashAlgorithmType?displayProperty=fullName>
+
 ### SYSLIB0059
 
 - <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=fullName>
+
+### SYSLIB0060
+
+- <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=fullName>
+- <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=fullName>
 
 ## See also
 

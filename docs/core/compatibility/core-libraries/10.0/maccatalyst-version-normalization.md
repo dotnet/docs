@@ -2,6 +2,7 @@
 title: "Breaking change: MacCatalyst version normalization"
 description: Learn about the .NET 10 breaking change in core .NET libraries where MacCatalyst version components are normalized.
 ms.date: 01/01/2025
+ai-usage: ai-assisted
 ---
 
 # MacCatalyst version normalization
@@ -26,7 +27,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-Prevent incorrect version checks and align MacCatalyst versioning with iOS, ensuring consistent version components.
+This changed was made to prevent incorrect version checks and align MacCatalyst versioning with iOS, ensuring consistent version components.
 
 ## Recommended action
 

@@ -2,9 +2,10 @@
 title: "Breaking change: X500DistinguishedName validation is stricter"
 description: Learn about the .NET 10 breaking change in cryptography where X500DistinguishedName validation is stricter.
 ms.date: 01/30/2025
+ai-usage: ai-assisted
 ---
 # X500DistinguishedName validation is stricter
-
+Starting in .NET 10, the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedName.%23ctor*> constructor that accepts a string-encoded distinguished name might reject invalid input (that would previously have been accepted) or encode it differently on non-Windows systems. This aligns with encoding specifications and Windows behavior.
 Starting in .NET 10, the <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedName.%23ctor*> constructor that accepts a string-encoded distinguished name might reject previously accepted invalid input or encode it differently on non-Windows systems. This aligns with encoding specifications and Windows behavior.
 
 ## Previous behavior
@@ -12,7 +13,7 @@ Starting in .NET 10, the <xref:System.Security.Cryptography.X509Certificates.X50
 Previous versions of .NET on non-Windows systems permitted incorrect distinguished names or encoded them in a way not permitted by X.520 encoding rules. The <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.ForceUTF8Encoding?displayProperty=nameWithType> flag forced components to use a UTF8String even if it wasn't a valid representation.
 
 ## New behavior
-
+Starting in .NET 10, components that violate encoding rules throw a <xref:System.Security.Cryptography.CryptographicException> on non-Windows systems, matching Windows behavior. The <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.ForceUTF8Encoding?displayProperty=nameWithType> flag only UTF-8 encodes components when permissible.
 Starting in .NET 10, components that violate encoding rules throw a `CryptographicException` on non-Windows systems, matching Windows behavior. The <xref:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.ForceUTF8Encoding?displayProperty=nameWithType> flag only UTF-8 encodes components when permissible.
 
 ## Version introduced

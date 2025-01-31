@@ -411,7 +411,7 @@ dotnet publish -p ContainerUser=root
 
 ### Default container labels
 
-Labels are often used to provide consistent metadata on container images. This package provides some default labels to encourage better maintainability of the generated images. All default label generation can be disabled by setting `ContainerGenerateLabels` to `false`. In addition, each default label has an  individual enablement flag that can be set to `false` to disable that specific label.
+Labels are often used to provide consistent metadata on container images. The built-in container tools provide some default labels to increase the quality of the generated images. All default label generation can be disabled by setting `ContainerGenerateLabels` to `false`. In addition, each default label has an  individual enablement flag that can be set to `false` to disable that specific label.
 
 Where possible, existing MSBuild properties provide the values for these labels. Other properties allow for explicit control of their values.
 

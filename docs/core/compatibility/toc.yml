@@ -20,6 +20,8 @@ items:
                 href: core-libraries/10.0/generic-math.md
               - name: LDAP DirectoryControl parsing is now more stringent
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
+              - name: MacCatalyst version normalization
+                href: core-libraries/10.0/maccatalyst-version-normalization.md
           - name: Cryptography
             items:
               - name: X500DistinguishedName validation is stricter
@@ -1340,6 +1342,8 @@ items:
                 href: core-libraries/10.0/generic-math.md
               - name: LDAP DirectoryControl parsing is now more stringent
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
+              - name: MacCatalyst version normalization
+                href: core-libraries/10.0/maccatalyst-version-normalization.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags

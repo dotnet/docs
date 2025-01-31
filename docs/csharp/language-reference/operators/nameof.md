@@ -16,21 +16,19 @@ A `nameof` expression produces the name of a variable, type, or member as the st
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/NameOfOperator.cs" id="Examples":::
 
-You can use a `nameof` expression to make the argument-checking code more maintainable:
+The preceding example using `List<>` is supported in C# 14 and later. You can use a `nameof` expression to make the argument-checking code more maintainable:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/NameOfOperator.cs" id="ExceptionMessage":::
+:::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="ExceptionMessage":::
 
 Beginning with C# 11, you can use a `nameof` expression with a method parameter inside an [attribute](../../advanced-topics/reflection-and-attributes/index.md) on a method or its parameter. The following code shows how to do that for an attribute on a method, a local function, and the parameter of a lambda expression:
 
-:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/NameOfOperator.cs" id="SnippetNameOfParameter":::
+:::code language="csharp" source="snippets/shared/NameOfOperator.cs" id="SnippetNameOfParameter":::
 
 A `nameof` expression with a parameter is useful when you use the [nullable analysis attributes](../attributes/nullable-analysis.md) or the [CallerArgumentExpression attribute](../attributes/caller-information.md#argument-expressions).
 
 When the operand is a [verbatim identifier](../tokens/verbatim.md), the `@` character isn't part of the name, as the following example shows:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/NameOfOperator.cs" id="Verbatim":::
-
-Beginning with C# 14, the argument can be an unbound generic type, such as `List<>`. The `nameof(List<>)` expression evaluates to `List`. If you use a closed generic type, such as `List<int>`, the output is the generic type, not the closed instantiation:  `List`.
 
 ## C# language specification
 

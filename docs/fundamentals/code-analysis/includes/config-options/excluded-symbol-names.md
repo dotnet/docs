@@ -1,6 +1,6 @@
 ### Exclude specific symbols
 
-You can exclude specific symbols, such as types and methods, from analysis. For example, to specify that the rule should not run on any code within types named `MyType`, add the following key-value pair to an *.editorconfig* file in your project:
+You can exclude specific symbols, such as types and methods, from analysis by setting the [excluded_symbol_names](../../code-quality-rule-options.md#excluded_symbol_names) option. For example, to specify that the rule should not run on any code within types named `MyType`, add the following key-value pair to an *.editorconfig* file in your project:
 
 ```ini
 dotnet_code_quality.CAXXXX.excluded_symbol_names = MyType

@@ -14,8 +14,8 @@ on:
         default: 'Manual run'
 
 env:
-  DOTNET_VERSION: '9.0.*'
-  DOTNET_QUALITY: 'ga'
+  DOTNET_VERSION: '10.0.*'
+  DOTNET_QUALITY: 'preview'
   DOTNET_DO_INSTALL: 'true' # To install a version of .NET not provided by the runner, set to true
   EnableNuGetPackageRestore: 'True'
 

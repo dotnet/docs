@@ -14,6 +14,3 @@ The .NET networking stack is instrumented at various layers. .NET gives you the 
 - **[Distributed tracing](tracing.md)**: `HttpClient` is instrumented to emit [distributed tracing](../../../core/diagnostics/distributed-tracing.md) activities (also known as spans).
 - **[Networking events](events.md)**: Events provide debug and trace information with accurate timestamps.
 - **[Networking event counters](event-counters.md)**: All networking components are instrumented to publish real-time performance metrics using the EventCounters API.
-
-> [!TIP]
-> If you're looking for information on tracking HTTP operations across different services, see the [distributed tracing documentation](../../../core/diagnostics/distributed-tracing.md).

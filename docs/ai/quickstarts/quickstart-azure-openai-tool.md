@@ -1,5 +1,5 @@
 ---
-title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET 
+title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
 ms.date: 07/14/2024
 ms.topic: quickstart
@@ -12,7 +12,7 @@ zone_pivot_groups: openai-library
 
 # Invoke .NET functions using an AI model
 
-In this quickstart, you create a .NET console AI chat app to connect to an AI model with local function calling enabled. The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
+In this quickstart, you create a .NET console AI chat app to connect to an AI model with local function calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
 > [!NOTE]
 > The [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) library is currently in Preview.
@@ -91,7 +91,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 ## Configure the app
 
-1. Navigate to the root of your .NET projet from a terminal or command prompt.
+1. Navigate to the root of your .NET project from a terminal or command prompt.
 
 1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
 

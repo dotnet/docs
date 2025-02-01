@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Unified AI building blocks for .NET using Microsoft.Extensions.AI
 
-The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [`Microsoft.Extensions.AI.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) libraries. The .NET team also enhanced the core `Microsoft.Extensions.*` libraries with these abstractions for .NET Generative AI applications and libraries. In the sections ahead, you learn:
+The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the <xref:Microsoft.Extensions.AI> and [`Microsoft.Extensions.AI.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) libraries. The .NET team also enhanced the core `Microsoft.Extensions.*` libraries with these abstractions for .NET generative AI applications and libraries. In the sections ahead, you learn:
 
 - Core concepts and capabilities of the `Microsoft.Extensions.AI` libraries.
 - How to work with AI abstractions in your apps and the benefits they offer.
@@ -20,7 +20,7 @@ For more information, see [Introduction to Microsoft.Extensions.AI](../core/exte
 
 ## What is the Microsoft.Extensions.AI library?
 
-`Microsoft.Extensions.AI` is a set of core .NET libraries created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
+<xref:Microsoft.Extensions.AI> is a set of core .NET libraries created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. These libraries provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware.
 
 :::image type="content" source="media/ai-extensions/meai-architecture-diagram.png" lightbox="media/ai-extensions/meai-architecture-diagram.png" alt-text="An architectural diagram of the AI extensions libraries.":::
 
@@ -40,18 +40,18 @@ For example, the `IChatClient` interface allows consumption of language models f
 
 ```csharp
 IChatClient client =
-    environment.IsDevelopment ?  
-    new OllamaChatClient(...) : 
-    new AzureAIInferenceChatClient(...); 
+    environment.IsDevelopment ?
+    new OllamaChatClient(...) :
+    new AzureAIInferenceChatClient(...);
 ```
 
 Then, regardless of the provider you're using, you can send requests as follows:
 
 ```csharp
-var response = await chatClient.CompleteAsync( 
-      "Translate the following text into Pig Latin: I love .NET and AI"); 
+var response = await chatClient.CompleteAsync(
+      "Translate the following text into Pig Latin: I love .NET and AI");
 
-Console.WriteLine(response.Message);  
+Console.WriteLine(response.Message);
 ```
 
 These abstractions allow for idiomatic C# code for various scenarios with minimal code changes, whether you're using different services for development and production, addressing hybrid scenarios, or exploring other service providers.
@@ -69,17 +69,17 @@ In the future, implementations of these `Microsoft.Extensions.AI` abstractions w
 
 ## Middleware implementations for AI services
 
-Connecting to and using AI services is just one aspect of building robust applications. Production-ready applications require additional features like telemetry, logging, and tool calling capabilities. The `Microsoft.Extensions.AI` abstractions enable you to easily integrate these components into your applications using familiar patterns.
+Connecting to and using AI services is just one aspect of building robust applications. Production-ready applications require additional features like telemetry, logging, and tool-calling capabilities. The `Microsoft.Extensions.AI` abstractions enable you to easily integrate these components into your applications using familiar patterns.
 
 The following sample demonstrates how to register an OpenAI `IChatClient`. `IChatClient` allows you to attach the capabilities in a consistent way across various providers.
 
 ```csharp
-app.Services.AddChatClient(builder => builder 
+app.Services.AddChatClient(builder => builder
     .UseLogging()
-    .UseFunctionInvocation() 
-    .UseDistributedCache()    
-    .UseOpenTelemetry()  
-    .Use(new OpenAIClient(...)).AsChatClient(...)); 
+    .UseFunctionInvocation()
+    .UseDistributedCache()   
+    .UseOpenTelemetry()
+    .Use(new OpenAIClient(...)).AsChatClient(...));
 ```
 
 The capabilities demonstrated in this snippet are included in the `Microsoft.Extensions.AI` library, but they are only a small subset of the capabilities that can be layered in with this approach. .NET developers are able to expose many types of middleware to create powerful AI functionality.
@@ -92,6 +92,7 @@ You can start building with `Microsoft.Extensions.AI` in the following ways:
 - **Service Consumers**: If you're developing libraries that consume AI services, use the abstractions instead of hardcoding to a specific AI service. This approach gives your consumers the flexibility to choose their preferred service.
 - **Application Developers**: Use the abstractions to simplify integration into your apps. This enables portability across models and services, facilitates testing and mocking, leverages middleware provided by the ecosystem, and maintains a consistent API throughout your app, even if you use different services in different parts of your application.
 - **Ecosystem Contributors**: If you're interested in contributing to the ecosystem, consider writing custom middleware components.
+
 To get started, see the samples in the [dotnet/ai-samples](https://aka.ms/meai-samples) GitHub repository.
 
 For an end-to-end sample using `Microsoft.Extensions.AI`, see [eShopSupport](https://github.com/dotnet/eShopSupport).

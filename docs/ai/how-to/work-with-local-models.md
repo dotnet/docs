@@ -3,7 +3,7 @@ title: "Use Custom and Local AI Models with the Semantic Kernel SDK for .NET"
 titleSuffix: ""
 description: "Learn how to use custom or local models for text generation and chat completions in Semantic Kernel SDK for .NET."
 author: haywoodsloan
-ms.topic: how-to 
+ms.topic: how-to
 ms.date: 04/11/2024
 
 #customer intent: As a .NET developer, I want to use custom or local AI models with the Semantic Kernel SDK so that I can perform text generation and chat completions using any model available to me.
@@ -16,7 +16,7 @@ This article demonstrates how to integrate custom and local models into the [Sem
 
 You can adapt the steps to use them with any model that you can access, regardless of where or how you access it. For example, you can integrate the [codellama](https://ollama.com/library/codellama) model with the Semantic Kernel SDK to enable code generation and discussion.
 
-Custom and local models often provide access via REST APIs, for example see [Ollama OpenAI compatibility](https://ollama.com/blog/openai-compatibility). Before you integrate your model it will need to be hosted and accessible to your .NET application via HTTPS.
+Custom and local models often provide access via REST APIs. For example, see [Ollama OpenAI compatibility](https://ollama.com/blog/openai-compatibility). Before you integrate your model, it will need to be hosted and accessible to your .NET application via HTTPS.
 
 ## Prerequisites
 

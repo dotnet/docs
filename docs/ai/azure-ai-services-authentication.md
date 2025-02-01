@@ -36,7 +36,7 @@ var kernel = builder.Build();
 
 Using keys is a straightforward option, but this approach should be used with caution. Keys aren't the recommended authentication option because they:
 
-- Don't follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access)—they provide elevated permissions regardless of who uses them or for what task.
+- Don't follow [the principle of least privilege](/entra/identity-platform/secure-least-privileged-access). They provide elevated permissions regardless of who uses them or for what task.
 - Can accidentally be checked into source control or stored in unsafe locations.
 - Can easily be shared with or sent to parties who shouldn't have access.
 - Often require manual administration and rotation.
@@ -47,19 +47,21 @@ Instead, consider using [Microsoft Entra ID](/#explore-microsoft-entra-id) for a
 
 Microsoft Entra ID is a cloud-based identity and access management service that provides a vast set of features for different business and app scenarios. Microsoft Entra ID is the recommended solution to connect to Azure OpenAI and other AI services and provides the following benefits:
 
-- Key-less authentication using [identities](/entra/fundamentals/identity-fundamental-concepts).
-- Role-based-access-control (RBAC) to assign identities the minimum required permissions.
+- Keyless authentication using [identities](/entra/fundamentals/identity-fundamental-concepts).
+- Role-based access control (RBAC) to assign identities the minimum required permissions.
 - Can use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library to detect [different credentials across environments](/dotnet/api/azure.identity.defaultazurecredential) without requiring code changes.
 - Automatically handles administrative maintenance tasks such as rotating underlying keys.
 
-The workflow to implement Microsoft Entra authentication in your app generally includes the following:
+The workflow to implement Microsoft Entra authentication in your app generally includes the following steps:
 
 - Local development:
+
     1. Sign-in to Azure using a local dev tool such as the Azure CLI or Visual Studio.
     1. Configure your code to use the [`Azure.Identity`](/dotnet/api/overview/azure/identity-readme) client library and `DefaultAzureCredential` class.
     1. Assign Azure roles to the account you signed-in with to enable access to the AI service.
 
 - Azure-hosted app:
+
     1. Deploy the app to Azure after configuring it to authenticate using the `Azure.Identity` client library.
     1. Assign a [managed identity](/entra/identity/managed-identities-azure-resources/overview) to the Azure-hosted app.
     1. Assign Azure roles to the managed identity to enable access to the AI service.

@@ -1,6 +1,6 @@
 ### Exclude specific types and their derived types
 
-You can exclude specific types and their derived types from analysis by setting the [Exclude specific types and their derived types](excluded-type-names-with-derived-types.md#exclude-specific-types-and-their-derived-types) option. For example, to specify that the rule should not run on any methods within types named `MyType` and their derived types, add the following key-value pair to an *.editorconfig* file in your project:
+You can exclude specific types and their derived types from analysis by setting the [excluded_type_names_with_derived_types](../../code-quality-rule-options.md#excluded_type_names_with_derived_types) option. For example, to specify that the rule should not run on any methods within types named `MyType` and their derived types, add the following key-value pair to an *.editorconfig* file in your project:
 
 ```ini
 dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = MyType
@@ -12,7 +12,7 @@ dotnet_code_quality.CAXXXX.excluded_type_names_with_derived_types = MyType
 Allowed symbol name formats in the option value (separated by `|`):
 
 - Type name only (includes all types with the name, regardless of the containing type or namespace).
-- Fully qualified names in the symbol's [documentation ID format](../../../csharp/language-reference/xmldoc/index.md#id-strings), with an optional `T:` prefix.
+- Fully qualified names in the symbol's [documentation ID format](../../../../csharp/language-reference/xmldoc/index.md#id-strings), with an optional `T:` prefix.
 
 Examples:
 

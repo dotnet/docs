@@ -397,7 +397,7 @@ Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the
     ```
 
     > [!TIP]
-    > Even though _Program Files_ is used in this example, you may see other copies of _dotnet.exe_ listed. Adjust them as required so that the appropriate _dotnet.exe_ is resolved first.
+    > Even though _Program Files_ is used in this example, you may see other copies of _dotnet.exe_ listed. Adjust them so that the appropriate _dotnet.exe_ is resolved first.
 
     If it's correct and _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?template=Blank+issue).
 

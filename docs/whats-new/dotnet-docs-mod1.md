@@ -78,7 +78,7 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 
 ### New articles
 
-- [ZZZ - Title not found in: #44284](../azure/sdk/authentication/authentication-best-practices.md)
+- [Authentication best practices with the Azure Identity library for .NET](../azure/sdk/authentication/best-practices.md)
 
 ## Microsoft Orleans
 

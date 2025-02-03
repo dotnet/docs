@@ -66,7 +66,6 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 ### Updated articles
 
 - [Generic types in Visual Basic (Visual Basic)](../visual-basic/programming-guide/language-features/data-types/generic-types.md) - Add VB new features
-- [Troubleshooting Interoperability (Visual Basic)](../visual-basic/programming-guide/com-interop/troubleshooting-interoperability.md) - Fix up missing periods (.NET Framework docs)
 
 ## AI in .NET
 
@@ -97,11 +96,6 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 
 - [.NET Framework release notes](../framework/release-notes/release-notes.md)
 - [January 2025 cumulative update](../framework/release-notes/2025/01-14-january-cumulative-update.md)
-
-### Updated articles
-
-- [Security Concerns and Useful Tips for Tracing](../framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md) - Fix up missing periods (.NET Framework docs)
-- [Security Concerns for Message Logging](../framework/wcf/diagnostics/security-concerns-for-message-logging.md) - Fix up missing periods (.NET Framework docs)
 
 ## Community contributors
 

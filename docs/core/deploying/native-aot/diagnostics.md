@@ -62,7 +62,14 @@ You can launch a Native AOT-compiled executable under the Visual Studio debugger
 
 To set a breakpoint that breaks whenever an exception is thrown, choose the **Breakpoints** option from the **Debug > Windows** menu. In the new window, select **New > Function** breakpoint. Specify `RhThrowEx` as the Function Name and leave the Language option at **All Languages** (don't select C#).
 
-To see what exception was thrown, start debugging (**Debug > Start Debugging** or <kbd>F5</kbd>), open the Watch window (**Debug > Windows > Watch**), and add following expression as one of the watches: `(S_P_CoreLib_System_Exception*)@rcx` on x64, or `(S_P_CoreLib_System_Exception*)x0` on ARM64. This mechanism leverages the fact that at the time `RhThrowEx` is called, the x64 CPU register RCX or ARM64 register X0 contains the thrown exception, on x64 and ARM64, respectively. You can also paste the expression into the **Immediate Window**; the syntax is the same as for watches.
+To see what exception was thrown, start debugging (**Debug > Start Debugging** or <kbd>F5</kbd>) and when the `RhThrowEx` breakpoint hits, open the Watch window (**Debug > Windows > Watch**), and add following expression as one of the watches:
+
+|                    | Expression                            |
+|--------------------|---------------------------------------|
+| x64 architecture   | `(S_P_CoreLib_System_Exception*)@rcx` |
+| Arm64 architecture | `(S_P_CoreLib_System_Exception*)@x0`  |
+
+This mechanism leverages the fact that at the time `RhThrowEx` is called, the CPU register mentioned in the table contains the thrown exception. You can also paste the expression into the Visual Studio **Immediate Window**; the syntax is the same as for watches.
 
 ### Importance of the symbol file
 

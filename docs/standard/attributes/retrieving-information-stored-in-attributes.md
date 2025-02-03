@@ -1,6 +1,6 @@
 ---
 title: "Retrieving Information Stored in Attributes"
-description: Learn to retrieve information stored in attributes, such as for an attribute instance, many instances for the same scope, & many instances for different scopes.
+description: Learn to retrieve information stored in attributes, including for an attribute instance, multiple instances for the same scope, multiple instances for different scopes, and attributes applied to class members.
 ms.date: "08/05/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
@@ -82,7 +82,50 @@ The attribute was not found.
   
  If no instances of the `DeveloperAttribute` are found on the method level or class level, the `GetAttribute` method notifies the user that no attributes were found and displays the name of the method or class that doesn't contain the attribute. If an attribute is found, the console displays the `Name`, `Level`, and `Reviewed` fields.  
   
- You can use the members of the <xref:System.Type> class to get the individual methods and members in the passed class. This example first queries the `Type` object to get attribute information for the class level. Next, it uses <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> to place instances of all methods into an array of <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> objects to retrieve attribute information for the method level. You can also use the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method to check for attributes on the property level or <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> to check for attributes on the constructor level.  
+ You can use the members of the <xref:System.Type> class to get the individual methods and members in the passed class. This example first queries the `Type` object to get attribute information for the class level. Next, it uses <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> to place instances of all methods into an array of <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> objects to retrieve attribute information for the method level. You can also use the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method to check for attributes on the property level or <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> to check for attributes on the constructor level.
+
+## Retrieving Attributes from Class Members  
+
+In addition to retrieving attributes at the class level, attributes can also be applied to individual members such as methods, properties, and fields. The `GetCustomAttribute` and `GetCustomAttributes` methods can be used to retrieve these attributes.
+
+### Example: Retrieving an Attribute from a Method  
+
+The following example demonstrates how to retrieve an attribute applied to a method:
+
+```csharp
+using System;
+using System.Reflection;
+
+[AttributeUsage(AttributeTargets.Method)]
+public class MyAttribute : Attribute
+{
+    public string Description { get; }
+    public MyAttribute(string description) => Description = description;
+}
+
+public class MyClass
+{
+    [MyAttribute("This is a sample method.")]
+    public void MyMethod() { }
+}
+
+class Program
+{
+    static void Main()
+    {
+        MethodInfo methodInfo = typeof(MyClass).GetMethod("MyMethod");
+        MyAttribute? attribute = (MyAttribute?)Attribute.GetCustomAttribute(methodInfo, typeof(MyAttribute));
+
+        if (attribute != null)
+        {
+            Console.WriteLine($"Method Attribute: {attribute.Description}");
+        }
+        else
+        {
+            Console.WriteLine("Attribute not found.");
+        }
+    }
+}
   
 ## See also
 

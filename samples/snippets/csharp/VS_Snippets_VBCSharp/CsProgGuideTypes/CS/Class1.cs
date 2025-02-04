@@ -19,20 +19,6 @@ namespace CsProgGuideTypes
         }
         //</Snippet1>
 
-        //<Snippet2>
-        class Test
-        {
-            static void Main()
-            {
-                double x = 1234.7;
-                int a;
-                // Cast double to int.
-                a = (int)x;
-                System.Console.WriteLine(a);
-            }
-        }
-        // Output: 1234
-        //</Snippet2>
     }
 
     //-------------------------------------------------------------------------
@@ -452,12 +438,6 @@ namespace CsProgGuideTypes
     {
         static void Main()
         {
-            //<snippet34>
-            // Implicit conversion. A long can
-            // hold any value an int can hold, and more!
-            int num = 2147483647;
-            long bigNum = num;
-            //</snippet34>
         }
     }
 
@@ -592,37 +572,6 @@ namespace CsProgGuideTypes
         }
     }
     //</snippet40>
-
-    //<snippet41>
-    class Animal
-    {
-        public void Eat() => System.Console.WriteLine("Eating.");
-
-        public override string ToString() => "I am an animal.";
-    }
-
-    class Reptile : Animal { }
-    class Mammal : Animal { }
-
-    class UnSafeCast
-    {
-        static void Main()
-        {
-            Test(new Mammal());
-
-            // Keep the console window open in debug mode.
-            System.Console.WriteLine("Press any key to exit.");
-            System.Console.ReadKey();
-        }
-
-        static void Test(Animal a)
-        {
-            // System.InvalidCastException at run time
-            // Unable to cast object of type 'Mammal' to type 'Reptile'
-            Reptile r = (Reptile)a;
-        }
-    }
-    //</snippet41>
 
     //<snippet43>
     class ValueTypeDemo

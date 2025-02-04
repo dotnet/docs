@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 14
 description: Get an overview of the new features in C# 13.
-ms.date: 01/31/2025
+ms.date: 02/04/2025
 ms.topic: whats-new
 ---
 # What's new in C# 14
@@ -31,6 +31,14 @@ The `field` feature is released as a preview feature. We want to learn from your
 [!INCLUDE[field-preview](../includes/field-preview.md)]
 
 If you try this feature and have feedback, add it to the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
+
+## Implicit span conversions
+
+C# 14 introduces first-class support for <xref:System.Span`1?displayProperty=fullName> and <xref:System.ReadOnlySpan`1?displayProperty=fullName> in the language. This support involves new implicit conversions allowing more natural programming with these integral types.
+
+`Span<T>` and `ReadOnlySpan<T>` are used in many key ways in C# and the runtime. Their introduction improves performance without risking safety. C# 14 recognizes the relationship between `ReadOnlySpan<T>`, `Span<T>`, and `T[]`. The span types can be extension method receivers, compose with other conversions, and help with generic type inference scenarios.
+
+You can find the list of implicit span conversions in the article on [built-in types](../language-reference/builtin-types/built-in-types.md) in the language reference section. You can learn more details by reading the feature specification for [First class span types](~/_csharplang/proposals/first-class-span.md).
 
 ## Unbound generic types and nameof
 

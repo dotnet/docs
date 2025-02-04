@@ -115,6 +115,10 @@ items:
       href: ../../../_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
     - name: Ref readonly parameters
       href: ../../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+  - name: Conversions
+    items:
+    - name: First class span types
+      href: ../../../_csharplang/proposals/first-class-span-types.md
   - name: Patterns
     items:
     - name: Recursive pattern matching
@@ -165,6 +169,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-10.0/caller-argument-expression.md
     - name: Extended nameof scope
       href: ../../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
+    - name: Unbound generic types in nameof
+      href: ../../../_csharp/proposals/unbound-generic-types-in-nameof.md
     - name: Overload resolution priority
       href: ../../../_csharplang/proposals/csharp-13.0/overload-resolution-priority.md
   - name: Statements

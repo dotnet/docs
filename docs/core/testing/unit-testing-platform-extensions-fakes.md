@@ -23,7 +23,7 @@ To use the new extension with an existing project, update the existing `Microsof
 - <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=Neutral">
 -   <SpecificVersion>False</SpecificVersion>
 - </Reference>
-+ <PackageReference Include="Microsoft.Testing.Extensions.Fakes" Version="17.11.0-beta.24319.3" />
++ <PackageReference Include="Microsoft.Testing.Extensions.Fakes" Version="17.12.0" />
 ```
 
 If you are using MSTest.Sdk 3.7 or later, use the `EnableMicrosoftTestingExtensionsFakes` property to enable the extension and don't add the package reference.

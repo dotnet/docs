@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # The `is` operator (C# reference)
 
-The `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article. You can also use the `is` operator to match an expression against a pattern, as the following example shows:
+The `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#the-is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article. You can also use the `is` operator to match an expression against a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 

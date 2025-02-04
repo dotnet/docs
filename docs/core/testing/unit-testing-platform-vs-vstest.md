@@ -99,7 +99,7 @@ The test related arguments are VSTest specific and so need to be transformed to 
 | `-- <RunSettings arguments>` | Not supported |
 
 > [!IMPORTANT]
-> Before specifying any `Microsoft.Testing.Platform`, you need to add `--` to separate the `dotnet test` arguments from the new platform arguments.
+> Before specifying any `Microsoft.Testing.Platform` arguments, you need to add `--` to separate the `dotnet test` arguments from the new platform arguments. For example, `dotnet test --no-build -- --list-tests`.
 
 ### `vstest.console.exe`
 

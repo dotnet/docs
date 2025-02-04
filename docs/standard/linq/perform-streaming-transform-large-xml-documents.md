@@ -83,12 +83,12 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
     // Parse the file, save header information when encountered, and yield the
     // Item XElement objects as they're created.
 
-    // loop through Customer elements
+    // Loop through Customer elements
     do
     {
         if (reader.NodeType == XmlNodeType.Element && reader.Name == "Customer")
         {
-            // move to Name element
+            // Move to Name element
             XElement? name = null;
             do
             {
@@ -149,12 +149,12 @@ Module Module1
             ' Parse the file, save header information when encountered, And yield the
             ' Item XElement objects as they're created.
 
-            ' loop through Customer elements
+            ' Loop through Customer elements
             Do
 
                 If reader.NodeType = XmlNodeType.Element And reader.Name = "Customer" Then
 
-                    ' move to Name element
+                    ' Move to Name element
                     Dim name As XElement = Nothing
                     Do
                         If reader.NodeType = XmlNodeType.Element And reader.Name = "Name" Then
@@ -282,12 +282,12 @@ static IEnumerable<XElement> StreamCustomerItem(string uri)
     // Parse the file, save header information when encountered, and yield the
     // Item XElement objects as they're created.
 
-    // loop through Customer elements
+    // Loop through Customer elements
     do
     {
         if (reader.NodeType == XmlNodeType.Element && reader.Name == "Customer")
         {
-            // move to Name element
+            // Move to Name element
             XElement? name = null;
             do
             {
@@ -357,12 +357,12 @@ Module Module1
             ' Parse the file, save header information when encountered, And yield the
             ' Item XElement objects as they're created.
 
-            ' loop through Customer elements
+            ' Loop through Customer elements
             Do
 
                 If reader.NodeType = XmlNodeType.Element And reader.Name = "Customer" Then
 
-                    ' move to Name element
+                    ' Move to Name element
                     Dim name As XElement = Nothing
                     Do
                         If reader.NodeType = XmlNodeType.Element And reader.Name = "Name" Then

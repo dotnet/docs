@@ -81,7 +81,7 @@ These compiler errors indicate one of these problems in your code:
 
 - The project doesn't reference the required assembly. To fix this error, [add a reference to the required assembly](../../../standard/assembly/index.md#add-a-reference-to-an-assembly).
 - You misspelled the name of a type. Check the name of the type.
-- You used a variable name where the name of a <xref:System.Type?displayProperty=nameWithType> was expected, such as in the [`typeof` operator](../operators/type-testing-and-cast.md#typeof-operator) or the [`is` operator](../operators/type-testing-and-cast.md#is-operator).
+- You used a variable name where the name of a <xref:System.Type?displayProperty=nameWithType> was expected, such as in the [`typeof` operator](../operators/type-testing-and-cast.md#the-typeof-operator) or the [`is` operator](../operators/type-testing-and-cast.md#the-is-operator).
 - You used the [global scope operator, (`::`)](../operators/namespace-alias-qualifier.md) when the type isn't in the global namespace.
 
 ## Type forwarding

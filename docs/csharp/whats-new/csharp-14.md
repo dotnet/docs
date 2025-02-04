@@ -1,6 +1,6 @@
 ---
 title: What's new in C# 14
-description: Get an overview of the new features in C# 13.
+description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
 ms.date: 02/04/2025
 ms.topic: whats-new
 ---
@@ -38,7 +38,7 @@ C# 14 introduces first-class support for <xref:System.Span`1?displayProperty=ful
 
 `Span<T>` and `ReadOnlySpan<T>` are used in many key ways in C# and the runtime. Their introduction improves performance without risking safety. C# 14 recognizes the relationship between `ReadOnlySpan<T>`, `Span<T>`, and `T[]`. The span types can be extension method receivers, compose with other conversions, and help with generic type inference scenarios.
 
-You can find the list of implicit span conversions in the article on [built-in types](../language-reference/builtin-types/built-in-types.md) in the language reference section. You can learn more details by reading the feature specification for [First class span types](~/_csharplang/proposals/first-class-span.md).
+You can find the list of implicit span conversions in the article on [built-in types](../language-reference/builtin-types/built-in-types.md) in the language reference section. You can learn more details by reading the feature specification for [First class span types](~/_csharplang/proposals/first-class-span-types.md).
 
 ## Unbound generic types and nameof
 

@@ -23,7 +23,7 @@ helpviewer_keywords:
 ---
 # Type-testing operators and cast expressions - `is`, `as`, `typeof`, and casts
 
-These operators and expressions perform type checking or type conversion. The `is` [operator](#is-operator) checks if the run-time type of an expression is compatible with a given type. The `as` [operator](#as-operator) explicitly converts an expression to a given type if its run-time type is compatible with that type. [Cast expressions](#cast-expression) perform an explicit conversion to a target type. The `typeof` [operator](#typeof-operator) obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type.
+These operators and expressions perform type checking or type conversion. The `is` [operator](#the-is-operator) checks if the run-time type of an expression is compatible with a given type. The `as` [operator](#the-as-operator) explicitly converts an expression to a given type if its run-time type is compatible with that type. [Cast expressions](#cast-expression) perform an explicit conversion to a target type. The `typeof` [operator](#the-typeof-operator) obtains the <xref:System.Type?displayProperty=nameWithType> instance for a type.
 
 ## The `is` operator
 
@@ -131,7 +131,7 @@ An expression can't be an argument of the `typeof` operator. To get the <xref:Sy
 
 ### Type testing with the `typeof` operator
 
-Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking done with the `typeof` operator and the [`is` operator](#is-operator):
+Use the `typeof` operator to check if the run-time type of the expression result exactly matches a given type. The following example demonstrates the difference between type checking done with the `typeof` operator and the [`is` operator](#the-is-operator):
 
 :::code interactive="try-dotnet-method" language="csharp" source="snippets/shared/TypeTestingAndConversionOperators.cs" id="TypeCheckWithTypeOf":::
 

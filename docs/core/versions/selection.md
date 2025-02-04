@@ -55,7 +55,7 @@ For more information about SDK version selection, see the [Matching rules](../to
 
 ### Updating the SDK version
 
-It is important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you specify a specific version using *global.json*, consider a tool such as Dependabot to automatically update pinned the SDK as new versions become available.
+It is important to update to the latest version of the SDK regularly to adopt the latest features, performance improvements, and bug fixes. To easily check for updates to the SDK, use the `dotnet sdk check` [command](../tools/dotnet-sdk-check.md). Additionally, if you select a specific version using *global.json*, consider a tool such as Dependabot to automatically update the pinned SDK version as new versions become available.
 
 ## Target framework monikers define build time APIs
 

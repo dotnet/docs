@@ -1,7 +1,7 @@
 ---
 title: "Built-in types"
 description: "Learn C# built-in value and reference types"
-ms.date: 03/15/2021
+ms.date: 02/04/2025
 helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"
@@ -36,7 +36,7 @@ The following table lists the C# built-in [reference](../keywords/reference-type
 |[`string`](reference-types.md#the-string-type)|<xref:System.String?displayProperty=nameWithType>|
 |[`dynamic`](reference-types.md#the-dynamic-type)|<xref:System.Object?displayProperty=nameWithType>|
 
-In the preceding tables, each C# type keyword from the left column (except [dynamic](reference-types.md#the-dynamic-type)) is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
+In the preceding tables, each C# type keyword from the left column (except [dynamic](reference-types.md#the-dynamic-type)) is an alias for the corresponding .NET type. They're interchangeable. For example, the following declarations declare variables of the same type:
 
 ```csharp
 int a = 123;
@@ -44,6 +44,16 @@ System.Int32 b = 123;
 ```
 
 The [`void`](void.md) keyword represents the absence of a type. You use it as the return type of a method that doesn't return a value.
+
+The C# language includes specialized rules for the <xref:System.Span`1?displayProperty=fullName> and <xref:System.ReadOnlySpan`1?displayProperty=fullName> types. These types aren't classified as built-in types, because there aren't C# keywords that correspond to these types. The C# language defines implicit conversions from array types and the string type to `Span<T>` and `ReadOnlySpan<T>`. These conversions integrate `Span` types into more natural programming scenarios. The following conversions are defined as *implicit span conversions*:
+
+- From any single-dimensional array with element type `E` to `System.Span<E>`
+- From any single-dimensional with element type `E` to `System.ReadOnlySpan<U>`, when `E` has covariance conversion or an identity conversion to `U`
+- From `System.Span<E>` to `System.ReadOnlySpan<U>`, when `E` has a covariance conversion or an identity conversion to `U`
+- From `System.ReadOnlySpan<E>` to `System.ReadOnlySpan<U>`, when `E` has a covariance conversion or an identity conversion to `U`
+- From `string` to `System.ReadOnlySpan<char>`
+
+The compiler never ignores any user defined conversion where an applicable *implicit span conversion* exists. Implicit span conversions can be applied to the first argument of [extension methods](../../programming-guide/classes-and-structs/extension-methods.md), the parameter with the `this` modifier. Implicit span conversions aren't considered for method group conversions.
 
 ## See also
 

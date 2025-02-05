@@ -84,49 +84,13 @@ The attribute was not found.
   
  You can use the members of the <xref:System.Type> class to get the individual methods and members in the passed class. This example first queries the `Type` object to get attribute information for the class level. Next, it uses <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> to place instances of all methods into an array of <xref:System.Reflection.MemberInfo?displayProperty=nameWithType> objects to retrieve attribute information for the method level. You can also use the <xref:System.Type.GetProperties%2A?displayProperty=nameWithType> method to check for attributes on the property level or <xref:System.Type.GetConstructors%2A?displayProperty=nameWithType> to check for attributes on the constructor level.
 
-## Retrieving attributes from class members  
+## Retrieving Attributes from Class Members  
 
 In addition to retrieving attributes at the class level, attributes can also be applied to individual members such as methods, properties, and fields. The `GetCustomAttribute` and `GetCustomAttributes` methods can be used to retrieve these attributes.
 
-### Example
-
 The following example demonstrates how to retrieve an attribute applied to a method:
 
-```csharp
-using System;
-using System.Reflection;
-
-[AttributeUsage(AttributeTargets.Method)]
-public class MyAttribute : Attribute
-{
-    public string Description { get; }
-    public MyAttribute(string description) => Description = description;
-}
-
-public class MyClass
-{
-    [MyAttribute("This is a sample method.")]
-    public void MyMethod() { }
-}
-
-class Program
-{
-    static void Main()
-    {
-        MethodInfo methodInfo = typeof(MyClass).GetMethod("MyMethod");
-        MyAttribute? attribute = (MyAttribute?)Attribute.GetCustomAttribute(methodInfo, typeof(MyAttribute));
-
-        if (attribute != null)
-        {
-            Console.WriteLine($"Method Attribute: {attribute.Description}");
-        }
-        else
-        {
-            Console.WriteLine("Attribute not found.");
-        }
-    }
-}
-```
+[!code-csharp[Conceptual.Attributes.Usage#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source4.cs#21)]
   
 ## See also
 

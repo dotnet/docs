@@ -30,25 +30,25 @@ The available values for this property:
 
 ### `None`
 
-This sets all analyzers to `none` severity, making all of them disabled. You can then enable individual analyzers using `.editorconfig` or `.globalconfig` files.
+This value sets all analyzers to `none` severity, disabling all of them. You can then enable individual analyzers using `.editorconfig` or `.globalconfig` files.
 
 ### `Default`
 
-This follows the default documented behavior for each rule.
+This setting follows the default documented behavior for each rule.
 
 - Rules that are enabled by default will use their default severity.
 - Rules that are disabled by default will use `none` severity.
 
 > [!NOTE]
-> Rules that are enabled by default as warnings are violations which are expected to cause issues at runtime.
+> Rules that are enabled by default as warnings are violations that are expected to cause issues at run time.
 
 ### `Recommended`
 
-This is the mode we expect most developers to use. Rules that are enabled by default with Info (`suggestion`) severity are escalated to be warnings. Moreover, certain rules may decide that they are escalated to be errors in both `Recommended` and `All` modes. For example, [MSTEST0003: Test methods should have valid layout](mstest0003.md) is escalated to error in `Recommended` and `All` modes.
+This is the mode we expect most developers to use. Rules that are enabled by default with Info (`suggestion`) severity are escalated to warnings. Moreover, certain rules might be escalated to errors in both `Recommended` and `All` modes. For example, [MSTEST0003: Test methods should have valid layout](mstest0003.md) is escalated to error in `Recommended` and `All` modes.
 
 ### `All`
 
-This mode is more aggressive than `Recommended`. All rules are enabled as warnings. As mentioned for `Recommended` mode, certain rules may decide that they are escalated to be errors in both `Recommended` and `All` modes. For example, [MSTEST0003: Test methods should have valid layout](./mstest0003.md) is escalated to error in `Recommended` and `All` modes.
+This mode is more aggressive than `Recommended`. All rules are enabled as warnings. As mentioned for `Recommended` mode, certain rules might be escalated to errors in both `Recommended` and `All` modes. For example, [MSTEST0003: Test methods should have valid layout](./mstest0003.md) is escalated to error in `Recommended` and `All` modes.
 
 > [!NOTE]
 > The following rules are completely opt-in and are not enabled in `Default`, `Recommended`, or `All` modes:

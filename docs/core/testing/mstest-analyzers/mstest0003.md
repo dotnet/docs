@@ -16,16 +16,16 @@ dev_langs:
 ---
 # MSTEST0003: Test methods should have valid layout
 
-| Property                            | Value                                              |
-|-------------------------------------|----------------------------------------------------|
-| **Rule ID**                         | MSTEST0003                                         |
-| **Title**                           | Test methods should have valid layout              |
-| **Category**                        | Usage                                              |
-| **Fix is breaking or non-breaking** | Breaking                                           |
-| **Enabled by default**              | Yes                                                |
-| **Default severity**                | Warning                                            |
-| **Introduced in version**           | 3.2.0                                              |
-| **Is there a code fix**             | Yes                                                |
+| Property                            | Value                                                                                     |
+|-------------------------------------|------------------------------------------------------------------------------------------|
+| **Rule ID**                         | MSTEST0003                                                                               |
+| **Title**                           | Test methods should have valid layout                                                    |
+| **Category**                        | Usage                                                                                    |
+| **Fix is breaking or non-breaking** | Breaking                                                                                 |
+| **Enabled by default**              | Yes                                                                                      |
+| **Default severity**                | Warning (escalated to Error when setting `MSTestAnalysisMode` to `Recommended` or `All`) |
+| **Introduced in version**           | 3.2.0                                                                                    |
+| **Is there a code fix**             | Yes                                                                                      |
 
 ## Cause
 

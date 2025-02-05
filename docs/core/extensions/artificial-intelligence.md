@@ -18,7 +18,7 @@ To install the [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Mic
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.AI --prelease
+dotnet add package Microsoft.Extensions.AI --prerelease
 ```
 
 ### [PackageReference](#tab/package-reference)

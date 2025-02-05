@@ -28,6 +28,11 @@ Starting with MSTest 3.8, an MSBuild property named `MSTestAnalysisMode` is avai
 
 The available values for this property:
 
+- [`None`](#none)
+- [`Default`](#default)
+- [`Recommended`](#recommended)
+- [`All`](#all)
+
 ### `None`
 
 This value sets all analyzers to `none` severity, disabling all of them. You can then enable individual analyzers using `.editorconfig` or `.globalconfig` files.

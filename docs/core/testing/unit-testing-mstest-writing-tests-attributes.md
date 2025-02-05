@@ -355,7 +355,7 @@ The [DoNotParallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotP
 
 ### `RetryAttribute`
 
-The `RetryAttribute` was introduced in MSTest 3.8. It causes the test method to be re-tried when it fails or timeouts. It allows you to specify the maximum number of retry attempts, the time delay between retries, and a delay backoff type which is either constant or exponential.
+The `RetryAttribute` was introduced in MSTest 3.8. This attribute causes the test method to be retried when it fails or timeouts. It allows you to specify the maximum number of retry attempts, the time delay between retries, and a delay backoff type, which is either constant or exponential.
 
 Only one `RetryAttribute` is expected to be present on a test method, and `RetryAttribute` cannot be used on methods that are not marked with `TestMethodAttribute`.
 

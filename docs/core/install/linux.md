@@ -62,14 +62,14 @@ You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/
 
 ### Package managers
 
-- https://formulae.brew.sh/cask/dotnet
-- https://formulae.brew.sh/cask/dotnet-sdk
-- https://ports.macports.org/port/dotnet-cli/
-- https://search.nixos.org/packages?query=dotnet
-- https://archlinux.org/
-- https://aur.archlinux.org/
+- <https://formulae.brew.sh/cask/dotnet>
+- <https://formulae.brew.sh/cask/dotnet-sdk>
+- <https://ports.macports.org/port/dotnet-cli>
+- <https://search.nixos.org/packages?query=dotnet>
+- <https://archlinux.org>
+- <https://aur.archlinux.org>
 
 ### Containers
 
-- https://containers.dev/features
-- https://images.chainguard.dev/
+- <https://containers.dev/features>
+- <https://images.chainguard.dev>

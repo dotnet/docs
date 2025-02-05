@@ -40,7 +40,7 @@ This follows the default documented behavior for each rule.
 - Rules that are disabled by default will use `none` severity.
 
 > [!NOTE]
-> Rules that are enabled by default as warnings are violations which are expected to cause issues at run-time.
+> Rules that are enabled by default as warnings are violations which are expected to cause issues at runtime.
 
 ### `Recommended`
 

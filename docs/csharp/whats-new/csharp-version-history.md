@@ -19,7 +19,7 @@ This article provides a history of each major release of the C# language. The C#
 
 C# 13 includes the following new features:
 
-- `params` collections: he `params` modifier isn't limited to array types. You can now use `params` with any recognized collection type, including `Span<T>`, and interface types.
+- `params` collections: the `params` modifier isn't limited to array types. You can now use `params` with any recognized collection type, including `Span<T>`, and interface types.
 - New `lock` type and semantics: If the target of a `lock` statement is a <xref:System.Threading.Lock?displayProperty=fullName>, compiler generates code to use the <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> method to enter an exclusive scope. The `ref struct` returned from that supports the `Dispose()` pattern to exit the exclusive scope.
 - New escape sequence - `\e`: You can use `\e` as a character literal escape sequence for the `ESCAPE` character, Unicode `U+001B`.
 - Small optimizations to overload resolution involving method groups.

@@ -12,6 +12,30 @@ items:
             items:
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/10.0/obsolete-apis.md
+              - name: ActivitySource.CreateActivity and ActivitySource.StartActivity behavior change
+                href: core-libraries/10.0/activity-sampling.md
+              - name: C# 14 overload resolution with span parameters
+                href: core-libraries/10.0/csharp-overload-resolution.md
+              - name: Consistent shift behavior in generic math
+                href: core-libraries/10.0/generic-math.md
+              - name: LDAP DirectoryControl parsing is now more stringent
+                href: core-libraries/10.0/ldap-directorycontrol-parsing.md
+              - name: MacCatalyst version normalization
+                href: core-libraries/10.0/maccatalyst-version-normalization.md
+          - name: Cryptography
+            items:
+              - name: X500DistinguishedName validation is stricter
+                href: cryptography/10.0/x500distinguishedname-validation.md
+          - name: Globalization
+            items:
+              - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
+                href: globalization/10.0/version-override.md
+          - name: Windows Forms
+            items:
+              - name: Renamed parameter in HtmlElement.InsertAdjacentElement
+                href: windows-forms/10.0/insertadjacentelement-orientation.md
+              - name: TreeView checkbox image truncation
+                href: windows-forms/10.0/treeview-text-location.md
       - name: .NET 9
         items:
           - name: Overview
@@ -1312,6 +1336,16 @@ items:
             items:
               - name: API obsoletions with non-default diagnostic IDs
                 href: core-libraries/10.0/obsolete-apis.md
+              - name: ActivitySource.CreateActivity and ActivitySource.StartActivity behavior change
+                href: core-libraries/10.0/activity-sampling.md
+              - name: C# 14 overload resolution with span parameters
+                href: core-libraries/10.0/csharp-overload-resolution.md
+              - name: Consistent shift behavior in generic math
+                href: core-libraries/10.0/generic-math.md
+              - name: LDAP DirectoryControl parsing is now more stringent
+                href: core-libraries/10.0/ldap-directorycontrol-parsing.md
+              - name: MacCatalyst version normalization
+                href: core-libraries/10.0/maccatalyst-version-normalization.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -1546,6 +1580,10 @@ items:
             href: corefx.md
       - name: Cryptography
         items:
+          - name: .NET 10
+            items:
+              - name: X500DistinguishedName validation is stricter
+                href: cryptography/10.0/x500distinguishedname-validation.md
           - name: .NET 9
             items:
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
@@ -1674,6 +1712,10 @@ items:
                 href: extensions/6.0/service-provider-disposed.md
       - name: Globalization
         items:
+          - name: .NET 10
+            items:
+              - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
+                href: globalization/10.0/version-override.md
           - name: .NET 8
             items:
               - name: Date and time converters honor culture argument
@@ -2046,6 +2088,12 @@ items:
                 href: wcf-client/6.0/duplex-synchronization-context.md
       - name: Windows Forms
         items:
+          - name: .NET 10
+            items:
+              - name: Renamed parameter in HtmlElement.InsertAdjacentElement
+                href: windows-forms/10.0/insertadjacentelement-orientation.md
+              - name: TreeView checkbox image truncation
+                href: windows-forms/10.0/treeview-text-location.md
           - name: .NET 9
             items:
               - name: BindingSource.SortDescriptions doesn't return null

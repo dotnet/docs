@@ -23,7 +23,7 @@ In the preceding example, the `Y` and `label` members are discarded. You can spe
 
 ## Record deconstruction
 
-[Record](../builtin-types/record.md) types that have a [primary constructor](../builtin-types/record.md#positional-syntax-for-property-definition) support deconstruction for positional parameters. The compiler synthesizes a `Deconstruct` method that extracts the properties synthesized from positional parameters in the primary constructor. The compiler-synthesized `Deconstruction` method doesn't extract properties declared as properties in the record type.
+[Record](../builtin-types/record.md) types that have a [primary constructor](../builtin-types/record.md#positional-syntax-for-property-and-field-definition) support deconstruction for positional parameters. The compiler synthesizes a `Deconstruct` method that extracts the properties synthesized from positional parameters in the primary constructor. The compiler-synthesized `Deconstruction` method doesn't extract properties declared as properties in the record type.
 
 The `record` shown in the following code declares two positional properties, `SquareFeet` and `Address`, along with another property, `RealtorNotes`:
 

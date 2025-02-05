@@ -74,7 +74,7 @@ If the generated automatically implemented property definition isn't what you wa
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualProperty":::
 
-If you wanted to create a field instead of a property, you would assign the positional parameter to a field, as shown in the following example:
+If you want to create a field instead of a property, assign the positional parameter to a field, as shown in the following example:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="PositionalWithManualField":::
 

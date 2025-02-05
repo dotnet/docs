@@ -118,50 +118,7 @@ public:
     //</snippet20>
 };
 
-//<snippet21>
-// This snippet demonstrates retrieving attributes from class members such as methods.
-
-using namespace System;
-using namespace System::Reflection;
-
-[AttributeUsage(AttributeTargets::Method)]
-public ref class MyAttribute : Attribute
-{
-public:
-    String^ Description;
-    MyAttribute(String^ description) { Description = description; }
-};
-
-public ref class MyClass
-{
-public:
-    [MyAttribute("This is a sample method.")]
-    void MyMethod() { }
-};
-
-ref class AttributeRetrieval
-{
-public:
-    static void Main()
-    {
-        MethodInfo^ methodInfo = MyClass::typeid->GetMethod("MyMethod");
-        MyAttribute^ attribute = (MyAttribute^)Attribute::GetCustomAttribute(methodInfo, MyAttribute::typeid);
-
-        if (attribute != nullptr)
-        {
-            Console::WriteLine("Method Attribute: {0}", attribute->Description);
-        }
-        else
-        {
-            Console::WriteLine("Attribute not found.");
-        }
-    }
-};
-
-//</snippet21>
-
 int main()
 {
     MainApp::Main();
-    AttributeRetrieval::Main();
 }

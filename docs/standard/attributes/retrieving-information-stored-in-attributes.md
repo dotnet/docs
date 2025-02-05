@@ -88,6 +88,8 @@ The attribute was not found.
 
 In addition to retrieving attributes at the class level, attributes can also be applied to individual members such as methods, properties, and fields. The `GetCustomAttribute` and `GetCustomAttributes` methods can be used to retrieve these attributes.
 
+### Example
+
 The following example demonstrates how to retrieve an attribute applied to a method:
 
 [!code-csharp[Conceptual.Attributes.Usage#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source4.cs#21)]

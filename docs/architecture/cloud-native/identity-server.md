@@ -42,7 +42,7 @@ IdentityServer provides middleware that runs within an ASP.NET Core application 
 IdentityServer is available:  
 
 * With a community license, which lets you use the [IdentityServer free for small companies and non-profits](https://duendesoftware.com/products/communityedition) (conditions apply)
-* Paid - lets you use the IdentityServer [in a commercial scenario](https://duendesoftware.com/products/identityserver)
+* Paid, which lets you use the IdentityServer [in a commercial scenario](https://duendesoftware.com/products/identityserver)
 
 For more information about pricing, see the official product's [pricing page](https://duendesoftware.com/products/identityserver).
 

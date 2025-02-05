@@ -21,7 +21,12 @@ Starting with MSTest.TestFramework 3.7, the MSTest.Analyzers NuGet package is a 
 
 Starting with MSTest 3.8, an MSBuild property named `MSTestAnalysisMode` is available to determine which analyzers are enabled at which severity.
 
-The available values are:
+> [!TIP]
+> To see which rules are enabled at which severity for each mode, you can navigate to the package of the version of interest in NuGet cache, locate the `globalconfigs` directory, and open the `.globalconfig` file corresponding to the analysis mode.
+> For more information on finding the NuGet cache directory, see [Managing the global packages, cache, and temp folders](/nuget/consume-packages/managing-the-global-packages-and-cache-folders). From that directory, locate `mstest.analyzers` directory, then the version (3.8 and higher), then `globalconfigs`.
+> Alternatively, you can download the NuGet package of the version of interest from `nuget.org` and view it in NuGet Package Explorer (Windows app), or view directly in the [web app version of NuGet Package Explorer](https://nuget.info/packages/MSTest.Analyzers/).
+
+The available values for this property:
 
 ### `None`
 

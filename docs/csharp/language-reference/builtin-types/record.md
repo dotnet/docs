@@ -51,7 +51,7 @@ The remainder of this article discusses both `record class` and `record struct` 
 
 ## Positional syntax for property and field definition
 
-You can use positional parameters to declare properties of a record and to initialize the property values when you create an instance:
+You can use positional parameters to declare properties of a record or to initialize property or field values. The following example creates a record with two positional properties:
 
 :::code language="csharp" source="snippets/shared/RecordType.cs" id="InstantiatePositional":::
 

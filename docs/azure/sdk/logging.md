@@ -91,7 +91,7 @@ using System.Diagnostics.Tracing;
 using var listener = new AzureEventSourceListener((e, message) =>
     {
         // Only log messages from "Azure-Core" event source
-        if (e.EventSource.Name == "Azure-Core")
+        if (string.Equals(e.EventSource.Name, "Azure-Core", StringComparison.Ordinal))
         {
             Console.WriteLine($"{DateTime.Now} {message}");
         }
@@ -230,7 +230,7 @@ By default, logging of the aforementioned content is disabled. To enable logging
     {
         Diagnostics = 
         {
-            IsLoggingContentEnabled = true,
+            IsLoggingContentEnabled = true
         }
     };
     var client = new SecretClient(

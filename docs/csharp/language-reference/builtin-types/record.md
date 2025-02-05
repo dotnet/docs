@@ -35,7 +35,7 @@ Record structs can be mutable as well, both positional record structs and record
 
 While records can be mutable, they're primarily intended for supporting immutable data models. The record type offers the following features:
 
-* [Concise syntax for creating a reference type with immutable properties](#positional-syntax-for-property-definition)
+* [Concise syntax for creating a reference type with immutable properties](#positional-syntax-for-property-and-field-definition)
 * Built-in behavior useful for a data-centric reference type:
   * [Value equality](#value-equality)
   * [Concise syntax for nondestructive mutation](#nondestructive-mutation)

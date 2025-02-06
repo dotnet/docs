@@ -226,7 +226,7 @@ You can also extend a positional pattern in any of the following ways:
 
   :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithTypeCheck":::
 
-  The preceding example uses [positional records](../builtin-types/record.md#positional-syntax-for-property-definition) that implicitly provide the `Deconstruct` method.
+  The preceding example uses [positional records](../builtin-types/record.md#positional-syntax-for-property-and-field-definition) that implicitly provide the `Deconstruct` method.
 
 - Use a [property pattern](#property-pattern) within a positional pattern, as the following example shows:
 

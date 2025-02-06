@@ -27,6 +27,12 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 - [TreeView checkbox image truncation](../core/compatibility/windows-forms/10.0/treeview-text-location.md)
 - [X500DistinguishedName validation is stricter](../core/compatibility/cryptography/10.0/x500distinguishedname-validation.md)
 
+## AI in .NET
+
+### New articles
+
+- [Create a minimal AI assistant using .NET](../ai/quickstarts/quickstart-assistants.md)
+
 ## .NET fundamentals
 
 ### New articles
@@ -66,12 +72,6 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 ### Updated articles
 
 - [Generic types in Visual Basic (Visual Basic)](../visual-basic/programming-guide/language-features/data-types/generic-types.md) - Add VB new features
-
-## AI in .NET
-
-### New articles
-
-- [Create a minimal AI assistant using .NET](../ai/quickstarts/quickstart-assistants.md)
 
 ## Azure SDK for .NET
 

@@ -40,6 +40,8 @@ Ensure that the test method isn't ignored.
 
 Do not suppress a warning from this rule. If you ignore this rule, test method will be ignored.
 
+[!INCLUDE [disabled-in-all](includes/disabled-in-all.md)]
+
 ## Suppress a warning
 
 If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.

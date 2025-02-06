@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 08/05/2024
 ---
 Locate the resource group for your app by searching for the resource group name using the search box at the top of the Azure portal.<br>

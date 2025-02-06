@@ -2,7 +2,6 @@
 author: erjain
 ms.author: v-tjain
 ms.date: 04/13/2022
-ms.topic: include
 ---
 
 > [!TIP]

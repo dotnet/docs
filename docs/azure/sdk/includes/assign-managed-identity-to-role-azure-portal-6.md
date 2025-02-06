@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 08/05/2024
 ---
 In the **Select managed identities** dialog:

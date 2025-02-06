@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 07/31/2024
 ---
 On the page for your resource, select the **Identity** menu item from the left-hand menu.

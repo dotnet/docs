@@ -2,7 +2,6 @@
 title: Quickstart - Summarize text using an AI chat app with .NET
 description: Create a simple chat app using Microsoft.Extensions.AI to summarize a text.
 ms.date: 07/17/2024
-ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche

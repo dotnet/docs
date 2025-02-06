@@ -2,7 +2,6 @@
 author: fboucher
 ms.author: frbouche
 ms.date: 05/22/2024
-ms.topic: include
 ---
 
 ## Prerequisites

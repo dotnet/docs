@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 08/05/2024
 ---
 The **Add role assignment** page lists all of the roles that can be assigned for the resource group.

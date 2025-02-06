@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 08/02/2024
 ---
 In the **Select members** dialog:

@@ -2,7 +2,6 @@
 author: adegeo
 ms.author: adegeo
 ms.date: 11/14/2023
-ms.topic: include
 ---
 
 You can use **PowerShell** or **Command Prompt** to validate the checksum of the file you've downloaded. For example, the following command reports the checksum of the _dotnet-sdk-8.0.100-win-x64.exe_ file:

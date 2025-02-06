@@ -2,7 +2,6 @@
 author: adegeo
 ms.author: adegeo
 ms.date: 03/14/2023
-ms.topic: include
 ---
 
 > [!IMPORTANT]

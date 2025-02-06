@@ -2,7 +2,6 @@
 author: adegeo
 ms.author: adegeo
 ms.date: 11/11/2024
-ms.topic: include
 ---
 
 All versions of .NET are available for download at <https://dotnet.microsoft.com/download/dotnet>, but require [manual installation](../linux-scripted-manual.md). You can try to use the package manager to install a different version of .NET. However, the requested version might not be available.

@@ -2,7 +2,6 @@
 author: IEvangelist
 ms.author: dapine
 ms.date: 06/25/2021
-ms.topic: include
 ---
 
 > [!NOTE]

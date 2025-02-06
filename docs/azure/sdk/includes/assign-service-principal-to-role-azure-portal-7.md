@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 08/02/2024
 ---
 The service principal will now show as selected on the **Add role assignment** screen.<br>

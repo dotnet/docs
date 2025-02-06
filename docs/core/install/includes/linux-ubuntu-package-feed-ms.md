@@ -2,7 +2,6 @@
 author: adegeo
 ms.author: adegeo
 ms.date: 03/18/2024
-ms.topic: include
 ms.custom: linux-related-content
 ---
 

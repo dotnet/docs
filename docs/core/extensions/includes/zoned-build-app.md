@@ -2,7 +2,6 @@
 author: IEvangelist
 ms.author: dapine
 ms.date: 09/13/2021
-ms.topic: include
 ---
 
 :::zone target="docs" pivot="visualstudio"

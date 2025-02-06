@@ -2,7 +2,6 @@
 title: Quickstart - Connect to and chat with a local AI using .NET
 description: Set up a local AI model and chat with it using a .NET console app and the Microsoft.Extensions.AI libraries
 ms.date: 12/19/2024
-ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf

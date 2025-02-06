@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 07/31/2024
 ---
 Back on the **New group** page, select **Create** to create the group.

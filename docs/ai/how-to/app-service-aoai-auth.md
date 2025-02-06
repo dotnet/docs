@@ -2,7 +2,6 @@
 title: "Authenticate an Azure hosted .NET app to Azure OpenAI using Microsoft Entra ID"
 description: "Learn how to authenticate your Azure hosted .NET app to an Azure OpenAI resource using Microsoft Entra ID."
 author: haywoodsloan
-ms.topic: how-to
 ms.custom: devx-track-azurecli
 ms.date: 01/29/2025
 zone_pivot_groups: azure-interface

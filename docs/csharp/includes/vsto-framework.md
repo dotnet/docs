@@ -1,7 +1,6 @@
 ---
 author: BillWagner
 ms.author: wiwagn
-ms.topic: include
 ms.date: 02/28/2023
 ---
 

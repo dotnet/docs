@@ -2,7 +2,6 @@
 author: adegeo
 ms.author: adegeo
 ms.date: 05/31/2024
-ms.topic: include
 ---
 
 .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.

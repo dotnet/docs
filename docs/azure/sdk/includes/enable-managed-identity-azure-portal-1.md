@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 07/31/2024
 ---
 Navigate to the resource that hosts your application code in the Azure portal.

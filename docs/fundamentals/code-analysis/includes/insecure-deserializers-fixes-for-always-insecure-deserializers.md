@@ -2,7 +2,6 @@
 author: dotpaul
 ms.author: paulming
 ms.date: 05/01/2019
-ms.topic: include
 ---
 - If possible, use a secure serializer instead, and **don't allow an attacker to specify an arbitrary type to deserialize**. Some safer serializers include:
 

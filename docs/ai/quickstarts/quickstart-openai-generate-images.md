@@ -2,7 +2,6 @@
 title: Quickstart - Generate images using AI with .NET
 description: Create a simple app using to generate images using .NET and the OpenAI or Azure OpenAI models.
 ms.date: 07/17/2024
-ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche

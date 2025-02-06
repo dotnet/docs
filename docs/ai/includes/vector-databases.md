@@ -2,7 +2,6 @@
 author: alexwolfmsft
 ms.author: alexwolf
 ms.date: 07/29/2024
-ms.topic: include
 ---
 
 AI applications often use data vector databases and services to improve relevancy and provide customized functionality. Many of these services provide a native SDK for .NET, while others offer a REST service you can connect to through custom code. Semantic Kernel provides an extensible component model that enables you to use different vector stores without needing to learn each SDK.

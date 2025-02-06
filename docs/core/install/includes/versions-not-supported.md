@@ -2,7 +2,6 @@
 author: adegeo
 ms.author: adegeo
 ms.date: 11/11/2024
-ms.topic: include
 ---
 
 The following versions of .NET are ❌ no longer supported:

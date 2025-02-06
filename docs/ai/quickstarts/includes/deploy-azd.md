@@ -2,7 +2,6 @@
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 07/03/2024
-ms.topic: include
 ---
 
 The sample GitHub repository is structured as an Azure Developer CLI (`azd`) template, which `azd` can use to provision the Azure OpenAI service and model for you.

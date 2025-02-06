@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 08/02/2024
 ---
 The **Add a client secret** dialog will pop out from the right-hand side of the page. In this dialog:

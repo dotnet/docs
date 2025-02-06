@@ -1,5 +1,4 @@
 ---
-ms.topic: include
 ms.date: 08/05/2024
 ---
 On the **Register an application** page, fill out the form as follows.

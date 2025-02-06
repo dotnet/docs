@@ -42,6 +42,6 @@ You can find the list of implicit span conversions in the article on [built-in t
 
 ## Unbound generic types and nameof
 
-Beginning with C# 14, the argument to `nameof` can be an unbound generic type. For example, `nameof(List<>)` evaluates to `List`. In earlier versions of C#, only closed generic types, such as `List<int>` had to be used to produce `List`.
+Beginning with C# 14, the argument to `nameof` can be an unbound generic type. For example, `nameof(List<>)` evaluates to `List`. In earlier versions of C#, only closed generic types, such as `List<int>`, could be used to produce `List`.
 
 <!-- Add link to What's new in .NET 10 once it's published -->

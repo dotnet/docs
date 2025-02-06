@@ -75,25 +75,19 @@ The following example shows how to assign roles at the resource group scope sinc
 
 1. Navigate to the **Overview** page of the resource group that contains the app with the system-assigned identity.
 1. Select **Access control (IAM)** from the left navigation.
-1. On the **Access control (IAM)** page, select **+ Add** from the top menu and then choose **Add role assignment** from the drop-down menu.
+1. On the **Access control (IAM)** page, select **+ Add** from the top menu and then choose **Add role assignment** to navigate to the **Add role assignment** page. This page presents a tabbed, multi-step workflow to assign roles to identities.
 
     :::image type="content" source="../media/system-assigned-identity-access-control.png" alt-text="A screenshot showing how to access the identity role assignment page.":::
 
-    The **Add role assignment** page presents a tabbed, multi-step workflow to assign roles to identities.
+1. On the **Role** tab, use the search box at the top to locate the role you want to assign to the identity. Select the role and then choose **Next** to move to the **Members** tab.
+1. For the **Assign access to** option, select **Managed identity**.
+1. For the **Members** option, choose **+ Select members** to open the **Select managed identities** flyout panel.
+1. On the flyout panel, use the **Subscription** and **Managed identity** dropdowns to filter the search results for your identities. Use the **Select** search box to locate the system-identity you enabled for the Azure resource hosting your app.
 
-1. On the **Role** tab:
-    - Use the search box at the top to locate the role that you want to assign to the identity.
-    - Select the role and then choose **Next**.
-1. On the **Members** tab:
-    - For the **Assign access to** option, select **Managed identity**.
-    - For the **Members** option, choose **+ Select members** to open the **Select managed identities** panel.
-    - On the flyout panel, use the **Subscription** and **Managed identity** dropdown to filters to narrow the search results for your identities.
-    - Use the **Select** search box to locate the system-identity you enabled for the Azure resource hosting your app.
+    :::image type="content" source="../media/system-assigned-identity-assign-roles.png" alt-text="A screenshot showing the managed identity assignment process.":::
 
-        :::image type="content" source="../media/system-assigned-identity-assign-roles.png" alt-text="A screenshot showing the managed identity assignment process.":::
-
-    - Select the identity and choose **Select** at the bottom of the panel to continue.
-    - Select **Review + assign** at the bottom of the page.
+1. Select the identity and choose **Select** at the bottom of the panel to continue.
+1. Select **Review + assign** at the bottom of the page.
 1. On the final **Review + assign** tab, select **Review + assign** to complete the workflow.
 
 ### [Azure CLI](#tab/azure-cli)

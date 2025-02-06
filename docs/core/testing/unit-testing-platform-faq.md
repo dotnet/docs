@@ -25,4 +25,4 @@ Manually defining an entry point (`Main`) in a test project or referencing a tes
 This error can occur if not all of the Fakes assemblies are present in the bin folder.
 
 - Ensure that the project either uses the [MSTest.SDK](./unit-testing-mstest-sdk.md) or references [Microsoft.Testing.Extensions.Fakes](./unit-testing-platform-extensions-fakes.md).
-- For net framework projects avoid setting `<PlatformTarget>AnyCPU</PlatformTarget>` as this results in NuGet not copying all files to the bin folder.
+- For .NET Framework projects, avoid setting `<PlatformTarget>AnyCPU</PlatformTarget>` as this results in NuGet not copying all files to the bin folder.

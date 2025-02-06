@@ -8,25 +8,25 @@ ms.date: 02/06/2025
 
 # Authenticate Azure-hosted apps to Azure resources with the Azure SDK for .NET
 
-The recommended approach to authenticate an Azure-hosted app to other Azure resources is to use a [managed identity](/entra/identity/managed-identities-azure-resources/overview). This approach is [supported for most Azure services](/entra/identity/managed-identities-azure-resources/managed-identities-status), including apps hosted on Azure App Service, Azure Container Apps, and Azure Virtual machines. In the sections ahead, you'll learn:
+The recommended approach to authenticate an Azure-hosted app to other Azure resources is to use a [managed identity](/entra/identity/managed-identities-azure-resources/overview). This approach is [supported for most Azure services](/entra/identity/managed-identities-azure-resources/managed-identities-status), including apps hosted on Azure App Service, Azure Container Apps, and Azure Virtual machines. Discover more about different authentication techniques and approaches on the [authentication overview](/dotnet/azure/sdk/authentication) page. In the sections ahead, you'll learn:
 
 - Essential managed identity concepts
 - How to create a managed identity for your app
 - How to assign roles to the managed identity
 - How to authenticate using the managed identity from your app code
 
-## Managed identity concepts and types
+## Managed identity essential concepts
 
-A managed identity enables your app to securely connect to other Azure resources without the use of secret keys or other application secrets. Internally, Azure knows the identity of your app and which resources it's allowed to connect to. Azure uses this information to automatically obtain Microsoft Entra tokens for the app to allow it to connect to other Azure resources, all without you having to manage any application secrets.
+A managed identity enables your app to securely connect to other Azure resources without the use of secret keys or other application secrets. Internally, Azure tracks the identity and which resources it's allowed to connect to. Azure uses this information to automatically obtain Microsoft Entra tokens for the app to allow it to connect to other Azure resources.
 
 There are two types of managed identities to consider when configuring your hosted app:
 
-- **System-assigned** identities are provided by and tied directly to the life cycle of an Azure resource. When the resource is deleted, Azure automatically deletes the identity for you. All you have to do is enable managed identity for the Azure resource hosting your code, which makes this a minimal approach to using managed identities.
-- **User-assigned** identities are created as standalone Azure resources. These identities are ideal for solutions that run across multiple Azure resources that all need to share the same identity and permissions. For example, if your solution has multiple virtual machine instances that all need access to the same set of Azure resources, a user-assigned managed identity provides reusability and optimized management.
+- **System-assigned** identities are enabled directly on an Azure resource and are tied to its life cycle. When the resource is deleted, Azure automatically deletes the identity for you. System-assigned identities provide a minimalistic approach to using managed identities.
+- **User-assigned** identities are created as standalone Azure resources. They are ideal for solutions involving multiple Azure resources that need to share the same identity and permissions. For example, if multiple virtual machine instances need to access the same set of Azure resources, a user-assigned managed identity provides reusability and optimized management.
 
 The sections ahead describe the steps to enable and use a system-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp) article for more information.
 
-### Enable managed identity on the Azure resource hosting the app
+### Enable managed identity on the Azure hosting resource
 
 To get started using a system-assigned identity with your app, enable the identity on the Azure resource hosting your app, such as an Azure App Service, Azure Container App, or Azure Virtual Machine.
 
@@ -47,7 +47,23 @@ Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com
 
 The Azure CLI commands used to enable managed identity for an Azure resource are of the form `az <command-group> identity --resource-group <resource-group-name> --name <resource-name>`. Specific commands for popular Azure services are shown below.
 
-[!INCLUDE [Enable managed identity Azure CLI](<../includes/enable-managed-identity-azure-cli.md>)]
+#### [Azure App Service](#tab/azure-app-service)
+
+```azurecli
+az webapp identity assign \
+    --resource-group <resource-group-name> \
+    --name <web-app-name>
+```
+
+#### [Azure Virtual Machines](#tab/azure-virtual-machines)
+
+```azurecli
+az vm identity assign \
+    --resource-group <resource-group-name> \
+    --name <virtual-machine-name>
+```
+
+---
 
 The output resembles the following:
 

@@ -47,7 +47,7 @@ Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com
 
 The Azure CLI commands used to enable managed identity for an Azure resource are of the form `az <command-group> identity --resource-group <resource-group-name> --name <resource-name>`. Specific commands for popular Azure services are shown below.
 
-#### [Azure App Service](#tab/azure-app-service)
+Azure App Service:
 
 ```azurecli
 az webapp identity assign \
@@ -55,15 +55,13 @@ az webapp identity assign \
     --name <web-app-name>
 ```
 
-#### [Azure Virtual Machines](#tab/azure-virtual-machines)
+Azure Virtual Machine:
 
 ```azurecli
 az vm identity assign \
     --resource-group <resource-group-name> \
     --name <virtual-machine-name>
 ```
-
----
 
 The output resembles the following:
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # sizeof operator - determine the memory needs for a given type
 
-The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of an [unmanaged type](../builtin-types/unmanaged-types.md) or a type parameter that is [constrained](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to be an unmanaged type. Unmanaged types include all numeric types, enum types, and tuple types and struct types where all members are unmanaged types.
+The `sizeof` operator returns the number of bytes occupied by a variable of a given type. In safe code, the argument to the `sizeof` operator must be the name of an [unmanaged type](../builtin-types/unmanaged-types.md) or a type parameter that is [constrained](../../programming-guide/generics/constraints-on-type-parameters.md#unmanaged-constraint) to be an unmanaged type. Unmanaged types include all numeric types, enum types, and tuple and struct types where all members are unmanaged types.
 
 The expressions presented in the following table are evaluated in compile time to the corresponding constant values and don't require an unsafe context:
 

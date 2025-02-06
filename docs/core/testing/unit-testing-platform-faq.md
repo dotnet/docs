@@ -19,3 +19,10 @@ Manually defining an entry point (`Main`) in a test project or referencing a tes
 - Disable the generation of the entry point by setting the `<GenerateTestingPlatformEntryPoint>false</GenerateTestingPlatformEntryPoint>` MSBuild property.
 
 - Completely disable the transitive dependency to `Microsoft.Testing.Platform.MSBuild` by setting the `<IsTestingPlatformApplication>false</IsTestingPlatformApplication>` MSBuild property in the project that references a test project. This is needed when you reference a test project from a non-test project, for example, a console app that references a test application.
+
+## Fakes error  Failed to resolve profiler path from COR_PROFILER_PATH and COR_PROFILER environment variables
+
+This error can occur if not all of the Fakes assemblies are present in the bin folder.
+
+- Ensure that the project either uses the [MSTest.SDK](./unit-testing-mstest-sdk.md) or references [Microsoft.Testing.Extensions.Fakes](./unit-testing-platform-extensions-fakes.md).
+- For net framework projects avoid setting `<PlatformTarget>AnyCPU</PlatformTarget>` as this results in NuGet not copying all files to the bin folder.

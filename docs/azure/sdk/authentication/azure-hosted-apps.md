@@ -8,32 +8,35 @@ ms.date: 07/31/2024
 
 # Authenticate Azure-hosted apps to Azure resources with the Azure SDK for .NET
 
-When an app is hosted in Azure using a service like Azure App Service, Azure Virtual Machines, or Azure Container Instances, the recommended approach to authenticating an app to Azure resources is to use a [managed identity](/entra/identity/managed-identities-azure-resources/overview).
+The recommended approach to authenticating an Azure-hosted app to other Azure resources is to use a [managed identity](/entra/identity/managed-identities-azure-resources/overview). This approach is supported for apps hosted on Azure App Service, Azure Container Apps, Azure Virtual machines, and most other Azure services.
 
-A managed identity provides an identity for your app such that it can connect to other Azure resources without the need to use a secret key or other application secret. Internally, Azure knows the identity of your app and what resources it's allowed to connect to. Azure uses this information to automatically obtain Microsoft Entra tokens for the app to allow it to connect to other Azure resources, all without you having to manage any application secrets.
+A managed identity provides an identity for your app that can connect to other Azure resources without the use of secret keys or other application secrets. Internally, Azure knows the identity of your app and which resources it's allowed to connect to. Azure uses this information to automatically obtain Microsoft Entra tokens for the app to allow it to connect to other Azure resources, all without you having to manage any application secrets.
 
 ## Managed identity types
 
 There are two types of managed identities:
 
-- **System-assigned** - This type of managed identity is provided by and tied directly to an Azure resource. When you enable managed identity on an Azure resource, you get a system-assigned managed identity for that resource. A system-assigned managed identity is tied to the lifecycle of the Azure resource it's associated with. When the resource is deleted, Azure automatically deletes the identity for you. Since all you have to do is enable managed identity for the Azure resource hosting your code, this is the easiest type of managed identity to use.
-- **User-assigned** - You may also create a managed identity as a standalone Azure resource. This is most frequently used when your solution has multiple workloads that run on multiple Azure resources that all need to share the same identity and same permissions. For example, if your solution had components that ran on multiple App Service and virtual machine instances that all needed access to the same set of Azure resources, creating and using a user-assigned managed identity across those resources would make sense.
+- **System-assigned** identities are provided by and tied directly to the life cycle of an Azure resource. When the resource is deleted, Azure automatically deletes the identity for you. Since all you have to do is enable managed identity for the Azure resource hosting your code, this is the most minimal approach to using managed identities.
+- **User-assigned** identities are created as standalone Azure resources. These identities are ideal for solutions that require that run across multiple Azure resources that all need to share the same identity and same permissions. For example, if your solution had components that ran on multiple App Service and virtual machine instances that all needed access to the same set of Azure resources, creating and using a user-assigned managed identity across those resources provides reusability and optimized management.
 
-This article will cover the steps to enable and use a system-assigned managed identity for an app. If you need to use a user-assigned managed identity, see the article [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp) to see how to create a user-assigned managed identity.
+## Authenticate your app using a system-assigned identity
 
-## 1 - Enable managed identity in the Azure resource hosting the app
+This article covers the steps to enable and use a system-assigned managed identity for an app. If you need to use a user-assigned managed identity, see the article [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp) to see how to create a user-assigned managed identity.
 
-The first step is to enable managed identity on Azure resource hosting your app. For example, if you're hosting a .NET app using Azure App Service, you need to enable managed identity for the App Service web app that is hosting your app. If you were using a virtual machine to host your app, you would enable your VM to use managed identity.
+### 1 - Enable managed identity in the Azure resource hosting the app
+
+The first step is to enable managed identity on the Azure resource hosting your app, such as an Azure App Service, Azure Container App, or Azure Virtual Machine.
 
 You can enable managed identity to be used for an Azure resource using either the Azure portal or the Azure CLI.
 
 ### [Azure portal](#tab/azure-portal)
 
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Enable managed identity step 1](<../includes/enable-managed-identity-azure-portal-1.md>)] | :::image type="content" source="../media/enable-managed-identity-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to locate and navigate to an Azure resource." lightbox="../media/enable-managed-identity-azure-portal-1.png"::: |
-| [!INCLUDE [Enable managed identity step 2](<../includes/enable-managed-identity-azure-portal-2.md>)] | :::image type="content" source="../media/enable-managed-identity-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the Identity menu item in the left-hand menu for an Azure resource." lightbox="../media/enable-managed-identity-azure-portal-2.png"::: |
-| [!INCLUDE [Enable managed identity step 3](<../includes/enable-managed-identity-azure-portal-3.md>)] | :::image type="content" source="../media/enable-managed-identity-azure-portal-3-240px.png" alt-text="A screenshot showing how to enable managed identity for an Azure resource on the resource's Identity page." lightbox="../media/enable-managed-identity-azure-portal-3.png"::: |
+1. Navigate to the resource that hosts your application code in the Azure portal, such as an Azure App Service or Container App instance.
+1. On the page for your resource, select the Identity menu item from the left-hand menu.
+1. On the Identity page, toggle the **Status** slider to **On**.
+1. Select **Save** to apply your changes.
+
+    :::image type="content" source="../../../ai/media/azure-hosted-apps/enable-system-assigned-identity.png" alt-text="A screenshot showing how to enable a system-assigned identity on a container app.":::
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -58,21 +61,35 @@ The `principalId` value is the unique ID of the managed identity. Keep a copy of
 
 ---
 
-## 2 - Assign roles to the managed identity
+### 2 - Assign roles to the managed identity
 
-Next, determine which roles (permissions) your app needs and assign the managed identity to those roles in Azure. A managed identity can be assigned roles at a resource, resource group, or subscription scope. This example will show how to assign roles at the resource group scope since most applications group all their Azure resources into a single resource group.
+Next, determine which roles (permissions) your app needs and assign the managed identity to those roles in Azure. A managed identity can be assigned roles at the following scopes:
+    - **Resource**: The assigned roles only apply to that specific resource.
+    - **Resource group**: The assigned roles apply to all resources that live in the resource group.
+    - **Subscription**: The assigned roles apply to all resources contained in the subscription.
+
+The following example shows how to assign roles at the resource group scope since many apps group and manage all their related Azure resources into a single resource group.
 
 ### [Azure portal](#tab/azure-portal)
 
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Assign managed identity to role step 1](<../includes/assign-managed-identity-to-role-azure-portal-1.md>)] | :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to locate and navigate to a resource group in Azure. This is the resource group that you'll assign roles (permissions) to." lightbox="../media/assign-managed-identity-to-role-azure-portal-1.png"::: |
-| [!INCLUDE [Assign managed identity to role step 2](<../includes/assign-managed-identity-to-role-azure-portal-2.md>)] | :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the Access control (IAM) menu item in the left-hand menu of an Azure resource group." lightbox="../media/assign-managed-identity-to-role-azure-portal-2.png"::: |
-| [!INCLUDE [Assign managed identity to role step 3](<../includes/assign-managed-identity-to-role-azure-portal-3.md>)] | :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-3-240px.png" alt-text="A screenshot showing how to navigate to the role assignments tab and the location of the button used to add role assignments to a resource group." lightbox="../media/assign-managed-identity-to-role-azure-portal-3.png"::: |
-| [!INCLUDE [Assign managed identity to role step 4](<../includes/assign-managed-identity-to-role-azure-portal-4.md>)] | :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-4-240px.png" alt-text="A screenshot showing how to filter and select role assignments to be added to the resource group." lightbox="../media/assign-managed-identity-to-role-azure-portal-4.png"::: |
-| [!INCLUDE [Assign managed identity to role step 5](<../includes/assign-managed-identity-to-role-azure-portal-5.md>)] | :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-5-240px.png" alt-text="A screenshot showing how to select managed identity as the type of user you want to assign the role (permission) on the add role assignments page." lightbox="../media/assign-managed-identity-to-role-azure-portal-5.png"::: |
-| [!INCLUDE [Assign managed identity to role step 6](<../includes/assign-managed-identity-to-role-azure-portal-6.md>)] | :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-6-240px.png" alt-text="A screenshot showing how to use the select managed identities dialog to filter and select the managed identity to assign the role to." lightbox="../media/assign-managed-identity-to-role-azure-portal-6.png"::: |
-| [!INCLUDE [Assign managed identity to role step 7](<../includes/assign-managed-identity-to-role-azure-portal-7.md>)] | :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-7-240px.png" alt-text="A screenshot of the final add role assignment screen where a user needs to select the Review + Assign button to finalize the role assignment." lightbox="../media/assign-managed-identity-to-role-azure-portal-7.png"::: |
+1. Navigate to the overview page of the resource group that contains the app for which you enabled a system-assigned identity.
+1. Select **Access control (IAM)** from the left-hand menu.
+1. On the **Access control (IAM)** page, select **+ Add** from the top menu and then choose **Add role assignment** from the drop-down menu.
+
+    :::image type="content" source="../../../ai/media/azure-hosted-apps/identity-assign-role.png" alt-text="A screenshot showing how to access the identity role assignment page.":::
+
+1. The **Add role assignment** page presents a tabbed, multi-step workflow to assign roles to identities. Complete the following steps:
+    1. On the **Role** tab, use the search box at the top to locate and select the role that you want to assign, then select **Next**.
+    1. On the members tab:
+        1. For the **Assign access to** option, select **Managed identity**.
+        1. For the **Members** option, choose **+ Select members** to open the **Select managed identities** panel.
+
+        :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-5.png" alt-text="A screenshot showing the managed identity assignment process.":::
+
+        1. On the flyout panel, use the **Managed identity** dropdown and **Select** text box to filter the list of managed identities in your subscription. Select the managed identity for the Azure resource hosting your app.
+        1. Choose **Select** at the bottom of the panel to continue.
+        1. Select **Review + assign** at the bottom of the page.
+    1. On the final **Review + assign** tab, select **Review + assign** to complete the workflow.
 
 ### [Azure CLI](#tab/azure-cli)
 

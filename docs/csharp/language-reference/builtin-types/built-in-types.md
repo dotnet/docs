@@ -48,7 +48,7 @@ The [`void`](void.md) keyword represents the absence of a type. You use it as th
 The C# language includes specialized rules for the <xref:System.Span`1?displayProperty=fullName> and <xref:System.ReadOnlySpan`1?displayProperty=fullName> types. These types aren't classified as built-in types, because there aren't C# keywords that correspond to these types. The C# language defines implicit conversions from array types and the string type to `Span<T>` and `ReadOnlySpan<T>`. These conversions integrate `Span` types into more natural programming scenarios. The following conversions are defined as *implicit span conversions*:
 
 - From any single-dimensional array with element type `E` to `System.Span<E>`
-- From any single-dimensional with element type `E` to `System.ReadOnlySpan<U>`, when `E` has covariance conversion or an identity conversion to `U`
+- From any single-dimensional array with element type `E` to `System.ReadOnlySpan<U>`, when `E` has covariance conversion or an identity conversion to `U`
 - From `System.Span<E>` to `System.ReadOnlySpan<U>`, when `E` has a covariance conversion or an identity conversion to `U`
 - From `System.ReadOnlySpan<E>` to `System.ReadOnlySpan<U>`, when `E` has a covariance conversion or an identity conversion to `U`
 - From `string` to `System.ReadOnlySpan<char>`

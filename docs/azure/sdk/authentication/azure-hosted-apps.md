@@ -26,7 +26,7 @@ There are two types of managed identities to consider when configuring your host
 
 The sections ahead describe the steps to enable and use a system-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp) article for more information.
 
-### Enable a system-assigned identity on the Azure hosting resource
+## Enable a system-assigned identity on the Azure hosting resource
 
 To get started using a system-assigned identity with your app, enable the identity on the Azure resource hosting your app, such as an Azure App Service, Azure Container App, or Azure Virtual Machine.
 
@@ -78,7 +78,7 @@ The `principalId` value is the unique ID of the managed identity. Keep a copy of
 
 ---
 
-### Assign roles to the managed identity
+## Assign roles to the managed identity
 
 Next, determine which roles your app needs and assign those roles to the managed identity. You can assign roles to a managed identity at the following scopes:
 

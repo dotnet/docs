@@ -26,16 +26,16 @@ There are two types of managed identities to consider when configuring your host
 
 The sections ahead describe the steps to enable and use a system-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp) article for more information.
 
-## Enable a system-assigned identity on the Azure hosting resource
+## Enable a system-assigned managed identity on the Azure hosting resource
 
-To get started using a system-assigned identity with your app, enable the identity on the Azure resource hosting your app, such as an Azure App Service, Azure Container App, or Azure Virtual Machine.
+To get started using a system-assigned managed identity with your app, enable the identity on the Azure resource hosting your app, such as an Azure App Service, Azure Container App, or Azure Virtual Machine.
 
 You can enable a system-assigned managed identity for an Azure resource using either the Azure portal or the Azure CLI.
 
 ### [Azure portal](#tab/azure-portal)
 
 1. In the Azure portal, navigate to the resource that hosts your application code, such as an Azure App Service or Azure Container App instance.
-1. On the **Overview** page for your resource, select **Identity** from the navigation.
+1. From the resource's **Overview** page, expand **Settings** and select **Identity** from the navigation.
 1. On the **Identity** page, toggle the **Status** slider to **On**.
 1. Select **Save** to apply your changes.
 
@@ -90,7 +90,7 @@ The following example shows how to assign roles at the resource group scope, sin
 
 ### [Azure portal](#tab/azure-portal)
 
-1. Navigate to the **Overview** page of the resource group that contains the app with the system-assigned identity.
+1. Navigate to the **Overview** page of the resource group that contains the app with the system-assigned managed identity.
 1. Select **Access control (IAM)** on the left navigation.
 1. On the **Access control (IAM)** page, select **+ Add** on the top menu and then choose **Add role assignment** to navigate to the **Add role assignment** page.
 

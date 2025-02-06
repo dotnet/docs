@@ -23,17 +23,17 @@ There are two types of managed identities:
 
 This article covers the steps to enable and use a system-assigned managed identity for an app. If you need to use a user-assigned managed identity, see the article [Manage user-assigned managed identities](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp) to see how to create a user-assigned managed identity.
 
-### 1 - Enable managed identity in the Azure resource hosting the app
+### Enable managed identity on the Azure resource hosting the app
 
-The first step is to enable managed identity on the Azure resource hosting your app, such as an Azure App Service, Azure Container App, or Azure Virtual Machine.
+Enable the system-assigned managed identity on the Azure resource hosting your app, such as an Azure App Service, Azure Container App, or Azure Virtual Machine.
 
 You can enable managed identity to be used for an Azure resource using either the Azure portal or the Azure CLI.
 
 ### [Azure portal](#tab/azure-portal)
 
-1. Navigate to the resource that hosts your application code in the Azure portal, such as an Azure App Service or Container App instance.
-1. On the page for your resource, select the Identity menu item from the left-hand menu.
-1. On the Identity page, toggle the **Status** slider to **On**.
+1. In the Azure portal, navigate to the resource that hosts your application code in the Azure portal, such as an Azure App Service or Azure Container App instance.
+1. On the **Overview** page for your resource, select the **Identity** menu item from the left-hand menu.
+1. On the **Identity** page, toggle the **Status** slider to **On**.
 1. Select **Save** to apply your changes.
 
     :::image type="content" source="../../../ai/media/azure-hosted-apps/enable-system-assigned-identity.png" alt-text="A screenshot showing how to enable a system-assigned identity on a container app.":::
@@ -46,7 +46,7 @@ The Azure CLI commands used to enable managed identity for an Azure resource are
 
 [!INCLUDE [Enable managed identity Azure CLI](<../includes/enable-managed-identity-azure-cli.md>)]
 
-The output will look like the following.
+The output resembles the following:
 
 ```json
 {
@@ -61,9 +61,9 @@ The `principalId` value is the unique ID of the managed identity. Keep a copy of
 
 ---
 
-### 2 - Assign roles to the managed identity
+### Assign roles to the managed identity
 
-Next, determine which roles (permissions) your app needs and assign the managed identity to those roles in Azure. A managed identity can be assigned roles at the following scopes:
+Next, determine which roles your app needs and assign those roles to the managed identity. You can assign roles to a managed identity at the following scopes:
     - **Resource**: The assigned roles only apply to that specific resource.
     - **Resource group**: The assigned roles apply to all resources that live in the resource group.
     - **Subscription**: The assigned roles apply to all resources contained in the subscription.
@@ -80,7 +80,9 @@ The following example shows how to assign roles at the resource group scope sinc
 
     The **Add role assignment** page presents a tabbed, multi-step workflow to assign roles to identities.
 
-1. On the **Role** tab, use the search box at the top to locate and select the role that you want to assign, then select **Next**.
+1. On the **Role** tab:
+    - Use the search box at the top to locate the role that you want to assign to the identity.
+    - Select the role and then choose **Next**.
 1. On the **Members** tab:
     - For the **Assign access to** option, select **Managed identity**.
     - For the **Members** option, choose **+ Select members** to open the **Select managed identities** panel.
@@ -124,6 +126,6 @@ For information on assigning permissions at the resource or subscription level u
 
 ---
 
-## 3 - Implement DefaultAzureCredential in your application
+## Implement DefaultAzureCredential in your application
 
 [!INCLUDE [Implement DefaultAzureCredential](<../includes/implement-defaultazurecredential.md>)]

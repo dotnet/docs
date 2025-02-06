@@ -3,7 +3,7 @@ title: Authenticate Azure-hosted .NET apps to Azure resources
 description: Learn how to authenticate apps to Azure services when hosted in an Azure compute service like Azure App Service, Azure Functions, or Azure Virtual Machines.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 07/31/2024
+ms.date: 02/06/2025
 ---
 
 # Authenticate Azure-hosted apps to Azure resources with the Azure SDK for .NET
@@ -64,16 +64,17 @@ The `principalId` value is the unique ID of the managed identity. Keep a copy of
 ### Assign roles to the managed identity
 
 Next, determine which roles your app needs and assign those roles to the managed identity. You can assign roles to a managed identity at the following scopes:
-    - **Resource**: The assigned roles only apply to that specific resource.
-    - **Resource group**: The assigned roles apply to all resources that live in the resource group.
-    - **Subscription**: The assigned roles apply to all resources contained in the subscription.
+
+- **Resource**: The assigned roles only apply to that specific resource.
+- **Resource group**: The assigned roles apply to all resources that live in the resource group.
+- **Subscription**: The assigned roles apply to all resources contained in the subscription.
 
 The following example shows how to assign roles at the resource group scope since many apps group and manage all their related Azure resources into a single resource group.
 
 ### [Azure portal](#tab/azure-portal)
 
-1. Navigate to the overview page of the resource group that contains the app for which you enabled a system-assigned identity.
-1. Select **Access control (IAM)** from the left-hand menu.
+1. Navigate to the **Overview** page of the resource group that contains the app with the system-assigned identity.
+1. Select **Access control (IAM)** from the left navigation.
 1. On the **Access control (IAM)** page, select **+ Add** from the top menu and then choose **Add role assignment** from the drop-down menu.
 
     :::image type="content" source="../../../ai/media/azure-hosted-apps/identity-assign-role.png" alt-text="A screenshot showing how to access the identity role assignment page.":::
@@ -89,8 +90,9 @@ The following example shows how to assign roles at the resource group scope sinc
 
     :::image type="content" source="../media/assign-managed-identity-to-role-azure-portal-5.png" alt-text="A screenshot showing the managed identity assignment process.":::
 
-    - On the flyout panel, use the **Managed identity** dropdown and **Select** text box to filter the list of managed identities in your subscription. Select the managed identity for the Azure resource hosting your app.
-    - Choose **Select** at the bottom of the panel to continue.
+    - On the flyout panel, use the **Subscription** and **Managed identity** dropdown to filters to narrow the search results for your identities.
+    - Use the **Select** search box to locate the system-identity you enabled for the Azure resource hosting your app.
+    - Select the identity and choose **Select** at the bottom of the panel to continue.
     - Select **Review + assign** at the bottom of the page.
 1. On the final **Review + assign** tab, select **Review + assign** to complete the workflow.
 

@@ -21,6 +21,23 @@ Visual Basic provides new features for rapid application development that improv
   
  ![Diagram shows the object model for My.](./media/index/my-object-model-relationships.gif)  
   
+## Supported My Services in .NET 5+
+
+Starting with .NET 5, not all `My` services are supported. The following `My` objects and services are available:
+
+- **Supported in .NET 5+:**
+  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> (`My.Application`)
+  - <xref:Microsoft.VisualBasic.Devices.Computer> (`My.Computer`)
+  - <xref:Microsoft.VisualBasic.ApplicationServices.User> (`My.User`)
+  - <xref:Microsoft.VisualBasic.MyServices.Internal.MySettings> (`My.Settings`)
+  - <xref:Microsoft.VisualBasic.MyServices.Internal.MyResources> (`My.Resources`)
+
+- **Not supported in .NET 5+:**
+  - [My.Forms Object](../../language-reference/objects/my-forms-object.md)
+  - [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)
+
+For more details on project type dependencies, see [How My Depends on Project Type](how-my-depends-on-project-type.md).
+  
 ## In This Section  
 
  [Performing Tasks with My.Application, My.Computer, and My.User](performing-tasks-with-my-application-my-computer-and-my-user.md)  

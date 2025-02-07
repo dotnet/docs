@@ -34,6 +34,9 @@ User-assigned identities are created as standalone resources in your Azure subsc
 
     :::image type="content" source="../media/user-assigned-identity-form.png" alt-text="A screenshot showing the form to create a user-assigned identity.":::
 
+1. After the identity is created, select **Go to resource**.
+1. On the new identity's **Overview** page, copy the `Client ID` value to use for later when you configure the application code.
+
 ### [Azure CLI](#tab/azure-cli)
 
 Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).

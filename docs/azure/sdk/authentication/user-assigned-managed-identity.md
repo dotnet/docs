@@ -41,7 +41,7 @@ User-assigned identities are created as standalone resources in your Azure subsc
 
 Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
 
-Use the Azure CLI command `az identity create` to create a managed identity for an Azure resource:
+Use the Azure CLI command [`az identity create`](/cli/azure/identity?view=azure-cli-latest#az-identity-create) to create a managed identity for an Azure resource:
 
 ```azurecli
 az identity create --resource-group <resource-group-name> --name <identity-name>
@@ -59,7 +59,7 @@ The command output prints the following values:
 
 ## Assign the managed identity to your app
 
-A user-assigned can be associated with one or more Azure resources. All of the resources that use that identity will gain the permissions applied through the identity's roles.
+A user-assigned can be associated with one or more Azure resources. All of the resources that use that identity gain the permissions applied through the identity's roles.
 
 ### [Azure portal](#tab/azure-portal)
 
@@ -87,22 +87,31 @@ az identity show -n cli-identity -g aitesting -o json --query id
 
 Once you have the resource ID, use the Azure CLI command `az <resourceType> identity assign` command to associate the user-assigned identity with different resources, such as the following:
 
-For Azure App Service, use the Azure CLI command `azd webapp identity assign`:
+For Azure App Service, use the Azure CLI command [`az webapp identity assign`](/cli/azure/webapp/identity?view=azure-cli-latest#az-webapp-identity-assign):
 
 ```azurecli
-az webapp identity assign --resource-group <resource-group-name> --name <webapp-name> --identities <user-assigned-identity-resource-id>
+az webapp identity assign \
+    --resource-group <resource-group-name> \
+    --name <webapp-name> \
+    --identities <user-assigned-identity-resource-id>
 ```
 
-For Azure Container Apps, use the Azure CLI command `az containerapp identity assign`:
+For Azure Container Apps, use the Azure CLI command [`az containerapp identity assign`](/cli/azure/containerapp/identity?view=azure-cli-latest#az-containerapp-identity-assign):
 
 ```azurecli
-az webapp identity assign --resource-group <resource-group-name> --name <webapp-name> --identities <user-assigned-identity-resource-id>
+az webapp identity assign \
+    --resource-group <resource-group-name> \
+    --name <webapp-name> \
+    --identities <user-assigned-identity-resource-id>
 ```
 
-For Azure Container Apps, use the Azure CLI command `az containerapp identity assign`:
+For Azure Container Apps, use the Azure CLI command [`az vm identity assign`](/cli/azure/vm/identity?view=azure-cli-latest#az-vm-identity-assign):
 
 ```azurecli
-az vm identity assign --resource-group <resource-group-name> --name <webapp-name> --identities <user-assigned-identity-resource-id>
+az vm identity assign \
+    --resource-group <resource-group-name> \
+    --name <webapp-name> \
+    --identities <user-assigned-identity-resource-id>
 ```
 
 ---
@@ -142,16 +151,19 @@ The following example shows how to assign roles at the resource group scope, sin
 To assign a user-assigned identity to an Azure App Service web app using the Azure CLI, you'll need the principal ID of the identity. Use the `az identity show` command to retrieve the resource ID:
 
 ```dotnetcli
-az identity show -n cli-identity -g aitesting -o json --query id
+az identity show \
+    --resource-group <your-resource-group> \
+    --name <your-managed-identity-name> \
+    -o json --query principalId
 ```
 
 Assign a role to a managed identity using the [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create) command:
 
 ```azurecli
 az role assignment create \
-    --assignee "{principalId}" \
-    --role "{roleName}" \
-    --scope "{scope}"
+    --assignee <your-principal-id> \
+    --role <role-name> \
+    --scope <scope>
 ```
 
 To get the role names to which a service principal can be assigned, use the [az role definition list](/cli/azure/role/definition#az-role-definition-list) command:

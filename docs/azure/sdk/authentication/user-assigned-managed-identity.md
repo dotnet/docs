@@ -66,7 +66,7 @@ A user-assigned can be associated with one or more Azure resources. All of the r
 1. From the resource's **Overview** page, expand **Settings** and select **Identity** from the navigation.
 1. On the **Identity** page, switch to the **User assigned** tab.
 1. Select **+ Add** to open the **Add user assigned managed identity** panel.
-1. On the **Add user assigned managed identity** panel, use the **Subscription** dropdown to filter the search results for your identities. Use the **Select** search box to locate the user-assigned managed identity you enabled for the Azure resource hosting your app.
+1. On the **Add user assigned managed identity** panel, use the **Subscription** dropdown to filter the search results for your identities. Use the **User assigned managed identities** search box to locate the user-assigned managed identity you enabled for the Azure resource hosting your app.
 1. Select the identity and choose **Add** at the bottom of the panel to continue.
 
     :::image type="content" source="../media/add-user-assigned-identity-to-app.png" alt-text="A screenshot showing how to associate a user-assigned identity with an app.":::
@@ -75,10 +75,13 @@ A user-assigned can be associated with one or more Azure resources. All of the r
 
 The Azure CLI provides different commands to assign a user-assigned identity to different types of hosting services.
 
-To assign a user-assigned identity to an Azure App Service web app using the Azure CLI, you'll need the resource ID of the identity. Use the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command to retrieve the resource ID:
+To assign a user-assigned identity to a resource such as an Azure App Service web app using the Azure CLI, you'll need the resource ID of the identity. Use the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command to retrieve the resource ID:
 
 ```azurecli
-az identity show -n cli-identity -g aitesting -o json --query id
+az identity show \
+    --resource-group <your-resource-group> \
+    --name <your-managed-identity-name> \
+    -o json --query id
 ```
 
 Once you have the resource ID, use the Azure CLI command `az <resourceType> identity assign` command to associate the user-assigned identity with different resources, such as the following:
@@ -144,7 +147,7 @@ The following example shows how to assign roles at the resource group scope, sin
 
 ### [Azure CLI](#tab/azure-cli)
 
-To assign a user-assigned identity to an Azure App Service web app using the Azure CLI, you'll need the principal ID of the identity. Use the `az identity show` command to retrieve the resource ID:
+To assign a role to a user-assigned identity using the Azure CLI, you'll need the principal ID of the identity. Use the `az identity show` command to retrieve the resource ID:
 
 ```azurecli
 az identity show \

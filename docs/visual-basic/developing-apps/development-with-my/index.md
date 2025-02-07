@@ -26,9 +26,9 @@ Visual Basic provides new features for rapid application development that improv
 Starting with .NET 5, not all `My` services are supported. The following `My` objects and services are available:
 
 - **Supported in .NET 5+:**
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> (`My.Application`)
-  - <xref:Microsoft.VisualBasic.Devices.Computer> (`My.Computer`)
-  - <xref:Microsoft.VisualBasic.ApplicationServices.User> (`My.User`)
+  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
+  - <xref:Microsoft.VisualBasic.Devices.Computer>
+  - <xref:Microsoft.VisualBasic.ApplicationServices.User>
   - [My.Settings Object](../../language-reference/objects/my-settings-object.md)
   - [My.Resources Object](../../language-reference/objects/my-resources-object.md)
 

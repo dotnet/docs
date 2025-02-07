@@ -1,6 +1,6 @@
 ---
 title: Authenticate Azure-hosted .NET apps to Azure resources using a user-assigned managed identity
-description: Learn how to authenticate Azure-hosted .NET apps to other Azure services using a user-assigned identity
+description: Learn how to authenticate Azure-hosted .NET apps to other Azure services using a user-assigned managed identity.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
 ms.date: 02/06/2025
@@ -19,7 +19,7 @@ The recommended approach to authenticate an Azure-hosted app to other Azure reso
 
 ## Create a user-assigned managed identity
 
-User-assigned identities are created as standalone resources in your Azure subscription using the Azure portal or the Azure CLI. Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
+User-assigned managed identities are created as standalone resources in your Azure subscription using the Azure portal or the Azure CLI. Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
 
 ### [Azure portal](#tab/azure-portal)
 
@@ -28,12 +28,12 @@ User-assigned identities are created as standalone resources in your Azure subsc
 
     :::image type="content" source="../media/user-assigned-identity-create.png" alt-text="A screenshot showing the page to manage user-assigned identities.":::
 
-1. On the **Create User Assigned Managed Identity** page, select a subscription, resource group, and region for the user-assigned identity, and then provide a name.
+1. On the **Create User Assigned Managed Identity** page, select a subscription, resource group, and region for the user-assigned managed identity, and then provide a name.
 1. Select **Review + create** to review and validate your inputs.
 
-    :::image type="content" source="../media/user-assigned-identity-form.png" alt-text="A screenshot showing the form to create a user-assigned identity.":::
+    :::image type="content" source="../media/user-assigned-identity-form.png" alt-text="A screenshot showing the form to create a user-assigned managed identity.":::
 
-1. Select **Create** to create the user-assigned identity.
+1. Select **Create** to create the user-assigned managed identity.
 1. After the identity is created, select **Go to resource**.
 1. On the new identity's **Overview** page, copy the `Client ID` value to use for later when you configure the application code.
 
@@ -42,7 +42,9 @@ User-assigned identities are created as standalone resources in your Azure subsc
 Use the Azure CLI command [`az identity create`](/cli/azure/identity?view=azure-cli-latest#az-identity-create) to create a managed identity:
 
 ```azurecli
-az identity create --resource-group <resource-group-name> --name <identity-name>
+az identity create \
+    --resource-group <resource-group-name> \
+    --name <identity-name>
 ```
 
 The command output prints the following values:

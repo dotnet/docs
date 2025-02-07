@@ -19,7 +19,7 @@ The recommended approach to authenticate an Azure-hosted app to other Azure reso
 
 ## Create a user-assigned managed identity
 
-User-assigned identities are created as standalone resources in your Azure subscription. You can create them using the Azure portal or the Azure CLI. Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
+User-assigned identities are created as standalone resources in your Azure subscription using the Azure portal or the Azure CLI. Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).
 
 ### [Azure portal](#tab/azure-portal)
 
@@ -53,6 +53,15 @@ The command output prints the following values:
 - **PrincipalId**: Used for access control and role assignments in Azure.
 - **ResourceGroup**: The resource group that contains the identity.
 - **TenantId**: The Microsoft Entra tenant that contains the identity.
+
+You can always view the managed identity properties again using the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command:
+
+```azurecli
+az identity show \
+    --resource-group <your-resource-group> \
+    --name <your-managed-identity-name> \
+    -o json
+```
 
 ---
 

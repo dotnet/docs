@@ -29,7 +29,7 @@ Every test class must have the `TestClass` attribute, and every test method must
 
 ### `TestClassAttribute`
 
-The [TestClass](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>) attribute marks a class that contains tests and, optionally, initialize or cleanup methods.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute marks a class that contains tests and, optionally, initialize or cleanup methods.
 
 This attribute can be extended to change or extend the default behavior.
 
@@ -44,11 +44,11 @@ public class MyTestClass
 
 ### `TestMethodAttribute`
 
-The [TestMethod](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>) attribute is used inside a `TestClass` to define the actual test method to run.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute is used inside a `TestClass` to define the actual test method to run.
 
 The method should be an instance `public` method defined as `void`, `Task`, or `ValueTask` (starting with MSTest v3.3). It can optionally be `async` but should not be `async void`.
 
-The method should have zero parameters, unless it's used with `[DataRow]`, `[DynamicData]` or similar attribute that provides test case data to the test method.
+The method should have zero parameters, unless it's used with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> or similar attribute that provides test case data to the test method.
 
 Consider the following example test class:
 
@@ -74,9 +74,9 @@ Use the following elements to set up data-driven tests. For more information, se
 
 ### `DataRowAttribute`
 
-The `DataRowAttribute` allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with `TestMethodAttribute`.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
-The number and types of arguments must exactly match the test method signature. Consider the following example of a valid test class demonstrating the `DataRow` attribute usage with inline arguments that align to test method parameters:
+The number and types of arguments must exactly match the test method signature. Consider the following example of a valid test class demonstrating the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> usage with inline arguments that align to test method parameters:
 
 ```csharp
 [TestClass]
@@ -113,7 +113,7 @@ public class TestClass
 ```
 
 > [!NOTE]
-> You can also use the `params` feature to capture multiple inputs of the `DataRow`.
+> You can also use the `params` feature to capture multiple inputs of the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>.
 
 ```csharp
 [TestClass]
@@ -152,7 +152,7 @@ public class TestClass
 > _Staring with v3:_
 > `[DataRow(new string[] { "a" }, new string[] { "b" })]`
 
-You can modify the display name used in Visual Studio and loggers for each instance of `DataRowAttribute` by setting the `DisplayName` property.
+You can modify the display name used in Visual Studio and loggers for each instance of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute> by setting the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute.DisplayName> property.
 
 ```csharp
 [TestClass]
@@ -164,7 +164,7 @@ public class TestClass
 }
 ```
 
-You can also create your own specialized data row attribute by inheriting the `DataRowAttribute`.
+You can also create your own specialized data row attribute by inheriting the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>.
 
 ```csharp
 [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
@@ -187,9 +187,9 @@ Setup and cleanup that is common to multiple tests can be extracted to a separat
 
 ### Assembly level
 
-[AssemblyInitialize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute>) is called right after your assembly is loaded and [AssemblyCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute>) is called right before your assembly is unloaded.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute> is called right after your assembly is loaded and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute> is called right before your assembly is unloaded.
 
-The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext).
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>, and appear only once. The initialize part requires one parameter of type <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>.
 
 ```csharp
 [TestClass]
@@ -225,13 +225,13 @@ public class MyOtherTestClass
 
 ### Class level
 
-[ClassInitialize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute>) is called right before your class is loaded (but after static constructor) and [ClassCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute>) is called right after your class is unloaded.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute> is called right before your class is loaded (but after static constructor) and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute> is called right after your class is unloaded.
 
-It's possible to control the inheritance behavior: only for current class using `InheritanceBehavior.None` or for all derived classes using `InheritanceBehavior.BeforeEachDerivedClass`.
+It's possible to control the inheritance behavior: only for current class using [InheritanceBehavior.None](<xref:microsoft.visualstudio.testtools.unittesting.inheritancebehavior>) or for all derived classes using [InheritanceBehavior.BeforeEachDerivedClass](<xref:microsoft.visualstudio.testtools.unittesting.inheritancebehavior>).
 
 It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly.
 
-The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext) and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type [TestContext](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext).
+The methods marked with these attributes should be defined as `static void`, `static Task` or `static ValueTask` (starting with MSTest v3.3), in a `TestClass`, and appear only once. The initialize part requires one parameter of type <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> and the cleanup either no parameters, or starting with MSTest 3.8 can have one parameter of type <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>.
 
 ```csharp
 [TestClass]
@@ -267,11 +267,11 @@ public class MyOtherTestClass
 
 ### Test level
 
-[TestInitialize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>) is called right before your test is started and [TestCleanup](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>) is called right after your test is finished.
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> is called right before your test is started and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> is called right after your test is finished.
 
-The `TestInitialize` is similar to the class constructor but is usually more suitable for long or async initializations. The `TestInitialize` is always called after the constructor and called for each test (including each data row of data-driven tests).
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> is similar to the class constructor but is usually more suitable for long or async initializations. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> is always called after the constructor and called for each test (including each data row of data-driven tests).
 
-The `TestCleanup` is similar to the class `Dispose` (or `DisposeAsync`) but is usually more suitable for long or async cleanups. The `TestCleanup` is always called just before the `DisposeAsync`/`Dispose` and called for each test (including each data row of data-driven tests).
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> is similar to the class `Dispose` (or `DisposeAsync`) but is usually more suitable for long or async cleanups. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> is always called just before the `DisposeAsync`/`Dispose` and called for each test (including each data row of data-driven tests).
 
 The methods marked with these attributes should be defined as `void`, `Task` or `ValueTask` (starting with MSTest v3.3), in a `TestClass`, be parameterless, and appear one or multiple times.
 
@@ -313,7 +313,7 @@ The following attributes can be used to modify the way tests are executed.
 
 ### `TimeoutAttribute`
 
-The [Timeout](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute>) attribute can be used to specify the maximum time in milliseconds that a test method is allowed to run. If the test method runs longer than the specified time, the test will be aborted and marked as failed.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> attribute can be used to specify the maximum time in milliseconds that a test method is allowed to run. If the test method runs longer than the specified time, the test will be aborted and marked as failed.
 
 This attribute can be applied to any test method or any fixture method (initialization and cleanup methods). It is also possible to specify the timeout globally for either all test methods or all test fixture methods by using the [timeout properties of the runsettings file](./unit-testing-mstest-configure.md#mstest-element).
 
@@ -322,25 +322,25 @@ This attribute can be applied to any test method or any fixture method (initiali
 
 When using the timeout feature, a separate thread/task is created to run the test method. The main thread/task is responsible for monitoring the timeout and unobserving the method thread/task if the timeout is reached.
 
-Starting with MSTest 3.6, it is possible to specify `CooperativeCancellation` property on the attribute (or globally through runsettings) to enable cooperative cancellation. In this mode, the method is responsible for checking the cancellation token and aborting the test if it is signaled as you would do in a typical `async` method. This mode is more performant and allows for more precise control over the cancellation process. This mode can be applied to both async and sync methods.
+Starting with MSTest 3.6, it is possible to specify <xref:microsoft.visualstudio.testtools.unittesting.timeoutattribute.cooperativecancellation> property on the attribute (or globally through runsettings) to enable cooperative cancellation. In this mode, the method is responsible for checking the cancellation token and aborting the test if it is signaled as you would do in a typical `async` method. This mode is more performant and allows for more precise control over the cancellation process. This mode can be applied to both async and sync methods.
 
 ### `STATestClassAttribute`
 
-When applied to a test class, the `[STATestClass]` attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
+When applied to a test class, the <xref:microsoft.visualstudio.testtools.unittesting.statestclassattribute> attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows and in version 3.6 and later.
 
 ### `STATestMethodAttribute`
 
-When applied to a test method, the `[STATestMethod]` attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
+When applied to a test method, the <xref:microsoft.visualstudio.testtools.unittesting.statestmethodattribute> attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows and in version 3.6 and later.
 
 ### `ParallelizeAttribute`
 
-By default, MSTest runs tests in a sequential order. The [Parallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute>) attribute can be used to run tests in parallel. This is an assembly level attribute. You can specify if the parallelism should be at **class level** (multiple classes can be run in parallel but tests in a given class are run sequentially) or at **method level**.
+By default, MSTest runs tests in a sequential order. The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute> attribute can be used to run tests in parallel. This is an assembly level attribute. You can specify if the parallelism should be at **class level** (multiple classes can be run in parallel but tests in a given class are run sequentially) or at **method level**.
 
 It's also possible to specify the maximum number of threads to use for parallel execution. A value of `0` (default value) means that the number of threads is equal to the number of logical processors on the machine.
 
@@ -348,10 +348,10 @@ It is also possible to specify the parallelism through the [parallelization prop
 
 ### `DoNotParallelizeAttribute`
 
-The [DoNotParallelize](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute>) attribute can be used to prevent parallel execution of tests in a given assembly. This attribute can be applied at the assembly level, class level or method level.
+The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute> attribute can be used to prevent parallel execution of tests in a given assembly. This attribute can be applied at the assembly level, class level or method level.
 
 > [!NOTE]
-> By default, MSTest runs tests in sequential order so you only need to use this attribute if you have applied the `[Parallelize]` attribute at the assembly level.
+> By default, MSTest runs tests in sequential order so you only need to use this attribute if you have applied the <xref:microsoft.visualstudio.testtools.unittesting.parallelizeattribute> attribute at the assembly level.
 
 ### `RetryAttribute`
 
@@ -372,7 +372,7 @@ It can be used either on test classes (classes marked with `TestClass` attribute
 
 Users can have multiple instances of the attribute to specify more than one item.
 
-And here you can see its [constructors](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute>).
+And here you can see its [constructors](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DeploymentItemAttribute#constructors>).
 
 **Example**
 

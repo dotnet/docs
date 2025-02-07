@@ -313,7 +313,7 @@ HResult: 80131604
 
 ## Troubleshooting dump collection issues
 
-Dump collection requires the process to be able to call `ptrace`. If you are facing issues collecting dumps, the environment you are running on may be configured to restrict such calls. See our [Dumps: FAQ](faq-dumps.yml) for troubleshooting tips and potential solutions to common issues.
+Dump collection requires the process to be able to call `ptrace`. If you are facing issues collecting dumps, the environment you are running on may be configured to restrict such calls. See our [Dumps: FAQ](dumps-faq.md) for troubleshooting tips and potential solutions to common issues.
 
 ## See also
 

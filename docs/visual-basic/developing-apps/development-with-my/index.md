@@ -29,8 +29,8 @@ Starting with .NET 5, not all `My` services are supported. The following `My` ob
   - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> (`My.Application`)
   - <xref:Microsoft.VisualBasic.Devices.Computer> (`My.Computer`)
   - <xref:Microsoft.VisualBasic.ApplicationServices.User> (`My.User`)
-  - <xref:Microsoft.VisualBasic.MyServices.Internal.MySettings> (`My.Settings`)
-  - <xref:Microsoft.VisualBasic.MyServices.Internal.MyResources> (`My.Resources`)
+  - [My.Settings Object](../../language-reference/objects/my-settings-object.md)
+  - [My.Resources Object](../../language-reference/objects/my-resources-object.md)
 
 - **Not supported in .NET 5+:**
   - [My.Forms Object](../../language-reference/objects/my-forms-object.md)

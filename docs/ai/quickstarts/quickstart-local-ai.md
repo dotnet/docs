@@ -146,5 +146,4 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
 
 ## Next steps
 
-- [Quickstart - Get insight about your data from an .NET Azure AI chat app](../how-to/work-with-local-models.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

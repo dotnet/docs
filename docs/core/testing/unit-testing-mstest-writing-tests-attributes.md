@@ -227,7 +227,7 @@ public class MyOtherTestClass
 
 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute> is called right before your class is loaded (but after static constructor) and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute> is called right after your class is unloaded.
 
-It's possible to control the inheritance behavior: only for current class using [InheritanceBehavior.None](<xref:microsoft.visualstudio.testtools.unittesting.inheritancebehavior>) or for all derived classes using [InheritanceBehavior.BeforeEachDerivedClass](<xref:microsoft.visualstudio.testtools.unittesting.inheritancebehavior>).
+It's possible to control the inheritance behavior: only for current class using [InheritanceBehavior.None](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.InheritanceBehavior>) or for all derived classes using [InheritanceBehavior.BeforeEachDerivedClass](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.InheritanceBehavior>).
 
 It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly.
 
@@ -322,18 +322,18 @@ This attribute can be applied to any test method or any fixture method (initiali
 
 When using the timeout feature, a separate thread/task is created to run the test method. The main thread/task is responsible for monitoring the timeout and unobserving the method thread/task if the timeout is reached.
 
-Starting with MSTest 3.6, it is possible to specify <xref:microsoft.visualstudio.testtools.unittesting.timeoutattribute.cooperativecancellation> property on the attribute (or globally through runsettings) to enable cooperative cancellation. In this mode, the method is responsible for checking the cancellation token and aborting the test if it is signaled as you would do in a typical `async` method. This mode is more performant and allows for more precise control over the cancellation process. This mode can be applied to both async and sync methods.
+Starting with MSTest 3.6, it is possible to specify <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute.CooperativeCancellation*> property on the attribute (or globally through runsettings) to enable cooperative cancellation. In this mode, the method is responsible for checking the cancellation token and aborting the test if it is signaled as you would do in a typical `async` method. This mode is more performant and allows for more precise control over the cancellation process. This mode can be applied to both async and sync methods.
 
 ### `STATestClassAttribute`
 
-When applied to a test class, the <xref:microsoft.visualstudio.testtools.unittesting.statestclassattribute> attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
+When applied to a test class, the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.STATestClassAttribute> attribute indicates that all test methods (and the `[ClassInitialize]` and `[ClassCleanup]` methods) in the class should be run in a single-threaded apartment (STA). This attribute is useful when the test methods interact with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows and in version 3.6 and later.
 
 ### `STATestMethodAttribute`
 
-When applied to a test method, the <xref:microsoft.visualstudio.testtools.unittesting.statestmethodattribute> attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
+When applied to a test method, the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.STATestMethodAttribute> attribute indicates that the test method should be run in a single-threaded apartment (STA). This attribute is useful when the test method interacts with COM objects that require STA.
 
 > [!NOTE]
 > This is only supported on Windows and in version 3.6 and later.
@@ -351,7 +351,7 @@ It is also possible to specify the parallelism through the [parallelization prop
 The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DoNotParallelizeAttribute> attribute can be used to prevent parallel execution of tests in a given assembly. This attribute can be applied at the assembly level, class level or method level.
 
 > [!NOTE]
-> By default, MSTest runs tests in sequential order so you only need to use this attribute if you have applied the <xref:microsoft.visualstudio.testtools.unittesting.parallelizeattribute> attribute at the assembly level.
+> By default, MSTest runs tests in sequential order so you only need to use this attribute if you have applied the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute> attribute at the assembly level.
 
 ### `RetryAttribute`
 

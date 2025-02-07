@@ -81,4 +81,4 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.AddResultFile
 
 :::code language="csharp" source="snippets/testcontext/csharp/AddResultFile.cs":::
 
-You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine> methods to write custom messages directly to the test output. This is especially useful for debugging purposes, as it provides real-time logging information within your test execution context.
+You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write*> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine*> methods to write custom messages directly to the test output. This is especially useful for debugging purposes, as it provides real-time logging information within your test execution context.

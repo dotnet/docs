@@ -25,7 +25,7 @@ Use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> class to veri
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotInstanceOfType*>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNotNull*>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsNull*>
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue>
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue*>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync*>
 

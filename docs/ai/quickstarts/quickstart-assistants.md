@@ -133,5 +133,4 @@ Complete the following steps to create a .NET console app and add the package ne
 
 ## Next steps
 
-- [Quickstart - Get insight about your data from an .NET Azure AI chat app](../how-to/work-with-local-models.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

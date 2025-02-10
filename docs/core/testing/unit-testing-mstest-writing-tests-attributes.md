@@ -29,7 +29,7 @@ Every test class must have the `TestClass` attribute, and every test method must
 
 ### `TestClassAttribute`
 
-The [TestClass]](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) attribute marks a class that contains tests and, optionally, initialize or cleanup methods.
+The [TestClass](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) attribute marks a class that contains tests and, optionally, initialize or cleanup methods.
 
 This attribute can be extended to change or extend the default behavior.
 
@@ -48,7 +48,7 @@ The [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAtt
 
 The method should be an instance `public` method defined as `void`, `Task`, or `ValueTask` (starting with MSTest v3.3). It can optionally be `async` but should not be `async void`.
 
-The method should have zero parameters, unless it's marked with the [DataRow](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute) attribute, the [DynamicData])xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute) attribute, or a similar attribute that provides test case data to the test method.
+The method should have zero parameters, unless it's marked with the [DataRow](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute) attribute, the [DynamicData](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute) attribute, or a similar attribute that provides test case data to the test method.
 
 Consider the following example test class:
 
@@ -293,7 +293,7 @@ When applied to a test method, the [STATestMethod](xref:Microsoft.VisualStudio.T
 
 ### `ParallelizeAttribute`
 
-By default, MSTest runs tests in a sequential order. The assembly level attribute [Parallelize](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute) can be used to run tests in parallel. You can specify if the parallelism should be at [class level](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExecutionScope.ClassLevel?displayProperty=nameWithType) (multiple classes can be run in parallel but tests in a given class are run sequentially) or at [method level](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExecutionScope.MethodLevel?displayProperty=nameWithType).
+By default, MSTest runs tests in a sequential order. The assembly level attribute [Parallelize](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ParallelizeAttribute) attribute can be used to run tests in parallel. You can specify if the parallelism should be at [class level](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExecutionScope.ClassLevel) (multiple classes can be run in parallel but tests in a given class are run sequentially) or at [method level](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExecutionScope.MethodLevel).
 
 It's also possible to specify the maximum number of threads to use for parallel execution. A value of `0` (default value) means that the number of threads is equal to the number of logical processors on the machine.
 
@@ -349,7 +349,7 @@ public class UnitTest1
 
 ### `ExpectedExceptionAttribute`
 
-The [ExpectedException](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute) attribute defines the expected exception the test method will throw. The test will pass if the expected exception is thrown and the exception message matches the expected message.
+The [ExpectedException](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute) attribute defines the exception that the test method is expected to throw. The test passes if the expected exception is thrown and the exception message matches the expected message.
 
 > [!WARNING]
 > This attribute exists for backward compatibility and is not recommended for new tests. Instead, use the `Assert.ThrowsException` (or `Assert.ThrowsExactly` if using MSTest 3.8 and later) method.

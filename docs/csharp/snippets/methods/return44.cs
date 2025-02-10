@@ -1,5 +1,5 @@
 //<Snippet43>
-class SimpleMathExtnsion
+class SimpleMathExtension
 {
     public int DivideTwoNumbers(int number1, int number2)
     {

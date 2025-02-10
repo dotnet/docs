@@ -51,14 +51,7 @@ az identity create \
     --output json
 ```
 
-The command output prints the following values:
-
-- **ClientID**: Used to configure application code that uses the identity.
-- **Location**: The Azure region that contains the identity.
-- **Name**: The name of the identity.
-- **PrincipalId**: Used for access control and role assignments in Azure.
-- **ResourceGroup**: The resource group that contains the identity.
-- **TenantId**: The Microsoft Entra tenant that contains the identity.
+The command output prints the **ClientID** value of the created user-assigned managed identity. The **ClientID** is used to configure application code that relies on the identity.
 
 You can always view the managed identity properties again using the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command:
 

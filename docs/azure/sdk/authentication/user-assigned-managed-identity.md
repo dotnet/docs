@@ -37,7 +37,7 @@ User-assigned managed identities are created as standalone resources in your Azu
 
 1. Select **Create** to create the user-assigned managed identity.
 1. After the identity is created, select **Go to resource**.
-1. On the new identity's **Overview** page, copy the `Client ID` value to use for later when you configure the application code.
+1. On the new identity's **Overview** page, copy the **Client ID** value to use for later when you configure the application code.
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -46,7 +46,9 @@ Use the Azure CLI command [`az identity create`](/cli/azure/identity?view=azure-
 ```azurecli
 az identity create \
     --resource-group <resource-group-name> \
-    --name <identity-name>
+    --name <identity-name> \
+    --query 'clientId' \
+    --output json
 ```
 
 The command output prints the following values:
@@ -64,14 +66,14 @@ You can always view the managed identity properties again using the [`az identit
 az identity show \
     --resource-group <your-resource-group> \
     --name <your-managed-identity-name> \
-    -o json
+    --output json
 ```
 
 ---
 
 ## Assign the managed identity to your app
 
-A user-assigned can be associated with one or more Azure resources. All of the resources that use that identity gain the permissions applied through the identity's roles.
+A user-assigned managed identity can be associated with one or more Azure resources. All of the resources that use that identity gain the permissions applied through the identity's roles.
 
 ### [Azure portal](#tab/azure-portal)
 
@@ -94,7 +96,8 @@ To assign a user-assigned identity to a resource such as an Azure App Service we
 az identity show \
     --resource-group <your-resource-group> \
     --name <your-managed-identity-name> \
-    -o json --query id
+    --output json \
+    --query id
 ```
 
 Once you have the resource ID, use the Azure CLI command `az <resourceType> identity assign` command to associate the user-assigned identity with different resources, such as the following:
@@ -166,7 +169,8 @@ To assign a role to a user-assigned identity using the Azure CLI, you'll need th
 az identity show \
     --resource-group <your-resource-group> \
     --name <your-managed-identity-name> \
-    -o json --query principalId
+    --output json \
+    --query principalId
 ```
 
 Assign a role to a managed identity using the [az role assignment create](/cli/azure/role/assignment#az-role-assignment-create) command:

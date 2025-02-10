@@ -163,11 +163,11 @@ You can also choose to define your methods with a statement body and a `return` 
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet43":::
 
-To use a value returned from a method, the calling method can use the method call itself anywhere a value of the same type would be sufficient, as in the following example:
+To use a value returned from a method, you can assign the return value to a variable:
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet47":::
 
-You can also assign the return value to a variable. For example, the following two code examples accomplish the same goal:
+The calling method can also use the method call itself anywhere a value of the same type would be sufficient. For example, the following two code examples accomplish the same goal:
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet45":::
 

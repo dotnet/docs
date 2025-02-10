@@ -51,7 +51,7 @@ az identity create \
     --output json
 ```
 
-The command output prints the **ClientID** value of the created user-assigned managed identity. The **ClientID** is used to configure application code that relies on the identity.
+The command output prints the client ID of the created user-assigned managed identity. The client ID is used to configure application code that relies on the identity.
 
 You can always view the managed identity properties again using the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command:
 
@@ -107,7 +107,7 @@ az webapp identity assign \
 For Azure Container Apps, use the Azure CLI command [`az containerapp identity assign`](/cli/azure/containerapp/identity?view=azure-cli-latest#az-containerapp-identity-assign):
 
 ```azurecli
-az webapp identity assign \
+az containerapp identity assign \
     --resource-group <resource-group-name> \
     --name <webapp-name> \
     --identities <user-assigned-identity-resource-id>

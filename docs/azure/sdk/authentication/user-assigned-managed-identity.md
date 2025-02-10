@@ -17,6 +17,8 @@ The recommended approach to authenticate an Azure-hosted app to other Azure reso
 
 [!INCLUDE [managed-identity-concepts](../includes/managed-identity-concepts.md)]
 
+The sections ahead describe the steps to enable and use a user-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [system-assigned managed identities](/dotnet/azure/sdk/authentication/system-assigned-managed-identity) article for more information.
+
 ## Create a user-assigned managed identity
 
 User-assigned managed identities are created as standalone resources in your Azure subscription using the Azure portal or the Azure CLI. Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com) or on a workstation with the [Azure CLI installed](/cli/azure/install-azure-cli).

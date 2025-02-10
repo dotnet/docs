@@ -7,4 +7,5 @@ There are two types of managed identities to consider when configuring your host
 - **System-assigned** managed identities are enabled directly on an Azure resource and are tied to its life cycle. When the resource is deleted, Azure automatically deletes the identity for you. System-assigned identities provide a minimalistic approach to using managed identities.
 - **User-assigned** managed identities are created as standalone Azure resources and offer greater flexibility and capabilities. They're ideal for solutions involving multiple Azure resources that need to share the same identity and permissions. For example, if multiple virtual machines need to access the same set of Azure resources, a user-assigned managed identity provides reusability and optimized management.
 
-The sections ahead describe the steps to enable and use a user-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [system-assigned managed identities](/system-assigned-identity-auth) article for more information.
+> [!TIP]
+> Learn more about selecting and managing system-assigned managed identities and user-assigned managed identities in the [Managed identity best practice recommendations](/entra/identity/managed-identities-azure-resources/managed-identity-best-practice-recommendations) article.

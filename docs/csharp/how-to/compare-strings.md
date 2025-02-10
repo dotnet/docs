@@ -38,7 +38,7 @@ By default, the most common operations:
 - <xref:System.String.Equals%2A?displayProperty=nameWithType>
 - <xref:System.String.op_Equality%2A?displayProperty=nameWithType> and <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively perform a case-sensitive, ordinal comparison. <xref:System.String.Equals%2A?displayProperty=nameWithType> has an overload where a <xref:System.StringComparison> argument can be provided to alter its sorting rules. The following example demonstrates that:
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet1":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet1":::
 
 The default ordinal comparison doesn't take linguistic rules into account when comparing strings. It compares the binary value of each <xref:System.Char> object in two strings. As a result, the default ordinal comparison is also case-sensitive.
 
@@ -49,7 +49,7 @@ The test for equality with <xref:System.String.Equals%2A?displayProperty=nameWit
 The <xref:System.String.Equals(System.String,System.StringComparison)?displayProperty=nameWithType> method enables you to specify a <xref:System.StringComparison> value of
 <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for a case-insensitive ordinal comparison. There's also a static <xref:System.String.Compare(System.String,System.String,System.StringComparison)?displayProperty=nameWithType> method that performs a case-insensitive ordinal comparison if you specify a value of <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType> for the <xref:System.StringComparison> argument. These comparisons are shown in the following code:
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet2":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet2":::
 
 These methods use the casing conventions of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture) when performing a case-insensitive ordinal comparison.
 
@@ -57,7 +57,7 @@ These methods use the casing conventions of the [invariant culture](xref:System.
 
 Many string comparison methods (such as <xref:System.String.StartsWith%2A?displayProperty=nameWithType>) use linguistic rules for the _current culture_ by default to order their inputs. This linguistic comparison is sometimes referred to as "word sort order." When you perform a linguistic comparison, some nonalphanumeric Unicode characters might have special weights assigned. For example, the hyphen "-" might have a small weight assigned to it so that "co-op" and "coop" appear next to each other in sort order. Some nonprinting control characters might be ignored. In addition, some Unicode characters might be equivalent to a sequence of <xref:System.Char> instances. The following example uses the phrase "They dance in the street." in German with the "ss" (U+0073 U+0073) in one string and 'ß' (U+00DF) in another. Linguistically (in Windows), "ss" is equal to the German Esszet: 'ß' character in both the "en-US" and "de-DE" cultures.
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet3":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet3":::
 
 On Windows, prior to .NET 5, the sort order of "cop", "coop", and "co-op" changes when you change from a linguistic comparison to an ordinal comparison. The two German sentences also compare differently using the different comparison types. Prior to .NET 5, the .NET globalization APIs used [National Language Support (NLS)](/windows/win32/intl/national-language-support) libraries. In .NET 5 and later versions, the .NET globalization APIs use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries, which unifies .NET's globalization behavior across all supported operating systems.
 
@@ -65,7 +65,7 @@ On Windows, prior to .NET 5, the sort order of "cop", "coop", and "co-op" change
 
 The following example stores <xref:System.Globalization.CultureInfo> objects for the en-US and de-DE cultures. The comparisons are performed using a <xref:System.Globalization.CultureInfo> object to ensure a culture-specific comparison. The culture used affects linguistic comparisons. The following example shows the results of comparing the two German sentences using the "en-US" culture and the "de-DE" culture:
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet4":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet4":::
 
 Culture-sensitive comparisons are typically used to compare and sort strings input by users with other strings input by users. The characters and sorting conventions of these strings might vary depending on the locale of the user's computer. Even strings that contain identical characters might sort differently depending on the culture of the current thread.
 
@@ -75,21 +75,21 @@ The following examples show how to sort and search for strings in an array using
 
 The following example shows how to sort an array of strings using the current culture:
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet5":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet5":::
 
 Once the array is sorted, you can search for entries using a binary search. A binary search starts in the middle of the collection to determine which half of the collection would contain the sought string. Each subsequent comparison subdivides the remaining part of the collection in half. The array is sorted using the <xref:System.StringComparer.CurrentCulture?displayProperty=nameWithType>. The local function `ShowWhere` displays information about where the string was found. If the string wasn't found, the returned value indicates where it would be if it were found.
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet6":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet6":::
 
 ## Ordinal sorting and searching in collections
 
 The following code uses the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> collection class to store strings. The strings are sorted using the <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> method. This method needs a delegate that compares and orders two strings. The <xref:System.String.CompareTo%2A?displayProperty=nameWithType> method provides that comparison function. Run the sample and observe the order. This sort operation uses an ordinal case-sensitive sort. You would use the static <xref:System.String.Compare%2A?displayProperty=nameWithType> methods to specify different comparison rules.
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet7":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet7":::
 
 Once sorted, the list of strings can be searched using a binary search. The following sample shows how to search the sorted list using the same comparison function. The local function `ShowWhere` shows where the sought text is or would be:
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs" id="Snippet8":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet8":::
 
 Always make sure to use the same type of comparison for sorting and searching. Using different comparison types for sorting and searching produces unexpected results.
 

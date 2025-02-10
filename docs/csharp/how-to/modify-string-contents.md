@@ -17,13 +17,13 @@ There are several techniques demonstrated in this article. You can replace exist
 
 The following code creates a new string by replacing existing text with a substitute.
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet1":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet1":::
 
 The preceding code demonstrates this *immutable* property of strings. You can see in the preceding example that the original string, `source`, is not modified. The <xref:System.String.Replace%2A?displayProperty=nameWithType> method creates a new `string` containing the modifications.
 
 The <xref:System.String.Replace%2A> method can replace either strings or single characters. In both cases, every occurrence of the sought text is replaced.  The following example replaces all ' ' characters with '\_':
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet2":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet2":::
 
 The source string is unchanged, and a new string is returned with the replacement.
 
@@ -31,13 +31,13 @@ The source string is unchanged, and a new string is returned with the replacemen
 
 You can use the <xref:System.String.Trim%2A?displayProperty=nameWithType>, <xref:System.String.TrimStart%2A?displayProperty=nameWithType>, and <xref:System.String.TrimEnd%2A?displayProperty=nameWithType> methods to remove any leading or trailing white space.  The following code shows an example of each. The source string does not change; these methods return a new string with the modified contents.
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet3":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet3":::
 
 ## Remove text
 
 You can remove text from a string using the <xref:System.String.Remove%2A?displayProperty=nameWithType> method. This method removes a number of characters starting at a specific index. The following example shows how to use <xref:System.String.IndexOf%2A?displayProperty=nameWithType> followed by <xref:System.String.Remove%2A> to remove text from a string:
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet4":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet4":::
 
 ## Replace matching patterns
 
@@ -45,7 +45,7 @@ You can use [regular expressions](../../standard/base-types/regular-expressions.
 
 Regular expressions are most useful for searching and replacing text that follows a pattern, rather than known text. For more information, see [How to search strings](search-strings.md). The search pattern, "the\s" searches for the word "the" followed by a white-space character. That part of the pattern ensures that it doesn't match "there" in the source string. For more information on regular expression language elements, see [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md).
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet5":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet5":::
 
 The <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> method returns an immutable string with the contents in the <xref:System.Text.StringBuilder> object.
 
@@ -55,13 +55,13 @@ You can produce a character array from a string, modify the contents of the arra
 
 The following example shows how to replace a set of characters in a string. First, it uses the <xref:System.String.ToCharArray?displayProperty=nameWithType> method to create an array of characters. It uses the <xref:System.String.IndexOf%2A> method to find the starting index of the word "fox." The next three characters are replaced with a different word. Finally, a new string is constructed from the updated character array.
 
-:::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet6":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet6":::
 
 ## Programmatically build up string content
 
 Since strings are immutable, the previous examples all create temporary strings or character arrays. In high-performance scenarios, it may be desirable to avoid these heap allocations. .NET Core provides a <xref:System.String.Create%2A?displayProperty=nameWithType> method that allows you to programmatically fill in the character content of a string via a callback while avoiding the intermediate temporary string allocations.
 
-:::code language="csharp" source="../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs" id="Snippet7":::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet7":::
 
 You could modify a string in a fixed block with unsafe code, but it is **strongly** discouraged to modify the string content after a string is created. Doing so will break things in unpredictable ways. For example, if someone interns a string that has the same content as yours, they'll get your copy and won't expect that you are modifying their string.
 

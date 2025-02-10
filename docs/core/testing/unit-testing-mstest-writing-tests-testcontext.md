@@ -43,9 +43,9 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> provides inf
 
 In MSTest 3.7 and later, the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> class also provides new properties helpful for `TestInitialize` and `TestCleanup` methods:
 
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestData> - the data that will be provided to the parameterized test method or `null` if the test is not parameterized.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestDisplayName> - the display name of the test method.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestException> - the exception thrown by either the test method or test initialize, or `null` if the test method did not throw an exception.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestData?displayProperty=nameWithType> - the data that will be provided to the parameterized test method, or `null` if the test is not parameterized.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestDisplayName?displayProperty=nameWithType> - the display name of the test method.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.TestException?displayProperty=nameWithType> - the exception thrown by either the test method or test initialize, or `null` if the test method did not throw an exception.
 
 ### Data-driven tests
 
@@ -81,4 +81,4 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.AddResultFile
 
 :::code language="csharp" source="snippets/testcontext/csharp/AddResultFile.cs":::
 
-You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write*> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine*> methods to write custom messages directly to the test output. This is especially useful for debugging purposes, as it provides real-time logging information within your test execution context.
+You can also use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Write*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.WriteLine*?displayProperty=nameWithType> methods to write custom messages directly to the test output. This is especially useful for debugging purposes, as it provides real-time logging information within your test execution context.

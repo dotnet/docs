@@ -109,7 +109,7 @@ For Azure Container Apps, use the Azure CLI command [`az containerapp identity a
 ```azurecli
 az containerapp identity assign \
     --resource-group <resource-group-name> \
-    --name <webapp-name> \
+    --name <containerapp-name> \
     --identities <user-assigned-identity-resource-id>
 ```
 
@@ -118,7 +118,7 @@ For Azure Virtual Machines, use the Azure CLI command [`az vm identity assign`](
 ```azurecli
 az vm identity assign \
     --resource-group <resource-group-name> \
-    --name <webapp-name> \
+    --name <vm-name> \
     --identities <user-assigned-identity-resource-id>
 ```
 

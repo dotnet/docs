@@ -81,9 +81,9 @@ A user-assigned managed identity can be associated with one or more Azure resour
 
 ### [Azure CLI](#tab/azure-cli)
 
-The Azure CLI provides different commands to assign a user-assigned identity to different types of hosting services.
+The Azure CLI provides different commands to assign a user-assigned managed identity to different types of hosting services.
 
-To assign a user-assigned identity to a resource such as an Azure App Service web app using the Azure CLI, you'll need the resource ID of the identity. Use the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command to retrieve the resource ID:
+To assign a user-assigned managed identity to a resource such as an Azure App Service web app using the Azure CLI, you'll need the resource ID of the identity. Use the [`az identity show`](/cli/azure/identity?view=azure-cli-latest#az-identity-show) command to retrieve the resource ID:
 
 ```azurecli
 az identity show \
@@ -93,7 +93,7 @@ az identity show \
     --query id
 ```
 
-Once you have the resource ID, use the Azure CLI command `az <resourceType> identity assign` command to associate the user-assigned identity with different resources, such as the following:
+Once you have the resource ID, use the Azure CLI command `az <resourceType> identity assign` command to associate the user-assigned managed identity with different resources, such as the following:
 
 For Azure App Service, use the Azure CLI command [`az webapp identity assign`](/cli/azure/webapp/identity?view=azure-cli-latest#az-webapp-identity-assign):
 
@@ -156,7 +156,7 @@ The following example shows how to assign roles at the resource group scope, sin
 
 ### [Azure CLI](#tab/azure-cli)
 
-To assign a role to a user-assigned identity using the Azure CLI, you'll need the principal ID of the identity. Use the `az identity show` command to retrieve the resource ID:
+To assign a role to a user-assigned managed identity using the Azure CLI, you'll need the principal ID of the identity. Use the `az identity show` command to retrieve the resource ID:
 
 ```azurecli
 az identity show \

@@ -48,7 +48,7 @@ The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attr
 
 The method should be an instance `public` method defined as `void`, `Task`, or `ValueTask` (starting with MSTest v3.3). It can optionally be `async` but should not be `async void`.
 
-The method should have zero parameters, unless it's used with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute> or similar attribute that provides test case data to the test method.
+The method should have zero parameters, unless it's marked with <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>, <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute>, or a similar attribute that provides test case data to the test method.
 
 Consider the following example test class:
 
@@ -227,7 +227,7 @@ public class MyOtherTestClass
 
 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute> is called right before your class is loaded (but after static constructor) and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute> is called right after your class is unloaded.
 
-It's possible to control the inheritance behavior: only for current class using [InheritanceBehavior.None](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.InheritanceBehavior>) or for all derived classes using [InheritanceBehavior.BeforeEachDerivedClass](<xref:Microsoft.VisualStudio.TestTools.UnitTesting.InheritanceBehavior>).
+It's possible to control the inheritance behavior: only for current class using <xref:Microsoft.VisualStudio.TestTools.UnitTesting.InheritanceBehavior.None?displayProperty=nameWithType>, or for all derived classes using <xref:Microsoft.VisualStudio.TestTools.UnitTesting.InheritanceBehavior.BeforeEachDerivedClass?displayProperty=nameWithType>.
 
 It's also possible to configure whether the class cleanup should be run at the end of the class or at the end of the assembly.
 

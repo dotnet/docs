@@ -185,6 +185,5 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 
 ## Related content
 
-* [Authenticate and authorize App Service to a vector database](app-service-db-auth.md)
 * [How to use managed identities for App Service and Azure Functions](/azure/app-service/overview-managed-identity)
 * [Role-based access control for Azure OpenAI Service](/azure/ai-services/openai/how-to/role-based-access-control)

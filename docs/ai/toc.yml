@@ -59,13 +59,13 @@ items:
       href: get-started-app-chat-scaling-with-azure-container-apps.md
 - name: Security and content safety
   items:
-  - name: Azure hosted apps and services authentication
+  - name: Authentication for Azure hosted apps and services
     items:
-    - name: Authentication overview
+    - name: Overview
       href: azure-ai-services-authentication.md
-    - name: Authenticate to Azure OpenAI from an Azure hosted app
+    - name: Auth to Azure OpenAI from an Azure hosted app
       href: how-to/app-service-aoai-auth.md
-    - name: Authenticate to Azure services locally
+    - name: Auth to Azure services locally
       href: /dotnet/azure/sdk/authentication/local-development-dev-accounts?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: Work with content filtering
     href: how-to/content-filtering.md

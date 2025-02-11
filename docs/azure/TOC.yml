@@ -66,7 +66,11 @@
         - name: Auth using developer accounts
           href: ./sdk/authentication/local-development-dev-accounts.md
       - name: Auth from Azure-hosted apps
-        href: ./sdk/authentication/azure-hosted-apps.md
+        items:
+        - name: Use a system-assigned managed identity
+          href: ./sdk/authentication/system-assigned-managed-identity.md
+        - name: Use a user-assigned managed identity
+          href: ./sdk/authentication/user-assigned-managed-identity.md
       - name: Auth from on-premises apps
         href: ./sdk/authentication/on-premises-apps.md
       - name: Auth via configuration files
@@ -76,7 +80,7 @@
       - name: Credential chains
         href: ./sdk/authentication/credential-chains.md
       - name: Best practices
-        href: ./sdk/authentication/authentication-best-practices.md
+        href: ./sdk/authentication/best-practices.md
     - name: ASP.NET Core guidance
       href: ./sdk/aspnetcore-guidance.md
     - name: Resource management

@@ -79,7 +79,7 @@ var model = pipeline.Fit(trainingData);
 var predictedData = model.Transform(newData).GetColumn<string>("PredictedLabel");
 ```
 
-To get started training custom image classification models in ML.NET, see the [Train an image classification model in Azure using Model Builder](tutorials/image-classification-model-builder.md)
+To get started training custom image classification models in ML.NET, see [Train an image classification model in Azure using Model Builder](tutorials/image-classification-model-builder.md).
 
 #### Object detection
 
@@ -89,7 +89,7 @@ The result of the training process is an ONNX model which can then be used with 
 
 At this time, there is no local support for object detection in ML.NET.
 
-To train custom object detection models with ML.NET, see the [Detect stop signs in images with Model Builder tutorial](tutorials/object-detection-model-builder.md)
+To train custom object detection models with ML.NET, see [Detect stop signs in images with Model Builder tutorial](tutorials/object-detection-model-builder.md).
 
 #### Text classification
 

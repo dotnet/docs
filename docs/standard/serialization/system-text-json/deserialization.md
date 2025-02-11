@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "deserialization"
 ms.topic: concept-article
 ms.collection: ce-skilling-ai-copilot
-ms.custom: vs-copilot-horizontal
+ms.custom: copilot-scenario-highlight
 #customer intent: As a developer, I want to learn how to use System.Text.Json to deserialize JSON data.
 ---
 

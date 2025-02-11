@@ -52,8 +52,8 @@ namespace TestReferenceEquality
 
             TestStruct tsC = new TestStruct( 1, "TestStruct 1");
 
-            // Value types are copied on assignment. tsD and tsC have
-            // the same values but are not the same object.
+            // Value types are boxed into separate objects when passed to ReferenceEquals.
+            // Even if the same variable is used twice, boxing ensures they are different instances.
             TestStruct tsD = tsC;
             Console.WriteLine("After assignment: ReferenceEquals(tsC, tsD) = {0}",
                                 Object.ReferenceEquals(tsC, tsD)); // false

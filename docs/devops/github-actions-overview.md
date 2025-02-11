@@ -26,7 +26,7 @@ For more information, see [Introduction to GitHub Actions](https://docs.github.c
 
 ### Custom GitHub Actions
 
-While there are plenty of GitHub Actions available in the [Marketplace](https://github.com/marketplace?type=actions), you may want to author your own. You can create GitHub Actions that run .NET applications. For more information, see [Tutorial: Create a GitHub Action with .NET](create-dotnet-github-action.md)
+While there are plenty of GitHub Actions available in the [Marketplace](https://github.com/marketplace?type=actions), you may want to author your own. You can create GitHub Actions that run .NET applications. For more information, see [Tutorial: Create a GitHub Action with .NET](create-dotnet-github-action.md).
 
 ## Workflow file
 
@@ -191,7 +191,7 @@ The .NET command-line interface (CLI) is a cross-platform toolchain for developi
 - [dotnet test](../core/tools/dotnet-test.md)
 - [dotnet publish](../core/tools/dotnet-publish.md)
 
-For more information, see [.NET CLI overview](../core/tools/index.md)
+For more information, see [.NET CLI overview](../core/tools/index.md).
 
 ## See also
 

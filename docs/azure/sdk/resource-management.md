@@ -18,13 +18,13 @@ Those packages follow the [new Azure SDK guidelines](https://azure.github.io/azu
 - Distributed tracing.
 
 > [!NOTE]
-> You may notice that some packages are still pre-release version, phased releases of additional Azure services' management plane libraries are in process. If you are looking for a stable version package for a particular azure resource and currently only a pre-release version is available, please raise an issue in [Azure SDK for .NET Github repo](https://github.com/Azure/azure-sdk-for-net/issues/new?assignees=&labels=&template=02_feature_request.yml&title=%5BFEATURE+REQ%5D)
+> You might notice that some packages are still prerelease version. Phased releases of additional Azure services' management plane libraries are in process. If you're looking for a stable version package for a particular Azure resource and currently only a prerelease version is available, please raise an issue in [Azure SDK for .NET GitHub repo](https://github.com/Azure/azure-sdk-for-net/issues/new?assignees=&labels=&template=02_feature_request.yml&title=%5BFEATURE+REQ%5D).
 
 ## Get started
 
 ### Prerequisites
 
-- An [Azure subscription](https://azure.microsoft.com/free/dotnet/)
+- An [Azure subscription](https://azure.microsoft.com/free/dotnet/).
 - A [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=false) implementation, such as an [Azure Identity library credential type](/dotnet/api/overview/azure/Identity-readme#credential-classes).
 
 ### Install the package

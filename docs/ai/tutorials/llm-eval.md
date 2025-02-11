@@ -150,7 +150,7 @@ The evaluation results [generated in the previous step](#4---perform-an-evaluati
 If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
 1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
-1. Select the Azure OpenAI resource then select **Delete**.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 ## Related content
 

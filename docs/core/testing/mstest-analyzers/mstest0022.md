@@ -40,6 +40,8 @@ Replace `Dispose` or `DisposeAsync` methods with `[TestCleanup]`.
 
 You usually don't want to suppress warnings from this rule if you decided to opt-in for it.
 
+[!INCLUDE [disabled-in-all](includes/disabled-in-all.md)]
+
 ## Suppress a warning
 
 If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.

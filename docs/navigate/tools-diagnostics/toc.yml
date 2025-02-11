@@ -33,6 +33,8 @@ items:
                 href: ../../core/tools/sdk-errors/netsdk1013.md
               - name: NETSDK1022
                 href: ../../core/tools/sdk-errors/netsdk1022.md
+              - name: NETSDK1032
+                href: ../../core/tools/sdk-errors/netsdk1032.md
               - name: NETSDK1045
                 href: ../../core/tools/sdk-errors/netsdk1045.md
               - name: NETSDK1059
@@ -67,6 +69,8 @@ items:
                 href: ../../core/tools/sdk-errors/netsdk1138.md
               - name: NETSDK1141
                 href: ../../core/tools/sdk-errors/netsdk1141.md
+              - name: NETSDK1144
+                href: ../../core/tools/sdk-errors/netsdk1144.md
               - name: NETSDK1145
                 href: ../../core/tools/sdk-errors/netsdk1145.md
               - name: NETSDK1147
@@ -1691,7 +1695,7 @@ items:
                 href: /visualstudio/ide/reference/json001?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
               - name: JSON002
                 href: /visualstudio/ide/reference/json002?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
-              - name: JRE0001
+              - name: RE0001
                 href: /visualstudio/ide/reference/re0001?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Platform compatibility analyzer
         href: ../../standard/analyzers/platform-compat-analyzer.md
@@ -1818,8 +1822,12 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0056.md
           - name: SYSLIB0057
             href: ../../fundamentals/syslib-diagnostics/syslib0057.md
+          - name: SYSLIB0058
+            href: ../../fundamentals/syslib-diagnostics/syslib0058.md
           - name: SYSLIB0059
             href: ../../fundamentals/syslib-diagnostics/syslib0059.md
+          - name: SYSLIB0060
+            href: ../../fundamentals/syslib-diagnostics/syslib0060.md
       - name: Experimental features
         items:
           - name: Overview
@@ -1925,8 +1933,6 @@ items:
       - name: Overview
         href: ../../fundamentals/apicompat/overview.md
         displayName: api compatibility,apicompat
-      - name: Preview APIs
-        href: ../../fundamentals/apicompat/preview-apis.md
       - name: Diagnostic IDs
         href: ../../fundamentals/apicompat/diagnostic-ids.md
       - name: Assembly validation

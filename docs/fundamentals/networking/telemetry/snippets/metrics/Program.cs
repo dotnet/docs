@@ -17,38 +17,15 @@ while (!Console.KeyAvailable)
     await Parallel.ForAsync(0, Random.Shared.Next(20), async (_, ct) =>
     {
         string uri = uris[Random.Shared.Next(uris.Length)];
-        byte[] bytes = await client.GetByteArrayAsync(uri, ct);
-        await Console.Out.WriteLineAsync($"{uri} - received {bytes.Length} bytes.");
+        try
+        {
+            byte[] bytes = await client.GetByteArrayAsync(uri, ct);
+            await Console.Out.WriteLineAsync($"{uri} - received {bytes.Length} bytes.");
+        }
+        catch { await Console.Out.WriteLineAsync($"{uri} - failed."); }
     });
 }
 // </snippet_ExampleApp>
-#elif snippet_PrometheusExporter
-// <snippet_PrometheusExporter>
-using OpenTelemetry.Metrics;
-using OpenTelemetry;
-using System.Net;
-
-using MeterProvider meterProvider = Sdk.CreateMeterProviderBuilder()
-    .AddMeter("System.Net.Http", "System.Net.NameResolution")
-    .AddPrometheusHttpListener(options => options.UriPrefixes = new string[] { "http://localhost:9184/" })
-    .Build();
-
-string[] uris = ["http://example.com", "http://httpbin.org/get", "https://example.com", "https://httpbin.org/get"];
-using HttpClient client = new()
-{
-    DefaultRequestVersion = HttpVersion.Version20
-};
-
-while (!Console.KeyAvailable)
-{
-    await Parallel.ForAsync(0, Random.Shared.Next(20), async (_, ct) =>
-    {
-        string uri = uris[Random.Shared.Next(uris.Length)];
-        byte[] bytes = await client.GetByteArrayAsync(uri, ct);
-        await Console.Out.WriteLineAsync($"{uri} - received {bytes.Length} bytes.");
-    });
-}
-// </snippet_PrometheusExporter>
 #elif snippet_Enrichment
 // <snippet_Enrichment>
 using System.Net.Http.Metrics;

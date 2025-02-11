@@ -19,7 +19,7 @@ ms.author: enjieid
 | **Title**                           | Test method should not be ignored            |
 | **Category**                        | Design                                       |
 | **Fix is breaking or non-breaking** | Non-breaking                                 |
-| **Enabled by default**              | Yes                                          |
+| **Enabled by default**              | Yes (from 3.3 to 3.7). No (starting with 3.8)|
 | **Default severity**                | Info                                         |
 | **Introduced in version**           | 3.3.0                                        |
 | **Is there a code fix**             | No                                           |
@@ -39,6 +39,8 @@ Ensure that the test method isn't ignored.
 ## When to suppress warnings
 
 Do not suppress a warning from this rule. If you ignore this rule, test method will be ignored.
+
+[!INCLUDE [disabled-in-all](includes/disabled-in-all.md)]
 
 ## Suppress a warning
 

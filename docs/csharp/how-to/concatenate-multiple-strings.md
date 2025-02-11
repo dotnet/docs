@@ -1,17 +1,22 @@
 ---
 title: "How to concatenate multiple strings"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
-ms.date: 11/22/2024
+ms.date: 1/31/2025
 helpviewer_keywords: 
   - "joining strings [C#]"
   - "concatenating strings [C#]"
   - "strings [C#], concatenation"
+ms.collection: ce-skilling-ai-copilot
+ms.custom: copilot-scenario-highlight
 ---
 # How to concatenate multiple strings (C# Guide)
 
 *Concatenation* is the process of appending one string to the end of another string. You concatenate strings by using the `+` operator. For string literals and string constants, concatenation occurs at compile time; no run-time concatenation occurs. For string variables, concatenation occurs only at run time.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
+> [!TIP]
+> You can use AI assistance to [concatenate strings with GitHub Copilot](#use-github-copilot-to-concatenate-strings).
 
 ## String literals
 
@@ -65,6 +70,20 @@ combines an array of words, adding a space between each word in the array:
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/Concatenate.cs" id="Snippet6":::
 
 This option can cause more allocations than other methods for concatenating collections, as it creates an intermediate string for each iteration. If optimizing performance is critical, consider the [`StringBuilder`](#stringbuilder) class or the [`String.Concat` or `String.Join`](#stringconcat-or-stringjoin) method to concatenate a collection, instead of `Enumerable.Aggregate`.
+
+## Use GitHub Copilot to concatenate strings
+
+You can use GitHub Copilot in your IDE to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
+
+The following text shows an example prompt for Copilot Chat:
+
+```copilot-prompt
+Generate C# code to use String.Format to build an output string "Hi x, today's date is y. You are z years old." where x is "John",  y is today's date and z is the birthdate January 1, 2000. The final string should show date in the full format mm/dd/yyyy. Show output.
+```
+
+GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+
+Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
 
 ## See also
 

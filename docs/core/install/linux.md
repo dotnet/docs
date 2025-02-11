@@ -49,4 +49,27 @@ You can install .NET manually in the following ways:
 - [Manual install](linux-scripted-manual.md#manual-install)
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 
-You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
+You might need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
+
+## Additional sources
+
+.NET is also available from other sources. The packages and containers use a name similar to one of the following names:
+
+- aspnet-runtime
+- dotnet-runtime
+- dotnet-sdk
+- dotnet
+
+### Package managers
+
+- <https://formulae.brew.sh/cask/dotnet>
+- <https://formulae.brew.sh/cask/dotnet-sdk>
+- <https://ports.macports.org/port/dotnet-cli>
+- <https://search.nixos.org/packages?query=dotnet>
+- <https://archlinux.org>
+- <https://aur.archlinux.org>
+
+### Containers
+
+- <https://containers.dev/features>
+- <https://images.chainguard.dev>

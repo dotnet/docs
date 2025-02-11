@@ -219,9 +219,9 @@ If an exception occurred anywhere within the client's `TransactionScope` then th
 
 ### To set up, build, and run the sample
 
-1. To build the C# or Visual Basic .NET version of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md)
+1. To build the C# or Visual Basic .NET version of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-2. Ensure that you have installed SQL Server Express Edition or SQL Server, and that the connection string has been correctly set in the service's application configuration file. To run the sample without using a database, set the `usingSql` value in the service's application configuration file to `false`
+2. Ensure that you have installed SQL Server Express Edition or SQL Server, and that the connection string has been correctly set in the service's application configuration file. To run the sample without using a database, set the `usingSql` value in the service's application configuration file to `false`.
 
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 

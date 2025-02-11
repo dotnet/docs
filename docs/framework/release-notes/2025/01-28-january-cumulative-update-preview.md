@@ -22,9 +22,7 @@ There are no new security improvements in this release. This update is cumulativ
 
 Addresses an issue with printing large number of pages due to an OutOfMemory exception. To apply this improvement you must set the below AppContextSwitch. (*Applies to: .NET Framework 4.8, 4.8.1*)
 
-<runtime>
 <AppContextSwitchOverrides value="Switch.System.Windows.Controls.ReleaseDiscardableFontReasources=true"/>
-</runtime>
 
 ## Known issues in this release
 

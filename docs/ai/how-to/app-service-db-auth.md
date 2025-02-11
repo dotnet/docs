@@ -146,19 +146,19 @@ The following code samples require these additional libraries:
 
 1. Initialize a `DefaultAzureCredential` object to pick up your app's managed identity:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="tokenCredential":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="tokenCredential":::
 
 1. Initialize an `IMemoryStore` object for your vector database, then use it to build an `ISemanticTextMemory`:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="aiStore":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="aiStore":::
 
 1. Build a `Kernel` object, then import the `ISemanticTextMemory` object using the `TextMemoryPlugin`:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="addMemory":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="addMemory":::
 
 1. Use the `Kernel` object to invoke a prompt that includes memory recall:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="useMemory":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="useMemory":::
 
 ## Use Key Vault to store connection secrets
 
@@ -227,23 +227,23 @@ These code samples use a Redis database, but you can apply them to any vector da
 
 1. Initialize a `DefaultAzureCredential` object to pick up your app's managed identity:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="tokenCredential":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="tokenCredential":::
 
 1. Add Key Vault when building your configuration, this will map your Key Vault secrets to the `IConfigurationRoot` object:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="vaultConfig":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="vaultConfig":::
 
 1. Use your vector database connection string from Key Vault to initialize an `IMemoryStore` object, and then use it to build an `ISemanticTextMemory`:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="redisStore":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="redisStore":::
 
 1. Build a `Kernel` object, then import the `ISemanticTextMemory` object using the `TextMemoryPlugin`:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="addMemory":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="addMemory":::
 
 1. Use the `Kernel` object to invoke a prompt that includes memory recall:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="useMemory":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="useMemory":::
 
 ## Use application settings to store connection secrets
 
@@ -294,19 +294,19 @@ These code samples use a Redis database, but you can apply them to any vector da
 
 1. Add environment variables when building your configuration, this will map your connection strings to the `IConfigurationRoot` object:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="appSettingsConfig":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="appSettingsConfig":::
 
 1. Use your vector database connection string from app settings to initialize an `IMemoryStore` object, and then use it to build an `ISemanticTextMemory`:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="redisStore":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="redisStore":::
 
 1. Build a `Kernel` object, then import the `ISemanticTextMemory` object using the `TextMemoryPlugin`:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="addMemory":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="addMemory":::
 
 1. Use the `Kernel` object to invoke a prompt that includes memory recall:
 
-    :::code language="csharp" source="./snippets/semantic-kernel/IdentityExamples.cs" id="useMemory":::
+    :::code language="csharp" source="./snippets/hosted-app-db-auth/Program.cs.cs" id="useMemory":::
 
 ## Related content
 

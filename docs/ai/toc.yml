@@ -3,20 +3,18 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
-- name: Ecosystem tools and SDKs
+- name: Quickstart - Connect to and prompt an AI model
+  href: quickstarts/quickstart-openai-summarize-text.md
+- name: .NET Frameworks and SDKs
   href: dotnet-ai-ecosystem.md
 - name: Microsoft.Extensions.AI building blocks
   href: ai-extensions.md
-- name: Learning resources and samples
-  href: azure-ai-for-dotnet-developers.md
 - name: What is Semantic Kernel?
   href: semantic-kernel-dotnet-overview.md
-- name: Authenticate to Azure AI services with .NET
-  href: azure-ai-services-authentication.md
+- name: Learning resources and samples
+  href: azure-ai-for-dotnet-developers.md
 - name: Quickstarts
   items:
-  - name: Connect to and prompt an AI model
-    href: quickstarts/quickstart-openai-summarize-text.md
   - name: Build a chat app
     href: quickstarts/get-started-openai.md
   - name: Build a .NET AI vector search app
@@ -51,21 +49,31 @@ items:
     href: conceptual/rag.md
   - name: Understand OpenAI function calling
     href: conceptual/understanding-openai-functions.md
-- name: How-to articles
+- name: Chat with your data (RAG)
+  - items:
+    - name: Get started with the chat using your data sample 
+      href: get-started-app-chat-template.md
+    - name: Implement RAG using vector search
+      href: tutorials/tutorial-ai-vector-search.md
+    - name: Scale Azure OpenAI with Azure Container Apps
+      href: get-started-app-chat-scaling-with-azure-container-apps.md
+- name: Security and content safety
   items:
-  - name: Authenticate to Azure OpenAI from an Azure hosted app
-    href: how-to/app-service-aoai-auth.md
-  - name: Authenticate to Azure Databases from an Azure hosted app
-    href: how-to/app-service-db-auth.md
+  - name: Azure hosted apps and services authentication
+    items:
+    - name: Authentication overview
+      href: azure-ai-services-authentication.md
+    - name: Authenticate to Azure OpenAI from an Azure hosted app
+      href: how-to/app-service-aoai-auth.md
+    - name: Authenticate to Azure services locally
+      href: /dotnet/azure/sdk/authentication/local-development-dev-accounts?toc=/docs/ai/toc.yml&bc=/docs/ai/toc.yml
   - name: Work with content filtering
     href: how-to/content-filtering.md
-- name: Tutorials
+  - name: Use a blocklist with Azure OpenAI
+    href: /azure/ai-services/openai/how-to/use-blocklists?toc=/docs/ai/toc.yml&bc=/docs/ai/toc.yml
+  - name: Use Risks & Safety monitoring
+    href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/docs/ai/toc.yml&bc=/docs/ai/toc.yml
+- name: Evaluation
   items:
-  - name: Get started with the chat using your data sample 
-    href: get-started-app-chat-template.md
   - name: Evaluate LLM prompt completions
     href: tutorials/llm-eval.md
-  - name: Implement RAG using vector search
-    href: tutorials/tutorial-ai-vector-search.md
-  - name: Scale Azure OpenAI with Azure Container Apps
-    href: get-started-app-chat-scaling-with-azure-container-apps.md

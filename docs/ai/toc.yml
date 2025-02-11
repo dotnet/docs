@@ -66,13 +66,13 @@ items:
     - name: Authenticate to Azure OpenAI from an Azure hosted app
       href: how-to/app-service-aoai-auth.md
     - name: Authenticate to Azure services locally
-      href: /dotnet/azure/sdk/authentication/local-development-dev-accounts?toc=/docs/ai/toc.yml&bc=/docs/ai/toc.yml
+      href: /dotnet/azure/sdk/authentication/local-development-dev-accounts?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: Work with content filtering
     href: how-to/content-filtering.md
   - name: Use a blocklist with Azure OpenAI
-    href: /azure/ai-services/openai/how-to/use-blocklists?toc=/docs/ai/toc.yml&bc=/docs/ai/toc.yml
+    href: /azure/ai-services/openai/how-to/use-blocklists?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: Use Risks & Safety monitoring
-    href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/docs/ai/toc.yml&bc=/docs/ai/toc.yml
+    href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
 - name: Evaluation
   items:
   - name: Evaluate LLM prompt completions

@@ -390,8 +390,6 @@ For more information and examples on how to use selective unit test filtering, s
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Passing runsettings arguments through commandline](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md)
 
-
-
 ### [dotnet test with MTP](#tab/dotnet-test-with-mtp)
 
 **This article applies to:** ✔️ .NET 10 SDK and later versions

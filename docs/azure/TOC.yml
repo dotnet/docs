@@ -61,10 +61,10 @@
         href: ./sdk/authentication/index.md
       - name: Auth during local development
         items:
-        - name: Auth using developer service principals
-          href: ./sdk/authentication/local-development-service-principal.md
-        - name: Auth using developer accounts
+        - name: Use a developer account
           href: ./sdk/authentication/local-development-dev-accounts.md
+        - name: Use a service principal
+          href: ./sdk/authentication/local-development-service-principal.md
       - name: Auth from Azure-hosted apps
         items:
         - name: Use a system-assigned managed identity

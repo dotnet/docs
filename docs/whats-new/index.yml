@@ -12,6 +12,12 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: .NET 10
+      url: ../core/whats-new/dotnet-10/overview.md
+- title: .NET 9 release updates
+  linkLists:
+  - linkListType: whats-new
+    links:
     - text: .NET 9
       url: ../core/whats-new/dotnet-9/overview.md
     - text: ASP.NET Core 9.0
@@ -22,22 +28,6 @@ landingContent:
       url: /ef/core/what-is-new/ef-core-9.0/whatsnew
     - text: Documentation updates
       url: dotnet-9-release.md
-- title: .NET 8 release updates
-  linkLists:
-  - linkListType: whats-new
-    links:
-    - text: .NET 8
-      url: ../core/whats-new/dotnet-8/overview.md
-    - text: ASP.NET Core 8.0
-      url: /aspnet/core/release-notes/aspnetcore-8.0
-    - text: .NET MAUI 8
-      url: /dotnet/maui/whats-new/dotnet-8
-    - text: EF Core 8
-      url: /ef/core/what-is-new/ef-core-8.0/whatsnew
-    - text: Windows Forms (.NET 8)
-      url: /dotnet/desktop/winforms/whats-new/net80
-    - text: WPF (.NET 8)
-      url: /dotnet/desktop/wpf/whats-new/net80
 - title: Latest documentation updates
   linkLists:
   - linkListType: whats-new

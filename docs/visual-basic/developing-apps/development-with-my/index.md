@@ -23,7 +23,9 @@ Visual Basic provides new features for rapid application development that improv
   
 ## Supported My Services in .NET 5+
 
-Starting with .NET 5, not all `My` services are supported. The following `My` objects and services are available:
+Starting with .NET 5, not all `My` services are supported. The Visual Basic Application Framework was not supported in .NET 5 but was reintroduced in .NET 6. For more details, see [Update to WinForms VB Application Framework](https://devblogs.microsoft.com/dotnet/update-to-winforms-vb-appframework/).
+
+The following `My` objects and services are available:
 
 - **Supported in .NET 5+:**
   - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
@@ -33,11 +35,10 @@ Starting with .NET 5, not all `My` services are supported. The following `My` ob
   - [My.Resources Object](../../language-reference/objects/my-resources-object.md)
 
 - **Not supported in .NET 5+:**
-  - [My.Forms Object](../../language-reference/objects/my-forms-object.md)
   - [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)
 
 For more details on project type dependencies, see [How My Depends on Project Type](how-my-depends-on-project-type.md).
-  
+
 ## In This Section  
 
  [Performing Tasks with My.Application, My.Computer, and My.User](performing-tasks-with-my-application-my-computer-and-my-user.md)  

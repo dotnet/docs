@@ -5,11 +5,15 @@ ms.date: 03/27/2024
 ---
 # dotnet test
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+Add description how to enable vstest or mtp.
 
 ## Name
 
 `dotnet test` - .NET test driver used to execute unit tests.
+
+## [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
+
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Synopsis
 
@@ -385,3 +389,180 @@ For more information and examples on how to use selective unit test filtering, s
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Passing runsettings arguments through commandline](https://github.com/microsoft/vstest/blob/main/docs/RunSettingsArguments.md)
+
+
+
+## [dotnet test with MTP](#tab/dotnet-test-with-mtp)
+
+**This article applies to:** ✔️ .NET 10 SDK and later versions
+
+## Synopsis
+
+```dotnetcli
+dotnet test
+    [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>]
+    [--directory <DIRECTORY_PATH>]
+    [--no-build]
+    [--no-restore]
+    [--project <PROJECT_PATH>]
+    [--solution <SOLUTION_PATH>]
+    [-t|--list-tests]
+    [--test-modules <EXPRESSION>] [--root-directory <ROOT_DIRECTORY>]
+    [--no-ansi]
+    [--no-progress]
+    [--output]
+    [<args>...]
+
+dotnet test -h|--help
+```
+
+## Description
+
+TO DO.
+
+## Options
+
+ - **`--arch <ARCHITECTURE>`**
+
+  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
+
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+- **`--directory <DIRECTORY_PATH>`**
+
+  Specifies the path to a directory that contains a project or a solution.
+
+- **`--no-build`**
+
+  Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore when running the command.
+
+- **`--project <PROJECT_PATH>`**
+
+  Specifies the path to the test project.
+
+- **`--solution <SOLUTION_PATH>`**
+
+  Specifies the path to the solution.
+
+- **`-t|--list-tests`**
+
+  Lists the discovered tests instead of running the tests.
+
+- **`--test-modules <EXPRESSION>`**
+
+  Filters test modules using file globbing in .NET. Only tests belonging to those test modules will run. For more information and examples on how to use file globbing in .NET, see [File globbing](../../../docs/core/extensions/file-globbing.md).
+
+- **`--root-directory <ROOT_DIRECTORY>`**
+
+  Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
+
+- **`--no-ansi`**
+
+  Disables outputting ANSI escape characters to screen.
+
+- **`--no-progress`**
+
+  Disables reporting progress to screen.
+
+- **`--output`**
+
+  Specifies the output verbosity when reporting tests. Valid values are 'Normal', 'Detailed'. Default is 'Normal'.
+
+- **`--property:<NAME>=<VALUE>`**
+
+  Sets one or more MSBuild properties. Specify multiple properties by repeating the option:
+
+  ```dotnetcli
+  --property:<NAME1>=<VALUE1> --property:<NAME2>=<VALUE2>
+  ```
+
+  The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
+  More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
+
+[!INCLUDE [help](../../../includes/cli-help.md)]
+
+- **`args`**
+
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](unit-testing-platform-extensions.md).
+
+## Examples
+
+- Run the tests in the project in the current directory:
+
+  ```dotnetcli
+  dotnet test
+  ```
+
+- Run the tests in the `TestProject` project:
+
+  ```dotnetcli
+  dotnet test --project ./TestProject/TestProject.csproj
+  ```
+
+- Run the tests in the `TestProjects` solution:
+
+  ```dotnetcli
+  dotnet test --solution ./TestProjects/TestProjects.sln
+  ```
+
+- Run the tests in the `TestProjects` directory:
+
+  ```dotnetcli
+  dotnet test --directory ./TestProjects
+  ```
+
+- Run the tests using `TestProject.dll` assembly:
+
+  ```dotnetcli
+  dotnet test --test-modules "**/bin/**/Debug/net10.0/TestProject.dll"
+  ```
+
+- Run the tests using `TestProject.dll` assembly with the root directory:
+
+  ```dotnetcli
+  dotnet test --test-modules "**/bin/**/Debug/net10.0/TestProject.dll" --root-directory "c:\code"
+  ```
+
+- Run projects in the current directory, specifying Release configuration:
+
+  ```dotnetcli
+  dotnet test --configuration Release
+  ```
+
+- Run projects in the current directory, specifying x64 architecture:
+
+  ```dotnetcli
+  dotnet test --architecture x64
+  ```
+
+- Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
+
+  ```dotnetcli
+  dotnet test --project ./TestProject/TestProject.csproj -bl
+  ```
+
+- Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:
+
+  ```dotnetcli
+  dotnet test --project ./TestProject/TestProject.csproj -p:DefineConstants="DEV"
+  ```
+
+  <a id="testtfmsinparallel"></a>
+
+- Run the tests in the `test1` project, setting the MSBuild `TestTfmsInParallel` property to `false`:
+
+  ```dotnetcli
+  dotnet test --project ./TestProject/TestProject.csproj -p:TestTfmsInParallel=false
+  ```
+
+## See also
+
+- [Frameworks and Targets](../../standard/frameworks.md)
+- [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
+- [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md)
+- [Microsoft.Testing.Platform extensions](unit-testing-platform-extensions.md)

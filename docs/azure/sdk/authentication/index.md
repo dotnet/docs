@@ -20,8 +20,8 @@ The specific type of token-based authentication an app should use to authenticat
 
 When an app is:
 
-- **Running locally during development**, the app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials. Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
 - **Hosted on Azure**, the app should authenticate to Azure resources using a managed identity. This option is discussed in more detail at [authentication in server environments](#authentication-for-azure-hosted-apps).
+- **Running locally during development**, the app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials. Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
 - **Hosted and deployed on-premises**, the app should authenticate to Azure resources using an application service principal. This option is discussed in more detail at [authentication in server environments](#authentication-for-apps-hosted-on-premises).
 
 ### Advantages of token-based authentication
@@ -37,20 +37,43 @@ Use of connection strings should be limited to initial proof-of-concept apps or 
 
 ## Authentication for Azure-hosted apps
 
-When hosting in a server environment, each app should be assigned a unique *application identity* per environment in which the app is run. In Azure, an application identity is represented by a **service principal**, a special type of *security principal* intended to identify and authenticate apps to Azure. The type of service principal to use for your app depends on where your app is running.
+When your app is hosted on Azure, it can leverage Azure's managed identities to authenticate to Azure resources without needing to manage any credentials. There are two types of managed identities: user-assigned and system-assigned. Both types provide a secure way to authenticate to Azure services.
 
-| Authentication method | Description |
-|-----------------------|-------------|
-| Apps hosted in Azure  | [!INCLUDE [sdk-auth-overview-managed-identity](../includes/sdk-auth-overview-managed-identity.md)]            |
-| Apps hosted outside of Azure<br>(for example, on-premises apps) | [!INCLUDE [sdk-auth-overview-service-principal](../includes/sdk-auth-overview-service-principal.md)] |
+### Use a user-assigned identity
+
+A user-assigned managed identity is created as a standalone Azure resource. It can be assigned to one or more Azure resources, allowing those resources to share the same identity. To authenticate using a user-assigned identity, you need to create the identity, assign it to your Azure resource, and then configure your app to use this identity for authentication.
+
+> [!div class="nextstepaction"]
+> [Authenticate Azure-hosted apps using a user-assigned managed-identity](user-assigned-managed-identity.md)
+
+### Use a system-assigned identity
+
+A system-assigned managed identity is enabled directly on an Azure resource. The identity is tied to the lifecycle of that resource and is automatically deleted when the resource is deleted. To authenticate using a system-assigned identity, you need to enable the identity on your Azure resource and then configure your app to use this identity for authentication.
+
+> [!div class="nextstepaction"]
+> [Authenticate Azure-hosted apps using a system-assigned managed-identity](system-assigned-managed-identity.md)
 
 ## Authentication during local development
 
-When an app is run on a developer's workstation during local development, it must still authenticate to any Azure services used by the app. The two main strategies for authenticating apps to Azure during local development are:
+During local development, you can authenticate to Azure resources using your developer credentials or a service principal. This allows you to test your app's authentication logic without deploying it to Azure.
 
-| Authentication method | Description |
-|-----------------------|-------------|
-| Create dedicated application service principal objects to be used during local development | [!INCLUDE [sdk-auth-overview-dev-service-principals](../includes/sdk-auth-overview-dev-service-principals.md)] |
-| Authenticate the app to Azure using the developer's credentials during local development | [!INCLUDE [sdk-auth-overview-dev-accounts](../includes/sdk-auth-overview-dev-accounts.md)] |
+### Use developer credentials
+
+You can use your own Azure credentials to authenticate to Azure resources during local development. This is typically done using the Azure CLI or Visual Studio, which can provide your app with the necessary tokens to access Azure services. This method is convenient but should only be used for development purposes.
+
+> [!div class="nextstepaction"]
+> [Authenticate to Azure services locally using developer credentials](local-development-dev-accounts.md)
+
+### Use a service principal
+
+A service principal is an Azure Active Directory application that can be used to authenticate to Azure resources. You can create a service principal and configure your app to use its credentials during local development. This method is more secure than using developer credentials and is closer to how your app will authenticate in production.
+
+> [!div class="nextstepaction"]
+> [Authenticate to Azure services locally using a service principal](local-development-service-principal.md)
 
 ## Authentication for apps hosted on-premises
+
+For apps hosted on-premises, you can use a service principal to authenticate to Azure resources. This involves creating a service principal in Azure Active Directory, assigning it the necessary permissions, and configuring your app to use its credentials. This method allows your on-premises app to securely access Azure services.
+
+> [!div class="nextstepaction"]
+> [Authenticate your on-prem app using a service principal](local-development-service-principal.md)

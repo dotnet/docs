@@ -3,18 +3,18 @@ ms.topic: include
 ms.date: 02/12/2025
 ---
 
-## Authenticate to Azure services from your app code
+## Authenticate to Azure services from your app
 
-To authenticate to Azure services from your app code using Microsoft Entra ID, you'll need to use an implementation of the [`TokenCredential`](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#credentials) class. The [Azure.Identity](/dotnet/api/azure.identity) library provides various implementations of `TokenCredential` for different scenarios and credential types. These classes allow apps to seamlessly authenticate to Azure resources whether the app is running locally, deployed to Azure, or on an on-premises server.
+To authenticate to Azure services from your app code using Microsoft Entra ID and a user-assigned managed identity, you'll need to use an implementation of the [`TokenCredential`](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#credentials) class. The [Azure.Identity](/dotnet/api/azure.identity) library provides various implementations of `TokenCredential` for different scenarios and credential types. These classes allow apps to seamlessly authenticate to Azure resources whether the app is running locally, deployed to Azure, or on an on-premises server.
 
 The steps ahead demonstrate how to use a `TokenCredential` across two different environments:
 
-- **Local dev environment**: During **local development only**, you can use a class called `DefaultAzureCredential` for an opinionated, preconfigured chain of credentials. For local dev environments, `DefaultAzureCredential` provides flexibility and convenience through the right balance of retries, wait time for response, and methods to attempt multiple authentication options. It can discover your local user credentials from your local tooling or IDE, such as the Azure CLI or Visual Studio. Visit the [Authenticate to Azure services during local development](/dotnet/azure/sdk/authentication/local-development-dev-accounts) article to learn more.
-- **Azure-hosted apps**: When your app is running in Azure, use a `ManagedIdentityCredential` to discover the user-assigned managed identity configured for your app. `ManagedIdentityCredential` is the standard way to get a managed identity token on most of the compute services in production and ensures only the correct credentials will be used by your app. A user-assigned managed identity can be located using the client ID, the resource ID, or the object ID based on how you configure the `ManagedIdentityCredential`.
+- **Local dev environment**: During **local development only**, you can use a class called `DefaultAzureCredential` for an opinionated, preconfigured chain of credentials. `DefaultAzureCredential` can discover user credentials from your local tooling or IDE, such as the Azure CLI or Visual Studio. It also provides flexibility and convenience for local development through the right balance of retries, wait time for response, and support for multiple authentication options. Visit the [Authenticate to Azure services during local development](/dotnet/azure/sdk/authentication/local-development-dev-accounts) article to learn more.
+- **Azure-hosted apps**: When your app is running in Azure, use a `ManagedIdentityCredential` to safely discover the managed identity configured for your app. You can configure the `ManagedIdentityCredential` to locate a user-assigned managed identity using the client ID, the resource ID, or the object ID.
 
 ### Implement the code
 
-To use Azure `TokenCredential` classes in your code, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
+Add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
 
 ### [Command Line](#tab/command-line)
 
@@ -27,7 +27,7 @@ dotnet add package Microsoft.Extensions.Azure
 
 ### [NuGet Package Manager](#tab/nuget-package)
 
-Right-click your project in Visual Studio's **Solution Explorer** window and select **Manage NuGet Packages**. Search for **Azure.Identity**, and install the matching package. Repeat this process for the **Microsoft.Extensions.Azure** package.
+Right-click your project in the Visual Studio **Solution Explorer** window and select **Manage NuGet Packages**. Search for **Azure.Identity**, and install the matching package. Repeat this process for the **Microsoft.Extensions.Azure** package.
 
 :::image type="content" source="../media/nuget-azure-identity.png" alt-text="Install a package using the package manager.":::
 
@@ -37,9 +37,10 @@ Azure services are accessed using specialized client classes from the various Az
 
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
-1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method
-    - Use `DefaultAzureCredential` when your app is running locally
-    - Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
+1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method:
+
+- Use `DefaultAzureCredential` when your app is running locally
+- Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
 
 ## [Client ID](#tab/client-id)
 

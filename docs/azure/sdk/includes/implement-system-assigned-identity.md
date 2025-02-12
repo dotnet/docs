@@ -35,29 +35,11 @@ Azure services are accessed using specialized client classes from the various Az
 - Use `DefaultAzureCredential` when your app is running locally
 - Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
 
-## [Client ID](#tab/client-id)
-
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
+:::code language="csharp" source="../snippets/authentication/system-assigned-managed-identity/Program.cs" id="snippet_MIC_UseCredential":::
 
 An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId":::
-
-## [Resource ID](#tab/resource-id)
-
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
-
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId":::
-
-## [Object ID](#tab/object-id)
-
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
-
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
-
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId":::
+:::code language="csharp" source="../snippets/authentication/system-assigned-managed-identity/Program.cs" id="snippet_MIC":::
 
 ---
 

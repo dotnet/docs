@@ -434,7 +434,7 @@ TO DO.
 
 - **`--max-parallel-test-modules <NUMBER>`**
 
-  Specifies the max number of test modules that can run in parallel. 
+  Specifies the max number of test modules that can run in parallel.
 
 - **`--no-build`**
 

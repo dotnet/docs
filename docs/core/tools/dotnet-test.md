@@ -487,7 +487,9 @@ TO DO.
   The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
   More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
+- **`-h|--help`**
+
+  Prints out a description of how to use the command. The options will be dynamic, as they will be based on the registered extensions in the test project.
 
 - **`args`**
 
@@ -543,24 +545,26 @@ TO DO.
   dotnet test --architecture x64
   ```
 
-- Run the tests in the `test1` project, providing the `-bl` (binary log) argument to `msbuild`:
+- Run the tests in the current directory with code coverage:
+
+  ```dotnetcli
+  dotnet test --coverage
+  ```
+
+  ```dotnetcli
+  dotnet test --directory ./TestProjects
+  ```
+
+- Run the tests in the `TestProject` project, providing the `-bl` (binary log) argument to `msbuild`:
 
   ```dotnetcli
   dotnet test --project ./TestProject/TestProject.csproj -bl
   ```
 
-- Run the tests in the `test1` project, setting the MSBuild `DefineConstants` property to `DEV`:
+- Run the tests in the `TestProject` project, setting the MSBuild `DefineConstants` property to `DEV`:
 
   ```dotnetcli
   dotnet test --project ./TestProject/TestProject.csproj -p:DefineConstants="DEV"
-  ```
-
-  <a id="testtfmsinparallel"></a>
-
-- Run the tests in the `test1` project, setting the MSBuild `TestTfmsInParallel` property to `false`:
-
-  ```dotnetcli
-  dotnet test --project ./TestProject/TestProject.csproj -p:TestTfmsInParallel=false
   ```
 
 ### See also

@@ -425,7 +425,7 @@ TO DO.
 
  - **`--arch <ARCHITECTURE>`**
 
-  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
+  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
 
 [!INCLUDE [configuration](../../../includes/cli-configuration.md)]
 
@@ -488,7 +488,7 @@ TO DO.
 
 - **`args`**
 
-  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](unit-testing-platform-extensions.md).
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md).
 
 ## Examples
 
@@ -565,4 +565,4 @@ TO DO.
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md)
-- [Microsoft.Testing.Platform extensions](unit-testing-platform-extensions.md)
+- [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md)

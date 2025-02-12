@@ -539,10 +539,6 @@ TO DO.
   dotnet test --coverage
   ```
 
-  ```dotnetcli
-  dotnet test --directory ./TestProjects
-  ```
-
 - Run the tests in the `TestProject` project, providing the `-bl` (binary log) argument to `msbuild`:
 
   ```dotnetcli

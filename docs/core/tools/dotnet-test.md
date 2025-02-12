@@ -401,15 +401,16 @@ dotnet test
     [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>]
     [--directory <DIRECTORY_PATH>]
+    [-mptm|--max-parallel-test-modules <NUMBER>]
     [--no-build]
     [--no-restore]
     [--project <PROJECT_PATH>]
     [--solution <SOLUTION_PATH>]
     [-t|--list-tests]
-    [--test-modules <EXPRESSION>] [--root-directory <ROOT_DIRECTORY>]
+    [--test-modules <EXPRESSION>] [--root-directory <ROOT_PATH>]
     [--no-ansi]
     [--no-progress]
-    [--output]
+    [--output <VERBOSITY_LEVEL>]
     [<args>...]
 
 dotnet test -h|--help
@@ -430,6 +431,10 @@ TO DO.
 - **`--directory <DIRECTORY_PATH>`**
 
   Specifies the path to a directory that contains a project or a solution.
+
+- **`--max-parallel-test-modules <NUMBER>`**
+
+  Specifies the max number of test modules that can run in parallel. 
 
 - **`--no-build`**
 
@@ -455,7 +460,7 @@ TO DO.
 
   Filters test modules using file globbing in .NET. Only tests belonging to those test modules will run. For more information and examples on how to use file globbing in .NET, see [File globbing](../../../docs/core/extensions/file-globbing.md).
 
-- **`--root-directory <ROOT_DIRECTORY>`**
+- **`--root-directory <ROOT_PATH>`**
 
   Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
 
@@ -467,7 +472,7 @@ TO DO.
 
   Disables reporting progress to screen.
 
-- **`--output`**
+- **`--output <VERBOSITY_LEVEL>`**
 
   Specifies the output verbosity when reporting tests. Valid values are 'Normal', 'Detailed'. Default is 'Normal'.
 

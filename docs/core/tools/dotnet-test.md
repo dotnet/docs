@@ -533,18 +533,6 @@ TO DO.
   dotnet test --test-modules "**/bin/**/Debug/net10.0/TestProject.dll" --root-directory "c:\code"
   ```
 
-- Run projects in the current directory, specifying Release configuration:
-
-  ```dotnetcli
-  dotnet test --configuration Release
-  ```
-
-- Run projects in the current directory, specifying x64 architecture:
-
-  ```dotnetcli
-  dotnet test --architecture x64
-  ```
-
 - Run the tests in the current directory with code coverage:
 
   ```dotnetcli

@@ -489,7 +489,7 @@ TO DO.
 
 - **`-h|--help`**
 
-  Prints out a description of how to use the command. The options will be dynamic, as they will be based on the registered extensions in the test project.
+  Prints out a description of how to use the command. The options will be dynamic and they may differ from one test application to another as they will be based on the registered extensions in the test project.
 
 - **`args`**
 

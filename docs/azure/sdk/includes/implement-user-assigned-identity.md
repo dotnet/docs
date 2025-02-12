@@ -1,10 +1,20 @@
 ---
 ms.topic: include
-ms.date: 08/15/2024
+ms.date: 02/12/2025
 ---
-[DefaultAzureCredential](../authentication/credential-chains.md#defaultazurecredential-overview) is an opinionated, ordered sequence of mechanisms for authenticating to Microsoft Entra ID. Each authentication mechanism is a class derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class and is known as a *credential*. At runtime, `DefaultAzureCredential` attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code.
 
-To use `DefaultAzureCredential`, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
+## Authenticate to Azure services from your app code
+
+To authenticate to Azure services from your app code using Microsoft Entra ID, you'll need to use an implementation of the [`TokenCredential`](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#credentials) class. The [Azure.Identity](/dotnet/api/azure.identity) library provides various implementations of `TokenCredential` for different scenarios and credential types. These classes allow apps to seamlessly authenticate to Azure resources whether the app is running locally, deployed to Azure, or on an on-premises server.
+
+The steps ahead demonstrate how to use a `TokenCredential` across two different environments:
+
+- **Local dev environment**: During **local development only**, you can use a class called `DefaultAzureCredential` for an opinionated, preconfigured chain of credentials. For local dev environments, `DefaultAzureCredential` provides flexibility and convenience through the right balance of retries, wait time for response, and methods to attempt multiple authentication options. It can discover your local user credentials from your local tooling or IDE, such as the Azure CLI or Visual Studio. Visit the [Authenticate to Azure services during local development](/dotnet/azure/sdk/authentication/local-development-dev-accounts) article to learn more.
+- **Azure-hosted apps**: When your app is running in Azure, use a `ManagedIdentityCredential` to discover the user-assigned managed identity configured for your app. `ManagedIdentityCredential` is the standard way to get a managed identity token on most of the compute services in production and ensures only the correct credentials will be used by your app. A user-assigned managed identity can be located using the client ID, the resource ID, or the object ID based on how you configure the `ManagedIdentityCredential`.
+
+### Implement the code
+
+To use Azure `TokenCredential` classes in your code, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
 
 ### [Command Line](#tab/command-line)
 
@@ -23,47 +33,38 @@ Right-click your project in Visual Studio's **Solution Explorer** window and sel
 
 ---
 
-Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. In `Program.cs`, complete the following steps to register a client class and `DefaultAzureCredential`:
+Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered for dependency injection so they can be used throughout your app. In `Program.cs`, complete the following steps to configure a client class for dependency injection and token-based authentication:
 
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
-1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
+1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method
+    - Use `DefaultAzureCredential` when your app is running locally
+    - Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
 
-> [!NOTE]
-> For a user-assigned managed identity, make sure to assign the identity's `clientId` value to the `ManagedIdentityClientId` property on the `DefaultAzureCredentialOptions` object. This enables your code to discover the correct identity to use for authentication while running in azure.
+## [Client ID](#tab/client-id)
 
-For example:
+:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
 
-```c#
-using Microsoft.Extensions.Azure;
-using Azure.Identity;
+An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddBlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"));
-    clientBuilder.UseCredential(new DefaultAzureCredential(
-        new DefaultAzureCredentialOptions()
-        {
-            ManagedIdentityClientId = "<your-client-id>"
-        }));
-});
-```
+:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId":::
 
-An alternative to `UseCredential` is to instantiate `DefaultAzureCredential` directly:
+## [Resource ID](#tab/resource-id)
 
-```c#
-using Azure.Identity;
+:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
 
-builder.Services.AddSingleton<BlobServiceClient>(_ =>
-    new BlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"),
-        new DefaultAzureCredential(new DefaultAzureCredentialOptions()
-        {
-            ManagedIdentityClientId = "<your-client-id>"
-        })));
-```
+An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-When the preceding code runs on your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials. Either approach can be used to authenticate the app to Azure resources during local development.
+:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId":::
 
-When deployed to Azure, this same code can also authenticate your app to other Azure resources. `DefaultAzureCredential` can retrieve environment settings and managed identity configurations to authenticate to other services automatically.
+## [Object ID](#tab/object-id)
+
+:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
+
+An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+
+:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId":::
+
+---
+
+When the preceding code runs on your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials. When deployed to Azure, the `ManagedIdentityCredential` discovers your managed identity configurations to authenticate to other services automatically.

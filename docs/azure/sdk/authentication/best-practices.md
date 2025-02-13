@@ -28,11 +28,11 @@ For example, consider the following `DefaultAzureCredential` configuration in an
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="6,7":::
 
-Replace the preceding code with a `ChainedTokenCredential` implementation that specifies only the necessary credentials:
+Modify the preceding code to select a credential based on the environment in which the app is running:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc" highlight="6-8":::
+:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="11-25":::
 
-In this example, `ManagedIdentityCredential` would be automatically discovered in production, while `VisualStudioCredential` would work in local development environments.
+In this example, only `ManagedIdentityCredential` is used in production. The local development environment's credential needs are then serviced by the sequence of credentials defined in the `else` clause.
 
 ## Reuse credential instances
 

@@ -2,14 +2,18 @@
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
-var clientId = "<user-assigned-client-id>";
-var builder = WebApplication.CreateBuilder(args);
+string clientId = "<user-assigned-client-id>";
+string storageAccountName = "<account-name>";
+string keyVaultName = "<vault-name>";
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 #region snippet_credential_reuse_AspNetCore
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    clientBuilder.AddSecretClient(new Uri("<key-vault-url>"));
-    clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-url>"));
+    clientBuilder.AddSecretClient(
+        new Uri($"https://{keyVaultName}.vault.azure.net"));
+    clientBuilder.AddBlobServiceClient(
+        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
 
     string? clientId = builder.Configuration["UserAssignedClientId"];
     TokenCredential credential;
@@ -21,6 +25,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     }
     else
     {
+        // local development environment
         credential = new ChainedTokenCredential(
             new VisualStudioCredential(),
             new AzureCliCredential(),

@@ -29,6 +29,12 @@ Welcome to what's new in the .NET docs for November 2024. This article lists som
 - [Version requirements for .NET 9 SDK](../core/compatibility/sdk/9.0/version-requirements.md)
 - [Warning emitted when targeting net7.0](../core/compatibility/sdk/9.0/net70-warning.md)
 
+## AI in .NET
+
+### New articles
+
+- [Unified AI building blocks for .NET using Microsoft.Extensions.AI](../ai/ai-extensions.md)
+
 ## .NET fundamentals
 
 ### New articles
@@ -58,12 +64,6 @@ Welcome to what's new in the .NET docs for November 2024. This article lists som
 ### New articles
 
 - [What's new in F# 9](../fsharp/whats-new/fsharp-9.md)
-
-## AI in .NET
-
-### New articles
-
-- [Unified AI building blocks for .NET using Microsoft.Extensions.AI](../ai/ai-extensions.md)
 
 ## Azure SDK for .NET
 

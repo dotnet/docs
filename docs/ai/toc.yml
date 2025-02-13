@@ -55,12 +55,8 @@ items:
   items:
   - name: Authenticate to Azure OpenAI from an Azure hosted app
     href: how-to/app-service-aoai-auth.md
-  - name: Authenticate App Service to a vector database
+  - name: Authenticate to Azure Databases from an Azure hosted app
     href: how-to/app-service-db-auth.md
-  - name: Use Redis with Semantic Kernel
-    href: how-to/use-redis-for-memory.md
-  - name: Use custom & local AI models with Semantic Kernel
-    href: how-to/work-with-local-models.md
   - name: Work with content filtering
     href: how-to/content-filtering.md
 - name: Tutorials

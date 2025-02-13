@@ -26,6 +26,8 @@ items:
             items:
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
+              - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
+                href: cryptography/10.0/version-override.md
           - name: Globalization
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
@@ -1582,6 +1584,8 @@ items:
             items:
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
+              - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
+                href: cryptography/10.0/version-override.md
           - name: .NET 9
             items:
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle

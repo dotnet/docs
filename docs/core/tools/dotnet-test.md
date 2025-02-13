@@ -5,6 +5,12 @@ ms.date: 03/27/2024
 ---
 # dotnet test
 
+## Name
+
+`dotnet test` - .NET test driver used to execute unit tests.
+
+## Description
+
 The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs the tests either with VSTest or with Microsoft Testing Platform (MTP). In order to enable MTP, you need to add a config file named `dotnet.config` using INI format located at the root of the solution or repository.
 
 Some examples of the `dotnet.config` file
@@ -18,10 +24,6 @@ Some examples of the `dotnet.config` file
   [dotnet.test:runner]
   name= "VSTest"
   ```
-
-## Name
-
-`dotnet test` - .NET test driver used to execute unit tests.
 
 ## [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
 

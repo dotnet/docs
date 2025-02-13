@@ -75,7 +75,8 @@ TokenCredential credential;
 
 if (app.Environment.IsProduction() || app.Environment.IsStaging())
 {
-    credential = new ManagedIdentityCredential(clientId: userAssignedClientId);
+    credential = new ManagedIdentityCredential(
+        ManagedIdentityId.FromUserAssignedClientId(userAssignedClientId));
 }
 else
 {

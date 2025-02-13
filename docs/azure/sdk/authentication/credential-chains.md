@@ -63,7 +63,7 @@ The order in which `DefaultAzureCredential` attempts credentials follows.
 
 In its simplest form, you can use the parameterless version of `DefaultAzureCredential` as follows:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="6":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="8":::
 
 > [!TIP]
 > The `UseCredential` method in the preceding code snippet is recommended for use in ASP.NET Core apps. For more information, see [Use the Azure SDK for .NET in ASP.NET Core apps](../aspnetcore-guidance.md#authenticate-using-microsoft-entra-id).
@@ -72,7 +72,7 @@ In its simplest form, you can use the parameterless version of `DefaultAzureCred
 
 To remove a credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="9-10":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="11-12":::
 
 In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `ManagedIdentityCredential`. The modified chain looks like this:
 
@@ -97,7 +97,7 @@ As more `Exclude`-prefixed properties are set to `true` (credential exclusions a
 
 [ChainedTokenCredential](/dotnet/api/azure.identity.chainedtokencredential?view=azure-dotnet&preserve-view=true) is an empty chain to which you add credentials to suit your app's needs. For example:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc" highlight="6-8" :::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc" highlight="8-10" :::
 
 The preceding code sample creates a tailored credential chain comprised of two credentials. The user-assigned managed identity variant of `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 

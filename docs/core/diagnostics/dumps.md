@@ -13,7 +13,7 @@ A dump is a file that contains a snapshot of the process at the time the dump wa
 Dumps can be collected in a variety of ways depending on which platform your app is running on.
 
 > [!NOTE]
-> Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidance in mind.
+> Dumps might contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidance in mind.
 
 * You can use environment variables to configure your application to [collect a dump on a crash](collect-dumps-crash.md).
 

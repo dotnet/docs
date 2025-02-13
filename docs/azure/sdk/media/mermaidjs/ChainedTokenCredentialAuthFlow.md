@@ -21,9 +21,8 @@ ms.date: 08/07/2024
 }%%
 
 flowchart LR;
-    C(Managed Identity):::deployed --> D(Visual Studio):::developer;
+    F(Azure PowerShell):::developer --> D(Visual Studio):::developer;
 
     %% Define styles for credential type boxes
-    classDef deployed fill:#95C37E, stroke:#71AD4C, stroke-width:2px;
     classDef developer fill:#F5AF6F, stroke:#EB7C39, stroke-width:2px;
 ```

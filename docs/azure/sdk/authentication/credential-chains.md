@@ -72,9 +72,9 @@ In its simplest form, you can use the parameterless version of `DefaultAzureCred
 
 To remove a credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="11-12":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="11-13":::
 
-In the preceding code sample, `EnvironmentCredential` and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `ManagedIdentityCredential`. The modified chain looks like this:
+In the preceding code sample, `EnvironmentCredential`, `ManagedIdentityCredential`, and `WorkloadIdentityCredential` are removed from the credential chain. As a result, the first credential to be attempted is `VisualStudioCredential`. The modified chain contains only development-time credentials and looks like this:
 
 :::image type="content" source="../media/mermaidjs/DefaultAzureCredentialExcludes.svg" alt-text="DefaultAzureCredential using Excludes properties":::
 
@@ -99,12 +99,12 @@ As more `Exclude`-prefixed properties are set to `true` (credential exclusions a
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc" highlight="8-10" :::
 
-The preceding code sample creates a tailored credential chain comprised of two credentials. The user-assigned managed identity variant of `ManagedIdentityCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
+The preceding code sample creates a tailored credential chain comprised of two development-time credentials. `AzurePowerShellCredential` is attempted first, followed by `VisualStudioCredential`, if necessary. In graphical form, the chain looks like this:
 
 :::image type="content" source="../media/mermaidjs/ChainedTokenCredentialAuthFlow.svg" alt-text="ChainedTokenCredential":::
 
 > [!TIP]
-> For improved performance, optimize credential ordering in `ChainedTokenCredential` for your production environment. Credentials intended for use in the local development environment should be added last.
+> For improved performance, optimize credential ordering in `ChainedTokenCredential` from most to least used credential.
 
 ## Usage guidance for DefaultAzureCredential
 

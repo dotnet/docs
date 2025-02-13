@@ -44,8 +44,8 @@ builder.Services.AddAzureClients(clientBuilder =>
         new DefaultAzureCredentialOptions
         {
             ExcludeEnvironmentCredential = true,
+            ExcludeManagedIdentityCredential = true,
             ExcludeWorkloadIdentityCredential = true,
-            ManagedIdentityClientId = userAssignedClientId,
         }));
 });
 #endregion snippet_DacExcludes
@@ -59,7 +59,7 @@ builder.Services.AddAzureClients(clientBuilder =>
         new Uri($"https://{storageAccountName}.blob.core.windows.net"));
 
     clientBuilder.UseCredential(new ChainedTokenCredential(
-        new ManagedIdentityCredential(clientId: userAssignedClientId),
+        new AzurePowerShellCredential(),
         new VisualStudioCredential()));
 });
 #endregion snippet_Ctc
@@ -91,17 +91,16 @@ credential = new DefaultAzureCredential(
     {
         ExcludeEnvironmentCredential = true,
         ExcludeWorkloadIdentityCredential = true,
-        ExcludeAzureCliCredential = true,
+        ExcludeManagedIdentityCredential = true,
         ExcludeAzurePowerShellCredential = true,
         ExcludeAzureDeveloperCliCredential = true,
-        ManagedIdentityClientId = userAssignedClientId
     });
 #endregion
 
 #region snippet_CtcEquivalents
 credential = new ChainedTokenCredential(
-    new ManagedIdentityCredential(clientId: userAssignedClientId),
-    new VisualStudioCredential());
+    new VisualStudioCredential(),
+    new AzureCliCredential());
 #endregion
 
 if (app.Environment.IsDevelopment())

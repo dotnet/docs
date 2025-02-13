@@ -3,7 +3,7 @@ title: "Breaking change: System.Windows.Forms.StatusStrip uses System RenderMode
 description: Learn about the breaking change in .NET 10 for Windows Forms where System.Windows.Forms.StatusStrip uses a different default value for the RenderMode property.
 ms.date: 02/12/2025
 ---
-# System.Windows.Forms.StatusStrip uses a different default renderer
+# System.Windows.Forms.StatusStrip uses System RenderMode by default
 
 <xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType> has been updated to use the default renderer.
 

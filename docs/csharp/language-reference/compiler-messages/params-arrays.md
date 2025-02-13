@@ -17,6 +17,7 @@ f1_keywords:
   - "CS9225"
   - "CS9227"
   - "CS9228"
+  - "CS9272"
 helpviewer_keywords:
   - "CS0225"
   - "CS0231"
@@ -33,7 +34,8 @@ helpviewer_keywords:
   - "CS9225"
   - "CS9227"
   - "CS9228"
-ms.date: 05/20/2024
+  - "CS9272"
+ms.date: 02/13/2025
 ---
 # Errors and warnings related to the `params` modifier on method parameters
 
@@ -57,6 +59,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9225**](#other-params-errors): *Constructor leaves required member uninitialized.*
 - [**CS9227**](#parameter-and-argument-type-rules): *Type does not contain a definition for a suitable instance `Add` method.*
 - [**CS9228**](#parameter-and-argument-type-rules): *Non-array params collection type must have an applicable constructor that can be called with no arguments.*
+- [**CS9272**](#other-params-errors): *Implicitly typed lambda parameter cannot have the 'params' modifier.*
 
 ## Method declaration rules
 
@@ -101,6 +104,7 @@ The following errors indicate other issues with using the `params` modifier:
 - **CS9223**: *Creation of params collection results in an infinite chain of invocation of constructor.*
 - **CS9224**: *Method cannot be less visible than the member with params collection.*
 - **CS9225**: *Constructor leaves required member uninitialized.*
+- **CS9272**: *Implicitly typed lambda parameter cannot have the 'params' modifier.*
 
 A method that implements an interface must include the `params` modifier if and only if the interface member has the `params` modifier. Similarly, either both declarations of a `partial` method must include the `params` modifier, or none can include the `params` modifier.
 
@@ -111,6 +115,7 @@ The compiler generates one of the final three errors in the preceding list when 
 - The compiler emits **CS9223** when the code emitted to create the collection also contains a params collection of the same type. Typically, the `Add` method takes a `params` collection of the same type.
 - The compiler emits **CS9224** when the `Create` method for the collection type is less accessible than the method that takes the `params` parameter of the collection type.
 - The compiler emits **CS9225** when the collection type has a required member and the parameterless constructor doesn't initialize that member and have the <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> on the parameterless constructor.
+- The compiler emits **CS9272** when you've used the `params` modifier without type information on a lambda expression. You must specify the types for all lambda expression parameters to use the `params` modifier.
 
 ## See also
 

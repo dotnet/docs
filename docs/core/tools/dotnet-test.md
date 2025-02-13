@@ -25,11 +25,13 @@ Some examples of the `dotnet.config` file
   name= "VSTest"
   ```
 
-## [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
+## VSTest and Microsoft Testing Platform (MTP)
+
+### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-### Synopsis
+#### Synopsis
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
@@ -67,7 +69,7 @@ dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL> | <EXE>]
 dotnet test -h|--help
 ```
 
-### Description
+#### Description
 
 The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution using `VSTest`. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
 
@@ -82,13 +84,13 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. And `xunit.runner.visualstudio` is a test adapter, which allows the xUnit framework to work with the test host.
 
-### Implicit restore
+#### Implicit restore
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 [!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
-### Arguments
+#### Arguments
 
 - **`PROJECT | SOLUTION | DIRECTORY | DLL | EXE`**
 
@@ -100,7 +102,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   If not specified, the effect is the same as using the `DIRECTORY` argument to specify the current directory.
 
-### Options
+#### Options
 
 > [!WARNING]
 > Breaking changes in options:
@@ -270,7 +272,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   For more information, see [Passing RunSettings arguments through command line](https://github.com/Microsoft/vstest-docs/blob/main/docs/RunSettingsArguments.md).
 
-### Examples
+#### Examples
 
 - Run the tests in the project in the current directory:
 
@@ -360,7 +362,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test ~/projects/test1/test1.csproj -p:TestTfmsInParallel=false
   ```
 
-### Filter option details
+#### Filter option details
 
 `--filter <EXPRESSION>`
 
@@ -398,7 +400,7 @@ You can enclose expressions in parenthesis when using conditional operators (for
 
 For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
-### See also
+#### See also
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
@@ -408,7 +410,7 @@ For more information and examples on how to use selective unit test filtering, s
 
 **This article applies to:** ✔️ .NET 10 SDK and later versions
 
-### Synopsis
+#### Synopsis
 
 ```dotnetcli
 dotnet test
@@ -430,20 +432,20 @@ dotnet test
 dotnet test -h|--help
 ```
 
-### Description
+#### Description
 
 TO DO.
 
 > [!WARNING]
 > `dotnet test` doesn't run in an environment where we have test projects using VSTest and Microsoft Testing Platform in the same solution, as the two platforms have different command line options and different features.
 
-### Implicit restore
+#### Implicit restore
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 [!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
 
-### Options
+#### Options
 
 - **`--arch <ARCHITECTURE>`**
 
@@ -518,7 +520,7 @@ TO DO.
 
   Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md).
 
-### Examples
+#### Examples
 
 - Run the tests in the project in the current directory:
 
@@ -574,7 +576,7 @@ TO DO.
   dotnet test --project ./TestProject/TestProject.csproj -p:DefineConstants="DEV"
   ```
 
-### See also
+#### See also
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)

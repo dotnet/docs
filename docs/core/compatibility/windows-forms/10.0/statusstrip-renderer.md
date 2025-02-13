@@ -13,7 +13,7 @@ ms.date: 02/12/2025
 
 ## Previous behavior
 
-Previously, <xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType> used the default renderer. 
+Previously, <xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType> used the default renderer.
 
 ## New behavior
 

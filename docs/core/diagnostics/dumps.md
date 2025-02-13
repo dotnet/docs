@@ -24,7 +24,7 @@ Dumps can be collected in a variety of ways depending on which platform your app
 * If you are running your app in production or you are running it in a distributed manner (several services, replicas), [dotnet-monitor](dotnet-monitor.md) provides support for many common scenarios and ad-hoc diagnostic investigations, including dump collection and egress. It enables dumps to be collected remotely or with triggering conditions.
 
 > [!TIP]
-> For troubleshooting and frequently asked questions about dump collection see [Dumps: FAQ](dumps-faq.md).
+> For troubleshooting and frequently asked questions about dump collection see [Dumps: FAQ](faq-dumps.yml).
 
 ## Analyze dumps
 

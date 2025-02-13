@@ -32,7 +32,7 @@ Modify the preceding code to select a credential based on the environment in whi
 
 :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="9-25":::
 
-In this example, only `ManagedIdentityCredential` is used in production. The local development environment's credential needs are then serviced by the sequence of credentials defined in the `else` clause.
+In this example, only `ManagedIdentityCredential` is used in production. The local development environment's authentication needs are then serviced by the sequence of credentials defined in the `else` clause.
 
 ## Reuse credential instances
 

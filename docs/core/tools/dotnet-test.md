@@ -419,14 +419,17 @@ dotnet test
     [--directory <DIRECTORY_PATH>]
     [--test-modules <EXPRESSION>] 
     [--root-directory <ROOT_PATH>]
+    [--list-tests]
+    [--max-parallel-test-modules <NUMBER>]
     [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>]
-    [-t|--list-tests]
-    [--max-parallel-test-modules <NUMBER>]
-    [--no-ansi]
+    [-f|--framework <FRAMEWORK>]
+    [--os <OS>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>]
     [--no-build]
-    [--no-progress]
     [--no-restore]
+    [--no-ansi]
+    [--no-progress]
     [--output <VERBOSITY_LEVEL>]
     [<args>...]
 
@@ -469,13 +472,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
 
-- **`--arch <ARCHITECTURE>`**
-
-  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
-
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
-
-- **`-t|--list-tests`**
+  - **`-t|--list-tests`**
 
   Lists the discovered tests instead of running the tests.
 
@@ -483,21 +480,37 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies the max number of test modules that can run in parallel.
 
-- **`--no-ansi`**
+[!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
-  Disables outputting ANSI escape characters to screen.
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  The [target framework moniker (TFM)](../../standard/frameworks.md) of the target framework to run tests for. The target framework must also be specified in the project file.
+
+[!INCLUDE [os](../../../includes/cli-os.md)]
+
+- **`-r|--runtime <RUNTIME_IDENTIFIER>`**
+
+  The target runtime to test for.
+
+  Short form `-r` available starting in .NET SDK 7.
 
 - **`--no-build`**
 
   Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
 
-- **`--no-progress`**
-
-  Disables reporting progress to screen.
-
 - **`--no-restore`**
 
   Doesn't execute an implicit restore when running the command.
+
+- **`--no-ansi`**
+
+  Disables outputting ANSI escape characters to screen.
+
+- **`--no-progress`**
+
+  Disables reporting progress to screen.
 
 - **`--output <VERBOSITY_LEVEL>`**
 

@@ -12,14 +12,20 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-url>"));
 
     string? clientId = builder.Configuration["UserAssignedClientId"];
+    TokenCredential credential;
 
-    TokenCredential credential = clientId is not null
-        ? new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedClientId(clientId))
-        : new ChainedTokenCredential(
+    if (builder.Environment.IsProduction() && clientId is not null)
+    {
+        credential = new ManagedIdentityCredential(
+            ManagedIdentityId.FromUserAssignedClientId(clientId));
+    }
+    else
+    {
+        credential = new ChainedTokenCredential(
             new VisualStudioCredential(),
             new AzureCliCredential(),
             new AzurePowerShellCredential());
+    }
 
     clientBuilder.UseCredential(credential);
 });
@@ -36,10 +42,8 @@ ManagedIdentityCredentialOptions miCredentialOptions = new(
             Delay = TimeSpan.FromSeconds(0.5),
         }
     };
-    ChainedTokenCredential tokenChain = new(
-        new ManagedIdentityCredential(miCredentialOptions),
-        new VisualStudioCredential()
-    );
+
+ManagedIdentityCredential miCredential = new(miCredentialOptions);
 #endregion
 
 builder.Services.AddEndpointsApiExplorer();

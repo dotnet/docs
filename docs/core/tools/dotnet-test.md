@@ -15,12 +15,12 @@ The `dotnet test` command builds the solution and runs the tests either with VST
 
 Some examples of the `dotnet.config` file
 
-  ```dotnetcli
+  ```toml
   [dotnet.test:runner]
   name= "MicrosoftTestingPlatform"
   ```
 
-  ```dotnetcli
+  ```toml
   [dotnet.test:runner]
   name= "VSTest"
   ```

@@ -414,18 +414,19 @@ For more information and examples on how to use selective unit test filtering, s
 
 ```dotnetcli
 dotnet test
-    [-a|--arch <ARCHITECTURE>]
-    [-c|--configuration <CONFIGURATION>]
-    [--directory <DIRECTORY_PATH>]
-    [-mptm|--max-parallel-test-modules <NUMBER>]
-    [--no-build]
-    [--no-restore]
     [--project <PROJECT_PATH>]
     [--solution <SOLUTION_PATH>]
+    [--directory <DIRECTORY_PATH>]
+    [--test-modules <EXPRESSION>] 
+    [--root-directory <ROOT_PATH>]
+    [-a|--arch <ARCHITECTURE>]
+    [-c|--configuration <CONFIGURATION>]
     [-t|--list-tests]
-    [--test-modules <EXPRESSION>] [--root-directory <ROOT_PATH>]
+    [--max-parallel-test-modules <NUMBER>]
     [--no-ansi]
+    [--no-build]
     [--no-progress]
+    [--no-restore]
     [--output <VERBOSITY_LEVEL>]
     [<args>...]
 
@@ -437,35 +438,13 @@ dotnet test -h|--help
 With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test related arguments are no longer fixed as they are tied to the registered extensions in the test project(s). Moreover, it supports globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md).
 
 > [!WARNING]
-> `dotnet test` doesn't run in an environment where we have test projects using VSTest and Microsoft Testing Platform in the same solution, as the two platforms have different command line options and different features.
+> `dotnet test` doesn't run in an environment where we have test projects using VSTest and Microsoft Testing Platform in the same solution, as the two platforms are mutually incompatible.
 
 #### Implicit restore
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 #### Options
-
-- **`--arch <ARCHITECTURE>`**
-
-  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
-
-[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
-
-- **`--directory <DIRECTORY_PATH>`**
-
-  Specifies the path to a directory that contains a project or a solution.
-
-- **`--max-parallel-test-modules <NUMBER>`**
-
-  Specifies the max number of test modules that can run in parallel.
-
-- **`--no-build`**
-
-  Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
-
-- **`--no-restore`**
-
-  Doesn't execute an implicit restore when running the command.
 
 - **`--project <PROJECT_PATH>`**
 
@@ -475,9 +454,12 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies the path to the solution.
 
-- **`-t|--list-tests`**
+- **`--directory <DIRECTORY_PATH>`**
 
-  Lists the discovered tests instead of running the tests.
+  Specifies the path to a directory that contains a project or a solution.
+
+> [!NOTE]
+> > You can use only one of the following options at a time: `--project`, `--solution`, or `--directory`. These options cannot be combined.
 
 - **`--test-modules <EXPRESSION>`**
 
@@ -487,13 +469,35 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
 
+- **`--arch <ARCHITECTURE>`**
+
+  Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
+
+[!INCLUDE [configuration](../../../includes/cli-configuration.md)]
+
+- **`-t|--list-tests`**
+
+  Lists the discovered tests instead of running the tests.
+
+- **`--max-parallel-test-modules <NUMBER>`**
+
+  Specifies the max number of test modules that can run in parallel.
+
 - **`--no-ansi`**
 
   Disables outputting ANSI escape characters to screen.
 
+- **`--no-build`**
+
+  Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
+
 - **`--no-progress`**
 
   Disables reporting progress to screen.
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore when running the command.
 
 - **`--output <VERBOSITY_LEVEL>`**
 

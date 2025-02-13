@@ -29,10 +29,7 @@ The previous behavior was [changed in .NET 9](../9.0/statusstrip-renderer.md). T
 
 ## Recommended action
 
-The new behavior is recommended for accessibility reasons. If you want to revert to the previous behavior, set the `RenderMode` property to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType>.
-
-> [!NOTE]
-> The new behavior was reverted to the previous behavior in .NET 10 Preview 1.
+N/A
 
 ## Affected APIs
 

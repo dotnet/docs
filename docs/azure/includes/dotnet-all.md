@@ -359,7 +359,7 @@
 | App Configuration Extension | NuGet [8.0.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.0.0)<br>NuGet [8.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.Functions.Worker/8.1.0-preview) |  |  |
 | App Configuration Provider | NuGet [8.0.0](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.0.0)<br>NuGet [8.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.AppConfiguration.AspNetCore/8.1.0-preview) |  |  |
 | Azure.Communication.Administration | NuGet [1.0.0-beta.3](https://www.nuget.org/packages/Azure.Communication.Administration/1.0.0-beta.3) |  |  |
-| Communication Calling Windows Client | NuGet [1.10.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.10.0)<br>NuGet [1.11.0-beta.1](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.11.0-beta.1) |  |  |
+| Communication Calling Windows Client | NuGet [1.11.0](https://www.nuget.org/packages/Azure.Communication.Calling.WindowsClient/1.11.0) |  |  |
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.3) |  |  |
 | Item Templates NetCore | NuGet [4.0.5051](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5051) |  |  |
@@ -575,8 +575,8 @@
 | Hyak Common - Tracing Etw | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Etw/1.0.2) |  |  |
 | Hyak Common - Tracing Log4Net | NuGet [1.0.2](https://www.nuget.org/packages/Hyak.Common.Tracing.Log4Net/1.0.2) |  |  |
 | Microsoft.Azure.SignalR.Emulator | NuGet [1.6.1](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.6.1)<br>NuGet [1.0.0-preview1-10809](https://www.nuget.org/packages/Microsoft.Azure.SignalR.Emulator/1.0.0-preview1-10809) |  |  |
-| MSBuild | NuGet [0.32.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.32.0) |  |  |
-| ProviderHub Controller | NuGet [0.18.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.18.0) |  |  |
-| ProviderHub Templates | NuGet [1.10.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.10.0) |  |  |
+| MSBuild | NuGet [0.33.0](https://www.nuget.org/packages/Microsoft.TypeSpec.MSBuild/0.33.0) |  |  |
+| ProviderHub Controller | NuGet [0.19.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Controller/0.19.0) |  |  |
+| ProviderHub Templates | NuGet [1.11.0](https://www.nuget.org/packages/Microsoft.TypeSpec.ProviderHub.Templates/1.11.0) |  |  |
 | Template | NuGet [1.0.2-preview1](https://www.nuget.org/packages/Microsoft.Azure.Template/1.0.2-preview1) |  |  |
 | Test HttpRecorder | NuGet [1.13.3](https://www.nuget.org/packages/Microsoft.Azure.Test.HttpRecorder/1.13.3) |  | GitHub [1.13.3](https://github.com/Azure/azure-sdk-for-net/tree/mgmt-legacy/sdk/mgmtcommon/TestFramework/Microsoft.Azure.Test.HttpRecorder) |

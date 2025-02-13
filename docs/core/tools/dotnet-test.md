@@ -443,8 +443,6 @@ TO DO.
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
-[!INCLUDE [cli-advertising-manifests](../../../includes/cli-advertising-manifests.md)]
-
 #### Options
 
 - **`--arch <ARCHITECTURE>`**

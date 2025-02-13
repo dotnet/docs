@@ -434,7 +434,7 @@ dotnet test -h|--help
 
 #### Description
 
-With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test related arguments are no longer fixed as they are tied to the registered extensions in the test project(s). Moreover, it supports globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md)
+With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test related arguments are no longer fixed as they are tied to the registered extensions in the test project(s). Moreover, it supports globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md).
 
 > [!WARNING]
 > `dotnet test` doesn't run in an environment where we have test projects using VSTest and Microsoft Testing Platform in the same solution, as the two platforms have different command line options and different features.

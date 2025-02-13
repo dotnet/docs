@@ -5,7 +5,19 @@ ms.date: 03/27/2024
 ---
 # dotnet test
 
-Add description how to enable vstest or mtp.
+The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs the tests either with VSTest or with Microsoft Testing Platform (MTP). In order to enable MTP, you need to add a config file named `dotnet.config` using INI format located at the root of the solution or repository.
+
+-  Some examples of the `dotnet.config` file
+
+  ```dotnetcli
+  [dotnet.test:runner]
+  name= "MicrosoftTestingPlatform"
+  ```
+
+  ```dotnetcli
+  [dotnet.test:runner]
+  name= "VSTest"
+  ```
 
 ## Name
 
@@ -419,6 +431,9 @@ dotnet test -h|--help
 ### Description
 
 TO DO.
+
+> [!NOTE]
+> `dotnet test` doesn't run in an environment where we have test projects using VSTest and Microsoft Testing Platform in the same solution, as the two platforms have different command line options and different features.
 
 ### Options
 

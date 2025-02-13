@@ -582,5 +582,5 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md)
+- [Microsoft.Testing.Platform](../../../docs/core/testing/unit-testing-platform-intro.md)
 - [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md)

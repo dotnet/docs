@@ -2,7 +2,7 @@
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
 ms.topic: conceptual
-ms.date: 01/29/2025
+ms.date: 02/13/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -22,10 +22,7 @@ For example, consider the following hypothetical sequence of events:
 1. `DefaultAzureCredential` skips the failed `ManagedIdentityCredential` and searches for the next available credential, which is `AzureCliCredential`.
 1. The application starts utilizing the Azure CLI credentials rather than the managed identity, which may fail or result in unexpected elevation or reduction of privileges.
 
-To prevent these types of subtle issues or silent failures in production apps, strongly consider moving from `DefaultAzureCredential` to one of the following deterministic solutions:
-
-- A specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
-- A pared-down `ChainedTokenCredential` implementation optimized for the Azure environment in which your app runs. `ChainedTokenCredential` essentially creates a specific allowlist of acceptable credential options, such as `ManagedIdentity` for production and `VisualStudioCredential` for development.
+To prevent these types of subtle issues or silent failures in production apps, strongly consider moving from `DefaultAzureCredential` to a specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
 
 For example, consider the following `DefaultAzureCredential` configuration in an ASP.NET Core project:
 

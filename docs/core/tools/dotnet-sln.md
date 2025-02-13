@@ -122,7 +122,7 @@ dotnet sln add [-h|--help]
 
 ### `remove`
 
-Removes a project or multiple projects from the solution file.
+Removes one or more projects from the solution file.
 
 #### Synopsis
 
@@ -131,98 +131,80 @@ dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 ```
 
+#### Description
+The `dotnet sln remove` command removes one or more projects from a `.sln` (solution) file.  
+This command updates the solution file but **does not delete** the project files from disk.
+
 #### Arguments
 
-- **`SOLUTION_FILE`**
+- **`SOLUTION_FILE`**  
+  The solution file to modify. If unspecified, the command searches for a `.sln` file in the current directory.  
+  If multiple solution files exist, an error is returned.
 
-  The solution file to use. If it is unspecified, the command searches the current directory for one and fails if there are multiple solution files.
-
-- **`PROJECT_PATH`**
-
-  The path to the project or projects to remove from the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+- **`PROJECT_PATH`**  
+  One or more paths to the project files (`.csproj` or `.vbproj`) that should be removed from the solution.  
+  Unix/Linux shell [globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported.
 
 #### Options
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
-## Examples
+---
 
-- List the projects in a solution:
+### **Examples**
 
-  ```dotnetcli
-  dotnet sln todo.sln list
-  ```
+#### **Remove a single project from a solution**
+```dotnetcli
+dotnet sln todo.sln remove todo-app/todo-app.csproj
+```
+**Expected Output:**
+```
+Removed project(s) from solution file.
+```
 
-- Add a C# project to a solution:
+#### **Remove multiple projects from a solution**
+```dotnetcli
+dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
+```
+**Expected Output:**
+```
+Removed project(s) from solution file.
+```
 
-  ```dotnetcli
-  dotnet sln add todo-app/todo-app.csproj
-  ```
+#### **Remove a project when a solution file is automatically detected**
+```dotnetcli
+dotnet sln remove todo-app/todo-app.csproj
+```
+**Expected Output:**
+```
+Removed project(s) from solution file.
+```
 
-- Remove a C# project from a solution:
+#### **Remove multiple projects using a globbing pattern (Unix/Linux only)**
+```dotnetcli
+dotnet sln todo.sln remove **/*.csproj
+```
 
-  ```dotnetcli
-  dotnet sln remove todo-app/todo-app.csproj
-  ```
+#### **Remove multiple projects using a globbing pattern (Windows PowerShell only)**
+```dotnetcli
+dotnet sln todo.sln remove (ls -r **/*.csproj)
+```
 
-- Add multiple C# projects to the root of a solution:
+---
 
-  ```dotnetcli
-  dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj --in-root
-  ```
+### **Notes**
+- If the solution file **does not exist**, the command will fail with an error.  
+- If a specified project is **not part of the solution**, the command will display a message but continue execution.  
+- **This command does not delete** the project files from disk; it only removes them from the solution file.  
+- If a solution file is not explicitly provided, `dotnet sln remove` will attempt to find one in the current directory.  
 
-- Add multiple C# projects to a solution:
+---
 
-  ```dotnetcli
-  dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj
-  ```
+### **See Also**
+- [`dotnet sln`](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-sln)  
+- [`dotnet sln add`](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-sln#add)  
+- [Working with .NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/)  
+```
 
-- Remove multiple C# projects from a solution:
-
-  ```dotnetcli
-  dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
-  ```
-
-- Add multiple C# projects to a solution using a globbing pattern (Unix/Linux only):
-
-  ```dotnetcli
-  dotnet sln todo.sln add **/*.csproj
-  ```
-
-- Add multiple C# projects to a solution using a globbing pattern (Windows PowerShell only):
-
-  ```dotnetcli
-  dotnet sln todo.sln add (ls -r **/*.csproj)
-  ```
-
-- Remove multiple C# projects from a solution using a globbing pattern (Unix/Linux only):
-
-  ```dotnetcli
-  dotnet sln todo.sln remove **/*.csproj
-  ```
-
-- Remove multiple C# projects from a solution using a globbing pattern (Windows PowerShell only):
-
-  ```dotnetcli
-  dotnet sln todo.sln remove (ls -r **/*.csproj)
-  ```
-
-- Create a solution, a console app, and two class libraries. Add the projects to the solution, and use the `--solution-folder` option of `dotnet sln` to organize the class libraries into a solution folder.
-
-  ```dotnetcli
-  dotnet new sln -n mysolution
-  dotnet new console -o myapp
-  dotnet new classlib -o mylib1
-  dotnet new classlib -o mylib2
-  dotnet sln mysolution.sln add myapp\myapp.csproj
-  dotnet sln mysolution.sln add mylib1\mylib1.csproj --solution-folder mylibs
-  dotnet sln mysolution.sln add mylib2\mylib2.csproj --solution-folder mylibs
-  ```
-
-  The following screenshot shows the result in Visual Studio 2019 **Solution Explorer**:
-
-  :::image type="content" source="media/dotnet-sln/dotnet-sln-solution-folder.png" alt-text="Solution Explorer showing class library projects grouped into a solution folder.":::
-
-## See also
 
 - [dotnet/sdk GitHub repo](https://github.com/dotnet/sdk) (.NET CLI source)

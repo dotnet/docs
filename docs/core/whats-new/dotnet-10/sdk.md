@@ -8,4 +8,4 @@ ms.topic: whats-new
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features in the .NET SDK and tooling for .NET 10.
+This article describes new features in the .NET SDK and tooling for .NET 10. It has been updated for Preview 1.

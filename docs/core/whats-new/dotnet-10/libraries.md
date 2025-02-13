@@ -8,4 +8,4 @@ ms.topic: whats-new
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10.
+This article describes new features in the .NET libraries for .NET 10. It has been updated for Preview 1.

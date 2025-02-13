@@ -1,6 +1,6 @@
 ---
 title: What's new in .NET 10
-description: Learn about the new .NET features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
+description: Learn about the new features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
 ms.date: 02/12/2025
 ms.topic: whats-new
@@ -8,7 +8,7 @@ ms.topic: whats-new
 
 # What's new in .NET 10
 
-Learn about the new features in .NET 10 and find links to further documentation.
+Learn about the new features in .NET 10 and find links to further documentation. This page has been updated for Preview 1.
 
 TODO - Add a brief overview of the new features in .NET 10.
 

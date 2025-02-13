@@ -115,8 +115,8 @@ The following table shows the default target platform values (TPV) for each .NET
 
 | .NET version | Android | iOS  | Mac Catalyst | macOS | tvOS | Tizen | Windows |
 |--------------|--------:|-----:|-------------:|------:|-----:|------:|--------:|
-| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |   7.0 |    10.0 |
-| .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |   7.0 |    10.0 |
+| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |  10.0 |    10.0 |
+| .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |  10.0 |    10.0 |
 
 > [!NOTE]
 > On Apple platforms (iOS, macOS, tvOS, and Mac Catalyst) in .NET 8 and earlier,

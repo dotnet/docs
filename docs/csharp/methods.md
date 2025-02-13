@@ -163,13 +163,15 @@ You can also choose to define your methods with a statement body and a `return` 
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet43":::
 
-To use a value returned from a method, the calling method can use the method call itself anywhere a value of the same type would be sufficient. You can also assign the return value to a variable. For example, the following three code examples accomplish the same goal:
+To use a value returned from a method, you can assign the return value to a variable:
+
+:::code language="csharp" source="snippets/methods/return44.cs" id="snippet47":::
+
+The calling method can also use the method call itself anywhere a value of the same type would be sufficient. For example, the following two code examples accomplish the same goal:
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet45":::
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet46":::
-
-:::code language="csharp" source="snippets/methods/return44.cs" id="snippet47":::
 
 Sometimes, you want your method to return more than a single value. You use *tuple types* and *tuple literals* to return multiple values. The tuple type defines the data types of the tuple's elements. Tuple literals provide the actual values of the returned tuple. In the following example, `(string, string, string, int)` defines the tuple type returned by the `GetPersonalInfo` method. The expression `(per.FirstName, per.MiddleName, per.LastName, per.Age)` is the tuple literal; the method returns the first, middle, and family name, along with the age, of a `PersonInfo` object.
 

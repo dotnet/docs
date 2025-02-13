@@ -80,7 +80,7 @@ The semantic relationships between the tokens can be analyzed by using these tok
 
 After it's trained, a model can calculate an embedding for text that contains multiple tokens. The model tokenizes the text, then calculates an overall embeddings value based on the learned embeddings of the individual tokens. This technique can be used for semantic document searches or adding [vector stores](/semantic-kernel/concepts/vector-store-connectors/) to an AI.
 
-During output generation, the model predicts a vector value for the next token in the sequence. The model then selects the next token from it's vocabulary based on this vector value. In practice, the model calculates multiple vectors by using various elements of the previous tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
+During output generation, the model predicts a vector value for the next token in the sequence. The model then selects the next token from its vocabulary based on this vector value. In practice, the model calculates multiple vectors by using various elements of the previous tokens' embeddings. The model then evaluates all potential tokens from these vectors and selects the most probable one to continue the sequence.
 
 Output generation is an iterative operation. The model appends the predicted token to the sequence so far and uses that as the input for the next iteration, building the final output one token at a time.
 

@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Routing Introduction"
 title: "Routing Introduction"
+description: "Learn more about: Routing Introduction"
 ms.date: "03/30/2017"
-ms.assetid: bf6ceb38-6622-433b-9ee7-f79bc93497a1
 ---
 # Routing Introduction
 
@@ -24,10 +23,10 @@ The routing logic used to perform content-based routing of messages is defined b
 
 While it may seem that you should start your configuration by defining the routing logic you will use, your first step should actually be to determine the shape of the endpoints you will be routing messages to. The Routing Service uses contracts that define the shape of the channels used to receive and send messages, and therefore the shape of the input channel must match that of the output channel.  For example, if you are routing to endpoints that use the request-reply channel shape, then you must use a compatible contract on the inbound endpoints, such as the <xref:System.ServiceModel.Routing.IRequestReplyRouter>.
 
-This means that if your destination endpoints use contracts with multiple communication patterns (such as mixing one-way and two-way operations,) you cannot create a single service endpoint that can receive and route messages to all of them. You must determine which endpoints have compatible shapes and define one or more service endpoints that will be used to receive messages to be routed to the destination endpoints.
+This means that if your destination endpoints use contracts with multiple communication patterns (such as mixing one-way and two-way operations), you cannot create a single service endpoint that can receive and route messages to all of them. You must determine which endpoints have compatible shapes and define one or more service endpoints that will be used to receive messages to be routed to the destination endpoints.
 
 > [!NOTE]
-> When working with contracts that specify multiple communication patterns (such as a mix of one-way and two-way operations,) a workaround is to use a duplex contract at the Routing Service such as <xref:System.ServiceModel.Routing.IDuplexSessionRouter>. However this means that the binding must be capable of duplex communication, which may not be possible for all scenarios. In scenarios where this is not possible, factoring the communication into multiple endpoints or modifying the application may be necessary.
+> When working with contracts that specify multiple communication patterns (such as a mix of one-way and two-way operations), a workaround is to use a duplex contract at the Routing Service such as <xref:System.ServiceModel.Routing.IDuplexSessionRouter>. However this means that the binding must be capable of duplex communication, which may not be possible for all scenarios. In scenarios where this is not possible, factoring the communication into multiple endpoints or modifying the application may be necessary.
 
 For more information about routing contracts, see [Routing Contracts](routing-contracts.md).
 
@@ -155,7 +154,7 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), endpointList);
 
 While many Routing Service configurations use exclusive filter logic that routes messages to only one specific endpoint, you may need to route a given message to multiple destination endpoints. To multicast a message to multiple destinations, the following conditions must be true:
 
-- The channel shape must not be request-reply (though may be one-way or duplex,) because only one reply can be received by the client application in response to the request.
+- The channel shape must not be request-reply (though may be one-way or duplex), because only one reply can be received by the client application in response to the request.
 
 - Multiple filters must return `true` when evaluating the message.
 

@@ -25,7 +25,7 @@ jobs:
 
     - name: Profanity filter
       if: ${{ github.actor != 'dependabot[bot]' && github.actor != 'github-actions[bot]'  }}
-      uses: IEvangelist/profanity-filter@16d90c28e18f1c583c067be61506d24e13d18cb8 # main
+      uses: IEvangelist/profanity-filter@856d4ea30f1889cf9bbca70604358d78c543df70 # main
       id: profanity-filter
       with:
         token: ${{ secrets.GITHUB_TOKEN }}

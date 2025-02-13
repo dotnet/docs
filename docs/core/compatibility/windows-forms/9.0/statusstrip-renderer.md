@@ -13,7 +13,7 @@ ms.date: 02/12/2025
 
 ## Previous behavior
 
-Previously, the `StatusStrip`'s `RenderMode` property was set to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType> by default.
+Previously, the `StatusStrip.RenderMode` property was set to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType> by default.
 
 ## New behavior
 

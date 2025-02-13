@@ -5,7 +5,7 @@ ms.date: 02/12/2025
 ---
 # System.Windows.Forms.StatusStrip uses System RenderMode by default
 
-<xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType> has been updated to use the default renderer.
+<xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType> has been updated to use the system renderer.
 
 ## Version introduced
 
@@ -17,7 +17,7 @@ Previously, <xref:System.Windows.Forms.StatusStrip?displayProperty=nameWithType>
 
 ## New behavior
 
-The `StatusStrip`'s `RenderMode` property is set to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType> by default. You might observe minor changes to the appearance of the `StatusStrip`.
+The `StatusStrip.RenderMode` property is set to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType> by default. You might observe minor changes to the appearance of the `StatusStrip`.
 
 ## Change category
 

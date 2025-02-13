@@ -1,7 +1,7 @@
 ---
 title: "The lambda operator - The `=>` operator is used to define a lambda expression"
 description: "The C# => operator defines lambda expressions and expression bodied members. Lambda expressions define a block of code used as data."
-ms.date: 11/28/2022
+ms.date: 02/13/2025
 f1_keywords: 
   - "=>_CSharpKeyword"
 helpviewer_keywords: 
@@ -19,15 +19,15 @@ In [lambda expressions](lambda-expressions.md), the lambda operator `=>` separat
 
 The following example uses the [LINQ](/dotnet/csharp/linq/) feature with method syntax to demonstrate the usage of lambda expressions:
 
-[!code-csharp-interactive[infer types of input variables](snippets/shared/LambdaOperator.cs#InferredTypes)]
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="InferredTypes":::
 
-Input parameters of a lambda expression are strongly typed at compile time. When the compiler can infer the types of input parameters, like in the preceding example, you may omit type declarations. If you need to specify the type of input parameters, you must do that for each parameter, as the following example shows:
+Input parameters of a lambda expression are strongly typed at compile time. When the compiler can infer the types of input parameters, like in the preceding example, you can omit type declarations. If you need to specify the type of input parameters, you must do that for each parameter, as the following example shows:
 
-[!code-csharp-interactive[specify types of input variables](snippets/shared/LambdaOperator.cs#ExplicitTypes)]
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="ExplicitTypes":::
 
 The following example shows how to define a lambda expression without input parameters:
 
-[!code-csharp-interactive[without input variables](snippets/shared/LambdaOperator.cs#WithoutInput)]
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/LambdaOperator.cs" id="WithoutInput":::
 
 For more information, see [Lambda expressions](lambda-expressions.md).
 
@@ -39,7 +39,7 @@ An expression body definition has the following general syntax:
 member => expression;
 ```
 
-where `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member:
+Where `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member:
 
 - Has a `void` return type or
 - Is a:

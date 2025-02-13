@@ -44,4 +44,24 @@ You can find the list of implicit span conversions in the article on [built-in t
 
 Beginning with C# 14, the argument to `nameof` can be an unbound generic type. For example, `nameof(List<>)` evaluates to `List`. In earlier versions of C#, only closed generic types, such as `List<int>`, could be used to produce `List`.
 
+## Simple lambda parameters with modifiers
+
+Beginning with C# 14, you can add parameter modifiers, such as `scoped`, `ref`, `in`, `out`, or `ref readonly` to lambda expression parameters without specifying the parameter type:
+
+```csharp
+delegate bool TryParse<T>(string text, out T result);
+// ...
+TryParse<int> parse1 = (text, out result) => Int32.TryParse(text, out result);
+```
+
+Previously, adding any modifiers was allowed only when the parameter declarations included the types for the parameters. The preceding declaration would require typs on all parameters:
+
+```csharp
+TryParse<int> parse2 = (string text, out int result) => Int32.TryParse(text, out result);
+```
+
+The `params` modifier still requires an explicitly typed parameter list.
+
+You can read more about these changes in the article on [lambda expressions](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) in the C# language reference.
+
 <!-- Add link to What's new in .NET 10 once it's published -->

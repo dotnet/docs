@@ -462,7 +462,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   Specifies the path to a directory that contains a project or a solution.
 
 > [!NOTE]
-> > You can use only one of the following options at a time: `--project`, `--solution`, or `--directory`. These options cannot be combined.
+> You can use only one of the following options at a time: `--project`, `--solution`, or `--directory`. These options cannot be combined.
 
 - **`--test-modules <EXPRESSION>`**
 

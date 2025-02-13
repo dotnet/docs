@@ -26,11 +26,11 @@ To prevent these types of subtle issues or silent failures in production apps, r
 
 For example, consider the following `DefaultAzureCredential` configuration in an ASP.NET Core project:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="6,7":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="8-9":::
 
 Modify the preceding code to select a credential based on the environment in which the app is running:
 
-:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="11-25":::
+:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="9-25":::
 
 In this example, only `ManagedIdentityCredential` is used in production. The local development environment's credential needs are then serviced by the sequence of credentials defined in the `else` clause.
 
@@ -47,7 +47,7 @@ The recommended credential reuse strategy differs by .NET application type.
 
 Implement credential reuse through the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method of `Microsoft.Extensions.Azure`. For example, imagine an ASP.NET Core app hosted on Azure App Service. The `ASPNETCORE_ENVIRONMENT` and `UserAssignedClientId` environment variables are set to `Production` and the user-assigned managed identity's client ID, respectively. If the environment is production and the client ID is defined, `ManagedIdentityCredential` will be used to authenticate the Key Vault Secrets and Blob Storage clients. Otherwise, a chained sequence of development-time credentials is used.
 
-:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="22":::
+:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="25":::
 
 For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 

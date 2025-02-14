@@ -21,7 +21,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     }
     else
     {
-        // Running locally on dev machine - do NOT use in production or outside of local dev
+        // Running locally on dev machine - DO NOT use in production or outside of local dev
         credential = new DefaultAzureCredential();
     }
 
@@ -39,7 +39,7 @@ if (builder.Environment.IsProduction())
 }
 else
 {
-    // Running locally on dev machine - do NOT use in production or outside of local dev
+    // Running locally on dev machine - DO NOT use in production or outside of local dev
     credential = new DefaultAzureCredential();
 }
 

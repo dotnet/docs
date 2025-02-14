@@ -6,20 +6,20 @@ ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 08/02/2024
 ---
 
-# Authenticate .NET apps to Azure services using the Azure Identity library overview
+# Authenticate .NET apps to Azure services using the Azure Identity library
 
-Apps must authenticate to Azure in order to access Azure services and resources. This requirement applies whether the app is deployed to Azure, hosted on-premises, or running locally on a developer workstation. The sections ahead describe the recommended approaches to authenticate an app to Azure across different environments when using the Azure SDK client libraries.
+Apps can use the Azure Identity library to authenticate to Microsoft Entra ID, which allows the apps to access Azure services and resources. This authentication requirement applies whether the app is deployed to Azure, hosted on-premises, or running locally on a developer workstation. The sections ahead describe the recommended approaches to authenticate an app to Microsoft Entra ID across different environments when using the Azure SDK client libraries.
 
 ## Recommended approach for app authentication
 
-Token-based authentication is the recommended approach for authenticating apps to Azure, instead of using connection strings or key-based options. The [Azure Identity library](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true) provides classes that support token-based authentication and allow apps to seamlessly authenticate to Azure resources whether the app running locally, hosted on Azure, or hosted on an on-premises server.
+Token-based authentication via Microsoft Entra ID is the recommended approach for authenticating apps to Azure, instead of using connection strings or key-based options. The [Azure Identity library](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true) provides classes that support token-based authentication and allow apps to authenticate to Azure resources whether the app runs locally, on Azure, or on an on-premises server.
 
 ### Advantages of token-based authentication
 
 Token-based authentication offers the following advantages over connection strings:
 
 - Token-based authentication ensures only the specific apps intended to access the Azure resource are able to do so, whereas anyone or any app with a connection string can connect to an Azure resource.
-- Token-based authentication allows you to further limit Azure resource access to only the specific permissions needed by the app. This follows the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In contrast, a connection string grants full rights to the Azure resource.
+- Token-based authentication allows you to further limit Azure resource access to only the specific permissions needed by the app. This follows the [principle of least privilege](https://wikipedia.org/wiki/Principle_of_least_privilege). In contrast, a connection string grants full rights to the Azure resource.
 - When using a [managed identity](/entra/identity/managed-identities-azure-resources/overview) for token-based authentication, Azure handles administrative functions for you, so you don't have to worry about tasks like securing or rotating secrets. This makes the app more secure because there's no connection string or application secret that can be compromised.
 - The [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package acquires and manages Microsoft Entra tokens for you. This makes using token-based authentication as easy to use as a connection string.
 
@@ -27,7 +27,7 @@ Use of connection strings should be limited to scenarios where token-based authe
 
 ## Authentication across different environments
 
-The specific type of token-based authentication an app should use to authenticate to Azure resources depends on where the app runs. The following diagram provides guidances for different scenarios and environments:
+The specific type of token-based authentication an app should use to authenticate to Azure resources depends on where the app runs. The following diagram provides guidance for different scenarios and environments:
 
 :::image type="content" source="../media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
 
@@ -43,7 +43,7 @@ When your app is hosted on Azure, it can use managed identities to authenticate 
 
 #### Use a user-assigned managed identity
 
-A user-assigned managed identity is created as a standalone Azure resource. It can be assigned to one or more Azure resources, allowing those resources to share the same identity and permissions. To authenticate using a user-assigned managed identity, you need to create the identity, assign it to your Azure resource, and then configure your app to use this identity for authentication.
+A user-assigned managed identity is created as a standalone Azure resource. It can be assigned to one or more Azure resources, allowing those resources to share the same identity and permissions. To authenticate using a user-assigned managed identity, create the identity, assign it to your Azure resource, and then configure your app to use this identity for authentication.
 
 > [!div class="nextstepaction"]
 > [Authenticate using a user-assigned managed identity](user-assigned-managed-identity.md)
@@ -61,7 +61,7 @@ During local development, you can authenticate to Azure resources using your dev
 
 #### Use developer credentials
 
-You can use your own Azure credentials to authenticate to Azure resources during local development. This is typically done using the Azure CLI or Visual Studio, which can provide your app with the necessary tokens to access Azure services. This method is convenient but should only be used for development purposes.
+You can use your own Azure credentials to authenticate to Azure resources during local development. This is typically done using a development tool, such as Azure CLI or Visual Studio, which can provide your app with the necessary tokens to access Azure services. This method is convenient but should only be used for development purposes.
 
 > [!div class="nextstepaction"]
 > [Authenticate locally using developer credentials](local-development-dev-accounts.md)

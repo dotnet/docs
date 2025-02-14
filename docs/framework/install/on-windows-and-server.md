@@ -183,3 +183,9 @@ The following list is a link to each version of .NET Framework that can be downl
 - [.NET Framework 3.5 Service Pack 1](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1)
 
 Downloads of other versions of .NET Framework are no longer provided by Microsoft.
+
+## See also
+
+- [Install the .NET Framework for developers](guide-for-developers.md)
+- [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md)
+- [Versions and dependencies](versions-and-dependencies.md)

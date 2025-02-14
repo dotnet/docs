@@ -15,12 +15,12 @@ items:
   items:
   - name: Overview
     href: install/index.md
+  - name: Install on Windows and Windows Server
+    href: install/on-windows-and-server.md    
   - name: For developers
     href: install/guide-for-developers.md
   - name: Versions and dependencies
     href: install/versions-and-dependencies.md
-  - name: Install on Windows and Windows Server
-    href: install/on-windows-11.md
   - name: Find installed versions
     href: install/how-to-determine-which-versions-are-installed.md
   - name: Find installed updates
@@ -35,8 +35,6 @@ items:
       href: install/application-not-started.md
   - name: .NET Framework 3.5
     href: install/dotnet-35-windows.md
-  - name: .NET Framework 1.1
-    href: install/run-net-framework-1-1-apps.md
 - name: Migration guide
   items:
   - name: Overview

@@ -8,7 +8,7 @@ ms.date: 02/10/2025
 You might need .NET Framework 3.5 to run an app on Windows or Windows Server. Windows and Windows Server come with .NET Framework 4, which doesn't support apps built with .NET Framework 1.1 through 3.5. To run these apps, install .NET Framework 3.5. If you're a developer that requires .NET Framework 3.5, see the section [Developers and .NET Framework 3.5](#developers-and-net-framework-35).
 
 > [!TIP]
-> You might be able to use a config file to force the app to run on .NET Framework 4. For more information, see [TODO]().
+> You might be able to use a config file to force the app to run on .NET Framework 4. For more information, see [Migration: Retarget or Recompile](../migration-guide/migrating-from-the-net-framework-1-1.md#retarget-or-recompile).
 
 ## Install .NET Framework 3.5 on demand
 
@@ -64,3 +64,10 @@ If you're a developer that maintains existing software and you need to use .NET 
 
 1. Install .NET Framework 3.5 on your system using the instructions in this article.
 1. Enable **".NET Framework 3.5 Development Tools** in Visual Studio. It's listed in the **Individual Components** page.
+
+## See also
+
+- [Install .NET Framework on Windows and Windows Server](on-windows-and-server.md)
+- [Install the .NET Framework for developers](guide-for-developers.md)
+- [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md)
+- [Versions and dependencies](versions-and-dependencies.md)

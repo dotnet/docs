@@ -84,7 +84,7 @@ void registerUsingClientId(WebApplicationBuilder builder)
     {
         // Managed identity token credential discovered when running in Azure environments
         credential = new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedClientId(new ResourceIdentifier("client-id")));
+            ManagedIdentityId.FromUserAssignedClientId(("<client-id>"));
     }
 
     builder.Services.AddSingleton<BlobServiceClient>(_ =>
@@ -111,7 +111,7 @@ void registerUsingObjectId(WebApplicationBuilder builder)
         {
             // Managed identity token credential discovered when running in Azure environments
             credential = new ManagedIdentityCredential(
-                ManagedIdentityId.FromUserAssignedObjectId(new ResourceIdentifier("object-id")));
+                ManagedIdentityId.FromUserAssignedObjectId("<object-id>"));
         }
 
         clientBuilder.AddBlobServiceClient(
@@ -181,7 +181,7 @@ void registerUsingResourceId(WebApplicationBuilder builder)
     {
         // Managed identity token credential discovered when running in Azure environments
         credential = new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedResourceId(new ResourceIdentifier("resource-id")));
+            ManagedIdentityId.FromUserAssignedResourceId(new ResourceIdentifier("<resource-id>")));
     }
 
     builder.Services.AddSingleton<BlobServiceClient>(_ =>

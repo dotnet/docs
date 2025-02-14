@@ -15,11 +15,11 @@ builder.Services.AddAzureClients(clientBuilder =>
     clientBuilder.AddBlobServiceClient(
         new Uri($"https://{storageAccountName}.blob.core.windows.net"));
 
-    string? clientId = builder.Configuration["UserAssignedClientId"];
     TokenCredential credential;
 
-    if (builder.Environment.IsProduction() && clientId is not null)
+    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
     {
+        string? clientId = builder.Configuration["UserAssignedClientId"];
         credential = new ManagedIdentityCredential(
             ManagedIdentityId.FromUserAssignedClientId(clientId));
     }

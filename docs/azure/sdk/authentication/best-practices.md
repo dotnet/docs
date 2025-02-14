@@ -2,7 +2,7 @@
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
 ms.topic: conceptual
-ms.date: 02/13/2025
+ms.date: 02/14/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -45,11 +45,13 @@ The recommended credential reuse strategy differs by .NET application type.
 
 # [ASP.NET Core](#tab/aspdotnet)
 
-Implement credential reuse through the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method of `Microsoft.Extensions.Azure`. For example, imagine an ASP.NET Core app hosted on Azure App Service. The `ASPNETCORE_ENVIRONMENT` and `UserAssignedClientId` environment variables are set to `Production` and the user-assigned managed identity's client ID, respectively. If the environment is production and the client ID is defined, `ManagedIdentityCredential` will be used to authenticate the Key Vault Secrets and Blob Storage clients. Otherwise, a chained sequence of development-time credentials is used.
+To implement credential reuse, use the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method from `Microsoft.Extensions.Azure`. Consider an ASP.NET Core app hosted on Azure App Service in both production and staging environments. Environment variable `ASPNETCORE_ENVIRONMENT` is set to either `Production` or `Staging` to differentiate between these two non-development environments. In both production and staging, the user-assigned variant of `ManagedIdentityCredential` is used to authenticate the Key Vault Secrets and Blob Storage clients.
+
+When the app runs on a local development machine, where `ASPNETCORE_ENVIRONMENT` is set to `Development`, a chained sequence of developer tool credentials is used instead. This approach ensures environment-appropriate credentials are used, enhancing security and simplifying credential management.
 
 :::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="25":::
 
-For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
+For information on this approach in an ASP.NET Core app, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 
 # [Other](#tab/other)
 

@@ -12,15 +12,15 @@ Apps must authenticate to Azure in order to access Azure services and resources.
 
 ## Recommended approach for app authentication
 
-Token-based authentication is the recommended approach for authenticating apps to Azure, instead of using connection strings or key-based options. The [Azure Identity library](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true) provides classes that support token-based authentication and allow apps to seamlessly authenticate to Azure resources whether the app is in local development, deployed to Azure, or deployed to an on-premises server.
+Token-based authentication is the recommended approach for authenticating apps to Azure, instead of using connection strings or key-based options. The [Azure Identity library](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true) provides classes that support token-based authentication and allow apps to seamlessly authenticate to Azure resources whether the app running locally, hosted on Azure, or hosted on an on-premises server.
 
 ### Advantages of token-based authentication
 
-Token-based authentication offers the following advantages over authenticating with connection strings:
+Token-based authentication offers the following advantages over connection strings:
 
-- Token-based authentication methods allows you to establish the specific permissions needed by the app on the Azure resource. This follows the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In contrast, a connection string grants full rights to the Azure resource.
-- Token-based authentication methods scope access to the resource to only the app(s) intended to access the resource, whereas anyone or any app with a connection string can connect to an Azure resource.
-- When using a [managed identity](/entra/identity/managed-identities-azure-resources/overview) for token-based authentication, Azure handles administrative identity tasks for you, so you don't have to worry about tasks like securing or rotating secrets. This makes the app more secure because there's no connection string or application secret that can be compromised.
+- Token-based authentication ensures only the specific apps intended to access the Azure resource are able to do so, whereas anyone or any app with a connection string can connect to an Azure resource.
+- Token-based authentication allows you to further limit Azure resource access to only the specific permissions needed by the app. This follows the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In contrast, a connection string grants full rights to the Azure resource.
+- When using a [managed identity](/entra/identity/managed-identities-azure-resources/overview) for token-based authentication, Azure handles administrative functions for you, so you don't have to worry about tasks like securing or rotating secrets. This makes the app more secure because there's no connection string or application secret that can be compromised.
 - The [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package acquires and manages Microsoft Entra tokens for you. This makes using token-based authentication as easy to use as a connection string.
 
 Use of connection strings should be limited to initial proof-of-concept apps or development prototypes that don't access production or sensitive data. In all other scenarios, use the token-based authentication classes available in the Azure Identity library to authenticate to Azure resources.
@@ -43,7 +43,7 @@ When your app is hosted on Azure, it can use managed identities to authenticate 
 
 #### Use a user-assigned managed identity
 
-A user-assigned managed identity is created as a standalone Azure resource. It can be assigned to one or more Azure resources, allowing those resources to share the same identity. To authenticate using a user-assigned identity, you need to create the identity, assign it to your Azure resource, and then configure your app to use this identity for authentication.
+A user-assigned managed identity is created as a standalone Azure resource. It can be assigned to one or more Azure resources, allowing those resources to share the same identity and permissions. To authenticate using a user-assigned identity, you need to create the identity, assign it to your Azure resource, and then configure your app to use this identity for authentication.
 
 > [!div class="nextstepaction"]
 > [Authenticate using a user-assigned managed-identity](user-assigned-managed-identity.md)
@@ -68,7 +68,7 @@ You can use your own Azure credentials to authenticate to Azure resources during
 
 #### Use a service principal
 
-A service principal is a Microsoft Entra application that can be used to authenticate to Azure resources. You can create a service principal and configure your app to use its credentials during local development. This method is more secure than using developer credentials and is closer to how your app will authenticate in production.
+A service principal is created in a Microsoft Entra tenant to represent an app and be used to authenticate to Azure resources. You can configure your app to use service principal credentials during local development. This method is more secure than using developer credentials and is closer to how your app will authenticate in production.
 
 > [!div class="nextstepaction"]
 > [Authenticate locally using a service principal](local-development-service-principal.md)

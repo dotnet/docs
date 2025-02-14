@@ -2,7 +2,7 @@
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
 ms.topic: conceptual
-ms.date: 01/29/2025
+ms.date: 02/14/2025
 ---
 
 # Authentication best practices with the Azure Identity library for .NET
@@ -22,20 +22,17 @@ For example, consider the following hypothetical sequence of events:
 1. `DefaultAzureCredential` skips the failed `ManagedIdentityCredential` and searches for the next available credential, which is `AzureCliCredential`.
 1. The application starts utilizing the Azure CLI credentials rather than the managed identity, which may fail or result in unexpected elevation or reduction of privileges.
 
-To prevent these types of subtle issues or silent failures in production apps, strongly consider moving from `DefaultAzureCredential` to one of the following deterministic solutions:
-
-- A specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
-- A pared-down `ChainedTokenCredential` implementation optimized for the Azure environment in which your app runs. `ChainedTokenCredential` essentially creates a specific allowlist of acceptable credential options, such as `ManagedIdentity` for production and `VisualStudioCredential` for development.
+To prevent these types of subtle issues or silent failures in production apps, replace `DefaultAzureCredential` with a specific `TokenCredential` implementation, such as `ManagedIdentityCredential`. See the [**Derived** list](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true#definition) for options.
 
 For example, consider the following `DefaultAzureCredential` configuration in an ASP.NET Core project:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="6,7":::
+:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Dac" highlight="8-9":::
 
-Replace the preceding code with a `ChainedTokenCredential` implementation that specifies only the necessary credentials:
+Modify the preceding code to select a credential based on the environment in which the app is running:
 
-:::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_Ctc" highlight="6-8":::
+:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="8-25":::
 
-In this example, `ManagedIdentityCredential` would be automatically discovered in production, while `VisualStudioCredential` would work in local development environments.
+In this example, only `ManagedIdentityCredential` is used in production. The local development environment's authentication needs are then serviced by the sequence of credentials defined in the `else` clause.
 
 ## Reuse credential instances
 
@@ -48,11 +45,13 @@ The recommended credential reuse strategy differs by .NET application type.
 
 # [ASP.NET Core](#tab/aspdotnet)
 
-Implement credential reuse through the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method of `Microsoft.Extensions.Azure`. For example, imagine an ASP.NET Core app hosted on Azure App Service, with a `UserAssignedClientId` environment variable set. The .NET configuration provider determines the environment variable exists, and `ManagedIdentityCredential` will be used to authenticate the Key Vault Secrets and Blob Storage clients. Otherwise, a chained sequence of development-time credentials is used.
+To implement credential reuse, use the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> method from `Microsoft.Extensions.Azure`. Consider an ASP.NET Core app hosted on Azure App Service in both production and staging environments. Environment variable `ASPNETCORE_ENVIRONMENT` is set to either `Production` or `Staging` to differentiate between these two non-development environments. In both production and staging, the user-assigned variant of `ManagedIdentityCredential` is used to authenticate the Key Vault Secrets and Blob Storage clients.
 
-:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="16":::
+When the app runs on a local development machine, where `ASPNETCORE_ENVIRONMENT` is set to `Development`, a chained sequence of developer tool credentials is used instead. This approach ensures environment-appropriate credentials are used, enhancing security and simplifying credential management.
 
-For information on this approach, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
+:::code language="csharp" source="../snippets/authentication/best-practices/CCA/Program.cs" id="snippet_credential_reuse_AspNetCore" highlight="25":::
+
+For information on this approach in an ASP.NET Core app, see [Authenticate using Microsoft Entra ID](/dotnet/azure/sdk/aspnetcore-guidance?tabs=api#authenticate-using-microsoft-entra-id).
 
 # [Other](#tab/other)
 

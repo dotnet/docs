@@ -1,7 +1,7 @@
 ---
 title: Determine which .NET Framework versions are installed
 description: Use code, regedit.exe, or PowerShell to detect which versions of .NET Framework are installed on a machine by querying the Windows registry. Or, check Control Panel.
-ms.date: 04/03/2024
+ms.date: 02/14/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -142,8 +142,8 @@ The following example checks the value of the **Release** entry in the registry 
 > [!TIP]
 > Add the directive `using Microsoft.Win32` or `Imports Microsoft.Win32` at the top of your code file if you haven't already done so.
 
-:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
-:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="2":::
+:::code language="csharp" source="snippets/how-to-determine-which-versions-are-installed/csharp/Program.cs" id="Get45PlusFromRegistry":::
+:::code language="vb" source="snippets/how-to-determine-which-versions-are-installed/vb/Module1.vb" id="Get45PlusFromRegistry":::
 
 The example displays output like the following:
 
@@ -227,8 +227,8 @@ Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to
 
 The following example finds the versions of .NET Framework 1-4 that are installed:
 
-:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="1":::
-:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="1":::
+:::code language="csharp" source="snippets/how-to-determine-which-versions-are-installed/csharp/Program.cs" id="GetVersionFromRegistry":::
+:::code language="vb" source="snippets/how-to-determine-which-versions-are-installed/vb/Module1.vb" id="GetVersionFromRegistry":::
 
 The example displays output similar to the following:
 

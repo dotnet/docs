@@ -96,16 +96,16 @@ void registerUsingObjectId(WebApplicationBuilder builder)
     {
         TokenCredential credential = null;
 
-        if (builder.Environment.IsDevelopment())
-        {
-            // Running locally on dev machine - do NOT use in production or outside of local dev
-            credential = new DefaultAzureCredential();
-        }
-        else if (builder.Environment.IsProduction())
+        if (builder.Environment.IsProduction())
         {
             // Managed identity token credential discovered when running in Azure environments
             credential = new ManagedIdentityCredential(
                 ManagedIdentityId.FromUserAssignedObjectId("<object-id>"));
+        }
+        else
+        {
+            // Running locally on dev machine - do NOT use in production or outside of local dev
+            credential = new DefaultAzureCredential();
         }
 
         clientBuilder.AddBlobServiceClient(
@@ -117,16 +117,16 @@ void registerUsingObjectId(WebApplicationBuilder builder)
     #region snippet_MIC_ObjectId
     TokenCredential credential = null;
 
-    if (builder.Environment.IsDevelopment())
-    {
-        // Running locally on dev machine - do NOT use in production or outside of local dev
-        credential = new DefaultAzureCredential();
-    }
-    else if (builder.Environment.IsProduction())
+    if (builder.Environment.IsProduction())
     {
         // Managed identity token credential discovered when running in Azure environments
         credential = new ManagedIdentityCredential(
             ManagedIdentityId.FromUserAssignedObjectId("<object-id>"));
+    }
+    else
+    {
+        // Running locally on dev machine - do NOT use in production or outside of local dev
+        credential = new DefaultAzureCredential();
     }
 
     builder.Services.AddSingleton<BlobServiceClient>(_ =>

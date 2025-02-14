@@ -196,4 +196,4 @@ For information on assigning permissions at the resource or subscription level u
 
 ---
 
-[!INCLUDE [Implement DefaultAzureCredential](<../includes/implement-user-assigned-identity.md>)]
+[!INCLUDE [Implement user-assigned identity](<../includes/implement-user-assigned-identity.md>)]

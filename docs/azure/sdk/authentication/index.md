@@ -8,32 +8,34 @@ ms.date: 08/02/2024
 
 # Authenticate .NET apps to Azure services using the Azure Identity library overview
 
-When an app needs to access an Azure resource, the app must be authenticated to Azure. This is true for all apps, whether deployed to Azure, deployed on-premises, or under development on a local developer workstation. This article describes the recommended approaches to authenticate an app to Azure when using the Azure SDK client libraries.
+Apps must authenticate to Azure in order to access Azure services and resources. This requirement applies whether the app is deployed to Azure, hosted on-premises, or running locally on a developer workstation. The sections ahead describe the recommended approaches to authenticate an app to Azure across different environments when using the Azure SDK client libraries.
 
-## Recommended app authentication approach
+## Recommended approach for app authentication
 
-It's recommended that apps use token-based authentication rather than connection strings when authenticating to Azure resources. The [Azure Identity library](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true) provides classes that support token-based authentication and allow apps to seamlessly authenticate to Azure resources whether the app is in local development, deployed to Azure, or deployed to an on-premises server.
-
-The specific type of token-based authentication an app should use to authenticate to Azure resources depends on where the app runs and is shown in the following diagram:
-
-:::image type="content" source="../media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
-
-When an app is:
-
-- **Hosted on Azure**, the app should authenticate to Azure resources using a managed identity. This option is discussed in more detail at [authentication in server environments](#authentication-for-azure-hosted-apps).
-- **Running locally during development**, the app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials. Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
-- **Hosted and deployed on-premises**, the app should authenticate to Azure resources using an application service principal. This option is discussed in more detail at [authentication in server environments](#authentication-for-apps-hosted-on-premises).
+Token-based authentication is the recommended approach for authenticating apps to Azure, instead of using connection strings or key-based options. The [Azure Identity library](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true) provides classes that support token-based authentication and allow apps to seamlessly authenticate to Azure resources whether the app is in local development, deployed to Azure, or deployed to an on-premises server.
 
 ### Advantages of token-based authentication
 
 Token-based authentication offers the following advantages over authenticating with connection strings:
 
-- The token-based authentication methods described below allows you to establish the specific permissions needed by the app on the Azure resource. This follows the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In contrast, a connection string grants full rights to the Azure resource.
-- Whereas anyone or any app with a connection string can connect to an Azure resource, token-based authentication methods scope access to the resource to only the app(s) intended to access the resource.  
-- In the case of a managed identity, there's no application secret to store. This makes the app more secure because there's no connection string or application secret that can be compromised.
+- Token-based authentication methods allows you to establish the specific permissions needed by the app on the Azure resource. This follows the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). In contrast, a connection string grants full rights to the Azure resource.
+- Token-based authentication methods scope access to the resource to only the app(s) intended to access the resource, whereas anyone or any app with a connection string can connect to an Azure resource.
+- When using a [managed identity](/entra/identity/managed-identities-azure-resources/overview) for token-based authentication, Azure handles administrative identity tasks for you, so you don't have to worry about tasks like securing or rotating secrets. This makes the app more secure because there's no connection string or application secret that can be compromised.
 - The [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package acquires and manages Microsoft Entra tokens for you. This makes using token-based authentication as easy to use as a connection string.
 
-Use of connection strings should be limited to initial proof-of-concept apps or development prototypes that don't access production or sensitive data. Otherwise, the token-based authentication classes available in the Azure Identity library should always be preferred when authenticating to Azure resources.
+Use of connection strings should be limited to initial proof-of-concept apps or development prototypes that don't access production or sensitive data. In all other scenarios, use the token-based authentication classes available in the Azure Identity library to authenticate to Azure resources.
+
+## Authentication across different environments
+
+The specific type of token-based authentication an app should use to authenticate to Azure resources depends on where the app runs. The following diagram provides guidances for different scenarios and environments:
+
+:::image type="content" source="../media/dotnet-sdk-auth-strategy.png" alt-text="A diagram showing the recommended token-based authentication strategies for an app depending on where it's running." :::
+
+When an app is:
+
+- **Hosted on Azure**: The app should authenticate to Azure resources using a managed identity. This option is discussed in more detail at [authentication in server environments](#authentication-for-azure-hosted-apps).
+- **Running locally during development**: The app can authenticate to Azure using either an application service principal for local development or by using the developer's Azure credentials. Each option is discussed in more detail at [authentication during local development](#authentication-during-local-development).
+- **Hosted on-premises**: The app should authenticate to Azure resources using an application service principal. This option is discussed in more detail at [authentication in server environments](#authentication-for-apps-hosted-on-premises).
 
 ## Authentication for Azure-hosted apps
 

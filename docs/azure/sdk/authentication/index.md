@@ -37,18 +37,18 @@ Use of connection strings should be limited to initial proof-of-concept apps or 
 
 ## Authentication for Azure-hosted apps
 
-When your app is hosted on Azure, it can leverage Azure's managed identities to authenticate to Azure resources without needing to manage any credentials. There are two types of managed identities: user-assigned and system-assigned. Both types provide a secure way to authenticate to Azure services.
+When your app is hosted on Azure, it can use managed identities to authenticate to Azure resources without needing to manage any credentials. There are two types of managed identities: user-assigned and system-assigned. Both types provide a secure way to authenticate to Azure services.
 
-#### Use a user-assigned identity
+#### Use a user-assigned managed identity
 
 A user-assigned managed identity is created as a standalone Azure resource. It can be assigned to one or more Azure resources, allowing those resources to share the same identity. To authenticate using a user-assigned identity, you need to create the identity, assign it to your Azure resource, and then configure your app to use this identity for authentication.
 
 > [!div class="nextstepaction"]
 > [Authenticate using a user-assigned managed-identity](user-assigned-managed-identity.md)
 
-#### Use a system-assigned identity
+#### Use a system-assigned managed identity
 
-A system-assigned managed identity is enabled directly on an Azure resource. The identity is tied to the lifecycle of that resource and is automatically deleted when the resource is deleted. To authenticate using a system-assigned identity, you need to enable the identity on your Azure resource and then configure your app to use this identity for authentication.
+A system-assigned managed identity is enabled directly on an Azure resource. The identity is tied to the lifecycle of that resource and is automatically deleted when the resource is deleted. To authenticate using a system-assigned managed identity, enable the identity on your Azure resource and then configure your app to use this identity for authentication.
 
 > [!div class="nextstepaction"]
 > [Authenticate using a system-assigned managed-identity](system-assigned-managed-identity.md)
@@ -66,14 +66,14 @@ You can use your own Azure credentials to authenticate to Azure resources during
 
 #### Use a service principal
 
-A service principal is an Azure Active Directory application that can be used to authenticate to Azure resources. You can create a service principal and configure your app to use its credentials during local development. This method is more secure than using developer credentials and is closer to how your app will authenticate in production.
+A service principal is a Microsoft Entra application that can be used to authenticate to Azure resources. You can create a service principal and configure your app to use its credentials during local development. This method is more secure than using developer credentials and is closer to how your app will authenticate in production.
 
 > [!div class="nextstepaction"]
 > [Authenticate locally using a service principal](local-development-service-principal.md)
 
 ## Authentication for apps hosted on-premises
 
-For apps hosted on-premises, you can use a service principal to authenticate to Azure resources. This involves creating a service principal in Azure Active Directory, assigning it the necessary permissions, and configuring your app to use its credentials. This method allows your on-premises app to securely access Azure services.
+For apps hosted on-premises, you can use a service principal to authenticate to Azure resources. This involves creating a service principal in Microsoft Entra ID, assigning it the necessary permissions, and configuring your app to use its credentials. This method allows your on-premises app to securely access Azure services.
 
 > [!div class="nextstepaction"]
 > [Authenticate your on-prem app using a service principal](local-development-service-principal.md)

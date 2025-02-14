@@ -32,7 +32,7 @@ Azure services are accessed using specialized client classes from the various Az
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method:
 
-- Use `DefaultAzureCredential` when your app is running locally
+- Use `DefaultAzureCredential` when your app is running locally.
 - Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
 
 :::code language="csharp" source="../snippets/authentication/system-assigned-managed-identity/Program.cs" id="snippet_MIC_UseCredential":::

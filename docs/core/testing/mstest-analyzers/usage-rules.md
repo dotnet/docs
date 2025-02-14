@@ -37,3 +37,4 @@ Identifier | Name | Description
 [MSTEST0038](mstest0038.md) | AvoidAssertAreSameWithValueTypesAnalyzer | Don't use `Assert.AreSame` or `Assert.AreNotSame` with value types
 [MSTEST0039](mstest0039.md) | UseNewerAssertThrowsAnalyzer | Use newer 'Assert.Throws' methods
 [MSTEST0040](mstest0040.md) | AvoidUsingAssertsInAsyncVoidContextAnalyzer | Do not assert inside 'async void' contexts
+[MSTEST0041](mstest0041.md) | UseConditionBaseWithTestClassAnalyzer | Use 'ConditionBaseAttribute' on test classes

@@ -1,7 +1,7 @@
 ---
 title: "How to initialize a dictionary with a collection initializer"
 description: Learn how to initialize a dictionary in C#, using either the Add method or an index initializer. This example shows both options.
-ms.date: 01/31/2025
+ms.date: 02/12/2025
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"
 ms.topic: how-to
@@ -14,15 +14,15 @@ ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
 A <xref:System.Collections.Generic.Dictionary%602> contains a collection of key/value pairs. Its <xref:System.Collections.Generic.Dictionary%602.Add%2A> method takes two parameters, one for the key and one for the value. One way to initialize a <xref:System.Collections.Generic.Dictionary%602>, or any collection whose `Add` method takes multiple parameters, is to enclose each set of parameters in braces as shown in the following example. Another option is to use an index initializer, also shown in the following example.
 
 > [!NOTE]
-> The major difference between these two ways of initializing the collection is that in case of having duplicated keys, for example:
+> The major difference between these two ways of initializing the collection is how duplicated keys are handled, for example:
 >
 > ```csharp  
 > { 111, new StudentName { FirstName="Sachin", LastName="Karnik", ID=211 } },
 > { 111, new StudentName { FirstName="Dina", LastName="Salimzianova", ID=317 } }, 
 >  ```
 >
-> <xref:System.Collections.Generic.Dictionary%602.Add%2A> method will throw <xref:System.ArgumentException>: `'An item with the same key has already been added. Key: 111'`,
-> while the second part of example, the public read / write indexer method, will quietly overwrite the already existing entry with the same key.
+> <xref:System.Collections.Generic.Dictionary%602.Add%2A> method throws <xref:System.ArgumentException>: `'An item with the same key has already been added. Key: 111'`,
+> while the second part of example, the public read / write indexer method, quietly overwrites the already existing entry with the same key.
 
 > [!TIP]
 > You can use AI assistance to [initialize a dictionary with GitHub Copilot](#use-github-copilot-to-initialize-a-dictionary).

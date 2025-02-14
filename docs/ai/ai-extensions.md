@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Unified AI building blocks for .NET using Microsoft.Extensions.AI
 
-The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.AI.Abstractions> libraries. The .NET team has also enhanced the core `Microsoft.Extensions` libraries with these abstractions for .NET generative AI applications and libraries. In the sections ahead, you learn:
+The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the <xref:Microsoft.Extensions.AI> libraries. The .NET team has also enhanced the core `Microsoft.Extensions` libraries with these abstractions for use in generative AI .NET applications and libraries. In the sections ahead, you learn:
 
 - Core concepts and capabilities of the `Microsoft.Extensions.AI` libraries.
 - How to work with AI abstractions in your apps and the benefits they offer.
@@ -34,7 +34,7 @@ AI capabilities are rapidly evolving, with patterns emerging for common function
 - Embedding generation to integrate with vector search capabilities.
 - Tool calling to integrate with other services, platforms, or code.
 
-The `Microsoft.Extensions.AI.Abstractions` library provides abstractions for these types of tasks, so developers can focus on coding against conceptual AI capabilities rather than specific platforms or provider implementations. Unified abstractions are crucial for developers to work effectively across different sources.
+The `Microsoft.Extensions.AI.Abstractions` package provides abstractions for these types of tasks, so developers can focus on coding against conceptual AI capabilities rather than specific platforms or provider implementations. Unified abstractions are crucial for developers to work effectively across different sources.
 
 For example, the <xref:Microsoft.Extensions.AI.IChatClient> interface allows consumption of language models from various providers, such as an Azure OpenAI service or a local Ollama installation. Any .NET package that provides an AI client can implement the `IChatClient` interface to enable seamless integration with consuming .NET code:
 
@@ -69,9 +69,9 @@ In the future, implementations of these `Microsoft.Extensions.AI` abstractions w
 
 ## Middleware implementations for AI services
 
-Connecting to and using AI services is just one aspect of building robust applications. Production-ready applications require additional features like telemetry, logging, caching, and tool-calling capabilities. The `Microsoft.Extensions.AI` library enables you to easily integrate these components into your applications using familiar dependency injection and middleware patterns.
+Connecting to and using AI services is just one aspect of building robust applications. Production-ready applications require additional features like telemetry, logging, caching, and tool-calling capabilities. The `Microsoft.Extensions.AI` packages provides APIs that enable you to easily integrate these components into your applications using familiar dependency injection and middleware patterns.
 
-The following sample demonstrates how to register an OpenAI `IChatClient`. `IChatClient` allows you to attach the capabilities in a consistent way across various providers by calling methods such as <xref:Microsoft.Extensions.AI.FunctionInvokingChatClientBuilderExtensions.UseFunctionInvocation(Microsoft.Extensions.AI.ChatClientBuilder,Microsoft.Extensions.Logging.ILoggerFactory,System.Action{Microsoft.Extensions.AI.FunctionInvokingChatClient})> on a <xref:Microsoft.Extensions.AI.ChatClientBuilder>.
+The following sample demonstrates how to register an OpenAI `IChatClient`. You can attach capabilities in a consistent way across various providers by calling methods such as <xref:Microsoft.Extensions.AI.FunctionInvokingChatClientBuilderExtensions.UseFunctionInvocation(Microsoft.Extensions.AI.ChatClientBuilder,Microsoft.Extensions.Logging.ILoggerFactory,System.Action{Microsoft.Extensions.AI.FunctionInvokingChatClient})> on a <xref:Microsoft.Extensions.AI.ChatClientBuilder>.
 
 ```csharp
 app.Services.AddChatClient(builder => builder

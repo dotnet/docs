@@ -28,7 +28,7 @@ User-assigned managed identities are created as standalone resources in your Azu
 1. In the Azure portal, enter *Managed identities* in the main search bar and select the matching result under the **Services** section.
 1. On the **Managed Identities** page, select **+ Create**.
 
-    :::image type="content" source="../media/user-assigned-identity-create.png" alt-text="A screenshot showing the page to manage user-assigned identities.":::
+    :::image type="content" source="../media/user-assigned-identity-create.png" alt-text="A screenshot showing the page to manage user-assigned managed identities.":::
 
 1. On the **Create User Assigned Managed Identity** page, select a subscription, resource group, and region for the user-assigned managed identity, and then provide a name.
 1. Select **Review + create** to review and validate your inputs.
@@ -77,7 +77,7 @@ A user-assigned managed identity can be associated with one or more Azure resour
 1. On the **Add user assigned managed identity** panel, use the **Subscription** dropdown to filter the search results for your identities. Use the **User assigned managed identities** search box to locate the user-assigned managed identity you enabled for the Azure resource hosting your app.
 1. Select the identity and choose **Add** at the bottom of the panel to continue.
 
-    :::image type="content" source="../media/add-user-assigned-identity-to-app.png" alt-text="A screenshot showing how to associate a user-assigned identity with an app.":::
+    :::image type="content" source="../media/add-user-assigned-identity-to-app.png" alt-text="A screenshot showing how to associate a user-assigned managed identity with an app.":::
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -196,4 +196,4 @@ For information on assigning permissions at the resource or subscription level u
 
 ---
 
-[!INCLUDE [Implement user-assigned identity](<../includes/implement-user-assigned-identity.md>)]
+[!INCLUDE [Implement user-assigned managed identity](<../includes/implement-user-assigned-identity.md>)]

@@ -54,7 +54,7 @@ void registerUsingClientId(WebApplicationBuilder builder)
         {
             // Managed identity token credential discovered when running in Azure environments
             credential = new ManagedIdentityCredential(
-                ManagedIdentityId.FromUserAssignedClientId(new ResourceIdentifier("client-id")));
+                ManagedIdentityId.FromUserAssignedClientId("<client-id>"));
         } 
         else 
         {

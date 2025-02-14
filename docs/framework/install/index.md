@@ -9,7 +9,7 @@ You can install .NET Framework on various Windows versions.
 
 [!INCLUDE [net-framework-future](../../../includes/net-framework-future.md)]
 
-If you need to install .NET Framework 2.0 through 3.5, see [Install .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8](dotnet-35-windows.md).
+If you need to install .NET Framework 1.1 through 3.5, see [Install .NET Framework 3.5 on Windows](dotnet-35-windows.md).
 
 ## Supported Windows versions
 
@@ -17,14 +17,14 @@ If you need to install .NET Framework 2.0 through 3.5, see [Install .NET Framewo
 - [Windows Server 2022](on-server-2022.md) (.NET Framework 4.8 included)
 - [Windows Server 2019](on-server-2019.md) (.NET Framework 4.7.2 included)
 - [Windows 10 and Windows Server 2016](on-windows-10.md)
-- [Windows 8.1 and Windows Server 2012 R2](on-windows-8-1.md)
-- [Windows 8 and Windows Server 2012](on-windows-8.md)
 
 ## Unsupported Windows versions
 
-- [Windows XP and Windows Server 2003](/previous-versions/dotnet/framework/install/on-windows-xp)
+- [Windows 8.1 and Windows Server 2012 R2](on-windows-8-1.md)
+- [Windows 8 and Windows Server 2012](on-windows-8.md)
 - [Windows 7 and Windows Server 2008 R2](/previous-versions/dotnet/framework/install/on-windows-7)
 - [Windows Vista and Windows Server 2008](/previous-versions/dotnet/framework/install/on-windows-vista)
+- [Windows XP and Windows Server 2003](/previous-versions/dotnet/framework/install/on-windows-xp)
 
 ## See also
 

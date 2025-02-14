@@ -1,5 +1,5 @@
 ---
-title: "Run .NET Framework 1.1 apps on Windows 8, 8.1, 10, or Windows 11"
+title: "Run .NET Framework 1.1 apps"
 description: "Describes how to accommodate apps that require .NET Framework 1.1, which is no longer supported on many versions of the Windows operating system."
 ms.date: 10/06/2021
 helpviewer_keywords: 

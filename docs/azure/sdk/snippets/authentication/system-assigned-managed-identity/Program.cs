@@ -8,8 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 var runningOnLocalDevBox = false;
 
-var runningOnLocalDevBox = false;
-
 #region snippet_MIC_UseCredential
 builder.Services.AddAzureClients(clientBuilder =>
 {

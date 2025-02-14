@@ -21,8 +21,7 @@ builder.Services.AddAzureClients(clientBuilder =>
     else
     {
         // Managed identity token credential discovered when running in Azure environments
-        credential = new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedObjectId());
+        credential = new ManagedIdentityCredential();
     }
 
     clientBuilder.AddBlobServiceClient(
@@ -42,8 +41,7 @@ if (runningOnLocalDevBox)
 else
 {
     // Managed identity token credential discovered when running in Azure environments
-    credential = new ManagedIdentityCredential(
-        ManagedIdentityId.FromUserAssignedObjectId());
+    credential = new ManagedIdentityCredential();
 }
 
 builder.Services.AddSingleton<BlobServiceClient>(_ =>

@@ -38,6 +38,8 @@ items:
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation
                 href: windows-forms/10.0/treeview-text-location.md
+              - name: StatusStrip uses System RenderMode by default
+                href: windows-forms/10.0/statusstrip-renderer.md
       - name: .NET 9
         items:
           - name: Overview
@@ -182,6 +184,8 @@ items:
                 href: windows-forms/9.0/datagridviewheadercell-nre.md
               - name: PictureBox raises HttpClient exceptions
                 href: windows-forms/9.0/httpclient-exceptions.md
+              - name: StatusStrip uses a different default renderer
+                href: windows-forms/9.0/statusstrip-renderer.md
           - name: WPF
             items:
               - name: "'GetXmlNamespaceMaps' type change"
@@ -2096,6 +2100,8 @@ items:
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation
                 href: windows-forms/10.0/treeview-text-location.md
+              - name: StatusStrip uses System RenderMode by default
+                href: windows-forms/10.0/statusstrip-renderer.md
           - name: .NET 9
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -2115,6 +2121,7 @@ items:
               - name: PictureBox raises HttpClient exceptions
                 href: windows-forms/9.0/httpclient-exceptions.md
               - name: StatusStrip uses different default renderer
+                href: windows-forms/9.0/statusstrip-renderer.md
           - name: .NET 8
             items:
               - name: Certs checked before loading remote images in PictureBox

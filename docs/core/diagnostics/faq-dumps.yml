@@ -11,15 +11,48 @@ sections:
   - name: Collecting dumps on macOS and Linux 
     questions: 
       - question: |
-          Why do I only get dumps on Linux if [dotnet-dump](dotnet-dump.md) or my [crashing process](dumps.md#collect-dumps-on-crash) is running elevated?
-        answer: | 
-          On Linux-based systems, `/proc/sys/kernel/ptrace_scope` controls who can call `ptrace` and what processes they can trace. We recommend it being set to `1` - meaning only processes in the same ancestry chain can use traced. Any value higher than this requires elevation or might disable `ptrace` altogether.  
+          Why is dump collection failing on Linux?
+        answer: |
+          In order to implement dump collection, .NET processes spawn a child process called createdump. This child process uses the Linux API [ptrace()](https://www.man7.org/linux/man-pages/man2/ptrace.2.html) and also reads from the [/proc](https://www.kernel.org/doc/html/latest/filesystems/proc.html) filesystem to access thread and memory data that is written into the dump file. Although the API usage is allowed by the default security settings on many Linux distros, sometimes a less common security configuration will deny access. You might see output from the createdump process written on the console of the application being dumped such as:
+
+          ```
+          [createdump] The process or container does not have permissions or access: open(/proc/1234/mem) FAILED Permission denied (13)
+          ```
+
+          One reason that access can be denied is if a security sandbox intercepts the call using a [seccomp BPF filter](https://www.kernel.org/doc/html/v4.19/userspace-api/seccomp_filter.html). For applications running in a container using Open Container Initiative technology, the `seccomp` profile must allow for calls to `ptrace`. For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified on the container.
+
+          If the calls aren't intercepted, then the kernel does a variety of built-in access checks. The docs for [ptrace()](https://www.man7.org/linux/man-pages/man2/ptrace.2.html) include a detailed description near the end, titled "Ptrace access mode checking", that describes how these are done. Accessing the /proc filesystem also uses a variation of the same ptrace access mode checking. What follows is an abbreviated summary of the security checks performed and places where access might be denied:
+
+          - Either the calling process needs to have the same user ID as the target process, or the calling process needs to have CAP_SYS_PTRACE. If neither of these is true, access is denied. Since the .NET runtime doesn't do anything to change the user account when launching createdump, the user IDs should match and this step should succeed.
+          - If createdump doesn't have CAP_SYS_PTRACE (it doesn't by default), then the target process being dumped needs to be marked "dumpable". By default, most processes on Linux are dumpable, but you can change this setting by calling [prctl()](https://www.man7.org/linux/man-pages/man2/prctl.2.html) with the PR_SET_DUMPABLE option. If you add capabilities to a process using the setcap tool, this can also cause a process to stop being dumpable. For a more detailed description of the dumpable setting and what causes it to be disabled, see [the Linux documentation](https://www.man7.org/linux/man-pages/man2/PR_SET_DUMPABLE.2const.html).
+          - All of the enabled [Linux security modules](https://www.kernel.org/doc/html/v4.16/admin-guide/LSM/index.html) (LSMs) are enumerated and each of them must approve the access. Unfortunately, if an LSM denies the access, there's no uniform Linux reporting mechanism to know which one is responsible. Instead you need to determine which ones are enabled on your system and then investigate each individually. You can determine which LSMs are active by running: `cat /sys/kernel/security/lsm`. Although any LSM could be responsible, [Yama](https://www.kernel.org/doc/html/v4.16/admin-guide/LSM/Yama.html), [SELinux](https://selinuxproject.org/page/Main_Page), and [AppArmor](https://gitlab.com/apparmor/apparmor/-/wikis/GettingStarted) are frequently the relevant ones.
+
+          AppArmor and SELinux both have rich configuration and reporting mechanisms, so if you need to learn how to work with them, it's best to view each project's own documentation. Yama only has a single configuration setting, which can be displayed by running:
+
+          ```
+          cat /proc/sys/kernel/yama/ptrace_scope
+          ```
+
+          This command outputs a number indicating the current Yama ptrace security policy:
+
+          - 0: Classic ptrace permissions.
+          - 1: Restricted ptrace.
+          - 2: Admin-only attach.
+          - 3: No attach.
+
+          Yama should grant access for createdump under policies 0 and 1, but expect access will be denied under policies 2 and 3. Policy 3 always denies access, and policy 2 doesn't work by default because createdump normally does not have the capability CAP_SYS_PTRACE.
+
+      - question: |
+          Why do I only get dumps on Linux if dotnet-dump or my crashing process is running elevated?
+        answer: |
+          Some Linux-based systems are configured with security policies that require any process collecting a dump to have the capability CAP_SYS_PTRACE. Normally processes do not have this capability but running elevated is one way to enable it. For a fuller description of how Linux security policies impact dump collection, see 'Why is dump collection failing on Linux?'.
 
       - question: |
           Why can't I collect dumps when running inside a container?
         answer: |
-          For applications running under any Open Container Initiative technology, the `seccomp` profile must allow for calls to `ptrace`. For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing the runtime, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified.
-           
+          For applications running under any Open Container Initiative technology, the `seccomp` profile must allow for calls to [ptrace()](https://www.man7.org/linux/man-pages/man2/ptrace.2.html). For example, `Docker` uses [containerd](https://github.com/moby/containerd) under the hood as a container runtime. When initializing the runtime, it specifies a default [seccomp profile](https://github.com/moby/moby/blob/master/profiles/seccomp/default.json) that allows `ptrace` only if the container host has a kernel version higher than 4.8 or if the `CAP_SYS_PTRACE` capability was specified.
+
+          For a fuller description of how Linux security policies impact dump collection, see the question 'Why is dump collection failing on Linux?'.
       - question: |
            Why can't I collect dumps on macOS?
         answer: |

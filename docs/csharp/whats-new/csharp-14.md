@@ -9,8 +9,9 @@ ms.topic: whats-new
 C# 14 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet):
 
 - [`nameof` supports unbound generic types](#unbound-generic-types-and-nameof)
-
-C# 14 includes the [`field`](#the-field-keyword) contextual keyword as a preview feature.
+- [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](#implicit-span-conversions)
+- [Modifiers on simple lambda parameters](#simple-lambda-parameters-with-modifiers)
+- [`field` backed properties](#the-field-keyword)
 
 C# 14 is supported on **.NET 10**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -24,13 +25,45 @@ You can find any breaking changes introduced in C# 14 in our article on [breakin
 
 ## The `field` keyword
 
-The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. The token `field` accesses the compiler synthesized backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.
+The token `field` enables you to write a property accessor body without declaring an explicit backing field. The token `field` is replaced with a compiler synthesized backing field.
+
+For example, previously, if you wanted to ensure that a `string` property couldn't be set to `null`, you had to declare a backing field and implement both accessors:
+
+```csharp
+private string _msg;
+public string Message
+{
+    get => _msg;
+    set
+    {
+        if (value is null) throw new NullArgumentException(nameof(value));
+        _msg = value;
+    }
+}
+```
+
+You can now simplify your code to:
+
+```csharp
+public string Message
+{
+    get;
+    set
+    {
+        field = (value is not null) ? value : throw new NullArgumentException(nameof(value));
+    }
+}
+```
+
+You can declare a body for one or both accessors for a field backed property.
 
 There's a potential breaking change or confusion reading code in types that also include a symbol named `field`. You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier, or you can rename the current `field` symbol to provide more distinction.
 
 [!INCLUDE[field-preview](../includes/field-preview.md)]
 
 If you try this feature and have feedback, comment on the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
+
+The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. You can try it if you're using .NET 9 and C# 13 to provide [feedback](https://github.com/dotnet/csharplang/issues/140).
 
 ## Implicit span conversions
 
@@ -42,7 +75,7 @@ You can find the list of implicit span conversions in the article on [built-in t
 
 ## Unbound generic types and nameof
 
-Beginning with C# 14, the argument to `nameof` can be an unbound generic type. For example, `nameof(List<>)` evaluates to `List`. In earlier versions of C#, only closed generic types, such as `List<int>`, could be used to produce `List`.
+Beginning with C# 14, the argument to `nameof` can be an unbound generic type. For example, `nameof(List<>)` evaluates to `List`. In earlier versions of C#, only closed generic types, such as `List<int>`, could be used to return the `List` name.
 
 ## Simple lambda parameters with modifiers
 

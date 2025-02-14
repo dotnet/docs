@@ -7,7 +7,7 @@ ms.date: 02/12/2025
 
 ### Implement the code
 
-Add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
+Add the [Azure.Identity](/dotnet/api/azure.identity) package. In an ASP.NET Core project, also install the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) package:
 
 ### [Command Line](#tab/command-line)
 
@@ -63,4 +63,4 @@ An alternative to the `UseCredential` method is to provide the credential to the
 The preceding code behaves differently depending on the environment where it's running:
 
 - On your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials.
-- When deployed to Azure, the `ManagedIdentityCredential` discovers your managed identity configurations to authenticate to other services automatically.
+- When deployed to Azure, `ManagedIdentityCredential` discovers your managed identity configurations to authenticate to other services automatically.

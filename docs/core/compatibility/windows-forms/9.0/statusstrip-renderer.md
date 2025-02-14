@@ -32,7 +32,7 @@ The previous default behavior didn't meet accessibility standards. The focus ind
 The new behavior is recommended for accessibility reasons. If you want to revert to the previous behavior, set the `RenderMode` property to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType>.
 
 > [!NOTE]
-> The new behavior was reverted to the previous behavior in .NET 10 Preview 1.
+> The new behavior was reverted to the previous behavior in a .NET 9 servicing release and [.NET 10 Preview 1](../10.0/statusstrip-renderer.md).
 
 ## Affected APIs
 

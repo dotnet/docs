@@ -11,21 +11,22 @@ var runningOnLocalDevBox = false;
 #region snippet_MIC_UseCredential
 builder.Services.AddAzureClients(clientBuilder =>
 {
+    clientBuilder.AddBlobServiceClient(
+        new Uri("https://<account-name>.blob.core.windows.net"));
+
     TokenCredential credential = null;
 
-    if (runningOnLocalDevBox)
-    {
-        // Running locally on dev machine - do NOT use in production or outside of local dev
-        credential = new DefaultAzureCredential();
-    }
-    else
+    if (builder.Environment.IsProduction())
     {
         // Managed identity token credential discovered when running in Azure environments
         credential = new ManagedIdentityCredential();
     }
+    else
+    {
+        // Running locally on dev machine - do NOT use in production or outside of local dev
+        credential = new DefaultAzureCredential();
+    }
 
-    clientBuilder.AddBlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"));
     clientBuilder.UseCredential(credential);
 });
 #endregion snippet_MIC_UseCredential
@@ -33,15 +34,15 @@ builder.Services.AddAzureClients(clientBuilder =>
 #region snippet_MIC
 TokenCredential credential = null;
 
-if (runningOnLocalDevBox)
-{
-    // Running locally on dev machine - do NOT use in production or outside of local dev
-    credential = new DefaultAzureCredential();
-}
-else
+if (builder.Environment.IsProduction())
 {
     // Managed identity token credential discovered when running in Azure environments
     credential = new ManagedIdentityCredential();
+}
+else
+{
+    // Running locally on dev machine - do NOT use in production or outside of local dev
+    credential = new DefaultAzureCredential();
 }
 
 builder.Services.AddSingleton<BlobServiceClient>(_ =>

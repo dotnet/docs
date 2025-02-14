@@ -23,7 +23,7 @@ Token-based authentication offers the following advantages over connection strin
 - When using a [managed identity](/entra/identity/managed-identities-azure-resources/overview) for token-based authentication, Azure handles administrative functions for you, so you don't have to worry about tasks like securing or rotating secrets. This makes the app more secure because there's no connection string or application secret that can be compromised.
 - The [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package acquires and manages Microsoft Entra tokens for you. This makes using token-based authentication as easy to use as a connection string.
 
-Use of connection strings should be limited to initial proof-of-concept apps or development prototypes that don't access production or sensitive data. In all other scenarios, use the token-based authentication classes available in the Azure Identity library to authenticate to Azure resources.
+Use of connection strings should be limited to scenarios where token-based authentication is not an option, initial proof-of-concept apps, or development prototypes that don't access production or sensitive data. When possible, use the token-based authentication classes available in the Azure Identity library to authenticate to Azure resources.
 
 ## Authentication across different environments
 

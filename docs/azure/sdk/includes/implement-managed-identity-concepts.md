@@ -5,7 +5,7 @@ ms.date: 02/12/2025
 
 ## Authenticate to Azure services from your app
 
-To authenticate to Azure services from your app code using Microsoft Entra ID and a managed identity, use an implementation of the [`TokenCredential`](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet#credentials) class. The [Azure.Identity](/dotnet/api/azure.identity) library provides various implementations of `TokenCredential` for different scenarios and credential types. These classes allow apps to seamlessly authenticate to Azure resources whether the app is running locally, deployed to Azure, or on an on-premises server.
+The [Azure.Identity](/dotnet/api/azure.identity) library provides various implementations of `TokenCredential` for different scenarios and credential types. To authenticate to Azure services from your app code using Microsoft Entra ID and a managed identity, use the [`ManagedIdentityCredential`](/dotnet/api/azure.identity.managedidentitycredential?view=azure-dotnet) class. These classes allow apps to seamlessly authenticate to Azure resources whether the app is running locally, deployed to Azure, or on an on-premises server.
 
 The steps ahead demonstrate how to use a `TokenCredential` across two different environments:
 

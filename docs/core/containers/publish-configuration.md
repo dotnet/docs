@@ -130,7 +130,7 @@ The container registry property controls the destination registry, the place tha
 </PropertyGroup>
 ```
 
-This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/). This includes the following registries explicitly (and likely many more implicitly):
+This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://distribution.github.io/distribution/spec/api/). This includes the following registries explicitly (and likely many more implicitly):
 
 - [Azure Container Registry](https://azure.microsoft.com/products/container-registry)
 - [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)

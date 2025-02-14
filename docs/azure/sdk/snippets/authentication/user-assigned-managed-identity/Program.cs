@@ -6,8 +6,6 @@ using Azure.Core;
 var userAssignedClientId = "<user-assigned-client-id>";
 var builder = WebApplication.CreateBuilder(args);
 
-var runningOnLocalDevBox = false;
-
 // Registration options
 // registerUsingClientId(builder);
 // registerUsingObjectId(builder);
@@ -47,8 +45,6 @@ app.Run();
 
 void registerUsingClientId(WebApplicationBuilder builder)
 {
-    runningOnLocalDevBox = false;
-
     #region snippet_MIC_ClientId_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
@@ -95,8 +91,6 @@ void registerUsingClientId(WebApplicationBuilder builder)
 
 void registerUsingObjectId(WebApplicationBuilder builder)
 {
-    var runningOnLocalDevBox = false;
-
     #region snippet_MIC_ObjectId_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
@@ -144,8 +138,6 @@ void registerUsingObjectId(WebApplicationBuilder builder)
 
 void registerUsingResourceId(WebApplicationBuilder builder)
 {
-    var runningOnLocalDevBox = true;
-
     #region snippet_MIC_ResourceId_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {

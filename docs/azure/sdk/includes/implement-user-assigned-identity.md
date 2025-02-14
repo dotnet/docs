@@ -31,9 +31,8 @@ Azure services are accessed using specialized client classes from the various Az
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method:
-
-- Use `DefaultAzureCredential` when your app is running locally
-- Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
+    - Use `DefaultAzureCredential` when your app is running locally
+    - Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
 
 ## [Client ID](#tab/client-id)
 
@@ -61,4 +60,7 @@ An alternative to the `UseCredential` method is to provide the credential to the
 
 ---
 
-When the preceding code runs on your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials. When deployed to Azure, the `ManagedIdentityCredential` discovers your managed identity configurations to authenticate to other services automatically.
+The preceding code behaves differently depending on the environment where it's running:
+
+- On your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials.
+- When deployed to Azure, the `ManagedIdentityCredential` discovers your managed identity configurations to authenticate to other services automatically.

@@ -133,6 +133,4 @@ For information on assigning permissions at the resource or subscription level u
 
 ---
 
-## Implement DefaultAzureCredential in your application
-
 [!INCLUDE [Implement user-assigned identity](<../includes/implement-system-assigned-identity.md>)]

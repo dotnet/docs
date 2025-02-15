@@ -23,17 +23,17 @@ The libraries are designed to integrate smoothly with existing .NET apps, allowi
 
 ## Comprehensive evaluation metrics
 
-The evaluation libraries were built in collaboration with data science researchers from Microsoft and GitHub, and were tested on popular Microsoft Copilot experiences. They provide built-in evaluators for:
+The evaluation libraries were built in collaboration with data science researchers from Microsoft and GitHub, and were tested on popular Microsoft Copilot experiences. The following table shows the built-in evaluators.
 
-- Relevance (how effectively a response addresses a query)
-- Truth
-- Completeness
-- Fluency (grammatical accuracy, vocabulary range, sentence complexity, and overall readability)
-- Coherence (the logical and orderly presentation of ideas)
-- Equivalence (the similarity between the generated text and its ground truth with respect to a query)
-- Groundedness (how well a generated response aligns with the given context)
+| Metric                             | Description                                  | Evaluator type |
+|------------------------------------|----------------------------------------------|----------------|
+| Relevance, truth, and completeness | How effectively a response addresses a query | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator> |
+| Fluency                            | Grammatical accuracy, vocabulary range, sentence complexity, and overall readability| <xref:Microsoft.Extensions.AI.Evaluation.Quality.FluencyEvaluator> |
+| Coherence                          | The logical and orderly presentation of ideas | <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> |
+| Equivalence                        | The similarity between the generated text and its ground truth with respect to a query | <xref:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator> |
+| Groundedness                       | How well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator> |
 
-You can also customize to add your own evaluations by implementing the <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator> interface.
+You can also customize to add your own evaluations by implementing the <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator> interface or, for a chat bot, by extending the <xref:Microsoft.Extensions.AI.Evaluation.Quality.ChatConversationEvaluator> class.
 
 ## Cached responses
 

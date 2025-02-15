@@ -24,7 +24,7 @@ You might see the following configuration dialog if you try to run an app that r
 
 Enable .NET Framework 3.5 through the **Add Roles and Features Wizard**.
 
-1. Open the Start Menu.
+1. Press the Start :::image type="icon" source="media/dotnet-35-windows/windows-keyboard-logo.png" border="false"::: button on the taskbar.
 1. Search for **Add Roles and Features Wizard** and open it.
 1. Search for **Windows Features** and open it. The **Turn Windows features on or off** dialog box appears
 1. Navigate through the wizard until you reach **Features**.
@@ -63,7 +63,7 @@ If you still can't resolve your installation issue or you don't have an Internet
 If you're a developer that maintains existing software and you need to use .NET Framework 3.5, enable it with the following steps:
 
 1. Install .NET Framework 3.5 on your system using the instructions in this article.
-1. Enable **".NET Framework 3.5 Development Tools** in Visual Studio. It's listed in the **Individual Components** page.
+1. Enable **.NET Framework 3.5 Development Tools** in Visual Studio. It's listed in the **Individual Components** page.
 
 ## See also
 

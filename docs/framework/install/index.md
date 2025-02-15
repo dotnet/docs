@@ -1,7 +1,7 @@
 ---
 title: .NET Framework installation guide
 description: Learn about how to install the .NET Framework on Windows, and which versions of Windows support .NET Framework.
-ms.date: 05/15/2024
+ms.date: 02/14/2025
 ---
 # Installation guide
 
@@ -13,15 +13,15 @@ If you need to install .NET Framework 1.1 through 3.5, see [Install .NET Framewo
 
 ## Supported Windows versions
 
-- [Windows 11](on-windows-11.md) (.NET Framework 4.8 included)
-- [Windows Server 2022](on-server-2022.md) (.NET Framework 4.8 included)
-- [Windows Server 2019](on-server-2019.md) (.NET Framework 4.7.2 included)
-- [Windows 10 and Windows Server 2016](on-windows-10.md)
+- [Windows 11](on-windows-and-server.md#windows-11) (.NET Framework 4.8 included)
+- [Windows 10](on-windows-and-server.md#windows-10) (.NET Framework 4.6.2 through 4.8 included)
+- [Windows Server 2025](on-windows-and-server.md#windows-server) (.NET Framework 4.8 included)
+- [Windows Server 2022](on-windows-and-server.md#windows-server) (.NET Framework 4.8 included)
 
 ## Unsupported Windows versions
 
-- [Windows 8.1 and Windows Server 2012 R2](on-windows-8-1.md)
-- [Windows 8 and Windows Server 2012](on-windows-8.md)
+- [Windows 8.1](on-windows-and-server.md#windows-81-8-7-vista-xp) and [Windows Server 2012 R2](on-windows-and-server.md#windows-server)
+- [Windows 8](on-windows-and-server.md#windows-81-8-7-vista-xp) and [Windows Server 2012](on-windows-and-server.md#windows-server)
 - [Windows 7 and Windows Server 2008 R2](/previous-versions/dotnet/framework/install/on-windows-7)
 - [Windows Vista and Windows Server 2008](/previous-versions/dotnet/framework/install/on-windows-vista)
 - [Windows XP and Windows Server 2003](/previous-versions/dotnet/framework/install/on-windows-xp)

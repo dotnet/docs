@@ -22,7 +22,7 @@ This article provides links for installing all versions of .NET Framework from .
 
 [!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
 
-For more information about versions of .NET Framework and how to determine which versions are installed on a computer, see [Versions and Dependencies](../migration-guide/versions-and-dependencies.md) and [How to: Determine Which .NET Framework Versions Are Installed](../migration-guide/how-to-determine-which-versions-are-installed.md).
+For more information about versions of .NET Framework and how to determine which versions are installed on a computer, see [Versions and Dependencies](../install/versions-and-dependencies.md) and [How to: Determine Which .NET Framework Versions Are Installed](../install/how-to-determine-which-versions-are-installed.md).
 
 > [!NOTE]
 > For information on .NET Framework 3.5, see [Install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8](dotnet-35-windows.md).

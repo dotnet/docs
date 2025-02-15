@@ -63,7 +63,7 @@ Use the following links to other MSDN topics for specific information about depl
 
 - For general information, see the [.NET Framework blog](https://devblogs.microsoft.com/dotnet/).
 
-- [Detecting versions](../migration-guide/how-to-determine-which-versions-are-installed.md)
+- [Detecting versions](../install/how-to-determine-which-versions-are-installed.md)
 
 - [Detecting service packs and updates](../migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)
 

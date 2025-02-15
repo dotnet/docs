@@ -1,7 +1,7 @@
 ---
 title: "Migrate from .NET Framework 1.1, 2.0, and 3.5"
 description: Learn about the steps required to run an application compiled using .NET Framework 1.1 on Windows 7 or later.
-ms.date: "03/30/2017"
+ms.date: 02/14/2025
 helpviewer_keywords:
   - ".NET Framework 4.5, migrating from 1.1"
   - ".NET Framework 1.1, migrating to .NET Framework 4.5"
@@ -10,7 +10,7 @@ no-loc: [".config", "MyExecutable.exe", "MyExecutable.exe.config"]
 ---
 # Migrate from .NET Framework 1.1, 2.0, and 3.5 to .NET Framework 4
 
-Windows no longer supports .NET Framework 1.1 and 2.0. As a result, applications that target older .NET Framework versions won't run without explicitly installing .NET Framework 3.5. However, it's recommended that you upgrade the app to .NET Framework 4. This article discusses the steps required to run an application that targets an old version .NET Framework. For more information about .NET Framework 1.1 and Windows 8, see [Run .NET Framework 1.1 Apps on Windows 8 and later versions](../install/run-net-framework-1-1-apps.md).
+Windows no longer supports .NET Framework 1.1 and 2.0. As a result, applications that target older .NET Framework versions won't run without explicitly installing .NET Framework 3.5. However, it's recommended that you upgrade the app to .NET Framework 4. This article discusses the steps required to run an application that targets an old version .NET Framework.
 
 ## Retarget or recompile
 

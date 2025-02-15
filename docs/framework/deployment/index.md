@@ -65,7 +65,7 @@ Use the following links to other MSDN topics for specific information about depl
 
 - [Detecting versions](../install/how-to-determine-which-versions-are-installed.md)
 
-- [Detecting service packs and updates](../migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)
+- [Detecting service packs and updates](../install/how-to-determine-which-net-framework-updates-are-installed.md)
 
 ## Features That Simplify Deployment
 

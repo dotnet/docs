@@ -14,7 +14,7 @@ ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
 .NET Framework is an integral part of many apps running on Windows and provides common functionality for those apps to run. For developers, .NET Framework provides a comprehensive and consistent programming model for building apps that have visually stunning user experiences and seamless and secure communication.
 
 > [!NOTE]
-> This article is intended for **developers** who either want to install .NET Framework on their own system or who want to install it with their applications. For **users** interested in installing .NET Framework, see the individual articles that discuss installing .NET Framework on specific operating systems, such as [Install .NET Framework on Windows 10 and Windows Server 2016](on-windows-10.md).
+> This article is intended for **developers** who either want to install .NET Framework on their own system or who want to install it with their applications. For **users** interested in installing .NET Framework, see [Install .NET Framework on Windows and Windows Server](on-windows-and-server.md).
 
 This article provides links for installing all versions of .NET Framework from .NET Framework 4.5 to .NET Framework 4.8.1 on your computer. If you're a developer, you can also use these links to download and redistribute .NET Framework with your apps. For information on deploying a version of .NET Framework with your app, see [.NET Framework deployment guide for developers](../deployment/deployment-guide-for-developers.md).
 

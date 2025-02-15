@@ -19,7 +19,7 @@ Built on top of the [Microsoft.Extensions.AI abstractions](../ai-extensions.md),
 
 ## Test integration
 
-The libraries are designed to integrate smoothly with existing .NET apps, allowing you to leverage existing testing infrastructures and familiar syntax to evaluate intelligent apps. You can use any test framework (for example, [MSTest](../../core/testing/index.md#mstest), [xUnit](../../core/testing/index.md#xunit), or [NUnit](../../core/testing/index.md#nunit)) and testing workflow (for example, Test Explorer, [dotnet test](../../core/tools/dotnet-test.md), or a CI/CD pipeline). The library also provides easy ways to do online evaluations of your application by publishing evaluation scores to telemetry and monitoring dashboards.
+The libraries are designed to integrate smoothly with existing .NET apps, allowing you to leverage existing testing infrastructures and familiar syntax to evaluate intelligent apps. You can use any test framework (for example, [MSTest](../../core/testing/index.md#mstest), [xUnit](../../core/testing/index.md#xunit), or [NUnit](../../core/testing/index.md#nunit)) and testing workflow (for example, [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer), [dotnet test](../../core/tools/dotnet-test.md), or a CI/CD pipeline). The library also provides easy ways to do online evaluations of your application by publishing evaluation scores to telemetry and monitoring dashboards.
 
 ## Comprehensive evaluation metrics
 

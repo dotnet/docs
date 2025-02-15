@@ -13,8 +13,6 @@ items:
     href: ai-extensions.md
   - name: Semantic Kernel
     href: semantic-kernel-dotnet-overview.md
-- name: Learning resources and samples
-  href: azure-ai-for-dotnet-developers.md
 - name: Quickstarts
   items:
   - name: Build a chat app
@@ -79,3 +77,7 @@ items:
   items:
   - name: Evaluate LLM prompt completions
     href: tutorials/llm-eval.md
+- name: Resources
+  items:
+  - name: Azure AI samples and docs
+    href: azure-ai-for-dotnet-developers.md

@@ -3,7 +3,7 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
-- name: Quickstart - Connect to and prompt an AI model
+- name: "Quickstart: Connect to and prompt an AI model"
   href: quickstarts/quickstart-openai-summarize-text.md
 - name: AI frameworks and SDKs
   items:
@@ -53,7 +53,7 @@ items:
     href: conceptual/understanding-openai-functions.md
 - name: Chat with your data (RAG)
   items:
-    - name: Get started with the chat sample 
+    - name: Get started with the chat sample
       href: get-started-app-chat-template.md
     - name: Implement RAG using vector search
       href: tutorials/tutorial-ai-vector-search.md
@@ -77,5 +77,7 @@ items:
     href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
 - name: Evaluation
   items:
-  - name: Evaluate LLM prompt completions
+  - name: The Microsoft.Extensions.AI.Evaluation libraries
+    href: conceptual/evaluation-libraries.md
+  - name: "Tutorial: Evaluate LLM prompt completions"
     href: tutorials/llm-eval.md

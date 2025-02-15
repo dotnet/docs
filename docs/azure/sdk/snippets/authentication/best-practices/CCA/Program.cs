@@ -2,24 +2,35 @@
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
-var clientId = "<user-assigned-client-id>";
-var builder = WebApplication.CreateBuilder(args);
+string clientId = "<user-assigned-client-id>";
+string storageAccountName = "<account-name>";
+string keyVaultName = "<vault-name>";
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 #region snippet_credential_reuse_AspNetCore
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    clientBuilder.AddSecretClient(new Uri("<key-vault-url>"));
-    clientBuilder.AddBlobServiceClient(new Uri("<blob-storage-url>"));
+    clientBuilder.AddSecretClient(
+        new Uri($"https://{keyVaultName}.vault.azure.net"));
+    clientBuilder.AddBlobServiceClient(
+        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
 
-    string? clientId = builder.Configuration["UserAssignedClientId"];
+    TokenCredential credential;
 
-    TokenCredential credential = clientId is not null
-        ? new ManagedIdentityCredential(
-            ManagedIdentityId.FromUserAssignedClientId(clientId))
-        : new ChainedTokenCredential(
+    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
+    {
+        string? clientId = builder.Configuration["UserAssignedClientId"];
+        credential = new ManagedIdentityCredential(
+            ManagedIdentityId.FromUserAssignedClientId(clientId));
+    }
+    else
+    {
+        // local development environment
+        credential = new ChainedTokenCredential(
             new VisualStudioCredential(),
             new AzureCliCredential(),
             new AzurePowerShellCredential());
+    }
 
     clientBuilder.UseCredential(credential);
 });
@@ -36,10 +47,8 @@ ManagedIdentityCredentialOptions miCredentialOptions = new(
             Delay = TimeSpan.FromSeconds(0.5),
         }
     };
-    ChainedTokenCredential tokenChain = new(
-        new ManagedIdentityCredential(miCredentialOptions),
-        new VisualStudioCredential()
-    );
+
+ManagedIdentityCredential miCredential = new(miCredentialOptions);
 #endregion
 
 builder.Services.AddEndpointsApiExplorer();

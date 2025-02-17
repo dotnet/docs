@@ -426,6 +426,7 @@ dotnet test
     [-f|--framework <FRAMEWORK>]
     [--os <OS>]
     [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-v|--verbosity <LEVEL>]
     [--no-build]
     [--no-restore]
     [--no-ansi]
@@ -495,6 +496,8 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   The target runtime to test for.
 
   Short form `-r` available starting in .NET SDK 7.
+
+  [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--no-build`**
 

@@ -497,7 +497,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Short form `-r` available starting in .NET SDK 7.
 
-  [!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
 
 - **`--no-build`**
 

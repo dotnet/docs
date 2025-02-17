@@ -790,17 +790,6 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
-    directory: "/docs/ai/how-to/snippets/semantic-kernel" #semantic-kernel.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
     directory: "/docs/ai/quickstarts/snippets/assistants" #AIAssistants.csproj
     schedule:
       interval: "weekly"
@@ -2188,6 +2177,17 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/csharp/whats-new/tutorials/snippets/primary-constructors" #primary-constructors.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/devops/snippets/create-dotnet-github-action/DotNet.GitHubAction" #DotNet.GitHubAction.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

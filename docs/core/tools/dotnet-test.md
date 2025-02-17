@@ -497,7 +497,9 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Short form `-r` available starting in .NET SDK 7.
 
-[!INCLUDE [verbosity](../../../includes/cli-verbosity-minimal.md)]
+- **`-v|--verbosity <LEVEL>`**
+  
+  Sets the MSBuild verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
 - **`--no-build`**
 

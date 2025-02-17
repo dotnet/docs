@@ -472,7 +472,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
 
-- **`-t|--list-tests`**
+- **`--list-tests`**
 
   Lists the discovered tests instead of running the tests.
 

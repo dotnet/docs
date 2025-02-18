@@ -1,7 +1,7 @@
 ---
 title: "How to modify string contents"
 description: Review examples of several techniques to modify existing string contents in C#, which return a new string object.
-ms.date: 02/26/2018
+ms.date: 02/18/2025
 helpviewer_keywords: 
   - "strings [C#], modifying"
 ---
@@ -19,9 +19,9 @@ The following code creates a new string by replacing existing text with a substi
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet1":::
 
-The preceding code demonstrates this *immutable* property of strings. You can see in the preceding example that the original string, `source`, is not modified. The <xref:System.String.Replace%2A?displayProperty=nameWithType> method creates a new `string` containing the modifications.
+The preceding code demonstrates this *immutable* property of strings. You can see in the preceding example that the original string, `source`, isn't modified. The <xref:System.String.Replace%2A?displayProperty=nameWithType> method creates a new `string` containing the modifications.
 
-The <xref:System.String.Replace%2A> method can replace either strings or single characters. In both cases, every occurrence of the sought text is replaced.  The following example replaces all ' ' characters with '\_':
+The <xref:System.String.Replace%2A> method can replace either strings or single characters. In both cases, every occurrence of the sought text is replaced. The following example replaces all ' ' characters with '\_':
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet2":::
 
@@ -29,13 +29,13 @@ The source string is unchanged, and a new string is returned with the replacemen
 
 ## Trim white space
 
-You can use the <xref:System.String.Trim%2A?displayProperty=nameWithType>, <xref:System.String.TrimStart%2A?displayProperty=nameWithType>, and <xref:System.String.TrimEnd%2A?displayProperty=nameWithType> methods to remove any leading or trailing white space.  The following code shows an example of each. The source string does not change; these methods return a new string with the modified contents.
+You can use the <xref:System.String.Trim%2A?displayProperty=nameWithType>, <xref:System.String.TrimStart%2A?displayProperty=nameWithType>, and <xref:System.String.TrimEnd%2A?displayProperty=nameWithType> methods to remove any leading or trailing white space. The following code shows an example of each. The source string doesn't change; these methods return a new string with the modified contents.
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet3":::
 
 ## Remove text
 
-You can remove text from a string using the <xref:System.String.Remove%2A?displayProperty=nameWithType> method. This method removes a number of characters starting at a specific index. The following example shows how to use <xref:System.String.IndexOf%2A?displayProperty=nameWithType> followed by <xref:System.String.Remove%2A> to remove text from a string:
+You can remove text from a string using the <xref:System.String.Remove%2A?displayProperty=nameWithType> method. This method removes the specified number of characters starting at a specific index. The following example shows how to use <xref:System.String.IndexOf%2A?displayProperty=nameWithType> followed by <xref:System.String.Remove%2A> to remove text from a string:
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet4":::
 
@@ -59,11 +59,11 @@ The following example shows how to replace a set of characters in a string. Firs
 
 ## Programmatically build up string content
 
-Since strings are immutable, the previous examples all create temporary strings or character arrays. In high-performance scenarios, it may be desirable to avoid these heap allocations. .NET Core provides a <xref:System.String.Create%2A?displayProperty=nameWithType> method that allows you to programmatically fill in the character content of a string via a callback while avoiding the intermediate temporary string allocations.
+Since strings are immutable, the previous examples all create temporary strings or character arrays. In high-performance scenarios, it's desirable to avoid these heap allocations. .NET Core provides a <xref:System.String.Create%2A?displayProperty=nameWithType> method that allows you to programmatically fill in the character content of a string via a callback while avoiding the intermediate temporary string allocations.
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet7":::
 
-You could modify a string in a fixed block with unsafe code, but it is **strongly** discouraged to modify the string content after a string is created. Doing so will break things in unpredictable ways. For example, if someone interns a string that has the same content as yours, they'll get your copy and won't expect that you are modifying their string.
+You could modify a string in a fixed block with unsafe code, but it's **strongly** discouraged to modify the string content after a string is created. Doing so causes unpredictable bugs. For example, if someone interns a string that has the same content as yours, they get your copy and didn't expect that you're modifying their string.
 
 ## See also
 

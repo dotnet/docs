@@ -37,7 +37,7 @@ The <xref:System.String.Split*?displayProperty=nameWithType> has many overloads.
 - You can specify if repeated separator characters are ignored, or produce empty substrings in the return value.
 - You can specify if leading and trailing whitespace is removed from the returned substrings.
 
-The remaining examples use different overloads to show each of these behaviors. 
+The remaining examples use different overloads to show each of these behaviors.
 
 ## Specify multiple separators
 

@@ -53,7 +53,7 @@ void registerUsingClientId(WebApplicationBuilder builder)
 
         TokenCredential credential = null;
 
-        if (builder.Environment.IsProduction())
+        if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
         {
             // Managed identity token credential discovered when running in Azure environments
             credential = new ManagedIdentityCredential(
@@ -72,7 +72,7 @@ void registerUsingClientId(WebApplicationBuilder builder)
     #region snippet_MIC_ClientId
     TokenCredential credential = null;
 
-    if (builder.Environment.IsProduction())
+    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
     {
         // Managed identity token credential discovered when running in Azure environments
         credential = new ManagedIdentityCredential(
@@ -100,7 +100,7 @@ void registerUsingObjectId(WebApplicationBuilder builder)
             
         TokenCredential credential = null;
 
-        if (builder.Environment.IsProduction())
+        if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
         {
             // Managed identity token credential discovered when running in Azure environments
             credential = new ManagedIdentityCredential(
@@ -118,7 +118,7 @@ void registerUsingObjectId(WebApplicationBuilder builder)
     #region snippet_MIC_ObjectId
     TokenCredential credential = null;
 
-    if (builder.Environment.IsProduction())
+    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
     {
         // Managed identity token credential discovered when running in Azure environments
         credential = new ManagedIdentityCredential(
@@ -147,7 +147,7 @@ void registerUsingResourceId(WebApplicationBuilder builder)
 
         TokenCredential credential = null;
 
-        if (builder.Environment.IsProduction())
+        if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
         {
             // Managed identity token credential discovered when running in Azure environments
             credential = new ManagedIdentityCredential(
@@ -166,7 +166,7 @@ void registerUsingResourceId(WebApplicationBuilder builder)
     #region snippet_MIC_ResourceId
     TokenCredential credential = null;
 
-    if (builder.Environment.IsProduction())
+    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
     {
         // Managed identity token credential discovered when running in Azure environments
         credential = new ManagedIdentityCredential(

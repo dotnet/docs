@@ -32,7 +32,7 @@ builder.Services.AddAzureClients(clientBuilder =>
 #region snippet_MIC
 TokenCredential credential = null;
 
-if (builder.Environment.IsProduction())
+if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
 {
     // Managed identity token credential discovered when running in Azure environments
     credential = new ManagedIdentityCredential();

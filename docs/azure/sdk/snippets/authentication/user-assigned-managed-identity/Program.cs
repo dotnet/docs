@@ -48,6 +48,9 @@ void registerUsingClientId(WebApplicationBuilder builder)
     #region snippet_MIC_ClientId_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
+        clientBuilder.AddBlobServiceClient(
+            new Uri("https://<account-name>.blob.core.windows.net"));
+
         TokenCredential credential = null;
 
         if (builder.Environment.IsProduction())
@@ -62,8 +65,6 @@ void registerUsingClientId(WebApplicationBuilder builder)
             credential = new DefaultAzureCredential();
         }
 
-        clientBuilder.AddBlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"));
         clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ClientId_UseCredential
@@ -79,7 +80,7 @@ void registerUsingClientId(WebApplicationBuilder builder)
     }
     else
     {
-        // Running locally on dev machine - do NOT use in production or outside of local dev
+        // Running locally on dev machine - DO NOT use in production or outside of local dev
         credential = new DefaultAzureCredential();
     }
 
@@ -94,6 +95,9 @@ void registerUsingObjectId(WebApplicationBuilder builder)
     #region snippet_MIC_ObjectId_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
+        clientBuilder.AddBlobServiceClient(
+            new Uri("https://<account-name>.blob.core.windows.net"));
+            
         TokenCredential credential = null;
 
         if (builder.Environment.IsProduction())
@@ -107,9 +111,6 @@ void registerUsingObjectId(WebApplicationBuilder builder)
             // Running locally on dev machine - DO NOT use in production or outside of local dev
             credential = new DefaultAzureCredential();
         }
-
-        clientBuilder.AddBlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"));
         clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ObjectId_UseCredential
@@ -141,6 +142,9 @@ void registerUsingResourceId(WebApplicationBuilder builder)
     #region snippet_MIC_ResourceId_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
     {
+        clientBuilder.AddBlobServiceClient(
+            new Uri("https://<account-name>.blob.core.windows.net"));
+
         TokenCredential credential = null;
 
         if (builder.Environment.IsProduction())
@@ -155,8 +159,6 @@ void registerUsingResourceId(WebApplicationBuilder builder)
             credential = new DefaultAzureCredential();
         }
 
-        clientBuilder.AddBlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"));
         clientBuilder.UseCredential(credential);
     });
     #endregion snippet_MIC_ResourceId_UseCredential

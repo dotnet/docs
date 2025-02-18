@@ -16,7 +16,7 @@ The <xref:System.Text.Json?displayProperty=fullName> library has been updated to
 
 ## Previous behavior
 
-Previously, <xref:System.Text.Json?displayProperty=fullName> didn't unescape metadata property names. This would lead to invalid property names being accepted, which could bypass metadata property validation. 
+Previously, <xref:System.Text.Json?displayProperty=fullName> didn't unescape metadata property names. This would lead to invalid property names being accepted, which could bypass metadata property validation.
 
 For example, the following code would succeed in the first call but throw an exception in the second call:
 

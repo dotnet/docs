@@ -181,7 +181,7 @@ You can learn more about UTF-8 string literals in the string literal section of 
 
 You can add the [`required` modifier](../language-reference/keywords/required.md) to properties and fields to enforce constructors and callers to initialize those values. The <xref:System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute?displayProperty=nameWithType> can be added to constructors to inform the compiler that a constructor initializes *all* required members.
 
-For more information on required members, See the [init-only](../programming-guide/classes-and-structs/properties.md) section of the properties article.
+For more information on required members, See the [Required properties](../programming-guide/classes-and-structs/properties.md#required-properties) section of the properties article.
 
 ## `ref` fields and `ref scoped` variables
 

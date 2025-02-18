@@ -83,7 +83,7 @@ Available starting in: .NET 9.0.
 
 | Attribute | Type | Description | Examples | Presence |
 |---|---|---|---|---|
-| `gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`;`loh`;`poh` | Always |
+| `gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`; `loh`; `poh` | Always |
 
 The .NET GC divides the heap into generations. In addition to the standard numbered generations, the GC also puts some objects into two special generations:
 
@@ -102,7 +102,7 @@ Available starting in: .NET 9.0.
 
 | Attribute | Type | Description | Examples | Presence |
 |---|---|---|---|---|
-| `gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`;`loh`;`poh` | Always |
+| `gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`; `loh`; `poh` | Always |
 
 This metric reports the same values as calling <xref:System.GCGenerationInfo.FragmentationAfterBytes?displayProperty=nameWithType>.
 

@@ -72,7 +72,7 @@ Resource IDs can be built by convention, which makes them more convenient when w
         --query 'id'
     ```
 
-1. Configure the `ManagedIdentityCredential` with the resource ID:
+1. Configure `ManagedIdentityCredential` with the resource ID:
 
     :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
 

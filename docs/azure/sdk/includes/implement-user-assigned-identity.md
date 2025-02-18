@@ -44,7 +44,7 @@ The client ID is used to identify a managed identity when configuring applicatio
     az identity show \
         --resource-group <resource-group-name> \
         --name <identity-name> \
-        --query 'clientId' \
+        --query 'clientId'
     ```
 
 1. Configure the `ManagedIdentityCredential` with the client ID:
@@ -69,7 +69,7 @@ Resource IDs can be built by convention, which makes them more convenient when w
     az identity show \
         --resource-group <resource-group-name> \
         --name <identity-name> \
-        --query 'id' \
+        --query 'id'
     ```
 
 1. Configure the `ManagedIdentityCredential` with the resource ID:
@@ -90,7 +90,7 @@ A principal ID is another name for an object ID.
     az identity show \
         --resource-group <resource-group-name> \
         --name <identity-name> \
-        --query 'principalId' \
+        --query 'principalId'
     ```
 
 1. Configure the `ManagedIdentityCredential` with the object ID:

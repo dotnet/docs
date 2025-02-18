@@ -22,7 +22,7 @@ This security update addresses a remote code execution vulnerability detailed in
 
 #### CLR
 
-Address crashes that can occur due to certain interactions between multi-module assembly native image usage and OS code integrity enforcement policy updates. (*Applies to: .NET Framework 4.8, 4.8.1.*)
+Address crashes that can occur due to certain interactions between multi-module assembly native image usage and OS code integrity enforcement policy updates. (*Applies to: .NET Framework 4.8, 4.8.1*)
 
 ## Known issues in this release
 

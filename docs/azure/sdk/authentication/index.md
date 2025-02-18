@@ -6,7 +6,7 @@ ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 08/02/2024
 ---
 
-# How to authenticate .NET apps to Azure services using the Azure Identity library
+# Authenticate .NET apps to Azure services using the Azure Identity library overview
 
 When an app needs to access an Azure resource, the app must be authenticated to Azure. This is true for all apps, whether deployed to Azure, deployed on-premises, or under development on a local developer workstation. This article describes the recommended approaches to authenticate an app to Azure when using the Azure SDK client libraries.
 

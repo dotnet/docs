@@ -12,10 +12,6 @@ This article list and explains all `Microsoft Testing Platform` extensions relat
 
 You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 
-## Coverlet
-
-There's currently no Coverlet extension, but you can use [Coverlet .NET global tool](https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue).
-
 ## Microsoft code coverage
 
 Microsoft Code Coverage analysis is possible for both managed (CLR) and unmanaged (native) code. Both static and dynamic instrumentation are supported. This extension is shipped as part of [Microsoft.Testing.Extensions.CodeCoverage](https://nuget.org/packages/Microsoft.Testing.Extensions.CodeCoverage) NuGet package.
@@ -34,8 +30,21 @@ Microsoft Code Coverage provides the following options:
 | Option                     | Description                                                                   |
 |----------------------------|-------------------------------------------------------------------------------|
 | `--coverage`               | Collect the code coverage using dotnet-coverage tool.                         |
-| `--coverage-output`        | Output file.                                                                  |
-| `--coverage-output-format` | Output file format. Supported values are: 'coverage', 'xml', and 'cobertura'. |
-| `--coverage-settings`      | XML code coverage settings.                                                   |
+| `--coverage-output`        | The name or path of the produced coverage file. By default, the file is `TestResults/<guid>.coverage`. |
+| `--coverage-output-format` | Output file format. Supported values are: `coverage`, `xml`, and `cobertura`. Default is `coverage`. |
+| `--coverage-settings`      | [XML code coverage settings](../additional-tools/dotnet-coverage.md#settings). |
 
 For more information about the available options, see [settings](../additional-tools/dotnet-coverage.md#settings) and [samples](https://github.com/microsoft/codecoverage/tree/main/samples/Algorithms).
+
+## Coverlet
+
+> [!IMPORTANT]
+> The `coverlet.collector` NuGet package is designed specifically for VSTest and cannot be used with `Microsoft.Testing.Platform`.
+
+There's currently no Coverlet extension, but you can use [Coverlet .NET global tool](https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue).
+
+Assuming you've already installed the Coverlet global tool, you can now run:
+
+```bash
+coverlet .\bin\Debug\net8.0\TestProject2.dll --target "dotnet" --targetargs "test .\bin\Debug\net8.0\TestProject2.dll --no-build"
+```

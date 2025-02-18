@@ -19,10 +19,10 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
  There are no extra restrictions on the types of data that can be returned from a WEB HTTP service. Any serializable type can be returned from an WEB HTTP service operation. Because WEB HTTP service operations can be invoke by a web browser there is a limitation on what data types can be specified in a URL. For more information on what types are supported by default see the **UriTemplate Query String Parameters and URLs** section below. The default behavior can be changed by providing your own T:System.ServiceModel.Dispatcher.QueryStringConverter implementation which specifies how to convert the parameters specified in a URL to the actual parameter type. For more information, see <xref:System.ServiceModel.Dispatcher.QueryStringConverter>
 
 > [!CAUTION]
-> Services written with the WCF WEB HTTP programming model do not use SOAP messages. Because SOAP is not used, the security features provided by WCF cannot be used. You can, however use transport-based security by hosting your service with HTTPS. For more information about WCF security, see [Security Overview](security-overview.md)
+> Services written with the WCF WEB HTTP programming model do not use SOAP messages. Because SOAP is not used, the security features provided by WCF cannot be used. You can, however use transport-based security by hosting your service with HTTPS. For more information about WCF security, see [Security Overview](security-overview.md).
 
 > [!WARNING]
-> Installing the WebDAV extension for IIS can cause Web HTTP services to return an HTTP 405 error as the WebDAV extension attempts to handle all PUT requests. To work around this issue you can uninstall the WebDAV extension or disable the WebDAV extension for your web site. For more information, see [IIS and WebDav](/iis/publish/using-webdav/webdav-extension-video-walkthrough)
+> Installing the WebDAV extension for IIS can cause Web HTTP services to return an HTTP 405 error as the WebDAV extension attempts to handle all PUT requests. To work around this issue you can uninstall the WebDAV extension or disable the WebDAV extension for your web site. For more information, see [IIS and WebDav](/iis/publish/using-webdav/webdav-extension-video-walkthrough).
 
 ## URI Processing with UriTemplate and UriTemplateTable
 
@@ -50,7 +50,7 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
 
  There are many times (especially on the server, where dispatching a request to a service operation based on the URI is necessary) that you want to keep track of a set of <xref:System.UriTemplate> objects in a data structure that can independently address each of the contained templates. <xref:System.UriTemplateTable> represents a set of URI templates and selects the best match given a set of templates and a candidate URI. This is not affiliated with any particular networking stack (WCF included) so you can use it wherever necessary.
 
- The WCF Service Model makes use of <xref:System.UriTemplate> and <xref:System.UriTemplateTable> to associate service operations with a set of URIs described by a <xref:System.UriTemplate>. A service operation is associated with a <xref:System.UriTemplate>, using either the <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute>. For more information about <xref:System.UriTemplate> and <xref:System.UriTemplateTable>, see [UriTemplate and UriTemplateTable](uritemplate-and-uritemplatetable.md)
+ The WCF Service Model makes use of <xref:System.UriTemplate> and <xref:System.UriTemplateTable> to associate service operations with a set of URIs described by a <xref:System.UriTemplate>. A service operation is associated with a <xref:System.UriTemplate>, using either the <xref:System.ServiceModel.Web.WebGetAttribute> or the <xref:System.ServiceModel.Web.WebInvokeAttribute>. For more information about <xref:System.UriTemplate> and <xref:System.UriTemplateTable>, see [UriTemplate and UriTemplateTable](uritemplate-and-uritemplatetable.md).
 
 ## WebGet and WebInvoke Attributes
 
@@ -94,7 +94,7 @@ interface ICustomer
 }
 ```
 
- To see a complete sample of a WCF service that uses the WCF WEB HTTP programming model, see [How to: Create a Basic WCF Web HTTP Service](how-to-create-a-basic-wcf-web-http-service.md)
+For a complete sample of a WCF service that uses the WCF WEB HTTP programming model, see [How to: Create a Basic WCF Web HTTP Service](how-to-create-a-basic-wcf-web-http-service.md).
 
 ## UriTemplate Query String Parameters and URLs
 
@@ -128,9 +128,7 @@ interface ICustomer
  The WCF WEB HTTP programming model has new features to work with many different data formats. At the binding layer, the <xref:System.ServiceModel.WebHttpBinding> can read and write the following different kinds of data:
 
 - XML
-
 - JSON
-
 - Opaque binary streams
 
  This means the WCF WEB HTTP programming model can handle any type of data but, you may be programming against <xref:System.IO.Stream>.

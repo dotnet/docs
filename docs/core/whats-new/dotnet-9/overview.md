@@ -70,7 +70,7 @@ For more information, see [What's new in the SDK for .NET 9](sdk.md).
 - Builds on top of `TensorPrimitives` for efficient math operations.
 - Provides efficient interop with AI libraries (ML.NET, TorchSharp, ONNX Runtime) using zero copies where possible.
 - Enables easy and efficient data manipulation with indexing and slicing operations.
-- Is [experimental](../../../fundamentals/apicompat/preview-apis.md#experimentalattribute) in .NET 9.
+- Is [experimental](../../../fundamentals/runtime-libraries/preview-apis.md#experimentalattribute) in .NET 9.
 
 ### ML.NET
 
@@ -125,7 +125,7 @@ The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is enhanced perfor
 - <xref:Microsoft.Maui.Controls.Entry> now supports additional keyboard modes.
 - Control handlers automatically disconnect from their controls when possible.
 - <xref:Microsoft.Maui.Controls.Application.MainPage> is deprecated in favor of setting the primary page of the app by overriding <xref:Microsoft.Maui.Controls.Application.CreateWindow(Microsoft.Maui.IActivationState)?displayProperty=nameWithType> class.
-  
+
 For more information about that these new features and more, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
 
 ## EF Core

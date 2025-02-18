@@ -30,7 +30,7 @@ This layer runs test through VSTest and integrates with it on VSTest Test Framew
 
 ### `dotnet test` - Microsoft.Testing.Platform mode
 
-By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can enable a full `Microsoft.Testing.Platform` by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project file. This setting disables VSTest and, thanks to the transitive dependency to the [Microsoft.Testing.Platform.MSBuild](https://nuget.org/packages/Microsoft.Testing.Platform.MSBuild) NuGet package, directly runs all `Microsoft.Testing.Platform` empowered test projects in your solution. It works seamlessly if you pass a direct `Microsoft.Testing.Platform` test project.
+By default, `dotnet test` is using VSTest behavior to run tests. You can enable support for `Microsoft.Testing.Platform` in `dotnet test` by specifying the `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` setting in your project file.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -56,7 +56,33 @@ By default, VSTest is used to run `Microsoft.Testing.Platform` tests. You can en
 </Project>
 ```
 
-In this mode, you can supply extra parameters that are used to call the testing application in one of the following ways:
+> [!NOTE]
+> It's highly recommended that you set the `TestingPlatformDotnetTestSupport` property in `Directory.Build.props`. That way, you don't have to add it to every test project file, and you don't risk introducing a new project that doesn't set this property and end up with a solution where some projects are VSTest while others are Microsoft.Testing.Platform, which may not work correctly and is unsupported scenario.
+
+> [!IMPORTANT]
+> Despite `TestingPlatformDotnetTestSupport` being set to `true`, most of the command line options defined in [dotnet test](../tools/dotnet-test.md) remain VSTest oriented and don't impact `Microsoft.Testing.Platform` based tests. To supply arguments to `Microsoft.Testing.Platform`, you need to use one of the methods described in [Microsoft.Testing.Platform command line arguments with dotnet test](#microsofttestingplatform-command-line-arguments-with-dotnet-test).
+
+The list below described all `dotnet test` command line options that are supported by `Microsoft.Testing.Platform`:
+
+- `-a|--arch <ARCHITECTURE>`
+- `--artifacts-path <ARTIFACTS_DIR>`
+- `-c|--configuration <CONFIGURATION>`
+- `-f|--framework <FRAMEWORK>`
+- `-e|--environment <NAME="VALUE">`
+- `--interactive`
+- `--no-build`
+- `--nologo`
+- `--no-restore`
+- `-o|--output <OUTPUT_DIRECTORY>`
+- `--os <OS>`
+- `-r|--runtime <RUNTIME_IDENTIFIER>`
+- `-v|--verbosity <LEVEL>`
+
+These arguments are supported because they are linked to the build step and are independent of the testing platform used.
+
+### `Microsoft.Testing.Platform` command line arguments with `dotnet test`
+
+You can supply arguments that are used to call the testing application in one of the following ways:
 
 - Beginning with `Microsoft.Testing.Platform` version 1.4 (included with MSTest version 3.6), you can add options after the double dash `--` on the command line:
 
@@ -169,3 +195,6 @@ Or in project file:
 
 </Project>
 ```
+
+> [!IMPORTANT]
+> All examples above add properties like `EnableMSTestRunner`, `TestingPlatformDotnetTestSupport`, and `TestingPlatformCaptureOutput` in the csproj file. However, it's highly recommended that you set these properties in `Directory.Build.props`. That way, you don't have to add it to every test project file, and you don't risk introducing a new project that doesn't set these properties and end up with a solution where some projects are VSTest while others are Microsoft.Testing.Platform, which may not work correctly and is unsupported scenario.

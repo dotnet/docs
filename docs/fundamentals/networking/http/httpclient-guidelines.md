@@ -94,7 +94,7 @@ The preceding code:
 - Instantiates an `HttpClient` given the `resilienceHandler`.
 
 > [!IMPORTANT]
-> The `Microsoft.Extensions.Http.Resilience` library is currently marked as [experimental](../../../csharp/language-reference/attributes/general.md#experimental-attribute) and it may change in the future.
+> The `Microsoft.Extensions.Http.Resilience` library is currently marked as [experimental](../../../csharp/language-reference/attributes/general.md#experimental-attributes) and it may change in the future.
 
 ## See also
 

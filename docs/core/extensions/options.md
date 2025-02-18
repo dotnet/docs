@@ -92,7 +92,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 - Is useful in scenarios where options should be recomputed on every injection resolution, in [scoped or transient lifetimes](dependency-injection.md#service-lifetimes). For more information, see [Use IOptionsSnapshot to read updated data](#use-ioptionssnapshot-to-read-updated-data).
 - Is registered as [Scoped](dependency-injection.md#scoped) and therefore cannot be injected into a Singleton service.
-- Supports [named options](#named-options-support-using-iconfigurenamedoptions)
+- Supports [named options](#named-options-support-using-iconfigurenamedoptions).
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>:
 

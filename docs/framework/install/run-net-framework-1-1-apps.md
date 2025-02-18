@@ -10,7 +10,7 @@ ms.assetid: fb14e195-fea5-4561-b9a8-60a67283edb9
 
 # Run .NET Framework 1.1 apps on Windows 8, Windows 8.1, Windows 10, or Windows 11
 
-.NET Framework 1.1 is not supported on the Windows 8, Windows 8.1, Windows Server 2012, Windows Server 2012 R2, Windows 10, or Windows 11 operating systems. In some cases, .NET Framework 1.1 is required for an app to run. In those cases, contact your independent software vendor (ISV) to have the app upgraded to run on .NET Framework 3.5 SP1 or a later version. For more information, see [Migrating from .NET Framework 1.1](../migration-guide/migrating-from-the-net-framework-1-1.md).
+.NET Framework 1.1 is not supported on the Windows 8, Windows 8.1, Windows Server 2012, Windows Server 2012 R2, Windows 10, or Windows 11 operating systems. In some cases, .NET Framework 1.1 is required for an app to run. In those cases, refer to the [Install .NET Framework 3.5 on Windows article](./dotnet-35-windows.md).
 
 ## Install .NET Framework 1.1 from a CD or download center
 

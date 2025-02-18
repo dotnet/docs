@@ -1,5 +1,5 @@
 ---
-title: Get started with the chat using your own data sample for .NET 
+title: "Get started with the 'chat using your own data sample' for .NET"
 description: Get started with .NET and search across your own data using a chat app sample implemented using Azure OpenAI Service and Retrieval Augmented Generation (RAG) in Azure AI Search. Easily deploy with Azure Developer CLI. This article uses the Azure AI Reference Template sample.
 ms.date: 12/19/2024
 ms.topic: get-started
@@ -7,7 +7,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact with app infused with my own business data so that learn from the sample code.
 ---
 
-# Get started with the chat using your own data sample for .NET
+# Get started with the 'Chat using your own data sample' for .NET
 
 This article shows you how to deploy and run the [Chat with your own data sample for .NET](https://github.com/Azure-Samples/azure-search-openai-demo-csharp). This sample implements a chat app using C#, Azure OpenAI Service, and [Retrieval Augmented Generation (RAG)](/azure/search/retrieval-augmented-generation-overview) in Azure AI Search to get answers about employee benefits at a fictitious company. The employee benefits chat app is seeded with PDF files including an employee handbook, a benefits document and a list of company roles and expectations.
 
@@ -19,7 +19,7 @@ By following the instructions in this article, you will:
 - Get answers about employee benefits.
 - Change settings to change behavior of responses.
 
-Once you complete this procedure,you can start modifying the new project with your custom code.
+Once you complete this procedure, you can start modifying the new project with your custom code.
 
 This article is part of a collection of articles that show you how to build a chat app using Azure Open AI Service and Azure AI Search.
 
@@ -31,7 +31,7 @@ Other articles in the collection include:
 
 ## Architectural overview
 
-In this sample application, a fictitious company called Contoso Electronics provides the chat app experience to its employees to ask questions about the benefits, internal policies, as well as job descriptions and roles.
+In this sample application, a fictitious company called Contoso Electronics provides the chat app experience to its employees to ask questions about the benefits, internal policies, and job descriptions and roles.
 
 The architecture of the chat app is shown in the following diagram:
 
@@ -44,7 +44,7 @@ The architecture of the chat app is shown in the following diagram:
 
 ## Cost
 
-Most resources in this architecture use a basic or consumption pricing tier. Consumption pricing is based on usage, which means you only pay for what you use. To complete this article, there will be a charge but it will be minimal. When you are done with the article, you can delete the resources to stop incurring charges.
+Most resources in this architecture use a basic or consumption pricing tier. Consumption pricing is based on usage, which means you only pay for what you use. To complete this article, there will be a charge, but it will be minimal. When you are done with the article, you can delete the resources to stop incurring charges.
 
 For more information, see [Azure Samples: Cost in the sample repo](https://github.com/Azure-Samples/azure-search-openai-demo-csharp#cost-estimation).
 
@@ -57,19 +57,19 @@ To follow along with this article, you need the following prerequisites:
 #### [Codespaces (recommended)](#tab/github-codespaces)
 
 * An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
-* Azure account permissions - Your Azure Account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
+* Azure account permissions - Your Azure account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
 * Access granted to Azure OpenAI in the desired Azure subscription.
-    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have an issue.
+    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have a problem.
 * GitHub account
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
 * An Azure subscription - [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
-* Azure account permissions - Your Azure Account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
+* Azure account permissions - Your Azure account must have Microsoft.Authorization/roleAssignments/write permissions, such as [User Access Administrator](/azure/role-based-access-control/built-in-roles#user-access-administrator) or [Owner](/azure/role-based-access-control/built-in-roles#owner).
 * Access granted to Azure OpenAI in the desired Azure subscription.
-    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have an issue.
+    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access). Open an issue on this repo to contact us if you have a problem.
 * [Azure Developer CLI](/azure/developer/azure-developer-cli)
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) - Start Docker Desktop if it's not already running
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
@@ -86,10 +86,10 @@ Begin now with a development environment that has all the dependencies installed
 > [!IMPORTANT]
 > All GitHub accounts can use Codespaces for up to 60 hours free each month with 2 core instances. For more information, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
 
-1. Start the process to create a new GitHub Codespace on the `main` branch of the [`Azure-Samples/azure-search-openai-demo-csharp`](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) GitHub repository.
-1. Right-click on the following button, and select _Open link in new windows_ in order to have both the development environment and the documentation available at the same time.
+1. Start the process to create a new GitHub codespace on the `main` branch of the [`Azure-Samples/azure-search-openai-demo-csharp`](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) GitHub repository.
+1. To have both the development environment and the documentation available at the same time, right-click on the following **Open in GitHub Codespaces** button, and select _Open link in new windows_.
 
-    [![Open this project in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/azure-search-openai-demo-csharp)
+    [![Open in GitHub Codespaces button.](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/azure-search-openai-demo-csharp)
 
 1. On the **Create codespace** page, review the codespace configuration settings and then select **Create new codespace**:
 
@@ -183,11 +183,11 @@ The chat app is preloaded with employee benefits information from [PDF files](ht
 
 1. Navigate between the tabs at the top of the answer box to understand how the answer was generated.
 
-    |Tab|Description|
-    |---|---|
-    |**Thought process**|This is a script of the interactions in chat. You can view the system prompt (`content`) and your user question (`content`).|
-    |**Supporting content**|This includes the information to answer your question and the source material. The number of source material citations is noted in the **Developer settings**. The default value is **3**.|
-    |**Citation**|This displays the source page that contains the citation.|
+    | Tab                    | Description |
+    |------------------------|-------------|
+    | **Thought process**    | This is a script of the interactions in chat. You can view the system prompt (`content`) and your user question (`content`). |
+    | **Supporting content** | This includes the information to answer your question and the source material. The number of source material citations is noted in the **Developer settings**. The default value is **3**. |
+    | **Citation**           | This displays the source page that contains the citation. |
 
 1. When you're done, navigate back to the answer tab.
 
@@ -197,39 +197,41 @@ The intelligence of the chat is determined by the OpenAI model and the settings 
 
 :::image type="content" source="./media/get-started-app-chat-template/browser-chat-developer-settings-chat-pane.png" alt-text="Screenshot of chat developer settings.":::
 
-|Setting|Description|
-|---|---|
-|Override prompt template|This is the prompt that is used to generate the answer.|
-|Retrieve this many search results|This is the number of search results that are used to generate the answer. You can see these sources returned in the _Thought process_ and _Supporting content_ tabs of the citation. |
-|Exclude category|This is the category of documents that are excluded from the search results.|
-|Use semantic ranker for retrieval|This is a feature of [Azure AI Search](/azure/search/semantic-search-overview#what-is-semantic-search) that uses machine learning to improve the relevance of search results.|
-|Retrieval mode|**Vectors + Text** means that the search results are based on the text of the documents and the embeddings of the documents. **Vectors** means that the search results are based on the embeddings of the documents. **Text** means that the search results are based on the text of the documents.|
-|Use query-contextual summaries instead of whole documents|When both `Use semantic ranker` and `Use query-contextual summaries` are checked, the LLM uses captions extracted from key passages, instead of all the passages, in the highest ranked documents.|
-|Suggest follow-up questions|Have the chat app suggest follow-up questions based on the answer.|
+| Setting                     | Description                                                        |
+|-----------------------------|--------------------------------------------------------------------|
+| Override prompt template    | This is the prompt that is used to generate the answer.            |
+| Retrieve this many search results |This is the number of search results that are used to generate the answer. You can see these sources returned in the _Thought process_ and _Supporting content_ tabs of the citation. |
+| Exclude category         | This is the category of documents that are excluded from the search results. |
+| Use semantic ranker for retrieval | This is a feature of [Azure AI Search](/azure/search/semantic-search-overview#what-is-semantic-search) that uses machine learning to improve the relevance of search results. |
+| Retrieval mode              | **Vectors + Text** means that the search results are based on the text of the documents and the embeddings of the documents. **Vectors** means that the search results are based on the embeddings of the documents. **Text** means that the search results are based on the text of the documents. |
+| Use query-contextual summaries instead of whole documents | When both `Use semantic ranker` and `Use query-contextual summaries` are checked, the LLM uses captions extracted from key passages, instead of all the passages, in the highest ranked documents. |
+| Suggest follow-up questions | Have the chat app suggest follow-up questions based on the answer. |
 
 The following steps walk you through the process of changing the settings.
 
 1. In the browser, select the gear icon in the upper right of the page.
 1. If not selected, select the **Suggest follow-up questions** checkbox and ask the same question again.
 
-    ```Text
+   ```Text
    What is included in my Northwind Health Plus plan that is not in standard?
-    ```
+   ```
 
-    The chat might return with follow-up question suggestions.
+   The chat might return with follow-up question suggestions.
 
 1. In the **Settings** tab, deselect **Use semantic ranker for retrieval**.
 1. Ask the same question again.
 
-    ```Text
-    What is my deductible?
-    ```
+   ```Text
+   What is my deductible?
+   ```
 
 1. What is the difference in the answers?
 
-    The response that used the Semantic ranker provided a single answer. The response without semantic ranking returned a less direct answer.
+   The response that used the Semantic ranker provided a single answer. The response without semantic ranking returned a less direct answer.
 
 ## Clean up resources
+
+To finish, clean up the Azure and GitHub CodeSpaces resources you used.
 
 ### Clean up Azure resources
 

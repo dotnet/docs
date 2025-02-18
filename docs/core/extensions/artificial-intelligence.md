@@ -1,6 +1,6 @@
 ---
 title: Artificial Intelligence in .NET (Preview)
-description: Learn how to use the Microsoft.Extensions.AI library to integrate and interact with various AI services in your .NET applications.
+description: Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various AI services in your .NET applications.
 author: IEvangelist
 ms.author: dapine
 ms.date: 01/06/2025
@@ -9,16 +9,20 @@ ms.collection: ce-skilling-ai-copilot
 
 # Artificial intelligence in .NET (Preview)
 
-With a growing variety of artificial intelligence (AI) services available, developers need a way to integrate and interact with these services in their .NET applications. The `Microsoft.Extensions.AI` library provides a unified approach for representing generative AI components, which enables seamless integration and interoperability with various AI services. This article introduces the library and provides installation instructions and usage examples to help you get started.
+With a growing variety of artificial intelligence (AI) services available, developers need a way to integrate and interact with these services in their .NET applications. The `Microsoft.Extensions.AI` libraries provide a unified approach for representing generative AI components, which enables seamless integration and interoperability with various AI services. This article introduces the libraries and provides installation instructions and usage examples to help you get started.
+
+The [📦 Microsoft.Extensions.AI.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) package provides the core exchange types: <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>. Any .NET library that provides an AI client can implement the `IChatClient` interface to enable seamless integration with consuming code.
+
+The [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) package has an implicit dependency on the `Microsoft.Extensions.AI.Abstractions` package. This package enables you to easily integrate components such as telemetry and caching into your applications using familiar dependency injection and middleware patterns. For example, it provides the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClientBuilderExtensions.UseOpenTelemetry(Microsoft.Extensions.AI.ChatClientBuilder,Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.Action{Microsoft.Extensions.AI.OpenTelemetryChatClient})> extension method, which adds OpenTelemetry support to the chat client pipeline.
 
 ## Install the package
 
-To install the [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) NuGet package, use the .NET CLI or add a package reference directly to your C# project file:
+To install the [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) and [📦 Microsoft.Extensions.AI.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) NuGet packages, use the .NET CLI or add package references directly to your C# project file:
 
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.AI --prelease
+dotnet add package Microsoft.Extensions.AI --prerelease
 ```
 
 ### [PackageReference](#tab/package-reference)
@@ -32,31 +36,12 @@ dotnet add package Microsoft.Extensions.AI --prelease
 
 For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
-## Usage examples
+## The `IChatClient` interface
 
 The <xref:Microsoft.Extensions.AI.IChatClient> interface defines a client abstraction responsible for interacting with AI services that provide chat capabilities. It includes methods for sending and receiving messages with multi-modal content (such as text, images, and audio), either as a complete set or streamed incrementally. Additionally, it provides metadata information about the client and allows retrieving strongly typed services.
 
 > [!IMPORTANT]
 > For more usage examples and real-world scenarios, see [AI for .NET developers](../../ai/index.yml).
-
-**In this section**
-
-- [The `IChatClient` interface](#the-ichatclient-interface)
-  - [Request chat completion](#request-chat-completion)
-  - [Request chat completion with streaming](#request-chat-completion-with-streaming)
-  - [Tool calling](#tool-calling)
-  - [Cache responses](#cache-responses)
-  - [Use telemetry](#use-telemetry)
-  - [Provide options](#provide-options)
-  - [Functionality pipelines](#functionality-pipelines)
-  - [Custom `IChatClient` middleware](#custom-ichatclient-middleware)
-  - [Dependency injection](#dependency-injection)
-- [The `IEmbeddingGenerator` interface](#the-iembeddinggenerator-interface)
-  - [Sample implementation](#sample-implementation)
-  - [Create embeddings](#create-embeddings)
-  - [Custom `IEmbeddingGenerator` middleware](#custom-iembeddinggenerator-middleware)
-
-### The `IChatClient` interface
 
 The following sample implements `IChatClient` to show the general structure.
 
@@ -68,7 +53,19 @@ You can find other concrete implementations of `IChatClient` in the following Nu
 - [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama): Implementation backed by [Ollama](https://ollama.com/).
 - [📦 Microsoft.Extensions.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI): Implementation backed by either [OpenAI](https://openai.com/) or OpenAI-compatible endpoints (such as [Azure OpenAI](https://azure.microsoft.com/products/ai-services/openai-service)).
 
-#### Request chat completion
+The following subsections show specific `IChatClient` usage examples:
+
+- [Request chat completion](#request-chat-completion)
+- [Request chat completion with streaming](#request-chat-completion-with-streaming)
+- [Tool calling](#tool-calling)
+- [Cache responses](#cache-responses)
+- [Use telemetry](#use-telemetry)
+- [Provide options](#provide-options)
+- [Functionality pipelines](#functionality-pipelines)
+- [Custom `IChatClient` middleware](#custom-ichatclient-middleware)
+- [Dependency injection](#dependency-injection)
+
+### Request chat completion
 
 To request a completion, call the <xref:Microsoft.Extensions.AI.IChatClient.CompleteAsync*?displayProperty=nameWithType> method. The request is composed of one or more messages, each of which is composed of one or more pieces of content. Accelerator methods exist to simplify common cases, such as constructing a request for a single piece of text content.
 
@@ -95,7 +92,7 @@ Each chat message is instantiated, assigning to its <xref:Microsoft.Extensions.A
 - <xref:Microsoft.Extensions.AI.TextContent>
 - <xref:Microsoft.Extensions.AI.UsageContent>
 
-#### Request chat completion with streaming
+### Request chat completion with streaming
 
 The inputs to <xref:Microsoft.Extensions.AI.IChatClient.CompleteStreamingAsync*?displayProperty=nameWithType> are identical to those of `CompleteAsync`. However, rather than returning the complete response as part of a <xref:Microsoft.Extensions.AI.ChatCompletion> object, the method returns an <xref:System.Collections.Generic.IAsyncEnumerable`1> where `T` is <xref:Microsoft.Extensions.AI.StreamingChatCompletionUpdate>, providing a stream of updates that collectively form the single response.
 
@@ -104,7 +101,7 @@ The inputs to <xref:Microsoft.Extensions.AI.IChatClient.CompleteStreamingAsync*?
 > [!TIP]
 > Streaming APIs are nearly synonymous with AI user experiences. C# enables compelling scenarios with its `IAsyncEnumerable<T>` support, allowing for a natural and efficient way to stream data.
 
-#### Tool calling
+### Tool calling
 
 Some models and services support _tool calling_, where requests can include tools for the model to invoke functions to gather additional information. Instead of sending a final response, the model requests a function invocation with specific arguments. The client then invokes the function and sends the results back to the model along with the conversation history. The `Microsoft.Extensions.AI` library includes abstractions for various message content types, including function call requests and results. While consumers can interact with this content directly, `Microsoft.Extensions.AI` automates these interactions and provides:
 
@@ -126,7 +123,7 @@ The preceding code:
 - Calls `CompleteStreamingAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
 - Iterates over the response, printing each update to the console.
 
-#### Cache responses
+### Cache responses
 
 If you're familiar with [Caching in .NET](caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides other such delegating `IChatClient` implementations. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a unique chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same prompt is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than needing to forward the request along the pipeline.
 
@@ -134,7 +131,7 @@ If you're familiar with [Caching in .NET](caching.md), it's good to know that <x
 
 The preceding example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory) NuGet package. For more information, see [Caching in .NET](caching.md).
 
-#### Use telemetry
+### Use telemetry
 
 Another example of a delegating chat client is the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClient>. This implementation adheres to the [OpenTelemetry Semantic Conventions for Generative AI systems](https://opentelemetry.io/docs/specs/semconv/gen-ai/). Similar to other `IChatClient` delegators, it layers metrics and spans around any underlying `IChatClient` implementation, providing enhanced observability.
 
@@ -142,7 +139,7 @@ Another example of a delegating chat client is the <xref:Microsoft.Extensions.AI
 
 The preceding example depends on the [📦 OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console) NuGet package.
 
-#### Provide options
+### Provide options
 
 Every call to <xref:Microsoft.Extensions.AI.IChatClient.CompleteAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.CompleteStreamingAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary.
 
@@ -152,7 +149,7 @@ You can also specify options when building an `IChatClient` with the fluent <xre
 
 The preceding example depends on the [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama) NuGet package.
 
-#### Functionality pipelines
+### Functionality pipelines
 
 `IChatClient` instances can be layered to create a pipeline of components, each adding specific functionality. These components can come from `Microsoft.Extensions.AI`, other NuGet packages, or custom implementations. This approach allows you to augment the behavior of the `IChatClient` in various ways to meet your specific needs. Consider the following example code that layers a distributed cache, function invocation, and OpenTelemetry tracing around a sample chat client:
 
@@ -164,7 +161,7 @@ The preceding example depends on the following NuGet packages:
 - [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama)
 - [📦 OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console)
 
-#### Custom `IChatClient` middleware
+### Custom `IChatClient` middleware
 
 To add additional functionality, you can implement `IChatClient` directly or use the <xref:Microsoft.Extensions.AI.DelegatingChatClient> class. This class serves as a base for creating chat clients that delegate operations to another `IChatClient` instance. It simplifies chaining multiple clients, allowing calls to pass through to an underlying client.
 
@@ -180,11 +177,11 @@ The preceding example depends on the [📦 System.Threading.RateLimiting](https:
 
 To simplify the composition of such components with others, component authors should create a `Use*` extension method for registering the component into a pipeline. For example, consider the following extension method:
 
-:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.cs":::
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.cs" id="one":::
 
 Such extensions can also query for relevant services from the DI container; the <xref:System.IServiceProvider> used by the pipeline is passed in as an optional parameter:
 
-:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.OptionalOverload.cs":::
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.OptionalOverload.cs"  id="two":::
 
 The consumer can then easily use this in their pipeline, for example:
 
@@ -207,7 +204,7 @@ The preceding overload internally uses an `AnonymousDelegatingChatClient`, which
 
 For scenarios where the developer would like to specify delegating implementations of `CompleteAsync` and `CompleteStreamingAsync` inline, and where it's important to be able to write a different implementation for each in order to handle their unique return types specially, another overload of `Use` exists that accepts a delegate for each.
 
-#### Dependency injection
+### Dependency injection
 
 <xref:Microsoft.Extensions.AI.IChatClient> implementations will typically be provided to an application via [dependency injection (DI)](dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` employs a builder that creates a pipeline containing a caching client (which will then use an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
@@ -220,7 +217,7 @@ The preceding example depends on the following NuGet packages:
 
 What instance and configuration is injected can differ based on the current needs of the application, and multiple pipelines can be injected with different keys.
 
-### The `IEmbeddingGenerator` interface
+## The `IEmbeddingGenerator` interface
 
 The <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> interface represents a generic generator of embeddings. Here, `TInput` is the type of input values being embedded, and `TEmbedding` is the type of generated embedding, which inherits from the <xref:Microsoft.Extensions.AI.Embedding> class.
 
@@ -228,9 +225,7 @@ The `Embedding` class serves as a base class for embeddings generated by an `IEm
 
 The `IEmbeddingGenerator` interface defines a method to asynchronously generate embeddings for a collection of input values, with optional configuration and cancellation support. It also provides metadata describing the generator and allows for the retrieval of strongly typed services that can be provided by the generator or its underlying services.
 
-#### Sample implementation
-
-Consider the following sample implementation of an `IEmbeddingGenerator` to show the general structure but that just generates random embedding vectors.
+The following sample implementation of `IEmbeddingGenerator` shows the general structure (however, it just generates random embedding vectors).
 
 :::code language="csharp" source="snippets/ai/AI.Shared/SampleEmbeddingGenerator.cs":::
 
@@ -248,13 +243,18 @@ You can find actual concrete implementations in the following packages:
 - [📦 Microsoft.Extensions.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI)
 - [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama)
 
-#### Create embeddings
+The following sections show specific `IEmbeddingGenerator` usage examples:
+
+- [Create embeddings](#create-embeddings)
+- [Custom `IEmbeddingGenerator` middleware](#custom-iembeddinggenerator-middleware)
+
+### Create embeddings
 
 The primary operation performed with an <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> is embedding generation, which is accomplished with its <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2.GenerateAsync*> method.
 
 :::code language="csharp" source="snippets/ai/ConsoleAI.CreateEmbeddings/Program.cs":::
 
-#### Custom `IEmbeddingGenerator` middleware
+### Custom `IEmbeddingGenerator` middleware
 
 As with `IChatClient`, `IEmbeddingGenerator` implementations can be layered. Just as `Microsoft.Extensions.AI` provides delegating implementations of `IChatClient` for caching and telemetry, it provides an implementation for `IEmbeddingGenerator` as well.
 

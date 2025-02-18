@@ -13,10 +13,10 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 ## Prerequisites
 
-* Azure subscription.  [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true)
+* Azure subscription. [Create one for free](https://azure.microsoft.com/free/ai-services?azure-portal=true).
 * Access granted to Azure OpenAI in the desired Azure subscription.
 
-    Currently, access to this service is granted only by application. You should [apply for access](https://aka.ms/oai/access) to Azure OpenAI.
+  Currently, access to this service is granted only by application. You should [apply for access](https://aka.ms/oai/access) to Azure OpenAI.
 
 * [Dev containers](https://containers.dev/) are available for both samples, with all dependencies required to complete this article. You can run the dev containers in GitHub Codespaces (in a browser) or locally using Visual Studio Code.
 
@@ -26,7 +26,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 #### [Visual Studio Code](#tab/visual-studio-code)
 
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/) - start Docker Desktop if it's not already running
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) - Start Docker Desktop if it's not already running
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Dev Container Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 

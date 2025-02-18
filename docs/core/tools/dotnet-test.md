@@ -278,16 +278,16 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   dotnet test --logger trx
   ```
 
-- Run the tests in the project in the current directory, and generate a code coverage file (after installing [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md) collectors integration):
-
-  ```dotnetcli
-  dotnet test --collect:"XPlat Code Coverage"
-  ```
-
-- Run the tests in the project in the current directory, and generate a code coverage file (Windows only):
+- Run the tests in the project in the current directory, and generate a code coverage file using [Microsoft Code Coverage](https://github.com/microsoft/codecoverage/blob/main/README.md):
 
   ```dotnetcli
   dotnet test --collect "Code Coverage"
+  ```
+
+- Run the tests in the project in the current directory, and generate a code coverage file using [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/README.md) (after installing [Coverlet](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md) collectors integration):
+
+  ```dotnetcli
+  dotnet test --collect:"XPlat Code Coverage"
   ```
 
 - Run the tests in the project in the current directory, and log with detailed verbosity to the console:

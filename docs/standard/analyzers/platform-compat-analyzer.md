@@ -7,18 +7,18 @@ ms.date: 09/20/2021
 
 # Platform compatibility analyzer
 
-You've probably heard the motto of "One .NET": a single, unified platform for building any type of application. The .NET 5 SDK includes ASP.NET Core, Entity Framework Core, WinForms, WPF, Xamarin, and ML.NET, and will add support for more platforms over time. .NET 5 strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You'll continue to be able to call platform-specific APIs, for example, P/Invokes, WinRT, or the Xamarin bindings for iOS and Android.
+You've probably heard the motto of "One .NET": a single, unified platform for building any type of application. The .NET SDK includes ASP.NET Core, Entity Framework Core, Windows Forms, WPF, and ML.NET, and will add support for more platforms over time. .NET 5+ strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You'll continue to be able to call platform-specific APIs, for example, P/Invokes and WinRT.
 
-But using platform-specific APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5 introduces the [platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
+But using platform-specific APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5 introduced the [platform compatibility analyzer](../../fundamentals/code-analysis/quality-rules/ca1416.md) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
 
-The new APIs include:
+The complementary APIs include:
 
 - <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> to annotate APIs as being platform-specific and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> to annotate APIs as being unsupported on a particular OS. These attributes can optionally include the version number, and have already been applied to some platform-specific APIs in the core .NET libraries.
 - `Is<Platform>()` and `Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)` static methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class for safely calling platform-specific APIs. For example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType> can be used to guard a call to a Windows-specific API, and <xref:System.OperatingSystem.IsWindowsVersionAtLeast%2A?displayProperty=nameWithType>() can be used to guard a versioned Windows-specific API call. See these [examples](#guard-platform-specific-apis-with-guard-methods) of how these methods can be used as guards of platform-specific API references.
 
 ## Prerequisites
 
-The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5, these analyzers are [included with the .NET SDK](../../fundamentals/code-analysis/overview.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable it](../../fundamentals/code-analysis/quality-rules/ca1416.md#configure-code-to-analyze) for projects that target other frameworks.
+The platform compatibility analyzer is one of the Roslyn code quality analyzers. These analyzers are [included with the .NET SDK](../../fundamentals/code-analysis/overview.md). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable it](../../fundamentals/code-analysis/quality-rules/ca1416.md#configure-code-to-analyze) for projects that target other frameworks.
 
 ## How the analyzer determines platform dependency
 
@@ -60,7 +60,7 @@ The analyzer does not check target framework moniker (TFM) target platforms from
 
 ### Platform inclusion
 
-.NET 6 introduces the concept of *platform inclusion*, where one platform can be a subset of another platform. An annotation for the subset platform implies the same support (or lack thereof) for the superset platform. If a platform check method in the <xref:System.OperatingSystem> type has a `SupportedOSPlatformGuard("supersetPlatform")]` attribute, then `supersetPlatform` is considered a superset of the OS platform that the method checks for.
+.NET 6 introduced the concept of *platform inclusion*, where one platform can be a subset of another platform. An annotation for the subset platform implies the same support (or lack thereof) for the superset platform. If a platform check method in the <xref:System.OperatingSystem> type has a `SupportedOSPlatformGuard("supersetPlatform")]` attribute, then `supersetPlatform` is considered a superset of the OS platform that the method checks for.
 
 For example, the <xref:System.OperatingSystem.IsIOS?displayProperty=nameWithType> method is attributed `[SupportedOSPlatformGuard("MacCatalyst")]`. Therefore, the following statements apply:
 
@@ -81,7 +81,7 @@ Consider the following coverage matrix, where ✔️ indicates that the platform
 The following code snippet shows how you can combine attributes to set the right level of support.
 
 ```csharp
-  // MacCatalyst is a superset of iOS therefore supported on iOS and MacCatalyst  
+  // MacCatalyst is a superset of iOS therefore supported on iOS and MacCatalyst
   [SupportedOSPlatform("iOS")]
   public void ApiOnlySupportedOnIOSAndMacCatalyst() { }
 
@@ -89,11 +89,11 @@ The following code snippet shows how you can combine attributes to set the right
   [SupportedOSPlatform("MacCatalyst")]
   public void ApiOnlySupportedOnMacCatalyst() { }
 
-  [SupportedOSPlatform("iOS")] // Supported on iOS and MacCatalyst  
+  [SupportedOSPlatform("iOS")] // Supported on iOS and MacCatalyst
   [UnsupportedOSPlatform("MacCatalyst")] // Removes implied MacCatalyst support
   public void ApiOnlySupportedOnIos() { }
 
-  // Unsupported on iOS and MacCatalyst  
+  // Unsupported on iOS and MacCatalyst
   [UnsupportedOSPlatform("iOS")]
   public void ApiUnsupportedOnIOSAndMacCatalyst();
 
@@ -101,7 +101,7 @@ The following code snippet shows how you can combine attributes to set the right
   [UnsupportedOSPlatform("MacCatalyst")]
   public void ApiUnsupportedOnMacCatalyst() { }
 
-  [UnsupportedOSPlatform("iOS")] // Unsupported on iOS and MacCatalyst  
+  [UnsupportedOSPlatform("iOS")] // Unsupported on iOS and MacCatalyst
   [SupportedOSPlatform("MacCatalyst")] // Removes implied MacCatalyst unsupportedness
   public void ApiUnsupportedOnIos() { }
 ```

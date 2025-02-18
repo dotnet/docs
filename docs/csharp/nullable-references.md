@@ -49,7 +49,7 @@ public class Collection<T>
 public static void Main()
 {
     Collection<int> c = default;
-    c[10] = 1;    // CS8602: Possible derefence of null
+    c[10] = 1;    // CS8602: Possible dereference of null
 }
 ```
 

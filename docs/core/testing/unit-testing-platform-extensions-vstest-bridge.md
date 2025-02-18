@@ -22,7 +22,7 @@ When enabled by the test framework, you can use `--settings <SETTINGS_FILE>` to 
 
 ### RunConfiguration element
 
-The **RunConfiguration** element can include the following elements. None of these settings are respected by `Microsoft.Testing.Platform`:
+The following **RunConfiguration** elements are not supported by `Microsoft.Testing.Platform`:
 
 | Node | Description | Reason / Workaround |
 |------|-------------|---------------------|
@@ -32,7 +32,7 @@ The **RunConfiguration** element can include the following elements. None of the
 | **TargetPlatform** | This setting defines the architecture to use to run tests. | `<RuntimeIdentifier>` determines the architecture of the final application that hosts the tests. |
 | **TreatTestAdapterErrorsAsWarnings** | Suppresses test adapter errors to become warnings. | Microsoft.Testing.Platform allows only one type of tests to be run from a single assembly, and failure to load the test framework or other parts of infrastructure will become an un-skippable error, because it signifies that some tests could not be discovered or run. |
 | **TestAdaptersPaths** | One or more paths to the directory where the TestAdapters are located| Microsoft.Testing.Platform does not use the concept of test adapters and does not allow dynamic loading of extensions unless they are part of the build, and are registered in `Program.cs`, either automatically via build targets or manually. |
-| **TestCaseFilter** | A filter to limit tests which will run. | To filter tests use `--filter` command line option. |
+| **TestCaseFilter** | A filter to limit tests which will run. | Starting with v1.6, this runsettings entry is now supported. Before this version, you should use `--filter` command line option instead. |
 | **TestSessionTimeout** | Allows users to terminate a test session when it exceeds a given timeout.| There is no alternative option. |
 | **DotnetHostPath** | Specify a custom path to dotnet host that is used to run the test host. | Microsoft.Testing.Platform is not doing any additional resolving of dotnet. It depends fully on how dotnet resolves itself, which can be controlled by environment variables such as [`DOTNET_HOST_PATH`](../tools/dotnet-environment-variables.md#dotnet_host_path). |
 | **TreatNoTestsAsError** | Exit with non-zero exit code when no tests are discovered. | Microsoft.Testing.Platform will error by default when no tests are discovered or run in a test application. You can set how many tests you expect to find in the assembly by using `--minimum-expected-tests` command line parameter, which defaults to 1. |
@@ -52,3 +52,12 @@ Loggers in `Microsoft.Testing.Platform` are configured through command-line para
 This extension also offer the ability to use VSTest filtering mechanism to discover or run only the tests that matches the filter expression. For more information, see the [Filter option details](../tools/dotnet-test.md#filter-option-details) section or for framework specific details see the [Running selective unit tests](./selective-unit-tests.md) page.
 
 When enabled by the test framework, you can use `--filter <FILTER_EXPRESSION>`.
+
+## TestRun parameters
+
+You can pass parameters to the test run by using the `--test-parameters` command line option in the format `key=value`. This option can be specified multiple times, one for each parameter to set.
+
+These parameters can then be accessed by the test framework in the test run:
+
+- for MSTest, use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.Properties>
+- for NUnit, use [TestContext.TestParameters](https://docs.nunit.org/articles/nunit/writing-tests/TestContext.html#testparameters)

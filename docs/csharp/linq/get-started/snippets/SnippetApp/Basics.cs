@@ -3,7 +3,13 @@
 public static class Basics
 {
 
-    static readonly int[] scores = [0]; // Max is called on this, so one value is needed
+    static readonly int[] scores =
+    [
+        0, 30, 50, 70, 80,
+        85, 94, 87, 96, 88,
+        59, 90, 91, 85, 60,
+        49, 100
+    ];
 
     // <SourceData>
     static readonly City[] cities = [
@@ -50,6 +56,10 @@ public static class Basics
             orderby score descending
             select score;
         // </basics1>
+        foreach(var score in highScoresQuery)
+        {
+            Console.WriteLine(score);
+        }
     }
 
     public static void Basics2()
@@ -61,6 +71,10 @@ public static class Basics
             orderby score descending
             select $"The score is {score}";
         // </basics2>
+        foreach (var score in highScoresQuery2)
+        {
+            Console.WriteLine(score);
+        }
     }
 
     public static void Basics3()
@@ -72,6 +86,7 @@ public static class Basics
             select score
         ).Count();
         // </basics3>
+        Console.WriteLine($"highest score: {highScoreCount}");
     }
 
     public static void Basics4()
@@ -84,6 +99,7 @@ public static class Basics
 
         var scoreCount = highScoresQuery3.Count();
         // </basics4>
+        Console.WriteLine($"highest score: {scoreCount}");
     }
 
     public static void Basics5()
@@ -122,7 +138,7 @@ public static class Basics
         //Query syntax
         IEnumerable<City> queryMajorCities =
             from city in cities
-            where city.Population > 100000
+            where city.Population > 30_000_000
             select city;
 
         // Execute the query to produce the results
@@ -132,12 +148,19 @@ public static class Basics
         }
 
         // Output:
-        // City { Population = 120000 }
-        // City { Population = 112000 }
-        // City { Population = 150340 }
-
+        // City { Name = Tokyo, Population = 37833000 }
+        // City { Name = Delhi, Population = 30290000 }
+        
         // Method-based syntax
-        IEnumerable<City> queryMajorCities2 = cities.Where(c => c.Population > 100000);
+        IEnumerable<City> queryMajorCities2 = cities.Where(c => c.Population > 30_000_000);
+        // Execute the query to produce the results
+        foreach (City city in queryMajorCities2)
+        {
+            Console.WriteLine(city);
+        }
+        // Output:
+        // City { Name = Tokyo, Population = 37833000 }
+        // City { Name = Delhi, Population = 30290000 }
         // </basics6>
     }
 
@@ -158,6 +181,8 @@ public static class Basics
         // the following returns the same result
         highScore = scores.Max();
         // </basics7>
+        Console.WriteLine($"highest score: {highestScore}");
+        Console.WriteLine($"high Score: {highScore}");
     }
 
     public static void Basics7a()
@@ -178,6 +203,14 @@ public static class Basics
             select city;
         var largeCitiesList2 = largeCitiesQuery.ToList();
         // </basics7a>
+        foreach(var item in largeCitiesList)
+        {
+            Console.WriteLine(item.Name + ":" + item.Population);
+        }
+        foreach (var item in largeCitiesList2)
+        {
+            Console.WriteLine(item.Name + ":" + item.Population);
+        }
     }
 
     public static void Basics8()
@@ -188,6 +221,10 @@ public static class Basics
             where city.Population > 100000
             select city;
         // </basics8>
+        foreach (var city in queryCities)
+        {
+            Console.WriteLine(city.Name + ":" + city.Population);
+        }
     }
 
     public static void Basics9()
@@ -195,9 +232,13 @@ public static class Basics
         // <basics9>
         IEnumerable<Country> countryAreaQuery =
             from country in countries
-            where country.Area > 500000 //sq km
+            where country.Area > 20 //sq km
             select country;
         // </basics9>
+        foreach (var country in countryAreaQuery)
+        {
+            Console.WriteLine(country.Name + ":" + country.Area);
+        }
     }
 
     public static void Basics10()
@@ -209,6 +250,10 @@ public static class Basics
             where city.Population > 10000
             select city;
         // </basics10>
+        foreach (var city in cityQuery)
+        {
+            Console.WriteLine(city.Name + ":" + city.Population);
+        }
     }
 
     public static void Basics11()
@@ -218,6 +263,14 @@ public static class Basics
             from country in countries
             group country by country.Name[0];
         // </basics11>
+        foreach (var group in queryCountryGroups)
+        {
+            Console.WriteLine(group.Key);
+            foreach (var country in group)
+            {
+                Console.WriteLine(country.Name);
+            }
+        }
     }
 
     public static void Basics12()
@@ -228,6 +281,10 @@ public static class Basics
             orderby country.Area
             select country;
         // </basics12>
+        foreach (var country in sortedQuery)
+        {
+            Console.WriteLine(country.Name + ":" + country.Area);
+        }
     }
 
     public static void Basics13()
@@ -241,6 +298,10 @@ public static class Basics
                 Pop = country.Population
             };
         // </basics13>
+        foreach (var item in queryNameAndPop)
+        {
+            Console.WriteLine(item.Name + ":" + item.Pop);
+        }
     }
 
     public static void Basics14()
@@ -249,7 +310,7 @@ public static class Basics
         // percentileQuery is an IEnumerable<IGrouping<int, Country>>
         var percentileQuery =
             from country in countries
-            let percentile = (int)country.Population / 10_000_000
+            let percentile = (int)country.Population / 1_000
             group country by percentile into countryGroup
             where countryGroup.Key >= 20
             orderby countryGroup.Key
@@ -272,9 +333,13 @@ public static class Basics
         // <basics15>
         IEnumerable<City> queryCityPop =
             from city in cities
-            where city.Population is < 200000 and > 100000
+            where city.Population is < 15_000_000 and > 10_000_000
             select city;
         // </basics15>
+        foreach (var city in queryCityPop)
+        {
+            Console.WriteLine(city.Name + ":" + city.Population);
+        }   
     }
 
     public static void Basics16()
@@ -285,12 +350,25 @@ public static class Basics
             orderby country.Area, country.Population descending
             select country;
         // </basics16>
+        foreach (var country in querySortedCountries)
+        {
+            Console.WriteLine(country.Name + ":" + country.Area + ":" + country.Population);
+        }
     }
 
     public static void Basics17()
     {
-        string[] categories = [];
-        Product[] products = [];
+        string[] categories = ["brass", "winds", "percussion"];
+        Product[] products =
+        [
+            new Product("Trumpet", "brass"),
+            new Product("Trombone", "brass"),
+            new Product("French Horn", "brass"),
+            new Product("Clarinet", "winds"),
+            new Product("Flute", "winds"),
+            new Product("Cymbal", "percussion"),
+            new Product("Drum", "percussion")
+            ];
 
         // <basics17>
         var categoryQuery =
@@ -302,6 +380,10 @@ public static class Basics
                 Name = prod.Name
             };
         // </basics17>
+        foreach (var item in categoryQuery)
+        {
+            Console.WriteLine(item.Category + ":" + item.Name);
+        }
     }
 
     public static void Basics18()
@@ -339,5 +421,9 @@ public static class Basics
                 ).Max()
             };
         // </basics19>
+        foreach (var item in queryGroupMax)
+        {
+            Console.WriteLine(item.Level + ":" + item.HighestScore);
+        }
     }
 }

@@ -19,7 +19,7 @@ Language-Integrated Query (LINQ) makes it easy to access database information an
 
 The following example shows how to create a new application that performs queries against a SQL Server database and filters the results by a particular value by using the `Where` clause. For more information, see [Where Clause](../../../language-reference/queries/where-clause.md).
 
-The examples in this topic use the Northwind sample database. If you do not have this database on your development computer, you can download it from the Microsoft Download Center. For instructions, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).
+The examples in this article use the Northwind sample database. To obtain the database, see [Downloading Sample Databases](../../../../framework/data/adonet/sql/linq/downloading-sample-databases.md).
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 

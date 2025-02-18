@@ -30,8 +30,7 @@ Although this API was designed to work well with OpenTelemetry and its growing e
 ### PerformanceCounter
 
 <xref:System.Diagnostics.PerformanceCounter?displayProperty=nameWithType> APIs are the oldest .NET metric APIs. They're only supported on Windows and provide
-a managed wrapper for Windows OS [Performance Counter](/windows/win32/perfctrs/performance-counters-portal)
-technology. They are available in all supported versions of .NET.
+a managed wrapper for Windows OS [Performance Counter](/windows/win32/perfctrs/performance-counters-portal) technology. They are available in all supported versions of .NET.
 
 These APIs are provided primarily for compatibility; the .NET team
 considers this a stable area that's unlikely to receive further improvement aside from bug fixes. These APIs are not suggested

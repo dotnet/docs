@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "strings [C#], splitting"
   - "parse strings"
 ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
-ms.custom: mvc, vs-copilot-horizontal
+ms.custom: mvc, copilot-scenario-highlight
 ms.collection: ce-skilling-ai-copilot
 ---
 # How to separate strings using String.Split in C\#

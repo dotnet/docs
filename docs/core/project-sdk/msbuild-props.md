@@ -1457,6 +1457,7 @@ The following MSBuild properties are documented in this section:
 - [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
 - [TestingExtensionsProfile](#testingextensionsprofile)
 - [UseVSTest](#usevstest)
+- [MSTestAnalysisMode](#mstestanalysismode)
 
 ### IsTestProject
 
@@ -1560,6 +1561,10 @@ For more information, see [MSTest runner profile](../testing/unit-testing-mstest
 ### UseVSTest
 
 Set the `UseVSTest` property to `true` to switch from the MSTest runner to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+
+### MSTestAnalysisMode
+
+This property decides which analyzers are enabled at which severity. For more information, see [MSTest code analysis](../testing/mstest-analyzers/overview.md).
 
 ## Hosting-related properties
 

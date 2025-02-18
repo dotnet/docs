@@ -170,7 +170,7 @@ Required modifier for first parameter: System.Runtime.InteropServices.InAttribut
 
 ### Serialization
 
-Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of members that aren't in the JSON payload](../../../standard/serialization/system-text-json/missing-members.md).
+Many improvements have been made to <xref:System.Text.Json?displayProperty=fullName> serialization and deserialization functionality in .NET 8. For example, you can [customize handling of JSON properties that aren't in the POCO](../../../standard/serialization/system-text-json/missing-members.md).
 
 The following sections describe other serialization improvements:
 

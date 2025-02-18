@@ -441,11 +441,11 @@ public class MyClass
 }
 ```
 
-In these cases, the threat model and security guarantees are the same as the [DataSet.ReadXml and DataTable.ReadXml section](#dsrdtr)
+In these cases, the threat model and security guarantees are the same as the [DataSet.ReadXml and DataTable.ReadXml section](#dsrdtr).
 
 ## Deserialize a DataSet or DataTable via JsonConvert
 
-The popular third-party Newtonsoft library [Json.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
+The third-party Newtonsoft library [Json.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
 
 ```csharp
 using System.Data;

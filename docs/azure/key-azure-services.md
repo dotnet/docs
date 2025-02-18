@@ -22,8 +22,8 @@ While Azure contains over 100 services, the following Azure services are the ser
 | ![Azure Service Bus Icon](./media/service-bus.svg) | **Azure Service Bus**   | Azure Service Bus is a fully managed enterprise message broker supporting both point to point and publish-subscribe integrations.  It is ideal for building decoupled applications, queue based load leveling, or facilitating communication between microservices.   |
 | ![Azure Key Vault Icon](./media/azure-key-vault.svg) | **Azure Key Vault**   | Every application has application secrets like connection strings and API keys it must store.  Azure Key Vault helps you store and access those secrets securely, in an encrypted vault with restricted access to make sure your secrets and your application are not compromised.   |
 
-For the full list of Azure products and services, visit the [Azure documentation home page](/azure/?product=all)
+For the full list of Azure products and services, visit the [Azure documentation home page](/azure/?product=all).
 
-### Next steps
+## Next steps
 
-Start configuring your Azure development environment by [Creating an Azure Account](create-azure-account.md)
+Start configuring your Azure development environment by [Creating an Azure Account](create-azure-account.md).

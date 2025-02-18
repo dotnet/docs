@@ -18,7 +18,18 @@ Welcome to what's new in the .NET docs for December 2024. This article lists som
 - [Legacy Mono and Emscripten JavaScript APIs not exported to global namespace](../core/compatibility/aspnet-core/9.0/legacy-apis.md)
 - [New version of some OOB packages](../core/compatibility/core-libraries/9.0/oob-packages.md)
 - [Nullable JsonDocument properties deserialize to JsonValueKind.Null](../core/compatibility/serialization/9.0/jsondocument-props.md)
-- [System.Windows.Forms.StatusStrip uses a different default renderer](../core/compatibility/windows-forms/9.0/statusstrip-renderer.md)
+
+## AI in .NET
+
+### Updated articles
+
+- [Build a .NET AI vector search app](../ai/quickstarts/quickstart-ai-chat-with-data.md) - New vector search quickstart
+
+## ML.NET
+
+### Updated articles
+
+- [Machine learning tasks in ML.NET](../machine-learning/resources/tasks.md) - Add text classification and sentence similarity to ML tasks
 
 ## .NET fundamentals
 
@@ -52,18 +63,6 @@ Welcome to what's new in the .NET docs for December 2024. This article lists som
 ### Updated articles
 
 - [Attributes (F#)](../fsharp/language-reference/attributes.md) - F# 9 doc updates
-
-## AI in .NET
-
-### Updated articles
-
-- [Build a .NET AI vector search app](../ai/quickstarts/quickstart-ai-chat-with-data.md) - New vector search quickstart
-
-## ML.NET
-
-### Updated articles
-
-- [Machine learning tasks in ML.NET](../machine-learning/resources/tasks.md) - Add text classification and sentence similarity to ML tasks
 
 ## .NET Framework
 

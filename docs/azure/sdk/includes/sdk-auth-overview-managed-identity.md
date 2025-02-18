@@ -3,4 +3,4 @@ Apps hosted in Azure should use a **Managed Identity service principal**. Manage
 For example, a .NET web app hosted in Azure App Service would be assigned a Managed Identity.  The Managed Identity assigned to the app would then be used to authenticate the app to other Azure services.<br>
 <br>
 > [!div class="nextstepaction"]
-> [Learn about auth from Azure-hosted apps](../authentication/azure-hosted-apps.md)
+> [Learn about auth from Azure-hosted apps](../authentication/index.md)

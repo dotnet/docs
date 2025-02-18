@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 10/22/2024
+ms.date: 02/11/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ms.topic: how-to
 ms.collection: ce-skilling-ai-copilot
-ms.custom: vs-copilot-horizontal
+ms.custom: copilot-scenario-highlight
 ---
 
 # How to customize property names and values with System.Text.Json
@@ -244,7 +244,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use Github Copilot to customize property names and order
+## Use GitHub Copilot to customize property names and order
 
 You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
 

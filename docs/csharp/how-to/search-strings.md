@@ -51,7 +51,7 @@ The search pattern describes the text you search for. The following table descri
 
 ## Does a string follow a pattern?
 
-The following code uses regular expressions to validate the format of each string in an array. The validation requires that each string has the form of a telephone number: three groups of digits separated by dashes where the first two groups contain three digits and the third group contains four digits. The search pattern uses the regular expression `^\\d{3}-\\d{3}-\\d{4}$`. For more information, see [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md).
+The following code uses regular expressions to validate the format of each string in an array. The validation requires that each string is formatted as a telephone number: three groups of digits separated by dashes where the first two groups contain three digits and the third group contains four digits. The search pattern uses the regular expression `^\\d{3}-\\d{3}-\\d{4}$`. For more information, see [Regular Expression Language - Quick Reference](../../standard/base-types/regular-expression-language-quick-reference.md).
 
 | Pattern | Meaning                             |
 |---------|-------------------------------------|

@@ -45,6 +45,8 @@ az identity show \
     --query 'clientId' \
 ```
 
+Configure the `ManagedIdentityCredential` with the client ID:
+
 :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
 
 An alternative to the `UseCredential` method is to provide the credential to the service client directly:
@@ -66,6 +68,8 @@ az identity show \
     --query 'id' \
 ```
 
+Configure the `ManagedIdentityCredential` with the resource ID:
+
 :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
 
 An alternative to the `UseCredential` method is to provide the credential to the service client directly:
@@ -75,6 +79,15 @@ An alternative to the `UseCredential` method is to provide the credential to the
 ## [Object ID](#tab/object-id)
 
 A principal ID is another name for an object ID. You can retrieve the object ID for a user-assigned managed identity using the following command:
+
+```azurecli
+az identity show \
+    --resource-group <resource-group-name> \
+    --name <identity-name> \
+    --query 'principalId' \
+```
+
+Configure the `ManagedIdentityCredential` with the object ID:
 
 :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
 

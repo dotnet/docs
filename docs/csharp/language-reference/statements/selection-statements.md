@@ -64,9 +64,17 @@ You can specify multiple case patterns for one section of a `switch` statement, 
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="MultipleCases":::
 
-Within a `switch` statement, control can't fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](exception-handling-statements.md#the-throw-statement) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
+Within a `switch` statement, control can fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](exception-handling-statements.md#the-throw-statement) statements to pass control out of a `switch` statement. To pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
 
 In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.
+
+> [!IMPORTANT]
+> Differences between **switch expression** and **switch statement**:
+> - **switch expression** must return a value, a **switch statement** does not. <br>
+> - **switch expressions** don't require break statements - fallthrough is not allowed.
+> - **switch expression** is typically used in contexts of value return and value assignment, often as [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md). <br> 
+> - **switch statement** is used to control the flow of execution within a block of code.<br>
+
 
 ### Case guards
 

@@ -47,7 +47,7 @@ The client ID is used to identify a managed identity when configuring applicatio
         --query 'clientId'
     ```
 
-1. Configure the `ManagedIdentityCredential` with the client ID:
+1. Configure `ManagedIdentityCredential` with the client ID:
 
     :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
 
@@ -93,7 +93,7 @@ A principal ID is another name for an object ID.
         --query 'principalId'
     ```
 
-1. Configure the `ManagedIdentityCredential` with the object ID:
+1. Configure `ManagedIdentityCredential` with the object ID:
 
     :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
 

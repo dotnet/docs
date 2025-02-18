@@ -39,7 +39,7 @@ When an app is:
 
 ## Authentication for Azure-hosted apps
 
-When your app is hosted on Azure, it can use managed identities to authenticate to Azure resources without needing to manage any credentials. There are two types of managed identities: user-assigned and system-assigned. Both types provide a secure way to authenticate to Azure services.
+When your app is hosted on Azure, it can use managed identities to authenticate to Azure resources without needing to manage any credentials. There are two types of managed identities: user-assigned and system-assigned.
 
 #### Use a user-assigned managed identity
 

@@ -1,12 +1,12 @@
 ---
-title: "Breaking change: System.Text.Json metadata reader now unescapes metadata property names."
+title: "Breaking change: System.Text.Json metadata reader now unescapes metadata property names"
 description: System.Text.Json now unescapes metadata property names, affecting reference preservation and metadata property validation.
 ms.date: 2/13/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44748
 ---
 
-# The System.Text.Json metadata reader now unescapes metadata property names
+# System.Text.Json metadata reader now unescapes metadata property names
 
 The <xref:System.Text.Json?displayProperty=fullName> library has been updated to unescape metadata property names. This change affects how JSON documents are interpreted in the context of reference preservation and metadata property validation.
 

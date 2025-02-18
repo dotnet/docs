@@ -59,7 +59,7 @@ The following example shows how to replace a set of characters in a string. Firs
 
 ## Programmatically build up string content
 
-Since strings are immutable, the previous examples all create temporary strings or character arrays. In high-performance scenarios, it's desirable to avoid these heap allocations. .NET Core provides a <xref:System.String.Create%2A?displayProperty=nameWithType> method that allows you to programmatically fill in the character content of a string via a callback while avoiding the intermediate temporary string allocations.
+Since strings are immutable, the previous examples all create temporary strings or character arrays. In high-performance scenarios, it's desirable to avoid these heap allocations. .NET provides a <xref:System.String.Create%2A?displayProperty=nameWithType> method that allows you to programmatically fill in the character content of a string via a callback while avoiding the intermediate temporary string allocations.
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ModifyStrings.cs" id="Snippet7":::
 

@@ -40,7 +40,7 @@ Unhandled exception. System.Text.Json.JsonException: Properties that start with 
 
 ## Type of breaking change
 
-This change is a [behavioral change](../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

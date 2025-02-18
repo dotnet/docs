@@ -36,22 +36,24 @@ Azure services are accessed using specialized client classes from the various Az
 
 ## [Client ID](#tab/client-id)
 
-The client ID is used to identify a managed identity when configuring applications or services that need to authenticate using that identity. You can retrieve the client ID assigned to a user-assigned managed identity using the following command:
+The client ID is used to identify a managed identity when configuring applications or services that need to authenticate using that identity.
 
-```azurecli
-az identity show \
-    --resource-group <resource-group-name> \
-    --name <identity-name> \
-    --query 'clientId' \
-```
+1. Retrieve the client ID assigned to a user-assigned managed identity using the following command:
 
-Configure the `ManagedIdentityCredential` with the client ID:
+    ```azurecli
+    az identity show \
+        --resource-group <resource-group-name> \
+        --name <identity-name> \
+        --query 'clientId' \
+    ```
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
+1. Configure the `ManagedIdentityCredential` with the client ID:
 
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId":::
+    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId":::
 
 ## [Resource ID](#tab/resource-id)
 
@@ -59,41 +61,45 @@ The resource ID uniquely identifies the managed identity resource within your Az
 
 `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`
 
-Resource IDs can be built by convention, which makes them more convenient when working with a large number of user-assigned managed identities in your environment. You can retrieve the resource ID assigned to a user-assigned managed identity using the following command:
+Resource IDs can be built by convention, which makes them more convenient when working with a large number of user-assigned managed identities in your environment.
 
-```azurecli
-az identity show \
-    --resource-group <resource-group-name> \
-    --name <identity-name> \
-    --query 'id' \
-```
+1. Retrieve the resource ID for a user-assigned managed identity using the following command:
 
-Configure the `ManagedIdentityCredential` with the resource ID:
+    ```azurecli
+    az identity show \
+        --resource-group <resource-group-name> \
+        --name <identity-name> \
+        --query 'id' \
+    ```
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
+1. Configure the `ManagedIdentityCredential` with the resource ID:
 
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId":::
+    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId":::
 
 ## [Object ID](#tab/object-id)
 
-A principal ID is another name for an object ID. You can retrieve the object ID for a user-assigned managed identity using the following command:
+A principal ID is another name for an object ID.
 
-```azurecli
-az identity show \
-    --resource-group <resource-group-name> \
-    --name <identity-name> \
-    --query 'principalId' \
-```
+1. Retrieve the object ID for a user-assigned managed identity using the following command:
 
-Configure the `ManagedIdentityCredential` with the object ID:
+    ```azurecli
+    az identity show \
+        --resource-group <resource-group-name> \
+        --name <identity-name> \
+        --query 'principalId' \
+    ```
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
+1. Configure the `ManagedIdentityCredential` with the object ID:
 
-An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId":::
+    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId":::
 
 ---
 

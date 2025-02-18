@@ -11,7 +11,7 @@ ms.date: 03/27/2024
 
 ## Description
 
-The `dotnet test` command builds the solution and runs the tests either with VSTest or with Microsoft Testing Platform (MTP). In order to enable MTP, you need to add a config file named `dotnet.config` with TOML format located at the root of the solution or repository.
+The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with TOML format located at the root of the solution or repository.
 
 Some examples of the `dotnet.config` file:
 
@@ -439,10 +439,10 @@ dotnet test -h|--help
 
 #### Description
 
-With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test related arguments are no longer fixed as they are tied to the registered extensions in the test project(s). Moreover, it supports globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md).
+With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md).
 
 > [!WARNING]
-> `dotnet test` doesn't run in an environment where we have test projects using VSTest and Microsoft Testing Platform in the same solution, as the two platforms are mutually incompatible.
+> `dotnet test` doesn't run in environments that have test projects using both VSTest and Microsoft Testing Platform in the same solution, as the two platforms are mutually incompatible.
 
 #### Implicit restore
 
@@ -463,7 +463,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   Specifies the path to a directory that contains a project or a solution.
 
 > [!NOTE]
-> You can use only one of the following options at a time: `--project`, `--solution`, or `--directory`. These options cannot be combined.
+> You can use only one of the following options at a time: `--project`, `--solution`, or `--directory`. These options can't be combined.
 
 - **`--test-modules <EXPRESSION>`**
 
@@ -479,7 +479,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--max-parallel-test-modules <NUMBER>`**
 
-  Specifies the max number of test modules that can run in parallel.
+  Specifies the maximum number of test modules that can run in parallel.
 
 [!INCLUDE [arch-no-a](../../../includes/cli-arch-no-a.md)]
 
@@ -499,15 +499,15 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`-v|--verbosity <LEVEL>`**
   
-  Sets the MSBuild verbosity level. Allowed values are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic]. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
+  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
 - **`--no-build`**
 
-  Doesn't build the test project before running it. It also implicitly sets the `--no-restore` flag.
+  Specifies that the test project isn't built before being run. It also implicitly sets the `--no-restore` flag.
 
 - **`--no-restore`**
 
-  Doesn't execute an implicit restore when running the command.
+  Specifies that an implicit restore isn't executed when running the command.
 
 - **`--no-ansi`**
 
@@ -519,7 +519,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`--output <VERBOSITY_LEVEL>`**
 
-  Specifies the output verbosity when reporting tests. Valid values are 'Normal', 'Detailed'. Default is 'Normal'.
+  Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. The default is `Normal`.
 
 - **`--property:<NAME>=<VALUE>`**
 
@@ -534,14 +534,14 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`-h|--help`**
 
-  Prints out a description of how to use the command. The options will be dynamic and they may differ from one test application to another as they will be based on the registered extensions in the test project.
+  Prints out a description of how to use the command. The options are dynamic and might differ from one test application to another, as they are based on the registered extensions in the test project.
 
 - **`args`**
 
   Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md).
 
 > [!NOTE]
-> To enable trace logging to a file, please use the environment variable `DOTNET_CLI_TEST_TRACEFILE` where you provide the path to the trace file.
+> To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.
 
 #### Examples
 

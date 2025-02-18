@@ -129,7 +129,7 @@ The typed client is registered as transient with DI. In the preceding code, `Add
 
 ### Generated clients
 
-`IHttpClientFactory` can be used in combination with third-party libraries such as [Refit](https://github.com/paulcbetts/refit). Refit is a REST library for .NET. It allows for declarative REST API definitions, mapping interface methods to endpoints. An implementation of the interface is generated dynamically by the `RestService`, using `HttpClient` to make the external HTTP calls.
+`IHttpClientFactory` can be used in combination with third-party libraries such as [Refit](https://github.com/reactiveui/refit). Refit is a REST library for .NET. It allows for declarative REST API definitions, mapping interface methods to endpoints. An implementation of the interface is generated dynamically by the `RestService`, using `HttpClient` to make the external HTTP calls.
 
 Consider the following `record` type:
 

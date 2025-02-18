@@ -1,26 +1,25 @@
 ---
 title: "Divide strings using String.Split"
 description: The Split method returns an array of strings split from a set of delimiters. It's an easy way to extract substrings from a string.
-ms.date: 02/10/2025
+ms.date: 02/18/2025
 helpviewer_keywords:
   - "splitting strings [C#]"
   - "Split method [C#]"
   - "strings [C#], splitting"
   - "parse strings"
-ms.assetid: 729c2923-4169-41c6-9c90-ef176c1e2953
-ms.custom: mvc, copilot-scenario-highlight
+ms.custom: copilot-scenario-highlight
 ms.collection: ce-skilling-ai-copilot
 ---
 # How to separate strings using String.Split in C\#
 
-The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an array of substrings by splitting the input string based on one or more delimiters. This method is often the easiest way to separate a string on word boundaries. It's also used to split strings on other specific characters or strings.
+The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an array of substrings by splitting the input string based on one or more delimiters. This method is often the easiest way to separate a string on word boundaries.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 > [!TIP]
 > You can use AI assistance to [split a string with GitHub Copilot](#use-github-copilot-to-split-a-string).
 
-## String.Split examples
+## Split a string into words
 
 The following code splits a common phrase into an array of strings for each word.
 
@@ -30,13 +29,17 @@ Every instance of a separator character produces a value in the returned array. 
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ParseStringsUsingSplit.cs" id="Snippet1.5":::
 
-Consecutive separator characters produce the empty string as a value in the returned array. You can see how an empty string is created in the following example, which uses the space character as a separator.
+The <xref:System.String.Split*?displayProperty=nameWithType> has many overloads. These overloads customize the behavior for splitting strings:
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ParseStringsUsingSplit.cs" id="Snippet2":::
+- You can specify separators as `char` values or `string` values.
+- You can specify one separator or multiple separators. If you specify multiple separators, they must all be the same type (either `char` or `string`).
+- You can specify the maximum number of substrings to return.
+- You can specify if repeated separator characters are ignored, or produce empty substrings in the return value.
+- You can specify if leading and trailing whitespace is removed from the returned substrings.
 
-This behavior makes it easier for formats like comma-separated values (CSV) files representing tabular data. Consecutive commas represent a blank column.
+The remaining examples use different overloads to show each of these behaviors. 
 
-You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to exclude any empty strings in the returned array. For more complicated processing of the returned collection, you can use [LINQ](/dotnet/csharp/linq/) to manipulate the result sequence.
+## Specify multiple separators
 
 <xref:System.String.Split%2A?displayProperty=nameWithType> can use multiple separator characters. The following example uses spaces, commas, periods, colons, and tabs as separating characters, which are passed to <xref:System.String.Split%2A> in an array. The loop at the bottom of the code displays each of the words in the returned array.
 
@@ -49,6 +52,30 @@ Consecutive instances of any separator produce the empty string in the output ar
 <xref:System.String.Split%2A?displayProperty=nameWithType> can take an array of strings (character sequences that act as separators for parsing the target string, instead of single characters).
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ParseStringsUsingSplit.cs" id="Snippet5":::
+
+## Limit output size
+
+The following example shows how to limit the output to the first four substrings in the source string.
+
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ParseStringsUsingSplit.cs" id="Snippet6":::
+
+## Remove empty substrings
+
+Consecutive separator characters produce the empty string as a value in the returned array. You can see how an empty string is created in the following example, which uses the space character as a separator.
+
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ParseStringsUsingSplit.cs" id="Snippet2":::
+
+This behavior makes it easier for formats like comma-separated values (CSV) files representing tabular data. Consecutive commas represent a blank column.
+
+You can pass an optional <xref:System.StringSplitOptions.RemoveEmptyEntries?displayProperty=nameWithType> parameter to exclude any empty strings in the returned array. For more complicated processing of the returned collection, you can use [LINQ](/dotnet/csharp/linq/) to manipulate the result sequence.
+
+## Trim whitespace
+
+The following example shows the effect of trimming entries:
+
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/ParseStringsUsingSplit.cs" id="Snippet7":::
+
+The untrimmed entries have extra whitespace before the numerals.
 
 ## Use GitHub Copilot to split a string
 

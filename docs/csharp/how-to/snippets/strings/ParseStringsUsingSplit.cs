@@ -31,6 +31,10 @@ public static class ParseStringsUsingSplit
         Console.WriteLine("Split into no more than four substrings");
         Console.WriteLine();
         SplitFourTimes();
+        
+        Console.WriteLine("Trim output substrings");
+        Console.WriteLine();
+        SplitAndTrim();
     }
 
     private static void SplitWords()
@@ -137,5 +141,25 @@ public static class ParseStringsUsingSplit
             Console.WriteLine($"<{word}>");
         }
         // </Snippet6>
+    }
+
+    private static void SplitAndTrim()
+    {
+        // <Snippet7>
+        string numerals = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10";
+        string[] words = numerals.Split(',', StringSplitOptions.TrimEntries);
+
+        Console.WriteLine("Trimmed entries:");
+        foreach (var word in words)
+        {
+            Console.WriteLine($"<{word}>");
+        }
+        words = numerals.Split(',', StringSplitOptions.None);
+        Console.WriteLine("Untrimmed entries:");
+        foreach (var word in words)
+        {
+            Console.WriteLine($"<{word}>");
+        }
+        // </Snippet7>
     }
 }

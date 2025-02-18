@@ -3,7 +3,6 @@ using Microsoft.Extensions.Azure;
 using Azure.Storage.Blobs;
 using Azure.Core;
 
-var userAssignedClientId = "<user-assigned-client-id>";
 var builder = WebApplication.CreateBuilder(args);
 
 // Registration options

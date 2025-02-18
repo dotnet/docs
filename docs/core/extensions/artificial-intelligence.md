@@ -180,11 +180,11 @@ The preceding example depends on the [📦 System.Threading.RateLimiting](https:
 
 To simplify the composition of such components with others, component authors should create a `Use*` extension method for registering the component into a pipeline. For example, consider the following extension method:
 
-:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.cs":::
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.cs" id="one":::
 
 Such extensions can also query for relevant services from the DI container; the <xref:System.IServiceProvider> used by the pipeline is passed in as an optional parameter:
 
-:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.OptionalOverload.cs":::
+:::code language="csharp" source="snippets/ai/AI.Shared/RateLimitingChatClientExtensions.OptionalOverload.cs"  id="two":::
 
 The consumer can then easily use this in their pipeline, for example:
 

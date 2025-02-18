@@ -540,6 +540,9 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md).
 
+> [!NOTE]
+> To enable trace logging to a file, please use the environment variable `DOTNET_CLI_TESTING_PLATFORM_TRACEFILE` where you provide the path to the trace file.
+
 #### Examples
 
 - Run the tests in the project in the current directory:

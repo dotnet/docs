@@ -1,7 +1,7 @@
 ---
 title: "How to compare strings"
 description: Learn how to compare and order string values, with or without case, with or without culture specific ordering.
-ms.date: 03/15/2024
+ms.date: 02/18/2025
 helpviewer_keywords:
     - "strings [C#], comparison"
     - "comparing strings [C#]"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 You compare strings to answer one of two questions: "Are these two strings equal?" or "In what order should these strings be placed when sorting them?"
 
-Those two questions are complicated by factors that affect string comparisons:
+The following factors complicate these two questions:
 
 - You can choose an ordinal or linguistic comparison.
 - You can choose if case matters.
@@ -44,6 +44,8 @@ The default ordinal comparison doesn't take linguistic rules into account when c
 
 The test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. They all perform a case-sensitive comparison. However, while the tests for equality perform an ordinal comparison, the `CompareTo` and `Compare` methods perform a culture-aware linguistic comparison using the current culture. Make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
 
+You can use the [`is`](../language-reference/operators/is.md) operator and a [constant pattern](../language-reference/operators/patterns.md#constant-pattern) as an alternative to `==` when the right operand is a constant.
+
 ## Case-insensitive ordinal comparisons
 
 The <xref:System.String.Equals(System.String,System.StringComparison)?displayProperty=nameWithType> method enables you to specify a <xref:System.StringComparison> value of
@@ -59,7 +61,7 @@ Many string comparison methods (such as <xref:System.String.StartsWith%2A?displa
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/strings/CompareStrings.cs" id="Snippet3":::
 
-On Windows, prior to .NET 5, the sort order of "cop", "coop", and "co-op" changes when you change from a linguistic comparison to an ordinal comparison. The two German sentences also compare differently using the different comparison types. Prior to .NET 5, the .NET globalization APIs used [National Language Support (NLS)](/windows/win32/intl/national-language-support) libraries. In .NET 5 and later versions, the .NET globalization APIs use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries, which unifies .NET's globalization behavior across all supported operating systems.
+On Windows, before .NET 5, the sort order of "cop", "coop", and "co-op" changes when you change from a linguistic comparison to an ordinal comparison. The two German sentences also compare differently using the different comparison types. Before .NET 5, the .NET globalization APIs used [National Language Support (NLS)](/windows/win32/intl/national-language-support) libraries. In .NET 5 and later versions, the .NET globalization APIs use [International Components for Unicode (ICU)](https://icu.unicode.org/) libraries, which unify .NET's globalization behavior across all supported operating systems.
 
 ## Comparisons using specific cultures
 

@@ -1,7 +1,7 @@
 ---
 title: "Equality operators - test if two objects are equal or not equal"
 description: "C# equality operators test if two objects are equal or not equal. You can define equality operators for your types for custom comparisons for equality"
-ms.date: 02/14/2025
+ms.date: 02/18/2025
 author: pkulikov
 f1_keywords: 
   - "==_CSharpKeyword"
@@ -19,6 +19,8 @@ helpviewer_keywords:
 # Equality operators - test if two objects are equal or not
 
 The [`==` (equality)](#equality-operator-) and [`!=` (inequality)](#inequality-operator-) operators check if their operands are equal or not. Value types are equal when their contents are equal. Reference types are equal when the two variables refer to the same storage.
+
+You can use the [`is`](./is.md) pattern matching operator as an alternative to an `==` test when you test against a [constant value](./patterns.md#constant-pattern). The `is` operator uses the default equality semantics for all value and reference types.
 
 ## Equality operator ==
 
@@ -70,7 +72,7 @@ Two [delegate](../../programming-guide/delegates/index.md) operands of the same 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="DelegateEquality":::
 
 > [!IMPORTANT]
-> Equal entries in an invocation list includes all fixed parameters in the invocation, including the receiver. The receiver is the instance of an object represented by `this` when the entry is invoked.
+> Equal entries in an invocation list include all fixed parameters in the invocation, including the receiver. The receiver is the instance of an object represented by `this` when the entry is invoked.
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/EqualityOperators.cs" id="SnippetCheckReceiver":::
 

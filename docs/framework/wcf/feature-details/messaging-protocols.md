@@ -1,8 +1,7 @@
 ---
-description: "Learn more about: Messaging Protocols"
 title: "Messaging Protocols"
+description: "Learn more about: Messaging Protocols"
 ms.date: "03/30/2017"
-ms.assetid: 5b20bca7-87b3-4c8f-811b-f215b5987104
 ---
 # Messaging Protocols
 
@@ -635,7 +634,7 @@ Content-Type: application/octet-stream
 
 #### WCF Secure SOAP 1.2 Message Encoded Using MTOM
 
-In this example, a message is encoded using MTOM and SOAP 1.2 that is protected using WS-Security. The binary parts identified for encoding are the contents of the `BinarySecurityToken`, `CipherValue` of the `EncryptedData` corresponding to the encrypted signature and encrypted body. Note that the `CipherValue` of the `EncryptedKey` was not identified for optimization by WCF, because its length is less then 1024 bytes.
+In this example, a message is encoded using MTOM and SOAP 1.2 that is protected using WS-Security. The binary parts identified for encoding are the contents of the `BinarySecurityToken`, `CipherValue` of the `EncryptedData` corresponding to the encrypted signature and encrypted body. Note that the `CipherValue` of the `EncryptedKey` was not identified for optimization by WCF, because its length is less than 1024 bytes.
 
 ```http
 POST http://131.107.72.15/Mtom/service.svc/Soap12MtomSecureSignEncrypt HTTP/1.1

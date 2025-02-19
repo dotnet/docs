@@ -13,8 +13,6 @@ items:
     href: ai-extensions.md
   - name: Semantic Kernel
     href: semantic-kernel-dotnet-overview.md
-- name: Learning resources and samples
-  href: azure-ai-for-dotnet-developers.md
 - name: Quickstarts
   items:
   - name: Build a chat app
@@ -53,7 +51,7 @@ items:
     href: conceptual/understanding-openai-functions.md
 - name: Chat with your data (RAG)
   items:
-    - name: Get started with the chat sample
+    - name: Get started with the RAG sample
       href: get-started-app-chat-template.md
     - name: Implement RAG using vector search
       href: tutorials/tutorial-ai-vector-search.md
@@ -81,3 +79,7 @@ items:
     href: conceptual/evaluation-libraries.md
   - name: "Tutorial: Evaluate LLM prompt completions"
     href: tutorials/llm-eval.md
+- name: Resources
+  items:
+  - name: Azure AI samples and docs
+    href: azure-ai-for-dotnet-developers.md

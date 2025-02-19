@@ -67,13 +67,13 @@ The following subsections show specific `IChatClient` usage examples:
 
 ### Request chat completion
 
-To request a completion, call the <xref:Microsoft.Extensions.AI.IChatClient.CompleteAsync*?displayProperty=nameWithType> method. The request is composed of one or more messages, each of which is composed of one or more pieces of content. Accelerator methods exist to simplify common cases, such as constructing a request for a single piece of text content.
+To request a completion, call the <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*?displayProperty=nameWithType> method. The request is composed of one or more messages, each of which is composed of one or more pieces of content. Accelerator methods exist to simplify common cases, such as constructing a request for a single piece of text content.
 
 :::code language="csharp" source="snippets/ai/ConsoleAI/Program.cs":::
 
-The core `IChatClient.CompleteAsync` method accepts a list of messages. This list represents the history of all messages that are part of the conversation.
+The core `IChatClient.GetResponseAsync` method accepts a list of messages. This list represents the history of all messages that are part of the conversation.
 
-:::code language="csharp" source="snippets/ai/ConsoleAI.CompleteAsyncArgs/Program.cs":::
+:::code language="csharp" source="snippets/ai/ConsoleAI.GetResponseAsyncArgs/Program.cs":::
 
 Each message in the history is represented by a <xref:Microsoft.Extensions.AI.ChatMessage> object. The `ChatMessage` class provides a <xref:Microsoft.Extensions.AI.ChatMessage.Role?displayProperty=nameWithType> property that indicates the role of the message. By default, the <xref:Microsoft.Extensions.AI.ChatRole.User?displayProperty=nameWithType> is used. The following roles are available:
 
@@ -94,9 +94,9 @@ Each chat message is instantiated, assigning to its <xref:Microsoft.Extensions.A
 
 ### Request chat completion with streaming
 
-The inputs to <xref:Microsoft.Extensions.AI.IChatClient.CompleteStreamingAsync*?displayProperty=nameWithType> are identical to those of `CompleteAsync`. However, rather than returning the complete response as part of a <xref:Microsoft.Extensions.AI.ChatCompletion> object, the method returns an <xref:System.Collections.Generic.IAsyncEnumerable`1> where `T` is <xref:Microsoft.Extensions.AI.StreamingChatCompletionUpdate>, providing a stream of updates that collectively form the single response.
+The inputs to <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*?displayProperty=nameWithType> are identical to those of `GetResponseAsync`. However, rather than returning the complete response as part of a <xref:Microsoft.Extensions.AI.ChatCompletion> object, the method returns an <xref:System.Collections.Generic.IAsyncEnumerable`1> where `T` is <xref:Microsoft.Extensions.AI.StreamingChatCompletionUpdate>, providing a stream of updates that collectively form the single response.
 
-:::code language="csharp" source="snippets/ai/ConsoleAI.CompleteStreamingAsync/Program.cs":::
+:::code language="csharp" source="snippets/ai/ConsoleAI.GetStreamingResponseAsync/Program.cs":::
 
 > [!TIP]
 > Streaming APIs are nearly synonymous with AI user experiences. C# enables compelling scenarios with its `IAsyncEnumerable<T>` support, allowing for a natural and efficient way to stream data.
@@ -120,7 +120,7 @@ The preceding code:
 - Defines a function named `GetCurrentWeather` that returns a random weather forecast.
   - This function is decorated with a <xref:System.ComponentModel.DescriptionAttribute>, which is used to provide a description of the function to the AI service.
 - Instantiates a <xref:Microsoft.Extensions.AI.ChatClientBuilder> with an <xref:Microsoft.Extensions.AI.OllamaChatClient> and configures it to use function invocation.
-- Calls `CompleteStreamingAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
+- Calls `GetStreamingResponseAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
 - Iterates over the response, printing each update to the console.
 
 ### Cache responses
@@ -141,7 +141,7 @@ The preceding example depends on the [📦 OpenTelemetry.Exporter.Console](https
 
 ### Provide options
 
-Every call to <xref:Microsoft.Extensions.AI.IChatClient.CompleteAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.CompleteStreamingAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary.
+Every call to <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary.
 
 You can also specify options when building an `IChatClient` with the fluent <xref:Microsoft.Extensions.AI.ChatClientBuilder> API and chaining a call to the `ConfigureOptions` extension method. This delegating client wraps another client and invokes the supplied delegate to populate a `ChatOptions` instance for every call. For example, to ensure that the <xref:Microsoft.Extensions.AI.ChatOptions.ModelId?displayProperty=nameWithType> property defaults to a particular model name, you can use code like the following:
 
@@ -165,7 +165,7 @@ The preceding example depends on the following NuGet packages:
 
 To add additional functionality, you can implement `IChatClient` directly or use the <xref:Microsoft.Extensions.AI.DelegatingChatClient> class. This class serves as a base for creating chat clients that delegate operations to another `IChatClient` instance. It simplifies chaining multiple clients, allowing calls to pass through to an underlying client.
 
-The `DelegatingChatClient` class provides default implementations for methods like `CompleteAsync`, `CompleteStreamingAsync`, and `Dispose`, which forward calls to the inner client. You can derive from this class and override only the methods you need to enhance behavior, while delegating other calls to the base implementation. This approach helps create flexible and modular chat clients that are easy to extend and compose.
+The `DelegatingChatClient` class provides default implementations for methods like `GetResponseAsync`, `GetStreamingResponseAsync`, and `Dispose`, which forward calls to the inner client. You can derive from this class and override only the methods you need to enhance behavior, while delegating other calls to the base implementation. This approach helps create flexible and modular chat clients that are easy to extend and compose.
 
 The following is an example class derived from `DelegatingChatClient` to provide rate limiting functionality, utilizing the <xref:System.Threading.RateLimiting.RateLimiter>:
 
@@ -194,7 +194,7 @@ This example demonstrates [hosted scenario](generic-host.md), where the consumer
 - <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{Microsoft.Extensions.AI.IChatClient,System.IServiceProvider,Microsoft.Extensions.AI.IChatClient})>
 - <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Extensions.AI.ChatCompletion}},System.Func{System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Collections.Generic.IAsyncEnumerable{Microsoft.Extensions.AI.StreamingChatCompletionUpdate}})>
 
-For example, in the earlier `RateLimitingChatClient` example, the overrides of `CompleteAsync` and `CompleteStreamingAsync` only need to do work before and after delegating to the next client in the pipeline. To achieve the same thing without writing a custom class, you can use an overload of `Use` that accepts a delegate that's used for both `CompleteAsync` and `CompleteStreamingAsync`, reducing the boilerplate required:
+For example, in the earlier `RateLimitingChatClient` example, the overrides of `GetResponseAsync` and `GetStreamingResponseAsync` only need to do work before and after delegating to the next client in the pipeline. To achieve the same thing without writing a custom class, you can use an overload of `Use` that accepts a delegate that's used for both `GetResponseAsync` and `GetStreamingResponseAsync`, reducing the boilerplate required:
 
 :::code language="csharp" source="snippets/ai/ConsoleAI.UseExample/Program.cs":::
 
@@ -202,7 +202,7 @@ The preceding overload internally uses an `AnonymousDelegatingChatClient`, which
 
 :::code language="csharp" source="snippets/ai/ConsoleAI.UseExampleAlt/Program.cs":::
 
-For scenarios where the developer would like to specify delegating implementations of `CompleteAsync` and `CompleteStreamingAsync` inline, and where it's important to be able to write a different implementation for each in order to handle their unique return types specially, another overload of `Use` exists that accepts a delegate for each.
+For scenarios where the developer would like to specify delegating implementations of `GetResponseAsync` and `GetStreamingResponseAsync` inline, and where it's important to be able to write a different implementation for each in order to handle their unique return types specially, another overload of `Use` exists that accepts a delegate for each.
 
 ### Dependency injection
 

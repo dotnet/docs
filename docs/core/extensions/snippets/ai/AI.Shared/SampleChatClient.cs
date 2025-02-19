@@ -5,7 +5,7 @@ public sealed class SampleChatClient(Uri endpoint, string modelId) : IChatClient
 {
     public ChatClientMetadata Metadata { get; } = new(nameof(SampleChatClient), endpoint, modelId);
 
-    public async Task<ChatCompletion> CompleteAsync(
+    public async Task<ChatCompletion> GetResponseAsync(
         IList<ChatMessage> chatMessages,
         ChatOptions? options = null,
         CancellationToken cancellationToken = default)
@@ -28,7 +28,7 @@ public sealed class SampleChatClient(Uri endpoint, string modelId) : IChatClient
         }]);
     }
 
-    public async IAsyncEnumerable<StreamingChatCompletionUpdate> CompleteStreamingAsync(
+    public async IAsyncEnumerable<StreamingChatCompletionUpdate> GetStreamingResponseAsync(
         IList<ChatMessage> chatMessages,
         ChatOptions? options = null,
         [EnumeratorCancellation] CancellationToken cancellationToken = default)

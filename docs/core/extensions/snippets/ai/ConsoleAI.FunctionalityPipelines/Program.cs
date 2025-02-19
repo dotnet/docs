@@ -42,5 +42,5 @@ for (int i = 0; i < 3; ++i)
         new ChatMessage(ChatRole.User, "Do I need an umbrella?")
     ];
 
-    Console.WriteLine(await client.CompleteAsync(history, options));
+    Console.WriteLine(await client.GetResponseAsync(history, options));
 }

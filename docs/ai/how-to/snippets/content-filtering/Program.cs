@@ -9,11 +9,11 @@ IChatClient client =
 
 try
 {
-    ChatCompletion completion = await client.CompleteAsync("YOUR_PROMPT");
+    ChatCompletion completion = await client.GetResponseAsync("YOUR_PROMPT");
 
     Console.WriteLine(completion.Message);
-} 
-catch (Exception e) 
+}
+catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }

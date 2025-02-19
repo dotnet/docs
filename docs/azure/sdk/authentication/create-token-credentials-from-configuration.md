@@ -88,7 +88,8 @@ A user-assigned managed identity can be used by providing a client ID, resource 
 }
 ```
 
-The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
+The resource ID takes the form: 
+`/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`
 
 ## [Object ID](#tab/object-id)
 

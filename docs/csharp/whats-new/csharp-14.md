@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 14
 description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
-ms.date: 02/04/2025
+ms.date: 02/19/2025
 ms.topic: whats-new
 ---
 # What's new in C# 14

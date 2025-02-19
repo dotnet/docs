@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions - Lambda expressions and anonymous functions"
 description: C# lambda expressions that are used to create anonymous functions and expression bodied members.
-ms.date: 02/13/2025
+ms.date: 02/19/2025
 helpviewer_keywords:
   - "lambda expressions [C#]"
   - "outer variables [C#]"

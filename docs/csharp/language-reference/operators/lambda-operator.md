@@ -1,7 +1,7 @@
 ---
 title: "The lambda operator - The `=>` operator is used to define a lambda expression"
 description: "The C# => operator defines lambda expressions and expression bodied members. Lambda expressions define a block of code used as data."
-ms.date: 02/13/2025
+ms.date: 02/19/2025
 f1_keywords: 
   - "=>_CSharpKeyword"
 helpviewer_keywords: 

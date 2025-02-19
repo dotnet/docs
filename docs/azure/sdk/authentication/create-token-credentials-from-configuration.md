@@ -3,7 +3,7 @@ title: Create token credentials from configuration
 description: This article describes how to create Microsoft Entra token credentials from configuration files.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 11/05/2024
+ms.date: 02/19/2025
 ---
 
 # Create Microsoft Entra credential types using configuration files
@@ -68,39 +68,41 @@ You can create both user-assigned and system-assigned managed identities using c
 
 #### User-assigned managed identities
 
-A user-assigned managed identity can be used by providing a client ID, resource ID, or object ID:
+A user-assigned managed identity can be used by providing a client ID, resource ID, or object ID.
 
-- **Client ID:**
+## [Client ID](#tab/client-id)
 
-    ```json
-    {
-        "credential": "managedidentity",
-        "clientId":  "<clientId>"
-    }
-    ```
+```json
+{
+    "credential": "managedidentity",
+    "clientId":  "<clientId>"
+}
+```
 
-- **Resource ID:**
+## [Resource ID](#tab/resource-id)
 
-    ```json
-    {
-        "credential": "managedidentity",
-        "managedIdentityResourceId":  "<managedIdentityResourceId>"
-    }
-    ```
+```json
+{
+    "credential": "managedidentity",
+    "managedIdentityResourceId":  "<managedIdentityResourceId>"
+}
+```
 
-    The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
+The resource ID takes the form `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`.
 
-- **Object ID:**
+## [Object ID](#tab/object-id)
 
-    ```json
-    {
-        "credential": "managedidentity",
-        "managedIdentityObjectId":  "<managedIdentityObjectId>"
-    }    
-    ```
+```json
+{
+    "credential": "managedidentity",
+    "managedIdentityObjectId":  "<managedIdentityObjectId>"
+}    
+```
 
-    > [!IMPORTANT]
-    > The `managedIdentityObjectId` JSON property is supported in `Microsoft.Extensions.Azure` versions 1.8.0 and later.
+> [!IMPORTANT]
+> The `managedIdentityObjectId` JSON property is supported in `Microsoft.Extensions.Azure` versions 1.8.0 and later.
+
+---
 
 #### System-assigned managed identities
 

@@ -1,7 +1,7 @@
 ---
 title: "Built-in types"
 description: "Learn C# built-in value and reference types"
-ms.date: 02/04/2025
+ms.date: 02/19/2025
 helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"

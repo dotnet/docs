@@ -1,7 +1,7 @@
 ---
 title: "Type-testing operators and cast expressions test the runtime type of an object"
 description: "The `is` and `as` operators test the type of an object. The `typeof` keyword returns the type of a variable. Casts try to convert an object to a variable of a different type."
-ms.date: 11/28/2022
+ms.date: 02/19/2025
 author: pkulikov
 f1_keywords: 
   - "is_CSharpKeyword"

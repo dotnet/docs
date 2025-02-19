@@ -1,7 +1,7 @@
 ---
 title: "User-defined explicit and implicit conversion operators - provide conversions to different types"
 description: "Learn how to define custom implicit and explicit type conversions in C#. The operators provide the functionality for casting an object to a new type."
-ms.date: 02/04/2025
+ms.date: 02/19/2025
 f1_keywords:
   - "explicit_CSharpKeyword"
   - "implicit_CSharpKeyword"

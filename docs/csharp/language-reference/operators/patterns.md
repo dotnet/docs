@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 11/22/2024
+ms.date: 02/18/2025
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -24,16 +24,16 @@ The following C# expressions and statements support pattern matching:
 
 In those constructs, you can match an input expression against any of the following patterns:
 
-- [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
-- [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression.
-- [Constant pattern](#constant-pattern): to test that an expression result equals a specified constant.
-- [Relational patterns](#relational-patterns): to compare an expression result with a specified constant.
-- [Logical patterns](#logical-patterns): to test that an expression matches a logical combination of patterns.
-- [Property pattern](#property-pattern): to test that an expression's properties or fields match nested patterns.
-- [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
-- [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
-- [Discard pattern](#discard-pattern): to match any expression.
-- [List patterns](#list-patterns): to test that a sequence of elements matches corresponding nested patterns. Introduced in C# 11.
+- [Declaration pattern](#declaration-and-type-patterns): check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
+- [Type pattern](#declaration-and-type-patterns): check the run-time type of an expression.
+- [Constant pattern](#constant-pattern): test that an expression result equals a specified constant.
+- [Relational patterns](#relational-patterns): compare an expression result with a specified constant.
+- [Logical patterns](#logical-patterns): test that an expression matches a logical combination of patterns.
+- [Property pattern](#property-pattern): test that an expression's properties or fields match nested patterns.
+- [Positional pattern](#positional-pattern): deconstruct an expression result and test if the resulting values match nested patterns.
+- [`var` pattern](#var-pattern): match any expression and assign its result to a declared variable.
+- [Discard pattern](#discard-pattern): match any expression.
+- [List patterns](#list-patterns): test that a sequence of elements matches corresponding nested patterns. Introduced in C# 11.
 
 [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
@@ -81,7 +81,7 @@ For more information, see the [Declaration pattern](~/_csharplang/proposals/csha
 
 ## Constant pattern
 
-You use a *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
+The *constant pattern* is an alternative syntax for [`==`](./equality-operators.md) when the right operand is a constant. You use a *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="BasicExample":::
 
@@ -184,7 +184,7 @@ You can also add a run-time type check and a variable declaration to a property 
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
-A property pattern is a recursive pattern. That is, you can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
+A property pattern is a recursive pattern. You can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 

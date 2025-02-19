@@ -49,7 +49,7 @@ Available starting in: .NET 9.0.
 
 | Attribute | Type | Description | Examples | Presence |
 |---|---|---|---|---|
-| `dotnet.gc.heap.generation` | string | Name of the maximum managed heap generation being collected. | `gen0`; `gen1`; `gen2` | Always |
+| `gc.heap.generation` | string | Name of the maximum managed heap generation being collected. | `gen0`; `gen1`; `gen2` | Always |
 
 The .NET GC is a generational garbage collector. Each time the garbage collector runs, it uses heuristics to select a maximum generation and then collects objects in all generations up to the selected maximum. For example, a `gen1` collection collects all objects in generations 0 and 1. A `gen2` collection collects all objects in generations 0, 1, and 2. For more information about the .NET GC and generational garbage collection, see the [.NET garbage collection guide](../../standard/garbage-collection/fundamentals.md#generations).
 
@@ -83,7 +83,7 @@ Available starting in: .NET 9.0.
 
 | Attribute | Type | Description | Examples | Presence |
 |---|---|---|---|---|
-| `dotnet.gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`;`loh`;`poh` | Always |
+| `gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`; `loh`; `poh` | Always |
 
 The .NET GC divides the heap into generations. In addition to the standard numbered generations, the GC also puts some objects into two special generations:
 
@@ -99,6 +99,10 @@ Available starting in: .NET 9.0.
 | Name     | Instrument Type | Unit (UCUM) | Description    |
 | -------- | --------------- | ----------- | -------------- |
 | `dotnet.gc.last_collection.heap.fragmentation.size` | UpDownCounter | `By` | The heap fragmentation, as observed during the latest garbage collection. |
+
+| Attribute | Type | Description | Examples | Presence |
+|---|---|---|---|---|
+| `gc.heap.generation` | string | Name of the garbage collector managed heap generation. | `gen0`; `gen1`; `gen2`; `loh`; `poh` | Always |
 
 This metric reports the same values as calling <xref:System.GCGenerationInfo.FragmentationAfterBytes?displayProperty=nameWithType>.
 

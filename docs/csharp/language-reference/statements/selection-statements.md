@@ -64,20 +64,23 @@ You can specify multiple case patterns for one section of a `switch` statement, 
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="MultipleCases":::
 
-Within a `switch` statement, control can fall from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](exception-handling-statements.md#the-throw-statement) statements to pass control out of a `switch` statement. To pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
+Within a `switch` statement, control can't fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](exception-handling-statements.md#the-throw-statement) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
+
+> [!IMPORTANT]
+> Missing `break` statement will throw exception, however **empty** case sections, like `case < 0:` in example above, **are** permitted to fall through. This deliberate design choice allows for concisely handling multiple cases that share the same or interdependent logic.
 
 In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.<br>
 
 > [!IMPORTANT]
 > Differences between **switch expression** and **switch statement**:
-> - **switch expression** must return a value, a **switch statement** does not. <br>
-> - **switch expressions** don't require break statements - fallthrough is not allowed.
-> - **switch expression** is typically used in contexts of value return and value assignment, often as [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md). <br> 
-> - **switch statement** is used to control the flow of execution within a block of code.<br>
+> - **switch statement** is used to control the execution flow within a block of code.<br>
+> - **switch expression** is typically used in contexts of value return and value assignment, often as a [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md). <br> 
+> - a **switch expression** case section cannot be empty, a **switch statement** can.<br>
+
 
 ### Case guards
 
-A case pattern may be not expressive enough to specify the condition for the execution of the switch section. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
+A case pattern may not be expressive enough to specify the condition for the execution of the switch section. In such a case, you can use a *case guard*. That is an additional condition that must be satisfied together with a matched pattern. A case guard must be a Boolean expression. You specify a case guard after the `when` keyword that follows a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/selection-statements/SwitchStatement.cs" id="WithCaseGuard":::
 

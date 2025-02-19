@@ -64,8 +64,9 @@ internal partial class ReadOnlyCollections
         Dictionary<string, int>.AlternateLookup<ReadOnlySpan<char>> spanLookup =
             wordCounts.GetAlternateLookup<ReadOnlySpan<char>>();
 
-        foreach (Range wordRange in Regex.EnumerateSplits(input, @"\b\w+\b"))
+        foreach (ValueMatch match in Regex.EnumerateMatches(input, @"\b\w+\b"))
         {
+            Range wordRange = match.Index..(match.Index + match.Length);
             ReadOnlySpan<char> word = input[wordRange];
             spanLookup[word] = spanLookup.TryGetValue(word, out int count) ? count + 1 : 1;
         }

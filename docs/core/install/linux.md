@@ -26,6 +26,8 @@ Starting with .NET 9, Microsoft only publishes packages for supported Linux dist
 - [openSUSE Leap](linux-opensuse.md)
 - [SUSE Enterprise Linux](linux-sles.md)
 
+Note: Azure Linux packages are available for Arm64 and x64, while Debian, OpenSUSE Leap, and SUSE Enterprise Linux packages are available for x64 only.
+
 The following Linux distributions officially support .NET, and publish their own .NET packages:
 
 - Azure Linux 2.0 (CBL-Mariner)

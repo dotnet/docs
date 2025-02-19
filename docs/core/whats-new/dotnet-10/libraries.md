@@ -10,13 +10,13 @@ ms.topic: whats-new
 
 This article describes new features in the .NET libraries for .NET 10. It has been updated for Preview 1.
 
-## Finding certificates by thumbprints other than SHA-1
+## Find certificates by thumbprints other than SHA-1
 
-Finding certificates uniquely by thumbprint is a fairly common operation, but the `X509Certificate2Collection.Find` method (for the `FindByThumbprint` mode) only searches for the SHA-1 Thumbprint value.
+Finding certificates uniquely by thumbprint is a fairly common operation, but the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)?displayProperty=nameWithType> method (for the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> mode) only searches for the SHA-1 Thumbprint value.
 
-Since SHA-2-256 ("SHA256") and SHA-3-256 have the same lengths, we decided that making the Find method find any vaguely matching thumbprints was not the best option.
+Since SHA-2-256 ("SHA256") and SHA-3-256 have the same lengths, it doesn't make sense to implement the `Find` method to find any *vaguely* matching thumbprints.
 
-Instead, we introduced a new method that accepts the name of the hash algorithm that you want to use for matching.
+Instead, .NET 10 introduces a new method that accepts the name of the hash algorithm to use for matching.
 
 ```C#
 X509Certificate2Collection coll = store.Certificates.FindByThumbprint(HashAlgorithmName.SHA256, thumbprint);
@@ -24,11 +24,11 @@ Debug.Assert(coll.Count < 2, "Collection has too many matches, has SHA-2 been br
 return coll.SingleOrDefault();
 ```
 
-## Finding PEM-encoded Data in ASCII/UTF-8
+## Find PEM-encoded Data in ASCII/UTF-8
 
-The PEM encoding (originally "Privacy Enhanced Mail", but now used widely outside of email) is defined for "text", which means that the `PemEncoding` class was designed to run on `System.String` and `ReadOnlySpan<char>`. However, it's quite common (especially on Linux) to have something like a certificate written in a file that uses the ASCII (string) encoding. Historically, that meant you needed to open the file, convert the bytes to chars (or a string), and then you can use PemEncoding.
+The PEM encoding (originally "Privacy Enhanced Mail", but now used widely outside of email) is defined for "text", which means that the <xref:System.Security.Cryptography.PemEncoding> class was designed to run on <xref:System.String> and `ReadOnlySpan<char>`. However, it's quite common (especially on Linux) to have something like a certificate written in a file that uses the ASCII (string) encoding. Historically, that meant you needed to open the file and convert the bytes to chars (or a string) before you could use `PemEncoding`.
 
-Taking advantage of the fact that PEM is only defined for 7-bit ASCII characters, and that 7-bit ASCII has a perfect overlap with single-byte UTF-8 values, you can now skip the UTF-8/ASCII to char conversion and read the file directly.
+Taking advantage of the fact that PEM is only defined for 7-bit ASCII characters, and that 7-bit ASCII has a perfect overlap with single-byte UTF-8 values, you can now skip the UTF-8/ASCII-to-char conversion and read the file directly.
 
 ```diff
 byte[] fileContents = File.ReadAllBytes(path);
@@ -42,7 +42,7 @@ byte[] fileContents = File.ReadAllBytes(path);
 
 ## New method overloads in ISOWeek for DateOnly type
 
-The ISOWeek class was originally designed to work exclusively with DateTime, as it was introduced before the DateOnly type existed. Now that DateOnly is available, it makes sense for ISOWeek to support it as well.
+The <xref:System.Globalization.ISOWeek> class was originally designed to work exclusively with <xref:System.DateTime>, as it was introduced before the <xref:System.DateOnly> type existed. Now that `DateOnly` is available, it makes sense for `ISOWeek` to support it as well.
 
 ```C#
     public static class ISOWeek
@@ -58,7 +58,7 @@ The ISOWeek class was originally designed to work exclusively with DateTime, as 
 
 Unicode string normalization has been supported for a long time, but existing APIs have only worked with the string type. This means that callers with data stored in different forms, such as character arrays or spans, must allocate a new string to use these APIs. Additionally, APIs that return a normalized string always allocate a new string to represent the normalized output.
 
-The change introduces new APIs that work with spans of characters, expanding normalization beyond string types and helping to avoid unnecessary allocations.
+.NET 10 introduces new APIs that work with spans of characters, expanding normalization beyond string types and helping to avoid unnecessary allocations.
 
 ```C#
     public static class StringNormalizationExtensions
@@ -71,7 +71,7 @@ The change introduces new APIs that work with spans of characters, expanding nor
 
 ## Numeric ordering for string comparison
 
-Numerical string comparison is a highly requested feature (<https://github.com/dotnet/runtime/issues/13979>) for comparing strings numerically instead of lexicographically. For example, `2` is less than `10`, so `"2"` should appear before `"10"` when ordered numerically. Similarly, `"2"` and `"02"` are equal numerically. With the new `CompareOptions.NumericOrdering` option, it is now possible to do these types of comparisons:
+Numerical string comparison is a highly requested feature for comparing strings numerically instead of lexicographically. For example, `2` is less than `10`, so `"2"` should appear before `"10"` when ordered numerically. Similarly, `"2"` and `"02"` are equal numerically. With the new `CompareOptions.NumericOrdering` <!--xref:System.Globalization.CompareOptions.NumericOrdering--> option, it's now possible to do these types of comparisons:
 
 ```cs
 StringComparer numericStringComparer = StringComparer.Create(CultureInfo.CurrentCulture, CompareOptions.NumericOrdering);
@@ -94,25 +94,21 @@ Console.WriteLine(set.Contains("7"));
 // Output: True
 ```
 
-Note that this option is not valid for the following index based string operations: `IndexOf`, `LastIndexOf`, `StartsWith`, `EndsWith`, `IsPrefix`, and `IsSuffix`.
+Note that this option is not valid for the following index-based string operations: `IndexOf`, `LastIndexOf`, `StartsWith`, `EndsWith`, `IsPrefix`, and `IsSuffix`.
 
-## Adding `TimeSpan.FromMilliseconds` overload with a single parameter
+## New `TimeSpan.FromMilliseconds` overload with single parameter
 
-Previously, we introduced the following method without adding an overload that takes a single parameter:
-
-```C#
-public static TimeSpan FromMilliseconds(long milliseconds, long microseconds = 0);
-```
+The <xref:System.TimeSpan.FromMilliseconds(System.Int64,System.Int64)?displayProperty=nameWithType> method was introduced previously without adding an overload that takes a single parameter.
 
 Although this works since the second parameter is optional, it causes a compilation error when used in a LINQ expression like:
 
-```C#
+```csharp
 Expression<Action> a = () => TimeSpan.FromMilliseconds(1000);
 ```
 
-The issue arises because LINQ expressions cannot handle optional parameters. To address this, we are introducing an overload that takes a single parameter and modifying the existing method to make the second parameter mandatory:
+The issue arises because LINQ expressions cannot handle optional parameters. To address this, .NET 10 introduces an overload takes a single parameter and modifying the existing method to make the second parameter mandatory:
 
-```C#
+```csharp
 public readonly struct TimeSpan
 {
     public static TimeSpan FromMilliseconds(long milliseconds, long microseconds); // Second parameter is no longer optional
@@ -128,7 +124,7 @@ Two significant PRs have been made by contributor @edwardneal in .NET 10 Preview
 
 Adding a 2GB zip file to an existing archive showed:
 
-- A 99.8% reduction in execution time.
+First, the way entries are written to a `ZipArchive` when in `Update` mode has been optimized. Previously, all <xref:System.IO.Compression.ZipArchiveEntry> instances were loaded into memory and rewritten, which could lead to high memory usage and performance bottlenecks. The optimization reduces memory usage and improves performance by avoiding the need to load all entries into memory.
 - A 99.9996% reduction in memory usage.
 
 ### Benchmarks:
@@ -203,9 +199,9 @@ Additional benchmarking details provided [in the PR description](https://github.
 
 ## Additional `TryAdd` and `TryGetValue` overloads for `OrderedDictionary<TKey, TValue>`
 
-`OrderedDictionary<TKey, TValue>` provides `TryAdd` and `TryGetValue` for addition and retrieval like any other `IDictionary<TKey, TValue>` implementation. However, there are scenarios where you might want to perform additional operations, so new overloads have been added which return an index to the entry:
+`OrderedDictionary<TKey, TValue>` provides `TryAdd` and `TryGetValue` for addition and retrieval like any other `IDictionary<TKey, TValue>` implementation. However, there are scenarios where you might want to perform additional operations, so new overloads have been added that return an index to the entry:
 
-```cs
+```csharp
 public class OrderedDictionary<TKey, TValue>
 {
     // New overloads
@@ -214,7 +210,7 @@ public class OrderedDictionary<TKey, TValue>
 }
 ```
 
-This index can then be used with `GetAt`/`SetAt` for fast access to the entry. An example usage of the new `TryAdd` overload is to add or update a key/value pair in the ordered dictionary:
+This index can then be used with <xref:System.Collections.Generic.OrderedDictionary`2.GetAt*>/<xref:System.Collections.Generic.OrderedDictionary`2.SetAt*> for fast access to the entry. An example usage of the new `TryAdd` overload is to add or update a key/value pair in the ordered dictionary:
 
 ```cs
 public static void IncrementValue(OrderedDictionary<string, int> orderedDictionary, string key)
@@ -233,9 +229,9 @@ This new API is now being used in `JsonObject` to improve the performance of upd
 
 ## Allow specifying ReferenceHandler in `JsonSourceGenerationOptions`
 
-When using source generators for JSON serialization, the generated context will throw when cycles are serialized or deserialized. This behavior can now be customized by specifying the `ReferenceHandler` in the `JsonSourceGenerationOptionsAttribute`. Here is an example using `JsonKnownReferenceHandler.Preserve`:
+When using source generators for JSON serialization, the generated context will throw when cycles are serialized or deserialized. This behavior can now be customized by specifying the <xref:System.Text.Json.Serialization.ReferenceHandler> in the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Here is an example using `JsonKnownReferenceHandler.Preserve`:
 
-```cs
+```csharp
 SelfReference selfRef = new SelfReference();
 selfRef.Me = selfRef;
 
@@ -256,12 +252,12 @@ internal class SelfReference
 
 ## More left-handed matrix transformation methods
 
-The remaining APIs for creating left-handed tranformation matrices have been added for billboard and constrained billboard matrices. These can be used like their existing right-handed counterparts when using a left-handed coordinate system instead.
+.NET 10 adds the remaining APIs for creating left-handed transformation matrices for billboard and constrained-billboard matrices. You can use these methods like their existing right-handed counterparts [add xrefs to the existing counterparts] when using a left-handed coordinate system instead.
 
 ```cs
 public partial struct Matrix4x4
 {
    public static Matrix4x4 CreateBillboardLeftHanded(Vector3 objectPosition, Vector3 cameraPosition, Vector3 cameraUpVector, Vector3 cameraForwardVector)
-   public static Matrix4x4 CreateConstrainedBillboardLeftHanded(Vector3 objectPosition, Vector3 cameraPosition, Vector3 rotateAxis, Vector3 cameraForwardVector, Vector3 objectForwardVector)
+## More left-handed matrix transformation methods
 }
 ```

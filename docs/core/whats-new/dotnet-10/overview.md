@@ -41,7 +41,7 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## .NET Aspire
 
-TODO - Add a brief overview of the new features in .NET Aspire.
+<!--TODO - Add a brief overview of the new features in .NET Aspire.-->
 
 ## ASP.NET Core
 

@@ -71,8 +71,6 @@ static void Sum()
 
 Because the JIT knows `numbers` is an array of only three integers at compile time, and it doesn't outlive a call to `Sum`, it allocates it on the stack.
 
-Among other [stack allocation enhancements](https://github.com/dotnet/runtime/issues/104936), we plan to expand this ability to arrays of reference types in the coming previews.
-
 ## AVX10.2 support
 
 .NET 10 introduces support for the Advanced Vector Extensions (AVX) 10.2 for x64-based processors. The new intrinsics available in the `System.Runtime.Intrinsics.X86.Avx10v2` <!--xref:System.Runtime.Intrinsics.X86.Avx10v2--> class can be tested once capable hardware is available.

@@ -21,7 +21,7 @@ Token-based authentication offers the following advantages over connection strin
 - Token-based authentication ensures only the specific apps intended to access the Azure resource are able to do so, whereas anyone or any app with a connection string can connect to an Azure resource.
 - Token-based authentication allows you to further limit Azure resource access to only the specific permissions needed by the app. This follows the [principle of least privilege](https://wikipedia.org/wiki/Principle_of_least_privilege). In contrast, a connection string grants full rights to the Azure resource.
 - When using a [managed identity](/entra/identity/managed-identities-azure-resources/overview) for token-based authentication, Azure handles administrative functions for you, so you don't have to worry about tasks like securing or rotating secrets. This makes the app more secure because there's no connection string or application secret that can be compromised.
-- The [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package acquires and manages Microsoft Entra tokens for you.
+- The Azure Identity library acquires and manages Microsoft Entra tokens for you.
 
 Use of connection strings should be limited to scenarios where token-based authentication is not an option, initial proof-of-concept apps, or development prototypes that don't access production or sensitive data. When possible, use the token-based authentication classes available in the Azure Identity library to authenticate to Azure resources.
 
@@ -68,7 +68,7 @@ You can use your own Azure credentials to authenticate to Azure resources during
 
 #### Use a service principal
 
-A service principal is created in a Microsoft Entra tenant to represent an app and be used to authenticate to Azure resources. You can configure your app to use service principal credentials during local development. This method is more secure than using developer credentials and is closer to how your app will authenticate in production. However, it is still less ideal than using a managed identity due to the need for secrets.
+A service principal is created in a Microsoft Entra tenant to represent an app and be used to authenticate to Azure resources. You can configure your app to use service principal credentials during local development. This method is more secure than using developer credentials and is closer to how your app will authenticate in production. However, it's still less ideal than using a managed identity due to the need for secrets.
 
 > [!div class="nextstepaction"]
 > [Authenticate locally using a service principal](local-development-service-principal.md)

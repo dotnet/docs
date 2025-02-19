@@ -118,88 +118,15 @@ public readonly struct TimeSpan
 
 ## ZipArchive performance and memory improvements
 
-Two significant PRs have been made by contributor @edwardneal in .NET 10 Preview 1 to improve the performance and memory usage of `ZipArchive`:
+.NET 10 improves the performance and memory usage of <xref:System.IO.Compression.ZipArchive>.
 
-- [dotnet/runtime #102704](https://github.com/dotnet/runtime/pull/102704) optimizes the way entries are written to a `ZipArchive` when in `Update` mode. Previously, all `ZipArchiveEntries` would be loaded into memory and rewritten, which could lead to high memory usage and performance bottlenecks. The optimization reduces memory usage and improves performance by avoiding the need to load all entries into memory.
+First, the way entries are written to a `ZipArchive` when in `Update` mode has been optimized. Previously, all <xref:System.IO.Compression.ZipArchiveEntry> instances were loaded into memory and rewritten, which could lead to high memory usage and performance bottlenecks. The optimization reduces memory usage and improves performance by avoiding the need to load all entries into memory. Details are provided in [dotnet/runtime #102704](https://github.com/dotnet/runtime/pull/102704#issue-2317941700).
 
-Adding a 2GB zip file to an existing archive showed:
-
-First, the way entries are written to a `ZipArchive` when in `Update` mode has been optimized. Previously, all <xref:System.IO.Compression.ZipArchiveEntry> instances were loaded into memory and rewritten, which could lead to high memory usage and performance bottlenecks. The optimization reduces memory usage and improves performance by avoiding the need to load all entries into memory.
-- A 99.9996% reduction in memory usage.
-
-### Benchmarks:
-
-| Method    | Job      | Runtime   | Mean     | Error      | StdDev      | Ratio | RatioSD | Gen0      | Gen1      | Gen2      | Allocated | Alloc Ratio |
-|-----------|----------|-----------|---------:|-----------:|------------:|------:|--------:|----------:|----------:|----------:|----------:|------------:|
-| Benchmark | Baseline | .NET 9.0  | 4.187 s  | 83.3751 ms | 177.6792 ms | 1.002 | 0.06    | 1000.0000 | 1000.0000 | 1000.0000 | 2 GB      | 1.000       |
-| Benchmark | CoreRun  | .NET 10.0 | 9.452 ms | 0.1583 ms  | 0.1322 ms   | 0.002 | 0.00    | -         | -         | -         | 7.01 KB   | 0.000       |
-
-Additional details are provided in [dotnet/runtime #102704](https://github.com/dotnet/runtime/pull/102704#issue-2317941700).
-
-- [dotnet/runtime #103153](https://github.com/dotnet/runtime/pull/103153) enhances the performance of `ZipArchive` by parallelizing the extraction of entries and optimizing internal data structures for better memory usage. These improvements address issues related to performance bottlenecks and high memory usage, making `ZipArchive` more efficient and faster, especially when dealing with large archives.
-
-Reading a zip archive showed:
-
-- An 18% reduction in execution time.
-- An 18% reduction in memory usage.
-
-### Benchmarks:
-
-| Method    | Job      | Runtime   | NumberOfFiles | Mean            | Error         | StdDev        | Ratio | RatioSD | Gen0      | Gen1     | Gen2     | Allocated  | Alloc Ratio |
-|-----------|----------|-----------|---------------|----------------:|--------------:|--------------:|------:|--------:|----------:|---------:|---------:|-----------:|------------:|
-| Benchmark | Baseline | .NET 9.0  | 2             | 1,178.6 ns      | 23.23 ns      | 22.81 ns      | 1.00  | 0.03    | 0.3700    | -        | -        | 1.52 KB    | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 2             | 821.6 ns        | 12.45 ns      | 11.65 ns      | 0.70  | 0.02    | 0.2899    | -        | -        | 1.19 KB    | 0.78        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 10            | 4,205.5 ns      | 62.41 ns      | 55.33 ns      | 1.00  | 0.02    | 1.4954    | -        | -        | 6.13 KB    | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 10            | 3,467.5 ns      | 67.25 ns      | 66.05 ns      | 0.82  | 0.02    | 1.2054    | -        | -        | 4.93 KB    | 0.80        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 25            | 10,201.5 ns     | 190.59 ns     | 187.18 ns     | 1.00  | 0.02    | 3.5095    | -        | -        | 14.38 KB   | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 25            | 8,210.2 ns      | 152.35 ns     | 142.51 ns     | 0.81  | 0.02    | 2.8229    | -        | -        | 11.54 KB   | 0.80        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 50            | 20,152.7 ns     | 333.29 ns     | 311.76 ns     | 1.00  | 0.02    | 7.0496    | -        | -        | 28.91 KB   | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 50            | 20,109.1 ns     | 517.18 ns     | 1,500.43 ns   | 1.00  | 0.08    | 5.7068    | -        | -        | 23.34 KB   | 0.81        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 100           | 46,986.2 ns     | 923.08 ns     | 1,906.33 ns   | 1.00  | 0.06    | 14.2822   | 0.1221   | -        | 58.42 KB   | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 100           | 37,767.2 ns     | 752.51 ns     | 1,554.06 ns   | 0.81  | 0.05    | 11.5967   | 0.0610   | -        | 47.38 KB   | 0.81        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 250           | 115,159.8 ns    | 2,211.52 ns   | 2,271.07 ns   | 1.00  | 0.03    | 34.5459   | 0.1221   | -        | 141.42 KB  | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 250           | 94,148.7 ns     | 1,842.33 ns   | 3,414.87 ns   | 0.82  | 0.03    | 27.8320   | 0.3662   | -        | 113.97 KB  | 0.81        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 500           | 241,338.5 ns    | 4,726.33 ns   | 7,896.64 ns   | 1.00  | 0.05    | 69.8242   | 0.4883   | -        | 285.86 KB  | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 500           | 184,869.9 ns    | 2,969.04 ns   | 4,162.18 ns   | 0.77  | 0.03    | 56.1523   | 0.7324   | -        | 231.06 KB  | 0.81        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 1000          | 510,114.6 ns    | 10,092.12 ns  | 20,386.57 ns  | 1.00  | 0.05    | 114.2578  | 72.2656  | -        | 577.2 KB   | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 1000          | 404,349.3 ns    | 7,289.88 ns   | 16,153.88 ns  | 0.79  | 0.04    | 93.2617   | 52.7344  | -        | 467.72 KB  | 0.81        |
-|           |          |           |               |                 |               |               |       |         |           |          |          |            |             |
-| Benchmark | Baseline | .NET 9.0  | 10000         | 13,950,239.9 ns | 273,372.39 ns | 345,728.57 ns | 1.00  | 0.03    | 1000.0000 | 687.5000 | 218.7500 | 5786.24 KB | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 10000         | 10,911,298.0 ns | 204,013.47 ns | 226,760.43 ns | 0.78  | 0.02    | 843.7500  | 609.3750 | 250.0000 | 4692.19 KB | 0.81        |
-
-Creating an archive showed:
-
-- A 23-35% reduction in execution time.
-- A 2% reduction in memory usage.
-
-Benchmarks:
-
-| Method    | Job      | Runtime   | NumberOfFiles | Mean      | Error     | StdDev     | Median    | Ratio | RatioSD | Gen0    | Gen1    | Allocated | Alloc Ratio |
-|-----------|----------|-----------|---------------|----------:|----------:|-----------:|----------:|------:|--------:|--------:|--------:|----------:|------------:|
-| Benchmark | Baseline | .NET 9.0  | 2             | 2.729 μs  | 0.0538 μs | 0.0449 μs  | 2.706 μs  | 1.00  | 0.02    | 2.2697  | -       | 9.28 KB   | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 2             | 1.665 μs  | 0.0256 μs | 0.0239 μs  | 1.659 μs  | 0.61  | 0.01    | 2.2259  | -       | 9.1 KB    | 0.98        |
-|           |          |           |               |           |           |            |           |       |         |         |         |           |             |
-| Benchmark | Baseline | .NET 9.0  | 10            | 10.341 μs | 0.1988 μs | 0.2289 μs  | 10.266 μs | 1.00  | 0.03    | 9.7046  | -       | 39.76 KB  | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 10            | 7.937 μs  | 0.1514 μs | 0.2487 μs  | 7.831 μs  | 0.77  | 0.03    | 9.5215  | -       | 39.02 KB  | 0.98        |
-|           |          |           |               |           |           |            |           |       |         |         |         |           |             |
-| Benchmark | Baseline | .NET 9.0  | 25            | 24.677 μs | 0.4903 μs | 0.8842 μs  | 24.563 μs | 1.00  | 0.05    | 20.1721 | 3.3569  | 82.92 KB  | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 25            | 18.247 μs | 0.3474 μs | 0.3412 μs  | 18.192 μs | 0.74  | 0.03    | 19.7754 | 3.2654  | 81.13 KB  | 0.98        |
-|           |          |           |               |           |           |            |           |       |         |         |         |           |             |
-| Benchmark | Baseline | .NET 9.0  | 50            | 67.420 μs | 5.7447 μs | 16.9384 μs | 57.185 μs | 1.05  | 0.35    | 40.5273 | 13.4888 | 166.71 KB | 1.00        |
-| Benchmark | CoreRun  | .NET 10.0 | 50            | 41.443 μs | 0.7212 μs | 0.8306 μs  | 41.493 μs | 0.65  | 0.13    | 39.6729 | 0.0610  | 163.16 KB | 0.98        |
-
-Additional benchmarking details provided [in the PR description](https://github.com/dotnet/runtime/pull/103153#issue-2339713028).
+Second, the extraction of <xref:System.IO.Compression.ZipArchive> entries is now parallelized, and internal data structures are optimized for better memory usage. These improvements address issues related to performance bottlenecks and high memory usage, making `ZipArchive` more efficient and faster, especially when dealing with large archives. Details are provided [dotnet/runtime #103153](https://github.com/dotnet/runtime/pull/103153#issue-2339713028).
 
 ## Additional `TryAdd` and `TryGetValue` overloads for `OrderedDictionary<TKey, TValue>`
 
-`OrderedDictionary<TKey, TValue>` provides `TryAdd` and `TryGetValue` for addition and retrieval like any other `IDictionary<TKey, TValue>` implementation. However, there are scenarios where you might want to perform additional operations, so new overloads have been added that return an index to the entry:
+<xref:System.Collections.Generic.OrderedDictionary`2> provides `TryAdd` and `TryGetValue` for addition and retrieval like any other `IDictionary<TKey, TValue>` implementation. However, there are scenarios where you might want to perform additional operations, so new overloads have been added that return an index to the entry:
 
 ```csharp
 public class OrderedDictionary<TKey, TValue>
@@ -212,7 +139,7 @@ public class OrderedDictionary<TKey, TValue>
 
 This index can then be used with <xref:System.Collections.Generic.OrderedDictionary`2.GetAt*>/<xref:System.Collections.Generic.OrderedDictionary`2.SetAt*> for fast access to the entry. An example usage of the new `TryAdd` overload is to add or update a key/value pair in the ordered dictionary:
 
-```cs
+```csharp
 public static void IncrementValue(OrderedDictionary<string, int> orderedDictionary, string key)
 {
     // Try to add a new key with value 1.
@@ -225,7 +152,7 @@ public static void IncrementValue(OrderedDictionary<string, int> orderedDictiona
 }
 ```
 
-This new API is now being used in `JsonObject` to improve the performance of updating properties by 10-20%.
+This new API is already used in <xref:System.Json.JsonObject> and improves the performance of updating properties by 10-20%.
 
 ## Allow specifying ReferenceHandler in `JsonSourceGenerationOptions`
 
@@ -254,7 +181,7 @@ internal class SelfReference
 
 .NET 10 adds the remaining APIs for creating left-handed transformation matrices for billboard and constrained-billboard matrices. You can use these methods like their existing right-handed counterparts [add xrefs to the existing counterparts] when using a left-handed coordinate system instead.
 
-```cs
+```csharp
 public partial struct Matrix4x4
 {
    public static Matrix4x4 CreateBillboardLeftHanded(Vector3 objectPosition, Vector3 cameraPosition, Vector3 cameraUpVector, Vector3 cameraForwardVector)

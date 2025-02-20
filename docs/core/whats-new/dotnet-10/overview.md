@@ -12,28 +12,23 @@ Learn about the new features in .NET 10 and find links to further documentation.
 
 ## .NET runtime
 
-- [Array interface method devirtualization](runtime.md#array-interface-method-devirtualization)
-- [Stack allocation of arrays of value types](runtime.md#stack-allocation-of-arrays-of-value-types)
-- [AVX10.2 support](runtime.md#avx102-support)
+.NET 10, the successor to [.NET 9](../dotnet-9/overview.md), has a special focus on cloud-native apps and performance. It will be [supported for 3 years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://dotnet.microsoft.com/download/dotnet/10.0).
+
+Your feedback is important and appreciated. We've created a discussion on [GitHub](https://github.com/dotnet/core/discussions/categories/news) for your questions and comments.
 
 For more information, see [What's new in the .NET 10 runtime](runtime.md).
 
 ## .NET libraries
 
-- [Finding certificates by thumbprints other than SHA-1](libraries.md#finding-certificates-by-thumbprints-other-than-sha-1)
-- [Finding PEM-encoded data in ASCII/UTF-8](libraries.md#finding-pem-encoded-data-in-asciiutf-8)
-- [New method overloads in ISOWeek for DateOnly type](libraries.md#new-method-overloads-in-isoweek-for-dateonly-type)
-- [String normalization APIs to work with span of characters](libraries.md#string-normalization-apis-to-work-with-span-of-characters)
-- [Numeric ordering for string comparison](libraries.md#numeric-ordering-for-string-comparison)
-- [Adding TimeSpan.FromMilliseconds overload with a single parameter](libraries.md#adding-timespanfrommilliseconds-overload-with-a-single-parameter)
-- [ZipArchive performance and memory improvements](libraries.md#ziparchive-performance-and-memory-improvements)
-- [Additional TryAdd and TryGetValue overloads for OrderedDictionary<TKey, TValue>](libraries.md#additional-tryadd-and-trygetvalue-overloads-for-ordereddictionarytkey-tvalue)
-- [Allow specifying ReferenceHandler in JsonSourceGenerationOptions](libraries.md#allow-specifying-referencehandler-in-jsonsourcegenerationoptions)
-- [More left-handed matrix transformation methods](libraries.md#more-left-handed-matrix-transformation-methods)
+The .NET 10 libraries introduce several new features and improvements. A new method `FindByThumbprint` allows finding certificates by thumbprints using hash algorithms other than SHA-1. Additionally, support has been added for reading PEM-encoded data directly from ASCII encoded files. The <xref:System.Globalization.ISOWeek> class now includes new method overloads to support the <xref:System.DateOnly> type. Unicode string normalization APIs have been enhanced to work with spans of characters, and a new `CompareOptions.NumericOrdering` option has been introduced for numerical string comparison.
+
+Additionally, a new <xref:System.TimeSpan.FromMilliseconds*?displayProperty=nameWithType> overload that takes a single parameter has been added. The performance and memory usage of [ZipArchive](xref:System.IO.Compression.ZipArchive) have been improved. New `TryAdd` and `TryGetValue` overloads for <xref:System.Collections.Generic.OrderedDictionary`2?displayProperty=nameWithType> now return an index to the entry. JSON serialization has been enhanced by allowing the specification of <xref:System.Text.Json.Serialization.ReferenceHandler> in <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Lastly, new APIs have been introduced for creating left-handed transformation matrices for billboard and constrained-billboard matrices.
 
 For more information, see [What's new in the .NET 10 libraries](libraries.md).
 
 ## .NET SDK
+
+The .NET 10 SDK introduces following new features and enhancements:
 
 - [Pruning of Framework-provided Package References](sdk.md#pruning-of-framework-provided-package-references)
 
@@ -45,44 +40,49 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## ASP.NET Core
 
-- [OpenAPI 3.1 support](/aspnet/core/release-notes/aspnetcore-10.0#openapi-31-support)
-- [Generate OpenAPI documents in YAML format](/aspnet/core/release-notes/aspnetcore-10.0?view=aspnetcore-9.0#openapi-in-yaml)
-- [Response description on `ProducesResponseType`](/aspnet/core/release-notes/aspnetcore-10.0#response-description-on-producesresponsetype)
-- [Detect if URL is local using `RedirectHttpResult.IsLocalUrl`](/aspnet/core/release-notes/aspnetcore-10.0#detect-if-url-is-local-using-redirecthttpresultislocalurl)
-- [Improvements to integration testing of apps with top-level statements](/aspnet/core/release-notes/aspnetcore-10.0?view=aspnetcore-9.0#better-support-for-testing-apps-with-top-level-statements)
-- [QuickGrid `RowClass` parameter](/aspnet/core/release-notes/aspnetcore-10.0#quickgrid-rowclass-parameter)
-- [Blazor script as a static web asset](/aspnet/core/release-notes/aspnetcore-10.0?view=aspnetcore-9.0#blazor-script)
-- [Route syntax highlighting for Blazor `RouteAttribute`](/aspnet/core/release-notes/aspnetcore-10.0#route-syntax-highlighting-for-blazor-routeattribute)
+Changes in ASP.NET Core 10.0 include: 
+
+- Blazor: Added new features for Blazor, including the QuickGrid RowClass parameter and Blazor script serving as a static web asset.
+- SignalR: Added new features for SignalR.
+- Minimal APIs: Added new features for minimal APIs.
+- OpenAPI: Added support for generating OpenAPI version 3.1 documents and serving the generated OpenAPI document in YAML format.
+- Authentication and authorization: Added new features for authentication and authorization.
+- Miscellaneous: Added better support for testing apps with top-level statements and a new helper method for detecting local URLs.
 
 For more information, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/release-notes/aspnetcore-10.0).
 
 ## .NET MAUI
 
-TODO - Add a brief overview of the new features in .NET MAUI for .NET 10.
+<!-- TODO - Add a brief overview of the new features in .NET MAUI for .NET 10. -->
 
 ## EF Core
 
-- [Support for the .NET 10 LeftJoin operator](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/efcore.md#support-for-the-net-10-leftjoin-operator)
-- [ExecuteUpdateAsync now accepts a regular, non-expression lambda](/ef/core/what-is-new/ef-core-10.0/whatsnew#executeupdateasync-now-accepts-a-regular-non-expression-lambda)
-- [Several small improvements](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/efcore.md#small-improvements)
+Changes for EF Core 10 include:
+
+- LINQ and SQL translation enhancements.
+- ExecuteUpdateAsync now accepts a regular, non-expression lambda.
 
 For more information, see [What's new in EF Core for .NET 10](/ef/core/what-is-new/ef-core-10.0/whatsnew).
 
 ## C# 14
 
-- [`nameof` in unbound generics](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/csharp.md#unbound-generic-support-for-nameof)
-- [Implicit span conversions](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/csharp.md#implicit-span-conversions)
-- [`field` backed properties](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/csharp.md#field-backed-properties)
-- [Modifiers on simple lambda parameters](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/csharp.md#modifiers-on-simple-lambda-parameters)
-- [Experimental feature - String literals in data section](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/csharp.md#preview-feature-string-literals-in-data-section)
+C# 14 introduces several new features and enhancements to improve developer productivity and code quality. Some of the key updates include:
+
+- `nameof` in unbound generics.
+- Implicit span conversions.
+- `field` backed properties.
+- Modifiers on simple lambda parameters.
+- Experimental feature - String literals in data section.
 
 For more information, see [What's new in C# 14](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/csharp.md).
 
 ## Windows Forms
 
-- [Clipboard related serialization and deserialization changes](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/winforms.md#clipboard-related-serialization-and-deserialization-changes)
-- [Obsoleted Clipboard APIs](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/winforms.md#obsoleted-clipboard-apis)
-- [New Clipboard related APIs](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/winforms.md#new-clipboard-related-apis)
+Changes in Windows Forms for .NET 10 include:
+
+- Clipboard related serialization and deserialization changes.
+- Obsoleted Clipboard APIs.
+- New Clipboard related APIs.
 
 For more information, see [What's new in Windows Forms for .NET 10](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/winforms.md).
 

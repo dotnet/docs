@@ -46,13 +46,13 @@ byte[] fileContents = File.ReadAllBytes(path);
 The <xref:System.Globalization.ISOWeek> class was originally designed to work exclusively with <xref:System.DateTime>, as it was introduced before the <xref:System.DateOnly> type existed. Now that `DateOnly` is available, it makes sense for `ISOWeek` to support it as well.
 
 ```csharp
-    public static class ISOWeek
-    {
-        // New overloads
-        public static int GetWeekOfYear(DateOnly date);
-        public static int GetYear(DateOnly date);
-        public static DateOnly ToDateOnly(int year, int week, DayOfWeek dayOfWeek);
-    }
+public static class ISOWeek
+{
+    // New overloads
+    public static int GetWeekOfYear(DateOnly date);
+    public static int GetYear(DateOnly date);
+    public static DateOnly ToDateOnly(int year, int week, DayOfWeek dayOfWeek);
+}
 ```
 
 ## String normalization APIs to work with span of characters
@@ -62,38 +62,19 @@ Unicode string normalization has been supported for a long time, but existing AP
 .NET 10 introduces new APIs that work with spans of characters, expanding normalization beyond string types and helping to avoid unnecessary allocations.
 
 ```csharp
-    public static class StringNormalizationExtensions
-    {
-        public static int GetNormalizedLength(this ReadOnlySpan<char> source, NormalizationForm normalizationForm = NormalizationForm.FormC);
-        public static bool IsNormalized(this ReadOnlySpan<char> source, NormalizationForm normalizationForm = NormalizationForm.FormC);
-        public static bool TryNormalize(this ReadOnlySpan<char> source, Span<char> destination, out int charsWritten, NormalizationForm normalizationForm = NormalizationForm.FormC);
-    }
+public static class StringNormalizationExtensions
+{
+    public static int GetNormalizedLength(this ReadOnlySpan<char> source, NormalizationForm normalizationForm = NormalizationForm.FormC);
+    public static bool IsNormalized(this ReadOnlySpan<char> source, NormalizationForm normalizationForm = NormalizationForm.FormC);
+    public static bool TryNormalize(this ReadOnlySpan<char> source, Span<char> destination, out int charsWritten, NormalizationForm normalizationForm = NormalizationForm.FormC);
+}
 ```
 
 ## Numeric ordering for string comparison
 
 Numerical string comparison is a highly requested feature for comparing strings numerically instead of lexicographically. For example, `2` is less than `10`, so `"2"` should appear before `"10"` when ordered numerically. Similarly, `"2"` and `"02"` are equal numerically. With the new `CompareOptions.NumericOrdering` <!--xref:System.Globalization.CompareOptions.NumericOrdering--> option, it's now possible to do these types of comparisons:
 
-```csharp
-StringComparer numericStringComparer = StringComparer.Create(CultureInfo.CurrentCulture, CompareOptions.NumericOrdering);
-
-Console.WriteLine(numericStringComparer.Equals("02", "2"));
-// Output: True
-
-foreach (string os in new[] { "Windows 8", "Windows 10", "Windows 11" }.Order(numericStringComparer))
-{
-    Console.WriteLine(os);
-}
-
-// Output:
-// Windows 8
-// Windows 10
-// Windows 11
-
-HashSet<string> set = new HashSet<string>(numericStringComparer) { "007" };
-Console.WriteLine(set.Contains("7"));
-// Output: True
-```
+:::code language="csharp" source="../snippets/dotnet-10/csharp/snippets.cs" id="snippet3":::
 
 Note that this option is not valid for the following index-based string operations: `IndexOf`, `LastIndexOf`, `StartsWith`, `EndsWith`, `IsPrefix`, and `IsSuffix`.
 
@@ -140,18 +121,7 @@ public class OrderedDictionary<TKey, TValue>
 
 This index can then be used with <xref:System.Collections.Generic.OrderedDictionary`2.GetAt*>/<xref:System.Collections.Generic.OrderedDictionary`2.SetAt*> for fast access to the entry. An example usage of the new `TryAdd` overload is to add or update a key/value pair in the ordered dictionary:
 
-```csharp
-public static void IncrementValue(OrderedDictionary<string, int> orderedDictionary, string key)
-{
-    // Try to add a new key with value 1.
-    if (!orderedDictionary.TryAdd(key, 1, out int index))
-    {
-        // Key was present, so increment the existing value instead.
-        int value = orderedDictionary.GetAt(index).Value;
-        orderedDictionary.SetAt(index, value + 1);
-    }
-}
-```
+:::code language="csharp" source="../snippets/dotnet-10/csharp/snippets.cs" id="snippet2":::
 
 This new API is already used in <xref:System.Json.JsonObject> and improves the performance of updating properties by 10-20%.
 
@@ -159,24 +129,7 @@ This new API is already used in <xref:System.Json.JsonObject> and improves the p
 
 When using source generators for JSON serialization, the generated context will throw when cycles are serialized or deserialized. This behavior can now be customized by specifying the <xref:System.Text.Json.Serialization.ReferenceHandler> in the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Here is an example using `JsonKnownReferenceHandler.Preserve`:
 
-```csharp
-SelfReference selfRef = new SelfReference();
-selfRef.Me = selfRef;
-
-Console.WriteLine(JsonSerializer.Serialize(selfRef, ContextWithPreserveReference.Default.SelfReference));
-// Output: {"$id":"1","Me":{"$ref":"1"}}
-
-[JsonSourceGenerationOptions(ReferenceHandler = JsonKnownReferenceHandler.Preserve)]
-[JsonSerializable(typeof(SelfReference))]
-internal partial class ContextWithPreserveReference : JsonSerializerContext
-{
-}
-
-internal class SelfReference
-{
-    public SelfReference Me { get; set; }
-}
-```
+:::code language="csharp" source="../snippets/dotnet-10/csharp/snippets.cs" id="snippet3":::
 
 ## More left-handed matrix transformation methods
 

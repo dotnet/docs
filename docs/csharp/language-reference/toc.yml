@@ -520,7 +520,7 @@ items:
       CS8615, CS8616, CS8617, CS8618, CS8619, CS8620, CS8621, CS8622, CS8623, CS8624, CS8625, CS8628, CS8629, CS8631, CS8632,
       CS8634, CS8636, CS8637, CS8639, CS8655, CS8633, CS8643, CS8644, CS8645, CS8762, CS8763, CS8764, CS8765, CS8766, CS8667,
       CS8768, CS8670, CS8714, CS8767, CS8769, CS8770, CS8774, CS8776, CS8775, CS8777, CS8819, CS8824, CS8825, CS8847
-- name: Pattern matching warnings
+  - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
     displayName: CS8509, CS9134, CS9135
   - name: Array declarations

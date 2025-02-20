@@ -47,12 +47,15 @@ Do not suppress a warning from this rule. Many libraries can benefit from a mass
 
 ## Suppress a warning
 
-Violations to this rule cannot be suppressed inline.
+Because this rule is reported on compilation-level, and not reported in a `.cs` or `.vb` source file, violations to this rule cannot be suppressed inline nor via `.editorconfig`.
 
-To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+To disable the rule for a project, add `<NoWarn>$(NoWarn);MSTEST0001</NoWarn>` to the project file (it can be in `Directory.Build.props` as well).
+
+To control the severity of this rule, you can do it only via `.globalconfig` file. For more information, see [configuration file](../../../fundamentals/code-analysis/configuration-files.md#global-analyzerconfig).
 
 ```ini
-[*.{cs,vb}]
+is_global = true
+
 dotnet_diagnostic.MSTEST0001.severity = none
 ```
 

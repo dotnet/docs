@@ -27,7 +27,7 @@ static int Sum(int[] array)
 }
 ```
 
-This code shape is easy for the JIT to optimize, mainly because there aren't any virtual calls to reason about. Instead, the JIT can focus on removing bounds checks on the array access and applying the [loop optimizations that were added in .NET 9](../add/link/to/file/here.md#heading). The following example adds some virtual calls:
+This code shape is easy for the JIT to optimize, mainly because there aren't any virtual calls to reason about. Instead, the JIT can focus on removing bounds checks on the array access and applying the [loop optimizations that were added in .NET 9](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-9/). The following example adds some virtual calls:
 
 ```csharp
 static int Sum(int[] array)

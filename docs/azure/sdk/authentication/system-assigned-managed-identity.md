@@ -32,7 +32,7 @@ You can enable a system-assigned managed identity for an Azure resource using ei
 1. On the **Identity** page, toggle the **Status** slider to **On**.
 1. Select **Save** to apply your changes.
 
-    :::image type="content" source="../media/system-assigned-identity-enable.png" alt-text="A screenshot showing how to enable a system-assigned identity on a container app.":::
+    :::image type="content" source="../media/system-assigned-identity-enable.png" alt-text="A screenshot showing how to enable a system-assigned managed identity on a container app.":::
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -133,6 +133,4 @@ For information on assigning permissions at the resource or subscription level u
 
 ---
 
-## Implement DefaultAzureCredential in your application
-
-[!INCLUDE [Implement DefaultAzureCredential](<../includes/implement-defaultazurecredential.md>)]
+[!INCLUDE [Implement user-assigned managed identity](<../includes/implement-system-assigned-identity.md>)]

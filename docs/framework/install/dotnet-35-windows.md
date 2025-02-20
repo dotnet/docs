@@ -1,6 +1,6 @@
 ---
 title: Install .NET Framework 3.5 on Windows
-description: Learn how to install the .NET Framework 3.5 on Windows and Windows Server. .NET Framework 3.5 can run apps that target .NET Framework 1.0 through 3.5.
+description: Learn how to install .NET Framework 3.5 on Windows and Windows Server. .NET Framework 3.5 can run apps that target .NET Framework 1.0 through 3.5.
 ms.date: 02/10/2025
 ---
 # Install .NET Framework 3.5 on Windows and Windows Server

@@ -7,7 +7,7 @@ ms.date: 02/12/2025
 
 .NET Framework is included on all current versions of Windows and Windows Server. This article helps you understand which version of .NET Framework is included in Windows and Windows Server, and if an upgrade is available.
 
-The latest version of .NET Framework is 4.8.1. This version of .NET Framework supports all .NET Framework 4 apps, even if that app was created for an older version of .NET Framework 4. For more information about a specific release of .NET Framework, see [.NET Framework versions and dependencies](versions-and-dependencies.md).
+The latest version of .NET Framework is 4.8.1. This version of .NET Framework supports all .NET Framework 4 apps. For more information about a specific release of .NET Framework, see [.NET Framework versions and dependencies](versions-and-dependencies.md).
 
 > [!NOTE]
 > .NET Framework is a Windows-only technology, and is separate from .NET (formerly called .NET Core). For more information, see [Introduction to .NET](../../core/introduction.md).

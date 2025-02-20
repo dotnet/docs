@@ -73,10 +73,10 @@ In an expression context, you can use the [`switch` expression](../operators/swi
 
 > [!IMPORTANT]
 > Differences between **switch expression** and **switch statement**:
-> - **switch statement** is used to control the execution flow within a block of code.<br>
-> - **switch expression** is typically used in contexts of value return and value assignment, often as a [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md). <br> 
-> - a **switch expression** case section cannot be empty, a **switch statement** can.<br>
-
+>
+> - **switch statement** is used to control the execution flow within a block of code.
+> - **switch expression** is typically used in contexts of value return and value assignment, often as a [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+> - a **switch expression** case section cannot be empty, a **switch statement** can.
 
 ### Case guards
 

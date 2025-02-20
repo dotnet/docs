@@ -47,11 +47,11 @@ Do not suppress a warning from this rule. Many libraries can benefit from a mass
 
 ## Suppress a warning
 
-Because this rule is reported on compilation-level, and not reported in a `.cs` or `.vb` source file, violations to this rule cannot be suppressed inline nor via `.editorconfig`.
+Because this rule is reported at the compilation level and not in a *.cs* or *.vb* source file, you can't suppress violations to this rule inline or via an `.editorconfig` file.
 
-To disable the rule for a project, add `<NoWarn>$(NoWarn);MSTEST0001</NoWarn>` to the project file (it can be in `Directory.Build.props` as well).
+To disable the rule for a project, add `<NoWarn>$(NoWarn);MSTEST0001</NoWarn>` to the project file or `Directory.Build.props` file.
 
-To control the severity of this rule, you can do it only via `.globalconfig` file. For more information, see [configuration file](../../../fundamentals/code-analysis/configuration-files.md#global-analyzerconfig).
+To control the severity of this rule, you can do it only via a `.globalconfig` file. For more information, see [Configuration files](../../../fundamentals/code-analysis/configuration-files.md#global-analyzerconfig).
 
 ```ini
 is_global = true

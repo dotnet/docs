@@ -4,6 +4,7 @@ description: Learn about the new .NET libraries features introduced in .NET 10.
 titleSuffix: ""
 ms.date: 02/20/2025
 ms.topic: whats-new
+ai-usage: ai-assisted
 ---
 
 # What's new in .NET libraries for .NET 10
@@ -18,7 +19,7 @@ Since SHA-2-256 ("SHA256") and SHA-3-256 have the same lengths, it doesn't make 
 
 Instead, .NET 10 introduces a new method that accepts the name of the hash algorithm to use for matching.
 
-```C#
+```csharp
 X509Certificate2Collection coll = store.Certificates.FindByThumbprint(HashAlgorithmName.SHA256, thumbprint);
 Debug.Assert(coll.Count < 2, "Collection has too many matches, has SHA-2 been broken?");
 return coll.SingleOrDefault();
@@ -44,7 +45,7 @@ byte[] fileContents = File.ReadAllBytes(path);
 
 The <xref:System.Globalization.ISOWeek> class was originally designed to work exclusively with <xref:System.DateTime>, as it was introduced before the <xref:System.DateOnly> type existed. Now that `DateOnly` is available, it makes sense for `ISOWeek` to support it as well.
 
-```C#
+```csharp
     public static class ISOWeek
     {
         // New overloads
@@ -60,7 +61,7 @@ Unicode string normalization has been supported for a long time, but existing AP
 
 .NET 10 introduces new APIs that work with spans of characters, expanding normalization beyond string types and helping to avoid unnecessary allocations.
 
-```C#
+```csharp
     public static class StringNormalizationExtensions
     {
         public static int GetNormalizedLength(this ReadOnlySpan<char> source, NormalizationForm normalizationForm = NormalizationForm.FormC);
@@ -73,7 +74,7 @@ Unicode string normalization has been supported for a long time, but existing AP
 
 Numerical string comparison is a highly requested feature for comparing strings numerically instead of lexicographically. For example, `2` is less than `10`, so `"2"` should appear before `"10"` when ordered numerically. Similarly, `"2"` and `"02"` are equal numerically. With the new `CompareOptions.NumericOrdering` <!--xref:System.Globalization.CompareOptions.NumericOrdering--> option, it's now possible to do these types of comparisons:
 
-```cs
+```csharp
 StringComparer numericStringComparer = StringComparer.Create(CultureInfo.CurrentCulture, CompareOptions.NumericOrdering);
 
 Console.WriteLine(numericStringComparer.Equals("02", "2"));

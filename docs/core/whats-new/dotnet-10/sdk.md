@@ -4,6 +4,7 @@ description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
 ms.date: 02/20/2025
 ms.topic: whats-new
+ai-usage: ai-assisted
 ---
 
 # What's new in the SDK and tooling for .NET 10

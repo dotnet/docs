@@ -67,7 +67,7 @@ You can specify multiple case patterns for one section of a `switch` statement, 
 Within a `switch` statement, control can't fall through from one switch section to the next. As the examples in this section show, typically you use the `break` statement at the end of each switch section to pass control out of a `switch` statement. You can also use the [return](jump-statements.md#the-return-statement) and [throw](exception-handling-statements.md#the-throw-statement) statements to pass control out of a `switch` statement. To imitate the fall-through behavior and pass control to other switch section, you can use the [`goto` statement](jump-statements.md#the-goto-statement).
 
 > [!IMPORTANT]
-> Missing `break` statement will throw exception, however **empty** case sections, like `case < 0:` in example above, **are** permitted to fall through. This deliberate design choice allows for concisely handling multiple cases that share the same or interdependent logic.
+> Every *switch section* must end with a `break`, `goto` or `return`. Falling through from one switch section to the next generates a compiler error. However, multiple switch labels can be applied to the same switch section, like `case < 0:` in example above. This deliberate design choice allows for concisely handling multiple cases that share the same or interdependent logic.
 
 In an expression context, you can use the [`switch` expression](../operators/switch-expression.md) to evaluate a single expression from a list of candidate expressions based on a pattern match with an expression.<br>
 

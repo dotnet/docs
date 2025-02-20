@@ -28,7 +28,7 @@ JsonSerializer.Deserialize<MyPoco>("""{"$invalid" : 42 }""", options);
 record MyPoco;
 ```
 
-This behavior could cause polymorphism issues when roundtripping metadata properties whose names require escaping, as seen here:
+The unescaping behavior could also cause polymorphism issues when roundtripping metadata properties whose names require escaping, as seen here:
 
 ```csharp
 string json = JsonSerializer.Serialize<Base>(new Derived());
@@ -43,7 +43,7 @@ public record Derived : Base;
 
 ## New behavior
 
-<xref:System.Text.Json?displayProperty=fullName> now unescapes metadata property names. This means that invalid property names will correctly fail to deserialize with the following exception:
+<xref:System.Text.Json?displayProperty=fullName> now unescapes metadata property names. This new behavior means that the line `Console.WriteLine(JsonSerializer.Deserialize<Base>(json) is Derived);` from the polymorphic deserialization example now returns `true`, and that invalid property names correctly fail to deserialize with the following exception:
 
 ```output
 Unhandled exception. System.Text.Json.JsonException: Properties that start with '$' are not allowed in types that support metadata.

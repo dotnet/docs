@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43869
 ---
 
-# Breaking change: Nullable JsonDocument properties deserialize to JsonValueKind.Null
+# Nullable JsonDocument properties deserialize to JsonValueKind.Null
 
 Starting with .NET 9, deserializing `null` JSON values into <xref:System.Text.Json.JsonDocument> results in non-null documents of type <xref:System.Text.Json.JsonValueKind.Null?displayProperty=nameWithType>.
 

@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/44748
 
 # System.Text.Json metadata reader now unescapes metadata property names
 
-The <xref:System.Text.Json?displayProperty=fullName> library has been updated to unescape metadata property names. This change affects how JSON documents are interpreted in the context of reference preservation and metadata property validation.
+The <xref:System.Text.Json?displayProperty=fullName> library has been updated to unescape metadata property names. This change affects how JSON documents are interpreted in the context of reference preservation, polymorphism, and metadata property validation.
 
 ## Version introduced
 
@@ -28,11 +28,22 @@ JsonSerializer.Deserialize<MyPoco>("""{"$invalid" : 42 }""", options);
 record MyPoco;
 ```
 
+This behavior could cause polymorphism issues when roundtripping metadata properties whose names require escaping, as seen here:
+
+```csharp
+string json = JsonSerializer.Serialize<Base>(new Derived());
+Console.WriteLine(json); // {"categor\u00EDa":"derived"}
+Console.WriteLine(JsonSerializer.Deserialize<Base>(json) is Derived); // False
+
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "categoría")]
+[JsonDerivedType(typeof(Derived), "derived")]
+public record Base;
+public record Derived : Base;
+```
+
 ## New behavior
 
-<xref:System.Text.Json?displayProperty=fullName> now unescapes metadata property names. This means that invalid property names will fail to deserialize, as they should.
-
-In the above example, both deserialization calls will fail with the following exception:
+<xref:System.Text.Json?displayProperty=fullName> now unescapes metadata property names. This means that invalid property names will correctly fail to deserialize with the following exception:
 
 ```output
 Unhandled exception. System.Text.Json.JsonException: Properties that start with '$' are not allowed in types that support metadata.
@@ -48,7 +59,7 @@ The change improves correctness and reliability by ensuring that metadata proper
 
 ## Recommended action
 
-Users should avoid using escaping to bypass metadata property validation and should instead pick property names that do not conflict with metadata properties.
+Avoid using escaping to bypass metadata property validation. Instead, pick property names that don't conflict with metadata properties.
 
 ## Affected APIs
 

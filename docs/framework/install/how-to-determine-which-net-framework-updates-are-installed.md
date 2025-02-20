@@ -109,5 +109,5 @@ KB2600217
 ## See also
 
 - [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md)
-- [Install the .NET Framework for developers](../install/guide-for-developers.md)
+- [Install the .NET Framework for developers](guide-for-developers.md)
 - [Versions and dependencies](versions-and-dependencies.md)

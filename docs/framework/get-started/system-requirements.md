@@ -17,7 +17,7 @@ The tables in this article provide the hardware, operating system, and software 
 - .NET Framework 4.7 and its point releases (4.7.1 and 4.7.2).
 - .NET Framework 4.6.2.
 
-For information on earlier .NET Framework versions, see [.NET Framework versions and dependencies](../migration-guide/versions-and-dependencies.md).
+For information on earlier .NET Framework versions, see [.NET Framework versions and dependencies](../install/versions-and-dependencies.md).
 
 Development environments that enable you to develop apps for .NET Framework have a separate set of requirements.
 

@@ -102,77 +102,81 @@ Install the .NET debugger extensions using the [dotnet-debugger-extensions](dotn
 
 ## Getting started with LLDB
 
-This example shows using LLDB to attach to a pre-existing .NET application that is running on the machine.
+This example shows using LLDB to attach to a pre-existing .NET application (`dotnet webapp.dll`) that's running on the machine.
 
 1. Use the `ps` command to find the process ID (PID) of the .NET application you want to debug.
 
-```console
-    $ ps -ao pid,cmd
-    PID CMD
-    697 -bash
-    229233 dotnet webapp.dll
-    229696 ps -ao pid,cmd
-    ... other processes omitted for brevity ...
-```
+   ```console
+       $ ps -ao pid,cmd
+       PID CMD
+       697 -bash
+       229233 dotnet webapp.dll
+       229696 ps -ao pid,cmd
+       ... other processes omitted for brevity ...
+   ```
 
-In this case the PID of the .NET application we want to debug is 229233.
+   In this case, the PID of the .NET application to debug is 229233.
 
 1. Run LLDB and attach to the process.
 
-Launch LLDB using the command appropriate for your distribution (shown above in the Install LLDB section). Often this is just `lldb` but some distros require a version number in the name like `lldb-3.9`.
+   Launch LLDB using the appropriate command for your distribution (shown previously in the [Install LLDB](#install-lldb) section). Often this is just `lldb`, but some distros require a version number in the name, like `lldb-3.9`.
 
-```console
-    $ lldb
-    Current symbol store settings:
-    -> Cache: /home/username/.dotnet/symbolcache
-    -> Server: https://msdl.microsoft.com/download/symbols/ Timeout: 4 RetryCount: 0
-    (lldb)
-```
+   ```console
+       $ lldb
+       Current symbol store settings:
+       -> Cache: /home/username/.dotnet/symbolcache
+       -> Server: https://msdl.microsoft.com/download/symbols/ Timeout: 4 RetryCount: 0
+       (lldb)
+   ```
 
 1. At the `(lldb)` prompt, run the process attach command.
 
-```console
-    (lldb) process attach --pid 229233
-    Process 229233 stopped
-    * thread #1, name = 'dotnet', stop reason = signal SIGSTOP
-        frame #0: 0x00007f2ca7c11117 libc.so.6`___lldb_unnamed_symbol3457 + 231
-    libc.so.6`___lldb_unnamed_symbol3457:
-    ->  0x7f2ca7c11117 <+231>: movl   %r12d, %edi
-        0x7f2ca7c1111a <+234>: movq   %rax, %rbx
-        0x7f2ca7c1111d <+237>: callq  0x7f2ca7c10a60            ; ___lldb_unnamed_symbol3445
-        0x7f2ca7c11122 <+242>: jmp    0x7f2ca7c11089            ; <+89>
-      thread #2, name = 'dotnet-ust', stop reason = signal SIGSTOP
-        frame #0: 0x00007f2ca7c9e88d libc.so.6`syscall + 29
-    libc.so.6`syscall:
-    ... more output omitted ...
-```
+   ```console
+       (lldb) process attach --pid 229233
+       Process 229233 stopped
+       * thread #1, name = 'dotnet', stop reason = signal SIGSTOP
+           frame #0: 0x00007f2ca7c11117 libc.so.6`___lldb_unnamed_symbol3457 + 231
+       libc.so.6`___lldb_unnamed_symbol3457:
+       ->  0x7f2ca7c11117 <+231>: movl   %r12d, %edi
+           0x7f2ca7c1111a <+234>: movq   %rax, %rbx
+           0x7f2ca7c1111d <+237>: callq  0x7f2ca7c10a60            ; ___lldb_unnamed_symbol3445
+           0x7f2ca7c11122 <+242>: jmp    0x7f2ca7c11089            ; <+89>
+         thread #2, name = 'dotnet-ust', stop reason = signal SIGSTOP
+           frame #0: 0x00007f2ca7c9e88d libc.so.6`syscall + 29
+       libc.so.6`syscall:
+       ... more output omitted ...
+   ```
 
-The debugger is now attached and you can use both built-in LLDB commands and .NET debugger extension commands to inspect the process state.
+   The debugger is now attached and you can use both built-in LLDB commands and .NET debugger extension commands to inspect the process state.
 
-> [!NOTE]
-> If LLDB outputs 'error: attach failed: Operation not permitted' this means you don't have sufficient privileges to do debugging. The most reliable way to resolve this is to quit LLDB and restart using sudo. When elevated LLDB won't automatically run the normal .lldbinit script but you can do so explicitly by using the --source argument on the command line: `sudo lldb --source ~/.lldbinit`.
+   > [!NOTE]
+   > If LLDB outputs 'error: attach failed: Operation not permitted', this means you don't have sufficient privileges to debug. The most reliable way to resolve this is to quit LLDB and restart using sudo. When elevated LLDB won't automatically run the normal .lldbinit script, you can do so explicitly by using the `--source` argument on the command line: `sudo lldb --source ~/.lldbinit`.
 
 1. Run an example command
 
-The clrstack command displays the stack trace for .NET code on the currently selected thread.
+   The clrstack command displays the stack trace for .NET code on the currently selected thread.
 
-```console
-    (lldb) clrstack
-    OS Thread Id: 0x497 (1)
-            Child SP               IP Call Site
-    00007FFD0877D260 00007f2ca7c11117 [HelperMethodFrame_1OBJ: 00007ffd0877d260] System.Threading.Monitor.ObjWait(Int32, System.Object)
-    00007FFD0877D390 00007F2C2864AA0E System.Threading.Monitor.Wait(System.Object, Int32)
-    00007FFD0877D3A0 00007F2C28654625 System.Threading.ManualResetEventSlim.Wait(Int32, System.Threading.CancellationToken)
-    00007FFD0877D420 00007F2C286684A8 System.Threading.Tasks.Task.SpinThenBlockingWait(Int32, System.Threading.CancellationToken)
-    00007FFD0877D480 00007F2C2866832D System.Threading.Tasks.Task.InternalWaitCore(Int32, System.Threading.CancellationToken)
-    00007FFD0877D4D0 00007F2C286B2508 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(System.Threading.Tasks.Task, System.Threading.Tasks.ConfigureAwaitOptions)
-    00007FFD0877D4F0 00007F2C29281B45 Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(Microsoft.Extensions.Hosting.IHost)
-    00007FFD0877D510 00007F2C29121A7D Program.<Main>$(System.String[]) [/home/username/app/Program.cs @ 25]
-```
+   ```console
+       (lldb) clrstack
+       OS Thread Id: 0x497 (1)
+               Child SP               IP Call Site
+       00007FFD0877D260 00007f2ca7c11117 [HelperMethodFrame_1OBJ: 00007ffd0877d260] 
+   System.Threading.Monitor.ObjWait(Int32, System.Object)
+       00007FFD0877D390 00007F2C2864AA0E System.Threading.Monitor.Wait(System.Object, Int32)
+       00007FFD0877D3A0 00007F2C28654625 System.Threading.ManualResetEventSlim.Wait(Int32, 
+   System.Threading.CancellationToken)
+       00007FFD0877D420 00007F2C286684A8 System.Threading.Tasks.Task.SpinThenBlockingWait(Int32, 
+   System.Threading.CancellationToken)
+       00007FFD0877D480 00007F2C2866832D System.Threading.Tasks.Task.InternalWaitCore(Int32, 
+   System.Threading.CancellationToken)
+       00007FFD0877D4D0 00007F2C286B2508 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(System.Threading.Tasks.Task, System.Threading.Tasks.ConfigureAwaitOptions)
+       00007FFD0877D4F0 00007F2C29281B45 Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(Microsoft.Extensions.Hosting.IHost)
+       00007FFD0877D510 00007F2C29121A7D Program.<Main>$(System.String[]) [/home/username/app/Program.cs @ 25]
+   ```
 
 ## Next steps
 
-Read the documentation for the [.NET debugger extensions](debugger-extensions.md) and [LLDB](https://lldb.llvm.org/) to learn more about the commands available when debugging .NET applications with LLDB.
+To learn more about the commands available when debugging .NET applications with LLDB, see the documentation for the [.NET debugger extensions](debugger-extensions.md) and [LLDB](https://lldb.llvm.org/).
 
 ## See also
 

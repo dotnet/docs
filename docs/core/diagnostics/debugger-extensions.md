@@ -28,7 +28,7 @@ Install Windbg from the [Windows SDK](/windows-hardware/drivers/debugger/debugge
 
 ### Linux
 
-Follow the instructions [here](lldb-linux.md) to install LLDB and the .NET debugger extensions on Linux.
+To install LLDB and the .NET debugger extensions, see [Install and use LLDB on Linux](lldb-linux.md).
 
 ## Syntax
 

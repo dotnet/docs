@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 # .NET debugger extensions
 
-The .NET debugger extensions let you view information about code that's running inside the .NET runtime, both on live processes and dumps. The extensions are preinstalled with [Windbg](/windows-hardware/drivers/debugger/debugger-download-tools), and can be [downloaded](dotnet-debugger-extensions.md) for use with LLDB. You can use the .NET debugger extensions to:
+The .NET debugger extensions let you view information about code that's running inside the .NET runtime, both on live processes and dumps. The extensions work with [Windbg](/windows-hardware/drivers/debugger/debugger-download-tools) and [LLDB](https://lldb.llvm.org/). You can use the .NET debugger extensions to:
 
 - Collect information about the managed heap.
 - Look for heap corruptions.
@@ -19,6 +19,16 @@ The .NET debugger extensions let you view information about code that's running 
 - View information about all managed code running inside the runtime.
 
 The .NET debugger extensions include commands from the existing [dotnet-sos](dotnet-sos.md) tool as well as new commands. A limited set of commands are also now supported for the Native AOT runtime.
+
+## Install
+
+### Windows
+
+Install Windbg from the [Windows SDK](/windows-hardware/drivers/debugger/debugger-download-tools). Windbg versions 10.0.18317.1001 and later automatically load the extensions from the Microsoft extension gallery.
+
+### Linux
+
+To install LLDB and the .NET debugger extensions, see [Install and use LLDB on Linux](lldb-linux.md).
 
 ## Syntax
 

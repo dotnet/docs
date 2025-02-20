@@ -1,7 +1,7 @@
 ---
 title: Discards - unassigned discardable variables
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
-ms.date: 11/14/2023
+ms.date: 02/19/2025
 f1_keywords:
   - "discard_CSharpKeyword"
 ---
@@ -74,8 +74,6 @@ Without assigning the task to a discard, the following code generates a compiler
    :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="VariableIdentifier" :::
 - A compiler error for violating type safety. For example:
    :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="VariableTypeInference" :::
-- Compiler error CS0136, "A local or parameter named '\_' cannot be declared in this scope because that name is used in an enclosing local scope to define a local or parameter." For example:
-   :::code language="csharp" source="snippets/discards/standalone-discard2.cs" ID="CannotRedeclare" :::
 
 ## See also
 

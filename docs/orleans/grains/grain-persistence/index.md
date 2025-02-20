@@ -229,7 +229,7 @@ public class ProfileState
 {
     public string Name { get; set; }
 
-    public Date DateOfBirth
+    public Date DateOfBirth { get; set; }
 }
 ```
 

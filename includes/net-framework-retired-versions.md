@@ -1,6 +1,6 @@
 
 > [!IMPORTANT]
-> .NET Framework content previously digitally signed using certificates that use the SHA1 algorithm, have be retired in order to support evolving industry standards.
+> .NET Framework content that was previously digitally signed using certificates that use the SHA1 algorithm must be retired in order to support evolving industry standards.
 >
 > The following versions of .NET Framework are no longer supported as of _April 26, 2022_: 4.5.2, 4.6, and 4.6.1. Security fixes, updates, and technical support for these versions are no longer provided.
 >

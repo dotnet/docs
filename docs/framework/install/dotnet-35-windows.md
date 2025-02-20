@@ -26,7 +26,7 @@ Enable .NET Framework 3.5 through the **Add Roles and Features Wizard**.
 
 1. Press the Start :::image type="icon" source="media/dotnet-35-windows/windows-keyboard-logo.png" border="false"::: button on the taskbar.
 1. Search for **Add Roles and Features Wizard** and open it.
-1. Search for **Windows Features** and open it. The **Turn Windows features on or off** dialog box appears
+1. Search for **Windows Features** and open it. The **Turn Windows features on or off** dialog box appears.
 1. Navigate through the wizard until you reach **Features**.
 1. Select **.NET Framework 3.5 Features** in the list.
 1. Select **Install** to start installing .NET Framework 3.5.
@@ -35,10 +35,10 @@ Enable .NET Framework 3.5 through the **Add Roles and Features Wizard**.
 
 ## Enable .NET Framework 3.5 on Windows
 
-You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an Internet connection.
+You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an internet connection.
 
 1. Press the Start :::image type="icon" source="media/dotnet-35-windows/windows-keyboard-logo.png" border="false"::: button on the taskbar.
-1. Search for **Windows Features** and open it. The **Turn Windows features on or off** dialog box appears
+1. Search for **Windows Features** and open it. The **Turn Windows features on or off** dialog box appears.
 1. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box, select **OK**, and reboot your computer if prompted.
 
 :::image type="content" source="media/dotnet-35-windows/dotnet-control-panel.png" alt-text="Screenshot of the Windows Features dialog box. .NET Framework 3.5 is selected.":::
@@ -53,7 +53,7 @@ The .NET Framework 3.5 SP1 offline installer is available for Windows versions p
 
 During installation, you might encounter error **0x800f0906**, **0x800f0907**, **0x800f081f**, or **0x800F0922**, in which case refer to [.NET Framework 3.5 installation error](https://support.microsoft.com/help/2734782/net-framework-3-5-installation-error-0x800f0906--0x800f081f--0x800f09) to see how to resolve these issues.
 
-If you still can't resolve your installation issue or you don't have an Internet connection, you can try installing it using your Windows installation media. For more information, see [Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)](/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism). If you don't have the installation media, follow the instructions on [Create installation media for Windows](https://support.microsoft.com/help/15088/windows-create-installation-media). For more information about Windows 11 and Windows 10 Features on Demand, see [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities).
+If you still can't resolve your installation issue or you don't have an internet connection, you can try installing it using your Windows installation media. For more information, see [Deploy .NET Framework 3.5 by using Deployment Image Servicing and Management (DISM)](/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism). If you don't have the installation media, follow the instructions on [Create installation media for Windows](https://support.microsoft.com/help/15088/windows-create-installation-media). For more information about Windows 11 and Windows 10 Features on Demand, see [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities).
 
 > [!WARNING]
 > If you're not relying on Windows Update as the source for installing .NET Framework 3.5, you must ensure to strictly use sources from the same corresponding Windows operating system version. Using sources from a different Windows operating system version will either install a mismatched version of .NET Framework 3.5 or cause the installation to fail, leaving the system in an unsupported and unserviceable state.
@@ -68,6 +68,6 @@ If you're a developer that maintains existing software and you need to use .NET 
 ## See also
 
 - [Install .NET Framework on Windows and Windows Server](on-windows-and-server.md)
-- [Install the .NET Framework for developers](guide-for-developers.md)
+- [Install .NET Framework for developers](guide-for-developers.md)
 - [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md)
 - [Versions and dependencies](versions-and-dependencies.md)

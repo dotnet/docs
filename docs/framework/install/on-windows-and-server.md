@@ -26,7 +26,7 @@ The following versions of .NET Framework are still supported:
 
 ### .NET Framework 3.5
 
-.NET Framework 3.5 is still supported by Microsoft, even though it's an older version of .NET Framework. However, only the .NET Framework 3.5 runtime is supported, which runs apps. Developing new apps that target .NET Framework 3.5 isn't supported. This version of .NET Framework supports versions 1.0 through 3.5, and can be installed alongside .NET Framework 4.
+.NET Framework 3.5 is still supported by Microsoft, even though it's an older version of .NET Framework. However, only the .NET Framework 3.5 runtime is supported, which runs apps. Developing new apps that target .NET Framework 3.5 isn't supported. This version of .NET Framework supports running apps that target versions 1.0 through 3.5, and can be installed alongside .NET Framework 4.
 
 If you try to run an app that targets .NET Framework 1.0 through 3.5, and .NET Framework 3.5 is missing, you're prompted to install it. For more information, see [Install .NET Framework 3.5 on Windows](dotnet-35-windows.md).
 
@@ -74,7 +74,7 @@ For more downloads, see [All downloads](#all-downloads).
 
 Windows 10 22H2 is the last supported version of Windows 10. Support ends October 14, 2025. For more information about Windows 10 end-of-support dates, see [Windows 10 Home and Pro Lifecycle](/lifecycle/products/windows-10-home-and-pro) and [Windows Lifecycle FAQ](/lifecycle/faq/windows).
 
-In the following table, ❌ represents an unsupported version of Windows 10 and ✔️ represents a supported version of Windows 10. The table also describes which version of .NET Framework is included with Windows 10, and which version of .NET Framework you can upgrade to.
+In the following table, ❌ represents an unsupported version of Windows 10 and ✔️ represents a supported version of Windows 10. The table also describes which version of .NET Framework is included with a particular Windows 10 version, and which version of .NET Framework you can upgrade to.
 
 | Windows 10 version   | .NET Framework included | Latest .NET Framework supported |
 |----------------------|-------------------------|---------------------------------|
@@ -114,9 +114,7 @@ Windows Server, whether it's in support or not, comes with a version of .NET Fra
 - [Product Lifecycle Search Query - Windows Server](/lifecycle/products/?products=windows&terms=Windows%20Server)
 - [Windows Lifecycle FAQ](/lifecycle/faq/windows).
 
-In the following table, ❌ represents an unsupported version of Windows 10 and ✔️ represents a supported version of Windows 10. The table also describes which version of .NET Framework is included with Windows 10, and which version of .NET Framework you can upgrade to.
-
-The following table describes which version of .NET Framework is included with Windows Server, and which version of .NET Framework you can upgrade to.
+In the following table, ❌ represents an unsupported version of Windows Server and ✔️ represents a supported version of Windows Server. The table also describes which version of .NET Framework is included with a particular Windows Server version, and which version of .NET Framework you can upgrade to.
 
 | Windows Server               | .NET Framework included | Latest .NET Framework supported |
 |------------------------------|-------------------------|---------------------------------|
@@ -186,6 +184,6 @@ Downloads of other versions of .NET Framework are no longer provided by Microsof
 
 ## See also
 
-- [Install the .NET Framework for developers](guide-for-developers.md)
+- [Install .NET Framework for developers](guide-for-developers.md)
 - [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md)
 - [Versions and dependencies](versions-and-dependencies.md)

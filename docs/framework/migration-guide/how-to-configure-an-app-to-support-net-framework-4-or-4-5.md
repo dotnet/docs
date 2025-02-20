@@ -39,7 +39,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
 
 1. Add or locate the configuration file for the .NET Framework project.
 
-   The configuration file for an app is an XML file in the same directory and has the same file name as the app, but with a _.config_ extension. For example, for an app named _MyExecutable.exe_, the application configuration file is named _MyExecutable.exe.config_.
+   The configuration file for an app is an XML file that's in the same directory and has the same file name as the app, but with a _.config_ extension. For example, for an app named _MyExecutable.exe_, the application configuration file is named _MyExecutable.exe.config_.
 
    To add a configuration file in Visual Studio, find the menu bar and select **Project** > **Add New Item**. Choose **General** from the left pane, and then select **Configuration File**. Name the configuration file *App.config*. These menu choices aren't available for Windows Store apps because you cannot change the activation policy on that platform.
 

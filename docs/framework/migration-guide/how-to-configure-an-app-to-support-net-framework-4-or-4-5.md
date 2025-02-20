@@ -53,7 +53,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
    </configuration>
    ```
 
-   Where *\<version>* specifies the CLR version that aligns with the .NET Framework version that your app supports. Use the following strings:
+   *\<version>* specifies the CLR version that aligns with the .NET Framework version that your app supports. Use the following strings:
 
    - .NET Framework 1.0: "v1.0.3705"
    - .NET Framework 1.1: "v1.1.4322"

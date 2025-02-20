@@ -17,7 +17,7 @@ However, some changes in .NET Framework require changes to your code. You may al
 
 Review the following documents before you migrate your app from earlier versions of .NET Framework to version 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, or 4.8.1:
 
-- See [Versions and Dependencies](../install/versions-and-dependencies.md) to understand the CLR version underlying each version of the .NET Framework and to review guidelines for targeting your apps successfully.
+- See [Versions and Dependencies](../install/versions-and-dependencies.md) to understand the CLR version underlying each version of .NET Framework and to review guidelines for targeting your apps successfully.
 
 - Review [Application compatibility](application-compatibility.md) to find out about runtime and retargeting changes that might affect your app and how to handle them.
 

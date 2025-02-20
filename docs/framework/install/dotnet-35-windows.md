@@ -12,7 +12,7 @@ You might need .NET Framework 3.5 to run an app on Windows or Windows Server. Wi
 
 ## Install .NET Framework 3.5 on demand
 
-You might see the following configuration dialog if you try to run an app that requires an older version of .NET Framework. Depending on your version of Windows, the dialog might be slightly different. Choose **Download and install this feature** to enable .NET Framework 3.5. This option requires an Internet connection.
+You might see the following configuration dialog if you try to run an app that requires an older version of .NET Framework. Depending on your version of Windows, the dialog might be slightly different. Choose **Download and install this feature** to enable .NET Framework 3.5. This option requires an internet connection.
 
 :::image type="content" source="./media/dotnet-35-windows/dotnet-framework-installation-dialog.png" alt-text="Screenshot of the .NET Framework installation dialog.":::
 

@@ -20,7 +20,7 @@ There are two ways to get an application that was compiled using .NET Framework 
 
   Retargeting requires that you add a [\<supportedRuntime>](../configure-apps/file-schema/startup/supportedruntime-element.md) element to the application's configuration file that allows it to run under .NET Framework 4 and later versions.
 
-  The configuration file for an app is an XML file in the same directory and has the same file name as the app, but with a _.config_ extension. For example, for an app named _MyExecutable.exe_, the application configuration file is named _MyExecutable.exe.config_.
+  The configuration file for an app is an XML file that's in the same directory and has the same file name as the app, but with a _.config_ extension. For example, for an app named _MyExecutable.exe_, the application configuration file is named _MyExecutable.exe.config_.
 
   Such a configuration file takes the following form:
 

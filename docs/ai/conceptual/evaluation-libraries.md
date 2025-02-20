@@ -42,7 +42,7 @@ The library uses *response caching* functionality, which means responses from th
 
 The library contains support for storing evaluation results and generating reports. The following image shows an example report in an Azure DevOps pipeline:
 
-:::image type="content" source="../media/pipeline-report.png" alt-text="Screenshot of an AI evaluation report in an Azure DevOps pipeline.":::
+:::image type="content" source="../media/ai-extensions/pipeline-report.jpg" alt-text="Screenshot of an AI evaluation report in an Azure DevOps pipeline.":::
 
 The `dotnet aieval` tool, which ships as part of the `Microsoft.Extensions.AI.Evaluation.Console` package, also includes functionality for generating reports and managing the stored evaluation data and cached responses.
 

@@ -40,7 +40,7 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## ASP.NET Core
 
-Changes in ASP.NET Core 10.0 include: 
+Changes in ASP.NET Core 10.0 include:
 
 - Blazor: Added new features for Blazor, including the QuickGrid RowClass parameter and Blazor script serving as a static web asset.
 - SignalR: Added new features for SignalR.

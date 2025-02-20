@@ -2,7 +2,7 @@
 title: The Microsoft.Extensions.AI.Evaluation libraries
 description:
 ms.topic: concept-article
-ms.date: 02/14/2025
+ms.date: 02/19/2025
 ---
 # The Microsoft.Extensions.AI.Evaluation libraries (Preview)
 
@@ -15,6 +15,7 @@ Built on top of the [Microsoft.Extensions.AI abstractions](../ai-extensions.md),
 - [📦 Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) – Defines the core abstractions and types for supporting evaluation.
 - [📦 Microsoft.Extensions.AI.Evaluation.Quality](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality) – Contains evaluators that assess the quality of LLM responses in an app according to metrics such as relevance, fluency, coherence, and truthfulness.
 - [📦 Microsoft.Extensions.AI.Evaluation.Reporting](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Reporting) – Contains support for caching LLM responses, storing the results of evaluations, and generating reports from that data.
+- [📦 Microsoft.Extensions.AI.Evaluation.Reporting.Azure](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Reporting.Azure) - Supports the reporting library with an implementation for caching LLM responses and storing the evaluation results in an [Azure Storage](/azure/storage/common/storage-introduction) container.
 - [📦 Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) – A command-line tool for generating reports and managing evaluation data.
 
 ## Test integration
@@ -33,11 +34,19 @@ The evaluation libraries were built in collaboration with data science researche
 | Equivalence                        | The similarity between the generated text and its ground truth with respect to a query | <xref:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator> |
 | Groundedness                       | How well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator> |
 
-You can also customize to add your own evaluations by implementing the <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator> interface or, for a chat bot, by extending the <xref:Microsoft.Extensions.AI.Evaluation.Quality.ChatConversationEvaluator> class.
+You can also customize to add your own evaluations by implementing the <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator> interface or extending the base classes such as <xref:Microsoft.Extensions.AI.Evaluation.Quality.ChatConversationEvaluator> and <xref:Microsoft.Extensions.AI.Evaluation.Quality.SingleNumericMetricEvaluator>.
 
 ## Cached responses
 
 The library uses *response caching* functionality, which means responses from the AI model are persisted in a cache. In subsequent runs, if the request parameters (prompt and model) are unchanged, responses are then served from the cache to enable faster execution and lower cost.
+
+## Reporting
+
+The library contains support for storing evaluation results and generating reports. The following image shows an example report in an Azure DevOps pipeline:
+
+:::image type="content" source="../media/pipeline-report.png" alt-text="Screenshot of an AI evaluation report in an Azure DevOps pipeline.":::
+
+The `dotnet aieval` tool, which ships as part of the `Microsoft.Extensions.AI.Evaluation.Console` package, also includes functionality for generating reports and managing the stored evaluation data and cached responses.
 
 ## Configuration
 

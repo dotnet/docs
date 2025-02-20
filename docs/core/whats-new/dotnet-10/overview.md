@@ -37,7 +37,9 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## .NET Aspire
 
-<!--TODO - Add a brief overview of the new features in .NET Aspire.-->
+.NET Aspire releases version 9.1, which focuses on quality of life fixes.
+
+For more information, see [.NET Aspire — what's new?](/dotnet/aspire/whats-new/).
 
 ## ASP.NET Core
 

@@ -57,7 +57,7 @@
                     "field-keyword.md",
                     "unbound-generic-types-in-nameof.md",
                     "first-class-span-types.md",
-                    "lambda-parameters-with-modifiers.md"
+                    "simple-lambda-parameters-with-modifiers.md"
                 ],
                 "src": "_csharplang/proposals",
                 "dest": "csharp/language-reference/proposals",
@@ -810,7 +810,7 @@
                 "_csharplang/proposals/field-keyword.md": "This proposal introduces a new keyword, `field`, that accesses the compiler generated backing field in a property accessor.",
                 "_csharplang/proposals/unbound-generic-types-in-nameof.md": "This proposal introduces the ability to use unbound generic types such as `List<>` in `nameof` expressions. The type argument isn't required.",
                 "_csharplang/proposals/first-class-span-types.md": "This proposal provides several implicit conversions to `Span<T>` and `ReadOnlySpan<T>` that enable library authors to have fewer overloads and developers to write code that resolves to faster Span based APIs",
-                "_csharplang/proposals/simle-lambda-parameters-with-modifiers.md": "This proposal provides allows lambda parmaeters to be declared with modifiers without requiring their type names. You can add modifiers like `ref` and `out` to lambda parameters without specifying their type.",
+                "_csharplang/proposals/simple-lambda-parameters-with-modifiers.md": "This proposal provides allows lambda parmaeters to be declared with modifiers without requiring their type names. You can add modifiers like `ref` and `out` to lambda parameters without specifying their type.",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 7.md": "Learn about any breaking changes since the initial release of C# 10 and included in C# 11",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 8.md": "Learn about any breaking changes since the initial release of C# 11 and included in C# 12",
                 "_roslyn/docs/compilers/CSharp/Compiler Breaking Changes - DotNet 9.md": "Learn about any breaking changes since the initial release of C# 12 and included in C# 13",

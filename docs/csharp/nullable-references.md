@@ -386,42 +386,42 @@ Constructor of a class will still call the finalizer, even when there was an exc
 <br/>The following example demonstrates that behavior:
 
 ```csharp
-public class Foo
+public class A
 {
   private string _name;
-  private Bar _bar;
+  private B _b;
 
-  public Foo(string name)
+  public A(string name)
   {
     ArgumentNullException.ThrowIfNullOrEmpty(name);
     _name = name;
-    _bar = new Bar();
+    _b = new B();
   }
 
-  ~Foo()
+  ~A()
   {
     Dispose();
   }
 
   public void Dispose()
   {
-    _bar.Dispose();
+    _b.Dispose();
     GC.SuppressFinalize(this);
   }
 }
 
-public class Bar: IDisposable
+public class B: IDisposable
 {
   public void Dispose() { }
 }
 
 public void Main()
 {
-  var foo = new Foo(string.Empty);
+  var a = new A(string.Empty);
 }
 ```
 
-In the preceding example, the <xref:System.NullReferenceException?displayProperty=nameWithType> will be thrown when `_bar.Dispose();` runs, if the `name` parameter was `null`. The call to `_bar.Dispose();` won't ever throw when the constructor completes successfully.
+In the preceding example, the <xref:System.NullReferenceException?displayProperty=nameWithType> will be thrown when `_b.Dispose();` runs, if the `name` parameter was `null`. The call to `_b.Dispose();` won't ever throw when the constructor completes successfully.
 
 However, there's no warning issued by the compiler, because static analysis can't determine if a method (like a constructor) completes without a runtime exception being thrown.
 

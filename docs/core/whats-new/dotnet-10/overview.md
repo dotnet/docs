@@ -15,7 +15,7 @@ Learn about the new features in .NET 10 and find links to further documentation.
 
 .NET 10, the successor to [.NET 9](../dotnet-9/overview.md), has a special focus on cloud-native apps and performance. It will be [supported for 3 years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 
-Your feedback is important and appreciated. We've created a discussion on [GitHub](https://github.com/dotnet/core/discussions/categories/news) for your questions and comments.
+Your feedback is important and appreciated. If you have questions or comments, please use the discussion on [GitHub](https://github.com/dotnet/core/discussions/categories/news).
 
 For more information, see [What's new in the .NET 10 runtime](runtime.md).
 
@@ -37,7 +37,7 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## .NET Aspire
 
-.NET Aspire releases version 9.1, which focuses on quality of life fixes.
+.NET Aspire releases version 9.1, which focuses on quality-of-life fixes.
 
 For more information, see [.NET Aspire — what's new?](/dotnet/aspire/whats-new/).
 
@@ -83,9 +83,9 @@ For more information, see [What's new in C# 14](https://github.com/dotnet/core/b
 
 Changes in Windows Forms for .NET 10 include:
 
-- Clipboard related serialization and deserialization changes.
+- Clipboard-related serialization and deserialization changes.
 - Obsoleted Clipboard APIs.
-- New Clipboard related APIs.
+- New Clipboard-related APIs.
 
 For more information, see [What's new in Windows Forms for .NET 10](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/winforms.md).
 

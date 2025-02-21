@@ -8,15 +8,15 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Create a .NET AI app using the AI app template exentions
+# create a .NET AI app to chat with custom data using the AI app template extensions
 
-In this quickstart, you learn how to create a .NET AI app to chat with custom data using the .NET AI app template extensions. These extensions provide additional starter app templates for Visual Studio and the .NET CLI. The templates are designed to streamline your getting started experience building AI apps with .NET.
+In this quickstart, you learn how to create a .NET AI app to chat with custom data using the .NET AI app template extensions. These extensions provide additional starter app templates for Visual Studio and the .NET CLI. The templates are designed to streamline the  getting started experience for building AI apps with .NET by handling common setup tasks and configurations for you.
 
 ## Prerequisites
 
-* [Install .NET 9.0](https://dotnet.microsoft.com/download)
-* [Visual Studio 2022](https://code.visualstudio.com/)
-* An Azure OpenAI service provisioned in Azure with the following configurations:
+* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* Visual Studio 2022 [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+* Access to an [Azure OpenAI service](/azure/ai-services/openai/how-to/provisioned-get-started) with the following configurations:
   - A `gpt-4o-mini` model deployed
   - A `text-embedding-3-small` model deployed
   - The [Azure AI Developer](/azure/role-based-access-control/built-in-roles/ai-machine-learning#azure-ai-developer) role assigned to the user you used to sign-in to Visual Studio or the Azure CLI with locally
@@ -29,16 +29,16 @@ The **AI Chat with Custom Data** template is available as a template package thr
 dotnet new --install AIChatCustomData
 ```
 
-## Create the .NET app using a Visual Studio AI template
+## Create the .NET AI app
 
-The new AI template is available through the Visual Studio UI or .NET CLI.
+After you have installed the new AI app templates, the template is available through the Visual Studio UI or the .NET CLI.
 
 # [Visual Studio](#tab/visual-studio)
 
 1. Inside Visual Studio, navigate to **File -> New -> Project**.
 1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
-1. On the **Additional information screen:
+1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.
     - For the **AI service provider** option, select **Azure OpenAI**.
     - Make sure the **Use managed identity** checkbox is checked.
@@ -80,9 +80,6 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 
 The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
 
-> [!NOTE]
-> Make sure you are signed-in to Visual Studio or the Azure CLI with a user that is assigned the **Azure AI Developer** role.
-
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
     ```dotnetcli
@@ -99,9 +96,12 @@ The **AI Chat with Custom Data** app is almost ready to go as soon as it's creat
 
 1. Select the run button at the top of Visual Studio to launch the app. After a moment, you should see the following UI load in the browser:
 
+    > [!NOTE]
+    > To avoid authentication errors, make sure you are signed-in to Visual Studio or the Azure CLI with a user that is assigned the **Azure AI Developer** role on your Azure OpenAI resource.
+
     :::image type="content" source="../media/ai-templates/app-ui.png" alt-text="A screenshot showing the UI of the .NET AI app template.":::
 
-1. Enter a prompt into the input box such as *"What are the tools in the survival kit?"* to ask your AI model a question about the ingested data from the `Example.pdf` file.
+1. Enter a prompt into the input box such as *"What are some essential tools in the survival kit?"* to ask your AI model a question about the ingested data from the `Example.pdf` file.
 
     :::image type="content" source="../media/ai-templates/app-ui-question.png" alt-text="A screenshot showing the conversational UI of the .NET AI app template.":::
 

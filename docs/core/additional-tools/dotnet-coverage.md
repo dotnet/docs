@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # dotnet-coverage code coverage utility
 
-**This article applies to:** ✔️ .NET Core 8 SDK and later versions
+**This article applies to:** ✔️ .NET 8 SDK and later versions
 
 ## Synopsis
 

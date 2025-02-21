@@ -15,7 +15,7 @@ string[] prompts = ["What is AI?", "What is .NET?", "What is AI?"];
 
 foreach (var prompt in prompts)
 {
-    await foreach (var update in client.CompleteStreamingAsync(prompt))
+    await foreach (var update in client.GetStreamingResponseAsync(prompt))
     {
         Console.Write(update);
     }

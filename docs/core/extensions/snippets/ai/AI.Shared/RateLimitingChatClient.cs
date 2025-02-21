@@ -6,7 +6,7 @@ public sealed class RateLimitingChatClient(
     IChatClient innerClient, RateLimiter rateLimiter)
         : DelegatingChatClient(innerClient)
 {
-    public override async Task<ChatCompletion> GetResponseAsync(
+    public override async Task<ChatResponse> GetResponseAsync(
         IList<ChatMessage> chatMessages,
         ChatOptions? options = null,
         CancellationToken cancellationToken = default)
@@ -23,7 +23,7 @@ public sealed class RateLimitingChatClient(
             .ConfigureAwait(false);
     }
 
-    public override async IAsyncEnumerable<StreamingChatCompletionUpdate> GetStreamingResponseAsync(
+    public override async IAsyncEnumerable<ChatResponseUpdate> GetStreamingResponseAsync(
         IList<ChatMessage> chatMessages,
         ChatOptions? options = null,
         [EnumeratorCancellation] CancellationToken cancellationToken = default)

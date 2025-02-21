@@ -25,7 +25,7 @@ This process provides many advantages for you to add API documentation in your c
 
 Tools like Visual Studio provide IntelliSense for many common XML elements used in documentation comments.
 
-This article covers these articles:
+This article covers these topics:
 
 - Documentation comments and XML file generation
 - Tags validated by the C# compiler and Visual Studio
@@ -102,7 +102,7 @@ The use of XML doc comments requires delimiters that indicate where a documentat
 To refer to XML elements (for example, your function processes specific XML elements that you want to describe in an XML documentation comment), you can use the standard quoting mechanism (`&lt;` and `&gt;`). To refer to generic identifiers in code reference (`cref`) elements, you can use either the escape characters (for example, `cref="List&lt;T&gt;"`) or braces (`cref="List{T}"`). As a special case, the compiler parses the braces as angle brackets to make the documentation comment less cumbersome to the author when referring to generic identifiers.
 
 > [!NOTE]
-> If you write comments using the single line XML comment delimiter, `///`, but don't include any tags, the compiler adds the text of those comments to the XML output file. However, the output doesn't include XML elements such as `<summary>`. Most tools that consume XML comments (including Visual Studio intellisense) don't read these comments.
+> If you write comments using the single line XML comment delimiter, `///`, but don't include any tags, the compiler adds the text of those comments to the XML output file. However, the output doesn't include XML elements such as `<summary>`. Most tools that consume XML comments (including Visual Studio IntelliSense) don't read these comments.
 
 ## Tools that accept XML documentation input
 

@@ -1,7 +1,7 @@
 ---
 title: Determine which .NET Framework versions are installed
 description: Use code, regedit.exe, or PowerShell to detect which versions of .NET Framework are installed on a machine by querying the Windows registry. Or, check Control Panel.
-ms.date: 04/03/2024
+ms.date: 02/14/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -116,7 +116,7 @@ To determine whether a *minimum* version of .NET Framework is present, check for
 
 1. Check for a REG_DWORD entry named **Release**. If it exists, then you have .NET Framework 4.5 or later installed. Its value corresponds to a particular version of .NET Framework. In the following figure, for example, the value of the **Release** entry is 528040, which is the release key for .NET Framework 4.8.
 
-   ![Registry entry for .NET Framework 4.5](./media/clr-installdir.png )
+   :::image type="content" source="./media/how-to-determine-which-versions-are-installed/clr-installdir.png" alt-text="A screenshot of the RegEdit tool showing the registry entry for .NET Framework 4.5":::
 
 #### Use PowerShell to check for a minimum version
 
@@ -142,8 +142,8 @@ The following example checks the value of the **Release** entry in the registry 
 > [!TIP]
 > Add the directive `using Microsoft.Win32` or `Imports Microsoft.Win32` at the top of your code file if you haven't already done so.
 
-:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="2":::
-:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="2":::
+:::code language="csharp" source="snippets/how-to-determine-which-versions-are-installed/csharp/Program.cs" id="Get45PlusFromRegistry":::
+:::code language="vb" source="snippets/how-to-determine-which-versions-are-installed/vb/Module1.vb" id="Get45PlusFromRegistry":::
 
 The example displays output like the following:
 
@@ -216,7 +216,7 @@ Notice that the registry path to the .NET Framework 1.0 subkey is different from
 
    The following figure shows the subkey and its **Version** value for .NET Framework 3.5.
 
-   ![The registry entry for .NET Framework 3.5.](./media/net-4-and-earlier.png)
+   :::image type="content" source="./media/how-to-determine-which-versions-are-installed/net-4-and-earlier.png" alt-text="A screenshot of the RegEdit tool showing the registry entry for .NET Framework 3.5":::
 
 #### Query the registry using code (older framework versions)
 
@@ -227,8 +227,8 @@ Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to
 
 The following example finds the versions of .NET Framework 1-4 that are installed:
 
-:::code language="csharp" source="snippets/csharp/versions-installed.cs" id="1":::
-:::code language="vb" source="snippets/visual-basic/versions-installed.vb" id="1":::
+:::code language="csharp" source="snippets/how-to-determine-which-versions-are-installed/csharp/Program.cs" id="GetVersionFromRegistry":::
+:::code language="vb" source="snippets/how-to-determine-which-versions-are-installed/vb/Module1.vb" id="GetVersionFromRegistry":::
 
 The example displays output similar to the following:
 
@@ -341,5 +341,5 @@ Version: 4.0.30319.18010
 
 - [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md)
 - [Troubleshoot: Determine which versions and service packs of .NET Framework are installed](/troubleshoot/developer/dotnet/framework/general/determine-dotnet-versions-service-pack-levels)
-- [Install .NET Framework for developers](../install/guide-for-developers.md)
+- [Install .NET Framework for developers](guide-for-developers.md)
 - [.NET Framework versions and dependencies](versions-and-dependencies.md)

@@ -17,4 +17,4 @@ IChatClient client = new ChatClientBuilder(sampleChatClient)
         configure: static c => c.EnableSensitiveData = true)
     .Build();
 
-Console.WriteLine((await client.CompleteAsync("What is AI?")).Message);
+Console.WriteLine((await client.GetResponseAsync("What is AI?")).Message);

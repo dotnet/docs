@@ -380,6 +380,51 @@ public static class Program
 
 In the preceding example, the declaration of the array shows it holds non-nullable strings, while its elements are all initialized to `null`. Then, the variable `s` is assigned a `null` value (the first element of the array). Finally, the variable `s` is dereferenced causing a runtime exception.
 
+### Constructors
+
+Constructor of a class will still call the finalizer, even when there was an exception thrown by that constructor.
+<br/>The following example demonstrates that behavior:
+
+```csharp
+public class Foo
+{
+  private string _name;
+  private Bar _bar;
+
+  public Foo(string name)
+  {
+    ArgumentNullException.ThrowIfNullOrEmpty(name);
+    _name = name;
+    _bar = new Bar();
+  }
+
+  ~Foo()
+  {
+    Dispose();
+  }
+
+  public void Dispose()
+  {
+    _bar.Dispose();
+    GC.SuppressFinalize(this);
+  }
+}
+
+public class Bar: IDisposable
+{
+  public void Dispose() { }
+}
+
+public void Main()
+{
+  var foo = new Foo(string.Empty);
+}
+```
+
+In the preceding example, the <xref:System.NullReferenceException?displayProperty=nameWithType> will be thrown when `_bar.Dispose();` is executed.
+
+However, there's no warning issued by the compiler, because static analysis can't determine if a method (like a constructor) completes without a runtime exception being thrown.
+
 ## See also
 
 - [Nullable reference types specification](~/_csharpstandard/standard/types.md#893-nullable-reference-types)

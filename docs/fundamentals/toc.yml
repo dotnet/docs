@@ -137,6 +137,21 @@ items:
             href: ../core/tutorials/index.md
   - name: What's new in .NET
     items:
+      - name: .NET 10
+        items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-10/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-10/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-10/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-10/sdk.md
+          - name: Breaking changes
+            href: ../core/compatibility/10.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 9
         items:
           - name: What's new

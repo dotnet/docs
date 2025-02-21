@@ -92,7 +92,7 @@ Each chat message is instantiated, assigning to its <xref:Microsoft.Extensions.A
 
 ### Request chat completion with streaming
 
-The inputs to <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*?displayProperty=nameWithType> are identical to those of `GetResponseAsync`. However, rather than returning the complete response as part of a <xref:Microsoft.Extensions.AI.ChatResponse> object, the method returns an <xref:System.Collections.Generic.IAsyncEnumerable`1> where `T` is <xref:Microsoft.Extensions.AI.StreamingChatCompletionUpdate>, providing a stream of updates that collectively form the single response.
+The inputs to <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*?displayProperty=nameWithType> are identical to those of `GetResponseAsync`. However, rather than returning the complete response as part of a <xref:Microsoft.Extensions.AI.ChatResponse> object, the method returns an <xref:System.Collections.Generic.IAsyncEnumerable`1> where `T` is <xref:Microsoft.Extensions.AI.ChatResponseUpdate>, providing a stream of updates that collectively form the single response.
 
 :::code language="csharp" source="snippets/ai/ConsoleAI.GetStreamingResponseAsync/Program.cs":::
 

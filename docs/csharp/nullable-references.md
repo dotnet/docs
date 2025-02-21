@@ -388,36 +388,36 @@ Constructor of a class will still call the finalizer, even when there was an exc
 ```csharp
 public class A
 {
-  private string _name;
-  private B _b;
+    private string _name;
+    private B _b;
 
-  public A(string name)
-  {
-    ArgumentNullException.ThrowIfNullOrEmpty(name);
-    _name = name;
-    _b = new B();
-  }
+    public A(string name)
+    {
+        ArgumentNullException.ThrowIfNullOrEmpty(name);
+        _name = name;
+        _b = new B();
+    }
 
   ~A()
   {
-    Dispose();
+      Dispose();
   }
 
   public void Dispose()
   {
-    _b.Dispose();
-    GC.SuppressFinalize(this);
+      _b.Dispose();
+      GC.SuppressFinalize(this);
   }
 }
 
 public class B: IDisposable
 {
-  public void Dispose() { }
+    public void Dispose() { }
 }
 
 public void Main()
 {
-  var a = new A(string.Empty);
+    var a = new A(string.Empty);
 }
 ```
 

@@ -68,7 +68,7 @@ Welcome to what's new in the .NET docs for December 2024. This article lists som
 
 ### New articles
 
-- [Install .NET Framework on Windows Server 2025](../framework/install/on-server-2025.md)
+- [Install .NET Framework on Windows Server 2025](../framework/install/on-windows-and-server.md#install-net-framework-on-windows-server)
 - [November 2024 cumulative update preview](../framework/release-notes/2024/11-21-november-preview-cumulative-update.md)
 
 ## Community contributors

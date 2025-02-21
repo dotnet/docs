@@ -18,7 +18,7 @@ The CLR is identified by its own version number. The .NET Framework version numb
 > [!TIP]
 >
 > - For a complete list of supported operating systems, see [System requirements](../get-started/system-requirements.md).
-> - For downloads, see [Install .NET Framework for developers](../install/guide-for-developers.md).
+> - For downloads, see [Install .NET Framework for developers](guide-for-developers.md).
 > - For information about determining which versions of .NET Framework are installed on a computer, see [How to determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md).
 
 ## Version information
@@ -27,7 +27,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 - The check mark icon ✔️ denotes OS versions on which .NET Framework is installed by default.
 - The plus sign icon ➕ denotes OS versions on which .NET Framework doesn't come installed but can be installed.
-- The asterisk **\*** denotes OS versions on which .NET Framework (whether preinstalled or not) must be enabled [in Control Panel](../install/dotnet-35-windows.md) or, for Windows Server, through the Server Manager.
+- The asterisk **\*** denotes OS versions on which .NET Framework (whether preinstalled or not) must be enabled [in Control Panel](dotnet-35-windows.md#enable-net-framework-35-on-windows) or, for Windows Server, through the [Server Manager](dotnet-35-windows.md#enable-net-framework-35-on-windows-server).
 
 Jump to:
 
@@ -361,7 +361,7 @@ To determine the installed .NET version, use `Release` DWORD 378389. For more in
 
 > [!NOTE]
 >
-> - .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows.md#enable-net-framework-35-in-control-panel).
+> - .NET Framework must be enabled on this operating system through [Control Panel (for Windows)](dotnet-35-windows.md#enable-net-framework-35-on-windows) or the [Server Manager (for Windows Server)](dotnet-35-windows.md#enable-net-framework-35-on-windows-server).
 > - In general, you should not uninstall any versions of .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of .NET Framework on a single computer at the same time. This means that you can install .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../get-started/index.md).
 
 ## Remarks for version 4.5 and later
@@ -377,13 +377,13 @@ The following guidelines apply:
   > [!NOTE]
   > .NET Framework 4.5.1 and .NET Framework 4.5 are used here only as examples. The principle described applies to any app that targets a later version of .NET Framework than the one installed on the system on which it's running.
 
-Some changes in .NET Framework may require changes to your app code; see [Application Compatibility](application-compatibility.md) before you run your existing apps with .NET Framework 4.5 or later versions. For more information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the .NET website.
+Some changes in .NET Framework may require changes to your app code; see [Application Compatibility](../migration-guide/application-compatibility.md) before you run your existing apps with .NET Framework 4.5 or later versions. For more information about installing the current version, see [Install the .NET Framework for developers](guide-for-developers.md). For information about support for the .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the .NET website.
 
 ## Remarks for older versions
 
 .NET Framework versions 2.0, 3.0, and 3.5 are built with the same version of the CLR (CLR 2.0). These versions represent successive layers of a single installation. Each version is built incrementally on top of the earlier versions. It's not possible to run versions 2.0, 3.0, and 3.5 side by side on a computer. When you install version 3.5, you get the 2.0 and 3.0 layers automatically, and apps that were built for versions 2.0, 3.0, and 3.5 can all run on version 3.5. However, .NET Framework 4 ends this layering approach, and it and later releases (.NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, and 4.8) also represent successive layers of a single installation. Starting with .NET Framework 4, you can use in-process, side by side hosting to run multiple versions of the CLR in a single process. For more information, see [Assemblies and Side-by-Side Execution](../../standard/assembly/side-by-side-execution.md).
 
-In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be required to enable .NET Framework 3.5 on a Windows 8, Windows 8.1, or Windows 10 computer before they can run your app. For more information, see [Install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows.md).
+In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be required to enable .NET Framework 3.5 on a Windows 8, Windows 8.1, or Windows 10 computer before they can run your app. For more information, see [Install the .NET Framework 3.5 on Windows 11, Windows 10, Windows 8.1, and Windows 8](dotnet-35-windows.md).
 
 [!INCLUDE [net-framework-vs](../../../includes/net-framework-vs.md)]
 
@@ -399,6 +399,6 @@ In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be req
 
 ## See also
 
-- [Version compatibility](version-compatibility.md)
+- [Version compatibility](../migration-guide/version-compatibility.md)
 - [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
-- [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)

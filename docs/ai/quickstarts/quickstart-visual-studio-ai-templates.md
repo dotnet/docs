@@ -1,7 +1,7 @@
 ---
-title: Quickstart - Connect to and chat with a local AI using .NET
-description: Set up a local AI model and chat with it using a .NET console app and the Microsoft.Extensions.AI libraries
-ms.date: 12/19/2024
+title: Quickstart - Create a .NET AI app using the AI app template
+description: Create a .NET AI app to chat with custom data using the AI app template extensions and the Microsoft.Extensions.AI libraries
+ms.date: 2/21/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft

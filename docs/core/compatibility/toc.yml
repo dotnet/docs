@@ -166,6 +166,8 @@ items:
                 href: serialization/9.0/binaryformatter-removal.md
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
+              - name: System.Text.Json metadata reader now unescapes metadata property names
+                href: serialization/9.0/json-metadata-reader.md         
           - name: Windows Forms
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -2022,6 +2024,8 @@ items:
                 href: serialization/9.0/binaryformatter-removal.md
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
+              - name: System.Text.Json metadata reader now unescapes metadata property names
+                href: serialization/9.0/json-metadata-reader.md    
           - name: .NET 8
             items:
               - name: BinaryFormatter disabled for most projects

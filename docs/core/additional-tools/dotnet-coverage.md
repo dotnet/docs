@@ -593,7 +593,7 @@ Hello, World!
 If you don't want to use the `instrument` command, then the files to be instrumented can be specified using `--include-files` option as follows:
 
 ```console
-D:\examples\ConsoleApp> dotnet-coverage collect --include-files .\bin\Debug\net7.0\*.dll dotnet run
+D:\examples\ConsoleApp> dotnet-coverage collect --include-files .\bin\Debug\net9.0\*.dll dotnet run
 dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: 57862ec0-e512-49a5-8b66-2804174680fc

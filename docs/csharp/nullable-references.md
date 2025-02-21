@@ -421,9 +421,7 @@ public void Main()
 }
 ```
 
-In the preceding example, the <xref:System.NullReferenceException?displayProperty=nameWithType> will be thrown when `_b.Dispose();` runs, if the `name` parameter was `null`. The call to `_b.Dispose();` won't ever throw when the constructor completes successfully.
-
-However, there's no warning issued by the compiler, because static analysis can't determine if a method (like a constructor) completes without a runtime exception being thrown.
+In the preceding example, the <xref:System.NullReferenceException?displayProperty=nameWithType> will be thrown when `_b.Dispose();` runs, if the `name` parameter was `null`. The call to `_b.Dispose();` won't ever throw when the constructor completes successfully. However, there's no warning issued by the compiler, because static analysis can't determine if a method (like a constructor) completes without a runtime exception being thrown.
 
 ## See also
 

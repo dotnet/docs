@@ -184,11 +184,10 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
 ## dotnet-monitor generatekey
 
  Generate an API key and hash for HTTP authentication.
-
 ### Synopsis
 
 ```console
-dotnet-monitor generatekey [-h|--help] [-o|--output]
+dotnet-monitor generatekey [-h|--help] [-o|--output] [-e|--expiration]
 ```
 
 ### Options
@@ -208,6 +207,10 @@ dotnet-monitor generatekey [-h|--help] [-o|--output]
   - `PowerShell` - Outputs in a format usable in PowerShell prompts and scripts.
   - `Shell` - Outputs in a format usable in Linux shells such as Bash.
   - `Text` - Outputs in a format that is plain text.
+
+- **`-e|--expiration <expiration>`**
+
+  The expiration time after which the generated API key will no longer be accepted. The value must be in TimeSpan format (e.g., "7.00:00:00" for 7 days). Default: "7.00:00:00" (7 days).
 
 ## See Also
 

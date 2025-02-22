@@ -40,7 +40,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/test-prompt", async (IChatClient chatClient) =>
 {
-    return await chatClient.CompleteAsync("Test prompt", new ChatOptions());
+    return await chatClient.GetResponseAsync("Test prompt", new ChatOptions());
 })
 .WithName("Test prompt");
 

@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # dotnet-coverage code coverage utility
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 8 SDK and later versions
 
 ## Synopsis
 
@@ -593,9 +593,8 @@ Hello, World!
 If you don't want to use the `instrument` command, then the files to be instrumented can be specified using `--include-files` option as follows:
 
 ```console
-D:\examples\ConsoleApp> dotnet-coverage collect --include-files .\bin\Debug\net7.0\*.dll dotnet run
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+D:\examples\ConsoleApp> dotnet-coverage collect --include-files .\bin\Debug\net9.0\*.dll dotnet run
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: 57862ec0-e512-49a5-8b66-2804174680fc
 Hello, World!
@@ -618,8 +617,7 @@ In this case, first binary needs to be instrumented as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage instrument .\bin\Debug\net7.0\ConsoleApp.dll
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 Input file successfully instrumented.
 ```
@@ -628,8 +626,7 @@ Then you can collect code coverage as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage collect .\bin\Debug\net7.0\ConsoleApp.exe
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: a09e6bef-ff64-4b5f-8bb8-fc495ebb50ba
 Hello, World!
@@ -642,8 +639,7 @@ In this case, you can completely separate coverage collection from running your 
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage instrument --session-id 73c34ce5-501c-4369-a4cb-04d31427d1a4 .\bin\Debug\net7.0\ConsoleApp.dll
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 Input file successfully instrumented.
 ```
@@ -655,8 +651,7 @@ In the second step, you need to start coverage collector as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage collect --session-id 73c34ce5-501c-4369-a4cb-04d31427d1a4 --server-mode
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: 73c34ce5-501c-4369-a4cb-04d31427d1a4
 ```
@@ -672,8 +667,7 @@ Finally, the collector can be closed as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage shutdown 73c34ce5-501c-4369-a4cb-04d31427d1a4
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 ```
 
 ### Settings

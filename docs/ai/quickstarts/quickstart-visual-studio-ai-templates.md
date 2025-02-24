@@ -6,6 +6,7 @@ ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
+zone_pivot_groups: meai-targets
 ---
 
 # Create a .NET AI app to chat with custom data using the AI app template extensions
@@ -14,12 +15,32 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 
 ## Prerequisites
 
+:::zone target="docs" pivot="azure-openai"
+
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
 * Visual Studio 2022 [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
 * Access to an [Azure OpenAI service](/azure/ai-services/openai/how-to/provisioned-get-started) with the following configurations:
   - A `gpt-4o-mini` model deployed
   - A `text-embedding-3-small` model deployed
   - The [Azure AI Developer](/azure/role-based-access-control/built-in-roles/ai-machine-learning#azure-ai-developer) role assigned to the user you used to sign-in to Visual Studio or the Azure CLI with locally
+
+:::zone-end
+
+:::zone target="docs" pivot="openai"
+
+* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* Visual Studio 2022 [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+* Access to an [OpenAI service](https://openai.com/api/) with the following configurations:
+
+:::zone-end
+
+:::zone target="docs" pivot="ollama"
+
+* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* Ollama installed locally - [Install Ollama](https://ollama.com/) locally on your device
+* Visual Studio 2022 [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+
+:::zone-end
 
 ## Install the .NET AI app template
 
@@ -76,9 +97,11 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 - Registers a SQLite database context service to handle ingesting documents. The app is preconfigured to ingest whatever documents you add to the `Data` folder of the project, including the provided `Example.pdf` file.
 - Provides a complete chat UI using Blazor components. The UI handles rich formatting for the AI responses and provides features such as citations for response data.
 
-## Configure and run the app
+## Configure the app
 
 The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
+
+:::zone target="docs" pivot="azure-openai"
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
@@ -86,13 +109,57 @@ The **AI Chat with Custom Data** app is almost ready to go as soon as it's creat
     dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
     ```
 
-1. By default, the app template assumes your Azure OpenAI deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
+1. By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
+
+```csharp
+// Update these parameter values to match your Azure OpenAI model deployment names
+var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
+var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
+```
+
+:::zone-end
+
+:::zone target="docs" pivot="openai"
+
+1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
+
+    ```dotnetcli
+    dotnet user-secrets set OpenAI:Key <your-api-key>
+    ```
+
+1. By default, the app template assumes the use of certain AI models. If necessary, update the model name parameters to match your the models you want to target:
+
+```csharp
+// Update these parameter values to match your preferred OpenAI models
+var chatClient = openAIClient.AsChatClient("gpt-4o-mini");
+var embeddingGenerator = openAIClient.AsEmbeddingGenerator("text-embedding-3-small");
+```
+
+:::zone-end
+
+:::zone target="docs" pivot="ollama"
+
+1. In a local terminal window, make sure Ollama is running on your computer using the `ollama serve` command:
+
+    ```bash
+    ollama serve
+    ```
+
+1. By default, the app template targets the default Ollama host address at `http://localhost:11434` and assumes the use of certain AI models. If you are using a different address or AI models, update the client configuration code to your target values:
 
     ```csharp
-    // Update these parameter values to match your Azure OpenAI model deployment names
-    var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
-    var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
+    // Update these parameter values to match your preferred OpenAI models
+    IChatClient chatClient = new OllamaApiClient(
+        new Uri("http://localhost:11434"),
+        "llama3.2");
+    IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator = new OllamaApiClient(
+        new Uri("http://localhost:11434"),
+        "all-minilm");
     ```
+
+:::zone-end
+
+## Run and test the app
 
 1. Select the run button at the top of Visual Studio to launch the app. After a moment, you should see the following UI load in the browser:
 

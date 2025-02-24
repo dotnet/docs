@@ -1,11 +1,11 @@
 ---
 title: "Collections"
 description: Learn about collections in C#, which are used to work with groups of objects. Collections have different characteristics regarding adding and removing elements, modifying elements, and enumerating the collection elements.
-ms.date: 08/22/2023
+ms.date: 02/04/2025
 ---
 # Collections
 
-The .NET runtime provides many collection types that store and manage groups of related objects. Some of the collection types, such as <xref:System.Array?displayProperty=nameWithType>, <xref:System.Span%601?displayProperty=nameWithType>, and <xref:System.Memory%601?displayProperty=nameWithType> are recognized in the C# language. In addition, interfaces like <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> are recognized in the language for enumerating the elements of a collection.
+The .NET runtime provides many collection types that store and manage groups of related objects. Some of the collection types, such as <xref:System.Array?displayProperty=nameWithType>, <xref:System.Span%601?displayProperty=nameWithType>, and <xref:System.Memory%601?displayProperty=nameWithType> are recognized [in the C# language](./built-in-types.md). In addition, interfaces like <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> are recognized in the language for enumerating the elements of a collection.
 
 Collections provide a flexible way to work with groups of objects. You can classify different collections by these characteristics:
 

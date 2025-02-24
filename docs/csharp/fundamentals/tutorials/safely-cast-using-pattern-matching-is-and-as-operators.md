@@ -9,13 +9,13 @@ helpviewer_keywords:
 ---
 # How to safely cast by using pattern matching and the is and as operators
 
-Because objects are polymorphic, it's possible for a variable of a base class type to hold a derived [type](../types/index.md). To access the derived type's instance members, it's necessary to [cast](../../programming-guide/types/casting-and-type-conversions.md) the value back to the derived type. However, a cast creates the risk of throwing an <xref:System.InvalidCastException>. C# provides [pattern matching](../functional/pattern-matching.md) statements that perform a cast conditionally only when it will succeed. C# also provides the [is](../../language-reference/operators/type-testing-and-cast.md#is-operator) and [as](../../language-reference/operators/type-testing-and-cast.md#as-operator) operators to test if a value is of a certain type.
+Because objects are polymorphic, it's possible for a variable of a base class type to hold a derived [type](../types/index.md). To access the derived type's instance members, it's necessary to [cast](../../programming-guide/types/casting-and-type-conversions.md) the value back to the derived type. However, a cast creates the risk of throwing an <xref:System.InvalidCastException>. C# provides [pattern matching](../functional/pattern-matching.md) statements that perform a cast conditionally only when it will succeed. C# also provides the [is](../../language-reference/operators/type-testing-and-cast.md#the-is-operator) and [as](../../language-reference/operators/type-testing-and-cast.md#the-as-operator) operators to test if a value is of a certain type.
 
 The following example shows how to use the pattern matching `is` statement:
 
 :::code language="csharp" source="./snippets/safelycast/patternmatching/Program.cs" ID="PatternMatchingIs":::
 
-The preceding sample demonstrates a few features of pattern matching syntax. The `if (a is Mammal m)` statement combines the test with an initialization assignment. The assignment occurs only when the test succeeds. The variable `m` is only in scope in the embedded `if` statement where it has been assigned. You can't access `m` later in the same method. The preceding example also shows how to use the [`as` operator](../../language-reference/operators/type-testing-and-cast.md#as-operator) to convert an object to a specified type.
+The preceding sample demonstrates a few features of pattern matching syntax. The `if (a is Mammal m)` statement combines the test with an initialization assignment. The assignment occurs only when the test succeeds. The variable `m` is only in scope in the embedded `if` statement where it has been assigned. You can't access `m` later in the same method. The preceding example also shows how to use the [`as` operator](../../language-reference/operators/type-testing-and-cast.md#the-as-operator) to convert an object to a specified type.
 
 You can also use the same syntax for testing if a [nullable value type](../../language-reference/builtin-types/nullable-value-types.md) has a value, as shown in the following example:
 

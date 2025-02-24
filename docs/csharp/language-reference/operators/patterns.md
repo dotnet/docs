@@ -48,15 +48,11 @@ You use declaration and type patterns to check if the run-time type of an expres
 A *declaration pattern* with type `T` matches an expression when an expression result is non-null and any of the following conditions are true:
 
 - The run-time type of an expression result is `T`.
-
+- The type `T` is a `ref struct` type and there is an identity conversion from the expression to `T`.
 - The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
-
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
-
   In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's run-time type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's run-time type <xref:System.Collections.Generic.List%601> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
-
 - The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
-
 - A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the run-time type of an expression result to type `T`.
 
 The following example demonstrates the last two conditions:

@@ -142,9 +142,9 @@ groups:
   title: MEAI targets
   prompt: Choose a host service for your AI models
   pivots:
-    - id: openai
-      title: OpenAI
     - id: azure-openai
       title: Azure OpenAI
+    - id: openai
+      title: OpenAI
     - id: ollama
       title: Ollama

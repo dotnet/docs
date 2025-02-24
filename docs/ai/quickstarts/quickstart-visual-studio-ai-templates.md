@@ -18,7 +18,7 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 :::zone target="docs" pivot="azure-openai"
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+* Visual Studio 2022 - [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
 * Access to an [Azure OpenAI service](/azure/ai-services/openai/how-to/provisioned-get-started) with the following configurations:
   - A `gpt-4o-mini` model deployed
   - A `text-embedding-3-small` model deployed
@@ -29,7 +29,7 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 :::zone target="docs" pivot="openai"
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+* Visual Studio 2022 - [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
 * Access to an [OpenAI service](https://openai.com/api/) with the following configurations:
 
 :::zone-end
@@ -37,8 +37,8 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 :::zone target="docs" pivot="ollama"
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* Visual Studio 2022 - [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
 * Ollama installed locally - [Install Ollama](https://ollama.com/) locally on your device
-* Visual Studio 2022 [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
 
 :::zone-end
 
@@ -53,6 +53,8 @@ dotnet new --install AIChatCustomData
 ## Create the .NET AI app
 
 After you have installed the new AI app templates, the template is available through the Visual Studio UI or the .NET CLI.
+
+:::zone target="docs" pivot="azure-openai"
 
 # [Visual Studio](#tab/visual-studio)
 
@@ -75,7 +77,7 @@ After you have installed the new AI app templates, the template is available thr
     dotnet new chat --framework "net9.0" --AiServiceProvider "azureopenai" --VectorStore "local"
     ```
 
-    The .NET CLI creates a new .NET 9.0 app configured to use Azure OpenAI with a local in-memory vector store for prototyping.
+    The .NET CLI creates a new .NET 9.0 app with the configurations your specified.
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
 
@@ -84,6 +86,72 @@ After you have installed the new AI app templates, the template is available thr
     ```
 
 ---
+
+:::zone-end
+
+:::zone target="docs" pivot="openai"
+
+1. Inside Visual Studio, navigate to **File -> New -> Project**.
+1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
+1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
+1. On the **Additional information** screen:
+    - For the **Framework** option, select **.NET 9.0**.
+    - For the **AI service provider** option, select **OpenAI**.
+    - For the **Vector store** option, select **Local on-disc (for prototyping)**.
+1. Select **Create** to complete the process.
+
+# [.NET CLI](#tab/dotnet-cli)
+
+1. In a terminal window, navigate to an empty directory on your device.
+1. Create a new app with the `dotnet new` command and the following parameters:
+
+    ```dotnetcli
+    dotnet new chat --framework "net9.0" --AiServiceProvider "openai" --VectorStore "local"
+    ```
+
+    The .NET CLI creates a new .NET 9.0 app with the configurations your specified.
+
+1. Open the new app in your editor of choice, such as Visual Studio Code.
+
+    ```dotnetcli
+    code .
+    ```
+
+---
+
+:::zone-end
+
+:::zone target="docs" pivot="ollama"
+
+1. Inside Visual Studio, navigate to **File -> New -> Project**.
+1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
+1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
+1. On the **Additional information** screen:
+    - For the **Framework** option, select **.NET 9.0**.
+    - For the **AI service provider** option, select **Ollama**.
+    - For the **Vector store** option, select **Local on-disc (for prototyping)**.
+1. Select **Create** to complete the process.
+
+# [.NET CLI](#tab/dotnet-cli)
+
+1. In a terminal window, navigate to an empty directory on your device.
+1. Create a new app with the `dotnet new` command and the following parameters:
+
+    ```dotnetcli
+    dotnet new chat --framework "net9.0" --AiServiceProvider "ollama" --VectorStore "local"
+    ```
+
+    The .NET CLI creates a new .NET 9.0 app with the configurations your specified.
+
+1. Open the new app in your editor of choice, such as Visual Studio Code.
+
+    ```dotnetcli
+    code .
+    ```
+
+---
+
+:::zone-end
 
 ### Explore the sample app
 

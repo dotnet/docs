@@ -27,19 +27,19 @@ The `dotnet sln` command provides a convenient way to list and modify projects i
 
 To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command with the `sln` template name.
 
-The following example creates a *.slnx* file in the current folder, with the same name as the folder:
+The following example creates a *.sln* file in the current folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln
 ```
 
-The following example creates a *.slnx* file in the current folder, with the specified file name:
+The following example creates a *.sln* file in the current folder, with the specified file name:
 
 ```dotnetcli
 dotnet new sln --name MySolution
 ```
 
-The following example creates a *.slnx* file in the specified folder, with the same name as the folder:
+The following example creates a *.sln* file in the specified folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln --output MySolution

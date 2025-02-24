@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/44886
 
 # System.Linq.AsyncEnumerable in .NET 10
 
-.NET 10 introduces the `AsyncEnumerable` class, which provides a full set of LINQ extension methods for the `IAsyncEnumerable<T>` type. This change replaces the community-maintained `System.Linq.Async` NuGet library, potentially causing compilation errors due to ambiguities.
+.NET 10 introduces the `AsyncEnumerable` class, which provides a full set of LINQ extension methods for the `IAsyncEnumerable<T>` type. This class replaces the community-maintained `System.Linq.Async` NuGet library, potentially causing compilation errors due to ambiguities.
 
 ## Version introduced
 

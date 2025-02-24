@@ -184,6 +184,7 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
 ## dotnet-monitor generatekey
 
  Generate an API key and hash for HTTP authentication.
+ 
 ### Synopsis
 
 ```console

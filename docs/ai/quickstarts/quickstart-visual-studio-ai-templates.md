@@ -163,17 +163,17 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 
 - Includes essential `Microsoft.Extensions.AI` packages and other dependencies in the `csproj` file to help you get started working with AI.
 - Creates various AI services and registers them for dependency injection in the `Program.cs` file:
-  - An `IChatClient` service to chat back and forth with the generative AI model.
-  - An `IEmbeddingGenerator` service that is used to generate embeddings, which are essential for vector search functionality.
-  - A `JsonVectorStore` to act as an in-memory vector store.
+  - An `IChatClient` service to chat back and forth with the generative AI model
+  - An `IEmbeddingGenerator` service that is used to generate embeddings, which are essential for vector search functionality
+  - A `JsonVectorStore` to act as an in-memory vector store
 - Registers a SQLite database context service to handle ingesting documents. The app is preconfigured to ingest whatever documents you add to the `Data` folder of the project, including the provided `Example.pdf` file.
 - Provides a complete chat UI using Blazor components. The UI handles rich formatting for the AI responses and provides features such as citations for response data.
 
 ## Configure the app
 
-The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
-
 :::zone target="docs" pivot="azure-openai"
+
+The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
@@ -183,15 +183,17 @@ The **AI Chat with Custom Data** app is almost ready to go as soon as it's creat
 
 1. By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
 
-```csharp
-// Update these parameter values to match your Azure OpenAI model deployment names
-var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
-var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
-```
+    ```csharp
+    // Update these parameter values to match your Azure OpenAI model deployment names
+    var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
+    var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
+    ```
 
 :::zone-end
 
 :::zone target="docs" pivot="openai"
+
+The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you'll need to provide the key for your OpenAI service that the app will use to connect and authenticate. By default, the app template searches for this value in the project's local .NET user secrets.
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
@@ -201,15 +203,17 @@ var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-smal
 
 1. By default, the app template assumes the use of certain AI models. If necessary, update the model name parameters to match your the models you want to target:
 
-```csharp
-// Update these parameter values to match your preferred OpenAI models
-var chatClient = openAIClient.AsChatClient("gpt-4o-mini");
-var embeddingGenerator = openAIClient.AsEmbeddingGenerator("text-embedding-3-small");
-```
+    ```csharp
+    // Update these parameter values to match your preferred OpenAI models
+    var chatClient = openAIClient.AsChatClient("gpt-4o-mini");
+    var embeddingGenerator = openAIClient.AsEmbeddingGenerator("text-embedding-3-small");
+    ```
 
 :::zone-end
 
 :::zone target="docs" pivot="ollama"
+
+The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you should verify that certain configurations match your needs before you run the app.
 
 1. In a local terminal window, make sure Ollama is running on your computer using the `ollama serve` command:
 

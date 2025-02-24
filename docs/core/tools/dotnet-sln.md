@@ -59,6 +59,13 @@ dotnet new sln --output MySolution
 
 ## Commands
 
+The following commands are available:
+
+- [`list`](#list)
+- [`add`](#add)
+- [`remove`](#remove)
+- [`migrate`](#migrate)
+
 ### `list`
 
 Lists all projects in a solution file.

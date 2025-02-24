@@ -27,19 +27,19 @@ The `dotnet sln` command provides a convenient way to list and modify projects i
 
 To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command with the `sln` template name.
 
-The following example creates a *.sln* file in the current folder, with the same name as the folder:
+The following example creates a *.slnx* file in the current folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln
 ```
 
-The following example creates a *.sln* file in the current folder, with the specified file name:
+The following example creates a *.slnx* file in the current folder, with the specified file name:
 
 ```dotnetcli
 dotnet new sln --name MySolution
 ```
 
-The following example creates a *.sln* file in the specified folder, with the same name as the folder:
+The following example creates a *.slnx* file in the specified folder, with the same name as the folder:
 
 ```dotnetcli
 dotnet new sln --output MySolution
@@ -49,7 +49,9 @@ dotnet new sln --output MySolution
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use (either an *.sln* or *.slnx* file). If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+  The solution file to use (either an *.sln* or *.slnx* file).
+
+  If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
 
 ## Options
 
@@ -71,7 +73,9 @@ dotnet sln list [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use (either an *.sln* or *.slnx* file). If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+  The solution file to use (either an *.sln* or *.slnx* file).
+
+  If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
 
 #### Options
 
@@ -92,7 +96,9 @@ dotnet sln add [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use (either an *.sln* or *.slnx* file). If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+  The solution file to use (either an *.sln* or *.slnx* file).
+
+  If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
 
 - **`PROJECT_PATH`**
 
@@ -135,7 +141,9 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use (either an *.sln* or *.slnx* file). If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+  The solution file to use (either an *.sln* or *.slnx* file).
+
+  If unspecified, the command searches the current directory for an *.sln* or *.slnx* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
 
 - **`PROJECT_PATH`**
 
@@ -160,7 +168,11 @@ dotnet sln [<SOLUTION_FILE>] migrate [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The *.sln* solution file to migrate. If unspecified, the command searches the current directory for an *.sln* file and, if it finds exactly one, uses that file. If multiple *.sln* files are found, the user is prompted to specify a file explicitly. If none are found, if you specify an *.slnx* file instead of an *.sln* file, or if an *.slnx* file with the same file name (minus the *.sln* extension) already exists in the directory, the command fails.
+  The *.sln* solution file to migrate.
+
+  If unspecified, the command searches the current directory for an *.sln* file and, if it finds exactly one, uses that file. If multiple *.sln* files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+
+  If you specify an *.slnx* file instead of an *.sln* file, or if an *.slnx* file with the same file name (minus the *.sln* extension) already exists in the directory, the command fails.
 
 #### Options
 

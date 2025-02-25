@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/44998
 
 # MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
 
-The `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable, which previously allowed processing of custom build events, is no longer supported.
+The `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable, which previously allowed custom build events derived from <xref:Microsoft.Build.Framework.BuildEventArgs>, is no longer supported.
 
 ## Version introduced
 
@@ -28,7 +28,7 @@ This is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The escape hatch mechanism provided by the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable was temporary as described in the [original change](../8.0/custombuildeventargs.md).
+The escape hatch mechanism provided by the `MSBUILDCUSTOMBUILDEVENTWARNING` environment variable was a temporary workaround. For more information, see the [original breaking change](../8.0/custombuildeventargs.md).
 
 ## Recommended action
 

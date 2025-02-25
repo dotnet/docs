@@ -94,12 +94,12 @@ After you have installed the new AI app templates, the template is available thr
 # [Visual Studio](#tab/visual-studio)
 
 1. Inside Visual Studio, navigate to **File > New > Project**.
-1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
+1. On the **Create a new project** screen, search for **AI Chat Web App**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.
     - For the **AI service provider** option, select **OpenAI**.
-    - For the **Vector store** option, select **Local on-disc (for prototyping)**.
+    - For the **Vector store** option, select **Local on-disk (for prototyping)**.
 1. Select **Create** to complete the process.
 
 # [.NET CLI](#tab/dotnet-cli)
@@ -108,7 +108,7 @@ After you have installed the new AI app templates, the template is available thr
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new chat --framework "net9.0" --AiServiceProvider "openai" --VectorStore "local"
+    dotnet new aichatweb --framework "net9.0" --AIServiceProvider "openai" --VectorStore "local"
     ```
 
     The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
@@ -133,7 +133,7 @@ After you have installed the new AI app templates, the template is available thr
 1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.
     - For the **AI service provider** option, select **Ollama**.
-    - For the **Vector store** option, select **Local on-disc (for prototyping)**.
+    - For the **Vector store** option, select **Local on-disk (for prototyping)**.
 1. Select **Create** to complete the process.
 
 # [.NET CLI](#tab/dotnet-cli)
@@ -142,7 +142,7 @@ After you have installed the new AI app templates, the template is available thr
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new chat --framework "net9.0" --AiServiceProvider "ollama" --VectorStore "local"
+    dotnet new aichatweb --framework "net9.0" --AIServiceProvider "ollama" --VectorStore "local"
     ```
 
     The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
@@ -173,7 +173,7 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 
 :::zone target="docs" pivot="azure-openai"
 
-The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
@@ -193,7 +193,7 @@ The **AI Chat with Custom Data** app is almost ready to go as soon as it's creat
 
 :::zone target="docs" pivot="openai"
 
-The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you'll need to provide the key for your OpenAI service that the app will use to connect and authenticate. By default, the app template searches for this value in the project's local .NET user secrets.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the key for your OpenAI service that the app will use to connect and authenticate. By default, the app template searches for this value in the project's local .NET user secrets.
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
@@ -213,7 +213,7 @@ The **AI Chat with Custom Data** app is almost ready to go as soon as it's creat
 
 :::zone target="docs" pivot="ollama"
 
-The **AI Chat with Custom Data** app is almost ready to go as soon as it's created. However, you should verify that certain configurations match your needs before you run the app.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you should verify that certain configurations match your needs before you run the app.
 
 1. In a local terminal window, make sure Ollama is running on your computer using the `ollama serve` command:
 

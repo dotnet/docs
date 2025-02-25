@@ -4,10 +4,9 @@ using System.Text.Json.Serialization;
 
 public static class Snippets
 {
-/*
     public static void NumericOrdering()
     {
-        #region snippet1
+        #region snippet_numericOrdering
         StringComparer numericStringComparer = StringComparer.Create(CultureInfo.CurrentCulture, CompareOptions.NumericOrdering);
 
         Console.WriteLine(numericStringComparer.Equals("02", "2"));
@@ -31,7 +30,7 @@ public static class Snippets
 
     public static void IncrementValue(OrderedDictionary<string, int> orderedDictionary, string key)
     {
-        #region snippet2
+        #region snippet_getAtSetAt
         // Try to add a new key with value 1.
         if (!orderedDictionary.TryAdd(key, 1, out int index))
         {
@@ -41,14 +40,12 @@ public static class Snippets
         }
         #endregion
     }
-*/
 }
 
 
 public partial class SomeClass
 {
-    /*
-    #region snippet3
+    #region snippet_selfReference
     public static void MakeSelfRef()
     {
         SelfReference selfRef = new SelfReference();
@@ -69,6 +66,5 @@ public partial class SomeClass
         public SelfReference Me { get; set; } = null!;
     }
     #endregion
-    */
 }
 

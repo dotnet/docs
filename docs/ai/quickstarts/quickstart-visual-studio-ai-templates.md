@@ -128,7 +128,7 @@ After you have installed the new AI app templates, the template is available thr
 # [Visual Studio](#tab/visual-studio)
 
 1. Inside Visual Studio, navigate to **File > New > Project**.
-1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
+1. On the **Create a new project** screen, search for **AI Chat Web App**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.

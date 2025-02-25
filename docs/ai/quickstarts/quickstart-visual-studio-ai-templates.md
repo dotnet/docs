@@ -44,7 +44,7 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 
 ## Install the .NET AI app template
 
-The **AI Chat with Custom Data** template is available as a template package through NuGet. Use the [`dotnet new`](../../core/tools/dotnet-new-install.md) command to install the package:
+The **AI Chat Web App** template is available as a template package through NuGet. Use the [`dotnet new`](../../core/tools/dotnet-new-install.md) command to install the package:
 
 ```dotnetcli
 dotnet new --install Microsoft.Extensions.AI.Templates

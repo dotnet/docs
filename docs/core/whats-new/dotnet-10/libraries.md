@@ -139,6 +139,6 @@ When using source generators for JSON serialization, the generated context will 
 public partial struct Matrix4x4
 {
    public static Matrix4x4 CreateBillboardLeftHanded(Vector3 objectPosition, Vector3 cameraPosition, Vector3 cameraUpVector, Vector3 cameraForwardVector)
-## More left-handed matrix transformation methods
+   public static Matrix4x4 CreateConstrainedBillboardLeftHanded(Vector3 objectPosition, Vector3 cameraPosition, Vector3 rotateAxis, Vector3 cameraForwardVector, Vector3 objectForwardVector)
 }
 ```

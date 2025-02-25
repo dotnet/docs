@@ -5,7 +5,7 @@ ms.date: 02/24/2025
 ai-usage: ai-assisted
 ---
 
-# Ambiguous overload resolution affecting StringValues intrinsic operators
+# Ambiguous overload resolution affecting StringValues implicit operators
 
 In .NET 9, a breaking change in the [`params Span<T>` lang feature](../../../whats-new/dotnet-9/libraries.md#params-readonlyspant-overloads) creates ambiguity with the implicit operators of <xref:Microsoft.Extensions.Primitives.StringValues>. This change results in the compiler throwing error `CS0121` when it encounters ambiguous method calls.
 

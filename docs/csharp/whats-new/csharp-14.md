@@ -50,7 +50,7 @@ public string Message
     get;
     set
     {
-        field = (value is not null) ? value : throw new NullArgumentException(nameof(value));
+        field = value ?? throw new ArgumentNullException(nameof(value));
     }
 }
 ```

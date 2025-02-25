@@ -22,6 +22,8 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: System.Linq.AsyncEnumerable included in core libraries
+                href: core-libraries/10.0/asyncenumerable.md         
           - name: Cryptography
             items:
               - name: X500DistinguishedName validation is stricter
@@ -32,6 +34,10 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: SDK and MSBuild
+            items:
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
           - name: Windows Forms
             items:
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
@@ -1352,6 +1358,8 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: System.Linq.AsyncEnumerable included in core libraries
+                href: core-libraries/10.0/asyncenumerable.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -1868,6 +1876,10 @@ items:
                 href: reflection/8.0/function-pointer-reflection.md
       - name: SDK and MSBuild
         items:
+          - name: .NET 10
+            items:
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
           - name: .NET 9
             items:
               - name: "`dotnet restore` audits transitive packages"

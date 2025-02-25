@@ -34,6 +34,10 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: SDK and MSBuild
+            items:
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
           - name: Windows Forms
             items:
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
@@ -1872,6 +1876,10 @@ items:
                 href: reflection/8.0/function-pointer-reflection.md
       - name: SDK and MSBuild
         items:
+          - name: .NET 10
+            items:
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
           - name: .NET 9
             items:
               - name: "`dotnet restore` audits transitive packages"

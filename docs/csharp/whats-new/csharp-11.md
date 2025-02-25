@@ -45,7 +45,7 @@ public class TypeAttribute : Attribute
 }
 ```
 
-And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator:
+And to apply the attribute, you use the [`typeof`](../language-reference/operators/type-testing-and-cast.md#the-typeof-operator) operator:
 
 ```csharp
 [TypeAttribute(typeof(string))]
@@ -77,7 +77,7 @@ public class GenericType<T>
 }
 ```
 
-The type arguments must satisfy the same restrictions as the [`typeof`](../language-reference/operators/type-testing-and-cast.md#typeof-operator) operator. Types that require metadata annotations aren't allowed. For example, the following types aren't allowed as the type parameter:
+The type arguments must satisfy the same restrictions as the [`typeof`](../language-reference/operators/type-testing-and-cast.md#the-typeof-operator) operator. Types that require metadata annotations aren't allowed. For example, the following types aren't allowed as the type parameter:
 
 - `dynamic`
 - `string?` (or any nullable reference type)

@@ -26,15 +26,15 @@ ms.author: ygerges
 
 ## Cause
 
-The use of <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync*?displayProperty=nameWithType>, which are no longer recommended.
+The use of `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync`, which are no longer recommended.
 
 ## Rule description
 
-<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException*?displayProperty=nameWithType> and <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExceptionAsync*?displayProperty=nameWithType> are not recommended and might be deprecated in the future.
+The `Assert.ThrowsException` and `Assert.ThrowsExceptionAsync` methods aren't recommended and might be deprecated in the future.
 
 ## How to fix violations
 
-Use `Assert.ThrowsExactly` or `Assert.ThrowsExactlyAsync` instead of `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync`.
+Use <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactly*?displayProperty=nameWithType> or <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsExactlyAsync*?displayProperty=nameWithType> instead of `Assert.ThrowsException` or `Assert.ThrowsExceptionAsync`.
 
 ## When to suppress warnings
 

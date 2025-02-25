@@ -93,7 +93,7 @@ Changes in Windows Forms for .NET 10 include:
 - Obsoleted Clipboard APIs.
 - New Clipboard-related APIs.
 
-For more information, see [What's new in Windows Forms for .NET 10](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/winforms.md).
+For more information, see [What's new in Windows Forms for .NET 10](/dotnet/desktop/winforms/whats-new/net100).
 
 ## See also
 

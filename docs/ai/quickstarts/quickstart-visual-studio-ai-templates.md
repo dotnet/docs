@@ -44,10 +44,10 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 
 ## Install the .NET AI app template
 
-The **AI Chat with Custom Data** template is available as a template package through NuGet. Use the `dotnet new` command to install  the package:
+The **AI Chat with Custom Data** template is available as a template package through NuGet. Use the [`dotnet new`](../../core/tools/dotnet-new-install.md) command to install the package:
 
 ```dotnetcli
-dotnet new --install AIChatCustomData
+dotnet new --install Microsoft.Extensions.AI.Templates
 ```
 
 ## Create the .NET AI app
@@ -58,8 +58,8 @@ After you have installed the new AI app templates, the template is available thr
 
 # [Visual Studio](#tab/visual-studio)
 
-1. Inside Visual Studio, navigate to **File -> New -> Project**.
-1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
+1. Inside Visual Studio, navigate to **File > New > Project**.
+1. On the **Create a new project** screen, search for **AI Chat Web App**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.
@@ -74,10 +74,10 @@ After you have installed the new AI app templates, the template is available thr
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new chat --framework "net9.0" --AiServiceProvider "azureopenai" --VectorStore "local"
+    dotnet new aichatweb --framework "net9.0" --AIServiceProvider "azureopenai" --VectorStore "local"
     ```
 
-    The .NET CLI creates a new .NET 9.0 app with the configurations your specified.
+    The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
 
@@ -93,7 +93,7 @@ After you have installed the new AI app templates, the template is available thr
 
 # [Visual Studio](#tab/visual-studio)
 
-1. Inside Visual Studio, navigate to **File -> New -> Project**.
+1. Inside Visual Studio, navigate to **File > New > Project**.
 1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
@@ -111,7 +111,7 @@ After you have installed the new AI app templates, the template is available thr
     dotnet new chat --framework "net9.0" --AiServiceProvider "openai" --VectorStore "local"
     ```
 
-    The .NET CLI creates a new .NET 9.0 app with the configurations your specified.
+    The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
 
@@ -127,7 +127,7 @@ After you have installed the new AI app templates, the template is available thr
 
 # [Visual Studio](#tab/visual-studio)
 
-1. Inside Visual Studio, navigate to **File -> New -> Project**.
+1. Inside Visual Studio, navigate to **File > New > Project**.
 1. On the **Create a new project** screen, search for **AI Chat with Custom Data**. Select the matching result and then choose **Next**.
 1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
 1. On the **Additional information** screen:
@@ -145,7 +145,7 @@ After you have installed the new AI app templates, the template is available thr
     dotnet new chat --framework "net9.0" --AiServiceProvider "ollama" --VectorStore "local"
     ```
 
-    The .NET CLI creates a new .NET 9.0 app with the configurations your specified.
+    The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
 
@@ -164,7 +164,7 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 - Includes essential `Microsoft.Extensions.AI` packages and other dependencies in the `csproj` file to help you get started working with AI.
 - Creates various AI services and registers them for dependency injection in the `Program.cs` file:
   - An `IChatClient` service to chat back and forth with the generative AI model
-  - An `IEmbeddingGenerator` service that is used to generate embeddings, which are essential for vector search functionality
+  - An `IEmbeddingGenerator` service that's used to generate embeddings, which are essential for vector search functionality
   - A `JsonVectorStore` to act as an in-memory vector store
 - Registers a SQLite database context service to handle ingesting documents. The app is preconfigured to ingest whatever documents you add to the `Data` folder of the project, including the provided `Example.pdf` file.
 - Provides a complete chat UI using Blazor components. The UI handles rich formatting for the AI responses and provides features such as citations for response data.

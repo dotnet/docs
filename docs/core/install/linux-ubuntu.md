@@ -139,7 +139,7 @@ Canonical supports .NET versions in the built-in Ubuntu feed for the lifetime of
 
 ## Ubuntu .NET backports package repository
 
-The Ubuntu .NET backports package repository provides versions of .NET, which are not available in the built-in Ubuntu feed. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available in the package feed. Canonical maintains the packages contained in this package repository and provides best-effort support, which does not extend beyond the Microsoft-provided support lifetime or the support period of the particular Ubuntu version.
+The Ubuntu .NET backports package repository provides versions of .NET that aren't available in the built-in Ubuntu feed. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available in the package feed. Canonical maintains the packages contained in this package repository and provides best-effort support, which does not extend beyond the Microsoft-provided support lifetime or the support period of the particular Ubuntu version.
 
 See the [web-view of the Ubuntu .NET backports package repository](https://launchpad.net/~dotnet/+archive/ubuntu/backports) for more details.
 

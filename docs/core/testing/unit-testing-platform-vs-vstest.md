@@ -123,8 +123,8 @@ When using Azure DevOps tasks, you might need to update your pipeline to use the
 
 #### VSTest task
 
-If you are using the [VSTest task](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/vstest-v3) in Azure DevOps, you can replace it with the [.NET Core task](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
+If you're using the [VSTest task](/azure/devops/pipelines/tasks/reference/vstest-v3) in Azure DevOps, you can replace it with the [.NET Core task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2).
 
 #### .NET Core task
 
-If you are using the [.NET Core task](https://learn.microsoft.com/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2), no changes are needed.
+If you're using the [.NET Core task](/azure/devops/pipelines/tasks/reference/dotnet-core-cli-v2), no changes are needed.

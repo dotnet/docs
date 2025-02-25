@@ -236,7 +236,7 @@ The `?` is a hint to the compiler on the expectation for null values.
 The `!` annotation on an expression indicates that you know the expression is safe and should be assumed to be not null.
 
 - You must use these annotations, not the <xref:System.Runtime.CompilerServices.NullableAttribute?displayProperty=nameWithType> in your code.
-- Because the `?` is an annotation, not a type, you can't use it with [`typeof`](../operators/type-testing-and-cast.md#typeof-operator), or [`new`](../operators/new-operator.md) expressions.
+- Because the `?` is an annotation, not a type, you can't use it with [`typeof`](../operators/type-testing-and-cast.md#the-typeof-operator), or [`new`](../operators/new-operator.md) expressions.
 - The `!` operator can't be applied to a variable expression or a method group.
 - The `!` operator can't be applied to the left of a member access operator, such as `obj.Field!.Method()`.
 

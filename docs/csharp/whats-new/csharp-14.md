@@ -34,11 +34,7 @@ private string _msg;
 public string Message
 {
     get => _msg;
-    set
-    {
-        if (value is null) throw new NullArgumentException(nameof(value));
-        _msg = value;
-    }
+    set => _msg = value ?? throw new NullArgumentException(nameof(value));
 }
 ```
 
@@ -48,10 +44,7 @@ You can now simplify your code to:
 public string Message
 {
     get;
-    set
-    {
-        field = value ?? throw new ArgumentNullException(nameof(value));
-    }
+    set => field = value ?? throw new ArgumentNullException(nameof(value));
 }
 ```
 

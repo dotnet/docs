@@ -15,7 +15,7 @@ This article describes new features in the .NET libraries for .NET 10. It has be
 
 Finding certificates uniquely by thumbprint is a fairly common operation, but the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)?displayProperty=nameWithType> method (for the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> mode) only searches for the SHA-1 Thumbprint value.
 
-Since SHA-2-256 ("SHA256") and SHA-3-256 have the same lengths, it doesn't make sense to implement the `Find` method to find any *vaguely* matching thumbprints.
+There is some risk to using the `Find` method for finding SHA-2-256 ("SHA256") and SHA-3-256 thumbprints since these hash algorithms have the same lengths.
 
 Instead, .NET 10 introduces a new method that accepts the name of the hash algorithm to use for matching.
 

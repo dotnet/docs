@@ -88,4 +88,6 @@ The `params` modifier still requires an explicitly typed parameter list.
 
 You can read more about these changes in the article on [lambda expressions](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) in the C# language reference.
 
-<!-- Add link to What's new in .NET 10 once it's published -->
+## See also
+
+- [What's new in .NET 10](../../core/whats-new/dotnet-10/overview.md)

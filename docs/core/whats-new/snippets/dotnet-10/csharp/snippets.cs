@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 
 public static class Snippets
 {
+/*
     public static void NumericOrdering()
     {
         #region snippet1
@@ -40,11 +41,13 @@ public static class Snippets
         }
         #endregion
     }
+*/
 }
 
-/*
+
 public partial class SomeClass
 {
+    /*
     #region snippet3
     public static void MakeSelfRef()
     {
@@ -66,5 +69,6 @@ public partial class SomeClass
         public SelfReference Me { get; set; } = null!;
     }
     #endregion
+    */
 }
-*/
+

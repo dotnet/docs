@@ -15,10 +15,7 @@ Learn about the new features in .NET 10 and find links to further documentation.
 
 Your feedback is important and appreciated. If you have questions or comments, please use the discussion on [GitHub](https://github.com/dotnet/core/discussions/categories/news).
 
-For more information, see [What's new in the .NET 10 runtime](runtime.md).
-
 ## .NET runtime
-
 
 The .NET 10 runtime has introduced new features and performance improvements, which have been updated for Preview 1. One of the main focuses for .NET 10 is to reduce the abstraction overhead of popular language features. In order to achieve this goal, the JIT's ability to devirtualize method calls has been expanded to cover array interface methods. This means that the JIT can now optimize code that loops over an array, even if there are virtual calls involved. Additionally, the JIT now has the ability to stack-allocate small, fixed-sized arrays of value types that do not contain GC pointers, further reducing the abstraction penalty of reference types.
 

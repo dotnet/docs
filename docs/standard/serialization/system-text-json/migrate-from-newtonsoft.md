@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 description: "Learn about the differences between Newtonsoft.Json and System.Text.Json and how to migrate to System.Text.Json."
 no-loc: [System.Text.Json, Newtonsoft.Json]
-ms.date: 08/26/2024
+ms.date: 02/11/2025
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"

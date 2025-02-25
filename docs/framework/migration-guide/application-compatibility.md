@@ -51,6 +51,6 @@ A change that has no noticeable effect on the app's developer or user. The app s
 
 ## See also
 
-- [Versions and dependencies](versions-and-dependencies.md)
+- [Versions and dependencies](../install/versions-and-dependencies.md)
 - [What's new](../whats-new/index.md)
 - [What's obsolete](../whats-new/whats-obsolete.md)

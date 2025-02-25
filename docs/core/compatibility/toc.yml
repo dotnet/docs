@@ -22,6 +22,8 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: System.Linq.AsyncEnumerable included in core libraries
+                href: core-libraries/10.0/asyncenumerable.md         
           - name: Cryptography
             items:
               - name: X500DistinguishedName validation is stricter
@@ -32,12 +34,18 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: SDK and MSBuild
+            items:
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
           - name: Windows Forms
             items:
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation
                 href: windows-forms/10.0/treeview-text-location.md
+              - name: StatusStrip uses System RenderMode by default
+                href: windows-forms/10.0/statusstrip-renderer.md
       - name: .NET 9
         items:
           - name: Overview
@@ -164,6 +172,8 @@ items:
                 href: serialization/9.0/binaryformatter-removal.md
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
+              - name: System.Text.Json metadata reader now unescapes metadata property names
+                href: serialization/9.0/json-metadata-reader.md         
           - name: Windows Forms
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -182,6 +192,8 @@ items:
                 href: windows-forms/9.0/datagridviewheadercell-nre.md
               - name: PictureBox raises HttpClient exceptions
                 href: windows-forms/9.0/httpclient-exceptions.md
+              - name: StatusStrip uses a different default renderer
+                href: windows-forms/9.0/statusstrip-renderer.md
           - name: WPF
             items:
               - name: "'GetXmlNamespaceMaps' type change"
@@ -1346,6 +1358,8 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: System.Linq.AsyncEnumerable included in core libraries
+                href: core-libraries/10.0/asyncenumerable.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -1862,6 +1876,10 @@ items:
                 href: reflection/8.0/function-pointer-reflection.md
       - name: SDK and MSBuild
         items:
+          - name: .NET 10
+            items:
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
           - name: .NET 9
             items:
               - name: "`dotnet restore` audits transitive packages"
@@ -2018,6 +2036,8 @@ items:
                 href: serialization/9.0/binaryformatter-removal.md
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
+              - name: System.Text.Json metadata reader now unescapes metadata property names
+                href: serialization/9.0/json-metadata-reader.md    
           - name: .NET 8
             items:
               - name: BinaryFormatter disabled for most projects
@@ -2096,6 +2116,8 @@ items:
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation
                 href: windows-forms/10.0/treeview-text-location.md
+              - name: StatusStrip uses System RenderMode by default
+                href: windows-forms/10.0/statusstrip-renderer.md
           - name: .NET 9
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -2115,6 +2137,7 @@ items:
               - name: PictureBox raises HttpClient exceptions
                 href: windows-forms/9.0/httpclient-exceptions.md
               - name: StatusStrip uses different default renderer
+                href: windows-forms/9.0/statusstrip-renderer.md
           - name: .NET 8
             items:
               - name: Certs checked before loading remote images in PictureBox

@@ -1,10 +1,13 @@
 ---
 ms.topic: include
-ms.date: 08/15/2024
+ms.date: 02/12/2025
 ---
-[DefaultAzureCredential](../authentication/credential-chains.md#defaultazurecredential-overview) is an opinionated, ordered sequence of mechanisms for authenticating to Microsoft Entra ID. Each authentication mechanism is a class derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class and is known as a *credential*. At runtime, `DefaultAzureCredential` attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code.
 
-To use `DefaultAzureCredential`, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
+[!INCLUDE [implement-managed-identity-concepts](implement-managed-identity-concepts.md)]
+
+### Implement the code
+
+Add the [Azure.Identity](/dotnet/api/azure.identity) package. In an ASP.NET Core project, also install the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) package:
 
 ### [Command Line](#tab/command-line)
 
@@ -17,53 +20,90 @@ dotnet add package Microsoft.Extensions.Azure
 
 ### [NuGet Package Manager](#tab/nuget-package)
 
-Right-click your project in Visual Studio's **Solution Explorer** window and select **Manage NuGet Packages**. Search for **Azure.Identity**, and install the matching package. Repeat this process for the **Microsoft.Extensions.Azure** package.
+Right-click your project in the Visual Studio **Solution Explorer** window and select **Manage NuGet Packages**. Search for **Azure.Identity**, and install the matching package. Repeat this process for the **Microsoft.Extensions.Azure** package.
 
 :::image type="content" source="../media/nuget-azure-identity.png" alt-text="Install a package using the package manager.":::
 
 ---
 
-Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered so they can be accessed via dependency injection throughout your app. In `Program.cs`, complete the following steps to register a client class and `DefaultAzureCredential`:
+Azure services are accessed using specialized client classes from the various Azure SDK client libraries. These classes and your own custom services should be registered for dependency injection so they can be used throughout your app. In `Program.cs`, complete the following steps to configure a client class for dependency injection and token-based authentication:
 
 1. Include the `Azure.Identity` and `Microsoft.Extensions.Azure` namespaces via `using` directives.
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
-1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
+1. Pass an appropriate `TokenCredential` instance to the `UseCredential` method:
+    - Use `DefaultAzureCredential` when your app is running locally
+    - Use `ManagedIdentityCredential` when your app is running in Azure and configure either the client ID, resource ID, or object ID.
 
-> [!NOTE]
-> For a user-assigned managed identity, make sure to assign the identity's `clientId` value to the `ManagedIdentityClientId` property on the `DefaultAzureCredentialOptions` object. This enables your code to discover the correct identity to use for authentication while running in azure.
+## [Client ID](#tab/client-id)
 
-For example:
+The client ID is used to identify a managed identity when configuring applications or services that need to authenticate using that identity.
 
-```c#
-using Microsoft.Extensions.Azure;
-using Azure.Identity;
+1. Retrieve the client ID assigned to a user-assigned managed identity using the following command:
 
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddBlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"));
-    clientBuilder.UseCredential(new DefaultAzureCredential(
-        new DefaultAzureCredentialOptions()
-        {
-            ManagedIdentityClientId = "<your-client-id>"
-        }));
-});
-```
+    ```azurecli
+    az identity show \
+        --resource-group <resource-group-name> \
+        --name <identity-name> \
+        --query 'clientId'
+    ```
 
-An alternative to `UseCredential` is to instantiate `DefaultAzureCredential` directly:
+1. Configure `ManagedIdentityCredential` with the client ID:
 
-```c#
-using Azure.Identity;
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
 
-builder.Services.AddSingleton<BlobServiceClient>(_ =>
-    new BlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"),
-        new DefaultAzureCredential(new DefaultAzureCredentialOptions()
-        {
-            ManagedIdentityClientId = "<your-client-id>"
-        })));
-```
+    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-When the preceding code runs on your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials. Either approach can be used to authenticate the app to Azure resources during local development.
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId":::
 
-When deployed to Azure, this same code can also authenticate your app to other Azure resources. `DefaultAzureCredential` can retrieve environment settings and managed identity configurations to authenticate to other services automatically.
+## [Resource ID](#tab/resource-id)
+
+The resource ID uniquely identifies the managed identity resource within your Azure subscription using the following structure:
+
+`/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`
+
+Resource IDs can be built by convention, which makes them more convenient when working with a large number of user-assigned managed identities in your environment.
+
+1. Retrieve the resource ID for a user-assigned managed identity using the following command:
+
+    ```azurecli
+    az identity show \
+        --resource-group <resource-group-name> \
+        --name <identity-name> \
+        --query 'id'
+    ```
+
+1. Configure `ManagedIdentityCredential` with the resource ID:
+
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId_UseCredential":::
+
+    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ResourceId":::
+
+## [Object ID](#tab/object-id)
+
+A principal ID is another name for an object ID.
+
+1. Retrieve the object ID for a user-assigned managed identity using the following command:
+
+    ```azurecli
+    az identity show \
+        --resource-group <resource-group-name> \
+        --name <identity-name> \
+        --query 'principalId'
+    ```
+
+1. Configure `ManagedIdentityCredential` with the object ID:
+
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId_UseCredential":::
+
+    An alternative to the `UseCredential` method is to provide the credential to the service client directly:
+
+    :::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ObjectId":::
+
+---
+
+The preceding code behaves differently depending on the environment where it's running:
+
+- On your local development workstation, `DefaultAzureCredential` looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials.
+- When deployed to Azure, `ManagedIdentityCredential` discovers your managed identity configurations to authenticate to other services automatically.

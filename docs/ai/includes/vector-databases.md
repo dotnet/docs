@@ -9,8 +9,8 @@ AI applications often use data vector databases and services to improve relevanc
 
 Semantic Kernel provides connectors for the following vector databases and services:
 
-| Vector service | Semantic Kernel connector | .NET SDK |
-|----------------|---------------------------|----------|
+| Vector service                | Semantic Kernel connector | .NET SDK |
+|-------------------------------|---------------------------|----------|
 | Azure AI Search               | [Microsoft.SemanticKernel.Connectors.AzureAISearch](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureAISearch)        | [Azure.Search.Documents](https://www.nuget.org/packages/Azure.Search.Documents/)        |
 | Azure Cosmos DB for NoSQL     | [Microsoft.SemanticKernel.Connectors.AzureCosmosDBNoSQL](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureCosmosDBNoSQL)        | [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/)        |
 | Azure Cosmos DB for MongoDB   | [Microsoft.SemanticKernel.Connectors.AzureCosmosDBMongoDB](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.AzureCosmosDBMongoDB)        | [MongoDb.Driver](https://www.nuget.org/packages/MongoDB.Driver)        |

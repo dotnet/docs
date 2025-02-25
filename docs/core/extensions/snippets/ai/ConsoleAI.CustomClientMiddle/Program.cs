@@ -9,4 +9,4 @@ var client = new RateLimitingChatClient(
         QueueLimit = int.MaxValue
     }));
 
-await client.CompleteAsync("What color is the sky?");
+await client.GetResponseAsync("What color is the sky?");

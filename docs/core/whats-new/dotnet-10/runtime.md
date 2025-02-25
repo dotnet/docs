@@ -12,7 +12,7 @@ This article describes new features and performance improvements in the .NET run
 
 ## Array interface method devirtualization
 
-One of the code generation team's [focus areas](https://github.com/dotnet/runtime/issues/108988) for .NET 10 is to reduce the abstraction overhead of popular language features. In pursuit of this goal, the JIT's ability to devirtualize method calls has been expanded to cover array interface methods.
+One of the [focus areas](https://github.com/dotnet/runtime/issues/108988) for .NET 10 is to reduce the abstraction overhead of popular language features. In pursuit of this goal, the JIT's ability to devirtualize method calls has been expanded to cover array interface methods.
 
 Consider the typical approach of looping over an array:
 

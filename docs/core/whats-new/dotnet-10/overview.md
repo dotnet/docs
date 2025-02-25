@@ -60,7 +60,9 @@ For more information, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/
 
 ## .NET MAUI
 
-<!-- TODO - Add a brief overview of the new features in .NET MAUI for .NET 10. -->
+This release was focused on quality improvements to .NET MAUI, .NET for Android, and .NET for iOS, Mac Catalyst, macOS, and tvOS.
+
+For more information, see [What's new in .NET MAUI in .NET 10](/dotnet/maui/whats-new/dotnet-10).
 
 ## EF Core
 

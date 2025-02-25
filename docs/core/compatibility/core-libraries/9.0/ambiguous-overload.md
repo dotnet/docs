@@ -35,7 +35,7 @@ This change is a [source compatibility](../../categories.md#source-compatibility
 
 ## Recommended action
 
-Explicitly specify the method you intend to call by casting the arguments to the appropriate type or apply named parameters. 
+Explicitly specify the method you intend to call by casting the arguments to the appropriate type or apply named parameters.
 
 ## Affected APIs
 

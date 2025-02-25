@@ -192,6 +192,9 @@ This article covers the following compiler warnings:
 
 The purpose of nullable warnings is to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that might lead to null reference exceptions. You provide the compiler with information for its static analysis by applying type annotations and attributes. These annotations and attributes describe the nullability of arguments, parameters, and members of your types. In this article, you learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. Learn to work with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
 
+> [!NOTE]
+> The static analysis can't always deduce in what order, in a specific scenario, methods are accessed, and whether the method completes successfully without throwing an exception. Those known pitfalls are well described in [Known pitfalls](../../nullable-references.md#known-pitfalls) section.
+
 You address almost all warnings using one of five techniques:
 
 - Configuring the nullable context.

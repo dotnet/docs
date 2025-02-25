@@ -83,7 +83,7 @@ C# 14 introduces several new features and enhancements to improve developer prod
 - Modifiers on simple lambda parameters.
 - Experimental feature - String literals in data section.
 
-For more information, see [What's new in C# 14](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/csharp.md).
+For more information, see [What's new in C# 14](/dotnet/csharp/whats-new/csharp-14).
 
 ## Windows Forms
 

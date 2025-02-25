@@ -42,6 +42,7 @@ public static class Snippets
     }
 }
 
+/*
 public partial class SomeClass
 {
     #region snippet3
@@ -66,3 +67,4 @@ public partial class SomeClass
     }
     #endregion
 }
+*/

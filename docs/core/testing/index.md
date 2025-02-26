@@ -35,21 +35,32 @@ Keep in mind there are [best practices](unit-testing-best-practices.md) for writ
 
 ## Testing tools
 
-.NET is a multi-language development platform, and you can write various test types for [C#](../../csharp/index.yml), [F#](../../fsharp/index.yml), and [Visual Basic](../../visual-basic/index.yml). For each of these languages, you can choose between several test frameworks.
+When running tests in .NET, there are two components involved. The test platform and the test framework.
 
-### xUnit
+### Test platforms
 
-[xUnit](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, and TestDriven.NET. xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct.
+The test platform is the engine that runs the tests as well as acting as a communication channel with IDEs. For example, the IDE (e.g, Test Explorer) can send a discovery request to the test platform so that the IDE is able to show the tests you have. The test platform responds, in some way, back to the IDE with the tests it found. Similar communication happens for test execution.
+
+In .NET, VSTest has been used for many years and was the only test platform in the ecosystem. Very early in 2024, we released the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./unit-testing-platform-intro.md).
+
+### Test frameworks
+
+The test framework is built on top of the test platform. It defines the set of attributes and APIs that are available to you, as a test author, and is usually powered by a test adapter, which acts as a communication layer between the test framework and the test platform. The popular test frameworks as of today are MSTest, NUnit, TUnit, and xUnit.
+
+#### MSTest
+
+[MSTest](https://github.com/microsoft/testfx) is the Microsoft test framework for all .NET languages. It's extensible and works with .NET CLI, Visual Studio, Visual Studio Code, and Rider. It supports running with both VSTest and Microsoft.Testing.Platform.
 
 For more information, see the following resources:
 
-- [Unit testing with C#](unit-testing-with-dotnet-test.md)
-- [Unit testing with F#](unit-testing-fsharp-with-dotnet-test.md)
-- [Unit testing with Visual Basic](unit-testing-visual-basic-with-dotnet-test.md)
+- [MSTest runner overview (running MSTest with Microsoft.Testing.Platform)](unit-testing-mstest-runner-intro.md)
+- [Unit testing with C#](unit-testing-with-mstest.md)
+- [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
+- [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
 
-### NUnit
+#### NUnit
 
-[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org).
+[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org). It supports running with both VSTest and Microsoft.Testing.Platform.
 
 For more information, see the following resources:
 
@@ -57,25 +68,29 @@ For more information, see the following resources:
 - [Unit testing with F#](unit-testing-fsharp-with-nunit.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-nunit.md)
 
-### MSTest
+#### TUnit
 
-[MSTest](https://github.com/microsoft/testfx) is the Microsoft test framework for all .NET languages. It's extensible and works with both .NET CLI and Visual Studio. For more information, see the following resources:
+[TUnit](https://thomhurst.github.io/TUnit/) is entirely built on top of Microsoft.Testing.Platform and doesn't support VSTest. For more information, refer to TUnit documentation.
 
-- [Unit testing with C#](unit-testing-with-mstest.md)
-- [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
-- [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
+#### xUnit
 
-#### MSTest runner
+[xUnit](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, and TestDriven.NET. xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct. It also supports running with both VSTest and Microsoft.Testing.Platform
 
-The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in continuous integration (CI) pipelines, and in Visual Studio Test Explorer. For more information, see [MSTest runner overview](unit-testing-mstest-runner-intro.md).
+For more information, see the following resources:
+
+- [Unit testing with C#](unit-testing-with-dotnet-test.md)
+- [Unit testing with F#](unit-testing-fsharp-with-dotnet-test.md)
+- [Unit testing with Visual Basic](unit-testing-visual-basic-with-dotnet-test.md)
+
+## Running tests
 
 ### .NET CLI
 
-You can run a solutions unit test from the [.NET CLI](../tools/index.md) with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes most of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
+You can run unit tests from all test projects in a solution using the [.NET CLI](../tools/index.md) with the [dotnet test](../tools/dotnet-test.md) command. The .NET CLI exposes most of the functionality that [Integrated Development Environments (IDEs)](#ide) make available through user interfaces. The .NET CLI is cross-platform and available to use as part of continuous integration and delivery pipelines. The .NET CLI is used with scripted processes to automate common tasks.
 
 ### IDE
 
-Whether you're using Visual Studio or Visual Studio Code, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example, [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
+Whether you're using Visual Studio, Visual Studio Code, or Rider, there are graphical user interfaces for testing functionality. There are more features available to IDEs than the CLI, for example, [Live Unit Testing](/visualstudio/test/live-unit-testing). For more information, see [Including and excluding tests with Visual Studio](/visualstudio/test/live-unit-testing#include-and-exclude-test-projects-and-test-methods).
 
 ## See also
 

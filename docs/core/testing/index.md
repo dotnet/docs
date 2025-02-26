@@ -39,17 +39,17 @@ When running tests in .NET, there are two components involved. The test platform
 
 ### Test platforms
 
-The test platform is the engine that runs the tests as well as acting as a communication channel with IDEs. For example, the IDE (e.g, Test Explorer) can send a discovery request to the test platform so that the IDE is able to show the tests you have. The test platform responds, in some way, back to the IDE with the tests it found. Similar communication happens for test execution.
+The test platform is the engine that runs the tests and acts as a communication channel with IDEs. For example, the IDE (e.g, Test Explorer) can send a discovery request to the test platform so that the IDE is able to show the tests you have. The test platform responds, in some way, back to the IDE with the tests it found. Similar communication happens for test execution.
 
 In .NET, VSTest has been used for many years and was the only test platform in the ecosystem. Very early in 2024, we released the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./unit-testing-platform-intro.md).
 
 ### Test frameworks
 
-The test framework is built on top of the test platform. It defines the set of attributes and APIs that are available to you, as a test author, and is usually powered by a test adapter, which acts as a communication layer between the test framework and the test platform. The popular test frameworks as of today are MSTest, NUnit, TUnit, and xUnit.
+The test framework is built on top of the test platform. It defines the set of attributes and APIs that are available to you, as a test author, and is usually powered by a test adapter, which acts as a communication layer between the test framework and the test platform. The popular test frameworks as of today are MSTest, NUnit, TUnit, and xUnit.net.
 
 #### MSTest
 
-[MSTest](https://github.com/microsoft/testfx) is the Microsoft test framework for all .NET languages. It's extensible and works with .NET CLI, Visual Studio, Visual Studio Code, and Rider. It supports running with both VSTest and Microsoft.Testing.Platform.
+[MSTest](https://github.com/microsoft/testfx) is the Microsoft test framework for all .NET languages. It's extensible and works with .NET CLI, Visual Studio, Visual Studio Code, and Rider. It supports both VSTest and Microsoft.Testing.Platform.
 
 For more information, see the following resources:
 
@@ -60,7 +60,7 @@ For more information, see the following resources:
 
 #### NUnit
 
-[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org). It supports running with both VSTest and Microsoft.Testing.Platform.
+[NUnit](https://nunit.org) is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the [.NET Foundation](https://dotnetfoundation.org). It supports both VSTest and Microsoft.Testing.Platform.
 
 For more information, see the following resources:
 
@@ -74,7 +74,7 @@ For more information, see the following resources:
 
 #### xUnit.net
 
-[xUnit](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, and TestDriven.NET. xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct. It also supports running with both VSTest and Microsoft.Testing.Platform
+[xUnit.net](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, and TestDriven.NET. xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct. It supports both VSTest and Microsoft.Testing.Platform
 
 For more information, see the following resources:
 

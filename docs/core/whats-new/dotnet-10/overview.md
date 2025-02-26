@@ -97,6 +97,6 @@ For more information, see [What's new in Windows Forms for .NET 10](/dotnet/desk
 
 ## See also
 
-- [.NET 10 Preview 1 container image updates](https://github.com/dotnet/core/blob/master/release-notes/10.0/preview/preview1/containers.md)
-- [F# updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/10.0/preview/preview1/fsharp.md)
-- [Visual Basic updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/master/release-notes/10.0/preview/preview1/visualbasic.md)
+- [.NET 10 Preview 1 container image updates](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview1/containers.md)
+- [F# updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview1/fsharp.md)
+- [Visual Basic updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview1/visualbasic.md)

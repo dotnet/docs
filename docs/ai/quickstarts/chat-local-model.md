@@ -20,7 +20,7 @@ In this quickstart, you learn how to create a conversational .NET console chat a
 
 ## Run the local AI model
 
-Complete the following steps to configure and run a local AI Model on your device. Many different AI models are available to run locally and are trained for different tasks, such as generating code, analyzing images, generative chat, or creating embeddings. For this quickstart, you'll use the general purpose `phi3:mini` model, which is a small but capable generative AI created by Microsoft.
+Complete the following steps to configure and run a local AI model on your device. Many different AI models are available to run locally and are trained for different tasks, such as generating code, analyzing images, generative chat, or creating embeddings. For this quickstart, you'll use the general purpose `phi3:mini` model, which is a small but capable generative AI created by Microsoft.
 
 1. Open a terminal window and verify that Ollama is available on your device:
 

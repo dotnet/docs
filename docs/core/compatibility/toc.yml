@@ -8,6 +8,10 @@ items:
         items:
           - name: Overview
             href: 10.0.md
+          - name: Containers
+            items:
+              - name: Container images no longer install zlib
+                href: containers/10.0/defaul-images-use-ubuntu.md
           - name: Core .NET libraries
             items:
               - name: API obsoletions with non-default diagnostic IDs

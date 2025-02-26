@@ -18,7 +18,7 @@ The same change will apply to `10.0` tags once the `-preview` suffix is removed.
 
 ## Version introduced
 
-.NET 10
+.NET 10 Preview 1
 
 ## Previous behavior
 

@@ -72,7 +72,7 @@ For more information, see the following resources:
 
 [TUnit](https://thomhurst.github.io/TUnit/) is entirely built on top of Microsoft.Testing.Platform and doesn't support VSTest. For more information, refer to TUnit documentation.
 
-#### xUnit
+#### xUnit.net
 
 [xUnit](https://xunit.net) is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, and TestDriven.NET. xUnit.net is a project of the [.NET Foundation](https://dotnetfoundation.org) and operates under its code of conduct. It also supports running with both VSTest and Microsoft.Testing.Platform
 

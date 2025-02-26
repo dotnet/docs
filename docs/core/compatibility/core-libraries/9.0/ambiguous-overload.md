@@ -15,7 +15,7 @@ The APIs mentioned in the [Affected APIs](#affected-apis) section previously had
 
 ## New behavior
 
-The compiler throws error `CS0121` for ambiguous overloads. The same code will now result in the following error:
+The compiler throws error `CS0121` when encountering these ambiguous overloads, resulting in the following error:
 
 ```output
 CS0121: The call is ambiguous between the following methods or properties: 'Program.Join(string, params string[])' and 'Program.Join(string, params ReadOnlySpan<string>)'

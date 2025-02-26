@@ -19,8 +19,6 @@ This article describes how .NET is available on various Linux distributions. .NE
 
 ## Packages
 
-Starting with .NET 9, Microsoft only publishes packages for supported Linux distributions that don't publish their own packages.
-
 Packages are available for the following Linux distributions:
 
 - Azure Linux
@@ -28,7 +26,7 @@ Packages are available for the following Linux distributions:
 - [openSUSE Leap](linux-opensuse.md)
 - [SUSE Enterprise Linux](linux-sles.md)
 
-Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>.
+Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>. Distributions are selected per the policy defined at [dotnet/core #9556](https://github.com/dotnet/core/discussions/9556).
 
 The following Linux distributions publish their own .NET packages:
 

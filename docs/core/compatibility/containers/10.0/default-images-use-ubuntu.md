@@ -1,10 +1,10 @@
 ---
 title: "Default .NET container tags now use Ubuntu"
-description: Learn about the breaking change where the default .NET container tags, like `10.0`, are now using Ubuntu.
+description: Learn about the breaking change where the default .NET container tags, like `10.0`, use Ubuntu.
 ms.date: 2/26/2025
 ---
 
-# Default .NET images now using Ubuntu
+# Default .NET images use Ubuntu
 
 The default Linux distro for .NET tags has been changed from Debian to Ubuntu. This applies to all .NET tags that do not explicitly specify an OS.
 
@@ -22,11 +22,11 @@ The same change will apply to `10.0` tags once the `-preview` suffix is removed.
 
 ## Previous behavior
 
-.NET 9 and earlier use Debian for the default tags.
+.NET 9 and earlier default tags reference images based on Debian.
 
 ## New behavior
 
-Default images are based on Ubuntu.
+Default tags reference images based on Ubuntu.
 
 ## Type of breaking change
 
@@ -39,6 +39,8 @@ Debian and .NET release cycles (for mainline support) are the same length, while
 ## Recommended action
 
 Test your application. This change is unlikely to affect users.
+
+If you prefer Debian or have a dependency on it, use a Debian specific tag, such as `10.0-preview-trixie-slim`.
 
 ## Affected APIs
 

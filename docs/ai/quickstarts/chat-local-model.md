@@ -54,7 +54,7 @@ Complete the following steps to configure and run a local AI model on your devic
 
 ## Create the .NET app
 
-Complete the following steps to create a .NET console app that will connect to your local `phi3:mini` AI model:
+Complete the following steps to create a .NET console app that connects to your local `phi3:mini` AI model.
 
 1. In a terminal window, navigate to an empty directory on your device and create a new app with the `dotnet new` command:
 

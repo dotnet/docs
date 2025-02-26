@@ -6,7 +6,7 @@ ms.author: jajares
 ms.date: 12/15/2023
 ---
 
-# MSTest runner overview
+# Microsoft.Testing.Platform support in MSTest (aka MSTest runner)
 
 MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (MTP)](./unit-testing-platform-intro.md). The support for MTP is powered by the MSTest runner which can run tests in all contexts (for example, continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Text Explorer). The MSTest runner is embedded directly in your MSTest test projects, and there are no other app dependencies, such as `vstest.console` or `dotnet test`, needed to run your tests. However, you can still run your tests using `dotnet test`.
 

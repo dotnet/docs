@@ -34,7 +34,7 @@ private string _msg;
 public string Message
 {
     get => _msg;
-    set => _msg = value ?? throw new NullArgumentException(nameof(value));
+    set => _msg = value ?? throw new ArgumentNullException(nameof(value));
 }
 ```
 

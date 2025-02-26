@@ -17,7 +17,7 @@ The NUnit runner is open source, and builds on top of [`Microsoft.Testing.Platfo
 You can enable NUnit runner by adding the `EnableNUnitRunner` property and setting `OutputType` to `Exe` in your project file. You also need to ensure that you're using `NUnit3TestAdapter` version 5.0 or newer.
 
 > [!TIP]
-> We do recommend you set `EnableNUnitRunner` property in `Directory.Build.props` rather than individual project files. This ensures that it applies to all your projects.
+> It's advised to set the `EnableNUnitRunner` and `TestingPlatformDotnetTestSupport` properties in *Directory.Build.props* file instead of individual project files to ensure all test projects in your solution are using the NUnit runner.
 
 Consider the following example project file:
 

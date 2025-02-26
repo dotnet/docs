@@ -83,7 +83,7 @@ Consider the following example project file:
 ```
 
 > [!TIP]
-> It's advised to set the `EnableMSTestRunner` and `TestingPlatformDotnetTestSupport` properties in *Directory.Build.props* file instead of *csproj* file to ensure all test projects in your solution are using the MSTest runner.
+> It's advised to set the `EnableMSTestRunner` and `TestingPlatformDotnetTestSupport` properties in *Directory.Build.props* file instead of individual project files to ensure all test projects in your solution are using the MSTest runner.
 
 ## Configurations and filters
 

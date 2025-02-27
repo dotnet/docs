@@ -99,5 +99,5 @@ For an end-to-end sample using `Microsoft.Extensions.AI`, see [eShopSupport](htt
 
 ## Next steps
 
-- [Build an AI chat app with .NET](./quickstarts/get-started-openai.md)
-- [Quickstart - Summarize text using Azure AI chat app with .NET](./quickstarts/quickstart-openai-summarize-text.md)
+- [Build an AI chat app with .NET](/dotnet/ai/quickstarts/build-chat-app)
+- [Quickstart - Summarize text using Azure AI chat app with .NET](/dotnet/ai/quickstarts/prompt-model)

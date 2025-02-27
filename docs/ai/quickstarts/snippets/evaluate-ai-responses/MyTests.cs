@@ -27,7 +27,8 @@ public sealed class MyTests
     [ClassInitialize]
     public static async Task InitializeAsync(TestContext _)
     {
-        /// Set up the <see cref="ChatConfiguration"/>, which includes the <see cref="IChatClient"/> that the
+        /// Set up the <see cref="ChatConfiguration"/>,
+        // which includes the <see cref="IChatClient"/> that the
         /// evaluator uses to communicate with the model.
         s_chatConfiguration = GetOllamaChatConfiguration();
 
@@ -38,7 +39,8 @@ public sealed class MyTests
                 ResponseFormat = ChatResponseFormat.Text
             };
 
-        /// Fetch the response to be evaluated and store it in a static variable.
+        /// Fetch the response to be evaluated
+        // and store it in a static variable.
         ChatResponse response = await s_chatConfiguration.ChatClient.GetResponseAsync(s_messages, chatOptions);
         s_response = response.Message;
     }
@@ -70,11 +72,13 @@ public sealed class MyTests
         /// Retrieve the score for coherence from the <see cref="EvaluationResult"/>.
         NumericMetric coherence = result.Get<NumericMetric>(CoherenceEvaluator.CoherenceMetricName);
 
-        /// Validate the default interpretation for the returned coherence metric.
+        /// Validate the default interpretation
+        // for the returned coherence metric.
         Assert.IsFalse(coherence.Interpretation!.Failed);
         Assert.IsTrue(coherence.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
 
-        // Validate that no diagnostics are present on the returned coherence metric.
+        // Validate that no diagnostics are present
+        // on the returned coherence metric.
         Assert.IsFalse(coherence.ContainsDiagnostics());
     }
     // </SnippetTestCoherence>

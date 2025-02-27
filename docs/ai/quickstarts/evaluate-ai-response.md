@@ -8,7 +8,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Evaluate a model's response
 
-In this quickstart, you create an MSTest app to evaluate the chat response of a model. The test app uses the [Microsoft.Extensions.AI.Evaluations](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluations) libraries.
+In this quickstart, you create an MSTest app to evaluate the chat response of a model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
 
 ## Prerequisites
 
@@ -77,12 +77,12 @@ Complete the following steps to create an MSTest project that connects to your l
 
 ## Add the test app code
 
-1. Rename the file *Test1.cs* to *MyTests.cs* and then open the file.
-1. Add the private <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> and chat message and response members to the class. The `s_messages` field is a list that contains two <xref:Microsoft.Extensions.AI.ChatMessage> objects&mdash;one instructs the behavior of the chat bot, and the other is the question from the user.
+1. Rename the file *Test1.cs* to *MyTests.cs*, and then open the file and rename the class to `MyTests`.
+1. Add the private <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> and chat message and response members to the `MyTests` class. The `s_messages` field is a list that contains two <xref:Microsoft.Extensions.AI.ChatMessage> objects&mdash;one instructs the behavior of the chat bot, and the other is the question from the user.
 
    :::code language="csharp" source="./snippets/evaluate-ai-responses/MyTests.cs" id="PrivateMembers":::
 
-1. Add the `InitializeAsync` method.
+1. Add the `InitializeAsync` method to the `MyTests` class.
 
    :::code language="csharp" source="./snippets/evaluate-ai-responses/MyTests.cs" id="Initialize":::
 
@@ -90,13 +90,13 @@ Complete the following steps to create an MSTest project that connects to your l
 
    - Sets up the <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration>.
    - Sets the <xref:Microsoft.Extensions.AI.ChatOptions>, including the <xref:Microsoft.Extensions.AI.ChatOptions.Temperature> and the <xref:Microsoft.Extensions.AI.ChatOptions.ResponseFormat>.
-   - Fetches the response to be evaluated and stores it in a static variable.
+   - Fetches the response to be evaluated by calling <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync(System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)>, and stores it in a static variable.
 
 1. Add the `GetOllamaChatConfiguration` method, which creates the <xref:Microsoft.Extensions.AI.IChatClient> that the evaluator uses to communicate with the model.
 
    :::code language="csharp" source="./snippets/evaluate-ai-responses/MyTests.cs" id="GetChatConfig":::
 
-1. Add a test method to evaluate an AI response.
+1. Add a test method to evaluate the model's response.
 
    :::code language="csharp" source="./snippets/evaluate-ai-responses/MyTests.cs" id="TestCoherence":::
 

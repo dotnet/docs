@@ -11,7 +11,7 @@ ai-usage: ai-assisted
 
 Learn about the new features in .NET 10 and find links to further documentation. This page has been updated for Preview 1.
 
-.NET 10, the successor to [.NET 9](../dotnet-9/overview.md) and will be [supported for 3 years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
+.NET 10, the successor to [.NET 9](../dotnet-9/overview.md), will be [supported for 3 years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 
 Your feedback is important and appreciated. If you have questions or comments, please use the discussion on [GitHub](https://github.com/dotnet/core/discussions/categories/news).
 
@@ -43,7 +43,7 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 .NET Aspire releases version 9.1, which focuses on quality-of-life fixes.
 
-For more information, see [.NET Aspire — what's new?](/dotnet/aspire/whats-new/).
+For more information, see [What's new in .NET Aspire 9.1](/dotnet/aspire/whats-new/dotnet-aspire-9.1).
 
 ## ASP.NET Core
 

@@ -17,7 +17,7 @@ Some examples of the `dotnet.config` file:
 
   ```toml
   [dotnet.test:runner]
-  name = "MicrosoftTestingPlatform"
+  name = "Microsoft.Testing.Platform"
   ```
 
   ```toml

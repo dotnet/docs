@@ -30,7 +30,7 @@ You can specify a `char` value with:
 - a Unicode escape sequence, which is `\u` followed by the four-symbol hexadecimal representation of a character code.
 - a hexadecimal escape sequence, which is `\x` followed by the hexadecimal representation of a character code.
 
-:::code language="csharp" interactive=try-dotnet-method" source="snippets/shared/CharType.cs" id="Literals":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/shared/CharType.cs" id="Literals":::
 
 As the preceding example shows, you can also cast the value of a character code into the corresponding `char` value.
 

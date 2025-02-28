@@ -1,5 +1,5 @@
 ---
-title: Microsoft.Testing.Platform support in NUnit (aka NUnit runner)
+title: Microsoft.Testing.Platform support in NUnit (NUnit runner)
 description: Learn about the NUnit runner, a lightweight way to run tests without depending on the .NET SDK.
 author: Evangelink
 ms.author: amauryleve

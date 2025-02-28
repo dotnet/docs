@@ -1,5 +1,5 @@
 ---
-title: Microsoft.Testing.Platform support in MSTest (aka MSTest runner)
+title: Microsoft.Testing.Platform support in MSTest (MSTest runner)
 description: Learn about the MSTest runner, a lightweight way to run tests without depending on the .NET SDK.
 author: nohwnd
 ms.author: jajares

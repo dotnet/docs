@@ -35,17 +35,17 @@ Keep in mind there are [best practices](unit-testing-best-practices.md) for writ
 
 ## Testing tools
 
-When running tests in .NET, there are two components involved. The test platform and the test framework.
+When running tests in .NET, there are two components involved: the test platform and the test framework.
 
 ### Test platforms
 
 The test platform is the engine that runs the tests and acts as a communication channel with IDEs. For example, the IDE (e.g, Test Explorer) can send a discovery request to the test platform so that the IDE is able to show the tests you have. The test platform responds, in some way, back to the IDE with the tests it found. Similar communication happens for test execution.
 
-In .NET, VSTest has been used for many years and was the only test platform in the ecosystem. Very early in 2024, we released the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./unit-testing-platform-intro.md).
+VSTest has been used for many years in .NET and was the only test platform in the ecosystem. Early in 2024, the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./unit-testing-platform-intro.md), was released.
 
 ### Test frameworks
 
-The test framework is built on top of the test platform. It defines the set of attributes and APIs that are available to you, as a test author, and is usually powered by a test adapter, which acts as a communication layer between the test framework and the test platform. The popular test frameworks as of today are MSTest, NUnit, TUnit, and xUnit.net.
+The test framework is built on top of the test platform. It defines the set of attributes and APIs that are available to you, as a test author. It's usually powered by a test adapter, which acts as a communication layer between the test framework and the test platform. The popular test frameworks are MSTest, NUnit, TUnit, and xUnit.net.
 
 #### MSTest
 
@@ -53,7 +53,7 @@ The test framework is built on top of the test platform. It defines the set of a
 
 For more information, see the following resources:
 
-- [Microsoft.Testing.Platform support in MSTest (aka MSTest runner)](unit-testing-mstest-runner-intro.md)
+- [Microsoft.Testing.Platform support in MSTest (MSTest runner)](unit-testing-mstest-runner-intro.md)
 - [Unit testing with C#](unit-testing-with-mstest.md)
 - [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
@@ -64,7 +64,7 @@ For more information, see the following resources:
 
 For more information, see the following resources:
 
-- [Microsoft.Testing.Platform support in NUnit (aka NUnit runner)](unit-testing-nunit-runner-intro.md)
+- [Microsoft.Testing.Platform support in NUnit (NUnit runner)](unit-testing-nunit-runner-intro.md)
 - [Unit testing with C#](unit-testing-with-nunit.md)
 - [Unit testing with F#](unit-testing-fsharp-with-nunit.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-nunit.md)

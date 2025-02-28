@@ -78,7 +78,7 @@ delegate bool TryParse<T>(string text, out T result);
 TryParse<int> parse1 = (text, out result) => Int32.TryParse(text, out result);
 ```
 
-Previously, adding any modifiers was allowed only when the parameter declarations included the types for the parameters. The preceding declaration would require typs on all parameters:
+Previously, adding any modifiers was allowed only when the parameter declarations included the types for the parameters. The preceding declaration would require types on all parameters:
 
 ```csharp
 TryParse<int> parse2 = (string text, out int result) => Int32.TryParse(text, out result);

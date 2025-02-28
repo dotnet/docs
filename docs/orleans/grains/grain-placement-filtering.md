@@ -27,7 +27,7 @@ Orleans provides various built-in filters for you to choose from. However, if yo
 
 ### Silo metadata
 
-These filters work with [*Silo Metadata*](../grains/silo-metadata.md) to filter candidate silos.
+These filters work with [*Silo Metadata*](../host/configuration-guide/silo-metadata.md) to filter candidate silos.
 
 #### `RequiredMatchSiloMetadata`
 

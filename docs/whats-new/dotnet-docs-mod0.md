@@ -23,7 +23,7 @@ Welcome to what's new in the .NET docs for December 2024. This article lists som
 
 ### Updated articles
 
-- [Build a .NET AI vector search app](../ai/quickstarts/quickstart-ai-chat-with-data.md) - New vector search quickstart
+- [Build a .NET AI vector search app](/dotnet/ai/quickstarts/build-vector-search-app) - New vector search quickstart
 
 ## ML.NET
 

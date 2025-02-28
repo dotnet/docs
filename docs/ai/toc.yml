@@ -4,7 +4,7 @@ items:
 - name: Overview
   href: get-started/dotnet-ai-overview.md
 - name: "Quickstart: Connect to and prompt an AI model"
-  href: quickstarts/quickstart-openai-summarize-text.md
+  href: /dotnet/ai/quickstarts/prompt-model
 - name: AI frameworks and SDKs
   items:
   - name: Overview
@@ -16,17 +16,17 @@ items:
 - name: Quickstarts
   items:
   - name: Build a chat app
-    href: quickstarts/get-started-openai.md
+    href: /dotnet/ai/quickstarts/build-chat-app
   - name: Build a .NET AI vector search app
-    href: quickstarts/quickstart-ai-chat-with-data.md
+    href: /dotnet/ai/quickstarts/build-vector-search-app
   - name: Execute a local .NET function
-    href: quickstarts/quickstart-azure-openai-tool.md
+    href: /dotnet/ai/quickstarts/use-function-calling
   - name: Generate images
-    href: quickstarts/quickstart-openai-generate-images.md
+    href: /dotnet/ai/quickstarts/generate-images
   - name: Chat with a local AI model
-    href: quickstarts/quickstart-local-ai.md
+    href: /dotnet/ai/quickstarts/chat-local-model
   - name: Build a minimal AI assistant
-    href: quickstarts/quickstart-assistants.md
+    href: /dotnet/ai/quickstarts/create-assistant
 - name: Concepts
   items:
   - name: How generative AI and LLMs work
@@ -75,6 +75,8 @@ items:
   items:
   - name: The Microsoft.Extensions.AI.Evaluation libraries
     href: conceptual/evaluation-libraries.md
+  - name: "Quickstart: Evaluate a model's response"
+    href: quickstarts/evaluate-ai-response.md
   - name: "Tutorial: Evaluate LLM prompt completions"
     href: tutorials/llm-eval.md
 - name: Resources

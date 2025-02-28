@@ -57,10 +57,10 @@ The support timeframe for the SDK typically matches that of the Visual Studio ve
 |-------------|-------------------------------|-----------|---------------------|
 | 8.0.1xx     | 17.8                          | Nov '23   | Nov '25<sup>1</sup> |
 | 8.0.2xx     | 17.9                          | Feb '24   | May '24             |
-| 8.0.3xx     | 17.10                         | May '24   | TBD                 |
+| 8.0.3xx     | 17.10                         | May '24   | Jan '26                 |
 | 8.0.4xx     | 17.11                         | Aug '24   | Nov '25<sup>2</sup> |
 | 9.0.1xx     | 17.12                         | Nov '24   | May '26             |
-| 9.0.2xx     | 17.13                         | Feb '25   | May '26             |
+| 9.0.2xx     | 17.13                         | Feb '25   | May '25             |
 | 9.0.3xx     | 17.14                         | May '25   | May '26             |
 
 > [!NOTE]
@@ -109,6 +109,8 @@ Major versions of the .NET SDK are typically released within a few days of a Vis
 | 9.0.100 RC 2        | 17.12 Preview 3       |
 | 9.0.100 GA          | 17.12 GA              |
 | 10.0.100 Preview 1  | 17.14 Preview 1       |
+| 10.0.100 Preview 2  | 17.14 Preview 2       |
+| 10.0.100 Preview 3  | 17.14 Preview 3       |
 
 ## Reference
 

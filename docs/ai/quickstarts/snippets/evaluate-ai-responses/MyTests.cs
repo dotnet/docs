@@ -10,7 +10,7 @@ public sealed class MyTests
     // <SnippetPrivateMembers>
     private static ChatConfiguration? s_chatConfiguration;
     private static IList<ChatMessage> s_messages = [
-    new ChatMessage(
+        new ChatMessage(
             ChatRole.System,
             """
             You're an AI assistant that can answer questions related to astronomy.
@@ -28,7 +28,7 @@ public sealed class MyTests
     public static async Task InitializeAsync(TestContext _)
     {
         /// Set up the <see cref="ChatConfiguration"/>,
-        // which includes the <see cref="IChatClient"/> that the
+        /// which includes the <see cref="IChatClient"/> that the
         /// evaluator uses to communicate with the model.
         s_chatConfiguration = GetOllamaChatConfiguration();
 
@@ -39,7 +39,7 @@ public sealed class MyTests
                 ResponseFormat = ChatResponseFormat.Text
             };
 
-        /// Fetch the response to be evaluated
+        // Fetch the response to be evaluated
         // and store it in a static variable.
         ChatResponse response = await s_chatConfiguration.ChatClient.GetResponseAsync(s_messages, chatOptions);
         s_response = response.Message;
@@ -49,7 +49,7 @@ public sealed class MyTests
     // <SnippetGetChatConfig>
     private static ChatConfiguration GetOllamaChatConfiguration()
     {
-        /// Get a chat client for the Ollama endpoint.
+        // Get a chat client for the Ollama endpoint.
         IChatClient client =
             new OllamaChatClient(
                 new Uri("http://localhost:11434"),
@@ -72,7 +72,7 @@ public sealed class MyTests
         /// Retrieve the score for coherence from the <see cref="EvaluationResult"/>.
         NumericMetric coherence = result.Get<NumericMetric>(CoherenceEvaluator.CoherenceMetricName);
 
-        /// Validate the default interpretation
+        // Validate the default interpretation
         // for the returned coherence metric.
         Assert.IsFalse(coherence.Interpretation!.Failed);
         Assert.IsTrue(coherence.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);

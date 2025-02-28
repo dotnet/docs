@@ -164,7 +164,7 @@ When adding a web API to your solution, you will be prompted to name the project
     4.577113
     ```
 
-Congratulations! You've successfully built a machine learning model to categorize the risk of health violations using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/MatrixFactorization_MovieRecommendation) GitHub repository.
+Congratulations! You've successfully built a machine learning model for movies recommendation using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/main/samples/modelbuilder/MatrixFactorization_MovieRecommendation) GitHub repository.
 
 ## Additional resources
 

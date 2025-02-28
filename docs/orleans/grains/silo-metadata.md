@@ -116,6 +116,4 @@ In this example:
 
 Internally, the `SiloMetadataCache` monitors changes in cluster membership on `MembershipTableManager` and will keep the local cache of metadata in sync with membership changes. Metadata is immutable for a given Silo so it will be retreived once and cached until that Silo leaves the cluster. Cached metadata for clusters that are `Dead` or have left the membership table will be cleared out of the local cache.
 
-Each silo hosts a [*GrainService*](../grains/grainservices.md) that provides that silo's metadata. Other silos request a client to a specific silo's `GrainService` to pull a remote silo's metadata to populate its local cache.
-
-Calls to `SiloMetadataCache : ISiloMetadataCache` then return a result from this local cache.
+Each silo hosts an ISystemTarget that provides that silo's metadata. Calls to `SiloMetadataCache : ISiloMetadataCache` then return a result from this local cache.

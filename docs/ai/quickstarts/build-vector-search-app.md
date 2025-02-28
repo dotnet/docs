@@ -205,5 +205,5 @@ azd down
 
 ## Next steps
 
-- [Quickstart - Chat with a local AI model](quickstart-local-ai.md)
-- [Generate images using AI with .NET](quickstart-openai-generate-images.md)
+- [Quickstart - Chat with a local AI model](/dotnet/ai/quickstarts/chat-local-model)
+- [Generate images using AI with .NET](/dotnet/ai/quickstarts/generate-images)

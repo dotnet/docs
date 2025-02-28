@@ -213,5 +213,5 @@ foreach (var fact in facts) {
 The preceding code loads a set of facts into memory so that the data is available to use when interacting with AI models and orchestrating tasks.
 
 >[!div class="step-by-step"]
->[Quickstart - Summarize text with OpenAI](quickstarts/quickstart-openai-summarize-text.md)
->[Quickstart - Chat with your data](quickstarts/quickstart-ai-chat-with-data.md)
+>[Quickstart - Summarize text with OpenAI](/dotnet/ai/quickstarts/prompt-model)
+>[Quickstart - Chat with your data](/dotnet/ai/quickstarts/build-vector-search-app)

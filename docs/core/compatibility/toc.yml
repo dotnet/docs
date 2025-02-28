@@ -8,6 +8,10 @@ items:
         items:
           - name: Overview
             href: 10.0.md
+          - name: Containers
+            items:
+              - name: Default .NET images use Ubuntu
+                href: containers/10.0/default-images-use-ubuntu.md
           - name: Core .NET libraries
             items:
               - name: API obsoletions with non-default diagnostic IDs
@@ -1316,6 +1320,10 @@ items:
                 href: configuration/7.0/diagnostics-config-section.md
       - name: Containers
         items:
+          - name: .NET 10
+            items:
+              - name: Default .NET images use Ubuntu
+                href: containers/10.0/default-images-use-ubuntu.md
           - name: .NET 9
             items:
               - name: Container images no longer install zlib

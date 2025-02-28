@@ -103,7 +103,7 @@ else
 
 The `==` symbol tests for *equality*. Using `==` distinguishes the test for equality from assignment, which you saw in `a = 5`.
 
-The `&&` represents "and". It means both conditions must be true to execute the statement in the true branch.  These examples also show that you can have multiple statements in each conditional branch, provided you enclose them in `{` and `}`. You can also use  `||` to represent "or". Add the following code after what you've written so far:
+The `&&` represents "and". It means both conditions must be true to execute the statement in the true branch.  These examples also show that you can have multiple statements in each conditional branch, as long as you enclose them in `{` and `}`. You can also use  `||` to represent "or". Add the following code after what you've written so far:
 
 ```csharp
 if ((a + b + c > 10) || (a == b))

@@ -5,7 +5,7 @@ summary: Welcome to what's new in .NET and .NET docs. Use this page to navigate 
 metadata:
   title: .NET what's new?
   description: Learn about new .NET features and new and updated content in .NET docs.
-  ms.date: 02/12/2025
+  ms.date: 03/01/2025
   ms.topic: landing-page
 landingContent:
 - title: .NET 10 release updates
@@ -22,7 +22,6 @@ landingContent:
       url: /ef/core/what-is-new/ef-core-10.0/whatsnew
     - text: Windows Forms 10
       url: /dotnet/desktop/winforms/whats-new/net100
-
 - title: .NET 9 release updates
   linkLists:
   - linkListType: whats-new
@@ -41,12 +40,12 @@ landingContent:
   linkLists:
   - linkListType: whats-new
     links:
+    - text: February 2025
+      url: dotnet-docs-mod2.md
     - text: January 2025
       url: dotnet-docs-mod1.md
     - text: December 2024
       url: dotnet-docs-mod0.md
-    - text: November 2024
-      url: dotnet-docs-mod2.md
 - title: Language updates
   linkLists:
   - linkListType: whats-new

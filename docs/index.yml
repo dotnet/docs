@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 11/13/2023
+  ms.date: 02/28/2025
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -24,33 +24,33 @@ highlightedContent:
       itemType: download
       url: https://dotnet.microsoft.com/download
     # Card
-    - title: "Build .NET apps with C#"
-      itemType: learn
-      url: /training/paths/build-dotnet-applications-csharp
+    - title: "What's new in .NET"
+      itemType: whats-new
+      url: whats-new/index.yml
     # Card
-    - title: Create your first web app
-      itemType: learn
-      url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
-    # Card
-    - title: "Interactive introduction to C#"
-      itemType: get-started
-      url: csharp/tour-of-csharp/tutorials/hello-world.yml
-    # Card
-    - title: ".NET architecture docs"
-      itemType: architecture
-      url: architecture/index.yml
-    # Card
-    - title: "Azure for .NET developers"
+    - title: "Build AI apps in .NET"
       itemType: overview
-      url: azure/index.yml
+      url: ai/index.yml
     # Card
     - title: .NET Aspire
       itemType: overview
       url: /dotnet/aspire
     # Card
-    - title: "What's new in .NET"
-      itemType: whats-new
-      url: whats-new/index.yml
+    - title: "Build .NET apps with C#"
+      itemType: learn
+      url: /training/paths/build-dotnet-applications-csharp
+    # Card
+    - title: "Interactive introduction to C#"
+      itemType: get-started
+      url: csharp/tour-of-csharp/tutorials/hello-world.yml
+    # Card
+    - title: "Azure for .NET developers"
+      itemType: overview
+      url: azure/index.yml
+    # Card
+    - title: ".NET architecture docs"
+      itemType: architecture
+      url: architecture/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -111,6 +111,9 @@ conceptualContent:
     # Card
     - title: Develop .NET apps
       links:
+        - url: ai/quickstarts/get-started-openai.md
+          itemType: quickstart
+          text: Build an Azure AI chat app with .NET
         - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio
           itemType: tutorial
           text: Create .NET desktop apps for Windows

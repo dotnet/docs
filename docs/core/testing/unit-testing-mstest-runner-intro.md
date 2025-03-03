@@ -38,7 +38,7 @@ Consider the following example project file:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- Enable Microsoft Testing Platform, this is an opt-in feature -->
+    <!-- Enable Microsoft.Testing.Platform, this is an opt-in feature -->
     <EnableMSTestRunner>true</EnableMSTestRunner>
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
 

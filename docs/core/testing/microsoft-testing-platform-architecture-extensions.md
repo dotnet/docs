@@ -10,7 +10,7 @@ ms.date: 07/11/2024
 
 The testing platform consists of a [testing framework](#test-framework-extension) and any number of [extensions](#other-extensibility-points) that can operate *in-process* or *out-of-process*.
 
-As outlined in the [architecture](./unit-testing-platform-architecture.md) section, the testing platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that your tests will utilize. Failing to register this results in startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
+As outlined in the [architecture](./microsoft-testing-platform-architecture.md) section, the testing platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that your tests will utilize. Failing to register this results in startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
 
 To support scenarios such as generating test reports, code coverage, retrying failed tests, and other potential features, you need to provide a mechanism that allows other extensions to work in conjunction with the [testing framework](#test-framework-extension) to deliver these features not inherently provided by the [testing framework](#test-framework-extension) itself.
 
@@ -18,7 +18,7 @@ In essence, the [testing framework](#test-framework-extension) is the primary ex
 
 The extensibility point enables the utilization of information provided by the [testing framework](#test-framework-extension) to generate new artifacts or to enhance existing ones with additional features. A commonly used extension is the TRX report generator, which subscribes to the [TestNodeUpdateMessage](#the-testnodeupdatemessage-data) and generates an XML report file from it.
 
-As discussed in the [architecture](./unit-testing-platform-architecture.md), there are certain extension points that *cannot* operate within the same process as the [testing framework](#test-framework-extension). The reasons typically include:
+As discussed in the [architecture](./microsoft-testing-platform-architecture.md), there are certain extension points that *cannot* operate within the same process as the [testing framework](#test-framework-extension). The reasons typically include:
 
 * The need to modify the *environment variables* of the *test host*. Acting within the test host process itself is *too late*.
 * The requirement to *monitor* the process from the outside because the *test host*, where tests and user code run, might have some *user code bugs* that render the process itself *unstable*, leading to potential *hangs* or *crashes*. In such cases, the extension would crash or hang along with the *test host* process.
@@ -72,7 +72,7 @@ public interface IExtension
 
 * `Description`: The description of the extension, that appears when you request information using the `--info` command line option.
 
-* `IsEnabledAsync()`: This method is invoked by the testing platform when the extension is being instantiated. If the method returns `false`, the extension will be excluded. This method typically makes decisions based on the [configuration file](./unit-testing-platform-architecture-services.md#the-iconfiguration-service) or some [custom command line options](./unit-testing-platform-architecture-services.md#the-icommandlineoptions-service). Users often specify `--customExtensionOption` in the command line to opt into the extension itself.
+* `IsEnabledAsync()`: This method is invoked by the testing platform when the extension is being instantiated. If the method returns `false`, the extension will be excluded. This method typically makes decisions based on the [configuration file](./microsoft-testing-platform-architecture-services.md#the-iconfiguration-service) or some [custom command line options](./microsoft-testing-platform-architecture-services.md#the-icommandlineoptions-service). Users often specify `--customExtensionOption` in the command line to opt into the extension itself.
 
 ## Test framework extension
 
@@ -80,7 +80,7 @@ The test framework is the primary extension that provides the testing platform w
 
 ### Register a testing framework
 
-This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [the testing platform architecture](./unit-testing-platform-architecture.md) documentation.
+This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [the testing platform architecture](./microsoft-testing-platform-architecture.md) documentation.
 
 The registration API is defined as follows:
 
@@ -92,13 +92,13 @@ ITestApplicationBuilder RegisterTestFramework(
 
 The `RegisterTestFramework` API expects two factories:
 
-1. `Func<IServiceProvider, ITestFrameworkCapabilities>`: This is a delegate that accepts an object implementing the [`IServiceProvider`](./unit-testing-platform-architecture-services.md) interface and returns an object implementing the [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) interface. The [`IServiceProvider`](./unit-testing-platform-architecture-services.md#the-imessagebus-service) provides access to platform services such as configurations, loggers, and command line arguments.
+1. `Func<IServiceProvider, ITestFrameworkCapabilities>`: This is a delegate that accepts an object implementing the [`IServiceProvider`](./microsoft-testing-platform-architecture-services.md) interface and returns an object implementing the [`ITestFrameworkCapabilities`](./microsoft-testing-platform-architecture-capabilities.md) interface. The [`IServiceProvider`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) provides access to platform services such as configurations, loggers, and command line arguments.
 
-    The [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) interface is used to announce the capabilities supported by the testing framework to the platform and extensions. It allows the platform and extensions to interact correctly by implementing and supporting specific behaviors. For a better understanding of the [concept of capabilities](./unit-testing-platform-architecture-capabilities.md), refer to the respective section.
+    The [`ITestFrameworkCapabilities`](./microsoft-testing-platform-architecture-capabilities.md) interface is used to announce the capabilities supported by the testing framework to the platform and extensions. It allows the platform and extensions to interact correctly by implementing and supporting specific behaviors. For a better understanding of the [concept of capabilities](./microsoft-testing-platform-architecture-capabilities.md), refer to the respective section.
 
-1. `Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>`: This is a delegate that takes in an [ITestFrameworkCapabilities](./unit-testing-platform-architecture-capabilities.md) object, which is the instance returned by the `Func<IServiceProvider, ITestFrameworkCapabilities>`, and an [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to provide access to platform services once more. The expected return object is one that implements the [ITestFramework](#test-framework-extension) interface. The `ITestFramework` serves as the execution engine that discovers and runs tests, and then communicates the results back to the testing platform.
+1. `Func<ITestFrameworkCapabilities, IServiceProvider, ITestFramework>`: This is a delegate that takes in an [ITestFrameworkCapabilities](./microsoft-testing-platform-architecture-capabilities.md) object, which is the instance returned by the `Func<IServiceProvider, ITestFrameworkCapabilities>`, and an [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to provide access to platform services once more. The expected return object is one that implements the [ITestFramework](#test-framework-extension) interface. The `ITestFramework` serves as the execution engine that discovers and runs tests, and then communicates the results back to the testing platform.
 
-The need for the platform to separate the creation of the [`ITestFrameworkCapabilities`](./unit-testing-platform-architecture-capabilities.md) and the creation of the [ITestFramework](#test-framework-extension) is an optimization to avoid creating the test framework if the supported capabilities are not sufficient to execute the current testing session.
+The need for the platform to separate the creation of the [`ITestFrameworkCapabilities`](./microsoft-testing-platform-architecture-capabilities.md) and the creation of the [ITestFramework](#test-framework-extension) is an optimization to avoid creating the test framework if the supported capabilities are not sufficient to execute the current testing session.
 
 Consider the following user code example, which demonstrates a test framework registration that returns an empty capability set:
 
@@ -141,7 +141,7 @@ return await testApplication.RunAsync();
 ```
 
 > [!NOTE]
-> Returning empty [ITestFrameworkCapabilities](./unit-testing-platform-architecture-capabilities.md) shouldn't prevent the execution of the test session. All test frameworks should be capable of discovering and running tests. The impact should be limited to extensions that may opt-out if the test framework lacks a certain feature.
+> Returning empty [ITestFrameworkCapabilities](./microsoft-testing-platform-architecture-capabilities.md) shouldn't prevent the execution of the test session. All test frameworks should be capable of discovering and running tests. The impact should be limited to extensions that may opt-out if the test framework lacks a certain feature.
 
 ### Create a testing framework
 
@@ -228,7 +228,7 @@ The testing platform monitors all dispatched requests. Once all requests have be
 It's evident that the requests and their completions can overlap, enabling concurrent and asynchronous execution of requests.
 
 > [!NOTE]
-> Currently, the testing platform does not send overlapping requests and waits for the completion of a request >> before sending the next one. However, this behavior may change in the future. The support for concurrent requests will be determined through the [capabilities](./unit-testing-platform-architecture-capabilities.md) system.
+> Currently, the testing platform does not send overlapping requests and waits for the completion of a request >> before sending the next one. However, this behavior may change in the future. The support for concurrent requests will be determined through the [capabilities](./microsoft-testing-platform-architecture-capabilities.md) system.
 
 The `IRequest` implementation specifies the precise request that needs to be fulfilled. The test framework identifies the type of request and handles it accordingly. If the request type is unrecognized, an exception should be raised.
 
@@ -236,22 +236,22 @@ You can find details about the available requests in the [IRequest](#handling-re
 
 `IMessageBus`: This service, linked with the request, allows the test framework to *asynchronously* to publish information about the ongoing request to the testing platform.
 The message bus serves as the central hub for the platform, facilitating asynchronous communication among all platform components and extensions.
-For a comprehensive list of information that can be published to the testing platform, refer to the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) section.
+For a comprehensive list of information that can be published to the testing platform, refer to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) section.
 
 `CancellationToken`: This token is utilized to interrupt the processing of a particular request.
 
-`Complete()`: As depicted in the previous sequence, the `Complete` method notifies the platform that the request has been successfully processed and all relevant information has been transmitted to the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service).
+`Complete()`: As depicted in the previous sequence, the `Complete` method notifies the platform that the request has been successfully processed and all relevant information has been transmitted to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service).
 
 > [!WARNING]
 > Neglecting to invoke `Complete()` on the request will result in the test application becoming unresponsive.
 
-To customize your test framework according to your requirements or those of your users, you can use a personalized section inside the [configuration](./unit-testing-platform-architecture-services.md#the-iconfiguration-service) file or with custom [command line options](#the-icommandlineoptionsprovider-extensions).
+To customize your test framework according to your requirements or those of your users, you can use a personalized section inside the [configuration](./microsoft-testing-platform-architecture-services.md#the-iconfiguration-service) file or with custom [command line options](#the-icommandlineoptionsprovider-extensions).
 
 ### Handling requests
 
 The subsequent section provides a detailed description of the various requests that a test framework may receive and process.
 
-Before proceeding to the next section, it's crucial to thoroughly comprehend the concept of the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service), which is the essential service for conveying test execution information to the testing platform.
+Before proceeding to the next section, it's crucial to thoroughly comprehend the concept of the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service), which is the essential service for conveying test execution information to the testing platform.
 
 #### TestSessionContext
 
@@ -291,7 +291,7 @@ public class DiscoverTestExecutionRequest
 }
 ```
 
-The `DiscoverTestExecutionRequest` instructs the test framework **to discover** the tests and communicate this information thought to the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service).
+The `DiscoverTestExecutionRequest` instructs the test framework **to discover** the tests and communicate this information thought to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service).
 
 As outlined in the previous section, the property for a discovered test is `DiscoveredTestNodeStateProperty`. Here is a generic code snippet for reference:
 
@@ -326,7 +326,7 @@ public class RunTestExecutionRequest
 }
 ```
 
-The `RunTestExecutionRequest` instructs the test framework **to execute** the tests and communicate this information thought to the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service).
+The `RunTestExecutionRequest` instructs the test framework **to execute** the tests and communicate this information thought to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service).
 
 Here is a generic code snippet for reference:
 
@@ -396,7 +396,7 @@ await context.MessageBus.PublishAsync(
 
 ### The `TestNodeUpdateMessage` data
 
-As mentioned in the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) section, before utilizing the message bus, you must specify the type of data you intend to supply. The testing platform has defined a well-known type, `TestNodeUpdateMessage`, to represent the concept of a *test update information*.
+As mentioned in the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) section, before utilizing the message bus, you must specify the type of data you intend to supply. The testing platform has defined a well-known type, `TestNodeUpdateMessage`, to represent the concept of a *test update information*.
 
 This part of the document will explain how to utilize this payload data. Let's examine the surface:
 
@@ -777,7 +777,7 @@ The testing platform provides additional extensibility points that allow you to 
 > [!NOTE]
 > When extending this API, the custom extension will exists both in and out of the test host process.
 
-As discussed in the [architecture](./unit-testing-platform-architecture.md) section, the initial step involves creating the `ITestApplicationBuilder` to register the testing framework and extensions with it.
+As discussed in the [architecture](./microsoft-testing-platform-architecture.md) section, the initial step involves creating the `ITestApplicationBuilder` to register the testing framework and extensions with it.
 
 ```csharp
 var builder = await TestApplication.CreateBuilderAsync(args);
@@ -898,7 +898,7 @@ public Task<ValidationResult> ValidateCommandLineOptionsAsync(ICommandLineOption
 }
 ```
 
-Please note that the `ValidateCommandLineOptionsAsync` method provides the [`ICommandLineOptions`](./unit-testing-platform-architecture-services.md#the-icommandlineoptions-service) service, which is used to fetch the argument information parsed by the platform itself.
+Please note that the `ValidateCommandLineOptionsAsync` method provides the [`ICommandLineOptions`](./microsoft-testing-platform-architecture-services.md#the-icommandlineoptions-service) service, which is used to fetch the argument information parsed by the platform itself.
 
 ### The `ITestSessionLifetimeHandler` extensions
 
@@ -915,7 +915,7 @@ builder.TestHost.AddTestSessionLifetimeHandle(
     static serviceProvider => new CustomTestSessionLifeTimeHandler());
 ```
 
-The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
+The factory utilizes the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
 
 > [!IMPORTANT]
 > The sequence of registration is significant, as the APIs are called in the order they were registered.
@@ -950,7 +950,7 @@ Consider the following details for this API:
 
 `OnTestSessionStartingAsync`: This method is invoked prior to the commencement of the test session and receives the `SessionUid` object, which provides an opaque identifier for the current test session.
 
-`OnTestSessionFinishingAsync`: This method is invoked after the completion of the test session, ensuring that the [testing framework](#test-framework-extension) has finished executing all tests and has reported all relevant data to the platform. Typically, in this method, the extension employs the [`IMessageBus`](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to transmit custom assets or data to the shared platform bus. This method can also signal to any custom *out-of-process* extension that the test session has concluded.
+`OnTestSessionFinishingAsync`: This method is invoked after the completion of the test session, ensuring that the [testing framework](#test-framework-extension) has finished executing all tests and has reported all relevant data to the platform. Typically, in this method, the extension employs the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to transmit custom assets or data to the shared platform bus. This method can also signal to any custom *out-of-process* extension that the test session has concluded.
 
 Finally, both APIs take a `CancellationToken` which the extension is expected to honor.
 
@@ -972,7 +972,7 @@ builder.TestHost.AddTestApplicationLifecycleCallbacks(
     => new CustomTestApplicationLifecycleCallbacks());
 ```
 
-The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
+The factory utilizes the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
 
 > [!IMPORTANT]
 > The sequence of registration is significant, as the APIs are called in the order they were registered.
@@ -1000,13 +1000,13 @@ The `ITestApplicationLifecycleCallbacks` is a type of `ITestHostExtension`, whic
 
 *For example, the built-in hang dump feature is composed of both *in-process* and *out-of-process* extensions, and this method is used to exchange information with the *out-of-process* component of the extension.*
 
-`AfterRunAsync`: This method is the final call before exiting the [`int ITestApplication.RunAsync()`](./unit-testing-platform-architecture.md) and it provides the [`exit code`](./unit-testing-platform-exit-codes.md). It should be used solely for cleanup tasks and to notify any corresponding *out-of-process* extension that the *test host* is about to terminate.
+`AfterRunAsync`: This method is the final call before exiting the [`int ITestApplication.RunAsync()`](./microsoft-testing-platform-architecture.md) and it provides the [`exit code`](./microsoft-testing-platform-exit-codes.md). It should be used solely for cleanup tasks and to notify any corresponding *out-of-process* extension that the *test host* is about to terminate.
 
 Finally, both APIs take a `CancellationToken` which the extension is expected to honor.
 
 ### The `IDataConsumer` extensions
 
-The `IDataConsumer` is an *in-process* extension capable of subscribing to and receiving `IData` information that is pushed to the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) by the [testing framework](#test-framework-extension) and its extensions.
+The `IDataConsumer` is an *in-process* extension capable of subscribing to and receiving `IData` information that is pushed to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the [testing framework](#test-framework-extension) and its extensions.
 
 *This extension point is crucial as it enables developers to gather and process all the information generated during a test session.*
 
@@ -1021,7 +1021,7 @@ builder.TestHost.AddDataConsumer(
     static serviceProvider => new CustomDataConsumer());
 ```
 
-The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
+The factory utilizes the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
 
 > [!IMPORTANT]
 > The sequence of registration is significant, as the APIs are called in the order they were registered.
@@ -1050,7 +1050,7 @@ The `IDataConsumer` is a type of `ITestHostExtension`, which serves as a base fo
 
 `DataTypesConsumed`: This property returns a list of `Type` that this extension plans to consume. It corresponds to `IDataProducer.DataTypesProduced`. Notably, an `IDataConsumer` can subscribe to multiple types originating from different `IDataProducer` instances without any issues.
 
-`ConsumeAsync`: This method is triggered whenever data of a type to which the current consumer is subscribed is pushed onto the [`IMessageBus`](./unit-testing-platform-architecture-services.md#the-imessagebus-service). It receives the `IDataProducer` to provide details about the data payload's producer, as well as the `IData` payload itself. As you can see, `IData` is a generic placeholder interface that contains general informative data. The ability to push different types of `IData` implies that the consumer needs to *switch* on the type itself to cast it to the correct type and access the specific information.
+`ConsumeAsync`: This method is triggered whenever data of a type to which the current consumer is subscribed is pushed onto the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service). It receives the `IDataProducer` to provide details about the data payload's producer, as well as the `IData` payload itself. As you can see, `IData` is a generic placeholder interface that contains general informative data. The ability to push different types of `IData` implies that the consumer needs to *switch* on the type itself to cast it to the correct type and access the specific information.
 
 A sample implementation of a consumer that wants to elaborate the [`TestNodeUpdateMessage`](#the-testnodeupdatemessage-data) produced by a [testing framework](#test-framework-extension) could be:
 
@@ -1100,18 +1100,18 @@ internal class CustomDataConsumer : IDataConsumer, IOutputDeviceDataProducer
 Finally, the API takes a `CancellationToken` which the extension is expected to honor.
 
 > [!IMPORTANT]
-> It's crucial to process the payload directly within the `ConsumeAsync` method. The [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) can manage both synchronous and asynchronous processing, coordinating the execution with the [testing framework](#test-framework-extension). Although the consumption process is entirely asynchronous and doesn't block the [IMessageBus.Push](./unit-testing-platform-architecture-services.md#the-imessagebus-service) at the time of writing, this is an implementation detail that may change in the future due to future requirements. However, the platform ensures that this method is always called once, eliminating the need for complex synchronization, as well as managing the scalability of the consumers.
+> It's crucial to process the payload directly within the `ConsumeAsync` method. The [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) can manage both synchronous and asynchronous processing, coordinating the execution with the [testing framework](#test-framework-extension). Although the consumption process is entirely asynchronous and doesn't block the [IMessageBus.Push](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) at the time of writing, this is an implementation detail that may change in the future due to future requirements. However, the platform ensures that this method is always called once, eliminating the need for complex synchronization, as well as managing the scalability of the consumers.
 
 <!-- avoid "No space in block quote" block quotes follow each other -->
 
 > [!WARNING]
-> When using `IDataConsumer` in conjunction with [ITestHostProcessLifetimeHandler](#the-itestsessionlifetimehandler-extensions) within a [composite extension point](#the-compositeextensionfactoryt), **it's crucial to disregard any data received post the execution of [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions)**. The `OnTestSessionFinishingAsync` is the final opportunity to process accumulated data and transmit new information to the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service), hence, any data consumed beyond this point will not be *utilizable* by the extension.
+> When using `IDataConsumer` in conjunction with [ITestHostProcessLifetimeHandler](#the-itestsessionlifetimehandler-extensions) within a [composite extension point](#the-compositeextensionfactoryt), **it's crucial to disregard any data received post the execution of [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions)**. The `OnTestSessionFinishingAsync` is the final opportunity to process accumulated data and transmit new information to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service), hence, any data consumed beyond this point will not be *utilizable* by the extension.
 
 If your extension requires intensive initialization and you need to use the async/await pattern, you can refer to the [`Async extension initialization and cleanup`](#asynchronous-initialization-and-cleanup-of-extensions). If you need to *share state* between extension points, you can refer to the [`CompositeExtensionFactory<T>`](#the-compositeextensionfactoryt) section.
 
 ### The `ITestHostEnvironmentVariableProvider` extensions
 
-The `ITestHostEnvironmentVariableProvider` is an *out-of-process* extension that enables you to establish custom environment variables for the test host. Utilizing this extension point ensures that the testing platform will initiate a new host with the appropriate environment variables, as detailed in the [architecture](./unit-testing-platform-architecture.md) section.
+The `ITestHostEnvironmentVariableProvider` is an *out-of-process* extension that enables you to establish custom environment variables for the test host. Utilizing this extension point ensures that the testing platform will initiate a new host with the appropriate environment variables, as detailed in the [architecture](./microsoft-testing-platform-architecture.md) section.
 
 To register a custom `ITestHostEnvironmentVariableProvider`, utilize the following API:
 
@@ -1124,7 +1124,7 @@ builder.TestHostControllers.AddEnvironmentVariableProvider(
     static serviceProvider => new CustomEnvironmentVariableForTestHost());
 ```
 
-The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
+The factory utilizes the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
 
 > [!IMPORTANT]
 > The sequence of registration is significant, as the APIs are called in the order they were registered.
@@ -1194,7 +1194,7 @@ If your extension requires intensive initialization and you need to use the asyn
 
 ### The `ITestHostProcessLifetimeHandler` extensions
 
-The `ITestHostProcessLifetimeHandler` is an *out-of-process* extension that allows you to observe the test host process from an external standpoint. This ensures that your extension remains unaffected by potential crashes or hangs that could be induced by the code under test. Utilizing this extension point will prompt the testing platform to initiate a new host, as detailed in the [architecture](./unit-testing-platform-architecture.md) section.
+The `ITestHostProcessLifetimeHandler` is an *out-of-process* extension that allows you to observe the test host process from an external standpoint. This ensures that your extension remains unaffected by potential crashes or hangs that could be induced by the code under test. Utilizing this extension point will prompt the testing platform to initiate a new host, as detailed in the [architecture](./microsoft-testing-platform-architecture.md) section.
 
 To register a custom `ITestHostProcessLifetimeHandler`, utilize the following API:
 
@@ -1207,7 +1207,7 @@ builder.TestHostControllers.AddProcessLifetimeHandler(
     static serviceProvider => new CustomMonitorTestHost());
 ```
 
-The factory utilizes the [IServiceProvider](./unit-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
+The factory utilizes the [IServiceProvider](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) to gain access to the suite of services offered by the testing platform.
 
 > [!IMPORTANT]
 > The sequence of registration is significant, as the APIs are called in the order they were registered.
@@ -1266,7 +1266,7 @@ The testing platform consists of a [testing framework](#test-framework-extension
 1. [ITestApplicationLifecycleCallbacks.BeforeRunAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestSessionLifetimeHandler.OnTestSessionStartingAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestFramework.CreateTestSessionAsync](#test-framework-extension): In-process
-1. [ITestFramework.ExecuteRequestAsync](#test-framework-extension): In-process, this method can be called one or more times. At this point, the testing framework will transmit information to the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) that can be utilized by the [IDataConsumer](#the-idataconsumer-extensions).
+1. [ITestFramework.ExecuteRequestAsync](#test-framework-extension): In-process, this method can be called one or more times. At this point, the testing framework will transmit information to the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) that can be utilized by the [IDataConsumer](#the-idataconsumer-extensions).
 1. [ITestFramework.CloseTestSessionAsync](#test-framework-extension): In-process
 1. [ITestSessionLifetimeHandler.OnTestSessionFinishingAsync](#the-itestsessionlifetimehandler-extensions): In-process
 1. [ITestApplicationLifecycleCallbacks.AfterRunAsync](#the-itestsessionlifetimehandler-extensions): In-process
@@ -1315,7 +1315,7 @@ However, if you need to *share state* between two extensions, the fact that you 
 
 Hence, the testing platform provides a sophisticated method to implement multiple extension points using the same type, making data sharing a straightforward task. All you need to do is utilize the `CompositeExtensionFactory<T>`, which can then be registered using the same API as you would for a single interface implementation.
 
-For instance, consider a type that implements both `ITestSessionLifetimeHandler` and `IDataConsumer`. This is a common scenario because you often want to gather information from the [testing framework](#test-framework-extension) and then, when the testing session concludes, you'll dispatch your artifact using the [`IMessageBus`](./unit-testing-platform-architecture-services.md#the-imessagebus-service) within the `ITestSessionLifetimeHandler.OnTestSessionFinishingAsync`.
+For instance, consider a type that implements both `ITestSessionLifetimeHandler` and `IDataConsumer`. This is a common scenario because you often want to gather information from the [testing framework](#test-framework-extension) and then, when the testing session concludes, you'll dispatch your artifact using the [`IMessageBus`](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) within the `ITestSessionLifetimeHandler.OnTestSessionFinishingAsync`.
 
 What you should do is to normally implement the interfaces:
 
@@ -1339,7 +1339,7 @@ builder.TestHost.AddTestSessionLifetimeHandle(factory);
 builder.TestHost.AddDataConsumer(factory);
 ```
 
-The factory constructor employs the [IServiceProvider](./unit-testing-platform-architecture-services.md) to access the services provided by the testing platform.
+The factory constructor employs the [IServiceProvider](./microsoft-testing-platform-architecture-services.md) to access the services provided by the testing platform.
 
 The testing platform will be responsible for managing the lifecycle of the composite extension.
 

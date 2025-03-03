@@ -14,7 +14,7 @@ MSTest is a fully supported, open-source and a cross-platform test framework tha
 
 ## Runsettings
 
-A *.runsettings* file can be used to configure how unit tests are being run. To learn more about the runsettings and the configurations related to the platform, you can check out [VSTest runsettings documentation](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) or [MSTest runner runsettings documentation](unit-testing-platform-extensions-vstest-bridge.md#runsettings-support).
+A *.runsettings* file can be used to configure how unit tests are being run. To learn more about the runsettings and the configurations related to the platform, you can check out [VSTest runsettings documentation](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file) or [MSTest runner runsettings documentation](microsoft-testing-platform-extensions-vstest-bridge.md#runsettings-support).
 
 ### MSTest element
 
@@ -103,7 +103,7 @@ Each element of the file is optional because it has a default value.
 
 ## testconfig.json
 
-When running your tests with MSTest, you can use a `testconfig.json` file to configure the behavior of the test runner. The `testconfig.json` file is a JSON file that contains the configuration settings for the test runner. The file is used to configure the test runner and the test execution environment. For more information, refer to [Microsoft.Testing.Platform testconfig.json documentation](unit-testing-platform-config.md#testconfigjson).
+When running your tests with MSTest, you can use a `testconfig.json` file to configure the behavior of the test runner. The `testconfig.json` file is a JSON file that contains the configuration settings for the test runner. The file is used to configure the test runner and the test execution environment. For more information, refer to [Microsoft.Testing.Platform testconfig.json documentation](microsoft-testing-platform-config.md#testconfigjson).
 
 Starting with MSTest 3.7, you can also configure MSTest runs in the same configuration file. The following sections describe the settings that you can use in the `testconfig.json` file.
 

@@ -201,4 +201,4 @@ MSTest v3 includes built-in code analyzers for best practices, avoiding configur
 
 ## Additional resources
 
-- [New testing platform](unit-testing-platform-intro.md)
+- [Microsoft.Testing.Platform overview](microsoft-testing-platform-intro.md)

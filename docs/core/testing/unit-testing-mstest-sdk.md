@@ -74,10 +74,10 @@ By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mst
 
 You can customize Microsoft.Testing.Platform experience through a set of [NuGet package extensions](./unit-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
-- [Microsoft.Testing.Platform profile](#microsoft-testing-platform-profile)
+- [Microsoft.Testing.Platform profile](#microsofttestingplatform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
 
-### [Microsoft.Testing.Platform profile](#microsoft-testing-platform-profile)
+### Microsoft.Testing.Platform profile
 
 The concept of *profiles* allows you to select the default set of configurations and extensions that will be applied to your test project.
 

@@ -12,7 +12,7 @@ MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (
 
 The MSTest runner is open source and builds on the [`Microsoft.Testing.Platform`](./unit-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0` or newer.
 
-## Enable Microsoft Testing Platform in an MSTest project
+## Enable Microsoft.Testing.Platform in an MSTest project
 
 It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (Microsoft.Testing.Platform) and its extensions.
 

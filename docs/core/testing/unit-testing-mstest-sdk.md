@@ -68,7 +68,7 @@ You don't need anything else to build and run your tests and you can use the sam
 
 ## Select the runner
 
-By default, MSTest SDK relies on [Microsoft Testing Platform](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
 ## Extend Microsoft Testing Platform
 

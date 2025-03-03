@@ -14,7 +14,7 @@ ms.date: 02/13/2024
 * The recommended target for most users.
 * Easy to configure for other users.
 
-The MSTest SDK discovers and runs your tests using the [Microsoft Testing Platform](./unit-testing-mstest-runner-intro.md).
+The MSTest SDK discovers and runs your tests using the [MSTest runner](./unit-testing-mstest-runner-intro.md).
 
 You can enable `MSTest.Sdk` in a project by simply updating the `Sdk` attribute of the `Project` node of your project:
 
@@ -64,7 +64,7 @@ When you `build` the project, all the needed components are restored and install
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
 > [!IMPORTANT]
-> By switching to the `MSTest.Sdk`, you opt in to using the [Microsoft Testing Platform](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
+> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
 
 ## Select the runner
 

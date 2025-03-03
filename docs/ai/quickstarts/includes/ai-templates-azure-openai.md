@@ -95,11 +95,11 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 
 2. Add the following key and value:
 
-  ```json
-  {
-      "AzureOpenAi:Endpoint": "<your-endpoint>"
-  }
-  ```
+    ```json
+    {
+        "AzureOpenAi:Endpoint": "<your-endpoint>"
+    }
+    ```
 
 # [.NET CLI](#tab/configure-dotnet-cli)
 

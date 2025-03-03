@@ -78,11 +78,11 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 
 2. Add the following key and value:
 
-  ```json
-  {
-      "OpenAi:Key": "<your-openai-key>"
-  }
-  ```
+    ```json
+    {
+        "OpenAi:Key": "<your-openai-key>"
+    }
+    ```
 
 # [.NET CLI](#tab/configure-dotnet-cli)
 

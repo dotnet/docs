@@ -4,7 +4,7 @@ items:
 - name: Overview
   href: get-started/dotnet-ai-overview.md
 - name: "Quickstart: Connect to and prompt an AI model"
-  href: /dotnet/ai/quickstarts/prompt-model
+  href: quickstarts/prompt-model.md
 - name: AI frameworks and SDKs
   items:
   - name: Overview
@@ -16,17 +16,17 @@ items:
 - name: Quickstarts
   items:
   - name: Build a chat app
-    href: /dotnet/ai/quickstarts/build-chat-app
+    href: quickstarts/build-chat-app.md
   - name: Build a .NET AI vector search app
-    href: /dotnet/ai/quickstarts/build-vector-search-app
+    href: quickstarts/build-vector-search-app.md
   - name: Execute a local .NET function
-    href: /dotnet/ai/quickstarts/use-function-calling
+    href: quickstarts/use-function-calling.md
   - name: Generate images
-    href: /dotnet/ai/quickstarts/generate-images
+    href: quickstarts/generate-images.md
   - name: Chat with a local AI model
-    href: /dotnet/ai/quickstarts/chat-local-model
+    href: quickstarts/chat-local-model.md
   - name: Build a minimal AI assistant
-    href: /dotnet/ai/quickstarts/create-assistant
+    href: quickstarts/create-assistant.md
 - name: Concepts
   items:
   - name: How generative AI and LLMs work

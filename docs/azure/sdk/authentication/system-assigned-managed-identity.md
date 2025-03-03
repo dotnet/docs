@@ -17,7 +17,7 @@ The recommended approach to authenticate an Azure-hosted app to other Azure reso
 
 [!INCLUDE [managed-identity-concepts](../includes/managed-identity-concepts.md)]
 
-The sections ahead describe the steps to enable and use a system-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [user-assigned managed identities](/dotnet/azure/sdk/authentication/user-assigned-managed-identity) article for more information.
+The sections ahead describe the steps to enable and use a system-assigned managed identity for an Azure-hosted app. If you need to use a user-assigned managed identity, visit the [user-assigned managed identities](user-assigned-managed-identity.md) article for more information.
 
 ## Enable a system-assigned managed identity on the Azure hosting resource
 

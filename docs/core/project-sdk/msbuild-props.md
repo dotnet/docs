@@ -1560,7 +1560,7 @@ For more information, see [Microsoft.Testing.Platform profile](../testing/unit-t
 
 ### UseVSTest
 
-Set the `UseVSTest` property to `true` to switch from Microsoft Testing Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+Set the `UseVSTest` property to `true` to switch from Microsoft.Testing.Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
 
 ### MSTestAnalysisMode
 

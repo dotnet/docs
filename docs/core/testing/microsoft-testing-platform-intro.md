@@ -50,7 +50,7 @@ The main driving factors for the evolution of the new testing platform are detai
 > [!TIP]
 > You can ignore a specific [exit code](./microsoft-testing-platform-exit-codes.md) using the [`--ignore-exit-code`](#options) command line option. You can also set command line options that apply to a specific test project in the project file using the [`TestingPlatformCommandLineArguments`](../project-sdk/msbuild-props.md#testingplatformcommandlinearguments) MSBuild property. One common use case is for test projects that have all the tests ignored, which will normally exit with exit code 8 (the test session ran zero tests). In this scenario, you can add the following under a `PropertyGroup` in your project file:
 >
-> ```
+> ```xml
 > <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --ignore-exit-code 8</TestingPlatformCommandLineArguments>
 > ```
 

@@ -89,7 +89,7 @@ Consider the following example project file:
 
 ### .runsettings
 
-Microsoft Testing Platform supports the [runsettings](unit-testing-platform-extensions-vstest-bridge.md#runsettings-support) through the command-line option `--settings`. For the full list of supported MSTest entries, see [Configure MSTest: Runsettings](./unit-testing-mstest-configure.md#runsettings). The following commands show various usage examples.
+Microsoft.Testing.Platform supports the [runsettings](unit-testing-platform-extensions-vstest-bridge.md#runsettings-support) through the command-line option `--settings`. For the full list of supported MSTest entries, see [Configure MSTest: Runsettings](./unit-testing-mstest-configure.md#runsettings). The following commands show various usage examples.
 
 Using `dotnet run`:
 

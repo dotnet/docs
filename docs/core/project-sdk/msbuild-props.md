@@ -1556,7 +1556,7 @@ When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), th
 | `None`         | No extensions are enabled.                                                                    |
 | `AllMicrosoft` | Enable all extensions shipped by Microsoft (including extensions with a restrictive license). |
 
-For more information, see [Microsoft Testing Platform profile](../testing/unit-testing-mstest-sdk.md#microsoft-testing-platform-profile).
+For more information, see [Microsoft.Testing.Platform profile](../testing/unit-testing-mstest-sdk.md#microsoft-testing-platform-profile).
 
 ### UseVSTest
 

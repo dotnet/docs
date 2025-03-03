@@ -75,8 +75,6 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 - Registers a SQLite database context service to handle ingesting documents. The app is preconfigured to ingest whatever documents you add to the `Data` folder of the project, including the provided example files.
 - Provides a complete chat UI using Blazor components. The UI handles rich formatting for the AI responses and provides features such as citations for response data.
 
-:::zone target="docs" pivot="azure-openai"
-
 ## Configure access to GitHub Models
 
 To authenticate to GitHub models from your code, you'll need to create a GitHub personal access token:

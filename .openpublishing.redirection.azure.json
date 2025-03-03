@@ -57,6 +57,10 @@
             "redirect_url": "/dotnet/azure/"
         },
         {
+            "source_path_from_root": "/docs/azure/landing-page.yml",
+            "redirect_url": "/dotnet/azure/index"
+        },
+        {
             "source_path_from_root": "/docs/azure/logging.md",
             "redirect_url": "/dotnet/azure/sdk/logging"
         },

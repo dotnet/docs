@@ -70,7 +70,7 @@ You don't need anything else to build and run your tests and you can use the sam
 
 By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
-## Extend Microsoft Testing Platform
+## Extend Microsoft.Testing.Platform
 
 You can customize `Microsoft Testing Platform` experience through a set of [NuGet package extensions](./unit-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
 

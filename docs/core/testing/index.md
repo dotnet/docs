@@ -65,9 +65,9 @@ For more information, see the following resources:
 - [Unit testing with F#](unit-testing-fsharp-with-mstest.md)
 - [Unit testing with Visual Basic](unit-testing-visual-basic-with-mstest.md)
 
-#### MSTest runner
+#### Microsoft Testing Platform
 
-The MSTest runner is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in continuous integration (CI) pipelines, and in Visual Studio Test Explorer. For more information, see [MSTest runner overview](unit-testing-mstest-runner-intro.md).
+Microsoft Testing Platform is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in continuous integration (CI) pipelines, and in Visual Studio Test Explorer. For more information, see [Microsoft Testing Platform overview](unit-testing-mtp-intro.md).
 
 ### .NET CLI
 

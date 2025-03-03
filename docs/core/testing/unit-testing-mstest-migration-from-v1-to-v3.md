@@ -107,7 +107,7 @@ Choose the option that best suits your project setup. Both methods ensure your p
 
 - Improved defaults for test projects
 - Simplified setup and usage
-- Enhanced extensibility of the MSTest runner
+- Enhanced extensibility of Microsoft Testing Platform
 - New Roslyn-based code analyzers for improved test development
 - Support for WinUI applications
 - In-assembly parallel execution

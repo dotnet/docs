@@ -142,6 +142,8 @@ groups:
   title: MEAI targets
   prompt: Choose a host service for your AI models
   pivots:
+    - id: github-models
+      title: GitHub models
     - id: azure-openai
       title: Azure OpenAI
     - id: openai

@@ -1,0 +1,125 @@
+---
+ms.date: 2/21/2025
+ms.topic: quickstart
+ms.custom: devx-track-dotnet, devx-track-dotnet-ai
+author: alexwolfmsft
+ms.author: alexwolf
+---
+
+# Create a .NET AI app to chat with custom data using the AI app template extensions
+
+In this quickstart, you learn how to create a .NET AI app to chat with custom data using the .NET AI app template extensions. These extensions provide additional starter app templates for Visual Studio and the .NET CLI. The templates are designed to streamline the  getting started experience for building AI apps with .NET by handling common setup tasks and configurations for you.
+
+## Prerequisites
+
+* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
+* Visual Studio 2022 - [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+
+## Install the .NET AI app template
+
+The **AI Chat Web App** template is available as a template package through NuGet. Use the [`dotnet new`](../../core/tools/dotnet-new-install.md) command to install the package:
+
+```dotnetcli
+dotnet new --install Microsoft.Extensions.AI.Templates
+```
+
+## Create the .NET AI app
+
+After you install the AI app templates, you can use them to create starter apps through Visual Studio UI, Visual Studio Code, or the .NET CLI.
+
+# [Visual Studio](#tab/visual-studio)
+
+1. Inside Visual Studio, navigate to **File > New > Project**.
+1. On the **Create a new project** screen, search for **AI Chat Web App**. Select the matching result and then choose **Next**.
+1. On the **Configure your new project** screen, enter the desired name and location for your project and then choose **Next**.
+1. On the **Additional information** screen:
+    - For the **Framework** option, select **.NET 9.0**.
+    - For the **AI service provider** option, select **GitHub Models**.
+    - Make sure the **Use managed identity** checkbox is checked.
+    - For the **Vector store** option, select **Local on-disc (for prototyping)**.
+1. Select **Create** to complete the process.
+
+# [Visual Studio Code](#tab/visual-studio-code)
+
+1. Open the command pallete in Visual Studio Code.
+1. Search for *New project* and select the matching result **.NET: New Project**.
+1. Filter the project templates list by searching for *AI*.
+1. Select **AI Chat Web App** and press enter.
+
+<!-- TBD: parameter options aren't showing -->
+
+# [.NET CLI](#tab/dotnet-cli)
+
+1. In a terminal window, navigate to an empty directory on your device.
+1. Create a new app with the `dotnet new` command and the following parameters:
+
+    ```dotnetcli
+    dotnet new aichatweb --framework "net9.0" --AIServiceProvider "githubmodels" --VectorStore "local"
+    ```
+
+    The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
+
+1. Open the new app in your editor of choice, such as Visual Studio Code.
+
+    ```dotnetcli
+    code .
+    ```
+
+---
+
+### Explore the sample app
+
+The sample app you created is a Blazor Interactive Server web app preconfigured with common AI and data services. The app handles the following concerns for you:
+
+- Includes essential `Microsoft.Extensions.AI` packages and other dependencies in the `csproj` file to help you get started working with AI.
+- Creates various AI services and registers them for dependency injection in the `Program.cs` file:
+  - An `IChatClient` service to chat back and forth with the generative AI model
+  - An `IEmbeddingGenerator` service that's used to generate embeddings, which are essential for vector search functionality
+  - A `JsonVectorStore` to act as an in-memory vector store
+- Registers a SQLite database context service to handle ingesting documents. The app is preconfigured to ingest whatever documents you add to the `Data` folder of the project, including the provided example files.
+- Provides a complete chat UI using Blazor components. The UI handles rich formatting for the AI responses and provides features such as citations for response data.
+
+:::zone target="docs" pivot="azure-openai"
+
+## Configure access the GitHub Models 
+
+To authenticate to GitHub models from your code, you'll need to create a GitHub personal access token:
+
+1. Navigate to the **Personal access tokens** page of your GitHub account settings.
+1. Select **Generate new token**.
+1. Enter a **Token name** and complete the rest of the form fields with your desired preferences. Select **Generate token**.
+1. Copy the token for use in the steps ahead.
+
+## Configure the app
+
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
+
+1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
+
+# [Visual Studio](#tab/visual-studio)
+
+1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+
+2. Add the following key and value:
+
+```json
+{
+    "GitHubModels:Token": "<your-personal-access-token>"
+}
+```
+
+# [.NET CLI](#tab/dotnet-cli)
+
+```dotnetcli
+dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>
+```
+
+---
+
+1. By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
+
+    ```csharp
+    // Update these parameter values to match your Azure OpenAI model deployment names
+    var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
+    var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
+    ```

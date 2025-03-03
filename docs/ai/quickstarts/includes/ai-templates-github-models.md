@@ -42,7 +42,8 @@ After you install the AI app templates, you can use them to create starter apps 
 1. Filter the project templates list by searching for *AI*.
 1. Select **AI Chat Web App** and press enter.
 
-<!-- TBD: parameter options aren't showing -->
+> [!NOTE]
+> The command palette experience currently only supports the default settings. To configure your AI platform and vectore store during template creation, use the Visual Studio or .NET CLI workflows.
 
 # [.NET CLI](#tab/dotnet-cli)
 
@@ -90,25 +91,25 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
-# [Visual Studio](#tab/configure-visual-studio)
-
-1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
-
-2. Add the following key and value:
-
-```json
-{
-    "GitHubModels:Token": "<your-personal-access-token>"
-}
-```
-
-# [.NET CLI](#tab/configure-dotnet-cli)
-
-```dotnetcli
-dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>
-```
-
----
+  # [Visual Studio](#tab/configure-visual-studio)
+  
+  1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+  
+  2. Add the following key and value:
+  
+    ```json
+    {
+        "GitHubModels:Token": "<your-personal-access-token>"
+    }
+    ```
+  
+  # [.NET CLI](#tab/configure-dotnet-cli)
+  
+  ```dotnetcli
+  dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>
+  ```
+  
+  ---
 
 1. By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
 

@@ -41,9 +41,6 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 
 1. Select the run button at the top of Visual Studio to launch the app. After a moment, you should see the following UI load in the browser:
 
-    > [!NOTE]
-    > To avoid authentication errors, make sure you are signed-in to Visual Studio or the Azure CLI with a user that is assigned the **Azure AI Developer** role on your Azure OpenAI resource.
-
     :::image type="content" source="../media/ai-templates/app-ui.png" alt-text="A screenshot showing the UI of the .NET AI app template.":::
 
 1. Enter a prompt into the input box such as *"What are some essential tools in the survival kit?"* to ask your AI model a question about the ingested data from the example files.

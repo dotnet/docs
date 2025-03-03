@@ -70,7 +70,7 @@ Consider the following example project file:
     <PackageReference Include="MSTest" Version="3.8.0" />
 
     <!--
-      Coverlet collector isn't compatible with Microsoft Testing Platform, you can
+      Coverlet collector isn't compatible with Microsoft.Testing.Platform, you can
       either switch to Microsoft CodeCoverage (as shown below),
       or switch to be using coverlet global tool
       https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue

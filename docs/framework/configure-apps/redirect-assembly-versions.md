@@ -44,7 +44,7 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
 
  If a publisher policy file exists for an assembly, the runtime checks this file after checking the assembly's manifest and app configuration file. Vendors should use publisher policy files only when the new assembly is backward compatible with the assembly being redirected.
 
- You can bypass publisher policy for your app by specifying settings in the app configuration file, as discussed in the [Bypassing publisher policy section](#bypass_PP).
+ You can bypass publisher policy for your app by specifying settings in the app configuration file, as discussed in the [Bypass publisher policy](#bypass-publisher-policy) section.
 
 ## Redirect versions at the app level
 

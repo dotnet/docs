@@ -275,7 +275,7 @@ Finally, based on the extensions profile you're using, you can also remove some 
 
 ### Update your CI
 
-Once you've updated your projects, if you're using `Microsoft Testing Platform` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode).
+Once you've updated your projects, if you're using `Microsoft.Testing.Platform` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode).
 
 Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 

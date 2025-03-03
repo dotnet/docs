@@ -14,7 +14,7 @@ The MSTest runner is open source and builds on the [`Microsoft.Testing.Platform`
 
 ## Enable Microsoft Testing Platform in an MSTest project
 
-It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (Microsoft Testing Platform) and its extensions.
+It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (Microsoft.Testing.Platform) and its extensions.
 
 When you use `MSTest SDK`, by default you're opted in to using Microsoft Testing Platform.
 

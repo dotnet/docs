@@ -91,8 +91,8 @@ The following table shows the event information:
 |-----------|--------------|-----------------|
 |`MethodLoadVerbose_V1`|143|Raised when a method is JIT-loaded or an NGEN image is loaded. Dynamic and generic methods always use this version for method loads. JIT helpers always use this version.|
 |`MethodUnLoadVerbose_V1`|144|Raised when a dynamic method is destroyed, a module is unloaded, or an application domain is destroyed. Dynamic methods always use this version for method unloads.|
-|`MethodDCStartVerbose_V1`|141|Enumerates methods during a start rundown.|
-|`MethodDCEndVerbose_V1`|142|Enumerates methods during an end rundown.|
+|`MethodDCStartVerbose_V1`|143|Enumerates methods during a start rundown.|
+|`MethodDCEndVerbose_V1`|144|Enumerates methods during an end rundown.|
 
 The following table shows the event data:
 

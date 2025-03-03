@@ -77,7 +77,7 @@ You can customize Microsoft.Testing.Platform experience through a set of [NuGet 
 - [Microsoft.Testing.Platform profile](#microsoft-testing-platform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
 
-### Microsoft Testing Platform profile
+### Microsoft.Testing.Platform profile
 
 The concept of *profiles* allows you to select the default set of configurations and extensions that will be applied to your test project.
 

@@ -111,8 +111,8 @@ dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
 
 By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
 
-    ```csharp
-    // Update these parameter values to match your Azure OpenAI model deployment names
-    var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
-    var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
-    ```
+```csharp
+// Update these parameter values to match your Azure OpenAI model deployment names
+var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
+var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
+```

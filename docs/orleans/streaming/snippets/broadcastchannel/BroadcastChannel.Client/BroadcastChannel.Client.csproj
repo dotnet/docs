@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.2" />
-    <PackageReference Include="Microsoft.Orleans.Client" Version="9.1.1" />
-    <PackageReference Include="Microsoft.Orleans.BroadcastChannel" Version="9.1.1" />
+    <PackageReference Include="Microsoft.Orleans.Client" Version="9.1.2" />
+    <PackageReference Include="Microsoft.Orleans.BroadcastChannel" Version="9.1.2" />
   </ItemGroup>
 
   <ItemGroup>

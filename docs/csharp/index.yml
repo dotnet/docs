@@ -32,7 +32,7 @@ highlightedContent:
     # Card
     - title: What's new
       itemType: whats-new
-      url: ./whats-new/csharp-13.md
+      url: ./whats-new/csharp-14.md
     # Card
     - title: Learn C# video series
       itemType: video
@@ -305,7 +305,7 @@ additionalContent:
         # Card
         - title: ".NET API reference"
           summary: API reference documentation for .NET
-          url: ../../api/index.md?view=net-9.0
+          url: ../../api/index.md
         # Card
         - title: ".NET Framework API reference"
           summary: API reference documentation for .NET Framework
@@ -313,15 +313,11 @@ additionalContent:
         # Card
         - title: "ASP.NET Core API reference"
           summary: API reference documentation for ASP.NET Core
-          url: ../../api/index.md?view=view=aspnetcore-8.0&preserve-view=true
+          url: ../../api/index.md
         # Card
         - title: "ML.NET API reference"
           summary: API reference documentation for ML.NET
-          url: ../../api/index.md?view=ml-dotnet&preserve-view=true
-        # Card
-        - title: ".NET Package-provided API reference"
-          summary: Reference documentation for package-provided .NET APIs
-          url: ../../api/index.md?view=dotnet-9.0-pp&preserve-view=true
+          url: ../../api/index.md
 
   # footer (Optional; Remove if not applicable.)
   footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

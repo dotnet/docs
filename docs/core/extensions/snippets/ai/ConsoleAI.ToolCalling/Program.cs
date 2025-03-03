@@ -11,7 +11,7 @@ IChatClient client = new ChatClientBuilder(
     .UseFunctionInvocation()
     .Build();
 
-var response = client.CompleteStreamingAsync(
+var response = client.GetStreamingResponseAsync(
     "Should I wear a rain coat?",
     new() { Tools = [AIFunctionFactory.Create(GetCurrentWeather)] });
 

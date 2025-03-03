@@ -117,13 +117,29 @@ MSTest settings are grouped by functionality that are described in the sections 
 | enableBaseClassTestMethodsFromOtherAssemblies | true | A value indicating whether to enable discovery of test methods from base classes in a different assembly from the inheriting test class. |
 | classCleanupLifecycle | EndOfAssembly | If you want the class cleanup to occur at the end of the class, set it to **EndOfClass**. |
 
-#### AssemblyResolution settings
+#### `assemblyResolution` settings
+
+All the settings in this section belong to the `assemblyResolution` element.
 
 | Entry | Default | Description |
 |-------|---------|-------------|
 | paths | None | You can specify paths to extra assemblies when finding and running unit tests. For example, use these paths for dependency assemblies that aren't in the same directory as the test assembly. You can specify a path in the shape `{ "path": "...", "includeSubDirectories": "true/false" }`. |
 
-#### Deployment settings
+Example:
+
+```json
+{
+  "mstest": {
+    "assemblyResolution": {
+        { "path": "...", "includeSubDirectories": "true/false" }
+    }
+  }
+}
+```
+
+#### `deployment` settings
+
+All the settings in this section belong to the `deployment` element.
 
 | Entry | Default | Description |
 |-------|---------|-------------|
@@ -131,13 +147,43 @@ MSTest settings are grouped by functionality that are described in the sections 
 | deployTestSourceDependencies | true | Indicates whether the test source references are to be deployed. |
 | enabled | true | If you set the value to **false**, deployment items that you specify in your test method aren't copied to the deployment directory. |
 
-#### Output settings
+Example:
+
+```json
+{
+  "mstest": {
+    "deployment": {
+        "deleteDeploymentDirectoryAfterTestRunIsComplete": true,
+        "deployTestSourceDependencies": true,
+        "enabled": true
+    }
+  }
+}
+```
+
+#### `output` settings
+
+All the settings in this section belong to the `output` element.
 
 | Entry | Default | Description |
 |-------|---------|-------------|
-| captureTrace | false | Capture text messages coming from the `Console.Write*`, `Trace.Write*`, and `Debug.Write*` APIs that will be associated to the current running test. |
+| captureTrace | true | Capture text messages coming from the `Console.Write*`, `Trace.Write*`, and `Debug.Write*` APIs that will be associated to the current running test. |
 
-#### Parallelism settings
+Example:
+
+```json
+{
+  "mstest": {
+    "output": {
+        "captureTrace": false
+    }
+  }
+}
+```
+
+#### `parallelism` settings
+
+All the settings in this section belong to the `parallelism` element.
 
 | Entry | Default | Description |
 |-------|---------|-------------|
@@ -145,7 +191,23 @@ MSTest settings are grouped by functionality that are described in the sections 
 | scope | class | The scope of parallelization. You can set it to `method`. The default, `class`, corresponds to running all tests of a given class sequentially but multiple classes in parallel. |
 | workers | 0 | The number of threads/workers to be used for parallelization. The default value maps to the number of processors on the current machine. |
 
-#### Execution settings
+Example:
+
+```json
+{
+  "mstest": {
+    "parallelism": {
+        "enabled": true,
+        "scope": "method",
+        "workers": 32
+    }
+  }
+}
+```
+
+#### `execution` settings
+
+All the settings in this section belong to the `execution` element.
 
 | Entry | Default | Description |
 |-------|---------|-------------|
@@ -156,7 +218,26 @@ MSTest settings are grouped by functionality that are described in the sections 
 | treatClassAndAssemblyCleanupWarningsAsErrors | false | To see your failures in class cleanups as errors, set this value to **true**. |
 | treatDiscoveryWarningsAsErrors | false | To report test discovery warnings as errors, set this value to **true**. |
 
-#### Timeout settings
+Example:
+
+```json
+{
+  "mstest": {
+    "execution": {
+        "considerEmptyDataSourceAsInconclusive": false,
+        "considerFixturesAsSpecialTests": false,
+        "mapInconclusiveToFailed": true,
+        "mapNotRunnableToFailed": true,
+        "treatClassAndAssemblyCleanupWarningsAsErrors": false,
+        "treatDiscoveryWarningsAsErrors": false
+    }
+  }
+}
+```
+
+#### `timeout` settings
+
+All the settings in this section belong to the `timeout` element.
 
 | Entry | Default | Description |
 |-------|---------|-------------|
@@ -171,6 +252,25 @@ MSTest settings are grouped by functionality that are described in the sections 
 
 > [!NOTE]
 > `[Timeout]` attribute specified on a method overrides the global timeout. For example, `[Timeout(1000)]` on a method marked with [AssemblyCleanup] will override the global `assemblyCleanup` timeout.
+
+Example:
+
+```json
+{
+  "mstest": {
+    "timeout": {
+        "assemblyCleanup": 0,
+        "assemblyInitialize": 0,
+        "classCleanup": 0,
+        "classInitialize": 0,
+        "test": 0,
+        "testCleanup": 0,
+        "testInitialize": 0,
+        "useCooperativeCancellation": false
+    }
+  }
+}
+```
 
 ### Example *testconfig.json* file
 

@@ -5,9 +5,24 @@ summary: Welcome to what's new in .NET and .NET docs. Use this page to navigate 
 metadata:
   title: .NET what's new?
   description: Learn about new .NET features and new and updated content in .NET docs.
-  ms.date: 02/01/2025
+  ms.date: 02/12/2025
   ms.topic: landing-page
 landingContent:
+- title: .NET 10 release updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: .NET 10
+      url: ../core/whats-new/dotnet-10/overview.md
+    - text: ASP.NET Core 10.0
+      url: /aspnet/core/release-notes/aspnetcore-10.0
+    - text: .NET MAUI 10
+      url: /dotnet/maui/whats-new/dotnet-10
+    - text: EF Core 10
+      url: /ef/core/what-is-new/ef-core-10.0/whatsnew
+    - text: Windows Forms 10
+      url: /dotnet/desktop/winforms/whats-new/net100
+
 - title: .NET 9 release updates
   linkLists:
   - linkListType: whats-new
@@ -22,22 +37,6 @@ landingContent:
       url: /ef/core/what-is-new/ef-core-9.0/whatsnew
     - text: Documentation updates
       url: dotnet-9-release.md
-- title: .NET 8 release updates
-  linkLists:
-  - linkListType: whats-new
-    links:
-    - text: .NET 8
-      url: ../core/whats-new/dotnet-8/overview.md
-    - text: ASP.NET Core 8.0
-      url: /aspnet/core/release-notes/aspnetcore-8.0
-    - text: .NET MAUI 8
-      url: /dotnet/maui/whats-new/dotnet-8
-    - text: EF Core 8
-      url: /ef/core/what-is-new/ef-core-8.0/whatsnew
-    - text: Windows Forms (.NET 8)
-      url: /dotnet/desktop/winforms/whats-new/net80
-    - text: WPF (.NET 8)
-      url: /dotnet/desktop/wpf/whats-new/net80
 - title: Latest documentation updates
   linkLists:
   - linkListType: whats-new

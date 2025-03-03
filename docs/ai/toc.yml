@@ -3,8 +3,8 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
-- name: Quickstart - Connect to and prompt an AI model
-  href: quickstarts/quickstart-openai-summarize-text.md
+- name: "Quickstart: Connect to and prompt an AI model"
+  href: /dotnet/ai/quickstarts/prompt-model
 - name: AI frameworks and SDKs
   items:
   - name: Overview
@@ -13,30 +13,26 @@ items:
     href: ai-extensions.md
   - name: Semantic Kernel
     href: semantic-kernel-dotnet-overview.md
-- name: Learning resources and samples
-  href: azure-ai-for-dotnet-developers.md
 - name: Quickstarts
   items:
   - name: Build a chat app
-    href: quickstarts/get-started-openai.md
+    href: /dotnet/ai/quickstarts/build-chat-app
   - name: Build a .NET AI vector search app
-    href: quickstarts/quickstart-ai-chat-with-data.md
+    href: /dotnet/ai/quickstarts/build-vector-search-app
   - name: Execute a local .NET function
-    href: quickstarts/quickstart-azure-openai-tool.md
+    href: /dotnet/ai/quickstarts/use-function-calling
   - name: Generate images
-    href: quickstarts/quickstart-openai-generate-images.md
+    href: /dotnet/ai/quickstarts/generate-images
   - name: Chat with a local AI model
-    href: quickstarts/quickstart-local-ai.md
+    href: /dotnet/ai/quickstarts/chat-local-model
   - name: Build a minimal AI assistant
-    href: quickstarts/quickstart-assistants.md
+    href: /dotnet/ai/quickstarts/create-assistant
   - name: Get started using the AI app templates
     href: quickstarts/quickstart-visual-studio-ai-templates.md
 - name: Concepts
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: How agents and copilots work with LLMs
-    href: conceptual/agents.md
   - name: Tokens
     href: conceptual/understanding-tokens.md
   - name: Embeddings
@@ -55,7 +51,7 @@ items:
     href: conceptual/understanding-openai-functions.md
 - name: Chat with your data (RAG)
   items:
-    - name: Get started with the chat sample 
+    - name: Get started with the RAG sample
       href: get-started-app-chat-template.md
     - name: Implement RAG using vector search
       href: tutorials/tutorial-ai-vector-search.md
@@ -79,5 +75,13 @@ items:
     href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
 - name: Evaluation
   items:
-  - name: Evaluate LLM prompt completions
+  - name: The Microsoft.Extensions.AI.Evaluation libraries
+    href: conceptual/evaluation-libraries.md
+  - name: "Quickstart: Evaluate a model's response"
+    href: quickstarts/evaluate-ai-response.md
+  - name: "Tutorial: Evaluate LLM prompt completions"
     href: tutorials/llm-eval.md
+- name: Resources
+  items:
+  - name: Azure AI samples and docs
+    href: azure-ai-for-dotnet-developers.md

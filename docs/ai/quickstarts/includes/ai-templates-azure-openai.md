@@ -87,7 +87,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
-# [Visual Studio](#tab/visual-studio)
+# [Visual Studio](#tab/configure-visual-studio)
 
 1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
 
@@ -99,7 +99,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 }
 ```
 
-# [.NET CLI](#tab/dotnet-cli)
+# [.NET CLI](#tab/configure-dotnet-cli)
 
 ```dotnetcli
 dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>

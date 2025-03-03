@@ -6,10 +6,6 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Create a .NET AI app to chat with custom data using the AI app template extensions
-
-In this quickstart, you learn how to create a .NET AI app to chat with custom data using the .NET AI app template extensions. These extensions provide additional starter app templates for Visual Studio and the .NET CLI. The templates are designed to streamline the  getting started experience for building AI apps with .NET by handling common setup tasks and configurations for you.
-
 ## Prerequisites
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
@@ -81,7 +77,7 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
 
 :::zone target="docs" pivot="azure-openai"
 
-## Configure access the GitHub Models 
+## Configure access to GitHub Models
 
 To authenticate to GitHub models from your code, you'll need to create a GitHub personal access token:
 
@@ -96,7 +92,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
-# [Visual Studio](#tab/visual-studio)
+# [Visual Studio](#tab/configure-visual-studio)
 
 1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
 
@@ -108,7 +104,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 }
 ```
 
-# [.NET CLI](#tab/dotnet-cli)
+# [.NET CLI](#tab/configure-dotnet-cli)
 
 ```dotnetcli
 dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>

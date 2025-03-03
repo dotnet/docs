@@ -8,10 +8,6 @@ author: alexwolfmsft
 ms.author: alexwolf
 ---
 
-# Create a .NET AI app to chat with custom data using the AI app template extensions
-
-In this quickstart, you learn how to create a .NET AI app to chat with custom data using the .NET AI app template extensions. These extensions provide additional starter app templates for Visual Studio and the .NET CLI. The templates are designed to streamline the  getting started experience for building AI apps with .NET by handling common setup tasks and configurations for you.
-
 ## Prerequisites
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)

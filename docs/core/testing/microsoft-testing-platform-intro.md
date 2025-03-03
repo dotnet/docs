@@ -47,6 +47,9 @@ The main driving factors for the evolution of the new testing platform are detai
 
 `Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, as typical with most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).
 
+> [!TIP]
+> You can ignore a specific exit code using the `--ignore-exit-code` command line option. You can also set command line options that apply to a specific test project in the project file using the `TestingPlatformCommandLineArguments` MSBuild property. One common use case is for test projects that have all the tests ignored, which will normally exit with exit code 8 (the test session ran zero tests). In this scenario, you can add `<TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --ignore-exit-code 8</TestingPlatformCommandLineArguments>` to your project file.
+
 > [!IMPORTANT]
 > By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md).
 

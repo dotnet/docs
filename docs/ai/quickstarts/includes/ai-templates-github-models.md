@@ -87,34 +87,32 @@ To authenticate to GitHub models from your code, you'll need to create a GitHub 
 
 ## Configure the app
 
-The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
 
-1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
+# [Visual Studio](#tab/configure-visual-studio)
 
-  # [Visual Studio](#tab/configure-visual-studio)
-  
-  1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
-  
-  2. Add the following key and value:
-  
-    ```json
-    {
-        "GitHubModels:Token": "<your-personal-access-token>"
-    }
-    ```
-  
-  # [.NET CLI](#tab/configure-dotnet-cli)
-  
-  ```dotnetcli
-  dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>
+1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+
+2. Add the following key and value:
+
+  ```json
+  {
+      "GitHubModels:Token": "<your-personal-access-token>"
+  }
   ```
-  
-  ---
 
-1. By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
+# [.NET CLI](#tab/configure-dotnet-cli)
 
-    ```csharp
-    // Update these parameter values to match your Azure OpenAI model deployment names
-    var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
-    var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
-    ```
+```dotnetcli
+dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>
+```
+
+---
+
+By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
+
+  ```csharp
+  // Update these parameter values to match your Azure OpenAI model deployment names
+  var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
+  var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
+  ```

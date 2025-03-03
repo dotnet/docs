@@ -84,34 +84,32 @@ To use the .NET AI templates, you'll need to create and authenticate to an Azure
 
 ## Configure the app
 
-The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
 
 > [!NOTE]
 > To avoid authentication errors, make sure you are signed-in to Visual Studio or the Azure CLI with a user that is assigned the **Azure AI Developer** role on your Azure OpenAI resource.
 
-1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
+# [Visual Studio](#tab/configure-visual-studio)
 
-  # [Visual Studio](#tab/configure-visual-studio)
-  
-  1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
-  
-  2. Add the following key and value:
-  
-    ```json
-    {
-        "AzureOpenAi:Endpoint": "<your-endpoint>"
-    }
-    ```
-  
-  # [.NET CLI](#tab/configure-dotnet-cli)
-  
-  ```dotnetcli
-  dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
+1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+
+2. Add the following key and value:
+
+  ```json
+  {
+      "AzureOpenAi:Endpoint": "<your-endpoint>"
+  }
   ```
-  
-  ---
 
-1. By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
+# [.NET CLI](#tab/configure-dotnet-cli)
+
+```dotnetcli
+dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
+```
+
+---
+
+By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
 
     ```csharp
     // Update these parameter values to match your Azure OpenAI model deployment names

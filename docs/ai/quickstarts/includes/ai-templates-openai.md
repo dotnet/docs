@@ -70,34 +70,33 @@ After you install the AI app templates, you can use them to create starter apps 
 
 ## Configure the app
 
-The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the key for your OpenAI service that the app will use to connect and authenticate. By default, the app template searches for this value in the project's local .NET user secrets.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the key for your OpenAI service that the app will use to connect and authenticate. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
 
-1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
-  # [Visual Studio](#tab/configure-visual-studio)
-  
-  1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
-  
-  2. Add the following key and value:
-  
-    ```json
-    {
-        "OpenAi:Key": "<your-openai-key>"
-    }
-    ```
-  
-  # [.NET CLI](#tab/configure-dotnet-cli)
-  
-  ```dotnetcli
-  dotnet user-secrets set OpenAi:Key <your-openai-key>
+# [Visual Studio](#tab/configure-visual-studio)
+
+1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+
+2. Add the following key and value:
+
+  ```json
+  {
+      "OpenAi:Key": "<your-openai-key>"
+  }
   ```
-  
-  ---
 
-1. By default, the app template assumes the use of certain AI models. If necessary, update the model name parameters to match your the models you want to target:
+# [.NET CLI](#tab/configure-dotnet-cli)
 
-    ```csharp
-    // Update these parameter values to match your preferred OpenAI models
-    var chatClient = openAIClient.AsChatClient("gpt-4o-mini");
-    var embeddingGenerator = openAIClient.AsEmbeddingGenerator("text-embedding-3-small");
-    ```
+```dotnetcli
+dotnet user-secrets set OpenAi:Key <your-openai-key>
+```
+
+---
+
+By default, the app template assumes the use of certain AI models. If necessary, update the model name parameters to match your the models you want to target:
+
+```csharp
+// Update these parameter values to match your preferred OpenAI models
+var chatClient = openAIClient.AsChatClient("gpt-4o-mini");
+var embeddingGenerator = openAIClient.AsEmbeddingGenerator("text-embedding-3-small");
+```

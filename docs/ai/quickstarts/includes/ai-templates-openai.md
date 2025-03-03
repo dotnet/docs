@@ -17,7 +17,7 @@ ms.author: alexwolf
 The **AI Chat Web App** template is available as a template package through NuGet. Use the [`dotnet new`](../../../core/tools/dotnet-new-install.md) command to install the package:
 
 ```dotnetcli
-dotnet new --install Microsoft.Extensions.AI.Templates
+dotnet new install Microsoft.Extensions.AI.Templates
 ```
 
 ## Create the .NET AI app

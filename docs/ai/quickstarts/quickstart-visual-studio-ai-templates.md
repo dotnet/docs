@@ -19,10 +19,6 @@ In this quickstart, you learn how to create a .NET AI app to chat with custom da
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
 * Visual Studio 2022 - [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
-* Access to an [Azure OpenAI service](/azure/ai-services/openai/how-to/provisioned-get-started) with the following configurations:
-  - A `gpt-4o-mini` model deployed
-  - A `text-embedding-3-small` model deployed
-  - The [Azure AI Developer](/azure/role-based-access-control/built-in-roles/ai-machine-learning#azure-ai-developer) role assigned to the user you used to sign-in to Visual Studio or the Azure CLI with locally
 
 :::zone-end
 
@@ -166,8 +162,22 @@ The sample app you created is a Blazor Interactive Server web app preconfigured 
   - An `IChatClient` service to chat back and forth with the generative AI model
   - An `IEmbeddingGenerator` service that is used to generate embeddings, which are essential for vector search functionality
   - A `JsonVectorStore` to act as an in-memory vector store
-- Registers a SQLite database context service to handle ingesting documents. The app is preconfigured to ingest whatever documents you add to the `Data` folder of the project, including the provided `Example.pdf` file.
+- Registers a SQLite database context service to handle ingesting documents. The app is preconfigured to ingest whatever documents you add to the `Data` folder of the project, including the provided example files.
 - Provides a complete chat UI using Blazor components. The UI handles rich formatting for the AI responses and provides features such as citations for response data.
+
+:::zone target="docs" pivot="azure-openai"
+
+## Create and configure the Azure OpenAI resource
+
+To use the .NET AI templates, you'll need to create and authenticate to an Azure OpenAI service:
+
+1. [Create an Azure OpenAI Service resource](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) if you don't already have one available.
+
+2. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`). See the Azure OpenAI documentation to learn how to [Deploy a model](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model).
+
+3. Configure Azure OpenAI for Keyless Authentication. The AI template is configured to use keyless authentication (also known as Managed Identity, with Entra ID). In the Azure Portal, on the Azure OpenAI resource overview page, navigate to the access control settings. Assign yourself the `Cognitive Services OpenAI User` role. [Learn more](https://learn.microsoft.com/azure/developer/ai/keyless-connections).
+
+:::zone-end
 
 ## Configure the app
 
@@ -177,9 +187,25 @@ The **AI Chat with Custom Data** app is almost ready to go as soon as it's creat
 
 1. Create a local .NET user secret to store the Azure OpenAI service endpoint:
 
-    ```dotnetcli
-    dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
-    ```
+# [Visual Studio](#tab/visual-studio)
+
+1. In Visual Studio, right-click on your project in the Solution Explorer and select "Manage User Secrets". This opens a `secrets.json` file where you can store your API keys without them being tracked in source control.
+
+2. Add the following key and value:
+
+```json
+{
+    "GitHubModels:Token": "YOUR-TOKEN"
+}
+```
+
+# [.NET CLI](#tab/dotnet-cli)
+
+```dotnetcli
+dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
+```
+
+---
 
 1. By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
 
@@ -244,11 +270,11 @@ The **AI Chat with Custom Data** app is almost ready to go as soon as it's creat
 
     :::image type="content" source="../media/ai-templates/app-ui.png" alt-text="A screenshot showing the UI of the .NET AI app template.":::
 
-1. Enter a prompt into the input box such as *"What are some essential tools in the survival kit?"* to ask your AI model a question about the ingested data from the `Example.pdf` file.
+1. Enter a prompt into the input box such as *"What are some essential tools in the survival kit?"* to ask your AI model a question about the ingested data from the example files.
 
     :::image type="content" source="../media/ai-templates/app-ui-question.png" alt-text="A screenshot showing the conversational UI of the .NET AI app template.":::
 
-    The app responds with an answer to the question and provides citations of where it found the data. You can click on one of the citations to be directed to the relevant section of the `Example.pdf` file.
+    The app responds with an answer to the question and provides citations of where it found the data. You can click on one of the citations to be directed to the relevant section of the example files.
 
 ## Next steps
 

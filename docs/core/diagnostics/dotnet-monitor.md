@@ -1,7 +1,7 @@
 ---
 title: dotnet-monitor diagnostic tool - .NET
 description: Learn how to install and use the dotnet-monitor tool to collect dumps, traces, logs, and metrics from applications in production environments.
-ms.date: 06/16/2022
+ms.date: 03/04/2025
 ms.topic: reference
 ---
 # Diagnostic monitoring and collection utility (dotnet-monitor)

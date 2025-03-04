@@ -12,7 +12,7 @@ ms.author: alexwolf
 Azure Migrate application and code assessment for .NET integrates with the GitHub Copilot extension for Visual Studio. Together, they provide conversational analysis about your migration reports. GitHub Copilot can help you learn more about the overall results and specific issues and determine next steps. In this article, you learn how to use GitHub Copilot to analyze the results of a completed Azure migration report.
 
 > [!NOTE]
-> Copilot integration is not available natively using the [.NET CLI version](/dotnet/azure/migration/appcat/dotnet-cli) of Azure Migrate application and code assessment for .NET.
+> Copilot integration is not available natively using the [.NET CLI version](dotnet-cli.md) of Azure Migrate application and code assessment for .NET.
 
 ## Prerequisites
 

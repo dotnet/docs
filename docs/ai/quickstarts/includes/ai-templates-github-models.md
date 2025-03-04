@@ -51,7 +51,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. Create a new app with the `dotnet new` command and the following parameters:
 
     ```dotnetcli
-    dotnet new aichatweb --framework "net9.0" --AIServiceProvider "githubmodels" --VectorStore "local"
+    dotnet new aichatweb --framework net9.0 --AiServiceProvider githubmodels --VectorStore local
     ```
 
     The .NET CLI creates a new .NET 9.0 app with the configurations you specified.
@@ -82,7 +82,7 @@ To authenticate to GitHub models from your code, you'll need to create a GitHub 
 
 1. Navigate to the **Personal access tokens** page of your GitHub account settings.
 1. Select **Generate new token**.
-1. Enter a **Token name** and complete the rest of the form fields with your desired preferences. Select **Generate token**.
+1. Enter a **Token name** and then select **Generate token** at the bottom of the page.
 1. Copy the token for use in the steps ahead.
 
 ## Configure the app

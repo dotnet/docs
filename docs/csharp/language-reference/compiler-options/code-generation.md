@@ -80,6 +80,7 @@ By default, compiler output from a given set of inputs is unique, since the comp
   - @ response files
   - Analyzers
   - Rulesets
+  - [Source Link](https://github.com/dotnet/sourcelink) data extracted from the repository (e.g. git commit SHA, repository URL, etc.)
   - Other files that may be used by analyzers
 - The current culture (for the language in which diagnostics and exception messages are produced).
 - The default encoding (or the current code page) if the encoding isn't specified.

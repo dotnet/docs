@@ -41,7 +41,7 @@ When running tests in .NET, there are two components involved: the test platform
 
 The test platform is the engine that runs the tests and acts as a communication channel with IDEs. For example, Visual Studio can send a discovery request to the test platform so that it can display the available tests in Test Explorer. The test platform responds back to the IDE with the tests it found. Similar communication happens for test execution.
 
-VSTest has been used for many years in .NET and was the only test platform in the ecosystem. Early in 2024, the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./unit-testing-platform-intro.md), was released.
+VSTest has been used for many years in .NET and was the only test platform in the ecosystem. Early in 2024, the first stable version of a new test platform, called [Microsoft.Testing.Platform (MTP)](./microsoft-testing-platform-intro.md), was released.
 
 ### Test frameworks
 

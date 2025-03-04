@@ -197,8 +197,8 @@ Review deprecated attributes, and replace them with MSTest v3 alternatives where
 
 ## Code analyzers and best practices
 
-MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings. This is automatically available when using MSTest package or MSTest.Sdk, or you can install [MSTest Analyzer package](https://www.nuget.org/packages/MSTest.Analyzers).
+MSTest v3 includes built-in code analyzers for best practices, avoiding configuration pitfalls, and proper use of MSTest attributes and settings. This is automatically available when using MSTest package or MSTest.Sdk, and starting with MSTest 3.7, MSTest.Analyzers is a transitive dependency of MSTest.TestFramework.
 
 ## Additional resources
 
-- [New testing platform](unit-testing-platform-intro.md)
+- [Microsoft.Testing.Platform overview](microsoft-testing-platform-intro.md)

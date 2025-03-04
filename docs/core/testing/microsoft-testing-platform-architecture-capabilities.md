@@ -54,7 +54,7 @@ public interface ITestFrameworkCapability : ICapability
 }
 ```
 
-As you can see, the `ICapability` interface is a *marker* interface because it can represent *any capability*, and the actual implementation will be context dependent. You'll also observe the `ITestFrameworkCapability`, which inherits from `ICapability` to classify the capability. The capability system's generic nature allows for convenient grouping by context. The `ITestFrameworkCapability` groups all the capabilities implemented by the [testing framework](./unit-testing-platform-architecture-extensions.md#create-a-testing-framework). The `ICapabilities<TCapability>` interface reveals the *set* of all capabilities implemented by an extension. Similarly, for the base one, there's a context-specific testing framework called `ITestFrameworkCapabilities`. The `ITestFrameworkCapabilities` is provided to the platform during the [testing framework registration](./unit-testing-platform-architecture-extensions.md#register-a-testing-framework) process.
+As you can see, the `ICapability` interface is a *marker* interface because it can represent *any capability*, and the actual implementation will be context dependent. You'll also observe the `ITestFrameworkCapability`, which inherits from `ICapability` to classify the capability. The capability system's generic nature allows for convenient grouping by context. The `ITestFrameworkCapability` groups all the capabilities implemented by the [testing framework](./microsoft-testing-platform-architecture-extensions.md#create-a-testing-framework). The `ICapabilities<TCapability>` interface reveals the *set* of all capabilities implemented by an extension. Similarly, for the base one, there's a context-specific testing framework called `ITestFrameworkCapabilities`. The `ITestFrameworkCapabilities` is provided to the platform during the [testing framework registration](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework) process.
 
 To create a capability that addresses the aforementioned scenario, you define it as follows:
 
@@ -102,7 +102,7 @@ else
 
 The preceding example illustrates how the capability infrastructure enables a powerful mechanism for communicating abilities between the components involved in a test session. While the sample demonstrates a capability specifically designed for the testing framework, any component can expose and implement extensions that inherit from `ICapability`.
 
-It's evident that not all details can be communicated through an interface. Considering the previous example, what should the extension expect if the `CanProvidePerTestCpuConsumption` is supported? What kind of custom information is expected to be transmitted via the [IMessageBus](./unit-testing-platform-architecture-services.md#the-imessagebus-service) by the testing framework? The solution is **documentation of the capability**. It's the responsibility of the capability *owner* to design, ship, and document it as clearly as possible to assist implementors who want to effectively *collaborate* with the extension that requires the specific capability.
+It's evident that not all details can be communicated through an interface. Considering the previous example, what should the extension expect if the `CanProvidePerTestCpuConsumption` is supported? What kind of custom information is expected to be transmitted via the [IMessageBus](./microsoft-testing-platform-architecture-services.md#the-imessagebus-service) by the testing framework? The solution is **documentation of the capability**. It's the responsibility of the capability *owner* to design, ship, and document it as clearly as possible to assist implementors who want to effectively *collaborate* with the extension that requires the specific capability.
 
 For instance, the TRX report extension enables the testing framework to implement the necessary capability to accurately generate a TRX report. The extension to register is included in the <https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport> NuGet package, but the capability to implement is found in the *contract only*<https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions> NuGet package.
 
@@ -115,7 +115,7 @@ In conclusion, let's summarize the primary aspects of the capability system:
 
 ## Framework capabilities
 
-The platform exposes a specialized interface named `ITestFrameworkCapability` that is the base of all capabilities exposed for test frameworks. These capabilities are provided when [registering the test framework to the platform](./unit-testing-platform-architecture-extensions.md#register-a-testing-framework).
+The platform exposes a specialized interface named `ITestFrameworkCapability` that is the base of all capabilities exposed for test frameworks. These capabilities are provided when [registering the test framework to the platform](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework).
 
 ### `IBannerMessageOwnerCapability`
 
@@ -123,4 +123,4 @@ An optional [test framework capability](#framework-capabilities) that allows the
 
 This capability implementation allows you to abstract away the various conditions that the test framework may need to consider when deciding whether or not the banner message should be displayed.
 
-The platform exposes the [`IPlatformInformation` service](./unit-testing-platform-architecture-services.md#the-iplatforminformation-service) to provide some information about the platform that could be useful when building your custom banner message.
+The platform exposes the [`IPlatformInformation` service](./microsoft-testing-platform-architecture-services.md#the-iplatforminformation-service) to provide some information about the platform that could be useful when building your custom banner message.

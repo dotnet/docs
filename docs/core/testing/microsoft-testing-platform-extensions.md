@@ -14,30 +14,30 @@ Each and every extension is shipped with its own licensing model (some less perm
 
 ## Extensions
 
-**[Code Coverage](./unit-testing-platform-extensions-code-coverage.md)**
+**[Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md)**
 
 Extensions designed to provide code coverage support.
 
-**[Diagnostics](./unit-testing-platform-extensions-diagnostics.md)**
+**[Diagnostics](./microsoft-testing-platform-extensions-diagnostics.md)**
 
 Extensions offering diagnostics and troubleshooting functionalities.
 
-**[Hosting](./unit-testing-platform-extensions-hosting.md)**
+**[Hosting](./microsoft-testing-platform-extensions-hosting.md)**
 
 Extensions affecting how the test execution is hosted.
 
-**[Policy](./unit-testing-platform-extensions-policy.md)**
+**[Policy](./microsoft-testing-platform-extensions-policy.md)**
 
 Extensions allowing to define policies around the test execution.
 
-**[Test Reports](./unit-testing-platform-extensions-test-reports.md)**
+**[Test Reports](./microsoft-testing-platform-extensions-test-reports.md)**
 
 Extensions allowing to produce test report files that contains information about the execution and outcome of the tests.
 
-**[VSTest Bridge](./unit-testing-platform-extensions-vstest-bridge.md)**
+**[VSTest Bridge](./microsoft-testing-platform-extensions-vstest-bridge.md)**
 
 This extension provides a compatibility layer with VSTest allowing the test frameworks depending on it to continue supporting running in VSTest mode (`vstest.console.exe`, usual `dotnet test`, `VSTest task` on AzDo, Test Explorers of Visual Studio and Visual Studio Code...).
 
-**[Microsoft Fakes](./unit-testing-platform-extensions-fakes.md)**
+**[Microsoft Fakes](./microsoft-testing-platform-extensions-fakes.md)**
 
 This extension provides support to execute a test project that makes use of `Microsoft Fakes`.

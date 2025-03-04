@@ -52,7 +52,7 @@ public static class ServiceProviderExtensions
 }
 ```
 
-Most of the registration factories exposed by extension points provide access to the `IServiceProvider`: For example, when [registering the testing framework](./unit-testing-platform-architecture-extensions.md#register-a-testing-framework), the `IServiceProvider` is passed as a parameter to the factory method.
+Most of the registration factories exposed by extension points provide access to the `IServiceProvider`: For example, when [registering the testing framework](./microsoft-testing-platform-architecture-extensions.md#register-a-testing-framework), the `IServiceProvider` is passed as a parameter to the factory method.
 
 ```csharp
 ITestApplicationBuilder RegisterTestFramework(
@@ -166,7 +166,7 @@ public interface ICommandLineOptions
 }
 ```
 
-The `ICommandLineOptions` can be obtained through certain APIs, such as the [ICommandLineOptionsProvider](./unit-testing-platform-architecture-extensions.md#the-icommandlineoptionsprovider-extensions), or you can retrieve an instance of it from the [IServiceProvider](#microsofttestingplatform-services) via the extension method `serviceProvider.GetCommandLineOptions()`.
+The `ICommandLineOptions` can be obtained through certain APIs, such as the [ICommandLineOptionsProvider](./microsoft-testing-platform-architecture-extensions.md#the-icommandlineoptionsprovider-extensions), or you can retrieve an instance of it from the [IServiceProvider](#microsofttestingplatform-services) via the extension method `serviceProvider.GetCommandLineOptions()`.
 
 `ICommandLineOptions.IsOptionSet(string optionName)`: This method allows you to verify whether a specific option has been specified. When specifying the `optionName`, omit the `--` prefix. For example, if the user inputs `--myOption`, you should simply pass `myOption`.
 
@@ -319,16 +319,16 @@ public interface IData
 
 Consider the following details about the parameters:
 
-* `IDataProducer`: The `IDataProducer` communicates to the message bus the `Type` of information it can supply and establishes ownership through inheritance from the base interface [IExtension](./unit-testing-platform-architecture-extensions.md#the-iextension-interface). This implies that you can't indiscriminately push data to the message bus; you must declare the data type produced in advance. If you push unexpected data, an exception will be triggered.
+* `IDataProducer`: The `IDataProducer` communicates to the message bus the `Type` of information it can supply and establishes ownership through inheritance from the base interface [IExtension](./microsoft-testing-platform-architecture-extensions.md#the-iextension-interface). This implies that you can't indiscriminately push data to the message bus; you must declare the data type produced in advance. If you push unexpected data, an exception will be triggered.
 
 * `IData`: This interface serves as a placeholder where you only need to provide descriptive details such as the name and a description. The interface doesn't reveal much about the data's nature, which is intentional. It implies that the test framework and extensions can push any type of data to the bus, and this data can be consumed by any registered extension or the test framework itself.
 
 This approach facilitates the evolution of the information exchange process, preventing breaking changes when an extension is unfamiliar with new data. **It allows different versions of extensions and the test framework to operate in harmony, based on their mutual understanding**.
 
-The opposite end of the bus is referred to as a [consumer](./unit-testing-platform-architecture-extensions.md#the-idataconsumer-extensions), which is subscribed to a specific type of data and can thus consume it.
+The opposite end of the bus is referred to as a [consumer](./microsoft-testing-platform-architecture-extensions.md#the-idataconsumer-extensions), which is subscribed to a specific type of data and can thus consume it.
 
 > [!IMPORTANT]
-> Always use *await* the call to `PublishAsync`. If you don't, the `IData` might not be processed correctly by the testing platform and extensions, which could lead to subtle bugs. It's only after you've returned from the *await* that you can be assured that the `IData` has been queued for processing on the message bus. Regardless of the extension point you're working on, ensure that you've awaited all `PublishAsync` calls before exiting the extension. For example, if you're implementing the [`testing framework`](./unit-testing-platform-architecture-extensions.md#create-a-testing-framework), you should not call `Complete` on the [requests](./unit-testing-platform-architecture-extensions.md#handling-requests) until you've awaited all `PublishAsync` calls for that specific request.
+> Always use *await* the call to `PublishAsync`. If you don't, the `IData` might not be processed correctly by the testing platform and extensions, which could lead to subtle bugs. It's only after you've returned from the *await* that you can be assured that the `IData` has been queued for processing on the message bus. Regardless of the extension point you're working on, ensure that you've awaited all `PublishAsync` calls before exiting the extension. For example, if you're implementing the [`testing framework`](./microsoft-testing-platform-architecture-extensions.md#create-a-testing-framework), you should not call `Complete` on the [requests](./microsoft-testing-platform-architecture-extensions.md#handling-requests) until you've awaited all `PublishAsync` calls for that specific request.
 
 ## The `IOutputDevice` service
 
@@ -360,7 +360,7 @@ public interface IOutputDeviceData
 }
 ```
 
-The `IOutputDeviceDataProducer` extends the [`IExtension`](./unit-testing-platform-architecture-extensions.md#the-iextension-interface) and provides information about the sender to the *output device*.
+The `IOutputDeviceDataProducer` extends the [`IExtension`](./microsoft-testing-platform-architecture-extensions.md#the-iextension-interface) and provides information about the sender to the *output device*.
 
 The `IOutputDeviceData` serves as a placeholder interface. The concept behind `IOutputDevice` is to accommodate more intricate information than just colored text. For instance, it could be a complex object that can be graphically represented.
 

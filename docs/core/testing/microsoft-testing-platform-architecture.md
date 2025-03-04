@@ -81,7 +81,7 @@ Passed! - Failed: 0, Passed: 1, Skipped: 0, Total: 1, Duration: 5ms - Contoso.Un
 ```
 
 > [!NOTE]
-> The known exit codes returned by the `ITestApplication.RunAsync()` call are detailed in [platform exit codes](./unit-testing-platform-exit-codes.md).
+> The known exit codes returned by the `ITestApplication.RunAsync()` call are detailed in [platform exit codes](./microsoft-testing-platform-exit-codes.md).
 
 ## Step 2: Extending the platform
 
@@ -158,10 +158,10 @@ The above section provides a brief introduction to the architecture of the testi
 
 ## Step 3: Comprehensive Overview of Extension points
 
-Let's start by getting familiar with the concept of [capabilities](./unit-testing-platform-architecture-capabilities.md) before diving into the various [extensions points](./unit-testing-platform-architecture-extensions.md).
+Let's start by getting familiar with the concept of [capabilities](./microsoft-testing-platform-architecture-capabilities.md) before diving into the various [extensions points](./microsoft-testing-platform-architecture-extensions.md).
 
 ## Step 4: Available services
 
 The testing platform offers valuable services to both the testing framework and extension points. These services cater to common needs such as accessing the configuration, parsing and retrieving command-line arguments, obtaining the logging factory, and accessing the logging system, among others. `IServiceProvider` implements the _service locator pattern_ for the testing platform.
 
-All the services, helpers, and technical information about how to access and use these services is listed in [Microsoft.Testing.Platform Services documentation](./unit-testing-platform-architecture-services.md).
+All the services, helpers, and technical information about how to access and use these services is listed in [Microsoft.Testing.Platform Services documentation](./microsoft-testing-platform-architecture-services.md).

@@ -14,11 +14,11 @@ This article shows how to use `dotnet test` to run all tests in a solution (_*.s
 
 ## `dotnet test` integration
 
-The [dotnet test](../tools/dotnet-test.md) command is a way to run tests from solutions, projects, or already built assemblies. [Microsoft.Testing.Platform](unit-testing-platform-intro.md) hooks up into this infrastructure to provide a unified way to run tests, especially when migrating from VSTest to `Microsoft.Testing.Platform`.
+The [dotnet test](../tools/dotnet-test.md) command is a way to run tests from solutions, projects, or already built assemblies. [Microsoft.Testing.Platform](microsoft-testing-platform-intro.md) hooks up into this infrastructure to provide a unified way to run tests, especially when migrating from VSTest to `Microsoft.Testing.Platform`.
 
 ### `dotnet test` integration - VSTest mode
 
-`Microsoft.Testing.Platform` provides a [compatibility layer (VSTest Bridge)](./unit-testing-platform-extensions-vstest-bridge.md) to work with `dotnet test` seamlessly.
+`Microsoft.Testing.Platform` provides a [compatibility layer (VSTest Bridge)](./microsoft-testing-platform-extensions-vstest-bridge.md) to work with `dotnet test` seamlessly.
 
 Tests can be run by running:
 

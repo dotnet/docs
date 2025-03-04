@@ -138,3 +138,15 @@ groups:
       title: OpenAI
     - id: azure-openai
       title: Azure OpenAI
+- id: meai-targets
+  title: MEAI targets
+  prompt: Choose a host service for your AI models
+  pivots:
+    - id: github-models
+      title: GitHub Models
+    - id: azure-openai
+      title: Azure OpenAI
+    - id: openai
+      title: OpenAI
+    - id: ollama
+      title: Ollama

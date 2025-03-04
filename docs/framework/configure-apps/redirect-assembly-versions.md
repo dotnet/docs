@@ -27,7 +27,7 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
  In addition, you might want to manually redirect assembly binding for third-party assemblies if there are multiple versions available.
 
 > [!TIP]
-> If you update a NuGet package that your app references and then start to see new errors, you might need to enable automatic binding redirects or manually add a binding redirect. For example, the following app config file excerpt adds a binding redirect for the [System.Memory package](https://www.nuget.org/packages/System.Memory):
+> If you update a NuGet package that your application references indirectly and start to see new errors like `FileLoadException`, `MissingMethodException`, `TypeLoadException`, or `FileNotFoundException`, you might need to enable automatic binding redirects or manually add a binding redirect. This is normal when updating NuGet packages and is a result of some packages being built against an older version of a dependency.  The following app config file excerpt adds a binding redirect for the [System.Memory package](https://www.nuget.org/packages/System.Memory):
 >
 > ```xml
 > <dependentAssembly>

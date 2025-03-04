@@ -3,16 +3,16 @@ title: Authenticate .NET apps to Azure services during local development using s
 description: Learn how to authenticate your app to Azure services during local development using dedicated application service principals.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 08/02/2024
+ms.date: 03/04/2025
 ---
 
 # Authenticate .NET apps to Azure services during local development using service principals
 
-Developers need to debug and test cloud apps on their local workstation. When an app runs on a developer's workstation during local development, it must still authenticate to any Azure services used by the app. This article covers how to set up dedicated application service principal objects to be used during local development.
+During local development, applications must authenticate to Azure to consume various Azure services. Two common approaches to local authentication are to use [Developer accounts](local-development-dev-account.md) or a service principal. This article explains how to use a dedicated application service principal.
 
 :::image type="content" source="../media/local-dev-service-principal-overview.png" alt-text="A diagram showing how a local .NET app uses the developer's credentials to connect to Azure by using locally installed development tools.":::
 
-Dedicated application service principals for local development allow you to follow the principle of least privilege during app development. Since permissions are scoped to exactly what's needed for the app during development, app code is prevented from accidentally accessing an Azure resource intended for use by a different app. This also prevents bugs from occurring when the app is moved to production because the app was over-privileged in the dev environment.
+Dedicated application service principals allow you to follow the principle of least privilege when accessing Azure resources. Permissions are scoped to the exact app requirements for development, so app code cannot accidentally access an Azure resource intended for use by other apps or services. This also prevents bugs from occurring when the app is moved to production because the app was over-privileged in the dev environment.
 
 An application service principal is set up for the app when the app is registered in Azure. When registering an app for local development, it's recommended to:
 
@@ -27,17 +27,30 @@ Application service principal objects are created with an app registration in Az
 
 ### [Azure portal](#tab/azure-portal)
 
-Sign in to the [Azure portal](https://portal.azure.com/) and follow these steps.
+1. In the Azure portal, navigate to the **App registrations** page.
+1. On the **App registrations** page, select **+ New registration**.
+1. On the **Register an application** page:
+    - Enter a descriptive name for the app registration. For example, you may want to include the app name and an identifier for the target environment, such as development or production.
+    - For the supported account types, select **Accounts in this organizational directory only (Microsoft Customer Led only - Single tenant)**, or whichever option best fits your requirements.
+1. Select **Register to register your app** and create the application service principal.
 
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Create app registration step 1](<../includes/local-dev-app-registration-azure-portal-1.md>)] | :::image type="content" source="../media/local-dev-app-registration-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to find and navigate to the App registrations page." lightbox="../media/local-dev-app-registration-azure-portal-1.png"::: |
-| [!INCLUDE [Create app registration step 2](<../includes/local-dev-app-registration-azure-portal-2.md>)] | :::image type="content" source="../media/local-dev-app-registration-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the New registration button in the App registrations page." lightbox="../media/local-dev-app-registration-azure-portal-2.png"::: |
-| [!INCLUDE [Create app registration step 3](<../includes/local-dev-app-registration-azure-portal-3.md>)] | :::image type="content" source="../media/local-dev-app-registration-azure-portal-3-240px.png" alt-text="A screenshot showing how to fill out the Register an application page by giving the app a name and specifying supported account types as accounts in this organizational directory only." lightbox="../media/local-dev-app-registration-azure-portal-3.png"::: |
-| [!INCLUDE [Create app registration step 4](<../includes/local-dev-app-registration-azure-portal-4.md>)] | :::image type="content" source="../media/local-dev-app-registration-azure-portal-4-240px.png" alt-text="A screenshot of the App registration page after the app registration has been completed. This screenshot shows the location of the application ID and tenant ID, which will be needed in a future step. It also shows the location of the link to use to add an application secret for the app." lightbox="../media/local-dev-app-registration-azure-portal-4.png"::: |
-| [!INCLUDE [Create app registration step 5](<../includes/local-dev-app-registration-azure-portal-5.md>)] | :::image type="content" source="../media/local-dev-app-registration-azure-portal-5-240px.png" alt-text="A screenshot showing the location of the link to use to create a new client secret on the certificates and secrets page." lightbox="../media/local-dev-app-registration-azure-portal-5.png"::: |
-| [!INCLUDE [Create app registration step 6](<../includes/local-dev-app-registration-azure-portal-6.md>)] | :::image type="content" source="../media/local-dev-app-registration-azure-portal-6-240px.png" alt-text="A screenshot showing the page where a new client secret is added for the application service principal create by the app registration process." lightbox="../media/local-dev-app-registration-azure-portal-6.png"::: |
-| [!INCLUDE [Create app registration step 7](<../includes/local-dev-app-registration-azure-portal-7.md>)] | :::image type="content" source="../media/local-dev-app-registration-azure-portal-7-240px.png" alt-text="A screenshot showing the page with the generated client secret." lightbox="../media/local-dev-app-registration-azure-portal-7.png"::: |
+    :::image type="content" source="../../media/app-registration.png" alt-text="A screenshot showing how to create an app registration in the Azure portal.":::
+
+1. On the **App registration page** for your app, review the following values:
+    - **Application (client) ID**: The ID the app uses to access Azure during local development.
+    - **Directory (tenant) ID**: This value will also be needed by your app when it authenticates to Azure.
+    - **Client credentials**: You must set the client credentials for the app before your app can authenticate to Azure and use Azure services.
+1. Copy the **Application (client) ID** and **Directory (tenant) ID** and paste them in a temporary location for later use in your app code configurations.
+1. Select **Add a certificate or secret** to set up credentials for your app.
+1. On the **Certificates & secrets** page, select **+ New client secret**.
+1. In the **Add a client secret** flyout panel that opens:
+    - For the **Description**, enter a value of Current.
+    - For the **Expires** value, leave the default recommended value of 180 days.
+    - Select **Add** to add the secret.
+1. On the **Certificates & secrets** page, you'll be shown the value of the client secret. Copy this value to a temporary location, as you'll need it in a future step.
+
+    > [!NOTE]
+    > This is the only time you will see this value. You may add an additional client secret without invalidating this client secret, but there is no way to display this value again.
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -61,7 +74,10 @@ The output of this command resembles the following JSON:
 }
 ```
 
-Copy this output into a temporary file in a text editor, as you'll need these values in a future step. This is the only place you ever see the client secret (password) for the service principal. You can, however, add a new password later without invalidating the service principal or existing passwords, if needed.
+Copy this output into a temporary file in a text editor, as you'll need these values in a future step.
+
+> [!NOTE]
+> This is the only time you will see this value. You may add an additional client secret without invalidating this client secret, but there is no way to display this value again.
 
 ---
 
@@ -75,14 +91,18 @@ Since there are typically multiple developers who work on an app, it's recommend
 
 ### [Azure portal](#tab/azure-portal)
 
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Create app group step 1](<../includes/local-dev-app-ad-group-azure-portal-1.md>)] | :::image type="content" source="../media/local-dev-app-ad-group-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search bar in the Azure portal to search for and navigate to the Microsoft Entra ID page." lightbox="../media/local-dev-app-ad-group-azure-portal-1.png"::: |
-| [!INCLUDE [Create app group step 2](<../includes/local-dev-app-ad-group-azure-portal-2.md>)] | :::image type="content" source="../media/local-dev-app-ad-group-azure-portal-2-240px.png" alt-text="A screenshot showing the location of the Groups menu item in the left-hand menu of the Microsoft Entra Default Directory page." lightbox="../media/local-dev-app-ad-group-azure-portal-2.png"::: |
-| [!INCLUDE [Create app group step 3](<../includes/local-dev-app-ad-group-azure-portal-3.md>)] | :::image type="content" source="../media/local-dev-app-ad-group-azure-portal-3-240px.png" alt-text="A screenshot showing the location of the New Group button in the All groups page." lightbox="../media/local-dev-app-ad-group-azure-portal-3.png"::: |
-| [!INCLUDE [Create app group step 4](<../includes/local-dev-app-ad-group-azure-portal-4.md>)] | :::image type="content" source="../media/local-dev-app-ad-group-azure-portal-4-240px.png" alt-text="A screenshot showing how to fill out the form to create a new Microsoft Entra group for the application. This screenshot also shows the location of the link to select to add members to this group." lightbox="../media/local-dev-app-ad-group-azure-portal-4.png"::: |
-| [!INCLUDE [Create app group step 5](<../includes/local-dev-app-ad-group-azure-portal-5.md>)] | :::image type="content" source="../media/local-dev-app-ad-group-azure-portal-5-240px.png" alt-text="A screenshot of the Add members dialog box showing how to select application service principals to be included in the group." lightbox="../media/local-dev-app-ad-group-azure-portal-5.png"::: |
-| [!INCLUDE [Create app group step 6](<../includes/local-dev-app-ad-group-azure-portal-6.md>)] | :::image type="content" source="../media/local-dev-app-ad-group-azure-portal-6-240px.png" alt-text="A screenshot of the New Group page showing how to complete the process by selecting the Create button." lightbox="../media/local-dev-app-ad-group-azure-portal-6.png"::: |
+1. Navigate to the **Microsoft Entra ID** overview page in the Azure portal.
+1. Select **Groups** from the left-hand menu.
+1. On the **All groups** page, select **New group**.
+1. On the **New group** page, fill out the following form fields:
+    - **Group type**: Select **Security**.
+    - **Group name**: Enter a name for the security group, which may include a reference to your app or environment name.
+    - **Group description**: Enter a description of the purpose of the group.
+1. Select the **No members selected** link under **Members** to add members to the group.
+1. In the flyout panel that opens, search for the service principal you created earlier and select it from the filtered results. Choose the **Select** button at the bottom of the panel.
+1. Select **Create** at the bottom of the **New group** page to create the group and return to the **All groups** page. You may need to wait a moment and refresh the page for the group to appear.
+
+    :::image type="content" source="../../media/create-group.png" alt-text="A screenshot showing how to create a group in the Azure portal.":::
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -120,15 +140,19 @@ Next, determine what roles (permissions) your app needs on what resources and as
 
 ### [Azure portal](#tab/azure-portal)
 
-| Instructions    | Screenshot |
-|:----------------|-----------:|
-| [!INCLUDE [Assign dev service principal to role step 1](<../includes/assign-local-dev-group-to-role-azure-portal-1.md>)] | :::image type="content" source="../media/assign-local-dev-group-to-role-azure-portal-1-240px.png" alt-text="A screenshot showing how to use the top search box in the Azure portal to locate and navigate to the resource group you want to assign roles (permissions) to." lightbox="../media/assign-local-dev-group-to-role-azure-portal-1.png"::: |
-| [!INCLUDE [Assign dev service principal to role step 1](<../includes/assign-local-dev-group-to-role-azure-portal-2.md>)] | :::image type="content" source="../media/assign-local-dev-group-to-role-azure-portal-2-240px.png" alt-text="A screenshot of the resource group page showing the location of the Access control (IAM) menu item." lightbox="../media/assign-local-dev-group-to-role-azure-portal-2.png"::: |
-| [!INCLUDE [Assign dev service principal to role step 1](<../includes/assign-local-dev-group-to-role-azure-portal-3.md>)] | :::image type="content" source="../media/assign-local-dev-group-to-role-azure-portal-3-240px.png" alt-text="A screenshot showing how to navigate to the role assignments tab and the location of the button used to add role assignments to a resource group." lightbox="../media/assign-local-dev-group-to-role-azure-portal-3.png"::: |
-| [!INCLUDE [Assign dev service principal to role step 1](<../includes/assign-local-dev-group-to-role-azure-portal-4.md>)] | :::image type="content" source="../media/assign-local-dev-group-to-role-azure-portal-4-240px.png" alt-text="A screenshot showing how to filter and select role assignments to be added to the resource group." lightbox="../media/assign-local-dev-group-to-role-azure-portal-4.png"::: |
-| [!INCLUDE [Assign dev service principal to role step 1](<../includes/assign-local-dev-group-to-role-azure-portal-5.md>)] | :::image type="content" source="../media/assign-local-dev-group-to-role-azure-portal-5-240px.png" alt-text="A screenshot showing the radio button to select to assign a role to a Microsoft Entra group and the link used to select the group to assign the role to." lightbox="../media/assign-local-dev-group-to-role-azure-portal-5.png"::: |
-| [!INCLUDE [Assign dev service principal to role step 1](<../includes/assign-local-dev-group-to-role-azure-portal-6.md>)] | :::image type="content" source="../media/assign-local-dev-group-to-role-azure-portal-6-240px.png" alt-text="A screenshot showing how to filter for and select the Microsoft Entra group for the app in the Select members dialog box." lightbox="../media/assign-local-dev-group-to-role-azure-portal-6.png"::: |
-| [!INCLUDE [Assign dev service principal to role step 1](<../includes/assign-local-dev-group-to-role-azure-portal-7.md>)] | :::image type="content" source="../media/assign-local-dev-group-to-role-azure-portal-7-240px.png" alt-text="A screenshot showing the completed Add role assignment page and the location of the Review + assign button used to complete the process." lightbox="../media/assign-local-dev-group-to-role-azure-portal-7.png"::: |
+1. In the Azure portal, navigate to the **Overview** page of the resource group that contains your app.
+1. Select **Access control (IAM)** from the left navigation.
+1. On the Access control (IAM) page, select **+ Add** and then choose **Add role assignment** from the drop-down menu.
+1. The **Add role assignment** page provides several tabs to configure and assign roles.
+1. On the **Role** tab use the search box to locate the role you want to assign.Select the role, and then choose **Next**.
+1. On the **Members** tab:
+    - For the **Assign access to** value, select **User, group, or service principal** .
+    - For the **Members** value, choose **+ Select members** to open the **Select members** flyout panel.
+    - Search for the Microsoft Entra group you created earlier and select it from the filtered results. Choose **Select** to select the group close the flyout panel.
+    - Select **Review + assign** at the bottom of the **Members** tab.
+1. On the **Review + assign** tab, select **Review + assign** at the bottom of the page.
+
+    :::image type="content" source="../../media/app-role-assignment.png" alt-text="A screenshot showing how to assign a role to the Microsoft Entra group.":::
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -183,9 +207,9 @@ When working locally with Visual Studio, environment variables can be set in the
       "applicationUrl": "https://localhost:7177;http://localhost:5177",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "AZURE_CLIENT_ID": "00000000-0000-0000-0000-000000000000",
-        "AZURE_TENANT_ID":"11111111-1111-1111-1111-111111111111",
-        "AZURE_CLIENT_SECRET": "=abcdefghijklmnopqrstuvwxyz"
+        "AZURE_CLIENT_ID": "<your-client-id>",
+        "AZURE_TENANT_ID":"<your-tenant-id>",
+        "AZURE_CLIENT_SECRET": "<your-client-secret>"
       }
     },
     "IIS Express": {
@@ -193,9 +217,9 @@ When working locally with Visual Studio, environment variables can be set in the
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "AZURE_CLIENT_ID": "00000000-0000-0000-0000-000000000000",
-        "AZURE_TENANT_ID": "11111111-1111-1111-1111-111111111111",
-        "AZURE_CLIENT_SECRET": "=abcdefghijklmnopqrstuvwxyz"
+        "AZURE_CLIENT_ID": "<your-client-id>",
+        "AZURE_TENANT_ID":"<your-tenant-id>",
+        "AZURE_CLIENT_SECRET": "<your-client-secret>"
       }
     }
   }
@@ -210,9 +234,9 @@ When working locally with Visual Studio Code, environment variables can be set i
 {
     "env": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "AZURE_CLIENT_ID": "00000000-0000-0000-0000-000000000000",
-        "AZURE_TENANT_ID":"11111111-1111-1111-1111-111111111111",
-        "AZURE_CLIENT_SECRET": "=abcdefghijklmnopqrstuvwxyz"
+        "AZURE_CLIENT_ID": "<your-client-id>",
+        "AZURE_TENANT_ID":"<your-tenant-id>",
+        "AZURE_CLIENT_SECRET": "<your-client-secret>"
     }
 }
 ```
@@ -224,15 +248,15 @@ You can set environment variables for Windows from the command line. However, wh
 ```bash
 # Set user environment variables
 setx ASPNETCORE_ENVIRONMENT "Development"
-setx AZURE_CLIENT_ID "00000000-0000-0000-0000-000000000000"
-setx AZURE_TENANT_ID "11111111-1111-1111-1111-111111111111"
-setx AZURE_CLIENT_SECRET "=abcdefghijklmnopqrstuvwxyz"
+setx AZURE_CLIENT_ID "<your-client-id>"
+setx AZURE_TENANT_ID "<your-tenant-id>"
+setx AZURE_CLIENT_SECRET "<your-client-secret>"
 
 # Set system environment variables - requires running as admin
 setx ASPNETCORE_ENVIRONMENT "Development"
-setx AZURE_CLIENT_ID "00000000-0000-0000-0000-000000000000" /m
-setx AZURE_TENANT_ID "11111111-1111-1111-1111-111111111111" /m
-setx AZURE_CLIENT_SECRET "=abcdefghijklmnopqrstuvwxyz" /m
+setx AZURE_CLIENT_ID "<your-client-id>" /m
+setx AZURE_TENANT_ID "<your-tenant-id>" /m
+setx AZURE_CLIENT_SECRET "<your-client-secret>" /m
 ```
 
 PowerShell can also be used to set environment variables at the user or machine level:
@@ -240,19 +264,19 @@ PowerShell can also be used to set environment variables at the user or machine 
 ```powershell
 # Set user environment variables
 [Environment]::SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Development", "User")
-[Environment]::SetEnvironmentVariable("AZURE_CLIENT_ID", "00000000-0000-0000-0000-000000000000", "User")
-[Environment]::SetEnvironmentVariable("AZURE_TENANT_ID", "11111111-1111-1111-1111-111111111111", "User")
-[Environment]::SetEnvironmentVariable("AZURE_CLIENT_SECRET", "=abcdefghijklmnopqrstuvwxyz", "User")
+[Environment]::SetEnvironmentVariable("AZURE_CLIENT_ID", "<your-client-id>", "User")
+[Environment]::SetEnvironmentVariable("AZURE_TENANT_ID", "<your-tenant-id>", "User")
+[Environment]::SetEnvironmentVariable("AZURE_CLIENT_SECRET", "<your-client-secret>", "User")
 
 # Set system environment variables - requires running as admin
 [Environment]::SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Development", "Machine")
-[Environment]::SetEnvironmentVariable("AZURE_CLIENT_ID", "00000000-0000-0000-0000-000000000000", "Machine")
-[Environment]::SetEnvironmentVariable("AZURE_TENANT_ID", "11111111-1111-1111-1111-111111111111", "Machine")
-[Environment]::SetEnvironmentVariable("AZURE_CLIENT_SECRET", "=abcdefghijklmnopqrstuvwxyz", "Machine")
+[Environment]::SetEnvironmentVariable("AZURE_CLIENT_ID", "<your-client-id>", "Machine")
+[Environment]::SetEnvironmentVariable("AZURE_TENANT_ID", "<your-tenant-id>", "Machine")
+[Environment]::SetEnvironmentVariable("AZURE_CLIENT_SECRET", "<your-client-secret>", "Machine")
 ```
 
 ---
 
 ## 5 - Implement DefaultAzureCredential in your application
 
-[!INCLUDE [Implement DefaultAzureCredential](<../includes/implement-defaultazurecredential.md>)]
+[!INCLUDE [Implement Service Principal](<../includes/implement-service-principal.md>)]

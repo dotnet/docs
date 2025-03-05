@@ -70,16 +70,12 @@ configuration:
               action: Created
           - isActivitySender:
               issueAuthor: True
-          - filesMatchPattern:
-              matchAny: true
-              pattern: docs/csharp/*
           - commentContains:
               pattern: '#sign-off'
               isRegex: False
           - not:
-              or:
-                - isActivitySender:
-                    user: BillWagner
+              - isActivitySender:
+                  user: BillWagner
         then:
           # Add the do-not-merge label, remove the ready-to-merge label, and add a reply asking the PR author not to sign off on the PR.
           - addReply:

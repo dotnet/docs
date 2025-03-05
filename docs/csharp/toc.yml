@@ -5,22 +5,14 @@ items:
   items:
   - name: Tour of C#
     href: tour-of-csharp/overview.md
-  - name: Learn C# for Java developers
-    href: tour-of-csharp/tips-for-java-developers.md
-  - name: Learn C# for JavaScript developers
-    href: tour-of-csharp/tips-for-javascript-developers.md
-  - name: Learn C# for Python developers
-    href: tour-of-csharp/tips-for-python-developers.md
-  - name: C# language strategy
-    href: tour-of-csharp/strategy.md
   - name: Tutorials
     items:
     - name: Choose your first lesson
       href: tour-of-csharp/tutorials/index.md
-    - name: Browser based tutorials
+    - name: Tutorials
       items:
-      - name: Hello world
-        href: tour-of-csharp/tutorials/hello-world.yml
+      - name: Hello world and text
+        href: tour-of-csharp/tutorials/hello-world.md
       - name: Numbers in C#
         href: tour-of-csharp/tutorials/numbers-in-csharp.yml
       - name: Branches and loops
@@ -37,6 +29,14 @@ items:
         href: tour-of-csharp/tutorials/branches-and-loops-local.md
       - name: List collections
         href: tour-of-csharp/tutorials/arrays-and-collections.md
+  - name: C# language strategy
+    href: tour-of-csharp/strategy.md
+  - name: Learn C# for Java developers
+    href: tour-of-csharp/tips-for-java-developers.md
+  - name: Learn C# for JavaScript developers
+    href: tour-of-csharp/tips-for-javascript-developers.md
+  - name: Learn C# for Python developers
+    href: tour-of-csharp/tips-for-python-developers.md
 - name: Fundamentals
   items:
   - name: Program structure

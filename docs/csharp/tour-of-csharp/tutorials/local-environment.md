@@ -36,7 +36,7 @@ how computers store numbers and how to perform calculations with different
 numeric types. You'll learn the basics of rounding and how to perform
 mathematical calculations using C#.
 
-This tutorial assumes that you have finished the [Hello world](hello-world.yml) lesson.
+This tutorial assumes that you have finished the [Hello world](hello-world.md) lesson.
 
 ## Branches and loops
 
@@ -45,7 +45,7 @@ different paths of code execution based on the values stored in variables. You'l
 basics of control flow, which is the basis of how programs make decisions and choose
 different actions.
 
-This tutorial assumes that you have finished the [Hello world](hello-world.yml) and
+This tutorial assumes that you have finished the [Hello world](hello-world.md) and
 [Numbers in C#](numbers-in-csharp-local.md) lessons.
 
 ## List collection

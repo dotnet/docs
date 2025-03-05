@@ -21,7 +21,7 @@ programming or the C# language.
 
 You can try these tutorials in different environments. The concepts you'll learn are the same. The difference is which experience you prefer:
 
-- [In your browser, on the docs platform](hello-world.yml): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
+- [In your browser, on the docs platform](hello-world.md): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
 - [In the Microsoft Learn training experience](/training/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
 - [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download the .NET SDK and build programs on your machine](local-environment.md).
 
@@ -32,9 +32,9 @@ with the next lesson online or on your own machine. There are links
 to help you set up your environment and continue with the next tutorial
 on your machine.
 
-## [Hello world](hello-world.yml)
+## [Hello world](hello-world.md)
 
-In the [Hello world](hello-world.yml) tutorial, you'll create the most basic
+In the [Hello world](hello-world.md) tutorial, you'll create the most basic
 C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn training](/training/paths/csharp-first-steps/).
 
 ## [Numbers in C#](numbers-in-csharp.yml)
@@ -45,7 +45,7 @@ numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. This tutorial is also available
 [to run locally on your machine](numbers-in-csharp-local.md).
 
-This tutorial assumes that you've finished the [Hello world](hello-world.yml) lesson.
+This tutorial assumes that you've finished the [Hello world](hello-world.md) lesson.
 
 ## [Branches and loops](branches-and-loops.yml)
 
@@ -55,7 +55,7 @@ basics of control flow, which is the basis of how programs make decisions and ch
 different actions. This tutorial is also available
 [to run locally on your machine](branches-and-loops-local.md).
 
-This tutorial assumes that you've finished the [Hello world](hello-world.yml) and
+This tutorial assumes that you've finished the [Hello world](hello-world.md) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
 
 ## [List collection](list-collection.yml)

@@ -369,6 +369,7 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Image/1.0.1-beta.4) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
+| Unknown Display Name | NuGet [1.0.0-beta1](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
 | Unknown Display Name | NuGet [1.0.44](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.44) |  |  |
 | Unknown Display Name | NuGet [1.0.44](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.44) |  |  |
@@ -487,8 +488,8 @@
 | Functions extension for Azure SQL and SQL Server | NuGet [3.1.376](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Sql/3.1.376) |  |  |
 | Functions extension for Cosmos DB | NuGet [4.9.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDB/4.9.0) |  | GitHub [4.9.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/cosmos-v3.0.7/src/WebJobs.Extensions.CosmosDB) |
 | Functions extension for DocumentDB | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DocumentDB/1.3.0) |  | GitHub [1.3.0](https://github.com/Azure/azure-webjobs-sdk-extensions) |
-| Functions extension for Durable Task Framework | NuGet [3.0.3](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.0.3) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [3.0.3](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
-| Functions extension for Durable Task Framework - isolated worker | NuGet [1.2.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.2.2) |  |  |
+| Functions extension for Durable Task Framework | NuGet [3.0.4](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.DurableTask/3.0.4) | [docs](https://learn.microsoft.com/dotnet/api/overview/azure/functions) | GitHub [3.0.4](https://github.com/Azure/azure-functions-durable-extension/tree/v2.2.2/src/WebJobs.Extensions.DurableTask) |
+| Functions extension for Durable Task Framework - isolated worker | NuGet [1.2.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.DurableTask/1.2.3) |  |  |
 | Functions extension for HTTP | NuGet [3.2.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Http/3.2.0) |  | GitHub [3.2.0](https://github.com/Azure/azure-webjobs-sdk-extensions/tree/v3.0.2/src/WebJobs.Extensions.Http) |
 | Functions extension for IoT Edge | NuGet [1.0.7](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.EdgeHub/1.0.7) |  | GitHub [1.0.7](https://github.com/Azure/iotedge/tree/1.0.7/edge-hub) |
 | Functions extension for Kafka | NuGet [4.1.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Kafka/4.1.0) |  | GitHub [4.1.0](https://github.com/Azure/azure-functions-kafka-extension/tree/3.0.0/src/Microsoft.Azure.WebJobs.Extensions.Kafka) |

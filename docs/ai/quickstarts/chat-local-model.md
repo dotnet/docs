@@ -20,7 +20,7 @@ In this quickstart, you learn how to create a conversational .NET console chat a
 
 ## Run the local AI model
 
-Complete the following steps to configure and run a local AI model on your device. Many different AI models are available to run locally and are trained for different tasks, such as generating code, analyzing images, generative chat, or creating embeddings. For this quickstart, you'll use the general purpose `phi3:mini` model, which is a small but capable generative AI created by Microsoft.
+Complete the following steps to configure and run a local AI model on your device. Many different AI models are available to run locally and are trained for different tasks, such as generating code, analyzing images, generative chat, or creating embeddings. For this quickstart, you'll use the general purpose `phi4-mini` model, which is a small but capable generative AI created by Microsoft.
 
 1. Open a terminal window and verify that Ollama is available on your device:
 
@@ -38,23 +38,23 @@ Complete the following steps to configure and run a local AI model on your devic
 
     If Ollama is running, it displays a list of available commands.
 
-1. Pull the `phi3:mini` model from the Ollama registry and wait for it to download:
+1. Pull the `phi4-mini` model from the Ollama registry and wait for it to download:
 
     ```bash
-    ollama pull phi3:mini
+    ollama pull phi4-mini
     ```
 
 1. After the download completes, run the model:
 
     ```bash
-    ollama run phi3:mini
+    ollama run phi4-mini
     ```
 
-    Ollama starts the `phi3:mini` model and provides a prompt for you to interact with it.
+    Ollama starts the `phi4-mini` model and provides a prompt for you to interact with it.
 
 ## Create the .NET app
 
-Complete the following steps to create a .NET console app that connects to your local `phi3:mini` AI model.
+Complete the following steps to create a .NET console app that connects to your local `phi4-mini` AI model.
 
 1. In a terminal window, navigate to an empty directory on your device and create a new app with the `dotnet new` command:
 

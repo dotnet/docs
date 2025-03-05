@@ -141,7 +141,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
 
-- **`--no-cache`**
+- **`--no-http-cache`**
 
   Don't cache packages and HTTP requests.
 

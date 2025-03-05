@@ -9,7 +9,9 @@ ms.author: alexwolf
 ## Prerequisites
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 - [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+* Visual Studio 2022 - [Install Visual Studio 2022](https://visualstudio.microsoft.com/) (optional), or
+* Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com) (optional)
+  * With the C# DevKit - [Install C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template
 
@@ -31,7 +33,7 @@ After you install the AI app templates, you can use them to create starter apps 
 1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.
     - For the **AI service provider** option, select **Azure OpenAI**.
-    - Make sure the **Use managed identity** checkbox is checked.
+    - Make sure the **Use keyless authentication for Azure services** checkbox is checked.
     - For the **Vector store** option, select **Local on-disc (for prototyping)**.
 1. Select **Create** to complete the process.
 

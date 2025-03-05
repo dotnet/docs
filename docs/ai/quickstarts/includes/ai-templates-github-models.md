@@ -9,7 +9,9 @@ ms.author: alexwolf
 ## Prerequisites
 
 * .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 - [Install Visual Studio 2022](https://code.visualstudio.com/) (optional)
+* Visual Studio 2022 - [Install Visual Studio 2022](https://visualstudio.microsoft.com/) (optional), or
+* Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com) (optional)
+  * With the C# DevKit - [Install C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 
 ## Install the .NET AI app template
 
@@ -109,10 +111,9 @@ dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>
 
 ---
 
-By default, the app template assumes your AI model deployment names are the same as the underlying models. If necessary, update the deployment name parameters to match your `gpt-4o-mini` and `text-embedding-3-small` deployment names:
+By default, the app template uses the `gpt-4o-mini` and `text-embedding-3-small` models. To try other models, update the name parameters in `Program.cs`:
 
   ```csharp
-  // Update these parameter values to match your Azure OpenAI model deployment names
-  var chatClient = azureOpenAi.AsChatClient("gpt-4o-mini");
-  var embeddingGenerator = azureOpenAi.AsEmbeddingGenerator("text-embedding-3-small");
+  var chatClient = ghModelsClient.AsChatClient("gpt-4o-mini");
+  var embeddingGenerator = ghModelsClient.AsEmbeddingGenerator("text-embedding-3-small");
   ```

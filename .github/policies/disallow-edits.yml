@@ -64,8 +64,8 @@ configuration:
       - description: (This is only a test policy that will be deleted.) Disallow sign-off for articles in the /docs/csharp folder.
         if:
           - or:
-              - payloadType:: Issue_Comment
-              - payloadType:: Pull_Request_Review_Comment
+            - payloadType: Issue_Comment
+            - payloadType: Pull_Request_Review_Comment
           - isAction:
               action: Created
           - isActivitySender:

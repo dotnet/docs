@@ -5,10 +5,7 @@ using Azure.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Registration options
-// registerUsingClientId(builder);
-// registerUsingObjectId(builder);
-// registerUsingResourceId(builder);
+registerUsingServicePrincipal(builder);
 
 var app = builder.Build();
 
@@ -25,8 +22,12 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/weatherforecast", async (BlobServiceClient client) =>
 {
+    var containerClient = client.GetBlobContainerClient("docs");
+
+    var blobs = containerClient.GetBlobs();
+
     var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
@@ -35,14 +36,14 @@ app.MapGet("/weatherforecast", () =>
             summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
-    return forecast;
+    return blobs.FirstOrDefault().Name;
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
 app.Run();
 
-void registerUsingClientId(WebApplicationBuilder builder)
+void registerUsingServicePrincipal(WebApplicationBuilder builder)
 {
     #region snippet_ClientSecretCredential_UseCredential
     builder.Services.AddAzureClients(clientBuilder =>
@@ -72,30 +73,26 @@ void registerUsingClientId(WebApplicationBuilder builder)
     #endregion snippet_ClientSecretCredential_UseCredential
 
     #region snippet_ClientSecretCredential
-    builder.Services.AddAzureClients(clientBuilder =>
+    var tenantId = Environment.GetEnvironmentVariable("AZURE_TENANT_ID");
+    var clientId = Environment.GetEnvironmentVariable("CLIENT_ID");
+    var clientSecret = Environment.GetEnvironmentVariable("CLIENT_SECRET");
+
+    TokenCredential credential = null;
+
+    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
     {
-        var tenantId = Environment.GetEnvironmentVariable("AZURE_TENANT_ID");
-        var clientId = Environment.GetEnvironmentVariable("CLIENT_ID");
-        var clientSecret = Environment.GetEnvironmentVariable("CLIENT_SECRET");
+        // Managed identity token credential discovered when running in Azure environments
+        credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+    }
+    else
+    {
+        // Running locally on dev machine - DO NOT use in production or outside of local dev
+        credential = new DefaultAzureCredential();
+    }
 
-        clientBuilder.AddBlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"));
-
-        TokenCredential credential = null;
-
-        if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
-        {
-            // Use when running in Azure environments
-            credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
-        } 
-        else 
-        {
-            // Use locally on dev machine - DO NOT use in production or outside of local dev
-            credential = new DefaultAzureCredential();
-        }
-
-        clientBuilder.UseCredential(credential);
-    });
+    builder.Services.AddSingleton<BlobServiceClient>(_ =>
+        new BlobServiceClient(
+            new Uri("https://<account-name>.blob.core.windows.net"), credential));
     #endregion snippet_ClientSecretCredential
 }
 

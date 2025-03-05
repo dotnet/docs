@@ -129,6 +129,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
+- **`--source <SOURCE>`**
+
+  Specifies the source of the package that should be used instead of all NuGet packages that are to be used during the installation.
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**

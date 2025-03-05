@@ -527,8 +527,9 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
   More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
 
-[!INCLUDE [help](../../../includes/cli-help.md)]
-  There are static options along with platform and extension options. Extension options are dynamic and might differ from one test application to another, as they are based on the registered extensions in the test project.
+- **`-?|-h|--help`**
+
+  Prints out a description of how to use the command. There are static options along with platform and extension options. Extension options are dynamic and might differ from one test application to another, as they are based on the registered extensions in the test project.
 
 - **`args`**
 

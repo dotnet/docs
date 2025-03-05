@@ -74,8 +74,8 @@ configuration:
               pattern: '#sign-off'
               isRegex: False
           - not:
-              - isActivitySender:
-                  user: BillWagner
+              isActivitySender:
+                user: BillWagner
         then:
           # Add the do-not-merge label, remove the ready-to-merge label, and add a reply asking the PR author not to sign off on the PR.
           - addReply:

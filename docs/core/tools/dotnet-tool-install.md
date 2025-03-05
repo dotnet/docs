@@ -157,6 +157,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
+- **`--allow-roll-forward`**
+
+  Allows to use the newer versions of the .NET runtime if the runtime it targets isn't installed.
+
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
 - **`--version <VERSION_NUMBER>`**

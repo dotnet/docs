@@ -26,7 +26,7 @@ An application service principal is created when the app is registered in Azure.
 
 During local development, environment variables are set with the application service principal's identity. The Azure Identity library reads these environment variables to authenticate the app to the required Azure resources.
 
-## Register the application in Azure
+## Register the app in Azure
 
 Application service principal objects are created through an app registration in Azure using either the Azure portal or Azure CLI.
 
@@ -77,11 +77,11 @@ The output of this command resembles the following JSON:
 Copy this output into a temporary file in a text editor, as you'll need these values in a future step.
 
 > [!NOTE]
-> This is the only time you will see this value. You may add an additional client secret without invalidating this client secret, but there is no way to display this value again.
+> This is the only time you will see the password value. You may add an additional client secret without invalidating this client secret, but there is no way to display this value again.
 
 ---
 
-## Create Microsoft Entra group for local development
+## Create a Microsoft Entra group for local development
 
 Multiple developers typically work on an app, so it's recommended to create a Microsoft Entra group to encapsulate the roles (permissions) the app needs in local development rather than assigning the roles to individual service principal objects. This approach offers the following advantages:
 
@@ -132,7 +132,7 @@ az ad group member add --group <group-name> --member-id <object-id>
 
 ---
 
-## Assign roles to the application
+## Assign roles to the group
 
 Next, determine what roles (permissions) your app needs on what resources and assign those roles to your app. In this example, the roles will be assigned to the Microsoft Entra group you created previously. Groups can be assigned a role at the resource, resource group, or subscription scope. This example shows how to assign roles at the resource group scope, since most apps group all their Azure resources into a single resource group.
 
@@ -182,7 +182,7 @@ For information on assigning permissions at the resource or subscription level u
 
 ---
 
-## Set application environment variables
+## Set the app environment variables
 
 At runtime, `DefaultAzureCredential` looks for the service principal information in a collection of environment variables. There are multiple ways to configure environment variables when working with .NET, depending on your tooling and environment.
 
@@ -275,6 +275,6 @@ PowerShell can also be used to set environment variables at the user or machine 
 
 ---
 
-## 5 - Implement DefaultAzureCredential in your application
+## Authenticate to Azure services from your app
 
 [!INCLUDE [Implement Service Principal](<../includes/implement-service-principal.md>)]

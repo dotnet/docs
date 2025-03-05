@@ -3,7 +3,7 @@ ms.topic: include
 ms.date: 02/12/2025
 ---
 
-[!INCLUDE [implement-managed-identity-concepts](implement-managed-identity-concepts.md)]
+[!INCLUDE [implement-service-principal-concepts](implement-managed-identity-concepts.md)]
 
 ### Implement the code
 

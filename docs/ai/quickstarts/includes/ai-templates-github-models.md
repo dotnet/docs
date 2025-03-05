@@ -33,7 +33,6 @@ After you install the AI app templates, you can use them to create starter apps 
 1. On the **Additional information** screen:
     - For the **Framework** option, select **.NET 9.0**.
     - For the **AI service provider** option, select **GitHub Models**.
-    - Make sure the **Use managed identity** checkbox is checked.
     - For the **Vector store** option, select **Local on-disc (for prototyping)**.
 1. Select **Create** to complete the process.
 
@@ -89,7 +88,7 @@ To authenticate to GitHub models from your code, you'll need to create a GitHub 
 
 ## Configure the app
 
-The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
+The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to configure the app to use the personal access token you setup for GitHub Modelsfor. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
 
 # [Visual Studio](#tab/configure-visual-studio)
 

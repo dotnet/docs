@@ -7,6 +7,10 @@ ms.date: 03/05/2025
 
 This tutorial teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language.
 
+> [!TIP]
+>
+> When a code snippet block includes the "Run" button, that button opens the interactive window, or replaces the existing code in the interactive window. When the snippet doesn't include a "Run" button, you can copy the code and add it to the current interactive window.
+
 ## Run your first program
 
 Run the following code in the interactive window.

@@ -87,38 +87,6 @@ Scenario 2: `<PackageReference>` does not exist in the project file, `<PackageVe
   <PackageReference Include="Microsoft.EntityFrameworkCore" />
   ```
 
-Scenario 3: `<PackageReference>` does not exist in the project file, `<PackageVersion>` element does exist in the `Directory.Packages.props file`, and the version argument is not passed from the commandline.
-
-  CLI command that is executed: `dotnet add ToDo.csproj package Microsoft.EntityFrameworkCore`
-
-  The `<PackageVersion>` element is added to the `Directory.Packages.props file`.
-
-  ```xml
-  <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
-  ```
-
-The `<PackageReference>` element is added to the project file.
-
-  ```xml
-  <PackageReference Include="Microsoft.EntityFrameworkCore" />
-  ```
-
-Scenario 4: `<PackageReference>` does not exist in the project file, `<PackageVersion>` element does exist in the `Directory.Packages.props file`, and the version argument is passed from the commandline.
-
-  CLI command that is executed: `dotnet add ToDo.csproj package Microsoft.EntityFrameworkCore --version 5.0.4`
-
-  The `<PackageVersion>` element is added to the `Directory.Packages.props file`.
-
-  ```xml
-  <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
-  ```
-
-  The `<PackageReference>` element is added to the project file.
-
-  ```xml
-  <PackageReference Include="Microsoft.EntityFrameworkCore" />
-  ```
-
 ### Implicit restore
 
 [!INCLUDE[DotNet Restore Note](../../../includes/dotnet-restore-note.md)]

@@ -40,7 +40,7 @@ Configure `ClientSecretCredential` with the `tenantId`, `clientId`, and `clientS
 
 An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential:::
+:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential":::
 
 The preceding code behaves differently depending on the environment where it's running:
 

@@ -8,7 +8,7 @@ ms.date: 03/04/2025
 
 # Authenticate .NET apps to Azure services during local development using service principals
 
-During local development, applications must authenticate to Azure to consume various Azure services. Two common approaches to local authentication are to use [Developer accounts](local-development-dev-account.md) or a service principal. This article explains how to use a dedicated application service principal.
+During local development, applications must authenticate to Azure to consume various Azure services. Two common approaches to local authentication are to use [Developer accounts](local-development-dev-accounts.md) or a service principal. This article explains how to use a dedicated application service principal.
 
 :::image type="content" source="../media/local-dev-service-principal-overview.png" alt-text="A diagram showing how a local .NET app uses the developer's credentials to connect to Azure by using locally installed development tools.":::
 

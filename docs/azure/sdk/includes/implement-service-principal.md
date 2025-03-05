@@ -36,11 +36,11 @@ Azure services are accessed using specialized client classes from the various Az
 
 Configure `ClientSecretCredential` with the `tenantId`, `clientId`, and `clientSecret`:
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId_UseCredential":::
+:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential_UseCredential":::
 
 An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-:::code language="csharp" source="../snippets/authentication/user-assigned-managed-identity/Program.cs" id="snippet_MIC_ClientId":::
+:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential:::
 
 The preceding code behaves differently depending on the environment where it's running:
 

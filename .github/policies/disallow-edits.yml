@@ -73,6 +73,9 @@ configuration:
           - commentContains:
               pattern: '#sign-off'
               isRegex: False
+          - filesMatchPattern:
+              pattern: docs/csharp/*
+              matchAny: True
           - not:
               isActivitySender:
                 user: BillWagner

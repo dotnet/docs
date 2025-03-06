@@ -49,8 +49,8 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
     builder.Services.AddAzureClients(clientBuilder =>
     {
         var tenantId = Environment.GetEnvironmentVariable("AZURE_TENANT_ID");
-        var clientId = Environment.GetEnvironmentVariable("CLIENT_ID");
-        var clientSecret = Environment.GetEnvironmentVariable("CLIENT_SECRET");
+        var clientId = Environment.GetEnvironmentVariable("AZURE_CLIENT_ID");
+        var clientSecret = Environment.GetEnvironmentVariable("AZURE_CLIENT_SECRET");
 
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
@@ -74,8 +74,8 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
 
     #region snippet_ClientSecretCredential
     var tenantId = Environment.GetEnvironmentVariable("AZURE_TENANT_ID");
-    var clientId = Environment.GetEnvironmentVariable("CLIENT_ID");
-    var clientSecret = Environment.GetEnvironmentVariable("CLIENT_SECRET");
+    var clientId = Environment.GetEnvironmentVariable("AZURE_CLIENT_ID");
+    var clientSecret = Environment.GetEnvironmentVariable("AZURE_CLIENT_SECRET");
 
     TokenCredential credential = null;
 

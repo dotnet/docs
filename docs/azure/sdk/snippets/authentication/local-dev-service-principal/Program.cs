@@ -59,7 +59,7 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
 
         if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
         {
-            // Use when running in Azure environments
+            // Use when running in hosted production environments
             credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
         } 
         else 
@@ -81,12 +81,12 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
 
     if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
     {
-        // Managed identity token credential discovered when running in Azure environments
+        // Use when running in hosted production environments
         credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
     }
     else
     {
-        // Running locally on dev machine - DO NOT use in production or outside of local dev
+        // Use locally on dev machine - DO NOT use in production or outside of local dev
         credential = new DefaultAzureCredential();
     }
 

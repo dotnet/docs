@@ -32,7 +32,7 @@ Additional links:
 
 The COM and `IUnknown` ABI was defined to align with the C language. It was specifically designed to support object-oriented programming, similar to C++, but to provide a stable ABI. .NET has a deep history with COM and `IUnknown`, and as this ABI was originally designed to align with C, it's supported on all .NET platforms.
 
-In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. If you're targeting versions prior to .NET 5, you must use the [built-in COM interop system](/dotnet/standard/native-interop/cominterop), and this support is limited to Windows.
+In .NET 5+, low-level, cross-platform, `IUnknown` lifetime support is provided by <xref:System.Runtime.InteropServices.ComWrappers>. In .NET 8+, <xref:System.Runtime.InteropServices.Marshalling.GeneratedComInterfaceAttribute> and <xref:System.Runtime.InteropServices.Marshalling.GeneratedComClassAttribute> provide source generated C# projections. If you're targeting versions prior to .NET 5, you must use the [built-in COM interop system](cominterop.md), and this support is limited to Windows.
 
 The WinRT platform represents an evolution of the COM and `IUnknown` ABI. Support for this is provided by the [CsWinRT toolkit](/windows/apps/develop/platform/csharp-winrt/) and is built upon <xref:System.Runtime.InteropServices.ComWrappers>.
 

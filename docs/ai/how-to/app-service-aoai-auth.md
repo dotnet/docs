@@ -11,7 +11,7 @@ zone_pivot_groups: azure-interface
 
 # Authenticate to Azure OpenAI from an Azure hosted app using Microsoft Entra ID
 
-This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) and the [Microsoft.Extensions.AI library](/dotnet/ai/ai-extensions) to authenticate an Azure hosted app to an Azure OpenAI resource.
+This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) and the [Microsoft.Extensions.AI library](../ai-extensions.md) to authenticate an Azure hosted app to an Azure OpenAI resource.
 
 A managed identity from Microsoft Entra ID allows your app to easily access other Microsoft Entra protected resources such as Azure OpenAI. The identity is managed by the Azure platform and doesn't require you to provision, manage, or rotate any secrets.
 
@@ -181,7 +181,7 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
     :::code language="csharp" source="./snippets/hosted-app-auth/program.cs" range="41-46":::
 
     > [!TIP]
-    > Learn more about ASP.NET Core dependency injection and how to register other AI services types in the Azure SDK for .NET [dependency injection](/dotnet/azure/sdk/dependency-injection) documentation.
+    > Learn more about ASP.NET Core dependency injection and how to register other AI services types in the Azure SDK for .NET [dependency injection](../../azure/sdk/dependency-injection.md) documentation.
 
 ## Related content
 

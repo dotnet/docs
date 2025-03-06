@@ -9,11 +9,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.3.0-preview.1.25114.11" />
-    <PackageReference Include="Microsoft.Extensions.AI.Evaluation" Version="9.3.0-preview.1.25114.11" />
-    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Quality" Version="9.3.0-preview.1.25114.11" />
+    <PackageReference Include="Microsoft.Extensions.AI.Evaluation" Version="9.3.0-preview.1.25126.9" />
+    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Quality" Version="9.3.0-preview.1.25126.9" />
     <PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.3.0-preview.1.25114.11" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-    <PackageReference Include="MSTest" Version="3.6.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="MSTest" Version="3.8.2" />
   </ItemGroup>
 
   <ItemGroup>

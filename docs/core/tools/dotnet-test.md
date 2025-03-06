@@ -419,7 +419,6 @@ dotnet test
     [--directory <DIRECTORY_PATH>]
     [--test-modules <EXPRESSION>] 
     [--root-directory <ROOT_PATH>]
-    [--list-tests]
     [--max-parallel-test-modules <NUMBER>]
     [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>]
@@ -472,10 +471,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - **`--root-directory <ROOT_PATH>`**
 
   Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
-
-- **`--list-tests`**
-
-  Lists the discovered tests instead of running the tests.
 
 - **`--max-parallel-test-modules <NUMBER>`**
 

@@ -36,10 +36,10 @@ VSTest is extensible and common types are placed in [Microsoft.TestPlatform.Obje
 
 Microsoft.Testing.Platform is based on [Microsoft.Testing.Platform](https://www.nuget.org/packages/Microsoft.Testing.Platform) NuGet package and other libraries in the `Microsoft.Testing.*` namespace. Like VSTest, the `Microsoft.Testing.Platform` is open-source and has a [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
-## Communication protocol (preview)
+## Communication protocol
 
 > [!NOTE]
-> The Visual Studio Test Explorer supports the Microsoft.Testing.Platform protocol in the **preview** versions since 17.10 onward. If you run/debug your tests using earlier versions of Visual Studio, Test Explorer will use `vstest.console.exe` and the old protocol to run these tests.
+> The Visual Studio Test Explorer supports the Microsoft.Testing.Platform protocol since 17.12 onward. If you run/debug your tests using earlier versions of Visual Studio, Test Explorer will use `vstest.console.exe` and the old protocol to run these tests.
 
 Microsoft.Testing.Platform uses a JSON-RPC based protocol to communicate between Visual Studio and the test runner process. The protocol is documented in the [MSTest GitHub repository](https://github.com/microsoft/testfx/tree/main/docs/mstest-runner-protocol).
 
@@ -48,6 +48,8 @@ VSTest also uses a JSON based communication protocol, but it's not JSON-RPC base
 ### Disabling the new protocol
 
 To disable the use of the new protocol in Test Explorer, you can edit your project to add the following property: `<DisableTestingPlatformServerCapability>true</DisableTestingPlatformServerCapability>`.
+
+You can also go to Preview Features options in Visual Studio and deselect the "Use testing platform server mode" option.
 
 ## Executables
 

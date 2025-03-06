@@ -75,7 +75,7 @@ This article describes the syntax of configuration files and provides informatio
 
   To create the output configuration file that's deployed with the app, Visual Studio copies the source configuration file to the directory where the compiled assembly is placed. This file is named *\<yourappname>.exe.config*. For example, an app named *myApp.exe* has an output configuration file named *myApp.exe.config*.
 
-  In some cases, Visual Studio may modify the output configuration file. For more information, see [Redirect versions at the app level](redirect-assembly-versions.md#BKMK_Redirectingassemblyversionsattheapplevel) in [Redirecting assembly versions](redirect-assembly-versions.md).
+  In some cases, Visual Studio might modify the output configuration file. For more information, see [Redirect versions at the app level](redirect-assembly-versions.md#redirect-versions-at-the-app-level).
 
 - ASP.NET-hosted app.
 

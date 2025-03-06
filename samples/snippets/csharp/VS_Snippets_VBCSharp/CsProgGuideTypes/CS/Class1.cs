@@ -109,6 +109,42 @@ namespace CsProgGuideTypes
         }
     }
 
+    
+    //-------------------------------------------------------------------------
+    class BoxingValueCopy
+    {
+        static void Main()
+        {
+            //<Snippet16>
+            // Create an int variable
+            int i = 123;
+            
+            // Box the value type into an object reference
+            object o = i;  // boxing
+            
+            // Display the initial values
+            Console.WriteLine($"Value of i: {i}");
+            Console.WriteLine($"Value of boxed object o: {o}");
+            
+            // Modify the original value type
+            i = 456;
+            
+            // Display the values after modification
+            Console.WriteLine("\nAfter changing i to 456:");
+            Console.WriteLine($"Value of i: {i}");
+            Console.WriteLine($"Value of boxed object o: {o}");
+            
+    		// Output:
+    		// Value of i: 123
+    		// Value of boxed object o: 123
+    
+    		// After changing i to 456:
+    		// Value of i: 456
+    		// Value of boxed object o: 123
+            //</Snippet16>
+        }
+    }
+
     //-------------------------------------------------------------------------
     class TestBoxing
     {

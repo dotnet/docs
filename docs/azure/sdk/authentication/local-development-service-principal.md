@@ -62,9 +62,9 @@ Azure CLI commands can be run in the [Azure Cloud Shell](https://shell.azure.com
     ```azurecli
     az ad sp create-for-rbac --name <service-principal-name>
     ```
-    
+
     The output of this command resembles the following JSON:
-    
+
     ```json
     {
       "appId": "00000000-0000-0000-0000-000000000000",

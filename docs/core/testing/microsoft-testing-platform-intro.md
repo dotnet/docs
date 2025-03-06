@@ -45,7 +45,7 @@ The main driving factors for the evolution of the new testing platform are detai
 
 ## Run and debug tests
 
-`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, as typical with most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).
+`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).
 
 > [!TIP]
 > You can ignore a specific [exit code](./microsoft-testing-platform-exit-codes.md) using the [`--ignore-exit-code`](#options) command line option.

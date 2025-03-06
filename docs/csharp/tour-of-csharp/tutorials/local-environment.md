@@ -40,7 +40,7 @@ This tutorial assumes that you have finished the [Hello world](hello-world.md) l
 
 ## Branches and loops
 
-The [Branches and loops](branches-and-loops-local.md) tutorial teaches the basics of selecting
+The [Branches and loops](branches-and-loops.md) tutorial teaches the basics of selecting
 different paths of code execution based on the values stored in variables. You'll learn the
 basics of control flow, which is the basis of how programs make decisions and choose
 different actions.

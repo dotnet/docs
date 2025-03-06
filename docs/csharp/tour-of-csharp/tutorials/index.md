@@ -47,13 +47,12 @@ mathematical calculations using C#.
 
 This tutorial assumes that you've finished the [Hello world](hello-world.md) lesson.
 
-## [Branches and loops](branches-and-loops.yml)
+## [Branches and loops](branches-and-loops.md)
 
-The [Branches and loops](branches-and-loops.yml) tutorial teaches the basics of selecting
+The [Branches and loops](branches-and-loops.md) tutorial teaches the basics of selecting
 different paths of code execution based on the values stored in variables. You'll learn the
 basics of control flow, which is the basis of how programs make decisions and choose
-different actions. This tutorial is also available
-[to run locally on your machine](branches-and-loops-local.md).
+different actions.
 
 This tutorial assumes that you've finished the [Hello world](hello-world.md) and
 [Numbers in C#](numbers-in-csharp.md) lessons.

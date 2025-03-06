@@ -31,7 +31,7 @@ You can start with any of the following tutorials:
 
 ## Numbers in C\#
 
-In the [Numbers in C#](numbers-in-csharp-local.md) tutorial, you'll learn
+In the [Numbers in C#](numbers-in-csharp.md) tutorial, you'll learn
 how computers store numbers and how to perform calculations with different
 numeric types. You'll learn the basics of rounding and how to perform
 mathematical calculations using C#.

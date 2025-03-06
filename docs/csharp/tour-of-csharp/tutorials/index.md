@@ -23,7 +23,8 @@ You can try these tutorials in different environments. The concepts you'll learn
 
 - [In your browser, on the docs platform](hello-world.md): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
 - [In the Microsoft Learn training experience](/training/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
-- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download the .NET SDK and build programs on your machine](local-environment.md).
+
+After you've explored online, you can [download the .NET SDK and build programs on your machine](local-environment.md).
 
 All the introductory tutorials following the Hello World lesson are available using
 the online browser experience or [in your own local development
@@ -37,13 +38,12 @@ on your machine.
 In the [Hello world](hello-world.md) tutorial, you'll create the most basic
 C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn training](/training/paths/csharp-first-steps/).
 
-## [Numbers in C#](numbers-in-csharp.yml)
+## [Numbers in C#](numbers-in-csharp.md)
 
-In the [Numbers in C#](numbers-in-csharp.yml) tutorial, you'll learn
+In the [Numbers in C#](numbers-in-csharp.md) tutorial, you'll learn
 how computers store numbers and how to perform calculations with different
 numeric types. You'll learn the basics of rounding, and how to perform
-mathematical calculations using C#. This tutorial is also available
-[to run locally on your machine](numbers-in-csharp-local.md).
+mathematical calculations using C#.
 
 This tutorial assumes that you've finished the [Hello world](hello-world.md) lesson.
 
@@ -56,7 +56,7 @@ different actions. This tutorial is also available
 [to run locally on your machine](branches-and-loops-local.md).
 
 This tutorial assumes that you've finished the [Hello world](hello-world.md) and
-[Numbers in C#](numbers-in-csharp.yml) lessons.
+[Numbers in C#](numbers-in-csharp.md) lessons.
 
 ## [List collection](list-collection.yml)
 

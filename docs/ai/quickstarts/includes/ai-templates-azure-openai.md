@@ -89,7 +89,7 @@ To use the .NET AI templates, you'll need to create and authenticate to an Azure
 The **AI Chat Web App** app is almost ready to go as soon as it's created. However, you'll need to provide the endpoint for your Azure OpenAI service for the app to connect to. By default, the app template searches for this value in the project's local .NET user secrets. You can manage user secrets using either the Visual Studio UI or the .NET CLI.
 
 > [!NOTE]
-> To avoid authentication errors, make sure you are signed-in to Visual Studio or the Azure CLI with a user that is assigned the **Azure AI Developer** role on your Azure OpenAI resource.
+> To avoid authentication errors, make sure you're signed in to Visual Studio or the Azure CLI with a user that's assigned the **Azure AI Developer** role on your Azure OpenAI resource.
 
 # [Visual Studio](#tab/configure-visual-studio)
 

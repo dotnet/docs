@@ -529,7 +529,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - **`-?|-h|--help`**
 
-  Prints out a description of how to use the command. There are static options along with platform and extension options. Extension options are dynamic and might differ from one test application to another, as they are based on the registered extensions in the test project.
+  Prints out a description of how to use the command. Some options are static while others, namely platform and extension options, are dynamic. These dynamic options might differ from one test application to another, as they are based on the registered extensions in the test project.
 
 - **`args`**
 

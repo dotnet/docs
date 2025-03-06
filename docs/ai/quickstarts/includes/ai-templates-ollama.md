@@ -1,8 +1,6 @@
 ---
-title: Quickstart - Create a .NET AI app using the AI app template
-description: Create a .NET AI app to chat with custom data using the AI app template extensions and the Microsoft.Extensions.AI libraries
 ms.date: 2/21/2025
-ms.topic: include
+ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
@@ -41,13 +39,13 @@ After you install the AI app templates, you can use them to create starter apps 
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-1. Open the command pallete in Visual Studio Code.
-1. Search for *New project* and select the matching result **.NET: New Project**.
+1. Open the command palette in Visual Studio Code.
+1. Search for *New project* and select the result called **.NET: New Project**.
 1. Filter the project templates list by searching for *AI*.
-1. Select **AI Chat Web App** and press enter.
+1. Select **AI Chat Web App** and press <kbd>Enter</kbd>.
 
 > [!NOTE]
-> The command palette experience currently only supports the default settings. To configure your AI platform and vectore store during template creation, use the Visual Studio or .NET CLI workflows.
+> The command palette experience currently only supports the default settings. To configure your AI platform and vector store during template creation, use the Visual Studio or .NET CLI workflows.
 
 # [.NET CLI](#tab/dotnet-cli)
 

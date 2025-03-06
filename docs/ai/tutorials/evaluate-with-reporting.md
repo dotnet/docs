@@ -1,17 +1,14 @@
 ---
-title: Quickstart - Evaluate a model's response
-description: Learn how to create an MSTest app to evaluate the AI chat response of a language model.
-ms.date: 02/25/2025
-ms.topic: quickstart
+title: Tutorial - Evaluate a model's response
+description: Learn how to create an MSTest app to evaluate the AI chat response of a language model and use the caching and reporting features of Microsoft.Extensions.AI.Evaluation.
+ms.date: 03/04/2025
+ms.topic: tutorial
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
-# Evaluate a model's response
+# Tutorial: Evaluate a model's response with response caching and reporting
 
-In this quickstart, you create an MSTest app to evaluate the chat response of a model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
-
-> [!NOTE]
-> This quickstart demonstrates the simplest usage of the evaluation API. Notably, it doesn't demonstrate use of the [response caching](../conceptual/evaluation-libraries.md#cached-responses) and [reporting](../conceptual/evaluation-libraries.md#reporting) functionality, which are important if you're authoring unit tests that run as part of an "offline" evaluation pipeline. The scenario shown in this quickstart is suitable in use cases such as "online" evaluation of AI responses within production code and logging scores to telemetry, where caching and reporting aren't relevant. For a tutorial that demonstrates the caching and reporting functionality, see [Tutorial: Evaluate a model's response with response caching and reporting](../tutorials/evaluate-with-reporting.md)
+In this tutorial, you create an MSTest app to evaluate the chat response of a model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
 
 ## Prerequisites
 
@@ -60,7 +57,7 @@ Complete the following steps to create an MSTest project that connects to your l
 1. In a terminal window, navigate to the directory where you want to create your app, and create a new MSTest app with the `dotnet new` command:
 
     ```dotnetcli
-    dotnet new mstest -o TestAI
+    dotnet new mstest -o TestAIWithReporting
     ```
 
 1. Navigate to the `TestAI` directory, and add the necessary packages to your app:
@@ -70,6 +67,7 @@ Complete the following steps to create an MSTest project that connects to your l
     dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
     dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
     dotnet add package Microsoft.Extensions.AI.Evaluation.Quality --prerelease
+    dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -116,4 +114,3 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 
 ## Next steps
 
-Next, try evaluating against different models to see if the results change. Then, check out the extensive examples in the [dotnet/ai-samples repo](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/) to see how to invoke multiple evaluators, add additional context, invoke a custom evaluator, attach diagnostics, or change the default interpretation of metrics.

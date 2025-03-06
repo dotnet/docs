@@ -1,6 +1,6 @@
 ---
 ms.date: 2/21/2025
-ms.topic: quickstart
+ms.topic: include
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
 ms.author: alexwolf
@@ -15,7 +15,7 @@ ms.author: alexwolf
 
 ## Install the .NET AI app template
 
-The **AI Chat Web App** template is available as a template package through NuGet. Use the [`dotnet new`](../../../core/tools/dotnet-new-install.md) command to install the package:
+The **AI Chat Web App** template is available as a template package through NuGet. Use the [`dotnet new install`](../../../core/tools/dotnet-new-install.md) command to install the package:
 
 ```dotnetcli
 dotnet new install Microsoft.Extensions.AI.Templates

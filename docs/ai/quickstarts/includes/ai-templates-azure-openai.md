@@ -15,7 +15,7 @@ ms.author: alexwolf
 
 ## Install the .NET AI app template
 
-The **AI Chat Web App** template is available as a template package through NuGet. Use the [`dotnet new`](../../../core/tools/dotnet-new-install.md) command to install the package:
+The **AI Chat Web App** template is available as a template package through NuGet. Use the [`dotnet new install`](../../../core/tools/dotnet-new-install.md) command to install the package:
 
 ```dotnetcli
 dotnet new install Microsoft.Extensions.AI.Templates
@@ -39,13 +39,13 @@ After you install the AI app templates, you can use them to create starter apps 
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-1. Open the command pallete in Visual Studio Code.
-1. Search for *New project* and select the matching result **.NET: New Project**.
+1. Open the command palette in Visual Studio Code.
+1. Search for *New project* and select the result called **.NET: New Project**.
 1. Filter the project templates list by searching for *AI*.
-1. Select **AI Chat Web App** and press enter.
+1. Select **AI Chat Web App** and press <kbd>Enter</kbd>.
 
 > [!NOTE]
-> The command palette experience currently only supports the default settings. To configure your AI platform and vectore store during template creation, use the Visual Studio or .NET CLI workflows.
+> The command palette experience currently only supports the default settings. To configure your AI platform and vector store during template creation, use the Visual Studio or .NET CLI workflows.
 
 # [.NET CLI](#tab/dotnet-cli)
 
@@ -74,9 +74,9 @@ After you install the AI app templates, you can use them to create starter apps 
 
 To use the .NET AI templates, you'll need to create and authenticate to an Azure OpenAI service:
 
-1. [Create an Azure OpenAI Service resource](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) if you don't already have one available.
+1. [Create an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) if you don't already have one available.
 
-2. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`). See the Azure OpenAI documentation to learn how to [Deploy a model](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model).
+2. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`). To learn how to deploy a model, see [Create a resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) in the Azure OpenAI docs.
 
 3. The AI template is configured to use Microsoft Entra ID for keyless authentication. Configure the Azure OpenAI resource for keyless authentication:
 

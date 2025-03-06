@@ -45,10 +45,19 @@ The main driving factors for the evolution of the new testing platform are detai
 
 ## Run and debug tests
 
-`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, as typical with most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](unit-testing-platform-exit-codes.md).
+`Microsoft.Testing.Platform` test projects are built as executables that can be run (or debugged) directly. There's no extra test running console or command. The app exits with a nonzero exit code if there's an error, which is typical for most executables. For more information on the known exit codes, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).
+
+> [!TIP]
+> You can ignore a specific [exit code](./microsoft-testing-platform-exit-codes.md) using the [`--ignore-exit-code`](#options) command line option.
+>
+> You can also set command line options that apply to a specific test project in the project file using the [`TestingPlatformCommandLineArguments`](../project-sdk/msbuild-props.md#testingplatformcommandlinearguments) MSBuild property. One common use case is for test projects that have all the tests ignored, which will normally exit with exit code 8 (the test session ran zero tests). In this scenario, you can add the following under a `PropertyGroup` in your project file:
+>
+> ```xml
+> <TestingPlatformCommandLineArguments>$(TestingPlatformCommandLineArguments) --ignore-exit-code 8</TestingPlatformCommandLineArguments>
+> ```
 
 > [!IMPORTANT]
-> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](unit-testing-platform-telemetry.md).
+> By default, `Microsoft.Testing.Platform` collects telemetry. For more information and options on opting out, see [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md).
 
 ### [.NET CLI](#tab/dotnetcli)
 
@@ -212,7 +221,7 @@ The list below described only the platform options. To see the specific options 
 
 - **`--config-file`**
 
-  Specifies a [*testconfig.json*](unit-testing-platform-config.md) file.
+  Specifies a [*testconfig.json*](microsoft-testing-platform-config.md) file.
 
 - **`--diagnostic`**
 
@@ -244,7 +253,7 @@ The list below described only the platform options. To see the specific options 
 
 - **`-ignore-exit-code`**
 
-  Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./unit-testing-platform-exit-codes.md#ignore-specific-exit-codes).
+  Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./microsoft-testing-platform-exit-codes.md#ignore-specific-exit-codes).
 
 - **`--info`**
 
@@ -263,7 +272,7 @@ The list below described only the platform options. To see the specific options 
 
 - **`--maximum-failed-tests`**
 
-  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [Microsoft.Testing.Platform exit codes](unit-testing-platform-exit-codes.md).
+  Specifies the maximum number of tests failures that, when reached, will stop the test run. Support for this switch requires framework authors to implement the `IGracefulStopTestExecutionCapability` capability. The exit code when reaching that amount of test failures is 13. For more information, see [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md).
 
   > [!NOTE]
   > This feature is available in Microsoft.Testing.Platform starting with version 1.5.
@@ -284,7 +293,7 @@ The list below described only the platform options. To see the specific options 
 
 The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild:
 
-- Support for `dotnet test`. For more information, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md).
+- Support for `dotnet test`. For more information, see [dotnet test integration](./microsoft-testing-platform-integration-dotnet-test.md).
 - Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
 - Automatic generation of the entry point (`Main` method).
 - Automatic generation of the configuration file.
@@ -294,7 +303,7 @@ The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/pac
 
 ## See also
 
-- [Microsoft.Testing.Platform and VSTest comparison](unit-testing-platform-vs-vstest.md)
-- [Microsoft.Testing.Platform extensions](unit-testing-platform-extensions.md)
-- [Microsoft.Testing.Platform telemetry](unit-testing-platform-telemetry.md)
-- [Microsoft.Testing.Platform exit codes](unit-testing-platform-exit-codes.md)
+- [Microsoft.Testing.Platform and VSTest comparison](microsoft-testing-platform-vs-vstest.md)
+- [Microsoft.Testing.Platform extensions](microsoft-testing-platform-extensions.md)
+- [Microsoft.Testing.Platform telemetry](microsoft-testing-platform-telemetry.md)
+- [Microsoft.Testing.Platform exit codes](microsoft-testing-platform-exit-codes.md)

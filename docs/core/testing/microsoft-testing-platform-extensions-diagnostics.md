@@ -12,7 +12,7 @@ This article list and explains all `Microsoft Testing Platform` extensions relat
 
 ## Built-in options
 
-The following [platform options](./unit-testing-platform-intro.md#options) provide useful information for troubleshooting your test apps:
+The following [platform options](./microsoft-testing-platform-intro.md#options) provide useful information for troubleshooting your test apps:
 
 - `--info`
 - `--diagnostic`

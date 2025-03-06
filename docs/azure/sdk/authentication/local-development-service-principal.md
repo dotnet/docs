@@ -46,7 +46,7 @@ Application service principal objects are created through an app registration in
 1. On the **Certificates & secrets** page, select **+ New client secret**.
 1. In the **Add a client secret** flyout panel that opens:
     - For the **Description**, enter a value of Current.
-    - For the **Expired** value, leave the default recommended value of 180 days.
+    - For the **Expires** value, leave the default recommended value of 180 days.
     - Select **Add** to add the secret.
 1. On the **Certificates & secrets** page, copy the **Value** property of the client secret for use in a future step.
 
@@ -126,7 +126,7 @@ Create a Microsoft Entra group to encapsulate the roles (permissions) the app ne
         --query "[].{objectId:id, displayName:displayName}"
     ```
 
-    The `--filter` parameter command accepts OData-style filters and can be used to filter the list as shown. The `--query` parameter limits the output to only columns of interest.
+    The `--filter` parameter accepts OData-style filters and can be used to filter the list as shown. The `--query` parameter limits the output to only the columns of interest.
 
 1. Use the [az ad group member add](/cli/azure/ad/group/member#az-ad-group-member-add) command to add members to the group:
 
@@ -149,7 +149,7 @@ Next, determine what roles (permissions) your app needs on what resources and as
 1. On the **Members** tab:
     - For the **Assign access to** value, select **User, group, or service principal** .
     - For the **Members** value, choose **+ Select members** to open the **Select members** flyout panel.
-    - Search for the Microsoft Entra group you created earlier and select it from the filtered results. Choose **Select** to select the group close the flyout panel.
+    - Search for the Microsoft Entra group you created earlier and select it from the filtered results. Choose **Select** to select the group and close the flyout panel.
     - Select **Review + assign** at the bottom of the **Members** tab.
 
     :::image type="content" source="../../media/app-role-assignment.png" alt-text="A screenshot showing how to assign a role to the Microsoft Entra group.":::

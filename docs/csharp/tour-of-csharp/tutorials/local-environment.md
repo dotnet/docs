@@ -50,6 +50,6 @@ This tutorial assumes that you have finished the [Hello world](hello-world.md) a
 
 ## List collection
 
-The [List collection](arrays-and-collections.md) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
+The [List collection](list-collection.md) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
 
 This tutorial assumes that you have finished the lessons listed above.

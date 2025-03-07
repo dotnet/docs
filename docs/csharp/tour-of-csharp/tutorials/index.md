@@ -60,7 +60,6 @@ This tutorial assumes that you've finished the [Hello world](hello-world.md) and
 ## [List collection](list-collection.yml)
 
 The [List collection](list-collection.yml) lesson gives you
-a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. This tutorial is also
-available [to run locally on your machine](arrays-and-collections.md).
+a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
 
 This tutorial assumes that you've finished the lessons listed above.

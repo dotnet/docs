@@ -35,9 +35,9 @@ The [Branches and loops](branches-and-loops.md) tutorial teaches the basics of s
 
 This tutorial assumes that you've finished the [Hello world](hello-world.md) and [Numbers in C#](numbers-in-csharp.md) lessons.
 
-## [List collection](list-collection.yml)
+## [List collection](list-collection.md)
 
-The [List collection](list-collection.yml) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
+The [List collection](list-collection.md) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
 
 This tutorial assumes that you've finished the lessons listed above.
 

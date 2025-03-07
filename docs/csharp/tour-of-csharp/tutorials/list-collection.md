@@ -1,6 +1,6 @@
 ---
 title: Data collections - Introductory interactive tutorial
-description: In this tutorial, you use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
+description: In this tutorial, you use your browser to learn about C# collections. You write C# code and see the results of compiling and running your code directly in the browser.
 ms.date: 03/07/2025
 ---
 # Learn to manage data collections using List\<T> in C\#

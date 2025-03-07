@@ -16,7 +16,7 @@ In this article, you learn how to make HTTP requests and handle responses with t
 > - <https://jsonplaceholder.typicode.com>: A site that provides a free fake API platform for testing and prototyping.
 > - <https://www.example.com>: A domain available for use in illustrative examples in documents.
 
-HTTP endpoints commonly return JavaScript Object Notation (JSON) data, but not always. For convenience, the optional [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` objects that perform automatic serialization and deserialization by using the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) package. The examples in this article call attention to places where these extensions are available.
+HTTP endpoints commonly return JavaScript Object Notation (JSON) data, but not always. For convenience, the optional [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package provides several extension methods for `HttpClient` and `HttpContent` objects that perform automatic serialization and deserialization by using the [📦 System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The examples in this article call attention to places where these extensions are available.
 
 > [!TIP]
 > All source code referenced in this article is available in the [GitHub: .NET Docs](https://github.com/dotnet/docs/tree/main/docs/fundamentals/networking/snippets/httpclient) repository.
@@ -73,7 +73,7 @@ To make an HTTP request, you call any of the following API methods:
 > </manifest>
 > ```
 >
-> For more information, see [Enable clear-text network traffic for the localhost domain](/dotnet/maui/data-cloud/local-web-services?view=net-maui-8.0#enable-clear-text-network-traffic-for-the-localhost-domain&preserve-view=true).
+> For more information, see [Enable clear-text network traffic for the localhost domain](/dotnet/maui/data-cloud/local-web-services#enable-clear-text-network-traffic-for-the-localhost-domain).
 
 ### Understand HTTP content
 
@@ -120,7 +120,7 @@ GET https://jsonplaceholder.typicode.com/todos/3 HTTP/1.1
 
 #### Create the HTTP GET request from JSON
 
-The `"https://jsonplaceholder.typicode.com/todos"` endpoint returns a JSON array of `Todo` objects. Their JSON structure resembles the following form:
+The <https://jsonplaceholder.typicode.com/todos> endpoint returns a JSON array of `Todo` objects. Their JSON structure resembles the following form:
 
 ```json
 [
@@ -143,8 +143,7 @@ The C# `Todo` object is defined as follows:
 
 :::code source="../snippets/httpclient/Todo.cs":::
 
-It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into a strongly typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of 
-the [System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
+It's a `record class` type, with optional `Id`, `Title`, `Completed`, and `UserId` properties. For more information on the `record` type, see [Introduction to record types in C#](../../../csharp/fundamentals/types/records.md). To automatically deserialize `GET` requests into a strongly typed C# object, use the <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A> extension method that's part of the [📦 System.Net.Http.Json](https://www.nuget.org/packages/System.Net.Http.Json) NuGet package.
 
 :::code source="../snippets/httpclient/Program.GetFromJson.cs" id="getfromjson":::
 

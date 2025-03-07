@@ -46,7 +46,7 @@ basics of control flow, which is the basis of how programs make decisions and ch
 different actions.
 
 This tutorial assumes that you have finished the [Hello world](hello-world.md) and
-[Numbers in C#](numbers-in-csharp-local.md) lessons.
+[Numbers in C#](numbers-in-csharp.md) lessons.
 
 ## List collection
 

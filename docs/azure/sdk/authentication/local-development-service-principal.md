@@ -181,7 +181,7 @@ Next, determine what roles (permissions) your app needs on what resources and as
 
 ## Set the app environment variables
 
-At runtime, certain types from the [`Azure.Identity` library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) such as `DefaultAzureCredential` search for service principal information by convention in the environment variables. There are multiple ways to configure environment variables when working with .NET, depending on your tooling and environment.
+At runtime, certain credentials from the [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true), such as `DefaultAzureCredential`, search for service principal information by convention in the environment variables. There are multiple ways to configure environment variables when working with .NET, depending on your tooling and environment.
 
 Regardless of the approach you choose, configure the following environment variables for a service principal:
 

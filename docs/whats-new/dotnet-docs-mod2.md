@@ -1,108 +1,103 @@
 ---
-title: ".NET docs: What's new for November 2024"
-description: "What's new in the .NET docs for November 2024."
-ms.custom: November-2024
-ms.date: 12/12/2024
+title: ".NET docs: What's new for February 2025"
+description: "What's new in the .NET docs for February 2025."
+ms.custom: February-2025
+ms.date: 03/01/2025
 ---
 
-# .NET docs: What's new for November 2024
+# .NET docs: What's new for February 2025
 
-Welcome to what's new in the .NET docs for November 2024. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs for February 2025. This article lists some of the major changes to docs during this period.
 
 ## .NET breaking changes
 
 ### New articles
 
-- ['dotnet restore' audits transitive packages](../core/compatibility/sdk/9.0/nugetaudit-transitive-packages.md)
-- ['dotnet watch' incompatible with Hot Reload for old frameworks](../core/compatibility/sdk/9.0/dotnet-watch.md)
-- [Asterisk no longer accepted for assembly name attributes](../core/compatibility/core-libraries/7.0/assembly-name-wildcard.md)
-- [Breaking changes in Windows Presentation Foundation for .NET Core 3.0](../core/compatibility/wpf.md)
-- [Dev cert export no longer creates folder](../core/compatibility/aspnet-core/9.0/certificate-export.md)
-- [Drag-and-drop operations in text editors](../core/compatibility/wpf/7.0/drag-and-drop.md)
-- [HttpClient metrics report `server.port` unconditionally](../core/compatibility/networking/9.0/server-port-attribute.md)
-- [HttpClientFactory uses SocketsHttpHandler as primary handler](../core/compatibility/networking/9.0/default-handler.md)
-- [Middleware types with multiple constructors](../core/compatibility/aspnet-core/9.0/middleware-constructors.md)
-- [Removal of WCF APIs with a `configurationName` parameter](../core/compatibility/wcf-client/8.0/configurationname-apis.md)
-- [String.Trim*(params ReadOnlySpan\<char>) overloads removed](../core/compatibility/core-libraries/9.0/string-trim.md)
-- [URI query and fragment redaction in HttpClient EventSource events](../core/compatibility/networking/9.0/query-redaction-events.md)
-- [URI query and fragment redaction in IHttpClientFactory logs](../core/compatibility/networking/9.0/query-redaction-logs.md)
-- [Version requirements for .NET 9 SDK](../core/compatibility/sdk/9.0/version-requirements.md)
-- [Warning emitted when targeting net7.0](../core/compatibility/sdk/9.0/net70-warning.md)
+- [Ambiguous overload resolution affecting StringValues implicit operators](../core/compatibility/core-libraries/9.0/ambiguous-overload.md)
+- [Default .NET images use Ubuntu](../core/compatibility/containers/10.0/default-images-use-ubuntu.md)
+- [Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE](../core/compatibility/cryptography/10.0/version-override.md)
+- [MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed](../core/compatibility/sdk/10.0/custom-build-event-warning.md)
+- [System.Linq.AsyncEnumerable in .NET 10](../core/compatibility/core-libraries/10.0/asyncenumerable.md)
+- [System.Text.Json metadata reader now unescapes metadata property names](../core/compatibility/serialization/9.0/json-metadata-reader.md)
+- [System.Windows.Forms.StatusStrip uses a different default renderer](../core/compatibility/windows-forms/9.0/statusstrip-renderer.md)
+- [System.Windows.Forms.StatusStrip uses System RenderMode by default](../core/compatibility/windows-forms/10.0/statusstrip-renderer.md)
+
+### Updated articles
+
+- [Breaking changes in .NET 7](../core/compatibility/7.0.md) - .NET 7 breaking changes overview behavioral changes clarity
 
 ## AI in .NET
 
 ### New articles
 
-- [Unified AI building blocks for .NET using Microsoft.Extensions.AI](../ai/ai-extensions.md)
+- [Evaluate a model's response](../ai/quickstarts/evaluate-ai-response.md)
+- [The Microsoft.Extensions.AI.Evaluation libraries (Preview)](../ai/conceptual/evaluation-libraries.md)
 
 ## .NET fundamentals
 
 ### New articles
 
-- [Create and consume custom frameworks for iOS-like platforms](../core/deploying/native-aot/ios-like-platforms/creating-and-consuming-custom-frameworks.md)
-- [Make anonymous function static (IDE0320)](../fundamentals/code-analysis/style-rules/ide0320.md)
-- [MSTest v3 migration guide](../core/testing/unit-testing-mstest-migration-from-v1-to-v3.md)
-- [MSTEST0037: Use proper 'Assert' methods](../core/testing/mstest-analyzers/mstest0037.md)
-- [Native AOT support for iOS-like platforms](../core/deploying/native-aot/ios-like-platforms/index.md)
-- [Prefer 'System.Threading.Lock' (IDE0330)](../fundamentals/code-analysis/style-rules/ide0330.md)
-- [SYSLIB5003: SVE is a preview feature can be used by enabling EnablePreviewFeatures flag](../fundamentals/syslib-diagnostics/syslib5003.md)
+- [Install and use LLDB on Linux](../core/diagnostics/lldb-linux.md)
+- [MSTEST0041: Use 'ConditionBaseAttribute' on test classes](../core/testing/mstest-analyzers/mstest0041.md)
+- [What's new in .NET 10](../core/whats-new/dotnet-10/overview.md)
+- [What's new in .NET libraries for .NET 10](../core/whats-new/dotnet-10/libraries.md)
+- [What's new in the .NET 10 runtime](../core/whats-new/dotnet-10/runtime.md)
+- [What's new in the SDK and tooling for .NET 10](../core/whats-new/dotnet-10/sdk.md)
 
 ### Updated articles
 
-- [.NET default templates for dotnet new](../core/tools/dotnet-new-sdk-templates.md) - Update docs for test templates
-- [Install .NET SDK or .NET Runtime on Ubuntu](../core/install/linux-ubuntu-install.md) - Update OS release support info
+- [C# formatting options](../fundamentals/code-analysis/style-rules/csharp-formatting-options.md) - Add default value for csharp_space_between_parentheses
+- [Configure MSTest](../core/testing/unit-testing-mstest-configure.md) - Improve MSTest testconfig doc
+- [dotnet test](../core/tools/dotnet-test.md) - Add documentation to the new dotnet test
+- [How to perform streaming transform of large XML documents (LINQ to XML)](../standard/linq/perform-streaming-transform-large-xml-documents.md) - Fixed incorrect logic in another XmlReader's example
+- [How to stream XML fragments with access to header information (LINQ to XML)](../standard/linq/stream-xml-fragments-access-header-information.md) - Fixed incorrect logic in another XmlReader's example
 
 ## C# language
 
 ### New articles
 
-- [`field` - Field backed property declarations](../csharp/language-reference/keywords/field.md)
-- [Compiler Error CS8802](../csharp/language-reference/compiler-messages/cs8802.md)
+- [What's new in C# 14](../csharp/whats-new/csharp-14.md)
 
-## F# language
+### Updated articles
 
-### New articles
-
-- [What's new in F# 9](../fsharp/whats-new/fsharp-9.md)
+- [Resolve nullable warnings](../csharp/language-reference/compiler-messages/nullable-warnings.md) - Add additional nullable reference warnings and errors
 
 ## Azure SDK for .NET
 
 ### New articles
 
-- [Configure a proxy when using the Azure SDK for .NET](../azure/sdk/configure-proxy.md)
-- [Use the Azure SDK for .NET in ASP.NET Core apps](../azure/sdk/aspnetcore-guidance.md)
+- [Authenticate Azure-hosted .NET apps to Azure resources using a user-assigned managed identity](../azure/sdk/authentication/user-assigned-managed-identity.md)
 
 ## .NET Framework
 
 ### New articles
 
-- [November 2024 security and quality rollup](../framework/release-notes/2024/11-12-november-security-and-quality-rollup.md)
+- [Install .NET Framework on Windows and Windows Server](../framework/install/on-windows-and-server.md)
+- [January 2025 cumulative update preview](../framework/release-notes/2025/01-28-january-cumulative-update-preview.md)
 
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [shethaadit](https://github.com/shethaadit) - Adit Sheth ![6 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-6-green)
-- [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
-- [Lamparter](https://github.com/Lamparter) - Lamparter ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
-- [tag-dbot](https://github.com/tag-dbot) -  ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
-- [ajpinedam](https://github.com/ajpinedam) - Andres Pineda ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [alexravenna](https://github.com/alexravenna) - Alex Ravenna ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [ArieHein](https://github.com/ArieHein) - Arie Heinrich ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [AsmusAB](https://github.com/AsmusAB) - Asmus Bartram ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [bigboybamo](https://github.com/bigboybamo) - Olabamiji Oyetubo ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [bogdanbujdea](https://github.com/bogdanbujdea) - Bogdan Bujdea ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [bsivanov](https://github.com/bsivanov) - Borislav Ivanov ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [davepcallan](https://github.com/davepcallan) - Dave Callan ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [emincb](https://github.com/emincb) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [eolasd](https://github.com/eolasd) - David Connaughton ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [goswinr](https://github.com/goswinr) - Goswin Rothenthal ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [jspohn2](https://github.com/jspohn2) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [kevingosse](https://github.com/kevingosse) - Kevin Gosse ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [lindexi](https://github.com/lindexi) - lindexi ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [Pxtl](https://github.com/Pxtl) - Martin Zarate ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [pypkaed](https://github.com/pypkaed) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [SeppPenner](https://github.com/SeppPenner) - SeppPenner ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [skycommand](https://github.com/skycommand) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [snechaev](https://github.com/snechaev) - Sergey Nechaev ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
-- [SpaceBeeGaming](https://github.com/SpaceBeeGaming) - SpaceBeeGaming ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [Rageking8](https://github.com/Rageking8) -  ![4 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-4-green)
+- [Knar33](https://github.com/Knar33) - Knar ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
+- [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [BenjaminMichaelis](https://github.com/BenjaminMichaelis) - Benjamin Michaelis ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [cacamille3](https://github.com/cacamille3) - Camille Guérin ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [egil](https://github.com/egil) - Egil Hansen ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [i2van](https://github.com/i2van) - Ivan Ivon ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [james-crawshaw](https://github.com/james-crawshaw) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [JoonghyunCho](https://github.com/JoonghyunCho) - Jay Cho ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [jwreford99](https://github.com/jwreford99) - Julian Wreford ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [kendra-svg](https://github.com/kendra-svg) - Kendra Sancho Vega ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [maartenba](https://github.com/maartenba) - Maarten Balliauw ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [michelebastione](https://github.com/michelebastione) - Michele Bastione ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [mpolewaczyk](https://github.com/mpolewaczyk) - Mateusz Polewaczyk ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [newmancodes](https://github.com/newmancodes) - Stephen Newman ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [RadwanAlfakseh](https://github.com/RadwanAlfakseh) - Radwan Nabeel Alfakseh ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [selaskar](https://github.com/selaskar) -  ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [ShaoHans](https://github.com/ShaoHans) - ShaoHans ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [sonergonul](https://github.com/sonergonul) - Soner Gönül ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [theluckyprogrammer](https://github.com/theluckyprogrammer) - Tomasz Osmanowski ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [thomasclaudiushuber](https://github.com/thomasclaudiushuber) - Thomas Claudius Huber ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)
+- [tsahi](https://github.com/tsahi) - tsahi ![1 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-1-green)

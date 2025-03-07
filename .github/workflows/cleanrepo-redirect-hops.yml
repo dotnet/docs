@@ -35,7 +35,7 @@ jobs:
 
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@dd2324fc52d5d43c699a5636bcf19fceaa70c284
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e
         with:
           branch: cleanrepo-remove-hops
           title: "Monthly chores: Remove redirect hops"

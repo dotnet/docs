@@ -83,7 +83,7 @@ C# 14 introduces several new features and enhancements to improve developer prod
 - Modifiers on simple lambda parameters.
 - Experimental feature - String literals in data section.
 
-For more information, see [What's new in C# 14](/dotnet/csharp/whats-new/csharp-14).
+For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp-14.md).
 
 ## Windows Forms
 
@@ -97,6 +97,6 @@ For more information, see [What's new in Windows Forms for .NET 10](/dotnet/desk
 
 ## See also
 
-- [.NET 10 Preview 1 container image updates](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/containers.md)
-- [F# updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/fsharp.md)
-- [Visual Basic updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/dotnet10p1/release-notes/10.0/preview/preview1/visualbasic.md)
+- [.NET 10 Preview 1 container image updates](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview1/containers.md)
+- [F# updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview1/fsharp.md)
+- [Visual Basic updates in .NET 10 Preview 1](https://github.com/dotnet/core/blob/main/release-notes/10.0/preview/preview1/visualbasic.md)

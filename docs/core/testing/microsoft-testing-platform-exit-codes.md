@@ -26,9 +26,9 @@ ms.topic: reference
 | `10` | The exit code `10` indicates that the test adapter, Testing.Platform Test Framework, MSTest, NUnit, or xUnit, failed to run tests for an infrastructure reason unrelated to the test's self. An example is failing to create a fixture needed by tests. |
 | `11` | The exit code `11` indicates that the test process will exit if dependent process exits. |
 | `12` | The exit code `12` indicates that the test session was unable to run because the client does not support any of the supported protocol versions. |
-| `13` | The exit code `13` indicates that the test session was stopped due to reaching the specified number of maximum failed tests using `--maximum-failed-tests` command-line option. For more information, see [the Options section in Microsoft.Testing.Platform overview](unit-testing-platform-intro.md#options) |
+| `13` | The exit code `13` indicates that the test session was stopped due to reaching the specified number of maximum failed tests using `--maximum-failed-tests` command-line option. For more information, see [the Options section in Microsoft.Testing.Platform overview](microsoft-testing-platform-intro.md#options) |
 
-To enable verbose logging and troubleshoot issues, see [Microsoft.Testing.Platform Diagnostics extensions](unit-testing-platform-extensions-diagnostics.md#built-in-options).
+To enable verbose logging and troubleshoot issues, see [Microsoft.Testing.Platform Diagnostics extensions](microsoft-testing-platform-extensions-diagnostics.md#built-in-options).
 
 ## Ignore specific exit codes
 

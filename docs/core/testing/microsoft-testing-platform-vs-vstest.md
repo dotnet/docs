@@ -20,7 +20,7 @@ VSTest ships with Visual Studio, the .NET SDK, and as a standalone tool in the [
 
 ### Execute Microsoft.Testing.Platform tests
 
-Microsoft.Testing.Platform is embedded directly into your test project and doesn't ship any extra executables. When you run your project executable, your tests run. For more information on running Microsoft.Testing.Platform tests, see [Microsoft.Testing.Platform overview: Run and debug tests](unit-testing-platform-intro.md#run-and-debug-tests).
+Microsoft.Testing.Platform is embedded directly into your test project and doesn't ship any extra executables. When you run your project executable, your tests run. For more information on running Microsoft.Testing.Platform tests, see [Microsoft.Testing.Platform overview: Run and debug tests](microsoft-testing-platform-intro.md#run-and-debug-tests).
 
 ## Namespaces and NuGet packages
 
@@ -36,10 +36,10 @@ VSTest is extensible and common types are placed in [Microsoft.TestPlatform.Obje
 
 Microsoft.Testing.Platform is based on [Microsoft.Testing.Platform](https://www.nuget.org/packages/Microsoft.Testing.Platform) NuGet package and other libraries in the `Microsoft.Testing.*` namespace. Like VSTest, the `Microsoft.Testing.Platform` is open-source and has a [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository.
 
-## Communication protocol (preview)
+## Communication protocol
 
 > [!NOTE]
-> The Visual Studio Test Explorer supports the Microsoft.Testing.Platform protocol in the **preview** versions since 17.10 onward. If you run/debug your tests using earlier versions of Visual Studio, Test Explorer will use `vstest.console.exe` and the old protocol to run these tests.
+> The Visual Studio Test Explorer supports the Microsoft.Testing.Platform protocol since 17.12 onward. If you run/debug your tests using earlier versions of Visual Studio, Test Explorer will use `vstest.console.exe` and the old protocol to run these tests.
 
 Microsoft.Testing.Platform uses a JSON-RPC based protocol to communicate between Visual Studio and the test runner process. The protocol is documented in the [MSTest GitHub repository](https://github.com/microsoft/testfx/tree/main/docs/mstest-runner-protocol).
 
@@ -48,6 +48,8 @@ VSTest also uses a JSON based communication protocol, but it's not JSON-RPC base
 ### Disabling the new protocol
 
 To disable the use of the new protocol in Test Explorer, you can edit your project to add the following property: `<DisableTestingPlatformServerCapability>true</DisableTestingPlatformServerCapability>`.
+
+You can also go to Preview Features options in Visual Studio and deselect the "Use testing platform server mode" option.
 
 ## Executables
 
@@ -83,12 +85,12 @@ The test related arguments are VSTest specific and so need to be transformed to 
 |-----------------|-----------------------|
 | `--test-adapter-path <ADAPTER_PATH>` | Not supported |
 | `--blame` | Not supported |
-| `--blame-crash` | `--crashdump` requires [Crash dump extension](./unit-testing-platform-extensions-diagnostics.md#crash-dump) |
-| `--blame-crash-dump-type <DUMP_TYPE>` | `--crashdump-type` requires [Crash dump extension](./unit-testing-platform-extensions-diagnostics.md#crash-dump) |
+| `--blame-crash` | `--crashdump` requires [Crash dump extension](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump) |
+| `--blame-crash-dump-type <DUMP_TYPE>` | `--crashdump-type` requires [Crash dump extension](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump) |
 | `--blame-crash-collect-always` | Not supported |
-| `--blame-hang` | `--hangdump` requires [Hang dump extension](./unit-testing-platform-extensions-diagnostics.md#hang-dump) |
-| `--blame-hang-dump-type <DUMP_TYPE>` | `--hangdump-type` requires [Hang dump extension](./unit-testing-platform-extensions-diagnostics.md#hang-dump) |
-| `--blame-hang-timeout <TIMESPAN>` | `--hangdump-timeout` requires [Hang dump extension](./unit-testing-platform-extensions-diagnostics.md#hang-dump) |
+| `--blame-hang` | `--hangdump` requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump) |
+| `--blame-hang-dump-type <DUMP_TYPE>` | `--hangdump-type` requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump) |
+| `--blame-hang-timeout <TIMESPAN>` | `--hangdump-timeout` requires [Hang dump extension](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump) |
 | `--collect <DATA_COLLECTOR_NAME>` | Depends on the data collector |
 | `-d\|--diag <LOG_FILE>` | `--diagnostic` |
 | `--filter <EXPRESSION>` | Depends upon the selected test framework |

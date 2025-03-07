@@ -41,7 +41,7 @@ The following **RunConfiguration** elements are not supported by `Microsoft.Test
 
 `Microsoft.Testing.Platform` is not using data collectors. Instead it has the concept of in-process and out-of-process extensions. Each extension is configured by its respective configuration file or through the command line.
 
-Most importantly [hang](unit-testing-platform-extensions-diagnostics.md#hang-dump) and [crash](unit-testing-platform-extensions-diagnostics.md#crash-dump) extension, and [code coverage](unit-testing-platform-extensions-code-coverage.md) extension.
+Most importantly [hang](microsoft-testing-platform-extensions-diagnostics.md#hang-dump) and [crash](microsoft-testing-platform-extensions-diagnostics.md#crash-dump) extension, and [code coverage](microsoft-testing-platform-extensions-code-coverage.md) extension.
 
 ### LoggerRunSettings element
 

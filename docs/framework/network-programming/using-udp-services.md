@@ -141,6 +141,7 @@ class Program
     static void Main(string[] args)
     {
         Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        s.EnableBroadcast = true;
 
         IPAddress broadcast = IPAddress.Parse("192.168.1.255");
 

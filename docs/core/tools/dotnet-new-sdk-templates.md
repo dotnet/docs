@@ -842,7 +842,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
 - **`--no-openapi`**
 
-  Turns off OpenAPI (Swagger) support. `AddSwaggerGen`, `UseSwagger`, and `UseSwaggerUI` aren't called.
+  Turns off OpenAPI (Swagger) support. `AddOpenApi` and `MapOpenApi` aren't called.
 
 - **`--no-https`**
 

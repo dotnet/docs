@@ -68,16 +68,16 @@ You don't need anything else to build and run your tests and you can use the sam
 
 ## Select the runner
 
-By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
-## Extend MSTest runner
+## Extend Microsoft.Testing.Platform
 
-You can customize `MSTest runner` experience through a set of [NuGet package extensions](./microsoft-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
+You can customize `Microsoft.Testing.Platform` experience through a set of [NuGet package extensions](./microsoft-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
-- [MSTest runner profile](#mstest-runner-profile)
+- [Microsoft.Testing.Platform profile](#microsofttestingplatform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
 
-### MSTest runner profile
+### Microsoft.Testing.Platform profile
 
 The concept of *profiles* allows you to select the default set of configurations and extensions that will be applied to your test project.
 
@@ -275,7 +275,7 @@ Finally, based on the extensions profile you're using, you can also remove some 
 
 ### Update your CI
 
-Once you've updated your projects, if you're using `MSTest runner` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./microsoft-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode).
+Once you've updated your projects, if you're using `Microsoft.Testing.Platform` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./microsoft-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode).
 
 Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 

@@ -186,4 +186,4 @@ Adhering to these requirements ensures that the source generator can successfull
 
 - [Creating metrics in .NET (Instrumentation tutorial)](metrics-instrumentation.md)
 - [Collecting metrics in .NET (Using MeterListener and exporters)](metrics-collection.md)
-- [Logging source generation in .NET](logging.md) (for a similar source-generation approach applied to logging)
+- [Logging source generation in .NET](../extensions/logger-message-generator.md) (for a similar source-generation approach applied to logging)

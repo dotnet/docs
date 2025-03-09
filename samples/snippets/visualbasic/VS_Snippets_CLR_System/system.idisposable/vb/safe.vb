@@ -26,7 +26,7 @@ Public Class LocalAllocHandle
     End Function
 End Class
 
-Public Class DisposableWithSafeHandle
+Public Class DisposableBaseWithSafeHandle
     Implements IDisposable
 
     ' Detect redundant Dispose() calls.

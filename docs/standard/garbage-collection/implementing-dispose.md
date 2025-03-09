@@ -25,15 +25,14 @@ The code example provided for the <xref:System.GC.KeepAlive%2A?displayProperty=n
 
 ## Cascade dispose calls
 
-If your class owns an instance of another type that implements <xref:System.IDisposable> storing it in a field or property, the containing class itself should also implement <xref:System.IDisposable>. Typically a class that instantiates an <xref:System.IDisposable> implementation and stores it as an instance member is also responsible for its cleanup. This helps ensure that the referenced disposable types are given the opportunity to deterministically perform cleanup through the <xref:System.IDisposable.Dispose%2A> method. In the following example, the class is `sealed` (or `NotInheritable` in Visual Basic).
+If your class owns an instance of another type that implements <xref:System.IDisposable>, the containing class itself should also implement <xref:System.IDisposable>. Typically a class that instantiates an <xref:System.IDisposable> implementation and stores it as an instance member (or property) is also responsible for its cleanup. This helps ensure that the referenced disposable types are given the opportunity to deterministically perform cleanup through the <xref:System.IDisposable.Dispose%2A> method. In the following example, the class is `sealed` (or `NotInheritable` in Visual Basic).
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.disposable/cs/Foo.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.disposable/vb/Foo.vb":::
 
 > [!TIP]
 >
-> - If your class has an <xref:System.IDisposable> field or property but doesn't *own* it, then the class doesn't need to implement <xref:System.IDisposable>.
->   - It's the developers' responsibility to define a clean ownership model that ensures the disposal of all <xref:System.IDisposable> instances in an object graph. Typically a class creating and storing the <xref:System.IDisposable> child object also becomes the owner, but in some cases the ownership can be transferred to another <xref:System.IDisposable> type.
+> - If your class has an <xref:System.IDisposable> field or property but doesn't *own* it, then the class doesn't need to implement <xref:System.IDisposable>. Typically a class creating and storing the <xref:System.IDisposable> child object also becomes the owner, but in some cases the ownership can be transferred to another <xref:System.IDisposable> type.
 > - There are cases when you may want to perform `null`-checking in a finalizer (which includes the `Dispose(false)` method invoked by a finalizer). One of the primary reasons is if you're unsure whether the instance got fully initialized (for example, an exception might be thrown in a constructor).
 
 ## Dispose() and Dispose(bool)
@@ -84,13 +83,11 @@ All non-sealed classes (or Visual Basic classes not modified as `NotInheritable`
 - A `Dispose(bool)` method that performs the actual cleanup.
 - If your class deals with unmanaged resources either provide an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method, or wrap the unmanaged resource in a <xref:System.Runtime.InteropServices.SafeHandle>.
 
-Either a class derived from <xref:System.Runtime.InteropServices.SafeHandle> that wraps your unmanaged resource (recommended)
-
 > [!IMPORTANT]
-> A finalizer (a <xref:System.Object.Finalize%2A?displayProperty=nameWithType> override) is only required if you directly reference unmanaged resources. This is only needed in a few advanced scenarios, therefore in most cases finalizers can be avoided.
+> A finalizer (a <xref:System.Object.Finalize%2A?displayProperty=nameWithType> override) is only required if you directly reference unmanaged resources. This is a highly advanced scenario that can be typically avoided:
 >
-> - It's possible for a class to only reference managed objects and implement the dispose pattern. There is no need to implement a finalizer in such cases and the base class will always call `Dispose(bool)` with `disposing: true`. The reason the dispose pattern is still encouraged is that it enables sub classes to implement a finalizer and call `Dispose(disposing: false)` on the base class.
-> - In the rare cases when it's necessary to deal with unmanaged resources (which are typically represented by <xref:System.IntPtr> handles), **we strongly recommend to wrap the handle into a <xref:System.Runtime.InteropServices.SafeHandle>**. The <xref:System.Runtime.InteropServices.SafeHandle> provides a finalizer so you don't have to write one yourself. See the [Safe handles](#safe-handles) paragraph for more information.
+> 1. **If your class references only managed objects**, it's still possible for the class to implement the dispose pattern. There is no need to implement a finalizer in such cases.
+> 1. **If you need to deal with unmanaged resources** we strongly recommend to wrap the unmanaged <xref:System.IntPtr> handle into a <xref:System.Runtime.InteropServices.SafeHandle>. The <xref:System.Runtime.InteropServices.SafeHandle> provides a finalizer so you don't have to write one yourself. See the [Safe handles](#safe-handles) paragraph for more information.
 
 ### Base class with managed resources
 
@@ -104,15 +101,15 @@ Here's a general example of implementing the dispose pattern for a base class th
 
 ### Base class with unmanaged resources
 
-Here's an example for implementing the dispose pattern for a base class that overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType> in order to clean up unmanaged resources it owns. The example also demonstrates a way to implement `Dispose(bool)` in a thread-safe manner. Synchronization might be critical when dealing with unmanaged resources in a multi-threaded application.
+Here's an example for implementing the dispose pattern for a base class that overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType> in order to clean up unmanaged resources it owns. The example also demonstrates a way to implement `Dispose(bool)` in a thread-safe manner. Synchronization might be critical when dealing with unmanaged resources in a multi-threaded application. As mentioned earlier, this is an advanced scenario.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/base2.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/base2.vb":::
 
 > [!NOTE]
 >
-> - The previous example uses <xref:System.Runtime.InteropServices.AllocHGlobal%2> to allocate 10 bytes on the unmanaged heap in the constructor and free the buffer in `Dispose(bool)` by calling <xref:System.Runtime.InteropServices.FreeHGlobal%2>. This is a **dummy** allocation for illustrational purpose.
-> - The approach in the previous example might lead to complex code and it's discouraged. It is recommended to avoid implementing a finalizer by [wrapping unmanaged resources into <xref:System.Runtime.InteropServices.SafeHandle> instances](#implement-the-dispose-pattern-using-a-custom-safe-handle).
+> - The previous example uses <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2> to allocate 10 bytes on the unmanaged heap in the constructor and free the buffer in `Dispose(bool)` by calling <xref:System.Runtime.Marshal.InteropServices.FreeHGlobal%2>. This is a dummy allocation for illustrational purpose.
+> - Again, it's recommended to avoid implementing a finalizer. See [Implement the dispose pattern using a custom safe handle](#implement-the-dispose-pattern-using-a-custom-safe-handle) for an equivalent of the previous example that delegates non-deterministic finalization and synchronization to <xref:System.Runtime.InteropServices.SafeHandle>.
 
 > [!TIP]
 > In C#, you implement a finalization by providing a [finalizer](../../csharp/programming-guide/classes-and-structs/finalizers.md), not by overriding <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. In Visual Basic, you create a finalizer with `Protected Overrides Sub Finalize()`.
@@ -147,13 +144,16 @@ The <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType
 
 ### Implement the dispose pattern using a custom safe handle
 
-The following code demonstrates how to handle unmanaged resources by implementing a <xref:System.Runtime.InteropServices.SafeHandle>. It's behavior is equivalent to the code [in the previous example](#base-class-with-unmanaged-resources) demonstrating unmanaged resource handling, however this approach is considered to be safer:
-
-- There is no need to implement a finalizer, <xref:System.Runtime.InteropServices.SafeHandle> will take care of finalization.
-- There is no need for synchronization to guarantee thread-safety. Even though there is a race condition allowing the `if (!_isDisposed)` branch to be entered multiple times, <xref:System.Runtime.InteropServices.SafeHandle.Dispose%2> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2> will be only called once.
+The following code demonstrates how to handle unmanaged resources by implementing a <xref:System.Runtime.InteropServices.SafeHandle>.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/safe.cs":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/safe.vb":::
+
+> [!NOTE]
+> The behavior of the `DisposableBaseWithSafeHandle` class is equivalent to the beahavior of the [`DisposableBaseWithFinalizer` class in a previous example](#base-class-with-unmanaged-resources), however the approach demonstrated in the current paragraph is safer:
+>
+> - There is no need to implement a finalizer, <xref:System.Runtime.InteropServices.SafeHandle> will take care of finalization.
+> - There is no need for synchronization to guarantee thread-safety. Even though there is a race condition in the `Dispose` implementation of `DisposableBaseWithSafeHandle`, <xref:System.Runtime.InteropServices.SafeHandle> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A?displayProperty=nameWithType> will be only called once.
 
 ### Built-in safe handles in .NET
 

@@ -7,7 +7,7 @@
             b.Dispose()
         End Using
 
-        Using c As New DisposableWithSafeHandle
+        Using c As New DisposableBaseWithSafeHandle
         End Using
     End Sub
 End Module

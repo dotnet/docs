@@ -25,7 +25,7 @@ class LocalAllocHandle : SafeHandleZeroOrMinusOneIsInvalid
     }
 }
 
-public class DisposableWithSafeHandle : IDisposable
+public class DisposableBaseWithSafeHandle : IDisposable
 {
     // Detect redundant Dispose() calls.
     private bool _isDisposed;

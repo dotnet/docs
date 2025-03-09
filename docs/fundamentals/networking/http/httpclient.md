@@ -3,7 +3,7 @@ title: Make HTTP requests with the HttpClient
 description: Learn how to make HTTP requests and handle responses with the HttpClient in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 03/06/2025
+ms.date: 03/09/2025
 ---
 
 # Make HTTP requests with the HttpClient class
@@ -309,8 +309,6 @@ When you know an HTTP endpoint returns JSON, you can deserialize the response bo
 
 In this code, the `result` value is the response body deserialized as the type `T`.
 
-<a name="http-error-handling"></a>
-
 ## Use HTTP error handling
 
 When an HTTP request fails, the system throws the <xref:System.Net.Http.HttpRequestException> object. Catching the exception alone might not be sufficient. There are other potential exceptions thrown that you might want to consider handling. For example, the calling code might use a cancellation token that was canceled before the request completed. In this scenario, you can catch the <xref:System.Threading.Tasks.TaskCanceledException> error:
@@ -345,8 +343,6 @@ When you call these methods, you can handle the `HttpRequestException` object an
 There might be scenarios where you need to throw the <xref:System.Net.Http.HttpRequestException> object in your code. The <xref:System.Net.Http.HttpRequestException.%23ctor> constructor is public and you can use it to throw an exception with a custom message:
 
 :::code source="../snippets/httpclient/Program.ThrowHttpException.cs" id="throw":::
-
-<a name="http-proxy"></a>
 
 ## Configure an HTTP proxy
 

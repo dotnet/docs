@@ -108,7 +108,7 @@ Here's an example for implementing the dispose pattern for a base class that ove
 
 > [!NOTE]
 >
-> - The previous example uses <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2> to allocate 10 bytes on the unmanaged heap in the constructor and free the buffer in `Dispose(bool)` by calling <xref:System.Runtime.Marshal.InteropServices.FreeHGlobal%2>. This is a dummy allocation for illustrational purpose.
+> - The previous example uses <xref:System.Runtime.InteropServices.Marshal.AllocHGlobal%2A> to allocate 10 bytes on the unmanaged heap in the constructor and free the buffer in `Dispose(bool)` by calling <xref:System.Runtime.Marshal.InteropServices.FreeHGlobal%2A>. This is a dummy allocation for illustrational purpose.
 > - Again, it's recommended to avoid implementing a finalizer. See [Implement the dispose pattern using a custom safe handle](#implement-the-dispose-pattern-using-a-custom-safe-handle) for an equivalent of the previous example that delegates non-deterministic finalization and synchronization to <xref:System.Runtime.InteropServices.SafeHandle>.
 
 > [!TIP]

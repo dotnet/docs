@@ -90,7 +90,8 @@ public sealed class MyTests
         /// Retrieve the score for relevance from the <see cref="EvaluationResult"/>.
         NumericMetric relevance =
             result.Get<NumericMetric>(RelevanceTruthAndCompletenessEvaluator.RelevanceMetricName);
-        Assert.IsFalse(relevance.Interpretation!.Failed);
+        Assert.IsNotNull(relevance.Interpretation);
+        Assert.IsFalse(relevance.Interpretation.Failed);
         Assert.IsTrue(relevance.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
 
         /// Retrieve the score for truth from the <see cref="EvaluationResult"/>.
@@ -112,8 +113,7 @@ public sealed class MyTests
         IChatClient client =
             new OllamaChatClient(
                 new Uri("http://localhost:11434"),
-                modelId: "llama3.1");
-        //modelId: "phi3:mini");
+                modelId: "phi3:mini");
 
         return new ChatConfiguration(client);
     }

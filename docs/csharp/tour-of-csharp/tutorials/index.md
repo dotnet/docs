@@ -17,8 +17,6 @@ You can try these tutorials in different environments. The concepts you'll learn
 - [In your browser, on the docs platform](hello-world.md): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
 - [In the Microsoft Learn training experience](/training/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
 
-After you've explored online, you can [download the .NET SDK and build programs on your machine](local-environment.md).
-
 ## [Hello world](hello-world.md)
 
 In the [Hello world](hello-world.md) tutorial, you'll create the most basic C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn training](/training/paths/csharp-first-steps/).

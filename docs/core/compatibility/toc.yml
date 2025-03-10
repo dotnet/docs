@@ -44,6 +44,8 @@ items:
                 href: sdk/10.0/custom-build-event-warning.md
           - name: Windows Forms
             items:
+              - name: Obsoletions and warnings
+                href: windows-forms/10.0/obsolete-apis.md
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation
@@ -2124,6 +2126,8 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: Obsoletions and warnings
+                href: windows-forms/7.0/obsolete-apis.md
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation

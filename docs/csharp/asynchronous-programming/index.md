@@ -22,7 +22,7 @@ Cooking breakfast is a good example of asynchronous work that isn't parallel. On
 
 For a parallel algorithm, you need multiple people who cook (or multiple threads). One person cooks the eggs, another fries the bacon, and so on. Each person focuses on their one specific task. Each person who is cooking (or thread) is blocked synchronously awaiting for the current task to complete: Bacon ready to flip, Bread ready to pop up in toaster, and so on.
 
-:::image type="content" source="media/synchronous-breakfast.png" alt-text="Diagram that shows instructions for preparing breakfast as a list of seven sequential tasks completed in 30 minutes.":::
+:::image type="content" source="media/synchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as a list of seven sequential tasks completed in 30 minutes.":::
 
 Consider the same list of synchronous instructions written as C# code statements:
 
@@ -115,7 +115,7 @@ Console.WriteLine("Breakfast is ready!");
 
 You now have an asynchronously prepared breakfast that takes about 20 minutes to prepare. The total cook time is reduced because some tasks run concurrently.
 
-:::image type="content" source="media/asynchronous-breakfast.png" alt-text="Diagram that shows instructions for preparing breakfast as eight asynchronous tasks that complete in about 20 minutes, where unfortunately, the eggs and bacon burn.":::
+:::image type="content" source="media/asynchronous-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as eight asynchronous tasks that complete in about 20 minutes, where unfortunately, the eggs and bacon burn.":::
 
 The code updates improve the preparation process by reducing the cook time, but they introduce a regression by burning the eggs and bacon. You start all the asynchronous tasks at once. You await each task only when you need the results. The code might be similar to code in a web application that makes requests to different microservices, then combines the results into a single page. You make all the requests immediately, then await all those tasks and compose the web page.
 
@@ -263,7 +263,7 @@ Here's what the final version of the code looks like:
 
 The code completes the asynchronous breakfast tasks in about 15 minutes. The total time is reduced because some tasks run concurrently. The code simultaneously monitors multiple tasks and takes action only as needed.
 
-:::image type="content" source="media/whenany-async-breakfast.png" alt-text="Diagram that shows instructions for preparing breakfast as six asynchronous tasks that complete in about 15 minutes, and the code monitors for possible interruptions.":::
+:::image type="content" source="media/whenany-async-breakfast.png" border="false" alt-text="Diagram that shows instructions for preparing breakfast as six asynchronous tasks that complete in about 15 minutes, and the code monitors for possible interruptions.":::
 
 The final code is asynchronous. It more accurately reflects how a person might cook breakfast. Compare the final code with the first code sample in the article. The core actions are still clear by reading the code. You can read the final code the same way you read the list of instructions for making a breakfast, as shown at the beginning of the article. The language features for the `async` and `await` keywords provide the translation every person makes to follow the written instructions: Start tasks as you can and don't block while waiting for tasks to complete.
 

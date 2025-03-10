@@ -1,7 +1,10 @@
-﻿static class Program
+﻿Test();
+
+void Test()
 {
-    static void Main()
-    {
-        using var disposable = new BaseClassWithSafeHandle();
-    }
+    using DisposableDerived a = new();
+    using DisposableDerivedWithFinalizer b = new();
+    b.Dispose();
+    using DisposableBaseWithSafeHandle c = new();
 }
+

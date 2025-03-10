@@ -9,7 +9,7 @@ ms.date: 03/07/2025
 Modern .NET applications can capture metrics using the <xref:System.Diagnostics.Metrics> API. These metrics often include additional context in the form of key-value pairs called *tags* (sometimes referred to as *dimensions* in telemetry systems). This article shows how to use a compile-time source generator to define **strongly-typed metric tags** (TagNames) and metric recording types and methods. By using strongly-typed tags, you eliminate repetitive boilerplate code and ensure that related metrics share the same set of tag names with compile-time safety. The primary benefit of this approach is improved developer productivity and type safety.
 
 > [!NOTE]
-> In the context of metrics, a tag is sometimes also called a “dimension.” This article uses “tag” for clarity and consistency with .NET metrics terminology.
+> In the context of metrics, a tag is sometimes also called a "dimension." This article uses "tag" for clarity and consistency with .NET metrics terminology.
 
 ## Tag name defaults and customization
 
@@ -32,7 +32,7 @@ public static partial class MyMetrics
 }
 ```
 
-In the code above, `RequestTags` is a strongly-typed tag struct with a single property `Region`. The `CreateRequestCount` method is marked with `[Counter<int>]`, indicating it will generate a **Counter** instrument that tracks `int` values. The attribute references `typeof(RequestTags)`, meaning the counter will use the tags defined in `RequestTags` when recording metrics. The source generator will produce a strongly-typed instrument class (named `RequestCount`) with an `Add` method that accepts integer value and `RequestTags` object.
+In the code above, `RequestTags` is a strongly-typed tag struct with a single property `Region`. The `CreateRequestCount` method is marked with <xref:Microsoft.Extensions.Diagnostics.Metrics.CounterAttribute`1> where `T` is an `int`, indicating it generates a **Counter** instrument that tracks `int` values. The attribute references `typeof(RequestTags)`, meaning the counter will use the tags defined in `RequestTags` when recording metrics. The source generator will produce a strongly-typed instrument class (named `RequestCount`) with an `Add` method that accepts integer value and `RequestTags` object.
 
 To use the generated metric, create a <xref:System.Diagnostics.Metrics.Meter> and record measurements as shown below:
 
@@ -111,7 +111,7 @@ In this example, `MetricTags` is a tag class that inherits from `MetricParentTag
 
 All three metric definitions `CreateLatency`, `CreateTotalCount`, and `CreateTotalFailures` use `MetricTags` as their tag object type. This means the generated metric types (`Latency`, `TotalCount`, and `TotalFailures`) will all expect a `MetricTags` instance when recording data. **Each of these metrics will have the same set of tag names:** `Dim1DimensionName`, `Operation`, `Dim2`, `Dim3`, and `DimensionNameOfParentOperation`.
 
-The code below shows how to create and use these metrics in a class:
+The following code shows how to create and use these metrics in a class:
 
 ```csharp
 internal class MyClass
@@ -163,11 +163,11 @@ internal class MyClass
 }
 ```
 
-In the `MyClass.DoWork` method above, a `MetricTags` object is populated with values for each tag. This single `tags` object is then passed to all three instruments when recording data. The `Latency` metric (a histogram) records the elapsed time, and both counters (`TotalCount` and `TotalFailures`) record occurrence counts. Because all metrics share the same tag object type, the tags (`Dim1DimensionName`, `Operation`, `Dim2`, `Dim3`, `DimensionNameOfParentOperation`) are present on every measurement.
+In the preceding `MyClass.DoWork` method, a `MetricTags` object is populated with values for each tag. This single `tags` object is then passed to all three instruments when recording data. The `Latency` metric (a histogram) records the elapsed time, and both counters (`TotalCount` and `TotalFailures`) record occurrence counts. Because all metrics share the same tag object type, the tags (`Dim1DimensionName`, `Operation`, `Dim2`, `Dim3`, `DimensionNameOfParentOperation`) are present on every measurement.
 
 ## Performance considerations
 
-Using strongly-typed tags via source generation adds no overhead compared to using metrics directly. If you need to further minimize allocations for very high-frequency metrics, consider defining your tag object as a `struct` (value type) instead of a class. Using a struct for the tag object can avoid heap allocations when recording metrics, since the tags would be passed by value.
+Using strongly-typed tags via source generation adds no overhead compared to using metrics directly. If you need to further minimize allocations for very high-frequency metrics, consider defining your tag object as a `struct` (value type) instead of a `class`. Using a `struct` for the tag object can avoid heap allocations when recording metrics, since the tags would be passed by value.
 
 ## Generated metric method requirements
 

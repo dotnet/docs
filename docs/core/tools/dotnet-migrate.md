@@ -32,7 +32,7 @@ Migration can be performed on the following assets:
 
 * A single project by specifying the *project.json* file to migrate.
 * All of the directories specified in the *global.json* file by passing in a path to the *global.json* file.
-* A *solution.sln* file, where it migrates the projects referenced in the solution.
+* A *solution.sln(x)* file, where it migrates the projects referenced in the solution.
 * On all subdirectories of the given directory recursively.
 
 The `dotnet migrate` command keeps the migrated *project.json* file inside a `backup` directory, which it creates if the directory doesn't exist. This behavior is overridden using the `--skip-backup` option.
@@ -49,7 +49,7 @@ The path to one of the following:
 
 * a *project.json* file to migrate.
 * a *global.json* file: the folders specified in *global.json* are migrated.
-* a *solution.sln* file: the projects referenced in the solution are migrated.
+* a *solution.sln(x)* file: the projects referenced in the solution are migrated.
 * a directory to migrate: recursively searches for *project.json* files to migrate inside the specified directory.
 
 Defaults to current directory if nothing is specified.

@@ -55,20 +55,7 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
 
-        TokenCredential credential = null;
-
-        if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
-        {
-            // Use when running in hosted production environments
-            credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
-        } 
-        else 
-        {
-            // Use locally on dev machine - DO NOT use in production or outside of local dev
-            credential = new DefaultAzureCredential();
-        }
-
-        clientBuilder.UseCredential(credential);
+        clientBuilder.UseCredential(new ClientSecretCredential(tenantId, clientId, clientSecret));
     });
     #endregion snippet_ClientSecretCredential_UseCredential
 
@@ -77,22 +64,10 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
     var clientId = Environment.GetEnvironmentVariable("CLIENT_ID");
     var clientSecret = Environment.GetEnvironmentVariable("CLIENT_SECRET");
 
-    TokenCredential credential = null;
-
-    if (builder.Environment.IsProduction() || builder.Environment.IsStaging())
-    {
-        // Use when running in hosted production environments
-        credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
-    }
-    else
-    {
-        // Use locally on dev machine - DO NOT use in production or outside of local dev
-        credential = new DefaultAzureCredential();
-    }
-
     builder.Services.AddSingleton<BlobServiceClient>(_ =>
         new BlobServiceClient(
-            new Uri("https://<account-name>.blob.core.windows.net"), credential));
+            new Uri("https://<account-name>.blob.core.windows.net"),
+            new ClientSecretCredential(tenantId, clientId, clientSecret)));
     #endregion snippet_ClientSecretCredential
 }
 

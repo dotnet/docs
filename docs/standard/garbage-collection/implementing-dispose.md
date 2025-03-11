@@ -33,7 +33,7 @@ If your class owns an instance of another type that implements <xref:System.IDis
 > [!TIP]
 >
 > - If your class has an <xref:System.IDisposable> field or property but doesn't *own* it, then the class doesn't need to implement <xref:System.IDisposable>. Typically a class creating and storing the <xref:System.IDisposable> child object also becomes the owner, but in some cases the ownership can be transferred to another <xref:System.IDisposable> type.
-> - There are cases when you may want to perform `null`-checking in a finalizer (which includes the `Dispose(false)` method invoked by a finalizer). One of the primary reasons is if you're unsure whether the instance got fully initialized (for example, an exception might be thrown in a constructor).
+> - There are cases when you might want to perform `null`-checking in a finalizer (which includes the `Dispose(false)` method invoked by a finalizer). One of the primary reasons is if you're unsure whether the instance got fully initialized (for example, an exception might be thrown in a constructor).
 
 ## Dispose() and Dispose(bool)
 
@@ -81,13 +81,13 @@ All non-sealed classes (or Visual Basic classes not modified as `NotInheritable`
 
 - A <xref:System.IDisposable.Dispose%2A> implementation that calls the `Dispose(bool)` method.
 - A `Dispose(bool)` method that performs the actual cleanup.
-- If your class deals with unmanaged resources either provide an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method, or wrap the unmanaged resource in a <xref:System.Runtime.InteropServices.SafeHandle>.
+- If your class deals with unmanaged resources, either provide an override to the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method or wrap the unmanaged resource in a <xref:System.Runtime.InteropServices.SafeHandle>.
 
 > [!IMPORTANT]
 > A finalizer (a <xref:System.Object.Finalize%2A?displayProperty=nameWithType> override) is only required if you directly reference unmanaged resources. This is a highly advanced scenario that can be typically avoided:
 >
-> 1. **If your class references only managed objects**, it's still possible for the class to implement the dispose pattern. There is no need to implement a finalizer in such cases.
-> 1. **If you need to deal with unmanaged resources** we strongly recommend to wrap the unmanaged <xref:System.IntPtr> handle into a <xref:System.Runtime.InteropServices.SafeHandle>. The <xref:System.Runtime.InteropServices.SafeHandle> provides a finalizer so you don't have to write one yourself. See the [Safe handles](#safe-handles) paragraph for more information.
+> - **If your class references only managed objects**, it's still possible for the class to implement the dispose pattern. There's no need to implement a finalizer.
+> - **If you need to deal with unmanaged resources**, we strongly recommend wrapping the unmanaged <xref:System.IntPtr> handle into a <xref:System.Runtime.InteropServices.SafeHandle>. The <xref:System.Runtime.InteropServices.SafeHandle> provides a finalizer so you don't have to write one yourself. For more information, see the [Safe handles](#safe-handles) paragraph.
 
 ### Base class with managed resources
 
@@ -140,7 +140,7 @@ Writing code for an object's finalizer is a complex task that can cause problems
 
 A <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> is an abstract managed type that wraps an <xref:System.IntPtr?displayProperty=nameWithType> that identifies an unmanaged resource. On Windows it might identify a handle, and on Unix, a file descriptor. The `SafeHandle` provides all of the logic necessary to ensure that this resource is released once and only once, either when the `SafeHandle` is disposed of or when all references to the `SafeHandle` have been dropped and the `SafeHandle` instance is finalized.
 
-The <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> is an abstract base class. Derived classes provide specific instances for different kinds of handle. These derived classes validate what values for the <xref:System.IntPtr?displayProperty=nameWithType> are considered invalid and how to actually free the handle. For example, <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> derives from `SafeHandle` to wrap `IntPtrs` that identify open file handles/descriptors, and overrides its <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle?displayProperty=nameWithType> method to close it (via the `close` function on Unix or `CloseHandle` function on Windows). Most APIs in .NET libraries that create an unmanaged resource wraps it in a `SafeHandle` and return that `SafeHandle` to you as needed, rather than handing back the raw pointer. In situations where you interact with an unmanaged component and get an `IntPtr` for an unmanaged resource, you can create your own `SafeHandle` type to wrap it. As a result, few non-`SafeHandle` types need to implement finalizers. Most disposable pattern implementations only end up wrapping other managed resources, some of which may be `SafeHandle` objects.
+The <xref:System.Runtime.InteropServices.SafeHandle?displayProperty=nameWithType> is an abstract base class. Derived classes provide specific instances for different kinds of handle. These derived classes validate what values for the <xref:System.IntPtr?displayProperty=nameWithType> are considered invalid and how to actually free the handle. For example, <xref:Microsoft.Win32.SafeHandles.SafeFileHandle> derives from `SafeHandle` to wrap `IntPtrs` that identify open file handles and descriptors, and overrides its <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle?displayProperty=nameWithType> method to close it (via the `close` function on Unix or `CloseHandle` function on Windows). Most APIs in .NET libraries that create an unmanaged resource wrap it in a `SafeHandle` and return that `SafeHandle` to you as needed, rather than handing back the raw pointer. In situations where you interact with an unmanaged component and get an `IntPtr` for an unmanaged resource, you can create your own `SafeHandle` type to wrap it. As a result, few non-`SafeHandle` types need to implement finalizers. Most disposable pattern implementations only end up wrapping other managed resources, some of which might be `SafeHandle` objects.
 
 ### Implement the dispose pattern using a custom safe handle
 
@@ -150,10 +150,10 @@ The following code demonstrates how to handle unmanaged resources by implementin
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/safe.vb":::
 
 > [!NOTE]
-> The behavior of the `DisposableBaseWithSafeHandle` class is equivalent to the beahavior of the [`DisposableBaseWithFinalizer` class in a previous example](#base-class-with-unmanaged-resources), however the approach demonstrated in the current paragraph is safer:
+> The behavior of the `DisposableBaseWithSafeHandle` class is equivalent to the behavior of the [`DisposableBaseWithFinalizer` class in a previous example](#base-class-with-unmanaged-resources), however the approach demonstrated here is safer:
 >
-> - There is no need to implement a finalizer, <xref:System.Runtime.InteropServices.SafeHandle> will take care of finalization.
-> - There is no need for synchronization to guarantee thread-safety. Even though there is a race condition in the `Dispose` implementation of `DisposableBaseWithSafeHandle`, <xref:System.Runtime.InteropServices.SafeHandle> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A?displayProperty=nameWithType> will be only called once.
+> - There is no need to implement a finalizer, because <xref:System.Runtime.InteropServices.SafeHandle> will take care of finalization.
+> - There is no need for synchronization to guarantee thread safety. Even though there is a race condition in the `Dispose` implementation of `DisposableBaseWithSafeHandle`, <xref:System.Runtime.InteropServices.SafeHandle> guarantees that <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A?displayProperty=nameWithType> will be called only once.
 
 ### Built-in safe handles in .NET
 
@@ -163,7 +163,7 @@ The following derived classes in the <xref:Microsoft.Win32.SafeHandles> namespac
 | - | - |
 | <xref:Microsoft.Win32.SafeHandles.SafeFileHandle><br/><xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle><br/><xref:Microsoft.Win32.SafeHandles.SafePipeHandle> | Files, memory mapped files, and pipes |
 | <xref:Microsoft.Win32.SafeHandles.SafeMemoryMappedViewHandle> | Memory views |
-| <xref:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle><br/><xref:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle><br/><xref:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle> |Cryptography constructs |
+| <xref:Microsoft.Win32.SafeHandles.SafeNCryptKeyHandle><br/><xref:Microsoft.Win32.SafeHandles.SafeNCryptProviderHandle><br/><xref:Microsoft.Win32.SafeHandles.SafeNCryptSecretHandle> | Cryptography constructs |
 | <xref:Microsoft.Win32.SafeHandles.SafeRegistryHandle> | Registry keys |
 | <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> | Wait handles |
 

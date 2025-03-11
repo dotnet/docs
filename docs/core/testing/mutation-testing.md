@@ -1,23 +1,22 @@
 ---
 title: Mutation testing
 author: sigmade
-description: Mutation testing is a way to evaluate the quality of our unit tests
-ms.date: 01/30/2025
+description: Learn about the Stryker.net tool for mutation testing, to evaluate the quality of your unit tests.
+ms.date: 03/11/2025
 ---
 
 # Mutation testing
 
-Mutation testing is a way to evaluate the quality of our unit tests.
-For mutation testing, there is a tool **Stryker.NET**, will automatically perform mutations in the code, run the tests, and generate a detailed report with the results.
+Mutation testing is a way to evaluate the quality of our unit tests. For mutation testing, the **Stryker.NET** tool automatically performs mutations in your code, runs tests, and generates a detailed report with the results.
 
-Let's see how it works with an example.
+## Example test scenario
 
-We have a _PriceCalculator.cs_ class with a `Calculate` method that calculates the price taking into account the discount.
+Consider a sample _PriceCalculator.cs_ class with a `Calculate` method that calculates the price, taking into account the discount.
 
 ```csharp
 public class PriceCalculator
 {
-    public static decimal CalculatePrice(decimal price, decimal discountPercent)
+    public decimal CalculatePrice(decimal price, decimal discountPercent)
     {
         if (price <= 0)
         {
@@ -46,7 +45,9 @@ public void ApplyDiscountCorrectly()
     decimal price = 100;
     decimal discountPercent = 10;
 
-    var result = PriceCalculator.CalculatePrice(price, discountPercent);
+    var calculator = new PriceCalculator();
+
+    var result = calculator.CalculatePrice(price, discountPercent);
 
     Assert.Equal(90.00m, result);
 }
@@ -54,14 +55,18 @@ public void ApplyDiscountCorrectly()
 [Fact]
 public void InvalidDiscountPercent_ShouldThrowException()
 {
-    Assert.Throws<ArgumentException>(() => PriceCalculator.CalculatePrice(100, -1));
-    Assert.Throws<ArgumentException>(() => PriceCalculator.CalculatePrice(100, 101));
+    var calculator = new PriceCalculator();
+
+    Assert.Throws<ArgumentException>(() => calculator.CalculatePrice(100, -1));
+    Assert.Throws<ArgumentException>(() => calculator.CalculatePrice(100, 101));
 }
 
 [Fact]
 public void InvalidPrice_ShouldThrowException()
 {
-    Assert.Throws<ArgumentException>(() => PriceCalculator.CalculatePrice(-10, 10));
+    var calculator = new PriceCalculator();
+
+    Assert.Throws<ArgumentException>(() => calculator.CalculatePrice(-10, 10));
 }
 ```
 
@@ -69,13 +74,13 @@ First, install **Stryker.NET**.
 To do this, you need to execute the command:
 
 ```dotnetcli
-    dotnet tool install -g dotnet-stryker
+dotnet tool install -g dotnet-stryker
 ```
 
 Let's run Stryker using the command from the directory where the unit tests are located:
 
 ```dotnetcli
-    dotnet stryker
+dotnet stryker
 ```
 
 After the testing is completed, a report will be displayed in the console - how many mutants were killed and how many survived.
@@ -110,16 +115,19 @@ Let's add test data for boundary values and run mutation testing again.
 [Fact]
 public void InvalidPrice_ShouldThrowException()
 {
-    Assert.Throws<ArgumentException>(()
-        => PriceCalculator.CalculatePrice(0, 10));
+    var calculator = new PriceCalculator();
+
     // changed price from -10 to 0
+    Assert.Throws<ArgumentException>(() => calculator.CalculatePrice(0, 10));
 }
 
 [Fact] // Added test for 0 and 100 discount
 public void NoExceptionForZeroAnd100Discount()
 {
-    var exceptionWhen0 = Record.Exception(() => PriceCalculator.CalculatePrice(100, 0));
-    var exceptionWhen100 = Record.Exception(() => PriceCalculator.CalculatePrice(100, 100));
+    var calculator = new PriceCalculator();
+
+    var exceptionWhen0 = Record.Exception(() => calculator.CalculatePrice(100, 0));
+    var exceptionWhen100 = Record.Exception(() => calculator.CalculatePrice(100, 100));
 
     Assert.Null(exceptionWhen0);
     Assert.Null(exceptionWhen100);
@@ -134,21 +142,22 @@ As you can see, after correcting the equivalent mutants, we only have string mut
 [Fact]
 public void InvalidDiscountPercent_ShouldThrowExceptionWithCorrectMessage()
 {
-    var exception1 = Assert.Throws<ArgumentException>(()
-        => PriceCalculator.CalculatePrice(100, -1));
-    Assert.Equal("Discount percent must be between 0 and 100.", exception1.Message);
+    var calculator = new PriceCalculator();
 
-    var exception2 = Assert.Throws<ArgumentException>(()
-        => PriceCalculator.CalculatePrice(100, 101));
-    Assert.Equal("Discount percent must be between 0 and 100.", exception2.Message);
+    var ex1 = Assert.Throws<ArgumentException>(() => calculator.CalculatePrice(100, -1));
+    Assert.Equal("Discount percent must be between 0 and 100.", ex1.Message);
+
+    var ex2 = Assert.Throws<ArgumentException>(() => calculator.CalculatePrice(100, 101));
+    Assert.Equal("Discount percent must be between 0 and 100.", ex2.Message);
 }
 
 [Fact]
 public void InvalidPrice_ShouldThrowExceptionWithCorrectMessage()
 {
-    var exception = Assert.Throws<ArgumentException>(()
-        => PriceCalculator.CalculatePrice(0, 10));
-    Assert.Equal("Price must be greater than zero.", exception.Message);
+    var calculator = new PriceCalculator();
+
+    var ex = Assert.Throws<ArgumentException>(() => calculator.CalculatePrice(0, 10));
+    Assert.Equal("Price must be greater than zero.", ex.Message);
 }
 ```
 

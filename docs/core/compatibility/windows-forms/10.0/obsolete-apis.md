@@ -1,12 +1,12 @@
 ---
-title: "Breaking change: .NET 10 obsoletions and warnings in Windows Forms"
+title: "Breaking change: .NET 10 obsoletions in Windows Forms"
 titleSuffix: ""
-description: Learn about the .NET 10 breaking change where some Windows Forms APIs have been marked as obsolete or otherwise produce a warning.
+description: Learn about the .NET 10 breaking change where some Windows Forms APIs have been marked as obsolete.
 ms.date: 03/10/2025
 ---
 # Windows Forms obsoletions and warnings (.NET 10)
 
-Some Windows Forms APIs have been marked as obsolete, starting in .NET 10. Other APIs aren't obsolete but will cause a compile-time warning if you reference them.
+Some Windows Forms APIs have been marked as obsolete, starting in .NET 10.
 
 ## Previous behavior
 
@@ -14,7 +14,7 @@ In previous .NET versions, these APIs can be used without any build warning.
 
 ## New behavior
 
-In .NET 10 and later versions, use of these APIs produces a compile-time warning or error with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the warnings individually instead of blanket-suppressing all obsoletion warnings.
+In .NET 10 and later versions, use of these APIs produces a compile-time warning with a custom diagnostic ID. The use of custom diagnostic IDs allows you to suppress the warnings individually instead of blanket-suppressing all obsoletion warnings.
 
 The following table lists the custom diagnostic IDs and their corresponding warning messages.
 
@@ -30,7 +30,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 
 ## Type of breaking change
 
-These obsoletions and warnings can affect [source compatibility](../../categories.md#source-compatibility).
+These obsoletion warnings can affect [source compatibility](../../categories.md#source-compatibility).
 
 ## Recommended action
 

@@ -65,4 +65,4 @@ Refer to the [alias name conflicts documentation](/dotnet/csharp/language-refere
 - <xref:System.Windows.Controls.Menu?displayProperty=fullName>
 - <xref:System.Windows.Controls.MenuItem?displayProperty=fullName>
 - <xref:System.Windows.Controls.ToolBar?displayProperty=fullName>
-- <xref:System.Windows.Controls.StatusBar?displayProperty=fullName>
+- `System.Windows.Controls.StatusBar`

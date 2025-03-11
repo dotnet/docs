@@ -4,7 +4,7 @@ titleSuffix: ""
 description: Learn about the .NET 10 breaking change where some Windows Forms APIs have been marked as obsolete or otherwise produce a warning.
 ms.date: 03/10/2025
 ---
-# Windows Forms obsoletions and warnings (.NET 10)
+# Windows Forms obsoletions (.NET 10)
 
 Some Windows Forms APIs have been marked as obsolete, starting in .NET 10. Other APIs aren't obsolete but will cause a compile-time warning if you reference them.
 
@@ -42,20 +42,20 @@ These obsoletions and warnings can affect [source compatibility](../../categorie
 ### WFDEV004
 
 - <xref:System.Windows.Forms.Form.OnClosing(System.ComponentModel.CancelEventArgs)>
-- <xref:System.Windows.Forms.Form.OnClosed(System.EventArgs)>
+- <xref:System.Windows.Forms.Form.OnClosed(System.EventArgs)?displayProperty=fullName>
 
 ### WFDEV005
 
-- <xref:System.Windows.Clipboard.GetData(System.String)>
+- <xref:System.Windows.Clipboard.GetData(System.String)?displayProperty=fullName>
 
 ### WFDEV006
 
-- <xref:System.Windows.Forms.ContextMenu>
-- <xref:System.Windows.Forms.DataGrid>
-- <xref:System.Windows.Forms.MainMenu>
-- <xref:System.Windows.Forms.Menu>
-- <xref:System.Windows.Forms.StatusBar>
-- <xref:System.Windows.Forms.ToolBar>
+- <xref:System.Windows.Forms.ContextMenu?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataGrid?displayProperty=fullName>
+- <xref:System.Windows.Forms.MainMenu?displayProperty=fullName>
+- <xref:System.Windows.Forms.Menu?displayProperty=fullName>
+- <xref:System.Windows.Forms.StatusBar?displayProperty=fullName>
+- <xref:System.Windows.Forms.ToolBar?displayProperty=fullName>
 
 ## See also
 

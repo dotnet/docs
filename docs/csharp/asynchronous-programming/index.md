@@ -36,7 +36,7 @@ Successful modern apps require asynchronous code. Without language support, writ
 
 ## Don't block, await instead
 
-The previous code highlights an unfortunate programming practice: Writing synchronous code to perform asynchronous operations. The code blocks the current thread from doing any other work. The code doesn't interrupt the thread while there are running tasks. The outcome of this model is similar to staring at the toaster after you put in the bread. You ignore any interruptions and don't start other tasks until the bread pops up. You don't take the butter and jam out of the fridge. You might miss seeing a fire starting on the stove. You want to both toast the bread and handle other concerns at the same time. The same is true with your code. 
+The previous code highlights an unfortunate programming practice: Writing synchronous code to perform asynchronous operations. The code blocks the current thread from doing any other work. The code doesn't interrupt the thread while there are running tasks. The outcome of this model is similar to staring at the toaster after you put in the bread. You ignore any interruptions and don't start other tasks until the bread pops up. You don't take the butter and jam out of the fridge. You might miss seeing a fire starting on the stove. You want to both toast the bread and handle other concerns at the same time. The same is true with your code.
 
 You can start by updating the code so the thread doesn't block while tasks are running. The `await` keyword provides a nonblocking way to start a task, then continue execution when the task completes. A simple asynchronous version of the breakfast code looks like the following snippet:
 
@@ -45,7 +45,7 @@ You can start by updating the code so the thread doesn't block while tasks are r
 The code updates the method bodies of `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync` to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` objects, respectively. The method names include the "Async" suffix. The `Main` method returns the `Task` object, although it doesn't have a `return` expression, which is by design. For more information, see [Evaluation of a void-returning async function](/dotnet/csharp/language-reference/language-specification/classes#14153-evaluation-of-a-void-returning-async-function).
 
 > [!NOTE]
-> The updated code doesn't yet take advantage of key features of asynchronous programming, which can result in shorter completion times. The code processes the tasks in roughly the same amount of time as the initial synchronous version. For the full method implementations, see the [final version of the code](#review-final-code) later in this article. 
+> The updated code doesn't yet take advantage of key features of asynchronous programming, which can result in shorter completion times. The code processes the tasks in roughly the same amount of time as the initial synchronous version. For the full method implementations, see the [final version of the code](#review-final-code) later in this article.
 
 Let's apply the breakfast example to the updated code. The thread doesn't block while the eggs or bacon are cooking, but the code also doesn't start other tasks until the current work completes. You still put the bread in the toaster and stare at the toaster until the bread pops up, but you can now respond to interruptions. In a restaurant where multiple orders are placed, the cook can start a new order while another is already cooking.
 

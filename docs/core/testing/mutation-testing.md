@@ -1,18 +1,18 @@
 ---
-title: Mutation Testing
+title: Mutation testing
 author: sigmade
 description: Mutation testing is a way to evaluate the quality of our unit tests
 ms.date: 01/30/2025
 ---
 
-# Mutation Testing
+# Mutation testing
 
 Mutation testing is a way to evaluate the quality of our unit tests.
 For mutation testing, there is a tool **Stryker.NET**, will automatically perform mutations in the code, run the tests, and generate a detailed report with the results.
 
 Let's see how it works with an example.
 
-We have a `PriceCalculator.cs` class with a `Calculate` method that calculates the price taking into account the discount.
+We have a _PriceCalculator.cs_ class with a `Calculate` method that calculates the price taking into account the discount.
 
 ```csharp
 public class PriceCalculator
@@ -37,7 +37,7 @@ public class PriceCalculator
 }
 ```
 
-This method is covered by unit tests
+The preceding method is covered by the following unit tests:
 
 ```csharp
 [Fact]
@@ -91,15 +91,18 @@ Now, consider what mutants are and what 'survived' and 'killed' mean. A mutant i
 In our example, a mutant will be the replacement of the expression `price <= 0`, for example, with `price < 0`, after which unit tests are run.
 
 Stryker supports several types of mutations:
--equivalent (for example, replaces < with <=)
--arithmetic (+ to -)
--string ("text" to "")
--logical (&& to ||)
 
-and so on, you can find the full list in the **Stryker.NET** documentation.
+| Type | Description |
+|--|--|
+| Equivalent | The equivalent operator is used to replace an operator with its equivalent. For example, `x < y` becomes `x <= y`. |
+| Arithmetic | The arithmetic operator is used to replace an arithmetic operator with its equivalent. For example, `x + y` becomes `x - y`. |
+| String | The string operator is used to replace a string with its equivalent. For example, `"text"` becomes `""`. |
+| Logical | The logical operator is used to replace a logical operator with its equivalent. For example, `x && y` becomes `x \|\| y`. |
 
-If, after changing our code, the unit tests pass successfully, then they are not sufficiently robust, and the mutant survived.
-After mutation testing, 5 mutants survive 
+For additional mutation types, see the [Stryker.NET: Mutations](https://stryker-mutator.io/docs/stryker-net/mutations) documentation.
+
+If, after changing your code, the unit tests pass successfully, then they aren't sufficiently robust, and the mutant survived.
+After mutation testing, five mutants survive.
 
 Let's add test data for boundary values and run mutation testing again.
 
@@ -151,4 +154,4 @@ public void InvalidPrice_ShouldThrowExceptionWithCorrectMessage()
 
 :::image type="content" source="media/stryker-final-report.png" lightbox="media/stryker-final-report.png" alt-text="Stryker final report":::
 
-Mutation testing helps to find weak points in tests and makes them more reliable. It forces you to check not only the 'happy path', but also complex boundary cases, reducing the likelihood of bugs in production.
+Mutation testing helps to find opportunities to improve tests that make them more reliable. It forces you to check not only the 'happy path', but also complex boundary cases, reducing the likelihood of bugs in production.

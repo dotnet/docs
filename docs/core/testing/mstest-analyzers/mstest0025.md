@@ -45,3 +45,22 @@ Ensure that calls to `Assert.IsTrue`, `Assert.IsFalse`, `Assert.AreEqual`, `Asse
 ## When to suppress warnings
 
 We do not recommend suppressing warnings from this rule.
+
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable MSTEST0025
+// The code that's violating the rule is on this line.
+#pragma warning restore MSTEST0025
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0025.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

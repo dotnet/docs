@@ -1,27 +1,25 @@
+name: Base branch checker
 on: [pull_request]
 
 permissions:
   contents: read
 
 jobs:
-  comment:
+  live_protection_job:
+    name: Check base branch
     runs-on: ubuntu-latest
+
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@0080882f6c36860b6ba35c610c98ce87d4e2f26f # v2.10.2
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
           egress-policy: audit
 
       - uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea
         env:
-          SHOULD_COMMENT: ${{ github.base_ref == 'refs/heads/live' && !(github.event.issue.user.login == 'cxwtool' || github.head_ref == 'refs/heads/main') }}
+          LIVE_BASE: ${{ github.base_ref == 'live' && github.head_ref != 'main' }}
         with:
           script: |
-            if (process.env.SHOULD_COMMENT == 'true') {
-              github.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: 'It looks like this pull request may have been opened on the `live` branch by mistake. In general, PRs should target the `main` branch.'
-              })
+            if (process.env.LIVE_BASE == 'true') {
+              core.setFailed('PR targets live branch')
             }

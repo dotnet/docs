@@ -6,12 +6,12 @@ ms.topic: reference
 ---
 # dotnet-coverage code coverage utility
 
-**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
+**This article applies to:** ✔️ .NET 8 SDK and later versions
 
 ## Synopsis
 
 ```console
-dotnet-coverage [-h, --help] [--version] <command>
+dotnet-coverage <command> [-h, --help] [--version]
 ```
 
 ## Description
@@ -49,6 +49,7 @@ dotnet tool install --global dotnet-coverage
 | [dotnet-coverage snapshot](#dotnet-coverage-snapshot)     |
 | [dotnet-coverage shutdown](#dotnet-coverage-shutdown)     |
 | [dotnet-coverage instrument](#dotnet-coverage-instrument) |
+| [dotnet-coverage uninstrument](#dotnet-coverage-uninstrument) |
 
 ## dotnet-coverage merge
 
@@ -62,10 +63,12 @@ The `merge` command is used to merge several code coverage reports into one. Thi
 
 ```console
 dotnet-coverage merge
+    <files>...
     [--remove-input-files]
     [-o|--output <output>] [-f|--output-format <output-format>]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
-    <files>
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
 ```
 
 ### Arguments
@@ -100,6 +103,14 @@ dotnet-coverage merge
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
+* **`-dco|--disable-console-output`**
+
+  Disables console output.
+
+* **`--nologo`**
+
+  Do not display Code Coverage banner.
+
 ## dotnet-coverage collect
 
 The `collect` command is used to collect code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. This command supports dynamic and static instrumentation. Static instrumentation is available on all platforms. You can specify files to be statically instrumented using `include-files` option. Dynamic instrumentation is available on Windows (x86, x64 and Arm64), Linux (x64), and macOS (x64). The command supports only .NET modules. Native modules are not supported.
@@ -114,11 +125,12 @@ The `collect` command will collect code coverage for the given process executed 
 
 ```console
 dotnet-coverage collect
+    <command> <args>...
     [-s|--settings <settings>] [-id|--session-id <session-id>]
-    [-if|--include-files <include-files>] [-o|--output <output>]
-    [-f|--output-format <output-format>] [-l|--log-file <log-file>]
-    [-ll|--log-level <log-level>] [-?|-h|--help]
-    <command> <args>
+    [-if|--include-files <include-files>] [-o|--output <output>] [-f|--output-format <output-format>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
 ```
 
 #### Server Mode
@@ -129,9 +141,10 @@ The `collect` command hosts a server for code coverage collection. Clients can c
 dotnet-coverage collect
     [-s|--settings <settings>] [-id|--session-id <session-id>]
     [-sv|--server-mode] [-b|--background] [-t|--timeout]
-    [-if|--include-files <include-files>] [-o|--output <output>]
-    [-f|--output-format <output-format>] [-l|--log-file <log-file>]
-    [-ll|--log-level <log-level>] [-?|-h|--help]
+    [-if|--include-files <include-files>] [-o|--output <output>] [-f|--output-format <output-format>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
 ```
 
 ### Arguments
@@ -186,6 +199,14 @@ dotnet-coverage collect
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
+* **`-dco|--disable-console-output`**
+
+  Disables console output.
+
+* **`--nologo`**
+
+  Do not display Code Coverage banner.
+
 ## dotnet-coverage connect
 
 The `connect` command is used to connect with the existing server and collects code coverage data for any .NET process and its subprocesses. For example, you can collect code coverage data for a console application or a Blazor application. The command supports only .NET modules. Native modules are not supported.
@@ -197,10 +218,11 @@ The `connect` command is used to connect with the existing server and collects c
 
 ```console
 dotnet-coverage connect
+    <session> <command> <args>...
     [-b|--background] [-t|--timeout]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
-    <session>
-    <command> <args>
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
 ```
 
 ### Arguments
@@ -235,6 +257,14 @@ dotnet-coverage connect
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
+* **`-dco|--disable-console-output`**
+
+  Disables console output.
+
+* **`--nologo`**
+
+  Do not display Code Coverage banner.
+
 ## dotnet-coverage snapshot
 
 Creates a coverage file for existing code coverage collection.
@@ -243,12 +273,14 @@ Creates a coverage file for existing code coverage collection.
 
 ```console
 dotnet-coverage snapshot
-    [-r|--reset]
-    [-o|--output <output>]
-    [-tn|--tag-name <tag-name>] [-tid|--tag-identifier <tag-identifier>]
-    [-t|--timeout]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <session>
+    [-r|--reset]
+    [-tn|--tag-name <tag-name>] [-tid|--tag-identifier <tag-identifier>]
+    [-o|--output <output>]
+    [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
 ```
 
 ### Arguments
@@ -263,10 +295,6 @@ dotnet-coverage snapshot
 
   Clears existing coverage information after a coverage file is created.
 
-* **`-o|--output <output>`**
-
-  Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
-
 * **`-tn|--tag-name <tag-name>`**
 
   Creates a snapshot tag name in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
@@ -274,6 +302,10 @@ dotnet-coverage snapshot
 * **`-tid|--tag-identifier <tag-identifier>`**
 
   Creates a snapshot tag identifier in the coverage file with current coverage information. Tag-name and tag-identifier are mutually inclusive.
+
+* **`-o|--output <output>`**
+
+  Sets the code coverage report output file. If not provided, it's generated automatically with a timestamp.
 
 * **`-t|--timeout`**
 
@@ -287,6 +319,14 @@ dotnet-coverage snapshot
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
+* **`-dco|--disable-console-output`**
+
+  Disables console output.
+
+* **`--nologo`**
+
+  Do not display Code Coverage banner.
+
 ## dotnet-coverage shutdown
 
 Closes existing code coverage collection.
@@ -295,9 +335,11 @@ Closes existing code coverage collection.
 
 ```console
 dotnet-coverage shutdown
-    [-t|--timeout]
-    [-l|--log-file <log-file>] [-ll|--log-level <log-level>] [-?|-h|--help]
     <session>
+    [-t|--timeout]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
 ```
 
 ### Arguments
@@ -320,6 +362,14 @@ dotnet-coverage shutdown
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
 
+* **`-dco|--disable-console-output`**
+
+  Disables console output.
+
+* **`--nologo`**
+
+  Do not display Code Coverage banner.
+
 ## dotnet-coverage instrument
 
 The instrument command is used to instrument binary on disk.
@@ -328,10 +378,12 @@ The instrument command is used to instrument binary on disk.
 
 ```console
 dotnet-coverage instrument
-    [-s|--settings <settings>] [-id|--session-id <session-id>]
-    [-o|--output <output>] [-l|--log-file <log-file>]
-    [-ll|--log-level <log-level>] [-?|-h|--help]
     <input-file>
+    [-s|--settings <settings>] [-id|--session-id <session-id>]
+    [-o|--output <output>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
 ```
 
 ### Arguments
@@ -361,6 +413,57 @@ dotnet-coverage instrument
 * **`-ll|--log-level <log-level>`**
 
   Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+* **`-dco|--disable-console-output`**
+
+  Disables console output.
+
+* **`--nologo`**
+
+  Do not display Code Coverage banner.
+
+## dotnet-coverage uninstrument
+
+The uninstrument command is used to restore original binary from the instrumented binary.
+
+### Synopsis
+
+```console
+Microsoft.CodeCoverage.Console uninstrument
+    <input-file>
+    [-s|--settings <settings>]
+    [-l|--log-file <log-file>] [-ll|--log-level <log-level>]
+    [-dco|--disable-console-output] [--nologo]
+    [-?|-h|--help]
+```
+
+### Arguments
+
+* **`<input-file>`**
+
+  The input instrumented binary.
+
+### Options
+
+* **`-s|--settings <settings>`**
+
+  Sets the path to the XML code coverage settings.
+
+* **`-l|--log-file <log-file>`**
+
+  Sets the log file path. When you provide a directory (with a path separator at the end), a new log file is generated for each process under analysis.
+
+* **`-ll|--log-level <log-level>`**
+
+  Sets the log level. Supported values: `Error`, `Info`, and  `Verbose`.
+
+* **`-dco|--disable-console-output`**
+
+  Disables console output.
+
+* **`--nologo`**
+
+  Do not display Code Coverage banner.
 
 ## Sample scenarios
 
@@ -490,9 +593,8 @@ Hello, World!
 If you don't want to use the `instrument` command, then the files to be instrumented can be specified using `--include-files` option as follows:
 
 ```console
-D:\examples\ConsoleApp> dotnet-coverage collect --include-files .\bin\Debug\net7.0\*.dll dotnet run
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+D:\examples\ConsoleApp> dotnet-coverage collect --include-files .\bin\Debug\net9.0\*.dll dotnet run
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: 57862ec0-e512-49a5-8b66-2804174680fc
 Hello, World!
@@ -515,8 +617,7 @@ In this case, first binary needs to be instrumented as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage instrument .\bin\Debug\net7.0\ConsoleApp.dll
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 Input file successfully instrumented.
 ```
@@ -525,8 +626,7 @@ Then you can collect code coverage as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage collect .\bin\Debug\net7.0\ConsoleApp.exe
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: a09e6bef-ff64-4b5f-8bb8-fc495ebb50ba
 Hello, World!
@@ -539,8 +639,7 @@ In this case, you can completely separate coverage collection from running your 
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage instrument --session-id 73c34ce5-501c-4369-a4cb-04d31427d1a4 .\bin\Debug\net7.0\ConsoleApp.dll
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 Input file successfully instrumented.
 ```
@@ -552,8 +651,7 @@ In the second step, you need to start coverage collector as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage collect --session-id 73c34ce5-501c-4369-a4cb-04d31427d1a4 --server-mode
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 
 SessionId: 73c34ce5-501c-4369-a4cb-04d31427d1a4
 ```
@@ -569,8 +667,7 @@ Finally, the collector can be closed as follows:
 
 ```console
 D:\examples\ConsoleApp> dotnet-coverage shutdown 73c34ce5-501c-4369-a4cb-04d31427d1a4
-Microsoft (R) Code Coverage Command Line Tool (x64)
-Copyright (c) Microsoft Corporation. All rights reserved.
+dotnet-coverage v17.14.1.0 [win-x64 - .NET 9.0.2]
 ```
 
 ### Settings

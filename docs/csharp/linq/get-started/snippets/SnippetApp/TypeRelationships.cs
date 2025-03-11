@@ -9,15 +9,14 @@ public class TypeRelationships
         public string FirstName { get; set; }
         public string Phone {get; set;}
     }
-    static List<Customer> customers = new List<Customer>();
+    static List<Customer> customers = new ();
 
     public static void ExplicitType()
     {
         //<ExplicitType>
-        IEnumerable<Customer> customerQuery =
-            from cust in customers
-            where cust.City == "London"
-            select cust;
+        IEnumerable<Customer> customerQuery = from cust in customers
+                                              where cust.City == "London"
+                                              select cust;
 
         foreach (Customer customer in customerQuery)
         {
@@ -29,10 +28,9 @@ public class TypeRelationships
     public static void ImplicitType()
     {
         //<ImplicitType>
-        var customerQuery2 =
-            from cust in customers
-            where cust.City == "London"
-            select cust;
+        var customerQuery2 = from cust in customers
+                             where cust.City == "London"
+                             select cust;
 
         foreach(var customer in customerQuery2)
         {

@@ -197,4 +197,4 @@ You can see both the SDK versions and runtime versions with the command `dotnet 
 
 ## See also
 
-- [Determine which .NET Framework versions are installed](../../framework/migration-guide/how-to-determine-which-versions-are-installed.md)
+- [Determine which .NET Framework versions are installed](../../framework/install/how-to-determine-which-versions-are-installed.md)

@@ -154,14 +154,8 @@ private static async Task<ISiloHost> StartSilo()
 
 private static void ConfigureServices(IServiceCollection services)
 {
-    services.AddSingletonNamedService<
-        PlacementStrategy, SamplePlacementStrategy>(
-            nameof(SamplePlacementStrategy));
-
-    services.AddSingletonKeyedService<
-        Type, IPlacementDirector, SamplePlacementStrategyFixedSiloDirector>(
-            typeof(SamplePlacementStrategy));
+    services.AddPlacementDirector<SamplePlacementStrategy, SamplePlacementStrategyFixedSiloDirector>();
 }
 ```
 
-For a second simple example showing further use of the placement context, refer to the `PreferLocalPlacementDirector` in the [Orleans source repo](https://github.com/dotnet/orleans/blob/main/src/Orleans.Runtime/Placement/PreferLocalPlacementDirector.cs)
+For a second simple example showing further use of the placement context, refer to the `PreferLocalPlacementDirector` in the [Orleans source repo](https://github.com/dotnet/orleans/blob/main/src/Orleans.Runtime/Placement/PreferLocalPlacementDirector.cs).

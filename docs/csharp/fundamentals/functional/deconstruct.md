@@ -102,7 +102,7 @@ Some system types provide the `Deconstruct` method as a convenience. For example
 
 ## `record` types
 
-When you declare a [record](../../language-reference/builtin-types/record.md) type by using two or more positional parameters, the compiler creates a `Deconstruct` method with an `out` parameter for each positional parameter in the `record` declaration. For more information, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) and [Deconstructor behavior in derived records](../../language-reference/builtin-types/record.md#deconstructor-behavior-in-derived-records).
+When you declare a [record](../../language-reference/builtin-types/record.md) type by using two or more positional parameters, the compiler creates a `Deconstruct` method with an `out` parameter for each positional parameter in the `record` declaration. For more information, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition) and [Deconstructor behavior in derived records](../../language-reference/builtin-types/record.md#deconstructor-behavior-in-derived-records).
 
 ## See also
 

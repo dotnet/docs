@@ -1457,6 +1457,7 @@ The following MSBuild properties are documented in this section:
 - [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
 - [TestingExtensionsProfile](#testingextensionsprofile)
 - [UseVSTest](#usevstest)
+- [MSTestAnalysisMode](#mstestanalysismode)
 
 ### IsTestProject
 
@@ -1475,7 +1476,7 @@ When your project references the [Microsoft.Testing.Platform.MSBuild](https://ww
 - Generates the configuration file.
 - Detects the extensions.
 
-Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/unit-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+Setting the property to `false` disables the transitive dependency to the package. A *transitive dependency* is when a project that references another project that references a given package behaves as if *it* references the package. You'd typically set this property to `false` in a non-test project that references a test project. For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 If your test project references MSTest, NUnit, or xUnit, this property is set to the same value as [EnableMSTestRunner](#enablemstestrunner), [EnableNUnitRunner](#enablenunitrunner), or `UseMicrosoftTestingPlatformRunner` (for xUnit).
 
@@ -1514,7 +1515,7 @@ The `EnableNUnitRunner` property enables or disables the use of the [NUnit runne
 
 Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in an MSTest or NUnit test project. You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
 
-For more information, see [error CS8892](../testing/unit-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
+For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 To control the generation of the entry point in a VSTest project, use the `GenerateProgramFile` property.
 
@@ -1522,7 +1523,7 @@ To control the generation of the entry point in a VSTest project, use the `Gener
 
 The `TestingPlatformCaptureOutput` property controls whether all console output that a test executable writes is captured and hidden from the user when you use `dotnet test` to run `Microsoft.Testing.Platform` tests. By default, the console output is hidden. This output includes the banner, version information, and formatted test information. Set this property to `false` to show this information together with MSBuild output.
 
-For more information, see [Show complete platform output](../testing/unit-testing-platform-integration-dotnet-test.md#show-complete-platform-output).
+For more information, see [Show complete platform output](../testing/microsoft-testing-platform-integration-dotnet-test.md#show-complete-platform-output).
 
 ### TestingPlatformCommandLineArguments
 
@@ -1555,11 +1556,15 @@ When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), th
 | `None`         | No extensions are enabled.                                                                    |
 | `AllMicrosoft` | Enable all extensions shipped by Microsoft (including extensions with a restrictive license). |
 
-For more information, see [MSTest runner profile](../testing/unit-testing-mstest-sdk.md#mstest-runner-profile).
+For more information, see [Microsoft.Testing.Platform profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
 
 ### UseVSTest
 
-Set the `UseVSTest` property to `true` to switch from the MSTest runner to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+Set the `UseVSTest` property to `true` to switch from Microsoft.Testing.Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+
+### MSTestAnalysisMode
+
+This property decides which analyzers are enabled at which severity. For more information, see [MSTest code analysis](../testing/mstest-analyzers/overview.md).
 
 ## Hosting-related properties
 

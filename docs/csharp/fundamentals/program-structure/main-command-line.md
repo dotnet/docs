@@ -17,12 +17,14 @@ helpviewer_keywords:
 The `Main` method is the entry point of a C# application. When the application is started, the `Main` method is the first method that is invoked.
 
 There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **StartupObject** compiler option to specify which `Main` method to use as the entry point. For more information, see [**StartupObject** (C# Compiler Options)](../../language-reference/compiler-options/advanced.md#mainentrypoint-or-startupobject).
+<br/>Below is the example where the first line executed will display the number of command line arguments:
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
 You can also use Top-level statements in one file as the entry point for your application.
 Just as the `Main` method, top-level statements can also [return values](#main-return-values) and access [command-line arguments](#command-line-arguments).
 For more information, see [Top-level statements](top-level-statements.md).
+<br/>The following example uses a `foreach` loop to display the command line arguments using the `args` variable, and at the end of the program returns a success code (`0`):
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 
@@ -84,6 +86,8 @@ Create a new application by running `dotnet new console`. Modify the `Main` meth
 
 :::code language="csharp" source="snippets/main-command-line/MainReturnValTest.cs":::
 
+Remember to save this program as *MainReturnValTest.cs*.
+
 When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or `$LastExitCode` from PowerShell.
 
 You can build the application using the [dotnet CLI](../../../core/tools/dotnet.md) `dotnet build` command.
@@ -122,7 +126,6 @@ class AsyncMainReturnValTest
 
     private static async Task<int> AsyncConsoleWork()
     {
-        // Main body here
         return 0;
     }
 }
@@ -131,6 +134,8 @@ class AsyncMainReturnValTest
 This boilerplate code can be replaced by:
 
 :::code language="csharp" source="snippets/main-arguments/Program.cs" id="AsyncMain":::
+
+In both examples main body of the program is within the body of `AsyncConsoleWork()` method.
 
 An advantage of declaring `Main` as `async` is that the compiler always generates the correct code.
 
@@ -205,6 +210,10 @@ To compile and run the application from a command prompt, follow these steps:
 
     :::code language="csharp" source="./snippets/main-command-line/Factorial.cs":::
 
+    At the beginning of the `Main` method the program tests if input arguments were not supplied comparing length of `args` argument to `0` and displays the help if no argument are found.<br/>
+    If arguments are provided (`args.Length` is greater than 0) program tries to convert the input arguments to numbers. This will throw an exception if the argument is not a number.<br/>
+    After factorial is calculated (stored in `result` variable of type `long`) the verbose result is printed depending on the `result` variable.
+
 2. From the **Start** screen or **Start** menu, open a Visual Studio **Developer Command Prompt** window, and then navigate to the folder that contains the file that you created.
 
 3. Enter the following command to compile the application.
@@ -217,7 +226,7 @@ To compile and run the application from a command prompt, follow these steps:
   
      `dotnet run -- 3`  
   
-5. The command produces this output: `The factorial of 3 is 6.`
+5. If 3 is entered on command line as the program's argument, the output reads: `The factorial of 3 is 6.`
 
 > [!NOTE]
 > When running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).

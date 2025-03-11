@@ -13,10 +13,7 @@ A dump is a file that contains a snapshot of the process at the time the dump wa
 Dumps can be collected in a variety of ways depending on which platform your app is running on.
 
 > [!NOTE]
-> Dumps may contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidances in mind.
-
-> [!TIP]
-> For frequently asked questions about dump collection, analysis, and other caveats, see [Dumps: FAQ](faq-dumps.yml).
+> Dumps might contain sensitive information because they can contain the full memory of the running process. Handle them with any security restrictions and guidance in mind.
 
 * You can use environment variables to configure your application to [collect a dump on a crash](collect-dumps-crash.md).
 
@@ -25,6 +22,9 @@ Dumps can be collected in a variety of ways depending on which platform your app
 * [dotnet-dump](dotnet-dump.md) is a simple cross-platform command line tool to collect a dump. Several other debugger tools such as [Visual Studio](/visualstudio/debugger/using-dump-files) or [windbg](/windows-hardware/drivers/debugger/-dump--create-dump-file-) also have dump collection features.
 
 * If you are running your app in production or you are running it in a distributed manner (several services, replicas), [dotnet-monitor](dotnet-monitor.md) provides support for many common scenarios and ad-hoc diagnostic investigations, including dump collection and egress. It enables dumps to be collected remotely or with triggering conditions.
+
+> [!TIP]
+> For troubleshooting and frequently asked questions about dump collection, see [Dumps: FAQ](faq-dumps.yml).
 
 ## Analyze dumps
 

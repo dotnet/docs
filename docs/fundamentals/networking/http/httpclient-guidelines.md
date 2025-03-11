@@ -58,32 +58,7 @@ For more information about managing `HttpClient` lifetime with `IHttpClientFacto
 
 It's possible to configure a `static` or *singleton* client to use any number of resilience pipelines using the following pattern:
 
-```csharp
-using System;
-using System.Net.Http;
-using Microsoft.Extensions.Http;
-using Microsoft.Extensions.Http.Resilience;
-using Polly;
-
-var retryPipeline = new ResiliencePipelineBuilder<HttpResponseMessage>()
-    .AddRetry(new HttpRetryStrategyOptions
-    {
-        BackoffType = DelayBackoffType.Exponential,
-        MaxRetryAttempts = 3
-    })
-    .Build();
-
-var socketHandler = new SocketsHttpHandler
-{
-    PooledConnectionLifetime = TimeSpan.FromMinutes(15)
-};
-var resilienceHandler = new ResilienceHandler(retryPipeline)
-{
-    InnerHandler = socketHandler,
-};
-
-var httpClient = new HttpClient(resilienceHandler);
-```
+:::code language="csharp" source="snippets/httpclient-guidelines/MyClass.cs":::
 
 The preceding code:
 
@@ -91,10 +66,10 @@ The preceding code:
 - Specifies a transient HTTP error handler, configured with retry pipeline that with each attempt will exponentially backoff delay intervals.
 - Defines a pooled connection lifetime of fifteen minutes for the `socketHandler`.
 - Passes the `socketHandler` to the `resilienceHandler` with the retry logic.
-- Instantiates an `HttpClient` given the `resilienceHandler`.
+- Instantiates a shared `HttpClient` given the `resilienceHandler`.
 
 > [!IMPORTANT]
-> The `Microsoft.Extensions.Http.Resilience` library is currently marked as [experimental](../../../csharp/language-reference/attributes/general.md#experimental-attribute) and it may change in the future.
+> The `Microsoft.Extensions.Http.Resilience` library is currently marked as [experimental](../../../csharp/language-reference/attributes/general.md#experimental-attributes) and it might change in the future.
 
 ## See also
 

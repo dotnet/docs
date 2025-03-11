@@ -3,7 +3,7 @@ title: Dependency injection basics
 description: Learn how to use dependency injection (DI) in your .NET apps with this simple example. Follow along with this pragmatic guide to understand DI basics in C#.
 author: IEvangelist
 ms.author: dapine
-ms.date: 07/30/2024
+ms.date: 01/22/2025
 no-loc: [Transient, Scoped, Singleton, Example]
 ---
 
@@ -87,7 +87,7 @@ The preceding updated code demonstrates the how-to:
 
 - Create a new `ServiceCollection` instance.
 - Register and configure services in the `ServiceCollection`:
-  - The `IConsole` using the implementation factory overload, return a `DefaultConsole` type with the `IsEnabled` set to `true.
+  - The `IConsole` using the implementation factory overload, return a `DefaultConsole` type with the `IsEnabled` set to `true`.
   - The `IGreetingService` is added with a corresponding implementation type of `DefaultGreetingService` type.
   - The `FarewellService` is added as a concrete type.
 - Build the `ServiceProvider` from the `ServiceCollection`.

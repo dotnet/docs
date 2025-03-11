@@ -5,38 +5,28 @@ items:
   items:
   - name: Tour of C#
     href: tour-of-csharp/overview.md
+  - name: Tutorials
+    items:
+    - name: Choose your first lesson
+      href: tour-of-csharp/tutorials/index.md
+    - name: Tutorials
+      items:
+      - name: Hello world and text
+        href: tour-of-csharp/tutorials/hello-world.md
+      - name: Numbers in C#
+        href: tour-of-csharp/tutorials/numbers-in-csharp.md
+      - name: Branches and loops
+        href: tour-of-csharp/tutorials/branches-and-loops.md
+      - name: List collections
+        href: tour-of-csharp/tutorials/list-collection.md
+  - name: C# language strategy
+    href: tour-of-csharp/strategy.md
   - name: Learn C# for Java developers
     href: tour-of-csharp/tips-for-java-developers.md
   - name: Learn C# for JavaScript developers
     href: tour-of-csharp/tips-for-javascript-developers.md
   - name: Learn C# for Python developers
     href: tour-of-csharp/tips-for-python-developers.md
-  - name: C# language strategy
-    href: tour-of-csharp/strategy.md
-  - name: Tutorials
-    items:
-    - name: Choose your first lesson
-      href: tour-of-csharp/tutorials/index.md
-    - name: Browser based tutorials
-      items:
-      - name: Hello world
-        href: tour-of-csharp/tutorials/hello-world.yml
-      - name: Numbers in C#
-        href: tour-of-csharp/tutorials/numbers-in-csharp.yml
-      - name: Branches and loops
-        href: tour-of-csharp/tutorials/branches-and-loops.yml
-      - name: List collections
-        href: tour-of-csharp/tutorials/list-collection.yml
-    - name: Work in your local environment
-      items:
-      - name: Set up your environment
-        href: tour-of-csharp/tutorials/local-environment.md
-      - name: Numbers in C#
-        href: tour-of-csharp/tutorials/numbers-in-csharp-local.md
-      - name: Branches and loops
-        href: tour-of-csharp/tutorials/branches-and-loops-local.md
-      - name: List collections
-        href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
   items:
   - name: Program structure
@@ -148,6 +138,8 @@ items:
   items:
   - name: C# 14
     items:
+    - name: What's new in C# 14
+      href: whats-new/csharp-14.md
     - name: Breaking changes since C# 13
       href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2010.md
   - name: C# 13

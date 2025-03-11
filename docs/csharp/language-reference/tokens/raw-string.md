@@ -22,6 +22,7 @@ The following rules govern the interpretation of a multi-line raw string literal
 - Whitespace following the opening quote on the same line is ignored.
 - Whitespace only lines following the opening quote are included in the string literal.
 - If a whitespace precedes the end delimiter on the same line, the exact number and kind of whitespace characters (e.g. spaces vs. tabs) must exist at the beginning of each content line. Specifically, a space does not match a horizontal tab, and vice versa.
+- The newline before the closing quotes isn't included in the literal string.
 
 You may need to create a raw string literal that has three or more consecutive double-quote characters. Raw string literals can start and end with a sequence of at least three double-quote characters. When your string literal contains three consecutive double-quotes, you start and end the raw string literal with four double quote characters:
 

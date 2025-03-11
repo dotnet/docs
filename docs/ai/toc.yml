@@ -3,71 +3,85 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
-- name: Ecosystem tools and SDKs
-  href: dotnet-ai-ecosystem.md
-- name: Microsoft.Extensions.AI building blocks
-  href: ai-extensions.md
-- name: Learning resources and samples
-  href: azure-ai-for-dotnet-developers.md
-- name: What is Semantic Kernel?
-  href: semantic-kernel-dotnet-overview.md
-- name: Authenticate to Azure AI services with .NET
-  href: azure-ai-services-authentication.md
+- name: "Quickstart: Connect to and prompt an AI model"
+  href: quickstarts/prompt-model.md
+- name: AI frameworks and SDKs
+  items:
+  - name: Overview
+    href: dotnet-ai-ecosystem.md
+  - name: Microsoft.Extensions.AI
+    href: ai-extensions.md
+  - name: Semantic Kernel
+    href: semantic-kernel-dotnet-overview.md
 - name: Quickstarts
   items:
-  - name: Connect to and prompt an AI model
-    href: quickstarts/quickstart-openai-summarize-text.md
   - name: Build a chat app
-    href: quickstarts/get-started-openai.md
+    href: quickstarts/build-chat-app.md
   - name: Build a .NET AI vector search app
-    href: quickstarts/quickstart-ai-chat-with-data.md
+    href: quickstarts/build-vector-search-app.md
   - name: Execute a local .NET function
-    href: quickstarts/quickstart-azure-openai-tool.md
+    href: quickstarts/use-function-calling.md
   - name: Generate images
-    href: quickstarts/quickstart-openai-generate-images.md
+    href: quickstarts/generate-images.md
   - name: Chat with a local AI model
-    href: quickstarts/quickstart-local-ai.md
+    href: quickstarts/chat-local-model.md
+  - name: Build a minimal AI assistant
+    href: quickstarts/create-assistant.md
+  - name: Get started using the AI app templates
+    href: quickstarts/ai-templates.md
 - name: Concepts
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: How agents and copilots work with LLMs
-    href: conceptual/agents.md
-  - name: Understand tokens
+  - name: Tokens
     href: conceptual/understanding-tokens.md
-  - name: Preserve semantic meaning with embeddings
+  - name: Embeddings
     href: conceptual/embeddings.md
-  - name: Vector databases support semantic memory
+  - name: Vector databases
     href: conceptual/vector-databases.md
   - name: Prompt engineering
     href: conceptual/prompt-engineering-dotnet.md
-  - name: Chain of thought prompting
+  - name: Chain-of-thought prompting
     href: conceptual/chain-of-thought-prompting.md
   - name: Zero-shot and few-shot learning
     href: conceptual/zero-shot-learning.md
   - name: Retrieval-augmented generation
     href: conceptual/rag.md
-  - name: Understand OpenAI function calling
+  - name: OpenAI function calling
     href: conceptual/understanding-openai-functions.md
-- name: How-to articles
+- name: Chat with your data (RAG)
   items:
-  - name: Authenticate App Service to Azure OpenAI
-    href: how-to/app-service-aoai-auth.md
-  - name: Authenticate App Service to a vector database
-    href: how-to/app-service-db-auth.md
-  - name: Use Redis with Semantic Kernel
-    href: how-to/use-redis-for-memory.md
-  - name: Use custom & local AI models with Semantic Kernel
-    href: how-to/work-with-local-models.md
+    - name: Get started with the RAG sample
+      href: get-started-app-chat-template.md
+    - name: Implement RAG using vector search
+      href: tutorials/tutorial-ai-vector-search.md
+    - name: Scale Azure OpenAI with Azure Container Apps
+      href: get-started-app-chat-scaling-with-azure-container-apps.md
+- name: Security and content safety
+  items:
+  - name: Authentication for Azure-hosted apps and services
+    items:
+    - name: Overview
+      href: azure-ai-services-authentication.md
+    - name: Auth to Azure OpenAI from an Azure-hosted app
+      href: how-to/app-service-aoai-auth.md
+    - name: Auth to Azure services locally
+      href: /dotnet/azure/sdk/authentication/local-development-dev-accounts?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
   - name: Work with content filtering
     href: how-to/content-filtering.md
-- name: Tutorials
+  - name: Use a blocklist with Azure OpenAI
+    href: /azure/ai-services/openai/how-to/use-blocklists?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
+  - name: Use Risks & Safety monitoring
+    href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
+- name: Evaluation
   items:
-  - name: Get started with the chat using your data sample 
-    href: get-started-app-chat-template.md
-  - name: Evaluate LLM prompt completions
+  - name: The Microsoft.Extensions.AI.Evaluation libraries
+    href: conceptual/evaluation-libraries.md
+  - name: "Quickstart: Evaluate a model's response"
+    href: quickstarts/evaluate-ai-response.md
+  - name: "Tutorial: Evaluate LLM prompt completions"
     href: tutorials/llm-eval.md
-  - name: Implement RAG using vector search
-    href: tutorials/tutorial-ai-vector-search.md
-  - name: Scale Azure OpenAI with Azure Container Apps
-    href: get-started-app-chat-scaling-with-azure-container-apps.md
+- name: Resources
+  items:
+  - name: Azure AI samples and docs
+    href: azure-ai-for-dotnet-developers.md

@@ -1,7 +1,7 @@
 ---
 title: "How to deserialize JSON in C#"
 description: "Learn how to use the System.Text.Json namespace to deserialize from JSON in .NET. Includes sample code."
-ms.date: 10/19/2023
+ms.date: 02/11/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "deserialization"
 ms.topic: concept-article
 ms.collection: ce-skilling-ai-copilot
-ms.custom: vs-copilot-horizontal
+ms.custom: copilot-scenario-highlight
 #customer intent: As a developer, I want to learn how to use System.Text.Json to deserialize JSON data.
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Use proper 'Assert' methods"
+title: "MSTEST0037: Use proper 'Assert' methods"
 description: "Learn about code analysis rule MSTEST0037: Use proper 'Assert' methods."
 ms.date: 11/17/2024
 f1_keywords:
@@ -57,3 +57,22 @@ Use the better alternative method.
 ## When to suppress warnings
 
 If the assert is intended to verify the behavior of a user-defined operator, you can and should suppress the warning.
+
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable MSTEST0037
+// The code that's violating the rule is on this line.
+#pragma warning restore MSTEST0037
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0037.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

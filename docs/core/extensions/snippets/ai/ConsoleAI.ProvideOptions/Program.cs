@@ -6,8 +6,8 @@ IChatClient client = new ChatClientBuilder(
     .Build();
 
 // will request "phi3"
-Console.WriteLine(await client.CompleteAsync("What is AI?"));
+Console.WriteLine(await client.GetResponseAsync("What is AI?"));
 
 // will request "llama3.1"
-Console.WriteLine(await client.CompleteAsync(
+Console.WriteLine(await client.GetResponseAsync(
     "What is AI?", new() { ModelId = "llama3.1" }));

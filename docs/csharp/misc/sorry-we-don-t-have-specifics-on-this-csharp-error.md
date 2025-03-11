@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 12/18/2023
+ms.date: 02/20/2025
 f1_keywords:
   - "CS0190"
   - "CS0224"
@@ -361,14 +361,7 @@ f1_keywords:
   - "CS8522"
   - "CS8523"
   - "CS8524"
-  - "CS8598"
-  - "CS8623"
-  - "CS8628"
-  - "CS8632"
   - "CS8635"
-  - "CS8636"
-  - "CS8637"
-  - "CS8639"
   - "CS8641"
   - "CS8646"
   - "CS8647"
@@ -615,9 +608,29 @@ f1_keywords:
   - "CS9123"
   - "CS9125"
   - "CS9205"
+  - "CS9212"
+  - "CS9213"
+  - "CS9214"
+  - "CS9215"
+  - "CS9222"
+  - "CS9229"
+  - "CS9230"
+  - "CS9231"
+  - "CS9232"
+  - "CS9233"
+  - "CS9234"
+  - "CS9235"
+  - "CS9236"
+# C# 13 errors begin here
+  - "CS9268"
+  - "CS9269"
+  - "CS9270"
+  - "CS9271"
+# C# 14 errors begin here
+  - "CS9273"
+  - "CS9274"
 helpviewer_keywords:
   - "errors [C#], additional information"
-ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
 ---
 # Sorry, we don't have specifics on this C# error
 

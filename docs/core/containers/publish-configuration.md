@@ -2,7 +2,7 @@
 title: Containerize a .NET app reference
 description: Reference material for containerizing a .NET app and configuring the container image.
 ms.topic: reference
-ms.date: 01/07/2025
+ms.date: 01/27/2025
 ---
 
 # Containerize a .NET app reference
@@ -49,7 +49,7 @@ For example, consider the fully qualified `mcr.microsoft.com/dotnet/runtime:8.0-
 Some properties described in the following sections correspond to managing parts of the generated image name. Consider the following table that maps the relationship between the image name and the build properties:
 
 | Image name part   | MSBuild property      | Example values          |
-|-------------------|-----------------------|-------------------------|
+| ----------------- | --------------------- | ----------------------- |
 | `REGISTRY[:PORT]` | `ContainerRegistry`   | `mcr.microsoft.com:443` |
 | `PORT`            | `ContainerPort`       | `:443`                  |
 | `REPOSITORY`      | `ContainerRepository` | `dotnet/runtime`        |
@@ -98,7 +98,7 @@ The preceding project configuration results in a final tag of `8.0-alpine` for a
 
 This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. This field is ignored when `ContainerBaseImage` is set. For more information, see [.NET container images](../docker/container-images.md).
 
-### `ContainerRuntimeIdentifier`
+### `ContainerRuntimeIdentifier(s)`
 
 The `ContainerRuntimeIdentifier` property specifies the OS and architecture for your container if the `ContainerBaseImage` supports multiple platforms. For example, the `mcr.microsoft.com/dotnet/runtime` image supports `linux-x64`, `linux-arm`, `linux-arm64`, and `win10-x64`. By default, this is set to the `RuntimeIdentifier` used when publishing the container. Typically, you don't need to set this property explicitly; instead, use the `-r` option with the `dotnet publish` command. If the chosen image doesn't support the specified `RuntimeIdentifier`, an error indicates the supported identifiers.
 
@@ -107,6 +107,14 @@ You can always set the `ContainerBaseImage` property to a fully qualified image 
 ```xml
 <PropertyGroup>
     <ContainerRuntimeIdentifier>linux-arm64</ContainerRuntimeIdentifier>
+</PropertyGroup>
+```
+
+To specify multiple container runtime identifiers for multi-architecture images, use a semicolon-delimited set of runtime identifiers in the `ContainerRuntimeIdentifiers` property, similar to setting multiple `TargetFrameworks`:
+
+```xml
+<PropertyGroup>
+    <ContainerRuntimeIdentifiers>linux-x64;linux-arm64</ContainerRuntimeIdentifiers>
 </PropertyGroup>
 ```
 
@@ -122,7 +130,7 @@ The container registry property controls the destination registry, the place tha
 </PropertyGroup>
 ```
 
-This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/). This includes the following registries explicitly (and likely many more implicitly):
+This tooling supports publishing to any registry that supports the [Docker Registry HTTP API V2](https://distribution.github.io/distribution/spec/api/). This includes the following registries explicitly (and likely many more implicitly):
 
 - [Azure Container Registry](https://azure.microsoft.com/products/container-registry)
 - [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/)
@@ -176,11 +184,19 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
 
 > [!NOTE]
-> When using `ContainerImageTags`, the tags are delimited by a `;` character. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to outer wrap the values in a single `'` and inner wrap with double quotes `"`, for example (`='"tag-1;tag-2"'`). Consider the following `dotnet publish` command:
+> When using `ContainerImageTags` or any MSBuild property that needs to configure `;` delimited values. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to understand the limitations of the environment's inability to disambiguate delimiters and quotations, thus requiring proper escaping. This differs between PowerShell and Bash. Consider the following `dotnet publish` commands in their respective environments:
 >
-> ```dotnetcli
-> dotnet publish -p ContainerImageTags='"1.2.3-alpha2;latest"'
+> ```powershell
+> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=`"1.2.3-alpha2`;latest`"
 > ```
+>
+> In PowerShell, both the `;` and `"` characters need to be escaped.
+>
+> ```bash
+> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=\"1.2.3-alpha2;latest\"
+> ```
+>
+> In Bash, only the `"` character needs to be escaped.
 >
 > This results in two images being generated: `my-app:1.2.3-alpha2` and `my-app:latest`.
 
@@ -395,11 +411,25 @@ dotnet publish -p ContainerUser=root
 
 ### Default container labels
 
-Labels are often used to provide consistent metadata on container images. This package provides some default labels to encourage better maintainability of the generated images.
+Labels are often used to provide consistent metadata on container images. The built-in container tools provide some default labels to increase the quality of the generated images. All default label generation can be disabled by setting `ContainerGenerateLabels` to `false`. In addition, each default label has an  individual enablement flag that can be set to `false` to disable that specific label.
 
-- `org.opencontainers.image.created` is set to the ISO 8601 format of the current value of <xref:System.DateTime.UtcNow?displayProperty=nameWithType>.
+Where possible, existing MSBuild properties provide the values for these labels. Other properties allow for explicit control of their values.
 
-For more information, see [Implement conventional labels on top of existing label infrastructure](https://github.com/dotnet/sdk-container-builds/issues/96).
+| Annotation                                                                           | Default Value                                                                                      | Dedicated Property Name      | Fallback Property Name     | Enabled Property Name                       | Notes                                                                                                               |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | ---------------------------- | -------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `org.opencontainers.image.created` and `org.opencontainers.artifact.created`         | The [RFC 3339](https://tools.ietf.org/html/rfc3339#section-5.6) format of the current UTC DateTime |                              |                            | `ContainerGenerateLabelsImageCreated`       |                                                                                                                     |
+| `org.opencontainers.artifact.description` and `org.opencontainers.image.description` |                                                                                                    | `ContainerDescription`       | `Description`              | `ContainerGenerateLabelsImageDescription`   |                                                                                                                     |
+| `org.opencontainers.image.authors`                                                   |                                                                                                    | `ContainerAuthors`           | `Authors`                  | `ContainerGenerateLabelsImageAuthors`       |                                                                                                                     |
+| `org.opencontainers.image.url`                                                       |                                                                                                    | `ContainerInformationUrl`    | `PackageProjectUrl`        | `ContainerGenerateLabelsImageUrl`           |                                                                                                                     |
+| `org.opencontainers.image.documentation`                                             |                                                                                                    | `ContainerDocumentationUrl`  | `PackageProjectUrl`        | `ContainerGenerateLabelsImageDocumentation` |                                                                                                                     |
+| `org.opencontainers.image.version`                                                   |                                                                                                    | `ContainerVersion`           | `PackageVersion`           | `ContainerGenerateLabelsImageVersion`       |                                                                                                                     |
+| `org.opencontainers.image.vendor`                                                    |                                                                                                    | `ContainerVendor`            |                            | `ContainerGenerateLabelsImageVendor`        |                                                                                                                     |
+| `org.opencontainers.image.licenses`                                                  |                                                                                                    | `ContainerLicenseExpression` | `PackageLicenseExpression` | `ContainerGenerateLabelsImageLicenses`      |                                                                                                                     |
+| `org.opencontainers.image.title`                                                     |                                                                                                    | `ContainerTitle`             | `Title`                    | `ContainerGenerateLabelsImageTitle`         |                                                                                                                     |
+| `org.opencontainers.image.base.name`                                                 |                                                                                                    | `ContainerBaseImage`         |                            | `ContainerGenerateLabelsImageBaseName`      |                                                                                                                     |
+| `org.opencontainers.image.base.digest`                                               |                                                                                                    |                              |                            | `ContainerGenerateLabelsImageBaseDigest`    | This will be the SHA digest of the chosen base image. Available from .NET SDK 9.0.100 onwards.                      |
+| `org.opencontainers.image.source`                                                    |                                                                                                    | `PrivateRepositoryUrl`       |                            | `ContainerGenerateLabelsImageSource`        | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
+| `org.opencontainers.image.revision`                                                  |                                                                                                    | `SourceRevisionId`           |                            | `ContainerGenerateLabelsImageRevision`      | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
 
 ## See also
 

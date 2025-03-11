@@ -1,5 +1,5 @@
 //<Snippet43>
-class SimpleMathExtnsion
+class SimpleMathExtension
 {
     public int DivideTwoNumbers(int number1, int number2)
     {
@@ -19,12 +19,25 @@ class SimpleMath
 }
 //</Snippet44>
 
+static class TestSimpleMathExtension
+{
+    static void Main()
+    {
+        var obj = new SimpleMathExtension();
+        
+        //<Snippet47>
+        int result = obj.DivideTwoNumbers(6,2);
+        // The result is 3.
+        Console.WriteLine(result);
+        //</Snippet47>
+    }
+}
+
 static class TestSimpleMath
 {
     static void Main()
     {
         var obj = new SimpleMath();
-        var obj2 = new SimpleMathExtnsion();
 
         //<Snippet45>
         int result = obj.AddTwoNumbers(1, 2);
@@ -38,11 +51,5 @@ static class TestSimpleMath
         // The result is 9.
         Console.WriteLine(result);
         //</Snippet46>
-
-        //<Snippet47>
-        result = obj2.DivideTwoNumbers(6,2);
-        // The result is 3.
-        Console.WriteLine(result);
-        //</Snippet47>
     }
 }

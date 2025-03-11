@@ -1,8 +1,8 @@
 ---
 title: Obsolete features in .NET 5+
-titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 08/07/2024
+ms.date: 01/14/2025
+ai-usage: ai-assisted
 ---
 
 # Obsolete features in .NET 5+
@@ -78,6 +78,9 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0055](syslib0055.md) | Warning | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. |
 | [SYSLIB0056](syslib0056.md) | Warning | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. |
 | [SYSLIB0057](syslib0057.md) | Warning | `X509Certificate2` and `X509Certificate` constructors for binary and file content are obsolete. |
+| SYSLIB0058 | Warning | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. |
+| [SYSLIB0059](syslib0059.md) | Warning | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead. |
+| [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2%2A?displayProperty=nameWithType> instead. |
 
 ## Suppress warnings
 

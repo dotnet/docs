@@ -46,3 +46,22 @@ Ensure that the class matches the required layout described above.
 ## When to suppress warnings
 
 Do not suppress a warning from this rule. Ignoring this rule will result in tests being ignored, because MSTest will not consider this class to be a test class.
+
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable MSTEST0002
+// The code that's violating the rule is on this line.
+#pragma warning restore MSTEST0002
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0002.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

@@ -52,7 +52,7 @@ Azure Virtual Networks enable you to:
 - Connect your VM to your on-premises network using one of several [connectivity options](/azure/vpn-gateway/vpn-gateway-about-vpngateways#s2smulti)
 - Integrate your virtual machine into your on-premises network using [ExpressRoute](https://azure.microsoft.com/services/expressroute/)
 
-To get started, see the [Virtual Network documentation](/azure/virtual-network/)
+To get started, see the [Virtual Network documentation](/azure/virtual-network/).
 
 ### Active Directory
 

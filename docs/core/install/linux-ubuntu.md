@@ -3,7 +3,7 @@ title: .NET and Ubuntu overview
 description: Learn about the ways you can install .NET on Ubuntu, either from the built-in package feed, the .NET backports repository, or the Microsoft repository.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 03/03/2025
 ms.custom: updateeachrelease, linux-related-content
 ---
 
@@ -48,7 +48,7 @@ Use the following sections to determine how you should install .NET:
 
 ### I'm using Ubuntu 22.04 or later, and I only need .NET
 
-Install .NET through the Ubuntu feed. For more information, see the following pages:
+If you don't need other Microsoft packages, such as `powershell`, `mdatp`, or `mssql`, install .NET through the Ubuntu feed. For more information, see the following pages:
 
 - [Install .NET on Ubuntu 24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410).
 - [Install .NET on Ubuntu 24.04](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404).
@@ -137,13 +137,23 @@ Canonical supports .NET versions in the built-in Ubuntu feed for the lifetime of
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
-## Ubuntu .NET backports package repository
+## Register a package repository
 
-The Ubuntu .NET backports package repository provides versions of .NET, which are not available in the built-in Ubuntu feed. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available in the package feed. Canonical maintains the packages contained in this package repository and provides best-effort support, which does not extend beyond the Microsoft-provided support lifetime or the support period of the particular Ubuntu version.
+Depending on your version of Ubuntu, you might need to register either the Ubuntu backports or the Microsoft package repository.
+
+> [!IMPORTANT]
+> Make sure you consider the information in the [Decide how to install .NET section](#decide-how-to-install-net).
+
+- [Register the Ubuntu .NET backports package repository](#ubuntu-net-backports-package-repository)
+- [Register the Microsoft package repository](#register-the-microsoft-package-repository)
+
+### Ubuntu .NET backports package repository
+
+The Ubuntu .NET backports package repository provides versions of .NET that aren't available in the built-in Ubuntu feed. The [Supported distributions](#supported-distributions) section provides a table that lists which versions of .NET are available in the package feed. Canonical maintains the packages contained in this package repository and provides best-effort support, which does not extend beyond the Microsoft-provided support lifetime or the support period of the particular Ubuntu version.
 
 See the [web-view of the Ubuntu .NET backports package repository](https://launchpad.net/~dotnet/+archive/ubuntu/backports) for more details.
 
-### Register the Ubuntu .NET backports package repository
+#### Register the Ubuntu .NET backports package repository
 
 Open a terminal and run the following command:
 
@@ -151,13 +161,10 @@ Open a terminal and run the following command:
 sudo add-apt-repository ppa:dotnet/backports
 ```
 
-> [!TIP]
-> You do not need to call `apt update`. The `add-apt-repository` command does this by default.
-
 > [!NOTE]
 > The Ubuntu .NET backports package repository is compatible with the built-in Ubuntu feed. Therefore you do not need to configure your package manager to ignore .NET packages in the built-in Ubuntu feed.
 
-### Unregister the Ubuntu .NET backports package repository
+#### Unregister the Ubuntu .NET backports package repository
 
 If you no longer want to consume packages from the Ubuntu .NET backports package repository you can unregister it. Open a terminal and run the following command:
 
@@ -168,7 +175,7 @@ sudo add-apt-repository --remove ppa:dotnet/backports
 > [!IMPORTANT]
 > Unregistering the Ubuntu .NET backports package repository does not uninstall any packages.
 
-### add-apt-repository command not found
+#### add-apt-repository command not found
 
 The [`add-apt-repository(1)`](https://manpages.ubuntu.com/manpages/noble/en/man1/add-apt-repository.1.html) utility is pre-installed on most Ubuntu installations.
 
@@ -179,7 +186,7 @@ sudo apt update
 sudo apt install software-properties-common
 ```
 
-## Register the Microsoft package repository
+### Register the Microsoft package repository
 
 > [!IMPORTANT]
 > This only applies to Ubuntu versions prior to 24.04. Starting with Ubuntu 24.04, Microsoft no longer publishes packages to the Microsoft package repository. Use the  [supported distributions table](#supported-distributions) to determine the best way to install .NET.
@@ -221,9 +228,11 @@ sudo apt update
 >
 > You can use a web browser and navigate to <https://packages.microsoft.com/config/ubuntu/> to see which versions of Ubuntu are available to use as the `$repo_version` value.
 
-## Install .NET
+## Install, uninstall, or update .NET
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+The following sections describe how to manage .NET through the package manager.
+
+### Install .NET
 
 Install .NET through the package manager with the `sudo apt install <package-name>` command. Replace `<package-name>` with the name of the .NET package you want to install. For example, to install .NET SDK 9.0, use the command `sudo apt install dotnet-sdk-9.0`. The following table lists the currently supported .NET packages (which [might vary by your Ubuntu version](#supported-distributions)):
 
@@ -241,7 +250,7 @@ Install .NET through the package manager with the `sudo apt install <package-nam
 
 Some environment variables affect how .NET is run after it's installed. For more information, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
 
-## Uninstall .NET
+### Uninstall .NET
 
 If you installed .NET through a package manager, uninstall in the same way with the `apt-get remove` command:
 
@@ -251,15 +260,7 @@ sudo apt-get remove dotnet-sdk-6.0
 
 For more information, see [Uninstall .NET](remove-runtime-sdk-versions.md?pivots=os-linux#uninstall-net).
 
-## Install preview versions
-
-[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
-
-## Remove preview versions
-
-[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
-
-## Use APT to update .NET
+### Update .NET
 
 If you installed .NET through a package manager, you can upgrade the package with the `apt upgrade` command. For example, the following commands upgrade the `dotnet-sdk-9.0` package with the latest version:
 
@@ -270,6 +271,18 @@ sudo apt upgrade dotnet-sdk-9.0
 
 > [!TIP]
 > If you've upgraded your Linux distribution since installing .NET, you may need to reconfigure the Microsoft package repository. Run the installation instructions for your current distribution version to upgrade to the appropriate package repository for .NET updates.
+
+## Manage preview versions
+
+The following sections describe how to install and uninstall preview releases of .NET.
+
+### Install preview versions
+
+[!INCLUDE [preview installs don't support package managers](./includes/linux-install-previews.md)]
+
+### Remove preview versions
+
+[!INCLUDE [package-manager uninstall notice](./includes/linux-uninstall-preview-info.md)]
 
 ## Troubleshooting
 

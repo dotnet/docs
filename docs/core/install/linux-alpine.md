@@ -3,13 +3,11 @@ title: Install .NET on Alpine
 description: Learn about which versions of .NET SDK and .NET Runtime are supported, and how to install .NET on Alpine.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/01/2024
+ms.date: 12/13/2024
 ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 .NET is supported on Alpine and this article describes how to install .NET on Alpine. When an Alpine version falls out of support, .NET is no longer supported with that version.
 
@@ -23,6 +21,7 @@ The following table is a list of currently supported .NET releases and the versi
 
 | Alpine | Supported Version | Available in Package Manager |
 |--------|-------------------|------------------------------|
+| 3.21   | 9.0, 8.0          | 9.0, 8.0                     |
 | 3.20   | 9.0, 8.0          | 8.0, 6.0                     |
 | 3.19   | 9.0, 8.0          | 7.0, 6.0                     |
 | 3.18   | 8.0               | 7.0, 6.0                     |
@@ -33,30 +32,28 @@ The following table is a list of currently supported .NET releases and the versi
 
 # [.NET 9](#tab/dotnet9)
 
-Not supported on Alpine 3.18.
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+**Not supported on Alpine 3.18.**
 
 [!INCLUDE [linux-apk-install-90](includes/linux-install-90-apk.md)]
 
 # [.NET 8](#tab/dotnet8)
 
-[!INCLUDE [linux-apk-install-90](includes/linux-install-90-apk.md)]
+[!INCLUDE [linux-apk-install-80](includes/linux-install-80-apk.md)]
 
 ---
 
 ## Supported architectures
 
-The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager.
+The following table is a list of currently supported .NET releases and the architecture of Alpine they're supported on. These versions remain supported until either the version of [.NET reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the architecture of [Alpine is supported#](https://alpinelinux.org/releases/). Note that only `x86_64`, `armv7`, `aarch64` is officially supported by Microsoft. Other architectures are supported by the distribution maintainers, and can be installed using the `apk` package manager, if a package is available for that architecture.
 
 | Architecture | .NET 9                 | .NET 8                 |
 |--------------|------------------------|------------------------|
-| x86_64       | 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| x86_64       | 3.19, 3.20, 3.21       | 3.18, 3.19, 3.20, 3.21 |
 | x86          | None                   | None                   |
-| aarch64      | 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
-| armv7        | 3.17, 3.18, 3.19, 3.20 | 3.17, 3.18, 3.19, 3.20 |
+| aarch64      | 3.19, 3.20, 3.21       | 3.18, 3.19, 3.20, 3.21 |
+| armv7        | 3.19, 3.20, 3.21       | 3.18, 3.19, 3.20, 3.21 |
 | armhf        | None                   | None                   |
-| s390x        | 3.17                   | 3.17                   |
+| s390x        | None                   | None                   |
 | ppc64le      | None                   | None                   |
 | riscv64      | None                   | None                   |
 
@@ -79,6 +76,7 @@ When you install with a package manager, these libraries are installed for you. 
 - libssl3
 - libstdc++
 - zlib
+- icu-libs and icu-data-full (unless the .NET app is running in [globalization-invariant mode](../runtime-config/globalization.md#invariant-mode)
 - libgdiplus (if the .NET app requires the *System.Drawing.Common* assembly)
 
 Use the `apk add` command to install the dependencies.

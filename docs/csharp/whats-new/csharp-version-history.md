@@ -2,16 +2,35 @@
 title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
-ms.date: 11/22/2024
+ms.date: 12/20/2024
 ms.custom: "updateeachrelease, UpdateFrequency1"
 ---
 
 # The history of C\#
 
-This article provides a history of each major release of the C# language. The C# team is continuing to innovate and add new features. Detailed language feature status, including features considered for upcoming releases can be found [on the dotnet/roslyn repository](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) on GitHub.
+This article provides a history of each major release of the C# language. The C# team is continuing to innovate and add new features. Detailed language feature status, including features considered for upcoming releases can be found [on the dotnet/roslyn repository](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) on GitHub. To find when a particular feature was added to the language, consult the [C# version history](https://github.com/dotnet/csharplang/blob/main/Language-Version-History.md) file in the [`dotnet/csharplang`](https://github.com/dotnet/csharplang) repository on GitHub.
 
 > [!IMPORTANT]
 > The C# language relies on types and methods in what the C# specification defines as a *standard library* for some of the features. The .NET platform delivers those types and methods in a number of packages. One example is exception processing. Every `throw` statement or expression is checked to ensure the object being thrown is derived from <xref:System.Exception>. Similarly, every `catch` is checked to ensure that the type being caught is derived from <xref:System.Exception>. Each version may add new requirements. To use the latest language features in older environments, you may need to install specific libraries. These dependencies are documented in the page for each specific version. You can learn more about the [relationships between language and library](relationships-between-language-and-library.md) for background on this dependency.
+
+## C# version 13
+
+*Released November 2024*
+
+C# 13 includes the following new features:
+
+- `params` collections: the `params` modifier isn't limited to array types. You can now use `params` with any recognized collection type, including `Span<T>`, and interface types.
+- New `lock` type and semantics: If the target of a `lock` statement is a <xref:System.Threading.Lock?displayProperty=fullName>, compiler generates code to use the <xref:System.Threading.Lock.EnterScope?displayProperty=nameWithType> method to enter an exclusive scope. The `ref struct` returned from that supports the `Dispose()` pattern to exit the exclusive scope.
+- New escape sequence - `\e`: You can use `\e` as a character literal escape sequence for the `ESCAPE` character, Unicode `U+001B`.
+- Small optimizations to overload resolution involving method groups.
+- Implicit indexer access in object initializers: The implicit "from the end" index operator, `^`, is now allowed in an object initializer expression.
+- You can use `ref` locals and `unsafe` contexts in iterators and async methods.
+- You can use `ref struct` types to implement interfaces.
+- You can allow `ref struct` types as arguments for type parameters in generics.
+- Partial properties and indexers are now allowed in `partial` types.
+- Overload resolution priority allows library authors to designate one overload as better than others.
+
+And, the `field` contextual keyword to access the compiler generated backing field in an automatically implemented property was released as a preview feature.
 
 ## C# version 12
 
@@ -104,7 +123,7 @@ C# 9 was released with .NET 5. It's the default language version for any assembl
 - [Performance and interop](#performance-and-interop)
   - [Native sized integers](~/_csharplang/proposals/csharp-9.0/native-integers.md)
   - [Function pointers](~/_csharplang/proposals/csharp-9.0/function-pointers.md)
-  - [Suppress emitting localsinit flag](~/_csharplang/proposals/csharp-9.0/skip-localsinit.md)
+  - [Suppress emitting localsinit flag](https://github.com/dotnet/csharplang/blob/main/proposals/csharp-9.0/skip-localsinit.md)
   - [Module initializers](~/_csharplang/proposals/csharp-9.0/module-initializers.md)
   - [New features for partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md)
 - [Fit and finish features](#fit-and-finish-features)

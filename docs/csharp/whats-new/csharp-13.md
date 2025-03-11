@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 13
 description: Get an overview of the new features in C# 13.
-ms.date: 09/30/2024
+ms.date: 01/27/2025
 ms.topic: whats-new
 ---
 # What's new in C# 13
@@ -24,8 +24,6 @@ Beginning with Visual Studio 17.12, C# 13 includes the [`field`](#the-field-keyw
 C# 13 is supported on **.NET 9**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 You can download the latest .NET 9 SDK from the [.NET downloads page](https://dotnet.microsoft.com/download). You can also download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/), which includes the .NET 9 SDK.
-
-New features are added to the "What's new in C#" page when they're available in public preview releases. The [working set](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#working-set) section of the [roslyn feature status page](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md) tracks when upcoming features are merged into the main branch.
 
 You can find any breaking changes introduced in C# 13 in our article on [breaking changes](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%209.md).
 
@@ -76,6 +74,11 @@ You can read the details of the changes in the [proposal specification](~/_cshar
 The implicit "from the end" index operator, `^`, is now allowed in an object initializer expression. For example, you can now initialize an array in an object initializer as shown in the following code:
 
 ```csharp
+public class TimerRemaining
+{
+    public int[] buffer { get; set; } = new int[10];
+}
+
 var countdown = new TimerRemaining()
 {
     buffer =
@@ -94,7 +97,9 @@ var countdown = new TimerRemaining()
 };
 ```
 
-The preceding example creates an array that counts down from 9 to 0. In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
+The `TimerRemaining` class includes a `buffer` array initialized to a length of 10. The preceding example assigns values to this array using the "from the end" index operator (`^`), effectively creating an array that counts down from 9 to 0.
+
+In versions before C# 13, the `^` operator can't be used in an object initializer. You need to index the elements from the front.
 
 ## `ref` and `unsafe` in iterators and `async` methods
 
@@ -129,13 +134,13 @@ This enables types such as <xref:System.Span%601?displayProperty=nameWithType> a
 
 ## `ref struct` interfaces
 
-Before C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. You can declare that a `ref struct` type implements an interface. However, to ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That conversion is a boxing conversion, and could violate ref safety. From that rule, `ref struct` types can't declare methods that explicitly implement an interface method. Also, `ref struct` types must implement all methods declared in an interface, including those methods with a default implementation.
+Before C# 13, `ref struct` types weren't allowed to implement interfaces. Beginning with C# 13, they can. You can declare that a `ref struct` type implements an interface. However, to ensure ref safety rules, a `ref struct` type can't be converted to an interface type. That conversion is a boxing conversion, and could violate ref safety. Explicit interface method declarations in a `ref struct` can be accessed only through a type parameter where that type parameter [`allows ref struct`](../programming-guide/generics/constraints-on-type-parameters.md#allows-ref-struct). Also, `ref struct` types must implement all methods declared in an interface, including those methods with a default implementation.
 
-Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface).
+Learn more in the updates on [`ref struct` types](../language-reference/builtin-types/ref-struct.md#restrictions-for-ref-struct-types-that-implement-an-interface) and the addition of the [`allows ref struct`](../programming-guide/generics/constraints-on-type-parameters.md#allows-ref-struct) generic constraint.
 
 ## More partial members
 
-You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for a partial property. Properties that don't declare a body are considered the *declaring declaration*.
+You can declare `partial` properties and `partial` indexers in C# 13. Partial properties and indexers generally follow the same rules as `partial` methods: you create one *declaring declaration* and one *implementing declaration*. The signatures of the two declarations must match. One restriction is that you can't use an auto-property declaration for *implementing* a partial property. Properties that don't declare a body are considered the *declaring declaration*.
 
 ```csharp
 public partial class C
@@ -168,7 +173,7 @@ This feature is intended for library authors to avoid ambiguity when adding new 
 
 The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. The token `field` accesses the compiler synthesized backing field in a property accessor. It enables you to write an accessor body without declaring an explicit backing field in your type declaration. You can declare a body for one or both accessors for a field backed property.
 
-The `field` feature is released as a preview feature. We want to learn from your experiences using it. There's a potential a breaking change or confusion reading code in types that also include a field named `field`.  You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier.
+The `field` feature is released as a preview feature. We want to learn from your experiences using it. There's a potential breaking change or confusion reading code in types that also include a field named `field`. You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier.
 
 [!INCLUDE[field-preview](../includes/field-preview.md)]
 

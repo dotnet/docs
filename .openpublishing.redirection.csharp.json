@@ -113,6 +113,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
         },
         {
+            "source_path_from_root": "/redirections/proposals/csharp-8.0/nested-stackalloc.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#164127-stackalloc"
+        },
+        {
             "source_path_from_root": "/redirections/proposals/csharp-9.0/nullable-reference-types-specification.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
         },
@@ -774,7 +778,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/as.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#the-as-operator"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/await.md",
@@ -1071,7 +1075,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/typeof.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#the-typeof-operator"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/types.md",
@@ -1821,6 +1825,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs1007.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1502.md",
+            "redirect_url": "/dotnet/csharp/misc/cs1503"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs1510.md",
@@ -4149,6 +4157,22 @@
             "redirect_url": "/dotnet/csharp/tour-of-csharp"
         },
         {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/arrays-and-collections.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/list-collection"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/local-environment.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/branches-and-loops-local.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp"
+        },
+        {
             "source_path_from_root": "/docs/csharp/tuples.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-tuples"
         },
@@ -4274,7 +4298,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-13",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-14",
             "redirect_document_id": true
         },
         {

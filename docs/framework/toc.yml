@@ -15,34 +15,26 @@ items:
   items:
   - name: Overview
     href: install/index.md
+  - name: Install on Windows and Windows Server
+    href: install/on-windows-and-server.md    
   - name: For developers
     href: install/guide-for-developers.md
-  - name: By OS version
-    items:
-    - name: Windows 11
-      href: install/on-windows-11.md
-    - name: Windows 10 and Windows Server 2016
-      href: install/on-windows-10.md
-    - name: Windows 8.1 and Windows Server 2012 R2
-      href: install/on-windows-8-1.md
-    - name: Windows 8 and Windows Server 2012
-      href: install/on-windows-8.md
-    - name: Windows Server 2022
-      href: install/on-server-2022.md
-    - name: Windows Server 2019
-      href: install/on-server-2019.md
-  - name: Repair .NET framework
-    href: install/repair.md
+  - name: Versions and dependencies
+    href: install/versions-and-dependencies.md
+  - name: Find installed versions
+    href: install/how-to-determine-which-versions-are-installed.md
+  - name: Find installed updates
+    href: install/how-to-determine-which-net-framework-updates-are-installed.md
   - name: Troubleshoot
     items:
+    - name: Repair .NET framework
+      href: install/repair.md
     - name: Troubleshoot install and uninstall
       href: install/troubleshoot-blocked-installations-and-uninstallations.md
     - name: Troubleshoot 'This application could not be started'
       href: install/application-not-started.md
-  - name: .NET Framework 3.5 on Windows 8 through Windows 11
+  - name: .NET Framework 3.5
     href: install/dotnet-35-windows.md
-  - name: .NET Framework 1.1 on Windows 8 through Windows 11
-    href: install/run-net-framework-1-1-apps.md
 - name: Migration guide
   items:
   - name: Overview
@@ -114,14 +106,6 @@ items:
         href: migration-guide/mitigation-ziparchiveentry-fullname-path-separator.md
     - name: Version compatibility
       href: migration-guide/version-compatibility.md
-  - name: .NET Framework versions
-    items:
-    - name: Versions and dependencies
-      href: migration-guide/versions-and-dependencies.md
-    - name: Find installed versions
-      href: migration-guide/how-to-determine-which-versions-are-installed.md
-    - name: Find installed updates
-      href: migration-guide/how-to-determine-which-net-framework-updates-are-installed.md
   - name: Configure an app to support .NET Framework 4 or later
     href: migration-guide/how-to-configure-an-app-to-support-net-framework-4-or-4-5.md
   - name: Migrate from .NET Framework 1.1
@@ -671,6 +655,8 @@ items:
   items:
   - name: Release notes
     items:
+    - name: Overview and index
+      href: release-notes/release-notes.md
     - name: January 2024 security and quality rollup
       href: release-notes/2024/01-09-january-security-and-quality-rollup.md
     - name: January 2024 cumulative update preview
@@ -696,9 +682,15 @@ items:
     - name: October 2024 security and quality rollup
       href: release-notes/2024/10-08-october-security-and-quality-rollup.md
     - name: October 2024 cumulative update preview
-      href: release-notes/2024/10-22-october-preview-cumulative-update.md  
+      href: release-notes/2024/10-22-october-preview-cumulative-update.md
     - name: November 2024 security and quality rollup
       href: release-notes/2024/11-12-november-security-and-quality-rollup.md
+    - name: November 2024 cumulative update preview
+      href: release-notes/2024/11-21-november-preview-cumulative-update.md
+    - name: January 2025 cumulative update
+      href: release-notes/2025/01-14-january-cumulative-update.md
+    - name: January 2025 cumulative update preview
+      href: release-notes/2025/01-28-january-cumulative-update-preview.md
   - name: What's new
     href: whats-new/index.md
   - name: What's new in accessibility

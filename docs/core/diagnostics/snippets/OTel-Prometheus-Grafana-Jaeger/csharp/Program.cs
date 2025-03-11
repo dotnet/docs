@@ -41,6 +41,9 @@ otel.WithMetrics(metrics => metrics
     // Metrics provides by ASP.NET Core in .NET 8
     .AddMeter("Microsoft.AspNetCore.Hosting")
     .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
+    // Metrics provided by System.Net libraries
+    .AddMeter("System.Net.Http")
+    .AddMeter("System.Net.NameResolution")
     .AddPrometheusExporter());
 
 // Add Tracing for ASP.NET Core and our custom ActivitySource and export to Jaeger
@@ -88,6 +91,24 @@ app.MapGet("/", SendGreeting);
 app.MapGet("/NestedGreeting", SendNestedGreeting);
 //</Snippet_MapNested>
 
+//<Snippet_ClientStress>
+app.MapGet("/ClientStress", async Task<string> (ILogger<Program> logger, HttpClient client) =>
+{
+    string[] uris = ["http://example.com", "http://httpbin.org/get", "https://example.com", "https://httpbin.org/get"];
+    await Parallel.ForAsync(0, 50, async (_, ct) =>
+    {
+        string uri = uris[Random.Shared.Next(uris.Length)];
+
+        try
+        {
+            await client.GetAsync(uri, ct);
+            logger.LogInformation($"{uri} - done.");
+        }
+        catch { logger.LogInformation($"{uri} - failed."); }
+    });
+    return "Sent 50 requests to example.com and httpbin.org.";
+});
+//</Snippet_ClientStress>
 
 #if !AZURE_MONITOR
 //<Snippet_Prometheus>
@@ -99,7 +120,7 @@ app.MapPrometheusScrapingEndpoint();
 app.Run();
 
 //<Snippet_SendGreeting>
-async Task<String> SendGreeting(ILogger<Program> logger)
+async Task<string> SendGreeting(ILogger<Program> logger)
 {
     // Create a new Activity scoped to the method
     using var activity = greeterActivitySource.StartActivity("GreeterActivity");

@@ -33,7 +33,7 @@ Immutability isn't appropriate for all data scenarios. [Entity Framework Core](/
 
 The same syntax that [declares](classes.md#declaring-classes) and [instantiates](classes.md#creating-objects) classes or structs can be used with records. Just substitute the `class` keyword with the `record`, or use `record struct` instead of `struct`. Likewise, the same syntax for expressing inheritance relationships is supported by record classes. Records differ from classes in the following ways:
 
-* You can use [positional parameters](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) to create and instantiate a type with immutable properties.
+* You can use [positional parameters](../../language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition) in a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) to create and instantiate a type with immutable properties.
 * The same methods and operators that indicate reference equality or inequality in classes (such as <xref:System.Object.Equals(System.Object)?displayProperty=nameWithType> and `==`), indicate [value equality or inequality](../../language-reference/builtin-types/record.md#value-equality) in records.
 * You can use a [`with` expression](../../language-reference/builtin-types/record.md#nondestructive-mutation) to create a copy of an immutable object with new values in selected properties.
 * A record's `ToString` method creates a formatted string that shows an object's type name and the names and values of all its public properties.

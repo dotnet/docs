@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 # .NET runtime method events
 
-The events described in this article collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as methods that are loaded and unloaded. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as methods that are loaded and unloaded. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 All method events have a level of "Informational (4)". All method verbose events have a level of "Verbose (5)".
 

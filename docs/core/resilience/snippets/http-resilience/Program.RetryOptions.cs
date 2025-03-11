@@ -13,4 +13,24 @@ internal partial class Program
         builder.Services.Configure<HttpStandardResilienceOptions>(section);
         // </options>
     }
+
+    private static void DisableRetriesFor(IHttpClientBuilder httpClientBuilder)
+    {
+        // <disable_for>
+        httpClientBuilder.AddStandardResilienceHandler(options =>
+        {
+            options.Retry.DisableFor(HttpMethod.Post, HttpMethod.Delete);
+        });
+        // </disable_for>
+    }
+
+    private static void DisableRetriesForUnsafeHttpMethods(IHttpClientBuilder httpClientBuilder)
+    {
+        // <disable_for_unsafe_http_methods>
+        httpClientBuilder.AddStandardResilienceHandler(options =>
+        {
+            options.Retry.DisableForUnsafeHttpMethods();
+        });
+        // </disable_for_unsafe_http_methods>
+    }
 }

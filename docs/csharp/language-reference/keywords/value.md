@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # The `value` implicit parameter
 
-The implicit parameter `value` is used in the `set` accessor in [property](../../programming-guide/classes-and-structs/properties.md) and [indexer](../../programming-guide/indexers/index.md) declarations. It's an input parameter of a method. The word `value` references the value that client code is attempting to assign to the property or indexer. In the following example, `TimePeriod2` has a property called `Name` that uses the `value` parameter to assign a new string to the backing field `name`. From the point of view of client code, the operation is written as a simple assignment.
+The implicit parameter `value` is used in the `set` accessor in [property](../../programming-guide/classes-and-structs/properties.md) and [indexer](../../programming-guide/indexers/index.md) declarations. It's an input parameter of a method. The word `value` references the value that client code is attempting to assign to the property or indexer. In the following example, `TimePeriod2` has a property called `Seconds` that uses the `value` parameter to assign a new string to the backing field `_seconds`. From the point of view of client code, the operation is written as a simple assignment.
 
 :::code language="csharp" source="./snippets/PropertyAccessors.cs" id="GetSetExpressions":::
 

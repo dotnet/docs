@@ -109,6 +109,9 @@ Console.WriteLine("============= is operator example ==============");
 IsOperator.Examples();
 Console.WriteLine();
 
+Console.WriteLine("============= deconstruction examples ==========");
+Deconstruction.Examples();
+
 Console.WriteLine("============ Collection expressions =================");
 CollectionExpressionExamples.Examples();
 Console.WriteLine();

@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
 ms.date: 11/11/2024
+no-loc: ["Program Files", "dotnet"]
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -395,7 +396,10 @@ Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the
     C:\Program Files\dotnet\dotnet.exe
     ```
 
-    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=)
+    > [!TIP]
+    > Even though _Program Files_ is used in this example, you may see other copies of _dotnet.exe_ listed. Adjust them so that the appropriate _dotnet.exe_ is resolved first.
+
+    If it's correct and _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?template=Blank+issue).
 
 01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
 

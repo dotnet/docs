@@ -177,6 +177,26 @@ let (|Int|_|) str =
 
 The attribute must be specified, because the use of a struct return is not inferred from simply changing the return type to `ValueOption`. For more information, see [RFC FS-1039](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1039-struct-representation-for-active-patterns.md).
 
+## Null active patterns
+
+In F# 9, nullability related active patterns were added.
+
+The first one is `| Null | NonNull x |`, which is a recommended way to handle possible nulls. In the following example, parameter `s` is inferred nullable via this active pattern usage:
+
+```fsharp
+ let len s =
+    match s with
+    | Null -> -1
+    | NonNull s -> String.length s
+```
+
+If you rather want to automatically throw `NullReferenceException`, you can use the `| NonNullQuick |` pattern:
+
+```fsharp
+let len (NonNullQuick str) =  // throws if the argument is null
+    String.length str
+```
+
 ## See also
 
 - [F# Language Reference](index.md)

@@ -59,7 +59,7 @@ This interface specifies that an implementing class must provide the following m
 The `MauiNavigationService` class, which implements the `INavigationService` interface, is registered as a singleton with the dependency injection container in the `MauiProgram.CreateMauiApp()` method, as demonstrated in the following code example:
 
 ```csharp
-mauiAppBuilder.Services.AddSingleton<INavigationService, MauiNavigationService>();;
+mauiAppBuilder.Services.AddSingleton<INavigationService, MauiNavigationService>();
 ```
 
 The `INavigationService` interface can then be resolved by adding it to the constructor of our views and view-models, as demonstrated in the following code example:

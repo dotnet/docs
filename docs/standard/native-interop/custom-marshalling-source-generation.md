@@ -124,7 +124,7 @@ The `ListMarshaller` in the example is a stateless collection marshaller that im
 ```csharp
 [LibraryImport("nativelib")]
 [return: MarshalUsing(typeof(ListMarshaller<,>), CountElementName = "numValues")]
-internal static partial void ConvertList(
+internal static partial List<int> ConvertList(
     [MarshalUsing(typeof(ListMarshaller<,>))] List<int> list,
     out int numValues);
 ```

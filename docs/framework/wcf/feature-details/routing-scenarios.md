@@ -1,10 +1,9 @@
 ---
-description: "Learn more about: Routing Scenarios"
 title: "Routing Scenarios"
+description: "Learn more about: Routing Scenarios"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "routing [WCF], scenarios"
-ms.assetid: ec22f308-665a-413e-9f94-7267cb665dab
 ---
 # Routing Scenarios
 
@@ -50,7 +49,7 @@ While the Routing Service is highly customizable, it can be a challenge to desig
 
  When routing messages, usually you routing each message to one specific destination endpoint.  However, you may occasionally need to route a copy of the message to multiple destination endpoints. To perform multicast routing, the following conditions must be true:  
   
-- The channel shape must not be request-reply (though it may be one-way or duplex,) because request-reply mandates that only one reply can be received by the client application in response to the request.  
+- The channel shape must not be request-reply (though it may be one-way or duplex), because request-reply mandates that only one reply can be received by the client application in response to the request.  
   
 - Multiple filters must return **true** when evaluating the message.  
   

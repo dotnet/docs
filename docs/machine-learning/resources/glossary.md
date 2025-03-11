@@ -106,7 +106,7 @@ A feature extraction scheme for text data: any sequence of N words turns into a 
 
 ## Normalization
 
-Normalization is the process of scaling floating point data to values between 0 and 1. Many of the training algorithms used in ML.NET require input feature data to be normalized. ML.NET provides a series of [transforms for normalization](transforms.md#normalization-and-scaling)
+Normalization is the process of scaling floating point data to values between 0 and 1. Many of the training algorithms used in ML.NET require input feature data to be normalized. ML.NET provides a series of [transforms for normalization](transforms.md#normalization-and-scaling).
 
 ## Numerical feature vector
 
@@ -126,9 +126,9 @@ In [classification](#classification), the recall for a class is the number of it
 
 ## Regularization
 
- Regularization penalizes a linear model for being too complicated. There are two types of regularization:
+Regularization penalizes a linear model for being too complicated. There are two types of regularization:
 
-- $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
+- $L_1$ regularization zeros weights for insignificant features. The size of the saved model might become smaller after this type of regularization.
 - $L_2$ regularization minimizes weight range for insignificant features. This is a more general process and is less sensitive to outliers.
 
 ## Regression
@@ -149,7 +149,7 @@ In [regression](#regression), an evaluation metric that is the square root of th
 
 ## Scoring
 
-Scoring is the process of applying new data to a trained machine learning model, and generating predictions. Scoring is also known as inferencing. Depending on the type of model, the score may be a raw value, a probability, or a category.
+Scoring is the process of applying new data to a trained machine learning model, and generating predictions. Scoring is also known as inferencing. Depending on the type of model, the score can be a raw value, a probability, or a category.
 
 ## Supervised machine learning
 

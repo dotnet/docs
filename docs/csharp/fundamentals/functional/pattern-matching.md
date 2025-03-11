@@ -1,7 +1,7 @@
 ---
 title: Pattern matching overview
 description: "Learn about pattern matching expressions in C#"
-ms.date: 03/13/2024
+ms.date: 01/27/2025
 ---
 
 # Pattern matching overview
@@ -77,6 +77,14 @@ The first two arms examine two properties of the `Order`. The third examines onl
 :::code language="csharp" source="snippets/patterns/OrderProcessor.cs" ID="DeconstructPattern":::
 
 The preceding code demonstrates the [*positional pattern*](../../language-reference/operators/patterns.md#positional-pattern) where the properties are deconstructed for the expression.
+
+You can also match a property against `{ }`, which matches any non-null value. Consider the following declaration, which stores measurements with an optional annotation:
+
+:::code language="csharp" source="snippets/patterns/Program.cs" ID="Observation":::
+
+You can test if a given observation has a non-null annotation using the following pattern matching expression:
+
+:::code language="csharp" source="snippets/patterns/Program.cs" ID="NotNullPropertyPattern":::
 
 ## List patterns
 

@@ -16,9 +16,11 @@ ms.assetid: 4c5c0539-2e37-40b7-91ce-75af5aabd3f9
 
 # C# Special Characters
 
-Special characters are predefined, contextual characters that modify the program element (a literal string, an identifier, or an attribute name) to which they are prepended. C# supports the following special characters:
+Special characters are predefined, contextual characters that modify the program element (a literal string, an identifier, or an attribute name) to which they're prepended. C# supports the following special characters:
 
 - [@](./verbatim.md), the verbatim identifier character.
 - [$](./interpolated.md), the interpolated string character.
+- ["""](./raw-string.md), A sequence of three or more `"` characters provides the delimiters for a raw string literal.
+- [_](./discard.md), a `_` character represents a *discard*, which is a placeholder for an unused variable.
 
-This section only includes those tokens that are not operators. See the [operators](../operators/index.md) section for all operators.
+This section only includes those tokens that aren't operators. See the [operators](../operators/index.md) section for all operators.

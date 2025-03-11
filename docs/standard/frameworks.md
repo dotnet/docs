@@ -14,7 +14,7 @@ When you target a framework in an app or library, you're specifying the set of A
 
 An app or library can target a version of [.NET Standard](net-standard.md). .NET Standard versions represent standardized sets of APIs across all .NET implementations. For example, a library can target .NET Standard 1.6 and gain access to APIs that function across .NET Core and .NET Framework using the same codebase.
 
-An app or library can also target a specific .NET implementation to gain access to implementation-specific APIs. For example, an app that targets Xamarin.iOS (for example, `Xamarin.iOS10`) has access to Xamarin-provided iOS API wrappers for iOS 10, or an app that targets Universal Windows Platform (UWP, `uap10.0`) has access to APIs that compile for devices that run Windows 10.
+An app or library can also target a specific .NET implementation to gain access to implementation-specific APIs. For example, an app that targets Universal Windows Platform (UWP, `uap10.0`) has access to APIs that compile for devices that run Windows 10.
 
 For some target frameworks, such as .NET Framework, the APIs are defined by the assemblies that the framework installs on a system and may include application framework APIs (for example, ASP.NET).
 
@@ -103,7 +103,7 @@ Use these guidelines to determine which TFM to use in your app:
 
 - Apps that are portable to multiple platforms should target a base TFM, for example, `net9.0`. This includes most libraries but also ASP.NET Core and Entity Framework.
 - Platform-specific libraries should target platform-specific flavors. For example, WinForms and WPF projects should target `net9.0-windows`.
-- Cross-platform application models (Xamarin Forms, ASP.NET Core) and bridge packs (Xamarin Essentials) should at least target the base TFM, for example, `net9.0`, but might also target additional platform-specific flavors to light-up more APIs or features.
+- Cross-platform application models (for example, ASP.NET Core) should at least target the base TFM, for example, `net9.0`, but might also target additional platform-specific flavors to light-up more APIs or features.
 
 #### OS version in TFMs
 
@@ -115,8 +115,8 @@ The following table shows the default target platform values (TPV) for each .NET
 
 | .NET version | Android | iOS  | Mac Catalyst | macOS | tvOS | Tizen | Windows |
 |--------------|--------:|-----:|-------------:|------:|-----:|------:|--------:|
-| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |   7.0 |    10.0 |
-| .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |   7.0 |    10.0 |
+| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |  10.0 |    10.0 |
+| .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |  10.0 |    10.0 |
 
 > [!NOTE]
 > On Apple platforms (iOS, macOS, tvOS, and Mac Catalyst) in .NET 8 and earlier,

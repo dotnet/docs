@@ -41,7 +41,7 @@ while (true)
     Console.WriteLine("AI Response:");
     var response = "";
     await foreach (var item in
-        chatClient.CompleteStreamingAsync(chatHistory))
+        chatClient.GetStreamingResponseAsync(chatHistory))
     {
         Console.Write(item.Text);
         response += item.Text;

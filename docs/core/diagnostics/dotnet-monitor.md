@@ -1,7 +1,7 @@
 ---
 title: dotnet-monitor diagnostic tool - .NET
 description: Learn how to install and use the dotnet-monitor tool to collect dumps, traces, logs, and metrics from applications in production environments.
-ms.date: 06/16/2022
+ms.date: 03/04/2025
 ms.topic: reference
 ---
 # Diagnostic monitoring and collection utility (dotnet-monitor)
@@ -183,12 +183,12 @@ dotnet-monitor config show [-h|--help] [-u|--urls] [-m|--metrics] [--metricUrls]
 
 ## dotnet-monitor generatekey
 
- Generate an API key and hash for HTTP authentication.
+Generate an API key and hash for HTTP authentication.
 
 ### Synopsis
 
 ```console
-dotnet-monitor generatekey [-h|--help] [-o|--output]
+dotnet-monitor generatekey [-h|--help] [-o|--output] [-e|--expiration]
 ```
 
 ### Options
@@ -209,6 +209,10 @@ dotnet-monitor generatekey [-h|--help] [-o|--output]
   - `Shell` - Outputs in a format usable in Linux shells such as Bash.
   - `Text` - Outputs in a format that is plain text.
 
-## See Also
+- **`-e|--expiration <expiration>`**
+
+  The expiration time after which the generated API key will no longer be accepted. The value must be in <xref:System.TimeSpan> format (for example, "7.00:00:00" for 7 days). Default: "7.00:00:00" (7 days).
+
+## See also
 
 - [dotnet/dotnet-monitor](https://github.com/dotnet/dotnet-monitor/tree/main/documentation)

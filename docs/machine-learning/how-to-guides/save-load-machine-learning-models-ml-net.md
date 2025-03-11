@@ -13,7 +13,7 @@ ms.topic: how-to
 
 Learn how to save and load trained models in your application.
 
-Throughout the model building process, a model lives in memory and is accessible throughout the application's lifecycle. However, once the application stops running, if the model is not saved somewhere locally or remotely, it's no longer accessible. Typically models are used at some point after training in other applications either for inference or re-training. Therefore, it's important to store the model. Save and load models using the steps described in subsequent sections of this document when using data preparation and model training pipelines like the one detailed below. Although this sample uses a linear regression model, the same process applies to other ML.NET algorithms.
+Throughout the model building process, a model lives in memory and is accessible throughout the application's lifecycle. However, once the application stops running, if the model isn't saved somewhere locally or remotely, it's no longer accessible. Typically models are used at some point after training in other applications either for inference or retraining. Therefore, it's important to store the model. Save and load models using the steps described in subsequent sections of this article when using data preparation and model training pipelines like the one shown here. Although this sample uses a linear regression model, the same process applies to other ML.NET algorithms.
 
 ```csharp
 HousingData[] housingData = new HousingData[]
@@ -61,7 +61,7 @@ Because most models and data preparation pipelines inherit from the same set of 
 
 ## Save a model locally
 
-When saving a model you need two things:
+When saving a model, you need two things:
 
 1. The [`ITransformer`](xref:Microsoft.ML.ITransformer) of the model.
 2. The [`DataViewSchema`](xref:Microsoft.ML.DataViewSchema) of the [`ITransformer`](xref:Microsoft.ML.ITransformer)'s expected input.
@@ -75,15 +75,15 @@ mlContext.Model.Save(trainedModel, data.Schema, "model.zip");
 
 ## Save an ONNX model locally
 
-To save an ONNX version of your model locally you will need the **Microsoft.ML.OnnxConverter** NuGet package installed.
+To save an Open Neural Network Exchange (ONNX) version of your model locally, you must install the **Microsoft.ML.OnnxConverter** NuGet package.
 
-With the `OnnxConverter` package installed, we can use it to save our model into the ONNX format. This requires a `Stream` object which we can provide as a `FileStream` using the `File.Create` method. The `File.Create` method takes in a string as a parameter which will be the path of the ONNX model.
+With the `OnnxConverter` package installed, you can use it to save your model into the ONNX format. This requires a `Stream` object, which you can provide as a `FileStream` using the `File.Create` method. The `File.Create` method takes a string parameter that represents the path of the ONNX model.
 
 ```csharp
 using FileStream stream = File.Create("./onnx_model.onnx");
 ```
 
-With the stream created, we can call the [`ConvertToOnnx`](xref:Microsoft.ML.OnnxExportExtensions.ConvertToOnnx%2A) method and give it the trained model, the data used to train the model, and the stream. However, not all trainers and transformers are exportable to ONNX. For a complete list, visit the [Transforms](../resources/transforms.md) and [How to Choose an ML.NET Algorithm](../how-to-choose-an-ml-net-algorithm.md) guides.
+With the stream created, you can call the [`ConvertToOnnx`](xref:Microsoft.ML.OnnxExportExtensions.ConvertToOnnx%2A) method and give it the trained model, the data used to train the model, and the stream. However, not all trainers and transformers are exportable to ONNX. For a complete list, see the [Transforms](../resources/transforms.md) and [How to Choose an ML.NET Algorithm](../how-to-choose-an-ml-net-algorithm.md) guides.
 
 ```csharp
 mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
@@ -91,7 +91,7 @@ mlContext.Model.ConvertToOnnx(trainedModel, data, stream);
 
 ## Load a model stored locally
 
-Models stored locally can be used in other processes or applications like `ASP.NET Core` and `Serverless Web Applications`. See [Use ML.NET in Web API](./serve-model-web-api-ml-net.md) and [Deploy ML.NET Serverless Web App](./serve-model-serverless-azure-functions-ml-net.md) how-to articles to learn more.
+Models stored locally can be used in other processes or applications like ASP.NET Core and serverless web apps. For more information, see [Use ML.NET in Web API](./serve-model-web-api-ml-net.md) and [Deploy ML.NET Serverless Web App](./serve-model-serverless-azure-functions-ml-net.md).
 
 In a separate application or process, use the [`Load`](xref:Microsoft.ML.ModelOperationsCatalog.Load%2A) method along with the file path to get the trained model into your application.
 
@@ -105,15 +105,15 @@ ITransformer trainedModel = mlContext.Model.Load("model.zip", out modelSchema);
 
 ## Load an ONNX model locally
 
-To load in an ONNX model for predictions, you will need the **Microsoft.ML.OnnxTransformer** NuGet package.
+To load in an ONNX model for predictions, install the **Microsoft.ML.OnnxTransformer** NuGet package.
 
-With the `OnnxTransformer` package installed, you can load an existing ONNX model by using the [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) method. The required parameter is a string which is the path of the local ONNX model.
+With the `OnnxTransformer` package installed, you can load an existing ONNX model by using the [`ApplyOnnxModel`](xref:Microsoft.ML.OnnxCatalog.ApplyOnnxModel%2A) method. The required parameter is a string that's the path of the local ONNX model.
 
 ```csharp
 OnnxScoringEstimator estimator = mlContext.Transforms.ApplyOnnxModel("./onnx_model.onnx");
 ```
 
-The `ApplyOnnxModel` method returns an `OnnxScoringEstimator` object. First, we need to load in the new data.
+The `ApplyOnnxModel` method returns an `OnnxScoringEstimator` object. First, you need to load in the new data.
 
 ```csharp
 HousingData[] newHousingData = new HousingData[]
@@ -127,19 +127,19 @@ HousingData[] newHousingData = new HousingData[]
 };
 ```
 
-With the new data we can load that into an `IDataView` using the `LoadFromEnumerable` method.
+Load the new data into an `IDataView` using the <xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*> method.
 
 ```csharp
 IDataView newHousingDataView = mlContext.Data.LoadFromEnumerable(newHousingData);
 ```
 
-Now, we can use the new `IDataView` to fit on the new data.
+Now you can use the new `IDataView` to fit on the new data.
 
 ```csharp
 estimator.Fit(newHousingDataView);
 ```
 
-After using the **Fit** method on an estimator from `ApplyOnnxModel`, it can then be saved as a new model using the [Save](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A) method mentioned [save a model locally section](#save-a-model-locally).
+After using the `Fit` method on an estimator from `ApplyOnnxModel`, it can then be saved as a new model using the [Save](xref:Microsoft.ML.ModelOperationsCatalog.Save%2A) method described in the [save a model locally](#save-a-model-locally) section.
 
 ## Load a model stored remotely
 
@@ -162,12 +162,12 @@ using (HttpClient client = new HttpClient())
 }
 ```
 
-## Working with separate data preparation and model pipelines
+## Work with separate data preparation and model pipelines
 
 > [!NOTE]
 > Working with separate data preparation and model training pipelines is optional. Separation of pipelines makes it easier to inspect the learned model parameters. For predictions, it's easier to save and load a single pipeline that includes the data preparation and model training operations.
 
-When working with separate data preparation pipelines and models, the same process as single pipelines applies; except now both pipelines need to be saved and loaded simultaneously.
+When working with separate data preparation pipelines and models, the same process as single pipelines applies. The difference is that both pipelines need to be saved and loaded simultaneously.
 
 Given separate data preparation and model training pipelines:
 

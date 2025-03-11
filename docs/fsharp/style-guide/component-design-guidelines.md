@@ -693,9 +693,49 @@ let checkNonNull argName (arg: obj) =
     | null -> nullArg argName
     | _ -> ()
 
-let checkNonNull` argName (arg: obj) =
+let checkNonNull' argName (arg: obj) =
     if isNull arg then nullArg argName
     else ()
+```
+
+Starting with F# 9, you can leverage the new `| null` [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to make the compiler indicate possible null values and where they need handling:
+
+```fsharp
+let checkNonNull argName (arg: obj | null) =
+    match arg with
+    | null -> nullArg argName
+    | _ -> ()
+
+let checkNonNull' argName (arg: obj | null) =
+    if isNull arg then nullArg argName 
+    else ()
+```
+
+In F# 9, the compiler emits a warning when it detects that a possible null value is not handled:
+
+```fsharp
+let printLineLength (s: string) =
+    printfn "%i" s.Length
+
+let readLineFromStream (sr: System.IO.StreamReader) =
+    // `ReadLine` may return null here - when the stream is finished
+    let line = sr.ReadLine()
+    // nullness warning: The types 'string' and 'string | null'
+    // do not have equivalent nullability
+    printLineLength line
+```
+
+These warnings should be addressed using F# [null pattern](../language-reference/pattern-matching.md#null-pattern) in matching:
+
+```fsharp
+let printLineLength (s: string) =
+    printfn "%i" s.Length
+
+let readLineFromStream (sr: System.IO.StreamReader) =
+    let line = sr.ReadLine()
+    match line with
+    | null -> ()
+    | s -> printLineLength s
 ```
 
 #### Avoid using tuples as return values

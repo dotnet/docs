@@ -926,7 +926,7 @@
         },
         {
             "source_path_from_root": "/docs/framework/deployment/windows/10.md",
-            "redirect_url": "/dotnet/framework/install/on-windows-10"
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
         },
         {
             "source_path_from_root": "/docs/framework/deployment/windows/7.md",
@@ -934,7 +934,7 @@
         },
         {
             "source_path_from_root": "/docs/framework/deployment/windows/8.md",
-            "redirect_url": "/dotnet/framework/install/on-windows-8"
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
         },
         {
             "source_path_from_root": "/docs/framework/deployment/windows/index.md",
@@ -986,6 +986,34 @@
             "redirect_document_id": false
         },
         {
+            "source_path_from_root": "/docs/framework/install/on-windows-8.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/install/on-windows-8-1.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/install/on-windows-10.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/install/on-windows-11.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/install/on-server-2019.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/install/on-server-2022.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+        },
+        {
+            "source_path_from_root": "/docs/framework/install/on-server-2025.md",
+            "redirect_url": "/dotnet/framework/install/on-windows-and-server"
+        },
+        {
             "source_path_from_root": "/docs/framework/install/on-windows-vista.md",
             "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-vista",
             "redirect_document_id": false
@@ -994,6 +1022,10 @@
             "source_path_from_root": "/docs/framework/install/on-windows-xp.md",
             "redirect_url": "/previous-versions/dotnet/framework/install/on-windows-xp",
             "redirect_document_id": false
+        },
+        {
+            "source_path_from_root": "/docs/framework/install/run-net-framework-1-1-apps.md",
+            "redirect_url": "/dotnet/framework/install/dotnet-35-windows"
         },
         {
             "source_path_from_root": "/docs/framework/interop/applying-interop-attributes.md",
@@ -1114,6 +1146,14 @@
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
+            "source_path_from_root": "/docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md",
+            "redirect_url": "/dotnet/framework/install/how-to-determine-which-versions-are-installed"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md",
+            "redirect_url": "/dotnet/framework/install/how-to-determine-which-net-framework-updates-are-installed"
+        },
+        {
             "source_path_from_root": "/docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
             "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.6.x"
         },
@@ -1151,7 +1191,7 @@
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/minimum-release-dword.md",
-            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
+            "redirect_url": "/dotnet/framework/install/how-to-determine-which-versions-are-installed"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/mitigation-claimsidentity-constructor.md",
@@ -1167,7 +1207,7 @@
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/release-keys-and-os-versions.md",
-            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
+            "redirect_url": "/dotnet/framework/install/how-to-determine-which-versions-are-installed"
         },
         {
             "source_path_from_root": "/docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
@@ -1672,6 +1712,10 @@
         {
             "source_path_from_root": "/docs/framework/migration-guide/runtime/index.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path_from_root": "/docs/framework/migration-guide/versions-and-dependencies.md",
+            "redirect_url": "/dotnet/framework/install/versions-and-dependencies"
         },
         {
             "source_path_from_root": "/docs/framework/misc/binding.md",
@@ -3458,11 +3502,11 @@
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/accessing-the-internet-through-a-proxy.md",
-            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/automatic-proxy-detection.md",
-            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/how-to-override-a-global-proxy-selection.md",
@@ -3478,7 +3522,7 @@
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/proxy-configuration.md",
-            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/changes-to-the-system-uri-namespace-in-version-2-0.md",
@@ -3490,7 +3534,7 @@
         },
         {
             "source_path_from_root": "/docs/framework/network-programming/how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md",
-            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#http-proxy"
+            "redirect_url": "/dotnet/fundamentals/networking/http/httpclient#configure-an-http-proxy"
         }
     ]
 }

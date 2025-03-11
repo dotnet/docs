@@ -34,5 +34,3 @@ For most scenarios, no action is required. If your containerized .NET app has a 
 ## Affected APIs
 
 None.
-
-## See also

@@ -77,13 +77,13 @@ To do this, you need to execute the command:
 dotnet tool install -g dotnet-stryker
 ```
 
-Let's run Stryker using the command from the directory where the unit tests are located:
+To run `stryker`, invoke it from the command line in the directory where the unit test project is located:
 
 ```dotnetcli
 dotnet stryker
 ```
 
-After the testing is completed, a report will be displayed in the console - how many mutants were killed and how many survived.
+After the tests have run, a report is displayed in the console.
 
 :::image type="content" source="media/stryker-console-report.png" lightbox="media/stryker-console-report.png" alt-text="Stryker console report":::
 

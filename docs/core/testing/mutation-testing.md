@@ -36,7 +36,8 @@ public class PriceCalculator
     }
 }
 ```
-This method is covered by unit tests 
+
+This method is covered by unit tests
 
 ```csharp
 [Fact]
@@ -64,7 +65,7 @@ public void InvalidPrice_ShouldThrowException()
 }
 ```
 
-First, install **Stryker.NET**. 
+First, install **Stryker.NET**.
 To do this, you need to execute the command:
 
 ```dotnetcli
@@ -90,10 +91,10 @@ Now, consider what mutants are and what 'survived' and 'killed' mean. A mutant i
 In our example, a mutant will be the replacement of the expression `price <= 0`, for example, with `price < 0`, after which unit tests are run.
 
 Stryker supports several types of mutations:
--	equivalent (for example, replaces < with <=)
--	arithmetic (+ to -)
--	string ("text" to "")
--	logical (&& to ||)
+-equivalent (for example, replaces < with <=)
+-arithmetic (+ to -)
+-string ("text" to "")
+-logical (&& to ||)
 
 and so on, you can find the full list in the **Stryker.NET** documentation.
 
@@ -121,6 +122,7 @@ public void NoExceptionForZeroAnd100Discount()
     Assert.Null(exceptionWhen100);
 }
 ```
+
 :::image type="content" source="media/stryker-second-report.png" lightbox="media/stryker-second-report.png" alt-text="Stryker second report":::
 
 As you can see, after correcting the equivalent mutants, we only have string mutations left, which we can easily 'kill' by checking the text of the exception message.
@@ -146,6 +148,7 @@ public void InvalidPrice_ShouldThrowExceptionWithCorrectMessage()
     Assert.Equal("Price must be greater than zero.", exception.Message);
 }
 ```
+
 :::image type="content" source="media/stryker-final-report.png" lightbox="media/stryker-final-report.png" alt-text="Stryker final report":::
 
 Mutation testing helps to find weak points in tests and makes them more reliable. It forces you to check not only the 'happy path', but also complex boundary cases, reducing the likelihood of bugs in production.

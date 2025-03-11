@@ -171,7 +171,7 @@ The words library and [framework](#framework) are often used synonymously.
 
 ## Mono
 
-An open source, [cross-platform](#cross-platform) [.NET implementation](#implementation-of-net) that's used when a small runtime is required. It's the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS, and watchOS and is focused primarily on apps that require a small footprint.
+An open source, [cross-platform](#cross-platform) [.NET implementation](#implementation-of-net) that's used when a small runtime is required. It's the runtime that powered Xamarin applications (unsupported as of May 2024) on Android, Mac, iOS, tvOS, and watchOS. Mono focuses primarily on apps that require a small footprint.
 
 It supports all of the currently published .NET Standard versions.
 
@@ -326,7 +326,7 @@ A set of programming technologies that are used together to build and run applic
 
 The collection of APIs that a .NET app or library relies on.
 
-An app or library can target a version of [.NET Standard](#net-standard) (for example, .NET Standard 2.0), which is a specification for a standardized set of APIs across all [.NET implementations](#implementation-of-net). An app or library can also target a version of a specific .NET implementation, in which case it gets access to implementation-specific APIs. For example, an app that targets Xamarin.iOS gets access to Xamarin-provided iOS API wrappers.
+An app or library can target a version of [.NET Standard](#net-standard) (for example, .NET Standard 2.0), which is a specification for a standardized set of APIs across all [.NET implementations](#implementation-of-net). An app or library can also target a version of a specific .NET implementation, in which case it gets access to implementation-specific APIs.
 
 For some target frameworks (for example, [.NET Framework](#net-framework)) the available APIs are defined by the assemblies that a .NET implementation installs on a system, which can include application framework APIs (for example, ASP.NET, WinForms). For package-based target frameworks, the framework APIs are defined by the packages installed in the app or library.
 

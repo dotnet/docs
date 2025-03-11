@@ -152,7 +152,7 @@ public class ExampleGrain : Orleans.Grain, IExampleGrain
         long primaryKey = this.GetPrimaryKeyLong(out string keyExtension);
         Console.WriteLine($"Hello from {keyExtension}");
 
-        Task.CompletedTask;
+        return Task.CompletedTask;
     }
 }
 ```

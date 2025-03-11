@@ -11,6 +11,9 @@ This is a reference for distributed tracing [activities](xref:System.Diagnostics
 
 ## System.Net activities
 
+> [!TIP]
+> For a comprehensive guide about collecting and reporting `System.Net` traces, see [Networking distributed traces in .NET](../../fundamentals/networking/telemetry/metrics.md).
+
 ### HTTP client request
 
 <xref:System.Net.Http.SocketsHttpHandler> and <xref:System.Net.Http.HttpClientHandler> report the HTTP client request activity following the recommendations defined in OpenTelemetry [HTTP Client Semantic Conventions](https://opentelemetry.io/docs/specs/semconv/http/http-spans/#http-client). It describes the HTTP request sent by <xref:System.Net.Http.HttpClient>'s send overloads during the time interval the underlying handler completes the request. Completing the request includes the time up to reading response headers from the network stream. It doesn't include the time spent reading the response body. <xref:System.Net.Http.SocketsHttpHandler> may retry requests, for example, on connection failures or HTTP version downgrades. Retries are not reported as separate *HTTP client request* activities.

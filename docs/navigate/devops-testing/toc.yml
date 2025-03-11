@@ -38,209 +38,221 @@ items:
         href: ../../core/testing/index.md
       - name: Unit testing best practices
         href: ../../core/testing/unit-testing-best-practices.md
-      - name: xUnit
+      - name: Test frameworks
         items:
-          - name: C# unit testing
-            href: ../../core/testing/unit-testing-with-dotnet-test.md
-          - name: F# unit testing
-            href: ../../core/testing/unit-testing-fsharp-with-dotnet-test.md
-          - name: VB unit testing
-            href: ../../core/testing/unit-testing-visual-basic-with-dotnet-test.md
-          - name: Organize a project and test with xUnit
-            href: ../../core/tutorials/testing-with-cli.md
-            displayName: tutorials, cli
-          - name: Mutation Testing
-            href: ../../core/testing/mutation-testing.md
-      - name: NUnit
-        items:
-          - name: C# unit testing
-            href: ../../core/testing/unit-testing-with-nunit.md
-          - name: F# unit testing
-            href: ../../core/testing/unit-testing-fsharp-with-nunit.md
-          - name: VB unit testing
-            href: ../../core/testing/unit-testing-visual-basic-with-nunit.md
-          - name: NUnit runner
-            href: ../../core/testing/unit-testing-nunit-runner-intro.md
-      - name: MSTest
-        items:
-          - name: Overview
-            href: ../../core/testing/unit-testing-mstest-intro.md
-          - name: Migrate MSTest from v1 to v3
-            href: ../../core/testing/unit-testing-mstest-migration-from-v1-to-v3.md
-          - name: Getting started
+          - name: xUnit
+            items:
+              - name: C# unit testing
+                href: ../../core/testing/unit-testing-with-dotnet-test.md
+              - name: F# unit testing
+                href: ../../core/testing/unit-testing-fsharp-with-dotnet-test.md
+              - name: VB unit testing
+                href: ../../core/testing/unit-testing-visual-basic-with-dotnet-test.md
+              - name: Microsoft.Testing.Platform support in xUnit.net v3
+                href: https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
+              - name: Organize a project and test with xUnit
+                href: ../../core/tutorials/testing-with-cli.md
+                displayName: tutorials, cli
+          - name: NUnit
+            items:
+              - name: C# unit testing
+                href: ../../core/testing/unit-testing-with-nunit.md
+              - name: F# unit testing
+                href: ../../core/testing/unit-testing-fsharp-with-nunit.md
+              - name: VB unit testing
+                href: ../../core/testing/unit-testing-visual-basic-with-nunit.md
+              - name: Microsoft.Testing.Platform support (NUnit runner)
+                href: ../../core/testing/unit-testing-nunit-runner-intro.md
+          - name: MSTest
             items:
               - name: Overview
-                href: ../../core/testing/unit-testing-mstest-getting-started.md
-              - name: MSTest SDK
-                href: ../../core/testing/unit-testing-mstest-sdk.md
-          - name: Writing tests
-            items:
-              - name: Overview
-                href: ../../core/testing/unit-testing-mstest-writing-tests.md
-              - name: Examples
-                items:
-                - name: C# example
-                  href: ../../core/testing/unit-testing-with-mstest.md
-                - name: F# example
-                  href: ../../core/testing/unit-testing-fsharp-with-mstest.md
-                - name: VB example
-                  href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
-              - name: Attributes
-                href: ../../core/testing/unit-testing-mstest-writing-tests-attributes.md
-              - name: Assertions
-                href: ../../core/testing/unit-testing-mstest-writing-tests-assertions.md
-              - name: TestContext
-                href: ../../core/testing/unit-testing-mstest-writing-tests-testcontext.md
-          - name: Running tests
-            items:
-              - name: Overview
-                href: ../../core/testing/unit-testing-mstest-running-tests.md
-              - name: MSTest runner
+                href: ../../core/testing/unit-testing-mstest-intro.md
+              - name: Migrate MSTest from v1 to v3
+                href: ../../core/testing/unit-testing-mstest-migration-from-v1-to-v3.md
+              - name: Microsoft.Testing.Platform support (MSTest runner)
                 href: ../../core/testing/unit-testing-mstest-runner-intro.md
-              - name: Configure MSTest
-                href: ../../core/testing/unit-testing-mstest-configure.md
-          - name: Code analysis
-            items:
-              - name: Overview
-                href: ../../core/testing/mstest-analyzers/overview.md
-              - name: Design
+              - name: Getting started
                 items:
                   - name: Overview
-                    href: ../../core/testing/mstest-analyzers/design-rules.md
-                  - name: MSTEST0004
-                    href: ../../core/testing/mstest-analyzers/mstest0004.md
-                  - name: MSTEST0006
-                    href: ../../core/testing/mstest-analyzers/mstest0006.md
-                  - name: MSTEST0015
-                    href: ../../core/testing/mstest-analyzers/mstest0015.md
-                  - name: MSTEST0016
-                    href: ../../core/testing/mstest-analyzers/mstest0016.md
-                  - name: MSTEST0019
-                    href: ../../core/testing/mstest-analyzers/mstest0019.md
-                  - name: MSTEST0020
-                    href: ../../core/testing/mstest-analyzers/mstest0020.md
-                  - name: MSTEST0021
-                    href: ../../core/testing/mstest-analyzers/mstest0021.md
-                  - name: MSTEST0022
-                    href: ../../core/testing/mstest-analyzers/mstest0022.md
-                  - name: MSTEST0025
-                    href: ../../core/testing/mstest-analyzers/mstest0025.md
-                  - name: MSTEST0029
-                    href: ../../core/testing/mstest-analyzers/mstest0029.md
-                  - name: MSTEST0036
-                    href: ../../core/testing/mstest-analyzers/mstest0036.md
-              - name: Performance
+                    href: ../../core/testing/unit-testing-mstest-getting-started.md
+                  - name: MSTest SDK
+                    href: ../../core/testing/unit-testing-mstest-sdk.md
+              - name: Writing tests
                 items:
                   - name: Overview
-                    href: ../../core/testing/mstest-analyzers/performance-rules.md
-                  - name: MSTEST0001
-                    href: ../../core/testing/mstest-analyzers/mstest0001.md
-              - name: Suppression
+                    href: ../../core/testing/unit-testing-mstest-writing-tests.md
+                  - name: Examples
+                    items:
+                    - name: C# example
+                      href: ../../core/testing/unit-testing-with-mstest.md
+                    - name: F# example
+                      href: ../../core/testing/unit-testing-fsharp-with-mstest.md
+                    - name: VB example
+                      href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
+                  - name: Attributes
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-attributes.md
+                  - name: Assertions
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-assertions.md
+                  - name: TestContext
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-testcontext.md
+              - name: Running tests
                 items:
                   - name: Overview
-                    href: ../../core/testing/mstest-analyzers/suppression-rules.md
-                  - name: MSTEST0027
-                    href: ../../core/testing/mstest-analyzers/mstest0027.md
-                  - name: MSTEST0028
-                    href: ../../core/testing/mstest-analyzers/mstest0028.md
-                  - name: MSTEST0033
-                    href: ../../core/testing/mstest-analyzers/mstest0033.md
-              - name: Usage
+                    href: ../../core/testing/unit-testing-mstest-running-tests.md
+                  - name: Configure MSTest
+                    href: ../../core/testing/unit-testing-mstest-configure.md
+              - name: Code analysis
                 items:
                   - name: Overview
-                    href: ../../core/testing/mstest-analyzers/usage-rules.md
-                  - name: MSTEST0002
-                    href: ../../core/testing/mstest-analyzers/mstest0002.md
-                  - name: MSTEST0003
-                    href: ../../core/testing/mstest-analyzers/mstest0003.md
-                  - name: MSTEST0005
-                    href: ../../core/testing/mstest-analyzers/mstest0005.md
-                  - name: MSTEST0007
-                    href: ../../core/testing/mstest-analyzers/mstest0007.md
-                  - name: MSTEST0008
-                    href: ../../core/testing/mstest-analyzers/mstest0008.md
-                  - name: MSTEST0009
-                    href: ../../core/testing/mstest-analyzers/mstest0009.md
-                  - name: MSTEST0010
-                    href: ../../core/testing/mstest-analyzers/mstest0010.md
-                  - name: MSTEST0011
-                    href: ../../core/testing/mstest-analyzers/mstest0011.md
-                  - name: MSTEST0012
-                    href: ../../core/testing/mstest-analyzers/mstest0012.md
-                  - name: MSTEST0013
-                    href: ../../core/testing/mstest-analyzers/mstest0013.md
-                  - name: MSTEST0014
-                    href: ../../core/testing/mstest-analyzers/mstest0014.md
-                  - name: MSTEST0017
-                    href: ../../core/testing/mstest-analyzers/mstest0017.md
-                  - name: MSTEST0018
-                    href: ../../core/testing/mstest-analyzers/mstest0018.md
-                  - name: MSTEST0023
-                    href: ../../core/testing/mstest-analyzers/mstest0023.md
-                  - name: MSTEST0024
-                    href: ../../core/testing/mstest-analyzers/mstest0024.md
-                  - name: MSTEST0026
-                    href: ../../core/testing/mstest-analyzers/mstest0026.md
-                  - name: MSTEST0030
-                    href: ../../core/testing/mstest-analyzers/mstest0030.md
-                  - name: MSTEST0031
-                    href: ../../core/testing/mstest-analyzers/mstest0031.md
-                  - name: MSTEST0032
-                    href: ../../core/testing/mstest-analyzers/mstest0032.md
-                  - name: MSTEST0034
-                    href: ../../core/testing/mstest-analyzers/mstest0034.md
-                  - name: MSTEST0035
-                    href: ../../core/testing/mstest-analyzers/mstest0035.md
-                  - name: MSTEST0037
-                    href: ../../core/testing/mstest-analyzers/mstest0037.md
-      - name: Microsoft Testing Platform
+                    href: ../../core/testing/mstest-analyzers/overview.md
+                  - name: Design
+                    items:
+                      - name: Overview
+                        href: ../../core/testing/mstest-analyzers/design-rules.md
+                      - name: MSTEST0004
+                        href: ../../core/testing/mstest-analyzers/mstest0004.md
+                      - name: MSTEST0006
+                        href: ../../core/testing/mstest-analyzers/mstest0006.md
+                      - name: MSTEST0015
+                        href: ../../core/testing/mstest-analyzers/mstest0015.md
+                      - name: MSTEST0016
+                        href: ../../core/testing/mstest-analyzers/mstest0016.md
+                      - name: MSTEST0019
+                        href: ../../core/testing/mstest-analyzers/mstest0019.md
+                      - name: MSTEST0020
+                        href: ../../core/testing/mstest-analyzers/mstest0020.md
+                      - name: MSTEST0021
+                        href: ../../core/testing/mstest-analyzers/mstest0021.md
+                      - name: MSTEST0022
+                        href: ../../core/testing/mstest-analyzers/mstest0022.md
+                      - name: MSTEST0025
+                        href: ../../core/testing/mstest-analyzers/mstest0025.md
+                      - name: MSTEST0029
+                        href: ../../core/testing/mstest-analyzers/mstest0029.md
+                      - name: MSTEST0036
+                        href: ../../core/testing/mstest-analyzers/mstest0036.md
+                  - name: Performance
+                    items:
+                      - name: Overview
+                        href: ../../core/testing/mstest-analyzers/performance-rules.md
+                      - name: MSTEST0001
+                        href: ../../core/testing/mstest-analyzers/mstest0001.md
+                  - name: Suppression
+                    items:
+                      - name: Overview
+                        href: ../../core/testing/mstest-analyzers/suppression-rules.md
+                      - name: MSTEST0027
+                        href: ../../core/testing/mstest-analyzers/mstest0027.md
+                      - name: MSTEST0028
+                        href: ../../core/testing/mstest-analyzers/mstest0028.md
+                      - name: MSTEST0033
+                        href: ../../core/testing/mstest-analyzers/mstest0033.md
+                  - name: Usage
+                    items:
+                      - name: Overview
+                        href: ../../core/testing/mstest-analyzers/usage-rules.md
+                      - name: MSTEST0002
+                        href: ../../core/testing/mstest-analyzers/mstest0002.md
+                      - name: MSTEST0003
+                        href: ../../core/testing/mstest-analyzers/mstest0003.md
+                      - name: MSTEST0005
+                        href: ../../core/testing/mstest-analyzers/mstest0005.md
+                      - name: MSTEST0007
+                        href: ../../core/testing/mstest-analyzers/mstest0007.md
+                      - name: MSTEST0008
+                        href: ../../core/testing/mstest-analyzers/mstest0008.md
+                      - name: MSTEST0009
+                        href: ../../core/testing/mstest-analyzers/mstest0009.md
+                      - name: MSTEST0010
+                        href: ../../core/testing/mstest-analyzers/mstest0010.md
+                      - name: MSTEST0011
+                        href: ../../core/testing/mstest-analyzers/mstest0011.md
+                      - name: MSTEST0012
+                        href: ../../core/testing/mstest-analyzers/mstest0012.md
+                      - name: MSTEST0013
+                        href: ../../core/testing/mstest-analyzers/mstest0013.md
+                      - name: MSTEST0014
+                        href: ../../core/testing/mstest-analyzers/mstest0014.md
+                      - name: MSTEST0017
+                        href: ../../core/testing/mstest-analyzers/mstest0017.md
+                      - name: MSTEST0018
+                        href: ../../core/testing/mstest-analyzers/mstest0018.md
+                      - name: MSTEST0023
+                        href: ../../core/testing/mstest-analyzers/mstest0023.md
+                      - name: MSTEST0024
+                        href: ../../core/testing/mstest-analyzers/mstest0024.md
+                      - name: MSTEST0026
+                        href: ../../core/testing/mstest-analyzers/mstest0026.md
+                      - name: MSTEST0030
+                        href: ../../core/testing/mstest-analyzers/mstest0030.md
+                      - name: MSTEST0031
+                        href: ../../core/testing/mstest-analyzers/mstest0031.md
+                      - name: MSTEST0032
+                        href: ../../core/testing/mstest-analyzers/mstest0032.md
+                      - name: MSTEST0034
+                        href: ../../core/testing/mstest-analyzers/mstest0034.md
+                      - name: MSTEST0035
+                        href: ../../core/testing/mstest-analyzers/mstest0035.md
+                      - name: MSTEST0037
+                        href: ../../core/testing/mstest-analyzers/mstest0037.md
+                      - name: MSTEST0038
+                        href: ../../core/testing/mstest-analyzers/mstest0038.md
+                      - name: MSTEST0039
+                        href: ../../core/testing/mstest-analyzers/mstest0039.md
+                      - name: MSTEST0040
+                        href: ../../core/testing/mstest-analyzers/mstest0040.md
+                      - name: MSTEST0041
+                        href: ../../core/testing/mstest-analyzers/mstest0041.md
+      - name: Test platforms
         items:
-          - name: Overview
-            href: ../../core/testing/unit-testing-platform-intro.md
-          - name: FAQ
-            href: ../../core/testing/unit-testing-platform-faq.md
-          - name: Comparison with VSTest
-            href: ../../core/testing/unit-testing-platform-vs-vstest.md
-          - name: Configure the test platform
-            href: ../../core/testing/unit-testing-platform-config.md
-          - name: Extensions
+          - name: Microsoft Testing Platform
             items:
               - name: Overview
-                href: ../../core/testing/unit-testing-platform-extensions.md
-              - name: Code Coverage
-                href: ../../core/testing/unit-testing-platform-extensions-code-coverage.md
-              - name: Diagnostics
-                href: ../../core/testing/unit-testing-platform-extensions-diagnostics.md
-              - name: Fakes
-                href: ../../core/testing/unit-testing-platform-extensions-fakes.md
-              - name: Hosting
-                href: ../../core/testing/unit-testing-platform-extensions-hosting.md
-              - name: Output
-                href: ../../core/testing/unit-testing-platform-extensions-output.md
-              - name: Policy
-                href: ../../core/testing/unit-testing-platform-extensions-policy.md
-              - name: Test Reports
-                href: ../../core/testing/unit-testing-platform-extensions-test-reports.md
-              - name: VSTest Bridge
-                href: ../../core/testing/unit-testing-platform-extensions-vstest-bridge.md
-          - name: Diagnostics overview
-            href: ../../core/testing/unit-testing-platform-diagnostics.md
-          - name: Optional telemetry
-            href: ../../core/testing/unit-testing-platform-telemetry.md
-          - name: Known exit codes
-            href: ../../core/testing/unit-testing-platform-exit-codes.md
-          - name: Integration with dotnet test
-            href: ../../core/testing/unit-testing-platform-integration-dotnet-test.md
-          - name: Testing platform Architecture
-            items:
-              - name: Overview
-                href: ../../core/testing/unit-testing-platform-architecture.md
-              - name: Capabilities
-                href: ../../core/testing/unit-testing-platform-architecture-capabilities.md
+                href: ../../core/testing/microsoft-testing-platform-intro.md
+              - name: FAQ
+                href: ../../core/testing/microsoft-testing-platform-faq.md
+              - name: Comparison with VSTest
+                href: ../../core/testing/microsoft-testing-platform-vs-vstest.md
+              - name: Configure the test platform
+                href: ../../core/testing/microsoft-testing-platform-config.md
               - name: Extensions
-                href: ../../core/testing/unit-testing-platform-architecture-extensions.md
-              - name: Services
-                href: ../../core/testing/unit-testing-platform-architecture-services.md
+                items:
+                  - name: Overview
+                    href: ../../core/testing/microsoft-testing-platform-extensions.md
+                  - name: Code Coverage
+                    href: ../../core/testing/microsoft-testing-platform-extensions-code-coverage.md
+                  - name: Diagnostics
+                    href: ../../core/testing/microsoft-testing-platform-extensions-diagnostics.md
+                  - name: Fakes
+                    href: ../../core/testing/microsoft-testing-platform-extensions-fakes.md
+                  - name: Hosting
+                    href: ../../core/testing/microsoft-testing-platform-extensions-hosting.md
+                  - name: Output
+                    href: ../../core/testing/microsoft-testing-platform-extensions-output.md
+                  - name: Policy
+                    href: ../../core/testing/microsoft-testing-platform-extensions-policy.md
+                  - name: Test Reports
+                    href: ../../core/testing/microsoft-testing-platform-extensions-test-reports.md
+                  - name: VSTest Bridge
+                    href: ../../core/testing/microsoft-testing-platform-extensions-vstest-bridge.md
+              - name: Diagnostics overview
+                href: ../../core/testing/microsoft-testing-platform-diagnostics.md
+              - name: Optional telemetry
+                href: ../../core/testing/microsoft-testing-platform-telemetry.md
+              - name: Known exit codes
+                href: ../../core/testing/microsoft-testing-platform-exit-codes.md
+              - name: Integration with dotnet test
+                href: ../../core/testing/microsoft-testing-platform-integration-dotnet-test.md
+              - name: Testing platform Architecture
+                items:
+                  - name: Overview
+                    href: ../../core/testing/microsoft-testing-platform-architecture.md
+                  - name: Capabilities
+                    href: ../../core/testing/microsoft-testing-platform-architecture-capabilities.md
+                  - name: Extensions
+                    href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
+                  - name: Services
+                    href: ../../core/testing/microsoft-testing-platform-architecture-services.md
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

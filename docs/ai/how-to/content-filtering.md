@@ -49,4 +49,4 @@ The response was filtered due to the prompt triggering Azure OpenAI's content ma
 
 * [Create and assign a content filter](/azure/ai-services/openai/how-to/content-filters)
 * [Content Filtering concepts](/azure/ai-services/openai/concepts/content-filter)
-* [Create a chat app](../quickstarts/quickstart-openai-summarize-text.md)
+* [Create a chat app](/dotnet/ai/quickstarts/prompt-model)

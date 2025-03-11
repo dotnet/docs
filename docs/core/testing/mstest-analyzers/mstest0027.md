@@ -26,4 +26,4 @@ Suppress the [VSTHRD200: Use Async suffix for async methods](https://github.com/
 
 ## When to disable suppressor
 
-You can disable this suppressor if you want to follow the `Async` suffix pattern also for your test methods.
+.NET suppressors cannot be disabled.

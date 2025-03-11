@@ -1,7 +1,7 @@
 ---
 title: Top-level statements tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
-ms.date: 11/22/2024
+ms.date: 01/15/2025
 ---
 # Tutorial: Explore ideas using top-level statements to build code as you learn
 
@@ -47,7 +47,7 @@ Console.WriteLine("Hello, World!");
 
 [!INCLUDE [csharp10-templates](../../../includes/csharp10-templates.md)]
 
-This feature simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
+This feature simplifies your exploration of new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
 
 Top-level statements are executed in the order they appear in the file. Top-level statements can only be used in one source file in your application. The compiler generates an error if you use them in more than one file.
 
@@ -69,7 +69,7 @@ You can test your code by running the following `dotnet run` command:
 dotnet run -- Should I use top level statements in all my programs?
 ```
 
-The arguments after the `--` on the command line are passed to the program. You can see the type of the `args` variable, because that's printed to the console:
+The arguments after the `--` on the command line are passed to the program. You can see the type of the `args` variable printed to the console:
 
 ```console
 System.String[]
@@ -99,6 +99,8 @@ dotnet run -- Should I use top level statements in all my programs?
 Should I use top level statements in all my programs?
 Better not tell you now.
 ```
+
+The code to generate an answer includes a variable declaration in your top level statements. The compiler includes that declaration in the compiler generated `Main` method. Because these variable declarations are local variables, you can't include the `static` modifier.
 
 This code answers the questions, but let's add one more feature. You'd like your question app to simulate thinking about the answer. You can do that by adding a bit of ASCII animation, and pausing while working. Add the following code after the line that echoes the question:
 

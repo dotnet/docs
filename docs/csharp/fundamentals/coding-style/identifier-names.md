@@ -123,7 +123,7 @@ public record PhysicalAddress(
     string ZipCode);
 ```
 
-For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition).
+For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition).
 
 ### Camel case
 

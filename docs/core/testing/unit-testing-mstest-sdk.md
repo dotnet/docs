@@ -64,20 +64,20 @@ When you `build` the project, all the needed components are restored and install
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-with-mstest.md).
 
 > [!IMPORTANT]
-> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
+> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./microsoft-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
 
 ## Select the runner
 
-By default, MSTest SDK relies on [MSTest runner](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
+By default, MSTest SDK relies on [Microsoft.Testing.Platform](./unit-testing-mstest-runner-intro.md), but you can switch to [VSTest](/visualstudio/test/vstest-console-options) by adding the property `<UseVSTest>true</UseVSTest>`.
 
-## Extend MSTest runner
+## Extend Microsoft.Testing.Platform
 
-You can customize `MSTest runner` experience through a set of [NuGet package extensions](./unit-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
+You can customize `Microsoft.Testing.Platform` experience through a set of [NuGet package extensions](./microsoft-testing-platform-extensions.md). To simplify and improve this experience, MSTest SDK introduces two features:
 
-- [MSTest runner profile](#mstest-runner-profile)
+- [Microsoft.Testing.Platform profile](#microsofttestingplatform-profile)
 - [Enable or disable extensions](#enable-or-disable-extensions)
 
-### MSTest runner profile
+### Microsoft.Testing.Platform profile
 
 The concept of *profiles* allows you to select the default set of configurations and extensions that will be applied to your test project.
 
@@ -89,27 +89,27 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
 
   Enables the following extensions:
 
-  * [Code Coverage](./unit-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
+  * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
 
-  * [Trx Report](./unit-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
+  * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
   
 * `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
 
   Enables the following extensions:
 
-  * [Code Coverage](./unit-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
+  * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
 
-  * [Crash Dump](./unit-testing-platform-extensions-diagnostics.md#crash-dump)
+  * [Crash Dump](./microsoft-testing-platform-extensions-diagnostics.md#crash-dump)
 
-  * [Fakes](./unit-testing-platform-extensions-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
+  * [Fakes](./microsoft-testing-platform-extensions-fakes.md#fakes-extension) (MSTest.Sdk 3.7.0+)
 
-  * [Hang Dump](./unit-testing-platform-extensions-diagnostics.md#hang-dump)
+  * [Hang Dump](./microsoft-testing-platform-extensions-diagnostics.md#hang-dump)
 
-  * [Hot Reload](./unit-testing-platform-extensions-hosting.md#hot-reload)
+  * [Hot Reload](./microsoft-testing-platform-extensions-hosting.md#hot-reload)
 
-  * [Retry](./unit-testing-platform-extensions-policy.md#retry)
+  * [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
   
-  * [Trx Report](./unit-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
+  * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
 
 Here's a full example, using the `None` profile:
 
@@ -155,7 +155,7 @@ For example, to enable the crash dump extension (NuGet package [Microsoft.Testin
 </Project>
 ```
 
-For a list of all available extensions, see [Microsoft.Testing.Platform extensions](./unit-testing-platform-extensions.md).
+For a list of all available extensions, see [Microsoft.Testing.Platform extensions](./microsoft-testing-platform-extensions.md).
 
 > [!WARNING]
 > It's important to review the licensing terms for each extension as they might vary.
@@ -275,7 +275,7 @@ Finally, based on the extensions profile you're using, you can also remove some 
 
 ### Update your CI
 
-Once you've updated your projects, if you're using `MSTest runner` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./unit-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode).
+Once you've updated your projects, if you're using `Microsoft.Testing.Platform` (default) and if you rely on `dotnet test` to run your tests, you must update your CI configuration. For more information and to guide your understanding of all the required changes, see [dotnet test integration](./microsoft-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode).
 
 Here's an example update when using the `DotNetCoreCLI` task in Azure DevOps:
 

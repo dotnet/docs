@@ -1,7 +1,7 @@
 ---
 title: "How to serialize JSON in C#"
 description: "Learn how to use the System.Text.Json namespace to serialize to JSON in .NET. Includes sample code."
-ms.date: 9/04/2024
+ms.date: 02/11/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ms.topic: how-to
 ms.collection: ce-skilling-ai-copilot
-ms.custom: vs-copilot-horizontal
+ms.custom: copilot-scenario-highlight
 adobe-target: true
 ---
 

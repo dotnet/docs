@@ -1,7 +1,7 @@
 ---
 title: How to create a document with namespaces in C# - LINQ to XML
 description: Use the XNamespace object in C# to create documents that have default namespaces or namespaces with a prefix.
-ms.date: 07/20/2015
+ms.date: 01/23/2025
 ms.topic: how-to
 ---
 
@@ -60,6 +60,8 @@ The following example shows the creation of a document that contains two namespa
 
 By including namespace attributes in the root element, the namespaces are serialized so that `http://www.adventure-works.com` is the default namespace, and `www.fourthcoffee.com` is serialized with a prefix of `fc`. To create an attribute that declares a default namespace, you create an attribute with the name `xmlns`, without a namespace. The value of the attribute is the default namespace URI.
 
+If a default namespace declaration is in scope, it applies to child `XElement` objects by prefixing their local names with the corresponding `XNamespace` object. On the other hand, default namespace declarations do not apply directly to attribute names. So, `XAttribute` objects in the default namespace are defined by *not* prefixing their local name with the corresponding `XNamespace` object.
+
 ```csharp
 // The http://www.adventure-works.com namespace is forced to be the default namespace.
 XNamespace aw = "http://www.adventure-works.com";
@@ -70,8 +72,14 @@ XElement root = new XElement(aw + "Root",
     new XElement(fc + "Child",
         new XElement(aw + "DifferentChild", "other content")
     ),
-    new XElement(aw + "Child2", "c2 content"),
-    new XElement(fc + "Child3", "c3 content")
+    new XElement(aw + "Child2", "c2 content",
+        new XAttribute("DefaultNs", "default namespace"),
+        new XAttribute(fc + "PrefixedNs", "prefixed namespace")
+    ),
+    new XElement(fc + "Child3", "c3 content",
+        new XAttribute("DefaultNs", "default namespace"),
+        new XAttribute(fc + "PrefixedNs", "prefixed namespace")
+    )
 );
 Console.WriteLine(root);
 ```
@@ -83,8 +91,9 @@ This example produces the following output:
   <fc:Child>
     <DifferentChild>other content</DifferentChild>
   </fc:Child>
-  <Child2>c2 content</Child2>
-  <fc:Child3>c3 content</fc:Child3>
+  <Child2 DefaultNs="default namespace" fc:PrefixedNs="prefixed namespace">c2 content</Child2>
+  <fc:Child3 DefaultNs="default namespace" fc:PrefixedNs="prefixed namespace">c3 content</fc:Child3>
+
 </Root>
 ```
 

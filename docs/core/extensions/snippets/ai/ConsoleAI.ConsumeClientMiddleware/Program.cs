@@ -20,7 +20,7 @@ using var app = builder.Build();
 // Elsewhere in the app
 var chatClient = app.Services.GetRequiredService<IChatClient>();
 
-Console.WriteLine(await chatClient.CompleteAsync("What is AI?"));
+Console.WriteLine(await chatClient.GetResponseAsync("What is AI?"));
 
 app.Run();
 // </program>

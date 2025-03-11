@@ -8,7 +8,7 @@ helpviewer_keywords:
 ---
 # .NET runtime thread pool events
 
-The events described in this article collect information about worker and I/O threads in the threadpool. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information about worker and I/O threads in the threadpool. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 ## IOThreadCreate_V1 event
 

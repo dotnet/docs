@@ -22,7 +22,7 @@ The downside to strong naming is that .NET Framework on Windows enables strict l
 </configuration>
 ```
 
-When .NET developers complain about strong naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to .NET Framework. .NET 5+, .NET Core, Xamarin, UWP, and most other .NET implementations don't have strict assembly loading, which is the main downside of strong naming.
+When .NET developers complain about strong naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to .NET Framework. .NET 5+, .NET Core, UWP, and most other .NET implementations don't have strict assembly loading, which is the main downside of strong naming.
 
 One important aspect of strong naming on .NET Framework is that it's viral: a strong-named assembly can only reference other strong-named assemblies. If your library isn't strong named, then .NET Framework apps and libraries that need strong naming can't use it.
 

@@ -159,6 +159,23 @@ Discriminated unions work well if the nodes in the tree are heterogeneous. In th
 
 When this code is executed, the value of `result` is 5.
 
+## Mutually Recursive Discriminated Unions
+
+Discriminated unions in F# can be mutually recursive, meaning that multiple union types can reference each other in a recursive manner. This is useful when modeling hierarchical or interconnected structures. To define mutually recursive discriminated unions, use the `and` keyword.
+
+For example, consider an abstract syntax tree (AST) representation where expressions can include statements, and statements can contain expressions:
+
+```fsharp
+type Expression =
+    | Literal of int
+    | Variable of string
+    | Operation of string * Expression * Expression
+and Statement =
+    | Assign of string * Expression
+    | Sequence of Statement list
+    | IfElse of Expression * Statement * Statement
+```
+
 ## Members
 
 It is possible to define members on discriminated unions. The following example shows how to define a property and implement an interface:

@@ -304,7 +304,7 @@ let foods = [ "Apple"; "Banana"; "Carrot"; "Donut"; "Egg" ]
 let today'sMenu = foods |> List.randomSample 3 // [ "Donut"; "Apple"; "Egg" ]
 ```
 
-For a full list of functions and their variants, see ([RFC #1135](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1135-random-functions-for-collections.md)).
+For a full list of functions and their variants, see ([RFC #1135](https://github.com/fsharp/fslang-design/blob/main/FSharp.Core-9.0/FS-1135-random-functions-for-collections.md)).
 
 ### Parameterless constructor for `CustomOperationAttribute`
 

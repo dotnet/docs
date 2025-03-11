@@ -59,7 +59,7 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 .NET Core and .NET 5+ releases have a single product version, that is, there's no separate CLR version. For a list of .NET Core versions, see [Download .NET Core](https://dotnet.microsoft.com/download/dotnet).
 
-However, the .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../framework/migration-guide/versions-and-dependencies.md).
+However, the .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../framework/install/versions-and-dependencies.md).
 
 ## Related articles
 

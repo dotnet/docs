@@ -21,3 +21,5 @@ Identifier | Name | Description
 [MSTEST0021](mstest0021.md) | PreferDisposeOverTestCleanupAnalyzer | Prefer Dispose over TestCleanup methods
 [MSTEST0022](mstest0022.md) | PreferTestCleanupOverDisposeAnalyzer | Prefer TestCleanup over Dispose methods
 [MSTEST0025](mstest0025.md) | PreferAssertFailOverAlwaysFalseConditionsAnalyzer | Use 'Assert.Fail' instead of an always-failing assert
+[MSTEST0029](mstest0029.md) | PublicMethodShouldBeTestMethod | A `public` method of a class marked with `[TestClass]` should be a test method (marked with `[TestMethod]`). The rule ignores methods that are marked with `[TestInitialize]`, or `[TestCleanup]` attributes.
+[MSTEST0036](mstest0036.md) | DoNotUseShadowingAnalyzer | Shadowing test members could cause testing issues (such as NRE).

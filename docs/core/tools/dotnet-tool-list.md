@@ -78,11 +78,11 @@ The `dotnet tool list` command provides a way for you to list .NET global, tool-
 
 - **`dotnet tool list -g dotnetsay`**
 
-  Lists the global tool with the package id [dotnetsay](https://www.nuget.org/packages/dotnetsay/)
+  Lists the global tool with the package ID [dotnetsay](https://www.nuget.org/packages/dotnetsay/)
 
 - **`dotnet tool list dotnetsay`**
 
-  Lists the local tool with the package id [dotnetsay](https://www.nuget.org/packages/dotnetsay/)
+  Lists the local tool with the package ID [dotnetsay](https://www.nuget.org/packages/dotnetsay/)
 
 ## See also
 

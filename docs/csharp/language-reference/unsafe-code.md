@@ -1,7 +1,7 @@
 ---
 title: "Unsafe code, pointers to data, and function pointers"
 description: Learn about unsafe code, pointers, and function pointers. C# requires you to declare an unsafe context to use these features to directly manipulate memory or function pointers (unmanaged delegates).
-ms.date: 04/01/2021
+ms.date: 02/06/2025
 f1_keywords:
   - "functionPointer_CSharpKeyword"
 helpviewer_keywords: 
@@ -12,32 +12,31 @@ helpviewer_keywords:
   - "unsafe code [C#]"
   - "C# language, pointers"
   - "pointers [C#], about pointers"
-ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
 ---
 # Unsafe code, pointer types, and function pointers
 
 Most of the C# code you write is "verifiably safe code." *Verifiably safe code* means .NET tools can verify that the code is safe. In general, safe code doesn't directly access memory using pointers. It also doesn't allocate raw memory. It creates managed objects instead.
 
-C# supports an [`unsafe`](keywords/unsafe.md) context, in which you may write *unverifiable* code. In an `unsafe` context, code may use pointers, allocate and free blocks of memory, and call methods using function pointers. Unsafe code in C# isn't necessarily dangerous; it's just code whose safety cannot be verified.
+C# supports an [`unsafe`](keywords/unsafe.md) context, in which you can write *unverifiable* code. In an `unsafe` context, code can use pointers, allocate and free blocks of memory, and call methods using function pointers. Unsafe code in C# isn't necessarily dangerous; it's just code whose safety can't be verified.
 
 Unsafe code has the following properties:
 
 - Methods, types, and code blocks can be defined as unsafe.
-- In some cases, unsafe code may increase an application's performance by removing array bounds checks.
+- In some cases, unsafe code can increase an application's performance by removing array bounds checks.
 - Unsafe code is required when you call native functions that require pointers.
 - Using unsafe code introduces security and stability risks.
 - The code that contains unsafe blocks must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 ## Pointer types
 
-In an unsafe context, a type may be a pointer type, in addition to a value type, or a reference type. A pointer type declaration takes one of the following forms:
+In an unsafe context, a type can be a pointer type, in addition to a value type, or a reference type. A pointer type declaration takes one of the following forms:
 
 ``` csharp
 type* identifier;
 void* identifier; //allowed but not recommended
 ```
 
-The type specified before the `*` in a pointer type is called the **referent type**. Only an [unmanaged type](builtin-types/unmanaged-types.md) can be a referent type.
+The type specified before the `*` in a pointer type is called the **referent type**.
 
 Pointer types don't inherit from [object](builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing don't support pointers. However, you can convert between different pointer types and between pointer types and integral types.
 
@@ -48,7 +47,7 @@ int* p1, p2, p3;   // Ok
 int *p1, *p2, *p3;   // Invalid in C#
 ```
 
-A pointer can't point to a reference or to a [struct](builtin-types/struct.md) that contains references, because an object reference can be garbage collected even if a pointer is pointing to it. The garbage collector doesn't keep track of whether an object is being pointed to by any pointer types.
+The garbage collector doesn't keep track of whether an object is being pointed to by any pointer types. If the referrant is an object in the managed heap (including local variables captured by lambda expressions or anonymous delegates), the object must be [pinned](./statements/fixed.md) for as long as the pointer is used.
 
 The value of the pointer variable of type `MyType*` is the address of a variable of type `MyType`. The following are examples of pointer type declarations:
 
@@ -66,7 +65,7 @@ int* myVariable;
 
 The expression `*myVariable` denotes the `int` variable found at the address contained in `myVariable`.
 
-There are several examples of pointers in the articles on the [`fixed` statement](statements/fixed.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
+There are several examples of pointers in the articles on the [`fixed` statement](statements/fixed.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer. You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option set.
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="5":::
 
@@ -74,21 +73,21 @@ You can't apply the indirection operator to a pointer of type `void*`. However, 
 
 A pointer can be `null`. Applying the indirection operator to a null pointer causes an implementation-defined behavior.
 
-Passing pointers between methods can cause undefined behavior. Consider a method that returns a pointer to a local variable through an `in`, `out`, or `ref` parameter or as the function result. If the pointer was set in a fixed block, the variable to which it points may no longer be fixed.
+Passing pointers between methods can cause undefined behavior. Consider a method that returns a pointer to a local variable through an `in`, `out`, or `ref` parameter or as the function result. If the pointer was set in a fixed block, the variable to which it points might no longer be fixed.
 
 The following table lists the operators and statements that can operate on pointers in an unsafe context:
 
-|Operator/Statement|Use|
-|-------------------------|---------|
-|`*`|Performs pointer indirection.|
-|`->`|Accesses a member of a struct through a pointer.|
-|`[]`|Indexes a pointer.|
-|`&`|Obtains the address of a variable.|
-|`++` and `--`|Increments and decrements pointers.|
-|`+` and `-`|Performs pointer arithmetic.|
-|`==`, `!=`, `<`, `>`, `<=`, and `>=`|Compares pointers.|
-|[`stackalloc`](operators/stackalloc.md)|Allocates memory on the stack.|
-|[`fixed` statement](statements/fixed.md)|Temporarily fixes a variable so that its address may be found.|
+| Operator/Statement                       | Use                                                            |
+|------------------------------------------|----------------------------------------------------------------|
+| `*`                                      | Performs pointer indirection.                                  |
+| `->`                                     | Accesses a member of a struct through a pointer.               |
+| `[]`                                     | Indexes a pointer.                                             |
+| `&`                                      | Obtains the address of a variable.                             |
+| `++` and `--`                            | Increments and decrements pointers.                            |
+| `+` and `-`                              | Performs pointer arithmetic.                                   |
+| `==`, `!=`, `<`, `>`, `<=`, and `>=`     | Compares pointers.                                             |
+| [`stackalloc`](operators/stackalloc.md)  | Allocates memory on the stack.                                 |
+| [`fixed` statement](statements/fixed.md) | Temporarily fixes a variable so that its address can be found. |
 
 For more information about pointer-related operators, see [Pointer-related operators](operators/pointer-related-operators.md).
 
@@ -116,7 +115,7 @@ A struct can contain an embedded array in unsafe code. In the following example,
 
 :::code language="csharp" source="snippets/unsafe-code/FixedKeywordExamples.cs" ID="7":::
 
-The size of the 128 element `char` array is 256 bytes. Fixed-size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This array size is the same even when char buffers are marshalled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
+The size of the 128 element `char` array is 256 bytes. Fixed-size [char](builtin-types/char.md) buffers always take 2 bytes per character, regardless of the encoding. This array size is the same even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
 
 The  preceding example demonstrates accessing `fixed` fields without pinning. Another common fixed-size array is the [bool](builtin-types/bool.md) array. The elements in a `bool` array are always 1 byte in size. `bool` arrays aren't appropriate for creating bit arrays or buffers.
 
@@ -158,7 +157,7 @@ Fixed-size buffers differ from regular arrays in the following ways:
 
 The following example uses pointers to copy bytes from one array to another.
 
-This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](statements/fixed.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that they will not be moved by garbage collection. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
+This example uses the [unsafe](keywords/unsafe.md) keyword, which enables you to use pointers in the `Copy` method. The [fixed](statements/fixed.md) statement is used to declare pointers to the source and destination arrays. The `fixed` statement *pins* the location of the source and destination arrays in memory so that garbage collection doesn't move the arrays. The memory blocks for the arrays are unpinned when the `fixed` block is completed. Because the `Copy` method in this example uses the `unsafe` keyword, it must be compiled with the [**AllowUnsafeBlocks**](compiler-options/language.md#allowunsafeblocks) compiler option.
 
 This example accesses the elements of both arrays using indices rather than a second unmanaged pointer. The declaration of the `pSource` and `pTarget` pointers pins the arrays.
 
@@ -168,7 +167,7 @@ This example accesses the elements of both arrays using indices rather than a se
 
 C# provides [`delegate`](builtin-types/reference-types.md#the-delegate-type) types to define safe function pointer objects. Invoking a delegate involves instantiating a type derived from <xref:System.Delegate?displayProperty=nameWithType> and making a virtual method call to its `Invoke` method. This virtual call uses the `callvirt` IL instruction. In performance critical code paths, using the `calli` IL instruction is more efficient.
 
-You can define a function pointer using the `delegate*` syntax. The compiler will call the function using the `calli` instruction rather than instantiating a `delegate` object and calling `Invoke`. The following code declares two methods that use a `delegate` or a `delegate*` to combine two objects of the same type. The first method uses a <xref:System.Func%603?displayProperty=nameWithType> delegate type. The second method uses a `delegate*` declaration with the same parameters and return type:
+You can define a function pointer using the `delegate*` syntax. The compiler calls the function using the `calli` instruction rather than instantiating a `delegate` object and calling `Invoke`. The following code declares two methods that use a `delegate` or a `delegate*` to combine two objects of the same type. The first method uses a <xref:System.Func%603?displayProperty=nameWithType> delegate type. The second method uses a `delegate*` declaration with the same parameters and return type:
 
 :::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UseDelegateOrPointer":::
 
@@ -184,7 +183,7 @@ The preceding code illustrates several of the rules on the function accessed as 
 
 The syntax has parallels with declaring `delegate` types and using pointers. The `*` suffix on `delegate` indicates the declaration is a *function pointer*. The `&` when assigning a method group to a function pointer indicates the operation takes the address of the method.
 
-You can specify the calling convention for a `delegate*` using the keywords `managed` and `unmanaged`. In addition, for `unmanaged` function pointers, you can specify the calling convention. The following declarations show examples of each. The first declaration uses the `managed` calling convention, which is the default. The next four use an `unmanaged` calling convention. Each specifies one of the ECMA 335 calling conventions: `Cdecl`, `Stdcall`, `Fastcall`, or `Thiscall`. The last declaration uses the `unmanaged` calling convention, instructing the CLR to pick the default calling convention for the platform. The CLR will choose the calling convention at run time.
+You can specify the calling convention for a `delegate*` using the keywords `managed` and `unmanaged`. In addition, for `unmanaged` function pointers, you can specify the calling convention. The following declarations show examples of each. The first declaration uses the `managed` calling convention, which is the default. The next four use an `unmanaged` calling convention. Each specifies one of the ECMA 335 calling conventions: `Cdecl`, `Stdcall`, `Fastcall`, or `Thiscall`. The last declaration uses the `unmanaged` calling convention, instructing the CLR to pick the default calling convention for the platform. The CLR chooses the calling convention at run time.
 
 :::code language="csharp" source="snippets/unsafe-code/FunctionPointers.cs" ID="UnmanagedFunctionPointers":::
 

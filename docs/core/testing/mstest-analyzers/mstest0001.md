@@ -44,3 +44,19 @@ To fix a violation of this rule, add `[assembly: Parallelize]` or `[assembly: Do
 ## When to suppress warnings
 
 Do not suppress a warning from this rule. Many libraries can benefit from a massive performance boost when enabling parallelization. When the test application is designed in a way that prevents parallelization, having the attribute explicitly set helps new developers to understand the limitations of the library.
+
+## Suppress a warning
+
+Because this rule is reported at the compilation level and not in a *.cs* or *.vb* source file, you can't suppress violations to this rule inline or via an `.editorconfig` file.
+
+To disable the rule for a project, add `<NoWarn>$(NoWarn);MSTEST0001</NoWarn>` to the project file or `Directory.Build.props` file.
+
+To control the severity of this rule, you can do it only via a `.globalconfig` file. For more information, see [Configuration files](../../../fundamentals/code-analysis/configuration-files.md#global-analyzerconfig).
+
+```ini
+is_global = true
+
+dotnet_diagnostic.MSTEST0001.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

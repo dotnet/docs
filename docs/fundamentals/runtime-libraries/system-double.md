@@ -1,7 +1,7 @@
 ---
 title: System.Double struct
 description: Learn about the System.Double struct.
-ms.date: 12/31/2023
+ms.date: 02/21/2025
 dev_langs:
   - CSharp
   - FSharp
@@ -49,7 +49,7 @@ The limited precision of a floating-point number has several consequences:
 
 - A mathematical or comparison operation that uses a floating-point number might not yield the same result if a decimal number is used, because the binary floating-point number might not equal the decimal number. A previous example illustrated this by displaying the result of multiplying .1 by 10 and adding .1 times.
 
-  When accuracy in numeric operations with fractional values is important, you can use the <xref:System.Decimal> rather than the <xref:System.Double> type. When accuracy in numeric operations with integral values beyond the range of the <xref:System.Int64> or <xref:System.UInt64> types is important, use the <xref:System.Numerics.BigInteger> type.
+  When accuracy in numeric operations with fractional values is important, you can use the <xref:System.Decimal> rather than the <xref:System.Double> type. When accuracy in numeric operations with integral values beyond the range of the <xref:System.Int128> <xref:System.UInt128> types is important, use the <xref:System.Numerics.BigInteger> type.
 
 - A value might not round-trip if a floating-point number is involved. A value is said to round-trip if an operation converts an original floating-point number to another form, an inverse operation transforms the converted form back to a floating-point number, and the final floating-point number is not equal to the original floating-point number. The round trip might fail because one or more least significant digits are lost or changed in a conversion. In the following example, three <xref:System.Double> values are converted to strings and saved in a file. As the output shows, however, even though the values appear to be identical, the restored values are not equal to the original values.
 

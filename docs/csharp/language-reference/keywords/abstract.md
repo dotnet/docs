@@ -74,7 +74,21 @@ BaseClass bc = new BaseClass();   // Error
 ```  
   
 You will get an error saying that the compiler cannot create an instance of the abstract class 'BaseClass'.  
-  
+
+Nonetheless, it is possible to use an abstract class constructor, as in the  example below
+
+## Example 3
+
+[!code-csharp[csrefKeywordsModifiers#27](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#27)]
+
+The `Shape` class is declared `abstract`, which means it cannot be instantiated directly. Instead, it serves as a blueprint for other classes.
+
+- Even though you can't create objects of an abstract class, it can still have a constructor.  This constructor is typically `protected`, meaning it can only be accessed from derived classes.
+  In this case, the `Shape` constructor takes a `color` parameter and initializes the `Color` property. It also prints a message to the console.
+  The `public Square(string color, double side) : base(color)` part calls the base class's constructor (`Shape`) and passes the `color` argument to it.
+- In the Shape class, the defined constructor takes a color as a parameter `protected Shape(string color)`. This means there's no longer a default parameterless constructor automatically provided by C# thus derived classes must use the `: base(color)` expression to invoke the base constructor. Setting the default value to color `protected Shape(string color="green")` will allow to omit the
+  `: base(color)` expression in derived classes, still such constructor `protected Shape(string color="green")` will be invoked, setting the color to green.
+
 ## C# Language Specification  
 
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

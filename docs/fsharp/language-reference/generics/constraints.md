@@ -20,7 +20,8 @@ There are several different constraints you can apply to limit the types that ca
 |Constraint|Syntax|Description|
 |----------|------|-----------|
 |Type Constraint|*type-parameter* :&gt; *type*|The provided type must be equal to or derived from the type specified, or, if the type is an interface, the provided type must implement the interface.|
-|Null Constraint|*type-parameter* : null|The provided type must support the null literal. This includes all .NET object types but not F# list, tuple, function, class, record, or union types.|
+|Null Constraint|*type-parameter* : null|The provided type must support the null value. This includes all .NET object types but not F# list, tuple, function, class, record, or union types.|
+|Not Null Constraint|*type-parameter* : not null|The provided type must not support the null value. This disallows both `null` annotated types and types which have null as their representation value (such as the option type or types defined with AllowNullLiteral attribute). This generic constraint does allow value types, since those can never be null.|
 |Explicit Member Constraint|[(]*type-parameter* [or ... or *type-parameter*)] : (*member-signature*)|At least one of the type arguments provided must have a member that has the specified signature; not intended for common use. Members must be either explicitly defined on the type or part of an implicit type extension to be valid targets for an Explicit Member Constraint.|
 |Constructor Constraint|*type-parameter* : ( new : unit -&gt; 'a )|The provided type must have a parameterless constructor.|
 |Value Type Constraint|*type-parameter* : struct|The provided type must be a .NET value type.|
@@ -52,6 +53,10 @@ type Class2<'T when 'T :> System.IComparable> =
 
 // Null constraint
 type Class3<'T when 'T : null> =
+    class end
+
+// Not Null constraint
+type Class4<'T when 'T : not null> =
     class end
 
 // Member constraint with instance member

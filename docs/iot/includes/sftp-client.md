@@ -10,7 +10,7 @@ Where:
 
 - The `-r` option instructs `scp` to copy files recursively.
 - */publish-location/* is the folder you published to in the previous step.
-- `pi@raspberypi` is the user and host names in the format `<username>@<hostname>`.
+- `pi@raspberrypi` is the user and host names in the format `<username>@<hostname>`.
 - */home/pi/deployment-location/* is the new folder on the SBC.
 
 > [!TIP]

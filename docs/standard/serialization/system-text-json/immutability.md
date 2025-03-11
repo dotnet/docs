@@ -44,7 +44,7 @@ Records are also supported for both serialization and deserialization, as shown 
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/Records.cs":::
 
-You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-definition) in the C# language reference.
+You can apply any of the attributes to the property names, using the `property:` target on the attribute. For more information on positional records, see the article on [records](../../../csharp/language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition) in the C# language reference.
 
 ## Non-public members and property accessors
 

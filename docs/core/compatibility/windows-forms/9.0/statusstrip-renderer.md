@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: System.Windows.Forms.StatusStrip uses a different default renderer"
 description: Learn about the breaking change in .NET 9 for Windows Forms where System.Windows.Forms.StatusStrip uses a different default value for the RenderMode property.
-ms.date: 12/19/2024
+ms.date: 02/12/2025
 ---
 # System.Windows.Forms.StatusStrip uses a different default renderer
 
@@ -13,7 +13,7 @@ ms.date: 12/19/2024
 
 ## Previous behavior
 
-Previously, the `StatusStrip`'s `RenderMode` property was set to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType> by default.
+Previously, the `StatusStrip.RenderMode` property was set to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType> by default.
 
 ## New behavior
 
@@ -30,6 +30,9 @@ The previous default behavior didn't meet accessibility standards. The focus ind
 ## Recommended action
 
 The new behavior is recommended for accessibility reasons. If you want to revert to the previous behavior, set the `RenderMode` property to <xref:System.Windows.Forms.ToolStripRenderMode.System?displayProperty=nameWithType>.
+
+> [!NOTE]
+> The new behavior was reverted to the previous behavior in a .NET 9 servicing release and [.NET 10 Preview 1](../10.0/statusstrip-renderer.md).
 
 ## Affected APIs
 

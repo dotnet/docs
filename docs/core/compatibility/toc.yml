@@ -40,6 +40,8 @@ items:
                 href: globalization/10.0/version-override.md
           - name: SDK and MSBuild
             items:
+              - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
+                href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
           - name: Windows Forms
@@ -1892,6 +1894,8 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
+                href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
           - name: .NET 9

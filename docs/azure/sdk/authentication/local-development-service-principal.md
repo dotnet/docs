@@ -131,7 +131,9 @@ Create a Microsoft Entra group to encapsulate the roles (permissions) the app ne
 1. Use the [az ad group member add](/cli/azure/ad/group/member#az-ad-group-member-add) command to add members to the group:
 
     ```azurecli
-    az ad group member add --group <group-name> --member-id <object-id>
+    az ad group member add \
+        --group <group-name> \
+        --member-id <object-id>
     ```
 
 ---
@@ -181,7 +183,7 @@ Next, determine what roles (permissions) your app needs on what resources and as
 
 ## Set the app environment variables
 
-At runtime, certain credentials from the [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true), such as `DefaultAzureCredential` and `ClientSecretCredential`, search for service principal information by convention in the environment variables. There are multiple ways to configure environment variables when working with .NET, depending on your tooling and environment.
+At runtime, certain credentials from the [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true), such as `DefaultAzureCredential`, `EnvironmentCredential`, and `ClientSecretCredential`, search for service principal information by convention in the environment variables. There are multiple ways to configure environment variables when working with .NET, depending on your tooling and environment.
 
 Regardless of the approach you choose, configure the following environment variables for a service principal:
 

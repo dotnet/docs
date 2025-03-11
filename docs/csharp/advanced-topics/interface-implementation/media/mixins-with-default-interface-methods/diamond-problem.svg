@@ -1,1 +1,156 @@
-<svg aria-roledescription="classDiagram" role="graphics-document document" viewBox="0 0 289.390625 382" style="max-width: 289.391px; background-color: white;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" id="my-svg"><style>#my-svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:2px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#333333;stroke:#333333;}#my-svg .marker.cross{stroke:#333333;}#my-svg svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#my-svg g.classGroup text{fill:#9370DB;stroke:none;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:10px;}#my-svg g.classGroup text .title{font-weight:bolder;}#my-svg .nodeLabel,#my-svg .edgeLabel{color:#131300;}#my-svg .edgeLabel .label rect{fill:#ECECFF;}#my-svg .label text{fill:#131300;}#my-svg .edgeLabel .label span{background:#ECECFF;}#my-svg .classTitle{font-weight:bolder;}#my-svg .node rect,#my-svg .node circle,#my-svg .node ellipse,#my-svg .node polygon,#my-svg .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#my-svg .divider{stroke:#9370DB;stroke-width:1;}#my-svg g.clickable{cursor:pointer;}#my-svg g.classGroup rect{fill:#ECECFF;stroke:#9370DB;}#my-svg g.classGroup line{stroke:#9370DB;stroke-width:1;}#my-svg .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5;}#my-svg .classLabel .label{fill:#9370DB;font-size:10px;}#my-svg .relation{stroke:#333333;stroke-width:1;fill:none;}#my-svg .dashed-line{stroke-dasharray:3;}#my-svg .dotted-line{stroke-dasharray:1 2;}#my-svg #compositionStart,#my-svg .composition{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#my-svg #compositionEnd,#my-svg .composition{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#my-svg #dependencyStart,#my-svg .dependency{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#my-svg #dependencyStart,#my-svg .dependency{fill:#333333!important;stroke:#333333!important;stroke-width:1;}#my-svg #extensionStart,#my-svg .extension{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#my-svg #extensionEnd,#my-svg .extension{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#my-svg #aggregationStart,#my-svg .aggregation{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#my-svg #aggregationEnd,#my-svg .aggregation{fill:transparent!important;stroke:#333333!important;stroke-width:1;}#my-svg #lollipopStart,#my-svg .lollipop{fill:#ECECFF!important;stroke:#333333!important;stroke-width:1;}#my-svg #lollipopEnd,#my-svg .lollipop{fill:#ECECFF!important;stroke:#333333!important;stroke-width:1;}#my-svg .edgeTerminals{font-size:11px;line-height:initial;}#my-svg .classTitleText{text-anchor:middle;font-size:18px;fill:#333;}#my-svg :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><defs><marker orient="auto" markerHeight="240" markerWidth="190" refY="7" refX="18" class="marker aggregation classDiagram" id="my-svg_classDiagram-aggregationStart"><path d="M 18,7 L9,13 L1,7 L9,1 Z"/></marker></defs><defs><marker orient="auto" markerHeight="28" markerWidth="20" refY="7" refX="1" class="marker aggregation classDiagram" id="my-svg_classDiagram-aggregationEnd"><path d="M 18,7 L9,13 L1,7 L9,1 Z"/></marker></defs><defs><marker orient="auto" markerHeight="240" markerWidth="190" refY="7" refX="18" class="marker extension classDiagram" id="my-svg_classDiagram-extensionStart"><path d="M 1,7 L18,13 V 1 Z"/></marker></defs><defs><marker orient="auto" markerHeight="28" markerWidth="20" refY="7" refX="1" class="marker extension classDiagram" id="my-svg_classDiagram-extensionEnd"><path d="M 1,1 V 13 L18,7 Z"/></marker></defs><defs><marker orient="auto" markerHeight="240" markerWidth="190" refY="7" refX="18" class="marker composition classDiagram" id="my-svg_classDiagram-compositionStart"><path d="M 18,7 L9,13 L1,7 L9,1 Z"/></marker></defs><defs><marker orient="auto" markerHeight="28" markerWidth="20" refY="7" refX="1" class="marker composition classDiagram" id="my-svg_classDiagram-compositionEnd"><path d="M 18,7 L9,13 L1,7 L9,1 Z"/></marker></defs><defs><marker orient="auto" markerHeight="240" markerWidth="190" refY="7" refX="6" class="marker dependency classDiagram" id="my-svg_classDiagram-dependencyStart"><path d="M 5,7 L9,13 L1,7 L9,1 Z"/></marker></defs><defs><marker orient="auto" markerHeight="28" markerWidth="20" refY="7" refX="13" class="marker dependency classDiagram" id="my-svg_classDiagram-dependencyEnd"><path d="M 18,7 L9,13 L14,7 L9,1 Z"/></marker></defs><defs><marker orient="auto" markerHeight="240" markerWidth="190" refY="7" refX="13" class="marker lollipop classDiagram" id="my-svg_classDiagram-lollipopStart"><circle r="6" cy="7" cx="7" fill="transparent" stroke="black"/></marker></defs><defs><marker orient="auto" markerHeight="240" markerWidth="190" refY="7" refX="1" class="marker lollipop classDiagram" id="my-svg_classDiagram-lollipopEnd"><circle r="6" cy="7" cx="7" fill="transparent" stroke="black"/></marker></defs><g class="root"><g class="clusters"/><g class="edgePaths"><path marker-start="url(#my-svg_classDiagram-extensionStart)" style="fill:none" class="edge-pattern-solid relation" id="id_ILight_IBlinkingLight_1" d="M80.524,123.36L78.137,125.634C75.751,127.907,70.977,132.453,68.59,138.893C66.203,145.333,66.203,153.667,66.203,157.833L66.203,162"/><path marker-start="url(#my-svg_classDiagram-extensionStart)" style="fill:none" class="edge-pattern-solid relation" id="id_ILight_ITimerLight_2" d="M213.577,123.36L215.964,125.634C218.351,127.907,223.125,132.453,225.512,138.893C227.898,145.333,227.898,153.667,227.898,157.833L227.898,162"/><path marker-start="url(#my-svg_classDiagram-extensionStart)" style="fill:none" class="edge-pattern-solid relation" id="id_IBlinkingLight_OverheadLight_3" d="M66.203,284L66.203,285.167C66.203,286.333,66.203,288.667,72.441,294C78.68,299.333,91.156,307.667,97.394,311.833L103.633,316"/><path marker-start="url(#my-svg_classDiagram-extensionStart)" style="fill:none" class="edge-pattern-solid relation" id="id_ITimerLight_OverheadLight_4" d="M227.898,284L227.898,285.167C227.898,286.333,227.898,288.667,221.66,294C215.422,299.333,202.945,307.667,196.707,311.833L190.469,316"/></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(147.05078125, 60)" data-id="ILight" data-node="true" id="classId-ILight-0" class="node default"><rect height="104" width="106.984375" y="-52" x="-53.4921875" class="outer title-state" style=""/><line y2="2" y1="2" x2="53.4921875" x1="-53.4921875" class="divider"/><line y2="41" y1="41" x2="53.4921875" x1="-53.4921875" class="divider"/><g class="label"><foreignObject transform="translate( -45.9921875, -44.5)" height="19" width="91.984375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">« interface »</span></div></foreignObject><foreignObject transform="translate( -20.96875, -21.5)" height="19" width="41.9375" class="classTitle"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ILight</span></div></foreignObject><foreignObject transform="translate( -45.9921875, 13.5)" height="19" width="87.625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">PowerStatus</span></div></foreignObject></g></g><g transform="translate(66.203125, 214)" data-id="IBlinkingLight" data-node="true" id="classId-IBlinkingLight-1" class="node default"><rect height="104" width="116.40625" y="-52" x="-58.203125" class="outer title-state" style=""/><line y2="2" y1="2" x2="58.203125" x1="-58.203125" class="divider"/><line y2="41" y1="41" x2="58.203125" x1="-58.203125" class="divider"/><g class="label"><foreignObject transform="translate( -45.9921875, -44.5)" height="19" width="91.984375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">« interface »</span></div></foreignObject><foreignObject transform="translate( -50.703125, -21.5)" height="19" width="101.40625" class="classTitle"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">IBlinkingLight</span></div></foreignObject><foreignObject transform="translate( -50.703125, 13.5)" height="19" width="87.625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">PowerStatus</span></div></foreignObject></g></g><g transform="translate(227.8984375, 214)" data-id="ITimerLight" data-node="true" id="classId-ITimerLight-2" class="node default"><rect height="104" width="106.984375" y="-52" x="-53.4921875" class="outer title-state" style=""/><line y2="2" y1="2" x2="53.4921875" x1="-53.4921875" class="divider"/><line y2="41" y1="41" x2="53.4921875" x1="-53.4921875" class="divider"/><g class="label"><foreignObject transform="translate( -45.9921875, -44.5)" height="19" width="91.984375"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">« interface »</span></div></foreignObject><foreignObject transform="translate( -42.84375, -21.5)" height="19" width="85.6875" class="classTitle"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">ITimerLight</span></div></foreignObject><foreignObject transform="translate( -45.9921875, 13.5)" height="19" width="87.625"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">PowerStatus</span></div></foreignObject></g></g><g transform="translate(147.05078125, 345)" data-id="OverheadLight" data-node="true" id="classId-OverheadLight-3" class="node default"><rect height="58" width="124.6875" y="-29" x="-62.34375" class="outer title-state" style=""/><line y2="2" y1="2" x2="62.34375" x1="-62.34375" class="divider"/><line y2="18" y1="18" x2="62.34375" x1="-62.34375" class="divider"/><g class="label"><foreignObject height="0" width="0"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"></span></div></foreignObject><foreignObject transform="translate( -54.84375, -21.5)" height="19" width="109.6875" class="classTitle"><div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel">OverheadLight</span></div></foreignObject></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="my-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1920 382">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7 {
+        fill: none;
+      }
+
+      .st1 {
+        clip-path: url(#clippath-4);
+      }
+
+      .st2 {
+        clip-path: url(#clippath-8);
+      }
+
+      .st3 {
+        clip-path: url(#clippath-34);
+      }
+
+      .st4 {
+        clip-path: url(#clippath-12);
+      }
+
+      .st8 {
+        stroke-miterlimit: 4;
+        stroke-width: 1px;
+      }
+
+      .st8, .st9, .st10, .st11 {
+        stroke: #333;
+      }
+
+      .st8, .st9, .st11 {
+        fill-opacity: 0;
+      }
+
+      .st9 {
+        stroke-miterlimit: 4;
+        stroke-width: 1px;
+      }
+
+      .st5 {
+        clip-path: url(#clippath);
+      }
+
+      .st12, .st13, .st14 {
+        font-size: 12px;
+      }
+
+      .st12, .st15 {
+        font-family: ArialMT, Arial;
+      }
+
+      .st16 {
+        fill: #ececff;
+      }
+
+      .st16, .st6 {
+        stroke: #9370db;
+      }
+
+      .st14, .st17 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .st7 {
+        stroke: #000;
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="st0" points="816.3 1 817.3 1 816.3 2 816.3 1"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polygon class="st5" points="814.3 -1 813.3 -1 814.3 -2 814.3 -1"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <polygon class="st0" points="816.3 1 817.3 1 816.3 2 816.3 1"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <polygon class="st1" points="814.3 -1 813.3 -1 814.3 -2 814.3 -1"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <polygon class="st0" points="816.3 1 817.3 1 816.3 2 816.3 1"/>
+    </clipPath>
+    <clipPath id="clippath-9">
+      <polygon class="st2" points="814.3 -1 813.3 -1 814.3 -2 814.3 -1"/>
+    </clipPath>
+    <clipPath id="clippath-12">
+      <polygon class="st0" points="816.3 1 817.3 1 816.3 2 816.3 1"/>
+    </clipPath>
+    <clipPath id="clippath-13">
+      <polygon class="st4" points="814.3 -1 813.3 -1 814.3 -2 814.3 -1"/>
+    </clipPath>
+    <clipPath id="clippath-34">
+      <polygon class="st0" points="963.4 346 964.4 346 963.4 347 963.4 346"/>
+    </clipPath>
+    <clipPath id="clippath-35">
+      <polygon class="st3" points="961.4 344 960.4 344 961.4 343 961.4 344"/>
+    </clipPath>
+  </defs>
+  <path class="st0" d=""/>
+  <g>
+    <g>
+      <path class="st0" d=""/>
+      <path class="st8" d="M908.1,111.6l-16.4,7.4,8.3,8.7,8.2-16.1Z"/>
+      <path id="id_ILight_IBlinkingLight_1" class="st11" d="M881.5,162" marker-start="url(#my-svg_classDiagram-extensionStart)"/>
+      <path class="st0" d=""/>
+      <path class="st9" d="M1016.6,111.6l8.2,16.1,8.3-8.7-16.4-7.4Z"/>
+      <path id="id_ILight_ITimerLight_2" class="st11" d="M1043.2,162" marker-start="url(#my-svg_classDiagram-extensionStart)"/>
+      <path class="st0" d=""/>
+      <path class="st11" d="M881.5,267l-6,17h12l-6-17Z"/>
+      <path id="id_IBlinkingLight_OverheadLight_3" class="st11" d="M918.9,316" marker-start="url(#my-svg_classDiagram-extensionStart)"/>
+      <path class="st0" d=""/>
+      <path class="st11" d="M1043.2,267l-6,17h12l-6-17Z"/>
+      <path id="id_ITimerLight_OverheadLight_4" class="st11" d="M1005.8,316" marker-start="url(#my-svg_classDiagram-extensionStart)"/>
+    </g>
+    <g>
+      <g id="classId-ILight-0">
+        <rect class="st16" x="908.9" y="8" width="107" height="104"/>
+        <line class="st6" x1="908.9" y1="62" x2="1015.8" y2="62"/>
+        <line class="st6" x1="908.9" y1="101" x2="1015.8" y2="101"/>
+      </g>
+      <g id="classId-IBlinkingLight-1">
+        <rect class="st16" x="823.3" y="162" width="116.4" height="104"/>
+        <line class="st6" x1="823.3" y1="216" x2="939.7" y2="216"/>
+        <line class="st6" x1="823.3" y1="255" x2="939.7" y2="255"/>
+      </g>
+      <g id="classId-ITimerLight-2">
+        <rect class="st16" x="989.7" y="162" width="107" height="104"/>
+        <line class="st6" x1="989.7" y1="216" x2="1096.7" y2="216"/>
+        <line class="st6" x1="989.7" y1="255" x2="1096.7" y2="255"/>
+      </g>
+      <g id="classId-OverheadLight-3">
+        <rect class="st16" x="900" y="316" width="124.7" height="58"/>
+        <line class="st6" x1="900" y1="347" x2="1024.7" y2="347"/>
+        <line class="st6" x1="900" y1="363" x2="1024.7" y2="363"/>
+      </g>
+    </g>
+  </g>
+  <path class="st0" d=""/>
+  <text class="st12" transform="translate(941.6 85.1)"><tspan x="0" y="0">Power()</tspan></text>
+  <text class="st13" transform="translate(925.3 34.4)"><tspan class="st15"><tspan x="0" y="0" xml:space="preserve"> « interface »</tspan></tspan><tspan class="st17"><tspan x="18.4" y="14.4">ILight</tspan></tspan></text>
+  <text class="st13" transform="translate(1008.5 185.3)"><tspan class="st15"><tspan x="0" y="0" xml:space="preserve"> « interface »</tspan></tspan><tspan class="st17"><tspan x="2" y="14.4">ITimerLight</tspan></tspan></text>
+  <text class="st13" transform="translate(846.8 184.3)"><tspan class="st15"><tspan x="0" y="0" xml:space="preserve"> « interface »</tspan></tspan><tspan class="st17"><tspan x="-5.3" y="14.4">IBlinkingLight</tspan></tspan></text>
+  <text class="st12" transform="translate(859.9 238.5)"><tspan x="0" y="0">Power()</tspan></text>
+  <text class="st12" transform="translate(1024.8 238.5)"><tspan x="0" y="0">Power()</tspan></text>
+  <text class="st14" transform="translate(920.5 330.1)"><tspan x="0" y="0">OverheadLight</tspan></text>
+  <path class="st10" d="M1188.1,249.2"/>
+  <path class="st7" d="M881.5,284l18.5,32-18.5-32Z"/>
+  <path class="st7" d="M1024.7,316l18.5-32-18.5,32Z"/>
+  <path class="st7" d="M895.4,123l-9.5,39,9.5-39Z"/>
+  <path class="st7" d="M1029.3,123l22.5,39-22.5-39Z"/>
+</svg>

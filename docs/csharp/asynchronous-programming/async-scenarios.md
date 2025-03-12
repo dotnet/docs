@@ -130,7 +130,7 @@ You can write this code more succinctly by using LINQ:
 
 Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method. This example uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
 
-## Review important considerations
+## Review considerations for asynchronous programming
 
 With asynchronous programming, there are several details to keep in mind that can prevent unexpected behavior.
 

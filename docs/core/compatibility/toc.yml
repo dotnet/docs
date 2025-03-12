@@ -120,6 +120,8 @@ items:
                 href: core-libraries/9.0/ziparchiveentry-encoding.md
           - name: Cryptography
             items:
+              - name: APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0
+                href: cryptography/9.0/api-removed-pkcs.md
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
@@ -1620,6 +1622,8 @@ items:
                 href: cryptography/10.0/version-override.md
           - name: .NET 9
             items:
+              - name: APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0
+                href: cryptography/9.0/api-removed-pkcs.md
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete

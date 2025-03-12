@@ -8,7 +8,7 @@ ms.date: 12/15/2023
 
 # Microsoft.Testing.Platform and VSTest comparison
 
-`Microsoft.Testing.Platform` is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in command line, in continuous integration (CI) pipelines, in Visual Studio Test Explorer, and in Visual Studio Code. In this article, you learn the key differences between the MSTest runner and VSTest.
+`Microsoft.Testing.Platform` is a lightweight and portable alternative to [VSTest](https://github.com/microsoft/vstest) for running tests in command line, in continuous integration (CI) pipelines, in Visual Studio Test Explorer, and in Visual Studio Code. In this article, you learn the key differences between Microsoft.Testing.Platform and VSTest.
 
 ## Differences in test execution
 

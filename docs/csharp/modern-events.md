@@ -14,21 +14,7 @@ This increases flexibility for you, and is backwards compatible. Let's start wit
 
 You could also change the `SearchDirectoryArgs` to a struct, if you make one more change:
 
-```csharp
-internal struct SearchDirectoryArgs
-{
-    internal string CurrentSearchDirectory { get; }
-    internal int TotalDirs { get; }
-    internal int CompletedDirs { get; }
-
-    internal SearchDirectoryArgs(string dir, int totalDirs, int completedDirs) : this()
-    {
-        CurrentSearchDirectory = dir;
-        TotalDirs = totalDirs;
-        CompletedDirs = completedDirs;
-    }
-}
-```
+:::code language="csharp" source="./snippets/events/FinalUpdates.cs" id="StructEventArgs":::
 
 The extra change is to call the parameterless constructor before entering the constructor that initializes all the fields. Without that addition, the rules of C# would report that the properties are being accessed before being assigned.
 
@@ -44,21 +30,7 @@ You have one final pattern to learn: How to correctly write event subscribers th
 
 You need to reconcile this opposing guidance. Somehow, you must create a safe `async void` method. The basics of the pattern you need to implement are shown in the following code:
 
-```csharp
-worker.StartWorking += async (sender, eventArgs) =>
-{
-    try
-    {
-        await DoWorkAsync();
-    }
-    catch (Exception e)
-    {
-        //Some form of logging.
-        Console.WriteLine($"Async task failure: {e.ToString()}");
-        // Consider gracefully, and quickly exiting.
-    }
-};
-```
+:::code language="csharp" source="./snippets/events/FinalUpdates.cs" id="AsyncEvent":::
 
 First, notice that the handler is marked as an async handler. Because it's being assigned to an event handler delegate type, it has a void return type. That means you must follow the pattern shown in the handler, and not allow any exceptions to be thrown out of the context of the async handler. Because it doesn't return a task, there's no task that can report the error by entering the faulted state. Because the method is async, the method can't throw the exception. (The calling method continues execution because it's `async`.) The actual runtime behavior is defined differently for different environments. It might terminate the thread or the process that owns the thread, or leave the process in an indeterminate state. All of these potential outcomes are highly undesirable.
 

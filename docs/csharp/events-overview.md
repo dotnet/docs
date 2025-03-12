@@ -33,36 +33,25 @@ The syntax for defining events, and subscribing or unsubscribing from events is 
 
 You use the `event` keyword to define an event:
 
-```csharp
-public event EventHandler<FileListArgs> Progress;
-```
+:::code language="csharp" source="./snippets/events/VersionOne.cs" id="DeclareEvent":::
 
 The type of the event (`EventHandler<FileListArgs>` in this example) must be a delegate type. There are conventions that you should follow when declaring an event. Typically, the event delegate type has a void return. Event declarations should be a verb, or a verb phrase. Use past tense when the event reports something that happened. Use a present tense verb (for example, `Closing`) to report something that is about to happen. Often, using present tense indicates that your class supports some kind of customization behavior. One of the most common scenarios is to support cancellation. For example, a `Closing` event can include an argument that would indicate if the close operation should continue, or not. Other scenarios enable callers to modify behavior by updating properties of the event arguments. You can raise an event to indicate a proposed next action an algorithm will take. The event handler might mandate a different action by modifying  properties of the event argument.
 
 When you want to raise the event, you call the event handlers using the delegate invocation syntax:
 
-```csharp
-Progress?.Invoke(this, new FileListArgs(file));
-```
+:::code language="csharp" source="./snippets/events/VersionOne.cs" id="InvokeEvent":::
 
 As discussed in the section on [delegates](delegates-patterns.md), the `?.` operator makes it easy to ensure that you don't attempt to raise the event when there are no subscribers to that event.
 
 You subscribe to an event by using the `+=` operator:
 
-```csharp
-EventHandler<FileListArgs> onProgress = (sender, eventArgs) =>
-    Console.WriteLine(eventArgs.FoundFile);
-
-fileLister.Progress += onProgress;
-```
+:::code language="csharp" source="./snippets/events/Program.cs" id="AttachEventHandler":::
 
 The handler method typically has the prefix 'On' followed by the event name, as shown in the preceding code.
 
 You unsubscribe using the `-=` operator:
 
-```csharp
-fileLister.Progress -= onProgress;
-```
+:::code language="csharp" source="./snippets/events/Program.cs" id="DetachHandler":::
 
 It's important that you declare a local variable for the expression that represents the event handler. That ensures the unsubscribe removes the handler. If, instead, you used the body of the lambda expression, you're attempting to remove a handler that was never attached, which does nothing.
 

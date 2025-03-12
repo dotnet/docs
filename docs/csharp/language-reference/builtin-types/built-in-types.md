@@ -1,7 +1,7 @@
 ---
 title: "Built-in types"
 description: "Learn C# built-in value and reference types"
-ms.date: 02/19/2025
+ms.date: 03/07/2025
 helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"
@@ -10,38 +10,47 @@ helpviewer_keywords:
 
 The following table lists the C# built-in [value](value-types.md) types:
 
-|C# type keyword|.NET type|
-|--------------|-------------------------|
-|[`bool`](bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|
-|[`byte`](integral-numeric-types.md)|<xref:System.Byte?displayProperty=nameWithType>|
-|[`sbyte`](integral-numeric-types.md)|<xref:System.SByte?displayProperty=nameWithType>|
-|[`char`](char.md)|<xref:System.Char?displayProperty=nameWithType>|
-|[`decimal`](floating-point-numeric-types.md)|<xref:System.Decimal?displayProperty=nameWithType>|
-|[`double`](floating-point-numeric-types.md)|<xref:System.Double?displayProperty=nameWithType>|
-|[`float`](floating-point-numeric-types.md)|<xref:System.Single?displayProperty=nameWithType>|
-|[`int`](integral-numeric-types.md)|<xref:System.Int32?displayProperty=nameWithType>|
-|[`uint`](integral-numeric-types.md)|<xref:System.UInt32?displayProperty=nameWithType>|
-|[`nint`](integral-numeric-types.md)|<xref:System.IntPtr?displayProperty=nameWithType>|
-|[`nuint`](integral-numeric-types.md)|<xref:System.UIntPtr?displayProperty=nameWithType>|
-|[`long`](integral-numeric-types.md)|<xref:System.Int64?displayProperty=nameWithType>|
-|[`ulong`](integral-numeric-types.md)|<xref:System.UInt64?displayProperty=nameWithType>|
-|[`short`](integral-numeric-types.md)|<xref:System.Int16?displayProperty=nameWithType>|
-|[`ushort`](integral-numeric-types.md)|<xref:System.UInt16?displayProperty=nameWithType>|
+| C# type keyword                              | .NET type                                          |
+|----------------------------------------------|----------------------------------------------------|
+| [`bool`](bool.md)                            | <xref:System.Boolean?displayProperty=nameWithType> |
+| [`byte`](integral-numeric-types.md)          | <xref:System.Byte?displayProperty=nameWithType>    |
+| [`sbyte`](integral-numeric-types.md)         | <xref:System.SByte?displayProperty=nameWithType>   |
+| [`char`](char.md)                            | <xref:System.Char?displayProperty=nameWithType>    |
+| [`decimal`](floating-point-numeric-types.md) | <xref:System.Decimal?displayProperty=nameWithType> |
+| [`double`](floating-point-numeric-types.md)  | <xref:System.Double?displayProperty=nameWithType>  |
+| [`float`](floating-point-numeric-types.md)   | <xref:System.Single?displayProperty=nameWithType>  |
+| [`int`](integral-numeric-types.md)           | <xref:System.Int32?displayProperty=nameWithType>   |
+| [`uint`](integral-numeric-types.md)          | <xref:System.UInt32?displayProperty=nameWithType>  |
+| [`nint`](integral-numeric-types.md)          | <xref:System.IntPtr?displayProperty=nameWithType>  |
+| [`nuint`](integral-numeric-types.md)         | <xref:System.UIntPtr?displayProperty=nameWithType> |
+| [`long`](integral-numeric-types.md)          | <xref:System.Int64?displayProperty=nameWithType>   |
+| [`ulong`](integral-numeric-types.md)         | <xref:System.UInt64?displayProperty=nameWithType>  |
+| [`short`](integral-numeric-types.md)         | <xref:System.Int16?displayProperty=nameWithType>   |
+| [`ushort`](integral-numeric-types.md)        | <xref:System.UInt16?displayProperty=nameWithType>  |
 
 The following table lists the C# built-in [reference](../keywords/reference-types.md) types:
 
-|C# type keyword|.NET type|
-|--------------|-------------------------|
-|[`object`](reference-types.md#the-object-type)|<xref:System.Object?displayProperty=nameWithType>|
-|[`string`](reference-types.md#the-string-type)|<xref:System.String?displayProperty=nameWithType>|
-|[`dynamic`](reference-types.md#the-dynamic-type)|<xref:System.Object?displayProperty=nameWithType>|
+| C# type keyword                                    | .NET type                                          |
+|----------------------------------------------------|----------------------------------------------------|
+| [`object`](reference-types.md#the-object-type)     |<xref:System.Object?displayProperty=nameWithType>   |
+| [`string`](reference-types.md#the-string-type)     |<xref:System.String?displayProperty=nameWithType>   |
+| [`delegate`](reference-types.md#the-delegate-type) |<xref:System.Delegate?displayProperty=nameWithType> |
+| [`dynamic`](reference-types.md#the-dynamic-type)   |<xref:System.Object?displayProperty=nameWithType>   |
 
-In the preceding tables, each C# type keyword from the left column (except [dynamic](reference-types.md#the-dynamic-type)) is an alias for the corresponding .NET type. They're interchangeable. For example, the following declarations declare variables of the same type:
+In the preceding tables, the C# type keyword from the left column (except [delegate](reference-types.md#the-delegate-type) and [dynamic](reference-types.md#the-dynamic-type)) is an alias for the corresponding .NET type. They're interchangeable. For example, the following declarations declare variables of the same type:
 
 ```csharp
 int a = 123;
 System.Int32 b = 123;
 ```
+
+The `dynamic` type is similar to `object`. The main differences are:
+
+- Operations on a `dynamic` expression are bound at runtime, not at compile time.
+- You can't use `new dynamic()`.
+- You can't derive a type from the `dynamic` type.
+
+The `delegate` keyword declares a type derived from <xref:System.Delegate?displayProperty=nameWithType>. `System.Delegate` type is an abstract type.
 
 The [`void`](void.md) keyword represents the absence of a type. You use it as the return type of a method that doesn't return a value.
 

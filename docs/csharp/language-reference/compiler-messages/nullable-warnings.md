@@ -129,7 +129,7 @@ ms.date: 02/20/2025
 
 The purpose of nullable warnings is to minimize the chance that your application throws a <xref:System.NullReferenceException?displayProperty=nameWithType> when run. To achieve this goal, the compiler uses static analysis and issues warnings when your code has constructs that might lead to null reference exceptions. You provide the compiler with information for its static analysis by applying type annotations and attributes. These annotations and attributes describe the nullability of arguments, parameters, and members of your types. In this article, you learn different techniques to address the nullable warnings the compiler generates from its static analysis. The techniques described here are for general C# code. Learn to work with nullable reference types and Entity Framework core in [Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).
 
-Nullable reference types, including the operators `?` and `!` are allowed only when the nullable context is set to `enable` or `annotations`. You can set the nullable annotation using the `Nullable` [compiler option](../compiler-options/language.md#nullable) in your project file, or using the [`#nullable`](../preprocessor-directives.md#nullable-context) pragma in your source code.
+Nullable reference types, including the operators `?` and `!` are allowed only when the nullable context is set to `enable` or `annotations`. You can set the nullable context using the `Nullable` [compiler option](../compiler-options/language.md#nullable) in your project file, or using the [`#nullable`](../preprocessor-directives.md#nullable-context) pragma in your source code.
 
 This article covers the following compiler warnings:
 

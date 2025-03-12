@@ -25,7 +25,7 @@ The `await` keyword is where the magic happens. It yields control to the caller 
 >
 > `private static readonly HttpClient s_httpClient = new();`
 > 
-> For more information, see the [complete example code](#review-complete-example) at the end of this article.
+> For more information, see the [complete example code](#review-the-complete-example) at the end of this article.
 
 ### Review underlying concepts
 

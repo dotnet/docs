@@ -56,5 +56,5 @@ if (parameters == null)
 
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParameters?displayProperty=fullName>
 - <xref:System.Security.Cryptography.X509Certificates.X509Certificate.GetKeyAlgorithmParametersString?displayProperty=fullName>
-- <xref:System.Security.Cryptography.X509Certificates.PublicKey.%23ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.AsnEncodedData,System.Security.Cryptography.AsnEncodedData)>
+- <xref:System.Security.Cryptography.X509Certificates.PublicKey.%23ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.AsnEncodedData,System.Security.Cryptography.AsnEncodedData)?displayProperty=fullName>
 - <xref:System.Security.Cryptography.X509Certificates.PublicKey.EncodedParameters?displayProperty=fullName>

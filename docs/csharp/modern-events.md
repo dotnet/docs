@@ -10,7 +10,7 @@ ms.subservice: fundamentals
 
 The previous article discussed the most common event patterns. .NET Core has a more relaxed pattern. In this version, the `EventHandler<TEventArgs>` definition no longer has the constraint that `TEventArgs` must be a class derived from `System.EventArgs`.
 
-This increases flexibility for you, and is backwards compatible. Let's start with the flexibility. The class System.EventArgs introduces one method: `MemberwiseClone()`, which creates a shallow copy of the object. That method must use reflection in order to implement its functionality for any class derived from `EventArgs`. That functionality is easier to create in a specific derived class. That effectively means that deriving from System.EventArgs is a constraint that limits your designs, but doesn't provide any extra benefit. In fact, you can change the definitions of `FileFoundArgs` and `SearchDirectoryArgs` so that they don't derive from `EventArgs`. The program works exactly the same.
+This increases flexibility for you, and is backwards compatible. Let's start with the flexibility. The implementation for <xref:System.EventArgs?displayProperty=nameWithType> uses a method defiend in <xref:System.Object?displayProperty=nameWithType> one method: <xref:System.Object.MemberwiseClone>, which creates a shallow copy of the object. That method must use reflection in order to implement its functionality for any class derived from `EventArgs`. That functionality is easier to create in a specific derived class. That effectively means that deriving from System.EventArgs is a constraint that limits your designs, but doesn't provide any extra benefit. In fact, you can change the definitions of `FileFoundArgs` and `SearchDirectoryArgs` so that they don't derive from `EventArgs`. The program works exactly the same.
 
 You could also change the `SearchDirectoryArgs` to a struct, if you make one more change:
 
@@ -36,7 +36,7 @@ First, notice that the handler is marked as an async handler. Because it's being
 
 You should wrap the `await` expression for the async Task in your own try block. If it does cause a faulted task, you can log the error. If it's an error from which your application can't recover, you can exit the program quickly and gracefully
 
-This article explained the major updates to the .NET event pattern. You might see many examples of the earlier versions in the libraries you work with. However, you should understand what the latest patterns are as well.
+This article explained the major updates to the .NET event pattern. You might see many examples of the earlier versions in the libraries you work with. However, you should understand what the latest patterns are as well. You can see the finished code for the sample in our [Samples repository](https://github.com/dotnet/docs/blob/main/samples/snippets/csharp/events/Program.cs) on GitHub.
 
 The next article in this series helps you distinguish between using `delegates` and `events` in your designs. They're similar concepts, and that article helps you make the best decision for your programs.
 

@@ -1,7 +1,7 @@
 ---
 title: Standard .NET event patterns
 description: Learn about .NET event patterns and how to create standard event sources and subscribe and process standard events in your code.
-ms.date: 03/11/2025
+ms.date: 03/13/2025
 ms.subservice: fundamentals
 ---
 # Standard .NET event patterns
@@ -20,11 +20,11 @@ The standard signature for a .NET event delegate is:
 void EventRaised(object sender, EventArgs args);
 ```
 
-The return type is void. Events are based on delegates and are multicast delegates. That supports multiple subscribers for any event source. The single return value from a method doesn't scale to multiple event subscribers. Which return value does the event source see after raising an event? Later in this article you see how to create event protocols that support event subscribers that report information to the event source.
+This standard signature provides insight into when events are used:
 
-The argument list contains two arguments: the sender, and the event arguments. The compile-time type of `sender` is `System.Object`, even though you likely know a more derived type that would always be correct. By convention, use `object`.
-
-The second argument is typically a type that is derived from `System.EventArgs`. (You'll see in the [next section](modern-events.md) that this convention is no longer enforced.) If your event type doesn't need any more arguments, you still must provide both arguments. There's a special value, `EventArgs.Empty` that you should use to denote that your event doesn't contain any additional information.
+- ***The return type is void***. Events may have zero to many listeners. Raising an event notifies all listeners. In general, listeners don't provide values in response to events.
+- ***Events indicate the sender***: The event signature includes the object that raised the event. That provides any listener with a mechanism to communicate with the sender. The compile-time type of `sender` is `System.Object`, even though you likely know a more derived type that would always be correct. By convention, use `object`.
+- ***Events package additional information in a single structure***: The `args` parameter is a type derived from <xref:System.EventArgs?displayProperty=nameWithType> that includes any additional necessary information. (You'll see in the [next section](modern-events.md) that this convention is no longer enforced.) If your event type doesn't need any more arguments, you still must provide both arguments. There's a special value, <xref:System.EventArgs.Empty?displayProperty=nameWithType> that you should use to denote that your event doesn't contain any additional information.
 
 Let's build a class that lists files in a directory, or any of its subdirectories that follow a pattern. This component raises an event for each file found that matches the pattern.
 
@@ -36,7 +36,7 @@ Here's the initial event argument declaration for finding a sought file:
 
 Even though this type looks like a small, data-only type, you should follow the convention and make it a reference (`class`) type. That means the argument object is passed by reference, and any updates to the data are viewed by all subscribers. The first version is an immutable object. You should prefer to make the properties in your event argument type immutable. That way, one subscriber can't change the values before another subscriber sees them. (There are exceptions to this practice, as you see later.)
 
-Next, we need to create the event declaration in the FileSearcher class. Using the `EventHandler<T>` type means that you don't need to create yet another type definition. You just use a generic specialization.
+Next, we need to create the event declaration in the FileSearcher class. Using the <xref:System.EventHandler%601?displayProperty=nameWithType> type means that you don't need to create yet another type definition. You just use a generic specialization.
 
 Let's fill out the FileSearcher class to search for files that match a pattern, and raise the correct event when a match is discovered.
 

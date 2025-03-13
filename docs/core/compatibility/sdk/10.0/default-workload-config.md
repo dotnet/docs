@@ -1,7 +1,7 @@
 ---
 title: "Breaking change - Change default workload configuration from 'loose manifests' to 'workload sets' mode"
 description: "Learn about the breaking change in .NET 10 Preview 2 where the default workload update mode changed."
-ms.date: 3/11/2025
+ms.date: 3/12/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45000
 ---
@@ -20,12 +20,12 @@ Previously, workloads operated in 'loose manifest' mode by default. Errant `dotn
 
 ## New behavior
 
-Workloads will never float unless the user:
+Workloads will never float unless you:
 
-* Updates their SDK
-* Performs an explicit update command
+* Update your SDK.
+* Perform an explicit update command.
 
-When a user performs an update, all workloads will use known-matching versions from the workload set that is used.
+When you perform an update, all workloads will use known-matching versions from the workload set that is used.
 
 ## Type of breaking change
 
@@ -37,7 +37,7 @@ Users requested more control and predictability in workload management. This new
 
 ## Recommended action
 
-No corrective action is necessary. If users experience issues, they can revert to loose manifest mode by running the following command:
+No corrective action is necessary. If you experience issues, you can revert to loose manifest mode by running the following command:
 
 ```dotnetcli
 dotnet workload config --update-mode manifests

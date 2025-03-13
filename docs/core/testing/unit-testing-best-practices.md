@@ -15,7 +15,7 @@ By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](https:/
 
 ## Benefits of unit testing
 
-There are several reasons to use unit tests.
+The following sections describe several reasons to write unit tests for your .NET Core and .NET Standard projects.
 
 ### Less time performing functional tests
 
@@ -27,7 +27,7 @@ Regression defects are errors that are introduced when a change is made to the a
 
 ### Executable documentation
 
-It might not always be obvious what a particular method does or how it behaves given a certain input. You might ask yourself: _How does this method behave if I pass it a blank string or Null?_ When you have a suite of well-named unit tests, each test should clearly explain the expected output for a given input. In addition, the test should be able to verify that it actually works.
+It might not always be obvious what a particular method does or how it behaves given a certain input. You might ask yourself: _How does this method behave if I pass it a blank string or null?_ When you have a suite of well-named unit tests, each test should clearly explain the expected output for a given input. In addition, the test should be able to verify that it actually works.
 
 ### Less coupled code
 
@@ -35,7 +35,7 @@ When code is tightly coupled, it can be difficult to unit test. Without creating
 
 ## Characteristics of good unit tests
 
-Several important characteristics that define a good unit test:
+There are several important characteristics that define a good unit test:
 
 - **Fast**: It's not uncommon for mature projects to have thousands of unit tests. Unit tests should take little time to run. Milliseconds.
 - **Isolated**: Unit tests are standalone, can run in isolation, and have no dependencies on any outside factors, such as a file system or database.
@@ -237,9 +237,8 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 
       [!code-csharp[BeforeSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeSetup)]
       
-      ```csharp
-      // more tests...
-      ```
+      *More tests...*
+      
 
       [!code-csharp[BeforeHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeHelperMethod)]
    :::column-end:::
@@ -248,9 +247,8 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 
       [!code-csharp[AfterHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterHelperMethod)]
       
-      ```csharp
-      // more tests...
-      ```
+      *More tests...*
+
       
       [!code-csharp[AfterSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterSetup)]
    :::column-end:::

@@ -36,8 +36,8 @@ Azure services are accessed using specialized client classes from the various Az
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
 
-:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential_UseCredential":::
+:::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential_UseCredential":::
 
 An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential":::
+:::code language="csharp" source="../snippets/authentication/local-dev-account/Program.cs" id="snippet_DefaultAzureCredential":::

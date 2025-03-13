@@ -51,7 +51,7 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
         clientBuilder.AddBlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"));
 
-        clientBuilder.UseCredential(new DefaultAzureCredential);
+        clientBuilder.UseCredential(new DefaultAzureCredential());
     });
     #endregion snippet_DefaultAzureCredential_UseCredential
 
@@ -59,7 +59,7 @@ void registerUsingServicePrincipal(WebApplicationBuilder builder)
     builder.Services.AddSingleton<BlobServiceClient>(_ =>
         new BlobServiceClient(
             new Uri("https://<account-name>.blob.core.windows.net"),
-            new DefaultAzureCredential));
+            new DefaultAzureCredential()));
     #endregion snippet_DefaultAzureCredential
 }
 

@@ -40,10 +40,16 @@ items:
                 href: globalization/10.0/version-override.md
           - name: SDK and MSBuild
             items:
+              - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
+                href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
           - name: Windows Forms
             items:
+              - name: API obsoletions
+                href: windows-forms/10.0/obsolete-apis.md
+              - name: Applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types
+                href: windows-forms/10.0/menuitem-contextmenu.md
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation
@@ -114,6 +120,8 @@ items:
                 href: core-libraries/9.0/ziparchiveentry-encoding.md
           - name: Cryptography
             items:
+              - name: APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0
+                href: cryptography/9.0/api-removed-pkcs.md
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
@@ -1614,6 +1622,8 @@ items:
                 href: cryptography/10.0/version-override.md
           - name: .NET 9
             items:
+              - name: APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0
+                href: cryptography/9.0/api-removed-pkcs.md
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
@@ -1890,6 +1900,8 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
+                href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
           - name: .NET 9
@@ -2124,6 +2136,10 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: API obsoletions
+                href: windows-forms/10.0/obsolete-apis.md
+              - name: Applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types
+                href: windows-forms/10.0/menuitem-contextmenu.md
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation

@@ -1,6 +1,10 @@
 ---
 ms.topic: include
+<<<<<<< HEAD
 ms.date: 08/15/2024
+=======
+ms.date: 03/13/2025
+>>>>>>> main
 ---
 
 ## Register the app in Azure

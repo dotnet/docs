@@ -60,10 +60,11 @@ There's a local variable for the handler. If you used the body of the lambda, th
 
 Code outside the class can't raise the event, nor can it perform any other operations.
 
+Beginning with C# 14, events can be declared as [partial members](./language-reference/keywords/partial-member.md). A partial event declaration must include a *defining declaration* and an *implementing declaration*. The defining declaration must use the field-like event syntax. The implementing declaration must declare the `add` and `remove` handlers.
+
 ## Return values from event subscribers
 
-Your simple version is working fine. Let's add another feature:
-Cancellation.
+Your simple version is working fine. Let's add another feature: Cancellation.
 
 When you raise the *Found* event, listeners should be able to stop further processing, if this file is the last one sought.
 

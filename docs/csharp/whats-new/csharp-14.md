@@ -12,6 +12,7 @@ C# 14 includes the following new features. You can try these features using the 
 - [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](#implicit-span-conversions)
 - [Modifiers on simple lambda parameters](#simple-lambda-parameters-with-modifiers)
 - [`field` backed properties](#the-field-keyword)
+- [`partial` events and constructors](#more-partial-members)
 
 C# 14 is supported on **.NET 10**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
@@ -54,7 +55,7 @@ There's a potential breaking change or confusion reading code in types that also
 
 If you try this feature and have feedback, comment on the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
 
-The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature. You can try it if you're using .NET 9 and C# 13 to provide [feedback](https://github.com/dotnet/csharplang/issues/140).
+The [`field`](../language-reference/keywords/field.md) contextual keyword is in C# 13 as a preview feature.
 
 ## Implicit span conversions
 
@@ -70,7 +71,7 @@ Beginning with C# 14, the argument to `nameof` can be an unbound generic type. F
 
 ## Simple lambda parameters with modifiers
 
-Beginning with C# 14, you can add parameter modifiers, such as `scoped`, `ref`, `in`, `out`, or `ref readonly` to lambda expression parameters without specifying the parameter type:
+You can add parameter modifiers, such as `scoped`, `ref`, `in`, `out`, or `ref readonly` to lambda expression parameters without specifying the parameter type:
 
 ```csharp
 delegate bool TryParse<T>(string text, out T result);
@@ -87,6 +88,16 @@ TryParse<int> parse2 = (string text, out int result) => Int32.TryParse(text, out
 The `params` modifier still requires an explicitly typed parameter list.
 
 You can read more about these changes in the article on [lambda expressions](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) in the C# language reference.
+
+## More partial members
+
+You can now declare [instance constructors](../programming-guide/classes-and-structs/constructors.md#partial-constructors) and [events](../event-pattern.md) as [partial members](../language-reference/keywords/partial-member.md).
+
+Partial constructors and partial events must include exactly one *defining declaration* and one *implementing declaration*.
+
+Only the implementing declaration of a partial constructor can include a constructor initializer, `this()` or `base()`. Only one partial type declaration can include the primary constructor syntax.
+
+The implementing declaration of a partial event must include `get` and `remove` accessors. The defining declaration declares a field-like event.
 
 ## See also
 

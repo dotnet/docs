@@ -3,7 +3,7 @@ title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
-ms.date: 03/13/2025
+ms.date: 03/14/2025
 ms.custom: devdivchpfy22
 ---
 
@@ -242,25 +242,42 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 > The `SetUp` and `TearDown` attributes are removed in [xUnit](https://xunit.net/) version 2.x and later.
 
 :::row:::
-:::column span="":::
+:::column span="2":::
 **Original code**
-
-[!code-csharp[BeforeSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeSetup)]
-      
-*More tests...*  
-
-[!code-csharp[BeforeHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeHelperMethod)]
-
 :::column-end:::
-:::column span="":::
+:::column span="2":::
 **Apply best practice**
+:::column-end:::
+:::row-end:::
 
+:::row:::
+:::column span="2":::
+[!code-csharp[BeforeSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeSetup)]
+:::column-end:::
+:::column span="2":::
 [!code-csharp[AfterHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterHelperMethod)]
-      
-*More tests...*
-      
-[!code-csharp[AfterSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterSetup)]
+:::column-end:::
+:::row-end:::
 
+:::row:::
+:::column span="2":::
+```csharp
+// More tests...
+```
+:::column-end:::
+:::column span="2":::
+```csharp
+// More tests...
+```
+:::column-end:::
+:::row-end:::
+
+:::row:::
+:::column span="2":::
+[!code-csharp[BeforeHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeHelperMethod)]
+:::column-end:::
+:::column span="2":::
+[!code-csharp[AfterSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterSetup)]
 :::column-end:::
 :::row-end:::
 

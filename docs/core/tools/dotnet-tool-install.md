@@ -129,6 +129,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
+- **`--source <SOURCE>`**
+
+  Specifies the source of the package that should be used instead of all NuGet packages that are to be used during the installation.
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
@@ -141,7 +145,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
 
-- **`--no-cache`**
+- **`--no-http-cache`**
 
   Don't cache packages and HTTP requests.
 
@@ -156,6 +160,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`--tool-path <PATH>`**
 
   Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
+
+- **`--allow-roll-forward`**
+
+  Allows to use the newer versions of the .NET runtime if the runtime it targets isn't installed.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 

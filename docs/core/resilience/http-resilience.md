@@ -37,7 +37,7 @@ To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on t
 There are several resilience-centric extensions available. Some are standard, thus employing various industry best practices, and others are more customizable. When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
 
 > [!IMPORTANT]
-> All of the examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
+> All the examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
 
 ## Add standard resilience handler
 
@@ -76,6 +76,19 @@ Given that you've created an <xref:Microsoft.Extensions.DependencyInjection.IHtt
 :::code language="csharp" source="snippets/http-resilience/Program.ResilienceHandler.cs" id="standard":::
 
 The preceding code adds the standard resilience handler to the <xref:System.Net.Http.HttpClient>. Like most resilience APIs, there are overloads that allow you to customize the default options and applied resilience strategies.
+
+## Remove standard resilience handler
+
+The following example demonstrates how to configure a custom <xref:System.Net.Http.HttpClient> using the `AddHttpClient` method, remove all predefined resilience strategies, and add new custom ones. 
+This approach allows you to clear existing configurations and define new ones according to your specific requirements.
+:::code language="csharp" source="snippets/http-resilience/Program.RemoveHandlers.cs" id="remove-handlers":::
+
+The preceding code:
+
+- Adds the standard resilience handler to the named <xref:System.Net.Http.HttpClient> instance
+- Removes all predefined resilience handlers that were previously registered. This is useful when you want to start with a clean slate and add your own custom strategies.
+- Adds a `StandardHedgingHandler` to the <xref:System.Net.Http.HttpClient>.You can replace `AddStandardHedgingHandler()` with any strategy that suits your application's needs, such as retry mechanisms, circuit breakers, or other resilience techniques.
+
 
 ### Standard resilience handler defaults
 

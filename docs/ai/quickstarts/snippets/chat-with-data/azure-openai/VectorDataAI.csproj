@@ -11,10 +11,10 @@
     <PackageReference Include="Azure.Identity" Version="1.13.2" />
     <PackageReference Include="Azure.AI.OpenAI" Version="2.1.0" />
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.0.1-preview.1.24570.5" />
-    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="9.0.0-preview.1.25078.1" />
+    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="9.0.0-preview.1.25161.1" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.31.0-preview" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.3" />
   </ItemGroup>
 
 </Project>

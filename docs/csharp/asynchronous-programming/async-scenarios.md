@@ -7,7 +7,7 @@ ms.subservice: async-task-programming
 ---
 # Asynchronous programming scenarios
 
-If your code implements I/O-bound scenarios to support network data requests, database access, or file system read/write, asynchronous programming is the best approach. You can also write asynchronous code for CPU-bound scenarios like expensive calculations.
+If your code implements I/O-bound scenarios to support network data requests, database access, or file system read/writes, asynchronous programming is the best approach. You can also write asynchronous code for CPU-bound scenarios like expensive calculations.
 
 C# has a language-level asynchronous programming model that allows you to easily write asynchronous code without having to juggle callbacks or conform to a library that supports asynchrony. The model follows what is known as the [Task-based asynchronous pattern (TAP)](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
@@ -15,12 +15,12 @@ C# has a language-level asynchronous programming model that allows you to easily
 
 The `Task` and `Task<T>` objects represent the core of asynchronous programming. These objects are used to model asynchronous operations by supporting the `async` and `await` keywords. In most cases, the model is fairly simple for both I/O-bound and CPU-bound scenarios. Inside an `async` method:
 
-- **I/O-bound code**: Start an operation represented by a `Task` or `Task<T>` object inside an `async` method.
-- **CPU-bound code**: Start an operation on a background thread with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
+- **I/O-bound code** starts an operation represented by a `Task` or `Task<T>` object within the `async` method.
+- **CPU-bound code** starts an operation on a background thread with the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=nameWithType> method.
 
 In both cases, an active `Task` represents an asynchronous operation that might not be complete.
 
-The `await` keyword is where the magic happens. It yields control to the caller of the method that contains the `await` expression, and ultimately allows a UI to be responsive or a service to be elastic. While [there are ways](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) to approach asynchronous code other than by using the `async` and `await` expressions, this article focuses on the language-level constructs.
+The `await` keyword is where the magic happens. It yields control to the caller of the method that contains the `await` expression, and ultimately allows the UI to be responsive or a service to be elastic. While [there are ways](../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) to approach asynchronous code other than by using the `async` and `await` expressions, this article focuses on the language-level constructs.
 
 > [!NOTE]
 > Some examples presented in this article use the <xref:System.Net.Http.HttpClient?displayProperty=fullName> class to download data from a web service. In the example code, the `s_httpClient` object is a static field of type `Program` class:
@@ -39,7 +39,7 @@ In the asynchronous programming model, there are several key concepts to underst
 
 * You can use asynchronous code for both I/O-bound and CPU-bound code, but the implementation is different.
 * Asynchronous code uses `Task<T>` and `Task` objects as constructs to model work running in the background.
-* The `async` keyword declares a method into an asynchronous method, which allows you to use the `await` keyword in the method body.
+* The `async` keyword declares a method as an asynchronous method, which allows you to use the `await` keyword in the method body.
 * When you apply the `await` keyword, the code suspends the calling method and yields control back to its caller until the task completes.
 * You can only use the `await` expression in an asynchronous method.
 
@@ -55,7 +55,7 @@ The code expresses the intent (downloading data asynchronously) without getting 
 
 In the next example, a mobile game inflicts damage on several agents on the screen in response to a button event. Performing the damage calculation can be expensive. Running the calculation on the UI thread can cause display and UI interaction issues during the calculation.
 
-The best way to handle the task is to start a background thread to complete the work with the `Task.Run` method. The operation yields by using an `await` expression. It resumes when the task completes. This approach allows the UI to run smoothly while the work completes in the background.
+The best way to handle the task is to start a background thread to complete the work with the `Task.Run` method. The operation yields by using an `await` expression. The operation resumes when the task completes. This approach allows the UI to run smoothly while the work completes in the background.
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="PerformGameCalculation":::
 
@@ -63,14 +63,14 @@ The code clearly expresses the intent of the button `Clicked` event. It doesn't 
 
 ## Recognize CPU-bound and I/O-bound scenarios
 
-The previous examples demonstrated how to use the `async` modifier and `await` expressions for I/O-bound and CPU-bound work. An example was provided for each scenario to showcase how the code is different based on where the operation is bound. To prepare for your implementation, you need to understand how to identify when an operation is I/O-bound or CPU-bound. Your implementation choice can greatly affect the performance of your code and potentially lead to misusing constructs.
+The previous examples demonstrate how to use the `async` modifier and `await` expression for I/O-bound and CPU-bound work. An example for each scenario showcases how the code is different based on where the operation is bound. To prepare for your implementation, you need to understand how to identify when an operation is I/O-bound or CPU-bound. Your implementation choice can greatly affect the performance of your code and potentially lead to misusing constructs.
 
 There are two primary questions to address before you write any code:
 
 | Question | Scenario | Implementation |
 | --- | --- | --- |
-| _Should the code wait for a result or action, such as data from a database?_ | **I/O-bound** | Use `async` and `await` expressions _without_ the `Task.Run` method. <br><br> Avoid using the Task Parallel Library. |
-| _Should the code run an expensive computation?_ | **CPU-bound** | Use `async` and `await` expressions, but spawn off the work on another thread with the `Task.Run` method. This approach addresses concerns with CPU responsiveness. <br><br> If the work is appropriate for concurrency and parallelism, also consider using the [Task Parallel Library](../../standard/parallel-programming/task-parallel-library-tpl.md). |
+| _Should the code wait for a result or action, such as data from a database?_ | **I/O-bound** | Use the `async` modifier and `await` expression _without_ the `Task.Run` method. <br><br> Avoid using the Task Parallel Library. |
+| _Should the code run an expensive computation?_ | **CPU-bound** | Use the `async` modifier and `await` expression, but spawn off the work on another thread with the `Task.Run` method. This approach addresses concerns with CPU responsiveness. <br><br> If the work is appropriate for concurrency and parallelism, also consider using the [Task Parallel Library](../../standard/parallel-programming/task-parallel-library-tpl.md). |
 
 Always measure the execution of your code. You might discover that your CPU-bound work isn't costly enough compared with the overhead of context switches when multithreading. Every choice has tradeoffs. Pick the correct tradeoff for your situation.
 
@@ -117,7 +117,7 @@ private async void OnSeeTheDotNetsButtonClick(object sender, RoutedEventArgs e)
 
 ### Wait for multiple tasks to complete
 
-In some scenarios, the code needs to retrieve multiple pieces of data concurrently. The `Task` APIs provides methods that enable you to write asynchronous code that performs a nonblocking wait on multiple background jobs:
+In some scenarios, the code needs to retrieve multiple pieces of data concurrently. The `Task` APIs provide methods that enable you to write asynchronous code that performs a nonblocking wait on multiple background jobs:
 
 - <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> method
 - <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType> method
@@ -130,7 +130,7 @@ You can write this code more succinctly by using LINQ:
 
 :::code language="csharp" source="snippets/async-scenarios/Program.cs" ID="GetUsersForDatasetByLINQ":::
 
-Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method. This example uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
+Although you write less code by using LINQ, exercise caution when mixing LINQ with asynchronous code. LINQ uses deferred (or lazy) execution. Asynchronous calls don't happen immediately as they do in a `foreach` loop, unless you force the generated sequence to iterate with a call to the `.ToList()` or `.ToArray()` method. This example uses the <xref:System.Linq.Enumerable.ToArray%2A?displayProperty=nameWithType> method to perform the query eagerly and store the results in an array. This approach forces the `id => GetUserAsync(id)` statement to run and initiate the task.
 
 ## Review considerations for asynchronous programming
 
@@ -144,13 +144,13 @@ When you use the `async` modifier, you should include one or more `await` expres
 
 The .NET style convention is to add the "Async" suffix to all asynchronous method names. This approach helps to more easily differentiate between synchronous and asynchronous methods. Certain methods that aren't explicitly called by your code (such as event handlers or web controller methods) don't necessarily apply in this scenario. Because these items aren't explicitly called by your code, using explicit naming isn't as important.
 
-### Use 'async void' only with event handlers
+### Return 'async void' only from event handlers
 
-Event handlers must declare a `void` return types and can't use and returned `Task` and `Task<T>` objects like other methods. When you write asynchronous event handlers, you need to use the `async` modifier on a  `void` returning method for the handlers. Other implementations of `async void` returning methods don't follow the TAP model and can present challenges:
+Event handlers must declare `void` return types and can't use or return `Task` and `Task<T>` objects as other methods do. When you write asynchronous event handlers, you need to use the `async` modifier on a  `void` returning method for the handlers. Other implementations of `async void` returning methods don't follow the TAP model and can present challenges:
 
 * Exceptions thrown in an `async void` method can't be caught outside of that method
 * `async void` methods are difficult to test
-* `async void` methods can cause bad side effects if the caller isn't expecting them to be asynchronous
+* `async void` methods can cause negative side effects if the caller isn't expecting them to be asynchronous
 
 ### Use caution with asynchronous lambdas in LINQ
 
@@ -158,16 +158,16 @@ It's important to use caution when you implement asynchronous lambdas in LINQ ex
 
 ### Yield for tasks in a nonblocking manner
 
-If your program needs the result of a task, write code that implements the `await` expression in a nonblocking manner. Blocking the current thread as a means to wait synchronously for a `Task` item to complete. Blocking for a task to complete can result in deadlocks and blocked context threads. This programming approach can require more complex error-handling. The following table provides guidance on how to deal with accessing results from tasks in a nonblocking way:
+If your program needs the result of a task, write code that implements the `await` expression in a nonblocking manner. Blocking the current thread as a means to wait synchronously for a `Task` item to complete can result in deadlocks and blocked context threads. This programming approach can require more complex error-handling. The following table provides guidance on how access results from tasks in a nonblocking way:
 
 | Task scenario | Current code | Replace with 'await' |
 | --- | --- | --- |
 | _Retrieve the result of a background task_ | `Task.Wait` or `Task.Result` | `await`              |
-| _Continue when any task completes_            | `Task.WaitAny`               | `await Task.WhenAny` |
-| _Continue when **all** tasks complete_        | `Task.WaitAll`                 | `await Task.WhenAll` |
-| _Continue after some amount of time_         | `Thread.Sleep`               | `await Task.Delay`   |
+| _Continue when any task completes_         | `Task.WaitAny`               | `await Task.WhenAny` |
+| _Continue when **all** tasks complete_     | `Task.WaitAll`               | `await Task.WhenAll` |
+| _Continue after some amount of time_       | `Thread.Sleep`               | `await Task.Delay`   |
 
-### Consider using the `ValueTask` type
+### Consider using ValueTask type
 
 When an asynchronous method returns a `Task` object, performance bottlenecks might be introduced in certain paths. Because `Task` is a reference type, a `Task` object is allocated from the heap. If a method declared with the `async` modifier returns a cached result or completes synchronously, the extra allocations can accrue significant time costs in performance critical sections of code. This scenario can become costly when the allocations occur in tight loops. For more information, see [generalized async return types](../language-reference/keywords/async.md#return-types).
 

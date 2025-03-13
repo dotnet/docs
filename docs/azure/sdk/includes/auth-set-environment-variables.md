@@ -78,7 +78,7 @@ setx AZURE_TENANT_ID "<your-tenant-id>" /m
 setx AZURE_CLIENT_SECRET "<your-client-secret>" /m
 ```
 
-PowerShell can also be used to set environment variables at the user or machine level:
+PowerShell can also be used to set environment variables at the user or system level:
 
 ```powershell
 # Set user environment variables

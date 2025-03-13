@@ -11,9 +11,23 @@
 
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 
+- [ASP.NET (Core)](https://github.com/dotnet/AspNetCore.Docs)
 - [.NET Aspire](https://github.com/dotnet/docs-aspire)
 - [.NET Desktop workloads](https://github.com/dotnet/docs-desktop)
+- [.NET MAUI](https://github.com/dotnet/docs-maui)
+- [.NET Mobile](https://github.com/dotnet/docs-mobile)
+- [.NET EntityFramework (core)](https://github.com/dotnet/EntityFramework.Docs)
+
+API reference documentation use the following repositories. Some API reference is generated directly from the `///` in the product source. The following repositories accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth.
+
 - [API reference](https://github.com/dotnet/dotnet-api-docs)
+- [Android API reference](https://github.com/dotnet/android-api-docs)
+- [macOS and iOS API reference](https://github.com/dotnet/macios-api-docs)
+- [.NET MAUI API reference](https://github.com/dotnet/maui-api-docs)
+- [.NET EntityFramework API reference](https://github.com/dotnet/EntityFramework.ApiDocs)
+
+The C# language specification documentation comes from the following two repositories:
+
 - [C# Language design](https://github.com/dotnet/csharplang)
 - [C# specification - draft](https://github.com/dotnet/csharpstandard)
 

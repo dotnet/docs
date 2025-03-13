@@ -51,7 +51,7 @@ public string Message
 
 You can declare a body for one or both accessors for a field backed property.
 
-There's a potential breaking change or confusion reading code in types that also include a symbol named `field`. You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier, or you can rename the current `field` symbol to provide more distinction.
+There's a potential breaking change or confusion reading code in types that also include a symbol named `field`. You can use `@field` or `this.field` to disambiguate between the `field` keyword and the identifier, or you can rename the current `field` symbol to provide better distinction.
 
 If you try this feature and have feedback, comment on the [feature issue](https://github.com/dotnet/csharplang/issues/140) in the `csharplang` repository.
 
@@ -65,7 +65,7 @@ C# 14 introduces first-class support for <xref:System.Span`1?displayProperty=ful
 
 You can find the list of implicit span conversions in the article on [built-in types](../language-reference/builtin-types/built-in-types.md) in the language reference section. You can learn more details by reading the feature specification for [First class span types](~/_csharplang/proposals/first-class-span-types.md).
 
-## Unbound generic types and nameof
+## Unbound generic types and `nameof`
 
 Beginning with C# 14, the argument to `nameof` can be an unbound generic type. For example, `nameof(List<>)` evaluates to `List`. In earlier versions of C#, only closed generic types, such as `List<int>`, could be used to return the `List` name.
 
@@ -95,7 +95,7 @@ You can now declare [instance constructors](../programming-guide/classes-and-str
 
 Partial constructors and partial events must include exactly one *defining declaration* and one *implementing declaration*.
 
-Only the implementing declaration of a partial constructor can include a constructor initializer, `this()` or `base()`. Only one partial type declaration can include the primary constructor syntax.
+Only the implementing declaration of a partial constructor can include a constructor initializer: `this()` or `base()`. Only one partial type declaration can include the primary constructor syntax.
 
 The implementing declaration of a partial event must include `get` and `remove` accessors. The defining declaration declares a field-like event.
 

@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Partial member (C# Reference)
 
-A partial member has one *declaring declaration* and often one *implementing declaration*. The *declaring declaration* doesn't include a body. The *implementing declaration* provides the body of the member. Partial members enable class designers to provide member hooks that can be implemented by tooling such as source generators. Partial types and members provide a way for human developers to write part of a type while tools write other parts of the type. If the developer doesn't supply an optional implementing declaration, the compiler can remove the declaring declaration at compile time. The following conditions apply to partial members:
+A partial member has one *declaring declaration* and often one *implementing declaration*. The *declaring declaration* doesn't include a body. The *implementing declaration* provides the body of the member. Partial members enable class designers to provide member hooks for tooling such as source generators to implement. Partial types and members provide a way for human developers to write part of a type while tools write other parts of the type. If the developer doesn't supply an optional implementing declaration, the compiler can remove the declaring declaration at compile time. The following conditions apply to partial members:
 
 - Declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md).
 - Signatures in both parts of the partial type must match.
@@ -29,7 +29,7 @@ The following example shows a partial method that conforms to the preceding rest
 
 Any member that doesn't conform to all those restrictions (for example, `public virtual partial void` method), must provide an implementation.
 
-Partial properties, indexers and events can't use auto-implemented syntax for the implementing declaration. The defining declaration uses the same syntax. The implementing declaration must include at least one implemented accessor. That accessor may be a [field-backed property](./field.md). The implementing declaration for a partial event must define the `add` and `remove` handlers.
+Partial properties, indexers, and events can't use auto-implemented syntax for the implementing declaration. The defining declaration uses the same syntax. The implementing declaration must include at least one implemented accessor. That accessor can be a [field-backed property](./field.md). The implementing declaration for a partial event must define the `add` and `remove` handlers.
 
 Partial members can also be useful in combination with source generators. For example a regex could be defined using the following pattern:
 

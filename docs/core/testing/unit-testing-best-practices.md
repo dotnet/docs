@@ -122,16 +122,18 @@ The name of your test should consist of three parts:
 Naming standards are important because they help to express the test purpose and application. Tests are more than just making sure your code works. They also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code ant not have to look at the code itself. Moreover, when tests fail, you can see exactly which scenarios don't meet your expectations.
 
 :::row:::
-   :::column span="":::
-      **Original code**
+:::column span="":::
+**Original code**
 
-      [!code-csharp[BeforeNaming](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeNaming)] 
-   :::column-end:::
-   :::column span="":::
-      **Apply best practice**
+[!code-csharp[BeforeNaming](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeNaming)]
 
-      [!code-csharp[AfterNamingAndMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterNamingAndMinimallyPassing)]
-   :::column-end:::
+:::column-end:::
+:::column span="":::
+**Apply best practice**
+
+[!code-csharp[AfterNamingAndMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterNamingAndMinimallyPassing)]
+
+:::column-end:::
 :::row-end:::
 
 ### Arrange your tests
@@ -147,16 +149,18 @@ When you follow the pattern, you can clearly separate what is being tested from 
 Readability is one of the most important aspects when writing a unit test. Separating each pattern action within the test clearly highlights the dependencies required to call your code, how your code is called, and what you're trying to assert. While it might be possible to combine some steps and reduce the size of your test, the overall goal is to make the test as readable as possible.
 
 :::row:::
-   :::column span="":::
-      **Original code**
+:::column span="":::
+**Original code**
 
-      [!code-csharp[BeforeArranging](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeArranging)] 
-   :::column-end:::
-   :::column span="":::
-      **Apply best practice**
+[!code-csharp[BeforeArranging](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeArranging)] 
 
-      [!code-csharp[AfterArranging](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterArranging)]
-   :::column-end:::
+:::column-end:::
+:::column span="":::
+**Apply best practice**
+
+[!code-csharp[AfterArranging](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterArranging)]
+
+:::column-end:::
 :::row-end:::
 
 ### Write minimally passing tests
@@ -166,16 +170,18 @@ The input for a unit test should be the simplest information needed to verify th
 Tests that include more information than required to pass the current test have a higher chance of introducing errors into the test and can make the intent of the test less clear. When writing tests, you want to focus on the behavior. Setting extra properties on models or using nonzero values when not required, only detracts from what you're trying to confirm.
 
 :::row:::
-   :::column span="":::
-      **Original code**
+:::column span="":::
+**Original code**
 
-      [!code-csharp[BeforeMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMinimallyPassing)] 
-   :::column-end:::
-   :::column span="":::
-      **Apply best practice**
+[!code-csharp[BeforeMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMinimallyPassing)] 
 
-      [!code-csharp[AfterNamingAndMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterNamingAndMinimallyPassing)]
-   :::column-end:::
+:::column-end:::
+:::column span="":::
+**Apply best practice**
+
+[!code-csharp[AfterNamingAndMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterNamingAndMinimallyPassing)]
+
+:::column-end:::
 :::row-end:::
 
 ### Avoid magic strings
@@ -186,16 +192,18 @@ Tests that include more information than required to pass the current test have 
 > Make your goal to express as much intent as possible in your unit test code. Rather than using magic strings, assign any hard-coded values to constants.
 
 :::row:::
-   :::column span="":::
-      **Original code**
+:::column span="":::
+**Original code**
 
-      [!code-csharp[BeforeMagicString](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMagicString)] 
-   :::column-end:::
-   :::column span="":::
-      **Apply best practice**
+[!code-csharp[BeforeMagicString](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMagicString)] 
 
-      [!code-csharp[AfterMagicString](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterMagicString)]
-   :::column-end:::
+:::column-end:::
+:::column span="":::
+**Apply best practice**
+
+[!code-csharp[AfterMagicString](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterMagicString)]
+
+:::column-end:::
 :::row-end:::
 
 ### Avoid coding logic in unit tests
@@ -206,16 +214,18 @@ When you write your unit tests, avoid manual string concatenation, logical condi
 > If adding logic in your test seems unavoidable, consider splitting the test into two or more different tests to limit the logic requirements.
 
 :::row:::
-   :::column span="":::
-      **Original code**
+:::column span="":::
+**Original code**
 
-      [!code-csharp[LogicInTests](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#LogicInTests)] 
-   :::column-end:::
-   :::column span="":::
-      **Apply best practice**
+[!code-csharp[LogicInTests](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#LogicInTests)] 
 
-      [!code-csharp[AfterTestLogic](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterTestLogic)]
-   :::column-end:::
+:::column-end:::
+:::column span="":::
+**Apply best practice**
+
+[!code-csharp[AfterTestLogic](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterTestLogic)]
+
+:::column-end:::
 :::row-end:::
 
 ### Use helper methods instead of Setup and Teardown
@@ -232,26 +242,26 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 > The `SetUp` and `TearDown` attributes are removed in [xUnit](https://xunit.net/) version 2.x and later.
 
 :::row:::
-   :::column span="":::
-      **Original code**
+:::column span="":::
+**Original code**
 
-      [!code-csharp[BeforeSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeSetup)]
+[!code-csharp[BeforeSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeSetup)]
       
-      *More tests...*
-      
+*More tests...*  
 
-      [!code-csharp[BeforeHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeHelperMethod)]
-   :::column-end:::
-   :::column span="":::
-      **Apply best practice**
+[!code-csharp[BeforeHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeHelperMethod)]
 
-      [!code-csharp[AfterHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterHelperMethod)]
-      
-      *More tests...*
+:::column-end:::
+:::column span="":::
+**Apply best practice**
 
+[!code-csharp[AfterHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterHelperMethod)]
       
-      [!code-csharp[AfterSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterSetup)]
-   :::column-end:::
+*More tests...*
+      
+[!code-csharp[AfterSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterSetup)]
+
+:::column-end:::
 :::row-end:::
 
 ### Avoid multiple Act tasks
@@ -265,16 +275,18 @@ When you write your tests, try to include only one Act task per test. Some commo
 Multiple Act tasks need to be individually asserted, and you can't guarantee that all Assert tasks execute. In most unit testing frameworks, after an Assert task fails in a unit test, all subsequent tests are automatically considered as failing. The process can be confusing because some working functionality might be interpreted as failing.
 
 :::row:::
-   :::column span="":::
-      **Original code**
+:::column span="":::
+**Original code**
 
-      [!code-csharp[BeforeMultipleAsserts](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMultipleAsserts)] 
-   :::column-end:::
-   :::column span="":::
-      **Apply best practice**
+[!code-csharp[BeforeMultipleAsserts](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMultipleAsserts)] 
 
-      [!code-csharp[AfterMultipleAsserts](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterMultipleAsserts)]
-   :::column-end:::
+:::column-end:::
+:::column span="":::
+**Apply best practice**
+
+[!code-csharp[AfterMultipleAsserts](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterMultipleAsserts)]
+
+:::column-end:::
 :::row-end:::
 
 ### Validate private methods with public methods

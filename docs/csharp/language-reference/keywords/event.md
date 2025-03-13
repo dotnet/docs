@@ -1,6 +1,7 @@
 ---
 description: "event - C# Reference"
-title: "event keyword"3/13/2025
+title: "event keyword"
+ms.date: 03/13/2025
 f1_keywords:
   - "event"
   - "remove"

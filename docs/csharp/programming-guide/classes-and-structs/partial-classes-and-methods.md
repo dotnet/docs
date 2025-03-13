@@ -149,7 +149,7 @@ partial void OnNameChanged()
 
 ## C# Language Specification
 
-For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-type-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The new features for partial members are defined in the feature specifications for [extending partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md), [partial properties and indexers](~/csharplan/proposals/csharp-13.0/partial-properties.md), and [partial events and constructors](~/csharplang/proposals/partial-events-constructors.md).
+For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-type-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The new features for partial members are defined in the feature specifications for [extending partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md), [partial properties and indexers](~/_csharplang/proposals/csharp-13.0/partial-properties.md), and [partial events and constructors](~/_csharplang/proposals/partial-events-and-constructors.md).
 
 ## See also
 

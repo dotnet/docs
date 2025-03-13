@@ -11,11 +11,7 @@ ms.date: 03/13/2025
 Apps hosted outside of Azure, such as on-premises or in a third-party data center, should use an application service principal through [Microsoft Entra ID](/entra/fundamentals/whatis) to authenticate to Azure services. In the sections ahead, you learn:
 
 - How to register an application with Microsoft Entra to create a service principal
-<<<<<<< HEAD
-- How to assign roles to the service principal to scope permissions
-=======
 - How to assign roles to scope permissions
->>>>>>> main
 - How to authenticate using a service principal from your app code
 
 Using dedicated application service principals allows you to adhere to the principle of least privilege when accessing Azure resources. Permissions are limited to the specific requirements of the app during development, preventing accidental access to Azure resources intended for other apps or services. This approach also helps avoid issues when the app is moved to production by ensuring it isn't over-privileged in the development environment.

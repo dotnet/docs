@@ -26,7 +26,7 @@ The `await` keyword is where the magic happens. It yields control to the caller 
 > Some examples presented in this article use the <xref:System.Net.Http.HttpClient?displayProperty=fullName> class to download data from a web service. In the example code, the `s_httpClient` object is a static field of type `Program` class:
 >
 > `private static readonly HttpClient s_httpClient = new();`
-> 
+>
 > For more information, see the [complete example code](#review-the-complete-example) at the end of this article.
 
 ### Review underlying concepts
@@ -43,7 +43,7 @@ In the asynchronous programming model, there are several key concepts to underst
 * When you apply the `await` keyword, the code suspends the calling method and yields control back to its caller until the task completes.
 * You can only use the `await` expression in an asynchronous method.
 
-### I/O-bound example: Download data from web service 
+### I/O-bound example: Download data from web service
 
 In this example, when the user selects a button, the app downloads data from a web service. You don't want to block the UI thread for the app during the download process. The following code accomplishes this task:
 
@@ -181,7 +181,7 @@ Avoid writing code that depends on the state of global objects or the execution 
 
 * Easier to reason about code
 * Easier to test code
-* More simple to mix asynchronous and synchronous code 
+* More simple to mix asynchronous and synchronous code
 * Able to avoid race conditions in code
 * Simple to coordinate asynchronous code that depends on return values
 * (Bonus) Works well with dependency injection in code

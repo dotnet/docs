@@ -2,6 +2,13 @@
 ms.topic: include
 ms.date: 08/15/2024
 ---
+
+## Authenticate to Azure services from your app
+
+The [Azure Identity library](/dotnet/api/azure.identity?view=azure-dotnet&preserve-view=true) provides various *credentials*&mdash;implementations of `TokenCredential` adapted to supporting different scenarios and Microsoft Entra authentication flows. The steps ahead demonstrate how to use <xref:Azure.Identity.DefaultAzureCredential> when working with user accounts locally.
+
+### Implement the code
+
 [DefaultAzureCredential](../authentication/credential-chains.md#defaultazurecredential-overview) is an opinionated, ordered sequence of mechanisms for authenticating to Microsoft Entra ID. Each authentication mechanism is a class derived from the [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet&preserve-view=true) class and is known as a *credential*. At runtime, `DefaultAzureCredential` attempts to authenticate using the first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. In this way, your app can use different credentials in different environments without writing environment-specific code.
 
 To use `DefaultAzureCredential`, add the [Azure.Identity](/dotnet/api/azure.identity) and optionally the [Microsoft.Extensions.Azure](/dotnet/api/microsoft.extensions.azure) packages to your application:
@@ -29,31 +36,8 @@ Azure services are accessed using specialized client classes from the various Az
 1. Register the Azure service client using the corresponding `Add`-prefixed extension method.
 1. Pass an instance of `DefaultAzureCredential` to the `UseCredential` method.
 
-For example:
+:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential_UseCredential":::
 
-```c#
-using Microsoft.Extensions.Azure;
-using Azure.Identity;
+An alternative to the `UseCredential` method is to provide the credential to the service client directly:
 
-builder.Services.AddAzureClients(clientBuilder =>
-{
-    clientBuilder.AddBlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"));
-    clientBuilder.UseCredential(new DefaultAzureCredential());
-});
-```
-
-An alternative to `UseCredential` is to instantiate `DefaultAzureCredential` directly:
-
-```c#
-using Azure.Identity;
-
-builder.Services.AddSingleton<BlobServiceClient>(_ =>
-    new BlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"),
-        new DefaultAzureCredential()));
-```
-
-When the preceding code runs on your local development workstation, it looks in the environment variables for an application service principal or at locally installed developer tools, such as Visual Studio, for a set of developer credentials. Either approach can be used to authenticate the app to Azure resources during local development.
-
-When deployed to Azure, this same code can also authenticate your app to other Azure resources. `DefaultAzureCredential` can retrieve environment settings and managed identity configurations to authenticate to other services automatically.
+:::code language="csharp" source="../snippets/authentication/local-dev-service-principal/Program.cs" id="snippet_ClientSecretCredential":::

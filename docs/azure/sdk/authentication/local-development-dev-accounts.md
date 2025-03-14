@@ -38,12 +38,13 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 ### [Visual Studio](#tab/sign-in-visual-studio)
 
-Developers using Visual Studio 2017 or later can authenticate using their Microsoft Entra account through the IDE. Apps using `DefaultAzureCredential` or `VisualStudioCredential` can discover and use this account to authenticate app requests when running locally.
+Developers using Visual Studio 2017 or later can authenticate using their developer account through the IDE. Apps using `DefaultAzureCredential` or `VisualStudioCredential` can discover and use this account to authenticate app requests when running locally.
 
-1. Navigate to **Tools** > **Options** to open the options dialog.
+1. Inside Visual Studio, navigate to **Tools** > **Options** to open the options dialog.
 1. In the **Search Options** box at the top, type *Azure* to filter the available options.
 1. Under **Azure Service Authentication**, choose **Account Selection**.
-1. Select the drop-down menu under **Choose an account** and choose to add a Microsoft Account. A window opens, prompting you to pick an account. Enter the credentials for your desired Azure account, and then select the confirmation.
+1. Select the drop-down menu under **Choose an account** and choose to add a Microsoft Account.
+1. In the window that opens, enter the credentials for your desired Azure account, and then confirm your inputs.
 
     :::image type="content" source="../media/visual-studio-sign-in.png" alt-text="A screenshot showing how to sign-in to Azure using Visual Studio.":::
 
@@ -53,7 +54,7 @@ Developers using Visual Studio 2017 or later can authenticate using their Micros
 
 Developers coding outside of an IDE can also use the [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using `DefaultAzureCredential` or `AzureCliCredential` can then use this account to authenticate app requests when running locally.
 
-To authenticate with the Azure CLI, run the command `az login`. On a system with a default web browser, the Azure CLI launches the browser to authenticate the user.
+To authenticate with the Azure CLI, run the `az login` command. On a system with a default web browser, the Azure CLI launches the browser to authenticate the user.
 
 ```azurecli
 az login
@@ -69,13 +70,13 @@ az login --use-device-code
 
 Developers coding outside of an IDE can also use the [Azure Developer CLI](/azure/developer/azure-developer-cli/overview) to authenticate. Apps using `DefaultAzureCredential` or `AzureDeveloperCliCredential` can then use this account to authenticate app requests when running locally.
 
-To authenticate with the Azure Developer CLI, run the command `azd auth login`. On a system with a default web browser, the Azure Developer CLI launches the browser to authenticate the user.
+To authenticate with the Azure Developer CLI, run the `azd auth login` command. On a system with a default web browser, the Azure Developer CLI launches the browser to authenticate the user.
 
 ```azdeveloper
 azd auth login
 ```
 
- For systems without a default web browser, the `azd auth login --use-device-code` command uses the device code authentication flow.
+For systems without a default web browser, the `azd auth login --use-device-code` uses the device code authentication flow. The user can also force the the Azure Developer CLI to use the device code flow rather than launching a browser by specifying the `--use-device-code` argument.
 
 ```bash
 azd auth login --use-device-code
@@ -88,10 +89,14 @@ Developers coding outside of an IDE can also use [Azure PowerShell](/powershell/
 To authenticate with Azure PowerShell, run the command `Connect-AzAccount`. On a system with a default web browser and version 5.0.0 or later of Azure PowerShell, it launches the browser to authenticate the user.
 
 ```azurepowershell
-Connect-AzAccount -UseDeviceAuthentication
+Connect-AzAccount
 ```
 
 For systems without a default web browser, the `Connect-AzAccount` command uses the device code authentication flow. The user can also force Azure PowerShell to use the device code flow rather than launching a browser by specifying the `UseDeviceAuthentication` argument.
+
+```azurepowershell
+Connect-AzAccount -UseDeviceAuthentication
+```
 
 ---
 

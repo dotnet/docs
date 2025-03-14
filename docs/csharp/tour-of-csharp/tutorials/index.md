@@ -43,4 +43,4 @@ This tutorial assumes that you've finished the lessons listed above.
 
 After you finish these tutorials, set up a development environment.
 
-[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]

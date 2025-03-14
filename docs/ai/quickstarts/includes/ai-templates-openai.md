@@ -8,10 +8,8 @@ ms.author: alexwolf
 
 ## Prerequisites
 
-* .NET 9.0 SDK - [Install the .NET 9.0 SDK](https://dotnet.microsoft.com/download)
-* Visual Studio 2022 - [Install Visual Studio 2022](https://visualstudio.microsoft.com/) (optional), or
-* Visual Studio Code - [Install Visual Studio Code](https://code.visualstudio.com) (optional)
-  * With the C# DevKit - [Install C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
+
 * Access to an [OpenAI service](https://openai.com/api/) and the corresponding API key.
 
 ## Install the .NET AI app template

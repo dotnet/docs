@@ -8,7 +8,7 @@ ms.author: alexwolf
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
 
 ## Install the .NET AI app template
 

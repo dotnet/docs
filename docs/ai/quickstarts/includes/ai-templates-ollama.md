@@ -8,7 +8,7 @@ ms.author: alexwolf
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
 
 * Ollama installed locally - [Install Ollama](https://ollama.com/) locally on your device
 

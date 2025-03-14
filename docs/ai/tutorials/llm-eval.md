@@ -29,7 +29,8 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-* [.NET 8.0 SDK](https://dotnet.microsoft.com/download/visual-studio-sdks)
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
+
 * [Create and deploy a GPT-4 model to Azure OpenAI Service](/azure/ai-services/openai/how-to/create-resource)
 
 ## 1 - Clone the evaluation application

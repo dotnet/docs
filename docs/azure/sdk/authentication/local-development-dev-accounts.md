@@ -38,7 +38,7 @@ Next, sign-in to Azure using one of several developer tools that can be used to 
 
 ### [Visual Studio](#tab/sign-in-visual-studio)
 
-Developers using Visual Studio 2017 or later can authenticate using their developer account through the IDE. Apps using `DefaultAzureCredential` or `VisualStudioCredential` can discover and use this account to authenticate app requests when running locally.
+Developers using Visual Studio 2017 or later can authenticate using their developer account through the IDE. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.VisualStudioCredential> can discover and use this account to authenticate app requests when running locally.
 
 1. Inside Visual Studio, navigate to **Tools** > **Options** to open the options dialog.
 1. In the **Search Options** box at the top, type *Azure* to filter the available options.
@@ -52,7 +52,7 @@ Developers using Visual Studio 2017 or later can authenticate using their develo
 
 ### [Azure CLI](#tab/sign-in-azure-cli)
 
-Developers coding outside of an IDE can also use the [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using `DefaultAzureCredential` or `AzureCliCredential` can then use this account to authenticate app requests when running locally.
+Developers coding outside of an IDE can also use the [Azure CLI](/cli/azure/what-is-azure-cli) to authenticate. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.AzureCliCredential> can then use this account to authenticate app requests when running locally.
 
 To authenticate with the Azure CLI, run the `az login` command. On a system with a default web browser, the Azure CLI launches the browser to authenticate the user.
 
@@ -68,7 +68,7 @@ az login --use-device-code
 
 ### [Azure Developer CLI](#tab/sign-in-azure-developer-cli)
 
-Developers coding outside of an IDE can also use the [Azure Developer CLI](/azure/developer/azure-developer-cli/overview) to authenticate. Apps using `DefaultAzureCredential` or `AzureDeveloperCliCredential` can then use this account to authenticate app requests when running locally.
+Developers coding outside of an IDE can also use the [Azure Developer CLI](/azure/developer/azure-developer-cli/overview) to authenticate. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.AzureDeveloperCliCredential> can then use this account to authenticate app requests when running locally.
 
 To authenticate with the Azure Developer CLI, run the `azd auth login` command. On a system with a default web browser, the Azure Developer CLI launches the browser to authenticate the user.
 
@@ -84,7 +84,7 @@ azd auth login --use-device-code
 
 ### [Azure PowerShell](#tab/sign-in-azure-powershell)
 
-Developers coding outside of an IDE can also use [Azure PowerShell](/powershell/azure/what-is-azure-powershell) to authenticate. Apps using `DefaultAzureCredential` or `AzurePowerShellCredential` can then use this account to authenticate app requests when running locally.
+Developers coding outside of an IDE can also use [Azure PowerShell](/powershell/azure/what-is-azure-powershell) to authenticate. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.AzurePowerShellCredential> can then use this account to authenticate app requests when running locally.
 
 To authenticate with Azure PowerShell, run the command `Connect-AzAccount`. On a system with a default web browser and version 5.0.0 or later of Azure PowerShell, it launches the browser to authenticate the user.
 

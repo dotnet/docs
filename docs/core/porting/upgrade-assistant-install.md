@@ -18,7 +18,7 @@ This article teaches you how to install .NET Upgrade Assistant using either the 
 
 - Windows Operating System
 - [Visual Studio 2022 version 17.1 or newer](https://visualstudio.microsoft.com/downloads/).
-- [.NET SDK 8 or later](https://dotnet.microsoft.com/download/dotnet/).
+- [.NET SDK](https://dotnet.microsoft.com/download/dotnet/).
 
 ## Methods
 

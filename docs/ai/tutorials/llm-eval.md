@@ -29,7 +29,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 * [Create and deploy a GPT-4 model to Azure OpenAI Service](/azure/ai-services/openai/how-to/create-resource)
 

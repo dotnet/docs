@@ -7,7 +7,7 @@ ms.date: 11/19/2021
 
 [!INCLUDE [download-alert](../includes/download-alert.md)]
 
-There are two supported frameworks for building server-side containerized Docker applications with .NET: [.NET Framework and .NET 8](https://dotnet.microsoft.com/download). They share many .NET platform components, and you can share code across the two. However, there are fundamental differences between them, and which framework you use will depend on what you want to accomplish. This section provides guidance on when to choose each framework.
+There are two supported frameworks for building server-side containerized Docker applications with .NET: [.NET Framework and .NET 9](https://dotnet.microsoft.com/download). They share many .NET platform components, and you can share code across the two. However, there are fundamental differences between them, and which framework you use will depend on what you want to accomplish. This section provides guidance on when to choose each framework.
 
 >[!div class="step-by-step"]
 >[Previous](../container-docker-introduction/docker-containers-images-registries.md)

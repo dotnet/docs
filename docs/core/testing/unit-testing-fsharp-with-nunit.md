@@ -14,8 +14,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download) or later versions.
-- A text editor or code editor of your choice.
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 ## Create the source project
 

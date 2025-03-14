@@ -21,7 +21,7 @@ There are a lot of features in this tutorial. Let's build them one by one.
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../Sincludes/dotnet-prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 ## Create the app
 

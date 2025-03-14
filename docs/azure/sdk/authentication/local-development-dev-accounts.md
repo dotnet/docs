@@ -3,7 +3,7 @@ title: Authenticate .NET apps to Azure using developer accounts
 description: Learn how to authenticate your application to Azure services when using the Azure SDK for .NET during local development using developer accounts.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-azurecli
-ms.date: 07/31/2024
+ms.date: 03/14/2025
 ---
 
 # Authenticate .NET apps to Azure services during local development using developer accounts

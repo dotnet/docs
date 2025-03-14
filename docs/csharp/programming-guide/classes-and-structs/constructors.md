@@ -1,7 +1,7 @@
 ---
 title: "Constructors"
 description: A constructor in C# is called when a class or struct is created. Use constructors to set defaults, limit instantiation, and write flexible, easy-to-read code.
-ms.date: 01/15/2025
+ms.date: 03/11/2025
 helpviewer_keywords: 
   - "constructors [C#]"
   - "classes [C#], constructors"
@@ -24,19 +24,23 @@ The preceding actions take place when an instance is created using the [`new` op
 
 The [static constructor](static-constructors.md), if any, runs before any of the instance constructor actions take place for any instance of the type. The static constructor runs at most once.
 
+Beginning with C# 14, you can declare instance constructors as [partial members](./partial-classes-and-methods.md). [Partial constructors](#partial-constructors) must have both a declaring and implementing declaration.
+
 ## Constructor syntax
 
 A constructor is a method with the same name as its type. Its method signature can include an optional [access modifier](./access-modifiers.md), the method name, and its parameter list; it doesn't include a return type. The following example shows the constructor for a class named `Person`.
 
 :::code source="./snippets/constructors/Program.cs" id="InstanceCtor":::
 
-If a constructor can be implemented as a single statement, you can use an [expression body member](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `locationName` field.
+If a constructor can be implemented as a single statement, you can use an [expression body member](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter, `name`. The expression body definition assigns the argument to the `locationName` field.
 
 :::code source="./snippets/constructors/Program.cs" id="ExpressionBodiedCtor":::
 
 If a type requires a parameter to create an instance, you can use a *primary constructor* to indicate that one or more parameters are required to instantiate the type, as shown in the following example:
 
 :::code source="./snippets/constructors/Program.cs" id="PrimaryCtor":::
+
+You can declare a primary constructor on a `partial` type. Only one primary constructor declaration is allowed. In other words, only one declaration of the `partial` type can include the parameters for the primary constructor.
 
 ## Static constructors
 
@@ -51,6 +55,10 @@ You can also define a static constructor with an expression body definition, as 
 :::code source="./snippets/constructors/Program.cs" id="StaticExpression":::
 
 For more information and examples, see [Static Constructors](./static-constructors.md).
+
+## Partial constructors
+
+Beginning with C# 14, you can declare *partial constructors* in a partial class or struct. Any partial constructor must have a *defining declaration* and an *implementing declaration*. The signatures of the declaring and implementing partial constructors must match according to the rules of [partial members](./partial-classes-and-methods.md#partial-members). The defining declaration of the partial constructor can't use the `: base()` or `: this()` constructor initializer. You add any constructor initializer must be added on the implementing declaration.
 
 ## See also
 

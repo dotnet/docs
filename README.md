@@ -15,16 +15,17 @@ This repository contains the conceptual documentation for .NET. The [.NET docume
 - [.NET Aspire](https://github.com/dotnet/docs-aspire)
 - [.NET Desktop workloads](https://github.com/dotnet/docs-desktop)
 - [.NET MAUI](https://github.com/dotnet/docs-maui)
-- [.NET Mobile](https://github.com/dotnet/docs-mobile)
-- [.NET Entity Framework 6/Core](https://github.com/dotnet/EntityFramework.Docs)
+- [Entity Framework 6/Core](https://github.com/dotnet/EntityFramework.Docs)
+- [Community toolkit](https://github.com/MicrosoftDocs/communitytoolkit)
 
-API reference documentation is published from the following repositories. Some API reference is generated directly from the `///` in the product source. The following repositories accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth.
+API reference documentation is published from the following repositories. The following reference API repositories are public. Only some accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. 
 
 - [.NET API reference](https://github.com/dotnet/dotnet-api-docs)
-- [Android API reference](https://github.com/dotnet/android-api-docs)
-- [macOS and iOS API reference](https://github.com/dotnet/macios-api-docs)
 - [.NET MAUI API reference](https://github.com/dotnet/maui-api-docs)
-- [.NET Entity Framework 6/Core API reference](https://github.com/dotnet/EntityFramework.ApiDocs)
+- [Android API reference](https://github.com/dotnet/android-api-docs)
+- [Entity Framework 6/Core API reference](https://github.com/dotnet/EntityFramework.ApiDocs)
+- [Roslyn API reference](https://github.com/dotnet/roslyn-api-docs)
+- [Community toolkit API reference](https://github.com/MicrosoftDocs/community-toolkit-api-ref-dotnet)
 
 The C# language specification documentation comes from the following two repositories:
 

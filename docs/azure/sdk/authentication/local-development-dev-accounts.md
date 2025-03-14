@@ -78,7 +78,7 @@ azd auth login
 
 For systems without a default web browser, the `azd auth login --use-device-code` uses the device code authentication flow. The user can also force the the Azure Developer CLI to use the device code flow rather than launching a browser by specifying the `--use-device-code` argument.
 
-```bash
+```azdeveloper
 azd auth login --use-device-code
 ```
 

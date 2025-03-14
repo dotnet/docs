@@ -23,7 +23,8 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+
 - Familiarity with creating new .NET applications and installing NuGet packages.
 
 ## Create a new console application

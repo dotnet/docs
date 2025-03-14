@@ -13,7 +13,7 @@ In this tutorial, you learn how to add attributes to your code, how to create an
 
 ## Prerequisites
 
-You need to set up your machine to run .NET. You can find the installation instructions on the [.NET Downloads](https://dotnet.microsoft.com/download) page. You can run this application on Windows, Ubuntu Linux, macOS, or in a Docker container. You need to install your favorite code editor. The following descriptions use [Visual Studio Code](https://code.visualstudio.com), which is an open-source, cross-platform editor. However, you can use whatever tools you're comfortable with.
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
 
 ## Create the app
 

@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) or the [.NET SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 You'll need to create a [GitHub access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/#creating-a-token) so that you can access the GitHub GraphQL endpoint. Select the following permissions for your GitHub Access Token:
 

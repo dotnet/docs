@@ -19,11 +19,7 @@ This tutorial covers:
 
 ## Prerequisites
 
-This tutorial requires the following:
-
-- [.NET 5 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
-- Integrated development environment (IDE)
-  - [We recommend Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com)
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 ### Create example application
 

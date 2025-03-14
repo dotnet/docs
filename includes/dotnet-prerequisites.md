@@ -8,6 +8,7 @@ ms.date: 03/15/2025
 - The latest [.NET SDK](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com) editor
 - The [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
 > [!NOTE]
 > On Windows, you can use this [WinGet Configuration file](https://builds.dotnet.microsoft.com/dotnet/install/dotnet_basic_config_docs.winget) to install all prerequisites. If you already have something installed, WinGet will skip that step.
 > 1. Download the file and double-click to run it. 

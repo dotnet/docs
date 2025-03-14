@@ -11,7 +11,8 @@ internal partial class Program
         var services = new ServiceCollection();
         services.ConfigureHttpClientDefaults(builder => builder.AddStandardResilienceHandler());
        // For a named HttpClient "custom" we want to remove the StandardResilienceHandler and add the StandardHedgingHandler instead.
-        services.AddHttpClient("custom")
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Resilience", "EXTEXP0001:Experimental API")]
+		services.AddHttpClient("custom")
             .RemoveAllResilienceHandlers()
             .AddStandardHedgingHandler();
         // </remove-handlers>

@@ -25,13 +25,17 @@ Here's a simple example of reflection with the <xref:System.Object.GetType> meth
 
 :::code language="csharp" source="./snippets/conceptual/Program.cs" id="GetTypeInformation":::
 
-The output is the text `System.Int32`.
+The output shows the type:
+
+```output
+System.Int32
+```
 
 The following example uses reflection to obtain the full name of the loaded assembly.
 
 :::code language="csharp" source="./snippets/conceptual/Program.cs" id="GetAssemblyInfo":::
 
-The code output is similar to the following example:
+The output is similar to the following example:
 
 ```output
 System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
@@ -153,7 +157,7 @@ The following example shows how to apply attributes to methods, method parameter
 
 Here are some common ways to use attributes in code:
 
-- Mark controller methods that respond to POST messages using the `HttpPost` attribute. For more information, see <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>.
+- Mark controller methods that respond to POST messages by using the `HttpPost` attribute. For more information, see the <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute> class.
 - Describe how to marshal method parameters when interoperating with native code. For more information, see the <xref:System.Runtime.InteropServices.MarshalAsAttribute> class.
 - Describe Component Object Model (COM) properties for classes, methods, and interfaces.
 - Call unmanaged code by using the <xref:System.Runtime.InteropServices.DllImportAttribute> class.

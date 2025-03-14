@@ -89,7 +89,7 @@ Complete the following steps to create an MSTest project that connects to your l
 
    :::code language="csharp" source="./snippets/evaluate-ai-responses/MyTests.cs" id="Initialize":::
 
-    This methods accomplishes the following tasks:
+    This method accomplishes the following tasks:
 
    - Sets up the <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration>.
    - Sets the <xref:Microsoft.Extensions.AI.ChatOptions>, including the <xref:Microsoft.Extensions.AI.ChatOptions.Temperature> and the <xref:Microsoft.Extensions.AI.ChatOptions.ResponseFormat>.

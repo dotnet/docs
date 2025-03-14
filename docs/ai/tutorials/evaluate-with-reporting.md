@@ -13,46 +13,26 @@ In this tutorial, you create an MSTest app to evaluate the chat response of a mo
 ## Prerequisites
 
 - [Install .NET 8.0](https://dotnet.microsoft.com/download) or a later version
-- [Install Ollama](https://ollama.com/) locally on your machine
 - [Visual Studio Code](https://code.visualstudio.com/) (optional)
 
-## Run the local AI model
+## Configure the AI service
 
-Complete the following steps to configure and run a local AI model on your device. For this quickstart, you'll use the general purpose `phi3:mini` model, which is a small but capable generative AI created by Microsoft.
+1. To provision an Azure OpenAI service and model using the Azure portal, complete the steps in the [Create and deploy an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) article.
 
-1. Open a terminal window and verify that Ollama is available on your device:
+1. From a terminal or command prompt, navigate to the root of your project directory.
 
-    ```bash
-    ollama
-    ```
-
-    If Ollama is available, it displays a list of available commands.
-
-1. Start Ollama:
+1. Run the following commands to add your Azure OpenAI endpoint, model name, and tenant ID [app secrets](/aspnet/core/security/app-secrets):
 
     ```bash
-    ollama serve
+    dotnet user-secrets init
+    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
+    dotnet user-secrets set AZURE_OPENAI_GPT_NAME <your-azure-openai-model-name>
+    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-id>
     ```
-
-    If Ollama is running, it displays a list of available commands.
-
-1. Pull the `phi3:mini` model from the Ollama registry and wait for it to download:
-
-    ```bash
-    ollama pull phi3:mini
-    ```
-
-1. After the download completes, run the model:
-
-    ```bash
-    ollama run phi3:mini
-    ```
-
-    Ollama starts the `phi3:mini` model and provides a prompt for you to interact with it.
 
 ## Create the test app
 
-Complete the following steps to create an MSTest project that connects to your local `phi3:mini` AI model.
+Complete the following steps to create an MSTest project that connects to the gpt-4o AI model.
 
 1. In a terminal window, navigate to the directory where you want to create your app, and create a new MSTest app with the `dotnet new` command:
 
@@ -63,11 +43,15 @@ Complete the following steps to create an MSTest project that connects to your l
 1. Navigate to the `TestAI` directory, and add the necessary packages to your app:
 
     ```dotnetcli
-    dotnet add package Microsoft.Extensions.AI.Ollama --prerelease
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Azure.Identity
     dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
     dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
     dotnet add package Microsoft.Extensions.AI.Evaluation.Quality --prerelease
     dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -87,7 +71,7 @@ Complete the following steps to create an MSTest project that connects to your l
 
    :::code language="csharp" source="./snippets/evaluate-ai-responses/MyTests.cs" id="Initialize":::
 
-    This methods accomplishes the following tasks:
+    This method accomplishes the following tasks:
 
    - Sets up the <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration>.
    - Sets the <xref:Microsoft.Extensions.AI.ChatOptions>, including the <xref:Microsoft.Extensions.AI.ChatOptions.Temperature> and the <xref:Microsoft.Extensions.AI.ChatOptions.ResponseFormat>.

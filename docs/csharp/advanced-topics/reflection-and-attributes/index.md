@@ -1,6 +1,6 @@
 ---
 title: Attributes and reflection
-description: Use attributes to associate metadata or declarative information in C#. Query attributes at run time with reflection objects that describe assemblies, modules, and types.
+description: Use attributes to associate metadata or declarative information in C#. Query attributes at run time with reflection APIs that describe assemblies, modules, and types.
 ms.date: 03/14/2025
 ---
 # Attributes
@@ -10,13 +10,13 @@ Attributes provide a powerful way to associate metadata, or declarative informat
 Attributes have the following properties:
 
 - Attributes add metadata to your program. *Metadata* is information about the types defined in a program. All .NET assemblies contain a specified set of metadata that describes the types and type members defined in the assembly. You can add custom attributes to specify any other required information.
-- One or more attributes can apply to entire assemblies, modules, or smaller program elements, such as classes and properties.
+- Attributes can be applied to entire assemblies, modules, or smaller program elements, such as classes and properties.
 - Attributes can accept arguments in the same way as methods and properties.
 - Attributes enable a program to examine its own metadata or metadata in other programs by using reflection.
 
 ## Work with reflection
 
-[Reflection](../../../fundamentals/reflection/reflection.md) provides objects (of type <xref:System.Type>) that describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. When you use attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
+[Reflection](../../../fundamentals/reflection/reflection.md) APIs provided by <xref:System.Type> describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. When you use attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).
 
 Here's a simple example of reflection with the <xref:System.Object.GetType> method. All types from the `Object` base class inherit this method, which is used to obtain the type of a variable:
 
@@ -25,7 +25,7 @@ Here's a simple example of reflection with the <xref:System.Object.GetType> meth
 
 :::code language="csharp" source="./snippets/conceptual/Program.cs" id="GetTypeInformation":::
 
-The output is a `System.Int32` struct.
+The output is the text `System.Int32`.
 
 The following example uses reflection to obtain the full name of the loaded assembly.
 
@@ -65,7 +65,7 @@ Some attributes can be specified more than once for a given entity. The followin
 :::code language="csharp" source="./snippets/conceptual/AttributesOverview.cs" id="Snippet5":::
 
 > [!NOTE]
-> By convention, all attribute names end with the suffix "Attribute" to distinguish them from other APIs in the .NET libraries. However, you don't need to specify the attribute suffix when you use attributes in code. For example, a `[DllImport]` declaration is equivalent to a `[DllImportAttribute]` declaration, but `DllImportAttribute` is the actual name of the attribute in the .NET Class Library.
+> By convention, all attribute names end with the suffix "Attribute" to distinguish them from other types in the .NET libraries. However, you don't need to specify the attribute suffix when you use attributes in code. For example, a `[DllImport]` declaration is equivalent to a `[DllImportAttribute]` declaration, but `DllImportAttribute` is the actual name of the class in the .NET Class Library.
 
 ### Attribute parameters
 
@@ -109,7 +109,7 @@ The first parameter, the DLL name, is positional and always comes first. The oth
 
 ### Attribute targets
 
-The *target* of an attribute is the entity that the attribute applies to. For example, an attribute can apply to a class, a particular method, or an entire assembly. By default, an attribute applies to the element that follows it. But you can also explicitly identify the element to associate, such as a method, a parameter, or the return value.
+The *target* of an attribute is the entity that the attribute applies to. For example, an attribute can apply to a class, a method, or an assembly. By default, an attribute applies to the element that follows it. But you can also explicitly identify the element to associate, such as a method, a parameter, or the return value.
 
 To explicitly identify an attribute target, use the following syntax:
 
@@ -153,7 +153,7 @@ The following example shows how to apply attributes to methods, method parameter
 
 Here are some common ways to use attributes in code:
 
-- Mark methods by using the `WebMethod` attribute in web services to indicate that the method should be callable over the SOAP protocol. For more information, see <xref:System.Web.Services.WebMethodAttribute>.
+- Mark controller methods that respond to POST messages using the `HttpPost` attribute. For more information, see <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>.
 - Describe how to marshal method parameters when interoperating with native code. For more information, see the <xref:System.Runtime.InteropServices.MarshalAsAttribute> class.
 - Describe Component Object Model (COM) properties for classes, methods, and interfaces.
 - Call unmanaged code by using the <xref:System.Runtime.InteropServices.DllImportAttribute> class.

@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 An ***event*** is a member that enables an object to trigger notifications. Event users can attach executable code for events by supplying ***event handlers***. The `event` keyword declares an ***event***. The event is of a delegate type. While an object triggers an event, the event invokes all supplied event handlers. Event handlers are delegate instances added to the event and executed when the event is raised. Event users can add or remove their event handlers on an event.
 
-The following example shows how to declare and raise an event that uses <xref:System.EventHandler> as the underlying delegate type. For the complete code example, see [How to publish events that conform to .NET Guidelines](/dotnet/standard/events). That sample demonstrates the generic <xref:System.EventHandler%601> delegate type, how to subscribe to an event, and create an event handler method, 
+The following example shows how to declare and raise an event that uses <xref:System.EventHandler> as the underlying delegate type. For the complete code example, see [How to publish events that conform to .NET Guidelines](/dotnet/standard/events). That sample demonstrates the generic <xref:System.EventHandler%601> delegate type, how to subscribe to an event, and create an event handler method,
 
 :::code language="csharp" source="./snippets/Events.cs" id="EventExample":::
 

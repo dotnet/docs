@@ -10,7 +10,7 @@ Writing backward compatible code can be hard and difficult to test. This article
 
 ## Never change the signature of existing methods
 
-Because of the way on how Orleans serializer work, you should never change the signature
+Because of how the Orleans serializer works, you should never change the signature
 of existing methods.
 
 The following example is correct:
@@ -57,7 +57,9 @@ public interface IMyGrain : IGrainWithIntegerKey
 ```
 
 > [!IMPORTANT]
-> You should not do this change in your code, as it's an example of a bad practice that leads to very bad side-effects. This is an example of what can happen if you just rename the parameter names: let's say that we have the two following interface version deployed in the cluster:
+> Do NOT make this change in your code, as it's an example of a bad practice that leads to very bad side effects.
+
+This is an example of what can happen if you just rename the parameter names. Assume you have the following two interface versions deployed in the cluster:
 
 ```csharp
 [Version(1)]
@@ -72,12 +74,12 @@ public interface IMyGrain : IGrainWithIntegerKey
 [Version(2)]
 public interface IMyGrain : IGrainWithIntegerKey
 {
-    // return a - b
+    // return b - a
     Task<int> Subtract(int b, int a);
 }
 ```
 
-This methods seems identical. But if the client was called with V1, and the request is
+These methods seem identical. But if the client was called with V1, and the request is
 handled by a V2 activation:
 
 ```csharp
@@ -89,7 +91,7 @@ This is due to how the internal Orleans serializer works.
 
 ## Avoid changing existing method logic
 
-It can seems obvious, but you should be very careful when changing the body of an existing method.
+It can seem obvious, but you should be very careful when changing the body of an existing method.
 Unless you are fixing a bug, it is better to just add a new method if you need to modify the code.
 
 Example:
@@ -128,7 +130,7 @@ public interface MyGrain : IMyGrain
 
 ## Do not remove methods from grain interfaces
 
-Unless you are sure that they are no longer used, you should not remove methods from the grain interface.
+Unless you are sure that they're no longer used, you should not remove methods from the grain interface.
 If you want to remove methods, this should be done in 2 steps:
 
 1. Deploy V2 grains, with V1 method marked as `Obsolete`
@@ -155,7 +157,7 @@ If you want to remove methods, this should be done in 2 steps:
     }
     ```
 
-2. When you are sure that no V1 calls are made (effectively V1 is no longer deployed in the running cluster), deploy V3 with V1 method removed
+2. When you are sure that no V1 calls are made (effectively V1 is no longer deployed in the running cluster), deploy V3 with V1 method removed.
 
     ```csharp
     [Version(3)]

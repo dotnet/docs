@@ -13,10 +13,9 @@ The following example uses a query to create a collection of tasks. Each task do
 
 ## Prerequisites
 
-You can follow this tutorial by using one of the following options:
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads) with the **.NET desktop development** workload installed. The .NET SDK is automatically installed when you select this workload.
-* The [.NET SDK](https://dotnet.microsoft.com/download/) with a code editor of your choice, such as [Visual Studio Code](https://code.visualstudio.com/).
+You need the **.NET desktop development** workload installed with Visual Studio.
 
 ## Create example application
 

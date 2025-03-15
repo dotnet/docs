@@ -12,9 +12,9 @@ In this quickstart, you create an MSTest app to evaluate the chat response of a 
 
 ## Prerequisites
 
-- [Install .NET 8.0](https://dotnet.microsoft.com/download) or a later version
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+
 - [Install Ollama](https://ollama.com/) locally on your machine
-- [Visual Studio Code](https://code.visualstudio.com/) (optional)
 
 ## Run the local AI model
 

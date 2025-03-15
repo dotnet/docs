@@ -21,18 +21,16 @@ In this quickstart, you'll learn how to create a minimal AI assistant using the 
 
 ::: zone pivot="openai"
 
-* [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
-* [Visual Studio Code](https://code.visualstudio.com/) (optional)
-* [Visual Studio](https://visualstudio.com/) (optional)
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+
 * An access key for an OpenAI model
 
 :::zone-end
 
 ::: zone pivot="azure-openai"
 
-* [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
-* [Visual Studio Code](https://code.visualstudio.com/) (optional)
-* [Visual Studio](https://visualstudio.com/) (optional)
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+
 * Access to an Azure OpenAI instance via Azure Identity or an access key
 
 :::zone-end

@@ -23,7 +23,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 6.0 SDK](https://dotnet.microsoft.com/download/dotnet) to build and run the sample app
+- [.NET SDK](https://dotnet.microsoft.com/download/dotnet) to build and run the sample app
 - [Sample web app](/samples/dotnet/samples/diagnostic-scenarios) to demonstrate ThreadPool starvation behavior
 - [Bombardier](https://github.com/codesenberg/bombardier/releases) to generate load for the sample web app
 - [dotnet-counters](dotnet-counters.md) to observe performance counters

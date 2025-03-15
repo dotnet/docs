@@ -20,12 +20,7 @@ This tutorial covers:
 
 ## Prerequisites
 
-This tutorial requires the following:
-
-- You're expected to have created an application in the [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md) tutorial
-- [.NET 5 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
-- Integrated development environment (IDE)
-  - [We recommend Visual Studio or Visual Studio Code](https://visualstudio.microsoft.com)
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 ## Update application entry point
 

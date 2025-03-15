@@ -31,12 +31,9 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* A code editor, such as [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
-* The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
-Or
-
-* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022) with the **.NET desktop development** workload installed.
+In Visual Studio, you need the **.NET desktop development** workload installed.
 
 ## Create the app
 

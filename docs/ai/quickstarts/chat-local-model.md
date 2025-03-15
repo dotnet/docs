@@ -14,9 +14,9 @@ In this quickstart, you learn how to create a conversational .NET console chat a
 
 ## Prerequisites
 
-* [Install .NET 8.0](https://dotnet.microsoft.com/download) or higher
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+
 * [Install Ollama](https://ollama.com/) locally on your device
-* [Visual Studio Code](https://code.visualstudio.com/) (optional)
 
 ## Run the local AI model
 

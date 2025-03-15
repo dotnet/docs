@@ -17,11 +17,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Prerequisites
 
-- [.NET SDK 6.0.100](https://dotnet.microsoft.com/download/dotnet/6.0) or a later version.
-
-  This tutorial uses .NET SDK 6.0, but global tools are available starting in .NET Core SDK 2.1. Local tools are available starting in .NET Core SDK 3.0.
-
-- A text editor or code editor of your choice.
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 ## Create a project
 

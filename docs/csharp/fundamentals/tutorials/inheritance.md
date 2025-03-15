@@ -10,7 +10,7 @@ This tutorial introduces you to inheritance in C#. Inheritance is a feature of o
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
 
 ## Running the examples
 

@@ -4,13 +4,6 @@ using Microsoft.Extensions.AI.Evaluation;
 
 namespace TestAIWithReporting;
 
-/// <summary>
-/// A non-AI-based evaluator that counts the number of words present in the response.
-/// </summary>
-/// <remarks>
-/// The word count is returned via a <see cref="NumericMetric"/> as part of the returned
-/// <see cref="EvaluationResult"/>.
-/// </remarks>
 public class WordCountEvaluator : IEvaluator
 {
     public const string WordCountMetricName = "Words";
@@ -34,11 +27,6 @@ public class WordCountEvaluator : IEvaluator
     /// <summary>
     /// Provides a default interpretation for the supplied <paramref name="metric"/>.
     /// </summary>
-    /// <remarks>
-    /// The default interpretation provided in this method considers the supplied <paramref name="metric"/> to be good
-    /// (acceptable) if the detected word count is at or under 100. Otherwise, the/ <paramref name="metric"/> is
-    /// considered as failed.
-    /// </remarks>
     private static void Interpret(NumericMetric metric)
     {
         if (metric.Value is null)
@@ -51,7 +39,7 @@ public class WordCountEvaluator : IEvaluator
         }
         else
         {
-            var reason = $"The response is {metric.Value} words long.";
+            string reason = $"The response is {metric.Value} words long.";
             metric.Interpretation =
                 metric.Value <= 100
                     ? new EvaluationMetricInterpretation(EvaluationRating.Good, reason: reason)
@@ -73,11 +61,8 @@ public class WordCountEvaluator : IEvaluator
         var metric = new NumericMetric(WordCountMetricName, value: wordCount);
 
         // Attach a default <see cref="EvaluationMetricInterpretation"/> for the metric.
-        // An evaluator can provide a default interpretation for each metric that it produces.
-        // This default interpretation can be overridden by the caller if needed.
         Interpret(metric);
 
-        // Return an <see cref="EvaluationResult"/> that contains the previous metric.
         return new ValueTask<EvaluationResult>(new EvaluationResult(metric));
     }
 }

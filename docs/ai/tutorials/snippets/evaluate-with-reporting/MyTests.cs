@@ -1,12 +1,12 @@
 ﻿// <SnippetUsingDirectives>
 using Azure.AI.OpenAI;
 using Azure.Identity;
-using Microsoft.Extensions.AI;
 using Microsoft.Extensions.AI.Evaluation;
-using Microsoft.Extensions.AI.Evaluation.Quality;
-using Microsoft.Extensions.AI.Evaluation.Reporting;
-using Microsoft.Extensions.AI.Evaluation.Reporting.Storage;
+using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.AI.Evaluation.Reporting.Storage;
+using Microsoft.Extensions.AI.Evaluation.Reporting;
+using Microsoft.Extensions.AI.Evaluation.Quality;
 // </SnippetUsingDirectives>
 
 namespace TestAIWithReporting;
@@ -68,21 +68,21 @@ public sealed class MyTests
     // </SnippetGetEvaluators>
 
     // <SnippetGetResponse>
-    private static async Task<(IList<ChatMessage> Messages, ChatMessage ModelResponse)> GetAstronomyConversationAsync(
-        IChatClient chatClient,
-        string astronomyQuestion)
+    private static async Task<(IList<ChatMessage> Messages, ChatResponse ModelResponse)> GetAstronomyConversationAsync(
+    IChatClient chatClient,
+    string astronomyQuestion)
     {
         const string SystemPrompt =
             """
-            You're an AI assistant that can answer questions related to astronomy.
-            Keep your responses concise and try to stay under 100 words.
-            Use the imperial measurement system for all measurements in your response.
-            """;
+        You're an AI assistant that can answer questions related to astronomy.
+        Keep your responses concise and try to stay under 100 words.
+        Use the imperial measurement system for all measurements in your response.
+        """;
 
         IList<ChatMessage> messages =
             [
                 new ChatMessage(ChatRole.System, SystemPrompt),
-                new ChatMessage(ChatRole.User, astronomyQuestion)
+            new ChatMessage(ChatRole.User, astronomyQuestion)
             ];
 
         var chatOptions =
@@ -93,7 +93,7 @@ public sealed class MyTests
             };
 
         ChatResponse completion = await chatClient.GetResponseAsync(messages, chatOptions);
-        return (messages, ModelResponse: completion.Message);
+        return (messages, completion);
     }
     // </SnippetGetResponse>
 
@@ -131,7 +131,7 @@ public sealed class MyTests
 
     // <SnippetTestMethod>
     [TestMethod]
-    public async Task SampleAndEvaluateSingleResponse()
+    public async Task SampleAndEvaluateResponse()
     {
         // Create a <see cref="ScenarioRun"/> with the scenario name
         // set to the fully qualified name of the current test method.
@@ -140,7 +140,7 @@ public sealed class MyTests
 
         // Use the <see cref="IChatClient"/> that's included in the
         // <see cref="ScenarioRun.ChatConfiguration"/> to get the LLM response.
-        (IList<ChatMessage> messages, ChatMessage modelResponse) = await GetAstronomyConversationAsync(
+        (IList<ChatMessage> messages, ChatResponse modelResponse) = await GetAstronomyConversationAsync(
             chatClient: scenarioRun.ChatConfiguration!.ChatClient,
             astronomyQuestion: "How far is the Moon from the Earth at its closest and furthest points?");
 

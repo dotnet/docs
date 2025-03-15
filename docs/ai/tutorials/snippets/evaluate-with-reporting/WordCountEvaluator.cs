@@ -40,16 +40,16 @@ public class WordCountEvaluator : IEvaluator
         else
         {
             string reason = $"The response is {metric.Value} words long.";
-            metric.Interpretation =
-                metric.Value <= 100
-                    ? new EvaluationMetricInterpretation(EvaluationRating.Good, reason: reason)
-                    : new EvaluationMetricInterpretation(EvaluationRating.Unacceptable, failed: true, reason);
+            if (metric.Value <= 100 && metric.Value > 0)
+                metric.Interpretation = new EvaluationMetricInterpretation(EvaluationRating.Good, reason: reason);
+            else
+                metric.Interpretation = new EvaluationMetricInterpretation(EvaluationRating.Unacceptable, failed: true, reason);
         }
     }
 
     public ValueTask<EvaluationResult> EvaluateAsync(
         IEnumerable<ChatMessage> messages,
-        ChatMessage modelResponse,
+        ChatResponse modelResponse,
         ChatConfiguration? chatConfiguration = null,
         IEnumerable<EvaluationContext>? additionalContext = null,
         CancellationToken cancellationToken = default)

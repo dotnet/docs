@@ -1,4 +1,5 @@
-﻿using Azure.AI.OpenAI;
+﻿// <SnippetUsingDirectives>
+using Azure.AI.OpenAI;
 using Azure.Identity;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.AI.Evaluation;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.AI.Evaluation.Quality;
 using Microsoft.Extensions.AI.Evaluation.Reporting;
 using Microsoft.Extensions.AI.Evaluation.Reporting.Storage;
 using Microsoft.Extensions.Configuration;
+// </SnippetUsingDirectives>
 
 namespace TestAIWithReporting;
 
@@ -71,7 +73,7 @@ public sealed class MyTests
         string astronomyQuestion)
     {
         const string SystemPrompt =
-            """            
+            """
             You're an AI assistant that can answer questions related to astronomy.
             Keep your responses concise and try to stay under 100 words.
             Use the imperial measurement system for all measurements in your response.

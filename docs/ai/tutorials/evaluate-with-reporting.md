@@ -29,7 +29,7 @@ Complete the following steps to create an MSTest project that connects to the `g
     dotnet new mstest -o TestAIWithReporting
     ```
 
-1. Navigate to the `TestAI` directory, and add the necessary packages to your app:
+1. Navigate to the `TestAIWithReporting` directory, and add the necessary packages to your app:
 
     ```dotnetcli
     dotnet add package Azure.AI.OpenAI
@@ -48,19 +48,21 @@ Complete the following steps to create an MSTest project that connects to the `g
     ```bash
     dotnet user-secrets init
     dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME <your-azure-openai-model-name>
+    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
     dotnet user-secrets set AZURE_TENANT_ID <your-tenant-id>
     ```
 
-1. Open the new app in your editor of choice, such as Visual Studio Code.
+   (Depending on your environment, the tenant ID might not be needed. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)
 
-    ```dotnetcli
-    code .
-    ```
+1. Open the new app in your editor of choice.
 
 ## Add the test app code
 
-1. Rename the file *Test1.cs* to *MyTests.cs*, and then open the file and rename the class to `MyTests`.
+1. Rename the *Test1.cs* FILE to *MyTests.cs*, and then open the file and rename the class to `MyTests`. Delete the empty `TestMethod1` method.
+1. Add the necessary `using` directives to the top of the file.
+
+   :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="UsingDirectives":::
+
 1. Add the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> property to the class.
 
    :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="TestContext":::
@@ -100,7 +102,7 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    This test uses a disk-based reporting configuration.
 
-1. Add the `WordCountEvaluator` class, which is a custom evaluator that implements <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator>.
+1. In a separate file, add the `WordCountEvaluator` class, which is a custom evaluator that implements <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator>.
 
    :::code language="csharp" source="./snippets/evaluate-with-reporting/WordCountEvaluator.cs":::
 
@@ -108,7 +110,7 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    The `EvaluateAsync` method also attaches a default interpretation to the metric. The default interpretation considers the metric to be good (acceptable) if the detected word count is at or under 100. Otherwise, the metric is considered failed. This default interpretation can be overridden by the caller, if needed.
 
-1. Add a method to gather the evaluators to use in the evaluation.
+1. Back in `MyTests.cs`, add a method to gather the evaluators to use in the evaluation.
 
    :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="GetEvaluators":::
 
@@ -123,7 +125,7 @@ Complete the following steps to create an MSTest project that connects to the `g
    :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="Validate":::
 
     > [!TIP]
-    > Since `includeReasoning` was set to `true` when the <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator> was created in `GetEvaluators`, the relevance, truth, and completeness metrics each include a single informational diagnostic that explains the reasoning for the score. This diagnostic is included in the generated report and can be viewed by hovering over the corresponding metric's card in the report.
+    > The relevance, truth, and completeness metrics each include a `reason` that explains the reasoning for the score. The reason is included in the generated report and can be viewed in the raw JSON file or by hovering over the corresponding metric's card in the report.
 
 1. Finally, add the [test method](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) itself.
 
@@ -139,7 +141,8 @@ Complete the following steps to create an MSTest project that connects to the `g
      - Performed using the the LLM endpoint in the very first run of the current test.
      - Fetched from the (disk-based) response cache that was configured in `s_defaultReportingConfiguration` in every subsequent run of the test, until the cached entry expires (in 14 days by default).
    - Runs some basic validation on the evaluation result.
-     - This step is optional and mainly for demonstration purposes. In real-world evaluations, you might not want to validate individual results since the LLM responses and evaluation scores can change over time as your product (and the models used) evolve. You might not want individual evaluation tests to "fail" and block builds in your CI/CD pipelines when this happens. Instead, it might be better to rely on the generated report and track the overall trends for evaluation scores across different scenarios over time (and only fail individual builds when there's a significant drop in evaluation scores across multiple different tests). That said, there is some nuance here and the choice of whether to validate individual results or not can vary depending on the specific use case.
+
+     This step is optional and mainly for demonstration purposes. In real-world evaluations, you might not want to validate individual results since the LLM responses and evaluation scores can change over time as your product (and the models used) evolve. You might not want individual evaluation tests to "fail" and block builds in your CI/CD pipelines when this happens. Instead, it might be better to rely on the generated report and track the overall trends for evaluation scores across different scenarios over time (and only fail individual builds when there's a significant drop in evaluation scores across multiple different tests). That said, there is some nuance here and the choice of whether to validate individual results or not can vary depending on the specific use case.
 
    When the method returns, the `scenarioRun` object is disposed and the evaluation result for the evaluation is stored to the (disk-based) result store that's configured in `s_defaultReportingConfiguration`.
 
@@ -151,5 +154,5 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 
 - Navigate to the directory where the test results are stored (which is `C:\TestReports`, unless you modified the location when you created the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>). In the `results` subdirectory, notice that there's a folder for each test run named with a timestamp (`ExecutionName`). Inside each of those folders is a folder for each scenario name&mdash;in this case, just the single test method in the project. That folder contains a JSON file with the all the data including the messages, response, and evaluation result.
 - Expand the evaluation. Here are a couple ideas:
-  - Add an additional custom evaluator, such as an evaluator that uses AI to determine the measurement system that's used in the response.
-  - Add another test method, for example, a method that evaluates multiple responses from the LLM.
+  - Add an additional custom evaluator, such as [an evaluator that uses AI to determine the measurement system](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/evaluation/Evaluators/MeasurementSystemEvaluator.cs) that's used in the response.
+  - Add another test method, for example, [a method that evaluates multiple responses](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example02_SamplingAndEvaluatingMultipleResponses.cs) from the LLM.

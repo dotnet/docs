@@ -8,7 +8,7 @@ ms.custom: devx-track-dotnet-ai
 
 # Tutorial: Evaluate a model's response with response caching and reporting
 
-In this tutorial, you create an MSTest app to evaluate the chat response of an Azure OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries. The tutorial uses a built-in evaluator and a custom evaluator.
+In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both a [built-in evaluator](xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator) and a custom evaluator.
 
 ## Prerequisites
 
@@ -125,7 +125,7 @@ Complete the following steps to create an MSTest project that connects to the `g
    :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="Validate":::
 
     > [!TIP]
-    > The relevance, truth, and completeness metrics each include a `reason` that explains the reasoning for the score. The reason is included in the generated report and can be viewed in the raw JSON file or by hovering over the corresponding metric's card in the report.
+    > The relevance, truth, and completeness metrics each include a `Reason` property that explains the reasoning for the score. The reason is included in the generated report and can be viewed in the raw JSON file or by hovering over the corresponding metric's card in the report.
 
 1. Finally, add the [test method](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) itself.
 

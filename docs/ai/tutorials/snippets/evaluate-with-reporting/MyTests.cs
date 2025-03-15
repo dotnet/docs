@@ -59,8 +59,7 @@ public sealed class MyTests
     // <SnippetGetEvaluators>
     private static IEnumerable<IEvaluator> GetEvaluators()
     {
-        var rtcOptions = new RelevanceTruthAndCompletenessEvaluatorOptions(includeReasoning: true);
-        IEvaluator rtcEvaluator = new RelevanceTruthAndCompletenessEvaluator(rtcOptions);
+        IEvaluator rtcEvaluator = new RelevanceTruthAndCompletenessEvaluator();
         IEvaluator wordCountEvaluator = new WordCountEvaluator();
 
         return [rtcEvaluator, wordCountEvaluator];

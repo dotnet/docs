@@ -1,9 +1,8 @@
 ---
 title: "Tutorial: Evaluate an LLM's prompt completions"
-description: "Evaluate the coherence, relevance, and groundedness of an LLM's prompt completions using Azure OpenAI and the Semantic Kernel SDK for .NET."
-author: haywoodsloan
+description: "Evaluate the coherence, relevance, and groundedness of an LLM's prompt completions using Azure OpenAI and Microsoft.Extension.AI.Evaluation."
 ms.topic: tutorial
-ms.date: 11/24/2024
+ms.date: 03/04/2025
 
 #customer intent: As a .NET developer, I want to evaluate an LLM's prompt completions using .NET so that I can choose an LLM for my .NET application that fits my use case.
 
@@ -11,7 +10,7 @@ ms.date: 11/24/2024
 
 # Tutorial: Evaluate an LLM's prompt completions
 
-In this tutorial, you evaluate the coherence, relevance, and groundedness of an LLM's prompt completions using Azure OpenAI and the Semantic Kernel SDK for .NET.
+In this tutorial, you evaluate the coherence, relevance, and groundedness of an LLM's prompt completions using Azure OpenAI and the `Microsoft.Extension.AI.Evaluation` libraries.
 
 :::image type="content" source="../media/llm-eval/eval-app.png" lightbox="../media/llm-eval/eval-app.png" alt-text="Main UI of the Evaluation Application":::
 

@@ -12,9 +12,8 @@ In this quickstart, you create an MSTest app to evaluate the chat response of a 
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
-
 - [Install Ollama](https://ollama.com/) locally on your machine
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 ## Run the local AI model
 

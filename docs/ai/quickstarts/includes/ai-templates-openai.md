@@ -8,9 +8,8 @@ ms.author: alexwolf
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
-
 * Access to an [OpenAI service](https://openai.com/api/) and the corresponding API key.
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
 
 ## Install the .NET AI app template
 

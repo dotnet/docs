@@ -23,9 +23,8 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
-
 - Familiarity with creating new .NET applications and installing NuGet packages.
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 ## Create a new console application
 

@@ -7,6 +7,5 @@ ms.topic: include
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]
-
 - An [API key from OpenAI](https://platform.openai.com/docs/quickstart/account-setup) so you can run this sample.
+[!INCLUDE [Prerequisites](../../../../includes/dotnet-prerequisites.md)]

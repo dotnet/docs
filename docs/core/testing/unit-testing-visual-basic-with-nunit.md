@@ -12,7 +12,8 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
+- The latest [.NET SDK](https://dotnet.microsoft.com/download)
+- [Visual Studio Code](https://code.visualstudio.com) editor
 
 ## Creating the source project
 

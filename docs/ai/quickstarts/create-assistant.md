@@ -21,17 +21,15 @@ In this quickstart, you'll learn how to create a minimal AI assistant using the 
 
 ::: zone pivot="openai"
 
-[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
-
 * An access key for an OpenAI model
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 :::zone-end
 
 ::: zone pivot="azure-openai"
 
-[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
-
 * Access to an Azure OpenAI instance via Azure Identity or an access key
+[!INCLUDE [Prerequisites](../../../includes/dotnet-prerequisites.md)]
 
 :::zone-end
 

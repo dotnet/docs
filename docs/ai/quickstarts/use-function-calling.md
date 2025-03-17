@@ -138,7 +138,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
     dotnet run
     ```
 
-    The app prints a the completion response from the AI model that includes data provided by the .NET function. The AI model understood the registered function was available and called it automatically to generate a proper response.
+    The app prints the completion response from the AI model that includes data provided by the .NET function. The AI model understood the registered function was available and called it automatically to generate a proper response.
 
 :::zone target="docs" pivot="azure-openai"
 

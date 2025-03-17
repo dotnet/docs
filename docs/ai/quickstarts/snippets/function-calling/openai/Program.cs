@@ -17,7 +17,8 @@ var chatOptions = new ChatOptions
 {
     Tools = [AIFunctionFactory.Create((string location, string unit) =>
     {
-        // Here you would call a weather API to get the weather for the location
+        // Here you would call a weather API
+        // to get the weather for the location.
         return "Periods of rain or drizzle, 15 C";
     },
     "get_current_weather",
@@ -31,9 +32,8 @@ List<ChatMessage> chatHistory = [new(ChatRole.System, """
 
 // Weather conversation relevant to the registered function.
 chatHistory.Add(new ChatMessage(ChatRole.User,
-    "I live in Montreal and I'm looking for a moderate intensity hike. What's the current weather like? "));
+    "I live in Montreal and I'm looking for a moderate intensity hike. What's the current weather like?"));
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last()}");
 
 ChatResponse response = await client.GetResponseAsync(chatHistory, chatOptions);
-chatHistory.Add(new ChatMessage(ChatRole.Assistant, response.Message.Contents));
-Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last()}");
+Console.WriteLine($"Assistant >>> {response.Text}");

@@ -11,11 +11,11 @@ IChatClient client = new ChatClientBuilder(
     .UseFunctionInvocation()
     .Build();
 
-var response = client.GetStreamingResponseAsync(
+IAsyncEnumerable<ChatResponseUpdate> response = client.GetStreamingResponseAsync(
     "Should I wear a rain coat?",
     new() { Tools = [AIFunctionFactory.Create(GetCurrentWeather)] });
 
-await foreach (var update in response)
+await foreach (ChatResponseUpdate update in response)
 {
     Console.Write(update);
 }

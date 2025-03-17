@@ -45,7 +45,6 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a single, specific version until explicitly updated. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. In addition:
 
 - Unit testing has better MSBuild integration that allows you to run tests in parallel.
-- NuGet security audits run on both direct and transitive package references, by default.
 - The terminal logger is enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
 - New MSBuild script analyzers ("build checks") are available.
 - The SDK can detect and adjust for version mismatches between the .NET SDK and MSBuild.

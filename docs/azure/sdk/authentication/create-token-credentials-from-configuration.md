@@ -1,38 +1,39 @@
 ---
-title: Create token credentials from configuration
-description: This article describes how to create Microsoft Entra token credentials from configuration files.
+title: Create Azure Identity library credentials via configuration files
+description: Learn how to create token credentials from configuration files.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 02/19/2025
+ms.date: 03/14/2025
 ---
 
-# Create Microsoft Entra credential types using configuration files
+# Create Azure Identity library credentials via configuration files
 
-The `Microsoft.Extensions.Azure` library supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from key-value pairs defined in _appsettings.json_ and other configuration files. The credential types correspond to a subset of the [credential classes](/dotnet/api/overview/azure/identity-readme) in the Azure Identity client library. This article describes the support for different `TokenCredential` types and how to configure the required key-value pairs for each type.
+The [Azure client library integration for ASP.NET Core](/dotnet/api/overview/azure/microsoft.extensions.azure-readme?view=azure-dotnet&preserve-view=true) (`Microsoft.Extensions.Azure`) supports creating different <xref:Azure.Core.TokenCredential?displayProperty=fullName> types from key-value pairs defined in _appsettings.json_ and other configuration files. The credentials correspond to a subset of the [credential classes](/dotnet/api/overview/azure/identity-readme?view=azure-dotnet&preserve-view=true#credential-classes) in the Azure Identity client library. This article describes the support for different `TokenCredential` types and how to configure the required key-value pairs for each type.
 
 ## Support for Azure credentials through configuration
 
-The [`Microsoft.Extensions.Azure`](https://www.nuget.org/packages/Microsoft.Extensions.Azure) library can automatically provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credential values using the `IConfiguration` abstraction for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
+`Microsoft.Extensions.Azure` can automatically provide Azure service clients with a `TokenCredential` class by searching _appsettings.json_ or other configuration files for credential values using the `IConfiguration` abstraction for .NET. This approach allows developers to explicitly set credential values across different environments through configuration rather than through app code directly.
 
-The following credential types are supported via configuration:
+The following credentials can be created via configuration:
 
-* [ClientCertificateCredential](#create-a-clientcertificatecredential-type)
-* [ClientSecretCredential](#create-a-clientsecretcredential-type)
-* [DefaultAzureCredential](#create-a-defaultazurecredential-type)
-* [ManagedIdentityCredential](#create-a-managedidentitycredential-type)
-* [WorkloadIdentityCredential](#create-a-workloadidentitycredential-type)
+* [AzurePipelinesCredential](#create-an-instance-of-azurepipelinescredential)
+* [ClientCertificateCredential](#create-an-instance-of-clientcertificatecredential)
+* [ClientSecretCredential](#create-an-instance-of-clientsecretcredential)
+* [DefaultAzureCredential](#create-an-instance-of-defaultazurecredential)
+* [ManagedIdentityCredential](#create-an-instance-of-managedidentitycredential)
+* [WorkloadIdentityCredential](#create-an-instance-of-workloadidentitycredential)
 
 ## Configure Azure credentials
 
-Azure service clients registered with the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> method are automatically configured with an instance of `DefaultAzureCredential` if no explicit credential is supplied via the <xref:Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential%2A> extension method. You can also override the global `DefaultAzureCredential` using credential values from configuration files when registering a client to create a specific credential type:
+Azure service clients registered with the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> method are automatically configured with an instance of `DefaultAzureCredential` if no explicit credential is supplied via the <xref:Microsoft.Extensions.Azure.AzureClientBuilderExtensions.WithCredential%2A> extension method. You can also override the global `DefaultAzureCredential` using credential values from configuration files when registering a client to create a specific credential:
 
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {
-    // Register BlobServiceClient using credentials from appsettings.json
+    // Register BlobServiceClient using credential from appsettings.json
     clientBuilder.AddBlobServiceClient(builder.Configuration.GetSection("Storage"));
 
-    // Register ServiceBusClient using the fallback DefaultAzureCredential credentials
+    // Register ServiceBusClient using the fallback DefaultAzureCredential
     clientBuilder.AddServiceBusClientWithNamespace(
         "<your_namespace>.servicebus.windows.net");
 });
@@ -44,27 +45,29 @@ The associated _appsettings.json_ file:
 "Storage": {
     "serviceUri": "<service_uri>",
     "credential": "managedidentity",
-    "clientId":  "<clientId>"
+    "clientId": "<client_id>"
 }
 ```
 
-The following credential types also support the `AdditionallyAllowedTenants` property, which specifies additional Microsoft Entra tenants beyond the default tenant for which the credential may acquire tokens:
+The following credentials also support the `AdditionallyAllowedTenants` property, which specifies Microsoft Entra tenants beyond the default tenant for which the credential can acquire tokens:
 
-* [ClientCertificateCredential](#create-a-clientcertificatecredential-type)
-* [ClientSecretCredential](#create-a-clientsecretcredential-type)
-* [DefaultAzureCredential](#create-a-defaultazurecredential-type)
+* [AzurePipelinesCredential](#create-an-instance-of-azurepipelinescredential)
+* [ClientCertificateCredential](#create-an-instance-of-clientcertificatecredential)
+* [ClientSecretCredential](#create-an-instance-of-clientsecretcredential)
+* [DefaultAzureCredential](#create-an-instance-of-defaultazurecredential)
+* [WorkloadIdentityCredential](#create-an-instance-of-workloadidentitycredential)
 
-Add the wildcard value "*" to allow the credential to acquire tokens for any Microsoft Entra tenant the logged in account can access. If no tenant IDs are specified, this option will have no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
+Add the wildcard value `*` to allow the credential to acquire tokens for any Microsoft Entra tenant the logged in account can access. If no tenant IDs are specified, this option has no effect on that authentication method, and the credential will acquire tokens for any requested tenant when using that method.
 
 ```json
 {
-    "additionallyAllowedTenants":  "<tenant-ids-separated-by-semicolon>"
+    "additionallyAllowedTenants": "<tenant_ids_separated_by_semicolon>"
 }
 ```
 
-### Create a `ManagedIdentityCredential` type
+### Create an instance of `ManagedIdentityCredential`
 
-You can create both user-assigned and system-assigned managed identities using configuration values. Add the following key-value pairs to your _appsettings.json_ file to create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>.
+You can create both user-assigned and system-assigned managed identities using configuration values. To create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file.
 
 #### User-assigned managed identities
 
@@ -75,7 +78,7 @@ A user-assigned managed identity can be used by providing a client ID, resource 
 ```json
 {
     "credential": "managedidentity",
-    "clientId":  "<clientId>"
+    "clientId": "<client_id>"
 }
 ```
 
@@ -84,7 +87,7 @@ A user-assigned managed identity can be used by providing a client ID, resource 
 ```json
 {
     "credential": "managedidentity",
-    "managedIdentityResourceId":  "<managedIdentityResourceId>"
+    "managedIdentityResourceId": "<managed_identity_resource_id>"
 }
 ```
 
@@ -96,7 +99,7 @@ The resource ID takes the form:
 ```json
 {
     "credential": "managedidentity",
-    "managedIdentityObjectId":  "<managedIdentityObjectId>"
+    "managedIdentityObjectId": "<managed_identity_object_id>"
 }    
 ```
 
@@ -113,56 +116,75 @@ The resource ID takes the form:
 }
 ```
 
-### Create a `WorkloadIdentityCredential` type
+### Create an instance of `AzurePipelinesCredential`
 
-Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>:
+To create an instance of <xref:Azure.Identity.AzurePipelinesCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file:
+
+```json
+{
+    "credential": "azurepipelines",
+    "clientId": "<client_id>",
+    "tenantId": "<tenant_id>",
+    "serviceConnectionId": "<service_connection_id>",
+    "systemAccessToken": "<system_access_token>"
+}
+```
+
+> [!IMPORTANT]
+> `AzurePipelinesCredential` is supported in `Microsoft.Extensions.Azure` versions 1.11.0 and later.
+
+### Create an instance of `WorkloadIdentityCredential`
+
+To create an instance of <xref:Azure.Identity.WorkloadIdentityCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file:
 
 ```json
 {
     "credential": "workloadidentity",
-    "tenantId":  "<tenantId>",
-    "clientId":  "<clientId>",
-    "tokenFilePath": "<tokenFilePath>"
+    "tenantId": "<tenant_id>",
+    "clientId": "<client_id>",
+    "tokenFilePath": "<token_file_path>"
 }
 ```
 
-### Create a `ClientSecretCredential` type
+### Create an instance of `ClientSecretCredential`
 
-Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientSecretCredential?displayProperty=fullName>:
+To create an instance of <xref:Azure.Identity.ClientSecretCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file:
 
 ```json
 {
-    "tenantId":  "<tenantId>",
-    "clientId":  "<clientId>",
-    "clientSecret": "<clientSecret>"
+    "tenantId": "<tenant_id>",
+    "clientId": "<client_id>",
+    "clientSecret": "<client_secret>"
 }
 ```
 
-### Create a `ClientCertificateCredential` type
+### Create an instance of `ClientCertificateCredential`
 
-Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>:
+To create an instance of <xref:Azure.Identity.ClientCertificateCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file:
 
 ```json
 {
-    "tenantId":  "<tenantId>",
-    "clientId":  "<clientId>",
-    "clientCertificate": "<clientCertificate>",
-    "clientCertificateStoreLocation": "<clientCertificateStoreLocation>",
-    "additionallyAllowedTenants": "<tenant-ids-separated-by-semicolon>"
+    "tenantId": "<tenant_id>",
+    "clientId": "<client_id>",
+    "clientCertificate": "<client_certificate>",
+    "clientCertificateStoreLocation": "<client_certificate_store_location>"
 }
 ```
 
 > [!NOTE]
-> The `clientCertificateStoreLocation` and `additionallyAllowedTenants` key-value pairs are optional. If the keys are present and have empty values, they are ignored. If no `clientCertificateStoreLocation` is specified, the default `CurrentUser` is used from the <xref:System.Fabric.X509Credentials.StoreLocation?displayProperty=nameWithType> enum.
+> The `clientCertificateStoreLocation` key is optional. If the key:
+>
+> * Is present and has an empty value, it's ignored.
+> * Isn't present, the default `CurrentUser` is used from the <xref:System.Fabric.X509Credentials.StoreLocation?displayProperty=nameWithType> enum.
 
-### Create a `DefaultAzureCredential` type
+### Create an instance of `DefaultAzureCredential`
 
-Add the following key-value pairs to your _appsettings.json_ file to create an <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>:
+To create an instance of <xref:Azure.Identity.DefaultAzureCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file:
 
 ```json
 {
-    "tenantId":  "<tenantId>",
-    "clientId":  "<clientId>",
-    "managedIdentityResourceId": "<managedIdentityResourceId>"
+    "tenantId": "<tenant_id>",
+    "clientId": "<client_id>",
+    "managedIdentityResourceId": "<managed_identity_resource_id>"
 }
 ```

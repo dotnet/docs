@@ -1,4 +1,4 @@
-using Microsoft.Extensions.AI;
+﻿using Microsoft.Extensions.AI;
 using Microsoft.Extensions.AI.Evaluation;
 using Microsoft.Extensions.AI.Evaluation.Quality;
 
@@ -20,7 +20,7 @@ public sealed class MyTests
         new ChatMessage(
             ChatRole.User,
             "How far is the planet Venus from Earth at its closest and furthest points?")];
-    private static ChatMessage s_response = new();
+    private static ChatResponse s_response = new();
     // </SnippetPrivateMembers>
 
     // <SnippetInitialize>
@@ -42,7 +42,7 @@ public sealed class MyTests
         // Fetch the response to be evaluated
         // and store it in a static variable.
         ChatResponse response = await s_chatConfiguration.ChatClient.GetResponseAsync(s_messages, chatOptions);
-        s_response = response.Message;
+        s_response = response;
     }
     // </SnippetInitialize>
 

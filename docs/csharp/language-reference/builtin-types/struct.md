@@ -132,7 +132,7 @@ All of a struct's member fields must be *definitely assigned* when created becau
 - You can add *field initializers* to any field or auto implemented property.
 - You can initialize any fields, or auto properties, in the body of the constructor.
 
-Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A string initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
+Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A struct initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 

@@ -1,13 +1,12 @@
 ﻿using System.Net;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http.Resilience;
-using Polly;
 
 internal partial class Program
 {
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Resilience", "EXTEXP0001:Experimental API")]
     private static void RemoveHandlers()
     {
+        #pragma warning disable EXTEXP0001
         // <remove-handlers>
         var services = new ServiceCollection();
 		// By default, we want all HttpClient instances to include the StandardResilienceHandler.
@@ -17,5 +16,6 @@ internal partial class Program
             .RemoveAllResilienceHandlers()
             .AddStandardHedgingHandler();
         // </remove-handlers>
+        #pragma warning restore EXTEXP0001
     }
 }

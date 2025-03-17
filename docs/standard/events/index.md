@@ -2,6 +2,7 @@
 title: Handling and raising events
 description: Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
 ms.date: 03/17/2025
+ms.topic: concept-article
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -15,6 +16,8 @@ helpviewer_keywords:
   - "events [.NET Core]"
   - "events [.NET]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
+#customer intent: As a .NET developer, I want to raise and handle .NET events based on the delegate model, so I can enable subscribers to register with or receive notifications from providers.
+
 ---
 # Handle and raise events
 
@@ -106,7 +109,7 @@ Specification reference documentation is available for the APIs that support eve
 | EventArgs | Class |<xref:System.EventArgs> |
 | Delegate  | Class | <xref:System.Delegate> |
 
-## Related links
+## Related content
 
 - [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)
 - [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)

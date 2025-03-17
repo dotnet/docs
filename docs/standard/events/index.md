@@ -92,8 +92,8 @@ The trade-off is between memory and speed. If your class defines many events tha
 
 The following resources describe other tasks and concepts related to working with events:
 
-- [Raise and consume events](how-to-raise-and-consume-events.md): Find examples for raising and consuming events. 
-- [Handle multiple events with event properties](how-to-handle-multiple-events-using-event-properties.md): Discover how to use event properties to handle multiple events. 
+- [Raise and consume events](how-to-raise-and-consume-events.md): Find examples for raising and consuming events.
+- [Handle multiple events with event properties](how-to-handle-multiple-events-using-event-properties.md): Discover how to use event properties to handle multiple events.
 - [Explore the observer design pattern](observer-design-pattern.md): Review a design pattern that enables a subscriber to register with and receive notifications from a provider.
 
 ## Review specification reference

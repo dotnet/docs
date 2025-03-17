@@ -90,14 +90,18 @@ Properties or fields of the attribute:
 
 :::row:::
 :::column span="2":::
+
 - Must specify, can't omit
 - Always specify first
 - Specify in **certain** order
+
 :::column-end:::
 :::column span="2":::
+
 - Always optional, omit when false
 - Specify after positional parameters
 - Specify in any order
+
 :::column-end:::
 :::row-end:::
 

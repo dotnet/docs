@@ -6,7 +6,7 @@ public sealed class SampleChatClient(Uri endpoint, string modelId) : IChatClient
     public ChatClientMetadata Metadata { get; } = new(nameof(SampleChatClient), endpoint, modelId);
 
     public async Task<ChatResponse> GetResponseAsync(
-        IList<ChatMessage> chatMessages,
+        IEnumerable<ChatMessage> chatMessages,
         ChatOptions? options = null,
         CancellationToken cancellationToken = default)
     {
@@ -21,15 +21,14 @@ public sealed class SampleChatClient(Uri endpoint, string modelId) : IChatClient
             "This is yet another response message."
         ];
 
-        return new([new ChatMessage()
-        {
-            Role = ChatRole.Assistant,
-            Text = responses[Random.Shared.Next(responses.Length)],
-        }]);
+        return new(new ChatMessage(
+            ChatRole.Assistant,
+            responses[Random.Shared.Next(responses.Length)]
+            ));
     }
 
     public async IAsyncEnumerable<ChatResponseUpdate> GetStreamingResponseAsync(
-        IList<ChatMessage> chatMessages,
+        IEnumerable<ChatMessage> chatMessages,
         ChatOptions? options = null,
         [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
@@ -41,11 +40,7 @@ public sealed class SampleChatClient(Uri endpoint, string modelId) : IChatClient
             await Task.Delay(100, cancellationToken);
 
             // Yield the next message in the response.
-            yield return new ChatResponseUpdate
-            {
-                Role = ChatRole.Assistant,
-                Text = word,
-            };
+            yield return new ChatResponseUpdate(ChatRole.Assistant, word);
         }
     }
 

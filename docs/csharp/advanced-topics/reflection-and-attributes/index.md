@@ -44,7 +44,6 @@ System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d
 ### Keyword differences for IL
 
 The C# keywords `protected` and `internal` have no meaning in Intermediate Language (IL) and aren't used in the reflection APIs. The corresponding terms in IL are *Family* and *Assembly*. Here some ways you can use these terms:
- 
 - To identify an `internal` method by using reflection, use the <xref:System.Reflection.MethodBase.IsAssembly%2A> property.
 - To identify a `protected internal` method, use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>.
 
@@ -73,7 +72,7 @@ Some attributes can be specified more than once for a given entity. The followin
 
 ### Attribute parameters
 
-Many attributes have parameters, which can be *positional*, *unnamed*, or *named*. The following table describes how to work with named and positional attributes: 
+Many attributes have parameters, which can be *positional*, *unnamed*, or *named*. The following table describes how to work with named and positional attributes:
 
 :::row:::
 :::column span="2":::

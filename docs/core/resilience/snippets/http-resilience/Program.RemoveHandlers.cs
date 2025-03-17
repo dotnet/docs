@@ -7,7 +7,6 @@ internal partial class Program
     private static void RemoveHandlers()
     {
         #pragma warning disable EXTEXP0001
-        // <remove-handlers>
         var services = new ServiceCollection();
 		// By default, we want all HttpClient instances to include the StandardResilienceHandler.
         services.ConfigureHttpClientDefaults(builder => builder.AddStandardResilienceHandler());
@@ -15,7 +14,6 @@ internal partial class Program
 		services.AddHttpClient("custom")
             .RemoveAllResilienceHandlers()
             .AddStandardHedgingHandler();
-        // </remove-handlers>
         #pragma warning restore EXTEXP0001
     }
 }

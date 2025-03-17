@@ -83,7 +83,7 @@ We provide a method <xref:Microsoft.Extensions.DependencyInjection.ResilienceHtt
 The following example demonstrates how to configure a custom <xref:System.Net.Http.HttpClient> using the `AddHttpClient` method, remove all predefined resilience strategies, and replace them with new handlers.
 This approach allows you to clear existing configurations and define new ones according to your specific requirements.
 
-:::code language="csharp" source="snippets/http-resilience/Program.RemoveHandlers.cs" range="12-17" id="remove-handlers":::
+:::code language="csharp" source="snippets/http-resilience/Program.RemoveHandlers.cs" range="11-16":::
 
 The preceding code:
 

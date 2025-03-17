@@ -44,6 +44,7 @@ System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d
 ### Keyword differences for IL
 
 The C# keywords `protected` and `internal` have no meaning in Intermediate Language (IL) and aren't used in the reflection APIs. The corresponding terms in IL are *Family* and *Assembly*. Here some ways you can use these terms:
+
 - To identify an `internal` method by using reflection, use the <xref:System.Reflection.MethodBase.IsAssembly%2A> property.
 - To identify a `protected internal` method, use the <xref:System.Reflection.MethodBase.IsFamilyOrAssembly%2A>.
 

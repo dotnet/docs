@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.AI.OpenAI" />
-    <PackageReference Include="Azure.Identity" />
+    <PackageReference Include="Azure.Identity" Version="1.13.2" />
     <PackageReference Include="Microsoft.Extensions.AI" Version="9.3.0-preview.1.25161.3" />
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.3.0-preview.1.25161.3" />
   </ItemGroup>

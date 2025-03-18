@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET, including the C# compiler. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/downloads), or the [.NET SDK](https://dotnet.microsoft.com/download/dotnet).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 

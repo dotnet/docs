@@ -18,7 +18,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 7, which supports C# 11. The C# 11 compiler is available starting with [Visual Studio 2022, version 17.3](https://visualstudio.microsoft.com/downloads/) or the [.NET 7 SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Static abstract interface methods
 

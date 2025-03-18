@@ -18,7 +18,7 @@ In this tutorial, you will learn:
 
 ## Prerequisites
 
-You need to set up your machine to run .NET 8 or later, including the C# 12 or later compiler. The C# 12 compiler is available starting with [Visual Studio 2022 version 17.7](https://visualstudio.microsoft.com/vs) or the [.NET 8 SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Primary constructors
 

@@ -13,8 +13,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-- [.NET 8.0](https://dotnet.microsoft.com/download) or later versions.
-- A text editor or code editor of your choice.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Creating the source project
 

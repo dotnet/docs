@@ -6,23 +6,7 @@ ms.date: 03/18/2025
 
 # Compliance
 
-The <xref:Microsoft.Extensions.Compliance.Abstractions> library provides foundational components and abstractions for implementing compliance features, such as data classification and redaction, in .NET applications. These abstractions help developers create and manage data in a standardized way.
-
-## Install the package
-
-From the command line:
-
-```console
-dotnet add package Microsoft.Extensions.Compliance.Abstractions
-```
-
-Or directly in the C# project file:
-
-```xml
-<ItemGroup>
-  <PackageReference Include="Microsoft.Extensions.Compliance.Abstractions" Version="[CURRENTVERSION]" />
-</ItemGroup>
-```
+.NET provides libraries that offer foundational components and abstractions for implementing compliance features, such as data classification and redaction, in .NET applications. These abstractions help developers create and manage data in a standardized way.
 
 ## Data classification
 
@@ -30,6 +14,22 @@ Data classification helps you categorize data based on its sensitivity and prote
 
 - **Taxonomy Name:** Identifies the classification system.
 - **Value:** Represents the specific label within the taxonomy.
+
+### Install the package
+
+From the command line:
+
+```console
+dotnet add package Microsoft.Extensions.Compliance.Classification
+```
+
+Or directly in the C# project file:
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.Extensions.Compliance.Classification" Version="[CURRENTVERSION]" />
+</ItemGroup>
+```
 
 ### Create custom classifications
 
@@ -130,6 +130,22 @@ class Program
 
 Redactors replace or mask sensitive data. They help you protect sensitive info in logs, error messages, or other outputs.
 
+### Install the package
+
+From the command line:
+
+```console
+dotnet add package Microsoft.Extensions.Compliance.Redaction
+```
+
+Or directly in the C# project file:
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="[CURRENTVERSION]"/>
+</ItemGroup>
+```
+
 ### Redactor
 
 Create a redactor by inheriting from <xref:Microsoft.Extensions.Compliance.Redaction.Redactor>:
@@ -171,4 +187,4 @@ public sealed class StarRedactorProvider : IRedactorProvider
 }
 ```
 
-If you need to use .NET's data redaction library, check [.NET Data Redaction](xref:data-redaction.md)
+For more information about .NET's data redaction library, check [.NET Data Redaction](data-redaction.md)

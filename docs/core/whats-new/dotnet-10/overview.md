@@ -35,13 +35,13 @@ The .NET 10 libraries introduce several new features and improvements, including
 
 - **Find certificates by thumbprints other than SHA-1**: A new method allows finding certificates using hash algorithms like SHA-256.
 - **Find PEM-encoded data in ASCII/UTF-8**: PEM encoding APIs now support reading directly from ASCII/UTF-8 data.
-- **ISOWeek support for DateOnly**: New overloads in the `ISOWeek` class support the `DateOnly` type.
+- **ISOWeek support for DateOnly**: New overloads in the <xref:System.Globalization.ISOWeek> class support the <xref:System.DateOnly> type.
 - **String normalization APIs for spans**: New APIs allow Unicode string normalization to work with spans of characters, reducing allocations.
-- **Numeric ordering for string comparison**: A new `CompareOptions.NumericOrdering` option enables numerical string comparisons.
+- **Numeric ordering for string comparison**: A new <xref:System.Globalization.CompareOptions.NumericOrdering?displayProperty=nameWithType> option enables numerical string comparisons.
 - **New TimeSpan.FromMilliseconds overload**: A single-parameter overload resolves issues with LINQ expressions.
-- **ZipArchive performance improvements**: Optimizations reduce memory usage and improve performance for `ZipArchive` in `Update` mode and parallel extraction.
+- **ZipArchive performance improvements**: Optimizations reduce memory usage and improve performance for <xref:System.IO.Compression.ZipArchive> in `Update` mode and parallel extraction.
 - **OrderedDictionary enhancements**: New `TryAdd` and `TryGetValue` overloads return an index for fast access.
-- **JSON serialization updates**: Source generators now allow specifying `ReferenceHandler` in `JsonSourceGenerationOptions`.
+- **JSON serialization updates**: Source generators now allow specifying `ReferenceHandler` in <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>.
 - **Left-handed matrix transformations**: New APIs for creating left-handed transformation matrices.
 - **PKCS#12 export enhancements**: New methods allow specifying encryption and digest algorithms for PKCS#12/PFX export.
 
@@ -88,7 +88,7 @@ The ASP.NET Core 10.0 release introduces several new features and enhancements, 
 
 - **Miscellaneous**:
   - Added the `RedirectHttpResult.IsLocalUrl` helper method for detecting local URLs.
-  - Added support for route syntax highlighting in the `RouteAttribute`.
+  - Added support for route syntax highlighting in the <xref:Microsoft.AspNetCore.Components.RouteAttribute>.
 
 For more information, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/release-notes/aspnetcore-10.0).
 
@@ -179,7 +179,7 @@ For more information, see the [F# release notes](https://fsharp.github.io/fsharp
 The Visual Basic updates in .NET 10 include the following features and enhancements:
 
 - **`unmanaged` constraint support**: The Visual Basic compiler now interprets and enforces the `unmanaged` generic constraint, enabling better compatibility with runtime APIs.
-- **Honor overload resolution priority**: The Visual Basic compiler respects the `OverloadResolutionPriorityAttribute`, ensuring faster Span-based overloads are preferred and resolving ambiguities among method overloads.
+- **Honor overload resolution priority**: The Visual Basic compiler respects the <xref:System.Runtime.CompilerServices.OverloadResolutionPriorityAttribute>, ensuring faster Span-based overloads are preferred and resolving ambiguities among method overloads.
 
 These updates ensure that Visual Basic can consume updated features in C# and the runtime, improving compatibility and performance.
 

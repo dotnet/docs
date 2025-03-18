@@ -11,7 +11,7 @@ ms.date: 03/18/2025
 
 ### Installation instructions
 
-On Windows, this [WinGet configuration file](https://builds.dotnet.microsoft.com/dotnet/install/dotnet_basic_config_docs.winget)  to install all prerequisites. If you already have something installed, WinGet will skip that step.
+On Windows, this [WinGet configuration file](https://builds.dotnet.microsoft.com/dotnet/install/dotnet_basic_config_docs.winget) to install all prerequisites. If you already have something installed, WinGet will skip that step.
 
 1. Download the file and double-click to run it.
 1. Read the license agreement, type <kbd>y</kbd>, and select <kbd>Enter</kbd> when prompted to accept.

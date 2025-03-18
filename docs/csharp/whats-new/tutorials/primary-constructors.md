@@ -15,8 +15,8 @@ This article describes how to declare a primary constructor on your type and rec
 
 To try the examples in this article, you need:
 
-- A machine running .NET 8 or later. For download instructions, see the [.NET 8 SDK](https://dotnet.microsoft.com/download).
-- The C# 12 or later compiler, which is available in the .NET 8 SDK or in [Visual Studio 2022 version 17.7](https://visualstudio.microsoft.com/vs) and later. 
+- .NET 9.0. For download instructions, see the [.NET 9 SDK](https://dotnet.microsoft.com/download).
+- C# 12 or later compiler, which is available in the .NET 9 SDK or in [Visual Studio 2022 version 17.7](https://visualstudio.microsoft.com/vs) and later. 
 
 ## Understand rules for primary constructors
 

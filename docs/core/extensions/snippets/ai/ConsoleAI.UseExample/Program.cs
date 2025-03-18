@@ -7,7 +7,7 @@ RateLimiter rateLimiter = new ConcurrencyLimiter(new()
     QueueLimit = int.MaxValue
 });
 
-var client = new SampleChatClient(new Uri("http://localhost"), "test")
+IChatClient client = new SampleChatClient(new Uri("http://localhost"), "test")
     .AsBuilder()
     .UseDistributedCache()
     .Use(async (chatMessages, options, nextAsync, cancellationToken) =>

@@ -5,8 +5,8 @@ using Microsoft.Extensions.Options;
 using OpenTelemetry.Trace;
 
 // Configure OpenTelemetry exporter
-var sourceName = Guid.NewGuid().ToString();
-var tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
+string sourceName = Guid.NewGuid().ToString();
+TracerProvider tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
     .AddSource(sourceName)
     .AddConsoleExporter()
     .Build();

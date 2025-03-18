@@ -21,7 +21,7 @@ ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
 ---
 # Handle and raise events
 
-Events in .NET are based on the delegate model. The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification when an event occurs, and an event receiver receives the notification and defines a response. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
+Events in .NET are based on the delegate model. The delegate model follows the [observer design pattern](observer-design-pattern.md), which enables a subscriber to register with and receive notifications from a provider. An event sender pushes a notification when an event occurs. An event receiver defines the response. This article describes the major components of the delegate model, how to consume events in applications, and how to implement events in your code.
   
 ## Raise events with an event sender
 
@@ -36,7 +36,7 @@ The following example shows how to declare an event named `ThresholdReached`. Th
 [!code-csharp[EventsOverview#1](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#1)]
 [!code-vb[EventsOverview#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#1)]  
   
-## Declare delegate references for methods
+## Declare delegate signatures for event handlers
 
 A delegate is a type that holds a reference to a method. A delegate is declared with a signature that shows the return type and parameters for the methods it references. It can hold references only to methods that match its signature. A delegate is equivalent to a type-safe function pointer or a callback. A delegate declaration is sufficient to define a delegate class.  
   
@@ -46,7 +46,7 @@ Delegates have many uses in .NET. In the context of events, a delegate is an int
   
 Delegates are [multicast](xref:System.MulticastDelegate) class objects, which means they can hold references to more than one event-handling method. For more information, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
   
-For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates don't work, you can define a delegate. Scenarios that require you to define a delegate are rare, such as when you must work with code that doesn't recognize generics. You mark a delegate with the `delegate` type in [C#]](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:  
+Use the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegate types to define the needed delegate. You mark a delegate with the `delegate` type in [C#]](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:  
   
 [!code-csharp[EventsOverview#4](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
 [!code-vb[EventsOverview#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  
@@ -55,9 +55,9 @@ For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler
 
 Data associated with an event can be provided through an event data class. .NET provides many event data classes that you can use in your applications. For example, the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class is the event data class for the <xref:System.IO.Ports.SerialPort.DataReceived?displayProperty=nameWithType> event. .NET follows a naming pattern where all event data classes end with the `EventArgs` suffix. You determine which event data class is associated with an event by looking at the delegate for the event. For example, the <xref:System.IO.Ports.SerialDataReceivedEventHandler> delegate includes the <xref:System.IO.Ports.SerialDataReceivedEventArgs> class as a parameter.  
   
-The <xref:System.EventArgs> class is the base type for all event data classes. You also use this class if an event doesn't have any data associated with it. When you create an event that has the single purpose of notifying other classes that something happened and there's no data to pass, include the <xref:System.EventArgs> class as the second parameter in the delegate. You can pass the <xref:System.EventArgs.Empty?displayProperty=nameWithType> value when no data is provided. The <xref:System.EventHandler> delegate includes the <xref:System.EventArgs> class as a parameter.  
+The <xref:System.EventArgs> class is typically the base type for event data classes. You also use this class if an event doesn't have any data associated with it. When you create an event that notifies subscribers that something happened without any additional data, include the <xref:System.EventArgs> class as the second parameter in the delegate. You can pass the <xref:System.EventArgs.Empty?displayProperty=nameWithType> value when no data is provided. The <xref:System.EventHandler> delegate includes the <xref:System.EventArgs> class as a parameter.  
   
-When you want to create a customized event data class, create a class that derives from the <xref:System.EventArgs> class, and then provide any members needed to pass data related to the event. Typically, you should use the same naming pattern as .NET and end your event data class name with the `EventArgs` suffix.  
+You can create a class that derives from the <xref:System.EventArgs> class to provide any members needed to pass data related to the event. Typically, you should use the same naming pattern as .NET and end your event data class name with the `EventArgs` suffix.  
   
 The following example shows an event data class named `ThresholdReachedEventArgs` that contains properties that are specific to the event being raised:
   

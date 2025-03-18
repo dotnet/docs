@@ -13,11 +13,7 @@ When you create a class library, you can distribute it as a third-party componen
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed.
-
-  For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-
-* The [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic-winget.md)]
 
 ## Create a class library project
 

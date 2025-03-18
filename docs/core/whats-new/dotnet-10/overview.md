@@ -159,7 +159,7 @@ The EF Core 10 release introduces several new features and improvements, includi
 
 For more information, see [What's new in EF Core for .NET 10](/ef/core/what-is-new/ef-core-10.0/whatsnew).
 
-## F#
+## F\#
 
 The F# updates in .NET 10 include several new features and improvements across the language, standard library, and compiler service. Key updates include:
 

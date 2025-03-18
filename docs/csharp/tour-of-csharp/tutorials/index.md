@@ -41,6 +41,6 @@ This tutorial assumes that you've finished the lessons listed above.
 
 ## Set up your local environment
 
-After you finish these tutorials, set up a development environment.
+After you finish these tutorials, set up a development environment. You'll want:
 
-[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic-winget.md)]

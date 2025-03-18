@@ -133,13 +133,11 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    This test method:
 
-   - Creates the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun>.
-   - Gets the LLM's response to a specific astronomy question. Since response caching is turned on for the reporting configuration, the LLM response will be fetched either:
-     - Directly from the LLM endpoint in the very first run of the current test.
-     - From the (disk-based) response cache that was configured in `s_defaultReportingConfiguration` in every subsequent run of the test, until the cached entry expires (in 14 days by default).
-   - Runs the evaluators against the response. Since response caching is enabled, the evaluation will be either:
-     - Performed using the the LLM endpoint in the very first run of the current test.
-     - Fetched from the (disk-based) response cache that was configured in `s_defaultReportingConfiguration` in every subsequent run of the test, until the cached entry expires (in 14 days by default).
+   - Creates the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun>. The use of `await using` ensures that the `ScenarioRun` is correctly disposed and that the results of this evaluation are correctly persisted to the result store.
+   - Gets the LLM's response to a specific astronomy question. The same <xref:Microsoft.Extensions.AI.IChatClient> that will be used for evaluation is passed to the `GetAstronomyConversationAsync` method in order to get *response caching* for the primary LLM response being evaluated. (In addition, this enables response caching for the LLM turns that the evaluators use to perform their evaluations internally.) Since response caching is turned on for the reporting configuration, the LLM response is fetched either:
+     - Directly from the LLM endpoint in the first run of the current test, or in subsequent runs if the cached entry has expired (14 days, by default).
+     - From the (disk-based) response cache that was configured in `s_defaultReportingConfiguration` in subsequent runs of the test.
+   - Runs the evaluators against the response. Like the LLM response, on subsequent runs, the evaluation is fetched from the (disk-based) response cache that was configured in `s_defaultReportingConfiguration`.
    - Runs some basic validation on the evaluation result.
 
      This step is optional and mainly for demonstration purposes. In real-world evaluations, you might not want to validate individual results since the LLM responses and evaluation scores can change over time as your product (and the models used) evolve. You might not want individual evaluation tests to "fail" and block builds in your CI/CD pipelines when this happens. Instead, it might be better to rely on the generated report and track the overall trends for evaluation scores across different scenarios over time (and only fail individual builds when there's a significant drop in evaluation scores across multiple different tests). That said, there is some nuance here and the choice of whether to validate individual results or not can vary depending on the specific use case.
@@ -150,9 +148,27 @@ Complete the following steps to create an MSTest project that connects to the `g
 
 Run the test using your preferred test workflow, for example, by using the CLI command `dotnet test` or through [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).
 
+## Generate a report
+
+1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window (update the version as necessary):
+
+   ```dotnetcli
+   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console --version 9.3.0-preview.1.25164.6
+   ```
+
+1. Generate a report by running the following command:
+
+   ```dotnetcli
+   dotnet tool run aieval report --path <path\to\your\cache\storage> --output report.html
+   ```
+
+1. Open the `report.html` file. It should look something like this.
+
+   :::image type="content" source="media/evaluation-report.png" alt-text="Screenshot of the evaluation report showing the conversation and metric values.":::
+
 ## Next steps
 
 - Navigate to the directory where the test results are stored (which is `C:\TestReports`, unless you modified the location when you created the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>). In the `results` subdirectory, notice that there's a folder for each test run named with a timestamp (`ExecutionName`). Inside each of those folders is a folder for each scenario name&mdash;in this case, just the single test method in the project. That folder contains a JSON file with the all the data including the messages, response, and evaluation result.
 - Expand the evaluation. Here are a couple ideas:
   - Add an additional custom evaluator, such as [an evaluator that uses AI to determine the measurement system](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/evaluation/Evaluators/MeasurementSystemEvaluator.cs) that's used in the response.
-  - Add another test method, for example, [a method that evaluates multiple responses](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example02_SamplingAndEvaluatingMultipleResponses.cs) from the LLM.
+  - Add another test method, for example, [a method that evaluates multiple responses](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example02_SamplingAndEvaluatingMultipleResponses.cs) from the LLM. Since each response can be different, it's good to sample and evaluate at least a few responses to a question. In this case, you specify an iteration name each time you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>.

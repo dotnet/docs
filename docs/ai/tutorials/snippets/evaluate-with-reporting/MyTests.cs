@@ -74,7 +74,7 @@ public sealed class MyTests
         const string SystemPrompt =
             """
         You're an AI assistant that can answer questions related to astronomy.
-        Keep your responses concise and try to stay under 100 words.
+        Keep your responses concise and under 100 words.
         Use the imperial measurement system for all measurements in your response.
         """;
 
@@ -91,8 +91,8 @@ public sealed class MyTests
                 ResponseFormat = ChatResponseFormat.Text
             };
 
-        ChatResponse completion = await chatClient.GetResponseAsync(messages, chatOptions);
-        return (messages, completion);
+        ChatResponse response = await chatClient.GetResponseAsync(messages, chatOptions);
+        return (messages, response);
     }
     // </SnippetGetResponse>
 
@@ -105,26 +105,26 @@ public sealed class MyTests
         // Retrieve the score for relevance from the <see cref="EvaluationResult"/>.
         NumericMetric relevance =
             result.Get<NumericMetric>(RelevanceTruthAndCompletenessEvaluator.RelevanceMetricName);
-        Assert.IsFalse(relevance.Interpretation!.Failed);
+        Assert.IsFalse(relevance.Interpretation!.Failed, relevance.Reason);
         Assert.IsTrue(relevance.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
 
         // Retrieve the score for truth from the <see cref="EvaluationResult"/>.
         NumericMetric truth = result.Get<NumericMetric>(RelevanceTruthAndCompletenessEvaluator.TruthMetricName);
-        Assert.IsFalse(truth.Interpretation!.Failed);
+        Assert.IsFalse(truth.Interpretation!.Failed, truth.Reason);
         Assert.IsTrue(truth.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
 
         // Retrieve the score for completeness from the <see cref="EvaluationResult"/>.
         NumericMetric completeness =
             result.Get<NumericMetric>(RelevanceTruthAndCompletenessEvaluator.CompletenessMetricName);
-        Assert.IsFalse(completeness.Interpretation!.Failed);
+        Assert.IsFalse(completeness.Interpretation!.Failed, completeness.Reason);
         Assert.IsTrue(completeness.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
 
         // Retrieve the word count from the <see cref="EvaluationResult"/>.
         NumericMetric wordCount = result.Get<NumericMetric>(WordCountEvaluator.WordCountMetricName);
-        Assert.IsFalse(wordCount.Interpretation!.Failed);
+        Assert.IsFalse(wordCount.Interpretation!.Failed, wordCount.Reason);
         Assert.IsTrue(wordCount.Interpretation.Rating is EvaluationRating.Good or EvaluationRating.Exceptional);
         Assert.IsFalse(wordCount.ContainsDiagnostics());
-        Assert.IsTrue(wordCount.Value <= 100);
+        Assert.IsTrue(wordCount.Value > 5 && wordCount.Value <= 100);
     }
     // </SnippetValidate>
 

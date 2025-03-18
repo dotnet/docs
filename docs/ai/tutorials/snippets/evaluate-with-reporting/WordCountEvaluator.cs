@@ -39,11 +39,15 @@ public class WordCountEvaluator : IEvaluator
         }
         else
         {
-            string reason = $"The response is {metric.Value} words long.";
-            if (metric.Value <= 100 && metric.Value > 0)
-                metric.Interpretation = new EvaluationMetricInterpretation(EvaluationRating.Good, reason: reason);
+            if (metric.Value <= 100 && metric.Value > 5)
+                metric.Interpretation = new EvaluationMetricInterpretation(
+                    EvaluationRating.Good,
+                    reason: "The response was between 6 and 100 words.");
             else
-                metric.Interpretation = new EvaluationMetricInterpretation(EvaluationRating.Unacceptable, failed: true, reason);
+                metric.Interpretation = new EvaluationMetricInterpretation(
+                    EvaluationRating.Unacceptable,
+                    failed: true,
+                    reason: "The response was either too short or greater than 100 words.");
         }
     }
 
@@ -57,8 +61,13 @@ public class WordCountEvaluator : IEvaluator
         // Count the number of words in the supplied <see cref="modelResponse"/>.
         int wordCount = CountWords(modelResponse.Text);
 
+        string reason =
+            $"This {WordCountMetricName} metric has a value of {wordCount} because " +
+            $"the evaluated model response contained {wordCount} words.";
+
         // Create a <see cref="NumericMetric"/> with value set to the word count.
-        var metric = new NumericMetric(WordCountMetricName, value: wordCount);
+        // Include a reason that explains the score.
+        var metric = new NumericMetric(WordCountMetricName, value: wordCount, reason);
 
         // Attach a default <see cref="EvaluationMetricInterpretation"/> for the metric.
         Interpret(metric);

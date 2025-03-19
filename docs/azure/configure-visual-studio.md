@@ -27,11 +27,7 @@ Open Visual Studio Installer and validate that the workloads **Azure development
 
 ## Authenticate Visual Studio with Azure
 
-When you debug apps through Visual Studio, Visual Studio can use your Azure account to authenticate and access Azure Resources. This account is also used when you publish apps directly from Visual Studio to Azure.
-
-To authenticate your Azure account from Visual Studio, select the **Tools** > **Options** menu to launch the **Options** dialog. Navigate to the **Azure Service Authentication** options and sign in using your Azure account.
-
-![Screenshot of the Visual Studio Options Dialog showing the Azure Login](./media/visual-studio-azure-login-dialog.png)
+[!INCLUDE [auth-visual-studio](../includes/auth-visual-studio.md)]
 
 ## Next steps
 

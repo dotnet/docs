@@ -1,29 +1,31 @@
 ---
-title: Compliance
+title: Compliance libraries in .NET
 description: Learn how to use compliance libraries to implement compliance features in .NET applications.
 ms.date: 03/18/2025
 ---
 
-# Compliance
+# Compliance libraries in .NET
 
-.NET provides libraries that offer foundational components and abstractions for implementing compliance features, such as data classification and redaction, in .NET applications. These abstractions help developers create and manage data in a standardized way.
+.NET provides libraries that offer foundational components and abstractions for implementing compliance features, such as data classification and redaction, in .NET applications. These abstractions help developers create and manage data in a standardized way. In this article, you learn how to use the data classification and redaction compliance libraries.
 
 ## Data classification
 
-Data classification helps you categorize data based on its sensitivity and protection level. The `DataClassification` structure lets you label sensitive info and enforce policies based on these labels.
+Data classification helps you categorize (or classify) data based on its sensitivity and protection level. The <xref:Microsoft.Extensions.Compliance.Classification.DataClassification> structure lets you label sensitive information and enforce policies based on these labels.
 
-- **Taxonomy Name:** Identifies the classification system.
-- **Value:** Represents the specific label within the taxonomy.
+- <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.TaxonomyName?displayProperty=nameWithType>: Identifies the classification system.
+- <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.Value?displayProperty=nameWithType>: Represents the specific label within the taxonomy.
 
-### Install the package
+In some situations, you might need to specify that data explicitly has no data classification, this is achieved with <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.None?displayProperty=nameWithType>. Similarly, you might need to specify that data classification is unknown—use <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.Unknown?displayProperty=nameWithType> in these cases.
 
-From the command line:
+### Install classification package
+
+[.NET CLI](#tab/dotnet-cli):
 
 ```console
 dotnet add package Microsoft.Extensions.Compliance.Classification
 ```
 
-Or directly in the C# project file:
+[PackageReference](#tab/package-reference):
 
 ```xml
 <ItemGroup>
@@ -40,21 +42,19 @@ Example:
 ```csharp
 using Microsoft.Extensions.Compliance.Classification;
 
-public static class MyTaxonomyClassifications
+internal static class MyTaxonomyClassifications
 {
-    public static string Name => "MyTaxonomy";
+    internal static string Name => "MyTaxonomy";
 
-    public static DataClassification PrivateInformation => new DataClassification(Name, nameof(PrivateInformation));
-    public static DataClassification CreditCardNumber => new DataClassification(Name, nameof(CreditCardNumber));
-    public static DataClassification SocialSecurityNumber => new DataClassification(Name, nameof(SocialSecurityNumber));
+    internal static DataClassification PrivateInformation => new(Name, nameof(PrivateInformation));
+    internal static DataClassification CreditCardNumber => new(Name, nameof(CreditCardNumber));
+    internal static DataClassification SocialSecurityNumber => new(Name, nameof(SocialSecurityNumber));
 }
 ```
 
-### Create custom attributes
+### Create custom classification attributes
 
-Create custom attributes based on your custom classifications. Use these attributes to tag your data with the right classification.
-
-Example:
+Create custom attributes based on your custom classifications. Use these attributes to tag your data with the right classification. Consider the following custom attribute class definition:
 
 ```csharp
 public sealed class PrivateInformationAttribute : DataClassificationAttribute
@@ -66,9 +66,11 @@ public sealed class PrivateInformationAttribute : DataClassificationAttribute
 }
 ```
 
+The preceding code declares a private information attribute, that's a subclass of the <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationAttribute> type. It defines a parameterless constructor and pass the custom <xref:Microsoft.Extensions.Compliance.Classification.DataClassification> to its `base`.
+
 ### Bind data classification settings
 
-Bind data classification settings from your configuration using the options pattern. In your `appsettings.json`, add:
+To bind your data classification settings, use the .NET configuration system. For example, assuming you're using a JSON configuration provider, your _appsettings.json_ could be defined as follows:
 
 ```json
 {
@@ -82,7 +84,7 @@ Bind data classification settings from your configuration using the options patt
 }
 ```
 
-Example code:
+Now consider the following options pattern approach, that binds these configuration settings into the `TestOptions` object:
 
 ```csharp
 using Microsoft.Extensions.DependencyInjection;
@@ -128,17 +130,17 @@ class Program
 
 ## Redaction
 
-Redactors replace or mask sensitive data. They help you protect sensitive info in logs, error messages, or other outputs.
+Redactors replace or mask sensitive data. They help you protect sensitive information from being leaked in logs, error messages, or other outputs.
 
-### Install the package
+### Install redaction package
 
-From the command line:
+[.NET CLI](#tab/dotnet-cli):
 
 ```console
 dotnet add package Microsoft.Extensions.Compliance.Redaction
 ```
 
-Or directly in the C# project file:
+[PackageReference](#tab/package-reference):
 
 ```xml
 <ItemGroup>
@@ -146,12 +148,12 @@ Or directly in the C# project file:
 </ItemGroup>
 ```
 
-### Redactor
+To create a custom redactor, define a subclass that inherits from <xref:Microsoft.Extensions.Compliance.Redaction.Redactor>:
 
 Create a redactor by inheriting from <xref:Microsoft.Extensions.Compliance.Redaction.Redactor>:
 
 ```csharp
-using Microsoft.Extensions.Compliance.Redaction;
+public sealed class StarRedactor : Redactor
 
 public class StarRedactor : Redactor
 {
@@ -164,7 +166,10 @@ public class StarRedactor : Redactor
         Stars.CopyTo(destination);
         return Stars.Length;
     }
-}
+
+### Create a custom redactor provider
+
+The <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider> interface provides instances of redactors based on data classification. To create a custom redactor provider, inherit from <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider> as shown in the following example:
 ```
 
 ### Redactor provider

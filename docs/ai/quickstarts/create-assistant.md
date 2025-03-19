@@ -39,14 +39,14 @@ In this quickstart, you'll learn how to create a minimal AI assistant using the 
 
 ## Core components of AI assistants
 
-AI assistants are based around conversational threads with a user. The user sends prompts to the assistant on a conversation thread, which directs the assistant to complete tasks using the tools it has available. Assistants can process and analyze data, make decisions, and interact with users or other systems to achieve specific goals. Most assistants include the following components:
+AI assistants are based around conversational threads with a user. The user sends prompts to the assistant on a conversation thread, which direct the assistant to complete tasks using the tools it has available. Assistants can process and analyze data, make decisions, and interact with users or other systems to achieve specific goals. Most assistants include the following components:
 
 | **Component** | **Description** |
-|---|---|
+|---------------|-----------------|
 | **Assistant** | The core AI client and logic that uses Azure OpenAI models, manages conversation threads, and utilizes configured tools. |
-| **Thread** | A conversation session between an assistant and a user. Threads store messages and automatically handle truncation to fit content into a model's context. |
-| **Message** | A message created by an assistant or a user. Messages can include text, images, and other files. Messages are stored as a list on the thread. |
-| **Run** | Activation of an assistant to begin running based on the contents of the thread. The assistant uses its configuration and the thread's messages to perform tasks by calling models and tools. As part of a run, the assistant appends messages to the thread. |
+| **Thread**    | A conversation session between an assistant and a user. Threads store messages and automatically handle truncation to fit content into a model's context. |
+| **Message**   | A message created by an assistant or a user. Messages can include text, images, and other files. Messages are stored as a list on the thread. |
+| **Run**       | Activation of an assistant to begin running based on the contents of the thread. The assistant uses its configuration and the thread's messages to perform tasks by calling models and tools. As part of a run, the assistant appends messages to the thread. |
 | **Run steps** | A detailed list of steps the assistant took as part of a run. An assistant can call tools or create messages during its run. Examining run steps allows you to understand how the assistant is getting to its final results. |
 
 Assistants can also be configured to use multiple tools in parallel to complete tasks, including the following:

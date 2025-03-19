@@ -57,16 +57,13 @@ public sealed class MyTests
         string model = config["AZURE_OPENAI_GPT_NAME"];
         string tenantId = config["AZURE_TENANT_ID"];
 
-        // Get an instance of Microsoft.Extensions.AI's <see cref="IChatClient"/>
-        // interface for the selected LLM endpoint.
+        // Get a chat client for the Azure OpenAI endpoint.
         AzureOpenAIClient azureClient =
             new(
                 new Uri(endpoint),
                 new DefaultAzureCredential(new DefaultAzureCredentialOptions() { TenantId = tenantId }));
         IChatClient client = azureClient.AsChatClient(modelId: model);
 
-        // Create an instance of <see cref="ChatConfiguration"/>
-        // to communicate with the LLM.
         return new ChatConfiguration(client);
     }
     // </SnippetGetChatConfig>

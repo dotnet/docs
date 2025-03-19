@@ -27,7 +27,7 @@ Open Visual Studio Installer and validate that the workloads **Azure development
 
 ## Authenticate Visual Studio with Azure
 
-[!INCLUDE [auth-visual-studio](../includes/auth-visual-studio.md)]
+[!INCLUDE [auth-visual-studio](sdk/includes/auth-visual-studio.md)]
 
 ## Next steps
 

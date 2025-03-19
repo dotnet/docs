@@ -13,7 +13,7 @@ This tutorial takes you through an interactive experience building a sample solu
 
 ## Prerequisites
 
-* The [.NET 6.0 SDK or later](https://dotnet.microsoft.com/download)
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Create the source project
 

@@ -15,8 +15,7 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 
 ## Prerequisites
 
-- Visual Studio 2022 or Visual Studio 2019.
-- .NET Core 3.1 SDK or later.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Limitations
 

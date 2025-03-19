@@ -90,8 +90,8 @@ The preceding code:
 - Creates a <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> instance.
 - Adds the standard resilience handler to all <xref:System.Net.Http.HttpClient> instances.
 - For the "custom" <xref:System.Net.Http.HttpClient>:
-- Removes all predefined resilience handlers that were previously registered. This is useful when you want to start with a clean state to add your own custom strategies.
-- Adds a `StandardHedgingHandler` to the <xref:System.Net.Http.HttpClient>. You can replace `AddStandardHedgingHandler()` with any strategy that suits your application's needs, such as retry mechanisms, circuit breakers, or other resilience techniques.
+  - Removes all predefined resilience handlers that were previously registered. This is useful when you want to start with a clean state to add your own custom strategies.
+  - Adds a `StandardHedgingHandler` to the <xref:System.Net.Http.HttpClient>. You can replace `AddStandardHedgingHandler()` with any strategy that suits your application's needs, such as retry mechanisms, circuit breakers, or other resilience techniques.
 
 ### Standard resilience handler defaults
 
@@ -293,7 +293,7 @@ There's a build time check that verifies if you're using `Grpc.Net.ClientFactory
 
 ### Compatibility with .NET Application Insights
 
-If you're using .NET Application Insights, then enabling resilience functionality in your application could cause all Application Insights telemetry to be missing. The issue occurs when resilience functionality is registered before Application Insights services. Consider the following sample causing the issue:
+If you're using .NET Application Insights version **2.22.0** or lower, then enabling resilience functionality in your application could cause all Application Insights telemetry to be missing. The issue occurs when resilience functionality is registered before Application Insights services. Consider the following sample causing the issue:
 
 ```csharp
 // At first, we register resilience functionality.
@@ -303,7 +303,7 @@ services.AddHttpClient().AddStandardResilienceHandler();
 services.AddApplicationInsightsTelemetry();
 ```
 
-The issue is caused by the following [bug](https://github.com/microsoft/ApplicationInsights-dotnet/issues/2879) in Application Insights and can be fixed by registering Application Insights services before resilience functionality, as shown below:
+The issue can be fixed by updating .NET Application Insights to version **2.23.0** or higher. If you cannot update it, then registering Application Insights services before resilience functionality, as shown below, will fix the issue:
 
 ```csharp
 // We register Application Insights first, and now it will be working correctly.

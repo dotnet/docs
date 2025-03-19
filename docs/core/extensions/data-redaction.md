@@ -25,6 +25,8 @@ dotnet add package Microsoft.Extensions.Compliance.Redaction
 </ItemGroup>
 ```
 
+---
+
 ## Available redactors
 
 Redactors are responsible for the act of redacting sensitive data. They redact, replace, or mask sensitive information. Consider the following available redactors provided by the library:
@@ -47,6 +49,7 @@ Fetch redactors at runtime using an <xref:Microsoft.Extensions.Compliance.Redact
 // This will use the default redactor, which is the ErasingRedactor
 var serviceCollection = new ServiceCollection();
 serviceCollection.AddRedaction();
+
 // Using the default redactor provider:
 serviceCollection.AddRedaction(redactionBuilder =>
 {

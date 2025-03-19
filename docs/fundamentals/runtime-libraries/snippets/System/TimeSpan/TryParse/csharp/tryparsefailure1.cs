@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -8,9 +8,9 @@ public class Example
       string value = "000000006";
       TimeSpan interval;
       if (TimeSpan.TryParse(value, out interval))
-         Console.WriteLine("{0} --> {1}", value, interval);
+         Console.WriteLine($"{value} --> {interval}");
       else
-         Console.WriteLine("Unable to parse '{0}'", value);
+         Console.WriteLine($"Unable to parse '{value}'");
          
       // Output from .NET Framework 3.5 and earlier versions:
       //       000000006 --> 6.00:00:00

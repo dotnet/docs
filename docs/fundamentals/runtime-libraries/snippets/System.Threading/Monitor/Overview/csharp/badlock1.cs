@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -29,7 +29,7 @@ public class Example1
                     }
                 }));
             Task.WaitAll(tasks.ToArray());
-            Console.WriteLine("{0} tasks started and executed.", nTasks);
+            Console.WriteLine($"{nTasks} tasks started and executed.");
         }
         catch (AggregateException e)
         {

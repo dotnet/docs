@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -116,8 +116,7 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.",
-                              value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:
@@ -148,7 +147,7 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
       }
       //    -1.79769313486232E+308 is outside the range of the Int32 type.
@@ -297,7 +296,7 @@ public class Example
                               value.GetType().Name, value, result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:
@@ -328,7 +327,7 @@ public class Example
                               value.GetType().Name, value, result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
          catch (FormatException) {
             Console.WriteLine("The {0} value '{1}' is not in a recognizable format.",

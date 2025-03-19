@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 
 namespace NDP_UE_CS
@@ -72,14 +72,11 @@ namespace NDP_UE_CS
             }
             catch (Exception ex)
             {
-                Console.WriteLine("\nMessage ---\n{0}", ex.Message);
-                Console.WriteLine(
-                    "\nHelpLink ---\n{0}", ex.HelpLink);
-                Console.WriteLine("\nSource ---\n{0}", ex.Source);
-                Console.WriteLine(
-                    "\nStackTrace ---\n{0}", ex.StackTrace);
-                Console.WriteLine(
-                    "\nTargetSite ---\n{0}", ex.TargetSite);
+                Console.WriteLine($"\nMessage ---\n{ex.Message}");
+                Console.WriteLine($"\nHelpLink ---\n{ex.HelpLink}");
+                Console.WriteLine($"\nSource ---\n{ex.Source}");
+                Console.WriteLine($"\nStackTrace ---\n{ex.StackTrace}");
+                Console.WriteLine($"\nTargetSite ---\n{ex.TargetSite}");
             }
         }
     }

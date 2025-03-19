@@ -1,4 +1,4 @@
-﻿// <Snippet21>
+// <Snippet21>
 using System;
 
 public class Example5
@@ -22,7 +22,7 @@ public class Example5
                 }
                 catch (OverflowException)
                 {
-                    Console.WriteLine("Unable to convert {0} to Int64.", value);
+                    Console.WriteLine($"Unable to convert {value} to Int64.");
                 }
                 try
                 {
@@ -33,7 +33,7 @@ public class Example5
                 }
                 catch (OverflowException)
                 {
-                    Console.WriteLine("Unable to convert {0} to UInt64.", value);
+                    Console.WriteLine($"Unable to convert {value} to UInt64.");
                 }
                 try
                 {
@@ -44,7 +44,7 @@ public class Example5
                 }
                 catch (OverflowException)
                 {
-                    Console.WriteLine("Unable to convert {0} to Decimal.", value);
+                    Console.WriteLine($"Unable to convert {value} to Decimal.");
                 }
                 try
                 {
@@ -55,7 +55,7 @@ public class Example5
                 }
                 catch (OverflowException)
                 {
-                    Console.WriteLine("Unable to convert {0} to Single.", value);
+                    Console.WriteLine($"Unable to convert {value} to Single.");
                 }
                 Console.WriteLine();
             }

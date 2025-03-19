@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -73,13 +73,12 @@ public class InstantiateEx6
             }
             if (match)
             {
-                Console.WriteLine("NumberFormatInfo object for '{0}' matches '{1}'",
-                                          name, ci.Name);
+                Console.WriteLine($"NumberFormatInfo object for '{name}' matches '{ci.Name}'");
                 hasOneMatch = true;
             }
         }
         if (!hasOneMatch)
-            Console.WriteLine("NumberFormatInfo object for '{0}' --> No Match", name);
+            Console.WriteLine($"NumberFormatInfo object for '{name}' --> No Match");
 
         Console.WriteLine();
     }

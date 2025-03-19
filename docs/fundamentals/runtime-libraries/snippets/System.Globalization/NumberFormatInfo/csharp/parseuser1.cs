@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 
@@ -12,27 +12,25 @@ public class ParseUserEx
         String value = "310,16";
         try
         {
-            Console.WriteLine("{0} culture reflects user overrides: {1}",
-                              stdCulture.Name, stdCulture.UseUserOverride);
+            Console.WriteLine($"{stdCulture.Name} culture reflects user overrides: {stdCulture.UseUserOverride}");
             Decimal amount = Decimal.Parse(value, stdCulture);
             Console.WriteLine("'{0}' --> {1}", value, amount.ToString(CultureInfo.InvariantCulture));
         }
         catch (FormatException)
         {
-            Console.WriteLine("Unable to parse '{0}'", value);
+            Console.WriteLine($"Unable to parse '{value}'");
         }
         Console.WriteLine();
 
         try
         {
-            Console.WriteLine("{0} culture reflects user overrides: {1}",
-                              custCulture.Name, custCulture.UseUserOverride);
+            Console.WriteLine($"{custCulture.Name} culture reflects user overrides: {custCulture.UseUserOverride}");
             Decimal amount = Decimal.Parse(value, custCulture);
             Console.WriteLine("'{0}' --> {1}", value, amount.ToString(CultureInfo.InvariantCulture));
         }
         catch (FormatException)
         {
-            Console.WriteLine("Unable to parse '{0}'", value);
+            Console.WriteLine($"Unable to parse '{value}'");
         }
     }
 }

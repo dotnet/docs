@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Reflection;
 
@@ -26,10 +26,9 @@ namespace App
             string substring = "archæ";
             int position = StringLibrary2.SubstringStartsAt(value, substring);
             if (position >= 0)
-                Console.WriteLine("'{0}' found in '{1}' starting at position {2}",
-                               substring, value, position);
+                Console.WriteLine($"'{substring}' found in '{value}' starting at position {position}");
             else
-                Console.WriteLine("'{0}' not found in '{1}'", substring, value);
+                Console.WriteLine($"'{substring}' not found in '{value}'");
         }
     }
     // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -168,18 +168,17 @@ namespace XmlReaderExampleCS
                     switch (reader.NodeType)
                     {
                         case XmlNodeType.Element:
-                            Console.WriteLine("Start Element {0}", reader.Name);
+                            Console.WriteLine($"Start Element {reader.Name}");
                             break;
                         case XmlNodeType.Text:
                             Console.WriteLine("Text Node: {0}",
                                      await reader.GetValueAsync());
                             break;
                         case XmlNodeType.EndElement:
-                            Console.WriteLine("End Element {0}", reader.Name);
+                            Console.WriteLine($"End Element {reader.Name}");
                             break;
                         default:
-                            Console.WriteLine("Other node {0} with value {1}",
-                                            reader.NodeType, reader.Value);
+                            Console.WriteLine($"Other node {reader.NodeType} with value {reader.Value}");
                             break;
                     }
                 }

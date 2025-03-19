@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Example
@@ -61,15 +61,13 @@ public class Example
       }
       catch (FormatException)
       {
-         Console.WriteLine("Unable to convert the string '{0}' to a BigInteger value.",
-                           positiveString);
+         Console.WriteLine($"Unable to convert the string '{positiveString}' to a BigInteger value.");
       }
 
       if (BigInteger.TryParse(negativeString, out negBigInt))
         Console.WriteLine(negBigInt);
       else
-         Console.WriteLine("Unable to convert the string '{0}' to a BigInteger value.",
-                            negativeString);
+         Console.WriteLine($"Unable to convert the string '{negativeString}' to a BigInteger value.");
 
       // The example displays the following output:
       //   9.1389681247993671255432112E+31

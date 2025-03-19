@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Resources;
 using System.Globalization;
@@ -21,8 +21,7 @@ public class Example2
         foreach (var cultureName in cultureNames)
         {
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture(cultureName);
-            Console.WriteLine("The current UI culture is {0}",
-                              CultureInfo.CurrentUICulture.Name);
+            Console.WriteLine($"The current UI culture is {CultureInfo.CurrentUICulture.Name}");
             if (DateTime.Now < noon)
                 Console.WriteLine("{0}!", rm.GetString("Morning"));
             else if (DateTime.Now < evening)

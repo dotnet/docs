@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -30,11 +30,8 @@ public class DefaultThreadEx
 
     private static void DisplayThreadInfo()
     {
-        Console.WriteLine("\nCurrent Thread Name: '{0}'",
-                          Thread.CurrentThread.Name);
-        Console.WriteLine("Current Thread Culture/UI Culture: {0}/{1}",
-                          Thread.CurrentThread.CurrentCulture.Name,
-                          Thread.CurrentThread.CurrentUICulture.Name);
+        Console.WriteLine($"\nCurrent Thread Name: '{Thread.CurrentThread.Name}'");
+        Console.WriteLine($"Current Thread Culture/UI Culture: {Thread.CurrentThread.CurrentCulture.Name}/{Thread.CurrentThread.CurrentUICulture.Name}");
     }
 
     private static void DisplayValues()

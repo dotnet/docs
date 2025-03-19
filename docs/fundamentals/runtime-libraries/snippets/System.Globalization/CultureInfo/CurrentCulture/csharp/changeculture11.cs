@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -7,10 +7,7 @@ public class Info11 : MarshalByRefObject
 {
     public void ShowCurrentCulture()
     {
-        Console.WriteLine("Culture of {0} in application domain {1}: {2}",
-                          Thread.CurrentThread.Name,
-                          AppDomain.CurrentDomain.FriendlyName,
-                          CultureInfo.CurrentCulture.Name);
+        Console.WriteLine($"Culture of {Thread.CurrentThread.Name} in application domain {AppDomain.CurrentDomain.FriendlyName}: {CultureInfo.CurrentCulture.Name}");
     }
 }
 

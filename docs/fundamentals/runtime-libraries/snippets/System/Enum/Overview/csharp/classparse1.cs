@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example7
 {
@@ -13,12 +13,11 @@ public class Example7
             ArrivalStatus status1 = (ArrivalStatus)Enum.Parse(typeof(ArrivalStatus), number);
             if (!(Enum.IsDefined(typeof(ArrivalStatus), status1)))
                 status1 = ArrivalStatus.Unknown;
-            Console.WriteLine("Converted '{0}' to {1}", number, status1);
+            Console.WriteLine($"Converted '{number}' to {status1}");
         }
         catch (FormatException)
         {
-            Console.WriteLine("Unable to convert '{0}' to an ArrivalStatus value.",
-                              number);
+            Console.WriteLine($"Unable to convert '{number}' to an ArrivalStatus value.");
         }
 
         ArrivalStatus status2;
@@ -26,12 +25,11 @@ public class Example7
         {
             if (!(Enum.IsDefined(typeof(ArrivalStatus), status2)))
                 status2 = ArrivalStatus.Unknown;
-            Console.WriteLine("Converted '{0}' to {1}", name, status2);
+            Console.WriteLine($"Converted '{name}' to {status2}");
         }
         else
         {
-            Console.WriteLine("Unable to convert '{0}' to an ArrivalStatus value.",
-                              number);
+            Console.WriteLine($"Unable to convert '{number}' to an ArrivalStatus value.");
         }
         // The example displays the following output:
         //       Converted '-1' to Late

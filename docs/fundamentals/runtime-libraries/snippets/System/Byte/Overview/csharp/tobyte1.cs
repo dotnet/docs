@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example3
 {
@@ -49,7 +49,7 @@ public class Example3
             try
             {
                 byte result = Convert.ToByte(ch);
-                Console.WriteLine("{0} is converted to {1}.", ch, result);
+                Console.WriteLine($"{ch} is converted to {result}.");
             }
             catch (OverflowException)
             {

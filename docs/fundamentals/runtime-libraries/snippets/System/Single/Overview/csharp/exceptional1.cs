@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example6
@@ -8,7 +8,7 @@ public class Example6
         float value1 = 1.163287e-36f;
         float value2 = 9.164234e-25f;
         float result = value1 * value2;
-        Console.WriteLine("{0} * {1} = {2}", value1, value2, result);
+        Console.WriteLine($"{value1} * {value2} = {result}");
         Console.WriteLine("{0} = 0: {1}", result, result.Equals(0.0f));
     }
 }

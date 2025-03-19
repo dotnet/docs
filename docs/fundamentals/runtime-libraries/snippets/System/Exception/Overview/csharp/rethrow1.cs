@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections.Generic;
 
@@ -51,8 +51,8 @@ public class RethrowEx1
         {
             Console.WriteLine("An exception ({0}) occurred.",
                               e.GetType().Name);
-            Console.WriteLine("Message:\n   {0}\n", e.Message);
-            Console.WriteLine("Stack Trace:\n   {0}\n", e.StackTrace);
+            Console.WriteLine($"Message:\n   {e.Message}\n");
+            Console.WriteLine($"Stack Trace:\n   {e.StackTrace}\n");
         }
     }
 

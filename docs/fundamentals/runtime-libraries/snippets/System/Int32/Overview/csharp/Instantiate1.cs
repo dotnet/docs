@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Example
@@ -20,7 +20,7 @@ public class Example
       int number1 = 64301;
       int number2 = 25548612;
       // </Snippet1>
-      Console.WriteLine("{0} - {1}", number1, number2);
+      Console.WriteLine($"{number1} - {number2}");
    }
 
    private static void InstantiateByNarrowingConversion()
@@ -32,7 +32,7 @@ public class Example
          Console.WriteLine(number1);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int32.", lNumber);
+         Console.WriteLine($"{lNumber} is out of range of an Int32.");
       }
 
       double dbl2 = 35901.997;
@@ -41,7 +41,7 @@ public class Example
          Console.WriteLine(number2);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int32.", dbl2);
+         Console.WriteLine($"{dbl2} is out of range of an Int32.");
       }
 
       BigInteger bigNumber = 132451;
@@ -50,7 +50,7 @@ public class Example
          Console.WriteLine(number3);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int32.", bigNumber);
+         Console.WriteLine($"{bigNumber} is out of range of an Int32.");
       }
       // The example displays the following output:
       //       163245617
@@ -68,10 +68,10 @@ public class Example
          Console.WriteLine(number1);
       }
       catch (OverflowException) {
-         Console.WriteLine("'{0}' is out of range of a 32-bit integer.", string1);
+         Console.WriteLine($"'{string1}' is out of range of a 32-bit integer.");
       }
       catch (FormatException) {
-         Console.WriteLine("The format of '{0}' is invalid.", string1);
+         Console.WriteLine($"The format of '{string1}' is invalid.");
       }
 
       string string2 = "F9A3C";
@@ -81,10 +81,10 @@ public class Example
          Console.WriteLine(number2);
       }
       catch (OverflowException) {
-         Console.WriteLine("'{0}' is out of range of a 32-bit integer.", string2);
+         Console.WriteLine($"'{string2}' is out of range of a 32-bit integer.");
       }
       catch (FormatException) {
-         Console.WriteLine("The format of '{0}' is invalid.", string2);
+         Console.WriteLine($"The format of '{string2}' is invalid.");
       }
       // The example displays the following output:
       //       244681

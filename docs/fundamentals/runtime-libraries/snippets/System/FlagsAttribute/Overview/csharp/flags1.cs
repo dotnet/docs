@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 [Flags]
@@ -28,10 +28,8 @@ public class Example1
 
         // Which households have no service?
         for (int ctr = 0; ctr < households.Length; ctr++)
-            Console.WriteLine("Household {0} has phone service: {1}",
-                              ctr + 1,
-                              households[ctr] == PhoneService.None ?
-                                  "No" : "Yes");
+            Console.WriteLine($"Household {ctr + 1} has phone service: {households[ctr] == PhoneService.None ?
+                                  "No" : "Yes"}");
         Console.WriteLine();
 
         // Which households have cell phone service?
@@ -53,8 +51,7 @@ public class Example1
 
         // List all types of service of each household?//
         for (int ctr = 0; ctr < households.Length; ctr++)
-            Console.WriteLine("Household {0} has: {1:G}",
-                              ctr + 1, households[ctr]);
+            Console.WriteLine($"Household {ctr + 1} has: {households[ctr]:G}");
         Console.WriteLine();
     }
 }

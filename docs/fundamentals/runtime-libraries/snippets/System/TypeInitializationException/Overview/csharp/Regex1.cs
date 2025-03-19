@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Text.RegularExpressions;
 
@@ -12,8 +12,7 @@ public class RegexEx1
 
         Regex rgx = new Regex("[aeiouy]");
         Console.WriteLine("Regular expression pattern: {0}", rgx.ToString());
-        Console.WriteLine("Timeout interval for this regex: {0} seconds",
-                          rgx.MatchTimeout.TotalSeconds);
+        Console.WriteLine($"Timeout interval for this regex: {rgx.MatchTimeout.TotalSeconds} seconds");
     }
 }
 // The example displays the following output:

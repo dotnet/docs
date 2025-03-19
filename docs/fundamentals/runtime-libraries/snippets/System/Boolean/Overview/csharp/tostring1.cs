@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example10
@@ -8,8 +8,8 @@ public class Example10
       bool raining = false;
       bool busLate = true;
 
-      Console.WriteLine("It is raining: {0}", raining);
-      Console.WriteLine("The bus is late: {0}", busLate);
+      Console.WriteLine($"It is raining: {raining}");
+      Console.WriteLine($"The bus is late: {busLate}");
    }
 }
 // The example displays the following output:

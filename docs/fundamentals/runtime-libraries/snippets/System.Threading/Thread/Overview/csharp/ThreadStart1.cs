@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -22,9 +22,7 @@ public class Example2
                         Thread.CurrentThread.ThreadState,
                         Thread.CurrentThread.Priority);
       do {
-         Console.WriteLine("Thread {0}: Elapsed {1:N2} seconds",
-                           Thread.CurrentThread.ManagedThreadId,
-                           sw.ElapsedMilliseconds / 1000.0);
+         Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId}: Elapsed {sw.ElapsedMilliseconds / 1000.0:N2} seconds");
          Thread.Sleep(500);
       } while (sw.ElapsedMilliseconds <= 5000);
       sw.Stop();

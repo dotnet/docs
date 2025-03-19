@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -8,9 +8,7 @@ public class Example
       DateTime localDate = new DateTime(2010, 3, 14, 2, 30, 0, DateTimeKind.Local);
       long binLocal = localDate.ToBinary();
       if (TimeZoneInfo.Local.IsInvalidTime(localDate))
-         Console.WriteLine("{0} is an invalid time in the {1} zone.",
-                           localDate,
-                           TimeZoneInfo.Local.StandardName);
+         Console.WriteLine($"{localDate} is an invalid time in the {TimeZoneInfo.Local.StandardName} zone.");
 
       DateTime localDate2 = DateTime.FromBinary(binLocal);
       Console.WriteLine("{0} = {1}: {2}",

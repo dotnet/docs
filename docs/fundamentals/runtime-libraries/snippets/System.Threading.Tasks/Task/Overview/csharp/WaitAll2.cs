@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -64,7 +64,7 @@ public class Example6
         Console.WriteLine("\nStatus of tasks:");
         foreach (var t in tasks)
         {
-            Console.WriteLine("   Task #{0}: {1}", t.Id, t.Status);
+            Console.WriteLine($"   Task #{t.Id}: {t.Status}");
             if (t.Exception != null)
             {
                 foreach (var ex in t.Exception.InnerExceptions)

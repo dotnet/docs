@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public struct Complex
@@ -43,12 +43,12 @@ class MyClass
     cmplx2.re = 2.0;
     cmplx2.im = 1.0;
 
-    Console.WriteLine("{0} <> {1}: {2}", cmplx1, cmplx2, cmplx1 != cmplx2);
+    Console.WriteLine($"{cmplx1} <> {cmplx2}: {cmplx1 != cmplx2}");
     Console.WriteLine("{0} = {1}: {2}", cmplx1, cmplx2, cmplx1.Equals(cmplx2));
 
     cmplx2.re = 4.0;
 
-    Console.WriteLine("{0} = {1}: {2}", cmplx1, cmplx2, cmplx1 == cmplx2);
+    Console.WriteLine($"{cmplx1} = {cmplx2}: {cmplx1 == cmplx2}");
     Console.WriteLine("{0} = {1}: {2}", cmplx1, cmplx2, cmplx1.Equals(cmplx2));
   }
 }

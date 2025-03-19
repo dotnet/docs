@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -110,8 +110,7 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int64 type.",
-                              value);
+            Console.WriteLine($"{value} is outside the range of the Int64 type.");
          }
       }
       // The example displays the following output:
@@ -142,7 +141,7 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int64 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int64 type.");
          }
       }
       //    -1.7976931348623157E+308 is outside the range of the Int64 type.
@@ -285,7 +284,7 @@ public class Example
                               value.GetType().Name, value, result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int64 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int64 type.");
          }
       }
       // The example displays the following output:
@@ -316,7 +315,7 @@ public class Example
                               value.GetType().Name, value, result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int64 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int64 type.");
          }
          catch (FormatException) {
             Console.WriteLine("The {0} value '{1}' is not in a recognizable format.",

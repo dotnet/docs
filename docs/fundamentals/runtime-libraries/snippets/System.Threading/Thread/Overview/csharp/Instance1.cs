@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Threading;
 
@@ -22,12 +22,12 @@ public class Example1
    {
       lock (obj) {
          var th  = Thread.CurrentThread;
-         Console.WriteLine("Managed thread #{0}: ", th.ManagedThreadId);
-         Console.WriteLine("   Background thread: {0}", th.IsBackground);
-         Console.WriteLine("   Thread pool thread: {0}", th.IsThreadPoolThread);
-         Console.WriteLine("   Priority: {0}", th.Priority);
-         Console.WriteLine("   Culture: {0}", th.CurrentCulture.Name);
-         Console.WriteLine("   UI culture: {0}", th.CurrentUICulture.Name);
+         Console.WriteLine($"Managed thread #{th.ManagedThreadId}: ");
+         Console.WriteLine($"   Background thread: {th.IsBackground}");
+         Console.WriteLine($"   Thread pool thread: {th.IsThreadPoolThread}");
+         Console.WriteLine($"   Priority: {th.Priority}");
+         Console.WriteLine($"   Culture: {th.CurrentCulture.Name}");
+         Console.WriteLine($"   UI culture: {th.CurrentUICulture.Name}");
          Console.WriteLine();
       }   
    }

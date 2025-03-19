@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 
 // A class that represents an individual card in a playing deck.
@@ -75,8 +75,7 @@ public class Dealer
 
             if (mustReshuffle & ctr < numberToDeal - 1)
             {
-                Console.WriteLine("Can only deal the {0} cards remaining on the deck.",
-                                  ctr + 1);
+                Console.WriteLine($"Can only deal the {ctr + 1} cards remaining on the deck.");
                 return cardsDealt;
             }
         }
@@ -96,7 +95,7 @@ public class Example17
     {
         foreach (var card in cards)
             if (card != null)
-                Console.WriteLine("{0} of {1}", card.FaceValue, card.Suit);
+                Console.WriteLine($"{card.FaceValue} of {card.Suit}");
     }
 }
 // The example displays output like the following:

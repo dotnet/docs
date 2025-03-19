@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Collections.Generic;
 
@@ -72,7 +72,7 @@ public class Example
             Console.WriteLine(aPart);
         }
 
-        Console.WriteLine("\nParts[3]: {0}", parts[3]);
+        Console.WriteLine($"\nParts[3]: {parts[3]}");
 
         Console.WriteLine("\nRemove(\"1534\")");
 

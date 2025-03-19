@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Globalization;
@@ -24,7 +24,7 @@ public class Example
       String input;
       while ((input = sr.ReadLine()) != null)
       {
-         Console.WriteLine("Stored data: {0}\n" , input);
+         Console.WriteLine($"Stored data: {input}\n");
 
          // Parse the stored string.
          DateTime dtOut = DateTime.Parse(input, invC, DateTimeStyles.RoundtripKind);

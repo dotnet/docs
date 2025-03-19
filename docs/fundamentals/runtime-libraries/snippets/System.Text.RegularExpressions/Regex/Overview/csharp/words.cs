@@ -1,4 +1,4 @@
-﻿// <snippet0>
+// <snippet0>
 using System;
 using System.Text.RegularExpressions;
 
@@ -22,9 +22,7 @@ public class Test
 
 // <snippet3>
         // Report the number of matches found.
-        Console.WriteLine("{0} matches found in:\n   {1}",
-                          matches.Count,
-                          text);
+        Console.WriteLine($"{matches.Count} matches found in:\n   {text}");
 // </snippet3>
 
 // <snippet4>
@@ -32,10 +30,7 @@ public class Test
         foreach (Match match in matches)
         {
             GroupCollection groups = match.Groups;
-            Console.WriteLine("'{0}' repeated at positions {1} and {2}",
-                              groups["word"].Value,
-                              groups[0].Index,
-                              groups[1].Index);
+            Console.WriteLine($"'{groups["word"].Value}' repeated at positions {groups[0].Index} and {groups[1].Index}");
         }
 // </snippet4>
     }

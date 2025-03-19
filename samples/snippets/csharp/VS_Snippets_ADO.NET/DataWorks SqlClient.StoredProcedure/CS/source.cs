@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -43,7 +43,7 @@ static class Program
                 {
                     while (reader.Read())
                     {
-                        Console.WriteLine("{0}: {1:C}", reader[0], reader[1]);
+                        Console.WriteLine($"{reader[0]}: {1:C}");
                     }
                 }
                 else

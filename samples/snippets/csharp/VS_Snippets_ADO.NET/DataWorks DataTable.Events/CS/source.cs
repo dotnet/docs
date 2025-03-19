@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 
 static class Class1
@@ -71,29 +71,23 @@ static class Class1
     }
 
     static void Row_Changed(object sender, DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Changed Event: name={0}; action={1}",
-            e.Row["name"], e.Action);
+        Console.WriteLine($"Row_Changed Event: name={e.Row["name"]}; action={e.Action}");
 
     static void Row_Changing(object sender, DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Changing Event: name={0}; action={1}",
-            e.Row["name"], e.Action);
+        Console.WriteLine($"Row_Changing Event: name={e.Row["name"]}; action={e.Action}");
 
     static void Row_Deleted(object sender, DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Deleted Event: name={0}; action={1}",
-            e.Row["name", DataRowVersion.Original], e.Action);
+        Console.WriteLine($"Row_Deleted Event: name={e.Row["name"}; action={DataRowVersion.Original]}");
 
     static void Row_Deleting(object sender,
     DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Deleting Event: name={0}; action={1}",
-            e.Row["name"], e.Action);
+        Console.WriteLine($"Row_Deleting Event: name={e.Row["name"]}; action={e.Action}");
 
     static void Column_Changed(object sender, DataColumnChangeEventArgs e) =>
-        Console.WriteLine("Column_Changed Event: ColumnName={0}; RowState={1}",
-            e.Column.ColumnName, e.Row.RowState);
+        Console.WriteLine($"Column_Changed Event: ColumnName={e.Column.ColumnName}; RowState={e.Row.RowState}");
 
     static void Column_Changing(object sender, DataColumnChangeEventArgs e) =>
-        Console.WriteLine("Column_Changing Event: ColumnName={0}; RowState={1}",
-            e.Column.ColumnName, e.Row.RowState);
+        Console.WriteLine($"Column_Changing Event: ColumnName={e.Column.ColumnName}; RowState={e.Row.RowState}");
 
     static void Table_NewRow(object sender,
         DataTableNewRowEventArgs e) =>

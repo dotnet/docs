@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
@@ -56,8 +56,7 @@ static class Program
         Console.WriteLine("Data Types:");
         foreach (DataColumn column in table.Columns)
         {
-            Console.WriteLine(" {0} -- {1}",
-                column.ColumnName, column.DataType.UnderlyingSystemType);
+            Console.WriteLine($" {column.ColumnName} -- {column.DataType.UnderlyingSystemType}");
         }
 
         // Display the value for each row.

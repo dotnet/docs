@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,7 +48,7 @@ namespace cs_walk2
 
             foreach (var custObj in custQuery)
             {
-                Console.WriteLine("ID={0}", custObj.CustomerID);
+                Console.WriteLine($"ID={custObj.CustomerID}");
             }
             // Freeze the console window.
             Console.ReadLine();

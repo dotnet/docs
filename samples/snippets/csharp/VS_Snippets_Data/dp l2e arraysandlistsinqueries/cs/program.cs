@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +26,7 @@ namespace L2E_ArraysAndListsInQueriesCS
                                select p;
                 foreach (var product in products)
                 {
-                    Console.WriteLine("{0}: {1}", product.ProductModelID, product.ProductID);
+                    Console.WriteLine($"{product.ProductModelID}: {product.ProductID}");
                 }
             }
             //</snippet1>
@@ -62,7 +62,7 @@ namespace L2E_ArraysAndListsInQueriesCS
 
                 foreach (var product in products)
                 {
-                    Console.WriteLine("{0}: {1}", product.ProductModelID, product.ProductID);
+                    Console.WriteLine($"{product.ProductModelID}: {product.ProductID}");
                 }
             }
             //</snippet3>

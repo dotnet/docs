@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Data.OracleClient;
 
@@ -24,8 +24,7 @@ static class Program
 
                 while (reader.Read())
                 {
-                    Console.WriteLine("\t{0}\t{1}",
-                        reader[0], reader[1]);
+                    Console.WriteLine($"\t{reader[0]}\t{reader[1]}");
                 }
                 reader.Close();
             }

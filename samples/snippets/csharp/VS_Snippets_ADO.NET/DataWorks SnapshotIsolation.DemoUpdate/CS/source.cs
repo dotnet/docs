@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -26,7 +26,7 @@ static class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("ALLOW_SNAPSHOT_ISOLATION ON failed: {0}", ex.Message);
+                Console.WriteLine($"ALLOW_SNAPSHOT_ISOLATION ON failed: {ex.Message}");
             }
             // Create a table
             command1.CommandText =
@@ -45,7 +45,7 @@ static class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CREATE TABLE failed: {0}", ex.Message);
+                Console.WriteLine($"CREATE TABLE failed: {ex.Message}");
             }
             // Insert some data
             command1.CommandText =
@@ -117,7 +117,7 @@ static class Program
             catch (SqlException ex)
             {
                 Console.WriteLine("Expected failure for transaction1:");
-                Console.WriteLine("  {0}: {1}", ex.Number, ex.Message);
+                Console.WriteLine($"  {ex.Number}: {ex.Message}");
             }
             finally
             {
@@ -141,7 +141,7 @@ static class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CLEANUP FAILED: {0}", ex.Message);
+                Console.WriteLine($"CLEANUP FAILED: {ex.Message}");
             }
             command3.CommandText = "DROP TABLE TestSnapshotUpdate";
             try
@@ -151,7 +151,7 @@ static class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("CLEANUP FAILED: {0}", ex.Message);
+                Console.WriteLine($"CLEANUP FAILED: {ex.Message}");
             }
         }
         // </Snippet1>

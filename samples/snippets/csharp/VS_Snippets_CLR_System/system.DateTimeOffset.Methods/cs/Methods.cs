@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Class1
 {
@@ -42,13 +42,12 @@ public class Class1
       DateTimeOffset currentTime = takeOff;
       TimeSpan[] flightTimes = new TimeSpan[]
                         {new TimeSpan(2, 25, 0), new TimeSpan(1, 48, 0)};
-      Console.WriteLine("Takeoff is scheduled for {0:d} at {0:T}.",
-                        takeOff);
+      Console.WriteLine($"Takeoff is scheduled for {0:d} at {0:T}.");
       for (int ctr = flightTimes.GetLowerBound(0);
            ctr <= flightTimes.GetUpperBound(0); ctr++)
       {
          currentTime = currentTime.Add(flightTimes[ctr]);
-         Console.WriteLine("Destination #{0} at {1}.", ctr + 1, currentTime);
+         Console.WriteLine($"Destination #{ctr + 1} at {currentTime}.");
       }
       // </Snippet1>
    }
@@ -67,7 +66,7 @@ public class Class1
          else
             workDay = workDay.AddDays(8 - (int)workDay.DayOfWeek);
       }
-      Console.WriteLine("Beginning of Work Week In {0:MMMM} {0:yyyy}:", workDay);
+      Console.WriteLine($"Beginning of Work Week In {0:MMMM} {0:yyyy}:");
       // Add one week to the current date
       do
       {
@@ -93,12 +92,12 @@ public class Class1
                            DateTimeOffset.Now.Offset);
       DateTimeOffset startOfShift = startTime.AddHours(SHIFT_LENGTH);
 
-      Console.WriteLine("Shifts for the week of {0:D}", startOfShift);
+      Console.WriteLine($"Shifts for the week of {0:D}");
       do
       {
          // Exclude third shift
          if (startOfShift.Hour > 6)
-            Console.WriteLine("   {0:d} at {0:T}", startOfShift);
+            Console.WriteLine($"   {0:d} at {0:T}");
 
          startOfShift = startOfShift.AddHours(SHIFT_LENGTH);
       } while (startOfShift.DayOfWeek != DayOfWeek.Saturday &
@@ -126,7 +125,7 @@ public class Class1
                                        DateTimeOffset.Now.Offset);
       for (int ctr = 1; ctr <= 4; ctr++)
       {
-         Console.WriteLine("Quarter {0}: {1:MMMM d}", ctr, quarterDate);
+         Console.WriteLine($"Quarter {ctr}: {1:MMMM d}");
          quarterDate = quarterDate.AddMonths(3);
       }
       // This example produces the following output:
@@ -143,11 +142,11 @@ public class Class1
       double[] lapTimes = {1.308, 1.283, 1.325, 1.3625, 1.317, 1.267};
       DateTimeOffset currentTime = new DateTimeOffset(1, 1, 1, 1, 30, 0,
                                    DateTimeOffset.Now.Offset);
-      Console.WriteLine("Start:    {0:T}", currentTime);
+      Console.WriteLine($"Start:    {0:T}");
       for (int ctr = lapTimes.GetLowerBound(0); ctr <= lapTimes.GetUpperBound(0); ctr++)
       {
          currentTime = currentTime.AddMinutes(lapTimes[ctr]);
-         Console.WriteLine("Lap {0}:    {1:T}", ctr + 1, currentTime);
+         Console.WriteLine($"Lap {ctr + 1}:    {1:T}");
       }
       // The example produces the following output:
       //       Start:    1:30:00 PM
@@ -379,12 +378,12 @@ public class Class1
 
       // Define local time in local time zone
       localTime = new DateTimeOffset(new DateTime(2007, 6, 15, 12, 0, 0));
-      Console.WriteLine("Local time: {0}", localTime);
+      Console.WriteLine($"Local time: {localTime}");
       Console.WriteLine();
 
       // Convert local time to offset 0 and assign to otherTime
       otherTime = localTime.ToOffset(TimeSpan.Zero);
-      Console.WriteLine("Other time: {0}", otherTime);
+      Console.WriteLine($"Other time: {otherTime}");
       Console.WriteLine("{0} = {1}: {2}",
                         localTime, otherTime,
                         localTime.Equals(otherTime));
@@ -395,7 +394,7 @@ public class Class1
 
       // Convert other time to UTC
       universalTime = localTime.ToUniversalTime();
-      Console.WriteLine("Universal time: {0}", universalTime);
+      Console.WriteLine($"Universal time: {universalTime}");
       Console.WriteLine("{0} = {1}: {2}",
                         otherTime, universalTime,
                         universalTime.Equals(otherTime));

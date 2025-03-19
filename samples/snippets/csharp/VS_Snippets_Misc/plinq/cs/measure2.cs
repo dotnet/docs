@@ -1,4 +1,4 @@
-﻿// <Snippet19>
+// <Snippet19>
 using System;
 using System.Diagnostics;
 using System.Linq;
@@ -25,7 +25,7 @@ class ExampleMeasure
 
         sw.Stop();
         long elapsed = sw.ElapsedMilliseconds; // or sw.ElapsedTicks
-        Console.WriteLine("Total query time: {0} ms", elapsed);
+        Console.WriteLine($"Total query time: {elapsed} ms");
 
         Console.WriteLine("Press any key to exit.");
         Console.ReadKey();

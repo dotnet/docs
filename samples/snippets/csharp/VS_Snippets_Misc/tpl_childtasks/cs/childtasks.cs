@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,7 +21,7 @@ class Example
             return nested.Result;
       });
 
-      Console.WriteLine("Outer has returned {0}.", outer.Result);
+      Console.WriteLine($"Outer has returned {outer.Result}.");
    }
 }
 // The example displays the following output:
@@ -68,7 +68,7 @@ public class Extra
                  return 42;
              }, ct);
 
-             Console.WriteLine("child.Result = {0}", child.Result);
+             Console.WriteLine($"child.Result = {child.Result}");
              return child.Result;
          }, tokenSource.Token);
 

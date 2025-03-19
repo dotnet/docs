@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +28,7 @@ namespace CDSCountdownEvent
         {
             Data d = (Data)obj;
             Thread.SpinWait(50000000);
-            Console.WriteLine("Processed {0}", d.Num);
+            Console.WriteLine($"Processed {d.Num}");
         }
 
         static IEnumerable<Data> GetData()
@@ -101,7 +101,7 @@ namespace CDSCountdownEvent
             DataWithToken dataWithToken = (DataWithToken)obj;
             if (dataWithToken.Token.IsCancellationRequested)
             {
-                Console.WriteLine("Canceled before starting {0}", dataWithToken.Data.Num);
+                Console.WriteLine($"Canceled before starting {dataWithToken.Data.Num}");
                 return;
             }
 
@@ -109,13 +109,13 @@ namespace CDSCountdownEvent
             {
                 if (dataWithToken.Token.IsCancellationRequested)
                 {
-                    Console.WriteLine("Cancelling while executing {0}", dataWithToken.Data.Num);
+                    Console.WriteLine($"Cancelling while executing {dataWithToken.Data.Num}");
                     return;
                 }
                 // Increase this value to slow down the program.
                 Thread.SpinWait(100000);
             }
-            Console.WriteLine("Processed {0}", dataWithToken.Data.Num);
+            Console.WriteLine($"Processed {dataWithToken.Data.Num}");
         }
 
         static void Main(string[] args)

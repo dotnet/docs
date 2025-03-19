@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Runtime.ExceptionServices;
@@ -32,8 +32,7 @@ class Example
         }
         catch (ArgumentException ex)
         {
-            Console.WriteLine("ArgumentException caught in {0}: {1}",
-                AppDomain.CurrentDomain.FriendlyName, ex.Message);
+            Console.WriteLine($"ArgumentException caught in {AppDomain.CurrentDomain.FriendlyName}: {ex.Message}");
         }
         //</Snippet6>
     }
@@ -41,8 +40,7 @@ class Example
     //<Snippet3>
     static void FirstChanceHandler(object source, FirstChanceExceptionEventArgs e)
     {
-        Console.WriteLine("FirstChanceException event raised in {0}: {1}",
-            AppDomain.CurrentDomain.FriendlyName, e.Exception.Message);
+        Console.WriteLine($"FirstChanceException event raised in {AppDomain.CurrentDomain.FriendlyName}: {e.Exception.Message}");
     }
     //</Snippet3>
 }
@@ -60,8 +58,7 @@ public class Worker : MarshalByRefObject
             }
             catch (ArgumentException ex)
             {
-                Console.WriteLine("ArgumentException caught in {0}: {1}",
-                    AppDomain.CurrentDomain.FriendlyName, ex.Message);
+                Console.WriteLine($"ArgumentException caught in {AppDomain.CurrentDomain.FriendlyName}: {ex.Message}");
             }
         }
         else

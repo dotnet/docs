@@ -1,4 +1,4 @@
-﻿namespace SelectClause;
+namespace SelectClause;
 
 //<Snippet8>
 class SelectSample1
@@ -132,7 +132,7 @@ class SelectSample2
         Console.WriteLine("\r\n studentQuery4: select range_variable[index]");
         foreach (int i in studentQuery4)
         {
-            Console.WriteLine("First score = {0}", i);
+            Console.WriteLine($"First score = {i}");
         }
 
         // Produce a filtered sequence of doubles
@@ -145,7 +145,7 @@ class SelectSample2
         Console.WriteLine("\r\n studentQuery5: select expression");
         foreach (double d in studentQuery5)
         {
-            Console.WriteLine("Adjusted first score = {0}", d);
+            Console.WriteLine($"Adjusted first score = {d}");
         }
 
         // Produce a filtered sequence of doubles that are
@@ -158,7 +158,7 @@ class SelectSample2
         Console.WriteLine("\r\n studentQuery6: select expression2");
         foreach (double d in studentQuery6)
         {
-            Console.WriteLine("Average = {0}", d);
+            Console.WriteLine($"Average = {d}");
         }
 
         // Produce a filtered sequence of anonymous types

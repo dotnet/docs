@@ -1,4 +1,4 @@
-﻿
+
 
 namespace TPL
 {
@@ -139,7 +139,7 @@ namespace TPL
             // ...populate tree (left as an exercise)
 
             // Define the Action to perform on each node.
-            Action<MyClass> myAction = x => Console.WriteLine("{0} : {1}", x.Name, x.Number);
+            Action<MyClass> myAction = x => Console.WriteLine($"{x.Name} : {x.Number}");
 
             // Traverse the tree with parallel tasks.
             DoTree(tree, myAction);

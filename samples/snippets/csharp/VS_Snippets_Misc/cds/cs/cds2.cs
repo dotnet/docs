@@ -1,4 +1,4 @@
-﻿
+
 
 //<snippet01>
 namespace ProducerConsumer
@@ -49,7 +49,7 @@ namespace ProducerConsumer
                 long ticks = sw.ElapsedTicks;
 
                 // Uncomment this line to see interleaved additions and subtractions.
-                Console.WriteLine("adding tick value {0}. item# {1}", ticks, additions);
+                Console.WriteLine($"adding tick value {ticks}. item# {additions}");
 
                 collection.Add(ticks);
 
@@ -65,7 +65,7 @@ namespace ProducerConsumer
             // Important!!! Tell consumers that no more items will be added.
             collection.CompleteAdding();
 
-            Console.WriteLine("Done adding: {0} items", additions);
+            Console.WriteLine($"Done adding: {additions} items");
         }
 
         static void RunConsumer(Object stateInfo)
@@ -106,8 +106,7 @@ namespace ProducerConsumer
                 }
             }
 
-            Console.WriteLine("Total added: {0} Total consumed: {1} Current count: {2} ",
-                                additions, subtractions, collection.Count);
+            Console.WriteLine($"Total added: {additions} Total consumed: {subtractions} Current count: {collection.Count} ");
         }
         //</snippet02>
     }
@@ -159,7 +158,7 @@ namespace BlockingCollectionExamples
             BlockingCollection<Data> coll = (BlockingCollection<Data>)collection;
             foreach (Data d in coll.GetConsumingEnumerable())
             {
-                Console.WriteLine("The population of {0} is approximately {1}", d.City, d.Population);
+                Console.WriteLine($"The population of {d.City} is approximately {d.Population}");
             }
             Console.WriteLine("Done");
         }
@@ -224,14 +223,14 @@ namespace Demos
             var rand = new Random();
             rand.NextBytes(data[taskNumber]);
 
-            Console.WriteLine("Generate for {0}", taskNumber);
+            Console.WriteLine($"Generate for {taskNumber}");
             int total = 0;
             foreach (var b in data[taskNumber])
             {
                 total += b;
             }
             results[taskNumber] = (double)((double)total / data[taskNumber].Length);
-            Console.WriteLine("results[{0}] = {1}", taskNumber, results[taskNumber]);
+            Console.WriteLine($"results[{taskNumber}] = {results[taskNumber]}");
         }
 
         // In this example, we simply take the average and compare it to other partitions.
@@ -320,7 +319,7 @@ namespace Demos
             var myAverage = buffer[index].Average(n => n);
             if (myAverage > average)
             {
-                Console.WriteLine("Buffer [{0}] is above average!", index);
+                Console.WriteLine($"Buffer [{index}] is above average!");
             }
         }
     }
@@ -544,7 +543,7 @@ namespace Demos
             _signalled.Wait();
 
             //Consume data
-            Console.WriteLine("{0:X} {1:X} {2:X} {3:X}", data[0], data[1], data[2], data[3]);
+            Console.WriteLine($"{0:X} {1:X} {2:X} {3:X}");
         }
 
         static void PostData(object state)

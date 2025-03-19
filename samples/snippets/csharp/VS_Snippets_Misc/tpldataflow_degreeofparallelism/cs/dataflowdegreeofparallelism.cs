@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -50,7 +50,7 @@ class Program
       int messageCount = processorCount;
 
       // Print the number of processors on this computer.
-      Console.WriteLine("Processor count = {0}.", processorCount);
+      Console.WriteLine($"Processor count = {processorCount}.");
 
       TimeSpan elapsed;
 

@@ -1,4 +1,4 @@
-﻿// <Snippet03>
+// <Snippet03>
 #define LOGGING
 
 using System;
@@ -24,10 +24,9 @@ class Latch
    {
       for (int i = 0; i < spinCountLog.Length; i++)
       {
-          Console.WriteLine("Wait succeeded with spin count of {0} on {1:N0} attempts",
-                            i, spinCountLog[i]);
+          Console.WriteLine($"Wait succeeded with spin count of {i} on {1:N0} attempts");
       }
-      Console.WriteLine("Wait used the kernel event on {0:N0} attempts.", totalKernelWaits);
+      Console.WriteLine($"Wait used the kernel event on {0:N0} attempts.");
       Console.WriteLine("Logging complete");
    }
 #endif

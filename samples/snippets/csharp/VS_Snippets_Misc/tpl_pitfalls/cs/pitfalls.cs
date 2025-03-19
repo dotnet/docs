@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.IO;
@@ -24,14 +24,12 @@ namespace pitfalls_cs
                     {
                         if (j == Environment.ProcessorCount)
                         {
-                            Console.WriteLine("Set on {0} with value of {1}",
-                                Thread.CurrentThread.ManagedThreadId, j);
+                            Console.WriteLine($"Set on {Thread.CurrentThread.ManagedThreadId} with value of {j}");
                             mre.Set();
                         }
                         else
                         {
-                            Console.WriteLine("Waiting on {0} with value of {1}",
-                                Thread.CurrentThread.ManagedThreadId, j);
+                            Console.WriteLine($"Waiting on {Thread.CurrentThread.ManagedThreadId} with value of {j}");
                             mre.Wait();
                         }
                     }); //deadlocks

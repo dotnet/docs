@@ -1,4 +1,4 @@
-﻿//<snippet04>
+//<snippet04>
 using System;
 using System.Linq;
 using System.Threading;
@@ -25,7 +25,7 @@ class Test
             // finalResult is the final value of subtotal for a particular partition.
             (finalResult) => Interlocked.Add(ref total, finalResult));
 
-        Console.WriteLine("The total from Parallel.ForEach is {0:N0}", total);
+        Console.WriteLine($"The total from Parallel.ForEach is {0:N0}");
     }
 }
 // The example displays the following output:

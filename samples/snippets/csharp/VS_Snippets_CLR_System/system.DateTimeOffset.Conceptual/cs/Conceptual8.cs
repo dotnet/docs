@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 
 public struct TimeZoneTime
@@ -49,7 +49,7 @@ public class TimeArithmetic
       }
       catch
       {
-         Console.WriteLine("Unable to find {0}.", tzName);
+         Console.WriteLine($"Unable to find {tzName}.");
       }
    }
 }

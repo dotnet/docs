@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.ObjectModel;
 
@@ -34,7 +34,7 @@ public class TimeOffsets
       {
          // Compare offset with offset for that date in that time zone
          if (timeZone.GetUtcOffset(offsetTime.DateTime).Equals(offset))
-            Console.WriteLine("   {0}", timeZone.DisplayName);
+            Console.WriteLine($"   {timeZone.DisplayName}");
       }
       Console.WriteLine();
    }

@@ -1,4 +1,4 @@
-﻿//<snippet07>
+//<snippet07>
 using System;
 using System.Collections.Concurrent;
 using System.Linq;
@@ -26,7 +26,7 @@ class PipeLineDemo
                           {
                               int k = BlockingCollection<int>.TryAddToAny(sourceArrays, j);
                               if(k >=0)
-                                  Console.WriteLine("added {0} to source data", j);
+                                  Console.WriteLine($"added {j} to source data");
                           });
 
       foreach (var arr in sourceArrays)
@@ -127,7 +127,7 @@ class PipeLineDemo
 
       public void Run()
       {
-          Console.WriteLine("{0} is running", this.Name);
+          Console.WriteLine($"{this.Name} is running");
           while (!m_input.All(bc => bc.IsCompleted) && !m_token.IsCancellationRequested)
           {
               TInput receivedItem;
@@ -139,7 +139,7 @@ class PipeLineDemo
                   {
                       TOutput outputItem = m_processor(receivedItem);
                       BlockingCollection<TOutput>.AddToAny(m_output, outputItem);
-                      Console.WriteLine("{0} sent {1} to next", this.Name, outputItem);
+                      Console.WriteLine($"{this.Name} sent {outputItem} to next");
                   }
                   else // we're an endpoint
                   {

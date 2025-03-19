@@ -1,4 +1,4 @@
-﻿//<snippet06>
+//<snippet06>
 namespace ProdConsumerCS
 {
     using System;
@@ -210,11 +210,11 @@ namespace ProdConsumerCS
                         if (success)
                         {
                             // Do something useful with the data.
-                            Console.WriteLine("removed Pri = {0} data = {1} collCount= {2}", item.Key, item.Value, bc.Count);
+                            Console.WriteLine($"removed Pri = {item.Key} data = {item.Value} collCount= {bc.Count}");
                         }
                         else
                         {
-                            Console.WriteLine("No items to retrieve. count = {0}", bc.Count);
+                            Console.WriteLine($"No items to retrieve. count = {bc.Count}");
                         }
                     }
                     Console.WriteLine("Exited consumer loop");

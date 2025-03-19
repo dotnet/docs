@@ -1,4 +1,4 @@
-﻿//<snippet02>
+//<snippet02>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,13 +39,13 @@ class ForEachWithThreadLocal
                     (localSum) => Interlocked.Add(ref sum, localSum)					// thread local aggregator
                 );
 
-            Console.WriteLine("\nSum={0}", sum);
+            Console.WriteLine($"\nSum={sum}");
         }
         // No exception is expected in this example, but if one is still thrown from a task,
         // it will be wrapped in AggregateException and propagated to the main thread.
         catch (AggregateException e)
         {
-            Console.WriteLine("Parallel.ForEach has thrown an exception. THIS WAS NOT EXPECTED.\n{0}", e);
+            Console.WriteLine($"Parallel.ForEach has thrown an exception. THIS WAS NOT EXPECTED.\n{e}");
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace NullExamples
 {
@@ -45,10 +45,10 @@ namespace NullExamples
 
             // Equality operator also returns false when one
             // operand is null.
-            Console.WriteLine("Empty string {0} null string", s == t ? "equals": "does not equal");
+            Console.WriteLine($"Empty string {s == t ? "equals": "does not equal"} null string");
 
             // Returns true.
-            Console.WriteLine("null == null is {0}", null == null);
+            Console.WriteLine($"null == null is {null == null}");
 
             // A value type cannot be null
             // int i = null; // Compiler error!

@@ -1,4 +1,4 @@
-﻿//<snippet4>
+//<snippet4>
 using System;
 using System.Threading;
 
@@ -67,8 +67,7 @@ public class Example
     //
     public static void ResultCallback(int lineCount)
     {
-        Console.WriteLine(
-            "Independent task printed {0} lines.", lineCount);
+        Console.WriteLine($"Independent task printed {lineCount} lines.");
     }
 }
 // The example displays the following output:

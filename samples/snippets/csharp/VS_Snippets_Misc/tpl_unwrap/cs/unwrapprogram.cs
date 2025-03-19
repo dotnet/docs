@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -137,7 +137,7 @@ namespace Unwrap
             foreach (byte item in data)
             {
                 final ^= item;
-                Console.WriteLine("{0:x}", final);
+                Console.WriteLine($"{0:x}");
             }
             Console.WriteLine("Done computing");
             return final;

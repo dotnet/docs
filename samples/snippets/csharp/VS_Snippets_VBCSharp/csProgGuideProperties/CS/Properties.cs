@@ -1,4 +1,4 @@
-﻿namespace CsCsrefProgrammingProperties
+namespace CsCsrefProgrammingProperties
 {
     using System.Linq;
     using System.Collections.Generic;
@@ -93,8 +93,8 @@
                 Cube c = new Cube(side);
 
                 // Display the results:
-                System.Console.WriteLine("Area of the square = {0:F2}", s.Area);
-                System.Console.WriteLine("Area of the cube = {0:F2}", c.Area);
+                System.Console.WriteLine($"Area of the square = {0:F2}");
+                System.Console.WriteLine($"Area of the cube = {0:F2}");
                 System.Console.WriteLine();
 
                 // Input the area:
@@ -106,8 +106,8 @@
                 c.Area = area;
 
                 // Display the results:
-                System.Console.WriteLine("Side of the square = {0:F2}", s.side);
-                System.Console.WriteLine("Side of the cube = {0:F2}", c.side);
+                System.Console.WriteLine($"Side of the square = {0:F2}");
+                System.Console.WriteLine($"Side of the cube = {0:F2}");
             }
         }
         /* Example Output:
@@ -201,7 +201,7 @@
                 System.Console.WriteLine(s);
 
             //ROC allows [] access
-            Console.WriteLine("names_3[0] = {0}", ro.Names_3[0]);
+            Console.WriteLine($"names_3[0] = {ro.Names_3[0]}");
 
             //throws runtime exceptions on unimplemented interface methods
             IList<string> myList = (IList<string>)ro.Names_3;

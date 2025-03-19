@@ -1,4 +1,4 @@
-﻿namespace Group;
+namespace Group;
 
 using CommonTypes;
 // For the group clause topic, we only use bits and pieces of this class. The same
@@ -168,7 +168,7 @@ class GroupSample2
         foreach (var studentGroup in studentQuery)
         {
             int temp = studentGroup.Key * 10;
-            Console.WriteLine("Students with an average between {0} and {1}", temp, temp + 10);
+            Console.WriteLine($"Students with an average between {temp} and {temp + 10}");
             foreach (var student in studentGroup)
             {
                 Console.WriteLine("   {0}, {1}:{2}", student.Last, student.First, student.Scores.Average());
@@ -204,7 +204,7 @@ class GroupExample1
         // Execute the query.
         foreach (var wordGroup in wordGroups)
         {
-            Console.WriteLine("Words that start with the letter '{0}':", wordGroup.Key);
+            Console.WriteLine($"Words that start with the letter '{wordGroup.Key}':");
             foreach (var word in wordGroup)
             {
                 Console.WriteLine(word);
@@ -244,10 +244,10 @@ class GroupClauseExample2
         // Execute the query.
         foreach (var wordGroup in wordGroups2)
         {
-            Console.WriteLine("Groups that start with a vowel: {0}", wordGroup.Key);
+            Console.WriteLine($"Groups that start with a vowel: {wordGroup.Key}");
             foreach (var word in wordGroup)
             {
-                Console.WriteLine("   {0}", word);
+                Console.WriteLine($"   {word}");
             }
         }
     }

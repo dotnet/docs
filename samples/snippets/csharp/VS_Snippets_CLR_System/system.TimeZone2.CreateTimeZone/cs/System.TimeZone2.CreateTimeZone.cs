@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 // <Snippet6>
 using System.Collections.Generic;
@@ -125,7 +125,7 @@ public class TimeZoneCreation
                         ! (string.IsNullOrEmpty(palmer.DaylightName)) ?  "(" + palmer.DaylightName + ") ": "" ,
                         palmer.GetAdjustmentRules().Length);
       // Indicate whether new time zone supports DST
-      Console.WriteLine("{0} supports DST: {1}", palmer.StandardName, palmer.SupportsDaylightSavingTime);
+      Console.WriteLine($"{palmer.StandardName} supports DST: {palmer.SupportsDaylightSavingTime}");
       // </Snippet3>
    }
 

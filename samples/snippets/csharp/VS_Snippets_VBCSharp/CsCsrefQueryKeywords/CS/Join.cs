@@ -1,4 +1,4 @@
-﻿namespace Joins;
+namespace Joins;
 
 
 //<snippet23>
@@ -151,10 +151,10 @@ class JoinDemonstration
         foreach (var item in groupJoinQuery3)
         {
             totalItems++;
-            Console.WriteLine("   {0}:{1}", item.ProductName, item.Category);
+            Console.WriteLine($"   {item.ProductName}:{item.Category}");
         }
 
-        Console.WriteLine("GroupJoin3: {0} items in 1 group", totalItems);
+        Console.WriteLine($"GroupJoin3: {totalItems} items in 1 group");
         Console.WriteLine(System.Environment.NewLine);
     }
 
@@ -206,7 +206,7 @@ class JoinDemonstration
             totalItems++;
             Console.WriteLine("{0,-10}{1}", item.Name, item.CategoryID);
         }
-        Console.WriteLine("LeftOuterJoin2: {0} items in 1 group", totalItems);
+        Console.WriteLine($"LeftOuterJoin2: {totalItems} items in 1 group");
     }
 }
 /*Output:

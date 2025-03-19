@@ -1654,7 +1654,7 @@ namespace ObjectServicesConceptsCS
                 foreach (var onlineOrder in onlineOrders)
                 {
                     Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: "
-                        + "{1:d} Order number: {onlineOrder.SalesOrderNumber}");
+                        + "{onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             //</snippetFilterQueryLinq>
@@ -1683,7 +1683,7 @@ namespace ObjectServicesConceptsCS
                 foreach (var onlineOrder in onlineOrders)
                 {
                     Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: "
-                        + "{1:d} Order number: {onlineOrder.SalesOrderNumber}");
+                        + "{onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             //</snippetFilterQueryEsql>
@@ -1708,7 +1708,7 @@ namespace ObjectServicesConceptsCS
                 foreach (var onlineOrder in onlineOrders)
                 {
                     Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: "
-                       + "{1:d} Order number: {onlineOrder.SalesOrderNumber}");
+                       + "{onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             //</snippetFilterQuery>

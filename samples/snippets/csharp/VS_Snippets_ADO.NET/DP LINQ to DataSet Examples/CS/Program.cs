@@ -439,7 +439,7 @@ namespace LINQtoDataSetSamples
 
             foreach (var onlineOrder in query)
             {
-                Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {1:d} Order number: {onlineOrder.SalesOrderNumber}");
+                Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
             }
             //</SnippetWhere1>
         }
@@ -607,7 +607,7 @@ namespace LINQtoDataSetSamples
             Console.WriteLine("First 3 orders in Seattle:");
             foreach (var order in query)
             {
-                Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {2:d}");
+                Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {order.OrderDate:d}");
             }
             //</SnippetTakeNested>
         }
@@ -642,7 +642,7 @@ namespace LINQtoDataSetSamples
             Console.WriteLine("All but first 2 orders in Seattle:");
             foreach (var order in query)
             {
-                Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {2:d}");
+                Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {order.OrderDate:d}");
             }
             //</SnippetSkipNested>
         }
@@ -2027,7 +2027,7 @@ namespace LINQtoDataSetSamples
 
             foreach (var order in query)
             {
-                Console.WriteLine($"{order.SalesOrderID}\t{order.SalesOrderDetailID}\t{2:d}\t{order.ProductID}");
+                Console.WriteLine($"{order.SalesOrderID}\t{order.SalesOrderDetailID}\t{order.OrderDate:d}\t{order.ProductID}");
             }
             //</SnippetJoin>
         }

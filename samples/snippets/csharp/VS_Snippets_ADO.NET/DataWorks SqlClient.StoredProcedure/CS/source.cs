@@ -43,7 +43,7 @@ static class Program
                 {
                     while (reader.Read())
                     {
-                        Console.WriteLine($"{reader[0]}: {1:C}");
+                        Console.WriteLine($"{reader[0]}: {reader[1]:C}");
                     }
                 }
                 else

@@ -450,7 +450,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var onlineOrder in onlineOrders)
                 {
-                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {1:d} Order number: {onlineOrder.SalesOrderNumber}");
+                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             // </SnippetWhere1>
@@ -467,7 +467,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var onlineOrder in onlineOrders)
                 {
-                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {1:d} Order number: {onlineOrder.SalesOrderNumber}");
+                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             // </SnippetWhere1_MQ>
@@ -577,7 +577,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Orders that were made after 12/1/2002:");
                 foreach (SalesOrderHeader order in query)
                 {
-                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {1:d} ");
+                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {order.OrderDate:d} ");
                     foreach (SalesOrderDetail orderDetail in order.SalesOrderDetails)
                     {
                         Console.WriteLine($"  Product ID: {orderDetail.ProductID} Unit Price {orderDetail.UnitPrice}");
@@ -600,7 +600,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Orders that were made after December 1, 2003:");
                 foreach (SalesOrderHeader order in query)
                 {
-                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {1:d} ");
+                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {order.OrderDate:d} ");
                     foreach (SalesOrderDetail orderDetail in order.SalesOrderDetails)
                     {
                         Console.WriteLine($"  Product ID: {orderDetail.ProductID} Unit Price {orderDetail.UnitPrice}");
@@ -621,7 +621,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Orders that were made after December 1, 2003:");
                 foreach (SalesOrderHeader order in query)
                 {
-                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {1:d} ");
+                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {order.OrderDate:d} ");
                     foreach (SalesOrderDetail orderDetail in order.SalesOrderDetails)
                     {
                         Console.WriteLine($"  Product ID: {orderDetail.ProductID} Unit Price {orderDetail.UnitPrice}");
@@ -693,7 +693,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("First 3 orders in Seattle:");
                 foreach (var order in query)
                 {
-                    Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {2:d}");
+                    Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {order.OrderDate:d}");
                 }
             }
             //</SnippetTakeNested>
@@ -724,7 +724,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("All but first 2 orders in Seattle:");
                 foreach (var order in query)
                 {
-                    Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {2:d}");
+                    Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {order.OrderDate:d}");
                 }
                 //</SnippetSkipNested>
             }
@@ -1928,7 +1928,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine($"{order.SalesOrderID}\t{order.SalesOrderDetailID}\t{2:d}\t{order.ProductID}");
+                    Console.WriteLine($"{order.SalesOrderID}\t{order.SalesOrderDetailID}\t{order.OrderDate:d}\t{order.ProductID}");
                 }
             }
             //</SnippetJoin>

@@ -10,13 +10,13 @@ Redaction helps you sanitize or mask sensitive information in logs, error messag
 
 ## Install redaction package
 
-[.NET CLI](#tab/dotnet-cli):
+### [.NET CLI](#tab/dotnet-cli)
 
 ```console
 dotnet add package Microsoft.Extensions.Compliance.Redaction
 ```
 
-[PackageReference](#tab/package-reference):
+### [PackageReference](#tab/package-reference)
 
 ```xml
 <ItemGroup>

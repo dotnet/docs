@@ -3,7 +3,7 @@ title: Configure Visual Studio for Azure Development with .NET
 description: This article helps you configure Visual Studio for Azure development including getting the right workloads installed and connecting Visual Studio to your Azure account.
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 8/15/2024
+ms.date: 3/19/2025
 author: alexwolfmsft
 ms.author: alexwolf
 ---

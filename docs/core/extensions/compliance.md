@@ -21,7 +21,7 @@ In some situations, you might need to specify that data explicitly has no data c
 
 #### [.NET CLI](#tab/dotnet-cli)
 
-```console
+```dotnetcli
 dotnet add package Microsoft.Extensions.Compliance.Classification
 ```
 
@@ -136,7 +136,7 @@ Redactors replace or mask sensitive data. They help you protect sensitive inform
 
 #### [.NET CLI](#tab/dotnet-cli)
 
-```console
+```dotnetcli
 dotnet add package Microsoft.Extensions.Compliance.Redaction
 ```
 

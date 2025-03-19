@@ -12,7 +12,7 @@ Redaction helps you sanitize or mask sensitive information in logs, error messag
 
 ### [.NET CLI](#tab/dotnet-cli)
 
-```console
+```dotnetcli
 dotnet add package Microsoft.Extensions.Compliance.Redaction
 ```
 

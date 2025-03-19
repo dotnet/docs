@@ -9,7 +9,7 @@ public class Example7
                                               DateTimeKind.Local);
         TimeSpan interval = new TimeSpan(48, 0, 0);
         DateTime date2 = date1 + interval;
-        Console.WriteLine($"{0:g} + {1:N1} hours = {2:g}");
+        Console.WriteLine($"{date1:g} + {interval.TotalHours:N1} hours = {date2:g}");
     }
 }
 

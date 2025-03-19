@@ -10,7 +10,7 @@ public class Example
 
       DateTimeOffset thisDate2 = new DateTimeOffset(2011, 6, 10, 15, 24, 16,
                                                     TimeSpan.Zero);
-      Console.WriteLine($"The current date and time: {0:MM/dd/yy H:mm:ss zzz}");
+      Console.WriteLine($"The current date and time: {thisDate2:MM/dd/yy H:mm:ss zzz}");
       // The example displays the following output:
       //    Today is June 10, 2011.
       //    The current date and time: 06/10/11 15:24:16 +00:00

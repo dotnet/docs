@@ -22,7 +22,7 @@ public class Example
    {
       // <Snippet11>
       decimal value = 123.456m;
-      Console.WriteLine($"Your account balance is {0:C2}.");
+      Console.WriteLine($"Your account balance is {value:C2}.");
       // Displays "Your account balance is $123.46."
       // </Snippet11>
    }

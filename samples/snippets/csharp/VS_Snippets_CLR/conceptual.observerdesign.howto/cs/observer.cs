@@ -36,7 +36,7 @@ public class TemperatureReporter : IObserver<Temperature>
 
    public virtual void OnNext(Temperature value)
    {
-      Console.WriteLine($"The temperature is {value.Degrees}°C at {1:g}");
+      Console.WriteLine($"The temperature is {value.Degrees}°C at {value.Date:g}");
       if (first)
       {
          last = value;

@@ -9,12 +9,12 @@ public class Example
       interval1 = new TimeSpan(7, 45, 16);
       interval2 = new TimeSpan(18, 12, 38);
 
-      Console.WriteLine($"{0:c} - {1:c} = {2:c}");
-      Console.WriteLine($"{0:c} + {1:c} = {2:c}");
+      Console.WriteLine($"{interval1:c} - {interval2:c} = {interval1 - interval2:c}");
+      Console.WriteLine($"{interval1:c} + {interval2:c} = {interval1 + interval2:c}");
 
       interval1 = new TimeSpan(0, 0, 1, 14, 365);
       interval2 = TimeSpan.FromTicks(2143756);
-      Console.WriteLine($"{0:c} + {1:c} = {2:c}");
+      Console.WriteLine($"{interval1:c} + {interval2:c} = {interval1 + interval2:c}");
    }
 }
 // The example displays the following output:

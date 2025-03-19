@@ -12,7 +12,7 @@ public class Example8
         TimeSpan interval = new TimeSpan(48, 0, 0);
         DateTime utc2 = utc1 + interval;
         DateTime date2 = TimeZoneInfo.ConvertTimeFromUtc(utc2, pst);
-        Console.WriteLine($"{0:g} + {1:N1} hours = {2:g}");
+        Console.WriteLine($"{date1:g} + {interval.TotalHours:N1} hours = {date2:g}");
     }
 }
 

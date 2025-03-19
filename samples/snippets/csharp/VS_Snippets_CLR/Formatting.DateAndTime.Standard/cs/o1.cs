@@ -18,7 +18,7 @@ public class Example
        Console.WriteLine("{0} ({1}) --> {0:O}\n", lDat, lDat.Kind);
 
        DateTimeOffset dto = new DateTimeOffset(lDat);
-       Console.WriteLine($"{dto} --> {0:O}");
+       Console.WriteLine($"{dto} --> {dto:O}");
    }
 }
 // The example displays the following output:

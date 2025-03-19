@@ -21,7 +21,7 @@ public class Example
       DateTime date1 = new DateTime(2011, 7, 15);
 
       // Display the string representation of the date.
-      Console.WriteLine($"Date: {0:d}");
+      Console.WriteLine($"Date: {date1:d}");
       Console.WriteLine("Date in the Invariant Culture: {0}",
                         date1.ToString("d", CultureInfo.InvariantCulture));
       Console.WriteLine();
@@ -37,7 +37,7 @@ public class Example
                         cal.GetDayOfMonth(date1));
       Console.WriteLine();
 
-      Console.WriteLine($"DateTime.Year property: {0:D4}");
+      Console.WriteLine($"DateTime.Year property: {date1.Year:D4}");
       Console.WriteLine("UmAlQura.GetYear: {0}",
                         cal.GetYear(date1));
       Console.WriteLine();

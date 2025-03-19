@@ -7,9 +7,9 @@ public class Example2
         // <Snippet16>
         DateTime dat1 = new DateTime(2009, 6, 15, 13, 45, 0);
 
-        Console.WriteLine($"'{0:%h}'");
-        Console.WriteLine($"'{0: h}'");
-        Console.WriteLine($"'{0:h }'");
+        Console.WriteLine($"'{dat1:%h}'");
+        Console.WriteLine($"'{dat1: h}'");
+        Console.WriteLine($"'{dat1:h }'");
         // The example displays the following output:
         //       '1'
         //       ' 1'

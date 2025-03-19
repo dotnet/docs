@@ -15,7 +15,7 @@ public class Example1
         {
             if (DateTime.TryParseExact(dateValue, pattern, null,
                                       DateTimeStyles.None, out parsedDate))
-                Console.WriteLine($"Converted '{dateValue}' to {1:d}.");
+                Console.WriteLine($"Converted '{dateValue}' to {parsedDate:d}.");
             else
                 Console.WriteLine($"Unable to convert '{dateValue}' to a date and time.");
         }

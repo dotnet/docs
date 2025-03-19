@@ -12,7 +12,7 @@ public class Example1
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
       Decimal value = 16039.47m;
       Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.DisplayName}");
-      Console.WriteLine($"Currency Value: {0:C2}");
+      Console.WriteLine($"Currency Value: {value:C2}");
 
       // Persist the currency value as a string.
       StreamWriter sw = new StreamWriter("currency.dat");

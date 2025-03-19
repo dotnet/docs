@@ -9,7 +9,7 @@ public class Example
       String fmt = (result < TimeSpan.Zero ?  "\\-" : "") + "dd\\.hh\\:mm";
 
       Console.WriteLine(result.ToString(fmt));
-      Console.WriteLine($"Interval: {0:" + fmt + "}");
+      Console.WriteLine($"Interval: {result:" + fmt + "}");
    }
 }
 // The example displays output like the following:

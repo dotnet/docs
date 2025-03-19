@@ -64,8 +64,8 @@ public class Example
       for (int ctr = 2; ctr <= 8; ctr++)
       {
          string fmt = new String('d', ctr) + @"\.hh\:mm\:ss";
-         Console.WriteLine($"{fmt} --> {1:" + fmt + "}");
-         Console.WriteLine($"{fmt} --> {1:" + fmt + "}");
+         Console.WriteLine($"{fmt} --> {ts1:" + fmt + "}");
+         Console.WriteLine($"{fmt} --> {ts2:" + fmt + "}");
          Console.WriteLine();
       }
       // The example displays the following output:
@@ -96,7 +96,7 @@ public class Example
    {
       // <Snippet6>
       TimeSpan ts = new TimeSpan(3, 42, 0);
-      Console.WriteLine($"{0:%h} hours {0:%m} minutes");
+      Console.WriteLine($"{ts:%h} hours {ts:%m} minutes");
       // The example displays the following output:
       //       3 hours 42 minutes
       // </Snippet6>
@@ -173,10 +173,10 @@ public class Example
    {
       // <Snippet12>
       TimeSpan ts1 = new TimeSpan(0, 6, 32);
-      Console.WriteLine($"{0:m\\:ss} minutes");
+      Console.WriteLine($"{ts1:m\\:ss} minutes");
 
       TimeSpan ts2 = new TimeSpan(3, 4, 3, 17);
-      Console.WriteLine($"Elapsed time: {0:m\\:ss}");
+      Console.WriteLine($"Elapsed time: {ts2:m\\:ss}");
       // The example displays the following output:
       //       6:32 minutes
       //       Elapsed time: 18:44
@@ -202,7 +202,7 @@ public class Example
       // <Snippet14>
       TimeSpan departTime = new TimeSpan(11, 12, 00);
       TimeSpan arriveTime = new TimeSpan(16, 28, 00);
-      Console.WriteLine($"Travel time: {0:hh\\:mm}");
+      Console.WriteLine($"Travel time: {arriveTime - departTime:hh\\:mm}");
       // The example displays the following output:
       //       Travel time: 05:16
       // </Snippet14>

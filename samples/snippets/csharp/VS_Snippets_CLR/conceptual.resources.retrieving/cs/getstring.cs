@@ -23,7 +23,7 @@ public class Example
 
          Console.WriteLine($"Current culture: {culture.NativeName}");
          string timeString = rm.GetString("TimeHeader");
-         Console.WriteLine($"{timeString} {1:T}\n");
+         Console.WriteLine($"{timeString} {DateTime.Now:T}\n");
       }
    }
 }

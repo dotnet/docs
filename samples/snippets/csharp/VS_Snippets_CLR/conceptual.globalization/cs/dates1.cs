@@ -19,9 +19,9 @@ public class Example3
 
     private static void ShowDayInfo()
     {
-        Console.WriteLine($"Date: {0:D}");
-        Console.WriteLine($"   Sunrise: {0:T}");
-        Console.WriteLine($"   Sunset:  {0:T}");
+        Console.WriteLine($"Date: {dates[0]:D}");
+        Console.WriteLine($"   Sunrise: {dates[0]:T}");
+        Console.WriteLine($"   Sunset:  {dates[1]:T}");
     }
 }
 

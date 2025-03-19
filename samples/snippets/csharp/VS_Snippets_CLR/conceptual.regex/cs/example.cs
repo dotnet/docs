@@ -50,9 +50,9 @@ public class Example
          total += value;
 
       if (total / 2 == expenses[expenses.Count - 1])
-         Console.WriteLine($"The expenses total {0:C2}.");
+         Console.WriteLine($"The expenses total {expenses[expenses.Count - 1]:C2}.");
       else
-         Console.WriteLine($"The expenses total {0:C2}.");
+         Console.WriteLine($"The expenses total {total:C2}.");
    }
 }
 // The example displays the following output:

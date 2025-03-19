@@ -30,7 +30,7 @@ public class Example5
             DateTime restoredDate;
             if (DateTime.TryParse(dateStr, CultureInfo.InvariantCulture,
                                   DateTimeStyles.None, out restoredDate))
-                Console.WriteLine($"The date is {0:D}");
+                Console.WriteLine($"The date is {restoredDate:D}");
             else
                 Console.WriteLine($"ERROR: Unable to parse {dateStr}");
         }
@@ -44,7 +44,7 @@ public class Example5
             DateTime restoredDate;
             if (DateTime.TryParse(dateStr, CultureInfo.InvariantCulture,
                                   DateTimeStyles.None, out restoredDate))
-                Console.WriteLine($"The date is {0:D}");
+                Console.WriteLine($"The date is {restoredDate:D}");
             else
                 Console.WriteLine($"ERROR: Unable to parse {dateStr}");
         }

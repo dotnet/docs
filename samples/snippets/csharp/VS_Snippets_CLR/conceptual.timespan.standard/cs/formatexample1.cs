@@ -9,7 +9,7 @@ public class Example
       string output = "Time of Travel: " + duration.ToString("c");
       Console.WriteLine(output);
 
-      Console.WriteLine($"Time of Travel: {0:c}");
+      Console.WriteLine($"Time of Travel: {duration:c}");
    }
 }
 // The example displays the following output:

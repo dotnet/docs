@@ -19,13 +19,13 @@ In some situations, you might need to specify that data explicitly has no data c
 
 ### Install classification package
 
-[.NET CLI](#tab/dotnet-cli)
+#### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
 dotnet add package Microsoft.Extensions.Compliance.Classification
 ```
 
-[PackageReference](#tab/package-reference)
+#### [PackageReference](#tab/package-reference)
 
 ```xml
 <ItemGroup>
@@ -135,13 +135,13 @@ Redactors replace or mask sensitive data. They help you protect sensitive inform
 
 ### Install redaction package
 
-[.NET CLI](#tab/dotnet-cli)
+#### Using [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
 dotnet add package Microsoft.Extensions.Compliance.Redaction
 ```
 
-[PackageReference](#tab/package-reference)
+#### Using [PackageReference](#tab/package-reference)
 
 ```xml
 <ItemGroup>

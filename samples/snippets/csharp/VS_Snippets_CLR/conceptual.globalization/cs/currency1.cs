@@ -1,4 +1,4 @@
-﻿// <Snippet16>
+// <Snippet16>
 using System;
 using System.Globalization;
 using System.IO;
@@ -11,8 +11,8 @@ public class Example1
       // Display the currency value.
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
       Decimal value = 16039.47m;
-      Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
-      Console.WriteLine("Currency Value: {0:C2}", value);
+      Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.DisplayName}");
+      Console.WriteLine($"Currency Value: {0:C2}");
 
       // Persist the currency value as a string.
       StreamWriter sw = new StreamWriter("currency.dat");
@@ -29,17 +29,16 @@ public class Example1
       if (Decimal.TryParse(currencyData, out restoredValue))
          Console.WriteLine(restoredValue.ToString("C2"));
       else
-         Console.WriteLine("ERROR: Unable to parse '{0}'", currencyData);
+         Console.WriteLine($"ERROR: Unable to parse '{currencyData}'");
       Console.WriteLine();
 
       // Restore and display the data using the conventions of the en-GB culture.
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
-      Console.WriteLine("Current Culture: {0}",
-                        Thread.CurrentThread.CurrentCulture.DisplayName);
+      Console.WriteLine($"Current Culture: {Thread.CurrentThread.CurrentCulture.DisplayName}");
       if (Decimal.TryParse(currencyData, NumberStyles.Currency, null, out restoredValue))
          Console.WriteLine(restoredValue.ToString("C2"));
       else
-         Console.WriteLine("ERROR: Unable to parse '{0}'", currencyData);
+         Console.WriteLine($"ERROR: Unable to parse '{currencyData}'");
       Console.WriteLine();
    }
 }

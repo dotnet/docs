@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Text.RegularExpressions;
 
@@ -16,7 +16,7 @@ public class Example
             Console.WriteLine("Number at end of sentence (left-to-right): {0}",
                               match.Groups[1].Value);
         else
-            Console.WriteLine("{0} finds no match.", greedyPattern);
+            Console.WriteLine($"{greedyPattern} finds no match.");
 
         // Match from right-to-left using greedy quantifier .+.
         match = Regex.Match(input, greedyPattern, RegexOptions.RightToLeft);
@@ -24,7 +24,7 @@ public class Example
             Console.WriteLine("Number at end of sentence (right-to-left): {0}",
                               match.Groups[1].Value);
         else
-            Console.WriteLine("{0} finds no match.", greedyPattern);
+            Console.WriteLine($"{greedyPattern} finds no match.");
     }
 }
 // The example displays the following output:

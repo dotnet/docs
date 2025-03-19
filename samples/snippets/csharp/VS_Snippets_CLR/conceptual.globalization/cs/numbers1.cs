@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -12,7 +12,7 @@ public class Example14
                                 19.9, 18.2, 15.9, 11.3, 6.9, 5.3 };
 
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
-        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
+        Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.DisplayName}");
         // Build the format string dynamically so we allocate enough space for the month name.
         string fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}";
         for (int ctr = 0; ctr < temperatures.Length; ctr++)
@@ -23,7 +23,7 @@ public class Example14
         Console.WriteLine();
 
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
-        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
+        Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.DisplayName}");
         fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}";
         for (int ctr = 0; ctr < temperatures.Length; ctr++)
             Console.WriteLine(fmtString,

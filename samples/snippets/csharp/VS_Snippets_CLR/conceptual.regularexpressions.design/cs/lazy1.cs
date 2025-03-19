@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -17,7 +17,7 @@ public class Example
             Console.WriteLine("Number at end of sentence (greedy): {0}",
                               match.Groups[1].Value);
         else
-            Console.WriteLine("{0} finds no match.", greedyPattern);
+            Console.WriteLine($"{greedyPattern} finds no match.");
 
         // Match using lazy quantifier .+?.
         match = Regex.Match(input, lazyPattern);
@@ -25,7 +25,7 @@ public class Example
             Console.WriteLine("Number at end of sentence (lazy): {0}",
                               match.Groups[1].Value);
         else
-            Console.WriteLine("{0} finds no match.", lazyPattern);
+            Console.WriteLine($"{lazyPattern} finds no match.");
     }
 }
 // The example displays the following output:

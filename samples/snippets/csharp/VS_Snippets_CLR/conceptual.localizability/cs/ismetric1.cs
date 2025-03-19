@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -10,8 +10,7 @@ public class Example
                                 "ne-NP", "es-BO", "ig-NG" };
       foreach (var cultureName in cultureNames) {
          RegionInfo region = new RegionInfo(cultureName);
-         Console.WriteLine("{0} {1} the metric system.", region.EnglishName,
-                           region.IsMetric ? "uses" : "does not use");
+         Console.WriteLine($"{region.EnglishName} {region.IsMetric ? "uses" : "does not use"} the metric system.");
       }
    }
 }

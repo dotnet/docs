@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Globalization;
 using System.IO;
@@ -27,29 +27,27 @@ public class Example15
         string[] numberStrings = numericData.Split('|');
 
         // Restore and display the data using the conventions of the en-US culture.
-        Console.WriteLine("Current Culture: {0}",
-                          Thread.CurrentThread.CurrentCulture.DisplayName);
+        Console.WriteLine($"Current Culture: {Thread.CurrentThread.CurrentCulture.DisplayName}");
         foreach (var numberStr in numberStrings)
         {
             double restoredNumber;
             if (Double.TryParse(numberStr, out restoredNumber))
                 Console.WriteLine(restoredNumber.ToString("R"));
             else
-                Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr);
+                Console.WriteLine($"ERROR: Unable to parse '{numberStr}'");
         }
         Console.WriteLine();
 
         // Restore and display the data using the conventions of the fr-FR culture.
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR");
-        Console.WriteLine("Current Culture: {0}",
-                          Thread.CurrentThread.CurrentCulture.DisplayName);
+        Console.WriteLine($"Current Culture: {Thread.CurrentThread.CurrentCulture.DisplayName}");
         foreach (var numberStr in numberStrings)
         {
             double restoredNumber;
             if (Double.TryParse(numberStr, out restoredNumber))
                 Console.WriteLine(restoredNumber.ToString("R"));
             else
-                Console.WriteLine("ERROR: Unable to parse '{0}'", numberStr);
+                Console.WriteLine($"ERROR: Unable to parse '{numberStr}'");
         }
     }
 

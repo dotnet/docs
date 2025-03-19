@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Text.RegularExpressions;
 
@@ -9,8 +9,7 @@ public class Example
       string input = "This is a a farm that that raises dairy cattle.";
       string pattern = @"\b(\w+)\W+(\1)\b";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("Duplicate '{0}' found at position {1}.",
-                           match.Groups[1].Value, match.Groups[2].Index);
+         Console.WriteLine($"Duplicate '{match.Groups[1].Value}' found at position {match.Groups[2].Index}.");
    }
 }
 // The example displays the following output:

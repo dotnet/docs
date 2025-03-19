@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 
 public class Example7
@@ -9,8 +9,7 @@ public class Example7
                                               DateTimeKind.Local);
         TimeSpan interval = new TimeSpan(48, 0, 0);
         DateTime date2 = date1 + interval;
-        Console.WriteLine("{0:g} + {1:N1} hours = {2:g}",
-                          date1, interval.TotalHours, date2);
+        Console.WriteLine($"{0:g} + {1:N1} hours = {2:g}");
     }
 }
 

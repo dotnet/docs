@@ -1,4 +1,4 @@
-﻿// <Snippet20>
+// <Snippet20>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -122,12 +122,12 @@ public class Example
 
    internal void TemperatureNotification(Object sender, TemperatureChangedEventArgs e)
    {
-      Console.WriteLine("Notification 1: The temperature changed from {0} to {1}", e.OldTemperature, e.CurrentTemperature);
+      Console.WriteLine($"Notification 1: The temperature changed from {e.OldTemperature} to {e.CurrentTemperature}");
    }
 
    public void DuplicateTemperatureNotification(Object sender, TemperatureChangedEventArgs e)
    {
-      Console.WriteLine("Notification 2: The temperature changed from {0} to {1}", e.OldTemperature, e.CurrentTemperature);
+      Console.WriteLine($"Notification 2: The temperature changed from {e.OldTemperature} to {e.CurrentTemperature}");
    }
 }
 // </Snippet20>

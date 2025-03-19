@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -14,7 +14,7 @@ public class Example
       Console.WriteLine(output);
 
       Console.WriteLine("Time of Travel: {0:%d} day(s)", duration);
-      Console.WriteLine("Time of Travel: {0:dd\\.hh\\:mm\\:ss} days", duration);
+      Console.WriteLine($"Time of Travel: {0:dd\\.hh\\:mm\\:ss} days");
    }
 }
 // The example displays the following output:

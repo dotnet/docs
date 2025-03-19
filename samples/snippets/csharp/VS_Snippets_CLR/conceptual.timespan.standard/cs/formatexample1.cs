@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -9,7 +9,7 @@ public class Example
       string output = "Time of Travel: " + duration.ToString("c");
       Console.WriteLine(output);
 
-      Console.WriteLine("Time of Travel: {0:c}", duration);
+      Console.WriteLine($"Time of Travel: {0:c}");
    }
 }
 // The example displays the following output:

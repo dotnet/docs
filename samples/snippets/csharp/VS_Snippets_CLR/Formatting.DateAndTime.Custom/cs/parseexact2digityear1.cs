@@ -1,4 +1,4 @@
-﻿// <Snippet19>
+// <Snippet19>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -11,8 +11,7 @@ public class Example7
         string value = "24-Jan-49";
 
         Calendar cal = (Calendar)CultureInfo.CurrentCulture.Calendar.Clone();
-        Console.WriteLine("Two Digit Year Range: {0} - {1}",
-                          cal.TwoDigitYearMax - 99, cal.TwoDigitYearMax);
+        Console.WriteLine($"Two Digit Year Range: {cal.TwoDigitYearMax - 99} - {cal.TwoDigitYearMax}");
 
         Console.WriteLine("{0:d}", DateTime.ParseExact(value, fmt, null));
         Console.WriteLine();
@@ -22,8 +21,7 @@ public class Example7
         culture.DateTimeFormat.Calendar = cal;
         Thread.CurrentThread.CurrentCulture = culture;
 
-        Console.WriteLine("Two Digit Year Range: {0} - {1}",
-                          cal.TwoDigitYearMax - 99, cal.TwoDigitYearMax);
+        Console.WriteLine($"Two Digit Year Range: {cal.TwoDigitYearMax - 99} - {cal.TwoDigitYearMax}");
         Console.WriteLine("{0:d}", DateTime.ParseExact(value, fmt, null));
     }
 }

@@ -1,4 +1,4 @@
-﻿// Example code for How to: Discover and Manipulate Generic Types
+// Example code for How to: Discover and Manipulate Generic Types
 //<Snippet1>
 using System;
 using System.Reflection;
@@ -29,12 +29,10 @@ public class Example
     // type.
     private static void DisplayGenericType(Type t)
     {
-        Console.WriteLine("\r\n {0}", t);
+        Console.WriteLine($"\r\n {t}");
         //<Snippet3>
-        Console.WriteLine("   Is this a generic type? {0}",
-            t.IsGenericType);
-        Console.WriteLine("   Is this a generic type definition? {0}",
-            t.IsGenericTypeDefinition);
+        Console.WriteLine($"   Is this a generic type? {t.IsGenericType}");
+        Console.WriteLine($"   Is this a generic type definition? {t.IsGenericTypeDefinition}");
         //</Snippet3>
 
         // Get the generic type parameters or type arguments.
@@ -43,8 +41,7 @@ public class Example
         //</Snippet4>
 
         //<Snippet5>
-        Console.WriteLine("   List {0} type arguments:",
-            typeParameters.Length);
+        Console.WriteLine($"   List {typeParameters.Length} type arguments:");
         foreach( Type tParam in typeParameters )
         {
             if (tParam.IsGenericParameter)
@@ -53,8 +50,7 @@ public class Example
             }
             else
             {
-                Console.WriteLine("      Type argument: {0}",
-                    tParam);
+                Console.WriteLine($"      Type argument: {tParam}");
             }
         }
         //</Snippet5>
@@ -66,8 +62,7 @@ public class Example
     //<Snippet6>
     private static void DisplayGenericParameter(Type tp)
     {
-        Console.WriteLine("      Type parameter: {0} position {1}",
-            tp.Name, tp.GenericParameterPosition);
+        Console.WriteLine($"      Type parameter: {tp.Name} position {tp.GenericParameterPosition}");
         //</Snippet6>
 
         //<Snippet7>
@@ -77,15 +72,13 @@ public class Example
         {
             if (iConstraint.IsInterface)
             {
-                Console.WriteLine("         Interface constraint: {0}",
-                    iConstraint);
+                Console.WriteLine($"         Interface constraint: {iConstraint}");
             }
         }
 
         if (classConstraint != null)
         {
-            Console.WriteLine("         Base type constraint: {0}",
-                tp.BaseType);
+            Console.WriteLine($"         Base type constraint: {tp.BaseType}");
         }
         else
         {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -39,8 +39,7 @@ public class Example
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
             Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -74,8 +73,7 @@ public class Example
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
             Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -109,8 +107,7 @@ public class Example
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
             Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -144,8 +141,7 @@ public class Example
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
             Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -179,8 +175,7 @@ public class Example
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
             Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -214,8 +209,7 @@ public class Example
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
             Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -249,8 +243,7 @@ public class Example
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
             Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //    Formatting:

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -19,9 +19,9 @@ public class Example3
 
     private static void ShowDayInfo()
     {
-        Console.WriteLine("Date: {0:D}", dates[0]);
-        Console.WriteLine("   Sunrise: {0:T}", dates[0]);
-        Console.WriteLine("   Sunset:  {0:T}", dates[1]);
+        Console.WriteLine($"Date: {0:D}");
+        Console.WriteLine($"   Sunrise: {0:T}");
+        Console.WriteLine($"   Sunset:  {0:T}");
     }
 }
 

@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example
@@ -9,20 +9,19 @@ public class Example
       TimeSpan interval;
       try {
          interval = TimeSpan.ParseExact(value, "c", null);
-         Console.WriteLine("Converted '{0}' to {1}", value, interval);
+         Console.WriteLine($"Converted '{value}' to {interval}");
       }
       catch (FormatException) {
-         Console.WriteLine("{0}: Bad Format", value);
+         Console.WriteLine($"{value}: Bad Format");
       }
       catch (OverflowException) {
-         Console.WriteLine("{0}: Out of Range", value);
+         Console.WriteLine($"{value}: Out of Range");
       }
 
       if (TimeSpan.TryParseExact(value, "c", null, out interval))
-         Console.WriteLine("Converted '{0}' to {1}", value, interval);
+         Console.WriteLine($"Converted '{value}' to {interval}");
       else
-         Console.WriteLine("Unable to convert {0} to a time interval.",
-                           value);
+         Console.WriteLine($"Unable to convert {value} to a time interval.");
    }
 }
 // The example displays the following output:

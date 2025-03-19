@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Text.RegularExpressions;
 
@@ -11,8 +11,8 @@ public class Example
       string substitution = "$'";
       Console.WriteLine("Matches:");
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("   {0} at position {1}", match.Value, match.Index);
-      Console.WriteLine("Input string:  {0}", input);
+         Console.WriteLine($"   {match.Value} at position {match.Index}");
+      Console.WriteLine($"Input string:  {input}");
       Console.WriteLine("Output string: " +
                         Regex.Replace(input, pattern, substitution));
    }

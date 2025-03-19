@@ -1,4 +1,4 @@
-﻿// <Snippet18>
+// <Snippet18>
 using System;
 using System.Globalization;
 
@@ -15,11 +15,9 @@ public class Example1
         {
             if (DateTime.TryParseExact(dateValue, pattern, null,
                                       DateTimeStyles.None, out parsedDate))
-                Console.WriteLine("Converted '{0}' to {1:d}.",
-                                  dateValue, parsedDate);
+                Console.WriteLine($"Converted '{dateValue}' to {1:d}.");
             else
-                Console.WriteLine("Unable to convert '{0}' to a date and time.",
-                                  dateValue);
+                Console.WriteLine($"Unable to convert '{dateValue}' to a date and time.");
         }
     }
 }

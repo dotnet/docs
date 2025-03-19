@@ -1,4 +1,4 @@
-﻿// <Snippet21>
+// <Snippet21>
 using System;
 using System.Globalization;
 
@@ -18,7 +18,7 @@ public class Example3
                                    DateTimeStyles.None, out newDate))
             Console.WriteLine(newDate);
         else
-            Console.WriteLine("Unable to parse '{0}'", value);
+            Console.WriteLine($"Unable to parse '{value}'");
     }
 }
 // The example displays the following output:

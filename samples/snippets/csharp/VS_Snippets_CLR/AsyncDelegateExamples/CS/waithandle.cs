@@ -1,4 +1,4 @@
-﻿//<Snippet3>
+//<Snippet3>
 using System;
 using System.Threading;
 
@@ -22,8 +22,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 out threadId, null, null);
 
             Thread.Sleep(0);
-            Console.WriteLine("Main thread {0} does some work.",
-                Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine($"Main thread {Thread.CurrentThread.ManagedThreadId} does some work.");
 
             // Wait for the WaitHandle to become signaled.
             result.AsyncWaitHandle.WaitOne();

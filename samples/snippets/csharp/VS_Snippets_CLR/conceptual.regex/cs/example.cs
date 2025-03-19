@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -36,7 +36,7 @@ public class Example
       // Get text that matches regular expression pattern.
       MatchCollection matches = Regex.Matches(input, pattern,
                                               RegexOptions.IgnorePatternWhitespace);
-      Console.WriteLine("Found {0} matches.", matches.Count);
+      Console.WriteLine($"Found {matches.Count} matches.");
 
       // Get numeric string, convert it to a value, and add it to List object.
       List<decimal> expenses = new List<Decimal>();
@@ -50,9 +50,9 @@ public class Example
          total += value;
 
       if (total / 2 == expenses[expenses.Count - 1])
-         Console.WriteLine("The expenses total {0:C2}.", expenses[expenses.Count - 1]);
+         Console.WriteLine($"The expenses total {0:C2}.");
       else
-         Console.WriteLine("The expenses total {0:C2}.", total);
+         Console.WriteLine($"The expenses total {0:C2}.");
    }
 }
 // The example displays the following output:

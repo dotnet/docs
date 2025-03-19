@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Globalization;
 
@@ -77,8 +77,8 @@ namespace HotAndCold
             CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
             Temperature temp = new Temperature(22m);
             Console.WriteLine(Convert.ToString(temp, new CultureInfo("ja-JP")));
-            Console.WriteLine("Temperature: {0:K}", temp);
-            Console.WriteLine("Temperature: {0:F}", temp);
+            Console.WriteLine($"Temperature: {0:K}");
+            Console.WriteLine($"Temperature: {0:F}");
             Console.WriteLine(String.Format(new CultureInfo("fr-FR"), "Temperature: {0:F}", temp));
         }
     }

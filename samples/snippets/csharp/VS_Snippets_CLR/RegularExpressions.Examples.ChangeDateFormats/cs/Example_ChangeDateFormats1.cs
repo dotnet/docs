@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
@@ -10,7 +10,7 @@ public class Class1
       string dateString = DateTime.Today.ToString("d",
                                         DateTimeFormatInfo.InvariantInfo);
       string resultString = MDYToDMY(dateString);
-      Console.WriteLine("Converted {0} to {1}.", dateString, resultString);
+      Console.WriteLine($"Converted {dateString} to {resultString}.");
    }
 
    // <Snippet1>

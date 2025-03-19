@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.IO;
 using System.Globalization;
@@ -24,31 +24,29 @@ public class Example5
         string[] dateStrings = dateData.Split('|');
 
         // Restore and display the data using the conventions of the en-US culture.
-        Console.WriteLine("Current Culture: {0}",
-                          Thread.CurrentThread.CurrentCulture.DisplayName);
+        Console.WriteLine($"Current Culture: {Thread.CurrentThread.CurrentCulture.DisplayName}");
         foreach (var dateStr in dateStrings)
         {
             DateTime restoredDate;
             if (DateTime.TryParse(dateStr, CultureInfo.InvariantCulture,
                                   DateTimeStyles.None, out restoredDate))
-                Console.WriteLine("The date is {0:D}", restoredDate);
+                Console.WriteLine($"The date is {0:D}");
             else
-                Console.WriteLine("ERROR: Unable to parse {0}", dateStr);
+                Console.WriteLine($"ERROR: Unable to parse {dateStr}");
         }
         Console.WriteLine();
 
         // Restore and display the data using the conventions of the en-GB culture.
         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
-        Console.WriteLine("Current Culture: {0}",
-                          Thread.CurrentThread.CurrentCulture.DisplayName);
+        Console.WriteLine($"Current Culture: {Thread.CurrentThread.CurrentCulture.DisplayName}");
         foreach (var dateStr in dateStrings)
         {
             DateTime restoredDate;
             if (DateTime.TryParse(dateStr, CultureInfo.InvariantCulture,
                                   DateTimeStyles.None, out restoredDate))
-                Console.WriteLine("The date is {0:D}", restoredDate);
+                Console.WriteLine($"The date is {0:D}");
             else
-                Console.WriteLine("ERROR: Unable to parse {0}", dateStr);
+                Console.WriteLine($"ERROR: Unable to parse {dateStr}");
         }
     }
 }

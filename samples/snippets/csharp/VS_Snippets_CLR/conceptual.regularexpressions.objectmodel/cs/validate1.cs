@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -10,9 +10,9 @@ public class Example
       string pattern = @"^\d{3}-\d{2}-\d{4}$";
       foreach (string value in values) {
          if (Regex.IsMatch(value, pattern))
-            Console.WriteLine("{0} is a valid SSN.", value);
+            Console.WriteLine($"{value} is a valid SSN.");
          else
-            Console.WriteLine("{0}: Invalid", value);
+            Console.WriteLine($"{value}: Invalid");
       }
    }
 }

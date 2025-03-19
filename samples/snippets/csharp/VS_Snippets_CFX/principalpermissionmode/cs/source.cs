@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System.Security.Permissions;
 using System;
 using System.Collections.Generic;
@@ -99,7 +99,7 @@ namespace Samples
             // Extract the action URI from the OperationContext. Match this against the claims
             // in the AuthorizationContext.
             string action = operationContext.RequestContext.RequestMessage.Headers.Action;
-            Console.WriteLine("action: {0}", action);
+            Console.WriteLine($"action: {action}");
 
             // Iterate through the various claim sets in the AuthorizationContext.
             foreach (ClaimSet cs in operationContext.ServiceSecurityContext.AuthorizationContext.ClaimSets)
@@ -192,7 +192,7 @@ namespace CustomMode
             }
             catch (Exception exc)
             {
-                Console.WriteLine("Error: {0}", exc.Message);
+                Console.WriteLine($"Error: {exc.Message}");
                 Console.ReadLine();
             }
         }

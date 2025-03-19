@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 
@@ -32,7 +32,7 @@ public class Client
     }
     catch (FaultException<SampleFault> fault)
     {
-      Console.WriteLine("SampleFault fault occurred: {0}", fault.Detail.FaultMessage);
+      Console.WriteLine($"SampleFault fault occurred: {fault.Detail.FaultMessage}");
       Console.Read();
       wcfClient.Abort();
     }

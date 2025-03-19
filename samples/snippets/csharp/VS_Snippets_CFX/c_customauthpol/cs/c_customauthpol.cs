@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 //<snippet1>
 using System;
 using System.Collections.Generic;
@@ -83,7 +83,7 @@ namespace Samples
                         {
                             // Add claims to the list.
                             claims.Add(new Claim("http://example.org/claims/allowedoperation", s, Rights.PossessProperty));
-                            Console.WriteLine("Claim added {0}", s);
+                            Console.WriteLine($"Claim added {s}");
                         }
 
                 // Add claims to the evaluation context.
@@ -170,7 +170,7 @@ namespace Samples
         {
             double result = n1 + n2;
             Console.WriteLine("Received Add({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Return: {result}");
             return result;
         }
     }

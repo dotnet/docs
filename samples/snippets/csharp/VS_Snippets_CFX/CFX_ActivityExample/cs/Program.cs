@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Activities;
 using System.Activities.Statements;
@@ -150,11 +150,11 @@ namespace ActivityExample
         static void TestAsyncActivities()
         {
             //int result = WorkflowInvoker.Invoke(new GenerateRandom());
-            //Console.WriteLine("GenerateRandom: {0}", result);
+            //Console.WriteLine($"GenerateRandom: {result}");
 
             //var inputs = new Dictionary<string, object> { { "Max", 25 } };
             //int result2 = WorkflowInvoker.Invoke(new GenerateRandomMax(), inputs);
-            //Console.WriteLine("GenerateRandomMax: {0}", result2);
+            //Console.WriteLine($"GenerateRandomMax: {result2}");
 
             WorkflowInvoker.Invoke(new DisplayRandom());
         }

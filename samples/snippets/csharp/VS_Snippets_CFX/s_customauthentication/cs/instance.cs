@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 //  Snippet for CustomAuthentication
 //	07/17/06 a-arhu new IssuerBasedValidator(); // must use default constructor (issuer);
@@ -107,7 +107,7 @@ namespace Microsoft.ServiceModel.Samples
 					ostat.Online += new EventHandler(OnOnline);
 					ostat.Offline += new EventHandler(OnOffline);
 
-					Console.WriteLine("{0} is ready", member);
+					Console.WriteLine($"{member} is ready");
 					Console.WriteLine("Press <ENTER> to send the chat message.");
 
 		    // Announce self to other participants.
@@ -127,17 +127,17 @@ namespace Microsoft.ServiceModel.Samples
 	// IChat implementation.
 		public void Join(string member)
 		{
-			Console.WriteLine("{0} joined", member);
+			Console.WriteLine($"{member} joined");
 		}
 
 		public void Chat(string member, string msg)
 		{
-			Console.WriteLine("[{0}] {1}", member, msg);
+			Console.WriteLine($"[{member}] {msg}");
 		}
 
 		public void Leave(string member)
 		{
-			Console.WriteLine("[{0} left]", member);
+			Console.WriteLine($"[{member} left]");
 		}
 
 	// PeerNode event handlers.

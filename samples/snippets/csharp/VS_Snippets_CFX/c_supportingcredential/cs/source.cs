@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System.Security.Permissions;
 using System;
 using System.Collections.Generic;
@@ -72,7 +72,7 @@ namespace Samples
             foreach (KeyValuePair<string, SupportingTokenParameters> kvp
                 in secBindingEle.OperationSupportingTokenParameters)
             {
-                Console.WriteLine("{0}: {1}", kvp.Key, kvp.Value);
+                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
             }
 
             Console.ReadLine();

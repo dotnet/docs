@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.Collections.ObjectModel;
 using System.Security.Cryptography.X509Certificates;
@@ -19,15 +19,15 @@ namespace Microsoft.Security.Samples
             }
             catch (System.InvalidOperationException exc)
             {
-                Console.WriteLine("Message: {0}", exc.Message);
+                Console.WriteLine($"Message: {exc.Message}");
             }
             catch (System.ServiceModel.AddressAlreadyInUseException exc)
             {
-                Console.WriteLine("Message: {0}", exc.Message);
+                Console.WriteLine($"Message: {exc.Message}");
             }
             catch (System.ServiceModel.ProtocolException exc)
             {
-                Console.WriteLine("Message: {0}", exc.Message);
+                Console.WriteLine($"Message: {exc.Message}");
             }
             catch (Exception exc)
             {
@@ -62,7 +62,7 @@ namespace Microsoft.Security.Samples
             sh.AddServiceEndpoint(c, b, "");
             sh.Open();
             string address = sh.Description.Endpoints[0].ListenUri.AbsoluteUri;
-            Console.WriteLine("Listening @ {0}", address);
+            Console.WriteLine($"Listening @ {address}");
             Console.WriteLine("Press enter to close the service");
             Console.ReadLine();
             //</snippet1>

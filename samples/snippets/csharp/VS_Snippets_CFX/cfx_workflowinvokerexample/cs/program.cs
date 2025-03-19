@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Activities;
 using System.Activities.Statements;
 using System.Collections.Generic;
@@ -102,7 +102,7 @@ namespace WorkflowInvokerExample
 
             int result = WorkflowInvoker.Invoke(new Add(), arguments);
 
-            Console.WriteLine("{0} + {1} = {2}", x, y, result);
+            Console.WriteLine($"{x} + {y} = {result}");
             //</snippet10>
         }
 
@@ -119,8 +119,7 @@ namespace WorkflowInvokerExample
             IDictionary<string, object> outputs =
                 WorkflowInvoker.Invoke(new Divide(), arguments);
 
-            Console.WriteLine("{0} / {1} = {2} Remainder {3}",
-                dividend, divisor, outputs["Result"], outputs["Remainder"]);
+            Console.WriteLine($"{dividend} / {divisor} = {outputs["Result"]} Remainder {outputs["Remainder"]}");
             //</snippet20>
         }
 
@@ -138,8 +137,7 @@ namespace WorkflowInvokerExample
 
             IDictionary<string, object> outputs = invoker.Invoke(arguments);
 
-            Console.WriteLine("{0} / {1} = {2} Remainder {3}",
-                dividend, divisor, outputs["Result"], outputs["Remainder"]);
+            Console.WriteLine($"{dividend} / {divisor} = {outputs["Result"]} Remainder {outputs["Remainder"]}");
             //</snippet22>
         }
 
@@ -149,8 +147,7 @@ namespace WorkflowInvokerExample
             IDictionary<string, object> outputs =
                 WorkflowInvoker.Invoke(new DiceRoll());
 
-            Console.WriteLine("The two dice are {0} and {1}.",
-                outputs["D1"], outputs["D2"]);
+            Console.WriteLine($"The two dice are {outputs["D1"]} and {outputs["D2"]}.");
             //</snippet30>
         }
 
@@ -162,13 +159,11 @@ namespace WorkflowInvokerExample
             IDictionary<string, object> outputs =
                 invoker.Invoke();
 
-            Console.WriteLine("The two dice are {0} and {1}.",
-                outputs["D1"], outputs["D2"]);
+            Console.WriteLine($"The two dice are {outputs["D1"]} and {outputs["D2"]}.");
 
             outputs = invoker.Invoke();
 
-            Console.WriteLine("The next two dice are {0} and {1}.",
-                outputs["D1"], outputs["D2"]);
+            Console.WriteLine($"The next two dice are {outputs["D1"]} and {outputs["D2"]}.");
             //</snippet31>
         }
 
@@ -183,7 +178,7 @@ namespace WorkflowInvokerExample
 
             // You can inspect result from the host to determine if the workflow
             // is complete.
-            Console.WriteLine("result.IsCompleted: {0}", result.IsCompleted);
+            Console.WriteLine($"result.IsCompleted: {result.IsCompleted}");
 
             // The results of the workflow are retrieved by calling EndInvoke, which
             // can be called from the callback or from the host. If called from the
@@ -192,8 +187,7 @@ namespace WorkflowInvokerExample
             Console.WriteLine("Waiting for the workflow to complete.");
             IDictionary<string, object> outputs = invoker.EndInvoke(result);
 
-            Console.WriteLine("The two dice are {0} and {1}.",
-                outputs["D1"], outputs["D2"]);
+            Console.WriteLine($"The two dice are {outputs["D1"]} and {outputs["D2"]}.");
         }
 
         static void WorkflowCompletedCallback(IAsyncResult result)
@@ -224,8 +218,7 @@ namespace WorkflowInvokerExample
                 }
                 else
                 {
-                    Console.WriteLine("The two dice are {0} and {1}.",
-                        args.Outputs["D1"], args.Outputs["D2"]);
+                    Console.WriteLine($"The two dice are {args.Outputs["D1"]} and {args.Outputs["D2"]}.");
                 }
 
                 syncEvent.Set();
@@ -264,8 +257,7 @@ namespace WorkflowInvokerExample
                 }
                 else
                 {
-                    Console.WriteLine("The two dice are {0} and {1}.",
-                        args.Outputs["D1"], args.Outputs["D2"]);
+                    Console.WriteLine($"The two dice are {args.Outputs["D1"]} and {args.Outputs["D2"]}.");
                 }
 
                 syncEvent.Set();
@@ -613,8 +605,7 @@ namespace WorkflowInvokerExample2
             IDictionary<string, object> outputs =
                 WorkflowInvoker.Invoke(wf, arguments);
 
-            Console.WriteLine("{0} / {1} = {2} Remainder {3}",
-                dividend, divisor, outputs["Result"], outputs["Remainder"]);
+            Console.WriteLine($"{dividend} / {divisor} = {outputs["Result"]} Remainder {outputs["Remainder"]}");
             //</snippet21>
         }
 
@@ -634,8 +625,7 @@ namespace WorkflowInvokerExample2
 
             IDictionary<string, object> outputs = invoker.Invoke(arguments);
 
-            Console.WriteLine("{0} / {1} = {2} Remainder {3}",
-                dividend, divisor, outputs["Result"], outputs["Remainder"]);
+            Console.WriteLine($"{dividend} / {divisor} = {outputs["Result"]} Remainder {outputs["Remainder"]}");
             //</snippet23>
         }
     }

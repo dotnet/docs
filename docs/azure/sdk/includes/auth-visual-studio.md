@@ -3,7 +3,7 @@ ms.topic: include
 ms.date: 03/19/2025
 ---
 
-Developers using Visual Studio 2017 or later can authenticate using their developer account through the IDE. Apps using `DefaultAzureCredential` or <xref:Azure.Identity.VisualStudioCredential> can discover and use this account to authenticate app requests when running locally. This account is also used when you publish apps directly from Visual Studio to Azure.
+Developers using Visual Studio 2017 or later can authenticate using their developer account through the IDE. Apps using <xref:Azure.Identity.DefaultAzureCredential> or <xref:Azure.Identity.VisualStudioCredential> can discover and use this account to authenticate app requests when running locally. This account is also used when you publish apps directly from Visual Studio to Azure.
 
 > [!NOTE]
 > You'll need to [install the **Azure development** workload](/dotnet/azure/configure-visual-studio#install-azure-workloads) to enable Visual Studio tooling for Azure authentication, development and deployment.

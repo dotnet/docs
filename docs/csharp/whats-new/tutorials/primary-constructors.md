@@ -13,10 +13,7 @@ This article describes how to declare a primary constructor on your type and rec
 
 ## Prerequisites
 
-To try the examples in this article, you need:
-
-- .NET 9.0. For download instructions, see the [.NET 9 SDK](https://dotnet.microsoft.com/download).
-- C# 12 or later compiler, which is available in the .NET 9 SDK or in [Visual Studio 2022 version 17.7](https://visualstudio.microsoft.com/vs) and later. 
+[!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic.md)]
 
 ## Understand rules for primary constructors
 

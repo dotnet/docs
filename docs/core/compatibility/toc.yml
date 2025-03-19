@@ -32,6 +32,8 @@ items:
             items:
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
+              - name: X509Certificate and PublicKey key parameters can be null
+                href: cryptography/10.0/x509-publickey-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
           - name: Globalization
@@ -1618,6 +1620,8 @@ items:
             items:
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
+              - name: X509Certificate and PublicKey key parameters can be null
+                href: cryptography/10.0/x509-publickey-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
           - name: .NET 9

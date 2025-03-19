@@ -17,7 +17,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-You need to set up your machine to run .NET. Download [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or the [.NET SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Build a simulation of a canal lock
 

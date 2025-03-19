@@ -11,10 +11,25 @@
 
 This repository contains the conceptual documentation for .NET. The [.NET documentation site](https://learn.microsoft.com/dotnet) is built from multiple repositories in addition to this one:
 
+- [ASP.NET Core](https://github.com/dotnet/AspNetCore.Docs)
 - [.NET Aspire](https://github.com/dotnet/docs-aspire)
 - [.NET Desktop workloads](https://github.com/dotnet/docs-desktop)
-- [API reference](https://github.com/dotnet/dotnet-api-docs)
-- [C# Language design](https://github.com/dotnet/csharplang)
+- [.NET MAUI](https://github.com/dotnet/docs-maui)
+- [Entity Framework 6/Core](https://github.com/dotnet/EntityFramework.Docs)
+- [Community toolkit](https://github.com/MicrosoftDocs/communitytoolkit)
+
+API reference documentation is published from the following repositories. The following reference API repositories are public. Only some accept issues and pull requests, although some folders in `dotnet-api-docs` use the product repository as the source of truth. Others are pass-through repositories because API reference is generated directly from the `///` in the product source. 
+
+- [.NET API reference](https://github.com/dotnet/dotnet-api-docs)
+- [.NET MAUI API reference](https://github.com/dotnet/maui-api-docs)
+- [Android API reference](https://github.com/dotnet/android-api-docs)
+- [Entity Framework 6/Core API reference](https://github.com/dotnet/EntityFramework.ApiDocs)
+- [Roslyn API reference](https://github.com/dotnet/roslyn-api-docs)
+- [Community toolkit API reference](https://github.com/MicrosoftDocs/community-toolkit-api-ref-dotnet)
+
+The C# language specification documentation comes from the following two repositories:
+
+- [C# language design](https://github.com/dotnet/csharplang)
 - [C# specification - draft](https://github.com/dotnet/csharpstandard)
 
 Our team's tasks are tracked in our [project boards](https://github.com/dotnet/docs/projects?query=is%3Aopen). You'll see monthly sprint projects, along with long-running projects for major documentation updates. The projects contain documentation issues across the repositories that build .NET docs. Issues are tracked in the relevant repositories. We have a large community using these resources. We make our best effort to respond to issues in a timely fashion. To create a new issue, click the "Open a documentation issue" button at the bottom of any of our published docs, or [choose one of the available templates](https://github.com/dotnet/docs/issues/new/choose). The control at the bottom of each article automatically routes you to the correct repo and fills in some relevant information based on the article.

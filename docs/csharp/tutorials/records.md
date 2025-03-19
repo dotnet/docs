@@ -17,7 +17,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-You need to set up your machine to run .NET 6 or later. The C# compiler is available with [Visual Studio 2022](https://visualstudio.microsoft.com/vs) or the [.NET SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Characteristics of records
 

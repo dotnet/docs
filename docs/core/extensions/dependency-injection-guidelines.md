@@ -185,7 +185,7 @@ In the preceding code, the `implementationFactory` is given a lambda expression 
 
 :::image type="content" source="media/deadlock-with-async-factory-01.png" lightbox="media/deadlock-with-async-factory-01.png" alt-text="Anti-pattern: Deadlock with async factory inner issue. Do not copy!":::
 
-For more information on asynchronous guidance, see [Asynchronous programming: Important info and advice](../../csharp/asynchronous-programming/async-scenarios.md#important-info-and-advice). For more information debugging deadlocks, see [Debug a deadlock in .NET](../diagnostics/debug-deadlock.md).
+For more information on asynchronous guidance, see [Asynchronous programming: Important info and advice](../../csharp/asynchronous-programming/async-scenarios.md#review-considerations-for-asynchronous-programming). For more information debugging deadlocks, see [Debug a deadlock in .NET](../diagnostics/debug-deadlock.md).
 
 When you're running this anti-pattern and the deadlock occurs, you can view the two threads waiting from Visual Studio's Parallel Stacks window. For more information, see [View threads and tasks in the Parallel Stacks window](/visualstudio/debugger/using-the-parallel-stacks-window).
 

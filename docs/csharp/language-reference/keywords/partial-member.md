@@ -1,7 +1,7 @@
 ---
 description: "Partial members are members that can be declared in one partial type declaration and defined in a separate partial type declaration."
 title: "Partial members"
-ms.date: 08/15/2024
+ms.date: 03/13/2025
 f1_keywords: 
   - "partialmethod_CSharpKeyword"
 helpviewer_keywords: 
@@ -9,12 +9,12 @@ helpviewer_keywords:
 ---
 # Partial member (C# Reference)
 
-A partial member has one *declaring declaration* and often one *implementing declaration*. The *declaring declaration* doesn't include a body. The *implementing declaration* provides the body of the member. Partial members enable class designers to provide member hooks that can be implemented by tooling such as source generators. Partial types and members provide a way for human developers to write part of a type while tools write other parts of the type. If the developer doesn't supply an optional implementing declaration, the compiler can remove the declaring declaration at compile time. The following conditions apply to partial members:
+A partial member has one *declaring declaration* and often one *implementing declaration*. The *declaring declaration* doesn't include a body. The *implementing declaration* provides the body of the member. Partial members enable class designers to provide member hooks for tooling such as source generators to implement. Partial types and members provide a way for human developers to write part of a type while tools write other parts of the type. If the developer doesn't supply an optional implementing declaration, the compiler can remove the declaring declaration at compile time. The following conditions apply to partial members:
 
 - Declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md).
 - Signatures in both parts of the partial type must match.
 
-The `partial` keyword isn't allowed on constructors, finalizers, overloaded operators, or event declarations. Before C# 13, `partial` wasn't allowed on properties or indexers.
+The `partial` keyword isn't allowed on static constructors, finalizers, or overloaded operators. Before C# 14, `partial` wasn't allowed on instance constructors or event declarations. Before C# 13, `partial` wasn't allowed on properties or indexers.
 
 A partial method isn't required to have an implementing declaration in the following cases:
 
@@ -23,11 +23,13 @@ A partial method isn't required to have an implementing declaration in the follo
 - It doesn't have any [`out`](method-parameters.md#out-parameter-modifier) parameters.
 - It doesn't have any of the following modifiers [`virtual`](../../language-reference/keywords/virtual.md), [`override`](../../language-reference/keywords/override.md), [`sealed`](../../language-reference/keywords/sealed.md), [`new`](../../language-reference/keywords/new-modifier.md), or [`extern`](../../language-reference/keywords/extern.md).
 
-Any member that doesn't conform to all those restrictions (for example, `public virtual partial void` method), must provide an implementation. Partial properties and indexers must have an implementation.
-
 The following example shows a partial method that conforms to the preceding restrictions:
 
 :::code language="csharp" source="./snippets/PartialMembers.cs" id="OptionalPartialMethod":::
+
+Any member that doesn't conform to all those restrictions (for example, `public virtual partial void` method), must provide an implementation.
+
+Partial properties, indexers, and events can't use auto-implemented syntax for the implementing declaration. The defining declaration uses the same syntax. The implementing declaration must include at least one implemented accessor. That accessor can be a [field-backed property](./field.md). The implementing declaration for a partial event must define the `add` and `remove` handlers.
 
 Partial members can also be useful in combination with source generators. For example a regex could be defined using the following pattern:
 

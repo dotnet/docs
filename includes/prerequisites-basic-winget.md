@@ -15,7 +15,7 @@ On Windows, this [WinGet configuration file](https://builds.dotnet.microsoft.com
 
 1. Download the file and double-click to run it.
 1. Read the license agreement, type <kbd>y</kbd>, and select <kbd>Enter</kbd> when prompted to accept.
-1. Be on the lookout for a flashing User Account Control (UAC) prompt in your Windows Taskbar, you may need to require administrator-level permissions to install.
+1. If you get a flashing User Account Control (UAC) prompt in your Taskbar, allow the installation to continue.
 
 On other platforms, you need to install each of these components separately.
 

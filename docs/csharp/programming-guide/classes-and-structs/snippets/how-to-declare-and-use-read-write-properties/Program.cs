@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Properties
 {
@@ -74,20 +74,20 @@ namespace Properties
             Person person = new Person();
 
             // Print out the name and the age associated with the person:
-            Console.WriteLine("Person details - {0}", person);
+            Console.WriteLine($"Person details - {person}");
 
             // Set some values on the person object:
             //<Snippet3>
             person.Name = "Joe";
             person.Age = 99;
             //</Snippet3>
-            Console.WriteLine("Person details - {0}", person);
+            Console.WriteLine($"Person details - {person}");
 
             // Increment the Age property:
             //<Snippet5>
             person.Age += 1;
             //</Snippet5>
-            Console.WriteLine("Person details - {0}", person);
+            Console.WriteLine($"Person details - {person}");
 
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");

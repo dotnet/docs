@@ -1,4 +1,4 @@
-﻿namespace Keywords;
+namespace Keywords;
 
 internal class ParameterModifiers
 {
@@ -9,17 +9,17 @@ internal class ParameterModifiers
         // Passing a variable by value means passing a copy of the variable.
         // n1 is a value type
         int n1 = 5;
-        System.Console.WriteLine("The value before calling the method: {0}", n1);
+        System.Console.WriteLine($"The value before calling the method: {n1}");
 
         SquareItValue(n1);  // Passing the variable by value.
-        System.Console.WriteLine("The value after calling the method: {0}", n1);
+        System.Console.WriteLine($"The value after calling the method: {n1}");
 
         static void SquareItValue(int x)
         // The parameter x is passed by value.
         // Changes to x will not affect the original value of x.
         {
             x *= x;
-            System.Console.WriteLine("The value inside the method: {0}", x);
+            System.Console.WriteLine($"The value inside the method: {x}");
         }
         /* Output:
             The value before calling the method: 5
@@ -49,17 +49,17 @@ internal class ParameterModifiers
         // Passing a value by reference means passing a reference to the variable.
         // n is a value type
         int n2 = 5;
-        System.Console.WriteLine("The value before calling the method: {0}", n2);
+        System.Console.WriteLine($"The value before calling the method: {n2}");
 
         SquareItReference(ref n2);  // Passing the variable by reference.
-        System.Console.WriteLine("The value after calling the method: {0}", n2);
+        System.Console.WriteLine($"The value after calling the method: {n2}");
 
         static void SquareItReference(ref int x)
         // The parameter x is passed by reference.
         // Changes to x will affect the original value of x.
         {
             x *= x;
-            System.Console.WriteLine("The value inside the method: {0}", x);
+            System.Console.WriteLine($"The value inside the method: {x}");
         }
         /* Output:
             The value before calling the method: 5

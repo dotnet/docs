@@ -1,4 +1,4 @@
-﻿//<Snippet40>
+//<Snippet40>
 namespace MotorCycleExample
 {
     abstract class Motorcycle
@@ -35,7 +35,7 @@ namespace MotorCycleExample
                 moto.AddGas(15);
                 _ = moto.Drive(5, 20);
                 double speed = moto.GetTopSpeed();
-                Console.WriteLine("My top speed is {0}", speed);
+                Console.WriteLine($"My top speed is {speed}");
             }
         }
         //</Snippet41>

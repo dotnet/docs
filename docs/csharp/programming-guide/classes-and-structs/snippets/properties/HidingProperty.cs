@@ -1,4 +1,4 @@
-﻿namespace HidingExample;
+namespace HidingExample;
 //<Hiding>
 public class Employee
 {
@@ -38,7 +38,7 @@ class TestHiding
         ((Employee)m1).Name = "Mary";
         //</CastToBase>
 
-        System.Console.WriteLine("Name in the derived class is: {0}", m1.Name);
+        System.Console.WriteLine($"Name in the derived class is: {m1.Name}");
         System.Console.WriteLine("Name in the base class is: {0}", ((Employee)m1).Name);
     }
 }

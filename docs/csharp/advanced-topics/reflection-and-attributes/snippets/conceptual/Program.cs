@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 
 
 using System.Reflection;
@@ -35,10 +35,10 @@ void Query()
 
     foreach (var groupOfMethods in pubTypesQuery)
     {
-        Console.WriteLine("Type: {0}", groupOfMethods.Key);
+        Console.WriteLine($"Type: {groupOfMethods.Key}");
         foreach (var method in groupOfMethods)
         {
-            Console.WriteLine("  {0}", method);
+            Console.WriteLine($"  {method}");
         }
     }
     // </QueryReflection>

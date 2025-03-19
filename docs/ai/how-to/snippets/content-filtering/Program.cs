@@ -11,7 +11,7 @@ try
 {
     ChatResponse completion = await client.GetResponseAsync("YOUR_PROMPT");
 
-    Console.WriteLine(completion.Message);
+    Console.WriteLine(completion.Messages.Single());
 }
 catch (Exception e)
 {

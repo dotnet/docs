@@ -8,15 +8,15 @@ ms.date: 12/15/2023
 
 # Microsoft.Testing.Platform support in MSTest (MSTest runner)
 
-MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (MTP)](./unit-testing-platform-intro.md). The support for MTP is powered by the MSTest runner, which can run tests in all contexts (for example, continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Text Explorer). The MSTest runner is embedded directly in your MSTest test projects, and there are no other app dependencies, such as `vstest.console` or `dotnet test`, needed to run your tests. However, you can still run your tests using `dotnet test`.
+MSTest supports running tests with both VSTest and [Microsoft.Testing.Platform (MTP)](./microsoft-testing-platform-intro.md). The support for MTP is powered by the MSTest runner, which can run tests in all contexts (for example, continuous integration (CI) pipelines, CLI, Visual Studio Test Explorer, and VS Code Text Explorer). The MSTest runner is embedded directly in your MSTest test projects, and there are no other app dependencies, such as `vstest.console` or `dotnet test`, needed to run your tests. However, you can still run your tests using `dotnet test`.
 
-The MSTest runner is open source and builds on the [`Microsoft.Testing.Platform`](./unit-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0` or newer.
+The MSTest runner is open source and builds on the [`Microsoft.Testing.Platform`](./microsoft-testing-platform-intro.md) library. You can find `Microsoft.Testing.Platform` code in the [microsoft/testfx](https://github.com/microsoft/testfx/tree/main/src/Platform/Microsoft.Testing.Platform) GitHub repository. The MSTest runner comes bundled with `MSTest in 3.2.0` or newer.
 
-## Enable MSTest runner in an MSTest project
+## Enable Microsoft.Testing.Platform in an MSTest project
 
-It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (MSTest runner) and its extensions.
+It's recommended to use [MSTest SDK](./unit-testing-mstest-sdk.md) as it greatly simplifies your project configuration and updating the project, and it ensures a proper alignment of the versions of the platform (Microsoft.Testing.Platform) and its extensions.
 
-When you use `MSTest SDK`, by default you're opted in to using MSTest runner.
+When you use `MSTest SDK`, by default you're opted in to using Microsoft.Testing.Platform.
 
 ```xml
 <Project Sdk="MSTest.Sdk/3.8.2">
@@ -38,13 +38,13 @@ Consider the following example project file:
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <!-- Enable the MSTest runner, this is an opt-in feature -->
+    <!-- Enable Microsoft.Testing.Platform, this is an opt-in feature -->
     <EnableMSTestRunner>true</EnableMSTestRunner>
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
 
     <!--
       Displays error on console in addition to the log file. Note that this feature comes with a performance impact.
-      For more information, visit https://learn.microsoft.com/dotnet/core/testing/unit-testing-platform-integration-dotnet-test#show-failure-per-test
+      For more information, visit https://learn.microsoft.com/dotnet/core/testing/microsoft-testing-platform-integration-dotnet-test#show-failure-per-test
       -->
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
 
@@ -70,7 +70,7 @@ Consider the following example project file:
     <PackageReference Include="MSTest" Version="3.8.0" />
 
     <!--
-      Coverlet collector isn't compatible with MSTest runner, you can
+      Coverlet collector isn't compatible with Microsoft.Testing.Platform, you can
       either switch to Microsoft CodeCoverage (as shown below),
       or switch to be using coverlet global tool
       https://github.com/coverlet-coverage/coverlet#net-global-tool-guide-suffers-from-possible-known-issue
@@ -89,7 +89,7 @@ Consider the following example project file:
 
 ### .runsettings
 
-The MSTest runner supports the [runsettings](unit-testing-platform-extensions-vstest-bridge.md#runsettings-support) through the command-line option `--settings`. For the full list of supported MSTest entries, see [Configure MSTest: Runsettings](./unit-testing-mstest-configure.md#runsettings). The following commands show various usage examples.
+Microsoft.Testing.Platform supports the [runsettings](microsoft-testing-platform-extensions-vstest-bridge.md#runsettings-support) through the command-line option `--settings`. For the full list of supported MSTest entries, see [Configure MSTest: Runsettings](./unit-testing-mstest-configure.md#runsettings). The following commands show various usage examples.
 
 Using `dotnet run`:
 

@@ -31,7 +31,7 @@ public sealed class MyTests
         // Get an instance of Microsoft.Extensions.AI's <see cref="IChatClient"/>
         // interface for the selected LLM endpoint.
         AzureOpenAIClient azureClient =
-            new AzureOpenAIClient(
+            new(
                 new Uri(endpoint),
                 new DefaultAzureCredential(new DefaultAzureCredentialOptions() { TenantId = tenantId }));
         IChatClient client = azureClient.AsChatClient(modelId: model);
@@ -68,20 +68,20 @@ public sealed class MyTests
 
     // <SnippetGetResponse>
     private static async Task<(IList<ChatMessage> Messages, ChatResponse ModelResponse)> GetAstronomyConversationAsync(
-    IChatClient chatClient,
-    string astronomyQuestion)
+        IChatClient chatClient,
+        string astronomyQuestion)
     {
         const string SystemPrompt =
             """
-        You're an AI assistant that can answer questions related to astronomy.
-        Keep your responses concise and under 100 words.
-        Use the imperial measurement system for all measurements in your response.
-        """;
+            You're an AI assistant that can answer questions related to astronomy.
+            Keep your responses concise and under 100 words.
+            Use the imperial measurement system for all measurements in your response.
+            """;
 
         IList<ChatMessage> messages =
             [
                 new ChatMessage(ChatRole.System, SystemPrompt),
-            new ChatMessage(ChatRole.User, astronomyQuestion)
+                new ChatMessage(ChatRole.User, astronomyQuestion)
             ];
 
         var chatOptions =

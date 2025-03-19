@@ -60,3 +60,30 @@ configuration:
                       permission: Read
             then:
               - closePullRequest
+
+      - description: (This is only a test policy that will be deleted.) Disallow sign-off for articles in the /docs/csharp folder.
+        if:
+          - or:
+            - payloadType: Issue_Comment
+            - payloadType: Pull_Request_Review_Comment
+          - isAction:
+              action: Created
+          - isActivitySender:
+              issueAuthor: True
+          - commentContains:
+              pattern: '#sign-off'
+              isRegex: False
+          - isAssignedToUser:
+              user: BillWagner
+          - not:
+              isActivitySender:
+                user: BillWagner
+        then:
+          # Add the do-not-merge label, remove the ready-to-merge label, and add a reply asking the PR author not to sign off on the PR.
+          - addReply:
+              reply: >-
+                @${issueAuthor} - Please do NOT sign off on this pull request!!
+          - addLabel:
+              label: do-not-merge
+          - removeLabel:
+              label: ready-to-merge

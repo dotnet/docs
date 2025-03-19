@@ -21,8 +21,7 @@ There are a lot of features in this tutorial. Let's build them one by one.
 
 ## Prerequisites
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
-- A code editor.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Create the app
 

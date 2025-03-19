@@ -2,20 +2,20 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the new .NET libraries features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 02/20/2025
+ms.date: 03/18/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It has been updated for Preview 1.
+This article describes new features in the .NET libraries for .NET 10. It's updated for Preview 2.
 
 ## Find certificates by thumbprints other than SHA-1
 
 Finding certificates uniquely by thumbprint is a fairly common operation, but the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection.Find(System.Security.Cryptography.X509Certificates.X509FindType,System.Object,System.Boolean)?displayProperty=nameWithType> method (for the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> mode) only searches for the SHA-1 Thumbprint value.
 
-There is some risk to using the `Find` method for finding SHA-2-256 ("SHA256") and SHA-3-256 thumbprints since these hash algorithms have the same lengths.
+There's some risk to using the `Find` method for finding SHA-2-256 ("SHA256") and SHA-3-256 thumbprints since these hash algorithms have the same lengths.
 
 Instead, .NET 10 introduces a new method that accepts the name of the hash algorithm to use for matching.
 
@@ -27,7 +27,7 @@ return coll.SingleOrDefault();
 
 ## Find PEM-encoded Data in ASCII/UTF-8
 
-The PEM encoding (originally "Privacy Enhanced Mail", but now used widely outside of email) is defined for "text", which means that the <xref:System.Security.Cryptography.PemEncoding> class was designed to run on <xref:System.String> and `ReadOnlySpan<char>`. However, it's quite common (especially on Linux) to have something like a certificate written in a file that uses the ASCII (string) encoding. Historically, that meant you needed to open the file and convert the bytes to chars (or a string) before you could use `PemEncoding`.
+The PEM encoding (originally *Privacy Enhanced Mail*, but now used widely outside of email) is defined for "text", which means that the <xref:System.Security.Cryptography.PemEncoding> class was designed to run on <xref:System.String> and `ReadOnlySpan<char>`. However, it's common (especially on Linux) to have something like a certificate written in a file that uses the ASCII (string) encoding. Historically, that meant you needed to open the file and convert the bytes to chars (or a string) before you could use `PemEncoding`.
 
 Taking advantage of the fact that PEM is only defined for 7-bit ASCII characters, and that 7-bit ASCII has a perfect overlap with single-byte UTF-8 values, you can now skip the UTF-8/ASCII-to-char conversion and read the file directly.
 
@@ -57,7 +57,7 @@ public static class ISOWeek
 
 ## String normalization APIs to work with span of characters
 
-Unicode string normalization has been supported for a long time, but existing APIs have only worked with the string type. This means that callers with data stored in different forms, such as character arrays or spans, must allocate a new string to use these APIs. Additionally, APIs that return a normalized string always allocate a new string to represent the normalized output.
+Unicode string normalization has been supported for a long time, but existing APIs only worked with the string type. This means that callers with data stored in different forms, such as character arrays or spans, must allocate a new string to use these APIs. Additionally, APIs that return a normalized string always allocate a new string to represent the normalized output.
 
 .NET 10 introduces new APIs that work with spans of characters, expanding normalization beyond string types and helping to avoid unnecessary allocations.
 
@@ -76,7 +76,7 @@ Numerical string comparison is a highly requested feature for comparing strings 
 
 :::code language="csharp" source="../snippets/dotnet-10/csharp/snippets.cs" id="snippet_numericOrdering":::
 
-Note that this option is not valid for the following index-based string operations: `IndexOf`, `LastIndexOf`, `StartsWith`, `EndsWith`, `IsPrefix`, and `IsSuffix`.
+This option isn't valid for the following index-based string operations: `IndexOf`, `LastIndexOf`, `StartsWith`, `EndsWith`, `IsPrefix`, and `IsSuffix`.
 
 ## New `TimeSpan.FromMilliseconds` overload with single parameter
 
@@ -88,7 +88,7 @@ Although this works since the second parameter is optional, it causes a compilat
 Expression<Action> a = () => TimeSpan.FromMilliseconds(1000);
 ```
 
-The issue arises because LINQ expressions cannot handle optional parameters. To address this, .NET 10 introduces an overload takes a single parameter and modifying the existing method to make the second parameter mandatory:
+The issue arises because LINQ expressions can't handle optional parameters. To address this, .NET 10 introduces an overload takes a single parameter and modifying the existing method to make the second parameter mandatory:
 
 ```csharp
 public readonly struct TimeSpan
@@ -108,7 +108,7 @@ Second, the extraction of <xref:System.IO.Compression.ZipArchive> entries is now
 
 ## Additional `TryAdd` and `TryGetValue` overloads for `OrderedDictionary<TKey, TValue>`
 
-<xref:System.Collections.Generic.OrderedDictionary`2> provides `TryAdd` and `TryGetValue` for addition and retrieval like any other `IDictionary<TKey, TValue>` implementation. However, there are scenarios where you might want to perform additional operations, so new overloads have been added that return an index to the entry:
+<xref:System.Collections.Generic.OrderedDictionary`2> provides `TryAdd` and `TryGetValue` for addition and retrieval like any other `IDictionary<TKey, TValue>` implementation. However, there are scenarios where you might want to perform more operations, so new overloads are added that return an index to the entry:
 
 ```csharp
 public class OrderedDictionary<TKey, TValue>
@@ -127,7 +127,7 @@ This new API is already used in <xref:System.Json.JsonObject> and improves the p
 
 ## Allow specifying ReferenceHandler in `JsonSourceGenerationOptions`
 
-When using source generators for JSON serialization, the generated context will throw when cycles are serialized or deserialized. This behavior can now be customized by specifying the <xref:System.Text.Json.Serialization.ReferenceHandler> in the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Here is an example using `JsonKnownReferenceHandler.Preserve`:
+When you use source generators for JSON serialization, the generated context throws when cycles are serialized or deserialized. This behavior can now be customized by specifying the <xref:System.Text.Json.Serialization.ReferenceHandler> in the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. Here's an example using `JsonKnownReferenceHandler.Preserve`:
 
 :::code language="csharp" source="../snippets/dotnet-10/csharp/snippets.cs" id="snippet_selfReference":::
 
@@ -142,3 +142,11 @@ public partial struct Matrix4x4
    public static Matrix4x4 CreateConstrainedBillboardLeftHanded(Vector3 objectPosition, Vector3 cameraPosition, Vector3 rotateAxis, Vector3 cameraForwardVector, Vector3 objectForwardVector)
 }
 ```
+
+## Encryption algorithm can now be specified in PKCS\#12/PFX Export
+
+The new `ExportPkcs12` <!--TODO: add xref --> methods on <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> allow callers to choose what encryption and digest algorithms are used to produce the output.
+`Pkcs12ExportPbeParameters.Pkcs12TripleDesSha1` <!--TODO: add xref --> indicates the Windows XP-era de facto standard,
+which produces an output supported by almost every library/platform that supports reading PKCS#12/PFX by choosing an older encryption algorithm. `Pkcs12ExportPbeParameters.Pbes2Aes256Sha256` <!--TODO: add xref --> indicates that AES should be used instead of 3DES (and SHA-2-256 instead of SHA-1), but the output may not be understood by all readers (such as Windows XP).
+
+Callers who want even more control can instead utilize the overload that accepts a <xref:System.Security.Cryptography.PbeParameters>.

@@ -58,7 +58,7 @@ Complete the following steps to create an MSTest project that connects to the `g
 
 ## Add the test app code
 
-1. Rename the *Test1.cs* FILE to *MyTests.cs*, and then open the file and rename the class to `MyTests`. Delete the empty `TestMethod1` method.
+1. Rename the *Test1.cs* file to *MyTests.cs*, and then open the file and rename the class to `MyTests`. Delete the empty `TestMethod1` method.
 1. Add the necessary `using` directives to the top of the file.
 
    :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="UsingDirectives":::
@@ -108,7 +108,7 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    The `WordCountEvaluator` counts the number of words present in the response. Unlike some evaluators, it isn't based on AI. The `EvaluateAsync` method returns an <xref:Microsoft.Extensions.AI.Evaluation.EvaluationResult> includes a <xref:Microsoft.Extensions.AI.Evaluation.NumericMetric> that contains the word count.
 
-   The `EvaluateAsync` method also attaches a default interpretation to the metric. The default interpretation considers the metric to be good (acceptable) if the detected word count is at or under 100. Otherwise, the metric is considered failed. This default interpretation can be overridden by the caller, if needed.
+   The `EvaluateAsync` method also attaches a default interpretation to the metric. The default interpretation considers the metric to be good (acceptable) if the detected word count is between 6 and 100. Otherwise, the metric is considered failed. This default interpretation can be overridden by the caller, if needed.
 
 1. Back in `MyTests.cs`, add a method to gather the evaluators to use in the evaluation.
 
@@ -125,7 +125,7 @@ Complete the following steps to create an MSTest project that connects to the `g
    :::code language="csharp" source="./snippets/evaluate-with-reporting/MyTests.cs" id="Validate":::
 
     > [!TIP]
-    > The relevance, truth, and completeness metrics each include a `Reason` property that explains the reasoning for the score. The reason is included in the generated report and can be viewed in the raw JSON file or by hovering over the corresponding metric's card in the report.
+    > The metrics each include a `Reason` property that explains the reasoning for the score. The reason is included in the [generated report](#generate-a-report) and can be viewed by clicking on the information icon on the corresponding metric's card.
 
 1. Finally, add the [test method](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) itself.
 
@@ -134,7 +134,7 @@ Complete the following steps to create an MSTest project that connects to the `g
    This test method:
 
    - Creates the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun>. The use of `await using` ensures that the `ScenarioRun` is correctly disposed and that the results of this evaluation are correctly persisted to the result store.
-   - Gets the LLM's response to a specific astronomy question. The same <xref:Microsoft.Extensions.AI.IChatClient> that will be used for evaluation is passed to the `GetAstronomyConversationAsync` method in order to get *response caching* for the primary LLM response being evaluated. (In addition, this enables response caching for the LLM turns that the evaluators use to perform their evaluations internally.) Since response caching is turned on for the reporting configuration, the LLM response is fetched either:
+   - Gets the LLM's response to a specific astronomy question. The same <xref:Microsoft.Extensions.AI.IChatClient> that will be used for evaluation is passed to the `GetAstronomyConversationAsync` method in order to get *response caching* for the primary LLM response being evaluated. (In addition, this enables response caching for the LLM turns that the evaluators use to perform their evaluations internally.) With response caching, the LLM response is fetched either:
      - Directly from the LLM endpoint in the first run of the current test, or in subsequent runs if the cached entry has expired (14 days, by default).
      - From the (disk-based) response cache that was configured in `s_defaultReportingConfiguration` in subsequent runs of the test.
    - Runs the evaluators against the response. Like the LLM response, on subsequent runs, the evaluation is fetched from the (disk-based) response cache that was configured in `s_defaultReportingConfiguration`.

@@ -1,4 +1,4 @@
-// <Snippet18>
+﻿// <Snippet18>
 using System;
 using System.Globalization;
 
@@ -21,6 +21,7 @@ public class Example1
         }
     }
 }
+
 // The example displays the following output:
 //    Unable to convert '30-12-2011' to a date and time.
 //    Unable to convert '12-30-2011' to a date and time.

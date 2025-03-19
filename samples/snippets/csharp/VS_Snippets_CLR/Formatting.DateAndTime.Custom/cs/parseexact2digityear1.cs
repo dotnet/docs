@@ -1,5 +1,4 @@
-// <Snippet19>
-using System;
+﻿using System;
 using System.Globalization;
 using System.Threading;
 
@@ -7,6 +6,7 @@ public class Example7
 {
     public static void Main()
     {
+        // <Snippet19>
         string fmt = "dd-MMM-yy";
         string value = "24-Jan-49";
 
@@ -23,12 +23,13 @@ public class Example7
 
         Console.WriteLine($"Two Digit Year Range: {cal.TwoDigitYearMax - 99} - {cal.TwoDigitYearMax}");
         Console.WriteLine("{0:d}", DateTime.ParseExact(value, fmt, null));
+
+        // The example displays the following output:
+        //       Two Digit Year Range: 1930 - 2029
+        //       1/24/1949
+        //
+        //       Two Digit Year Range: 2000 - 2099
+        //       1/24/2049
+        // </Snippet19>
     }
 }
-// The example displays the following output:
-//       Two Digit Year Range: 1930 - 2029
-//       1/24/1949
-//
-//       Two Digit Year Range: 2000 - 2099
-//       1/24/2049
-// </Snippet19>

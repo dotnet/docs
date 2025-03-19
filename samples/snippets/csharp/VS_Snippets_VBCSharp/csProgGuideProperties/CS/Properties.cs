@@ -93,8 +93,8 @@ namespace CsCsrefProgrammingProperties
                 Cube c = new Cube(side);
 
                 // Display the results:
-                System.Console.WriteLine($"Area of the square = {0:F2}");
-                System.Console.WriteLine($"Area of the cube = {0:F2}");
+                System.Console.WriteLine($"Area of the square = {s.Area:F2}");
+                System.Console.WriteLine($"Area of the cube = {c.Area:F2}");
                 System.Console.WriteLine();
 
                 // Input the area:
@@ -106,8 +106,8 @@ namespace CsCsrefProgrammingProperties
                 c.Area = area;
 
                 // Display the results:
-                System.Console.WriteLine($"Side of the square = {0:F2}");
-                System.Console.WriteLine($"Side of the cube = {0:F2}");
+                System.Console.WriteLine($"Side of the square = {s.side:F2}");
+                System.Console.WriteLine($"Side of the cube = {c.side:F2}");
             }
         }
         /* Example Output:

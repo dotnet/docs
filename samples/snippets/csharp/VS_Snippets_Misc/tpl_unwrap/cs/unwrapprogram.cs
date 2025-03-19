@@ -137,7 +137,7 @@ namespace Unwrap
             foreach (byte item in data)
             {
                 final ^= item;
-                Console.WriteLine($"{0:x}");
+                Console.WriteLine($"{final:x}");
             }
             Console.WriteLine("Done computing");
             return final;

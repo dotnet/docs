@@ -19,7 +19,7 @@ public class Result
                               i == taskArray.Length - 1 ? "= " : "+ ");
             sum += results[i];
         }
-        Console.WriteLine($"{0:N1}");
+        Console.WriteLine($"{sum:N1}");
    }
 
    private static Double DoComputation(Double start)

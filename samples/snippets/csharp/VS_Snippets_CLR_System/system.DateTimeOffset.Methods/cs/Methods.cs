@@ -42,7 +42,7 @@ public class Class1
       DateTimeOffset currentTime = takeOff;
       TimeSpan[] flightTimes = new TimeSpan[]
                         {new TimeSpan(2, 25, 0), new TimeSpan(1, 48, 0)};
-      Console.WriteLine($"Takeoff is scheduled for {0:d} at {0:T}.");
+      Console.WriteLine($"Takeoff is scheduled for {takeOff:d} at {takeOff:T}.");
       for (int ctr = flightTimes.GetLowerBound(0);
            ctr <= flightTimes.GetUpperBound(0); ctr++)
       {
@@ -66,7 +66,7 @@ public class Class1
          else
             workDay = workDay.AddDays(8 - (int)workDay.DayOfWeek);
       }
-      Console.WriteLine($"Beginning of Work Week In {0:MMMM} {0:yyyy}:");
+      Console.WriteLine($"Beginning of Work Week In {workDay:MMMM} {workDay:yyyy}:");
       // Add one week to the current date
       do
       {
@@ -92,12 +92,12 @@ public class Class1
                            DateTimeOffset.Now.Offset);
       DateTimeOffset startOfShift = startTime.AddHours(SHIFT_LENGTH);
 
-      Console.WriteLine($"Shifts for the week of {0:D}");
+      Console.WriteLine($"Shifts for the week of {startOfShift:D}");
       do
       {
          // Exclude third shift
          if (startOfShift.Hour > 6)
-            Console.WriteLine($"   {0:d} at {0:T}");
+            Console.WriteLine($"   {startOfShift:d} at {startOfShift:T}");
 
          startOfShift = startOfShift.AddHours(SHIFT_LENGTH);
       } while (startOfShift.DayOfWeek != DayOfWeek.Saturday &
@@ -125,7 +125,7 @@ public class Class1
                                        DateTimeOffset.Now.Offset);
       for (int ctr = 1; ctr <= 4; ctr++)
       {
-         Console.WriteLine($"Quarter {ctr}: {1:MMMM d}");
+         Console.WriteLine($"Quarter {ctr}: {quarterDate:MMMM d}");
          quarterDate = quarterDate.AddMonths(3);
       }
       // This example produces the following output:
@@ -142,11 +142,11 @@ public class Class1
       double[] lapTimes = {1.308, 1.283, 1.325, 1.3625, 1.317, 1.267};
       DateTimeOffset currentTime = new DateTimeOffset(1, 1, 1, 1, 30, 0,
                                    DateTimeOffset.Now.Offset);
-      Console.WriteLine($"Start:    {0:T}");
+      Console.WriteLine($"Start:    {currentTime:T}");
       for (int ctr = lapTimes.GetLowerBound(0); ctr <= lapTimes.GetUpperBound(0); ctr++)
       {
          currentTime = currentTime.AddMinutes(lapTimes[ctr]);
-         Console.WriteLine($"Lap {ctr + 1}:    {1:T}");
+         Console.WriteLine($"Lap {ctr + 1}:    {currentTime:T}");
       }
       // The example produces the following output:
       //       Start:    1:30:00 PM

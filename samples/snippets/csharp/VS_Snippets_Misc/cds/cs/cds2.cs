@@ -543,7 +543,7 @@ namespace Demos
             _signalled.Wait();
 
             //Consume data
-            Console.WriteLine($"{0:X} {1:X} {2:X} {3:X}");
+            Console.WriteLine($"{data[0]:X} {data[1]:X} {data[2]:X} {data[3]:X}");
         }
 
         static void PostData(object state)

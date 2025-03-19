@@ -22,7 +22,7 @@ namespace ThreadLocalFor
                 },
                 subtotal => Interlocked.Add(ref total, subtotal));
 
-            Console.WriteLine($"The total is {0:N0}");
+            Console.WriteLine($"The total is {total:N0}");
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }

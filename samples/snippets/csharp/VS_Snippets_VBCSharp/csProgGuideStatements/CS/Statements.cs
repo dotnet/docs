@@ -29,7 +29,7 @@ namespace CsCsrefProgrammingStatements
                 // Expression statement (method invocation). A single-line
                 // statement can span multiple text lines because line breaks
                 // are treated as white space, which is ignored by the compiler.
-                System.Console.WriteLine($"Radius of circle #{counter} is {radius}. Circumference = {2:N2}");
+                System.Console.WriteLine($"Radius of circle #{counter} is {radius}. Circumference = {circumference:N2}");
 
                 // Expression statement (postfix increment).
                 counter++;

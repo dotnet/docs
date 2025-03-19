@@ -24,9 +24,9 @@ class Latch
    {
       for (int i = 0; i < spinCountLog.Length; i++)
       {
-          Console.WriteLine($"Wait succeeded with spin count of {i} on {1:N0} attempts");
+          Console.WriteLine($"Wait succeeded with spin count of {i} on {spinCountLog[i]:N0} attempts");
       }
-      Console.WriteLine($"Wait used the kernel event on {0:N0} attempts.");
+      Console.WriteLine($"Wait used the kernel event on {totalKernelWaits:N0} attempts.");
       Console.WriteLine("Logging complete");
    }
 #endif

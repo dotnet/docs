@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 using System.Text.RegularExpressions;
 
@@ -11,18 +11,15 @@ public class Group2Example
 
         foreach (Match match in Regex.Matches(input, pattern))
         {
-            Console.WriteLine("Match: '{0}' at index {1}.",
-                              match.Value, match.Index);
+            Console.WriteLine($"Match: '{match.Value}' at index {match.Index}.");
             int grpCtr = 0;
             foreach (Group grp in match.Groups)
             {
-                Console.WriteLine("   Group {0}: '{1}' at index {2}.",
-                                  grpCtr, grp.Value, grp.Index);
+                Console.WriteLine($"   Group {grpCtr}: '{grp.Value}' at index {grp.Index}.");
                 int capCtr = 0;
                 foreach (Capture cap in grp.Captures)
                 {
-                    Console.WriteLine("      Capture {0}: '{1}' at {2}.",
-                                      capCtr, cap.Value, cap.Index);
+                    Console.WriteLine($"      Capture {capCtr}: '{cap.Value}' at {cap.Index}.");
                     capCtr++;
                 }
                 grpCtr++;

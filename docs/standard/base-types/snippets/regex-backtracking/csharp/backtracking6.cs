@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
@@ -15,13 +15,13 @@ public class Example6
         sw = Stopwatch.StartNew();
         result = Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase);
         sw.Stop();
-        Console.WriteLine("{0} in {1}", result, sw.Elapsed);
+        Console.WriteLine($"{result} in {sw.Elapsed}");
 
         string aheadPattern = @"^((?=[A-Z])\w+\.)*[A-Z]\w*$";
         sw = Stopwatch.StartNew();
         result = Regex.IsMatch(input, aheadPattern, RegexOptions.IgnoreCase);
         sw.Stop();
-        Console.WriteLine("{0} in {1}", result, sw.Elapsed);
+        Console.WriteLine($"{result} in {sw.Elapsed}");
     }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using Orleans.Configuration;
@@ -84,7 +84,7 @@ class GameObserver : IGameObserver
 {
     public void UpdateGameScore(string score)
     {
-        Console.WriteLine("New game score: {0}", score);
+        Console.WriteLine($"New game score: {score}");
     }
 }
 // </gameobserver>

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -18,7 +18,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.3" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.0-preview-25107-01" />
-    <PackageReference Include="MSTest" Version="3.8.2" />
+    <PackageReference Include="MSTest" Version="3.8.3" />
   </ItemGroup>
 
   <ItemGroup>

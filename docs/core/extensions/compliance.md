@@ -34,11 +34,11 @@ dotnet add package Microsoft.Extensions.Compliance.Classification
 </ItemGroup>
 ```
 
+---
+
 ### Create custom classifications
 
-Define custom classifications by creating static members for different types of sensitive data. This gives you a consistent way to label and handle data across your app.
-
-Example:
+Define custom classifications by creating static members for different types of sensitive data. This gives you a consistent way to label and handle data across your app. Consider the following example class:
 
 ```csharp
 using Microsoft.Extensions.Compliance.Classification;
@@ -135,13 +135,13 @@ Redactors replace or mask sensitive data. They help you protect sensitive inform
 
 ### Install redaction package
 
-#### Using [.NET CLI](#tab/dotnet-cli)
+#### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
 dotnet add package Microsoft.Extensions.Compliance.Redaction
 ```
 
-#### Using [PackageReference](#tab/package-reference)
+#### [PackageReference](#tab/package-reference)
 
 ```xml
 <ItemGroup>
@@ -150,9 +150,9 @@ dotnet add package Microsoft.Extensions.Compliance.Redaction
 </ItemGroup>
 ```
 
-To create a custom redactor, define a subclass that inherits from <xref:Microsoft.Extensions.Compliance.Redaction.Redactor>:
+---
 
-Create a redactor by inheriting from <xref:Microsoft.Extensions.Compliance.Redaction.Redactor>:
+To create a custom redactor, define a subclass that inherits from <xref:Microsoft.Extensions.Compliance.Redaction.Redactor>:
 
 ```csharp
 public sealed class StarRedactor : Redactor
@@ -166,19 +166,15 @@ public class StarRedactor : Redactor
     public override int Redact(ReadOnlySpan<char> source, Span<char> destination)
     {
         Stars.CopyTo(destination);
+
         return Stars.Length;
     }
+}
+```
 
 ### Create a custom redactor provider
 
 The <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider> interface provides instances of redactors based on data classification. To create a custom redactor provider, inherit from <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider> as shown in the following example:
-```
-
-### Redactor provider
-
-The <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider> interface provides instances of redactors based on data classification.
-
-Create a redactor provider by inheriting from <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider>:
 
 ```csharp
 using Microsoft.Extensions.Compliance.Classification;

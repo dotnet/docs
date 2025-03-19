@@ -47,6 +47,8 @@ public static IServiceCollection AddRedaction(this IServiceCollection services, 
 Fetch redactors at runtime using an `IRedactorProvider`. You can implement your own provider and register it inside the `AddRedaction` call, or use the default provider. Configure redactors using these `IRedactionBuilder` methods:
 
 ```csharp
+// This will use the default redactor, which is the ErasingRedactor
+builder.Services.AddRedaction();
 // Using the default redactor provider:
 builder.Services.AddRedaction(redactionBuilder =>
 {
@@ -59,7 +61,6 @@ builder.Services.AddRedaction(redactionBuilder =>
 
 // Using a custom redactor provider:
 builder.Services.AddSingleton<IRedactorProvider, MyRedactorProvider>();
-builder.Services.AddRedaction(redactionBuilder => { });
 ```
 
 Given this data classification in your code:

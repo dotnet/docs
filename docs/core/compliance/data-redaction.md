@@ -132,7 +132,3 @@ Include this section in your JSON config file:
 > [!Note]
 > The `HmacRedactor` is still experimental, so the above methods will show warning `EXTEXP0002` indicating it's not yet stable.
 > To use it, add `<NoWarn>$(NoWarn);EXTEXP0002</NoWarn>` to your project file or add `#pragma warning disable EXTEXP0002` around the calls to `SetHmacRedactor`.
-
-## Feedback & contributing
-
-We welcome feedback and contributions in [our GitHub repo](https://github.com/dotnet/extensions).

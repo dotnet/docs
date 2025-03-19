@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace NullExamples
 {
@@ -7,7 +7,7 @@ namespace NullExamples
     {
         class MyClass
         {
-            public void MyMethod() { }
+            public static void MyMethod() { }
         }
 
         static void Main()
@@ -30,7 +30,7 @@ namespace NullExamples
             mc = new MyClass();
 
             // You can call its method.
-            mc.MyMethod();
+            MyClass.MyMethod();
 
             // Set mc to null again. The object it referenced
             // is no longer accessible and can now be garbage-collected.
@@ -38,14 +38,14 @@ namespace NullExamples
 
             // A null string is not the same as an empty string.
             string s = null;
-            string t = String.Empty; // Logically the same as ""
+            string t = string.Empty; // Logically the same as ""
 
             // Equals applied to any null object returns false.
-            Console.WriteLine("t.Equals(s) is {0}", t.Equals(s));
+            Console.WriteLine($"t.Equals(s) is {t.Equals(s)}");
 
             // Equality operator also returns false when one
             // operand is null.
-            Console.WriteLine($"Empty string {s == t ? "equals": "does not equal"} null string");
+            Console.WriteLine($"Empty string {(s == t ? "equals" : "does not equal")} null string");
 
             // Returns true.
             Console.WriteLine($"null == null is {null == null}");

@@ -44,7 +44,7 @@ The library contains support for storing evaluation results and generating repor
 
 :::image type="content" source="../media/ai-extensions/pipeline-report.jpg" lightbox="../media/ai-extensions/pipeline-report.jpg" alt-text="Screenshot of an AI evaluation report in an Azure DevOps pipeline.":::
 
-The `dotnet aieval` tool, which ships as part of the `Microsoft.Extensions.AI.Evaluation.Console` package, includes functionality for generating reports and managing the stored evaluation data and cached responses. For more information, see [Generate a report](../tutorials/evaluate-with-reporting#generate-a-report).
+The `dotnet aieval` tool, which ships as part of the `Microsoft.Extensions.AI.Evaluation.Console` package, includes functionality for generating reports and managing the stored evaluation data and cached responses. For more information, see [Generate a report](../tutorials/evaluate-with-reporting.md#generate-a-report).
 
 ## Configuration
 

@@ -29,7 +29,8 @@ dotnet add package Microsoft.Extensions.Compliance.Classification
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.Extensions.Compliance.Classification" Version="*" />
+  <PackageReference Include="Microsoft.Extensions.Compliance.Classification"
+                    Version="*" />
 </ItemGroup>
 ```
 
@@ -144,7 +145,8 @@ dotnet add package Microsoft.Extensions.Compliance.Redaction
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="*"/>
+  <PackageReference Include="Microsoft.Extensions.Compliance.Redaction"
+                    Version="*"/>
 </ItemGroup>
 ```
 

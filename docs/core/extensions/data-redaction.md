@@ -20,7 +20,8 @@ dotnet add package Microsoft.Extensions.Compliance.Redaction
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="[CURRENTVERSION]" />
+  <PackageReference Include="Microsoft.Extensions.Compliance.Redaction"
+                    Version="*" />
 </ItemGroup>
 ```
 

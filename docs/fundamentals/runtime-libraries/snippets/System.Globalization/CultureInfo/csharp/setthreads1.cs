@@ -39,7 +39,7 @@ public class SetThreadsEx
         // Create new thread and display three random numbers.
         Console.WriteLine("Some currency values:");
         for (int ctr = 0; ctr <= 3; ctr++)
-            Console.WriteLine("   {0:C2}", rnd.NextDouble() * 10);
+            Console.WriteLine($"   {rnd.NextDouble() * 10:C2}");
     }
 
     private static void ThreadProc()

@@ -14,7 +14,7 @@ public class ParseUserEx
         {
             Console.WriteLine($"{stdCulture.Name} culture reflects user overrides: {stdCulture.UseUserOverride}");
             Decimal amount = Decimal.Parse(value, stdCulture);
-            Console.WriteLine("'{0}' --> {1}", value, amount.ToString(CultureInfo.InvariantCulture));
+            Console.WriteLine($"'{value}' --> {amount.ToString(CultureInfo.InvariantCulture)}");
         }
         catch (FormatException)
         {
@@ -26,7 +26,7 @@ public class ParseUserEx
         {
             Console.WriteLine($"{custCulture.Name} culture reflects user overrides: {custCulture.UseUserOverride}");
             Decimal amount = Decimal.Parse(value, custCulture);
-            Console.WriteLine("'{0}' --> {1}", value, amount.ToString(CultureInfo.InvariantCulture));
+            Console.WriteLine($"'{value}' --> {amount.ToString(CultureInfo.InvariantCulture)}");
         }
         catch (FormatException)
         {

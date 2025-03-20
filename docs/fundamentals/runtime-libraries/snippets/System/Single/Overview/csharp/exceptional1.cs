@@ -9,7 +9,7 @@ public class Example6
         float value2 = 9.164234e-25f;
         float result = value1 * value2;
         Console.WriteLine($"{value1} * {value2} = {result}");
-        Console.WriteLine("{0} = 0: {1}", result, result.Equals(0.0f));
+        Console.WriteLine($"{result} = 0: {result.Equals(0.0f)}");
     }
 }
 // The example displays the following output:

@@ -96,7 +96,7 @@ public class Example13
         }
         catch (OperationCanceledException e)
         {
-            Console.WriteLine("Corruption in Thread {1}", e.GetType().Name, Thread.CurrentThread.Name);
+            Console.WriteLine($"Corruption in Thread {Thread.CurrentThread.Name}");
         }
         finally
         {

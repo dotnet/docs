@@ -200,7 +200,7 @@ public class Example
       Console.WriteLine();
       Console.WriteLine("Values in synchronized cache: ");
       for (int ctr = 1; ctr <= sc.Count; ctr++)
-         Console.WriteLine("   {0}: {1}", ctr, sc.Read(ctr));
+         Console.WriteLine($"   {ctr}: {sc.Read(ctr)}");
    }
 }
 // The example displays the following output:

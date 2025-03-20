@@ -94,7 +94,7 @@ public class Example15
                 if (canc != null)
                     Console.WriteLine($"Task #{canc.Task.Id} cancelled.");
                 else
-                    Console.WriteLine("Exception: {0}", inner.GetType().Name);
+                    Console.WriteLine($"Exception: {inner.GetType().Name}");
             }
         }
         finally

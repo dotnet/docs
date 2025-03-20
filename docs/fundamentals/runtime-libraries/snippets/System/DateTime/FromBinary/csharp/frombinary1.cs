@@ -11,8 +11,7 @@ public class Example
          Console.WriteLine($"{localDate} is an invalid time in the {TimeZoneInfo.Local.StandardName} zone.");
 
       DateTime localDate2 = DateTime.FromBinary(binLocal);
-      Console.WriteLine("{0} = {1}: {2}",
-                        localDate, localDate2, localDate.Equals(localDate2));
+      Console.WriteLine($"{localDate} = {localDate2}: {localDate.Equals(localDate2)}");
    }
 }
 // The example displays the following output:

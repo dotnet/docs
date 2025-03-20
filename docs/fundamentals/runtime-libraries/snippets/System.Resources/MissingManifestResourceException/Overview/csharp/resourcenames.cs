@@ -29,7 +29,7 @@ public class Example0
          Console.WriteLine("   No resources found.");
 
       foreach (var resName in resNames)
-         Console.WriteLine("   Resource: {0}", resName.Replace(".resources", ""));
+         Console.WriteLine($"   Resource: {resName.Replace(".resources", "")}");
 
       Console.WriteLine();
    }

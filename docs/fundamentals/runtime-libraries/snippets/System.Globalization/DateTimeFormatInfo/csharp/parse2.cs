@@ -17,8 +17,7 @@ public class ParseEx2
             {
                 Console.WriteLine($"{culture.Name} culture reflects user overrides: {culture.UseUserOverride}");
                 DateTime occasion = DateTime.Parse(inputDate, culture);
-                Console.WriteLine("'{0}' --> {1}", inputDate,
-                                  occasion.ToString("D", CultureInfo.InvariantCulture));
+                Console.WriteLine($"'{inputDate}' --> {occasion.ToString("D", CultureInfo.InvariantCulture)}");
             }
             catch (FormatException)
             {

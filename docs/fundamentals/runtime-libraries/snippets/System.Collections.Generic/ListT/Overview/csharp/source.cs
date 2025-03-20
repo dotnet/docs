@@ -26,8 +26,7 @@ public class Example2
         Console.WriteLine($"\nCapacity: {dinosaurs.Capacity}");
         Console.WriteLine($"Count: {dinosaurs.Count}");
 
-        Console.WriteLine("\nContains(\"Deinonychus\"): {0}",
-            dinosaurs.Contains("Deinonychus"));
+        Console.WriteLine($"\nContains(\"Deinonychus\"): {dinosaurs.Contains("Deinonychus")}");
 
         Console.WriteLine("\nInsert(2, \"Compsognathus\")");
         dinosaurs.Insert(2, "Compsognathus");

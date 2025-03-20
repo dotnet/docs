@@ -10,8 +10,7 @@ public class Example2
       var th = new Thread(ExecuteInForeground);
       th.Start();
       Thread.Sleep(1000);
-      Console.WriteLine("Main thread ({0}) exiting...",
-                        Thread.CurrentThread.ManagedThreadId);
+      Console.WriteLine($"Main thread ({Thread.CurrentThread.ManagedThreadId}) exiting...");
    }
 
    private static void ExecuteInForeground()

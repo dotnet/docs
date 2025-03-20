@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 
@@ -11,8 +11,7 @@ public class Example8
       Decimal value = 1603.49m;
       foreach (var cultureName in cultureNames) {
          CultureInfo culture = new CultureInfo(cultureName);
-         Console.WriteLine("{0}: {1}", culture.Name,
-                           value.ToString("C2", culture));
+         Console.WriteLine($"{culture.Name}: {value.ToString("C2", culture)}");
       }
    }
 }

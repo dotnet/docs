@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 
 public class Example
@@ -7,7 +7,7 @@ public class Example
    {
       double value1 = .333333333333333;
       double value2 = 1.0/3;
-      Console.WriteLine("{0:R} = {1:R}: {2}", value1, value2, value1.Equals(value2));
+      Console.WriteLine($"{value1:R} = {value2:R}: {value1.Equals(value2)}");
    }
 }
 // The example displays the following output:

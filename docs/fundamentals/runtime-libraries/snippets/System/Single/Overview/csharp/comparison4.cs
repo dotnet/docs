@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 
 public class Example3
@@ -10,10 +10,8 @@ public class Example3
         for (int ctr = 1; ctr <= 10; ctr++)
             one2 += .1f;
 
-        Console.WriteLine("{0:R} = {1:R}: {2}", one1, one2, one1.Equals(one2));
-        Console.WriteLine("{0:R} is approximately equal to {1:R}: {2}",
-                          one1, one2,
-                          IsApproximatelyEqual(one1, one2, .000001f));
+        Console.WriteLine($"{one1:R} = {one2:R}: {one1.Equals(one2)}");
+        Console.WriteLine($"{one1:R} is approximately equal to {one2:R}: {IsApproximatelyEqual(one1, one2, .000001f)}");
     }
 
     static bool IsApproximatelyEqual(float value1, float value2, float epsilon)

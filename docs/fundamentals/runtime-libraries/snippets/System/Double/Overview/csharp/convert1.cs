@@ -1,4 +1,4 @@
-﻿// <Snippet20>
+// <Snippet20>
 using System;
 
 public class Example4
@@ -19,9 +19,7 @@ public class Example4
                 dblValue = (Double)value;
             else
                 dblValue = value;
-            Console.WriteLine("{0} ({1}) --> {2:R} ({3})",
-                              value, value.GetType().Name,
-                              dblValue, dblValue.GetType().Name);
+            Console.WriteLine($"{value} ({value.GetType().Name}) --> {dblValue:R} ({dblValue.GetType().Name})");
         }
     }
 }

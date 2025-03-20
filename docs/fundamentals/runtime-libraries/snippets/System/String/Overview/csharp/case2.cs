@@ -26,8 +26,7 @@ public class Example1
          Thread.CurrentThread.CurrentCulture = culture;
          Console.WriteLine($"Culture: {CultureInfo.CurrentCulture.DisplayName}");
          Console.WriteLine(resource);
-         Console.WriteLine("Access allowed: {0}", 
-                           ! String.Equals(disallowed, scheme, StringComparison.CurrentCultureIgnoreCase));      
+         Console.WriteLine($"Access allowed: {! String.Equals(disallowed, scheme, StringComparison.CurrentCultureIgnoreCase)}");      
          Console.WriteLine();
       }   
    }

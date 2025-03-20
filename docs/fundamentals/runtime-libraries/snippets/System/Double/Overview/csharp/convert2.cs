@@ -16,9 +16,7 @@ public class Example5
                 try
                 {
                     Int64 lValue = (long)value;
-                    Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
-                                      value, value.GetType().Name,
-                                      lValue, lValue.GetType().Name);
+                    Console.WriteLine($"{value} ({value.GetType().Name}) --> {lValue} (0x{lValue:X16}) ({lValue.GetType().Name})");
                 }
                 catch (OverflowException)
                 {
@@ -27,9 +25,7 @@ public class Example5
                 try
                 {
                     UInt64 ulValue = (ulong)value;
-                    Console.WriteLine("{0} ({1}) --> {2} (0x{2:X16}) ({3})",
-                                      value, value.GetType().Name,
-                                      ulValue, ulValue.GetType().Name);
+                    Console.WriteLine($"{value} ({value.GetType().Name}) --> {ulValue} (0x{ulValue:X16}) ({ulValue.GetType().Name})");
                 }
                 catch (OverflowException)
                 {
@@ -38,9 +34,7 @@ public class Example5
                 try
                 {
                     Decimal dValue = (decimal)value;
-                    Console.WriteLine("{0} ({1}) --> {2} ({3})",
-                                      value, value.GetType().Name,
-                                      dValue, dValue.GetType().Name);
+                    Console.WriteLine($"{value} ({value.GetType().Name}) --> {dValue} ({dValue.GetType().Name})");
                 }
                 catch (OverflowException)
                 {
@@ -49,9 +43,7 @@ public class Example5
                 try
                 {
                     Single sValue = (float)value;
-                    Console.WriteLine("{0} ({1}) --> {2} ({3})",
-                                      value, value.GetType().Name,
-                                      sValue, sValue.GetType().Name);
+                    Console.WriteLine($"{value} ({value.GetType().Name}) --> {sValue} ({sValue.GetType().Name})");
                 }
                 catch (OverflowException)
                 {

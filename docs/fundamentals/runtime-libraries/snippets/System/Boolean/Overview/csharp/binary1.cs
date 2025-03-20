@@ -11,8 +11,7 @@ public class Example1
             // Get binary representation of flag.
             Byte value = BitConverter.GetBytes(flag)[0];
             Console.WriteLine($"Original value: {flag}");
-            Console.WriteLine("Binary value:   {0} ({1})", value,
-                              GetBinaryString(value));
+            Console.WriteLine($"Binary value:   {value} ({GetBinaryString(value)})");
             // Restore the flag from its binary representation.
             bool newFlag = BitConverter.ToBoolean(new Byte[] { value }, 0);
             Console.WriteLine($"Restored value: {flag}\n");

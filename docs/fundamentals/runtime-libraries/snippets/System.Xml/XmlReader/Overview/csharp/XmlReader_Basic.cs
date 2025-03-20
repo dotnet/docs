@@ -311,7 +311,7 @@ static void ReadToFollowing() {
 using (XmlReader reader = XmlReader.Create("books.xml")) {
     reader.ReadToFollowing("book");
     do {
-       Console.WriteLine("ISBN: {0}", reader.GetAttribute("ISBN"));
+       Console.WriteLine($"ISBN: {reader.GetAttribute("ISBN")}");
     } while (reader.ReadToNextSibling("book"));
 }
 //</snippet15>
@@ -327,9 +327,9 @@ using (XmlReader reader = XmlReader.Create("book1.xml", settings)) {
   // Parse the file and display each node.
   while (reader.Read()) {
     if (reader.HasValue)
-      Console.WriteLine("({0})  {1}={2}", reader.NodeType, reader.Name, reader.Value);
+      Console.WriteLine($"({reader.NodeType})  {reader.Name}={reader.Value}");
     else
-      Console.WriteLine("({0}) {1}", reader.NodeType, reader.Name);
+      Console.WriteLine($"({reader.NodeType}) {reader.Name}");
   }
 }
 //</snippet16>

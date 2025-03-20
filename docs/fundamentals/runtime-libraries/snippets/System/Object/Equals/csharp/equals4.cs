@@ -44,12 +44,12 @@ class MyClass
     cmplx2.im = 1.0;
 
     Console.WriteLine($"{cmplx1} <> {cmplx2}: {cmplx1 != cmplx2}");
-    Console.WriteLine("{0} = {1}: {2}", cmplx1, cmplx2, cmplx1.Equals(cmplx2));
+    Console.WriteLine($"{cmplx1} = {cmplx2}: {cmplx1.Equals(cmplx2)}");
 
     cmplx2.re = 4.0;
 
     Console.WriteLine($"{cmplx1} = {cmplx2}: {cmplx1 == cmplx2}");
-    Console.WriteLine("{0} = {1}: {2}", cmplx1, cmplx2, cmplx1.Equals(cmplx2));
+    Console.WriteLine($"{cmplx1} = {cmplx2}: {cmplx1.Equals(cmplx2)}");
   }
 }
 // The example displays the following output:

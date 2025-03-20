@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -19,8 +19,7 @@ public class Example2
         {
             CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
             string dateString = rm.GetString("DateStart", culture);
-            Console.WriteLine("{0}: {1} {2}.", culture.DisplayName, dateString,
-                                               DateTime.Now.ToString("M", culture));
+            Console.WriteLine($"{culture.DisplayName}: {dateString} {DateTime.Now.ToString("M", culture)}.");
             Console.WriteLine();
         }
     }

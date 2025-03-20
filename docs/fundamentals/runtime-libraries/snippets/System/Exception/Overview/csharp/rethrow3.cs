@@ -48,15 +48,14 @@ public class RethrowEx3
         }
         catch (ArgumentNullException e)
         {
-            Console.WriteLine("An exception ({0}) occurred.",
-                              e.GetType().Name);
+            Console.WriteLine($"An exception ({e.GetType().Name}) occurred.");
             Console.WriteLine($"   Message:\n{e.Message}");
             Console.WriteLine($"   Stack Trace:\n   {e.StackTrace}");
             Exception ie = e.InnerException;
             if (ie != null)
             {
                 Console.WriteLine("   The Inner Exception:");
-                Console.WriteLine("      Exception Name: {0}", ie.GetType().Name);
+                Console.WriteLine($"      Exception Name: {ie.GetType().Name}");
                 Console.WriteLine($"      Message: {ie.Message}\n");
                 Console.WriteLine($"      Stack Trace:\n   {ie.StackTrace}\n");
             }

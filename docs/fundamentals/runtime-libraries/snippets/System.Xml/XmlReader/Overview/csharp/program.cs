@@ -171,8 +171,7 @@ namespace XmlReaderExampleCS
                             Console.WriteLine($"Start Element {reader.Name}");
                             break;
                         case XmlNodeType.Text:
-                            Console.WriteLine("Text Node: {0}",
-                                     await reader.GetValueAsync());
+                            Console.WriteLine($"Text Node: {await reader.GetValueAsync()}");
                             break;
                         case XmlNodeType.EndElement:
                             Console.WriteLine($"End Element {reader.Name}");

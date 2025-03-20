@@ -70,12 +70,10 @@ public class Example6
                 Console.WriteLine($"   Recreated Value: {binData}");
                 break;
             case "ResourceTypeCode.Int32":
-                Console.WriteLine("   Recreated Value: {0}",
-                                  BitConverter.ToInt32(data, 0));
+                Console.WriteLine($"   Recreated Value: {BitConverter.ToInt32(data, 0)}");
                 break;
             case "ResourceTypeCode.Boolean":
-                Console.WriteLine("   Recreated Value: {0}",
-                                  BitConverter.ToBoolean(data, 0));
+                Console.WriteLine($"   Recreated Value: {BitConverter.ToBoolean(data, 0)}");
                 break;
             // .jpeg image stored as a stream.
             case "ResourceTypeCode.Stream":

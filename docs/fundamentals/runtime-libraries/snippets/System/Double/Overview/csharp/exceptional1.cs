@@ -9,7 +9,7 @@ public class Example6
         Double value2 = 9.1642346778e-175;
         Double result = value1 * value2;
         Console.WriteLine($"{value1} * {value2} = {result}");
-        Console.WriteLine("{0} = 0: {1}", result, result.Equals(0.0));
+        Console.WriteLine($"{result} = 0: {result.Equals(0.0)}");
     }
 }
 // The example displays the following output:

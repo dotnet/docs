@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 // <Snippet13>
 [Flags]
@@ -16,7 +16,7 @@ public class Example2
     {
         // <Snippet14>
         Pets familyPets = Pets.Dog | Pets.Cat;
-        Console.WriteLine("Pets: {0:G} ({0:D})", familyPets);
+        Console.WriteLine($"Pets: {familyPets:G} ({familyPets:D})");
         // The example displays the following output:
         //       Pets: Dog, Cat (3)
         // </Snippet14>

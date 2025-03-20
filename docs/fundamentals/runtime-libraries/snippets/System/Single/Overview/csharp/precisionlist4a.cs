@@ -1,4 +1,4 @@
-﻿// <Snippet17>
+// <Snippet17>
 using System;
 using System.IO;
 
@@ -24,9 +24,7 @@ public class Example10
             restoredValues[ctr] = Single.Parse(tempStrings[ctr]);
 
         for (int ctr = 0; ctr < values.Length; ctr++)
-            Console.WriteLine("{0} {2} {1}", values[ctr],
-                              restoredValues[ctr],
-                              values[ctr].Equals(restoredValues[ctr]) ? "=" : "<>");
+            Console.WriteLine($"{values[ctr]} {values[ctr].Equals(restoredValues[ctr]) ? "=" : "<>"} {restoredValues[ctr]}");
     }
 }
 // The example displays the following output:

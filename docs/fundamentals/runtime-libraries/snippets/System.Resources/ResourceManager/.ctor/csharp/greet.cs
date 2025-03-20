@@ -23,11 +23,11 @@ public class Example2
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture(cultureName);
             Console.WriteLine($"The current UI culture is {CultureInfo.CurrentUICulture.Name}");
             if (DateTime.Now < noon)
-                Console.WriteLine("{0}!", rm.GetString("Morning"));
+                Console.WriteLine($"{rm.GetString("Morning")}!");
             else if (DateTime.Now < evening)
-                Console.WriteLine("{0}!", rm.GetString("Afternoon"));
+                Console.WriteLine($"{rm.GetString("Afternoon")}!");
             else
-                Console.WriteLine("{0}!", rm.GetString("Evening"));
+                Console.WriteLine($"{rm.GetString("Evening")}!");
             Console.WriteLine();
         }
     }

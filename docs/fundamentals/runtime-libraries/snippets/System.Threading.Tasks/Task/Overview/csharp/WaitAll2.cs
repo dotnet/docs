@@ -58,7 +58,7 @@ public class Example6
         {
             Console.WriteLine("One or more exceptions occurred:");
             foreach (var ex in ae.InnerExceptions)
-                Console.WriteLine("   {0}: {1}", ex.GetType().Name, ex.Message);
+                Console.WriteLine($"   {ex.GetType().Name}: {ex.Message}");
         }
 
         Console.WriteLine("\nStatus of tasks:");
@@ -68,8 +68,7 @@ public class Example6
             if (t.Exception != null)
             {
                 foreach (var ex in t.Exception.InnerExceptions)
-                    Console.WriteLine("      {0}: {1}", ex.GetType().Name,
-                                      ex.Message);
+                    Console.WriteLine($"      {ex.GetType().Name}: {ex.Message}");
             }
         }
     }

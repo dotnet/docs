@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -38,13 +38,12 @@ public class Example2
         try
         {
             Task.WaitAll(tasks.ToArray());
-            Console.WriteLine("\nMean for all tasks: {0:N2} (N={1:N0})",
-                              (total * 1.0) / n, n);
+            Console.WriteLine($"\nMean for all tasks: {(total * 1.0) / n:N2} (N={n:N0})");
         }
         catch (AggregateException e)
         {
             foreach (var ie in e.InnerExceptions)
-                Console.WriteLine("{0}: {1}", ie.GetType().Name, ie.Message);
+                Console.WriteLine($"{ie.GetType().Name}: {ie.Message}");
         }
     }
 }

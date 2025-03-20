@@ -1,7 +1,7 @@
 ---
 title: Tips for JavaScript and TypeScript Developers
 description: "New to C#, but know JavaScript or TypeScript? Here's a roadmap of what's familiar, features in C# that aren't in JavaScript or TypeScript, and alternatives for features you use that aren't in C#"
-ms.date: 04/03/2024
+ms.date: 03/17/2025
 ---
 # Roadmap for JavaScript and TypeScript developers learning C\#
 
@@ -15,7 +15,7 @@ C#, TypeScript and JavaScript are all members of the C family of languages. The 
 1. ***Event model***: C#'s [`event`](../events-overview.md) syntax is similar to JavaScript's model for document object model (DOM) events.
 1. ***Package manager***: [NuGet](https://nuget.org) is the most common package manager for C# and .NET, similar to npm for JavaScript applications. C# libraries are delivered in [assemblies](../../standard/assembly/index.md).
 
-As you continue learning C#, you'll learn concepts that aren't part of JavaScript. Some of these concepts might be familiar to you if you use TypeScript:
+As you learn C#, you learn concepts that aren't part of JavaScript. Some of these concepts might be familiar to you if you use TypeScript:
 
 1. [***C# Type System***](../fundamentals/types/index.md): C# is a strongly typed language. Every variable has a type, and that type can't change. You define `class` or `struct` types. You can define [`interface`](../fundamentals/types/interfaces.md) definitions that define behavior implemented by other types. TypeScript includes many of these concepts, but because TypeScript is built on JavaScript, the type system isn't as strict.
 1. [***Pattern matching***](../fundamentals/functional/pattern-matching.md): Pattern matching enables concise conditional statements and expressions based on the shape of complex data structures. The [`is` expression](../language-reference/operators/is.md) checks if a variable "is" some pattern. The pattern-based [`switch` expression](../language-reference/operators/switch-expression.md) provides a rich syntax to inspect a variable and make decisions based on its characteristics.
@@ -27,7 +27,7 @@ As you learn more other differences become apparent, but many of those differenc
 
 Some familiar features and idioms from JavaScript and TypeScript aren't available in C#:
 
-1. ***dynamic types***: C# uses static typing. A variable declaration includes the type, and that type can't change. There is a [`dynamic`](../language-reference/builtin-types/reference-types.md#the-dynamic-type) type in C# that provides runtime binding.
+1. ***dynamic types***: C# uses static typing. A variable declaration includes the type, and that type can't change. There's a [`dynamic`](../language-reference/builtin-types/reference-types.md#the-dynamic-type) type in C# that provides runtime binding.
 1. ***Prototypal inheritance***: C# inheritance is part of the type declaration. A C# `class` declaration states any base class. In JavaScript, you can set the `__proto__` property to set the base type on any instance.
 1. ***Interpreted language***: C# code must be compiled before you run it. JavaScript code can be run directly in the browser.
 

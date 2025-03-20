@@ -1,6 +1,9 @@
-﻿using Microsoft.Extensions.AI;
+﻿using Azure.AI.OpenAI;
+using Azure.Identity;
+using Microsoft.Extensions.AI;
 using Microsoft.Extensions.AI.Evaluation;
 using Microsoft.Extensions.AI.Evaluation.Quality;
+using Microsoft.Extensions.Configuration;
 
 namespace TestAI;
 
@@ -30,7 +33,7 @@ public sealed class MyTests
         /// Set up the <see cref="ChatConfiguration"/>,
         /// which includes the <see cref="IChatClient"/> that the
         /// evaluator uses to communicate with the model.
-        s_chatConfiguration = GetOllamaChatConfiguration();
+        s_chatConfiguration = GetAzureOpenAIChatConfiguration();
 
         var chatOptions =
             new ChatOptions
@@ -41,19 +44,25 @@ public sealed class MyTests
 
         // Fetch the response to be evaluated
         // and store it in a static variable.
-        ChatResponse response = await s_chatConfiguration.ChatClient.GetResponseAsync(s_messages, chatOptions);
-        s_response = response;
+        s_response = await s_chatConfiguration.ChatClient.GetResponseAsync(s_messages, chatOptions);
     }
     // </SnippetInitialize>
 
     // <SnippetGetChatConfig>
-    private static ChatConfiguration GetOllamaChatConfiguration()
+    private static ChatConfiguration GetAzureOpenAIChatConfiguration()
     {
-        // Get a chat client for the Ollama endpoint.
-        IChatClient client =
-            new OllamaChatClient(
-                new Uri("http://localhost:11434"),
-                modelId: "phi3:mini");
+        IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<MyTests>().Build();
+
+        string endpoint = config["AZURE_OPENAI_ENDPOINT"];
+        string model = config["AZURE_OPENAI_GPT_NAME"];
+        string tenantId = config["AZURE_TENANT_ID"];
+
+        // Get a chat client for the Azure OpenAI endpoint.
+        AzureOpenAIClient azureClient =
+            new(
+                new Uri(endpoint),
+                new DefaultAzureCredential(new DefaultAzureCredentialOptions() { TenantId = tenantId }));
+        IChatClient client = azureClient.AsChatClient(modelId: model);
 
         return new ChatConfiguration(client);
     }

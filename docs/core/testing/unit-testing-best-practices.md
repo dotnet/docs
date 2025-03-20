@@ -7,7 +7,7 @@ ms.date: 03/14/2025
 ms.custom: devdivchpfy22
 ---
 
-# Unit testing best practices for .NET Core and .NET Standard
+# Unit testing best practices for .NET
 
 There are numerous benefits of writing unit tests. They help with regression, provide documentation, and facilitate good design. But when unit tests are hard to read and brittle, they can wreak havoc on your code base. This article describes some best practices for designing unit tests to support your .NET Core and .NET Standard projects. You learn techniques to keep your tests resilient and easy to understand.
 
@@ -152,7 +152,8 @@ Readability is one of the most important aspects when writing a unit test. Separ
 :::column span="":::
 **Original code**
 
-[!code-csharp[BeforeArranging](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeArranging)] 
+[!code-csharp[BeforeArranging](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeArranging)]
+
 
 :::column-end:::
 :::column span="":::
@@ -195,7 +196,8 @@ Tests that include more information than required to pass the current test have 
 :::column span="":::
 **Original code**
 
-[!code-csharp[BeforeMagicString](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMagicString)] 
+[!code-csharp[BeforeMagicString](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMagicString)]
+
 
 :::column-end:::
 :::column span="":::
@@ -217,7 +219,8 @@ When you write your unit tests, avoid manual string concatenation, logical condi
 :::column span="":::
 **Original code**
 
-[!code-csharp[LogicInTests](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#LogicInTests)] 
+[!code-csharp[LogicInTests](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#LogicInTests)]
+
 
 :::column-end:::
 :::column span="":::
@@ -261,6 +264,7 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 
 :::row:::
 :::column span="2":::
+
 ```csharp
 // More tests...
 ```

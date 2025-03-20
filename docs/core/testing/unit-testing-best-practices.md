@@ -70,7 +70,7 @@ purchase.ValidateOrders();
 Assert.True(purchase.CanBeShipped);
 ```
 
-This code shows a stub referred to as a mock. But in this scenario, the stub is truly a stub. The purpose of the code is to pass the order as a means to instantiate the `Purchase` (the system under test) task. The class name `MockOrder` is misleading because the order is a stub and not a mock.
+This code shows a stub referred to as a mock. But in this scenario, the stub is truly a stub. The purpose of the code is to pass the order as a means to instantiate the `Purchase` (the system under test) object. The class name `MockOrder` is misleading because the order is a stub and not a mock.
 
 The following code shows a more accurate design:
 
@@ -119,7 +119,7 @@ The name of your test should consist of three parts:
 - Scenario under which the method is being tested
 - Expected behavior when the scenario is invoked
 
-Naming standards are important because they help to express the test purpose and application. Tests are more than just making sure your code works. They also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code ant not have to look at the code itself. Moreover, when tests fail, you can see exactly which scenarios don't meet your expectations.
+Naming standards are important because they help to express the test purpose and application. Tests are more than just making sure your code works. They also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code and not have to look at the code itself. Moreover, when tests fail, you can see exactly which scenarios don't meet your expectations.
 
 :::row:::
 :::column span="":::

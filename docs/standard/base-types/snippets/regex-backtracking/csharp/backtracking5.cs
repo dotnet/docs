@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
@@ -15,13 +15,13 @@ public class Example5
         sw = Stopwatch.StartNew();
         result = Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase);
         sw.Stop();
-        Console.WriteLine("Match: {0} in {1}", result, sw.Elapsed);
+        Console.WriteLine($"Match: {result} in {sw.Elapsed}");
 
         string behindPattern = @"^[0-9A-Z][-.\w]*(?<=[0-9A-Z])@";
         sw = Stopwatch.StartNew();
         result = Regex.IsMatch(input, behindPattern, RegexOptions.IgnoreCase);
         sw.Stop();
-        Console.WriteLine("Match with Lookbehind: {0} in {1}", result, sw.Elapsed);
+        Console.WriteLine($"Match with Lookbehind: {result} in {sw.Elapsed}");
     }
 }
 // The example displays output similar to the following:

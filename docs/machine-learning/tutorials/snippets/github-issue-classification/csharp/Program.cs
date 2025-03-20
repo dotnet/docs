@@ -1,4 +1,4 @@
-﻿// <SnippetAddUsings>
+// <SnippetAddUsings>
 using Microsoft.ML;
 using GitHubIssueClassification;
 // </SnippetAddUsings>
@@ -186,5 +186,5 @@ void SaveModelAsFile(MLContext mlContext,DataViewSchema trainingDataViewSchema, 
     mlContext.Model.Save(model, trainingDataViewSchema, _modelPath);
     // </SnippetSaveModel>
 
-    Console.WriteLine("The model is saved to {0}", _modelPath);
+    Console.WriteLine($"The model is saved to {_modelPath}");
 }

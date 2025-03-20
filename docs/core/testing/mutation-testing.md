@@ -70,7 +70,6 @@ public void InvalidPrice_ShouldThrowException()
 }
 ```
 
-
 The preceding code highlights two projects, one for the service that acts as a `PriceCalculator` and the other is the test project.
 
 ## Install the global tool

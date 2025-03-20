@@ -154,7 +154,6 @@ Readability is one of the most important aspects when writing a unit test. Separ
 
 [!code-csharp[BeforeArranging](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeArranging)]
 
-
 :::column-end:::
 :::column span="":::
 **Apply best practice**
@@ -174,7 +173,7 @@ Tests that include more information than required to pass the current test have 
 :::column span="":::
 **Original code**
 
-[!code-csharp[BeforeMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMinimallyPassing)] 
+[!code-csharp[BeforeMinimallyPassing](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMinimallyPassing)]
 
 :::column-end:::
 :::column span="":::
@@ -198,7 +197,6 @@ Tests that include more information than required to pass the current test have 
 
 [!code-csharp[BeforeMagicString](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMagicString)]
 
-
 :::column-end:::
 :::column span="":::
 **Apply best practice**
@@ -220,7 +218,6 @@ When you write your unit tests, avoid manual string concatenation, logical condi
 **Original code**
 
 [!code-csharp[LogicInTests](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#LogicInTests)]
-
 
 :::column-end:::
 :::column span="":::
@@ -255,10 +252,14 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 
 :::row:::
 :::column span="2":::
+
 [!code-csharp[BeforeSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeSetup)]
+
 :::column-end:::
 :::column span="2":::
+
 [!code-csharp[AfterHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterHelperMethod)]
+
 :::column-end:::
 :::row-end:::
 
@@ -268,21 +269,27 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 ```csharp
 // More tests...
 ```
+
 :::column-end:::
 :::column span="2":::
 
 ```csharp
 // More tests...
 ```
+
 :::column-end:::
 :::row-end:::
 
 :::row:::
 :::column span="2":::
+
 [!code-csharp[BeforeHelperMethod](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeHelperMethod)]
+
 :::column-end:::
 :::column span="2":::
+
 [!code-csharp[AfterSetup](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/after/StringCalculatorTests.cs#AfterSetup)]
+
 :::column-end:::
 :::row-end:::
 
@@ -300,7 +307,7 @@ Multiple Act tasks need to be individually asserted, and you can't guarantee tha
 :::column span="":::
 **Original code**
 
-[!code-csharp[BeforeMultipleAsserts](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMultipleAsserts)] 
+[!code-csharp[BeforeMultipleAsserts](../../../samples/snippets/core/testing/unit-testing-best-practices/csharp/before/StringCalculatorTests.cs#BeforeMultipleAsserts)]
 
 :::column-end:::
 :::column span="":::

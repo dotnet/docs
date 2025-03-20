@@ -3,7 +3,7 @@ title: Best practices for writing unit tests
 description: Learn best practices for writing unit tests that drive code quality and resilience for .NET Core and .NET Standard projects.
 author: jpreese
 ms.author: wiwagn
-ms.date: 03/14/2025
+ms.date: 03/20/2025
 ms.custom: devdivchpfy22
 ---
 
@@ -270,6 +270,7 @@ In unit testing frameworks, the `Setup` attribute is called before each and ever
 ```
 :::column-end:::
 :::column span="2":::
+
 ```csharp
 // More tests...
 ```

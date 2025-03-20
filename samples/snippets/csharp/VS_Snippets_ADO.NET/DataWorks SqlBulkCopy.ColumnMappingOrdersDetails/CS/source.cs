@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -31,9 +31,7 @@ static class Program
                 connection);
             long countStartHeader = Convert.ToInt32(
                 countRowHeader.ExecuteScalar());
-            Console.WriteLine(
-                "Starting row count for Header table = {0}",
-                countStartHeader);
+            Console.WriteLine($"Starting row count for Header table = {countStartHeader}");
 
             // Perform an initial count on the destination
             // table with different column positions.
@@ -42,9 +40,7 @@ static class Program
                 connection);
             long countStartDetail = Convert.ToInt32(
                 countRowDetail.ExecuteScalar());
-            Console.WriteLine(
-                "Starting row count for Detail table = {0}",
-                countStartDetail);
+            Console.WriteLine($"Starting row count for Detail table = {countStartDetail}");
 
             // Get data from the source table as a SqlDataReader.
             // The Sales.SalesOrderHeader and Sales.SalesOrderDetail
@@ -148,12 +144,10 @@ static class Program
                 // tables to see how many rows were added.
                 long countEndHeader = Convert.ToInt32(
                     countRowHeader.ExecuteScalar());
-                Console.WriteLine("{0} rows were added to the Header table.",
-                    countEndHeader - countStartHeader);
+                Console.WriteLine($"{countEndHeader - countStartHeader} rows were added to the Header table.");
                 long countEndDetail = Convert.ToInt32(
                     countRowDetail.ExecuteScalar());
-                Console.WriteLine("{0} rows were added to the Detail table.",
-                    countEndDetail - countStartDetail);
+                Console.WriteLine($"{countEndDetail - countStartDetail} rows were added to the Detail table.");
                 Console.WriteLine("Press Enter to finish.");
                 Console.ReadLine();
             }

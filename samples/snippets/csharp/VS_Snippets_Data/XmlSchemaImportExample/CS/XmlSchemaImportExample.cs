@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Xml;
 using System.Xml.Schema;
@@ -56,13 +56,13 @@ class XmlSchemaImportExample
         {
             if (external.SchemaLocation != null)
             {
-                Console.WriteLine("External SchemaLocation: {0}", external.SchemaLocation);
+                Console.WriteLine($"External SchemaLocation: {external.SchemaLocation}");
             }
 
             if (external is XmlSchemaImport)
             {
                 XmlSchemaImport import = external as XmlSchemaImport;
-                Console.WriteLine("Imported namespace: {0}", import.Namespace);
+                Console.WriteLine($"Imported namespace: {import.Namespace}");
             }
 
             if (external.Schema != null)

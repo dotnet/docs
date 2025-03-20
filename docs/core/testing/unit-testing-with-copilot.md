@@ -5,7 +5,7 @@ description: How to generate unit tests and test projects in C# using the xUnit 
 ms.date: 01/12/2025
 ---
 
-# Generate Unit Tests with GitHub Copilot and Visual Studio
+# Generate unit tests with GitHub Copilot
 
 In this article, you explore how to generate unit tests and test projects in C# using the xUnit framework with the help of Visual Studio commands and GitHub Copilot.
 

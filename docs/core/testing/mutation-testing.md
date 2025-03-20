@@ -70,6 +70,11 @@ public void InvalidPrice_ShouldThrowException()
 }
 ```
 
+
+The preceding code highlights two projects, one for the service that acts as a `PriceCalculator` and the other is the test project.
+
+## Install the global tool
+
 First, install **Stryker.NET**.
 To do this, you need to execute the command:
 

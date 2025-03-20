@@ -10,7 +10,7 @@ The C# language is the most popular language for the [.NET platform](../index.ym
 
 C# is a cross-platform general purpose language that makes developers productive while writing highly performant code. With millions of developers, C# is the most popular .NET language. C# has broad support in the ecosystem and all .NET [workloads](../../standard/glossary.md#workload). Based on object-oriented principles, it incorporates many features from other paradigms, not least functional programming. Low-level features support high-efficiency scenarios without writing unsafe code. Most of the .NET runtime and libraries are written in C#, and advances in C# often benefit all .NET developers.
 
-C# is in the C family of languages. [C# syntax](../language-reference/keywords/index.md) is familiar if you used C, C++, JavaScript, TypeScript, or Java. Like all languages in the C family, semi-colons (`;`) define the end of statements. C# identifiers are case-sensitive. C# has the same use of braces, `{` and `}`, control statements like `if`, `else` and `switch`, and looping constructs like `for`, and `while`. C# also has a `foreach` statement for any collection type.
+C# is in the C family of languages. [C# syntax](../language-reference/keywords/index.md) is familiar if you used C, C++, JavaScript, TypeScript, or Java. Like C and C++, semi-colons (`;`) define the end of statements. C# identifiers are case-sensitive. C# has the same use of braces, `{` and `}`, control statements like `if`, `else` and `switch`, and looping constructs like `for`, and `while`. C# also has a `foreach` statement for any collection type.
 
 ## Hello world
 

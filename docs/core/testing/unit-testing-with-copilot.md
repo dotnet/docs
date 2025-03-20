@@ -62,9 +62,13 @@ After a few seconds, Visual Studio will pull in the necessary packages, and we w
 
 ## Generate the tests themselves
 
-* Select the method being tested again.
-* Right-click - Ask Copilot.
-* Enter a simple prompt, such as: <br> `generate unit tests using xunit, nsubstitute and insert the result into ProductServiceTests`</br> You need to select your test class using #. 
+- Select the method being tested again.
+- Right-click - **Ask Copilot**.
+- Enter a simple prompt, such as:
+
+  "generate unit tests using xunit, nsubstitute and insert the result into #ProductServiceTests file."
+  
+  You need to select your test class when you type the `#` character.
 
 > [!TIP]
 > For quick search, it's desirable that `ProductServiceTests` is open in a separate tab.
@@ -73,8 +77,8 @@ After a few seconds, Visual Studio will pull in the necessary packages, and we w
 
 Execute the prompt, click **Accept**, and Copilot generates the test code. After that, it remains to install the necessary packages.
 
-When the packages are installed, the tests can be run. This example worked on the first try: Copilot knows very well how to work with NSubstitute, and all dependencies were defined through interfaces. 
+When the packages are installed, the tests can be run. This example worked on the first try: Copilot knows very well how to work with NSubstitute, and all dependencies were defined through interfaces.
 
 :::image type="content" source="media/test-mehod-stub.png" lightbox="media/test-mehod-stub.png" alt-text="Generated tests":::
 
-Thus, using **Visual Studio** in combination with **GitHub Copilot** significantly simplifies the process of generating and writing unit tests. 
+Thus, using **Visual Studio** in combination with **GitHub Copilot** significantly simplifies the process of generating and writing unit tests.

@@ -111,6 +111,8 @@ Stryker supports several types of mutations:
 
 For additional mutation types, see the [Stryker.NET: Mutations](https://stryker-mutator.io/docs/stryker-net/mutations) documentation.
 
+## Incremental improvement
+
 If, after changing your code, the unit tests pass successfully, then they aren't sufficiently robust, and the mutant survived.
 After mutation testing, five mutants survive.
 

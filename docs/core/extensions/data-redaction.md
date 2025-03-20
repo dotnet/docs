@@ -134,3 +134,43 @@ Include this section in your JSON config file:
 > [!NOTE]
 > The <xref:Microsoft.Extensions.Compliance.Redaction.HmacRedactor> is still experimental, so the preceding methods will cause the `EXTEXP0002` warningm indicating it's not yet stable.
 > To use it, add `<NoWarn>$(NoWarn);EXTEXP0002</NoWarn>` to your project file or add `#pragma warning disable EXTEXP0002` around the calls to `SetHmacRedactor`.
+
+### Configure a custom redactor
+
+To create a custom redactor, define a subclass that inherits from <xref:Microsoft.Extensions.Compliance.Redaction.Redactor>:
+
+```csharp
+public sealed class StarRedactor : Redactor
+
+public class StarRedactor : Redactor
+{
+    private const string Stars = "****";
+
+    public override int GetRedactedLength(ReadOnlySpan<char> input) => Stars.Length;
+
+    public override int Redact(ReadOnlySpan<char> source, Span<char> destination)
+    {
+        Stars.CopyTo(destination);
+
+        return Stars.Length;
+    }
+}
+```
+
+### Create a custom redactor provider
+
+The <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider> interface provides instances of redactors based on data classification. To create a custom redactor provider, inherit from <xref:Microsoft.Extensions.Compliance.Redaction.IRedactorProvider> as shown in the following example:
+
+```csharp
+using Microsoft.Extensions.Compliance.Classification;
+using Microsoft.Extensions.Compliance.Redaction;
+
+public sealed class StarRedactorProvider : IRedactorProvider
+{
+    private static readonly StarRedactor _starRedactor = new();
+
+    public static StarRedactorProvider Instance { get; } = new();
+
+    public Redactor GetRedactor(DataClassificationSet classifications) => _starRedactor;
+}
+```

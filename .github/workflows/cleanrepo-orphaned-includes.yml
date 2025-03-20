@@ -35,7 +35,7 @@ jobs:
 
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e
+        uses: dotnet/actions-create-pull-request@v4
         with:
           branch: cleanrepo-orphaned-includes
           title: "Monthly chores: Delete orphaned include files"

@@ -9,7 +9,7 @@ ms.date: 01/12/2025
 
 In this article, you explore how to generate unit tests and test projects in C# using the xUnit framework with the help of Visual Studio commands and GitHub Copilot.
 
-## Generate a test project and a stub method
+## Generate a test project
 
 Imagine that there's a `ProductService` class with a `GetProductById` method that depends on the `IProductDataStorage` and `ICacheClient` interfaces.
 
@@ -49,7 +49,7 @@ To generate a test project and a stub method, follow these steps:
 In the **Create Unit Tests** dialog, select **xUnit** from the **Test Framework** dropdown menu.
 
 > [!NOTE]
-> The "Create Unit Tests" command defaults to the MSTest framework. However, since this example uses xUnit, you need to install the Visual Studio extension xUnit.net.TestGenerator2022.
+> The **Create Unit Tests** command defaults to the MSTest framework. However, since this example uses xUnit, you need to install the Visual Studio extension [xUnit.net.TestGenerator2022](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xunitnettestgenerator2022).
 
 :::image type="content" source="media/create-unit-test-window.png" lightbox="media/create-unit-test-window.png" alt-text="Create Unit Tests window":::
 
@@ -60,7 +60,7 @@ After a few seconds, Visual Studio will pull in the necessary packages, and we w
 
 :::image type="content" source="media/test-mehod-stub.png" lightbox="media/test-mehod-stub.png" alt-text="Generated stub method":::
 
-## Generate the tests themselves:
+## Generate the tests themselves
 
 * Select the method being tested again.
 * Right-click - Ask Copilot.

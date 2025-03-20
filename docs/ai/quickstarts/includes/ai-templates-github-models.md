@@ -105,7 +105,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 # [.NET CLI](#tab/configure-dotnet-cli)
 
 ```dotnetcli
-dotnet user-secrets set AzureOpenAi:Endpoint <your-personal-access-token>
+dotnet user-secrets set GitHubModels:Token <your-personal-access-token>
 ```
 
 ---

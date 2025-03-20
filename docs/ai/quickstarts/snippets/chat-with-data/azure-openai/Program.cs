@@ -1,8 +1,8 @@
 ﻿using Azure.AI.OpenAI;
 using Azure.Identity;
 using Microsoft.Extensions.AI;
-using Microsoft.Extensions.VectorData;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
 using VectorDataAI;
 
@@ -60,26 +60,26 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
 
 // Create and populate the vector store
 var vectorStore = new InMemoryVectorStore();
-var cloudServicesStore = vectorStore.GetCollection<int, CloudService>("cloudServices");
+Microsoft.Extensions.VectorData.IVectorStoreRecordCollection<int, CloudService> cloudServicesStore = vectorStore.GetCollection<int, CloudService>("cloudServices");
 await cloudServicesStore.CreateCollectionIfNotExistsAsync();
 
-foreach (var service in cloudServices)
+foreach (CloudService service in cloudServices)
 {
     service.Vector = await generator.GenerateEmbeddingVectorAsync(service.Description);
     await cloudServicesStore.UpsertAsync(service);
 }
 
 // Convert a search query to a vector and search the vector store
-var query = "Which Azure service should I use to store my Word documents?";
-var queryEmbedding = await generator.GenerateEmbeddingVectorAsync(query);
+string query = "Which Azure service should I use to store my Word documents?";
+ReadOnlyMemory<float> queryEmbedding = await generator.GenerateEmbeddingVectorAsync(query);
 
-var results = await cloudServicesStore.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions()
+VectorSearchResults<CloudService> results =
+    await cloudServicesStore.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions<CloudService>()
 {
-    Top = 1,
-    VectorPropertyName = "Vector"
+    Top = 1
 });
 
-await foreach (var result in results.Results)
+await foreach (VectorSearchResult<CloudService> result in results.Results)
 {
     Console.WriteLine($"Name: {result.Record.Name}");
     Console.WriteLine($"Description: {result.Record.Description}");

@@ -68,9 +68,6 @@ The preceding code:
 - Passes the `socketHandler` to the `resilienceHandler` with the retry logic.
 - Instantiates a shared `HttpClient` given the `resilienceHandler`.
 
-> [!IMPORTANT]
-> The `Microsoft.Extensions.Http.Resilience` library is currently marked as [experimental](../../../csharp/language-reference/attributes/general.md#experimental-attributes) and it might change in the future.
-
 ## See also
 
 - [HTTP support in .NET](http-overview.md)

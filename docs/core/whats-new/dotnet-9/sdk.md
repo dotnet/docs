@@ -111,10 +111,6 @@ The message lines of the warning no longer have the repeated project and locatio
 
 If you have feedback about the terminal logger, you can provide it in the [MSBuild repository](https://github.com/dotnet/msbuild/issues).
 
-## NuGet security audits
-
-Starting in .NET 8, `dotnet restore` [audits NuGet package references for known vulnerabilities](../../tools/dotnet-restore.md#audit-for-security-vulnerabilities). In .NET 9, the default mode has changed from auditing only _direct_ package references to auditing both _direct_ and _transitive_ package references.
-
 ## Faster NuGet dependency resolution for large repos
 
 The NuGet dependency resolver has been overhauled to improve performance and scalability for all `<PackageReference>` projects. Enabled by default, the new algorithm speeds up restore operations without compromising on functionality, strictly adhering to the core dependency resolution rules.

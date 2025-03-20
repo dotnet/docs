@@ -1,6 +1,7 @@
-using System;
+﻿using System;
+using TourOfCsharp;
 
-class Hello
+class Program
 {
     static void Main()
     {

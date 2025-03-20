@@ -167,7 +167,15 @@ For more information about, see [.NET SDK, MSBuild, and Visual Studio versioning
 
 ## Install with Visual Studio Code
 
-Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system. Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension will install .NET for you if it's not already installed.
+Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system.
+
+This [WinGet configuration file](https://builds.dotnet.microsoft.com/dotnet/install/dotnet_basic_config_docs.winget) installs the latest .NET SDK, Visual Studio Code and the C# DevKit. If you already have any of them installed, WinGet will skip that step.
+
+1. Download the file and double-click to run it.
+1. Read the license agreement, type <kbd>y</kbd>, and select <kbd>Enter</kbd> when prompted to accept.
+1. Be on the lookout for a flashing User Account Control (UAC) prompt in your Windows Taskbar, you may need to require administrator-level permissions to install.
+
+Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension will install .NET for you if it's not already installed.
 
 For instructions on installing .NET through Visual Studio Code, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started).
 

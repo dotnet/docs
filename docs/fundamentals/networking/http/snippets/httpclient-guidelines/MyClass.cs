@@ -3,7 +3,7 @@ using Polly;
 
 class MyClass
 {
-    static HttpClient? httpClient;
+    static HttpClient? s_httpClient;
 
     MyClass()
     {
@@ -24,6 +24,6 @@ class MyClass
             InnerHandler = socketHandler,
         };
 
-        httpClient = new HttpClient(resilienceHandler);
+        s_httpClient = new HttpClient(resilienceHandler);
     }
 }

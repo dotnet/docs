@@ -9,11 +9,7 @@ This tutorial shows how to create and run a .NET console application by using Vi
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/) with [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) installed.
-
-  For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
-
-* The [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic-winget.md)]
 
 ## Create the app
 

@@ -9,7 +9,7 @@ ms.date: 01/12/2025
 
 In this article, you explore how to generate unit tests and test projects in C# using the xUnit framework with the help of Visual Studio commands and GitHub Copilot.
 
-## Generate a test project
+## Create a test project
 
 Imagine that there's a `ProductService` class with a `GetProductById` method that depends on the `IProductDataStorage` and `ICacheClient` interfaces.
 

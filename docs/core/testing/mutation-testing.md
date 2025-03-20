@@ -96,7 +96,7 @@ After the tests have run, a report is displayed in the console.
 
 :::image type="content" source="media/stryker-first-report.png" lightbox="media/stryker-first-report.png" alt-text="Stryker first report":::
 
-Now, consider what mutants are and what 'survived' and 'killed' mean. A mutant is a small change in your code that Stryker makes on purpose. The idea is simple: if your tests are good, they should catch the change and fail. If they still pass, your tests might not be strong enough. 
+Now, consider what mutants are and what 'survived' and 'killed' mean. A mutant is a small change in your code that Stryker makes on purpose. The idea is simple: if your tests are good, they should catch the change and fail. If they still pass, your tests might not be strong enough.
 
 In our example, a mutant will be the replacement of the expression `price <= 0`, for example, with `price < 0`, after which unit tests are run.
 

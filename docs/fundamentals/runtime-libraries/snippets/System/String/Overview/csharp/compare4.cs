@@ -1,4 +1,4 @@
-﻿// <Snippet21>
+// <Snippet21>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -13,30 +13,20 @@ public class CompareStringSample
       
       // Set the current culture to Danish in Denmark.
       Thread.CurrentThread.CurrentCulture = new CultureInfo("da-DK");
-      Console.WriteLine("Current culture: {0}", 
-                        CultureInfo.CurrentCulture.Name);
-      Console.WriteLine("Comparison of {0} with {1}: {2}", 
-                        str1, str2, String.Compare(str1, str2));
-      Console.WriteLine("Comparison of {0} with {1}: {2}\n", 
-                        str2, str3, String.Compare(str2, str3));
+      Console.WriteLine($"Current culture: {CultureInfo.CurrentCulture.Name}");
+      Console.WriteLine($"Comparison of {str1} with {str2}: {String.Compare(str1, str2)}");
+      Console.WriteLine($"Comparison of {str2} with {str3}: {String.Compare(str2, str3)}\n");
       
       // Set the current culture to English in the U.S.
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
-      Console.WriteLine("Current culture: {0}", 
-                        CultureInfo.CurrentCulture.Name);
-      Console.WriteLine("Comparison of {0} with {1}: {2}", 
-                        str1, str2, String.Compare(str1, str2));
-      Console.WriteLine("Comparison of {0} with {1}: {2}\n", 
-                        str2, str3, String.Compare(str2, str3));
+      Console.WriteLine($"Current culture: {CultureInfo.CurrentCulture.Name}");
+      Console.WriteLine($"Comparison of {str1} with {str2}: {String.Compare(str1, str2)}");
+      Console.WriteLine($"Comparison of {str2} with {str3}: {String.Compare(str2, str3)}\n");
       
       // Perform an ordinal comparison.
       Console.WriteLine("Ordinal comparison");
-      Console.WriteLine("Comparison of {0} with {1}: {2}", 
-                        str1, str2, 
-                        String.Compare(str1, str2, StringComparison.Ordinal));
-      Console.WriteLine("Comparison of {0} with {1}: {2}", 
-                        str2, str3, 
-                        String.Compare(str2, str3, StringComparison.Ordinal));
+      Console.WriteLine($"Comparison of {str1} with {str2}: {String.Compare(str1, str2, StringComparison.Ordinal)}");
+      Console.WriteLine($"Comparison of {str2} with {str3}: {String.Compare(str2, str3, StringComparison.Ordinal)}");
    }
 }
 // The example displays the following output:

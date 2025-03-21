@@ -1,4 +1,4 @@
-﻿// Showing all the things D(A) can bind to.
+// Showing all the things D(A) can bind to.
 //
 //<Snippet1>
 using System;
@@ -26,13 +26,12 @@ public class C1
 
     public void M2()
     {
-        Console.WriteLine("Instance method M2() on C1:  this.id = {0}",
-            this.id);
+        Console.WriteLine($"Instance method M2() on C1:  this.id = {this.id}");
     }
 
     public static void M3(C1 c)
     {
-        Console.WriteLine("Static method M3(C1 c) on C1:  c.ID = {0}", c.ID);
+        Console.WriteLine($"Static method M3(C1 c) on C1:  c.ID = {c.ID}");
     }
 
     public static void M4(C1 c1, C1 c2)
@@ -46,19 +45,17 @@ public class F
 {
     public void M1(C1 c)
     {
-        Console.WriteLine("Instance method M1(C1 c) on F:  c.ID = {0}",
-            c.ID);
+        Console.WriteLine($"Instance method M1(C1 c) on F:  c.ID = {c.ID}");
     }
 
     public static void M3(C1 c)
     {
-        Console.WriteLine("Static method M3(C1 c) on F:  c.ID = {0}", c.ID);
+        Console.WriteLine($"Static method M3(C1 c) on F:  c.ID = {c.ID}");
     }
 
     public static void M4(F f, C1 c)
     {
-        Console.WriteLine("Static method M4(F f, C1 c) on F:  c.ID = {0}",
-            c.ID);
+        Console.WriteLine($"Static method M4(F f, C1 c) on F:  c.ID = {c.ID}");
     }
 }
 

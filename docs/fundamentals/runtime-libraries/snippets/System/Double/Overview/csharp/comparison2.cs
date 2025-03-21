@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 
 public class Example1
@@ -9,9 +9,8 @@ public class Example1
         value1 = Math.Sqrt(Math.Pow(value1, 2));
         double value2 = Math.Pow(value1 * 3.51, 2);
         value2 = Math.Sqrt(value2) / 3.51;
-        Console.WriteLine("{0} = {1}: {2}\n",
-                          value1, value2, value1.Equals(value2));
-        Console.WriteLine("{0:R} = {1:R}", value1, value2);
+        Console.WriteLine($"{value1} = {value2}: {value1.Equals(value2)}\n");
+        Console.WriteLine($"{value1:R} = {value2:R}");
     }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example6
 {
@@ -13,12 +13,12 @@ public class Example6
     {
         // <Snippet11>
         string[] names = Enum.GetNames(typeof(ArrivalStatus));
-        Console.WriteLine("Members of {0}:", typeof(ArrivalStatus).Name);
+        Console.WriteLine($"Members of {typeof(ArrivalStatus).Name}:");
         Array.Sort(names);
         foreach (var name in names)
         {
             ArrivalStatus status = (ArrivalStatus)Enum.Parse(typeof(ArrivalStatus), name);
-            Console.WriteLine("   {0} ({0:D})", status);
+            Console.WriteLine($"   {status} ({status:D})");
         }
         // The example displays the following output:
         //       Members of ArrivalStatus:
@@ -33,10 +33,10 @@ public class Example6
     {
         // <Snippet12>
         var values = Enum.GetValues(typeof(ArrivalStatus));
-        Console.WriteLine("Members of {0}:", typeof(ArrivalStatus).Name);
+        Console.WriteLine($"Members of {typeof(ArrivalStatus).Name}:");
         foreach (ArrivalStatus status in values)
         {
-            Console.WriteLine("   {0} ({0:D})", status);
+            Console.WriteLine($"   {status} ({status:D})");
         }
         // The example displays the following output:
         //       Members of ArrivalStatus:

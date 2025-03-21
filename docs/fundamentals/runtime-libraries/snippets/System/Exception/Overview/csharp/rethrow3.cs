@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 static class Library
@@ -48,17 +48,16 @@ public class RethrowEx3
         }
         catch (ArgumentNullException e)
         {
-            Console.WriteLine("An exception ({0}) occurred.",
-                              e.GetType().Name);
-            Console.WriteLine("   Message:\n{0}", e.Message);
-            Console.WriteLine("   Stack Trace:\n   {0}", e.StackTrace);
+            Console.WriteLine($"An exception ({e.GetType().Name}) occurred.");
+            Console.WriteLine($"   Message:\n{e.Message}");
+            Console.WriteLine($"   Stack Trace:\n   {e.StackTrace}");
             Exception ie = e.InnerException;
             if (ie != null)
             {
                 Console.WriteLine("   The Inner Exception:");
-                Console.WriteLine("      Exception Name: {0}", ie.GetType().Name);
-                Console.WriteLine("      Message: {0}\n", ie.Message);
-                Console.WriteLine("      Stack Trace:\n   {0}\n", ie.StackTrace);
+                Console.WriteLine($"      Exception Name: {ie.GetType().Name}");
+                Console.WriteLine($"      Message: {ie.Message}\n");
+                Console.WriteLine($"      Stack Trace:\n   {ie.StackTrace}\n");
             }
         }
         // The example displays the following output:

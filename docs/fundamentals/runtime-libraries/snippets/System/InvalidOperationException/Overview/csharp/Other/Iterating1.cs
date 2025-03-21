@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 
@@ -10,8 +10,8 @@ public class IteratingEx1
         foreach (var number in numbers)
         {
             int square = (int)Math.Pow(number, 2);
-            Console.WriteLine("{0}^{1}", number, square);
-            Console.WriteLine("Adding {0} to the collection...\n", square);
+            Console.WriteLine($"{number}^{square}");
+            Console.WriteLine($"Adding {square} to the collection...\n");
             numbers.Add(square);
         }
     }

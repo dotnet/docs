@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -10,8 +10,7 @@ public class Example
       for (int ctr = 0; ctr < 10; ctr++)
          value2 += .1f;
          
-      Console.WriteLine("{0:R} = {1:R}: {2}", value1, value2,
-                        HasMinimalDifference(value1, value2, 1));
+      Console.WriteLine($"{value1:R} = {value2:R}: {HasMinimalDifference(value1, value2, 1)}");
    }
 
    public static bool HasMinimalDifference(float value1, float value2, int units)

@@ -21,12 +21,12 @@ You can add parameters to a `struct` or `class` declaration to create a *primary
 
 Several rules clarify that these constructors are parameters:
 
-- Primary constructor parameters can't be stored if they aren't needed.
+- Primary constructor parameters might not be stored if they aren't needed.
 - Primary constructor parameters aren't members of the class. For example, a primary constructor parameter named `param` can't be accessed as `this.param`.
 - Primary constructor parameters can be assigned to.
 - Primary constructor parameters don't become properties, except in [record](../../language-reference/builtin-types/record.md) types.
 
-These rules are the same for parameters to any method, including other constructor declarations.
+These rules are the same rules already defined for parameters to any method, including other constructor declarations.
 
 Here are the most common uses for a primary constructor parameter:
 
@@ -34,7 +34,7 @@ Here are the most common uses for a primary constructor parameter:
 - Initialize a member field or property
 - Reference the constructor parameter in an instance member
 
-Every other constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. This rule ensures that primary constructor parameters are assigned anywhere in the body of the type.
+Every other constructor for a class **must** call the primary constructor, directly or indirectly, through a `this()` constructor invocation. This rule ensures that primary constructor parameters are assigned everywhere in the body of the type.
 
 ## Initialize immutable properties or fields
 
@@ -42,7 +42,7 @@ The following code initializes two readonly (immutable) properties that are comp
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="ReadonlyStruct":::
 
-This example uses a primary constructor to initialize calculated readonly properties. The field initializers for `Magnitude` and `Direction` properties use the primary constructor parameters. The primary constructor parameters aren't used anywhere else in the struct. The code creates a struct as if it were written in the following manner:
+This example uses a primary constructor to initialize calculated readonly properties. The field initializers for the `Magnitude` and `Direction` properties use the primary constructor parameters. The primary constructor parameters aren't used anywhere else in the struct. The code creates a struct as if it were written in the following manner:
 
 :::code source="./snippets/primary-constructors/Distance.cs" id="StructOneLowered":::
 
@@ -98,7 +98,7 @@ One derived class might represent a checking account:
 
 The derived `CheckingAccount` class has a primary constructor that takes all the parameters needed in the base class, and another parameter with a default value. The primary constructor calls the base constructor with the `: BankAccount(accountID, owner)` syntax. This expression specifies both the type for the base class and the arguments for the primary constructor.
 
-Your derived class isn't required to use a primary constructor. You can create a constructor in the derived class that invokes the primary constructor for base class, as shown in the following example:
+Your derived class isn't required to use a primary constructor. You can create a constructor in the derived class that invokes the primary constructor for the base class, as shown in the following example:
 
 :::code source="./snippets/primary-constructors/BankAccount.cs" id="NoPrimaryConstructor":::
 

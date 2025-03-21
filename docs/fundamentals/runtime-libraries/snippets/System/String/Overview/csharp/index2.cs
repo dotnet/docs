@@ -14,7 +14,7 @@ public class Example11
             nWords++;              
       }
       Console.WriteLine($"""
-      The sentence
+       The sentence
          {s1}
        has {nWords} words.
        """);

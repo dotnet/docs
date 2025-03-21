@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography.X509Certificates;
@@ -81,19 +81,19 @@ namespace WsHttp
                 sh.Open();
 
                 string address = sh.Description.Endpoints[0].ListenUri.AbsoluteUri;
-                Console.WriteLine("Listening @ {0}", address);
+                Console.WriteLine($"Listening @ {address}");
                 Console.WriteLine("Press enter to close the service");
                 Console.ReadLine();
                 sh.Close();
             }
             catch (CommunicationException ce)
             {
-                Console.WriteLine("A communication error occurred: {0}", ce.Message);
+                Console.WriteLine($"A communication error occurred: {ce.Message}");
                 Console.WriteLine();
             }
             catch (System.Exception exc)
             {
-                Console.WriteLine("An unforeseen error occurred: {0}", exc.Message);
+                Console.WriteLine($"An unforeseen error occurred: {exc.Message}");
                 Console.ReadLine();
             }
             //</snippet3>

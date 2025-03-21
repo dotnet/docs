@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Activities;
 using System.Activities.Statements;
@@ -267,8 +267,7 @@ namespace CompensationExample
                 }
                 else
                 {
-                    Console.WriteLine("Workflow completed successfully with status: {0}.",
-                        e.CompletionState);
+                    Console.WriteLine($"Workflow completed successfully with status: {e.CompletionState}.");
                 }
 
                 syncEvent.Set();

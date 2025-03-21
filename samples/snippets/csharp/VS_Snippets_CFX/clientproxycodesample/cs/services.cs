@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -18,7 +18,7 @@ namespace Microsoft.WCF.Documentation
   {
     public string  SampleMethod(string msg)
     {
-      Console.WriteLine("The caller said: \"{0}\"", msg);
+      Console.WriteLine($"The caller said: \"{msg}\"");
  	    return "The service greets you: " + msg;
     }
   }

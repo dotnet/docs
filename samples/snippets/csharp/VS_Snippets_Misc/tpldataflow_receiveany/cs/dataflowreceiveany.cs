@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Threading;
 using System.Threading.Tasks.Dataflow;
@@ -61,7 +61,7 @@ class DataflowReceiveAny
       cts.Cancel();
 
       // Print the result to the console.
-      Console.WriteLine("The solution is {0}.", result);
+      Console.WriteLine($"The solution is {result}.");
 
       cts.Dispose();
    }

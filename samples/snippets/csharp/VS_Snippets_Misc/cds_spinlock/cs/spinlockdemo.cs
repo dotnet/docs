@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 using System;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
@@ -50,8 +50,7 @@ namespace SpinLockDemo
                 }
                 catch (LockRecursionException ex)
                 {
-                    Console.WriteLine("Thread {0} attempted to reenter the lock",
-                                       Thread.CurrentThread.ManagedThreadId);
+                    Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} attempted to reenter the lock");
                     throw;
                 }
                 finally
@@ -141,7 +140,7 @@ namespace SpinLockDemo
                       }
                   );
               sw.Stop();
-              Console.WriteLine("elapsed ms with spinlock: {0}", sw.ElapsedMilliseconds);
+              Console.WriteLine($"elapsed ms with spinlock: {sw.ElapsedMilliseconds}");
         }
 
         static void UpdateWithLock(Data d, int i)
@@ -171,7 +170,7 @@ namespace SpinLockDemo
                     }
                 );
             sw.Stop();
-            Console.WriteLine("elapsed ms with lock: {0}", sw.ElapsedMilliseconds);
+            Console.WriteLine($"elapsed ms with lock: {sw.ElapsedMilliseconds}");
         }
     }
     //</snippet02>
@@ -188,7 +187,7 @@ namespace SpinLockDemo
             //}
             // );
             //sw.Stop();
-            // Console.WriteLine("elapsed ms with lock: {0}", sw.ElapsedMilliseconds);
+            // Console.WriteLine($"elapsed ms with lock: {sw.ElapsedMilliseconds}");
         }
 
         static void ParallelForwithSpinLock()

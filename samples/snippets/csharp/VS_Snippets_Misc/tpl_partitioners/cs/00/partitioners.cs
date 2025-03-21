@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -72,7 +72,7 @@ namespace PartitionerTests
             }
 
              );
-            Console.WriteLine("elapsed for Parallel.For: {0}", sw.ElapsedMilliseconds);
+            Console.WriteLine($"elapsed for Parallel.For: {sw.ElapsedMilliseconds}");
 
             sw = Stopwatch.StartNew();
 
@@ -84,7 +84,7 @@ namespace PartitionerTests
             {
                 double d = (double)x * Math.PI;
             });
-            Console.WriteLine("elapsed for PLINQ with load-balancing: {0}", sw.ElapsedMilliseconds);
+            Console.WriteLine($"elapsed for PLINQ with load-balancing: {sw.ElapsedMilliseconds}");
 
             //  Console.WriteLine("Clearing memory cache");
 
@@ -101,7 +101,7 @@ namespace PartitionerTests
                 double d = (double)x * Math.PI;
             });
 
-            Console.WriteLine("elapsed for PLINQ without load-balancing: {0}", sw.ElapsedMilliseconds);
+            Console.WriteLine($"elapsed for PLINQ without load-balancing: {sw.ElapsedMilliseconds}");
         }
 
         static void TestLoadBalancingCreateMethods()
@@ -303,7 +303,7 @@ namespace PartitionerTests
         IEnumerator<int> GetItemsForPartition(int start, int end)
         {
             // For demonstration purposes. Each thread receives its own enumerator.
-            Console.WriteLine("called on thread {0}", Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine($"called on thread {Thread.CurrentThread.ManagedThreadId}");
             for (int i = start; i < end; i++)
                 yield return source[i];
         }
@@ -322,7 +322,7 @@ namespace PartitionerTests
                         select ProcessData(n);
 
             foreach (var v in query) { }
-            Console.WriteLine("Processing time with custom partitioner {0}", sw.ElapsedMilliseconds);
+            Console.WriteLine($"Processing time with custom partitioner {sw.ElapsedMilliseconds}");
 
             var source2 = Enumerable.Range(0, 10000).ToArray();
 
@@ -332,7 +332,7 @@ namespace PartitionerTests
                         select ProcessData(n);
 
             foreach (var v in query2) { }
-            Console.WriteLine("Processing time with default partitioner {0}", sw.ElapsedMilliseconds);
+            Console.WriteLine($"Processing time with default partitioner {sw.ElapsedMilliseconds}");
         }
 
         // Consistent processing time for measurement purposes.
@@ -390,12 +390,12 @@ namespace PartitionerTests
             int[] boundaries = new int[partitions];
             boundaries[0] = 0;
 
-            //   Console.WriteLine("totalWork = {0}", sourceLength);
+            //   Console.WriteLine($"totalWork = {sourceLength}");
             double partitionSize = (sourceLength / partitions);
             double location = 0;
             for (int i = 0; i < boundaries.Length; i++)
             {
-                Console.WriteLine("length = {0}", location);
+                Console.WriteLine($"length = {location}");
                 boundaries[i] = (int)(Math.Floor(Math.Sqrt(location) * 100));
                 location = partitionSize * (i + 1);
             }
@@ -417,7 +417,7 @@ namespace PartitionerTests
             for (int i = 1; i < boundaries.Length; i++)
             {
                 double area = partitionSize * (ulong)(i);
-                Console.WriteLine("area = {0}", area);
+                Console.WriteLine($"area = {area}");
                 boundaries[i] = (int)Math.Floor(Math.Sqrt((2 * area) / slope));
             }
             Console.WriteLine("len={0} height={1} area={2} hyp={3:###.##}", height, len, height * len, Math.Sqrt(height * height + len * len));

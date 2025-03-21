@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 using System;
 using System.IO;
 using System.IO.Pipes;
@@ -16,8 +16,7 @@ class PipeServer
             new AnonymousPipeServerStream(PipeDirection.Out,
             HandleInheritability.Inheritable))
         {
-            Console.WriteLine("[SERVER] Current TransmissionMode: {0}.",
-                pipeServer.TransmissionMode);
+            Console.WriteLine($"[SERVER] Current TransmissionMode: {pipeServer.TransmissionMode}.");
 
             // Pass the client process a handle to the server.
             pipeClient.StartInfo.Arguments =
@@ -45,7 +44,7 @@ class PipeServer
             // or disconnected.
             catch (IOException e)
             {
-                Console.WriteLine("[SERVER] Error: {0}", e.Message);
+                Console.WriteLine($"[SERVER] Error: {e.Message}");
             }
         }
 

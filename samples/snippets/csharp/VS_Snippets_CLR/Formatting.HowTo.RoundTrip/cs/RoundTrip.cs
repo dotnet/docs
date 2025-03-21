@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.IO;
 
@@ -28,7 +28,7 @@ public class Class1
                           dateToSave.Kind.ToString(),
                           dateString);
         outFile.WriteLine(dateString);
-        Console.WriteLine("Wrote {0} to {1}.", dateString, fileName);
+        Console.WriteLine($"Wrote {dateString} to {fileName}.");
         outFile.Close();
 
         // Restore DateTime value.
@@ -66,7 +66,7 @@ public class Class1
         Console.WriteLine("Converted {0} to {1}.", dateToSave.ToString(),
                           dateString);
         outFile.WriteLine(dateString);
-        Console.WriteLine("Wrote {0} to {1}.", dateString, fileName);
+        Console.WriteLine($"Wrote {dateString} to {fileName}.");
         outFile.Close();
 
         // Restore DateTime value.

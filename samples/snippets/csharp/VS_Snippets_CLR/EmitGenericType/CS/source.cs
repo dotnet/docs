@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -58,8 +58,7 @@ public class Example
             myModule.DefineType("Sample", TypeAttributes.Public);
         //</Snippet4>
 
-        Console.WriteLine("Type 'Sample' is generic: {0}",
-            myType.IsGenericType);
+        Console.WriteLine($"Type 'Sample' is generic: {myType.IsGenericType}");
 
         // Define type parameters for the type. Until you do this,
         // the type is not generic, as the preceding and following
@@ -77,8 +76,7 @@ public class Example
         GenericTypeParameterBuilder TSecond = typeParams[1];
         //</Snippet5>
 
-        Console.WriteLine("Type 'Sample' is generic: {0}",
-            myType.IsGenericType);
+        Console.WriteLine($"Type 'Sample' is generic: {myType.IsGenericType}");
 
         // Apply constraints to the type parameters.
         //
@@ -219,9 +217,7 @@ public class Example
         List<Example> listX =
             (List<Example>) mi.Invoke(null, arguments);
 
-        Console.WriteLine(
-            "\nThere are {0} elements in the List<Example>.",
-            listX.Count);
+        Console.WriteLine($"\nThere are {listX.Count} elements in the List<Example>.");
         //</Snippet10>
 
         DisplayGenericParameters(finished);
@@ -240,8 +236,7 @@ public class Example
         }
 
         Type[] typeParameters = t.GetGenericArguments();
-        Console.WriteLine("\nListing {0} type parameters for type '{1}'.",
-            typeParameters.Length, t);
+        Console.WriteLine($"\nListing {typeParameters.Length} type parameters for type '{t}'.");
 
         foreach( Type tParam in typeParameters )
         {
@@ -251,11 +246,11 @@ public class Example
             {
                 if (c.IsInterface)
                 {
-                    Console.WriteLine("    Interface constraint: {0}", c);
+                    Console.WriteLine($"    Interface constraint: {c}");
                 }
                 else
                 {
-                    Console.WriteLine("    Base type constraint: {0}", c);
+                    Console.WriteLine($"    Base type constraint: {c}");
                 }
             }
 

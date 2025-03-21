@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -82,19 +82,17 @@ public class Example
         // Convert a Double to a Decimal.
         decimal decimalValue = 13956810.96702888123451471211m;
         doubleValue = Convert.ToDouble(decimalValue);
-        Console.WriteLine("{0} converted to {1}.", decimalValue, doubleValue);
+        Console.WriteLine($"{decimalValue} converted to {doubleValue}.");
 
         doubleValue = 42.72;
         try
         {
             int integerValue = Convert.ToInt32(doubleValue);
-            Console.WriteLine("{0} converted to {1}.",
-                                              doubleValue, integerValue);
+            Console.WriteLine($"{doubleValue} converted to {integerValue}.");
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Unable to convert {0} to an integer.",
-                                              doubleValue);
+            Console.WriteLine($"Unable to convert {doubleValue} to an integer.");
         }
         // The example displays the following output:
         //       13956810.96702888123451471211 converted to 13956810.9670289.

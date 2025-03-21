@@ -1,4 +1,4 @@
-﻿// <Snippet18>
+// <Snippet18>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,9 +13,9 @@ public class RTL2Example
         {
             Match match = Regex.Match(input, pattern, RegexOptions.RightToLeft);
             if (match.Success)
-                Console.WriteLine("The date occurs in {0}.", match.Value);
+                Console.WriteLine($"The date occurs in {match.Value}.");
             else
-                Console.WriteLine("{0} does not match.", input);
+                Console.WriteLine($"{input} does not match.");
         }
     }
 }

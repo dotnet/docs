@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 
@@ -154,8 +154,7 @@ public class Example
 
         // Display the capture groups.
         for (int ctr = 0; ctr < results.Count; ctr++)
-            Console.WriteLine("{0} at position {1}",
-                              results[ctr], matchposition[ctr]);
+            Console.WriteLine($"{results[ctr]} at position {matchposition[ctr]}");
         // The example displays the following output:
         //       abc at position 3
         //       ab at position 3

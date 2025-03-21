@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection.Emit;
 using System.Reflection;
@@ -128,7 +128,7 @@ public class Worker : MarshalByRefObject
         {
             Test2 t = (Test2) meth.CreateDelegate(typeof(Test2));
             char first = t("Hello, World!");
-            Console.WriteLine("{0} is the first character.", first);
+            Console.WriteLine($"{first} is the first character.");
         }
         catch (Exception ex)
         {

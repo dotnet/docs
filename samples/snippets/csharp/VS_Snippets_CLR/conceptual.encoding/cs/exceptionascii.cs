@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Text;
 
@@ -59,7 +59,7 @@ public class Example
          foreach (byte unknown in e.BytesUnknown)
             Console.Write("0x{0:X2} ");
 
-         Console.WriteLine("at index {0}", e.Index);
+         Console.WriteLine($"at index {e.Index}");
       }
    }
 }

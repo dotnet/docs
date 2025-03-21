@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,12 +13,10 @@ public class Example
 
       string input = "The gray wolf blended in among the grey rocks.";
       foreach (Match match in Regex.Matches(input, pattern1))
-         Console.WriteLine("'{0}' found at position {1}",
-                           match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}");
       Console.WriteLine();
       foreach (Match match in Regex.Matches(input, pattern2))
-         Console.WriteLine("'{0}' found at position {1}",
-                           match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}");
    }
 }
 // The example displays the following output:

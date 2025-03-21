@@ -158,7 +158,7 @@ let f (x: Tensor) = sin (sqrt x)
 printfn $"{f (dsharp.tensor 1.2)}"
 ```
 
-By default ````#r "nuget: ...." ```` will not use build targets from the package being referenced during restore.  There is a usepackagetargets option to enable the use of these build targets when required, only add usepackagetargets=true if the referenced package was authored to require it during restore.
+By default ````#r "nuget: ...."```` will not use build targets from the package being referenced during restore.  There is a usepackagetargets option to enable the use of these build targets when required, only add usepackagetargets=true if the referenced package was authored to require it during restore.
 examples:
 
 ```fsharp

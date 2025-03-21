@@ -19,6 +19,6 @@ On Windows, this [WinGet configuration file](https://builds.dotnet.microsoft.com
 
 On other platforms, you need to install each of these components separately.
 
-1. Download the recommended installer from the [.NET SDK download page](https://dotnet.microsoft.com/download)and double-click to run it. The download page detects your platform and recommends the latest installer for your platform.
+1. Download the recommended installer from the [.NET SDK download page](https://dotnet.microsoft.com/download) and double-click to run it. The download page detects your platform and recommends the latest installer for your platform.
 1. Download the latest installer from the [Visual Studio Code](https://code.visualstudio.com) home page and double click to run it. That page also detects your platform and the link should be correct for your system.
 1. Click the "Install" button on the [C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension page. That opens Visual Studio code, and asks if you want to install or enable the extension. Select "install".

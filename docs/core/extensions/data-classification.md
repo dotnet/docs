@@ -13,21 +13,21 @@ Data classification helps you categorize (or classify) data based on its sensiti
 
 In some situations, you might need to specify that data explicitly has no data classification, this is achieved with <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.None?displayProperty=nameWithType>. Similarly, you might need to specify that data classification is unknown—use <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.Unknown?displayProperty=nameWithType> in these cases.
 
-## Install classification package
+## Install the package
 
-To get started, install the [📦 Microsoft.Extensions.Compliance.Classification](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Classification) NuGet package:
+To get started, install the [📦 Microsoft.Extensions.Compliance.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Abstractions) NuGet package:
 
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Compliance.Classification
+dotnet add package Microsoft.Extensions.Compliance.Abstractions
 ```
 
 ### [PackageReference](#tab/package-reference)
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.Extensions.Compliance.Classification"
+  <PackageReference Include="Microsoft.Extensions.Compliance.Abstractions"
                     Version="*" />
 </ItemGroup>
 ```

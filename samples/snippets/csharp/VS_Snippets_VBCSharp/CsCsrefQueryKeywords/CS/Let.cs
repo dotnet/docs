@@ -1,4 +1,4 @@
-﻿namespace LetClause;
+namespace LetClause;
 
 //<snippet28>
 class LetSample1
@@ -27,7 +27,7 @@ class LetSample1
         // Execute the query.
         foreach (var v in earlyBirdQuery)
         {
-            Console.WriteLine("\"{0}\" starts with a vowel", v);
+            Console.WriteLine($"\"{v}\" starts with a vowel");
         }
     }
 }

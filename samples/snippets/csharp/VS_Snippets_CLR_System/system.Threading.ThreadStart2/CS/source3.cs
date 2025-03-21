@@ -8,37 +8,35 @@ using System.Threading;
 public class ThreadWithState
 {
     // State information used in the task.
-    private string boilerplate;
-    private int numberValue;
+    private string _boilerplate;
+    private int _numberValue;
 
     // The constructor obtains the state information.
     public ThreadWithState(string text, int number)
     {
-        boilerplate = text;
-        numberValue = number;
+        _boilerplate = text;
+        _numberValue = number;
     }
 
     // The thread procedure performs the task, such as formatting
     // and printing a document.
     public void ThreadProc()
     {
-        Console.WriteLine(boilerplate, numberValue);
+        Console.WriteLine(_boilerplate, _numberValue);
     }
 }
 
 // Entry point for the example.
-//
 public class Example
 {
     public static void Main()
     {
         // Supply the state information required by the task.
-        ThreadWithState tws = new ThreadWithState(
-            "This report displays the number {0}.", 42);
+        ThreadWithState tws = new("This report displays the number {0}.", 42);
 
         // Create a thread to execute the task, and then
         // start the thread.
-        Thread t = new Thread(new ThreadStart(tws.ThreadProc));
+        Thread t = new(new ThreadStart(tws.ThreadProc));
         t.Start();
         Console.WriteLine("Main thread does some work, then waits.");
         t.Join();
@@ -46,6 +44,7 @@ public class Example
             "Independent task has completed; main thread ends.");
     }
 }
+
 // The example displays the following output:
 //       Main thread does some work, then waits.
 //       This report displays the number 42.

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Text.RegularExpressions;
 
@@ -11,8 +11,7 @@ public class Example
       Match match = Regex.Match(input, pattern);
       while (match.Success)
       {
-         Console.WriteLine("Duplicate '{0}' found at position {1}.",
-                           match.Groups[1].Value, match.Groups[2].Index);
+         Console.WriteLine($"Duplicate '{match.Groups[1].Value}' found at position {match.Groups[2].Index}.");
          match = match.NextMatch();
       }
    }

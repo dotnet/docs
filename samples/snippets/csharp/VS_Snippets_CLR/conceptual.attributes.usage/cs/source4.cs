@@ -1,4 +1,4 @@
-﻿//<snippet21>
+//<snippet21>
 using System;
 using System.Reflection;
 
@@ -29,7 +29,7 @@ class AttributeRetrieval
         if (attribute != null)
         {
             // Print the description of the method attribute
-            Console.WriteLine("Method Attribute: {0}", attribute.Description);
+            Console.WriteLine($"Method Attribute: {attribute.Description}");
         }
         else
         {

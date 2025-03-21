@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.ServiceModel.Channels;
 namespace ProgrammingChannels
@@ -34,10 +34,9 @@ static void RunService()
     //Step4: Reading the request message.
     Message message = request.RequestMessage;
     Console.WriteLine("Message received");
-    Console.WriteLine("Message action: {0}",
-                          message.Headers.Action);
+    Console.WriteLine($"Message action: {message.Headers.Action}");
     string data=message.GetBody<string>();
-    Console.WriteLine("Message content: {0}",data);
+    Console.WriteLine($"Message content: {data}");
     //Send a reply.
     Message replymessage=Message.CreateMessage(
         binding.MessageVersion,

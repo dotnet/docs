@@ -1,4 +1,4 @@
-﻿//<snippet20>
+//<snippet20>
 using System;
 using System.IO;
 using System.CodeDom;
@@ -15,7 +15,7 @@ class Example
         CodeCompileUnit codeUnit = new CodeCompileUnit();
         sourcefile = GenerateCSharpCode(codeUnit);
         exefile = sourcefile.Substring(0, sourcefile.LastIndexOf('.')) + ".exe";
-        Console.WriteLine("outfile: {0}", exefile);
+        Console.WriteLine($"outfile: {exefile}");
         CompileCSharpCode(sourcefile, exefile);
     }
 
@@ -82,8 +82,7 @@ class Example
        if (cr.Errors.Count > 0)
        {
            // Display compilation errors.
-            Console.WriteLine("Errors building {0} into {1}",
-                sourceFile, cr.PathToAssembly);
+            Console.WriteLine($"Errors building {sourceFile} into {cr.PathToAssembly}");
             foreach (CompilerError ce in cr.Errors)
             {
                 Console.WriteLine("  {0}", ce.ToString());
@@ -92,8 +91,7 @@ class Example
         }
         else
         {
-            Console.WriteLine("Source {0} built into {1} successfully.",
-                sourceFile, cr.PathToAssembly);
+            Console.WriteLine($"Source {sourceFile} built into {cr.PathToAssembly} successfully.");
         }
 
         // Return the results of compilation.

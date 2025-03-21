@@ -1,4 +1,4 @@
-﻿//<snippet22>
+//<snippet22>
 using System;
 using System.Runtime.InteropServices;
 
@@ -100,14 +100,12 @@ public class App
 
         Console.WriteLine("\nStructure with array before call:");
         Console.WriteLine(myStruct.flag);
-        Console.WriteLine("{0} {1} {2}", myStruct.vals[0],
-            myStruct.vals[1], myStruct.vals[2]);
+        Console.WriteLine($"{myStruct.vals[0]} {myStruct.vals[1]} {myStruct.vals[2]}");
 
         NativeMethods.TestArrayInStruct(ref myStruct);
         Console.WriteLine("\nStructure with array after call:");
         Console.WriteLine(myStruct.flag);
-        Console.WriteLine("{0} {1} {2}", myStruct.vals[0],
-            myStruct.vals[1], myStruct.vals[2]);
+        Console.WriteLine($"{myStruct.vals[0]} {myStruct.vals[1]} {myStruct.vals[2]}");
     }
 }
 //</snippet24>

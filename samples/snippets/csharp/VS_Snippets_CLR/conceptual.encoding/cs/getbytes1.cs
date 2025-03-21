@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Text;
 
@@ -17,7 +17,7 @@ public class Example
 
       Console.WriteLine("Strings to encode:");
       foreach (var stringValue in strings) {
-         Console.WriteLine("   {0}", stringValue);
+         Console.WriteLine($"   {stringValue}");
 
          int count = asciiEncoding.GetByteCount(stringValue);
          if (count + index >=  bytes.Length)
@@ -35,7 +35,7 @@ public class Example
 
       // Decode Unicode byte array to a string.
       string newString = asciiEncoding.GetString(bytes, 0, index);
-      Console.WriteLine("Decoded: {0}", newString);
+      Console.WriteLine($"Decoded: {newString}");
    }
 
    private static string ShowByteValues(byte[] bytes, int last )

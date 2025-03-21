@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.SqlClient;
 
 static class Program
@@ -50,7 +50,7 @@ static class Program
                 sourceConnection);
             long countStart = Convert.ToInt32(
                 commandRowCount.ExecuteScalar());
-            Console.WriteLine("Starting row count = {0}", countStart);
+            Console.WriteLine($"Starting row count = {countStart}");
 
             //  Get data from the source table as a SqlDataReader.
             SqlCommand commandSourceData = new(
@@ -87,8 +87,8 @@ static class Program
             // table to see how many rows were added.
             long countEnd = Convert.ToInt32(
                 commandRowCount.ExecuteScalar());
-            Console.WriteLine("Ending row count = {0}", countEnd);
-            Console.WriteLine("{0} rows were added.", countEnd - countStart);
+            Console.WriteLine($"Ending row count = {countEnd}");
+            Console.WriteLine($"{countEnd - countStart} rows were added.");
             Console.WriteLine("Press Enter to finish.");
             Console.ReadLine();
         }

@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 using System.Collections.Generic;
 using System.ServiceModel;
@@ -68,7 +68,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
 
                     Console.WriteLine("Calling EchoWithGet by HTTP GET: ");
                     s = channel.EchoWithGet("Hello, world");
-                    Console.WriteLine("   Output: {0}", s);
+                    Console.WriteLine($"   Output: {s}");
 
                     Console.WriteLine("");
                     Console.WriteLine("This can also be accomplished by navigating to");
@@ -79,7 +79,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
 
                     Console.WriteLine("Calling EchoWithPost by HTTP POST: ");
                     s = channel.EchoWithPost("Hello, world");
-                    Console.WriteLine("   Output: {0}", s);
+                    Console.WriteLine($"   Output: {s}");
                     // </Snippet8>
                     Console.WriteLine("");
                 }
@@ -94,13 +94,13 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
 
                     Console.WriteLine("Calling EchoWithGet on SOAP endpoint: ");
                     s = channel.EchoWithGet("Hello, world");
-                    Console.WriteLine("   Output: {0}", s);
+                    Console.WriteLine($"   Output: {s}");
 
                     Console.WriteLine("");
 
                     Console.WriteLine("Calling EchoWithPost on SOAP endpoint: ");
                     s = channel.EchoWithPost("Hello, world");
-                    Console.WriteLine("   Output: {0}", s);
+                    Console.WriteLine($"   Output: {s}");
                     // </Snippet11>
                     Console.WriteLine("");
                 }
@@ -113,7 +113,7 @@ namespace Microsoft.ServiceModel.Samples.BasicWebProgramming
             }
             catch (CommunicationException cex)
             {
-                Console.WriteLine("An exception occurred: {0}", cex.Message);
+                Console.WriteLine($"An exception occurred: {cex.Message}");
                 host.Abort();
             }
         }

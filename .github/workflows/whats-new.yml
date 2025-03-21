@@ -52,7 +52,7 @@ jobs:
           savedir: './docs/whats-new'
 
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e
+        uses: dotnet/actions-create-pull-request@v4
         with:
           branch: create-whatsnew-pull-request/patch
           title: "What's new article"

@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.ServiceModel;
 using System.Net.Security;
@@ -151,21 +151,21 @@ namespace Samples3
             foreach (ServiceEndpoint se in sh.Description.Endpoints)
             {
                 ContractDescription cd = se.Contract;
-                Console.WriteLine("\nContractDescription: ProtectionLevel = {0}", cd.Name, cd.ProtectionLevel);
+                Console.WriteLine($"\nContractDescription: ProtectionLevel = {cd.Name}");
                 foreach (OperationDescription od in cd.Operations)
                 {
-                    Console.WriteLine("\nOperationDescription: Name = {0}", od.Name, od.ProtectionLevel);
-                    Console.WriteLine("ProtectionLevel = {1}", od.Name, od.ProtectionLevel);
+                    Console.WriteLine($"\nOperationDescription: Name = {od.Name}");
+                    Console.WriteLine($"ProtectionLevel = {od.ProtectionLevel}");
                     foreach (MessageDescription m in od.Messages)
                     {
-                        Console.WriteLine("\t {0}: {1}", m.Action, m.ProtectionLevel);
+                        Console.WriteLine($"\t {m.Action}: {m.ProtectionLevel}");
                         foreach (MessageHeaderDescription mh in m.Headers)
                         {
-                            Console.WriteLine("\t\t {0}: {1}", mh.Name, mh.ProtectionLevel);
+                            Console.WriteLine($"\t\t {mh.Name}: {mh.ProtectionLevel}");
 
                             foreach (MessagePropertyDescription mp in m.Properties)
                             {
-                                Console.WriteLine("{0}: {1}", mp.Name, mp.ProtectionLevel);
+                                Console.WriteLine($"{mp.Name}: {mp.ProtectionLevel}");
                             }
                         }
                     }

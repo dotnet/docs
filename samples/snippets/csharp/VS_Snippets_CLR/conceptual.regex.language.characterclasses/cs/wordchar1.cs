@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,10 +13,9 @@ public class Example
       {
          Match match = Regex.Match(word, pattern);
          if (match.Success)
-            Console.WriteLine("'{0}' found in '{1}' at position {2}.",
-                              match.Value, word, match.Index);
+            Console.WriteLine($"'{match.Value}' found in '{word}' at position {match.Index}.");
          else
-            Console.WriteLine("No double characters in '{0}'.", word);
+            Console.WriteLine($"No double characters in '{word}'.");
       }
    }
 }

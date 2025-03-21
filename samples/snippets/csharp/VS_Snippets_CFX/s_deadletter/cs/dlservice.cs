@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // <Snippet3>
 using System;
@@ -34,11 +34,11 @@ namespace Microsoft.ServiceModel.Samples
         // <Snippet0>
         public void SimpleSubmitPurchaseOrder(PurchaseOrder po)
         {
-            Console.WriteLine("Submitting purchase order did not succeed ", po);
+            Console.WriteLine($"Submitting purchase order did not succeed ");
             MsmqMessageProperty mqProp = OperationContext.Current.IncomingMessageProperties[MsmqMessageProperty.Name] as MsmqMessageProperty;
 
-            Console.WriteLine("Message Delivery Status: {0} ", mqProp.DeliveryStatus);
-            Console.WriteLine("Message Delivery Failure: {0}", mqProp.DeliveryFailure);
+            Console.WriteLine($"Message Delivery Status: {mqProp.DeliveryStatus} ");
+            Console.WriteLine($"Message Delivery Failure: {mqProp.DeliveryFailure}");
             Console.WriteLine();
         }
         // </Snippet0>
@@ -46,11 +46,11 @@ namespace Microsoft.ServiceModel.Samples
         [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]
         public void SubmitPurchaseOrder(PurchaseOrder po)
         {
-            Console.WriteLine("Submitting purchase order did not succeed ", po);
+            Console.WriteLine($"Submitting purchase order did not succeed ");
             MsmqMessageProperty mqProp = OperationContext.Current.IncomingMessageProperties[MsmqMessageProperty.Name] as MsmqMessageProperty;
 
-            Console.WriteLine("Message Delivery Status: {0} ", mqProp.DeliveryStatus);
-            Console.WriteLine("Message Delivery Failure: {0}", mqProp.DeliveryFailure);
+            Console.WriteLine($"Message Delivery Status: {mqProp.DeliveryStatus} ");
+            Console.WriteLine($"Message Delivery Failure: {mqProp.DeliveryFailure}");
             Console.WriteLine();
 
             // Resend the message if timed out.

@@ -1,4 +1,4 @@
-﻿// <Snippet17>
+// <Snippet17>
 using System;
 using System.Text.RegularExpressions;
 
@@ -9,7 +9,7 @@ public class RTL1Example
         string pattern = @"\bb\w+\s";
         string input = "build band tab";
         foreach (Match match in Regex.Matches(input, pattern, RegexOptions.RightToLeft))
-            Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+            Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
     }
 }
 // The example displays the following output:

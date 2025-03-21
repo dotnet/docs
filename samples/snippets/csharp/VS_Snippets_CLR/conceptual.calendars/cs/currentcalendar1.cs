@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -14,14 +14,12 @@ public class Example
       DateTime date1 = new DateTime(2011, 1, 16);
 
       // Display the date using the default (Gregorian) calendar.
-      Console.WriteLine("Current calendar: {0}",
-                        zhTW.DateTimeFormat.Calendar);
+      Console.WriteLine($"Current calendar: {zhTW.DateTimeFormat.Calendar}");
       Console.WriteLine(date1.ToString("d"));
 
       // Change the current calendar and display the date.
       zhTW.DateTimeFormat.Calendar = new TaiwanCalendar();
-      Console.WriteLine("Current calendar: {0}",
-                        zhTW.DateTimeFormat.Calendar);
+      Console.WriteLine($"Current calendar: {zhTW.DateTimeFormat.Calendar}");
       Console.WriteLine(date1.ToString("d"));
    }
 }

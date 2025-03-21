@@ -1,4 +1,4 @@
-﻿// <Snippet08>
+// <Snippet08>
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -150,7 +150,7 @@ class Program
         }
 
         // For diagnostic purposes.
-        Console.WriteLine("Processed {0} files in {1} milliseconds", fileCount, sw.ElapsedMilliseconds);
+        Console.WriteLine($"Processed {fileCount} files in {sw.ElapsedMilliseconds} milliseconds");
     }
 }
 // </Snippet08>

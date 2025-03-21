@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,8 +13,7 @@ public class Child
                          int taskNo = ctr;
                          Task.Factory.StartNew((x) => {
                                                   Thread.SpinWait(5000000);
-                                                  Console.WriteLine("Attached child #{0} completed.",
-                                                                    x);
+                                                  Console.WriteLine($"Attached child #{x} completed.");
                                                },
                                                taskNo, TaskCreationOptions.AttachedToParent);
                       }

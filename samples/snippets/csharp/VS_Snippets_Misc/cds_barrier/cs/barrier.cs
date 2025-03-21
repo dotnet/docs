@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 //#define TRACE
 using System;
 using System.Collections.Generic;
@@ -40,7 +40,7 @@ namespace BarrierSimple
             if (String.CompareOrdinal(solution, sb.ToString()) == 0)
             {
                 success = true;
-                Console.WriteLine("\r\nThe solution was found in {0} attempts", barrier.CurrentPhaseNumber);
+                Console.WriteLine($"\r\nThe solution was found in {barrier.CurrentPhaseNumber} attempts");
             }
         });
 

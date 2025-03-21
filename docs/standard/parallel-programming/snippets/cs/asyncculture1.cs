@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -20,18 +20,15 @@ public class Example
                                              return output;
                                            };
 
-       Console.WriteLine("The example is running on thread {0}",
-                         Thread.CurrentThread.ManagedThreadId);
+       Console.WriteLine($"The example is running on thread {Thread.CurrentThread.ManagedThreadId}");
        // Make the current culture different from the system culture.
-       Console.WriteLine("The current culture is {0}",
-                         CultureInfo.CurrentCulture.Name);
+       Console.WriteLine($"The current culture is {CultureInfo.CurrentCulture.Name}");
        if (CultureInfo.CurrentCulture.Name == "fr-FR")
           Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
        else
           Thread.CurrentThread.CurrentCulture = new CultureInfo("fr-FR");
 
-       Console.WriteLine("Changed the current culture to {0}.\n",
-                         CultureInfo.CurrentCulture.Name);
+       Console.WriteLine($"Changed the current culture to {CultureInfo.CurrentCulture.Name}.\n");
 
        // Execute the delegate synchronously.
        Console.WriteLine("Executing the delegate synchronously:");

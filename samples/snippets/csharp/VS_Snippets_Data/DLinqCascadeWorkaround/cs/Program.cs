@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,7 +47,7 @@ namespace cs_cascadeworkaround
                          where ofetch.OrderID == reqOrder
                          select ofetch).First();
                     db.Orders.DeleteOnSubmit(ordFetch);
-                    Console.WriteLine("{0} OrderID is marked for deletion.", ordFetch.OrderID);
+                    Console.WriteLine($"{ordFetch.OrderID} OrderID is marked for deletion.");
                 }
                 catch (Exception e)
                 {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class RegExExamples
 {
@@ -20,16 +20,16 @@ public class RegExExamples
                 switch (m.Groups[2].Value)
                 {
                     case "+":
-                        Console.WriteLine("{0} = {1}", m.Value, value1 + value2);
+                        Console.WriteLine($"{m.Value} = {value1 + value2}");
                         break;
                     case "-":
-                        Console.WriteLine("{0} = {1}", m.Value, value1 - value2);
+                        Console.WriteLine($"{m.Value} = {value1 - value2}");
                         break;
                     case "*":
-                        Console.WriteLine("{0} = {1}", m.Value, value1 * value2);
+                        Console.WriteLine($"{m.Value} = {value1 * value2}");
                         break;
                     case "/":
-                        Console.WriteLine("{0} = {1:N2}", m.Value, value1 / value2);
+                        Console.WriteLine($"{m.Value} = {value1 / value2:N2}");
                         break;
                 }
             }
@@ -57,7 +57,7 @@ public class RegExExamples
         foreach (System.Text.RegularExpressions.Match m in
            System.Text.RegularExpressions.Regex.Matches(input, pattern))
         {
-            Console.WriteLine("{0}: {1}", ++ctr, m.Groups[1].Value);
+            Console.WriteLine($"{++ctr}: {m.Groups[1].Value}");
         }
 
         // The example displays the following output:

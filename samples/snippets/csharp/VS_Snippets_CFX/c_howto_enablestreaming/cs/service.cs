@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
@@ -67,7 +67,7 @@ namespace Microsoft.ServiceModel.Samples
                 "uploadedfile");
             try
             {
-                Console.WriteLine("Saving to file {0}", filePath);
+                Console.WriteLine($"Saving to file {filePath}");
                 FileStream outstream = File.Open(filePath, FileMode.Create, FileAccess.Write);
                 //read from the input stream in 4K chunks
                 //and save to output stream
@@ -82,7 +82,7 @@ namespace Microsoft.ServiceModel.Samples
                 outstream.Close();
                 stream.Close();
                 Console.WriteLine();
-                Console.WriteLine("File {0} saved", filePath);
+                Console.WriteLine($"File {filePath} saved");
 
                 return true;
             }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -179,7 +179,7 @@ namespace csrefLINQExamples
                     // Variable str could be declared by using var instead of string.
                     foreach (string str in queryId)
                     {
-                        Console.WriteLine("Last name: {0}", str);
+                        Console.WriteLine($"Last name: {str}");
                     }
                     //</snippet33>
                 }

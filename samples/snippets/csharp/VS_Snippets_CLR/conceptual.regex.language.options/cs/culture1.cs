@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -26,7 +26,7 @@ public class CultureExample
         if (Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase))
             Console.WriteLine("URLs that access files are not allowed.");
         else
-            Console.WriteLine("Access to {0} is allowed.", input);
+            Console.WriteLine($"Access to {input} is allowed.");
 
         Thread.CurrentThread.CurrentCulture = defaultCulture;
         // The example displays the following output:
@@ -49,7 +49,7 @@ public class CultureExample
                           RegexOptions.IgnoreCase | RegexOptions.CultureInvariant))
             Console.WriteLine("URLs that access files are not allowed.");
         else
-            Console.WriteLine("Access to {0} is allowed.", input);
+            Console.WriteLine($"Access to {input} is allowed.");
 
         Thread.CurrentThread.CurrentCulture = defaultCulture;
         // The example displays the following output:

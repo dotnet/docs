@@ -43,7 +43,7 @@ public class Example1
             Console.WriteLine($"{number} (Base 10):");
             Console.WriteLine($"   Binary:  {Convert.ToString(number, 2)}");
             Console.WriteLine($"   Octal:   {Convert.ToString(number, 8)}");
-            Console.WriteLine($"   Hex:     {Convert.ToString(number, 16)}\n");
+            Console.WriteLine($"   Hex:     {Convert.ToString(number, 16)}{Environment.NewLine}");
         }
         // The example displays the following output:
         //    -146 (Base 10):

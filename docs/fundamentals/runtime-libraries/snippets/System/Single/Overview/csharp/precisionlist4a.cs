@@ -6,7 +6,7 @@ public class Example10
     public static void Main()
     {
         // <Snippet17>
-        StreamWriter sw = new(@".\Singles.dat");
+        StreamWriter sw = new(@"./Singles.dat");
         float[] values = { 3.2f / 1.11f, 1.0f / 3f, (float)Math.PI };
         for (int ctr = 0; ctr < values.Length; ctr++)
         {
@@ -17,7 +17,7 @@ public class Example10
         sw.Close();
 
         float[] restoredValues = new float[values.Length];
-        StreamReader sr = new(@".\Singles.dat");
+        StreamReader sr = new(@"./Singles.dat");
         string temp = sr.ReadToEnd();
         string[] tempStrings = temp.Split('|');
         for (int ctr = 0; ctr < tempStrings.Length; ctr++)

@@ -72,11 +72,11 @@ namespace NDP_UE_CS
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"\nMessage ---\n{ex.Message}");
-                Console.WriteLine($"\nHelpLink ---\n{ex.HelpLink}");
-                Console.WriteLine($"\nSource ---\n{ex.Source}");
-                Console.WriteLine($"\nStackTrace ---\n{ex.StackTrace}");
-                Console.WriteLine($"\nTargetSite ---\n{ex.TargetSite}");
+                Console.WriteLine($"{Environment.NewLine}Message ---{Environment.NewLine}{ex.Message}");
+                Console.WriteLine($"{Environment.NewLine}HelpLink ---{Environment.NewLine}{ex.HelpLink}");
+                Console.WriteLine($"{Environment.NewLine}Source ---{Environment.NewLine}{ex.Source}");
+                Console.WriteLine($"{Environment.NewLine}StackTrace ---{Environment.NewLine}{ex.StackTrace}");
+                Console.WriteLine($"{Environment.NewLine}TargetSite ---{Environment.NewLine}{ex.TargetSite}");
             }
         }
     }

@@ -6,7 +6,7 @@ public class Example11
     public static void Main()
     {
         // <Snippet7>
-        StreamWriter sw = new(@".\Doubles.dat");
+        StreamWriter sw = new(@"./Doubles.dat");
         double[] values = [2.2 / 1.01, 1.0 / 3, Math.PI];
         for (int ctr = 0; ctr < values.Length; ctr++)
         {
@@ -17,7 +17,7 @@ public class Example11
         sw.Close();
 
         double[] restoredValues = new double[values.Length];
-        StreamReader sr = new(@".\Doubles.dat");
+        StreamReader sr = new(@"./Doubles.dat");
         string temp = sr.ReadToEnd();
         string[] tempStrings = temp.Split('|');
         for (int ctr = 0; ctr < tempStrings.Length; ctr++)

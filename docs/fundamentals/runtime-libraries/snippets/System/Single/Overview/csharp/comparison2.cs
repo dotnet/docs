@@ -9,7 +9,8 @@ public class Example1
         value1 = (float)Math.Sqrt((float)Math.Pow(value1, 2));
         float value2 = (float)Math.Pow((float)value1 * 3.51f, 2);
         value2 = ((float)Math.Sqrt(value2)) / 3.51f;
-        Console.WriteLine($"{value1} = {value2}: {value1.Equals(value2)}\n");
+        Console.WriteLine($"{value1} = {value2}: {value1.Equals(value2)}");
+        Console.WriteLine();
         Console.WriteLine($"{value1:G9} = {value2:G9}");
     }
 }

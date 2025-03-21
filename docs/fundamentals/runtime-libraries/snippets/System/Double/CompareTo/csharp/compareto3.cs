@@ -7,7 +7,7 @@ public class Example3
     {
         double value1 = 6.185;
         object value2 = value1 * .1 / .1;
-        Console.WriteLine($"Comparing {value1} and {value2}: {value1.CompareTo(value2)}\n");
+        Console.WriteLine($"Comparing {value1} and {value2}: {value1.CompareTo(value2)}{Environment.NewLine}");
         Console.WriteLine($"Comparing {value1:R} and {value2:R}: {value1.CompareTo(value2)}");
     }
 }

@@ -8,7 +8,8 @@ public class Example
        float value1 = 16.5457f;
        float operand = 3.8899982f;
        object value2 = value1 * operand / operand;
-       Console.WriteLine($"Comparing {value1} and {value2}: {value1.CompareTo(value2)}\n");
+       Console.WriteLine($"Comparing {value1} and {value2}: {value1.CompareTo(value2)}");
+       Console.WriteLine();
        Console.WriteLine($"Comparing {value1:R} and {value2:R}: {value1.CompareTo(value2)}");
    }
 }

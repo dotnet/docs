@@ -11,7 +11,8 @@ public class IteratingEx1
         {
             int square = (int)Math.Pow(number, 2);
             Console.WriteLine($"{number}^{square}");
-            Console.WriteLine($"Adding {square} to the collection...\n");
+            Console.WriteLine($"Adding {square} to the collection...");
+            Console.WriteLine();
             numbers.Add(square);
         }
     }

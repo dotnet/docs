@@ -50,8 +50,8 @@ public class RethrowEx1
         catch (ArgumentNullException e)
         {
             Console.WriteLine($"An exception ({e.GetType().Name}) occurred.");
-            Console.WriteLine($"Message:\n   {e.Message}\n");
-            Console.WriteLine($"Stack Trace:\n   {e.StackTrace}\n");
+            Console.WriteLine($"Message:{Environment.NewLine}   {e.Message}{Environment.NewLine}");
+            Console.WriteLine($"Stack Trace:{Environment.NewLine}   {e.StackTrace}{Environment.NewLine}");
         }
     }
 

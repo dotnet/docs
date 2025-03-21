@@ -13,7 +13,11 @@ public class Example7
          if (Char.IsPunctuation(s1[ctr]) | Char.IsWhiteSpace(s1[ctr]))
             nWords++;              
       }
-      Console.WriteLine($"The sentence\n   {s1}\nhas {nWords} words.");                                                                     
+      Console.WriteLine($"""
+      The sentence
+         {s1}
+       has {nWords} words.
+       """);                                                                     
       // The example displays the following output:
       //       The sentence
       //          This string consists of a single short sentence.

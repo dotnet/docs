@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 //  add main
 //  using System.Security.Principal;
@@ -38,7 +38,7 @@ namespace Microsoft.ServiceModel.Samples
             PurchaseOrder po = (PurchaseOrder)ordermsg.Body;
             Random statusIndexer = new Random();
             po.Status = (OrderStates)statusIndexer.Next(3);
-            Console.WriteLine("Processing {0} ", po);
+            Console.WriteLine($"Processing {po} ");
         }
 
 	    // Host the service within this EXE console application.

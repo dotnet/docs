@@ -1,4 +1,4 @@
-﻿// <Snippet14>
+// <Snippet14>
 using System;
 using System.Text.RegularExpressions;
 
@@ -12,16 +12,13 @@ public class Example
       Match match = Regex.Match(input, pattern);
       if (match.Success)
       {
-         Console.WriteLine("Match: '{0}' at position {1}",
-                           match.Value, match.Index);
+         Console.WriteLine($"Match: '{match.Value}' at position {match.Index}");
          GroupCollection groups = match.Groups;
          for (int ctr = 0; ctr < groups.Count; ctr++) {
-            Console.WriteLine("   Group {0}: '{1}' at position {2}",
-                              ctr, groups[ctr].Value, groups[ctr].Index);
+            Console.WriteLine($"   Group {ctr}: '{groups[ctr].Value}' at position {groups[ctr].Index}");
             CaptureCollection captures = groups[ctr].Captures;
             for (int ctr2 = 0; ctr2 < captures.Count; ctr2++) {
-               Console.WriteLine("      Capture {0}: '{1}' at position {2}",
-                                 ctr2, captures[ctr2].Value, captures[ctr2].Index);
+               Console.WriteLine($"      Capture {ctr2}: '{captures[ctr2].Value}' at position {captures[ctr2].Index}");
             }
          }
       }

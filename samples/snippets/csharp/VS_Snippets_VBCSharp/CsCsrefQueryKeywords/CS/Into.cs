@@ -1,4 +1,4 @@
-﻿namespace IntoClause;
+namespace IntoClause;
 
 //<snippet18>
 class IntoSample1
@@ -20,7 +20,7 @@ class IntoSample1
         // not the items in each group
         foreach (var item in wordGroups1)
         {
-            Console.WriteLine(" {0} has {1} elements.", item.FirstLetter, item.Words);
+            Console.WriteLine($" {item.FirstLetter} has {item.Words} elements.");
         }
     }
 }
@@ -47,7 +47,7 @@ class IntoSample2
         // and the items in each group.
         foreach (var item in wordGroups2)
         {
-            Console.WriteLine("Words that start with the letter '{0}':", item.Key);
+            Console.WriteLine($"Words that start with the letter '{item.Key}':");
             foreach (var w in item)
             {
                 Console.WriteLine(w);

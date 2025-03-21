@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Transactions;
@@ -42,7 +42,7 @@ namespace Microsoft.ServiceModel.Samples
                 channel.SubmitPurchaseOrder(ordermsg);
                 scope.Complete();
             }
-            Console.WriteLine("Order has been submitted:{0}", po);
+            Console.WriteLine($"Order has been submitted:{po}");
             // </Snippet2>
         }
 

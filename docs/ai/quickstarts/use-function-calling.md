@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
-ms.date: 07/14/2024
+ms.date: 03/13/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
@@ -56,8 +56,8 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -67,8 +67,8 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -107,7 +107,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) package to send and receive requests to the AI model.
 
-1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model. The `ChatClient` is also configured to use function invocation, which allows .NET functions in your code to be called by the AI model.
+1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model. The `ChatClient` is also configured to use function invocation, which allows the AI model to call .NET functions in your code.
 
     :::zone target="docs" pivot="azure-openai"
 
@@ -124,7 +124,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone-end
 
-1. Create a new `ChatOptions` object that contains an inline function the AI model can call to get the current weather. The function declaration includes a delegate to run logic and name and description parameters to describe the purpose of the function to the AI model.
+1. Create a new `ChatOptions` object that contains an inline function the AI model can call to get the current weather. The function declaration includes a delegate to run logic, and name and description parameters to describe the purpose of the function to the AI model.
 
     :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="16-26":::
 
@@ -138,7 +138,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
     dotnet run
     ```
 
-    The app prints a the completion response from the AI model that includes data provided by the .NET function. The AI model understood the registered function was available and called it automatically to generate a proper response.
+    The app prints the completion response from the AI model, which includes data provided by the .NET function. The AI model understood that the registered function was available and called it automatically to generate a proper response.
 
 :::zone target="docs" pivot="azure-openai"
 

@@ -3,10 +3,10 @@ title: "Custom date and time format strings"
 description: Learn to use custom date and time format strings to convert DateTime or DateTimeOffset values into text representations, or to parse strings for dates & times.
 ms.date: 05/12/2022
 ms.topic: reference
-dev_langs: 
+dev_langs:
 - "csharp"
 - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "formatting [.NET], dates"
   - "custom DateTime format string"
   - "format specifiers, custom date and time"
@@ -715,9 +715,9 @@ The following example includes the literal characters "pst" (for Pacific Standar
 
 A custom date and time format string consists of two or more characters. Date and time formatting methods interpret any single-character string as a standard date and time format string. If they don't recognize the character as a valid format specifier, they throw a <xref:System.FormatException>. For example, a format string that consists only of the specifier "h" is interpreted as a standard date and time format string. However, in this particular case, an exception is thrown because there is no "h" standard date and time format specifier.
 
-To use any of the custom date and time format specifiers as the only specifier in a format string (that is, to use the "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" custom format specifier by itself), include a space before or after the specifier, or include a percent ("%") format specifier before the single custom date and time specifier.
+To use any of the custom date and time format specifiers as the only specifier in a format string (that is, to use the "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" custom format specifier by itself), include a space before the specifier, or include a percent ("%") format specifier before the single custom date and time specifier.
 
-For example, "`%h"` is interpreted as a custom date and time format string that displays the hour represented by the current date and time value. You can also use the " h" or "h " format string, although this includes a space in the result string along with the hour. The following example illustrates these three format strings.
+For example, "`%h"` is interpreted as a custom date and time format string that displays the hour represented by the current date and time value. You can also use the " h" format string, although this includes a space in the result string along with the hour. The following example illustrates these format strings.
 
 [!code-csharp-interactive[Formatting.DateAndTime.Custom#16](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/literal1.cs#16)]
 [!code-vb[Formatting.DateAndTime.Custom#16](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/literal1.vb#16)]

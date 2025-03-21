@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Text.RegularExpressions;
 
@@ -9,9 +9,7 @@ public class Example
       string pattern = @"(?<duplicateWord>\w+)\s\k<duplicateWord>\W(?<nextWord>\w+)";
       string input = "He said that that was the the correct answer.";
       foreach (Match match in Regex.Matches(input, pattern, RegexOptions.IgnoreCase))
-         Console.WriteLine("A duplicate '{0}' at position {1} is followed by '{2}'.",
-                           match.Groups["duplicateWord"].Value, match.Groups["duplicateWord"].Index,
-                           match.Groups["nextWord"].Value);
+         Console.WriteLine($"A duplicate '{match.Groups["duplicateWord"].Value}' at position {match.Groups["duplicateWord"].Index} is followed by '{match.Groups["nextWord"].Value}'.");
    }
 }
 // The example displays the following output:

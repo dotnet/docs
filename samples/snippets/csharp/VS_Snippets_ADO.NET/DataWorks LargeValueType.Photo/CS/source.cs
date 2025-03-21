@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
@@ -59,7 +59,7 @@ static class Program
                         // Ensure that the column isn't null
                         if (reader.IsDBNull(1))
                         {
-                            Console.WriteLine("{0} is unavailable.", photoName);
+                            Console.WriteLine($"{photoName} is unavailable.");
                         }
                         else
                         {
@@ -70,7 +70,7 @@ static class Program
 
                                 // Save in gif format.
                                 productImage.Save(fileName, ImageFormat.Gif);
-                                Console.WriteLine("Successfully created {0}.", fileName);
+                                Console.WriteLine($"Successfully created {fileName}.");
                             }
                         }
                     }

@@ -1,4 +1,4 @@
-﻿// <snippet7>
+// <snippet7>
 using System;
 
 namespace ConsoleApplication4
@@ -20,7 +20,7 @@ namespace ConsoleApplication4
 
         static void c_ThresholdReached(Object sender, ThresholdReachedEventArgs e)
         {
-            Console.WriteLine("The threshold of {0} was reached at {1}.", e.Threshold, e.TimeReached);
+            Console.WriteLine($"The threshold of {e.Threshold} was reached at {e.TimeReached}.");
             Environment.Exit(0);
         }
     }

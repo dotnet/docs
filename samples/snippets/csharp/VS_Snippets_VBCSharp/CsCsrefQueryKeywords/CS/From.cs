@@ -1,4 +1,4 @@
-﻿namespace FromClause;
+namespace FromClause;
 
 //<snippet1>
 class LowNums
@@ -64,7 +64,7 @@ class CompoundFrom
         // (Last) and an int (score).
         foreach (var student in scoreQuery)
         {
-            Console.WriteLine("{0} Score: {1}", student.Last, student.score);
+            Console.WriteLine($"{student.Last} Score: {student.score}");
         }
     }
 }
@@ -108,14 +108,14 @@ class CompoundFrom2
         // Rest the mouse pointer on joinQuery1 to verify its type.
         foreach (var pair in joinQuery1)
         {
-            Console.WriteLine("{0} is matched to {1}", pair.upper, pair.lower);
+            Console.WriteLine($"{pair.upper} is matched to {pair.lower}");
         }
 
         Console.WriteLine("Filtered non-equijoin:");
         // Rest the mouse pointer over joinQuery2 to verify its type.
         foreach (var pair in joinQuery2)
         {
-            Console.WriteLine("{0} is matched to {1}", pair.lower, pair.upper);
+            Console.WriteLine($"{pair.lower} is matched to {pair.upper}");
         }
 
         // Keep the console window open in debug mode.

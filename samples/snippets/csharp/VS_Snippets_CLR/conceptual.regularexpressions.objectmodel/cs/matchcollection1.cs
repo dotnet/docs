@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -25,8 +25,7 @@ public class Example
        }
        // List the results.
        for (int ctr = 0; ctr < results.Count; ctr++)
-         Console.WriteLine("'{0}' found at position {1}.",
-                           results[ctr], matchposition[ctr]);
+         Console.WriteLine($"'{results[ctr]}' found at position {matchposition[ctr]}.");
    }
 }
 // The example displays the following output:

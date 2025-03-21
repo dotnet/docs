@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 /*
 The following example demonstrates using asynchronous methods to
 get Domain Name System information for the specified host computers.
@@ -24,7 +24,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
         {
             // Print a message to indicate that the application
             // is still working on the remaining requests.
-            Console.WriteLine("{0} requests remaining.", requestCounter);
+            Console.WriteLine($"{requestCounter} requests remaining.");
         }
         public static void Main()
         {
@@ -58,8 +58,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 // A SocketException was thrown.
                 if (message != null)
                 {
-                    Console.WriteLine("Request for {0} returned message: {1}",
-                        hostNames[i], message);
+                    Console.WriteLine($"Request for {hostNames[i]} returned message: {message}");
                     continue;
                 }
                 // Get the results.
@@ -68,15 +67,15 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 IPAddress[] addresses = h.AddressList;
                 if (aliases.Length > 0)
                 {
-                    Console.WriteLine("Aliases for {0}", hostNames[i]);
+                    Console.WriteLine($"Aliases for {hostNames[i]}");
                     for (int j = 0; j < aliases.Length; j++)
                     {
-                        Console.WriteLine("{0}", aliases[j]);
+                        Console.WriteLine($"{aliases[j]}");
                     }
                 }
                 if (addresses.Length > 0)
                 {
-                    Console.WriteLine("Addresses for {0}", hostNames[i]);
+                    Console.WriteLine($"Addresses for {hostNames[i]}");
                     for (int k = 0; k < addresses.Length; k++)
                     {
                         Console.WriteLine("{0}",addresses[k].ToString());

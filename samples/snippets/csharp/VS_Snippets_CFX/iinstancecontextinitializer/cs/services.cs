@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -38,14 +38,14 @@ namespace Microsoft.WCF.Documentation
 
       // Retrieve the ChannelDispatcher IContextChannel extension.
       ChannelTrackerExtension channelExtension = OperationContext.Current.Channel.Extensions.Find<ChannelTrackerExtension>();
-      Console.WriteLine("Channel tracker says the channel hash code: {0}.", channelExtension.ChannelHashCode);
+      Console.WriteLine($"Channel tracker says the channel hash code: {channelExtension.ChannelHashCode}.");
 
       // Retrieve the service host custom context:
       ServiceHostContext srvContext = OperationContext.Current.Host.Extensions.Find<ServiceHostContext>();
       if (srvContext != null)
         Console.WriteLine("ServiceHost object hash: " + srvContext.ID);
       //you have the state object and can retrieve whatever info you need
-      Console.WriteLine("The caller said: \"{0}\"", msg);
+      Console.WriteLine($"The caller said: \"{msg}\"");
  	    return "The service greets you: " + msg;
     }
 

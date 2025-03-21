@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -226,15 +226,13 @@ namespace Overview
             switch (data.Item3)
             {
                case '+':
-                  Console.WriteLine("{0} + {1} = {2}",
-                     data.Item1, data.Item2, data.Item1 + data.Item2);
+                  Console.WriteLine($"{data.Item1} + {data.Item2} = {data.Item1 + data.Item2}");
                   break;
                case '-':
-                  Console.WriteLine("{0} - {1} = {2}",
-                     data.Item1, data.Item2, data.Item1 - data.Item2);
+                  Console.WriteLine($"{data.Item1} - {data.Item2} = {data.Item1 - data.Item2}");
                   break;
                default:
-                  Console.WriteLine("Unknown operator '{0}'.", data.Item3);
+                  Console.WriteLine($"Unknown operator '{data.Item3}'.");
                   break;
             }
          }
@@ -316,7 +314,7 @@ namespace Overview
          // is less than zero.
          var throwIfNegative = new ActionBlock<int>(n =>
          {
-            Console.WriteLine("n = {0}", n);
+            Console.WriteLine($"n = {n}");
             if (n < 0)
             {
                throw new ArgumentOutOfRangeException();
@@ -364,7 +362,7 @@ namespace Overview
          // is less than zero.
          var throwIfNegative = new ActionBlock<int>(n =>
          {
-            Console.WriteLine("n = {0}", n);
+            Console.WriteLine($"n = {n}");
             if (n < 0)
             {
                throw new ArgumentOutOfRangeException();
@@ -375,8 +373,7 @@ namespace Overview
          // task status to the console when the block finishes.
          throwIfNegative.Completion.ContinueWith(task =>
          {
-            Console.WriteLine("The status of the completion task is '{0}'.",
-               task.Status);
+            Console.WriteLine($"The status of the completion task is '{task.Status}'.");
          });
 
          // Post values to the block.

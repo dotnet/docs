@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Threading;
 
@@ -14,8 +14,7 @@ class TimerExample
 
         // Create a timer that invokes CheckStatus after one second,
         // and every 1/4 second thereafter.
-        Console.WriteLine("{0:h:mm:ss.fff} Creating timer.\n",
-                          DateTime.Now);
+        Console.WriteLine($"{DateTime.Now:h:mm:ss.fff} Creating timer.\n");
         var stateTimer = new Timer(statusChecker.CheckStatus,
                                    autoEvent, 1000, 250);
 

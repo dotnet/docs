@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
@@ -36,10 +36,9 @@ class Client
         //Send message.
         Message replymessage = channel.Request(requestmessage);
         Console.WriteLine("Reply message received");
-        Console.WriteLine("Reply action: {0}",
-                              replymessage.Headers.Action);
+        Console.WriteLine($"Reply action: {replymessage.Headers.Action}");
         string data = replymessage.GetBody<string>();
-        Console.WriteLine("Reply content: {0}", data);
+        Console.WriteLine($"Reply content: {data}");
 
         //Step5: Do not forget to close the message.
         replymessage.Close();

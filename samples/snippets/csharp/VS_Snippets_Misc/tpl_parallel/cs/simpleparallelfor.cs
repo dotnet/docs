@@ -1,4 +1,4 @@
-﻿// <snippet01>
+// <snippet01>
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
@@ -130,7 +130,7 @@ class MultiplyMatrices
             Console.WriteLine();
             for (int x = 0; x < rowCount; x++)
             {
-                Console.WriteLine("ROW {0}: ", x);
+                Console.WriteLine($"ROW {x}: ");
                 for (int y = 0; y < colCount; y++)
                 {
                     Console.Write("{0:#.##} ", matrix[x, y]);

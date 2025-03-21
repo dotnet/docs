@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Text.RegularExpressions;
 
@@ -18,7 +18,7 @@ public class Example
          if (match.Groups.Count > 1)
          {
             for (int ctr = 1; ctr <match.Groups.Count; ctr++)
-               Console.WriteLine("   Group {0}: {1}", ctr, match.Groups[ctr].Value);
+               Console.WriteLine($"   Group {ctr}: {match.Groups[ctr].Value}");
          }
       }
    }

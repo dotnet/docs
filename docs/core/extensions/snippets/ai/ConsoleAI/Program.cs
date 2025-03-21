@@ -5,4 +5,4 @@ IChatClient client = new SampleChatClient(
 
 var response = await client.GetResponseAsync("What is AI?");
 
-Console.WriteLine(response.Message);
+Console.WriteLine(response.Messages.Single());

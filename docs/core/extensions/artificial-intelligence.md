@@ -187,20 +187,13 @@ The consumer can then easily use this in their pipeline, for example:
 
 This example demonstrates [hosted scenario](generic-host.md), where the consumer relies on [dependency injection](dependency-injection.md) to provide the `RateLimiter` instance. The preceding extension methods demonstrate using a `Use` method on <xref:Microsoft.Extensions.AI.ChatClientBuilder>. The `ChatClientBuilder` also provides <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use*> overloads that make it easier to write such delegating handlers.
 
-- <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(Microsoft.Extensions.AI.AnonymousDelegatingChatClient.GetResponseSharedFunc)>
-- <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{Microsoft.Extensions.AI.IChatClient,Microsoft.Extensions.AI.IChatClient})>
-- <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{Microsoft.Extensions.AI.IChatClient,System.IServiceProvider,Microsoft.Extensions.AI.IChatClient})>
-- <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Extensions.AI.ChatResponse}},System.Func{System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Collections.Generic.IAsyncEnumerable{Microsoft.Extensions.AI.ChatResponseUpdate}})>
-
 For example, in the earlier `RateLimitingChatClient` example, the overrides of `GetResponseAsync` and `GetStreamingResponseAsync` only need to do work before and after delegating to the next client in the pipeline. To achieve the same thing without writing a custom class, you can use an overload of `Use` that accepts a delegate that's used for both `GetResponseAsync` and `GetStreamingResponseAsync`, reducing the boilerplate required:
 
 :::code language="csharp" source="snippets/ai/ConsoleAI.UseExample/Program.cs":::
 
-The preceding overload internally uses an `AnonymousDelegatingChatClient`, which enables more complicated patterns with only a little additional code. For example, to achieve the same result but with the <xref:System.Threading.RateLimiting.RateLimiter> retrieved from DI:
+The preceding overload internally uses an `AnonymousDelegatingChatClient`, which enables more complicated patterns with only a little additional code.
 
-:::code language="csharp" source="snippets/ai/ConsoleAI.UseExampleAlt/Program.cs":::
-
-For scenarios where the developer would like to specify delegating implementations of `GetResponseAsync` and `GetStreamingResponseAsync` inline, and where it's important to be able to write a different implementation for each in order to handle their unique return types specially, another overload of `Use` exists that accepts a delegate for each.
+For scenarios where you'd like to specify delegating implementations of `GetResponseAsync` and `GetStreamingResponseAsync` inline, and where it's important to be able to write a different implementation for each in order to handle their unique return types specially, you can use the <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use(System.Func{System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Threading.Tasks.Task{Microsoft.Extensions.AI.ChatResponse}},System.Func{System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,Microsoft.Extensions.AI.IChatClient,System.Threading.CancellationToken,System.Collections.Generic.IAsyncEnumerable{Microsoft.Extensions.AI.ChatResponseUpdate}})> overload that accepts a delegate for each.
 
 ### Dependency injection
 

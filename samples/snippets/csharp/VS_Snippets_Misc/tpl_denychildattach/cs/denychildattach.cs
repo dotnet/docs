@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -51,19 +51,17 @@ class DenyChildAttach
       // Wait for the parent task to finish.
       Console.WriteLine("Waiting for parent task to finish...");
       runWidget.Wait();
-      Console.WriteLine("Parent task has finished. Elapsed time is {0} ms.",
-         stopwatch.ElapsedMilliseconds);
+      Console.WriteLine($"Parent task has finished. Elapsed time is {stopwatch.ElapsedMilliseconds} ms.");
 
       // Perform more work...
       Console.WriteLine("Performing more work on the main thread...");
       Thread.Sleep(2000);
-      Console.WriteLine("Elapsed time is {0} ms.", stopwatch.ElapsedMilliseconds);
+      Console.WriteLine($"Elapsed time is {stopwatch.ElapsedMilliseconds} ms.");
 
       // Wait for the child task to finish.
       Console.WriteLine("Waiting for child task to finish...");
       runWidget.Result.Wait();
-      Console.WriteLine("Child task has finished. Elapsed time is {0} ms.",
-        stopwatch.ElapsedMilliseconds);
+      Console.WriteLine($"Child task has finished. Elapsed time is {stopwatch.ElapsedMilliseconds} ms.");
    }
 
    static void Main(string[] args)

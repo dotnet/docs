@@ -1,4 +1,4 @@
-﻿// <snippet100>
+// <snippet100>
 // <snippet1>
 using System;
 using System.Collections.Generic;
@@ -158,7 +158,7 @@ namespace DataflowBatchDatabase
       // Posts random Employee data to the provided target block.
       static void PostRandomEmployees(ITargetBlock<Employee> target, int count)
       {
-         Console.WriteLine("Adding {0} entries to Employee table...", count);
+         Console.WriteLine($"Adding {count} entries to Employee table...");
 
          for (int i = 0; i < count; i++)
          {
@@ -237,13 +237,11 @@ namespace DataflowBatchDatabase
                Console.WriteLine("Received a batch...");
                foreach (Employee e in data.Item1)
                {
-                  Console.WriteLine("Last={0} First={1} ID={2}",
-                     e.LastName, e.FirstName, e.EmployeeID);
+                  Console.WriteLine($"Last={e.LastName} First={e.FirstName} ID={e.EmployeeID}");
                }
 
                // Print the error count for this batch.
-               Console.WriteLine("There were {0} errors in this batch...",
-                  data.Item2.Count);
+               Console.WriteLine($"There were {data.Item2.Count} errors in this batch...");
 
                // Update total error count.
                totalErrors += data.Item2.Count;
@@ -287,7 +285,7 @@ namespace DataflowBatchDatabase
          printEmployees.Completion.Wait();
 
          // Print the total error count.
-         Console.WriteLine("Finished. There were {0} total errors.", totalErrors);
+         Console.WriteLine($"Finished. There were {totalErrors} total errors.");
       }
       // </Snippet7>
 

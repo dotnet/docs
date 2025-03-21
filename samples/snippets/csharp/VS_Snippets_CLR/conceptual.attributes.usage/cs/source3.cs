@@ -1,4 +1,4 @@
-﻿//<snippet18>
+//<snippet18>
 using System;
 using System.Reflection;
 using CustomCodeAttributes;
@@ -25,11 +25,11 @@ class MainApp
         else
         {
             // Get the Name value.
-            Console.WriteLine("The Name Attribute is: {0}." , MyAttribute.Name);
+            Console.WriteLine($"The Name Attribute is: {MyAttribute.Name}.");
             // Get the Level value.
-            Console.WriteLine("The Level Attribute is: {0}." , MyAttribute.Level);
+            Console.WriteLine($"The Level Attribute is: {MyAttribute.Level}.");
             // Get the Reviewed value.
-            Console.WriteLine("The Reviewed Attribute is: {0}." , MyAttribute.Reviewed);
+            Console.WriteLine($"The Reviewed Attribute is: {MyAttribute.Reviewed}.");
         }
     }
 }
@@ -52,11 +52,11 @@ class GetAttribTest1
             for (int i = 0 ; i < MyAttributes.Length ; i++)
             {
                 // Get the Name value.
-                Console.WriteLine("The Name Attribute is: {0}." , MyAttributes[i].Name);
+                Console.WriteLine($"The Name Attribute is: {MyAttributes[i].Name}.");
                 // Get the Level value.
-                Console.WriteLine("The Level Attribute is: {0}." , MyAttributes[i].Level);
+                Console.WriteLine($"The Level Attribute is: {MyAttributes[i].Level}.");
                 // Get the Reviewed value.
-                Console.WriteLine("The Reviewed Attribute is: {0}.", MyAttributes[i].Reviewed);
+                Console.WriteLine($"The Reviewed Attribute is: {MyAttributes[i].Reviewed}.");
             }
         }
     }
@@ -81,9 +81,9 @@ class GetAttribTest2
         }
         else
         {
-            Console.WriteLine("The Name Attribute on the class level is: {0}.", att.Name);
-            Console.WriteLine("The Level Attribute on the class level is: {0}.", att.Level);
-            Console.WriteLine("The Reviewed Attribute on the class level is: {0}.\n", att.Reviewed);
+            Console.WriteLine($"The Name Attribute on the class level is: {att.Name}.");
+            Console.WriteLine($"The Level Attribute on the class level is: {att.Level}.");
+            Console.WriteLine($"The Reviewed Attribute on the class level is: {att.Reviewed}.\n");
         }
 
         // Get the method-level attributes.

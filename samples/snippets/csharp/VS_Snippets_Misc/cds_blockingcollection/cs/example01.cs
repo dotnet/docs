@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 using System;
 using System.Collections.Concurrent;
 using System.Runtime.InteropServices;
@@ -40,7 +40,7 @@ class Program
                     Console.WriteLine("Adding was completed!");
                     break;
                 }
-                Console.WriteLine("Take:{0} ", i);
+                Console.WriteLine($"Take:{i} ");
 
                 // Simulate a slow consumer. This will cause
                 // collection to fill up fast and thus Adds wil block.
@@ -56,7 +56,7 @@ class Program
             for (int i = 0; i < itemsToAdd; i++)
             {
                 numbers.Add(i);
-                Console.WriteLine("Add:{0} Count={1}", i, numbers.Count);
+                Console.WriteLine($"Add:{i} Count={numbers.Count}");
             }
 
             // See documentation for this method.

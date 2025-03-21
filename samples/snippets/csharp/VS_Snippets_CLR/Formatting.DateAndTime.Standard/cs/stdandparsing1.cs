@@ -1,4 +1,4 @@
-﻿// <Snippet17>
+// <Snippet17>
 using System;
 using System.Globalization;
 
@@ -8,7 +8,7 @@ public class Example
    {
       Console.WriteLine("'d' standard format string:");
       foreach (var customString in DateTimeFormatInfo.CurrentInfo.GetAllDateTimePatterns('d'))
-          Console.WriteLine("   {0}", customString);
+          Console.WriteLine($"   {customString}");
    }
 }
 // The example displays the following output:

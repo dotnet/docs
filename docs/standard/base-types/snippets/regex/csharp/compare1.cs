@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Text.RegularExpressions;
@@ -37,7 +37,7 @@ internal static partial class CompareExample
                 break;
         }
         sw.Stop();
-        Console.WriteLine("   {0} matches in {1}", ctr, sw.Elapsed);
+        Console.WriteLine($"   {ctr} matches in {sw.Elapsed}");
 
         // Read first ten sentences with compiled regex.
         Console.WriteLine("10 Sentences with Compiled Regex:");
@@ -54,7 +54,7 @@ internal static partial class CompareExample
                 break;
         }
         sw.Stop();
-        Console.WriteLine("   {0} matches in {1}", ctr, sw.Elapsed);
+        Console.WriteLine($"   {ctr} matches in {sw.Elapsed}");
 
         // Read first ten sentences with source-generated regex.
         Console.WriteLine("10 Sentences with Source-generated Regex:");
@@ -70,7 +70,7 @@ internal static partial class CompareExample
                 break;
         }
         sw.Stop();
-        Console.WriteLine("   {0} matches in {1}", ctr, sw.Elapsed);
+        Console.WriteLine($"   {ctr} matches in {sw.Elapsed}");
 
         // Read all sentences with interpreted regex.
         Console.WriteLine("All Sentences with Interpreted Regex:");
@@ -85,7 +85,7 @@ internal static partial class CompareExample
             match = match.NextMatch();
         }
         sw.Stop();
-        Console.WriteLine("   {0:N0} matches in {1}", matches, sw.Elapsed);
+        Console.WriteLine($"   {matches:N0} matches in {sw.Elapsed}");
 
         // Read all sentences with compiled regex.
         Console.WriteLine("All Sentences with Compiled Regex:");
@@ -101,7 +101,7 @@ internal static partial class CompareExample
             match = match.NextMatch();
         }
         sw.Stop();
-        Console.WriteLine("   {0:N0} matches in {1}", matches, sw.Elapsed);
+        Console.WriteLine($"   {matches:N0} matches in {sw.Elapsed}");
 
         // Read all sentences with source-generated regex.
         Console.WriteLine("All Sentences with Source-generated Regex:");
@@ -115,7 +115,7 @@ internal static partial class CompareExample
             match = match.NextMatch();
         }
         sw.Stop();
-        Console.WriteLine("   {0:N0} matches in {1}", matches, sw.Elapsed);
+        Console.WriteLine($"   {matches:N0} matches in {sw.Elapsed}");
 
         return;
     }

@@ -1,4 +1,4 @@
-﻿// <Main>
+// <Main>
 using System.Globalization;
 using System.Text.RegularExpressions;
 
@@ -37,7 +37,7 @@ try
 }
 catch (FormatException)
 {
-    Console.WriteLine("Unable to convert {0} to a date.", dateString);
+    Console.WriteLine($"Unable to convert {dateString} to a date.");
 }
 // The example displays the following output if the current culture is en-US:
 //    Millisecond component only: 126

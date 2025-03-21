@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 using System.Text.RegularExpressions;
 
@@ -9,7 +9,7 @@ public class Example
       string input = "ABC123DEF456";
       string pattern = @"\d+";
       string substitution = "$_";
-      Console.WriteLine("Original string:          {0}", input);
+      Console.WriteLine($"Original string:          {input}");
       Console.WriteLine("String with substitution: {0}",
                         Regex.Replace(input, pattern, substitution));
    }

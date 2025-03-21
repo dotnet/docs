@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.Serialization;
@@ -159,8 +159,7 @@ namespace ServiceModel.Samples
                             {
                                 Console.WriteLine("Found the element");
                                 Person p = (Person)ser.ReadObject(reader);
-                                Console.WriteLine("{0} {1}    id:{2}",
-                                    p.Name , p.Address);
+                                Console.WriteLine($"{p.Name} {p.Address}    id:{2}");
                             }
                             Console.WriteLine(reader.Name);
                             break;

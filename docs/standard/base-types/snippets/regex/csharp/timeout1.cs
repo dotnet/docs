@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,18 +13,17 @@ public class TimeoutExample
         try
         {
             var info = util.GetWordData(title);
-            Console.WriteLine("Words:               {0:N0}", info.Item1);
-            Console.WriteLine("Average Word Length: {0:N2} characters", info.Item2);
+            Console.WriteLine($"Words:               {info.Item1:N0}");
+            Console.WriteLine($"Average Word Length: {info.Item2:N2} characters");
         }
         catch (IOException e)
         {
-            Console.WriteLine("IOException reading file '{0}'", title);
+            Console.WriteLine($"IOException reading file '{title}'");
             Console.WriteLine(e.Message);
         }
         catch (RegexMatchTimeoutException e)
         {
-            Console.WriteLine("The operation timed out after {0:N0} milliseconds",
-                              e.MatchTimeout.TotalMilliseconds);
+            Console.WriteLine($"The operation timed out after {e.MatchTimeout.TotalMilliseconds:N0} milliseconds");
         }
     }
 }

@@ -5,15 +5,15 @@ using Microsoft.Extensions.Options;
 using OpenTelemetry.Trace;
 
 // Configure OpenTelemetry exporter
-var sourceName = Guid.NewGuid().ToString();
-var tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
+string sourceName = Guid.NewGuid().ToString();
+TracerProvider tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
     .AddSource(sourceName)
     .AddConsoleExporter()
     .Build();
 
 // Explore changing the order of the intermediate "Use" calls to see that impact
 // that has on what gets cached, traced, etc.
-var generator = new EmbeddingGeneratorBuilder<string, Embedding<float>>(
+IEmbeddingGenerator<string, Embedding<float>> generator = new EmbeddingGeneratorBuilder<string, Embedding<float>>(
         new SampleEmbeddingGenerator(new Uri("http://coolsite.ai"), "target-ai-model"))
     .UseDistributedCache(
         new MemoryDistributedCache(
@@ -21,7 +21,7 @@ var generator = new EmbeddingGeneratorBuilder<string, Embedding<float>>(
     .UseOpenTelemetry(sourceName: sourceName)
     .Build();
 
-var embeddings = await generator.GenerateAsync(
+GeneratedEmbeddings<Embedding<float>> embeddings = await generator.GenerateAsync(
 [
     "What is AI?",
     "What is .NET?",

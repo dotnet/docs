@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
@@ -30,7 +30,7 @@ namespace Microsoft.ServiceModel.Samples
         {
             double result = n1 + n2;
             Console.WriteLine("Received Add({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
@@ -38,7 +38,7 @@ namespace Microsoft.ServiceModel.Samples
         {
             double result = n1 - n2;
             Console.WriteLine("Received Subtract({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
@@ -46,7 +46,7 @@ namespace Microsoft.ServiceModel.Samples
         {
             double result = n1 * n2;
             Console.WriteLine("Received Multiply({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
@@ -54,7 +54,7 @@ namespace Microsoft.ServiceModel.Samples
         {
             double result = n1 / n2;
             Console.WriteLine("Received Divide({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 

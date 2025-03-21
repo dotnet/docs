@@ -1,4 +1,4 @@
-﻿namespace ThreadLocalFor
+namespace ThreadLocalFor
 {
     //<snippet05>
     using System;
@@ -22,7 +22,7 @@
                 },
                 subtotal => Interlocked.Add(ref total, subtotal));
 
-            Console.WriteLine("The total is {0:N0}", total);
+            Console.WriteLine($"The total is {total:N0}");
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
@@ -68,7 +68,7 @@ namespace NotInUse
             int places = (from c in precision.ToString().ToCharArray()
                           where c == '0'
                           select c).Count();
-            Console.WriteLine("The square root of {0} to {1} places is {2}", x, places, r);
+            Console.WriteLine($"The square root of {x} to {places} places is {r}");
         }
     }
 }

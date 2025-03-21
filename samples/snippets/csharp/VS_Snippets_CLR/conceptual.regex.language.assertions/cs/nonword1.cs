@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Text.RegularExpressions;
 
@@ -9,8 +9,7 @@ public class Example
         string input = "equity queen equip acquaint quiet";
         string pattern = @"\Bqu\w+";
         foreach (Match match in Regex.Matches(input, pattern))
-            Console.WriteLine("'{0}' found at position {1}",
-                              match.Value, match.Index);
+            Console.WriteLine($"'{match.Value}' found at position {match.Index}");
     }
 }
 // The example displays the following output:

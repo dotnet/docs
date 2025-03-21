@@ -5,9 +5,6 @@ namespace ProdConsumerCS
     using System.Collections;
     using System.Collections.Concurrent;
     using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.Linq;
-    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -24,7 +21,7 @@ namespace ProdConsumerCS
 
         public SimplePriorityQueue(int priCount)
         {
-            this.priorityCount = priCount;
+            priorityCount = priCount;
             _queues = new ConcurrentQueue<KeyValuePair<int, TValue>>[priorityCount];
             for (int i = 0; i < priorityCount; i++)
                 _queues[i] = new ConcurrentQueue<KeyValuePair<int, TValue>>();
@@ -83,8 +80,8 @@ namespace ProdConsumerCS
         // data as we have without running off the end.
         public void CopyTo(KeyValuePair<int, TValue>[] destination, int destStartingIndex)
         {
-            if (destination == null) throw new ArgumentNullException();
-            if (destStartingIndex < 0) throw new ArgumentOutOfRangeException();
+            ArgumentNullException.ThrowIfNull(destination);
+            ArgumentOutOfRangeException.ThrowIfNegative(destStartingIndex);
 
             int remaining = destination.Length;
             KeyValuePair<int, TValue>[] temp = this.ToArray();
@@ -210,29 +207,33 @@ namespace ProdConsumerCS
                         if (success)
                         {
                             // Do something useful with the data.
-                            Console.WriteLine("removed Pri = {0} data = {1} collCount= {2}", item.Key, item.Value, bc.Count);
+                            Console.WriteLine($"removed Pri = {item.Key} data = {item.Value} collCount= {bc.Count}");
                         }
                         else
                         {
-                            Console.WriteLine("No items to retrieve. count = {0}", bc.Count);
+                            Console.WriteLine($"No items to retrieve. count = {bc.Count}");
                         }
                     }
                     Console.WriteLine("Exited consumer loop");
                 },
                 cts.Token);
 
-            try {
+            try
+            {
                 Task.WaitAll(tasks, cts.Token);
             }
-            catch (OperationCanceledException e) {
+            catch (OperationCanceledException e)
+            {
                 if (e.CancellationToken == cts.Token)
                     Console.WriteLine("Operation was canceled by user. Press any key to exit");
             }
-            catch (AggregateException ae) {
+            catch (AggregateException ae)
+            {
                 foreach (var v in ae.InnerExceptions)
                     Console.WriteLine(v.Message);
             }
-            finally {
+            finally
+            {
                 cts.Dispose();
             }
 

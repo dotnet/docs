@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Text.RegularExpressions;
 
@@ -11,42 +11,36 @@ public class Example
       pattern = @"(a\1|(?(1)\1)){0,2}";
       input = "aaabbb";
 
-      Console.WriteLine("Regex pattern: {0}", pattern);
+      Console.WriteLine($"Regex pattern: {pattern}");
       Match match = Regex.Match(input, pattern);
-      Console.WriteLine("Match: '{0}' at position {1}.",
-                        match.Value, match.Index);
+      Console.WriteLine($"Match: '{match.Value}' at position {match.Index}.");
       if (match.Groups.Count > 1) {
          for (int groupCtr = 1; groupCtr <= match.Groups.Count - 1; groupCtr++)
          {
             Group group = match.Groups[groupCtr];
-            Console.WriteLine("   Group: {0}: '{1}' at position {2}.",
-                              groupCtr, group.Value, group.Index);
+            Console.WriteLine($"   Group: {groupCtr}: '{group.Value}' at position {group.Index}.");
             int captureCtr = 0;
             foreach (Capture capture in group.Captures) {
                captureCtr++;
-               Console.WriteLine("      Capture: {0}: '{1}' at position {2}.",
-                                 captureCtr, capture.Value, capture.Index);
+               Console.WriteLine($"      Capture: {captureCtr}: '{capture.Value}' at position {capture.Index}.");
             }
          }
       }
       Console.WriteLine();
 
       pattern = @"(a\1|(?(1)\1)){2}";
-      Console.WriteLine("Regex pattern: {0}", pattern);
+      Console.WriteLine($"Regex pattern: {pattern}");
       match = Regex.Match(input, pattern);
-         Console.WriteLine("Matched '{0}' at position {1}.",
-                           match.Value, match.Index);
+         Console.WriteLine($"Matched '{match.Value}' at position {match.Index}.");
       if (match.Groups.Count > 1) {
          for (int groupCtr = 1; groupCtr <= match.Groups.Count - 1; groupCtr++)
          {
             Group group = match.Groups[groupCtr];
-            Console.WriteLine("   Group: {0}: '{1}' at position {2}.",
-                              groupCtr, group.Value, group.Index);
+            Console.WriteLine($"   Group: {groupCtr}: '{group.Value}' at position {group.Index}.");
             int captureCtr = 0;
             foreach (Capture capture in group.Captures) {
                captureCtr++;
-               Console.WriteLine("      Capture: {0}: '{1}' at position {2}.",
-                                 captureCtr, capture.Value, capture.Index);
+               Console.WriteLine($"      Capture: {captureCtr}: '{capture.Value}' at position {capture.Index}.");
             }
          }
       }

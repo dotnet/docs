@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Class1
@@ -86,8 +86,7 @@ public class Class1
       }
       catch (ArgumentException)
       {
-         Console.WriteLine("Attempt to create DateTimeOffset value from {0} failed.",
-                            targetTime);
+         Console.WriteLine($"Attempt to create DateTimeOffset value from {targetTime} failed.");
       }
       // Throws exception and displays the following to the console:
       //   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM +00:00 failed.
@@ -131,8 +130,7 @@ public class Class1
       }
       catch (ArgumentException)
       {
-         Console.WriteLine("Attempt to create DateTimeOffset value from {0} failed.",
-                            utcTime);
+         Console.WriteLine($"Attempt to create DateTimeOffset value from {utcTime} failed.");
       }
       // Throws exception and displays the following to the console:
       //   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM failed.
@@ -155,8 +153,7 @@ public class Class1
       }
       catch (ArgumentException)
       {
-         Console.WriteLine("Attempt to create DateTimeOffset value from {0} failed.",
-                            localTime);
+         Console.WriteLine($"Attempt to create DateTimeOffset value from {localTime} failed.");
       }
       // Throws exception and displays the following to the console:
       //   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM failed.
@@ -210,14 +207,14 @@ public class Class1
       }
       catch (FormatException)
       {
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
       }
 
       timeString = "05/01/2008 8:30 AM";
       if (DateTimeOffset.TryParse(timeString, out targetTime))
          Console.WriteLine(targetTime);
       else
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
 
       timeString = "Thursday, 01 May 2008 08:30";
       try
@@ -228,7 +225,7 @@ public class Class1
       }
       catch (FormatException)
       {
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
       }
 
       timeString = "Thursday, 01 May 2008 08:30 +02:00";
@@ -244,7 +241,7 @@ public class Class1
                                       out targetTime))
          Console.WriteLine(targetTime);
       else
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
       // The example displays the following output to the console:
       //    5/1/2008 8:30:00 AM +01:00
       //    5/1/2008 8:30:00 AM -07:00

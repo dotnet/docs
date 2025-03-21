@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.IO;
 using System.Xml;
@@ -16,7 +16,7 @@ reader.ReadToDescendant("book");
 if (reader.HasAttributes) {
   Console.WriteLine("Attributes of <" + reader.Name + ">");
   for (int i = 0; i < reader.AttributeCount; i++) {
-    Console.WriteLine("  {0}", reader[i]);
+    Console.WriteLine($"  {reader[i]}");
   }
   // Move the reader back to the element node.
   reader.MoveToElement();
@@ -82,7 +82,7 @@ reader.ReadToFollowing("book");
 if (reader.HasAttributes) {
   Console.WriteLine("Attributes of <" + reader.Name + ">");
   while (reader.MoveToNextAttribute()) {
-    Console.WriteLine(" {0}={1}", reader.Name, reader.Value);
+    Console.WriteLine($" {reader.Name}={reader.Value}");
   }
   // Move the reader back to the element node.
   reader.MoveToElement();
@@ -160,7 +160,7 @@ while (reader.Read()) {
   if (reader.IsStartElement()) {
     if (reader.Prefix==String.Empty)
                 {
-                    Console.WriteLine("<{0}>", reader.LocalName);
+                    Console.WriteLine($"<{reader.LocalName}>");
                 }
                 else {
       Console.Write("<{0}:{1}>", reader.Prefix, reader.LocalName);
@@ -181,7 +181,7 @@ while (reader.Read()) {
   if (reader.IsStartElement()) {
     if (reader.IsEmptyElement)
                 {
-                    Console.WriteLine("<{0}/>", reader.Name);
+                    Console.WriteLine($"<{reader.Name}/>");
                 }
                 else {
       Console.Write("<{0}> ", reader.Name);
@@ -311,7 +311,7 @@ static void ReadToFollowing() {
 using (XmlReader reader = XmlReader.Create("books.xml")) {
     reader.ReadToFollowing("book");
     do {
-       Console.WriteLine("ISBN: {0}", reader.GetAttribute("ISBN"));
+       Console.WriteLine($"ISBN: {reader.GetAttribute("ISBN")}");
     } while (reader.ReadToNextSibling("book"));
 }
 //</snippet15>
@@ -327,9 +327,9 @@ using (XmlReader reader = XmlReader.Create("book1.xml", settings)) {
   // Parse the file and display each node.
   while (reader.Read()) {
     if (reader.HasValue)
-      Console.WriteLine("({0})  {1}={2}", reader.NodeType, reader.Name, reader.Value);
+      Console.WriteLine($"({reader.NodeType})  {reader.Name}={reader.Value}");
     else
-      Console.WriteLine("({0}) {1}", reader.NodeType, reader.Name);
+      Console.WriteLine($"({reader.NodeType}) {reader.Name}");
   }
 }
 //</snippet16>

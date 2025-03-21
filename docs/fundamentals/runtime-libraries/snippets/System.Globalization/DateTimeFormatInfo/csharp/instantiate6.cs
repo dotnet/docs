@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -53,7 +53,7 @@ public class InstantiateEx6
                     if (nList.Count != sList.Count)
                     {
                         match = false;
-                        Console.WriteLine("   Different n in {2} array for {0} and {1}", name, ci.Name, prop.Name);
+                        Console.WriteLine($"   Different n in {prop.Name} array for {name} and {ci.Name}");
                         break;
                     }
 
@@ -62,7 +62,7 @@ public class InstantiateEx6
                         if (!nList[ctr].Equals(sList[ctr]))
                         {
                             match = false;
-                            Console.WriteLine("   {0} value different for {1} and {2}", prop.Name, name, ci.Name);
+                            Console.WriteLine($"   {prop.Name} value different for {name} and {ci.Name}");
                             break;
                         }
                     }
@@ -81,7 +81,7 @@ public class InstantiateEx6
                         // The cultures have a different calendar type.
                         if (specificValue.ToString() != neutralValue.ToString())
                         {
-                            Console.WriteLine("   Different calendar types for {0} and {1}", name, ci.Name);
+                            Console.WriteLine($"   Different calendar types for {name} and {ci.Name}");
                             match = false;
                             break;
                         }
@@ -90,7 +90,7 @@ public class InstantiateEx6
                         {
                             if (((GregorianCalendar)specificValue).CalendarType != ((GregorianCalendar)neutralValue).CalendarType)
                             {
-                                Console.WriteLine("   Different Gregorian calendar types for {0} and {1}", name, ci.Name);
+                                Console.WriteLine($"   Different Gregorian calendar types for {name} and {ci.Name}");
                                 match = false;
                                 break;
                             }
@@ -99,20 +99,19 @@ public class InstantiateEx6
                     else if (!specificValue.Equals(neutralValue))
                     {
                         match = false;
-                        Console.WriteLine("   Different {0} values for {1} and {2}", prop.Name, name, ci.Name);
+                        Console.WriteLine($"   Different {prop.Name} values for {name} and {ci.Name}");
                         break;
                     }
                 }
             }
             if (match)
             {
-                Console.WriteLine("DateTimeFormatInfo object for '{0}' matches '{1}'",
-                                  name, ci.Name);
+                Console.WriteLine($"DateTimeFormatInfo object for '{name}' matches '{ci.Name}'");
                 hasOneMatch = true;
             }
         }
         if (!hasOneMatch)
-            Console.WriteLine("DateTimeFormatInfo object for '{0}' --> No Match", name);
+            Console.WriteLine($"DateTimeFormatInfo object for '{name}' --> No Match");
 
         Console.WriteLine();
     }

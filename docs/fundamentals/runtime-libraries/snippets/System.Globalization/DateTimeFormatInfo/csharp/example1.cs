@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 using System.Globalization;
 
@@ -11,14 +11,12 @@ public class Example1
         DateTimeFormatInfo dtfi = enUS.DateTimeFormat;
 
         Console.WriteLine("Before modifying DateTimeFormatInfo object: ");
-        Console.WriteLine("{0}: {1}\n", dtfi.ShortDatePattern,
-                                      dateValue.ToString("d", enUS));
+        Console.WriteLine($"{dtfi.ShortDatePattern}: {dateValue.ToString("d", enUS)}\n");
 
         // Modify the short date pattern.
         dtfi.ShortDatePattern = "yyyy-MM-dd";
         Console.WriteLine("After modifying DateTimeFormatInfo object: ");
-        Console.WriteLine("{0}: {1}", dtfi.ShortDatePattern,
-                                      dateValue.ToString("d", enUS));
+        Console.WriteLine($"{dtfi.ShortDatePattern}: {dateValue.ToString("d", enUS)}");
     }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 
@@ -7,8 +7,7 @@ public class Example5
    public static void Main()
    {
       CultureInfo culture = CultureInfo.CurrentCulture;
-      Console.WriteLine("The current culture is {0} [{1}]",
-                        culture.NativeName, culture.Name);
+      Console.WriteLine($"The current culture is {culture.NativeName} [{culture.Name}]");
    }
 }
 // The example displays output like the following:

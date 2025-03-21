@@ -59,7 +59,9 @@ public class Example
 
         // Check the list for part #1734. This calls the IEquatable.Equals method
         // of the Part class, which checks the PartId for equality.
-        Console.WriteLine($"\nContains(\"1734\"): {parts.Contains(new Part { PartId = 1734, PartName = "" })}");
+        Console.WriteLine($"""
+        Contains("1734"): {parts.Contains(new Part { PartId = 1734, PartName = "" })}
+        """);
 
         // Insert a new item at position 2.
         Console.WriteLine("\nInsert(2, \"1834\")");

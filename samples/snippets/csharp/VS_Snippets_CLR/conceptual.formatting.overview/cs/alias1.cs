@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 
@@ -7,7 +7,7 @@ public class Example
    public static void Main()
    {
       DateTime date1 = new DateTime(2009, 6, 30);
-      Console.WriteLine("D Format Specifier:     {0:D}", date1);
+      Console.WriteLine($"D Format Specifier:     {date1:D}");
       string longPattern = CultureInfo.CurrentCulture.DateTimeFormat.LongDatePattern;
       Console.WriteLine("'{0}' custom format string:     {1}",
                         longPattern, date1.ToString(longPattern));

@@ -1,4 +1,4 @@
-﻿//  Copyright (c) Microsoft Corporation. All rights reserved.
+//  Copyright (c) Microsoft Corporation. All rights reserved.
 // <snippet6>
 using System;
 
@@ -54,13 +54,13 @@ namespace Microsoft.ServiceModel.Samples
         // Asynchronous callbacks for displaying results.
         static void AddCallback(object sender, AddCompletedEventArgs e)
         {
-            Console.WriteLine("Add Result: {0}", e.Result);
+            Console.WriteLine($"Add Result: {e.Result}");
         }
         // </snippet4>
 
         static void SubtractCallback(object sender, SubtractCompletedEventArgs e)
         {
-            Console.WriteLine("Subtract Result: {0}", e.Result);
+            Console.WriteLine($"Subtract Result: {e.Result}");
         }
     }
 }

@@ -1,7 +1,7 @@
 ---
 title: Tips for Python Developers
 description: New to C#, but know Python? Here's a roadmap of what's familiar, features in C# that aren't in Python, and alternatives for Python features that aren't in C#.
-ms.date: 04/03/2024
+ms.date: 03/17/2025
 ---
 # Roadmap for Python developers learning C\#
 
@@ -15,7 +15,7 @@ C# and Python share similar concepts. These familiar constructs help you learn C
 1. ***Pattern matching***: Python's `match` expression and pattern matching is similar to C#'s [pattern matching](../fundamentals/functional/pattern-matching.md) `switch` expression. You use them to inspect a complex data expression to determine if it matches a pattern.
 1. ***Statement keywords***: Python and C# share many keywords, such as `if`, `else`, `while`, `for`, and many others. While not all syntax is the same, there's enough similarity that you can read C# if you know Python.
 
-As you start learning C#, you'll learn these important concepts where C# is different than Python:
+As you learn C#, you discover these important concepts where C# is different than Python:
 
 1. [***Indentation vs. tokens***](./tutorials/branches-and-loops.md): In Python, newlines and indentation are first-class syntactic elements. In C#, whitespace isn't significant. Tokens, like `;` separate statements, and other tokens `{` and `}` control block scope for `if` and other block statements. However, for readability, most coding styles (including the style used in these docs) use indentation to reinforce the block scopes declared by `{` and `}`.
 1. [***Static typing***](../fundamentals/types/index.md): In C#, a variable declaration includes its type. Reassigning a variable to an object of a different type generates a compiler error. In Python, the type can change when reassigned.

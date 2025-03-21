@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 /*
 The following example demonstrates using asynchronous methods to
 get Domain Name System information for the specified host computer.
@@ -70,7 +70,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
         {
             // Print a message to indicate that the application
             // is still working on the remaining requests.
-            Console.WriteLine("{0} requests remaining.", requestCounter);
+            Console.WriteLine($"{requestCounter} requests remaining.");
         }
         public static void Main()
         {
@@ -104,8 +104,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             {
                     if (r.ExceptionObject != null)
                     {
-                        Console.WriteLine("Request for host {0} returned the following error: {1}.",
-                            r.HostName, r.ExceptionObject.Message);
+                        Console.WriteLine($"Request for host {r.HostName} returned the following error: {r.ExceptionObject.Message}.");
                     }
                     else
                     {
@@ -115,15 +114,15 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                         IPAddress[] addresses = h.AddressList;
                         if (aliases.Length > 0)
                         {
-                            Console.WriteLine("Aliases for {0}", r.HostName);
+                            Console.WriteLine($"Aliases for {r.HostName}");
                             for (int j = 0; j < aliases.Length; j++)
                             {
-                                Console.WriteLine("{0}", aliases[j]);
+                                Console.WriteLine($"{aliases[j]}");
                             }
                         }
                         if (addresses.Length > 0)
                         {
-                            Console.WriteLine("Addresses for {0}", r.HostName);
+                            Console.WriteLine($"Addresses for {r.HostName}");
                             for (int k = 0; k < addresses.Length; k++)
                             {
                                 Console.WriteLine("{0}",addresses[k].ToString());

@@ -1,4 +1,4 @@
-﻿//<snippet19>
+//<snippet19>
 using System;
 using System.Runtime.InteropServices;
 
@@ -60,8 +60,7 @@ public class App
             Marshal.DestroyStructure(current, typeof(MyStruct));
             current = (IntPtr)((long)current + Marshal.SizeOf(manArray[i]));
 
-            Console.WriteLine("Element {0}: {1} {2}", i, manArray[i].buffer,
-                manArray[i].size);
+            Console.WriteLine($"Element {i}: {manArray[i].buffer} {manArray[i].size}");
         }
 
         Marshal.FreeCoTaskMem(outArray);

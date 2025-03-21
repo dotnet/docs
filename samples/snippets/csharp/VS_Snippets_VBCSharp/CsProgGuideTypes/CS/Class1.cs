@@ -1,4 +1,4 @@
-﻿//<snippet5555>
+//<snippet5555>
 using System;
 using System.Collections.Generic;
 //</snippet5555>
@@ -190,7 +190,7 @@ namespace CsProgGuideTypes
             }
             catch (System.InvalidCastException e)
             {
-                System.Console.WriteLine("{0} Error: Incorrect unboxing.", e.Message);
+                System.Console.WriteLine($"{e.Message} Error: Incorrect unboxing.");
             }
         }
     }
@@ -210,7 +210,7 @@ namespace CsProgGuideTypes
                 Array.Reverse(bytes);
 
             int i = BitConverter.ToInt32(bytes, 0);
-            Console.WriteLine("int: {0}", i);
+            Console.WriteLine($"int: {i}");
             // Output: int: 25
             //</Snippet22>
         }
@@ -326,7 +326,7 @@ namespace CsProgGuideTypes
 
             byte[] floatVals = BitConverter.GetBytes(num);
             float f = BitConverter.ToSingle(floatVals, 0);
-            Console.WriteLine("float convert = {0}", f);
+            Console.WriteLine($"float convert = {f}");
 
             // Output: 200.0056
             //</snippet39>

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ca1003
 {
@@ -35,7 +35,7 @@ namespace ca1003
 
         private void HandleEvent(object sender, CustomEventArgs e)
         {
-            Console.WriteLine("Event handled: {0}", e.info);
+            Console.WriteLine($"Event handled: {e.info}");
         }
     }
 
@@ -84,7 +84,7 @@ namespace ca1003_fix
 
         private void HandleEvent(object? sender, CustomEventArgs e)
         {
-            Console.WriteLine("Event handled: {0}", e.info);
+            Console.WriteLine($"Event handled: {e.info}");
         }
     }
 

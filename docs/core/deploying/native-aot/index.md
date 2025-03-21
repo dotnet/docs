@@ -43,7 +43,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 - RHEL (8+)
 
   ```sh
-  sudo dnf install clang zlib-devel
+  sudo dnf install clang zlib-devel zlib-ng-devel zlib-ng-compat-devel
   ```
 
 # [Ubuntu](#tab/linux-ubuntu)

@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Globalization;
 
@@ -52,7 +52,7 @@ public class Example
       }
       catch (FormatException)
       {
-         Console.WriteLine("Unable to convert {0} to a date.", dateString);
+         Console.WriteLine($"Unable to convert {dateString} to a date.");
       }
    }
 }

@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,7 @@ static class DataflowReversedWords
       // Downloads the requested resource as a string.
       var downloadString = new TransformBlock<string, string>(async uri =>
       {
-         Console.WriteLine("Downloading '{0}'...", uri);
+         Console.WriteLine($"Downloading '{uri}'...");
 
          return await new HttpClient(new HttpClientHandler{ AutomaticDecompression = System.Net.DecompressionMethods.GZip }).GetStringAsync(uri);
       });

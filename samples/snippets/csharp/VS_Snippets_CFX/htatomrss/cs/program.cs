@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Xml;
 using System.Collections.Generic;
@@ -94,7 +94,7 @@ namespace Service
                 Console.WriteLine("Items:");
                 foreach (SyndicationItem item in atomFeed.Items)
                 {
-                    Console.WriteLine("Title: {0}", item.Title.Text);
+                    Console.WriteLine($"Title: {item.Title.Text}");
                     Console.WriteLine("Content: {0}", ((TextSyndicationContent)item.Content).Text);
                 }
 
@@ -105,7 +105,7 @@ namespace Service
                 Console.WriteLine("Items:");
                 foreach (SyndicationItem item in rssFeed.Items)
                 {
-                    Console.WriteLine("Title: {0}", item.Title.Text);
+                    Console.WriteLine($"Title: {item.Title.Text}");
                     // Notice we are using item.Summary here instead of item.Content. This is because
                     // of the differences between Atom 1.0 and RSS 2.0 specs.
                     Console.WriteLine("Content: {0}", ((TextSyndicationContent)item.Summary).Text);
@@ -118,7 +118,7 @@ namespace Service
             }
             catch (CommunicationException ce)
             {
-                Console.WriteLine("An exception occurred: {0}", ce.Message);
+                Console.WriteLine($"An exception occurred: {ce.Message}");
                 svcHost.Abort();
             }
         }

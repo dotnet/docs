@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Text.RegularExpressions;
 
@@ -17,16 +17,16 @@ class Example
       Match m = Regex.Match(input, pattern);
       if (m.Success == true)
       {
-         Console.WriteLine("Input: \"{0}\" \nMatch: \"{1}\"", input, m);
+         Console.WriteLine($"Input: \"{input}\" \nMatch: \"{m}\"");
          int grpCtr = 0;
          foreach (Group grp in m.Groups)
          {
-            Console.WriteLine("   Group {0}: {1}", grpCtr, grp.Value);
+            Console.WriteLine($"   Group {grpCtr}: {grp.Value}");
             grpCtr++;
             int capCtr = 0;
             foreach (Capture cap in grp.Captures)
             {
-                Console.WriteLine("      Capture {0}: {1}", capCtr, cap.Value);
+                Console.WriteLine($"      Capture {capCtr}: {cap.Value}");
                 capCtr++;
             }
           }

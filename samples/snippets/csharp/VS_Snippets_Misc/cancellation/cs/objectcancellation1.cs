@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Threading;
 
@@ -13,7 +13,7 @@ class CancelableObject
 
     public void Cancel()
     {
-        Console.WriteLine("Object {0} Cancel callback", id);
+        Console.WriteLine($"Object {id} Cancel callback");
         // Perform object cancellation here.
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.ServiceModel.Description;
@@ -37,7 +37,7 @@ namespace Microsoft.WCF.Documentation
 
     public object BeforeCall(string operationName, object[] inputs)
     {
-      Console.WriteLine("IParameterInspector.BeforeCall called for {0}.", operationName);
+      Console.WriteLine($"IParameterInspector.BeforeCall called for {operationName}.");
       return null;
     }
     // </snippet4>

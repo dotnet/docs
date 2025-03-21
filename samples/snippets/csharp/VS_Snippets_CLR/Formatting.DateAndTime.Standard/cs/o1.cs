@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 
 public class Example
@@ -18,7 +18,7 @@ public class Example
        Console.WriteLine("{0} ({1}) --> {0:O}\n", lDat, lDat.Kind);
 
        DateTimeOffset dto = new DateTimeOffset(lDat);
-       Console.WriteLine("{0} --> {0:O}", dto);
+       Console.WriteLine($"{dto} --> {dto:O}");
    }
 }
 // The example displays the following output:

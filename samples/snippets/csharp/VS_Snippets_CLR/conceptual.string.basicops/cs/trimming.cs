@@ -1,4 +1,4 @@
-﻿//<snippet15>
+//<snippet15>
 using System;
 
 class Example
@@ -16,9 +16,9 @@ class Example
     {
         // <snippet17>
         string MyString = " Big   ";
-        Console.WriteLine("Hello{0}World!", MyString);
+        Console.WriteLine($"Hello{MyString}World!");
         string TrimString = MyString.Trim();
-        Console.WriteLine("Hello{0}World!", TrimString);
+        Console.WriteLine($"Hello{TrimString}World!");
         //       The example displays the following output:
         //             Hello Big   World!
         //             HelloBigWorld!

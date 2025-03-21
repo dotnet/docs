@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.Text;
@@ -26,13 +26,13 @@ namespace Microsoft.WCF.Documentation
     StatefulService()
     {
       this.objectID = Guid.NewGuid().ToString();
-      Console.WriteLine("Object {0} created.", this.objectID);
-      Console.WriteLine("Session: {0}:", OperationContext.Current.SessionId);
+      Console.WriteLine($"Object {this.objectID} created.");
+      Console.WriteLine($"Session: {OperationContext.Current.SessionId}:");
     }
 
 ~StatefulService()
 	{
-    Console.WriteLine("Object {0} destroyed.", this.objectID);
+    Console.WriteLine($"Object {this.objectID} destroyed.");
 	}
 
     #region IStatefulService Members

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace conversions
@@ -63,7 +63,7 @@ namespace conversions
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("Unable to parse '{0}'", dateString);
+                    Console.WriteLine($"Unable to parse '{dateString}'");
                 }
             }
             // The example displays the following output:

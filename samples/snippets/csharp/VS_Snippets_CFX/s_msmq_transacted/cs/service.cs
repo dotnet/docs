@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 // This is the service code
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
@@ -139,7 +139,7 @@ namespace Microsoft.ServiceModel.Samples
         public void SubmitPurchaseOrder(PurchaseOrder po)
         {
             Orders.Add(po);
-            Console.WriteLine("Processing {0} ", po);
+            Console.WriteLine($"Processing {po} ");
         }
     }
     // </Snippet3>

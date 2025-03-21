@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +23,7 @@ namespace MapCLRFunctionToStoreFunction
 
                 foreach (var student in students)
                 {
-                    Console.WriteLine("{0}: {1}", student.name, student.avgGrade);
+                    Console.WriteLine($"{student.name}: {student.avgGrade}");
                 }
             }
             //</snippet4>

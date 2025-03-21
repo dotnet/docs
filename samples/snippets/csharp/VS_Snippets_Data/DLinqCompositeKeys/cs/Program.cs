@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,10 +18,10 @@ namespace cs_compositekeys
 
             foreach (var grp in query)
             {
-                Console.WriteLine("\nLocation Key: {0}", grp.Key);
+                Console.WriteLine($"\nLocation Key: {grp.Key}");
                 foreach (var listing in grp)
                 {
-                    Console.WriteLine("\t{0}", listing);
+                    Console.WriteLine($"\t{listing}");
                 }
             }
             // </Snippet1>

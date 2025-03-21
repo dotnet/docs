@@ -1,4 +1,4 @@
-﻿namespace CsCsrefProgrammingStatements
+namespace CsCsrefProgrammingStatements
 {
     //---------------------------------------------------------------------------
     public class SimpleStatements
@@ -29,8 +29,7 @@
                 // Expression statement (method invocation). A single-line
                 // statement can span multiple text lines because line breaks
                 // are treated as white space, which is ignored by the compiler.
-                System.Console.WriteLine("Radius of circle #{0} is {1}. Circumference = {2:N2}",
-                                        counter, radius, circumference);
+                System.Console.WriteLine($"Radius of circle #{counter} is {radius}. Circumference = {circumference:N2}");
 
                 // Expression statement (postfix increment).
                 counter++;
@@ -285,14 +284,14 @@
                 int i = 5;
 
                 Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
-                Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
+                Console.WriteLine($"pointA == pointB = {pointA == pointB}");
                 Console.WriteLine("null comparison = {0}", pointA.Equals(pointC));
                 Console.WriteLine("Compare to some other type = {0}", pointA.Equals(i));
 
                 TwoDPoint pointD = null;
                 TwoDPoint pointE = null;
 
-                Console.WriteLine("Two null TwoDPoints are equal: {0}", pointD == pointE);
+                Console.WriteLine($"Two null TwoDPoints are equal: {pointD == pointE}");
 
                 pointE = new TwoDPoint(3, 4);
                 Console.WriteLine("(pointE == pointA) = {0}", pointE == pointA);
@@ -343,7 +342,7 @@
 
                 int uniqueObjects = list.Count();
 
-                Console.WriteLine("there are {0} unique objects", uniqueObjects);
+                Console.WriteLine($"there are {uniqueObjects} unique objects");
 
                 var uniqueHashCodes = (from item in list
                                        select item.GetHashCode())
@@ -354,7 +353,7 @@
                 // This only shows the number of unique values, not the evenness
                 // of their distribution. For that there is a LINQ query example in the docs
                 // how to group by a range.
-                Console.WriteLine("there are {0} unique hash codes", hashCodeCount);
+                Console.WriteLine($"there are {hashCodeCount} unique hash codes");
 
                 Console.WriteLine("Distribution:");
 
@@ -447,7 +446,7 @@
                 // True:
                 Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
                 // True:
-                Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
+                Console.WriteLine($"pointA == pointB = {pointA == pointB}");
                 // True:
                 Console.WriteLine("object.Equals(pointA, pointB) = {0}", object.Equals(pointA, pointB));
                 // False:
@@ -459,7 +458,7 @@
                 // False:
                 Console.WriteLine("pointA.Equals(i) = {0}", pointA.Equals(i));
                 // CS0019:
-                // Console.WriteLine("pointA == i = {0}", pointA == i);
+                // Console.WriteLine($"pointA == i = {pointA == i}");
 
                 // Compare unboxed to boxed.
                 System.Collections.ArrayList list = new System.Collections.ArrayList();
@@ -473,7 +472,7 @@
                 // False:
                 Console.WriteLine("pointA == (pointC = null) = {0}", pointA == pointC);
                 // True:
-                Console.WriteLine("pointC == pointD = {0}", pointC == pointD);
+                Console.WriteLine($"pointC == pointD = {pointC == pointD}");
 
                 TwoDPoint temp = new TwoDPoint(3, 4);
                 pointC = temp;

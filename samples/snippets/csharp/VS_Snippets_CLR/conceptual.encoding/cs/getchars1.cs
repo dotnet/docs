@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 using System.Text;
 
@@ -18,7 +18,7 @@ public class Example
       int index = 0;
 
       foreach (var stringValue in strings) {
-         Console.WriteLine("String to Encode: {0}", stringValue);
+         Console.WriteLine($"String to Encode: {stringValue}");
          // Encode the string to a byte array.
          bytes = asciiEncoding.GetBytes(stringValue);
          // Display the encoded bytes.

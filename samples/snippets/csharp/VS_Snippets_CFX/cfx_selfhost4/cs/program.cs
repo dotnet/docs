@@ -1,4 +1,4 @@
-﻿//<snippet5>
+//<snippet5>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,7 +51,7 @@ namespace SelfHost
                 // by the service.
                 host.Open();
 
-                Console.WriteLine("The service is ready at {0}", baseAddress);
+                Console.WriteLine($"The service is ready at {baseAddress}");
                 Console.WriteLine("Press <Enter> to stop the service.");
                 Console.ReadLine();
 

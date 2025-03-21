@@ -5,7 +5,7 @@ using System.Runtime.Remoting.Messaging;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-    public class AsyncMain
+    public class AsyncMain4
     {
         static void Main()
         {
@@ -34,8 +34,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 new AsyncCallback(CallbackMethod),
                 "The call executed on thread {0}, with return value \"{1}\".");
 
-            Console.WriteLine("The main thread {0} continues to execute...",
-                Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine($"The main thread {Thread.CurrentThread.ManagedThreadId} continues to execute...");
 
             // The callback is made on a ThreadPool thread. ThreadPool threads
             // are background threads, which do not keep the application running

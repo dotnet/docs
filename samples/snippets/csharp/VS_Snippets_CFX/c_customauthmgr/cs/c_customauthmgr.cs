@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 //<snippet1>
 using System;
 using System.IdentityModel.Claims;
@@ -56,7 +56,7 @@ namespace Samples
 	{
 	  double result = n1 + n2;
 	  Console.WriteLine("Received Add({0},{1})", n1, n2);
-	  Console.WriteLine("Return: {0}", result);
+	  Console.WriteLine($"Return: {result}");
 	  return result;
 	}
   }

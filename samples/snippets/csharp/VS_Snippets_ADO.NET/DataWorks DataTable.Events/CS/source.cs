@@ -6,7 +6,6 @@ static class Class1
     static void Main()
     {
         DataTableEvents();
-        Console.ReadLine();
     }
     // <Snippet1>
     static void DataTableEvents()
@@ -18,7 +17,7 @@ static class Class1
 
         // Set the primary key.
         table.Columns["id"].Unique = true;
-        table.PrimaryKey = new DataColumn[] { table.Columns["id"] };
+        table.PrimaryKey = [table.Columns["id"]];
 
         // Add a RowChanged event handler.
         table.RowChanged += Row_Changed;
@@ -33,24 +32,19 @@ static class Class1
         table.RowDeleting += Row_Deleting;
 
         // Add a ColumnChanged event handler.
-        table.ColumnChanged +=
-            Column_Changed;
+        table.ColumnChanged += Column_Changed;
 
         // Add a ColumnChanging event handler.
-        table.ColumnChanging +=
-            Column_Changing;
+        table.ColumnChanging += Column_Changing;
 
         // Add a TableNewRow event handler.
-        table.TableNewRow +=
-            Table_NewRow;
+        table.TableNewRow += Table_NewRow;
 
         // Add a TableCleared event handler.
-        table.TableCleared +=
-            Table_Cleared;
+        table.TableCleared += Table_Cleared;
 
         // Add a TableClearing event handler.
-        table.TableClearing +=
-            Table_Clearing;
+        table.TableClearing += Table_Clearing;
 
         // Add a customer.
         DataRow row = table.NewRow();
@@ -71,29 +65,23 @@ static class Class1
     }
 
     static void Row_Changed(object sender, DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Changed Event: name={0}; action={1}",
-            e.Row["name"], e.Action);
+        Console.WriteLine($"Row_Changed Event: name={e.Row["name"]}; action={e.Action}");
 
     static void Row_Changing(object sender, DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Changing Event: name={0}; action={1}",
-            e.Row["name"], e.Action);
+        Console.WriteLine($"Row_Changing Event: name={e.Row["name"]}; action={e.Action}");
 
     static void Row_Deleted(object sender, DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Deleted Event: name={0}; action={1}",
-            e.Row["name", DataRowVersion.Original], e.Action);
+        Console.WriteLine($"Row_Deleted Event: name={e.Row["name", DataRowVersion.Original]}; action={e.Action}");
 
     static void Row_Deleting(object sender,
     DataRowChangeEventArgs e) =>
-        Console.WriteLine("Row_Deleting Event: name={0}; action={1}",
-            e.Row["name"], e.Action);
+        Console.WriteLine($"Row_Deleting Event: name={e.Row["name"]}; action={e.Action}");
 
     static void Column_Changed(object sender, DataColumnChangeEventArgs e) =>
-        Console.WriteLine("Column_Changed Event: ColumnName={0}; RowState={1}",
-            e.Column.ColumnName, e.Row.RowState);
+        Console.WriteLine($"Column_Changed Event: ColumnName={e.Column.ColumnName}; RowState={e.Row.RowState}");
 
     static void Column_Changing(object sender, DataColumnChangeEventArgs e) =>
-        Console.WriteLine("Column_Changing Event: ColumnName={0}; RowState={1}",
-            e.Column.ColumnName, e.Row.RowState);
+        Console.WriteLine($"Column_Changing Event: ColumnName={e.Column.ColumnName}; RowState={e.Row.RowState}");
 
     static void Table_NewRow(object sender,
         DataTableNewRowEventArgs e) =>

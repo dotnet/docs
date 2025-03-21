@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example
@@ -27,10 +27,10 @@ public class Example
    {
       try {
          int number = Int32.Parse(value);
-         Console.WriteLine("'{0}' --> {1}", value, number);
+         Console.WriteLine($"'{value}' --> {number}");
       }
       catch (FormatException) {
-         Console.WriteLine("Unable to parse '{0}'.", value);
+         Console.WriteLine($"Unable to parse '{value}'.");
       }
    }
 }

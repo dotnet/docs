@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Data;
 using System.Data.Common;
@@ -42,12 +42,12 @@ static class Program
                     DbDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        Console.WriteLine("{0}. {1}", reader[0], reader[1]);
+                        Console.WriteLine($"{reader[0]}. {reader[1]}");
                     }
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Exception.Message: {0}", ex.Message);
+                    Console.WriteLine($"Exception.Message: {ex.Message}");
                 }
             }
         }

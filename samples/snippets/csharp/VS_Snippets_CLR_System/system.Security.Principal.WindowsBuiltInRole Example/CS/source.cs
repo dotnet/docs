@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Threading;
 using System.Security.Permissions;
@@ -26,8 +26,7 @@ class SecurityPrincipalDemo
             }
             catch (Exception)
             {
-                Console.WriteLine("{0}: Could not obtain role for this RID.",
-                    roleName);
+                Console.WriteLine($"{roleName}: Could not obtain role for this RID.");
             }
         }
         //</Snippet2>

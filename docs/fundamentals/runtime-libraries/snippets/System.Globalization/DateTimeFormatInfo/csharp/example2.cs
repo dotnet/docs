@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 using System.Globalization;
 
@@ -13,7 +13,7 @@ public class Example2
 
         // Display date before modifying properties.
         foreach (var fmt in formats)
-            Console.WriteLine("{0}: {1}", fmt, value.ToString(fmt, dtfi));
+            Console.WriteLine($"{fmt}: {value.ToString(fmt, dtfi)}");
 
         Console.WriteLine();
 
@@ -25,7 +25,7 @@ public class Example2
         dtfi.LongDatePattern = "ddd dd-MMM-yyyy";
         dtfi.FullDateTimePattern = originalFullDateTimePattern;
         foreach (var fmt in formats)
-            Console.WriteLine("{0}: {1}", fmt, value.ToString(fmt, dtfi));
+            Console.WriteLine($"{fmt}: {value.ToString(fmt, dtfi)}");
     }
 }
 // The example displays the following output:

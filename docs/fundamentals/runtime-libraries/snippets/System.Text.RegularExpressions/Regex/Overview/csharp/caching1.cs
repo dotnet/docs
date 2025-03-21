@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
@@ -18,7 +18,7 @@ public class CachingExample
          MatchCollection matches = rgx.Matches(input);
          if (matches.Count > 0)
          {
-            Console.WriteLine("{0} ({1} matches):", input, matches.Count);
+            Console.WriteLine($"{input} ({matches.Count} matches):");
             foreach (Match match in matches)
                Console.WriteLine("   " + match.Value);
          }
@@ -44,7 +44,7 @@ public class CachingExample
          MatchCollection matches = rgx.Matches(input);
          if (matches.Count > 0)
          {
-            Console.WriteLine("{0} ({1} matches):", input, matches.Count);
+            Console.WriteLine($"{input} ({matches.Count} matches):");
             foreach (Match match in matches)
                Console.WriteLine("   " + match.Value);
          }

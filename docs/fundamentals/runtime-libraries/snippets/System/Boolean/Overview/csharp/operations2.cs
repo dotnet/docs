@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 
 public class Example6
@@ -13,8 +13,7 @@ public class Example6
       foreach (var hasServiceCharge in hasServiceCharges) {
          Decimal total = subtotal + shippingCharge +
                                 (hasServiceCharge ? serviceCharge : 0);
-         Console.WriteLine("hasServiceCharge = {1}: The total is {0:C2}.",
-                           total, hasServiceCharge);
+         Console.WriteLine($"hasServiceCharge = {hasServiceCharge}: The total is {total:C2}.");
       }
    }
 }

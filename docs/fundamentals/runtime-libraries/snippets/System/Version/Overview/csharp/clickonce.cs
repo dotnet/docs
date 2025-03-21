@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 using System.Deployment.Application;
 
@@ -7,7 +7,7 @@ public class Example
    public static void Main()
    {
       Version ver = ApplicationDeployment.CurrentDeployment.CurrentVersion;
-      Console.WriteLine("ClickOnce Publish Version: {0}", ver);
+      Console.WriteLine($"ClickOnce Publish Version: {ver}");
    }
 }
 // </Snippet7>

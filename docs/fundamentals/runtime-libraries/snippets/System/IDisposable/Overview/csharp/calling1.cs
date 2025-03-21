@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -39,7 +39,6 @@ public class Example8
     public static void Main()
     {
         WordCount wc = new WordCount(@"C:\users\ronpet\documents\Fr_Mike_Mass.txt");
-        Console.WriteLine("File {0} ({1}) has {2} words",
-                          wc.Name, wc.FullName, wc.Count);
+        Console.WriteLine($"File {wc.Name} ({wc.FullName}) has {wc.Count} words");
     }
 }

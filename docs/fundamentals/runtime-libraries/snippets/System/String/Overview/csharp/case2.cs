@@ -1,4 +1,4 @@
-﻿// <Snippet17>
+// <Snippet17>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -24,10 +24,9 @@ public class Example1
       // Change the current culture and perform the comparison.
       foreach (var culture in cultures) {
          Thread.CurrentThread.CurrentCulture = culture;
-         Console.WriteLine("Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
+         Console.WriteLine($"Culture: {CultureInfo.CurrentCulture.DisplayName}");
          Console.WriteLine(resource);
-         Console.WriteLine("Access allowed: {0}", 
-                           ! String.Equals(disallowed, scheme, StringComparison.CurrentCultureIgnoreCase));      
+         Console.WriteLine($"Access allowed: {! String.Equals(disallowed, scheme, StringComparison.CurrentCultureIgnoreCase)}");      
          Console.WriteLine();
       }   
    }

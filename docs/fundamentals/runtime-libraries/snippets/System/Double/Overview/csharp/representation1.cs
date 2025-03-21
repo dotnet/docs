@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example13
@@ -11,8 +11,8 @@ public class Example13
         for (int ctr = 1; ctr <= 10; ctr++)
             result2 += value;
 
-        Console.WriteLine(".1 * 10:           {0:R}", result1);
-        Console.WriteLine(".1 Added 10 times: {0:R}", result2);
+        Console.WriteLine($".1 * 10:           {result1:R}");
+        Console.WriteLine($".1 Added 10 times: {result2:R}");
     }
 }
 // The example displays the following output:

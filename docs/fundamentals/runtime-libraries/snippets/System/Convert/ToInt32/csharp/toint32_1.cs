@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -39,10 +39,8 @@ public class Example
       bool falseFlag = false;
       bool trueFlag = true;
 
-      Console.WriteLine("{0} converts to {1}.", falseFlag,
-                        Convert.ToInt32(falseFlag));
-      Console.WriteLine("{0} converts to {1}.", trueFlag,
-                        Convert.ToInt32(trueFlag));
+      Console.WriteLine($"{falseFlag} converts to {Convert.ToInt32(falseFlag)}.");
+      Console.WriteLine($"{trueFlag} converts to {Convert.ToInt32(trueFlag)}.");
       // The example displays the following output:
       //       False converts to 0.
       //       True converts to 1.
@@ -58,9 +56,7 @@ public class Example
       foreach (byte byteValue in bytes)
       {
          result = Convert.ToInt32(byteValue);
-         Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                           byteValue.GetType().Name, byteValue,
-                           result.GetType().Name, result);
+         Console.WriteLine($"Converted the {byteValue.GetType().Name} value {byteValue} to the {result.GetType().Name} value {result}.");
       }
       // The example displays the following output:
       //       Converted the Byte value 0 to the Int32 value 0.
@@ -81,13 +77,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(ch);
-            Console.WriteLine("Converted the {0} value '{1}' to the {2} value {3}.",
-                              ch.GetType().Name, ch,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {ch.GetType().Name} value '{ch}' to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("Unable to convert u+{0} to an Int32.",
-                              ((int)ch).ToString("X4"));
+            Console.WriteLine($"Unable to convert u+{((int)ch).ToString("X4")} to an Int32.");
          }
       }
       // The example displays the following output:
@@ -111,13 +104,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(value);
-            Console.WriteLine("Converted the {0} value '{1}' to the {2} value {3}.",
-                              value.GetType().Name, value,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {value.GetType().Name} value '{value}' to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.",
-                              value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:
@@ -143,12 +133,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(value);
-            Console.WriteLine("Converted the {0} value '{1}' to the {2} value {3}.",
-                              value.GetType().Name, value,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {value.GetType().Name} value '{value}' to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
       }
       //    -1.79769313486232E+308 is outside the range of the Int32 type.
@@ -172,9 +160,7 @@ public class Example
       foreach (short number in numbers)
       {
          result = Convert.ToInt32(number);
-         Console.WriteLine("Converted the {0} value {1} to a {2} value {3}.",
-                              number.GetType().Name, number,
-                              result.GetType().Name, result);
+         Console.WriteLine($"Converted the {number.GetType().Name} value {number} to a {result.GetType().Name} value {result}.");
       }
       // The example displays the following output:
       //    Converted the Int16 value -32768 to a Int32 value -32768.
@@ -195,13 +181,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(number);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              number.GetType().Name, number,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
-                              number.GetType().Name, number);
+            Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:
@@ -226,21 +209,16 @@ public class Example
       {
          try {
             result = Convert.ToInt32(value);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              value.GetType().Name, value,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {value.GetType().Name} value {value} to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
-                              value.GetType().Name, value);
+            Console.WriteLine($"The {value.GetType().Name} value {value} is outside the range of the Int32 type.");
          }
          catch (FormatException) {
-            Console.WriteLine("The {0} value {1} is not in a recognizable format.",
-                              value.GetType().Name, value);
+            Console.WriteLine($"The {value.GetType().Name} value {value} is not in a recognizable format.");
          }
          catch (InvalidCastException) {
-            Console.WriteLine("No conversion to an Int32 exists for the {0} value {1}.",
-                              value.GetType().Name, value);
+            Console.WriteLine($"No conversion to an Int32 exists for the {value.GetType().Name} value {value}.");
          }
       }
       // The example displays the following output:
@@ -269,9 +247,7 @@ public class Example
       foreach (sbyte number in numbers)
       {
          result = Convert.ToInt32(number);
-         Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                           number.GetType().Name, number,
-                           result.GetType().Name, result);
+         Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
       }
       // The example displays the following output:
       //       Converted the SByte value -128 to the Int32 value -128.
@@ -293,11 +269,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(value);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              value.GetType().Name, value, result.GetType().Name, result);
+            Console.WriteLine($"Converted the {value.GetType().Name} value {value} to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:
@@ -324,15 +299,13 @@ public class Example
       {
          try {
             result = Convert.ToInt32(value);
-            Console.WriteLine("Converted the {0} value '{1}' to the {2} value {3}.",
-                              value.GetType().Name, value, result.GetType().Name, result);
+            Console.WriteLine($"Converted the {value.GetType().Name} value '{value}' to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine($"{value} is outside the range of the Int32 type.");
          }
          catch (FormatException) {
-            Console.WriteLine("The {0} value '{1}' is not in a recognizable format.",
-                              value.GetType().Name, value);
+            Console.WriteLine($"The {value.GetType().Name} value '{value}' is not in a recognizable format.");
          }
       }
       // The example displays the following output:
@@ -357,13 +330,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(number);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              number.GetType().Name, number,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
-                              number.GetType().Name, number);
+            Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:
@@ -383,13 +353,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(number);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              number.GetType().Name, number,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
-                              number.GetType().Name, number);
+            Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:
@@ -409,13 +376,10 @@ public class Example
       {
          try {
             result = Convert.ToInt32(number);
-            Console.WriteLine("Converted the {0} value {1} to a {2} value {3}.",
-                              number.GetType().Name, number,
-                              result.GetType().Name, result);
+            Console.WriteLine($"Converted the {number.GetType().Name} value {number} to a {result.GetType().Name} value {result}.");
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
-                              number.GetType().Name, number);
+            Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Int32 type.");
          }
       }
       // The example displays the following output:

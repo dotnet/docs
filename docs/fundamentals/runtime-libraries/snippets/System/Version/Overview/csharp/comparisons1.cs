@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example7
 {
@@ -25,7 +25,7 @@ public class Example7
             Console.Write("earlier than");
             break;
       }
-      Console.WriteLine(" Version {0}.", v2);                  
+      Console.WriteLine($" Version {v2}.");                  
       // The example displays the following output:
       //       Version 2.0 is earlier than Version 2.1.
       // </Snippet1>      

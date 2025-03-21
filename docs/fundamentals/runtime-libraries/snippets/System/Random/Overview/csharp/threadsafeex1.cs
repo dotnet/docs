@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Threading;
 
@@ -47,9 +47,9 @@ public class Example13
         countdown.Wait();
         source.Dispose();
 
-        Console.WriteLine("\nTotal random numbers generated: {0:N0}", totalCount);
-        Console.WriteLine("Total sum of all random numbers: {0:N2}", totalValue);
-        Console.WriteLine("Random number mean: {0:N4}", totalValue / totalCount);
+        Console.WriteLine($"\nTotal random numbers generated: {totalCount:N0}");
+        Console.WriteLine($"Total sum of all random numbers: {totalValue:N2}");
+        Console.WriteLine($"Random number mean: {totalValue / totalCount:N4}");
     }
 
     private void GetRandomNumbers(Object o)
@@ -82,11 +82,10 @@ public class Example13
                 perThreadTotal += result;
             }
 
-            Console.WriteLine("Thread {0} finished execution.",
-                              Thread.CurrentThread.Name);
-            Console.WriteLine("Random numbers generated: {0:N0}", perThreadCtr);
-            Console.WriteLine("Sum of random numbers: {0:N2}", perThreadTotal);
-            Console.WriteLine("Random number mean: {0:N4}\n", perThreadTotal / perThreadCtr);
+            Console.WriteLine($"Thread {Thread.CurrentThread.Name} finished execution.");
+            Console.WriteLine($"Random numbers generated: {perThreadCtr:N0}");
+            Console.WriteLine($"Sum of random numbers: {perThreadTotal:N2}");
+            Console.WriteLine($"Random number mean: {perThreadTotal / perThreadCtr:N4}\n");
 
             // Update overall totals.
             lock (numericLock)
@@ -97,7 +96,7 @@ public class Example13
         }
         catch (OperationCanceledException e)
         {
-            Console.WriteLine("Corruption in Thread {1}", e.GetType().Name, Thread.CurrentThread.Name);
+            Console.WriteLine($"Corruption in Thread {Thread.CurrentThread.Name}");
         }
         finally
         {

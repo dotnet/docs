@@ -1,11 +1,11 @@
-//<Snippet5>
+﻿//<Snippet5>
 using System;
 using System.Threading;
 using System.Runtime.Remoting.Messaging;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-    public class AsyncMain
+    public class AsyncMain4
     {
         static void Main()
         {

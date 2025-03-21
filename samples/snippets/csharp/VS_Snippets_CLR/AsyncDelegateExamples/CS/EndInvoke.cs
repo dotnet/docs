@@ -1,10 +1,10 @@
-//<Snippet2>
+﻿//<Snippet2>
 using System;
 using System.Threading;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-    public class AsyncMain
+    public class AsyncMain3
     {
         public static void Main()
         {

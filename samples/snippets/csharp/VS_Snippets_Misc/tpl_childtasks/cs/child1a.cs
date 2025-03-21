@@ -3,7 +3,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-public class Example
+public class Example2
 {
    public static void Main()
    {
@@ -19,6 +19,7 @@ public class Example
       Console.WriteLine("Parent has completed.");
    }
 }
+
 // The example displays output like the following:
 //       Parent task executing.
 //       Parent has completed.

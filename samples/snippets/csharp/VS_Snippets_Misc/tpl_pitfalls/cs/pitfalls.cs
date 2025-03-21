@@ -1,18 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Windows.Forms;
+﻿using System;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pitfalls_cs
 {
     class Program
     {
-        Button button1 = new Button();
-        Button button2 = new Button();
+        Button button1 = new();
+        Button button2 = new();
         int N = 100;
         static void Main(string[] args)
         {
@@ -49,7 +47,7 @@ namespace pitfalls_cs
         static void DisplayProgress(int i) { }
 
         //<snippet03>
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Task.Factory.StartNew(() =>
                 Parallel.For(0, N, i =>
@@ -63,13 +61,13 @@ namespace pitfalls_cs
 
         private void Urg()
         {
-        string path = @"C\";
-        //<snippet04>
-        FileStream fs = File.OpenWrite(path);
-        byte[] bytes = new Byte[10000000];
-        // ...
-        Parallel.For(0, bytes.Length, (i) => fs.WriteByte(bytes[i]));
-        //</snippet04>
+            string path = @"C\";
+            //<snippet04>
+            FileStream fs = File.OpenWrite(path);
+            byte[] bytes = new Byte[10000000];
+            // ...
+            Parallel.For(0, bytes.Length, (i) => fs.WriteByte(bytes[i]));
+            //</snippet04>
         }
     }
 }

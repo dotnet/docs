@@ -53,17 +53,15 @@ The limited precision of a floating-point number has several consequences:
 
   When accuracy in numeric operations with fractional values is important, use the <xref:System.Decimal> type instead of the <xref:System.Single> type. When accuracy in numeric operations with integral values beyond the range of the <xref:System.Int64> or <xref:System.UInt64> types is important, use the <xref:System.Numerics.BigInteger> type.
 
-- A value might not round-trip if a floating-point number is involved. A value is said to round-trip if an operation converts an original floating-point number to another form, an inverse operation transforms the converted form back to a floating-point number, and the final floating-point number is equal to the original floating-point number. The round trip might fail because one or more least significant digits are lost or changed in a conversion. In the following example, three <xref:System.Single> values are converted to strings and saved in a file. As the output shows, although the values appear to be identical, the restored values are not equal to the original values.
+- A value might not *round-trip* if a floating-point number is involved. A value is said to round-trip if an operation converts an original floating-point number to another form, an inverse operation transforms the converted form back to a floating-point number, and the final floating-point number is equal to the original floating-point number. The round trip might fail because one or more least significant digits are lost or changed in a conversion.
+
+  In the following example, three <xref:System.Single> values are converted to strings and saved in a file. If you run this example on .NET Framework, even though the values appear to be identical, the restored values are not equal to the original values. (This has since been addressed in .NET, where the values round-trip correctly.)
 
   :::code language="csharp" source="./snippets/System/Single/Overview/csharp/precisionlist4a.cs" id="Snippet17":::
   :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/precisionlist4a.fs" id="Snippet17":::
   :::code language="vb" source="./snippets/System/Single/Overview/vb/PrecisionList4a.vb" id="Snippet17":::
 
-  In this case, the values can be successfully round-tripped by using the "G9" [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values, as the following example shows.
-
-  :::code language="csharp" source="./snippets/System/Single/Overview/csharp/PrecisionList5a.cs" id="Snippet18":::
-  :::code language="fsharp" source="./snippets/System/Single/Overview/fsharp/PrecisionList5a.fs" id="Snippet18":::
-  :::code language="vb" source="./snippets/System/Single/Overview/vb/PrecisionList5a.vb" id="Snippet18":::
+  If you're targeting .NET Framework, the values can be successfully round-tripped by using the "G9" [standard numeric format string](../../standard/base-types/standard-numeric-format-strings.md) to preserve the full precision of <xref:System.Single> values.
 
 - <xref:System.Single> values have less precision than <xref:System.Double> values. A <xref:System.Single> value that is converted to a seemingly equivalent <xref:System.Double> often does not equal the <xref:System.Double> value because of differences in precision. In the following example, the result of identical division operations is assigned to a <xref:System.Double> value and a <xref:System.Single> value. After the <xref:System.Single> value is cast to a <xref:System.Double>, a comparison of the two values shows that they are unequal.
 

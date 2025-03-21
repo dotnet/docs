@@ -1,4 +1,4 @@
-// <Snippet2>
+﻿// <Snippet2>
 using System;
 
 [Flags]
@@ -28,21 +28,21 @@ public class Example1
 
         // Which households have no service?
         for (int ctr = 0; ctr < households.Length; ctr++)
-            Console.WriteLine($"Household {ctr + 1} has phone service: {households[ctr] == PhoneService.None ?
-                                  "No" : "Yes"}");
+            Console.WriteLine($"Household {ctr + 1} has phone service:" +
+                $"{(households[ctr] == PhoneService.None ? "No" : "Yes")}");
         Console.WriteLine();
 
         // Which households have cell phone service?
         for (int ctr = 0; ctr < households.Length; ctr++)
-            Console.WriteLine($"Household {ctr + 1} has cell phone service: {(households[ctr] & PhoneService.Cell) == PhoneService.Cell ?
-                                 "Yes" : "No"}");
+            Console.WriteLine($"Household {ctr + 1} has cell phone service: " +
+                $"{((households[ctr] & PhoneService.Cell) == PhoneService.Cell ? "Yes" : "No")}");
         Console.WriteLine();
 
         // Which households have cell phones and land lines?
         var cellAndLand = PhoneService.Cell | PhoneService.LandLine;
         for (int ctr = 0; ctr < households.Length; ctr++)
-            Console.WriteLine($"Household {ctr + 1} has cell and land line service: {(households[ctr] & cellAndLand) == cellAndLand ?
-                                 "Yes" : "No"}");
+            Console.WriteLine($"Household {ctr + 1} has cell and land line service: " +
+                $"{((households[ctr] & cellAndLand) == cellAndLand ? "Yes" : "No")}");
         Console.WriteLine();
 
         // List all types of service of each household?//

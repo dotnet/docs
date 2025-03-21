@@ -1,4 +1,4 @@
-//<snippet18>
+﻿//<snippet18>
 using System;
 
 // Define an enumeration to represent student grades.
@@ -21,13 +21,13 @@ class Example8
     {
         Grades g1 = Grades.D;
         Grades g2 = Grades.F;
-        Console.WriteLine($"{g1} {g1.Passing() ? "is" : "is not"} a passing grade.");
-        Console.WriteLine($"{g2} {g2.Passing() ? "is" : "is not"} a passing grade.");
+        Console.WriteLine($"{g1} {(g1.Passing() ? "is" : "is not")} a passing grade.");
+        Console.WriteLine($"{g2} {(g2.Passing() ? "is" : "is not")} a passing grade.");
 
         Extensions.minPassing = Grades.C;
         Console.WriteLine("\nRaising the bar!\n");
-        Console.WriteLine($"{g1} {g1.Passing() ? "is" : "is not"} a passing grade.");
-        Console.WriteLine($"{g2} {g2.Passing() ? "is" : "is not"} a passing grade.");
+        Console.WriteLine($"{g1} {(g1.Passing() ? "is" : "is not")} a passing grade.");
+        Console.WriteLine($"{g2} {(g2.Passing() ? "is" : "is not")} a passing grade.");
     }
 }
 // The exmaple displays the following output:

@@ -1,8 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFrameworks>net8</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net481</TargetFrameworks>
+    <LangVersion>13</LangVersion>
+    <StartupObject>Program</StartupObject>
   </PropertyGroup>
 
  </Project>

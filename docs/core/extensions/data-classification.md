@@ -1,7 +1,7 @@
 ---
 title: Data classification in .NET
 description: Learn how to use .NET data classification libraries to categorize your application's data.
-ms.date: 03/20/2025
+ms.date: 03/21/2025
 ---
 
 # Data classification in .NET
@@ -14,6 +14,8 @@ Data classification helps you categorize (or classify) data based on its sensiti
 In some situations, you might need to specify that data explicitly has no data classification, this is achieved with <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.None?displayProperty=nameWithType>. Similarly, you might need to specify that data classification is unknown—use <xref:Microsoft.Extensions.Compliance.Classification.DataClassification.Unknown?displayProperty=nameWithType> in these cases.
 
 ## Install classification package
+
+To get started, install the [📦 Microsoft.Extensions.Compliance.Classification](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Classification) NuGet package:
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -34,7 +36,7 @@ dotnet add package Microsoft.Extensions.Compliance.Classification
 
 ## Create custom classifications
 
-Define custom classifications by creating static members for different types of sensitive data. This gives you a consistent way to label and handle data across your app. Consider the following example class:
+Define custom classifications by creating `static` members for different types of sensitive data. This gives you a consistent way to label and handle data across your app. Consider the following example class:
 
 ```csharp
 using Microsoft.Extensions.Compliance.Classification;
@@ -46,10 +48,14 @@ internal static class MyTaxonomyClassifications
     internal static DataClassification PrivateInformation => new(Name, nameof(PrivateInformation));
     internal static DataClassification CreditCardNumber => new(Name, nameof(CreditCardNumber));
     internal static DataClassification SocialSecurityNumber => new(Name, nameof(SocialSecurityNumber));
+
+    internal static DataClassificationSet PrivateAndSocialSet => new(PrivateInformation, SocialSecurityNumber);
 }
 ```
 
-If you want to share your custom classification taxonomy among your applications, this class should be public. For example, you can have a shared library containing custom classifications, that you can use in multiple applications.
+If you want to share your custom classification taxonomy with other apps, this class and its members should be `public` instead of `internal`. For example, you can have a shared library containing custom classifications, that you can use in multiple applications.
+
+<xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet> lets you compose multiple data classifications into a single set. This allows you classify your data with multiple data classifications. In addition, the .NET redaction APIs make use of a <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet>.
 
 ## Create custom classification attributes
 

@@ -1,7 +1,7 @@
 ---
 title: Data redaction in .NET
 description: Learn how to use .NET data redaction libraries to protect your application's sensitive data.
-ms.date: 03/17/2025
+ms.date: 03/21/2025
 ---
 
 # Data redaction in .NET
@@ -9,6 +9,8 @@ ms.date: 03/17/2025
 Redaction helps you sanitize or mask sensitive information in logs, error messages, or other outputs. This keeps you compliant with privacy rules and protects sensitive data. It's useful in apps that handle personal data, financial information, or other confidential data points.
 
 ## Install redaction package
+
+To get started, install the [📦 Microsoft.Extensions.Compliance.Redaction](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Redaction) NuGet package:
 
 ### [.NET CLI](#tab/dotnet-cli)
 
@@ -54,22 +56,22 @@ serviceCollection.AddRedaction();
 serviceCollection.AddRedaction(redactionBuilder =>
 {
     // Assign a redactor to use for a set of data classifications.
-    redactionBuilder.SetRedactor<MyRedactor>(MyTaxonomy.Private, MyTaxonomy.Personal);
+    redactionBuilder.SetRedactor<StarRedactor>(
+        MyTaxonomyClassifications.Private,
+        MyTaxonomyClassifications.Personal);
     // Assign a fallback redactor to use when processing classified data for which no specific redactor has been registered.
     // The `ErasingRedactor` is the default fallback redactor. If no redactor is configured for a data classification then the data will be erased.
     redactionBuilder.SetFallbackRedactor<MyFallbackRedactor>();
 });
 
 // Using a custom redactor provider:
-builder.Services.AddSingleton<IRedactorProvider, MyRedactorProvider>();
+builder.Services.AddSingleton<IRedactorProvider, StarRedactorProvider>();
 ```
 
 Given this data classification in your code:
 
 ```csharp
-using Microsoft.Extensions.Compliance.Classification;
-
-public static class MyTaxonomy
+public static class MyTaxonomyClassifications
 {
     public static string Name => "MyTaxonomy";
 
@@ -81,7 +83,7 @@ public static class MyTaxonomy
 
 ### Configure the HMAC redactor
 
-Configure the HMAC redactor using these `IRedactionBuilder` methods:
+Configure the HMAC redactor using these <xref:Microsoft.Extensions.Compliance.Redaction.IRedactionBuilder> methods:
 
 ```csharp
 var serviceCollection = new ServiceCollection();
@@ -95,12 +97,13 @@ serviceCollection.AddRedaction(builder =>
         },
 
         // Any data tagged with Personal or Private attributes will be redacted by the Hmac redactor.
-        MyTaxonomy.Personal, MyTaxonomy.Private,
+        MyTaxonomyClassifications.Personal, MyTaxonomyClassifications.Private,
 
         // "DataClassificationSet" lets you compose multiple data classifications:
         // For example, here the Hmac redactor will be used for data tagged
         // with BOTH Personal and Private (but not one without the other).
-        new DataClassificationSet(MyTaxonomy.Personal, MyTaxonomy.Private));
+        new DataClassificationSet(MyTaxonomyClassifications.Personal,
+                                  MyTaxonomyClassifications.Private));
 });
 ```
 
@@ -111,7 +114,7 @@ var serviceCollection = new ServiceCollection();
 serviceCollection.AddRedaction(builder =>
 {
     builder.SetHmacRedactor(
-        Configuration.GetSection("HmacRedactorOptions"), MyTaxonomy.Personal);
+        Configuration.GetSection("HmacRedactorOptions"), MyTaxonomyClassifications.Personal);
 });
 ```
 

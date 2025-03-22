@@ -49,7 +49,7 @@ To install the LLDB packages:
 
 ```console
     apk update
-    apk add lldb
+    apk add lldb py3-lldb
 ```
 
 To launch LLDB:

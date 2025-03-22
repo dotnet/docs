@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -10,8 +10,7 @@ public class Example2
       var th = new Thread(ExecuteInForeground);
       th.Start();
       Thread.Sleep(1000);
-      Console.WriteLine("Main thread ({0}) exiting...",
-                        Thread.CurrentThread.ManagedThreadId);
+      Console.WriteLine($"Main thread ({Thread.CurrentThread.ManagedThreadId}) exiting...");
    }
 
    private static void ExecuteInForeground()
@@ -22,9 +21,7 @@ public class Example2
                         Thread.CurrentThread.ThreadState,
                         Thread.CurrentThread.Priority);
       do {
-         Console.WriteLine("Thread {0}: Elapsed {1:N2} seconds",
-                           Thread.CurrentThread.ManagedThreadId,
-                           sw.ElapsedMilliseconds / 1000.0);
+         Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId}: Elapsed {sw.ElapsedMilliseconds / 1000.0:N2} seconds");
          Thread.Sleep(500);
       } while (sw.ElapsedMilliseconds <= 5000);
       sw.Stop();

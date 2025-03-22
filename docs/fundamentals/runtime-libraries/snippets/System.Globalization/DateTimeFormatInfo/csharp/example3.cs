@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Globalization;
 
@@ -10,13 +10,11 @@ public class Example3
         CultureInfo frFR = CultureInfo.CreateSpecificCulture("fr-FR");
         DateTimeFormatInfo dtfi = frFR.DateTimeFormat;
 
-        Console.WriteLine("Before modifying DateSeparator property: {0}",
-                          dateValue.ToString("g", frFR));
+        Console.WriteLine($"Before modifying DateSeparator property: {dateValue.ToString("g", frFR)}");
 
         // Modify the date separator.
         dtfi.DateSeparator = "-";
-        Console.WriteLine("After modifying the DateSeparator property: {0}",
-                          dateValue.ToString("g", frFR));
+        Console.WriteLine($"After modifying the DateSeparator property: {dateValue.ToString("g", frFR)}");
     }
 }
 // The example displays the following output:

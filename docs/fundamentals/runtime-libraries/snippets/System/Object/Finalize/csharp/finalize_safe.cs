@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.ComponentModel;
@@ -146,7 +146,7 @@ public class Example
    public static void Main()
    {
       FileAssociationInfo fa = new FileAssociationInfo(".txt");
-      Console.WriteLine("{0} files are handled by '{1}'", fa.Extension, fa.Open);
+      Console.WriteLine($"{fa.Extension} files are handled by '{fa.Open}'");
       fa.Dispose();
    }
 }

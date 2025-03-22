@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Numerics;
 
@@ -142,10 +142,8 @@ public class ByteHexExample
         positiveNumber2 = BigInteger.Parse(positiveHex,
                                            NumberStyles.HexNumber);
 
-        Console.WriteLine("Converted {0:N0} to {1} back to {2:N0}.",
-                           negativeNumber, negativeHex, negativeNumber2);
-        Console.WriteLine("Converted {0:N0} to {1} back to {2:N0}.",
-                           positiveNumber, positiveHex, positiveNumber2);
+        Console.WriteLine($"Converted {negativeNumber:N0} to {negativeHex} back to {negativeNumber2:N0}.");
+        Console.WriteLine($"Converted {positiveNumber:N0} to {positiveHex} back to {positiveNumber2:N0}.");
         // The example displays the following output:
         //       Converted -1,000,000 to F0BDC0 back to -1,000,000.
         //       Converted 15,777,216 to 0F0BDC0 back to 15,777,216.

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -66,8 +66,7 @@ namespace SystemDateTimeReference
             string[] inputValues = sr.ReadToEnd().Split(new char[] { '|' },
                                                         StringSplitOptions.RemoveEmptyEntries);
             sr.Close();
-            Console.WriteLine("The dates on an {0} system:",
-                              Thread.CurrentThread.CurrentCulture.Name);
+            Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
             foreach (var inputValue in inputValues)
             {
                 DateTime dateValue;
@@ -136,15 +135,13 @@ namespace SystemDateTimeReference
         private static void RestoreDatesAsInvariantStrings()
         {
             TimeZoneInfo.ClearCachedData();
-            Console.WriteLine("Current Time Zone: {0}",
-                              TimeZoneInfo.Local.DisplayName);
+            Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}");
             Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
             StreamReader sr = new StreamReader(filenameTxt);
             string[] inputValues = sr.ReadToEnd().Split(new char[] { '|' },
                                                         StringSplitOptions.RemoveEmptyEntries);
             sr.Close();
-            Console.WriteLine("The dates on an {0} system:",
-                              Thread.CurrentThread.CurrentCulture.Name);
+            Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
             foreach (var inputValue in inputValues)
             {
                 DateTime dateValue;
@@ -155,7 +152,7 @@ namespace SystemDateTimeReference
                 }
                 else
                 {
-                    Console.WriteLine("Cannot parse '{0}'", inputValue);
+                    Console.WriteLine($"Cannot parse '{inputValue}'");
                 }
             }
             Console.WriteLine("Restored dates...");

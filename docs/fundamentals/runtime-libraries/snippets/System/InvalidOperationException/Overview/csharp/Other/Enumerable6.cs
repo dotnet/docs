@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Linq;
 
@@ -11,8 +11,7 @@ public class EnumerableEx6
         var singleObject = dbQueryResults.SingleOrDefault(value => value > 2);
 
         if (singleObject != 0)
-            Console.WriteLine("{0} is the only value greater than 2",
-                              singleObject);
+            Console.WriteLine($"{singleObject} is the only value greater than 2");
         else
             // Handle an empty collection.
             Console.WriteLine("No value is greater than 2");

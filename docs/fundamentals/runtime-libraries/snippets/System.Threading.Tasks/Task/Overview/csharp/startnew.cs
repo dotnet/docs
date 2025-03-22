@@ -1,4 +1,4 @@
-﻿// <snippet01>
+// <snippet01>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,8 +24,7 @@ class Example1
 
         // Launch t1 
         t1.Start();
-        Console.WriteLine("t1 has been launched. (Main Thread={0})",
-                          Thread.CurrentThread.ManagedThreadId);
+        Console.WriteLine($"t1 has been launched. (Main Thread={Thread.CurrentThread.ManagedThreadId})");
         // Wait for the task to finish.
         t1.Wait();
 

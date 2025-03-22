@@ -15,7 +15,7 @@ configuration:
           - isAction:
               action: Opened
           - filesMatchPattern:
-              pattern: .github/*
+              pattern: \.github/*
               matchAny: true
               excludedFiles:
                 - .github/CODEOWNERS

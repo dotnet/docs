@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.IO;
 using System.Xml;
@@ -116,7 +116,7 @@ using (XmlReader reader = XmlReader.Create("hireDate.xml", settings)) {
 
   // Return the hire-date as a DateTime object.
   DateTime hireDate = reader.ReadElementContentAsDateTime();
-  Console.WriteLine("Six Month Review Date: {0}", hireDate.AddMonths(6));
+  Console.WriteLine($"Six Month Review Date: {hireDate.AddMonths(6)}");
 }
 //</snippet13>
 }
@@ -131,7 +131,7 @@ using (XmlReader reader = XmlReader.Create("hireDate_1.xml")) {
 
   // Return the hire-date as a DateTime object.
   DateTime hireDate = reader.ReadElementContentAsDateTime();
-  Console.WriteLine("Six Month Review Date: {0}", hireDate.AddMonths(6));
+  Console.WriteLine($"Six Month Review Date: {hireDate.AddMonths(6)}");
 }
 //</snippet14>
 }

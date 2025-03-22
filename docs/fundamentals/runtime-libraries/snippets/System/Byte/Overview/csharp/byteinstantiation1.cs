@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example2
 {
@@ -15,7 +15,7 @@ public class Example2
         byte value1 = 64;
         byte value2 = 255;
         // </Snippet1>
-        Console.WriteLine("{0}   {1}", value1, value2);
+        Console.WriteLine($"{value1}   {value2}");
     }
 
     private static void InstantiateByNarrowingConversion()
@@ -29,7 +29,7 @@ public class Example2
         }
         catch (OverflowException)
         {
-            Console.WriteLine("{0} is out of range of a byte.", int1);
+            Console.WriteLine($"{int1} is out of range of a byte.");
         }
 
         double dbl2 = 3.997;
@@ -40,7 +40,7 @@ public class Example2
         }
         catch (OverflowException)
         {
-            Console.WriteLine("{0} is out of range of a byte.", dbl2);
+            Console.WriteLine($"{dbl2} is out of range of a byte.");
         }
         // The example displays the following output:
         //       128
@@ -59,11 +59,11 @@ public class Example2
         }
         catch (OverflowException)
         {
-            Console.WriteLine("'{0}' is out of range of a byte.", string1);
+            Console.WriteLine($"'{string1}' is out of range of a byte.");
         }
         catch (FormatException)
         {
-            Console.WriteLine("'{0}' is out of range of a byte.", string1);
+            Console.WriteLine($"'{string1}' is out of range of a byte.");
         }
 
         string string2 = "F9";
@@ -75,11 +75,11 @@ public class Example2
         }
         catch (OverflowException)
         {
-            Console.WriteLine("'{0}' is out of range of a byte.", string2);
+            Console.WriteLine($"'{string2}' is out of range of a byte.");
         }
         catch (FormatException)
         {
-            Console.WriteLine("'{0}' is out of range of a byte.", string2);
+            Console.WriteLine($"'{string2}' is out of range of a byte.");
         }
         // The example displays the following output:
         //       244

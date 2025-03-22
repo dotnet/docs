@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 enum VersionTime {Earlier = -1, Same = 0, Later = 1 };
@@ -17,8 +17,7 @@ public class Example2
 
    private static void ShowRelationship(Version v1, Version v2)
    {
-      Console.WriteLine("Relationship of {0} to {1}: {2}", 
-                        v1, v2, (VersionTime) v1.CompareTo(v2));       
+      Console.WriteLine($"Relationship of {v1} to {v2}: {(VersionTime) v1.CompareTo(v2)}");       
    }
 }
 // The example displays the following output:

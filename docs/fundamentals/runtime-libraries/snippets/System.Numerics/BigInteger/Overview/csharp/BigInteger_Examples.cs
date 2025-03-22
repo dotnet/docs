@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Example
@@ -42,7 +42,7 @@ public class Example
       // <Snippet4>
       byte[] byteArray = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
       BigInteger newBigInt = new BigInteger(byteArray);
-      Console.WriteLine("The value of newBigInt is {0} (or 0x{0:x}).", newBigInt);
+      Console.WriteLine($"The value of newBigInt is {newBigInt} (or 0x{newBigInt:x}).");
       // The example displays the following output:
       //   The value of newBigInt is 4759477275222530853130 (or 0x102030405060708090a).
       // </Snippet4>
@@ -61,15 +61,13 @@ public class Example
       }
       catch (FormatException)
       {
-         Console.WriteLine("Unable to convert the string '{0}' to a BigInteger value.",
-                           positiveString);
+         Console.WriteLine($"Unable to convert the string '{positiveString}' to a BigInteger value.");
       }
 
       if (BigInteger.TryParse(negativeString, out negBigInt))
         Console.WriteLine(negBigInt);
       else
-         Console.WriteLine("Unable to convert the string '{0}' to a BigInteger value.",
-                            negativeString);
+         Console.WriteLine($"Unable to convert the string '{negativeString}' to a BigInteger value.");
 
       // The example displays the following output:
       //   9.1389681247993671255432112E+31

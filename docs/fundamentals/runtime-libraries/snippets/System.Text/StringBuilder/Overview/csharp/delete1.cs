@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 using System.Text;
 
@@ -23,7 +23,7 @@ public class Example5
 
     public static void ShowSBInfo(StringBuilder sb)
     {
-        Console.WriteLine("\nValue: {0}", sb.ToString());
+        Console.WriteLine($"\nValue: {sb.ToString()}");
         foreach (var prop in sb.GetType().GetProperties())
         {
             if (prop.GetIndexParameters().Length == 0)

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Resources;
 
@@ -9,7 +9,7 @@ public class ShowTimeEx
         ResourceManager rm = new ResourceManager("Strings",
                                  typeof(Example).Assembly);
         string timeString = rm.GetString("TimeHeader");
-        Console.WriteLine("{0} {1:T}", timeString, DateTime.Now);
+        Console.WriteLine($"{timeString} {DateTime.Now:T}");
     }
 }
 // The example displays output like the following:

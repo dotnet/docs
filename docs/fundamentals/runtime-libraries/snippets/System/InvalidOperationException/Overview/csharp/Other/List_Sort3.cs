@@ -1,4 +1,4 @@
-﻿// <Snippet14>
+// <Snippet14>
 using System;
 using System.Collections.Generic;
 
@@ -33,7 +33,7 @@ public class ListSortEx3
         people.Add(new Person3("Jane", "Doe"));
         people.Sort(new PersonComparer());
         foreach (var person in people)
-            Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
+            Console.WriteLine($"{person.FirstName} {person.LastName}");
     }
 }
 // The example displays the following output:

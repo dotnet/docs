@@ -1,4 +1,4 @@
-﻿// <Snippet18>
+// <Snippet18>
 using System;
 using System.Globalization;
 using System.IO;
@@ -17,11 +17,9 @@ public class SerializeEx2
         // Convert it to local time.
         DateTime restoredDate = parsedDate.ToLocalTime();
         // Display information on the date and time.
-        Console.WriteLine("Deserialized date: {0:F}", restoredDate);
-        Console.WriteLine("Current Culture:   {0}",
-                          CultureInfo.CurrentCulture.Name);
-        Console.WriteLine("Time Zone:         {0}",
-                          TimeZoneInfo.Local.DisplayName);
+        Console.WriteLine($"Deserialized date: {restoredDate:F}");
+        Console.WriteLine($"Current Culture:   {CultureInfo.CurrentCulture.Name}");
+        Console.WriteLine($"Time Zone:         {TimeZoneInfo.Local.DisplayName}");
     }
 }
 // The example displays the following output:

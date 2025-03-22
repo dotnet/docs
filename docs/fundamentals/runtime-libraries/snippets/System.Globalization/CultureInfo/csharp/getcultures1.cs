@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 
@@ -16,7 +16,7 @@ public class GetCulturesEx
         {
             Console.WriteLine("Custom cultures:");
             foreach (var culture in custom)
-                Console.WriteLine("   {0} -- {1}", culture.Name, culture.DisplayName);
+                Console.WriteLine($"   {culture.Name} -- {culture.DisplayName}");
         }
         Console.WriteLine();
 
@@ -30,7 +30,7 @@ public class GetCulturesEx
         {
             Console.WriteLine("Replacement cultures:");
             foreach (var culture in replacements)
-                Console.WriteLine("   {0} -- {1}", culture.Name, culture.DisplayName);
+                Console.WriteLine($"   {culture.Name} -- {culture.DisplayName}");
         }
         Console.WriteLine();
     }

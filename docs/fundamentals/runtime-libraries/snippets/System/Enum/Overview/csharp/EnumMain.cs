@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 
 public class EnumTest {
@@ -26,7 +26,7 @@ public class EnumTest {
 
         Colors myColors = Colors.Red | Colors.Blue | Colors.Yellow;
         Console.WriteLine();
-        Console.WriteLine("myColors holds a combination of colors. Namely: {0}", myColors);
+        Console.WriteLine($"myColors holds a combination of colors. Namely: {myColors}");
     }
 }
 //</snippet1>

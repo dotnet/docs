@@ -107,56 +107,56 @@ The following table classifies each standard query operator method according to 
 
 | Standard query operator                             | Return type | Immediate execution | Deferred streaming execution | Deferred nonstreaming execution |
 |-----------------------------------------------------|-------------|---------------------|------------------------------|----------------------------------|
-| <xref:System.Linq.Enumerable.Aggregate%2A>          | `TSource`                                         | X |   |   |
-| <xref:System.Linq.Enumerable.All%2A>                | <xref:System.Boolean>                             | X |   |   |
-| <xref:System.Linq.Enumerable.Any%2A>                | <xref:System.Boolean>                             | X |   |   |
-| <xref:System.Linq.Enumerable.AsEnumerable%2A>       | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Average%2A>            | Single numeric value                              | X |   |   |
-| <xref:System.Linq.Enumerable.Cast%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Concat%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Contains%2A>           | <xref:System.Boolean>                             | X |   |   |
-| <xref:System.Linq.Enumerable.Count%2A>              | <xref:System.Int32>                               | X |   |   |
-| <xref:System.Linq.Enumerable.DefaultIfEmpty%2A>     | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Distinct%2A>           | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.ElementAt%2A>          | `TSource`                                         | X |   |   |
-| <xref:System.Linq.Enumerable.ElementAtOrDefault%2A> | `TSource?`                                        | X |   |   |
-| <xref:System.Linq.Enumerable.Empty%2A>              | <xref:System.Collections.Generic.IEnumerable%601> | X |   |   |
-| <xref:System.Linq.Enumerable.Except%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | X | X |
-| <xref:System.Linq.Enumerable.First%2A>              | `TSource`                                         | X |   |   |
-| <xref:System.Linq.Enumerable.FirstOrDefault%2A>     | `TSource?`                                        | X |   |   |
-| <xref:System.Linq.Enumerable.GroupBy%2A>            | <xref:System.Collections.Generic.IEnumerable%601> |   |   | X |
-| <xref:System.Linq.Enumerable.GroupJoin%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | X | X |
-| <xref:System.Linq.Enumerable.Intersect%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | X | X |
-| <xref:System.Linq.Enumerable.Join%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | X | X |
-| <xref:System.Linq.Enumerable.Last%2A>               | `TSource`                                         | X |   |   |
-| <xref:System.Linq.Enumerable.LastOrDefault%2A>      | `TSource?`                                        | X |   |   |
-| <xref:System.Linq.Enumerable.LongCount%2A>          | <xref:System.Int64>                               | X |   |   |
-| <xref:System.Linq.Enumerable.Max%2A>                | Single numeric value, `TSource`, or `TResult?`    | X |   |   |
-| <xref:System.Linq.Enumerable.Min%2A>                | Single numeric value, `TSource`, or `TResult?`    | X |   |   |
-| <xref:System.Linq.Enumerable.OfType%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.OrderBy%2A>            | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | X |
-| <xref:System.Linq.Enumerable.OrderByDescending%2A>  | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | X |
-| <xref:System.Linq.Enumerable.Range%2A>              | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Repeat%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Reverse%2A>            | <xref:System.Collections.Generic.IEnumerable%601> |   |   | X |
-| <xref:System.Linq.Enumerable.Select%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.SelectMany%2A>         | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.SequenceEqual%2A>      | <xref:System.Boolean>                             | X |   |   |
-| <xref:System.Linq.Enumerable.Single%2A>             | `TSource`                                         | X |   |   |
-| <xref:System.Linq.Enumerable.SingleOrDefault%2A>    | `TSource?`                                        | X |   |   |
-| <xref:System.Linq.Enumerable.Skip%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.SkipWhile%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Sum%2A>                | Single numeric value                              | X |   |   |
-| <xref:System.Linq.Enumerable.Take%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.TakeWhile%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.ThenBy%2A>             | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | X |
-| <xref:System.Linq.Enumerable.ThenByDescending%2A>   | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | X |
-| <xref:System.Linq.Enumerable.ToArray%2A>            | `TSource[]` array                                 | X |   |   |
-| <xref:System.Linq.Enumerable.ToDictionary%2A>       | <xref:System.Collections.Generic.Dictionary%602>  | X |   |   |
-| <xref:System.Linq.Enumerable.ToList%2A>             | <xref:System.Collections.Generic.IList%601>       | X |   |   |
-| <xref:System.Linq.Enumerable.ToLookup%2A>           | <xref:System.Linq.ILookup%602>                    | X |   |   |
-| <xref:System.Linq.Enumerable.Union%2A>              | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
-| <xref:System.Linq.Enumerable.Where%2A>              | <xref:System.Collections.Generic.IEnumerable%601> |   | X |   |
+| <xref:System.Linq.Enumerable.Aggregate%2A>          | `TSource`                                         | ✓ |   |   |
+| <xref:System.Linq.Enumerable.All%2A>                | <xref:System.Boolean>                             | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Any%2A>                | <xref:System.Boolean>                             | ✓ |   |   |
+| <xref:System.Linq.Enumerable.AsEnumerable%2A>       | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Average%2A>            | Single numeric value                              | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Cast%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Concat%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Contains%2A>           | <xref:System.Boolean>                             | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Count%2A>              | <xref:System.Int32>                               | ✓ |   |   |
+| <xref:System.Linq.Enumerable.DefaultIfEmpty%2A>     | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Distinct%2A>           | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.ElementAt%2A>          | `TSource`                                         | ✓ |   |   |
+| <xref:System.Linq.Enumerable.ElementAtOrDefault%2A> | `TSource?`                                        | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Empty%2A>              | <xref:System.Collections.Generic.IEnumerable%601> | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Except%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ | ✓ |
+| <xref:System.Linq.Enumerable.First%2A>              | `TSource`                                         | ✓ |   |   |
+| <xref:System.Linq.Enumerable.FirstOrDefault%2A>     | `TSource?`                                        | ✓ |   |   |
+| <xref:System.Linq.Enumerable.GroupBy%2A>            | <xref:System.Collections.Generic.IEnumerable%601> |   |   | ✓ |
+| <xref:System.Linq.Enumerable.GroupJoin%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ | ✓ |
+| <xref:System.Linq.Enumerable.Intersect%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ | ✓ |
+| <xref:System.Linq.Enumerable.Join%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ | ✓ |
+| <xref:System.Linq.Enumerable.Last%2A>               | `TSource`                                         | ✓ |   |   |
+| <xref:System.Linq.Enumerable.LastOrDefault%2A>      | `TSource?`                                        | ✓ |   |   |
+| <xref:System.Linq.Enumerable.LongCount%2A>          | <xref:System.Int64>                               | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Max%2A>                | Single numeric value, `TSource`, or `TResult?`    | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Min%2A>                | Single numeric value, `TSource`, or `TResult?`    | ✓ |   |   |
+| <xref:System.Linq.Enumerable.OfType%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.OrderBy%2A>            | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | ✓ |
+| <xref:System.Linq.Enumerable.OrderByDescending%2A>  | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | ✓ |
+| <xref:System.Linq.Enumerable.Range%2A>              | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Repeat%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Reverse%2A>            | <xref:System.Collections.Generic.IEnumerable%601> |   |   | ✓ |
+| <xref:System.Linq.Enumerable.Select%2A>             | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.SelectMany%2A>         | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.SequenceEqual%2A>      | <xref:System.Boolean>                             | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Single%2A>             | `TSource`                                         | ✓ |   |   |
+| <xref:System.Linq.Enumerable.SingleOrDefault%2A>    | `TSource?`                                        | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Skip%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.SkipWhile%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Sum%2A>                | Single numeric value                              | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Take%2A>               | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.TakeWhile%2A>          | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.ThenBy%2A>             | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | ✓ |
+| <xref:System.Linq.Enumerable.ThenByDescending%2A>   | <xref:System.Linq.IOrderedEnumerable%601>         |   |   | ✓ |
+| <xref:System.Linq.Enumerable.ToArray%2A>            | `TSource[]` array                                 | ✓ |   |   |
+| <xref:System.Linq.Enumerable.ToDictionary%2A>       | <xref:System.Collections.Generic.Dictionary%602>  | ✓ |   |   |
+| <xref:System.Linq.Enumerable.ToList%2A>             | <xref:System.Collections.Generic.IList%601>       | ✓ |   |   |
+| <xref:System.Linq.Enumerable.ToLookup%2A>           | <xref:System.Linq.ILookup%602>                    | ✓ |   |   |
+| <xref:System.Linq.Enumerable.Union%2A>              | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
+| <xref:System.Linq.Enumerable.Where%2A>              | <xref:System.Collections.Generic.IEnumerable%601> |   | ✓ |   |
 
 ## LINQ to objects
 

@@ -1,4 +1,4 @@
-﻿// <Snippet14>
+// <Snippet14>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -11,22 +11,16 @@ public class Example14
     public static async Task Main()
     {
         var tasks = new List<Task>();
-        Console.WriteLine("The current culture is {0}",
-                          Thread.CurrentThread.CurrentCulture.Name);
+        Console.WriteLine($"The current culture is {Thread.CurrentThread.CurrentCulture.Name}");
         Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
         // Change the current culture to Portuguese (Brazil).
-        Console.WriteLine("Current culture changed to {0}",
-                          Thread.CurrentThread.CurrentCulture.Name);
-        Console.WriteLine("Application thread is thread {0}",
-                          Thread.CurrentThread.ManagedThreadId);
+        Console.WriteLine($"Current culture changed to {Thread.CurrentThread.CurrentCulture.Name}");
+        Console.WriteLine($"Application thread is thread {Thread.CurrentThread.ManagedThreadId}");
         // Launch six tasks and display their current culture.
         for (int ctr = 0; ctr <= 5; ctr++)
             tasks.Add(Task.Run(() =>
             {
-                Console.WriteLine("Culture of task {0} on thread {1} is {2}",
-                                  Task.CurrentId,
-                                  Thread.CurrentThread.ManagedThreadId,
-                                  Thread.CurrentThread.CurrentCulture.Name);
+                Console.WriteLine($"Culture of task {Task.CurrentId} on thread {Thread.CurrentThread.ManagedThreadId} is {Thread.CurrentThread.CurrentCulture.Name}");
             }));
 
         await Task.WhenAll(tasks.ToArray());

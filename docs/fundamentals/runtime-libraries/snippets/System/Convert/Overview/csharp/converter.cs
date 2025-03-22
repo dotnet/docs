@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ConvertSnippet		
 {
@@ -55,8 +55,7 @@ namespace ConvertSnippet
 				"Overflow in string to int conversion.");
 			}
 
-			System.Console.WriteLine("Your integer as a double is {0}",
-									 System.Convert.ToDouble(newInteger));
+			System.Console.WriteLine($"Your integer as a double is {System.Convert.ToDouble(newInteger)}");
 			//</Snippet1>
 		}
 	}

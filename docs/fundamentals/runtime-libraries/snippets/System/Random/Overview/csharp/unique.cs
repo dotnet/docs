@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 using System.Threading;
 
@@ -13,11 +13,11 @@ public class Example16
 
         Console.WriteLine("\nThe first random number generator:");
         for (int ctr = 1; ctr <= 10; ctr++)
-            Console.WriteLine("   {0}", rnd1.Next());
+            Console.WriteLine($"   {rnd1.Next()}");
 
         Console.WriteLine("\nThe second random number generator:");
         for (int ctr = 1; ctr <= 10; ctr++)
-            Console.WriteLine("   {0}", rnd2.Next());
+            Console.WriteLine($"   {rnd2.Next()}");
     }
 }
 // The example displays output like the following:

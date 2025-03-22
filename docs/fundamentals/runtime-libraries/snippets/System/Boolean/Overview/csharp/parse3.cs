@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 
 public class Example8
@@ -13,10 +13,10 @@ public class Example8
          if (success) {
             // The method throws no exceptions.
             result = Convert.ToBoolean(number);
-            Console.WriteLine("Converted '{0}' to {1}", value, result);
+            Console.WriteLine($"Converted '{value}' to {result}");
          }
          else {
-            Console.WriteLine("Unable to convert '{0}'", value);
+            Console.WriteLine($"Unable to convert '{value}'");
          }
       }
    }

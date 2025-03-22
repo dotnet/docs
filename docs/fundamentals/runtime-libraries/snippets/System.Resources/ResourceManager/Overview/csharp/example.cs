@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -26,7 +26,7 @@ public class Example
         }
         catch (CultureNotFoundException e)
         {
-            Console.WriteLine("Unable to instantiate culture {0}", e.InvalidCultureName);
+            Console.WriteLine($"Unable to instantiate culture {e.InvalidCultureName}");
         }
         finally
         {

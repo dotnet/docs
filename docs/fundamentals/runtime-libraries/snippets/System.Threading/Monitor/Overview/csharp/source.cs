@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Threading;
 
@@ -8,14 +8,12 @@ internal class SyncResource
     public void Access()
     {
         lock(this) {
-            Console.WriteLine("Starting synchronized resource access on thread #{0}",
-                              Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine($"Starting synchronized resource access on thread #{Thread.CurrentThread.ManagedThreadId}");
             if (Thread.CurrentThread.ManagedThreadId % 2 == 0)
                 Thread.Sleep(2000);
 
             Thread.Sleep(200);
-            Console.WriteLine("Stopping synchronized resource access on thread #{0}",
-                              Thread.CurrentThread.ManagedThreadId);
+            Console.WriteLine($"Stopping synchronized resource access on thread #{Thread.CurrentThread.ManagedThreadId}");
         }
     }
 }
@@ -25,14 +23,12 @@ internal class UnSyncResource
     // Do not enforce synchronization.
     public void Access()
     {
-        Console.WriteLine("Starting unsynchronized resource access on Thread #{0}",
-                          Thread.CurrentThread.ManagedThreadId);
+        Console.WriteLine($"Starting unsynchronized resource access on Thread #{Thread.CurrentThread.ManagedThreadId}");
         if (Thread.CurrentThread.ManagedThreadId % 2 == 0)
             Thread.Sleep(2000);
 
         Thread.Sleep(200);
-        Console.WriteLine("Stopping unsynchronized resource access on thread #{0}",
-                          Thread.CurrentThread.ManagedThreadId);
+        Console.WriteLine($"Stopping unsynchronized resource access on thread #{Thread.CurrentThread.ManagedThreadId}");
     }
 }
 

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Reflection;
@@ -15,8 +15,7 @@ public class Example
         Random rnd = new Random();
         int index = rnd.Next(0, cultures.Length);
         Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture(cultures[index]);
-        Console.WriteLine("The current culture is {0}",
-                          CultureInfo.CurrentUICulture.Name);
+        Console.WriteLine($"The current culture is {CultureInfo.CurrentUICulture.Name}");
 
         // Retrieve the resource.
         ResourceManager rm = new ResourceManager("ExampleResources",
@@ -25,7 +24,7 @@ public class Example
 
         Console.Write("Enter your name: ");
         string name = Console.ReadLine();
-        Console.WriteLine("{0} {1}!", greeting, name);
+        Console.WriteLine($"{greeting} {name}!");
     }
 }
 // </Snippet1>

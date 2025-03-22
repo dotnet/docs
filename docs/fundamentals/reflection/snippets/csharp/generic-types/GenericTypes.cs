@@ -1,26 +1,23 @@
-// Example code for How to: Discover and Manipulate Generic Types
 //<Snippet1>
-using System;
 using System.Reflection;
-using System.Collections.Generic;
 
 // Define an example interface.
-public interface ITestArgument {}
+public interface ITestArgument { }
 
 // Define an example base class.
-public class TestBase {}
+public class TestBase { }
 
 // Define a generic class with one parameter. The parameter
 // has three constraints: It must inherit TestBase, it must
 // implement ITestArgument, and it must have a parameterless
 // constructor.
-public class Test<T> where T : TestBase, ITestArgument, new() {}
+public class Test<T> where T : TestBase, ITestArgument, new() { }
 
 // Define a class that meets the constraints on the type
 // parameter of class Test.
 public class TestArgument : TestBase, ITestArgument
 {
-    public TestArgument() {}
+    public TestArgument() { }
 }
 
 public class Example
@@ -42,7 +39,7 @@ public class Example
 
         //<Snippet5>
         Console.WriteLine($"   List {typeParameters.Length} type arguments:");
-        foreach( Type tParam in typeParameters )
+        foreach (Type tParam in typeParameters)
         {
             if (tParam.IsGenericParameter)
             {
@@ -56,19 +53,15 @@ public class Example
         //</Snippet5>
     }
 
-    // The following method displays information about a generic
-    // type parameter. Generic type parameters are represented by
-    // instances of System.Type, just like ordinary types.
-    //<Snippet6>
+    // Displays information about a generic type parameter.
     private static void DisplayGenericParameter(Type tp)
     {
+        //<Snippet6>
         Console.WriteLine($"      Type parameter: {tp.Name} position {tp.GenericParameterPosition}");
         //</Snippet6>
 
         //<Snippet7>
-        Type classConstraint = null;
-
-        foreach(Type iConstraint in tp.GetGenericParameterConstraints())
+        foreach (Type iConstraint in tp.GetGenericParameterConstraints())
         {
             if (iConstraint.IsInterface)
             {
@@ -76,14 +69,7 @@ public class Example
             }
         }
 
-        if (classConstraint != null)
-        {
-            Console.WriteLine($"         Base type constraint: {tp.BaseType}");
-        }
-        else
-        {
-            Console.WriteLine("         Base type constraint: None");
-        }
+        Console.WriteLine($"         Base type constraint: {tp.BaseType ?? tp.BaseType: None}");
         //</Snippet7>
 
         //<Snippet8>
@@ -122,7 +108,7 @@ public class Example
     {
         // Two ways to get a Type object that represents the generic
         // type definition of the Dictionary class.
-        //
+
         //<Snippet10>
         // Use the typeof operator to create the generic type
         // definition directly. To specify the generic type definition,
@@ -135,7 +121,7 @@ public class Example
         // You can also obtain the generic type definition from a
         // constructed class. In this case, the constructed class
         // is a dictionary of Example objects, with String keys.
-        Dictionary<string, Example> d2 = new Dictionary<string, Example>();
+        Dictionary<string, Example> d2 = [];
         // Get a Type object that represents the constructed type,
         // and from that get the generic type definition. The
         // variables d1 and d4 contain the same type.
@@ -156,7 +142,7 @@ public class Example
         // is of type string, and the type to be contained in the
         // dictionary is Example.
         //<Snippet11>
-        Type[] typeArgs = {typeof(string), typeof(Example)};
+        Type[] typeArgs = [typeof(string), typeof(Example)];
         //</Snippet11>
 
         // Construct the type Dictionary<String, Example>.
@@ -165,16 +151,13 @@ public class Example
         //</Snippet12>
 
         DisplayGenericType(constructed);
-
         //<Snippet13>
-        object o = Activator.CreateInstance(constructed);
+        _ = Activator.CreateInstance(constructed);
         //</Snippet13>
 
         Console.WriteLine("\r\nCompare types obtained by different methods:");
-        Console.WriteLine("   Are the constructed types equal? {0}",
-            (d2.GetType()==constructed));
-        Console.WriteLine("   Are the generic definitions equal? {0}",
-            (d1==constructed.GetGenericTypeDefinition()));
+        Console.WriteLine($"   Are the constructed types equal? {d2.GetType() == constructed}");
+        Console.WriteLine($"   Are the generic definitions equal? {d1 == constructed.GetGenericTypeDefinition()}");
 
         // Demonstrate the DisplayGenericType and
         // DisplayGenericParameter methods with the Test class

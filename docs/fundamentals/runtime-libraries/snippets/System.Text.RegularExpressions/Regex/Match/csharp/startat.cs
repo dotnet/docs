@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 
 namespace Examples
@@ -11,7 +11,7 @@ namespace Examples
             var regex = new Regex(@"(?<=Zip code: )\d{5}");
             Match match = regex.Match(input, 5);
             if (match.Success)
-                Console.WriteLine("Match found: {0}", match.Value);
+                Console.WriteLine($"Match found: {match.Value}");
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 
@@ -12,8 +12,9 @@ public class IteratingEx2
         for (int ctr = 0; ctr <= upperBound; ctr++)
         {
             int square = (int)Math.Pow(numbers[ctr], 2);
-            Console.WriteLine("{0}^{1}", numbers[ctr], square);
-            Console.WriteLine("Adding {0} to the collection...\n", square);
+            Console.WriteLine($"{numbers[ctr]}^{square}");
+            Console.WriteLine($"Adding {square} to the collection...");
+            Console.WriteLine();
             numbers.Add(square);
         }
 

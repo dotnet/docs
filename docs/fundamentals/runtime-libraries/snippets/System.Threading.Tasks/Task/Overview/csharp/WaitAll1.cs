@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -21,12 +21,12 @@ public class Example3
         {
             Console.WriteLine("One or more exceptions occurred: ");
             foreach (var ex in ae.Flatten().InnerExceptions)
-                Console.WriteLine("   {0}", ex.Message);
+                Console.WriteLine($"   {ex.Message}");
         }
 
         Console.WriteLine("Status of completed tasks:");
         foreach (var t in tasks)
-            Console.WriteLine("   Task #{0}: {1}", t.Id, t.Status);
+            Console.WriteLine($"   Task #{t.Id}: {t.Status}");
     }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -30,11 +30,8 @@ public class SetThreadsEx
 
     private static void DisplayThreadInfo()
     {
-        Console.WriteLine("\nCurrent Thread Name: '{0}'",
-                          Thread.CurrentThread.Name);
-        Console.WriteLine("Current Thread Culture/UI Culture: {0}/{1}",
-                          Thread.CurrentThread.CurrentCulture.Name,
-                          Thread.CurrentThread.CurrentUICulture.Name);
+        Console.WriteLine($"\nCurrent Thread Name: '{Thread.CurrentThread.Name}'");
+        Console.WriteLine($"Current Thread Culture/UI Culture: {Thread.CurrentThread.CurrentCulture.Name}/{Thread.CurrentThread.CurrentUICulture.Name}");
     }
 
     private static void DisplayValues()
@@ -42,7 +39,7 @@ public class SetThreadsEx
         // Create new thread and display three random numbers.
         Console.WriteLine("Some currency values:");
         for (int ctr = 0; ctr <= 3; ctr++)
-            Console.WriteLine("   {0:C2}", rnd.NextDouble() * 10);
+            Console.WriteLine($"   {rnd.NextDouble() * 10:C2}");
     }
 
     private static void ThreadProc()

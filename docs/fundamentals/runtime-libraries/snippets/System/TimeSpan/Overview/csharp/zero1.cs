@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example4
 {
@@ -12,7 +12,7 @@ public class Example4
         timeSpent += GetTimeBeforeLunch();
         timeSpent += GetTimeAfterLunch();
 
-        Console.WriteLine("Total time: {0}", timeSpent);
+        Console.WriteLine($"Total time: {timeSpent}");
 
         TimeSpan GetTimeBeforeLunch()
         {

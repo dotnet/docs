@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -20,12 +20,7 @@ public class Example1
         foreach (ByteString strValue in values)
         {
             byte byteValue = Byte.Parse(strValue.Value, NumberStyles.AllowHexSpecifier);
-            Console.WriteLine("{0} ({1}) And {2} ({3}) = {4} ({5})",
-                              strValue.Sign * byteValue,
-                              Convert.ToString(byteValue, 2),
-                              mask, Convert.ToString(mask, 2),
-                              (strValue.Sign & Math.Sign(mask)) * (byteValue & mask),
-                              Convert.ToString(byteValue & mask, 2));
+            Console.WriteLine($"{strValue.Sign * byteValue} ({Convert.ToString(byteValue, 2)}) And {mask} ({Convert.ToString(mask, 2)}) = {(strValue.Sign & Math.Sign(mask)) * (byteValue & mask)} ({Convert.ToString(byteValue & mask, 2)})");
         }
     }
 

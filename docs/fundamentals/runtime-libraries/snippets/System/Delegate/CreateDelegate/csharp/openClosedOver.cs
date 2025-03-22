@@ -1,4 +1,4 @@
-﻿// All four permutations of instance/static with open/closed.
+// All four permutations of instance/static with open/closed.
 //
 //<Snippet1>
 using System;
@@ -27,7 +27,7 @@ public class C
 
     public static void M2(string s)
     {
-        Console.WriteLine("Static method M2 on C:  s = {0}", s);
+        Console.WriteLine($"Static method M2 on C:  s = {s}");
     }
 }
 

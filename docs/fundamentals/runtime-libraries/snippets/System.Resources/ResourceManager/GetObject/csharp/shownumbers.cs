@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -16,17 +16,17 @@ public class Example
       Random rnd = new Random();
       CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureNames[rnd.Next(0, cultureNames.Length)]);
       Thread.CurrentThread.CurrentUICulture = culture;
-      Console.WriteLine("The current culture is {0}\n", CultureInfo.CurrentUICulture.Name);
+      Console.WriteLine($"The current culture is {CultureInfo.CurrentUICulture.Name}\n");
       CultureInfo enCulture = CultureInfo.CreateSpecificCulture("en-US");
 
       ResourceManager rm = new ResourceManager(typeof(NumberResources));
       Numbers numbers = (Numbers) rm.GetObject("Numbers");
       Numbers numbersEn = (Numbers) rm.GetObject("Numbers", enCulture);
-      Console.WriteLine("{0} --> {1}", numbers.One, numbersEn.One);
-      Console.WriteLine("{0} --> {1}", numbers.Three, numbersEn.Three);
-      Console.WriteLine("{0} --> {1}", numbers.Five, numbersEn.Five);
-      Console.WriteLine("{0} --> {1}", numbers.Seven, numbersEn.Seven);
-      Console.WriteLine("{0} --> {1}\n", numbers.Nine, numbersEn.Nine);
+      Console.WriteLine($"{numbers.One} --> {numbersEn.One}");
+      Console.WriteLine($"{numbers.Three} --> {numbersEn.Three}");
+      Console.WriteLine($"{numbers.Five} --> {numbersEn.Five}");
+      Console.WriteLine($"{numbers.Seven} --> {numbersEn.Seven}");
+      Console.WriteLine($"{numbers.Nine} --> {numbersEn.Nine}\n");
    }
 }
 

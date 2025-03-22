@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 public class Example2
@@ -9,7 +9,7 @@ public class Example2
         //<snippet2>
         List<string> dinosaurs = new List<string>();
 
-        Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
+        Console.WriteLine($"\nCapacity: {dinosaurs.Capacity}");
 
         dinosaurs.Add("Tyrannosaurus");
         dinosaurs.Add("Amargasaurus");
@@ -23,11 +23,10 @@ public class Example2
             Console.WriteLine(dinosaur);
         }
 
-        Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
-        Console.WriteLine("Count: {0}", dinosaurs.Count);
+        Console.WriteLine($"\nCapacity: {dinosaurs.Capacity}");
+        Console.WriteLine($"Count: {dinosaurs.Count}");
 
-        Console.WriteLine("\nContains(\"Deinonychus\"): {0}",
-            dinosaurs.Contains("Deinonychus"));
+        Console.WriteLine($"""\nContains("Deinonychus"): {dinosaurs.Contains("Deinonychus")}""");
 
         Console.WriteLine("\nInsert(2, \"Compsognathus\")");
         dinosaurs.Insert(2, "Compsognathus");
@@ -40,7 +39,7 @@ public class Example2
 
         //<snippet3>
         // Shows accessing the list using the Item property.
-        Console.WriteLine("\ndinosaurs[3]: {0}", dinosaurs[3]);
+        Console.WriteLine($"\ndinosaurs[3]: {dinosaurs[3]}");
         //</snippet3>
 
         Console.WriteLine("\nRemove(\"Compsognathus\")");
@@ -54,13 +53,13 @@ public class Example2
 
         dinosaurs.TrimExcess();
         Console.WriteLine("\nTrimExcess()");
-        Console.WriteLine("Capacity: {0}", dinosaurs.Capacity);
-        Console.WriteLine("Count: {0}", dinosaurs.Count);
+        Console.WriteLine($"Capacity: {dinosaurs.Capacity}");
+        Console.WriteLine($"Count: {dinosaurs.Count}");
 
         dinosaurs.Clear();
         Console.WriteLine("\nClear()");
-        Console.WriteLine("Capacity: {0}", dinosaurs.Capacity);
-        Console.WriteLine("Count: {0}", dinosaurs.Count);
+        Console.WriteLine($"Capacity: {dinosaurs.Capacity}");
+        Console.WriteLine($"Count: {dinosaurs.Count}");
 
         /* This code example produces the following output:
 

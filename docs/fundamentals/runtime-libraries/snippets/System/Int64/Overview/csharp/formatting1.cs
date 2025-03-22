@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example1
 {
@@ -40,10 +40,10 @@ public class Example1
         long[] numbers = { -146, 11043, 2781913 };
         foreach (var number in numbers)
         {
-            Console.WriteLine("{0} (Base 10):", number);
-            Console.WriteLine("   Binary:  {0}", Convert.ToString(number, 2));
-            Console.WriteLine("   Octal:   {0}", Convert.ToString(number, 8));
-            Console.WriteLine("   Hex:     {0}\n", Convert.ToString(number, 16));
+            Console.WriteLine($"{number} (Base 10):");
+            Console.WriteLine($"   Binary:  {Convert.ToString(number, 2)}");
+            Console.WriteLine($"   Octal:   {Convert.ToString(number, 8)}");
+            Console.WriteLine($"   Hex:     {Convert.ToString(number, 16)}{Environment.NewLine}");
         }
         // The example displays the following output:
         //    -146 (Base 10):

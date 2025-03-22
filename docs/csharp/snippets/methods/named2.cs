@@ -1,4 +1,4 @@
-﻿class TestMotorcycle : Motorcycle
+class TestMotorcycle : Motorcycle
 {
     public override int Drive(int miles, int speed) =>
         (int)Math.Round(((double)miles) / speed, 0);
@@ -13,7 +13,7 @@
         // <Snippet46>
         int travelTime = moto.Drive(170, speed: 55);
         // </Snippet46>
-        Console.WriteLine("Travel time: approx. {0} hours", travelTime);
+        Console.WriteLine($"Travel time: approx. {travelTime} hours");
     }
 }
 

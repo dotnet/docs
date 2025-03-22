@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 abstract class Motorcycle
 {
     // Anyone can call this.
@@ -31,7 +31,7 @@ class TestMotorcycle : Motorcycle
         moto.AddGas(15);
         moto.Drive(5, 20);
         double speed = moto.GetTopSpeed();
-        Console.WriteLine("My top speed is {0}", speed);
+        Console.WriteLine($"My top speed is {speed}");
     }
 }
 //</Snippet2>

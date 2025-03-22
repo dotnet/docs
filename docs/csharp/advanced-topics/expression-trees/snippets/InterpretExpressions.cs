@@ -1,4 +1,4 @@
-﻿using System.Linq.Expressions;
+using System.Linq.Expressions;
 public static class InterpretExpressions
 {
     public static void ParseExpression()
@@ -16,8 +16,7 @@ public static class InterpretExpressions
         ParameterExpression left = (ParameterExpression)operation.Left;
         ConstantExpression right = (ConstantExpression)operation.Right;
 
-        Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
-                          param.Name, left.Name, operation.NodeType, right.Value);
+        Console.WriteLine($"Decomposed expression: {param.Name} => {left.Name} {operation.NodeType} {right.Value}");
 
         // This code produces the following output:
 

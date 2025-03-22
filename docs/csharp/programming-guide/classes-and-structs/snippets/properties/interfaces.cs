@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace interfaces
 {
@@ -93,8 +93,8 @@ namespace interfaces
             e1.Name = System.Console.ReadLine();
 
             System.Console.WriteLine("The employee information:");
-            System.Console.WriteLine("Employee number: {0}", e1.Counter);
-            System.Console.WriteLine("Employee name: {0}", e1.Name);
+            System.Console.WriteLine($"Employee number: {e1.Counter}");
+            System.Console.WriteLine($"Employee name: {e1.Name}");
             // </SnippetUseProperty>
         }
     }

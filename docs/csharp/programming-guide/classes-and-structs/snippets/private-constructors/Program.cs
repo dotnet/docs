@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 class NLog
 {
     // Private Constructor:
@@ -33,7 +33,7 @@ class TestCounter
 
         Counter.currentCount = 100;
         Counter.IncrementCount();
-        Console.WriteLine("New count: {0}", Counter.currentCount);
+        Console.WriteLine($"New count: {Counter.currentCount}");
 
         // Keep the console window open in debug mode.
         Console.WriteLine("Press any key to exit.");

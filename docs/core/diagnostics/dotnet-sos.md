@@ -10,7 +10,7 @@ ms.custom: linux-related-content
 **This article applies to:** ✔️ .NET 6.0 SDK and later versions
 
 > [!NOTE]
-Consider using the [.NET debugger extensions](dotnet-debugger-extensions.md) instead, which include the SOS functionality and additional features.
+> Consider using the [.NET debugger extensions](dotnet-debugger-extensions.md) instead, which include the SOS functionality and additional features.
 
 ## Install
 

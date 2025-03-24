@@ -1,4 +1,4 @@
-﻿namespace Extension2
+namespace Extension2
 {
 
     //<snippet2>
@@ -23,13 +23,13 @@
             {
                 Grades g1 = Grades.D;
                 Grades g2 = Grades.F;
-                Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
-                Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
+                Console.WriteLine($"First {g1.Passing() ? "is" : "is not"} a passing grade.");
+                Console.WriteLine($"Second {g2.Passing() ? "is" : "is not"} a passing grade.");
 
                 Extensions.minPassing = Grades.C;
                 Console.WriteLine("\r\nRaising the bar!\r\n");
-                Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
-                Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
+                Console.WriteLine($"First {g1.Passing() ? "is" : "is not"} a passing grade.");
+                Console.WriteLine($"Second {g2.Passing() ? "is" : "is not"} a passing grade.");
             }
             /* Output:
                 First is a passing grade.

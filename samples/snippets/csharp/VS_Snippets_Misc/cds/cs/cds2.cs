@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 namespace ProducerConsumer
 {
     using System;
@@ -69,12 +69,10 @@ namespace ProducerConsumer
             // underlying collection.
             foreach (long item in collection.GetConsumingEnumerable())
             {
-                Console.WriteLine("Consuming tick value {0} : item# {1} ",
-                        item.ToString("D18"), subtractions++);
+                Console.WriteLine($"Consuming tick value {item.ToString("D18")} : item# {subtractions++} ");
             }
 
-            Console.WriteLine("Total added: {0} Total consumed: {1} Current count: {2} ",
-                                additions, subtractions, collection.Count());
+            Console.WriteLine($"Total added: {additions} Total consumed: {subtractions} Current count: {collection.Count()} ");
             sw.Stop();
 
             Console.WriteLine("Press any key to exit");
@@ -92,7 +90,7 @@ namespace ProducerConsumer
                 bool b = collection.TryTake(out ticks, 30);
                 if (b == true)
                 {
-                    Console.WriteLine("Consuming {0} : {1} ", ticks.ToString("D18"), subtractions++);
+                    Console.WriteLine($"Consuming {ticks.ToString("D18")} : {subtractions++} ");
                 }
                 else
                 {

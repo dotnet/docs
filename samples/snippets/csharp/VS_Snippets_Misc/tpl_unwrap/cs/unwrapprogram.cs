@@ -100,7 +100,7 @@ namespace Unwrap
                 {
                     if (antecedent.Result >= threshold)
                     {
-                      return Task.Factory.StartNew( () =>  Console.WriteLine("Program complete. Final = 0x{0:x} threshold = 0x{1:x}", stepTwo.Result, threshold));
+                      return Task.Factory.StartNew( () =>  Console.WriteLine($"Program complete. Final = 0x{stepTwo.Result:x} threshold = 0x{threshold):x}");
                     }
                     else
                     {

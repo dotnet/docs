@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,8 +22,7 @@ class Example
         var evenNums = from num in source.AsParallel()
                        where num % 2 == 0
                        select num;
-        Console.WriteLine("{0} even numbers out of {1} total",
-                          evenNums.Count(), source.Count());
+        Console.WriteLine($"{evenNums.Count()} even numbers out of {source.Count()} total");
         // The example displays the following output:
         //       5000 even numbers out of 10000 total
         // </snippet1>

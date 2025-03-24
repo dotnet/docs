@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -687,9 +687,9 @@ namespace csrefKeywordsModifiers
             Shape s = new Sphere(r);
             Shape l = new Cylinder(r, h);
             // Display results.
-            Console.WriteLine("Area of Circle   = {0:F2}", c.Area());
-            Console.WriteLine("Area of Sphere   = {0:F2}", s.Area());
-            Console.WriteLine("Area of Cylinder = {0:F2}", l.Area());
+            Console.WriteLine($"Area of Circle   = {c.Area():F2}");
+            Console.WriteLine($"Area of Sphere   = {s.Area():F2}");
+            Console.WriteLine($"Area of Cylinder = {l.Area():F2}");
         }
     }
     /*

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data;
@@ -148,16 +148,13 @@ namespace CS_lazy
             // first thread that accesses the Value property.
             Lazy<int> number = new Lazy<int>(() => Thread.CurrentThread.ManagedThreadId);
 
-            Thread t1 = new Thread(() => Console.WriteLine("number on t1 = {0} ThreadID = {1}",
-                                                    number.Value, Thread.CurrentThread.ManagedThreadId));
+            Thread t1 = new Thread(() => Console.WriteLine($"number on t1 = {number.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
             t1.Start();
 
-            Thread t2 = new Thread(() => Console.WriteLine("number on t2 = {0} ThreadID = {1}",
-                                                    number.Value, Thread.CurrentThread.ManagedThreadId));
+            Thread t2 = new Thread(() => Console.WriteLine($"number on t2 = {number.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
             t2.Start();
 
-            Thread t3 = new Thread(() => Console.WriteLine("number on t3 = {0} ThreadID = {1}", number.Value,
-                                                    Thread.CurrentThread.ManagedThreadId));
+            Thread t3 = new Thread(() => Console.WriteLine($"number on t3 = {number.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
             t3.Start();
 
             // Ensure that thread IDs are not recycled if the
@@ -177,16 +174,13 @@ namespace CS_lazy
             //<snippet9>
             // Initialize the integer to the managed thread id on a per-thread basis.
             ThreadLocal<int> threadLocalNumber = new ThreadLocal<int>(() => Thread.CurrentThread.ManagedThreadId);
-            Thread t4 = new Thread(() => Console.WriteLine("threadLocalNumber on t4 = {0} ThreadID = {1}",
-                                                threadLocalNumber.Value, Thread.CurrentThread.ManagedThreadId));
+            Thread t4 = new Thread(() => Console.WriteLine($"threadLocalNumber on t4 = {threadLocalNumber.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
             t4.Start();
 
-            Thread t5 = new Thread(() => Console.WriteLine("threadLocalNumber on t5 = {0} ThreadID = {1}",
-                                                threadLocalNumber.Value, Thread.CurrentThread.ManagedThreadId));
+            Thread t5 = new Thread(() => Console.WriteLine($"threadLocalNumber on t5 = {threadLocalNumber.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
             t5.Start();
 
-            Thread t6 = new Thread(() => Console.WriteLine("threadLocalNumber on t6 = {0} ThreadID = {1}",
-                                                threadLocalNumber.Value, Thread.CurrentThread.ManagedThreadId));
+            Thread t6 = new Thread(() => Console.WriteLine($"threadLocalNumber on t6 = {threadLocalNumber.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
             t6.Start();
 
             // Ensure that thread IDs are not recycled if the

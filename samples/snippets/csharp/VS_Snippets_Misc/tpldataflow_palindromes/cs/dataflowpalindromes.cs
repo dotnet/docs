@@ -67,8 +67,7 @@ static class DataflowReversedWords
       // Prints the provided reversed words to the console.
       var printReversedWords = new ActionBlock<string>(reversedWord =>
       {
-         Console.WriteLine("Found reversed words {0}/{1}",
-            reversedWord, new string(reversedWord.Reverse().ToArray()));
+         Console.WriteLine($"Found reversed words {reversedWord}/{new string(reversedWord.Reverse().ToArray())}");
       });
       // </snippet3>
 

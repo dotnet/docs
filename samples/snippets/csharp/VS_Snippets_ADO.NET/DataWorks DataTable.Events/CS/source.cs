@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 
 static class Class1
@@ -85,8 +85,7 @@ static class Class1
 
     static void Table_NewRow(object sender,
         DataTableNewRowEventArgs e) =>
-        Console.WriteLine("Table_NewRow Event: RowState={0}",
-            e.Row.RowState.ToString());
+        Console.WriteLine($"Table_NewRow Event: RowState={e.Row.RowState.ToString()}");
 
     static void Table_Cleared(object sender, DataTableClearEventArgs e) =>
         Console.WriteLine("Table_Cleared Event: TableName={0}; Rows={1}",

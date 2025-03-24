@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 //using System.Drawing;
 //using System.Windows.Forms;
 
@@ -280,15 +280,15 @@ class Box : IDimensions
         // errors because they try to access an explicitly implemented
         // interface member from a class instance:
         //<Snippet45>
-        //System.Console.WriteLine("Length: {0}", box1.GetLength());
-        //System.Console.WriteLine("Width: {0}", box1.GetWidth());
+        //System.Console.WriteLine($"Length: {box1.GetLength()}");
+        //System.Console.WriteLine($"Width: {box1.GetWidth()}");
         //</Snippet45>
 
         // Print out the dimensions of the box by calling the methods
         // from an instance of the interface:
         //<Snippet46>
-        System.Console.WriteLine("Length: {0}", dimensions.GetLength());
-        System.Console.WriteLine("Width: {0}", dimensions.GetWidth());
+        System.Console.WriteLine($"Length: {dimensions.GetLength()}");
+        System.Console.WriteLine($"Width: {dimensions.GetWidth()}");
         //</Snippet46>
     }
 }
@@ -350,12 +350,12 @@ namespace WrapBox
             IMetricDimensions mDimensions = box1;
 
             // Print dimensions in English units:
-            System.Console.WriteLine("Length(in): {0}", eDimensions.Length());
-            System.Console.WriteLine("Width (in): {0}", eDimensions.Width());
+            System.Console.WriteLine($"Length(in): {eDimensions.Length()}");
+            System.Console.WriteLine($"Width (in): {eDimensions.Width()}");
 
             // Print dimensions in metric units:
-            System.Console.WriteLine("Length(cm): {0}", mDimensions.Length());
-            System.Console.WriteLine("Width (cm): {0}", mDimensions.Width());
+            System.Console.WriteLine($"Length(cm): {mDimensions.Length()}");
+            System.Console.WriteLine($"Width (cm): {mDimensions.Width()}");
         }
     }
     /* Output:
@@ -402,10 +402,10 @@ class Test
             Box box1 = new Box(30.0f, 20.0f);
             IMetricDimensions mDimensions = box1;
 
-            System.Console.WriteLine("Length(in): {0}", box1.Length());
-            System.Console.WriteLine("Width (in): {0}", box1.Width());
-            System.Console.WriteLine("Length(cm): {0}", mDimensions.Length());
-            System.Console.WriteLine("Width (cm): {0}", mDimensions.Width());
+            System.Console.WriteLine($"Length(in): {box1.Length()}");
+            System.Console.WriteLine($"Width (in): {box1.Width()}");
+            System.Console.WriteLine($"Length(cm): {mDimensions.Length()}");
+            System.Console.WriteLine($"Width (cm): {mDimensions.Width()}");
         }
         //</Snippet11>
     }

@@ -1,4 +1,4 @@
-// <Snippet1>
+﻿// <Snippet1>
 using System;
 using System.Collections.Generic;
 
@@ -75,12 +75,16 @@ public class TimeZoneApplication
          return;
       }
       DateTime currentTime = DateTime.Now;
-      Console.WriteLine($"The current {TimeZoneInfo.Local.IsDaylightSavingTime(currentTime) ?
+      Console.WriteLine("The current {0} time is {1}.",
+                        TimeZoneInfo.Local.IsDaylightSavingTime(currentTime) ?
                             TimeZoneInfo.Local.StandardName :
-                            TimeZoneInfo.Local.DaylightName} time is {currentTime.ToString("f")}.");
-      Console.WriteLine($"The current {cst.IsDaylightSavingTime(currentTime) ?
+                            TimeZoneInfo.Local.DaylightName,
+                        currentTime.ToString("f"));
+      Console.WriteLine("The current {0} time is {1}.",
+                        cst.IsDaylightSavingTime(currentTime) ?
                             cst.StandardName :
-                            cst.DaylightName} time is {TimeZoneInfo.ConvertTime(currentTime, TimeZoneInfo.Local, cst).ToString("f")}.");
+                            cst.DaylightName,
+                        TimeZoneInfo.ConvertTime(currentTime, TimeZoneInfo.Local, cst).ToString("f"));
    }
 
    private void HandleTimeZoneException(string timeZoneName)

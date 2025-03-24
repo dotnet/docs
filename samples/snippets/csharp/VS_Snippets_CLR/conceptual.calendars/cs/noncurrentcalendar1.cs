@@ -1,4 +1,4 @@
-// <Snippet6>
+﻿// <Snippet6>
 using System;
 using System.Globalization;
 
@@ -9,8 +9,13 @@ public class Example
       JulianCalendar julian = new JulianCalendar();
       DateTime date1 = new DateTime(1905, 1, 9, julian);
 
-      Console.WriteLine($"Date ({CultureInfo.CurrentCulture.Calendar}): {date1:d}");
-      Console.WriteLine($"Date in Julian calendar: {julian.GetMonth(date1):d2}/{julian.GetDayOfMonth(date1):d2}/{julian.GetYear(date1):d4}");
+      Console.WriteLine("Date ({0}): {1:d}",
+                        CultureInfo.CurrentCulture.Calendar,
+                        date1);
+      Console.WriteLine("Date in Julian calendar: {0:d2}/{1:d2}/{2:d4}",
+                        julian.GetMonth(date1),
+                        julian.GetDayOfMonth(date1),
+                        julian.GetYear(date1));
    }
 }
 // The example displays the following output:

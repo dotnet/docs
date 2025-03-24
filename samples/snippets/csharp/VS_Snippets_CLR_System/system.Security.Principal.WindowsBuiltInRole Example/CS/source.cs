@@ -31,8 +31,8 @@ class SecurityPrincipalDemo
         //</Snippet2>
         //<Snippet3>
         // Get the role using the string value of the role.
-        Console.WriteLine($"{"Administrators"}? {myPrincipal.IsInRole("BUILTIN\\" + "Administrators")}.");
-        Console.WriteLine($"{"Users"}? {myPrincipal.IsInRole("BUILTIN\\" + "Users")}.");
+        Console.WriteLine($"'Administrators'? {myPrincipal.IsInRole("BUILTIN\\" + "Administrators")}.");
+        Console.WriteLine($"'Users'? {myPrincipal.IsInRole("BUILTIN\\" + "Users")}.");
         //</Snippet3>
         //<Snippet4>
         // Get the role using the WindowsBuiltInRole enumeration value.

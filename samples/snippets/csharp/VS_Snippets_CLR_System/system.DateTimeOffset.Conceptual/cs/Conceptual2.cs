@@ -1,4 +1,4 @@
-// <Snippet2>
+﻿// <Snippet2>
 using System;
 
 public enum TimeComparison2
@@ -15,8 +15,15 @@ public class DateManipulation
         DateTime localTime = DateTime.Now;
         DateTime utcTime = DateTime.UtcNow;
 
-        Console.WriteLine($"Difference between {localTime.Kind} and {utcTime.Kind} time: {(localTime - utcTime).Hours}:{(localTime - utcTime).Minutes} hours");
-        Console.WriteLine($"The {localTime.Kind} time is {Enum.GetName(typeof(TimeComparison2), localTime.CompareTo(utcTime))} the {utcTime.Kind} time.");
+        Console.WriteLine("Difference between {0} and {1} time: {2}:{3} hours",
+                          localTime.Kind,
+                          utcTime.Kind,
+                          (localTime - utcTime).Hours,
+                          (localTime - utcTime).Minutes);
+        Console.WriteLine("The {0} time is {1} the {2} time.",
+                          localTime.Kind,
+                          Enum.GetName(typeof(TimeComparison2), localTime.CompareTo(utcTime)),
+                          utcTime.Kind);
     }
 }
 // If run in the U.S. Pacific Standard Time zone, the example displays

@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 
 namespace TestReferenceEquality
 {
@@ -44,7 +44,7 @@ namespace TestReferenceEquality
             // that have reference equality also have value equality.
             tcA.Num = 42;
             tcA.Name = "TestClass 42";
-            Console.WriteLine("tcB.Name = {0} tcB.Num: {1}", tcB.Name, tcB.Num);
+            Console.WriteLine($"tcB.Name = {tcB.Name} tcB.Num: {tcB.Num}");
             #endregion
 
             // Demonstrate that two value type instances never have reference equality.
@@ -71,7 +71,7 @@ namespace TestReferenceEquality
             // After a new string is assigned to strA, strA and strB
             // are no longer interned and no longer have reference equality.
             strA = "Goodbye world!";
-            Console.WriteLine("strA = \"{0}\" strB = \"{1}\"", strA, strB);
+            Console.WriteLine($"strA = '{strA}' strB = '{strB}'");
 
             Console.WriteLine("After strA changes, ReferenceEquals(strA, strB) = {0}",
                             Object.ReferenceEquals(strA, strB)); // false
@@ -84,7 +84,7 @@ namespace TestReferenceEquality
                             Object.ReferenceEquals(stringC, strB));
 
             // The string class overloads the == operator to perform an equality comparison.
-            Console.WriteLine("stringC == strB = {0}", stringC == strB); // true
+            Console.WriteLine($"stringC == strB = {stringC == strB}"); // true
 
             #endregion
 

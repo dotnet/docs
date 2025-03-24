@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Exceptions
 {
@@ -22,7 +22,7 @@ namespace Exceptions
             try
             {
                 result = SafeDivision(a, b);
-                Console.WriteLine("{0} divided by {1} = {2}", a, b, result);
+                Console.WriteLine($"{a} divided by {b} = {result}");
             }
             catch (DivideByZeroException)
             {

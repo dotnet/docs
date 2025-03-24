@@ -1,4 +1,4 @@
-﻿namespace ValueEqualityClass;
+namespace ValueEqualityClass;
 
 class TwoDPoint : IEquatable<TwoDPoint>
 {
@@ -138,14 +138,14 @@ class Program
         int i = 5;
 
         Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
-        Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
+        Console.WriteLine($"pointA == pointB = {pointA == pointB}");
         Console.WriteLine("null comparison = {0}", pointA.Equals(pointC));
         Console.WriteLine("Compare to some other type = {0}", pointA.Equals(i));
 
         TwoDPoint pointD = null;
         TwoDPoint pointE = null;
 
-        Console.WriteLine("Two null TwoDPoints are equal: {0}", pointD == pointE);
+        Console.WriteLine($"Two null TwoDPoints are equal: {pointD == pointE}");
 
         pointE = new TwoDPoint(3, 4);
         Console.WriteLine("(pointE == pointA) = {0}", pointE == pointA);

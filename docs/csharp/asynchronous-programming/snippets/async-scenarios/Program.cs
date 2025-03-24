@@ -111,7 +111,7 @@ public class Program
 
     private static void DoSomethingWithData(object stringData)
     {
-        Console.WriteLine($"Displaying data: ");
+        Console.WriteLine($"Displaying data: {stringData}");
     }
 
     // <GetUsersForDataset>

@@ -39,7 +39,7 @@ class TestHiding
         //</CastToBase>
 
         System.Console.WriteLine($"Name in the derived class is: {m1.Name}");
-        System.Console.WriteLine("Name in the base class is: {0}", ((Employee)m1).Name);
+        System.Console.WriteLine($"Name in the base class is: {((Employee)m1).Name}");
     }
 }
 /* Output:

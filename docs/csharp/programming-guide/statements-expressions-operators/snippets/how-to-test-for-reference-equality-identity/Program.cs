@@ -71,7 +71,7 @@ namespace TestReferenceEquality
             // After a new string is assigned to strA, strA and strB
             // are no longer interned and no longer have reference equality.
             strA = "Goodbye world!";
-            Console.WriteLine($"""strA = "{strA}" strB = "{strB}"""");
+            Console.WriteLine($"strA = '{strA}' strB = '{strB}'");
 
             Console.WriteLine("After strA changes, ReferenceEquals(strA, strB) = {0}",
                             Object.ReferenceEquals(strA, strB)); // false

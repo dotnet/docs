@@ -111,7 +111,7 @@ namespace Samples
                     foreach (Claim c in cs.FindClaims("http://example.org/claims/allowedoperation", Rights.PossessProperty))
                     {
                         // Write the claim resource to the console.
-                        Console.WriteLine("resource: {0}", c.Resource.ToString());
+                        Console.WriteLine($"resource: {c.Resource.ToString()}");
 
                         // If the claim resource matches the action URI, then return true to allow access.
                         if (action == c.Resource.ToString())
@@ -162,7 +162,7 @@ namespace TestPrincipalPermission
                 serviceUri, EndpointIdentity.CreateUpnIdentity(WindowsIdentity.GetCurrent().Name));
             ChannelFactory<ISecureService> cf = new ChannelFactory<ISecureService>(GetBinding(), sr);
             ISecureService client = cf.CreateChannel();
-            Console.WriteLine("Client received response from Method1: {0}", client.Method1());
+            Console.WriteLine($"Client received response from Method1: {client.Method1()}");
             ((IChannel)client).Close();
             Console.ReadLine();
             service.Close();
@@ -234,7 +234,7 @@ namespace CustomMode
                 serviceUri, EndpointIdentity.CreateUpnIdentity(WindowsIdentity.GetCurrent().Name));
             ChannelFactory<ISecureService> cf = new ChannelFactory<ISecureService>(GetBinding(), sr);
             ISecureService client = cf.CreateChannel();
-            Console.WriteLine("Client received response from Method1: {0}", client.Method1("hello"));
+            Console.WriteLine($"Client received response from Method1: {client.Method1("hello")}");
             ((IChannel)client).Close();
             Console.ReadLine();
             service.Close();

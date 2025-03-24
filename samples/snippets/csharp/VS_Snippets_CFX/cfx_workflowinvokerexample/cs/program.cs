@@ -212,9 +212,7 @@ namespace WorkflowInvokerExample
                 }
                 else if (args.Error != null)
                 {
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        args.Error.GetType().FullName,
-                        args.Error.Message);
+                    Console.WriteLine($"Exception: {args.Error.GetType().FullName}\n{args.Error.Message}");
                 }
                 else
                 {
@@ -251,9 +249,7 @@ namespace WorkflowInvokerExample
                 }
                 else if (args.Error != null)
                 {
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        args.Error.GetType().FullName,
-                        args.Error.Message);
+                    Console.WriteLine($"Exception: {args.Error.GetType().FullName}\n{args.Error.Message}");
                 }
                 else
                 {

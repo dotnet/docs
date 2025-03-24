@@ -375,7 +375,7 @@ namespace ActivityExample
             // asynchronously with respect to the workflow thread.
             Thread.Sleep(5000);
 
-            Console.WriteLine("Random Number: {0}", r.Next(1, 101));
+            Console.WriteLine($"Random Number: {r.Next(1, 101)}");
         }
     }
     //</snippet11>

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.ServiceModel.Description;
@@ -50,13 +50,13 @@ namespace Microsoft.WCF.Documentation
 
     public void Attach(IContextChannel owner)
     {
-      Console.WriteLine("Attached to new IContextChannel {0}.", owner.GetHashCode());
+      Console.WriteLine($"Attached to new IContextChannel {owner.GetHashCode()}.");
       this.channel = owner;
     }
 
     public void Detach(IContextChannel owner)
     {
-      Console.WriteLine("Detached from IContextChannel {0}.", owner.GetHashCode());
+      Console.WriteLine($"Detached from IContextChannel {owner.GetHashCode()}.");
     }
 
     #endregion

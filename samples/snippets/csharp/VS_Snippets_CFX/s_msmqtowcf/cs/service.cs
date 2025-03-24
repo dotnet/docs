@@ -55,7 +55,7 @@ namespace Microsoft.ServiceModel.Samples
 
 		// The service can now be accessed.
 			Console.WriteLine("The service is ready.");
-			Console.WriteLine("The service is running in the following account: {0}", WindowsIdentity.GetCurrent().Name);
+			Console.WriteLine($"The service is running in the following account: {WindowsIdentity.GetCurrent().Name}");
 			Console.WriteLine("Press <ENTER> to terminate service.");
 			Console.WriteLine();
 			Console.ReadLine();

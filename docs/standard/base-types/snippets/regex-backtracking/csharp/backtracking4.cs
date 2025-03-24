@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
@@ -16,7 +16,7 @@ public class Example4
         sw = Stopwatch.StartNew();
         matched = Regex.IsMatch(input, backPattern);
         sw.Stop();
-        Console.WriteLine("Match: {0} in {1}", Regex.IsMatch(input, backPattern), sw.Elapsed);
+        Console.WriteLine($"Match: {Regex.IsMatch(input, backPattern)} in {sw.Elapsed}");
         Console.WriteLine();
 
         Console.WriteLine("Without backtracking:");
@@ -24,7 +24,7 @@ public class Example4
         sw = Stopwatch.StartNew();
         matched = Regex.IsMatch(input, noBackPattern);
         sw.Stop();
-        Console.WriteLine("Match: {0} in {1}", Regex.IsMatch(input, noBackPattern), sw.Elapsed);
+        Console.WriteLine($"Match: {Regex.IsMatch(input, noBackPattern)} in {sw.Elapsed}");
     }
 }
 // The example displays output like the following:

@@ -1,4 +1,4 @@
-﻿class TestArraysClass
+class TestArraysClass
 {
     public static void DeclareArrays()
     {
@@ -105,7 +105,7 @@
         {
             for (int j = 0; j < arr.GetLength(1); j++)
             {
-                System.Console.WriteLine("Element({0},{1})={2}", i, j, arr[i, j]);
+                System.Console.WriteLine($"Element({i},{j})={arr[i}");
             }
         }
     }

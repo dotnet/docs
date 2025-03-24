@@ -31,14 +31,12 @@ namespace TestReferenceEquality
             TestClass tcA = new TestClass() { Num = 1, Name = "New TestClass" };
             TestClass tcB = new TestClass() { Num = 1, Name = "New TestClass" };
 
-            Console.WriteLine("ReferenceEquals(tcA, tcB) = {0}",
-                                Object.ReferenceEquals(tcA, tcB)); // false
+            Console.WriteLine($"ReferenceEquals(tcA, tcB) = {Object.ReferenceEquals(tcA, tcB)}"); // false
 
             // After assignment, tcB and tcA refer to the same object.
             // They now have reference equality.
             tcB = tcA;
-            Console.WriteLine("After assignment: ReferenceEquals(tcA, tcB) = {0}",
-                                Object.ReferenceEquals(tcA, tcB)); // true
+            Console.WriteLine($"After assignment: ReferenceEquals(tcA, tcB) = {Object.ReferenceEquals(tcA, tcB)}"); // true
 
             // Changes made to tcA are reflected in tcB. Therefore, objects
             // that have reference equality also have value equality.
@@ -55,8 +53,7 @@ namespace TestReferenceEquality
             // Value types are boxed into separate objects when passed to ReferenceEquals.
             // Even if the same variable is used twice, boxing ensures they are different instances.
             TestStruct tsD = tsC;
-            Console.WriteLine("After assignment: ReferenceEquals(tsC, tsD) = {0}",
-                                Object.ReferenceEquals(tsC, tsD)); // false
+            Console.WriteLine($"After assignment: ReferenceEquals(tsC, tsD) = {Object.ReferenceEquals(tsC, tsD)}"); // false
             #endregion
 
             #region stringRefEquality
@@ -65,8 +62,7 @@ namespace TestReferenceEquality
             // the two strings have reference equality although no assignment takes place.
             string strA = "Hello world!";
             string strB = "Hello world!";
-            Console.WriteLine("ReferenceEquals(strA, strB) = {0}",
-                             Object.ReferenceEquals(strA, strB)); // true
+            Console.WriteLine($"ReferenceEquals(strA, strB) = {Object.ReferenceEquals(strA, strB)}"); // true
 
             // After a new string is assigned to strA, strA and strB
             // are no longer interned and no longer have reference equality.
@@ -80,8 +76,7 @@ namespace TestReferenceEquality
             StringBuilder sb = new StringBuilder("Hello world!");
             string stringC = sb.ToString();
             // False:
-            Console.WriteLine("ReferenceEquals(stringC, strB) = {0}",
-                            Object.ReferenceEquals(stringC, strB));
+            Console.WriteLine($"ReferenceEquals(stringC, strB) = {Object.ReferenceEquals(stringC, strB)}");
 
             // The string class overloads the == operator to perform an equality comparison.
             Console.WriteLine($"stringC == strB = {stringC == strB}"); // true

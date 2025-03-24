@@ -69,8 +69,7 @@ public class PipeServer
             ReadFileToStream fileReader = new ReadFileToStream(ss, filename);
 
             // Display the name of the user we are impersonating.
-            Console.WriteLine("Reading file: {0} on thread[{1}] as user: {2}.",
-                filename, threadId, pipeServer.GetImpersonationUserName());
+            Console.WriteLine($"Reading file: {filename} on thread[{threadId}] as user: {pipeServer.GetImpersonationUserName()}.");
             pipeServer.RunAsClient(fileReader.Start);
             //</snippet2>
         }

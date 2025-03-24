@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace StringExamples;
 public static class Interpolation
@@ -21,9 +21,9 @@ public static class Interpolation
 
         // <StringFormat>
         var pw = (firstName: "Phillis", lastName: "Wheatley", born: 1753, published: 1773);
-        Console.WriteLine("{0} {1} was an African American poet born in {2}.", pw.firstName, pw.lastName, pw.born);
-        Console.WriteLine("She was first published in {0} at the age of {1}.", pw.published, pw.published - pw.born);
-        Console.WriteLine("She'd be over {0} years old today.", Math.Round((2018d - pw.born) / 100d) * 100d);
+        Console.WriteLine($"{pw.firstName} {pw.lastName} was an African American poet born in {pw.born}.");
+        Console.WriteLine($"She was first published in {pw.published} at the age of {pw.published - pw.born}.");
+        Console.WriteLine($"She'd be over {Math.Round((2018d - pw.born) / 100d) * 100d} years old today.");
 
         // Output:
         // Phillis Wheatley was an African American poet born in 1753.

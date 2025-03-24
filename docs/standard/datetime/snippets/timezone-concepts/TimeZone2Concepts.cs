@@ -1,4 +1,4 @@
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Security;
 
 [assembly: CLSCompliant(true)]
@@ -88,11 +88,15 @@ public class TZExamples
                 TimeZoneInfo.Local,
                 easternZone
                 );
-            Console.WriteLine($"{timeNow} {TimeZoneInfo.Local.IsDaylightSavingTime(timeNow) ?
+            Console.WriteLine("{0} {1} corresponds to {2} {3}.",
+                              timeNow,
+                              TimeZoneInfo.Local.IsDaylightSavingTime(timeNow) ?
                                         TimeZoneInfo.Local.DaylightName :
-                                        TimeZoneInfo.Local.StandardName} corresponds to {easternTimeNow} {easternZone.IsDaylightSavingTime(easternTimeNow) ?
+                                        TimeZoneInfo.Local.StandardName,
+                              easternTimeNow,
+                              easternZone.IsDaylightSavingTime(easternTimeNow) ?
                                           easternZone.DaylightName :
-                                          easternZone.StandardName}.");
+                                          easternZone.StandardName);
         }
         // Handle exception
         //
@@ -158,8 +162,10 @@ public class TZExamples
         {
             TimeZoneInfo cstZone = TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time");
             DateTime cstTime = TimeZoneInfo.ConvertTimeFromUtc(timeUtc, cstZone);
-            Console.WriteLine($"The date and time are {cstTime} {cstZone.IsDaylightSavingTime(cstTime) ?
-                                      cstZone.DaylightName : cstZone.StandardName}.");
+            Console.WriteLine("The date and time are {0} {1}.",
+                              cstTime,
+                              cstZone.IsDaylightSavingTime(cstTime) ?
+                                      cstZone.DaylightName : cstZone.StandardName);
         }
         catch (TimeZoneNotFoundException)
         {
@@ -179,7 +185,10 @@ public class TZExamples
         try
         {
             TimeZoneInfo hwZone = TimeZoneInfo.FindSystemTimeZoneById("Hawaiian Standard Time");
-            Console.WriteLine($"{hwTime} {hwZone.IsDaylightSavingTime(hwTime) ? hwZone.DaylightName : hwZone.StandardName} is {TimeZoneInfo.ConvertTime(hwTime, hwZone, TimeZoneInfo.Local)} local time.");
+            Console.WriteLine("{0} {1} is {2} local time.",
+                    hwTime,
+                    hwZone.IsDaylightSavingTime(hwTime) ? hwZone.DaylightName : hwZone.StandardName,
+                    TimeZoneInfo.ConvertTime(hwTime, hwZone, TimeZoneInfo.Local));
         }
         catch (TimeZoneNotFoundException)
         {
@@ -206,7 +215,8 @@ public class TZExamples
         {
             DateTime utcTime = DateTime.SpecifyKind(ambiguousTime - TimeZoneInfo.Local.BaseUtcOffset,
                                                     DateTimeKind.Utc);
-            Console.WriteLine($"{ambiguousTime} local time corresponds to {utcTime} {utcTime.Kind.ToString()}.");
+            Console.WriteLine("{0} local time corresponds to {1} {2}.",
+                              ambiguousTime, utcTime, utcTime.Kind.ToString());
             return utcTime;
         }
     }

@@ -1,4 +1,4 @@
-// dump a range of Unicode characters as a 16x16 array
+﻿// dump a range of Unicode characters as a 16x16 array
 // <Snippet4>
 using System;
 using System.IO;
@@ -34,7 +34,11 @@ public static class DisplayChars
                     _ = bool.TryParse(args[2], out setOutputEncodingToUnicode);
                     break;
                 default:
-                    Console.WriteLine($"Usage: {Environment.GetCommandLineArgs()[0]} <{"startingCodePointInHex"}> <{"endingCodePointInHex"}> [{"<setOutputEncodingToUnicode?{true|false}]");
+                    Console.WriteLine("Usage: {0} <{1}> <{2}> [{3}]",
+                        Environment.GetCommandLineArgs()[0],
+                        "startingCodePointInHex",
+                        "endingCodePointInHex",
+                        "<setOutputEncodingToUnicode?{true|false, default:false}>");
                     return;
             }
 

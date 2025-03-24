@@ -105,7 +105,7 @@ class TestArraysClass
         {
             for (int j = 0; j < arr.GetLength(1); j++)
             {
-                System.Console.WriteLine($"Element({i},{j})={arr[i}");
+                System.Console.WriteLine($"Element({i},{j})={arr[i,j]}");
             }
         }
     }
@@ -166,10 +166,10 @@ class TestArraysClass
             }
             System.Console.WriteLine();
         }
-        // Output (including blank lines): 
+        // Output (including blank lines):
         // 1 2 3
         // 4 5 6
-        // 
+        //
         // 7 8 9
         // 10 11 12
         //
@@ -185,7 +185,7 @@ class TestArraysClass
         jaggedArray[1] = [0, 2, 4, 6];
         jaggedArray[2] = [11, 22];
 
-        int[][] jaggedArray2 = 
+        int[][] jaggedArray2 =
         [
             [1, 3, 5, 7, 9],
             [0, 2, 4, 6],

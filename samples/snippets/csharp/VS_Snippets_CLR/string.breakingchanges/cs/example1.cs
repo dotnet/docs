@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 enum StringComparisonResult
@@ -15,10 +15,7 @@ public class Example
       string str1 = new string( new char[] {'\u0219', '\u021B', 'a' });
       string str2 = "a";
 
-      Console.WriteLine("{0} {1} {2} in the sort order.",
-                        str1,
-                        (StringComparisonResult) String.Compare(str1, str2, StringComparison.CurrentCulture),
-                        str2);
+      Console.WriteLine($"{str1} {(StringComparisonResult) String.Compare(str1, str2, StringComparison.CurrentCulture)} {str2} in the sort order.");
    }
 }
 // </Snippet1>

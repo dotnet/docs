@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Example
@@ -12,16 +12,12 @@ public class Example
 
       Console.WriteLine("\nDate instantiated without an era:");
       DateTime date1 = new DateTime(year, month, day, 0, 0, 0, 0, cal);
-      Console.WriteLine("{0}/{1}/{2} in Japanese Calendar -> {3:d} in Gregorian",
-                        cal.GetMonth(date1), cal.GetDayOfMonth(date1),
-                        cal.GetYear(date1), date1);
+      Console.WriteLine($"{cal.GetMonth(date1)}/{cal.GetDayOfMonth(date1)}/{cal.GetYear(date1)} in Japanese Calendar -> {date1:d} in Gregorian");
 
       Console.WriteLine("\nDates instantiated with eras:");
       foreach (int era in cal.Eras) {
          DateTime date2 = cal.ToDateTime(year, month, day, 0, 0, 0, 0, era);
-         Console.WriteLine("{0}/{1}/{2} era {3} in Japanese Calendar -> {4:d} in Gregorian",
-                           cal.GetMonth(date2), cal.GetDayOfMonth(date2),
-                           cal.GetYear(date2), cal.GetEra(date2), date2);
+         Console.WriteLine($"{cal.GetMonth(date2)}/{cal.GetDayOfMonth(date2)}/{cal.GetYear(date2)} era {cal.GetEra(date2)} in Japanese Calendar -> {date2:d} in Gregorian");
       }
    }
 }

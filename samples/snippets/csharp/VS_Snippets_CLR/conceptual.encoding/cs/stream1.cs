@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 using System.IO;
 using System.Text;
@@ -67,8 +67,7 @@ public class Example
    private static void CompareForEquality(string original, string decoded)
    {
       bool result = original.Equals(decoded);
-      Console.WriteLine("original = decoded: {0}",
-                        original.Equals(decoded, StringComparison.Ordinal));
+      Console.WriteLine($"original = decoded: {original.Equals(decoded, StringComparison.Ordinal)}");
       if (! result) {
          Console.WriteLine("Code points in original string:");
          foreach (var ch in original)

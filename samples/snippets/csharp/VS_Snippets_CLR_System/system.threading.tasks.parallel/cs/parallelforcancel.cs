@@ -72,7 +72,7 @@ class ParallelForCancellation
         // Catching the cancellation exception
         catch (OperationCanceledException e)
         {
-            Console.WriteLine("An iteration has triggered a cancellation. THIS WAS EXPECTED.\n{0}", e.ToString());
+            Console.WriteLine($"An iteration has triggered a cancellation. THIS WAS EXPECTED.\n{e.ToString()}");
         }
         finally
         {

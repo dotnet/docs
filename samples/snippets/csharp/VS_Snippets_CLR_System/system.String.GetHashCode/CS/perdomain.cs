@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -47,9 +47,7 @@ public class DisplayString : MarshalByRefObject
 
    public void ShowStringHashCode()
    {
-      Console.WriteLine("String '{0}' in domain '{1}': {2:X8}",
-                        s, AppDomain.CurrentDomain.FriendlyName,
-                        s.GetHashCode());
+      Console.WriteLine($"String '{s}' in domain '{AppDomain.CurrentDomain.FriendlyName}': {s.GetHashCode():X8}");
    }
 }
 // </Snippet2>

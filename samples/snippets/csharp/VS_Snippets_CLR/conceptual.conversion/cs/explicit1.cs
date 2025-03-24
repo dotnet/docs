@@ -104,9 +104,7 @@ public class Example2
         try
         {
             newValue = unchecked((byte)largeValue);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              largeValue.GetType().Name, largeValue,
-                              newValue.GetType().Name, newValue);
+            Console.WriteLine($"Converted the {largeValue.GetType().Name} value {largeValue} to the {newValue.GetType().Name} value {newValue}.");
         }
         catch (OverflowException)
         {
@@ -116,9 +114,7 @@ public class Example2
         try
         {
             newValue = checked((byte)largeValue);
-            Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                              largeValue.GetType().Name, largeValue,
-                              newValue.GetType().Name, newValue);
+            Console.WriteLine($"Converted the {largeValue.GetType().Name} value {largeValue} to the {newValue.GetType().Name} value {newValue}.");
         }
         catch (OverflowException)
         {

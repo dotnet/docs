@@ -85,7 +85,7 @@ class Example
             Console.WriteLine($"Errors building {sourceFile} into {cr.PathToAssembly}");
             foreach (CompilerError ce in cr.Errors)
             {
-                Console.WriteLine("  {0}", ce.ToString());
+                Console.WriteLine($"  {ce.ToString()}");
                 Console.WriteLine();
             }
         }

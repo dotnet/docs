@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -90,8 +90,7 @@ public class Example
             (OneParameter<long, int>)
             squareIt.CreateDelegate(typeof(OneParameter<long, int>));
 
-        Console.WriteLine("123456789 squared = {0}",
-            invokeSquareIt(123456789));
+        Console.WriteLine($"123456789 squared = {invokeSquareIt(123456789)}");
         //</Snippet6>
 
         // Example 2: A dynamic method bound to an instance.
@@ -167,7 +166,7 @@ public class Example
                 new Example(42)
             );
 
-        Console.WriteLine("3 * test = {0}", invoke(3));
+        Console.WriteLine($"3 * test = {invoke(3)}");
         //</Snippet16>
     }
 }

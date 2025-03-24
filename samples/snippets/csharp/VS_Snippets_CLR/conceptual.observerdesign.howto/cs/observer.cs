@@ -44,8 +44,7 @@ public class TemperatureReporter : IObserver<Temperature>
       }
       else
       {
-         Console.WriteLine("   Change: {0}° in {1:g}", value.Degrees - last.Degrees,
-                                                       value.Date.ToUniversalTime() - last.Date.ToUniversalTime());
+         Console.WriteLine($"   Change: {value.Degrees - last.Degrees}° in {value.Date.ToUniversalTime() - last.Date.ToUniversalTime():g}");
       }
    }
    // </Snippet11>

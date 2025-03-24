@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.IO.MemoryMappedFiles;
@@ -32,9 +32,9 @@ class Program
             using (MemoryMappedViewStream stream = mmf.CreateViewStream())
             {
                 BinaryReader reader = new BinaryReader(stream);
-                Console.WriteLine("Process A says: {0}", reader.ReadBoolean());
-                Console.WriteLine("Process B says: {0}", reader.ReadBoolean());
-                Console.WriteLine("Process C says: {0}", reader.ReadBoolean());
+                Console.WriteLine($"Process A says: {reader.ReadBoolean()}");
+                Console.WriteLine($"Process B says: {reader.ReadBoolean()}");
+                Console.WriteLine($"Process C says: {reader.ReadBoolean()}");
             }
             mutex.ReleaseMutex();
         }

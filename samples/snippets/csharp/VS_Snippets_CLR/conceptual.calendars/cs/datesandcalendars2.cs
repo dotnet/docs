@@ -22,24 +22,20 @@ public class Example
 
       // Display the string representation of the date.
       Console.WriteLine($"Date: {date1:d}");
-      Console.WriteLine("Date in the Invariant Culture: {0}",
-                        date1.ToString("d", CultureInfo.InvariantCulture));
+      Console.WriteLine($"Date in the Invariant Culture: {date1.ToString("d", CultureInfo.InvariantCulture)}");
       Console.WriteLine();
 
       // Compare DateTime properties and Calendar methods.
       Console.WriteLine($"DateTime.Month property: {date1.Month}");
-      Console.WriteLine("UmAlQura.GetMonth: {0}",
-                        cal.GetMonth(date1));
+      Console.WriteLine($"UmAlQura.GetMonth: {cal.GetMonth(date1)}");
       Console.WriteLine();
 
       Console.WriteLine($"DateTime.Day property: {date1.Day}");
-      Console.WriteLine("UmAlQura.GetDayOfMonth: {0}",
-                        cal.GetDayOfMonth(date1));
+      Console.WriteLine($"UmAlQura.GetDayOfMonth: {cal.GetDayOfMonth(date1)}");
       Console.WriteLine();
 
       Console.WriteLine($"DateTime.Year property: {date1.Year:D4}");
-      Console.WriteLine("UmAlQura.GetYear: {0}",
-                        cal.GetYear(date1));
+      Console.WriteLine($"UmAlQura.GetYear: {cal.GetYear(date1)}");
       Console.WriteLine();
    }
 

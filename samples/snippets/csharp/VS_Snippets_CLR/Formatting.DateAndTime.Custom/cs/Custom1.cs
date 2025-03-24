@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Class1
@@ -222,9 +222,8 @@ public class Class1
         // Displays -07:00
         Console.WriteLine(DateTime.UtcNow.ToString("%K"));
         // Displays Z
-        Console.WriteLine("'{0}'",
-                          DateTime.SpecifyKind(DateTime.Now,
-                               DateTimeKind.Unspecified).ToString("%K"));
+        Console.WriteLine($"'{DateTime.SpecifyKind(DateTime.Now,
+                               DateTimeKind.Unspecified).ToString("%K")}'");
         // Displays ''
         Console.WriteLine(DateTimeOffset.Now.ToString("%K"));
         // Displays -07:00

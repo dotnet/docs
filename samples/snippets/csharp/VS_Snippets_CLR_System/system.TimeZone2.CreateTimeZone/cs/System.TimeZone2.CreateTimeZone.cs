@@ -33,20 +33,15 @@ public class TimeZoneCreation
       TimeZoneInfo est = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
 
       DateTime pastDate1 = new DateTime(1942, 2, 11);
-      Console.WriteLine("Is {0} daylight saving time: {1}", pastDate1,
-                        cst.IsDaylightSavingTime(pastDate1));
+      Console.WriteLine($"Is {pastDate1} daylight saving time: {cst.IsDaylightSavingTime(pastDate1)}");
 
       DateTime pastDate2 = new DateTime(1967, 10, 29, 1, 30, 00);
-      Console.WriteLine("Is {0} ambiguous: {1}", pastDate2,
-                        cst.IsAmbiguousTime(pastDate2));
+      Console.WriteLine($"Is {pastDate2} ambiguous: {cst.IsAmbiguousTime(pastDate2)}");
 
       DateTime pastDate3 = new DateTime(1974, 1, 7, 2, 59, 00);
-      Console.WriteLine("{0} {1} is {2} {3}", pastDate3,
-                        est.IsDaylightSavingTime(pastDate3) ?
-                            est.DaylightName : est.StandardName,
-                        TimeZoneInfo.ConvertTime(pastDate3, est, cst),
-                        cst.IsDaylightSavingTime(TimeZoneInfo.ConvertTime(pastDate3, est, cst)) ?
-                            cst.DaylightName : cst.StandardName);
+      Console.WriteLine($"{pastDate3} {est.IsDaylightSavingTime(pastDate3) ?
+                            est.DaylightName : est.StandardName} is {TimeZoneInfo.ConvertTime(pastDate3, est, cst)} {cst.IsDaylightSavingTime(TimeZoneInfo.ConvertTime(pastDate3, est, cst)) ?
+                            cst.DaylightName : cst.StandardName}");
       //
       // This code produces the following output to the console:
       //
@@ -63,9 +58,7 @@ public class TimeZoneCreation
       string standardName = "Mawson Time";
       TimeSpan offset = new TimeSpan(06, 00, 00);
       TimeZoneInfo mawson = TimeZoneInfo.CreateCustomTimeZone(standardName, offset, displayName, standardName);
-      Console.WriteLine("The current time is {0} {1}",
-                        TimeZoneInfo.ConvertTime(DateTime.Now, TimeZoneInfo.Local, mawson),
-                        mawson.StandardName);
+      Console.WriteLine($"The current time is {TimeZoneInfo.ConvertTime(DateTime.Now, TimeZoneInfo.Local, mawson)} {mawson.StandardName}");
       // </Snippet1>
    }
 
@@ -90,9 +83,7 @@ public class TimeZoneCreation
       string daylightName = "Palmer Daylight Time";
       TimeSpan offset = new TimeSpan(-4, 0, 0);
       TimeZoneInfo palmer = TimeZoneInfo.CreateCustomTimeZone(standardName, offset, displayName, standardName, daylightName, adjustments);
-      Console.WriteLine("The current time is {0} {1}",
-                        TimeZoneInfo.ConvertTime(DateTime.Now, TimeZoneInfo.Local, palmer),
-                        palmer.StandardName);
+      Console.WriteLine($"The current time is {TimeZoneInfo.ConvertTime(DateTime.Now, TimeZoneInfo.Local, palmer)} {palmer.StandardName}");
       // </Snippet2>
    }
 
@@ -120,10 +111,7 @@ public class TimeZoneCreation
       TimeZoneInfo palmer = TimeZoneInfo.CreateCustomTimeZone(standardName, offset, displayName, standardName,
                                                         daylightName, adjustments, true);
       // Indicate whether new time zone//s adjustment rules are present
-      Console.WriteLine("{0} {1}has {2} adjustment rules.",
-                        palmer.StandardName,
-                        ! (string.IsNullOrEmpty(palmer.DaylightName)) ?  "(" + palmer.DaylightName + ") ": "" ,
-                        palmer.GetAdjustmentRules().Length);
+      Console.WriteLine($"{palmer.StandardName} {! (string.IsNullOrEmpty(palmer.DaylightName)) ?  "(" + palmer.DaylightName + ") ": ""}has {palmer.GetAdjustmentRules().Length} adjustment rules.");
       // Indicate whether new time zone supports DST
       Console.WriteLine($"{palmer.StandardName} supports DST: {palmer.SupportsDaylightSavingTime}");
       // </Snippet3>

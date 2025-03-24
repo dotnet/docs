@@ -58,9 +58,10 @@ class PipeLineDemo
       var filter3 = new PipelineFilter<string, string>
       (
           filter2.m_output,
-          (s) => Console.WriteLine($"The final result is {s),
+          (s) => Console.WriteLine("The final result is {0}", s),
           cts.Token,
-          "filter3"}");
+          "filter3"
+       );
 
        // Start up the pipeline!
       try

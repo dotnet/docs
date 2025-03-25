@@ -5,7 +5,7 @@ ms.date: 08/15/2024
 
 ## How a chained credential works
 
-At runtime, a credential chain attempts to authenticate using the sequence's first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. The following sequence diagram illustrates this behavior:
+At run time, a credential chain attempts to authenticate using the sequence's first credential. If that credential fails to acquire an access token, the next credential in the sequence is attempted, and so on, until an access token is successfully obtained. The following sequence diagram illustrates this behavior:
 
 :::image type="content" source="../media/mermaidjs/ChainSequence.svg" alt-text="Credential chain sequence diagram":::
 

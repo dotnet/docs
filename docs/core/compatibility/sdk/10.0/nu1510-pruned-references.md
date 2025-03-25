@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/45462
 
 # NU1510 is raised for direct references pruned by NuGet
 
-Starting in .NET 10, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and is not required. 
+Starting in .NET 10, NuGet raises a [`NU1510` warning](/nuget/reference/errors-and-warnings/nu1510) when a project includes a direct package reference that overlaps with a framework-provided library and is not required.
 
 ## Version introduced
 

@@ -1,4 +1,4 @@
-﻿using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
 using System.Windows;
 using Microsoft.AspNetCore.Mvc;
 
@@ -111,7 +111,7 @@ public class Program
 
     private static void DoSomethingWithData(object stringData)
     {
-        Console.WriteLine("Displaying data: ", stringData);
+        Console.WriteLine($"Displaying data: {stringData}");
     }
 
     // <GetUsersForDataset>

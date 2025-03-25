@@ -1,4 +1,4 @@
-﻿using System.Xml.Linq;
+using System.Xml.Linq;
 
 namespace StandardQueryOperators;
 
@@ -34,7 +34,7 @@ internal class IndexExamples
 
         foreach (var obj in query)
         {
-            Console.WriteLine("Words of length {0}:", obj.Length);
+            Console.WriteLine($"Words of length {obj.Length}:");
             foreach (string word in obj.Words)
                 Console.WriteLine(word);
         }

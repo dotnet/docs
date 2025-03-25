@@ -1,4 +1,4 @@
-﻿namespace ValueEqualityStruct
+namespace ValueEqualityStruct
 {
     struct TwoDPoint : IEquatable<TwoDPoint>
     {
@@ -38,7 +38,7 @@
             // True:
             Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
             // True:
-            Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
+            Console.WriteLine($"pointA == pointB = {pointA == pointB}");
             // True:
             Console.WriteLine("object.Equals(pointA, pointB) = {0}", object.Equals(pointA, pointB));
             // False:
@@ -50,7 +50,7 @@
             // False:
             Console.WriteLine("pointA.Equals(i) = {0}", pointA.Equals(i));
             // CS0019:
-            // Console.WriteLine("pointA == i = {0}", pointA == i);
+            // Console.WriteLine($"pointA == i = {pointA == i}");
 
             // Compare unboxed to boxed.
             System.Collections.ArrayList list = new System.Collections.ArrayList();
@@ -64,7 +64,7 @@
             // False:
             Console.WriteLine("pointA == (pointC = null) = {0}", pointA == pointC);
             // True:
-            Console.WriteLine("pointC == pointD = {0}", pointC == pointD);
+            Console.WriteLine($"pointC == pointD = {pointC == pointD}");
 
             TwoDPoint temp = new TwoDPoint(3, 4);
             pointC = temp;

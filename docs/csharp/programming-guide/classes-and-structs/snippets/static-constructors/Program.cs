@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 class SimpleClass
 {
     // Static variable that must be initialized at run time.
@@ -39,7 +39,7 @@ public class Bus
     public Bus(int routeNum)
     {
         RouteNumber = routeNum;
-        Console.WriteLine("Bus #{0} is created.", RouteNumber);
+        Console.WriteLine($"Bus #{RouteNumber} is created.");
     }
 
     // Instance method.

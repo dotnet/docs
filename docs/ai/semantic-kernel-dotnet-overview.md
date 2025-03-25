@@ -202,9 +202,9 @@ string memoryCollectionName = "SummarizedAzureDocs";
 foreach (var fact in facts) {
     await memoryBuilder.SaveReferenceAsync(
         collection: memoryCollectionName,
-        description: fact.Key.Split(";")[1].Trim(),
+        description: fact.Key.Split(";")[0].Trim(),
         text: fact.Value,
-        externalId: fact.Key.Split(";")[2].Trim(),
+        externalId: fact.Key.Split(";")[1].Trim(),
         externalSourceName: "Azure Documentation"
     );
 }

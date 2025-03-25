@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 
 public class TimeZoneAwareArithmetic
@@ -23,9 +23,7 @@ public class TimeZoneAwareArithmetic
 
             DateTimeOffset centralTime2 = TimeZoneInfo.ConvertTime(utcTime, cst);
             // Display result
-            Console.WriteLine("{0} + {1} hours = {2}", centralTime1,
-                                                       twoAndAHalfHours.ToString(),
-                                                       centralTime2);
+            Console.WriteLine($"{centralTime1} + {twoAndAHalfHours.ToString()} hours = {centralTime2}");
         }
         catch (TimeZoneNotFoundException)
         {

@@ -1,4 +1,4 @@
-﻿// <Snippet24>
+// <Snippet24>
 using System;
 
 [assembly: CLSCompliant(true)]
@@ -40,10 +40,8 @@ public class Example
       Temperature temp = new Temperature(100.0m);
       ICelsius cTemp = temp;
       IFahrenheit fTemp = temp;
-      Console.WriteLine("Temperature in Celsius: {0} degrees",
-                        cTemp.GetTemperature());
-      Console.WriteLine("Temperature in Fahrenheit: {0} degrees",
-                        fTemp.GetTemperature());
+      Console.WriteLine($"Temperature in Celsius: {cTemp.GetTemperature()} degrees");
+      Console.WriteLine($"Temperature in Fahrenheit: {fTemp.GetTemperature()} degrees");
    }
 }
 // The example displays the following output:

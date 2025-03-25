@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 
@@ -27,7 +27,7 @@ namespace Casting
          }
          catch (Exception e)
          {
-            Console.WriteLine("{0}: {1}", e.GetType().Name, e.Message);
+            Console.WriteLine($"{e.GetType().Name}: {e.Message}");
          }
       }
 

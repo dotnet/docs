@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 
@@ -13,16 +13,14 @@ public class Example
                                                  CultureInfo.InvariantCulture);
       double roundTripped = double.Parse(valueString,
                                          CultureInfo.InvariantCulture);
-      Console.WriteLine("{0:R} = {1:R}: {2}\n",
-                        initialValue, roundTripped, initialValue.Equals(roundTripped));
+      Console.WriteLine($"{initialValue:R} = {roundTripped:R}: {initialValue.Equals(roundTripped)}\n");
 
       Console.WriteLine("Attempting to round-trip a Double with 'G17':");
       string valueString17 = initialValue.ToString("G17",
                                                    CultureInfo.InvariantCulture);
       double roundTripped17 = double.Parse(valueString17,
                                            CultureInfo.InvariantCulture);
-      Console.WriteLine("{0:R} = {1:R}: {2}\n",
-                        initialValue, roundTripped17, initialValue.Equals(roundTripped17));
+      Console.WriteLine($"{initialValue:R} = {roundTripped17:R}: {initialValue.Equals(roundTripped17)}\n");
       // If compiled to an application that targets anycpu or x64 and run on an x64 system,
       // the example displays the following output:
       //       Attempting to round-trip a Double with 'R':

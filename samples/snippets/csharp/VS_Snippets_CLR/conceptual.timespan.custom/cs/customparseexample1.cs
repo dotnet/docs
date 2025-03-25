@@ -10,19 +10,19 @@ public class Example
 
       value = "6";
       if (TimeSpan.TryParseExact(value, "%d", null, out interval))
-         Console.WriteLine("{0} --> {1}", value, interval.ToString("c"));
+         Console.WriteLine($"{value} --> {interval.ToString("c")}");
       else
          Console.WriteLine($"Unable to parse '{value}'");
 
       value = "16:32.05";
       if (TimeSpan.TryParseExact(value, @"mm\:ss\.ff", null, out interval))
-         Console.WriteLine("{0} --> {1}", value, interval.ToString("c"));
+         Console.WriteLine($"{value} --> {interval.ToString("c")}");
       else
          Console.WriteLine($"Unable to parse '{value}'");
 
       value= "12.035";
       if (TimeSpan.TryParseExact(value, "ss\\.fff", null, out interval))
-         Console.WriteLine("{0} --> {1}", value, interval.ToString("c"));
+         Console.WriteLine($"{value} --> {interval.ToString("c")}");
       else
          Console.WriteLine($"Unable to parse '{value}'");
    }

@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 
 public struct TimeZoneTime
@@ -42,9 +42,7 @@ public class TimeArithmetic
 
             cstTime1 = new TimeZoneTime(cst, time1);
             cstTime2 = cstTime1.AddTime(twoAndAHalfHours);
-            Console.WriteLine("{0} + {1} hours = {2}", cstTime1.Time,
-                                                       twoAndAHalfHours.ToString(),
-                                                       cstTime2.Time);
+            Console.WriteLine($"{cstTime1.Time} + {twoAndAHalfHours.ToString()} hours = {cstTime2.Time}");
         }
         catch
         {

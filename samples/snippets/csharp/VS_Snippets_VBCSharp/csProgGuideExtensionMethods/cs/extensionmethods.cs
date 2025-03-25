@@ -1,6 +1,5 @@
-namespace Extension2
+﻿namespace Extension2
 {
-
     //<snippet2>
     using System;
 
@@ -9,27 +8,25 @@ namespace Extension2
         // Define an extension method in a non-nested static class.
         public static class Extensions
         {
-            public static Grades minPassing = Grades.D;
-            public static bool Passing(this Grades grade)
+            public static bool Passing(this Grades grade, Grades minPassing = Grades.D)
             {
                 return grade >= minPassing;
             }
         }
 
-        public enum Grades { F = 0, D=1, C=2, B=3, A=4 };
+        public enum Grades { F = 0, D = 1, C = 2, B = 3, A = 4 };
         class Program
         {
             static void Main(string[] args)
             {
                 Grades g1 = Grades.D;
                 Grades g2 = Grades.F;
-                Console.WriteLine($"First {g1.Passing() ? "is" : "is not"} a passing grade.");
-                Console.WriteLine($"Second {g2.Passing() ? "is" : "is not"} a passing grade.");
+                Console.WriteLine($"First {(g1.Passing() ? "is" : "is not")} a passing grade.");
+                Console.WriteLine($"Second {(g2.Passing() ? "is" : "is not")} a passing grade.");
 
-                Extensions.minPassing = Grades.C;
                 Console.WriteLine("\r\nRaising the bar!\r\n");
-                Console.WriteLine($"First {g1.Passing() ? "is" : "is not"} a passing grade.");
-                Console.WriteLine($"Second {g2.Passing() ? "is" : "is not"} a passing grade.");
+                Console.WriteLine($"First {(g1.Passing(Grades.C) ? "is" : "is not")} a passing grade.");
+                Console.WriteLine($"Second {(g2.Passing(Grades.C) ? "is" : "is not")} a passing grade.");
             }
             /* Output:
                 First is a passing grade.
@@ -45,22 +42,21 @@ namespace Extension2
     //</snippet2>
 } //namespace Extension2
 
-    //<snippet3>
-    class ExtensionMethods2
+//<snippet3>
+class ExtensionMethods2
+{
+    static void Main()
     {
-
-        static void Main()
+        int[] ints = [10, 45, 15, 39, 21, 26];
+        IOrderedEnumerable<int> result = ints.OrderBy(g => g);
+        foreach (int i in result)
         {
-            int[] ints = [10, 45, 15, 39, 21, 26];
-            var result = ints.OrderBy(g => g);
-            foreach (var i in result)
-            {
-                System.Console.Write(i + " ");
-            }
+            Console.Write(i + " ");
         }
     }
-    //Output: 10 15 21 26 39 45
-    //</snippet3>
+}
+//Output: 10 15 21 26 39 45
+//</snippet3>
 
 //<snippet4>
 namespace ExtensionMethods
@@ -69,8 +65,7 @@ namespace ExtensionMethods
     {
         public static int WordCount(this string str)
         {
-            return str.Split(new char[] { ' ', '.', '?' },
-                             StringSplitOptions.RemoveEmptyEntries).Length;
+            return str.Split([' ', '.', '?'], StringSplitOptions.RemoveEmptyEntries).Length;
         }
     }
 }

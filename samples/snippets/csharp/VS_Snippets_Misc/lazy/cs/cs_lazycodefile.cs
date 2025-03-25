@@ -1,14 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Data;
-using System.Data.SqlClient;
+﻿using System;
 using System.Threading;
-using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 
 namespace CS_lazy
 {
-
     class Order
     {
         public override string ToString()
@@ -17,6 +12,7 @@ namespace CS_lazy
             return "Order";
         }
     }
+
     class Orders
     {
         public Orders(int numOrders) { }
@@ -26,13 +22,13 @@ namespace CS_lazy
 
     class IntroSnippets
     {
-        static bool displayOrders = true;
+        static readonly bool s_displayOrders = true;
         public static void Test()
         {
             //<snippet1>
             // Initialize by using default Lazy<T> constructor. The
             // Orders array itself is not created yet.
-            Lazy<Orders> _orders = new Lazy<Orders>();
+            Lazy<Orders> _orders = new();
             //</snippet1>
         }
 
@@ -43,12 +39,12 @@ namespace CS_lazy
             //<snippet2>
             // Initialize by invoking a specific constructor on Order when Value
             // property is accessed
-            Lazy<Orders> _orders = new Lazy<Orders>(() => new Orders(100));
+            Lazy<Orders> _orders = new(() => new Orders(100));
             //</snippet2>
 
             //<snippet3>
             // We need to create the array only if displayOrders is true
-            if (displayOrders == true)
+            if (s_displayOrders == true)
             {
                 DisplayOrders(_orders.Value.OrderData);
             }
@@ -66,8 +62,8 @@ namespace CS_lazy
         //<snippet5>
         class Customer
         {
-            private Lazy<Orders> _orders;
-            public string CustomerID {get; private set;}
+            private readonly Lazy<Orders> _orders;
+            public string CustomerID { get; private set; }
             public Customer(string id)
             {
                 CustomerID = id;
@@ -75,7 +71,7 @@ namespace CS_lazy
                 {
                     // You can specify any additional
                     // initialization steps here.
-                    return new Orders(this.CustomerID);
+                    return new Orders(CustomerID);
                 });
             }
 
@@ -92,11 +88,11 @@ namespace CS_lazy
 
         //<snippet6>
         [ThreadStatic]
-        static int counter = 1;
+        static int s_counter = 1;
         //</snippet6>
 
         //<snippet7>
-        ThreadLocal<int> betterCounter = new ThreadLocal<int>(() => 1);
+        ThreadLocal<int> _betterCounter = new(() => 1);
         //</snippet7>
     }
 
@@ -105,20 +101,20 @@ namespace CS_lazy
         public DataInitializedFromDb(SqlDataReader reader) { }
         public int Count { get; private set; }
     }
+
     class MyClass3
     {
         static void Main()
         {
             string connectionString = "";
             Lazy<DataInitializedFromDb> _data =
-                new Lazy<DataInitializedFromDb>(delegate
+                new(delegate
                 {
-                    using(SqlConnection conn = new SqlConnection(connectionString))
-                    using(SqlCommand comm = new SqlCommand())
+                    using (SqlConnection conn = new(connectionString))
+                    using (SqlCommand comm = new())
                     {
                         SqlDataReader reader = comm.ExecuteReader();
-                        DataInitializedFromDb data =
-                            new DataInitializedFromDb(reader);
+                        DataInitializedFromDb data = new(reader);
                         return data;
                     }
                 });
@@ -131,10 +127,9 @@ namespace CS_lazy
     }
     class LazyProgram
     {
-
         static void Main(string[] args)
         {
-           // LazyAndThreadLocal();
+            // LazyAndThreadLocal();
             TestEnsureInitialized();
 
             Console.WriteLine("Press any key to exit.");
@@ -146,15 +141,15 @@ namespace CS_lazy
             //<snippet8>
             // Initialize the integer to the managed thread id of the
             // first thread that accesses the Value property.
-            Lazy<int> number = new Lazy<int>(() => Thread.CurrentThread.ManagedThreadId);
+            Lazy<int> number = new(() => Environment.CurrentManagedThreadId);
 
-            Thread t1 = new Thread(() => Console.WriteLine($"number on t1 = {number.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
+            Thread t1 = new(() => Console.WriteLine($"number on t1 = {number.Value} ThreadID = {Environment.CurrentManagedThreadId}"));
             t1.Start();
 
-            Thread t2 = new Thread(() => Console.WriteLine($"number on t2 = {number.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
+            Thread t2 = new(() => Console.WriteLine($"number on t2 = {number.Value} ThreadID = {Environment.CurrentManagedThreadId}"));
             t2.Start();
 
-            Thread t3 = new Thread(() => Console.WriteLine($"number on t3 = {number.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
+            Thread t3 = new(() => Console.WriteLine($"number on t3 = {number.Value} ThreadID = {Environment.CurrentManagedThreadId}"));
             t3.Start();
 
             // Ensure that thread IDs are not recycled if the
@@ -173,14 +168,14 @@ namespace CS_lazy
 
             //<snippet9>
             // Initialize the integer to the managed thread id on a per-thread basis.
-            ThreadLocal<int> threadLocalNumber = new ThreadLocal<int>(() => Thread.CurrentThread.ManagedThreadId);
-            Thread t4 = new Thread(() => Console.WriteLine($"threadLocalNumber on t4 = {threadLocalNumber.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
+            ThreadLocal<int> threadLocalNumber = new(() => Environment.CurrentManagedThreadId);
+            Thread t4 = new(() => Console.WriteLine($"threadLocalNumber on t4 = {threadLocalNumber.Value} ThreadID = {Environment.CurrentManagedThreadId}"));
             t4.Start();
 
-            Thread t5 = new Thread(() => Console.WriteLine($"threadLocalNumber on t5 = {threadLocalNumber.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
+            Thread t5 = new(() => Console.WriteLine($"threadLocalNumber on t5 = {threadLocalNumber.Value} ThreadID = {Environment.CurrentManagedThreadId}"));
             t5.Start();
 
-            Thread t6 = new Thread(() => Console.WriteLine($"threadLocalNumber on t6 = {threadLocalNumber.Value} ThreadID = {Thread.CurrentThread.ManagedThreadId)}");
+            Thread t6 = new(() => Console.WriteLine($"threadLocalNumber on t6 = {threadLocalNumber.Value} ThreadID = {Environment.CurrentManagedThreadId}"));
             t6.Start();
 
             // Ensure that thread IDs are not recycled if the
@@ -218,7 +213,7 @@ namespace CS_lazy
                 }
             }
             //</snippet10>
-            foreach(var v in _orders)
+            foreach (Order v in _orders)
                 Console.WriteLine(v.ToString());
         }
 
@@ -231,7 +226,7 @@ namespace CS_lazy
 
         static void InitializeBigComputation(long bigNum)
         {
-            Lazy<int[]> primeFactors = new Lazy<int[]>(() => GetPrimeFactors(bigNum), true);
+            Lazy<int[]> primeFactors = new(() => GetPrimeFactors(bigNum), true);
         }
 
         static int[] GetPrimeFactors(long bigNum)
@@ -240,57 +235,59 @@ namespace CS_lazy
 }
 
 namespace HowToSnippets
-    {
+{
     using System;
-        using System.Net;
+    using System.Net.Http;
 
-        class Number
+    class Number
+    {
+        public int Num { get; private set; }
+        public Lazy<int[]> primeFactors;
+        public Number(int i)
         {
-            public int Num {get; private set;}
-            public Lazy<int[]> primeFactors;
-            public Number(int i)
-            {
-                Num = i;
-                primeFactors = new Lazy<int[]>(() => GetPrimeFactors(Num));
-            }
+            Num = i;
+            primeFactors = new Lazy<int[]>(() => GetPrimeFactors(Num));
+        }
 
-            private static int[] GetPrimeFactors(int i)
-            {
-                return new int[100];
-            }
+        private static int[] GetPrimeFactors(int i)
+        {
+            return new int[100];
+        }
 
-            class WebPage
+        class WebPage
+        {
+            private readonly Lazy<string> _text;
+            public WebPage(string url, string title)
             {
-                private Lazy<String> _text;
-                public WebPage(string url, string title)
-                {
-                    this.URL = url;
-                    this.Title = Title;
-                    this._text = new Lazy<string>(() =>
-                        {
-                            return new WebClient().DownloadString(URL);
-                        });
-                }
-
-                public string URL { get; private set; }
-                public string Title { get; private set; }
-                public string Text {
-                    get
+                Url = url;
+                Title = title;
+                _text = new Lazy<string>(() =>
                     {
-                        return _text.Value;
-                    }
+                        return new HttpClient().GetStringAsync(Url).Result;
+                    });
+            }
+
+            public string Url { get; private set; }
+            public string Title { get; private set; }
+            public string Text
+            {
+                get
+                {
+                    return _text.Value;
                 }
             }
+        }
+
         static void Main()
         {
-            WebPage[] catalog = new WebPage[5]
-            {
+            WebPage[] catalog =
+            [
                 new WebPage("", ""),
                 new WebPage("", ""),
                 new WebPage("", ""),
                 new WebPage("", ""),
                 new WebPage("", ""),
-            };
+            ];
         }
     }
 }

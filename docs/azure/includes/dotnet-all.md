@@ -372,6 +372,9 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Image/1.0.1-beta.4) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
+| Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.0) |  |  |
+| Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.10.0) |  |  |
+| Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.10.0) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta3) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
 | Unknown Display Name | NuGet [1.0.44](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.44) |  |  |

@@ -141,6 +141,7 @@ C# style rules:
 - [Convert `typeof` to `nameof` (IDE0082)](ide0082.md)
 - [Remove unnecessary equality operator (IDE0100)](ide0100.md)
 - [Simplify LINQ expression (IDE0120)](ide0120.md)
+- [Simplify LINQ type check and cast (IDE0121)](ide0121.md)
 - [Namespace does not match folder structure (IDE0130)](ide0130.md)
 
 C# style rules:

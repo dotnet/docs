@@ -114,6 +114,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
 > | [IDE0120](ide0120.md) | Simplify LINQ expression | |
+> | [IDE0121](ide0121.md) | Simplify LINQ type check and cast | |
 > | [IDE0130](ide0130.md) | Namespace does not match folder structure | [dotnet_style_namespace_match_folder](ide0130.md#dotnet_style_namespace_match_folder) |
 > | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
 > | [IDE0150](ide0150.md) | Prefer `null` check over type check | [csharp_style_prefer_null_check_over_type_check](ide0150.md#csharp_style_prefer_null_check_over_type_check) |

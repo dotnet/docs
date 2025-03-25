@@ -31,8 +31,7 @@ public class Class1
       // hours, minutes, seconds, and milliseconds
       dateAndTime = new DateTimeOffset(2008, 5, 1, 8, 6, 32, 545,
                                        new TimeSpan(1, 0, 0));
-      Console.WriteLine("{0} {1}", dateAndTime.ToString("G"),
-                                   dateAndTime.ToString("zzz"));
+      Console.WriteLine($"{dateAndTime.ToString("G")} {dateAndTime.ToString("zzz")}");
 
       // Instantiate date and time using Persian calendar with years,
       // months, days, hours, minutes, seconds, and milliseconds
@@ -41,8 +40,7 @@ public class Class1
                                        new TimeSpan(1, 0, 0));
       // Note that the console output displays the date in the Gregorian
       // calendar, not the Persian calendar.
-      Console.WriteLine("{0} {1}", dateAndTime.ToString("G"),
-                                   dateAndTime.ToString("zzz"));
+      Console.WriteLine($"{dateAndTime.ToString("G")} {dateAndTime.ToString("zzz")}");
 
       // Instantiate date and time using number of ticks
       // 05/01/2008 8:06:32 AM is 633,452,259,920,000,000 ticks

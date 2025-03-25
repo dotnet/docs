@@ -1,4 +1,4 @@
-﻿using HowToFilesAndDirectories;
+using HowToFilesAndDirectories;
 
 Console.WriteLine("Find files by extension:");
 FindFilesByExtension();
@@ -324,7 +324,7 @@ static void JoinDissimilarFiles()
     {
         Console.WriteLine(item);
     }
-    Console.WriteLine("{0} total names in list", scoreQuery.Count());
+    Console.WriteLine($"{scoreQuery.Count()} total names in list");
     /* Output:
     Merge two spreadsheets:
     Omelchenko, 97, 92, 81, 60

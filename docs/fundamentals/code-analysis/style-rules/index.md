@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 12/11/2023
+ms.date: 03/25/2025
 author: gewarren
 ms.author: gewarren
 ---

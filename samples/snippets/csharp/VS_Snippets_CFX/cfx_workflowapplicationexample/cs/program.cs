@@ -433,7 +433,8 @@ namespace WorkflowApplicationExample
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
                 Console.WriteLine($"""
                 Exception: {e.Reason.GetType().FullName}
-                {e.Reason.Message}""");
+                {e.Reason.Message}
+                """);
             };
 
             wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)

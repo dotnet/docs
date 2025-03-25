@@ -261,7 +261,10 @@ namespace CompensationExample
             {
                 if (e.TerminationException != null)
                 {
-                    Console.WriteLine($"Workflow terminated with exception:\n{e.TerminationException.GetType().FullName}: {e.TerminationException.Message}");
+                    Console.WriteLine($"""
+                    Workflow terminated with exception:
+                    {e.TerminationException.GetType().FullName}: {e.TerminationException.Message}
+                    """);
                 }
                 else
                 {
@@ -273,7 +276,10 @@ namespace CompensationExample
 
             wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
             {
-                Console.WriteLine($"Workflow Unhandled Exception:\n{e.UnhandledException.GetType().FullName}: {e.UnhandledException.Message}");
+                Console.WriteLine($"""
+                Workflow Unhandled Exception:
+                {e.UnhandledException.GetType().FullName}: {e.UnhandledException.Message}
+                """);
 
                 return UnhandledExceptionAction.Cancel;
             };

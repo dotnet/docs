@@ -441,7 +441,7 @@ dotnet test -h|--help
 With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
 
 > [!WARNING]
-> When opting-in Microsoft.Testing.Platform via `dotnet.config`,  `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test project uses VSTest.
+> When Microsoft.Testing.Platform is opted in via `dotnet.config`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
 
 #### Implicit restore
 
@@ -451,7 +451,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 > [!NOTE]
 > You can use only one of the following options at a time: `--project`, `--solution`, `--directory`, or `--test-modules`. These options can't be combined.
-> In addition, when using `--test-modules`, you cannot specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
+> In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
 
 - **`--project <PROJECT_PATH>`**
 
@@ -537,7 +537,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../../../docs/core/testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/microsoft-testing-platform-extensions.md).
 
   > [!TIP]
-  > To specify extra arguments for specific project(s), use `TestingPlatformCommandLineArguments` MSBuild property.
+  > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
 
 > [!NOTE]
 > To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.

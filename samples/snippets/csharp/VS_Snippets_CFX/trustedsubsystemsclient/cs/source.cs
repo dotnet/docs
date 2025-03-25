@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
@@ -62,7 +62,7 @@ namespace Microsoft.ServiceModel.Samples
             double value1 = 39D;
             double value2 = 50.44D;
             double result = client.Multiply(value1, value2);
-            Console.WriteLine("Multiply({0},{1}) = {2}", value1, value2, result);
+            Console.WriteLine($"Multiply({value1},{value2}) = {result}");
 
             //Closing the client gracefully closes the connection and cleans up resources
             client.Close();

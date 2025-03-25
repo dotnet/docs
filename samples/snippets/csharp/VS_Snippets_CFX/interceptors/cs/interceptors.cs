@@ -28,11 +28,7 @@ namespace Microsoft.WCF.Documentation
     #region IParameterInspector Members
     public void AfterCall(string operationName, object[] outputs, object returnValue, object correlationState)
     {
-      Console.WriteLine(
-        "IParameterInspector.AfterCall called for {0} with return value {1}.",
-        operationName,
-        returnValue.ToString()
-      );
+      Console.WriteLine($"IParameterInspector.AfterCall called for {operationName} with return value {returnValue.ToString()}.");
     }
 
     public object BeforeCall(string operationName, object[] inputs)
@@ -49,7 +45,7 @@ namespace Microsoft.WCF.Documentation
     public void AfterReceiveReply(ref System.ServiceModel.Channels.Message reply, object correlationState)
     {
       Console.WriteLine("IClientMessageInspector.AfterReceiveReply called.");
-      Console.WriteLine("Message: {0}", reply.ToString());
+      Console.WriteLine($"Message: {reply.ToString()}");
     }
 
     public object BeforeSendRequest(ref System.ServiceModel.Channels.Message request, IClientChannel channel)

@@ -55,7 +55,7 @@ namespace Samples
 	public double Add(double n1, double n2)
 	{
 	  double result = n1 + n2;
-	  Console.WriteLine("Received Add({0},{1})", n1, n2);
+	  Console.WriteLine($"Received Add({n1},{n2})");
 	  Console.WriteLine($"Return: {result}");
 	  return result;
 	}

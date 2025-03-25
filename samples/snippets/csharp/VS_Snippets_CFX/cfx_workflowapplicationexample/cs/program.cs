@@ -106,9 +106,10 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -267,9 +268,10 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -341,9 +343,10 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -377,9 +380,10 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"""
+                Exception: {e.Reason.GetType().FullName}
+                {e.Reason.Message}
+                """);
             };
             //</snippet5>
 
@@ -427,9 +431,10 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"""
+                Exception: {e.Reason.GetType().FullName}
+                {e.Reason.Message}
+                """);
             };
 
             wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
@@ -437,9 +442,10 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"""
+                    Exception: {e.TerminationException.GetType().FullName}
+                    {e.TerminationException.Message}
+                    """);
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -505,9 +511,7 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
             wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
@@ -515,9 +519,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -578,9 +580,7 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
             wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
@@ -588,9 +588,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -642,9 +640,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -665,9 +661,7 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
             wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
@@ -726,9 +720,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -781,9 +773,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -804,9 +794,7 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
             wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
@@ -881,9 +869,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -904,9 +890,7 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
             wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)
@@ -981,9 +965,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -1042,9 +1024,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -1113,9 +1093,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -1181,9 +1159,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -1266,9 +1242,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -1340,9 +1314,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -1409,9 +1381,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -1583,7 +1553,7 @@ namespace WorkflowApplicationExample
             IEnumerator<Activity> activities =
                 WorkflowInspectionServices.GetActivities(root).GetEnumerator();
 
-            Console.WriteLine("{0}{1}", new string(' ', indent), root.DisplayName);
+            Console.WriteLine($"{new string(' ', indent)}{root.DisplayName}");
 
             while (activities.MoveNext())
             {
@@ -2040,9 +2010,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -2104,9 +2072,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -2169,9 +2135,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -2233,9 +2197,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -2317,9 +2279,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -2764,9 +2724,7 @@ namespace WorkflowApplicationExample
                 if (e.CompletionState == ActivityInstanceState.Faulted)
                 {
                     Console.WriteLine($"Workflow {e.InstanceId} Terminated.");
-                    Console.WriteLine("Exception: {0}\n{1}",
-                        e.TerminationException.GetType().FullName,
-                        e.TerminationException.Message);
+                    Console.WriteLine($"Exception: {e.TerminationException.GetType().FullName}\n{e.TerminationException.Message}");
                 }
                 else if (e.CompletionState == ActivityInstanceState.Canceled)
                 {
@@ -2787,9 +2745,7 @@ namespace WorkflowApplicationExample
                 // Display the exception that caused the workflow
                 // to abort.
                 Console.WriteLine($"Workflow {e.InstanceId} Aborted.");
-                Console.WriteLine("Exception: {0}\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message);
+                Console.WriteLine($"Exception: {e.Reason.GetType().FullName}\n{e.Reason.Message}");
             };
 
             wfApp.Idle = delegate (WorkflowApplicationIdleEventArgs e)

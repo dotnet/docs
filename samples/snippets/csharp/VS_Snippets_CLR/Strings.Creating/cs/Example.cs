@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 [assembly: CLSCompliant(true)]
 public class Class1
@@ -67,9 +67,9 @@ public class Class1
        // <Snippet5>
       string greeting = "Hello World!";
       char[] charArray = {'W','h','e','r','e'};
-      Console.WriteLine("The original character array: {0}", new string(charArray));
+      Console.WriteLine($"The original character array: {new string(charArray)}");
       greeting.CopyTo(0, charArray,0 ,5);
-      Console.WriteLine("The new character array: {0}", new string(charArray));
+      Console.WriteLine($"The new character array: {new string(charArray)}");
       // The example displays the following output:
       //       The original character array: Where
       //       The new character array: Hello

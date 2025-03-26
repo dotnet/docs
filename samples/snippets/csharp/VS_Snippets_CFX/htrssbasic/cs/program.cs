@@ -94,7 +94,7 @@ namespace Service
                 foreach (SyndicationItem item in feed.Items)
                 {
                     Console.WriteLine($"Title: {item.Title.Text}");
-                    Console.WriteLine("Summary: {0}", ((TextSyndicationContent)item.Summary).Text);
+                    Console.WriteLine($"Summary: {((TextSyndicationContent)item.Summary).Text}");
                 }
                 Console.WriteLine("Press <enter> to quit...");
                 Console.ReadLine();

@@ -14,16 +14,14 @@ public class Example
         // Match using greedy quantifier .+.
         match = Regex.Match(input, greedyPattern);
         if (match.Success)
-            Console.WriteLine("Number at end of sentence (greedy): {0}",
-                              match.Groups[1].Value);
+            Console.WriteLine($"Number at end of sentence (greedy): {match.Groups[1].Value}");
         else
             Console.WriteLine($"{greedyPattern} finds no match.");
 
         // Match using lazy quantifier .+?.
         match = Regex.Match(input, lazyPattern);
         if (match.Success)
-            Console.WriteLine("Number at end of sentence (lazy): {0}",
-                              match.Groups[1].Value);
+            Console.WriteLine($"Number at end of sentence (lazy): {match.Groups[1].Value}");
         else
             Console.WriteLine($"{lazyPattern} finds no match.");
     }

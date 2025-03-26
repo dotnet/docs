@@ -30,7 +30,7 @@ public class Example
          index = index + written;
       }
       Console.WriteLine("\nEncoded bytes:");
-      Console.WriteLine("{0}", ShowByteValues(bytes, index));
+      Console.WriteLine($"{ShowByteValues(bytes, index)}");
       Console.WriteLine();
 
       // Decode Unicode byte array to a string.

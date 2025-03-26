@@ -1,4 +1,4 @@
-﻿// <Snippet19>
+// <Snippet19>
 using System;
 
 public class Example12
@@ -6,7 +6,7 @@ public class Example12
    public static void Main12()
    {
       DateTime midYear = new DateTime(2013, 7, 1);
-      Console.WriteLine("{0:d} is a {1}.", midYear, GetDayName(midYear));
+      Console.WriteLine($"{midYear:d} is a {GetDayName(midYear)}.");
    }
 
    private static string GetDayName(DateTime date)

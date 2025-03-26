@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Threading;
 
@@ -13,7 +13,7 @@ public class Example7
         Calendar cal = (Calendar)CultureInfo.CurrentCulture.Calendar.Clone();
         Console.WriteLine($"Two Digit Year Range: {cal.TwoDigitYearMax - 99} - {cal.TwoDigitYearMax}");
 
-        Console.WriteLine("{0:d}", DateTime.ParseExact(value, fmt, null));
+        Console.WriteLine($"{DateTime.ParseExact(value, fmt, null):d}");
         Console.WriteLine();
 
         cal.TwoDigitYearMax = 2099;
@@ -22,7 +22,7 @@ public class Example7
         Thread.CurrentThread.CurrentCulture = culture;
 
         Console.WriteLine($"Two Digit Year Range: {cal.TwoDigitYearMax - 99} - {cal.TwoDigitYearMax}");
-        Console.WriteLine("{0:d}", DateTime.ParseExact(value, fmt, null));
+        Console.WriteLine($"{DateTime.ParseExact(value, fmt, null):d}");
 
         // The example displays the following output:
         //       Two Digit Year Range: 1930 - 2029

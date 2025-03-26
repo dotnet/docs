@@ -10,16 +10,12 @@ try
     DateTimeOffset dateOffsetValue = DateTimeOffset.Parse(dateString);
 
     // Display Millisecond component alone.
-    Console.WriteLine("Millisecond component only: {0}",
-                    dateValue.ToString("fff"));
-    Console.WriteLine("Millisecond component only: {0}",
-                    dateOffsetValue.ToString("fff"));
+    Console.WriteLine($"Millisecond component only: {dateValue.ToString("fff")}");
+    Console.WriteLine($"Millisecond component only: {dateOffsetValue.ToString("fff")}");
 
     // Display Millisecond component with full date and time.
-    Console.WriteLine("Date and Time with Milliseconds: {0}",
-                    dateValue.ToString("MM/dd/yyyy hh:mm:ss.fff tt"));
-    Console.WriteLine("Date and Time with Milliseconds: {0}",
-                    dateOffsetValue.ToString("MM/dd/yyyy hh:mm:ss.fff tt"));
+    Console.WriteLine($"Date and Time with Milliseconds: {dateValue.ToString("MM/dd/yyyy hh:mm:ss.fff tt")}");
+    Console.WriteLine($"Date and Time with Milliseconds: {dateOffsetValue.ToString("MM/dd/yyyy hh:mm:ss.fff tt")}");
 
     string fullPattern = DateTimeFormatInfo.CurrentInfo.FullDateTimePattern;
     
@@ -30,10 +26,8 @@ try
     fullPattern = Regex.Replace(fullPattern, "(:ss|:s)", $"$1{millisecondFormat}");
 
     // Display Millisecond component with modified full date and time pattern.
-    Console.WriteLine("Modified full date time pattern: {0}",
-                    dateValue.ToString(fullPattern));
-    Console.WriteLine("Modified full date time pattern: {0}",
-                    dateOffsetValue.ToString(fullPattern));
+    Console.WriteLine($"Modified full date time pattern: {dateValue.ToString(fullPattern)}");
+    Console.WriteLine($"Modified full date time pattern: {dateOffsetValue.ToString(fullPattern)}");
 }
 catch (FormatException)
 {
@@ -66,9 +60,9 @@ public class AdditionalSnippets
    {
       // <Fraction>
       DateTime dateValue = new DateTime(2008, 7, 16, 8, 32, 45, 180);
-      Console.WriteLine("{0} seconds", dateValue.ToString("s.f"));
-      Console.WriteLine("{0} seconds", dateValue.ToString("s.ff"));
-      Console.WriteLine("{0} seconds", dateValue.ToString("s.ffff"));
+      Console.WriteLine($"{dateValue.ToString("s.f")} seconds");
+      Console.WriteLine($"{dateValue.ToString("s.ff")} seconds");
+      Console.WriteLine($"{dateValue.ToString("s.ffff")} seconds");
       // The example displays the following output to the console:
       //    45.1 seconds
       //    45.18 seconds

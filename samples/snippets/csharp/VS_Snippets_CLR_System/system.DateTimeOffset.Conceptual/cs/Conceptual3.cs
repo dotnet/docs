@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public enum TimeComparison
@@ -15,11 +15,8 @@ public class DateTimeOffsetManipulation
         DateTimeOffset localTime = DateTimeOffset.Now;
         DateTimeOffset utcTime = DateTimeOffset.UtcNow;
 
-        Console.WriteLine("Difference between local time and UTC: {0}:{1:D2} hours",
-                          (localTime - utcTime).Hours,
-                          (localTime - utcTime).Minutes);
-        Console.WriteLine("The local time is {0} UTC.",
-                          Enum.GetName(typeof(TimeComparison), localTime.CompareTo(utcTime)));
+        Console.WriteLine($"Difference between local time and UTC: {(localTime - utcTime).Hours}:{(localTime - utcTime).Minutes:D2} hours");
+        Console.WriteLine($"The local time is {Enum.GetName(typeof(TimeComparison), localTime.CompareTo(utcTime))} UTC.");
     }
 }
 // Regardless of the local time zone, the example displays

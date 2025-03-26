@@ -24,8 +24,7 @@ public class Example
       Console.Write("   Default Calendar: {0}", GetCalendarName(defaultCalendar));
 
       if (defaultCalendar is GregorianCalendar)
-         Console.WriteLine(" ({0})",
-                           ((GregorianCalendar) defaultCalendar).CalendarType);
+         Console.WriteLine($" ({((GregorianCalendar) defaultCalendar).CalendarType})");
       else
          Console.WriteLine();
 

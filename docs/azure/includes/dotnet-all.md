@@ -6,7 +6,7 @@
 | App Configuration | NuGet [1.6.0](https://www.nuget.org/packages/Azure.Data.AppConfiguration/1.6.0) | [docs](/dotnet/api/overview/azure/Data.AppConfiguration-readme) | GitHub [1.6.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Data.AppConfiguration_1.6.0/sdk/appconfiguration/Azure.Data.AppConfiguration/) |
 | App Configuration Provider | NuGet [8.1.1](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/8.1.1)<br>NuGet [8.2.0-preview](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.AzureAppConfiguration/8.2.0-preview) |  | GitHub [8.1.1](https://github.com/Azure/AppConfiguration-DotnetProvider) |
 | Attestation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Security.Attestation/1.0.0) | [docs](/dotnet/api/overview/azure/Security.Attestation-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Security.Attestation_1.0.0/sdk/attestation/Azure.Security.Attestation/) |
-| Azure AI Search | NuGet [11.6.0](https://www.nuget.org/packages/Azure.Search.Documents/11.6.0)<br>NuGet [11.7.0-beta.2](https://www.nuget.org/packages/Azure.Search.Documents/11.7.0-beta.2) | [docs](/dotnet/api/overview/azure/Search.Documents-readme) | GitHub [11.6.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.6.0/sdk/search/Azure.Search.Documents/)<br>GitHub [11.7.0-beta.2](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.7.0-beta.2/sdk/search/Azure.Search.Documents/) |
+| Azure AI Search | NuGet [11.6.0](https://www.nuget.org/packages/Azure.Search.Documents/11.6.0)<br>NuGet [11.7.0-beta.3](https://www.nuget.org/packages/Azure.Search.Documents/11.7.0-beta.3) | [docs](/dotnet/api/overview/azure/Search.Documents-readme) | GitHub [11.6.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.6.0/sdk/search/Azure.Search.Documents/)<br>GitHub [11.7.0-beta.3](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Search.Documents_11.7.0-beta.3/sdk/search/Azure.Search.Documents/) |
 | Azure Object Anchors Conversion | NuGet [0.3.0-beta.6](https://www.nuget.org/packages/Azure.MixedReality.ObjectAnchors.Conversion/0.3.0-beta.6) | [docs](/dotnet/api/overview/azure/MixedReality.ObjectAnchors.Conversion-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [0.3.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.ObjectAnchors.Conversion_0.3.0-beta.6/sdk/objectanchors/Azure.MixedReality.ObjectAnchors.Conversion/) |
 | Azure Remote Rendering | NuGet [1.1.0](https://www.nuget.org/packages/Azure.MixedReality.RemoteRendering/1.1.0) | [docs](/dotnet/api/overview/azure/MixedReality.RemoteRendering-readme) | GitHub [1.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.MixedReality.RemoteRendering_1.1.0/sdk/remoterendering/Azure.MixedReality.RemoteRendering/) |
 | Azure.Core.Expressions.DataFactory | NuGet [1.0.0](https://www.nuget.org/packages/Azure.Core.Expressions.DataFactory/1.0.0) | [docs](/dotnet/api/overview/azure/Core.Expressions.DataFactory-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Core.Expressions.DataFactory_1.0.0/sdk/core/Azure.Core.Expressions.DataFactory/) |
@@ -372,7 +372,10 @@
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
 | Unknown Display Name | NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Image/1.0.1-beta.4) |  |  |
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
-| Unknown Display Name | NuGet [1.0.0-beta2](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta2) |  |  |
+| Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.0) |  |  |
+| Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.10.0) |  |  |
+| Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.10.0) |  |  |
+| Unknown Display Name | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta3) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
 | Unknown Display Name | NuGet [1.0.44](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.44) |  |  |
 | Unknown Display Name | NuGet [1.0.44](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.44) |  |  |
@@ -529,7 +532,7 @@
 | Microsoft.Azure.Functions.Worker.Extensions.Abstractions | NuGet [1.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Abstractions/1.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights | NuGet [1.0.0-preview4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ApplicationInsights/1.0.0-preview4) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.CosmosDB | NuGet [4.12.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.CosmosDB/4.12.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.4.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.4.3) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.EventGrid | NuGet [3.5.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventGrid/3.5.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.EventHubs | NuGet [6.3.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.EventHubs/6.3.6) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Http | NuGet [3.3.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http/3.3.0) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Kafka | NuGet [4.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Kafka/4.0.0) |  |  |
@@ -538,8 +541,8 @@
 | Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ | NuGet [2.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.RabbitMQ/2.0.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Rpc | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Rpc/1.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SendGrid | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SendGrid/3.1.0) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.22.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.22.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [1.14.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/1.14.1) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.22.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.22.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/2.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.1.376](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.1.376) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.6.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.6.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [6.6.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/6.6.1) |  |  |

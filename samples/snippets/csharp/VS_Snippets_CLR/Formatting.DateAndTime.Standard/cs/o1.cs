@@ -7,15 +7,15 @@ public class Example
    {
        DateTime dat = new DateTime(2009, 6, 15, 13, 45, 30,
                                    DateTimeKind.Unspecified);
-       Console.WriteLine("{0} ({1}) --> {0:O}", dat, dat.Kind);
+       Console.WriteLine($"{dat} ({dat.Kind}) --> {dat:O}");
 
        DateTime uDat = new DateTime(2009, 6, 15, 13, 45, 30,
                                     DateTimeKind.Utc);
-       Console.WriteLine("{0} ({1}) --> {0:O}", uDat, uDat.Kind);
+       Console.WriteLine($"{uDat} ({uDat.Kind}) --> {uDat:O}");
 
        DateTime lDat = new DateTime(2009, 6, 15, 13, 45, 30,
                                     DateTimeKind.Local);
-       Console.WriteLine("{0} ({1}) --> {0:O}\n", lDat, lDat.Kind);
+       Console.WriteLine($"{lDat} ({lDat.Kind}) --> {lDat:O}\n");
 
        DateTimeOffset dto = new DateTimeOffset(lDat);
        Console.WriteLine($"{dto} --> {dto:O}");

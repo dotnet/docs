@@ -21,8 +21,7 @@ public class CultureExample
         string input = "file://c:/Documents.MyReport.doc";
         string pattern = "FILE://";
 
-        Console.WriteLine("Culture-sensitive matching ({0} culture)...",
-                          Thread.CurrentThread.CurrentCulture.Name);
+        Console.WriteLine($"Culture-sensitive matching ({Thread.CurrentThread.CurrentCulture.Name} culture)...");
         if (Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase))
             Console.WriteLine("URLs that access files are not allowed.");
         else

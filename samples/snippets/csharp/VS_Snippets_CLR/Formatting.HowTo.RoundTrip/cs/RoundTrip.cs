@@ -23,10 +23,7 @@ public class Class1
         DateTime dateToSave = DateTime.SpecifyKind(new DateTime(2008, 6, 12, 18, 45, 15),
                                                    DateTimeKind.Local);
         string? dateString = dateToSave.ToString("o");
-        Console.WriteLine("Converted {0} ({1}) to {2}.",
-                          dateToSave.ToString(),
-                          dateToSave.Kind.ToString(),
-                          dateString);
+        Console.WriteLine($"Converted {dateToSave.ToString()} ({dateToSave.Kind.ToString()}) to {dateString}.");
         outFile.WriteLine(dateString);
         Console.WriteLine($"Wrote {dateString} to {fileName}.");
         outFile.Close();
@@ -40,9 +37,7 @@ public class Class1
         if (dateString is not null)
         {
             restoredDate = DateTime.Parse(dateString, null, DateTimeStyles.RoundtripKind);
-            Console.WriteLine("Read {0} ({2}) from {1}.", restoredDate.ToString(),
-                                                          fileName,
-                                                          restoredDate.Kind.ToString());
+            Console.WriteLine($"Read {restoredDate.ToString()} ({restoredDate.Kind.ToString()}) from {fileName}.");
         }
 
         // The example displays the following output:
@@ -63,8 +58,7 @@ public class Class1
         DateTimeOffset dateToSave = new DateTimeOffset(2008, 6, 12, 18, 45, 15,
                                                        new TimeSpan(7, 0, 0));
         string? dateString = dateToSave.ToString("o");
-        Console.WriteLine("Converted {0} to {1}.", dateToSave.ToString(),
-                          dateString);
+        Console.WriteLine($"Converted {dateToSave.ToString()} to {dateString}.");
         outFile.WriteLine(dateString);
         Console.WriteLine($"Wrote {dateString} to {fileName}.");
         outFile.Close();
@@ -79,7 +73,7 @@ public class Class1
         {
             restoredDateOff = DateTimeOffset.Parse(dateString, null,
                                                    DateTimeStyles.RoundtripKind);
-            Console.WriteLine("Read {0} from {1}.", restoredDateOff.ToString(), fileName);
+            Console.WriteLine($"Read {restoredDateOff.ToString()} from {fileName}.");
         }
 
         // The example displays the following output:

@@ -95,7 +95,7 @@ namespace Service
                 foreach (SyndicationItem item in atomFeed.Items)
                 {
                     Console.WriteLine($"Title: {item.Title.Text}");
-                    Console.WriteLine("Content: {0}", ((TextSyndicationContent)item.Content).Text);
+                    Console.WriteLine($"Content: {((TextSyndicationContent)item.Content).Text}");
                 }
 
                 Console.WriteLine("Loading feed in RSS 2.0 format.");
@@ -108,7 +108,7 @@ namespace Service
                     Console.WriteLine($"Title: {item.Title.Text}");
                     // Notice we are using item.Summary here instead of item.Content. This is because
                     // of the differences between Atom 1.0 and RSS 2.0 specs.
-                    Console.WriteLine("Content: {0}", ((TextSyndicationContent)item.Summary).Text);
+                    Console.WriteLine($"Content: {((TextSyndicationContent)item.Summary).Text}");
                 }
 
                 Console.WriteLine("Press <ENTER> to quit...");

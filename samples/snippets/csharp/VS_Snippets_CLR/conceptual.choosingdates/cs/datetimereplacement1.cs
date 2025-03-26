@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public struct StoreInfo
@@ -54,13 +54,11 @@ public class Example
       // Store closes at 9:30.
       store103.close = new TimeSpan(21, 30, 0);
 
-      Console.WriteLine("Store is open now at {0}: {1}",
-                        DateTime.Now.TimeOfDay, store103.IsOpenNow());
+      Console.WriteLine($"Store is open now at {DateTime.Now.TimeOfDay}: {store103.IsOpenNow()}");
       TimeSpan[] times = { new TimeSpan(8, 0, 0), new TimeSpan(21, 0, 0),
                            new TimeSpan(4, 59, 0), new TimeSpan(18, 31, 0) };
       foreach (var time in times)
-         Console.WriteLine("Store is open at {0}: {1}",
-                           time, store103.IsOpenAt(time));
+         Console.WriteLine($"Store is open at {time}: {store103.IsOpenAt(time)}");
    }
 }
 // The example displays the following output:

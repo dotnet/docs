@@ -77,7 +77,7 @@ class GetAttribTest2
 
         if (att == null)
         {
-            Console.WriteLine("No attribute in class {0}.\n", t.ToString());
+            Console.WriteLine($"No attribute in class {t.ToString()}.\n");
         }
         else
         {
@@ -99,16 +99,13 @@ class GetAttribTest2
             att = (DeveloperAttribute) Attribute.GetCustomAttribute(MyMemberInfo[i], typeof (DeveloperAttribute));
             if (att == null)
             {
-                Console.WriteLine("No attribute in member function {0}.\n" , MyMemberInfo[i].ToString());
+                Console.WriteLine($"No attribute in member function {MyMemberInfo[i].ToString()}.\n");
             }
             else
             {
-                Console.WriteLine("The Name Attribute for the {0} member is: {1}.",
-                    MyMemberInfo[i].ToString(), att.Name);
-                Console.WriteLine("The Level Attribute for the {0} member is: {1}.",
-                    MyMemberInfo[i].ToString(), att.Level);
-                Console.WriteLine("The Reviewed Attribute for the {0} member is: {1}.\n",
-                    MyMemberInfo[i].ToString(), att.Reviewed);
+                Console.WriteLine($"The Name Attribute for the {MyMemberInfo[i].ToString()} member is: {att.Name}.");
+                Console.WriteLine($"The Level Attribute for the {MyMemberInfo[i].ToString()} member is: {att.Level}.");
+                Console.WriteLine($"The Reviewed Attribute for the {MyMemberInfo[i].ToString()} member is: {att.Reviewed}.\n");
             }
         }
     }

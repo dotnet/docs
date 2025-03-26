@@ -26,25 +26,25 @@ namespace Microsoft.ServiceModel.Samples
           double value2 = 15.99D;
 
           IAsyncResult arAdd = channelClient.BeginAdd(value1, value2, AddCallback, channelClient);
-          Console.WriteLine("Add({0},{1})", value1, value2);
+          Console.WriteLine($"Add({value1},{value2})");
           //</snippet3>
           // BeginSubtract
           value1 = 145.00D;
           value2 = 76.54D;
           IAsyncResult arSubtract = channelClient.BeginSubtract(value1, value2, SubtractCallback, channelClient);
-          Console.WriteLine("Subtract({0},{1})", value1, value2);
+          Console.WriteLine($"Subtract({value1},{value2})");
 
           // Multiply
           value1 = 9.00D;
           value2 = 81.25D;
           double result = channelClient.Multiply(value1, value2);
-          Console.WriteLine("Multiply({0},{1}) = {2}", value1, value2, result);
+          Console.WriteLine($"Multiply({value1},{value2}) = {result}");
 
           // Divide
           value1 = 22.00D;
           value2 = 7.00D;
           result = channelClient.Divide(value1, value2);
-          Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
+          Console.WriteLine($"Divide({value1},{value2}) = {result}");
 
           Console.ReadLine();
 

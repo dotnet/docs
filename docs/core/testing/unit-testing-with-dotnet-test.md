@@ -38,12 +38,12 @@ The `--` in `dotnet test` VSTest mode is used to denote RunSettings arguments. T
 
 #### Mixing VSTest and Microsoft.Testing.Platform (MTP)
 
-When running `dotnet test` in VSTest mode, we advise against having both VSTest and Microsoft.Testing.Platform in the same solution.
+When running `dotnet test` in VSTest mode, it is recommended to avoid including both VSTest and Microsoft.Testing.Platform in the same solution.
 
-This scenario is not officially supported, and you should pay attention to:
+This scenario is not officially supported, and you should be aware of the following:
 
-1. VSTest-specific command-line options will only be considered for VSTest projects but not MTP test applications.
-2. MTP-specific command-line options after `--` will be considered as RunSettings arguments for VSTest projects.
+1. VSTest-specific command-line options will only apply to VSTest projects and not to MTP test applications.
+2. MTP-specific command-line options provided after `--` will be treated as RunSettings arguments for VSTest projects.
 
 #### Key takeaways
 

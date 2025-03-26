@@ -63,7 +63,7 @@ The list below described all `dotnet test` command line options that are support
 > </PropertyGroup>
 > ```
 
-For more information specific to running MTP projects in VSTest mode of `dotnet test`, see [Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`](./microsoft-testing-platform-integration-dotnet-test.md). 
+For more information specific to running MTP projects in VSTest mode of `dotnet test`, see [Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`](./microsoft-testing-platform-integration-dotnet-test.md).
 
 #### Advanced technical details
 

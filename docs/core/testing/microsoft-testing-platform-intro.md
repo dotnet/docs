@@ -293,7 +293,7 @@ The list below described only the platform options. To see the specific options 
 
 The NuGet package [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild) provides various integrations for `Microsoft.Testing.Platform` with MSBuild:
 
-- Support for `dotnet test`. For more information, see [dotnet test integration](./microsoft-testing-platform-integration-dotnet-test.md).
+- Support for `dotnet test`. For more information, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
 - Support for `ProjectCapability` required by `Visual Studio` and `Visual Studio Code` Test Explorers.
 - Automatic generation of the entry point (`Main` method).
 - Automatic generation of the configuration file.

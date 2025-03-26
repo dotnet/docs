@@ -22,7 +22,7 @@ For news about .NET, check the following blogs:
 Also follow the latest .NET events:
 
 - [.NET Conf](https://www.dotnetconf.net/)
-- [Microsoft Ignite](https://www.microsoft.com/ignite)
+- [Microsoft Ignite](https://ignite.microsoft.com/home)
 - [Microsoft Build](https://www.microsoft.com/build)
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:

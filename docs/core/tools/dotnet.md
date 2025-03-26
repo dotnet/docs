@@ -35,7 +35,7 @@ dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
     [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 
-dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+dotnet exec [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
     [--depsfile <PATH>]
     [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     [--runtimeconfig <PATH>]

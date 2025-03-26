@@ -28,9 +28,9 @@ The process involves invoking the `VSTest` MSBuild target, which triggers other 
 
 `dotnet test` is normally capable to run VSTest projects in VSTest mode as that's what it was originally designed for. However, running MTP projects with VSTest mode is done via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild). From user-end, the support is enabled by setting `TestingPlatformDotnetTestSupport` MSBuild property to true (it's false by default, for backward compatibility concerns). In simple words, setting this property to true will cause Microsoft.Testing.Platform.MSBuild to change the VSTest target behavior, and instead route it to call `InvokeTestingPlatform`, which is an MSBuild target shipped in Microsoft.Testing.Platform.MSBuild and is responsible to run MTP test applications the correct way (as executable).
 
-This means that VSTest-spcific command-line options are silently ignored in this mode. For example, `--logger`.
+This means that VSTest-specific command-line options are silently ignored in this mode, such as `--logger`.
 
-This also means there should be a way to pass MTP-specific command-line options. For example, `--report-trx` (which is the equivalent of doing `--logger trx` in VSTest). As we are limited by what the `dotnet test` CLI currently has, the only way to get MTP-specific arguments is to add them after extra `--`. For example, `dotnet test -- --report-trx`.
+This implies that there should be a way to pass MTP-specific command-line options, such as `--report-trx`, which is equivalent to using `--logger trx` in VSTest. Given the current limitations of the `dotnet test` CLI, the only way to include MTP-specific arguments is by appending them after an additional `--`. For instance, `dotnet test -- --report-trx`.
 
 #### Advanced technical details
 

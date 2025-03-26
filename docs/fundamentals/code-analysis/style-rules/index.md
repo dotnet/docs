@@ -143,6 +143,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0305](ide0305.md) | Use collection expression for fluent | [dotnet_style_prefer_collection_expression](ide0305.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0320](ide0320.md) | Make anonymous function `static` | [csharp_prefer_static_anonymous_function](ide0320.md#csharp_prefer_static_anonymous_function) |
 > | [IDE0330](ide0330.md) | Prefer 'System.Threading.Lock' | [csharp_prefer_system_threading_lock](ide0330.md#csharp_prefer_system_threading_lock) |
+> | [IDE0340](ide0340.md) | Use unbound generic type | [csharp_style_prefer_unbound_generic_type_in_nameof](ide0340.md#csharp_style_prefer_unbound_generic_type_in_nameof) |
+> | [IDE0350](ide0350.md) | Use implicitly typed lambda | [csharp_style_prefer_implicitly_typed_lambda_expression](ide0350.md#csharp_style_prefer_implicitly_typed_lambda_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

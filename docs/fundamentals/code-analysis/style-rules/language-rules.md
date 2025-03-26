@@ -169,6 +169,8 @@ C# style rules:
 - [Use collection expression for `Create()` (IDE0303)](ide0303.md)
 - [Use collection expression for builder (IDE0304](ide0304.md)
 - [Use collection expression for fluent (IDE0305)](ide0305.md)
+- [Use unbound generic type (IDE0340)](ide0340.md)
+- [Use implicitly typed lambda (IDE0350)](ide0350.md)
 
 Visual Basic style rules:
 

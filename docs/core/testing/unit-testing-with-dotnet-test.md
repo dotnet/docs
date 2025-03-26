@@ -8,21 +8,21 @@ ms.date: 03/26/2025
 
 # Testing with dotnet test
 
-In this article, you'll learn more about `dotnet test` CLI command, some history, and its support for VSTest and Microsoft.Testing.Platform (MTP).
+This article will provide you with insights into the `dotnet test` CLI command, its history, and its compatibility with both VSTest and Microsoft.Testing.Platform (MTP).
 
-The `dotnet test` command has two main modes of operations:
+The `dotnet test` command operates in two primary modes:
 
-- VSTest mode: This is the default mode of `dotnet test`, and it's the only mode available before .NET 10 SDK. It's designed towards VSTest, but it can also run Microsoft.Testing.Platform via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild/) NuGet package.
-- Microsoft.Testing.Platform mode: This is available starting with .NET 10 SDK, and only supports Microsoft.Testing.Platform test applications.
+- VSTest mode: This is the default mode for `dotnet test` and was the only mode available before the .NET 10 SDK. It is primarily designed for VSTest but can also run Microsoft.Testing.Platform test via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild/) NuGet package.
+- Microsoft.Testing.Platform mode: Introduced with the .NET 10 SDK, this mode exclusively supports test applications built with Microsoft.Testing.Platform.
 
 > [!TIP]
 > For CLI reference, see [dotnet test](../tools/dotnet-test.md).
 
 ## VSTest mode of `dotnet test`
 
-For too long, VSTest has been the only test platform in .NET. As a result, `dotnet test` was designed only for VSTest. All the command-line options are VSTest oriented.
+For an extended period, VSTest has been the only test platform in .NET. Consequently, dotnet test was exclusively designed for VSTest, with all command-line options tailored to VSTest.
 
-It works by invoking `VSTest` MSBuild target, which causes other internal targets to run and eventually runs vstest.console, translating all the `dotnet test` command-line options to equivalent in vstest.console.
+The process involves invoking the `VSTest` MSBuild target, which triggers other internal targets to run and ultimately runs vstest.console. This translates all `dotnet test` command-line options to their equivalents in vstest.console.
 
 ### Running MTP projects with VSTest mode
 

@@ -47,7 +47,7 @@ This scenario is not officially supported, and you should pay attention to:
 
 #### Key takeaways
 
-1. To run MTP test applications in `dotnet test` VSTest mode, you should be using `Microsoft.Testing.Platform.MSBuild`, be passing MTP-specific command-line options after extra `--`, and setting `TestingPlatformDotnetTestSupport` to true.
+1. To run MTP test applications in `dotnet test` VSTest mode, you should use `Microsoft.Testing.Platform.MSBuild`, pass MTP-specific command-line options after the extra --, and set `TestingPlatformDotnetTestSupport` to true.
 2. VSTest-oriented command-line options are silently ignored.
 3. Due to these issues, we have introduced a new `dotnet test` mode specifically designed for MTP. We encourage MTP users to transition from the VSTest `dotnet test` mode to the new mode with the .NET 10 SDK.
 

@@ -36,7 +36,7 @@ This also means there should be a way to pass MTP-specific command-line options.
 
 The `--` in `dotnet test` VSTest mode is used to denote RunSettings arguments. The way `dotnet test` was originally designed is to forward those RunSettings arguments as an MSBuild property named `VSTestCLIRunSettings`. So, when running MTP test applications in VSTest mode, we are using the value of `VSTestCLIRunSettings` for another purpose to denote "application arguments".
 
-#### Mixing VSTest and MTP
+#### Mixing VSTest and Microsoft.Testing.Platform (MTP)
 
 When running `dotnet test` in VSTest mode, we advise against having both VSTest and Microsoft.Testing.Platform in the same solution.
 

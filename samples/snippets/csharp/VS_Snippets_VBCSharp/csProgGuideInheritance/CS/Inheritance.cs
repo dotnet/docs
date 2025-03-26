@@ -1,431 +1,415 @@
 ﻿using System;
-//using System.Drawing;
-//using System.Windows.Forms;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Inheritance_ProgGuide
 {
-class TestPaint : System.Windows.Forms.Form
-{
-    //<Snippet35>
-    protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
+    class TestPaint : Form
     {
-        // Perform custom drawing
-        System.Drawing.Graphics gfx = e.Graphics;
-        gfx.DrawString("Hello, World!",
-          new System.Drawing.Font("Arial", 16),
-          new System.Drawing.SolidBrush(System.Drawing.Color.Blue),
-          new System.Drawing.Point(10, 10));
-    }
-
-    private void InitializeComponent()
-    {
-        this.SuspendLayout();
-        //
-        // TestPaint
-        //
-        this.ClientSize = new System.Drawing.Size(284, 264);
-        this.Name = "TestPaint";
-        this.Load += new System.EventHandler(this.TestPaint_Load);
-        this.ResumeLayout(false);
-    }
-
-    private void TestPaint_Load(object sender, EventArgs e)
-    {
-    }
-    //</Snippet35>
-}
-
-//<Snippet1>
-// compile with: csc -target:library abstractshape.cs
-public abstract class Shape
-{
-    private string name;
-
-    public Shape(string s)
-    {
-        // calling the set accessor of the Id property.
-        Id = s;
-    }
-
-    public string Id
-    {
-        get
+        //<Snippet35>
+        protected override void OnPaint(PaintEventArgs e)
         {
-            return name;
+            // Perform custom drawing
+            System.Drawing.Graphics gfx = e.Graphics;
+            gfx.DrawString("Hello, World!",
+              new System.Drawing.Font("Arial", 16),
+              new System.Drawing.SolidBrush(System.Drawing.Color.Blue),
+              new System.Drawing.Point(10, 10));
         }
 
-        set
+        private void InitializeComponent()
         {
-            name = value;
+            SuspendLayout();
+            //
+            // TestPaint
+            //
+            ClientSize = new Size(284, 264);
+            Name = "TestPaint";
+            Load += new EventHandler(TestPaint_Load);
+            ResumeLayout(false);
+        }
+
+        private void TestPaint_Load(object sender, EventArgs e)
+        {
+        }
+        //</Snippet35>
+    }
+
+    //<Snippet1>
+    // compile with: csc -target:library abstractshape.cs
+    public abstract class Shape
+    {
+        public Shape(string s)
+        {
+            // calling the set accessor of the Id property.
+            Id = s;
+        }
+
+        public string Id { get; set; }
+
+        // Area is a read-only property - only a get accessor is needed:
+        public abstract double Area
+        {
+            get;
+        }
+
+        public override string ToString()
+        {
+            return $"{Id} Area = {Area:F2}";
         }
     }
+    //</Snippet1>
 
-    // Area is a read-only property - only a get accessor is needed:
-    public abstract double Area
+    //<Snippet2>
+    // compile with: csc -target:library -reference:abstractshape.dll shapes.cs
+    public class Square : Shape
     {
-        get;
-    }
+        private int _side;
 
-    public override string ToString()
-    {
-        return $"{Id} Area = {Area:F2}";
-    }
-}
-//</Snippet1>
-
-//<Snippet2>
-// compile with: csc -target:library -reference:abstractshape.dll shapes.cs
-public class Square : Shape
-{
-    private int side;
-
-    public Square(int side, string id)
-        : base(id)
-    {
-        this.side = side;
-    }
-
-    public override double Area
-    {
-        get
+        public Square(int side, string id)
+            : base(id)
         {
-            // Given the side, return the area of a square:
-            return side * side;
+            _side = side;
         }
-    }
-}
 
-public class Circle : Shape
-{
-    private int radius;
-
-    public Circle(int radius, string id)
-        : base(id)
-    {
-        this.radius = radius;
-    }
-
-    public override double Area
-    {
-        get
+        public override double Area
         {
-            // Given the radius, return the area of a circle:
-            return radius * radius * System.Math.PI;
-        }
-    }
-}
-
-public class Rectangle : Shape
-{
-    private int width;
-    private int height;
-
-    public Rectangle(int width, int height, string id)
-        : base(id)
-    {
-        this.width = width;
-        this.height = height;
-    }
-
-    public override double Area
-    {
-        get
-        {
-            // Given the width and height, return the area of a rectangle:
-            return width * height;
-        }
-    }
-}
-//</Snippet2>
-
-//<Snippet3>
-// compile with: csc -reference:abstractshape.dll;shapes.dll shapetest.cs
-class TestClass
-{
-    static void Main()
-    {
-        Shape[] shapes =
-        {
-            new Square(5, "Square #1"),
-            new Circle(3, "Circle #1"),
-            new Rectangle( 4, 5, "Rectangle #1")
-        };
-
-        System.Console.WriteLine("Shapes Collection");
-        foreach (Shape s in shapes)
-        {
-            System.Console.WriteLine(s);
-        }
-    }
-}
-/* Output:
-    Shapes Collection
-    Square #1 Area = 25.00
-    Circle #1 Area = 28.27
-    Rectangle #1 Area = 20.00
-*/
-//</Snippet3>
-
-class CarStuff
-{
-    //<Snippet4>
-    // Define the base class
-    class Car
-    {
-        public virtual void DescribeCar()
-        {
-            System.Console.WriteLine("Four wheels and an engine.");
+            get
+            {
+                // Given the side, return the area of a square:
+                return _side * _side;
+            }
         }
     }
 
-    // Define the derived classes
-    class ConvertibleCar : Car
+    public class Circle : Shape
     {
-        public new virtual void DescribeCar()
+        private int _radius;
+
+        public Circle(int radius, string id)
+            : base(id)
         {
-            base.DescribeCar();
-            System.Console.WriteLine("A roof that opens up.");
+            _radius = radius;
+        }
+
+        public override double Area
+        {
+            get
+            {
+                // Given the radius, return the area of a circle:
+                return _radius * _radius * Math.PI;
+            }
         }
     }
 
-    class Minivan : Car
+    public class Rectangle : Shape
     {
-        public override void DescribeCar()
+        private int _width;
+        private int _height;
+
+        public Rectangle(int width, int height, string id)
+            : base(id)
         {
-            base.DescribeCar();
-            System.Console.WriteLine("Carries seven people.");
-        }
-    }
-    //</Snippet4>
-
-    //<Snippet5>
-    public static void TestCars1()
-    {
-        Car car1 = new Car();
-        car1.DescribeCar();
-        System.Console.WriteLine("----------");
-
-        ConvertibleCar car2 = new ConvertibleCar();
-        car2.DescribeCar();
-        System.Console.WriteLine("----------");
-
-        Minivan car3 = new Minivan();
-        car3.DescribeCar();
-        System.Console.WriteLine("----------");
-    }
-    //</Snippet5>
-
-    //<Snippet6>
-    public static void TestCars2()
-    {
-        Car[] cars = new Car[3];
-        cars[0] = new Car();
-        cars[1] = new ConvertibleCar();
-        cars[2] = new Minivan();
-    }
-    //</Snippet6>
-
-    public static void TestCars3()
-    {
-        Car[] cars = new Car[3];
-
-        //<Snippet7>
-        foreach (Car vehicle in cars)
-        {
-            System.Console.WriteLine("Car object: " + vehicle.GetType());
-            vehicle.DescribeCar();
-            System.Console.WriteLine("----------");
-        }
-        //</Snippet7>
-    }
-}
-
-//<Snippet8>
-interface IDimensions
-{
-    float GetLength();
-    float GetWidth();
-}
-
-class Box : IDimensions
-{
-    float lengthInches;
-    float widthInches;
-
-    Box(float length, float width)
-    {
-        lengthInches = length;
-        widthInches = width;
-    }
-    // Explicit interface member implementation:
-    float IDimensions.GetLength()
-    {
-        return lengthInches;
-    }
-    // Explicit interface member implementation:
-    float IDimensions.GetWidth()
-    {
-        return widthInches;
-    }
-
-    static void Main()
-    {
-        // Declare a class instance box1:
-        Box box1 = new Box(30.0f, 20.0f);
-
-        // Declare an interface instance dimensions:
-        IDimensions dimensions = box1;
-
-        // The following commented lines would produce compilation
-        // errors because they try to access an explicitly implemented
-        // interface member from a class instance:
-        //<Snippet45>
-        //System.Console.WriteLine("Length: {0}", box1.GetLength());
-        //System.Console.WriteLine("Width: {0}", box1.GetWidth());
-        //</Snippet45>
-
-        // Print out the dimensions of the box by calling the methods
-        // from an instance of the interface:
-        //<Snippet46>
-        System.Console.WriteLine("Length: {0}", dimensions.GetLength());
-        System.Console.WriteLine("Width: {0}", dimensions.GetWidth());
-        //</Snippet46>
-    }
-}
-/* Output:
-    Length: 30
-    Width: 20
-*/
-//</Snippet8>
-
-namespace WrapBox
-{
-    //<Snippet9>
-    // Declare the English units interface:
-    interface IEnglishDimensions
-    {
-        float Length();
-        float Width();
-    }
-
-    // Declare the metric units interface:
-    interface IMetricDimensions
-    {
-        float Length();
-        float Width();
-    }
-
-    // Declare the Box class that implements the two interfaces:
-    // IEnglishDimensions and IMetricDimensions:
-    class Box : IEnglishDimensions, IMetricDimensions
-    {
-        float lengthInches;
-        float widthInches;
-
-        public Box(float lengthInches, float widthInches)
-        {
-            this.lengthInches = lengthInches;
-            this.widthInches = widthInches;
+            _width = width;
+            _height = height;
         }
 
-        // Explicitly implement the members of IEnglishDimensions:
-        float IEnglishDimensions.Length() => lengthInches;
+        public override double Area
+        {
+            get
+            {
+                // Given the width and height, return the area of a rectangle:
+                return _width * _height;
+            }
+        }
+    }
+    //</Snippet2>
 
-        float IEnglishDimensions.Width() => widthInches;
+    //<Snippet3>
+    // compile with: csc -reference:abstractshape.dll;shapes.dll shapetest.cs
+    class TestClass
+    {
+        static void Main()
+        {
+            Shape[] shapes =
+            [
+                new Square(5, "Square #1"),
+                new Circle(3, "Circle #1"),
+                new Rectangle( 4, 5, "Rectangle #1")
+            ];
 
-        // Explicitly implement the members of IMetricDimensions:
-        float IMetricDimensions.Length() => lengthInches * 2.54f;
+            Console.WriteLine("Shapes Collection");
+            foreach (Shape s in shapes)
+            {
+                Console.WriteLine(s);
+            }
+        }
+    }
+    /* Output:
+        Shapes Collection
+        Square #1 Area = 25.00
+        Circle #1 Area = 28.27
+        Rectangle #1 Area = 20.00
+    */
+    //</Snippet3>
 
-        float IMetricDimensions.Width() => widthInches * 2.54f;
+    class CarStuff
+    {
+        //<Snippet4>
+        // Define the base class
+        class Car
+        {
+            public virtual void DescribeCar()
+            {
+                Console.WriteLine("Four wheels and an engine.");
+            }
+        }
+
+        // Define the derived classes
+        class ConvertibleCar : Car
+        {
+            public new virtual void DescribeCar()
+            {
+                base.DescribeCar();
+                Console.WriteLine("A roof that opens up.");
+            }
+        }
+
+        class Minivan : Car
+        {
+            public override void DescribeCar()
+            {
+                base.DescribeCar();
+                Console.WriteLine("Carries seven people.");
+            }
+        }
+        //</Snippet4>
+
+        //<Snippet5>
+        public static void TestCars1()
+        {
+            Car car1 = new();
+            car1.DescribeCar();
+            Console.WriteLine("----------");
+
+            ConvertibleCar car2 = new();
+            car2.DescribeCar();
+            Console.WriteLine("----------");
+
+            Minivan car3 = new();
+            car3.DescribeCar();
+            Console.WriteLine("----------");
+        }
+        //</Snippet5>
+
+        //<Snippet6>
+        public static void TestCars2()
+        {
+            Car[] cars = [new Car(), new ConvertibleCar(), new Minivan()];
+        }
+        //</Snippet6>
+
+        public static void TestCars3()
+        {
+            Car[] cars = new Car[3];
+
+            //<Snippet7>
+            foreach (Car vehicle in cars)
+            {
+                Console.WriteLine("Car object: " + vehicle.GetType());
+                vehicle.DescribeCar();
+                Console.WriteLine("----------");
+            }
+            //</Snippet7>
+        }
+    }
+
+    //<Snippet8>
+    interface IDimensions
+    {
+        float GetLength();
+        float GetWidth();
+    }
+
+    class Box : IDimensions
+    {
+        float _lengthInches;
+        float _widthInches;
+
+        Box(float length, float width)
+        {
+            _lengthInches = length;
+            _widthInches = width;
+        }
+        // Explicit interface member implementation:
+        float IDimensions.GetLength()
+        {
+            return _lengthInches;
+        }
+        // Explicit interface member implementation:
+        float IDimensions.GetWidth()
+        {
+            return _widthInches;
+        }
 
         static void Main()
         {
             // Declare a class instance box1:
-            Box box1 = new Box(30.0f, 20.0f);
+            Box box1 = new(30.0f, 20.0f);
 
-            // Declare an instance of the English units interface:
-            IEnglishDimensions eDimensions = box1;
+            // Declare an interface instance dimensions:
+            IDimensions dimensions = box1;
 
-            // Declare an instance of the metric units interface:
-            IMetricDimensions mDimensions = box1;
+            // The following commented lines would produce compilation
+            // errors because they try to access an explicitly implemented
+            // interface member from a class instance:
+            //<Snippet45>
+            //Console.WriteLine($"Length: {box1.GetLength()}");
+            //Console.WriteLine($"Width: {box1.GetWidth()}");
+            //</Snippet45>
 
-            // Print dimensions in English units:
-            System.Console.WriteLine("Length(in): {0}", eDimensions.Length());
-            System.Console.WriteLine("Width (in): {0}", eDimensions.Width());
-
-            // Print dimensions in metric units:
-            System.Console.WriteLine("Length(cm): {0}", mDimensions.Length());
-            System.Console.WriteLine("Width (cm): {0}", mDimensions.Width());
+            // Print out the dimensions of the box by calling the methods
+            // from an instance of the interface:
+            //<Snippet46>
+            Console.WriteLine($"Length: {dimensions.GetLength()}");
+            Console.WriteLine($"Width: {dimensions.GetWidth()}");
+            //</Snippet46>
         }
     }
     /* Output:
-        Length(in): 30
-        Width (in): 20
-        Length(cm): 76.2
-        Width (cm): 50.8
+        Length: 30
+        Width: 20
     */
-    //</Snippet9>
-}
+    //</Snippet8>
 
-class Test
-{
-    interface IMetricDimensions
+    namespace WrapBox
     {
-        float Length();
-        float Width();
-    }
-
-    class Box : IMetricDimensions
-    {
-        float lengthInches;
-        float widthInches;
-
-        public Box(float length, float width)
+        //<Snippet9>
+        // Declare the English units interface:
+        interface IEnglishDimensions
         {
-            lengthInches = length;
-            widthInches = width;
+            float Length();
+            float Width();
         }
 
-        //<Snippet10>
-        // Normal implementation:
-        public float Length() => lengthInches;
-        public float Width() => widthInches;
-
-        // Explicit implementation:
-        float IMetricDimensions.Length() => lengthInches * 2.54f;
-        float IMetricDimensions.Width() => widthInches * 2.54f;
-        //</Snippet10>
-
-        //<Snippet11>
-        public static void Test()
+        // Declare the metric units interface:
+        interface IMetricDimensions
         {
-            Box box1 = new Box(30.0f, 20.0f);
-            IMetricDimensions mDimensions = box1;
-
-            System.Console.WriteLine("Length(in): {0}", box1.Length());
-            System.Console.WriteLine("Width (in): {0}", box1.Width());
-            System.Console.WriteLine("Length(cm): {0}", mDimensions.Length());
-            System.Console.WriteLine("Width (cm): {0}", mDimensions.Width());
+            float Length();
+            float Width();
         }
-        //</Snippet11>
+
+        // Declare the Box class that implements the two interfaces:
+        // IEnglishDimensions and IMetricDimensions:
+        class Box : IEnglishDimensions, IMetricDimensions
+        {
+            float _lengthInches;
+            float _widthInches;
+
+            public Box(float lengthInches, float widthInches)
+            {
+                _lengthInches = lengthInches;
+                _widthInches = widthInches;
+            }
+
+            // Explicitly implement the members of IEnglishDimensions:
+            float IEnglishDimensions.Length() => _lengthInches;
+
+            float IEnglishDimensions.Width() => _widthInches;
+
+            // Explicitly implement the members of IMetricDimensions:
+            float IMetricDimensions.Length() => _lengthInches * 2.54f;
+
+            float IMetricDimensions.Width() => _widthInches * 2.54f;
+
+            static void Main()
+            {
+                // Declare a class instance box1:
+                Box box1 = new(30.0f, 20.0f);
+
+                // Declare an instance of the English units interface:
+                IEnglishDimensions eDimensions = box1;
+
+                // Declare an instance of the metric units interface:
+                IMetricDimensions mDimensions = box1;
+
+                // Print dimensions in English units:
+                Console.WriteLine($"Length(in): {eDimensions.Length()}");
+                Console.WriteLine($"Width (in): {eDimensions.Width()}");
+
+                // Print dimensions in metric units:
+                Console.WriteLine($"Length(cm): {mDimensions.Length()}");
+                Console.WriteLine($"Width (cm): {mDimensions.Width()}");
+            }
+        }
+        /* Output:
+            Length(in): 30
+            Width (in): 20
+            Length(cm): 76.2
+            Width (cm): 50.8
+        */
+        //</Snippet9>
     }
-}
+
+    class Test
+    {
+        interface IMetricDimensions
+        {
+            float Length();
+            float Width();
+        }
+
+        class Box : IMetricDimensions
+        {
+            float _lengthInches;
+            float _widthInches;
+
+            public Box(float length, float width)
+            {
+                _lengthInches = length;
+                _widthInches = width;
+            }
+
+            //<Snippet10>
+            // Normal implementation:
+            public float Length() => _lengthInches;
+            public float Width() => _widthInches;
+
+            // Explicit implementation:
+            float IMetricDimensions.Length() => _lengthInches * 2.54f;
+            float IMetricDimensions.Width() => _widthInches * 2.54f;
+            //</Snippet10>
+
+            //<Snippet11>
+            public static void Test()
+            {
+                Box box1 = new(30.0f, 20.0f);
+                IMetricDimensions mDimensions = box1;
+
+                Console.WriteLine($"Length(in): {box1.Length()}");
+                Console.WriteLine($"Width (in): {box1.Width()}");
+                Console.WriteLine($"Length(cm): {mDimensions.Length()}");
+                Console.WriteLine($"Width (cm): {mDimensions.Width()}");
+            }
+            //</Snippet11>
+        }
+    }
 }
 
 namespace WrapExample
 {
     // Inheritance (C# Programming Guide)
     //<Snippet12>
-    public class A {}
-    public class B : A {}
+    public class A { }
+    public class B : A { }
 
     //</Snippet12>
     class Program
     {
         static void Main()
         {
-            A a = new A();
-            B b = new B();
+            A a = new();
+            B b = new();
             b = (B)a;
         }
     }
@@ -601,7 +585,7 @@ class TestSelection
     {
         //<Snippet33>
         int val = 5;
-        Derived d = new Derived();
+        Derived d = new();
         d.DoWork(val);  // Calls DoWork(double).
         //</Snippet33>
 
@@ -637,7 +621,7 @@ class OverrideToString
         //</Snippet37>
 
         //<Snippet38>
-        Person person = new Person { Name = "John", Age = 12 };
+        Person person = new() { Name = "John", Age = 12 };
         Console.WriteLine(person);
         // Output:
         // Person: John 12
@@ -650,24 +634,20 @@ namespace ExplicitConversion
     //<Snippet51>
     class Test
     {
-        public void M()
+        public static void M()
         { Console.WriteLine("I'm just a Test"); }
     }
     class Program2
     {
         static void Main()
         {
-            System.Collections.ArrayList list = new System.Collections.ArrayList();
-            list.Add(new Test());
-            list.Add(new Test());
-            list.Add(new Test());
+            System.Collections.ArrayList list = [new Test(), new Test(), new Test()];
 
             foreach (object o in list)
             {
-                Test t = o as Test;
-                if (t != null)
+                if (o is Test t)
                 {
-                    t.M();
+                    Test.M();
                 }
             }
         }
@@ -683,7 +663,6 @@ namespace ExplicitConversion
 
 namespace RainyDay
 {
-
     class JustInCase
     {
         static void Main()
@@ -712,13 +691,12 @@ namespace RainyDay
 namespace OverrideAndNew
 {
     using System;
-    using System.Text;
     class Program
     {
         static void Main(string[] args)
         {
-            BaseClass bc = new BaseClass();
-            DerivedClass dc = new DerivedClass();
+            BaseClass bc = new();
+            DerivedClass dc = new();
             BaseClass bcdc = new DerivedClass();
 
             // The following two calls do what you would expect. They call
@@ -795,9 +773,7 @@ namespace OverrideAndNew
 namespace pieces
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+
     //<snippet61>
     class BaseClass
     {
@@ -821,8 +797,8 @@ namespace pieces
     {
         static void Main(string[] args)
         {
-            BaseClass bc = new BaseClass();
-            DerivedClass dc = new DerivedClass();
+            BaseClass bc = new();
+            DerivedClass dc = new();
             BaseClass bcdc = new DerivedClass();
 
             bc.Method1();
@@ -842,8 +818,8 @@ namespace pieces
     {
         public void callers()
         {
-            BaseClass bc = new BaseClass();
-            DerivedClass dc = new DerivedClass();
+            BaseClass bc = new();
+            DerivedClass dc = new();
             BaseClass bcdc = new DerivedClass();
             //<snippet64>
             bc.Method1();
@@ -882,7 +858,7 @@ namespace pieces
 
         class DerivedClass : BaseClass
         {
-            public void Method2()
+            public new void Method2()
             {
                 Console.WriteLine("Derived - Method2");
             }
@@ -895,7 +871,7 @@ namespace OverrideAndNew2
 {
     using System;
     using System.Collections.Generic;
-    using System.Text;
+
     class Program
     {
         static void Main(string[] args)
@@ -920,22 +896,22 @@ namespace OverrideAndNew2
         //<snippet72>
         public static void TestCars1()
         {
-            System.Console.WriteLine("\nTestCars1");
-            System.Console.WriteLine("----------");
+            Console.WriteLine("\nTestCars1");
+            Console.WriteLine("----------");
 
-            Car car1 = new Car();
+            Car car1 = new();
             car1.DescribeCar();
-            System.Console.WriteLine("----------");
+            Console.WriteLine("----------");
 
             // Note the output from this test case. The ShowDetails method is
             // declared with the new modifier.
-            ConvertibleCar car2 = new ConvertibleCar();
+            ConvertibleCar car2 = new();
             car2.DescribeCar();
-            System.Console.WriteLine("----------");
+            Console.WriteLine("----------");
 
-            Minivan car3 = new Minivan();
+            Minivan car3 = new();
             car3.DescribeCar();
-            System.Console.WriteLine("----------");
+            Console.WriteLine("----------");
         }
         //</snippet72>
 
@@ -958,16 +934,16 @@ namespace OverrideAndNew2
         //<snippet74>
         public static void TestCars2()
         {
-            System.Console.WriteLine("\nTestCars2");
-            System.Console.WriteLine("----------");
+            Console.WriteLine("\nTestCars2");
+            Console.WriteLine("----------");
 
-            var cars = new List<Car> { new Car(), new ConvertibleCar(),
+            var cars = new List<Car> { new(), new ConvertibleCar(),
                 new Minivan() };
 
-            foreach (var car in cars)
+            foreach (Car car in cars)
             {
                 car.DescribeCar();
-                System.Console.WriteLine("----------");
+                Console.WriteLine("----------");
             }
         }
         //</snippet74>
@@ -991,18 +967,18 @@ namespace OverrideAndNew2
         //<snippet76>
         public static void TestCars3()
         {
-            System.Console.WriteLine("\nTestCars3");
-            System.Console.WriteLine("----------");
-            ConvertibleCar car2 = new ConvertibleCar();
-            Minivan car3 = new Minivan();
+            Console.WriteLine("\nTestCars3");
+            Console.WriteLine("----------");
+            ConvertibleCar car2 = new();
+            Minivan car3 = new();
             car2.ShowDetails();
             car3.ShowDetails();
         }
 
         public static void TestCars4()
         {
-            System.Console.WriteLine("\nTestCars4");
-            System.Console.WriteLine("----------");
+            Console.WriteLine("\nTestCars4");
+            Console.WriteLine("----------");
             Car car2 = new ConvertibleCar();
             Car car3 = new Minivan();
             car2.ShowDetails();
@@ -1034,13 +1010,13 @@ namespace OverrideAndNew2
     {
         public void DescribeCar()
         {
-            System.Console.WriteLine("Four wheels and an engine.");
+            Console.WriteLine("Four wheels and an engine.");
             ShowDetails();
         }
 
         public virtual void ShowDetails()
         {
-            System.Console.WriteLine("Standard transportation.");
+            Console.WriteLine("Standard transportation.");
         }
     }
 
@@ -1052,7 +1028,7 @@ namespace OverrideAndNew2
     {
         public new void ShowDetails()
         {
-            System.Console.WriteLine("A roof that opens up.");
+            Console.WriteLine("A roof that opens up.");
         }
     }
 
@@ -1062,7 +1038,7 @@ namespace OverrideAndNew2
     {
         public override void ShowDetails()
         {
-            System.Console.WriteLine("Carries seven people.");
+            Console.WriteLine("Carries seven people.");
         }
     }
     //</snippet71>

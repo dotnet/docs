@@ -304,8 +304,7 @@ namespace DataflowBatchDatabase
 
          // Demonstrate multiple insert operations without batching.
          Console.WriteLine("Demonstrating non-batched database insert operations...");
-         Console.WriteLine("Original size of Employee table: {0}.",
-            GetEmployeeCount(connectionString));
+         Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
          stopwatch.Start();
          AddEmployees(connectionString, insertCount);
          stopwatch.Stop();
@@ -319,8 +318,7 @@ namespace DataflowBatchDatabase
 
          // Demonstrate multiple insert operations, this time with batching.
          Console.WriteLine("Demonstrating batched database insert operations...");
-         Console.WriteLine("Original size of Employee table: {0}.",
-            GetEmployeeCount(connectionString));
+         Console.WriteLine($"Original size of Employee table: {GetEmployeeCount(connectionString)}.");
          stopwatch.Restart();
          AddEmployeesBatched(connectionString, insertBatchSize, insertCount);
          stopwatch.Stop();

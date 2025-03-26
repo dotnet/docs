@@ -133,7 +133,7 @@ namespace csrefKeywordsAccess
             {
                 Console.WriteLine($"Name: {name}\nAlias: {alias}");
                 // Passing the object to the CalcTax method by using this:
-                Console.WriteLine("Taxes: {0:C}", Tax.CalcTax(this));
+                Console.WriteLine($"Taxes: {Tax.CalcTax(this):C}");
             }
 
             public decimal Salary

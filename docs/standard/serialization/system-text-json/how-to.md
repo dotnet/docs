@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
-ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 adobe-target: true
 ---

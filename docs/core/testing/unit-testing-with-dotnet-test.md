@@ -55,17 +55,17 @@ This scenario is not officially supported, and you should pay attention to:
 
 Due to the problems of running `dotnet test` with MTP in VSTest mode, we introduced a new mode of `dotnet test` in .NET 10 SDK, which is designed for MTP specifically.
 
-To opt-in this mode, you should add `dotnet.config` file in the root of the repository or the solution:
+To enable this mode, you should add a `dotnet.config` file to the root of the repository or solution.
 
 ```toml
 [dotnet.test:runner]
 name = "Microsoft.Testing.Platform"
 ```
 
-As this mode is designed for Microsoft.Testing.Platform, both `TestingPlatformDotnetTestSupport` and the extra `--` are no longer required.
+Since this mode is specifically designed for Microsoft.Testing.Platform, neither `TestingPlatformDotnetTestSupport` nor the additional `--` are required.
 
 > [!IMPORTANT]
-> This mode is only compatible for Microsoft.Testing.Platform 1.7.0 and later.
+> This mode is only compatible with Microsoft.Testing.Platform version 1.7.0 and later.
 >
 > [!IMPORTANT]
-> If you have a test project that supports VSTest and doesn't support MTP, an error is produced.
+> If your test project supports VSTest but does not support MTP, an error will be generated.

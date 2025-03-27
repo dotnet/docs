@@ -1,0 +1,99 @@
+### YamlMime:Landing
+
+title: Install .NET on Linux distributions
+summary: Learn about how .NET is available on Linux. .NET can be installed through a package manager, a snap package, or manually.
+
+metadata:
+  title: Install .NET on Linux distributions
+  description: Learn about how .NET is available on Linux. .NET can be installed through a package manager, a snap package, or manually.
+  ms.topic: landing-page
+  ms.date: 03/26/2025
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+  # Card
+  - title: Supported Distributions
+    linkLists:
+      - linkListType: download
+        links:
+          - text: Alpine
+            url: linux-alpine.md
+          - text: Debian
+            url: linux-debian.md
+          - text: CentOS Stream
+            url: linux-rhel.md#centos-stream-9
+          - text: Fedora
+            url: linux-fedora.md
+          - text: openSUSE Leap
+            url: linux-opensuse.md
+          - text: Red Hat Enterprise Linux (RHEL)
+            url: linux-rhel.md
+          - text: SUSE Enterprise Linux
+            url: linux-sles.md
+          - text: Ubuntu
+            url: linux-ubuntu-install.md
+
+  # Card
+  - title: Alternative installation methods
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Snap package (.NET Runtime)
+            url: linux-snap-runtime.md
+          - text: Snap package (.NET SDK)
+            url: linux-snap-sdk.md
+      - linkListType: download
+        links:
+          - text: Download and extract
+            url: linux-scripted-manual.md#manual-install
+          - text: Installation script
+            url: linux-scripted-manual.md#scripted-install
+
+  # Card
+  - title: Package managers
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Brew (.NET Runtime)
+            url: https://formulae.brew.sh/cask/dotnet
+          - text: Brew (.NET SDK)
+            url: https://formulae.brew.sh/cask/dotnet-sdk
+          - text: MacPorts
+            url: https://ports.macports.org/port/dotnet-cli
+          - text: Arch Linux
+            url: https://archlinux.org
+          - text: Arch Linux (AUR)
+            url: https://aur.archlinux.org
+          - text: MacPorts
+            url: https://ports.macports.org/port/dotnet-cli
+
+  # Card
+  - title: Containers
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Docker Overview
+            url: ../docker/introduction.md#net-images
+          - text: Development Containers
+            url: https://containers.dev/features
+          - text: Chainguard
+            url: https://images.chainguard.dev
+
+  # Card
+  - title: "Manage"
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Detect installed versions
+            url: how-to-detect-installed-versions.md
+          - text: Remove .NET
+            url: remove-runtime-sdk-versions.md
+
+  # Card
+  - title: "Q&A"
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Troubleshoot .NET package mix ups
+            url: linux-package-mixup.md

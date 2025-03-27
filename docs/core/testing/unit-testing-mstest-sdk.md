@@ -64,7 +64,8 @@ When you `build` the project, all the needed components are restored and install
 You don't need anything else to build and run your tests and you can use the same tooling (for example, `dotnet test` or Visual Studio) used by a ["classic" MSTest project](./unit-testing-csharp-with-mstest.md).
 
 > [!IMPORTANT]
-> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./microsoft-testing-platform-integration-dotnet-test.md#dotnet-test---microsofttestingplatform-mode). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
+> By switching to the `MSTest.Sdk`, you opt in to using the [MSTest runner (enables Microsoft.Testing.Platform for MSTest)](./unit-testing-mstest-runner-intro.md), including with [dotnet test](./microsoft-testing-platform-integration-dotnet-test.md). That requires modifying your CI and local CLI calls, and also impacts the available entries of the _.runsettings_. You can use `MSTest.Sdk` and still keep the old integrations and tools by instead switching the [runner](#select-the-runner).
+> In more details, MSTest.Sdk, by default, will set `EnableMSTestRunner` and `TestingPlatformDotnetTestSupport` to true. For more information about dotnet test and its different modes for running Microsoft.Testing.Platform, see [Testing with dotnet test](./unit-testing-with-dotnet-test.md).
 
 ## Select the runner
 

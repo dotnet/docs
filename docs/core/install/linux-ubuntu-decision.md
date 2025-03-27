@@ -3,19 +3,19 @@ title: .NET and Ubuntu overview
 description: Learn about the ways you can install .NET on Ubuntu, either from the built-in package feed, the .NET backports repository, or the Microsoft repository.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/03/2025
+ms.date: 03/27/2025
 ms.custom: updateeachrelease, linux-related-content
 ---
 
-# Overview of .NET on Ubuntu
+# Install .NET on Ubuntu decision guide
 
-This article describes how to install .NET on Ubuntu. Starting with Ubuntu 22.04, most supported versions of .NET are available in the built-in Ubuntu feed. The Ubuntu .NET backports package repository contains the remaining supported .NET versions. For more information about available versions, see the [Supported distributions](#supported-distributions) section.
+This article helps you decide how install .NET on Ubuntu. Starting with Ubuntu 22.04, most supported versions of .NET are available in the built-in Ubuntu feed. The Ubuntu .NET backports package repository contains the remaining supported .NET versions.
 
 Canonical has taken over publishing .NET on Ubuntu. Starting with Ubuntu 22.04, Microsoft no longer distributes .NET for Ubuntu to the Microsoft package repository.
 
 ## Supported distributions
 
-The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. Each link goes to the specific Ubuntu version page with specific instructions on how to install .NET for that version of Ubuntu.
+The following table is a list of currently supported .NET releases and the versions of Ubuntu they're supported on. Each link goes to the specific Ubuntu version page with instructions on how to install .NET for that version of Ubuntu.
 
 <!-- This table is replicated in each individual Ubuntu article, but with only that specific version row listed. Make sure to update those tables. -->
 

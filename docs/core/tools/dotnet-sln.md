@@ -158,7 +158,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
   The path to, or name of, the project or projects to remove from the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
-  If a project name is provided, any project in the solution that matches the name, regardless of its path, is removed. If more than one matching project is found in the solution, the command errors out. Omit the project file extension in the name. (Support for removing projects by name was added in .NET 10.)
+  If a project name is provided instead of a path, the project in the solution that matches the name, regardless of its path, is removed. If more than one matching project is found in the solution, the command errors out. Omit the project file extension in the name. (Support for removing projects by name was added in .NET 10.)
 
 #### Options
 

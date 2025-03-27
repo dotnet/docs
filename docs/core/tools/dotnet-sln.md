@@ -80,9 +80,9 @@ dotnet sln list [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use (either an *.sln* or *.slnx* or *.slnf* file).
+  The solution file (*.sln* or *.slnx* file) or [solution filter](/visualstudio/msbuild/solution-filters) (*.slnf* file) to use.
 
-  If unspecified, the command searches the current directory for an *.sln*, *.slnx*, or *.slnf* file and, if it finds exactly one, uses that file. If multiple solution files are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
+  If unspecified, the command searches the current directory for an *.sln*, *.slnx*, or *.slnf* file and, if it finds exactly one, uses that file. If multiple solution files or filters are found, the user is prompted to specify a file explicitly. If none are found, the command fails.
 
   (Support for *.slnf* files was added in .NET SDK 9.0.3xx.)
 

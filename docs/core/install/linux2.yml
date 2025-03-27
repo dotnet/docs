@@ -33,6 +33,10 @@ landingContent:
             url: linux-sles.md
           - text: Ubuntu
             url: linux-ubuntu-install.md
+      - linkListType: reference
+        links:
+          - text: Troubleshoot .NET package mix ups
+            url: linux-package-mixup.md
 
   # Card
   - title: Alternative installation methods
@@ -49,11 +53,25 @@ landingContent:
             url: linux-scripted-manual.md#manual-install
           - text: Installation script
             url: linux-scripted-manual.md#scripted-install
+      - linkListType: concept
+        links:
+          - text: Brew (.NET Runtime)
+            url: https://formulae.brew.sh/cask/dotnet
+          - text: Brew (.NET SDK)
+            url: https://formulae.brew.sh/cask/dotnet-sdk
+          - text: MacPorts
+            url: https://ports.macports.org/port/dotnet-cli
+          - text: Arch Linux
+            url: https://archlinux.org
+          - text: Arch Linux (AUR)
+            url: https://aur.archlinux.org
+          - text: MacPorts
+            url: https://ports.macports.org/port/dotnet-cli
 
   # Card
   - title: Package managers
     linkLists:
-      - linkListType: deploy
+      - linkListType: concept
         links:
           - text: Brew (.NET Runtime)
             url: https://formulae.brew.sh/cask/dotnet
@@ -83,17 +101,9 @@ landingContent:
   # Card
   - title: "Manage"
     linkLists:
-      - linkListType: learn
+      - linkListType: how-to-guide
         links:
-          - text: Detect installed versions
+          - text: Detect installed .NET versions
             url: how-to-detect-installed-versions.md
           - text: Remove .NET
             url: remove-runtime-sdk-versions.md
-
-  # Card
-  - title: "Q&A"
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Troubleshoot .NET package mix ups
-            url: linux-package-mixup.md

@@ -65,7 +65,8 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="MSTest" Version="3.8.3" />
+  <PackageReference Include="MSTest" Version="3.2.0" />
+  <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="17.10.1" />
 </ItemGroup>
 ```
 

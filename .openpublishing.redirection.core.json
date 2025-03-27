@@ -1359,6 +1359,10 @@
             "redirect_url": "/dotnet/core/containers/sdk-publish"
         },
         {
+            "source_path_from_root": "/docs/core/testing/unit-testing-fsharp-with-dotnet-test.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-fsharp-with-xunit"
+        },
+        {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-architecture-capabilities.md",
             "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-architecture-capabilities"
         },
@@ -1445,6 +1449,22 @@
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-vs-vstest.md",
             "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-vs-vstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-published-output.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-vstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-visual-basic-with-dotnet-test.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-visual-basic-with-xunit"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-mstest.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-mstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-nunit.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-nunit"
         }
     ]
 }

@@ -25,6 +25,9 @@ Some examples of the `dotnet.config` file:
   name = "VSTest"
   ```
 
+> [!TIP]
+> For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).
+
 ## VSTest and Microsoft.Testing.Platform (MTP)
 
 ### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)

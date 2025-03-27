@@ -5,7 +5,6 @@ ms.date: 02/12/2025
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"
 ms.topic: how-to
-ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
 ---

@@ -70,19 +70,27 @@ After you install the AI app templates, you can use them to create starter apps 
 
 [!INCLUDE [ai-templates-explore-app](ai-templates-explore-app.md)]
 
-## Create and configure the Azure OpenAI resource
+## Create and authenticate to the Azure OpenAI service
 
-To use the .NET AI templates, you'll need to create and authenticate to an Azure OpenAI service:
+To use the .NET AI templates with Azure OpenAI, you'll need to create and authenticate to an Azure OpenAI service.
+
+### Create the Azure OpenAI service
 
 1. [Create an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) if you don't already have one available.
 
-2. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`). To learn how to deploy a model, see [Create a resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) in the Azure OpenAI docs.
+1. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`) so that they match the default template values. To learn how to deploy a model, see [Create a resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) in the Azure OpenAI docs.
 
-3. The AI template is configured to use Microsoft Entra ID for keyless authentication. Configure the Azure OpenAI resource for keyless authentication:
+### Authenticate to the Azure OpenAI service
 
-- In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
-- Select **Access control (IAM)** from the left navigation.
-- [Add a role assignment](/azure/developer/ai/keyless-connections) for the `Azure AI Developer` role to your Azure account.
+The AI template uses Microsoft Entra ID for seamless, keyless authentication. It leverages [`DefaultAzureCredential`](/dotnet/api/azure.identity.defaultazurecredential) to automatically detect and utilize credentials from your development tools when running locally. To connect to the service, ensure your developer account has the appropriate roles assigned and is signed in to your local development tools.
+
+1. Assign a role to your developer account to access the Azure OpenAI resource:
+
+    - In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
+    - Select **Access control (IAM)** from the left navigation.
+    - [Add a role assignment](/dotnet/azure/sdk/authentication/local-development-dev-accounts#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
+
+1. [Sign-in to a local development tool](/dotnet/azure/sdk/authentication/local-development-dev-accounts#sign-in-to-azure-using-developer-tooling) such as Visual Studio or the Azure CLI using the Azure account you assigned the `Azure AI Developer` role to.
 
 ## Configure the app
 

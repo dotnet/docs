@@ -33,8 +33,18 @@ You explore the Docker container build and deploy tasks for a .NET application. 
 
 Install the following prerequisites:
 
+:::zone pivot="dotnet-9-0"
+
+- [.NET 9+ SDK](https://dotnet.microsoft.com/download/dotnet/9.0).\
+If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
+
+:::zone-end
+:::zone pivot="dotnet-8-0"
+
 - [.NET 8+ SDK](https://dotnet.microsoft.com/download/dotnet/8.0).\
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
+
+:::zone-end
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop).
 - A temporary working folder for the _Dockerfile_ and .NET example app. In this tutorial, the name _docker-working_ is used as the working folder.
 

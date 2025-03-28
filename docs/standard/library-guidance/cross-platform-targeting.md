@@ -47,6 +47,10 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 
 > For example, a UWP control toolkit library depends on an app model that is only available on UWP. App model specific APIs aren't available in .NET Standard.
 
+❌ DO NOT publish for `netstandard2.0` if your project or dependencies multi-target.
+
+> `netstandard2.0` is not a runtime, and multi-targeted projects provide a runtime framework specific library which is required when running on other frameworks.
+
 ## Multi-targeting
 
 Sometimes you need to access framework-specific APIs from your libraries. The best way to call framework-specific APIs is to use multi-targeting, which builds your project for many [.NET target frameworks](../frameworks.md) rather than for just one.

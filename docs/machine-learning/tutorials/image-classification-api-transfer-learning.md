@@ -13,7 +13,7 @@ dev_langs:
 
 # Tutorial: Automated visual inspection using transfer learning with the ML.NET Image Classification API
 
-Learn how to train a custom deep learning model using transfer learning, a pretrained TensorFlow model and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
+Learn how to train a custom deep learning model using transfer learning, a pretrained TensorFlow model, and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

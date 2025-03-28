@@ -209,7 +209,7 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0041.md
       - name: Test platforms
         items:
-          - name: Microsoft Testing Platform
+          - name: Microsoft.Testing.Platform
             items:
               - name: Overview
                 href: ../../core/testing/microsoft-testing-platform-intro.md
@@ -257,6 +257,8 @@ items:
                     href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
                   - name: Services
                     href: ../../core/testing/microsoft-testing-platform-architecture-services.md
+          - name: VSTest
+            href: https://github.com/microsoft/vstest
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests

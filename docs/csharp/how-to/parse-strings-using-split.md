@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "strings [C#], splitting"
   - "parse strings"
 ms.custom: copilot-scenario-highlight
-ms.collection: ce-skilling-ai-copilot
 ---
 # How to separate strings using String.Split in C\#
 

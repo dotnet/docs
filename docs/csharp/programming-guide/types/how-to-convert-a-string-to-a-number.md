@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "converting strings to int [C#]"
   - "strings [C#], converting to int"
 ms.topic: how-to
-ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
 adobe-target: true

@@ -17,7 +17,7 @@ The original `MaxBy` and `MinBy` accepting an `IComparer<T>? comparer` expressio
 
 ### Note
 
-This would previously work only if `TSource` and `TKey` were actually the same constructed type. If the types were distinct then a runtime _<xref:System.IndexOutOfRangeException>: Index was outside the bounds of the array._ would be thrown because the needed extension method for `IQuerable<TSource> source` could not be found (for example in <xref:System.Linq.Enumerable.MaxBy`2>).
+This would previously work only if `TSource` and `TKey` were actually the same constructed type. If the types were distinct then a runtime _<xref:System.IndexOutOfRangeException>: Index was outside the bounds of the array._ would be thrown because the needed extension method for `IQuerable<TSource> source` could not be found (for example in <xref:System.Linq.Enumerable.MaxBy*>).
 
 ## Workaround
 

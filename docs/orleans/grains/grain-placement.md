@@ -10,7 +10,7 @@ Orleans ensures that when a grain call is made there is an instance of that grai
 
 The placement process in Orleans is fully configurable: developers can choose from a set of out-of-the-box placement policies such as random, prefer-local, and load-based, or custom logic can be configured. This allows for full flexibility in deciding where grains are created. For example, grains can be placed on a server close to resources which they need to operate on or close to other grains with which they communicate. By default, Orleans will pick a random compatible server.
 
-The placement strategy that Orleans uses can be configured globally or per-grain-class.
+The placement strategy that Orleans uses can be configured globally or per grain class.
 
 ## Random placement
 

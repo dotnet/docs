@@ -41,7 +41,7 @@ It's possible that when you install .NET, specific dependencies may not be insta
 - [Fedora](linux-fedora.md#dependencies)
 - [RHEL and CentOS Stream](linux-rhel.md#dependencies)
 - [SLES](linux-sles.md#dependencies)
-- [Ubuntu](linux-ubuntu.md#dependencies)
+- [Ubuntu](linux-ubuntu-decision.md#dependencies)
 
 For generic information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 

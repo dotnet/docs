@@ -7,6 +7,10 @@ ms.date: 11/14/2024
 
 The [`dotnet restore` command](../../../tools/dotnet-restore.md), which restores the dependencies and tools of a project, now produces security vulnerability warnings for transitive packages by default.
 
+> [!NOTE]
+> This change was reverted in the 9.0.101 SDK.
+> [A modified implementation is being re-introduced in .NET 10](../10.0/nugetaudit-transitive-packages.md).
+
 ## Previous behavior
 
 In .NET 8, [NuGetAudit](../8.0/dotnet-restore-audit.md) was introduced to emit warnings for packages with known security vulnerabilities. By default, only direct package references were audited, however, it was possible to change the `NuGetAuditMode` property to include all packages.
@@ -18,7 +22,7 @@ If your project treats warnings as errors, this behavior can cause restore failu
 
 ## Version introduced
 
-.NET 9 Preview 6
+Introduced in .NET 9 Preview 6, and reverted in 9.0.101.
 
 ## Type of breaking change
 

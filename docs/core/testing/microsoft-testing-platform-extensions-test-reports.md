@@ -8,7 +8,7 @@ ms.date: 04/10/2024
 
 # Test reports extensions
 
-This article list and explains all `Microsoft Testing Platform` extensions related to the test report capability.
+This article lists and explains all Microsoft.Testing.Platform extensions related to the test report capability.
 
 A test report is a file that contains information about the execution and outcome of the tests.
 

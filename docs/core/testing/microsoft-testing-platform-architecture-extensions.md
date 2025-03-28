@@ -8,9 +8,9 @@ ms.date: 07/11/2024
 
 # Microsoft.Testing.Platform extensibility
 
-The testing platform consists of a [testing framework](#test-framework-extension) and any number of [extensions](#other-extensibility-points) that can operate *in-process* or *out-of-process*.
+Microsoft.Testing.Platform consists of a [testing framework](#test-framework-extension) and any number of [extensions](#other-extensibility-points) that can operate *in-process* or *out-of-process*.
 
-As outlined in the [architecture](./microsoft-testing-platform-architecture.md) section, the testing platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that your tests will utilize. Failing to register this results in startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
+As outlined in the [architecture](./microsoft-testing-platform-architecture.md) section, Microsoft.Testing.Platform is designed to accommodate a variety of scenarios and extensibility points. The primary and essential extension is undoubtedly the [testing framework](#test-framework-extension) that your tests will utilize. Failing to register this results in startup error. **The [testing framework](#test-framework-extension) is the sole mandatory extension required to execute a testing session.**
 
 To support scenarios such as generating test reports, code coverage, retrying failed tests, and other potential features, you need to provide a mechanism that allows other extensions to work in conjunction with the [testing framework](#test-framework-extension) to deliver these features not inherently provided by the [testing framework](#test-framework-extension) itself.
 
@@ -80,7 +80,7 @@ The test framework is the primary extension that provides the testing platform w
 
 ### Register a testing framework
 
-This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [the testing platform architecture](./microsoft-testing-platform-architecture.md) documentation.
+This section explains how to register the test framework with the testing platform. You register only one testing framework per test application builder using the `TestApplication.RegisterTestFramework` API as shown in [Microsoft.Testing.Platform architecture](./microsoft-testing-platform-architecture.md) documentation.
 
 The registration API is defined as follows:
 

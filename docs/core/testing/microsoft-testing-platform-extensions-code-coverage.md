@@ -8,7 +8,7 @@ ms.date: 04/10/2024
 
 # Code coverage extensions
 
-This article list and explains all `Microsoft Testing Platform` extensions related to the code coverage capability.
+This article lists and explains all Microsoft.Testing.Platform extensions related to the code coverage capability.
 
 You can use the code coverage feature to determine what proportion of your project's code is being tested by coded tests such as unit tests. To effectively guard against bugs, your tests should exercise or *cover* a large proportion of your code.
 

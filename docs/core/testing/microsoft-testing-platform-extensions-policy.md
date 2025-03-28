@@ -8,7 +8,7 @@ ms.date: 04/10/2024
 
 # Policy extensions
 
-This article list and explains all `Microsoft Testing Platform` extensions related to the policy capability.
+This article lists and explains all Microsoft.Testing.Platform extensions related to the policy capability.
 
 ## Retry
 
@@ -19,7 +19,7 @@ This extension is intended for integration tests where the test depends heavily 
 This extension is shipped as part of [Microsoft.Testing.Extensions.Retry](https://nuget.org/packages/Microsoft.Testing.Extensions.Retry) package.
 
 > [!NOTE]
-> The package is shipped with the restrictive Microsoft Testing Platform Tools license.
+> The package is shipped with the restrictive Microsoft.Testing.Platform Tools license.
 > The full license is available at <https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry/1.0.0/License>.
 
 The available options are as follows:

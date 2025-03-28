@@ -2,7 +2,7 @@
 title: "Breaking change: .NET 10 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the APIs that have been marked as obsolete in .NET 10 with a custom diagnostic ID.
-ms.date: 01/14/2025
+ms.date: 03/28/2025
 ai-usage: ai-assisted
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 10)
@@ -20,6 +20,7 @@ The following table lists the custom diagnostic IDs and their corresponding warn
 | [SYSLIB0058](../../../../fundamentals/syslib-diagnostics/syslib0058.md) | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. | Warning |
 | [SYSLIB0059](../../../../fundamentals/syslib-diagnostics/syslib0059.md) | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead.  | Warning |
 | [SYSLIB0060](../../../../fundamentals/syslib-diagnostics/syslib0060.md) | <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> constructors are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=nameWithType> instead. | Warning |
+| [SYSLIB0061](../../../../fundamentals/syslib-diagnostics/syslib0061.md) | <xref:System.Linq.Queryable.MaxBy%603?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy%603?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. | Warning |
 
 ## Version introduced
 
@@ -57,6 +58,11 @@ These obsoletions can affect [source compatibility](../../categories.md#source-c
 
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=fullName>
 - <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2*?displayProperty=fullName>
+
+### SYSLIB0061
+
+- <xref:System.Linq.Queryable.MaxBy%603?displayProperty=fullName>
+- <xref:System.Linq.Queryable.MinBy%603?displayProperty=fullName>
 
 ## See also
 

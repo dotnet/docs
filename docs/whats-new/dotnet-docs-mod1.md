@@ -53,6 +53,7 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 - [SYSLIB0058: Certain SslStream properties are obsolete](../fundamentals/syslib-diagnostics/syslib0058.md)
 - [SYSLIB0059: SystemEvents.EventsThreadShutdown callbacks aren't run before the process exits](../fundamentals/syslib-diagnostics/syslib0059.md)
 - [SYSLIB0060: Rfc2898DeriveBytes constructors are obsolete](../fundamentals/syslib-diagnostics/syslib0060.md)
+- [SYSLIB0061: System.Linq.Queryable.MaxBy and System.Linq.Queryable.MinBy accepting an IComparer\<TSource\> are obsolete](../fundamentals/syslib-diagnostics/syslib0061.md)
 
 ### Updated articles
 

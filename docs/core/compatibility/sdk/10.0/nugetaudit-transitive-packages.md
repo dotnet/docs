@@ -5,15 +5,19 @@ ms.date: 03/28/2025
 ---
 # 'dotnet restore' audits transitive packages
 
-The [`dotnet restore` command](../../../tools/dotnet-restore.md), which restores the dependencies and tools of a project, now produces security vulnerability warnings for transitive packages by default when the project targets .NET 10.
+The [`dotnet restore` command](../../../tools/dotnet-restore.md), which restores the dependencies of a project, now produces security vulnerability warnings for transitive packages by default when the project targets .NET 10 or a later version.
 
 ## Previous behavior
 
-In .NET 8, [NuGetAudit](../8.0/dotnet-restore-audit.md) was introduced to emit warnings for packages with known security vulnerabilities. By default, only direct package references were audited, however, it was possible to change the `NuGetAuditMode` property to include all packages.
+[NuGetAudit](../8.0/dotnet-restore-audit.md) was introduced in .NET 8 to emit warnings for packages with known security vulnerabilities.
+By default, only direct package references were audited, however, it was possible to change the `NuGetAuditMode` property to include all packages.
+
+In .NET 9 preview 6, NuGetAuditMode's default was changed to `all` for all projects, and this change was reverted back to `direct` in the .NET 9.0.101 SDK.
 
 ## New behavior
 
-Starting in .NET 10, if the project targets .NET 10 or higher, then `NuGetAuditMode` defaults to `all` if it hasn't been explicitly set. This setting means that *transitive packages* (dependencies of packages your project directly references) with known vulnerabilities now cause warnings to be reported.
+When projects target .NET 10 or higher, then `NuGetAuditMode` defaults to `all` if it hasn't been explicitly set.
+This setting means that *transitive packages* (dependencies of packages your project directly references) with known vulnerabilities now cause warnings to be reported.
 If your project treats warnings as errors, this behavior can cause restore failures.
 
 If your project targets .NET 9 or lower, the default for `NuGetAuditMode` remains `direct`.

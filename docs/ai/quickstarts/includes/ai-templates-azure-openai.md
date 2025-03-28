@@ -78,7 +78,7 @@ To use the .NET AI templates with Azure OpenAI, you'll need to create and authen
 
 1. [Create an Azure OpenAI Service resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal) if you don't already have one available.
 
-1. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`). To learn how to deploy a model, see [Create a resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) in the Azure OpenAI docs.
+1. Deploy the `gpt-4o-mini` and `text-embedding-3-small` models to your Azure OpenAI Service resource. When creating those deployments, give them the same names as the models (`gpt-4o-mini` and `text-embedding-3-small`) so that they match the default template values. To learn how to deploy a model, see [Create a resource](/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) in the Azure OpenAI docs.
 
 ### Authenticate to the Azure OpenAI service
 

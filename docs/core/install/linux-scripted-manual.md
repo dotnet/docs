@@ -84,7 +84,7 @@ You can download the script with `wget`:
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 ```
 
-Or either with `curl`:
+Or, with `curl`:
 
 ```bash
 curl -L https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh

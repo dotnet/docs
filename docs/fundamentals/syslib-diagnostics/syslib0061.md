@@ -7,8 +7,7 @@ f1_keywords:
 ---
 # SYSLIB0061: System.Linq.Queryable.MaxBy and System.Linq.Queryable.MinBy taking an IComparer\<TSource\> are obsolete.
 
-Starting in .NET 10, the two extension methods <xref:System.Linq.Queryable.MaxBy`3?displayProperty=fullName> and
-<xref:System.Linq.Queryable.MinBy`3?displayProperty=fullName> that accept an `IComparer<TSource>` are obsolete. Please use the newly added overloads that accept an `IComparer<TKey>` instead.
+Starting in .NET 10 Preview 4, the two extension methods The `Queryable` <xref:System.Linq.Queryable.MinBy%60%602(System.Linq.Queryable.IQueryable{%60%600},System.Linq.Expressions.Expression{System.Func{%60%600,%60%601}},System.Collections.Generic.IComparer{%60%600})> and <xref:System.Linq.Queryable.MinBy%60%602(System.Linq.Queryable.IQueryable{%60%600},System.Linq.Expressions.Expression{System.Func{%60%600,%60%601}},System.Collections.Generic.IComparer{%60%600})> taking an `IComparer<TSource>` are obsolete. Please use the newly added overloads that accept an `IComparer<TKey>` instead.
 
 Calling these old extension methods in code generates warning `SYSLIB0061` at compile time and typically generates a
 <xref:System.IndexOutOfRangeException?displayName=nameWithType> at runtime.
@@ -16,14 +15,13 @@ Calling these old extension methods in code generates warning `SYSLIB0061` at co
 ## Reason for obsoletion
 
 The original `MaxBy` and `MinBy` accepting an `IComparer<T>? comparer` expression parameter were incorrectly implemented using the generic type `TSource` for the
-`IComparer<T>? comparer` type parameter. This is incorrect because the values passed to the <xref:System.Collections.Generic.Compare`1?displayProperty=nameWithType>
-method are selected by the `Expression<Func<TSource, TKey>> keySelector` expression parameter, thus the extracted value is of generic type `TKey`.
+`IComparer<T>? comparer` type parameter. This is incorrect because the values passed to the <xref:System.Collections.Generic.IComparer{%60%601}.Compare(%60%600,%60%600)?displayProperty=nameWithType> implementation method are selected by the `Expression<Func<TSource, TKey>> keySelector` expression parameter, thus the extracted value is of generic type `TKey`.
 
 ### Note
 
 This would previously work only if `TSource` and `TKey` were actually the same constructed type. If the types were distinct then a runtime
 _<xref:System.IndexOutOfRangeException>: Index was outside the bounds of the array._ would be thrown because the needed extension method for
-`IQuerable<TSource> source` could not be found (for example in <xref:System.Linq.Enumerable.MaxBy`3>).
+`IQuerable<TSource> source` could not be found (for example in <xref:System.Linq.Enumerable.MaxBy%60%603>).
 
 ## Workaround
 

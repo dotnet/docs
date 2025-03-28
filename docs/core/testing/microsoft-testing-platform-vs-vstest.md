@@ -98,7 +98,7 @@ The test related arguments are VSTest specific and so need to be transformed to 
 | `--results-directory <RESULTS_DIR>` | `--results-directory <RESULTS_DIR>` |
 | `-s\|--settings <SETTINGS_FILE>` | Depends upon the selected test framework |
 | `-t\|--list-tests` | `--list-tests` |
-| `-- <RunSettings arguments>` | Not supported |
+| `-- <RunSettings arguments>` | `--test-parameter` (provided by [VSTestBridge](microsoft-testing-platform-extensions-vstest-bridge.md)) |
 
 > [!IMPORTANT]
 > Before specifying any `Microsoft.Testing.Platform` arguments, you need to add `--` to separate the `dotnet test` arguments from the new platform arguments. For example, `dotnet test --no-build -- --list-tests`.

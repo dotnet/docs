@@ -49,7 +49,7 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 
 ❌ DO NOT publish for `netstandard2.0` if your project or dependencies multi-target.
 
-> `netstandard2.0` is not a runtime, and multi-targeted projects provide a runtime framework specific library which is required when running on other frameworks.
+> `netstandard2.0` is not a runtime, and multi-targeted projects provide a runtime framework&mdash;specific library, which is required when running on other frameworks.
 
 ## Multi-targeting
 

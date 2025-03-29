@@ -13,6 +13,7 @@ items:
         items:
           - name: Overview
             href: ../core/install/index.yml
+            displayName: install
           - name: Install on Windows
             href: ../core/install/windows.md
           - name: Install on macOS
@@ -21,29 +22,40 @@ items:
             items:
               - name: Overview
                 href: ../core/install/linux.md
+                displayName: linux
               - name: Ubuntu
+                expanded: true
                 items:
-                  - name: Overview
-                    href: ../core/install/linux-ubuntu.md
                   - name: Install
                     href: ../core/install/linux-ubuntu-install.md
+                    displayName: ubuntu
+                  - name: Decision Guide
+                    href: ../core/install/linux-ubuntu.md
+                    displayName: ubuntu
               - name: Alpine
                 href: ../core/install/linux-alpine.md
+                displayName: linux
               - name: CentOS Stream
                 href: ../core/install/linux-rhel.md#supported-distributions
+                displayName: linux
               - name: Debian
                 href: ../core/install/linux-debian.md
+                displayName: linux
               - name: Fedora
                 href: ../core/install/linux-fedora.md
+                displayName: linux
               - name: OpenSUSE
                 href: ../core/install/linux-opensuse.md
+                displayName: linux
               - name: Red Hat Enterprise Linux
                 href: ../core/install/linux-rhel.md
               - name: SLES
                 href: ../core/install/linux-sles.md
+                displayName: linux
               - name: Installation script & binaries
                 href: ../core/install/linux-scripted-manual.md
               - name: Install with Snap
+                expanded: true
                 items:
                   - name: Runtime
                     href: ../core/install/linux-snap-runtime.md

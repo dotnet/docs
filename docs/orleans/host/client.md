@@ -7,11 +7,11 @@ zone_pivot_groups: orleans-version
 
 # Orleans clients
 
-A client allows non-grain code to interact with an Orleans cluster. Clients allow application code to communicate with grains and streams hosted in a cluster. There are two ways to obtain a client, depending on where the client code is hosted: in the same process as a silo, or in a separate process. This article will discuss both options, starting with the recommended option: co-hosting the client code in the same process as the grain code.
+A client allows non-grain code to interact with an Orleans cluster. Clients allow application code to communicate with grains and streams hosted in a cluster. There are two ways to obtain a client, depending on where you host the client code: in the same process as a silo, or in a separate process. This article discusses both options, starting with the recommended option: co-hosting the client code in the same process as the grain code.
 
 ## Co-hosted clients
 
-If the client code is hosted in the same process as the grain code, then the client can be directly obtained from the hosting application's dependency injection container. In this case, the client communicates directly with the silo it is attached to and can take advantage of the extra knowledge that the silo has about the cluster.
+If you host the client code in the same process as the grain code, then you can directly obtain the client from the hosting application's dependency injection container. In this case, the client communicates directly with the silo it is attached to and can take advantage of the extra knowledge that the silo has about the cluster.
 
 This provides several benefits, including reducing network and CPU overhead as well as decreasing latency and increasing throughput and reliability. The client utilizes the silo's knowledge of the cluster topology and state and does not need to use a separate gateway. This avoids a network hop and serialization/deserialization round trip. This therefore also increases reliability, since the number of required nodes in between the client and the grain is minimized. If the grain is a [stateless worker grain](../grains/stateless-worker-grains.md) or otherwise happens to be activated on the silo where the client is hosted, then no serialization or network communication needs to be performed at all and the client can reap the additional performance and reliability gains. Co-hosting client and grain code also simplifies deployment and application topology by eliminating the need for two distinct application binaries to be deployed and monitored.
 

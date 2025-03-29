@@ -6,7 +6,7 @@ ms.date: 07/03/2024
 
 # Orleans lifecycle overview
 
-Some Orleans behaviors are sufficiently complex that they need ordered startup and shutdown. Some components with such behaviors include grains, silos, and clients. To address this, a general component lifecycle pattern has been introduced. This pattern consists of an observable lifecycle, which is responsible for signaling on stages of a component's startup and shutdown, and lifecycle observers which are responsible for performing startup or shutdown operations at specific stages.
+Some Orleans behaviors are sufficiently complex that they need ordered startup and shutdown. Some components with such behaviors include grains, silos, and clients. To address this, Orleans introduced a general component lifecycle pattern. This pattern consists of an observable lifecycle, which is responsible for signaling on stages of a component's startup and shutdown, and lifecycle observers, which are responsible for performing startup or shutdown operations at specific stages.
 
 For more information, see [Grain lifecycle](../grains/grain-lifecycle.md) and [Silo lifecycle](../host/silo-lifecycle.md).
 

@@ -20,7 +20,7 @@ Orleans started as a research project within Microsoft Research. It later grew i
 
 ### Does Microsoft support Orleans?
 
-We have released the source code of Orleans under an MIT license on [GitHub](https://github.com/dotnet/orleans). Microsoft continues to invest in Orleans and accepts community contributions to the codebase.
+Microsoft released the source code of Orleans under an MIT license on [GitHub](https://github.com/dotnet/orleans). Microsoft continues to invest in Orleans and accepts community contributions to the codebase.
 
 ## Positioning
 

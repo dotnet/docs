@@ -16,7 +16,7 @@ Absolutely. The source code is licensed under the [MIT license](https://github.c
 
 ### Is Orleans production ready? I heard it's a research project.
 
-Orleans initially started as a research project within Microsoft Research. It later grew into a product and has been used in production within Microsoft since 2011, and by other companies, after we publicly released it in 2015. Orleans is production-ready and powers many highly available systems and cloud services.
+Orleans started as a research project within Microsoft Research. It later grew into a production-ready product and has been used in production within Microsoft (since 2011) and by other companies (since it was publicly released in 2015). Orleans powers many highly available systems and cloud services.
 
 ### Does Microsoft support Orleans?
 

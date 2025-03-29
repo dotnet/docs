@@ -9,7 +9,7 @@ ms.date: 07/03/2024
 ## [Orleans Lifecycle](orleans-lifecycle.md)
 
 Some Orleans behaviors are sufficiently complex that they need ordered startup and shutdown.
-To address this, we introduced a general component lifecycle pattern.
+To address this, Orleans introduced a general component lifecycle pattern.
 
 ## [Messaging delivery guarantees](messaging-delivery-guarantees.md)
 

@@ -1,6 +1,6 @@
 | Name | Package | Docs | Source |
 | ---- | ------- | ---- | ------ |
-| AI Foundry | NuGet [1.0.0-beta.5](https://www.nuget.org/packages/Azure.AI.Projects/1.0.0-beta.5) | [docs](/dotnet/api/overview/azure/AI.Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.5](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.0.0-beta.5/sdk/ai/Azure.AI.Projects/) |
+| AI Foundry | NuGet [1.0.0-beta.6](https://www.nuget.org/packages/Azure.AI.Projects/1.0.0-beta.6) | [docs](/dotnet/api/overview/azure/AI.Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.6](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Projects_1.0.0-beta.6/sdk/ai/Azure.AI.Projects/) |
 | AI Model Inference | NuGet [1.0.0-beta.4](https://www.nuget.org/packages/Azure.AI.Inference/1.0.0-beta.4) | [docs](/dotnet/api/overview/azure/AI.Inference-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.4](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Inference_1.0.0-beta.4/sdk/ai/Azure.AI.Inference/) |
 | Anomaly Detector | NuGet [3.0.0-preview.7](https://www.nuget.org/packages/Azure.AI.AnomalyDetector/3.0.0-preview.7) | [docs](/dotnet/api/overview/azure/AI.AnomalyDetector-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [3.0.0-preview.7](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.AnomalyDetector_3.0.0-preview.7/sdk/anomalydetector/Azure.AI.AnomalyDetector/) |
 | App Configuration | NuGet [1.6.0](https://www.nuget.org/packages/Azure.Data.AppConfiguration/1.6.0) | [docs](/dotnet/api/overview/azure/Data.AppConfiguration-readme) | GitHub [1.6.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Data.AppConfiguration_1.6.0/sdk/appconfiguration/Azure.Data.AppConfiguration/) |
@@ -374,7 +374,7 @@
 | Unknown Display Name | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.0)<br>NuGet [1.0.1-beta.4](https://www.nuget.org/packages/Azure.AI.ContentSafety.Extension.Embedded.Text/1.0.1-beta.4) |  |  |
 | Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.0) |  |  |
 | Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.10.0) |  |  |
-| Unknown Display Name | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.10.0) |  |  |
+| Unknown Display Name | NuGet [0.10.1](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.10.1) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta3) |  |  |
 | Unknown Display Name | NuGet [1.0.0-beta.0](https://www.nuget.org/packages/Microsoft.Azure.Cosmos.FaultInjection/1.0.0-beta.0) |  |  |
 | Unknown Display Name | NuGet [1.0.44](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.44) |  |  |

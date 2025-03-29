@@ -10,6 +10,9 @@ FeedMammals(a);
 SuperNova sn = new SuperNova();
 TestForMammals(g);
 TestForMammals(sn);
+// Output:
+// I am an animal.
+// SuperNova is not a Mammal
 
 static void FeedMammals(Animal a)
 {
@@ -38,9 +41,6 @@ static void TestForMammals(object o)
         Console.WriteLine($"{o.GetType().Name} is not a Mammal");
     }
 }
-// Output:
-// I am an animal.
-// SuperNova is not a Mammal
 
 class Animal
 {

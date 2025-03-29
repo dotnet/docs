@@ -10,7 +10,7 @@ Orleans 7.0 introduces several beneficial changes, including improvements to hos
 
 ## Migration
 
-Due to changes in how Orleans identifies grains and streams, you cannot easily migrate existing applications using reminders, streams, or grain persistence to Orleans 7.0. We plan to incrementally offer a migration path for these applications.
+Due to changes in how Orleans identifies grains and streams, you cannot (currently) easily migrate existing applications using reminders, streams, or grain persistence to Orleans 7.0.
 
 Applications running previous versions of Orleans cannot be smoothly upgraded via a rolling upgrade to Orleans 7.0. Therefore, a different upgrade strategy must be used, such as deploying a new cluster and decommissioning the previous cluster. Orleans 7.0 changes the wire protocol in an incompatible fashion, meaning that clusters cannot contain a mix of Orleans 7.0 hosts and hosts running previous versions of Orleans.
 

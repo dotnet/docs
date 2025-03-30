@@ -1,28 +1,28 @@
 ---
 title: Observers
 description: Learn about observers in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: conceptual
+ms.service: orleans
 ---
 
 # Observers
 
-There are situations in which a simple message/response pattern is not enough, and the client needs to receive asynchronous notifications.
-For example, a user might want to be notified when a new instant message has been published by a friend.
+Sometimes, a simple message/response pattern isn't enough, and the client needs to receive asynchronous notifications. For example, a user might want notification when a friend publishes a new instant message.
 
-Client observers is a mechanism that allows notifying clients asynchronously. Observer interfaces must inherit from <xref:Orleans.IGrainObserver>, and all methods must return either `void`, <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. A return type of `void` is not recommended as it may encourage the use of `async void` on the implementation, which is a dangerous pattern since it can result in application crashes if an exception is thrown from the method. Instead, for best-effort notification scenarios, consider applying the <xref:Orleans.Concurrency.OneWayAttribute> to the observer's interface method. This will cause the receiver to not send a response for the method invocation and will cause the method to return immediately at the call site, without waiting for a response from the observer. A grain calls a method on an observer by invoking it like any grain interface method. The Orleans runtime will ensure the delivery of requests and responses. A common use case for observers is to enlist a client to receive notifications when an event occurs in the Orleans application. A grain that publishes such notifications should provide an API to add or remove observers. In addition, it is usually convenient to expose a method that allows an existing subscription to be cancelled.
+Client observers are a mechanism allowing asynchronous notification of clients. Observer interfaces must inherit from <xref:Orleans.IGrainObserver>, and all methods must return either `void`, <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. We don't recommend a return type of `void` because it might encourage using `async void` in the implementation. This is a dangerous pattern, as it can cause application crashes if an exception is thrown from the method. Instead, for best-effort notification scenarios, consider applying the <xref:Orleans.Concurrency.OneWayAttribute> to the observer's interface method. This causes the receiver not to send a response for the method invocation and makes the method return immediately at the call site, without waiting for a response from the observer. A grain calls a method on an observer by invoking it like any grain interface method. The Orleans runtime ensures the delivery of requests and responses. A common use case for observers is enlisting a client to receive notifications when an event occurs in the Orleans application. A grain publishing such notifications should provide an API to add or remove observers. Additionally, it's usually convenient to expose a method allowing cancellation of an existing subscription.
 
-Grain developers may use a utility class such as <xref:Orleans.Utilities.ObserverManager%601> to simplify development of observed grain types. Unlike grains, which are automatically reactivated as-needed after failure, clients are not fault-tolerant: a client which fails may never recover.
-For this reason, the `ObserverManager<T>` utility removes subscriptions after a configured duration. Clients which are active should resubscribe on a timer to keep their subscription active.
+You can use a utility class like <xref:Orleans.Utilities.ObserverManager%601> to simplify the development of observed grain types. Unlike grains, which Orleans automatically reactivates as needed after failure, clients aren't fault-tolerant: a client that fails might never recover. For this reason, the `ObserverManager<T>` utility removes subscriptions after a configured duration. Active clients should resubscribe on a timer to keep their subscriptions active.
 
-To subscribe to a notification, the client must first create a local object that implements the observer interface. It then calls a method on the observer factory, <xref:Orleans.IGrainFactory.CreateObjectReference%2A>`, to turn the object into a grain reference, which can then be passed to the subscription method on the notifying grain.
+To subscribe to a notification, the client must first create a local object implementing the observer interface. It then calls a method on the observer factory, <xref:Orleans.IGrainFactory.CreateObjectReference%2A>`, to turn the object into a grain reference. You can then pass this reference to the subscription method on the notifying grain.
 
-This model can also be used by other grains to receive asynchronous notifications. Grains can also implement <xref:Orleans.IGrainObserver> interfaces. Unlike in the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (for example, `this.AsReference<IMyGrainObserverInterface>()`). There is no need for `CreateObjectReference()` because grains are already addressable.
+Other grains can also use this model to receive asynchronous notifications. Grains can implement <xref:Orleans.IGrainObserver> interfaces. Unlike the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (for example,, `this.AsReference<IMyGrainObserverInterface>()`). There's no need for `CreateObjectReference()` because grains are already addressable.
 
 ## Code example
 
-Let's assume that we have a grain that periodically sends messages to clients. For simplicity, the message in our example will be a  string. We first define the interface on the client that will receive the message.
+Let's assume you have a grain that periodically sends messages to clients. For simplicity, the message in our example is a string. First, define the interface on the client that receives the message.
 
-The interface will look like this
+The interface looks like this:
 
 ```csharp
 public interface IChat : IGrainObserver
@@ -31,10 +31,10 @@ public interface IChat : IGrainObserver
 }
 ```
 
-The only special thing is that the interface should inherit from `IGrainObserver`.
-Now any client that wants to observe those messages should implement a class that implements `IChat`.
+The only special requirement is that the interface must inherit from `IGrainObserver`.
+Now, any client wanting to observe these messages should implement a class that implements `IChat`.
 
-The simplest case would be something like this:
+The simplest case looks something like this:
 
 ```csharp
 public class Chat : IChat
@@ -47,7 +47,7 @@ public class Chat : IChat
 }
 ```
 
-On the server, we should next have a Grain that sends these chat messages to clients. The Grain should also have a mechanism for clients to subscribe and unsubscribe themselves for notifications. For subscriptions, the grain can use an instance of the utility class <xref:Orleans.Utilities.ObserverManager%601>.
+On the server, you should next have a grain that sends these chat messages to clients. The grain should also provide a mechanism for clients to subscribe and unsubscribe from notifications. For subscriptions, the grain can use an instance of the utility class <xref:Orleans.Utilities.ObserverManager%601>.
 
 > [!NOTE]
 > <xref:Orleans.Utilities.ObserverManager%601> is part of Orleans since version 7.0. For older versions, the following [implementation](https://github.com/dotnet/orleans/blob/e997335d2d689bb39e67f6bcf6fd70862a22c02f/test/Grains/TestGrains/ObserverManager.cs#L12) can be copied.
@@ -82,7 +82,7 @@ class HelloGrain : Grain, IHello
 }
 ```
 
-To send a message to clients, the `Notify` method of the `ObserverManager<IChat>` instance can be used. The method takes an `Action<T>` method or lambda expression (where `T` is of type `IChat` here). You can call any method on the interface to send it to clients. In our case we only have one method, `ReceiveMessage`, and our sending code on the server would look like this:
+To send a message to clients, use the `Notify` method of the `ObserverManager<IChat>` instance. The method takes an `Action<T>` method or lambda expression (where `T` is of type `IChat` here). You can call any method on the interface to send it to clients. In our case, we only have one method, `ReceiveMessage`, and our sending code on the server looks like this:
 
 ```csharp
 public Task SendUpdateMessage(string message)
@@ -93,9 +93,9 @@ public Task SendUpdateMessage(string message)
 }
 ```
 
-Now our server has a method to send messages to observer clients, two methods for subscribing/unsubscribing, and the client has implemented a class able to observe the grain messages. The last step is to create an observer reference on the client using our previously implemented `Chat` class, and let it receive the messages after subscribing to it.
+Now, our server has a method to send messages to observer clients and two methods for subscribing/unsubscribing. The client has implemented a class capable of observing the grain messages. The final step is to create an observer reference on the client using our previously implemented `Chat` class and let it receive messages after subscribing.
 
-The code would look like this:
+The code looks like this:
 
 ```csharp
 //First create the grain reference
@@ -109,16 +109,16 @@ var obj = _grainFactory.CreateObjectReference<IChat>(c);
 await friend.Subscribe(obj);
 ```
 
-Now whenever our grain on the server calls the `SendUpdateMessage` method, all subscribed clients will receive the message. In our client code, the `Chat` instance in variable `c` will receive the message and output it to the console.
+Now, whenever our grain on the server calls the `SendUpdateMessage` method, all subscribed clients receive the message. In our client code, the `Chat` instance in the variable `c` receives the message and outputs it to the console.
 
 > [!IMPORTANT]
-> Objects passed to `CreateObjectReference` are held via a <xref:System.WeakReference%601> and will therefore be garbage collected if no other references exist.
+> Objects passed to `CreateObjectReference` are held via a <xref:System.WeakReference%601> and are therefore garbage collected if no other references exist.
 
-Users should maintain a reference for each observer which they do not want to be collected.
+You should maintain a reference for each observer you don't want collected.
 
 > [!NOTE]
-> Observers are inherently unreliable since a client which hosts an observer may fail and observers created after recovery have different (randomized) identities. <xref:Orleans.Utilities.ObserverManager%601> relies on periodic resubscription by observers, as discussed above, so that inactive observers can be removed.
+> Observers are inherently unreliable because a client hosting an observer might fail, and observers created after recovery have different (randomized) identities. <xref:Orleans.Utilities.ObserverManager%601> relies on periodic resubscription by observers, as discussed above, so it can remove inactive observers.
 
 ## Execution model
 
-Implementations of <xref:Orleans.IGrainObserver> are registered via a call to <xref:Orleans.IGrainFactory.CreateObjectReference%2A?displayProperty=nameWithType> and each call to that method creates a new reference that points to that implementation. Orleans will execute requests sent to each one of these references one-by-one, to completion. Observers are non-reentrant and therefore concurrent requests to an observer will not be interleaved by Orleans. If there are multiple observers which are receiving requests concurrently, those requests can execute in parallel. Execution of observer methods are not affected by attributes such as <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> or <xref:Orleans.Concurrency.ReentrantAttribute>: the execution model cannot be customized by a developer.
+Implementations of <xref:Orleans.IGrainObserver> are registered via a call to <xref:Orleans.IGrainFactory.CreateObjectReference%2A?displayProperty=nameWithType>. Each call to that method creates a new reference pointing to that implementation. Orleans executes requests sent to each of these references one by one, to completion. Observers are non-reentrant; therefore, Orleans doesn't interleave concurrent requests to an observer. If multiple observers receive requests concurrently, those requests can execute in parallel. Attributes such as <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> or <xref:Orleans.Concurrency.ReentrantAttribute> don't affect the execution of observer methods; you cannot customize the execution model.

@@ -1,23 +1,25 @@
 ---
 title: List of options classes
 description: Explore a listing of options classes in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: reference
+ms.service: orleans
 ---
 
 # List of options classes
 
-All options classes used to configure Orleans are found in the `Orleans.Configuration` namespace. Many of them have helper methods in the `Orleans.Hosting` namespace.
+All options classes used to configure Orleans are found in the `Orleans.Configuration` namespace. Many also have helper methods in the `Orleans.Hosting` namespace.
 
 ## Common core options for `IClientBuilder` and `ISiloHostBuilder`
 
-| Option type                                                | Used for                                                  |
-|------------------------------------------------------------|-----------------------------------------------------------|
-| <xref:Orleans.Configuration.ClusterOptions>                | Setting the `ClusterId` and the `ServiceId`               |
-| <xref:Orleans.Configuration.NetworkingOptions>             | Setting timeout values for sockets and opened connections |
-| <xref:Orleans.Configuration.SerializationProviderOptions>` | Setting the serialization providers                       |
-| <xref:Orleans.Configuration.TypeManagementOptions>         | Setting the refresh period of the Type Map (see Heterogeneous silos and Versioning) |
+| Option type | Used for |
+|--|--|
+| <xref:Orleans.Configuration.ClusterOptions> | Setting the `ClusterId` and the `ServiceId` |
+| <xref:Orleans.Configuration.NetworkingOptions> | Setting timeout values for sockets and opened connections |
+| <xref:Orleans.Configuration.SerializationProviderOptions> | Setting the serialization providers |
+| <xref:Orleans.Configuration.TypeManagementOptions> | Setting the refresh period of the Type Map (see Heterogeneous silos and Versioning) |
 
-## `IClientBuilder` specific options
+## `IClientBuilder`-specific options
 
 | Option type                                    | Used for                              |
 |------------------------------------------------|---------------------------------------|
@@ -26,7 +28,7 @@ All options classes used to configure Orleans are found in the `Orleans.Configur
 | <xref:Orleans.Configuration.GatewayOptions> | Setting the refresh period of the list of available gateways |
 | <xref:Orleans.Configuration.StaticGatewayListProviderOptions> | Setting URIs a client will use to connect to cluster |
 
-## `ISiloHostBuilder` specific options
+## `ISiloHostBuilder`-specific options
 
 | Option type                                           | Used for                        |
 |-------------------------------------------------------|---------------------------------|

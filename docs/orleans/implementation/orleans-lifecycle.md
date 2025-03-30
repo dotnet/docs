@@ -1,18 +1,20 @@
 ---
 title: Orleans lifecycle
 description: Learn the various lifecycles of .NET Orleans apps.
-ms.date: 07/03/2024
+ms.date: 03/30/2025
+ms.topic: conceptual
+ms.service: orleans
 ---
 
 # Orleans lifecycle overview
 
-Some Orleans behaviors are sufficiently complex that they need ordered startup and shutdown. Some components with such behaviors include grains, silos, and clients. To address this, Orleans introduced a general component lifecycle pattern. This pattern consists of an observable lifecycle, which is responsible for signaling on stages of a component's startup and shutdown, and lifecycle observers, which are responsible for performing startup or shutdown operations at specific stages.
+Some Orleans behaviors are sufficiently complex that they require ordered startup and shutdown. Components with such behaviors include grains, silos, and clients. To address this, Orleans introduced a general component lifecycle pattern. This pattern consists of an observable lifecycle, responsible for signaling stages of a component's startup and shutdown, and lifecycle observers, responsible for performing startup or shutdown operations at specific stages.
 
 For more information, see [Grain lifecycle](../grains/grain-lifecycle.md) and [Silo lifecycle](../host/silo-lifecycle.md).
 
 ## Observable lifecycle
 
-Components that need ordered startup and shutdown can use an observable lifecycle which allows other components to observe the lifecycle and receive a notification when a stage is reached during startup or shutdown.
+Components needing ordered startup and shutdown can use an observable lifecycle. This allows other components to observe the lifecycle and receive notifications when a specific stage is reached during startup or shutdown.
 
 ```csharp
 public interface ILifecycleObservable
@@ -24,11 +26,11 @@ public interface ILifecycleObservable
 }
 ```
 
-The subscribe call registers an observer for notification when a stage is reached while starting or stopping. The observer's name is for reporting purposes. The stage indicated at which point in the startup/shutdown sequence the observer will be notified. Each stage of the lifecycle is observable. All observers will be notified when the stage is reached when starting and stopping. Stages are started in ascending order and stopped in descending order. The observer can unsubscribe by disposing of the returned disposable.
+The subscribe call registers an observer for notification when a stage is reached during startup or shutdown. The observer's name is used for reporting purposes. The stage indicates at which point in the startup/shutdown sequence the observer receives notification. Each lifecycle stage is observable. All observers are notified when the stage is reached during startup and shutdown. Stages start in ascending order and stop in descending order. The observer can unsubscribe by disposing of the returned disposable object.
 
 ## Lifecycle observer
 
-Components that need to take part in another component's lifecycle need to provide hooks for their startup and shutdown behaviors and subscribe to a specific stage of an observable lifecycle.
+Components needing to participate in another component's lifecycle must provide hooks for their startup and shutdown behaviors and subscribe to a specific stage of an observable lifecycle.
 
 ```csharp
 public interface ILifecycleObserver
@@ -38,15 +40,15 @@ public interface ILifecycleObserver
 }
 ```
 
-Both <xref:Orleans.ILifecycleObserver.OnStart%2A?displayProperty=nameWithType> and <xref:Orleans.ILifecycleObserver.OnStop%2A?displayProperty=nameWithType> are called when the stage subscribed to is reached during startup/shutdown.
+Both <xref:Orleans.ILifecycleObserver.OnStart%2A?displayProperty=nameWithType> and <xref:Orleans.ILifecycleObserver.OnStop%2A?displayProperty=nameWithType> are called when the subscribed stage is reached during startup or shutdown.
 
 ## Utilities
 
-For convenience, helper functions have been created for common lifecycle usage patterns.
+For convenience, helper functions exist for common lifecycle usage patterns.
 
 ### Extensions
 
-Extension functions exist for subscribing to observable lifecycle which doesn't require that the subscribing component implement ILifecycleObserver. Instead, these allow components to pass in lambdas or members function to be called at the subscribed stages.
+Extension functions are available for subscribing to an observable lifecycle that don't require the subscribing component to implement `ILifecycleObserver`. Instead, these allow components to pass in lambdas or member functions to be called at the subscribed stages.
 
 ```csharp
 IDisposable Subscribe(
@@ -63,7 +65,7 @@ IDisposable Subscribe(
     Func<CancellationToken, Task> onStart);
 ```
 
-Similar extension functions allow generic type arguments to be used in place of the observer name.
+Similar extension functions allow using generic type arguments instead of the observer name.
 
 ```csharp
 IDisposable Subscribe<TObserver>(
@@ -80,7 +82,7 @@ IDisposable Subscribe<TObserver>(
 
 ### Lifecycle participation
 
-Some extensibility points need a way of recognizing what components are interested in participating in a lifecycle. A lifecycle participant marker interface has been introduced for this purpose. More about how this is used will be covered when exploring silo and grain lifecycles.
+Some extensibility points need a way to recognize which components are interested in participating in a lifecycle. A lifecycle participant marker interface serves this purpose. More details on its usage are covered when exploring silo and grain lifecycles.
 
 ```csharp
 public interface ILifecycleParticipant<TLifecycleObservable>
@@ -92,7 +94,7 @@ public interface ILifecycleParticipant<TLifecycleObservable>
 
 ## Example
 
-From our lifecycle tests, below is an example of a component that takes part in an observable lifecycle at multiple stages of the lifecycle.
+From the Orleans lifecycle tests, below is an example of a component that participates in an observable lifecycle at multiple stages.
 
 ```csharp
 enum TestStages

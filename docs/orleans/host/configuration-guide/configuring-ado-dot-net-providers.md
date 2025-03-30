@@ -1,14 +1,16 @@
 ---
 title: Configure ADO.NET providers
 description: Learn how to configure ADO.NET providers in .NET Orleans.
-ms.date: 09/10/2024
+ms.date: 05/23/2025
+ms.topic: how-to
+ms.service: orleans
 ---
 
 # Configure ADO.NET providers
 
-Any reliable deployment of Orleans requires using persistent storage to keep system state, specifically Orleans cluster membership table and reminders. One of the available options is using a SQL database via the ADO.NET providers.
+Any reliable deployment of Orleans requires persistent storage to keep system state, specifically the Orleans cluster membership table and reminders. One available option is using a SQL database via ADO.NET providers.
 
-To use ADO.NET for persistence, clustering, or reminders, one needs to configure the ADO.NET providers as part of the silo configuration, and, in the case of clustering, also as part of the client configurations.
+To use ADO.NET for persistence, clustering, or reminders, you need to configure the ADO.NET providers as part of the silo configuration and, for clustering, also as part of the client configurations.
 
 The silo configuration code should look like this:
 
@@ -62,11 +64,11 @@ siloHostBuilder.UseAdoNetClustering(options =>
 
 [!INCLUDE [managed-identities](../../../includes/managed-identities.md)]
 
-Where the `ConnectionString` is set to a valid AdoNet Server connection string.
+Set the `ConnectionString` to a valid ADO.NET Server connection string.
 
-To use ADO.NET providers for persistence, reminders, or clustering, there are scripts for creating database artifacts, to which all servers that will be hosting Orleans silos need to have access. The scripts for popular providers can be found in [ADO.NET Configuration](adonet-configuration.md). Lack of access to the target database is a typical mistake we see developers making.
+To use ADO.NET providers for persistence, reminders, or clustering, you need scripts to create database artifacts. All servers hosting Orleans silos must have access to the database defined by these scripts. You can find scripts for popular providers in [ADO.NET Database configuration](adonet-configuration.md). Lack of access to the target database is a common mistake developers make.
 
-You also need to install `*.AdoNet` NuGet for features you configure. We split ADO.NET NuGets into per feature NuGets:
+You also need to install the `*.AdoNet` NuGet package for the features you configure. We split ADO.NET NuGets into per-feature packages:
 
 - `Microsoft.Orleans.Clustering.AdoNet`: for clustering.
 - `Microsoft.Orleans.Persistence.AdoNet`: for persistence.

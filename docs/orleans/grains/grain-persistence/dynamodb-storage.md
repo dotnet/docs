@@ -1,12 +1,14 @@
 ---
 title: Amazon DynamoDB grain persistence
-description: Learn about Azure DynamoDB grain persistence in .NET Orleans.
-ms.date: 07/03/2024
+description: Learn about Amazon DynamoDB grain persistence in .NET Orleans.
+ms.date: 05/23/2025
+ms.topic: how-to
+ms.service: orleans
 ---
 
 # Amazon DynamoDB grain persistence
 
-In this article, you'll learn how to install and configure the Amazon DynamoDB grain persistence.
+In this article, you learn how to install and configure Amazon DynamoDB grain persistence.
 
 ## Installation
 
@@ -14,7 +16,7 @@ Install the [`Microsoft.Orleans.Persistence.DynamoDB`](https://www.nuget.org/pac
 
 ## Configuration
 
-Configure the DynamoDB grain persistence provider using the <xref:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage%2A?displayProperty=nameWithType> extension methods.
+Configure the DynamoDB grain persistence provider using the <xref:Orleans.Hosting.DynamoDBSiloBuilderExtensions.AddDynamoDBGrainStorage%2A?displayProperty=nameWithType> extension method.
 
 ```csharp
 siloBuilder.AddDynamoDBGrainStorage(
@@ -28,13 +30,13 @@ siloBuilder.AddDynamoDBGrainStorage(
 );
 ```
 
-If your authentication method requires a token or non-default profile name, you can define those properties using the following command:
+If your authentication method requires a token or a non-default profile name, you can define those properties. First, view your credentials file using the following command:
 
 ```bash
 cat ~/.aws/credentials
 ```
 
-As an example, the following command will configure the DynamoDB grain persistence provider to use the `default` profile from the `~/.aws/credentials` file:
+As an example, the following configuration shows how to configure the DynamoDB grain persistence provider to use the `default` profile from the `~/.aws/credentials` file:
 
 ```bash
 [YOUR_PROFILE_NAME]
@@ -45,7 +47,7 @@ aws_session_expiration = ***
 aws_session_token = ***
 ```
 
-This allows for both types of authentication credentials:
+This configuration allows for both types of authentication credentials:
 
 - access key & secret key
 - access key & secret key & token

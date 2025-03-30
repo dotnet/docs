@@ -12,10 +12,10 @@ In this quickstart, you use Orleans and ASP.NET Core 8.0 Minimal APIs to build a
 
 At the end of the quickstart, you have an app that creates and handles redirects using short, friendly URLs. You learn how to:
 
-* Add Orleans to an ASP.NET Core app
-* Work with grains and silos
-* Configure state management
-* Integrate Orleans with API endpoints
+- Add Orleans to an ASP.NET Core app
+- Work with grains and silos
+- Configure state management
+- Integrate Orleans with API endpoints
 
 ## Prerequisites
 
@@ -57,8 +57,8 @@ At the end of the quickstart, you have an app that creates and handles redirects
    The `dotnet new` command creates a new Minimal API project in the *OrleansURLShortener* folder. The `code` command opens the *OrleansURLShortener* folder in the current instance of Visual Studio Code.
 
    Visual Studio Code displays a dialog box that asks **Do you trust the authors of the files in this folder**.  Select:
-    * The checkbox **trust the authors of all files in the parent folder**
-    * **Yes, I trust the authors** (because dotnet generated the files).
+    - The checkbox **trust the authors of all files in the parent folder**
+    - **Yes, I trust the authors** (because dotnet generated the files).
 
 ---
 

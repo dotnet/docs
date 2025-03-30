@@ -1,17 +1,18 @@
 ---
 title: Notifications
 description: Learn the concepts of notifications in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: conceptual
+ms.service: orleans
 ---
 
 # Notifications
 
-It is often convenient to have the ability to react to state changes.
-All callbacks are subject to Orleans' turn-based guarantees; see also the section on Concurrency Guarantees.
+It's often convenient to react to state changes. All callbacks are subject to Orleans' turn-based guarantees; see also the section on [Concurrency Guarantees](immediate-vs-delayed-confirmation.md#concurrency-guarantees).
 
 ## Track confirmed state
 
-To be notified of any changes to the confirmed state, <xref:Orleans.EventSourcing.JournaledGrain%602> subclasses can override this method:
+To be notified of any changes to the confirmed state, `JournaledGrain` subclasses can override this method:
 
 ```csharp
 protected override void OnStateChanged()
@@ -20,13 +21,13 @@ protected override void OnStateChanged()
 }
 ```
 
-`OnStateChanged` is called whenever the confirmed state is updated, i.e. the version number increases. This can happen when
+`OnStateChanged` is called whenever the confirmed state updates, i.e., the version number increases. This can happen when:
 
-1. A newer version of the state was loaded from storage.
-1. An event that was raised by this instance has been successfully written to storage.
-1. A notification message was received from some other instance.
+1.  A newer version of the state was loaded from storage.
+2.  An event raised by this instance has been successfully written to storage.
+3.  A notification message was received from some other instance.
 
-Note that since all grains initially have version zero, until the initial load from storage completes, this means that <xref:Orleans.EventSourcing.JournaledGrain%602.OnStateChanged> is called whenever the initial load completes with a version larger than zero.
+Note that since all grains initially have version zero, `OnStateChanged` is called whenever the initial load from storage completes with a version larger than zero.
 
 ## Track tentative state
 
@@ -39,4 +40,4 @@ protected override void OnTentativeStateChanged()
 }
 ```
 
-<xref:Orleans.EventSourcing.JournaledGrain%602.OnTentativeStateChanged> is called whenever the tentative state changes, i.e. if the combined sequence  (ConfirmedEvents + UnconfirmedEvents) changes. In particular, a callback to `OnTentativeStateChanged()` always happens during  <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%2A>.
+`OnTentativeStateChanged` is called whenever the tentative state changes, i.e., if the combined sequence (`ConfirmedEvents` + `UnconfirmedEvents`) changes. In particular, a callback to `OnTentativeStateChanged()` always happens during <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%2A>.

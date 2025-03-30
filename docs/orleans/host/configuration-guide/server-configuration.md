@@ -1,7 +1,9 @@
 ---
 title: Server configuration
 description: Learn how to configure .NET Orleans server settings.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: how-to
+ms.service: orleans
 zone_pivot_groups: orleans-version
 ---
 
@@ -11,15 +13,15 @@ zone_pivot_groups: orleans-version
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-A silo is configured programmatically with the <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Orleans.Hosting.ISiloBuilder})> extension method and several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md), and can be loaded via files, environment variables, and any valid configuration provider.
+Configure a silo programmatically using the <xref:Microsoft.Extensions.Hosting.GenericHostExtensions.UseOrleans(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Orleans.Hosting.ISiloBuilder})> extension method and several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md) and can be loaded from files, environment variables, or any other valid configuration provider.
 
 There are several key aspects of silo configuration:
 
 - Clustering provider
 - (Optional) Orleans clustering information
-- (Optional) Endpoints to use for silo-to-silo and client-to-silo communications
+- (Optional) Endpoints for silo-to-silo and client-to-silo communications
 
-This is an example of a silo configuration that defines cluster information, uses Azure clustering, and configures the application parts:
+This example shows a silo configuration defining cluster information, using Azure clustering, and configuring application parts:
 
 ```csharp
 using IHost host = Host.CreateDefaultBuilder(args)
@@ -42,11 +44,11 @@ siloBuilder.UseAzureStorageClustering(
     options => options.ConfigureTableServiceClient(connectionString))
 ```
 
-Usually, a service built on Orleans is deployed on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, Orleans can be deployed in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements a set of protocols to discover and maintain membership of Orleans silos in the cluster, including detection of node failures and automatic reconfiguration.
+Usually, you deploy a service built on Orleans on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, you can deploy Orleans in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements protocols to discover and maintain membership of Orleans silos in the cluster, including detecting node failures and automatic reconfiguration.
 
-For reliable management of cluster membership, Orleans uses Azure Table, SQL Server, or Apache ZooKeeper for the synchronization of nodes.
+For reliable cluster membership management, Orleans uses Azure Table, SQL Server, or Apache ZooKeeper for node synchronization.
 
-In this sample, Azure Table as the membership provider is used.
+In this sample, we use Azure Table as the membership provider.
 
 ## Orleans clustering information
 
@@ -60,20 +62,20 @@ siloBuilder.Configure<ClusterOptions>(options =>
 })
 ```
 
-Here you specify two options:
+Here, you specify two options:
 
-- Set the `ClusterId` to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silos that use this ID will be able to talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
-- Set the `ServiceId` to `"SampleApp"`: this is a unique ID for your application that will be used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
+- Set the `ClusterId` to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
+- Set the `ServiceId` to `"SampleApp"`: This is a unique ID for your application used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
 
-By default, Orleans will use a value of `"default"` for both the `ServiceId` and the `ClusterId`. These values don't need to be changed in most cases. `ServiceId` is the more significant of the two, and is used to distinguish different logical services from each other so that they can share backend storage systems without interfering with each other. `ClusterId` is used to determine which hosts will connect to each other and form a cluster.
+By default, Orleans uses `"default"` for both `ServiceId` and `ClusterId`. These values don't need changing in most cases. `ServiceId` is more significant and distinguishes different logical services, allowing them to share backend storage systems without interference. `ClusterId` determines which hosts connect to form a cluster.
 
-Within each cluster, all hosts must use the same `ServiceId`. Multiple clusters can share a `ServiceId`, however. This enables blue/green deployment scenarios where a new deployment (cluster) is started before another is shut down. This is typical for systems hosted in Azure App Service.
+Within each cluster, all hosts must use the same `ServiceId`. However, multiple clusters can share a `ServiceId`. This enables blue/green deployment scenarios where you start a new deployment (cluster) before shutting down another. This is typical for systems hosted in Azure App Service.
 
-The more common case is that `ServiceId` and `ClusterId` remain fixed for the lifetime of the application and a rolling deployment strategy is used. This is typical for systems hosted in Kubernetes and Service Fabric.
+The more common case is that `ServiceId` and `ClusterId` remain fixed for the application's lifetime, and you use a rolling deployment strategy. This is typical for systems hosted in Kubernetes and Service Fabric.
 
 ## Endpoints
 
-By default, Orleans will listen on all interfaces on port `11111` for silo-to-silo communication and on port `30000` for client-to-silo communication. To override this behavior, call <xref:Orleans.Hosting.EndpointOptionsExtensions.ConfigureEndpoints(Orleans.Hosting.ISiloBuilder,System.Int32,System.Int32,System.Net.Sockets.AddressFamily,System.Boolean)> and pass in the port numbers you want to use.
+By default, Orleans listens on all interfaces on port `11111` for silo-to-silo communication and port `30000` for client-to-silo communication. To override this behavior, call <xref:Orleans.Hosting.EndpointOptionsExtensions.ConfigureEndpoints(Orleans.Hosting.ISiloBuilder,System.Int32,System.Int32,System.Net.Sockets.AddressFamily,System.Boolean)> and pass in the port numbers you want to use.
 
 ```csharp
 siloBuilder.ConfigureEndpoints(siloPort: 17_256, gatewayPort: 34_512)
@@ -86,11 +88,10 @@ In the preceding code:
 
 An Orleans silo has two typical types of endpoint configuration:
 
-- Silo-to-silo endpoints are used for communication between silos in the same cluster.
-- Client-to-silo (or gateway) endpoints are used for communication between clients and silos in the same cluster.
+- Silo-to-silo endpoints: Used for communication between silos in the same cluster.
+- Client-to-silo (or gateway) endpoints: Used for communication between clients and silos in the same cluster.
 
-This method should be sufficient in most cases, but you can customize it further if you need to.
-Here is an example of how to use an external IP address with some port-forwarding:
+This method should suffice in most cases, but you can customize it further if needed. Here's an example of using an external IP address with port forwarding:
 
 ```csharp
 siloBuilder.Configure<EndpointOptions>(options =>
@@ -108,7 +109,7 @@ siloBuilder.Configure<EndpointOptions>(options =>
 })
 ```
 
-Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the value published in the membership provider will be `172.16.0.42:11111` and `172.16.0.42:30000`.
+Internally, the silo listens on `0.0.0.0:40000` and `0.0.0.0:50000`, but the value published in the membership provider is `172.16.0.42:11111` and `172.16.0.42:30000`.
 
 :::zone-end
 
@@ -116,16 +117,16 @@ Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-A silo is configured programmatically via <xref:Orleans.Hosting.SiloHostBuilder> and several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md), and can be loaded via files, environment variables, and any valid configuration provider.
+Configure a silo programmatically via <xref:Orleans.Hosting.SiloHostBuilder> and several supplemental option classes. Option classes in Orleans follow the [Options pattern in .NET](../../../core/extensions/options.md) and can be loaded from files, environment variables, or any other valid configuration provider.
 
 There are several key aspects of silo configuration:
 
 - Orleans clustering information
 - Clustering provider
-- Endpoints to use for silo-to-silo and client-to-silo communications
+- Endpoints for silo-to-silo and client-to-silo communications
 - Application parts
 
-This is an example of a silo configuration that defines cluster information, uses Azure clustering, and configures the application parts:
+This example shows a silo configuration defining cluster information, using Azure clustering, and configuring application parts:
 
 ```csharp
 var silo = Host.CreateDefaultBuilder(args)
@@ -147,7 +148,7 @@ var silo = Host.CreateDefaultBuilder(args)
     .Build();
 ```
 
-Let's breakdown the steps used in this sample:
+Let's break down the steps used in this sample:
 
 ## Clustering provider
 
@@ -156,11 +157,11 @@ siloBuilder.UseAzureStorageClustering(
     options => options.ConnectionString = connectionString)
 ```
 
-Usually, a service built on Orleans is deployed on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, Orleans can be deployed in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements a set of protocols to discover and maintain membership of Orleans silos in the cluster, including detection of node failures and automatic reconfiguration.
+Usually, you deploy a service built on Orleans on a cluster of nodes, either on dedicated hardware or in the cloud. For development and basic testing, you can deploy Orleans in a single-node configuration. When deployed to a cluster of nodes, Orleans internally implements protocols to discover and maintain membership of Orleans silos in the cluster, including detecting node failures and automatic reconfiguration.
 
-For reliable management of cluster membership, Orleans uses Azure Table, SQL Server, or Apache ZooKeeper for the synchronization of nodes.
+For reliable cluster membership management, Orleans uses Azure Table, SQL Server, or Apache ZooKeeper for node synchronization.
 
-In this sample, we are using Azure Table as the membership provider.
+In this sample, we use Azure Table as the membership provider.
 
 ## Orleans clustering information
 
@@ -172,16 +173,16 @@ In this sample, we are using Azure Table as the membership provider.
 })
 ```
 
-Here we do two things:
+Here, we do two things:
 
-- Set the `ClusterId` to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silos that use this ID will be able to talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
-- Set the `ServiceId` to `"AspNetSampleApp"`: this is a unique ID for your application that will be used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
+- Set the `ClusterId` to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can talk directly to each other. You can choose to use a different `ClusterId` for different deployments, though.
+- Set the `ServiceId` to `"AspNetSampleApp"`: This is a unique ID for your application used by some providers, such as persistence providers. **This ID should remain stable and not change across deployments**.
 
-By default, Orleans will use a value of `"default"` for both the `ServiceId` and the `ClusterId`. These values don't need to be changed in most cases. `ServiceId` is the more significant of the two, and is used to distinguish different logical services from each other so that they can share backend storage systems without interfering with each other. `ClusterId` is used to determine which hosts will connect to each other and form a cluster.
+By default, Orleans uses `"default"` for both `ServiceId` and `ClusterId`. These values don't need changing in most cases. `ServiceId` is more significant and distinguishes different logical services, allowing them to share backend storage systems without interference. `ClusterId` determines which hosts connect to form a cluster.
 
-Within each cluster, all hosts must use the same `ServiceId`. Multiple clusters can share a `ServiceId`, however. This enables blue/green deployment scenarios where a new deployment (cluster) is started before another is shut down. This is typical for systems hosted in Azure App Service.
+Within each cluster, all hosts must use the same `ServiceId`. However, multiple clusters can share a `ServiceId`. This enables blue/green deployment scenarios where you start a new deployment (cluster) before shutting down another. This is typical for systems hosted in Azure App Service.
 
-The more common case is that `ServiceId` and `ClusterId` remain fixed for the lifetime of the application and a rolling deployment strategy is used. This is typical for systems hosted in Kubernetes and Service Fabric.
+The more common case is that `ServiceId` and `ClusterId` remain fixed for the application's lifetime, and you use a rolling deployment strategy. This is typical for systems hosted in Kubernetes and Service Fabric.
 
 ## Endpoints
 
@@ -191,14 +192,12 @@ siloBuilder.ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)
 
 An Orleans silo has two typical types of endpoint configuration:
 
-- Silo-to-silo endpoints, used for communication between silos in the same cluster
-- Client-to-silo endpoints (or gateway), used for communication between clients and silos in the same cluster
+- Silo-to-silo endpoints: Used for communication between silos in the same cluster.
+- Client-to-silo endpoints (or gateway): Used for communication between clients and silos in the same cluster.
 
-In the sample, we are using the helper method `.ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)` which sets the port used for silo-to-silo communication to `11111` and the port for the gateway to `30000`.
-This method will detect which interface to listen to.
+In the sample, we use the helper method `.ConfigureEndpoints(siloPort: 11111, gatewayPort: 30000)`, which sets the port for silo-to-silo communication to `11111` and the gateway port to `30000`. This method detects which interface to listen on.
 
-This method should be sufficient in most cases, but you can customize it further if you need to.
-Here is an example of how to use an external IP address with some port-forwarding:
+This method should suffice in most cases, but you can customize it further if needed. Here's an example of using an external IP address with port forwarding:
 
 ```csharp
 siloBuilder.Configure<EndpointOptions>(options =>
@@ -216,7 +215,7 @@ siloBuilder.Configure<EndpointOptions>(options =>
 })
 ```
 
-Internally, the silo will listen on `0.0.0.0:40000` and `0.0.0.0:50000`, but the value published in the membership provider will be `172.16.0.42:11111` and `172.16.0.42:30000`.
+Internally, the silo listens on `0.0.0.0:40000` and `0.0.0.0:50000`, but the value published in the membership provider is `172.16.0.42:11111` and `172.16.0.42:30000`.
 
 ## Application parts
 
@@ -227,21 +226,21 @@ siloBuilder.ConfigureApplicationParts(
         .WithReferences())
 ```
 
-Although this step is not technically required (if not configured, Orleans will scan all assemblies in the current folder), developers are encouraged to configure this. This step will help Orleans to load user assemblies and types. These assemblies are referred to as Application Parts. All Grains, Grain Interfaces, and Serializers are discovered using Application Parts.
+Although this step isn't technically required (if not configured, Orleans scans all assemblies in the current folder), we encourage you to configure it. This step helps Orleans load user assemblies and types. These assemblies are referred to as Application Parts. Orleans discovers all Grains, Grain Interfaces, and Serializers using Application Parts.
 
-Application Parts are configured using <xref:Orleans.ApplicationParts.IApplicationPartManager>, which can be accessed using the `ConfigureApplicationParts` extension method on <xref:Orleans.IClientBuilder> and <xref:Orleans.Hosting.ISiloHostBuilder>. The `ConfigureApplicationParts` method accepts a delegate, `Action<IApplicationPartManager>`.
+Configure Application Parts using <xref:Orleans.ApplicationParts.IApplicationPartManager>, accessible via the `ConfigureApplicationParts` extension method on <xref:Orleans.IClientBuilder> and <xref:Orleans.Hosting.ISiloHostBuilder>. The `ConfigureApplicationParts` method accepts a delegate, `Action<IApplicationPartManager>`.
 
 The following extension methods on <xref:Orleans.ApplicationParts.IApplicationPartManager> support common uses:
 
-- <xref:Orleans.ApplicationPartManagerExtensions.AddApplicationPart%2A?displayProperty=nameWithType> a single assembly can be added using this extension method.
-- <xref:Orleans.ApplicationPartManagerExtensions.AddFromAppDomain%2A?displayProperty=nameWithType> adds all assemblies currently loaded in the `AppDomain`.
-- <xref:Orleans.ApplicationPartManagerExtensions.AddFromApplicationBaseDirectory%2A?displayProperty=nameWithType> loads and adds all assemblies in the current base path (see <xref:System.AppDomain.BaseDirectory?displayProperty=nameWithType>).
+- <xref:Orleans.ApplicationPartManagerExtensions.AddApplicationPart%2A?displayProperty=nameWithType>: Add a single assembly using this extension method.
+- <xref:Orleans.ApplicationPartManagerExtensions.AddFromAppDomain%2A?displayProperty=nameWithType>: Adds all assemblies currently loaded in the `AppDomain`.
+- <xref:Orleans.ApplicationPartManagerExtensions.AddFromApplicationBaseDirectory%2A?displayProperty=nameWithType>: Loads and adds all assemblies in the current base path (see <xref:System.AppDomain.BaseDirectory?displayProperty=nameWithType>).
 
-Assemblies added by the above methods can be supplemented using the following extension methods on their return type, <xref:Orleans.ApplicationParts.IApplicationPartManagerWithAssemblies>:
+Supplement assemblies added by the above methods using the following extension methods on their return type, <xref:Orleans.ApplicationParts.IApplicationPartManagerWithAssemblies>:
 
-- <xref:Orleans.ApplicationPartManagerExtensions.WithReferences%2A?displayProperty=nameWithType> adds all referenced assemblies from the added parts. This immediately loads any transitively referenced assemblies. Assembly loading errors are ignored.
-- <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType> generates support code for the added parts and adds it to the part manager. Note that this requires the `Microsoft.Orleans.OrleansCodeGenerator` package to be installed and is commonly referred to as runtime code generation.
+- <xref:Orleans.ApplicationPartManagerExtensions.WithReferences%2A?displayProperty=nameWithType>: Adds all referenced assemblies from the added parts. This immediately loads any transitively referenced assemblies. Assembly loading errors are ignored.
+- <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A?displayProperty=nameWithType>: Generates support code for the added parts and adds it to the part manager. Note that this requires installing the `Microsoft.Orleans.OrleansCodeGenerator` package and is commonly referred to as runtime code generation.
 
-Type discovery requires that the provided Application Parts include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach for ensuring that these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, code can be generated during configuration time via the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A> method described above. More info regarding code generation could be found in [the corresponding section](../../grains/code-generation.md).
+Type discovery requires the provided Application Parts to include specific attributes. Adding the build-time code generation package (`Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build`) to each project containing Grains, Grain Interfaces, or Serializers is the recommended approach to ensure these attributes are present. Build-time code generation only supports C#. For F#, Visual Basic, and other .NET languages, you can generate code during configuration time via the <xref:Orleans.Hosting.ApplicationPartManagerCodeGenExtensions.WithCodeGeneration%2A> method described above. Find more info regarding code generation in [the corresponding section](../../grains/code-generation.md).
 
 :::zone-end

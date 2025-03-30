@@ -1,16 +1,17 @@
 ---
 title: Deploy Orleans to Azure Container Apps
 description: Learn how to deploy an updated Orleans shopping cart app to Azure Container Apps.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
 ms.topic: tutorial
+ms.service: orleans
 ms.custom: devx-track-bicep
 ---
 
 # Deploy Orleans to Azure Container Apps
 
-In this tutorial, you'll learn how to deploy an example Orleans shopping cart application to Azure Container Apps. This tutorial expands the functionality of the [sample Orleans shopping cart app](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service), introduced in [Deploy Orleans to Azure App Service](deploy-to-azure-app-service.md). The sample app adds Azure Active Directory (AAD) business-to-consumer (B2C) authentication and deploys to Azure Container Apps.
+In this tutorial, learn how to deploy an example Orleans shopping cart application to Azure Container Apps. This tutorial expands the functionality of the [sample Orleans shopping cart app](https://github.com/Azure-Samples/Orleans-Cluster-on-Azure-App-Service), introduced in [Deploy Orleans to Azure App Service](deploy-to-azure-app-service.md). The sample app adds Azure Active Directory (AAD) business-to-consumer (B2C) authentication and deploys to Azure Container Apps.
 
-You'll learn how to deploy using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, you'll learn how to configure the Container App's HTTP ingress.
+Learn how to deploy using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, learn how to configure the Container App's HTTP ingress.
 
 In this tutorial, you learn how to:
 
@@ -31,30 +32,30 @@ In this tutorial, you learn how to:
 
 ## Run the app locally
 
-To run the app locally, fork the [Azure Samples: Orleans shopping cart on Azure Container Apps](https://github.com/Azure-Samples/orleans-blazor-server-shopping-cart-on-container-apps) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If you're using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project and select **Set As Startup Project**, then run the app. Otherwise, you can run the app using the following .NET CLI command:
+To run the app locally, fork the [Azure Samples: Orleans shopping cart on Azure Container Apps](https://github.com/Azure-Samples/orleans-blazor-server-shopping-cart-on-container-apps) repository and clone it to your local machine. Once cloned, open the solution in an IDE of your choice. If using Visual Studio, right-click the **Orleans.ShoppingCart.Silo** project, select **Set As Startup Project**, then run the app. Otherwise, run the app using the following .NET CLI command:
 
 ```dotnetcli
 dotnet run --project Silo\Orleans.ShoppingCart.Silo.csproj
 ```
 
-For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the app running, you're presented with a landing page that discusses the app's functionality. In the upper-right corner, you'll see a sign-in button. You can sign up for an account, or sign in if you already have an account. Once signed in, you can navigate around and you're free to test out its capabilities. All of the app's functionality when running locally relies on in-memory persistence, local clustering, and it uses the [Bogus NuGet](https://www.nuget.org/packages/Bogus) package to generate fake products. Stop the app either by selecting the **Stop Debugging** option in Visual Studio or by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the .NET CLI.
+For more information, see [dotnet run](../../core/tools/dotnet-run.md). With the app running, a landing page discusses the app's functionality. In the upper-right corner, a sign-in button is visible. Sign up for an account or sign in if one already exists. Once signed in, navigate around and test its capabilities. All app functionality when running locally relies on in-memory persistence and local clustering. It also uses the [Bogus NuGet](https://www.nuget.org/packages/Bogus) package to generate fake products. Stop the app either by selecting the **Stop Debugging** option in Visual Studio or by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the .NET CLI.
 
 ### AAD B2C
 
-While teaching the concepts of authentication are beyond the scope of this tutorial, you can learn how to [Create an Azure Active Directory B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant), and then you can [Register a web app](/azure/active-directory-b2c/tutorial-register-applications) to consume it. In the case of this shopping cart example app, the resulting deployed Container Apps' URL will need to be registered in the B2C tenant. For more information, see [ASP.NET Core Blazor authentication and authorization](/aspnet/core/blazor/security).
+While teaching authentication concepts is beyond the scope of this tutorial, learn how to [Create an Azure Active Directory B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant), and then [Register a web app](/azure/active-directory-b2c/tutorial-register-applications) to consume it. For this shopping cart example app, register the resulting deployed Container Apps' URL in the B2C tenant. For more information, see [ASP.NET Core Blazor authentication and authorization](/aspnet/core/blazor/security).
 
 > [!IMPORTANT]
-> After your Container App is deployed, you'll need to register the app's URL in the B2C tenant. In most production scenarios, you will only need to register the app's URL once as it shouldn't change.
+> After the Container App is deployed, register the app's URL in the B2C tenant. In most production scenarios, the app's URL only needs registration once, as it shouldn't change.
 
 To help visualize how the app is isolated within the Azure Container Apps environment, see the following diagram:
 
 :::image type="content" source="media/azure-container-apps-http-ingress-diagram.png" lightbox="media/azure-container-apps-http-ingress-diagram.png" alt-text="Azure Container Apps HTTP ingress.":::
 
-In the preceding diagram, all inbound traffic to the app is funneled through a secured HTTP ingress. The Azure Container Apps environment contains an app instance, and the app instance contains an ASP.NET Core host, which exposes the Blazor Server and Orleans app functionality.
+In the preceding diagram, all inbound traffic to the app funnels through a secured HTTP ingress. The Azure Container Apps environment contains an app instance, and the app instance contains an ASP.NET Core host, exposing the Blazor Server and Orleans app functionality.
 
 ## Deploy to Azure Container Apps
 
-To deploy the app to Azure Container Apps, the repository makes use of GitHub Actions. Before this deployment can take place you'll need a few Azure resources and you'll need to configure the GitHub repository correctly.
+To deploy the app to Azure Container Apps, the repository uses GitHub Actions. Before this deployment can occur, a few Azure resources are needed, and the GitHub repository must be configured correctly.
 
 [!INCLUDE [create-azure-resources](includes/deployment/create-azure-resources.md)]
 
@@ -64,7 +65,7 @@ To deploy the app to Azure Container Apps, the repository makes use of GitHub Ac
 
 ### Prepare for Azure deployment
 
-The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Silos` project we define a `Target` element that runs after the `Publish` step. This will zip the publish directory into a _silo.zip_ file:
+Package the app for deployment. In the `Orleans.ShoppingCart.Silos` project, a `Target` element is defined that runs after the `Publish` step. This target zips the publish directory into a _silo.zip_ file:
 
 ```xml
 <Target Name="ZipPublishOutput" AfterTargets="Publish">
@@ -73,7 +74,7 @@ The app will need to be packaged for deployment. In the `Orleans.ShoppingCart.Si
 </Target>
 ```
 
-There are many ways to deploy a .NET app to Azure Container Apps. In this tutorial, you use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs. Consider the _./github/workflows/deploy.yml_ file in the root of the GitHub repository:
+There are many ways to deploy a .NET app to Azure Container Apps. In this tutorial, use GitHub Actions, Azure Bicep, and the .NET and Azure CLIs. Consider the _./github/workflows/deploy.yml_ file in the root of the GitHub repository:
 
 ```yml
 name: Deploy to Azure Container Apps
@@ -164,19 +165,19 @@ jobs:
       run: az logout
 ```
 
-The preceding GitHub workflow will:
+The preceding GitHub workflow does the following:
 
-- Publish the shopping cart app as a zip file, using the [dotnet publish](../../core/tools/dotnet-publish.md) command.
-- Login to Azure using the credentials from the [Create a service principal](#create-a-service-principal) step.
-- Evaluate the _acr.bicep_ file and start a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
-- Get the Azure Container Registry (ACR) login server from the deployment group.
-- Login to ACR using the repositories `AZURE_CREDENTIALS` secret.
-- Build and publish the silo image to the ACR.
-- Evaluate the _main.bicep_ file and start a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
-- Deploy the silo
-- Logout of Azure.
+- Publishes the shopping cart app as a zip file using the [dotnet publish](../../core/tools/dotnet-publish.md) command.
+- Logs in to Azure using credentials from the [Create a service principal](#create-a-service-principal) step.
+- Evaluates the _acr.bicep_ file and starts a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
+- Gets the Azure Container Registry (ACR) login server from the deployment group.
+- Logs in to ACR using the repository's `AZURE_CREDENTIALS` secret.
+- Builds and publishes the silo image to the ACR.
+- Evaluates the _main.bicep_ file and starts a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
+- Deploys the silo.
+- Logs out of Azure.
 
-The workflow is triggered by a push to the _main_ branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
+The workflow triggers on a push to the `main` branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
 
 > [!TIP]
 > If you encounter issues when running the workflow, you might need to verify that the service principal has all the required provider namespaces registered. The following provider namespaces are required:
@@ -189,7 +190,7 @@ The workflow is triggered by a push to the _main_ branch. For more information, 
 >
 > For more information, see [Resolve errors for resource provider registration](/azure/azure-resource-manager/troubleshooting/error-register-resource-provider?tabs=azure-cli).
 
-Azure imposes naming restrictions and conventions for resources. You need to update the _deploy.yml_ file values for the following:
+Azure imposes naming restrictions and conventions for resources. Update the values in the _deploy.yml_ file for the following environment variables:
 
 - `UNIQUE_APP_NAME`
 - `SILO_IMAGE_NAME`
@@ -202,12 +203,12 @@ For more information, see [Naming rules and restrictions for Azure resources](/a
 
 ## Explore the Bicep templates
 
-When the `az deployment group create` command is run, it will evaluate a given _.bicep_ file reference. This file contains declarative information that details the Azure resources you want to deploy. One way to think of this step is that it _provisions_ all of the resources for deployment.
+When the `az deployment group create` command runs, it evaluates a given _.bicep_ file reference. This file contains declarative information detailing the Azure resources to deploy. Think of this step as _provisioning_ all resources for deployment.
 
 > [!IMPORTANT]
 > If you're using Visual Studio Code, the Bicep authoring experience is improved when using the [Bicep Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-Bicep).
 
-The first Bicep file that is evaluated is the _acr.bicep_ file. This file contains the Azure Container Registry (ACR) login server resource details:
+The first Bicep file evaluated is the _acr.bicep_ file. This file contains the Azure Container Registry (ACR) login server resource details:
 
 ```bicep
 param location string = resourceGroup().location
@@ -227,7 +228,7 @@ output acrLoginServer string = acr.properties.loginServer
 output acrName string = acr.name
 ```
 
-This bicep file outputs the ACR login server and corresponding name. The next Bicep file encountered contains more than just a single `resource`. Consider the _main.bicep_ file comprised primarily of delegating `module` definitions:
+This Bicep file outputs the ACR login server and corresponding name. The next Bicep file encountered contains more than just a single `resource`. Consider the _main.bicep_ file, which consists primarily of delegating `module` definitions:
 
 ```bicep
 param appName string
@@ -292,16 +293,16 @@ module siloModule 'container-app.bicep' = {
 output acaUrl string = siloModule.outputs.acaUrl
 ```
 
-The preceding Bicep file:
+The preceding Bicep file does the following:
 
-- References an `existing` ACR resource, for more information, see [Azure Bicep: Existing resources](/azure/azure-resource-manager/bicep/existing-resource).
-- Defines a `module env` that delegates out to the _environment.bicep_ definition file.
-- Defines a `module storageModule` that delegates out to the _storage.bicep_ definition file.
-- Declares several shared `envVars` that are used by the silo module.
-- Defines a `module siloModule` that delegates out to the _container-app.bicep_ definition file.
-- Outputs the ACA URL (this could potentially be used to update an existing AAD B2C app registration's redirect URI).
+- References an `existing` ACR resource. For more information, see [Azure Bicep: Existing resources](/azure/azure-resource-manager/bicep/existing-resource).
+- Defines a `module env` that delegates to the _environment.bicep_ definition file.
+- Defines a `module storageModule` that delegates to the _storage.bicep_ definition file.
+- Declares several shared `envVars` used by the silo module.
+- Defines a `module siloModule` that delegates to the _container-app.bicep_ definition file.
+- Outputs the ACA URL (potentially used to update an existing AAD B2C app registration's redirect URI).
 
-The _main.bicep_ delegates out to several other Bicep files. The first is the _environment.bicep_ file:
+The _main.bicep_ delegates to several other Bicep files. The first is the _environment.bicep_ file:
 
 ```bicep
 param operationalInsightsName string
@@ -351,7 +352,7 @@ output appInsightsInstrumentationKey string = appInsights.properties.Instrumenta
 output appInsightsConnectionString string = appInsights.properties.ConnectionString
 ```
 
-This bicep file defines the Azure Log Analytics and Application Insights resources. The `appInsights` resource is a `web` type, and the `logs` resource is a `PerGB2018` type. Both the `appInsights` resource and the `logs` resource are provisioned in the resource group's location. The `appInsights` resource is linked to the `logs` resource via the `WorkspaceResourceId` property. There are three outputs defined in this bicep, used later by the Container Apps `module`. Next, let's look at the _storage.bicep_ file:
+This Bicep file defines the Azure Log Analytics and Application Insights resources. The `appInsights` resource is a `web` type, and the `logs` resource is a `PerGB2018` type. Both `appInsights` and `logs` resources are provisioned in the resource group's location. The `appInsights` resource links to the `logs` resource via the `WorkspaceResourceId` property. This Bicep file defines three outputs used later by the Container Apps `module`. Next, consider the _storage.bicep_ file:
 
 ```bicep
 param name string
@@ -378,7 +379,7 @@ The preceding Bicep file defines the following:
 
 - Two parameters for the resource group name and the app name.
 - The `resource storage` definition for the storage account.
-- A single `output` that constructs the connection string for the storage account.
+- A single `output` constructing the connection string for the storage account.
 
 The last Bicep file is the _container-app.bicep_ file:
 
@@ -438,15 +439,15 @@ resource containerApp 'Microsoft.App/containerApps@2022-03-01' = {
 output acaUrl string = containerApp.properties.configuration.ingress.fqdn
 ```
 
-The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All of these Bicep files are visualized as follows:
+The aforementioned Visual Studio Code extension for Bicep includes a visualizer. All these Bicep files are visualized as follows:
 
 :::image type="content" source="media/shopping-cart-container-app-Bicep-visualizer.png" alt-text="Orleans: Shopping cart sample app Bicep provisioning visualizer rendering." lightbox="media/shopping-cart-container-app-Bicep-visualizer.png":::
 
 ## Summary
 
-As you update the source code and `push` changes to the `main` branch of the repository, the _deploy.yml_ workflow will run. It provisions the Azure resources defined in the Bicep files and deploys the application. Revisions are automatically registered in your Azure Container Registry.
+As source code is updated and changes are `push`ed to the `main` branch of the repository, the _deploy.yml_ workflow runs. It provisions the Azure resources defined in the Bicep files and deploys the application. Revisions are automatically registered in the Azure Container Registry.
 
-In addition to the visualizer from the Bicep extension, the Azure portal resource group page would look similar to the following example after provisioning and deploying the application:
+In addition to the visualizer from the Bicep extension, the Azure portal resource group page looks similar to the following example after provisioning and deploying the application:
 
 :::image type="content" source="media/shopping-cart-aca-resources.png" alt-text="Azure Portal: Orleans shopping cart sample app resources for Azure Container Apps." lightbox="media/shopping-cart-aca-resources.png":::
 

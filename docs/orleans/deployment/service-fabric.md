@@ -1,40 +1,43 @@
 ---
 title: Host with Service Fabric
 description: Learn how to host an Orleans app with Service Fabric.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: how-to
+ms.service: orleans
+ms.custom: devops
 ---
 
 # Host with Service Fabric
 
-Orleans can be hosted on [Azure Service Fabric](/azure/service-fabric) using the [Microsoft.ServiceFabric.Services](https://www.nuget.org/packages/Microsoft.ServiceFabric.Services) and [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet packages. Silos should be hosted as unpartitioned, stateless services since Orleans manages the distribution of grains itself. Other hosting options, such as partitioned and stateful, are more complex and yield no benefits without additional customization on the part of the developer. It's recommended to host Orleans unpartitioned and stateless.
+Host Orleans on [Azure Service Fabric](/azure/service-fabric) using the [Microsoft.ServiceFabric.Services](https://www.nuget.org/packages/Microsoft.ServiceFabric.Services) and [Microsoft.Orleans.Server](https://www.nuget.org/packages/Microsoft.Orleans.Server) NuGet packages. Host silos as unpartitioned, stateless services because Orleans manages grain distribution itself. Other hosting options, such as partitioned and stateful, are more complex and yield no benefits without additional customization. Hosting Orleans as unpartitioned and stateless is recommended.
 
-## Service Fabric stateless service as a Silo
+## Service Fabric stateless service as a silo
 
-Whether you're creating a new Service Fabric Application or adding Orleans to an existing one, you'll need both the `Microsoft.ServiceFabric.Services` and `Microsoft.Orleans.Server` package references in your project. The stateless service project needs an implementation on the <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener> and a subclass of the <xref:Microsoft.ServiceFabric.Services.Runtime.StatelessService>.
+Whether creating a new Service Fabric Application or adding Orleans to an existing one, both the `Microsoft.ServiceFabric.Services` and `Microsoft.Orleans.Server` package references are needed in the project. The stateless service project requires an implementation of <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener> and a subclass of <xref:Microsoft.ServiceFabric.Services.Runtime.StatelessService>.
 
 The Silo lifecycle follows the typical communication listener lifecycle:
 
-- It's initialized with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync%2A?displayProperty=nameWithType>.
-- It's gracefully terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync%2A?displayProperty=nameWithType>.
-- Or it's abruptly terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort%2A?displayProperty=nameWithType>.
+- Initialized with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync%2A?displayProperty=nameWithType>.
+- Gracefully terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync%2A?displayProperty=nameWithType>.
+- Or abruptly terminated with <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort%2A?displayProperty=nameWithType>.
 
-Since Orleans Silos are capable of living within the confines of the <xref:Microsoft.Extensions.Hosting.IHost>, the implementation of the `ICommunicationListener` is a wrapper around the `IHost`. The `IHost` is initialized in the `OpenAsync` method and gracefully terminated in the `CloseAsync` method:
+Since Orleans Silos can live within the confines of the <xref:Microsoft.Extensions.Hosting.IHost>, the implementation of `ICommunicationListener` is a wrapper around the `IHost`. The `IHost` initializes in the `OpenAsync` method and gracefully terminates in the `CloseAsync` method:
 
-| `ICommunicationListener` | `IHost` interactions |
-|---------|---------|
-| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync%2A> | The `IHost` instance is created and a call to <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> is made. |
-| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync%2A> | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A> on the host instance is awaited. |
-| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort%2A> | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A> is forcefully evaluated, with `GetAwaiter().GetResult()`. |
+| `ICommunicationListener`                                                                                             | `IHost` interactions                                                              |
+| -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.OpenAsync%2A>                      | The `IHost` instance is created and a call to <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> is made. |
+| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.CloseAsync%2A>                     | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A> on the host instance is awaited. |
+| <xref:Microsoft.ServiceFabric.Services.Communication.Runtime.ICommunicationListener.Abort%2A>                          | A call to <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A> is forcefully evaluated with `GetAwaiter().GetResult()`. |
 
 ## Cluster support
 
-Official clustering support is available from various packages including:
+Official clustering support is available from various packages, including:
 
-* [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage)
-* [Microsoft.Orleans.Clustering.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet)
-* [Microsoft.Orleans.Clustering.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB)
+- [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage)
+- [Microsoft.Orleans.Clustering.AdoNet](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet)
+- [Microsoft.Orleans.Clustering.DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB)
 
-There are also several third-party packages available for other services such as CosmosDB, Kubernetes, Redis, and Aerospike. For more information, see [Cluster management in Orleans](../implementation/cluster-management.md).
+Several third-party packages are also available for other services such as Cosmos DB, Kubernetes, Redis, and Aerospike. For more information, see [Cluster management in Orleans](../implementation/cluster-management.md).
 
 ## Example project
 
@@ -42,19 +45,19 @@ In the stateless service project, implement the `ICommunicationListener` interfa
 
 :::code source="snippets/service-fabric/stateless/HostedServiceCommunicationListener.cs":::
 
-The `HostedServiceCommunicationListener` class accepts a `Func<Task<IHost>> createHost` constructor parameter. This is later used to create the `IHost` instance in the `OpenAsync` method.
+The `HostedServiceCommunicationListener` class accepts a `Func<Task<IHost>> createHost` constructor parameter. This function is later used to create the `IHost` instance in the `OpenAsync` method.
 
-The next part of the stateless service project is to implement the `StatelessService` class. The following example shows the subclass of the `StatelessService` class:
+The next part of the stateless service project is implementing the `StatelessService` class. The following example shows the subclass of `StatelessService`:
 
 :::code source="snippets/service-fabric/stateless/OrleansHostedStatelessService.cs":::
 
-In the preceding example, the `OrleansHostedStatelessService` class is responsible for yielding an `ICommunicationListener` instance. The `CreateServiceInstanceListeners` method is called by the Service Fabric runtime when the service is initialized.
+In the preceding example, the `OrleansHostedStatelessService` class is responsible for yielding an `ICommunicationListener` instance. The Service Fabric runtime calls the `CreateServiceInstanceListeners` method when the service initializes.
 
-Pulling these two classes together, the following example shows the complete stateless service project _Program.cs_ file:
+Pulling these two classes together, the following example shows the complete _Program.cs_ file for the stateless service project:
 
 :::code source="snippets/service-fabric/stateless/Program.cs":::
 
-In the preceding  code:
+In the preceding code:
 
 - The <xref:Microsoft.ServiceFabric.Services.Runtime.ServiceRuntime.RegisterServiceAsync%2A?displayProperty=nameWithType> method registers the `OrleansHostedStatelessService` class with the Service Fabric runtime.
-- The `CreateHostAsync` delegate is used to create the `IHost` instance.
+- The `CreateHostAsync` delegate creates the `IHost` instance.

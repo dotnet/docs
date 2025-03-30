@@ -1,26 +1,28 @@
 ---
 title: Messaging delivery guarantees
 description: Learn about messaging delivery guarantees in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: conceptual
+ms.service: orleans
 ---
 
 # Messaging delivery guarantees
 
-Orleans messaging delivery guarantees are **at-most-once**, by default. Optionally, if configured to do retries upon timeout, Orleans provides at-least-once deliv­ery instead.
+Orleans messaging delivery guarantees are **at-most-once** by default. Optionally, if you configure retries upon timeout, Orleans provides at-least-once delivery instead.
 
 In more detail:
 
-* Every message in Orleans has an automatic timeout (the exact timeout can be configured). If the reply does not arrive on time, the returned <xref:System.Threading.Tasks.Task> is broken with a timeout exception.
-* Orleans can be configured to do automatic retries upon timeout. By default, it _does not_ do automatic retries.
-* Application code of course can also choose to do retries upon timeout.
+- Every message in Orleans has an automatic timeout (you can configure the exact timeout). If the reply doesn't arrive on time, the returned <xref:System.Threading.Tasks.Task> breaks with a timeout exception.
+- You can configure Orleans to perform automatic retries upon timeout. By default, it _does not_ perform automatic retries.
+- Your application code can also choose to implement retries upon timeout.
 
-If the Orleans system is configured not to do automatic retries (default setting) and the application is not resending – **Orleans provides at-most-once message delivery**. A message will either be delivered once or not at all. **It will never be delivered twice.**
+If the Orleans system is configured not to perform automatic retries (the default setting) and your application doesn't resend messages, **Orleans provides at-most-once message delivery**. A message is either delivered once or not at all. **It's never delivered twice.**
 
-In the system with retries (either by the runtime or by the application), the message may arrive multiple times. Orleans currently does nothing to durably store which messages already arrived and suppress the second delivery. (We believe this would be pretty costly.) So in a system with retries Orleans does NOT guarantee at most once delivery.
+In a system with retries (either by the runtime or by the application), the message might arrive multiple times. Orleans currently doesn't durably store which messages have already arrived or suppress subsequent deliveries. (We believe this would be quite costly.) So, in a system with retries, Orleans does NOT guarantee at-most-once delivery.
 
-**If you keep retrying potentially indefinitely**, **the message will eventually arrive**, thus providing the at-least-once delivery guarantee. Notice that "will eventually arrive" is something that the runtime needs to guarantee. It does not come for free just by itself even if you keep retrying. Orleans provides eventual delivery since grains never go into any permanent failure state and a failed grain will eventually be re-activated on another silo.
+**If you keep retrying potentially indefinitely**, **the message eventually arrives**, thus providing the at-least-once delivery guarantee. Note that "eventually arrives" is something the runtime needs to guarantee. It doesn't happen automatically just because you keep retrying. Orleans provides eventual delivery because grains never enter a permanent failure state, and a failed grain eventually reactivates on another silo.
 
-**So to summarize**: in the system without retries Orleans guarantees at-most-once message delivery. In the system with infinite retries, Orleans guarantees at-least-once (and _does not_ guarantee at-most-once).
+**To summarize**: In a system without retries, Orleans guarantees at-most-once message delivery. In a system with infinite retries, Orleans guarantees at-least-once (and _does not_ guarantee at-most-once).
 
 > [!IMPORTANT]
-> In the [Orleans technical report](https://research.microsoft.com/pubs/210931/Orleans-MSR-TR-2014-41.pdf) we accidentally only mentioned the 2nd option with automatic retries. We forgot to mention that by default with no retries, Orleans provides at-most-once delivery.
+> The [Orleans technical report](https://research.microsoft.com/pubs/210931/Orleans-MSR-TR-2014-41.pdf) accidentally only mentioned the second option with automatic retries. It failed to mention that by default, with no retries, Orleans provides at-most-once delivery.

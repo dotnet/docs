@@ -1,7 +1,9 @@
 ---
 title: Client configuration
 description: Learn about client configurations in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: how-to
+ms.service: orleans
 zone_pivot_groups: orleans-version
 ---
 
@@ -11,7 +13,7 @@ zone_pivot_groups: orleans-version
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-A client for connecting to a cluster of silos and sending requests to grains is configured programmatically via an <xref:Microsoft.Extensions.Hosting.IHostBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
+Configure a client for connecting to a cluster of silos and sending requests to grains programmatically via an <xref:Microsoft.Extensions.Hosting.IHostBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
 :::zone-end
 
@@ -19,20 +21,20 @@ A client for connecting to a cluster of silos and sending requests to grains is 
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-A client for connecting to a cluster of silos and sending requests to grains is configured programmatically via an <xref:Orleans.ClientBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
+Configure a client for connecting to a cluster of silos and sending requests to grains programmatically via an <xref:Orleans.ClientBuilder> and several supplemental option classes. Like silo options, client option classes follow the [Options pattern in .NET](../../../core/extensions/options.md).
 
 :::zone-end
 
 > [!TIP]
 > If you just want to start a local silo and a local client for development purposes, see [Local development configuration](local-development-configuration.md).
 
-Add the [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) NuGet package to the client project.
+Add the [Microsoft.Orleans.Clustering.AzureStorage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage) NuGet package to your client project.
 
 There are several key aspects of client configuration:
 
-* Orleans clustering information
-* Clustering provider
-* Application parts
+- Orleans clustering information
+- Clustering provider
+- Application parts
 
 Example of a client configuration:
 
@@ -81,7 +83,7 @@ var client = new ClientBuilder()
 
 :::zone-end
 
-Let's breakdown the steps used in this sample:
+Let's break down the steps used in this sample:
 
 ## Orleans clustering information
 
@@ -93,10 +95,10 @@ Let's breakdown the steps used in this sample:
     })
 ```
 
-Here we set two things:
+Here, we set two things:
 
-- the <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to `"my-first-cluster"`: this is a unique ID for the Orleans cluster. All clients and silo that uses this ID will be able to directly talk to each other. Some will choose to use a different `ClusterId` for each deployments for example.
-- the <xref:Orleans.Configuration.ClusterOptions.ServiceId?displayProperty=nameWithType> to `"AspNetSampleApp"`: this is a unique ID for your application, that will be used by some provider (for example for persistence providers). This ID should be stable (not change) across deployments.
+- The <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to `"my-first-cluster"`: This is a unique ID for the Orleans cluster. All clients and silos using this ID can directly talk to each other. Some might choose to use a different `ClusterId` for each deployment, for example.
+- The <xref:Orleans.Configuration.ClusterOptions.ServiceId?displayProperty=nameWithType> to `"AspNetSampleApp"`: This is a unique ID for your application, used by some providers (e.g., persistence providers). This ID should remain stable across deployments.
 
 ## Clustering provider
 
@@ -122,7 +124,7 @@ Here we set two things:
 
 :::zone-end
 
-The client will discover all gateway available in the cluster using this provider. Several providers are available, here in this sample we use the Azure Table provider.
+The client discovers all available gateways in the cluster using this provider. Several providers are available; here, we use the Azure Table provider.
 
 For more information, see [Server configuration](server-configuration.md).
 

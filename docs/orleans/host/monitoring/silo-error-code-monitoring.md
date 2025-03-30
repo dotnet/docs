@@ -1,8 +1,9 @@
 ---
 title: Silo error code monitoring
 description: Explore the various silo error code monitoring values in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
 ms.topic: error-reference
+ms.service: orleans
 ---
 
 # Silo error code monitoring

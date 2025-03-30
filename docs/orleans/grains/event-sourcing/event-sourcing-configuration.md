@@ -1,30 +1,32 @@
 ---
 title: Event sourcing configuration
 description: Learn about event sourcing configuration in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: conceptual
+ms.service: orleans
 ---
 
 # Event sourcing configuration
 
-In this article, you'll learn about various event sourcing configuration options for .NET Orleans.
+In this article, you learn about various event sourcing configuration options for .NET Orleans.
 
 ## Configure project references
 
-### Grain Interfaces
+### Grain interfaces
 
-As before, interfaces depend only on the `Microsoft.Orleans.Core` package, because the grain interface is independent of the implementation.
+As before, interfaces depend only on the `Microsoft.Orleans.Core` package because the grain interface is independent of the implementation.
 
 ### Grain implementations
 
-JournaledGrains need to derive from <xref:Orleans.EventSourcing.JournaledGrain%602> or <xref:Orleans.EventSourcing.JournaledGrain%601>, which is defined in the `Microsoft.Orleans.EventSourcing` package.
+Journaled grains need to derive from <xref:Orleans.EventSourcing.JournaledGrain%602> or <xref:Orleans.EventSourcing.JournaledGrain%601>, which is defined in the `Microsoft.Orleans.EventSourcing` package.
 
 ### Log-consistency providers
 
-We currently include three log-consistency providers (for state storage, log storage, and custom storage). All three are contained in the `Microsoft.Orleans.EventSourcing` package as well. Therefore, all Journaled Grains already have access to those. For a description of what these providers do and how they differ, see [Included Log-Consistency Providers](log-consistency-providers.md).
+We currently include three log-consistency providers (for state storage, log storage, and custom storage). All three are contained in the `Microsoft.Orleans.EventSourcing` package as well. Therefore, all journaled grains already have access to them. For a description of what these providers do and how they differ, see [Included log-consistency providers](log-consistency-providers.md).
 
 ## Cluster configuration
 
-Log-consistency providers are configured just like any other Orleans providers. For example, to include all three providers (of course, you probably won't need all three), add this to the `<Globals>` element of the configuration file:
+Configure log-consistency providers just like any other Orleans providers. For example, to include all three providers (though you probably won't need all three), add this to the `<Globals>` element of the configuration file:
 
 ```xml
 <LogConsistencyProviders>
@@ -37,7 +39,7 @@ Log-consistency providers are configured just like any other Orleans providers. 
 </LogConsistencyProviders>
 ```
 
-The same can be achieved programmatically. Moving forward to 2.0.0 stable, ClientConfiguration and ClusterConfiguration no longer exist! It has now been replaced by a <xref:Orleans.ClientBuilder> and a `SiloBuilder` (notice there is no cluster builder).
+You can achieve the same programmatically. Starting with Orleans 2.0.0 stable, `ClientConfiguration` and `ClusterConfiguration` no longer exist. They have been replaced by <xref:Orleans.ClientBuilder> and `SiloBuilder` (note there's no cluster builder).
 
 ```csharp
 builder.AddLogStorageBasedLogConsistencyProvider("LogStorage")
@@ -57,11 +59,11 @@ public class EventSourcedBankAccountGrain :
 }
 ```
 
-So here `"OrleansLocalStorage"` is being used for storing the grain state, where was `"LogStorage"` is the in-memory storage provider for EventSourcing events.
+So here, `"OrleansLocalStorage"` is used for storing the grain state, whereas `"LogStorage"` is the in-memory storage provider for EventSourcing events.
 
 ### `LogConsistencyProvider` attributes
 
-To specify the log-consistency provider, add a `[LogConsistencyProvider(ProviderName=...)]` attribute to the grain class, and give the name of the provider as configured by the cluster configuration, for example:
+To specify the log-consistency provider, add a `[LogConsistencyProvider(ProviderName=...)]` attribute to the grain class and provide the name of the provider as configured in the cluster configuration, for example:
 
 ```csharp
 [LogConsistencyProvider(ProviderName = "CustomStorage")]
@@ -74,7 +76,7 @@ public class ChatGrain :
 
 ### `StorageProvider` attributes
 
-Some log-consistency providers (including `LogStorage` and `StateStorage`) use a standard StorageProvider to communicate with storage. This provider is specified using a separate `StorageProvider` attribute, as follows:
+Some log-consistency providers (including `LogStorage` and `StateStorage`) use a standard `StorageProvider` to communicate with storage. Specify this provider using a separate `StorageProvider` attribute, as follows:
 
 ```csharp
 [LogConsistencyProvider(ProviderName = "LogStorage")]
@@ -88,7 +90,7 @@ public class ChatGrain :
 
 ## Default providers
 
-It is possible to omit the `LogConsistencyProvider` and/or the `StorageProvider` attributes, if a default is specified in the configuration. This is done by using the special name `Default` for the respective provider. For example:
+You can omit the `LogConsistencyProvider` and/or `StorageProvider` attributes if a default is specified in the configuration. Do this by using the special name `Default` for the respective provider. For example:
 
 ```xml
 <LogConsistencyProviders>

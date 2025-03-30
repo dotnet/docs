@@ -1,9 +1,10 @@
 ---
 title: Azure Cosmos DB grain persistence
-description: Use the Azure Cosmos DB grain to persist Azure Cosmos DB for NoSQL data in a .NET Orleans application.
-ms.topic: conceptual
+description: Use the Azure Cosmos DB grain persistence provider to persist Azure Cosmos DB for NoSQL data in a .NET Orleans application.
+ms.topic: how-to
+ms.service: orleans
 ms.devlang: csharp
-ms.date: 07/03/2024
+ms.date: 05/23/2025
 ---
 
 # Azure Cosmos DB for NoSQL grain persistence
@@ -19,7 +20,7 @@ Install the [Microsoft.Orleans.Persistence.Cosmos](https://www.nuget.org/package
 
 ## Configure clustering provider
 
-To configure the clustering provider, use the `HostingExtensions.UseCosmosClustering` extension method. You can customize the name and throughput of the database or container, enable resource creation, or configure the client's credentials in this method.
+To configure the clustering provider, use the `HostingExtensions.UseCosmosClustering` extension method. In this method, you can customize the name and throughput of the database or container, enable resource creation, or configure the client's credentials.
 
 ```csharp
 siloBuilder.UseCosmosClustering(

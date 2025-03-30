@@ -1,18 +1,20 @@
 ---
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: conceptual
+ms.service: orleans
 ---
 
 # Develop a grain
 
-Before you write code to implement a grain class, create a new Class Library project targeting .NET Standard or .NET Core (preferred) or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). Grain interfaces and grain classes can be defined in the same Class Library project, or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package.
+Before writing code to implement a grain class, create a new Class Library project targeting .NET Standard or .NET Core (preferred), or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). You can define grain interfaces and grain classes in the same Class Library project or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package.
 
 For more thorough instructions, see the [Project Setup](../tutorials-and-samples/tutorial-1.md#project-setup) section of [Tutorial One – Orleans Basics](../tutorials-and-samples/tutorial-1.md).
 
 ## Grain interfaces and classes
 
-Grains interact with each other and get called from outside by invoking methods declared as part of the respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.ValueTask%601> (for methods returning values of type `T`).
+Grains interact with each other and are called from outside by invoking methods declared as part of their respective grain interfaces. A grain class implements one or more previously declared grain interfaces. All methods of a grain interface must return a <xref:System.Threading.Tasks.Task> (for `void` methods), a <xref:System.Threading.Tasks.Task%601>, or a <xref:System.Threading.Tasks.ValueTask%601> (for methods returning values of type `T`).
 
 The following is an excerpt from the Orleans Presence Service sample:
 
@@ -62,7 +64,7 @@ public class PlayerGrain : Grain, IPlayerGrain
 
 ## Response timeout for grain methods
 
-The Orleans runtime allows you to enforce a response timeout per grain method. If a grain method doesn't complete within the timeout, the runtime throws the <xref:System.TimeoutException>. To impose a response timeout, add the `ResponseTimeoutAttribute` to the interface's grain method definition. It's very important that the attribute is added to the interface method definition, not to the method implementation in the grain class, as both the client and the silo need to be aware of the timeout.
+The Orleans runtime allows you to enforce a response timeout per grain method. If a grain method doesn't complete within the timeout, the runtime throws a <xref:System.TimeoutException>. To impose a response timeout, add the `ResponseTimeoutAttribute` to the interface's grain method definition. It's crucial to add the attribute to the interface method definition, not the method implementation in the grain class, as both the client and the silo need to be aware of the timeout.
 
 Extending the previous `PlayerGrain` implementation, the following example shows how to impose a response timeout on the `LeaveGame` method:
 
@@ -82,7 +84,7 @@ The preceding code sets a response timeout of five seconds on the `LeaveGame` me
 
 ### Configure response timeout
 
-Much like individual grain method response timeouts, you can configure a default response timeout for all grain methods. Calls to grain methods will timeout if a response isn't received within a specified time period. By default, this period is **30 seconds**. You can configure the default response timeout:
+Similar to individual grain method response timeouts, you can configure a default response timeout for all grain methods. Calls to grain methods time out if a response isn't received within the specified period. By default, this period is **30 seconds**. You can configure the default response timeout:
 
 - By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.ClientMessagingOptions>, on an external client.
 - By configuring <xref:Orleans.Configuration.MessagingOptions.ResponseTimeout> on <xref:Orleans.Configuration.SiloMessagingOptions>, on a server.
@@ -91,8 +93,8 @@ For more information on configuring Orleans, see [Client configuration](../host/
 
 ## Return values from grain methods
 
-A grain method that returns a value of type `T` is defined in a grain interface as returning a `Task<T>`.
-For grain methods not marked with the `async` keyword, when the return value is available, it is usually returned via the following statement:
+Define a grain method that returns a value of type `T` in a grain interface as returning a `Task<T>`.
+For grain methods not marked with the `async` keyword, when the return value is available, you usually return it using the following statement:
 
 ```csharp
 public Task<SomeType> GrainMethod1()
@@ -101,7 +103,7 @@ public Task<SomeType> GrainMethod1()
 }
 ```
 
-A grain method that returns no value, effectively a void method, is defined in a grain interface as returning a `Task`. The returned `Task` indicates asynchronous execution and completion of the method. For grain methods not marked with the `async` keyword, when a "void" method completes its execution, it needs to return the special value of <xref:System.Threading.Tasks.Task.CompletedTask?displayProperty=nameWithType>:
+Define a grain method that returns no value (effectively a void method) in a grain interface as returning a `Task`. The returned `Task` indicates the asynchronous execution and completion of the method. For grain methods not marked with the `async` keyword, when a "void" method completes its execution, it needs to return the special value <xref:System.Threading.Tasks.Task.CompletedTask?displayProperty=nameWithType>:
 
 ```csharp
 public Task GrainMethod2()
@@ -128,7 +130,7 @@ public async Task GrainMethod4()
 }
 ```
 
-If a grain method receives the return value from another asynchronous method call, to a grain or not, and doesn't need to perform error handling of that call, it can simply return the `Task` it receives from that asynchronous call:
+If a grain method receives the return value from another asynchronous method call (to a grain or not) and doesn't need to perform error handling for that call, it can simply return the `Task` it receives from that asynchronous call:
 
 ```csharp
 public Task<SomeType> GrainMethod5()
@@ -153,13 +155,13 @@ public Task GrainMethod6()
 
 ## Grain references
 
-A Grain reference is a proxy object that implements the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. Grain references are used for making calls to the target grain. Each grain reference is to a single grain (a single instance of the grain class), but one can create multiple independent references to the same grain.
+A grain reference is a proxy object implementing the same grain interface as the corresponding grain class. It encapsulates the logical identity (type and unique key) of the target grain. You use grain references to make calls to the target grain. Each grain reference points to a single grain (a single instance of the grain class), but you can create multiple independent references to the same grain.
 
-Since a grain reference represents the logical identity of the target grain, it is independent of the physical location of the grain, and stays valid even after a complete restart of the system. Developers can use grain references like any other .NET object. It can be passed to a method, used as a method return value, etc., and even saved to persistent storage.
+Since a grain reference represents the logical identity of the target grain, it's independent of the grain's physical location and remains valid even after a complete system restart. You can use grain references like any other .NET object. You can pass it to a method, use it as a method return value, etc., and even save it to persistent storage.
 
-A grain reference can be obtained by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within the type.
+You can obtain a grain reference by passing the identity of a grain to the <xref:Orleans.IGrainFactory.GetGrain%60%601(System.Type,System.Guid)?displayProperty=nameWithType> method, where `T` is the grain interface and `key` is the unique key of the grain within its type.
 
-The following are examples of how to obtain a grain reference of the `IPlayerGrain` interface defined above.
+The following examples show how to obtain a grain reference for the `IPlayerGrain` interface defined previously.
 
 From inside a grain class:
 
@@ -177,7 +179,7 @@ For more information about grain references, see the [grain reference article](g
 
 ### Grain method invocation
 
-The Orleans programming model is based on [asynchronous programming](../../csharp/asynchronous-programming/index.md). Using the grain reference from the previous example, here's how to perform a grain method invocation:
+The Orleans programming model is based on [asynchronous programming](../../csharp/asynchronous-programming/index.md). Using the grain reference from the previous example, here's how you perform a grain method invocation:
 
 ```csharp
 // Invoking a grain method asynchronously
@@ -192,7 +194,7 @@ await joinGameTask;
 players.Add(playerId);
 ```
 
-It is possible to join two or more `Tasks`; the join operation creates a new `Task` that is resolved when all of its constituent `Task`s are completed. This is a useful pattern when a grain needs to start multiple computations and wait for all of them to complete before proceeding. For example, a front-end grain that generates a web page made of many parts might make multiple back-end calls, one for each part, and receive a `Task` for each result. The grain would then await the join of all of these `Tasks`; when the join `Task` is resolved, the individual `Task`s have been completed, and all the data required to format the web page has been received.
+You can join two or more `Tasks`. The join operation creates a new `Task` that resolves when all its constituent `Tasks` complete. This pattern is useful when a grain needs to start multiple computations and wait for all of them to complete before proceeding. For example, a front-end grain generating a web page made of many parts might make multiple back-end calls (one for each part) and receive a `Task` for each result. The grain would then await the join of all these `Tasks`. When the joined `Task` resolves, the individual `Tasks` have completed, and all the data required to format the web page has been received.
 
 Example:
 
@@ -217,15 +219,15 @@ await joinedTask;
 
 ### Error propagation
 
-When a grain method throws an exception, Orleans propagates that exception up the calling stack, across hosts as necessary. For this to work as intended, exceptions must be serializable by Orleans and hosts which are handling the exception must have the exception type available. If an exception type isn't available, the exception will be thrown as an instance of <xref:Orleans.Serialization.UnavailableExceptionFallbackException?displayProperty=nameWithType>, preserving the message, type, and stack trace of the original exception.
+When a grain method throws an exception, Orleans propagates that exception up the calling stack, across hosts as necessary. For this to work as intended, exceptions must be serializable by Orleans, and hosts handling the exception must have the exception type available. If an exception type isn't available, Orleans throws the exception as an instance of <xref:Orleans.Serialization.UnavailableExceptionFallbackException?displayProperty=nameWithType>, preserving the message, type, and stack trace of the original exception.
 
-Exceptions thrown from grain methods don't cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. `InconsistentStateException` is thrown by storage operations which discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special-casing of `InconsistentStateException`, this behavior is similar to throwing an exception from any .NET object: exceptions don't cause an object to be destroyed.
+Exceptions thrown from grain methods don't cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. Storage operations throw `InconsistentStateException` when they discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special handling of `InconsistentStateException`, this behavior is similar to throwing an exception from any .NET object: exceptions don't cause an object to be destroyed.
 
 ### Virtual methods
 
-A grain class can optionally override the <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods; these methods are invoked by the Orleans runtime upon activation and deactivation of each grain of the class. This gives the grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
+A grain class can optionally override the <xref:Orleans.Grain.OnActivateAsync%2A> and <xref:Orleans.Grain.OnDeactivateAsync%2A> virtual methods. The Orleans runtime invokes these methods upon activation and deactivation of each grain of the class. This gives your grain code a chance to perform additional initialization and cleanup operations. An exception thrown by `OnActivateAsync` fails the activation process.
 
-While `OnActivateAsync`, if overridden, is always called as part of the grain activation process, `OnDeactivateAsync` is not guaranteed to get called in all situations, for example, in case of a server failure or other abnormal event. Because of that, applications should not rely on `OnDeactivateAsync` for performing critical operations such as the persistence of state changes. They should use it only for best-effort operations.
+While `OnActivateAsync` (if overridden) is always called as part of the grain activation process, `OnDeactivateAsync` isn't guaranteed to be called in all situations (for example, in case of a server failure or other abnormal events). Because of this, your applications shouldn't rely on `OnDeactivateAsync` for performing critical operations, such as persisting state changes. Use it only for best-effort operations.
 
 ## See also
 

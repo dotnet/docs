@@ -1,30 +1,33 @@
 ---
 title: Kubernetes hosting
 description: Learn how to host an Orleans app with Kubernetes.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: how-to
+ms.service: orleans
+ms.custom: devops
 ---
 
 # Kubernetes hosting
 
-Kubernetes is a popular choice for hosting Orleans applications. Orleans will run in Kubernetes without specific configuration, however, it can also take advantage of extra knowledge which the hosting platform can provide.
+Kubernetes is a popular choice for hosting Orleans applications. Orleans runs in Kubernetes without specific configuration; however, it can also take advantage of extra knowledge the hosting platform provides.
 
-The [`Microsoft.Orleans.Hosting.Kubernetes`](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.Kubernetes) package adds integration for hosting an Orleans application in a Kubernetes cluster. The package provides an extension method, <xref:Orleans.Hosting.KubernetesHostingExtensions.UseKubernetesHosting%2A>, which performs the following actions:
+The [`Microsoft.Orleans.Hosting.Kubernetes`](https://www.nuget.org/packages/Microsoft.Orleans.Hosting.Kubernetes) package adds integration for hosting an Orleans application in a Kubernetes cluster. The package provides an extension method, <xref:Orleans.Hosting.KubernetesHostingExtensions.UseKubernetesHosting%2A>, performing the following actions:
 
-- <xref:Orleans.Configuration.SiloOptions.SiloName?displayProperty=nameWithType> is set to the pod name.
-- <xref:Orleans.Configuration.EndpointOptions.AdvertisedIPAddress?displayProperty=nameWithType> is set to the pod IP.
-- <xref:Orleans.Configuration.EndpointOptions.SiloListeningEndpoint?displayProperty=nameWithType> &amp; <xref:Orleans.Configuration.EndpointOptions.GatewayListeningEndpoint?displayProperty=nameWithType> are configured to listen on any address, with the configured <xref:Orleans.Configuration.EndpointOptions.SiloPort> and <xref:Orleans.Configuration.EndpointOptions.GatewayPort>. Defaults port values of `11111` and `30000` are used if no values are set explicitly).
-- <xref:Orleans.Configuration.ClusterOptions.ServiceId?displayProperty=nameWithType> is set to the value of the pod label with the name `orleans/serviceId`.
-- <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> is set to the value of the pod label with the name `orleans/clusterId`.
-- Early in the startup process, the silo will probe Kubernetes to find which silos do not have corresponding pods and mark those silos as dead.
-- The same process will occur at runtime for a subset of all silos, to remove the load on Kubernetes' API server. By default, 2 silos in the cluster will watch Kubernetes.
+- Sets <xref:Orleans.Configuration.SiloOptions.SiloName?displayProperty=nameWithType> to the pod name.
+- Sets <xref:Orleans.Configuration.EndpointOptions.AdvertisedIPAddress?displayProperty=nameWithType> to the pod IP.
+- Configures <xref:Orleans.Configuration.EndpointOptions.SiloListeningEndpoint?displayProperty=nameWithType> & <xref:Orleans.Configuration.EndpointOptions.GatewayListeningEndpoint?displayProperty=nameWithType> to listen on any address, using the configured <xref:Orleans.Configuration.EndpointOptions.SiloPort> and <xref:Orleans.Configuration.EndpointOptions.GatewayPort>. Default port values of `11111` and `30000` are used if values aren't set explicitly.
+- Sets <xref:Orleans.Configuration.ClusterOptions.ServiceId?displayProperty=nameWithType> to the value of the pod label named `orleans/serviceId`.
+- Sets <xref:Orleans.Configuration.ClusterOptions.ClusterId?displayProperty=nameWithType> to the value of the pod label named `orleans/clusterId`.
+- Early in the startup process, the silo probes Kubernetes to find which silos don't have corresponding pods and marks those silos as dead.
+- The same process occurs at runtime for a subset of all silos to reduce the load on Kubernetes' API server. By default, 2 silos in the cluster watch Kubernetes.
 
-Note that the Kubernetes hosting package does not use Kubernetes for clustering. For clustering, a separate clustering provider is still needed. For more information on configuring clustering, see the [Server configuration](../host/configuration-guide/server-configuration.md) documentation.
+Note that the Kubernetes hosting package doesn't use Kubernetes for clustering. A separate clustering provider is still needed. For more information on configuring clustering, see the [Server configuration](../host/configuration-guide/server-configuration.md) documentation.
 
-This functionality imposes some requirements on how the service is deployed:
+This functionality imposes some requirements on service deployment:
 
-* Silo names must match pod names.
-* Pods must have an `orleans/serviceId` and `orleans/clusterId` label which corresponds to the silo's `ServiceId` and `ClusterId`. The above-mentioned method will propagate those labels into the corresponding options in Orleans from environment variables.
-* Pods must have the following environment variables set: `POD_NAME`, `POD_NAMESPACE`, `POD_IP`, `ORLEANS_SERVICE_ID`, `ORLEANS_CLUSTER_ID`.
+- Silo names must match pod names.
+- Pods must have `orleans/serviceId` and `orleans/clusterId` labels corresponding to the silo's `ServiceId` and `ClusterId`. The `UseKubernetesHosting` method propagates these labels into the corresponding Orleans options from environment variables.
+- Pods must have the following environment variables set: `POD_NAME`, `POD_NAMESPACE`, `POD_IP`, `ORLEANS_SERVICE_ID`, `ORLEANS_CLUSTER_ID`.
 
 The following example shows how to configure these labels and environment variables correctly:
 
@@ -43,17 +46,17 @@ spec:
   template:
     metadata:
       labels:
-        # This label is used to identify the service to Orleans
+        # This label identifies the service to Orleans
         orleans/serviceId: dictionary-app
 
-        # This label is used to identify an instance of a cluster to Orleans.
-        # Typically, this will be the same value as the previous label, or any
+        # This label identifies an instance of a cluster to Orleans.
+        # Typically, this is the same value as the previous label, or any
         # fixed value.
-        # In cases where you are not using rolling deployments (for example,
+        # In cases where you don't use rolling deployments (for example,
         # blue/green deployments),
-        # this value can allow for distinct clusters which do not communicate
-        # directly with each others,
-        # but which still share the same storage and other resources.
+        # this value can allow for distinct clusters that don't communicate
+        # directly with each other,
+        # but still share the same storage and other resources.
         orleans/clusterId: dictionary-app
     spec:
       containers:
@@ -61,13 +64,13 @@ spec:
           image: my-registry.azurecr.io/my-image
           imagePullPolicy: Always
           ports:
-          # Define the ports which Orleans uses
+          # Define the ports Orleans uses
           - containerPort: 11111
           - containerPort: 30000
           env:
           # The Azure Storage connection string for clustering is injected as an
-          # environment variable
-          # It must be created separately using a command such as:
+          # environment variable.
+          # You must create it separately using a command such as:
           # > kubectl create secret generic az-storage-acct `
           #     --from-file=key=./az-storage-acct.txt
           - name: STORAGE_CONNECTION_STRING
@@ -76,7 +79,7 @@ spec:
                 name: az-storage-acct
                 key: key
           # Configure settings to let Orleans know which cluster it belongs to
-          # and which pod it is running in
+          # and which pod it's running in.
           - name: ORLEANS_SERVICE_ID
             valueFrom:
               fieldRef:
@@ -111,7 +114,7 @@ spec:
       maxSurge: 1
 ```
 
-For RBAC-enabled clusters, the Kubernetes service account for the pods may also need to be granted the required access:
+For RBAC-enabled clusters, granting the required access to the Kubernetes service account for the pods might also be necessary:
 
 ```yaml
 kind: Role
@@ -139,17 +142,17 @@ roleRef:
 
 ## Liveness, readiness, and startup probes
 
-Kubernetes can probe pods to determine the health of a service. For more information, see [Configure liveness, readiness and startup probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) in Kubernetes' documentation.
+Kubernetes can probe pods to determine service health. For more information, see [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) in the Kubernetes documentation.
 
-Orleans uses a cluster membership protocol to promptly detect and recover from a process or network failures. Each node monitors a subset of other nodes, sending periodic probes. If a node fails to respond to multiple successive probes from multiple other nodes, then it will be forcibly removed from the cluster. Once a failed node learns that it has been removed, it terminates immediately. Kubernetes will restart the terminated process and it will attempt to rejoin the cluster.
+Orleans uses a cluster membership protocol to promptly detect and recover from process or network failures. Each node monitors a subset of other nodes, sending periodic probes. If a node fails to respond to multiple successive probes from multiple other nodes, the cluster forcibly removes it. Once a failed node learns of its removal, it terminates immediately. Kubernetes restarts the terminated process, which then attempts to rejoin the cluster.
 
-Kubernetes' probes can help to determine whether a process in a pod is executing and is not stuck in a zombie state. probes do not verify inter-pod connectivity or responsiveness or perform any application-level functionality checks. If a pod fails to respond to a liveness probe, then Kubernetes may eventually terminate that pod and reschedule it. Kubernetes' probes and Orleans' probes are therefore complementary.
+Kubernetes probes help determine whether a process in a pod is executing and isn't stuck in a zombie state. These probes don't verify inter-pod connectivity or responsiveness, nor do they perform application-level functionality checks. If a pod fails to respond to a liveness probe, Kubernetes might eventually terminate that pod and reschedule it. Kubernetes probes and Orleans probes are therefore complementary.
 
-The recommended approach is to configure Liveness Probes in Kubernetes which perform a simple local-only check that the application is performing as intended. These probes serve to terminate the process if there is a total freeze, for example, due to a runtime fault or another unlikely event.
+The recommended approach is configuring Liveness Probes in Kubernetes that perform a simple, local-only check that the application performs as intended. These probes serve to terminate the process if there's a total freeze, for example, due to a runtime fault or another unlikely event.
 
 ## Resource quotas
 
-Kubernetes works in conjunction with the operating system to implement [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/). This allows CPU and memory reservations and/or limits to be enforced. For a primary application that is serving interactive load, we recommend not implementing restrictive limits unless necessary. It is important to note that requests and limits are substantially different in their meaning and where they are implemented. Before setting requests or limits, take the time to gain a detailed understanding of how they are implemented and enforced. For example, memory may not be measured uniformly between Kubernetes, the Linux kernel, and your monitoring system. CPU quotas may not be enforced in the way that you expect.
+Kubernetes works with the operating system to implement [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/). This allows enforcing CPU and memory reservations and/or limits. For a primary application serving interactive load, implementing restrictive limits isn't recommended unless necessary. It's important to note that requests and limits differ substantially in meaning and implementation location. Before setting requests or limits, take time to gain a detailed understanding of how they are implemented and enforced. For example, memory might not be measured uniformly between Kubernetes, the Linux kernel, and the monitoring system. CPU quotas might not be enforced as expected.
 
 ## Troubleshooting
 
@@ -162,6 +165,5 @@ Unhandled exception. k8s.Exceptions.KubeConfigException: unable to load in-clust
 at k8s.KubernetesClientConfiguration.InClusterConfig()
 ```
 
-* Check that `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` environment variables are set inside your Pod.
-You can check by executing the following command `kubectl exec -it <pod_name> /bin/bash -c env`.
-* Ensure that `automountServiceAccountToken` set to **true** on your Kubernetes `deployment.yaml`. For more information, see [Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/).
+- Check that the `KUBERNETES_SERVICE_HOST` and `KUBERNETES_SERVICE_PORT` environment variables are set inside the Pod. Check by executing the command `kubectl exec -it <pod_name> /bin/bash -c env`.
+- Ensure `automountServiceAccountToken` is set to `true` in the Kubernetes `deployment.yaml`. For more information, see [Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/).

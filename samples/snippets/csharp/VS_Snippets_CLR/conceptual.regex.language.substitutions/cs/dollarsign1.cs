@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
@@ -23,7 +23,7 @@ public class Example
       string replacement = "$1$2";
       replacement = precedes ? symbol + " " + replacement : replacement + " " + symbol;
       foreach (string value in values)
-         Console.WriteLine("{0} --> {1}", value, Regex.Replace(value, pattern, replacement));
+         Console.WriteLine($"{value} --> {Regex.Replace(value, pattern, replacement)}");
    }
 }
 // The example displays the following output:

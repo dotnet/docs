@@ -32,12 +32,12 @@ landingContent:
             url: ../../core/testing/index.md
       - linkListType: tutorial
         links:
-          - text: Test C# code using dotnet test and xUnit
-            url: ../../core/testing/unit-testing-with-dotnet-test.md
+          - text: Unit test with xUnit.net
+            url: ../../core/testing/unit-testing-csharp-with-xunit.md
           - text: Unit test with NUnit
-            url: ../../core/testing/unit-testing-with-nunit.md
+            url: ../../core/testing/unit-testing-csharp-with-nunit.md
           - text: Unit test with MSTest
-            url: ../../core/testing/unit-testing-with-mstest.md
+            url: ../../core/testing/unit-testing-csharp-with-mstest.md
       - linkListType: concept
         links:
           - text: Best practices

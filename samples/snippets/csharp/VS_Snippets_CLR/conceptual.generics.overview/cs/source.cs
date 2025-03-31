@@ -19,7 +19,7 @@ namespace GenericsExample1
             g.Field = "A string";
             //...
             Console.WriteLine($"SimpleGenericClass.Field           = \"{g.Field}\"");
-            Console.WriteLine("SimpleGenericClass.Field.GetType() = {0}", g.Field.GetType().FullName);
+            Console.WriteLine($"SimpleGenericClass.Field.GetType() = {g.Field.GetType().FullName}");
         }
         //</snippet3>
 

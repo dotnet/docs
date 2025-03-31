@@ -83,14 +83,12 @@ public class Worker : MarshalByRefObject
             }
             catch (Exception ex)
             {
-                Console.WriteLine("{0} was thrown when the delegate was invoked.",
-                    ex.GetType().Name);
+                Console.WriteLine($"{ex.GetType().Name} was thrown when the delegate was invoked.");
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine("{0} was thrown when the delegate was compiled.",
-                ex.GetType().Name);
+            Console.WriteLine($"{ex.GetType().Name} was thrown when the delegate was compiled.");
         }
     }
 
@@ -132,8 +130,7 @@ public class Worker : MarshalByRefObject
         }
         catch (Exception ex)
         {
-            Console.WriteLine("{0} was thrown when the delegate was compiled.",
-                ex.GetType().Name);
+            Console.WriteLine($"{ex.GetType().Name} was thrown when the delegate was compiled.");
         }
     }
 

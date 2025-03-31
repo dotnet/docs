@@ -1,7 +1,7 @@
 ---
 title: Code-style language and unnecessary code rules
 description: Learn about the different code-style rules for using C# and Visual Basic language constructs and for finding unnecessary code.
-ms.date: 11/08/2024
+ms.date: 03/25/2025
 helpviewer_keywords:
 - language code style rules [EditorConfig]
 - language rules
@@ -169,6 +169,7 @@ C# style rules:
 - [Use collection expression for `Create()` (IDE0303)](ide0303.md)
 - [Use collection expression for builder (IDE0304](ide0304.md)
 - [Use collection expression for fluent (IDE0305)](ide0305.md)
+- [Use collection expression for new (IDE0306)](ide0306.md)
 - [Use unbound generic type (IDE0340)](ide0340.md)
 - [Use implicitly typed lambda (IDE0350)](ide0350.md)
 

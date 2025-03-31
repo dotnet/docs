@@ -520,10 +520,10 @@ namespace PLINQ_Samples
 
         static void TestDataSource()
         {
-            Console.WriteLine("Customer count: {0}", GetCustomers().Count());
-            Console.WriteLine("Product count: {0}", GetProducts().Count());
-            Console.WriteLine("Order count: {0}", GetOrders().Count());
-            Console.WriteLine("Order Details count: {0}", GetOrderDetails().Count());
+            Console.WriteLine($"Customer count: {GetCustomers().Count()}");
+            Console.WriteLine($"Product count: {GetProducts().Count()}");
+            Console.WriteLine($"Order count: {GetOrders().Count()}");
+            Console.WriteLine($"Order Details count: {GetOrderDetails().Count()}");
         }
 
         #region DataClasses

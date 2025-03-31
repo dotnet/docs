@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 12/11/2023
+ms.date: 03/25/2025
 author: gewarren
 ms.author: gewarren
 ---
@@ -141,6 +141,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0303](ide0303.md) | Use collection expression for `Create()` | [dotnet_style_prefer_collection_expression](ide0303.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0304](ide0304.md) | Use collection expression for builder | [dotnet_style_prefer_collection_expression](ide0304.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0305](ide0305.md) | Use collection expression for fluent | [dotnet_style_prefer_collection_expression](ide0305.md#dotnet_style_prefer_collection_expression) |
+> | [IDE0306](ide0306.md) | Use collection expression for new | [dotnet_style_prefer_collection_expression](ide0306.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0320](ide0320.md) | Make anonymous function `static` | [csharp_prefer_static_anonymous_function](ide0320.md#csharp_prefer_static_anonymous_function) |
 > | [IDE0330](ide0330.md) | Prefer 'System.Threading.Lock' | [csharp_prefer_system_threading_lock](ide0330.md#csharp_prefer_system_threading_lock) |
 > | [IDE0340](ide0340.md) | Use unbound generic type | [csharp_style_prefer_unbound_generic_type_in_nameof](ide0340.md#csharp_style_prefer_unbound_generic_type_in_nameof) |

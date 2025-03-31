@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ServiceModel;
 using System.Security.Permissions;
 //using System.Runtime.Serialization;
@@ -75,12 +75,12 @@ namespace Examples
         {
             BindingElementCollection bec = b.CreateBindingElements();
             SymmetricSecurityBindingElement sbe = (SymmetricSecurityBindingElement)bec.Find<SecurityBindingElement>();
-            Console.WriteLine("skew {0}", sbe.LocalServiceSettings.MaxClockSkew.ToString());
+            Console.WriteLine($"skew {sbe.LocalServiceSettings.MaxClockSkew.ToString()}");
 
             SecureConversationSecurityTokenParameters secureTokenParams =
                 (SecureConversationSecurityTokenParameters)sbe.ProtectionTokenParameters;
             SecurityBindingElement bootstrap = secureTokenParams.BootstrapSecurityBindingElement;
-            Console.WriteLine("skew 2 {0}", bootstrap.LocalServiceSettings.MaxClockSkew.ToString());
+            Console.WriteLine($"skew 2 {bootstrap.LocalServiceSettings.MaxClockSkew.ToString()}");
         }
     }
 

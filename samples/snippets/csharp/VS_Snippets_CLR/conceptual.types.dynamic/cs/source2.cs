@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using System.Globalization;
 
@@ -194,7 +194,7 @@ public class CustomBinderDriver
 
     public static void PrintValue(long value)
     {
-        Console.WriteLine("PrintValue({0})", value);
+        Console.WriteLine($"PrintValue({value})");
     }
 
     public static void PrintValue(string value)
@@ -204,7 +204,7 @@ public class CustomBinderDriver
 
     public static void PrintNumber(double value)
     {
-        Console.WriteLine("PrintNumber ({0})", value);
+        Console.WriteLine($"PrintNumber ({value})");
     }
 }
 //</snippet2>

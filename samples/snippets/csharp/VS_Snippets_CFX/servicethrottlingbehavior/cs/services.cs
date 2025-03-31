@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 using System;
 using System.Collections.Generic;
 using System.ServiceModel;
@@ -22,9 +22,9 @@ namespace Microsoft.WCF.Documentation
   {
     ServiceThrottle currentThrottle = OperationContext.Current.EndpointDispatcher.ChannelDispatcher.ServiceThrottle;
     Console.WriteLine("Service called. Current throttle values: " );
-    Console.WriteLine("MaxConcurrentCalls: {0}.", currentThrottle.MaxConcurrentCalls.ToString());
-    Console.WriteLine("MaxConnections: {0}.", currentThrottle.MaxConcurrentSessions.ToString());
-    Console.WriteLine("MaxInstances: {0}.", currentThrottle.MaxConcurrentInstances.ToString());
+    Console.WriteLine($"MaxConcurrentCalls: {currentThrottle.MaxConcurrentCalls.ToString()}.");
+    Console.WriteLine($"MaxConnections: {currentThrottle.MaxConcurrentSessions.ToString()}.");
+    Console.WriteLine($"MaxInstances: {currentThrottle.MaxConcurrentInstances.ToString()}.");
  	  return "The service greets you: " + msg;
   }
 

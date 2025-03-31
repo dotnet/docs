@@ -75,8 +75,7 @@ public class App
         MyUnsafeStruct* pCurrent = pResult;
         for (int i = 0; i < size; i++, pCurrent++)
         {
-            Console.WriteLine("Element {0}: {1} {2}", i,
-                Marshal.PtrToStringAnsi(pCurrent->buffer), pCurrent->size);
+            Console.WriteLine($"Element {i}: {Marshal.PtrToStringAnsi(pCurrent->buffer)} {pCurrent->size}");
             Marshal.FreeCoTaskMem(pCurrent->buffer);
         }
 

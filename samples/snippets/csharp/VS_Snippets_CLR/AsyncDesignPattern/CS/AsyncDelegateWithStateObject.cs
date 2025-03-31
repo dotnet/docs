@@ -125,7 +125,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                             Console.WriteLine($"Addresses for {r.HostName}");
                             for (int k = 0; k < addresses.Length; k++)
                             {
-                                Console.WriteLine("{0}",addresses[k].ToString());
+                                Console.WriteLine($"{addresses[k].ToString()}");
                             }
                         }
                     }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Class1
 {
@@ -181,21 +181,15 @@ public class Class1
                                    new TimeSpan(-7, 0, 0));
 
         DateTimeOffset secondTime = firstTime;
-        Console.WriteLine("{0} = {1}: {2}",
-                          firstTime, secondTime,
-                          firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         secondTime = new DateTimeOffset(2007, 9, 1, 6, 45, 0,
                          new TimeSpan(-6, 0, 0));
-        Console.WriteLine("{0} = {1}: {2}",
-                         firstTime, secondTime,
-                         firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         secondTime = new DateTimeOffset(2007, 9, 1, 8, 45, 0,
                          new TimeSpan(-5, 0, 0));
-        Console.WriteLine("{0} = {1}: {2}",
-                         firstTime, secondTime,
-                         firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         // The example displays the following output to the console:
         //      9/1/2007 6:45:00 AM -07:00 = 9/1/2007 6:45:00 AM -07:00: True
@@ -211,31 +205,21 @@ public class Class1
                                    new TimeSpan(-7, 0, 0));
 
         object secondTime = firstTime;
-        Console.WriteLine("{0} = {1}: {2}",
-                          firstTime, secondTime,
-                          firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         secondTime = new DateTimeOffset(2007, 9, 1, 6, 45, 0,
                          new TimeSpan(-6, 0, 0));
-        Console.WriteLine("{0} = {1}: {2}",
-                         firstTime, secondTime,
-                         firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         secondTime = new DateTimeOffset(2007, 9, 1, 8, 45, 0,
                          new TimeSpan(-5, 0, 0));
-        Console.WriteLine("{0} = {1}: {2}",
-                         firstTime, secondTime,
-                         firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         secondTime = null;
-        Console.WriteLine("{0} = {1}: {2}",
-                         firstTime, secondTime,
-                         firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         secondTime = new DateTime(2007, 9, 1, 6, 45, 00);
-        Console.WriteLine("{0} = {1}: {2}",
-                         firstTime, secondTime,
-                         firstTime.Equals(secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {firstTime.Equals(secondTime)}");
 
         // The example displays the following output to the console:
         //       9/1/2007 6:45:00 AM -07:00 = 9/1/2007 6:45:00 AM -07:00: True
@@ -252,23 +236,17 @@ public class Class1
         DateTimeOffset firstTime = new DateTimeOffset(2007, 11, 15, 11, 35, 00,
                                             DateTimeOffset.Now.Offset);
         DateTimeOffset secondTime = firstTime;
-        Console.WriteLine("{0} = {1}: {2}",
-                          firstTime, secondTime,
-                          DateTimeOffset.Equals(firstTime, secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {DateTimeOffset.Equals(firstTime, secondTime)}");
 
         // The value of firstTime remains unchanged
         secondTime = new DateTimeOffset(firstTime.DateTime,
                      TimeSpan.FromHours(firstTime.Offset.Hours + 1));
-        Console.WriteLine("{0} = {1}: {2}",
-                          firstTime, secondTime,
-                          DateTimeOffset.Equals(firstTime, secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {DateTimeOffset.Equals(firstTime, secondTime)}");
 
         // value of firstTime remains unchanged
         secondTime = new DateTimeOffset(firstTime.DateTime + TimeSpan.FromHours(1),
                                         TimeSpan.FromHours(firstTime.Offset.Hours + 1));
-        Console.WriteLine("{0} = {1}: {2}",
-                          firstTime, secondTime,
-                          DateTimeOffset.Equals(firstTime, secondTime));
+        Console.WriteLine($"{firstTime} = {secondTime}: {DateTimeOffset.Equals(firstTime, secondTime)}");
 
         // The example produces the following output:
         //       11/15/2007 11:35:00 AM -07:00 = 11/15/2007 11:35:00 AM -07:00: True
@@ -284,21 +262,15 @@ public class Class1
                                       DateTimeOffset.Now.Offset);
 
         DateTimeOffset otherTime = instanceTime;
-        Console.WriteLine("{0} = {1}: {2}",
-                          instanceTime, otherTime,
-                          instanceTime.EqualsExact(otherTime));
+        Console.WriteLine($"{instanceTime} = {otherTime}: {instanceTime.EqualsExact(otherTime)}");
 
         otherTime = new DateTimeOffset(instanceTime.DateTime,
                     TimeSpan.FromHours(instanceTime.Offset.Hours + 1));
-        Console.WriteLine("{0} = {1}: {2}",
-                          instanceTime, otherTime,
-                          instanceTime.EqualsExact(otherTime));
+        Console.WriteLine($"{instanceTime} = {otherTime}: {instanceTime.EqualsExact(otherTime)}");
 
         otherTime = new DateTimeOffset(instanceTime.DateTime + TimeSpan.FromHours(1),
                         TimeSpan.FromHours(instanceTime.Offset.Hours + 1));
-        Console.WriteLine("{0} = {1}: {2}",
-                          instanceTime, otherTime,
-                          instanceTime.EqualsExact(otherTime));
+        Console.WriteLine($"{instanceTime} = {otherTime}: {instanceTime.EqualsExact(otherTime)}");
 
         // The example produces the following output:
         //       10/31/2007 12:00:00 AM -07:00 = 10/31/2007 12:00:00 AM -07:00: True
@@ -349,28 +321,24 @@ public class Class1
         originalTime = new DateTimeOffset(2007, 3, 11, 3, 0, 0,
                                           new TimeSpan(-6, 0, 0));
         localTime = originalTime.ToLocalTime();
-        Console.WriteLine("Converted {0} to {1}.", originalTime.ToString(),
-                                                   localTime.ToString());
+        Console.WriteLine($"Converted {originalTime.ToString()} to {localTime.ToString()}.");
 
         originalTime = new DateTimeOffset(2007, 3, 11, 4, 0, 0,
                                           new TimeSpan(-6, 0, 0));
         localTime = originalTime.ToLocalTime();
-        Console.WriteLine("Converted {0} to {1}.", originalTime.ToString(),
-                                                   localTime.ToString());
+        Console.WriteLine($"Converted {originalTime.ToString()} to {localTime.ToString()}.");
 
         // Define a summer UTC time
         originalTime = new DateTimeOffset(2007, 6, 15, 8, 0, 0,
                                           TimeSpan.Zero);
         localTime = originalTime.ToLocalTime();
-        Console.WriteLine("Converted {0} to {1}.", originalTime.ToString(),
-                                                   localTime.ToString());
+        Console.WriteLine($"Converted {originalTime.ToString()} to {localTime.ToString()}.");
 
         // Define a winter time
         originalTime = new DateTimeOffset(2007, 11, 30, 14, 0, 0,
                                           new TimeSpan(3, 0, 0));
         localTime = originalTime.ToLocalTime();
-        Console.WriteLine("Converted {0} to {1}.", originalTime.ToString(),
-                                                   localTime.ToString());
+        Console.WriteLine($"Converted {originalTime.ToString()} to {localTime.ToString()}.");
 
         // The example produces the following output:
         //    Converted 3/11/2007 3:00:00 AM -06:00 to 3/11/2007 1:00:00 AM -08:00.
@@ -393,23 +361,15 @@ public class Class1
         // Convert local time to offset 0 and assign to otherTime
         otherTime = localTime.ToOffset(TimeSpan.Zero);
         Console.WriteLine($"Other time: {otherTime}");
-        Console.WriteLine("{0} = {1}: {2}",
-                          localTime, otherTime,
-                          localTime.Equals(otherTime));
-        Console.WriteLine("{0} exactly equals {1}: {2}",
-                          localTime, otherTime,
-                          localTime.EqualsExact(otherTime));
+        Console.WriteLine($"{localTime} = {otherTime}: {localTime.Equals(otherTime)}");
+        Console.WriteLine($"{localTime} exactly equals {otherTime}: {localTime.EqualsExact(otherTime)}");
         Console.WriteLine();
 
         // Convert other time to UTC
         universalTime = localTime.ToUniversalTime();
         Console.WriteLine($"Universal time: {universalTime}");
-        Console.WriteLine("{0} = {1}: {2}",
-                          otherTime, universalTime,
-                          universalTime.Equals(otherTime));
-        Console.WriteLine("{0} exactly equals {1}: {2}",
-                          otherTime, universalTime,
-                          universalTime.EqualsExact(otherTime));
+        Console.WriteLine($"{otherTime} = {universalTime}: {universalTime.Equals(otherTime)}");
+        Console.WriteLine($"{otherTime} exactly equals {universalTime}: {universalTime.EqualsExact(otherTime)}");
         Console.WriteLine();
 
         // The example produces the following output to the console:

@@ -46,6 +46,10 @@ items:
                 href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
+              - name: NU1510 is raised for direct references pruned by NuGet
+                href: sdk/10.0/nu1510-pruned-references.md
           - name: Windows Forms
             items:
               - name: API obsoletions
@@ -172,6 +176,8 @@ items:
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
               - name: New default RID used when targeting .NET Framework
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
@@ -1908,6 +1914,10 @@ items:
                 href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
+              - name: NU1510 is raised for direct references pruned by NuGet
+                href: sdk/10.0/nu1510-pruned-references.md
           - name: .NET 9
             items:
               - name: "`dotnet restore` audits transitive packages"
@@ -1920,6 +1930,8 @@ items:
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
               - name: New default RID used when targeting .NET Framework
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default

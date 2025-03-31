@@ -25,7 +25,6 @@ Silo metadata is represented as an **immutable** dictionary of key-value pairs:
 
 Silo metadata in Orleans is configured using two methods, either .NET configuration or directly in code.
 
-
 ### Configure Silo metadata with configuration
 
 Silo metadata can be defined in the app's configuration, such as _appsettings.json_, environment variables, or any other available configuration source.
@@ -59,10 +58,10 @@ var siloBuilder = new SiloHostBuilder()
 ```
 
 Alternatively, an explicit `IConfiguration` or `IConfigurationSection` can be passed in to control where in configuration the metadata is pulled from.
+
 ### Configuring silo metadata in code
 
 For scenarios requiring programmatic metadata configuration, developers can add metadata directly in the Silo host builder.
-
 
 #### Example: Direct Code Configuration
 
@@ -78,6 +77,7 @@ var siloBuilder = new SiloHostBuilder()
 ```
 
 The preceding example achieves the same result as the JSON configuration but allows metadata values to be computed or loaded dynamically during Silo initialization.
+
 ### Merge configurations
 
 If both .NET configuration and direct code configuration are used, the direct configuration overrides any conflicting metadata values from the .NET configuration. This allows developers to set defaults with configuration files and dynamically adjust specific metadata during runtime.
@@ -106,6 +106,7 @@ In the preceding example:
 
 - `GetSiloMetadata(siloAddress)` retrieves the metadata for the specified silo.
 - Metadata keys like `"role"` can be used to influence application logic.
+
 ## Internal implementation
 
 Internally, the `SiloMetadataCache` monitors changes in cluster membership on `MembershipTableManager` and keeps a local cache of metadata in sync with membership changes. Metadata is immutable for a given Silo, so it's retrieved once and cached until that Silo leaves the cluster. Cached metadata for clusters that are `Dead` or have left the membership table will be cleared out of the local cache.

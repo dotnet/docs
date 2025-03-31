@@ -71,7 +71,10 @@ public class ExamplePreferLocalPlacementFilterAttribute(int order)
 
 ```csharp
 public class ExamplePreferLocalPlacementFilterStrategy(int order)
-    : PlacementFilterStrategy(order);
+    : PlacementFilterStrategy(order)
+    {
+        public ExamplePreferLocalPlacementFilterStrategy() : this(0) { }
+    }
 ```
 
 ```csharp

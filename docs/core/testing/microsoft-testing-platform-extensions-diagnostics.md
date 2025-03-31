@@ -8,7 +8,7 @@ ms.date: 04/10/2024
 
 # Diagnostics extensions
 
-This article list and explains all `Microsoft Testing Platform` extensions related to the diagnostics capability.
+This article lists and explains all Microsoft.Testing.Platform extensions related to the diagnostics capability.
 
 ## Built-in options
 

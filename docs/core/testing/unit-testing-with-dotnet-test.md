@@ -26,11 +26,44 @@ The process involves invoking the `VSTest` MSBuild target, which triggers other 
 
 ### Running MTP projects with VSTest mode
 
-`dotnet test` is typically designed to run VSTest projects in VSTest mode, as that was its original purpose. However, to run MTP projects in VSTest mode, you can use the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild). From the user's perspective, this support is enabled by setting the `TestingPlatformDotnetTestSupport` MSBuild property to true (it is false by default for backward compatibility reasons). In simple terms, setting this property to true will cause Microsoft.Testing.Platform.MSBuild to change the `VSTest` target behavior, redirecting it to call `InvokeTestingPlatform`. This is an MSBuild target included in Microsoft.Testing.Platform.MSBuild, responsible for correctly running MTP test applications as executables.
+`dotnet test` is typically designed to run VSTest projects in VSTest mode, as that was its original purpose. However, to run MTP projects in `dotnet test` VSTest mode, you can use the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild). From the user's perspective, this support is enabled by setting the `TestingPlatformDotnetTestSupport` MSBuild property to true (it is false by default for backward compatibility reasons). In simple terms, setting this property to true will cause Microsoft.Testing.Platform.MSBuild to change the `VSTest` target behavior, redirecting it to call `InvokeTestingPlatform`. This is an MSBuild target included in Microsoft.Testing.Platform.MSBuild, responsible for correctly running MTP test applications as executables. This means that VSTest-specific command-line options are silently ignored in this mode, such as `--logger`. This implies that there should be a way to pass MTP-specific command-line options, such as `--report-trx`, which is equivalent to using `--logger trx` in VSTest. Given the current limitations of the `dotnet test` CLI, the only way to include MTP-specific arguments is by appending them after an additional `--`. For instance, `dotnet test -- --report-trx`.
 
-This means that VSTest-specific command-line options are silently ignored in this mode, such as `--logger`.
+> [!NOTE]
+> MSTest and NUnit use [Microsoft.Testing.Extensions.VSTestBridge](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge). When you set `EnableMSTestRunner` or `EnableNUnitRunner` (the properties used to enable MTP), your test project become supporting both VSTest and Microsoft.Testing.Platform.
+> In that case, if you are using VSTest mode of `dotnet test` and not setting `TestingPlatformDotnetTestSupport` to true, you are actually running completely with VSTest, as if `EnableMSTestRunner` and `EnableNUnitRunner` are not there.
+>
+> [!NOTE]
+> It's highly recommended that you set the `TestingPlatformDotnetTestSupport` property in `Directory.Build.props`. That way, you don't have to add it to every test project file, and you don't risk introducing a new project that doesn't set this property and end up with a solution where some projects are VSTest while others are Microsoft.Testing.Platform, which may not work correctly and is unsupported scenario.
 
-This implies that there should be a way to pass MTP-specific command-line options, such as `--report-trx`, which is equivalent to using `--logger trx` in VSTest. Given the current limitations of the `dotnet test` CLI, the only way to include MTP-specific arguments is by appending them after an additional `--`. For instance, `dotnet test -- --report-trx`.
+The following command-line options of `dotnet test` command in VSTest mode are supported by Microsoft.Testing.Platform. These options are build-specific and not passed down to VSTest, which is why they work well with MTP.
+
+The list below described all `dotnet test` command line options that are supported by `Microsoft.Testing.Platform`:
+
+- `-a|--arch <ARCHITECTURE>`
+- `--artifacts-path <ARTIFACTS_DIR>`
+- `-c|--configuration <CONFIGURATION>`
+- `-f|--framework <FRAMEWORK>`
+- `-e|--environment <NAME="VALUE">`
+- `--interactive`
+- `--no-build`
+- `--nologo`
+- `--no-restore`
+- `-o|--output <OUTPUT_DIRECTORY>`
+- `--os <OS>`
+- `-r|--runtime <RUNTIME_IDENTIFIER>`
+- `-v|--verbosity <LEVEL>`
+
+> [!TIP]
+> You can customize the command-line arguments of your test application via `TestingPlatformCommandLineArguments` MSBuild property:
+>
+> ```xml
+> <PropertyGroup>
+>   ...
+>   <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
+> </PropertyGroup>
+> ```
+
+For more information specific to running MTP projects in VSTest mode of `dotnet test`, see [Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`](./microsoft-testing-platform-integration-dotnet-test.md).
 
 #### Advanced technical details
 
@@ -69,3 +102,13 @@ Since this mode is specifically designed for Microsoft.Testing.Platform, neither
 >
 > [!IMPORTANT]
 > If your test project supports VSTest but does not support MTP, an error will be generated.
+>
+> [!TIP]
+> You can customize the command-line arguments of your test application via `TestingPlatformCommandLineArguments` MSBuild property:
+>
+> ```xml
+> <PropertyGroup>
+>   ...
+>   <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
+> </PropertyGroup>
+> ```

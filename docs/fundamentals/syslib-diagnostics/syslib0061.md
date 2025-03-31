@@ -1,7 +1,7 @@
 ---
 title: SYSLIB0061 warning - System.Linq.Queryable.MaxBy and System.Linq.Queryable.MinBy accepting an IComparer\<TSource\> are obsolete.
 description: Learn about the obsoletion of some MaxBy and MinBy extension methods. Use of these extension methods generates compile-time warning SYSLIB0061.
-ms.date: 03/28/2025
+ms.date: 03/31/2025
 f1_keywords:
   - SYSLIB0061
 ---
@@ -17,7 +17,7 @@ The original `MaxBy` and `MinBy` accepting an `IComparer<T>? comparer` expressio
 
 ### Note
 
-This would previously work only if `TSource` and `TKey` were actually the same constructed type. If the types were distinct then a runtime _<xref:System.IndexOutOfRangeException>: Index was outside the bounds of the array._ would be thrown because the needed extension method for `IQuerable<TSource> source` could not be found (for example in <xref:System.Linq.Enumerable.MaxBy*>).
+This would previously work only if `TSource` and `TKey` were actually the same constructed type. If the types were distinct then a runtime _<xref:System.IndexOutOfRangeException>: Index was outside the bounds of the array._ would be thrown because the needed extension method for `IQueryable<TSource> source` could not be found (for example in <xref:System.Linq.Enumerable.MaxBy*>).
 
 ## Workaround
 

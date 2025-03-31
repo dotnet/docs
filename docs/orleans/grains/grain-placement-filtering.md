@@ -110,6 +110,5 @@ builder.ConfigureServices(services =>
 public class MyGrain() : Grain, IMyGrain
 {
     // ...
-
 }
 ```

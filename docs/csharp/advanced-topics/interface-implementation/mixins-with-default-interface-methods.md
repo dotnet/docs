@@ -118,7 +118,7 @@ These changes compile cleanly, even though the `ExtraFancyLight` declares suppor
 
 Avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. The compiler can't pick a single better method so it issues an error. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `Power()`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. This situation is shown in the following diagram:
 
-:::image type="content" source="./media/mixins-with-default-interface-methods/diamond-problem.svg" alt-text="illustration of the diamond problem with default interface methods":::
+:::image type="content" source="./media/mixins-with-default-interface-methods/diamond-rebuild.png" alt-text="illustration of the diamond problem with default interface methods":::
 
 The preceding diagram illustrates the ambiguity. `OverheadLight` doesn't provide an implementation of `ILight.Power()`. Both `IBlinkingLight` and `ITimerLight` provide overrides that are more specific. A call to `ILight.Power()` on an instance of `OverheadLight` is ambiguous. You must add a new override in `OverheadLight` to resolve the ambiguity.
 

@@ -154,4 +154,4 @@ Uri baseUri = new Uri(@"\\host\share\some\directory\name\");
 
 ## Performance considerations
 
-If you use a *Web.config*file that contains URIs to initialize your application, additional time is required to process the URIs if their scheme identifiers are nonstandard. In such a case, initialize the affected parts of your application when the URIs are needed, not at start time.
+If you use a *Web.config* file that contains URIs to initialize your application, additional time is required to process the URIs if their scheme identifiers are nonstandard. In such a case, initialize the affected parts of your application when the URIs are needed, not at start time.

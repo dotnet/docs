@@ -114,6 +114,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0100](ide0100.md) | Remove unnecessary equality operator | |
 > | [IDE0110](ide0110.md) | Remove unnecessary discard | |
 > | [IDE0120](ide0120.md) | Simplify LINQ expression | |
+> | [IDE0121](ide0121.md) | Simplify LINQ type check and cast | |
 > | [IDE0130](ide0130.md) | Namespace does not match folder structure | [dotnet_style_namespace_match_folder](ide0130.md#dotnet_style_namespace_match_folder) |
 > | [IDE0140](ide0140.md) | Simplify object creation | [visual_basic_style_prefer_simplified_object_creation](ide0140.md#visual_basic_style_prefer_simplified_object_creation) |
 > | [IDE0150](ide0150.md) | Prefer `null` check over type check | [csharp_style_prefer_null_check_over_type_check](ide0150.md#csharp_style_prefer_null_check_over_type_check) |
@@ -143,6 +144,8 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0306](ide0306.md) | Use collection expression for new | [dotnet_style_prefer_collection_expression](ide0306.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0320](ide0320.md) | Make anonymous function `static` | [csharp_prefer_static_anonymous_function](ide0320.md#csharp_prefer_static_anonymous_function) |
 > | [IDE0330](ide0330.md) | Prefer 'System.Threading.Lock' | [csharp_prefer_system_threading_lock](ide0330.md#csharp_prefer_system_threading_lock) |
+> | [IDE0340](ide0340.md) | Use unbound generic type | [csharp_style_prefer_unbound_generic_type_in_nameof](ide0340.md#csharp_style_prefer_unbound_generic_type_in_nameof) |
+> | [IDE0350](ide0350.md) | Use implicitly typed lambda | [csharp_style_prefer_implicitly_typed_lambda_expression](ide0350.md#csharp_style_prefer_implicitly_typed_lambda_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
 

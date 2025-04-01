@@ -11,19 +11,22 @@ ms.date: 03/27/2024
 
 ## Description
 
-The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with TOML format located at the root of the solution or repository.
+The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with an INI-like format located at the root of the solution or repository.
 
 Some examples of the `dotnet.config` file:
 
-  ```toml
+  ```ini
   [dotnet.test:runner]
   name = "Microsoft.Testing.Platform"
   ```
 
-  ```toml
+  ```ini
   [dotnet.test:runner]
   name = "VSTest"
   ```
+
+> [!NOTE]
+> The format will change from `dotnet.test:runner` to `dotnet.test.runner` in .NET 10 SDK Preview 4.
 
 > [!TIP]
 > For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).

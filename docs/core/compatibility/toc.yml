@@ -42,6 +42,8 @@ items:
                 href: globalization/10.0/version-override.md
           - name: SDK and MSBuild
             items:
+              - name: "`dotnet restore` audits transitive packages"
+                href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
@@ -166,8 +168,6 @@ items:
                 href: networking/9.0/query-redaction-logs.md
           - name: SDK and MSBuild
             items:
-              - name: "`dotnet restore` audits transitive packages"
-                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet sln add` doesn't allow invalid file names"
                 href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
@@ -1910,6 +1910,8 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: "`dotnet restore` audits transitive packages"
+                href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
@@ -1920,8 +1922,6 @@ items:
                 href: sdk/10.0/nu1510-pruned-references.md
           - name: .NET 9
             items:
-              - name: "`dotnet restore` audits transitive packages"
-                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet sln add` doesn't allow invalid file names"
                 href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"

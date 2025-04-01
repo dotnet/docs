@@ -18,7 +18,7 @@ To get started with service discovery in .NET, install the [Microsoft.Extensions
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.ServiceDiscovery --prerelease
+dotnet package add Microsoft.Extensions.ServiceDiscovery --prerelease
 ```
 
 ### [PackageReference](#tab/package-reference)
@@ -30,7 +30,7 @@ dotnet add package Microsoft.Extensions.ServiceDiscovery --prerelease
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet package add](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Example usage
 

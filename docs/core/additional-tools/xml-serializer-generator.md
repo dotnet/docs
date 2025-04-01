@@ -40,13 +40,13 @@ The following instructions show you how to use XML Serializer Generator in a .NE
    dotnet new console
    ```
 
-2. Use the [`dotnet add package`](../tools/dotnet-add-package.md) command to add a reference to the Microsoft.XmlSerializer.Generator package.
+2. Use the [`dotnet package add`](../tools/dotnet-package-add.md) command to add a reference to the Microsoft.XmlSerializer.Generator package.
 
    ```dotnetcli
-   dotnet add package Microsoft.XmlSerializer.Generator -v 8.0.0
+   dotnet package add Microsoft.XmlSerializer.Generator -v 8.0.0
    ```
 
-   After running the [`dotnet add package`](../tools/dotnet-add-package.md) command, the following lines are added to your *MyApp.csproj* project file:
+   After running the [`dotnet package add`](../tools/dotnet-package-add.md) command, the following lines are added to your *MyApp.csproj* project file:
 
    ```xml
    <ItemGroup>

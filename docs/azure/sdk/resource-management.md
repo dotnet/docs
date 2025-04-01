@@ -44,11 +44,11 @@ Install-Package Azure.ResourceManager.Network
 # [.NET CLI](#tab/dotnetcli)
 
 ```dotnetcli
-dotnet add package Azure.Identity
-dotnet add package Azure.ResourceManager
-dotnet add package Azure.ResourceManager.Resources
-dotnet add package Azure.ResourceManager.Compute
-dotnet add package Azure.ResourceManager.Network
+dotnet package add Azure.Identity
+dotnet package add Azure.ResourceManager
+dotnet package add Azure.ResourceManager.Resources
+dotnet package add Azure.ResourceManager.Compute
+dotnet package add Azure.ResourceManager.Network
 ```
 
 ---

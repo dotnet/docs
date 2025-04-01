@@ -51,9 +51,9 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add Azure.AI.OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end
@@ -61,9 +61,9 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end

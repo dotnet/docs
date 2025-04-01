@@ -34,9 +34,9 @@ Input                                | becomes                                  
 :------------------------------------|:----------------------------------------------------------------------------|:--------------------------------
 `dotnet a⇥`                          | `dotnet add`                                                                 | `add` is the first subcommand, alphabetically.
 `dotnet add p⇥`                      | `dotnet add --help`                                                          | Tab completion matches substrings and `--help` comes first alphabetically.
-`dotnet add p⇥⇥`                    | `dotnet add package`                                                          | Pressing tab a second time brings up the next suggestion.
-`dotnet add package Microsoft⇥`      | `dotnet add package Microsoft.ApplicationInsights.Web`                      | Results are returned alphabetically.
-`dotnet remove reference ⇥`          | `dotnet remove reference ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware.
+`dotnet add p⇥⇥`                    | `dotnet package add`                                                          | Pressing tab a second time brings up the next suggestion.
+`dotnet package add Microsoft⇥`      | `dotnet package add Microsoft.ApplicationInsights.Web`                      | Results are returned alphabetically.
+`dotnet reference remove ⇥`          | `dotnet reference remove ..\..\src\OmniSharp.DotNet\OmniSharp.DotNet.csproj` | Tab completion is project file aware.
 
 ## PowerShell
 

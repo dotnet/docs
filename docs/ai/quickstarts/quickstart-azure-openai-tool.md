@@ -1,5 +1,5 @@
 ---
-title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET 
+title: Quickstart - Extend OpenAI using Tools and execute a local Function with .NET
 description: Create a simple chat app using OpenAI and extend the model to execute a local function.
 ms.date: 07/14/2024
 ms.topic: quickstart
@@ -54,12 +54,12 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet add package Azure.Identity
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add Azure.Identity
+    dotnet package add Azure.AI.OpenAI
+    dotnet package add Microsoft.Extensions.AI
+    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end
@@ -67,10 +67,10 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package Microsoft.Extensions.AI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add Microsoft.Extensions.AI
+    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end

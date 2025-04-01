@@ -109,7 +109,7 @@ let main args =
     0 // return an integer exit code
 ```
 
-Add a reference to the `Library` project using [dotnet add reference](../../core/tools/dotnet-add-reference.md).
+Add a reference to the `Library` project using [dotnet reference add](../../core/tools/dotnet-reference-add.md).
 
 ```dotnetcli
 dotnet add src/App/App.fsproj reference src/Library/Library.fsproj

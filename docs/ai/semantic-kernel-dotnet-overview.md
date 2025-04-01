@@ -27,7 +27,7 @@ The Semantic Kernel SDK is available as a NuGet package for .NET and integrates 
 Install the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package using the following command:
 
 ```dotnetcli
-dotnet add package Microsoft.SemanticKernel
+dotnet package add Microsoft.SemanticKernel
 ```
 
 > [!NOTE]

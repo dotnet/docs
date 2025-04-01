@@ -1,7 +1,7 @@
 ---
-title: "Default values of built in types"
-description: "Learn the default values of C# types such as bool, char, int, float, double and more."
-ms.date: 09/28/2021
+title: "Default values of built-in types"
+description: "Learn the default values of C# types such as bool, char, int, float, double, and more."
+ms.date: 11/22/2024
 helpviewer_keywords: 
   - "default [C#]"
   - "parameterless constructor [C#]"
@@ -47,7 +47,7 @@ Console.WriteLine(n);  // output: (0, 0)
 At run time, if the <xref:System.Type?displayProperty=nameWithType> instance represents a value type, you can use the <xref:System.Activator.CreateInstance(System.Type)?displayProperty=nameWithType> method to invoke the parameterless constructor to obtain the default value of the type.
 
 > [!NOTE]
-> In C# 10 and later, a [structure type](struct.md) (which is a value type) may have an [explicit parameterless constructor](struct.md#struct-initialization-and-default-values) that may produce a non-default value of the type. Thus, we recommend using the `default` operator or the `default` literal to produce the default value of a type.
+> A [structure type](struct.md) (which is a value type) may have an [explicit parameterless constructor](struct.md#struct-initialization-and-default-values) that may produce a non-default value of the type. Thus, we recommend using the `default` operator or the `default` literal to produce the default value of a type.
 
 ## C# language specification
 
@@ -55,7 +55,7 @@ For more information, see the following sections of the [C# language specificati
 
 - [Default values](~/_csharpstandard/standard/variables.md#93-default-values)
 - [Default constructors](~/_csharpstandard/standard/types.md#833-default-constructors)
-- [C# 10 - Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
+- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
 - [C# 11 - Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
 
 ## See also

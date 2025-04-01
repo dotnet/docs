@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 class SimpleClass
 {
     // Static variable that must be initialized at run time.
@@ -31,15 +31,14 @@ public class Bus
 
         // The following statement produces the first line of output,
         // and the line occurs only once.
-        Console.WriteLine("Static constructor sets global start time to {0}",
-            globalStartTime.ToLongTimeString());
+        Console.WriteLine($"Static constructor sets global start time to {globalStartTime.ToLongTimeString()}");
     }
 
     // Instance constructor.
     public Bus(int routeNum)
     {
         RouteNumber = routeNum;
-        Console.WriteLine("Bus #{0} is created.", RouteNumber);
+        Console.WriteLine($"Bus #{RouteNumber} is created.");
     }
 
     // Instance method.
@@ -49,10 +48,7 @@ public class Bus
 
         // For demonstration purposes we treat milliseconds as minutes to simulate
         // actual bus times. Do not do this in your actual bus schedule program!
-        Console.WriteLine("{0} is starting its route {1:N2} minutes after global start time {2}.",
-                                this.RouteNumber,
-                                elapsedTime.Milliseconds,
-                                globalStartTime.ToShortTimeString());
+        Console.WriteLine($"{this.RouteNumber} is starting its route {elapsedTime.Milliseconds:N2} minutes after global start time {globalStartTime.ToShortTimeString()}.");
     }
 }
 

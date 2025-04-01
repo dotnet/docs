@@ -32,7 +32,7 @@ highlightedContent:
     # Card
     - title: What's new
       itemType: whats-new
-      url: ./whats-new/csharp-13.md
+      url: ./whats-new/csharp-14.md
     # Card
     - title: Learn C# video series
       itemType: video
@@ -61,7 +61,7 @@ productDirectory:
           text: A tour of C#
         - url: ./tour-of-csharp/tutorials/index.md
           text: Beginner C# tutorials
-        - url: ./tour-of-csharp/tutorials/hello-world.yml
+        - url: ./tour-of-csharp/tutorials/hello-world.md
           text: Try C# in your browser
         - url: ./fundamentals/program-structure/index.md
           text: "Inside a C# program"
@@ -195,7 +195,7 @@ tools:
       imageSrc: /visualstudio/media/vs-ide-2022.svg
       url: /visualstudio/windows
     # Card
-    - title: Visual Studio Code 
+    - title: Visual Studio Code
       imageSrc: /visualstudio/media/vs-code-logo.svg
       url: https://code.visualstudio.com/docs/csharp/get-started
 
@@ -305,7 +305,7 @@ additionalContent:
         # Card
         - title: ".NET API reference"
           summary: API reference documentation for .NET
-          url: ../../api/index.md?view=net-8.0
+          url: ../../api/index.md
         # Card
         - title: ".NET Framework API reference"
           summary: API reference documentation for .NET Framework
@@ -313,15 +313,11 @@ additionalContent:
         # Card
         - title: "ASP.NET Core API reference"
           summary: API reference documentation for ASP.NET Core
-          url: ../../api/index.md?view=view=aspnetcore-8.0&preserve-view=true
+          url: ../../api/index.md
         # Card
         - title: "ML.NET API reference"
           summary: API reference documentation for ML.NET
-          url: ../../api/index.md?view=ml-dotnet&preserve-view=true
-        # Card
-        - title: ".NET Platform Extensions API reference"
-          summary: API reference documentation for .NET Platform Extensions
-          url: ../../api/index.md?view=dotnet-plat-ext-8.0&preserve-view=true
+          url: ../../api/index.md
 
   # footer (Optional; Remove if not applicable.)
   footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

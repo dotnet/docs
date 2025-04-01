@@ -1,4 +1,4 @@
-﻿namespace Joins;
+namespace Joins;
 
 
 //<snippet23>
@@ -70,7 +70,7 @@ class JoinDemonstration
         {
             Console.WriteLine("{0,-10}{1}", item.Product, item.Category);
         }
-        Console.WriteLine("InnerJoin: {0} items in 1 group.", innerJoinQuery.Count());
+        Console.WriteLine($"InnerJoin: {innerJoinQuery.Count()} items in 1 group.");
         Console.WriteLine(System.Environment.NewLine);
     }
 
@@ -99,7 +99,7 @@ class JoinDemonstration
                 Console.WriteLine("   {0,-10}{1}", item.Name, item.CategoryID);
             }
         }
-        Console.WriteLine("Unshaped GroupJoin: {0} items in {1} unnamed groups", totalItems, groupJoinQuery.Count());
+        Console.WriteLine($"Unshaped GroupJoin: {totalItems} items in {groupJoinQuery.Count()} unnamed groups");
         Console.WriteLine(System.Environment.NewLine);
     }
 
@@ -130,7 +130,7 @@ class JoinDemonstration
                 Console.WriteLine("  {0,-10} {1}", prodItem.Name, prodItem.CategoryID);
             }
         }
-        Console.WriteLine("GroupInnerJoin: {0} items in {1} named groups", totalItems, groupJoinQuery2.Count());
+        Console.WriteLine($"GroupInnerJoin: {totalItems} items in {groupJoinQuery2.Count()} named groups");
         Console.WriteLine(System.Environment.NewLine);
     }
 
@@ -151,10 +151,10 @@ class JoinDemonstration
         foreach (var item in groupJoinQuery3)
         {
             totalItems++;
-            Console.WriteLine("   {0}:{1}", item.ProductName, item.Category);
+            Console.WriteLine($"   {item.ProductName}:{item.Category}");
         }
 
-        Console.WriteLine("GroupJoin3: {0} items in 1 group", totalItems);
+        Console.WriteLine($"GroupJoin3: {totalItems} items in 1 group");
         Console.WriteLine(System.Environment.NewLine);
     }
 
@@ -181,7 +181,7 @@ class JoinDemonstration
                 Console.WriteLine("  {0,-10}{1}", item.Name, item.CategoryID);
             }
         }
-        Console.WriteLine("LeftOuterJoin: {0} items in {1} groups", totalItems, leftOuterQuery.Count());
+        Console.WriteLine($"LeftOuterJoin: {totalItems} items in {leftOuterQuery.Count()} groups");
         Console.WriteLine(System.Environment.NewLine);
     }
 
@@ -194,7 +194,7 @@ class JoinDemonstration
            from item in prodGroup.DefaultIfEmpty()
            select new { Name = item == null ? "Nothing!" : item.Name, CategoryID = category.ID };
 
-        Console.WriteLine("LeftOuterJoin2: {0} items in 1 group", leftOuterQuery2.Count());
+        Console.WriteLine($"LeftOuterJoin2: {leftOuterQuery2.Count()} items in 1 group");
         // Store the count of total items
         int totalItems = 0;
 
@@ -206,7 +206,7 @@ class JoinDemonstration
             totalItems++;
             Console.WriteLine("{0,-10}{1}", item.Name, item.CategoryID);
         }
-        Console.WriteLine("LeftOuterJoin2: {0} items in 1 group", totalItems);
+        Console.WriteLine($"LeftOuterJoin2: {totalItems} items in 1 group");
     }
 }
 /*Output:

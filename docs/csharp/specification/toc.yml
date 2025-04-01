@@ -85,14 +85,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-9.0/top-level-statements.md
     - name: Module initializers
       href: ../../../_csharplang/proposals/csharp-9.0/module-initializers.md
-    - name: Suppress emitting localsinit flag
-      href: ../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
   - name: Types
     items:
-    - name: Nullable reference types - proposal
-      href: ../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
-    - name: Nullable reference types - specification
-      href: ../../../_csharplang/proposals/csharp-9.0/nullable-reference-types-specification.md
     - name: Records
       href: ../../../_csharplang/proposals/csharp-9.0/records.md
     - name: Record structs
@@ -121,6 +115,10 @@ items:
       href: ../../../_csharplang/proposals/csharp-10.0/improved-definite-assignment.md
     - name: Ref readonly parameters
       href: ../../../_csharplang/proposals/csharp-12.0/ref-readonly-parameters.md
+  - name: Conversions
+    items:
+    - name: First class span types
+      href: ../../../_csharplang/proposals/first-class-span-types.md
   - name: Patterns
     items:
     - name: Recursive pattern matching
@@ -161,6 +159,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-13.0/method-group-natural-type-improvements.md
     - name: Optional Lambda expression parameters
       href: ../../../_csharplang/proposals/csharp-12.0/lambda-method-group-defaults.md
+    - name: Simple lambda parameters with modifiers
+      href: ../../../_csharplang/proposals/simple-lambda-parameters-with-modifiers.md
     - name: Checked user-defined operators
       href: ../../../_csharplang/proposals/csharp-11.0/checked-user-defined-operators.md
     - name: Unsigned right-shift operator
@@ -171,6 +171,8 @@ items:
       href: ../../../_csharplang/proposals/csharp-10.0/caller-argument-expression.md
     - name: Extended nameof scope
       href: ../../../_csharplang/proposals/csharp-11.0/extended-nameof-scope.md
+    - name: Unbound generic types in nameof
+      href: ../../../_csharplang/proposals/unbound-generic-types-in-nameof.md
     - name: Overload resolution priority
       href: ../../../_csharplang/proposals/csharp-13.0/overload-resolution-priority.md
   - name: Statements
@@ -185,8 +187,6 @@ items:
       href: ../../../_csharplang/proposals/csharp-8.0/using.md
     - name: Async streams
       href: ../../../_csharplang/proposals/csharp-8.0/async-streams.md
-    - name: Nested stackalloc
-      href: ../../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
     - name: Lock object semantics
       href: ../../../_csharplang/proposals/csharp-13.0/lock-object.md
     - name: Allow `ref` and `unsafe`
@@ -201,6 +201,10 @@ items:
       href: ../../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
     - name: Partial properties
       href: ../../../_csharplang/proposals/csharp-13.0/partial-properties.md
+    - name: Partial events and constructors
+      href: ../../../_csharplang/proposals/partial-events-and-constructors.md
+    - name: Field backed properties (preview)
+      href: ../../../_csharplang/proposals/field-keyword.md
     - name: Covariant return types
       href: ../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
     - name: Primary constructors
@@ -229,6 +233,8 @@ items:
     items:
     - name: Default interface methods
       href: ../../../_csharplang/proposals/csharp-8.0/default-interface-methods.md
+    - name: Variance safety for static interface members
+      href: ../../../_csharplang/proposals/csharp-9.0/variance-safety-for-static-interface-members.md
     - name: Static abstracts in interfaces
       href: ../../../_csharplang/proposals/csharp-11.0/static-abstracts-in-interfaces.md
     - name: Allow ref struct interfaces

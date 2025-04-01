@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Text.RegularExpressions;
 
@@ -8,7 +8,7 @@ public class Example
    {
       string pattern = @"\{\d+(,-*\d+)*(\:\w{1,4}?)*\}(?x) # Looks for a composite format item.";
       string input = "{0,-3:F}";
-      Console.WriteLine("'{0}':", input);
+      Console.WriteLine($"'{input}':");
       if (Regex.IsMatch(input, pattern))
          Console.WriteLine("   contains a composite format item.");
       else

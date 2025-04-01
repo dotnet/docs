@@ -1,9 +1,8 @@
 ---
 title: Source-generation modes in System.Text.Json
 description: Learn about the two different source-generation modes in System.Text.Json.
-ms.date: 10/30/2023
+ms.date: 02/21/2025
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-version
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"
@@ -13,7 +12,7 @@ helpviewer_keywords:
 
 # Source-generation modes in System.Text.Json
 
-Source generation can be used in two modes: metadata-based and serialization optimization. This article describes the different modes.
+Source generation can be used in two modes: *metadata-based* and *serialization optimization*. This article describes the different modes.
 
 For information about how to use source generation modes, see [How to use source generation in System.Text.Json](source-generation.md).
 
@@ -25,17 +24,7 @@ The performance improvements provided by source generation can be substantial. F
 
 ### Known issues
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
-Only `public` properties and fields are supported by default in either serialization mode. However, reflection mode supports the use of `private` *accessors*, while source-generation mode doesn't. For example, you can apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a property that has a `private` setter or getter and it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on non-public accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
-Only `public` properties and fields are supported by default in either serialization mode. However, reflection mode supports the use of `private` members and `private` *accessors*, while source-generation mode doesn't. For example, if you apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a `private` property or a property that has a `private` setter or getter, it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` members and `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on `private` members or accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
-
-:::zone-end
+Only `public` properties and fields are supported by default in either serialization mode (reflection or source-generation). However, reflection mode supports the use of `private` members, while source-generation mode doesn't. For example, if you apply the [JsonInclude attribute](xref:System.Text.Json.Serialization.JsonIncludeAttribute) to a `private` property or a property that has a `private` setter or getter, it will be serialized in reflection mode. Source-generation mode supports only `public` or `internal` members and `public` or `internal` accessors of `public` properties. If you set `[JsonInclude]` on `private` members or accessors and choose source-generation mode, a `NotSupportedException` will be thrown at run time.
 
 For information about other known issues with source generation, see the [GitHub issues that are labeled "source-generator"](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json+label%3Asource-generator) in the *dotnet/runtime* repository.
 
@@ -43,7 +32,9 @@ For information about other known issues with source generation, see the [GitHub
 
 `JsonSerializer` has many features that customize the output of serialization, such as [naming policies](customize-properties.md#use-a-built-in-naming-policy) and [preserving references](preserve-references.md#preserve-references-and-handle-circular-references). Support for all those features causes some performance overhead. Source generation can improve serialization performance by generating optimized code that uses [`Utf8JsonWriter`](use-utf8jsonwriter.md) directly.
 
-The optimized code doesn't support all of the serialization features that `JsonSerializer` supports. The serializer detects whether the optimized code can be used and falls back to default serialization code if unsupported options are specified. For example, <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType> isn't applicable to writing, so specifying this option doesn't cause a fallback to default code.
+Serialization-optimization mode emits fast-path serialization methods but not serialization metadata. Fast-path serialization is restricted in what it can do; it doesn't support asynchronous serialization or any mode of deserialization.
+
+In addition, the optimized code doesn't support all of the serialization features that `JsonSerializer` supports. The serializer detects whether the optimized code can be used and falls back to default serialization code if unsupported options are specified. For example, <xref:System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString?displayProperty=nameWithType> isn't applicable to writing, so specifying this option doesn't cause a fallback to default code.
 
 The following table shows which options in `JsonSerializerOptions` are supported by fast-path serialization:
 
@@ -84,7 +75,7 @@ The following table shows which attributes are supported by fast-path serializat
 | <xref:System.Text.Json.Serialization.JsonPropertyOrderAttribute>  | ✔️                      |
 | <xref:System.Text.Json.Serialization.JsonRequiredAttribute>       | ✔️                      |
 
-If a non-supported option or attribute is specified for a type, the serializer falls back to metadata mode, assuming that the source generator has been configured to generate metadata. In that case, the optimized code isn't used when serializing that type but may be used for other types. Therefore it's important to do performance testing with your options and workloads to determine how much benefit you can actually get from serialization-optimization mode. Also, the ability to fall back to `JsonSerializer` code requires metadata-collection mode. If you select only serialization-optimization mode, serialization might fail for types or options that need to fall back to `JsonSerializer` code.
+If a non-supported option or attribute is specified for a type, the serializer falls back to [metadata mode](#metadata-based-mode), assuming that the source generator has been configured to generate metadata. In that case, the optimized code isn't used when serializing that type, but it might be used for other types. Therefore it's important to do performance testing with your options and workloads to determine how much benefit you can actually get from serialization-optimization mode. Also, the ability to fall back to `JsonSerializer` code requires [metadata mode](#metadata-based-mode). If you select only serialization-optimization mode, serialization might fail for types or options that need to fall back to `JsonSerializer` code.
 
 ## See also
 

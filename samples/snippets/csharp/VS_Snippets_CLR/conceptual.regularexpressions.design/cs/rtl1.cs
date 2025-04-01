@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,18 +13,16 @@ public class Example
         // Match from left-to-right using lazy quantifier .+?.
         match = Regex.Match(input, greedyPattern);
         if (match.Success)
-            Console.WriteLine("Number at end of sentence (left-to-right): {0}",
-                              match.Groups[1].Value);
+            Console.WriteLine($"Number at end of sentence (left-to-right): {match.Groups[1].Value}");
         else
-            Console.WriteLine("{0} finds no match.", greedyPattern);
+            Console.WriteLine($"{greedyPattern} finds no match.");
 
         // Match from right-to-left using greedy quantifier .+.
         match = Regex.Match(input, greedyPattern, RegexOptions.RightToLeft);
         if (match.Success)
-            Console.WriteLine("Number at end of sentence (right-to-left): {0}",
-                              match.Groups[1].Value);
+            Console.WriteLine($"Number at end of sentence (right-to-left): {match.Groups[1].Value}");
         else
-            Console.WriteLine("{0} finds no match.", greedyPattern);
+            Console.WriteLine($"{greedyPattern} finds no match.");
     }
 }
 // The example displays the following output:

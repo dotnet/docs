@@ -3,20 +3,15 @@
 public sealed class DefaultScopedProcessingService(
     ILogger<DefaultScopedProcessingService> logger) : IScopedProcessingService
 {
-    private int _executionCount;
+    private readonly string _instanceId = Guid.NewGuid().ToString();
 
-    public async Task DoWorkAsync(CancellationToken stoppingToken)
+    public Task DoWorkAsync(CancellationToken stoppingToken)
     {
-        while (!stoppingToken.IsCancellationRequested)
-        {
-            ++ _executionCount;
+        logger.LogInformation(
+            "{ServiceName} doing work, instance ID: {Id}",
+            nameof(DefaultScopedProcessingService),
+            _instanceId);
 
-            logger.LogInformation(
-                "{ServiceName} working, execution count: {Count}",
-                nameof(DefaultScopedProcessingService),
-                _executionCount);
-
-            await Task.Delay(10_000, stoppingToken);
-        }
+        return Task.CompletedTask;
     }
 }

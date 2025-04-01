@@ -15,7 +15,7 @@ namespace microsoft.wcf.documentation
     using System.Runtime.Serialization;
 
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute()]
     public partial class SampleFault : object, System.Runtime.Serialization.IExtensibleDataObject
     {
@@ -52,7 +52,7 @@ namespace microsoft.wcf.documentation
 }
 
 
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://microsoft.wcf.documentation")]
 public interface ISampleService
 {
@@ -62,12 +62,12 @@ public interface ISampleService
     string SampleMethod(string msg);
 }
 
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 public interface ISampleServiceChannel : ISampleService, System.ServiceModel.IClientChannel
 {
 }
 
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 public partial class SampleServiceClient : System.ServiceModel.ClientBase<ISampleService>, ISampleService
 {
 

@@ -17,7 +17,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) method.
 
  [CLRDataAddressType Enumeration](clrdataaddresstype-enumeration.md)\
- Indicates the type of data contained at a given address by the [IXCLRDataProcess::GetAddressType](ixclrdataprocess-getaddresstype-method.md)
+ Indicates the type of data contained at a given address by the [IXCLRDataProcess::GetAddressType](ixclrdataprocess-getaddresstype-method.md).
 
  [CLRDataByNameFlag Enumeration](clrdatabynameflag-enumeration.md)\
  Indicates how names should match in a search.
@@ -49,7 +49,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  [CLRDataOtherNotifyFlag Enumeration](clrdataothernotifyflag-enumeration.md)\
  Indicates the type of notifications that should be delivered. Used in calls to [IXCLRDataProcess::SetOtherNotificationFlags Method](ixclrdataprocess-setothernotificationflags-method.md).
 
- [CLRDataSimpleFrameType Enumeraiton](clrdatasimpleframetype-enumeration.md)\
+ [CLRDataSimpleFrameType Enumeration](clrdatasimpleframetype-enumeration.md)\
  Describes a type of frame in the call stack from [IXCLRDataStackWalk::GetFrameType](ixclrdatastackwalk-getframetype-method.md).
 
  [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)\

@@ -29,7 +29,7 @@ This article describes how to configure the SQL Workflow Instance Store feature 
      For more information about how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). For more information about the individual settings for the `<sqlWorkflowInstanceStore>` behavior element, see [SQL Workflow Instance Store](../../windows-workflow-foundation/sql-workflow-instance-store.md).
 
     > [!NOTE]
-    > The preceding configuration example uses simplified configuration. For more information, see [Simplified Configuration](../simplified-configuration.md)
+    > The preceding configuration example uses simplified configuration. For more information, see [Simplified Configuration](../simplified-configuration.md).
 
 ## To Configure the SQL Workflow Instance Store in Code
 
@@ -50,7 +50,7 @@ This article describes how to configure the SQL Workflow Instance Store feature 
      For more information about how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). For more information about the individual settings for the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> behavior element, see [SQL Workflow Instance Store](../../windows-workflow-foundation/sql-workflow-instance-store.md).
 
     > [!NOTE]
-    > The preceding configuration example uses simplified configuration. For more information, see [Simplified Configuration](../simplified-configuration.md)
+    > The preceding configuration example uses simplified configuration. For more information, see [Simplified Configuration](../simplified-configuration.md).
 
      For an example of how to configure persistence programmatically see [How to: Enable Persistence for Workflows and Workflow Services](../../windows-workflow-foundation/how-to-enable-persistence-for-workflows-and-workflow-services.md).
 

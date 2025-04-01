@@ -13,10 +13,8 @@ namespace SystemTextJsonSamples
 
             Console.WriteLine("Deserialize JSON string [1, 2, 3] with custom converter, then serialize it back to JSON.");
             // <Register>
-            var options = new JsonSerializerOptions
-            {
-                Converters = { new JsonConverterFactoryForStackOfT() },
-            };
+            var options = new JsonSerializerOptions();
+            options.Converters.Add(new JsonConverterFactoryForStackOfT());
             // </Register>
             stack = JsonSerializer.Deserialize<Stack<int>>("[1, 2, 3]", options)!;
             serialized = JsonSerializer.Serialize(stack, options);

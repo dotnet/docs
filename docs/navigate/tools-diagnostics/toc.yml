@@ -33,6 +33,8 @@ items:
                 href: ../../core/tools/sdk-errors/netsdk1013.md
               - name: NETSDK1022
                 href: ../../core/tools/sdk-errors/netsdk1022.md
+              - name: NETSDK1032
+                href: ../../core/tools/sdk-errors/netsdk1032.md
               - name: NETSDK1045
                 href: ../../core/tools/sdk-errors/netsdk1045.md
               - name: NETSDK1059
@@ -67,6 +69,8 @@ items:
                 href: ../../core/tools/sdk-errors/netsdk1138.md
               - name: NETSDK1141
                 href: ../../core/tools/sdk-errors/netsdk1141.md
+              - name: NETSDK1144
+                href: ../../core/tools/sdk-errors/netsdk1144.md
               - name: NETSDK1145
                 href: ../../core/tools/sdk-errors/netsdk1145.md
               - name: NETSDK1147
@@ -387,6 +391,9 @@ items:
             displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
           - name: Collection
             href: ../../core/diagnostics/metrics-collection.md
+          - name: Source-generated metrics
+            displayName: strongly-typed tags,dimensions
+            href: ../../core/diagnostics/metrics-strongly-typed.md
           - name: Built-in metrics
             items:
               - name: Overview
@@ -421,6 +428,8 @@ items:
             href: ../../core/diagnostics/distributed-tracing-instrumentation-walkthroughs.md
           - name: Collection
             href: ../../core/diagnostics/distributed-tracing-collection-walkthroughs.md
+          - name: Built-in activities
+            href: ../../core/diagnostics/distributed-tracing-builtin-activities.md
       - name: Specialized diagnostics
         items:
           - name: Overview
@@ -471,12 +480,18 @@ items:
                 href: ../../core/diagnostics/dumps.md
               - name: Linux dumps
                 href: ../../core/diagnostics/debug-linux-dumps.md
+              - name: .NET debugger extensions
+                href: ../../core/diagnostics/debugger-extensions.md
               - name: SOS debugger extension
                 href: ../../core/diagnostics/sos-debugging-extension.md
               - name: Debug Windows dumps
                 href: ../../core/diagnostics/debug-windows-dumps.md
               - name: Collect dumps on crash
                 href: ../../core/diagnostics/collect-dumps-crash.md
+              - name: Frequently asked questions
+                href: ../../core/diagnostics/faq-dumps.yml
+              - name: Install and use LLDB on Linux
+                href: ../../core/diagnostics/lldb-linux.md
           - name: Symbols
             href: ../../core/diagnostics/symbols.md
           - name: EventPipe
@@ -524,6 +539,8 @@ items:
             href: ../../core/diagnostics/dotnet-stack.md
           - name: dotnet-symbol
             href: ../../core/diagnostics/dotnet-symbol.md
+          - name: dotnet-debugger-extensions
+            href: ../../core/diagnostics/dotnet-debugger-extensions.md
           - name: dotnet-sos
             href: ../../core/diagnostics/dotnet-sos.md
           - name: dotnet-dsrouter
@@ -1100,6 +1117,8 @@ items:
                     href: ../../core/deploying/single-file/warnings/il3002.md
                   - name: IL3003
                     href: ../../core/deploying/single-file/warnings/il3003.md
+                  - name: IL3005
+                    href: ../../core/deploying/single-file/warnings/il3005.md
               - name: Reliability rules
                 items:
                   - name: Overview
@@ -1139,6 +1158,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2021.md
                   - name: CA2022
                     href: ../../fundamentals/code-analysis/quality-rules/ca2022.md
+                  - name: CA2024
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2024.md
               - name: Security rules
                 items:
                   - name: Overview
@@ -1596,6 +1617,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0110.md
                   - name: IDE0120
                     href: ../../fundamentals/code-analysis/style-rules/ide0120.md
+                  - name: IDE0121
+                    href: ../../fundamentals/code-analysis/style-rules/ide0121.md
                   - name: IDE0130
                     href: ../../fundamentals/code-analysis/style-rules/ide0130.md
                   - name: IDE0140
@@ -1648,6 +1671,16 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0304.md
                   - name: IDE0305
                     href: ../../fundamentals/code-analysis/style-rules/ide0305.md
+                  - name: IDE0306
+                    href: ../../fundamentals/code-analysis/style-rules/ide0306.md
+                  - name: IDE0320
+                    href: ../../fundamentals/code-analysis/style-rules/ide0320.md
+                  - name: IDE0330
+                    href: ../../fundamentals/code-analysis/style-rules/ide0330.md
+                  - name: IDE0340
+                    href: ../../fundamentals/code-analysis/style-rules/ide0340.md
+                  - name: IDE0350
+                    href: ../../fundamentals/code-analysis/style-rules/ide0350.md
                   - name: IDE1005
                     href: ../../fundamentals/code-analysis/style-rules/ide1005.md
               - name: Miscellaneous rules
@@ -1677,7 +1710,7 @@ items:
                 href: /visualstudio/ide/reference/json001?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
               - name: JSON002
                 href: /visualstudio/ide/reference/json002?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
-              - name: JRE0001
+              - name: RE0001
                 href: /visualstudio/ide/reference/re0001?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Platform compatibility analyzer
         href: ../../standard/analyzers/platform-compat-analyzer.md
@@ -1804,11 +1837,21 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0056.md
           - name: SYSLIB0057
             href: ../../fundamentals/syslib-diagnostics/syslib0057.md
+          - name: SYSLIB0058
+            href: ../../fundamentals/syslib-diagnostics/syslib0058.md
+          - name: SYSLIB0059
+            href: ../../fundamentals/syslib-diagnostics/syslib0059.md
+          - name: SYSLIB0060
+            href: ../../fundamentals/syslib-diagnostics/syslib0060.md
+          - name: SYSLIB0061
+            href: ../../fundamentals/syslib-diagnostics/syslib0061.md
       - name: Experimental features
         items:
           - name: Overview
             displayName: syslib, experimental
             href: ../../fundamentals/syslib-diagnostics/experimental-overview.md
+          - name: SYSLIB5003
+            href: ../../fundamentals/syslib-diagnostics/syslib5003.md
       - name: Source-generated code
         items:
           - name: Overview
@@ -1907,8 +1950,6 @@ items:
       - name: Overview
         href: ../../fundamentals/apicompat/overview.md
         displayName: api compatibility,apicompat
-      - name: Preview APIs
-        href: ../../fundamentals/apicompat/preview-apis.md
       - name: Diagnostic IDs
         href: ../../fundamentals/apicompat/diagnostic-ids.md
       - name: Assembly validation

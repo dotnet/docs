@@ -113,7 +113,7 @@ In this example, grains *A* and *B* can call each other simultaneously without a
 
 The <xref:Orleans.Grain> implementation classes may be marked with the <xref:Orleans.Concurrency.ReentrantAttribute> to indicate that different requests may be freely interleaved.
 
-In other words, a re-entrant activation may start executing another request while a previous request hasn't finished processing. Execution is still limited to a single thread, so the activation is still executing one turn at a time, and each turn is executing on behalf of only one of the activation's requests.
+In other words, a re-entrant activation might start another request while a previous request hasn't finished processing. Execution is still limited to a single thread, so the activation is still executing one turn at a time, and each turn is executing on behalf of only one of the activation's requests.
 
 Re-entrant grain code never runs multiple pieces of grain code in parallel (execution of grain code is always single-threaded), but re-entrant grains **may** see the execution of code for different requests interleaving. That is, the continuation turns from different requests may interleave.
 
@@ -207,6 +207,8 @@ public interface IMyGrain : IGrainWithIntegerKey
 }
 ```
 
+The `GetCount` method doesn't modify the grain state, so it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other `ReadOnly` requests to the grain, and the method returns immediately.
+
 ### Call chain reentrancy
 
 If a grain calls a method which on another grain which then calls back into the original grain, the call will result in a deadlock unless the call is reentrant. Reentrancy can be enabled on a per-call-site basis by using *call chain reentrancy*. To enable call chain reentrancy, call the <xref:Orleans.Runtime.RequestContext.AllowCallChainReentrancy> method, which returns a value that allows reentrance from any caller further down the call chain until it is disposed. This includes reentrance from the grain calling the method itself. Consider the following example:
@@ -253,8 +255,6 @@ If you were to instead prevent the deadlock by annotating the `GetDisplayName()`
 #### Suppress call chain reentrancy
 
 Call chain reentrance can also be *suppressed* using the <xref:Orleans.Runtime.RequestContext.SuppressCallChainReentrancy> method. This has limited usefulness to end developers, but it is important for internal use by libraries which extend Orleans grain functionality, such as [streaming](../streaming/index.md) and [broadcast channels](../streaming/broadcast-channel.md) to ensure that developers retain full control over when call chain reentrancy is enabled.
-
-The `GetCount` method doesn't modify the grain state, so it's marked with `ReadOnly`. Callers awaiting this method invocation aren't blocked by other `ReadOnly` requests to the grain, and the method returns immediately.
 
 ### Reentrancy using a predicate
 

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -35,10 +35,8 @@ public class Example
 
    private static void DisplayCurrentInfo()
    {
-      Console.WriteLine("Current Culture: {0}",
-                        CultureInfo.CurrentCulture.Name);
-      Console.WriteLine("Current Calendar: {0}",
-                        DateTimeFormatInfo.CurrentInfo.Calendar);
+      Console.WriteLine($"Current Culture: {CultureInfo.CurrentCulture.Name}");
+      Console.WriteLine($"Current Calendar: {DateTimeFormatInfo.CurrentInfo.Calendar}");
    }
 
    private static bool CalendarExists(CultureInfo culture, Calendar cal)

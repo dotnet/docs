@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Globalization;
 
@@ -18,12 +18,11 @@ public class ParseEx1
                 try
                 {
                     Decimal amount = Decimal.Parse(value, culture);
-                    Console.WriteLine("'{0}' --> {1} ({2})", value, amount, name);
+                    Console.WriteLine($"'{value}' --> {amount} ({name})");
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("'{0}': FormatException ({1})",
-                                      value, name);
+                    Console.WriteLine($"'{value}': FormatException ({name})");
                 }
             }
             Console.WriteLine();

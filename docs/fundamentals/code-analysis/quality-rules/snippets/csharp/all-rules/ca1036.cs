@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 //<snippet1>
@@ -128,7 +128,7 @@ public class TestCompare
         else
             answer = "equal to";
 
-        Console.WriteLine("{0} is {1} {2}", r1.Rating, answer, r2.Rating);
+        Console.WriteLine($"{r1.Rating} is {answer} {r2.Rating}");
     }
 }
 //</snippet2>

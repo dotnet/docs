@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ServiceModel;
 using System.ServiceModel.Dispatcher;
 using System.ServiceModel.Channels;
@@ -17,7 +17,7 @@ namespace Microsoft.ServiceModel.Samples
         {
             if (error != null && error.GetType() == typeof(MsmqPoisonMessageException))
             {
-                Console.WriteLine(" Poisoned message -message look up id = {0}", ((MsmqPoisonMessageException)error).MessageLookupId);
+                Console.WriteLine($" Poisoned message -message look up id = {((MsmqPoisonMessageException)error).MessageLookupId}");
                 return true;
             }
 

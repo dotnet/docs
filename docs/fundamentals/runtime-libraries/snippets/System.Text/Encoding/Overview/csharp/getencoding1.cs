@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -8,8 +8,7 @@ public class Example
    {
       Encoding enc = Encoding.GetEncoding(1253);
       Encoding altEnc = Encoding.GetEncoding("windows-1253");
-      Console.WriteLine("{0} = Code Page {1}: {2}", enc.EncodingName,
-                        altEnc.CodePage, enc.Equals(altEnc));
+      Console.WriteLine($"{enc.EncodingName} = Code Page {altEnc.CodePage}: {enc.Equals(altEnc)}");
       string greekAlphabet = "Α α Β β Γ γ Δ δ Ε ε Ζ ζ Η η " +
                              "Θ θ Ι ι Κ κ Λ λ Μ μ Ν ν Ξ ξ " +
                              "Ο ο Π π Ρ ρ Σ σ ς Τ τ Υ υ " +

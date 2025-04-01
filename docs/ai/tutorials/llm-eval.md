@@ -3,7 +3,7 @@ title: "Tutorial: Evaluate an LLM's prompt completions"
 description: "Evaluate the coherence, relevance, and groundedness of an LLM's prompt completions using Azure OpenAI and the Semantic Kernel SDK for .NET."
 author: haywoodsloan
 ms.topic: tutorial
-ms.date: 05/08/2024
+ms.date: 11/24/2024
 
 #customer intent: As a .NET developer, I want to evaluate an LLM's prompt completions using .NET so that I can choose an LLM for my .NET application that fits my use case.
 
@@ -150,7 +150,7 @@ The evaluation results [generated in the previous step](#4---perform-an-evaluati
 If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
 1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
-1. Select the Azure OpenAI resource then select **Delete**.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 ## Related content
 

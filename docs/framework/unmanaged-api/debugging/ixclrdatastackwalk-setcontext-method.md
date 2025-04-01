@@ -19,7 +19,7 @@ ms.author: "wmessmer"
 ---
 # IXCLRDataStackWalk::SetContext Method
 
-Changes the current cotnext of this stack walk, allowing the debugger to move it to an arbitrary context.  Does not actually alter the current context of the thread whose stack is being walked.
+Changes the current context of this stack walk, allowing the debugger to move it to an arbitrary context.  Does not actually alter the current context of the thread whose stack is being walked.
 
 NOTE: This method is obsolete.
 

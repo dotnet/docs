@@ -1,14 +1,14 @@
 ---
 title: 'Tutorial: ML.NET classification model to categorize images'
-description: Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing.
+description: Learn how to train a classification model to categorize images using a pretrained TensorFlow model for image processing.
 ms.date: 11/11/2021
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-#Customer intent: As a developer, I want to train a classification model with ML.NET to categorize images using a pre-trained TensorFlow model to process images.
+#Customer intent: As a developer, I want to train a classification model with ML.NET to categorize images using a pretrained TensorFlow model to process images.
 ---
 # Tutorial: Train an ML.NET classification model to categorize images
 
-Learn how to train a classification model to categorize images using a pre-trained TensorFlow model for image processing.
+Learn how to train a classification model to categorize images using a pretrained TensorFlow model for image processing.
 
 The TensorFlow model was trained to classify images into a thousand categories. Because the TensorFlow model knows how to recognize patterns in images, the ML.NET model can make use of part of it in its pipeline to convert raw images into features or inputs to train a classification model.
 
@@ -16,7 +16,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Understand the problem
-> * Incorporate the pre-trained TensorFlow model into the ML.NET pipeline
+> * Incorporate the pretrained TensorFlow model into the ML.NET pipeline
 > * Train and evaluate the ML.NET model
 > * Classify a test image
 
@@ -57,7 +57,7 @@ Image classification is a specific classification task that allows us to automat
 > * "119px-Nalle_-_a_small_brown_teddy_bear.jpg" By [Jonik](https://commons.wikimedia.org/wiki/User:Jonik) - Self-photographed, CC BY-SA 2.0, <https://commons.wikimedia.org/w/index.php?curid=48166>.
 > * "193px-Broodrooster.jpg" By [M.Minderhoud](https://nl.wikipedia.org/wiki/Gebruiker:Michiel1972) - Own work, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=27403>
 
-Training an [image classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) model from scratch requires setting millions of parameters, a ton of labeled training data and a vast amount of compute resources (hundreds of GPU hours). While not as effective as training a custom model from scratch, using a pre-trained model allows you to shortcut this process by working with thousands of images vs. millions of labeled images and build a customized model fairly quickly (within an hour on a machine without a GPU). This tutorial scales that process down even further, using only a dozen training images.
+Training an [image classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) model from scratch requires setting millions of parameters, a ton of labeled training data and a vast amount of compute resources (hundreds of GPU hours). While not as effective as training a custom model from scratch, using a pretrained model allows you to shortcut this process by working with thousands of images vs. millions of labeled images and build a customized model fairly quickly (within an hour on a machine without a GPU). This tutorial scales that process down even further, using only a dozen training images.
 
 The `Inception model` is trained to classify images into a thousand categories, but for this tutorial, you need to classify images in a smaller category set, and only those categories. You can use the `Inception model`'s ability to recognize and classify images to the new limited categories of your custom image classifier.
 
@@ -67,7 +67,7 @@ The `Inception model` is trained to classify images into a thousand categories, 
 
 This tutorial uses the TensorFlow [Inception](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip) deep learning model, a popular image recognition model trained on the `ImageNet` dataset. The TensorFlow model classifies entire images into a thousand classes, such as “Umbrella”, “Jersey”, and “Dishwasher”.
 
-Because the `Inception model` has already been pre-trained on thousands of different images, internally it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. We can make use of these internal image features in the model to train a new model with far fewer classes.
+Because the `Inception model` has already been pretrained on thousands of different images, internally it contains the [image features](https://en.wikipedia.org/wiki/Feature_(computer_vision)) needed for image identification. We can make use of these internal image features in the model to train a new model with far fewer classes.
 
 As shown in the following diagram, you add a reference to the ML.NET NuGet packages in your .NET or .NET Framework applications. Under the covers, ML.NET includes and references the native `TensorFlow` library that allows you to write code that loads an existing trained `TensorFlow` model file.
 
@@ -75,13 +75,13 @@ As shown in the following diagram, you add a reference to the ML.NET NuGet packa
 
 ### Multiclass classification
 
-After using the TensorFlow inception model to extract features suitable as input for a classical machine learning algorithm, we add an ML.NET [multi-class classifier](../resources/tasks.md#multiclass-classification).
+After using the TensorFlow inception model to extract features suitable as input for a classical machine learning algorithm, you add an ML.NET [multiclass classifier](../resources/tasks.md#multiclass-classification).
 
 The specific trainer used in this case is the [multinomial logistic regression algorithm](https://en.wikipedia.org/wiki/Multinomial_logistic_regression).
 
 The algorithm implemented by this trainer performs well on problems with a large number of features, which is the case for a deep learning model operating on image data.
 
-See [Deep learning vs. machine learning](/azure/machine-learning/concept-deep-learning-vs-machine-learning) for more information.
+For more information, see [Deep learning vs. machine learning](/azure/machine-learning/concept-deep-learning-vs-machine-learning).
 
 ### Data
 
@@ -112,7 +112,7 @@ The training and testing images are located in the assets folders that you'll do
 
 1. Create a C# **Console Application** called "TransferLearningTF". Click the **Next** button.
 
-1. Choose .NET 6 as the framework to use. Click the **Create** button.
+1. Choose .NET 8 as the framework to use. Click the **Create** button.
 
 1. Install the **Microsoft.ML NuGet Package**:
 
@@ -345,7 +345,7 @@ An ML.NET model pipeline is a chain of estimators. No execution happens during p
     Image: toaster3.jpg predicted as: appliance with score: 0.9646884
     ```
 
-Congratulations! You've now successfully built a classification model in ML.NET to categorize images by using a pre-trained TensorFlow for image processing.
+Congratulations! You've now successfully built a classification model in ML.NET to categorize images by using a pretrained TensorFlow for image processing.
 
 You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/main/machine-learning/tutorials/TransferLearningTF) repository.
 
@@ -353,7 +353,7 @@ In this tutorial, you learned how to:
 > [!div class="checklist"]
 >
 > * Understand the problem
-> * Incorporate the pre-trained TensorFlow model into the ML.NET pipeline
+> * Incorporate the pretrained TensorFlow model into the ML.NET pipeline
 > * Train and evaluate the ML.NET model
 > * Classify a test image
 

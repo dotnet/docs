@@ -1,7 +1,7 @@
 ---
 title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
-ms.date: 11/15/2023
+ms.date: 11/22/2024
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -15,22 +15,20 @@ You can build many types of apps with .NET, such as cloud, IoT, and games, using
 For news about .NET, check the following blogs:
 
 - [.NET Blog](https://devblogs.microsoft.com/dotnet/)
-- [ASP.NET Blog](https://devblogs.microsoft.com/aspnet/)
 - [The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)
-- [The Visual Basic Team](https://devblogs.microsoft.com/vbteam/)
 
 Also follow the latest .NET events:
 
 - [.NET Conf](https://www.dotnetconf.net/)
-- [Microsoft Ignite](https://www.microsoft.com/ignite)
-- [Microsoft Build](https://www.microsoft.com/build)
+- [Microsoft Ignite](https://ignite.microsoft.com/)
+- [Microsoft Build](https://build.microsoft.com/)
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
-- [What's new in .NET 8](core/whats-new/dotnet-8/overview.md)
-- [What's new in .NET Framework](framework/whats-new/index.md)
-- [What's new in C# 12](./csharp/whats-new/csharp-12.md)
+- [What's new in .NET 9](core/whats-new/dotnet-9/overview.md)
+- [What's new in C# 13](./csharp/whats-new/csharp-13.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
+- [What's new in .NET Framework](framework/whats-new/index.md)
 
 ## Documentation
 

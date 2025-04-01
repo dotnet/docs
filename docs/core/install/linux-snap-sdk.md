@@ -3,7 +3,7 @@ title: Install .NET SDK on Linux with Snap
 description: Learn about how to install the .NET SDK snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/23/2024
+ms.date: 11/11/2024
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content
 #customer intent: As a Linux user, I want to install .NET SDK through Snap.
@@ -35,6 +35,8 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 
 ## 1. Install the SDK
 
+[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
+
 Snap packages for the .NET SDK are all published under the same identifier: `dotnet-sdk`. A specific version of the SDK can be installed by specifying the channel. The SDK includes both the ASP.NET Core and .NET runtime, versioned to the SDK.
 
 > [!TIP]
@@ -54,14 +56,15 @@ The `dotnet` snap alias is automatically created and mapped to the snap package'
 
 The following table lists the package channels you can install:
 
-| .NET version | Snap package channel  |
-|--------------|--------------------------|
-| 8 (LTS)      | `8.0/stable`<br>`latest/stable`<br>`lts/stable` |
-| 7            | `7.0/stable` (out of support) |
-| 6 (LTS)      | `6.0/stable` |
-| 5            | `5.0/stable` (out of support) |
-| 3.1          | `3.1/stable` (out of support) |
-| 2.1          | `2.1/stable` (out of support) |
+| .NET version | Snap package channel            |
+|--------------|---------------------------------|
+| 9 (STS)      | *Not yet available              |
+| 8 (LTS)      | `8.0/stable`<br>`lts/stable`    |
+| 7 (STS)      | `7.0/stable` (out of support)   |
+| 6 (LTS)      | `6.0/stable` (out of support)   |
+| 5            | `5.0/stable` (out of support)   |
+| 3.1          | `3.1/stable` (out of support)   |
+| 2.1          | `2.1/stable` (out of support)   |
 
 ## 2. Export the install location
 

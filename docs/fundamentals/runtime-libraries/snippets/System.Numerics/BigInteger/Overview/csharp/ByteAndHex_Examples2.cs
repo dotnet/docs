@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Globalization;
 using System.Numerics;
@@ -30,13 +30,11 @@ public class ByteHexExample2
 
         hexString = (hexValue1.Sign == 1 ? "0" : "") + hexValue1.Value;
         positiveBigInt = BigInteger.Parse(hexString, NumberStyles.HexNumber);
-        Console.WriteLine("Converted {0} to {1} and back to {2}.",
-                          positiveNumber, hexValue1.Value, positiveBigInt);
+        Console.WriteLine($"Converted {positiveNumber} to {hexValue1.Value} and back to {positiveBigInt}.");
 
         hexString = (hexValue2.Sign == 1 ? "0" : "") + hexValue2.Value;
         negativeBigInt = BigInteger.Parse(hexString, NumberStyles.HexNumber);
-        Console.WriteLine("Converted {0} to {1} and back to {2}.",
-                          negativeNumber, hexValue2.Value, negativeBigInt);
+        Console.WriteLine($"Converted {negativeNumber} to {hexValue2.Value} and back to {negativeBigInt}.");
     }
 }
 // The example displays the following output:

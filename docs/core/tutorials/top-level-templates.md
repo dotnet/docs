@@ -1,7 +1,7 @@
 ---
 title: "C# console app template changes in .NET 6+"
 description: The .NET 6+ project template for C# console apps uses top-level statements. Understand what changed and how to use existing learning materials with the new syntax.
-ms.date: 03/15/2024
+ms.date: 11/22/2024
 ---
 # C# console app template generates top-level statements
 
@@ -34,7 +34,7 @@ namespace MyApp
 
 In the preceding code, the actual namespace depends on the project name.
 
-These two forms represent the same program. Both are valid with C# 10.0. When you use the newer version, you only need to write the body of the `Main` method. The compiler generates a `Program` class with an entry point method and places all your top level statements in that method. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly. You don't need to include the other program elements, the compiler generates them for you. You can learn more about the code the compiler generates when you use top level statements in the article on [top level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) in the C# Guide's fundamentals section.
+These two forms represent the same program. Both are valid in C#. When you use the newer version, you only need to write the body of the `Main` method. The compiler generates a `Program` class with an entry point method and places all your top level statements in that method. The name of the generated method isn't `Main`, it's an implementation detail that your code can't reference directly. You don't need to include the other program elements, the compiler generates them for you. You can learn more about the code the compiler generates when you use top level statements in the article on [top level statements](../../csharp/fundamentals/program-structure/top-level-statements.md) in the C# Guide's fundamentals section.
 
 You have two options to work with tutorials that aren't updated to use .NET 6+ templates:
 

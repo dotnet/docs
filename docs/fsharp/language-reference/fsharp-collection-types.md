@@ -97,6 +97,21 @@ This section compares the functions that are available on F# collection types. T
 |partition|O(N)|O(N)|-|O(N)|O(N)|Splits the collection into two collections. The first collection contains the elements for which the given predicate returns `true`, and the second collection contains the elements for which the given predicate returns `false`.|
 |permute|O(N)|O(N)|-|-|-|Returns an array with all elements permuted according to the specified permutation.|
 |pick|O(N)|O(N)|O(N)|O(log(N))|-|Applies the given function to successive elements, returning the first result where the function returns Some. If the function never returns Some, `System.Collections.Generic.KeyNotFoundException` is raised.|
+|randomChoice|O(1)|O(1)|O(1)|-|-|Returns a random element from the given collection.|
+|randomChoiceBy|O(1)|O(1)|O(1)|-|-|Returns a random element from the given collection with the specified `randomizer` function.|
+|randomChoiceWith|O(1)|O(1)|O(1)|-|-|Returns a random element from the given collection with the specified `Random` instance.|
+|randomChoices|O(count)|O(count)|O(count)|-|-|Returns a collection of random elements from the given collection, each element can be selected multiple times.|
+|randomChoicesBy|O(count)|O(count)|O(count)|-|-|Returns a collection of random elements from the given collection with the specified `randomizer` function, each element can be selected multiple times.|
+|randomChoicesWith|O(count)|O(count)|O(count)|-|-|Returns a collection of random elements from the given collection with the specified `Random` instance, each element can be selected multiple times.|
+|randomSample|O(count)|O(count)|O(count)|-|-|Returns a random sample of elements from the given collection, each element can be selected only once.|
+|randomSampleBy|O(count)|O(count)|O(count)|-|-|Returns a random sample of elements from the given colleciton with the specified `randomizer` function, each element can be selected only once.|
+|randomSampleWith|O(count)|O(count)|O(count)|-|-|Returns a random sample of elements from the given collection with the specified `Random` instance, each element can be selected only once.|
+|randomShuffle|O(N)|O(N)|O(N)|-|-|Return a new collection shuffled in a random order.|
+|randomShuffleBy|O(N)|O(N)|O(N)|-|-|Return a new collection shuffled in a random order with the specified `randomizer` function.|
+|randomShuffleWith|O(N)|O(N)|O(N)|-|-|Return a new collection shuffled in a random order with the specified `Random` instance.|
+|randomShuffleInPlace|O(N)|-|-|-|-|Sorts input array in a random order by mutating the array in-place.|
+|randomShuffleInPlaceBy|O(N)|-|-|-|-|Sorts input array in a random order using the specified `randomizer` function by mutating the array in-place.|
+|randomShuffleInPlaceWith|O(N)|-|-|-|-|Sorts input array in a random order with the specified `Random` instance by mutating the array in-place.|
 |readonly|-|-|O(N)|-|-|Creates a sequence object that delegates to the given sequence object. This operation ensures that a type cast can't rediscover and mutate the original sequence. For example, if given an array, the returned sequence will return the elements of the array, but you can't cast the returned sequence object to an array.|
 |reduce|O(N)|O(N)|O(N)|-|-|Applies a function to each element of the collection, threading an accumulator argument through the computation. This function starts by applying the function to the first two elements, passes this result into the function along with the third element, and so on. The function returns the final result.|
 |reduceBack|O(N)|O(N)|-|-|-|Applies a function to each element of the collection, threading an accumulator argument through the computation. If the input function is f and the elements are i0...iN, this function computes f i0 (...(f iN-1 iN)).|

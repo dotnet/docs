@@ -34,13 +34,13 @@ jobs:
             # Start the .NET version updater action
             # A composite of the .NET Version Sweeper and the .NET Upgrade Assistant
             - name: Harden Runner
-              uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+              uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
               with:
                 egress-policy: audit
 
             - name: .NET version updater
               id: dotnet-version-updater
-              uses: dotnet/docs-tools/actions/dotnet-version-updater@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+              uses: dotnet/docs-tools/actions/dotnet-version-updater@main
               with:
                   support: ${{ github.event.inputs.support }}
                   token: ${{ secrets.GITHUB_TOKEN }}

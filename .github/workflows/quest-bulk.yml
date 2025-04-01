@@ -1,7 +1,9 @@
 name: "bulk quest import"
 on:
   schedule:
-    - cron: '0 10 * * *' # UTC time, that's 5:00 am EST, 2:00 am PST.
+    - cron: '0 7 1-5,7-31 * *' # UTC time, that's 2:00 am EST, 11:00 pm PST.
+    - cron: '0 7 6 * *'  # This is the morning of the 6th.
+
   workflow_dispatch:
     inputs:
       reason:
@@ -26,7 +28,7 @@ jobs:
     if: ${{ github.repository_owner == 'dotnet' }}
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
           egress-policy: audit
 
@@ -37,7 +39,7 @@ jobs:
 
       - name: Azure OpenID Connect
         id: azure-oidc-auth
-        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
         with:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
@@ -45,7 +47,7 @@ jobs:
      
       - name: bulk-sequester
         id: bulk-sequester
-        uses: dotnet/docs-tools/actions/sequester@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__QuestKey: ${{ secrets.QUEST_KEY }}
@@ -56,4 +58,4 @@ jobs:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
           issue: '-1'
-          duration: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.duration || 5 }}
+          duration: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.duration || github.event.schedule == '0 7 6 * *' && -1 || 5 }}

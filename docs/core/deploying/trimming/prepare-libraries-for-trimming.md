@@ -4,45 +4,18 @@ description: Learn how to prepare .NET libraries for trimming.
 author: sbomer
 ms.author: svbomer
 ms.date: 06/12/2023
-zone_pivot_groups: dotnet-version
 ---
 
 # Prepare .NET libraries for trimming
 
-The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md). Trimming removes unused code from the app and its dependencies. Not all code is compatible with trimming. .NET provides trim analysis warnings to detect patterns that may break trimmed apps. This article:
+The .NET SDK makes it possible to reduce the size of self-contained apps by [trimming](trim-self-contained.md). Trimming removes unused code from the app and its dependencies. Not all code is compatible with trimming. .NET provides trim analysis warnings to detect patterns that might break trimmed apps. This article:
 
 * Describes how to prepare libraries for trimming.
 * Provides recommendations for [resolving common trimming warnings](#resolve-trim-warnings).
 
 ## Prerequisites
 
-:::zone pivot="dotnet-6-0"
-
-[.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
-
-To get the most up-to-date trimming warnings and analyzer coverage:
-
-* Install and use the .NET 8 SDK or later.
-* Target `net8.0` or later.
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-
-[.NET 7 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
-
-To get the most up-to-date trimming warnings and analyzer coverage:
-
-* Install and use the .NET 8 SDK or later.
-* Target `net8.0` or later.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
 [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet) or later.
-
-:::zone-end
 
 ## Enable library trim warnings
 
@@ -93,55 +66,14 @@ To create the trimming test app:
 
 If library targets a TFM that is not trimmable, for example `net472` or `netstandard2.0`, there's no benefit to creating a trimming test app. Trimming is only supported for .NET 6 and later.
 
-:::zone pivot="dotnet-6-0"
-
-* Set `<TrimmerDefaultAction>` to `link`. <!-- only diff with .NET7+ -->
 * Add `<PublishTrimmed>true</PublishTrimmed>`.
 * Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
 * Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
   * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-
-* Add `<PublishTrimmed>true</PublishTrimmed>`.
-* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
-* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
-* Add `<PublishTrimmed>true</PublishTrimmed>`.
-* Add a reference to the library project with `<ProjectReference Include="/Path/To/YourLibrary.csproj" />`.
-* Specify the library as a trimmer root assembly with `<TrimmerRootAssembly Include="YourLibraryName" />`.
-  * `TrimmerRootAssembly` ensures that every part of the library is analyzed. It tells the trimmer that this assembly is a "root". A "root" assembly means the trimmer analyzes every call in the library and traverses all code paths that originate from that assembly.
-
-:::zone-end
 
 ### .csproj file
 
-:::zone pivot="dotnet-6-0"
-
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/MyTestLib6app/XMLFile1.xml":::
-
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-
 :::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
-
-**Note:** In the preceding project file, when using .NET 7, replace `<TargetFramework>net8.0</TargetFramework>` with `<TargetFramework>net7.0</TargetFramework>`.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
-
-:::code language="xml" source="~/docs/core/deploying/trimming/snippets/ConsoleApp1/ConsoleApp1.csproj":::
-
-:::zone-end
 
 Once the project file is updated, run `dotnet publish` with the target [runtime identifier (RID)](../../rid-catalog.md).
 
@@ -151,7 +83,8 @@ dotnet publish -c Release -r <RID>
 
 Follow the preceding pattern for multiple libraries. To see trim analysis warnings for more than one library at a time, add them all to the same project as `ProjectReference` and `TrimmerRootAssembly` items. Adding all the libraries to the same project with `ProjectReference` and `TrimmerRootAssembly` items warns about dependencies if ***any*** of the root libraries use a trim-unfriendly API in a dependency. To see warnings that have to do with only a particular library, reference that library only.
 
-***Note:*** The analysis results depend on the implementation details of the dependencies. Updating to a new version of a dependency may introduce analysis warnings:
+> [!NOTE]
+> The analysis results depend on the implementation details of the dependencies. Updating to a new version of a dependency might introduce analysis warnings:
 
 * If the new version added non-understood reflection patterns.
 * Even if there were no API changes.
@@ -159,7 +92,7 @@ Follow the preceding pattern for multiple libraries. To see trim analysis warnin
 
 ## Resolve trim warnings
 
-The preceding steps produce warnings about code that may cause problems when used in a trimmed app. The following examples show the most common warnings with recommendations for fixing them.
+The preceding steps produce warnings about code that might cause problems when used in a trimmed app. The following examples show the most common warnings with recommendations for fixing them.
 
 ### RequiresUnreferencedCode
 
@@ -204,11 +137,11 @@ In this case, the trim analysis keeps public methods of <xref:System.Tuple>, and
 * When code is incompatible with trimming, annotate it with `RequiresUnreferencedCode` and propagate this annotation to callers until the relevant public APIs are annotated.
 * Avoid using code that uses reflection in a way not understood by the static analysis. For example, reflection in static constructors should be avoided. Using statically unanalyzable reflection in static constructors result in the warning propagating to all members of the class.
 * Avoid annotating virtual methods or interface methods. Annotating virtual or interface methods requires all overrides to have matching annotations.
-* If an API is mostly trim-incompatible, alternative coding approaches to the API may need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md)
+* If an API is mostly trim-incompatible, alternative coding approaches to the API might need to be considered. A common example is reflection-based serializers. In these cases, consider adopting other technology like source generators to produce code that is more easily statically analyzed. For example, see [How to use source generation in System.Text.Json](../../../standard/serialization/system-text-json/source-generation.md).
 
 ## Resolve warnings for non-analyzable patterns
 
-It's better to resolve warnings by expressing the intent of your code using `[RequiresUnreferencedCode]` and `DynamicallyAccessedMembers` when possible. However, in some cases, you may be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
+It's better to resolve warnings by expressing the intent of your code using `[RequiresUnreferencedCode]` and `DynamicallyAccessedMembers` when possible. However, in some cases, you might be interested in enabling trimming of a library that uses patterns that can't be expressed with those attributes, or without refactoring existing code. This section describes some advanced ways to resolve trim analysis warnings.
 
 > [!WARNING]
 > These techniques might change the behavior or your code or result in run time exceptions if used incorrectly.
@@ -235,7 +168,7 @@ If you're sure that the requirements are met, you can silence this warning by ad
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD2" highlight="9-10":::
 
-It's important to underline that it's only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It isn't sufficient that the member was a target of a call, field or property access. It may appear to be the case sometimes but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that aren't visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise optimized in ways that break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
+It's important to underline that it's only valid to suppress a warning if there are annotations or code that ensure the reflected-on members are visible targets of reflection. It isn't sufficient that the member was a target of a call, field, or property access. It might appear to be the case sometimes, but such code is bound to break eventually as more trimming optimizations are added. Properties, fields, and methods that aren't visible targets of reflection could be inlined, have their names removed, get moved to different types, or otherwise be optimized in ways that break reflecting on them. When suppressing a warning, it's only permissible to reflect on targets that were visible targets of reflection to the trimming analyzer elsewhere.
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD3" highlight="6-8":::
 
@@ -252,7 +185,7 @@ Without `DynamicDependency`, trimming might remove `Helper` from `MyAssembly` or
 
 The attribute specifies the members to keep via a `string` or via `DynamicallyAccessedMemberTypes`. The type and assembly are either implicit in the attribute context, or explicitly specified in the attribute (by `Type`, or by `string`s for the type and assembly name).
 
-The type and member strings use a variation of the C# documentation comment ID string [format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), without the member prefix. The member string shouldn't include the name of the declaring type, and may omit parameters to keep all members of the specified name. Some examples of the format are shown in the following code:
+The type and member strings use a variation of the C# documentation comment ID string [format](/dotnet/csharp/language-reference/language-specification/documentation-comments#id-string-format), without the member prefix. The member string shouldn't include the name of the declaring type, and might omit parameters to keep all members of the specified name. Some examples of the format are shown in the following code:
 
 :::code language="csharp" source="~/docs/core/deploying/trimming/snippets/MyLibrary/Class1.cs" id="snippet_AD5":::
 

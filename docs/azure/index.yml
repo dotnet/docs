@@ -122,20 +122,11 @@ conceptualContent:
     - title: Create mobile apps
       links:
         - itemType: learn
-          text: Consume REST services from Azure in Xamarin apps
-          url: /training/modules/consume-rest-services/
-        - itemType: quickstart
-          text: Create a Xamarin.Forms app with .NET SDK and Azure Cosmos DB's API for MongoDB
-          url: /azure/cosmos-db/create-mongodb-xamarin
-        - itemType: quickstart
-          text: Azure Blob storage client library with Xamarin.Forms
-          url: /azure/storage/blobs/storage-quickstart-blobs-xamarin
-        - itemType: tutorial
-          text: Send push notifications to Xamarin.Forms apps using ASP.NET Core and Azure Notification Hubs
-          url: /azure/notification-hubs/notification-hubs-backend-service-xamarin-forms
-        - itemType: concept
-          text: Add authentication and manage user identities in your mobile apps
-          url: /azure/developer/mobile-apps/authentication
+          text: Consume REST web services in .NET MAUI apps
+          url: /training/modules/consume-rest-services-maui/
+        - itemType: overview
+          text: Mobile architecture design
+          url: /azure/architecture/guide/mobile/mobile-start-here
     - title: Work with storage & data
       links:
         - itemType: concept

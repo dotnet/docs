@@ -16,6 +16,7 @@ f1_keywords:
   - "CS9183"
   - "CS9184"
   - "CS9189"
+  - "CS9259"
 helpviewer_keywords:
   - "CS9164"
   - "CS9165"
@@ -31,7 +32,8 @@ helpviewer_keywords:
   - "CS9183"
   - "CS9184"
   - "CS9189"
-ms.date: 11/02/2023
+  - "CS9259"
+ms.date: 11/06/2024
 ---
 # Resolve errors and warnings with inline array declarations
 
@@ -54,6 +56,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS9183**](#conversions-to-span): *Inline array conversion operator will not be used for conversion from expression of the declaring type.*
 - [**CS9184**](#inline-array-declaration): *'Inline arrays' language feature is not supported for inline array types with element field which is either a '`ref`' field, or has type that is not valid as a type argument.*
 - [**CS9189**](#element-access): *`foreach` statement on an inline array of type is not supported*
+- [**CS9259**](#inline-array-declaration): *Attribute <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=fullName> cannot be applied to a record struct.*
 
 ## Inline array declaration
 
@@ -64,6 +67,7 @@ You declare inline arrays as a `struct` type with a single field, and an attribu
 - **CS9169**: *Inline array struct must declare one and only one instance field which must not be a ref field.*
 - **CS9180**: *Inline array element field cannot be declared as required, readonly, volatile, or as a fixed size buffer.*
 - **CS9184**: *'Inline arrays' language feature is not supported for inline array types with element field which is either a '`ref`' field, or has type that is not valid as a type argument.*
+- **CS9259**: *Attribute <xref:System.Runtime.CompilerServices.InlineArrayAttribute?displayProperty=fullName> cannot be applied to a record struct.*
 
 To fix these arrays, ensure the following are true:
 
@@ -72,6 +76,7 @@ To fix these arrays, ensure the following are true:
 - The enclosing `struct` has a single instance field, and that instance field is not a `ref` field.
 - The single instance field is not a fixed size buffer.
 - The single instance field doesn't include the `required`, `volatile`, or `readonly` modifiers.
+- Remove the `record` modifier from your inline array declaration.
 
 ## Element access
 

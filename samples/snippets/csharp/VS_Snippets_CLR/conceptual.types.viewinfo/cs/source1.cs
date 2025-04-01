@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // This program lists all the public constructors
 // of the System.String class.
 using System;
@@ -9,7 +9,7 @@ class ListMembers
     public static void Main()
     {
         Type t = typeof(System.String);
-        Console.WriteLine("Listing all the public constructors of the {0} type", t);
+        Console.WriteLine($"Listing all the public constructors of the {t} type");
         // Constructors.
         ConstructorInfo[] ci = t.GetConstructors(BindingFlags.Public | BindingFlags.Instance);
         Console.WriteLine("//Constructors");
@@ -20,7 +20,7 @@ class ListMembers
     {
         foreach (MemberInfo m in ms)
         {
-            Console.WriteLine("{0}{1}", "     ", m);
+            Console.WriteLine($"{"     "}{m}");
         }
         Console.WriteLine();
     }

@@ -1,11 +1,11 @@
 ---
 title: Top-level statements tutorial
 description: This tutorial shows how you can use top-level statements to experiment and prove concepts while exploring your ideas
-ms.date: 11/14/2023
+ms.date: 01/15/2025
 ---
 # Tutorial: Explore ideas using top-level statements to build code as you learn
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -15,7 +15,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6, which includes the C# 10 compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [.NET 6 SDK](https://dot.net/get-dotnet6).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET CLI.
 
@@ -47,13 +47,13 @@ Console.WriteLine("Hello, World!");
 
 [!INCLUDE [csharp10-templates](../../../includes/csharp10-templates.md)]
 
-This feature simplifies what's needed to begin exploring new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you've built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
+This feature simplifies your exploration of new ideas. You can use top-level statements for scripting scenarios, or to explore. Once you've got the basics working, you can start refactoring the code and create methods, classes, or other assemblies for reusable components you built. Top-level statements do enable quick experimentation and beginner tutorials. They also provide a smooth path from experimentation to full programs.
 
 Top-level statements are executed in the order they appear in the file. Top-level statements can only be used in one source file in your application. The compiler generates an error if you use them in more than one file.
 
 ## Build a magic .NET answer machine
 
-For this tutorial, let's build a console application that answers a "yes" or "no" question with a random answer. You'll build out the functionality step by step. You can focus on your task rather than ceremony needed for the structure of a typical program. Then, once you're happy with the functionality, you can refactor the application as you see fit.
+For this tutorial, let's build a console application that answers a "yes" or "no" question with a random answer. You build out the functionality step by step. You can focus on your task rather than ceremony needed for the structure of a typical program. Then, once you're happy with the functionality, you can refactor the application as you see fit.
 
 A good starting point is to write the question back to the console. You can start by writing the following code:
 
@@ -69,17 +69,17 @@ You can test your code by running the following `dotnet run` command:
 dotnet run -- Should I use top level statements in all my programs?
 ```
 
-The arguments after the `--` on the command line are passed to the program. You can see the type of the `args` variable, because that's what's printed to the console:
+The arguments after the `--` on the command line are passed to the program. You can see the type of the `args` variable printed to the console:
 
 ```console
 System.String[]
 ```
 
-To write the question to the console, you'll need to enumerate the arguments and separate them with a space. Replace the `WriteLine` call with the following code:
+To write the question to the console, you need to enumerate the arguments and separate them with a space. Replace the `WriteLine` call with the following code:
 
 :::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="EchoInput":::
 
-Now, when you run the program, it will correctly display the question as a string of arguments.
+Now, when you run the program, it correctly displays the question as a string of arguments.
 
 ## Respond with a random answer
 
@@ -87,7 +87,7 @@ After echoing the question, you can add the code to generate the random answer. 
 
 :::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="Answers":::
 
-This array has ten answers that are affirmative, five that are non-committal, and five that are negative. Next, add the following code to generate and display a random answer from the array:
+This array has 10 answers that are affirmative, five that are noncommittal, and five that are negative. Next, add the following code to generate and display a random answer from the array:
 
 :::code language="csharp" source="snippets/top-level-statements/ProgramSnippets.cs" ID="GenerateAnswer":::
 
@@ -100,11 +100,13 @@ Should I use top level statements in all my programs?
 Better not tell you now.
 ```
 
-This code answers the questions, but let's add one more feature. You'd like your question app to simulate thinking about the answer. You can do that by adding a bit of ASCII animation, and pausing while working.  Add the following code after the line that echoes the question:
+The code to generate an answer includes a variable declaration in your top level statements. The compiler includes that declaration in the compiler generated `Main` method. Because these variable declarations are local variables, you can't include the `static` modifier.
+
+This code answers the questions, but let's add one more feature. You'd like your question app to simulate thinking about the answer. You can do that by adding a bit of ASCII animation, and pausing while working. Add the following code after the line that echoes the question:
 
 :::code language="csharp" source="snippets/top-level-statements/UtilitiesPassOne.cs" ID="AnimationFirstPass":::
 
-You'll also need to add a `using` directive to the top of the source file:
+You also need to add a `using` directive to the top of the source file:
 
 ```csharp
 using System.Threading.Tasks;
@@ -192,25 +194,25 @@ static async Task ShowConsoleAnimation()
 }
 ```
 
-The preceding code creates a local function inside your main method. That's still not reusable. So, extract that code into a class. Create a new file named *utilities.cs* and add the following code:
+The preceding code creates a local function inside your main method. That code still isn't reusable. So, extract that code into a class. Create a new file named *utilities.cs* and add the following code:
 
 :::code language="csharp" source="snippets/top-level-statements/UtilitiesPassOne.cs" ID="SnippetUtilities":::
 
 A file that has top-level statements can also contain namespaces and types at the end of the file, after the top-level statements. But for this tutorial you put the animation method in a separate file to make it more readily reusable.
 
 Finally, you can clean the animation code to remove some duplication, by using `foreach` loop to iterate through set of animations elements defined in `animations` array.
-<br/>The full `ShowConsoleAnimation` method after refactor should look similar to the following:
+<br/>The full `ShowConsoleAnimation` method after refactor should look similar to the following code:
 
 :::code language="csharp" source="snippets/top-level-statements/Utilities.cs" ID="Animation":::
 
-Now you have a complete application, and you've refactored the reusable parts for later use. You can call the new utility method from your top-level statements, as shown below in the finished version of the main program:
+Now you have a complete application, and you refactored the reusable parts for later use. You can call the new utility method from your top-level statements, as shown in the finished version of the main program:
 
 :::code language="csharp" source="snippets/top-level-statements/Program.cs":::
 
-The preceding example adds the call to `Utilities.ShowConsoleAnimation`, and adds an additional `using` directive.
+The preceding example adds the call to `Utilities.ShowConsoleAnimation`, and adds another `using` directive.
 
 ## Summary
 
-Top-level statements make it easier to create simple programs for use to explore new algorithms. You can experiment with algorithms by trying different snippets of code. Once you've learned what works, you can refactor the code to be more maintainable.
+Top-level statements make it easier to create simple programs for use to explore new algorithms. You can experiment with algorithms by trying different snippets of code. Once you learned what works, you can refactor the code to be more maintainable.
 
-Top-level statements simplify programs that are based on console applications. These include Azure functions, GitHub actions, and other small utilities. For more information, see [Top-level statements (C# Programming Guide)](../fundamentals/program-structure/top-level-statements.md).
+Top-level statements simplify programs that are based on console apps. These apps include Azure functions, GitHub actions, and other small utilities. For more information, see [Top-level statements (C# Programming Guide)](../fundamentals/program-structure/top-level-statements.md).

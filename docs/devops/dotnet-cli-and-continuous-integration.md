@@ -33,7 +33,7 @@ The installer script is automated to run at the start of the build to fetch and 
 
 ## CI setup examples
 
-This section describes a manual setup using a PowerShell or bash script, along with descriptions of software as a service (SaaS) CI solutions. The SaaS CI solutions covered are [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [Azure Pipelines](/azure/devops/pipelines/index). For GitHub Actions, see [GitHub Actions and .NET](github-actions-overview.md)
+This section describes a manual setup using a PowerShell or bash script, along with descriptions of software as a service (SaaS) CI solutions. The SaaS CI solutions covered are [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [Azure Pipelines](/azure/devops/pipelines/index). For GitHub Actions, see [GitHub Actions and .NET](github-actions-overview.md).
 
 ### Manual setup
 

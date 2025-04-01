@@ -1,9 +1,9 @@
 ---
-title: Install .NET on Linux without using a package manager 
+title: Install .NET on Linux without using a package manager
 description: Demonstrates how to install the .NET SDK and the .NET Runtime on Linux without a package manager. Use the install script or manually extract the binaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/14/2024
+ms.date: 11/11/2024
 ms.custom: linux-related-content
 ---
 
@@ -22,17 +22,15 @@ The following table lists the support status of each version of .NET (and .NET C
 | ✔️ Supported | ❌ Unsupported |
 |-------------|---------------|
 | 9 (STS)     | 7             |
-| 8 (LTS)     | 5             |
-| 6 (LTS)     | 3.1           |
+| 8 (LTS)     | 6 (LTS)       |
+|             | 5             |
+|             | 3.1           |
 |             | 3.0           |
 |             | 2.2           |
 |             | 2.1           |
 |             | 2.0           |
 |             | 1.1           |
 |             | 1.0           |
-
-> [!IMPORTANT]
-> .NET 9 is currently in preview.
 
 ## Dependencies
 
@@ -43,7 +41,7 @@ It's possible that when you install .NET, specific dependencies may not be insta
 - [Fedora](linux-fedora.md#dependencies)
 - [RHEL and CentOS Stream](linux-rhel.md#dependencies)
 - [SLES](linux-sles.md#dependencies)
-- [Ubuntu](linux-ubuntu.md#dependencies)
+- [Ubuntu](linux-ubuntu-decision.md#dependencies)
 
 For generic information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
@@ -86,6 +84,12 @@ You can download the script with `wget`:
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 ```
 
+Or, with `curl`:
+
+```bash
+curl -L https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
+```
+
 Before running this script, make sure you grant permission for this script to run as an executable:
 
 ```bash
@@ -104,10 +108,10 @@ To install .NET Runtime instead of the SDK, use the `--runtime` parameter.
 ./dotnet-install.sh --version latest --runtime aspnetcore
 ```
 
-You can install a specific major version with the `--channel` parameter to indicate the specific version. The following command installs .NET 8.0 SDK.
+You can install a specific major version with the `--channel` parameter to indicate the specific version. The following command installs .NET 9.0 SDK.
 
 ```bash
-./dotnet-install.sh --channel 8.0
+./dotnet-install.sh --channel 9.0
 ```
 
 For more information, see [dotnet-install scripts reference](../tools/dotnet-install-script.md).
@@ -124,8 +128,8 @@ As an alternative to the package managers, you can download and manually install
 
 Download a **binary** release for either the SDK or the runtime from one of the following sites. The .NET SDK includes the corresponding runtime:
 
+- ✔️ [.NET 9 downloads](https://dotnet.microsoft.com/download/dotnet/9.0)
 - ✔️ [.NET 8 downloads](https://dotnet.microsoft.com/download/dotnet/8.0)
-- ✔️ [.NET 6 downloads](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [All .NET Core downloads](https://dotnet.microsoft.com/download/dotnet)
 
 Extract the downloaded file and use the `export` command to set `DOTNET_ROOT` to the extracted folder's location and then ensure .NET is in PATH. Exporting `DOTNET_ROOT` makes the .NET CLI commands available in the terminal. For more information about .NET environment variables, see [.NET SDK and CLI environment variables](../tools/dotnet-environment-variables.md#net-sdk-and-cli-environment-variables).
@@ -142,7 +146,7 @@ The following commands use Bash to set the environment variable `DOTNET_ROOT` to
 > If you run these commands, remember to change the `DOTNET_FILE` value to the name of the .NET binary you downloaded.
 
 ```bash
-DOTNET_FILE=dotnet-sdk-8.0.100-linux-x64.tar.gz
+DOTNET_FILE=dotnet-sdk-9.0.100-linux-x64.tar.gz
 export DOTNET_ROOT=$(pwd)/.dotnet
 
 mkdir -p "$DOTNET_ROOT" && tar zxf "$DOTNET_FILE" -C "$DOTNET_ROOT"

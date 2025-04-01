@@ -27,7 +27,7 @@ The following images are focused on resulting in the smallest possible image siz
 - Mariner distroless
 - Ubuntu chiseled
 
-These images are smaller, as they don't include globalization dependencies such as, ICU, or tzdata. These images only work with apps that are configured for globalization invariant mode. To configure an app for invariant globalization, add the following property to the project file:
+These images are smaller, as they don't include globalization dependencies such as ICU or tzdata. These images only work with apps that are configured for globalization invariant mode. To configure an app for invariant globalization, add the following property to the project file:
 
 ```xml
 <PropertyGroup>
@@ -83,7 +83,7 @@ AOT images are published for:
 - Mariner
 - Ubuntu
 
-For more information, see [Native AOT deployment](../deploying/native-aot/index.md)
+For more information, see [Native AOT deployment](../deploying/native-aot/index.md).
 
 ## Docker hub repositories
 

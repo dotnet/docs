@@ -2,10 +2,10 @@
 title: "yield statement - provide the next element in an iterator"
 description: "Use the yield statement in iterators to provide the next value or signal the end of an iteration"
 ms.date: 06/28/2024
-f1_keywords: 
+f1_keywords:
   - "yield"
   - "yield_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "yield keyword [C#]"
 ---
 # yield statement - provide the next element
@@ -35,10 +35,10 @@ In the preceding examples, the return type of iterators is <xref:System.Collecti
 
 You can't use the `yield` statements in:
 
-- methods with [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameters
-- [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md)
+- methods with [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameters.
+- [lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md).
 - [unsafe blocks](../keywords/unsafe.md). Before C# 13, `yield` was invalid in any method with an `unsafe` block. Beginning with C# 13, you can use `yield` in methods with `unsafe` blocks, but not in the `unsafe` block.
-- `yield return` and `yield break` can not be used in [try](../statements/exception-handling-statements.md), [catch](../statements/exception-handling-statements.md) and [finally](../statements/exception-handling-statements.md) blocks.
+- `yield return` and `yield break` can not be used in [catch](../statements/exception-handling-statements.md) and [finally](../statements/exception-handling-statements.md) blocks, or in [try](../statements/exception-handling-statements.md) blocks with a corresponding `catch` block. The `yield return` and `yield break` statements can be used in a `try` block with no `catch` blocks, only a `finally` block.
 
 ## Execution of an iterator
 

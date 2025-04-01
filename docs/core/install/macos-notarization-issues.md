@@ -3,7 +3,7 @@ title: Working with macOS Catalina Notarization
 description: How to handle notarization and certificate problems with macOS when you install the .NET runtime, SDK, and apps built with .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/04/2021
+ms.date: 11/11/2024
 ---
 
 # macOS Catalina Notarization and the impact on .NET downloads and projects
@@ -16,7 +16,7 @@ The installers for .NET (both runtime and SDK) have been notarized since Februar
 
 ## Native appHost
 
-In .NET SDK 7 and later versions, an **appHost**, which is a native Mach-O executable, is produced for your app. This executable is usually invoked by .NET when your project compiles, publishes, or is run with the `dotnet run` command. The non-**appHost** version of your app is a _dll_ file that can be invoked by the `dotnet <app.dll>` command.
+When your app is compiled, an **appHost**, which is a native Mach-O executable, is produced. This executable is usually invoked by .NET when your project compiles, publishes, or is run with the `dotnet run` command. The non-**appHost** version of your app is a _dll_ file that can be invoked by the `dotnet <app.dll>` command.
 
 When run locally, the SDK signs the apphost using [ad hoc signing](https://developer.apple.com/documentation/security/seccodesignatureflags/1397793-adhoc), which allows the app to run locally. When distributing your app, you'll need to properly sign your app according to Apple guidance.
 

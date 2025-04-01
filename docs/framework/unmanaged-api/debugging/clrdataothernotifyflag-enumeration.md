@@ -39,7 +39,7 @@ typedef enum CLRDataOtherNotifyFlag {
 |`CLRDATA_NOTIFY_ON_MODULE_LOAD`|0x1|Notification should occur when a module is loaded.|
 |`CLRDATA_NOTIFY_ON_MODULE_UNLOAD`|0x2|Notification should occur when a module is unloaded.|
 |`CLRDATA_NOTIFY_ON_EXCEPTION`|0x4|Notification should occur when a managed exception is raised.|
-|`CLRDATA_NOTIFY_ON_EXCEPTION_CATCH_ENTER`|0x8|Notification should occur owhen a managed catch block is entered.|
+|`CLRDATA_NOTIFY_ON_EXCEPTION_CATCH_ENTER`|0x8|Notification should occur when a managed catch block is entered.|
 
 ## Remarks
 

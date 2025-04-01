@@ -63,7 +63,7 @@ At compile time, the compiler replaces non-default field names with the correspo
 > [!TIP]
 > Enable .NET code style rule [IDE0037](../../../fundamentals/code-analysis/style-rules/ide0037.md) to set a preference on inferred or explicit tuple field names.
 
-Beginning with C# 12, you can specify an alias for a tuple type with a [`using` directive](../keywords/using-directive.md#using-alias). The following example adds a `global using` alias for a tuple type with two integer values for an allowed `Min` and `Max` value:
+Beginning with C# 12, you can specify an alias for a tuple type with a [`using` directive](../keywords/using-directive.md#the-using-alias). The following example adds a `global using` alias for a tuple type with two integer values for an allowed `Min` and `Max` value:
 
 :::code language="csharp" source="snippets/shared/ValueTuples.cs" id="AliasTupleType":::
 

@@ -80,7 +80,7 @@ Although you could use `DateTime` while ignoring the time component, there are a
 For more information about `DateOnly`, see [How to use the DateOnly and TimeOnly structures](how-to-use-dateonly-timeonly.md).
 
 > [!IMPORTANT]
-> `DateOnly` isn't available in .NET Framework.
+> `DateOnly` isn't available for .NET Framework.
 
 ## The TimeSpan structure
 
@@ -115,7 +115,7 @@ Prior to the `TimeOnly` type being introduced, programmers typically used either
 For more information about `TimeOnly`, see [How to use the DateOnly and TimeOnly structures](how-to-use-dateonly-timeonly.md).
 
 > [!IMPORTANT]
-> `TimeOnly` isn't available in .NET Framework.
+> `TimeOnly` isn't available for .NET Framework.
 
 ## The TimeZoneInfo class
 

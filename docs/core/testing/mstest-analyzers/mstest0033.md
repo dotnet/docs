@@ -26,4 +26,4 @@ Suppress the [CS8618: Non-nullable variable must contain a non-null value when e
 
 ## When to disable suppressor
 
-It's _not_ recommended to disable this suppressor.
+.NET suppressors cannot be disabled.

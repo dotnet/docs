@@ -214,6 +214,8 @@ Occasionally it is necessary to define a function that takes an arbitrary number
 
 In F#, parameter arrays can only be defined in methods. They cannot be used in standalone functions or functions that are defined in modules.
 
+However, functions like `printfn` achieve similar behavior by using format specifiers and type inference to handle multiple arguments dynamically. The `printfn` function does not rely on parameter arrays; instead, it uses F#'s type-safe formatting mechanism to process varying numbers of arguments while ensuring compile-time type checking.
+
 You define a parameter array by using the `ParamArray` attribute. The `ParamArray` attribute can only be applied to the last parameter.
 
 The following code illustrates both calling a .NET method that takes a parameter array and the definition of a type in F# that has a method that takes a parameter array.

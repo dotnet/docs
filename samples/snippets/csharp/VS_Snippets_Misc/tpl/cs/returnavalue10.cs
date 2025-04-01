@@ -26,7 +26,7 @@ class Program
             string path = @"C:\Users\Public\Pictures\Sample Pictures\";
             string[] files = System.IO.Directory.GetFiles(path);
 
-            var result = (from file in files.AsParallel()
+            string[] result = (from file in files.AsParallel()
                           let info = new System.IO.FileInfo(file)
                           where info.Extension == ".jpg"
                           select file).ToArray();
@@ -34,7 +34,7 @@ class Program
             return result;
         });
 
-        foreach (var name in task3.Result)
+        foreach (string name in task3.Result)
             Console.WriteLine(name);
     }
     class Test

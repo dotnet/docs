@@ -1,4 +1,4 @@
-﻿namespace PLINQ_Samples
+namespace PLINQ_Samples
 {
     using System;
     using System.Collections.Generic;
@@ -431,8 +431,7 @@
                     Console.WriteLine(line);
                 }
 
-                Console.WriteLine("Elapsed time: {0} ms. Press any key to exit.",
-                                sw.ElapsedMilliseconds);
+                Console.WriteLine($"Elapsed time: {sw.ElapsedMilliseconds} ms. Press any key to exit.");
                 Console.ReadKey();
             }
 
@@ -488,8 +487,8 @@
                     // perform standard deviation calc on the aggregated result.
                     (finalSum) => Math.Sqrt((finalSum / (source.Length - 1)))
                 );
-                Console.WriteLine("Mean value is = {0}", mean);
-                Console.WriteLine("Standard deviation is {0}", standardDev);
+                Console.WriteLine($"Mean value is = {mean}");
+                Console.WriteLine($"Standard deviation is {standardDev}");
                 Console.ReadLine();
             }
         }
@@ -521,10 +520,10 @@
 
         static void TestDataSource()
         {
-            Console.WriteLine("Customer count: {0}", GetCustomers().Count());
-            Console.WriteLine("Product count: {0}", GetProducts().Count());
-            Console.WriteLine("Order count: {0}", GetOrders().Count());
-            Console.WriteLine("Order Details count: {0}", GetOrderDetails().Count());
+            Console.WriteLine($"Customer count: {GetCustomers().Count()}");
+            Console.WriteLine($"Product count: {GetProducts().Count()}");
+            Console.WriteLine($"Order count: {GetOrders().Count()}");
+            Console.WriteLine($"Order Details count: {GetOrderDetails().Count()}");
         }
 
         #region DataClasses
@@ -743,7 +742,7 @@
                                 .AsOrdered()
                                 .ElementAt(48);
 
-            Console.WriteLine("Element #48 is: {0}", cust.CustomerID);
+            Console.WriteLine($"Element #48 is: {cust.CustomerID}");
         }
         //</snippet14>
 
@@ -776,7 +775,7 @@
                .OrderBy(i => i.Product); // Apply new ordering to final result sequence.
 
             foreach (var v in q2)
-                Console.WriteLine("{0} {1} {2}", v.ID, v.Customer, v.Product);
+                Console.WriteLine($"{v.ID} {v.Customer} {v.Product}");
         }
         //</snippet15>
 

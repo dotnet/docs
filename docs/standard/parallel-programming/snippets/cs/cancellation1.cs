@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -78,8 +78,8 @@ public class CancellationExample
             Console.WriteLine(ex.Message);
         }
 
-        Console.WriteLine("\nAntecedent Status: {0}", task.Status);
-        Console.WriteLine("Continuation Status: {0}", continuation.Status);
+        Console.WriteLine($"\nAntecedent Status: {task.Status}");
+        Console.WriteLine($"Continuation Status: {continuation.Status}");
     }
 
     static void Elapsed(object? state)

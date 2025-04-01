@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -76,7 +76,7 @@ namespace PartialTrustTopic
          }
          catch (System.Security.SecurityException ex)
          {
-            Console.WriteLine("Unexpected failure: {0}", ex.Message);
+            Console.WriteLine($"Unexpected failure: {ex.Message}");
          }
 
          // Try a different connection string. This should fail.

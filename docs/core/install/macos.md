@@ -4,7 +4,7 @@ description: Learn about which versions of .NET SDK and .NET Runtime are support
 author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy
-ms.date: 10/14/2024
+ms.date: 11/11/2024
 ms.custom: linux-related-content
 
 #customer intent: As a user or developer, I want to know which versions of .NET are supported on macOS. I also need to know how to install .NET on macOS.
@@ -21,7 +21,7 @@ ms.custom: linux-related-content
 
 This article teaches you about which versions of .NET are supported on macOS, how to install .NET, and what the difference is between the SDK and runtime.
 
-The latest version of .NET is 8.
+The latest version of .NET is 9.
 
 > [!div class="button"]
 > [Download .NET](https://dotnet.microsoft.com/download/dotnet)
@@ -32,9 +32,9 @@ The following table lists the supported .NET releases, and which macOS they're s
 
 | macOS Version          | .NET     |
 |------------------------|----------|
-| macOS 15 "Sequoia"     | 8.0, 6.0 |
-| macOS 14 "Sonoma"      | 8.0, 6.0 |
-| macOS 13 "Ventura"     | 8.0, 6.0 |
+| macOS 15 "Sequoia"     | 9.0, 8.0 |
+| macOS 14 "Sonoma"      | 9.0, 8.0 |
+| macOS 13 "Ventura"     | 9.0, 8.0 |
 
 [!INCLUDE [versions-not-supported](includes/versions-not-supported.md)]
 
@@ -52,7 +52,7 @@ There are two runtimes you can install on macOS, and both are included with the 
 
 The **SDK** is used to build and publish .NET apps and libraries. The latest SDK supports building apps for previous versions of .NET. In normal circumstances, you would only need the latest SDK installed.
 
-Installing the SDK includes both the standard .NET Runtime and the ASP.NET Core Runtime. For example, if you have .NET SDK 8.0 installed, then .NET Runtime 8.0 and ASP.NET Core 8.0 Runtime are both installed. However, any other runtime version wouldn't be installed with the SDK and would require you to install it separately.
+Installing the SDK includes both the standard .NET Runtime and the ASP.NET Core Runtime. For example, if you have .NET SDK 9.0 installed, then .NET Runtime 9.0 and ASP.NET Core 9.0 Runtime are both installed. However, any other runtime version wouldn't be installed with the SDK and would require you to install it separately.
 
 ## Choose how to install .NET
 
@@ -245,6 +245,20 @@ For more information about how enforced-notarization affects .NET (and your .NET
 
 [!INCLUDE [verify-download-macos-linux](includes/verify-download-macos-linux.md)]
 
+## Arm-based Macs
+
+The following sections describe things you should consider when installing .NET on an Arm-based Mac.
+
+<!-- This section is mirrored in the windows.md file. Changes here should be applied there -->
+
+### Path differences
+
+On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
+
+### Path variables
+
+Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET SDK installation folder.
+
 ## Troubleshooting
 
 The following sections are available to help troubleshoot issues:
@@ -282,37 +296,6 @@ Set the following two environment variables in your shell profile:
   ```bash
   export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
   ```
-
-### Arm-based Macs
-
-The following sections describe things you should consider when installing .NET on an Arm-based Mac.
-
-<!-- This section is mirrored in the windows.md file. Changes here should be applied there -->
-
-#### .NET Versions
-
-The following table describes which versions of .NET are supported on an Arm-based Mac:
-
-| .NET Version | SDK | Runtime | [Path conflict](#path-conflicts) |
-|--------------|-----|---------|----------------------------------|
-| 8            | Yes | Yes     | No                               |
-| 8            | Yes | Yes     | No                               |
-| 6            | Yes | Yes     | No                               |
-| 6            | Yes | Yes     | No                               |
-
-The x64 and Arm64 versions of the .NET SDK exist independently from each other. If a new version is released, each install needs to be upgraded.
-
-#### Path differences
-
-On an Arm-based Mac, all Arm64 versions of .NET are installed to the normal _/usr/local/share/dotnet/_ folder. However, when you install the **x64** version of .NET SDK, it's installed to the _/usr/local/share/dotnet/x64/dotnet/_ folder.
-
-#### Path conflicts
-
-The **x64** .NET SDK installs to its own directory, as described in the previous section. This allows the Arm64 and x64 versions of the .NET SDK to exist on the same machine. However, any **x64** SDK prior to .NET 6 isn't supported and installs to the same location as the Arm64 version, the _/usr/local/share/dotnet/_ folder. If you want to install an unsupported x64 SDK, you need to first uninstall the Arm64 version. The opposite is also true, you need to uninstall the unsupported x64 SDK to install the Arm64 version.
-
-#### Path variables
-
-Environment variables that add .NET to system path, such as the `PATH` variable, might need to be changed if you have both the x64 and Arm64 versions of the .NET 6 SDK installed. Additionally, some tools rely on the `DOTNET_ROOT` environment variable, which would also need to be updated to point to the appropriate .NET 6 SDK installation folder.
 
 ### System.Drawing.Common and libgdiplus
 

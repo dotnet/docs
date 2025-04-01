@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -50,7 +50,7 @@
     <PackageReference Include="CompilerPaths"
                       Version="[1.0.2, )"
                       Condition="$([MSBuild]::IsOsPlatform('Windows'))" />
-  </ItemGroup>  
+  </ItemGroup>
 
     <!-- Targets to build the native project. The output goes directly to the bin directory -->
   <Target Name="PrepareForNativeBuild">

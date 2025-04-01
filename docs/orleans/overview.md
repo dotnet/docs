@@ -60,7 +60,7 @@ Typically, a group of silos runs as a cluster for scalability and fault toleranc
 
 The preceding diagram shows the relationship between clusters, silos, and grains. You can have any number of clusters, each cluster has one or more silos, and each silo has one or more grains.
 
-In addition to the core programming model, silos provide grains with a set of runtime services such as timers, reminders (persistent timers), persistence, transactions, streams, and more. For more information, see [What can I do with Orleans?](#what-can-i-do-with-orleans)
+In addition to the core programming model, silos provide grains with a set of runtime services such as timers, reminders (persistent timers), persistence, transactions, streams, and more. For more information, see [What can I do with Orleans?](#what-can-i-do-with-orleans).
 
 Web apps and other external clients call grains in the cluster using the client library, which automatically manages network communication. Clients can also be co-hosted in the same process with silos for simplicity.
 

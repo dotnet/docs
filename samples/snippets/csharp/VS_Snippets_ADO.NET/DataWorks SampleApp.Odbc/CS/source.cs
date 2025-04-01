@@ -1,4 +1,4 @@
-﻿
+
 // <Snippet1>
 using System;
 using System.Data.Odbc;
@@ -38,8 +38,7 @@ static class Program
                 OdbcDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    Console.WriteLine("\t{0}\t{1}\t{2}",
-                        reader[0], reader[1], reader[2]);
+                    Console.WriteLine($"\t{reader[0]}\t{reader[1]}\t{reader[2]}");
                 }
                 reader.Close();
             }

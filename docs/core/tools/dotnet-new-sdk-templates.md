@@ -31,24 +31,23 @@ The templates that ship with the .NET SDK have the following additional options:
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 3.1         | `netcoreapp3.1` |
 
-  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 7 SDK installed, then the only value available for `--framework` is `net7.0`. If you install the .NET 6 SDK the value `net6.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
+  The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 9 SDK installed, then the only value available for `--framework` is `net9.0`. If, for example, you install the .NET 8 SDK, the value `net8.0` becomes available for `--framework`. So by specifying `--framework net8.0` you can target .NET 8 even while running `dotnet new` in the .NET 9 SDK.
 
   Alternatively, to create a project that targets a framework earlier than the SDK that you're using, you might be able to do it by installing the NuGet package for the template. [Common](https://www.nuget.org/packages?q=Microsoft.DotNet.Common.ProjectTemplates), [web](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.ProjectTemplates), and [SPA](https://www.nuget.org/packages?q=Microsoft.DotNet.Web.Spa.ProjectTemplates) project types use different packages per target framework moniker (TFM). For example, to create a `console` project that targets `netcoreapp1.0`, run [`dotnet new install`](dotnet-new-install.md) on `Microsoft.DotNet.Common.ProjectTemplates.1.x`.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
-  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#.
 
   For a list of default C# versions, see [Defaults](../../csharp/language-reference/language-versioning.md#defaults).
 
 - **`--no-restore`**
 
-  If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
+  If specified, doesn't execute an implicit restore during project creation.
 
 - **`--use-program-main`**
 
@@ -60,13 +59,13 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net8.0`, `net7.0`, or `net6.0` to create a .NET Class Library, or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 8.0.x is `net8.0`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `net9.0`, `net8.0`, or `net7.0` to create a .NET Class Library, or `netstandard2.1` or `netstandard2.0` to create a .NET Standard Class Library. The default value for .NET SDK 9.0.x is `net9.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
-  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#.
 
   For a list of default C# versions, see [Defaults](../../csharp/language-reference/language-versioning.md#defaults).
 
@@ -80,7 +79,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 8 SDK, the default value is `net8.0`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. For the .NET 9 SDK, the default value is `net9.0`.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -112,7 +111,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 8 SDK is `net8.0`. Available since .NET Core 3.1 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value for .NET 9 SDK is `net9.0`.
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -134,7 +133,7 @@ The templates that ship with the .NET SDK have the following additional options:
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Option available since .NET Core 3.0 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
   The following table lists the default values according to the SDK version number you're using:
 
@@ -143,11 +142,8 @@ The templates that ship with the .NET SDK have the following additional options:
   | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
 
-The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 9 SDK installed, then the only value available for `--framework` is `net9.0`. If you install, for example, the .NET 8 SDK, the value `net8.0` becomes available for `--framework`. So by specifying `--framework net8.0` you can target .NET 8 even while running `dotnet new` in the .NET 9 SDK.
 
 - **`--no-restore`**
 
@@ -162,7 +158,7 @@ The ability to create a project for an earlier TFM depends on having that versio
    The runner/platform for the test project. The possible values are:
 
   - `VSTest` - VSTest platform (Default).
-  - `MSTest` - MSTest Runner (i.e. Microsoft.Testing.Platform).
+  - `MSTest` - Microsoft.Testing.Platform.
 
 - **`--coverage-tool <COVERAGE_TOOL>`**
 
@@ -173,7 +169,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--extensions-profile <EXTENSIONS_PROFILE>`**
 
-  The SDK extensions profile when using MSTest Runner. The possible values are:
+  The SDK extensions profile when using Microsoft.Testing.Platform. The possible values are:
 
   - `Default` - Default extensions profile (Default).
   - `None` - No extensions are enabled.
@@ -221,7 +217,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Option available since .NET Core 3.0 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
   The following table lists the default values according to the SDK version number you're using:
 
@@ -230,11 +226,8 @@ The ability to create a project for an earlier TFM depends on having that versio
   | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
 
-The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 9 SDK installed, then the only value available for `--framework` is `net9.0`. If you install, for example, the .NET 8 SDK, the value `net8.0` becomes available for `--framework`. So by specifying `--framework net8.0` you can target .NET 8 even while running `dotnet new` in the .NET 9 SDK.
 
 - **`-p|--enable-pack`**
 
@@ -259,11 +252,8 @@ The ability to create a project for an earlier TFM depends on having that versio
   | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
 
-The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 6 SDK installed, then the only value available for `--framework` is `net6.0`. If you install the .NET 5 SDK, the value `net5.0` becomes available for `--framework`. If you install the .NET Core 3.1 SDK, `netcoreapp3.1` becomes available, and so on. So by specifying `--framework netcoreapp3.1` you can target .NET Core 3.1 even while running `dotnet new` in the .NET 6 SDK.
+The ability to create a project for an earlier TFM depends on having that version of the SDK installed. For example, if you have only the .NET 9 SDK installed, then the only value available for `--framework` is `net9.0`. If you install, for example, the .NET 8 SDK, the value `net8.0` becomes available for `--framework`. So by specifying `--framework net8.0` you can target .NET 8 even while running `dotnet new` in the .NET 9 SDK.
 
 - **`-p|--enable-pack`**
 
@@ -444,11 +434,9 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -569,13 +557,9 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
-  | 2.1         | `netcoreapp2.1` |
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -674,12 +658,9 @@ The ability to create a project for an earlier TFM depends on having that versio
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -689,11 +670,11 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--use-browserlink`**
 
-  Includes BrowserLink in the project. Option not available in .NET Core 2.2 and 3.1 SDK.
+  Includes BrowserLink in the project.
 
 - **`-rrc|--razor-runtime-compilation`**
 
-  Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds. Option available since .NET Core 3.1.201 SDK.
+  Determines if the project is configured to use [Razor runtime compilation](/aspnet/core/mvc/views/view-compilation#runtime-compilation) in Debug builds.
 
 - **`--kestrelHttpPort`**
 
@@ -715,7 +696,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
-  The type of authentication to use. Available since .NET Core 3.0 SDK.
+  The type of authentication to use.
 
   The possible values are:
 
@@ -740,7 +721,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
   The following table lists the default values according to the SDK version number you're using:
 
@@ -750,11 +731,6 @@ The ability to create a project for an earlier TFM depends on having that versio
   | SDK version | Default value   |
   |-------------|-----------------|
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
-  | 2.1         | `netcoreapp2.0` |
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -780,7 +756,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`-s|--support-pages-and-views`**
 
-  Supports adding traditional Razor pages and Views in addition to components to this library. Available since .NET Core 3.0 SDK.
+  Supports adding traditional Razor pages and Views in addition to components to this library.
 
 ***
 
@@ -800,6 +776,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
 
 - **`--no-restore`**
@@ -883,13 +860,9 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
   | SDK version | Default value   |
   |-------------|-----------------|
+  | 9.0         | `net9.0`        |
   | 8.0         | `net8.0`        |
   | 7.0         | `net7.0`        |
-  | 6.0         | `net6.0`        |
-  | 5.0         | `net5.0`        |
-  | 3.1         | `netcoreapp3.1` |
-  | 3.0         | `netcoreapp3.0` |
-  | 2.1         | `netcoreapp2.1` |
 
   To create a project that targets a framework earlier than the SDK that you're using, see [`--framework` for `console` projects](#template-options) earlier in this article.
 
@@ -922,7 +895,7 @@ API Controller with or without read/write actions.
 - **`--sdk-version <VERSION_NUMBER>`**
 
   Specifies the version of the .NET SDK to use in the *global.json* file.
-  
+
 - **`--roll-forward <ROLL_FORWARD_POLICY>`**
 
   The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a later version.

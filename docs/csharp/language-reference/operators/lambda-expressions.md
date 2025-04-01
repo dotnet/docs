@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions - Lambda expressions and anonymous functions"
 description: C# lambda expressions that are used to create anonymous functions and expression bodied members.
-ms.date: 05/17/2024
+ms.date: 02/19/2025
 helpviewer_keywords:
   - "lambda expressions [C#]"
   - "outer variables [C#]"
@@ -49,7 +49,7 @@ A lambda expression with an expression on the right side of the `=>` operator is
 (input-parameters) => expression
 ```
 
-The body of an expression lambda can consist of a method call. However, if you're creating [expression trees](../../advanced-topics/expression-trees/index.md) that are evaluated outside the context of the .NET Common Language Runtime (CLR), such as in SQL Server, you shouldn't use method calls in lambda expressions. The methods have no meaning outside the context of the .NET Common Language Runtime (CLR).
+The body of an expression lambda can consist of a method call. However, when creating [expression trees](../../advanced-topics/expression-trees/index.md) evaluated by a query provider, limit method calls to those methods recognized by the query provider. Otherwise, the query provider can't replicate the method's function.
 
 ## Statement lambdas
 
@@ -79,11 +79,11 @@ Two or more input parameters are separated by commas:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetTwoParameters":::
 
-Sometimes the compiler can't infer the types of input parameters. You can specify the types explicitly as shown in the following example:
+The compiler typically infers the types for parameters to lambda expressions, referred to as an *implicitly typed parameter list*. You can specify the types explicitly, referred to as an *explicitly typed parameter list*. An explicitly typed parameter list is shown in the following example. :
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetExplicitlyTypedParameters":::
 
-Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../compiler-messages/lambda-expression-errors.md#lambda-expression-parameters-and-returns) compiler error occurs.
+Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../compiler-messages/lambda-expression-errors.md#lambda-expression-parameters-and-returns) compiler error occurs. Before C# 14, you must include the explicit type on a parameter if it has any modifiers, such as `ref` or `out`. In C# 14, that restriction is removed. However, you must still declare the type if you use the `params` modifier.
 
 You can use [discards](../../fundamentals/functional/discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
@@ -92,13 +92,13 @@ You can use [discards](../../fundamentals/functional/discards.md) to specify two
 Lambda discard parameters can be useful when you use a lambda expression to [provide an event handler](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 > [!NOTE]
-> For backwards compatibility, if only a single input parameter is named `_`, then, within a lambda expression, `_` is treated as the name of that parameter.
+> For backwards compatibility, if only a single input parameter is named `_`, `_` is treated as the name of that parameter  within that lambda expression.
 
-Beginning with C# 12, you can provide *default values* for parameters on lambda expressions. The syntax and the restrictions on default parameter values are the same as for methods and local functions. The following example declares a lambda expression with a default parameter, then calls it once using the default and once with two explicit parameters:
+Beginning with C# 12, you can provide *default values* for explicitly typed parameter lists. The syntax and the restrictions on default parameter values are the same as for methods and local functions. The following example declares a lambda expression with a default parameter, then calls it once using the default and once with two explicit parameters:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDefaultParameters":::
 
-You can also declare lambda expressions with `params` arrays or collections as parameters:
+You can also declare lambda expressions with `params` arrays or collections as the last parameter in an explicitly typed parameter list:
 
 :::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetParamsArray":::
 
@@ -166,7 +166,7 @@ For more information about how to create and use async methods, see [Asynchronou
 
 ## Lambda expressions and tuples
 
-The C# language provides built-in support for [tuples](../builtin-types/value-tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple components.
+The C# language provides built-in support for [tuples](../builtin-types/value-tuples.md). You can provide a tuple as an argument to a lambda expression, and your lambda expression can also return a tuple. In some cases, the C# compiler uses type inference to determine the types of tuple elements.
 
 You define a tuple by enclosing a comma-delimited list of its components in parentheses. The following example uses tuple with three components to pass a sequence of numbers to a lambda expression, which doubles each value and returns a tuple with three components that contains the result of the multiplications.
 
@@ -228,7 +228,7 @@ The general rules for type inference for lambdas are as follows:
 
 A lambda expression in itself doesn't have a type because the common type system has no intrinsic concept of "lambda expression." However, it's sometimes convenient to speak informally of the "type" of a lambda expression. That informal "type" refers to the delegate type or <xref:System.Linq.Expressions.Expression> type to which the lambda expression is converted.
 
-Beginning with C# 10, a lambda expression can have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler can infer the delegate type from the lambda expression. For example, consider the following declaration:
+A lambda expression can have a *natural type*. Instead of forcing you to declare a delegate type, such as `Func<...>` or `Action<...>` for a lambda expression, the compiler can infer the delegate type from the lambda expression. For example, consider the following declaration:
 
 ```csharp
 var parse = (string s) => int.Parse(s);
@@ -275,7 +275,7 @@ Typically, the return type of a lambda expression is obvious and inferred. For s
 var choose = (bool b) => b ? 1 : "two"; // ERROR: Can't infer return type
 ```
 
-Beginning with C# 10, you can specify the return type of a lambda expression before the input parameters. When you specify an explicit return type, you must parenthesize the input parameters:
+You can specify the return type of a lambda expression before the input parameters. When you specify an explicit return type, you must parenthesize the input parameters:
 
 ```csharp
 var choose = object (bool b) => b ? 1 : "two"; // Func<bool, object>
@@ -283,7 +283,7 @@ var choose = object (bool b) => b ? 1 : "two"; // Func<bool, object>
 
 ## Attributes
 
-Beginning with C# 10, you can add attributes to a lambda expression and its parameters. The following example shows how to add attributes to a lambda expression:
+You can add attributes to a lambda expression and its parameters. The following example shows how to add attributes to a lambda expression:
 
 ```csharp
 Func<string?, int?> parse = [ProvidesNullCheck] (s) => (s is not null) ? int.Parse(s) : null;
@@ -299,7 +299,7 @@ var inc = [return: NotNullIfNotNull(nameof(s))] (int? s) => s.HasValue ? s++ : n
 As the preceding examples show, you must parenthesize the input parameters when you add attributes to a lambda expression or its parameters.
 
 > [!IMPORTANT]
-> Lambda expressions are invoked through the underlying delegate type. That is different than methods and local functions. The delegate's `Invoke` method doesn't check attributes on the lambda expression. Attributes don't have any effect when the lambda expression is invoked. Attributes on lambda expressions are useful for code analysis, and can be discovered via reflection. One consequence of this decision is that the <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType> cannot be applied to a lambda expression.
+> Lambda expressions are invoked through the underlying delegate type. That invocation is different than methods and local functions. The delegate's `Invoke` method doesn't check attributes on the lambda expression. Attributes don't have any effect when the lambda expression is invoked. Attributes on lambda expressions are useful for code analysis, and can be discovered via reflection. One consequence of this decision is that the <xref:System.Diagnostics.ConditionalAttribute?displayProperty=nameWithType> can't be applied to a lambda expression.
 
 ## Capture of outer variables and variable scope in lambda expressions
 
@@ -309,7 +309,7 @@ Lambdas can refer to *outer variables*. These *outer variables* are the variable
 
 The following rules apply to variable scope in lambda expressions:
 
-- A variable that is captured won't be garbage-collected until the delegate that references it becomes eligible for garbage collection.
+- A variable that is captured isn't garbage-collected until the delegate that references it becomes eligible for garbage collection.
 - Variables introduced within a lambda expression aren't visible in the enclosing method.
 - A lambda expression can't directly capture an [in](../keywords/method-parameters.md#in-parameter-modifier), [ref](../keywords/ref.md), or [out](../keywords/method-parameters.md#out-parameter-modifier) parameter from the enclosing method.
 - A [return](../statements/jump-statements.md#the-return-statement) statement in a lambda expression doesn't cause the enclosing method to return.
@@ -329,7 +329,7 @@ For more information about these features, see the following feature proposal no
 
 - [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
 - [Static anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
-- [Lambda improvements (C# 10)](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
+- [Lambda improvements](~/_csharplang/proposals/csharp-10.0/lambda-improvements.md)
 
 ## See also
 
@@ -340,4 +340,3 @@ For more information about these features, see the following feature proposal no
 - [Local functions vs. lambda expressions](../../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions)
 - [LINQ sample queries](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Official%20Visual%20Studio%202008%20C%23%20Samples/%5BC%23%5D-Official%20Visual%20Studio%202008%20C%23%20Samples/LINQ%20-%20Sample%20Queries/C%23)
 - [XQuery sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Official%20Visual%20Studio%202008%20C%23%20Samples/%5BC%23%5D-Official%20Visual%20Studio%202008%20C%23%20Samples/XQuery/C%23)
-- [101 LINQ samples](/samples/dotnet/try-samples/101-linq-samples/)

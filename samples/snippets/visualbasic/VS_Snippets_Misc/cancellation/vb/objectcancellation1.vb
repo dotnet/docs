@@ -17,8 +17,8 @@ Class CancelableObject
     End Sub
 End Class
 
-Module Example
-    Public Sub Main()
+Module ExampleOb1
+    Public Sub MainOb1()
         Dim cts As New CancellationTokenSource()
         Dim token As CancellationToken = cts.Token
 

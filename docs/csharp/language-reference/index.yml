@@ -31,19 +31,21 @@ landingContent:
     linkLists:
       - linkListType: whats-new
         links:
+          - text: "What's new in C# 14"
+            url: ../whats-new/csharp-14.md
+          - text: "What's new in C# 13"
+            url: ../whats-new/csharp-13.md
           - text: "What's new in C# 12"
             url: ../whats-new/csharp-12.md
           - text: "What's new in C# 11"
             url: ../whats-new/csharp-11.md
-          - text: "What's new in C# 10"
-            url: ../whats-new/csharp-10.md
       - linkListType: reference
         links:
           - text: Breaking changes in the C# compiler
             url: ../whats-new/breaking-changes.md
           - text: Version compatibility
             url: ../whats-new/version-update-considerations.md
-            
+
 
   - title: "Stay in touch"
     linkLists:

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +29,7 @@ namespace cs_conflictmodeenum
                 {
                     MetaTable metatable = db.Mapping.GetTable(occ.Object.GetType());
                     Customer entityInConflict = (Customer)occ.Object;
-                    Console.WriteLine("Table name: {0}", metatable.TableName);
+                    Console.WriteLine($"Table name: {metatable.TableName}");
                     Console.Write("Customer ID: ");
                     Console.WriteLine(entityInConflict.CustomerID);
                     foreach (MemberChangeConflict mcc in occ.MemberConflicts)
@@ -38,10 +38,10 @@ namespace cs_conflictmodeenum
                         object origVal = mcc.OriginalValue;
                         object databaseVal = mcc.DatabaseValue;
                         MemberInfo mi = mcc.Member;
-                        Console.WriteLine("Member: {0}", mi.Name);
-                        Console.WriteLine("current value: {0}", currVal);
-                        Console.WriteLine("original value: {0}", origVal);
-                        Console.WriteLine("database value: {0}", databaseVal);
+                        Console.WriteLine($"Member: {mi.Name}");
+                        Console.WriteLine($"current value: {currVal}");
+                        Console.WriteLine($"original value: {origVal}");
+                        Console.WriteLine($"database value: {databaseVal}");
                         Console.ReadLine();
                     }
                 }

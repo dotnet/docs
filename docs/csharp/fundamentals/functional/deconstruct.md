@@ -1,7 +1,7 @@
 ---
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
-ms.date: 11/10/2021
+ms.date: 11/22/2024
 ---
 # Deconstructing tuples and other types
 
@@ -35,24 +35,24 @@ There are three ways to deconstruct a tuple:
 
     :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple4.cs" ID="Snippet1":::
 
-    This is cumbersome and isn't recommended.
+    The preceding example is cumbersome and isn't recommended.
 
-- Lastly, you may deconstruct the tuple into variables that have already been declared.
+- Lastly, you can deconstruct the tuple into variables already declared.
 
     :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple5.cs" ID="Snippet1":::
 
-- Beginning in C# 10, you can mix variable declaration and assignment in a deconstruction.
+- You can mix variable declaration and assignment in a deconstruction.
 
     :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-tuple6.cs" ID="Snippet1":::
 
 You can't specify a specific type outside the parentheses even if every field in the tuple has the
-same type. Doing so generates compiler error CS8136, "Deconstruction 'var (...)' form disallows a specific type for 'var'.".
+same type. Doing so generates compiler error CS8136, "Deconstruction 'var (...)' form disallows a specific type for 'var'."
 
 You must assign each element of the tuple to a variable. If you omit any elements, the compiler generates error CS8132, "Can't deconstruct a tuple of 'x' elements into 'y' variables."
 
 ## Tuple elements with discards
 
-Often when deconstructing a tuple, you're interested in the values of only some elements. You can take advantage of C#'s support for *discards*, which are write-only variables whose values you've chosen to ignore. A discard is chosen by an underscore character ("\_") in an assignment. You can discard as many values as you like; all are represented by the single discard, `_`.
+Often when deconstructing a tuple, you're interested in the values of only some elements. You can take advantage of C#'s support for *discards*, which are write-only variables whose values you chose to ignore. You declare a discard with an underscore character ("\_") in an assignment. You can discard as many values as you like; a single discard, `_`, represents all the discarded values.
 
 The following example illustrates the use of tuples with discards. The `QueryCityDataForYears` method returns a six-tuple with the name of a city, its area, a year, the city's population for that year, a second year, and the city's population for that second year. The example shows the change in population between those two years. Of the data available from the tuple, we're unconcerned with the city area, and we know the city name and the two dates at design-time. As a result, we're only interested in the two population values stored in the tuple, and can handle its remaining values as discards.
 
@@ -60,7 +60,7 @@ The following example illustrates the use of tuples with discards. The `QueryCit
 
 ## User-defined types
 
-C# doesn't offer built-in support for deconstructing non-tuple types other than the [`record`](#record-types) and [DictionaryEntry](xref:System.Collections.DictionaryEntry.Deconstruct%2A) types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void, and each value to be deconstructed is indicated by an [out](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter in the method signature. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and last name:
+C# offers built-in support for deconstructing tuple types, [`record`](#record-types), and [DictionaryEntry](xref:System.Collections.DictionaryEntry.Deconstruct%2A) types. However, as the author of a class, a struct, or an interface, you can allow instances of the type to be deconstructed by implementing one or more `Deconstruct` methods. The method returns void. An [out](../../language-reference/keywords/method-parameters.md#out-parameter-modifier) parameter in the method signature represents each value to be deconstructed. For example, the following `Deconstruct` method of a `Person` class returns the first, middle, and family name:
 
 :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-class1.cs" ID="Snippet1":::
 
@@ -70,47 +70,39 @@ You can then deconstruct an instance of the `Person` class named `p` with an ass
 
 The following example overloads the `Deconstruct` method to return various combinations of properties of a `Person` object. Individual overloads return:
 
-- A first and last name.
-- A first, middle, and last name.
-- A first name, a last name, a city name, and a state name.
+- A first and family name.
+- A first, middle, and family name.
+- A first name, a family name, a city name, and a state name.
 
 :::code language="csharp" source="./snippets/deconstructing-tuples/deconstruct-class2.cs":::
 
-Multiple `Deconstruct` methods having the same number of parameters are ambiguous. You must be careful to define `Deconstruct` methods with different numbers of parameters, or "arity". `Deconstruct` methods with the same number of parameters cannot be distinguished during overload resolution.
+Multiple `Deconstruct` methods having the same number of parameters are ambiguous. You must be careful to define `Deconstruct` methods with different numbers of parameters, or "arity". `Deconstruct` methods with the same number of parameters can't be distinguished during overload resolution.
 
 ## User-defined type with discards
 
-Just as you do with [tuples](#tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. Each discard is defined by a variable named "\_", and a single deconstruction operation can include multiple discards.
+Just as you do with [tuples](#tuple-elements-with-discards), you can use discards to ignore selected items returned by a `Deconstruct` method. A variable named "\_" represents a discard. A single deconstruction operation can include multiple discards.
 
-The following example deconstructs a `Person` object into four strings (the first and last names, the city, and the state) but discards the last name and the state.
+The following example deconstructs a `Person` object into four strings (the first and family names, the city, and the state) but discards the family name and the state.
 
 :::code language="csharp" source="./snippets/deconstructing-tuples/class-discard1.cs" ID="Snippet1":::
 
-## Extension methods for user-defined types
+## Deconstruction extension methods
 
 If you didn't author a class, struct, or interface, you can still deconstruct objects of that type by implementing one or more `Deconstruct` [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) to return the values in which you're interested.
 
-The following example defines two `Deconstruct` extension methods for the <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType> class. The first returns a set of values that indicate the characteristics of the property, including its type, whether it's static or instance, whether it's read-only, and whether it's indexed. The second indicates the property's accessibility. Because the accessibility of get and set accessors can differ, Boolean values indicate whether the property has separate get and set accessors and, if it does, whether they have the same accessibility. If there's only one accessor or both the get and the set accessor have the same accessibility, the `access` variable indicates the accessibility of the property as a whole. Otherwise, the accessibility of the get and set accessors are indicated by the `getAccess` and `setAccess` variables.
+The following example defines two `Deconstruct` extension methods for the <xref:System.Reflection.PropertyInfo?displayProperty=nameWithType> class. The first returns a set of values that indicate the characteristics of the property. The second indicates the property's accessibility. Boolean values indicate whether the property has separate get and set accessors or different accessibility. If there's only one accessor or both the get and the set accessor have the same accessibility, the `access` variable indicates the accessibility of the property as a whole. Otherwise, the accessibility of the get and set accessors are indicated by the `getAccess` and `setAccess` variables.
 
 :::code source="./snippets/deconstructing-tuples/deconstruct-extension1.cs":::
 
 ## Extension method for system types
 
-Some system types provide the `Deconstruct` method as a convenience. For example, the <xref:System.Collections.Generic.KeyValuePair%602?displayProperty=nameWithType> type provides this functionality. When you're iterating over a <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> each element is a `KeyValuePair<TKey, TValue>` and can be deconstructed. Consider the following example:
+Some system types provide the `Deconstruct` method as a convenience. For example, the <xref:System.Collections.Generic.KeyValuePair%602?displayProperty=nameWithType> type provides this functionality. When you're iterating over a <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>, each element is a `KeyValuePair<TKey, TValue>` and can be deconstructed. Consider the following example:
 
 :::code source="./snippets/deconstructing-tuples/deconstruct-kvp.cs" id="KeyValuePair":::
 
-You can add a `Deconstruct` method to system types that don't have one. Consider the following extension method:
-
-:::code source="./snippets/deconstructing-tuples/deconstruct-extension2.cs" id="NullableExtensions":::
-
-This extension method allows all <xref:System.Nullable%601> types to be deconstructed into a tuple of `(bool hasValue, T value)`. The following example shows code that uses this extension method:
-
-:::code source="./snippets/deconstructing-tuples/deconstruct-extension2.cs" id="NullableExample":::
-
 ## `record` types
 
-When you declare a [record](../../language-reference/builtin-types/record.md) type by using two or more positional parameters, the compiler creates a `Deconstruct` method with an `out` parameter for each positional parameter in the `record` declaration. For more information, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition) and [Deconstructor behavior in derived records](../../language-reference/builtin-types/record.md#deconstructor-behavior-in-derived-records).
+When you declare a [record](../../language-reference/builtin-types/record.md) type by using two or more positional parameters, the compiler creates a `Deconstruct` method with an `out` parameter for each positional parameter in the `record` declaration. For more information, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition) and [Deconstructor behavior in derived records](../../language-reference/builtin-types/record.md#deconstructor-behavior-in-derived-records).
 
 ## See also
 

@@ -83,7 +83,7 @@ let parsed = StringTokenization.parse s // Must qualify to use 'parse'
 
 ### Sort `open` statements topologically
 
-In F#, the order of declarations matters, including with `open` statements (and `open type`, just refered as `open` farther down). This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
+In F#, the order of declarations matters, including with `open` statements (and `open type`, just referred as `open` farther down). This is unlike C#, where the effect of `using` and `using static` is independent of the ordering of those statements in a file.
 
 In F#, elements opened into a scope can shadow others already present. This means that reordering `open` statements could alter the meaning of code. As a result, any arbitrary sorting of all `open` statements (for example, alphanumerically) is not recommended, lest you generate different behavior that you might expect.
 
@@ -535,7 +535,7 @@ F# values are immutable by default, which allows you to avoid certain classes of
 
 Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a function. This allows you to write a functional interface over a mutation-based implementation for performance-critical code.
 
-Also, F# `let` binding constructs allow you to nest bindings into another one, this can be leveraged to keep the scope of `mutable` variable close or at its theoritical smallest.
+Also, F# `let` binding constructs allow you to nest bindings into another one, this can be leveraged to keep the scope of `mutable` variable close or at its theoretical smallest.
 
 ```fsharp
 let data =
@@ -686,6 +686,54 @@ module Array =
 ```
 
 For legacy reasons some string functions in FSharp.Core still treat nulls as empty strings and do not fail on null arguments. However do not take this as guidance, and do not adopt coding patterns that attribute any semantic meaning to "null".
+
+### Leverage F# 9 null syntax at the API boundaries
+
+F# 9 adds [syntax](../language-reference/values/null-values.md#null-values-starting-with-f-9) to explicitly state that a value can be null. It's designed to be used on the API boundaries, to make the compiler indicate the places where null handling is missing.
+
+Here is an example of the valid usage of the syntax:
+
+```fsharp
+type CustomType(m1, m2) =
+    member _.M1 = m1
+    member _.M2 = m2
+
+    override this.Equals(obj: obj | null) =
+        match obj with
+        | :? CustomType as other -> this.M1 = other.M1 && this.M2 = other.M2
+        | _ -> false
+
+    override this.GetHashCode() =
+        hash (this.M1, this.M2)
+```
+
+**Avoid** propagating nulls further down your F# code:
+
+```fsharp
+let getLineFromStream (stream: System.IO.StreamReader) : string | null =
+    stream.ReadLine()
+```
+
+**Instead**, use idiomatic F# means (e.g., options):
+
+```fsharp
+let getLineFromStream (stream: System.IO.StreamReader) =
+    stream.ReadLine() |> Option.ofObj
+```
+
+For raising null related exceptions you can use special `nullArgCheck` and `nonNull` functions. They're handy also because in case the value is not null, they [shadow](../language-reference/functions/index.md#scope) the argument with its sanitized value - the further code cannot access possible null pointers anymore.
+
+```fsharp
+let inline processNullableList list =
+   let list = nullArgCheck (nameof list) list   // throws `ArgumentNullException`
+   // 'list' is safe to use from now on
+   list |> List.distinct
+
+let inline processNullableList' list =
+    let list = nonNull list                     // throws `NullReferenceException`
+    // 'list' is safe to use from now on
+    list |> List.distinct
+```
 
 ## Object programming
 

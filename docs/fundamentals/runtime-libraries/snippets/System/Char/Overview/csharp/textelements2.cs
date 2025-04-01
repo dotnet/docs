@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example5
@@ -9,7 +9,7 @@ public class Example5
         for (int ctr = 0x10107; ctr <= 0x10110; ctr++)  // Range of Aegean numbers.
             result += Char.ConvertFromUtf32(ctr);
 
-        Console.WriteLine("The string contains {0} characters.", result.Length);
+        Console.WriteLine($"The string contains {result.Length} characters.");
     }
 }
 // The example displays the following output:

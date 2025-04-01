@@ -61,12 +61,16 @@
         href: ./sdk/authentication/index.md
       - name: Auth during local development
         items:
-        - name: Auth using developer service principals
-          href: ./sdk/authentication/local-development-service-principal.md
-        - name: Auth using developer accounts
+        - name: Use a developer account
           href: ./sdk/authentication/local-development-dev-accounts.md
+        - name: Use a service principal
+          href: ./sdk/authentication/local-development-service-principal.md
       - name: Auth from Azure-hosted apps
-        href: ./sdk/authentication/azure-hosted-apps.md
+        items:
+        - name: Use a system-assigned managed identity
+          href: ./sdk/authentication/system-assigned-managed-identity.md
+        - name: Use a user-assigned managed identity
+          href: ./sdk/authentication/user-assigned-managed-identity.md
       - name: Auth from on-premises apps
         href: ./sdk/authentication/on-premises-apps.md
       - name: Auth via configuration files
@@ -75,6 +79,10 @@
         href: ./sdk/authentication/additional-methods.md
       - name: Credential chains
         href: ./sdk/authentication/credential-chains.md
+      - name: Best practices
+        href: ./sdk/authentication/best-practices.md
+    - name: ASP.NET Core guidance
+      href: ./sdk/aspnetcore-guidance.md
     - name: Resource management
       href: ./sdk/resource-management.md
     - name: Dependency injection
@@ -87,8 +95,8 @@
       href: ./sdk/pagination.md
     - name: Unit testing and mocking
       href: ./sdk/unit-testing-mocking.md
-    - name: Configure a proxy server
-      href: ./sdk/azure-sdk-configure-proxy.md
+    - name: Configure a proxy
+      href: ./sdk/configure-proxy.md
     - name: Library method types
       href: ./sdk/protocol-convenience-methods.md
     - name: Packages list

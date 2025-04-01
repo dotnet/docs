@@ -2,15 +2,14 @@
 title: Diagnostics and instrumentation
 description: Learn about diagnostics in Native AOT applications
 author: lakshanf
-ms.author: lakshanf
 ms.date: 08/07/2023
 ---
 
 # Diagnostics and instrumentation
 
-Native AOT shares some, but not all, diagnostics and instrumentation capabilities with CoreCLR. Because of CoreCLR's rich selection of diagnostic utilities, it's sometimes appropriate to diagnose and debug problems in CoreCLR. Apps that are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) shouldn't have behavioral differences, so investigations often apply to both runtimes. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
+Native AOT shares some, but not all, diagnostics and instrumentation capabilities with the full .NET runtime. Apps that are [trim-compatible](../trimming/prepare-libraries-for-trimming.md) shouldn't have behavioral differences, so investigations often apply to both runtimes. As such, it's sometimes appropriate to diagnose and debug problems in the full .NET runtime, as it has a rich selection of available diagnostic utilities. Nonetheless, some information can only be gathered after publishing, so Native AOT also provides post-publish diagnostic tooling.
 
-## .NET 8 Native AOT diagnostic support
+## Native AOT diagnostic support
 
 The following table summarizes diagnostic features supported for Native AOT deployments:
 
@@ -24,7 +23,7 @@ The following table summarizes diagnostic features supported for Native AOT depl
 
 ## Observability and telemetry
 
-As of .NET 8, the Native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), which is the base layer used by many logging and tracing libraries. You can interface with EventPipe directly through APIs like `EventSource.WriteEvent` or you can use libraries built on top, like [OpenTelemetry](../../diagnostics/observability-with-otel.md). EventPipe support also allows .NET diagnostic tools like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counters](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md) to work seamlessly with Native AOT or CoreCLR applications. EventPipe is an optional component in Native AOT. To include EventPipe support, set the `EventSourceSupport` MSBuild property to `true`.
+As of .NET 8, the Native AOT runtime supports [EventPipe](../../diagnostics/eventpipe.md), which is the base layer used by many logging and tracing libraries. You can interface with EventPipe directly through APIs like `EventSource.WriteEvent` or you can use libraries built on top, like [OpenTelemetry](../../diagnostics/observability-with-otel.md). EventPipe support also allows .NET diagnostic tools like [dotnet-trace](../../diagnostics/dotnet-trace.md), [dotnet-counters](../../diagnostics/dotnet-counters.md), and [dotnet-monitor](../../diagnostics/dotnet-monitor.md) to work seamlessly with Native AOT or full .NET runtime applications. EventPipe is an optional component in Native AOT. To include EventPipe support, set the `EventSourceSupport` MSBuild property to `true`.
 
 ```xml
 <PropertyGroup>
@@ -37,7 +36,7 @@ Native AOT provides partial support for some [well-known event providers](../../
 ## Development-time diagnostics
 
 The .NET CLI tooling (`dotnet` SDK) and Visual Studio offer separate commands for `build` and
-`publish`. `build` (or `Start` in Visual Studio) uses CoreCLR. Only `publish` creates a
+`publish`. `build` (or `Start` in Visual Studio) uses the full .NET runtime. Only `publish` creates a
 Native AOT application.  Publishing your app as Native AOT produces an app that has been
 ahead-of-time (AOT) compiled to native code. As mentioned previously, not all diagnostic
 tools work seamlessly with published Native AOT applications in .NET 8. However, all .NET
@@ -46,7 +45,7 @@ developing, debugging, and testing the applications as usual and publishing the 
 
 ## Native debugging
 
-When you run your app during development, like inside Visual Studio, or with `dotnet run`, `dotnet build`, or `dotnet test`, it runs on CoreCLR by default. However, if `PublishAot` is present in the project file, the behavior should be the same between CoreCLR and Native AOT. This characteristic allows you to use the standard Visual Studio managed debugging engine for development and testing.
+When you run your app during development, like inside Visual Studio, or with `dotnet run`, `dotnet build`, or `dotnet test`, it runs on the full .NET runtime by default. However, if `PublishAot` is present in the project file, the behavior should be the same between the full .NET runtime and Native AOT. This characteristic allows you to use the standard Visual Studio managed debugging engine for development and testing.
 
 After publishing, Native AOT applications are true native binaries. The managed debugger won't work on them. However, the Native AOT compiler generates fully native executable files that native debuggers can debug on your platform of choice (for example, WinDbg or Visual Studio on Windows and gdb or lldb on Unix-like systems).
 
@@ -78,3 +77,7 @@ Platform-specific tools like [PerfView](https://github.com/microsoft/perfview) a
 ## Heap analysis
 
 Managed heap analysis isn't currently supported in Native AOT. Heap analysis tools like [dotnet-gcdump](../../diagnostics/dotnet-gcdump.md), [PerfView](https://github.com/microsoft/perfview), and Visual Studio heap analysis tools don't work in Native AOT in .NET 8.
+
+## See also
+
+- [Native AOT diagnostic support on iOS and Mac Catalyst](/dotnet/maui/deployment/nativeaot#native-aot-diagnostic-support-on-ios-and-mac-catalyst)

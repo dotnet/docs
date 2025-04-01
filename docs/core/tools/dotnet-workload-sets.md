@@ -7,7 +7,7 @@ ms.service: dotnet
 ms.topic: how-to
 ms.date: 08/02/2024
 
-#customer intent: As a developer using optional workloads, I want to keep my workload versions in sync so that I can avoid conflicts betwween versions. I also want to avoid unexpected workload updates, so that I can avoid disruptions in development.
+#customer intent: As a developer using optional workloads, I want to keep my workload versions in sync so that I can avoid conflicts between versions. I also want to avoid unexpected workload updates, so that I can avoid disruptions in development.
 ---
 # .NET SDK workload sets
 
@@ -121,7 +121,7 @@ With the current directory in the same repository and the CLI in `workload-set` 
 If you have a workload-set version in the global.json file, the workload commands are in `workload-set` mode even if you haven't run the `config` command or used `--version`. The global.json file overrides those.
 To use the `--version` option in that case, run the command outside of the path containing the global.json file.
 
-If you don't specify the workload-set version in global.json, you can use the `--version` option with the `restore` comand. In that case, the `restore` command selects `workload-set` update mode before it restores workloads to the specified workload-set version.
+If you don't specify the workload-set version in global.json, you can use the `--version` option with the `restore` command. In that case, the `restore` command selects `workload-set` update mode before it restores workloads to the specified workload-set version.
 
 In manifests update mode, `restore` installs or updates workloads to the latest version of each individual workload.
 

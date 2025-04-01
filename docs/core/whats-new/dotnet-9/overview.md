@@ -2,7 +2,7 @@
 title: What's new in .NET 9
 description: Learn about the new .NET features introduced in .NET 9 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 10/08/2024
+ms.date: 11/11/2024
 ms.topic: whats-new
 ---
 
@@ -45,7 +45,6 @@ For more information, see [What's new in the .NET 9 libraries](libraries.md).
 The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a single, specific version until explicitly updated. For tools, a new option for [`dotnet tool install`](../../tools/dotnet-tool-install.md) lets users (instead of tool authors) decide whether a tool is allowed to run on a newer .NET runtime version than the version the tool targets. In addition:
 
 - Unit testing has better MSBuild integration that allows you to run tests in parallel.
-- NuGet security audits run on both direct and transitive package references, by default.
 - The terminal logger is enabled by default and also has improved usability. For example, the total count of failures and warnings is now summarized at the end of a build.
 - New MSBuild script analyzers ("build checks") are available.
 - The SDK can detect and adjust for version mismatches between the .NET SDK and MSBuild.
@@ -53,21 +52,80 @@ The .NET 9 SDK introduces _workload sets_, where all of your workloads stay at a
 
 For more information, see [What's new in the SDK for .NET 9](sdk.md).
 
-## ML.NET
+## AI building blocks
 
-ML.NET is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications. The latest version, ML.NET 4.0, adds [additional tokenizer support](../../../machine-learning/whats-new/overview.md#additional-tokenizer-support) for tokenizers such as Tiktoken and models such as Llama and CodeGen. <!--Add info about `Tensor<T>` here and in what's new for ML.NET.-->
+.NET 9 introduces a unified layer of C# abstractions through the [Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions/) and [Microsoft.Extensions.VectorData](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) packages. These abstractions facilitate interaction with AI services, including small and large language models (SLMs and LLMs), embeddings, vector stores, and middleware.
+
+.NET 9 also includes new tensor types that expand AI capabilities. <xref:System.Numerics.Tensors.TensorPrimitives> and the new <xref:System.Numerics.Tensors.Tensor%601> type expand AI capabilities by enabling efficient encoding, manipulation, and computation of multi-dimensional data. You can find these types in the latest release of the [System.Numerics.Tensors package](https://www.nuget.org/packages/System.Numerics.Tensors/).
+
+### TensorPrimitives
+
+- Expanded method scope: Increased from 40 to nearly 200 overloads, now including numerical operations similar to `Math`, `MathF`, and `INumber<T>` but for spans of values.
+- Performance enhancements: Many operations are now SIMD-optimized for better performance.
+- Generic overloads: Supports any type `T` that implements a certain interface, expanding beyond just spans of float values in .NET.
+
+### Tensor\<T>
+
+- Builds on top of `TensorPrimitives` for efficient math operations.
+- Provides efficient interop with AI libraries (ML.NET, TorchSharp, ONNX Runtime) using zero copies where possible.
+- Enables easy and efficient data manipulation with indexing and slicing operations.
+- Is [experimental](../../../fundamentals/runtime-libraries/preview-apis.md#experimentalattribute) in .NET 9.
+
+### ML.NET
+
+[ML.NET](https://www.nuget.org/packages/Microsoft.ML/) is an open-source, cross-platform framework that enables integration of custom machine-learning models into .NET applications.
+
+ML.NET 4.0 brings the following improvements:
+
+- New ways to programmatically configure `MLContext` options.
+- Load ONNX models as `Stream`.
+- DataFrame improvements.
+- New capabilities for [tokenizers](#tokenizers).
+- (Experimental) TorchSharp ports of Llama and Phi family of models.
+- (Experimental) CausalLM pipeline APIs.
+
+For more information, see [What's new in ML.NET](../../../machine-learning/whats-new/overview.md).
+
+#### Tokenizers
+
+The [Microsoft.ML.Tokenizers](https://www.nuget.org/packages/Microsoft.ML.Tokenizers) library provides .NET developers with capabilities for encoding and decoding text to tokens. For AI scenarios, this is important to manage context, calculate cost, and preprocess text when working with local models.
+
+The latest release introduces significant new capabilities for tokenizers:
+
+- Tiktoken for GPT (3, 3.5, 4, 4o, o1) and Llam3 models
+- Llama (based on SentencePiece) for Llama and Mistral models
+- CodeGen for code-generation models like codegen-350M-mono
+- Phi2 (based on CodeGen) for Microsoft Phi2 model
+- WordPiece
+- Bert (based on WordPiece) for Bert-supported models like optimum--all-MiniLM-L6-v2
 
 ## .NET Aspire
 
-.NET Aspire is an opinionated, cloud-ready stack for building observable, production ready, distributed applications.​ .NET Aspire is delivered through a collection of NuGet packages that handle specific cloud-native concerns, and is available in preview for .NET 9. For more information, see [.NET Aspire](/dotnet/aspire).
+.NET Aspire is a set of powerful tools, templates, and packages for building observable, production ready apps.​ .NET Aspire's latest release includes improvements to the dashboard and resource lifecycle management. It also adds new integrations and APIs for more flexibility during development. .NET Aspire 9 works with both .NET 9 and .NET 8 apps. For more information, see [What's new in .NET Aspire 9](/dotnet/aspire/whats-new/dotnet-aspire-9-release-candidate-1).
 
 ## ASP.NET Core
 
-ASP.NET Core includes improvements to Blazor, SignalR, minimal APIs, OpenAPI, and authentication and authorization. For more information, see [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0).
+ASP.NET Core apps built with .NET 9 are secure by default, have expanded support for ahead-of-time compilation, and have improved monitoring and tracing. With the performance improvements, you'll see higher throughput and faster startup time, and all with less memory usage. ASP.NET Core in .NET 9 includes:
+
+- Optimized handling of static files, like JavaScript and CSS, at build and publish time with automatic fingerprinted versioning.
+- Blazor: New Hybrid and Web app templates, detection of component render mode, new reconnection experience with server rendering.
+- APIs: Built in support for OpenAPI document generation using `Microsoft.AspNetCore.OpenAPI`, enhanced native AOT support.
+- Improved security with new APIs for authentication and authorization.
+- Easier setup for trusted development certificate on Linux to enable HTTPS during development.
+
+These are just some of the features and enhancements in .NET 9. For more information, see [What's new in ASP.NET Core 9.0](/aspnet/core/release-notes/aspnetcore-9.0).
 
 ## .NET MAUI
 
-The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is to improve product quality. For more information about that and new features, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
+The focus of .NET Multi-platform App UI (.NET MAUI) in .NET 9 is enhanced performance and reliability, and deeper integrations for desktop and mobile applications. .NET MAUI includes a new, more performant implementation of <xref:Microsoft.Maui.Controls.CollectionView> and <xref:Microsoft.Maui.Controls.CarouselView> for iOS and Mac Catalyst, updates to existing controls, new app lifecycle events, and Native AOT and trimming enhancements to improve app size and startup time.  In addition:
+
+- A new <xref:Microsoft.Maui.Controls.TitleBar> desktop control is available for Windows.
+- A new <xref:Microsoft.Maui.Controls.HybridWebView> control enables easier inclusion of JavaScript-enabled content from frameworks like ReactJS, Vue.js, and Angular.
+- <xref:Microsoft.Maui.Controls.Entry> now supports additional keyboard modes.
+- Control handlers automatically disconnect from their controls when possible.
+- <xref:Microsoft.Maui.Controls.Application.MainPage> is deprecated in favor of setting the primary page of the app by overriding <xref:Microsoft.Maui.Controls.Application.CreateWindow(Microsoft.Maui.IActivationState)?displayProperty=nameWithType> class.
+
+For more information about that these new features and more, see [What's new in .NET MAUI for .NET 9](/dotnet/maui/whats-new/dotnet-9).
 
 ## EF Core
 
@@ -87,6 +145,8 @@ C# 13 ships with the .NET 9 SDK and includes the following new features:
 - Allow ref struct types as arguments for type parameters in generics.
 - Partial properties and indexers are now allowed in `partial` types.
 - Overload resolution priority allows library authors to designate one overload as better than others.
+
+In addition, C# 13 adds a preview feature: `field` backed properties.
 
 For more information, see [What's new in C# 13](../../../csharp/whats-new/csharp-13.md).
 
@@ -112,15 +172,27 @@ For more information, see [What's new in F# 9](../../../fsharp/whats-new/fsharp-
 
 ## Windows Presentation Foundation
 
-Windows Presentation Foundation (WPF) includes support for Windows 11 theming and hyphen-based ligatures. For more information, see [WPF in .NET 9 Preview 4 - Release Notes](https://github.com/dotnet/core/blob/main/release-notes/9.0/preview/preview4/wpf.md).
+WPF in .NET 9 bring enhanced support for building modern apps with several theming enhancements and more:
 
-<!--
+- Support for the Windows Fluent theme.
+- Theme support for Windows light and dark modes added.
+- Themes support the Windows Accent color now.
+- Font render has been improved to support hyphen-based ligatures.
+- `BinaryFormatter` is no longer supported.
+
+For more information, see [What's new in WPF for .NET 9](/dotnet/desktop/wpf/whats-new/net90).
 
 ## Windows Forms
 
-...
+WinForms in .NET 9 brings support for new themes, enhancements for asynchronous development, and more:
 
--->
+- `Form` and `TaskDialog` support `ShowDialogAsync` now. (Experimental feature)
+- `BinaryFormatter` is no longer supported.
+- Experimental support for rendering the app in dark mode, as supported by Windows.
+- `FolderBrowserDialog` and `ToolStrip` had some minor improvements.
+- The **System.Drawing** library has had many improvements, including wrapping GDI+ effects, support for `ReadOnlySpan`, and better interop code generation.
+
+For more information, see [What's new in Windows Forms for .NET 9](/dotnet/desktop/winforms/whats-new/net90).
 
 ## See also
 

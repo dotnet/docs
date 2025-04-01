@@ -61,7 +61,7 @@ using (SqlConnection connection = new SqlConnection(connectionString))
 
 - The **URL**, **Remote Provider**, and **Remote Server** keywords are not supported.
 
- For more information about OLE DB connection strings, see the <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> artcile. You can also use the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> to create connection strings at run time.
+ For more information about OLE DB connection strings, see the <xref:System.Data.OleDb.OleDbConnection.ConnectionString%2A> article. You can also use the <xref:System.Data.OleDb.OleDbConnectionStringBuilder> to create connection strings at run time.
 
 > [!NOTE]
 > The **OleDbConnection** object does not support setting or retrieving dynamic properties specific to an OLE DB provider. Only properties that can be passed in the connection string for the OLE DB provider are supported.

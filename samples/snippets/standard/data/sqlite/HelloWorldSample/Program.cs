@@ -79,6 +79,7 @@ namespace HelloWorldSample
             #endregion
 
             // Clean up
+            SqliteConnection.ClearAllPools();
             File.Delete("hello.db");
         }
     }

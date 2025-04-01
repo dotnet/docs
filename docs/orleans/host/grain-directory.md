@@ -6,7 +6,7 @@ ms.date: 07/03/2024
 
 # Orleans grain directory
 
-Grains have stable logical identities and may get activated (instantiated) and deactivated many times over the life of the application, but at most one activation of grain exist at any point in time. Each time a grain gets activated, it may be placed on a different silo in the cluster. When a grain gets activated in the cluster, it gets registered in the global registry, _grain directory_. This ensures that subsequent invocations of that grain will be delivered to that activation of the grain and that no other activations (instances) of that grain will be created. The grain directory is responsible for keeping a mapping between a grain identity and where (which silo) its current activation is at.
+Grains have stable logical identities and may get activated (instantiated) and deactivated many times over the life of the application, but at most one activation of grain exist at any point in time. Each time a grain gets activated, it may be placed on a different silo in the cluster. When a grain gets activated in the cluster, it registers itself in the _grain directory_. This ensures that subsequent invocations of that grain will be delivered to that activation of the grain and that no other activations (instances) of that grain will be created. The grain directory is responsible for keeping a mapping between a grain identity and where (which silo) its current activation is at.
 
 By default, Orleans uses a built-in distributed in-memory directory. This directory is eventually consistent and partitioned across all silos in the cluster in a form of a distributed hash table.
 

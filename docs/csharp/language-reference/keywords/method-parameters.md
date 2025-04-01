@@ -1,49 +1,43 @@
 ---
-title: "Method Parameters"
-description: "Method parameters are passed by value. Modifiers enable pass-by-reference semantics, including distinctions such as read-only, and `out` parameters. The params modifier allows a series of optional arguments."
-ms.date: 05/17/2024
+title: "Method parameters and modifiers"
+description: "Parameter modifiers enable pass-by-reference semantics, with distinctions for read-only, and `out` parameters. The `params` modifier allows optional arguments."
+ms.date: 11/19/2024
 helpviewer_keywords: 
   - "methods [C#], parameters"
   - "method parameters [C#]"
   - "parameters [C#]"
 ---
-# Method Parameters
+# Method parameters and modifiers
 
-By default, arguments in C# are passed to functions *by value*. That means a copy of the variable is passed to the method. For value (`struct`) types, a copy of the *value* is passed to the method. For reference (`class`) types, a copy of the *reference* is passed to the method. Parameter modifiers enable you to pass arguments *by reference*. The following concepts help you understand these distinctions and how to use the parameter modifiers:
+By default, arguments in C# are passed to functions *by value*. That means a copy of the variable is passed to the method. For value (`struct`) types, a copy of the *value* is passed to the method. For reference (`class`) types, a copy of the *reference* is passed to the method. Parameter modifiers enable you to pass arguments *by reference*.
 
-- *Pass by value* means **passing a copy of the variable** to the method.
-- *Pass by reference* means **passing access to the variable** to the method.
-- A variable of a *reference type* contains a reference to its data.
-- A variable of a *value type* contains its data directly.
+Because a struct is a [value type](../builtin-types/value-types.md), the method receives and operates on a copy of the argument when you pass a struct by value to a method. The method has no access to the original struct in the calling method and therefore can't change it in any way. The method can change only the copy.
 
-Because a struct is a [value type](../builtin-types/value-types.md), the method receives and operates on a copy of the struct argument when you pass a struct by value to a method. The method has no access to the original struct in the calling method and therefore can't change it in any way. The method can change only the copy.
+A class instance is a [reference type](reference-types.md) not a value type. When a reference type is passed by value to a method, the method receives a copy of the reference to the instance. Both variables refer to the same object. The parameter is a copy of the reference. The called method can't reassign the instance in the calling method. However, the called method can use the copy of the reference to access the instance members. If the called method changes an instance member, the calling method also sees those changes since it references the same instance.
 
-A class instance is a [reference type](reference-types.md) not a value type. When a reference type is passed by value to a method, the method receives a copy of the reference to the class instance. Both variables refer to the same object. The parameter is a copy of the reference. The called method can't reassign the instance in the calling method. However, the called method can use the copy of the reference to access the instance members. If the called method changes an instance member, the calling method also sees those changes since it references the same instance.
+## Pass by value and pass by reference
 
-The output of the following example illustrates the difference. The method `ClassTaker` changes the value of the `willIChange` field because the method uses the address in the parameter to find the specified field of the class instance. The `willIChange` field of the struct in the calling method doesn't change from calling `StructTaker` because the value of the argument is a copy of the struct itself, not a copy of its address. `StructTaker` changes the copy, and the copy is lost when the call to `StructTaker` is completed.
+All the examples in this section use the following two `record` types to illustrate the differences between `class` types and `struct` types:
 
-:::code language="csharp" source="./snippets/PassParameters.cs" id="PassByValueOrReference":::
+:::code language="csharp" source="./snippets/PassParameters.cs" id="DataTypes":::
 
-## Combinations of parameter type and argument mode
+The output of the following example illustrates the difference between passing a struct type by value and passing a class type by value. Both `Mutate` methods change property values of its argument. When the parameter is a `struct` type, those changes are made to a copy of the argument's data. When the parameter is a `class` type, those changes are made to the instance referred to by the argument:
 
-How an argument is passed, and whether it's a reference type or value type controls what modifications made to the argument are visible from the caller:
+:::code language="csharp" source="./snippets/PassParameters.cs" id="PassTypesByValue":::
 
-- When you pass a *value* type *by value*:
-  - If the method assigns the parameter to refer to a different object, those changes **aren't** visible from the caller.
-  - If the method modifies the state of the object referred to by the parameter, those changes **aren't** visible from the caller.
-- When you pass a *reference* type *by value*:
-  - If the method assigns the parameter to refer to a different object, those changes **aren't** visible from the caller.
-  - If the method modifies the state of the object referred to by the parameter, those changes **are** visible from the caller.
-- When you pass a *value* type *by reference*:
-  - If the method assigns the parameter to refer to a different object using `ref =`, those changes **aren't** visible from the caller.
-  - If the method modifies the state of the object referred to by the parameter, those changes **are** visible from the caller.
-- When you pass a *reference* type *by reference*:
-  - If the method assigns the parameter to refer to a different object, those changes **are** visible from the caller.
-  - If the method modifies the state of the object referred to by the parameter, those changes **are** visible from the caller.
+The `ref` modifier is one way to pass arguments *by reference* to methods. The following code follows the preceding example, but passes parameters by reference. The modifications made to the `struct` type are visible in the calling method when the struct is passed by reference. There's no semantic change when a reference type is passed by reference:
 
-Passing a reference type by reference enables the called method to replace the object to which the reference parameter refers in the caller. The storage location of the object is passed to the method as the value of the reference parameter. If you change the value in the storage location of the parameter (to point to a new object), you also change the storage location to which the caller refers. The following example passes an instance of a reference type as a `ref` parameter.
+:::code language="csharp" source="./snippets/PassParameters.cs" id="PassTypesByReference":::
 
-:::code language="csharp" source="snippets/RefParameterModifier.cs" id="Snippet3":::
+The preceding examples modified properties of a parameter. A method can also reassign a parameter to a new value. Reassignment behaves differently for struct and class types when passed by value or by reference. The following example shows how struct types and class types behave when parameters that are passed by value are reassigned:
+
+:::code language="csharp" source="./snippets/PassParameters.cs" id="PassByValueReassignment":::
+
+The preceding sample shows that when you reassign a parameter to a new value, that change isn't visible from the calling method, regardless of whether the type is a value type or a reference type. The following example shows the behavior when you reassign a parameter that has been passed by reference:
+
+:::code language="csharp" source="./snippets/PassParameters.cs" id="PassByReferenceReassignment":::
+
+The preceding example shows how reassigning the value of a parameter that is passed by reference is visible in the calling context.
 
 ## Safe context of references and values
 
@@ -62,6 +56,8 @@ You apply one of the following modifiers to a parameter declaration to pass argu
 - [`out`](#out-parameter-modifier): The calling method isn't required to initialize the argument before calling the method. The method must assign a value to the parameter.
 - [`ref readonly`](#ref-readonly-modifier): The argument must be initialized before calling the method. The method can't assign a new value to the parameter.
 - [`in`](#in-parameter-modifier): The argument must be initialized before calling the method. The method can't assign a new value to the parameter. The compiler might create a temporary variable to hold a copy of the argument to `in` parameters.
+
+A parameter that is passed by reference is a *reference variable*. It doesn't have it's own value. Instead, it refers to a different variable called its *referrent*. Reference variables can be [ref reassigned](../operators/assignment-operator.md#ref-assignment), which changes its referrent.
 
 Members of a class can't have signatures that differ only by `ref`, `ref readonly`, `in`, or `out`. A compiler error occurs if the only difference between two members of a type is that one of them has a `ref` parameter and the other has an `out`, `ref readonly`, or `in` parameter. However, methods can be overloaded when one method has a `ref`, `ref readonly`, `in`, or `out` parameter and the other has a parameter that is passed by value, as shown in the following example. In other situations that require signature matching, such as hiding or overriding, `in`, `ref`, `ref readonly`, and `out` are part of the signature and don't match each other.
 
@@ -234,4 +230,6 @@ The following example demonstrates various ways in which arguments can be sent t
 
 :::code language="csharp" source="snippets/ParameterModifiers.cs" id="ParamsModifierExamples":::
 
-- [Argument lists](~/_csharpstandard/standard/expressions.md#1262-argument-lists) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.
+Overload resolution can cause ambiguity when the argument for a `params` parameter is a collection type. The collection type of the argument must be convertible to the collection type of the parameter. When different overloads provide better conversions for that parameter, that method might be better. However, if the argument to the `params` parameter is either discrete elements or missing, all overloads with different `params` parameter types are equal for that parameter.
+
+For more information, see the section on [Argument lists](~/_csharpstandard/standard/expressions.md#1262-argument-lists) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage.

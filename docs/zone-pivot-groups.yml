@@ -60,32 +60,20 @@ groups:
   title: .NET preview version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-10-0
+      title: .NET 10 Preview
     - id: dotnet-9-0
-      title: .NET 9 Preview
+      title: .NET 9
     - id: dotnet-8-0
       title: .NET 8
-    - id: dotnet-7-0
-      title: .NET 7
-    - id: dotnet-6-0
-      title: .NET 6
 - id: dotnet-version
   title: .NET version
   prompt: Choose a .NET version
   pivots:
+    - id: dotnet-9-0
+      title: .NET 9
     - id: dotnet-8-0
       title: .NET 8
-    - id: dotnet-7-0
-      title: .NET 7
-    - id: dotnet-6-0
-      title: .NET 6
-- id: dotnet-version-7-8
-  title: .NET version
-  prompt: Choose a .NET version
-  pivots:
-    - id: dotnet-8-0
-      title: .NET 8
-    - id: dotnet-7-0
-      title: .NET 7
 - id: orleans-version
   title: Orleans version
   prompt: Choose an Orleans version
@@ -150,3 +138,15 @@ groups:
       title: OpenAI
     - id: azure-openai
       title: Azure OpenAI
+- id: meai-targets
+  title: MEAI targets
+  prompt: Choose a host service for your AI models
+  pivots:
+    - id: github-models
+      title: GitHub Models
+    - id: azure-openai
+      title: Azure OpenAI
+    - id: openai
+      title: OpenAI
+    - id: ollama
+      title: Ollama

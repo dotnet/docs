@@ -1,4 +1,4 @@
-﻿//<snippet06>
+//<snippet06>
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -46,7 +46,7 @@ class ParallelSchedulerDemo2
             // it will be wrapped in AggregateException and propagated to the main thread.
             catch (AggregateException e)
             {
-                Console.WriteLine("An iteration has thrown an exception. THIS WAS NOT EXPECTED.\n{0}", e);
+                Console.WriteLine($"An iteration has thrown an exception. THIS WAS NOT EXPECTED.\n{e}");
             }
         }
 

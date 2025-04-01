@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -53,11 +53,11 @@ static class Program
             // Retrieve the ReturnValue.
             var rowCount = (int)adapter.InsertCommand.Parameters["@RowCount"].Value;
 
-            Console.WriteLine("ReturnValue: {0}", rowCount.ToString());
+            Console.WriteLine($"ReturnValue: {rowCount.ToString()}");
             Console.WriteLine("All Rows:");
             foreach (DataRow row in categories.Rows)
             {
-                Console.WriteLine("  {0}: {1}", row[0], row[1]);
+                Console.WriteLine($"  {row[0]}: {row[1]}");
             }
         }
         // </Snippet1>

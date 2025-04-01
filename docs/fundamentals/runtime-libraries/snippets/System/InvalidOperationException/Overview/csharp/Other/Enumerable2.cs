@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 using System.Linq;
 
@@ -10,8 +10,7 @@ public class EnumerableEx2
         var moreThan4 = dbQueryResults.Where(num => num > 4);
 
         if (moreThan4.Any())
-            Console.WriteLine("Average value of numbers greater than 4: {0}:",
-                              moreThan4.Average());
+            Console.WriteLine($"Average value of numbers greater than 4: {moreThan4.Average()}:");
         else
             // handle empty collection
             Console.WriteLine("The dataset has no values greater than 4.");

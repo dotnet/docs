@@ -3,7 +3,7 @@ title: Install .NET Runtime on Linux with Snap
 description: Learn about how to install the .NET Runtime snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 05/22/2024
+ms.date: 12/13/2024
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content
 #customer intent: As a Linux user, I want to install .NET Runtime through Snap.
@@ -31,7 +31,7 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 
 ## 1. Install the runtime
 
-The following steps install the .NET 8 runtime snap package:
+The following steps install the .NET 9 runtime snap package:
 
 01. Open a terminal.
 01. Use `snap install` to install the .NET Runtime snap package. For example, the following command installs the .NET 8 runtime.
@@ -44,9 +44,10 @@ Each .NET Runtime is published as an individual snap package. The following tabl
 
 | .NET version                                      | Snap package        | .NET version supported by Microsoft |
 |---------------------------------------------------|---------------------|-----|
-| [8 (STS)](https://snapcraft.io/dotnet-runtime-80) | `dotnet-runtime-80` | Yes |
+| [9 (STS)](https://snapcraft.io/dotnet-runtime-90) | `dotnet-runtime-90` | Yes |
+| [8 (LTS)](https://snapcraft.io/dotnet-runtime-80) | `dotnet-runtime-80` | Yes |
 | [7 (STS)](https://snapcraft.io/dotnet-runtime-70) | `dotnet-runtime-70` | No  |
-| [6 (LTS)](https://snapcraft.io/dotnet-runtime-60) | `dotnet-runtime-60` | Yes |
+| [6 (LTS)](https://snapcraft.io/dotnet-runtime-60) | `dotnet-runtime-60` | No  |
 | [5](https://snapcraft.io/dotnet-runtime-50)       | `dotnet-runtime-50` | No  |
 | [3.1](https://snapcraft.io/dotnet-runtime-31)     | `dotnet-runtime-31` | No  |
 | [3.0](https://snapcraft.io/dotnet-runtime-30)     | `dotnet-runtime-30` | No  |
@@ -58,15 +59,15 @@ Each .NET Runtime is published as an individual snap package. The following tabl
 When the .NET runtime snap package is installed, the `dotnet` command isn't automatically configured. Use the `snap alias` command to use the `dotnet` command from the terminal. The command is formatted as: `sudo snap alias {package}.{command} {alias}`. The following example maps the `dotnet` command:
 
 ```bash
-sudo snap alias dotnet-runtime-80.dotnet dotnet
+sudo snap alias dotnet-runtime-90.dotnet dotnet
 ```
 
 ## 3. Export the install location
 
-The `DOTNET_ROOT` environment variable is often used by tools to determine where .NET is installed. When .NET is installed through Snap, this environment variable isn't configured. You should configure the *DOTNET_ROOT* environment variable in your profile. The path to the snap uses the following format: `/snap/{package}/current`. For example, if you installed the `dotnet-runtime-80` snap, use the following command to set the environment variable to where .NET is located:
+The `DOTNET_ROOT` environment variable is often used by tools to determine where .NET is installed. When .NET is installed through Snap, this environment variable isn't configured. You should configure the *DOTNET_ROOT* environment variable in your profile. The path to the snap uses the following format: `/snap/{package}/current`. For example, if you installed the `dotnet-runtime-90` snap, use the following command to set the environment variable to where .NET is located:
 
 ```bash
-export DOTNET_ROOT=/snap/dotnet-runtime-80/current
+export DOTNET_ROOT=/snap/dotnet-runtime-90/current
 ```
 
 ### Export the environment variable permanently
@@ -79,7 +80,7 @@ You can edit your shell profile to permanently add the commands. There are a num
 - **Korn Shell**: *~/.kshrc* or *.profile*
 - **Z Shell**: *~/.zshrc* or *.zprofile*
 
-Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/snap/dotnet-runtime-80/current`.
+Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/snap/dotnet-runtime-90/current`.
 
 ## Troubleshooting
 
@@ -91,10 +92,10 @@ Edit the appropriate source file for your shell and add `export DOTNET_ROOT=/sna
 Snap packages can map an alias to a command provided by the package. The .NET Runtime snap packages don't automatically lias the `dotnet` command. To alias the `dotnet` command to the snap package, use the following command:
 
 ```bash
-sudo snap alias dotnet-runtime-80.dotnet dotnet
+sudo snap alias dotnet-runtime-90.dotnet dotnet
 ```
 
-Substitute `dotnet-runtime-80` with the name of your runtime package.
+Substitute `dotnet-runtime-90` with the name of your runtime package.
 
 ### Can't install Snap on WSL2
 

@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 
 public class Example8
@@ -23,11 +23,9 @@ public class Example8
    {
       int result = s.IndexOf(substring, options);
       if (result != -1)
-         Console.WriteLine("'{0}' found in {1} at position {2}", 
-                           substring, s, result);
+         Console.WriteLine($"'{substring}' found in {s} at position {result}");
       else
-         Console.WriteLine("'{0}' not found in {1}", 
-                           substring, s);                                                  
+         Console.WriteLine($"'{substring}' not found in {s}");                                                  
    }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿//<snippet05>
+//<snippet05>
 
 using System;
 using System.Collections.Generic;
@@ -67,12 +67,12 @@ class ParallelForCancellation
         // it will be wrapped in AggregateException and propagated to the main thread.
         catch (AggregateException e)
         {
-            Console.WriteLine("Parallel.For has thrown an AggregateException. THIS WAS NOT EXPECTED.\n{0}", e);
+            Console.WriteLine($"Parallel.For has thrown an AggregateException. THIS WAS NOT EXPECTED.\n{e}");
         }
         // Catching the cancellation exception
         catch (OperationCanceledException e)
         {
-            Console.WriteLine("An iteration has triggered a cancellation. THIS WAS EXPECTED.\n{0}", e.ToString());
+            Console.WriteLine($"An iteration has triggered a cancellation. THIS WAS EXPECTED.\n{e.ToString()}");
         }
         finally
         {

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -57,7 +57,7 @@ namespace GCNotify
                             if (newCollCount != lastCollCount)
                             {
                                 // Show collection count when it increases:
-                                Console.WriteLine("Gen 2 collection count: {0}", GC.CollectionCount(2).ToString());
+                                Console.WriteLine($"Gen 2 collection count: {GC.CollectionCount(2).ToString()}");
                                 lastCollCount = newCollCount;
                             }
 

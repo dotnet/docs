@@ -9,9 +9,9 @@
 
   <ItemGroup>
     <PackageReference Include="OpenTelemetry.Exporter.Prometheus.HttpListener" Version="1.7.0-rc.1" />
-    <PackageReference Include = "Microsoft.Extensions.Http" Version = "8.0.1" />
+    <PackageReference Include = "Microsoft.Extensions.Http" Version = "9.0.0" />
     <PackageReference Include="xunit" Version="2.9.2" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" Version="8.10.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" Version="9.0.0" />
   </ItemGroup>
 
 </Project>

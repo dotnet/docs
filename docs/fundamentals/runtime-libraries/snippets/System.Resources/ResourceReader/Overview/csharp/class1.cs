@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Resources;
@@ -11,8 +11,7 @@ public class Example1
       ResourceReader res = new ResourceReader(@".\ApplicationResources.resources");
       IDictionaryEnumerator dict = res.GetEnumerator();
       while (dict.MoveNext())
-         Console.WriteLine("   {0}: '{1}' (Type {2})", 
-                           dict.Key, dict.Value, dict.Value.GetType().Name);
+         Console.WriteLine($"   {dict.Key}: '{dict.Value}' (Type {dict.Value.GetType().Name})");
       res.Close();
    }
 }

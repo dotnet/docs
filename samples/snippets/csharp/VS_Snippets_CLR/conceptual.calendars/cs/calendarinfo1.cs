@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -17,15 +17,14 @@ public class Example
 
    static void DisplayCalendars(CultureInfo ci)
    {
-      Console.WriteLine("Calendars for the {0} culture:", ci.Name);
+      Console.WriteLine($"Calendars for the {ci.Name} culture:");
 
       // Get the culture's default calendar.
       Calendar defaultCalendar = ci.Calendar;
       Console.Write("   Default Calendar: {0}", GetCalendarName(defaultCalendar));
 
       if (defaultCalendar is GregorianCalendar)
-         Console.WriteLine(" ({0})",
-                           ((GregorianCalendar) defaultCalendar).CalendarType);
+         Console.WriteLine($" ({((GregorianCalendar) defaultCalendar).CalendarType})");
       else
          Console.WriteLine();
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +13,8 @@ namespace csrefKeywordsAccess
 
         public virtual void GetInfo()
         {
-            Console.WriteLine("Name: {0}", name);
-            Console.WriteLine("SSN: {0}", ssn);
+            Console.WriteLine($"Name: {name}");
+            Console.WriteLine($"SSN: {ssn}");
         }
     }
     class Employee : Person
@@ -24,7 +24,7 @@ namespace csrefKeywordsAccess
         {
             // Calling the base class GetInfo method:
             base.GetInfo();
-            Console.WriteLine("Employee ID: {0}", id);
+            Console.WriteLine($"Employee ID: {id}");
         }
     }
 
@@ -131,9 +131,9 @@ namespace csrefKeywordsAccess
             // Printing method:
             public void printEmployee()
             {
-                Console.WriteLine("Name: {0}\nAlias: {1}", name, alias);
+                Console.WriteLine($"Name: {name}\nAlias: {alias}");
                 // Passing the object to the CalcTax method by using this:
-                Console.WriteLine("Taxes: {0:C}", Tax.CalcTax(this));
+                Console.WriteLine($"Taxes: {Tax.CalcTax(this):C}");
             }
 
             public decimal Salary

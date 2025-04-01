@@ -1,7 +1,7 @@
 ---
 title: Cross-platform targeting for .NET libraries
 description: Best practice recommendations for creating cross-platform .NET libraries.
-ms.date: 11/14/2023
+ms.date: 11/11/2024
 ---
 
 # Cross-platform targeting
@@ -33,7 +33,7 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 
 ✔️ DO include a `net6.0` target or later if you require new APIs introduced in a modern .NET.
 
-> .NET 6 and later apps can use a `netstandard2.0` target, so `net6.0` isn't required. You should explicitly target `net6.0`, `net7.0`, or `net8.0` when you want to use newer .NET APIs.
+> .NET 6 and later apps can use a `netstandard2.0` target, so `net6.0` isn't required. You should explicitly target `net6.0`, `net7.0`, `net8.0`, or `net9.0` when you want to use newer .NET APIs.
 
 ❌ AVOID including a `netstandard1.x` target.
 
@@ -46,6 +46,10 @@ If your project targets .NET or .NET Standard and compiles successfully, it does
 ❌ DO NOT include a .NET Standard target if the library relies on a platform-specific app model.
 
 > For example, a UWP control toolkit library depends on an app model that is only available on UWP. App model specific APIs aren't available in .NET Standard.
+
+❌ DO NOT publish for `netstandard2.0` if your project or dependencies multi-target.
+
+> `netstandard2.0` is not a runtime, and multi-targeted projects provide a runtime framework&mdash;specific library, which is required when running on other frameworks.
 
 ## Multi-targeting
 
@@ -118,8 +122,6 @@ public static class GpsLocation
   </PropertyGroup>
 </Project>
 ```
-
-✔️ CONSIDER using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
 
 ❌ AVOID changing the assembly name or using different assembly names for each TFM your library compiles. Due to dependencies between libraries, multi-targeting with different assembly names per TFM can break package consumers. An assembly should have the same name across all TFMs.
 

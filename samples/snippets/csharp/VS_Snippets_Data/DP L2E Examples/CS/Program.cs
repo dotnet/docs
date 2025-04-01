@@ -1,4 +1,4 @@
-﻿// <SnippetImportsUsing>
+// <SnippetImportsUsing>
 using System;
 using System.Data;
 using System.Collections.Generic;
@@ -208,8 +208,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Product Info:");
                 foreach (var productInfo in query)
                 {
-                    Console.WriteLine("Product Id: {0} Product name: {1} ",
-                        productInfo.ProductId, productInfo.ProductName);
+                    Console.WriteLine($"Product Id: {productInfo.ProductId} Product name: {productInfo.ProductName} ");
                 }
             }
             // </SnippetSelectAnonymousTypes>
@@ -230,8 +229,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Product Info:");
                 foreach (var productInfo in query)
                 {
-                    Console.WriteLine("Product Id: {0} Product name: {1} ",
-                        productInfo.ProductId, productInfo.ProductName);
+                    Console.WriteLine($"Product Id: {productInfo.ProductId} Product name: {productInfo.ProductName} ");
                 }
             }
             // </SnippetSelectAnonymousTypes_MQ>
@@ -392,8 +390,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("Contact ID: {0} Last name: {1} Order ID: {2} Total: {3}",
-                        order.ContactID, order.LastName, order.OrderID, order.total);
+                    Console.WriteLine($"Contact ID: {order.ContactID} Last name: {order.LastName} Order ID: {order.OrderID} Total: {order.total}");
                 }
             }
             // </SnippetSelectManyFromAssignment>
@@ -430,8 +427,7 @@ namespace L2E_ExamplesCS
                 // Iterate through the collection of Contact items.
                 foreach( var result in query)
                 {
-                    Console.WriteLine("Contact First Name: {0}; Last Name: {1}",
-                            result.FirstName, result.LastName);
+                    Console.WriteLine($"Contact First Name: {result.FirstName}; Last Name: {result.LastName}");
                 }
             }
             // </snippetQueryEntityTypeCollection>
@@ -454,10 +450,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var onlineOrder in onlineOrders)
                 {
-                    Console.WriteLine("Order ID: {0} Order date: {1:d} Order number: {2}",
-                        onlineOrder.SalesOrderID,
-                        onlineOrder.OrderDate,
-                        onlineOrder.SalesOrderNumber);
+                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             // </SnippetWhere1>
@@ -474,10 +467,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var onlineOrder in onlineOrders)
                 {
-                    Console.WriteLine("Order ID: {0} Order date: {1:d} Order number: {2}",
-                        onlineOrder.SalesOrderID,
-                        onlineOrder.OrderDate,
-                        onlineOrder.SalesOrderNumber);
+                    Console.WriteLine($"Order ID: {onlineOrder.SalesOrderID} Order date: {onlineOrder.OrderDate:d} Order number: {onlineOrder.SalesOrderNumber}");
                 }
             }
             // </SnippetWhere1_MQ>
@@ -501,8 +491,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("Order ID: {0} Order quantity: {1}",
-                        order.SalesOrderID, order.OrderQty);
+                    Console.WriteLine($"Order ID: {order.SalesOrderID} Order quantity: {order.OrderQty}");
                 }
             }
             // </SnippetWhere2>
@@ -521,8 +510,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("Order ID: {0} Order quantity: {1}",
-                        order.SalesOrderID, order.OrderQty);
+                    Console.WriteLine($"Order ID: {order.SalesOrderID} Order quantity: {order.OrderQty}");
                 }
             }
             // </SnippetWhere2_MQ>
@@ -546,9 +534,9 @@ namespace L2E_ExamplesCS
 
                 foreach (var product in query)
                 {
-                    Console.WriteLine("Name: {0}", product.Name);
-                    Console.WriteLine("Product number: {0}", product.ProductNumber);
-                    Console.WriteLine("List price: ${0}", product.ListPrice);
+                    Console.WriteLine($"Name: {product.Name}");
+                    Console.WriteLine($"Product number: {product.ProductNumber}");
+                    Console.WriteLine($"List price: ${product.ListPrice}");
                     Console.WriteLine("");
                 }
             }
@@ -567,9 +555,9 @@ namespace L2E_ExamplesCS
 
                 foreach (var product in query)
                 {
-                    Console.WriteLine("Name: {0}", product.Name);
-                    Console.WriteLine("Product number: {0}", product.ProductNumber);
-                    Console.WriteLine("List price: ${0}", product.ListPrice);
+                    Console.WriteLine($"Name: {product.Name}");
+                    Console.WriteLine($"Product number: {product.ProductNumber}");
+                    Console.WriteLine($"List price: ${product.ListPrice}");
                     Console.WriteLine("");
                 }
             }
@@ -589,12 +577,10 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Orders that were made after 12/1/2002:");
                 foreach (SalesOrderHeader order in query)
                 {
-                    Console.WriteLine("OrderID {0} Order date: {1:d} ",
-                        order.SalesOrderID, order.OrderDate);
+                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {order.OrderDate:d} ");
                     foreach (SalesOrderDetail orderDetail in order.SalesOrderDetails)
                     {
-                        Console.WriteLine("  Product ID: {0} Unit Price {1}",
-                            orderDetail.ProductID, orderDetail.UnitPrice);
+                        Console.WriteLine($"  Product ID: {orderDetail.ProductID} Unit Price {orderDetail.UnitPrice}");
                     }
                 }
             }
@@ -614,12 +600,10 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Orders that were made after December 1, 2003:");
                 foreach (SalesOrderHeader order in query)
                 {
-                    Console.WriteLine("OrderID {0} Order date: {1:d} ",
-                        order.SalesOrderID, order.OrderDate);
+                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {order.OrderDate:d} ");
                     foreach (SalesOrderDetail orderDetail in order.SalesOrderDetails)
                     {
-                        Console.WriteLine("  Product ID: {0} Unit Price {1}",
-                            orderDetail.ProductID, orderDetail.UnitPrice);
+                        Console.WriteLine($"  Product ID: {orderDetail.ProductID} Unit Price {orderDetail.UnitPrice}");
                     }
                 }
             }
@@ -637,12 +621,10 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Orders that were made after December 1, 2003:");
                 foreach (SalesOrderHeader order in query)
                 {
-                    Console.WriteLine("OrderID {0} Order date: {1:d} ",
-                        order.SalesOrderID, order.OrderDate);
+                    Console.WriteLine($"OrderID {order.SalesOrderID} Order date: {order.OrderDate:d} ");
                     foreach (SalesOrderDetail orderDetail in order.SalesOrderDetails)
                     {
-                        Console.WriteLine("  Product ID: {0} Unit Price {1}",
-                            orderDetail.ProductID, orderDetail.UnitPrice);
+                        Console.WriteLine($"  Product ID: {orderDetail.ProductID} Unit Price {orderDetail.UnitPrice}");
                     }
                 }
             }
@@ -662,10 +644,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("First 5 contacts:");
                 foreach (Contact contact in first5Contacts)
                 {
-                    Console.WriteLine("Title = {0} \t FirstName = {1} \t Lastname = {2}",
-                        contact.Title,
-                        contact.FirstName,
-                        contact.LastName);
+                    Console.WriteLine($"Title = {contact.Title} \t FirstName = {contact.FirstName} \t Lastname = {contact.LastName}");
                 }
             }
             //</SnippetTakeSimple>
@@ -685,9 +664,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("All but first 3 products:");
                 foreach (Product product in allButFirst3Products)
                 {
-                    Console.WriteLine("Name: {0} \t ID: {1}",
-                        product.Name,
-                        product.ProductID);
+                    Console.WriteLine($"Name: {product.Name} \t ID: {product.ProductID}");
                 }
             }
             //</SnippetSkipSimple>
@@ -716,8 +693,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("First 3 orders in Seattle:");
                 foreach (var order in query)
                 {
-                    Console.WriteLine("City: {0} Order ID: {1} Total Due: {2:d}",
-                        order.City, order.OrderID, order.OrderDate);
+                    Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {order.OrderDate:d}");
                 }
             }
             //</SnippetTakeNested>
@@ -748,8 +724,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("All but first 2 orders in Seattle:");
                 foreach (var order in query)
                 {
-                    Console.WriteLine("City: {0} Order ID: {1} Total Due: {2:d}",
-                        order.City, order.OrderID, order.OrderDate);
+                    Console.WriteLine($"City: {order.City} Order ID: {order.OrderID} Total Due: {order.OrderDate:d}");
                 }
                 //</SnippetSkipNested>
             }
@@ -950,10 +925,7 @@ namespace L2E_ExamplesCS
 
                 foreach (Product product in query)
                 {
-                    Console.WriteLine("Product ID: {0} Product Name: {1} List Price {2}",
-                        product.ProductID,
-                        product.Name,
-                        product.ListPrice);
+                    Console.WriteLine($"Product ID: {product.ProductID} Product Name: {product.Name} List Price {product.ListPrice}");
                 }
             }
             //</SnippetThenByDescendingSimple>
@@ -970,10 +942,7 @@ namespace L2E_ExamplesCS
 
                 foreach (Product product in query)
                 {
-                    Console.WriteLine("Product ID: {0} Product Name: {1} List Price {2}",
-                        product.ProductID,
-                        product.Name,
-                        product.ListPrice);
+                    Console.WriteLine($"Product ID: {product.ProductID} Product Name: {product.Name} List Price {product.ListPrice}");
                 }
             }
             //</SnippetThenByDescending_MQ>
@@ -1016,8 +985,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var contact in query)
                 {
-                    Console.WriteLine("Last names that start with the letter '{0}':",
-                        contact.FirstLetter);
+                    Console.WriteLine($"Last names that start with the letter '{contact.FirstLetter}':");
                     foreach (var name in contact.Names)
                     {
                         Console.WriteLine(name.LastName);
@@ -1038,8 +1006,7 @@ namespace L2E_ExamplesCS
 
                 foreach (IGrouping<string, Contact> group in query)
                 {
-                    Console.WriteLine("Last names that start with the letter '{0}':",
-                        group.Key);
+                    Console.WriteLine($"Last names that start with the letter '{group.Key}':");
                     foreach (Contact contact in group)
                     {
                         Console.WriteLine(contact.LastName);
@@ -1062,7 +1029,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var addressGroup in query)
                 {
-                    Console.WriteLine("Postal Code: {0}", addressGroup.PostalCode);
+                    Console.WriteLine($"Postal Code: {addressGroup.PostalCode}");
                     foreach (var address in addressGroup.AddressLine)
                     {
                         Console.WriteLine("\t" + address.AddressLine1 +
@@ -1083,7 +1050,7 @@ namespace L2E_ExamplesCS
 
                 foreach (IGrouping<string, Address> addressGroup in query)
                 {
-                    Console.WriteLine("Postal Code: {0}", addressGroup.Key);
+                    Console.WriteLine($"Postal Code: {addressGroup.Key}");
                     foreach (Address address in addressGroup)
                     {
                         Console.WriteLine("\t" + address.AddressLine1 +
@@ -1107,12 +1074,12 @@ namespace L2E_ExamplesCS
 
                 foreach (var orderGroup in query)
                 {
-                    Console.WriteLine("Customer ID: {0}", orderGroup.CustomerID);
-                    Console.WriteLine("Order Count: {0}", orderGroup.OrderCount);
+                    Console.WriteLine($"Customer ID: {orderGroup.CustomerID}");
+                    Console.WriteLine($"Order Count: {orderGroup.OrderCount}");
 
                     foreach (SalesOrderHeader sale in orderGroup.Sales)
                     {
-                        Console.WriteLine("   Sale ID: {0}", sale.SalesOrderID);
+                        Console.WriteLine($"   Sale ID: {sale.SalesOrderID}");
                     }
 
                     Console.WriteLine("");
@@ -1131,12 +1098,12 @@ namespace L2E_ExamplesCS
 
                 foreach (IGrouping<int, SalesOrderHeader> group in query)
                 {
-                    Console.WriteLine("Customer ID: {0}", group.Key);
-                    Console.WriteLine("Order count: {0}", group.Count());
+                    Console.WriteLine($"Customer ID: {group.Key}");
+                    Console.WriteLine($"Order count: {group.Count()}");
 
                     foreach (SalesOrderHeader sale in group)
                     {
-                        Console.WriteLine("   Sale ID: {0}", sale.SalesOrderID);
+                        Console.WriteLine($"   Sale ID: {sale.SalesOrderID}");
                     }
                     Console.WriteLine("");
                 }
@@ -1178,19 +1145,17 @@ namespace L2E_ExamplesCS
 
                 foreach (var contactGroup in query)
                 {
-                    Console.WriteLine("ContactID = {0}", contactGroup.ContactID);
+                    Console.WriteLine($"ContactID = {contactGroup.ContactID}");
                     foreach (var yearGroup in contactGroup.YearGroups)
                     {
-                        Console.WriteLine("\t Year= {0}", yearGroup.Year);
+                        Console.WriteLine($"\t Year= {yearGroup.Year}");
                         foreach (var monthGroup in yearGroup.MonthGroups)
                         {
-                            Console.WriteLine("\t\t Month= {0}", monthGroup.Month);
+                            Console.WriteLine($"\t\t Month= {monthGroup.Month}");
                             foreach (var order in monthGroup.Orders)
                             {
-                                Console.WriteLine("\t\t\t OrderID= {0} ",
-                                    order.SalesOrderID);
-                                Console.WriteLine("\t\t\t OrderDate= {0} ",
-                                    order.OrderDate);
+                                Console.WriteLine($"\t\t\t OrderID= {order.SalesOrderID} ");
+                                Console.WriteLine($"\t\t\t OrderDate= {order.OrderDate} ");
                             }
                         }
                     }
@@ -1225,8 +1190,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Except of contacts sequences:");
                 foreach (Contact c in contacts)
                 {
-                    Console.WriteLine("Id: {0}\t FirstName: {1}\t LastName: {2} ",
-                        c.ContactID, c.FirstName, c.LastName);
+                    Console.WriteLine($"Id: {c.ContactID}\t FirstName: {c.FirstName}\t LastName: {c.LastName} ");
                 }
             }
             // </SnippetExcept1>
@@ -1251,8 +1215,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Except of contacts sequences:");
                 foreach (Contact c in contacts)
                 {
-                    Console.WriteLine("Id: {0}\t FirstName: {1}\t LastName: {2} ",
-                        c.ContactID, c.FirstName, c.LastName);
+                    Console.WriteLine($"Id: {c.ContactID}\t FirstName: {c.FirstName}\t LastName: {c.LastName} ");
                 }
             }
             // </SnippetExcept1_MQ>
@@ -1279,8 +1242,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Union of contacts sequences:");
                 foreach (Contact c in contacts)
                 {
-                    Console.WriteLine("Id: {0}\t FirstName: {1}\t LastName: {2} ",
-                        c.ContactID, c.FirstName, c.LastName);
+                    Console.WriteLine($"Id: {c.ContactID}\t FirstName: {c.FirstName}\t LastName: {c.LastName} ");
                 }
             }
             // </SnippetUnion1>
@@ -1305,8 +1267,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Union of contacts sequences:");
                 foreach (Contact c in contacts)
                 {
-                    Console.WriteLine("Id: {0}\t FirstName: {1}\t LastName: {2} ",
-                        c.ContactID, c.FirstName, c.LastName);
+                    Console.WriteLine($"Id: {c.ContactID}\t FirstName: {c.FirstName}\t LastName: {c.LastName} ");
                 }
             }
             // </SnippetUnion1_MQ>
@@ -1335,8 +1296,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Intersect of contacts sequences:");
                 foreach (Contact c in contacts)
                 {
-                    Console.WriteLine("Id: {0}\t FirstName: {1}\t LastName: {2} ",
-                        c.ContactID, c.FirstName, c.LastName);
+                    Console.WriteLine($"Id: {c.ContactID}\t FirstName: {c.FirstName}\t LastName: {c.LastName} ");
                 }
             }
             // </SnippetIntersect1>
@@ -1363,8 +1323,7 @@ namespace L2E_ExamplesCS
                 Console.WriteLine("Intersect of contacts sequences:");
                 foreach (Contact c in contacts)
                 {
-                    Console.WriteLine("Id: {0}\t FirstName: {1}\t LastName: {2} ",
-                        c.ContactID, c.FirstName, c.LastName);
+                    Console.WriteLine($"Id: {c.ContactID}\t FirstName: {c.FirstName}\t LastName: {c.LastName} ");
                 }
             }
             // </SnippetIntersect1_MQ>
@@ -1385,9 +1344,9 @@ namespace L2E_ExamplesCS
                 // = doubledContacts.AsEnumerable().Distinct();
                 // = Enumerable.Distinct(doubledContacts.AsEnumerable());
 
-                Console.WriteLine("Initial number of contacts: {0}", contact.Count());
+                Console.WriteLine($"Initial number of contacts: {contact.Count()}");
                 Console.WriteLine("First 100, then doubled: {0}", doubledContacts.Count());
-                Console.WriteLine("Number of unique contacts: {0}", uniqueContact.Count());
+                Console.WriteLine($"Number of unique contacts: {uniqueContact.Count()}");
             }
             //</SnippetDistinctRows>
         }
@@ -1447,8 +1406,7 @@ namespace L2E_ExamplesCS
                 Dictionary<String, Product> scoreRecordsDict = products.
                         ToDictionary(record => record.Name);
 
-                Console.WriteLine("Top Tube's ProductID: {0}",
-                        scoreRecordsDict["Top Tube"].ProductID);
+                Console.WriteLine($"Top Tube's ProductID: {scoreRecordsDict["Top Tube"].ProductID}");
             }
             //</SnippetToDictionary>
         }
@@ -1488,8 +1446,7 @@ namespace L2E_ExamplesCS
                 Contact query = contacts.First(contact =>
                     contact.EmailAddress.StartsWith(name));
 
-                Console.WriteLine("An email address starting with 'caroline': {0}",
-                    query.EmailAddress);
+                Console.WriteLine($"An email address starting with 'caroline': {query.EmailAddress}");
             }
             //</SnippetFirstCondition_MQ>
         }
@@ -1508,8 +1465,7 @@ namespace L2E_ExamplesCS
                     select address.AddressLine1)
                     .ElementAt(5);
 
-                Console.WriteLine("Fifth address where PostalCode = 'M4B 1V7': {0}",
-                    fifthAddress);
+                Console.WriteLine($"Fifth address where PostalCode = 'M4B 1V7': {fifthAddress}");
 
             }
             */
@@ -1602,8 +1558,7 @@ namespace L2E_ExamplesCS
                 Decimal averageListPrice =
                     products.Average(product => product.ListPrice);
 
-                Console.WriteLine("The average list price of all the products is ${0}",
-                    averageListPrice);
+                Console.WriteLine($"The average list price of all the products is ${averageListPrice}");
             }
             //</SnippetAverage_MQ>
         }
@@ -1626,8 +1581,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var product in query)
                 {
-                    Console.WriteLine("Product style: {0} Average list price: {1}",
-                        product.Style, product.AverageListPrice);
+                    Console.WriteLine($"Product style: {product.Style} Average list price: {product.AverageListPrice}");
                 }
             }
             //</SnippetAverage2_MQ>
@@ -1642,7 +1596,7 @@ namespace L2E_ExamplesCS
 
                 int numProducts = products.Count();
 
-                Console.WriteLine("There are {0} products.", numProducts);
+                Console.WriteLine($"There are {numProducts} products.");
             }
             //</SnippetCount>
         }
@@ -1665,9 +1619,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var contact in query)
                 {
-                    Console.WriteLine("CustomerID = {0} \t OrderCount = {1}",
-                        contact.CustomerID,
-                        contact.OrderCount);
+                    Console.WriteLine($"CustomerID = {contact.CustomerID} \t OrderCount = {contact.OrderCount}");
                 }
             }
             //</SnippetCountNested>
@@ -1687,9 +1639,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var product in query)
                 {
-                    Console.WriteLine("Color = {0} \t ProductCount = {1}",
-                        product.Color,
-                        product.ProductCount);
+                    Console.WriteLine($"Color = {product.Color} \t ProductCount = {product.ProductCount}");
                 }
             }
             //</SnippetCountGrouped>
@@ -1703,7 +1653,7 @@ namespace L2E_ExamplesCS
                 ObjectSet<Contact> contacts = context.Contacts;
 
                 long numberOfContacts = contacts.LongCount();
-                Console.WriteLine("There are {0} Contacts", numberOfContacts);
+                Console.WriteLine($"There are {numberOfContacts} Contacts");
             }
             //</SnippetLongCountSimple>
         }
@@ -1716,8 +1666,7 @@ namespace L2E_ExamplesCS
                 ObjectSet<SalesOrderDetail> orders = context.SalesOrderDetails;
 
                 double totalOrderQty = orders.Sum(o => o.OrderQty);
-                Console.WriteLine("There are a total of {0} OrderQty.",
-                    totalOrderQty);
+                Console.WriteLine($"There are a total of {totalOrderQty} OrderQty.");
             }
             //</SnippetSumProjection_MQ>
         }
@@ -1740,8 +1689,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("ContactID = {0} \t TotalDue sum = {1}",
-                        order.Category, order.TotalDue);
+                    Console.WriteLine($"ContactID = {order.Category} \t TotalDue sum = {order.TotalDue}");
                 }
             }
             //</SnippetSumGrouped_MQ>
@@ -1755,8 +1703,7 @@ namespace L2E_ExamplesCS
                 ObjectSet<SalesOrderHeader> orders = context.SalesOrderHeaders;
 
                 Decimal smallestTotalDue = orders.Min(totalDue => totalDue.TotalDue);
-                Console.WriteLine("The smallest TotalDue is {0}.",
-                    smallestTotalDue);
+                Console.WriteLine($"The smallest TotalDue is {smallestTotalDue}.");
             }
             //</SnippetMinProjection_MQ>
         }
@@ -1780,8 +1727,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("ContactID = {0} \t Minimum TotalDue = {1}",
-                        order.Category, order.smallestTotalDue);
+                    Console.WriteLine($"ContactID = {order.Category} \t Minimum TotalDue = {order.smallestTotalDue}");
                 }
             }
             //</SnippetMinGrouped_MQ>
@@ -1807,12 +1753,10 @@ namespace L2E_ExamplesCS
 
                 foreach (var orderGroup in query)
                 {
-                    Console.WriteLine("ContactID: {0}", orderGroup.Category);
+                    Console.WriteLine($"ContactID: {orderGroup.Category}");
                     foreach (var order in orderGroup.smallestTotalDue)
                     {
-                        Console.WriteLine("Minimum TotalDue {0} for SalesOrderID {1}: ",
-                            order.TotalDue,
-                            order.SalesOrderID);
+                        Console.WriteLine($"Minimum TotalDue {order.TotalDue} for SalesOrderID {order.SalesOrderID}: ");
                     }
                     Console.Write("\n");
                 }
@@ -1828,7 +1772,7 @@ namespace L2E_ExamplesCS
                 ObjectSet<SalesOrderHeader> orders = context.SalesOrderHeaders;
 
                 Decimal averageTotalDue = orders.Average(order => order.TotalDue);
-                Console.WriteLine("The average TotalDue is {0}.", averageTotalDue);
+                Console.WriteLine($"The average TotalDue is {averageTotalDue}.");
             }
             //</SnippetAverageProjection_MQ>
         }
@@ -1851,8 +1795,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("ContactID = {0} \t Average TotalDue = {1}",
-                        order.Category, order.averageTotalDue);
+                    Console.WriteLine($"ContactID = {order.Category} \t Average TotalDue = {order.averageTotalDue}");
                 }
             }
             //</SnippetAverageGrouped_MQ>
@@ -1878,11 +1821,10 @@ namespace L2E_ExamplesCS
 
                 foreach (var orderGroup in query)
                 {
-                    Console.WriteLine("ContactID: {0}", orderGroup.Category);
+                    Console.WriteLine($"ContactID: {orderGroup.Category}");
                     foreach (var order in orderGroup.CheapestProducts)
                     {
-                        Console.WriteLine("Average total due for SalesOrderID {1} is: {0}",
-                            order.TotalDue, order.SalesOrderID);
+                        Console.WriteLine($"Average total due for SalesOrderID {order.SalesOrderID} is: {order.TotalDue}");
                     }
                     Console.Write("\n");
                 }
@@ -1898,8 +1840,7 @@ namespace L2E_ExamplesCS
                 ObjectSet<SalesOrderHeader> orders = context.SalesOrderHeaders;
 
                 Decimal maxTotalDue = orders.Max(w => w.TotalDue);
-                Console.WriteLine("The maximum TotalDue is {0}.",
-                    maxTotalDue);
+                Console.WriteLine($"The maximum TotalDue is {maxTotalDue}.");
             }
             //</SnippetMaxProjection_MQ>
         }
@@ -1923,8 +1864,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("ContactID = {0} \t Maximum TotalDue = {1}",
-                        order.Category, order.maxTotalDue);
+                    Console.WriteLine($"ContactID = {order.Category} \t Maximum TotalDue = {order.maxTotalDue}");
                 }
             }
             //</SnippetMaxGrouped_MQ>
@@ -1950,12 +1890,10 @@ namespace L2E_ExamplesCS
 
                 foreach (var orderGroup in query)
                 {
-                    Console.WriteLine("ContactID: {0}", orderGroup.Category);
+                    Console.WriteLine($"ContactID: {orderGroup.Category}");
                     foreach (var order in orderGroup.CheapestProducts)
                     {
-                        Console.WriteLine("MaxTotalDue {0} for SalesOrderID {1}: ",
-                            order.TotalDue,
-                            order.SalesOrderID);
+                        Console.WriteLine($"MaxTotalDue {order.TotalDue} for SalesOrderID {order.SalesOrderID}: ");
                     }
                     Console.Write("\n");
                 }
@@ -1990,11 +1928,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("{0}\t{1}\t{2:d}\t{3}",
-                        order.SalesOrderID,
-                        order.SalesOrderDetailID,
-                        order.OrderDate,
-                        order.ProductID);
+                    Console.WriteLine($"{order.SalesOrderID}\t{order.SalesOrderDetailID}\t{order.OrderDate:d}\t{order.ProductID}");
                 }
             }
             //</SnippetJoin>
@@ -2024,16 +1958,11 @@ namespace L2E_ExamplesCS
 
                 foreach (var contact_order in query)
                 {
-                    Console.WriteLine("ContactID: {0} "
-                                    + "SalesOrderID: {1} "
-                                    + "FirstName: {2} "
-                                    + "Lastname: {3} "
-                                    + "TotalDue: {4}",
-                        contact_order.ContactID,
-                        contact_order.SalesOrderID,
-                        contact_order.FirstName,
-                        contact_order.Lastname,
-                        contact_order.TotalDue);
+                    Console.WriteLine($"ContactID: {contact_order.ContactID} "
+                                    + "SalesOrderID: {contact_order.SalesOrderID} "
+                                    + "FirstName: {contact_order.FirstName} "
+                                    + "Lastname: {contact_order.Lastname} "
+                                    + "TotalDue: {contact_order.TotalDue}");
                 }
             }
             //</SnippetJoinSimple_MQ>
@@ -2065,16 +1994,11 @@ namespace L2E_ExamplesCS
                 {
                     foreach (var contact_order in group)
                     {
-                        Console.WriteLine("ContactID: {0} "
-                                        + "SalesOrderID: {1} "
-                                        + "FirstName: {2} "
-                                        + "Lastname: {3} "
-                                        + "TotalDue: {4}",
-                            contact_order.ContactID,
-                            contact_order.SalesOrderID,
-                            contact_order.FirstName,
-                            contact_order.Lastname,
-                            contact_order.TotalDue);
+                        Console.WriteLine($"ContactID: {contact_order.ContactID} "
+                                        + "SalesOrderID: {contact_order.SalesOrderID} "
+                                        + "FirstName: {contact_order.FirstName} "
+                                        + "Lastname: {contact_order.Lastname} "
+                                        + "TotalDue: {contact_order.TotalDue}");
                     }
                 }
             }
@@ -2103,11 +2027,11 @@ namespace L2E_ExamplesCS
 
                 foreach (var group in query)
                 {
-                    Console.WriteLine("ContactID: {0}", group.ContactID);
-                    Console.WriteLine("Order count: {0}", group.OrderCount);
+                    Console.WriteLine($"ContactID: {group.ContactID}");
+                    Console.WriteLine($"Order count: {group.OrderCount}");
                     foreach (var orderInfo in group.Orders)
                     {
-                        Console.WriteLine("   Sale ID: {0}", orderInfo.SalesOrderID);
+                        Console.WriteLine($"   Sale ID: {orderInfo.SalesOrderID}");
                     }
                     Console.WriteLine("");
                 }
@@ -2135,11 +2059,11 @@ namespace L2E_ExamplesCS
 
                 foreach (var group in query)
                 {
-                    Console.WriteLine("ContactID: {0}", group.ContactID);
-                    Console.WriteLine("Order count: {0}", group.OrderCount);
+                    Console.WriteLine($"ContactID: {group.ContactID}");
+                    Console.WriteLine($"Order count: {group.OrderCount}");
                     foreach (var orderInfo in group.Orders)
                     {
-                        Console.WriteLine("   Sale ID: {0}", orderInfo.SalesOrderID);
+                        Console.WriteLine($"   Sale ID: {orderInfo.SalesOrderID}");
                     }
                     Console.WriteLine("");
                 }
@@ -2168,9 +2092,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("CustomerID: {0}  Orders Count: {1}",
-                        order.CustomerID,
-                        order.OrderCount);
+                    Console.WriteLine($"CustomerID: {order.CustomerID}  Orders Count: {order.OrderCount}");
                 }
             }
             //</SnippetGroupJoin2>
@@ -2195,9 +2117,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in query)
                 {
-                    Console.WriteLine("CustomerID: {0}  Orders Count: {1}",
-                        order.CustomerID,
-                        order.OrderCount);
+                    Console.WriteLine($"CustomerID: {order.CustomerID}  Orders Count: {order.OrderCount}");
                 }
             }
             //</SnippetGroupJoin2_MQ>
@@ -2244,7 +2164,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var contact in ordersQuery)
                 {
-                    Console.WriteLine("Contact ID: {0} Orders total: {1}", contact.ContactID, contact.Total);
+                    Console.WriteLine($"Contact ID: {contact.ContactID} Orders total: {contact.Total}");
                 }
             }
             //</SnippetSelectEachContactsOrders2>
@@ -2266,7 +2186,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var contact in ordersQuery)
                 {
-                    Console.WriteLine("Contact ID: {0} Orders total: {1}", contact.ContactID, contact.Total);
+                    Console.WriteLine($"Contact ID: {contact.ContactID} Orders total: {contact.Total}");
                 }
             }
             //</SnippetSelectEachContactsOrders2_MQ>
@@ -2286,7 +2206,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in ordersQuery)
                 {
-                    Console.WriteLine("Name: {0}", order.LastName);
+                    Console.WriteLine($"Name: {order.LastName}");
                     foreach (SalesOrderHeader orderInfo in order.Orders)
                     {
                         Console.WriteLine("Order ID: {0}, Order date: {1}, Total Due: {2}",
@@ -2310,7 +2230,7 @@ namespace L2E_ExamplesCS
 
                 foreach (var order in ordersQuery)
                 {
-                    Console.WriteLine("Name: {0}", order.LastName);
+                    Console.WriteLine($"Name: {order.LastName}");
                     foreach (SalesOrderHeader orderInfo in order.Orders)
                     {
                         Console.WriteLine("Order ID: {0}, Order date: {1}, Total Due: {2}",
@@ -2344,9 +2264,9 @@ namespace L2E_ExamplesCS
                 foreach (var orderInfo in ordersQuery)
                 {
                     Console.WriteLine("Name: {0}, {1}", orderInfo.ContactLastName, orderInfo.ContactFirstName);
-                    Console.WriteLine("Street address: {0}", orderInfo.StreetAddress);
-                    Console.WriteLine("Order number: {0}", orderInfo.OrderNumber);
-                    Console.WriteLine("Total Due: {0}", orderInfo.TotalDue);
+                    Console.WriteLine($"Street address: {orderInfo.StreetAddress}");
+                    Console.WriteLine($"Order number: {orderInfo.OrderNumber}");
+                    Console.WriteLine($"Total Due: {orderInfo.TotalDue}");
                     Console.WriteLine("");
                 }
             }
@@ -2373,9 +2293,9 @@ namespace L2E_ExamplesCS
                 foreach (var orderInfo in ordersQuery)
                 {
                     Console.WriteLine("Name: {0}, {1}", orderInfo.ContactLastName, orderInfo.ContactFirstName);
-                    Console.WriteLine("Street address: {0}", orderInfo.StreetAddress);
-                    Console.WriteLine("Order number: {0}", orderInfo.OrderNumber);
-                    Console.WriteLine("Total Due: {0}", orderInfo.TotalDue);
+                    Console.WriteLine($"Street address: {orderInfo.StreetAddress}");
+                    Console.WriteLine($"Order number: {orderInfo.OrderNumber}");
+                    Console.WriteLine($"Total Due: {orderInfo.TotalDue}");
                     Console.WriteLine("");
                 }
             }

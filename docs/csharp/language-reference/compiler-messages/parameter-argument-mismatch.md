@@ -171,7 +171,7 @@ The compiler issues the following errors when you specified an [interpolated str
 - **CS8950**: *Parameter is an argument to the interpolated string handler conversion on parameter, but the corresponding argument is specified after the interpolated string expression.*
 - **CS8951**: *Parameter is not explicitly provided, but is used as an argument to the interpolated string handler conversion on parameter.*
 
-An interpolated string handler is a pattern-based construct. It's important to get the pattern correct. Consult the [feature spec](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern), or follow the tutorial on [building an interpolated string handler](../../whats-new/tutorials/interpolated-string-handler.md).
+An interpolated string handler is a pattern-based construct. It's important to get the pattern correct. Consult the [feature spec](~/_csharplang/proposals/csharp-10.0/improved-interpolated-strings.md#the-handler-pattern), or follow the tutorial on [building an interpolated string handler](../../advanced-topics/performance/interpolated-string-handler.md).
 
 ## Caller debugging information
 

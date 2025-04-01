@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 
 public class ShowOptionsExamples
@@ -20,7 +20,7 @@ public class ShowOptionsExamples
         RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace;
 
         foreach (Match match in Regex.Matches(input, pattern, options))
-            Console.WriteLine("'{0}// found at index {1}.", match.Value, match.Index);
+            Console.WriteLine($"'{match.Value}// found at index {match.Index}.");
         // The example displays the following output:
         //    'Dogs // found at index 0.
         //    'decidedly // found at index 9.
@@ -34,7 +34,7 @@ public class ShowOptionsExamples
         string input = "Dogs are decidedly good pets.";
 
         foreach (Match match in Regex.Matches(input, pattern))
-            Console.WriteLine("'{0}// found at index {1}.", match.Value, match.Index);
+            Console.WriteLine($"'{match.Value}// found at index {match.Index}.");
         // The example displays the following output:
         //    'Dogs // found at index 0.
         //    'decidedly // found at index 9.
@@ -48,7 +48,7 @@ public class ShowOptionsExamples
         string input = "Dogs are decidedly good pets.";
 
         foreach (Match match in Regex.Matches(input, pattern))
-            Console.WriteLine("'{0}// found at index {1}.", match.Value, match.Index);
+            Console.WriteLine($"'{match.Value}// found at index {match.Index}.");
         // The example displays the following output:
         //    'Dogs // found at index 0.
         //    'decidedly // found at index 9.

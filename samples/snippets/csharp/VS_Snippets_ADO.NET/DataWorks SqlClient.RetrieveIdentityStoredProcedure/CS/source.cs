@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -58,7 +58,7 @@ static class Program
             foreach (DataRow row in categories.Rows)
             {
                 {
-                    Console.WriteLine("{0}: {1}", row[0], row[1]);
+                    Console.WriteLine($"{row[0]}: {row[1]}");
                 }
             }
         }

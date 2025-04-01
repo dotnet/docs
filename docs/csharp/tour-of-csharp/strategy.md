@@ -1,7 +1,7 @@
 ---
 title: Language strategy
-description: We will keep evolving C# to meet the changing needs of developers and remain a state-of-the-art programming language. We will innovate eagerly and broadly in collaboration with C# developers
-ms.date: 02/06/2023
+description: We keep evolving C# to meet the changing needs of developers and remain a state-of-the-art programming language. We will innovate eagerly and broadly in collaboration with C# developers
+ms.date: 03/17/2025
 ms.custom: UpdateFrequency5
 ---
 # Annotated C# strategy
@@ -14,19 +14,19 @@ The C# strategy guides our decisions about C# evolution, and these annotations p
 
 > "we will innovate eagerly and broadly"
 
-The C# community continues to grow, and the C# language continues to evolve to meet the community's needs and expectations. We draw inspiration from a variety of sources to select features that benefit a large segment of C# developers, and that provide consistent improvements in productivity, readability, and performance.
+The C# community continues to grow, and the C# language continues to evolve to meet the community's needs and expectations. We draw inspiration from many sources to select features that benefit a large segment of C# developers, and that provide consistent improvements in productivity, readability, and performance.
 
 > "being careful to stay within the spirit of the language"
 
-We evaluate new ideas in the spirit and history of the C# language. We prioritize innovations that make sense to the majority of existing C# developers.
+We evaluate new ideas in the spirit and history of the C# language. We prioritize innovations that make sense to most existing C# developers.
 
 > "improvements that benefit all or most developers"
 
-Developers use C# in all .NET workloads, such as web front and back ends, cloud native development, desktop development and building cross platform applications. We focus on new features that have the most impact either directly, or by empowering improvements to common libraries. Language feature development includes integration into our developer tools and learning resources.
+Developers use C# in all .NET workloads. Developers build web front and back ends, cloud native apps, and desktop apps with C#. C# enables cross platform applications. We focus on new features that have the most impact either directly, or by empowering improvements to common libraries. Language feature development includes integration into our developer tools and learning resources.
 
 > "high commitment to backwards compatibility"
 
-We respect that there is a massive amount of C# code in use today. Any potential breaking change is carefully considered against the scale and impact of disruption to the C# community.
+We respect that there's a massive amount of C# code in use today. Any potential breaking change is carefully considered against the scale and impact of disruption to the C# community.
 
 > "maintaining stewardship"
 

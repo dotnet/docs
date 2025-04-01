@@ -1,8 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 10/22/2024
-zone_pivot_groups: dotnet-version
+ms.date: 02/11/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -13,8 +12,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.topic: how-to
-ms.collection: ce-skilling-ai-copilot
-ms.custom: vs-copilot-horizontal
+ms.custom: copilot-scenario-highlight
 ---
 
 # How to customize property names and values with System.Text.Json
@@ -245,14 +243,9 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use Github Copilot to customize property names and order
+## Use GitHub Copilot to customize property names and order
 
-You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties.
-
-If you're using [Visual Studio 2022 version 17.8 or later](/visualstudio/releases/2022/release-notes), you can try the AI-driven [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) to generate code that uses `System.Text.Json` to customize property names and order in the JSON output from serializtion. Submit your question as a prompt in the Copilot chat window, as in the following example. You can also submit prompts using [inline chat](/visualstudio/ide/visual-studio-github-copilot-chat#ask-questions-in-the-inline-chat-view) in the editor window itself.
-
-> [!NOTE]
-> GitHub Copilot is powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions. For more information about the general use of GitHub Copilot, product impact, human oversight, and privacy, see [GitHub Copilot FAQs](https://github.com/features/copilot#faq).
+You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
 
 The following example shows you how to use Copilot to modify existing code to customize property names and order when serializing to JSON.
 
@@ -273,82 +266,18 @@ The following example shows you how to use Copilot to modify existing code to cu
 
 1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
 
-   > `#Example.cs` modify code to use `System.Text.Json` to customize property names and order of JSON output from serialization. Set property names: FirstName to first_name, LastName to last_name. Set order to: Country, FirstName, LastName, Age. Provide customized serialization output.
+    ```copilot-prompt
+    #Example.cs modify code to use System.Text.Json to customize property names and order of JSON output from serialization.
+    Set property names: FirstName to first_name, LastName to last_name.
+    Set order to: Country, FirstName, LastName, Age.
+    Provide customized serialization output.
+    ```
 
-   `#Example.cs` in the prompt provides a [file reference as context](/visualstudio/ide/copilot-chat-context#reference-a-file) to Copilot. You can customize the prompt to output a JSON string with property names and values that suit your requirements. To set intent and get better answers with scoped context, you can use chat features such as [slash commands, references to files, methods, or classes, and threads](/visualstudio/ide/copilot-chat-context).
+GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-   The following output shows an example Copilot Chat response:
-
-   ```output
-   To customize the property names and order of the JSON output using System.Text.Json, you can use the JsonPropertyName attribute to rename properties and the JsonPropertyOrder attribute to set the order. Here's how you can modify your code:
-
-   using System.Text.Json;
-   using System.Text.Json.Serialization;
-
-   public class Person
-   {
-       [JsonPropertyName("first_name")]
-       [JsonPropertyOrder(2)]
-       public string? FirstName { get; set; }
-
-       [JsonPropertyName("last_name")]
-       [JsonPropertyOrder(3)]
-       public string? LastName { get; set; }
-
-       [JsonPropertyOrder(4)]
-       public int Age { get; set; }
-
-       [JsonPropertyOrder(1)]
-       public string? Country { get; set; }
-   }
-
-   public class Program
-   {
-       public static void Main()
-       {
-           var person = new Person
-           {
-               FirstName = "John",
-               LastName = "Doe",
-               Age = 30,
-               Country = "USA"
-           };
-
-           string jsonString = JsonSerializer.Serialize(person, new JsonSerializerOptions { WriteIndented = true });
-           Console.WriteLine(jsonString);
-       }
-   }
-
-   **Explanation:**
-
-   1. Renaming Properties: The JsonPropertyName attribute is used to rename FirstName to first_name and LastName to last_name.
-   2. Ordering Properties: The JsonPropertyOrder attribute is used to set the order of the properties in the JSON output. The order is set as:
-      • Country (Order 1)
-      • FirstName (Order 2)
-      • LastName (Order 3)
-      • Age (Order 4)
-   3. Indented JSON: The JsonSerializerOptions with WriteIndented = true is used to make the JSON output more readable.
-
-   **Customized Serialization Output:**
-   {
-     "Country": "USA",
-     "first_name": "John",
-     "last_name": "Doe",
-     "Age": 30
-   }
-
-   This ensures that the JSON output has the customized property names and the specified order.
-   ```
-
-When Copilot returns a code block, the response includes options to copy the code, insert the code into a new file, or preview the code output.
-
-> [!NOTE]
-> Your results might be different from what's shown in the example responses. AI models are non-deterministic, which means that they can return different responses when asked the same question. This might be due to additional learning and adaption over time, language variation, changes in context, such as your chat history, and more.
+Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
 
 ## See also
 
 - [System.Text.Json overview](overview.md)
 - [How to serialize and deserialize JSON](how-to.md)
-- [GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
-- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
-- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

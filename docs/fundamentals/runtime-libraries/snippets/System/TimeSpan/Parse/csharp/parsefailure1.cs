@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -10,13 +10,13 @@ public class Example
       {
          try {
             TimeSpan interval = TimeSpan.Parse(value);
-            Console.WriteLine("{0} --> {1}", value, interval);
+            Console.WriteLine($"{value} --> {interval}");
          }   
          catch (FormatException) {
-            Console.WriteLine("{0}: Bad Format", value);
+            Console.WriteLine($"{value}: Bad Format");
          }   
          catch (OverflowException) {
-            Console.WriteLine("{0}: Overflow", value);
+            Console.WriteLine($"{value}: Overflow");
          }
       }
 

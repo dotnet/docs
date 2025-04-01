@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Threading;
 
@@ -10,7 +10,7 @@ public class ThreadExample {
     // the rest of its time slice each time, and then ends.
     public static void ThreadProc() {
         for (int i = 0; i < 10; i++) {
-            Console.WriteLine("ThreadProc: {0}", i);
+            Console.WriteLine($"ThreadProc: {i}");
             // Yield the rest of the time slice.
             Thread.Sleep(0);
         }

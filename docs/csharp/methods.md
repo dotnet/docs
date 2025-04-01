@@ -2,7 +2,7 @@
 title: Overview of methods
 description: Overview of methods, method parameters, and method return values
 ms.subservice: fundamentals
-ms.date: 05/17/2024
+ms.date: 11/22/2024
 ---
 
 # Methods in C\#
@@ -125,7 +125,7 @@ You assign the parameter's default value with one of the following kinds of expr
 - An expression of the form `new ValType()`, where `ValType` is a value type. This expression invokes the value type's implicit parameterless constructor, which isn't an actual member of the type.
 
   > [!NOTE]
-  > In C# 10 and later, when an expression of the form `new ValType()` invokes the explicitly defined parameterless constructor of a value type, the compiler generates an error as the default parameter value must be a compile-time constant. Use the `default(ValType)` expression or the `default` literal to provide the default parameter value. For more information about parameterless constructors, see the [Struct initialization and default values](language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](language-reference/builtin-types/struct.md) article.
+  > When an expression of the form `new ValType()` invokes the explicitly defined parameterless constructor of a value type, the compiler generates an error as the default parameter value must be a compile-time constant. Use the `default(ValType)` expression or the `default` literal to provide the default parameter value. For more information about parameterless constructors, see the [Struct initialization and default values](language-reference/builtin-types/struct.md#struct-initialization-and-default-values) section of the [Structure types](language-reference/builtin-types/struct.md) article.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.
 
@@ -163,13 +163,15 @@ You can also choose to define your methods with a statement body and a `return` 
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet43":::
 
-To use a value returned from a method, the calling method can use the method call itself anywhere a value of the same type would be sufficient. You can also assign the return value to a variable. For example, the following three code examples accomplish the same goal:
+To use a value returned from a method, you can assign the return value to a variable:
+
+:::code language="csharp" source="snippets/methods/return44.cs" id="snippet47":::
+
+The calling method can also use the method call itself anywhere a value of the same type would be sufficient. For example, the following two code examples accomplish the same goal:
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet45":::
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet46":::
-
-:::code language="csharp" source="snippets/methods/return44.cs" id="snippet47":::
 
 Sometimes, you want your method to return more than a single value. You use *tuple types* and *tuple literals* to return multiple values. The tuple type defines the data types of the tuple's elements. Tuple literals provide the actual values of the returned tuple. In the following example, `(string, string, string, int)` defines the tuple type returned by the `GetPersonalInfo` method. The expression `(per.FirstName, per.MiddleName, per.LastName, per.Age)` is the tuple literal; the method returns the first, middle, and family name, along with the age, of a `PersonInfo` object.
 

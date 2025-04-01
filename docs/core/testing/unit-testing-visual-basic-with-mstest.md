@@ -61,7 +61,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 </ItemGroup>
 ```
 
-The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added MSTest and the MSTest runner. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added MSTest. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```dotnetcli
 dotnet add reference ../PrimeService/PrimeService.vbproj
@@ -124,7 +124,7 @@ In the *unit-testing-vb-mstest* directory, run `dotnet test` again. The `dotnet 
 
 ## Adding more features
 
-Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add those cases as new tests with the `<TestMethod>` attribute, but that quickly becomes tedious. There are other MSTest attributes that enable you to write a suite of similar tests.  A `<DataTestMethod>` attribute represents a suite of tests that execute the same code but have different input arguments. You can use the `<DataRow>` attribute to specify values for those inputs.
+Now that you've made one test pass, it's time to write more. There are a few other simple cases for prime numbers: 0, -1. You could add those cases as new tests with the `<TestMethod>` attribute, but that quickly becomes tedious. There are other MSTest attributes that enable you to write a suite of similar tests. You can use the `<DataRow>` attribute along with `<TestMethod>` attribute to specify values for those inputs.
 
 Instead of creating new tests, apply these two attributes to create a single theory. The theory is a method that tests several values less than two, which is the lowest prime number:
 

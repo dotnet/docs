@@ -82,7 +82,7 @@ app.MapGet("/NestedGreeting", SendNestedGreeting);
 app.Run();
 
 //<Snippet_SendGreeting>
-async Task<String> SendGreeting(ILogger<Program> logger)
+async Task<string> SendGreeting(ILogger<Program> logger)
 {
     // Create a new Activity scoped to the method
     using var activity = greeterActivitySource.StartActivity("GreeterActivity");

@@ -31,7 +31,7 @@ Default projects should compile.
 
 If you relied on the implicit global `using` directive, you can:
 
-- Add a [global `using` directive](../../../../csharp/language-reference/keywords/using-directive.md#global-modifier) to one of your source files.
+- Add a [global `using` directive](../../../../csharp/language-reference/keywords/using-directive.md#the-global-modifier) to one of your source files.
 - Add a `using` directive to each source code file that uses APIs from System.Net.Http.
 
 ## Affected APIs

@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
           egress-policy: audit
 
@@ -41,7 +41,7 @@ jobs:
 
       - name: Azure OpenID Connect
         id: azure-oidc-auth
-        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
         with:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
@@ -51,7 +51,7 @@ jobs:
       - name: manual-sequester
         if: ${{ github.event_name == 'workflow_dispatch' }}
         id: manual-sequester
-        uses: dotnet/docs-tools/actions/sequester@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
@@ -67,7 +67,7 @@ jobs:
       - name: auto-sequester
         if: ${{ github.event_name != 'workflow_dispatch' }}
         id: auto-sequester
-        uses: dotnet/docs-tools/actions/sequester@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}

@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -65,10 +65,10 @@ public class Example15
                    }
 
                    // Show result.
-                   Console.WriteLine("Task {0} finished execution.", taskNo);
-                   Console.WriteLine("Random numbers generated: {0:N0}", taskCtr);
-                   Console.WriteLine("Sum of random numbers: {0:N2}", taskTotal);
-                   Console.WriteLine("Random number mean: {0:N4}\n", taskTotal / taskCtr);
+                   Console.WriteLine($"Task {taskNo} finished execution.");
+                   Console.WriteLine($"Random numbers generated: {taskCtr:N0}");
+                   Console.WriteLine($"Sum of random numbers: {taskTotal:N2}");
+                   Console.WriteLine($"Random number mean: {taskTotal / taskCtr:N4}\n");
 
                    // Update overall totals.
                    lock (numericLock)
@@ -82,9 +82,9 @@ public class Example15
         try
         {
             await Task.WhenAll(tasks.ToArray());
-            Console.WriteLine("\nTotal random numbers generated: {0:N0}", totalCount);
-            Console.WriteLine("Total sum of all random numbers: {0:N2}", totalValue);
-            Console.WriteLine("Random number mean: {0:N4}", totalValue / totalCount);
+            Console.WriteLine($"\nTotal random numbers generated: {totalCount:N0}");
+            Console.WriteLine($"Total sum of all random numbers: {totalValue:N2}");
+            Console.WriteLine($"Random number mean: {totalValue / totalCount:N4}");
         }
         catch (AggregateException e)
         {
@@ -92,9 +92,9 @@ public class Example15
             {
                 TaskCanceledException canc = inner as TaskCanceledException;
                 if (canc != null)
-                    Console.WriteLine("Task #{0} cancelled.", canc.Task.Id);
+                    Console.WriteLine($"Task #{canc.Task.Id} cancelled.");
                 else
-                    Console.WriteLine("Exception: {0}", inner.GetType().Name);
+                    Console.WriteLine($"Exception: {inner.GetType().Name}");
             }
         }
         finally

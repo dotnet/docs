@@ -47,6 +47,8 @@ This change was introduced to simplify the package override behavior for targeti
 
 Remove any use of `FrameworkReference` in your .NET 5+ app's project file when targeting the Windows SDK.
 
+When working with the [Windows App SDK](https://github.com/microsoft/WindowsAppSDK), you might need to explicitly add the `WindowsSdkPackageVersion` property if the required [Windows SDK package](https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref) version cannot be resolved by .NET SDK. This issue can arise due to different release mechanisms for the Windows App SDK and .NET SDK, where the .NET SDK is shipped through Visual Studio. See details in this [GitHub issue](https://github.com/microsoft/WindowsAppSDK/issues/4734). You might also consider removing the `WindowsSdkPackageVersion` property once the required Windows SDK package version has been resolved by .NET SDK, ensuring you have the latest Windows SDK package. This typically happens after Visual Studio releases a new version and you've upgraded to that version.
+
 ## Affected APIs
 
 Windows APIs in .NET 5 and later versions that are provided by the [Windows SDK targeting package](https://www.nuget.org/packages/Microsoft.Windows.SDK.NET.Ref).

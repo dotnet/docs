@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -186,11 +186,9 @@ namespace Overview
 
          // Print the sum of both batches.
 
-         Console.WriteLine("The sum of the elements in batch 1 is {0}.",
-            batchBlock.Receive().Sum());
+         Console.WriteLine($"The sum of the elements in batch 1 is {batchBlock.Receive().Sum()}.");
 
-         Console.WriteLine("The sum of the elements in batch 2 is {0}.",
-            batchBlock.Receive().Sum());
+         Console.WriteLine($"The sum of the elements in batch 2 is {batchBlock.Receive().Sum()}.");
 
          /* Output:
             The sum of the elements in batch 1 is 45.
@@ -226,15 +224,13 @@ namespace Overview
             switch (data.Item3)
             {
                case '+':
-                  Console.WriteLine("{0} + {1} = {2}",
-                     data.Item1, data.Item2, data.Item1 + data.Item2);
+                  Console.WriteLine($"{data.Item1} + {data.Item2} = {data.Item1 + data.Item2}");
                   break;
                case '-':
-                  Console.WriteLine("{0} - {1} = {2}",
-                     data.Item1, data.Item2, data.Item1 - data.Item2);
+                  Console.WriteLine($"{data.Item1} - {data.Item2} = {data.Item1 - data.Item2}");
                   break;
                default:
-                  Console.WriteLine("Unknown operator '{0}'.", data.Item3);
+                  Console.WriteLine($"Unknown operator '{data.Item3}'.");
                   break;
             }
          }
@@ -316,7 +312,7 @@ namespace Overview
          // is less than zero.
          var throwIfNegative = new ActionBlock<int>(n =>
          {
-            Console.WriteLine("n = {0}", n);
+            Console.WriteLine($"n = {n}");
             if (n < 0)
             {
                throw new ArgumentOutOfRangeException();
@@ -341,8 +337,7 @@ namespace Overview
             // exceptions are propagated through an AggregateException object.
             ae.Handle(e =>
             {
-               Console.WriteLine("Encountered {0}: {1}",
-                  e.GetType().Name, e.Message);
+               Console.WriteLine($"Encountered {e.GetType().Name}: {e.Message}");
                return true;
             });
          }
@@ -364,7 +359,7 @@ namespace Overview
          // is less than zero.
          var throwIfNegative = new ActionBlock<int>(n =>
          {
-            Console.WriteLine("n = {0}", n);
+            Console.WriteLine($"n = {n}");
             if (n < 0)
             {
                throw new ArgumentOutOfRangeException();
@@ -375,8 +370,7 @@ namespace Overview
          // task status to the console when the block finishes.
          throwIfNegative.Completion.ContinueWith(task =>
          {
-            Console.WriteLine("The status of the completion task is '{0}'.",
-               task.Status);
+            Console.WriteLine($"The status of the completion task is '{task.Status}'.");
          });
 
          // Post values to the block.
@@ -397,8 +391,7 @@ namespace Overview
             // exceptions are propagated through an AggregateException object.
             ae.Handle(e =>
             {
-               Console.WriteLine("Encountered {0}: {1}",
-                  e.GetType().Name, e.Message);
+               Console.WriteLine($"Encountered {e.GetType().Name}: {e.Message}");
                return true;
             });
          }

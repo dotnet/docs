@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -22,8 +22,8 @@ public class Example
         var rr2 = new System.Resources.ResourceReader(fs);
         // </Snippet2>                                       
 
-        Console.WriteLine("rr1: {0}", rr1 != null);
-        Console.WriteLine("rr2: {0}", rr2 != null);
+        Console.WriteLine($"rr1: {rr1 != null}");
+        Console.WriteLine($"rr2: {rr2 != null}");
     }
 
     private void Embedded()

@@ -12,7 +12,7 @@ Grains (virtual actors) are the base building blocks of an Orleans-based applica
 
 ## Suitable apps
 
-Orleans should be considered when:
+Consider Orleans when:
 
 - Significant number (hundreds, millions, billions, and even trillions) of loosely coupled entities. To put the number in perspective, Orleans can easily create a grain for every person on Earth in a small cluster, so long as a subset of that total number is active at any point in time.
   - Examples: user profiles, purchase orders, application/game sessions, stocks.

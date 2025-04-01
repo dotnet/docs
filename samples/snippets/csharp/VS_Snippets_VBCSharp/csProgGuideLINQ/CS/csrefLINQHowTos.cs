@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -123,7 +123,7 @@ namespace csrefLINQExamples
             Console.WriteLine("Execute first query:");
             foreach (var item in reusableQuery)
             {
-                Console.WriteLine("{0} {1}", item.FirstName, item.LastName);
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
             }
 
             // This query filters on the results of the first query.
@@ -142,7 +142,7 @@ namespace csrefLINQExamples
 
             foreach (var item in reusableQuery)
             {
-                Console.WriteLine("{0} {1}", item.FirstName, item.LastName);
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
             }
 
             // Reuse query variable for a completely new query. Note that
@@ -155,7 +155,7 @@ namespace csrefLINQExamples
             Console.WriteLine(System.Environment.NewLine + "Reuse query variable for a new query:");
             foreach (var item in reusableQuery)
             {
-                Console.WriteLine("{0} {1}", item.FirstName, item.LastName);
+                Console.WriteLine($"{item.FirstName} {item.LastName}");
             }
         }
         /* Output:
@@ -518,7 +518,7 @@ namespace csrefLINQExamples
             {
                 foreach (var item in exceptionDemoQuery)
                 {
-                    Console.WriteLine("Processing {0}", item);
+                    Console.WriteLine($"Processing {item}");
                 }
             }
 
@@ -585,8 +585,7 @@ namespace csrefLINQExamples
 
             foreach (var student in students)
             {
-                Console.WriteLine("The average score of {0} {1} is {2}.",
-                    student.FirstName, student.LastName, student.ExamScores.Average());
+                Console.WriteLine($"The average score of {student.FirstName} {student.LastName} is {student.ExamScores.Average()}.");
             }
 
             //Keep console window open in debug mode
@@ -662,7 +661,7 @@ namespace csrefLINQExamples
 
             foreach (var nameGroup in queryLastNames)
             {
-                Console.WriteLine("Key: {0}", nameGroup.Key);
+                Console.WriteLine($"Key: {nameGroup.Key}");
                 foreach (var student in nameGroup)
                 {
                     Console.WriteLine("\t{0}, {1}", student.LastName, student.FirstName);
@@ -710,10 +709,10 @@ namespace csrefLINQExamples
             foreach (var scoreGroup in queryHighScoreGroups)
             {
                 string s = scoreGroup.Key.Score == true ? "more than" : "less than";
-                Console.WriteLine("Name starts with {0} who scored {1} 85", scoreGroup.Key.FirstLetter, s);
+                Console.WriteLine($"Name starts with {scoreGroup.Key.FirstLetter} who scored {s} 85");
                 foreach (var item in scoreGroup)
                 {
-                    Console.WriteLine("\t{0} {1}", item.FirstName, item.LastName);
+                    Console.WriteLine($"\t{item.FirstName} {item.LastName}");
                 }
             }
         }
@@ -756,9 +755,9 @@ namespace csrefLINQExamples
 
             foreach (var studentGroup in queryGroupByAverages)
             {
-                Console.WriteLine("Key: {0}", studentGroup.Key);
+                Console.WriteLine($"Key: {studentGroup.Key}");
                 foreach (var student in studentGroup)
-                    Console.WriteLine("\t{0} {1}", student.FirstName, student.LastName);
+                    Console.WriteLine($"\t{student.FirstName} {student.LastName}");
             }
         }
         /* Output:
@@ -796,7 +795,7 @@ namespace csrefLINQExamples
             // Nested foreach required to iterate over groups and group items.
             foreach (var studentGroup in queryNumericRange)
             {
-                Console.WriteLine("Key: {0}", (studentGroup.Key * 10));
+                Console.WriteLine($"Key: {(studentGroup.Key * 10)}");
                 foreach (var item in studentGroup)
                 {
                     Console.WriteLine("\t{0}, {1}", item.LastName, item.FirstName);
@@ -835,7 +834,7 @@ namespace csrefLINQExamples
 
             foreach (var studentGroup in queryFirstLetters)
             {
-                Console.WriteLine("Key: {0}", studentGroup.Key);
+                Console.WriteLine($"Key: {studentGroup.Key}");
                 // Nested foreach is required to access group items.
                 foreach (var student in studentGroup)
                 {
@@ -896,11 +895,11 @@ namespace csrefLINQExamples
                 };
 
             int count = queryGroupMax.Count();
-            Console.WriteLine("Number of groups = {0}", count);
+            Console.WriteLine($"Number of groups = {count}");
 
             foreach (var item in queryGroupMax)
             {
-                Console.WriteLine("  {0} Highest Score={1}", item.Level, item.HighestScore);
+                Console.WriteLine($"  {item.Level} Highest Score={item.HighestScore}");
             }
         }
         //</snippet23>
@@ -935,13 +934,13 @@ namespace csrefLINQExamples
             // cursor over the iteration variables to see their actual type.
             foreach (var outerGroup in queryNestedGroups)
             {
-                Console.WriteLine("DataClass.Student Level = {0}", outerGroup.Key);
+                Console.WriteLine($"DataClass.Student Level = {outerGroup.Key}");
                 foreach (var innerGroup in outerGroup)
                 {
-                    Console.WriteLine("\tNames that begin with: {0}", innerGroup.Key);
+                    Console.WriteLine($"\tNames that begin with: {innerGroup.Key}");
                     foreach (var innerGroupElement in innerGroup)
                     {
-                        Console.WriteLine("\t\t{0} {1}", innerGroupElement.LastName, innerGroupElement.FirstName);
+                        Console.WriteLine($"\t\t{innerGroupElement.LastName} {innerGroupElement.FirstName}");
                     }
                 }
             }
@@ -1030,7 +1029,7 @@ namespace csrefLINQExamples
 
             foreach (var name in queryNames)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.Id);
+                Console.WriteLine($"{name.LastName}: {name.Id}");
             }
         }
     }
@@ -1084,10 +1083,10 @@ namespace csrefLINQExamples
                 default:
                     break;
             }
-            Console.WriteLine("The following students are at level {0}", year.ToString());
+            Console.WriteLine($"The following students are at level {year.ToString()}");
             foreach (Student name in studentQuery)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.Id);
+                Console.WriteLine($"{name.LastName}: {name.Id}");
             }
         }
         //</snippet27>

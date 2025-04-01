@@ -19,10 +19,10 @@ ms.author: faisalhafeez
 | **Title**                           | Avoid conditional access in assertions                |
 | **Category**                        | Usage                                                 |
 | **Fix is breaking or non-breaking** | Non-breaking                                          |
-| **Enabled by default**              | Yes                                                   |
+| **Enabled by default**              | Yes (from 3.5 to 3.7). No (starting with 3.8)         |
 | **Default severity**                | Info                                                  |
 | **Introduced in version**           | 3.5.0                                                 |
-| **There is a code fix**             | No                                                    |
+| **Is there a code fix**             | No                                                    |
 
 ## Cause
 
@@ -61,15 +61,34 @@ Ensure that arguments do not contain `(?.)` or `?[]` when passed to the assertio
 
 ```csharp
 Company? company = GetCompany();
-Assert.AreEqual(company?.Name, "Contoso"); // MSTEST0026
+Assert.AreEqual("Contoso", company?.Name); // MSTEST0026
 StringAssert.Contains(company?.Address, "Brazil"); // MSTEST0026
 
 // Fixed code
 Assert.IsNotNull(company);
-Assert.AreEqual(company.Name, "Contoso");
+Assert.AreEqual("Contoso", company.Name);
 StringAssert.Contains(company.Address, "Brazil");
 ```
 
 ## When to suppress warnings
 
 We do not recommend suppressing warnings from this rule.
+
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable MSTEST0026
+// The code that's violating the rule is on this line.
+#pragma warning restore MSTEST0026
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0026.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

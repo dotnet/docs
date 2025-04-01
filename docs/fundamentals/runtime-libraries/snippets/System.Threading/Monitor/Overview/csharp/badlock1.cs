@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -29,14 +29,14 @@ public class Example1
                     }
                 }));
             Task.WaitAll(tasks.ToArray());
-            Console.WriteLine("{0} tasks started and executed.", nTasks);
+            Console.WriteLine($"{nTasks} tasks started and executed.");
         }
         catch (AggregateException e)
         {
             String msg = String.Empty;
             foreach (var ie in e.InnerExceptions)
             {
-                Console.WriteLine("{0}", ie.GetType().Name);
+                Console.WriteLine($"{ie.GetType().Name}");
                 if (!msg.Contains(ie.Message))
                     msg += ie.Message + Environment.NewLine;
             }

@@ -19,21 +19,22 @@ This article describes how .NET is available on various Linux distributions. .NE
 
 ## Packages
 
-Starting with .NET 9 (currently in preview), Microsoft only publishes packages for supported Linux distributions that don't publish their own packages. Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>. This includes the following Linux distributions:
+Packages are available for the following Linux distributions:
 
-- Azure Linux 3.0
+- Azure Linux
 - [Debian](linux-debian.md)
 - [openSUSE Leap](linux-opensuse.md)
 - [SUSE Enterprise Linux](linux-sles.md)
 
-The following Linux distributions officially support .NET, and publish their own .NET packages:
+Packages are published in the Microsoft package repository at <https://packages.microsoft.com/>. Distributions are selected per the policy defined at [dotnet/core #9556](https://github.com/dotnet/core/discussions/9556).
 
-- Azure Linux 2.0 (CBL-Mariner)
+The following Linux distributions publish their own .NET packages:
+
 - [Alpine](linux-alpine.md)
 - [CentOS Stream](linux-rhel.md#centos-stream-9)
 - [Fedora](linux-fedora.md)
 - [Red Hat Enterprise Linux (RHEL)](linux-rhel.md)
-- [Ubuntu](linux-ubuntu.md)
+- [Ubuntu](linux-ubuntu-install.md)
 
 ## Snap
 
@@ -49,4 +50,27 @@ You can install .NET manually in the following ways:
 - [Manual install](linux-scripted-manual.md#manual-install)
 - [Scripted install](linux-scripted-manual.md#scripted-install)
 
-You may need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
+You might need to install [.NET dependencies](https://github.com/dotnet/core/blob/main/release-notes/8.0/linux-packages.md) if you install .NET manually.
+
+## Additional sources
+
+.NET is also available from other sources. The packages and containers use a name similar to one of the following names:
+
+- aspnet-runtime
+- dotnet-runtime
+- dotnet-sdk
+- dotnet
+
+### Package managers
+
+- <https://formulae.brew.sh/cask/dotnet>
+- <https://formulae.brew.sh/cask/dotnet-sdk>
+- <https://ports.macports.org/port/dotnet-cli>
+- <https://search.nixos.org/packages?query=dotnet>
+- <https://archlinux.org>
+- <https://aur.archlinux.org>
+
+### Containers
+
+- <https://containers.dev/features>
+- <https://images.chainguard.dev>

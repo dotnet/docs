@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 
@@ -14,11 +14,9 @@ public class CalendarDates
       CultureInfo jc = CultureInfo.CreateSpecificCulture("ar-JO");
 
       // Display the date using the Gregorian calendar.
-      Console.WriteLine("Using the system default culture: {0}",
-                        dateValue1.ToString("d"));
+      Console.WriteLine($"Using the system default culture: {dateValue1.ToString("d")}");
       // Display the date using the ar-JO culture's original default calendar.
-      Console.WriteLine("Using the ar-JO culture's original default calendar: {0}",
-                        dateValue1.ToString("d", jc));
+      Console.WriteLine($"Using the ar-JO culture's original default calendar: {dateValue1.ToString("d", jc)}");
       // Display the date using the Hijri calendar.
       Console.WriteLine("Using the ar-JO culture with Hijri as the default calendar:");
       // Display a Date value.
@@ -33,8 +31,7 @@ public class CalendarDates
       CultureInfo ic = CultureInfo.CreateSpecificCulture("fa-IR");
 
       // Display the date using the ir-FA culture's default calendar.
-      Console.WriteLine("Using the ir-FA culture's default calendar: {0}",
-                        dateValue1.ToString("d", ic));
+      Console.WriteLine($"Using the ir-FA culture's default calendar: {dateValue1.ToString("d", ic)}");
       // Display a Date value.
       Console.WriteLine(persianUtil.DisplayDate(dateValue1, ic));
       // Display a DateTimeOffset value.
@@ -80,15 +77,13 @@ public class CalendarUtility
 
       if (this.CalendarExists(culture))
       {
-         Console.WriteLine("Displaying date in supported {0} calendar...",
-                           this.thisCalendar.GetType().Name);
+         Console.WriteLine($"Displaying date in supported {this.thisCalendar.GetType().Name} calendar...");
          culture.DateTimeFormat.Calendar = this.thisCalendar;
          return dateToDisplay.ToString(specifier, culture);
       }
       else
       {
-         Console.WriteLine("Displaying date in unsupported {0} calendar...",
-                           thisCalendar.GetType().Name);
+         Console.WriteLine($"Displaying date in unsupported {thisCalendar.GetType().Name} calendar...");
 
          string separator = targetCulture.DateTimeFormat.DateSeparator;
 

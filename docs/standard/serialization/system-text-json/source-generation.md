@@ -3,7 +3,6 @@ title: How to use source generation in System.Text.Json
 description: "Learn how to use source generation in System.Text.Json."
 ms.date: 10/09/2023
 no-loc: [System.Text.Json]
-zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -142,8 +141,6 @@ You can specify metadata-based mode or serialization-optimization mode for an en
 
 In Blazor apps, use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType> extension methods that take a source generation context or `TypeInfo<TValue>`.
 
-:::zone pivot="dotnet-8-0"
-
 Starting with .NET 8, you can also use overloads of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsAsyncEnumerable%2A?displayProperty=nameWithType> extension methods that accept a source generation context or `TypeInfo<TValue>`.
 
 In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
@@ -164,52 +161,10 @@ services.AddControllers().AddJsonOptions(
         options.JsonSerializerOptions.TypeInfoResolverChain.Add(MyJsonContext.Default));
 ```
 
-:::zone-end
-
-:::zone pivot="dotnet-7-0"
-
-In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to specify the context.
-
-```csharp
-[JsonSerializable(typeof(WeatherForecast[]))]
-internal partial class MyJsonContext : JsonSerializerContext { }
-```
-
-```csharp
-var serializerOptions = new JsonSerializerOptions
-{
-    TypeInfoResolver = MyJsonContext.Default
-};
-
-services.AddControllers().AddJsonOptions(
-    static options =>
-        options.JsonSerializerOptions = serializerOptions);
-```
-
-:::zone-end
-
-:::zone pivot="dotnet-6-0"
-
-In Razor Pages, MVC, SignalR, and Web API apps, use the <xref:System.Text.Json.JsonSerializerOptions.AddContext%2A> method of <xref:System.Text.Json.JsonSerializerOptions>, as shown in the following example:
-
-```csharp
-[JsonSerializable(typeof(WeatherForecast[]))]
-internal partial class MyJsonContext : JsonSerializerContext { }
-```
-
-```csharp
-services.AddControllers().AddJsonOptions(options =>
-    options.JsonSerializerOptions.AddContext<MyJsonContext>());
-```
-
-:::zone-end
-
 > [!NOTE]
 > <xref:System.Text.Json.Serialization.JsonSourceGenerationMode.Serialization?displayProperty=nameWithType>, or fast-path serialization, isn't supported for asynchronous serialization.
 >
 > In .NET 7 and earlier versions, this limitation also applies to synchronous overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> that accept a <xref:System.IO.Stream>. Starting with .NET 8, even though streaming serialization requires metadata-based models, it will fall back to fast-path if the payloads are known to be small enough to fit in the predetermined buffer size. For more information, see <https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-8/#json>.
-
-:::zone pivot="dotnet-8-0"
 
 ## Disable reflection defaults
 
@@ -242,8 +197,6 @@ static JsonSerializerOptions CreateDefaultOptions()
 
 Because the property is treated as a link-time constant, the previous method doesn't root the reflection-based resolver in applications that run in Native AOT.
 
-:::zone-end
-
 ## Specify options
 
 In .NET 8 and later versions, most options that you can set using <xref:System.Text.Json.JsonSerializerOptions> can also be set using the <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute> attribute. The advantage to setting options via the attribute is that the configuration is specified at compile time, which ensures that the generated `MyContext.Default` property is preconfigured with all the relevant options set.
@@ -270,32 +223,6 @@ Here are the preceding examples in a complete program:
 
 :::code language="csharp" source="snippets/source-generation/csharp/SerializeOnlyWithOptions.cs" id="All":::
 
-:::zone pivot="dotnet-7-0,dotnet-6-0"
-
-### Specify options by using `JsonSerializerOptions`
-
-Some options of <xref:System.Text.Json.JsonSerializerOptions> can't be set using <xref:System.Text.Json.Serialization.JsonSourceGenerationOptionsAttribute>. To specify options by using <xref:System.Text.Json.JsonSerializerOptions>:
-
-- Create an instance of `JsonSerializerOptions`.
-- Create an instance of your class that derives from <xref:System.Text.Json.Serialization.JsonSerializerContext>, and pass the `JsonSerializerOptions` instance to the constructor.
-- Call serialization or deserialization methods of `JsonSerializer` that take a context instance or `TypeInfo<TValue>`.
-
-Here's an example context class followed by serialization and deserialization example code:
-
-:::code language="csharp" source="snippets/source-generation/csharp/JsonSerializerOptionsExample.cs" id="DefineContext":::
-
-:::code language="csharp" source="snippets/source-generation/csharp/JsonSerializerOptionsExample.cs" id="Serialize":::
-
-:::code language="csharp" source="snippets/source-generation/csharp/JsonSerializerOptionsExample.cs" id="Deserialize":::
-
-Here are the preceding examples in a complete program:
-
-:::code language="csharp" source="snippets/source-generation/csharp/JsonSerializerOptionsExample.cs" id="All":::
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0,dotnet-7-0"
-
 ## Combine source generators
 
 You can combine contracts from multiple source-generated contexts inside a single <xref:System.Text.Json.JsonSerializerOptions> instance. Use the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver?displayProperty=nameWithType> property to chain multiple contexts that have been combined by using the <xref:System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver[])?displayProperty=nameWithType> method.
@@ -315,10 +242,6 @@ options.TypeInfoResolverChain.Insert(0, ContextE.Default); // Insert at the begi
 ```
 
 Any change made to the <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolverChain> property is reflected by <xref:System.Text.Json.JsonSerializerOptions.TypeInfoResolver> and vice versa.
-
-:::zone-end
-
-:::zone pivot="dotnet-8-0"
 
 ## Serialize enum fields as strings
 
@@ -363,8 +286,6 @@ Notice that the enum doesn't have the <xref:System.Text.Json.Serialization.JsonC
 ### Custom enum member names
 
 Starting in .NET 9, you can customize enum member names using the [JsonStringEnumMemberName attribute](xref:System.Text.Json.Serialization.JsonStringEnumMemberNameAttribute). For more information, see [Custom enum member names](customize-properties.md#custom-enum-member-names).
-
-:::zone-end
 
 ## See also
 

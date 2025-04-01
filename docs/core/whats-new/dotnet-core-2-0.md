@@ -150,7 +150,6 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 
 - [Microservices and Docker containers](../../architecture/microservices/index.md)
 - [Web applications with ASP.NET](../../architecture/modern-web-apps-azure/index.md)
-- [Mobile applications with Xamarin](/xamarin/xamarin-forms/enterprise-application-patterns/index)
 - [Applications that are deployed to the Cloud with Azure](/azure/architecture/reference-architectures/index)
 
 ## See also

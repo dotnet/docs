@@ -236,7 +236,7 @@ The Setup.bat batch file included with the Message Security samples enables you 
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe
     ```
 
-     The %SERVER_NAME% variable specifies the server name. The certificate is stored in the LocalMachine store. If the Setup.bat batch file is run with an argument of service (such as, **setup.bat service**) the %SERVER_NAME% contains the fully-qualified domain name of the computer. Otherwise it defaults to localhost.
+     The %SERVER_NAME% variable specifies the server name. The certificate is stored in the LocalMachine store. If the Setup.bat batch file is run with an argument of service (such as **setup.bat service**) the %SERVER_NAME% contains the fully-qualified domain name of the computer. Otherwise it defaults to localhost.
 
 - Installing the server certificate into the client's trusted certificate store.
 

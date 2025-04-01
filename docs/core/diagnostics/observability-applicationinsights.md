@@ -34,7 +34,7 @@ Add the following OTel initialization code before `builder.Build();`:
 
 [`UseAzureMonitor()`](https://github.com/Azure/azure-sdk-for-net/blob/d51f02c6ef46f2c5d9b38a9d8974ed461cde9a81/sdk/monitor/Azure.Monitor.OpenTelemetry.AspNetCore/src/OpenTelemetryBuilderExtensions.cs#L80) is the magic that will add the common instrumentation libraries and exporters for Application Insights. You just need to add your custom `Meter` and `ActivitySource` names to the registration.
 
-The same OTel initialization works for OTLP as for Application Insights, the difference is which exporters you selecect. You can use both in the same application, and select between them by defining the appropriate environment variables.
+The same OTel initialization works for OTLP as for Application Insights, the difference is which exporters you select. You can use both in the same application, and select between them by defining the appropriate environment variables.
 
 ## 3. Specify the connection string
 

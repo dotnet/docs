@@ -54,7 +54,7 @@ In relational database terms, an *inner join* produces a result set in which eac
 
 ### Single key join
 
-The following example matches `Teacher` objects with `Deparment` objects whose `TeacherId` matches that `Teacher`. The `select` clause in C# defines how the resulting objects look. In the following example, the resulting objects are anonymous types that consist of the department name and the name of the teacher that leads the department.
+The following example matches `Teacher` objects with `Department` objects whose `TeacherId` matches that `Teacher`. The `select` clause in C# defines how the resulting objects look. In the following example, the resulting objects are anonymous types that consist of the department name and the name of the teacher that leads the department.
 
 :::code language="csharp" source="./snippets/standard-query-operators/InnerJoins.cs" id="SimpleInnerJoinQuery":::
 

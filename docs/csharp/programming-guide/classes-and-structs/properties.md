@@ -1,7 +1,7 @@
 ---
 title: "Properties"
 description: A property in C# is a member that uses accessor methods to read, write, or compute the value of a private field as if it were a public data member.
-ms.date: 08/16/2024
+ms.date: 10/30/2024
 f1_keywords:
   - "cs.properties"
 helpviewer_keywords:
@@ -26,30 +26,13 @@ You can initialize a property to a value other than the default by setting a val
 
 :::code language="csharp" source="./snippets/properties/Person.cs" id="Initializer":::
 
-## Access control
+## Field backed properties
 
-The preceding examples showed read / write properties. You can also create read-only properties, or give different accessibility to the set and get accessors. Suppose that your `Person` class should only enable changing the value of the `FirstName` property from other methods in that class. You could give the set accessor `private` accessibility instead of `public`:
+In C# 13, you can add validation or other logic in the accessor for a property using the [`field`](../../language-reference/keywords/field.md) keyword preview feature. The `field` keyword accesses the compiler synthesized backing field for a property. It enables you to write a property accessor without explicitly declaring a separate backing field.
 
-:::code language="csharp" source="./snippets/properties/Person.cs" id="AccessorModifiers":::
+:::code language="csharp" source="./snippets/properties/Person.cs" id="FieldBackedProperty":::
 
-The `FirstName` property can be read from any code, but it can be assigned only from code in the `Person` class.
-
-You can add any restrictive access modifier to either the set or get accessors. An access modifier on an individual accessor must be more restrictive than the access of the property. The preceding code is legal because the `FirstName` property is `public`, but the set accessor is `private`. You couldn't declare a `private` property with a `public` accessor. Property declarations can also be declared `protected`, `internal`, `protected internal`, or, even `private`.
-
-There are two special access modifiers for `set` accessors:
-
-- A `set` accessor can have `init` as its access modifier. That `set` accessor can be called only from an object initializer or the type's constructors. It's more restrictive than `private` on the `set` accessor.
-- An automatically implemented property can declare a `get` accessor without a `set` accessor. In that case, the compiler allows the `set` accessor to be called only from the type's constructors. It's more restrictive than the `init` accessor on the `set` accessor.
-
-Modify the `Person` class so as follows:
-
-:::code language="csharp" source="./snippets/properties/Person.cs" id="Readonly":::
-
-The preceding example requires callers to use the constructor that includes the `FirstName` parameter. Callers can't use [object initializers](./object-and-collection-initializers.md) to assign a value to the property. To support initializers, you can make the `set` accessor an `init` accessor, as shown in the following code:
-
-:::code language="csharp" source="./snippets/properties/Person.cs" id="InitOnly":::
-
-These modifiers are often used with the `required` modifier to force proper initialization.
+[!INCLUDE[field-preview](../../includes/field-preview.md)]
 
 ## Required properties
 
@@ -73,6 +56,31 @@ Read-only properties can implement the `get` accessor as an expression-bodied me
 :::code language="csharp" source="./snippets/properties/Person.cs" id="ExpressionBodiedProperty":::
 
 The `Name` property is a computed property. There's no backing field for `Name`. The property computes it each time.
+
+## Access control
+
+The preceding examples showed read / write properties. You can also create read-only properties, or give different accessibility to the set and get accessors. Suppose that your `Person` class should only enable changing the value of the `FirstName` property from other methods in the class. You could give the set accessor `private` accessibility instead of `internal` or `public`:
+
+:::code language="csharp" source="./snippets/properties/Person.cs" id="AccessorModifiers":::
+
+The `FirstName` property can be read from any code, but it can be assigned only from code in the `Person` class.
+
+You can add any restrictive access modifier to either the set or get accessors. An access modifier on an individual accessor must be more restrictive than the access of the property. The preceding code is legal because the `FirstName` property is `public`, but the set accessor is `private`. You couldn't declare a `private` property with a `public` accessor. Property declarations can also be declared `protected`, `internal`, `protected internal`, or, even `private`.
+
+There are two special access modifiers for `set` accessors:
+
+- A `set` accessor can have `init` as its access modifier. That `set` accessor can be called only from an object initializer or the type's constructors. It's more restrictive than `private` on the `set` accessor.
+- An automatically implemented property can declare a `get` accessor without a `set` accessor. In that case, the compiler allows the `set` accessor to be called only from the type's constructors. It's more restrictive than the `init` accessor on the `set` accessor.
+
+Modify the `Person` class so as follows:
+
+:::code language="csharp" source="./snippets/properties/Person.cs" id="Readonly":::
+
+The preceding example requires callers to use the constructor that includes the `FirstName` parameter. Callers can't use [object initializers](./object-and-collection-initializers.md) to assign a value to the property. To support initializers, you can make the `set` accessor an `init` accessor, as shown in the following code:
+
+:::code language="csharp" source="./snippets/properties/Person.cs" id="InitOnly":::
+
+These modifiers are often used with the `required` modifier to force proper initialization.
 
 ## Properties with backing fields
 

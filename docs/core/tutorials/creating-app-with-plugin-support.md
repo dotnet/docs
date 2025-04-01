@@ -3,24 +3,24 @@ title: Create a .NET Core application with plugins
 description: Learn how to create a .NET Core application that supports plugins.
 author: jkoritzinsky
 ms.author: jekoritz
-ms.date: 10/16/2019
+ms.date: 11/20/2024
 ---
 
 # Create a .NET Core application with plugins
 
-This tutorial shows you how to create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> to load plugins. An <xref:System.Runtime.Loader.AssemblyDependencyResolver> is used to resolve the dependencies of the plugin. The tutorial correctly isolates the plugin's dependencies from the hosting application. You'll learn how to:
+This tutorial shows you how to create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> to load plugins. An <xref:System.Runtime.Loader.AssemblyDependencyResolver> is used to resolve the dependencies of the plugin. The tutorial provides a separate assembly context for the plugin's dependencies, allowing different assembly dependencies between the plugins and the hosting application. You'll learn how to:
 
 - Structure a project to support plugins.
 - Create a custom <xref:System.Runtime.Loader.AssemblyLoadContext> to load each plugin.
 - Use the <xref:System.Runtime.Loader.AssemblyDependencyResolver?displayProperty=fullName> type to allow plugins to have dependencies.
 - Author plugins that can be easily deployed by just copying the build artifacts.
 
+> [!NOTE]
+> Untrusted code cannot be safely loaded into a trusted .NET process. To provide a security or reliability boundary, consider a technology provided by your OS or virtualization platform.
+
 ## Prerequisites
 
-- Install the [.NET 5 SDK](https://dotnet.microsoft.com/download) or a newer version.
-
-> [!NOTE]
-> The sample code targets .NET 5, but all the features it uses were introduced in .NET Core 3.0 and are available in all .NET releases since then.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Create the application
 

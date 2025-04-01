@@ -1,20 +1,19 @@
 ﻿//<Snippet1>
 public class Taxi
 {
-    public bool IsInitialized;
+    private string taxiTag;
 
-    public Taxi()
-    {
-        IsInitialized = true;
-    }
+    public Taxi(string tag) => taxiTag = tag;
+
+    public override string ToString() => $"Taxi: {taxiTag}";
 }
 
 class TestTaxi
 {
     static void Main()
     {
-        Taxi t = new Taxi();
-        Console.WriteLine(t.IsInitialized);
+        Taxi t = new Taxi("Tag1345");
+        Console.WriteLine(t);
     }
 }
 //</Snippet1>
@@ -37,16 +36,10 @@ public class Employee
     public Employee() { }
 
     //<Snippet9>
-    public Employee(int annualSalary)
-    {
-        Salary = annualSalary;
-    }
+    public Employee(int annualSalary) => Salary = annualSalary;
     //</Snippet9>
 
-    public Employee(int weeklySalary, int numberOfWeeks)
-    {
-        Salary = weeklySalary * numberOfWeeks;
-    }
+    public Employee(int weeklySalary, int numberOfWeeks) => Salary = weeklySalary * numberOfWeeks;
 }
 //</Snippet3>
 

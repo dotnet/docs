@@ -31,18 +31,6 @@ For FTP, since <xref:System.Net.Http.HttpClient> doesn't support it, we recommen
 - <xref:System.Net.WebClient>
 - <xref:System.Net.ServicePoint>
 
-<!--
+## See also
 
-### Affected APIs
-
-- `T:System.Net.WebRequest`
-- `T:System.Net.HttpWebRequest`
-- `T:System.Net.FtpWebRequest`
-- `T:System.Net.WebClient`
-- `T:System.Net.ServicePoint`
-
-### Category
-
-Networking
-
--->
+- [HttpWebRequest to HttpClient migration guide](../../../../fundamentals/networking/http/httpclient-migrate-from-httpwebrequest.md)

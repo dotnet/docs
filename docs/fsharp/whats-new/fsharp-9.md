@@ -15,7 +15,7 @@ F# 9 is available in .NET 9. You can download the latest .NET SDK from the [.NET
 
 Although F# is designed to avoid `null`, it can creep in when interfacing with .NET libraries written in C#. F# now provides a type-safe way to deal with reference types that can have `null` as a valid value.
 
-For more details, watch out for an [upcoming blog post about this feature](https://devblogs.microsoft.com/dotnet/tag/f/).
+For more details, see the [Nullable Reference Types in F# 9](https://devblogs.microsoft.com/dotnet/nullable-reference-types-in-fsharp-9/) blog post.
 
 Here are some examples:
 
@@ -33,7 +33,7 @@ let getLength (x: string | null) = x.Length // gives a nullability warning since
 let len (str: string | null) =
     match str with
     | null -> -1
-    | NonNull s -> s.Length  // binds a non-null result
+    | s -> s.Length  // binds a non-null result - compiler eliminated "null" after the first clause
 
 // Parameter to a function
 let len (str: string | null) =
@@ -120,9 +120,9 @@ Example:
 type Foo() =
     member val X : int = 0 with get, set
 
-[&ltExtension>]
+[<Extension>]
 type FooExt =
-    [&ltExtension>]
+    [<Extension>]
     static member X (f: Foo, i: int) = f.X <- i; f
 
 let f = Foo()
@@ -277,8 +277,6 @@ let round1Order = allPlayers |> List.randomShuffle // [ "Charlie"; "Dave"; "Alic
 
 For arrays, there are also `InPlace` variants that shuffle the items in the existing array instead of creating a new one.
 
-```fsharp
-
 #### Choice
 
 The `Choice` functions return a single random element from the given collection. The random choice is weighted evenly on the size of the collection.
@@ -306,7 +304,7 @@ let foods = [ "Apple"; "Banana"; "Carrot"; "Donut"; "Egg" ]
 let today'sMenu = foods |> List.randomSample 3 // [ "Donut"; "Apple"; "Egg" ]
 ```
 
-For a full list of functions and their variants, see ([RFC #1135](https://github.com/fsharp/fslang-design/blob/main/RFCs/FS-1135-random-functions-for-collections.md)).
+For a full list of functions and their variants, see ([RFC #1135](https://github.com/fsharp/fslang-design/blob/main/FSharp.Core-9.0/FS-1135-random-functions-for-collections.md)).
 
 ### Parameterless constructor for `CustomOperationAttribute`
 

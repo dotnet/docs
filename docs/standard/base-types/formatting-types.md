@@ -303,7 +303,7 @@ Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType
 
 In addition to replacing a format item with the string representation of its corresponding object, format items also let you control the following:
 
-- The specific way in which an object is represented as a string, if the object implements the <xref:System.IFormattable> interface and supports format strings. You do this by following the format item's index with a `:` (colon) followed by a valid format string. The previous example did this by formatting a date value with the "d" (short date pattern) format string (for example, `{0:d}`) and   by formatting a numeric value with the "C2" format string (for example, `{2:C2}` to represent the number as a currency value with two fractional decimal digits.
+- The specific way in which an object is represented as a string, if the object implements the <xref:System.IFormattable> interface and supports format strings. You do this by following the format item's index with a `:` (colon) followed by a valid format string. The previous example did this by formatting a date value with the "d" (short date pattern) format string (for example, `{0:d}`) and by formatting a numeric value with the "C2" format string (for example, `{2:C2}`) to represent the number as a currency value with two fractional decimal digits.
 
 - The width of the field that contains the object's string representation, and the alignment of the string representation in that field. You do this by following the format item's index with a `,` (comma) followed the field width. The string is right-aligned in the field if the field width is a positive value, and it is left-aligned if the field width is a negative value. The following example left-aligns date values in a 20-character field, and it right-aligns decimal values with one fractional digit in an 11-character field.
 
@@ -332,8 +332,8 @@ The following example uses the `ByteByByteFormatter` class to format integer val
 
 ## See also
 
-|Title|Definition|
-|-----------|----------------|
+| Title | Definition |
+|-------|------------|
 |[Standard Numeric Format Strings](standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|
 |[Custom Numeric Format Strings](custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|
 |[Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> values.|

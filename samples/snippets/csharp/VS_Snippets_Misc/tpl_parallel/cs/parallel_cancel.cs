@@ -1,4 +1,4 @@
-﻿//<snippet29>
+//<snippet29>
 namespace CancelParallelLoops
 {
     using System;
@@ -35,7 +35,7 @@ namespace CancelParallelLoops
                 Parallel.ForEach(nums, options, (num) =>
                 {
                     double d = Math.Sqrt(num);
-                    Console.WriteLine("{0} on {1}", d, Environment.CurrentManagedThreadId);
+                    Console.WriteLine($"{d} on {Environment.CurrentManagedThreadId}");
                 });
             }
             catch (OperationCanceledException e)

@@ -6,7 +6,7 @@ ms.date: 07/03/2024
 
 # Develop a grain
 
-Before you write code to implement a grain class, create a new Class Library project targeting .NET Standard or .NET Core (preferred) or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). Grain interfaces and grain classes can be defined in the same Class Library project, or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference [Microsoft.Orleans.Core.Abstractions](https://www.nuget.org/packages/Microsoft.Orleans.Core.Abstractions) and [Microsoft.Orleans.CodeGenerator.MSBuild](https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator.MSBuild) NuGet packages.
+Before you write code to implement a grain class, create a new Class Library project targeting .NET Standard or .NET Core (preferred) or .NET Framework 4.6.1 or higher (if you cannot use .NET Standard or .NET Core due to dependencies). Grain interfaces and grain classes can be defined in the same Class Library project, or in two different projects for better separation of interfaces from implementation. In either case, the projects need to reference the [Microsoft.Orleans.Sdk](https://www.nuget.org/packages/Microsoft.Orleans.Sdk) NuGet package.
 
 For more thorough instructions, see the [Project Setup](../tutorials-and-samples/tutorial-1.md#project-setup) section of [Tutorial One – Orleans Basics](../tutorials-and-samples/tutorial-1.md).
 
@@ -219,7 +219,7 @@ await joinedTask;
 
 When a grain method throws an exception, Orleans propagates that exception up the calling stack, across hosts as necessary. For this to work as intended, exceptions must be serializable by Orleans and hosts which are handling the exception must have the exception type available. If an exception type isn't available, the exception will be thrown as an instance of <xref:Orleans.Serialization.UnavailableExceptionFallbackException?displayProperty=nameWithType>, preserving the message, type, and stack trace of the original exception.
 
-Exeptions thrown from grain methods don't cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. `InconsistentStateException` is thrown by storage operations which discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special-casing of `InconsistentStateException`, this behavior is similar to throwing an exception from any .NET object: exceptions don't cause an object to be destroyed.
+Exceptions thrown from grain methods don't cause the grain to be deactivated unless the exception inherits from <xref:Orleans.Storage.InconsistentStateException?displayProperty=nameWithType>. `InconsistentStateException` is thrown by storage operations which discover that the grain's in-memory state is inconsistent with the state in the database. Aside from the special-casing of `InconsistentStateException`, this behavior is similar to throwing an exception from any .NET object: exceptions don't cause an object to be destroyed.
 
 ### Virtual methods
 

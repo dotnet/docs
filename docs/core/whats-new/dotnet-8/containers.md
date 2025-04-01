@@ -83,7 +83,7 @@ There is a caveat to be aware of. Since composites have multiple assemblies embe
 
 ### Generated-image defaults
 
-`dotnet publish` can produce container images. It defaults to producing [`non-root` images](#non-root-user), which helps your apps stay secure-by-default. Change this default at any time by setting the `ContainerUser` propery, for example with `root`.
+`dotnet publish` can produce container images. It defaults to producing [`non-root` images](#non-root-user), which helps your apps stay secure-by-default. Change this default at any time by setting the `ContainerUser` property, for example with `root`.
 
 The default output container tag is now `latest`. This default is in line with other tooling in the containers space and makes containers easier to use in inner development loops.
 
@@ -102,7 +102,7 @@ These improvements also mean that more registries are supported: Harbor, Artifac
 > dotnet publish -r linux-x64 -p PublishProfile=DefaultContainer
 ```
 
-For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../../docker/publish-as-container.md).
+For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../../containers/sdk-publish.md).
 
 ### Publish to tar.gz archive
 

@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +37,7 @@ using System.Threading.Tasks;
             // it will be wrapped in AggregateException and propagated to the main thread.
             catch (AggregateException e)
             {
-                Console.WriteLine("An action has thrown an exception. THIS WAS UNEXPECTED.\n{0}", e.InnerException.ToString());
+                Console.WriteLine($"An action has thrown an exception. THIS WAS UNEXPECTED.\n{e.InnerException.ToString()}");
             }
         }
 

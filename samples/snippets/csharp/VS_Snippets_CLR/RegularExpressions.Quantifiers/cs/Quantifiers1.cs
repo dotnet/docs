@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 
 [assembly: CLSCompliant(true)]
@@ -49,7 +49,7 @@ public class Class1
       string pattern = @"\b91*9*\b";
       string input = "99 95 919 929 9119 9219 999 9919 91119";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       // The example displays the following output:
       //       '99' found at position 0.
@@ -67,7 +67,7 @@ public class Class1
 
       string input = "Autumn is a great time for an annual announcement to all antique collectors.";
       foreach (Match match in Regex.Matches(input, pattern, RegexOptions.IgnoreCase))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       // The example displays the following output:
       //       'an' found at position 27.
@@ -83,7 +83,7 @@ public class Class1
       string pattern = @"\ban?\b";
       string input = "An amiable animal with a large snout and an animated nose.";
       foreach (Match match in Regex.Matches(input, pattern, RegexOptions.IgnoreCase))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       // The example displays the following output:
       //        'An' found at position 0.
@@ -100,7 +100,7 @@ public class Class1
                             "106,971 million in February, but only " +
                             "943 million in March.";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       //  The example displays the following output:
       //        '103,524' found at position 14.
@@ -114,7 +114,7 @@ public class Class1
       string pattern = @"\b\d{2,}\b\D+";
       string input = "7 days, 10 weeks, 300 years";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       //  The example displays the following output:
       //        '10 weeks, ' found at position 8.
@@ -128,7 +128,7 @@ public class Class1
       string pattern = @"(00\s){2,4}";
       string input = "0x00 FF 00 00 18 17 FF 00 00 00 21 00 00 00 00 00";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       //  The example displays the following output:
       //        '00 00 ' found at position 8.
@@ -143,7 +143,7 @@ public class Class1
        string pattern = @"\b\w*?oo\w*?\b";
        string input = "woof root root rob oof woo woe";
        foreach (Match match in Regex.Matches(input, pattern, RegexOptions.IgnoreCase))
-          Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+          Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
        //  The example displays the following output:
       //        'woof' found at position 0.
@@ -160,7 +160,7 @@ public class Class1
       string pattern = @"\b\w+?\b";
       string input = "Aa Bb Cc Dd Ee Ff";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       //  The example displays the following output:
       //        'Aa' found at position 0.
@@ -185,7 +185,7 @@ public class Class1
                                             RegexOptions.IgnorePatternWhitespace |
                                             RegexOptions.IgnoreCase |
                                             RegexOptions.Multiline))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       //  The example displays the following output:
       //        'System.Console.Write' found at position 0.
@@ -201,7 +201,7 @@ public class Class1
       string pattern = @"\b(\w{3,}?\.){2}?\w{3,}?\b";
       string input = "www.microsoft.com msdn.microsoft.com mywebsite mycompany.com";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       //  The example displays the following output:
       //        'www.microsoft.com' found at position 0.
@@ -222,7 +222,7 @@ public class Class1
                             "sentences with ten or fewer words. Most sentences " +
                             "in this note are short.";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("'{0}' found at position {1}.", match.Value, match.Index);
+         Console.WriteLine($"'{match.Value}' found at position {match.Index}.");
 
       //  The example displays the following output:
       //        'Hi.' found at position 0.

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.Common;
 
@@ -41,12 +41,9 @@ static class Program
                 adapter.DeleteCommand = builder.GetDeleteCommand();
 
                 // Display the CommandText for each command.
-                Console.WriteLine("InsertCommand: {0}",
-                    adapter.InsertCommand.CommandText);
-                Console.WriteLine("UpdateCommand: {0}",
-                    adapter.UpdateCommand.CommandText);
-                Console.WriteLine("DeleteCommand: {0}",
-                    adapter.DeleteCommand.CommandText);
+                Console.WriteLine($"InsertCommand: {adapter.InsertCommand.CommandText}");
+                Console.WriteLine($"UpdateCommand: {adapter.UpdateCommand.CommandText}");
+                Console.WriteLine($"DeleteCommand: {adapter.DeleteCommand.CommandText}");
 
                 // Fill the DataTable.
                 DataTable table = new();
@@ -65,7 +62,7 @@ static class Program
                 Console.WriteLine("----List All Rows-----");
                 foreach (DataRow row in table.Rows)
                 {
-                    Console.WriteLine("{0} {1}", row[0], row[1]);
+                    Console.WriteLine($"{row[0]} {row[1]}");
                 }
                 Console.WriteLine("----After Insert-----");
 
@@ -79,7 +76,7 @@ static class Program
                 Console.WriteLine();
                 foreach (DataRow row in table.Rows)
                 {
-                    Console.WriteLine("{0} {1}", row[0], row[1]);
+                    Console.WriteLine($"{row[0]} {row[1]}");
                 }
                 Console.WriteLine("----After Update-----");
 
@@ -96,7 +93,7 @@ static class Program
                 Console.WriteLine();
                 foreach (DataRow row in table.Rows)
                 {
-                    Console.WriteLine("{0} {1}", row[0], row[1]);
+                    Console.WriteLine($"{row[0]} {row[1]}");
                 }
                 Console.WriteLine("----After Delete-----");
                 Console.WriteLine("Customer XYZZZ was deleted.");

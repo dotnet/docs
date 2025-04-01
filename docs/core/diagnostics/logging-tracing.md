@@ -46,7 +46,7 @@ The <xref:System.Console?displayProperty=nameWithType> class has the <xref:Syste
 
 Logging can either be structured or unstructured:
 
-- Unstructured: Log entries are encoded as free-form text that humans can read but it is difficult to programatically parse and query.
+- Unstructured: Log entries are encoded as free-form text that humans can read but it is difficult to programmatically parse and query.
 - Structured: Log entries have a well defined schema and can be encoded in different binary and textual formats. These logs are designed to be machine translatable and queryable so that both humans and automated systems can work with them easily.
 
 Good structured logging APIs can offer more functionality and performance with only a small increase in usage complexity.

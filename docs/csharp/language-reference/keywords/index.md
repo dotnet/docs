@@ -20,7 +20,7 @@ The first table in this article lists keywords that are reserved identifiers in 
 :::row:::
     :::column:::
         [`abstract`](abstract.md)  
-        [`as`](../operators/type-testing-and-cast.md#as-operator)  
+        [`as`](../operators/type-testing-and-cast.md#the-as-operator)  
         [`base`](base.md)  
         [`bool`](../builtin-types/bool.md)  
         [`break`](../statements/jump-statements.md#the-break-statement)  
@@ -91,7 +91,7 @@ The first table in this article lists keywords that are reserved identifiers in 
         [`throw`](../statements/exception-handling-statements.md#the-throw-statement)  
         [`true`](../builtin-types/bool.md)  
         [`try`](../statements/exception-handling-statements.md#the-try-statement)  
-        [`typeof`](../operators/type-testing-and-cast.md#typeof-operator)  
+        [`typeof`](../operators/type-testing-and-cast.md#the-typeof-operator)  
         [`uint`](../builtin-types/integral-numeric-types.md)  
         [`ulong`](../builtin-types/integral-numeric-types.md)  
         [`unchecked`](../statements/checked-and-unchecked.md)  
@@ -125,6 +125,7 @@ A contextual keyword is used to provide a specific meaning in the code, but it i
         [`equals`](equals.md)  
     :::column-end:::
     :::column:::
+        [`field`](field.md)  
         [`file`](file.md)  
         [`from`](from-clause.md)  
         [`get`](get.md)  

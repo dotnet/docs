@@ -1442,12 +1442,16 @@ items:
           href: ixclrdataexceptionnotification-oncodegenerated-method.md
         - name: OnModuleLoaded method
           href: ixclrdataexceptionnotification-onmoduleloaded-method.md
+        - name: OnModuleUnloaded method
+          href: ixclrdataexceptionnotification-onmoduleunloaded-method.md
         - name: OnProcessExecution method
           href: ixclrdataexceptionnotification-onprocessexecution-method.md
         - name: OnTaskExecution method
           href: ixclrdataexceptionnotification-ontaskexecution-method.md
         - name: OnTypeLoaded method
           href: ixclrdataexceptionnotification-ontypeloaded-method.md
+        - name: OnTypeUnloaded method
+          href: ixclrdataexceptionnotification-ontypeunloaded-method.md
     - name: IXCLRDataExceptionNotification2 interface
       href: ixclrdataexceptionnotification2-interface.md
       items:
@@ -1586,16 +1590,16 @@ items:
           href: ixclrdataprocess-endenumappdomains-method.md
         - name: EndEnumMethodDefinitionsByAddress
           href: ixclrdataprocess-endenummethoddefinitionsbyaddress-method.md
-        - name: EndEnumModules
-          href: ixclrdataprocess-endenummodules-method.md
-        - name: EnumMethodInstanceByAddress
-          href: ixclrdataprocess-enummethodinstancebyaddress-method.md
-        - name: EndEnumMethodDefinitionsByAddress
-          href: ixclrdataprocess-endenummethoddefinitionsbyaddress-method.md
         - name: EndEnumMethodInstancesByAddress
           href: ixclrdataprocess-endenummethodinstancesbyaddress-method.md
+        - name: EndEnumModules
+          href: ixclrdataprocess-endenummodules-method.md
         - name: EnumAppDomain
           href: ixclrdataprocess-enumappdomain-method.md
+        - name: EnumMethodDefinitionByAddress
+          href: ixclrdataprocess-enummethoddefinitionbyaddress-method.md
+        - name: EnumMethodInstanceByAddress
+          href: ixclrdataprocess-enummethodinstancebyaddress-method.md
         - name: EnumModule
           href: ixclrdataprocess-enummodule-method.md
         - name: FollowStub
@@ -1672,6 +1676,8 @@ items:
       items:
         - name: EndEnumMethodInstances method
           href: ixclrdatatypeinstance-endenummethodinstances-method.md
+        - name: EnumMethodInstance method
+          href: ixclrdatatypeinstance-enummethodinstance-method.md
         - name: GetDefinition method
           href: ixclrdatatypeinstance-getdefinition-method.md
         - name: GetName method

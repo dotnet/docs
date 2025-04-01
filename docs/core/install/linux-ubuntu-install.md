@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/01/2024
+ms.date: 12/13/2024
 ms.custom: linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -30,9 +30,6 @@ The following versions of .NET are supported or available for Ubuntu 24.10:
 
 - 9.0
 - 8.0
-
-> [!IMPORTANT]
-> .NET 9 is currently in preview.
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
@@ -80,19 +77,21 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 ## Ubuntu 24.04
 
-[!INCLUDE [linux-ubuntu-package-feed-both](includes/linux-ubuntu-package-feed-both.md)]
+[!INCLUDE [linux-ubuntu-package-feed-only](includes/linux-ubuntu-package-feed-only.md)]
 
 The following versions of .NET are supported or available for Ubuntu 24.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
-|-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 8.0, 6.0                | 8.0                                  | 7.0, 6.0                                                                                                 |None                                                                                         |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
+|-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| 9.0, 8.0                | 8.0                                  | 9.0, 7.0, 6.0                                                                                       |None                                                                                         |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 9](#tab/dotnet9)
 
-Not available.
+[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
+
+[!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
 # [.NET 8](#tab/dotnet8)
 
@@ -100,8 +99,10 @@ Not available.
 
 # [.NET 6](#tab/dotnet6)
 
-> [!IMPORTANT]
-> .NET 6 is available in the Ubuntu backports package repository for Ubuntu 24.04, and not the built-in package repository. For more information, see [Register the Ubuntu backports package repository](linux-ubuntu.md#register-the-ubuntu-net-backports-package-repository). After the repository is registered, use the following sections to install .NET.
+[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
+
+> [!WARNING]
+> .NET 6 is no longer supported.
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
@@ -141,9 +142,9 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET are supported or available for Ubuntu 22.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                     | 8.0, 7.0, 6.0, 3.1                |
+| 9.0, 8.0                | 8.0, 7.0, 6.0                        | 9.0                                                                                                      | 8.0, 7.0, 6.0, 3.1                |
 
 [!INCLUDE [linux-ubuntu-feed-sdk-note](includes/linux-ubuntu-feed-sdk-note.md)]
 
@@ -151,13 +152,18 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 # [.NET 9](#tab/dotnet9)
 
-Not available.
+[!INCLUDE [linux-ubuntu-register-backports](includes/linux-ubuntu-register-backports.md)]
+
+[!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
 # [.NET 8](#tab/dotnet8)
 
 [!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 # [.NET 6](#tab/dotnet6)
+
+> [!WARNING]
+> .NET 6 is no longer supported.
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
@@ -198,9 +204,9 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET are supported or available for Ubuntu 20.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 8.0, 6.0                | None                                 | None                                                                                                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                                |
+| 8.0                     | None                                 | None                                                                                                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                                |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
@@ -216,13 +222,16 @@ rm packages-microsoft-prod.deb
 
 # [.NET 9](#tab/dotnet9)
 
-Not available.
+Because Ubuntu 20.04 reaches end of life in April 2025, Microsoft has decided not to support .NET 9 on Ubuntu 20.04.
 
 # [.NET 8](#tab/dotnet8)
 
 [!INCLUDE [linux-apt-install-80](includes/linux-install-80-apt.md)]
 
 # [.NET 6](#tab/dotnet6)
+
+> [!WARNING]
+> .NET 6 is no longer supported.
 
 [!INCLUDE [linux-apt-install-60](includes/linux-install-60-apt.md)]
 
@@ -289,7 +298,7 @@ If your Ubuntu version isn't supported, you most likely need to install .NET by 
 
 The following versions of .NET were supported or available for Ubuntu 23.10:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
 
@@ -299,7 +308,7 @@ When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support,
 
 # [.NET 9](#tab/dotnet9)
 
-Not available.
+.NET 9 isn't supported on Ubuntu 23.10.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -344,7 +353,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET were supported or available for Ubuntu 23.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 8.0, 6.0                | 7.0, 6.0                             | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
 
@@ -352,7 +361,7 @@ The following versions of .NET were supported or available for Ubuntu 23.04:
 
 # [.NET 9](#tab/dotnet9)
 
-Not available.
+.NET 9 isn't supported on Ubuntu 23.04.
 
 # [.NET 8](#tab/dotnet8)
 
@@ -399,7 +408,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET are supported or available for Ubuntu 22.10:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 6.0                     | 7.0, 6.0                             |  None                                                                                                    | 7.0, 6.0, 3.1                                                                               |
 
@@ -407,7 +416,7 @@ The following versions of .NET are supported or available for Ubuntu 22.10:
 
 # [.NET 9](#tab/dotnet9)
 
-Not available.
+.NET 9 isn't supported on Ubuntu 22.10.
 
 # [.NET 8](#tab/dotnet8)
 

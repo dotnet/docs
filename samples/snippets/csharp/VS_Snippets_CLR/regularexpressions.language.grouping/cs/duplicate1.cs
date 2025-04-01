@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Text.RegularExpressions;
 
@@ -11,13 +11,12 @@ public class Example
       foreach (var input in inputs) {
          Match m = Regex.Match(input, pattern);
          if (m.Success) {
-            Console.WriteLine("Match: {0}", m.Value);
+            Console.WriteLine($"Match: {m.Value}");
             for (int grpCtr = 1; grpCtr < m.Groups.Count; grpCtr++) {
                Group grp = m.Groups[grpCtr];
-               Console.WriteLine("Group {0}: {1}", grpCtr, grp.Value);
+               Console.WriteLine($"Group {grpCtr}: {grp.Value}");
                for (int capCtr = 0; capCtr < grp.Captures.Count; capCtr++)
-                  Console.WriteLine("   Capture {0}: {1}", capCtr,
-                                    grp.Captures[capCtr].Value);
+                  Console.WriteLine($"   Capture {capCtr}: {grp.Captures[capCtr].Value}");
             }
          }
          else {

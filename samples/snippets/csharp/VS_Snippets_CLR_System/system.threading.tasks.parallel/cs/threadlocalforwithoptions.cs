@@ -1,4 +1,4 @@
-﻿//<snippet04>
+//<snippet04>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +34,7 @@ class ThreadLocalForWithOptions
       );
 
       // Print the actual and expected results.
-      Console.WriteLine("Actual result: {0}. Expected 1000000.", result);
+      Console.WriteLine($"Actual result: {result}. Expected 1000000.");
    }
 
    // Simulates a lengthy operation.

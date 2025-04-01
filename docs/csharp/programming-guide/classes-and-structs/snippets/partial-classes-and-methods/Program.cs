@@ -4,6 +4,7 @@ public partial class Employee
 {
     public void DoWork()
     {
+        Console.WriteLine("Employee is working.");
     }
 }
 
@@ -12,6 +13,7 @@ public partial class Employee
 {
     public void GoToLunch()
     {
+        Console.WriteLine("Employee is at lunch.");
     }
 }
 
@@ -165,3 +167,20 @@ partial struct S1
     void Struct_Test2() { }
 }
 //</Snippet10>
+
+// <FieldProperty>
+// in file1.cs
+public partial class PropertyBag
+{
+    // Defining declaration
+    public partial int MyProperty { get; set; }
+}
+
+// In file2.cs
+public partial class PropertyBag
+{
+    // Defining declaration
+    public partial int MyProperty { get => field; set; }
+}
+
+// </FieldProperty>

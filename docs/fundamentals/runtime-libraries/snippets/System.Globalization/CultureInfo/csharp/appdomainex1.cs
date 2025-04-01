@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -55,14 +55,14 @@ public class Info : MarshalByRefObject
 {
     public void DisplayDate()
     {
-        Console.WriteLine("Today is {0:D}", DateTime.Now);
+        Console.WriteLine($"Today is {DateTime.Now:D}");
     }
 
     public void DisplayCultures()
     {
-        Console.WriteLine("Application domain is {0}", AppDomain.CurrentDomain.Id);
-        Console.WriteLine("Default Culture: {0}", CultureInfo.DefaultThreadCurrentCulture);
-        Console.WriteLine("Default UI Culture: {0}", CultureInfo.DefaultThreadCurrentUICulture);
+        Console.WriteLine($"Application domain is {AppDomain.CurrentDomain.Id}");
+        Console.WriteLine($"Default Culture: {CultureInfo.DefaultThreadCurrentCulture}");
+        Console.WriteLine($"Default UI Culture: {CultureInfo.DefaultThreadCurrentUICulture}");
     }
 }
 // The example displays the following output:

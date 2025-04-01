@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
@@ -9,11 +9,11 @@ public class CallbackHandler : ICalculatorDuplexCallback
 {
   public void Result(double result)
   {
-    Console.WriteLine("Result({0})", result);
+    Console.WriteLine($"Result({result})");
   }
   public void Equation(string equation)
   {
-    Console.WriteLine("Equation({0})", equation);
+    Console.WriteLine($"Equation({equation})");
   }
 }
 

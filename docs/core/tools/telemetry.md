@@ -136,6 +136,8 @@ A subset of commands sends selected options if they're used, along with their va
 | `--logger`              | `dotnet vstest`                                                                                |
 | `--sdk-package-version` | `dotnet migrate`                                                                               |
 
+When the SDK fails to resolve a built-in command, any command resolver that successfully resolves the command sends a hash of the command name along with the name of the command resolver type.
+
 Except for `--verbosity` and `--sdk-package-version`, all the other values are hashed starting with .NET Core 2.1.100 SDK.
 
 ### Template engine telemetry

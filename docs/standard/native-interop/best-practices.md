@@ -400,6 +400,8 @@ Pointers to structs in definitions must either be passed by `ref` or use `unsafe
 
 ✔️ DO use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
 
+❌ DON'T depend on internal representation of struct types exposed by .NET runtime libraries unless it is explicitly documented.
+
 ❌ AVOID using classes to express complex native types through inheritance.
 
 ❌ AVOID using `System.Delegate` or `System.MulticastDelegate` fields to represent function pointer fields in structures.
@@ -417,7 +419,7 @@ typedef struct _SYSTEM_PROCESS_INFORMATION {
     BYTE Reserved1[48];
     UNICODE_STRING ImageName;
 ...
-} SYSTEM_PROCESS_INFORMATION
+} SYSTEM_PROCESS_INFORMATION;
 ```
 
 In C#, we can write it like this:

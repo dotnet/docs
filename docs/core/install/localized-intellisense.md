@@ -1,7 +1,7 @@
 ---
 title: Install localized IntelliSense files
 description: Learn how to set up your development machine to use localized IntelliSense files for .NET projects (including .NET Core) in Visual Studio.
-ms.date: 11/09/2022
+ms.date: 11/11/2024
 ---
 # How to install localized IntelliSense files for .NET
 
@@ -36,7 +36,7 @@ ms.date: 11/09/2022
 
       | SDK type              | Path                               |
       |-----------------------|------------------------------------|
-      | .NET 6 and later      | *Microsoft.NETCore.App.Ref*        |
+      | .NET                  | *Microsoft.NETCore.App.Ref*        |
       | Windows Desktop       | *Microsoft.WindowsDesktop.App.Ref* |
       | .NET Standard         | *NETStandard.Library.Ref*          |
 

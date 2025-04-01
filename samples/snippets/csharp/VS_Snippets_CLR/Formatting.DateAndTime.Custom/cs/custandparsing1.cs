@@ -15,14 +15,13 @@ public class Example1
         {
             if (DateTime.TryParseExact(dateValue, pattern, null,
                                       DateTimeStyles.None, out parsedDate))
-                Console.WriteLine("Converted '{0}' to {1:d}.",
-                                  dateValue, parsedDate);
+                Console.WriteLine($"Converted '{dateValue}' to {parsedDate:d}.");
             else
-                Console.WriteLine("Unable to convert '{0}' to a date and time.",
-                                  dateValue);
+                Console.WriteLine($"Unable to convert '{dateValue}' to a date and time.");
         }
     }
 }
+
 // The example displays the following output:
 //    Unable to convert '30-12-2011' to a date and time.
 //    Unable to convert '12-30-2011' to a date and time.

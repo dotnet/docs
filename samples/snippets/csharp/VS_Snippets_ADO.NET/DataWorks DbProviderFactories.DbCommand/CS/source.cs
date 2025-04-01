@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -27,20 +27,20 @@ static class Program
                     var rows = command.ExecuteNonQuery();
 
                     // Display number of rows inserted.
-                    Console.WriteLine("Inserted {0} rows.", rows);
+                    Console.WriteLine($"Inserted {rows} rows.");
                 }
                 // Handle data errors.
                 catch (DbException exDb)
                 {
-                    Console.WriteLine("DbException.GetType: {0}", exDb.GetType());
-                    Console.WriteLine("DbException.Source: {0}", exDb.Source);
-                    Console.WriteLine("DbException.ErrorCode: {0}", exDb.ErrorCode);
-                    Console.WriteLine("DbException.Message: {0}", exDb.Message);
+                    Console.WriteLine($"DbException.GetType: {exDb.GetType()}");
+                    Console.WriteLine($"DbException.Source: {exDb.Source}");
+                    Console.WriteLine($"DbException.ErrorCode: {exDb.ErrorCode}");
+                    Console.WriteLine($"DbException.Message: {exDb.Message}");
                 }
                 // Handle all other exceptions.
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Exception.Message: {0}", ex.Message);
+                    Console.WriteLine($"Exception.Message: {ex.Message}");
                 }
             }
         }

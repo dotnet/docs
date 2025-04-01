@@ -14,7 +14,7 @@ Multi-platform apps experience problems similar to both desktop and web-based ap
 
 A unit test takes a small unit of the app, typically a method, isolates it from the remainder of the code, and verifies that it behaves as expected. Its goal is to check that each unit of functionality performs as expected, so errors don't propagate throughout the app. Detecting a bug where it occurs is more efficient than observing the effect of a bug indirectly at a secondary point of failure.
 
-Unit testing has the most significant effect on code quality when it's an integral part of the software development workflow. Unit tests can act as design documentation and functional specifications for an application. As soon as a method has been written, unit tests should be written that verify the method's behavior in response to standard, boundary, and incorrect input data cases and check any explicit or implicit assumptions made by the code. Alternatively, with test-driven development, unit tests are written before the code. For more information on test-driven development and how to implement it, see [Walkthrough: Test-driven development using Test Explorer.](/visualstudio/test/quick-start-test-driven-development-with-test-explorer)
+Unit testing has the most significant effect on code quality when it's an integral part of the software development workflow. Unit tests can act as design documentation and functional specifications for an application. As soon as a method has been written, unit tests should be written that verify the method's behavior in response to standard, boundary, and incorrect input data cases and check any explicit or implicit assumptions made by the code. Alternatively, with test-driven development, unit tests are written before the code. For more information on test-driven development and how to implement it, see [Walkthrough: Test-driven development using Test Explorer.](/visualstudio/test/quick-start-test-driven-development-with-test-explorer).
 
 > [!NOTE]
 > Unit tests are very effective against regression. That is, functionality that used to work, but has been disturbed by a faulty update.
@@ -62,14 +62,14 @@ Testing models and view models from MVVM applications is identical to testing an
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShop multi-platform app uses [MSTest](../../core/testing/unit-testing-with-mstest.md) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses [MSTest](../../core/testing/unit-testing-csharp-with-mstest.md) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type    | Attribute    | Description                                                  |
 |-----------------|--------------|--------------------------------------------------------------|
 | TestMethod      | `TestMethod` | Defines the actual test method to run.                       |
 | DataSource      | `DataSource` | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-with-nunit.md) and [xUnit](../../core/testing/unit-testing-with-dotnet-test.md).
+The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-csharp-with-nunit.md) and [xUnit](../../core/testing/unit-testing-csharp-with-xunit.md).
 
 ## Testing asynchronous functionality
 

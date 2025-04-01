@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # ! (null-forgiving) operator (C# reference)
 
-The unary postfix `!` operator is the null-forgiving, or null-suppression, operator. In an enabled [nullable annotation context](../../nullable-references.md#nullable-contexts), you use the null-forgiving operator to suppress all nullable warnings for the preceding expression. The unary prefix `!` operator is the [logical negation operator](boolean-logical-operators.md#logical-negation-operator-). The null-forgiving operator has no effect at run time. It only affects the compiler's static flow analysis by changing the null state of the expression. At run time, expression `x!` evaluates to the result of the underlying expression `x`.
+The unary postfix `!` operator is the null-forgiving, or null-suppression, operator. In an enabled [nullable annotation context](../../nullable-references.md#nullable-context), you use the null-forgiving operator to suppress all nullable warnings for the preceding expression. The unary prefix `!` operator is the [logical negation operator](boolean-logical-operators.md#logical-negation-operator-). The null-forgiving operator has no effect at run time. It only affects the compiler's static flow analysis by changing the null state of the expression. At run time, expression `x!` evaluates to the result of the underlying expression `x`.
 
 For more information about the nullable reference types feature, see [Nullable reference types](../builtin-types/nullable-reference-types.md).
 
@@ -20,7 +20,7 @@ One of the use cases of the null-forgiving operator is in testing the argument v
 
 [!code-csharp[Person class](snippets/shared/NullForgivingOperator.cs#PersonClass)]
 
-Using the [MSTest test framework](../../../core/testing/unit-testing-with-mstest.md), you can create the following test for the validation logic in the constructor:
+Using the [MSTest test framework](../../../core/testing/unit-testing-csharp-with-mstest.md), you can create the following test for the validation logic in the constructor:
 
 [!code-csharp[Person test](snippets/shared/NullForgivingOperator.cs#TestPerson)]
 

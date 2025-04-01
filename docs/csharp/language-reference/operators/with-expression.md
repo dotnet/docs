@@ -1,7 +1,7 @@
 ---
 title: "with expression - create new objects that are modified copies of existing objects"
 description: "Learn about a with expression that performs nondestructive mutation of C# records and structures. The `with` keyword provides the means to modify one or more properties in the new object."
-ms.date: 11/28/2022
+ms.date: 11/22/2024
 f1_keywords:
   - "with_CSharpKeyword"
 helpviewer_keywords:
@@ -14,7 +14,7 @@ A `with` expression produces a copy of its operand with the specified properties
 
 :::code language="csharp" source="snippets/with-expression/BasicExample.cs" :::
 
-The left-hand operand of a `with` expression can be of a [record type](../builtin-types/record.md). Beginning with C# 10, a left-hand operand of a `with` expression can also be of a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
+The left-hand operand of a `with` expression can be of a [record type](../builtin-types/record.md). A left-hand operand of a `with` expression can also be of a [structure type](../builtin-types/struct.md) or an [anonymous type](../../fundamentals/types/anonymous-types.md).
 
 The result of a `with` expression has the same run-time type as the expression's operand, as the following example shows:
 

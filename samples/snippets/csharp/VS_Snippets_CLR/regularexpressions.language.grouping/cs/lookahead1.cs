@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Text.RegularExpressions;
 
@@ -16,9 +16,9 @@ public class Example
       {
          Match match = Regex.Match(input, pattern);
          if (match.Success)
-            Console.WriteLine("'{0}' precedes 'is'.", match.Value);
+            Console.WriteLine($"'{match.Value}' precedes 'is'.");
          else
-            Console.WriteLine("'{0}' does not match the pattern.", input);
+            Console.WriteLine($"'{input}' does not match the pattern.");
       }
    }
 }

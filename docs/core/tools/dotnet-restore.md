@@ -43,7 +43,7 @@ In most cases, you don't need to explicitly use the `dotnet restore` command, si
 Sometimes, it might be inconvenient to run the implicit NuGet restore with these commands. For example, some automated systems, such as build systems, need to call `dotnet restore` explicitly to control when the restore occurs so that they can control network usage. To prevent the implicit NuGet restore, you can use the `--no-restore` flag with any of these commands.
 
   > [!NOTE]
-  > Signed package verification during restore operations requires a certificate root store that is valid for both code signing and timestamping. For more inforomation, see [NuGet signed package verification](nuget-signed-package-verification.md).
+  > Signed package verification during restore operations requires a certificate root store that is valid for both code signing and timestamping. For more information, see [NuGet signed package verification](nuget-signed-package-verification.md).
 
 ### Specify feeds
 

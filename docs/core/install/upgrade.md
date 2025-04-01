@@ -1,7 +1,7 @@
 ---
 title: Upgrade to a new .NET version
 description: Learn how to upgrade an app to a new .NET version. Upgrade .NET when the current version goes out of support or when you want to use new features of .NET.
-ms.date: 05/14/2024
+ms.date: 11/11/2024
 ---
 
 # Upgrade to a new .NET version
@@ -46,7 +46,7 @@ You might need to run `dotnet workload restore` to restore workloads with the ne
 
 More resources:
 
-* [Breaking changes in .NET 8](../compatibility/8.0.md)
+* [Breaking changes in .NET 9](../compatibility/9.0.md)
 * [Migrate from ASP.NET Core in .NET 7 to .NET 8](/aspnet/core/migration/70-80?tabs=visual-studio)
 * [Upgrade .NET MAUI from .NET 7 to .NET 8](https://github.com/dotnet/maui/wiki/Upgrading-.NET-MAUI-from-.NET-7-to-.NET-8)
 
@@ -60,10 +60,10 @@ There are many patterns that are used for hosting applications. If the hosting e
 
 For containers, [`FROM` statements](https://github.com/dotnet/dotnet-docker/blob/e5e8164460037e77902cd269c788eccbdeea5edd/samples/aspnetapp/Dockerfile#L17) need to be changed to include new version numbers.
 
-The following Dockerfile example demonstrates pulling an ASP.NET Core 8.0 image.
+The following Dockerfile example demonstrates pulling an ASP.NET Core 9.0 image.
 
 ```dockerfile
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+FROM mcr.microsoft.com/dotnet/aspnet:9.0
 ```
 
 In a cloud service like [Azure App Service](/azure/app-service/quickstart-dotnetcore), a configuration change is needed.

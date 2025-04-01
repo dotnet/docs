@@ -3,7 +3,7 @@ title: Check installed .NET versions on Windows, Linux, and macOS
 description: Learn how to list which versions of .NET are installed on your computer. This includes the .NET runtime and SDK.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2023
+ms.date: 11/11/2024
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: operating-systems-set-one
 ---
@@ -197,4 +197,4 @@ You can see both the SDK versions and runtime versions with the command `dotnet 
 
 ## See also
 
-- [Determine which .NET Framework versions are installed](../../framework/migration-guide/how-to-determine-which-versions-are-installed.md)
+- [Determine which .NET Framework versions are installed](../../framework/install/how-to-determine-which-versions-are-installed.md)

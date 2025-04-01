@@ -12,7 +12,7 @@ C# lets you instantiate an object or collection and perform member assignments i
 
 ## Object initializers
 
-Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax). The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the parameterless constructor. Note the use of autoimplemented properties in the `Cat` class. For more information, see [Automatically implemented properties](auto-implemented-properties.md).
+Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax). The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the parameterless constructor. Note the use of automatically implemented properties in the `Cat` class. For more information, see [Automatically implemented properties](auto-implemented-properties.md).
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="CatDeclaration":::
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ObjectPropertyInitialization":::
@@ -148,6 +148,14 @@ The following collection initializer uses object initializers to initialize obje
 You can specify [null](../../language-reference/keywords/null.md) as an element in a collection initializer if the collection's `Add` method allows it.  
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializerWithNull":::
+
+You can use a spread element to create one list that copies other list or lists.
+
+:::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializerWithSpreadOperator":::
+
+And include additonal elements along with using a spread element.
+
+:::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializerWithSpreadOperatorAndAdditionalElement":::
 
 You can specify indexed elements if the collection supports read / write indexing.
 

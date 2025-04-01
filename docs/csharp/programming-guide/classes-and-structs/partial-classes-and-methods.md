@@ -1,15 +1,16 @@
 ---
-title: "Partial Classes and Methods"
-description: Partial classes and methods in C# split the definition of a class, a struct, an interface, or a method over two or more source files.
-ms.date: 08/20/2024
+title: "Partial Classes and Members"
+description: Partial classes and members in C# split the definition of a class, a struct, an interface, or a member over two or more source files.
+ms.date: 03/11/2025
 helpviewer_keywords:
   - "partial methods [C#]"
+  - "partial members [C#]"
   - "partial classes [C#]"
   - "C# language, partial classes and methods"
 ---
-# Partial Classes and Methods (C# Programming Guide)
+# Partial Classes and Members (C# Programming Guide)
 
-It's possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/builtin-types/struct.md), an [interface](../../language-reference/keywords/interface.md), or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
+It's possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/builtin-types/struct.md), an [interface](../../language-reference/keywords/interface.md), or a member over two or more source files. Each source file contains a section of the type or member definition, and all parts are combined when the application is compiled.
 
 ## Partial Classes
 
@@ -32,7 +33,7 @@ If any part is declared abstract, then the whole type is considered abstract. If
 All the parts that specify a base class must agree, but parts that omit a base class still inherit the base type. Parts can specify different base interfaces, and the final type implements all the interfaces listed by all the partial declarations. Any class, struct, or interface members declared in a partial definition are available to all the other parts. The final type is the combination of all the parts at compile time.
 
 > [!NOTE]
-> The `partial` modifier is not available on delegate or enumeration declarations.
+> The `partial` modifier isn't available on delegate or enumeration declarations.
 
 The following example shows that nested types can be partial, even if the type they're nested within isn't partial itself.
 
@@ -114,9 +115,17 @@ An implementation isn't required for a partial method when the signature obeys t
 
 The method and all calls to the method are removed at compile time when there's no implementation.
 
-Any method that doesn't conform to all those restrictions, including properties and indexers, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using automatically implemented properties. The compiler can't distinguish between an automatically implemented property, and the declaring declaration of a partial property.
+Any member that doesn't conform to all those restrictions, including constructors, properties, indexers, and events, must provide an implementation. That implementation might be supplied by a *source generator*. [Partial properties](../../language-reference/keywords/partial-member.md) can't be implemented using automatically implemented properties. The compiler can't distinguish between an automatically implemented property, and the declaring declaration of a partial property.
 
-Partial methods enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
+Beginning with C# 13, the implementing declaration for a partial property can use [field backed properties](../../language-reference/keywords/field.md) to define the implementing declaration. A field backed property provides a concise syntax where the `field` keyword accesses the compiler synthesized backing field for the property. For example, you could write the following code:
+
+:::code language="csharp" source="snippets/partial-classes-and-methods/Program.cs" id="FieldProperty":::
+
+You can use `field` in either the `get` or `set` accessor, or both.
+
+[!INCLUDE[field-preview](../../includes/field-preview.md)]
+
+Partial members enable the implementer of one part of a class to declare a member. The implementer of another part of the class can define that member. There are two scenarios where this separation is useful: templates that generate boilerplate code, and source generators.
 
 - **Template code**: The template reserves a method name and signature so that generated code can call the method. These methods follow the restrictions that enable a developer to decide whether to implement the method. If the method isn't implemented, then the compiler removes the method signature and all calls to the method. The calls to the method, including any results that would occur from evaluation of arguments in the calls, have no effect at run time. Therefore, any code in the partial class can freely use a partial method, even if the implementation isn't supplied. No compile-time or run-time errors result if the method is called but not implemented.
 - **Source generators**: Source generators provide an implementation for members. The human developer can add the member declaration (often with attributes read by the source generator). The developer can write code that calls these members. The source generator runs during compilation and provides the implementation. In this scenario, the restrictions for partial members that might not be implemented often aren't followed.
@@ -135,12 +144,12 @@ partial void OnNameChanged()
 - Partial member declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md).
 - Partial member signatures in both parts of the partial type must match.
 - Partial member can have [static](../../language-reference/keywords/static.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers.
-- Partial member can be generic. Constraints must be the same on the defining and implementing method declaration. Parameter and type parameter names don't have to be the same in the implementing declaration as in the defining one.
+- Partial member can be generic. Constraints must be the same on the defining and implementing member declaration. Parameter and type parameter names don't have to be the same in the implementing declaration as in the defining one.
 - You can make a [delegate](../../language-reference/builtin-types/reference-types.md) to a partial method defined and implemented, but not to a partial method that doesn't have an implementation.
 
 ## C# Language Specification
 
-For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The additional features for partial methods are defined in the [feature specification](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md).
+For more information, see [Partial types](~/_csharpstandard/standard/classes.md#1527-partial-type-declarations) and [Partial methods](~/_csharpstandard/standard/classes.md#1569-partial-methods) in the [C# Language Specification](~/_csharpstandard/standard/README.md). The language specification is the definitive source for C# syntax and usage. The new features for partial members are defined in the feature specifications for [extending partial methods](~/_csharplang/proposals/csharp-9.0/extending-partial-methods.md), [partial properties and indexers](~/_csharplang/proposals/csharp-13.0/partial-properties.md), and [partial events and constructors](~/_csharplang/proposals/partial-events-and-constructors.md).
 
 ## See also
 

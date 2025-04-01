@@ -1,16 +1,16 @@
 ---
 title: "The `is` operator - Match an expression against a type or constant pattern"
 description: "Learn about the C# `is` operator that matches an expression against a pattern. The `is` operator returns true when the expression matches the pattern."
-ms.date: 11/28/2022
+ms.date: 02/18/2025
 f1_keywords: 
   - "is_CSharpKeyword"
   - "is"
 helpviewer_keywords: 
   - "is keyword [C#]"
 ---
-# is operator (C# reference)
+# The `is` operator (C# reference)
 
-The `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article. You can also use the `is` operator to match an expression against a pattern, as the following example shows:
+The `is` operator checks if the result of an expression is compatible with a given type. For information about the type-testing `is` operator, see the [is operator](type-testing-and-cast.md#the-is-operator) section of the [Type-testing and cast operators](type-testing-and-cast.md) article. You can also use the `is` operator to match an expression against a pattern, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/IsOperator.cs" id="IntroExample":::
 

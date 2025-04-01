@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 
 public class Example8
@@ -8,8 +8,7 @@ public class Example8
         Double value1 = 1 / 3.0;
         Single sValue2 = 1 / 3.0f;
         Double value2 = (Double)sValue2;
-        Console.WriteLine("{0:R} = {1:R}: {2}", value1, value2,
-                                            value1.Equals(value2));
+        Console.WriteLine($"{value1:R} = {value2:R}: {value1.Equals(value2)}");
     }
 }
 // The example displays the following output:

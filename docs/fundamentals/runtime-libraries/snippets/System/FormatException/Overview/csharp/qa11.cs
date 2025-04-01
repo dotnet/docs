@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 public class Example5
@@ -16,7 +16,7 @@ public class Example5
             total += number;
         }
         numbers[3] = total;
-        Console.WriteLine("{0} + {1} + {2} = {3}", numbers);
+        Console.WriteLine($"{numbers} + {1} + {2} = {3}");
         // </Snippet21>
     }
 }

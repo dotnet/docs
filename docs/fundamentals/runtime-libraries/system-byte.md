@@ -67,7 +67,7 @@ You can also format a <xref:System.Byte> value as a binary, octal, decimal, or h
 
 ## Work with non-decimal Byte values
 
-In addition to working with individual bytes as decimal values, you may want to perform bitwise operations with byte values, or work with byte arrays or with the binary or hexadecimal representations of byte values. For example, overloads of the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> method can convert each of the primitive data types to a byte array, and the <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=nameWithType> method converts a <xref:System.Numerics.BigInteger> value to a byte array.
+In addition to working with individual bytes as decimal values, you might want to perform bitwise operations with byte values, or work with byte arrays or with the binary or hexadecimal representations of byte values. For example, overloads of the <xref:System.BitConverter.GetBytes%2A?displayProperty=nameWithType> method can convert each of the primitive data types to a byte array, and the <xref:System.Numerics.BigInteger.ToByteArray%2A?displayProperty=nameWithType> method converts a <xref:System.Numerics.BigInteger> value to a byte array.
 
 <xref:System.Byte> values are represented in 8 bits by their magnitude only, without a sign bit. This is important to keep in mind when you perform bitwise operations on <xref:System.Byte> values or when you work with individual bits. To perform a numeric, Boolean, or comparison operation on any two non-decimal values, both values must use the same representation.
 

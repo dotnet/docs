@@ -21,8 +21,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
+          - text: Overview of ML.NET
+            url: overview.md
           - text: What is the ML.NET API?
-            url: how-does-mldotnet-work.md
+            url: mldotnet-api.md
           - text: What is Model Builder?
             url: automate-training-with-model-builder.md
       - linkListType: video

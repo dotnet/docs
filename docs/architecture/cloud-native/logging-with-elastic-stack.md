@@ -8,13 +8,13 @@ ms.date: 04/06/2022
 
 [!INCLUDE [download-alert](includes/download-alert.md)]
 
-There are many good centralized logging tools and they vary in cost from being free, open-source tools, to more expensive options. In many cases, the free tools are as good as or better than the paid offerings. One such tool is a combination of three open-source components: Elasticsearch, Logstash, and Kibana.
+There are many good centralized logging tools and they vary in cost from free, open-source tools, to more expensive options. In many cases, the free tools are as good as or better than the paid offerings. One such tool is a combination of three open-source components: Elasticsearch, Logstash, and Kibana.
 
 Collectively these tools are known as the Elastic Stack or ELK stack.
 
 ## Elastic Stack
 
-The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://www.elastic.co/guide/en/kibana/master/logging-configuration.html), all you need to get started is to set the environment variables as shown in Figure 7-5:
+The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the most part, all you need to get started is to set the environment variables as shown in Figure 7-5:
 
 ```kubernetes
 KUBE_LOGGING_DESTINATION=elasticsearch
@@ -27,6 +27,8 @@ This step will install Elasticsearch on the cluster and target sending all the c
 
 ![An example of a Kibana dashboard showing the results of a query against logs ingested from Kubernetes](./media/kibana-dashboard.png)
 **Figure 7-6**. An example of a Kibana dashboard showing the results of a query against logs that are ingested from Kubernetes
+
+For more information about configuration, see [Configure logging (Kibana)](https://www.elastic.co/guide/en/kibana/current/logging-configuration.html).
 
 ## What are the advantages of Elastic Stack?
 

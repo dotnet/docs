@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
@@ -78,7 +78,7 @@ namespace Microsoft.ServiceModel.Samples
                 scope.Complete();
             }
 
-            Console.WriteLine("Order has been submitted:{0}", po);
+            Console.WriteLine($"Order has been submitted:{po}");
 
             //Closing the client gracefully closes the connection and cleans up resources.
             client.Close();

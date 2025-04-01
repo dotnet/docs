@@ -84,7 +84,7 @@ Module Module1
 End Module
 ```
 
-This example produces the following output::
+This example produces the following output:
 
 ```xml
 <aw:Address aw:Type="Billing" xmlns:aw="http://www.adventure-works.com">

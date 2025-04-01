@@ -23,7 +23,7 @@ F# can be installed as part of [Visual Studio Code](https://code.visualstudio.co
 
 ### Other development environments
 
-Other IDEs are available for F#, see [F# Tools](https://dotnet.microsoft.com/languages/fsharp/tools)
+Other IDEs are available for F#. For more information, see [F# Tools](https://dotnet.microsoft.com/languages/fsharp/tools).
 
 ## Community Tools
 

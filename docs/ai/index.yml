@@ -1,14 +1,14 @@
 ### YamlMime:Landing
 
-title: AI for .NET developers
-summary: Learn to use AI with .NET. Browse sample code, tutorials, quickstarts, conceptual articles, and more.
+title: AI apps for .NET developers
+summary: Learn to build AI apps with .NET. Browse sample code, tutorials, quickstarts, conceptual articles, and more.
 
 metadata:
-  title: AI for .NET Developers
-  description: Samples, tutorials, and education for using AI with .NET
+  title: AI apps for .NET developers
+  description: Samples, tutorials, and education for building AI apps with .NET
   ms.topic: hub-page
   ms.service: dotnet
-  ms.date: 05/13/2024
+  ms.date: 12/19/2024
   author: alexwolfmsft
   ms.author: alexwolf
 
@@ -18,7 +18,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
 
-  # Card 
+  # Card
   - title: Get started
     linkLists:
       - linkListType: get-started
@@ -49,6 +49,8 @@ landingContent:
             url: conceptual/vector-databases.md
           - text: Prompt engineering
             url: conceptual/prompt-engineering-dotnet.md
+          - text: Evaluation libraries
+            url: conceptual/evaluation-libraries.md
 
   # Card (Optional; Remove if not applicable.)
   - title: Common tasks
@@ -77,6 +79,8 @@ landingContent:
             url: get-started-app-chat-template.md
           - text: Implement RAG using vector search
             url: tutorials/tutorial-ai-vector-search.md
+          - text: Evaluate a model's response
+            url: tutorials/evaluate-with-reporting.md
 
   # Card (Optional; Remove if not applicable.)
   - title: Training

@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 
 public class Example9
@@ -14,8 +14,7 @@ public class Example9
         if (total.Equals(result))
             Console.WriteLine("The sum of the values equals the total.");
         else
-            Console.WriteLine("The sum of the values ({0}) does not equal the total ({1}).",
-                              total, result);
+            Console.WriteLine($"The sum of the values ({total}) does not equal the total ({result}).");
     }
 }
 // The example displays the following output:

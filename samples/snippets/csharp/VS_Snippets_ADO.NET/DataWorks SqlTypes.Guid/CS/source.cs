@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Data.SqlTypes;
 
@@ -24,7 +24,7 @@ static class Program
         Console.WriteLine("Unsorted Guids:");
         foreach (Guid guidValue in guidList)
         {
-            Console.WriteLine(" {0}", guidValue);
+            Console.WriteLine($" {guidValue}");
         }
         Console.WriteLine("");
 
@@ -35,7 +35,7 @@ static class Program
         Console.WriteLine("Sorted Guids:");
         foreach (Guid guidSorted in guidList)
         {
-            Console.WriteLine(" {0}", guidSorted);
+            Console.WriteLine($" {guidSorted}");
         }
         Console.WriteLine("");
 
@@ -56,7 +56,7 @@ static class Program
         Console.WriteLine("Sorted SqlGuids:");
         foreach (SqlGuid sqlGuidValue in sqlGuidList)
         {
-            Console.WriteLine(" {0}", sqlGuidValue);
+            Console.WriteLine($" {sqlGuidValue}");
         }
     }
     // </Snippet1>

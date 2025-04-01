@@ -3,7 +3,7 @@ title: Install .NET on Ubuntu
 description: Demonstrates the various ways to install .NET SDK and .NET Runtime on Ubuntu. .NET is usually installed through APT.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/01/2024
+ms.date: 12/13/2024
 ms.custom: linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
 ---
@@ -34,8 +34,6 @@ The following versions of .NET are supported or available for Ubuntu 24.10:
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) falls out of support, .NET is no longer supported with that version.
 
 # [.NET 9](#tab/dotnet9)
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 [!INCLUDE [linux-apt-install-90](includes/linux-install-90-apt.md)]
 
@@ -83,7 +81,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET are supported or available for Ubuntu 24.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 9.0, 8.0                | 8.0                                  | 9.0, 7.0, 6.0                                                                                       |None                                                                                         |
 
@@ -144,7 +142,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET are supported or available for Ubuntu 22.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 9.0, 8.0                | 8.0, 7.0, 6.0                        | 9.0                                                                                                      | 8.0, 7.0, 6.0, 3.1                |
 
@@ -206,7 +204,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET are supported or available for Ubuntu 20.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 8.0                     | None                                 | None                                                                                                     | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                                |
 
@@ -300,7 +298,7 @@ If your Ubuntu version isn't supported, you most likely need to install .NET by 
 
 The following versions of .NET were supported or available for Ubuntu 23.10:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 8.0, 6.0                | 8.0, 7.0, 6.0                        | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
 
@@ -355,7 +353,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET were supported or available for Ubuntu 23.04:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 8.0, 6.0                | 7.0, 6.0                             | None                                                                                                     | 8.0, 7.0, 6.0                                                                               |
 
@@ -410,7 +408,7 @@ You can install a recent version of _libgdiplus_ by [adding the Mono repository 
 
 The following versions of .NET are supported or available for Ubuntu 22.10:
 
-| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu.md#register-the-microsoft-package-repository) |
+| Supported .NET versions | Available in<br>built-in Ubuntu feed | [Available in<br>.NET backports<br>Ubuntu feed](linux-ubuntu-decision.md#ubuntu-net-backports-package-repository) | [Available in<br>Microsoft feed](linux-ubuntu-decision.md#register-the-microsoft-package-repository) |
 |-------------------------|--------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | 6.0                     | 7.0, 6.0                             |  None                                                                                                    | 7.0, 6.0, 3.1                                                                               |
 

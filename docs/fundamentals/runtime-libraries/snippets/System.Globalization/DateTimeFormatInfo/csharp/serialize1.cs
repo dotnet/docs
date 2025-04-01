@@ -1,4 +1,4 @@
-﻿// <Snippet17>
+// <Snippet17>
 using System;
 using System.Globalization;
 using System.IO;
@@ -11,11 +11,9 @@ public class SerializeEx1
         // Define a date and time to serialize.
         DateTime originalDate = new DateTime(2014, 08, 18, 08, 16, 35);
         // Display information on the date and time.
-        Console.WriteLine("Date to serialize: {0:F}", originalDate);
-        Console.WriteLine("Current Culture:   {0}",
-                          CultureInfo.CurrentCulture.Name);
-        Console.WriteLine("Time Zone:         {0}",
-                          TimeZoneInfo.Local.DisplayName);
+        Console.WriteLine($"Date to serialize: {originalDate:F}");
+        Console.WriteLine($"Current Culture:   {CultureInfo.CurrentCulture.Name}");
+        Console.WriteLine($"Time Zone:         {TimeZoneInfo.Local.DisplayName}");
         // Convert the date value to UTC.
         DateTime utcDate = originalDate.ToUniversalTime();
         // Serialize the UTC value.

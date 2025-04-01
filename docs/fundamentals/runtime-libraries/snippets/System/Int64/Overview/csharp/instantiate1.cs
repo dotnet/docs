@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Example
@@ -20,7 +20,7 @@ public class Example
       long number1 = -64301728;
       long number2 = 255486129307;
       // </Snippet1>
-      Console.WriteLine("{0} - {1}", number1, number2);
+      Console.WriteLine($"{number1} - {number2}");
    }
 
    private static void InstantiateByNarrowingConversion()
@@ -32,7 +32,7 @@ public class Example
          Console.WriteLine(number1);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int64.", ulNumber);
+         Console.WriteLine($"{ulNumber} is out of range of an Int64.");
       }
 
       double dbl2 = 35901.997;
@@ -41,7 +41,7 @@ public class Example
          Console.WriteLine(number2);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int64.", dbl2);
+         Console.WriteLine($"{dbl2} is out of range of an Int64.");
       }
 
       BigInteger bigNumber = (BigInteger) 1.63201978555e30;
@@ -50,7 +50,7 @@ public class Example
          Console.WriteLine(number3);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int64.", bigNumber);
+         Console.WriteLine($"{bigNumber} is out of range of an Int64.");
       }
       // The example displays the following output:
       //    163245617943825
@@ -68,10 +68,10 @@ public class Example
          Console.WriteLine(number1);
       }
       catch (OverflowException) {
-         Console.WriteLine("'{0}' is out of range of a 64-bit integer.", string1);
+         Console.WriteLine($"'{string1}' is out of range of a 64-bit integer.");
       }
       catch (FormatException) {
-         Console.WriteLine("The format of '{0}' is invalid.", string1);
+         Console.WriteLine($"The format of '{string1}' is invalid.");
       }
 
       string string2 = "F9A3CFF0A";
@@ -81,10 +81,10 @@ public class Example
          Console.WriteLine(number2);
       }
       catch (OverflowException) {
-         Console.WriteLine("'{0}' is out of range of a 64-bit integer.", string2);
+         Console.WriteLine($"'{string2}' is out of range of a 64-bit integer.");
       }
       catch (FormatException) {
-         Console.WriteLine("The format of '{0}' is invalid.", string2);
+         Console.WriteLine($"The format of '{string2}' is invalid.");
       }
       // The example displays the following output:
       //    244681903147

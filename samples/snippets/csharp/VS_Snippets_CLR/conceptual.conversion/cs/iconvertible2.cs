@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 
 public abstract class Temperature : IConvertible
@@ -259,14 +259,14 @@ public class Example4
         // <Snippet11>
         TemperatureCelsius tempC1 = new TemperatureCelsius(0);
         TemperatureFahrenheit tempF1 = (TemperatureFahrenheit)Convert.ChangeType(tempC1, typeof(TemperatureFahrenheit), null);
-        Console.WriteLine("{0} equals {1}.", tempC1, tempF1);
+        Console.WriteLine($"{tempC1} equals {tempF1}.");
         TemperatureCelsius tempC2 = (TemperatureCelsius)Convert.ChangeType(tempC1, typeof(TemperatureCelsius), null);
-        Console.WriteLine("{0} equals {1}.", tempC1, tempC2);
+        Console.WriteLine($"{tempC1} equals {tempC2}.");
         TemperatureFahrenheit tempF2 = new TemperatureFahrenheit(212);
         TemperatureCelsius tempC3 = (TemperatureCelsius)Convert.ChangeType(tempF2, typeof(TemperatureCelsius), null);
-        Console.WriteLine("{0} equals {1}.", tempF2, tempC3);
+        Console.WriteLine($"{tempF2} equals {tempC3}.");
         TemperatureFahrenheit tempF3 = (TemperatureFahrenheit)Convert.ChangeType(tempF2, typeof(TemperatureFahrenheit), null);
-        Console.WriteLine("{0} equals {1}.", tempF2, tempF3);
+        Console.WriteLine($"{tempF2} equals {tempF3}.");
         // The example displays the following output:
         //       0°C equals 32°F.
         //       0°C equals 0°C.

@@ -5,7 +5,7 @@ namespace interpolated_string_handler.Version2
 {
     // <CoreInterpolatedStringHandler>
     [InterpolatedStringHandler]
-    public ref struct LogInterpolatedStringHandler
+    public struct LogInterpolatedStringHandler
     {
         // Storage for the built-up string
         StringBuilder builder;

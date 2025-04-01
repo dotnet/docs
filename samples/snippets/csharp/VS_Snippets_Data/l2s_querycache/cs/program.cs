@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +16,7 @@ namespace L2S_QueryCache
             // the query cache because it is the first query.
             // There are no objects in the cache.
             var a = context.Customers.First();
-            Console.WriteLine("First query gets customer {0}. ", a.CustomerID);
+            Console.WriteLine($"First query gets customer {a.CustomerID}. ");
 
             // This query returns an object from the query cache.
             var b = context.Customers.Where(c => c.CustomerID == a.CustomerID);

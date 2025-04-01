@@ -13,7 +13,7 @@ public class StringParsing
         long number1 = 0;
         bool canConvert = long.TryParse(numString, out number1);
         if (canConvert == true)
-        Console.WriteLine("number1 now = {0}", number1);
+        Console.WriteLine($"number1 now = {number1}");
         else
         Console.WriteLine("numString is not a valid long");
 
@@ -21,7 +21,7 @@ public class StringParsing
         numString = "255"; // A value of 256 will return false
         canConvert = byte.TryParse(numString, out number2);
         if (canConvert == true)
-        Console.WriteLine("number2 now = {0}", number2);
+        Console.WriteLine($"number2 now = {number2}");
         else
         Console.WriteLine("numString is not a valid byte");
 
@@ -29,7 +29,7 @@ public class StringParsing
         numString = "27.3"; //"27" is also a valid decimal
         canConvert = decimal.TryParse(numString, out number3);
         if (canConvert == true)
-        Console.WriteLine("number3 now = {0}", number3);
+        Console.WriteLine($"number3 now = {number3}");
         else
         Console.WriteLine("number3 is not a valid decimal");
         //</ParseNumbers>

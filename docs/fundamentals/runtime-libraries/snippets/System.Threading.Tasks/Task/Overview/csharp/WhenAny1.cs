@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,10 +15,10 @@ public class Example4
         try
         {
             int index = Task.WaitAny(tasks);
-            Console.WriteLine("Task #{0} completed first.\n", tasks[index].Id);
+            Console.WriteLine($"Task #{tasks[index].Id} completed first.\n");
             Console.WriteLine("Status of all tasks:");
             foreach (var t in tasks)
-                Console.WriteLine("   Task #{0}: {1}", t.Id, t.Status);
+                Console.WriteLine($"   Task #{t.Id}: {t.Status}");
         }
         catch (AggregateException)
         {
@@ -49,7 +49,7 @@ public class Example4
 // 
 //         int index = Task.WaitAny(tasks2);
 //         double d = tasks2[index].Result;
-//         Console.WriteLine("task[{0}] completed first with result of {1}.", index, d);
+//         Console.WriteLine($"task[{index}] completed first with result of {d}.");
 // 
 //         Console.ReadKey();
 //     }

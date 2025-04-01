@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Class1
@@ -31,8 +31,7 @@ public class Class1
       // hours, minutes, seconds, and milliseconds
       dateAndTime = new DateTimeOffset(2008, 5, 1, 8, 6, 32, 545,
                                        new TimeSpan(1, 0, 0));
-      Console.WriteLine("{0} {1}", dateAndTime.ToString("G"),
-                                   dateAndTime.ToString("zzz"));
+      Console.WriteLine($"{dateAndTime.ToString("G")} {dateAndTime.ToString("zzz")}");
 
       // Instantiate date and time using Persian calendar with years,
       // months, days, hours, minutes, seconds, and milliseconds
@@ -41,8 +40,7 @@ public class Class1
                                        new TimeSpan(1, 0, 0));
       // Note that the console output displays the date in the Gregorian
       // calendar, not the Persian calendar.
-      Console.WriteLine("{0} {1}", dateAndTime.ToString("G"),
-                                   dateAndTime.ToString("zzz"));
+      Console.WriteLine($"{dateAndTime.ToString("G")} {dateAndTime.ToString("zzz")}");
 
       // Instantiate date and time using number of ticks
       // 05/01/2008 8:06:32 AM is 633,452,259,920,000,000 ticks
@@ -86,8 +84,7 @@ public class Class1
       }
       catch (ArgumentException)
       {
-         Console.WriteLine("Attempt to create DateTimeOffset value from {0} failed.",
-                            targetTime);
+         Console.WriteLine($"Attempt to create DateTimeOffset value from {targetTime} failed.");
       }
       // Throws exception and displays the following to the console:
       //   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM +00:00 failed.
@@ -131,8 +128,7 @@ public class Class1
       }
       catch (ArgumentException)
       {
-         Console.WriteLine("Attempt to create DateTimeOffset value from {0} failed.",
-                            utcTime);
+         Console.WriteLine($"Attempt to create DateTimeOffset value from {utcTime} failed.");
       }
       // Throws exception and displays the following to the console:
       //   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM failed.
@@ -155,8 +151,7 @@ public class Class1
       }
       catch (ArgumentException)
       {
-         Console.WriteLine("Attempt to create DateTimeOffset value from {0} failed.",
-                            localTime);
+         Console.WriteLine($"Attempt to create DateTimeOffset value from {localTime} failed.");
       }
       // Throws exception and displays the following to the console:
       //   Attempt to create DateTimeOffset value from 5/1/2008 8:30:00 AM failed.
@@ -210,14 +205,14 @@ public class Class1
       }
       catch (FormatException)
       {
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
       }
 
       timeString = "05/01/2008 8:30 AM";
       if (DateTimeOffset.TryParse(timeString, out targetTime))
          Console.WriteLine(targetTime);
       else
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
 
       timeString = "Thursday, 01 May 2008 08:30";
       try
@@ -228,7 +223,7 @@ public class Class1
       }
       catch (FormatException)
       {
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
       }
 
       timeString = "Thursday, 01 May 2008 08:30 +02:00";
@@ -244,7 +239,7 @@ public class Class1
                                       out targetTime))
          Console.WriteLine(targetTime);
       else
-         Console.WriteLine("Unable to parse {0}.", timeString);
+         Console.WriteLine($"Unable to parse {timeString}.");
       // The example displays the following output to the console:
       //    5/1/2008 8:30:00 AM +01:00
       //    5/1/2008 8:30:00 AM -07:00

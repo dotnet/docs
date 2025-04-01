@@ -1,11 +1,13 @@
 ---
 description: "The `using` directive imports types from a namespace, or creates an alias for a given type. Using directives enable you to use simple names for types instead of the fully qualified type name."
 title: "The using directive: Import types from a namespace"
-ms.date: 11/24/2024
+ms.date: 01/27/2025
 f1_keywords:
   - "using_CSharpKeyword"
+  - "using-static_CSharpKeyword"
 helpviewer_keywords:
   - "using directive [C#]"
+  - "using static directive [C#]"
 ---
 # The `using` directive
 

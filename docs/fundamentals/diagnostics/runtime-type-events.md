@@ -9,7 +9,7 @@ helpviewer_keywords:
 
 # .NET runtime type events
 
-The events described in this article collect information relating to loading types. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information relating to loading types. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 ## TypeLoadStart Event
 

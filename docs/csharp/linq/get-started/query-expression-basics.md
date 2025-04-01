@@ -1,7 +1,7 @@
 ---
 title: Query expression basics (LINQ)
 description: Introduces concepts related to query expressions
-ms.date: 03/06/2024
+ms.date: 01/16/2025
 ---
 # Query expression basics
 
@@ -45,14 +45,14 @@ In the previous example, the query is executed in the call to `Count`, because `
 
 A *query expression* is a query expressed in query syntax. A query expression is a first-class language construct. It's just like any other expression and can be used in any context in which a C# expression is valid. A query expression consists of a set of clauses written in a declarative syntax similar to SQL or XQuery. Each clause in turn contains one or more C# expressions, and these expressions might themselves be either a query expression or contain a query expression.
 
-A query expression must begin with a [from](../../language-reference/keywords/from-clause.md) clause and must end with a [select](../../language-reference/keywords/select-clause.md) or [group](../../language-reference/keywords/group-clause.md) clause. Between the first `from` clause and the last `select` or `group` clause, it can contain one or more of these optional clauses: [where](../../language-reference/keywords/where-clause.md), [orderby](../../language-reference/keywords/orderby-clause.md), [join](../../language-reference/keywords/join-clause.md), [let](../../language-reference/keywords/let-clause.md) and even another [from](../../language-reference/keywords/from-clause.md) clauses. You can also use the [into](../../language-reference/keywords/into.md) keyword to enable the result of a `join` or `group` clause to serve as the source for more query clauses in the same query expression.
+A query expression must begin with a [from](../../language-reference/keywords/from-clause.md) clause and must end with a [select](../../language-reference/keywords/select-clause.md) or [group](../../language-reference/keywords/group-clause.md) clause. Between the first `from` clause and the last `select` or `group` clause, it can contain one or more of these optional clauses: [where](../../language-reference/keywords/where-clause.md), [orderby](../../language-reference/keywords/orderby-clause.md), [join](../../language-reference/keywords/join-clause.md), [let](../../language-reference/keywords/let-clause.md) and even another [from](../../language-reference/keywords/from-clause.md) clauses. You can also use the [`into`](../../language-reference/keywords/into.md) keyword to enable the result of a `join` or `group` clause to serve as the source for more query clauses in the same query expression.
 
 ### Query variable
 
 In LINQ, a query variable is any variable that stores a *query* instead of the *results* of a query. More specifically, a query variable is always an enumerable type that produces a sequence of elements when iterated over in a `foreach` statement or a direct call to its <xref:System.Collections.IEnumerator.MoveNext?displayProperty=nameWithType> method.
 
 > [!NOTE]
-> Examples in this article uses the following data source and sample data.
+> Examples in this article use the following data source and sample data.
 
 :::code language="csharp" source="./snippets/SnippetApp/DataSources.cs" id="basics_datasource":::
 
@@ -62,7 +62,7 @@ The following code example shows a simple query expression with one data source,
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics5":::
 
-In the previous example, `scoreQuery` is a *query variable,* which is sometimes referred to as just a *query*. The query variable stores no actual result data, which is produced in the `foreach` loop. And when the `foreach` statement executes, the query results aren't returned through the query variable `scoreQuery`. Rather, they're returned through the iteration variable `testScore`. The `scoreQuery` variable can be iterated in a second `foreach` loop. It produces the same results as long as neither it nor the data source has been modified.
+In the previous example, `scoreQuery` is a *query variable,* which is sometimes referred to as just a *query*. The query variable stores no actual result data, which is produced in the `foreach` loop. And when the `foreach` statement executes, the query results aren't returned through the query variable `scoreQuery`. Rather, they're returned through the iteration variable `testScore`. The `scoreQuery` variable can be iterated in a second `foreach` loop. It produces the same results as long as neither it nor the data source was modified.
 
 A query variable might store a query that is expressed in query syntax or method syntax, or a combination of the two. In the following examples, both `queryMajorCities` and `queryMajorCities2` are query variables:
 
@@ -100,7 +100,7 @@ For more information, see [from clause](../../language-reference/keywords/from-c
 
 A query expression must end with either a `group` clause or a `select` clause.
 
-#### group clause
+#### The group clause
 
 Use the `group` clause to produce a sequence of groups organized by a key that you specify. The key can be any data type. For example, the following query creates a sequence of groups that contains one or more `Country` objects and whose key is a `char` type with value being the first letter of countries' names.
 
@@ -128,13 +128,13 @@ You can use the `into` keyword in a `select` or `group` clause to create a tempo
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics14":::
 
-For more information, see [into](../../language-reference/keywords/into.md).
+For more information, see [`into`](../../language-reference/keywords/into.md).
 
 ### Filtering, ordering, and joining
 
 Between the starting `from` clause, and the ending `select` or `group` clause, all other clauses (`where`, `join`, `orderby`, `from`, `let`) are optional. Any of the optional clauses might be used zero times or multiple times in a query body.
 
-#### where clause
+#### The where clause
 
 Use the `where` clause to filter out elements from the source data based on one or more predicate expressions. The `where` clause in the following example has one predicate with two conditions.
 
@@ -142,7 +142,7 @@ Use the `where` clause to filter out elements from the source data based on one 
 
 For more information, see [where clause](../../language-reference/keywords/where-clause.md).
 
-#### orderby clause
+#### The orderby clause
 
 Use the `orderby` clause to sort the results in either ascending or descending order. You can also specify secondary sort orders. The following example performs a primary sort on the `country` objects by using the `Area` property. It then performs a secondary sort by using the `Population` property.
 
@@ -150,15 +150,15 @@ Use the `orderby` clause to sort the results in either ascending or descending o
 
 The `ascending` keyword is optional; it's the default sort order if no order is specified. For more information, see [orderby clause](../../language-reference/keywords/orderby-clause.md).
 
-#### join clause
+#### The join clause
 
 Use the `join` clause to associate and/or combine elements from one data source with elements from another data source based on an equality comparison between specified keys in each element. In LINQ, join operations are performed on sequences of objects whose elements are different types. After you join two sequences, you must use a `select` or `group` statement to specify which element to store in the output sequence. You can also use an anonymous type to combine properties from each set of associated elements into a new type for the output sequence. The following example associates `prod` objects whose `Category` property matches one of the categories in the `categories` string array. Products whose `Category` doesn't match any string in `categories` are filtered out. The `select` statement projects a new type whose properties are taken from both `cat` and `prod`.
 
 :::code language="csharp" source="./snippets/SnippetApp/Basics.cs" id="basics17":::
 
-You can also perform a group join by storing the results of the `join` operation into a temporary variable by using the [into](../../language-reference/keywords/into.md) keyword. For more information, see [join clause](../../language-reference/keywords/join-clause.md).
+You can also perform a group join by storing the results of the `join` operation into a temporary variable by using the [`into`](../../language-reference/keywords/into.md) keyword. For more information, see [join clause](../../language-reference/keywords/join-clause.md).
 
-#### let clause
+#### The let clause
 
 Use the `let` clause to store the result of an expression, such as a method call, in a new range variable. In the following example, the range variable `firstName` stores the first element of the array of strings returned by `Split`.
 

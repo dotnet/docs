@@ -29,6 +29,7 @@ The `dotnet reference add` command provides a convenient option to add project r
   <ProjectReference Include="app.csproj" />
   <ProjectReference Include="..\lib2\lib2.csproj" />
   <ProjectReference Include="..\lib1\lib1.csproj" />
+  <ProjectReference Include="..\lib3\lib3.fsproj" />
 </ItemGroup>
 ```
 
@@ -70,6 +71,12 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 
   ```dotnetcli
   dotnet reference add lib/lib.csproj --project app/app.csproj
+  ```
+
+- Add a compatible .NET language (for example, F#) project reference, which works in both directions:
+
+  ```dotnetcli
+  dotnet add app/app.csproj reference lib/lib.fsproj
   ```
 
 - Add multiple project references to the project in the current directory:

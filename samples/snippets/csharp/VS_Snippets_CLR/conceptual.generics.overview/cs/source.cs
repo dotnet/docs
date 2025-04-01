@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 
 namespace GenericsExample1
@@ -18,8 +18,8 @@ namespace GenericsExample1
             SimpleGenericClass<string> g = new SimpleGenericClass<string>();
             g.Field = "A string";
             //...
-            Console.WriteLine("SimpleGenericClass.Field           = \"{0}\"", g.Field);
-            Console.WriteLine("SimpleGenericClass.Field.GetType() = {0}", g.Field.GetType().FullName);
+            Console.WriteLine($"SimpleGenericClass.Field           = \"{g.Field}\"");
+            Console.WriteLine($"SimpleGenericClass.Field.GetType() = {g.Field.GetType().FullName}");
         }
         //</snippet3>
 

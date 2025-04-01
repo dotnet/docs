@@ -1,4 +1,4 @@
-﻿//<Snippet6>
+//<Snippet6>
 using System;
 using System.Globalization;
 
@@ -10,7 +10,7 @@ class Example
       String s = "The red car drove down the long, narrow, secluded road.";
       // Determine the category of each character.
       foreach (var ch in s)
-         Console.WriteLine("'{0}': {1}", ch, Char.GetUnicodeCategory(ch));
+         Console.WriteLine($"'{ch}': {Char.GetUnicodeCategory(ch)}");
    }
 }
 // The example displays the following output:

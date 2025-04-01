@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 
 public class Example14
@@ -7,8 +7,7 @@ public class Example14
     {
         Double value = 123456789012.34567;
         Double additional = Double.Epsilon * 1e15;
-        Console.WriteLine("{0} + {1} = {2}", value, additional,
-                                             value + additional);
+        Console.WriteLine($"{value} + {additional} = {value + additional}");
     }
 }
 // The example displays the following output:

@@ -3,7 +3,7 @@ title: Install .NET Runtime on Linux with Snap
 description: Learn about how to install the .NET Runtime snap package. Canonical maintains and supports .NET-related snap packages.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 12/13/2024
 ms.topic: install-set-up-deploy
 ms.custom: linux-related-content
 #customer intent: As a Linux user, I want to install .NET Runtime through Snap.
@@ -31,8 +31,6 @@ Your Linux distribution might already include snap. Try running `snap` from a te
 
 ## 1. Install the runtime
 
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
-
 The following steps install the .NET 9 runtime snap package:
 
 01. Open a terminal.
@@ -46,7 +44,7 @@ Each .NET Runtime is published as an individual snap package. The following tabl
 
 | .NET version                                      | Snap package        | .NET version supported by Microsoft |
 |---------------------------------------------------|---------------------|-----|
-| 9 (STS)                                           | Not yet available | Yes |
+| [9 (STS)](https://snapcraft.io/dotnet-runtime-90) | `dotnet-runtime-90` | Yes |
 | [8 (LTS)](https://snapcraft.io/dotnet-runtime-80) | `dotnet-runtime-80` | Yes |
 | [7 (STS)](https://snapcraft.io/dotnet-runtime-70) | `dotnet-runtime-70` | No  |
 | [6 (LTS)](https://snapcraft.io/dotnet-runtime-60) | `dotnet-runtime-60` | No  |

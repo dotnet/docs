@@ -20,5 +20,5 @@ string prompt = $"""
 Console.WriteLine($"user >>> {prompt}");
 
 // Submit the prompt and print out the response
-ChatCompletion response = await client.CompleteAsync(prompt, new ChatOptions { MaxOutputTokens = 400 });
+ChatResponse response = await client.GetResponseAsync(prompt, new ChatOptions { MaxOutputTokens = 400 });
 Console.WriteLine($"assistant >>> {response}");

@@ -15,7 +15,7 @@ ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
 
  This topic introduces guidelines and conventions for implementing <xref:System.Windows.Automation.Provider.ISelectionItemProvider>, including information about properties, methods, and events. Links to additional references are listed at the end of the overview.
 
- The <xref:System.Windows.Automation.SelectionItemPattern> control pattern is used to support controls that act as individual, selectable child items of container controls that implement <xref:System.Windows.Automation.Provider.ISelectionProvider>. For examples of controls that implement the SelectionItem control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md)
+ The <xref:System.Windows.Automation.SelectionItemPattern> control pattern is used to support controls that act as individual, selectable child items of container controls that implement <xref:System.Windows.Automation.Provider.ISelectionProvider>. For examples of controls that implement the SelectionItem control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).
 
 <a name="Implementation_Guidelines_and_Conventions"></a>
 
@@ -29,16 +29,21 @@ ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
 
 ## Required Members for ISelectionItemProvider
 
- The following properties, methods, and events are required for implementing <xref:System.Windows.Automation.Provider.ISelectionItemProvider>.
+The following properties, methods, and events are required for implementing <xref:System.Windows.Automation.Provider.ISelectionItemProvider>.
 
-|Required members|Member type|Notes|
+| Required members | Member type | Notes |
 |----------------------|-----------------|-----------|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired%2A>|Property|None|
-|<xref:System.Windows.Automation.Provider.ISelectionProvider.GetSelection%2A>|Method|None|
-|<xref:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent>|Event|Raised when a selection in a container has changed significantly and requires sending more <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> and <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> events than the <xref:System.Windows.Automation.Provider.AutomationInteropProvider.InvalidateLimit> constant permits.|
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.IsSelected%2A> | Property | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.SelectionContainer%2A> | Property | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.AddToSelection%2A> | Method | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.RemoveFromSelection%2A> | Method | None |
+| <xref:System.Windows.Automation.Provider.ISelectionItemProvider.Select%2A> | Method | None |
+| <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> | Event | Raised when a selection change results in a single selected item. |
+| <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent> | Event | Raised when an item is added to a multi-selection container. |
+| <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> | Event | Raised when an item is removed from a multi-selection container. |
+| <xref:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent> | Event | Raised when a selection in a container has changed significantly and requires sending more <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> and <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> events than the <xref:System.Windows.Automation.Provider.AutomationInteropProvider.InvalidateLimit> constant permits. |
 
-- If the result of a <xref:System.Windows.Automation.SelectionItemPattern.Select%2A>, an <xref:System.Windows.Automation.SelectionItemPattern.AddToSelection%2A>, or a <xref:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection%2A> is a single selected item, an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> should be raised; otherwise send <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent>/ <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.
+- If a <xref:System.Windows.Automation.SelectionItemPattern.Select%2A>, <xref:System.Windows.Automation.SelectionItemPattern.AddToSelection%2A>, or <xref:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection%2A> operation results in a single selected item, raise <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent>; otherwise, raise <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent> or <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.
 
 <a name="Exceptions"></a>
 

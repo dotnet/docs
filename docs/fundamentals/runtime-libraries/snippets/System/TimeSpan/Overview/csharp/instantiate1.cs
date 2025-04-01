@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -38,7 +38,7 @@ public class Example
       DateTime departure = new DateTime(2010, 6, 12, 18, 32, 0);
       DateTime arrival = new DateTime(2010, 6, 13, 22, 47, 0);
       TimeSpan travelTime = arrival - departure;  
-      Console.WriteLine("{0} - {1} = {2}", arrival, departure, travelTime);      
+      Console.WriteLine($"{arrival} - {departure} = {travelTime}");      
       
       // The example displays the following output:
       //       6/13/2010 10:47:00 PM - 6/12/2010 6:32:00 PM = 1.04:15:00
@@ -53,13 +53,13 @@ public class Example
       {
          try {
             TimeSpan ts = TimeSpan.Parse(value);
-            Console.WriteLine("'{0}' --> {1}", value, ts);
+            Console.WriteLine($"'{value}' --> {ts}");
          }
          catch (FormatException) {
-            Console.WriteLine("Unable to parse '{0}'", value);
+            Console.WriteLine($"Unable to parse '{value}'");
          }
          catch (OverflowException) {
-            Console.WriteLine("'{0}' is outside the range of a TimeSpan.", value);
+            Console.WriteLine($"'{value}' is outside the range of a TimeSpan.");
          }   
       }
       

@@ -17,7 +17,7 @@ Even when using client-side validation, you should always validate your commands
 
 Therefore, in client-side code you typically validate the ViewModels. You could also validate the client output DTOs or commands before you send them to the services.
 
-The implementation of client-side validation depends on what kind of client application you are building. It will be different if you are validating data in a web MVC web application with most of the code in .NET, a SPA web application with that validation being coded in JavaScript or TypeScript, or a mobile app coded with Xamarin and C#.
+The implementation of client-side validation depends on what kind of client application you are building. It will be different if you're validating data in an MVC web application with most of the code in .NET versus a SPA web application with the validation code in JavaScript or TypeScript.
 
 ## Additional resources
 

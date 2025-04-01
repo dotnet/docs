@@ -26,7 +26,7 @@ jobs:
     # Checkout the repo into the workspace within the VM
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@0080882f6c36860b6ba35c610c98ce87d4e2f26f # v2.10.2
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
           egress-policy: audit
 
@@ -52,7 +52,7 @@ jobs:
           dependabot-yml-path: ".github/dependabot.yml"
       - name: Create pull request
         if: github.event_name == 'workflow_dispatch' || github.repository_owner == 'dotnet'
-        uses: peter-evans/create-pull-request@5e914681df9dc83aa4e4905692ca88beb2f9e91f
+        uses: dotnet/actions-create-pull-request@v4
         with:
           branch: create-dependabotconfig-pull-request/patch
           title: "Update dependabot.yml - automatically."

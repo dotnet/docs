@@ -149,6 +149,14 @@ You can specify [null](../../language-reference/keywords/null.md) as an element 
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializerWithNull":::
 
+You can use a spread element to create one list that copies other list or lists.
+
+:::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializerWithSpreadOperator":::
+
+And include additonal elements along with using a spread element.
+
+:::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="ListInitializerWithSpreadOperatorAndAdditionalElement":::
+
 You can specify indexed elements if the collection supports read / write indexing.
 
 :::code language="csharp" source="./snippets/object-collection-initializers/BasicObjectInitializers.cs" id="DictionaryIndexerInitializer":::

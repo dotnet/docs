@@ -65,20 +65,20 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 
 > Source Link automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package. Source Link also adds information about the exact source code the package was built from. For example, a package created from a Git repository will have the commit hash added as metadata.
 
-## Pre-release packages
+## Prerelease packages
 
-NuGet packages with a version suffix are considered [pre-release](/nuget/create-packages/prerelease-packages). By default, the NuGet Package Manager UI shows stable releases unless a user opts-in to pre-release packages, making pre-release packages ideal for limited user testing.
+NuGet packages with a version suffix are considered [prerelease](/nuget/create-packages/prerelease-packages). By default, the NuGet Package Manager UI shows stable releases unless a user opts-in to prerelease packages, making prerelease packages ideal for limited user testing.
 
 ```xml
 <PackageVersion>1.0.1-beta1</PackageVersion>
 ```
 
 > [!NOTE]
-> A stable package cannot depend on a pre-release package. You must either make your own package pre-release or depend on an older stable version.
+> A stable package cannot depend on a prerelease package. You must either make your own package prerelease or depend on an older stable version.
 
-![NuGet pre-release package dependency](./media/nuget/nuget-prerelease-package.png "NuGet pre-release package dependency")
+![NuGet prerelease package dependency](./media/nuget/nuget-prerelease-package.png "NuGet prerelease package dependency")
 
-✔️ DO publish a pre-release package when testing, previewing, or experimenting.
+✔️ DO publish a prerelease package when testing, previewing, or experimenting.
 
 ✔️ DO publish a stable package when it's ready so other stable packages can reference it.
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.IO;
 using System.Xml;
@@ -79,7 +79,7 @@ class XmlReaderSettings_Examples
     // Display any validation errors.
     private static void ValidationCallBack(object sender, ValidationEventArgs e)
     {
-        Console.WriteLine("Validation Error: {0}", e.Message);
+        Console.WriteLine($"Validation Error: {e.Message}");
     }
     //</snippet4>
 

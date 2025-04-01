@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Text.RegularExpressions;
 
@@ -14,7 +14,7 @@ public class Example
       {
          Match match1 = Regex.Match(input, back);
          Match match2 = Regex.Match(input, noback);
-         Console.WriteLine("{0}: ", input);
+         Console.WriteLine($"{input}: ");
 
          Console.Write("   Backtracking : ");
          if (match1.Success)

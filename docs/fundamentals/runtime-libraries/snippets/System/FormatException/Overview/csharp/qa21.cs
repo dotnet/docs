@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 public class Example6
@@ -18,7 +18,7 @@ public class Example6
         numbers[3] = total;
         object[] values = new object[numbers.Length];
         numbers.CopyTo(values, 0);
-        Console.WriteLine("{0} + {1} + {2} = {3}", values);
+        Console.WriteLine($"{values} + {1} + {2} = {3}");
         // </Snippet22>
     }
 }

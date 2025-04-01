@@ -1,4 +1,4 @@
-﻿// <Snippet21>
+// <Snippet21>
 using System;
 using System.Text.RegularExpressions;
 
@@ -22,17 +22,16 @@ public class EcmaScript2Example
     {
         if (m.Success)
         {
-            Console.WriteLine("'{0}' matches {1} at position {2}.",
-                              pattern, m.Value, m.Index);
+            Console.WriteLine($"'{pattern}' matches {m.Value} at position {m.Index}.");
             int grpCtr = 0;
             foreach (Group grp in m.Groups)
             {
-                Console.WriteLine("   {0}: '{1}'", grpCtr, grp.Value);
+                Console.WriteLine($"   {grpCtr}: '{grp.Value}'");
                 grpCtr++;
                 int capCtr = 0;
                 foreach (Capture cap in grp.Captures)
                 {
-                    Console.WriteLine("      {0}: '{1}'", capCtr, cap.Value);
+                    Console.WriteLine($"      {capCtr}: '{cap.Value}'");
                     capCtr++;
                 }
             }

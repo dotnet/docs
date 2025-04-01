@@ -93,7 +93,7 @@ Finally, notice that the last warning doesn't invoke the interpolated string han
 
 > [!IMPORTANT]
 >
-> The version of the `Logger` for this section is a `ref struct`. A `ref struct` minimizes allocations because it must be stored on the stack. However, `ref struct` types, in general, can't implement interfaces. This can cause compatibility issues for unit test frameworks and mocking types that use `ref struct` types for implementation.
+> Use `ref struct` for interpolated string handlers only if absolutely necessary. Using `ref struct` will have limitations as they must be stored on the stack. For example, they will not work if an interpolated string hole contains an `await` expression because the compiler will need to store the handler in the compiler-generated `IAsyncStateMachine` implementation.
 
 ## Add more capabilities to the handler
 

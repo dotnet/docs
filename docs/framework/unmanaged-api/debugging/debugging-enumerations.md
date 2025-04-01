@@ -17,7 +17,7 @@ This section describes the unmanaged enumerations that the debugging API uses.
  Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) method.
 
  [CLRDataAddressType Enumeration](clrdataaddresstype-enumeration.md)\
- Indicates the type of data contained at a given address by the [IXCLRDataProcess::GetAddressType](ixclrdataprocess-getaddresstype-method.md)
+ Indicates the type of data contained at a given address by the [IXCLRDataProcess::GetAddressType](ixclrdataprocess-getaddresstype-method.md).
 
  [CLRDataByNameFlag Enumeration](clrdatabynameflag-enumeration.md)\
  Indicates how names should match in a search.

@@ -5,102 +5,102 @@ summary: Welcome to what's new in .NET and .NET docs. Use this page to navigate 
 metadata:
   title: .NET what's new?
   description: Learn about new .NET features and new and updated content in .NET docs.
-  ms.date: 11/11/2024
+  ms.date: 03/01/2025
   ms.topic: landing-page
 landingContent:
-  - title: .NET 9 release updates
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: .NET 9
-            url: ../core/whats-new/dotnet-9/overview.md
-          - text: ASP.NET Core 9.0
-            url: /aspnet/core/release-notes/aspnetcore-9.0
-          - text: .NET MAUI 9
-            url: /dotnet/maui/whats-new/dotnet-9
-          - text: EF Core 9
-            url: /ef/core/what-is-new/ef-core-9.0/whatsnew
-  - title: .NET 8 release updates
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: .NET 8
-            url: ../core/whats-new/dotnet-8/overview.md
-          - text: ASP.NET Core 8.0
-            url: /aspnet/core/release-notes/aspnetcore-8.0
-          - text: .NET MAUI 8
-            url: /dotnet/maui/whats-new/dotnet-8
-          - text: EF Core 8
-            url: /ef/core/what-is-new/ef-core-8.0/whatsnew
-          - text: Windows Forms (.NET 8)
-            url: /dotnet/desktop/winforms/whats-new/net80
-          - text: WPF (.NET 8)
-            url: /dotnet/desktop/wpf/whats-new/net80
-  - title: Latest documentation updates
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: October 2024
-            url: dotnet-docs-mod1.md
-          - text: September 2024
-            url: dotnet-docs-mod0.md
-          - text: August 2024
-            url: dotnet-docs-mod2.md
-  - title: Language updates
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: What's new in C# 12
-            url: ../csharp/whats-new/csharp-12.md
-          - text: What's new in F# 9
-            url: ../fsharp/whats-new/fsharp-9.md
-          - text: What's new for Visual Basic
-            url: ../visual-basic/whats-new/index.md
-  - title: Contribute to docs
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: .NET docs repository
-            url: https://github.com/dotnet/docs/blob/main/README.md
-          - text: Project structure and labels for issues and pull requests
-            url: /contribute/dotnet/labels-projects
-          - text: .NET Foundation
-            url: https://dotnetfoundation.org/
-      - linkListType: concept
-        links:
-          - text: Microsoft docs contributor guide
-            url: /contribute
-          - text: .NET docs contributor guide
-            url: /contribute/dotnet/dotnet-contribute
-  - title: .NET developers
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Download the .NET SDK
-            url: https://dotnet.microsoft.com/download
-      - linkListType: sample
-        links:
-          - text: .NET samples browser
-            url: /samples/browse/?products=dotnet
-      - linkListType: get-started
-        links:
-          - text: .NET on Q&A
-            url: /answers/products/dotnet
-          - text: .NET tech community forums
-            url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
-      - linkListType: whats-new
-        links:
-          - text: Community
-            url: https://dotnet.microsoft.com/platform/community
-  - title: Release notes
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: .NET
-            url: https://github.com/dotnet/core/blob/main/release-notes/README.md
-          - text: ASP.NET Core 9.0
-            url: /aspnet/core/release-notes/aspnetcore-9.0
-          - text: Visual Studio 2022
-            url: /visualstudio/releases/2022/release-notes
-          - text: Visual Studio Code
-            url: https://code.visualstudio.com/updates
+- title: .NET 10 release updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: .NET 10
+      url: ../core/whats-new/dotnet-10/overview.md
+    - text: ASP.NET Core 10.0
+      url: /aspnet/core/release-notes/aspnetcore-10.0
+    - text: .NET MAUI 10
+      url: /dotnet/maui/whats-new/dotnet-10
+    - text: EF Core 10
+      url: /ef/core/what-is-new/ef-core-10.0/whatsnew
+    - text: Windows Forms 10
+      url: /dotnet/desktop/winforms/whats-new/net100
+- title: .NET 9 release updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: .NET 9
+      url: ../core/whats-new/dotnet-9/overview.md
+    - text: ASP.NET Core 9.0
+      url: /aspnet/core/release-notes/aspnetcore-9.0
+    - text: .NET MAUI 9
+      url: /dotnet/maui/whats-new/dotnet-9
+    - text: EF Core 9
+      url: /ef/core/what-is-new/ef-core-9.0/whatsnew
+    - text: Documentation updates
+      url: dotnet-9-release.md
+- title: Latest documentation updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: February 2025
+      url: dotnet-docs-mod2.md
+    - text: January 2025
+      url: dotnet-docs-mod1.md
+    - text: December 2024
+      url: dotnet-docs-mod0.md
+- title: Language updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: What's new in C# 13
+      url: ../csharp/whats-new/csharp-13.md
+    - text: What's new in F# 9
+      url: ../fsharp/whats-new/fsharp-9.md
+    - text: What's new for Visual Basic
+      url: ../visual-basic/whats-new/index.md
+- title: Contribute to docs
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: .NET docs repository
+      url: https://github.com/dotnet/docs/blob/main/README.md
+    - text: Project structure and labels for issues and pull requests
+      url: /contribute/dotnet/labels-projects
+    - text: .NET Foundation
+      url: https://dotnetfoundation.org/
+  - linkListType: concept
+    links:
+    - text: Microsoft docs contributor guide
+      url: /contribute
+    - text: .NET docs contributor guide
+      url: /contribute/dotnet/dotnet-contribute
+- title: .NET developers
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Download the .NET SDK
+      url: https://dotnet.microsoft.com/download
+  - linkListType: sample
+    links:
+    - text: .NET samples browser
+      url: /samples/browse/?products=dotnet
+  - linkListType: get-started
+    links:
+    - text: .NET on Q&A
+      url: /answers/products/dotnet
+    - text: .NET tech community forums
+      url: https://techcommunity.microsoft.com/t5/net/ct-p/dotnet
+  - linkListType: whats-new
+    links:
+    - text: Community
+      url: https://dotnet.microsoft.com/platform/community
+- title: Release notes
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: .NET
+      url: https://github.com/dotnet/core/blob/main/release-notes/README.md
+    - text: ASP.NET Core 9.0
+      url: /aspnet/core/release-notes/aspnetcore-9.0
+    - text: Visual Studio 2022
+      url: /visualstudio/releases/2022/release-notes
+    - text: Visual Studio Code
+      url: https://code.visualstudio.com/updates

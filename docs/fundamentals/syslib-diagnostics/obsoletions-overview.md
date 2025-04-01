@@ -1,8 +1,8 @@
 ---
 title: Obsolete features in .NET 5+
-titleSuffix: ""
 description: Learn about APIs that are marked as obsolete in .NET 5 and later versions that produce SYSLIB compiler warnings.
-ms.date: 08/07/2024
+ms.date: 01/14/2025
+ai-usage: ai-assisted
 ---
 
 # Obsolete features in .NET 5+
@@ -20,7 +20,7 @@ If you encounter build warnings or errors due to usage of an obsolete API, follo
 The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+.
 
 | Diagnostic ID | Warning or error | Description |
-| - | - |
+|---------------|------------------|-------------|
 | [SYSLIB0001](syslib0001.md) | Warning | The UTF-7 encoding is insecure and should not be used. Consider using UTF-8 instead. |
 | [SYSLIB0002](syslib0002.md) | Error | <xref:System.Security.Permissions.PrincipalPermissionAttribute> is not honored by the runtime and must not be used. |
 | [SYSLIB0003](syslib0003.md) | Warning | Code access security (CAS) is not supported or honored by the runtime. |
@@ -78,6 +78,10 @@ The following table provides an index to the `SYSLIB0XXX` obsoletions in .NET 5+
 | [SYSLIB0055](syslib0055.md) | Warning | `AdvSimd.ShiftRightLogicalRoundedNarrowingSaturate*` methods with signed parameters are obsolete. Use the unsigned overloads instead. |
 | [SYSLIB0056](syslib0056.md) | Warning | `Assembly.LoadFrom` with a custom `AssemblyHashAlgorithm` is obsolete. Use overloads without an `AssemblyHashAlgorithm`. |
 | [SYSLIB0057](syslib0057.md) | Warning | `X509Certificate2` and `X509Certificate` constructors for binary and file content are obsolete. |
+| [SYSLIB0058](syslib0058.md) | Warning | The `KeyExchangeAlgorithm`, `KeyExchangeStrength`, `CipherAlgorithm`, `CipherAlgorithmStrength`, `HashAlgorithm`, and `HashStrength` properties of <xref:System.Net.Security.SslStream> are obsolete. Use <xref:System.Net.Security.SslStream.NegotiatedCipherSuite> instead. |
+| [SYSLIB0059](syslib0059.md) | Warning | <xref:Microsoft.Win32.SystemEvents.EventsThreadShutdown?displayProperty=nameWithType> callbacks aren't run before the process exits. Use <xref:System.AppDomain.ProcessExit?displayProperty=nameWithType> instead. |
+| [SYSLIB0060](syslib0060.md) | Warning | Constructors on <xref:System.Security.Cryptography.Rfc2898DeriveBytes?displayProperty=nameWithType> are obsolete. Use <xref:System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2%2A?displayProperty=nameWithType> instead. |
+| [SYSLIB0061](syslib0061.md) | Warning | The `Queryable` <xref:System.Linq.Queryable.MaxBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> and <xref:System.Linq.Queryable.MinBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},System.Collections.Generic.IComparer{``0})?displayProperty=nameWithType> taking an `IComparer<TSource>` are obsolete. Use the new ones that take an `IComparer<TKey>`. |
 
 ## Suppress warnings
 

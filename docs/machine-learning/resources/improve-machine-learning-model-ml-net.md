@@ -35,7 +35,7 @@ For more information about using PFI, see [Explain model predictions using Permu
 
 Cross-validation is a training and model evaluation technique that splits the data into several partitions and trains multiple algorithms on these partitions. This technique improves the robustness of the model by holding out data from the training process. In addition to improving performance on unseen observations, in data-constrained environments it can be an effective tool for training models with a smaller dataset.
 
-Visit the following link to learn [how to use cross validation in ML.NET](../how-to-guides/train-machine-learning-model-cross-validation-ml-net.md)
+For more information, see [How to use cross validation in ML.NET](../how-to-guides/train-machine-learning-model-cross-validation-ml-net.md).
 
 ## Hyperparameter tuning
 
@@ -43,6 +43,6 @@ Training machine learning models is an iterative and exploratory process. For ex
 
 ## Choose a different algorithm
 
-Machine learning tasks like regression and classification contain various algorithm implementations. It may be the case that the problem you are trying to solve and the way your data is structured does not fit well into the current algorithm. In such case, consider using a different algorithm for your task to see if it learns better from your data.
+Machine learning tasks like regression and classification contain various algorithm implementations. It might be the case that the problem you're trying to solve and the way your data is structured does not fit well into the current algorithm. In such case, consider using a different algorithm for your task to see if it learns better from your data.
 
 The following link provides more [guidance on which algorithm to choose](../how-to-choose-an-ml-net-algorithm.md).

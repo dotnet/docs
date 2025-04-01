@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 
 // <Snippet5>
@@ -76,14 +76,10 @@ public class Class1
       // </Snippet6>
 
       // <Snippet7>
-      Console.WriteLine("The value of myColor is {0}.",
-                        myColor.ToString("G"));
-      Console.WriteLine("The value of myColor is {0}.",
-                        myColor.ToString("F"));
-      Console.WriteLine("The value of myColor is {0}.",
-                        myColor.ToString("D"));
-      Console.WriteLine("The value of myColor is 0x{0}.",
-                        myColor.ToString("X"));
+      Console.WriteLine($"The value of myColor is {myColor.ToString("G")}.");
+      Console.WriteLine($"The value of myColor is {myColor.ToString("F")}.");
+      Console.WriteLine($"The value of myColor is {myColor.ToString("D")}.");
+      Console.WriteLine($"The value of myColor is 0x{myColor.ToString("X")}.");
       // The example displays the following output to the console:
       //       The value of myColor is Green.
       //       The value of myColor is Green.

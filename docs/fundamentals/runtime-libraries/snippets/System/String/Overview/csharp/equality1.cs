@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -13,15 +13,15 @@ public class Example4
       
       Console.WriteLine("Culture-sensitive test for equality:");
       if (! TestForEquality(filePath, StringComparison.CurrentCultureIgnoreCase))
-         Console.WriteLine("Access to {0} is allowed.", filePath);
+         Console.WriteLine($"Access to {filePath} is allowed.");
       else
-         Console.WriteLine("Access to {0} is not allowed.", filePath);
+         Console.WriteLine($"Access to {filePath} is not allowed.");
       
       Console.WriteLine("\nOrdinal test for equality:");
       if (! TestForEquality(filePath, StringComparison.OrdinalIgnoreCase))
-         Console.WriteLine("Access to {0} is allowed.", filePath);
+         Console.WriteLine($"Access to {filePath} is allowed.");
       else
-         Console.WriteLine("Access to {0} is not allowed.", filePath);
+         Console.WriteLine($"Access to {filePath} is not allowed.");
    }
 
    private static bool TestForEquality(string str, StringComparison cmp)

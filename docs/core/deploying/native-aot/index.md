@@ -2,7 +2,6 @@
 title: Native AOT deployment overview
 description: Learn what Native AOT deployments are and why you should consider using it as part of the publishing your app with .NET 7 and later.
 author: lakshanf
-ms.author: lakshanf
 ms.date: 06/12/2023
 ---
 
@@ -44,7 +43,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 - RHEL (8+)
 
   ```sh
-  sudo dnf install clang zlib-devel
+  sudo dnf install clang zlib-devel zlib-ng-devel zlib-ng-compat-devel
   ```
 
 # [Ubuntu](#tab/linux-ubuntu)

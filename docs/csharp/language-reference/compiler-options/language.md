@@ -149,7 +149,7 @@ The **Nullable** option lets you specify the nullable context. It can be set in 
 <Nullable>enable</Nullable>
 ```
 
-The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When you specify the `warnings` argument, the nullable warning context is enabled. When you specify the `annotations` argument, the nullable annotation context is enabled. The values are described and explained in the article on [Nullable contexts](../../nullable-references.md#nullable-contexts). You can learn more about the tasks involved in enabling nullable reference types in an existing codebase in our article on [nullable migration strategies](../../nullable-migration-strategies.md).
+The argument must be one of `enable`, `disable`, `warnings`, or `annotations`. The `enable` argument enables the nullable context. Specifying `disable` will disable the nullable context. When you specify the `warnings` argument, the nullable warning context is enabled. When you specify the `annotations` argument, the nullable annotation context is enabled. The values are described and explained in the article on [Nullable contexts](../../nullable-references.md#nullable-context). You can learn more about the tasks involved in enabling nullable reference types in an existing codebase in our article on [nullable migration strategies](../../nullable-migration-strategies.md).
 
 > [!NOTE]
 > When there's no value set, the default value `disable` is applied, however the .NET 6 templates are by default provided with the **Nullable** value set to `enable`.

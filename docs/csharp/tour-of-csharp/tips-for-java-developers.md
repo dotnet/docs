@@ -1,7 +1,7 @@
 ---
 title: Tips for Java Developers
 description: Are you new to C#, but experienced in Java? Here's a roadmap of what's familiar, and new features to learn in C#, and features in Java that aren't in C#.
-ms.date: 04/03/2024
+ms.date: 03/17/2025
 ---
 # Roadmap for Java developers learning C\#
 
@@ -15,7 +15,7 @@ C# and Java have many similarities. As you learn C#, you can apply much of the k
 1. ***Standard libraries***: The .NET runtime and the Java Standard Library (JSL) have support for common tasks. Both have extensive ecosystems for other open source packages. In C#, the package manager is [NuGet](https://www.nuget.org). It's analogous to Maven.
 1. ***Garbage Collection***: Both languages employ automatic memory management through garbage collection. The runtime reclaims the memory from objects that aren't referenced. One difference is that C# enables you to create value types, as `struct` types.
 
-You'll be productive in C# almost immediately because of the similarities. As you progress, you should learn features and idioms in C# that aren't available in Java:
+You can work productively in C# almost immediately because of the similarities. As you progress, you should learn features and idioms in C# that aren't available in Java:
 
 1. [***Pattern matching***](../fundamentals/functional/pattern-matching.md): Pattern matching enables concise conditional statements and expressions based on the shape of complex data structures. The [`is` statement](../language-reference/operators/is.md) checks if a variable "is" some pattern. The pattern-based [`switch` expression](../language-reference/operators/switch-expression.md) provides a rich syntax to inspect a variable and make decisions based on its characteristics.
 1. [***String interpolation***](../language-reference/tokens/interpolated.md) and [***raw string literals***](../language-reference/builtin-types/reference-types.md#string-literals): String interpolation enables you to insert evaluated expressions in a string, rather than using positional identifiers. Raw string literals provide a way to minimize escape sequences in text.
@@ -24,7 +24,7 @@ You'll be productive in C# almost immediately because of the similarities. As yo
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
 1. [***Local functions***](../programming-guide/classes-and-structs/local-functions.md): In C#, you can nest functions inside methods, or other local functions. Local functions provide yet another layer of encapsulation.
 
-There are other features in C# that aren't in Java. You'll see features like [`async` and `await`](../asynchronous-programming/index.md), and [`using`](../language-reference/statements/using.md) statements to automatically free nonmemory resources.
+There are other features in C# that aren't in Java. Features like [`async` and `await`](../asynchronous-programming/index.md) model asynchronous operations in sequential syntax. The [`using`](../language-reference/statements/using.md) statement automatically free nonmemory resources.
 
 There are also some similar features between C# and Java that have subtle but important differences:
 
@@ -38,4 +38,4 @@ Finally, there are Java language features that aren't available in C#:
 1. ***Checked exceptions***: In C#, any method could theoretically throw any exception.
 1. ***Checked array covariance***: In C#, arrays aren't safely covariant. You should use the generic collection classes and interfaces if you need covariant structures.
 
-Overall, learning C# for a developer experienced in Java should be smooth. You'll find enough familiar idioms to quickly be productive, and you'll learn the new idioms quickly.
+Overall, learning C# for a developer experienced in Java should be smooth. C# has enough familiar idioms for you to be productive as you learn the new idioms.

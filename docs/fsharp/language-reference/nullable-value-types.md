@@ -108,10 +108,10 @@ You can also use an appropriate non-nullable operator to convert to a primitive 
 open System
 open FSharp.Linq
 
-let nullableInt = Nullable 10
-let nullableFloat = Nullable.float nullableInt
+let nullableFloat = Nullable 10.0
+let standardFloat = float nullableFloat
 
-printfn $"value is %f{float nullableFloat}"
+printfn $"value is %f{float standardFloat}"
 ```
 
 You can also use nullable operators as a short-hand for checking `HasValue` and `Value`:

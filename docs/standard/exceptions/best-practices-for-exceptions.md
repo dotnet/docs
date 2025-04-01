@@ -60,7 +60,7 @@ If the performance cost of exceptions is prohibitive, some .NET library methods 
 
 It's better to catch <xref:System.OperationCanceledException> instead of <xref:System.Threading.Tasks.TaskCanceledException>, which derives from `OperationCanceledException`, when you call an asynchronous method. Many asynchronous methods throw an <xref:System.OperationCanceledException> exception if cancellation is requested. These exceptions enable execution to be efficiently halted and the callstack to be unwound once a cancellation request is observed.
 
-Asynchronous methods store exceptions that are thrown during execution in the task they return. If an exception is stored into the returned task, that exception will be thrown when the task is awaited. Usage exceptions, such as <xref:System.ArgumentException>, are still thrown synchronously. For more information, see [Asynchronous exceptions](../../csharp/asynchronous-programming/index.md#asynchronous-exceptions).
+Asynchronous methods store exceptions that are thrown during execution in the task they return. If an exception is stored into the returned task, that exception will be thrown when the task is awaited. Usage exceptions, such as <xref:System.ArgumentException>, are still thrown synchronously. For more information, see [Asynchronous exceptions](../../csharp/asynchronous-programming/index.md#handle-asynchronous-exceptions).
 
 ### Design classes so that exceptions can be avoided
 

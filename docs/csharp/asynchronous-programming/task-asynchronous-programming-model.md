@@ -208,7 +208,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 | Title | Description |
 |--|--|
-| [How to make multiple web requests in parallel by using async and await (C#)](./index.md) | Demonstrates how to start several tasks at the same time. |
+| [How to make multiple web requests in parallel by using async and await (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) | Demonstrates how to start several tasks at the same time. |
 | [Async return types (C#)](async-return-types.md) | Illustrates the types that async methods can return, and explains when each type is appropriate. |
 | Cancel tasks with a cancellation token as a signaling mechanism. | Shows how to add the following functionality to your async solution:<br><br> - [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancel tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Process asynchronous task as they complete (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |
 | [Using async for file access (C#)](using-async-for-file-access.md) | Lists and demonstrates the benefits of using async and await to access files. |

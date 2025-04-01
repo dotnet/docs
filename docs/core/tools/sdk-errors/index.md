@@ -29,7 +29,6 @@ f1_keywords:
 - NETSDK1029
 - NETSDK1030
 - NETSDK1031
-- NETSDK1032
 - NETSDK1042
 - NETSDK1043
 - NETSDK1044
@@ -110,7 +109,6 @@ f1_keywords:
 - NETSDK1140
 - NETSDK1142
 - NETSDK1143
-- NETSDK1144
 - NETSDK1146
 - NETSDK1148
 - NETSDK1150
@@ -208,7 +206,7 @@ This list is a complete list of the errors that you might get from the .NET SDK 
 |NETSDK1029|Unable to use '{0}' as application host executable as it does not contain the expected placeholder byte sequence '{1}' that would mark where the application name would be written.|
 |NETSDK1030|Given file name '{0}' is longer than 1024 bytes.|
 |NETSDK1031|It is not supported to build or publish a self-contained application without specifying a RuntimeIdentifier. You must either specify a RuntimeIdentifier or set SelfContained to false.|
-|NETSDK1032|The RuntimeIdentifier platform '{0}' and the PlatformTarget '{1}' must be compatible.|
+|[NETSDK1032](netsdk1032.md)|The RuntimeIdentifier platform '{0}' and the PlatformTarget '{1}' must be compatible.|
 |NETSDK1042|Could not load PlatformManifest from '{0}' because it did not exist.|
 |NETSDK1043|Error parsing PlatformManifest from '{0}' line {1}.  Lines must have the format {2}.|
 |NETSDK1044|Error parsing PlatformManifest from '{0}' line {1}.  {2} '{3}' was invalid.|
@@ -307,7 +305,7 @@ This list is a complete list of the errors that you might get from the .NET SDK 
 |[NETSDK1141](netsdk1141.md)|Unable to resolve the .NET SDK version as specified in the global.json located at {0}.|
 |NETSDK1142|Including symbols in a single file bundle is not supported when publishing for .NET5 or higher.|
 |NETSDK1143|Including all content in a single file bundle also includes native libraries. If IncludeAllContentForSelfExtract is true, IncludeNativeLibrariesForSelfExtract must not be false.|
-|NETSDK1144|Optimizing assemblies for size failed. Optimization can be disabled by setting the PublishTrimmed property to false.|
+|[NETSDK1144](netsdk1144.md)|Optimizing assemblies for size failed. Optimization can be disabled by setting the PublishTrimmed property to false.|
 |[NETSDK1145](netsdk1145.md)|The {0} pack is not installed and NuGet package restore is not supported. Upgrade Visual Studio, remove global.json if it specifies a certain SDK version, and uninstall the newer SDK. For more options visit <https://aka.ms/targeting-apphost-pack-missing>. Pack Type:{0}, Pack directory: {1}, targetframework: {2}, Pack PackageId: {3}, Pack Package Version: {4}.|
 |NETSDK1146|PackAsTool does not support TargetPlatformIdentifier being set. For example, TargetFramework cannot be net5.0-windows, only net5.0. PackAsTool also does not support UseWPF or UseWindowsForms when targeting .NET 5 and higher.|
 |[NETSDK1147](netsdk1147.md)|To build this project, the following workloads must be installed: {0}.|

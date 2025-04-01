@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Cryptography.X509Certificates;
 using System.IdentityModel.Claims;
 using System.IdentityModel.Policy;
@@ -96,19 +96,19 @@ namespace Microsoft.ServiceModel.Samples
                 // setting should be carefully considered before using PeerOrChainTrust in production code.
                 client.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.PeerOrChainTrust;
 
-                Console.WriteLine("Calling Endpoint: {0}", endpointName);
+                Console.WriteLine($"Calling Endpoint: {endpointName}");
                 // Call the Add service operation.
                 double value1 = 100.00D;
                 double value2 = 15.99D;
                 double result = client.Add(value1, value2);
-                Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
+                Console.WriteLine($"Add({value1},{value2}) = {result}");
                 Console.WriteLine();
 
                 // Call the Subtract service operation.
                 value1 = 145.00D;
                 value2 = 76.54D;
                 result = client.Subtract(value1, value2);
-                Console.WriteLine("Subtract({0},{1}) = {2}", value1, value2, result);
+                Console.WriteLine($"Subtract({value1},{value2}) = {result}");
             }
         }
 
@@ -172,9 +172,9 @@ namespace Microsoft.ServiceModel.Samples
                         X500DistinguishedName name = (X500DistinguishedName)claim.Resource;
                         if (name.Name.Contains(((OrgEndpointIdentity)identity).OrganizationClaim))
                         {
-                            Console.WriteLine("Claim Type: {0}", claim.ClaimType);
-                            Console.WriteLine("Right: {0}", claim.Right);
-                            Console.WriteLine("Resource: {0}", claim.Resource);
+                            Console.WriteLine($"Claim Type: {claim.ClaimType}");
+                            Console.WriteLine($"Right: {claim.Right}");
+                            Console.WriteLine($"Resource: {claim.Resource}");
                             Console.WriteLine();
                             returnvalue = true;
                         }
@@ -215,32 +215,32 @@ namespace Microsoft.ServiceModel.Samples
         public double Add(double n1, double n2)
         {
             double result = n1 + n2;
-            Console.WriteLine("Received Add({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Add({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
         public double Subtract(double n1, double n2)
         {
             double result = n1 - n2;
-            Console.WriteLine("Received Subtract({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Subtract({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
         public double Multiply(double n1, double n2)
         {
             double result = n1 * n2;
-            Console.WriteLine("Received Multiply({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Multiply({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
         public double Divide(double n1, double n2)
         {
             double result = n1 / n2;
-            Console.WriteLine("Received Divide({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Divide({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
     }

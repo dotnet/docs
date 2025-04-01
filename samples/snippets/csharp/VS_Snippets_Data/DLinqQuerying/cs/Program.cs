@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,13 +58,13 @@ namespace cs_querying
 
             foreach (Customer custObj in custQuery)
             {
-                Console.WriteLine("Customer ID: {0}", custObj.CustomerID);
+                Console.WriteLine($"Customer ID: {custObj.CustomerID}");
                 foreach (Order ord in custObj.Orders)
                 {
-                    Console.WriteLine("\tOrder ID: {0}", ord.OrderID);
+                    Console.WriteLine($"\tOrder ID: {ord.OrderID}");
                     foreach (OrderDetail detail in ord.OrderDetails)
                     {
-                        Console.WriteLine("\t\tProduct ID: {0}", detail.ProductID);
+                        Console.WriteLine($"\t\tProduct ID: {detail.ProductID}");
                     }
                 }
             }

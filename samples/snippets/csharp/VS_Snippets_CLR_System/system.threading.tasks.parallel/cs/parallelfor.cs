@@ -1,4 +1,4 @@
-﻿//<snippet03>
+//<snippet03>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +38,7 @@ class ParallelOptionsDemo
         // it will be wrapped in AggregateException and propagated to the main thread.
         catch (AggregateException e)
         {
-            Console.WriteLine("Parallel.For has thrown the following (unexpected) exception:\n{0}", e);
+            Console.WriteLine($"Parallel.For has thrown the following (unexpected) exception:\n{e}");
         }
     }
 }

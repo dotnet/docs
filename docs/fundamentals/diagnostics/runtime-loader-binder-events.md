@@ -10,7 +10,7 @@ helpviewer_keywords:
 
 # .NET runtime loader and binder events
 
-The events described in this article collect information relating to loading and unloading assemblies and modules. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md)
+The events described in this article collect information relating to loading and unloading assemblies and modules. For more information about how to use these events for diagnostic purposes, see [logging and tracing .NET applications](../../core/diagnostics/logging-tracing.md).
 
 |Keyword for raising the event|Event|Level|
 |-----------------------------------|-----------|-----------|

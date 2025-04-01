@@ -1,4 +1,4 @@
-﻿
+
 
 //<snippet03>
 
@@ -75,7 +75,7 @@ namespace CancellationWithOCE
 
                 // Prove that the tasks are now all in a canceled state.
                 for (int i = 0; i < tasks.Length; i++)
-                    Console.WriteLine("task[{0}] status is now {1}", i, tasks[i].Status);
+                    Console.WriteLine($"task[{i}] status is now {tasks[i].Status}");
                 #endregion
             }
 
@@ -105,10 +105,10 @@ namespace CancellationWithOCE
                 // Do a bit of work. Not too much.
                 var sw = new SpinWait();
                 for (int j = 0; j < 3000; j++) sw.SpinOnce();
-                Console.WriteLine("...{0} ", taskNum);
+                Console.WriteLine($"...{taskNum} ");
                 if (ct.IsCancellationRequested)
                 {
-                    Console.WriteLine("bye from {0}.", taskNum);
+                    Console.WriteLine($"bye from {taskNum}.");
                     Console.WriteLine("\nPress Enter to quit.");
 
                     ct.ThrowIfCancellationRequested();

@@ -184,14 +184,13 @@ authoring errors.
 4. When debugging, that same error string will also be logged using Debug.WriteLine() and show up in the debug
 output window.
 5. EventSource internally throws and then catches exceptions when errors occur. To observe when these exceptions are occurring, enable first chance exceptions
-in a debugger, or use event tracing with the .NET runtime's [Exception events](../../fundamentals/diagnostics/runtime-exception-events.md)
-enabled.
+in a debugger, or use event tracing with the .NET runtime's [Exception events](../../fundamentals/diagnostics/runtime-exception-events.md) enabled.
 
 ## Advanced customizations
 
 ### Setting OpCodes and Tasks
 
-ETW has concepts of [Tasks and OpCodes](/windows/win32/wes/defining-tasks-and-opcodes)
+ETW has concepts of [Tasks and OpCodes](/windows/win32/wes/defining-tasks-and-opcodes),
 which are further mechanisms for tagging and filtering events. You can associate events with specific tasks and opcodes
 using the <xref:System.Diagnostics.Tracing.EventAttribute.Task%2A> and
 <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A> properties. Here's an example:

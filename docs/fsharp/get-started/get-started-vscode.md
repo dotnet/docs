@@ -7,7 +7,8 @@ ms.date: 10/29/2021
 
 You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) to get a great cross-platform, lightweight Integrated Development Environment (IDE) experience with IntelliSense and code refactorings. Visit [Ionide.io](https://ionide.io) to learn more about the plugin.
 
-To begin, ensure that you have [F# and the Ionide plugin correctly installed](install-fsharp.md#install-f-with-visual-studio-code).
+> [!NOTE]
+> Before beginning, ensure you've installed both [F# and the Ionide plugin](install-fsharp.md#install-f-with-visual-studio-code).
 
 ## Create your first project with Ionide
 

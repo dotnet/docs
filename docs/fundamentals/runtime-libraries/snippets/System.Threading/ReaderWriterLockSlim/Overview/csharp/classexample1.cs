@@ -1,4 +1,4 @@
-﻿//<Snippet11>
+//<Snippet11>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -155,8 +155,7 @@ public class Example
                                      sc.Add(ctr, vegetables[ctr - 1]);
 
                                   itemsWritten = vegetables.Length;
-                                  Console.WriteLine("Task {0} wrote {1} items\n",
-                                                    Task.CurrentId, itemsWritten);
+                                  Console.WriteLine($"Task {Task.CurrentId} wrote {itemsWritten} items\n");
                                 } ));
       // Execute two readers, one to read from first to last and the second from last to first.
       for (int ctr = 0; ctr <= 1; ctr++) {
@@ -180,8 +179,7 @@ public class Example
                                         for (int index = start; desc ? index >= last : index <= last; index += step)
                                            output += String.Format("[{0}] ", sc.Read(index));
 
-                                        Console.WriteLine("Task {0} read {1} items: {2}\n",
-                                                          Task.CurrentId, items, output);
+                                        Console.WriteLine($"Task {Task.CurrentId} read {items} items: {output}\n");
                                      } while (items < itemsWritten | itemsWritten == 0);
                              } ));
       }
@@ -202,7 +200,7 @@ public class Example
       Console.WriteLine();
       Console.WriteLine("Values in synchronized cache: ");
       for (int ctr = 1; ctr <= sc.Count; ctr++)
-         Console.WriteLine("   {0}: {1}", ctr, sc.Read(ctr));
+         Console.WriteLine($"   {ctr}: {sc.Read(ctr)}");
    }
 }
 // The example displays the following output:

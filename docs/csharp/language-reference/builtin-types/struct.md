@@ -27,7 +27,7 @@ Because structure types have value semantics, we recommend you define *immutable
 
 You use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
-- Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
+- Any field declaration must have the [`readonly` modifier](../keywords/readonly.md).
 - Any property, including automatically implemented ones, must be read-only or [`init` only](../keywords/init.md). Init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
 
 That guarantees that no member of a `readonly` struct modifies the state of the struct. That means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
@@ -110,7 +110,7 @@ But it can be any reference type, or any value type:
 
 You can use inline arrays with almost any C# data structure.
 
-Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md)
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
 
 ## Struct initialization and default values
 
@@ -132,7 +132,7 @@ All of a struct's member fields must be *definitely assigned* when created becau
 - You can add *field initializers* to any field or auto implemented property.
 - You can initialize any fields, or auto properties, in the body of the constructor.
 
-Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A string initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
+Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A struct initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 

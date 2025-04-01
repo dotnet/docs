@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Globalization;
 
@@ -7,7 +7,7 @@ public class ChangeUICultureEx
     public static void Main()
     {
         CultureInfo current = CultureInfo.CurrentUICulture;
-        Console.WriteLine("The current UI culture is {0}", current.Name);
+        Console.WriteLine($"The current UI culture is {current.Name}");
         CultureInfo newUICulture;
         if (current.Name.Equals("sl-SI"))
             newUICulture = new CultureInfo("hr-HR");
@@ -15,8 +15,7 @@ public class ChangeUICultureEx
             newUICulture = new CultureInfo("sl-SI");
 
         CultureInfo.CurrentUICulture = newUICulture;
-        Console.WriteLine("The current UI culture is now {0}",
-                          CultureInfo.CurrentUICulture.Name);
+        Console.WriteLine($"The current UI culture is now {CultureInfo.CurrentUICulture.Name}");
     }
 }
 // The example displays output like the following:

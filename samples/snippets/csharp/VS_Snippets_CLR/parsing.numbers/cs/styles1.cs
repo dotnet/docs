@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 
@@ -10,15 +10,15 @@ public class Example
       int number;
       IFormatProvider provider = CultureInfo.CreateSpecificCulture("en-US");
       if (Int32.TryParse(value, out number))
-         Console.WriteLine("{0} --> {1}", value, number);
+         Console.WriteLine($"{value} --> {number}");
       else
-         Console.WriteLine("Unable to convert '{0}'", value);
+         Console.WriteLine($"Unable to convert '{value}'");
 
       if (Int32.TryParse(value, NumberStyles.Integer | NumberStyles.AllowThousands,
                         provider, out number))
-         Console.WriteLine("{0} --> {1}", value, number);
+         Console.WriteLine($"{value} --> {number}");
       else
-         Console.WriteLine("Unable to convert '{0}'", value);
+         Console.WriteLine($"Unable to convert '{value}'");
    }
 }
 // The example displays the following output:

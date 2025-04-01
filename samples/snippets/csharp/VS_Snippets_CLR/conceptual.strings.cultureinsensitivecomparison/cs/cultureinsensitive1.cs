@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class CompareSample
@@ -11,15 +11,11 @@ public class CompareSample
 
         compareResult = String.Compare(string1, string2,
                                        StringComparison.Ordinal);
-        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}",
-                          StringComparison.Ordinal, string1, string2,
-                          compareResult);
+        Console.WriteLine($"{StringComparison.Ordinal} comparison of '{string1}' and '{string2}': {compareResult}");
 
         compareResult = String.Compare(string1, string2,
                                        StringComparison.OrdinalIgnoreCase);
-        Console.WriteLine("{0} comparison of '{1}' and '{2}': {3}",
-                          StringComparison.OrdinalIgnoreCase, string1, string2,
-                          compareResult);
+        Console.WriteLine($"{StringComparison.OrdinalIgnoreCase} comparison of '{string1}' and '{string2}': {compareResult}");
     }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.Collections.Generic;
 using System.ServiceModel;
@@ -60,7 +60,7 @@ namespace Unsecured
             sh.Open();
 
             string listenUri = sh.Description.Endpoints[0].ListenUri.AbsoluteUri;
-            Console.WriteLine("Listening on: {0}", listenUri);
+            Console.WriteLine($"Listening on: {listenUri}");
             Console.Write("Press Enter to end the service");
             Console.ReadLine();
             // Close the service when a key is pressed.

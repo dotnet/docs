@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Xml;
 using System.Xml.Schema;
@@ -30,11 +30,11 @@ class XmlDocumentValidationExample
 
             XmlNode priceNode = document.SelectSingleNode(@"/bk:bookstore/bk:book/bk:price", manager);
 
-            Console.WriteLine("SchemaInfo.IsDefault: {0}", priceNode.SchemaInfo.IsDefault);
-            Console.WriteLine("SchemaInfo.IsNil: {0}", priceNode.SchemaInfo.IsNil);
-            Console.WriteLine("SchemaInfo.SchemaElement: {0}", priceNode.SchemaInfo.SchemaElement);
-            Console.WriteLine("SchemaInfo.SchemaType: {0}", priceNode.SchemaInfo.SchemaType);
-            Console.WriteLine("SchemaInfo.Validity: {0}", priceNode.SchemaInfo.Validity);
+            Console.WriteLine($"SchemaInfo.IsDefault: {priceNode.SchemaInfo.IsDefault}");
+            Console.WriteLine($"SchemaInfo.IsNil: {priceNode.SchemaInfo.IsNil}");
+            Console.WriteLine($"SchemaInfo.SchemaElement: {priceNode.SchemaInfo.SchemaElement}");
+            Console.WriteLine($"SchemaInfo.SchemaType: {priceNode.SchemaInfo.SchemaType}");
+            Console.WriteLine($"SchemaInfo.Validity: {priceNode.SchemaInfo.Validity}");
 
             priceNode.InnerXml = "A";
 
@@ -57,15 +57,15 @@ class XmlDocumentValidationExample
         }
         catch (XmlException ex)
         {
-            Console.WriteLine("XmlDocumentValidationExample.XmlException: {0}", ex.Message);
+            Console.WriteLine($"XmlDocumentValidationExample.XmlException: {ex.Message}");
         }
         catch(XmlSchemaValidationException ex)
         {
-            Console.WriteLine("XmlDocumentValidationExample.XmlSchemaValidationException: {0}", ex.Message);
+            Console.WriteLine($"XmlDocumentValidationExample.XmlSchemaValidationException: {ex.Message}");
         }
         catch (Exception ex)
         {
-            Console.WriteLine("XmlDocumentValidationExample.Exception: {0}", ex.Message);
+            Console.WriteLine($"XmlDocumentValidationExample.Exception: {ex.Message}");
         }
     }
 

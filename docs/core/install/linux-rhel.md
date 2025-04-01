@@ -3,13 +3,11 @@ title: Install .NET on RHEL and CentOS Stream
 description: Learn about which versions of .NET are supported, and how to install .NET on Red Hat Enterprise Linux and CentOS Stream.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/11/2024
+ms.date: 12/13/2024
 ms.custom: linux-related-content
 ---
 
 # Install the .NET SDK or the .NET Runtime on RHEL and CentOS Stream
-
-[!INCLUDE [linux-release-wait](includes/linux-release-wait.md)]
 
 .NET is supported on Red Hat Enterprise Linux (RHEL). This article describes how to install .NET on RHEL and CentOS Stream.
 

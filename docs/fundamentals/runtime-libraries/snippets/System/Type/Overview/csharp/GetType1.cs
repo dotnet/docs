@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example1
 {
@@ -7,8 +7,7 @@ public class Example1
         // <Snippet2>
         object[] values = { "word", true, 120, 136.34, 'a' };
         foreach (var value in values)
-            Console.WriteLine("{0} - type {1}", value,
-                              value.GetType().Name);
+            Console.WriteLine($"{value} - type {value.GetType().Name}");
 
         // The example displays the following output:
         //       word - type String

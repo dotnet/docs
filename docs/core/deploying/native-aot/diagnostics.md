@@ -2,7 +2,6 @@
 title: Diagnostics and instrumentation
 description: Learn about diagnostics in Native AOT applications
 author: lakshanf
-ms.author: lakshanf
 ms.date: 08/07/2023
 ---
 

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example7
@@ -13,13 +13,13 @@ public class Example7
       foreach (var value in values) {
          try {
             bool flag = Boolean.Parse(value);
-            Console.WriteLine("'{0}' --> {1}", value, flag);
+            Console.WriteLine($"'{value}' --> {flag}");
          }
          catch (ArgumentException) {
             Console.WriteLine("Cannot parse a null string.");
          }
          catch (FormatException) {
-            Console.WriteLine("Cannot parse '{0}'.", value);
+            Console.WriteLine($"Cannot parse '{value}'.");
          }
       }
       Console.WriteLine();
@@ -27,9 +27,9 @@ public class Example7
       foreach (var value in values) {
          bool flag = false;
          if (Boolean.TryParse(value, out flag))
-            Console.WriteLine("'{0}' --> {1}", value, flag);
+            Console.WriteLine($"'{value}' --> {flag}");
          else
-            Console.WriteLine("Unable to parse '{0}'", value);
+            Console.WriteLine($"Unable to parse '{value}'");
       }
    }
 }

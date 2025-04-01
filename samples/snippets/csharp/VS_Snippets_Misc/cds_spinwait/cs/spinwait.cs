@@ -1,4 +1,4 @@
-﻿#define LOGGING
+#define LOGGING
 
 using System;
 using System.Collections.Generic;
@@ -28,9 +28,9 @@ namespace CDS_Spinwait
 
             for (int i = 0; i < spinCountLog.Length; i++)
             {
-                Console.WriteLine("Wait succeeded with spin count of {0} on {1} attempts", i, spinCountLog[i]);
+                Console.WriteLine($"Wait succeeded with spin count of {i} on {spinCountLog[i]} attempts");
             }
-            Console.WriteLine("Wait used the kernel event on {0} attempts.", totalKernelWaits);
+            Console.WriteLine($"Wait used the kernel event on {totalKernelWaits} attempts.");
             Console.WriteLine("Logging complete");
         }
 #endif
@@ -252,14 +252,14 @@ namespace SpinWait2
             if (SpinForResult(count) == true)
             {
                 ReadFiles(files);
-                Console.WriteLine("Spinning paid off. returned after {0} ticks", watch.ElapsedTicks);
+                Console.WriteLine($"Spinning paid off. returned after {watch.ElapsedTicks} ticks");
             }
 
             else
             {
                 mre.WaitOne();
                 ReadFiles(files);
-                Console.WriteLine("Spinning timed out. Now waiting on event: returned after {0} ticks", watch.ElapsedTicks);
+                Console.WriteLine($"Spinning timed out. Now waiting on event: returned after {watch.ElapsedTicks} ticks");
             }
         }
 
@@ -335,7 +335,7 @@ namespace SpinWait2
                 // Now do something with result array here...
             }
             long ticks = watch.ElapsedTicks;
-            Console.WriteLine("Waiting on {0} complete. Elapsed ticks = {1}", loopCount, ticks);
+            Console.WriteLine($"Waiting on {loopCount} complete. Elapsed ticks = {ticks}");
         }
 
         private static void UseSpinWait()
@@ -351,7 +351,7 @@ namespace SpinWait2
             }
 
             long ticks = watch.ElapsedTicks;
-            Console.WriteLine("Spinning on {0} complete. Elapsed ticks = {1}", loopCount, ticks);
+            Console.WriteLine($"Spinning on {loopCount} complete. Elapsed ticks = {ticks}");
         }
 
         static void GenerateDataForResetEvent(object state)

@@ -118,7 +118,10 @@ The project or solution file to operate on. If not specified, the command search
 
 - **`--vulnerable`**
 
-  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options. Nuget.org is the source of information about vulnerabilities. For more information, see [Vulnerabilities](/nuget/api/registration-base-url-resource) and [How to Scan NuGet Packages for Security Vulnerabilities](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/).
+  Lists packages that have known vulnerabilities. Cannot be combined with `--deprecated` or `--outdated` options.
+  Use the `<AuditSources>` property in your configuration file to specify your source of vulnerability data, which is acquired from the [VulnerabilityInfo](/nuget/api/vulnerability-info) resource.
+  If `<AuditSources>` is not specified, the specified `<PackageSources>` are used to load vulnerability data.
+  For more information, see [Audit sources](/nuget/concepts/auditing-packages#audit-sources) and [How to scan NuGet packages for security vulnerabilities](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/).
 
 - **`--format <console|json>`**
 

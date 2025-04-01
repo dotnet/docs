@@ -1,0 +1,66 @@
+name: "C# 14 - New feature - Fundamentals and reference"
+description: Create the issue for adding reference docs and optional fundamentals updates for a new feature in C# 14 
+title: "[C# 14-Fundamentals and reference]: New Feature - "
+labels:
+  - ":checkered_flag: Release: .NET 10"
+  - dotnet-csharp/svc
+  - whats-new/subsvc
+assignees:
+ - billwagner
+body:
+  - type: dropdown
+    id: version
+    attributes:
+      label: Visual Studio release
+      description: What Visual Studio (preview) contains this feature?
+      options:
+        - "17.13.p3"
+        - "17.13"
+        - "17.14.p1"
+        - "17.14.p2"
+        - "17.14.p3"
+        - "17.14.p4"
+        - "17.14.p5"
+        - "17.14.p6"
+        - "17.14"
+        - "other - specify below"
+  - type: input
+    id: Speclet
+    attributes:
+      label: Link to speclet
+      description: Insert the markdown format for a link to the speclet
+      value: "- [Speclet](https://github.com/dotnet/csharplang/blob/main/proposals/feature.md)"
+    validations:
+      required: true
+  - type: input
+    id: pullrequest
+    attributes:
+      label: Link to Pull request
+      description: Insert the markdown format for a link to the PR
+      value: "- [PR](https://github.com/dotnet/roslyn/pull/nnnnn)"
+    validations:
+      required: true
+  - type: textarea
+    id: new-behavior
+    attributes:
+      label: New behavior
+      description: Describe the new behavior. Include code snippets if applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: language-reference
+    attributes:
+      label: Language reference tasks
+      description: Add a list of areas or articles in the language reference that should be updated for this feature.
+      placeholder: |
+        - Syntax directly affected
+        - Related language elements that should include use of this new feature
+        - Areas where the new feature reduces friction
+  - type: textarea
+    id: fundamentals
+    attributes:
+      label: Everyday C# tasks
+      description: Add a list of any articles in the new Everyday C# section that should be updated.
+      placeholder: |
+        - How will this be used as part of *Everyday C#*?
+        - If not applicable, write that.

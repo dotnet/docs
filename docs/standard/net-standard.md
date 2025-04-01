@@ -144,7 +144,7 @@ Here are some problems with .NET Standard that help explain why .NET 5 and later
 .NET Standard is still needed for libraries that can be used by multiple .NET implementations. We recommend you target .NET Standard in the following scenarios:
 
 - Use `netstandard2.0` to share code between .NET Framework and all other implementations of .NET.
-- Use `netstandard2.1` to share code between Mono, Xamarin, and .NET Core 3.x.
+- Use `netstandard2.1` to share code between Mono and .NET Core 3.x.
 
 ## See also
 

@@ -52,15 +52,12 @@ Welcome to what's new in the .NET docs for March 2025. This article lists some o
 
 ## C# language
 
-### New articles
+### Updated articles
 
 - [C# `if` statements and loops - conditional logic tutorial](../csharp/tour-of-csharp/tutorials/branches-and-loops.md)
 - [How to use integer and floating point numbers in C\#](../csharp/tour-of-csharp/tutorials/numbers-in-csharp.md)
 - [Introduction to C# - interactive tutorial](../csharp/tour-of-csharp/tutorials/hello-world.md)
 - [Learn to manage data collections using List\<T> in C\#](../csharp/tour-of-csharp/tutorials/list-collection.md)
-
-### Updated articles
-
 - [Asynchronous programming scenarios](../csharp/asynchronous-programming/async-scenarios.md) - Freshness Edit: dotnet content
 - [Attributes](../csharp/advanced-topics/reflection-and-attributes/index.md) - Freshness Edit: dotnet content
 

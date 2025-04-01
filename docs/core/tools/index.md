@@ -75,12 +75,12 @@ The following commands are installed by default:
 
 ### Project modification commands
 
-- [`add package`](dotnet-add-package.md)
-- [`add reference`](dotnet-add-reference.md)
-- [`remove package`](dotnet-remove-package.md)
-- [`remove reference`](dotnet-remove-reference.md)
-- [`list package`](dotnet-list-package.md)
-- [`list reference`](dotnet-list-reference.md)
+- [`add package`](/dotnet/core/tool/dotnet-package-add)
+- [`add reference`](/dotnet/core/tool/dotnet-reference-add)
+- [`remove package`](/dotnet/core/tool/dotnet-package-remove)
+- [`remove reference`](/dotnet/core/tool/dotnet-reference-remove)
+- [`list package`](/dotnet/core/tool/dotnet-package-list)
+- [`list reference`](/dotnet/core/tool/dotnet-reference-list)
 
 ### NuGet commands
 

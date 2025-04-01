@@ -65,13 +65,13 @@ Open the solution in Visual Studio, and select <kbd>F5</kbd> to ensure that the 
 
 The Windows Service app needs to handle installation switches. The setup project will call into the Windows Service app with `/Install` and `/Uninstall` switches during installation and uninstallation respectively. When these switches are present, the app will behave differently, in that it will only perform installation or uninstallation using the Windows Service Control Manager executable (_sc.exe_).
 
-For the app to call a separate process, install the [CliWrap](https://www.nuget.org/packages/CliWrap) NuGet package as a convenience. To install the `CliWrap` package, use the `dotnet add package` command:
+For the app to call a separate process, install the [CliWrap](https://www.nuget.org/packages/CliWrap) NuGet package as a convenience. To install the `CliWrap` package, use the `dotnet package add` command:
 
 ```dotnetcli
 dotnet add App.WindowsService.csproj package CliWrap
 ```
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md).
+For more information, see [dotnet package add](/dotnet/core/tool/dotnet-package-add).
 
 With `CliWrap` installed, open the _Program.cs_ file of the `App.WindowsService` project. After the `using` directives, but before the `IHost` is created, add the following code:
 

@@ -34,15 +34,15 @@ Complete the following steps to register the services you need:
 1. Add the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) package:
 
     ```dotnetcli
-    dotnet add package Microsoft.Extensions.Azure
+    dotnet package add Microsoft.Extensions.Azure
     ```
 
 2. Add the relevant `Azure.*` service client packages:
 
     ```dotnetcli
-    dotnet add package Azure.Security.KeyVault.Secrets
-    dotnet add package Azure.Storage.Blobs
-    dotnet add package Azure.Messaging.ServiceBus
+    dotnet package add Azure.Security.KeyVault.Secrets
+    dotnet package add Azure.Storage.Blobs
+    dotnet package add Azure.Messaging.ServiceBus
     ```
 
 3. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method from the `Microsoft.Extensions.Azure` library to register a client to communicate with each Azure service. Some client libraries provide additional [subclients](https://azure.github.io/azure-sdk/dotnet_introduction.html#dotnet-subclients) for specific subgroups of Azure service functionality. You can register such subclients for dependency injection via the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.AddClient%2A> extension method.
@@ -77,7 +77,7 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 1. Add the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package:
 
     ```dotnetcli
-    dotnet add package Azure.Identity
+    dotnet package add Azure.Identity
     ```
 
 1. In the `Program.cs` file of your app, invoke the <xref:Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential%2A> extension method from the `Microsoft.Extensions.Azure` library to set a shared `DefaultAzureCredential` instance for all registered Azure service clients:

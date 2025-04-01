@@ -14,8 +14,8 @@ Add the [Azure.Identity](/dotnet/api/azure.identity) package. In an ASP.NET Core
 In a terminal of your choice, navigate to the application project directory and run the following commands:
 
 ```dotnetcli
-dotnet add package Azure.Identity
-dotnet add package Microsoft.Extensions.Azure
+dotnet package add Azure.Identity
+dotnet package add Microsoft.Extensions.Azure
 ```
 
 ### [NuGet Package Manager](#tab/nuget-package)

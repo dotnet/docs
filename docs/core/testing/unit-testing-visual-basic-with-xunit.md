@@ -44,10 +44,10 @@ The following instructions provide the steps to create the test solution. See [C
    The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
 * Rename *Class1.vb* to *PrimeService.vb*.
 * Replace the code in *PrimeService.vb* with the following code:
-  
+
   ```vb
   Imports System
-  
+
   Namespace Prime.Services
       Public Class PrimeService
           Public Function IsPrime(candidate As Integer) As Boolean
@@ -91,7 +91,7 @@ The following instructions provide the steps to create the test solution. See [C
 * Add the `PrimeService` class library as a dependency to the *PrimeService.Tests* project:
 
   ```dotnetcli
-  dotnet add ./PrimeService.Tests/PrimeService.Tests.vbproj reference ./PrimeService/PrimeService.vbproj  
+  dotnet add ./PrimeService.Tests/PrimeService.Tests.vbproj reference ./PrimeService/PrimeService.vbproj
   ```
 
 <a name="create-test-cmd"></a>
@@ -224,4 +224,4 @@ The completed `IsPrime` method is not an efficient algorithm for testing primali
 
 - [xUnit.net official site](https://xunit.net/)
 - [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)
-- [`dotnet add reference`](../tools/dotnet-add-reference.md)
+- [`dotnet reference add`](/dotnet/core/tool/dotnet-reference-add)

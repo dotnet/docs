@@ -105,10 +105,10 @@ The `NewTypes` project is in place, and you've organized it by keeping the pets-
 
 Navigate back to the *src* folder and create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This command produces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
 
-The test project can't currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+The test project can't currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet reference add`](/dotnet/core/tool/dotnet-reference-add) command:
 
 ```dotnetcli
-dotnet add reference ../../src/NewTypes/NewTypes.csproj
+dotnet reference add ../../src/NewTypes/NewTypes.csproj
 ```
 
 Or, you also have the option of manually adding the project reference by adding an `<ItemGroup>` node to the *NewTypesTests.csproj* file:

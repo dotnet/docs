@@ -40,13 +40,13 @@ In this tutorial, you'll learn how to:
 
 To interop with native Windows Services from .NET <xref:Microsoft.Extensions.Hosting.IHostedService> implementations, you'll need to install the [`Microsoft.Extensions.Hosting.WindowsServices` NuGet package](https://nuget.org/packages/Microsoft.Extensions.Hosting.WindowsServices).
 
-To install this from Visual Studio, use the **Manage NuGet Packages...** dialog. Search for "Microsoft.Extensions.Hosting.WindowsServices", and install it. If you'd rather use the .NET CLI, run the `dotnet add package` command:
+To install this from Visual Studio, use the **Manage NuGet Packages...** dialog. Search for "Microsoft.Extensions.Hosting.WindowsServices", and install it. If you'd rather use the .NET CLI, run the `dotnet package add` command:
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Hosting.WindowsServices
+dotnet package add Microsoft.Extensions.Hosting.WindowsServices
 ```
 
-For more information on the .NET CLI add package command, see [dotnet add package](../tools/dotnet-add-package.md).
+For more information on the .NET CLI add package command, see [dotnet package add](/dotnet/core/tool/dotnet-package-add).
 
 After successfully adding the packages, your project file should now contain the following package references:
 

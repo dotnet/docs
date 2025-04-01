@@ -25,7 +25,7 @@ You reference one of two mutually exclusive NuGet packages when writing Orleans 
 
 For information on installing NuGet packages, see the following options:
 
-- [.NET CLI: dotnet add package](../../core/tools/dotnet-add-package.md)
+- [.NET CLI: dotnet package add](/dotnet/core/tool/dotnet-package-add)
 - [Ways to install a NuGet package](/nuget/consume-packages/overview-and-workflow#ways-to-install-a-nuget-package)
 
 ## Hosting

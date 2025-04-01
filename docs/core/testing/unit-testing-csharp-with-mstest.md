@@ -72,10 +72,10 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the necessary MSTest packages and tools for code coverage reporting.
 
-Add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+Add the `PrimeService` class library as another dependency to the project. Use the [`dotnet reference add`](/dotnet/core/tool/dotnet-reference-add) command:
 
 ```dotnetcli
-dotnet add reference ../PrimeService/PrimeService.csproj
+dotnet reference add ../PrimeService/PrimeService.csproj
 ```
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-mstest/PrimeService.Tests/PrimeService.Tests.csproj) on GitHub.

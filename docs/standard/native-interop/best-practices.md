@@ -419,7 +419,7 @@ typedef struct _SYSTEM_PROCESS_INFORMATION {
     BYTE Reserved1[48];
     UNICODE_STRING ImageName;
 ...
-} SYSTEM_PROCESS_INFORMATION
+} SYSTEM_PROCESS_INFORMATION;
 ```
 
 In C#, we can write it like this:

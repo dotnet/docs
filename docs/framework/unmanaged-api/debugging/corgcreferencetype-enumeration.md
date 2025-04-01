@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CorGCReferenceType Enumeration"
 title: "CorGCReferenceType Enumeration"
+description: "Learn more about: CorGCReferenceType Enumeration"
 ms.date: "03/30/2017"
 api_name:
   - "CorGCReferenceType"
@@ -12,7 +12,6 @@ f1_keywords:
   - "CorGCReferenceType"
 helpviewer_keywords:
   - "CorGCReferenceType"
-ms.assetid: d9f16439-5a36-4474-8ffd-4f0b2c2bb686
 topic_type:
   - "apiref"
 ---
@@ -40,7 +39,7 @@ typedef enum {
     CorHandleStrongOnly = 0x1E3,
     CorHandleWeakOnly = 0xC,
     CorHandleAll = 0x7FFFFFFF
-} CorGCReferenceType
+} CorGCReferenceType;
 ```
 
 ## Members

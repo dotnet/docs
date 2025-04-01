@@ -30,7 +30,7 @@ jobs:
         with:
           function: "RemoveRedirectHops"
           docfx_directory: "."
-          target_directory: "docs"
+          target_directory: "."
           url_base_path: "/dotnet"
 
       # Create the PR for the work done by the "clean repo" tool

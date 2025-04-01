@@ -81,10 +81,10 @@ The [dotnet new](../tools/dotnet-new.md) command creates a test project that use
 > [!NOTE]
 > Prior to .NET 9, the generated code may reference older versions of the NUnit test framework. You may use [dotnet CLI](/nuget/consume-packages/install-use-packages-dotnet-cli) to update the packages. Alternatively, open the *PrimeService.Tests.vbproj* file and replace the contents of the package references item group with the code above.
 
-The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added NUnit and the NUnit test adapter. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet reference add`](../tools/dotnet-reference-add.md) command:
+The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added NUnit and the NUnit test adapter. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
 ```dotnetcli
-dotnet reference add ../PrimeService/PrimeService.vbproj
+dotnet add reference ../PrimeService/PrimeService.vbproj
 ```
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-vb-nunit/PrimeService.Tests/PrimeService.Tests.vbproj) on GitHub.

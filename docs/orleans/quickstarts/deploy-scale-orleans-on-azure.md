@@ -127,10 +127,10 @@ Prior to using the grain, you must install the corresponding `Microsoft.Orleans.
     cd ./src/web
     ```
 
-1. Import the `Azure.Identity` package from NuGet using `dotnet package add`.
+1. Import the `Azure.Identity` package from NuGet using `dotnet add package`.
 
     ```dotnetcli
-    dotnet package add Azure.Identity --version 1.*
+    dotnet add package Azure.Identity --version 1.*
     ```
 
 1. Import the `Microsoft.Orleans.Clustering.AzureStorage` and `Microsoft.Orleans.Persistence.AzureStorage` packages.
@@ -141,18 +141,18 @@ Prior to using the grain, you must install the corresponding `Microsoft.Orleans.
     | **Persistence** | `Microsoft.Orleans.Persistence.AzureStorage` |
 
     ```dotnetcli
-    dotnet package add Microsoft.Orleans.Clustering.AzureStorage --version 8.*
-    dotnet package add Microsoft.Orleans.Persistence.AzureStorage --version 8.*
+    dotnet add package Microsoft.Orleans.Clustering.AzureStorage --version 8.*
+    dotnet add package Microsoft.Orleans.Persistence.AzureStorage --version 8.*
     ```
 
 ::: zone-end
 
 ::: zone pivot="azure-cosmos-db-nosql"
 
-1. Import the `Azure.Identity` package from NuGet using `dotnet package add`.
+1. Import the `Azure.Identity` package from NuGet using `dotnet add package`.
 
     ```dotnetcli
-    dotnet package add Azure.Identity --version 1.*
+    dotnet add package Azure.Identity --version 1.*
     ```
 
 1. Import the `Microsoft.Orleans.Clustering.Cosmos` and `Microsoft.Orleans.Persistence.Cosmos` packages.
@@ -163,8 +163,8 @@ Prior to using the grain, you must install the corresponding `Microsoft.Orleans.
     | **Persistence** | `Microsoft.Orleans.Persistence.Cosmos` |
 
     ```dotnetcli
-    dotnet package add Microsoft.Orleans.Clustering.Cosmos --version 8.*
-    dotnet package add Microsoft.Orleans.Persistence.Cosmos --version 8.*
+    dotnet add package Microsoft.Orleans.Clustering.Cosmos --version 8.*
+    dotnet add package Microsoft.Orleans.Persistence.Cosmos --version 8.*
     ```
 
 ::: zone-end

@@ -32,7 +32,7 @@ To use the sample code in this article, you need to create and assign a content 
 1. Add the [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) NuGet package to your project.
 
     ```dotnetcli
-    dotnet package add Azure.AI.OpenAI
+    dotnet add package Azure.AI.OpenAI
     ```
 
 1. Create a simple chat completion flow in your .NET app using the `OpenAiClient`. Replace the `YOUR_OPENAI_ENDPOINT`, `YOUR_OPENAI_KEY`, and `YOUR_OPENAI_DEPLOYMENT` values with your own.
@@ -48,7 +48,7 @@ To use the sample code in this article, you need to create and assign a content 
     ```output
     I am sorry if I have done anything to upset you.
     Is there anything I can do to assist you and make things better?
-
+    
     Hate category is filtered: False with low severity.
     SelfHarm category is filtered: False with safe severity.
     Sexual category is filtered: False with safe severity.

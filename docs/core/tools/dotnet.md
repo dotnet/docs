@@ -182,16 +182,16 @@ The following options are available only when `dotnet` runs an application by us
 
 | Command                                               | Function                     |
 |-------------------------------------------------------|------------------------------|
-| [dotnet reference add](dotnet-reference-add.md)       | Adds a project reference.    |
-| [dotnet reference list](dotnet-reference-list.md)     | Lists project references.    |
-| [dotnet reference remove](dotnet-reference-remove.md) | Removes a project reference. |
+| [dotnet add reference](dotnet-add-reference.md)       | Adds a project reference.    |
+| [dotnet list reference](dotnet-list-reference.md)     | Lists project references.    |
+| [dotnet remove reference](dotnet-remove-reference.md) | Removes a project reference. |
 
 ### NuGet packages
 
 | Command                                           | Function                 |
 |---------------------------------------------------|--------------------------|
-| [dotnet package add](dotnet-package-add.md)       | Adds a NuGet package.    |
-| [dotnet package remove](dotnet-package-remove.md) | Removes a NuGet package. |
+| [dotnet add package](dotnet-add-package.md)       | Adds a NuGet package.    |
+| [dotnet remove package](dotnet-remove-package.md) | Removes a NuGet package. |
 
 ### NuGet commands
 

@@ -65,7 +65,7 @@ Complete the following steps to create a .NET console app that will connect to y
 1. Add the [Microsoft.Extensions.AI.Ollama](https://aka.ms/meai-ollama-nuget) packages to your app:
 
     ```dotnetcli
-    dotnet package add Microsoft.Extensions.AI.Ollama --prerelease
+    dotnet add package Microsoft.Extensions.AI.Ollama --prerelease
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -101,21 +101,21 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
     Tell me three facts about .NET.
 
     AI response:
-    1. **Cross-Platform Development:** One of the significant strengths of .NET,
+    1. **Cross-Platform Development:** One of the significant strengths of .NET, 
     particularly its newer iterations (.NET Core and .NET 5+), is cross-platform support.
     It allows developers to build applications that run on Windows, Linux, macOS,
     and various other operating systems seamlessly, enhancing flexibility and
     reducing barriers for a wider range of users.
 
     2. **Rich Ecosystem and Library Support:** .NET has an incredibly rich ecosystem,
-    comprising an extensive collection of libraries (such as those provided by the
-    official NuGet Package Manager), tools, and services. This allows developers
-    to work on web applications (.NET Framework for desktop apps and ASP.NET Core
+    comprising an extensive collection of libraries (such as those provided by the 
+    official NuGet Package Manager), tools, and services. This allows developers 
+    to work on web applications (.NET Framework for desktop apps and ASP.NET Core 
     for modern web applications), mobile applications (.NET MAUI or Xamarin.Forms),
     IoT solutions, AI/ML projects, and much more with a vast array of pre-built
     components available at their disposal.
-
-    3. **Type Safety:** .NET operates under the Common Language Infrastructure (CLI)
+    
+    3. **Type Safety:** .NET operates under the Common Language Infrastructure (CLI) 
     model and employs managed code for executing applications. This approach inherently
     offers strong type safety checks which help in preventing many runtime errors that
     are common in languages like C/C++. It also enables features such as garbage collection,
@@ -133,11 +133,11 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
     AI Response:
      **Cross-platform Capabilities:** .NET allows building for various operating systems
     through platforms like .NET Core, promoting accessibility (Windows, Linux, macOS).
-
+    
     **Extensive Ecosystem:** Offers a vast library selection via NuGet and tools for web
     (.NET Framework), mobile development (Maui/Xamarin.Forms), IoT, AI, providing rich
     capabilities to developers.
-
+    
     **Type Safety & Reliability:** .NET's CLI model enforces strong typing and automatic
     garbage collection, mitigating runtime errors, thus enhancing application stability.
     ```

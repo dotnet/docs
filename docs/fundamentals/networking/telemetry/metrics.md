@@ -86,7 +86,7 @@ This tutorial shows one of the integrations available for OpenTelemetry metrics 
 Add a reference to the OpenTelemetry Prometheus exporter to the example app:
 
 ```dotnetcli
-dotnet package add OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
+dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
 ```
 
 > [!NOTE]

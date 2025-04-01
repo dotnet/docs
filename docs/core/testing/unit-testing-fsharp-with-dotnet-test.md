@@ -56,10 +56,10 @@ Make the *MathService.Tests* directory the current directory and create a new pr
 </ItemGroup>
 ```
 
-The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added xUnit and the xUnit runner. Now, add the `MathService` class library as another dependency to the project. Use the `dotnet reference add` command:
+The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added xUnit and the xUnit runner. Now, add the `MathService` class library as another dependency to the project. Use the `dotnet add reference` command:
 
 ```dotnetcli
-dotnet reference add ../MathService/MathService.fsproj
+dotnet add reference ../MathService/MathService.fsproj
 ```
 
 You can see the entire file in the [samples repository](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-with-fsharp/MathService.Tests/MathService.Tests.fsproj) on GitHub.
@@ -165,5 +165,5 @@ You've built a small library and a set of unit tests for that library. You've st
 
 - [dotnet new](../tools/dotnet-new.md)
 - [dotnet sln](../tools/dotnet-sln.md)
-- [dotnet reference add](../tools/dotnet-reference-add.md)
+- [dotnet add reference](../tools/dotnet-add-reference.md)
 - [dotnet test](../tools/dotnet-test.md)

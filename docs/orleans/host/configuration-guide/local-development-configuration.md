@@ -49,7 +49,7 @@ For local development, refer to the below example of how to configure a silo for
 Add the `Microsoft.Orleans.Server` NuGet meta-package to the project.
 
 ```dotnetcli
-dotnet package add Microsoft.Orleans.Server
+dotnet add package Microsoft.Orleans.Server
 ```
 
 You need to configure <xref:Orleans.Configuration.ClusterOptions> via <xref:Orleans.Hosting.ISiloBuilder> `Configure` method, specify that you want `LocalhostClustering` as your clustering choice with this silo being the primary, and then configure silo endpoints.

@@ -16,7 +16,7 @@ Learn how to get started with DataFrames. [DataFrames](/dotnet/api/microsoft.dat
 In most cases, accessing DataFrame is as simple as referencing the [Microsoft.Data.Analysis](https://www.nuget.org/packages/Microsoft.Data.Analysis/) NuGet package.
 
 ```dotnetcli
-dotnet package add Microsoft.Data.Analysis
+dotnet add package Microsoft.Data.Analysis
 ```
 
 ## Load data

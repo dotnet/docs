@@ -52,6 +52,27 @@ let str = "Debugging!"
 #endif
 ```
 
+### Automatically Defined Symbols
+
+The F# compiler automatically defines certain symbols based on the build configuration. These symbols can be used with `#if` directives for conditional compilation.
+
+| Symbol  | Description |
+|---------|-------------|
+| `DEBUG` | Automatically defined in debug builds when compiling with the `Debug` configuration. |
+| `TRACE` | Defined when tracing is enabled in the project settings. |
+
+For example, you can use these symbols in conditional compilation:
+
+```fsharp
+#if DEBUG
+printfn "Debugging mode is enabled."
+#else
+printfn "Release mode."
+#endif
+```
+
+These symbols are typically set by the compiler and do not require explicit definition in the source code.
+
 ## NULLABLE directive
 
 Starting with F# 9, you can enable nullable reference types in the project:

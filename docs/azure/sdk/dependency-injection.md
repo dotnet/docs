@@ -17,22 +17,22 @@ To register and configure service clients from an [`Azure.`-prefixed package](pa
 1. Install the [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) package in your project:
 
     ```dotnetcli
-    dotnet package add Microsoft.Extensions.Azure
+    dotnet add package Microsoft.Extensions.Azure
     ```
 
 1. Install the [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) package to configure a `TokenCredential` type to use for authenticating all registered clients that accept such a type:
 
     ```dotnetcli
-    dotnet package add Azure.Identity
+    dotnet add package Azure.Identity
     ```
 
 For demonstration purposes, the sample code in this article uses the Key Vault Secrets, Blob Storage, Service Bus, and Azure OpenAI libraries. Install the following packages to follow along:
 
 ```dotnetcli
-dotnet package add Azure.Security.KeyVault.Secrets
-dotnet package add Azure.Storage.Blobs
-dotnet package add Azure.Messaging.ServiceBus
-dotnet package add Azure.AI.OpenAI
+dotnet add package Azure.Security.KeyVault.Secrets
+dotnet add package Azure.Storage.Blobs
+dotnet add package Azure.Messaging.ServiceBus
+dotnet add package Azure.AI.OpenAI
 ```
 
 ## Register clients and subclients
@@ -75,7 +75,7 @@ public class MyApiController : ControllerBase
 {
     private readonly BlobServiceClient _blobServiceClient;
     private readonly ServiceBusSender _serviceBusSender;
-
+  
     public MyApiController(
         BlobServiceClient blobServiceClient,
         IAzureClientFactory<ServiceBusSender> senderFactory)
@@ -83,11 +83,11 @@ public class MyApiController : ControllerBase
         _blobServiceClient = blobServiceClient;
         _serviceBusSender = senderFactory.CreateClient("myQueueName");
     }
-
+  
     [HttpGet]
     public async Task<IEnumerable<string>> Get()
     {
-        BlobContainerClient containerClient =
+        BlobContainerClient containerClient = 
             _blobServiceClient.GetBlobContainerClient("demo");
         var results = new List<string>();
 
@@ -276,7 +276,7 @@ At some point, you may want to change the default settings for a service client.
 ```
 
 You can change the retry policy to suit your needs like so:
-
+  
 ```csharp
 builder.Services.AddAzureClients(clientBuilder =>
 {

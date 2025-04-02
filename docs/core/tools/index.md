@@ -3,8 +3,7 @@ title: .NET CLI
 titleSuffix: ""
 description: An overview of the .NET CLI and its features.
 ms.topic: overview
-ms.date: 12/14/2022
-ms.custom: devdivchpfy22
+ms.date: 04/02/2025
 ---
 
 # .NET CLI overview
@@ -76,11 +75,12 @@ The following commands are installed by default:
 ### Project modification commands
 
 - [`package add`](dotnet-package-add.md)
-- [`reference add`](dotnet-reference-add.md)
-- [`package remove`](dotnet-package-remove.md)
-- [`reference remove`](dotnet-reference-remove.md)
 - [`package list`](dotnet-package-list.md)
+- [`package remove`](dotnet-package-remove.md)
+- [`package search`](dotnet-package-search.md)
+- [`reference add`](dotnet-reference-add.md)
 - [`reference list`](dotnet-reference-list.md)
+- [`reference remove`](dotnet-reference-remove.md)
 
 ### NuGet commands
 

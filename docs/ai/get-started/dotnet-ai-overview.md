@@ -36,16 +36,16 @@ We recommend the following sequence of tutorials and articles for an introductio
 
 | Scenario | Tutorial |
 |----------|----------|
-| Create a chat application | [Build an Azure AI chat app with .NET](../quickstarts/build-chat-app.md)|
-| Summarize text | [Summarize text using Azure AI chat app with .NET](../quickstarts/prompt-model.md) |
-| Chat with your data     | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/build-vector-search-app.md) |
-| Call .NET functions with AI | [Extend Azure AI using tools and execute a local function with .NET](../quickstarts/use-function-calling.md) |
-| Generate images | [Generate images using Azure AI with .NET](../quickstarts/generate-images.md) |
+| Create a chat application | [Build an Azure AI chat app with .NET](/dotnet/ai/quickstarts/build-chat-app)|
+| Summarize text | [Summarize text using Azure AI chat app with .NET](/dotnet/ai/quickstarts/prompt-model) |
+| Chat with your data     | [Get insight about your data from an .NET Azure AI chat app](/dotnet/ai/quickstarts/build-vector-search-app) |
+| Call .NET functions with AI | [Extend Azure AI using tools and execute a local function with .NET](/dotnet/ai/quickstarts/use-function-calling) |
+| Generate images | [Generate images using Azure AI with .NET](/dotnet/ai/quickstarts/generate-images) |
 | Train your own model |[ML.NET tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
 Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md).
 
 ## Next steps
 
-- [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/build-chat-app.md)
+- [Quickstart: Build an Azure AI chat app with .NET](/dotnet/ai/quickstarts/build-chat-app)
 - [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)

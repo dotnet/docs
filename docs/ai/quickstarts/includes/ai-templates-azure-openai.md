@@ -88,9 +88,9 @@ The AI template uses Microsoft Entra ID for seamless, keyless authentication. It
 
     - In the Azure Portal, navigate to the overview page of your Azure OpenAI resource.
     - Select **Access control (IAM)** from the left navigation.
-    - [Add a role assignment](../../../azure/sdk/authentication/local-development-dev-accounts.md#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
+    - [Add a role assignment](/dotnet/azure/sdk/authentication/local-development-dev-accounts#assign-roles-to-the-group) for the `Azure AI Developer` role to your Azure account.
 
-1. [Sign-in to a local development tool](../../../azure/sdk/authentication/local-development-dev-accounts.md#sign-in-to-azure-using-developer-tooling) such as Visual Studio or the Azure CLI using the Azure account you assigned the `Azure AI Developer` role to.
+1. [Sign-in to a local development tool](/dotnet/azure/sdk/authentication/local-development-dev-accounts#sign-in-to-azure-using-developer-tooling) such as Visual Studio or the Azure CLI using the Azure account you assigned the `Azure AI Developer` role to.
 
 ## Configure the app
 

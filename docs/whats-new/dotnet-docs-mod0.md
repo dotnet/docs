@@ -38,7 +38,7 @@ Welcome to what's new in the .NET docs for March 2025. This article lists some o
 - [Generate unit tests with GitHub Copilot](../core/testing/unit-testing-with-copilot.md)
 - [Mutation testing](../core/testing/mutation-testing.md)
 - [Simplify LINQ type check and cast (IDE0121)](../fundamentals/code-analysis/style-rules/ide0121.md)
-- [Source-generated metrics with strongly-typed tags](../core/diagnostics/metrics-strongly-typed.md)
+- [Source-generated metrics with strongly typed tags](../core/diagnostics/metrics-strongly-typed.md)
 - [Unit testing C# in .NET using dotnet test and xUnit](../core/testing/unit-testing-csharp-with-xunit.md)
 - [Use collection expression for new (IDE0306)](../fundamentals/code-analysis/style-rules/ide0306.md)
 - [Use implicitly typed lambda (IDE0350)](../fundamentals/code-analysis/style-rules/ide0350.md)

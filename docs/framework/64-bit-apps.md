@@ -56,4 +56,4 @@ When you compile an application, you can specify that it should run on a Windows
 
  To programmatically query an .exe or .dll to see whether it is meant to run only on a specific platform or under WOW64, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=nameWithType> method.
 
-[Test link to redirected file](./add-ins/pipeline-development.md)
+[Test link to redirected file](/previous-versions/dotnet/netframework-4.0/bb384201(v%3dvs.100))

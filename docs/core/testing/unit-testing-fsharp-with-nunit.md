@@ -204,5 +204,5 @@ You've built a small library and a set of unit tests for that library. You struc
 
 ## See also
 
-- [dotnet reference add](/dotnet/core/tool/dotnet-reference-add)
+- [dotnet reference add](../tools/dotnet-reference-add.md)
 - [dotnet test](../tools/dotnet-test.md)

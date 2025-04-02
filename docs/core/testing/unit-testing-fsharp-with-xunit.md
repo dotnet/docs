@@ -165,5 +165,5 @@ You've built a small library and a set of unit tests for that library. You've st
 
 - [dotnet new](../tools/dotnet-new.md)
 - [dotnet sln](../tools/dotnet-sln.md)
-- [dotnet reference add](/dotnet/core/tool/dotnet-reference-add)
+- [dotnet reference add](../tools/dotnet-reference-add.md)
 - [dotnet test](../tools/dotnet-test.md)

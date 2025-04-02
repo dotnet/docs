@@ -53,13 +53,13 @@ To remove a dependency, remove its `<PackageReference>` item from the project fi
 
 ### Use the CLI
 
-To add a dependency, run the [dotnet package add](/dotnet/core/tool/dotnet-package-add) command, as shown in the following example:
+To add a dependency, run the [dotnet package add](dotnet-package-add.md) command, as shown in the following example:
 
 ```dotnetcli
 dotnet package add Microsoft.EntityFrameworkCore
 ```
 
-To remove a dependency, run the [dotnet package remove](/dotnet/core/tool/dotnet-package-remove) command, as shown in the following example:
+To remove a dependency, run the [dotnet package remove](dotnet-package-remove.md) command, as shown in the following example:
 
 ```dotnetcli
 dotnet package remove Microsoft.EntityFrameworkCore
@@ -77,5 +77,5 @@ dotnet package remove Microsoft.EntityFrameworkCore
 ## See also
 
 * [Package references in project files](../project-sdk/msbuild-props.md#reference-related-properties)
-* [dotnet package list command](/dotnet/core/tool/dotnet-package-list)
+* [dotnet package list command](dotnet-package-list.md)
 * [Dependencies (library guidance)](../../standard/library-guidance/dependencies.md)

@@ -32,7 +32,7 @@ Given one or more configuration sources, the <xref:Microsoft.Extensions.Configur
 
 ## Configure console apps
 
-.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *don't* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](/dotnet/core/tool/dotnet-package-add) to [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). This package is the foundation for configuration in .NET apps. It provides the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and related types.
+.NET console applications created using the [dotnet new](../tools/dotnet-new.md) command template or Visual Studio by default *don't* expose configuration capabilities. To add configuration in a new .NET console application, [add a package reference](../tools/dotnet-package-add.md) to [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration). This package is the foundation for configuration in .NET apps. It provides the <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder> and related types.
 
 :::code source="snippets/configuration/console-basic-builder/Program.cs":::
 
@@ -47,7 +47,7 @@ While this example uses an in-memory configuration, there are many configuration
 
 ### Alternative hosting approach
 
-Commonly, your apps will do more than just read configuration. They'll likely use dependency injection, logging, and other services. The [.NET Generic Host](generic-host.md) approach is recommended for apps that use these services. Instead, consider [adding a package reference](/dotnet/core/tool/dotnet-package-add) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
+Commonly, your apps will do more than just read configuration. They'll likely use dependency injection, logging, and other services. The [.NET Generic Host](generic-host.md) approach is recommended for apps that use these services. Instead, consider [adding a package reference](../tools/dotnet-package-add.md) to [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting). Modify the *Program.cs* file to match the following code:
 
 :::code source="snippets/configuration/console/Program.cs" highlight="3":::
 

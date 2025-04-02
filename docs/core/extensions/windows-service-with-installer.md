@@ -71,7 +71,7 @@ For the app to call a separate process, install the [CliWrap](https://www.nuget.
 dotnet add App.WindowsService.csproj package CliWrap
 ```
 
-For more information, see [dotnet package add](/dotnet/core/tool/dotnet-package-add).
+For more information, see [dotnet package add](../tools/dotnet-package-add.md).
 
 With `CliWrap` installed, open the _Program.cs_ file of the `App.WindowsService` project. After the `using` directives, but before the `IHost` is created, add the following code:
 

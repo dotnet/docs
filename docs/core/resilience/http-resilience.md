@@ -28,7 +28,7 @@ dotnet package add Microsoft.Extensions.Http.Resilience --version 8.0.0
 
 ---
 
-For more information, see [dotnet package add](/dotnet/core/tool/dotnet-package-add) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet package add](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Add resilience to an HTTP client
 

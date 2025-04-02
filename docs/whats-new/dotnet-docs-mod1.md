@@ -31,7 +31,7 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 
 ### New articles
 
-- [Create a minimal AI assistant using .NET](/dotnet/ai/quickstarts/create-assistant)
+- [Create a minimal AI assistant using .NET](../ai/quickstarts/create-assistant.md)
 
 ## .NET fundamentals
 

@@ -46,7 +46,7 @@ To install this from Visual Studio, use the **Manage NuGet Packages...** dialog.
 dotnet package add Microsoft.Extensions.Hosting.WindowsServices
 ```
 
-For more information on the .NET CLI add package command, see [dotnet package add](/dotnet/core/tool/dotnet-package-add).
+For more information on the .NET CLI add package command, see [dotnet package add](../tools/dotnet-package-add.md).
 
 After successfully adding the packages, your project file should now contain the following package references:
 

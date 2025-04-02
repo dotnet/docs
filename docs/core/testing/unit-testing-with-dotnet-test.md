@@ -1,30 +1,30 @@
 ---
-title: Testing with dotnet test
-description: Learn more about how dotnet test works and its support for VSTest and Microsoft.Testing.Platform (MTP)
+title: Testing with 'dotnet test'
+description: Learn more about how 'dotnet test' works and its support for VSTest and Microsoft.Testing.Platform (MTP)
 author: Youssef1313
 ms.author: ygerges
 ms.date: 03/26/2025
 ---
 
-# Testing with dotnet test
+# Testing with 'dotnet test'
 
-This article will provide you with insights into the `dotnet test` CLI command, its history, and its compatibility with both VSTest and Microsoft.Testing.Platform (MTP).
+This article provides insights into the `dotnet test` CLI command, including its history compatibility with both VSTest and Microsoft.Testing.Platform (MTP).
 
 The `dotnet test` command operates in two primary modes:
 
-- VSTest mode: This is the default mode for `dotnet test` and was the only mode available before the .NET 10 SDK. It is primarily designed for VSTest but can also run Microsoft.Testing.Platform test via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild/) NuGet package.
-- Microsoft.Testing.Platform mode: Introduced with the .NET 10 SDK, this mode exclusively supports test applications built with Microsoft.Testing.Platform.
+- *VSTest* mode: This is the default mode for `dotnet test` and was the only mode available before the .NET 10 SDK. It is primarily designed for VSTest but can also run Microsoft.Testing.Platform test via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild/) NuGet package.
+- *Microsoft.Testing.Platform* mode: Introduced with the .NET 10 SDK, this mode exclusively supports test applications built with Microsoft.Testing.Platform.
 
 > [!TIP]
 > For CLI reference, see [dotnet test](../tools/dotnet-test.md).
 
 ## VSTest mode of `dotnet test`
 
-For an extended period, VSTest has been the only test platform in .NET. Consequently, dotnet test was exclusively designed for VSTest, with all command-line options tailored to VSTest.
+For a long time, VSTest was the only test platform in .NET. Consequently, `dotnet test` was exclusively designed for VSTest, with all command-line options tailored to VSTest.
 
-The process involves invoking the `VSTest` MSBuild target, which triggers other internal targets to run and ultimately runs vstest.console. This translates all `dotnet test` command-line options to their equivalents in vstest.console.
+The process involves invoking the `VSTest` MSBuild target, which triggers other internal targets to run and ultimately runs vstest.console. All `dotnet test` command-line options are translated to their equivalents in vstest.console.
 
-### Running MTP projects with VSTest mode
+### Run MTP projects with VSTest mode
 
 `dotnet test` is typically designed to run VSTest projects in VSTest mode, as that was its original purpose. However, to run MTP projects in `dotnet test` VSTest mode, you can use the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild). From the user's perspective, this support is enabled by setting the `TestingPlatformDotnetTestSupport` MSBuild property to true (it is false by default for backward compatibility reasons). In simple terms, setting this property to true will cause Microsoft.Testing.Platform.MSBuild to change the `VSTest` target behavior, redirecting it to call `InvokeTestingPlatform`. This is an MSBuild target included in Microsoft.Testing.Platform.MSBuild, responsible for correctly running MTP test applications as executables. This means that VSTest-specific command-line options are silently ignored in this mode, such as `--logger`. This implies that there should be a way to pass MTP-specific command-line options, such as `--report-trx`, which is equivalent to using `--logger trx` in VSTest. Given the current limitations of the `dotnet test` CLI, the only way to include MTP-specific arguments is by appending them after an additional `--`. For instance, `dotnet test -- --report-trx`.
 
@@ -75,20 +75,21 @@ When running `dotnet test` in VSTest mode, it is recommended to avoid including 
 
 This scenario is not officially supported, and you should be aware of the following:
 
-1. VSTest-specific command-line options will only apply to VSTest projects and not to MTP test applications.
-2. MTP-specific command-line options provided after `--` will be treated as RunSettings arguments for VSTest projects.
+- VSTest-specific command-line options will only apply to VSTest projects and not to MTP test applications.
+- MTP-specific command-line options provided after `--` will be treated as RunSettings arguments for VSTest projects.
 
 #### Key takeaways
 
-1. To run MTP test applications in `dotnet test` VSTest mode, you should use `Microsoft.Testing.Platform.MSBuild`, pass MTP-specific command-line options after the extra --, and set `TestingPlatformDotnetTestSupport` to true.
-2. VSTest-oriented command-line options are silently ignored.
-3. Due to these issues, we have introduced a new `dotnet test` mode specifically designed for MTP. We encourage MTP users to transition from the VSTest `dotnet test` mode to the new mode with the .NET 10 SDK.
+- To run MTP test applications in `dotnet test` VSTest mode, you should use `Microsoft.Testing.Platform.MSBuild`, pass MTP-specific command-line options after the extra `--`, and set `TestingPlatformDotnetTestSupport` to `true`.
+- VSTest-oriented command-line options are silently ignored.
+
+Due to these issues, .NET has introduced a new `dotnet test` mode specifically designed for MTP. We encourage MTP users to transition from the VSTest `dotnet test` mode to the new mode with the .NET 10 SDK.
 
 ## Microsoft.Testing.Platform (MTP) mode of `dotnet test`
 
-To address the issues encountered when running `dotnet test` with MTP in VSTest mode, we introduced a new mode in the .NET 10 SDK that is specifically designed for MTP.
+To address the issues encountered when running `dotnet test` with MTP in VSTest mode, .NET introduced a new mode in the .NET 10 SDK that's specifically designed for MTP.
 
-To enable this mode, you should add a `dotnet.config` file to the root of the repository or solution.
+To enable this mode, add a `dotnet.config` file to the root of the repository or solution.
 
 ```ini
 [dotnet.test:runner]

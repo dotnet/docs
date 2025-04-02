@@ -55,3 +55,5 @@ When you compile an application, you can specify that it should run on a Windows
  To determine whether an .exe file or .dll file is meant to run only on a specific platform or under WOW64, use [CorFlags.exe (CorFlags Conversion Tool)](./tools/corflags-exe-corflags-conversion-tool.md) with no options. You can also use CorFlags.exe to change the platform status of an .exe file or .dll file. The CLR header of a Visual Studio assembly has the major runtime version number set to 2 and the minor runtime version number set to 5. Applications that have the minor runtime version set to 0 are treated as legacy applications and are always executed under WOW64.
 
  To programmatically query an .exe or .dll to see whether it is meant to run only on a specific platform or under WOW64, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=nameWithType> method.
+
+[Test link to redirected file](./add-ins/pipeline-development.md)

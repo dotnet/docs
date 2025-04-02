@@ -45,6 +45,7 @@ If you have .NET installed, use the `dotnet --info` command to determine which S
 If you have .NET installed, use the `dotnet --info` command to determine which SDK you're using.
 
 :::zone-end
+
 - [Docker Community Edition](https://www.docker.com/products/docker-desktop).
 - A temporary working folder for the _Dockerfile_ and .NET example app. In this tutorial, the name _docker-working_ is used as the working folder.
 

@@ -79,6 +79,6 @@ Execute the prompt, click **Accept**, and Copilot generates the test code. After
 
 When the packages are installed, the tests can be run. This example worked on the first try: Copilot knows very well how to work with NSubstitute, and all dependencies were defined through interfaces.
 
-:::image type="content" source="media/test-mehod-stub.png" lightbox="media/test-mehod-stub.png" alt-text="Generated tests":::
+:::image type="content" source="media/test-copilot-result.png" lightbox="media/test-copilot-result.png" alt-text="Generated tests":::
 
 Thus, using **Visual Studio** in combination with **GitHub Copilot** significantly simplifies the process of generating and writing unit tests.

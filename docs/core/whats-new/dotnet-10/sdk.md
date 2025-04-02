@@ -26,15 +26,15 @@ While this feature is enabled by default for the listed TFMs, you can disable it
 
 ## More consistent command order
 
-Starting in .NET 10, the `dotnet` CLI tool includes new aliases for common commands to make them easier to remember and type. The new commands are:
+Starting in .NET 10, the `dotnet` CLI tool includes new aliases for common commands to make them easier to remember and type. The new commands are shown in the following table.
 
-- `dotnet package add`
-- `dotnet package list`
-- `dotnet package remove`
-- `dotnet reference add`
-- `dotnet reference list`
-- `dotnet reference remove`
+| New noun-first form                                                 | Alias for                 |
+|---------------------------------------------------------------------|---------------------------|
+| [`dotnet package add`](../../tools/dotnet-package-add.md)           | `dotnet add package`      |
+| [`dotnet package list`](../../tools/dotnet-package-list.md)         | `dotnet list package`     |
+| [`dotnet package remove`](../../tools/dotnet-package-remove.md)     | `dotnet remove package`   |
+| [`dotnet reference add`](../../tools/dotnet-reference-add.md)       | `dotnet add reference`    |
+| [`dotnet reference list`](../../tools/dotnet-reference-list.md)     | `dotnet list reference`   |
+| [`dotnet reference remove`](../../tools/dotnet-reference-remove.md) | `dotnet remove reference` |
 
-These commands are aliases for the existing verb-first forms: `dotnet add package`, `dotnet list package`, `dotnet remove package`, `dotnet add reference`, `dotnet list reference`, and `dotnet remove reference`.
-
-The new noun-first forms align with general CLI standards, making the `dotnet` CLI more consistent with other tools. While the verb-first forms continue to work, using the noun-first forms for improved readability and consistency in scripts and documentation is recommended.
+The new noun-first forms align with general CLI standards, making the `dotnet` CLI more consistent with other tools. While the verb-first forms continue to work, it's better to use the noun-first forms for improved readability and consistency in scripts and documentation.

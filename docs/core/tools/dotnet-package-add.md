@@ -1,7 +1,7 @@
 ---
-title: dotnet package add command
+title: 'dotnet package add' command
 description: The 'dotnet package add' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 04/13/2022
+ms.date: 04/02/2025
 ---
 # dotnet package add
 
@@ -10,6 +10,9 @@ ms.date: 04/13/2022
 ## Name
 
 `dotnet package add` - Adds or updates a package reference in a project file.
+
+> [!NOTE]
+> If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet add package`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
 
 ## Synopsis
 

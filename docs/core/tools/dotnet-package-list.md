@@ -1,7 +1,7 @@
 ---
 title: dotnet package list command
 description: The 'dotnet package list' command provides a convenient option to list the package references for a project or solution.
-ms.date: 04/13/2022
+ms.date: 04/02/2025
 ---
 # dotnet package list
 
@@ -10,6 +10,9 @@ ms.date: 04/13/2022
 ## Name
 
 `dotnet package list` - Lists the package references for a project or solution.
+
+> [!NOTE]
+> If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet list package`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
 
 ## Synopsis
 

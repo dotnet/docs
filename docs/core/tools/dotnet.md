@@ -1,7 +1,7 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 05/06/2022
+ms.date: 04/01/2025
 ---
 # dotnet command
 
@@ -191,6 +191,7 @@ The following options are available only when `dotnet` runs an application by us
 | Command                                           | Function                 |
 |---------------------------------------------------|--------------------------|
 | [dotnet package add](dotnet-package-add.md)       | Adds a NuGet package.    |
+| [dotnet package list](dotnet-package-add.md)      | Lists NuGet packages.    |
 | [dotnet package remove](dotnet-package-remove.md) | Removes a NuGet package. |
 
 ### NuGet commands

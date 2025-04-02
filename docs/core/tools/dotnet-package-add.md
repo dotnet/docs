@@ -1,5 +1,5 @@
 ---
-title: 'dotnet package add' command
+title: dotnet package add command
 description: The 'dotnet package add' command provides a convenient option to add a NuGet package reference to a project.
 ms.date: 04/02/2025
 ---

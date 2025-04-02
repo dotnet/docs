@@ -54,11 +54,11 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet add package Azure.Identity
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add Azure.Identity
+    dotnet package add Azure.AI.OpenAI
+    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end
@@ -66,10 +66,10 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add OpenAI
+    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end
@@ -153,5 +153,5 @@ azd down
 
 ## Next steps
 
-- [Quickstart - Chat with a local AI model](/dotnet/ai/quickstarts/chat-local-model)
-- [Generate images using AI with .NET](/dotnet/ai/quickstarts/generate-images)
+- [Quickstart - Chat with a local AI model](chat-local-model.md)
+- [Generate images using AI with .NET](generate-images.md)

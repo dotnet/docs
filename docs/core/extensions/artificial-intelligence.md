@@ -22,7 +22,7 @@ To install the [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Mic
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.AI --prerelease
+dotnet package add Microsoft.Extensions.AI --prerelease
 ```
 
 ### [PackageReference](#tab/package-reference)
@@ -34,7 +34,7 @@ dotnet add package Microsoft.Extensions.AI --prerelease
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet package add](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## The `IChatClient` interface
 
@@ -267,7 +267,7 @@ In this way, the `RateLimitingEmbeddingGenerator` can be composed with other `IE
 
 - [Develop .NET applications with AI features](../../ai/get-started/dotnet-ai-overview.md)
 - [Unified AI building blocks for .NET using Microsoft.Extensions.AI](../../ai/ai-extensions.md)
-- [Build an AI chat app with .NET](/dotnet/ai/quickstarts/build-chat-app)
+- [Build an AI chat app with .NET](../../ai/quickstarts/build-chat-app.md)
 - [.NET dependency injection](dependency-injection.md)
 - [Rate limit an HTTP handler in .NET](http-ratelimiter.md)
 - [.NET Generic Host](generic-host.md)

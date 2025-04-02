@@ -70,13 +70,13 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet add package Azure.Identity
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
-    dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add Azure.Identity
+    dotnet package add Azure.AI.OpenAI
+    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet package add Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     The following list describes what each package is used for in the `VectorDataAI` app:
@@ -93,11 +93,11 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
-    dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet package add Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     The following list describes what each package is used for in the `VectorDataAI` app:
@@ -205,5 +205,5 @@ azd down
 
 ## Next steps
 
-- [Quickstart - Chat with a local AI model](/dotnet/ai/quickstarts/chat-local-model)
-- [Generate images using AI with .NET](/dotnet/ai/quickstarts/generate-images)
+- [Quickstart - Chat with a local AI model](chat-local-model.md)
+- [Generate images using AI with .NET](generate-images.md)

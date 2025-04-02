@@ -878,12 +878,12 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-package.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-add-package",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-add",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-add-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-add",
             "redirect_document_id": true
         },
         {
@@ -901,7 +901,7 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-list-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-list-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-list",
             "redirect_document_id": true
         },
         {
@@ -943,12 +943,12 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-package.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-remove-package",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-remove",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-remove-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-remove",
             "redirect_document_id": true
         },
         {
@@ -1150,6 +1150,30 @@
         {
             "source_path_from_root": "/docs/core/tools/csproj.md",
             "redirect_url": "/dotnet/core/project-sdk/msbuild-props"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-add-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-add"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-list-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-list"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-remove-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-remove"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-add-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-add"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-list-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-list"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-remove-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-remove"
         },
         {
             "source_path_from_root": "/docs/core/tools/extensibility.md",

@@ -1,30 +1,33 @@
 ---
-title: dotnet add package command
-description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 04/13/2022
+title: dotnet package add command
+description: The 'dotnet package add' command provides a convenient option to add a NuGet package reference to a project.
+ms.date: 04/02/2025
 ---
-# dotnet add package
+# dotnet package add
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
-`dotnet add package` - Adds or updates a package reference in a project file.
+`dotnet package add` - Adds or updates a package reference in a project file.
+
+> [!NOTE]
+> If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet add package`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
 
 ## Synopsis
 
 ```dotnetcli
-dotnet add [<PROJECT>] package <PACKAGE_NAME>
-    [-f|--framework <FRAMEWORK>] [--interactive]
+dotnet package add <PACKAGE_NAME>
+    [-f|--framework <FRAMEWORK>] [--interactive] [--project <PROJECT>]
     [-n|--no-restore] [--package-directory <PACKAGE_DIRECTORY>]
     [--prerelease] [-s|--source <SOURCE>] [-v|--version <VERSION>]
 
-dotnet add package -h|--help
+dotnet package add -h|--help
 ```
 
 ## Description
 
-The `dotnet add package` command provides a convenient option to add or update a package reference in a project file. When you run the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes and the package isn't referenced in the project file, a `<PackageReference>` element is added to the project file. If the check passes and the package is already referenced in the project file, the `<PackageReference>` element is updated to the latest compatible version. After the project file is updated, [dotnet restore](dotnet-restore.md) is run.
+The `dotnet package add` command provides a convenient option to add or update a package reference in a project file. When you run the command, there's a compatibility check to ensure the package is compatible with the frameworks in the project. If the check passes and the package isn't referenced in the project file, a `<PackageReference>` element is added to the project file. If the check passes and the package is already referenced in the project file, the `<PackageReference>` element is updated to the latest compatible version. After the project file is updated, [dotnet restore](dotnet-restore.md) is run.
 
 For example, adding `Microsoft.EntityFrameworkCore` to *ToDo.csproj* produces output similar to the following example:
 
@@ -57,7 +60,7 @@ The following scenarios are currently supported. These examples assume that the 
 
 Scenario 1: `<PackageReference>` does not exist in the project file, `<PackageVersion>` element does not exist in the `Directory.Packages.props file`, and the version argument is not passed from the commandline.
 
-  CLI command that is executed: `dotnet add ToDo.csproj package Microsoft.EntityFrameworkCore`
+  CLI command that is executed: `dotnet package add Microsoft.EntityFrameworkCore --project ToDo.csproj`
 
   The `<PackageVersion>` element is added to the `Directory.Packages.props file`.
 
@@ -73,7 +76,7 @@ Scenario 1: `<PackageReference>` does not exist in the project file, `<PackageVe
 
 Scenario 2: `<PackageReference>` does not exist in the project file, `<PackageVersion>` element does not exist in the `Directory.Packages.props file`, and the version argument is passed from the commandline.
 
-  CLI command that is executed: `dotnet add ToDo.csproj package Microsoft.EntityFrameworkCore --version 5.0.4`
+  CLI command that is executed: `dotnet package add Microsoft.EntityFrameworkCore --version 5.0.4 --project ToDo.csproj`
 
   The `<PackageVersion>` element is added to the `Directory.Packages.props file`.
 
@@ -89,7 +92,7 @@ Scenario 2: `<PackageReference>` does not exist in the project file, `<PackageVe
 
 Scenario 3: `<PackageReference>` does not exist in the project file, `<PackageVersion>` element does exist in the `Directory.Packages.props file`, and the version argument is not passed from the commandline.
 
-  CLI command that is executed: `dotnet add ToDo.csproj package Microsoft.EntityFrameworkCore`
+  CLI command that is executed: `dotnet package add Microsoft.EntityFrameworkCore --project ToDo.csproj`
 
   The `<PackageVersion>` element is added to the `Directory.Packages.props file`.
 
@@ -105,7 +108,7 @@ The `<PackageReference>` element is added to the project file.
 
 Scenario 4: `<PackageReference>` does not exist in the project file, `<PackageVersion>` element does exist in the `Directory.Packages.props file`, and the version argument is passed from the commandline.
 
-  CLI command that is executed: `dotnet add ToDo.csproj package Microsoft.EntityFrameworkCore --version 5.0.4`
+  CLI command that is executed: `dotnet package add Microsoft.EntityFrameworkCore --version 5.0.4 --project ToDo.csproj`
 
   The `<PackageVersion>` element is added to the `Directory.Packages.props file`.
 
@@ -168,19 +171,19 @@ Scenario 4: `<PackageReference>` does not exist in the project file, `<PackageVe
 - Add `Microsoft.EntityFrameworkCore` NuGet package to a project:
 
   ```dotnetcli
-  dotnet add package Microsoft.EntityFrameworkCore
+  dotnet package add Microsoft.EntityFrameworkCore
   ```
 
 - Add a specific version of a package to a project:
 
   ```dotnetcli
-  dotnet add ToDo.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0
+  dotnet package add Microsoft.Azure.DocumentDB.Core -v 1.0.0 --project ToDo.csproj
   ```
 
 - Add a package using a specific NuGet source:
 
   ```dotnetcli
-  dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
+  dotnet package add Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
   ```
 
 ## See also

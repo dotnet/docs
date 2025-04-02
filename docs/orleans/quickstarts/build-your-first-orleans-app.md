@@ -77,7 +77,7 @@ Orleans is available through a collection of NuGet packages, each of which provi
 In the Visual Studio Code terminal, run the following command:
 
 ```dotnetcli
-dotnet add package Microsoft.Orleans.Server
+dotnet package add Microsoft.Orleans.Server
 ```
 
 ---

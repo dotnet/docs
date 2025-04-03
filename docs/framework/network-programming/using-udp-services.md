@@ -121,6 +121,7 @@ Imports System.Text
 Public Class Program
     Public Shared Sub Main(args() As [String])
       Dim s As New Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp)
+      s.EnableBroadcast = True
       Dim broadcast As IPAddress = IPAddress.Parse("192.168.1.255")
       Dim sendbuf As Byte() = Encoding.ASCII.GetBytes(args(0))
       Dim ep As New IPEndPoint(broadcast, 11000)

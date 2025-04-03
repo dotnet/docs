@@ -73,4 +73,4 @@ The native host can now call the managed method and pass it the desired paramete
 
 ## Limitations
 
-Only one runtime can be loaded inside a single process. Even if multiple runtimes are loaded in different ways (for example, via the standard hosting process or a custom .NET Host, or loading an assembly created using NativeAOT), they're still the same flavor and can't be mixed inside a single process.
+Only one runtime can be loaded inside a single process. If the `hostfxr_initialize_for_runtime_config` API is called when a runtime is already loaded, it will check if the existing runtime is compatible with the specified initialization parameters. If compatible, the existing runtime will be used and if not compatible, the API will return a failure.

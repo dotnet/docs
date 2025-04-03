@@ -1,20 +1,15 @@
 ﻿namespace PointEvolution;
 
-// <PointVersion2>
-public record Point(int X, int Y)
+public static class SampleTwo
 {
-    public double Slope() => (double)Y / (double)X;
-}
-// </PointVersion2>
+    // <PointVersion2>
+    public record Point(int X, int Y);
 
-public static class Expected
-{
-    public static void Example()
+    public static void Main()
     {
-        // <Version2Usage>
         Point pt = new Point(1, 1);
-        double slope = pt.Slope();
-        Console.WriteLine($"The slope of {pt} is {slope}");
-        // </Version2Usage>
+        var pt2 = pt with { Y = 10 };
+        Console.WriteLine($"The two points are {pt} and {pt2}");
     }
+    // </PointVersion2>
 }

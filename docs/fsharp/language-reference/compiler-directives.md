@@ -54,12 +54,30 @@ let str = "Debugging!"
 
 ### Automatically Defined Symbols
 
-The F# compiler automatically defines certain symbols based on the build configuration. These symbols can be used with `#if` directives for conditional compilation.
+In addition to symbols explicitly defined via project settings or command-line options, **F# projects inherit a set of predefined symbols** based on the SDK, target framework, and build configuration.
 
-| Symbol  | Description |
-|---------|-------------|
-| `DEBUG` | Automatically defined in debug builds when compiling with the `Debug` configuration. |
-| `TRACE` | Defined when tracing is enabled in the project settings. |
+#### Debug, Tracing, and Nullable Settings  
+
+| Symbol    | Description |
+|-----------|-------------|
+| `DEBUG`   | Defined in debug builds when compiling with the `Debug` configuration. |
+| `TRACE`   | Defined when tracing is enabled in the project settings. |
+| `NULLABLE` | Defined when `<Nullable>enable</Nullable>` is set in the project file. |
+
+#### Target Framework Symbols  
+
+| Symbol | Description |
+|--------|-------------|
+| `NET`, `NETSTANDARD`, `NETCOREAPP` | General indicators of the .NET target type. |
+| `NET5_0_OR_GREATER`, `NET6_0_OR_GREATER`, `NET7_0_OR_GREATER` | Defined for specific .NET versions. |
+| `NETCOREAPP3_1_OR_GREATER`, `NETCOREAPP2_0_OR_GREATER` | Defined for .NET Core versions. |
+
+#### Build Configuration Symbols  
+
+| Symbol    | Description |
+|-----------|-------------|
+| `Release` | Defined in release builds. |
+| `COMPILED` | Used in compiled projects. |
 
 For example, you can use these symbols in conditional compilation:
 
@@ -71,7 +89,8 @@ printfn "Release mode."
 #endif
 ```
 
-These symbols are typically set by the compiler and do not require explicit definition in the source code.
+For a full list of predefined symbols, refer to the official documentation:
+[.NET SDK Predefined Compilation Symbols](https://learn.microsoft.com/dotnet/fsharp/tools/fsharp-interactive/#interactive-and-compiled-preprocessor-directives).
 
 ## NULLABLE directive
 

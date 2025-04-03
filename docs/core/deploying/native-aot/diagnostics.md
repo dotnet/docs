@@ -51,7 +51,7 @@ After publishing, Native AOT applications are true native binaries. The managed 
 
 The Native AOT compiler generates information about line numbers, types, locals, and parameters. The native debugger lets you inspect stack trace and variables, step into or over source lines, or set line breakpoints.
 
-To debug managed exceptions, set a breakpoint on the `RhThrowEx` method, which is called whenever a managed exception is thrown. The exception is stored in the first argument register that is `rcx` on x64 and `x0` on Arm64. If your debugger supports viewing C++ objects, you can cast
+To debug managed exceptions, set a breakpoint on the `RhThrowEx` method, which is called whenever a managed exception is thrown. The exception is stored in the first argument register, which is `rcx` on x64 and `x0` on Arm64. If your debugger supports viewing C++ objects, you can cast
 the register to `S_P_CoreLib_System_Exception*` to see more information about the exception.
 
 Collecting a [dump](../../diagnostics/dumps.md) file for a Native AOT application involves some manual steps in .NET 8.

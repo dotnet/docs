@@ -16,7 +16,7 @@ Starting in .NET 9, the .NET host resolves symbolic links before determining the
 
 ## Previous behavior
 
-The .NET host did not resolve symbolic links before calculating load paths. Assembly loads were resolved relative to the symbolic link itself, not the destination of the link.
+The .NET host didn't resolve symbolic links before calculating load paths. Assembly loads were resolved relative to the symbolic link itself, not the destination of the link.
 
 For example, if an application was laid out as follows:
 

@@ -1,10 +1,48 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using System.Xml.Linq;
 
-// 1. Use tuples. Consider a point?
-// 2. Convert tuple to a record.
-// 3. Make it a record, add some method, like distance?
-// 4. discuss struct and class. Those add more behavior.2nd project?
-  // arbitrary distance between two points.
-  // slope?
+FirstExample();
+
+void FirstExample()
+{
+    // <CreateTuple>
+    var pt = (X: 1, Y: 2);
+
+    var slope = (double)pt.Y / (double)pt.X;
+    Console.WriteLine($"A line from the origin to the point {pt} has a slope of {slope}.");
+    // </CreateTuple>
+
+    // <Modify>
+    pt.X = pt.X + 5;
+    Console.WriteLine($"The point is now at {pt}.");
+    // </Modify>
+
+    // <Wither>
+    var pt2 = pt with { Y = 10 };
+    Console.WriteLine($"The point 'pt2' is at {pt2}.");
+    // </Wither>
+
+    // <NamedAssignment>
+    var subscript = (A: 0, B: 0);
+    subscript = pt;
+    Console.WriteLine(subscript);
+    // </NamedAssignment>
+
+    // <TupleTypes>
+    var namedData = (Name: "Morning observation", Temp: 17, Wind: 4);
+    var person = (FirstName: "", LastName: "");
+    var order = (Product: "guitar picks", style: "triangle", quantity: 500, UnitPrice: 0.10m);
+    // </TupleTypes>
+}
+
+// <CreateRecord>
+Point pt = new Point(1, 1);
+var pt2 = pt with { Y = 10 };
+// </CreateRecord>
+
+PointEvolution.Expected.Example();
+
+// <DeclareRecord>
+public record Point(int X, int Y);
+// </DeclareRecord>
 

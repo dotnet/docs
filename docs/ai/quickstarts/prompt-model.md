@@ -54,11 +54,11 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet add package Azure.Identity
-    dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add Azure.Identity
+    dotnet package add Azure.AI.OpenAI
+    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end
@@ -66,10 +66,10 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
-    dotnet add package Microsoft.Extensions.Configuration
-    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet package add OpenAI
+    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet package add Microsoft.Extensions.Configuration
+    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     :::zone-end
@@ -113,7 +113,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
     :::code language="csharp" source="snippets/prompt-completion/azure-openai/program.cs" range="1-12":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](/dotnet/ai/azure-ai-services-authentication).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign-in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 
@@ -153,5 +153,5 @@ azd down
 
 ## Next steps
 
-- [Quickstart - Build an AI chat app with .NET](/dotnet/ai/quickstarts/build-chat-app)
+- [Quickstart - Build an AI chat app with .NET](build-chat-app.md)
 - [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

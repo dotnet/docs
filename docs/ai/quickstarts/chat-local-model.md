@@ -65,7 +65,7 @@ Complete the following steps to create a .NET console app that connects to your 
 1. Add the [Microsoft.Extensions.AI.Ollama](https://aka.ms/meai-ollama-nuget) packages to your app:
 
     ```dotnetcli
-    dotnet add package Microsoft.Extensions.AI.Ollama --prerelease
+    dotnet package add Microsoft.Extensions.AI.Ollama --prerelease
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.

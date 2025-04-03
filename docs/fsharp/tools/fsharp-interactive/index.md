@@ -158,6 +158,16 @@ let f (x: Tensor) = sin (sqrt x)
 printfn $"{f (dsharp.tensor 1.2)}"
 ```
 
+By default, ````#r "nuget: ...."```` doesn't use build targets from the package being referenced during restore. The `usepackagetargets` option enables the use of these build targets when required. Only add `usepackagetargets=true` if the referenced package was authored to require it during restore.
+Examples:
+
+```fsharp
+// load fsharp.data nugetpackage and consume buildtargets from fsharp.data package during restore.
+#r "nuget:fsharp.data,usepackagetargets=true"
+#r "nuget:fsharp.data,6.6.0,usepackagetargets=false"
+#r "nuget:fsharp.data,6.6.0,usepackagetargets=true"
+```
+
 ### Specifying a package source
 
 You can also specify a package source with the `#i` command. The following example specifies a remote and a local source:

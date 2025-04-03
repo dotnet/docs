@@ -104,22 +104,6 @@ items:
         items:
           - name: dotnet
             href: ../../core/tools/dotnet.md
-          - name: dotnet add/list/remove package
-            items:
-              - name: dotnet add package
-                href: ../../core/tools/dotnet-add-package.md
-              - name: dotnet list package
-                href: ../../core/tools/dotnet-list-package.md
-              - name: dotnet remove package
-                href: ../../core/tools/dotnet-remove-package.md
-          - name: dotnet add/list/remove reference
-            items:
-              - name: dotnet add reference
-                href: ../../core/tools/dotnet-add-reference.md
-              - name: dotnet list reference
-                href: ../../core/tools/dotnet-list-reference.md
-              - name: dotnet remove reference
-                href: ../../core/tools/dotnet-remove-reference.md
           - name: dotnet build
             href: ../../core/tools/dotnet-build.md
           - name: dotnet build-server
@@ -196,10 +180,26 @@ items:
                 href: ../../core/tools/dotnet-nuget-config-paths.md
           - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
-          - name: dotnet package search
-            href: ../../core/tools/dotnet-package-search.md
+          - name: dotnet package add/list/remove/earch
+            items:
+              - name: dotnet package add
+                href: ../../core/tools/dotnet-package-add.md
+              - name: dotnet package list
+                href: ../../core/tools/dotnet-package-list.md
+              - name: dotnet package remove
+                href: ../../core/tools/dotnet-package-remove.md
+              - name: dotnet package search
+                href: ../../core/tools/dotnet-package-search.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
+          - name: dotnet reference add/list/remove
+            items:
+              - name: dotnet reference add
+                href: ../../core/tools/dotnet-reference-add.md
+              - name: dotnet reference list
+                href: ../../core/tools/dotnet-reference-list.md
+              - name: dotnet reference remove
+                href: ../../core/tools/dotnet-reference-remove.md
           - name: dotnet restore
             href: ../../core/tools/dotnet-restore.md
           - name: dotnet run

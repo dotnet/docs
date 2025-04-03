@@ -15,7 +15,7 @@ To get started, install the [📦 Microsoft.Extensions.Compliance.Redaction](htt
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Compliance.Redaction
+dotnet package add Microsoft.Extensions.Compliance.Redaction
 ```
 
 ### [PackageReference](#tab/package-reference)

@@ -20,7 +20,7 @@ To get started, install the [📦 Microsoft.Extensions.Compliance.Abstractions](
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet add package Microsoft.Extensions.Compliance.Abstractions
+dotnet package add Microsoft.Extensions.Compliance.Abstractions
 ```
 
 ### [PackageReference](#tab/package-reference)

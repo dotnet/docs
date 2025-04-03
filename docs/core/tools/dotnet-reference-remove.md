@@ -1,28 +1,31 @@
 ---
-title: dotnet remove reference command
-description: The dotnet remove reference command provides a convenient option to remove project to project references.
-ms.date: 02/14/2020
+title: dotnet reference remove command
+description: The dotnet reference remove command provides a convenient option to remove project to project references.
+ms.date: 04/02/2025
 ---
-# dotnet remove reference
+# dotnet reference remove
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
-`dotnet remove reference` - Removes project-to-project (P2P) references.
+`dotnet reference remove` - Removes project-to-project (P2P) references.
+
+> [!NOTE]
+> If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet reference remove`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
 
 ## Synopsis
 
 ```dotnetcli
-dotnet remove [<PROJECT>] reference [-f|--framework <FRAMEWORK>]
+dotnet reference remove [-f|--framework <FRAMEWORK>] [--project <PROJECT>]
      <PROJECT_REFERENCES>
 
-dotnet remove reference -h|--help
+dotnet reference remove -h|--help
 ```
 
 ## Description
 
-The `dotnet remove reference` command provides a convenient option to remove project references from a project.
+The `dotnet reference remove` command provides a convenient option to remove project references from a project.
 
 ## Arguments
 
@@ -47,17 +50,17 @@ Project-to-project (P2P) references to remove. You can specify one or multiple p
 - Remove a project reference from the specified project:
 
   ```dotnetcli
-  dotnet remove app/app.csproj reference lib/lib.csproj
+  dotnet reference remove lib/lib.csproj --project app/app.csproj
   ```
 
 - Remove multiple project references from the project in the current directory:
 
   ```dotnetcli
-  dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj
+  dotnet reference remove lib1/lib1.csproj lib2/lib2.csproj
   ```
 
 - Remove multiple project references using a glob pattern on Unix/Linux:
 
   ```dotnetcli
-  dotnet remove app/app.csproj reference **/*.csproj`
+  dotnet reference remove **/*.csproj` --project app/app.csproj
   ```

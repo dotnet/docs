@@ -274,4 +274,4 @@ The <xref:System.Runtime.CompilerServices.IUnknownConstantAttribute?displayPrope
 - <xref:System.Attribute>
 - <xref:System.Reflection>
 - [Attributes](../../../standard/attributes/index.md)
-- [Reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/)
+- [Reflection](../../advanced-topics/reflection-and-attributes/index.md)

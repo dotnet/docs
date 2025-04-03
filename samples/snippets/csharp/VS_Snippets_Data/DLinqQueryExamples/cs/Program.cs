@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -333,10 +333,10 @@ namespace cs_DLinqQueryExamples
 
             foreach (IGrouping<Int32?, Product> grp in prodQuery)
             {
-                Console.WriteLine("\nCategoryID Key = {0}:", grp.Key);
+                Console.WriteLine($"\nCategoryID Key = {grp.Key}:");
                 foreach (Product listing in grp)
                 {
-                    Console.WriteLine("\t{0}", listing.ProductName);
+                    Console.WriteLine($"\t{listing.ProductName}");
                 }
             }
             // </Snippet27>
@@ -409,10 +409,10 @@ namespace cs_DLinqQueryExamples
 
             foreach (var grp in custRegionQuery)
             {
-                Console.WriteLine("\nLocation Key: {0}", grp.Key);
+                Console.WriteLine($"\nLocation Key: {grp.Key}");
                 foreach (var listing in grp)
                 {
-                    Console.WriteLine("\t{0}", listing);
+                    Console.WriteLine($"\t{listing}");
                 }
             }
             // </Snippet35>
@@ -448,11 +448,10 @@ namespace cs_DLinqQueryExamples
             foreach (Customer custObj in custEmpQuery)
             {
                 if (custObj.Orders.Count > 0)
-                    Console.WriteLine("CustomerID: {0}", custObj.CustomerID);
+                    Console.WriteLine($"CustomerID: {custObj.CustomerID}");
                 foreach (Order ordObj in custObj.Orders)
                 {
-                    Console.WriteLine("\t OrderID: {0}; ShipCity: {1}",
-                        ordObj.OrderID, ordObj.ShipCity);
+                    Console.WriteLine($"\t OrderID: {ordObj.OrderID}; ShipCity: {ordObj.ShipCity}");
                 }
             }
             // </Snippet38>
@@ -651,7 +650,7 @@ namespace cs_DLinqQueryExamples
                     grp.Key.CategoryID, grp.Key.SupplierID);
                 foreach (var listing in grp.grouping)
                 {
-                    Console.WriteLine("\t{0}", listing.ProductName);
+                    Console.WriteLine($"\t{listing.ProductName}");
                 }
             }
             // </Snippet33>

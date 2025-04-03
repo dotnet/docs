@@ -1,34 +1,27 @@
-﻿using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.ChatCompletion;
+﻿using Microsoft.Extensions.AI;
 
-// Create a kernel with OpenAI chat completion
-// Warning due to the experimental state of some Semantic Kernel SDK features.
-#pragma warning disable SKEXP0070
-Kernel kernel = Kernel.CreateBuilder()
-                    .AddOllamaChatCompletion(
-                        modelId: "phi3:mini",
-                        endpoint: new Uri("http://localhost:11434"))
-                    .Build();
+IChatClient chatClient =
+    new OllamaChatClient(new Uri("http://localhost:11434/"), "phi3:mini");
 
-var aiChatService = kernel.GetRequiredService<IChatCompletionService>();
-var chatHistory = new ChatHistory();
+// Start the conversation with context for the AI model
+List<ChatMessage> chatHistory = new();
 
 while (true)
 {
     // Get user prompt and add to chat history
     Console.WriteLine("Your prompt:");
     var userPrompt = Console.ReadLine();
-    chatHistory.Add(new ChatMessageContent(AuthorRole.User, userPrompt));
+    chatHistory.Add(new ChatMessage(ChatRole.User, userPrompt));
 
     // Stream the AI response and add to chat history
     Console.WriteLine("AI Response:");
     var response = "";
-    await foreach(var item in 
-        aiChatService.GetStreamingChatMessageContentsAsync(chatHistory))
+    await foreach (var item in
+        chatClient.GetStreamingResponseAsync(chatHistory))
     {
-        Console.Write(item.Content);
-        response += item.Content;
+        Console.Write(item.Text);
+        response += item.Text;
     }
-    chatHistory.Add(new ChatMessageContent(AuthorRole.Assistant, response));
+    chatHistory.Add(new ChatMessage(ChatRole.Assistant, response));
     Console.WriteLine();
 }

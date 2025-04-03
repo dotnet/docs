@@ -1,7 +1,7 @@
 ---
-title: "Serialize and deserialize JSON using C# - .NET"
+title: "Serialize and deserialize JSON using C#"
 description: This overview describes the System.Text.Json namespace functionality for serializing to and deserializing from JSON in .NET.
-ms.date: 10/18/2021
+ms.date: 01/19/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - CSharp
@@ -13,9 +13,9 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# JSON serialization and deserialization (marshalling and unmarshalling) in .NET - overview
+# JSON serialization and deserialization in .NET - overview
 
-The <xref:System.Text.Json> namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON). *Serialization* is the process of converting the state of an object, that is, the values of its properties, into a form that can be stored or transmitted. The serialized form doesn't include any information about an object's associated methods. *Deserialization* reconstructs an object from the serialized form.
+The <xref:System.Text.Json> namespace provides functionality for serializing to and deserializing from (or marshalling and unmarshalling) JavaScript Object Notation (JSON). *Serialization* is the process of converting the state of an object, that is, the values of its properties, into a form that can be stored or transmitted. The serialized form doesn't include any information about an object's associated methods. *Deserialization* reconstructs an object from the serialized form.
 
 The `System.Text.Json` library design emphasizes high performance and low memory allocation over an extensive feature set. Built-in UTF-8 support optimizes the process of reading and writing JSON text encoded as UTF-8, which is the most prevalent encoding for data on the web and files on disk.
 
@@ -31,15 +31,13 @@ For framework versions earlier than .NET Core 3.0, install the [System.Text.Json
 
 * .NET Standard 2.0 and later
 * .NET Framework 4.6.2 and later
-* .NET Core 2.1 and later
-* .NET 5 and later
+* .NET 8 and later
 
 ## Namespaces and APIs
 
 * The <xref:System.Text.Json> namespace contains all the entry points and the main types.
 * The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization.
-
-The code examples shown in this article require `using` directives for one or both of these namespaces.
+* The <xref:System.Net.Http.Json> namespace contains extension methods for [serializing and deserializing JSON payloads from the network](httpclient-extensions.md).
 
 > [!IMPORTANT]
 >
@@ -48,20 +46,9 @@ The code examples shown in this article require `using` directives for one or bo
 > * Attributes from the <xref:System.Runtime.Serialization> namespace.
 > * The <xref:System.SerializableAttribute?displayProperty=fullName> attribute and the <xref:System.Runtime.Serialization.ISerializable> interface. These types are used only for [Binary and XML serialization](/previous-versions/dotnet/fundamentals/serialization/binary/binary-serialization).
 
-### HttpClient and HttpContent extension methods
-
-Serializing and deserializing JSON payloads from the network are common operations. Extension methods on [HttpClient](xref:System.Net.Http.Json.HttpClientJsonExtensions) and [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions) let you do these operations in a single line of code. These extension methods use [web defaults for JsonSerializerOptions](configure-options.md#web-defaults-for-jsonserializeroptions).
-
-The following example illustrates use of <xref:System.Net.Http.Json.HttpClientJsonExtensions.GetFromJsonAsync%2A?displayProperty=nameWithType> and <xref:System.Net.Http.Json.HttpClientJsonExtensions.PostAsJsonAsync%2A?displayProperty=nameWithType>:
-
-:::code language="csharp" source="snippets/how-to-contd/csharp/HttpClientExtensionMethods.cs" highlight="23,30":::
-:::code language="vb" source="snippets/how-to-contd/vb/HttpClientExtensionMethods.vb" :::
-
-There are also extension methods for System.Text.Json on [HttpContent](xref:System.Net.Http.Json.HttpContentJsonExtensions).
-
 ## Reflection vs. source generation
 
-By default, `System.Text.Json` gathers the metadata it needs to access properties of objects for serialization and deserialization *at run time* using [reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/). As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/index.md#source-generators) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
+By default, `System.Text.Json` gathers the metadata it needs to access properties of objects for serialization and deserialization *at run time* using [reflection](../../../csharp/advanced-topics/reflection-and-attributes/index.md). As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/index.md#source-generators) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
 
 For more information, see [Reflection versus source generation](reflection-vs-source-generation.md).
 

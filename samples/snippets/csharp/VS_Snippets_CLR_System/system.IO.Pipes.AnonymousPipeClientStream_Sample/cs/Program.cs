@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 using System;
 using System.IO;
 using System.IO.Pipes;
@@ -12,8 +12,7 @@ class PipeClient
             using (PipeStream pipeClient =
                 new AnonymousPipeClientStream(PipeDirection.In, args[0]))
             {
-                Console.WriteLine("[CLIENT] Current TransmissionMode: {0}.",
-                   pipeClient.TransmissionMode);
+                Console.WriteLine($"[CLIENT] Current TransmissionMode: {pipeClient.TransmissionMode}.");
 
                 using (StreamReader sr = new StreamReader(pipeClient))
                 {

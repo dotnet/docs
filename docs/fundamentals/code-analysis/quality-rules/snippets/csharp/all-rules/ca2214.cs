@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ca2214
 {
@@ -29,7 +29,7 @@ namespace ca2214
         }
         public override void DoSomething()
         {
-            Console.WriteLine("Derived DoSomething is called - initialized ? {0}", initialized);
+            Console.WriteLine($"Derived DoSomething is called - initialized ? {initialized}");
         }
     }
 

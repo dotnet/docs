@@ -18,7 +18,7 @@ let (|identifier|) [arguments] valueToMatch = expression
 let (|identifier1|identifier2|...|) valueToMatch = expression
 
 // Partial active pattern definition.
-// Uses a FSharp.Core.option<_> to represent if the type is satisfied at the call site.
+// Can use FSharp.Core.option<_>, FSharp.Core.voption<_> or bool to represent if the type is satisfied at the call site.
 let (|identifier|_|) [arguments] valueToMatch = expression
 ```
 
@@ -132,9 +132,38 @@ Note however that only single-case active patterns can be parameterized.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5008.fs)]
 
+## Return Type for Partial Active Patterns
+
+Partial active patterns return `Some ()` to indicate a match and `None` otherwise.
+
+Consider this match:
+
+```fsharp
+match key with
+| CaseInsensitive "foo" -> ...
+| CaseInsensitive "bar" -> ...
+```
+
+The partial active pattern for it would be:
+
+```fsharp
+let (|CaseInsensitive|_|) (pattern: string) (value: string) =
+    if String.Equals(value, pattern, StringComparison.OrdinalIgnoreCase) then
+        Some ()
+    else
+        None
+```
+
+Starting with F# 9, such patterns can also return `bool`:
+
+```fsharp
+let (|CaseInsensitive|_|) (pattern: string) (value: string) =
+    String.Equals(value, pattern, StringComparison.OrdinalIgnoreCase)
+```
+
 ## Struct Representations for Partial Active Patterns
 
-By default, partial active patterns return an `option` value, which will involve an allocation for the `Some` value on a successful match. Alternatively, you can use a [value option](value-options.md) as a return value through the use of the `Struct` attribute:
+By default, if a partial active pattern returns an `option`, this will involve an allocation for the `Some` value on a successful match. To avoid it, you can use a [value option](value-options.md) as a return value through the use of the `Struct` attribute:
 
 ```fsharp
 open System
@@ -147,6 +176,26 @@ let (|Int|_|) str =
 ```
 
 The attribute must be specified, because the use of a struct return is not inferred from simply changing the return type to `ValueOption`. For more information, see [RFC FS-1039](https://github.com/fsharp/fslang-design/blob/main/FSharp-6.0/FS-1039-struct-representation-for-active-patterns.md).
+
+## Null active patterns
+
+In F# 9, nullability related active patterns were added.
+
+The first one is `| Null | NonNull x |`, which is a recommended way to handle possible nulls. In the following example, parameter `s` is inferred nullable via this active pattern usage:
+
+```fsharp
+ let len s =
+    match s with
+    | Null -> -1
+    | NonNull s -> String.length s
+```
+
+If you rather want to automatically throw `NullReferenceException`, you can use the `| NonNullQuick |` pattern:
+
+```fsharp
+let len (NonNullQuick str) =  // throws if the argument is null
+    String.length str
+```
 
 ## See also
 

@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Globalization;
 
@@ -11,14 +11,14 @@ public class InstantiateEx3
 
         culture = CultureInfo.CurrentCulture;
         dtfi = culture.DateTimeFormat;
-        Console.WriteLine("Culture Name:      {0}", culture.Name);
-        Console.WriteLine("User Overrides:    {0}", culture.UseUserOverride);
-        Console.WriteLine("Long Time Pattern: {0}\n", culture.DateTimeFormat.LongTimePattern);
+        Console.WriteLine($"Culture Name:      {culture.Name}");
+        Console.WriteLine($"User Overrides:    {culture.UseUserOverride}");
+        Console.WriteLine($"Long Time Pattern: {culture.DateTimeFormat.LongTimePattern}\n");
 
         culture = new CultureInfo(CultureInfo.CurrentCulture.Name, false);
-        Console.WriteLine("Culture Name:      {0}", culture.Name);
-        Console.WriteLine("User Overrides:    {0}", culture.UseUserOverride);
-        Console.WriteLine("Long Time Pattern: {0}\n", culture.DateTimeFormat.LongTimePattern);
+        Console.WriteLine($"Culture Name:      {culture.Name}");
+        Console.WriteLine($"User Overrides:    {culture.UseUserOverride}");
+        Console.WriteLine($"Long Time Pattern: {culture.DateTimeFormat.LongTimePattern}\n");
     }
 }
 // The example displays the following output:

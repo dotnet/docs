@@ -41,7 +41,7 @@ It's possible that when you install .NET, specific dependencies may not be insta
 - [Fedora](linux-fedora.md#dependencies)
 - [RHEL and CentOS Stream](linux-rhel.md#dependencies)
 - [SLES](linux-sles.md#dependencies)
-- [Ubuntu](linux-ubuntu.md#dependencies)
+- [Ubuntu](linux-ubuntu-decision.md#dependencies)
 
 For generic information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/main/Documentation/self-contained-linux-apps.md).
 
@@ -82,6 +82,12 @@ You can download the script with `wget`:
 
 ```bash
 wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+```
+
+Or, with `curl`:
+
+```bash
+curl -L https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh
 ```
 
 Before running this script, make sure you grant permission for this script to run as an executable:

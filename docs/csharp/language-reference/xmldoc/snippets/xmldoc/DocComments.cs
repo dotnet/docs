@@ -164,8 +164,8 @@ namespace XmlTags
     /// This tag will apply to the primary constructor parameter.
     /// </param>
     public record Person(string FirstName, string LastName);
+    //</ClassExample>
 }
-//</ClassExample>
 
 namespace InheritDoc
 {

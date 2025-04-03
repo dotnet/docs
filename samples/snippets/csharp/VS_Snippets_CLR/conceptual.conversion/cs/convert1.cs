@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -15,38 +15,25 @@ public class Example
         // Convert an Int32 value to a Decimal (a widening conversion).
         int integralValue = 12534;
         decimal decimalValue = Convert.ToDecimal(integralValue);
-        Console.WriteLine("Converted the {0} value {1} to " +
-                                          "the {2} value {3:N2}.",
-                                          integralValue.GetType().Name,
-                                          integralValue,
-                                          decimalValue.GetType().Name,
-                                          decimalValue);
+        Console.WriteLine($"Converted the {integralValue.GetType().Name} value {integralValue} to " +
+                                          "the {decimalValue.GetType().Name} value {decimalValue:N2}.");
         // Convert a Byte value to an Int32 value (a widening conversion).
         byte byteValue = Byte.MaxValue;
         int integralValue2 = Convert.ToInt32(byteValue);
-        Console.WriteLine("Converted the {0} value {1} to " +
-                                          "the {2} value {3:G}.",
-                                          byteValue.GetType().Name,
-                                          byteValue,
-                                          integralValue2.GetType().Name,
-                                          integralValue2);
+        Console.WriteLine($"Converted the {byteValue.GetType().Name} value {byteValue} to " +
+                                          "the {integralValue2.GetType().Name} value {integralValue2:G}.");
 
         // Convert a Double value to an Int32 value (a narrowing conversion).
         double doubleValue = 16.32513e12;
         try
         {
             long longValue = Convert.ToInt64(doubleValue);
-            Console.WriteLine("Converted the {0} value {1:E} to " +
-                                              "the {2} value {3:N0}.",
-                                              doubleValue.GetType().Name,
-                                              doubleValue,
-                                              longValue.GetType().Name,
-                                              longValue);
+            Console.WriteLine($"Converted the {doubleValue.GetType().Name} value {doubleValue:E} to " +
+                                              "the {longValue.GetType().Name} value {longValue:N0}.");
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Unable to convert the {0:E} value {1}.",
-                                              doubleValue.GetType().Name, doubleValue);
+            Console.WriteLine($"Unable to convert the {doubleValue.GetType().Name:E} value {doubleValue}.");
         }
 
         // Convert a signed byte to a byte (a narrowing conversion).
@@ -54,17 +41,12 @@ public class Example
         try
         {
             byte byteValue2 = Convert.ToByte(sbyteValue);
-            Console.WriteLine("Converted the {0} value {1} to " +
-                                              "the {2} value {3:G}.",
-                                              sbyteValue.GetType().Name,
-                                              sbyteValue,
-                                              byteValue2.GetType().Name,
-                                              byteValue2);
+            Console.WriteLine($"Converted the {sbyteValue.GetType().Name} value {sbyteValue} to " +
+                                              "the {byteValue2.GetType().Name} value {byteValue2:G}.");
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Unable to convert the {0} value {1}.",
-                                              sbyteValue.GetType().Name, sbyteValue);
+            Console.WriteLine($"Unable to convert the {sbyteValue.GetType().Name} value {sbyteValue}.");
         }
         // The example displays the following output:
         //       Converted the Int32 value 12534 to the Decimal value 12,534.00.
@@ -82,19 +64,17 @@ public class Example
         // Convert a Double to a Decimal.
         decimal decimalValue = 13956810.96702888123451471211m;
         doubleValue = Convert.ToDouble(decimalValue);
-        Console.WriteLine("{0} converted to {1}.", decimalValue, doubleValue);
+        Console.WriteLine($"{decimalValue} converted to {doubleValue}.");
 
         doubleValue = 42.72;
         try
         {
             int integerValue = Convert.ToInt32(doubleValue);
-            Console.WriteLine("{0} converted to {1}.",
-                                              doubleValue, integerValue);
+            Console.WriteLine($"{doubleValue} converted to {integerValue}.");
         }
         catch (OverflowException)
         {
-            Console.WriteLine("Unable to convert {0} to an integer.",
-                                              doubleValue);
+            Console.WriteLine($"Unable to convert {doubleValue} to an integer.");
         }
         // The example displays the following output:
         //       13956810.96702888123451471211 converted to 13956810.9670289.

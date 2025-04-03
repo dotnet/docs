@@ -102,7 +102,7 @@ These improvements also mean that more registries are supported: Harbor, Artifac
 > dotnet publish -r linux-x64 -p PublishProfile=DefaultContainer
 ```
 
-For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../../docker/publish-as-container.md).
+For more information containerizing .NET apps, see [Containerize a .NET app with dotnet publish](../../containers/sdk-publish.md).
 
 ### Publish to tar.gz archive
 

@@ -1,7 +1,7 @@
 ---
 title: Pattern matching overview
 description: "Learn about pattern matching expressions in C#"
-ms.date: 03/13/2024
+ms.date: 01/27/2025
 ---
 
 # Pattern matching overview
@@ -78,6 +78,14 @@ The first two arms examine two properties of the `Order`. The third examines onl
 
 The preceding code demonstrates the [*positional pattern*](../../language-reference/operators/patterns.md#positional-pattern) where the properties are deconstructed for the expression.
 
+You can also match a property against `{ }`, which matches any non-null value. Consider the following declaration, which stores measurements with an optional annotation:
+
+:::code language="csharp" source="snippets/patterns/Program.cs" ID="Observation":::
+
+You can test if a given observation has a non-null annotation using the following pattern matching expression:
+
+:::code language="csharp" source="snippets/patterns/Program.cs" ID="NotNullPropertyPattern":::
+
 ## List patterns
 
 You can check elements in a list or an array using a *list pattern*. A [list pattern](../../language-reference/operators/patterns.md#list-patterns) provides a means to apply a pattern to any element of a sequence. In addition, you can apply the *discard pattern* (`_`) to match any element, or apply a *slice pattern* to match zero or more elements.
@@ -110,6 +118,6 @@ This article provided a tour of the kinds of code you can write with pattern mat
 ## See also
 
 - [Use pattern matching to avoid 'is' check followed by a cast (style rules IDE0020 and IDE0038)](../../../fundamentals/code-analysis/style-rules/ide0020-ide0038.md)
-- [Exploration: Use pattern matching to build your class behavior for better code](../../whats-new/tutorials/patterns-objects.md)
+- [Exploration: Use pattern matching to build your class behavior for better code](../../tutorials/patterns-objects.md)
 - [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../tutorials/pattern-matching.md)
 - [Reference: Pattern matching](../../language-reference/operators/patterns.md)

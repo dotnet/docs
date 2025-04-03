@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Reflection;
 
@@ -12,12 +12,11 @@ class Example1
         try
         {
             int[] values = primes.GetPrimesFrom(start);
-            Console.WriteLine("There are {0} prime numbers from {1} to {2}",
-                              start, limit);
+            Console.WriteLine($"There are {start} prime numbers from {limit} to {2}");
         }
         catch (NotPrimeException e)
         {
-            Console.WriteLine("{0} is not prime", e.NonPrime);
+            Console.WriteLine($"{e.NonPrime} is not prime");
             Console.WriteLine(e);
             Console.WriteLine("--------");
         }
@@ -35,7 +34,7 @@ class Example1
         }
         catch (NotPrimeException e)
         {
-            Console.WriteLine("{0} is not prime", e.NonPrime);
+            Console.WriteLine($"{e.NonPrime} is not prime");
             Console.WriteLine(e);
             Console.WriteLine("--------");
         }

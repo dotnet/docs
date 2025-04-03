@@ -19,7 +19,7 @@ You can declare identifiers that match C# keywords by using the `@` prefix on th
 For a complete definition of valid identifiers, see the [Identifiers article in the C# Language Specification](~/_csharpstandard/standard/lexical-structure.md#643-identifiers).
 
 > [!IMPORTANT]
-> [The C# language specification](~/_csharpstandard/standard/lexical-structure.md#643-identifiers) only allows letter (Lu, Ll, Lt, Lm, Lo or Nl), digit (Nd), connecting (Pc), combining (Mn or Mc), and formatting (Cf) categories. Anything outside that is automatically replaced using `_`. This might impact certain Unicode characters.
+> [The C# language specification](~/_csharpstandard/standard/lexical-structure.md#643-identifiers) only allows letter (Lu, Ll, Lt, Lm, or Nl), digit (Nd), connecting (Pc), combining (Mn or Mc), and formatting (Cf) categories. Anything outside that is automatically replaced using `_`. This might impact certain Unicode characters.
 
 ## Naming conventions
 
@@ -123,7 +123,7 @@ public record PhysicalAddress(
     string ZipCode);
 ```
 
-For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-definition).
+For more information on positional records, see [Positional syntax for property definition](../../language-reference/builtin-types/record.md#positional-syntax-for-property-and-field-definition).
 
 ### Camel case
 

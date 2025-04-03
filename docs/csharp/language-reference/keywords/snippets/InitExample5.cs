@@ -5,7 +5,7 @@
         get;
         init
         {
-            field = (YearOfBirth <= DateTime.Now.Year)
+            field = (value <= DateTime.Now.Year)
                 ? value
                 : throw new ArgumentOutOfRangeException(nameof(value), "Year of birth can't be in the future");
         }

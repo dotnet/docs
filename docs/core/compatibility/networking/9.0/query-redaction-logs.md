@@ -5,9 +5,9 @@ ms.date: 11/5/2024
 ai-usage: ai-assisted
 ---
 
-# URI query redaction in IHttpClientFactory logs
+# URI query and fragment redaction in IHttpClientFactory logs
 
-In .NET 9, the default implementation of <xref:System.Net.Http.IHttpClientFactory> has been modified to scrub query strings when logging URI information. This change enhances privacy by preventing the logging of potentially sensitive information contained in query strings. For scenarios where logging query strings is necessary and deemed safe, you can override this behavior.
+In .NET 9, the default implementation of <xref:System.Net.Http.IHttpClientFactory> has been modified to scrub query strings when logging URI information. This change enhances privacy by preventing the logging of potentially sensitive information contained in query strings while keeping the performance costs of the redaction minimal. For scenarios where logging query strings is necessary and deemed safe, you can override this behavior.
 
 ## Version introduced
 
@@ -19,7 +19,7 @@ Previously, the default implementation of `IHttpClientFactory` logging included 
 
 ## New behavior
 
-The messages passed to <xref:Microsoft.Extensions.Logging.ILogger> now have query strings replaced by a `*` character.
+The messages passed to <xref:Microsoft.Extensions.Logging.ILogger> now have the query and fragment part replaced by a `*` character.
 
 ## Type of breaking change
 
@@ -27,7 +27,7 @@ This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-The primary reason for this change is to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data and excluding them from logs by default helps protect this information.
+The primary reason for this change is to enhance privacy by reducing the risk of sensitive information being logged inadvertently. Query strings often contain sensitive data and excluding them from logs by default helps protect this information. To keep the implementation simple and efficient, the fragment part is also scrubbed.
 
 ## Recommended action
 

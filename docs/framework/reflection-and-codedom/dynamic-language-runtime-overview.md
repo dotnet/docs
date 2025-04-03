@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "IronPython"
   - "DLR"
   - "IronRuby"
-ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
 ---
 # Dynamic language runtime overview
 
@@ -77,7 +76,7 @@ The DLR uses binders in call sites to communicate not only with .NET, but with o
 
 ## DLR documentation
 
-For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with .NET, see the documentation on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr/tree/master/Docs) repo on GitHub.
+For more information about how to use the open source version of the DLR to add dynamic behavior to a language, or about how to enable the use of a dynamic language with .NET, see the documentation on the [IronLanguages/dlr](https://github.com/IronLanguages/dlr/tree/main/Docs) repo on GitHub.
 
 ## See also
 

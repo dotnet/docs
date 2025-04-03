@@ -1,4 +1,4 @@
-﻿// <Snippet21>
+// <Snippet21>
 using System;
 using System.Globalization;
 using System.IO;
@@ -52,7 +52,7 @@ public class Example
             newDates[ctr] = DateTime.Parse(values[ctr], CultureInfo.CurrentCulture);
          }
          catch (FormatException) {
-            Console.WriteLine("Failed to parse {0}", values[ctr]);
+            Console.WriteLine($"Failed to parse {values[ctr]}");
             exceptionOccurred = true;
          }
       }

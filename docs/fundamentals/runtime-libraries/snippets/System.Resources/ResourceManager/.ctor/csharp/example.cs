@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 using System.Resources;
@@ -14,7 +14,7 @@ public class Example1
 
         Console.Write("Enter your name: ");
         string name = Console.ReadLine();
-        Console.WriteLine("{0} {1}!", greeting, name);
+        Console.WriteLine($"{greeting} {name}!");
     }
 }
 // The example produces output similar to the following:

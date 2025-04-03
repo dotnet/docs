@@ -8,11 +8,13 @@ class Program
 
         NullReferenceCheck();
 
-        var sequence = new List<int> {1,2,3,4,5,6,7};
+        var sequence = new List<int> { 1, 2, 3, 4, 5, 6, 7 };
         var middle = MidPoint(sequence);
         Console.WriteLine(middle);
 
         ListPattern.Example();
+
+        NotNullProperty(new Observation(42, "C", "Temperature"));
     }
 
     // <MidPoint>
@@ -65,4 +67,21 @@ class Program
         }
         // </NullableCheck>
     }
+
+    private static void NotNullProperty(Observation observation)
+    {
+        // <NotNullPropertyPattern>
+        if (observation.Annotation is { })
+        {
+            Console.WriteLine($"Observation description: {observation.Annotation}");
+        }
+        // </NotNullPropertyPattern>
+    }
+
+    // <Observation>
+    public record class Observation(int Value, string Units, string Name)
+    {
+        public string? Annotation { get; set; }
+    }
+    // </Observation>
 }

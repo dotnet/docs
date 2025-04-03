@@ -1,7 +1,7 @@
 ---
 title: "Organizing types in namespaces"
 description: Learn how namespaces help you organize related types.
-ms.date: 05/14/2021
+ms.date: 11/24/2024
 helpviewer_keywords: 
   - "C# language, namespaces"
   - "namespaces [C#]"
@@ -28,7 +28,7 @@ Second, declaring your own namespaces can help you control the scope of class an
 
 The name of the namespace must be a valid C# [identifier name](../coding-style/identifier-names.md).
 
-Beginning with C# 10, you can declare a namespace for all types defined in that file, as shown in the following example:
+You can declare a namespace for all types defined in that file, as shown in the following example:
 
 :::code language="csharp" source="snippets/namespaces/filescopednamespace.cs":::
 
@@ -41,7 +41,7 @@ Namespaces have the following properties:
 - They organize large code projects.
 - They're delimited by using the `.` operator.
 - The `using` directive obviates the requirement to specify the name of the namespace for every class.
-- The `global` namespace is the "root" namespace: `global::System` will always refer to the .NET <xref:System> namespace.
+- The `global` namespace is the "root" namespace: `global::System` always refers to the .NET <xref:System> namespace.
 
 ## C# language specification
 

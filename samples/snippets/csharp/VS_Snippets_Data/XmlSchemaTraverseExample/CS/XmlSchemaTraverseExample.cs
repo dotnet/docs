@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Collections;
 using System.Xml;
@@ -29,7 +29,7 @@ class XmlSchemaTraverseExample
         foreach (XmlSchemaElement element in customerSchema.Elements.Values)
         {
 
-            Console.WriteLine("Element: {0}", element.Name);
+            Console.WriteLine($"Element: {element.Name}");
 
             // Get the complex type of the Customer element.
             XmlSchemaComplexType complexType = element.ElementSchemaType as XmlSchemaComplexType;
@@ -46,7 +46,7 @@ class XmlSchemaTraverseExample
                     XmlSchemaAttribute attribute =
                         (XmlSchemaAttribute)enumerator.Value;
 
-                    Console.WriteLine("Attribute: {0}", attribute.Name);
+                    Console.WriteLine($"Attribute: {attribute.Name}");
                 }
             }
 
@@ -56,7 +56,7 @@ class XmlSchemaTraverseExample
             // Iterate over each XmlSchemaElement in the Items collection.
             foreach (XmlSchemaElement childElement in sequence.Items)
             {
-                Console.WriteLine("Element: {0}", childElement.Name);
+                Console.WriteLine($"Element: {childElement.Name}");
             }
         }
     }

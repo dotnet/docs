@@ -1,7 +1,7 @@
 ---
-title: "Arrays"
+title: "The array reference type"
 description: Store multiple variables of the same type in an array data structure in C#. Declare an array by specifying a type or specify Object to store any type.
-ms.date: 08/24/2023
+ms.date: 12/09/2024
 helpviewer_keywords:
   - "arrays [C#]"
   - "C# language, arrays"
@@ -25,6 +25,24 @@ You can store multiple variables of the same type in an array data structure. Yo
 ```csharp
 type[] arrayName;
 ```
+
+An array is a reference type, so the array can be a [nullable reference](../../nullable-references.md) type. The element types might be reference types, so an array can be declared to hold nullable reference types. The following example declarations show the different syntax used to declare the nullability of the array or the elements:
+
+```csharp
+type?[] arrayName; // non nullable array of nullable element types.
+type[]? arrayName; // nullable array of non-nullable element types.
+type?[]? arrayName; // nullable array of nullable element types.
+```
+
+Uninitialized elements in an array are set to the default value for that type:
+
+```csharp
+int[] numbers = new int[10]; // All values are 0
+string[] messages = new string[10]; // All values are null.
+```
+
+> [!IMPORTANT]
+> In the preceding example, even though the type is `string[]`, an array of non-nullable strings, the default value for each element is null. The best way to initialize an array to non-null values is to use a [collection expressions](../operators/collection-expressions.md).
 
 An array has the following properties:
 
@@ -67,7 +85,7 @@ You can pass an initialized single-dimensional array to a method. In the followi
 
 ## Multidimensional arrays
 
-Arrays can have more than one dimension. For example, the following declarations create four arrays: two have two dimensions, two have three dimensions. The first two declarations declare the length of each dimension, but don't initialize the values of the array. The second two declarations use an initializer to set the values of each element in the multidimensional array.
+Arrays can have more than one dimension. For example, the following declarations create four arrays. Two arrays have two dimensions. Two arrays have three dimensions. The first two declarations declare the length of each dimension, but don't initialize the values of the array. The second two declarations use an initializer to set the values of each element in the multidimensional array.
 
 :::code language="csharp" source="./snippets/shared/Arrays.cs" id="MultiDimensionalArrayDeclaration":::
 

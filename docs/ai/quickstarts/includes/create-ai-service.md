@@ -10,7 +10,7 @@
 
 1. From a terminal or command prompt, navigate to the root of your project directory.
 
-1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
+1. Run the following commands to configure your Azure OpenAI endpoint and model name for the sample app:
 
     ```bash
     dotnet user-secrets init
@@ -24,7 +24,7 @@
 
 1. From a terminal or command prompt, navigate to the root of your project directory.
 
-1. Run the following commands to configure your OpenAI API key as a secret for the sample app:
+1. Run the following commands to configure your Azure OpenAI endpoint and model name for the sample app:
 
     ```bash
     dotnet user-secrets init

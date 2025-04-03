@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -24,10 +24,10 @@ public class Example
       // <Snippet21>
       Console.WriteLine("Formatting:");
       TimeSpan ts1 = TimeSpan.Parse("0:0:3.669");
-      Console.WriteLine("{0} ('%F') --> {0:%F}", ts1);
+      Console.WriteLine($"{ts1} ('%F') --> {ts1:%F}");
 
       TimeSpan ts2 = TimeSpan.Parse("0:0:3.091");
-      Console.WriteLine("{0} ('ss\\.F') --> {0:ss\\.F}", ts2);
+      Console.WriteLine($"{ts2} ('ss\\.F') --> {ts2:ss\\.F}");
       Console.WriteLine();
 
       Console.WriteLine("Parsing:");
@@ -37,10 +37,9 @@ public class Example
 
       foreach (string input in inputs) {
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
-            Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
+            Console.WriteLine($"{input} ('{fmt}') --> {ts3}");
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -59,10 +58,10 @@ public class Example
       // <Snippet22>
       Console.WriteLine("Formatting:");
       TimeSpan ts1 = TimeSpan.Parse("0:0:3.697");
-      Console.WriteLine("{0} ('FF') --> {0:FF}", ts1);
+      Console.WriteLine($"{ts1} ('FF') --> {ts1:FF}");
 
       TimeSpan ts2 = TimeSpan.Parse("0:0:3.809");
-      Console.WriteLine("{0} ('ss\\.FF') --> {0:ss\\.FF}", ts2);
+      Console.WriteLine($"{ts2} ('ss\\.FF') --> {ts2:ss\\.FF}");
       Console.WriteLine();
 
       Console.WriteLine("Parsing:");
@@ -72,10 +71,9 @@ public class Example
 
       foreach (string input in inputs) {
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
-            Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
+            Console.WriteLine($"{input} ('{fmt}') --> {ts3}");
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -94,10 +92,10 @@ public class Example
       // <Snippet23>
       Console.WriteLine("Formatting:");
       TimeSpan ts1 = TimeSpan.Parse("0:0:3.6974");
-      Console.WriteLine("{0} ('FFF') --> {0:FFF}", ts1);
+      Console.WriteLine($"{ts1} ('FFF') --> {ts1:FFF}");
 
       TimeSpan ts2 = TimeSpan.Parse("0:0:3.8009");
-      Console.WriteLine("{0} ('ss\\.FFF') --> {0:ss\\.FFF}", ts2);
+      Console.WriteLine($"{ts2} ('ss\\.FFF') --> {ts2:ss\\.FFF}");
       Console.WriteLine();
 
       Console.WriteLine("Parsing:");
@@ -107,10 +105,9 @@ public class Example
 
       foreach (string input in inputs) {
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
-            Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
+            Console.WriteLine($"{input} ('{fmt}') --> {ts3}");
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -129,10 +126,10 @@ public class Example
       // <Snippet24>
       Console.WriteLine("Formatting:");
       TimeSpan ts1 = TimeSpan.Parse("0:0:3.69749");
-      Console.WriteLine("{0} ('FFFF') --> {0:FFFF}", ts1);
+      Console.WriteLine($"{ts1} ('FFFF') --> {ts1:FFFF}");
 
       TimeSpan ts2 = TimeSpan.Parse("0:0:3.80009");
-      Console.WriteLine("{0} ('ss\\.FFFF') --> {0:ss\\.FFFF}", ts2);
+      Console.WriteLine($"{ts2} ('ss\\.FFFF') --> {ts2:ss\\.FFFF}");
       Console.WriteLine();
 
       Console.WriteLine("Parsing:");
@@ -142,10 +139,9 @@ public class Example
 
       foreach (string input in inputs) {
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
-            Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
+            Console.WriteLine($"{input} ('{fmt}') --> {ts3}");
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -164,10 +160,10 @@ public class Example
       // <Snippet25>
       Console.WriteLine("Formatting:");
       TimeSpan ts1 = TimeSpan.Parse("0:0:3.697497");
-      Console.WriteLine("{0} ('FFFFF') --> {0:FFFFF}", ts1);
+      Console.WriteLine($"{ts1} ('FFFFF') --> {ts1:FFFFF}");
 
       TimeSpan ts2 = TimeSpan.Parse("0:0:3.800009");
-      Console.WriteLine("{0} ('ss\\.FFFFF') --> {0:ss\\.FFFFF}", ts2);
+      Console.WriteLine($"{ts2} ('ss\\.FFFFF') --> {ts2:ss\\.FFFFF}");
       Console.WriteLine();
 
       Console.WriteLine("Parsing:");
@@ -177,10 +173,9 @@ public class Example
 
       foreach (string input in inputs) {
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
-            Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
+            Console.WriteLine($"{input} ('{fmt}') --> {ts3}");
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -199,10 +194,10 @@ public class Example
       // <Snippet26>
       Console.WriteLine("Formatting:");
       TimeSpan ts1 = TimeSpan.Parse("0:0:3.6974974");
-      Console.WriteLine("{0} ('FFFFFF') --> {0:FFFFFF}", ts1);
+      Console.WriteLine($"{ts1} ('FFFFFF') --> {ts1:FFFFFF}");
 
       TimeSpan ts2 = TimeSpan.Parse("0:0:3.8000009");
-      Console.WriteLine("{0} ('ss\\.FFFFFF') --> {0:ss\\.FFFFFF}", ts2);
+      Console.WriteLine($"{ts2} ('ss\\.FFFFFF') --> {ts2:ss\\.FFFFFF}");
       Console.WriteLine();
 
       Console.WriteLine("Parsing:");
@@ -212,10 +207,9 @@ public class Example
 
       foreach (string input in inputs) {
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
-            Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
+            Console.WriteLine($"{input} ('{fmt}') --> {ts3}");
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //       Formatting:
@@ -234,10 +228,10 @@ public class Example
       // <Snippet27>
       Console.WriteLine("Formatting:");
       TimeSpan ts1 = TimeSpan.Parse("0:0:3.6974974");
-      Console.WriteLine("{0} ('FFFFFFF') --> {0:FFFFFFF}", ts1);
+      Console.WriteLine($"{ts1} ('FFFFFFF') --> {ts1:FFFFFFF}");
 
       TimeSpan ts2 = TimeSpan.Parse("0:0:3.9500000");
-      Console.WriteLine("{0} ('ss\\.FFFFFFF') --> {0:ss\\.FFFFFFF}", ts2);
+      Console.WriteLine($"{ts2} ('ss\\.FFFFFFF') --> {ts2:ss\\.FFFFFFF}");
       Console.WriteLine();
 
       Console.WriteLine("Parsing:");
@@ -247,10 +241,9 @@ public class Example
 
       foreach (string input in inputs) {
          if (TimeSpan.TryParseExact(input, fmt, null, out ts3))
-            Console.WriteLine("{0} ('{1}') --> {2}", input, fmt, ts3);
+            Console.WriteLine($"{input} ('{fmt}') --> {ts3}");
          else
-            Console.WriteLine("Cannot parse {0} with '{1}'.",
-                              input, fmt);
+            Console.WriteLine($"Cannot parse {input} with '{fmt}'.");
       }
       // The example displays the following output:
       //    Formatting:

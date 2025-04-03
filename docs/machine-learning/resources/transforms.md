@@ -67,7 +67,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.TextCatalog.RemoveDefaultStopWords%2A>  | Remove default stop words for the specified language from input columns | Yes |
 | <xref:Microsoft.ML.TextCatalog.RemoveStopWords%2A> | Removes specified stop words from input columns | Yes |
 | <xref:Microsoft.ML.TextCatalog.LatentDirichletAllocation%2A> | Transform a document (represented as a vector of floats) into a vector of floats over a set of topics | Yes |
-| <xref:Microsoft.ML.TextCatalog.ApplyWordEmbedding%2A> | Convert vectors of text tokens into sentence vectors using a pre-trained model | Yes |
+| <xref:Microsoft.ML.TextCatalog.ApplyWordEmbedding%2A> | Convert vectors of text tokens into sentence vectors using a pretrained model | Yes |
 
 ## Image transformations
 
@@ -79,7 +79,7 @@ Other data transformations don't require training data. For example: the <xref:M
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages%2A> | Load images from a folder into memory | No |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.LoadRawImageBytes%2A> | Loads images of raw bytes into a new column. | No |
 | <xref:Microsoft.ML.ImageEstimatorsCatalog.ResizeImages%2A> | Resize images | No |
-| <xref:Microsoft.ML.OnnxCatalog.DnnFeaturizeImage%2A> | Applies a pre-trained deep neural network (DNN) model to transform an input image into a feature vector | No |
+| <xref:Microsoft.ML.OnnxCatalog.DnnFeaturizeImage%2A> | Applies a pretrained deep neural network (DNN) model to transform an input image into a feature vector | No |
 
 ## Categorical data transformations
 

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,8 +15,7 @@ public class Example
       Task taskA = Task.Run( () => Console.WriteLine("Hello from taskA."));
 
       // Output a message from the calling thread.
-      Console.WriteLine("Hello from thread '{0}'.",
-                          Thread.CurrentThread.Name);
+      Console.WriteLine($"Hello from thread '{Thread.CurrentThread.Name}'.");
       taskA.Wait();
    }
 }

@@ -1,7 +1,7 @@
 ---
 title: dotnet publish command
 description: The dotnet publish command publishes a .NET project or solution to a directory.
-ms.date: 04/04/2024
+ms.date: 01/07/2025
 ---
 # dotnet publish
 
@@ -94,7 +94,7 @@ The following MSBuild properties change the output of `dotnet publish`.
 
 - `PublishSingleFile`
 
-  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md).
+  Packages the app into a platform-specific single-file executable. For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/main/accepted/2020/single-file/design.md). When this property is set to `true`, the `PublishSelfContained` property is implicitly set to `true`.
 
   We recommend that you specify this option in the project file rather than on the command line.
 
@@ -120,7 +120,7 @@ For more information, see the following resources:
 
   * `PROJECT` is the path and filename of a C#, F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+  * `SOLUTION` is the path and filename of a solution file (*.sln* or *.slnx* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
 
 ## Options
 
@@ -274,7 +274,7 @@ For more information, see the following resources:
 - [Publish .NET apps with the .NET CLI](../deploying/deploy-with-cli.md)
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Containerize a .NET app with dotnet publish](../docker/publish-as-container.md)
+- [Containerize a .NET app with dotnet publish](../containers/sdk-publish.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)

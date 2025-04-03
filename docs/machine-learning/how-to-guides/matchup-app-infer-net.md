@@ -36,12 +36,12 @@ The `dotnet` command creates a `new` application of type `console`. The `-o` par
 To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` package. In your command prompt, run the following command:
 
 ```dotnetcli
-dotnet add package Microsoft.ML.Probabilistic.Compiler
+dotnet package add Microsoft.ML.Probabilistic.Compiler
 ```
 
 ## Design your model
 
-The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match. You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
+The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match. You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner's performance to be greater than the loser's performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
 
 You need to list the inferred player skills, alongside with their variance – the measure of uncertainty around the skills.
 
@@ -56,11 +56,11 @@ You need to list the inferred player skills, alongside with their variance – t
 | 5    | Player 3 | Player 1 |
 | 6    | Player 4 | Player 2 |
 
-With a closer look at the sample data, you’ll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probabilistic programming. Notice also there is a player zero because even office match up lists are zero based to us developers.
+With a closer look at the sample data, you'll notice that players 3 and 4 both have one win and one loss. Let's see what the rankings look like using probabilistic programming. Notice also there is a player zero because even office match up lists are zero based to us developers.
 
 ## Write some code
 
-Having designed the model, it’s time to express it as a probabilistic program using the Infer.NET modeling API. Open `Program.cs` in your favorite text editor and replace all of its contents with the following code:
+Having designed the model, it's time to express it as a probabilistic program using the Infer.NET modeling API. Open `Program.cs` in your favorite text editor and replace all of its contents with the following code:
 
 ```csharp
 namespace myApp
@@ -145,7 +145,7 @@ Player 1 skill: Gaussian(4.955, 3.503)
 Player 2 skill: Gaussian(2.639, 4.288)
 ```
 
-In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2. Player 0 is the overall champ!
+In the results, notice that player 3 ranks slightly higher than player 4 according to the model. That's because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2. Player 0 is the overall champ!
 
 ## Keep learning
 

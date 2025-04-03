@@ -31,10 +31,10 @@ To create an Azure Machine Learning workspace, the following are required:
 
 An Azure Machine Learning compute is a cloud-based Linux VM used for training.
 
-To create an Azure Machine Learning compute, the following are required:
+To create an Azure Machine Learning compute, the following values are required:
 
 - Name: A name for your compute between 2-16 characters. Names may only contain alphanumeric characters and hyphens.
-- Compute size
+- Compute size.
 
     Model Builder can use one of the following GPU-optimized compute types:
 
@@ -44,10 +44,10 @@ To create an Azure Machine Learning compute, the following are required:
     | Standard_NC24   | 24 | 224 | 1440 | 4 | 48 | 64 | 4 |
 
     Visit the [NC-series Linux VM documentation](/azure/virtual-machines/nc-series?bc=%252fazure%252fvirtual-machines%252flinux%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fvirtual-machines%252flinux%252ftoc.json) for more details on GPU optimized compute types.
-- Compute priority
+- Compute priority.
 
-  - Low-priority: Suited for tasks with shorter execution times. May be impacted by interruptions and lack of availability. Usually costs less because it takes advantage of surplus capacity in Azure.
-  - Dedicated: Suited for tasks of any duration, but especially long-running jobs. Not impacted by interruptions or lack of availability. Usually costs more because it reserves a dedicated set of compute resources in Azure for your tasks.
+  - Low-priority: Suited for tasks with shorter execution times. Tasks can be impacted by interruptions and lack of availability. This option usually costs less because it takes advantage of surplus capacity in Azure.
+  - Dedicated: Suited for tasks of any duration, but especially long-running jobs. Tasks aren't impacted by interruptions or lack of availability. This option usually costs more because it reserves a dedicated set of compute resources in Azure for your tasks.
 
 ## Training
 

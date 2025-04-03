@@ -9,7 +9,7 @@ In this tutorial, you'll build a console application and see the basic object-or
 
 ## Prerequisites
 
-[!INCLUDE [Prerequisites](../../includes/prerequisites.md)]
+[!INCLUDE [Prerequisites](../../../../includes/prerequisites-basic-winget.md)]
 
 ## Create your application
 

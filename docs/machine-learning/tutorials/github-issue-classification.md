@@ -48,7 +48,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     [!INCLUDE [mlnet-current-nuget-version](../../../includes/mlnet-current-nuget-version.md)]
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select **Install**. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ### Prepare your data
 
@@ -79,7 +79,7 @@ Create some classes for your input data and predictions. Add a new class to your
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *GitHubIssueData.cs*. Then, select the **Add** button.
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *GitHubIssueData.cs*. Then, select **Add**.
 
    The *GitHubIssueData.cs* file opens in the code editor. Add the following `using` directive to the top of *GitHubIssueData.cs*:
 

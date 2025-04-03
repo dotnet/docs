@@ -12,9 +12,12 @@ C# programs consist of one or more files. Each file contains zero or more namesp
 
 :::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
 
-The preceding example uses [*top-level statements*](top-level-statements.md) for the program's entry point. Only one file can have top-level statements. The program's entry point is the first line of program text in that file. You can also create a static method named [`Main`](main-command-line.md) as the program's entry point, as shown in the following example:
+The preceding example uses [*top-level statements*](top-level-statements.md) for the program's entry point. Only one file can have top-level statements. The program's entry point is the first line of program text in that file. In this case, it's the `Console.WriteLine("Hello world!");`.
+You can also create a static method named [`Main`](main-command-line.md) as the program's entry point, as shown in the following example:
 
 :::code language="csharp" source="snippets/structure/Program.cs":::
+
+In that case the program will start in the first line of `Main` method, which is `Console.WriteLine("Hello world!");`
 
 ## Related Sections
 

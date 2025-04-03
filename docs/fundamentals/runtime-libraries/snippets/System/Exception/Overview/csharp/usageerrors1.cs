@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 
 public class Person1
@@ -34,7 +34,7 @@ public class UsageErrorsEx1
       Person1 p2 = null;
 
       // The following throws a NullReferenceException.
-      Console.WriteLine("p1 = p2: {0}", p1.Equals(p2));
+      Console.WriteLine($"p1 = p2: {p1.Equals(p2)}");
    }
 }
 // </Snippet4>

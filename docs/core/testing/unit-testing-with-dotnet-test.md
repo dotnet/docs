@@ -1,230 +1,118 @@
 ---
-title: Unit testing C# code in .NET using dotnet test and xUnit
-description: Learn unit test concepts in C# and .NET through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
-author: ardalis
-ms.author: wiwagn
-ms.date: 03/07/2024
+title: Testing with 'dotnet test'
+description: Learn more about how 'dotnet test' works and its support for VSTest and Microsoft.Testing.Platform (MTP)
+author: Youssef1313
+ms.author: ygerges
+ms.date: 03/26/2025
 ---
-# Unit testing C# in .NET using dotnet test and xUnit
 
-This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/main/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
+# Testing with 'dotnet test'
 
-## Create the solution
+This article provides insights into the `dotnet test` CLI command, including its history compatibility with both VSTest and Microsoft.Testing.Platform (MTP).
 
-In this section, a solution is created that contains the source and test projects. The completed solution has the following directory structure:
+The `dotnet test` command operates in two primary modes:
 
-```txt
-/unit-testing-using-dotnet-test
-    unit-testing-using-dotnet-test.sln
-    /PrimeService
-        PrimeService.cs
-        PrimeService.csproj
-    /PrimeService.Tests
-        PrimeService_IsPrimeShould.cs
-        PrimeServiceTests.csproj
+- *VSTest* mode: This is the default mode for `dotnet test` and was the only mode available before the .NET 10 SDK. It is primarily designed for VSTest but can also run Microsoft.Testing.Platform test via [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild/) NuGet package.
+- *Microsoft.Testing.Platform* mode: Introduced with the .NET 10 SDK, this mode exclusively supports test applications built with Microsoft.Testing.Platform.
+
+> [!TIP]
+> For CLI reference, see [dotnet test](../tools/dotnet-test.md).
+
+## VSTest mode of `dotnet test`
+
+For a long time, VSTest was the only test platform in .NET. Consequently, `dotnet test` was exclusively designed for VSTest, with all command-line options tailored to VSTest.
+
+The process involves invoking the `VSTest` MSBuild target, which triggers other internal targets to run and ultimately runs vstest.console. All `dotnet test` command-line options are translated to their equivalents in vstest.console.
+
+### Run MTP projects with VSTest mode
+
+`dotnet test` is typically designed to run VSTest projects in VSTest mode, as that was its original purpose. However, to run MTP projects in `dotnet test` VSTest mode, you can use the [Microsoft.Testing.Platform.MSBuild](https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild). From the user's perspective, this support is enabled by setting the `TestingPlatformDotnetTestSupport` MSBuild property to true (it is false by default for backward compatibility reasons). In simple terms, setting this property to true will cause Microsoft.Testing.Platform.MSBuild to change the `VSTest` target behavior, redirecting it to call `InvokeTestingPlatform`. This is an MSBuild target included in Microsoft.Testing.Platform.MSBuild, responsible for correctly running MTP test applications as executables. This means that VSTest-specific command-line options are silently ignored in this mode, such as `--logger`. This implies that there should be a way to pass MTP-specific command-line options, such as `--report-trx`, which is equivalent to using `--logger trx` in VSTest. Given the current limitations of the `dotnet test` CLI, the only way to include MTP-specific arguments is by appending them after an additional `--`. For instance, `dotnet test -- --report-trx`.
+
+> [!NOTE]
+> MSTest and NUnit use [Microsoft.Testing.Extensions.VSTestBridge](https://www.nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge). When you set `EnableMSTestRunner` or `EnableNUnitRunner` (the properties used to enable MTP), your test project become supporting both VSTest and Microsoft.Testing.Platform.
+> In that case, if you are using VSTest mode of `dotnet test` and not setting `TestingPlatformDotnetTestSupport` to true, you are actually running completely with VSTest, as if `EnableMSTestRunner` and `EnableNUnitRunner` are not there.
+>
+> [!NOTE]
+> It's highly recommended that you set the `TestingPlatformDotnetTestSupport` property in `Directory.Build.props`. That way, you don't have to add it to every test project file, and you don't risk introducing a new project that doesn't set this property and end up with a solution where some projects are VSTest while others are Microsoft.Testing.Platform, which may not work correctly and is unsupported scenario.
+
+The following command-line options of `dotnet test` command in VSTest mode are supported by Microsoft.Testing.Platform. These options are build-specific and not passed down to VSTest, which is why they work well with MTP.
+
+The list below described all `dotnet test` command line options that are supported by `Microsoft.Testing.Platform`:
+
+- `-a|--arch <ARCHITECTURE>`
+- `--artifacts-path <ARTIFACTS_DIR>`
+- `-c|--configuration <CONFIGURATION>`
+- `-f|--framework <FRAMEWORK>`
+- `-e|--environment <NAME="VALUE">`
+- `--interactive`
+- `--no-build`
+- `--nologo`
+- `--no-restore`
+- `-o|--output <OUTPUT_DIRECTORY>`
+- `--os <OS>`
+- `-r|--runtime <RUNTIME_IDENTIFIER>`
+- `-v|--verbosity <LEVEL>`
+
+> [!TIP]
+> You can customize the command-line arguments of your test application via `TestingPlatformCommandLineArguments` MSBuild property:
+>
+> ```xml
+> <PropertyGroup>
+>   ...
+>   <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
+> </PropertyGroup>
+> ```
+
+For more information specific to running MTP projects in VSTest mode of `dotnet test`, see [Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`](./microsoft-testing-platform-integration-dotnet-test.md).
+
+#### Advanced technical details
+
+In `dotnet test` VSTest mode, the `--` is used to indicate the RunSettings arguments. Originally, `dotnet test` was designed to pass those arguments as an MSBuild property called `VSTestCLIRunSettings`. Therefore, when running MTP test applications in VSTest mode, we repurpose the value of `VSTestCLIRunSettings` to represent the "application arguments".
+
+#### Mixing VSTest and Microsoft.Testing.Platform (MTP)
+
+When running `dotnet test` in VSTest mode, it is recommended to avoid including both VSTest and Microsoft.Testing.Platform in the same solution.
+
+This scenario is not officially supported, and you should be aware of the following:
+
+- VSTest-specific command-line options will only apply to VSTest projects and not to MTP test applications.
+- MTP-specific command-line options provided after `--` will be treated as RunSettings arguments for VSTest projects.
+
+#### Key takeaways
+
+- To run MTP test applications in `dotnet test` VSTest mode, you should use `Microsoft.Testing.Platform.MSBuild`, pass MTP-specific command-line options after the extra `--`, and set `TestingPlatformDotnetTestSupport` to `true`.
+- VSTest-oriented command-line options are silently ignored.
+
+Due to these issues, .NET has introduced a new `dotnet test` mode specifically designed for MTP. We encourage MTP users to transition from the VSTest `dotnet test` mode to the new mode with the .NET 10 SDK.
+
+## Microsoft.Testing.Platform (MTP) mode of `dotnet test`
+
+To address the issues encountered when running `dotnet test` with MTP in VSTest mode, .NET introduced a new mode in the .NET 10 SDK that's specifically designed for MTP.
+
+To enable this mode, add a `dotnet.config` file to the root of the repository or solution.
+
+```ini
+[dotnet.test:runner]
+name = "Microsoft.Testing.Platform"
 ```
 
-The following instructions provide the steps to create the test solution. See [Commands to create test solution](#create-test-cmd) for instructions to create the test solution in one step.
+> [!NOTE]
+> The format will change from `dotnet.test:runner` to `dotnet.test.runner` in .NET 10 SDK Preview 4.
 
-* Open a shell window.
-* Run the following command:
+Since this mode is specifically designed for Microsoft.Testing.Platform, neither `TestingPlatformDotnetTestSupport` nor the additional `--` are required.
 
-  ```dotnetcli
-  dotnet new sln -o unit-testing-using-dotnet-test
-  ```
-
-  The [`dotnet new sln`](../tools/dotnet-new.md) command creates a new solution in the *unit-testing-using-dotnet-test* directory.
-* Change directory to the *unit-testing-using-dotnet-test* folder.
-* Run the following command:
-
-  ```dotnetcli
-  dotnet new classlib -o PrimeService
-  ```
-
-   The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
-* Rename *Class1.cs* to *PrimeService.cs*.
-* Replace the code in *PrimeService.cs* with the following code:
-  
-  ```csharp
-  using System;
-
-  namespace Prime.Services
-  {
-      public class PrimeService
-      {
-          public bool IsPrime(int candidate)
-          {
-              throw new NotImplementedException("Not implemented.");
-          }
-      }
-  }
-  ```
-
-* The preceding code:
-  * Throws a <xref:System.NotImplementedException> with a message indicating it's not implemented.
-  * Is updated later in the tutorial.
-
-<!-- preceding code shows an english bias. Message makes no sense outside english -->
-
-* In the *unit-testing-using-dotnet-test* directory, run the following command to add the class library project to the solution:
-
-  ```dotnetcli
-  dotnet sln add ./PrimeService/PrimeService.csproj
-  ```
-
-* Create the *PrimeService.Tests* project by running the following command:
-
-  ```dotnetcli
-  dotnet new xunit -o PrimeService.Tests
-  ```
-
-* The preceding command:
-  * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.net/) as the test library.
-  * Configures the test runner by adding the following `<PackageReference />`elements to the project file:
-    * `Microsoft.NET.Test.Sdk`
-    * `xunit`
-    * `xunit.runner.visualstudio`
-    * `coverlet.collector`
-
-* Add the test project to the solution file by running the following command:
-
-  ```dotnetcli
-  dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
-  ```
-
-* Add the `PrimeService` class library as a dependency to the *PrimeService.Tests* project:
-
-  ```dotnetcli
-  dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj  
-  ```
-
-<a name="create-test-cmd"></a>
-
-### Commands to create the solution
-
-This section summarizes all the commands in the previous section. Skip this section if you've completed the steps in the previous section.
-
-The following commands create the test solution on a Windows machine. For macOS and Unix, update the `ren` command to the OS version of `ren` to rename a file:
-
-```dotnetcli
-dotnet new sln -o unit-testing-using-dotnet-test
-cd unit-testing-using-dotnet-test
-dotnet new classlib -o PrimeService
-ren .\PrimeService\Class1.cs PrimeService.cs
-dotnet sln add ./PrimeService/PrimeService.csproj
-dotnet new xunit -o PrimeService.Tests
-dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj
-dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
-```
-
-Follow the instructions for "Replace the code in *PrimeService.cs* with the following code" in the previous section.
-
-## Create a test
-
-A popular approach in test driven development (TDD) is to write a (failing) test before implementing the target code. This tutorial uses the TDD approach. The `IsPrime` method is callable, but not implemented. A test call to `IsPrime` fails. With TDD, a test is written that is known to fail. The target code is updated to make the test pass. You keep repeating this approach, writing a failing test and then updating the target code to pass.
-
-Update the *PrimeService.Tests* project:
-
-* Delete *PrimeService.Tests/UnitTest1.cs*.
-* Create a *PrimeService.Tests/PrimeService_IsPrimeShould.cs*  file.
-* Replace the code in *PrimeService_IsPrimeShould.cs* with the following code:
-
-```csharp
-using Xunit;
-using Prime.Services;
-
-namespace Prime.UnitTests.Services
-{
-    public class PrimeService_IsPrimeShould
-    {
-        [Fact]
-        public void IsPrime_InputIs1_ReturnFalse()
-        {
-            var primeService = new PrimeService();
-            bool result = primeService.IsPrime(1);
-
-            Assert.False(result, "1 should not be prime");
-        }
-    }
-}
-```
-
-The `[Fact]` attribute declares a test method that's run by the test runner. From the *PrimeService.Tests* folder, run `dotnet test`. The [dotnet test](../tools/dotnet-test.md) command builds both projects and runs the tests. The xUnit test runner contains the program entry point to run the tests. `dotnet test` starts the test runner using the unit test project.
-
-The test fails because `IsPrime` hasn't been implemented. Using the TDD approach, write only enough code so this test passes. Update `IsPrime` with the following code:
-
-```csharp
-public bool IsPrime(int candidate)
-{
-    if (candidate == 1)
-    {
-        return false;
-    }
-    throw new NotImplementedException("Not fully implemented.");
-}
-```
-
-Run `dotnet test`. The test passes.
-
-### Add more tests
-
-Add prime number tests for 0 and -1. You could copy the test created in the preceding step and make copies of the following code to test 0 and -1.
-But don't do it, as there's a better way.
-
-```csharp
-var primeService = new PrimeService();
-bool result = primeService.IsPrime(1);
-
-Assert.False(result, "1 should not be prime");
-```
-
-Copying test code when only a parameter changes results in code duplication and test bloat. The following xUnit attributes enable writing a suite of similar tests:
-
-- `[Theory]` represents a suite of tests that execute the same code but have different input arguments.
-- `[InlineData]` attribute specifies values for those inputs.
-
-Rather than creating new tests, apply the preceding xUnit attributes to create a single theory. Replace the following code:
-
-```csharp
-[Fact]
-public void IsPrime_InputIs1_ReturnFalse()
-{
-    var primeService = new PrimeService();
-    bool result = primeService.IsPrime(1);
-
-    Assert.False(result, "1 should not be prime");
-}
-```
-
-with the following code:
-
- :::code language="csharp" source="../../../samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs" id="Sample_TestCode":::
-
-In the preceding code, `[Theory]` and `[InlineData]` enable testing several values less than two. Two is the smallest prime number.
-
-Add the following code after the class declaration and before the `[Theory]` attribute:
-
- :::code language="csharp" source="../../../samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs" id="Sample_InitCode":::
-
-Run `dotnet test`, and two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
-
-```csharp
-public bool IsPrime(int candidate)
-{
-    if (candidate < 2)
-    {
-        return false;
-    }
-    throw new NotImplementedException("Not fully implemented.");
-}
-```
-
-Following the TDD approach, add more failing tests, then update the target code. See the [finished version of the tests](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs) and the [complete implementation of the library](https://github.com/dotnet/samples/blob/main/core/getting-started/unit-testing-using-dotnet-test/PrimeService/PrimeService.cs).
-
-The completed `IsPrime` method is not an efficient algorithm for testing primality.
-
-### Additional resources
-
-- [xUnit.net official site](https://xunit.net)
-- [Testing controller logic in ASP.NET Core](/aspnet/core/mvc/controllers/testing)
-- [`dotnet add reference`](../tools/dotnet-add-reference.md)
+> [!IMPORTANT]
+> This mode is only compatible with Microsoft.Testing.Platform version 1.7.0 and later.
+>
+> [!IMPORTANT]
+> If your test project supports VSTest but does not support MTP, an error will be generated.
+>
+> [!TIP]
+> You can customize the command-line arguments of your test application via `TestingPlatformCommandLineArguments` MSBuild property:
+>
+> ```xml
+> <PropertyGroup>
+>   ...
+>   <TestingPlatformCommandLineArguments>--minimum-expected-tests 10</TestingPlatformCommandLineArguments>
+> </PropertyGroup>
+> ```

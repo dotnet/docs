@@ -1,0 +1,7 @@
+A simple way to collect traces and metrics in ASP.NET applications is to use [.NET Aspire](/dotnet/aspire/get-started/aspire-overview). .NET Aspire is a set of extensions to .NET to make it easy to create and work with distributed applications. One of the benefits of using .NET Aspire is that telemetry is built in, using the OpenTelemetry libraries for .NET.
+
+The default project templates for .NET Aspire contain a `ServiceDefaults` project. Each service in the .NET Aspire solution has a reference to the Service Defaults project. The services use it to set up and configure OTel.
+
+The Service Defaults project template includes the OTel SDK, ASP.NET, HttpClient, and Runtime Instrumentation packages. These instrumentation components are configured in the [Extensions.cs](https://github.com/dotnet/aspire/blob/main/src/Aspire.ProjectTemplates/templates/aspire-servicedefaults/9.1/Extensions.cs) file. To support telemetry visualization in Aspire Dashboard, the Service Defaults project also includes the OTLP exporter by default.
+
+Aspire Dashboard is designed to bring telemetry observation to the local debug cycle, which enables developers to ensure that the applications are producing telemetry. The telemetry visualization also helps to diagnose those applications locally. Being able to observe the calls between services is as useful at debug time as in production. The .NET Aspire dashboard is launched automatically when you <kbd>F5</kbd> the `AppHost` Project from Visual Studio or `dotnet run` the `AppHost` project from command line.

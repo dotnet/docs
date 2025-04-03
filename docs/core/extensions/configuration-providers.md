@@ -3,7 +3,7 @@ title: Configuration providers
 description: Discover how to configure .NET apps using the configuration provider API and the available configuration providers.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/10/2024
+ms.date: 12/16/2024
 ---
 
 # Configuration providers in .NET
@@ -236,7 +236,7 @@ Environment variables set in *launchSettings.json* override those set in the sys
 
 ### Azure App Service settings
 
-On [Azure App Service](https://azure.microsoft.com/services/app-service), select **New application setting** on the **Settings** > **Configuration** page. Azure App Service application settings are:
+On [Azure App Service](https://azure.microsoft.com/services/app-service), select **Add** on the **Settings** > **Environment variables** page. Azure App Service application settings are:
 
 - Encrypted at rest and transmitted over an encrypted channel.
 - Exposed as environment variables.

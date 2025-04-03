@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.topic: install-set-up-deploy #Don't change
 ms.date: 11/11/2024
+no-loc: ["Program Files", "dotnet"]
 #customer intent: As a developer or user, I want to decide the best way to install .NET on Windows.
 ---
 
@@ -166,7 +167,15 @@ For more information about, see [.NET SDK, MSBuild, and Visual Studio versioning
 
 ## Install with Visual Studio Code
 
-Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system. Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension will install .NET for you if it's not already installed.
+Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code can use the SDK already installed on your system.
+
+This [WinGet configuration file](https://builds.dotnet.microsoft.com/dotnet/install/dotnet_basic_config_docs.winget) installs the latest .NET SDK, Visual Studio Code and the C# DevKit. If you already have any of them installed, WinGet will skip that step.
+
+01. Download the file and double-click to run it.
+01. Read the license agreement, type <kbd>y</kbd>, and select <kbd>Enter</kbd> when prompted to accept.
+01. If you get a flashing User Account Control (UAC) prompt in your Taskbar, allow the installation to continue.
+
+Additionally, the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension will install .NET for you if it's not already installed.
 
 For instructions on installing .NET through Visual Studio Code, see [Getting Started with C# in VS Code](https://code.visualstudio.com/docs/csharp/get-started).
 
@@ -215,6 +224,14 @@ Suppresses any attempts to restart.
 ```console
 dotnet-sdk-9.0.100-win-x64.exe /install /quiet /norestart
 ```
+
+If you've already installed .NET, use the .NET Installer to manage the installation. Instead of `/install`, use one of the following options:
+
+- `/uninstall`\
+Remove this version of .NET.
+
+- `/repair`\
+Check if the installations key files or components are damaged and restore them.
 
 > [!TIP]
 > The installer returns an exit code of **0** for success and an exit code of **3010** to indicate that a restart is required. Any other value is most likely an error code.
@@ -387,7 +404,10 @@ Most likely you installed both the x86 (32-bit) and x64 (64-bit) versions of the
     C:\Program Files\dotnet\dotnet.exe
     ```
 
-    If it's correct and the _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?assignees=&labels=&template=01_bug_report.md&title=)
+    > [!TIP]
+    > Even though _Program Files_ is used in this example, you may see other copies of _dotnet.exe_ listed. Adjust them so that the appropriate _dotnet.exe_ is resolved first.
+
+    If it's correct and _Program Files\\_ is first, you don't have the problem this section is discussing and you should create a [.NET help request issue on GitHub](https://github.com/dotnet/core/issues/new?template=Blank+issue).
 
 01. Press the Windows button and type "Edit the system environment variables" into search. Select **Edit the system environment variables**.
 

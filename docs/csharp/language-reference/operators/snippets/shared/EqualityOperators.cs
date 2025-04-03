@@ -103,6 +103,15 @@ public static class EqualityOperators
         Console.WriteLine(object.ReferenceEquals(b, c));  // output: False
         Console.WriteLine(b == c);  // output: True
         // </SnippetDelegateEquality>
+
+        // <SnippetCheckReceiver>
+        var o1 = new object();
+        var o2 = new object();
+        var d1 = o1.ToString;
+        var d2 = o2.ToString;
+        Console.WriteLine(object.ReferenceEquals(d1, d2));  // output: False
+        Console.WriteLine(d1 == d2);  // output: False (different receivers)
+        // </SnippetCheckReceiver>
     }
 
     private static void IdenticalLambdasNotEqual()

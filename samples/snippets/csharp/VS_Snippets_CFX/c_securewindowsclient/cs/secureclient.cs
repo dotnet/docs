@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.Collections.Generic;
 using System.ServiceModel;
@@ -27,7 +27,7 @@ namespace Client
             double value1 = 100.00D;
             double value2 = 15.99D;
             double result = cc.Add(value1, value2);
-            Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
+            Console.WriteLine($"Add({value1},{value2}) = {result}");
 
             // Closing the client gracefully closes the connection and cleans up resources.
             cc.Close();
@@ -51,7 +51,7 @@ namespace Client
             double value1 = 100.00D;
             double value2 = 15.99D;
             double result = cc.Add(value1, value2);
-            Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
+            Console.WriteLine($"Add({value1},{value2}) = {result}");
 
             // Closing the client gracefully closes the connection and cleans up resources.
             cc.Close();

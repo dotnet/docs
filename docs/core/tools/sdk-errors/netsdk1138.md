@@ -12,7 +12,7 @@ NETSDK1138 indicates that your project targets a version of the framework that i
 
 > The target framework '\<framework>' is out of support and will not receive security updates in the future. Please refer to <https://aka.ms/dotnet-core-support> for more information about the support policy.
 
-Out-of-support versions include 1.0, 1.1, 2.0, 2.1, 2.2, 3.0, 3.1, and 5.0.
+Out-of-support versions include 1.0, 1.1, 2.0, 2.1, 2.2, 3.0, 3.1, 5, 6, and 7.
 
 To resolve this error, change your project to target a supported version of .NET.
 

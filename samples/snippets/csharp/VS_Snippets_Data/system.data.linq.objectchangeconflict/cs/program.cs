@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +27,7 @@ namespace cs_conflictmodeenum
                 {
                     MetaTable metatable = db.Mapping.GetTable(occ.Object.GetType());
                     Customer entityInConflict = (Customer)occ.Object;
-                    Console.WriteLine("Table name: {0}", metatable.TableName);
+                    Console.WriteLine($"Table name: {metatable.TableName}");
                     Console.Write("Customer ID: ");
                     Console.WriteLine(entityInConflict.CustomerID);
                     Console.ReadLine();

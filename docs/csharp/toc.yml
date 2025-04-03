@@ -5,38 +5,28 @@ items:
   items:
   - name: Tour of C#
     href: tour-of-csharp/overview.md
+  - name: Tutorials
+    items:
+    - name: Choose your first lesson
+      href: tour-of-csharp/tutorials/index.md
+    - name: Tutorials
+      items:
+      - name: Hello world and text
+        href: tour-of-csharp/tutorials/hello-world.md
+      - name: Numbers in C#
+        href: tour-of-csharp/tutorials/numbers-in-csharp.md
+      - name: Branches and loops
+        href: tour-of-csharp/tutorials/branches-and-loops.md
+      - name: List collections
+        href: tour-of-csharp/tutorials/list-collection.md
+  - name: C# language strategy
+    href: tour-of-csharp/strategy.md
   - name: Learn C# for Java developers
     href: tour-of-csharp/tips-for-java-developers.md
   - name: Learn C# for JavaScript developers
     href: tour-of-csharp/tips-for-javascript-developers.md
   - name: Learn C# for Python developers
     href: tour-of-csharp/tips-for-python-developers.md
-  - name: C# language strategy
-    href: tour-of-csharp/strategy.md
-  - name: Tutorials
-    items:
-    - name: Choose your first lesson
-      href: tour-of-csharp/tutorials/index.md
-    - name: Browser based tutorials
-      items:
-      - name: Hello world
-        href: tour-of-csharp/tutorials/hello-world.yml
-      - name: Numbers in C#
-        href: tour-of-csharp/tutorials/numbers-in-csharp.yml
-      - name: Branches and loops
-        href: tour-of-csharp/tutorials/branches-and-loops.yml
-      - name: List collections
-        href: tour-of-csharp/tutorials/list-collection.yml
-    - name: Work in your local environment
-      items:
-      - name: Set up your environment
-        href: tour-of-csharp/tutorials/local-environment.md
-      - name: Numbers in C#
-        href: tour-of-csharp/tutorials/numbers-in-csharp-local.md
-      - name: Branches and loops
-        href: tour-of-csharp/tutorials/branches-and-loops-local.md
-      - name: List collections
-        href: tour-of-csharp/tutorials/arrays-and-collections.md
 - name: Fundamentals
   items:
   - name: Program structure
@@ -146,6 +136,12 @@ items:
       href: fundamentals/exceptions/how-to-execute-cleanup-code-using-finally.md
 - name: What's new in C#
   items:
+  - name: C# 14
+    items:
+    - name: What's new in C# 14
+      href: whats-new/csharp-14.md
+    - name: Breaking changes since C# 13
+      href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2010.md
   - name: C# 13
     items:
     - name: What's new in C# 13
@@ -164,12 +160,8 @@ items:
       href: whats-new/csharp-11.md
     - name: Breaking changes since C# 10
       href: ../../_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%207.md
-  - name: C# 10
-    items:
-    - name: New features in C# 10
-      href: whats-new/csharp-10.md
-    - name: Breaking changes since earlier versions
-      href: whats-new/breaking-changes.md
+  - name: Breaking before C# 10
+    href: whats-new/breaking-changes.md
   - name: C# version history
     href: whats-new/csharp-version-history.md
   - name: Relationships to .NET library
@@ -182,10 +174,6 @@ items:
       href: whats-new/tutorials/primary-constructors.md
     - name: Explore static interface members
       href: whats-new/tutorials/static-virtual-interface-members.md
-    - name: Explore patterns in objects
-      href: whats-new/tutorials/patterns-objects.md
-    - name: Write a custom string interpolation handler
-      href: whats-new/tutorials/interpolated-string-handler.md
 - name: Tutorials
   items:
   - name: Explore record types
@@ -200,6 +188,8 @@ items:
     href: tutorials/exploration/interpolated-strings.yml
   - name: Explore string interpolation - in your environment
     href: tutorials/exploration/interpolated-strings-local.md
+  - name: Explore patterns in objects
+    href: tutorials/patterns-objects.md
   - name: Advanced scenarios for string Interpolation
     href: tutorials/string-interpolation.md
   - name: Console Application
@@ -407,6 +397,8 @@ items:
       href: advanced-topics/performance/index.md
     - name: Tutorial - reduce allocations
       href: advanced-topics/performance/ref-tutorial.md
+    - name: Tutorial - Write a custom string interpolation handler
+      href: advanced-topics/performance/interpolated-string-handler.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
   items:
   - name: The .NET Compiler Platform SDK (Roslyn APIs) overview

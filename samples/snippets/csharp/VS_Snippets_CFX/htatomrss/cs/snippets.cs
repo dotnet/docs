@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Collections.Generic;
 using System.ServiceModel;
@@ -23,8 +23,8 @@ namespace htAtomRss
             Console.WriteLine("Items:");
             foreach (SyndicationItem item in feed.Items)
             {
-                Console.WriteLine("Title: {0}", item.Title.Text);
-                Console.WriteLine("Content: {0}", ((TextSyndicationContent)item.Content).Text);
+                Console.WriteLine($"Title: {item.Title.Text}");
+                Console.WriteLine($"Content: {((TextSyndicationContent)item.Content).Text}");
             }
             // </Snippet11>
         }

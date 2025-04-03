@@ -9,7 +9,7 @@ In 2005, Robert Simpson created System.Data.SQLite, a SQLite provider for ADO.NE
 
 The first version of .NET Core (released in 2016) was a single, lightweight, modern, and cross-platform implementation of .NET. Obsolete APIs and APIs with more modern alternatives were intentionally removed. ADO.NET didn't include any of the DataSet APIs (including DataTable and DataAdapter).
 
-The Entity Framework team was somewhat familiar with the System.Data.SQLite codebase. Brice Lambson, a member of the EF team, had previously helped the SQLite team add support for Entity Framework versions 5 and 6. Brice was also experimenting with his own implementation of a SQLite ADO.NET provider around the same time that .NET Core was being planned. After a long discussion, the Entity Framework team decided to create Microsoft.Data.Sqlite based on Brice's prototype. This would allow them to create a new lightweight and modern implementation that would align with the goals of .NET Core.
+The Entity Framework team was somewhat familiar with the System.Data.SQLite codebase. Brice Lambson, a former member of the EF team, had previously helped the SQLite team add support for Entity Framework versions 5 and 6. Brice was also experimenting with his own implementation of a SQLite ADO.NET provider around the same time that .NET Core was being planned. After a long discussion, the Entity Framework team decided to create Microsoft.Data.Sqlite based on Brice's prototype. This would allow them to create a new lightweight and modern implementation that would align with the goals of .NET Core.
 
 As an example of what we mean by more modern, here is code to create a [user-defined function](user-defined-functions.md) in both System.Data.SQLite and Microsoft.Data.Sqlite.
 

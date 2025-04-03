@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -41,30 +41,30 @@ public class Example
         specific = System.Globalization.CultureInfo.GetCultureInfo("fr-FR");
         neutral = specific.Parent;
         dtfi = neutral.DateTimeFormat;
-        Console.WriteLine("{0} from Parent property: {1}", neutral.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{neutral.Name} from Parent property: {dtfi.IsReadOnly}");
 
         dtfi = System.Globalization.CultureInfo.GetCultureInfo("fr-FR").Parent.DateTimeFormat;
-        Console.WriteLine("{0} from Parent property: {1}", neutral.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{neutral.Name} from Parent property: {dtfi.IsReadOnly}");
 
         // Instantiate a neutral culture using the CultureInfo constructor.
         neutral = new System.Globalization.CultureInfo("fr");
         dtfi = neutral.DateTimeFormat;
-        Console.WriteLine("{0} from CultureInfo constructor: {1}", neutral.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{neutral.Name} from CultureInfo constructor: {dtfi.IsReadOnly}");
 
         // Instantiate a culture using CreateSpecificCulture.
         neutral = System.Globalization.CultureInfo.CreateSpecificCulture("fr");
         dtfi = neutral.DateTimeFormat;
-        Console.WriteLine("{0} from CreateSpecificCulture: {1}", neutral.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{neutral.Name} from CreateSpecificCulture: {dtfi.IsReadOnly}");
 
         // Retrieve a culture by calling the GetCultureInfo method.
         neutral = System.Globalization.CultureInfo.GetCultureInfo("fr");
         dtfi = neutral.DateTimeFormat;
-        Console.WriteLine("{0} from GetCultureInfo: {1}", neutral.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{neutral.Name} from GetCultureInfo: {dtfi.IsReadOnly}");
 
         // Instantiate a DateTimeFormatInfo object by calling GetInstance.
         neutral = System.Globalization.CultureInfo.CreateSpecificCulture("fr");
         dtfi = System.Globalization.DateTimeFormatInfo.GetInstance(neutral);
-        Console.WriteLine("{0} from GetInstance: {1}", neutral.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{neutral.Name} from GetInstance: {dtfi.IsReadOnly}");
 
         // The example displays the following output:
         //       fr from Parent property: False
@@ -85,22 +85,22 @@ public class Example
         // Instantiate a culture using CreateSpecificCulture.
         ci = System.Globalization.CultureInfo.CreateSpecificCulture("en-US");
         dtfi = ci.DateTimeFormat;
-        Console.WriteLine("{0} from CreateSpecificCulture: {1}", ci.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{ci.Name} from CreateSpecificCulture: {dtfi.IsReadOnly}");
 
         // Instantiate a culture using the CultureInfo constructor.
         ci = new System.Globalization.CultureInfo("en-CA");
         dtfi = ci.DateTimeFormat;
-        Console.WriteLine("{0} from CultureInfo constructor: {1}", ci.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{ci.Name} from CultureInfo constructor: {dtfi.IsReadOnly}");
 
         // Retrieve a culture by calling the GetCultureInfo method.
         ci = System.Globalization.CultureInfo.GetCultureInfo("en-AU");
         dtfi = ci.DateTimeFormat;
-        Console.WriteLine("{0} from GetCultureInfo: {1}", ci.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{ci.Name} from GetCultureInfo: {dtfi.IsReadOnly}");
 
         // Instantiate a DateTimeFormatInfo object by calling DateTimeFormatInfo.GetInstance.
         ci = System.Globalization.CultureInfo.CreateSpecificCulture("en-GB");
         dtfi = System.Globalization.DateTimeFormatInfo.GetInstance(ci);
-        Console.WriteLine("{0} from GetInstance: {1}", ci.Name, dtfi.IsReadOnly);
+        Console.WriteLine($"{ci.Name} from GetInstance: {dtfi.IsReadOnly}");
 
         // The example displays the following output:
         //      en-US from CreateSpecificCulture: False

@@ -53,7 +53,7 @@ Replace the default code with the code given for each project.
 | Grain Interfaces | `Microsoft.Orleans.Sdk` |
 | Grains | `Microsoft.Orleans.Sdk`<br>`Microsoft.Extensions.Logging.Abstractions` |
 
-`Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are metapackages that bring dependencies that you'll most likely need on the Silo and client. For more information on adding package references, see [dotnet add package](../../core/tools/dotnet-add-package.md) or [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio).
+`Microsoft.Orleans.Server`, `Microsoft.Orleans.Client` and `Microsoft.Orleans.Sdk` are metapackages that bring dependencies that you'll most likely need on the Silo and client. For more information on adding package references, see [dotnet package add](../../core/tools/dotnet-package-add.md) or [Install and manage packages in Visual Studio using the NuGet Package Manager](/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## Define a grain interface
 
@@ -83,7 +83,7 @@ The preceding code:
 
 ### Create the client
 
-Finally, you need to configure a client for communicating with the grains, connect it to the cluster (with a single silo in it), and invoke the grain. The clustering configuration must match the one you used for the silo. For more information, see [Clusters and Clients](../host/client.md)
+Finally, you need to configure a client for communicating with the grains, connect it to the cluster (with a single silo in it), and invoke the grain. The clustering configuration must match the one you used for the silo. For more information, see [Clusters and Clients](../host/client.md).
 
 :::code source="snippets/minimal/Client/Program.cs":::
 

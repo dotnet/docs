@@ -28,7 +28,7 @@ You can now reuse a `TestCluster` in your test cases:
 
 :::code source="snippets/testing/Orleans-testing/Sample.OrleansTesting/HelloGrainTestsWithFixture.cs":::
 
-xUnit calls the <xref:System.IDisposable.Dispose> method of the `ClusterFixture` type when all tests have been completed and the in-memory cluster silos are stopped. `TestCluster` also has a constructor that accepts <xref:Orleans.TestingHost.TestClusterOptions> that can be used to configure the silos in the cluster.
+When all tests have been completed and the in-memory cluster silos are stopped, xUnit calls the <xref:System.IDisposable.Dispose> method of the `ClusterFixture` type. `TestCluster` also has a constructor that accepts <xref:Orleans.TestingHost.TestClusterOptions> that you can use to configure the silos in the cluster.
 
 If you're using Dependency Injection in your Silo to make services available to Grains, you can use this pattern as well:
 

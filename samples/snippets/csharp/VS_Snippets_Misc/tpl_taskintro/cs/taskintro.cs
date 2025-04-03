@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -73,8 +73,7 @@ namespace TPL_Intro
                 {
                                         MyCustomData mydata = (MyCustomData) obj;
                                         mydata.ThreadNum = Thread.CurrentThread.ManagedThreadId;
-                                        Console.WriteLine("Hello from Task #{0} created at {1} running on thread #{2}.",
-                                                          mydata.Name, mydata.CreationTime, mydata.ThreadNum);
+                                        Console.WriteLine($"Hello from Task #{mydata.Name} created at {mydata.CreationTime} running on thread #{mydata.ThreadNum}.");
                 },
             new MyCustomData () {Name = i, CreationTime = DateTime.Now.Ticks}
             );

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example3
 {
@@ -30,10 +30,8 @@ public class Example3
         bool falseFlag = false;
         bool trueFlag = true;
 
-        Console.WriteLine("{0} converts to {1}.", falseFlag,
-                          Convert.ToByte(falseFlag));
-        Console.WriteLine("{0} converts to {1}.", trueFlag,
-                          Convert.ToByte(trueFlag));
+        Console.WriteLine($"{falseFlag} converts to {Convert.ToByte(falseFlag)}.");
+        Console.WriteLine($"{trueFlag} converts to {Convert.ToByte(trueFlag)}.");
         // The example displays the following output:
         //       False converts to 0.
         //       True converts to 1.
@@ -49,12 +47,11 @@ public class Example3
             try
             {
                 byte result = Convert.ToByte(ch);
-                Console.WriteLine("{0} is converted to {1}.", ch, result);
+                Console.WriteLine($"{ch} is converted to {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("Unable to convert u+{0} to a byte.",
-                                  Convert.ToInt16(ch).ToString("X4"));
+                Console.WriteLine($"Unable to convert u+{Convert.ToInt16(ch).ToString("X4")} to a byte.");
             }
         }
         // The example displays the following output:
@@ -75,14 +72,11 @@ public class Example3
             try
             {
                 result = Convert.ToByte(number);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  number.GetType().Name, number,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  number.GetType().Name, number);
+                Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Byte type.");
             }
         }
         // The example displays the following output:
@@ -105,14 +99,11 @@ public class Example3
             try
             {
                 result = Convert.ToByte(number);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  number.GetType().Name, number,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  number.GetType().Name, number);
+                Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Byte type.");
             }
         }
         // The example displays the following output:
@@ -135,14 +126,11 @@ public class Example3
             try
             {
                 result = Convert.ToByte(number);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  number.GetType().Name, number,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  number.GetType().Name, number);
+                Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Byte type.");
             }
         }
         // The example displays the following output:
@@ -166,24 +154,19 @@ public class Example3
             try
             {
                 result = Convert.ToByte(value);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  value.GetType().Name, value,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {value.GetType().Name} value {value} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  value.GetType().Name, value);
+                Console.WriteLine($"The {value.GetType().Name} value {value} is outside the range of the Byte type.");
             }
             catch (FormatException)
             {
-                Console.WriteLine("The {0} value {1} is not in a recognizable format.",
-                                  value.GetType().Name, value);
+                Console.WriteLine($"The {value.GetType().Name} value {value} is not in a recognizable format.");
             }
             catch (InvalidCastException)
             {
-                Console.WriteLine("No conversion to a Byte exists for the {0} value {1}.",
-                                  value.GetType().Name, value);
+                Console.WriteLine($"No conversion to a Byte exists for the {value.GetType().Name} value {value}.");
             }
         }
         // The example displays the following output:
@@ -211,14 +194,11 @@ public class Example3
             try
             {
                 result = Convert.ToByte(number);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  number.GetType().Name, number,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  number.GetType().Name, number);
+                Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Byte type.");
             }
         }
         // The example displays the following output:
@@ -240,14 +220,11 @@ public class Example3
             try
             {
                 result = Convert.ToByte(number);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  number.GetType().Name, number,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  number.GetType().Name, number);
+                Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Byte type.");
             }
         }
         // The example displays the following output:
@@ -268,14 +245,11 @@ public class Example3
             try
             {
                 result = Convert.ToByte(number);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  number.GetType().Name, number,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  number.GetType().Name, number);
+                Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Byte type.");
             }
         }
         // The example displays the following output:
@@ -296,14 +270,11 @@ public class Example3
             try
             {
                 result = Convert.ToByte(number);
-                Console.WriteLine("Converted the {0} value {1} to the {2} value {3}.",
-                                  number.GetType().Name, number,
-                                  result.GetType().Name, result);
+                Console.WriteLine($"Converted the {number.GetType().Name} value {number} to the {result.GetType().Name} value {result}.");
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The {0} value {1} is outside the range of the Byte type.",
-                                  number.GetType().Name, number);
+                Console.WriteLine($"The {number.GetType().Name} value {number} is outside the range of the Byte type.");
             }
         }
         // The example displays the following output:

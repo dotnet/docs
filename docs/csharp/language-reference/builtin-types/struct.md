@@ -1,7 +1,7 @@
 ---
 title: "Structure types"
 description: Learn about the struct type in C#
-ms.date: 04/05/2023
+ms.date: 11/22/2024
 f1_keywords:
   - "struct_CSharpKeyword"
 helpviewer_keywords:
@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 A *structure type* (or *struct type*) is a [value type](value-types.md) that can encapsulate data and related functionality. You use the `struct` keyword to define a structure type:
 
-[!code-csharp[struct example](snippets/shared/StructType.cs#StructExample)]
+:::code language="csharp" source="snippets/shared/StructType.cs" id="StructExample":::
 
 For information about `ref struct` and `readonly ref struct` types, see the [ref structure types](ref-struct.md) article.
 
@@ -27,8 +27,8 @@ Because structure types have value semantics, we recommend you define *immutable
 
 You use the `readonly` modifier to declare that a structure type is immutable. All data members of a `readonly` struct must be read-only as follows:
 
-- Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
-- Any property, including automatically implemented ones, must be read-only or [`init` only](../keywords/init.md). Note that init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
+- Any field declaration must have the [`readonly` modifier](../keywords/readonly.md).
+- Any property, including automatically implemented ones, must be read-only or [`init` only](../keywords/init.md). Init-only setters are only available from [C# version 9 onwards](../../whats-new/csharp-version-history.md).
 
 That guarantees that no member of a `readonly` struct modifies the state of the struct. That means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
@@ -37,7 +37,7 @@ That guarantees that no member of a `readonly` struct modifies the state of the 
 
 The following code defines a `readonly` struct with init-only property setters:
 
-[!code-csharp[readonly struct](snippets/shared/StructType.cs#ReadonlyStruct)]
+:::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyStruct":::
 
 ## `readonly` instance members
 
@@ -49,38 +49,38 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
 
 - methods:
 
-  [!code-csharp[readonly method](snippets/shared/StructType.cs#ReadonlyMethod)]
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyMethod":::
 
   You can also apply the `readonly` modifier to methods that override methods declared in <xref:System.Object?displayProperty=nameWithType>:
 
-  [!code-csharp[readonly override](snippets/shared/StructType.cs#ReadonlyOverride)]
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyOverride":::
 
 - properties and indexers:
 
-  [!code-csharp[readonly property get](snippets/shared/StructType.cs#ReadonlyProperty)]
+  :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyProperty":::
 
   If you need to apply the `readonly` modifier to both accessors of a property or indexer, apply it in the declaration of the property or indexer.
 
   > [!NOTE]
   > The compiler declares a `get` accessor of an [automatically implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
 
-  You may apply the `readonly` modifier to a property or indexer with an `init` accessor:
+  You can apply the `readonly` modifier to a property or indexer with an `init` accessor:
 
   :::code language="csharp" source="snippets/shared/StructType.cs" id="ReadonlyWithInit":::
 
 You can apply the `readonly` modifier to static fields of a structure type, but not any other static members, such as properties or methods.
 
-The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Avoiding allocations](../../advanced-topics/performance/index.md).
+The compiler can make use of the `readonly` modifier for performance optimizations. For more information, see [Avoiding allocations](../../advanced-topics/performance/index.md).
 
 ## Nondestructive mutation
 
-Beginning with C# 10, you can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
+You can use the [`with` expression](../operators/with-expression.md) to produce a copy of a structure-type instance with the specified properties and fields modified. You use [object initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) syntax to specify what members to modify and their new values, as the following example shows:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="WithExpression":::
 
 ## `record` struct
 
-Beginning with C# 10, you can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
+You can define record structure types. Record types provide built-in functionality for encapsulating data. You can define both `record struct` and `readonly record struct` types. A record struct can't be a [`ref struct`](ref-struct.md). For more information and examples, see [Records](record.md).
 
 ## Inline arrays
 
@@ -104,13 +104,13 @@ There are minimal restrictions on the type of the single field of an inline arra
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArrayWithPointer":::
 
-but it can be any reference type, or any value type:
+But it can be any reference type, or any value type:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="DeclareInlineArrayWithReferenceType":::
 
 You can use inline arrays with almost any C# data structure.
 
-Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md)
+Inline arrays are an advanced language feature. They're intended for high-performance scenarios where an inline, contiguous block of elements is faster than other alternative data structures. You can learn more about inline arrays from the [feature speclet](~/_csharplang/proposals/csharp-12.0/inline-arrays.md).
 
 ## Struct initialization and default values
 
@@ -127,38 +127,38 @@ The most common situation where you see default values is in arrays or in other 
 TemperatureRange[] lastMonth = new TemperatureRange[30];
 ```
 
-All of a struct's member fields must be *definitely assigned* when it's created because `struct` types directly store their data. The `default` value of a struct has *definitely assigned* all fields to 0. All fields must be definitely assigned when a constructor is invoked. You initialize fields using the following mechanisms:
+All of a struct's member fields must be *definitely assigned* when created because `struct` types directly store their data. The `default` value of a struct *definitely assigned* all fields to 0. All fields must be definitely assigned when a constructor is invoked. You initialize fields using the following mechanisms:
 
 - You can add *field initializers* to any field or auto implemented property.
 - You can initialize any fields, or auto properties, in the body of the constructor.
 
-Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. The compiler performs its usual definite assignment analysis. Any fields that are accessed before being assigned, or not definitely assigned when the constructor finishes executing are assigned their default values before the constructor body executes. If `this` is accessed before all fields are assigned, the struct is initialized to the default value before the constructor body executes.
+Beginning with C# 11, if you don't initialize all fields in a struct, the compiler adds code to the constructor that initializes those fields to the default value. A struct assigned to its `default` value is initialized to the 0-bit pattern. A struct initialized with `new` is initialized to the 0-bit pattern, followed by executing any field initializers and a constructor.
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="FieldInitializer":::
 
 Every `struct` has a `public` parameterless constructor. If you write a parameterless constructor, it must be public. If a struct declares any field initializers, it must explicitly declare a constructor. That constructor need not be parameterless. If a struct declares a field initializer but no constructors, the compiler reports an error. Any explicitly declared constructor (with parameters, or parameterless) executes all field initializers for that struct. All fields without a field initializer or an assignment in a constructor are set to the [default value](default-values.md). For more information, see the [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md) feature proposal note.
 
-Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provides a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
+Beginning with C# 12, `struct` types can define a [primary constructor](../../programming-guide/classes-and-structs/instance-constructors.md#primary-constructors) as part of its declaration. Primary constructors provide a concise syntax for constructor parameters that can be used throughout the `struct` body, in any member declaration for that struct.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
 :::code language="csharp" source="snippets/shared/StructType.cs" id="SnippetWithoutNew":::
 
-In the case of the [built-in value types](value-types.md#built-in-value-types), use the corresponding literals to specify a value of the type.
+For the [built-in value types](value-types.md#built-in-value-types), use the corresponding literals to specify a value of the type.
 
 ## Limitations with the design of a structure type
 
-Structs have most of the capabilities of a [class](../keywords/class.md) type. There are some exceptions, and some exceptions that have been removed in more recent versions:
+Structs have most of the capabilities of a [class](../keywords/class.md) type. There are some exceptions:
 
 - A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
 - You can't declare a [finalizer](../../programming-guide/classes-and-structs/finalizers.md) within a structure type.
-- Prior to C# 11, a constructor of a structure type must initialize all instance fields of the type.
+- Before C# 11, a constructor of a structure type must initialize all instance fields of the type.
 
 ## Passing structure-type variables by reference
 
 When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. Pass by value can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the `ref`, `out`, `in`, or `ref readonly` method parameter modifiers to indicate that an argument must be [passed by reference](../keywords/method-parameters.md#reference-parameters). Use [ref returns](../statements/jump-statements.md#the-return-statement) to return a method result by reference. For more information, see [Avoid allocations](../../advanced-topics/performance/index.md).
 
-## struct constraint
+## `struct` constraint
 
 You also use the `struct` keyword in the [`struct` constraint](../../programming-guide/generics/constraints-on-type-parameters.md) to specify that a type parameter is a non-nullable value type. Both structure and [enumeration](enum.md) types satisfy the `struct` constraint.
 
@@ -174,10 +174,10 @@ For more information about `struct` features, see the following feature proposal
 
 - [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
 - [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
-- [C# 10 - Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
-- [C# 10 - Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
-- [C# 10 - Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
-- [C# 11 - Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
+- [Parameterless struct constructors](~/_csharplang/proposals/csharp-10.0/parameterless-struct-constructors.md)
+- [Allow `with` expression on structs](~/_csharplang/proposals/csharp-10.0/record-structs.md#allow-with-expression-on-structs)
+- [Record structs](~/_csharplang/proposals/csharp-10.0/record-structs.md)
+- [Auto default structs](~/_csharplang/proposals/csharp-11.0/auto-default-structs.md)
 
 ## See also
 

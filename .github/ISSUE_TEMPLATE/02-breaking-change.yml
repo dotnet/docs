@@ -1,12 +1,12 @@
 name: ".NET breaking change"
-description: Report a change in .NET that breaks something that worked in a previous version. Intended mostly for product-team use.
+description: This template is for .NET product team members to report breaking changes to documentation content developers. Please report user-discovered issues in the appropriate product repo.
 title: "[Breaking change]: "
 labels:
   - breaking-change
   - Pri1
   - doc-idea
 assignees:
- - gewarren
+ - camsoper
 body:
   - type: textarea
     id: description
@@ -21,15 +21,14 @@ body:
       label: Version
       description: What version of .NET introduced the breaking change?
       options:
-        - .NET 8 GA
-        - .NET 9 Preview 7
-        - .NET 9 RC 1
-        - .NET 9 RC 2
-        - .NET 9 GA
+        - .NET 8
+        - .NET 9
         - .NET 10 Preview 1
         - .NET 10 Preview 2
         - .NET 10 Preview 3
         - .NET 10 Preview 4
+        - .NET 10 Preview 5
+        - .NET 10 Preview 6
         - Other (please put exact version in description textbox)
     validations:
       required: true

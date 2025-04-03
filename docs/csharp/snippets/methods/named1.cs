@@ -1,4 +1,4 @@
-﻿// <Snippet45>
+// <Snippet45>
 namespace NamedMotorCycle;
 
 class TestMotorcycle : Motorcycle
@@ -13,8 +13,8 @@ class TestMotorcycle : Motorcycle
         var moto = new TestMotorcycle();
         moto.StartEngine();
         moto.AddGas(15);
-        int travelTime = moto.Drive(miles: 170, speed: 60);
-        Console.WriteLine("Travel time: approx. {0} hours", travelTime);
+        int travelTime = moto.Drive(speed: 60, miles: 170);
+        Console.WriteLine($"Travel time: approx. {travelTime} hours");
     }
 }
 // The example displays the following output:

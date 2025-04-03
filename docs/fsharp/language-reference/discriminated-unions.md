@@ -113,16 +113,17 @@ type SingleCase = Case of string
 
 [<Struct>]
 type Multicase =
-    | Case1 of Case1 : string
-    | Case2 of Case2 : int
-    | Case3 of Case3 : double
+    | Case1 of string
+    | Case2 of int
+    | Case3 of double
 ```
 
 Because these are value types and not reference types, there are extra considerations compared with reference discriminated unions:
 
 1. They are copied as value types and have value type semantics.
-2. You cannot use a recursive type definition with a multicase struct Discriminated Union.
-3. You must provide unique case names for a multicase struct Discriminated Union.
+2. You cannot use a recursive type definition with a multicase struct discriminated union.
+
+Before F# 9, there was a requirement for each case to specify a unique case name (within the union). Starting with F# 9, the limitation is lifted.
 
 ## Using Discriminated Unions Instead of Object Hierarchies
 
@@ -158,6 +159,23 @@ Discriminated unions work well if the nodes in the tree are heterogeneous. In th
 
 When this code is executed, the value of `result` is 5.
 
+## Mutually Recursive Discriminated Unions
+
+Discriminated unions in F# can be mutually recursive, meaning that multiple union types can reference each other in a recursive manner. This is useful when modeling hierarchical or interconnected structures. To define mutually recursive discriminated unions, use the `and` keyword.
+
+For example, consider an abstract syntax tree (AST) representation where expressions can include statements, and statements can contain expressions:
+
+```fsharp
+type Expression =
+    | Literal of int
+    | Variable of string
+    | Operation of string * Expression * Expression
+and Statement =
+    | Assign of string * Expression
+    | Sequence of Statement list
+    | IfElse of Expression * Statement * Statement
+```
+
 ## Members
 
 It is possible to define members on discriminated unions. The following example shows how to define a property and implement an interface:
@@ -188,6 +206,23 @@ type Shape =
             | EquilateralTriangle s -> printfn $"Equilateral Triangle of side %f{s}"
             | Square s -> printfn $"Square with side %f{s}"
             | Rectangle(l, w) -> printfn $"Rectangle with length %f{l} and width %f{w}"
+```
+
+## `.Is*` properties on cases
+
+Since F# 9, discriminated unions expose auto-generated `.Is*` properties for each case, allowing you to check if a value is of a particular case.
+
+This is how it can be used:
+
+```fsharp
+type Contact =
+    | Email of address: string
+    | Phone of countryCode: int * number: string
+
+type Person = { name: string; contact: Contact }
+
+let canSendEmailTo person =
+    person.contact.IsEmail      // .IsEmail is auto-generated
 ```
 
 ## Common attributes

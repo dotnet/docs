@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 
 public class Person2
@@ -35,7 +35,7 @@ public class UsageErrorsEx2
         p1.Name = "John";
         Person2 p2 = null;
 
-        Console.WriteLine("p1 = p2: {0}", p1.Equals(p2));
+        Console.WriteLine($"p1 = p2: {p1.Equals(p2)}");
     }
 }
 // The example displays the following output:

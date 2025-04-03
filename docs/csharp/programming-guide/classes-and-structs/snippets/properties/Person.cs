@@ -51,6 +51,7 @@ namespace VersionThree
     }
     // </Initializer>
 }
+
 namespace VersionFour
 {
     // <AccessorModifiers>
@@ -76,6 +77,7 @@ namespace VersionFive
     }
     // </Readonly>
 }
+
 namespace VersionSix
 {
     // <InitOnly>
@@ -90,6 +92,7 @@ namespace VersionSix
     }
     // </InitOnly>
 }
+
 namespace VersionSeven
 {
     // <Required>
@@ -130,6 +133,7 @@ namespace VersionEight
     }
     // </ExpressionBodiedProperty>
 }
+
 namespace VersionNine
 {
     // <CachedBackingStore>
@@ -160,6 +164,7 @@ namespace VersionNine
     }
     // </CachedBackingStore>
 }
+
 namespace VersionTen
 {
     // <UseBackingFields>
@@ -206,29 +211,29 @@ namespace properties
 
     // <UsingEmployeeExample>
     class Employee
-{
-    private string _name;  // the name field
-    public string Name => _name;     // the Name property
-}
-// </UsingEmployeeExample>
-
-// <ManageExample>
-class Manager
-{
-    private string _name;
-    public string Name => _name != null ? _name : "NA";
-}
-// </ManageExample>
-
-//<StudentExample>
-class Student
-{
-    private string _name;  // the name field
-    public string Name    // the Name property
     {
-        get => _name;
-        set => _name = value;
+        private string _name;           // the name field
+        public string Name => _name;    // the Name property
     }
-}
-//</StudentExample>
+    // </UsingEmployeeExample>
+
+    // <ManageExample>
+    class Manager
+    {
+        private string _name;
+        public string Name => _name != null ? _name : "NA";
+    }
+    // </ManageExample>
+
+    //<StudentExample>
+    class Student
+    {
+        private string _name;      // the name field
+        public string Name         // the Name property
+        {
+            get => _name;
+            set => _name = value;
+        }
+    }
+    //</StudentExample>
 }

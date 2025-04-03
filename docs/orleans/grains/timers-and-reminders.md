@@ -10,19 +10,19 @@ The Orleans runtime provides two mechanisms, called timers and reminders, that e
 
 ## Timers
 
-**Timers** are used to create periodic grain behavior that isn't required to span multiple activations (instantiations of the grain). A timer is identical to the standard .NET <xref:System.Threading.Timer?displayProperty=fullName> class. In addition, timers are subject to single-threaded execution guarantees within the grain activation that they operate on, and their executions are interleaved with other requests, as though the timer callback was a grain method marked with <xref:Orleans.Concurrency.AlwaysInterleaveAttribute>.
+**Timers** are used to create periodic grain behavior that isn't required to span multiple activations (instantiations of the grain). A timer is identical to the standard .NET <xref:System.Threading.Timer?displayProperty=fullName> class. In addition, timers are subject to single-threaded execution guarantees within the grain activation that they operate on.
 
 Each activation may have zero or more timers associated with it. The runtime executes each timer routine within the runtime context of the activation that it's associated with.
 
 ## Timer usage
 
-To start a timer, use the `RegisterGrainTimer` method, which returns an <xref:System.IDisposable> reference:
+To start a timer, use the `RegisterGrainTimer` method, which returns an <xref:Orleans.Runtime.IGrainTimer> reference:
 
 ```csharp
-protected IDisposable RegisterGrainTimer(
-    Func<object, Task> callback,        // function invoked when the timer ticks
-    object state,                       // object to pass to callback
-    GrainTimerCreationOptions options)  // timer creation options
+protected IGrainTimer RegisterGrainTimer<TState>(
+    Func<TState, CancellationToken, Task> callback, // function invoked when the timer ticks
+    TState state,                                   // object to pass to callback
+    GrainTimerCreationOptions options)              // timer creation options
 ```
 
 To cancel the timer, you dispose of it.
@@ -33,7 +33,15 @@ A timer ceases to trigger if the grain is deactivated or when a fault occurs and
 
 * When activation collection is enabled, the execution of a timer callback doesn't change the activation's state from idle to in-use. This means that a timer can't be used to postpone the deactivation of otherwise idle activations.
 * The period passed to `Grain.RegisterGrainTimer` is the amount of time that passes from the moment the `Task` returned by `callback` is resolved to the moment that the next invocation of `callback` should occur. This not only makes it impossible for successive calls to `callback` to overlap, but also makes it so that the length of time `callback` takes to complete affects the frequency at which `callback` is invoked. This is an important deviation from the semantics of <xref:System.Threading.Timer?displayProperty=fullName>.
-* Each invocation of `callback` is delivered to an activation on a separate turn, and never runs concurrently with other turns on the same activation. However, `callback` invocations aren't delivered as messages and thus aren't subject to message interleaving semantics. This means that invocations of `callback` behave as if the grain is re-entrant and executes concurrently with other grain requests. In order to use the grain's request scheduling semantics, you can call a grain method to perform the work you would have done within `callback`. Another alternative is to use an `AsyncLock` or a <xref:System.Threading.SemaphoreSlim>. A more detailed explanation is available in [Orleans GitHub issue #2574](https://github.com/dotnet/orleans/issues/2574).
+* Each invocation of `callback` is delivered to an activation on a separate turn, and never runs concurrently with other turns on the same activation.
+* Callbacks do not interleave by default. Interleaving can be enabled by setting Interleave to true on GrainTimerCreationOptions.
+* Grain timers can be updated using the Change(TimeSpan, TimeSpan) method on the returned IGrainTimer instance.
+* Callbacks can keep the grain active, preventing it from being collected if the timer period is relatively short. This can be enabled by setting KeepAlive to true on GrainTimerCreationOptions.
+* Callbacks can receive a CancellationToken which is canceled when the timer is disposed or the grain starts to deactivate.
+* Callbacks can dispose the grain timer which fired them.
+* Callbacks are subject to grain call filters.
+* Callbacks are visible in distributed tracing, when distributed tracing is enabled.
+* POCO grains (grain classes which do not inherit from Grain) can register grain timers using the RegisterGrainTimer extension method.
 
 ## Reminders
 
@@ -48,7 +56,7 @@ Reminders are similar to timers, with a few important differences:
 
 ## Configuration
 
-Reminders, being persistent, rely upon storage to function. You must specify which storage backing to use before the reminder subsystem functions. This is done by configuring one of the reminder providers via `Use{X}ReminderService` extension methods, where `X` is the name of the provider, for example, <xref:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAzureTableReminderService%2A>.
+Since reminders are persistent, they rely upon storage to function. You must specify which storage backing to use before the reminder subsystem functions. You do this by configuring one of the reminder providers via `Use{X}ReminderService` extension methods, where `X` is the name of the provider, for example, <xref:Orleans.Hosting.SiloHostBuilderReminderExtensions.UseAzureTableReminderService%2A>.
 
 Azure Table configuration:
 

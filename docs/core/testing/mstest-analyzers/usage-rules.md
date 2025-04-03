@@ -24,6 +24,17 @@ Identifier | Name | Description
 [MSTEST0013](mstest0013.md) | AssemblyCleanupShouldBeValidAnalyzer | Methods marked with `[AssemblyCleanup]` should follow the following layout to be valid:<br/>- it should be `public` <br/>- it should be `static`<br/>- it should not be generic<br/>- it should not take any parameter<br/>- return type should be `void`, `Task` or `ValueTask`<br/>- it should not be `async void`<br/>- it should not be a special method (finalizer, operator...).
 [MSTEST0014](mstest0014.md) | DataRowShouldBeValidAnalyzer | `[DataRow]` instances should have the following layout to be valid:<br/>- they should only be set on a test method<br/>- argument count should match method parameters count<br/>- argument type should match method argument type
 [MSTEST0017](mstest0017.md) | AssertionArgsShouldBePassedInCorrectOrder | Assertion arguments should be passed in the correct order
+[MSTEST0018](mstest0018.md) | DynamicDataShouldBeValidAnalyzer | Methods marked with `[DynamicData]` should also be marked with `[TestMethod]` (or a derived attribute)
 [MSTEST0023](mstest0023.md) | DoNotNegateBooleanAssertionAnalyzer | Do not negate boolean assertions
 [MSTEST0024](mstest0024.md) | DoNotStoreStaticTestContextAnalyzer | Do not store TestContext in a static member
 [MSTEST0026](mstest0026.md) | AssertionArgsShouldAvoidConditionalAccessRuleId | Avoid conditional access in assertions
+[MSTEST0030](mstest0030.md) | TypeContainingTestMethodShouldBeATestClass | Type containing `[TestMethod]` should be marked with `[TestClass]`
+[MSTEST0031](mstest0031.md) | DoNotUseSystemDescriptionAttribute | 'System.ComponentModel.DescriptionAttribute' has no effect in the context of tests
+[MSTEST0032](mstest0032.md) | ReviewAlwaysTrueAssertConditionAnalyzer | Review or remove the assertion as its condition is known to be always true
+[MSTEST0034](mstest0034.md) | UseClassCleanupBehaviorEndOfClass | Use `ClassCleanupBehavior.EndOfClass` with the `[ClassCleanup]`
+[MSTEST0035](mstest0035.md) | UseDeploymentItemWithTestMethodOrTestClassTitle | `[DeploymentItem]` can be specified only on test class or test method
+[MSTEST0037](mstest0037.md) | UseProperAssertMethodsAnalyzer | Use proper `Assert` methods
+[MSTEST0038](mstest0038.md) | AvoidAssertAreSameWithValueTypesAnalyzer | Don't use `Assert.AreSame` or `Assert.AreNotSame` with value types
+[MSTEST0039](mstest0039.md) | UseNewerAssertThrowsAnalyzer | Use newer 'Assert.Throws' methods
+[MSTEST0040](mstest0040.md) | AvoidUsingAssertsInAsyncVoidContextAnalyzer | Do not assert inside 'async void' contexts
+[MSTEST0041](mstest0041.md) | UseConditionBaseWithTestClassAnalyzer | Use 'ConditionBaseAttribute' on test classes

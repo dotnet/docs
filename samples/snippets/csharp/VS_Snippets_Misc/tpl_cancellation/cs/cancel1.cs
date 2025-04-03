@@ -1,4 +1,4 @@
-﻿// <Snippet04>
+// <Snippet04>
 using System;
 using System.Collections.Concurrent;
 using System.Threading;
@@ -27,9 +27,9 @@ public class Example
         // and also to the task so it can cancel before execution starts.
         var cancellableTask = Task.Run(() => {
             DoSomeWork(token);
-            Console.WriteLine("Cancellable: Task {0} ran to completion", Task.CurrentId);
+            Console.WriteLine($"Cancellable: Task {Task.CurrentId} ran to completion");
         }, token);
-        Console.WriteLine("Main: Cancellable Task {0} created", cancellableTask.Id);
+        Console.WriteLine($"Main: Cancellable Task {cancellableTask.Id} created");
         tasks.Add(cancellableTask);
 
         var parentTask = Task.Run(() =>
@@ -44,17 +44,17 @@ public class Example
                 // to each user delegate and to Task.Run.
                 var childTask = Task.Run(() => {
                     DoSomeWork(token);
-                    Console.WriteLine("Child: Task {0} ran to completion", Task.CurrentId);
+                    Console.WriteLine($"Child: Task {Task.CurrentId} ran to completion");
                 }, token);
-                Console.WriteLine("Parent: Task {0} created", childTask.Id);
+                Console.WriteLine($"Parent: Task {childTask.Id} created");
                 tasks.Add(childTask);
 
                 DoSomeWork(token, maxIterations: 1);
             }
 
-            Console.WriteLine("Parent: Task {0} ran to completion", Task.CurrentId);
+            Console.WriteLine($"Parent: Task {Task.CurrentId} ran to completion");
         }, token);
-        Console.WriteLine("Main: Parent Task {0} created", parentTask.Id);
+        Console.WriteLine($"Main: Parent Task {parentTask.Id} created");
         tasks.Add(parentTask);
 
         // Request cancellation from the UI thread.
@@ -85,7 +85,7 @@ public class Example
         // Display status of all tasks.
         foreach (var task in tasks)
         {
-            Console.WriteLine("Main: Task {0} status is now {1}", task.Id, task.Status);
+            Console.WriteLine($"Main: Task {task.Id} status is now {task.Status}");
         }
     }
 
@@ -94,7 +94,7 @@ public class Example
         // Was cancellation already requested?
         if (ct.IsCancellationRequested)
         {
-            Console.WriteLine("Task {0} was cancelled before it got started.", Task.CurrentId);
+            Console.WriteLine($"Task {Task.CurrentId} was cancelled before it got started.");
             ct.ThrowIfCancellationRequested();
         }
 
@@ -112,7 +112,7 @@ public class Example
 
             if (ct.IsCancellationRequested)
             {
-                Console.WriteLine("Task {0} work cancelled", Task.CurrentId);
+                Console.WriteLine($"Task {Task.CurrentId} work cancelled");
                 ct.ThrowIfCancellationRequested();
             }
         }

@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 
 public class Example3
@@ -13,7 +13,7 @@ public class Example3
                 status = (ArrivalStatus)value;
             else
                 status = ArrivalStatus.Unknown;
-            Console.WriteLine("Converted {0:N0} to {1}", value, status);
+            Console.WriteLine($"Converted {value:N0} to {status}");
         }
     }
 }

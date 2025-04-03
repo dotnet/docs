@@ -1,7 +1,7 @@
 ---
 title: "Patterns - Pattern matching using the is and switch expressions."
 description: "Learn about the patterns supported by the `is` and `switch` expressions. Combine multiple patterns using the `and`, `or`, and `not` operators."
-ms.date: 11/14/2024
+ms.date: 02/18/2025
 f1_keywords: 
   - "and_CSharpKeyword"
   - "or_CSharpKeyword"
@@ -24,16 +24,16 @@ The following C# expressions and statements support pattern matching:
 
 In those constructs, you can match an input expression against any of the following patterns:
 
-- [Declaration pattern](#declaration-and-type-patterns): to check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
-- [Type pattern](#declaration-and-type-patterns): to check the run-time type of an expression.
-- [Constant pattern](#constant-pattern): to test that an expression result equals a specified constant.
-- [Relational patterns](#relational-patterns): to compare an expression result with a specified constant.
-- [Logical patterns](#logical-patterns): to test that an expression matches a logical combination of patterns.
-- [Property pattern](#property-pattern): to test that an expression's properties or fields match nested patterns.
-- [Positional pattern](#positional-pattern): to deconstruct an expression result and test if the resulting values match nested patterns.
-- [`var` pattern](#var-pattern): to match any expression and assign its result to a declared variable.
-- [Discard pattern](#discard-pattern): to match any expression.
-- [List patterns](#list-patterns): to test that a sequence of elements matches corresponding nested patterns. Introduced in C# 11.
+- [Declaration pattern](#declaration-and-type-patterns): check the run-time type of an expression and, if a match succeeds, assign an expression result to a declared variable.
+- [Type pattern](#declaration-and-type-patterns): check the run-time type of an expression.
+- [Constant pattern](#constant-pattern): test that an expression result equals a specified constant.
+- [Relational patterns](#relational-patterns): compare an expression result with a specified constant.
+- [Logical patterns](#logical-patterns): test that an expression matches a logical combination of patterns.
+- [Property pattern](#property-pattern): test that an expression's properties or fields match nested patterns.
+- [Positional pattern](#positional-pattern): deconstruct an expression result and test if the resulting values match nested patterns.
+- [`var` pattern](#var-pattern): match any expression and assign its result to a declared variable.
+- [Discard pattern](#discard-pattern): match any expression.
+- [List patterns](#list-patterns): test that a sequence of elements matches corresponding nested patterns. Introduced in C# 11.
 
 [Logical](#logical-patterns), [property](#property-pattern), [positional](#positional-pattern), and [list](#list-patterns) patterns are *recursive* patterns. That is, they can contain *nested* patterns.
 
@@ -48,15 +48,11 @@ You use declaration and type patterns to check if the run-time type of an expres
 A *declaration pattern* with type `T` matches an expression when an expression result is non-null and any of the following conditions are true:
 
 - The run-time type of an expression result is `T`.
-
+- The type `T` is a `ref struct` type and there is an identity conversion from the expression to `T`.
 - The run-time type of an expression result derives from type `T`, implements interface `T`, or another [implicit reference conversion](~/_csharpstandard/standard/conversions.md#1028-implicit-reference-conversions) exists from it to `T`. The following example demonstrates two cases when this condition is true:
-
   :::code language="csharp" source="snippets/patterns/DeclarationAndTypePatterns.cs" id="ReferenceConversion":::
-
   In the preceding example, at the first call to the `GetSourceLabel` method, the first pattern matches an argument value because the argument's run-time type `int[]` derives from the <xref:System.Array> type. At the second call to the `GetSourceLabel` method, the argument's run-time type <xref:System.Collections.Generic.List%601> doesn't derive from the <xref:System.Array> type but implements the <xref:System.Collections.Generic.ICollection%601> interface.
-
 - The run-time type of an expression result is a [nullable value type](../builtin-types/nullable-value-types.md) with the underlying type `T`.
-
 - A [boxing](../../programming-guide/types/boxing-and-unboxing.md#boxing) or [unboxing](../../programming-guide/types/boxing-and-unboxing.md#unboxing) conversion exists from the run-time type of an expression result to type `T`.
 
 The following example demonstrates the last two conditions:
@@ -81,7 +77,7 @@ For more information, see the [Declaration pattern](~/_csharplang/proposals/csha
 
 ## Constant pattern
 
-You use a *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
+The *constant pattern* is an alternative syntax for [`==`](./equality-operators.md) when the right operand is a constant. You use a *constant pattern* to test if an expression result equals a specified constant, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/ConstantPattern.cs" id="BasicExample":::
 
@@ -184,13 +180,13 @@ You can also add a run-time type check and a variable declaration to a property 
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="WithTypeCheck":::
 
-A property pattern is a recursive pattern. That is, you can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
+A property pattern is a recursive pattern. You can use any pattern as a nested pattern. Use a property pattern to match parts of data against nested patterns, as the following example shows:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="RecursivePropertyPattern":::
 
 The preceding example uses the `or` [pattern combinator](#logical-patterns) and [record types](../builtin-types/record.md).
 
-Beginning with C# 10, you can reference nested properties or fields within a property pattern. This capability is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
+You can reference nested properties or fields within a property pattern. This capability is known as an *extended property pattern*. For example, you can refactor the method from the preceding example into the following equivalent code:
 
 :::code language="csharp" source="snippets/patterns/PropertyPattern.cs" id="ExtendedPropertyPattern":::
 
@@ -226,7 +222,7 @@ You can also extend a positional pattern in any of the following ways:
 
   :::code language="csharp" source="snippets/patterns/PositionalPattern.cs" id="WithTypeCheck":::
 
-  The preceding example uses [positional records](../builtin-types/record.md#positional-syntax-for-property-definition) that implicitly provide the `Deconstruct` method.
+  The preceding example uses [positional records](../builtin-types/record.md#positional-syntax-for-property-and-field-definition) that implicitly provide the `Deconstruct` method.
 
 - Use a [property pattern](#property-pattern) within a positional pattern, as the following example shows:
 
@@ -304,7 +300,7 @@ For information about features added in C# 8 and later, see the following featur
 
 - [Recursive pattern matching](~/_csharplang/proposals/csharp-8.0/patterns.md)
 - [Pattern-matching updates](~/_csharplang/proposals/csharp-9.0/patterns3.md)
-- [C# 10 - Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
+- [Extended property patterns](~/_csharplang/proposals/csharp-10.0/extended-property-patterns.md)
 - [C# 11 - List patterns](~/_csharplang/proposals/csharp-11.0/list-patterns.md)
 - [C# 11 - Pattern match `Span<char>` on string literal](~/_csharplang/proposals/csharp-11.0/pattern-match-span-of-char-on-string.md)
 

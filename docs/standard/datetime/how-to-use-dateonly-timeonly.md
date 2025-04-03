@@ -1,7 +1,7 @@
 ---
 title: How to use DateOnly and TimeOnly
 description: Learn about the DateOnly and TimeOnly structures in .NET.
-ms.date: 01/11/2023
+ms.date: 12/05/2024
 dev_langs:
   - "csharp"
   - "vb"
@@ -22,7 +22,7 @@ The <xref:System.DateOnly> and <xref:System.TimeOnly> structures were introduced
 `DateOnly` and `TimeOnly` are types that represent those particular portions of a `DateTime` type.
 
 > [!IMPORTANT]
-> <xref:System.DateOnly> and <xref:System.TimeOnly> types aren't available in .NET Framework.
+> <xref:System.DateOnly> and <xref:System.TimeOnly> types aren't available for .NET Framework.
 
 ## The DateOnly structure
 

@@ -53,7 +53,7 @@ The `Project/Sdk` attribute and `Sdk` element enable additive SDKs. Consider the
 </Project>
 ```
 
-In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [.NET Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk)
+In the preceding project file, both SDKs are used to resolve dependencies in an additive nature. For more information, see [.NET Aspire SDK](/dotnet/aspire/fundamentals/dotnet-aspire-sdk).
 
 To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
 
@@ -103,9 +103,9 @@ The following table shows which elements and which [globs](https://en.wikipedia.
 
 | Element | Include glob | Exclude glob | Remove glob |
 |---------|--------------|--------------|-------------|
-| Compile | \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln;  \*\*/\*.vssscc  | N/A |
-| EmbeddedResource  | \*\*/\*.resx | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc | N/A |
-| None | \*\*/\* | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
+| Compile | \*\*/\*.cs (or other language extensions) | \*\*/\*.user;  \*\*/\*.\*proj;  \*\*/\*.sln(x);  \*\*/\*.vssscc  | N/A |
+| EmbeddedResource  | \*\*/\*.resx | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc | N/A |
+| None | \*\*/\* | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln(x); \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
 > The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the [DefaultItemExcludes property](msbuild-props.md#defaultitemexcludes).

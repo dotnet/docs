@@ -1,24 +1,23 @@
-﻿Imports Microsoft.Win32.SafeHandles
-Imports System.Runtime.InteropServices
+﻿Imports System.IO
 
-Public Class DerivedClassWithSafeHandle
-    Inherits BaseClassWithSafeHandle
+Public Class DisposableDerived
+    Inherits DisposableBase
 
     ' To detect redundant calls
-    Private _disposedValue As Boolean
+    Private _isDisposed As Boolean
 
-    ' Instantiate a SafeHandle instance.
-    Private _safeHandle As SafeHandle = New SafeFileHandle(IntPtr.Zero, True)
+    ' Instantiate a disposable object owned by this class.
+    Private _managedResource As Stream = New MemoryStream()
 
-    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-        If Not _disposedValue Then
+    ' Protected implementation of Dispose pattern.
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        If Not _isDisposed Then
+            _isDisposed = True
 
             If disposing Then
-                _safeHandle?.Dispose()
-                _safeHandle = Nothing
+                _managedResource?.Dispose()
+                _managedResource = Nothing
             End If
-
-            _disposedValue = True
         End If
 
         ' Call base class implementation.

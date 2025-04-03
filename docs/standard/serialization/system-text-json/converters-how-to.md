@@ -206,7 +206,7 @@ The following sections provide converter samples that address some common scenar
 * [Support round trip for `Stack` types](#support-round-trip-for-stack-types).
 * [Use default system converter](#use-default-system-converter).
 
-For a sample <xref:System.Data.DataTable> converter, see [Supported collection types](supported-collection-types.md#systemdata-namespace).
+For a sample <xref:System.Data.DataTable> converter, see [Supported types](supported-types.md#systemdata-namespace).
 
 ### Deserialize inferred types to object properties
 

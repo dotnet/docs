@@ -1,4 +1,4 @@
-﻿// <SnippetAddUsings>
+// <SnippetAddUsings>
 using Microsoft.ML;
 using Microsoft.ML.TimeSeries;
 using PhoneCallsAnomalyDetection;
@@ -38,7 +38,7 @@ int DetectPeriod(MLContext mlContext, IDataView phoneCalls)
     // </SnippetDetectSeasonality>
 
     // <SnippetDisplayPeriod>
-    Console.WriteLine("Period of the series is: {0}.", period);
+    Console.WriteLine($"Period of the series is: {period}.");
     // </SnippetDisplayPeriod>
 
     return period;

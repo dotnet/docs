@@ -25,7 +25,7 @@ dev_langs:
 | **Enabled by default**              | Yes                                                |
 | **Default severity**                | Warning                                            |
 | **Introduced in version**           | 3.2.0                                              |
-| **There is a code fix**             | Yes                                                |
+| **Is there a code fix**             | Yes                                                |
 
 ## Cause
 
@@ -36,7 +36,7 @@ A test context property is not following single or multiple points of the requir
 `TestContext` properties should follow the given layout to be considered valid by MSTest:
 
 - they should be properties and not fields
-- they should be named `TestContext` (case insensitive)
+- they should be named `TestContext` (case sensitive)
 - they should be `public` (or `internal` if the `[assembly: DiscoverInternals]` assembly attribute is set)
 - they should not be `static`
 - they should not be readonly
@@ -48,3 +48,22 @@ Ensure that the `TestContext` property matches the required layout described abo
 ## When to suppress warnings
 
 Do not suppress a warning from this rule. Ignoring this rule will result in the `TestContext` not being injected by MSTest, thus resulting in `NullReferenceException` or inconsistent state when using the property.
+
+## Suppress a warning
+
+If you just want to suppress a single violation, add preprocessor directives to your source file to disable and then re-enable the rule.
+
+```csharp
+#pragma warning disable MSTEST0005
+// The code that's violating the rule is on this line.
+#pragma warning restore MSTEST0005
+```
+
+To disable the rule for a file, folder, or project, set its severity to `none` in the [configuration file](../../../fundamentals/code-analysis/configuration-files.md).
+
+```ini
+[*.{cs,vb}]
+dotnet_diagnostic.MSTEST0005.severity = none
+```
+
+For more information, see [How to suppress code analysis warnings](../../../fundamentals/code-analysis/suppress-warnings.md).

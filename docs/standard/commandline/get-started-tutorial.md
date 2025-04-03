@@ -31,8 +31,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* A code editor, such as [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
-* The [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 Or
 
@@ -55,7 +54,7 @@ Create a .NET 6 console app project named "scl".
 * Run the following command:
 
   ```dotnetcli
-  dotnet add package System.CommandLine --prerelease
+  dotnet package add System.CommandLine --prerelease
   ```
 
   The `--prerelease` option is necessary because the library is still in beta.

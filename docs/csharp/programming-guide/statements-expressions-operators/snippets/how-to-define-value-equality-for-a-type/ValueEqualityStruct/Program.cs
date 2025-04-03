@@ -1,4 +1,4 @@
-﻿namespace ValueEqualityStruct
+namespace ValueEqualityStruct
 {
     struct TwoDPoint : IEquatable<TwoDPoint>
     {
@@ -36,44 +36,44 @@
             int i = 5;
 
             // True:
-            Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
+            Console.WriteLine($"pointA.Equals(pointB) = {pointA.Equals(pointB)}");
             // True:
-            Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
+            Console.WriteLine($"pointA == pointB = {pointA == pointB}");
             // True:
-            Console.WriteLine("object.Equals(pointA, pointB) = {0}", object.Equals(pointA, pointB));
+            Console.WriteLine($"object.Equals(pointA, pointB) = {object.Equals(pointA, pointB)}");
             // False:
-            Console.WriteLine("pointA.Equals(null) = {0}", pointA.Equals(null));
+            Console.WriteLine($"pointA.Equals(null) = {pointA.Equals(null)}");
             // False:
-            Console.WriteLine("(pointA == null) = {0}", pointA == null);
+            Console.WriteLine($"(pointA == null) = {pointA == null}");
             // True:
-            Console.WriteLine("(pointA != null) = {0}", pointA != null);
+            Console.WriteLine($"(pointA != null) = {pointA != null}");
             // False:
-            Console.WriteLine("pointA.Equals(i) = {0}", pointA.Equals(i));
+            Console.WriteLine($"pointA.Equals(i) = {pointA.Equals(i)}");
             // CS0019:
-            // Console.WriteLine("pointA == i = {0}", pointA == i);
+            // Console.WriteLine($"pointA == i = {pointA == i}");
 
             // Compare unboxed to boxed.
             System.Collections.ArrayList list = new System.Collections.ArrayList();
             list.Add(new TwoDPoint(3, 4));
             // True:
-            Console.WriteLine("pointA.Equals(list[0]): {0}", pointA.Equals(list[0]));
+            Console.WriteLine($"pointA.Equals(list[0]): {pointA.Equals(list[0])}");
 
             // Compare nullable to nullable and to non-nullable.
             TwoDPoint? pointC = null;
             TwoDPoint? pointD = null;
             // False:
-            Console.WriteLine("pointA == (pointC = null) = {0}", pointA == pointC);
+            Console.WriteLine($"pointA == (pointC = null) = {pointA == pointC}");
             // True:
-            Console.WriteLine("pointC == pointD = {0}", pointC == pointD);
+            Console.WriteLine($"pointC == pointD = {pointC == pointD}");
 
             TwoDPoint temp = new TwoDPoint(3, 4);
             pointC = temp;
             // True:
-            Console.WriteLine("pointA == (pointC = 3,4) = {0}", pointA == pointC);
+            Console.WriteLine($"pointA == (pointC = 3,4) = {pointA == pointC}");
 
             pointD = temp;
             // True:
-            Console.WriteLine("pointD == (pointC = 3,4) = {0}", pointD == pointC);
+            Console.WriteLine($"pointD == (pointC = 3,4) = {pointD == pointC}");
 
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();

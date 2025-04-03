@@ -14,7 +14,7 @@ To use the ML.NET API by itself, (without the ML.NET AutoML CLI) you need to cho
 The ML.NET CLI simplifies this process using automated machine learning (AutoML).
 
 > [!NOTE]
-> This article refers to ML.NET **CLI** and ML.NET **AutoML**, which are currently in Preview, and material may be subject to change.
+> This article refers to ML.NET **CLI** and ML.NET **AutoML**, which are currently in preview, and material is subject to change.
 
 ## What is the ML.NET command-line interface (CLI)?
 

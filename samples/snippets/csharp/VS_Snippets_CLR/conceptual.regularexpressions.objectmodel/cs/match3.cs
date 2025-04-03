@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Text.RegularExpressions;
 
@@ -11,8 +11,7 @@ public class Example
       Match match = Regex.Match(input, pattern);
       while (match.Success)
       {
-         Console.WriteLine("{0} found at position {1}.",
-                           match.Value, match.Index);
+         Console.WriteLine($"{match.Value} found at position {match.Index}.");
          match = match.NextMatch();
       }
    }

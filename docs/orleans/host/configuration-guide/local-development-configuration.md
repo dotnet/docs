@@ -26,7 +26,7 @@ using Microsoft.Extensions.Hosting;
 await Host.CreateDefaultBuilder(args)
     .UseOrleans(siloBuilder =>
     {
-        siloBuilder.UseLocalhostClustering();;
+        siloBuilder.UseLocalhostClustering();
     })
     .RunConsoleAsync();
 ```
@@ -49,7 +49,7 @@ For local development, refer to the below example of how to configure a silo for
 Add the `Microsoft.Orleans.Server` NuGet meta-package to the project.
 
 ```dotnetcli
-dotnet add package Microsoft.Orleans.Server
+dotnet package add Microsoft.Orleans.Server
 ```
 
 You need to configure <xref:Orleans.Configuration.ClusterOptions> via <xref:Orleans.Hosting.ISiloBuilder> `Configure` method, specify that you want `LocalhostClustering` as your clustering choice with this silo being the primary, and then configure silo endpoints.

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -17,10 +17,9 @@ public class Example
          Thread.CurrentThread.CurrentCulture = culture;
          Thread.CurrentThread.CurrentUICulture = culture;
 
-         Console.WriteLine("Current UI Culture: {0}",
-                           CultureInfo.CurrentUICulture.Name);
+         Console.WriteLine($"Current UI Culture: {CultureInfo.CurrentUICulture.Name}");
          string dateString = rm.GetString("DateStart");
-         Console.WriteLine("{0} {1:M}.\n", dateString, DateTime.Now);
+         Console.WriteLine($"{dateString} {DateTime.Now:M}.\n");
       }
    }
 }

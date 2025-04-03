@@ -199,7 +199,7 @@ Most likely you've specified an alternative NuGet feed, and that feed requires a
   </configuration>
   ```
 
-  For more information, see [nuget.config reference](/nuget/reference/nuget-config-file)
+  For more information, see [nuget.config reference](/nuget/reference/nuget-config-file).
 
 - Add the required credentials to the config file.
 

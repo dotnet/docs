@@ -7,7 +7,7 @@ public sealed class SettingsOptions
     public const string ConfigurationSectionName = "MyCustomSettingsSection";
 
     [Required]
-    [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$")]
+    [RegularExpression(@"^[a-zA-Z''!'\s]{1,40}$")]
     public required string SiteTitle { get; set; }
 
     [Required]

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -27,7 +27,7 @@ public class Example
 
       // Decode the string.
       string str2 = cp1252.GetString(bytes);
-      Console.WriteLine("String round-tripped: {0}", str.Equals(str2));
+      Console.WriteLine($"String round-tripped: {str.Equals(str2)}");
       if (! str.Equals(str2)) {
          Console.WriteLine(str2);
          foreach (var ch in str2)

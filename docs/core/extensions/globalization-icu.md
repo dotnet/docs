@@ -253,7 +253,21 @@ For framework-dependent apps (not self-contained) where ICU is consumed from a l
 
 This must be done for all the ICU binaries for the supported runtimes. Also, the `NuGetPackageId` metadata in the `RuntimeTargetsCopyLocalItems` item group needs to match a NuGet package that the project actually references.
 
-### macOS behavior
+## Load specific ICU version on Linux
+
+By default, when using ICU on Linux, .NET attempts to load the latest installed version of ICU from the system. However, you can specify a specific version of ICU to load by setting the `DOTNET_ICU_VERSION_OVERRIDE` environment variable.
+
+For example, if the environment variable is set to a specific version number, such as `67.1`, .NET attempts to load that version of ICU. For example, .NET looks for the libraries `libicuuc.so.67.1` and `libicui18n.so.67.1`.
+
+> [!NOTE]
+> This environment variable is supported only on .NET builds provided by Microsoft and is not supported on builds supplied by Linux distributions.
+> For .NET versions earlier than .NET 10, the environment variable is called `CLR_ICU_VERSION_OVERRIDE`.
+
+If the specified version isn't found, .NET falls back to loading the highest installed ICU version from the system.
+
+This configuration provides flexibility in controlling ICU version usage, ensuring compatibility with application-specific or system-provided ICU versions.
+
+## macOS behavior
 
 macOS has a different behavior for resolving dependent dynamic libraries from the load commands specified in the `Mach-O` file than the Linux loader. In the Linux loader, .NET can try `libicudata`, `libicuuc`, and `libicui18n` (in that order) to satisfy ICU dependency graph. However, on macOS, this doesn't work. When building ICU on macOS, you, by default, get a dynamic library with these load commands in `libicuuc`. The following snippet shows an example.
 
@@ -305,3 +319,35 @@ The following APIs are supported with limitations:
 - <xref:System.Globalization.RegionInfo.CurrencyNativeName?displayProperty=nameWithType> returns the same value as <xref:System.Globalization.RegionInfo.CurrencyEnglishName?displayProperty=nameWithType>.
 
 In addition, fewer locales are supported. The supported list can be found in the [dotnet/icu repo](https://github.com/dotnet/icu/blob/dotnet/main/icu-filters/icudt_wasm.json#L7-L195).
+
+## Globalization setup in .NET apps
+
+.NET globalization initialization is a complex process that involves loading the appropriate globalization library, setting up the culture data, and configuring the globalization settings. The following sections describe how globalization initialization works on different platforms.
+
+### Windows
+
+On Windows, .NET follow the following steps to initialize globalization:
+
+- Check whether [Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. When this mode is active, .NET bypasses loading the ICU library and avoids using NLS APIs. Instead, it relies on built-in invariant culture data, ensuring that behavior remains fully independent of the operating system and the ICU library.
+
+- Check whether [NLS mode](#use-nls-instead-of-icu) is enabled. If enabled, .NET will skip loading the ICU library and instead rely on Windows [NLS](/windows/win32/intl/national-language-support) APIs for globalization support.
+
+- Check whether the [app-local ICU](#app-local-icu) feature is enabled. If it is, .NET will attempt to load the ICU library from the application directory by appending the specified version to the library names. For instance, if the version is 72.1, .NET will first try to load `icuuc72.dll`, `icuin72.dll`, and `icudt72.dll`. If these libraries cannot be loaded, it will then attempt to load `icuuc72.1.dll`, `icuin72.1.dll`, and `icudt72.1.dll`. If none of the libraries are found, the process will terminate with an error message such as: `Failed to load app-local ICU: {library name}`.
+
+- If none of the preceding conditions are satisfied, .NET attempts to load the ICU library from the system directory. It first tries to load `icu.dll`. If this library is unavailable, it then attempts to load `icuuc.dll` and `icuin.dll` from the system directory. If any of these libraries aren't found, the runtime falls back to using NLS APIs for globalization support.
+
+> [!NOTE]
+> NLS APIs are always available in all Windows versions, so .NET can always fall back on them for globalization support.
+
+### Linux
+
+- Check whether [Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. When this mode is active, .NET bypasses loading the ICU library. Instead, it relies on built-in invariant culture data, ensuring that behavior remains fully independent of the operating system and the ICU library.
+- Check whether the [app-local ICU](#app-local-icu) feature is enabled. If it is, .NET will attempt to load the ICU library from the application directory by appending the specified version to the library names. For instance, if the version is 68.2.0.9, .NET will try to load `libicuuc.so.68.2.0.9` and `libicui18n.so.68.2.0.9`. If none of the libraries are found, the process will terminate with an error message such as: `Failed to load app-local ICU: {library name}`.
+- Check if the `DOTNET_ICU_VERSION_OVERRIDE` environment variable is set. If it is, .NET will attempt to load the specified version of ICU as described in [Load specific ICU version on Linux](#load-specific-icu-version-on-linux).
+- If none of the preceding conditions are satisfied, .NET attempts to load the highest installed version of the ICU library from the system. It tries to load the libraries `libicuuc.so.[version]` and `libicui18n.so.[version]`, where `[version]` is the highest installed version of ICU on the system. If the libraries aren't found, the process terminates with an error message such as: `Failed to load system ICU: {library name}`.
+
+### macOS
+
+- Check whether [Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md) is enabled. When this mode is active, .NET bypasses loading the ICU library. Instead, it relies on built-in invariant culture data, ensuring that behavior remains fully independent of the operating system and the ICU library.
+- Check whether the [app-local ICU](#app-local-icu) feature is enabled. If it is, .NET will attempt to load the ICU library from the application directory by appending the specified version to the library names. For instance, if the version is 68.2.0.9, .NET will try to load `libicuuc68.2.0.9.dylib` and `libicui18n68.2.0.9.dylib`. If none of the libraries are found, the process terminates with an error message such as: `Failed to load app-local ICU: {library name}`.
+- If none of the preceding conditions are satisfied, .NET will attempt to load the installed version of the ICU library as described in [macOS behavior](#macos-behavior).

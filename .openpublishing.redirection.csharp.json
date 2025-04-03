@@ -113,6 +113,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
         },
         {
+            "source_path_from_root": "/redirections/proposals/csharp-8.0/nested-stackalloc.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#164127-stackalloc"
+        },
+        {
             "source_path_from_root": "/redirections/proposals/csharp-9.0/nullable-reference-types-specification.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
         },
@@ -774,7 +778,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/as.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#the-as-operator"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/await.md",
@@ -1071,7 +1075,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/typeof.md",
-            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator"
+            "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#the-typeof-operator"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/keywords/types.md",
@@ -1380,7 +1384,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-8.0/index.md",
-            "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-8.0/static-local-functions.md",
@@ -1821,6 +1825,10 @@
         {
             "source_path_from_root": "/docs/csharp/misc/cs1007.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1502.md",
+            "redirect_url": "/dotnet/csharp/misc/cs1503"
         },
         {
             "source_path_from_root": "/docs/csharp/misc/cs1510.md",
@@ -4011,12 +4019,12 @@
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/arrays-and-collections.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/list-collection",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/branches-and-loops-local.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops-local",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops",
             "redirect_document_id": true
         },
         {
@@ -4052,12 +4060,12 @@
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/local-environment.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/local-environment",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/numbers-in-csharp-local.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp",
             "redirect_document_id": true
         },
         {
@@ -4149,6 +4157,22 @@
             "redirect_url": "/dotnet/csharp/tour-of-csharp"
         },
         {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/arrays-and-collections.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/list-collection"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/local-environment.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/branches-and-loops-local.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local.md",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp"
+        },
+        {
             "source_path_from_root": "/docs/csharp/tuples.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-tuples"
         },
@@ -4174,7 +4198,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/exploration/patterns-objects.md",
-            "redirect_url": "/dotnet/csharp/whats-new/tutorials/patterns-objects"
+            "redirect_url": "/dotnet/csharp/tutorials/patterns-objects"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/exploration/records.md",
@@ -4198,11 +4222,11 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/arrays-and-collections.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/arrays-and-collections"
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/list-collection"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/branches-and-loops-local.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops-local"
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/branches-and-loops.yml",
@@ -4234,7 +4258,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/local-environment.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/local-environment"
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/mixins-with-default-interface-methods.md",
@@ -4242,7 +4266,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/numbers-in-csharp-local.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp-local"
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/numbers-in-csharp"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/numbers-in-csharp.yml",
@@ -4274,7 +4298,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-13",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-14",
             "redirect_document_id": true
         },
         {
@@ -4298,12 +4322,16 @@
             "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-70"
         },
         {
+            "source_path_from_root": "/docs/csharp/whats-new/csharp-8.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-80"
+        },
+        {
             "source_path_from_root": "/docs/csharp/whats-new/csharp-9.md",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-9"
         },
         {
-            "source_path_from_root": "/docs/csharp/whats-new/csharp-8.md",
-            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-80"
+            "source_path_from_root": "/docs/csharp/whats-new/csharp-10.md",
+            "redirect_url": "/dotnet/csharp/whats-new/csharp-version-history#c-version-10"
         },
         {
             "source_path_from_root": "/docs/csharp/whats-new/index.md",
@@ -4333,6 +4361,14 @@
         {
             "source_path_from_root": "/docs/csharp/whats-new/tutorials/ranges-indexes.md",
             "redirect_url": "/dotnet/csharp/tutorials/ranges-indexes"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/interpolated-string-handler.md",
+            "redirect_url": "/dotnet/csharp/advanced-topics/performance/interpolated-string-handler"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/whats-new/tutorials/patterns-objects.md",
+            "redirect_url": "/dotnet/csharp/tutorials/patterns-objects"
         },
         {
             "source_path_from_root": "/docs/csharp/write-safe-efficient-code.md",

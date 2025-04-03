@@ -10,7 +10,7 @@ Orleans 7.0 introduces several beneficial changes, including improvements to hos
 
 ## Migration
 
-Existing applications using reminders, streams, or grain persistence cannot be easily migrated to Orleans 7.0 due to changes in how Orleans identifies grains and streams. We plan to incrementally offer a migration path for these applications.
+Due to changes in how Orleans identifies grains and streams, you cannot (currently) easily migrate existing applications using reminders, streams, or grain persistence to Orleans 7.0.
 
 Applications running previous versions of Orleans cannot be smoothly upgraded via a rolling upgrade to Orleans 7.0. Therefore, a different upgrade strategy must be used, such as deploying a new cluster and decommissioning the previous cluster. Orleans 7.0 changes the wire protocol in an incompatible fashion, meaning that clusters cannot contain a mix of Orleans 7.0 hosts and hosts running previous versions of Orleans.
 
@@ -31,9 +31,9 @@ If you're upgrading a project to Orleans 7.0, you'll need to perform the followi
   - The [Microsoft.Orleans.Server](https://nuget.org/packages/Microsoft.Orleans.Server) packages reference its replacement, `Microsoft.Orleans.Runtime`.
 - Remove calls to `ConfigureApplicationParts`.
 _Application Parts_ has been removed. The C# Source Generator for Orleans is added to all packages (including the client and server) and will generate the equivalent of _Application Parts_ automatically.
-- Replace references to `Microsoft.Orleans.OrleansServiceBus` with [Microsoft.Orleans.Streaming.EventHubs](https://nuget.org/packages/Microsoft.Orleans.Streaming.EventHubs)
-- If you are using reminders, add a reference to [Microsoft.Orleans.Reminders](https://nuget.org/packages/Microsoft.Orleans.Reminders)
-- If you are using streams, add a reference to [Microsoft.Orleans.Streaming](https://nuget.org/packages/Microsoft.Orleans.Streaming)
+- Replace references to `Microsoft.Orleans.OrleansServiceBus` with [Microsoft.Orleans.Streaming.EventHubs](https://nuget.org/packages/Microsoft.Orleans.Streaming.EventHubs).
+- If you are using reminders, add a reference to [Microsoft.Orleans.Reminders](https://nuget.org/packages/Microsoft.Orleans.Reminders).
+- If you are using streams, add a reference to [Microsoft.Orleans.Streaming](https://nuget.org/packages/Microsoft.Orleans.Streaming).
 
 > [!TIP]
 > All of the Orleans samples have been upgraded to Orleans 7.0 and can be used as a reference for what changes were made. For more information, see [Orleans issue #8035](https://github.com/dotnet/orleans/issues/8035) that itemizes the changes made to each sample.
@@ -341,7 +341,7 @@ Removing the <xref:Orleans.Concurrency.ReentrantAttribute> is enough to fix the 
 public sealed class CounterGrain : Grain, ICounterGrain
 {
     int _value;
-    
+
     /// <summary>
     /// Increments the grain's value and returns the previous value.
     /// </summary>
@@ -373,7 +373,7 @@ public Task<int> OuterCall(IMyGrain other)
 
 public Task CallMeBack(IMyGrain grain)
 {
-    // Because OuterCall allowed reentrancy back into that grain, this method 
+    // Because OuterCall allowed reentrancy back into that grain, this method
     // will be able to call grain.InnerCall() without deadlocking.
     await grain.InnerCall();
 }

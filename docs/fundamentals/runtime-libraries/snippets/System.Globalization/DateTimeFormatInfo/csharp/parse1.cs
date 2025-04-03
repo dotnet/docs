@@ -1,4 +1,4 @@
-﻿// <Snippet15>
+// <Snippet15>
 using System;
 using System.Globalization;
 
@@ -12,8 +12,7 @@ public class ParseEx1
         foreach (var cultureName in cultureNames)
         {
             CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
-            Console.WriteLine("Parsing strings using the {0} culture.",
-                              culture.Name);
+            Console.WriteLine($"Parsing strings using the {culture.Name} culture.");
             foreach (var dateStr in dateStrings)
             {
                 try
@@ -24,7 +23,7 @@ public class ParseEx1
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("   Unable to parse '{0}'", dateStr);
+                    Console.WriteLine($"   Unable to parse '{dateStr}'");
                 }
             }
         }

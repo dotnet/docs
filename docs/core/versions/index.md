@@ -60,7 +60,7 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
   - API introduced breaking changes. There's a high bar to accepting breaking changes.
   - A newer `MAJOR` version of an existing dependency is adopted.
 
-  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 7.
+  Major releases happen once a year, even-numbered versions are long-term supported (LTS) releases. The first LTS release using this versioning scheme is .NET 6. The latest non-LTS version is .NET 9.
 
 - `MINOR` is incremented when:
 

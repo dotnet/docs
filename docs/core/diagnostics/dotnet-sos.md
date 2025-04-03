@@ -7,7 +7,10 @@ ms.custom: linux-related-content
 ---
 # SOS installer (dotnet-sos)
 
-**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET 6.0 SDK and later versions
+
+> [!NOTE]
+> Consider using the [.NET debugger extensions](dotnet-debugger-extensions.md) instead, which include the SOS functionality and additional features.
 
 ## Install
 
@@ -38,10 +41,7 @@ dotnet-sos [-h|--help] [options] [command]]
 
 ## Description
 
-The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md). This extension lets you inspect managed .NET Core state from native debuggers like lldb and windbg.
-
-> [!NOTE]
-> Installing SOS via the `dotnet-sos` tool is only needed on Linux or macOS.  It may also be needed on Windows if you're using older debugging tools. Recent versions of the [Windows Debugger](/windows-hardware/drivers/debugger/debugger-download-tools) (>= version 10.0.18317.1001 of WinDbg or cdb) load SOS automatically from the Microsoft extension gallery.  
+The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging-extension.md). This extension lets you inspect managed .NET Core state from native debuggers like LLDB and WinDbg.
 
 ## Options
 
@@ -55,7 +55,9 @@ The `dotnet-sos` global tool installs the [SOS debugger extension](sos-debugging
 
 ## dotnet-sos install
 
-Installs the [SOS extension](sos-debugging-extension.md) locally for debugging .NET Core processes. On macOS and Linux, the *.lldbinit* file will be updated so that the extension automatically loads at lldb startup. If you're installing SOS on Windows with older debugging tools (prior to version 10.0.18317.1001), you will need to manually load the extension in WinDbg or cdb by running `.load %USERPROFILE%\.dotnet\sos\sos.dll` in the debugger.
+Installs the [SOS extension](sos-debugging-extension.md) locally for debugging .NET Core processes. On macOS and Linux, the *.lldbinit* file is updated so that the extension automatically loads at LLDB startup. If you're installing SOS on Windows with older debugging tools (before version 10.0.18317.1001), you need to manually load the extension in WinDbg or cdb by running `.load %USERPROFILE%\.dotnet\sos\sos.dll` in the debugger.
+
+This overwrites any previous installations from the dotnet-debugger-extensions or dotnet-sos installers.
 
 ### Synopsis
 
@@ -67,7 +69,7 @@ dotnet-sos install [--architecture <arch>]
 
 - **`--architecture <arch>`**
 
-  Specifies the processor architecture of the SOS binaries to install. By default, `dotnet-sos` installs the architecture of the host machine. Use this option when you want to install SOS for an architecture that's different from the dotnet host architecture. For example, if you're running Arm32 binaries from an Arm64 host, you will need to install SOS with `dotnet-sos install --architecture Arm`.
+  Specifies the processor architecture of the SOS binaries to install. By default, `dotnet-sos` installs the architecture of the host machine. Use this option when you want to install SOS for an architecture that's different from the dotnet host architecture. For example, if you're running Arm32 binaries from an Arm64 host, you need to install SOS with `dotnet-sos install --architecture Arm`.
 
   The following architectures are available:
 
@@ -78,7 +80,7 @@ dotnet-sos install [--architecture <arch>]
 
 ## dotnet-sos uninstall
 
-Uninstalls the [SOS extension](sos-debugging-extension.md) and, on Linux and macOS, removes it from lldb configuration.
+Uninstalls the [SOS extension](sos-debugging-extension.md) and, on Linux and macOS, removes it from LLDB configuration.
 
 ### Synopsis
 

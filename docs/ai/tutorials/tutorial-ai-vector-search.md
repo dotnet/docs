@@ -1,7 +1,7 @@
 ---
 title: Tutorial - Integrate OpenAI with the RAG pattern and vector search using Azure Cosmos DB for MongoDB
 description: Create a simple recipe app using the RAG pattern and vector search using Azure Cosmos DB for MongoDB.
-ms.date: 04/26/2024
+ms.date: 11/24/2024
 ms.topic: tutorial
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
@@ -157,16 +157,16 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
                 {
                     BsonDocumentCommand<BsonDocument> command = new BsonDocumentCommand<BsonDocument>(
                         BsonDocument.Parse(@"
-                            { createIndexes: 'Recipe', 
-                                indexes: [{ 
-                                name: 'vectorSearchIndex', 
-                                key: { embedding: 'cosmosSearch' }, 
-                                cosmosSearchOptions: { 
+                            { createIndexes: 'Recipe',
+                                indexes: [{
+                                name: 'vectorSearchIndex',
+                                key: { embedding: 'cosmosSearch' },
+                                cosmosSearchOptions: {
                                     kind: 'vector-ivf',
                                     numLists: 5,
                                     similarity: 'COS',
-                                    dimensions: 1536 } 
-                                }] 
+                                    dimensions: 1536 }
+                                }]
                             }"));
 
                     BsonDocument result = _database.RunCommand(command);
@@ -187,9 +187,9 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
 
 1. Select the **Ask AI Assistant (search for a recipe by name or description, or ask a question)** option in the application to run a user query.
 
-    The user query is converted to an embedding using the Open AI service and the embedding model. The embedding is then sent to Azure Cosmos DB for MongoDB and is used to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
+   The user query is converted to an embedding using the Open AI service and the embedding model. The embedding is then sent to Azure Cosmos DB for MongoDB and is used to perform a vector search. The `VectorSearchAsync` method in the _VCoreMongoService.cs_ file performs a vector search to find vectors that are close to the supplied vector and returns a list of documents from Azure Cosmos DB for MongoDB vCore.
 
-      ```C#
+    ```C#
     public async Task<List<Recipe>> VectorSearchAsync(float[] queryVector)
         {
             List<string> retDocs = new List<string>();
@@ -200,10 +200,10 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
                 //Search Azure Cosmos DB for MongoDB vCore collection for similar embeddings
                 //Project the fields that are needed
                 BsonDocument[] pipeline = new BsonDocument[]
-                {   
+                {
                     BsonDocument.Parse(
-                        @$"{{$search: {{ 
-                                cosmosSearch: 
+                        @$"{{$search: {{
+                                cosmosSearch:
                                     {{ vector: [{string.Join(',', queryVector)}],
                                        path: 'embedding',
                                        k: {_maxVectorSearchResults}}},
@@ -219,7 +219,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
                 var recipes = bsonDocuments
                     .ToList()
                     .ConvertAll(bsonDocument =>
-                        BsonSerializer.Deserialize<Recipe>(bsonDocument)); 
+                        BsonSerializer.Deserialize<Recipe>(bsonDocument));
                 return recipes;
             }
             catch (MongoException ex)
@@ -230,7 +230,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
         }
     ```
 
-    The `GetChatCompletionAsync` method generates an improved chat completion response based on the user prompt and the related vector search results.
+   The `GetChatCompletionAsync` method generates an improved chat completion response based on the user prompt and the related vector search results.
 
     ``` C#
     public async Task<(string response, int promptTokens, int responseTokens)> GetChatCompletionAsync(string userPrompt, string documents)
@@ -251,12 +251,12 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
                 },
                 MaxTokens = openAIMaxTokens,
                 Temperature = 0.5f, //0.3f,
-                NucleusSamplingFactor = 0.95f, 
+                NucleusSamplingFactor = 0.95f,
                 FrequencyPenalty = 0,
                 PresencePenalty = 0
             };
 
-            Azure.Response<ChatCompletions> completionsResponse = 
+            Azure.Response<ChatCompletions> completionsResponse =
                 await openAIClient.GetChatCompletionsAsync(openAICompletionDeployment, options);
             ChatCompletions completions = completionsResponse.Value;
 
@@ -276,20 +276,20 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
     }
     ```
 
-    The app also uses prompt engineering to ensure Open AI service limits and formats the response for supplied recipes.
+   The app also uses prompt engineering to ensure Open AI service limits and formats the response for supplied recipes.
 
     ```C#
     //System prompts to send with user prompts to instruct the model for chat session
     private readonly string _systemPromptRecipeAssistant = @"
-        You are an intelligent assistant for Contoso Recipes. 
-        You are designed to provide helpful answers to user questions about 
+        You are an intelligent assistant for Contoso Recipes.
+        You are designed to provide helpful answers to user questions about
         recipes, cooking instructions provided in JSON format below.
-  
+
         Instructions:
         - Only answer questions related to the recipe provided below.
         - Don't reference any recipe not provided below.
-        - If you're unsure of an answer, say ""I don't know"" and recommend users search themselves.        
-        - Your response  should be complete. 
+        - If you're unsure of an answer, say ""I don't know"" and recommend users search themselves.
+        - Your response  should be complete.
         - List the Name of the Recipe at the start of your response followed by step by step cooking instructions.
         - Assume the user is not an expert in cooking.
         - Format the content so that it can be printed to the Command Line console.

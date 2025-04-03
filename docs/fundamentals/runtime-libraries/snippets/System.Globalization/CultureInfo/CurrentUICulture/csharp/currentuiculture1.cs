@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -6,12 +6,10 @@ public class Example1
 {
     public static void Main()
     {
-        Console.WriteLine("The current UI culture: {0}",
-                          CultureInfo.CurrentUICulture.Name);
+        Console.WriteLine($"The current UI culture: {CultureInfo.CurrentUICulture.Name}");
 
         CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture("fr-FR");
-        Console.WriteLine("The current UI culture: {0}",
-                          CultureInfo.CurrentUICulture.Name);
+        Console.WriteLine($"The current UI culture: {CultureInfo.CurrentUICulture.Name}");
     }
 }
 // The example displays output like the following:

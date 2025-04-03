@@ -8,7 +8,7 @@ ms.date: 10/08/2024
 
 #customer intent: As a developer, I want to install .NET Upgrade Assistant so that I can upgrade my projects.
 
----   
+---
 
 # Install .NET Upgrade Assistant
 
@@ -33,7 +33,7 @@ If you want the streamlined experience of opening a project in Visual Studio and
 The following steps install the Visual Studio extension.
 
 > [!TIP]
-> As an alternative to using the **Manage Extensions** feature of Visual Studio, you can download and run the extensions installer from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant)
+> As an alternative to using the **Manage Extensions** feature of Visual Studio, you can download and run the extensions installer from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.upgradeassistant).
 
 01. Open Visual Studio.
 

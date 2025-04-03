@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -12,8 +12,7 @@ public class Example
                           "Raleigh", "San Francisco", "Tulsa", "Washington" };
       Random rnd = new Random();
       int index = rnd.Next(0, cities.Length);
-      Console.WriteLine("Today's city of the day: {0}",
-                        cities[index]);
+      Console.WriteLine($"Today's city of the day: {cities[index]}");
 
       // The example displays output like the following:
       //   Today's city of the day: Honolulu

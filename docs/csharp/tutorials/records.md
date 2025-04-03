@@ -1,13 +1,13 @@
 ---
 title: Use record types tutorial
 description: Learn about how to use record types, build hierarchies of records, and when to choose records over classes.
-ms.date: 11/08/2023
+ms.date: 11/22/2024
 ---
 # Create record types
 
-[*Records*](../language-reference/builtin-types/record.md) are types that use *value-based equality*. C# 10 adds *record structs* so that you can define records as value types. Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. Two variables of a class type are equal if the objects referred to are the same class type and the variables refer to the same object. Value-based equality implies other capabilities you'll probably want in record types. The compiler generates many of those members when you declare a `record` instead of a `class`. The compiler generates those same methods for `record struct` types.
+[*Records*](../language-reference/builtin-types/record.md) are types that use *value-based equality*. You can define records as reference types or value types. Two variables of a record type are equal if the record type definitions are identical, and if for every field, the values in both records are equal. Two variables of a class type are equal if the objects referred to are the same class type and the variables refer to the same object. Value-based equality implies other capabilities you probably want in record types. The compiler generates many of those members when you declare a `record` instead of a `class`. The compiler generates those same methods for `record struct` types.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -17,7 +17,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET 6 or later, including the C# 10 or later compiler. The C# 10 compiler is available starting with [Visual Studio 2022](https://visualstudio.microsoft.com/vs) or the [.NET 6 SDK](https://dotnet.microsoft.com/download).
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Characteristics of records
 
@@ -29,7 +29,7 @@ You define a *record* by declaring a type with the `record` keyword, modifying a
 - Methods for `operator ==` and `operator !=`.
 - Record types implement <xref:System.IEquatable%601?displayProperty=nameWithType>.
 
-Records also provide an override of <xref:System.Object.ToString?displayProperty=nameWithType>. The compiler synthesizes methods for displaying records using <xref:System.Object.ToString?displayProperty=nameWithType>. You'll explore those members as you write the code for this tutorial. Records support `with` expressions to enable non-destructive mutation of records.
+Records also provide an override of <xref:System.Object.ToString?displayProperty=nameWithType>. The compiler synthesizes methods for displaying records using <xref:System.Object.ToString?displayProperty=nameWithType>. You explore those members as you write the code for this tutorial. Records support `with` expressions to enable nondestructive mutation of records.
 
 You can also declare *positional records* using a more concise syntax. The compiler synthesizes more methods for you when you declare positional records:
 
@@ -39,7 +39,7 @@ You can also declare *positional records* using a more concise syntax. The compi
 
 ## Build temperature data
 
-Data and statistics are among the scenarios where you'll want to use records. For this tutorial, you'll build an application that computes *degree days* for different uses. *Degree days* are a measure of heat (or lack of heat) over a period of days, weeks, or months. Degree days track and predict energy usage. More hotter days means more air conditioning, and more colder days means more furnace usage. Degree days help manage plant populations and correlate to plant growth as the seasons change. Degree days help track animal migrations for species that travel to match climate.
+Data and statistics are among the scenarios where you want to use records. For this tutorial, you build an application that computes *degree days* for different uses. *Degree days* are a measure of heat (or lack of heat) over a period of days, weeks, or months. Degree days track and predict energy usage. More hotter days mean more air conditioning, and more colder days mean more furnace usage. Degree days help manage plant populations and correlate to plant growth as the seasons change. Degree days help track animal migrations for species that travel to match climate.
 
 The formula is based on the mean temperature on a given day and a baseline temperature. To compute degree days over time, you'll need the high and low temperature each day for a period of time. Let's start by creating a new application. Make a new console application. Create a new record type in a new file named "DailyTemperature.cs":
 
@@ -49,7 +49,7 @@ The preceding code defines a *positional record*. The `DailyTemperature` record 
 
 :::code language="csharp" source="snippets/record-types/Program.cs" ID="DeclareData":::
 
-You can add your own properties or methods to records, including positional records. You'll need to compute the mean temperature for each day. You can add that property to the `DailyTemperature` record:
+You can add your own properties or methods to records, including positional records. You need to compute the mean temperature for each day. You can add that property to the `DailyTemperature` record:
 
 :::code language="csharp" source="snippets/record-types/DailyTemperature.cs" ID="TemperatureRecord":::
 
@@ -60,7 +60,7 @@ foreach (var item in data)
     Console.WriteLine(item);
 ```
 
-Run your application, and you'll see output that looks similar to the following display (several rows removed for space):
+Run your application, and you see output that looks similar to the following display (several rows removed for space):
 
 ```dotnetcli
 DailyTemperature { HighTemp = 57, LowTemp = 30, Mean = 43.5 }
@@ -75,7 +75,7 @@ The preceding code shows the output from the override of `ToString` synthesized 
 
 ## Compute degree days
 
-To compute degree days, you take the difference from a baseline temperature and the mean temperature on a given day. To measure heat over time, you discard any days where the mean temperature is below the baseline. To measure cold over time, you discard any days where the mean temperature is above the baseline. For example, the U.S. uses 65F as the base for both heating  and cooling degree days. That's the temperature where no heating or cooling is needed. If a day has a mean temperature of 70F, that day is five cooling degree days and zero heating degree days. Conversely, if the mean temperature is 55F, that day is 10 heating degree days and 0 cooling degree days.
+To compute degree days, you take the difference from a baseline temperature and the mean temperature on a given day. To measure heat over time, you discard any days where the mean temperature is below the baseline. To measure cold over time, you discard any days where the mean temperature is above the baseline. For example, the U.S. uses 65 F as the base for both heating  and cooling degree days. That's the temperature where no heating or cooling is needed. If a day has a mean temperature of 70 F, that day is five cooling degree days and zero heating degree days. Conversely, if the mean temperature is 55 F, that day is 10 heating degree days and 0 cooling degree days.
 
 You can express these formulas as a small hierarchy of record types: an abstract degree day type and two concrete types for heating degree days and cooling degree days. These types can also be positional records. They take a baseline temperature and a sequence of daily temperature records as arguments to the primary constructor:
 
@@ -85,7 +85,7 @@ The abstract `DegreeDays` record is the shared base class for both the `HeatingD
 
 :::code language="csharp" source="snippets/record-types/Program.cs" ID="HeatingAndCooling":::
 
-You'll get output like the following display:
+You get output like the following display:
 
 ```dotnetcli
 HeatingDegreeDays { BaseTemperature = 65, TempRecords = record_types.DailyTemperature[], DegreeDays = 85 }
@@ -94,7 +94,7 @@ CoolingDegreeDays { BaseTemperature = 65, TempRecords = record_types.DailyTemper
 
 ## Define compiler-synthesized methods
 
-Your code calculates the correct number of heating and cooling degree days over that period of time. But this example shows why you may want to replace some of the synthesized methods for records. You can declare your own version of any of the compiler-synthesized methods in a record type except the clone method. The clone method has a compiler-generated name and you can't provide a different implementation. These synthesized methods include a copy constructor, the members of the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, equality and inequality tests, and <xref:System.Object.GetHashCode>. For this purpose, you'll synthesize `PrintMembers`. You could also declare your own `ToString`, but `PrintMembers` provides a better option for inheritance scenarios. To provide your own version of a synthesized method, the signature must match the synthesized method.
+Your code calculates the correct number of heating and cooling degree days over that period of time. But this example shows why you might want to replace some of the synthesized methods for records. You can declare your own version of any of the compiler-synthesized methods in a record type except the clone method. The clone method has a compiler-generated name and you can't provide a different implementation. These synthesized methods include a copy constructor, the members of the <xref:System.IEquatable%601?displayProperty=nameWithType> interface, equality and inequality tests, and <xref:System.Object.GetHashCode>. For this purpose, you synthesize `PrintMembers`. You could also declare your own `ToString`, but `PrintMembers` provides a better option for inheritance scenarios. To provide your own version of a synthesized method, the signature must match the synthesized method.
 
 The `TempRecords` element in the console output isn't useful. It displays the type, but nothing else. You can change this behavior by providing your own implementation of the synthesized `PrintMembers` method. The signature depends on modifiers applied to the `record` declaration:
 
@@ -102,7 +102,7 @@ The `TempRecords` element in the console output isn't useful. It displays the ty
 - If a record type isn't `sealed` and derives from `object` (that is, it doesn't declare a base record), the signature is `protected virtual bool PrintMembers(StringBuilder builder);`
 - If a record type isn't `sealed` and derives from another record, the signature is `protected override bool PrintMembers(StringBuilder builder);`
 
-These rules are easiest to comprehend through understanding the purpose of `PrintMembers`. `PrintMembers` adds information about each property in a record type to a string. The contract requires base records to add their members to the display and assumes derived members will add their members. Each record type synthesizes a `ToString` override that looks similar to the following example for `HeatingDegreeDays`:
+These rules are easiest to comprehend through understanding the purpose of `PrintMembers`. `PrintMembers` adds information about each property in a record type to a string. The contract requires base records to add their members to the display and assumes derived members add their members. Each record type synthesizes a `ToString` override that looks similar to the following example for `HeatingDegreeDays`:
 
 ```csharp
 public override string ToString()
@@ -125,15 +125,15 @@ You declare a `PrintMembers` method in the `DegreeDays` record that doesn't prin
 
 The signature declares a `virtual protected` method to match the compiler's version. Don't worry if you get the accessors wrong; the language enforces the correct signature. If you forget the correct modifiers for any synthesized method, the compiler issues warnings or errors that help you get the right signature.
 
-In C# 10 and later, you can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
+You can declare the `ToString` method as `sealed` in a record type. That prevents derived records from providing a new implementation. Derived records will still contain the `PrintMembers` override. You would seal `ToString` if you didn't want it to display the runtime type of the record. In the preceding example, you'd lose the information on where the record was measuring heating or cooling degree days.
 
-## Non-destructive mutation
+## Nondestructive mutation
 
 The synthesized members in a positional record class don't modify the state of the record. The goal is that you can more easily create immutable records. Remember that you declare a `readonly record struct` to create an immutable record struct. Look again at the preceding declarations for `HeatingDegreeDays` and `CoolingDegreeDays`. The members added perform computations on the values for the record, but don't mutate state. Positional records make it easier for you to create immutable reference types.
 
-Creating immutable reference types means you'll want to use non-destructive mutation. You  create new record instances that are similar to existing record instances using [`with` expressions](../language-reference/operators/with-expression.md). These expressions are a copy construction with additional assignments that modify the copy. The result is a new record instance where each property has been copied from the existing record and optionally modified. The original record is unchanged.
+Creating immutable reference types means you want to use nondestructive mutation. You  create new record instances that are similar to existing record instances using [`with` expressions](../language-reference/operators/with-expression.md). These expressions are a copy construction with extra assignments that modify the copy. The result is a new record instance where each property was copied from the existing record and optionally modified. The original record is unchanged.
 
-Let's add a couple features to your program that demonstrate `with` expressions. First, let's create a new record to compute growing degree days using the same data. *Growing degree days* typically uses 41F as the baseline and measures temperatures above the baseline. To use the same data, you can create a new record that is similar to the `coolingDegreeDays`, but with a different base temperature:
+Let's add a couple features to your program that demonstrate `with` expressions. First, let's create a new record to compute growing degree days using the same data. *Growing degree days* typically uses 41 F as the baseline and measures temperatures above the baseline. To use the same data, you can create a new record that is similar to the `coolingDegreeDays`, but with a different base temperature:
 
 :::code language="csharp" source="snippets/record-types/Program.cs" ID="GrowingDegreeDays":::
 
@@ -151,7 +151,7 @@ Run the finished application to see the results.
 
 ## Summary
 
-This tutorial showed several aspects of records. Records provide concise syntax for types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. And `with` expressions make it easy to support non-destructive mutation.
+This tutorial showed several aspects of records. Records provide concise syntax for types where the fundamental use is storing data. For object-oriented classes, the fundamental use is defining responsibilities. This tutorial focused on *positional records*, where you can use a concise syntax to declare the properties for a record. The compiler synthesizes several members of the record for copying and comparing records. You can add any other members you need for your record types. You can create immutable record types knowing that none of the compiler-generated members would mutate state. And `with` expressions make it easy to support nondestructive mutation.
 
 Records add another way to define types. You use `class` definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. You create `struct` types for data structures that store data and are small enough to copy efficiently. You create `record` types when you want value-based equality and comparison, don't want to copy values, and want to use reference variables. You create `record struct` types when you want the features of records for a type that is small enough to copy efficiently.
 

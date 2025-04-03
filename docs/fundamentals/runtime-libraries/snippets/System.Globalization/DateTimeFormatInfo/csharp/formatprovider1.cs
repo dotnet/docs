@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 using System.Globalization;
 
@@ -6,8 +6,7 @@ public class CurrentCultureFormatProvider : IFormatProvider
 {
     public Object GetFormat(Type formatType)
     {
-        Console.WriteLine("Requesting an object of type {0}",
-                          formatType.Name);
+        Console.WriteLine($"Requesting an object of type {formatType.Name}");
         if (formatType == typeof(NumberFormatInfo))
             return NumberFormatInfo.CurrentInfo;
         else if (formatType == typeof(DateTimeFormatInfo))

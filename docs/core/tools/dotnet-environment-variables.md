@@ -322,7 +322,7 @@ Determines roll forward behavior. For more information, see [the `--roll-forward
 
 If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET runtime is requested, roll-forward will only consider installed release versions.
 
-For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward)
+For more information, see [the `--roll-forward` option for the `dotnet` command](dotnet.md#rollforward).
 
 ### `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
 

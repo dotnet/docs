@@ -43,7 +43,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
 
 ## Related Sections
 
- [Language-Integrated Query (LINQ) - C#](/dotnet/csharp/linq/)\
+ [Language-Integrated Query (LINQ) - C#](../../../csharp/linq/index.md)\
  Provides links to LINQ topics and samples using C#.
 
  [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)\

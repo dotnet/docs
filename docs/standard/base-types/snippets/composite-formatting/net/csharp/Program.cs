@@ -1,4 +1,4 @@
-﻿
+
 void Index()
 {
     // <index>
@@ -73,7 +73,7 @@ void Examples_Currency()
 {
     // <example_currency>
     int myNumber = 100;
-    Console.WriteLine("{0:C}", myNumber);
+    Console.WriteLine($"{myNumber:C}");
 
     // The example displays the following output
     // if en-US is the current culture:

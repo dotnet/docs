@@ -36,7 +36,7 @@ Addresses an issue with May cumulative updates causing customers to observe runt
 
 ## Known issues
 
-This release contains no known issues.  
+This release contains no known issues.
 
 ## Summary tables
 
@@ -55,7 +55,7 @@ The following table outlines the updates in this release.
 | .NET Framework 3.5, 4.8.1 | [5044035](https://support.microsoft.com/kb/5044035) |
 | **Windows 11, version 21H2** |**[5044092](https://support.microsoft.com/kb/5044092)** |
 | .NET Framework 3.5, 4.8 | [5044023](https://support.microsoft.com/kb/5044023) |
-| .NET Framework 3.5, 4.8.1 | [5044032](https://support.microsoft.com/kb/5044032**) |
+| .NET Framework 3.5, 4.8.1 | [5044032](https://support.microsoft.com/kb/5044032) |
 | **Microsoft server operating system, version 21H2** | **[5044099](https://support.microsoft.com/kb/5044099)** |
 | .NET Framework 3.5, 4.8 | [5044025](https://support.microsoft.com/kb/5044025) |
 | .NET Framework 3.5, 4.8.1 | [5044035](https://support.microsoft.com/kb/5044035) |

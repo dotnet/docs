@@ -26,7 +26,7 @@ This tutorial has multiple steps. After each step, you can run the application a
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET core. You can find the installation instructions on the [.NET Core Download](https://dotnet.microsoft.com/download) page. You can run this application on Windows, Ubuntu Linux, or OS X, or in a Docker container. You’ll need to install your favorite code editor. The descriptions below use [Visual Studio Code](https://code.visualstudio.com/) which is an open source, cross-platform editor. However, you can use whatever tools you are comfortable with.
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ## Create the Application
 
@@ -345,7 +345,7 @@ Aside from LINQ, you learned a bit about a technique magicians use for card tric
 
 For more information on LINQ, see:
 
-- [Introduction to LINQ](/dotnet/csharp/linq/)
+- [Introduction to LINQ](../linq/index.md)
 - [Basic LINQ Query Operations (C#)](../linq/standard-query-operators/index.md)
 - [Data Transformations With LINQ (C#)](../linq/standard-query-operators/index.md)
 - [Query Syntax and Method Syntax in LINQ (C#)](../linq/get-started/write-linq-queries.md)

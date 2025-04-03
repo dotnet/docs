@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example3
 {
@@ -14,7 +14,7 @@ public class Example3
         int codePoint = 1067;
         IConvertible iConv = codePoint;
         char ch = iConv.ToChar(null);
-        Console.WriteLine("Converted {0} to {1}.", codePoint, ch);
+        Console.WriteLine($"Converted {codePoint} to {ch}.");
         // </Snippet7>
     }
 }

@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 using System.Text.RegularExpressions;
 
@@ -10,8 +10,7 @@ public class Example
         string pattern = @"\bare\w*\b";
         Console.WriteLine("Words that begin with 'are':");
         foreach (Match match in Regex.Matches(input, pattern))
-            Console.WriteLine("'{0}' found at position {1}",
-                              match.Value, match.Index);
+            Console.WriteLine($"'{match.Value}' found at position {match.Index}");
     }
 }
 // The example displays the following output:

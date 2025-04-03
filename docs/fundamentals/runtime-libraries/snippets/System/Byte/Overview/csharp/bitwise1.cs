@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -13,8 +13,7 @@ public class Example
       byte mask = 0xFE;
       foreach (string value in values) {
          Byte byteValue = Byte.Parse(value, NumberStyles.AllowHexSpecifier);
-         Console.WriteLine("{0} And {1} = {2}", byteValue, mask,
-                           byteValue & mask);
+         Console.WriteLine($"{byteValue} And {mask} = {byteValue & mask}");
       }
    }
 }

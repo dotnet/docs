@@ -1,4 +1,4 @@
-﻿// <Snippet20>
+// <Snippet20>
 using System;
 
 public class Example4
@@ -20,9 +20,7 @@ public class Example4
                 sngValue = (float)value;
             else
                 sngValue = value;
-            Console.WriteLine("{0} ({1}) --> {2:R} ({3})",
-                              value, value.GetType().Name,
-                              sngValue, sngValue.GetType().Name);
+            Console.WriteLine($"{value} ({value.GetType().Name}) --> {sngValue:R} ({sngValue.GetType().Name})");
         }
     }
 }

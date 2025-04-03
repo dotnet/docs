@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Globalization;
@@ -24,7 +24,7 @@ public class Example
       String input;
       while ((input = sr.ReadLine()) != null)
       {
-         Console.WriteLine("Stored data: {0}\n" , input);
+         Console.WriteLine($"Stored data: {input}\n");
 
          // Parse the stored string.
          DateTime dtOut = DateTime.Parse(input, invC, DateTimeStyles.RoundtripKind);
@@ -32,14 +32,12 @@ public class Example
          // Create a French (France) CultureInfo object.
          CultureInfo frFr = new CultureInfo("fr-FR");
          // Displays the date formatted for the "fr-FR" culture.
-         Console.WriteLine("Date formatted for the {0} culture: {1}" ,
-                           frFr.Name, dtOut.ToString("f", frFr));
+         Console.WriteLine($"Date formatted for the {frFr.Name} culture: {dtOut.ToString("f", frFr)}");
 
          // Creates a German (Germany) CultureInfo object.
          CultureInfo deDe= new CultureInfo("de-De");
          // Displays the date formatted for the "de-DE" culture.
-         Console.WriteLine("Date formatted for {0} culture: {1}" ,
-                           deDe.Name, dtOut.ToString("f", deDe));
+         Console.WriteLine($"Date formatted for {deDe.Name} culture: {dtOut.ToString("f", deDe)}");
       }
       sr.Close();
    }

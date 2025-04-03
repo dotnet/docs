@@ -20,7 +20,7 @@ What is "Intermediate Language" (or IL for short)? It is a product of compilatio
 
 Once you produce IL from your high-level code, you will most likely want to run it. This is where the CLR takes over and starts the process of **Just-In-Time** compiling, or **JIT-ing** your code from IL to machine code that can actually be run on a CPU. In this way, the CLR knows exactly what your code is doing and can effectively *manage* it.
 
-Intermediate Language is sometimes also called Common Intermediate Language (CIL) or common intermediate language (CIL).
+Intermediate Language is sometimes also called Common Intermediate Language (CIL).
 
 ## Unmanaged code interoperability
 

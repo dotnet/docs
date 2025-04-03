@@ -1,7 +1,7 @@
 ---
 description: "Learn more about: Dates, times, and time zones"
 title: "Dates, times, and time zones"
-ms.date: 12/07/2021
+ms.date: 12/05/2024
 helpviewer_keywords: 
   - "time zone objects [.NET]"
   - "date and time data [.NET]"
@@ -12,11 +12,9 @@ ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
 ---
 # Dates, times, and time zones
 
+.NET provides types that represent dates, times, and time zones. This article describes those types.
+
 In addition to the basic <xref:System.DateTime> structure, .NET provides the following classes that support working with time zones:
-
-* <xref:System.TimeZone>
-
-  Use this class to work with the system's local time zone and the Coordinated Universal Time (UTC) zone. The functionality of the <xref:System.TimeZone> class is largely superseded by the <xref:System.TimeZoneInfo> class.
 
 * <xref:System.TimeZoneInfo>
 
@@ -26,15 +24,37 @@ In addition to the basic <xref:System.DateTime> structure, .NET provides the fol
 
   Use this structure to work with dates and times whose offset (or difference) from UTC is known. The <xref:System.DateTimeOffset> structure combines a date and time value with that time's offset from UTC. Because of its relationship to UTC, an individual date and time value unambiguously identifies a single point in time. This makes a <xref:System.DateTimeOffset> value more portable from one computer to another than a <xref:System.DateTime> value.
 
-Starting with .NET 6, the following types are available:
+The following classes to support working with time:
+
+* <xref:System.TimeSpan>
+
+  Use this structure to represents a time interval, such as an elapsed amount of time or the difference between two dates.
+
+* <xref:System.TimeOnly>
+
+  Use this structure to represent a time without a date. The time represents the hours, minutes, and seconds of a non-specific day. `TimeOnly` has a range of `00:00:00.0000000` to `23:59:59.9999999`. This type can be used to replace `DateTime` and `TimeSpan` types in your code when you used those types to represent a time. For more information, see [How to use the DateOnly and TimeOnly structures](how-to-use-dateonly-timeonly.md).
+
+  > [!IMPORTANT]
+  > <xref:System.TimeOnly> isn't available for .NET Framework.
+
+* <xref:System.TimeProvider>
+
+  This is a base class that provides an abstraction of time. A common way to check the current time is by using `DateTime.UtcNow` or `DateTimeOffset.UtcNow`. However, these types don't provide any control over what's considered "now." Why would you want to control that? Testability. For example, consider you're writing an event tracking application that provides reminders 1 day before the event. The app's logic is to check the event time every hour, and alert the user once it's 24 hours before the event. As you write your tests for the app, you would provide your own type that wraps `DateTimeOffset.UtcNow` to test this logic, but now .NET provides this abstraction class for you.
+
+  For more information, see [What is TimeProvider](timeprovider-overview.md).
+
+  The `TimeProvider` type is included in .NET.
+
+  For .NET Framework and .NET Standard, `TimeProvider` is provided by the [**Microsoft.Bcl.TimeProvider** NuGet package](https://www.nuget.org/packages/Microsoft.Bcl.TimeProvider/).
+
+The following classes to support working with dates:
 
 * <xref:System.DateOnly>
 
   Use this structure when working with a value that only represents a date. The date represents the entire day, from the start of the day to the end. `DateOnly` has a range of `0001-01-01` through `9999-12-31`. And, this type represents the month, day, and year combination without a specific time. If you previously used a `DateTime` type in your code to represent a date that disregarded the time, use this type in its place. For more information, see [How to use the DateOnly and TimeOnly structures](how-to-use-dateonly-timeonly.md).
 
-* <xref:System.TimeOnly>
-
-  Use this structure to represent a time without a date. The time represents the hours, minutes, and seconds of a non-specific day. `TimeOnly` has a range of `00:00:00.0000000` to `23:59:59.9999999`. This type can be used to replace `DateTime` and `TimeSpan` types in your code when you used those types to represent a time. For more information, see [How to use the DateOnly and TimeOnly structures](how-to-use-dateonly-timeonly.md).
+  > [!IMPORTANT]
+  > <xref:System.DateOnly> isn't available for .NET Framework.
 
 The next section provides the information that you need to work with time zones and to create time zone-aware applications that can convert dates and times from one time zone to another.
 

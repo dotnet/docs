@@ -10,7 +10,7 @@ author: gewarren
 
 .NET 6 delivers the final parts of the .NET unification plan that started with [.NET 5](dotnet-5.md). .NET 6 unifies the SDK, base libraries, and runtime across mobile, desktop, IoT, and cloud apps. In addition to this unification, the .NET 6 ecosystem offers:
 
-- **Simplified development**: Getting started is easy. New language features in [C# 10](../../csharp/whats-new/csharp-10.md) reduce the amount of code you need to write. And investments in the web stack and minimal APIs make it easy to quickly write smaller, faster microservices.
+- **Simplified development**: Getting started is easy. New language features in [C# 10](../../csharp/whats-new/csharp-version-history.md#c-version-10) reduce the amount of code you need to write. And investments in the web stack and minimal APIs make it easy to quickly write smaller, faster microservices.
 
 - **Better performance**: .NET 6 is the fastest full stack web framework, which lowers compute costs if you're running in the cloud.
 
@@ -54,7 +54,7 @@ The .NET 6 release includes support for macOS Arm64 (or "Apple Silicon") and Win
 
 ## C# 10 and templates
 
-C# 10 includes innovations such as `global using` directives, file-scoped namespace declarations, and record structs. For more information, see [What's new in C# 10](../../csharp/whats-new/csharp-10.md).
+C# 10 includes innovations such as `global using` directives, file-scoped namespace declarations, and record structs. For more information, see [C# Language version history](../../csharp/whats-new/csharp-version-history.md#c-version-10).
 
 In concert with that work, the .NET SDK project templates for C# have been modernized to use some of the new language features:
 
@@ -273,7 +273,6 @@ The new <xref:System.Collections.Generic.PriorityQueue%602> class represents a c
 
 ## See also
 
-- [What's new in C# 10](../../csharp/whats-new/csharp-10.md)
 - [What's new in F# 6](../../fsharp/whats-new/fsharp-6.md)
 - [What's new in EF Core 6](/ef/core/what-is-new/ef-core-6.0/whatsnew)
 - [What's new in ASP.NET Core 6](/aspnet/core/release-notes/aspnetcore-6.0)

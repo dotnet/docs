@@ -8,7 +8,7 @@ ms.date: 11/01/2020
 Checking `<Isa>.X64.IsSupported`, where `<Isa>` refers to the classes in the <xref:System.Runtime.Intrinsics.X86?displayProperty=nameWithType> namespace, may now produce a different result to previous versions of .NET.
 
 > [!TIP]
-> *ISA* stands for industry standard architecture.
+> *ISA* stands for Instruction Set Architecture.
 
 ## Version introduced
 

@@ -20,7 +20,7 @@ The `ExpandoObject` class is an implementation of the dynamic object concept tha
 
 In C#, to enable late binding for an instance of the `ExpandoObject` class, you must use the `dynamic` keyword. For more information, see [Using Type dynamic](/dotnet/csharp/programming-guide/types/using-type-dynamic).
 
-In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/early-late-binding/).
+In Visual Basic, dynamic operations are supported by late binding. For more information, see [Early and Late Binding (Visual Basic)](../../visual-basic/programming-guide/language-features/early-late-binding/index.md).
 
 The following code example demonstrates how to create an instance of the `ExpandoObject` class.
 

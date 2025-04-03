@@ -16,17 +16,19 @@ helpviewer_keywords:
 ---
 # C# Compiler Options to report errors and warnings
 
-The following options control how the compiler reports errors and warnings. The new MSBuild syntax is shown in **Bold**. The older *csc.exe* syntax is shown in `code style`.
+The following options control how the compiler reports errors and warnings.
 
-- **WarningLevel** / `-warn`: Set warning level.
-- **AnalysisLevel**: Set optional warning level.
-- **TreatWarningsAsErrors** / `-warnaserror`: Treat all warnings as errors
-- **WarningsAsErrors** / `-warnaserror`: Treat one or more warnings as errors
-- **WarningsNotAsErrors** / `-warnnotaserror`: Treat one or more warnings not as errors
-- **NoWarn** / `-nowarn`: Set a list of disabled warnings.
-- **CodeAnalysisRuleSet** / `-ruleset`: Specify a ruleset file that disables specific diagnostics.
-- **ErrorLog** / `-errorlog`: Specify a file to log all compiler and analyzer diagnostics.
-- **ReportAnalyzer** / `-reportanalyzer`:  Report additional analyzer information, such as execution time.
+| MSBuild syntax          | _csc.exe_ syntax  | Description                                                                                       |
+| ----------------------- | ----------------- | ------------------------------------------------------------------------------------------------- |
+| `WarningLevel`          | `-warn`           | Set warning level. [More info.](#warninglevel)                                                    |
+| `AnalysisLevel`         | /                 | Set optional warning level. [More info.](#analysis-level)                                         |
+| `TreatWarningsAsErrors` | `-warnaserror`    | Treat all warnings as errors. [More info.](#treatwarningsaserrors)                                |
+| `WarningsAsErrors`      | `-warnaserror`    | Treat one or more warnings as errors. [More info.](#warningsaserrors-and-warningsnotaserrors)     |
+| `WarningsNotAsErrors`   | `-warnnotaserror` | Treat one or more warnings not as errors. [More info.](#warningsaserrors-and-warningsnotaserrors) |
+| `NoWarn`                | `-nowarn`         | Set a list of disabled warnings. [More info.](#nowarn)                                            |
+| `CodeAnalysisRuleSet`   | `-ruleset`        | Specify a ruleset file that disables specific diagnostics. [More info.](#codeanalysisruleset)     |
+| `ErrorLog`              | `-errorlog`       | Specify a file to log all compiler and analyzer diagnostics. [More info.](#errorlog)              |
+| `ReportAnalyzer`        | `-reportanalyzer` | Report additional analyzer information, such as execution time. [More info.](#reportanalyzer)     |
 
 > [!NOTE]
 > Refer to [Compiler options](index.md#how-to-set-options) for more information on configuring these options for your project.

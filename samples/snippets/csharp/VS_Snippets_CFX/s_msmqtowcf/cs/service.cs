@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 //  add main
 //  using System.Security.Principal;
@@ -38,7 +38,7 @@ namespace Microsoft.ServiceModel.Samples
             PurchaseOrder po = (PurchaseOrder)ordermsg.Body;
             Random statusIndexer = new Random();
             po.Status = (OrderStates)statusIndexer.Next(3);
-            Console.WriteLine("Processing {0} ", po);
+            Console.WriteLine($"Processing {po} ");
         }
 
 	    // Host the service within this EXE console application.
@@ -55,7 +55,7 @@ namespace Microsoft.ServiceModel.Samples
 
 		// The service can now be accessed.
 			Console.WriteLine("The service is ready.");
-			Console.WriteLine("The service is running in the following account: {0}", WindowsIdentity.GetCurrent().Name);
+			Console.WriteLine($"The service is running in the following account: {WindowsIdentity.GetCurrent().Name}");
 			Console.WriteLine("Press <ENTER> to terminate service.");
 			Console.WriteLine();
 			Console.ReadLine();

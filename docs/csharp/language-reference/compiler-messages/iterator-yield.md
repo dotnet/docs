@@ -13,7 +13,6 @@ f1_keywords:
   - "CS4013"
   - "CS8154"
   - "CS8176"
-  - "CS9237"
   - "CS9238"
   - "CS9239"
 helpviewer_keywords:
@@ -28,7 +27,6 @@ helpviewer_keywords:
   - "CS4013"
   - "CS8154"
   - "CS8176"
-  - "CS9237"
   - "CS9238"
   - "CS9239"
 ms.date: 07/02/2024
@@ -51,7 +49,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS4013**](#ref-safety-in-iterator-methods): *Instance of type cannot be used inside a nested function, query expression, iterator block or async method*
 - [**CS8154**](#structure-of-an-iterator-method): *The body cannot be an iterator block because it returns by reference*
 - [**CS8176**](#ref-safety-in-iterator-methods): *Iterators cannot have by-reference locals*
-- [**CS9237**](#restrictions-on-iterator-methods): *'yield return' should not be used in the body of a lock statement*
 - [**CS9238**](#restrictions-on-iterator-methods): *Cannot use 'yield return' in an 'unsafe' block*
 - [**CS9239**](#restrictions-on-iterator-methods): *The `&` operator cannot be used on parameters or local variables in iterator methods.*
 
@@ -82,7 +79,6 @@ The body of an iterator method must conform to restrictions on the `yield return
 - **CS1626**: *Cannot yield a value in the body of a try block with a catch clause*
 - **CS1631**: *Cannot yield a value in the body of a catch clause*
 - **CS1629**: *Unsafe code may not appear in iterators*
-- **CS9237**: *''yield return' should not be used in the body of a lock statement*
 - **CS9238**: *Cannot use 'yield return' in an 'unsafe' block*
 - **CS9239**: *The `&` operator cannot be used on parameters or local variables in iterator methods.*
 
@@ -90,7 +86,6 @@ These errors indicate that your code violates safety rules because an iterator r
 
 - You can't `yield return` from a `catch` or `finally` clause.
 - You can't `yield return` from a `try` block with a catch clause.
-- You can't `yield return` from inside a `lock` statement block. Doing so can cause deadlocks.
 - You can't `yield return` from an `unsafe` block. The context for an iterator creates a nested `safe` block within the enclosing `unsafe` block.
 - You can't use the `&` operator to take the address of a variable in an iterator method.
 

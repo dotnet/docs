@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -36,7 +36,7 @@ public class ArraySort
    {
       for (int i = myArray.GetLowerBound(0); i <=
             myArray.GetUpperBound(0); i++ )
-         Console.WriteLine("[{0}]: {1}", i, myArray[i]);
+         Console.WriteLine($"[{i}]: {myArray[i]}");
       Console.WriteLine();
    }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Collections;
 using System.ServiceModel;
@@ -20,7 +20,7 @@ public class Test
         }
         catch (Exception exc)
         {
-            Console.WriteLine("Message: {0}", exc.Message);
+            Console.WriteLine($"Message: {exc.Message}");
             Console.ReadLine();
         }
         finally
@@ -48,7 +48,7 @@ public class Test
         if (sslPolicyErrors == SslPolicyErrors.None)
             return true;
 
-        Console.WriteLine("Certificate error: {0}", sslPolicyErrors);
+        Console.WriteLine($"Certificate error: {sslPolicyErrors}");
 
         // Do not allow this client to communicate with unauthenticated servers.
         return false;

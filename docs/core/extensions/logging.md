@@ -60,12 +60,12 @@ If your application is using [Dependency Injection (DI)](dependency-injection.md
 
 This example gets an ILogger object in a hosted app using [ASP.NET Minimal APIs](/aspnet/core/fundamentals/minimal-apis/overview):
 
-:::code language="csharp" source="snippets/logging/minimal-web/Program.cs" highlight="8":::
+:::code language="csharp" source="snippets/logging/minimal-web/Program.cs" highlight="12":::
 
 The preceding example:
 
 - Created a singleton service called `ExampleHandler` and mapped incoming web requests to run the `ExampleHandler.HandleRequest` function.
-- Line 8 defines a [primary constructor](../../csharp/whats-new/tutorials/primary-constructors.md) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
+- Line 12 defines a [primary constructor](../../csharp/whats-new/tutorials/primary-constructors.md) for the ExampleHandler, a feature added in C# 12. Using the older style C# constructor would work equally well but is a little more verbose.
 - The constructor defines a parameter of type `ILogger<ExampleHandler>`. <xref:Microsoft.Extensions.Logging.ILogger%601> derives from <xref:Microsoft.Extensions.Logging.ILogger> and indicates which category the `ILogger` object has. The DI container locates an `ILogger` with the correct category and supplies it as the constructor argument. If no `ILogger` with that category exists yet, the DI container automatically creates it from the `ILoggerFactory` in the service provider.
 - The `logger` parameter received in the constructor was used for logging in the `HandleRequest` function.
 
@@ -93,7 +93,7 @@ The preceding example:
 
 ## Configure logging
 
-Logging configuration is set in code or via external sources, such as, config files and environment variables. Using external configuration is beneficial when possible because it can be changed without rebuilding the application. However, some tasks, such as setting logging providers, can only be configured from code.
+Logging configuration is set in code or via external sources, such as config files and environment variables. Using external configuration is beneficial when possible because it can be changed without rebuilding the application. However, some tasks, such as setting logging providers, can only be configured from code.
 
 ### Configure logging without code
 
@@ -141,7 +141,7 @@ Any logs below the minimum level are ***not***:
 
 To suppress all logs, specify [LogLevel.None](xref:Microsoft.Extensions.Logging.LogLevel). `LogLevel.None` has a value of 6, which is higher than `LogLevel.Critical` (5).
 
-If a provider supports [log scopes](#log-scopes), `IncludeScopes` indicates whether they're enabled. For more information, see [log scopes](#log-scopes)
+If a provider supports [log scopes](#log-scopes), `IncludeScopes` indicates whether they're enabled. For more information, see [log scopes](#log-scopes).
 
 The following *appsettings.json* file contains settings for all of the built-in providers:
 

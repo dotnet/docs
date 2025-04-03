@@ -4,7 +4,7 @@
         The main Math class
         Contains all methods for performing basic math functions
     */
-        /// <summary>
+    /// <summary>
     /// The main <c>Math</c> class.
     /// Contains all methods for performing basic math functions.
     /// <list type="bullet">

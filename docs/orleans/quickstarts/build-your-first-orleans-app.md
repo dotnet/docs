@@ -26,8 +26,7 @@ At the end of the quickstart, you have an app that creates and handles redirects
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Visual Studio Code](https://code.visualstudio.com/)
+[!INCLUDE [Prerequisites](../../../includes/prerequisites-basic.md)]
 
 ---
 
@@ -78,7 +77,7 @@ Orleans is available through a collection of NuGet packages, each of which provi
 In the Visual Studio Code terminal, run the following command:
 
 ```dotnetcli
-dotnet add package Microsoft.Orleans.Server
+dotnet package add Microsoft.Orleans.Server
 ```
 
 ---

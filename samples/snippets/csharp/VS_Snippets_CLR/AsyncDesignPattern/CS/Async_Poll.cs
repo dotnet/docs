@@ -1,4 +1,4 @@
-﻿//<Snippet3>
+//<Snippet3>
 /*
 The following example demonstrates using asynchronous methods to
 get Domain Name System information for the specified host computer.
@@ -52,7 +52,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                     Console.WriteLine("Aliases");
                     for (int i = 0; i < aliases.Length; i++)
                     {
-                        Console.WriteLine("{0}", aliases[i]);
+                        Console.WriteLine($"{aliases[i]}");
                     }
                 }
                 if (addresses.Length > 0)
@@ -60,13 +60,13 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                     Console.WriteLine("Addresses");
                     for (int i = 0; i < addresses.Length; i++)
                     {
-                        Console.WriteLine("{0}",addresses[i].ToString());
+                        Console.WriteLine($"{addresses[i].ToString()}");
                     }
                 }
             }
             catch (SocketException e)
             {
-                Console.WriteLine("An exception occurred while processing the request: {0}", e.Message);
+                Console.WriteLine($"An exception occurred while processing the request: {e.Message}");
             }
         }
     }

@@ -13,6 +13,7 @@ items:
         items:
           - name: Overview
             href: ../core/install/index.yml
+            displayName: install
           - name: Install on Windows
             href: ../core/install/windows.md
           - name: Install on macOS
@@ -21,29 +22,40 @@ items:
             items:
               - name: Overview
                 href: ../core/install/linux.md
+                displayName: linux
               - name: Ubuntu
+                expanded: true
                 items:
-                  - name: Overview
-                    href: ../core/install/linux-ubuntu.md
                   - name: Install
                     href: ../core/install/linux-ubuntu-install.md
+                    displayName: ubuntu
+                  - name: Decision guide
+                    href: ../core/install/linux-ubuntu-decision.md
+                    displayName: ubuntu
               - name: Alpine
                 href: ../core/install/linux-alpine.md
+                displayName: linux
               - name: CentOS Stream
                 href: ../core/install/linux-rhel.md#supported-distributions
+                displayName: linux
               - name: Debian
                 href: ../core/install/linux-debian.md
+                displayName: linux
               - name: Fedora
                 href: ../core/install/linux-fedora.md
+                displayName: linux
               - name: OpenSUSE
                 href: ../core/install/linux-opensuse.md
+                displayName: linux
               - name: Red Hat Enterprise Linux
                 href: ../core/install/linux-rhel.md
               - name: SLES
                 href: ../core/install/linux-sles.md
+                displayName: linux
               - name: Installation script & binaries
                 href: ../core/install/linux-scripted-manual.md
               - name: Install with Snap
+                expanded: true
                 items:
                   - name: Runtime
                     href: ../core/install/linux-snap-runtime.md
@@ -137,6 +149,21 @@ items:
             href: ../core/tutorials/index.md
   - name: What's new in .NET
     items:
+      - name: .NET 10
+        items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-10/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-10/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-10/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-10/sdk.md
+          - name: Breaking changes
+            href: ../core/compatibility/10.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 9
         items:
           - name: What's new
@@ -445,6 +472,8 @@ items:
             href: ../standard/datetime/how-to-use-dateonly-timeonly.md
           - name: Perform arithmetic operations
             href: ../standard/datetime/performing-arithmetic-operations.md
+          - name: Use TimeProvider to write predictable code
+            href: ../standard/datetime/timeprovider-overview.md
           - name: "DateTime and DateTimeOffset support in System.Text.Json"
             href: ../standard/datetime/system-text-json-support.md
           - name: Time zones
@@ -538,6 +567,8 @@ items:
     items:
       - name: Overview
         href: ../standard/runtime-libraries-overview.md
+      - name: Preview APIs
+        href: runtime-libraries/preview-apis.md
       - name: Format numbers, dates, other types
         items:
           - name: Overview
@@ -654,6 +685,14 @@ items:
                 href: runtime-libraries/system-text-rune.md
               - name: StringBuilder class
                 href: runtime-libraries/system-text-stringbuilder.md
+      - name: Compliance
+        items:
+          - name: Overview
+            href: ../core/extensions/compliance.md
+          - name: Data classification
+            href: ../core/extensions/data-classification.md
+          - name: Data redaction
+            href: ../core/extensions/data-redaction.md
       - name: Regular expressions
         items:
           - name: Overview
@@ -741,7 +780,7 @@ items:
                         href: ../standard/serialization/system-text-json/nullable-annotations.md
                       - name: Allow invalid JSON
                         href: ../standard/serialization/system-text-json/invalid-json.md
-                      - name: Handle missing members
+                      - name: Handle unmapped members
                         href: ../standard/serialization/system-text-json/missing-members.md
                       - name: Handle overflow JSON, use JsonElement or JsonNode
                         href: ../standard/serialization/system-text-json/handle-overflow.md
@@ -759,6 +798,8 @@ items:
                     href: ../standard/serialization/system-text-json/preserve-references.md
                   - name: Serialize polymorphic types
                     href: ../standard/serialization/system-text-json/polymorphism.md
+                  - name: Use extension methods on HttpClient
+                    href: ../standard/serialization/system-text-json/httpclient-extensions.md
                   - name: Read/write JSON without using JsonSerializer
                     items:
                       - name: Use DOM
@@ -769,8 +810,8 @@ items:
                         href: ../standard/serialization/system-text-json/use-utf8jsonreader.md
               - name: Visual Basic support
                 href: ../standard/serialization/system-text-json/visual-basic-support.md
-              - name: Supported collection types
-                href: ../standard/serialization/system-text-json/supported-collection-types.md
+              - name: Supported types
+                href: ../standard/serialization/system-text-json/supported-types.md
               - name: Advanced
                 items:
                   - name: Source generation
@@ -996,6 +1037,9 @@ items:
             href: runtime-libraries/system-console.md
       - name: The System.Random class
         href: runtime-libraries/system-random.md
+      - name: Artificial intelligence (AI)
+        displayName: microsoft.extensions.ai,ollama,ai,openai,azure inference,ichatclient
+        href: ../core/extensions/artificial-intelligence.md
       - name: Dependency injection
         items:
           - name: Overview
@@ -1093,6 +1137,9 @@ items:
               - name: HTTP client factory troubleshooting
                 href: ../core/extensions/httpclient-factory-troubleshooting.md
                 displayName: httpclient,http,client,factory,named client,named httpclient,typed client,typed httpclient
+              - name: Keyed DI support in HTTP client factory
+                href: ../core/extensions/httpclient-factory-keyed-di.md
+                displayName: httpclient,http,client,factory,dependency injection,keyed,keyed di,keyed services
               - name: Build resilient HTTP apps
                 href: ../core/resilience/http-resilience.md
                 displayName: resilience,transient fault handling,http,httpclient,recovery,polly
@@ -1147,6 +1194,8 @@ items:
             items:
               - name: QUIC support
                 href: networking/quic/quic-overview.md
+              - name: QUIC configuration options
+                href: networking/quic/quic-options.md
               - name: QUIC troubleshooting
                 href: networking/quic/quic-troubleshooting.md
           - name: Telemetry
@@ -1157,6 +1206,9 @@ items:
               - name: Metrics
                 href: networking/telemetry/metrics.md
                 displayName: networking metrics
+              - name: Distributed tracing
+                href: networking/telemetry/tracing.md
+                displayName: networking distributed tracing
               - name: Events
                 href: networking/telemetry/events.md
                 displayName: networking events

@@ -4,8 +4,10 @@ using Azure.Core.Diagnostics;
 using Azure.Identity;
 using Microsoft.Extensions.Azure;
 
-var userAssignedClientId = "<user-assigned-client-id>";
-var builder = WebApplication.CreateBuilder(args);
+string userAssignedClientId = "<user-assigned-client-id>";
+string storageAccountName = "<account-name>";
+string keyVaultName = "<vault-name>";
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 #region snippet_FilteredLogging
 using AzureEventSourceListener listener = new((args, message) =>
@@ -17,31 +19,51 @@ using AzureEventSourceListener listener = new((args, message) =>
 }, EventLevel.LogAlways);
 #endregion snippet_FilteredLogging
 
+#region snippet_Dac
 builder.Services.AddAzureClients(clientBuilder =>
 {
+    clientBuilder.AddSecretClient(
+        new Uri($"https://{keyVaultName}.vault.azure.net"));
     clientBuilder.AddBlobServiceClient(
-        new Uri("https://<account-name>.blob.core.windows.net"));
-    #region snippet_Dac
+        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
+
     DefaultAzureCredential credential = new();
     clientBuilder.UseCredential(credential);
-    #endregion snippet_Dac
+});
+#endregion snippet_Dac
 
-    #region snippet_DacExcludes
+#region snippet_DacExcludes
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddSecretClient(
+        new Uri($"https://{keyVaultName}.vault.azure.net"));
+    clientBuilder.AddBlobServiceClient(
+        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
+
     clientBuilder.UseCredential(new DefaultAzureCredential(
         new DefaultAzureCredentialOptions
         {
             ExcludeEnvironmentCredential = true,
+            ExcludeManagedIdentityCredential = true,
             ExcludeWorkloadIdentityCredential = true,
-            ManagedIdentityClientId = userAssignedClientId,
         }));
-    #endregion snippet_DacExcludes
-
-    #region snippet_Ctc
-    clientBuilder.UseCredential(new ChainedTokenCredential(
-        new ManagedIdentityCredential(clientId: userAssignedClientId),
-        new VisualStudioCredential()));
-    #endregion snippet_Ctc
 });
+#endregion snippet_DacExcludes
+
+#region snippet_Ctc
+builder.Services.AddAzureClients(clientBuilder =>
+{
+    clientBuilder.AddSecretClient(
+        new Uri($"https://{keyVaultName}.vault.azure.net"));
+    clientBuilder.AddBlobServiceClient(
+        new Uri($"https://{storageAccountName}.blob.core.windows.net"));
+
+    clientBuilder.UseCredential(new ChainedTokenCredential(
+        new AzurePowerShellCredential(),
+        new VisualStudioCredential()));
+});
+#endregion snippet_Ctc
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -53,7 +75,8 @@ TokenCredential credential;
 
 if (app.Environment.IsProduction() || app.Environment.IsStaging())
 {
-    credential = new ManagedIdentityCredential(clientId: userAssignedClientId);
+    credential = new ManagedIdentityCredential(
+        ManagedIdentityId.FromUserAssignedClientId(userAssignedClientId));
 }
 else
 {
@@ -68,17 +91,16 @@ credential = new DefaultAzureCredential(
     {
         ExcludeEnvironmentCredential = true,
         ExcludeWorkloadIdentityCredential = true,
-        ExcludeAzureCliCredential = true,
+        ExcludeManagedIdentityCredential = true,
         ExcludeAzurePowerShellCredential = true,
         ExcludeAzureDeveloperCliCredential = true,
-        ManagedIdentityClientId = userAssignedClientId
     });
 #endregion
 
 #region snippet_CtcEquivalents
 credential = new ChainedTokenCredential(
-    new ManagedIdentityCredential(clientId: userAssignedClientId),
-    new VisualStudioCredential());
+    new VisualStudioCredential(),
+    new AzureCliCredential());
 #endregion
 
 if (app.Environment.IsDevelopment())

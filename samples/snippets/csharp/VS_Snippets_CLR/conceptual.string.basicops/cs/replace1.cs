@@ -1,4 +1,4 @@
-﻿// <Snippet23>
+// <Snippet23>
 using System;
 
 public class Example
@@ -6,9 +6,9 @@ public class Example
    public static void Main()
    {
       String phrase = "a cold, dark night";
-      Console.WriteLine("Before: {0}", phrase);
+      Console.WriteLine($"Before: {phrase}");
       phrase = phrase.Replace(",", "");
-      Console.WriteLine("After: {0}", phrase);
+      Console.WriteLine($"After: {phrase}");
    }
 }
 // The example displays the following output:

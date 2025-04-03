@@ -23,7 +23,7 @@ Because the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> im
 > [!IMPORTANT]
 > In .NET Framework, the C++ compiler supports deterministic disposal of resources and does not allow direct implementation of the <xref:System.IDisposable.Dispose%2A> method.
 
-For a detailed discussion about how this interface and the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method are used, see the [Garbage Collection](/dotnet/standard/garbage-collection/) and [Implementing a Dispose Method](../../standard/garbage-collection/implementing-dispose.md) topics.
+For a detailed discussion about how this interface and the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method are used, see the [Garbage Collection](../../standard/garbage-collection/index.md) and [Implementing a Dispose Method](../../standard/garbage-collection/implementing-dispose.md) topics.
 
 ## Use an object that implements IDisposable
 

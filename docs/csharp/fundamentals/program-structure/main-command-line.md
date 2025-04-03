@@ -200,7 +200,7 @@ long num = Convert.ToInt64(s);
 For more information, see <xref:System.Int64.Parse%2A> and <xref:System.Convert>.
 
 > [!TIP]
-> Parsing command-line arguments can be complex. Consider using the [System.CommandLine](/dotnet/standard/commandline/) library (currently in beta) to simplify the process.
+> Parsing command-line arguments can be complex. Consider using the [System.CommandLine](../../../standard/commandline/index.md) library (currently in beta) to simplify the process.
 
 The following example shows how to use command-line arguments in a console application. The application takes one argument at run time, converts the argument to an integer, and calculates the factorial of the number. If no arguments are supplied, the application issues a message that explains the correct usage of the program.
 

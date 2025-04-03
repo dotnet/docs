@@ -11,7 +11,7 @@ In .NET, classes that own unmanaged resources usually implement the <xref:System
 
 The <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType> method of this interface returns a <xref:System.Threading.Tasks.ValueTask> that represents the asynchronous dispose operation. Classes that own unmanaged resources implement this method, and the consumer of these classes calls this method on an object when it is no longer needed.
 
-The async methods are used in conjunction with the `async` and `await` keywords in C# and Visual Basic. For more information, see [The Task asynchronous programming model in C#](/dotnet/csharp/programming-guide/concepts/async/index) or [Asynchronous Programming with Async and Await (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/async/).
+The async methods are used in conjunction with the `async` and `await` keywords in C# and Visual Basic. For more information, see [The Task asynchronous programming model in C#](/dotnet/csharp/programming-guide/concepts/async/index) or [Asynchronous Programming with Async and Await (Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md).
 
 ## Use an object that implements IAsyncDisposable
 

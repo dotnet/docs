@@ -31,7 +31,7 @@ Overload resolution prefers instance or static method defined by the type itself
 ## See also
 
 - [Extension Methods](./extension-methods.md)
-- [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)
+- [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [Static Classes and Static Class Members](./static-classes-and-static-class-members.md)
 - [protected](../../language-reference/keywords/protected.md)
 - [internal](../../language-reference/keywords/internal.md)

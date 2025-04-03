@@ -93,7 +93,7 @@ LINQ to Entities provides Language-Integrated Query (LINQ) support that enables 
 ## See also
 
 - [Known Issues and Considerations in LINQ to Entities](known-issues-and-considerations-in-linq-to-entities.md)
-- [Language-Integrated Query (LINQ) - C#](/dotnet/csharp/linq/)
+- [Language-Integrated Query (LINQ) - C#](../../../../../csharp/linq/index.md)
 - [Language-Integrated Query (LINQ) - Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/index.md)
 - [LINQ and ADO.NET](../../linq-and-ado-net.md)
 - [ADO.NET Entity Framework](../index.md)

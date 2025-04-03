@@ -59,7 +59,7 @@ Jump to:
 |--------------------|-----------------------|
 | **CLR**            | 4                     |
 | **Windows**        | ✔️ 11 version 24H2 (version 26100)<br/>✔️ 11 October 2023 Release (version 22631)<br/>✔️ 11 September 2022 Release (version 22621)<br/>➕ 11 October 2021 Release (version 22000)<br/>➕ 10 2022 Update (22H2)<br/>➕ 10 November 2021 Update<br/>➕ 10 May 2021 Update<br/>➕ 10 October 2020 Update<br/>|
-| **Windows Server** | ➕ Windows Server 2025<br/>➕ Windows Server 2022 |
+| **Windows Server** | ✔️ Windows Server 2025<br/>➕ Windows Server 2022 |
 
 To determine the installed .NET version, use the following `Release` DWORD:
 

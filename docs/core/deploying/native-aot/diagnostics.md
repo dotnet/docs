@@ -64,7 +64,7 @@ To set a breakpoint that breaks whenever an exception is thrown, choose the **Br
 
 To see what exception was thrown, start debugging (**Debug > Start Debugging** or <kbd>F5</kbd>) and when the `RhThrowEx` breakpoint hits, open the Watch window (**Debug > Windows > Watch**), and add following expression as one of the watches:
 
-|                    | Expression                            |
+| Architecture       | Expression                            |
 |--------------------|---------------------------------------|
 | x64 architecture   | `(S_P_CoreLib_System_Exception*)@rcx` |
 | Arm64 architecture | `(S_P_CoreLib_System_Exception*)@x0`  |

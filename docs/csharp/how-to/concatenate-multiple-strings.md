@@ -60,7 +60,7 @@ Another option to join strings from a collection is to use <xref:System.String.C
 
 ## LINQ and `Enumerable.Aggregate`
 
-At last, you can use [LINQ](/dotnet/csharp/linq/)
+At last, you can use [LINQ](../linq/index.md)
 and the <xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=nameWithType> method to join strings from a collection. This method combines
 the source strings using a lambda expression. The lambda expression does the
 work to add each string to the existing accumulation. The following example

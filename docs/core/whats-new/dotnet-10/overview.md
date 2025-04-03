@@ -183,7 +183,7 @@ The Visual Basic updates in .NET 10 include the following features and enhanceme
 
 These updates ensure that Visual Basic can consume updated features in C# and the runtime, improving compatibility and performance.
 
-For more information, see [What's new in Visual Basic](/dotnet/visual-basic/whats-new/).
+For more information, see [What's new in Visual Basic](../../../visual-basic/whats-new/index.md).
 
 ## Windows Forms
 

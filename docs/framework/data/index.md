@@ -22,7 +22,7 @@ This section provides information on how to access data in .NET Framework.
 
 ## Related sections
 
- [Language Integrated Query (LINQ)](/dotnet/csharp/linq/)\
+ [Language Integrated Query (LINQ)](../../csharp/linq/index.md)\
  Provides links to relevant documentation for Language Integrated Query (LINQ) using C#.
 
  [Language-Integrated Query (LINQ) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/index.md)\

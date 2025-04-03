@@ -48,7 +48,7 @@ For framework versions earlier than .NET Core 3.0, install the [System.Text.Json
 
 ## Reflection vs. source generation
 
-By default, `System.Text.Json` gathers the metadata it needs to access properties of objects for serialization and deserialization *at run time* using [reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/). As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/index.md#source-generators) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
+By default, `System.Text.Json` gathers the metadata it needs to access properties of objects for serialization and deserialization *at run time* using [reflection](../../../csharp/advanced-topics/reflection-and-attributes/index.md). As an alternative, `System.Text.Json` can use the C# [source generation](../../../csharp/roslyn-sdk/index.md#source-generators) feature to improve performance, reduce private memory usage, and facilitate [assembly trimming](../../../core/deploying/trimming/trim-self-contained.md), which reduces app size.
 
 For more information, see [Reflection versus source generation](reflection-vs-source-generation.md).
 

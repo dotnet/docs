@@ -42,6 +42,8 @@ items:
                 href: globalization/10.0/version-override.md
           - name: SDK and MSBuild
             items:
+              - name: .NET CLI `--interactive` defaults to `true` in user scenarios
+                href: sdk/10.0/dotnet-cli-interactive.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
@@ -1914,6 +1916,8 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: .NET CLI `--interactive` defaults to `true` in user scenarios
+                href: sdk/10.0/dotnet-cli-interactive.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode

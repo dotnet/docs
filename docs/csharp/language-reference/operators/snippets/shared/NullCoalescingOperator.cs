@@ -9,6 +9,32 @@ public static class NullCoalescingOperator
         NullCoalescingAssignment();
     }
 
+    public record class Person(string FirstName, string LastName);
+    public static void AddMessageAtIndex()
+    {
+        List<string> messages = new List<string>(10);
+        Person person = new Person("First", "Last");
+        // <NullForgivingAssignment>
+        person?.FirstName = "Scott";
+        messages?[5] = "five";
+        // </NullForgivingAssignment>
+
+        int index = 0;
+        int[] values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+        // <ConditionalRHS>
+        values?[2] = GenerateNextIndex();
+        int GenerateNextIndex() => index++;
+        // </ConditionalRHS>
+
+        // <EquivalentIfStatement>
+        if (values is not null)
+        {
+            values[2] = GenerateNextIndex();
+        }
+        // </EquivalentIfStatement>
+    }
+
     private static void WithNullConditional()
     {
         // <SnippetWithNullConditional>

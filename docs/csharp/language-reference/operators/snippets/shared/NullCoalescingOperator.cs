@@ -1,4 +1,6 @@
-﻿namespace operators;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace operators;
 
 public static class NullCoalescingOperator
 {
@@ -9,11 +11,14 @@ public static class NullCoalescingOperator
         NullCoalescingAssignment();
     }
 
-    public record class Person(string FirstName, string LastName);
+    public record class Human(string FirstName, string LastName)
+    {
+        public string FirstName { get; set; } = FirstName;
+    }
     public static void AddMessageAtIndex()
     {
         List<string> messages = new List<string>(10);
-        Person person = new Person("First", "Last");
+        Human person = new Human("First", "Last");
         // <NullForgivingAssignment>
         person?.FirstName = "Scott";
         messages?[5] = "five";

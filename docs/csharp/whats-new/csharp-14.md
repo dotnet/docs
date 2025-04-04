@@ -1,13 +1,14 @@
 ---
 title: What's new in C# 14
 description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
-ms.date: 02/19/2025
+ms.date: 04/04/2025
 ms.topic: whats-new
 ---
 # What's new in C# 14
 
 C# 14 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet):
 
+- [Null-conditional assignment](#null-conditional-assignment)
 - [`nameof` supports unbound generic types](#unbound-generic-types-and-nameof)
 - [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](#implicit-span-conversions)
 - [Modifiers on simple lambda parameters](#simple-lambda-parameters-with-modifiers)
@@ -98,6 +99,31 @@ Partial constructors and partial events must include exactly one *defining decla
 Only the implementing declaration of a partial constructor can include a constructor initializer: `this()` or `base()`. Only one partial type declaration can include the primary constructor syntax.
 
 The implementing declaration of a partial event must include `add` and `remove` accessors. The defining declaration declares a field-like event.
+
+## Null conditional assignment
+
+The null conditional member access operators, `?.` and ``?[]`, can now be used on the left hand side of an assignment or compound assignment.
+
+Before C# 14, you needed to null-check a variable before assigning to a property:
+
+```csharp
+if (customer is not null)
+{
+    customer.Order = GetCurrentOrder();
+}
+```
+
+You can simplify the preceding code using the `?.` operator:
+
+```csharp
+customer?.Order = GetCurrentOrder();
+```
+
+The right side of the `=` operator is evaluated only when the left side is not null. If `customer` is null, the code won't call `GetCurrentOrder`.
+
+You In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=` and others). However, increment and decrement, `++` and `--` aren't allowed.
+
+You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null conditional assignment](~/csharplang/proposals/null-conditional-assignment.md)
 
 ## See also
 

@@ -33,7 +33,7 @@ This operation is called *value assignment*: the value is assigned.
 
 Beginning with C# 14, the left hand side of a value assignment can include a [null conditional member expression](./member-access-operators.md#null-conditional-operators--and-), such as `?.` or `?[]`. If the left hand side is null, the right hand side expression isn't evaluated.
 
-## Reference assignment
+## ref assignment
 
 *Ref assignment* `= ref` makes its left-hand operand an alias to the right-hand operand, as the following example demonstrates:
 

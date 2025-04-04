@@ -42,6 +42,8 @@ items:
                 href: globalization/10.0/version-override.md
           - name: SDK and MSBuild
             items:
+              - name: .NET CLI `--interactive` defaults to `true` in user scenarios
+                href: sdk/10.0/dotnet-cli-interactive.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
@@ -140,6 +142,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+              - name: Assembly load directory resolves through symbolic links on Windows
+                href: deployment/9.0/assembly-load-directory.md
           - name: Entity Framework Core
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Interop
@@ -1678,6 +1682,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+              - name: Assembly load directory resolves through symbolic links on Windows
+                href: deployment/9.0/assembly-load-directory.md
           - name: .NET 8
             items:
               - name: Host determines RID-specific assets
@@ -1910,6 +1916,8 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: .NET CLI `--interactive` defaults to `true` in user scenarios
+                href: sdk/10.0/dotnet-cli-interactive.md
               - name: "`dotnet restore` audits transitive packages"
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode

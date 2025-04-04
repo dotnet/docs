@@ -18,23 +18,23 @@ You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that r
 
 You can instantiate a <xref:System.Globalization.NumberFormatInfo> object for the current culture in any of the following ways. In each case, the returned <xref:System.Globalization.NumberFormatInfo> object is read-only.
 
-- By retrieving a <xref:System.Globalization.CultureInfo> object that represents the current culture from the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property, and retrieving the <xref:System.Globalization.CultureInfo> object from its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property.
+- By retrieving a <xref:System.Globalization.CultureInfo> object that represents the current culture from the <xref:System.Globalization.CultureInfo.CurrentCulture?displayProperty=nameWithType> property, and retrieving the <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.Globalization.CultureInfo.NumberFormat?displayProperty=nameWithType> property.
 
-- By retrieving the <xref:System.Globalization.NumberFormatInfo> object returned by the `static` (`Shared` in Visual Basic) <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property.
+- By retrieving the <xref:System.Globalization.NumberFormatInfo> object returned by the `static` (`Shared` in Visual Basic) <xref:System.Globalization.NumberFormatInfo.CurrentInfo> property.
 
 - By calling the <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method with a <xref:System.Globalization.CultureInfo> object that represents the current culture.
 
-The following example uses these three ways to create <xref:System.Globalization.NumberFormatInfo> objects that represent the formatting conventions of the current culture. It also retrieves the value of the <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property to illustrate that each object is read-only.
+The following example uses these three ways to create <xref:System.Globalization.NumberFormatInfo> objects that represent the formatting conventions of the current culture. It also retrieves the value of the <xref:System.Globalization.NumberFormatInfo.IsReadOnly> property to illustrate that each object is read-only.
 
 :::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate1.cs" interactive="try-dotnet" id="Snippet1":::
 
 You can create a writable <xref:System.Globalization.NumberFormatInfo> object that represents the conventions of the current culture in any of the following ways:
 
-- By retrieving a <xref:System.Globalization.NumberFormatInfo> object in any of the ways illustrated in the previous code example, and calling the <xref:System.Globalization.NumberFormatInfo.Clone%2A> method on the returned <xref:System.Globalization.NumberFormatInfo> object. This creates a copy of the original <xref:System.Globalization.NumberFormatInfo> object, except that its <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property is `false`.
+- By retrieving a <xref:System.Globalization.NumberFormatInfo> object in any of the ways illustrated in the previous code example, and calling the <xref:System.Globalization.NumberFormatInfo.Clone%2A> method on the returned <xref:System.Globalization.NumberFormatInfo> object. This creates a copy of the original <xref:System.Globalization.NumberFormatInfo> object, except that its <xref:System.Globalization.NumberFormatInfo.IsReadOnly> property is `false`.
 
 - By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method to create a <xref:System.Globalization.CultureInfo> object that represents the current culture, and then using its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property to retrieve the <xref:System.Globalization.NumberFormatInfo> object.
 
-The following example illustrates these two ways of instantiating a <xref:System.Globalization.NumberFormatInfo> object, and displays the value of its <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property to illustrate that the object is not read-only.
+The following example illustrates these two ways of instantiating a <xref:System.Globalization.NumberFormatInfo> object, and displays the value of its <xref:System.Globalization.NumberFormatInfo.IsReadOnly> property to illustrate that the object is not read-only.
 
 :::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate2.cs" id="Snippet2":::
 
@@ -42,7 +42,7 @@ Note that the Windows operating system allows the user to override some of the <
 
 :::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/instantiate3.cs" id="Snippet3":::
 
-If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=nameWithType> property is set to `true`, the properties <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars listed by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property), the results of the methods and the values of the properties are undefined.
+If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=nameWithType> property is set to `true`, the properties <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=nameWithType> are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars listed by the <xref:System.Globalization.CultureInfo.OptionalCalendars> property), the results of the methods and the values of the properties are undefined.
 
 ### Instantiate a NumberFormatInfo object for the invariant culture
 
@@ -50,7 +50,7 @@ The invariant culture represents a culture that is culture-insensitive. It is ba
 
 You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the invariant culture in the following ways:
 
-- By retrieving the value of the <xref:System.Globalization.NumberFormatInfo.InvariantInfo%2A> property. The returned  <xref:System.Globalization.NumberFormatInfo> object is read-only.
+- By retrieving the value of the <xref:System.Globalization.NumberFormatInfo.InvariantInfo> property. The returned  <xref:System.Globalization.NumberFormatInfo> object is read-only.
 
 - By retrieving the value of the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=nameWithType> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.
 
@@ -64,13 +64,13 @@ The following example uses each of these methods to instantiate a <xref:System.G
 
 A specific culture represents a language that is spoken in a particular country/region. For example, en-US is a specific culture that represents the English language spoken in the United States, and en-CA is a specific culture that represents the English language spoken in Canada. You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of a specific culture in the following ways:
 
-- By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%28System.String%29?displayProperty=nameWithType> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.
+- By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%28System.String%29?displayProperty=nameWithType> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.
 
 - By passing a <xref:System.Globalization.CultureInfo> object that represents the culture whose <xref:System.Globalization.NumberFormatInfo> object you want to retrieve to the static <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.
 
-- By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.
+- By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=nameWithType> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.
 
-- By calling one of the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=nameWithType> class constructors and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.
+- By calling one of the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=nameWithType> class constructors and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.
 
 The following example uses these four ways to create a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of the Indonesian (Indonesia) culture. It also indicates whether each object is read-only.
 
@@ -94,7 +94,7 @@ The culture-specific data for formatting numeric values provided by the <xref:Sy
 
 - **Replacement cultures.** The <xref:System.Globalization.CultureAndRegionInfoBuilder> class can be used to replace the data of an existing culture.
 
-- **Cascading changes to property values.** A number of culture-related properties can change at run time, which, in turn, causes <xref:System.Globalization.NumberFormatInfo> data to change. For example, the current culture can be changed either programmatically or through user action. When this happens, the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property changes to an object associated with the current culture.
+- **Cascading changes to property values.** A number of culture-related properties can change at run time, which, in turn, causes <xref:System.Globalization.NumberFormatInfo> data to change. For example, the current culture can be changed either programmatically or through user action. When this happens, the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo> property changes to an object associated with the current culture.
 
 - **User preferences.** Users of your application might override some of the values associated with the current system culture through the region and language options in Control Panel. For example, users might choose a different currency symbol or a different decimal separator symbol. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=nameWithType> property is set to `true` (its default value), the properties of the <xref:System.Globalization.NumberFormatInfo> object are also retrieved from the user settings.
 
@@ -166,7 +166,7 @@ Each standard numeric format string uses one or more <xref:System.Globalization.
 |"‰" (per mille placeholder custom format specifier)|<xref:System.Globalization.NumberFormatInfo.PerMilleSymbol%2A>, to define the per mille symbol.|
 |"E" (exponential notation custom format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol in the mantissa and exponent.<br /><br /><xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>, to define the positive sign symbol in the exponent.|
 
-Note that the <xref:System.Globalization.NumberFormatInfo> class includes a <xref:System.Globalization.NumberFormatInfo.NativeDigits%2A> property that specifies the base 10 digits used by a specific culture. However, the property is not used in formatting operations; only the Basic Latin digits 0 (U+0030) through 9 (U+0039) are used in the result string. In addition, for <xref:System.Single> and <xref:System.Double> values of `NaN`, `PositiveInfinity`, and `NegativeInfinity`, the result string consists exclusively of the symbols defined by the <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A>, <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, and <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A> properties, respectively.
+Note that the <xref:System.Globalization.NumberFormatInfo> class includes a <xref:System.Globalization.NumberFormatInfo.NativeDigits> property that specifies the base 10 digits used by a specific culture. However, the property is not used in formatting operations; only the Basic Latin digits 0 (U+0030) through 9 (U+0039) are used in the result string. In addition, for <xref:System.Single> and <xref:System.Double> values of `NaN`, `PositiveInfinity`, and `NegativeInfinity`, the result string consists exclusively of the symbols defined by the <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A>, <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, and <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A> properties, respectively.
 
 ## Modify NumberFormatInfo properties
 
@@ -185,7 +185,7 @@ The following sections provide some examples.
 
 ### Modify the currency symbol and pattern
 
-The following example modifies a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the en-US culture. It assigns the ISO-4217 currency symbol to the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property and defines a pattern for currency values that consists of the currency symbol followed by a space and a numeric value.
+The following example modifies a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the en-US culture. It assigns the ISO-4217 currency symbol to the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol> property and defines a pattern for currency values that consists of the currency symbol followed by a space and a numeric value.
 
 :::code language="csharp" source="./snippets/System.Globalization/NumberFormatInfo/csharp/customize_currency1.cs" interactive="try-dotnet" id="Snippet1":::
 

@@ -51,7 +51,7 @@ After publishing, Native AOT applications are true native binaries. The managed 
 
 The Native AOT compiler generates information about line numbers, types, locals, and parameters. The native debugger lets you inspect stack trace and variables, step into or over source lines, or set line breakpoints.
 
-To debug managed exceptions, set a breakpoint on the `RhThrowEx` method, which is called whenever a managed exception is thrown. The exception is stored in the `rcx` or `x0` register. If your debugger supports viewing C++ objects, you can cast
+To debug managed exceptions, set a breakpoint on the `RhThrowEx` method, which is called whenever a managed exception is thrown. The exception is stored in the first argument register, which is `rcx` on x64 and `x0` on Arm64. If your debugger supports viewing C++ objects, you can cast
 the register to `S_P_CoreLib_System_Exception*` to see more information about the exception.
 
 Collecting a [dump](../../diagnostics/dumps.md) file for a Native AOT application involves some manual steps in .NET 8.
@@ -62,7 +62,14 @@ You can launch a Native AOT-compiled executable under the Visual Studio debugger
 
 To set a breakpoint that breaks whenever an exception is thrown, choose the **Breakpoints** option from the **Debug > Windows** menu. In the new window, select **New > Function** breakpoint. Specify `RhThrowEx` as the Function Name and leave the Language option at **All Languages** (don't select C#).
 
-To see what exception was thrown, start debugging (**Debug > Start Debugging** or <kbd>F5</kbd>), open the Watch window (**Debug > Windows > Watch**), and add following expression as one of the watches: `(S_P_CoreLib_System_Exception*)@rcx`. This mechanism leverages the fact that at the time `RhThrowEx` is called, the x64 CPU register RCX contains the thrown exception. You can also paste the expression into the Immediate window; the syntax is the same as for watches.
+To see what exception was thrown, start debugging (**Debug > Start Debugging** or <kbd>F5</kbd>) and when the `RhThrowEx` breakpoint hits, open the Watch window (**Debug > Windows > Watch**), and add following expression as one of the watches:
+
+| Architecture       | Expression                            |
+|--------------------|---------------------------------------|
+| x64 architecture   | `(S_P_CoreLib_System_Exception*)@rcx` |
+| Arm64 architecture | `(S_P_CoreLib_System_Exception*)@x0`  |
+
+This mechanism leverages the fact that at the time `RhThrowEx` is called, the CPU register mentioned in the table contains the thrown exception. You can also paste the expression into the Visual Studio **Immediate Window**; the syntax is the same as for watches.
 
 ### Importance of the symbol file
 

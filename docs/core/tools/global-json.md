@@ -86,6 +86,22 @@ The following table shows the possible values for the `rollForward` key:
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. An exact match is required. |
 
+#### paths
+
+- Type: Array of `string`
+- Available since: .NET 10 Preview 3 SDK.
+
+Specifies additional locations that should be considered when searching for a compatible .NET SDK. Paths can be absolute or relative to the location of the *global.json* file. The special value `$host$` represents the location corresponding to the running `dotnet` executable.
+
+These paths are searched in the order they're defined and the first [matching](#matching-rules) SDK is used.
+
+#### errorMessage
+
+- Type: `string`
+- Available since: .NET 10 Preview 3 SDK.
+
+Specifies a custom error message displayed when the SDK resolver can't find a compatible .NET SDK.
+
 ### msbuild-sdks
 
 Type: `object`
@@ -159,6 +175,18 @@ The following example shows how to use the highest patch version installed of a 
   "sdk": {
     "version": "8.0.102",
     "rollForward": "latestPatch"
+  }
+}
+```
+
+The following example shows how to specify additional SDK search paths and a custom error message:
+
+```json
+{
+  "sdk": {
+    "version": "10.0.100",
+    "paths": [ ".dotnet", "$host$" ],
+    "errorMessage": "The required .NET SDK wasn't found. Please run ./install.sh to install it."
   }
 }
 ```

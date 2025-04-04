@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/45548
 
 # .NET CLI `--interactive` defaults to `true` in user scenarios
 
-Starting in .NET 10 Preview 3, the `--interactive` flag for the .NET CLI defaults to `true` in user-centric scenarios. This change aims to improve NuGet authentication and enable future CLI features that rely on interactivity. The behavior remains unchanged for CI/CD environments.
+The `--interactive` flag for the .NET CLI now defaults to `true` in user-centric scenarios. The behavior remains unchanged for CI/CD environments.
 
 ## Version introduced
 

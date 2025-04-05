@@ -20,6 +20,7 @@ If you need to install .NET Framework 1.1 through 3.5, see [Install .NET Framewo
 
 ## Unsupported Windows versions
 
+- [Windows Server 2019](on-windows-and-server.md#windows-server)
 - [Windows 8.1](on-windows-and-server.md#windows-81-8-7-vista-xp) and [Windows Server 2012 R2](on-windows-and-server.md#windows-server)
 - [Windows 8](on-windows-and-server.md#windows-81-8-7-vista-xp) and [Windows Server 2012](on-windows-and-server.md#windows-server)
 - [Windows 7 and Windows Server 2008 R2](/previous-versions/dotnet/framework/install/on-windows-7)

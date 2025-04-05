@@ -240,7 +240,10 @@ public class Example
 
         foreach( Type tParam in typeParameters )
         {
-            Console.WriteLine("\r\nType parameter {0}:", tParam.ToString());
+            Console.WriteLine($"""
+            
+            Type parameter {tParam.ToString()}:
+            """);
 
             foreach( Type c in tParam.GetGenericParameterConstraints() )
             {

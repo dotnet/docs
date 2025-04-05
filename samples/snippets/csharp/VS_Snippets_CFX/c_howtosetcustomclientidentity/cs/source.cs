@@ -101,14 +101,14 @@ namespace Microsoft.ServiceModel.Samples
                 double value1 = 100.00D;
                 double value2 = 15.99D;
                 double result = client.Add(value1, value2);
-                Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
+                Console.WriteLine($"Add({value1},{value2}) = {result}");
                 Console.WriteLine();
 
                 // Call the Subtract service operation.
                 value1 = 145.00D;
                 value2 = 76.54D;
                 result = client.Subtract(value1, value2);
-                Console.WriteLine("Subtract({0},{1}) = {2}", value1, value2, result);
+                Console.WriteLine($"Subtract({value1},{value2}) = {result}");
             }
         }
 
@@ -215,7 +215,7 @@ namespace Microsoft.ServiceModel.Samples
         public double Add(double n1, double n2)
         {
             double result = n1 + n2;
-            Console.WriteLine("Received Add({0},{1})", n1, n2);
+            Console.WriteLine($"Received Add({n1},{n2})");
             Console.WriteLine($"Return: {result}");
             return result;
         }
@@ -223,7 +223,7 @@ namespace Microsoft.ServiceModel.Samples
         public double Subtract(double n1, double n2)
         {
             double result = n1 - n2;
-            Console.WriteLine("Received Subtract({0},{1})", n1, n2);
+            Console.WriteLine($"Received Subtract({n1},{n2})");
             Console.WriteLine($"Return: {result}");
             return result;
         }
@@ -231,7 +231,7 @@ namespace Microsoft.ServiceModel.Samples
         public double Multiply(double n1, double n2)
         {
             double result = n1 * n2;
-            Console.WriteLine("Received Multiply({0},{1})", n1, n2);
+            Console.WriteLine($"Received Multiply({n1},{n2})");
             Console.WriteLine($"Return: {result}");
             return result;
         }
@@ -239,7 +239,7 @@ namespace Microsoft.ServiceModel.Samples
         public double Divide(double n1, double n2)
         {
             double result = n1 / n2;
-            Console.WriteLine("Received Divide({0},{1})", n1, n2);
+            Console.WriteLine($"Received Divide({n1},{n2})");
             Console.WriteLine($"Return: {result}");
             return result;
         }

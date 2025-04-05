@@ -48,7 +48,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                     Console.WriteLine("Addresses");
                     for (int i = 0; i < addresses.Length; i++)
                     {
-                        Console.WriteLine("{0}",addresses[i].ToString());
+                        Console.WriteLine($"{addresses[i].ToString()}");
                     }
                 }
             }

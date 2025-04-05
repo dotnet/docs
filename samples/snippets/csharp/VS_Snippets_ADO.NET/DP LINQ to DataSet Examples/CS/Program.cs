@@ -564,8 +564,7 @@ namespace LINQtoDataSetSamples
             Console.WriteLine("Orders that were made after 12/1/2002:");
             foreach (DataRow order in query)
             {
-                Console.WriteLine("OrderID {0} Order date: {1:d} ",
-                    order.Field<int>("SalesOrderID"), order.Field<DateTime>("OrderDate"));
+                Console.WriteLine($"OrderID {order.Field<int>("SalesOrderID")} Order date: {order.Field<DateTime>("OrderDate"):d} ");
                 foreach (DataRow orderDetail in order.GetChildRows("SalesOrderHeaderDetail"))
                 {
                     Console.WriteLine($"  Product ID: {orderDetail["ProductID"]} Unit Price {orderDetail["UnitPrice"]}");
@@ -665,10 +664,7 @@ namespace LINQtoDataSetSamples
             Console.WriteLine("First 5 contacts:");
             foreach (DataRow contact in first5Contacts)
             {
-                Console.WriteLine("Title = {0} \t FirstName = {1} \t Lastname = {2}",
-                    contact.Field<string>("Title"),
-                    contact.Field<string>("FirstName"),
-                    contact.Field<string>("Lastname"));
+                Console.WriteLine($"Title = {contact.Field<string>("Title")} \t FirstName = {contact.Field<string>("FirstName")} \t Lastname = {contact.Field<string>("Lastname")}");
             }
             //</SnippetTakeSimple>
         }
@@ -691,9 +687,7 @@ namespace LINQtoDataSetSamples
             Console.WriteLine("All but first 5 contacts:");
             foreach (DataRow contact in allButFirst5Contacts)
             {
-                Console.WriteLine("FirstName = {0} \tLastname = {1}",
-                    contact.Field<string>("FirstName"),
-                    contact.Field<string>("Lastname"));
+                Console.WriteLine($"FirstName = {contact.Field<string>("FirstName")} \tLastname = {contact.Field<string>("Lastname")}");
             }
             //</SnippetSkipSimple>
         }
@@ -891,10 +885,7 @@ namespace LINQtoDataSetSamples
 
             foreach (DataRow product in query)
             {
-                Console.WriteLine("Product ID: {0} Product Name: {1} List Price {2}",
-                    product.Field<int>("ProductID"),
-                    product.Field<string>("Name"),
-                    product.Field<Decimal>("ListPrice"));
+                Console.WriteLine($"Product ID: {product.Field<int>("ProductID")} Product Name: {product.Field<string>("Name")} List Price {product.Field<Decimal>("ListPrice")}");
             }
             //</SnippetThenByDescendingSimple>
         }
@@ -922,10 +913,7 @@ namespace LINQtoDataSetSamples
 
             foreach (DataRow product in query)
             {
-                Console.WriteLine("Product ID: {0} Product Name: {1} List Price {2}",
-                    product.Field<int>("ProductID"),
-                    product.Field<string>("Name"),
-                    product.Field<Decimal>("ListPrice"));
+                Console.WriteLine($"Product ID: {product.Field<int>("ProductID")} Product Name: {product.Field<string>("Name")} List Price {product.Field<Decimal>("ListPrice")}");
             }
             //</SnippetThenByDescendingComparer_MQ>
         }
@@ -1066,10 +1054,8 @@ namespace LINQtoDataSetSamples
                         Console.WriteLine($"\t\t Month= {monthGroup.Month}");
                         foreach (var order in monthGroup.Orders)
                         {
-                            Console.WriteLine("\t\t\t OrderID= {0} ",
-                                order.Field<int>("SalesOrderID"));
-                            Console.WriteLine("\t\t\t OrderDate= {0} ",
-                                order.Field<DateTime>("OrderDate"));
+                            Console.WriteLine($"\t\t\t OrderID= {order.Field<int>("SalesOrderID")} ");
+                            Console.WriteLine($"\t\t\t OrderDate= {order.Field<DateTime>("OrderDate")} ");
                         }
                     }
                 }
@@ -1420,8 +1406,7 @@ namespace LINQtoDataSetSamples
             DataRow startsWith = contacts.AsEnumerable().
                 First(contact => contact.Field<string>("EmailAddress").StartsWith("caroline"));
 
-            Console.WriteLine("An email address starting with 'caroline': {0}",
-                startsWith.Field<string>("EmailAddress"));
+            Console.WriteLine($"An email address starting with 'caroline': {startsWith.Field<string>("EmailAddress")}");
             //</SnippetFirstCondition_MQ>
         }
 
@@ -1805,9 +1790,7 @@ namespace LINQtoDataSetSamples
                 Console.WriteLine($"ContactID: {orderGroup.Category}");
                 foreach (var order in orderGroup.smallestTotalDue)
                 {
-                    Console.WriteLine("Minimum TotalDue {0} for SalesOrderID {1}: ",
-                        order.Field<decimal>("TotalDue"),
-                        order.Field<Int32>("SalesOrderID"));
+                    Console.WriteLine($"Minimum TotalDue {order.Field<decimal>("TotalDue")} for SalesOrderID {order.Field<Int32>("SalesOrderID")}: ");
                 }
                 Console.WriteLine("");
             }
@@ -1893,9 +1876,7 @@ namespace LINQtoDataSetSamples
                 Console.WriteLine($"ContactID: {orderGroup.Category}");
                 foreach (var order in orderGroup.CheapestProducts)
                 {
-                    Console.WriteLine("Average total due for SalesOrderID {1} is: {0}",
-                        order.Field<decimal>("TotalDue"),
-                        order.Field<Int32>("SalesOrderID"));
+                    Console.WriteLine($"Average total due for SalesOrderID {order.Field<Int32>("SalesOrderID")} is: {order.Field<decimal>("TotalDue")}");
                 }
                 Console.WriteLine("");
             }
@@ -1981,9 +1962,7 @@ namespace LINQtoDataSetSamples
                 Console.WriteLine($"ContactID: {orderGroup.Category}");
                 foreach (var order in orderGroup.CheapestProducts)
                 {
-                    Console.WriteLine("MaxTotalDue {0} for SalesOrderID {1}: ",
-                        order.Field<decimal>("TotalDue"),
-                        order.Field<Int32>("SalesOrderID"));
+                    Console.WriteLine($"MaxTotalDue {order.Field<decimal>("TotalDue")} for SalesOrderID {order.Field<Int32>("SalesOrderID")}: ");
                 }
             }
             //</SnippetMaxElements_MQ>
@@ -2505,12 +2484,8 @@ namespace LINQtoDataSetSamples
                 Console.WriteLine($"{productGroup.Category}:");
                 foreach (var product in productGroup.Products)
                 {
-                    Console.WriteLine("  Name: {0} Color: {1}",
-                        product.Field<string>("Name"),
-                        product.Field<string>("Color"));
-                    Console.WriteLine("  List price: {0} Size: {1}",
-                        product.Field<Decimal>("ListPrice"),
-                        product.Field<string>("Size"));
+                    Console.WriteLine($"  Name: {product.Field<string>("Name")} Color: {product.Field<string>("Color")}");
+                    Console.WriteLine($"  List price: {product.Field<Decimal>("ListPrice")} Size: {product.Field<string>("Size")}");
                 }
             }
         }

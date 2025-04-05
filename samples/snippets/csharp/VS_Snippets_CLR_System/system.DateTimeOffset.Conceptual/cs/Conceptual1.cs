@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.ObjectModel;
 
@@ -25,8 +25,7 @@ public class TimeOffsets
         TimeSpan offset = offsetTime.Offset;
         ReadOnlyCollection<TimeZoneInfo> timeZones;
 
-        Console.WriteLine("{0} could belong to the following time zones:",
-                          offsetTime.ToString());
+        Console.WriteLine($"{offsetTime.ToString()} could belong to the following time zones:");
         // Get all time zones defined on local system
         timeZones = TimeZoneInfo.GetSystemTimeZones();
         // Iterate time zones

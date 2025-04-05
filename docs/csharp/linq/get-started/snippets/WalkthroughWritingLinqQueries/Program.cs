@@ -1,4 +1,4 @@
-﻿// <CreateSequence>
+// <CreateSequence>
 using WalkthroughWritingLinqQueries;
 
 // Create a data source by using a collection initializer.
@@ -237,7 +237,7 @@ void ComputeAverage()
         select totalScore;
 
     double averageScore = studentQuery.Average();
-    Console.WriteLine("Class average score = {0}", averageScore);
+    Console.WriteLine($"Class average score = {averageScore}");
 
     // Output:
     // Class average score = 334.166666666667

@@ -172,7 +172,7 @@ The F# updates in .NET 10 include several new features and improvements across t
 - **FSharp.Compiler.Service**:
   - General improvements and bug fixes in the compiler implementation.
 
-For more information, see the [F# release notes](https://fsharp.github.io/fsharp-compiler-docs/release-notes/).
+For more information, see the [F# release notes](https://fsharp.github.io/fsharp-compiler-docs/release-notes/About.html).
 
 ## Visual Basic
 
@@ -183,7 +183,7 @@ The Visual Basic updates in .NET 10 include the following features and enhanceme
 
 These updates ensure that Visual Basic can consume updated features in C# and the runtime, improving compatibility and performance.
 
-For more information, see [What's new in Visual Basic](https://learn.microsoft.com/dotnet/visual-basic/whats-new/).
+For more information, see [What's new in Visual Basic](../../../visual-basic/whats-new/index.md).
 
 ## Windows Forms
 
@@ -196,7 +196,7 @@ Changes in Windows Forms for .NET 10 include:
   - Unified Clipboard code with WPF to enhance consistency and reliability.
 
 - **Ported UITypeEditors**:
-  - Ported several `UITypeEditors` from the .NET Framework, including `ToolStripCollectionEditor` and editors related to the `DataGridView` control.
+  - Ported several `UITypeEditors` from .NET Framework, including `ToolStripCollectionEditor` and editors related to the `DataGridView` control.
 
 - **Quality enhancements**:
   - Expanded unit test coverage and addressed various bug fixes to improve stability and performance.

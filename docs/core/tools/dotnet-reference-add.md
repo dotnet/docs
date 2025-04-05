@@ -1,28 +1,31 @@
 ---
-title: dotnet add reference command
-description: The dotnet add reference command provides a convenient option to add project-to-project references.
-ms.date: 03/21/2023
+title: dotnet reference add command
+description: The dotnet reference add command provides a convenient option to add project-to-project references.
+ms.date: 04/02/2025
 ---
-# dotnet add reference
+# dotnet reference add
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 ## Name
 
-`dotnet add reference` - Adds project-to-project (P2P) references.
+`dotnet reference add` - Adds project-to-project (P2P) references.
+
+> [!NOTE]
+> If you're using .NET 9 SDK or earlier, use the "verb first" form (`dotnet add reference`) instead. The "noun first" form was introduced in .NET 10. For more information, see [More consistent command order](../whats-new/dotnet-10/sdk.md#more-consistent-command-order).
 
 ## Synopsis
 
 ```dotnetcli
-dotnet add [<PROJECT>] reference [-f|--framework <FRAMEWORK>]
-     [--interactive] <PROJECT_REFERENCES>
+dotnet reference add reference [-f|--framework <FRAMEWORK>]
+     [--interactive] <PROJECT_REFERENCES> [--project <PROJECT>]
 
-dotnet add reference -h|--help
+dotnet reference add -h|--help
 ```
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the `<ProjectReference>` elements are added to the project file.
+The `dotnet reference add` command provides a convenient option to add project references to a project. After running the command, the `<ProjectReference>` elements are added to the project file.
 
 ```xml
 <ItemGroup>
@@ -70,7 +73,7 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 - Add a project reference:
 
   ```dotnetcli
-  dotnet add app/app.csproj reference lib/lib.csproj
+  dotnet reference add lib/lib.csproj --project app/app.csproj
   ```
 
 - Add a compatible .NET language (for example, F#) project reference, which works in both directions:
@@ -82,11 +85,11 @@ There's no CLI command to add a reference to an assembly that isn't in a project
 - Add multiple project references to the project in the current directory:
 
   ```dotnetcli
-  dotnet add reference lib1/lib1.csproj lib2/lib2.csproj
+  dotnet reference add lib1/lib1.csproj lib2/lib2.csproj
   ```
 
 - Add multiple project references using a globbing pattern on Linux/Unix:
 
   ```dotnetcli
-  dotnet add app/app.csproj reference **/*.csproj
+  dotnet reference add **/*.csproj --project app/app.csproj
   ```

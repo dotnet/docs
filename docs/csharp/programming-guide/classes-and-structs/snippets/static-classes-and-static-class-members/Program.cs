@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 public static class TemperatureConverter
 {
     public static double CelsiusToFahrenheit(string temperatureCelsius)
@@ -41,13 +41,13 @@ class TestTemperatureConverter
             case "1":
                 Console.Write("Please enter the Celsius temperature: ");
                 F = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine() ?? "0");
-                Console.WriteLine("Temperature in Fahrenheit: {0:F2}", F);
+                Console.WriteLine($"Temperature in Fahrenheit: {F:F2}");
                 break;
 
             case "2":
                 Console.Write("Please enter the Fahrenheit temperature: ");
                 C = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine() ?? "0");
-                Console.WriteLine("Temperature in Celsius: {0:F2}", C);
+                Console.WriteLine($"Temperature in Celsius: {C:F2}");
                 break;
 
             default:

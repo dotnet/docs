@@ -73,7 +73,7 @@ dotnet new xunit -n XUnit.Coverlet.Collector
 dotnet new xunit -n XUnit.Coverlet.MSBuild
 ```
 
-Both of the newly created xUnit test projects need to add a project reference of the *Numbers* class library. This is so that the test projects have access to the *PrimeService* for testing. From the command prompt, use the [`dotnet add`](../tools/dotnet-add-reference.md) command:
+Both of the newly created xUnit test projects need to add a project reference of the *Numbers* class library. This is so that the test projects have access to the *PrimeService* for testing. From the command prompt, use the [`dotnet add`](../tools/dotnet-reference-add.md) command:
 
 ```dotnetcli
 dotnet add XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj reference Numbers\Numbers.csproj
@@ -83,10 +83,10 @@ dotnet add XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj reference Nu
 dotnet add XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj reference Numbers\Numbers.csproj
 ```
 
-The *MSBuild* project is named appropriately, as it will depend on the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild) NuGet package. Add this package dependency by running the [`dotnet add package`](../tools/dotnet-add-package.md) command:
+The *MSBuild* project is named appropriately, as it will depend on the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild) NuGet package. Add this package dependency by running the [`dotnet package add`](../tools/dotnet-package-add.md) command:
 
 ```dotnetcli
-cd XUnit.Coverlet.MSBuild && dotnet add package coverlet.msbuild && cd ..
+cd XUnit.Coverlet.MSBuild && dotnet package add coverlet.msbuild && cd ..
 ```
 
 The previous command changed directories effectively scoping to the *MSBuild* test project, then added the NuGet package. When that was done, it then changed directories, stepping up one level.

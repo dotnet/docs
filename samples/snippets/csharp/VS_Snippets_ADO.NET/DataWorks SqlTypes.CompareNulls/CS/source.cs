@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.SqlTypes;
 
 namespace SqlNullsCS;
@@ -19,12 +19,12 @@ static class Program
 
         // Compare nulls using static/shared SqlString.Equals.
         Console.WriteLine("SqlString.Equals shared/static method:");
-        Console.WriteLine("  Two nulls={0}", SqlStringEquals(a, b));
+        Console.WriteLine($"  Two nulls={SqlStringEquals(a, b)}");
 
         // Compare nulls using instance method String.Equals.
         Console.WriteLine();
         Console.WriteLine("String.Equals instance method:");
-        Console.WriteLine("  Two nulls={0}", StringEquals(a, b));
+        Console.WriteLine($"  Two nulls={StringEquals(a, b)}");
 
         // Make them empty strings.
         a = "";
@@ -34,11 +34,11 @@ static class Program
         // the instance Equals methods evaluate to true.
         Console.WriteLine();
         Console.WriteLine("SqlString.Equals shared/static method:");
-        Console.WriteLine("  Two empty strings={0}", SqlStringEquals(a, b));
+        Console.WriteLine($"  Two empty strings={SqlStringEquals(a, b)}");
 
         Console.WriteLine();
         Console.WriteLine("String.Equals instance method:");
-        Console.WriteLine("  Two empty strings={0}", StringEquals(a, b));
+        Console.WriteLine($"  Two empty strings={StringEquals(a, b)}");
     }
 
     static string SqlStringEquals(SqlString string1, SqlString string2)

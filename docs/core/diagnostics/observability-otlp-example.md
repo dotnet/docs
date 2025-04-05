@@ -98,7 +98,7 @@ mcr.microsoft.com/dotnet/aspire-dashboard:latest
 
 Data displayed in the dashboard can be sensitive. By default, the dashboard is secured with authentication that requires a token to login. The token is displayed in the resulting output when running the container.
 
-[![Aspire Dashboard](./media/aspire-dashboard-auth.png)]
+[![Aspire Dashboard](./media/aspire-dashboard-auth.png)](./media/aspire-dashboard-auth.png#lightbox)
 
 Copy the url shown, and replace `0.0.0.0` with `localhost`, eg `http://localhost:18888/login?t=123456780abcdef123456780` and open that in your browser, or you can also paste the key after `/login?t=` when the login dialog is shown. The token will change each time you start the container.
 

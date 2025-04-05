@@ -43,11 +43,11 @@ items:
           - name: xUnit
             items:
               - name: C# unit testing
-                href: ../../core/testing/unit-testing-with-dotnet-test.md
+                href: ../../core/testing/unit-testing-csharp-with-xunit.md
               - name: F# unit testing
-                href: ../../core/testing/unit-testing-fsharp-with-dotnet-test.md
+                href: ../../core/testing/unit-testing-fsharp-with-xunit.md
               - name: VB unit testing
-                href: ../../core/testing/unit-testing-visual-basic-with-dotnet-test.md
+                href: ../../core/testing/unit-testing-visual-basic-with-xunit.md
               - name: Microsoft.Testing.Platform support in xUnit.net v3
                 href: https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
               - name: Organize a project and test with xUnit
@@ -60,7 +60,7 @@ items:
           - name: NUnit
             items:
               - name: C# unit testing
-                href: ../../core/testing/unit-testing-with-nunit.md
+                href: ../../core/testing/unit-testing-csharp-with-nunit.md
               - name: F# unit testing
                 href: ../../core/testing/unit-testing-fsharp-with-nunit.md
               - name: VB unit testing
@@ -88,7 +88,7 @@ items:
                   - name: Examples
                     items:
                     - name: C# example
-                      href: ../../core/testing/unit-testing-with-mstest.md
+                      href: ../../core/testing/unit-testing-csharp-with-mstest.md
                     - name: F# example
                       href: ../../core/testing/unit-testing-fsharp-with-mstest.md
                     - name: VB example
@@ -209,7 +209,7 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0041.md
       - name: Test platforms
         items:
-          - name: Microsoft Testing Platform
+          - name: Microsoft.Testing.Platform
             items:
               - name: Overview
                 href: ../../core/testing/microsoft-testing-platform-intro.md
@@ -247,7 +247,7 @@ items:
                 href: ../../core/testing/microsoft-testing-platform-exit-codes.md
               - name: Integration with dotnet test
                 href: ../../core/testing/microsoft-testing-platform-integration-dotnet-test.md
-              - name: Testing platform Architecture
+              - name: Microsoft.Testing.Platform Architecture
                 items:
                   - name: Overview
                     href: ../../core/testing/microsoft-testing-platform-architecture.md
@@ -257,14 +257,16 @@ items:
                     href: ../../core/testing/microsoft-testing-platform-architecture-extensions.md
                   - name: Services
                     href: ../../core/testing/microsoft-testing-platform-architecture-services.md
+          - name: VSTest
+            href: https://github.com/microsoft/vstest
+      - name: Testing with 'dotnet test'
+        href: ../../core/testing/unit-testing-with-dotnet-test.md
       - name: Run selective unit tests
         href: ../../core/testing/selective-unit-tests.md
       - name: Order unit tests
         href: ../../core/testing/order-unit-tests.md
       - name: Unit test code coverage
         href: ../../core/testing/unit-testing-code-coverage.md
-      - name: Unit test published output
-        href: ../../core/testing/unit-testing-published-output.md
       - name: Live unit test with Visual Studio
         href: /visualstudio/test/live-unit-testing-start?toc=/dotnet/navigate/devops-testing/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Deployment models

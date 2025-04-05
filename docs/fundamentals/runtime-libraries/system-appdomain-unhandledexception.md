@@ -24,7 +24,7 @@ Starting with .NET Framework 4, this event is not raised for exceptions that cor
 
 To register an event handler for this event, you must have the required permissions, or a <xref:System.Security.SecurityException> is thrown.
 
-For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).
+For more information about handling events, see [Handling and Raising Events](../../standard/events/index.md).
 
 ## Other events for unhandled exceptions
 

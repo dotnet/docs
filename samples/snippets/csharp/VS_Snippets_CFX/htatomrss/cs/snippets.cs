@@ -24,7 +24,7 @@ namespace htAtomRss
             foreach (SyndicationItem item in feed.Items)
             {
                 Console.WriteLine($"Title: {item.Title.Text}");
-                Console.WriteLine("Content: {0}", ((TextSyndicationContent)item.Content).Text);
+                Console.WriteLine($"Content: {((TextSyndicationContent)item.Content).Text}");
             }
             // </Snippet11>
         }

@@ -86,6 +86,22 @@ The following table shows the possible values for the `rollForward` key:
 | `latestMajor` | Uses the highest installed .NET SDK with a version that's greater than or equal to the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. An exact match is required. |
 
+#### paths
+
+- Type: Array of `string`
+- Available since: .NET 10 Preview 3 SDK.
+
+Specifies additional locations that should be considered when searching for a compatible .NET SDK. Paths can be absolute or relative to the location of the *global.json* file. The special value `$host$` represents the location corresponding to the running `dotnet` executable.
+
+These paths are searched in the order they're defined and the first [matching](#matching-rules) SDK is used.
+
+#### errorMessage
+
+- Type: `string`
+- Available since: .NET 10 Preview 3 SDK.
+
+Specifies a custom error message displayed when the SDK resolver can't find a compatible .NET SDK.
+
 ### msbuild-sdks
 
 Type: `object`
@@ -163,6 +179,18 @@ The following example shows how to use the highest patch version installed of a 
 }
 ```
 
+The following example shows how to specify additional SDK search paths and a custom error message:
+
+```json
+{
+  "sdk": {
+    "version": "10.0.100",
+    "paths": [ ".dotnet", "$host$" ],
+    "errorMessage": "The required .NET SDK wasn't found. Please run ./install.sh to install it."
+  }
+}
+```
+
 ## global.json and the .NET CLI
 
 To set an SDK version in the *global.json* file, it's helpful to know which SDK versions are installed on your machine. For information on how to do that, see [How to check that .NET is already installed](../install/how-to-detect-installed-versions.md#check-sdk-versions).
@@ -188,7 +216,7 @@ The following rules apply when determining which version of the SDK to use:
 - If a *global.json* file is found that doesn't specify an SDK version but it specifies an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on the value of `allowPrerelease`. `true` indicates prerelease versions are considered; `false` indicates that only release versions are considered.
 - If a *global.json* file is found and it specifies an SDK version:
 
-  - If no `rollForward` value is set, it uses `latestPatch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
+  - If no `rollForward` value is set, it uses `patch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
   - Whether prerelease versions are considered and what's the default behavior when `allowPrerelease` isn't set is described in the [allowPrerelease](#allowprerelease) section.
 
 ## Troubleshoot build warnings

@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 
 public class IntervalArithmetic
@@ -18,9 +18,7 @@ public class IntervalArithmetic
             // Add two and a half hours
             DateTimeOffset centralTime2 = centralTime1.Add(twoAndAHalfHours);
             // Display result
-            Console.WriteLine("{0} + {1} hours = {2}", centralTime1,
-                                                       twoAndAHalfHours.ToString(),
-                                                       centralTime2);
+            Console.WriteLine($"{centralTime1} + {twoAndAHalfHours.ToString()} hours = {centralTime2}");
         }
         catch (TimeZoneNotFoundException)
         {

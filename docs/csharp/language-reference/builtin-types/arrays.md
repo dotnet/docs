@@ -85,7 +85,7 @@ You can pass an initialized single-dimensional array to a method. In the followi
 
 ## Multidimensional arrays
 
-Arrays can have more than one dimension. For example, the following declarations create four arrays. Two arrays have have two dimensions. Two arrays have three dimensions. The first two declarations declare the length of each dimension, but don't initialize the values of the array. The second two declarations use an initializer to set the values of each element in the multidimensional array.
+Arrays can have more than one dimension. For example, the following declarations create four arrays. Two arrays have two dimensions. Two arrays have three dimensions. The first two declarations declare the length of each dimension, but don't initialize the values of the array. The second two declarations use an initializer to set the values of each element in the multidimensional array.
 
 :::code language="csharp" source="./snippets/shared/Arrays.cs" id="MultiDimensionalArrayDeclaration":::
 

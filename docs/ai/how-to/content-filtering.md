@@ -32,7 +32,7 @@ To use the sample code in this article, you need to create and assign a content 
 1. Add the [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) NuGet package to your project.
 
     ```dotnetcli
-    dotnet add package Azure.AI.OpenAI
+    dotnet package add Azure.AI.OpenAI
     ```
 
 1. Create a simple chat completion flow in your .NET app using the `AzureOpenAiClient`. Replace the `YOUR_MODEL_ENDPOINT` and `YOUR_MODEL_DEPLOYMENT_NAME` values with your own.
@@ -49,4 +49,4 @@ The response was filtered due to the prompt triggering Azure OpenAI's content ma
 
 * [Create and assign a content filter](/azure/ai-services/openai/how-to/content-filters)
 * [Content Filtering concepts](/azure/ai-services/openai/concepts/content-filter)
-* [Create a chat app](/dotnet/ai/quickstarts/prompt-model)
+* [Create a chat app](../quickstarts/prompt-model.md)

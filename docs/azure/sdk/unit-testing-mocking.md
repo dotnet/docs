@@ -265,4 +265,4 @@ Here's how it works:
 
 * [Dependency injection in .NET](../../core/extensions/dependency-injection.md)
 * [Unit testing best practices](../../core/testing/unit-testing-best-practices.md)
-* [Unit testing C# in .NET using dotnet test and xUnit](../../core/testing/unit-testing-with-dotnet-test.md)
+* [Unit testing C# in .NET using dotnet test and xUnit](../../core/testing/unit-testing-csharp-with-xunit.md)

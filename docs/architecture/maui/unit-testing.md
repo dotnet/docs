@@ -62,14 +62,14 @@ Testing models and view models from MVVM applications is identical to testing an
 
 Don't be tempted to make a unit test exercise more than one aspect of the unit's behavior. Doing so leads to tests that are difficult to read and update. It can also lead to confusion when interpreting a failure.
 
-The eShop multi-platform app uses [MSTest](../../core/testing/unit-testing-with-mstest.md) to perform unit testing, which supports two different types of unit tests:
+The eShop multi-platform app uses [MSTest](../../core/testing/unit-testing-csharp-with-mstest.md) to perform unit testing, which supports two different types of unit tests:
 
 | Testing Type    | Attribute    | Description                                                  |
 |-----------------|--------------|--------------------------------------------------------------|
 | TestMethod      | `TestMethod` | Defines the actual test method to run.                       |
 | DataSource      | `DataSource` | Tests that are only true for a particular set of data.       |
 
-The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-with-nunit.md) and [xUnit](../../core/testing/unit-testing-with-dotnet-test.md).
+The unit tests included with the eShop multi-platform app are TestMethod, so each unit test method is decorated with the `TestMethod` attribute. In addition to MSTest there are several other testing frameworks available including [NUnit](../../core/testing/unit-testing-csharp-with-nunit.md) and [xUnit](../../core/testing/unit-testing-csharp-with-xunit.md).
 
 ## Testing asynchronous functionality
 

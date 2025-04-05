@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 
 namespace Coding_Conventions_Examples
 {
@@ -32,7 +32,7 @@ namespace Coding_Conventions_Examples
 
         public static void DelMethod(string str)
         {
-            Console.WriteLine("DelMethod argument: {0}", str);
+            Console.WriteLine($"DelMethod argument: {str}");
         }
         //</snippet14b>
 
@@ -174,7 +174,7 @@ namespace Coding_Conventions_Examples
 
             if ((divisor != 0) && (dividend / divisor) is var result)
             {
-                Console.WriteLine("Quotient: {0}", result);
+                Console.WriteLine($"Quotient: {result}");
             }
             else
             {

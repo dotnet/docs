@@ -12,15 +12,15 @@ In this article, you will find answers to the most common questions about .NET O
 
 ### Can I freely use Orleans in my project?
 
-Absolutely. The source code has been released under the [MIT license](https://github.com/dotnet/orleans/blob/main/LICENSE). NuGet packages are published on [nuget.org](https://www.nuget.org/profiles/Orleans).
+Absolutely. The source code is licensed under the [MIT license](https://github.com/dotnet/orleans/blob/main/LICENSE). NuGet packages are published on [nuget.org](https://www.nuget.org/profiles/Orleans).
 
 ### Is Orleans production ready? I heard it's a research project.
 
-Orleans, indeed, initially started as a research project within Microsoft Research. It later grew into a product and has been used in production within Microsoft since 2011, and by other companies, after it was publicly released in 2015. Orleans is production-ready and powers many highly available systems and cloud services.
+Orleans started as a research project within Microsoft Research. It later grew into a production-ready product and has been used in production within Microsoft (since 2011) and by other companies (since it was publicly released in 2015). Orleans powers many highly available systems and cloud services.
 
 ### Does Microsoft support Orleans?
 
-Source code of Orleans has been released under an MIT license on [GitHub](https://github.com/dotnet/orleans). Microsoft continues to invest in Orleans and accepts community contributions to the codebase.
+Microsoft released the source code of Orleans under an MIT license on [GitHub](https://github.com/dotnet/orleans). Microsoft continues to invest in Orleans and accepts community contributions to the codebase.
 
 ## Positioning
 

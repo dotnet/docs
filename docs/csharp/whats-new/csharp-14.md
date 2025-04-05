@@ -97,7 +97,7 @@ Partial constructors and partial events must include exactly one *defining decla
 
 Only the implementing declaration of a partial constructor can include a constructor initializer: `this()` or `base()`. Only one partial type declaration can include the primary constructor syntax.
 
-The implementing declaration of a partial event must include `get` and `remove` accessors. The defining declaration declares a field-like event.
+The implementing declaration of a partial event must include `add` and `remove` accessors. The defining declaration declares a field-like event.
 
 ## See also
 

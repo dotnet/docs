@@ -118,7 +118,7 @@ In the following table, ❌ represents an unsupported version of Windows Server 
 
 | Windows Server               | .NET Framework included | Latest .NET Framework supported |
 |------------------------------|-------------------------|---------------------------------|
-| ✔️ Windows Server 2025          | 4.8                     | 4.8.1                           |
+| ✔️ Windows Server 2025          | 4.8.1                   | 4.8.1                           |
 | ✔️ Windows Server 2022          | 4.8                     | 4.8.1                           |
 | ❌ Windows Server 2019          | 4.7.2                   | 4.8                             |
 | ❌ Windows Server, version 1809 | 4.7.2                   | 4.8                             |
@@ -133,7 +133,7 @@ In the following table, ❌ represents an unsupported version of Windows Server 
 
 ### Install .NET Framework on Windows Server
 
-The latest version of .NET Framework is 4.8.1, which can be installed on Windows Server 2025 and Windows Server 2022.
+The latest version of .NET Framework is 4.8.1, which is already installed on Windows Server 2025 and can be installed on Windows Server 2022.
 
 > [!div class="button"]
 > [Download .NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)

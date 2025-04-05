@@ -113,7 +113,7 @@ In this example, grains *A* and *B* can call each other simultaneously without a
 
 The <xref:Orleans.Grain> implementation classes may be marked with the <xref:Orleans.Concurrency.ReentrantAttribute> to indicate that different requests may be freely interleaved.
 
-In other words, a re-entrant activation may start executing another request while a previous request hasn't finished processing. Execution is still limited to a single thread, so the activation is still executing one turn at a time, and each turn is executing on behalf of only one of the activation's requests.
+In other words, a re-entrant activation might start another request while a previous request hasn't finished processing. Execution is still limited to a single thread, so the activation is still executing one turn at a time, and each turn is executing on behalf of only one of the activation's requests.
 
 Re-entrant grain code never runs multiple pieces of grain code in parallel (execution of grain code is always single-threaded), but re-entrant grains **may** see the execution of code for different requests interleaving. That is, the continuation turns from different requests may interleave.
 

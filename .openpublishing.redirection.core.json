@@ -766,56 +766,12 @@
             "redirect_url": "/dotnet/core/install/linux-sles"
         },
         {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1604.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1804.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1904.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-1910.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-package-manager-ubuntu-2004.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu"
-        },
-        {
             "source_path_from_root": "/docs/core/install/linux-package-managers.md",
             "redirect_url": "/dotnet/core/install/linux"
         },
         {
-            "source_path_from_root": "/docs/core/install/linux-ubuntu-1604.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-1604"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-ubuntu-1804.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-1804"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-ubuntu-2004.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2004"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-ubuntu-2204.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2204"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-ubuntu-2210.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-other"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-ubuntu-2304.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2304"
-        },
-        {
-            "source_path_from_root": "/docs/core/install/linux-ubuntu-2310.md",
-            "redirect_url": "/dotnet/core/install/linux-ubuntu-install?pivots=os-linux-ubuntu-2310"
+            "source_path_from_root": "/docs/core/install/linux-ubuntu.md",
+            "redirect_url": "/dotnet/core/install/linux-ubuntu-install"
         },
         {
             "source_path_from_root": "/docs/core/install/runtime.md",
@@ -922,12 +878,12 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-package.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-add-package",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-add",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-add-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-add-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-add",
             "redirect_document_id": true
         },
         {
@@ -945,7 +901,7 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-list-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-list-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-list",
             "redirect_document_id": true
         },
         {
@@ -987,12 +943,12 @@
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-package.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-remove-package",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-remove",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/preview3/tools/dotnet-remove-reference.md",
-            "redirect_url": "/dotnet/core/tools/dotnet-remove-reference",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-remove",
             "redirect_document_id": true
         },
         {
@@ -1100,7 +1056,7 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/using-mstest-on-windows.md",
-            "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-mstest",
             "redirect_document_id": true
         },
         {
@@ -1155,17 +1111,17 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-exit-codes.md",
-            "redirect_url": "/dotnet/core/testing/unit-testing-platform-exit-codes",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-exit-codes",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-extensions.md",
-            "redirect_url": "/dotnet/core/testing/unit-testing-platform-extensions",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-extensions",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-integrations.md",
-            "redirect_url": "/dotnet/core/testing/unit-testing-platform-integration-dotnet-test",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-integration-dotnet-test",
             "redirect_document_id": true
         },
         {
@@ -1174,12 +1130,12 @@
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-telemetry.md",
-            "redirect_url": "/dotnet/core/testing/unit-testing-platform-telemetry",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-telemetry",
             "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-mstest-runner-vs-vstest.md",
-            "redirect_url": "/dotnet/core/testing/unit-testing-platform-vs-vstest",
+            "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-vs-vstest",
             "redirect_document_id": true
         },
         {
@@ -1194,6 +1150,30 @@
         {
             "source_path_from_root": "/docs/core/tools/csproj.md",
             "redirect_url": "/dotnet/core/project-sdk/msbuild-props"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-add-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-add"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-list-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-list"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-remove-package.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-package-remove"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-add-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-add"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-list-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-list"
+        },
+        {
+            "source_path_from_root": "/docs/core/tools/dotnet-remove-reference.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-reference-remove"
         },
         {
             "source_path_from_root": "/docs/core/tools/extensibility.md",
@@ -1359,6 +1339,10 @@
             "redirect_url": "/dotnet/core/containers/sdk-publish"
         },
         {
+            "source_path_from_root": "/docs/core/testing/unit-testing-fsharp-with-dotnet-test.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-fsharp-with-xunit"
+        },
+        {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-architecture-capabilities.md",
             "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-architecture-capabilities"
         },
@@ -1445,6 +1429,26 @@
         {
             "source_path_from_root": "/docs/core/testing/unit-testing-platform-vs-vstest.md",
             "redirect_url": "/dotnet/core/testing/microsoft-testing-platform-vs-vstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-published-output.md",
+            "redirect_url": "/dotnet/core/tools/dotnet-vstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-visual-basic-with-dotnet-test.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-visual-basic-with-xunit"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-mstest.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-mstest"
+        },
+        {
+            "source_path_from_root": "/docs/core/testing/unit-testing-with-nunit.md",
+            "redirect_url": "/dotnet/core/testing/unit-testing-csharp-with-nunit"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/sdk/9.0/nugetaudit-transitive-packages.md",
+            "redirect_url": "/dotnet/core/compatibility/sdk/10.0/nugetaudit-transitive-packages"
         }
     ]
 }

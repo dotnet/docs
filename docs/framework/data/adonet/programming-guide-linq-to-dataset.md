@@ -53,4 +53,4 @@ This section provides conceptual information and examples for programming with L
 ## See also
 
 - [LINQ and ADO.NET](linq-and-ado-net.md)
-- [Language Integrated Query (LINQ)](/dotnet/csharp/linq/)
+- [Language Integrated Query (LINQ)](../../../csharp/linq/index.md)

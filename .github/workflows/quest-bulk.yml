@@ -1,8 +1,8 @@
 name: "bulk quest import"
 on:
   schedule:
-    - cron: '0 10 * * *' # UTC time, that's 5:00 am EST, 2:00 am PST.
-    - cron: '0 9 6 * *'  # This is the morning of the 6th.
+    - cron: '0 7 1-5,7-31 * *' # UTC time, that's 2:00 am EST, 11:00 pm PST.
+    - cron: '0 7 6 * *'  # This is the morning of the 6th.
 
   workflow_dispatch:
     inputs:
@@ -28,7 +28,7 @@ jobs:
     if: ${{ github.repository_owner == 'dotnet' }}
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+        uses: step-security/harden-runner@c6295a65d1254861815972266d5933fd6e532bdf # v2.11.1
         with:
           egress-policy: audit
 
@@ -58,4 +58,4 @@ jobs:
           org: ${{ github.repository_owner }}
           repo: ${{ github.repository }}
           issue: '-1'
-          duration: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.duration || github.event.schedule == '0 9 6 * *' && -1 || 5 }}
+          duration: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.duration || github.event.schedule == '0 7 6 * *' && -1 || 5 }}

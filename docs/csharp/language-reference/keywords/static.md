@@ -17,7 +17,11 @@ Use the `static` modifier to declare a static member, which belongs to the type 
 
 You can add the `static` modifier to a [local function](../../programming-guide/classes-and-structs/local-functions.md). A static local function can't capture local variables or instance state.
 
+[!code-csharp[csrefKeywordsModifiers#28](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#28)]
+
 You can add the `static` modifier to a [lambda expression](../operators/lambda-expressions.md) or [anonymous method](../operators/delegate-operator.md). A static lambda or anonymous method can't capture local variables or instance state.
+
+[!code-csharp[csrefKeywordsModifiers#29](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#29)]
 
 ## Example - static class
 

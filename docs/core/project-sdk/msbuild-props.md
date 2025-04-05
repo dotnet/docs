@@ -678,6 +678,9 @@ The following MSBuild properties are documented in this section:
 - [GenerateRequiresPreviewFeaturesAttribute](#generaterequirespreviewfeaturesattribute)
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 - [DisableRuntimeMarshalling](#disableruntimemarshalling)
+- [BuildWithNetFrameworkHostedCompiler](#buildwithnetframeworkhostedcompiler)
+- [RoslynUseSdkCompiler](#roslynusesdkcompiler)
+- [RoslynUseMSBuildCompiler](#roslynusemsbuildcompiler)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
@@ -841,6 +844,27 @@ The `DisableRuntimeMarshalling` property enables you to specify that you would l
     <DisableRuntimeMarshalling>True</DisableRuntimeMarshalling>
 </PropertyGroup>
 ```
+
+### BuildWithNetFrameworkHostedCompiler
+
+When using .NET Framework MSBuild, `BuildWithNetFrameworkHostedCompiler=true` ensures that
+a C#/VB compiler corresponding to the current SDK version is used
+instead of the default version that ships with MSBuild.
+This uses the .NET Framework version of the compiler unlike `RoslynUseSdkCompiler`.
+In some cases, this happens automatically when it is detected that MSBuild and SDK versions are different,
+and then `BuildWithNetFrameworkHostedCompiler=false` can be used to opt out of this behavior.
+
+### RoslynUseSdkCompiler
+
+When using .NET Framework MSBuild, `RoslynUseSdkCompiler=true` ensures that
+a C#/VB compiler corresponding to the current SDK version is used
+instead of the default version that ships with MSBuild.
+This uses the .NET Core version of the compiler unlike `BuildWithNetFrameworkHostedCompiler`.
+In most cases, `RoslynUseSdkCompiler=true` is the default setting.
+
+### RoslynUseMSBuildCompiler
+
+`RoslynUseMSBuildCompiler=true` can be used to opt out of an implicit `RoslynUseSdkCompiler=true`.
 
 ## Default item inclusion properties
 

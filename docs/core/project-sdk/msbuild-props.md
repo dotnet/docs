@@ -850,16 +850,16 @@ The `DisableRuntimeMarshalling` property enables you to specify that you would l
 When using .NET Framework MSBuild, `BuildWithNetFrameworkHostedCompiler=true` ensures that
 a C#/VB compiler corresponding to the current SDK version is used
 instead of the default version that ships with MSBuild.
-This uses the .NET Framework version of the compiler unlike `RoslynUseSdkCompiler`.
-In some cases, this happens automatically when it is detected that MSBuild and SDK versions are different,
-and then `BuildWithNetFrameworkHostedCompiler=false` can be used to opt out of this behavior.
+When this property is set to `true`, the .NET Framework version of the compiler is used, unlike `RoslynUseSdkCompiler`.
+In some cases, this behavior happens automatically when it is detected that MSBuild and SDK versions are different,
+and then you can set `BuildWithNetFrameworkHostedCompiler=false` to opt out of the behavior.
 
 ### RoslynUseSdkCompiler
 
 When using .NET Framework MSBuild, `RoslynUseSdkCompiler=true` ensures that
 a C#/VB compiler corresponding to the current SDK version is used
 instead of the default version that ships with MSBuild.
-This uses the .NET Core version of the compiler unlike `BuildWithNetFrameworkHostedCompiler`.
+When this property is set to `true`, the .NET Core version of the compiler is used, unlike `BuildWithNetFrameworkHostedCompiler`.
 In most cases, `RoslynUseSdkCompiler=true` is the default setting.
 
 ### RoslynUseMSBuildCompiler

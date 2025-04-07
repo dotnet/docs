@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 03/15/2024
+ms.date: 04/07/2025
 ---
 # dotnet tool install
 
@@ -131,7 +131,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--source <SOURCE>`**
 
-  Specifies the source of the package that should be used instead of all NuGet packages that are to be used during the installation.
+  Specifies the source for NuGet packages. This source replaces all NuGet package sources.
 
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
@@ -145,7 +145,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
 
-- **`--no-http-cache`**
+- **`--no-cache` or `--no-http-cache`**
 
   Don't cache packages and HTTP requests.
 
@@ -159,11 +159,11 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--tool-path <PATH>`**
 
-  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
+  Specifies the location to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
 - **`--allow-roll-forward`**
 
-  Allows to use the newer versions of the .NET runtime if the runtime it targets isn't installed.
+  Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
@@ -171,7 +171,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
 
-  Starting with .NET 8.0, `--version Major.Minor.Patch` refers to a specific major/minor/patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use `--version Major.Minor.*`.
+  Starting with .NET 8, `--version Major.Minor.Patch` refers to a specific major/minor/patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use `--version Major.Minor.*`.
 
 ## Examples
 

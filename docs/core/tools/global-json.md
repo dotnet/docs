@@ -91,7 +91,7 @@ The following table shows the possible values for the `rollForward` key:
 - Type: Array of `string`
 - Available since: .NET 10 Preview 3 SDK.
 
-Specifies additional locations that should be considered when searching for a compatible .NET SDK. Paths can be absolute or relative to the location of the *global.json* file. The special value `$host$` represents the location corresponding to the running `dotnet` executable.
+Specifies the locations that should be considered when searching for a compatible .NET SDK. Paths can be absolute or relative to the location of the *global.json* file. The special value `$host$` represents the location corresponding to the running `dotnet` executable.
 
 These paths are searched in the order they're defined and the first [matching](#matching-rules) SDK is used.
 

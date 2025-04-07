@@ -8,6 +8,7 @@ ms.topic: whats-new
 
 C# 14 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet):
 
+- [Extension members](#extension-members)
 - [Null-conditional assignment](#null-conditional-assignment)
 - [`nameof` supports unbound generic types](#unbound-generic-types-and-nameof)
 - [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](#implicit-span-conversions)
@@ -24,6 +25,10 @@ New features are added to the "What's new in C#" page when they're available in 
 You can find any breaking changes introduced in C# 14 in our article on [breaking changes](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2010.md).
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
+
+## Extension members
+
+You can learn more details by reading the [feature specification](~/_csharplang/proposals/extensions.md) for the new extension members feature.
 
 ## The `field` keyword
 

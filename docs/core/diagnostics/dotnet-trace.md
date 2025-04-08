@@ -161,9 +161,21 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   The name of the process to collect the trace from.
 
-- **`--diagnostic-port <path-to-port>`**
+  > [!NOTE]
+  > On Linux and macOS, using this option requires the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
-  The name of the diagnostic port to create. See [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup) to learn how to use this option to collect a trace from app startup.
+- **`--diagnostic-port <port-address[,(listen|connect)]>`**
+
+  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be traced. dotnet-trace and the .NET runtime inside the target process must agree on the port-address with one listening and the other connecting. dotnet-trace will automatically determine the correct port when attaching using the `--process-id` or `--name` options, or when launching a process using the `-- <command>` option. Specifying the port explicitly is usually only necessary when waiting for a process that will start in the future or communicating to a process that is running inside a container that isn't part of the current process namespace.
+
+  The `port-address` differs by OS:
+  - Linux and macOS - path to a Unix domain socket such as `/foo/tool1.socket`
+  - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`
+  - Android, iOS, and tvOS - an IP:port such as `127.0.0.1:9000`.
+  
+  By default dotnet-trace will listen at the specified address. You may request dotnet-trace to connect instead by appending `,connect` after the address. For example `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that is listening to the `/foo/tool1.socket` unix domain socket.
+  
+  See [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup) to learn how to use this option to collect a trace from app startup.
   
 - **`--duration <time-to-run>`**
 
@@ -176,6 +188,9 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 - **`-p|--process-id <PID>`**
 
   The process ID to collect the trace from.
+
+  > [!NOTE]
+  > On Linux and macOS, using this option requires the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
 - **`--profile <profile-name>`**
 
@@ -229,8 +244,6 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 > [!NOTE]
 
 > - Stopping the trace may take a long time (up to minutes) for large applications. The runtime needs to send over the type cache for all managed code that was captured in the trace.
-
-> - On Linux and macOS, this command expects the target application and `dotnet-trace` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
 > - To collect a trace using `dotnet-trace`, it needs to be run as the same user as the user running the target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
 

@@ -134,7 +134,7 @@ Once you try it, open the details pane to see how you did:
 
 Try some other formulas if you'd like.
 
-You completed the "Numbers in C#" interactive tutorial. You can select the **Branches and Loops** link to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+You completed the "Numbers in C#" interactive tutorial. You can select the **Tuples and types** link to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
 You can learn more about numbers in C# in the following articles:
 

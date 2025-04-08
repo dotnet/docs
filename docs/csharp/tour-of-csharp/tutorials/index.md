@@ -10,7 +10,7 @@ Welcome to the introduction to C# tutorials. These lessons start with interactiv
 <!--markdownlint-disable-next-line MD034 -->
 > [!VIDEO https://www.youtube.com/embed/9THmGiSPjBQ?si=3kUKFtOMLpEzeq7J]
 
-The first lessons explain C# concepts using small snippets of code. You'll learn the basics of C# syntax and how to work with data types like strings, numbers, and booleans. It's all interactive, and you'll be writing and running code within minutes. These first lessons assume no prior knowledge of programming or the C# language. Each lesson builds on the prior lessons. You should do them in order. However, if you have some programming experience you may skip or skim the first lessons and start with any new concepts.
+The first lessons explain C# concepts using small snippets of code. You'll learn the basics of C# syntax and how to work with data types like strings, numbers, and booleans. It's all interactive, and you'll be writing and running code within minutes. These first lessons assume no prior knowledge of programming or the C# language. Each lesson builds on the prior lessons. You should do them in order. However, if you have some programming experience, you can skip or skim the first lessons and start with any new concepts.
 
 You can try these tutorials in different environments. The concepts you'll learn are the same. The difference is which experience you prefer:
 
@@ -27,7 +27,7 @@ In the [Numbers in C#](numbers-in-csharp.md) tutorial, you'll learn how computer
 
 ## Tuples and types
 
-In the [Tuples and types](tuples-and-types.md) tutorial, you'll learn to create types in C#. You can create *tuples*, *records*, *struct* and *class* types. The capabilities of these different kinds of types reflect their different uses.
+In the [Tuples and types](tuples-and-types.md) tutorial, you'll learn to create types in C#. You can create *tuples*, *records*, *struct*, and *class* types. The capabilities of these different kinds of types reflect their different uses.
 
 ## Branches and loops
 

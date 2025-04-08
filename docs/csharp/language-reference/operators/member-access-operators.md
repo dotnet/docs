@@ -153,7 +153,7 @@ Beginning in C# 14, assignment is permissible with a null conditional access exp
 
 :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="NullForgivingAssignment":::
 
-The preceding example shows assignment to a property and an indexed element on a reference type that might be null. An important behavior for this assignment is that the expression on the right hand side of the `=` is evaluated only once the left hand side is known to be non-null. For example, in the following code, the function `GenerateNextIndex` is call only when the `values` array isn't null. If the `values` array is null, `GenerateNextIndex` isn't called:
+The preceding example shows assignment to a property and an indexed element on a reference type that might be null. An important behavior for this assignment is that the expression on the right-hand side of the `=` is evaluated only when the left-hand side is known to be non-null. For example, in the following code, the function `GenerateNextIndex` is called only when the `values` array isn't null. If the `values` array is null, `GenerateNextIndex` isn't called:
 
 :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="NullForgivingAssignment":::
 
@@ -161,9 +161,9 @@ In other words, the preceding code is equivalent to the following code using an 
 
 :::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="EquivalentIfStatement":::
 
-In addition to assignment, any form of [compound assignment](./assignment-operator.md#compound-assignment), such as `+=` or `-=` are allowed. However, increment (`++`) and decrement (`--`) aren't allowed.
+In addition to assignment, any form of [compound assignment](./assignment-operator.md#compound-assignment), such as `+=` or `-=`, are allowed. However, increment (`++`) and decrement (`--`) aren't allowed.
 
-This enhancement doesn't classify a null conditional expression as a variable. It can't be `ref` assigned, nor can it be assigned to a `ref` variable, or passed to a method as a `ref` or `out` argument.
+This enhancement doesn't classify a null conditional expression as a variable. It can't be `ref` assigned, nor can it be assigned to a `ref` variable or passed to a method as a `ref` or `out` argument.
 
 ### Thread-safe delegate invocation
 

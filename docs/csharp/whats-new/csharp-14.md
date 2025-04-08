@@ -121,7 +121,7 @@ customer?.Order = GetCurrentOrder();
 
 The right side of the `=` operator is evaluated only when the left side is not null. If `customer` is null, the code won't call `GetCurrentOrder`.
 
-You In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=` and others). However, increment and decrement, `++` and `--` aren't allowed.
+In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
 
 You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null conditional assignment](~/_csharplang/proposals/null-conditional-assignment.md)
 

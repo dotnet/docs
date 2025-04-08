@@ -81,10 +81,10 @@ C# 14 introduces several new features and enhancements to improve developer prod
 - **Unbound generic support for `nameof`**: The `nameof` expression now supports unbound generic types, such as `List<>`, returning the name of the type without requiring type arguments.
 - **Implicit span conversions**: Introduces first-class support for `Span<T>` and `ReadOnlySpan<T>` with new implicit conversions, enabling more natural programming with these types.
 - **Modifiers on simple lambda parameters**: Allows parameter modifiers like `ref`, `in`, or `out` in lambda expressions without specifying parameter types.
-- **Experimental feature - String literals in data section**: Enables emitting string literals as UTF-8 data into a separate section of the PE file, improving efficiency for certain scenarios.
 - **Partial events and constructors**: Adds support for partial instance constructors and partial events, complementing partial methods and properties introduced in C# 13.
 - **Extension members**: Extension methods now support static methods, instance properties, and static properties through `extension` blocks, enabling more flexible and powerful extensions.
 - **Null-conditional assignment**: Simplifies conditional assignments by allowing properties or fields to be updated only if the containing instance exists, using the `?.` operator.
+- **Experimental feature - String literals in data section**: Enables emitting string literals as UTF-8 data into a separate section of the PE file, improving efficiency for certain scenarios.
 
 For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp-14.md).
 

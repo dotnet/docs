@@ -32,15 +32,15 @@ Applications that target .NET 5 and later already have the necessary distributed
 version 5 or greater. For libraries targeting netstandard, we recommend referencing the oldest version of the package which is still supported and contains the APIs your library needs.
 
 ```dotnetcli
-dotnet package add System.Diagnostics.DiagnosticSource
+dotnet add package System.Diagnostics.DiagnosticSource
 ```
 
 Add the [OpenTelemetry](https://www.nuget.org/packages/OpenTelemetry/) and
 [OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet packages, which will be used to collect the telemetry.
 
 ```dotnetcli
-dotnet package add OpenTelemetry
-dotnet package add OpenTelemetry.Exporter.Console
+dotnet add package OpenTelemetry
+dotnet add package OpenTelemetry.Exporter.Console
 ```
 
 Replace the contents of the generated Program.cs with this example source:

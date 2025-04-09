@@ -53,7 +53,7 @@ To remove a dependency, remove its `<PackageReference>` item from the project fi
 
 ### Use the CLI
 
-To add a dependency, run the [dotnet package add](dotnet-package-add.md) command, as shown in the following example:
+To add a dependency, run the [dotnet package add](dotnet-package-add.md) command, as shown in the following example. (If you're using an SDK version of .NET 9 or earlier, use the `dotnet add package` form instead.)
 
 ```dotnetcli
 dotnet package add Microsoft.EntityFrameworkCore

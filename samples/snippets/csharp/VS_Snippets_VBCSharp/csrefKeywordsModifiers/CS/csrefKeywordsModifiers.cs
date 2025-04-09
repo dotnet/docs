@@ -818,4 +818,46 @@ namespace csrefKeywordsModifiers
         }
         //</snippet27>
     } 
+
+      //<snippet28>
+  class Calc1
+  {
+      public void CalculateSum()
+      {
+          int a = 3;
+          int b = 7;
+
+          // Static local function - cannot access 'a' or 'b' directly
+          static int Add(int x, int y)
+          {
+              return x + y;
+          }
+
+          int result = Add(a, b); 
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+    /*
+   Output:
+   Sum: 10
+   */
+  //</snippet28>
+
+
+  //<snippet29>
+  class Calc2
+  {
+      static void Main()
+      {
+          Func<int, int, int> add = static (a, b) => a + b;
+
+          int result = add(5, 10);
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+  /*
+  Output:
+  Sum: 15
+  */
+  //</snippet29>
 }

@@ -17,7 +17,7 @@ To use resilience-patterns in HTTP apps, install the [Microsoft.Extensions.Http.
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet package add Microsoft.Extensions.Http.Resilience --version 8.0.0
+dotnet add package Microsoft.Extensions.Http.Resilience --version 8.0.0
 ```
 
 ### [PackageReference](#tab/package-reference)

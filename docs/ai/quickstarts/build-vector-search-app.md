@@ -70,13 +70,13 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="azure-openai"
 
     ```bash
-    dotnet package add Azure.Identity
-    dotnet package add Azure.AI.OpenAI
-    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet package add Microsoft.Extensions.VectorData.Abstractions --prerelease
-    dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
-    dotnet package add Microsoft.Extensions.Configuration
-    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
+    dotnet add package Azure.Identity
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     The following list describes what each package is used for in the `VectorDataAI` app:
@@ -93,11 +93,11 @@ Complete the following steps to create a .NET console app that can:
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet package add Microsoft.Extensions.VectorData.Abstractions --prerelease
-    dotnet package add Microsoft.SemanticKernel.Connectors.InMemory --prerelease
-    dotnet package add Microsoft.Extensions.Configuration
-    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
+    dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
     The following list describes what each package is used for in the `VectorDataAI` app:
@@ -154,13 +154,13 @@ Complete the following steps to create a .NET console app that can:
 
 1. In the **Program.cs** file, add the following code to create a data set that describes a collection of cloud services:
 
-   :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="8-46":::
+   :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="DataSet":::
 
 1. Create and configure an `IEmbeddingGenerator` implementation to send requests to an embedding AI model:
 
     :::zone target="docs" pivot="azure-openai"
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="48-58":::
+    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGen":::
 
     > [!NOTE]
     > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
@@ -175,13 +175,13 @@ Complete the following steps to create a .NET console app that can:
 
 1. Create and populate a vector store with the cloud service data. Use the `IEmbeddingGenerator` implementation to create and assign an embedding vector for each record in the cloud service data:
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="61-70":::
+    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="VectorStore":::
 
    The embeddings are numerical representations of the semantic meaning for each data record, which makes them compatible with vector search features.
 
 1. Create an embedding for a search query and use it to perform a vector search on the vector store:
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" range="72-88":::
+    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="Search":::
 
 1. Use the `dotnet run` command to run the app:
 

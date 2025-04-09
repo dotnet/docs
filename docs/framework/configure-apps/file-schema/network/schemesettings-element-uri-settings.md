@@ -53,7 +53,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
   
  For this reason, <xref:System.Uri?displayProperty=nameWithType> class first un-escapes path delimiters and then applies path compression. The result of passing the malicious URL above to <xref:System.Uri?displayProperty=nameWithType> class constructor results in the following URI:  
   
- `http://www.microsoft.com/Windows/System32/cmd.exe?/c+dir+c:\`  
+ `http://www.contoso.com/Windows/System32/cmd.exe?/c+dir+c:\`  
   
  This default behavior can be modified to not un-escape percent encoded path delimiters using the schemeSettings configuration option for a specific scheme.  
   

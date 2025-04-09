@@ -128,15 +128,15 @@ Arguments also have expectations about how many values can be provided. Examples
 You can provide options before arguments or arguments before options on the command line. The following commands are equivalent:
 
 ```dotnetcli
-dotnet package add System.CommandLine --prerelease
-dotnet package add --prerelease System.CommandLine
+dotnet add package System.CommandLine --prerelease
+dotnet add package --prerelease System.CommandLine
 ```
 
 Options can be specified in any order. The following commands are equivalent:
 
 ```dotnetcli
-dotnet package add System.CommandLine --prerelease --no-restore --source https://api.nuget.org/v3/index.json
-dotnet package add System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease
+dotnet add package System.CommandLine --prerelease --no-restore --source https://api.nuget.org/v3/index.json
+dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease
 ```
 
 When there are multiple arguments, the order does matter. The following commands are not necessarily equivalent:

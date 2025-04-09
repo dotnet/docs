@@ -23,13 +23,13 @@ If you're writing a new ASP.NET Core application that needs to work with relatio
 To use EF Core with a SQL Server database, run the following dotnet CLI command:
 
 ```dotnetcli
-dotnet package add Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 ```
 
 To add support for an InMemory data source, for testing:
 
 ```dotnetcli
-dotnet package add Microsoft.EntityFrameworkCore.InMemory
+dotnet add package Microsoft.EntityFrameworkCore.InMemory
 ```
 
 ### The DbContext

@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Build an AI chat app with .NET
 description: Create a simple AI powered chat app using Semantic Kernel SDK for .NET and the OpenAI or Azure OpenAI SDKs
-ms.date: 07/17/2024
+ms.date: 04/09/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher

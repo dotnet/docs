@@ -1,7 +1,7 @@
 ---
 title: Semantic Kernel overview for .NET
 description: Learn how to add the Semantic Kernel SDK to your .NET projects and explore fundamental concepts
-ms.date: 06/07/2024
+ms.date: 04/09/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft

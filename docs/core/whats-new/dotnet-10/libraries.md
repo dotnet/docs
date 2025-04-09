@@ -200,7 +200,7 @@ BpeOptions bpeOptions = new BpeOptions(vocabs);
 BpeTokenizer tokenizer = BpeTokenizer.Create(bpeOptions);
 ```
 
-## Deterministic Option for LightGBM Trainer in ML.NET
+## Deterministic option for LightGBM trainer in ML.NET
 
 LightGBM trainers now expose options for deterministic training, ensuring consistent results with the same data and random seed. These options include `deterministic`, `force_row_wise`, and `force_col_wise`.
 
@@ -212,6 +212,6 @@ LightGbmBinaryTrainer trainer = ML.BinaryClassification.Trainers.LightGbm(new Li
 });
 ```
 
-## Tensor Enhancements
+## Tensor enhancements
 
 The <xref:System.Numerics.Tensors.Tensor> class now includes a non-generic interface for operations like accessing `Lengths` and `Strides`. Slice operations no longer copy data, improving performance. Additionally, data can be accessed non-generically by boxing to `object` when performance is not critical.

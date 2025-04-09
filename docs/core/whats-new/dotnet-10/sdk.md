@@ -62,6 +62,7 @@ Starting in .NET 10 Preview 3, `dotnet test` natively supports the [Microsoft.Te
 [dotnet.test:runner]
 name = "Microsoft.Testing.Platform"
 ```
+
 > [!NOTE]
 > The `[dotnet.test:runner]` part will change to `[dotnet.test.runner]` in Preview 4.
 

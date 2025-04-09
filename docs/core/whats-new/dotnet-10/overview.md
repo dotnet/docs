@@ -9,7 +9,7 @@ ai-usage: ai-assisted
 
 # What's new in .NET 10
 
-Learn about the new features in .NET 10 and find links to further documentation. This page is updated for Preview 2.
+Learn about the new features in .NET 10 and find links to further documentation. This page is updated for Preview 3.
 
 .NET 10, the successor to [.NET 9](../dotnet-9/overview.md), is [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 

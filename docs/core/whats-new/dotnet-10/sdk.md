@@ -2,19 +2,14 @@
 title: What's new in the SDK and tooling for .NET 10
 description: Learn about the new .NET SDK features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 03/18/2025
+ms.date: 04/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in the SDK and tooling for .NET 10
 
-This article describes new features and enhancements in the .NET SDK for .NET 10. It's updated for Preview 2.
-
-## New features and enhancements
-
-- [Pruning of framework-provided package references](#pruning-of-framework-provided-package-references)
-- [More consistent command order](#more-consistent-command-order)
+This article describes new features and enhancements in the .NET SDK for .NET 10. It's updated for Preview 3.
 
 ## Pruning of framework-provided package references
 
@@ -38,3 +33,36 @@ Starting in .NET 10, the `dotnet` CLI tool includes new aliases for common comma
 | [`dotnet reference remove`](../../tools/dotnet-reference-remove.md) | `dotnet remove reference` |
 
 The new noun-first forms align with general CLI standards, making the `dotnet` CLI more consistent with other tools. While the verb-first forms continue to work, it's better to use the noun-first forms for improved readability and consistency in scripts and documentation.
+
+## CLI commands default to interactive mode in interactive terminals
+
+The `--interactive` flag is now enabled by default for CLI commands in interactive terminals. This change allows commands to dynamically retrieve credentials or perform other interactive behaviors without requiring the flag to be explicitly set. For non-interactive scenarios, you can disable interactivity by specifying `--interactive false`.
+
+## Native shell tab-completion scripts
+
+The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions generate [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`. These scripts improve usability by providing faster and more integrated tab-completion features. For example, in PowerShell, you can enable completions by adding the following to your `$PROFILE`:
+
+```powershell
+dotnet completions script pwsh | out-String | Invoke-Expression -ErrorAction SilentlyContinue
+```
+
+## Console apps can natively create container images
+
+Console apps can now create container images via `dotnet publish /t:PublishContainer` without requiring the `<EnableSdkContainerSupport>` property in the project file. This aligns console apps with the behavior of ASP.NET Core and Worker SDK apps.
+
+## Explicitly control the image format of containers
+
+A new `<ContainerImageFormat>` property allows you to explicitly set the format of container images to either `Docker` or `OCI`. This property overrides the default behavior, which depends on the base image format and whether the container is multi-architecture.
+
+## Support for Microsoft Testing Platform in `dotnet test`
+
+Starting in .NET 10 Preview 3, `dotnet test` natively supports the [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *dotnet.config* file:
+
+```ini
+[dotnet.test:runner]
+name = "Microsoft.Testing.Platform"
+```
+> [!NOTE]
+> The `[dotnet.test:runner]` part will change to `[dotnet.test.runner]` in Preview 4.
+
+For more details, see [Testing with `dotnet test`](../../testing/unit-testing-with-dotnet-test.md).

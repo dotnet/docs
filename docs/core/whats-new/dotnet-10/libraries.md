@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the new .NET libraries features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 03/18/2025
+ms.date: 04/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It's updated for Preview 2.
+This article describes new features in the .NET libraries for .NET 10. It's updated for Preview 3.
 
 ## Find certificates by thumbprints other than SHA-1
 
@@ -150,3 +150,68 @@ The new `ExportPkcs12` <!--TODO: add xref --> methods on <xref:System.Security.C
 which produces an output supported by almost every library/platform that supports reading PKCS#12/PFX by choosing an older encryption algorithm. `Pkcs12ExportPbeParameters.Pbes2Aes256Sha256` <!--TODO: add xref --> indicates that AES should be used instead of 3DES (and SHA-2-256 instead of SHA-1), but the output may not be understood by all readers (such as Windows XP).
 
 Callers who want even more control can instead utilize the overload that accepts a <xref:System.Security.Cryptography.PbeParameters>.
+
+## New AOT-safe constructor for `ValidationContext`
+
+The <xref:System.ComponentModel.DataAnnotations.ValidationContext> class, used during options validation, now includes a new constructor that explicitly accepts the `displayName` parameter. This ensures AOT safety, allowing its use in native builds without warnings:
+
+```csharp
+public sealed class ValidationContext
+{
+    public ValidationContext(object instance,
+        string displayName, 
+        IServiceProvider? serviceProvider = null, 
+        IDictionary<object, object?>? items = null);
+}
+```
+
+## Support for telemetry schema URLs in `ActivitySource` and `Meter`
+
+<xref:System.Diagnostics.ActivitySource> and <xref:System.Diagnostics.Metrics.Meter> now support specifying a telemetry schema URL during construction, aligning with OpenTelemetry specifications. This ensures consistency and compatibility for tracing and metrics data. Additionally, the update introduces `ActivitySourceOptions`, simplifying the creation of <xref:System.Diagnostics.ActivitySource> instances with multiple configuration options.
+
+```csharp
+public sealed partial class ActivitySource
+{
+    public ActivitySource(ActivitySourceOptions options);
+    public string? TelemetrySchemaUrl { get; }
+}
+
+public class ActivitySourceOptions
+{
+    public ActivitySourceOptions(string name);
+    public string Name { get; set; }
+    public string? Version { get; set; }
+    public IEnumerable<KeyValuePair<string, object?>>? Tags { get; set; }
+    public string? TelemetrySchemaUrl { get; set; }
+}
+
+public partial class Meter : IDisposable
+{
+    public string? TelemetrySchemaUrl { get; }
+}
+```
+
+## Byte-Level support in BPE tokenizer
+
+The <xref:Microsoft.ML.Tokenizers.BpeTokenizer> now supports Byte-Level encoding, enabling compatibility with models like DeepSeek. This enhancement processes vocabulary as UTF-8 bytes, simplifying tokenizer creation with the new `BpeOptions` type.
+
+```csharp
+BpeOptions bpeOptions = new BpeOptions(vocabs);
+BpeTokenizer tokenizer = BpeTokenizer.Create(bpeOptions);
+```
+
+## Deterministic Option for LightGBM Trainer in ML.NET
+
+LightGBM trainers now expose options for deterministic training, ensuring consistent results with the same data and random seed. These options include `deterministic`, `force_row_wise`, and `force_col_wise`.
+
+```csharp
+LightGbmBinaryTrainer trainer = ML.BinaryClassification.Trainers.LightGbm(new LightGbmBinaryTrainer.Options
+{
+    Deterministic = true,
+    ForceRowWise = true
+});
+```
+
+## Tensor Enhancements
+
+The <xref:System.Numerics.Tensors.Tensor> class now includes a non-generic interface for operations like accessing `Lengths` and `Strides`. Slice operations no longer copy data, improving performance. Additionally, data can be accessed non-generically by boxing to `object` when performance is not critical.

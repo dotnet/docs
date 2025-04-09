@@ -2,7 +2,7 @@
 title: What's new in .NET 10
 description: Learn about the new features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 03/18/2025
+ms.date: 04/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
@@ -82,6 +82,7 @@ The ASP.NET Core 10.0 release introduces several new features and enhancements, 
 - **Minimal APIs**:
   - Improved integration testing for apps using top-level statements.
   - Empty strings in form posts are now treated as `null` for nullable value types.
+  - Built-in validation support for query, header, route parameters, and request bodies, with customizable behavior.
 
 - **Authentication and authorization**:
   - Added new metrics for authentication and authorization events.
@@ -89,6 +90,13 @@ The ASP.NET Core 10.0 release introduces several new features and enhancements, 
 - **Miscellaneous**:
   - Added the `RedirectHttpResult.IsLocalUrl` helper method for detecting local URLs.
   - Added support for route syntax highlighting in the <xref:Microsoft.AspNetCore.Components.RouteAttribute>.
+  - New `TypedResults.ServerSentEvents` API for streaming event messages to clients in minimal APIs and controller-based apps.
+  - Declarative state persistence simplifies state persistence in components and services during prerendering using the `SupplyParameterFromPersistentComponentState` attribute.
+  - Standalone Blazor WebAssembly apps now support referencing fingerprinted static web assets and import maps.
+  - <xref:System.Net.Http.HttpClient> response streaming is enabled by default on WebAssembly, improving performance and reducing memory usage for large responses.
+  - The app context switch `DisableMatchAllIgnoresLeftUriPart` is now renamed to `EnableMatchAllForQueryStringAndFragment`.
+  - Specify the environment for standalone Blazor WebAssembly apps at build-time using the `<WasmApplicationEnvironmentName>` property.
+  - The ASP.NET Core Web API (native AOT) template now includes OpenAPI support by default.
 
 For more information, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/release-notes/aspnetcore-10.0).
 
@@ -102,6 +110,8 @@ C# 14 introduces several new features and enhancements to improve developer prod
 - **Modifiers on simple lambda parameters**: Allows parameter modifiers like `ref`, `in`, or `out` in lambda expressions without specifying parameter types.
 - **Experimental feature - String literals in data section**: Enables emitting string literals as UTF-8 data into a separate section of the PE file, improving efficiency for certain scenarios.
 - **Partial events and constructors**: Adds support for partial instance constructors and partial events, complementing partial methods and properties introduced in C# 13.
+- **Extension members**: Extension methods now support static methods, instance properties, and static properties through `extension` blocks, enabling more flexible and powerful extensions.
+- **Null-conditional assignment**: Simplifies conditional assignments by allowing properties or fields to be updated only if the containing instance exists, using the `?.` operator.
 
 For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp-14.md).
 
@@ -116,10 +126,19 @@ The .NET MAUI updates in .NET 10 include several new features and quality improv
   - Added `Switch.OffColor` for customizing the color of the `Switch` control when off.
   - Added `SearchBar.SearchIconColor` for customizing the search icon color.
   - New `HybridWebView.InvokeJavascriptAsync` method for invoking JavaScript without requiring generic arguments.
+  - Support for fullscreen video playback in `WebView` on Android when the `iframe` includes `allowfullscreen`.
+  - Added `Geolocation.IsEnabled` to check if geolocation services are enabled without requesting location details.
+  - A `CancellationToken` can now be passed to `WebAuthenticator.AuthenticateAsync` for programmatically canceling authentication.
 
 - **Deprecations**:
   - The `FontImageExtension` XAML markup extension is deprecated. Use `FontImageSource` instead.
   - `MessagingCenter` is now internal. Replace it with `WeakReferenceMessenger` from the `CommunityToolkit.Mvvm` package.
+  - Deprecation of `ListView`, `Cell`, and `TableView`, which will be removed in a future release.
+
+- **Performance improvements**:
+  - Property mapping improvements with new caching and optimized property application order, reducing race conditions and repetitive calls.
+  - CollectionView optimizations on iOS, eliminating `MeasureInvalidated` subscriptions and improving templated cell responsiveness.
+  - Optimized `Label` rendering for `FormattedString` on Windows, achieving a ~56% performance improvement.
 
 - **.NET for Android**:
   - Support for Android 16 (API-36) Beta 1.
@@ -132,6 +151,7 @@ The .NET MAUI updates in .NET 10 include several new features and quality improv
 - **.NET for iOS, Mac Catalyst, macOS, tvOS**:
   - Trimmer warnings are now enabled by default.
   - Bundling of original resources in libraries is now opt-out.
+  - Support for Xcode 16.3 Release Candidate
 
 For more information, see [What's new in .NET MAUI in .NET 10](/dotnet/maui/whats-new/dotnet-10).
 
@@ -152,10 +172,18 @@ The EF Core 10 release introduces several new features and improvements, includi
   - Enhanced performance for `Count` operations on `ICollection<T>`.
   - Optimized `MIN`/`MAX` operations over `DISTINCT`.
 
+- **Improved experience with Azure Cosmos DB for NoSQL**:
+  - EF Core now materializes a default value for required properties when no data is present in the document, simplifying model evolution.
+
+- **Small improvements**:
+  - Redacted inlined constants from logs when sensitive logging is off.
+  - Enhanced <xref:Microsoft.Data.Sqlite.SqliteConnection.LoadExtension(System.String,System.String)> to work correctly with `dotnet run` and libraries named with `lib*`.
+
 - **Miscellaneous**:
   - Simplified parameter names in SQL queries (for example, from `@__city_0` to `city`).
   - Added translation for date/time functions using `DatePart.Microsecond` and `DatePart.Nanosecond`.
   - Made SQL Server scaffolding compatible with Azure Data Explorer.
+  - Additional minor bug fixes and improvements.
 
 For more information, see [What's new in EF Core for .NET 10](/ef/core/what-is-new/ef-core-10.0/whatsnew).
 
@@ -211,19 +239,21 @@ The WPF updates in .NET 10 include several performance improvements, Fluent styl
   - Replaced data structures like `PartialList` with `ReadOnlyCollection` to enhance performance.
   - Optimized UI automation and file dialog operations to minimize allocations.
   - Improved pixel format conversion performance.
+  - Enhanced performance by optimizing cache operations and array handling.
+  - Migrated font collection loader to managed code.
 
 - **Fluent style changes**:
   - Updated the default style for `Label`.
   - Fixed animation issues for `Expander` by adjusting a `KeyTime` value.
+  - Introduced new Fluent styles for controls, including `NavigationWindow`, `Frame`, `ToolBar`, `ResizeGrip`, `GroupBox`, `Hyperlink`, `GridSplitter`, and `Thumb`.
+  - Fixed elevation border brushes for various controls.
+  - Corrected missing `RecognizesAccessKey` property.
 
 - **Bug fixes**:
   - Resolved issues with UI element cursor types and crashes when bitmap streams are null.
   - Fixed localization issues for `ScrollViewer` and `ContextMenu`.
   - Addressed minor bugs in `BitmapMetadata` and native dependencies.
-
-- **Engineering health**:
-  - Updated and synchronized **MilCodeGen** across WPF components.
-  - Removed deprecated .NET runtime references and unnecessary package dependencies.
-  - Conducted style cleanups and disabled code analysis for generated code to streamline builds.
+  - Addressed memory leaks, control behavior anomalies, and property recognition issues.
+  - Fixed faulty caching of `LinearGradientBrushes` when `RelativeTransform` was used with `Absolute` mapping mode.
 
 For more information, see [What's new in WPF in .NET 10](/dotnet/desktop/wpf/whats-new/net100).

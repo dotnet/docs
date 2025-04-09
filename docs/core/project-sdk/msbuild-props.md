@@ -1463,34 +1463,22 @@ The allowed values of this property are SDK feature bands, for example, 8.0.100 
 
 For more information, see [SDK Analysis Level Property and Usage](https://github.com/dotnet/designs/blob/main/proposed/sdk-analysis-level.md).
 
-## Test project&ndash;related properties
+## Microsoft.Testing.Platform&ndash;related properties
 
 The following MSBuild properties are documented in this section:
 
-- [IsTestProject](#istestproject)
 - [IsTestingPlatformApplication](#istestingplatformapplication)
 - [Enable\[NugetPackageNameWithoutDots\]](#enablenugetpackagenamewithoutdots)
 - [EnableAspireTesting](#enableaspiretesting)
-- [EnablePlaywright](#enableplaywright)
 - [EnableMSTestRunner](#enablemstestrunner)
 - [EnableNUnitRunner](#enablenunitrunner)
+- [EnablePlaywright](#enableplaywright)
+- [GenerateTestingPlatformConfigurationFile](#generatetestingplatformconfigurationfile)
 - [GenerateTestingPlatformEntryPoint](#generatetestingplatformentrypoint)
+- [TestingExtensionsProfile](#testingextensionsprofile)
 - [TestingPlatformCaptureOutput](#testingplatformcaptureoutput)
 - [TestingPlatformCommandLineArguments](#testingplatformcommandlinearguments)
-- [TestingPlatformDotnetTestSupport](#testingplatformdotnettestsupport)
-- [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
-- [TestingExtensionsProfile](#testingextensionsprofile)
-- [UseVSTest](#usevstest)
-- [MSTestAnalysisMode](#mstestanalysismode)
-
-### IsTestProject
-
-The `IsTestProject` property signifies that a project is a test project. When this property is set to `true`, validation to check if the project references a self-contained executable is disabled. That's because test projects have an `OutputType` of `Exe` but usually call APIs in a referenced executable rather than trying to run. In addition, if a project references a project where `IsTestProject` is set to `true`, the test project isn't validated as an executable reference.
-
-This property is mainly needed for the `dotnet test` scenario and has no impact when using *vstest.console.exe*.
-
-> [!NOTE]
-> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically. Similarly, this property is set automatically for projects that reference the Microsoft.NET.Test.Sdk NuGet package linked to VSTest.
+- [UseMicrosoftTestingPlatformRunner](#usemicrosofttestingplatformrunner)
 
 ### IsTestingPlatformApplication
 
@@ -1535,6 +1523,10 @@ The `EnableMSTestRunner` property enables or disables the use of the [MSTest run
 
 The `EnableNUnitRunner` property enables or disables the use of the [NUnit runner](../testing/unit-testing-nunit-runner-intro.md). The NUnit runner is a lightweight and portable alternative to VSTest. This property is available in [NUnit3TestAdapter](https://www.nuget.org/packages/NUnit3TestAdapter) in version 5.0 and later.
 
+## UseMicrosoftTestingPlatformRunner
+
+The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of [xUnit](https://xunit.net).
+
 ### GenerateTestingPlatformEntryPoint
 
 Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the automatic generation of the program entry point in test projects that use [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). You might want to set this property to `false` when you manually define an entry point, or when you reference a test project from an executable that also has an entry point.
@@ -1542,6 +1534,10 @@ Setting the `GenerateTestingPlatformEntryPoint` property to `false` disables the
 For more information, see [error CS8892](../testing/microsoft-testing-platform-faq.md#error-cs8892-method-testingplatformentrypointmainstring-will-not-be-used-as-an-entry-point-because-a-synchronous-entry-point-programmainstring-was-found).
 
 To control the generation of the entry point in a VSTest project, use the `GenerateProgramFile` property.
+
+### GenerateTestingPlatformConfigurationFile
+
+The `GenerateTestingPlatformConfigurationFile` property is only available when [IsTestingPlatformApplication](#istestingplatformapplication) is `true`. It's used to allow the copy and rename of the config file in the output folder.
 
 ### TestingPlatformCaptureOutput
 
@@ -1560,16 +1556,6 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
 </PropertyGroup>
 ```
 
-### TestingPlatformDotnetTestSupport
-
-The `TestingPlatformDotnetTestSupport` property lets you specify whether VSTest is used when you use `dotnet test` to run tests. If you set this property to `true`, VSTest is disabled and all `Microsoft.Testing.Platform` tests are run directly.
-
-If you have a solution that contains VSTest test projects as well as MSTest, NUnit, or XUnit projects, you should make one call per mode (that is, `dotnet test` won't run tests from both VSTest and the newer platforms in one call).
-
-### TestingPlatformShowTestsFailure
-
-The `TestingPlatformShowTestsFailure` property lets you control whether a single failure or all errors in a failed test are reported when you use `dotnet test` to run tests. By default, test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild. To show errors per failed test, set this property to `true` in your project file.
-
 ### TestingExtensionsProfile
 
 When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), the `TestingExtensionsProfile` property lets you select a profile to use. The following table shows the allowable values.
@@ -1581,6 +1567,35 @@ When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), th
 | `AllMicrosoft` | Enable all extensions shipped by Microsoft (including extensions with a restrictive license). |
 
 For more information, see [Microsoft.Testing.Platform profile](../testing/unit-testing-mstest-sdk.md#microsofttestingplatform-profile).
+
+## VSTest&ndash;related properties
+
+The following MSBuild properties are documented in this section:
+
+- [IsTestProject](#istestproject)
+- [TestingPlatformDotnetTestSupport](#testingplatformdotnettestsupport)
+- [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
+- [UseVSTest](#usevstest)
+- [MSTestAnalysisMode](#mstestanalysismode)
+
+### IsTestProject
+
+The `IsTestProject` property signifies that a project is a test project. When this property is set to `true`, validation to check if the project references a self-contained executable is disabled. That's because test projects have an `OutputType` of `Exe` but usually call APIs in a referenced executable rather than trying to run. In addition, if a project references a project where `IsTestProject` is set to `true`, the test project isn't validated as an executable reference.
+
+This property is mainly needed for the `dotnet test` scenario and has no impact when using *vstest.console.exe*.
+
+> [!NOTE]
+> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically. Similarly, this property is set automatically for projects that reference the Microsoft.NET.Test.Sdk NuGet package linked to VSTest.
+
+### TestingPlatformDotnetTestSupport
+
+The `TestingPlatformDotnetTestSupport` property lets you specify whether VSTest is used when you use `dotnet test` to run tests. If you set this property to `true`, VSTest is disabled and all `Microsoft.Testing.Platform` tests are run directly.
+
+If you have a solution that contains VSTest test projects as well as MSTest, NUnit, or XUnit projects, you should make one call per mode (that is, `dotnet test` won't run tests from both VSTest and the newer platforms in one call).
+
+### TestingPlatformShowTestsFailure
+
+The `TestingPlatformShowTestsFailure` property lets you control whether a single failure or all errors in a failed test are reported when you use `dotnet test` to run tests. By default, test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild. To show errors per failed test, set this property to `true` in your project file.
 
 ### UseVSTest
 

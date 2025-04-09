@@ -46,7 +46,7 @@ Delegates have many uses in .NET. In the context of events, a delegate is an int
   
 Delegates are [multicast](xref:System.MulticastDelegate) class objects, which means they can hold references to more than one event-handling method. For more information, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
   
-Use the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegate types to define the needed delegate. You mark a delegate with the `delegate` type in [C#]](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:  
+Use the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegate types to define the needed delegate. You mark a delegate with the `delegate` type in [C#](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) or the `Delegate` type in [Visual Basic](../../visual-basic/language-reference/statements/delegate-statement.md) in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`:  
   
 [!code-csharp[EventsOverview#4](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
 [!code-vb[EventsOverview#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  

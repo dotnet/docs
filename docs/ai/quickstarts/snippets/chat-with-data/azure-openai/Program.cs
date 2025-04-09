@@ -7,65 +7,59 @@ using Microsoft.SemanticKernel.Connectors.InMemory;
 using VectorDataAI;
 
 // <SnippetDataSet>
-var cloudServices = new List<CloudService>()
-{
-    new CloudService
-        {
-            Key=0,
-            Name="Azure App Service",
-            Description="Host .NET, Java, Node.js, and Python web applications and APIs in a fully managed Azure service. You only need to deploy your code to Azure. Azure takes care of all the infrastructure management like high availability, load balancing, and autoscaling."
-        },
-    new CloudService
-        {
-            Key=1,
-            Name="Azure Service Bus",
-            Description="A fully managed enterprise message broker supporting both point to point and publish-subscribe integrations. It's ideal for building decoupled applications, queue-based load leveling, or facilitating communication between microservices."
-        },
-    new CloudService
-        {
-            Key=2,
-            Name="Azure Blob Storage",
-            Description="Azure Blob Storage allows your applications to store and retrieve files in the cloud. Azure Storage is highly scalable to store massive amounts of data and data is stored redundantly to ensure high availability."
-        },
-    new CloudService
-        {
-            Key=3,
-            Name="Microsoft Entra ID",
-            Description="Manage user identities and control access to your apps, data, and resources.."
-        },
-    new CloudService
-        {
-            Key=4,
-            Name="Azure Key Vault",
-            Description="Store and access application secrets like connection strings and API keys in an encrypted vault with restricted access to make sure your secrets and your application aren't compromised."
-        },
-    new CloudService
-        {
-            Key=5,
-            Name="Azure AI Search",
-            Description="Information retrieval at scale for traditional and conversational search applications, with security and options for AI enrichment and vectorization."
-        }
-};
+List<CloudService> cloudServices =
+[
+    new() {
+            Key = 0,
+            Name = "Azure App Service",
+            Description = "Host .NET, Java, Node.js, and Python web applications and APIs in a fully managed Azure service. You only need to deploy your code to Azure. Azure takes care of all the infrastructure management like high availability, load balancing, and autoscaling."
+    },
+    new() {
+            Key = 1,
+            Name = "Azure Service Bus",
+            Description = "A fully managed enterprise message broker supporting both point to point and publish-subscribe integrations. It's ideal for building decoupled applications, queue-based load leveling, or facilitating communication between microservices."
+    },
+    new() {
+            Key = 2,
+            Name = "Azure Blob Storage",
+            Description = "Azure Blob Storage allows your applications to store and retrieve files in the cloud. Azure Storage is highly scalable to store massive amounts of data and data is stored redundantly to ensure high availability."
+    },
+    new() {
+            Key = 3,
+            Name = "Microsoft Entra ID",
+            Description = "Manage user identities and control access to your apps, data, and resources."
+    },
+    new() {
+            Key = 4,
+            Name = "Azure Key Vault",
+            Description = "Store and access application secrets like connection strings and API keys in an encrypted vault with restricted access to make sure your secrets and your application aren't compromised."
+    },
+    new() {
+            Key = 5,
+            Name = "Azure AI Search",
+            Description = "Information retrieval at scale for traditional and conversational search applications, with security and options for AI enrichment and vectorization."
+    }
+];
 // </SnippetDataSet>
 
 // <SnippetEmbeddingGen>
 // Load the configuration values
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string model = config["AZURE_OPENAI_GPT_NAME"];
 
 // Create the embedding generator
 IEmbeddingGenerator<string, Embedding<float>> generator =
-    new AzureOpenAIClient(
-        new Uri(endpoint),
-        new DefaultAzureCredential())
-            .AsEmbeddingGenerator(modelId: model);
+    new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
+        .GetEmbeddingClient(deploymentName: model)
+        .AsIEmbeddingGenerator();
 // </SnippetEmbeddingGen>
 
 // <SnippetVectorStore>
 // Create and populate the vector store
 var vectorStore = new InMemoryVectorStore();
-Microsoft.Extensions.VectorData.IVectorStoreRecordCollection<int, CloudService> cloudServicesStore = vectorStore.GetCollection<int, CloudService>("cloudServices");
+IVectorStoreRecordCollection<int, CloudService> cloudServicesStore =
+    vectorStore.GetCollection<int, CloudService>("cloudServices");
 await cloudServicesStore.CreateCollectionIfNotExistsAsync();
 
 foreach (CloudService service in cloudServices)
@@ -82,9 +76,9 @@ ReadOnlyMemory<float> queryEmbedding = await generator.GenerateEmbeddingVectorAs
 
 VectorSearchResults<CloudService> results =
     await cloudServicesStore.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions<CloudService>()
-{
-    Top = 1
-});
+    {
+        Top = 1
+    });
 
 await foreach (VectorSearchResult<CloudService> result in results.Results)
 {

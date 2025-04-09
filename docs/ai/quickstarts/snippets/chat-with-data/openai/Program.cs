@@ -48,7 +48,8 @@ string key = config["OpenAIKey"];
 // Create the embedding generator.
 IEmbeddingGenerator<string, Embedding<float>> generator =
     new OpenAIClient(new ApiKeyCredential(key))
-            .AsIEmbeddingGenerator(modelId: model);
+    .GetEmbeddingClient(model: model)
+    .AsIEmbeddingGenerator();
 
 // Create and populate the vector store.
 var vectorStore = new InMemoryVectorStore();
@@ -67,9 +68,9 @@ ReadOnlyMemory<float> queryEmbedding = await generator.GenerateEmbeddingVectorAs
 
 VectorSearchResults<CloudService> results =
     await cloudServicesStore.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions<CloudService>()
-{
-    Top = 1
-});
+    {
+        Top = 1
+    });
 
 await foreach (VectorSearchResult<CloudService> result in results.Results)
 {

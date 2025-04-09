@@ -31,7 +31,7 @@ var cloudServices = new List<CloudService>()
         {
             Key=3,
             Name="Microsoft Entra ID",
-            Description="Manage user identities and control access to your apps, data, and resources.."
+            Description="Manage user identities and control access to your apps, data, and resources."
         },
     new CloudService
         {
@@ -56,16 +56,16 @@ string model = config["AZURE_OPENAI_GPT_NAME"];
 
 // Create the embedding generator
 IEmbeddingGenerator<string, Embedding<float>> generator =
-    new AzureOpenAIClient(
-        new Uri(endpoint),
-        new DefaultAzureCredential())
-            .AsIEmbeddingGenerator(modelId: model);
+    new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
+    .GetEmbeddingClient(deploymentName: model)
+    .AsIEmbeddingGenerator();
 // </SnippetEmbeddingGen>
 
 // <SnippetVectorStore>
 // Create and populate the vector store
 var vectorStore = new InMemoryVectorStore();
-Microsoft.Extensions.VectorData.IVectorStoreRecordCollection<int, CloudService> cloudServicesStore = vectorStore.GetCollection<int, CloudService>("cloudServices");
+IVectorStoreRecordCollection<int, CloudService> cloudServicesStore =
+    vectorStore.GetCollection<int, CloudService>("cloudServices");
 await cloudServicesStore.CreateCollectionIfNotExistsAsync();
 
 foreach (CloudService service in cloudServices)
@@ -82,9 +82,9 @@ ReadOnlyMemory<float> queryEmbedding = await generator.GenerateEmbeddingVectorAs
 
 VectorSearchResults<CloudService> results =
     await cloudServicesStore.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions<CloudService>()
-{
-    Top = 1
-});
+    {
+        Top = 1
+    });
 
 await foreach (VectorSearchResult<CloudService> result in results.Results)
 {

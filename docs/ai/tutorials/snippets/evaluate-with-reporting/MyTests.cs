@@ -34,7 +34,7 @@ public sealed class MyTests
             new(
                 new Uri(endpoint),
                 new DefaultAzureCredential(new DefaultAzureCredentialOptions() { TenantId = tenantId }));
-        IChatClient client = azureClient.GetChatClient(modelId: model).AsIChatClient();
+        IChatClient client = azureClient.GetChatClient(deploymentName: model).AsIChatClient();
 
         // Create an instance of <see cref="ChatConfiguration"/>
         // to communicate with the LLM.

@@ -51,8 +51,8 @@ string model = config["AZURE_OPENAI_GPT_NAME"];
 // Create the embedding generator
 IEmbeddingGenerator<string, Embedding<float>> generator =
     new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
-    .GetEmbeddingClient(deploymentName: model)
-    .AsIEmbeddingGenerator();
+        .GetEmbeddingClient(deploymentName: model)
+        .AsIEmbeddingGenerator();
 // </SnippetEmbeddingGen>
 
 // <SnippetVectorStore>

@@ -27,7 +27,7 @@ To get started with resilience in .NET, install the [Microsoft.Extensions.Resili
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet package add Microsoft.Extensions.Resilience --version 8.0.0
+dotnet add package Microsoft.Extensions.Resilience --version 8.0.0
 ```
 
 ### [PackageReference](#tab/package-reference)

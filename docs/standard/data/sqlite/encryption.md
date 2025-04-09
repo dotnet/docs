@@ -13,8 +13,8 @@ SQLite doesn't support encrypting database files by default. Instead, you need t
 
 ```dotnetcli
 dotnet package remove Microsoft.Data.Sqlite
-dotnet package add Microsoft.Data.Sqlite.Core
-dotnet package add SQLitePCLRaw.bundle_e_sqlcipher
+dotnet add package Microsoft.Data.Sqlite.Core
+dotnet add package SQLitePCLRaw.bundle_e_sqlcipher
 ```
 
 ### [Visual Studio](#tab/visual-studio)

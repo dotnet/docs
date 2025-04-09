@@ -26,8 +26,8 @@ For example, to use the unofficial, open-source build of `SQLCipher` use the fol
 ### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
-dotnet package add Microsoft.Data.Sqlite.Core
-dotnet package add SQLitePCLRaw.bundle_e_sqlcipher
+dotnet add package Microsoft.Data.Sqlite.Core
+dotnet add package SQLitePCLRaw.bundle_e_sqlcipher
 ```
 
 ### [Visual Studio](#tab/visual-studio)
@@ -57,9 +57,9 @@ To use the `sqlite3` provider use the following commands:
 ### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
-dotnet package add Microsoft.Data.Sqlite.Core
-dotnet package add SQLitePCLRaw.core
-dotnet package add SQLitePCLRaw.provider.sqlite3
+dotnet add package Microsoft.Data.Sqlite.Core
+dotnet add package SQLitePCLRaw.core
+dotnet add package SQLitePCLRaw.provider.sqlite3
 ```
 
 ### [Visual Studio](#tab/visual-studio)

@@ -27,7 +27,7 @@ At the end of this quickstart, you have a scalable app running in Azure to provi
 
 ## Get and deploy the sample application
 
-The sample application is available as an Azure Developer CLI template. Through this quickstart; you pull the template application, deploy the template and sample code to Azure, change the template to implement your preferred persistence grain, deploy the necessary resources, and then deploy the final application.
+The sample application is available as an Azure Developer CLI template. Through this quickstart: you pull the template application, deploy the template and sample code to Azure, change the template to implement your preferred persistence grain, deploy the necessary resources, and then deploy the final application.
 
 1. Open a terminal in an empty directory.
 
@@ -117,7 +117,7 @@ The original deployment only deployed the minimal services necessary to host the
 
 ## Install NuGet packages
 
-Prior to using the grain, you must install the corresponding `Microsoft.Orleans.Clustering.*` and `Microsoft.Orleans.Persistence.*` NuGet packages. These services are using role-based access control for passwordless authentication, so you must also import the `Azure.Identity` NuGet package.
+Prior to using the grain, you must install the corresponding `Microsoft.Orleans.Clustering.*` and `Microsoft.Orleans.Persistence.*` NuGet packages. These services use role-based access control for passwordless authentication, so you must also import the `Azure.Identity` NuGet package.
 
 ::: zone pivot="azure-storage"
 
@@ -127,44 +127,44 @@ Prior to using the grain, you must install the corresponding `Microsoft.Orleans.
     cd ./src/web
     ```
 
-1. Import the `Azure.Identity` package from NuGet using `dotnet package add`.
+1. Import the `Azure.Identity` package from NuGet:
 
     ```dotnetcli
-    dotnet package add Azure.Identity --version 1.*
+    dotnet add package Azure.Identity --version 1.*
     ```
 
 1. Import the `Microsoft.Orleans.Clustering.AzureStorage` and `Microsoft.Orleans.Persistence.AzureStorage` packages.
 
-    | | NuGet package |
-    | --- | --- |
-    | **Clustering** | `Microsoft.Orleans.Clustering.AzureStorage` |
-    | **Persistence** | `Microsoft.Orleans.Persistence.AzureStorage` |
+   | Feature         | NuGet package                                |
+   |-----------------|----------------------------------------------|
+   | **Clustering**  | `Microsoft.Orleans.Clustering.AzureStorage`  |
+   | **Persistence** | `Microsoft.Orleans.Persistence.AzureStorage` |
 
     ```dotnetcli
-    dotnet package add Microsoft.Orleans.Clustering.AzureStorage --version 8.*
-    dotnet package add Microsoft.Orleans.Persistence.AzureStorage --version 8.*
+    dotnet add package Microsoft.Orleans.Clustering.AzureStorage --version 8.*
+    dotnet add package Microsoft.Orleans.Persistence.AzureStorage --version 8.*
     ```
 
 ::: zone-end
 
 ::: zone pivot="azure-cosmos-db-nosql"
 
-1. Import the `Azure.Identity` package from NuGet using `dotnet package add`.
+1. Import the `Azure.Identity` package from NuGet:
 
     ```dotnetcli
-    dotnet package add Azure.Identity --version 1.*
+    dotnet add package Azure.Identity --version 1.*
     ```
 
 1. Import the `Microsoft.Orleans.Clustering.Cosmos` and `Microsoft.Orleans.Persistence.Cosmos` packages.
 
-    | | NuGet package |
-    | --- | --- |
-    | **Clustering** | `Microsoft.Orleans.Clustering.Cosmos` |
-    | **Persistence** | `Microsoft.Orleans.Persistence.Cosmos` |
+   | Feature         | NuGet package                          |
+   |-----------------|----------------------------------------|
+   | **Clustering**  | `Microsoft.Orleans.Clustering.Cosmos`  |
+   | **Persistence** | `Microsoft.Orleans.Persistence.Cosmos` |
 
     ```dotnetcli
-    dotnet package add Microsoft.Orleans.Clustering.Cosmos --version 8.*
-    dotnet package add Microsoft.Orleans.Persistence.Cosmos --version 8.*
+    dotnet add package Microsoft.Orleans.Clustering.Cosmos --version 8.*
+    dotnet add package Microsoft.Orleans.Persistence.Cosmos --version 8.*
     ```
 
 ::: zone-end

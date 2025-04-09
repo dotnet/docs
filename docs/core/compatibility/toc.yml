@@ -40,6 +40,10 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: Networking
+            items:
+              - name: Streaming HTTP responses enabled by default in browser HTTP clients
+                href: networking/10.0/default-http-streaming.md
           - name: SDK and MSBuild
             items:
               - name: .NET CLI `--interactive` defaults to `true` in user scenarios
@@ -1858,6 +1862,10 @@ items:
                 href: maui/7.0/iwindowstatemanager-apis-removed.md
       - name: Networking
         items:
+          - name: .NET 10
+            items:
+              - name: Streaming HTTP responses enabled by default in browser HTTP clients
+                href: networking/10.0/default-http-streaming.md
           - name: .NET 9
             items:
               - name: HttpClient metrics report `server.port` unconditionally

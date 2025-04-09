@@ -59,7 +59,7 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
     new AzureOpenAIClient(
         new Uri(endpoint),
         new DefaultAzureCredential())
-            .AsEmbeddingGenerator(modelId: model);
+            .AsIEmbeddingGenerator(modelId: model);
 // </SnippetEmbeddingGen>
 
 // <SnippetVectorStore>

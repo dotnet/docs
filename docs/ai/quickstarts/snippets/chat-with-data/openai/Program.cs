@@ -48,7 +48,7 @@ string key = config["OpenAIKey"];
 // Create the embedding generator.
 IEmbeddingGenerator<string, Embedding<float>> generator =
     new OpenAIClient(new ApiKeyCredential(key))
-            .AsEmbeddingGenerator(modelId: model);
+            .AsIEmbeddingGenerator(modelId: model);
 
 // Create and populate the vector store.
 var vectorStore = new InMemoryVectorStore();

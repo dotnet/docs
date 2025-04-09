@@ -8,12 +8,11 @@ string endpoint = config["AZURE_OPENAI_ENDPOINT"];
 string deployment = config["AZURE_OPENAI_GPT_NAME"];
 
 IChatClient client =
-    new ChatClientBuilder()
-        .UseFunctionInvocation()
-        .Use(
-            new AzureOpenAIClient(new Uri(endpoint),
-            new DefaultAzureCredential())
-                .AsChatClient(deployment));
+    new ChatClientBuilder(
+        new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
+        .GetChatClient(deployment).AsIChatClient())
+    .UseFunctionInvocation()
+    .Build();
 
 // Add a new plugin with a local .NET function that should be available to the AI model
 var chatOptions = new ChatOptions
@@ -37,6 +36,6 @@ chatHistory.Add(new ChatMessage(ChatRole.User,
     "I live in Montreal and I'm looking for a moderate intensity hike. What's the current weather like? "));
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last()}");
 
-var response = await client.CompleteAsync(chatHistory, chatOptions);
-chatHistory.Add(new ChatMessage(ChatRole.Assistant, response.Message.Contents));
+var response = await client.GetResponseAsync(chatHistory, chatOptions);
+chatHistory.Add(new ChatMessage(ChatRole.Assistant, response.Text));
 Console.WriteLine($"{chatHistory.Last().Role} >>> {chatHistory.Last()}");

@@ -6,6 +6,7 @@ using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
 using VectorDataAI;
 
+// <SnippetDataSet>
 var cloudServices = new List<CloudService>()
 {
     new CloudService
@@ -45,7 +46,9 @@ var cloudServices = new List<CloudService>()
             Description="Information retrieval at scale for traditional and conversational search applications, with security and options for AI enrichment and vectorization."
         }
 };
+// </SnippetDataSet>
 
+// <SnippetEmbeddingGen>
 // Load the configuration values
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
@@ -57,7 +60,9 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
         new Uri(endpoint),
         new DefaultAzureCredential())
             .AsEmbeddingGenerator(modelId: model);
+// </SnippetEmbeddingGen>
 
+// <SnippetVectorStore>
 // Create and populate the vector store
 var vectorStore = new InMemoryVectorStore();
 Microsoft.Extensions.VectorData.IVectorStoreRecordCollection<int, CloudService> cloudServicesStore = vectorStore.GetCollection<int, CloudService>("cloudServices");
@@ -68,7 +73,9 @@ foreach (CloudService service in cloudServices)
     service.Vector = await generator.GenerateEmbeddingVectorAsync(service.Description);
     await cloudServicesStore.UpsertAsync(service);
 }
+// </SnippetVectorStore>
 
+// <SnippetSearch>
 // Convert a search query to a vector and search the vector store
 string query = "Which Azure service should I use to store my Word documents?";
 ReadOnlyMemory<float> queryEmbedding = await generator.GenerateEmbeddingVectorAsync(query);
@@ -86,3 +93,4 @@ await foreach (VectorSearchResult<CloudService> result in results.Results)
     Console.WriteLine($"Vector match score: {result.Score}");
     Console.WriteLine();
 }
+// </SnippetSearch>

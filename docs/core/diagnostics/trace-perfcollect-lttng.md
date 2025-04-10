@@ -66,6 +66,7 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > LTTng had a breaking change between versions 2.12 and 2.13. The .NET runtime currently supports version 2.12. If your Linux distribution has adopted 2.13 or later then we recommend disabling the LTTng portion of the perfcollect functionality. To do this add the option '-nolttng' to the perfcollect command-line and in step 3 do not set the DOTNET_EnableEventLog environment variable.
 
 1. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
+1. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
 
     ```bash
     export DOTNET_PerfMapEnabled=1
@@ -80,7 +81,7 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > ```
     >
 
-   [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
+    [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
 1. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
 

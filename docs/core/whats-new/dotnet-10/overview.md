@@ -83,18 +83,6 @@ C# 14 introduces several new features and enhancements to improve developer prod
 
 For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp-14.md).
 
-## .NET MAUI
-
-The .NET MAUI updates in .NET 10 include several new features and quality improvements for .NET MAUI, .NET for Android, and .NET for iOS, Mac Catalyst, macOS, and tvOS.
-
-For details, see [What's new in .NET MAUI in .NET 10](/dotnet/maui/whats-new/dotnet-10).
-
-## EF Core
-
-The EF Core 10 release introduces several new features and improvements, including LINQ enhancements, performance optimizations, and improved support for Azure Cosmos DB.
-
-For details, see [What's new in EF Core for .NET 10](/ef/core/what-is-new/ef-core-10.0/whatsnew).
-
 ## F\#
 
 The F# updates in .NET 10 include several new features and improvements across the language, standard library, and compiler service. Key updates include:
@@ -120,6 +108,18 @@ The Visual Basic updates in .NET 10 include the following features and enhanceme
 These updates ensure that Visual Basic can consume updated features in C# and the runtime, improving compatibility and performance.
 
 For more information, see [What's new in Visual Basic](../../../visual-basic/whats-new/index.md).
+
+## .NET MAUI
+
+The .NET MAUI updates in .NET 10 include several new features and quality improvements for .NET MAUI, .NET for Android, and .NET for iOS, Mac Catalyst, macOS, and tvOS.
+
+For details, see [What's new in .NET MAUI in .NET 10](/dotnet/maui/whats-new/dotnet-10).
+
+## EF Core
+
+The EF Core 10 release introduces several new features and improvements, including LINQ enhancements, performance optimizations, and improved support for Azure Cosmos DB.
+
+For details, see [What's new in EF Core for .NET 10](/ef/core/what-is-new/ef-core-10.0/whatsnew).
 
 ## Windows Forms
 

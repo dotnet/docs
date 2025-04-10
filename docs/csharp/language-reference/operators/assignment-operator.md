@@ -1,12 +1,11 @@
 ---
 title: "Assignment operators - assign an expression to a variable"
 description: "C# Assignment sets the value of the expression. Alternatively, `ref` assignment sets the reference of a reference variable."
-ms.date: 11/21/2024
+ms.date: 04/04/2025
 f1_keywords:
   - "=_CSharpKeyword"
 helpviewer_keywords:
   - "= operator [C#]"
-ms.assetid: d802a6d5-32f0-42b8-b180-12f5a081bfc1
 ---
 # Assignment operators (C# reference)
 
@@ -31,6 +30,8 @@ The following example demonstrates the usage of the assignment operator with a l
 The left-hand operand of an assignment receives the *value* of the right-hand operand. When the operands are of [value types](../builtin-types/value-types.md), assignment copies the contents of the right-hand operand. When the operands are of [reference types](../builtin-types/reference-types.md), assignment copies the reference to the object.
 
 This operation is called *value assignment*: the value is assigned.
+
+Beginning with C# 14, the left hand side of a value assignment can include a [null conditional member expression](./member-access-operators.md#null-conditional-operators--and-), such as `?.` or `?[]`. If the left hand side is null, the right hand side expression isn't evaluated.
 
 ## ref assignment
 
@@ -66,11 +67,11 @@ x = x op y
 
 Except that `x` is only evaluated once.
 
-The [arithmetic](arithmetic-operators.md#compound-assignment), [Boolean logical](boolean-logical-operators.md#compound-assignment), and [bitwise logical and shift](bitwise-and-shift-operators.md#compound-assignment) operators all support compount assignment.
+The [arithmetic](arithmetic-operators.md#compound-assignment), [Boolean logical](boolean-logical-operators.md#compound-assignment), and [bitwise logical and shift](bitwise-and-shift-operators.md#compound-assignment) operators all support compound assignment.
 
 ## Null-coalescing assignment
 
-You can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. For more information, see the [?? and ??= operators](null-coalescing-operator.md) article.
+You can use the null-coalescing assignment operator `??=` to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`. For more information, see the [`??` and `??=` operators](null-coalescing-operator.md) article.
 
 ## Operator overloadability
 

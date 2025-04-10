@@ -20,7 +20,7 @@ The `AsyncEnumerable` class in the [community-maintained `System.Linq.Async` pac
 
 ## New behavior
 
-The <xref:System.Linq.AsyncEnumerable> class in .NET 10, as well as in the [`System.Linq.AsyncEnumerable` NuGet package](https://www.nuget.org/packages/System.Linq.AsyncEnumerable/), provides LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
+The <xref:System.Linq.AsyncEnumerable> class in .NET 10, and in the [`System.Linq.AsyncEnumerable` NuGet package](https://www.nuget.org/packages/System.Linq.AsyncEnumerable/), provides LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 
 ## Type of breaking change
 
@@ -28,7 +28,7 @@ This is a [source incompatible](../../categories.md#source-compatibility) change
 
 ## Reason for change
 
-<xref:System.Collections.Generic.IAsyncEnumerable`1> has become core enough that the platform itself should provide LINQ support for the type. Community support, including from the maintainers of `System.Linq.Async`, petitioned for this inclusion directly in the platform.
+<xref:System.Collections.Generic.IAsyncEnumerable`1> is a commonly used interface, so the platform itself should provide LINQ support for the type. Maintainers of `System.Linq.Async` and other community members petitioned for inclusion directly in the platform.
 
 ## Recommended action
 
@@ -42,7 +42,7 @@ If `System.Linq.Async` is consumed indirectly via another package, avoid ambigui
 </PackageReference>
 ```
 
-Most consuming code will not need changes, but some call sites might need updates to refer to newer names and signatures.
+Most consuming code should be compatible without changes, but some call sites might need updates to refer to newer names and signatures.
 
 Refer to the [System.Linq.AsyncEnumerable API documentation](xref:System.Linq.AsyncEnumerable) for the full set of LINQ extension methods available for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 

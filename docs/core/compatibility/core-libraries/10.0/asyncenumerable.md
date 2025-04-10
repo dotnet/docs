@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/44886
 
 # System.Linq.AsyncEnumerable in .NET 10
 
-.NET 10 introduces the `AsyncEnumerable` class, which provides a full set of LINQ extension methods for the <xref:System.Collections.Generic.IAsyncEnumerable`1> type. This class replaces the community-maintained `System.Linq.Async` NuGet library, potentially causing compilation errors due to ambiguities.
+.NET 10 introduces the <xref:System.Linq.AsyncEnumerable> class, which provides a full set of LINQ extension methods for the <xref:System.Collections.Generic.IAsyncEnumerable`1> type. This class replaces the [community-maintained `System.Linq.Async` NuGet library](https://www.nuget.org/packages/System.Linq.Async), potentially causing compilation errors due to ambiguities.
 
 ## Version introduced
 
@@ -16,11 +16,11 @@ ms.custom: https://github.com/dotnet/docs/issues/44886
 
 ## Previous behavior
 
-The `AsyncEnumerable` class in the `System.Linq.Async` package provided LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
+The `AsyncEnumerable` class in the [community-maintained `System.Linq.Async` package](https://www.nuget.org/packages/System.Linq.Async) provided LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 
 ## New behavior
 
-The `AsyncEnumerable` class in .NET 10, as well as in the `System.Linq.AsyncEnumerable` NuGet package, provides LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
+The <xref:System.Linq.AsyncEnumerable> class in .NET 10, as well as in the [`System.Linq.AsyncEnumerable` NuGet package](https://www.nuget.org/packages/System.Linq.AsyncEnumerable/), provides LINQ support for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 
 ## Type of breaking change
 
@@ -44,7 +44,9 @@ If `System.Linq.Async` is consumed indirectly via another package, avoid ambigui
 
 Most consuming code will not need changes, but some call sites might need updates to refer to newer names and signatures.
 
+Refer to the <xref:System.Linq.AsyncEnumerable> API documentation for the full set of LINQ extension methods available for `IAsyncEnumerable<T>`.
+
 ## Affected APIs
 
 - <xref:System.Linq.AsyncEnumerable?displayProperty=fullName>
-- <xref:System.Collections.Generic.IAsyncEnumerable`1>
+- <xref:System.Collections.Generic.IAsyncEnumerable`1?displayProperty=fullName>

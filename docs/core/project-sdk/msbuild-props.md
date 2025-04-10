@@ -1478,6 +1478,8 @@ The following MSBuild properties are documented in this section:
 - [TestingExtensionsProfile](#testingextensionsprofile)
 - [TestingPlatformCaptureOutput](#testingplatformcaptureoutput)
 - [TestingPlatformCommandLineArguments](#testingplatformcommandlinearguments)
+- [TestingPlatformDotnetTestSupport](#testingplatformdotnettestsupport)
+- [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
 - [UseMicrosoftTestingPlatformRunner](#usemicrosofttestingplatformrunner)
 
 ### IsTestingPlatformApplication
@@ -1525,7 +1527,7 @@ The `EnableNUnitRunner` property enables or disables the use of the [NUnit runne
 
 ## UseMicrosoftTestingPlatformRunner
 
-The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of [xUnit](https://xunit.net).
+The `UseMicrosoftTestingPlatformRunner` property enables or disables the use of Microsoft.Testing.Platform runner in [xUnit.v3](https://xunit.net) test projects.
 
 ### GenerateTestingPlatformEntryPoint
 
@@ -1537,7 +1539,7 @@ To control the generation of the entry point in a VSTest project, use the `Gener
 
 ### GenerateTestingPlatformConfigurationFile
 
-The `GenerateTestingPlatformConfigurationFile` property is only available when [IsTestingPlatformApplication](#istestingplatformapplication) is `true`. It's used to allow the copy and rename of the config file in the output folder.
+The `GenerateTestingPlatformConfigurationFile` property is only available when [IsTestingPlatformApplication](#istestingplatformapplication) is `true`. It's used to allow the copy and rename of the [config file](../testing/microsoft-testing-platform-config.md) in the output folder.
 
 ### TestingPlatformCaptureOutput
 
@@ -1556,6 +1558,19 @@ The `TestingPlatformCaptureOutput` property lets you specify command-line argume
 </PropertyGroup>
 ```
 
+### TestingPlatformDotnetTestSupport
+
+The `TestingPlatformDotnetTestSupport` property enables testing Microsoft.Testing.Platform apps when using the VSTest mode of `dotnet test`.
+
+> [!NOTE]
+> Don't call `dotnet test` on a solution that has both VSTest and Microsoft.Testing.Platform projects, as that scenario is not supported.
+
+For more information, see [Testing with 'dotnet test'](../testing/unit-testing-with-dotnet-test.md).
+
+### TestingPlatformShowTestsFailure
+
+The `TestingPlatformShowTestsFailure` property lets you control whether a single failure or all errors in a failed test are reported when you use `dotnet test` to run tests. By default, test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild. To show errors per failed test, set this property to `true` in your project file.
+
 ### TestingExtensionsProfile
 
 When you use the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md), the `TestingExtensionsProfile` property lets you select a profile to use. The following table shows the allowable values.
@@ -1573,33 +1588,24 @@ For more information, see [Microsoft.Testing.Platform profile](../testing/unit-t
 The following MSBuild properties are documented in this section:
 
 - [IsTestProject](#istestproject)
-- [TestingPlatformDotnetTestSupport](#testingplatformdotnettestsupport)
-- [TestingPlatformShowTestsFailure](#testingplatformshowtestsfailure)
 - [UseVSTest](#usevstest)
-- [MSTestAnalysisMode](#mstestanalysismode)
 
 ### IsTestProject
 
-The `IsTestProject` property signifies that a project is a test project. When this property is set to `true`, validation to check if the project references a self-contained executable is disabled. That's because test projects have an `OutputType` of `Exe` but usually call APIs in a referenced executable rather than trying to run. In addition, if a project references a project where `IsTestProject` is set to `true`, the test project isn't validated as an executable reference.
-
-This property is mainly needed for the `dotnet test` scenario and has no impact when using *vstest.console.exe*.
+The `IsTestProject` property is set to `true` by the [Microsoft.NET.Test.Sdk NuGet package](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk). It signifies whether a project is a VSTest test project so that it's recognized by `dotnet test`.
 
 > [!NOTE]
-> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property. It's set automatically. Similarly, this property is set automatically for projects that reference the Microsoft.NET.Test.Sdk NuGet package linked to VSTest.
-
-### TestingPlatformDotnetTestSupport
-
-The `TestingPlatformDotnetTestSupport` property lets you specify whether VSTest is used when you use `dotnet test` to run tests. If you set this property to `true`, VSTest is disabled and all `Microsoft.Testing.Platform` tests are run directly.
-
-If you have a solution that contains VSTest test projects as well as MSTest, NUnit, or XUnit projects, you should make one call per mode (that is, `dotnet test` won't run tests from both VSTest and the newer platforms in one call).
-
-### TestingPlatformShowTestsFailure
-
-The `TestingPlatformShowTestsFailure` property lets you control whether a single failure or all errors in a failed test are reported when you use `dotnet test` to run tests. By default, test failures are summarized into a _.log_ file, and a single failure per test project is reported to MSBuild. To show errors per failed test, set this property to `true` in your project file.
+> If your project specifies the [MSTest SDK](../testing/unit-testing-mstest-sdk.md), you don't need to set this property, as MSTest.Sdk references the Microsoft.NET.Test.Sdk NuGet package.
 
 ### UseVSTest
 
 Set the `UseVSTest` property to `true` to switch from Microsoft.Testing.Platform to the [VSTest](/visualstudio/test/vstest-console-options) runner when using the [MSTest project SDK](../testing/unit-testing-mstest-sdk.md).
+
+## MSTest&ndash;related properties
+
+The following MSBuild properties are documented in this section:
+
+- [MSTestAnalysisMode](#mstestanalysismode)
 
 ### MSTestAnalysisMode
 

@@ -362,6 +362,8 @@ items:
                 href: interop/8.0/jsfunctionbinding-constructor.md
               - name: SafeHandle types must have public constructor
                 href: interop/8.0/safehandle-constructor.md
+              - name: Linux native library resolution no longer uses `netcoredeps`
+                href: interop/8.0/linux-netcoredeps.md
           - name: Networking
             items:
               - name: SendFile throws NotSupportedException for connectionless sockets
@@ -1818,6 +1820,8 @@ items:
                 href: interop/8.0/jsfunctionbinding-constructor.md
               - name: SafeHandle types must have public constructor
                 href: interop/8.0/safehandle-constructor.md
+              - name: Linux native library resolution no longer uses `netcoredeps`
+                href: interop/8.0/linux-netcoredeps.md
           - name: .NET 7
             items:
               - name: RuntimeInformation.OSArchitecture under emulation

@@ -21,7 +21,7 @@ The <xref:System.Uri> properties return a canonical data representation in escap
 - Removes default and empty port numbers.
 - Converts implicit file paths without the file:// scheme (for example, "C:\my\file") to explicit file paths with the file:// scheme.
 - Escaped characters (also known as percent-encoded octets) that don't have a reserved purpose are decoded (also known as being unescaped). These unreserved characters include uppercase and lowercase letters (%41-%5A and %61-%7A), decimal digits (%30-%39), hyphen (%2D), period (%2E), underscore (%5F), and tilde (%7E).
-- Canonicalizes the path for hierarchical URIs by compacting sequences such as /./ and /../ (whether or not the sequence is escaped). Note that there are some schemes for which these sequences are not compacted.
+- Canonicalizes the path for hierarchical URIs by compacting sequences such as `/./` and `/../` (whether or not the sequence is escaped). Note that there are some schemes for which these sequences are not compacted.
 - For hierarchical URIs, if the host is not terminated with a forward slash (/), one is added.
 - By default, any reserved characters in the URI are escaped in accordance with RFC 2396. This behavior changes if International Resource Identifiers or International Domain Name parsing is enabled in which case reserved characters in the URI are escaped in accordance with RFC 3986 and RFC 3987.
 

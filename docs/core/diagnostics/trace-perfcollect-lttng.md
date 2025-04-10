@@ -78,6 +78,7 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > ```bash
     > export DOTNET_EnableWriteXorExecute=0
     > ```
+    >
 
    [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 

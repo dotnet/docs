@@ -153,11 +153,11 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 1. Add the following NuGet packages to your app:
 
     ```dotnetcli
-    dotnet package add Azure.Identity
-    dotnet package add Azure.AI.OpenAI
-    dotnet package add Microsoft.Extensions.Azure
-    dotnet package add Microsoft.Extensions.AI
-    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet add package Azure.Identity
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Microsoft.Extensions.Azure
+    dotnet add package Microsoft.Extensions.AI
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     ```
 
     The preceding packages each handle the following concerns for this scenario:

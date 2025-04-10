@@ -62,7 +62,7 @@ public sealed class MyTests
             new(
                 new Uri(endpoint),
                 new DefaultAzureCredential(new DefaultAzureCredentialOptions() { TenantId = tenantId }));
-        IChatClient client = azureClient.AsChatClient(modelId: model);
+        IChatClient client = azureClient.GetChatClient(deploymentName: model).AsIChatClient();
 
         return new ChatConfiguration(client);
     }

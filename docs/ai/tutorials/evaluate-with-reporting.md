@@ -32,15 +32,15 @@ Complete the following steps to create an MSTest project that connects to the `g
 1. Navigate to the `TestAIWithReporting` directory, and add the necessary packages to your app:
 
     ```dotnetcli
-    dotnet package add Azure.AI.OpenAI
-    dotnet package add Azure.Identity
-    dotnet package add Microsoft.Extensions.AI.Abstractions --prerelease
-    dotnet package add Microsoft.Extensions.AI.Evaluation --prerelease
-    dotnet package add Microsoft.Extensions.AI.Evaluation.Quality --prerelease
-    dotnet package add Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
-    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet package add Microsoft.Extensions.Configuration
-    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Azure.Identity
+    dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
+    dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
+    dotnet add package Microsoft.Extensions.AI.Evaluation.Quality --prerelease
+    dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+    dotnet add package Microsoft.Extensions.Configuration
+    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
 
 1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and tenant ID:

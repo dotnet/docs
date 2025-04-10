@@ -49,6 +49,12 @@ For local development, refer to the below example of how to configure a silo for
 Add the `Microsoft.Orleans.Server` NuGet meta-package to the project.
 
 ```dotnetcli
+dotnet add package Microsoft.Orleans.Server
+```
+
+Or, in .NET 10+:
+
+```dotnetcli
 dotnet package add Microsoft.Orleans.Server
 ```
 

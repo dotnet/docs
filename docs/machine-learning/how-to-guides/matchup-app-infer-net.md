@@ -36,6 +36,12 @@ The `dotnet` command creates a `new` application of type `console`. The `-o` par
 To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` package. In your command prompt, run the following command:
 
 ```dotnetcli
+dotnet add package Microsoft.ML.Probabilistic.Compiler
+```
+
+Or, in .NET 10+:
+
+```dotnetcli
 dotnet package add Microsoft.ML.Probabilistic.Compiler
 ```
 

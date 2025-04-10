@@ -8,7 +8,7 @@ string? key = config["OpenAIKey"];
 
 // Create the IChatClient
 IChatClient client =
-    new OpenAIClient(key).AsChatClient(model);
+    new OpenAIClient(key).GetChatClient(model).AsIChatClient();
 
 // Create and print out the prompt
 string prompt = $"""

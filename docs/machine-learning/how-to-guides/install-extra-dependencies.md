@@ -13,6 +13,12 @@ ms.topic: how-to
 In most cases, on all operating systems, installing ML.NET is as simple as referencing the appropriate NuGet package.
 
 ```dotnetcli
+dotnet add package Microsoft.ML
+```
+
+Or, in .NET 10+:
+
+```dotnetcli
 dotnet package add Microsoft.ML
 ```
 

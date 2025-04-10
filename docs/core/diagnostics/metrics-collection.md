@@ -28,7 +28,7 @@ Before metrics can be collected, measurements must be produced. This tutorial cr
 ```dotnetcli
 dotnet new console -o metric-instr
 cd metric-instr
-dotnet package add System.Diagnostics.DiagnosticSource
+dotnet add package System.Diagnostics.DiagnosticSource
 ```
 
 Replace the contents of `Program.cs` with the following code:
@@ -132,7 +132,7 @@ This tutorial shows one of the integrations available for OpenTelemetry metrics 
 Add a reference to the OpenTelemetry Prometheus exporter to the example app:
 
 ```dotnetcli
-dotnet package add OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
+dotnet add package OpenTelemetry.Exporter.Prometheus.HttpListener --prerelease
 ```
 
 > [!NOTE]

@@ -45,10 +45,10 @@ if we browse the web page.
 To use OpenTelemetry, you need to add references to several NuGet packages.
 
 ```dotnetcli
-dotnet package add OpenTelemetry
-dotnet package add OpenTelemetry.Exporter.Console
-dotnet package add OpenTelemetry.Extensions.Hosting
-dotnet package add OpenTelemetry.Instrumentation.AspNetCore
+dotnet add package OpenTelemetry
+dotnet add package OpenTelemetry.Exporter.Console
+dotnet add package OpenTelemetry.Extensions.Hosting
+dotnet add package OpenTelemetry.Instrumentation.AspNetCore
 ```
 
 Next, modify the source code in *Program.cs* so it looks like this:
@@ -206,7 +206,7 @@ Example work done
 Add the [OpenTelemetry.Exporter.Console](https://www.nuget.org/packages/OpenTelemetry.Exporter.Console/) NuGet package.
 
 ```dotnetcli
-dotnet package add OpenTelemetry.Exporter.Console
+dotnet add package OpenTelemetry.Exporter.Console
 ```
 
 Update Program.cs with additional OpenTelemetry `using` directives:

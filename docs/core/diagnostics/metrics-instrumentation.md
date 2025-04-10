@@ -29,6 +29,8 @@ version 8 or greater. Applications that target .NET 8+ include this reference by
 > dotnet package add System.Diagnostics.DiagnosticSource
 ```
 
+(If you're using an SDK version of .NET 9 or earlier, use the `dotnet add package` form instead.)
+
 ```csharp
 using System;
 using System.Diagnostics.Metrics;

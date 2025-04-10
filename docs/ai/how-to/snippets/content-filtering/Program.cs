@@ -5,7 +5,7 @@ using Microsoft.Extensions.AI;
 IChatClient client =
     new AzureOpenAIClient(
         new Uri("YOUR_MODEL_ENDPOINT"),
-        new DefaultAzureCredential()).AsChatClient("YOUR_MODEL_DEPLOYMENT_NAME");
+        new DefaultAzureCredential()).GetChatClient("YOUR_MODEL_DEPLOYMENT_NAME").AsIChatClient();
 
 try
 {

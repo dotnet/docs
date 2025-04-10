@@ -7,7 +7,7 @@ string? model = config["ModelName"];
 string? key = config["OpenAIKey"];
 
 IChatClient client =
-    new ChatClientBuilder(new OpenAIClient(key).AsChatClient(model ?? "gpt-4o"))
+    new ChatClientBuilder(new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient())
     .UseFunctionInvocation()
     .Build();
 

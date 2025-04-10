@@ -14,7 +14,7 @@ The latest stable version is available on [NuGet](https://www.nuget.org/packages
 ### [.NET CLI](#tab/net-cli)
 
 ```dotnetcli
-dotnet package add Microsoft.Data.Sqlite
+dotnet add package Microsoft.Data.Sqlite
 ```
 
 ### [Visual Studio](#tab/visual-studio)

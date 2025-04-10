@@ -64,6 +64,9 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
     > Collection started.  Press CTRL+C to stop.
     > ```
 
+    > [!NOTE]
+    > LTTng had a breaking change between versions 2.12 and 2.13. The .NET runtime currently supports version 2.12. If your Linux distribution has adopted 2.13 or later then we recommend disabling the LTTng portion of the perfcollect functionality. To do this add the option '-nolttng' to the perfcollect command-line and in step 3 do not set the DOTNET_EnableEventLog environment variable.
+
 3. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
 
     > ```bash

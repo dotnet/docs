@@ -50,3 +50,4 @@ Refer to the <xref:System.Linq.AsyncEnumerable> API documentation for the full s
 
 - <xref:System.Linq.AsyncEnumerable?displayProperty=fullName>
 - <xref:System.Collections.Generic.IAsyncEnumerable`1?displayProperty=fullName>
+- [System.Linq.Async package](https://www.nuget.org/packages/System.Linq.Async) (community-maintained)

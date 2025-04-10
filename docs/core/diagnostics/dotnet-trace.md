@@ -166,16 +166,17 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--diagnostic-port <port-address[,(listen|connect)]>`**
 
-  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be traced. dotnet-trace and the .NET runtime inside the target process must agree on the port-address with one listening and the other connecting. dotnet-trace will automatically determine the correct port when attaching using the `--process-id` or `--name` options, or when launching a process using the `-- <command>` option. Specifying the port explicitly is usually only necessary when waiting for a process that will start in the future or communicating to a process that is running inside a container that isn't part of the current process namespace.
+  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be traced. dotnet-trace and the .NET runtime inside the target process must agree on the port-address, with one listening and the other connecting. dotnet-trace automatically determines the correct port when attaching using the `--process-id` or `--name` options, or when launching a process using the `-- <command>` option. It's usually only necessary to specify the port explicitly when waiting for a process that will start in the future or communicating to a process that is running inside a container that isn't part of the current process namespace.
 
   The `port-address` differs by OS:
-  - Linux and macOS - path to a Unix domain socket such as `/foo/tool1.socket`
-  - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`
+
+  - Linux and macOS - a path to a Unix domain socket such as `/foo/tool1.socket`.
+  - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`.
   - Android, iOS, and tvOS - an IP:port such as `127.0.0.1:9000`.
   
-  By default dotnet-trace will listen at the specified address. You may request dotnet-trace to connect instead by appending `,connect` after the address. For example `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that is listening to the `/foo/tool1.socket` unix domain socket.
+  By default, `dotnet-trace` listens at the specified address. You can request `dotnet-trace` to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that is listening to the `/foo/tool1.socket` Unix domain socket.
   
-  See [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup) to learn how to use this option to collect a trace from app startup.
+  To learn how to use this option to collect a trace from app startup, see [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup).
   
 - **`--duration <time-to-run>`**
 

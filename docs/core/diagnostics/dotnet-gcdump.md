@@ -117,14 +117,15 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 - **`--diagnostic-port <port-address[,(listen|connect)]>`**
 
-  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be dumped. dotnet-gcdump and the .NET runtime inside the target process must agree on the port-address with one listening and the other connecting. dotnet-gcdump will automatically determine the correct port when attaching using the `--process-id` or `--name` options. Specifying the port explicitly is usually only necessary when communicating to a process that is running inside a container that isn't part of the current process namespace.
+  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be dumped. dotnet-gcdump and the .NET runtime inside the target process must agree on the port-address, with one listening and the other connecting. dotnet-gcdump automatically determines the correct port when attaching using the `--process-id` or `--name` options. It's usually only necessary to specify the port explicitly when communicating to a process that's running inside a container that isn't part of the current process namespace.
 
   The `port-address` differs by OS:
-  - Linux and macOS - path to a Unix domain socket such as `/foo/tool1.socket`
-  - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`
+
+  - Linux and macOS - a path to a Unix domain socket such as `/foo/tool1.socket`.
+  - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`.
   - Android, iOS, and tvOS - an IP:port such as `127.0.0.1:9000`.
   
-  By default dotnet-gcdump will listen at the specified address. You may request dotnet-gcdump to connect instead by appending `,connect` after the address. For example `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that is listening to the `/foo/tool1.socket` unix domain socket.
+  By default, dotnet-gcdump listens at the specified address. You can request dotnet-gcdump to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that's listening to the `/foo/tool1.socket` Unix domain socket.
 
 > [!NOTE]
 > To collect a GC dump using `dotnet-gcdump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.

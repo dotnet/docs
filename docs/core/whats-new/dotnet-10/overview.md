@@ -64,7 +64,7 @@ For details, see [What's new in .NET Aspire 9.1](/dotnet/aspire/whats-new/dotnet
 
 ## ASP.NET Core
 
-The ASP.NET Core 10.0 release introduces several new features and enhancements, including Blazor improvements, OpenAPI enhancements, and minimal API updates. 
+The ASP.NET Core 10.0 release introduces several new features and enhancements, including Blazor improvements, OpenAPI enhancements, and minimal API updates.
 
 For details, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/release-notes/aspnetcore-10.0).
 
@@ -85,7 +85,7 @@ For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp
 
 ## .NET MAUI
 
-The .NET MAUI updates in .NET 10 include several new features and quality improvements for .NET MAUI, .NET for Android, and .NET for iOS, Mac Catalyst, macOS, and tvOS. 
+The .NET MAUI updates in .NET 10 include several new features and quality improvements for .NET MAUI, .NET for Android, and .NET for iOS, Mac Catalyst, macOS, and tvOS.
 
 For details, see [What's new in .NET MAUI in .NET 10](/dotnet/maui/whats-new/dotnet-10).
 

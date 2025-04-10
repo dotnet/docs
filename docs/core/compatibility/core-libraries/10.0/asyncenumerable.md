@@ -44,7 +44,7 @@ If `System.Linq.Async` is consumed indirectly via another package, avoid ambigui
 
 Most consuming code will not need changes, but some call sites might need updates to refer to newer names and signatures.
 
-Refer to the <xref:System.Linq.AsyncEnumerable> API documentation for the full set of LINQ extension methods available for `IAsyncEnumerable<T>`.
+Refer to the [System.Linq.AsyncEnumerable API documentation](xref:System.Linq.AsyncEnumerable) for the full set of LINQ extension methods available for <xref:System.Collections.Generic.IAsyncEnumerable`1>.
 
 ## Affected APIs
 

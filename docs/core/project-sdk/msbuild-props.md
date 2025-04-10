@@ -395,9 +395,9 @@ For example, for a .NET 5 app, the output path changes from `bin\Debug\net5.0` t
 
 ### AppendRuntimeIdentifierToOutputPath
 
-The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path.
+The `AppendRuntimeIdentifierToOutputPath` property controls whether the [runtime identifier (RID)](../rid-catalog.md) is appended to the output path. The .NET SDK automatically appends the target framework and, if present, the runtime identifier (RID) to the output path. Setting `AppendRuntimeIdentifierToOutputPath` to `false` prevents the RID from being appended to the output path. (However, the RID **is** still appended to the publish path. For more information, see [dotnet/sdk#12114](https://github.com/dotnet/sdk/issues/12114).)
 
-For example, for a .NET 5 app and an RID of `win-x64`, the following setting changes the output path from `bin\Debug\net5.0\win-x64` to `bin\Debug\net5.0`:
+For example, for a .NET 9 app and an RID of `win-x64`, the following setting changes the output path from `bin\Debug\net9.0\win-x64` to `bin\Debug\net9.0`:
 
 ```xml
 <PropertyGroup>

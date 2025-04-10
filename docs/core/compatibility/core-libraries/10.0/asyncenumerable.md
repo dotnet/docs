@@ -46,5 +46,5 @@ Most consuming code will not need changes, but some call sites might need update
 
 ## Affected APIs
 
-- `System.Linq.AsyncEnumerable`
+- <xref:System.Linq.AsyncEnumerable?displayProperty=fullName>
 - <xref:System.Collections.Generic.IAsyncEnumerable`1>

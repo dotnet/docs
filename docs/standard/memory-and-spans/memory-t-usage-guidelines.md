@@ -19,7 +19,6 @@ Buffers can be passed around between APIs and can sometimes be accessed from mul
 - **Ownership**. The owner of a buffer instance is responsible for lifetime management, including destroying the buffer when it's no longer in use. All buffers have a single owner. Generally the owner is the component that created the buffer or that received the buffer from a factory. Ownership can also be transferred; **Component-A** can relinquish control of the buffer to **Component-B**, at which point **Component-A** may no longer use the buffer, and **Component-B** becomes responsible for destroying the buffer when it's no longer in use.
 
 - **Consumption**. The consumer of a buffer instance is allowed to use the buffer instance by reading from it and possibly writing to it. Buffers can have one consumer at a time unless some external synchronization mechanism is provided. The active consumer of a buffer isn't necessarily the buffer's owner.
-
 - **Lease**. The lease is the length of time that a particular component is allowed to be the consumer of the buffer.
 
 The following pseudo-code example illustrates these three concepts. `Buffer` in the pseudo-code represents a <xref:System.Memory%601> or <xref:System.Span%601> buffer of type <xref:System.Char>. The `Main` method instantiates the buffer, calls the `WriteInt32ToBuffer` method to write the string representation of an integer to the buffer, and then calls the `DisplayBufferToConsole` method to display the value of the buffer.
@@ -64,21 +63,19 @@ The `WriteInt32ToBuffer` method has a lease on (can consume) the buffer between 
 As the [Owners, consumers, and lifetime management](#owners-consumers-and-lifetime-management) section notes, a buffer always has an owner. .NET supports two ownership models:
 
 - A model that supports single ownership. A buffer has a single owner for its entire lifetime.
-
 - A model that supports ownership transfer. Ownership of a buffer can be transferred from its original owner (its creator) to another component, which then becomes responsible for the buffer's lifetime management. That owner can in turn transfer ownership to another component, and so on.
 
 You use the <xref:System.Buffers.IMemoryOwner%601?displayProperty=nameWithType> interface to explicitly manage the ownership of a buffer. <xref:System.Buffers.IMemoryOwner%601> supports both ownership models. The component that has an <xref:System.Buffers.IMemoryOwner%601> reference owns the buffer. The following example uses an <xref:System.Buffers.IMemoryOwner%601?> instance to reflect the ownership of a <xref:System.Memory%601> buffer.
 
-[!code-csharp[ownership](~/samples/snippets/standard/buffers/memory-t/owner/owner.cs)]
+:::code language="csharp" source="snippets/usage-guidelines/owner/owner.cs":::
 
-We can also write this example with the [`using` statement](../../csharp/language-reference/statements/using.md):
+You can also write this example with the [`using` statement](../../csharp/language-reference/statements/using.md):
 
-[!code-csharp[ownership-using](~/samples/snippets/standard/buffers/memory-t/owner-using/owner-using.cs)]
+:::code language="csharp" source="snippets/usage-guidelines/owner-using/owner-using.cs":::
 
 In this code:
 
 - The `Main` method holds the reference to the <xref:System.Buffers.IMemoryOwner%601> instance, so the `Main` method is the owner of the buffer.
-
 - The `WriteInt32ToBuffer` and `DisplayBufferToConsole` methods accept <xref:System.Memory%601> as a public API. Therefore, they are consumers of the buffer. These methods consume the buffer one at a time.
 
 Although the `WriteInt32ToBuffer` method is intended to write a value to the buffer, the `DisplayBufferToConsole` method isn't intended to. To reflect this, it could have accepted an argument of type <xref:System.ReadOnlyMemory%601>. For more information on <xref:System.ReadOnlyMemory%601>, see [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only](#rule-2).
@@ -88,10 +85,9 @@ Although the `WriteInt32ToBuffer` method is intended to write a value to the buf
 You can create a <xref:System.Memory%601> instance without using <xref:System.Buffers.IMemoryOwner%601>. In this case, ownership of the buffer is implicit rather than explicit, and only the single-owner model is supported. You can do this by:
 
 - Calling one of the  <xref:System.Memory%601> constructors directly, passing in a `T[]`, as the following example does.
-
 - Calling the [String.AsMemory](xref:System.MemoryExtensions.AsMemory(System.String)) extension method to produce a `ReadOnlyMemory<char>` instance.
 
-[!code-csharp[ownerless-memory](~/samples/snippets/standard/buffers/memory-t/ownerless/ownerless.cs)]
+:::code language="csharp" source="snippets/usage-guidelines/ownerless/ownerless.cs":::
 
 The method that initially creates the <xref:System.Memory%601> instance is the implicit owner of the buffer. Ownership cannot be transferred to any other component because there is no <xref:System.Buffers.IMemoryOwner%601> instance to facilitate the transfer. (As an alternative, you can also imagine that the runtime's garbage collector owns the buffer, and all methods just consume the buffer.)
 
@@ -135,7 +131,7 @@ In the earlier examples, the `DisplayBufferToConsole` method only reads from the
 void DisplayBufferToConsole(ReadOnlyMemory<char> buffer);
 ```
 
-In fact, if we combine this rule and Rule #1, we can do even better and rewrite the method signature as follows:
+In fact, if you combine this rule and Rule #1, we can do even better and rewrite the method signature as follows:
 
 ```csharp
 void DisplayBufferToConsole(ReadOnlySpan<char> buffer);
@@ -147,7 +143,7 @@ The `DisplayBufferToConsole` method now works with virtually every buffer type i
 
 This relates to the "lease" concept mentioned earlier. A void-returning method's lease on the <xref:System.Memory%601> instance begins when the method is entered, and it ends when the method exits. Consider the following example, which calls `Log` in a loop based on input from the console.
 
-[!code-csharp[void-returning](~/samples/snippets/standard/buffers/memory-t/void-returning/void-returning.cs#1)]
+:::code language="csharp" source="snippets/usage-guidelines/void-returning/void-returning.cs":::
 
 If `Log` is a fully synchronous method, this code will behave as expected because there is only one active consumer of the memory instance at any given time.
 But imagine instead that `Log` has this implementation.
@@ -171,17 +167,17 @@ There are several ways to resolve this:
 
 - The `Log` method can return a <xref:System.Threading.Tasks.Task> instead of `void`, as the following implementation of the `Log` method does.
 
-   [!code-csharp[task-returning](~/samples/snippets/standard/buffers/memory-t/task-returning2/task-returning2.cs#1)]
+  :::code language="csharp" source="snippets/usage-guidelines/task-returning-async/task-returning-async.cs" id="Snippet1":::
 
 - `Log` can instead be implemented as follows:
 
-   [!code-csharp[defensive-copy](~/samples/snippets/standard/buffers/memory-t/task-returning/task-returning.cs#1)]
+  :::code language="csharp" source="snippets/usage-guidelines/task-returning/task-returning.cs" id="Snippet1":::
 
 ### Rule #4: If your method accepts a Memory\<T> and returns a Task, you must not use the Memory\<T> instance after the Task transitions to a terminal state
 
 This is just the async variant of Rule #3. The `Log` method from the earlier example can be written as follows to comply with this rule:
 
-[!code-csharp[task-returning-async](~/samples/snippets/standard/buffers/memory-t/task-returning-async/task-returning-async.cs#1)]
+:::code language="csharp" source="snippets/usage-guidelines/task-returning-async/task-returning-async.cs" id="Snippet1":::
 
 Here, "terminal state" means that the task transitions to a completed, faulted, or canceled state. In other words, "terminal state" means "anything that would cause await to throw or to continue execution."
 

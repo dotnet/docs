@@ -41,6 +41,5 @@ If your application relied on the `netcoredeps` subdirectory for p/invokes or cu
 
 ## Affected APIs
 
-
 - `DllImport`
 - <xref:System.Runtime.InteropServices.NativeLibrary.Load*?displayProperty=fullName>

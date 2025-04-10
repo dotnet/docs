@@ -285,5 +285,5 @@ The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have limited tooling supp
 
 ## See also
 
-- [Microsoft.Testing.Platform&ndash;related properties](../project-sdk/msbuild-props.md#microsofttestingplatformndashrelated-properties)
-- [VSTest&ndash;related properties](../project-sdk/msbuild-props.md#vstestndashrelated-properties)
+- [Microsoft.Testing.Platform&ndash;related properties](../project-sdk/msbuild-props.md#microsofttestingplatformrelated-properties)
+- [VSTest&ndash;related properties](../project-sdk/msbuild-props.md#vstestrelated-properties)

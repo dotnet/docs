@@ -2,7 +2,7 @@
 title: Tracing .NET applications with PerfCollect.
 description: A tutorial that walks you through collecting a trace with perfcollect in .NET.
 ms.topic: tutorial
-ms.date: 10/23/2020
+ms.date: 04/10/2025
 ---
 
 # Trace .NET applications with PerfCollect
@@ -22,27 +22,26 @@ Follow these steps to prepare your machine to collect a performance trace with `
 
 1. Download `perfcollect`.
 
-    > ```bash
-    > curl -OL https://aka.ms/perfcollect
-    > ```
+    ```bash
+    curl -OL https://aka.ms/perfcollect
+    ```
 
-2. Make the script executable.
+1. Make the script executable.
 
-    > ```bash
-    > chmod +x perfcollect
-    > ```
+    ```bash
+    chmod +x perfcollect
+    ```
 
-3. Install tracing prerequisites - these are the actual tracing libraries.
+1. Install tracing prerequisites - these are the actual tracing libraries.
 
-    > ```bash
-    > sudo ./perfcollect install
-    > ```
+    ```bash
+    sudo ./perfcollect install
+    ```
 
     This will install the following prerequisites on your machine:
 
     1. `perf`: the Linux Performance Events subsystem and companion user-mode collection/viewer application. `perf` is part of the Linux kernel source, but is not usually installed by default.
-
-    2. `LTTng`: Used to capture event data emitted at run time by CoreCLR. This data is then used to analyze the behavior of various runtime components such as the GC, JIT, and thread pool.
+    1. `LTTng`: Used to capture event data emitted at run time by CoreCLR. This data is then used to analyze the behavior of various runtime components such as the GC, JIT, and thread pool.
 
 Recent versions of .NET Core and the Linux perf tool support automatic resolution of method names for framework code.
 
@@ -51,28 +50,27 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
 ## Collect a trace
 
 1. Have two shells available - one for controlling tracing, referred to as **[Trace]**, and one for running the application, referred to as **[App]**.
+1. **[Trace]** Start collection.
 
-2. **[Trace]** Start collection.
-
-    > ```bash
-    > sudo ./perfcollect collect sampleTrace
-    > ```
+    ```bash
+    sudo ./perfcollect collect sampleTrace
+    ```
 
     Expected Output:
 
-    > ```bash
-    > Collection started.  Press CTRL+C to stop.
-    > ```
+    ```bash
+    Collection started.  Press CTRL+C to stop.
+    ```
 
     > [!NOTE]
     > LTTng had a breaking change between versions 2.12 and 2.13. The .NET runtime currently supports version 2.12. If your Linux distribution has adopted 2.13 or later then we recommend disabling the LTTng portion of the perfcollect functionality. To do this add the option '-nolttng' to the perfcollect command-line and in step 3 do not set the DOTNET_EnableEventLog environment variable.
 
-3. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
+1. **[App]** Set up the application shell with the following environment variables - this enables tracing configuration of CoreCLR.
 
-    > ```bash
-    > export DOTNET_PerfMapEnabled=1
-    > export DOTNET_EnableEventLog=1
-    > ```
+    ```bash
+    export DOTNET_PerfMapEnabled=1
+    export DOTNET_EnableEventLog=1
+    ```
 
     > [!NOTE]
     > When executing the app with .NET 7, you must also set `DOTNET_EnableWriteXorExecute=0` in addition to the preceding environment variables.  For example:
@@ -83,33 +81,30 @@ For resolving method names of native runtime DLLs (such as libcoreclr.so), `perf
 
    [!INCLUDE [complus-prefix](../../../includes/complus-prefix.md)]
 
-4. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
+1. **[App]** Run the app - let it run as long as you need to in order to capture the performance problem. The exact length can be as short as you need as long as it sufficiently captures the window of time where the performance problem you want to investigate occurs.
 
-    > ```bash
-    > dotnet run
-    > ```
+    ```bash
+    dotnet run
+    ```
 
-5. **[Trace]** Stop collection - hit CTRL+C.
+1. **[Trace]** Stop collection - press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-    > ```bash
-    > ^C
-    > ...STOPPED.
-    >
-    > Starting post-processing. This may take some time.
-    >
-    > Generating native image symbol files
-    > ...SKIPPED
-    > Saving native symbols
-    > ...FINISHED
-    > Exporting perf.data file
-    > ...FINISHED
-    > Compressing trace files
-    > ...FINISHED
-    > Cleaning up artifacts
-    > ...FINISHED
-    >
-    > Trace saved to sampleTrace.trace.zip
-    > ```
+    ```output
+    ^C
+    ...STOPPED.
+        Starting post-processing. This may take some time.
+        Generating native image symbol files
+    ...SKIPPED
+    Saving native symbols
+    ...FINISHED
+    Exporting perf.data file
+    ...FINISHED
+    Compressing trace files
+    ...FINISHED
+    Cleaning up artifacts
+    ...FINISHED
+        Trace saved to sampleTrace.trace.zip
+    ```
 
     The compressed trace file is now stored in the current working directory.
 
@@ -150,18 +145,15 @@ To see an aggregate view of both the CPU sample and the events, you can use `Per
 
 3. Run PerfView.exe
 
-    > ```cmd
-    > PerfView.exe <path to trace.zip file>
-    > ```
+    ```cmd
+    PerfView.exe <path to trace.zip file>
+    ```
 
 PerfView will display the list of views that are supported based on the data contained in the trace file.
 
 - For CPU investigations, choose **CPU stacks**.
-
 - For detailed GC information, choose **GCStats**.
-
 - For per-process/module/method JIT information, choose **JITStats**.
-
 - If there is not a view for the information you need, you can try looking for the events in the raw events view.  Choose **Events**.
 
 For more information on how to interpret views in PerfView, see help links in the view itself, or from the main window in PerfView, choose **Help->Users Guide**.

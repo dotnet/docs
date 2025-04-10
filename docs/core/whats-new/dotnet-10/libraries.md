@@ -133,7 +133,7 @@ When you use source generators for JSON serialization, the generated context thr
 
 ## More left-handed matrix transformation methods
 
-.NET 10 adds the remaining APIs for creating left-handed transformation matrices for billboard and constrained-billboard matrices. You can use these methods like their existing right-handed counterparts [add xrefs to the existing counterparts] when using a left-handed coordinate system instead.
+.NET 10 adds the remaining APIs for creating left-handed transformation matrices for billboard and constrained-billboard matrices. You can use these methods like their existing right-handed counterparts <xref:System.Numerics.Matrix4x4.CreateBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)> and <xref:System.Numerics.Matrix4x4.CreateConstrainedBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)> when using a left-handed coordinate system instead.
 
 ```csharp
 public partial struct Matrix4x4
@@ -191,9 +191,9 @@ public partial class Meter : IDisposable
 }
 ```
 
-## Byte-Level support in BPE tokenizer
+## Byte-level support in BPE tokenizer
 
-The <xref:Microsoft.ML.Tokenizers.BpeTokenizer> now supports Byte-Level encoding, enabling compatibility with models like DeepSeek. This enhancement processes vocabulary as UTF-8 bytes, simplifying tokenizer creation with the new `BpeOptions` type.
+The <xref:Microsoft.ML.Tokenizers.BpeTokenizer> now supports byte-level encoding, enabling compatibility with models like DeepSeek. This enhancement processes vocabulary as UTF-8 bytes. In addition, the new `BpeOptions` type simplifies tokenizer configuration.
 
 ```csharp
 BpeOptions bpeOptions = new BpeOptions(vocabs);
@@ -214,4 +214,4 @@ LightGbmBinaryTrainer trainer = ML.BinaryClassification.Trainers.LightGbm(new Li
 
 ## Tensor enhancements
 
-The <xref:System.Numerics.Tensors.Tensor> class now includes a non-generic interface for operations like accessing `Lengths` and `Strides`. Slice operations no longer copy data, improving performance. Additionally, data can be accessed non-generically by boxing to `object` when performance is not critical.
+The <xref:System.Numerics.Tensors.Tensor> class now includes a nongeneric interface for operations like accessing `Lengths` and `Strides`. Slice operations no longer copy data, improving performance. Additionally, data can be accessed nongenerically by boxing to `object` when performance isn't critical.

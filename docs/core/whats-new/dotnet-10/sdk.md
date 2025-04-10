@@ -36,7 +36,7 @@ The new noun-first forms align with general CLI standards, making the `dotnet` C
 
 ## CLI commands default to interactive mode in interactive terminals
 
-The `--interactive` flag is now enabled by default for CLI commands in interactive terminals. This change allows commands to dynamically retrieve credentials or perform other interactive behaviors without requiring the flag to be explicitly set. For non-interactive scenarios, you can disable interactivity by specifying `--interactive false`.
+The `--interactive` flag is now enabled by default for CLI commands in interactive terminals. This change allows commands to dynamically retrieve credentials or perform other interactive behaviors without requiring the flag to be explicitly set. For noninteractive scenarios, you can disable interactivity by specifying `--interactive false`.
 
 ## Native shell tab-completion scripts
 
@@ -56,7 +56,7 @@ A new `<ContainerImageFormat>` property allows you to explicitly set the format 
 
 ## Support for Microsoft Testing Platform in `dotnet test`
 
-Starting in .NET 10 Preview 3, `dotnet test` natively supports the [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *dotnet.config* file:
+Starting in .NET 10, `dotnet test` natively supports the [Microsoft.Testing.Platform](../../testing/microsoft-testing-platform-intro.md). To enable this feature, add the following configuration to your *dotnet.config* file:
 
 ```ini
 [dotnet.test:runner]

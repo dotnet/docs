@@ -85,7 +85,7 @@ Because the JIT knows `numbers` is an array of only three integers at compile ti
 
 ## Stack allocation of small arrays of reference types
 
-Building on the stack allocation improvements introduced in .NET 9, .NET 10 Preview 3 extends this optimization to small arrays of reference types. Previously, arrays of reference types were always allocated on the heap, even when their lifetime was scoped to a single method. Now, the JIT can stack-allocate such arrays when it determines that they don't outlive their creation context. For example:
+Building on the stack allocation improvements introduced in .NET 9, .NET 10 extends this optimization to small arrays of reference types. Previously, arrays of reference types were always allocated on the heap, even when their lifetime was scoped to a single method. Now, the JIT can stack-allocate such arrays when it determines that they don't outlive their creation context. For example:
 
 ```csharp
 static void Print()
@@ -104,7 +104,7 @@ In this example, the array `words` is now allocated on the stack, eliminating he
 
 The JIT compiler in .NET 10 introduces a new approach to organizing method code into basic blocks for better runtime performance. Previously, the JIT used a reverse postorder (RPO) traversal of the program's flowgraph as an initial layout, followed by iterative transformations. While effective, this approach had limitations in modeling the trade-offs between reducing branching and increasing hot code density.
 
-In .NET 10, the JIT models the block reordering problem as a reduction of the asymmetric Travelling Salesman Problem and implements the 3-opt heuristic to find a near-optimal traversal. This optimization improves hot path density and reduces branch distances, resulting in better runtime performance. For more details, see For more details, see [dotnet/runtime #107749](https://github.com/dotnet/runtime/issues/107749).
+In .NET 10, the JIT models the block reordering problem as a reduction of the asymmetric Travelling Salesman Problem and implements the 3-opt heuristic to find a near-optimal traversal. This optimization improves hot path density and reduces branch distances, resulting in better runtime performance. For more details, see [dotnet/runtime #107749](https://github.com/dotnet/runtime/issues/107749).
 
 ## AVX10.2 support
 

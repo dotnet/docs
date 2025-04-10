@@ -95,7 +95,7 @@ The ASP.NET Core 10.0 release introduces several new features and enhancements, 
   - Standalone Blazor WebAssembly apps now support referencing fingerprinted static web assets and import maps.
   - <xref:System.Net.Http.HttpClient> response streaming is enabled by default on WebAssembly, improving performance and reducing memory usage for large responses.
   - The app context switch `DisableMatchAllIgnoresLeftUriPart` is now renamed to `EnableMatchAllForQueryStringAndFragment`.
-  - Specify the environment for standalone Blazor WebAssembly apps at build-time using the `<WasmApplicationEnvironmentName>` property.
+  - Specify the environment for standalone Blazor WebAssembly apps at build time using the `<WasmApplicationEnvironmentName>` property.
   - The ASP.NET Core Web API (native AOT) template now includes OpenAPI support by default.
 
 For more information, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/release-notes/aspnetcore-10.0).

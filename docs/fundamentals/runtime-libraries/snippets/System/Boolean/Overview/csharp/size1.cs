@@ -1,4 +1,4 @@
-﻿// <Snippet14>
+// <Snippet14>
 using System;
 
 public struct BoolStruct
@@ -17,13 +17,13 @@ public class Example9
       unsafe {
          BoolStruct b = new BoolStruct();
          bool* addr = (bool*) &b;
-         Console.WriteLine("Size of BoolStruct: {0}", sizeof(BoolStruct));
+         Console.WriteLine($"Size of BoolStruct: {sizeof(BoolStruct)}");
          Console.WriteLine("Field offsets:");
-         Console.WriteLine("   flag1: {0}", (bool*) &b.flag1 - addr);
-         Console.WriteLine("   flag1: {0}", (bool*) &b.flag2 - addr);
-         Console.WriteLine("   flag1: {0}", (bool*) &b.flag3 - addr);
-         Console.WriteLine("   flag1: {0}", (bool*) &b.flag4 - addr);
-         Console.WriteLine("   flag1: {0}", (bool*) &b.flag5 - addr);
+         Console.WriteLine($"   flag1: {(bool*) &b.flag1 - addr}");
+         Console.WriteLine($"   flag1: {(bool*) &b.flag2 - addr}");
+         Console.WriteLine($"   flag1: {(bool*) &b.flag3 - addr}");
+         Console.WriteLine($"   flag1: {(bool*) &b.flag4 - addr}");
+         Console.WriteLine($"   flag1: {(bool*) &b.flag5 - addr}");
       }
    }
 }

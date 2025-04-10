@@ -13,6 +13,7 @@ items:
         items:
           - name: Overview
             href: ../core/install/index.yml
+            displayName: install
           - name: Install on Windows
             href: ../core/install/windows.md
           - name: Install on macOS
@@ -21,29 +22,40 @@ items:
             items:
               - name: Overview
                 href: ../core/install/linux.md
+                displayName: linux
               - name: Ubuntu
+                expanded: true
                 items:
-                  - name: Overview
-                    href: ../core/install/linux-ubuntu.md
                   - name: Install
                     href: ../core/install/linux-ubuntu-install.md
+                    displayName: ubuntu
+                  - name: Decision guide
+                    href: ../core/install/linux-ubuntu-decision.md
+                    displayName: ubuntu
               - name: Alpine
                 href: ../core/install/linux-alpine.md
+                displayName: linux
               - name: CentOS Stream
                 href: ../core/install/linux-rhel.md#supported-distributions
+                displayName: linux
               - name: Debian
                 href: ../core/install/linux-debian.md
+                displayName: linux
               - name: Fedora
                 href: ../core/install/linux-fedora.md
+                displayName: linux
               - name: OpenSUSE
                 href: ../core/install/linux-opensuse.md
+                displayName: linux
               - name: Red Hat Enterprise Linux
                 href: ../core/install/linux-rhel.md
               - name: SLES
                 href: ../core/install/linux-sles.md
+                displayName: linux
               - name: Installation script & binaries
                 href: ../core/install/linux-scripted-manual.md
               - name: Install with Snap
+                expanded: true
                 items:
                   - name: Runtime
                     href: ../core/install/linux-snap-runtime.md
@@ -137,6 +149,21 @@ items:
             href: ../core/tutorials/index.md
   - name: What's new in .NET
     items:
+      - name: .NET 10
+        items:
+          - name: What's new
+            items:
+              - name: Overview
+                href: ../core/whats-new/dotnet-10/overview.md
+                displayName: whats new, what's new
+              - name: Runtime
+                href: ../core/whats-new/dotnet-10/runtime.md
+              - name: Libraries
+                href: ../core/whats-new/dotnet-10/libraries.md
+              - name: SDK
+                href: ../core/whats-new/dotnet-10/sdk.md
+          - name: Breaking changes
+            href: ../core/compatibility/10.0.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: .NET 9
         items:
           - name: What's new
@@ -658,6 +685,14 @@ items:
                 href: runtime-libraries/system-text-rune.md
               - name: StringBuilder class
                 href: runtime-libraries/system-text-stringbuilder.md
+      - name: Compliance
+        items:
+          - name: Overview
+            href: ../core/extensions/compliance.md
+          - name: Data classification
+            href: ../core/extensions/data-classification.md
+          - name: Data redaction
+            href: ../core/extensions/data-redaction.md
       - name: Regular expressions
         items:
           - name: Overview

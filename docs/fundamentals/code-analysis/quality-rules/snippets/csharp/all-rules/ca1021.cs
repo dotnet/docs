@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ca1021
 {
@@ -142,8 +142,7 @@ namespace ca1021
                 // The call to the library.
                 disposition[i] = BadRefAndOut.ReplyInformation(
                    t, out reply[i], ref action[i]);
-                Console.WriteLine("Reply: {0} Action: {1}  return? {2} ",
-                   reply[i], action[i], disposition[i]);
+                Console.WriteLine($"Reply: {reply[i]} Action: {action[i]}  return? {disposition[i]} ");
                 i++;
             }
         }

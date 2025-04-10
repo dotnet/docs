@@ -19,6 +19,12 @@ In most cases, accessing <xref:Microsoft.Data.Analysis.DataFrame> is as simple a
 dotnet add package Microsoft.Data.Analysis
 ```
 
+Or, in .NET 10+:
+
+```dotnetcli
+dotnet package add Microsoft.Data.Analysis
+```
+
 ## Load data
 
 DataFrames make it easy to load tabular data. Create a comma-separated file called *housing-prices.csv* with the following data.

@@ -1,4 +1,4 @@
-﻿namespace CsCsrefProgrammingStatements
+namespace CsCsrefProgrammingStatements
 {
     //---------------------------------------------------------------------------
     public class SimpleStatements
@@ -29,8 +29,7 @@
                 // Expression statement (method invocation). A single-line
                 // statement can span multiple text lines because line breaks
                 // are treated as white space, which is ignored by the compiler.
-                System.Console.WriteLine("Radius of circle #{0} is {1}. Circumference = {2:N2}",
-                                        counter, radius, circumference);
+                System.Console.WriteLine($"Radius of circle #{counter} is {radius}. Circumference = {circumference:N2}");
 
                 // Expression statement (postfix increment).
                 counter++;
@@ -103,7 +102,7 @@
 
                 bool areEqual = System.Object.ReferenceEquals(a, b);
                 // False:
-                System.Console.WriteLine("ReferenceEquals(a, b) = {0}", areEqual);
+                System.Console.WriteLine($"ReferenceEquals(a, b) = {areEqual}");
 
                 // Assign b to a.
                 b = a;
@@ -111,7 +110,7 @@
                 // Repeat calls with different results.
                 areEqual = System.Object.ReferenceEquals(a, b);
                 // True:
-                System.Console.WriteLine("ReferenceEquals(a, b) = {0}", areEqual);
+                System.Console.WriteLine($"ReferenceEquals(a, b) = {areEqual}");
             }
         }
         //</Snippet18>
@@ -284,24 +283,24 @@
                 ThreeDPoint pointC = null;
                 int i = 5;
 
-                Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
-                Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
-                Console.WriteLine("null comparison = {0}", pointA.Equals(pointC));
-                Console.WriteLine("Compare to some other type = {0}", pointA.Equals(i));
+                Console.WriteLine($"pointA.Equals(pointB) = {pointA.Equals(pointB)}");
+                Console.WriteLine($"pointA == pointB = {pointA == pointB}");
+                Console.WriteLine($"null comparison = {pointA.Equals(pointC)}");
+                Console.WriteLine($"Compare to some other type = {pointA.Equals(i)}");
 
                 TwoDPoint pointD = null;
                 TwoDPoint pointE = null;
 
-                Console.WriteLine("Two null TwoDPoints are equal: {0}", pointD == pointE);
+                Console.WriteLine($"Two null TwoDPoints are equal: {pointD == pointE}");
 
                 pointE = new TwoDPoint(3, 4);
-                Console.WriteLine("(pointE == pointA) = {0}", pointE == pointA);
-                Console.WriteLine("(pointA == pointE) = {0}", pointA == pointE);
-                Console.WriteLine("(pointA != pointE) = {0}", pointA != pointE);
+                Console.WriteLine($"(pointE == pointA) = {pointE == pointA}");
+                Console.WriteLine($"(pointA == pointE) = {pointA == pointE}");
+                Console.WriteLine($"(pointA != pointE) = {pointA != pointE}");
 
                 System.Collections.ArrayList list = new System.Collections.ArrayList();
                 list.Add(new ThreeDPoint(3, 4, 5));
-                Console.WriteLine("pointE.Equals(list[0]): {0}", pointE.Equals(list[0]));
+                Console.WriteLine($"pointE.Equals(list[0]): {pointE.Equals(list[0])}");
             }
         }
 
@@ -343,7 +342,7 @@
 
                 int uniqueObjects = list.Count();
 
-                Console.WriteLine("there are {0} unique objects", uniqueObjects);
+                Console.WriteLine($"there are {uniqueObjects} unique objects");
 
                 var uniqueHashCodes = (from item in list
                                        select item.GetHashCode())
@@ -354,7 +353,7 @@
                 // This only shows the number of unique values, not the evenness
                 // of their distribution. For that there is a LINQ query example in the docs
                 // how to group by a range.
-                Console.WriteLine("there are {0} unique hash codes", hashCodeCount);
+                Console.WriteLine($"there are {hashCodeCount} unique hash codes");
 
                 Console.WriteLine("Distribution:");
 
@@ -381,7 +380,7 @@
                 // Nested foreach required to iterate over groups and group items.
                 foreach (var hashGroup in queryNumericRange)
                 {
-                    Console.WriteLine("Key: {0} Count: {1}", (hashGroup.Key), hashGroup.Count());
+                    Console.WriteLine($"Key: {(hashGroup.Key)} Count: {hashGroup.Count()}");
                 }
             }
         }
@@ -445,44 +444,44 @@
 
                 // Compare using virtual Equals, static Equals, and == and != operators.
                 // True:
-                Console.WriteLine("pointA.Equals(pointB) = {0}", pointA.Equals(pointB));
+                Console.WriteLine($"pointA.Equals(pointB) = {pointA.Equals(pointB)}");
                 // True:
-                Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
+                Console.WriteLine($"pointA == pointB = {pointA == pointB}");
                 // True:
-                Console.WriteLine("object.Equals(pointA, pointB) = {0}", object.Equals(pointA, pointB));
+                Console.WriteLine($"object.Equals(pointA, pointB) = {object.Equals(pointA, pointB)}");
                 // False:
-                Console.WriteLine("pointA.Equals(null) = {0}", pointA.Equals(null));
+                Console.WriteLine($"pointA.Equals(null) = {pointA.Equals(null)}");
                 // False:
-                Console.WriteLine("(pointA == null) = {0}", pointA == null);
+                Console.WriteLine($"(pointA == null) = {pointA == null}");
                 // True:
-                Console.WriteLine("(pointA != null) = {0}", pointA != null);
+                Console.WriteLine($"(pointA != null) = {pointA != null}");
                 // False:
-                Console.WriteLine("pointA.Equals(i) = {0}", pointA.Equals(i));
+                Console.WriteLine($"pointA.Equals(i) = {pointA.Equals(i)}");
                 // CS0019:
-                // Console.WriteLine("pointA == i = {0}", pointA == i);
+                // Console.WriteLine($"pointA == i = {pointA == i}");
 
                 // Compare unboxed to boxed.
                 System.Collections.ArrayList list = new System.Collections.ArrayList();
                 list.Add(new TwoDPoint(3, 4));
                 // True:
-                Console.WriteLine("pointA.Equals(list[0]): {0}", pointA.Equals(list[0]));
+                Console.WriteLine($"pointA.Equals(list[0]): {pointA.Equals(list[0])}");
 
                 // Compare nullable to nullable and to non-nullable.
                 TwoDPoint? pointC = null;
                 TwoDPoint? pointD = null;
                 // False:
-                Console.WriteLine("pointA == (pointC = null) = {0}", pointA == pointC);
+                Console.WriteLine($"pointA == (pointC = null) = {pointA == pointC}");
                 // True:
-                Console.WriteLine("pointC == pointD = {0}", pointC == pointD);
+                Console.WriteLine($"pointC == pointD = {pointC == pointD}");
 
                 TwoDPoint temp = new TwoDPoint(3, 4);
                 pointC = temp;
                 // True:
-                Console.WriteLine("pointA == (pointC = 3,4) = {0}", pointA == pointC);
+                Console.WriteLine($"pointA == (pointC = 3,4) = {pointA == pointC}");
 
                 pointD = temp;
                 // True:
-                Console.WriteLine("pointD == (pointC = 3,4) = {0}", pointD == pointC);
+                Console.WriteLine($"pointD == (pointC = 3,4) = {pointD == pointC}");
             }
         }
 

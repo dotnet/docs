@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,8 +25,8 @@ namespace htAtomBasic
             Console.WriteLine("Items:");
             foreach (SyndicationItem item in feed.Items)
             {
-                Console.WriteLine("Title: {0}", item.Title.Text);
-                Console.WriteLine("Summary: {0}", ((TextSyndicationContent)item.Summary).Text);
+                Console.WriteLine($"Title: {item.Title.Text}");
+                Console.WriteLine($"Summary: {((TextSyndicationContent)item.Summary).Text}");
             }
             // </Snippet11>
         }

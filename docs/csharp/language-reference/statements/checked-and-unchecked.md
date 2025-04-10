@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 # The checked and unchecked statements (C# reference)
 
-The `checked` and `unchecked` statements specify the overflow-checking context for integral-type arithmetic operations and conversions. When integer arithmetic overflow occurs, the overflow-checking context defines what happens. In a checked context, a <xref:System.OverflowException?displayProperty=nameWithType> is thrown; if overflow happens in a constant expression, a compile-time error occurs. In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, addition wraps from the maximum value to the minimum value. The following example shows the same operation in both a checked and unchecked context:
+The `checked` and `unchecked` statements specify the overflow-checking context for integral-type arithmetic operations and conversions. The default statement is `unchecked`. When integer arithmetic overflow occurs, the overflow-checking context defines what happens. In a checked context, a <xref:System.OverflowException?displayProperty=nameWithType> is thrown; if overflow happens in a constant expression, a compile-time error occurs. In an unchecked context, the operation result is truncated by discarding any high-order bits that don't fit in the destination type. For example, addition wraps from the maximum value to the minimum value. The following example shows the same operation in both a checked and unchecked context:
 
 :::code language="csharp" interactive="try-dotnet-method" source="snippets/checked-and-unchecked/Program.cs" id="MainExample":::
 

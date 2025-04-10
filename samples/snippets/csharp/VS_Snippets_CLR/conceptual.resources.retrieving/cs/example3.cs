@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -16,7 +16,7 @@ public class Example
       foreach (var cultureName in cultureNames) {
          Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
          string greeting = rm.GetString("Greeting", CultureInfo.CurrentCulture);
-         Console.WriteLine("\n{0}!", greeting);
+         Console.WriteLine($"\n{greeting}!");
          Console.Write(rm.GetString("Prompt", CultureInfo.CurrentCulture));
          string name = Console.ReadLine();
          if (! String.IsNullOrEmpty(name))

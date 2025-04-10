@@ -26,8 +26,10 @@ version 8 or greater. Applications that target .NET 8+ include this reference by
 
 ```dotnetcli
 > dotnet new console
-> dotnet add package System.Diagnostics.DiagnosticSource
+> dotnet package add System.Diagnostics.DiagnosticSource
 ```
+
+(If you're using an SDK version of .NET 9 or earlier, use the `dotnet add package` form instead.)
 
 ```csharp
 using System;
@@ -302,14 +304,14 @@ Press p to pause, r to resume, q to quit.
 
 Name                                                  Current Value
 [HatCo.Store]
-    hatco.store.coats_sold (Count)                        8,181    
-    hatco.store.hats_sold (Count)                           548    
+    hatco.store.coats_sold (Count)                        8,181
+    hatco.store.hats_sold (Count)                           548
     hatco.store.order_processing_time
         Percentile
-        50                                                    0.012    
-        95                                                    0.013   
+        50                                                    0.012
+        95                                                    0.013
         99                                                    0.013
-    hatco.store.orders_pending                                9    
+    hatco.store.orders_pending                                9
 ```
 
 This example uses some randomly generated numbers so your values will vary a bit. Dotnet-counters renders Histogram instruments as three percentile statistics (50th, 95th, and 99th) but other tools might summarize the distribution differently or offer more configuration options.
@@ -460,7 +462,7 @@ Name                                                  Current Value
     hatco.store.hats_sold (Count)
         product.color product.size
         blue          19                                     73
-        red           12                                    146    
+        red           12                                    146
 ```
 
 For ObservableCounter and ObservableGauge, tagged measurements can be provided in the callback passed to the constructor:
@@ -507,7 +509,7 @@ Name                                                  Current Value
         customer.country
         Italy                                                 6
         Mexico                                                1
-        Spain                                                 3    
+        Spain                                                 3
 ```
 
 ### Best practices

@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
@@ -29,32 +29,32 @@ namespace Microsoft.ServiceModel.Samples
         public double Add(double n1, double n2)
         {
             double result = n1 + n2;
-            Console.WriteLine("Received Add({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Add({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
         public double Subtract(double n1, double n2)
         {
             double result = n1 - n2;
-            Console.WriteLine("Received Subtract({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Subtract({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
         public double Multiply(double n1, double n2)
         {
             double result = n1 * n2;
-            Console.WriteLine("Received Multiply({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Multiply({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 
         public double Divide(double n1, double n2)
         {
             double result = n1 / n2;
-            Console.WriteLine("Received Divide({0},{1})", n1, n2);
-            Console.WriteLine("Return: {0}", result);
+            Console.WriteLine($"Received Divide({n1},{n2})");
+            Console.WriteLine($"Return: {result}");
             return result;
         }
 

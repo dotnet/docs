@@ -2,8 +2,8 @@
 using OpenTelemetry.Trace;
 
 // Configure OpenTelemetry exporter
-var sourceName = Guid.NewGuid().ToString();
-var tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
+string sourceName = Guid.NewGuid().ToString();
+TracerProvider tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
     .AddSource(sourceName)
     .AddConsoleExporter()
     .Build();
@@ -17,4 +17,4 @@ IChatClient client = new ChatClientBuilder(sampleChatClient)
         configure: static c => c.EnableSensitiveData = true)
     .Build();
 
-Console.WriteLine((await client.CompleteAsync("What is AI?")).Message);
+Console.WriteLine((await client.GetResponseAsync("What is AI?")).Text);

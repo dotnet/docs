@@ -3,7 +3,7 @@ title: Authenticate to Azure OpenAI using .NET
 description: Learn about the different options to authenticate to Azure OpenAI and other services using .NET
 author: alexwolfmsft
 ms.topic: conceptual
-ms.date: 06/27/2024
+ms.date: 04/09/2025
 ---
 
 # Azure AI services authentication and authorization using .NET
@@ -15,7 +15,7 @@ Application requests to Azure AI Services must be authenticated. In this article
 
 The sections ahead provide conceptual overviews for these two approaches, rather than detailed implementation steps. For more detailed information about connecting to Azure services, visit the following resources:
 
-- [Authenticate .NET apps to Azure services](/dotnet/azure/sdk/authentication/)
+- [Authenticate .NET apps to Azure services](../azure/sdk/authentication/index.md)
 - [Identity fundamentals](/entra/fundamentals/identity-fundamental-concepts)
 - [What is Azure RBAC?](/azure/role-based-access-control/overview)
 

@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 using System;
 using System.IO;
 using System.Reflection;
@@ -12,12 +12,11 @@ class MyMemberInfo
         Type myType = Type.GetType("System.IO.File");
         MemberInfo[] myMemberInfoArray = myType.GetMembers();
         // Gets and displays the DeclaringType method.
-        Console.WriteLine("\nThere are {0} members in {1}.",
-            myMemberInfoArray.Length, myType.FullName);
-        Console.WriteLine("{0}.", myType.FullName);
+        Console.WriteLine($"\nThere are {myMemberInfoArray.Length} members in {myType.FullName}.");
+        Console.WriteLine($"{myType.FullName}.");
         if (myType.IsPublic)
         {
-            Console.WriteLine("{0} is public.", myType.FullName);
+            Console.WriteLine($"{myType.FullName} is public.");
         }
     }
 }

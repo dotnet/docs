@@ -1,4 +1,4 @@
-﻿//<snippet01>
+//<snippet01>
 using System;
 using System.IO;
 using System.IO.Pipes;
@@ -30,7 +30,7 @@ public class PipeServer
                 {
                     if (servers[j]!.Join(250))
                     {
-                        Console.WriteLine("Server thread[{0}] finished.", servers[j]!.ManagedThreadId);
+                        Console.WriteLine($"Server thread[{servers[j]!.ManagedThreadId}] finished.");
                         servers[j] = null;
                         i--;    // decrement the thread watch count
                     }
@@ -50,7 +50,7 @@ public class PipeServer
         // Wait for a client to connect
         pipeServer.WaitForConnection();
 
-        Console.WriteLine("Client connected on thread[{0}].", threadId);
+        Console.WriteLine($"Client connected on thread[{threadId}].");
         try
         {
             //<snippet2>
@@ -69,8 +69,7 @@ public class PipeServer
             ReadFileToStream fileReader = new ReadFileToStream(ss, filename);
 
             // Display the name of the user we are impersonating.
-            Console.WriteLine("Reading file: {0} on thread[{1}] as user: {2}.",
-                filename, threadId, pipeServer.GetImpersonationUserName());
+            Console.WriteLine($"Reading file: {filename} on thread[{threadId}] as user: {pipeServer.GetImpersonationUserName()}.");
             pipeServer.RunAsClient(fileReader.Start);
             //</snippet2>
         }
@@ -78,7 +77,7 @@ public class PipeServer
         // or disconnected.
         catch (IOException e)
         {
-            Console.WriteLine("ERROR: {0}", e.Message);
+            Console.WriteLine($"ERROR: {e.Message}");
         }
         pipeServer.Close();
     }

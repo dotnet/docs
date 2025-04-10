@@ -1,4 +1,4 @@
-﻿// <Snippet105>
+// <Snippet105>
 namespace methods;
 
 public class Person
@@ -18,7 +18,7 @@ public static class Example
     {
         Person p1 = new() { FirstName = "John" };
         Person p2 = new() { FirstName = "John" };
-        Console.WriteLine("p1 = p2: {0}", p1.Equals(p2));
+        Console.WriteLine($"p1 = p2: {p1.Equals(p2)}");
     }
 }
 // The example displays the following output:

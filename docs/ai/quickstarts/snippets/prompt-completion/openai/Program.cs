@@ -2,13 +2,13 @@
 using Microsoft.Extensions.Configuration;
 using OpenAI;
 
-var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-string model = config["ModelName"];
-string key = config["OpenAIKey"];
+IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
+string? model = config["ModelName"];
+string? key = config["OpenAIKey"];
 
 // Create the IChatClient
 IChatClient client =
-    new OpenAIClient(key).AsChatClient(model);
+    new OpenAIClient(key).GetChatClient(model).AsIChatClient();
 
 // Create and print out the prompt
 string prompt = $"""
@@ -19,5 +19,5 @@ string prompt = $"""
 Console.WriteLine($"user >>> {prompt}");
 
 // Submit the prompt and print out the response
-ChatCompletion response = await client.CompleteAsync(prompt, new ChatOptions { MaxOutputTokens = 400 });
+ChatResponse response = await client.GetResponseAsync(prompt, new ChatOptions { MaxOutputTokens = 400 });
 Console.WriteLine($"assistant >>> {response}");

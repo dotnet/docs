@@ -1,8 +1,12 @@
 {
     "redirections": [
         {
-            "source_path_from_root": "/docs/ai/quickstarts/get-started-azure-openai.md",
-            "redirect_url": "/dotnet/ai/quickstarts/get-started-openai"
+            "source_path_from_root": "/docs/ai/conceptual/agents.md",
+            "redirect_url": "/dotnet/ai"
+        },
+        {
+            "source_path_from_root": "/docs/ai/how-to/app-service-db-auth.md",
+            "redirect_url": "/dotnet/ai"
         },
         {
             "source_path_from_root": "/docs/ai/how-to/use-redis-for-memory.md",
@@ -13,8 +17,36 @@
             "redirect_url": "/dotnet/ai"
         },
         {
-            "source_path_from_root": "/docs/ai/how-to/app-service-db-auth.md",
-            "redirect_url": "/dotnet/ai"
+            "source_path_from_root": "/docs/ai/quickstarts/get-started-azure-openai.md",
+            "redirect_url": "/dotnet/ai/quickstarts/build-chat-app"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/get-started-openai.md",
+            "redirect_url": "/dotnet/ai/quickstarts/build-chat-app"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/quickstart-ai-chat-with-data.md",
+            "redirect_url": "/dotnet/ai/quickstarts/build-vector-search-app"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/quickstart-assistants.md",
+            "redirect_url": "/dotnet/ai/quickstarts/create-assistant"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/quickstart-azure-openai-tool.md",
+            "redirect_url": "/dotnet/ai/quickstarts/use-function-calling"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/quickstart-local-ai.md",
+            "redirect_url": "/dotnet/ai/quickstarts/chat-local-model"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/quickstart-openai-generate-images.md",
+            "redirect_url": "/dotnet/ai/quickstarts/generate-images"
+        },
+        {
+            "source_path_from_root": "/docs/ai/quickstarts/quickstart-openai-summarize-text.md",
+            "redirect_url": "/dotnet/ai/quickstarts/prompt-model"
         }
     ]
 }

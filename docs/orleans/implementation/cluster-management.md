@@ -16,7 +16,7 @@ In addition to the <xref:Orleans.IMembershipTable> each silo participates in a f
 
 ### The membership protocol
 
-1. Upon startup every silo adds an entry for itself into a well-known, shared table, using an implementation of <xref:Orleans.IMembershipTable>. A combination of silo identity (`ip:port:epoch`) and service deployment id (cluster id) is used as unique keys in the table. Epoch is just time in ticks when this silo started, and as such `ip:port:epoch` is guaranteed to be unique in a given Orleans deployment.
+1. Upon startup every silo adds an entry for itself into a well-known, shared table, using an implementation of <xref:Orleans.IMembershipTable>. Orleans uses a combination of silo identity (`ip:port:epoch`) and service deployment ID (cluster ID) as unique keys in the table. Epoch is just time in ticks when this silo started, and as such `ip:port:epoch` is guaranteed to be unique in a given Orleans deployment.
 
 1. Silos monitor each other directly, via application probes ("are you alive" `heartbeats`). probes are sent as direct messages from silo to silo, over the same TCP sockets that silos communicate. That way, probes fully correlate with actual networking problems and server health. Every silo probes a configurable set of other silos. A silo picks whom to probe by calculating consistent hashes on other silos' identity, forming a virtual ring of all identities, and picking X successor silos on the ring (this is a well-known distributed technique called [consistent hashing](https://en.wikipedia.org/wiki/Consistent_hashing) and is widely used in many distributed hash tables, like [Chord DHT](https://en.wikipedia.org/wiki/Chord_(peer-to-peer))).
 

@@ -21,7 +21,7 @@ ASP.NET Core apps that connect to Azure services generally depend on the followi
 
 - [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) provides helper methods to register clients with the dependency injection service collection and handles various concerns for you, such as setting up logging, handling DI service lifetimes, and authentication credential management.
 - [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) enables Microsoft Entra ID authentication support across the Azure SDK. It provides a set of [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet) implementations to construct Azure SDK clients that support Microsoft Entra authentication.
-- `Azure.<service-namespace>` libraries, such as [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs) and [Azure.Messaging.ServiceBus](https://www.nuget.org/packages/Azure.Messaging.ServiceBus), provide service clients and other types to help you connect to and consume specific Azure services. For a complete inventory of these libraries, see [Libraries using Azure.Core](/dotnet/azure/sdk/packages#libraries-using-azurecore).
+- `Azure.<service-namespace>` libraries, such as [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs) and [Azure.Messaging.ServiceBus](https://www.nuget.org/packages/Azure.Messaging.ServiceBus), provide service clients and other types to help you connect to and consume specific Azure services. For a complete inventory of these libraries, see [Libraries using Azure.Core](packages.md#libraries-using-azurecore).
 
 In the sections ahead, you'll explore how to implement an ASP.NET Core application that uses these libraries.
 
@@ -63,7 +63,7 @@ Complete the following steps to register the services you need:
 
     ---
 
-For more information, see [Dependency injection with the Azure SDK for .NET](/dotnet/azure/sdk/dependency-injection).
+For more information, see [Dependency injection with the Azure SDK for .NET](dependency-injection.md).
 
 ## Authenticate using Microsoft Entra ID
 
@@ -90,10 +90,10 @@ Use the [Azure Identity](/dotnet/api/overview/azure/identity-readme) library for
 
 Azure SDK service clients support configurations to change their default behaviors. There are two ways to configure service clients:
 
-- [JSON configuration files](/dotnet/core/extensions/configuration-providers#json-configuration-provider) are generally the recommended approach because they simplify managing differences in app deployments between environments.
+- [JSON configuration files](../../core/extensions/configuration-providers.md#json-configuration-provider) are generally the recommended approach because they simplify managing differences in app deployments between environments.
 - Inline code configurations can be applied when you register the service client. For example, in the [Register clients and subclients](#register-azure-sdk-clients-with-the-di-service-collection) section, you explicitly passed the URI variables to the client constructors.
 
-`IConfiguration` precedence rules are respected by the `Microsoft.Extensions.Azure` extension methods, which are detailed in the [Configuration Providers](/dotnet/core/extensions/configuration#configuration-providers) documentation.
+`IConfiguration` precedence rules are respected by the `Microsoft.Extensions.Azure` extension methods, which are detailed in the [Configuration Providers](../../core/extensions/configuration.md#configuration-providers) documentation.
 
 Complete the steps in the following sections to update your app to use JSON file configuration for the appropriate environments. Use the `appsettings.Development.json` file for development settings and the `appsettings.Production.json` file for production environment settings. You can add configuration settings whose names are public properties on the <xref:Azure.Core.ClientOptions> class to the JSON file.
 
@@ -128,7 +128,7 @@ You may want to change default Azure client configurations globally or for a spe
 
 The Azure SDK for .NET client libraries can log client library operations to monitor requests and responses to Azure services. Client libraries can also log a variety of other events, including retries, token retrieval, and service-specific events from various clients. When you register an Azure SDK client using the <xref:Microsoft.Extensions.Azure.AzureClientServiceCollectionExtensions.AddAzureClients%2A> extension method, the <xref:Microsoft.Extensions.Azure.AzureEventSourceLogForwarder> is registered with the dependency injection container. The `AzureEventSourceLogForwarder` forwards log messages from Azure SDK event sources to <xref:Microsoft.Extensions.Logging.ILoggerFactory> to enables you to use the standard ASP.NET Core logging configuration for logging.
 
-The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`. For more information on these topics and other scenarios, see [Logging with the Azure SDK for .NET](/dotnet/azure/sdk/logging) and [Dependency injection with the Azure SDK for .NET](/dotnet/azure/sdk/dependency-injection).
+The following table depicts how the Azure SDK for .NET `EventLevel` maps to the ASP.NET Core `LogLevel`. For more information on these topics and other scenarios, see [Logging with the Azure SDK for .NET](logging.md) and [Dependency injection with the Azure SDK for .NET](dependency-injection.md).
 
 | Azure SDK `EventLevel` | ASP.NET Core `LogLevel` |
 |------------------------|-------------------------|

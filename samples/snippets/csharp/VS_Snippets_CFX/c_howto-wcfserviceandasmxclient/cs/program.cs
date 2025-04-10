@@ -1,4 +1,4 @@
-﻿// <snippet0>
+// <snippet0>
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -34,7 +34,7 @@ class Program
         host.AddServiceEndpoint(typeof(IEcho), binding, "echo1");
 
         host.Open();
-        Console.WriteLine("Service listening on {0} . . .", baseAddress);
+        Console.WriteLine($"Service listening on {baseAddress} . . .");
         Console.ReadLine();
         host.Close();
     }

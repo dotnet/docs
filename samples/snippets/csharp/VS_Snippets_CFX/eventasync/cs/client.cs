@@ -1,4 +1,4 @@
-﻿//  Copyright (c) Microsoft Corporation. All rights reserved.
+//  Copyright (c) Microsoft Corporation. All rights reserved.
 // <snippet6>
 using System;
 
@@ -22,7 +22,7 @@ namespace Microsoft.ServiceModel.Samples
             double value2 = 15.99D;
             client.AddCompleted += new EventHandler<AddCompletedEventArgs>(AddCallback);
             client.AddAsync(value1, value2);
-            Console.WriteLine("Add({0},{1})", value1, value2);
+            Console.WriteLine($"Add({value1},{value2})");
             // </snippet5>
 
             // SubtractAsync
@@ -30,19 +30,19 @@ namespace Microsoft.ServiceModel.Samples
             value2 = 76.54D;
             client.SubtractCompleted += new EventHandler<SubtractCompletedEventArgs>(SubtractCallback);
             client.SubtractAsync(value1, value2);
-            Console.WriteLine("Subtract({0},{1})", value1, value2);
+            Console.WriteLine($"Subtract({value1},{value2})");
 
             // Multiply
             value1 = 9.00D;
             value2 = 81.25D;
             double result = client.Multiply(value1, value2);
-            Console.WriteLine("Multiply({0},{1}) = {2}", value1, value2, result);
+            Console.WriteLine($"Multiply({value1},{value2}) = {result}");
 
             // Divide
             value1 = 22.00D;
             value2 = 7.00D;
             result = client.Divide(value1, value2);
-            Console.WriteLine("Divide({0},{1}) = {2}", value1, value2, result);
+            Console.WriteLine($"Divide({value1},{value2}) = {result}");
 
             Console.ReadLine();
 
@@ -54,13 +54,13 @@ namespace Microsoft.ServiceModel.Samples
         // Asynchronous callbacks for displaying results.
         static void AddCallback(object sender, AddCompletedEventArgs e)
         {
-            Console.WriteLine("Add Result: {0}", e.Result);
+            Console.WriteLine($"Add Result: {e.Result}");
         }
         // </snippet4>
 
         static void SubtractCallback(object sender, SubtractCompletedEventArgs e)
         {
-            Console.WriteLine("Subtract Result: {0}", e.Result);
+            Console.WriteLine($"Subtract Result: {e.Result}");
         }
     }
 }

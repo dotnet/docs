@@ -39,6 +39,12 @@ To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` 
 dotnet add package Microsoft.ML.Probabilistic.Compiler
 ```
 
+Or, in .NET 10+:
+
+```dotnetcli
+dotnet package add Microsoft.ML.Probabilistic.Compiler
+```
+
 ## Design your model
 
 The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match. You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner's performance to be greater than the loser's performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.

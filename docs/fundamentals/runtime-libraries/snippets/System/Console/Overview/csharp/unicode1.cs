@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example3
@@ -16,8 +16,7 @@ public class Example3
             codePoint++;
         }
 
-        Console.WriteLine("Current code page: {0}\n",
-                          Console.OutputEncoding.CodePage);
+        Console.WriteLine($"Current code page: {Console.OutputEncoding.CodePage}\n");
         // Display the characters.
         foreach (var ch in chars)
         {

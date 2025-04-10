@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
@@ -34,9 +34,9 @@ namespace Samples
                 if (be is HttpTransportBindingElement)
                 {
                     HttpTransportBindingElement httpElement = (HttpTransportBindingElement)be;
-                    Console.WriteLine("\tBefore: HttpTransportBindingElement.KeepAliveEnabled = {0}", httpElement.KeepAliveEnabled);
+                    Console.WriteLine($"\tBefore: HttpTransportBindingElement.KeepAliveEnabled = {httpElement.KeepAliveEnabled}");
                     httpElement.KeepAliveEnabled = false;
-                    Console.WriteLine("\tAfter:  HttpTransportBindingElement.KeepAliveEnabled = {0}", httpElement.KeepAliveEnabled);
+                    Console.WriteLine($"\tAfter:  HttpTransportBindingElement.KeepAliveEnabled = {httpElement.KeepAliveEnabled}");
                 }
             }
             //</snippet3>

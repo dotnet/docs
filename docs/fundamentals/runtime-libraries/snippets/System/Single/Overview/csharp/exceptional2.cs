@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example7
@@ -8,17 +8,14 @@ public class Example7
         float value1 = 3.065e35f;
         float value2 = 6.9375e32f;
         float result = value1 * value2;
-        Console.WriteLine("PositiveInfinity: {0}",
-                           Single.IsPositiveInfinity(result));
-        Console.WriteLine("NegativeInfinity: {0}\n",
-                          Single.IsNegativeInfinity(result));
+        Console.WriteLine($"PositiveInfinity: {Single.IsPositiveInfinity(result)}");
+        Console.WriteLine($"NegativeInfinity: {Single.IsNegativeInfinity(result)}");
+        Console.WriteLine();
 
         value1 = -value1;
         result = value1 * value2;
-        Console.WriteLine("PositiveInfinity: {0}",
-                           Single.IsPositiveInfinity(result));
-        Console.WriteLine("NegativeInfinity: {0}",
-                          Single.IsNegativeInfinity(result));
+        Console.WriteLine($"PositiveInfinity: {Single.IsPositiveInfinity(result)}");
+        Console.WriteLine($"NegativeInfinity: {Single.IsNegativeInfinity(result)}");
     }
 }
 

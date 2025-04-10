@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.IdentityModel.Selectors;
 using System.ServiceModel;
@@ -242,7 +242,7 @@ namespace Microsoft.ServiceModel.Samples
             double value1 = 100.00D;
             double value2 = 15.99D;
             double result = client.Add(value1, value2);
-            Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
+            Console.WriteLine($"Add({value1},{value2}) = {result}");
 
             // Closing the client closes the connection and cleans up resources.
             client.Close();

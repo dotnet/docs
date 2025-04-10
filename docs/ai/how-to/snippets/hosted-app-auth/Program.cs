@@ -26,7 +26,8 @@ string deployment = builder.Configuration["AZURE_OPENAI_GPT_NAME"];
 
 builder.Services.AddChatClient(
     new AzureOpenAIClient(new Uri(endpoint), credential)
-    .AsChatClient(deployment));
+    .GetChatClient(deployment)
+    .AsIChatClient());
 
 var app = builder.Build();
 
@@ -40,7 +41,7 @@ app.UseHttpsRedirection();
 
 app.MapGet("/test-prompt", async (IChatClient chatClient) =>
 {
-    return await chatClient.CompleteAsync("Test prompt", new ChatOptions());
+    return await chatClient.GetResponseAsync("Test prompt", new ChatOptions());
 })
 .WithName("Test prompt");
 

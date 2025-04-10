@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -85,13 +85,13 @@ public class Test
         MethodInfo m = t.GetMethod("TestMethod");
         ParameterInfo[] p = m.GetParameters();
 
-        Console.WriteLine("\r\nAttributes for assembly: '{0}'", asm);
+        Console.WriteLine($"\r\nAttributes for assembly: '{asm}'");
         ShowAttributeData(CustomAttributeData.GetCustomAttributes(asm));
-        Console.WriteLine("\r\nAttributes for type: '{0}'", t);
+        Console.WriteLine($"\r\nAttributes for type: '{t}'");
         ShowAttributeData(CustomAttributeData.GetCustomAttributes(t));
-        Console.WriteLine("\r\nAttributes for member: '{0}'", m);
+        Console.WriteLine($"\r\nAttributes for member: '{m}'");
         ShowAttributeData(CustomAttributeData.GetCustomAttributes(m));
-        Console.WriteLine("\r\nAttributes for parameter: '{0}'", p);
+        Console.WriteLine($"\r\nAttributes for parameter: '{p}'");
         ShowAttributeData(CustomAttributeData.GetCustomAttributes(p[0]));
     }
 
@@ -100,8 +100,8 @@ public class Test
     {
         foreach( CustomAttributeData cad in attributes )
         {
-            Console.WriteLine("   {0}", cad);
-            Console.WriteLine("      Constructor: '{0}'", cad.Constructor);
+            Console.WriteLine($"   {cad}");
+            Console.WriteLine($"      Constructor: '{cad.Constructor}'");
 
             Console.WriteLine("      Constructor arguments:");
             foreach( CustomAttributeTypedArgument cata
@@ -114,8 +114,7 @@ public class Test
             foreach( CustomAttributeNamedArgument cana
                 in cad.NamedArguments )
             {
-                Console.WriteLine("         MemberInfo: '{0}'",
-                    cana.MemberInfo);
+                Console.WriteLine($"         MemberInfo: '{cana.MemberInfo}'");
                 ShowValueOrArray(cana.TypedValue);
             }
         }
@@ -125,19 +124,17 @@ public class Test
     {
         if (cata.Value.GetType() == typeof(ReadOnlyCollection<CustomAttributeTypedArgument>))
         {
-            Console.WriteLine("         Array of '{0}':", cata.ArgumentType);
+            Console.WriteLine($"         Array of '{cata.ArgumentType}':");
 
             foreach (CustomAttributeTypedArgument cataElement in
                 (ReadOnlyCollection<CustomAttributeTypedArgument>) cata.Value)
             {
-                Console.WriteLine("             Type: '{0}'  Value: '{1}'",
-                    cataElement.ArgumentType, cataElement.Value);
+                Console.WriteLine($"             Type: '{cataElement.ArgumentType}'  Value: '{cataElement.Value}'");
             }
         }
         else
         {
-            Console.WriteLine("         Type: '{0}'  Value: '{1}'",
-                cata.ArgumentType, cata.Value);
+            Console.WriteLine($"         Type: '{cata.ArgumentType}'  Value: '{cata.Value}'");
         }
     }
 }

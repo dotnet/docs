@@ -77,13 +77,13 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
     ```
 
 5. Add a reference to the `dotnet-svcutil.xmlserializer` package by running the following command:
-  
+
     ```dotnetcli
     dotnet add package dotnet-svcutil.xmlserializer
     ```
 
     Running the command should add an entry to your project file similar to this:
-  
+
     ```xml
     <ItemGroup>
       <DotNetCliToolReference Include="dotnet-svcutil.xmlserializer" Version="1.0.0" />

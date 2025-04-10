@@ -1,4 +1,4 @@
-﻿//<snippet23>
+//<snippet23>
 using System;
 using System.Collections.Generic;
 
@@ -20,7 +20,7 @@ class AdvantageGenerics
         LinkedListNode<string> found = llist.Find("test string");
         if (found != null)
         {
-            Console.WriteLine("Item found: {0}", found.Value);
+            Console.WriteLine($"Item found: {found.Value}");
         }
         //<snippet25>
         int index0 = Array.BinarySearch(myArray, "test string");

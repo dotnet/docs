@@ -14,8 +14,8 @@ on:
         default: 'Manual run'
 
 env:
-  DOTNET_VERSION: '9.0.*'
-  DOTNET_QUALITY: 'ga'
+  DOTNET_VERSION: '10.0.*'
+  DOTNET_QUALITY: 'preview'
   DOTNET_DO_INSTALL: 'true' # To install a version of .NET not provided by the runner, set to true
   EnableNuGetPackageRestore: 'True'
 
@@ -31,7 +31,7 @@ jobs:
     steps:
     # Checkout the repository for the PR
     - name: Harden Runner
-      uses: step-security/harden-runner@cb605e52c26070c328afc4562f0b4ada7618a84e # v2.10.4
+      uses: step-security/harden-runner@c6295a65d1254861815972266d5933fd6e532bdf # v2.11.1
       with:
         egress-policy: audit
 
@@ -41,7 +41,7 @@ jobs:
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
-      uses: actions/setup-dotnet@3951f0dfe7a07e2313ec93c75700083e2005cbab #@4.3.0
+      uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 #@4.3.1
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
         dotnet-quality: ${{ env.DOTNET_QUALITY }}

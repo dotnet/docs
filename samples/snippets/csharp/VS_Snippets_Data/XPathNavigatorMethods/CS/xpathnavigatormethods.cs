@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Xml;
 using System.Xml.Schema;
@@ -134,7 +134,7 @@ class XPathNavigatorMethods
             // Use the cloned navigator to get the title element.
             XPathNavigator clone = nodes.Current.Clone();
             clone.MoveToFirstChild();
-            Console.WriteLine("Book title: {0}", clone.Value);
+            Console.WriteLine($"Book title: {clone.Value}");
         }
         //</snippet6>
     }
@@ -202,7 +202,7 @@ class XPathNavigatorMethods
 
         navigator.DeleteSelf();
 
-        Console.WriteLine("Position after delete: {0}", navigator.Name);
+        Console.WriteLine($"Position after delete: {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet9>
     }
@@ -242,7 +242,7 @@ class XPathNavigatorMethods
         XPathNavigator navigator = document.CreateNavigator();
 
         Double total = (double)navigator.Evaluate("sum(descendant::book/price)");
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet10>
     }
 
@@ -257,7 +257,7 @@ class XPathNavigatorMethods
         XPathExpression query = navigator.Compile("sum(descendant::book/price)");
 
         Double total = (double)navigator.Evaluate(query);
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet11>
     }
 
@@ -273,7 +273,7 @@ class XPathNavigatorMethods
         manager.AddNamespace("bk", "http://www.contoso.com/books");
 
         Double total = (double)navigator.Evaluate("sum(descendant::bk:book/bk:price)", manager);
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet12>
     }
 
@@ -289,7 +289,7 @@ class XPathNavigatorMethods
         XPathExpression query = nodes.Current.Compile("sum(descendant::price)");
 
         Double total = (double)navigator.Evaluate(query, nodes);
-        Console.WriteLine("Total price for all books: {0}", total.ToString());
+        Console.WriteLine($"Total price for all books: {total.ToString()}");
         //</snippet13>
     }
     #endregion
@@ -534,7 +534,7 @@ class XPathNavigatorMethods
             if (navigator2.Matches(expr))
             {
                 navigator2.MoveToFirstChild();
-                Console.WriteLine("Book title:  {0}", navigator2.Value);
+                Console.WriteLine($"Book title:  {navigator2.Value}");
             }
         }
         //</snippet24>
@@ -550,7 +550,7 @@ class XPathNavigatorMethods
 
         navigator.MoveToFollowing(XPathNodeType.Element);
 
-        Console.WriteLine("Position: {0}", navigator.Name);
+        Console.WriteLine($"Position: {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet25>
     }
@@ -563,7 +563,7 @@ class XPathNavigatorMethods
 
         navigator.MoveToFollowing("price", "http://www.contoso.com/books");
 
-        Console.WriteLine("Position: {0}", navigator.Name);
+        Console.WriteLine($"Position: {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet26>
     }
@@ -598,12 +598,12 @@ class XPathNavigatorMethods
 
         navigator.MoveToFollowing("price", "http://www.contoso.com/books", boundary);
 
-        Console.WriteLine("Position (after boundary): {0}", navigator.Name);
+        Console.WriteLine($"Position (after boundary): {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
 
         navigator.MoveToFollowing("title", "http://www.contoso.com/books", boundary);
 
-        Console.WriteLine("Position (before boundary): {0}", navigator.Name);
+        Console.WriteLine($"Position (before boundary): {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet28>
     }
@@ -631,7 +631,7 @@ class XPathNavigatorMethods
         {
             case XPathNodeType.Element:
                 if (string.IsNullOrEmpty(navigator.Prefix))
-                    Console.WriteLine("<{0}>", navigator.LocalName);
+                    Console.WriteLine($"<{navigator.LocalName}>");
                 else
                     Console.Write("<{0}:{1}>", navigator.Prefix, navigator.LocalName);
                 Console.WriteLine("\t" + navigator.NamespaceURI);
@@ -650,13 +650,13 @@ class XPathNavigatorMethods
 
             navigator.MoveToParent();
             if (navigator.NodeType == XPathNodeType.Element)
-                Console.WriteLine("</{0}>", navigator.Name);
+                Console.WriteLine($"</{navigator.Name}>");
         }
         else
         {
             if (navigator.NodeType == XPathNodeType.Element)
             {
-                Console.WriteLine("</{0}>", navigator.Name);
+                Console.WriteLine($"</{navigator.Name}>");
             }
         }
     }
@@ -833,7 +833,7 @@ class XPathNavigatorMethods
 
         navigator.ReplaceSelf("<pages>100</pages>");
 
-        Console.WriteLine("Position after delete: {0}", navigator.Name);
+        Console.WriteLine($"Position after delete: {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet36>
     }
@@ -853,7 +853,7 @@ class XPathNavigatorMethods
 
         navigator.ReplaceSelf(pages);
 
-        Console.WriteLine("Position after delete: {0}", navigator.Name);
+        Console.WriteLine($"Position after delete: {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet37>
     }
@@ -875,7 +875,7 @@ class XPathNavigatorMethods
 
         navigator.ReplaceSelf(childNodesNavigator);
 
-        Console.WriteLine("Position after delete: {0}", navigator.Name);
+        Console.WriteLine($"Position after delete: {navigator.Name}");
         Console.WriteLine(navigator.OuterXml);
         //</snippet38>
     }
@@ -1112,11 +1112,11 @@ class XPathNavigatorMethods
         {
             XPathNavigator navigator2 = nodes.Current.Clone();
             navigator2.MoveToFirstAttribute();
-            Console.WriteLine("{0} = {1}", navigator2.Name, navigator2.Value);
+            Console.WriteLine($"{navigator2.Name} = {navigator2.Value}");
 
             while (navigator2.MoveToNextAttribute())
             {
-                Console.WriteLine("{0} = {1}", navigator2.Name, navigator2.Value);
+                Console.WriteLine($"{navigator2.Name} = {navigator2.Value}");
             }
 
             Console.WriteLine();
@@ -1143,44 +1143,39 @@ class XPathNavigatorMethods
 
         // Move to the last book node using the SelectSingleNode method.
         navigator = navigator.SelectSingleNode("//bk:book[last()]", manager);
-        Console.WriteLine("Last book node: \n===============\n{0}", navigator.OuterXml);
+        Console.WriteLine($"Last book node: \n===============\n{navigator.OuterXml}");
 
         // Move to the previous book node and write it to the console
         // if the move was successful.
         if (navigator.MoveToPrevious())
         {
-            Console.WriteLine("\nSecond book node: \n=================\n{0}",
-                navigator.OuterXml);
+            Console.WriteLine($"\nSecond book node: \n=================\n{navigator.OuterXml}");
         }
 
         // Move to the first book node and write it to the console
         // if the move was successful.
         if (navigator.MoveToFirst())
         {
-            Console.WriteLine("\nFirst book node: \n================\n{0}",
-                navigator.OuterXml);
+            Console.WriteLine($"\nFirst book node: \n================\n{navigator.OuterXml}");
         }
 
         // Move to the parent bookstore node and write it to the console
         // if the move was successful.
         if (navigator.MoveToParent())
         {
-            Console.WriteLine("\nParent bookstore node: \n======================\n{0}",
-                navigator.OuterXml);
+            Console.WriteLine($"\nParent bookstore node: \n======================\n{navigator.OuterXml}");
         }
 
         // Move to the first child node of the bookstore node and write
         // it to the console if the move was successful.
         if (navigator.MoveToFirstChild())
         {
-            Console.WriteLine("\nFirst book node: \n================\n{0}",
-                navigator.OuterXml);
+            Console.WriteLine($"\nFirst book node: \n================\n{navigator.OuterXml}");
         }
 
         // Move to the root node and write it to the console.
         navigator.MoveToRoot();
-        Console.WriteLine("\nRoot node: \n==========\n{0}",
-                navigator.OuterXml);
+        Console.WriteLine($"\nRoot node: \n==========\n{navigator.OuterXml}");
         //</snippet54>
     }
     #endregion

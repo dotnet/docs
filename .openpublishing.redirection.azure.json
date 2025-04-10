@@ -57,6 +57,10 @@
             "redirect_url": "/dotnet/azure/"
         },
         {
+            "source_path_from_root": "/docs/azure/landing-page.yml",
+            "redirect_url": "/dotnet/azure/index"
+        },
+        {
             "source_path_from_root": "/docs/azure/logging.md",
             "redirect_url": "/dotnet/azure/sdk/logging"
         },
@@ -102,7 +106,7 @@
         },
         {
             "source_path_from_root": "/docs/azure/sdk/authentication-azure-hosted-apps.md",
-            "redirect_url": "/dotnet/azure/sdk/authentication/azure-hosted-apps"
+            "redirect_url": "/dotnet/azure/sdk/authentication/system-assigned-managed-identity"
         },
         {
             "source_path_from_root": "/docs/azure/sdk/authentication-additional-methods.md",
@@ -130,7 +134,7 @@
         },
         {
             "source_path_from_root": "/docs/azure/sdk/authentication/azure-hosted-apps.md",
-            "redirect_url": "/docs/azure/sdk/authentication/system-assigned-managed-identity"
+            "redirect_url": "/dotnet/azure/sdk/authentication/system-assigned-managed-identity"
         }
     ]
 }

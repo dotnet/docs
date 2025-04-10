@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -47,7 +47,7 @@ namespace Microsoft.Security.Samples
             //</snippet1>
             // Use the GetHostEntry method to return the actual machine name.
             string machineName = System.Net.Dns.GetHostEntry("").HostName ;
-            Console.WriteLine("Listening @ {0}:8037/serviceModelSamples/", machineName);
+            Console.WriteLine($"Listening @ {machineName}:8037/serviceModelSamples/");
             Console.WriteLine("Press Enter to close the service");
             Console.ReadLine();
             myServiceHost.Close();

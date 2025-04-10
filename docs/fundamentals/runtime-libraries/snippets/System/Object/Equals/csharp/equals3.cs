@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 class Rectangle
@@ -65,9 +65,9 @@ class Example
       Rectangle r2 = new Rectangle(0, 0, 100, 200);
       Rectangle r3 = new Rectangle(0, 0, 150, 200);
 
-      Console.WriteLine("{0} = {1}: {2}", r1, r2, r1.Equals(r2));
-      Console.WriteLine("{0} = {1}: {2}", r1, r3, r1.Equals(r3));
-      Console.WriteLine("{0} = {1}: {2}", r2, r3, r2.Equals(r3));
+      Console.WriteLine($"{r1} = {r2}: {r1.Equals(r2)}");
+      Console.WriteLine($"{r1} = {r3}: {r1.Equals(r3)}");
+      Console.WriteLine($"{r2} = {r3}: {r2.Equals(r3)}");
    }
 }
 // The example displays the following output:

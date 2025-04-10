@@ -8,6 +8,10 @@ items:
         items:
           - name: Overview
             href: 10.0.md
+          - name: Containers
+            items:
+              - name: Default .NET images use Ubuntu
+                href: containers/10.0/default-images-use-ubuntu.md
           - name: Core .NET libraries
             items:
               - name: API obsoletions with non-default diagnostic IDs
@@ -22,18 +26,44 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: System.Linq.AsyncEnumerable included in core libraries
+                href: core-libraries/10.0/asyncenumerable.md         
           - name: Cryptography
             items:
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
+              - name: X509Certificate and PublicKey key parameters can be null
+                href: cryptography/10.0/x509-publickey-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
           - name: Globalization
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: Networking
+            items:
+              - name: Streaming HTTP responses enabled by default in browser HTTP clients
+                href: networking/10.0/default-http-streaming.md
+          - name: SDK and MSBuild
+            items:
+              - name: .NET CLI `--interactive` defaults to `true` in user scenarios
+                href: sdk/10.0/dotnet-cli-interactive.md
+              - name: "`dotnet restore` audits transitive packages"
+                href: sdk/10.0/nugetaudit-transitive-packages.md
+              - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
+                href: sdk/10.0/default-workload-config.md
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
+              - name: NU1510 is raised for direct references pruned by NuGet
+                href: sdk/10.0/nu1510-pruned-references.md
           - name: Windows Forms
             items:
+              - name: API obsoletions
+                href: windows-forms/10.0/obsolete-apis.md
+              - name: Applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types
+                href: windows-forms/10.0/menuitem-contextmenu.md
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation
@@ -68,6 +98,8 @@ items:
                 href: core-libraries/9.0/compressionlevel-bits.md
               - name: Altered UnsafeAccessor support for non-open generics
                 href: core-libraries/9.0/unsafeaccessor-generics.md
+              - name: Ambiguous overload resolution affecting StringValues implicit operators
+                href: core-libraries/9.0/ambiguous-overload.md         
               - name: API obsoletions with custom diagnostic IDs
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
@@ -102,6 +134,8 @@ items:
                 href: core-libraries/9.0/ziparchiveentry-encoding.md
           - name: Cryptography
             items:
+              - name: APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0
+                href: cryptography/9.0/api-removed-pkcs.md
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
@@ -112,6 +146,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+              - name: Assembly load directory resolves through symbolic links on Windows
+                href: deployment/9.0/assembly-load-directory.md
           - name: Entity Framework Core
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Interop
@@ -140,8 +176,6 @@ items:
                 href: networking/9.0/query-redaction-logs.md
           - name: SDK and MSBuild
             items:
-              - name: "`dotnet restore` audits transitive packages"
-                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet sln add` doesn't allow invalid file names"
                 href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
@@ -150,6 +184,8 @@ items:
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
               - name: New default RID used when targeting .NET Framework
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
@@ -166,6 +202,8 @@ items:
                 href: serialization/9.0/binaryformatter-removal.md
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
+              - name: System.Text.Json metadata reader now unescapes metadata property names
+                href: serialization/9.0/json-metadata-reader.md         
           - name: Windows Forms
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -1306,6 +1344,10 @@ items:
                 href: configuration/7.0/diagnostics-config-section.md
       - name: Containers
         items:
+          - name: .NET 10
+            items:
+              - name: Default .NET images use Ubuntu
+                href: containers/10.0/default-images-use-ubuntu.md
           - name: .NET 9
             items:
               - name: Container images no longer install zlib
@@ -1350,12 +1392,16 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: System.Linq.AsyncEnumerable included in core libraries
+                href: core-libraries/10.0/asyncenumerable.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
                 href: core-libraries/9.0/compressionlevel-bits.md
               - name: Altered UnsafeAccessor support for non-open generics
                 href: core-libraries/9.0/unsafeaccessor-generics.md
+              - name: Ambiguous overload resolution affecting StringValues implicit operators
+                href: core-libraries/9.0/ambiguous-overload.md    
               - name: API obsoletions with custom diagnostic IDs
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
@@ -1588,10 +1634,14 @@ items:
             items:
               - name: X500DistinguishedName validation is stricter
                 href: cryptography/10.0/x500distinguishedname-validation.md
+              - name: X509Certificate and PublicKey key parameters can be null
+                href: cryptography/10.0/x509-publickey-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
           - name: .NET 9
             items:
+              - name: APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0
+                href: cryptography/9.0/api-removed-pkcs.md
               - name: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
                 href: cryptography/9.0/evp-pkey-handle.md
               - name: Some X509Certificate2 and X509Certificate constructors are obsolete
@@ -1636,6 +1686,8 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
+              - name: Assembly load directory resolves through symbolic links on Windows
+                href: deployment/9.0/assembly-load-directory.md
           - name: .NET 8
             items:
               - name: Host determines RID-specific assets
@@ -1810,6 +1862,10 @@ items:
                 href: maui/7.0/iwindowstatemanager-apis-removed.md
       - name: Networking
         items:
+          - name: .NET 10
+            items:
+              - name: Streaming HTTP responses enabled by default in browser HTTP clients
+                href: networking/10.0/default-http-streaming.md
           - name: .NET 9
             items:
               - name: HttpClient metrics report `server.port` unconditionally
@@ -1866,10 +1922,22 @@ items:
                 href: reflection/8.0/function-pointer-reflection.md
       - name: SDK and MSBuild
         items:
+          - name: .NET 10
+            items:
+              - name: .NET CLI `--interactive` defaults to `true` in user scenarios
+                href: sdk/10.0/dotnet-cli-interactive.md
+              - name: "`dotnet restore` audits transitive packages"
+                href: sdk/10.0/nugetaudit-transitive-packages.md
+              - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
+                href: sdk/10.0/default-workload-config.md
+              - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
+                href: sdk/10.0/custom-build-event-warning.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
+              - name: NU1510 is raised for direct references pruned by NuGet
+                href: sdk/10.0/nu1510-pruned-references.md
           - name: .NET 9
             items:
-              - name: "`dotnet restore` audits transitive packages"
-                href: sdk/9.0/nugetaudit-transitive-packages.md
               - name: "`dotnet sln add` doesn't allow invalid file names"
                 href: sdk/9.0/dotnet-sln.md
               - name: "`dotnet watch` incompatible with Hot Reload for old frameworks"
@@ -1878,6 +1946,8 @@ items:
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
+              - name: MSBuild custom culture resource handling
+                href: sdk/10.0/msbuild-custom-culture.md
               - name: New default RID used when targeting .NET Framework
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
@@ -2022,6 +2092,8 @@ items:
                 href: serialization/9.0/binaryformatter-removal.md
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
+              - name: System.Text.Json metadata reader now unescapes metadata property names
+                href: serialization/9.0/json-metadata-reader.md    
           - name: .NET 8
             items:
               - name: BinaryFormatter disabled for most projects
@@ -2096,6 +2168,10 @@ items:
         items:
           - name: .NET 10
             items:
+              - name: API obsoletions
+                href: windows-forms/10.0/obsolete-apis.md
+              - name: Applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types
+                href: windows-forms/10.0/menuitem-contextmenu.md
               - name: Renamed parameter in HtmlElement.InsertAdjacentElement
                 href: windows-forms/10.0/insertadjacentelement-orientation.md
               - name: TreeView checkbox image truncation

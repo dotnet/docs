@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Xml;
 using System.ServiceModel;
@@ -93,8 +93,8 @@ namespace Service
                 Console.WriteLine("Items:");
                 foreach (SyndicationItem item in feed.Items)
                 {
-                    Console.WriteLine("Title: {0}", item.Title.Text);
-                    Console.WriteLine("Summary: {0}", ((TextSyndicationContent)item.Summary).Text);
+                    Console.WriteLine($"Title: {item.Title.Text}");
+                    Console.WriteLine($"Summary: {((TextSyndicationContent)item.Summary).Text}");
                 }
                 Console.WriteLine("Press <enter> to quit...");
                 Console.ReadLine();
@@ -103,7 +103,7 @@ namespace Service
             }
             catch (CommunicationException ce)
             {
-                Console.WriteLine("An exception occurred: {0}", ce.Message);
+                Console.WriteLine($"An exception occurred: {ce.Message}");
                 svcHost.Abort();
             }
         }

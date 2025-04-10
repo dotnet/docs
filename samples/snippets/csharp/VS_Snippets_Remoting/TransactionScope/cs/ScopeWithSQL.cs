@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Transactions;
@@ -19,9 +19,9 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine("");
-            Console.WriteLine("In calling code: {0}", ex.Message);
+            Console.WriteLine($"In calling code: {ex.Message}");
         }
-        Console.WriteLine("return value in caller {0}", r);
+        Console.WriteLine($"return value in caller {r}");
         Console.ReadLine();
     }
 

@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "objects, serializing"
 ms.topic: how-to
 zone_pivot_groups: dotnet-version
-ms.collection: ce-skilling-ai-copilot
 ms.custom: copilot-scenario-highlight
 ---
 

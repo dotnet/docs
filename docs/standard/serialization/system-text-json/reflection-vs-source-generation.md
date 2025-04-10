@@ -22,7 +22,7 @@ This information is referred to as *metadata*.
 
 ## Reflection
 
-By default, <xref:System.Text.Json.JsonSerializer> collects metadata at run time by using [reflection](/dotnet/csharp/advanced-topics/reflection-and-attributes/). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
+By default, <xref:System.Text.Json.JsonSerializer> collects metadata at run time by using [reflection](../../../csharp/advanced-topics/reflection-and-attributes/index.md). Whenever `JsonSerializer` has to serialize or deserialize a type for the first time, it collects and caches this metadata. The metadata collection process takes time and uses memory.
 
 ## Source generation
 

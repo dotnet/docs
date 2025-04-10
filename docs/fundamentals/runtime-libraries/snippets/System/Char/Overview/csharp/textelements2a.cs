@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Globalization;
 
@@ -11,8 +11,7 @@ public class Example4
             result += Char.ConvertFromUtf32(ctr);
 
         StringInfo si = new StringInfo(result);
-        Console.WriteLine("The string contains {0} characters.",
-                          si.LengthInTextElements);
+        Console.WriteLine($"The string contains {si.LengthInTextElements} characters.");
     }
 }
 // The example displays the following output:

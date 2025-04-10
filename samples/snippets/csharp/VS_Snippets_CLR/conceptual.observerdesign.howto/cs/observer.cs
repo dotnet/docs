@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 // <Snippet12>
 // <Snippet9>
@@ -36,7 +36,7 @@ public class TemperatureReporter : IObserver<Temperature>
 
    public virtual void OnNext(Temperature value)
    {
-      Console.WriteLine("The temperature is {0}°C at {1:g}", value.Degrees, value.Date);
+      Console.WriteLine($"The temperature is {value.Degrees}°C at {value.Date:g}");
       if (first)
       {
          last = value;
@@ -44,8 +44,7 @@ public class TemperatureReporter : IObserver<Temperature>
       }
       else
       {
-         Console.WriteLine("   Change: {0}° in {1:g}", value.Degrees - last.Degrees,
-                                                       value.Date.ToUniversalTime() - last.Date.ToUniversalTime());
+         Console.WriteLine($"   Change: {value.Degrees - last.Degrees}° in {value.Date.ToUniversalTime() - last.Date.ToUniversalTime():g}");
       }
    }
    // </Snippet11>

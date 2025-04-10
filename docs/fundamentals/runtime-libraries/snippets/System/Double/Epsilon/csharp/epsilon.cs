@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 
 public class Example
@@ -11,9 +11,7 @@ public class Example
       {
          for (int ctr2 = ctr + 1; ctr2 <= values.Length - 1; ctr2++)
          {
-            Console.WriteLine("{0:r} = {1:r}: {2}",
-                              values[ctr], values[ctr2],
-                              values[ctr].Equals(values[ctr2]));
+            Console.WriteLine($"{values[ctr]:r} = {values[ctr2]:r}: {values[ctr].Equals(values[ctr2])}");
          }
          Console.WriteLine();
       }

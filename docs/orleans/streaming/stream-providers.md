@@ -7,7 +7,7 @@ zone_pivot_groups: orleans-version
 
 # Orleans stream providers
 
-Streams can come in different shapes and forms. Some streams may deliver events over direct TCP links, while others deliver events via durable queues. Different stream types may use different batching strategies, different caching algorithms, or different backpressure procedures. To avoid constraining streaming applications to only a subset of those behavioral choices, stream providers are extensibility points to Orleans Streaming Runtime that allow users to implement any type of stream. This extensibility point is similar in spirit to Orleans Storage providers.
+Streams can come in different shapes and forms. Some streams may deliver events over direct TCP links, while others deliver events via durable queues. Different stream types may use different batching strategies, different caching algorithms, or different backpressure procedures. Stream providers are extensibility points to Orleans Streaming Runtime that allow users to implement any type of stream, which avoids constraining streaming applications to only a subset of those behavioral choices. This extensibility point is similar in spirit to Orleans Storage providers.
 
 ## Azure Event Hub stream provider
 

@@ -6,8 +6,8 @@ public sealed class RateLimitingChatClient(
     IChatClient innerClient, RateLimiter rateLimiter)
         : DelegatingChatClient(innerClient)
 {
-    public override async Task<ChatCompletion> CompleteAsync(
-        IList<ChatMessage> chatMessages,
+    public override async Task<ChatResponse> GetResponseAsync(
+        IEnumerable<ChatMessage> chatMessages,
         ChatOptions? options = null,
         CancellationToken cancellationToken = default)
     {
@@ -19,12 +19,12 @@ public sealed class RateLimitingChatClient(
             throw new InvalidOperationException("Unable to acquire lease.");
         }
 
-        return await base.CompleteAsync(chatMessages, options, cancellationToken)
+        return await base.GetResponseAsync(chatMessages, options, cancellationToken)
             .ConfigureAwait(false);
     }
 
-    public override async IAsyncEnumerable<StreamingChatCompletionUpdate> CompleteStreamingAsync(
-        IList<ChatMessage> chatMessages,
+    public override async IAsyncEnumerable<ChatResponseUpdate> GetStreamingResponseAsync(
+        IEnumerable<ChatMessage> chatMessages,
         ChatOptions? options = null,
         [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
@@ -36,7 +36,7 @@ public sealed class RateLimitingChatClient(
             throw new InvalidOperationException("Unable to acquire lease.");
         }
 
-        await foreach (var update in base.CompleteStreamingAsync(chatMessages, options, cancellationToken)
+        await foreach (var update in base.GetStreamingResponseAsync(chatMessages, options, cancellationToken)
             .ConfigureAwait(false))
         {
             yield return update;

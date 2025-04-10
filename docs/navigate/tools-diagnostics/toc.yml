@@ -104,22 +104,6 @@ items:
         items:
           - name: dotnet
             href: ../../core/tools/dotnet.md
-          - name: dotnet add/list/remove package
-            items:
-              - name: dotnet add package
-                href: ../../core/tools/dotnet-add-package.md
-              - name: dotnet list package
-                href: ../../core/tools/dotnet-list-package.md
-              - name: dotnet remove package
-                href: ../../core/tools/dotnet-remove-package.md
-          - name: dotnet add/list/remove reference
-            items:
-              - name: dotnet add reference
-                href: ../../core/tools/dotnet-add-reference.md
-              - name: dotnet list reference
-                href: ../../core/tools/dotnet-list-reference.md
-              - name: dotnet remove reference
-                href: ../../core/tools/dotnet-remove-reference.md
           - name: dotnet build
             href: ../../core/tools/dotnet-build.md
           - name: dotnet build-server
@@ -196,10 +180,26 @@ items:
                 href: ../../core/tools/dotnet-nuget-config-paths.md
           - name: dotnet pack
             href: ../../core/tools/dotnet-pack.md
-          - name: dotnet package search
-            href: ../../core/tools/dotnet-package-search.md
+          - name: dotnet package add/list/remove/earch
+            items:
+              - name: dotnet package add
+                href: ../../core/tools/dotnet-package-add.md
+              - name: dotnet package list
+                href: ../../core/tools/dotnet-package-list.md
+              - name: dotnet package remove
+                href: ../../core/tools/dotnet-package-remove.md
+              - name: dotnet package search
+                href: ../../core/tools/dotnet-package-search.md
           - name: dotnet publish
             href: ../../core/tools/dotnet-publish.md
+          - name: dotnet reference add/list/remove
+            items:
+              - name: dotnet reference add
+                href: ../../core/tools/dotnet-reference-add.md
+              - name: dotnet reference list
+                href: ../../core/tools/dotnet-reference-list.md
+              - name: dotnet reference remove
+                href: ../../core/tools/dotnet-reference-remove.md
           - name: dotnet restore
             href: ../../core/tools/dotnet-restore.md
           - name: dotnet run
@@ -391,6 +391,9 @@ items:
             displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
           - name: Collection
             href: ../../core/diagnostics/metrics-collection.md
+          - name: Source-generated metrics
+            displayName: strongly-typed tags,dimensions
+            href: ../../core/diagnostics/metrics-strongly-typed.md
           - name: Built-in metrics
             items:
               - name: Overview
@@ -487,6 +490,8 @@ items:
                 href: ../../core/diagnostics/collect-dumps-crash.md
               - name: Frequently asked questions
                 href: ../../core/diagnostics/faq-dumps.yml
+              - name: Install and use LLDB on Linux
+                href: ../../core/diagnostics/lldb-linux.md
           - name: Symbols
             href: ../../core/diagnostics/symbols.md
           - name: EventPipe
@@ -1612,6 +1617,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0110.md
                   - name: IDE0120
                     href: ../../fundamentals/code-analysis/style-rules/ide0120.md
+                  - name: IDE0121
+                    href: ../../fundamentals/code-analysis/style-rules/ide0121.md
                   - name: IDE0130
                     href: ../../fundamentals/code-analysis/style-rules/ide0130.md
                   - name: IDE0140
@@ -1664,10 +1671,16 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0304.md
                   - name: IDE0305
                     href: ../../fundamentals/code-analysis/style-rules/ide0305.md
+                  - name: IDE0306
+                    href: ../../fundamentals/code-analysis/style-rules/ide0306.md
                   - name: IDE0320
                     href: ../../fundamentals/code-analysis/style-rules/ide0320.md
                   - name: IDE0330
                     href: ../../fundamentals/code-analysis/style-rules/ide0330.md
+                  - name: IDE0340
+                    href: ../../fundamentals/code-analysis/style-rules/ide0340.md
+                  - name: IDE0350
+                    href: ../../fundamentals/code-analysis/style-rules/ide0350.md
                   - name: IDE1005
                     href: ../../fundamentals/code-analysis/style-rules/ide1005.md
               - name: Miscellaneous rules
@@ -1830,6 +1843,8 @@ items:
             href: ../../fundamentals/syslib-diagnostics/syslib0059.md
           - name: SYSLIB0060
             href: ../../fundamentals/syslib-diagnostics/syslib0060.md
+          - name: SYSLIB0061
+            href: ../../fundamentals/syslib-diagnostics/syslib0061.md
       - name: Experimental features
         items:
           - name: Overview

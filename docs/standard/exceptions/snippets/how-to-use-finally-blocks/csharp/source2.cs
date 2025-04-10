@@ -1,4 +1,4 @@
-﻿//<snippet3>
+//<snippet3>
 class ArgumentOutOfRangeExample
 {
     public static void Main()
@@ -12,7 +12,7 @@ class ArgumentOutOfRangeExample
         }
         catch (ArgumentOutOfRangeException e)
         {
-            Console.WriteLine("Error: {0}", e);
+            Console.WriteLine($"Error: {e}");
             throw;
         }
         finally

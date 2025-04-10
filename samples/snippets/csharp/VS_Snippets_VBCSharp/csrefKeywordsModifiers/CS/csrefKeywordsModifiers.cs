@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -213,31 +213,6 @@ namespace csrefKeywordsModifiers
     }
     // Output: My local constant = 707
     //</snippet6>
-
-    //<snippet7>
-    public class SampleEventArgs
-    {
-        public SampleEventArgs(string text) { Text = text; }
-        public string Text { get; } // readonly
-    }
-
-    public class Publisher
-    {
-        // Declare the delegate (if using non-generic pattern).
-        public delegate void SampleEventHandler(object sender, SampleEventArgs e);
-
-        // Declare the event.
-        public event SampleEventHandler SampleEvent;
-
-        // Wrap the event in a protected virtual method
-        // to enable derived classes to raise the event.
-        protected virtual void RaiseSampleEvent()
-        {
-            // Raise the event in a thread-safe manner using the ?. operator.
-            SampleEvent?.Invoke(this, new SampleEventArgs("Hello"));
-        }
-    }
-    //</snippet7>
 
     //<snippet8>
     //using System.Runtime.InteropServices;
@@ -712,9 +687,9 @@ namespace csrefKeywordsModifiers
             Shape s = new Sphere(r);
             Shape l = new Cylinder(r, h);
             // Display results.
-            Console.WriteLine("Area of Circle   = {0:F2}", c.Area());
-            Console.WriteLine("Area of Sphere   = {0:F2}", s.Area());
-            Console.WriteLine("Area of Cylinder = {0:F2}", l.Area());
+            Console.WriteLine($"Area of Circle   = {c.Area():F2}");
+            Console.WriteLine($"Area of Sphere   = {s.Area():F2}");
+            Console.WriteLine($"Area of Cylinder = {l.Area():F2}");
         }
     }
     /*
@@ -843,4 +818,46 @@ namespace csrefKeywordsModifiers
         }
         //</snippet27>
     } 
+
+      //<snippet28>
+  class Calc1
+  {
+      public void CalculateSum()
+      {
+          int a = 3;
+          int b = 7;
+
+          // Static local function - cannot access 'a' or 'b' directly
+          static int Add(int x, int y)
+          {
+              return x + y;
+          }
+
+          int result = Add(a, b); 
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+    /*
+   Output:
+   Sum: 10
+   */
+  //</snippet28>
+
+
+  //<snippet29>
+  class Calc2
+  {
+      static void Main()
+      {
+          Func<int, int, int> add = static (a, b) => a + b;
+
+          int result = add(5, 10);
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+  /*
+  Output:
+  Sum: 15
+  */
+  //</snippet29>
 }

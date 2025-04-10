@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Configuration;
 
@@ -45,8 +45,7 @@ static class Program
             // Save the current configuration.
             config.Save();
 
-            Console.WriteLine("Protected={0}",
-                section?.SectionInformation.IsProtected);
+            Console.WriteLine($"Protected={section?.SectionInformation.IsProtected}");
         }
         catch (Exception ex)
         {

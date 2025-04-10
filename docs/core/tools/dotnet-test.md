@@ -11,21 +11,27 @@ ms.date: 03/27/2024
 
 ## Description
 
-The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with TOML format located at the root of the solution or repository.
+The `dotnet test` command builds the solution and runs the tests with either VSTest or Microsoft Testing Platform (MTP). To enable MTP, you need to add a config file named `dotnet.config` with an INI-like format located at the root of the solution or repository.
 
 Some examples of the `dotnet.config` file:
 
-  ```toml
+  ```ini
   [dotnet.test:runner]
-  name = "MicrosoftTestingPlatform"
+  name = "Microsoft.Testing.Platform"
   ```
 
-  ```toml
+  ```ini
   [dotnet.test:runner]
   name = "VSTest"
   ```
 
-## VSTest and Microsoft Testing Platform (MTP)
+> [!NOTE]
+> The format will change from `dotnet.test:runner` to `dotnet.test.runner` in .NET 10 SDK Preview 4.
+
+> [!TIP]
+> For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).
+
+## VSTest and Microsoft.Testing.Platform (MTP)
 
 ### [dotnet test with VSTest](#tab/dotnet-test-with-vstest)
 
@@ -74,7 +80,7 @@ dotnet test -h|--help
 The `dotnet test` command is used to execute unit tests in a given solution. The `dotnet test` command builds the solution and runs a test host application for each test project in the solution using `VSTest`. The test host executes tests in the given project using a test framework, for example: MSTest, NUnit, or xUnit, and reports the success or failure of each test. If all tests are successful, the test runner returns 0 as an exit code; otherwise if any test fails, it returns 1.
 
 > [!NOTE]
-> `dotnet test` was originally designed to support only `VSTest`-based test projects. Recent versions of the test frameworks are adding support for [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md). This alternative test platform is more lightweight and faster than `VSTest` and supports `dotnet test` with different command line options. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md).
+> `dotnet test` was originally designed to support only `VSTest`-based test projects. Recent versions of the test frameworks are adding support for [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md). This alternative test platform is more lightweight and faster than `VSTest` and supports `dotnet test` with different command line options. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
 
 For multi-targeted projects, tests are run for each targeted framework. The test host and the unit test framework are packaged as NuGet packages and are restored as ordinary dependencies for the project. Starting with the .NET 9 SDK, these tests are run in parallel by default. To disable parallel execution, set the `TestTfmsInParallel` MSBuild property to `false`. For more information, see [Run tests in parallel](../whats-new/dotnet-9/sdk.md#run-tests-in-parallel) and the [example command line later in this article](#testtfmsinparallel).
 
@@ -111,7 +117,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 > - Starting in .NET 7: switch `-r` to alias `--runtime` instead of `--results-directory`
 
 > [!WARNING]
-> When using `Microsoft.Testing.Platform`, please refer to [dotnet test integration](../testing/unit-testing-platform-integration-dotnet-test.md) for the supported options. As a rule of thumbs, every option non-related to testing is supported while every testing-related option is not supported as-is.
+> When using `Microsoft.Testing.Platform`, please refer to [dotnet test integration](../testing/microsoft-testing-platform-integration-dotnet-test.md) for the supported options. As a rule of thumbs, every option non-related to testing is supported while every testing-related option is not supported as-is.
 
 - **`--test-adapter-path <ADAPTER_PATH>`**
 
@@ -419,7 +425,6 @@ dotnet test
     [--directory <DIRECTORY_PATH>]
     [--test-modules <EXPRESSION>] 
     [--root-directory <ROOT_PATH>]
-    [--list-tests]
     [--max-parallel-test-modules <NUMBER>]
     [-a|--arch <ARCHITECTURE>]
     [-c|--configuration <CONFIGURATION>]
@@ -439,16 +444,20 @@ dotnet test -h|--help
 
 #### Description
 
-With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/unit-testing-platform-intro.md).
+With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest. The test-related arguments are no longer fixed, as they are tied to the registered extensions in the test project(s). Moreover, MTP supports a globbing filter when running tests. For more information, see [Microsoft.Testing.Platform](../testing/microsoft-testing-platform-intro.md).
 
 > [!WARNING]
-> `dotnet test` doesn't run in environments that have test projects using both VSTest and Microsoft Testing Platform in the same solution, as the two platforms are mutually incompatible.
+> When Microsoft.Testing.Platform is opted in via `dotnet.config`, `dotnet test` expects all test projects to use Microsoft.Testing.Platform. It is an error if any of the test projects use VSTest.
 
 #### Implicit restore
 
 [!INCLUDE[dotnet restore note](~/includes/dotnet-restore-note.md)]
 
 #### Options
+
+> [!NOTE]
+> You can use only one of the following options at a time: `--project`, `--solution`, `--directory`, or `--test-modules`. These options can't be combined.
+> In addition, when using `--test-modules`, you can't specify `--arch`, `--configuration`, `--framework`, `--os`, or `--runtime`. These options are not relevant for an already-built module.
 
 - **`--project <PROJECT_PATH>`**
 
@@ -462,9 +471,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Specifies the path to a directory that contains a project or a solution.
 
-> [!NOTE]
-> You can use only one of the following options at a time: `--project`, `--solution`, or `--directory`. These options can't be combined.
-
 - **`--test-modules <EXPRESSION>`**
 
   Filters test modules using file globbing in .NET. Only tests belonging to those test modules will run. For more information and examples on how to use file globbing in .NET, see [File globbing](../../../docs/core/extensions/file-globbing.md).
@@ -472,10 +478,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - **`--root-directory <ROOT_PATH>`**
 
   Specifies the root directory of the `--test-modules` option. It can only be used with the `--test-modules` option.
-
-- **`--list-tests`**
-
-  Lists the discovered tests instead of running the tests.
 
 - **`--max-parallel-test-modules <NUMBER>`**
 
@@ -532,20 +534,23 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   The short form `-p` can be used for `--property`. The same applies for `/property:property=value` and its short form is `/p`.
   More informatiom about the available arguments can be found in [the dotnet msbuild documentation](dotnet-msbuild.md).
 
-- **`-h|--help`**
+- **`-?|-h|--help`**
 
-  Prints out a description of how to use the command. The options are dynamic and might differ from one test application to another, as they are based on the registered extensions in the test project.
+  Prints out a description of how to use the command. Some options are static while others, namely platform and extension options, are dynamic. These dynamic options might differ from one test application to another, as they are based on the registered extensions in the test project.
 
 - **`args`**
 
-  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft Testing Platform](../../../docs/core/testing/unit-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md).
+  Specifies extra arguments to pass to the test application(s). Use a space to separate multiple arguments. For more information and examples on what to pass, see [Microsoft.Testing.Platform overview](../../../docs/core/testing/microsoft-testing-platform-intro.md) and [Microsoft.Testing.Platform extensions](../../../docs/core/testing/microsoft-testing-platform-extensions.md).
+
+  > [!TIP]
+  > To specify extra arguments for specific projects, use the `TestingPlatformCommandLineArguments` MSBuild property.
 
 > [!NOTE]
 > To enable trace logging to a file, use the environment variable `DOTNET_CLI_TEST_TRACEFILE` to provide the path to the trace file.
 
 #### Examples
 
-- Run the tests in the project in the current directory:
+- Run the tests in the project or solution in the current directory:
 
   ```dotnetcli
   dotnet test
@@ -563,7 +568,7 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
   dotnet test --solution ./TestProjects/TestProjects.sln
   ```
 
-- Run the tests in the `TestProjects` directory:
+- Run the tests in a solution or project that can be found in the `TestProjects` directory:
 
   ```dotnetcli
   dotnet test --directory ./TestProjects
@@ -603,5 +608,5 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Runtime Identifier (RID) catalog](../rid-catalog.md)
-- [Microsoft.Testing.Platform](../../../docs/core/testing/unit-testing-platform-intro.md)
-- [Microsoft.Testing.Platform extensions](../../../docs/core/testing/unit-testing-platform-extensions.md)
+- [Microsoft.Testing.Platform](../../../docs/core/testing/microsoft-testing-platform-intro.md)
+- [Microsoft.Testing.Platform extensions](../../../docs/core/testing/microsoft-testing-platform-extensions.md)

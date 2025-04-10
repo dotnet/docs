@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,16 +13,15 @@ public class Example
          Match match = Regex.Match(input, pattern);
          if (match.Success)
          {
-            Console.WriteLine("Match in {0}: {1}", input, match.Value);
+            Console.WriteLine($"Match in {input}: {match.Value}");
             if (match.Groups.Count > 1)
             {
                for (int ctr = 1; ctr <= match.Groups.Count - 1; ctr++)
                {
                   if (match.Groups[ctr].Success)
-                     Console.WriteLine("Group {0}: {1}",
-                                       ctr, match.Groups[ctr].Value);
+                     Console.WriteLine($"Group {ctr}: {match.Groups[ctr].Value}");
                   else
-                     Console.WriteLine("Group {0}: <no match>", ctr);
+                     Console.WriteLine($"Group {ctr}: <no match>");
                }
             }
          }

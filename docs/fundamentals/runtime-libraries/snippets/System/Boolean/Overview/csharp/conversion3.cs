@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 
 public class Example3
@@ -9,19 +9,19 @@ public class Example3
 
       byte byteValue;
       byteValue = Convert.ToByte(flag);
-      Console.WriteLine("{0} -> {1}", flag, byteValue);
+      Console.WriteLine($"{flag} -> {byteValue}");
 
       sbyte sbyteValue;
       sbyteValue = Convert.ToSByte(flag);
-      Console.WriteLine("{0} -> {1}", flag, sbyteValue);
+      Console.WriteLine($"{flag} -> {sbyteValue}");
 
       double dblValue;
       dblValue = Convert.ToDouble(flag);
-      Console.WriteLine("{0} -> {1}", flag, dblValue);
+      Console.WriteLine($"{flag} -> {dblValue}");
 
       int intValue;
       intValue = Convert.ToInt32(flag);
-      Console.WriteLine("{0} -> {1}", flag, intValue);
+      Console.WriteLine($"{flag} -> {intValue}");
    }
 }
 // The example displays the following output:

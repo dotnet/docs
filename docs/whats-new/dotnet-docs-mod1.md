@@ -31,7 +31,7 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 
 ### New articles
 
-- [Create a minimal AI assistant using .NET](../ai/quickstarts/quickstart-assistants.md)
+- [Create a minimal AI assistant using .NET](../ai/quickstarts/create-assistant.md)
 
 ## .NET fundamentals
 
@@ -58,7 +58,7 @@ Welcome to what's new in the .NET docs for January 2025. This article lists some
 
 - [Creating metrics](../core/diagnostics/metrics-instrumentation.md) - [diagnostics] Add InstrumentAdvice details to instrumentation doc
 - [dotnet-coverage code coverage utility](../core/additional-tools/dotnet-coverage.md) - Update dotnet-coverage docs. Adding uninstrument command
-- [Microsoft.Testing.Platform and VSTest comparison](../core/testing/unit-testing-platform-vs-vstest.md) - Add first level info for migration off of VSTest
+- [Microsoft.Testing.Platform and VSTest comparison](../core/testing/microsoft-testing-platform-vs-vstest.md) - Add first level info for migration off of VSTest
 - [Tutorial: Containerize a .NET app](../core/docker/build-container.md) - Address issues related to .NET containers
 
 ## C# language

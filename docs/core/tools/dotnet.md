@@ -1,7 +1,7 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET CLI) and its usage.
-ms.date: 05/06/2022
+ms.date: 04/01/2025
 ---
 # dotnet command
 
@@ -35,7 +35,7 @@ dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
     [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 
-dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+dotnet exec [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
     [--depsfile <PATH>]
     [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     [--runtimeconfig <PATH>]
@@ -182,16 +182,18 @@ The following options are available only when `dotnet` runs an application by us
 
 | Command                                               | Function                     |
 |-------------------------------------------------------|------------------------------|
-| [dotnet add reference](dotnet-add-reference.md)       | Adds a project reference.    |
-| [dotnet list reference](dotnet-list-reference.md)     | Lists project references.    |
-| [dotnet remove reference](dotnet-remove-reference.md) | Removes a project reference. |
+| [dotnet reference add](dotnet-reference-add.md)       | Adds a project reference.    |
+| [dotnet reference list](dotnet-reference-list.md)     | Lists project references.    |
+| [dotnet reference remove](dotnet-reference-remove.md) | Removes a project reference. |
 
 ### NuGet packages
 
-| Command                                           | Function                 |
-|---------------------------------------------------|--------------------------|
-| [dotnet add package](dotnet-add-package.md)       | Adds a NuGet package.    |
-| [dotnet remove package](dotnet-remove-package.md) | Removes a NuGet package. |
+| Command                                           | Function                      |
+|---------------------------------------------------|-------------------------------|
+| [dotnet package add](dotnet-package-add.md)       | Adds a NuGet package.         |
+| [dotnet package list](dotnet-package-add.md)      | Lists NuGet packages.         |
+| [dotnet package remove](dotnet-package-remove.md) | Removes a NuGet package.      |
+| [dotnet package search](dotnet-package-search.md) | Searches for a NuGet package. |
 
 ### NuGet commands
 

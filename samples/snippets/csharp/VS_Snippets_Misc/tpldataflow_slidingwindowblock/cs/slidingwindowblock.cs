@@ -1,4 +1,4 @@
-﻿// <snippet100>
+// <snippet100>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -245,7 +245,7 @@ class Program
       var slidingWindow = new SlidingWindowBlock<char>(4);
 
       Console.Write("Using SlidingWindowBlock<T> ");
-      Console.WriteLine("(T=char, windowSize={0}):", slidingWindow.WindowSize);
+      Console.WriteLine($"(T=char, windowSize={slidingWindow.WindowSize}):");
       DemonstrateSlidingWindow(slidingWindow, from n in Enumerable.Range(65, 10)
                                               select (char)n);
    }

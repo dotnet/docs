@@ -380,7 +380,7 @@ Contents of *sample1.rsp*:
 
 ```console
 build
---no-restore 
+--no-restore
 --output
 ./build-output/
 ```

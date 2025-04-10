@@ -1,4 +1,4 @@
-﻿
+
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
@@ -14,12 +14,12 @@ namespace Microsoft.ServiceModel.Samples
     {
         public void Equals(double result)
         {
-            Console.WriteLine("Equals({0})", result);
+            Console.WriteLine($"Equals({result})");
         }
 
         public void Equation(string eqn)
         {
-            Console.WriteLine("Equation({0})", eqn);
+            Console.WriteLine($"Equation({eqn})");
         }
     }
     //</snippet2>

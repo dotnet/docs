@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -13,9 +13,7 @@ public class Example
       CultureInfo jaJP = CultureInfo.CreateSpecificCulture("ja-JP");
       jaJP.DateTimeFormat.Calendar = new JapaneseCalendar();
       Thread.CurrentThread.CurrentCulture = jaJP;
-      Console.WriteLine("Earliest supported date by {1} calendar: {0:d}",
-                        jaJP.DateTimeFormat.Calendar.MinSupportedDateTime,
-                        GetCalendarName(jaJP));
+      Console.WriteLine($"Earliest supported date by {GetCalendarName(jaJP)} calendar: {jaJP.DateTimeFormat.Calendar.MinSupportedDateTime:d}");
       // Attempt to display the date.
       Console.WriteLine(dat.ToString());
       Console.WriteLine();
@@ -24,9 +22,7 @@ public class Example
       CultureInfo arEG = CultureInfo.CreateSpecificCulture("ar-EG");
       arEG.DateTimeFormat.Calendar = new UmAlQuraCalendar();
       Thread.CurrentThread.CurrentCulture = arEG;
-      Console.WriteLine("Earliest supported date by {1} calendar: {0:d}",
-                        arEG.DateTimeFormat.Calendar.MinSupportedDateTime,
-                        GetCalendarName(arEG));
+      Console.WriteLine($"Earliest supported date by {GetCalendarName(arEG)} calendar: {arEG.DateTimeFormat.Calendar.MinSupportedDateTime:d}");
       // Attempt to display the date.
       Console.WriteLine(dat.ToString());
       Console.WriteLine();

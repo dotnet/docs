@@ -117,7 +117,7 @@ Restore complete (0.2s)
   DotNet.ContainerImage succeeded (2.6s) → bin\Release\net9.0\linux-x64\publish\
 ```
 
-This command compiles your worker app to the _publish_ folder and pushes the container image to your local Docker daemon by default. If you're using Podman, an alias
+This command compiles your worker app to the _publish_ folder and pushes the container image to your local Docker daemon by default. If you're using Podman, the tooling also supports pushing there with no additional configuration.
 
 ## Publish .NET app to a tarball
 

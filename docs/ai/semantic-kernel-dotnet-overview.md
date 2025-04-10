@@ -1,7 +1,7 @@
 ---
 title: Semantic Kernel overview for .NET
 description: Learn how to add the Semantic Kernel SDK to your .NET projects and explore fundamental concepts
-ms.date: 06/07/2024
+ms.date: 04/09/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
@@ -28,6 +28,12 @@ Install the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsof
 
 ```dotnetcli
 dotnet add package Microsoft.SemanticKernel
+```
+
+Or, in .NET 10+:
+
+```dotnetcli
+dotnet package add Microsoft.SemanticKernel
 ```
 
 > [!NOTE]
@@ -202,9 +208,9 @@ string memoryCollectionName = "SummarizedAzureDocs";
 foreach (var fact in facts) {
     await memoryBuilder.SaveReferenceAsync(
         collection: memoryCollectionName,
-        description: fact.Key.Split(";")[1].Trim(),
+        description: fact.Key.Split(";")[0].Trim(),
         text: fact.Value,
-        externalId: fact.Key.Split(";")[2].Trim(),
+        externalId: fact.Key.Split(";")[1].Trim(),
         externalSourceName: "Azure Documentation"
     );
 }
@@ -213,5 +219,5 @@ foreach (var fact in facts) {
 The preceding code loads a set of facts into memory so that the data is available to use when interacting with AI models and orchestrating tasks.
 
 >[!div class="step-by-step"]
->[Quickstart - Summarize text with OpenAI](quickstarts/quickstart-openai-summarize-text.md)
->[Quickstart - Chat with your data](quickstarts/quickstart-ai-chat-with-data.md)
+>[Quickstart - Summarize text with OpenAI](quickstarts/prompt-model.md)
+>[Quickstart - Chat with your data](quickstarts/build-vector-search-app.md)

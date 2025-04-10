@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -21,9 +21,9 @@ public class Example
          Thread.CurrentThread.CurrentCulture = culture;
          Thread.CurrentThread.CurrentUICulture = culture;
 
-         Console.WriteLine("Current culture: {0}", culture.NativeName);
+         Console.WriteLine($"Current culture: {culture.NativeName}");
          string timeString = rm.GetString("TimeHeader");
-         Console.WriteLine("{0} {1:T}\n", timeString, DateTime.Now);
+         Console.WriteLine($"{timeString} {DateTime.Now:T}\n");
       }
    }
 }

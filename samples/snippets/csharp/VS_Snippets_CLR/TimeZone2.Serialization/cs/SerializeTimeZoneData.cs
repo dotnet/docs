@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -50,7 +50,7 @@ class TimeZoneSerialization
       catch (FileNotFoundException e)
       {
          // Handle failure to find file
-         Console.WriteLine("{0}: The file {1} could not be found.", e.GetType().Name, resxName);
+         Console.WriteLine($"{e.GetType().Name}: The file {resxName} could not be found.");
          return;
       }
 

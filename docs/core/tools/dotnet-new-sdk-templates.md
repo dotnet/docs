@@ -158,7 +158,7 @@ The ability to create a project for an earlier TFM depends on having that versio
    The runner/platform for the test project. The possible values are:
 
   - `VSTest` - VSTest platform (Default).
-  - `MSTest` - MSTest Runner (i.e. Microsoft.Testing.Platform).
+  - `MSTest` - Microsoft.Testing.Platform.
 
 - **`--coverage-tool <COVERAGE_TOOL>`**
 
@@ -169,7 +169,7 @@ The ability to create a project for an earlier TFM depends on having that versio
 
 - **`--extensions-profile <EXTENSIONS_PROFILE>`**
 
-  The SDK extensions profile when using MSTest Runner. The possible values are:
+  The SDK extensions profile when using Microsoft.Testing.Platform. The possible values are:
 
   - `Default` - Default extensions profile (Default).
   - `None` - No extensions are enabled.
@@ -842,7 +842,7 @@ Creates a web API project with AOT publish enabled. For more information, see [N
 
 - **`--no-openapi`**
 
-  Turns off OpenAPI (Swagger) support. `AddSwaggerGen`, `UseSwagger`, and `UseSwaggerUI` aren't called.
+  Turns off OpenAPI (Swagger) support. `AddOpenApi` and `MapOpenApi` aren't called.
 
 - **`--no-https`**
 

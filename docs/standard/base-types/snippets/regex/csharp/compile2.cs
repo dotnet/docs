@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -14,7 +14,7 @@ public class Compile2Example
         inFile.Close();
 
         MatchCollection matches = pattern.Matches(input);
-        Console.WriteLine("Found {0:N0} sentences.", matches.Count);
+        Console.WriteLine($"Found {matches.Count:N0} sentences.");
     }
 }
 // The example displays the following output:

@@ -28,7 +28,7 @@ dotnet add package Microsoft.Extensions.Http.Resilience --version 8.0.0
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-add-package.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information, see [dotnet package add](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Add resilience to an HTTP client
 
@@ -37,7 +37,7 @@ To add resilience to an <xref:System.Net.Http.HttpClient>, you chain a call on t
 There are several resilience-centric extensions available. Some are standard, thus employing various industry best practices, and others are more customizable. When adding resilience, you should only add one resilience handler and avoid stacking handlers. If you need to add multiple resilience handlers, you should consider using the `AddResilienceHandler` extension method, which allows you to customize the resilience strategies.
 
 > [!IMPORTANT]
-> All of the examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
+> All examples within this article rely on the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient%2A> API, from the [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) library, which returns an <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance. The <xref:Microsoft.Extensions.DependencyInjection.IHttpClientBuilder> instance is used to configure the <xref:System.Net.Http.HttpClient> and add the resilience handler.
 
 ## Add standard resilience handler
 
@@ -76,6 +76,22 @@ Given that you've created an <xref:Microsoft.Extensions.DependencyInjection.IHtt
 :::code language="csharp" source="snippets/http-resilience/Program.ResilienceHandler.cs" id="standard":::
 
 The preceding code adds the standard resilience handler to the <xref:System.Net.Http.HttpClient>. Like most resilience APIs, there are overloads that allow you to customize the default options and applied resilience strategies.
+
+## Remove standard resilience handlers
+
+There's a method <xref:Microsoft.Extensions.DependencyInjection.ResilienceHttpClientBuilderExtensions.RemoveAllResilienceHandlers*> which removes all previously registered resilience handlers. It's useful when you need to clear existing resilience handlers to add your custom one.
+The following example demonstrates how to configure a custom <xref:System.Net.Http.HttpClient> using the `AddHttpClient` method, remove all predefined resilience strategies, and replace them with new handlers.
+This approach allows you to clear existing configurations and define new ones according to your specific requirements.
+
+:::code language="csharp" source="snippets/http-resilience/Program.RemoveHandlers.cs" range="11-16":::
+
+The preceding code:
+
+- Creates a <xref:Microsoft.Extensions.DependencyInjection.ServiceCollection> instance.
+- Adds the standard resilience handler to all <xref:System.Net.Http.HttpClient> instances.
+- For the "custom" <xref:System.Net.Http.HttpClient>:
+  - Removes all predefined resilience handlers that were previously registered. This is useful when you want to start with a clean state to add your own custom strategies.
+  - Adds a `StandardHedgingHandler` to the <xref:System.Net.Http.HttpClient>. You can replace `AddStandardHedgingHandler()` with any strategy that suits your application's needs, such as retry mechanisms, circuit breakers, or other resilience techniques.
 
 ### Standard resilience handler defaults
 
@@ -277,7 +293,7 @@ There's a build time check that verifies if you're using `Grpc.Net.ClientFactory
 
 ### Compatibility with .NET Application Insights
 
-If you're using .NET Application Insights, then enabling resilience functionality in your application could cause all Application Insights telemetry to be missing. The issue occurs when resilience functionality is registered before Application Insights services. Consider the following sample causing the issue:
+If you're using .NET Application Insights version **2.22.0** or lower, then enabling resilience functionality in your application could cause all Application Insights telemetry to be missing. The issue occurs when resilience functionality is registered before Application Insights services. Consider the following sample causing the issue:
 
 ```csharp
 // At first, we register resilience functionality.
@@ -287,7 +303,7 @@ services.AddHttpClient().AddStandardResilienceHandler();
 services.AddApplicationInsightsTelemetry();
 ```
 
-The issue is caused by the following [bug](https://github.com/microsoft/ApplicationInsights-dotnet/issues/2879) in Application Insights and can be fixed by registering Application Insights services before resilience functionality, as shown below:
+The issue can be fixed by updating .NET Application Insights to version **2.23.0** or higher. If you cannot update it, then registering Application Insights services before resilience functionality, as shown below, will fix the issue:
 
 ```csharp
 // We register Application Insights first, and now it will be working correctly.

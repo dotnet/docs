@@ -5,15 +5,15 @@ using Microsoft.Extensions.AI;
 IChatClient client =
     new AzureOpenAIClient(
         new Uri("YOUR_MODEL_ENDPOINT"),
-        new DefaultAzureCredential()).AsChatClient("YOUR_MODEL_DEPLOYMENT_NAME");
+        new DefaultAzureCredential()).GetChatClient("YOUR_MODEL_DEPLOYMENT_NAME").AsIChatClient();
 
 try
 {
-    ChatCompletion completion = await client.CompleteAsync("YOUR_PROMPT");
+    ChatResponse completion = await client.GetResponseAsync("YOUR_PROMPT");
 
-    Console.WriteLine(completion.Message);
-} 
-catch (Exception e) 
+    Console.WriteLine(completion.Messages.Single());
+}
+catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }

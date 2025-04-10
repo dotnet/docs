@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -89,11 +89,10 @@ namespace n2
         }
         private static void WritePerson(dynamic person)
         {
-            Console.WriteLine("{0} is {1} years old.",
-                              person.Name, person.Age);
+            Console.WriteLine($"{person.Name} is {person.Age} years old.");
             // The following statement causes an exception
             // if you pass the employee object.
-            // Console.WriteLine("Manages {0} people", person.TeamSize);
+            // Console.WriteLine($"Manages {person.TeamSize} people");
         }
     }
     // This code example produces the following output:
@@ -120,7 +119,7 @@ namespace n3
         private static void HandlePropertyChanges(
             object sender, PropertyChangedEventArgs e)
         {
-            Console.WriteLine("{0} has changed.", e.PropertyName);
+            Console.WriteLine($"{e.PropertyName} has changed.");
         }
     }
     //</Snippet7>

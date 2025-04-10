@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,10 +40,10 @@ namespace cs_debuggingsupport
 
             foreach (Customer custObj in custQuery)
             {
-                Console.WriteLine("CustomerID: {0}", custObj.CustomerID);
-                Console.WriteLine("\tOriginal value: {0}", custObj.City);
+                Console.WriteLine($"CustomerID: {custObj.CustomerID}");
+                Console.WriteLine($"\tOriginal value: {custObj.City}");
                 custObj.City = "Paris";
-                Console.WriteLine("\tUpdated value: {0}", custObj.City);
+                Console.WriteLine($"\tUpdated value: {custObj.City}");
             }
 
             ChangeSet cs = db.GetChangeSet();
@@ -69,13 +69,13 @@ namespace cs_debuggingsupport
             Console.WriteLine("Customers from London:");
             foreach (var z in q)
             {
-                Console.WriteLine("\t {0}",z.ContactName);
+                Console.WriteLine($"\t {z.ContactName}");
             }
 
             DbCommand dc = db.GetCommand(q);
-            Console.WriteLine("\nCommand Text: \n{0}",dc.CommandText);
-            Console.WriteLine("\nCommand Type: {0}",dc.CommandType);
-            Console.WriteLine("\nConnection: {0}",dc.Connection);
+            Console.WriteLine($"\nCommand Text: \n{dc.CommandText}");
+            Console.WriteLine($"\nCommand Type: {dc.CommandType}");
+            Console.WriteLine($"\nConnection: {dc.Connection}");
 
             Console.ReadLine();
             // </Snippet3>

@@ -1,27 +1,25 @@
-﻿using Microsoft.Win32.SafeHandles;
-using System;
-using System.Runtime.InteropServices;
+﻿using System.IO;
 
-public class DerivedClassWithSafeHandle : BaseClassWithSafeHandle
+public class DisposableDerived : DisposableBase
 {
     // To detect redundant calls
-    private bool _disposedValue;
+    private bool _isDisposed;
 
-    // Instantiate a SafeHandle instance.
-    private SafeHandle? _safeHandle = new SafeFileHandle(IntPtr.Zero, true);
+    // Instantiate a disposable object owned by this class.
+    private Stream? _managedResource = new MemoryStream();
 
     // Protected implementation of Dispose pattern.
     protected override void Dispose(bool disposing)
     {
-        if (!_disposedValue)
+        if (!_isDisposed)
         {
+            _isDisposed = true;
+
             if (disposing)
             {
-                _safeHandle?.Dispose();
-                _safeHandle = null;
+                _managedResource?.Dispose();
+                _managedResource = null;
             }
-
-            _disposedValue = true;
         }
 
         // Call base class implementation.

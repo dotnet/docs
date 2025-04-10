@@ -9,7 +9,8 @@ string deployment = config["AZURE_OPENAI_GPT_NAME"];
 
 IChatClient client =
     new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
-        .AsChatClient(deployment);
+        .GetChatClient(deployment)
+        .AsIChatClient();
 
 // Create and print out the prompt
 string prompt = $"""
@@ -20,5 +21,5 @@ string prompt = $"""
 Console.WriteLine($"user >>> {prompt}");
 
 // Submit the prompt and print out the response
-ChatCompletion response = await client.CompleteAsync(prompt, new ChatOptions { MaxOutputTokens = 400 });
+ChatResponse response = await client.GetResponseAsync(prompt, new ChatOptions { MaxOutputTokens = 400 });
 Console.WriteLine($"assistant >>> {response}");

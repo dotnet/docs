@@ -45,10 +45,10 @@ IChatClient client =
     new AzureAIInferenceChatClient(...);
 ```
 
-Then, regardless of the provider you're using, you can send requests by calling <xref:Microsoft.Extensions.AI.IChatClient.CompleteAsync(System.Collections.Generic.IList{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)>, as follows:
+Then, regardless of the provider you're using, you can send requests by calling <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)>, as follows:
 
 ```csharp
-var response = await chatClient.CompleteAsync(
+var response = await chatClient.GetResponseAsync(
       "Translate the following text into Pig Latin: I love .NET and AI");
 
 Console.WriteLine(response.Message);
@@ -99,5 +99,5 @@ For an end-to-end sample using `Microsoft.Extensions.AI`, see [eShopSupport](htt
 
 ## Next steps
 
-- [Build an AI chat app with .NET](./quickstarts/get-started-openai.md)
-- [Quickstart - Summarize text using Azure AI chat app with .NET](./quickstarts/quickstart-openai-summarize-text.md)
+- [Build an AI chat app with .NET](quickstarts/build-chat-app.md)
+- [Quickstart - Summarize text using Azure AI chat app with .NET](quickstarts/prompt-model.md)

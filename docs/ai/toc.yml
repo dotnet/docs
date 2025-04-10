@@ -3,8 +3,8 @@ items:
   href: index.yml
 - name: Overview
   href: get-started/dotnet-ai-overview.md
-- name: Quickstart - Connect to and prompt an AI model
-  href: quickstarts/quickstart-openai-summarize-text.md
+- name: "Quickstart: Connect to and prompt an AI model"
+  href: quickstarts/prompt-model.md
 - name: AI frameworks and SDKs
   items:
   - name: Overview
@@ -16,23 +16,23 @@ items:
 - name: Quickstarts
   items:
   - name: Build a chat app
-    href: quickstarts/get-started-openai.md
+    href: quickstarts/build-chat-app.md
   - name: Build a .NET AI vector search app
-    href: quickstarts/quickstart-ai-chat-with-data.md
+    href: quickstarts/build-vector-search-app.md
   - name: Execute a local .NET function
-    href: quickstarts/quickstart-azure-openai-tool.md
+    href: quickstarts/use-function-calling.md
   - name: Generate images
-    href: quickstarts/quickstart-openai-generate-images.md
+    href: quickstarts/generate-images.md
   - name: Chat with a local AI model
-    href: quickstarts/quickstart-local-ai.md
+    href: quickstarts/chat-local-model.md
   - name: Build a minimal AI assistant
-    href: quickstarts/quickstart-assistants.md
+    href: quickstarts/create-assistant.md
+  - name: Get started using the AI app templates
+    href: quickstarts/ai-templates.md
 - name: Concepts
   items:
   - name: How generative AI and LLMs work
     href: conceptual/how-genai-and-llms-work.md
-  - name: How agents and copilots work with LLMs
-    href: conceptual/agents.md
   - name: Tokens
     href: conceptual/understanding-tokens.md
   - name: Embeddings
@@ -75,7 +75,13 @@ items:
     href: /azure/ai-services/openai/how-to/risks-safety-monitor?toc=/dotnet/ai/toc.json&bc=/dotnet/ai/toc.json
 - name: Evaluation
   items:
-  - name: Evaluate LLM prompt completions
+  - name: The Microsoft.Extensions.AI.Evaluation libraries
+    href: conceptual/evaluation-libraries.md
+  - name: "Quickstart: Evaluate a model's response"
+    href: quickstarts/evaluate-ai-response.md
+  - name: "Tutorial: Evaluate a response with response caching and reporting"
+    href: tutorials/evaluate-with-reporting.md
+  - name: "Tutorial: Evaluate LLM prompt completions"
     href: tutorials/llm-eval.md
 - name: Resources
   items:

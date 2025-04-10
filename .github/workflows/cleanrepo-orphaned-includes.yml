@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@cb605e52c26070c328afc4562f0b4ada7618a84e # v2.10.4
+        uses: step-security/harden-runner@c6295a65d1254861815972266d5933fd6e532bdf # v2.11.1
         with:
           egress-policy: audit
 
@@ -35,7 +35,7 @@ jobs:
 
       # Create the PR for the work done by the "clean repo" tool
       - name: create-pull-request
-        uses: peter-evans/create-pull-request@67ccf781d68cd99b580ae25a5c18a1cc84ffff1f
+        uses: dotnet/actions-create-pull-request@v4
         with:
           branch: cleanrepo-orphaned-includes
           title: "Monthly chores: Delete orphaned include files"

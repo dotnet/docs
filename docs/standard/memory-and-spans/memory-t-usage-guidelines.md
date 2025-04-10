@@ -1,8 +1,8 @@
 ---
 title: "Memory<T> and Span<T> usage guidelines"
 description: This article describes Memory<T> and Span<T>, which are buffers of structured data in .NET that can be used in pipelines.
-ms.date: 04/19/2023
-helpviewer_keywords: 
+ms.date: 04/09/2025
+helpviewer_keywords:
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
   - "using Memory&lt;T&gt; and Span&lt;T&gt;"
 ---
@@ -97,17 +97,27 @@ The method that initially creates the <xref:System.Memory%601> instance is the i
 
 ## Usage guidelines
 
-Because a memory block is owned but is intended to be passed to multiple components, some of which may operate upon a particular memory block simultaneously, it's important to establish guidelines for using both <xref:System.Memory%601> and <xref:System.Span%601>. Guidelines are necessary because it's possible for a component to:
+Because a memory block is owned but is intended to be passed to multiple components, some of which might operate upon a particular memory block simultaneously, it's important to establish guidelines for using both <xref:System.Memory%601> and <xref:System.Span%601>. Guidelines are necessary because it's possible for a component to:
 
 - Retain a reference to a memory block after its owner has released it.
-
 - Operate on a buffer at the same time that another component is operating on it, in the process corrupting the data in the buffer.
 
-- While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions. It's important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
+While the stack-allocated nature of <xref:System.Span%601> optimizes performance and makes <xref:System.Span%601> the preferred type for operating on a memory block, it also subjects <xref:System.Span%601> to some major restrictions. It's important to know when to use a <xref:System.Span%601> and when to use <xref:System.Memory%601>.
 
 The following are our recommendations for successfully using <xref:System.Memory%601> and its related types. Guidance that applies to <xref:System.Memory%601> and <xref:System.Span%601> also applies to <xref:System.ReadOnlyMemory%601> and <xref:System.ReadOnlySpan%601> unless noted otherwise.
 
-**Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible.**
+- [Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible](#rule-1-for-a-synchronous-api-use-spant-instead-of-memoryt-as-a-parameter-if-possible)
+- [Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only](#rule-2-use-readonlyspant-or-readonlymemoryt-if-the-buffer-should-be-read-only)
+- [Rule #3: If your method accepts Memory\<T> and returns `void`, you must not use the Memory\<T> instance after your method returns](#rule-3-if-your-method-accepts-memoryt-and-returns-void-you-must-not-use-the-memoryt-instance-after-your-method-returns)
+- [Rule #4: If your method accepts a Memory\<T> and returns a Task, you must not use the Memory\<T> instance after the Task transitions to a terminal state](#rule-4-if-your-method-accepts-a-memoryt-and-returns-a-task-you-must-not-use-the-memoryt-instance-after-the-task-transitions-to-a-terminal-state)
+- [Rule #5: If your constructor accepts Memory\<T> as a parameter, instance methods on the constructed object are assumed to be consumers of the Memory\<T> instance](#rule-5-if-your-constructor-accepts-memoryt-as-a-parameter-instance-methods-on-the-constructed-object-are-assumed-to-be-consumers-of-the-memoryt-instance)
+- [Rule #6: If you have a settable Memory\<T>-typed property (or an equivalent instance method) on your type, instance methods on that object are assumed to be consumers of the Memory\<T> instance](#rule-6-if-you-have-a-settable-memoryt-typed-property-or-an-equivalent-instance-method-on-your-type-instance-methods-on-that-object-are-assumed-to-be-consumers-of-the-memoryt-instance)
+- [Rule #7: If you have an IMemoryOwner\<T> reference, you must at some point dispose of it or transfer its ownership (but not both)](#rule-7-if-you-have-an-imemoryownert-reference-you-must-at-some-point-dispose-of-it-or-transfer-its-ownership-but-not-both)
+- [Rule #8: If you have an IMemoryOwner\<T> parameter in your API surface, you are accepting ownership of that instance](#rule-8-if-you-have-an-imemoryownert-parameter-in-your-api-surface-you-are-accepting-ownership-of-that-instance)
+- [Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter](#rule-9-if-youre-wrapping-a-synchronous-pinvoke-method-your-api-should-accept-spant-as-a-parameter)
+- [Rule #10: If you're wrapping an asynchronous p/invoke method, your API should accept Memory\<T> as a parameter](#rule-10-if-youre-wrapping-an-asynchronous-pinvoke-method-your-api-should-accept-memoryt-as-a-parameter)
+
+### Rule #1: For a synchronous API, use Span\<T> instead of Memory\<T> as a parameter if possible
 
 <xref:System.Span%601> is more versatile than <xref:System.Memory%601> and can represent a wider variety of contiguous memory buffers. <xref:System.Span%601> also offers better performance than <xref:System.Memory%601>. Finally, you can use the <xref:System.Memory%601.Span?displayProperty=nameWithType> property to convert a <xref:System.Memory%601> instance to a <xref:System.Span%601>, although Span\<T>-to-Memory\<T> conversion isn't possible. So if your callers happen to have a <xref:System.Memory%601> instance, they'll be able to call your methods with <xref:System.Span%601> parameters anyway.
 
@@ -117,7 +127,7 @@ Sometimes, you'll have to use a <xref:System.Memory%601> parameter instead of a 
 
 <a name="rule-2"></a>
 
-**Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only.**
+### Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only
 
 In the earlier examples, the `DisplayBufferToConsole` method only reads from the buffer; it doesn't modify the contents of the buffer. The method signature should be changed to the following.
 
@@ -133,7 +143,7 @@ void DisplayBufferToConsole(ReadOnlySpan<char> buffer);
 
 The `DisplayBufferToConsole` method now works with virtually every buffer type imaginable: `T[]`, storage allocated with [stackalloc](../../csharp/language-reference/operators/stackalloc.md), and so on. You can even pass a <xref:System.String> directly into it! For more information, see GitHub issue [dotnet/docs #25551](https://github.com/dotnet/docs/issues/25551).
 
-**Rule #3: If your method accepts Memory\<T> and returns `void`, you must not use the Memory\<T> instance after your method returns.**
+### Rule #3: If your method accepts Memory\<T> and returns `void`, you must not use the Memory\<T> instance after your method returns
 
 This relates to the "lease" concept mentioned earlier. A void-returning method's lease on the <xref:System.Memory%601> instance begins when the method is entered, and it ends when the method exits. Consider the following example, which calls `Log` in a loop based on input from the console.
 
@@ -167,7 +177,7 @@ There are several ways to resolve this:
 
    [!code-csharp[defensive-copy](~/samples/snippets/standard/buffers/memory-t/task-returning/task-returning.cs#1)]
 
-**Rule #4: If your method accepts a Memory\<T> and returns a Task, you must not use the Memory\<T> instance after the Task transitions to a terminal state.**
+### Rule #4: If your method accepts a Memory\<T> and returns a Task, you must not use the Memory\<T> instance after the Task transitions to a terminal state
 
 This is just the async variant of Rule #3. The `Log` method from the earlier example can be written as follows to comply with this rule:
 
@@ -177,7 +187,7 @@ Here, "terminal state" means that the task transitions to a completed, faulted, 
 
 This guidance applies to methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask%601>, or any similar type.
 
-**Rule #5: If your constructor accepts Memory\<T> as a parameter, instance methods on the constructed object are assumed to be consumers of the Memory\<T> instance.**
+### Rule #5: If your constructor accepts Memory\<T> as a parameter, instance methods on the constructed object are assumed to be consumers of the Memory\<T> instance
 
 Consider the following example:
 
@@ -200,7 +210,7 @@ void PrintAllOddValues(ReadOnlyMemory<int> input)
 
 Here, the `OddValueExtractor` constructor accepts a `ReadOnlyMemory<int>` as a constructor parameter, so the constructor itself is a consumer of the `ReadOnlyMemory<int>` instance, and all instance methods on the returned value are also consumers of the original `ReadOnlyMemory<int>` instance. This means that `TryReadNextOddValue` consumes the `ReadOnlyMemory<int>` instance, even though the instance isn't passed directly to the `TryReadNextOddValue` method.
 
-**Rule #6: If you have a settable Memory\<T>-typed property (or an equivalent instance method) on your type, instance methods on that object are assumed to be consumers of the Memory\<T> instance.**
+### Rule #6: If you have a settable Memory\<T>-typed property (or an equivalent instance method) on your type, instance methods on that object are assumed to be consumers of the Memory\<T> instance
 
 This is really just a variant of Rule #5. This rule exists because property setters or equivalent methods are assumed to capture and persist their inputs, so instance methods on the same object may utilize the captured state.
 
@@ -220,7 +230,7 @@ class Person
 }
 ```
 
-**Rule #7: If you have an IMemoryOwner\<T> reference, you must at some point dispose of it or transfer its ownership (but not both).**
+### Rule #7: If you have an IMemoryOwner\<T> reference, you must at some point dispose of it or transfer its ownership (but not both)
 
 Since a <xref:System.Memory%601> instance may be backed by either managed or unmanaged memory, the owner must call `Dispose` on <xref:System.Buffers.IMemoryOwner%601> when work performed on the <xref:System.Memory%601> instance is complete. Alternatively, the owner may transfer ownership of the <xref:System.Buffers.IMemoryOwner%601> instance to a different component, at which point the acquiring component becomes responsible for calling `Dispose` at the appropriate time (more on this later).
 
@@ -228,7 +238,7 @@ Failure to call the `Dispose` method on an <xref:System.Buffers.IMemoryOwner%601
 
 This rule also applies to code that calls factory methods like <xref:System.Buffers.MemoryPool%601.Rent%2A?displayProperty=nameWithType>. The caller becomes the owner of the returned <xref:System.Buffers.IMemoryOwner%601> and is responsible for disposing of the instance when finished.
 
-**Rule #8: If you have an IMemoryOwner\<T> parameter in your API surface, you are accepting ownership of that instance.**
+### Rule #8: If you have an IMemoryOwner\<T> parameter in your API surface, you are accepting ownership of that instance
 
 Accepting an instance of this type signals that your component intends to take ownership of this instance. Your component becomes responsible for proper disposal according to Rule #7.
 
@@ -237,7 +247,7 @@ Any component that transfers ownership of the <xref:System.Buffers.IMemoryOwner%
 > [!IMPORTANT]
 > If your constructor accepts <xref:System.Buffers.IMemoryOwner%601> as a parameter, its type should implement <xref:System.IDisposable>, and your <xref:System.IDisposable.Dispose%2A> method should call `Dispose` on the <xref:System.Buffers.IMemoryOwner%601> object.
 
-**Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter.**
+### Rule #9: If you're wrapping a synchronous p/invoke method, your API should accept Span\<T> as a parameter
 
 According to Rule #1, <xref:System.Span%601> is generally the correct type to use for synchronous APIs. You can pin <xref:System.Span%601> instances via the [`fixed`](../../csharp/language-reference/statements/fixed.md) keyword, as in the following example.
 
@@ -277,7 +287,7 @@ public unsafe int ManagedWrapper(Span<byte> data)
 }
 ```
 
-**Rule #10: If you're wrapping an asynchronous p/invoke method, your API should accept Memory\<T> as a parameter.**
+### Rule #10: If you're wrapping an asynchronous p/invoke method, your API should accept Memory\<T> as a parameter
 
 Since you cannot use the [`fixed`](../../csharp/language-reference/statements/fixed.md) keyword across asynchronous operations, you use the <xref:System.Memory%601.Pin%2A?displayProperty=nameWithType> method to pin <xref:System.Memory%601> instances, regardless of the kind of contiguous memory the instance represents. The following example shows how to use this API to perform an asynchronous p/invoke call.
 

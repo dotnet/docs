@@ -1,10 +1,10 @@
 ---
-title: Source-generated metrics
+title: Compile-time metric source generation
 description: Learn how to use a source generator to create metrics in .NET
 ms.date: 04/11/2025
 ---
 
-# Source generated metering
+# Compile-time metric source generation
 
 .NET's metering infrastructure is designed to deliver a highly-usable and high-performance metering solution
 for modern .NET applications.

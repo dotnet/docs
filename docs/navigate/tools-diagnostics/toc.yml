@@ -391,8 +391,8 @@ items:
             displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
           - name: Collection
             href: ../../core/diagnostics/metrics-collection.md
-          - name: Source generated metrics
-            href: ../../core/diagnostics/source-generated-metrics.md
+          - name: Compile-time metric source generation
+            href: ../../core/diagnostics/metrics-generator.md
           - name: Strongly typed source-generated metrics
             displayName: strongly-typed tags,dimensions
             href: ../../core/diagnostics/metrics-strongly-typed.md

@@ -39,3 +39,4 @@ Identifier | Name | Description
 [MSTEST0040](mstest0040.md) | AvoidUsingAssertsInAsyncVoidContextAnalyzer | Do not assert inside 'async void' contexts
 [MSTEST0041](mstest0041.md) | UseConditionBaseWithTestClassAnalyzer | Use 'ConditionBaseAttribute' on test classes
 [MSTEST0042](mstest0042.md) | DuplicateDataRowAnalyzer | Avoid duplicated 'DataRow' entries
+[MSTEST0043](mstest0043.md) | UseRetryWithTestMethodAnalyzer | Use retry attribute on test method

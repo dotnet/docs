@@ -24,8 +24,8 @@ This extension is shipped as part of [Microsoft.Testing.Extensions.Retry](https:
 
 The available options are as follows:
 
-| Option                            | Description                                                                                      |
-|-----------------------------------|--------------------------------------------------------------------------------------------------|
-| retry-failed-tests                | Reruns any failed tests until they pass or until the maximum number of attempts is reached.      |
-| retry-failed-tests-max-percentage | Avoids rerunning tests when the percentage of failed test cases crosses the specified threshold. |
-| retry-failed-tests-max-tests      | Avoids rerunning tests when the number of failed test cases crosses the specified limit.         |
+| Option                                | Description                                                                                      |
+|---------------------------------------|--------------------------------------------------------------------------------------------------|
+| `--retry-failed-tests`                | Reruns any failed tests until they pass or until the maximum number of attempts is reached.      |
+| `--retry-failed-tests-max-percentage` | Avoids rerunning tests when the percentage of failed test cases crosses the specified threshold. |
+| `--retry-failed-tests-max-tests`      | Avoids rerunning tests when the number of failed test cases crosses the specified limit.         |

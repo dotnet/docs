@@ -71,7 +71,7 @@ internal static partial class Metric
     public static partial TotalCount CreateTotalCount(Meter meter);
 
     [Counter<int>]
-    public static partial TotalFailures CreateTotalFailures(Meter meter);
+    public static partial TotalFailures CreateTotalFailures(this Meter meter);
 }
 ```
 
@@ -116,7 +116,8 @@ internal class MyClass
         // Create metric instances using the source-generated factory methods
         _latencyMetric = Metric.CreateLatency(meter);
         _totalCountMetric = Metric.CreateTotalCount(meter);
-        _totalFailuresMetric = Metric.CreateTotalFailures(meter);
+        // This syntax is available since `CreateTotalFailures` is defined as an extension method
+        _totalFailuresMetric = meter.CreateTotalFailures();
     }
 
     public void ReportSampleRequestCount()

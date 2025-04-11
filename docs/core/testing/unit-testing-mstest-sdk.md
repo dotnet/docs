@@ -89,7 +89,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Code Coverage](./microsoft-testing-platform-extensions-code-coverage.md#microsoft-code-coverage)
 
   * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
-  
+
 * `AllMicrosoft` - Enable all extensions shipped by Microsoft (including extensions with a restrictive license).
 
   Enables the following extensions:
@@ -105,7 +105,7 @@ You can set the profile using the property `TestingExtensionsProfile` with one o
   * [Hot Reload](./microsoft-testing-platform-extensions-hosting.md#hot-reload)
 
   * [Retry](./microsoft-testing-platform-extensions-policy.md#retry)
-  
+
   * [Trx Report](./microsoft-testing-platform-extensions-test-reports.md#visual-studio-test-reports)
 
 Here's a full example, using the `None` profile:
@@ -285,4 +285,5 @@ The NuGet-provided MSBuild SDKs (including MSTest.Sdk) have limited tooling supp
 
 ## See also
 
-- [Test project&ndash;related properties](../project-sdk/msbuild-props.md#test-projectrelated-properties)
+- [Microsoft.Testing.Platform&ndash;related properties](../project-sdk/msbuild-props.md#microsofttestingplatformrelated-properties)
+- [VSTest&ndash;related properties](../project-sdk/msbuild-props.md#vstestrelated-properties)

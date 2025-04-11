@@ -59,7 +59,7 @@ The following example shows how to specify width and alignment, and uses pipe ch
 
 As the example output shows, if the length of the formatted expression result exceeds specified field width, the *width* value is ignored.
 
-For more information, see the [Width component](../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
+For more information, see the [Width component](../../standard/base-types/composite-formatting.md#width-component) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
 
 ## How to use escape sequences in an interpolated string
 

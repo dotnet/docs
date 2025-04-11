@@ -186,7 +186,7 @@ Format items are processed sequentially from the beginning of the string. Each f
 
 For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example: An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter).
 
-For more information, see [Processing order](../../standard/base-types/composite-formatting.md##processing-order).
+For more information, see [Processing order](../../standard/base-types/composite-formatting.md#processing-order).
 
 ## Format items that have the same index
 

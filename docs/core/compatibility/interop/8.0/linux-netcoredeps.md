@@ -38,9 +38,9 @@ If your application relied on the `netcoredeps` subdirectory for p/invokes or cu
 
 - Implement a custom resolution mechanism using one of the following:
   - <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll>
+  - <xref:System.Runtime.Loader.AssemblyLoadContext.LoadUnmanagedDll>
   - <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver>
   - <xref:System.Runtime.InteropServices.NativeLibrary.Load>
-  - <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver>`
 - If an `RPATH` is required in your deployment, modify the ELF file explicitly using the `patchelf` utility.
 
 ## Affected APIs

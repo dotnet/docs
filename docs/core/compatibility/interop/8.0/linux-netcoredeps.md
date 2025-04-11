@@ -28,7 +28,7 @@ This is a [source incompatible](../../categories.md#source-compatibility) change
 
 ## Reason for change
 
-The `netcoredeps` behavior was originally introduced to handle complex dependencies on third-party libraries in earlier .NET versions. Modern .NET versions no longer require this behavior due to improved dependency handling. Additionally, the mechanism isn't aligned with recommended practices for ELF platforms.
+The `netcoredeps` behavior was originally introduced to handle complex dependencies on third-party libraries in earlier .NET versions. .NET 8+ no longer requires this behavior due to improved dependency handling. Additionally, the mechanism isn't aligned with recommended practices for ELF platforms.
 
 For more information, see [GitHub issue #114393](https://github.com/dotnet/runtime/issues/114393).
 
@@ -36,8 +36,12 @@ For more information, see [GitHub issue #114393](https://github.com/dotnet/runti
 
 If your application relied on the `netcoredeps` subdirectory for p/invokes or custom native library resolution, use the following alternatives:
 
-- Implement a custom resolution mechanism using the <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll> event or <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver>.
-- If an `RPATH` is required in your deployment, modify the ELF file explicitly.
+- Implement a custom resolution mechanism using one of the following:
+    - <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll>
+    - <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver>
+    - <xref:System.Runtime.InteropServices.NativeLibrary.Load>
+    - <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver>
+- If an `RPATH` is required in your deployment, modify the ELF file explicitly using the `patchelf` utility.
 
 ## Affected APIs
 

@@ -375,7 +375,7 @@
 | DotNetty | NuGet [0.7.6](https://www.nuget.org/packages/DotNetty.Common/0.7.6) |  |  |
 | Functions Extension MCP | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.0.0-preview.2) |  |  |
 | Functions Worker Extension MCP | NuGet [1.0.0-preview.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.0.0-preview.2) |  |  |
-| Functions Worker Extension MySQL | NuGet [1.0.98](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.98) |  |  |
+| Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.3) |  |  |
 | IoT Operations MQTT | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.0) |  |  |
 | IoT Operations Protocol | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.10.0) |  |  |
@@ -391,7 +391,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.43.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.43.0) |  |  |
 | Speech Extension Telemetry | NuGet [1.43.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.43.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
-| WebJobs Extension MySQL | NuGet [1.0.98](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.98) |  |  |
+| WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |
 | Anomaly Detector | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.AnomalyDetector/1.0.0) |  | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.AnomalyDetector_1.0.0-preview.1/sdk/cognitiveservices/AnomalyDetector) |
 | App Service | NuGet [0.2.2-alpha](https://www.nuget.org/packages/Microsoft.Azure.AppService/0.2.2-alpha) |  |  |
 | Application Insights | NuGet [0.9.0-preview](https://www.nuget.org/packages/Microsoft.Azure.ApplicationInsights/0.9.0-preview) |  |  |

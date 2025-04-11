@@ -2,19 +2,17 @@
 title: Composite formatting
 description: Learn about .NET composite formatting, which takes as input a list of objects and a composite format string, containing fixed text with indexed placeholders.
 ms.date: 08/07/2023
-ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "parameter specifiers"
   - "strings [.NET], alignment"
   - "format specifiers, composite formatting"
   - "strings [.NET], composite"
   - "composite formatting"
   - "objects [.NET], formatting multiple objects"
-ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
 ---
 # Composite formatting
 
@@ -49,13 +47,13 @@ The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, w
 
 Each format item takes the following form and consists of the following components:
 
-`{index[,alignment][:formatString]}`
+`{index[,width][:formatString]}`
 
 The matching braces (`{` and `}`) are required.
 
 ### Index component
 
-The mandatory *index* component, which is also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is `0` formats the first object in the list. The format item whose parameter specifier is `1` formats the second object in the list, and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than 10:
+The mandatory `index` component, which is also called a parameter specifier, is a number starting from 0 that identifies a corresponding item in the list of objects. That is, the format item whose parameter specifier is `0` formats the first object in the list. The format item whose parameter specifier is `1` formats the second object in the list, and so on. The following example includes four parameter specifiers, numbered zero through three,  to represent prime numbers less than 10:
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="index":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="index":::
@@ -67,9 +65,9 @@ Multiple format items can refer to the same element in the list of objects by sp
 
 Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and third object by specifying a composite format string such as `{1} {0} {2}`. An object that isn't referenced by a format item is ignored. A <xref:System.FormatException> is thrown at run time if a parameter specifier designates an item outside the bounds of the list of objects.
 
-### Alignment component
+### Width component
 
-The optional *alignment* component is a signed integer indicating the preferred formatted field width. If the value of *alignment* is less than the length of the formatted string, *alignment* is ignored, and the length of the formatted string is used as the field width. The formatted data in the field is right-aligned if *alignment* is positive and left-aligned if *alignment* is negative. If padding is necessary, white space is used. The comma is required if *alignment*  is specified.
+The optional `width` component is a signed integer indicating the preferred formatted field width. If the value of `width` is less than the length of the formatted string, `width` is ignored, and the length of the formatted string is used as the field width. The formatted data in the field is right-aligned if `width` is positive and left-aligned if `width` is negative. If padding is necessary, white space is used. The comma is required if `width` is specified.
 
 The following example defines two arrays, one containing the names of employees and the other containing the hours they worked over two weeks. The composite format string left-aligns the names in a 20-character field and right-aligns their hours in a 5-character field. The "N1" standard format string formats the hours with one fractional digit.
 
@@ -78,13 +76,13 @@ The following example defines two arrays, one containing the names of employees 
 
 ### Format string component
 
-The optional *formatString* component is a format string that's appropriate for the type of object being formatted. You can specify:
+The optional `formatString` component is a format string that's appropriate for the type of object being formatted. You can specify:
 
 - A standard or custom numeric format string if the corresponding object is a numeric value.
 - A standard or custom date and time format string if the corresponding object is a <xref:System.DateTime> object.
 - An [enumeration format string](enumeration-format-strings.md) if the corresponding object is an enumeration value.
 
-If *formatString* isn't specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if *formatString* is specified.
+If `formatString` isn't specified, the general ("G") format specifier for a numeric, date and time, or enumeration type is used. The colon is required if `formatString` is specified.
 
 The following table lists types or categories of types in the .NET class library that support a predefined set of format strings, and provides links to the articles that list the supported format strings. String formatting is an extensible mechanism that makes it possible to define new format strings for all existing types and to define a set of format strings supported by an application-defined type.
 
@@ -146,7 +144,7 @@ Each value in the parameter list that corresponds to a format item is converted 
 
 1. If the value to be formatted is `null`, an empty string <xref:System.String.Empty?displayProperty=nameWithType> is returned.
 1. If an <xref:System.ICustomFormatter> implementation is available, the runtime calls its <xref:System.ICustomFormatter.Format%2A> method. The runtime passes the format item's `formatString` value (or `null` if it's not present) to the method. The runtime also passes the <xref:System.IFormatProvider> implementation to the method. If the call to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method returns `null`, execution proceeds to the next step. Otherwise, the result of the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> call is returned.
-1. If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. If one is present in the format item, the *formatString* value is passed to the method. Otherwise, `null` is passed. The <xref:System.IFormatProvider> argument is determined as follows:
+1. If the value implements the <xref:System.IFormattable> interface, the interface's <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29> method is called. If one is present in the format item, the `formatString` value is passed to the method. Otherwise, `null` is passed. The <xref:System.IFormatProvider> argument is determined as follows:
 
     - For a numeric value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.NumberFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. If it's unable to supply one, if the value of the argument is `null`, or if the composite formatting method doesn't have an <xref:System.IFormatProvider> parameter, the <xref:System.Globalization.NumberFormatInfo> object for the current culture is used.
     - For a date and time value, if a composite formatting method with a non-null <xref:System.IFormatProvider> argument is called, the runtime requests a <xref:System.Globalization.DateTimeFormatInfo> object from its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> method. In the following situations, the <xref:System.Globalization.DateTimeFormatInfo> object for the current culture is used instead:
@@ -180,7 +178,7 @@ The following example demonstrates formatting multiple objects, including format
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_multiple":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_multiple":::
 
-The following example demonstrates the use of alignment in formatting. The arguments that are formatted are placed between vertical bar characters (`|`) to highlight the resulting alignment.
+The following example demonstrates the use of width in formatting. The arguments that are formatted are placed between vertical bar characters (`|`) to highlight the resulting alignment.
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_bar":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_bar":::
@@ -191,11 +189,11 @@ The following example demonstrates the use of alignment in formatting. The argum
 - <xref:System.String.Format%2A?displayProperty=nameWithType>
 - [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)
 - [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
-- [Formatting Types](formatting-types.md)
-- [Standard Numeric Format Strings](standard-numeric-format-strings.md)
-- [Custom Numeric Format Strings](custom-numeric-format-strings.md)
-- [Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)
-- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)
-- [Standard TimeSpan Format Strings](standard-timespan-format-strings.md)
-- [Custom TimeSpan Format Strings](custom-timespan-format-strings.md)
-- [Enumeration Format Strings](enumeration-format-strings.md)
+- [Formatting types](formatting-types.md)
+- [Standard numeric format strings](standard-numeric-format-strings.md)
+- [Custom numeric format strings](custom-numeric-format-strings.md)
+- [Standard date and time format strings](standard-date-and-time-format-strings.md)
+- [Custom date and time format strings](custom-date-and-time-format-strings.md)
+- [Standard TimeSpan format strings](standard-timespan-format-strings.md)
+- [Custom TimeSpan format strings](custom-timespan-format-strings.md)
+- [Enumeration format strings](enumeration-format-strings.md)

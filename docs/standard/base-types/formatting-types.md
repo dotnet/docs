@@ -296,7 +296,7 @@ The following example instantiates a `Temperature` object. It then calls the <xr
 
 ## Composite formatting
 
-Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, support composite formatting. A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects. Each object is represented in the composite format string by an indexed format item. The index of the format item corresponds to the position of the object that it represents in the method's parameter list. Indexes are zero-based. For example, in the following call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method, the first format item, `{0:D}`, is replaced by the string representation of `thatDate`; the second format item, `{1}`, is replaced by the string representation of `item1`; and the third format item, `{2:C2}`, is replaced by the string representation of `item1.Value`.
+Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, support *composite formatting*. A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects. Each object is represented in the composite format string by an indexed format item. The index of the format item corresponds to the position of the object that it represents in the method's parameter list. Indexes are zero-based. For example, in the following call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method, the first format item, `{0:D}`, is replaced by the string representation of `thatDate`; the second format item, `{1}`, is replaced by the string representation of `item1`; and the third format item, `{2:C2}`, is replaced by the string representation of `item1.Value`.
 
 [!code-csharp[Conceptual.Formatting.Overview#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/composite1.cs#14)]
 [!code-vb[Conceptual.Formatting.Overview#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/composite1.vb#14)]
@@ -307,10 +307,10 @@ In addition to replacing a format item with the string representation of its cor
 
 - The width of the field that contains the object's string representation, and the alignment of the string representation in that field. You do this by following the format item's index with a `,` (comma) followed the field width. The string is right-aligned in the field if the field width is a positive value, and it is left-aligned if the field width is a negative value. The following example left-aligns date values in a 20-character field, and it right-aligns decimal values with one fractional digit in an 11-character field.
 
-     [!code-csharp[Conceptual.Formatting.Overview#22](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/composite2.cs#22)]
-     [!code-vb[Conceptual.Formatting.Overview#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/composite2.vb#22)]
+  [!code-csharp[Conceptual.Formatting.Overview#22](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/composite2.cs#22)]
+  [!code-vb[Conceptual.Formatting.Overview#22](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/composite2.vb#22)]
 
-     Note that, if both the alignment string component and the format string component are present, the former precedes the latter (for example, `{0,-20:g}`.
+  If both the alignment string component and the format string component are present, the former precedes the latter (for example, `{0,-20:g}`).
 
 For more information about composite formatting, see [Composite Formatting](composite-formatting.md).
 

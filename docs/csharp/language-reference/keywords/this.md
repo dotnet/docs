@@ -1,26 +1,25 @@
 ---
-title: "this keyword"
-description: this keyword (C# Reference)
-ms.date: 07/20/2015
+title: "The this keyword"
+description: The `this` keyword clarifies access to the current instance of a type, or declares an indexer on the type.
+ms.date: 04/08/2025
 f1_keywords: 
   - "this"
   - "this_CSharpKeyword"
 helpviewer_keywords: 
   - "this keyword [C#]"
-ms.assetid: d4f827fe-4710-410b-89b8-867dad44b8a3
 ---
-# this (C# Reference)
+# The this keyword
 
 The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.
 
 > [!NOTE]
-> This article discusses the use of `this` with class instances. For more information about its use in extension methods, see [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md).
+> This article discusses the use of `this` with class instances. For more information about its use in extension methods, see the [`extension`](./extension.md) keyword.
 
 The following are common uses of `this`:
 
 - To qualify members hidden by similar names, for example:
 
-  [!code-csharp[csrefKeywordsAccess#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#4)]  
+  :::code language="csharp" source="./snippets/csrefKeywordsAccess.cs" id="snippet4":::
 
 - To pass an object as a parameter to other methods, for example:
 
@@ -30,15 +29,13 @@ The following are common uses of `this`:
 
 - To declare [indexers](../../programming-guide/indexers/index.md), for example:
 
-  [!code-csharp[csrefKeywordsAccess#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#5)]
+  :::code language="csharp" source="./snippets/csrefKeywordsAccess.cs" id="snippet5":::
 
-Static member functions, because they exist at the class level and not as part of an object, do not have a `this` pointer. It is an error to refer to `this` in a static method.
+Static member functions, because they exist at the class level and not as part of an object, don't have a `this` pointer. It's an error to refer to `this` in a static method.
 
-## Example
+In this example, the parameters `name`, and `alias` hide fields with the same names. The `this` keyword qualifies those variables as `Employee` class members. The `this` keyword also specifies the object for the method `CalcTax`, which belongs to another class.
 
-In this example, `this` is used to qualify the `Employee` class members, `name` and `alias`, which are hidden by similar names. It is also used to pass an object to the method `CalcTax`, which belongs to another class.
-
-[!code-csharp[csrefKeywordsAccess#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsAccess/CS/csrefKeywordsAccess.cs#3)]
+:::code language="csharp" source="./snippets/csrefKeywordsAccess.cs" id="snippet3":::
 
 ## C# language specification
 

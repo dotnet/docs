@@ -36,7 +36,11 @@ For more information, see [GitHub issue #114393](https://github.com/dotnet/runti
 
 If your application relied on the `netcoredeps` subdirectory for p/invokes or custom native library resolution, use the following alternatives:
 
-- Implement a custom resolution mechanism using <xref:System.Runtime.InteropServices.DllImportResolver> or the <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll> event.
+- Implement a custom resolution mechanism using one of the following:
+    - <xref:System.Runtime.InteropServices.DllImportResolver?displayProperty=nameWithType> 
+    - The <xref:System.Runtime.Loader.AssemblyLoadContext.ResolvingUnmanagedDll?displayProperty=nameWithType> event.
+    - <xref:System.Runtime.InteropServices.NativeLibrary.Load*?displayProperty=nameWithType>
+    - <xref:System.Runtime.InteropServices.NativeLibrary.SetDllImportResolver(System.Reflection.Assembly,System.Runtime.InteropServices.DllImportResolver)?displayProperty=nameWithType>
 - If an `RPATH` is required in your deployment, modify the ELF file explicitly.
 
 ## Affected APIs

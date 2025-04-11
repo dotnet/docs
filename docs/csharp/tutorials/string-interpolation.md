@@ -25,7 +25,7 @@ Interpolated strings support all the capabilities of the [string composite forma
 
 ## How to specify a format string for an interpolation expression
 
-To specify a format string that is supported by the type of the expression result, follow the interpolation expression with a colon (":") and the format string:
+To specify a format string that's supported by the type of the expression result, follow the interpolation expression with a colon (":") and the format string:
 
 ```csharp
 {<interpolationExpression>:<formatString>}
@@ -42,24 +42,24 @@ For more information, see the [Format string component](../../standard/base-type
 To specify the minimum field width and the alignment of the formatted expression result, follow the interpolation expression with a comma (",") and the constant expression:
 
 ```csharp
-{<interpolationExpression>,<alignment>}
+{<interpolationExpression>,<width>}
 ```
 
-If the *alignment* value is positive, the formatted expression result is right-aligned; if negative, it's left-aligned.
+If the *width* value is positive, the formatted expression result is right-aligned; if negative, it's left-aligned.
 
-If you need to specify both alignment and a format string, start with the alignment component:
+If you need to specify both width and a format string, start with the width component:
 
 ```csharp
-{<interpolationExpression>,<alignment>:<formatString>}
+{<interpolationExpression>,<width>:<formatString>}
 ```
 
-The following example shows how to specify alignment and uses pipe characters ("|") to delimit text fields:
+The following example shows how to specify width and alignment, and uses pipe characters ("|") to delimit text fields:
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/StringInterpolation/Program.cs" id="AlignmentAndFormatString":::
 
-As the example output shows, if the length of the formatted expression result exceeds specified field width, the *alignment* value is ignored.
+As the example output shows, if the length of the formatted expression result exceeds specified field width, the *width* value is ignored.
 
-For more information, see the [Alignment component](../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
+For more information, see the [Width component](../../standard/base-types/composite-formatting.md#alignment-component) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
 
 ## How to use escape sequences in an interpolated string
 

@@ -2,19 +2,17 @@
 title: Composite formatting
 description: Learn about .NET composite formatting, which takes as input a list of objects and a composite format string, containing fixed text with indexed placeholders.
 ms.date: 08/07/2023
-ms.custom: devdivchpfy22
 ms.topic: conceptual
 dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "parameter specifiers"
   - "strings [.NET], alignment"
   - "format specifiers, composite formatting"
   - "strings [.NET], composite"
   - "composite formatting"
   - "objects [.NET], formatting multiple objects"
-ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
 ---
 # Composite formatting
 
@@ -49,7 +47,7 @@ The fixed text is `Name = `&nbsp;and `, hours = `. The format items are `{0}`, w
 
 Each format item takes the following form and consists of the following components:
 
-`{index[,alignment][:formatString]}`
+`{index[,width][:formatString]}`
 
 The matching braces (`{` and `}`) are required.
 
@@ -67,9 +65,9 @@ Multiple format items can refer to the same element in the list of objects by sp
 
 Each format item can refer to any object in the list. For example, if there are three objects, you can format the second, first, and third object by specifying a composite format string such as `{1} {0} {2}`. An object that isn't referenced by a format item is ignored. A <xref:System.FormatException> is thrown at run time if a parameter specifier designates an item outside the bounds of the list of objects.
 
-### Alignment component
+### Width component
 
-The optional *alignment* component is a signed integer indicating the preferred formatted field width. If the value of *alignment* is less than the length of the formatted string, *alignment* is ignored, and the length of the formatted string is used as the field width. The formatted data in the field is right-aligned if *alignment* is positive and left-aligned if *alignment* is negative. If padding is necessary, white space is used. The comma is required if *alignment*  is specified.
+The optional *width* component is a signed integer indicating the preferred formatted field width. If the value of *width* is less than the length of the formatted string, *width* is ignored, and the length of the formatted string is used as the field width. The formatted data in the field is right-aligned if *width* is positive and left-aligned if *width* is negative. If padding is necessary, white space is used. The comma is required if *width*  is specified.
 
 The following example defines two arrays, one containing the names of employees and the other containing the hours they worked over two weeks. The composite format string left-aligns the names in a 20-character field and right-aligns their hours in a 5-character field. The "N1" standard format string formats the hours with one fractional digit.
 
@@ -180,7 +178,7 @@ The following example demonstrates formatting multiple objects, including format
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_multiple":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_multiple":::
 
-The following example demonstrates the use of alignment in formatting. The arguments that are formatted are placed between vertical bar characters (`|`) to highlight the resulting alignment.
+The following example demonstrates the use of width in formatting. The arguments that are formatted are placed between vertical bar characters (`|`) to highlight the resulting alignment.
 
 :::code language="csharp" source="./snippets/composite-formatting/net/csharp/Program.cs" id="example_bar":::
 :::code language="vb" source="./snippets/composite-formatting/net/vb/Program.vb" id="example_bar":::
@@ -191,11 +189,11 @@ The following example demonstrates the use of alignment in formatting. The argum
 - <xref:System.String.Format%2A?displayProperty=nameWithType>
 - [String interpolation (C#)](../../csharp/language-reference/tokens/interpolated.md)
 - [String interpolation (Visual Basic)](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
-- [Formatting Types](formatting-types.md)
-- [Standard Numeric Format Strings](standard-numeric-format-strings.md)
-- [Custom Numeric Format Strings](custom-numeric-format-strings.md)
-- [Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)
-- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)
-- [Standard TimeSpan Format Strings](standard-timespan-format-strings.md)
-- [Custom TimeSpan Format Strings](custom-timespan-format-strings.md)
-- [Enumeration Format Strings](enumeration-format-strings.md)
+- [Formatting types](formatting-types.md)
+- [Standard numeric format strings](standard-numeric-format-strings.md)
+- [Custom numeric format strings](custom-numeric-format-strings.md)
+- [Standard date and time format strings](standard-date-and-time-format-strings.md)
+- [Custom date and time format strings](custom-date-and-time-format-strings.md)
+- [Standard TimeSpan format strings](standard-timespan-format-strings.md)
+- [Custom TimeSpan format strings](custom-timespan-format-strings.md)
+- [Enumeration format strings](enumeration-format-strings.md)

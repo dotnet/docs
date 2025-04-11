@@ -85,11 +85,11 @@ You can follow the index in a format item with a format string to control how an
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/starting1.fs" id="Snippet32":::
 :::code language="vb" source="./snippets/System/String/Format/vb/starting1.vb" id="Snippet32":::
 
-A number of types support format strings, including all numeric types (both [standard](../../standard/base-types/standard-numeric-format-strings.md) and [custom](../../standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both [standard](../../standard/base-types/standard-date-and-time-format-strings.md) and [custom](../../standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both [standard](../../standard/base-types/standard-timespan-format-strings.md) and [custom](../../standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types [enumeration types](../../standard/base-types/enumeration-format-strings.md), and [GUIDs](xref:System.Guid.ToString(System.String)). You can also add support for format strings to your own types.
+Numerous types support format strings, including all numeric types (both [standard](../../standard/base-types/standard-numeric-format-strings.md) and [custom](../../standard/base-types/custom-numeric-format-strings.md) format strings), all dates and times (both [standard](../../standard/base-types/standard-date-and-time-format-strings.md) and [custom](../../standard/base-types/custom-date-and-time-format-strings.md) format strings) and time intervals (both [standard](../../standard/base-types/standard-timespan-format-strings.md) and [custom](../../standard/base-types/custom-timespan-format-strings.md) format strings), all enumeration types [enumeration types](../../standard/base-types/enumeration-format-strings.md), and [GUIDs](xref:System.Guid.ToString(System.String)). You can also add support for format strings to your own types.
 
 ### Control spacing
 
-You can define the width of the string that is inserted into the result string by using syntax such as `{0,12}`, which inserts a 12-character string. In this case, the string representation of the first object is right-aligned in the 12-character field.  (If the string representation of the first object is more than 12 characters in length, though, the preferred field width is ignored, and the entire string is inserted into the result string.)
+You can define the width of the string that's inserted into the result string by using syntax such as `{0,12}`, which inserts a 12-character string. In this case, the string representation of the first object is right-aligned in the 12-character field. (If the string representation of the first object is more than 12 characters in length, though, the preferred field width is ignored, and the entire string is inserted into the result string.)
 
 The following example defines a 6-character field to hold the string "Year" and some year strings, as well as an 15-character field to hold the string "Population" and some population data. Note that the characters are right-aligned in the field.
 
@@ -111,8 +111,8 @@ The following example is similar to the previous one, except that it left-aligns
 
 ## Which method do I call?
 
-|To|Call|
-|--------|----------|
+| Objective | Method to call |
+|-----------|----------------|
 |Format one or more objects by using the conventions of the current culture.|Except for the overloads that include a `provider` parameter, the remaining <xref:System.String.Format%2A> overloads include a <xref:System.String> parameter followed by one or more object parameters. Because of this, you don't have to determine which <xref:System.String.Format%2A> overload you intend to call. Your language compiler selects the appropriate overload from among the overloads that don't have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler calls the <xref:System.String.Format(System.String,System.Object%5B%5D)> method.|
 |Format one or more objects by using the conventions of a specific culture.|Each <xref:System.String.Format%2A> overload that begins with a `provider` parameter is followed by a <xref:System.String> parameter and one or more object parameters. Because of this, you don't have to determine which specific <xref:System.String.Format%2A> overload you intend to call. Your language compiler selects the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list. For example, if your argument list has five arguments, the compiler calls the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> method.|
 |Perform a custom formatting operation either with an <xref:System.ICustomFormatter> implementation or an <xref:System.IFormattable> implementation.|Any of the four overloads with a `provider` parameter. The compiler selects the appropriate overload from among the overloads that have a `provider` parameter, based on your argument list.|
@@ -130,7 +130,7 @@ Each overload of the <xref:System.String.Format%2A> method uses the [composite f
 A format item has this syntax:
 
 ```txt
-{index[,alignment][:formatString]}
+{index[,width][:formatString]}
 ```
 
 Brackets denote optional elements. The opening and closing braces are required. (To include a literal opening or closing brace in the format string, see the [Escaping Braces](../../standard/base-types/composite-formatting.md#escaping-braces) section in the [Composite Formatting](../../standard/base-types/composite-formatting.md) article.)
@@ -143,16 +143,16 @@ For example, a format item to format a currency value might appear like this:
 
 A format item has the following elements:
 
-*index*\
+`index`\
 The zero-based index of the argument whose string representation is to be included at this position in the string. If this argument is `null`, an empty string will be included at this position in the string.
 
-*alignment*\
-Optional. A signed integer that indicates the total length of the field into which the argument is inserted and whether it is right-aligned (a positive integer) or left-aligned (a negative integer). If you omit *alignment*, the string representation of the corresponding argument is inserted in a field with no leading or trailing spaces.
+`width`\
+Optional. A signed integer that indicates the total length of the field into which the argument is inserted and whether it is right-aligned (a positive integer) or left-aligned (a negative integer). If you omit `width`, the string representation of the corresponding argument is inserted in a field with no leading or trailing spaces.
 
-If the value of *alignment* is less than the length of the argument to be inserted, *alignment* is ignored and the length of the string representation of the argument is used as the field width.
+If the value of `width` is less than the length of the argument to be inserted, `width` is ignored and the length of the string representation of the argument is used as the field width.
 
-*formatString*\
-Optional. A string that specifies the format of the corresponding argument's result string. If you omit *formatString*, the corresponding argument's parameterless `ToString` method is called to produce its string representation. If you specify *formatString*, the argument referenced by the format item must implement the <xref:System.IFormattable> interface. Types that support format strings include:
+`formatString`\
+Optional. A string that specifies the format of the corresponding argument's result string. If you omit `formatString`, the corresponding argument's parameterless `ToString` method is called to produce its string representation. If you specify `formatString`, the argument referenced by the format item must implement the <xref:System.IFormattable> interface. Types that support format strings include:
 
 - All integral and floating-point types. (See [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md).)
 
@@ -164,9 +164,9 @@ Optional. A string that specifies the format of the corresponding argument's res
 
 - GUIDs. (See the <xref:System.Guid.ToString(System.String)?displayProperty=nameWithType> method.)
 
-However, note that any custom type can implement <xref:System.IFormattable> or extend an existing type's <xref:System.IFormattable> implementation.
+However, any custom type can implement <xref:System.IFormattable> or extend an existing type's <xref:System.IFormattable> implementation.
 
-The following example uses the `alignment` and `formatString` arguments to produce formatted output.
+The following example uses the `width` and `formatString` arguments to produce formatted output.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/formatoverload2.cs" interactive="try-dotnet-method" id="Snippet9":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/formatoverload2.fs" id="Snippet9":::
@@ -178,7 +178,7 @@ Format items are processed sequentially from the beginning of the string. Each f
 
 - If the argument is `null`, the method inserts <xref:System.String.Empty?displayProperty=nameWithType> into the result string. You don't have to be concerned with handling a <xref:System.NullReferenceException> for null arguments.
 
-- If you call the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> overload and the `provider` object's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation returns a non-null <xref:System.ICustomFormatter> implementation, the argument is passed to its <xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)?displayProperty=nameWithType> method. If the format item includes a *formatString* argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is available and produces a non-null string, that string is returned as the string representation of the argument; otherwise, the next step executes.
+- If you call the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> overload and the `provider` object's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation returns a non-null <xref:System.ICustomFormatter> implementation, the argument is passed to its <xref:System.ICustomFormatter.Format(System.String,System.Object,System.IFormatProvider)?displayProperty=nameWithType> method. If the format item includes a `formatString` argument, it is passed as the first argument to the method. If the <xref:System.ICustomFormatter> implementation is available and produces a non-null string, that string is returned as the string representation of the argument; otherwise, the next step executes.
 
 - If the argument implements the <xref:System.IFormattable> interface, its <xref:System.IFormattable.ToString%2A?displayProperty=nameWithType> implementation is called.
 
@@ -186,7 +186,7 @@ Format items are processed sequentially from the beginning of the string. Each f
 
 For an example that intercepts calls to the <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> method and allows you to see what information the <xref:System.String.Format%2A> method passes to a formatting method for each format item in a composite format string, see [Example: An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter).
 
-For more information, see [Processing order](/dotnet/standard/base-types/composite-formatting##processing-order).
+For more information, see [Processing order](../../standard/base-types/composite-formatting.md##processing-order).
 
 ## Format items that have the same index
 
@@ -208,7 +208,7 @@ The <xref:System.IFormatProvider> interface has a single member, <xref:System.IF
 
 ## Custom formatting operations
 
-You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a `provider` parameter of type <xref:System.IFormatProvider> to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its   <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.
+You can also call the any of the overloads of the <xref:System.String.Format%2A> method that have a `provider` parameter of type <xref:System.IFormatProvider> to perform custom formatting operations. For example, you could format an integer as an identification number or as a telephone number. To perform custom formatting, your `provider` argument must implement both the <xref:System.IFormatProvider> and <xref:System.ICustomFormatter> interfaces. When the <xref:System.String.Format%2A> method is passed an <xref:System.ICustomFormatter> implementation as the `provider` argument, the <xref:System.String.Format%2A> method calls its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation and requests an object of type <xref:System.ICustomFormatter>. It then calls the returned <xref:System.ICustomFormatter> object's <xref:System.ICustomFormatter.Format%2A> method to format each format item in the composite string passed to it.
 
 For more information about providing custom formatting solutions, see [How to: Define and Use Custom Numeric Format Providers](../../standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md) and <xref:System.ICustomFormatter>. For an example that converts integers to formatted custom numbers, see [Example: A custom formatting operation](#example-a-custom-formatting-operation). For an example that converts unsigned bytes to Roman numerals, see [Example: An intercept provider and Roman numeral formatter](#example-an-intercept-provider-and-roman-numeral-formatter).
 
@@ -225,7 +225,6 @@ This example defines a format provider that formats an integer value as a custom
 This example defines a custom format provider that implements the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces to do two things:
 
 - It displays the parameters passed to its <xref:System.ICustomFormatter.Format%2A?displayProperty=nameWithType> implementation. This enables us to see what parameters the <xref:System.String.Format(System.IFormatProvider,System.String,System.Object%5B%5D)> method is passing to the custom formatting implementation for each object that it tries to format. This can be useful when you're debugging your application.
-
 - If the object to be formatted is an unsigned byte value that is to be formatted by using the "R" standard format string, the custom formatter formats the numeric value as a Roman numeral.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/interceptor2.cs" id="Snippet11":::
@@ -239,8 +238,7 @@ This example defines a custom format provider that implements the <xref:System.I
 String interpolation is:
 
 - More flexible. It can be used in any string without requiring a call to a method that supports composite formatting. Otherwise, you have to call the <xref:System.String.Format%2A> method or another method that supports composite formatting, such as <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> or <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>.
-
-- More readable. Because the expression to insert into a string appears in the interpolated expression rather than in a argument list, interpolated strings are far easier to code and to read. Because of their greater readability, interpolated strings can replace not only calls to composite format methods, but they can also be used in string concatenation operations to produce more concise, clearer code.
+- More readable. Because the expression to insert into a string appears in the interpolated expression rather than in a argument list, interpolated strings are easier to code and to read. Interpolated strings can also be used in string concatenation operations to produce more concise, clearer code.
 
 A comparison of the following two code examples illustrates the superiority of interpolated strings over string concatenation and calls to composite formatting methods. The use of multiple string concatenation operations in the following example produces verbose and hard-to-read code.
 
@@ -257,13 +255,9 @@ In contrast, the use of interpolated strings in the following example produces m
 ### Where can I find the predefined format strings?
 
 - For all integral and floating-point types, see [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md).
-
 - For date and time values, see [Standard Date and Time Format Strings](../../standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](../../standard/base-types/custom-date-and-time-format-strings.md).
-
 - For enumeration values, see [Enumeration Format Strings](../../standard/base-types/enumeration-format-strings.md).
-
-- For <xref:System.TimeSpan> values, see  [Standard TimeSpan Format Strings](../../standard/base-types/standard-timespan-format-strings.md) and [Custom TimeSpan Format Strings](../../standard/base-types/custom-timespan-format-strings.md).
-
+- For <xref:System.TimeSpan> values, see [Standard TimeSpan Format Strings](../../standard/base-types/standard-timespan-format-strings.md) and [Custom TimeSpan Format Strings](../../standard/base-types/custom-timespan-format-strings.md).
 - For <xref:System.Guid> values, see the Remarks section of the <xref:System.Guid.ToString(System.String)?displayProperty=nameWithType> reference page.
 
 ### How do I control the alignment of the result strings that replace format items?
@@ -271,10 +265,10 @@ In contrast, the use of interpolated strings in the following example produces m
 The general syntax of a format item is:
 
 ```txt
-{index[,alignment][: formatString]}
+{index[,width][: formatString]}
 ```
 
-where *alignment* is a signed integer that defines the field width. If this value is negative, text in the field is left-aligned. If it is positive, text is right-aligned.
+`width` is a signed integer that defines the field width. If this value is negative, text in the field is left-aligned. If it is positive, text is right-aligned.
 
 ### How do I control the number of digits after the decimal separator?
 
@@ -292,7 +286,7 @@ If you're using a [custom numeric format string](../../standard/base-types/custo
 
 ### How do I control the number of integral digits?
 
-By default, formatting operations only display non-zero integral digits. If you are formatting integers, you can use a precision specifier with the "D" and "X" standard format strings to control the number of digits.
+By default, formatting operations only display non-zero integral digits. If you're formatting integers, you can use a precision specifier with the "D" and "X" standard format strings to control the number of digits.
 
 :::code language="csharp" source="./snippets/System/FormatException/Overview/csharp/qa29.cs" interactive="try-dotnet-method" id="Snippet29":::
 :::code language="fsharp" source="./snippets/System/FormatException/Overview/fsharp/qa29.fs" id="Snippet29":::

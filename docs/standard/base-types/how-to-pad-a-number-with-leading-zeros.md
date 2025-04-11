@@ -82,7 +82,6 @@ The following example formats several numeric values with leading zeros. As a re
 1. Create a custom format string that uses:
 
     - The zero placeholder ("0") for each of the leading zeros to appear in the string.
-
     - Either the zero placeholder or the digit placeholder "#" to represent each digit in the default string.
 
 1. Supply the custom format string as a parameter either to the number's `ToString(String)` method or to a method that supports composite formatting.

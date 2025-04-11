@@ -158,4 +158,4 @@ Metric methods have some constraints that you must follow:
 
 ## Supported metrics
 
-Please refer to the .NET [`Types of instruments`](https://learn.microsoft.com/dotnet/core/diagnostics/metrics-instrumentation#types-of-instruments) to learn about all the supported instruments and description on how to choose which instrument to use in different situations.
+Please refer to the .NET [`Types of instruments`](metrics-instrumentation.md#types-of-instruments) to learn about all the supported instruments and description on how to choose which instrument to use in different situations.

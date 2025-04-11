@@ -24,7 +24,7 @@ In .NET 8 and later, Linux applications no longer search the `netcoredeps` subdi
 
 ## Type of breaking change
 
-This is a [source incompatible](../../categories.md#source-compatibility) change.
+This is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 

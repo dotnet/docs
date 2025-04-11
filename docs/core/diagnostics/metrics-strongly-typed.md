@@ -11,6 +11,27 @@ Modern .NET applications can capture metrics using the <xref:System.Diagnostics.
 > [!NOTE]
 > In the context of metrics, a tag is sometimes also called a "dimension." This article uses "tag" for clarity and consistency with .NET metrics terminology.
 
+## Install the package
+
+To get started, install the [📦 Microsoft.Extensions.Telemetry.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry.Abstractions) NuGet package:
+
+### [.NET CLI](#tab/dotnet-cli)
+
+```dotnetcli
+dotnet add package Microsoft.Extensions.Telemetry.Abstractions
+```
+
+### [PackageReference](#tab/package-reference)
+
+```xml
+<ItemGroup>
+  <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions"
+                    Version="*" />
+</ItemGroup>
+```
+
+---
+
 ## Tag name defaults and customization
 
 By default, the source generator derives metric tag names from the field and property names of your tag class. In other words, each public field or property in the strongly-typed tag object becomes a tag name by default. You can override this by using the <xref:Microsoft.Extensions.Diagnostics.Metrics.TagNameAttribute> on a field or property to specify a custom tag name. In the examples below, you’ll see both approaches in action.
@@ -54,6 +75,9 @@ In this usage example, calling `MyMetrics.CreateRequestCount(meter)` creates a c
 For more complex scenarios, you can define tag classes that include multiple tags, nested objects, or even inherited properties. This allows a group of related metrics to share a common set of tags easily. In the next example, we define a set of tag classes and use them for three different metrics:
 
 ```csharp
+using System.Diagnostics.Metrics;
+using Microsoft.Extensions.Diagnostics.Metrics;
+
 public class MetricTags : MetricParentTags
 {
     [TagName("Dim1DimensionName")]
@@ -184,6 +208,7 @@ Adhering to these requirements ensures that the source generator can successfull
 
 ## See also
 
+- [Source generated metrics in .NET](source-generated-metrics.md)
 - [Creating metrics in .NET (Instrumentation tutorial)](metrics-instrumentation.md)
 - [Collecting metrics in .NET (Using MeterListener and exporters)](metrics-collection.md)
 - [Logging source generation in .NET](../extensions/logger-message-generator.md) (for a similar source-generation approach applied to logging)

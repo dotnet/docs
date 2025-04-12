@@ -12,7 +12,7 @@ This is a reference for [metrics](metrics.md) built-in for .NET, produced using 
 
 - [.NET runtime metrics](built-in-metrics-runtime.md)
 - [.NET extensions metrics](built-in-metrics-diagnostics.md)
-- [ASP.NET Core Metrics](/aspnet/core/log-mon/metrics/built-in.md)
+- [ASP.NET Core Metrics](/aspnet/core/log-mon/metrics/built-in)
 - [System.Net Metrics](built-in-metrics-system-net.md)
 - [Entity Framework Core Metrics](/ef/core/logging-events-diagnostics/metrics)
 

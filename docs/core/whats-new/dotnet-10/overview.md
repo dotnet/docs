@@ -53,6 +53,11 @@ The .NET 10 SDK introduces the following new features and enhancements, includin
 
 - **Pruning of framework-provided package references**: Automatically removes unused framework-provided package references, reducing build times and disk usage.
 - **More consistent command order**: New noun-first aliases for `dotnet` CLI commands improve readability and consistency.
+- **CLI commands default to interactive mode in interactive terminals**: The `--interactive` flag is now enabled by default for CLI commands in interactive terminals.
+- **Native shell tab-completion scripts**: The `dotnet` CLI now supports generating native tab-completion scripts for popular shells using the `dotnet completions generate [SHELL]` command. Supported shells include `bash`, `fish`, `nushell`, `powershell`, and `zsh`.
+- **Console apps can natively create container images**: Console apps can now create container images via `dotnet publish /t:PublishContainer` without requiring the `<EnableSdkContainerSupport>` property in the project file.
+- **Explicitly control the image format of containers**: A new `<ContainerImageFormat>` property allows you to explicitly set the format of container images to either `Docker` or `OCI`.
+- **Support for Microsoft.Testing.Platform in `dotnet test`**: A new `dotnet test` experience made specifically for Microsoft.Testing.Platform can be opted-in via `dotnet.config`. For more information about the existing `dotnet test` integration for MTP and the new integration, see [Testing with `dotnet test`](../../testing/unit-testing-with-dotnet-test.md).
 
 For more information, see [What's new in the SDK for .NET 10](sdk.md).
 

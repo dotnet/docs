@@ -19,7 +19,6 @@ internal static partial class Metric
 
     [Counter<int>]
     public static partial TotalFailures CreateTotalFailures(this Meter meter);
-    internal static Latency CreateLatency(object meter) => throw new NotImplementedException();
 }
 //</snippet_Metrics>
 #elif SECOND

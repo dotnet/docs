@@ -11,7 +11,7 @@ Modern .NET applications can capture metrics using the <xref:System.Diagnostics.
 > [!NOTE]
 > In the context of metrics, a tag is sometimes also called a "dimension." This article uses "tag" for clarity and consistency with .NET metrics terminology.
 
-## Install the package
+## Get started
 
 To get started, install the [📦 Microsoft.Extensions.Telemetry.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry.Abstractions) NuGet package:
 
@@ -31,6 +31,8 @@ dotnet add package Microsoft.Extensions.Telemetry.Abstractions
 ```
 
 ---
+
+For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Tag name defaults and customization
 

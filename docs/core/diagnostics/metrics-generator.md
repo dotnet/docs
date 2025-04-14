@@ -6,17 +6,13 @@ ms.date: 04/11/2025
 
 # Compile-time metric source generation
 
-.NET's metering infrastructure is designed to deliver a highly-usable and high-performance metering solution
-for modern .NET applications.
+.NET's metering infrastructure is designed to deliver a highly usable and high-performance metering solution for modern .NET applications.
 
-To use source generated metering, you first create a class that defines the names and dimensions of the metrics your code can produce.
-Then you need to create the class with partial methods signatures.
+To use source-generated metering, create a class that defines the names and dimensions of the metrics your code can produce. Then, create the class with `partial` method signatures.
 
-Then, the .NET's code generator automatically generates the code, which exposes strongly-typed metering types and
-methods that you can invoke to record metric values. The generated methods are implemented in a highly efficient
-form, which reduces computation overhead as compared to traditional metering solutions.
+The code generator automatically generates the code, which exposes strongly typed metering types and methods that you can invoke to record metric values. The generated methods are implemented in a highly efficient form, which reduces computation overhead as compared to traditional metering solutions.
 
-## Install the package
+## Get started
 
 To get started, install the [📦 Microsoft.Extensions.Telemetry.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry.Abstractions) NuGet package:
 
@@ -37,12 +33,11 @@ dotnet add package Microsoft.Extensions.Telemetry.Abstractions
 
 ---
 
+For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+
 ## Generic attributes
 
-Generic attributes are only supported in C# 11 or later, so if you are using generic attributes then please enable C# 11 or later.
-Please use non generic attributes if you are using C# 10 or earlier.
-
-## Usage
+Generic attributes require C# 11 or later. For C# 10 or earlier, use nongeneric attributes instead.
 
 The following example shows a class that declares two metrics. The methods are marked with an attribute and are declared as `static` and `partial`.
 The code generator runs at build time and provides an implementation of these methods, along with accompanying
@@ -100,9 +95,7 @@ internal class Latency
 }
 ```
 
-The dimensions specified in the attributes have been turned into arguments to the `Add` and `Record` methods.
-You then use the generated methods to create instances of these types. With the instances created,
-you can call `Add` and `Record` to register metric values, like this:
+The dimensions specified in the attributes have been turned into arguments to the `Add` and `Record` methods. You then use the generated methods to create instances of these types. With the instances created, you can call `Add` and `Record` to register metric values, as shown in the following example:
 
 ```csharp
 internal class MyClass
@@ -148,15 +141,15 @@ internal class MyClass
 
 ## Metric methods requirements
 
-Metric methods have some constraints that you must follow:
+Metric methods are constrained to the following:
 
-- They must be static, partial, and public.
+- They must be `public static partial`.
 - The return type must be unique.
 - Their names must not start with an underscore.
 - Their parameter names must not start with an underscore.
-- Their first parameter must be `Meter`.
-- They can't be generic or accept any generic parameters.
+- Their first parameter must be <xref:System.Diagnostics.Metrics.Meter> type.
+Metric methods are constrained to the following:
 
-## Supported metrics
+## See also
 
-Please refer to the .NET [`Types of instruments`](metrics-instrumentation.md#types-of-instruments) to learn about all the supported instruments and description on how to choose which instrument to use in different situations.
+For more information on the supported metrics, see [Types of instruments](metrics-instrumentation.md#types-of-instruments) to learn how to choose which instrument to use in different situations.

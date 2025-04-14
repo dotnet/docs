@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -11,15 +11,15 @@ public class Example
       Console.WriteLine();
 
       for (int ctr = 1; ctr <= 7; ctr++) {
-         fmt = new String('f', ctr);
+         fmt = new string('f', ctr);
          if (fmt.Length == 1) fmt = "%" + fmt;
          Console.WriteLine($"{fmt,10}: {ts.ToString(fmt)}");
       }
       Console.WriteLine();
 
       for (int ctr = 1; ctr <= 7; ctr++) {
-         fmt = new String('f', ctr);
-         Console.WriteLine($"{"s\\." + fmt,10}: {ts.ToString("s\\." + fmt)}");
+         fmt = $"s\\.{new string('f', ctr)}";
+         Console.WriteLine($"{fmt,10}: {ts.ToString(fmt)}");
       }
       // The example displays the following output:
       //               %f: 8

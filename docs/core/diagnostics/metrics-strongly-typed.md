@@ -57,7 +57,7 @@ In this usage example, calling `MyMetrics.CreateRequestCount(meter)` creates a c
 For more complex scenarios, you can define tag classes that include multiple tags, nested objects, or even inherited properties. This allows a group of related metrics to share a common set of tags easily. In the next example, we define a set of tag classes and use them for three different metrics:
 
 :::code language="csharp" source="snippets/MetricsGen/MetricTags.cs" :::
-:::code language="csharp" source="snippets/MetricsGen/Metris.cs" id="snippet_MetricTags" :::
+:::code language="csharp" source="snippets/MetricsGen/Metrics.cs" id="snippet_MetricTags" :::
 
 In this example, `MetricTags` is a tag class that inherits from `MetricParentTags` and also contains a nested tag object (`MetricChildTags`) and a nested struct (`MetricTagsStruct`). The tag properties demonstrate both default and customized tag names:
 

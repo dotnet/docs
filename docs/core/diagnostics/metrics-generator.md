@@ -43,32 +43,8 @@ The following example shows a class that declares two metrics. The methods are m
 The code generator runs at build time and provides an implementation of these methods, along with accompanying
 types.
 
-```csharp
-using System.Diagnostics.Metrics;
-using Microsoft.Extensions.Diagnostics.Metrics;
-
-internal class MetricConstants
-{
-    public const string EnvironmentName = "env";
-    public const string Region = "region";
-    public const string RequestName = "requestName";
-    public const string RequestStatus = "requestStatus";
-}
-
-internal static partial class Metric
-{
-    // an explicit metric name is given
-    [Histogram<long>("requestName", "duration", Name = "MyCustomMetricName")]
-    public static partial Latency CreateLatency(Meter meter);
-
-    // no explicit metric name given, it is auto-generated from the method name
-    [Counter<int>(MetricConstants.EnvironmentName, MetricConstants.Region, MetricConstants.RequestName, MetricConstants.RequestStatus)]
-    public static partial TotalCount CreateTotalCount(Meter meter);
-
-    [Counter<int>]
-    public static partial TotalFailures CreateTotalFailures(this Meter meter);
-}
-```
+:::code language="csharp" source="snippets/MetricsGen/MetricConstants.cs id="snippet_metricConstants":::
+:::code language="csharp" source="snippets/MetricsGen/Metris.cs id="snippet_Metrics" :::
 
 The previous declaration automatically returns the following:
 
@@ -97,47 +73,7 @@ internal class Latency
 
 The dimensions specified in the attributes have been turned into arguments to the `Add` and `Record` methods. You then use the generated methods to create instances of these types. With the instances created, you can call `Add` and `Record` to register metric values, as shown in the following example:
 
-```csharp
-internal class MyClass
-{
-    private readonly Latency _latencyMetric;
-    private readonly TotalCount _totalCountMetric;
-    private readonly TotalFailures _totalFailuresMetric;
-
-    public MyClass(Meter meter)
-    {
-        // Create metric instances using the source-generated factory methods
-        _latencyMetric = Metric.CreateLatency(meter);
-        _totalCountMetric = Metric.CreateTotalCount(meter);
-        // This syntax is available since `CreateTotalFailures` is defined as an extension method
-        _totalFailuresMetric = meter.CreateTotalFailures();
-    }
-
-    public void ReportSampleRequestCount()
-    {
-        // method logic ...
-
-        // Invoke Add on the counter and pass the dimension values.
-        _totalCountMetric.Add(1, envName, regionName, requestName, status);
-    }
-
-    public void ReportSampleLatency()
-    {
-        // method logic ...
-
-        // Invoke Record on the histogram and pass the dimension values.
-        _latencyMetric.Record(1, requestName, duration);
-    }
-
-    public void ReportSampleFailuresCount()
-    {
-        // method logic ...
-
-        // Invoke Add on the counter and pass the dimension values.
-        _totalFailuresMetric.Add(1);
-    }
-}
-```
+:::code language="csharp" source="snippets/MetricsGen/MyClass.cs id ="snippet_metricCreation":::
 
 ## Metric methods requirements
 

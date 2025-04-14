@@ -785,7 +785,7 @@ namespace csrefKeywordsModifiers
             protected Shape(string color)
             {
                 Color = color;
-                Console.WriteLine("Created a shape with color {color}.");
+                Console.WriteLine($"Created a shape with color {color}.");
             }
 
             // Abstract method that must be implemented by derived classes
@@ -813,7 +813,7 @@ namespace csrefKeywordsModifiers
             public static void Main(string[] args)
              {
                     Square square = new Square("red", 5);
-                    Console.WriteLine("Area of the square: {square.CalculateArea()}");            
+                    Console.WriteLine($"Area of the square: {square.CalculateArea()}");            
              }
         }
         //</snippet27>

@@ -72,5 +72,6 @@ public static class ExtensionExamples
         // <UseStaticExtensions>
         var newSequence = IEnumerable<int>.Generate(5, 10, 2);
         var identity = IEnumerable<int>.Identity;
+        // </UseStaticExtensions>
     }
 }

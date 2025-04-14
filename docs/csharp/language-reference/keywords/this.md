@@ -1,7 +1,7 @@
 ---
 title: "The this keyword"
 description: The `this` keyword clarifies access to the current instance of a type, or declares an indexer on the type.
-ms.date: 04/08/2025
+ms.date: 04/11/2025
 f1_keywords: 
   - "this"
   - "this_CSharpKeyword"

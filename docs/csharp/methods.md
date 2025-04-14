@@ -2,7 +2,7 @@
 title: Overview of methods
 description: Overview of methods, method parameters, and method return values
 ms.subservice: fundamentals
-ms.date: 11/22/2024
+ms.date: 04/15/2025
 ---
 
 # Methods in C\#
@@ -10,7 +10,7 @@ ms.date: 11/22/2024
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. In C#, every executed instruction is performed in the context of a method.
 
 > [!NOTE]
-> This topic discusses named methods. For information about anonymous functions, see [Lambda expressions](language-reference/operators/lambda-expressions.md).
+> This article discusses named methods. For information about anonymous functions, see [Lambda expressions](language-reference/operators/lambda-expressions.md).
 
 ## Method signatures
 
@@ -25,13 +25,13 @@ Methods are declared in a `class`, `record`, or `struct` by specifying:
 These parts together form the method signature.
 
 > [!IMPORTANT]
-> A return type of a method is not part of the signature of the method for the purposes of method overloading. However, it is part of the signature of the method when determining the compatibility between a delegate and the method that it points to.
+> A return type of a method isn't part of the signature of the method for the purposes of method overloading. However, it's part of the signature of the method when determining the compatibility between a delegate and the method that it points to.
 
 The following example defines a class named `Motorcycle` that contains five methods:
 
 :::code language="csharp" source="snippets/methods/methods40.cs" id="snippet40":::
 
-The `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same name, but are differentiated by their parameter types.
+The `Motorcycle` class includes an overloaded method, `Drive`. Two methods have the same name, but their parameter lists differentiate them.
 
 ## Method invocation
 
@@ -143,7 +143,7 @@ The following example calls the `ExampleMethod` method three times. The first tw
 
 The use of optional parameters affects *overload resolution*, or the way the C# compiler determines which overload to invoke for a method call, as follows:
 
-- A method, indexer, or constructor is a candidate for execution if each of its parameters corresponds by name or by position to a single argument, and that argument can be converted to the type of the parameter.
+- A member is a candidate for execution if each of its parameters corresponds by name or by position to a single argument. Furthermore, that argument can be converted to the type of the parameter.
 - If more than one candidate is found, overload resolution rules for preferred conversions are applied to the arguments that are explicitly specified. Omitted arguments for optional parameters are ignored.
 - If two candidates are judged to be equally good, preference goes to a candidate that doesn't have optional parameters for which arguments were omitted in the call.
 
@@ -157,7 +157,7 @@ For example, these two methods use the `return` keyword to return integers:
 
 :::code language="csharp" source="snippets/methods/return44.cs" id="snippet44":::
 
-The examples above are expression bodied members. Expression bodied members return the value returned by the expression.
+The preceding examples are expression bodied members. Expression bodied members return the value returned by the expression.
 
 You can also choose to define your methods with a statement body and a `return` statement:
 
@@ -218,9 +218,9 @@ Ordinarily, there are two ways to add a method to an existing type:
 - Modify the source code for that type. Modifying the source creates a breaking change if you also add any private data fields to support the method.
 - Define the new method in a derived class. A method can't be added in this way using inheritance for other types, such as structures and enumerations. Nor can it be used to "add" a method to a sealed class.
 
-Extension methods let you "add" a method to an existing type without modifying the type itself or implementing the new method in an inherited type. The extension method also doesn't have to reside in the same assembly as the type it extends. You call an extension method as if it were a defined member of a type.
+Extension members let you "add" members to an existing type without modifying the type itself or implementing the new method in an inherited type. The extension member also doesn't have to reside in the same assembly as the type it extends. You call an extension method as if it were a defined member of a type.
 
-For more information, see [Extension Methods](programming-guide/classes-and-structs/extension-methods.md).
+For more information, see [Extension members](programming-guide/classes-and-structs/extension-methods.md).
 
 ## Async Methods
 

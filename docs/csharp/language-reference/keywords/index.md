@@ -1,7 +1,7 @@
 ---
 description: "C# Keywords: Find the reference material for the predefined keywords and contextual keywords defined in the C# language."
 title: "C# Keywords and contextual keywords"
-ms.date: 08/14/2024
+ms.date: 04/11/2025
 f1_keywords: 
   - "cs.keywords"
 helpviewer_keywords:

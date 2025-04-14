@@ -45,7 +45,7 @@ types.
 
 :::code language="csharp" source="snippets/MetricsGen/MetricConstants.cs" id="snippet_metricConstants":::
 
-:::code language="csharp" source="snippets/MetricsGen/Metris.cs" id="snippet_Metrics" :::
+:::code language="csharp" source="snippets/MetricsGen/Metrics.cs" id="snippet_Metrics" :::
 
 The previous declaration automatically returns the following:
 

@@ -44,6 +44,7 @@ The code generator runs at build time and provides an implementation of these me
 types.
 
 :::code language="csharp" source="snippets/MetricsGen/MetricConstants.cs" id="snippet_metricConstants":::
+
 :::code language="csharp" source="snippets/MetricsGen/Metris.cs" id="snippet_Metrics" :::
 
 The previous declaration automatically returns the following:

@@ -853,6 +853,7 @@ If `RoslynCompilerType` is specified explicitly, `BuildWithNetFrameworkHostedCom
 ### RoslynCompilerType
 
 The `RoslynCompilerType` property controls version of C#/VB compiler. These values are recognized:
+
 - `Core`: Use the compiler that comes with the .NET SDK. This is the default since .NET 10, even when using .NET Framework MSBuild.
 - `Framework`: Use the compiler that comes with .NET Framework MSBuild.
 - `FrameworkPackage`: When using .NET Framework MSBuild, download and use a package with .NET Framework compiler corresponding to the .NET SDK version.

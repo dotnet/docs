@@ -13,13 +13,13 @@ public class Example
       for (int ctr = 1; ctr <= 7; ctr++) {
          fmt = new String('f', ctr);
          if (fmt.Length == 1) fmt = "%" + fmt;
-         Console.WriteLine("{0,10}: {1:" + fmt + "}", fmt, ts);
+         Console.WriteLine($"{fmt,10}: {ts.ToString(fmt)}");
       }
       Console.WriteLine();
 
       for (int ctr = 1; ctr <= 7; ctr++) {
          fmt = new String('f', ctr);
-         Console.WriteLine("{0,10}: {1:s\\." + fmt + "}", "s\\." + fmt, ts);
+         Console.WriteLine($"{"s\\." + fmt,10}: {ts.ToString("s\\." + fmt)}");
       }
       // The example displays the following output:
       //               %f: 8

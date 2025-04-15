@@ -10,7 +10,7 @@ ms.date: 04/11/2025
 
 To use source-generated metering, create a class that defines the names and dimensions of the metrics your code can produce. Then, create the class with `partial` method signatures.
 
-The code generator automatically generates the code, which exposes strongly typed metering types and methods that you can invoke to record metric values. The generated methods are implemented in a highly efficient form, which reduces computation overhead as compared to traditional metering solutions.
+The source generator automatically generates the code, which exposes strongly typed metering types and methods that you can invoke to record metric values. The generated methods are implemented in a highly efficient form, which reduces computation overhead as compared to traditional metering solutions.
 
 ## Get started
 

@@ -39,7 +39,7 @@ For more information, see [dotnet add package](../tools/dotnet-package-add.md) o
 
 Generic attributes require C# 11 or later. For C# 10 or earlier, use nongeneric attributes instead.
 
-The following example shows a class that declares two metrics. The methods are marked with an attribute and are declared as `static` and `partial`.
+The following example shows a class that declares three metrics. The methods are marked with an attribute and are declared as `static` and `partial`.
 The code generator runs at build time and provides an implementation of these methods, along with accompanying
 types.
 

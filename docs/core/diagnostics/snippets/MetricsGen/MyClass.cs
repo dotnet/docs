@@ -58,9 +58,9 @@ using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using MetricsGen;
 
-// <creation>
+// <creationwithtags>
 internal class MyClass
-{ 
+{
     private readonly Latency _latencyMetric;
     private readonly TotalCount _totalCountMetric;
     private readonly TotalFailures _totalFailuresMetric;
@@ -105,7 +105,7 @@ internal class MyClass
         }
     }
 }
-// </creation>
+// </creationwithtags>
 #elif THIRD
 
 using MetricsGen;

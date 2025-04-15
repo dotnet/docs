@@ -74,7 +74,7 @@ All three metric definitions `CreateLatency`, `CreateTotalCount`, and `CreateTot
 
 The following code shows how to create and use these metrics in a class:
 
-:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="creation":::
+:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="creationwithtags":::
 
 In the preceding `MyClass.DoWork` method, a `MetricTags` object is populated with values for each tag. This single `tags` object is then passed to all three instruments when recording data. The `Latency` metric (a histogram) records the elapsed time, and both counters (`TotalCount` and `TotalFailures`) record occurrence counts. Because all metrics share the same tag object type, the tags (`Dim1DimensionName`, `Operation`, `Dim2`, `Dim3`, `DimensionNameOfParentOperation`) are present on every measurement.
 

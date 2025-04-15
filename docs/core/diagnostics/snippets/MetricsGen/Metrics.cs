@@ -14,7 +14,11 @@ internal static partial class Metric
     public static partial Latency CreateLatency(Meter meter);
 
     // no explicit metric name given, it is auto-generated from the method name
-    [Counter<int>(MetricConstants.EnvironmentName, MetricConstants.Region, MetricConstants.RequestName, MetricConstants.RequestStatus)]
+    [Counter<int>(
+        MetricConstants.EnvironmentName,
+        MetricConstants.Region,
+        MetricConstants.RequestName,
+        MetricConstants.RequestStatus)]
     public static partial TotalCount CreateTotalCount(Meter meter);
 
     [Counter<int>]

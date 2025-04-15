@@ -7,6 +7,7 @@ namespace MetricsGen;
 // <creation>
 internal class MyClass
 {
+    // these variable are for example purposes, the dimensions values should depend on your business logic.
     private string envName = "envValue";
     private string regionName = "regionValue";
     private string requestName = "requestNameValue";

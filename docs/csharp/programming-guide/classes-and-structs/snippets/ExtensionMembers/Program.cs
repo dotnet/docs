@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+ExtensionMethods.ExtensionMethods.Examples();
+CustomExtensionMethods.ExtensionMethodUsage.Examples();
+CustomExtensionMembers.ExtensionMemberUsage.Examples();

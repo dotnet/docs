@@ -1,4 +1,4 @@
-﻿namespace ExtensionMembers;
+﻿ namespace ExtensionMethods;
 public static class ExtensionMethods
 {
     public static void Examples()

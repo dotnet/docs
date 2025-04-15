@@ -8,12 +8,9 @@ public static class MyExtensions
 }
 //</ClassicExtensionMethod>
 
-//<MegaDemoBreakThisUp>
-// Define an interface named IMyInterface.
+//<InterfaceAndExtensions>
 public interface IMyInterface
 {
-    // Any class that implements IMyInterface must define a method
-    // that matches the following signature.
     void MethodB();
 }
 
@@ -23,28 +20,21 @@ public interface IMyInterface
 // class that implements IMyInterface.
 public static class Extension
 {
-    public static void MethodA(this IMyInterface myInterface, int i)
-    {
-        Console.WriteLine
-            ("Extension.MethodA(this IMyInterface myInterface, int i)");
-    }
+    public static void MethodA(this IMyInterface myInterface, int i) =>
+        Console.WriteLine("Extension.MethodA(this IMyInterface myInterface, int i)");
 
-    public static void MethodA(this IMyInterface myInterface, string s)
-    {
-        Console.WriteLine
-            ("Extension.MethodA(this IMyInterface myInterface, string s)");
-    }
+    public static void MethodA(this IMyInterface myInterface, string s) =>
+        Console.WriteLine("Extension.MethodA(this IMyInterface myInterface, string s)");
 
     // This method is never called in ExtensionMethodsDemo1, because each
     // of the three classes A, B, and C implements a method named MethodB
     // that has a matching signature.
-    public static void MethodB(this IMyInterface myInterface)
-    {
-        Console.WriteLine
-            ("Extension.MethodB(this IMyInterface myInterface)");
-    }
+    public static void MethodB(this IMyInterface myInterface) =>
+        Console.WriteLine("Extension.MethodB(this IMyInterface myInterface)");
 }
+//<InterfaceAndExtensions>
 
+// <Classes>
 // Define three classes that implement IMyInterface, and then use them to test
 // the extension methods.
 class A : IMyInterface
@@ -66,11 +56,31 @@ class C : IMyInterface
         Console.WriteLine("C.MethodA(object obj)");
     }
 }
+// </Classes>
 
-class ExtMethodDemo
+//<ExtendEnumType>
+public enum Grades
 {
-    static void Main(string[] args)
+    F = 0,
+    D = 1,
+    C = 2,
+    B = 3,
+    A = 4
+};
+
+// Define an extension method in a non-nested static class.
+public static class Extensions
+{
+    public static bool Passing(this Grades grade, Grades minPassing = Grades.D) =>
+        grade >= minPassing;
+}
+//</ExtendEnumType>
+
+public static class ExtensionMethodUsage
+{
+    public static void Examples()
     {
+        // <CallExtensionMethods>
         // Declare an instance of class A, class B, and class C.
         A a = new A();
         B b = new B();
@@ -104,36 +114,20 @@ class ExtMethodDemo
         c.MethodA(1);           // C.MethodA(object)
         c.MethodA("hello");     // C.MethodA(object)
         c.MethodB();            // C.MethodB()
-    }
-}
-/* Output:
-    Extension.MethodA(this IMyInterface myInterface, int i)
-    Extension.MethodA(this IMyInterface myInterface, string s)
-    A.MethodB()
-    B.MethodA(int i)
-    B.MethodB()
-    Extension.MethodA(this IMyInterface myInterface, string s)
-    C.MethodA(object obj)
-    C.MethodA(object obj)
-    C.MethodB()
- */
-//</MegaDemoBreakThisUp>
+        /* Output:
+            Extension.MethodA(this IMyInterface myInterface, int i)
+            Extension.MethodA(this IMyInterface myInterface, string s)
+            A.MethodB()
+            B.MethodA(int i)
+            B.MethodB()
+            Extension.MethodA(this IMyInterface myInterface, string s)
+            C.MethodA(object obj)
+            C.MethodA(object obj)
+            C.MethodB()
+         */
+        // </CallExtensionMethods>
 
-//<EnumMethods>
-// Define an extension method in a non-nested static class.
-public static class Extensions
-{
-    public static bool Passing(this Grades grade, Grades minPassing = Grades.D)
-    {
-        return grade >= minPassing;
-    }
-}
-
-public enum Grades { F = 0, D = 1, C = 2, B = 3, A = 4 };
-class Program
-{
-    static void Main(string[] args)
-    {
+        // <ExampleExtendEnum>
         Grades g1 = Grades.D;
         Grades g2 = Grades.F;
         Console.WriteLine($"First {(g1.Passing() ? "is" : "is not")} a passing grade.");
@@ -142,15 +136,15 @@ class Program
         Console.WriteLine("\r\nRaising the bar!\r\n");
         Console.WriteLine($"First {(g1.Passing(Grades.C) ? "is" : "is not")} a passing grade.");
         Console.WriteLine($"Second {(g2.Passing(Grades.C) ? "is" : "is not")} a passing grade.");
+        /* Output:
+            First is a passing grade.
+            Second is not a passing grade.
+
+            Raising the bar!
+
+            First is not a passing grade.
+            Second is not a passing grade.
+        */
+        // </ExampleExtendEnum>
     }
-    /* Output:
-        First is a passing grade.
-        Second is not a passing grade.
-
-        Raising the bar!
-
-        First is not a passing grade.
-        Second is not a passing grade.
-    */
 }
-//</EnumMethods>

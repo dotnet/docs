@@ -76,9 +76,17 @@ You can use extension methods to extend a class or interface, but not to overrid
 
 ## Extension members and instance members
 
-Overload resolution prefers members declared in a type over extension members. Extension members can't override an existing method. The following example demonstrates the rules that the C# compiler follows in determining whether to bind to an instance member on the type, or to an extension member. The static class `Extensions` contains extension members defined for any type that implements `IMyInterface`. Classes `A`, `B`, and `C` all implement the interface. The `MethodB` extension method is never called because its name and signature exactly match methods already implemented by the classes. When the compiler can't find an instance method with a matching signature, it will bind to a matching extension method if one exists.
+Overload resolution prefers members declared in a type over extension members. Extension members can't override an existing method. The following example demonstrates the rules that the C# compiler follows in determining whether to bind to an instance member on the type, or to an extension member. The static class `Extensions` contains extension members defined for any type that implements `IMyInterface`:
 
-:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="MegaDemoBreakThisUp":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="InterfaceAndExtensions":::
+
+Classes `A`, `B`, and `C` all implement the interface:
+
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="Classes":::
+
+The `MethodB` extension method is never called because its name and signature exactly match methods already implemented by the classes. When the compiler can't find an instance method with a matching signature, it will bind to a matching extension method if one exists.
+
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="CallExtensionMethods":::
 
 ## Common usage patterns
 

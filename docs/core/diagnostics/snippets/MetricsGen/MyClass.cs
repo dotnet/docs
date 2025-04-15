@@ -4,7 +4,7 @@ using System.Diagnostics.Metrics;
 
 namespace MetricsGen;
 
-// <snippet_metricCreation>
+// <creation>
 internal class MyClass
 {
     private string envName = "envValue";
@@ -50,7 +50,7 @@ internal class MyClass
         _totalFailuresMetric.Add(1);
     }
 }
-//</snippet_metricCreation>
+// </creation>
 
 #elif SECOND
 
@@ -58,8 +58,7 @@ using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using MetricsGen;
 
-// <snippet_strongMetricCreation>
-
+// <creation>
 internal class MyClass
 { 
     private readonly Latency _latencyMetric;
@@ -76,11 +75,10 @@ internal class MyClass
 
     public void DoWork()
     {
-        var stopwatch = new Stopwatch();
-        stopwatch.Start();
+        var startingTimestamp = Stopwatch.GetTimestamp();
         bool requestSuccessful = true;
-        // ... perform some operation ...
-        stopwatch.Stop();
+        // Perform some operation to measure
+        var elapsedTime = Stopwatch.GetElapsedTime(startingTimestamp);
 
         // Create a tag object with values for all tags
         var tags = new MetricTags
@@ -99,7 +97,7 @@ internal class MyClass
         };
 
         // Record the metric values with the associated tags
-        _latencyMetric.Record(stopwatch.ElapsedMilliseconds, tags);
+        _latencyMetric.Record(elapsedTime.ElapsedMilliseconds, tags);
         _totalCountMetric.Add(1, tags);
         if (!requestSuccessful)
         {
@@ -107,14 +105,14 @@ internal class MyClass
         }
     }
 }
-// </snippet_strongMetricCreation>
+// </creation>
 #elif THIRD
 
 using MetricsGen;
 using System.Diagnostics.Metrics;
 
-//<snippet_SimpleMetricTagUsage>
-Meter meter = new Meter("MyCompany.MyApp", "1.0");
+// <tag>
+Meter meter = new("MyCompany.MyApp", "1.0");
 RequestCount requestCountMetric = MyMetrics.CreateRequestCount(meter);
 
 // Create a tag object with the relevant tag value
@@ -123,5 +121,5 @@ var tags = new RequestTags { Region = "NorthAmerica" };
 // Record a metric value with the associated tag
 requestCountMetric.Add(1, tags);
 
-//</snippet_SimpleMetricTagUsage>
+// </tag>
 #endif

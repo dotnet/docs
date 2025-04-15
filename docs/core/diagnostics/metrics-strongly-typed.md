@@ -42,22 +42,25 @@ By default, the source generator derives metric tag names from the field and pro
 
 The following example demonstrates a simple counter metric with one tag. In this scenario, we want to count the number of processed requests and categorize them by a `Region` tag:
 
-:::code language="csharp" source="snippets/MetricsGen/MyMetrics.cs" id= "snippet_SimpleMetricTag":::
+:::code language="csharp" source="snippets/MetricsGen/MyMetrics.cs" id= "tag":::
 
-In the code above, `RequestTags` is a strongly-typed tag struct with a single property `Region`. The `CreateRequestCount` method is marked with <xref:Microsoft.Extensions.Diagnostics.Metrics.CounterAttribute`1> where `T` is an `int`, indicating it generates a **Counter** instrument that tracks `int` values. The attribute references `typeof(RequestTags)`, meaning the counter will use the tags defined in `RequestTags` when recording metrics. The source generator will produce a strongly-typed instrument class (named `RequestCount`) with an `Add` method that accepts integer value and `RequestTags` object.
+In the preceding code, `RequestTags` is a strongly-typed tag struct with a single property `Region`. The `CreateRequestCount` method is marked with <xref:Microsoft.Extensions.Diagnostics.Metrics.CounterAttribute`1> where `T` is an `int`, indicating it generates a `Counter` instrument that tracks `int` values. The attribute references `typeof(RequestTags)`, meaning the counter uses the tags defined in `RequestTags` when recording metrics. The source generator produces a strongly-typed instrument class (named `RequestCount`) with an `Add` method that accepts integer value and `RequestTags` object.
 
 To use the generated metric, create a <xref:System.Diagnostics.Metrics.Meter> and record measurements as shown below:
 
-:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="snippet_SimpleMetricTagUsage":::
+:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="tag":::
 
 In this usage example, calling `MyMetrics.CreateRequestCount(meter)` creates a counter instrument (via the `Meter`) and returns a `RequestCount` metric object. When you call `requestCountMetric.Add(1, tags)`, the metric system records a count of 1 associated with the tag `Region="NorthAmerica"`. You can reuse the `RequestTags` object or create new ones to record counts for different regions, and the tag name `Region` will consistently be applied to every measurement.
 
 ## Example 2: Metric with nested tag objects
 
-For more complex scenarios, you can define tag classes that include multiple tags, nested objects, or even inherited properties. This allows a group of related metrics to share a common set of tags easily. In the next example, we define a set of tag classes and use them for three different metrics:
+For more complex scenarios, you can define tag classes that include multiple tags, nested objects, or even inherited properties. This allows a group of related metrics to effectively share a common set of tags. In the next example, you define a set of tag classes and use them for three different metrics:
 
 :::code language="csharp" source="snippets/MetricsGen/MetricTags.cs" :::
-:::code language="csharp" source="snippets/MetricsGen/Metrics.cs" id="snippet_MetricTags" :::
+
+The preceding code defines the metric inheritance and object shapes. The following code demonstrates how to use these shapes with the generator, as shown in the `Metric` class:
+
+:::code language="csharp" source="snippets/MetricsGen/Metrics.cs" id="tags" :::
 
 In this example, `MetricTags` is a tag class that inherits from `MetricParentTags` and also contains a nested tag object (`MetricChildTags`) and a nested struct (`MetricTagsStruct`). The tag properties demonstrate both default and customized tag names:
 
@@ -71,7 +74,7 @@ All three metric definitions `CreateLatency`, `CreateTotalCount`, and `CreateTot
 
 The following code shows how to create and use these metrics in a class:
 
-:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="snippet_strongMetricCreation":::
+:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="creation":::
 
 In the preceding `MyClass.DoWork` method, a `MetricTags` object is populated with values for each tag. This single `tags` object is then passed to all three instruments when recording data. The `Latency` metric (a histogram) records the elapsed time, and both counters (`TotalCount` and `TotalFailures`) record occurrence counts. Because all metrics share the same tag object type, the tags (`Dim1DimensionName`, `Operation`, `Dim2`, `Dim3`, `DimensionNameOfParentOperation`) are present on every measurement.
 

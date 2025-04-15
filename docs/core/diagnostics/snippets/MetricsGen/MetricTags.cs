@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Diagnostics.Metrics;
 
 namespace MetricsGen;
+
 public class MetricTags : MetricParentTags
 {
     [TagName("Dim1DimensionName")]

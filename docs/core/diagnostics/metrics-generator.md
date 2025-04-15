@@ -43,9 +43,11 @@ The following example shows a class that declares two metrics. The methods are m
 The code generator runs at build time and provides an implementation of these methods, along with accompanying
 types.
 
-:::code language="csharp" source="snippets/MetricsGen/MetricConstants.cs" id="snippet_metricConstants":::
+:::code language="csharp" source="snippets/MetricsGen/MetricConstants.cs" id="constants":::
 
-:::code language="csharp" source="snippets/MetricsGen/Metrics.cs" id="snippet_Metrics" :::
+The following code demonstrates how to use the generator with primitive types:
+
+:::code language="csharp" source="snippets/MetricsGen/Metrics.cs" id="metrics" :::
 
 The previous declaration automatically returns the following:
 
@@ -74,7 +76,7 @@ internal class Latency
 
 The dimensions specified in the attributes have been turned into arguments to the `Add` and `Record` methods. You then use the generated methods to create instances of these types. With the instances created, you can call `Add` and `Record` to register metric values, as shown in the following example:
 
-:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="snippet_metricCreation":::
+:::code language="csharp" source="snippets/MetricsGen/MyClass.cs" id ="creation":::
 
 ## Metric methods requirements
 

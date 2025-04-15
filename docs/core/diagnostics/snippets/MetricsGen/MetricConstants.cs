@@ -1,6 +1,6 @@
 ﻿namespace MetricsGen;
 
-//<snippet_metricConstants>
+// <constants>
 internal class MetricConstants
 {
     public const string EnvironmentName = "env";
@@ -8,5 +8,5 @@ internal class MetricConstants
     public const string RequestName = "requestName";
     public const string RequestStatus = "requestStatus";
 }
-// </snippet_metricConstants>
+// </constants>
 

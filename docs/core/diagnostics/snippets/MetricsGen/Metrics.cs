@@ -1,7 +1,7 @@
 ﻿#define FIRST // FIRST SECOND
 
 #if FIRST
-//<snippet_Metrics>
+// <metrics>
 using System.Diagnostics.Metrics;
 using Microsoft.Extensions.Diagnostics.Metrics;
 
@@ -20,11 +20,11 @@ internal static partial class Metric
     [Counter<int>]
     public static partial TotalFailures CreateTotalFailures(this Meter meter);
 }
-//</snippet_Metrics>
+// </metrics>
 #elif SECOND
 
 using MetricsGen;
-//<snippet_MetricTags>
+// <tags>
 using System.Diagnostics.Metrics;
 using Microsoft.Extensions.Diagnostics.Metrics;
 
@@ -39,5 +39,5 @@ public static partial class Metric
     [Counter<int>(typeof(MetricTags))]
     public static partial TotalFailures CreateTotalFailures(Meter meter);
 }
-//</snippet_MetricTags>
+// </tags>
 #endif

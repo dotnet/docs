@@ -30,7 +30,7 @@ Extension methods are defined as static methods but are called by using instance
 
 Beginning with C# 14, you can declare *extension blocks*. An extension block is a block in a non-nested, nongeneric, static class that contains extension members for a type or an instance of that type. The following code example defines an extension block for the `string` type. The extension block contains one member: a method that counts the words in the string:
 
-:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="ExtensionBlock":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="ExtensionBlock":::
 
 Before C# 14, you declare an extension method by adding the `this` modifier to the first parameter:
 
@@ -101,29 +101,29 @@ Rather than creating new objects when reusable functionality needs to be created
 
 Extending predefined types can be difficult with `struct` types because they're passed by value to methods. That means any changes to the struct are made to a copy of the struct. Those changes aren't visible once the extension method exits. You can add the `ref` modifier to the first argument making it a `ref` extension method. The `ref` keyword can appear before or after the `this` keyword without any semantic differences. Adding the `ref` modifier indicates that the first argument is passed by reference. This technique enables you to write extension methods that change the state of the struct being extended (note that private members aren't accessible). Only value types or generic types constrained to struct (For more information about these rules, see [`struct` constraint](../../language-reference/builtin-types/struct.md#struct-constraint) for more information) are allowed as the first parameter of a `ref` extension method or as the receiver of an extension block. The following example shows how to use a `ref` extension method to directly modify a built-in type without the need to reassign the result or pass it through a function with the `ref` keyword:
 
-:::code language="csharp" source="./snippets/methods/CustomExtensionMethods.cs" id="RefExtensions":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="RefExtensions":::
 
 The equivalent extension blocks are shown in the following code:
 
-:::code language="csharp" source="./snippets/methods/CustomExtensionMembers.cs" id="RefExtensions":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="RefExtensions":::
 
 Different extension blocks are required to distinguish by-value and by-ref parameter modes for the receiver.
 
 You can see the difference applying `ref` to the receiver has in the following example:
 
-:::code language="csharp" source="./snippets/methods/CustomExtensionMethods.cs" id="UseRefExtension":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="UseRefExtension":::
 
 You can apply the same technique by adding `ref` extension members to user-defined struct types:
 
-:::code language="csharp" source="./snippets/methods/CustomExtensionMethods.cs" id="UserDefinedRef":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="UserDefinedRef":::
 
 The preceding sample can also be created using extension blocks in C# 14:
 
-:::code language="csharp" source="./snippets/methods/CustomExtensionMembers.cs" id="UserDefinedRef":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMembers.cs" id="UserDefinedRef":::
 
 You can access these extension methods as follows:
 
-:::code language="csharp" source="./snippets/methods/CustomExtensionMethods.cs" id="TestUserDefinedRef":::
+:::code language="csharp" source="./snippets/ExtensionMembers/CustomExtensionMethods.cs" id="TestUserDefinedRef":::
 
 ## General Guidelines
 

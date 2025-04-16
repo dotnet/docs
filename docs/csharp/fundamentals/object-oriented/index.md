@@ -1,7 +1,7 @@
 ---
 title: "Classes, structs, and records"
 description: Describes the use of classes, structures (structs), and records in C#.
-ms.date: 04/11/2025
+ms.date: 04/17/2025
 helpviewer_keywords: 
   - "structs [C#], about structs"
   - "records [C#], about records"

@@ -32,7 +32,7 @@ public static class Extension
     public static void MethodB(this IMyInterface myInterface) =>
         Console.WriteLine("Extension.MethodB(this IMyInterface myInterface)");
 }
-//<InterfaceAndExtensions>
+//</InterfaceAndExtensions>
 
 // <Classes>
 // Define three classes that implement IMyInterface, and then use them to test
@@ -58,6 +58,22 @@ class C : IMyInterface
 }
 // </Classes>
 
+// <DomainEntity>
+public class DomainEntity
+{
+    public int Id { get; set; }
+    public required string FirstName { get; set; }
+    public required string LastName { get; set; }
+}
+
+static class DomainEntityExtensions
+{
+    static string FullName(this DomainEntity value)
+        => $"{value.FirstName} {value.LastName}";
+}
+// </DomainEntity>
+
+
 //<ExtendEnumType>
 public enum Grades
 {
@@ -76,10 +92,59 @@ public static class Extensions
 }
 //</ExtendEnumType>
 
+//<RefExtensions>
+public static class IntExtensions
+{
+    public static void Increment(this int number)
+        => number++;
+
+    // Take note of the extra ref keyword here
+    public static void RefIncrement(this ref int number)
+        => number++;
+}
+//</RefExtensions>
+
+//<UserDefinedRef>
+public struct Account
+{
+    public uint id;
+    public float balance;
+
+    private int secret;
+}
+
+public static class AccountExtensions
+{
+    // ref keyword can also appear before the this keyword
+    public static void Deposit(ref this Account account, float amount)
+    {
+        account.balance += amount;
+
+        // The following line results in an error as an extension
+        // method is not allowed to access private members
+        // account.secret = 1; // CS0122
+    }
+}
+//</UserDefinedRef>
+
+
 public static class ExtensionMethodUsage
 {
     public static void Examples()
     {
+        {
+            // <CallAsInstanceMethod>
+            string s = "Hello Extension Methods";
+            int i = s.WordCount();
+            // </CallAsInstanceMethod>
+        }
+
+        {
+            // <CallAsStaticMethod>
+            string s = "Hello Extension Methods";
+            int i = MyExtensions.WordCount(s);
+            // </CallAsStaticMethod>
+        }
         // <CallExtensionMethods>
         // Declare an instance of class A, class B, and class C.
         A a = new A();
@@ -146,5 +211,32 @@ public static class ExtensionMethodUsage
             Second is not a passing grade.
         */
         // </ExampleExtendEnum>
+
+        // <UseRefExtension>
+        int x = 1;
+
+        // Takes x by value leading to the extension method
+        // Increment modifying its own copy, leaving x unchanged
+        x.Increment();
+        Console.WriteLine($"x is now {x}"); // x is now 1
+
+        // Takes x by reference leading to the extension method
+        // RefIncrement changing the value of x directly
+        x.RefIncrement();
+        Console.WriteLine($"x is now {x}"); // x is now 2
+        // </UseRefExtensions>
+
+        // <TestUserDefinedRef>
+        Account account = new()
+        {
+            id = 1,
+            balance = 100f
+        };
+
+        Console.WriteLine($"I have ${account.balance}"); // I have $100
+
+        account.Deposit(50f);
+        Console.WriteLine($"I have ${account.balance}"); // I have $150
+        // </TestUserDefinedRef>
     }
 }

@@ -1,7 +1,7 @@
 ---
 title: "extension member declarations"
 description: "Learn the syntax to declare extension members in C#. Extension members enable you to add functionality to types and interfaces in those instances where you don't have the source for the original type. Extensions are often paired with generic interfaces to implement a common set of functionality across all types that implement that interface."
-ms.date: 04/11/2025
+ms.date: 04/17/2025
 f1_keywords:
   - "extension_CSharpKeyword"
   - "extension"

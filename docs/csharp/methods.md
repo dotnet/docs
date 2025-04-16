@@ -2,7 +2,7 @@
 title: Overview of methods
 description: Overview of methods, method parameters, and method return values
 ms.subservice: fundamentals
-ms.date: 04/15/2025
+ms.date: 04/17/2025
 ---
 
 # Methods in C\#

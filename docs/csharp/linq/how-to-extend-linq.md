@@ -2,7 +2,7 @@
 title: "How to: Write your own extensions to LINQ"
 description: Learn techniques to extend the standard LINQ methods. Query based on runtime state, modify query objects, and extend LINQ capabilities.
 ms.topic: how-to
-ms.date: 04/11/2025
+ms.date: 04/17/2025
 ---
 # How to extend LINQ
 

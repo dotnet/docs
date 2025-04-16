@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 14
 description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
-ms.date: 04/11/2025
+ms.date: 04/17/2025
 ms.topic: whats-new
 ---
 # What's new in C# 14
@@ -124,7 +124,7 @@ You can simplify the preceding code using the `?.` operator:
 customer?.Order = GetCurrentOrder();
 ```
 
-The right side of the `=` operator is evaluated only when the left side is not null. If `customer` is null, the code won't call `GetCurrentOrder`.
+The right side of the `=` operator is evaluated only when the left side is not null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
 
 In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
 

@@ -224,7 +224,7 @@ public static class ExtensionMethodUsage
         // RefIncrement changing the value of x directly
         x.RefIncrement();
         Console.WriteLine($"x is now {x}"); // x is now 2
-        // </UseRefExtensions>
+        // </UseRefExtension>
 
         // <TestUserDefinedRef>
         Account account = new()

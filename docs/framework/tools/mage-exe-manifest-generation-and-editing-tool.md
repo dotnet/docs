@@ -78,7 +78,9 @@ The following table shows the options supported by the `-Sign` command, which ap
 |**-csp, -CryptoProvider** `provider-name`|Specifies the name of a cryptographic service provider (CSP) that contains the private key container. This option requires the **-KeyContainer** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-kc, -KeyContainer** `name`|Specifies the key container that contains the name of the private key. This option requires the **CryptoProvider** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-pwd, -Password** `passwd`|The password that is used for signing a manifest with a digital certificate. Must be used in conjunction with the **-CertFile** option.|
+|**-ti, -TimestampUri** `uri`|The URL of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests should your digital certificate expire before you deploy the next version of your application.|
 |**-t, -ToFile** `filePath`|Specifies the output path of the file that has been created or modified.|
+|**-a, -Algorithm**|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA.|
 
 ## Remarks
 

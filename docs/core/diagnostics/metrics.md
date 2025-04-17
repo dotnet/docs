@@ -28,6 +28,7 @@ There are two parts to using metrics in a .NET app:
 
 - [Instrumentation tutorial](metrics-instrumentation.md) - How to create new metrics in code
 - [Collection tutorial](metrics-collection.md) - How to store and view metric data for your app
+- [Source generated metrics](metrics-generator.md) - How to use source generator to create metrics
 - [Source-generated metrics with strongly-typed tags](metrics-strongly-typed.md) - How to use source-generated metrics with strongly-typed tags
 - [Built-in metrics](built-in-metrics.md) - Discover metrics that are ready for use in .NET runtime libraries
 - [Compare metric APIs](compare-metric-apis.md)

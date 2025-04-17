@@ -28,7 +28,7 @@ Static extensions can be called as though they're static members of the receiver
 
 :::code language="csharp" source="./snippets/extensions.cs" id="UseStaticExtensions":::
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > An extension doesn't introduce a *scope* for member declarations. All members declared in a single class, even if in multiple extensions, must have unique signatures. The generated signature includes the receiver type in its name for static members and the receiver parameter for extension instance members.
 
 The following example shows an extension method using the `this` modifier:

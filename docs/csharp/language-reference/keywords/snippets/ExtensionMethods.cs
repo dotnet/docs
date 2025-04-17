@@ -26,7 +26,7 @@ public static class ExtensionExamples
     }
 }
 
-// <GenericExtensionMethod>
+// <GenericExtensionMethods>
 public static class GenericExtensions
 {
     public static IEnumerable<T> Spread<T>(this IEnumerable<T> source, int start, int count)
@@ -44,7 +44,7 @@ public static class GenericExtensions
         }
     }
 
-    public static IEnumerable<T1> Prepend<T1, TArg>(this IEnumerable<T1> source, IEnumerable<T2> second, Func<T2, T1> Converter)
+    public static IEnumerable<T1> Prepend<T1, T2>(this IEnumerable<T1> source, IEnumerable<T2> second, Func<T2, T1> Converter)
     {
         foreach (T2 item in second)
         {
@@ -56,6 +56,6 @@ public static class GenericExtensions
         }
     }
 }
-// </GenericExtensionMethod>
+// </GenericExtensionMethods>
 
 

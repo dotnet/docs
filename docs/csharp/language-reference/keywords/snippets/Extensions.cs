@@ -58,6 +58,41 @@ public static class NumericStaticExtensions
     // </StaticExtensions>
 }
 
+// <GenericExtension>
+public static class GenericExtensions
+{
+    extension<TReceiver>(IEnumerable<TReceiver> source)
+    {
+        public IEnumerable<TReceiver> Spread(int start, int count)
+            => source.Skip(start).Take(count);
+
+        public IEnumerable<TReceiver> Append<TArg>(IEnumerable<TArg> second, Func<TArg, TReceiver> Converter)
+        {
+            foreach(TReceiver item in source)
+            {
+                yield return item;
+            }
+            foreach (TArg item in second)
+            {
+                yield return Converter(item);
+            }
+        }
+
+        public IEnumerable<TReceiver> Prepend<TArg>(IEnumerable<TArg> second, Func<TArg, TReceiver> Converter)
+        {
+            foreach (TArg item in second)
+            {
+                yield return Converter(item);
+            }
+            foreach (TReceiver item in source)
+            {
+                yield return item;
+            }
+        }
+    }
+}
+// </GenericExtension>
+
 public static class ExtensionExamples
 {
     public static void BasicExample()

@@ -26,3 +26,36 @@ public static class ExtensionExamples
     }
 }
 
+// <GenericExtensionMethod>
+public static class GenericExtensions
+{
+    public static IEnumerable<T> Spread<T>(this IEnumerable<T> source, int start, int count)
+        => source.Skip(start).Take(count);
+
+    public static IEnumerable<T1> Append<T1, T2>(this IEnumerable<T1> source, IEnumerable<T2> second, Func<T2, T1> Converter)
+    {
+        foreach (T1 item in source)
+        {
+            yield return item;
+        }
+        foreach (T2 item in second)
+        {
+            yield return Converter(item);
+        }
+    }
+
+    public static IEnumerable<T1> Prepend<T1, TArg>(this IEnumerable<T1> source, IEnumerable<T2> second, Func<T2, T1> Converter)
+    {
+        foreach (T2 item in second)
+        {
+            yield return Converter(item);
+        }
+        foreach (T1 item in source)
+        {
+            yield return item;
+        }
+    }
+}
+// </GenericExtensionMethod>
+
+

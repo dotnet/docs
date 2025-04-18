@@ -57,7 +57,7 @@ public static class Enumerable
 }
 ```
 
-The members in the first extension block are called as though they are instance members of `IEnumerable<TSource>`, for example `sequence.IsEmpty`. The members in the second extension block are called as though they are static members of `IEnumerable<TSource>`, for example `IEnumerable<int>.Identity`.
+The members in the first extension block are called as though they're instance members of `IEnumerable<TSource>`, for example `sequence.IsEmpty`. The members in the second extension block are called as though they're static members of `IEnumerable<TSource>`, for example `IEnumerable<int>.Identity`.
 
 You can learn more details by reading the article on [extension members](../programming-guide/classes-and-structs/extension-methods.md) in the programming guide, the language reference article on the [`extension` keyword](../language-reference/keywords/extension.md), and the [feature specification](~/_csharplang/proposals/extensions.md) for the new extension members feature.
 
@@ -155,7 +155,7 @@ You can simplify the preceding code using the `?.` operator:
 customer?.Order = GetCurrentOrder();
 ```
 
-The right side of the `=` operator is evaluated only when the left side is not null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
+The right side of the `=` operator is evaluated only when the left side isn't null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
 
 In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
 

@@ -68,6 +68,29 @@ let makeTask() =
 makeTask() |> ValueTask<int>
 ```
 
+
+## `and!` bindings (starting from F# 10)
+
+Within task expressions, it is possible to concurrently await for multiple asynchronous operations (`Task<'T>`, `ValueTask<'T>`, `Async<'T>` etc). Compare:
+
+```fsharp
+// We'll wait for x to resolve and then for y to resolve. Overall execution time is sum of two execution times.
+let getResultsSequentially() =
+    task {
+        let! x = getX()
+        let! y = getY()
+        return x, y
+    }
+
+// x and y will be awaited concurrently. Overall execution time is the time of the slowest operation.
+let getResultsConcurrently() =
+    task {
+        let! x = getX()
+        and! y = getY()
+        return x, y
+    }
+```
+
 ## Adding cancellation tokens and cancellation checks
 
 Unlike F# async expressions, task expressions do not implicitly pass a cancellation token and don't implicitly perform cancellation checks. If your code requires a cancellation token, you should specify the cancellation token as a parameter. For example:

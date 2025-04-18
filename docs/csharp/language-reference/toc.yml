@@ -10,6 +10,8 @@ items:
     href: ./configure-language-version.md
 - name: Types
   items:
+  - name: Built-in types
+    href: ./builtin-types/built-in-types.md
   - name: Value types
     items:
     - name: Overview
@@ -68,8 +70,6 @@ items:
         href: ./builtin-types/arrays.md
   - name: void
     href: ./builtin-types/void.md
-  - name: Built-in types
-    href: ./builtin-types/built-in-types.md
   - name: Unmanaged types
     href: ./builtin-types/unmanaged-types.md
   - name: Default values

@@ -28,7 +28,38 @@ You can find any breaking changes introduced in C# 14 in our article on [breakin
 
 ## Extension members
 
-You can learn more details by reading the [feature specification](~/_csharplang/proposals/extensions.md) for the new extension members feature.
+C# 14 adds new syntax to define *extension members*. The new syntax enables you to declare *extension properties* in addition to extension methods. You can also declare extension members that extend the type, rather than an instance of the type. In other words, these new extension members can appear as static members of the type you extend. The following code example shows an example of the different kinds of extension members you can declare:
+
+```csharp
+public static class Enumerable
+{
+    // Extension block
+    extension<TSource>(IEnumerable<TSource> source) // extension members for IEnumerable<TSource>
+    {
+        // Extension property:
+        public bool IsEmpty => source.Any() == false;
+        // Extension indexer:
+        public int this[int index] => source.Skip(index).First();
+
+        // Extension method:
+        public IEnumerable<TSource> Where(Func<TSource, bool> predicate) { ... }
+    }
+
+    // extension block, with a receiver type only
+    extension<TSource>(IEnumerable<TSource>) // static extension members for IEnumerable<Source>
+    {
+        // static extension method:
+        public static IEnumerable<TSource> Combine(IEnumerable<TSource> first, IEnumerable<TSource> second) { ... }
+
+        // static extension property:
+        public static IEnumerable<TSource> Identity => yield return default;
+    }
+}
+```
+
+The members in the first extension block are called as though they're instance members of `IEnumerable<TSource>`, for example `sequence.IsEmpty`. The members in the second extension block are called as though they're static members of `IEnumerable<TSource>`, for example `IEnumerable<int>.Identity`.
+
+You can learn more details by reading the article on [extension members](../programming-guide/classes-and-structs/extension-methods.md) in the programming guide, the language reference article on the [`extension` keyword](../language-reference/keywords/extension.md), and the [feature specification](~/_csharplang/proposals/extensions.md) for the new extension members feature.
 
 ## The `field` keyword
 
@@ -124,7 +155,7 @@ You can simplify the preceding code using the `?.` operator:
 customer?.Order = GetCurrentOrder();
 ```
 
-The right side of the `=` operator is evaluated only when the left side is not null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
+The right side of the `=` operator is evaluated only when the left side isn't null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
 
 In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
 

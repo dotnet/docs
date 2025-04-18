@@ -5,7 +5,7 @@ public static class NumericSequences
 {
     extension(IEnumerable<int> sequence)
     {
-        public IEnumerable<int> Add(int operand)
+        public IEnumerable<int> AddValue(int operand)
         {
             foreach (var item in sequence)
             {
@@ -99,7 +99,7 @@ public static class ExtensionExamples
     {
         // <UseExtensionMethod>
         IEnumerable<int> numbers = Enumerable.Range(1, 10);
-        numbers = numbers.Add(10);
+        numbers = numbers.AddValue(10);
 
         var median = numbers.Median;
         // </UseExtensionMethod>

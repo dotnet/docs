@@ -7,7 +7,7 @@ namespace keywords_ExtensionMethods;
 // <ExtensionMethod>
 public static class NumericSequenceExtensionMethods
 {
-    public static IEnumerable<int> Add(this IEnumerable<int> sequence, int operand)
+    public static IEnumerable<int> AddValue(this IEnumerable<int> sequence, int operand)
     {
         foreach (var item in sequence)
             yield return item + operand;
@@ -21,7 +21,7 @@ public static class ExtensionExamples
     {
         // <UseExtensionMethod>
         IEnumerable<int> numbers = Enumerable.Range(1, 10);
-        numbers = numbers.Add(10);
+        numbers = numbers.AddValue(10);
         // </UseExtensionMethod>
     }
 }

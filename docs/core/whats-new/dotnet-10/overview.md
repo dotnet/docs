@@ -23,7 +23,7 @@ The .NET 10 runtime introduces new features and performance improvements. Key up
 - **Array enumeration de-abstraction**: Enhancements to reduce abstraction overhead for array iteration via enumerators, enabling better inlining and stack allocation.
 - **Inlining of late devirtualized methods**: The JIT can now inline methods that become eligible for devirtualization due to previous inlining.
 - **Devirtualization based on inlining observations**: The JIT uses precise type information from inlining to devirtualize subsequent calls.
-- **Stack allocation of arrays of value types**: Small, fixed-sized arrays of value types without GC pointers can now be stack-allocated.
+- **Stack allocation of arrays**: Small, fixed-sized arrays can now be stack-allocated.
 - **AVX10.2 support**: Introduced support for Advanced Vector Extensions (AVX) 10.2 for x64-based processors, though currently disabled by default.
 - **NativeAOT enhancements**: Support for casting and negation in NativeAOT's type preinitializer.
 

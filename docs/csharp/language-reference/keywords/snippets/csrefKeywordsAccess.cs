@@ -19,7 +19,7 @@ namespace csrefKeywordsAccess
     }
     class Employee : Person
     {
-        public string id = "ABC567EFG";
+        public readonly string id = "ABC567EFG";
         public override void GetInfo()
         {
             // Calling the base class GetInfo method:
@@ -48,12 +48,10 @@ namespace csrefKeywordsAccess
     //<snippet2>
     public class BaseClass
     {
-        int num;
+        private int num;
 
-        public BaseClass()
-        {
+        public BaseClass() => 
             Console.WriteLine("in BaseClass()");
-        }
 
         public BaseClass(int i)
         {
@@ -61,23 +59,16 @@ namespace csrefKeywordsAccess
             Console.WriteLine("in BaseClass(int i)");
         }
 
-        public int GetNum()
-        {
-            return num;
-        }
+        public int GetNum() => num;
     }
 
     public class DerivedClass : BaseClass
     {
         // This constructor will call BaseClass.BaseClass()
-        public DerivedClass() : base()
-        {
-        }
+        public DerivedClass() : base() { }
 
         // This constructor will call BaseClass.BaseClass(int i)
-        public DerivedClass(int i) : base(i)
-        {
-        }
+        public DerivedClass(int i) : base(i) { }
 
         static void Main()
         {
@@ -118,7 +109,6 @@ namespace csrefKeywordsAccess
         {
             private string name;
             private string alias;
-            private decimal salary = 3000.00m;
 
             // Constructor:
             public Employee(string name, string alias)
@@ -131,26 +121,23 @@ namespace csrefKeywordsAccess
             // Printing method:
             public void printEmployee()
             {
-                Console.WriteLine($"Name: {name}\nAlias: {alias}");
+                Console.WriteLine($"""
+                Name: {name}
+                Alias: {alias}
+                """);
                 // Passing the object to the CalcTax method by using this:
                 Console.WriteLine($"Taxes: {Tax.CalcTax(this):C}");
             }
 
-            public decimal Salary
-            {
-                get { return salary; }
-            }
+            public decimal Salary { get; } = 3000.00m;
         }
 
         class Tax
         {
-            public static decimal CalcTax(Employee E)
-            {
-                return 0.08m * E.Salary;
-            }
+            public static decimal CalcTax(Employee E)=> 0.08m * E.Salary;
         }
 
-        class MainClass
+        class Program
         {
             static void Main()
             {
@@ -177,8 +164,8 @@ namespace csrefKeywordsAccess
             //<snippet5>
             public int this[int param]
             {
-                get { return array[param]; }
-                set { array[param] = value; }
+                get => array[param];
+                set => array[param] = value;
             }
             //</snippet5>
         }

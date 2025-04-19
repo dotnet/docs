@@ -1,7 +1,7 @@
 ---
 title: "Classes, structs, and records"
 description: Describes the use of classes, structures (structs), and records in C#.
-ms.date: 03/23/2022
+ms.date: 04/17/2025
 helpviewer_keywords: 
   - "structs [C#], about structs"
   - "records [C#], about records"
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ---
 # Overview of object oriented techniques in C\#
 
-In C#, the definition of a type&mdash;a class, struct, or record&mdash;is like a blueprint that specifies what the type can do. An object is basically a block of memory that has been allocated and configured according to the blueprint. This article provides an overview of these blueprints and their features. The [next article in this series](objects.md) introduces objects.
+In C#, the definition of a type&mdash;a class, struct, or record&mdash;is like a blueprint that specifies what the type can do. An object is basically a block of memory allocated and configured according to the blueprint. This article provides an overview of these blueprints and their features. The [next article in this series](objects.md) introduces objects.
 
 ## Encapsulation  
 
- *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. A class or struct can specify how accessible each of its members is to code outside of the class or struct. Methods and variables that aren't intended to be used from outside of the class or assembly can be hidden to limit the potential for coding errors or malicious exploits. For more information, see the [Object-oriented programming](../tutorials/oop.md) tutorial.
+ *Encapsulation* is sometimes referred to as the first pillar or principle of object-oriented programming. A class or struct can specify how accessible each of its members is to code outside of the class or struct. Member not intended for consumers outside of the class or assembly are hidden to limit the potential for coding errors or malicious exploits. For more information, see the [Object-oriented programming](../tutorials/oop.md) tutorial.
 
 ## Members
 
 The *members* of a type include all methods, fields, constants, properties, and events. In C#, there are no global variables or methods as there are in some other languages. Even a program's entry point, the `Main` method, must be declared within a class or struct (implicitly when you use [top-level statements](../program-structure/top-level-statements.md)).
 
-The following list includes all the various kinds of members that may be declared in a class, struct, or record.
+The following list includes all the various kinds of members that can be declared in a class, struct, or record.
   
 - Fields
 - Constants
@@ -56,7 +56,7 @@ The default accessibility is `private`.
 
 Classes (but not structs) support the concept of inheritance. A class that derives from another class, called the *base class*, automatically contains all the public, protected, and internal members of the base class except its constructors and finalizers.
   
-Classes may be declared as [abstract](../../language-reference/keywords/abstract.md), which means that one or more of their methods have no implementation. Although abstract classes cannot be instantiated directly, they can serve as base classes for other classes that provide the missing implementation. Classes can also be declared as [sealed](../../language-reference/keywords/sealed.md) to prevent other classes from inheriting from them.
+Classes can be declared as [abstract](../../language-reference/keywords/abstract.md), which means that one or more of their methods have no implementation. Although abstract classes can't be instantiated directly, they can serve as base classes for other classes that provide the missing implementation. Classes can also be declared as [sealed](../../language-reference/keywords/sealed.md) to prevent other classes from inheriting from them.
 
 For more information, see [Inheritance](./inheritance.md) and [Polymorphism](./polymorphism.md).
   
@@ -66,7 +66,7 @@ Classes, structs, and records can implement multiple interfaces. To implement fr
   
 ## Generic Types  
 
-Classes, structs, and records can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example, the <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list will hold. For more information, see [Generics](../types/generics.md).  
+Classes, structs, and records can be defined with one or more type parameters. Client code supplies the type when it creates an instance of the type. For example, the <xref:System.Collections.Generic.List%601> class in the <xref:System.Collections.Generic> namespace is defined with one type parameter. Client code creates an instance of a `List<string>` or `List<int>` to specify the type that the list holds. For more information, see [Generics](../types/generics.md).  
   
 ## Static Types  
 
@@ -86,9 +86,9 @@ You can instantiate and initialize class or struct objects, and collections of o
   
 ## Anonymous Types  
 
-In situations where it isn't convenient or necessary to create a named class you use anonymous types. Anonymous types are defined by their named data members. For more information, see [Anonymous types](../types/anonymous-types.md).
+In situations where it isn't convenient or necessary to create a named class you use anonymous types. Named data members define anonymous types. For more information, see [Anonymous types](../types/anonymous-types.md).
   
-## Extension Methods  
+## Extension Members  
 
 You can "extend" a class without creating a derived class by creating a separate type. That type contains methods that can be called as if they belonged to the original type. For more information, see [Extension methods](../../programming-guide/classes-and-structs/extension-methods.md).
   

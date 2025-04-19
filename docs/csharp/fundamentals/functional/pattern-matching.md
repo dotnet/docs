@@ -52,7 +52,7 @@ You can use [*relational patterns*](../../language-reference/operators/patterns.
 
 :::code language="csharp" source="snippets/patterns/Simulation.cs" ID="RelationalPattern":::
 
-The preceding code also demonstrates the conjunctive `and` [*logical pattern*](../../language-reference/operators/patterns.md#logical-patterns) to check that both relational patterns match. You can also use a disjunctive `or` pattern to check that either pattern matches. The two relational patterns are surrounded by parentheses, which you can use around any pattern for clarity. The final two switch arms handle the cases for the melting point and the boiling point. Without those two arms, the compiler warns you that your logic doesn't cover every possible input.
+The preceding code also demonstrates the conjunctive `and` [*logical pattern*](../../language-reference/operators/patterns.md#logical-patterns) to check that both relational patterns match. You can also use a disjunctive `or` pattern to check that either pattern matches. The two relational patterns are surrounded by parentheses, which you can use around any pattern for clarity. The two explicit switch arms (32°F and 212°F) handle the cases for the melting point and the boiling point. Without those two arms, the compiler warns you that your logic doesn't cover every possible input.
 
 The preceding code also demonstrates another important feature the compiler provides for pattern matching expressions: The compiler warns you if you don't handle every input value. The compiler also issues a warning if the pattern for a switch arm is covered by a previous pattern. That gives you freedom to refactor and reorder switch expressions. Another way to write the same expression could be:
 

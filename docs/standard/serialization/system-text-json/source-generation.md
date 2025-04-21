@@ -5,7 +5,6 @@ ms.date: 10/09/2023
 no-loc: [System.Text.Json]
 dev_langs:
   - "csharp"
-  - "vb"
 helpviewer_keywords:
   - "JSON serialization"
   - "serializing objects"

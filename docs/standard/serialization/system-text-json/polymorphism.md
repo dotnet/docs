@@ -578,13 +578,12 @@ public class PolymorphicTypeResolver : DefaultJsonTypeInfoResolver
             {
                 TypeDiscriminatorPropertyName = "$point-type",
                 IgnoreUnrecognizedTypeDiscriminators = true,
-                UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization,
-                DerivedTypes =
-                {
-                    new JsonDerivedType(typeof(ThreeDimensionalPoint), "3d"),
-                    new JsonDerivedType(typeof(FourDimensionalPoint), "4d")
-                }
+                UnknownDerivedTypeHandling = JsonUnknownDerivedTypeHandling.FailSerialization
             };
+            jsonTypeInfo.PolymorphismOptions.DerivedTypes.Add(
+                new JsonDerivedType(typeof(ThreeDimensionalPoint), "3d"));
+            jsonTypeInfo.PolymorphismOptions.DerivedTypes.Add(
+                new JsonDerivedType(typeof(FourDimensionalPoint), "4d"));
         }
 
         return jsonTypeInfo;

@@ -3,7 +3,6 @@ title: What's new in .NET Core 2.2
 description: Learn about the new features found in .NET Core 2.2.
 dev_langs:
   - "csharp"
-  - "vb"
 ms.date: 12/04/2018
 ---
 
@@ -56,7 +55,6 @@ internal sealed class SimpleEventListener : EventListener
 In addition, .NET Core 2.2 adds the following two properties to the <xref:System.Diagnostics.Tracing.EventWrittenEventArgs> class to provide additional information about ETW events:
 
 - <xref:System.Diagnostics.Tracing.EventWrittenEventArgs.OSThreadId?displayProperty=nameWithType>
-
 - <xref:System.Diagnostics.Tracing.EventWrittenEventArgs.TimeStamp?displayProperty=nameWithType>
 
 ## Data
@@ -72,7 +70,6 @@ Starting with .NET Core 2.2, an access token issued by Azure Active Directory ca
 In .NET Core 2.1, the JIT compiler implemented a new compiler technology, *tiered compilation*, as an opt-in feature. The goal of tiered compilation is improved performance. One of the important tasks performed by the JIT compiler is optimizing code execution. For little-used code paths, however, the compiler may spend more time optimizing code than the runtime spends executing unoptimized code. Tiered compilation introduces two stages in JIT compilation:
 
 - A **first tier**, which generates code as quickly as possible.
-
 - A **second tier**, which generates optimized code for those methods that are executed frequently. The second tier of compilation is performed in parallel for enhanced performance.
 
 For information on the performance improvement that can result from tiered compilation, see [Announcing .NET Core 2.2 Preview 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2-preview-2/).

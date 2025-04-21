@@ -384,7 +384,7 @@
 | Item Templates NetFx | NuGet [4.0.5051](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5051) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview6) |  |  |
-| OpenTelemetry Profiler | NuGet [1.0.0-beta3](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta3) |  |  |
+| OpenTelemetry Profiler | NuGet [1.0.0-beta4](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta4) |  |  |
 | Speech CLI | NuGet [1.43.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.CLI/1.43.0) |  |  |
 | Speech Extension Embedded SR | NuGet [1.43.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.SR/1.43.0) |  |  |
 | Speech Extension Embedded TTS | NuGet [1.43.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Embedded.TTS/1.43.0) |  |  |

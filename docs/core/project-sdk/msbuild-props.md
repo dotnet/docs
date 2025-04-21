@@ -846,17 +846,17 @@ The `DisableRuntimeMarshalling` property enables you to specify that you would l
 
 ### BuildWithNetFrameworkHostedCompiler
 
-Specifying `BuildWithNetFrameworkHostedCompiler=true` is the equivalent of specifying `RoslynCompilerType=FrameworkPackage`, see below.
+Specifying `BuildWithNetFrameworkHostedCompiler=true` is the equivalent of specifying `RoslynCompilerType=FrameworkPackage`. For more information, see [RoslynCompilerType](#roslyncompilertype).
 Specifying `BuildWithNetFrameworkHostedCompiler=false` ensures the automatic opt in to `RoslynCompilerType=FrameworkPackage` does not happen.
 If `RoslynCompilerType` is specified explicitly, `BuildWithNetFrameworkHostedCompiler` has no effect.
 
 ### RoslynCompilerType
 
-The `RoslynCompilerType` property controls version of C#/VB compiler. These values are recognized:
+The `RoslynCompilerType` property controls the version of the C# or Visual Basic compiler. The following values are recognized:
 
 - `Core`: Use the compiler that comes with the .NET SDK. This is the default since .NET 10, even when using .NET Framework MSBuild.
 - `Framework`: Use the compiler that comes with .NET Framework MSBuild.
-- `FrameworkPackage`: When using .NET Framework MSBuild, download and use a package with .NET Framework compiler corresponding to the .NET SDK version.
+- `FrameworkPackage`: When using .NET Framework MSBuild, download and use a package with the .NET Framework compiler that corresponds to the .NET SDK version.
 
 ## Default item inclusion properties
 

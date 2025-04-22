@@ -120,7 +120,7 @@ To specify multiple container runtime identifiers for multi-architecture images,
 
 > [!IMPORTANT]
 > The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. If this condition isn't met, critical parts of the build pipeline may fail.
-> 
+>
 > Setting multiple `ContainerRuntimeIdentifiers` results in a multi-architecture image being created. For more information, see [Multi-architecture images](#multi-architecture-images).
 
 For more information regarding the runtime identifiers supported by .NET, see [RID catalog](../rid-catalog.md).

@@ -49,7 +49,7 @@ You don't need to select the child items for **Windows Communication Foundation 
 
 The .NET Framework 3.5 SP1 offline installer is available for Windows versions **prior to Windows 10 and Windows Server 2016**. For more information, see [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
 
-Starting with Windows 10 and Windows Server 2016 operating systems, the only supported way of installing .NET Framework 3.5 in an offline mode, is by using the original installation media's _:::no-loc text="cab":::_ files. For more information, see [Microsoft .NET Framework 3.5 Deployment Considerations](/windows-hardware/manufacture/desktop/microsoft-net-framework-35-deployment-considerations?view=windows-10).
+Starting with Windows 10 and Windows Server 2016 operating systems, the only supported way of installing .NET Framework 3.5 in an offline mode is by using the original installation media's _:::no-loc text="cab":::_ files. For more information, see [Microsoft .NET Framework 3.5 Deployment Considerations](/windows-hardware/manufacture/desktop/microsoft-net-framework-35-deployment-considerations?view=windows-10).
 
 ## Troubleshoot the installation
 

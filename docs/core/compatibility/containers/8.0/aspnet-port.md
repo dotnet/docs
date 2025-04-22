@@ -82,7 +82,7 @@ The change to the port number was made because of the need to provide a good usa
 
 There are two ways to respond to this breaking change:
 
-- (Recommended action) Explicitly set the `ASPNETCORE_HTTP_PORTS`, `ASPNETCORE_HTTPS_PORTS`, and `ASPNETCORE_URLS` environment variables to the desired port. Example: `docker run --rm -it -p 8000:80 -e ASPNETCORE_HTTP_PORTS=80 <my-app>`
+- (Recommended action) [In addition to using the non-root `app` user](https://devblogs.microsoft.com/dotnet/securing-containers-with-rootless/), explicitly set the `ASPNETCORE_HTTP_PORTS`, `ASPNETCORE_HTTPS_PORTS`, and `ASPNETCORE_URLS` environment variables to the desired port. Example: `docker run --rm -it -p 8000:80 -e ASPNETCORE_HTTP_PORTS=80 <my-app>`
 - Update existing commands and configuration that rely on the expected default port of port 80 to reference port 8080 instead. Example: `docker run --rm -it -p 8000:8080 <my-app>`
 
 If your app was built using the older <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder?displayProperty=nameWithType> method, set `ASPNETCORE_URLS` (not `ASPNETCORE_HTTP_PORTS`). Example: `docker run --rm -it -p 8000:80 -e ASPNETCORE_URLS=http://*:80 <my-app>`.

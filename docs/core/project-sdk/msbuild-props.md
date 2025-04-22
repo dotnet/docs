@@ -679,8 +679,7 @@ The following MSBuild properties are documented in this section:
 - [OptimizeImplicitlyTriggeredBuild](#optimizeimplicitlytriggeredbuild)
 - [DisableRuntimeMarshalling](#disableruntimemarshalling)
 - [BuildWithNetFrameworkHostedCompiler](#buildwithnetframeworkhostedcompiler)
-- [RoslynUseSdkCompiler](#roslynusesdkcompiler)
-- [RoslynUseMSBuildCompiler](#roslynusemsbuildcompiler)
+- [RoslynCompilerType](#roslyncompilertype)
 
 C# compiler options, such as `LangVersion` and `Nullable`, can also be specified as MSBuild properties in your project file. For more information, see [C# compiler options](../../csharp/language-reference/compiler-options/index.md).
 
@@ -847,24 +846,17 @@ The `DisableRuntimeMarshalling` property enables you to specify that you would l
 
 ### BuildWithNetFrameworkHostedCompiler
 
-When using .NET Framework MSBuild, `BuildWithNetFrameworkHostedCompiler=true` ensures that
-a C#/VB compiler corresponding to the current SDK version is used
-instead of the default version that ships with MSBuild.
-When this property is set to `true`, the .NET Framework version of the compiler is used, unlike `RoslynUseSdkCompiler`.
-In some cases, this behavior happens automatically when it is detected that MSBuild and SDK versions are different,
-and then you can set `BuildWithNetFrameworkHostedCompiler=false` to opt out of the behavior.
+Specifying `BuildWithNetFrameworkHostedCompiler=true` is the equivalent of specifying `RoslynCompilerType=FrameworkPackage`. For more information, see [RoslynCompilerType](#roslyncompilertype).
+Specifying `BuildWithNetFrameworkHostedCompiler=false` ensures the automatic opt in to `RoslynCompilerType=FrameworkPackage` does not happen.
+If `RoslynCompilerType` is specified explicitly, `BuildWithNetFrameworkHostedCompiler` has no effect.
 
-### RoslynUseSdkCompiler
+### RoslynCompilerType
 
-When using .NET Framework MSBuild, `RoslynUseSdkCompiler=true` ensures that
-a C#/VB compiler corresponding to the current SDK version is used
-instead of the default version that ships with MSBuild.
-When this property is set to `true`, the .NET Core version of the compiler is used, unlike `BuildWithNetFrameworkHostedCompiler`.
-In most cases, `RoslynUseSdkCompiler=true` is the default setting.
+The `RoslynCompilerType` property controls the version of the C# or Visual Basic compiler. The following values are recognized:
 
-### RoslynUseMSBuildCompiler
-
-`RoslynUseMSBuildCompiler=true` can be used to opt out of an implicit `RoslynUseSdkCompiler=true`.
+- `Core`: Use the compiler that comes with the .NET SDK. This is the default since .NET 10, even when using .NET Framework MSBuild.
+- `Framework`: Use the compiler that comes with .NET Framework MSBuild.
+- `FrameworkPackage`: When using .NET Framework MSBuild, download and use a package with the .NET Framework compiler that corresponds to the .NET SDK version.
 
 ## Default item inclusion properties
 

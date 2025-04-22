@@ -207,7 +207,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-ZipPath|--zip-path <PATH>`**
 
- If set, the downloaded SDK archive is stored at the specified path.
+  If set, the downloaded SDK archive is stored at the specified path.
 
 - **`-Verbose|--verbose`**
 

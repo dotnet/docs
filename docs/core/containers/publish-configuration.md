@@ -2,7 +2,7 @@
 title: Containerize a .NET app reference
 description: Reference material for containerizing a .NET app and configuring the container image.
 ms.topic: reference
-ms.date: 01/27/2025
+ms.date: 04/22/2025
 ---
 
 # Containerize a .NET app reference
@@ -14,7 +14,7 @@ In this reference article, you learn how to configure the container image genera
 You can control many aspects of the generated container through MSBuild properties. In general, if you can use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
 
 > [!NOTE]
-> The only exceptions to this are `RUN` commands. Due to the way containers are built, those commands can't be emulated. If you need this functionality, you might consider using a _Dockerfile_ to build your container images.
+> The only exceptions to this are `RUN` commands. Due to the way containers are built, those commands can't be emulated. If you need this functionality, consider using a _Dockerfile_ to build your container images.
 
 There's no way of performing `RUN` commands with the .NET SDK. These commands are often used to install some OS packages or create a new OS user, or any number of arbitrary things. If you would like to keep using the .NET SDK container building feature, you can instead create a custom base image with these changes and then using this base image. For more information, see [`ContainerBaseImage`](#containerbaseimage).
 
@@ -119,7 +119,7 @@ To specify multiple container runtime identifiers for multi-architecture images,
 ```
 
 > [!IMPORTANT]
-> Setting multiple `ContainerRuntimeIdentifiers` results in a multi-architecture image being created. For more information, see [#multi-architecture-images](#multi-architecture-images).
+> Setting multiple `ContainerRuntimeIdentifiers` results in a multi-architecture image being created. For more information, see [Multi-architecture images](#multi-architecture-images).
 
 For more information regarding the runtime identifiers supported by .NET, see [RID catalog](../rid-catalog.md).
 

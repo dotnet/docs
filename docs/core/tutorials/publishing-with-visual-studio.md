@@ -2,9 +2,6 @@
 title: Publish a .NET console application using Visual Studio
 description: Learn how to use Visual Studio to create the set of files that are needed to run a .NET application.
 ms.date: 08/22/2023
-dev_langs:
-  - "csharp"
-  - "vb"
 ms.custom: "vs-dotnet"
 ---
 # Tutorial: Publish a .NET console application using Visual Studio

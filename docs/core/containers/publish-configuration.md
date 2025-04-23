@@ -2,19 +2,19 @@
 title: Containerize a .NET app reference
 description: Reference material for containerizing a .NET app and configuring the container image.
 ms.topic: reference
-ms.date: 01/27/2025
+ms.date: 04/22/2025
 ---
 
 # Containerize a .NET app reference
 
-In this reference article, you learn how to configure the container image that's generated when you publish a .NET app as a container. This article covers the various properties that you can set to control the image, the execution environment, and the commands that are run when the container starts.
+In this reference article, you learn how to configure the container image generated when you publish a .NET app as a container. This article covers the various properties that you can set to control the image, the execution environment, and the commands that are run when the container starts.
 
 ## Configure container image
 
 You can control many aspects of the generated container through MSBuild properties. In general, if you can use a command in a _Dockerfile_ to set some configuration, you can do the same via MSBuild.
 
 > [!NOTE]
-> The only exceptions to this are `RUN` commands. Due to the way containers are built, those can't be emulated. If you need this functionality, you might consider using a _Dockerfile_ to build your container images.
+> The only exceptions to this are `RUN` commands. Due to the way containers are built, those commands can't be emulated. If you need this functionality, consider using a _Dockerfile_ to build your container images.
 
 There's no way of performing `RUN` commands with the .NET SDK. These commands are often used to install some OS packages or create a new OS user, or any number of arbitrary things. If you would like to keep using the .NET SDK container building feature, you can instead create a custom base image with these changes and then using this base image. For more information, see [`ContainerBaseImage`](#containerbaseimage).
 
@@ -118,11 +118,16 @@ To specify multiple container runtime identifiers for multi-architecture images,
 </PropertyGroup>
 ```
 
+> [!IMPORTANT]
+> The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. If this condition isn't met, critical parts of the build pipeline may fail.
+>
+> Setting multiple `ContainerRuntimeIdentifiers` results in a multi-architecture image being created. For more information, see [Multi-architecture images](#multi-architecture-images).
+
 For more information regarding the runtime identifiers supported by .NET, see [RID catalog](../rid-catalog.md).
 
 ### `ContainerRegistry`
 
-The container registry property controls the destination registry, the place that the newly created image will be pushed to. By default it's pushed to the local Docker daemon, but you can also specify a remote registry. When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
+The container registry property controls the destination registry, the place that the newly created image is to be pushed to. By default it's pushed to the local Docker daemon, but you can also specify a remote registry. When using a remote registry that requires authentication, you authenticate using the well-known `docker login` mechanisms. For more information, See [authenticating to container registries](https://aka.ms/dotnet/containers/auth) for more details. For a concrete example of using this property, consider the following XML example:
 
 ```xml
 <PropertyGroup>
@@ -159,13 +164,13 @@ Image names consist of one or more slash-delimited segments, each of which can o
 The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`.
 
 > [!IMPORTANT]
-> When you use `ContainerImageTags`, you'll end up with multiple images, one per unique tag.
+> When you use `ContainerImageTags`, you end up with multiple images, one per unique tag.
 
 Tags are often used to refer to different versions of an app, but they can also refer to different operating system distributions, or even different configurations.
 
 Starting with .NET 8, when a tag isn't provided the default is `latest`.
 
-To override the default, specify either of the following:
+To override the default, specify either of the following properties:
 
 ```xml
 <PropertyGroup>
@@ -184,7 +189,7 @@ To specify multiple tags, use a semicolon-delimited set of tags in the `Containe
 Tags can only contain up to 127 alphanumeric characters, periods, underscores, and dashes. They must start with an alphanumeric character or an underscore. Any other form results in an error being thrown.
 
 > [!NOTE]
-> When using `ContainerImageTags` or any MSBuild property that needs to configure `;` delimited values. If you're calling `dotnet publish` from the command line (as is the case with most CI/CD environments), you need to understand the limitations of the environment's inability to disambiguate delimiters and quotations, thus requiring proper escaping. This differs between PowerShell and Bash. Consider the following `dotnet publish` commands in their respective environments:
+> When using `ContainerImageTags` or any MSBuild property requiring `;`-delimited values, ensure proper escaping when calling `dotnet publish` from the command line, especially in CI/CD environments. Escaping rules differ between PowerShell and Bash. For example:
 >
 > ```powershell
 > dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=`"1.2.3-alpha2`;latest`"
@@ -310,7 +315,7 @@ These different configuration points exist because different base images use dif
 
 - Identify the binary to run and set it as `ContainerAppCommand`
 - Identify which arguments are _required_ for your application to run and set them as `ContainerAppCommandArgs`
-- Identify which arguments (if any) are _optional_ and could be overridden by a user and set them as `ContainerDefaultArgs`
+- Identify which arguments (if any) are _optional_ and are able to be overridden by a user and set them as `ContainerDefaultArgs`
 - Set `ContainerAppCommandInstruction` to `DefaultArgs`
 
 For more information, see the following configuration items.
@@ -334,7 +339,7 @@ The `ContainerAppCommand` configuration has a single `Include` property, which r
 
 ### `ContainerAppCommandArgs`
 
-This app command args configuration item represents any logically required arguments for your app that should be applied to the `ContainerAppCommand`. By default, none are generated for an app. When present, the args are applied to your container when it's run.
+This app command args configuration item represents any logically required arguments for your app that should be applied to the `ContainerAppCommand`. By default, none are generated for an app. When present, the args are applied to your container when it runs.
 
 The `ContainerAppCommandArgs` configuration has a single `Include` property, which represents the option or argument to apply to the `ContainerAppCommand` command.
 
@@ -444,9 +449,25 @@ Where possible, existing MSBuild properties provide the values for these labels.
 | `org.opencontainers.image.licenses`                                                  |                                                                                                    | `ContainerLicenseExpression` | `PackageLicenseExpression` | `ContainerGenerateLabelsImageLicenses`      |                                                                                                                     |
 | `org.opencontainers.image.title`                                                     |                                                                                                    | `ContainerTitle`             | `Title`                    | `ContainerGenerateLabelsImageTitle`         |                                                                                                                     |
 | `org.opencontainers.image.base.name`                                                 |                                                                                                    | `ContainerBaseImage`         |                            | `ContainerGenerateLabelsImageBaseName`      |                                                                                                                     |
-| `org.opencontainers.image.base.digest`                                               |                                                                                                    |                              |                            | `ContainerGenerateLabelsImageBaseDigest`    | This will be the SHA digest of the chosen base image. Available from .NET SDK 9.0.100 onwards.                      |
+| `org.opencontainers.image.base.digest`                                               |                                                                                                    |                              |                            | `ContainerGenerateLabelsImageBaseDigest`    | This is the SHA digest of the chosen base image. Available from .NET SDK 9.0.100 onwards.                      |
 | `org.opencontainers.image.source`                                                    |                                                                                                    | `PrivateRepositoryUrl`       |                            | `ContainerGenerateLabelsImageSource`        | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
 | `org.opencontainers.image.revision`                                                  |                                                                                                    | `SourceRevisionId`           |                            | `ContainerGenerateLabelsImageRevision`      | Only written if `PublishRepositoryUrl` is `true`. Also relies on Sourcelink infrastructure being part of the build. |
+
+## Multi-architecture images
+
+Multi-architecture images enable a single container image to support multiple architectures, simplifying cross-platform development and deployment. The .NET SDK supports this through the `ContainerRuntimeIdentifiers` property.
+
+Beginning with SDK versions 8.0.405, 9.0.102, and 9.0.2xx, multi-RID container publishing is supported. When publishing with `/t:PublishContainer`:
+
+- If a single `RuntimeIdentifier` or `ContainerRuntimeIdentifier` is specified, a single-architecture container is generated as before.
+- If no single `RuntimeIdentifier` is specified but multiple `RuntimeIdentifiers` or `ContainerRuntimeIdentifiers` are set, the SDK publishes the app for each specified RID and combines the resulting images into an [OCI Image Index](https://specs.opencontainers.org/image-spec/image-index/). This index allows multiple architecture-specific images to share a single name.
+
+> [!NOTE]
+> The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. For more information, see [ContainerRuntimeIdentifiers](#containerruntimeidentifiers).
+
+This feature streamlines container workflows in mixed-architecture environments. For example, a developer on a `linux-x64` host can publish a container supporting both `linux-x64` and `linux-arm64`, enabling deployment to either architecture without changing image names or labels.
+
+The generated OCI Image Index is widely supported with modern container tooling, enhancing compatibility and ease of use.
 
 ## See also
 

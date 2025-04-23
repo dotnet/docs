@@ -98,6 +98,18 @@ The preceding project configuration results in a final tag of `8.0-alpine` for a
 
 This field is free-form, and often can be used to select different operating system distributions, default package configurations, or any other _flavor_ of changes to a base image. This field is ignored when `ContainerBaseImage` is set. For more information, see [.NET container images](../docker/container-images.md).
 
+### `ContainerPublishInParallel`
+
+For multi-RID containers, certain project types (like Blazor WebAssembly) may encounter build race conditions. To address this, starting with .NET SDK versions 8.0.408, 9.0.300, and 10.0, you can control the parallelism of the publish process using the `ContainerPublishInParallel` property. By default, publishing occurs in parallel for each Runtime Identifier (RID). Setting this property to `false` ensures sequential publishing, which increases stability but may take longer.
+
+```xml
+<PropertyGroup>
+  <ContainerPublishInParallel>false</ContainerPublishInParallel>
+</PropertyGroup>
+```
+
+For more information on multi-RID publishing, see [ContainerRuntimeIdentifier(s)](#containerruntimeidentifiers).
+
 ### `ContainerRuntimeIdentifier(s)`
 
 The `ContainerRuntimeIdentifier` property specifies the OS and architecture for your container if the `ContainerBaseImage` supports multiple platforms. For example, the `mcr.microsoft.com/dotnet/runtime` image supports `linux-x64`, `linux-arm`, `linux-arm64`, and `win10-x64`. By default, this is set to the `RuntimeIdentifier` used when publishing the container. Typically, you don't need to set this property explicitly; instead, use the `-r` option with the `dotnet publish` command. If the chosen image doesn't support the specified `RuntimeIdentifier`, an error indicates the supported identifiers.

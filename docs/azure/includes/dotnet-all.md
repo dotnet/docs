@@ -444,7 +444,7 @@
 | LUIS Authoring | NuGet [3.1.0](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring/3.1.0)<br>NuGet [3.2.0-preview.5](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring/3.2.0-preview.5) |  | GitHub [3.1.0](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.LUIS.Authoring_3.2.0-preview.3/sdk/cognitiveservices/Language.LUIS.Authoring) |
 | LUIS Runtime | NuGet [3.1.0-preview.1](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime/3.1.0-preview.1) |  | GitHub [3.1.0-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.CognitiveServices.Language.LUIS.Runtime_3.1.0-preview.1/sdk/cognitiveservices/Language.LUIS.Runtime) |
 | Media Live Video Analytics Edge | NuGet [1.0.4-preview.1](https://www.nuget.org/packages/Microsoft.Azure.Media.LiveVideoAnalytics.Edge/1.0.4-preview.1) |  | GitHub [1.0.4-preview.1](https://github.com/Azure/azure-sdk-for-net/tree/Microsoft.Azure.Media.LiveVideoAnalytics.Edge_1.0.4-preview.1/sdk/mediaservices/Microsoft.Azure.Media.LiveVideoAnalytics.Edge) |
-| Microsoft.Azure.Amqp | NuGet [2.6.9](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.6.9) |  |  |
+| Microsoft.Azure.Amqp | NuGet [2.6.11](https://www.nuget.org/packages/Microsoft.Azure.Amqp/2.6.11) |  |  |
 | Microsoft.Azure.Devices | NuGet [1.40.0](https://www.nuget.org/packages/Microsoft.Azure.Devices/1.40.0)<br>NuGet [2.0.0-preview007](https://www.nuget.org/packages/Microsoft.Azure.Devices/2.0.0-preview007) |  |  |
 | Microsoft.Azure.Devices.Authentication | NuGet [2.0.0-preview001](https://www.nuget.org/packages/Microsoft.Azure.Devices.Authentication/2.0.0-preview001) |  |  |
 | Microsoft.Azure.Devices.Client.PCL | NuGet [1.0.16](https://www.nuget.org/packages/Microsoft.Azure.Devices.Client.PCL/1.0.16) |  |  |
@@ -552,11 +552,11 @@
 | Microsoft.Azure.Functions.Worker.Extensions.ServiceBus | NuGet [5.22.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.ServiceBus/5.22.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.SignalRService | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.SignalRService/2.0.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Sql | NuGet [3.1.376](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Sql/3.1.376) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.6.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.6.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [6.6.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/6.6.1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.5.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.5.1) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage | NuGet [6.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage/6.7.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs | NuGet [6.7.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Blobs/6.7.0) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues | NuGet [5.5.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Queues/5.5.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables | NuGet [1.0.0-preview1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Storage.Tables/1.0.0-preview1) |  |  |
-| Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.4.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.4.2) |  |  |
+| Microsoft.Azure.Functions.Worker.Extensions.Tables | NuGet [1.4.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Tables/1.4.3) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Timer | NuGet [4.3.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Timer/4.3.1) |  |  |
 | Microsoft.Azure.Functions.Worker.Extensions.Warmup | NuGet [4.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Warmup/4.0.2) |  |  |
 | Microsoft.Azure.Functions.Worker.Grpc | NuGet [2.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Grpc/2.0.0) |  |  |

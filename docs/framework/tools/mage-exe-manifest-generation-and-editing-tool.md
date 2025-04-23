@@ -73,6 +73,7 @@ The following table shows the options supported by the `-Sign` command, which ap
 
 | Options | Description |
 |---------|-------------|
+|**-a, -Algorithm**|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA".|
 |**-cf, -CertFile** `filePath`|Specifies The location of a digital certificate for signing a manifest. This option can be used in conjunction with the **-Password** option if the certificate requires a password for Personal Information Exchange (PFX) files. Starting with .NET Framework 4.7, if the file does not contain a private key, a combination of the **-CryptoProvider** and **-KeyContainer** options is required.<br/><br/>Starting with .NET Framework 4.6.2, *Mage.exe* signs manifests with CNG as well as CAPI certificates.|
 |**-ch, -CertHash** `hashSignature`|The hash of a digital certificate stored in the personal certificate store of the client computer. This corresponds to the Thumbprint property of a digital certificate viewed in the Windows Certificates Console.<br /><br /> `hashSignature` can be either uppercase or lowercase, and can be supplied either as a single string or with each octet of the Thumbprint separated by spaces and the entire Thumbprint enclosed in quotation marks.|
 |**-csp, -CryptoProvider** `provider-name`|Specifies the name of a cryptographic service provider (CSP) that contains the private key container. This option requires the **-KeyContainer** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
@@ -80,7 +81,6 @@ The following table shows the options supported by the `-Sign` command, which ap
 |**-pwd, -Password** `passwd`|The password that is used for signing a manifest with a digital certificate. Must be used in conjunction with the **-CertFile** option.|
 |**-ti, -TimestampUri** `uri`|The URL of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests should your digital certificate expire before you deploy the next version of your application.|
 |**-t, -ToFile** `filePath`|Specifies the output path of the file that has been created or modified.|
-|**-a, -Algorithm**|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA.|
 
 ## Remarks
 

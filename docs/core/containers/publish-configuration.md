@@ -445,6 +445,9 @@ Beginning with SDK versions 8.0.405, 9.0.102, and 9.0.2xx, multi-RID container p
 - If a single `RuntimeIdentifier` or `ContainerRuntimeIdentifier` is specified, a single-architecture container is generated as before.
 - If no single `RuntimeIdentifier` is specified but multiple `RuntimeIdentifiers` or `ContainerRuntimeIdentifiers` are set, the SDK publishes the app for each specified RID and combines the resulting images into an [OCI Image Index](https://specs.opencontainers.org/image-spec/image-index/). This index allows multiple architecture-specific images to share a single name.
 
+> [!NOTE]
+> The `ContainerRuntimeIdentifiers` property must be a subset of the `RuntimeIdentifiers` property. For more information, see [ContainerRuntimeIdentifiers](#containerruntimeidentifiers).
+
 This feature streamlines container workflows in mixed-architecture environments. For example, a developer on a `linux-x64` host can publish a container supporting both `linux-x64` and `linux-arm64`, enabling deployment to either architecture without changing image names or labels.
 
 The generated OCI Image Index is widely supported with modern container tooling, enhancing compatibility and ease of use.

@@ -56,7 +56,7 @@ The above RID specifies that `osx-x64` imports `unix-x64`. So, when NuGet restor
 The following example shows a slightly bigger RID graph also defined in the *runtime.json*  file:
 
 ```
-    linux-arm64     linux-arm32
+    linux-arm64     linux-x64
          |     \   /     |
          |     linux     |
          |       |       |

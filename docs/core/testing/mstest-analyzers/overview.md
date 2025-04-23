@@ -49,14 +49,14 @@ This setting follows the default documented behavior for each rule.
 
 ### `Recommended`
 
-This is the mode we expect most developers to use. Rules that are enabled by default with Info (`suggestion`) severity are escalated to warnings. The following rules are escalated to errors in both `Recommended` and `All` modes.:
+This is the mode most developers are expected to use. Rules that are enabled by default with Info (`suggestion`) severity are escalated to warnings. The following rules are escalated to errors in both `Recommended` and `All` modes:
 
 - [MSTEST0003: Test methods should have valid layout](mstest0003.md).
 - [MSTEST0043: Use retry attribute on test method](mstest0043.md).
 
 ### `All`
 
-This mode is more aggressive than `Recommended`. All rules are enabled as warnings. As mentioned for `Recommended` mode. The following rules are escalated to errors in `Reommended` and `All` modes:
+This mode is more aggressive than `Recommended`. All rules are enabled as warnings. In addition, the following rules are escalated to errors:
 
 - [MSTEST0003: Test methods should have valid layout](mstest0003.md).
 - [MSTEST0043: Use retry attribute on test method](mstest0043.md).

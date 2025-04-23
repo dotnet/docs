@@ -26,7 +26,7 @@ ms.author: ygerges
 
 ## Cause
 
-A test method has two or more [DataRow](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute>) attributes which are equivalent.
+A test method has two or more [DataRow](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute) attributes that are equivalent.
 
 ## Rule description
 
@@ -38,4 +38,4 @@ Either remove the duplicate `DataRow` attribute, or fix it to make unique.
 
 ## When to suppress warnings
 
-Do not suppress a warning from this rule.
+Do not suppress a warning from this rule, unless you intended to use the same input more than once.

@@ -12,9 +12,9 @@ helpviewer_keywords:
 
 Extension members enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type.
 
-<< Introduce both types. >>
+Beginning with C# 14, there are two syntaxes you use to define extension methods. C# 14 adds [`extension`](../../language-reference/keywords/extension.md) containers, where you define multiple extension members for a type or an instance of a type. Before C# 14, you add the [`this`](../../language-reference/keywords/this.md) modifier to the first parameter of a static method to indicate that the method appears as a member of an instance of the parameter type.
 
-<< Add Extension member lowering here>>. Extension methods are static methods, but they're called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there's no apparent difference between calling an extension method and the methods defined in a type.
+Extension methods are static methods, but they're called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there's no apparent difference between calling an extension method and the methods defined in a type. Both forms of extension methods are compiled to the same IL (Intermediate Language). Consumers of extension members don't need to know which syntax was used to define extension methods.
 
 The most common extension members are the LINQ standard query operators that add query functionality to the existing <xref:System.Collections.IEnumerable?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> types. To use the standard query operators, first bring them into scope with a `using System.Linq` directive. Then any type that implements <xref:System.Collections.Generic.IEnumerable%601> appears to have instance methods such as <xref:System.Linq.Enumerable.GroupBy%2A>, <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. You can see these extra methods in IntelliSense statement completion when you type "dot" after an instance of an <xref:System.Collections.Generic.IEnumerable%601> type such as <xref:System.Collections.Generic.List%601> or <xref:System.Array>.
 
@@ -134,13 +134,13 @@ For more information on derived types, see [Inheritance](../../fundamentals/obje
 If you do implement extension methods for a given type, remember the following points:
 
 - An extension method isn't called if it has the same signature as a method defined in the type.
-- Extension methods are brought into scope at the namespace level. For example, if you have multiple static classes that contain extension methods in a single namespace named `Extensions`, they'll all be brought into scope by the `using Extensions;` directive.
+- Extension methods are brought into scope at the namespace level. For example, if you have multiple static classes that contain extension methods in a single namespace named `Extensions`, all of them are brought into scope by the `using Extensions;` directive.
 
 For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, follow the .NET guidelines for assembly versioning. For more information, see [Assembly Versioning](../../../standard/assembly/versioning.md).
 
 ## See also
 
-- [Parallel Programming Samples (these include many example extension methods)](/samples/browse/?products=dotnet&term=parallel)
+- [Parallel Programming Samples (many examples demonstrate extension methods)](/samples/browse/?products=dotnet&term=parallel)
 - [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
 - [Standard Query Operators Overview](../../linq/standard-query-operators/index.md)
 - [Conversion rules for Instance parameters and their impact](/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)

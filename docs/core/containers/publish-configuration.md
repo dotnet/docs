@@ -283,6 +283,23 @@ For more information, see [.NET environment variables](../tools/dotnet-environme
 > [!NOTE]
 > It's currently not possible to set environment variables from the .NET CLI when publishing a container image. For more information, see [GitHub: .NET SDK container builds](https://github.com/dotnet/sdk-container-builds/issues/451).
 
+### `LocalRegistry`
+
+The `LocalRegistry` MSBuild property specifies the local container tooling to use when pushing to local sources. Supported values are `docker` and `podman`. If not set, the SDK determines the tool based on availability:
+
+- If both `docker` and `podman` exist, and `docker` is an alias for `podman`, then `podman` is used.
+- If only `docker` exists, `docker` is used.
+- If only `podman` exists, `podman` is used.
+- If neither exists, an error is thrown.
+
+To explicitly set the local registry tool, use the following configuration:
+
+```xml
+<PropertyGroup>
+  <LocalRegistry>podman</LocalRegistry>
+</PropertyGroup>
+```
+
 ## Configure container commands
 
 By default, the container tools launch your app using either the generated AppHost binary for your app (if your app uses an AppHost), or the `dotnet` command plus your app's DLL.

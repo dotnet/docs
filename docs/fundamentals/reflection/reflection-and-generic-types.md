@@ -5,7 +5,6 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "generics [.NET], reflection emit"
   - "reflection emit, generic types"
@@ -16,7 +15,6 @@ helpviewer_keywords:
   - "type information, viewing"
   - "types, generic"
   - "type parameters"
-ms.assetid: f7180fc5-dd41-42d4-8a8e-1b34288e06de
 ---
 # Reflection and generic types
 
@@ -86,11 +84,6 @@ End Class
 Class D(Of V, W)
     Inherits B(Of Integer, V)
 End Class
-```
-
-```cpp
-generic<typename T, typename U> ref class B {};
-generic<typename V, typename W> ref class D : B<int, V> {};
 ```
 
 If you obtain a <xref:System.Type> object representing `D<V, W>` and use the <xref:System.Type.BaseType%2A> property to obtain its base type, the resulting `type B<int, V>` is open, but it's not a generic type definition.

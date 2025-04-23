@@ -6,12 +6,10 @@ ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "events [.NET], raising"
   - "raising events"
   - "events [.NET], samples"
-ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
 ---
 # How to: Raise and Consume Events
 
@@ -29,8 +27,6 @@ The examples use concepts described in the [Events](index.md) article.
 ## Example 2
 
  The second example shows how to raise and consume an event that provides data. The <xref:System.EventHandler%601> delegate is associated with the event, and an instance of a custom event data object is provided.
-
- [!code-cpp[EventsOverview#6](../../../samples/snippets/cpp/VS_Snippets_CLR/eventsoverview/cpp/programwithdata.cpp#6)]
  [!code-csharp[EventsOverview#6](../../../samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programwithdata.cs#6)]
  [!code-vb[EventsOverview#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1withdata.vb#6)]
 

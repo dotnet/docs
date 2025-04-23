@@ -171,7 +171,22 @@ The container repository is the name of the image itself, for example, `dotnet/r
 
 Image names consist of one or more slash-delimited segments, each of which can only contain lowercase alphanumeric characters, periods, underscores, and dashes, and must start with a letter or number. Any other characters result in an error being thrown.
 
-### `ContainerImageTag(s)`
+### `ContainerImageFormat`
+
+Starting with .NET 8.0.405, you can use the `ContainerImageFormat` MSBuild property to specify the image format as either `Docker` or `OCI`. By default, the .NET tooling infers the format from the base image. For example, .NET base images use the Docker-specific format `application/vnd.docker.distribution.manifest.v2+json`. However, many modern tools prefer the OCI format `application/vnd.oci.image.manifest.v1+json`. To force a specific format, set the property as shown:
+
+```xml
+<PropertyGroup>
+  <ContainerImageFormat>OCI</ContainerImageFormat>
+</PropertyGroup>
+```
+
+Both formats are largely interchangeable without loss of information.
+
+> [!NOTE]
+> When building a multi-architecture image, the resulting image format is always OCI.
+
+### `ContainerImageTag`
 
 The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`.
 

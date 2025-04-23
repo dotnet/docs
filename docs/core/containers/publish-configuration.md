@@ -100,7 +100,7 @@ This field is free-form, and often can be used to select different operating sys
 
 ### `ContainerPublishInParallel`
 
-For multi-RID containers, certain project types (like Blazor and WebAssembly) may encounter build race conditions. To address this, starting with .NET SDK versions 8.0.408, 9.0.300, and 10.0, you can control the parallelism of the publish process using the `ContainerPublishInParallel` property. By default, publishing occurs in parallel for each Runtime Identifier (RID). Setting this property to `false` ensures sequential publishing, which increases stability but may take longer.
+For multi-RID containers, certain project types (like Blazor WebAssembly) may encounter build race conditions. To address this, starting with .NET SDK versions 8.0.408, 9.0.300, and 10.0, you can control the parallelism of the publish process using the `ContainerPublishInParallel` property. By default, publishing occurs in parallel for each Runtime Identifier (RID). Setting this property to `false` ensures sequential publishing, which increases stability but may take longer.
 
 ```xml
 <PropertyGroup>

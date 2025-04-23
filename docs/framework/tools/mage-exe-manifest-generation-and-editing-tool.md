@@ -42,7 +42,7 @@ The following table shows the options supported by the `-New` and `-Update` comm
 
 |Options|Default Value|Applies To|Description|
 |-------------|-------------------|----------------|-----------------|
-|**-a, -Algorithm**|sha1RSA|Application manifests.<br /><br /> Deployment manifests.|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA.<br /><br /> Use with the "-Update" option.|
+|**-a, -Algorithm**|sha1RSA|Application manifests.<br /><br /> Deployment manifests.|Specifies the algorithm to generate dependency digests with. Value must be "sha256RSA" or "sha1RSA".<br /><br /> Use with the "-Update" option.|
 |**-appc, -AppCodeBase** `manifestReference`||Deployment manifests.|Inserts a URL or file path reference to the application manifest file. This value must be the full path to the application manifest.|
 |**-appm, -AppManifest** `manifestPath`||Deployment manifests.|Inserts a reference to a deployment's application manifest into its deployment manifest.<br /><br /> The file indicated by `manifestPath` must exist, or *Mage.exe* will issue an error. If the file referenced by `manifestPath` is not an application manifest, *Mage.exe* will issue an error.|
 |**-cf, -CertFile** `filePath`||All file types.|Specifies the location of an X509 digital certificate for signing a manifest or license file. This option can be used in conjunction with the **-Password** option if the certificate requires a password for Personal Information Exchange (PFX) files. Starting with .NET Framework 4.7, if the file does not contain a private key, a combination of the **-CryptoProvider** and **-KeyContainer** options is required.<br/><br/>Starting with .NET Framework 4.6.2, *Mage.exe* signs manifests with CNG as well as CAPI certificates.|
@@ -79,7 +79,7 @@ The following table shows the options supported by the `-Sign` command, which ap
 |**-csp, -CryptoProvider** `provider-name`|Specifies the name of a cryptographic service provider (CSP) that contains the private key container. This option requires the **-KeyContainer** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-kc, -KeyContainer** `name`|Specifies the key container that contains the name of the private key. This option requires the **CryptoProvider** option.<br/><br/>This option is available starting with .NET Framework 4.7.|
 |**-pwd, -Password** `passwd`|The password that is used for signing a manifest with a digital certificate. Must be used in conjunction with the **-CertFile** option.|
-|**-ti, -TimestampUri** `uri`|The URL of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests should your digital certificate expire before you deploy the next version of your application.|
+|**-ti, -TimestampUri** `uri`|The URL of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests if your digital certificate expires before you deploy the next version of your application.|
 |**-t, -ToFile** `filePath`|Specifies the output path of the file that has been created or modified.|
 
 ## Remarks

@@ -166,6 +166,9 @@ Starting with .NET 8.0.405, you can use the `ContainerImageFormat` MSBuild prope
 
 Both formats are largely interchangeable without loss of information.
 
+> [!NOTE]
+> When building a multi-architecture image, the resulting image format is always OCI.
+
 ### `ContainerImageTag`
 
 The container image tag property controls the tags that are generated for the image. To specify a single tag use `ContainerImageTag` and for multiple tags use `ContainerImageTags`.

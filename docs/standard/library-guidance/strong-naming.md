@@ -49,7 +49,7 @@ You should strong name your open-source .NET libraries if their targets include 
 >
 > You shouldn't make the strong naming key pair public if it has been used in the past to give special permissions in [partial-trust scenarios](/previous-versions/dotnet/framework/code-access-security/using-libraries-from-partially-trusted-code). Otherwise, you might compromise existing environments.
 >
-> If you cannot check in the public+private key pair, then check in the public key, and use [public signing](https://github.com/dotnet/runtime/blob/main/docs/project/public-signing.md) for regular builds.  Public signing will still allow developers to recompile and use your library in most scenarios.
+> If you cannot check in the public+private key pair, then check in the public key, and use [public signing](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/security#publicsign) for regular builds.  Public signing will still allow developers to recompile and use your library in most scenarios.
 
 > [!IMPORTANT]
 > When the identity of the publisher of the code is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Code Access Security (CAS) should not be used as a security mitigation.

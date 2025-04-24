@@ -6,9 +6,7 @@ ms.topic: how-to
 helpviewer_keywords:
   - "reflection, obtaining member information"
   - "types [.NET], obtaining member information from"
-ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
 dev_langs:
-  - "cpp"
   - "csharp"
   - "vb"
 ---
@@ -20,7 +18,6 @@ The <xref:System.Reflection> namespace contains many methods for obtaining infor
 
 The following example obtains type and member information by using reflection:
 
-[!code-cpp[Get type members](../../../samples/snippets/standard/reflection/memberinfo/gettypemembers.cpp)]
 [!code-csharp[Get type members](../../../samples/snippets/standard/reflection/memberinfo/gettypemembers.cs)]
 [!code-vb[Get type members](../../../samples/snippets/standard/reflection/memberinfo/gettypemembers.vb)]
 

@@ -95,3 +95,15 @@ landingContent:
             url: get-started-app-chat-template.md
           - text: Develop AI agents using Azure OpenAI
             url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
+
+  # Card (Optional; Remove if not applicable.)
+  - title: API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ChatClientBuilder
+            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+          - text: IChatClient
+            url: /dotnet/api/microsoft.extensions.ai.ichatclient
+          - text: IEmbeddingGenerator
+            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator

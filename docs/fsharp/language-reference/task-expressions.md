@@ -68,7 +68,6 @@ let makeTask() =
 makeTask() |> ValueTask<int>
 ```
 
-
 ## `and!` bindings (starting from F# 10)
 
 Within task expressions, it is possible to concurrently await for multiple asynchronous operations (`Task<'T>`, `ValueTask<'T>`, `Async<'T>` etc). Compare:

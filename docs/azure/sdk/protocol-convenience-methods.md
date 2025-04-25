@@ -3,7 +3,7 @@ title: Understand Azure SDK client library method types
 description: Learn about the key differences between protocol and convenience methods in the Azure SDK client libraries for .NET.
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
-ms.date: 08/30/2024
+ms.date: 04/25/2025
 ---
 
 # Azure SDK for .NET protocol and convenience methods overview

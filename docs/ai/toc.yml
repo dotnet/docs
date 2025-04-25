@@ -85,5 +85,13 @@ items:
     href: tutorials/llm-eval.md
 - name: Resources
   items:
+  - name: API reference
+    items:
+    - name: ChatClientBuilder
+      href: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+    - name: IChatClient
+      href: /dotnet/api/microsoft.extensions.ai.ichatclient
+    - name: IEmbeddingGenerator
+      href: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
   - name: Azure AI samples and docs
     href: azure-ai-for-dotnet-developers.md

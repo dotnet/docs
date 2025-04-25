@@ -2,14 +2,14 @@
 title: What's new in .NET libraries for .NET 10
 description: Learn about the new .NET libraries features introduced in .NET 10.
 titleSuffix: ""
-ms.date: 03/18/2025
+ms.date: 04/09/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in .NET libraries for .NET 10
 
-This article describes new features in the .NET libraries for .NET 10. It's updated for Preview 2.
+This article describes new features in the .NET libraries for .NET 10. It's updated for Preview 3.
 
 ## Find certificates by thumbprints other than SHA-1
 
@@ -133,7 +133,7 @@ When you use source generators for JSON serialization, the generated context thr
 
 ## More left-handed matrix transformation methods
 
-.NET 10 adds the remaining APIs for creating left-handed transformation matrices for billboard and constrained-billboard matrices. You can use these methods like their existing right-handed counterparts [add xrefs to the existing counterparts] when using a left-handed coordinate system instead.
+.NET 10 adds the remaining APIs for creating left-handed transformation matrices for billboard and constrained-billboard matrices. You can use these methods like their existing right-handed counterparts <xref:System.Numerics.Matrix4x4.CreateBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)> and <xref:System.Numerics.Matrix4x4.CreateConstrainedBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)> when using a left-handed coordinate system instead.
 
 ```csharp
 public partial struct Matrix4x4
@@ -150,3 +150,68 @@ The new `ExportPkcs12` <!--TODO: add xref --> methods on <xref:System.Security.C
 which produces an output supported by almost every library/platform that supports reading PKCS#12/PFX by choosing an older encryption algorithm. `Pkcs12ExportPbeParameters.Pbes2Aes256Sha256` <!--TODO: add xref --> indicates that AES should be used instead of 3DES (and SHA-2-256 instead of SHA-1), but the output may not be understood by all readers (such as Windows XP).
 
 Callers who want even more control can instead utilize the overload that accepts a <xref:System.Security.Cryptography.PbeParameters>.
+
+## New AOT-safe constructor for `ValidationContext`
+
+The <xref:System.ComponentModel.DataAnnotations.ValidationContext> class, used during options validation, now includes a new constructor that explicitly accepts the `displayName` parameter. This ensures AOT safety, allowing its use in native builds without warnings:
+
+```csharp
+public sealed class ValidationContext
+{
+    public ValidationContext(object instance,
+        string displayName, 
+        IServiceProvider? serviceProvider = null, 
+        IDictionary<object, object?>? items = null);
+}
+```
+
+## Support for telemetry schema URLs in `ActivitySource` and `Meter`
+
+<xref:System.Diagnostics.ActivitySource> and <xref:System.Diagnostics.Metrics.Meter> now support specifying a telemetry schema URL during construction, aligning with OpenTelemetry specifications. This ensures consistency and compatibility for tracing and metrics data. Additionally, the update introduces `ActivitySourceOptions`, simplifying the creation of <xref:System.Diagnostics.ActivitySource> instances with multiple configuration options.
+
+```csharp
+public sealed partial class ActivitySource
+{
+    public ActivitySource(ActivitySourceOptions options);
+    public string? TelemetrySchemaUrl { get; }
+}
+
+public class ActivitySourceOptions
+{
+    public ActivitySourceOptions(string name);
+    public string Name { get; set; }
+    public string? Version { get; set; }
+    public IEnumerable<KeyValuePair<string, object?>>? Tags { get; set; }
+    public string? TelemetrySchemaUrl { get; set; }
+}
+
+public partial class Meter : IDisposable
+{
+    public string? TelemetrySchemaUrl { get; }
+}
+```
+
+## Byte-level support in BPE tokenizer
+
+The <xref:Microsoft.ML.Tokenizers.BpeTokenizer> now supports byte-level encoding, enabling compatibility with models like DeepSeek. This enhancement processes vocabulary as UTF-8 bytes. In addition, the new `BpeOptions` type simplifies tokenizer configuration.
+
+```csharp
+BpeOptions bpeOptions = new BpeOptions(vocabs);
+BpeTokenizer tokenizer = BpeTokenizer.Create(bpeOptions);
+```
+
+## Deterministic option for LightGBM trainer in ML.NET
+
+LightGBM trainers now expose options for deterministic training, ensuring consistent results with the same data and random seed. These options include `deterministic`, `force_row_wise`, and `force_col_wise`.
+
+```csharp
+LightGbmBinaryTrainer trainer = ML.BinaryClassification.Trainers.LightGbm(new LightGbmBinaryTrainer.Options
+{
+    Deterministic = true,
+    ForceRowWise = true
+});
+```
+
+## Tensor enhancements
+
+The <xref:System.Numerics.Tensors.Tensor> class now includes a nongeneric interface for operations like accessing `Lengths` and `Strides`. Slice operations no longer copy data, improving performance. Additionally, data can be accessed nongenerically by boxing to `object` when performance isn't critical.

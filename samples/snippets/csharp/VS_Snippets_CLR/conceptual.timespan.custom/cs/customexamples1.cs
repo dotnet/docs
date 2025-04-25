@@ -64,8 +64,8 @@ public class Example
       for (int ctr = 2; ctr <= 8; ctr++)
       {
          string fmt = new String('d', ctr) + @"\.hh\:mm\:ss";
-         Console.WriteLine($"{fmt} --> {ts1:" + fmt + "}");
-         Console.WriteLine($"{fmt} --> {ts2:" + fmt + "}");
+         Console.WriteLine($"{fmt} --> {ts1.ToString(fmt)}");
+         Console.WriteLine($"{fmt} --> {ts2.ToString(fmt)}");
          Console.WriteLine();
       }
       // The example displays the following output:

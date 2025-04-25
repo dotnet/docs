@@ -21,7 +21,10 @@
 # This should make it easy to add new rules without breaking existing ones.
 
 ######## API landing page ###########
-/api/ @dotnet/docs
+/api/ @gewarren @dotnet/docs
+
+######## Includes files ###########
+/includes/ @dotnet/docs
 
 ############ What's new ###############
 /docs/whats-new/ @billwagner @dotnet/docs
@@ -29,6 +32,9 @@
 ############ Guides ################
 # .NET Core
 /docs/core/ @dotnet/docs
+
+# .NET fundamentals
+/docs/fundamentals/ @dotnet/docs
 
 # .NET Framework
 /docs/framework/ @dotnet/docs
@@ -53,6 +59,13 @@
 
 # .NET Orleans
 /docs/orleans/ @IEvangelist @dotnet/docs
+
+# IoT Guide
+/docs/iot/ @CamSoper @dotnet/docs
+
+############### AI ################
+
+/docs/ai/ @gewarren @alexwolfmsft @dotnet/docs
 
 ############### Azure ################
 
@@ -80,32 +93,26 @@
 /docs/azure/sdk/thread-safety.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @CamSoper @scottaddie @dotnet/docs
 /docs/azure/sdk/unit-testing-mocking.md @annelo-msft @christothes @JoshLove-msft @KrzysztofCwalina @jsquire @alexwolfmsft @CamSoper @scottaddie @dotnet/docs
 
-# IoT Guide
-/docs/iot/ @CamSoper @dotnet/docs
-
-# Includes files
-/includes/ @dotnet/docs
-
-############### .NET 5 ################
+############### Fundamentals ################
 
 # Code analysis
 /docs/fundamentals/code-analysis/ @gewarren @dotnet/docs
 
 ############### .NET Core ########################
-# What's New
-/docs/core/whats-new/ @camsoper @dotnet/docs
+# Breaking changes
+/docs/core/compatibility/ @camsoper @dotnet/docs
+# Containers
+/docs/core/containers/ @camsoper @dotnet/docs
 # Deployment
 /docs/core/deploying/ @adegeo @dotnet/docs
 # Diagnostics
 /docs/core/diagnostics/ @tommcdon @dotnet/docs
-# Extensions
-/docs/core/extensions/ @IEvangelist @dotnet/docs
 # Docker
 /docs/core/docker/ @IEvangelist @dotnet/docs
+# Extensions
+/docs/core/extensions/ @IEvangelist @dotnet/docs
 # Install
 /docs/core/install/ @adegeo @dotnet/docs
-# Breaking changes
-/docs/core/compatibility/ @camsoper @dotnet/docs
 # Project SDKs
 /docs/core/project-sdk/ @gewarren @dotnet/docs
 # Config settings
@@ -116,6 +123,8 @@
 /docs/core/tools/ @tdykstra @dotnet/docs
 # Tutorials
 /docs/core/tutorials/ @tdykstra @dotnet/docs
+# What's new
+/docs/core/whats-new/ @camsoper @dotnet/docs
 
 ################### .NET Framework ##################
 # App domains
@@ -222,6 +231,7 @@
 
 ## These have been pulled directly from the samples repo:
 
+# C# snippets:
 /samples/snippets/csharp/ @BillWagner @IEvangelist @dotnet/docs
 # Visual Basic snippets:
 /samples/snippets/visualbasic/ @BillWagner @dotnet/docs

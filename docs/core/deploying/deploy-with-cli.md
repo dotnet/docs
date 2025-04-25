@@ -35,7 +35,7 @@ The `<TargetFramework>` setting of the project file specifies the default target
 
 If you want to target more than one framework, you can set the `<TargetFrameworks>` setting to multiple TFM values, separated by a semicolon. When you build your app, a build is produced for each target framework. However, when you publish your app, you must specify the target framework with the `dotnet publish -f <TFM>` command.
 
-The default **BUILD-CONFIGURATION** mode is **Debug** unless changed with the `-c` parameter.
+The default **BUILD-CONFIGURATION** mode is **Release** unless changed with the `-c` parameter.
 
 The default output directory of the [`dotnet publish`](../tools/dotnet-publish.md) command is `./bin/<BUILD-CONFIGURATION>/<TFM>/publish/`. For example, `dotnet publish -c Release -f net9.0` publishes to `./bin/Release/net9.0/publish/`. However, you can opt in to a simplified output path and folder structure for all build outputs. For more information, see [Artifacts output layout](../sdk/artifacts-output.md).
 

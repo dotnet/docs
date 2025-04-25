@@ -123,6 +123,11 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [-n|--name] [--type] [-o|--out
 > [!NOTE]
 > To collect a dump using `dotnet-dump`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.
 
+> [!NOTE]
+> Collecting a full or heap dump may cause the OS to page in substantial virtual memory for the target process. If the target process is running in a container with an enforced memory limit, the increased memory usage
+> may cause the OS to terminate the container if the limit was exceeded. We recommend testing to ensure the memory limit is set high enough. Another option is to temporarily change or remove the limit
+> prior to dump collection if your environment supports doing so.
+
 ## dotnet-dump analyze
 
 Starts an interactive shell to explore a dump. The shell accepts various [SOS commands](#analyze-sos-commands).

@@ -2,16 +2,14 @@
 title: "How to: Use the Try-Catch Block to Catch Exceptions"
 description: Use the try block to contain statements that might raise or throw an exception. Place statements to handle exceptions in one or more catch blocks.
 ms.date: "02/06/2019"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "exceptions, try/catch blocks"
   - "try blocks"
   - "try/catch blocks"
   - "catch blocks"
-ms.assetid: a3ce6dfd-1f64-471b-8ad8-8cfaf406275d
 ---
 # How to use the try/catch block to catch exceptions
 
@@ -19,7 +17,6 @@ Place any code statements that might raise or throw an exception in a `try` bloc
 
 In the following example, a <xref:System.IO.StreamReader> opens a file called *data.txt* and retrieves a line from the file. Since the code might throw any of three exceptions, it's placed in a `try` block. Three `catch` blocks catch the exceptions and handle them by displaying the results to the console.
 
-:::code language="cpp" source="./snippets/how-to-use-the-try-catch-block-to-catch-exceptions/cpp/catchexception.cpp" id="Snippet3":::
 :::code language="csharp" source="./snippets/how-to-use-the-try-catch-block-to-catch-exceptions/csharp/catchexception.cs" id="Snippet3":::
 :::code language="vb" source="./snippets/how-to-use-the-try-catch-block-to-catch-exceptions/vb/catchexception.vb" id="Snippet3":::
 

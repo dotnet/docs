@@ -10,7 +10,7 @@ ms.author: alexwolf
 
 # Unified AI building blocks for .NET using Microsoft.Extensions.AI
 
-The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the <xref:Microsoft.Extensions.AI> libraries. The .NET team has also enhanced the core `Microsoft.Extensions` libraries with these abstractions for use in generative AI .NET applications and libraries. In the sections ahead, you learn:
+The .NET ecosystem provides abstractions for integrating AI services into .NET applications and libraries using the <xref:Microsoft.Extensions.AI> libraries. In this article, you learn:
 
 - Core concepts and capabilities of the `Microsoft.Extensions.AI` libraries.
 - How to work with AI abstractions in your apps and the benefits they offer.

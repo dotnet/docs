@@ -1,17 +1,17 @@
 ---
-title: Overview of the .NET + AI ecosystem
+title: .NET + AI ecosystem tools and SDKs
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
 ms.date: 11/24/2024
 ms.topic: overview
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
-# Overview of the .NET + AI ecosystem
+# .NET + AI ecosystem tools and SDKs
 
 The .NET ecosystem provides many powerful tools, libraries, and services to develop AI applications. .NET supports both cloud and local AI model connections, many different SDKs for various AI and vector database services, and other tools to help you build intelligent apps of varying scope and complexity.
 
 > [!IMPORTANT]
-> Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support, and compatibility to ensure they meet your requirements.
+> Not all of the SDKs and services presented in this article are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support, and compatibility to ensure they meet your requirements.
 
 ## Microsoft.Extensions.AI libraries
 

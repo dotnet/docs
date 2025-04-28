@@ -4,7 +4,6 @@ description: Learn how to use the Microsoft.Extensions.AI libraries to integrate
 author: IEvangelist
 ms.author: dapine
 ms.date: 01/06/2025
-ms.collection: ce-skilling-ai-copilot
 ---
 
 # Artificial intelligence in .NET (Preview)

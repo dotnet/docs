@@ -24,14 +24,14 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Develop .NET applications
-            url: get-started/dotnet-ai-overview.md
-          - text: Learning resources and samples
-            url: azure-ai-for-dotnet-developers.md
-          - text: Build an Azure AI chat app with .NET
+            url: dotnet-ai-overview.md
+          - text: Connect to and prompt an AI model
+            url: quickstarts/prompt-model.md
+          - text: Build an Azure AI chat app
             url: quickstarts/get-started-openai.md
           - text: Summarize text using an Azure OpenAI chat app
             url: quickstarts/quickstart-openai-summarize-text.md
-          - text: Generate images using Azure AI with .NET
+          - text: Generate images using Azure AI
             url: quickstarts/quickstart-openai-generate-images.md
 
   # Card

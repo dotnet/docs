@@ -3,11 +3,12 @@ title: Generate Unit Tests with Copilot
 author: sigmade
 description: How to generate unit tests and test projects in C# using the xUnit framework with the help of Visual Studio commands and GitHub Copilot
 ms.date: 01/12/2025
+ms.collection: ce-skilling-ai-copilot
 ---
 
 # Generate unit tests with GitHub Copilot
 
-In this article, you explore how to generate unit tests and test projects in C# using the xUnit framework with the help of Visual Studio commands and GitHub Copilot.
+In this article, you explore how to generate unit tests and test projects in C# using the xUnit framework with the help of Visual Studio commands and GitHub Copilot. Using Visual Studio in combination with GitHub Copilot significantly simplifies the process of generating and writing unit tests.
 
 ## Create a test project
 
@@ -53,21 +54,21 @@ In the **Create Unit Tests** dialog, select **xUnit** from the **Test Framework*
 
 :::image type="content" source="media/create-unit-test-window.png" lightbox="media/create-unit-test-window.png" alt-text="Create Unit Tests window":::
 
-* If you don't have a test project yet, choose "New Test Project" or select an existing one.
-* If necessary, specify a template for the namespace, class, and method name, then click OK.
+- If you don't have a test project yet, choose **New Test Project** or select an existing one.
+- If necessary, specify a template for the namespace, class, and method name, then click **OK**.
 
-After a few seconds, Visual Studio will pull in the necessary packages, and we will get a generated xUnit project with the required packages, structure, a reference to the project being tested, and with the `ProductServiceTests` class and a stub method.
+After a few seconds, Visual Studio will pull in the necessary packages, and you'll get a generated xUnit project with the required packages and structure, a reference to the project being tested, and the `ProductServiceTests` class and a stub method.
 
 :::image type="content" source="media/test-mehod-stub.png" lightbox="media/test-mehod-stub.png" alt-text="Generated stub method":::
 
 ## Generate the tests themselves
 
 - Select the method being tested again.
-- Right-click - **Ask Copilot**.
+- Right-click and select **Ask Copilot**.
 - Enter a simple prompt, such as:
 
-  "generate unit tests using xunit, nsubstitute and insert the result into #ProductServiceTests file."
-  
+  "Generate unit tests using xunit, nsubstitute and insert the result into #ProductServiceTests file."
+
   You need to select your test class when you type the `#` character.
 
 > [!TIP]
@@ -77,8 +78,6 @@ After a few seconds, Visual Studio will pull in the necessary packages, and we w
 
 Execute the prompt, click **Accept**, and Copilot generates the test code. After that, it remains to install the necessary packages.
 
-When the packages are installed, the tests can be run. This example worked on the first try: Copilot knows very well how to work with NSubstitute, and all dependencies were defined through interfaces.
+When the packages are installed, the tests can be run. This example worked on the first try: Copilot knows how to work with NSubstitute, and all dependencies were defined through interfaces.
 
 :::image type="content" source="media/test-copilot-result.png" lightbox="media/test-copilot-result.png" alt-text="Generated tests":::
-
-Thus, using **Visual Studio** in combination with **GitHub Copilot** significantly simplifies the process of generating and writing unit tests.

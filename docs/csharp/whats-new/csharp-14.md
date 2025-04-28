@@ -37,7 +37,7 @@ public static class Enumerable
     extension<TSource>(IEnumerable<TSource> source) // extension members for IEnumerable<TSource>
     {
         // Extension property:
-        public bool IsEmpty => source.Any() == false;
+        public bool IsEmpty => !source.Any();
         // Extension indexer:
         public TSource this[int index] => source.Skip(index).First();
 

@@ -15,7 +15,7 @@ ms.date: 04/07/2025
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
-    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -23,7 +23,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
-    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -31,7 +31,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
-    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
@@ -94,6 +94,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 ## Options
 
 [!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
+
+- **`--allow-roll-forward`**
+
+  Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
 
 - **`-a|--arch <ARCHITECTURE>`**
 
@@ -160,10 +164,6 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 - **`--tool-path <PATH>`**
 
   Specifies the location to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
-
-- **`--allow-roll-forward`**
-
-  Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 

@@ -4,9 +4,9 @@ description: Learn how to migrate from .NET Framework Windows Performance Counte
 ms.date: 04/27/2025
 ---
 
-# Migrate from .NET Windows Performance Counters to .NET Core metrics
+# Migrate from .NET Framework Windows Performance Counters to .NET metrics
 
-.NET Framework applications running on Windows can use Windows Performance Counters for monitoring application health and performance. However, in .NET Core and later versions, the platform provides [cross-platform alternatives](compare-metric-apis.md) through the [EventCounters](./event-counters.md) and [System.Diagnostics.Metrics](./metrics.md) APIs.
+.NET Framework applications, which only run on Windows, can use Windows Performance Counters to monitor application health and performance. However, in .NET Core and later versions, the platform provides [cross-platform alternatives](compare-metric-apis.md) through the [EventCounters](./event-counters.md) and [System.Diagnostics.Metrics](./metrics.md) APIs.
 
 This article provides guidance on migrating from Windows Performance Counters to the newer metrics systems available in modern .NET versions.
 
@@ -24,20 +24,20 @@ The newer metrics systems offer several advantages:
 
 - **Cross-platform operation**: Works on Windows, Linux, macOS
 - **Container-friendly**: Works in containerized environments
-- **Modern tooling**: Integration with OpenTelemetry and observability platforms
+- **Modern tooling**: Integrates with OpenTelemetry and observability platforms
 - **Supports xcopy install**: No additional installation steps or privileges are required
 
-See the [Metrics API comparison](compare-metric-apis.md) for more details.
+For more information, see the [Metrics API comparison](compare-metric-apis.md).
 
-## Collecting metrics in modern .NET applications
+## Collect metrics in modern .NET applications
 
-See the [System.Diagnostics.Metrics](./metrics-collection.md) and [EventCounters](./event-counters.md) guides to collect and analyze metrics.
+To collect and analyze metrics, see the [System.Diagnostics.Metrics](./metrics-collection.md) and [EventCounters](./event-counters.md) guides.
 
-## Mapping common Windows Performance Counters to modern metrics
+## Map common Windows Performance Counters to modern metrics
 
-If the monitoring system for your .NET Framework application is using runtime provided Windows Performance Counters, you will need to select alternative [EventCounters](./event-counters.md)
-or [System.Diagnostics.Metrics](./metrics.md) based metrics instead. The tables below show alternatives for many common counters. Not all .NET Framework counters have been ported to new alternatives.
-In some cases infrequently used counters were discontinued and in other cases implementation changes in the platform have made certain counters irrelevant.
+If the monitoring system for your .NET Framework application uses runtime-provided Windows Performance Counters, you'll need to select alternative [EventCounters](./event-counters.md)
+or [System.Diagnostics.Metrics](./metrics.md)-based metrics instead. The following tables show alternatives for many common counters. Not all .NET Framework counters have been ported to new alternatives.
+In some cases, infrequently used counters were discontinued, and in other cases, implementation changes in the platform have made certain counters irrelevant.
 
 ### Memory counters
 
@@ -53,11 +53,11 @@ In some cases infrequently used counters were discontinued and in other cases im
 | `.NET CLR Memory\Allocated Bytes/sec` | `System.Runtime\Allocation Rate` (`alloc-rate`) | Calculate rate from `System.Runtime\dotnet.gc.heap.total_allocated` |
 
 > [!NOTE]
-> dotnet.gc.pause.time allows an improved calculation that avoids some undesirable behavior in the older `% Time in GC` metric. `% Time in GC` computed
+> `dotnet.gc.pause.time` allows an improved calculation that avoids some undesirable behavior in the older `% Time in GC` metric. `% Time in GC` computed
 > 100 * `pause_time_in_most_recent_GC` / `time_between_most_recent_two_GCs`. In some cases two GCs would occur very close together producing a high value
 > based on a tiny non-representative portion of the overall time interval. `gc.heap.pause.time` accumulates the total time the GC has paused application threads
-> so far in a process which allows computing the GC pause time during any measured time interval. This is a truer measurement of GC overhead but the change in calculation
-> means the metrics may not match even when the underlying GC behavior is unchanged.
+> so far in a process, which allows computing the GC pause time during any measured time interval. This is a truer measurement of GC overhead, but the change in calculation
+> means the metrics might not match even when the underlying GC behavior is unchanged.
 
 ### JIT and Loading counters
 
@@ -101,11 +101,11 @@ In some cases infrequently used counters were discontinued and in other cases im
 
 ### HttpWebRequest counters
 
-HttpWebRequest has been superceded by HttpClient. See the HttpClient [EventCounters](./available-counters.md#systemnethttp-counters) and [System.Diagnostics.Metrics](./built-in-metrics-system-net.md#systemnethttp) to learn what metrics are built-in.
+`HttpWebRequest` has been superseded by <xref:System.Net.Http.HttpClient>. To learn what metrics are built-in, see the HttpClient [EventCounters](./available-counters.md#systemnethttp-counters) and [System.Diagnostics.Metrics](./built-in-metrics-system-net.md#systemnethttp).
 
 ### ASP.NET counters
 
-ASP.NET has changed dramatically between .NET Framework and .NET Core. Many counters are obsolete or are measured differently than in the past. See the ASP.NET [EventCounters](./available-counters.md#microsoftaspnetcorehosting-counters) and [System.Diagnostics.Metrics](/aspnet/core/log-mon/metrics/built-in) to learn what metrics are built-in.
+ASP.NET has changed dramatically between .NET Framework and .NET Core. Many counters are obsolete or are measured differently than in the past. To learn what metrics are built-in, see the ASP.NET [EventCounters](./available-counters.md#microsoftaspnetcorehosting-counters) and [System.Diagnostics.Metrics](/aspnet/core/log-mon/metrics/built-in).
 
 ## Next steps
 

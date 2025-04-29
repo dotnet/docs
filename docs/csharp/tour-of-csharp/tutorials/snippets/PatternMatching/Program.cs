@@ -24,23 +24,23 @@ string bankRecords = """
     """;
 // </InputData>
 
-await IsTextValueExample(bankRecords);
+IsTextValueExample(bankRecords);
 Console.WriteLine();
-await IsEnumValueExample(bankRecords);
+IsEnumValueExample(bankRecords);
 Console.WriteLine();
-await SwitchEnumValueExample(bankRecords);
+SwitchEnumValueExample(bankRecords);
 Console.WriteLine();
-await ExampleProgram.Main();
+ExampleProgram.Main();
 Console.WriteLine();
 
-static async Task IsTextValueExample(string inputText1)
+static void IsTextValueExample(string bankRecords)
 {
     // <IsOnTextValue>
     double currentBalance = 0.0;
-    var reader = new StringReader(inputText1);
+    var reader = new StringReader(bankRecords);
 
     string? line;
-    while ((line = await reader.ReadLineAsync()) != null)
+    while ((line = reader.ReadLine()) != null)
     {
         if (string.IsNullOrWhiteSpace(line)) continue;
         // Split the line based on comma delimiter and trim each part
@@ -61,12 +61,12 @@ static async Task IsTextValueExample(string inputText1)
     // </IsOnTextValue>
 }
 
-static async Task IsEnumValueExample(string inputText1)
+static void IsEnumValueExample(string bankRecords)
 {
     // <IsEnumValue>
     double currentBalance = 0.0;
 
-    await foreach(var transaction in TransactionRecords(inputText1))
+    foreach(var transaction in TransactionRecords(bankRecords))
     {
         if (transaction.type == TransactionType.Deposit)
             currentBalance += transaction.amount;
@@ -75,11 +75,11 @@ static async Task IsEnumValueExample(string inputText1)
         Console.WriteLine($"{transaction.type} => Parsed Amount: {transaction.amount}, New Balance: {currentBalance}");
     }
 
-    static async IAsyncEnumerable<(TransactionType type, double amount)> TransactionRecords(string inputText)
+    static IEnumerable<(TransactionType type, double amount)> TransactionRecords(string inputText)
     {
         var reader = new StringReader(inputText);
         string? line;
-        while ((line = await reader.ReadLineAsync()) != null)
+        while ((line = reader.ReadLine()) != null)
         {
             string[] parts = line.Split(',');
 
@@ -98,12 +98,12 @@ static async Task IsEnumValueExample(string inputText1)
     // </IsEnumValue>
 }
 
-static async Task SwitchEnumValueExample(string inputText1)
+static void SwitchEnumValueExample(string bankRecords)
 {
     // <SwitchEnumValue>
     double currentBalance = 0.0;
 
-    await foreach (var transaction in TransactionRecords(inputText1))
+    foreach (var transaction in TransactionRecords(bankRecords))
     {
         currentBalance += transaction switch
         {   (TransactionType.Deposit, var amount) => amount,
@@ -113,11 +113,11 @@ static async Task SwitchEnumValueExample(string inputText1)
         Console.WriteLine($"{transaction.type} => Parsed Amount: {transaction.amount}, New Balance: {currentBalance}");
     }
 
-    static async IAsyncEnumerable<(TransactionType type, double amount)> TransactionRecords(string inputText)
+    static IEnumerable<(TransactionType type, double amount)> TransactionRecords(string inputText)
     {
         var reader = new StringReader(inputText);
         string? line;
-        while ((line = await reader.ReadLineAsync()) != null)
+        while ((line = reader.ReadLine()) != null)
         {
             string[] parts = line.Split(',');
 
@@ -163,11 +163,11 @@ public static class ExampleProgram
     WITHDRAWAL,  400, entertainment
     """;
 
-    public static async Task Main()
+    public static void Main()
     {
         double currentBalance = 0.0;
 
-        await foreach (var transaction in TransactionRecordType(bankRecords))
+        foreach (var transaction in TransactionRecordType(bankRecords))
         {
             currentBalance += transaction switch
             {
@@ -179,11 +179,11 @@ public static class ExampleProgram
         }
     }
 
-    public static async IAsyncEnumerable<object?> TransactionRecordType(string inputText)
+    public static IEnumerable<object?> TransactionRecordType(string inputText)
     {
         var reader = new StringReader(inputText);
         string? line;
-        while ((line = await reader.ReadLineAsync()) != null)
+        while ((line = reader.ReadLine()) != null)
         {
             string[] parts = line.Split(',');
 

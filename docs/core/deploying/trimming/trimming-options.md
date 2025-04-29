@@ -24,73 +24,7 @@ Trimming with `PublishTrimmed` was introduced in .NET Core 3.0. The other option
 
 Place this setting in the project file to ensure that the setting applies during `dotnet build`, not just `dotnet publish`.
 
-This setting enables trimming and trims all assemblies by default. In .NET 6, only assemblies that opted-in to trimming via `[AssemblyMetadata("IsTrimmable", "True")]` (added in projects that set `<IsTrimmable>true</IsTrimmable>`) were trimmed by default. You can return to the previous behavior by using `<TrimMode>partial</TrimMode>`.
-
 This setting also enables the trim-compatibility [Roslyn analyzer](#roslyn-analyzer) and disables [features that are incompatible with trimming](#framework-features-disabled-when-trimming).
-
-## Trimming granularity
-
-Use the `TrimMode` property to set the trimming granularity to either `partial` or `full`. The default setting for console apps (and, starting in .NET 8, Web SDK apps) is `full`:
-
-```xml
-<TrimMode>full</TrimMode>
-```
-
-To only trim assemblies that have opted-in to trimming, set the property to `partial`:
-
-```xml
-<TrimMode>partial</TrimMode>
-```
-
-If you change the trim mode to `partial`, you can opt-in individual assemblies to trimming by using a `<TrimmableAssembly>` MSBuild item.
-
-```xml
-<ItemGroup>
-  <TrimmableAssembly Include="MyAssembly" />
-</ItemGroup>
-```
-
-This is equivalent to setting `[AssemblyMetadata("IsTrimmable", "True")]` when building the assembly.
-
-## Root assemblies
-
-If an assembly is not trimmed, it's considered "rooted", which means that it and all of its statically understood dependencies will be kept. Additional assemblies can be "rooted" by name (without the `.dll` extension):
-
-```xml
-<ItemGroup>
-  <TrimmerRootAssembly Include="MyAssembly" />
-</ItemGroup>
-```
-
-## Root descriptors
-
-Another way to specify roots for analysis is using an XML file that uses the trimmer [descriptor format](https://github.com/dotnet/runtime/blob/main/docs/tools/illink/data-formats.md#descriptor-format). This lets you root specific members instead of a whole assembly.
-
-```xml
-<ItemGroup>
-  <TrimmerRootDescriptor Include="MyRoots.xml" />
-</ItemGroup>
-```
-
-For example, `MyRoots.xml` might root a specific method that's dynamically accessed by the application:
-
-```xml
-<linker>
-  <assembly fullname="MyAssembly">
-    <type fullname="MyAssembly.MyClass">
-      <method name="DynamicallyAccessedMethod" />
-    </type>
-  </assembly>
-</linker>
-```
-
-## Analysis warnings
-
-- `<SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>`
-
-  Enable trim analysis warnings.
-
-Trimming removes IL that's not statically reachable. Apps that use reflection or other patterns that create dynamic dependencies might be broken by trimming. To warn about such patterns, set `<SuppressTrimAnalysisWarnings>` to `false`. This setting will surface warnings about the entire app, including your own code, library code, and framework code.
 
 ## Roslyn analyzer
 

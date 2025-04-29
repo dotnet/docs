@@ -1,7 +1,7 @@
 ---
 title: Interactive tutorials
 description: Learn C# in your browser, and get started with your own development environment
-ms.date: 03/20/2025
+ms.date: 04/23/2025
 ---
 # Introduction to C\#
 
@@ -36,6 +36,14 @@ The [Branches and loops](branches-and-loops.md) tutorial teaches the basics of s
 ## List collection
 
 The [List collection](list-collection.md) lesson gives you a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists.
+
+## Tuples and types
+
+The [Tuples and types](tuples-and-types.md) lesson provides an overview of how you can create types in C#. The lesson focuses on tuples and records. It introduces the concepts of classes and structures, which are used more often in larger projects. You'll learn much more about these types after you install the .NET SDK and build more and larger apps.
+
+## Pattern matching
+
+The [Pattern matching](pattern-matching.md) lesson provides an introduction to *pattern matching*. Pattern matching enables you to compare an expression against a pattern. The success of the match determines which program logic to follow. Patterns can compare types, properties of a type, or contents of a list. You can combine multiple patterns using `and`, `or`, and `not` logic. Patterns provide a rich vocabulary to inspect data and make decisions in your program based on that inspection.
 
 ## Set up your local environment
 

@@ -387,7 +387,7 @@
 | IoT Operations Protocol | NuGet [0.10.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.10.0) |  |  |
 | IoT Operations Services | NuGet [0.10.1](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.10.1) |  |  |
 | Item Templates NetCore | NuGet [4.0.5086](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5086) |  |  |
-| Item Templates NetFx | NuGet [4.0.5051](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5051) |  |  |
+| Item Templates NetFx | NuGet [4.0.5086](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetFx/4.0.5086) |  |  |
 | Microsoft.Azure.DataFactoryTestingFramework.Expressions | NuGet [0.2.7](https://www.nuget.org/packages/Microsoft.Azure.DataFactoryTestingFramework.Expressions/0.2.7) |  |  |
 | Microsoft.Azure.Functions.Worker.OpenTelemetry | NuGet [1.1.0-preview6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.OpenTelemetry/1.1.0-preview6) |  |  |
 | OpenTelemetry Profiler | NuGet [1.0.0-beta4](https://www.nuget.org/packages/Azure.Monitor.OpenTelemetry.Profiler/1.0.0-beta4) |  |  |
@@ -529,7 +529,7 @@
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.1) |  |  |
-| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5051](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5051) |  | GitHub [4.0.5051](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
+| Functions item template pack for Microsoft Template Engine | NuGet [4.0.5086](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ItemTemplates/4.0.5086) |  | GitHub [4.0.5086](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |
 | Functions OpenAPI app settings deserialization library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi.Configuration.AppSettings/2.0.0-preview2) |  |  |
 | Functions OpenAPI document and Swagger UI renderer library | NuGet [1.4.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/1.4.0)<br>NuGet [2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.OpenApi/2.0.0-preview2) |  |  |
 | Functions project template pack for Microsoft Template Engine | NuGet [4.0.5086](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.ProjectTemplates/4.0.5086) |  | GitHub [4.0.5086](https://github.com/Azure/azure-functions-templates/tree/3.1.1582) |

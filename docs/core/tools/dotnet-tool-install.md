@@ -19,7 +19,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
-    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--tool-manifest <PATH>] [--allow-roll-forward] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
@@ -27,7 +27,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
-    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--tool-manifest <PATH>] [--allow-roll-forward] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
@@ -36,7 +36,7 @@ dotnet tool install <PACKAGE_NAME> [--local]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
-    [--tool-manifest <PATH>] [-v|--verbosity <LEVEL>]
+    [--tool-manifest <PATH>] [--allow-roll-forward] [-v|--verbosity <LEVEL>]
     [--version <VERSION_NUMBER>]
 
 dotnet tool install -h|--help

@@ -3,7 +3,7 @@ title: Azure SDK for .NET Overview
 description: Provides an overview of what the Azure SDK for .NET is and the basic steps to use the SDK in a .NET application
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 07/26/2024
+ms.date: 04/25/2025
 ---
 
 # Azure SDK for .NET overview

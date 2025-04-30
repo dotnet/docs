@@ -3,7 +3,7 @@ title: Configure a proxy when using the Azure SDK for .NET
 description: Learn different approaches for configuring a proxy for use with the Azure SDK for .NET client libraries.
 ms.topic: conceptual
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 11/18/2024
+ms.date: 04/25/2025
 ---
 
 # Configure a proxy when using the Azure SDK for .NET

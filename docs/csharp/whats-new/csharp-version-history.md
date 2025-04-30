@@ -340,7 +340,6 @@ C# version 5.0, released with Visual Studio 2012, was a focused version of the l
 
 - [Asynchronous members](../asynchronous-programming/index.md)
 - [Caller info attributes](../language-reference/attributes/caller-information.md)
-- [Code Project: Caller Info Attributes in C# 5.0](https://www.codeproject.com/Tips/606379/Caller-Info-Attributes-in-Csharp)
 
 The caller info attribute lets you easily retrieve information about the context in which you're running without resorting to a ton of boilerplate reflection code. It has many uses in diagnostics and logging tasks.
 

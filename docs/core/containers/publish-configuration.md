@@ -225,7 +225,7 @@ Tags can only contain up to 127 alphanumeric characters, periods, underscores, a
 > In PowerShell, both the `;` and `"` characters need to be escaped.
 >
 > ```bash
-> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags=\"1.2.3-alpha2;latest\"
+> dotnet publish --os linux --arch x64 /t:PublishContainer /p:ContainerImageTags='"1.2.3-alpha2;latest"'
 > ```
 >
 > In Bash, only the `"` character needs to be escaped.

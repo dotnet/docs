@@ -54,7 +54,7 @@ landingContent:
           - text: Evaluation libraries
             url: conceptual/evaluation-libraries.md
 
-  # Card (Optional; Remove if not applicable.)
+  # Card
   - title: Common tasks
     linkLists:
       - linkListType: how-to-guide
@@ -70,7 +70,7 @@ landingContent:
           - text: Work with content filtering
             url: how-to/work-with-local-models.md
 
-  # Card (Optional; Remove if not applicable.)
+  # Card
   - title: Tutorials
     linkLists:
       - linkListType: tutorial
@@ -84,7 +84,7 @@ landingContent:
           - text: Evaluate a model's response
             url: tutorials/evaluate-with-reporting.md
 
-  # Card (Optional; Remove if not applicable.)
+  # Card
   - title: Training
     linkLists:
       - linkListType: tutorial
@@ -97,3 +97,15 @@ landingContent:
             url: get-started-app-chat-template.md
           - text: Develop AI agents using Azure OpenAI
             url: /training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk
+
+  # Card
+  - title: API reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ChatClientBuilder
+            url: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+          - text: IChatClient
+            url: /dotnet/api/microsoft.extensions.ai.ichatclient
+          - text: IEmbeddingGenerator
+            url: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator

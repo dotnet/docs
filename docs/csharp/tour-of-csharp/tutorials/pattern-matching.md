@@ -35,7 +35,7 @@ The following code declares and uses a `record` type to represent a `Point`, and
 
 :::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/Program.cs" id="FinalProgram":::
 
-You completed the "Introduction to pattern matching C#" interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. 
+You completed the "Introduction to pattern matching C#" interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding.
 
 You can learn more about pattern matching in C# in the following articles:
 

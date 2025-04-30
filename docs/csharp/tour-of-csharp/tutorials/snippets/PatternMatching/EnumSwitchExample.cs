@@ -33,10 +33,14 @@ public static class ExampleProgram
 
         foreach (var transaction in TransactionRecords(bankRecords))
         {
-            if (transaction.type == TransactionType.Deposit)
-                currentBalance += transaction.amount;
-            else if (transaction.type == TransactionType.Withdrawal)
-                currentBalance -= transaction.amount;
+            // <SwitchEnumValue>
+            currentBalance += transaction switch
+            {
+                (TransactionType.Deposit, var amount) => amount,
+                (TransactionType.Withdrawal, var amount) => -amount,
+                _ => 0.0
+            };
+            // </SwitchEnumValue>
             Console.WriteLine($"{transaction.type} => Parsed Amount: {transaction.amount}, New Balance: {currentBalance}");
         }
     }

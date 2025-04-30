@@ -28,7 +28,7 @@ IsTextValueExample(bankRecords);
 Console.WriteLine();
 FirstEnumExample.ExampleProgram.Main();
 Console.WriteLine();
-SwitchEnumValueExample(bankRecords);
+EnumSwitchExample.ExampleProgram.Main();
 Console.WriteLine();
 ExampleProgram.Main();
 Console.WriteLine();
@@ -59,44 +59,5 @@ static void IsTextValueExample(string bankRecords)
         }
     }
     // </IsOnTextValue>
-}
-
-static void SwitchEnumValueExample(string bankRecords)
-{
-    // <SwitchEnumValue>
-    double currentBalance = 0.0;
-
-    foreach (var transaction in TransactionRecords(bankRecords))
-    {
-        currentBalance += transaction switch
-        {   
-            (TransactionType.Deposit, var amount) => amount,
-            (TransactionType.Withdrawal, var amount) => -amount,
-            _ => 0.0
-        };
-        Console.WriteLine($"{transaction.type} => Parsed Amount: {transaction.amount}, New Balance: {currentBalance}");
-    }
-
-    static IEnumerable<(TransactionType type, double amount)> TransactionRecords(string inputText)
-    {
-        var reader = new StringReader(inputText);
-        string? line;
-        while ((line = reader.ReadLine()) != null)
-        {
-            string[] parts = line.Split(',');
-
-            string? transactionType = parts[0]?.Trim();
-            if (double.TryParse(parts[1].Trim(), out double amount))
-            {
-                // Update the balance based on transaction type
-                if (transactionType?.ToUpper() is "DEPOSIT")
-                    yield return (TransactionType.Deposit, amount);
-                else if (transactionType?.ToUpper() is "WITHDRAWAL")
-                    yield return (TransactionType.Withdrawal, amount);
-            }
-            yield return (default, 0.0);
-        }
-    }
-    // </SwitchEnumValue>
 }
 

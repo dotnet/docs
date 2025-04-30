@@ -69,7 +69,6 @@ public enum TransactionType
     Withdrawal
 }
 
-
 public record Deposit(double Amount, string description);
 public record Withdrawal(double Amount, string description);
 

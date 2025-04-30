@@ -31,7 +31,6 @@ All the examples in this tutorial use the following data. Select "Run" to start 
 
 :::code language="csharp" interactive="try-dotnet-method" source="./snippets/PatternMatching/Program.cs" id="SwitchEnumValue":::
 
-
 The following code declares and uses a `record` type to represent a `Point`, and then uses that `Point` structure in the `Main` method:
 
 :::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/Program.cs" id="FinalProgram":::

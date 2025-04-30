@@ -107,7 +107,7 @@ If you're familiar with [Caching in .NET](../core/extensions/caching.md), it's g
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.CacheResponses/Program.cs":::
 
-This example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory) NuGet package. For more information, see [Caching in .NET](c../core/extensions/caching.md).
+This example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory) NuGet package. For more information, see [Caching in .NET](../core/extensions/caching.md).
 
 #### Use telemetry
 

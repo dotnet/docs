@@ -103,11 +103,11 @@ The preceding code:
 
 #### Cache responses
 
-If you're familiar with [Caching in .NET](../../core/extensions/caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides other such delegating `IChatClient` implementations. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a novel chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same history is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than forwarding the request along the pipeline.
+If you're familiar with [Caching in .NET](../core/extensions/caching.md), it's good to know that <xref:Microsoft.Extensions.AI> provides other such delegating `IChatClient` implementations. The <xref:Microsoft.Extensions.AI.DistributedCachingChatClient> is an `IChatClient` that layers caching around another arbitrary `IChatClient` instance. When a novel chat history is submitted to the `DistributedCachingChatClient`, it forwards it to the underlying client and then caches the response before sending it back to the consumer. The next time the same history is submitted, such that a cached response can be found in the cache, the `DistributedCachingChatClient` returns the cached response rather than forwarding the request along the pipeline.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.CacheResponses/Program.cs":::
 
-This example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory) NuGet package. For more information, see [Caching in .NET](c../../core/extensions/caching.md).
+This example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory) NuGet package. For more information, see [Caching in .NET](c../core/extensions/caching.md).
 
 #### Use telemetry
 
@@ -169,7 +169,7 @@ For scenarios where you need a different implementation for `GetResponseAsync` a
 
 #### Dependency injection
 
-<xref:Microsoft.Extensions.AI.IChatClient> implementations will often be provided to an application via [dependency injection (DI)](../../core/extensions/dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
+<xref:Microsoft.Extensions.AI.IChatClient> implementations will often be provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.DependencyInjection/Program.cs":::
 
@@ -262,6 +262,6 @@ For more samples, see the [dotnet/ai-samples](https://aka.ms/meai-samples) GitHu
 ## See also
 
 - [Build an AI chat app with .NET](./quickstarts/build-chat-app.md)
-- [.NET dependency injection](../../core/extensions/dependency-injection.md)
-- [Rate limit an HTTP handler in .NET](../../core/extensions/http-ratelimiter.md)
-- [Caching in .NET](../../core/extensions/caching.md)
+- [.NET dependency injection](../core/extensions/dependency-injection.md)
+- [Rate limit an HTTP handler in .NET](../core/extensions/http-ratelimiter.md)
+- [Caching in .NET](../core/extensions/caching.md)

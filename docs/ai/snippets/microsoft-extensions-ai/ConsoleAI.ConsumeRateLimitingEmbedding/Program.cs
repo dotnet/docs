@@ -10,7 +10,8 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
             QueueLimit = int.MaxValue
         }));
 
-foreach (var embedding in await generator.GenerateAsync(["What is AI?", "What is .NET?"]))
+foreach (Embedding<float> embedding in
+    await generator.GenerateAsync(["What is AI?", "What is .NET?"]))
 {
     Console.WriteLine(string.Join(", ", embedding.Vector.ToArray()));
 }

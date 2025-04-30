@@ -61,7 +61,7 @@ With an instance of <xref:Microsoft.Extensions.AI.IChatClient>, you can call the
 
 The core `IChatClient.GetResponseAsync` method accepts a list of messages. This list represents the history of all messages that are part of the conversation.
 
-:::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.GetResponseAsyncArgs/Program.cs":::
+:::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.GetResponseAsyncArgs/Program.cs" id="Snippet1":::
 
 The <xref:Microsoft.Extensions.AI.ChatResponse> that's returned from `GetResponseAsync` exposes a list of <xref:Microsoft.Extensions.AI.ChatMessage> instances that represent one or more messages generated as part of the operation. In common cases, there is only one response message, but in some situations, there can be multiple messages. The message list is ordered, such that the last message in the list represents the final message to the request. To provide all of those response messages back to the service in a subsequent request, you can add the messages from the response back into the messages list.
 

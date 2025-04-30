@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.AI;
+using System.Runtime.CompilerServices;
 using System.Threading.RateLimiting;
 
 public sealed class RateLimitingChatClient(IChatClient innerClient, RateLimiter rateLimiter) : DelegatingChatClient(innerClient)

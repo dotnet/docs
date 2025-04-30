@@ -28,7 +28,7 @@ GeneratedEmbeddings<Embedding<float>> embeddings = await generator.GenerateAsync
     "What is AI?"
 ]);
 
-foreach (var embedding in embeddings)
+foreach (Embedding<float> embedding in embeddings)
 {
     Console.WriteLine(string.Join(", ", embedding.Vector.ToArray()));
 }

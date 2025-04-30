@@ -1,3 +1,5 @@
+﻿using Microsoft.Extensions.AI;
+
 IChatClient client = new SampleChatClient(
     new Uri("http://coolsite.ai"), "target-ai-model");
 
@@ -8,7 +10,7 @@ while (true)
     Console.Write("Q: ");
     history.Add(new(ChatRole.User, Console.ReadLine()));
 
-    var response = await client.GetResponseAsync(history);
+    ChatResponse response = await client.GetResponseAsync(history);
     Console.WriteLine(response);
 
     history.AddMessages(response);
@@ -16,19 +18,20 @@ while (true)
 // </Snippet1>
 
 // <Snippet2>
-List<ChatMessage> history = [];
+List<ChatMessage> chatHistory = [];
 while (true)
 {
     Console.Write("Q: ");
-    history.Add(new(ChatRole.User, Console.ReadLine()));
+    chatHistory.Add(new(ChatRole.User, Console.ReadLine()));
 
     List<ChatResponseUpdate> updates = [];
-    await foreach (var update in client.GetStreamingResponseAsync(history))
+    await foreach (ChatResponseUpdate update in
+        client.GetStreamingResponseAsync(history))
     {
         Console.Write(update);
     }
     Console.WriteLine();
 
-    history.AddMessages(updates);
+    chatHistory.AddMessages(updates);
 }
 // </Snippet2>

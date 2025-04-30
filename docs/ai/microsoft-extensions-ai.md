@@ -16,17 +16,17 @@ The [📦 Microsoft.Extensions.AI.Abstractions](https://www.nuget.org/packages/M
 
 The [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) package has an implicit dependency on the `Microsoft.Extensions.AI.Abstractions` package. This package enables you to easily integrate components such as telemetry and caching into your applications using familiar dependency injection and middleware patterns. For example, it provides the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClientBuilderExtensions.UseOpenTelemetry(Microsoft.Extensions.AI.ChatClientBuilder,Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.Action{Microsoft.Extensions.AI.OpenTelemetryChatClient})> extension method, which adds OpenTelemetry support to the chat client pipeline.
 
-## Which package to reference
+### Which package to reference
 
 Libraries that provide implementations of the abstractions typically reference only `Microsoft.Extensions.AI.Abstractions`.
 
 To also have access to higher-level utilities for working with generative AI components, reference the `Microsoft.Extensions.AI` package instead (which itself references `Microsoft.Extensions.AI.Abstractions`). Most consuming applications and services should reference the `Microsoft.Extensions.AI` package along with one or more libraries that provide concrete implementations of the abstractions.
 
-## Install the package
+### Install the packages
 
 For information about how to install NuGet packages, see [dotnet package add](../core/tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../core/tools/dependencies.md).
 
-## Usage examples
+## API usage examples
 
 The following subsections show specific [IChatClient](#the-ichatclient-interface) usage examples:
 
@@ -76,7 +76,7 @@ The inputs to <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsyn
 > [!TIP]
 > Streaming APIs are nearly synonymous with AI user experiences. C# enables compelling scenarios with its `IAsyncEnumerable<T>` support, allowing for a natural and efficient way to stream data.
 
-As with `GetResponseAsync`, you can add the updates from <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*?displayProperty=nameWithType> back into the messages list. As the updates are individual pieces of a response, you can use helpers like <xref:Microsoft.Extensions.AI.ChatResponseExtensions.ToChatResponse(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatResponseUpdate})> to compose one or more updates back into a single <xref:Microsoft.Extensions.AI.ChatResponse> instance.
+As with `GetResponseAsync`, you can add the updates from <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*?displayProperty=nameWithType> back into the messages list. Because the updates are individual pieces of a response, you can use helpers like <xref:Microsoft.Extensions.AI.ChatResponseExtensions.ToChatResponse(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatResponseUpdate})> to compose one or more updates back into a single <xref:Microsoft.Extensions.AI.ChatResponse> instance.
 
 Helpers like <xref:Microsoft.Extensions.AI.ChatResponseExtensions.AddMessages*> compose a <xref:Microsoft.Extensions.AI.ChatResponse> and then extract the composed messages from the response and add them to a list.
 
@@ -111,7 +111,7 @@ This example depends on the [📦 Microsoft.Extensions.Caching.Memory](https://w
 
 #### Use telemetry
 
-Another example of a delegating chat client is the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClient>. This implementation adheres to the [OpenTelemetry Semantic Conventions for Generative AI systems](https://opentelemetry.io/docs/specs/semconv/gen-ai/). Similar to other `IChatClient` delegators, it layers metrics and spans around any underlying `IChatClient` implementation, providing enhanced observability.
+Another example of a delegating chat client is the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClient>. This implementation adheres to the [OpenTelemetry Semantic Conventions for Generative AI systems](https://opentelemetry.io/docs/specs/semconv/gen-ai/). Similar to other `IChatClient` delegators, it layers metrics and spans around other arbitrary `IChatClient` implementations.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.UseTelemetry/Program.cs":::
 
@@ -121,7 +121,7 @@ Alternatively, the <xref:Microsoft.Extensions.AI.LoggingChatClient> and correspo
 
 #### Provide options
 
-Every call to <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary.
+Every call to <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner, via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary.
 
 You can also specify options when building an `IChatClient` with the fluent <xref:Microsoft.Extensions.AI.ChatClientBuilder> API by chaining a call to the <xref:Microsoft.Extensions.AI.ConfigureOptionsChatClientBuilderExtensions.ConfigureOptions(Microsoft.Extensions.AI.ChatClientBuilder,System.Action{Microsoft.Extensions.AI.ChatOptions})> extension method. This delegating client wraps another client and invokes the supplied delegate to populate a `ChatOptions` instance for every call. For example, to ensure that the <xref:Microsoft.Extensions.AI.ChatOptions.ModelId?displayProperty=nameWithType> property defaults to a particular model name, you can use code like the following:
 
@@ -147,7 +147,7 @@ As with other `IChatClient` implementations, the `RateLimitingChatClient` can be
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.CustomClientMiddle/Program.cs":::
 
-To simplify the composition of such components with others, component authors should create a `Use*` extension method for registering the component into a pipeline. For example, consider the following extension method:
+To simplify the composition of such components with others, component authors should create a `Use*` extension method for registering the component into a pipeline. For example, consider the following `UseRatingLimiting` extension method:
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/AI.Shared/RateLimitingChatClientExtensions.cs" id="one":::
 
@@ -159,9 +159,7 @@ Now it's easy for the consumer to use this in their pipeline, for example:
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.ConsumeClientMiddleware/Program.cs" id="SnippetUse":::
 
-The previous extension methods demonstrate using a `Use` method on <xref:Microsoft.Extensions.AI.ChatClientBuilder>. `ChatClientBuilder` also provides <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use*> overloads that make it easier to write such delegating handlers.
-
-For example, in the earlier `RateLimitingChatClient` example, the overrides of `GetResponseAsync` and `GetStreamingResponseAsync` only need to do work before and after delegating to the next client in the pipeline. To achieve the same thing without writing a custom class, you can use an overload of `Use` that accepts a delegate that's used for both `GetResponseAsync` and `GetStreamingResponseAsync`, reducing the boilerplate required:
+The previous extension methods demonstrate using a `Use` method on <xref:Microsoft.Extensions.AI.ChatClientBuilder>. `ChatClientBuilder` also provides <xref:Microsoft.Extensions.AI.ChatClientBuilder.Use*> overloads that make it easier to write such delegating handlers. For example, in the earlier `RateLimitingChatClient` example, the overrides of `GetResponseAsync` and `GetStreamingResponseAsync` only need to do work before and after delegating to the next client in the pipeline. To achieve the same thing without writing a custom class, you can use an overload of `Use` that accepts a delegate that's used for both `GetResponseAsync` and `GetStreamingResponseAsync`, reducing the boilerplate required:
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.UseExample/Program.cs":::
 
@@ -169,7 +167,7 @@ For scenarios where you need a different implementation for `GetResponseAsync` a
 
 #### Dependency injection
 
-<xref:Microsoft.Extensions.AI.IChatClient> implementations will often be provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
+<xref:Microsoft.Extensions.AI.IChatClient> implementations are often provided to an application via [dependency injection (DI)](../core/extensions/dependency-injection.md). In this example, an <xref:Microsoft.Extensions.Caching.Distributed.IDistributedCache> is added into the DI container, as is an `IChatClient`. The registration for the `IChatClient` uses a builder that creates a pipeline containing a caching client (which then uses an `IDistributedCache` retrieved from DI) and the sample client. The injected `IChatClient` can be retrieved and used elsewhere in the app.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.DependencyInjection/Program.cs":::
 
@@ -242,7 +240,7 @@ The following is an example implementation of such a delegating embedding genera
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/AI.Shared/RateLimitingEmbeddingGenerator.cs":::
 
-This can then be layered around an arbitrary `IEmbeddingGenerator<string, Embedding<float>>` to rate-limit all embedding generation operations.
+This can then be layered around an arbitrary `IEmbeddingGenerator<string, Embedding<float>>` to rate limit all embedding generation operations.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.ConsumeRateLimitingEmbedding/Program.cs":::
 

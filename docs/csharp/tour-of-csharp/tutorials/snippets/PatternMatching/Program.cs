@@ -40,7 +40,7 @@ static void IsTextValueExample(string bankRecords)
     var reader = new StringReader(bankRecords);
 
     string? line;
-    while ((line = reader.ReadLine()) != null)
+    while ((line = reader.ReadLine()) is not null)
     {
         if (string.IsNullOrWhiteSpace(line)) continue;
         // Split the line based on comma delimiter and trim each part
@@ -66,7 +66,7 @@ static void IsEnumValueExample(string bankRecords)
     // <IsEnumValue>
     double currentBalance = 0.0;
 
-    foreach(var transaction in TransactionRecords(bankRecords))
+    foreach (var transaction in TransactionRecords(bankRecords))
     {
         if (transaction.type == TransactionType.Deposit)
             currentBalance += transaction.amount;
@@ -106,7 +106,8 @@ static void SwitchEnumValueExample(string bankRecords)
     foreach (var transaction in TransactionRecords(bankRecords))
     {
         currentBalance += transaction switch
-        {   (TransactionType.Deposit, var amount) => amount,
+        {   
+            (TransactionType.Deposit, var amount) => amount,
             (TransactionType.Withdrawal, var amount) => -amount,
             _ => 0.0
         };
@@ -139,7 +140,7 @@ static void SwitchEnumValueExample(string bankRecords)
 // <FinalProgram>
 public static class ExampleProgram
 {
-    static string bankRecords = """
+    const string bankRecords = """
     DEPOSIT,   10000, Initial balance
     DEPOSIT,     500, regular deposit
     WITHDRAWAL, 1000, rent

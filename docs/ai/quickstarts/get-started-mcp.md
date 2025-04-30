@@ -6,20 +6,12 @@ ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
 ms.author: frbouche
-zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
 
 # Get started with .NET AI and the Model Context Protocol
 
-The Model Context Protocol (MCP) is an open protocol created by Anthropic that standardizes how applications provide context to large language models (LLMs). In this article, you learn:
-
-- Core concepts of MCP.
-- Resources to help you get started with .NET AI and MCP.
-
-## What is MCP?
-
-The Model Context Protocol simplifies the integration of large language models with external tools, services, and data sources. The protocol enables you to build powerful, standardized, context-aware AI applications. These integrations improve the quality and relevance of your LLM responses by expanding the resources available to them.
+The Model Context Protocol (MCP) is an open protocol designed to standardize how applications provide contextual information to large language models (LLMs). MCP simplifies the integration of large language models with external tools, services, and data sources. By using MCP, developers can enhance the capabilities of AI models, enabling them to produce more accurate, relevant, and context-aware responses.
 
 For example, using MCP, you can connect your LLM to resources such as:
 
@@ -56,7 +48,7 @@ There is a set of standard messages that the MCP client and server can exchange,
 |CreateMessageRequest     |  A request by the server to sample an LLM via the client. The client has full discretion over which model to select. The client should also inform the user before beginning sampling, to allow them to inspect the request (human in the loop) and decide whether to approve it       |
 |SetLevelRequest     | A request by the client to the server, to enable or adjust logging        |
 
-## Develop with MCP C# SDK
+## Develop with the MCP C# SDK
 
 As a .NET developer, you can use MCP by programming MCP client and server behaviors and integrations. MCP reduces the complexity involved in connecting an AI model to various tools, services, and data sources. Instead of building unique connectors for each integration point, you can rely on prebuilt integrations from various providers and clear standards to build your own reusable connectors.
 

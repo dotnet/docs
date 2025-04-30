@@ -20,6 +20,7 @@ For example, using MCP, you can connect your LLM to resources such as:
 - Tools that manage files or performing local tasks on a user's device
 
 Many Microsoft products already support MCP, including:
+
 - [Copilot Studio](/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents)
 - [Visual Studio Code GitHub Copilot agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
 - [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/).

@@ -11,29 +11,34 @@ ms.author: frbouche
 
 # Get started with .NET AI and the Model Context Protocol
 
-The Model Context Protocol (MCP) is an open protocol designed to standardize how applications provide contextual information to large language models (LLMs). MCP simplifies the integration of large language models with external tools, services, and data sources. By using MCP, developers can enhance the capabilities of AI models, enabling them to produce more accurate, relevant, and context-aware responses.
+The Model Context Protocol (MCP) is an open protocol designed to standardize integrations between AI apps and external tools and data sources. By using MCP, developers can enhance the capabilities of AI models, enabling them to produce more accurate, relevant, and context-aware responses.
 
 For example, using MCP, you can connect your LLM to resources such as:
 
-- Document databases or storage services containing thousands of PDFs.
-- Web APIs that expose business data or logic.
-- Tools for managing files or performing local tasks on a user's device.
+- Document databases or storage services
+- Web APIs that expose business data or logic
+- Tools that manage files or performing local tasks on a user's device
 
-Many Microsoft products already support MCP, including [Copilot Studio](/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents), [Visual Studio Code GitHub Copilot agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode), and [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/). By using the [MCP C# SDK](#develop-with-mcp-c-sdk), you can also quickly create your own robust MCP integrations and easily switch between different AI models without significant code changes.
+Many Microsoft products already support MCP, including:
+- [Copilot Studio](/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents)
+- [Visual Studio Code GitHub Copilot agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
+- [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/).
+
+You can use the [MCP C# SDK](#develop-with-mcp-c-sdk) to quickly create your own MCP integrations and switch between different AI models without significant code changes.
 
 ### MCP client-server architecture
 
-MCP uses a client-server architecture, enabling a host application to connect to multiple MCP servers through MCP clients. This architecture enhances the contextual awareness of AI models. MCP architecture includes the following key components:
+MCP uses a client-server architecture that enables an AI-powered app (the host) to connect to multiple MCP servers through MCP clients:
 
-- **MCP Hosts**: AI tools, code editors, or other software that enhance their AI models using contextual resources through MCP. For example, GitHub Copilot in Visual Studio Code can act as an MCP host, using MCP clients and servers to expand its capabilities.
+- **MCP Hosts**: AI tools, code editors, or other software that enhance their AI models using contextual resources through MCP. For example, GitHub Copilot in Visual Studio Code can act as an MCP host and use MCP clients and servers to expand its capabilities.
 - **MCP Clients**: Clients used by the host application to connect to MCP servers to retrieve contextual data.
-- **MCP Servers**: Services that expose capabilities through MCP. For example, an MCP server might abstract a REST API or local data source to provide business data to the LLM.
+- **MCP Servers**: Services that expose capabilities to clients through MCP. For example, an MCP server might provide an abstraction over a REST API or local data source to provide business data to the AI model.
 
 The following diagram illustrates this architecture:
 
 :::image type="content" source="../media/mcp/model-context-protocol-architecture-diagram.png" alt-text="A diagram showing the architecture pattern of MCP, including hosts, clients, and servers.":::
 
-There is a set of standard messages that the MCP client and server can exchange, including:
+MCP client and server can exchange a set of standard messages:
 
 |Message  |Description  |
 |---------|---------|
@@ -50,7 +55,7 @@ There is a set of standard messages that the MCP client and server can exchange,
 
 ## Develop with the MCP C# SDK
 
-As a .NET developer, you can use MCP by programming MCP client and server behaviors and integrations. MCP reduces the complexity involved in connecting an AI model to various tools, services, and data sources. Instead of building unique connectors for each integration point, you can rely on prebuilt integrations from various providers and clear standards to build your own reusable connectors.
+As a .NET developer, you can use MCP by creating MCP clients and servers to enhance your apps with custom integrations. MCP reduces the complexity involved in connecting an AI model to various tools, services, and data sources.
 
 The official [MCP C# SDK](https://github.com/modelcontextprotocol/csharp-sdk) is available through NuGet and enables you to build MCP clients and servers for .NET apps and libraries. The SDK is maintained through collaboration between Microsoft, Anthropic, and the MCP open protocol organization.
 
@@ -59,6 +64,11 @@ To get started, add the MCP C# SDK to your project:
 ```dotnetcli
 dotnet add package ModelContextProtocol --prerelease
 ```
+
+Instead of building unique connectors for each integration point, you can often leverage or reference prebuilt integrations from various providers such as GitHub and Docker:
+
+- [Available MPC clients](https://modelcontextprotocol.io/clients)
+- [Available MCP servers](https://modelcontextprotocol.io/examples)
 
 ## More .NET MCP development resources
 

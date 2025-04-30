@@ -24,7 +24,7 @@ Many Microsoft products already support MCP, including:
 - [Visual Studio Code GitHub Copilot agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
 - [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/).
 
-You can use the [MCP C# SDK](#develop-with-mcp-c-sdk) to quickly create your own MCP integrations and switch between different AI models without significant code changes.
+You can use the [MCP C# SDK](#develop-with-the-mcp-c-sdk) to quickly create your own MCP integrations and switch between different AI models without significant code changes.
 
 ### MCP client-server architecture
 

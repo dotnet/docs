@@ -1,6 +1,6 @@
 ---
 title: Get started with .NET AI and MCP
-description: Learn about resources and starter examples for .NET AI and MCP
+description: Learn about .NET AI and MCP key concepts and development resources
 ms.date: 04/29/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
@@ -12,11 +12,10 @@ zone_pivot_groups: openai-library
 
 # Get started with .NET AI and the Model Context Protocol
 
-The Model Context Protocol (MCP) is an open protocol created by Anthropic that standardizes how applications provide context to large language models (LLMs). In this article, you'll learn:
+The Model Context Protocol (MCP) is an open protocol created by Anthropic that standardizes how applications provide context to large language models (LLMs). In this article, you learn:
 
 - Core concepts of MCP.
 - Resources to help you get started with .NET AI and MCP.
-- How to create simple client and server applications using MCP.
 
 ## What is MCP?
 
@@ -28,13 +27,13 @@ For example, using MCP, you can connect your LLM to resources such as:
 - Web APIs that expose business data or logic.
 - Tools for managing files or performing local tasks on a user's device.
 
-Many Microsoft products have already added support for MCP, including [Copilot Studio](/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents), [Visual Studio Code GitHub Copilot agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode), and [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/). By leveraging the [MCP C# SDK](), you can also quickly create your own robust MCP integrations and easily switch between different AI models without significant code changes.
+Many Microsoft products already support MCP, including [Copilot Studio](/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents), [Visual Studio Code GitHub Copilot agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode), and [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/). By using the [MCP C# SDK](), you can also quickly create your own robust MCP integrations and easily switch between different AI models without significant code changes.
 
 ### MCP client-server architecture
 
 MCP uses a client-server architecture, enabling a host application to connect to multiple MCP servers through MCP clients. This architecture enhances the contextual awareness of AI models. MCP architecture includes the following key components:
 
-- **MCP Hosts**: AI tools, IDEs, or other software that enhance their AI models using contextual resources through MCP. For example, GitHub Copilot in Visual Studio Code can act as an MCP host, using MCP clients and servers to expand its capabilities.
+- **MCP Hosts**: AI tools, code editors, or other software that enhance their AI models using contextual resources through MCP. For example, GitHub Copilot in Visual Studio Code can act as an MCP host, using MCP clients and servers to expand its capabilities.
 - **MCP Clients**: Clients used by the host application to connect to MCP servers to retrieve contextual data.
 - **MCP Servers**: Services that expose capabilities through MCP. For example, an MCP server might abstract a REST API or local data source to provide business data to the LLM.
 
@@ -42,20 +41,20 @@ The following diagram illustrates this architecture:
 
 :::image type="content" source="../media/mcp/model-context-protocol-architecture-diagram.png" alt-text="A diagram showing the architecture pattern of MCP, including hosts, clients, and servers.":::
 
-There are a set of standard messages that the MCP client and server can exchange, including:
+There is a set of standard messages that the MCP client and server can exchange, including:
 
 |Message  |Description  |
 |---------|---------|
-|InitializeRequest     |  This request is sent from the client to the server when it first connects, asking it to begin initialization       |
-|ListToolsRequest     |  Sent from the client to request a list of tools the server has       |
+|InitializeRequest     |  This request is sent by the client to the server when it first connects, asking it to begin initialization       |
+|ListToolsRequest     |  Sent by the client to request a list of tools the server has       |
 |CallToolRequest     |  Used by the client to invoke a tool provided by the server       |
-|ListResourcesRequest     | Sent from the client to request a list of resources the server has        |
-|ReadResourceRequest     |  Sent from the client to the server, to read a specific resource URI       |
-|ListPromptsRequest     | Sent from the client to request a list of prompts and prompt templates the server has       |
+|ListResourcesRequest     | Sent by the client to request a list of resources the server has        |
+|ReadResourceRequest     |  Sent by the client to the server, to read a specific resource URI       |
+|ListPromptsRequest     | Sent by the client to request a list of prompts and prompt templates the server has       |
 |GetPromptRequest     |  Used by the client to get a prompt provided by the server       |
 |PingRequest     |   A ping, issued by either the server or the client, to check that the other party is still alive      |
-|CreateMessageRequest     |  A request from the server to sample an LLM via the client. The client has full discretion over which model to select. The client should also inform the user before beginning sampling, to allow them to inspect the request (human in the loop) and decide whether to approve it       |
-|SetLevelRequest     | A request from the client to the server, to enable or adjust logging        |
+|CreateMessageRequest     |  A request by the server to sample an LLM via the client. The client has full discretion over which model to select. The client should also inform the user before beginning sampling, to allow them to inspect the request (human in the loop) and decide whether to approve it       |
+|SetLevelRequest     | A request by the client to the server, to enable or adjust logging        |
 
 ## Develop with MCP C# SDK
 
@@ -69,13 +68,21 @@ To get started, add the MCP C# SDK to your project:
 dotnet add package ModelContextProtocol --prerelease
 ```
 
-## Additional .NET MCP development resources
+## More .NET MCP development resources
 
-Various tools and services in the .NET and Azure ecosystems are available to help you build MCP clients and servers or integrate with existing MCP servers. Explore the following resources for more information:
+Various tools, services, and learning resources are available in the .NET and Azure ecosystems to help you build MCP clients and servers or integrate with existing MCP servers.
+
+Get started with the following development tools:
 
 - [Semantic Kernel](/semantic-kernel/concepts/plugins/adding-mcp-plugins) allows you to add plugins for MCP servers. Semantic Kernel supports both local MCP servers through standard I/O and remote servers that connect through SSE over HTTPS.
 - [Azure Functions remote MCP servers](https://devblogs.microsoft.com/dotnet/build-mcp-remote-servers-with-azure-functions/) combine MCP standards with the flexible architecture of Azure Functions. Visit the [Remote MCP functions sample repository](https://aka.ms/cadotnet/mcp/functions/remote-sample) for code examples.
 - [Azure MCP Server](https://github.com/Azure/azure-mcp) implements the MCP specification to seamlessly connect AI agents with key Azure services like Azure Storage, Cosmos DB, and more.
+
+Learn more about .NET and MCP using these resources:
+
+- [Microsoft partners with Anthropic to create official C# SDK for Model Context Protocol](https://devblogs.microsoft.com/blog/microsoft-partners-with-anthropic-to-create-official-c-sdk-for-model-context-protocol)
+- [Build a Model Context Protocol (MCP) server in C#](https://devblogs.microsoft.com/dotnet/build-a-model-context-protocol-mcp-server-in-csharp/)
+- [MCP C# SDK README](https://github.com/modelcontextprotocol/csharp-sdk/blob/main/README.md)
 
 ## Next steps
 

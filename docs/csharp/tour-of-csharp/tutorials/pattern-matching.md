@@ -25,7 +25,7 @@ All the examples in this tutorial use the following data. Select "Run" to start 
 > [!WARNING]
 > Don't copy and paste. The interactive window must be reset to run the following sample. If you make a mistake, the window hangs, and you need to refresh the page to continue.
 
-:::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/FirstEnumSample.cs" id="IsEnumValue":::
+:::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/FirstEnumExample.cs" id="IsEnumValue":::
 
 ## Exhaustive matches with `switch`
 

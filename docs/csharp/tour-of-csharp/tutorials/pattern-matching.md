@@ -1,7 +1,7 @@
 ---
 title: Pattern matching
-description: In this tutorial about creating types, you use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
-ms.date: 04/28/2025
+description: In this tutorial about pattern matching, you use your browser to learn C# interactively. You're going to write C# code and see the results of compiling and running your code directly in the browser.
+ms.date: 04/30/2025
 ---
 # Matching data against patterns
 
@@ -25,15 +25,15 @@ All the examples in this tutorial use the following data. Select "Run" to start 
 > [!WARNING]
 > Don't copy and paste. The interactive window must be reset to run the following sample. If you make a mistake, the window hangs, and you need to refresh the page to continue.
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/PatternMatching/Program.cs" id="IsEnumValue":::
+:::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/FirstEnumSample.cs" id="IsEnumValue":::
 
 ## Exhaustive matches with `switch`
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/PatternMatching/Program.cs" id="SwitchEnumValue":::
+:::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/EnumSwitchExample.cs" id="SwitchEnumValue":::
 
 The following code declares and uses a `record` type to represent a `Point`, and then uses that `Point` structure in the `Main` method:
 
-:::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/Program.cs" id="FinalProgram":::
+:::code language="csharp" interactive="try-dotnet" source="./snippets/PatternMatching/FinalExampleProgram.cs" id="FinalProgram":::
 
 You completed the "Introduction to pattern matching C#" interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding.
 

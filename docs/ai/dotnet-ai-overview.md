@@ -34,18 +34,18 @@ The opportunities with AI are near endless. Here are a few examples of solutions
 
 We recommend the following sequence of tutorials and articles for an introduction to developing applications with AI and .NET:
 
-| Scenario | Tutorial |
-|----------|----------|
-| Create a chat application | [Build an Azure AI chat app with .NET](../quickstarts/build-chat-app.md)|
-| Summarize text | [Summarize text using Azure AI chat app with .NET](../quickstarts/prompt-model.md) |
-| Chat with your data | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/build-vector-search-app.md) |
+| Scenario                    | Tutorial |
+|-----------------------------|----------|
+| Create a chat application   | [Build an Azure AI chat app with .NET](../quickstarts/build-chat-app.md) |
+| Summarize text              | [Summarize text using Azure AI chat app with .NET](../quickstarts/prompt-model.md) |
+| Chat with your data         | [Get insight about your data from an .NET Azure AI chat app](../quickstarts/build-vector-search-app.md) |
 | Call .NET functions with AI | [Extend Azure AI using tools and execute a local function with .NET](../quickstarts/use-function-calling.md) |
-| Generate images | [Generate images using Azure AI with .NET](../quickstarts/generate-images.md) |
-| Train your own model |[ML.NET tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
+| Generate images             | [Generate images using Azure AI with .NET](../quickstarts/generate-images.md) |
+| Train your own model        | [ML.NET tutorial](https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro) |
 
 Browse the table of contents to learn more about the core concepts, starting with [How generative AI and LLMs work](../conceptual/how-genai-and-llms-work.md).
 
 ## Next steps
 
-- [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/build-chat-app.md)
-- [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)
+* [Quickstart: Build an Azure AI chat app with .NET](../quickstarts/build-chat-app.md)
+* [Video series: Machine Learning and AI with .NET](/shows/machine-learning-and-ai-with-dotnet-for-beginners)

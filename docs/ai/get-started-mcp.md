@@ -21,7 +21,7 @@ For example, using MCP, you can connect your LLM to resources such as:
 
 Many Microsoft products already support MCP, including:
 
-- [Copilot Studio](/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents)
+- [Copilot Studio](https://www.microsoft.com/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents/)
 - [Visual Studio Code GitHub Copilot agent mode](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
 - [Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/).
 
@@ -71,6 +71,12 @@ Instead of building unique connectors for each integration point, you can often 
 - [Available MPC clients](https://modelcontextprotocol.io/clients)
 - [Available MCP servers](https://modelcontextprotocol.io/examples)
 
+### Integration with Microsoft.Extensions.AI
+
+The MCP C# SDK depends on the [Microsoft.Extensions.AI libraries](/dotnet/ai/ai-extensions) to handle various AI interactions and tasks. These extension libraries provides core types and abstractions for working with AI services, so developers can focus on coding against conceptual AI capabilities rather than specific platforms or provider implementations.
+
+View the MCP C# SDK dependencies on the [NuGet package page](https://www.nuget.org/packages/ModelContextProtocol/0.1.0-preview.11).
+
 ## More .NET MCP development resources
 
 Various tools, services, and learning resources are available in the .NET and Azure ecosystems to help you build MCP clients and servers or integrate with existing MCP servers.
@@ -87,6 +93,8 @@ Learn more about .NET and MCP using these resources:
 - [Build a Model Context Protocol (MCP) server in C#](https://devblogs.microsoft.com/dotnet/build-a-model-context-protocol-mcp-server-in-csharp/)
 - [MCP C# SDK README](https://github.com/modelcontextprotocol/csharp-sdk/blob/main/README.md)
 
-## Next steps
+## Related content
 
-The Model Context Protocol simplifies integrating large language models with external tools, services, and data sources, enabling you to build powerful, context-aware AI applications. To continue your learning journey, explore the provided resources and start building your own MCP-enabled .NET applications today.
+- [Overview of the .NET + AI ecosystem](/dotnet/ai/dotnet-ai-ecosystem)
+- [Microsoft.Extensions.AI](/dotnet/ai/ai-extensions.md)
+- [Semantic Kernel overview for .NET](/dotnet/ai/semantic-kernel-dotnet-overview)

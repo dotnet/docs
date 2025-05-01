@@ -45,6 +45,7 @@ while ((line = reader.ReadLine()) is not null)
         Console.WriteLine($"{line.Trim()} => Parsed Amount: {amount}, New Balance: {currentBalance}");
     }
 }
+// </FirstExample>
 
 Console.WriteLine();
 FirstEnumExample.ExampleProgram.Main();

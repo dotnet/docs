@@ -63,7 +63,7 @@
             yield return default;
         }
     }
-    // <ParseToRecord>
+    // </ParseToRecord>
 }
 
 public enum TransactionType

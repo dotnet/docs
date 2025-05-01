@@ -50,7 +50,7 @@ currentBalance += transaction switch
 
 After you reorder the switch arms, press the "Run" button. The compiler issues an error because the arm with `_` matches every value. As a result, that final arm with `TransactionType.Withdrawal` never runs. The compiler tells you that something's wrong in your code.
 
-The compiler issues a warning if the expression tested in a `switch` expression could contain values that don't match any switch arm. If some values could fail to match any condition, the `switch` expression isn't *exhaustive*. The compiler also issues a warning if some values of the input don't match any of the switch arms. For example, if you remove the line with `_ => 0.0,`, any invalid values don't match. At runtime, that would fail. Once you install the .NET SDK and build programs in your environment, you can test this behavior. The online experience because warnings aren't displayed in the output window. 
+The compiler issues a warning if the expression tested in a `switch` expression could contain values that don't match any switch arm. If some values could fail to match any condition, the `switch` expression isn't *exhaustive*. The compiler also issues a warning if some values of the input don't match any of the switch arms. For example, if you remove the line with `_ => 0.0,`, any invalid values don't match. At runtime, that would fail. Once you install the .NET SDK and build programs in your environment, you can test this behavior. The online experience doesn't display warnings in the output window.
 
 ## Type patterns
 

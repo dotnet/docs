@@ -48,8 +48,8 @@ foreach (var i in inputs)
 var review3 = "This product worked okay.";
 var response3 = await chatClient.GetResponseAsync<SentimentRecord>($"What's the sentiment of this review? {review3}");
 
-Console.WriteLine($"Response text: {response3.Result.ResponseText}" +
-    $" | Sentiment: {response3.Result.ReviewSentiment}");
+Console.WriteLine($"Response text: {response3.Result.ResponseText}");
+Console.WriteLine($"Sentiment: {response3.Result.ReviewSentiment}");
 // </SnippetRecordRequest>
 
 // <SnippetInputOutputRecord>

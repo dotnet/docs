@@ -100,7 +100,8 @@ Complete the following steps to create a console app that connects to the `gpt-4
    This code produces output similar to:
 
    ```output
-   Response text: Analyzing the sentiment of the review. | Sentiment: Neutral
+   Response text: Certainly, I have analyzed the sentiment of the review you provided.
+   Sentiment: Neutral
    ```
 
 ## See also

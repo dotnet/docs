@@ -4,8 +4,8 @@ description: Learn about .NET AI and MCP key concepts and development resources
 ms.date: 04/29/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: fboucher
-ms.author: frbouche
+author: alexwolfmst
+ms.author: alexwolf
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
 
@@ -15,9 +15,9 @@ The Model Context Protocol (MCP) is an open protocol designed to standardize int
 
 For example, using MCP, you can connect your LLM to resources such as:
 
-- Document databases or storage services
-- Web APIs that expose business data or logic
-- Tools that manage files or performing local tasks on a user's device
+- Document databases or storage services.
+- Web APIs that expose business data or logic.
+- Tools that manage files or performing local tasks on a user's device.
 
 Many Microsoft products already support MCP, including:
 
@@ -43,16 +43,16 @@ MCP client and server can exchange a set of standard messages:
 
 |Message  |Description  |
 |---------|---------|
-|InitializeRequest     |  This request is sent by the client to the server when it first connects, asking it to begin initialization       |
-|ListToolsRequest     |  Sent by the client to request a list of tools the server has       |
-|CallToolRequest     |  Used by the client to invoke a tool provided by the server       |
-|ListResourcesRequest     | Sent by the client to request a list of resources the server has        |
-|ReadResourceRequest     |  Sent by the client to the server, to read a specific resource URI       |
-|ListPromptsRequest     | Sent by the client to request a list of prompts and prompt templates the server has       |
-|GetPromptRequest     |  Used by the client to get a prompt provided by the server       |
-|PingRequest     |   A ping, issued by either the server or the client, to check that the other party is still alive      |
-|CreateMessageRequest     |  A request by the server to sample an LLM via the client. The client has full discretion over which model to select. The client should also inform the user before beginning sampling, to allow them to inspect the request (human in the loop) and decide whether to approve it       |
-|SetLevelRequest     | A request by the client to the server, to enable or adjust logging        |
+|`InitializeRequest`     |  This request is sent by the client to the server when it first connects, asking it to begin initialization.       |
+|`ListToolsRequest`     |  Sent by the client to request a list of tools the server has.       |
+|`CallToolRequest`     |  Used by the client to invoke a tool provided by the server.       |
+|`ListResourcesRequest`     | Sent by the client to request a list of available server resources.        |
+|`ReadResourceRequest`     |  Sent by the client to the server to read a specific resource URI.       |
+|`ListPromptsRequest`     | Sent by the client to request a list of available prompts and prompt templates from the server.       |
+|`GetPromptRequest`     |  Used by the client to get a prompt provided by the server.       |
+|`PingRequest`     |   A ping, issued by either the server or the client, to check that the other party is still alive.      |
+|`CreateMessageRequest`     |  A request by the server to sample an LLM via the client. The client has full discretion over which model to select. The client should also inform the user before beginning sampling, to allow them to inspect the request (human in the loop) and decide whether to approve it.       |
+|`SetLevelRequest`     | A request by the client to the server, to enable or adjust logging.        |
 
 ## Develop with the MCP C# SDK
 

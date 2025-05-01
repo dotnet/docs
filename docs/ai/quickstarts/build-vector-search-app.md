@@ -143,16 +143,16 @@ Complete the following steps to create a .NET console app that can:
 
 ## Add the app code
 
-1. Add a new class named **CloudService** to your project with the following properties:
+1. Add a new class named `CloudService` to your project with the following properties:
 
    :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
 
     In the preceding code:
 
     - The C# attributes provided by `Microsoft.Extensions.VectorData` influence how each property is handled when used in a vector store.
-    - The **Vector** property stores a generated embedding that represents the semantic meaning of the **Name** and **Description** for vector searches.
+    - The `Vector` property stores a generated embedding that represents the semantic meaning of the `Name` and `Description` for vector searches.
 
-1. In the **Program.cs** file, add the following code to create a data set that describes a collection of cloud services:
+1. In the `Program.cs` file, add the following code to create a data set that describes a collection of cloud services:
 
    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="DataSet":::
 
@@ -189,7 +189,7 @@ Complete the following steps to create a .NET console app that can:
     dotnet run
     ```
 
-    The app prints out the top result of the vector search, which is the cloud service that is most relevant to the original query. You can modify the query to try different search scenarios.
+    The app prints out the top result of the vector search, which is the cloud service that's most relevant to the original query. You can modify the query to try different search scenarios.
 
 :::zone target="docs" pivot="azure-openai"
 

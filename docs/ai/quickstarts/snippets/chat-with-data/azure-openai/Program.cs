@@ -64,7 +64,7 @@ await cloudServicesStore.CreateCollectionIfNotExistsAsync();
 
 foreach (CloudService service in cloudServices)
 {
-    service.Vector = await generator.GenerateEmbeddingVectorAsync(service.Description);
+    service.Vector = await generator.GenerateVectorAsync(service.Description);
     await cloudServicesStore.UpsertAsync(service);
 }
 // </SnippetVectorStore>
@@ -72,19 +72,15 @@ foreach (CloudService service in cloudServices)
 // <SnippetSearch>
 // Convert a search query to a vector and search the vector store
 string query = "Which Azure service should I use to store my Word documents?";
-ReadOnlyMemory<float> queryEmbedding = await generator.GenerateEmbeddingVectorAsync(query);
+ReadOnlyMemory<float> queryEmbedding = await generator.GenerateVectorAsync(query);
 
-VectorSearchResults<CloudService> results =
-    await cloudServicesStore.VectorizedSearchAsync(queryEmbedding, new VectorSearchOptions<CloudService>()
-    {
-        Top = 1
-    });
+List<VectorSearchResult<CloudService>> results =
+    await cloudServicesStore.SearchEmbeddingAsync(queryEmbedding, top: 1).ToListAsync();
 
-await foreach (VectorSearchResult<CloudService> result in results.Results)
+foreach (VectorSearchResult<CloudService> result in results)
 {
     Console.WriteLine($"Name: {result.Record.Name}");
     Console.WriteLine($"Description: {result.Record.Description}");
     Console.WriteLine($"Vector match score: {result.Score}");
-    Console.WriteLine();
 }
 // </SnippetSearch>

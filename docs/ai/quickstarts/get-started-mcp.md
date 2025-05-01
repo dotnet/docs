@@ -4,7 +4,7 @@ description: Learn about .NET AI and MCP key concepts and development resources
 ms.date: 04/29/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: alexwolfmst
+author: alexwolfmsft
 ms.author: alexwolf
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---
@@ -41,9 +41,9 @@ The following diagram illustrates this architecture:
 
 MCP client and server can exchange a set of standard messages:
 
-|Message  |Description  |
-|---------|---------|
-|`InitializeRequest`     |  This request is sent by the client to the server when it first connects, asking it to begin initialization.       |
+| Message             | Description |
+|---------------------|-------------|
+| `InitializeRequest` | This request is sent by the client to the server when it first connects, asking it to begin initialization. |
 |`ListToolsRequest`     |  Sent by the client to request a list of tools the server has.       |
 |`CallToolRequest`     |  Used by the client to invoke a tool provided by the server.       |
 |`ListResourcesRequest`     | Sent by the client to request a list of available server resources.        |

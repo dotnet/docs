@@ -37,7 +37,7 @@ MCP uses a client-server architecture that enables an AI-powered app (the host) 
 
 The following diagram illustrates this architecture:
 
-:::image type="content" source="../media/mcp/model-context-protocol-architecture-diagram.png" alt-text="A diagram showing the architecture pattern of MCP, including hosts, clients, and servers.":::
+:::image type="content" source="media/mcp/model-context-protocol-architecture-diagram.png" alt-text="A diagram showing the architecture pattern of MCP, including hosts, clients, and servers.":::
 
 MCP client and server can exchange a set of standard messages:
 
@@ -96,5 +96,5 @@ Learn more about .NET and MCP using these resources:
 ## Related content
 
 - [Overview of the .NET + AI ecosystem](/dotnet/ai/dotnet-ai-ecosystem)
-- [Microsoft.Extensions.AI](/dotnet/ai/ai-extensions.md)
+- [Microsoft.Extensions.AI](/dotnet/ai/ai-extensions)
 - [Semantic Kernel overview for .NET](/dotnet/ai/semantic-kernel-dotnet-overview)

@@ -13,6 +13,6 @@ internal class CloudService
     [VectorStoreRecordData]
     public string Description { get; set; }
 
-    [VectorStoreRecordVector(384, DistanceFunction.CosineSimilarity)]
+    [VectorStoreRecordVector(Dimensions: 384, DistanceFunction = DistanceFunction.CosineSimilarity)]
     public ReadOnlyMemory<float> Vector { get; set; }
 }

@@ -3,7 +3,7 @@ title: Trimming options
 description: Learn how to control trimming of self-contained apps using MSBuild properties. For example, set trimming granularity or suppress trim analysis warnings.
 author: sbomer
 ms.author: svbomer
-ms.date: 08/29/2024
+ms.date: 05/01/2025
 ms.topic: reference
 ---
 

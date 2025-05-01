@@ -79,7 +79,7 @@ Complete the following steps to create a console app that connects to the `gpt-4
 
    Send the request using the record type as the type argument to `GetResponseAsync<T>`:
 
-   :::code language="csharp" source="./snippets/structured-output/Program.cs" id="InputRecordRequest":::
+   :::code language="csharp" source="./snippets/structured-output/Program.cs" id="RecordRequest":::
 
 ## See also
 

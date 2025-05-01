@@ -8,7 +8,7 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 # Request a response with structured output
 
-In this quickstart, you create a chat app that requests a response with *structured output*. A structured output response is a chat response that's of a type that you specify instead of just plain text. The chat app you create analyzes sentiment of various product reviews, categorizing each review according to the values of a custom enumeration.
+In this quickstart, you create a chat app that requests a response with *structured output*. A structured output response is a chat response that's of a type you specify instead of just plain text. The chat app you create in this quickstart analyzes sentiment of various product reviews, categorizing each review according to the values of a custom enumeration.
 
 ## Prerequisites
 
@@ -63,15 +63,31 @@ Complete the following steps to create a console app that connects to the `gpt-4
 
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="GetChatClient":::
 
-1. Send a request to the model with a single product review, and then write the analyzed sentiment to the console. You declare the requested structured output type by passing it as the type argument to the <xref:Microsoft.Extensions.AI.ChatClientStructuredOutputExtensions.GetResponseAsync``1(Microsoft.Extensions.AI.IChatClient,System.String,Microsoft.Extensions.AI.ChatOptions,System.Nullable{System.Boolean},System.Threading.CancellationToken)?displayProperty=nameWithType> extension method.
+1. Send a request to the model with a single product review, and then print the analyzed sentiment to the console. You declare the requested structured output type by passing it as the type argument to the <xref:Microsoft.Extensions.AI.ChatClientStructuredOutputExtensions.GetResponseAsync``1(Microsoft.Extensions.AI.IChatClient,System.String,Microsoft.Extensions.AI.ChatOptions,System.Nullable{System.Boolean},System.Threading.CancellationToken)?displayProperty=nameWithType> extension method.
 
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="SimpleRequest":::
+
+   This code produces output similar to:
+
+   ```output
+   Sentiment: Positive
+   ```
 
 1. Instead of just analyzing a single review, you can analyze a collection of reviews.
 
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="MultipleReviews":::
 
-1. Finally, instead of requesting just the analyzed enumeration value, you can request the text response along with the analyzed value. This might be useful if you want to evaluate the accuracy of the analyzed sentiment, for example.
+   This code produces output similar to:
+
+   ```output
+   Review: Best purchase ever! | Sentiment: Positive
+   Review: Returned it immediately. | Sentiment: Negative
+   Review: Hello | Sentiment: Neutral
+   Review: It works as advertised. | Sentiment: Neutral
+   Review: The packaging was damaged but otherwise okay. | Sentiment: Neutral
+   ```
+
+1. And instead of requesting just the analyzed enumeration value, you can request the text response along with the analyzed value.
 
    Define a record type to contain the text response and analyzed sentiment:
 
@@ -80,6 +96,12 @@ Complete the following steps to create a console app that connects to the `gpt-4
    Send the request using the record type as the type argument to `GetResponseAsync<T>`:
 
    :::code language="csharp" source="./snippets/structured-output/Program.cs" id="RecordRequest":::
+
+   This code produces output similar to:
+
+   ```output
+   Response text: Analyzing the sentiment of the review. | Sentiment: Neutral
+   ```
 
 ## See also
 

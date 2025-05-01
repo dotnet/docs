@@ -28,14 +28,6 @@ var response = await chatClient.GetResponseAsync<Sentiment>($"What's the sentime
 Console.WriteLine($"Sentiment: {response.Result}");
 // </SnippetSimpleRequest>
 
-// <SnippetRecordRequest>
-var review2 = "This product worked okay.";
-var response2 = await chatClient.GetResponseAsync<SentimentRecord>($"What's the sentiment of this review? {review2}");
-
-Console.WriteLine($"Text: {response2.Result.Text}" +
-    $" | Sentiment: {response2.Result.CustomerSentiment}");
-// </SnippetRecordRequest>
-
 // <SnippetMultipleReviews>
 string[] inputs = [
     "Best purchase ever!",
@@ -47,13 +39,21 @@ string[] inputs = [
 
 foreach (var i in inputs)
 {
-    var response3 = await chatClient.GetResponseAsync<Sentiment>($"What's the sentiment of this review? {i}");
-    Console.WriteLine($"Text: {i} | Sentiment: {response3.Result}");
+    var response2 = await chatClient.GetResponseAsync<Sentiment>($"What's the sentiment of this review? {i}");
+    Console.WriteLine($"Review: {i} | Sentiment: {response2.Result}");
 }
 // </SnippetMultipleReviews>
 
+// <SnippetRecordRequest>
+var review3 = "This product worked okay.";
+var response3 = await chatClient.GetResponseAsync<SentimentRecord>($"What's the sentiment of this review? {review3}");
+
+Console.WriteLine($"Response text: {response3.Result.ResponseText}" +
+    $" | Sentiment: {response3.Result.ReviewSentiment}");
+// </SnippetRecordRequest>
+
 // <SnippetInputOutputRecord>
-record SentimentRecord(string Text, Sentiment? CustomerSentiment);
+record SentimentRecord(string ResponseText, Sentiment ReviewSentiment);
 // </SnippetInputOutputRecord>
 
 // <SnippetSentimentEnum>

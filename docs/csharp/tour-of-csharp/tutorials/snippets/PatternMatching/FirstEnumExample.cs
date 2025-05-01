@@ -45,7 +45,7 @@ public static class ExampleProgram
     {
         var reader = new StringReader(inputText);
         string? line;
-        while ((line = reader.ReadLine()) != null)
+        while ((line = reader.ReadLine()) is not null)
         {
             string[] parts = line.Split(',');
 
@@ -58,7 +58,7 @@ public static class ExampleProgram
                 else if (transactionType?.ToUpper() is "WITHDRAWAL")
                     yield return (TransactionType.Withdrawal, amount);
             }
-            yield return (default, 0.0);
+            yield return (TransactionType.Invalid, 0.0);
         }
     }
 }
@@ -66,6 +66,7 @@ public static class ExampleProgram
 public enum TransactionType
 {
     Deposit,
-    Withdrawal
+    Withdrawal,
+    Invalid
 }
 // </IsEnumValue>

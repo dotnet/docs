@@ -1,5 +1,4 @@
-﻿// <FinalProgram>
-public static class ExampleProgram
+﻿public static class ExampleProgram
 {
     const string bankRecords = """
     DEPOSIT,   10000, Initial balance
@@ -29,23 +28,26 @@ public static class ExampleProgram
     {
         double currentBalance = 0.0;
 
+        // <TypePattern>
         foreach (var transaction in TransactionRecordType(bankRecords))
         {
             currentBalance += transaction switch
             {
                 Deposit d => d.Amount,
                 Withdrawal w => -w.Amount,
-                _ => 0.0
+                _ => 0.0,
             };
             Console.WriteLine($" {transaction} => New Balance: {currentBalance}");
         }
+        // </TypePattern>
     }
 
+    // <ParseToRecord>
     public static IEnumerable<object?> TransactionRecordType(string inputText)
     {
         var reader = new StringReader(inputText);
         string? line;
-        while ((line = reader.ReadLine()) != null)
+        while ((line = reader.ReadLine()) is not null)
         {
             string[] parts = line.Split(',');
 
@@ -61,15 +63,17 @@ public static class ExampleProgram
             yield return default;
         }
     }
+    // <ParseToRecord>
 }
 
 public enum TransactionType
 {
     Deposit,
-    Withdrawal
+    Withdrawal,
+    Invalid
 }
 
+// <RecordDeclarations>
 public record Deposit(double Amount, string description);
 public record Withdrawal(double Amount, string description);
-
-// </FinalProgram>
+// </RecordDeclarations>

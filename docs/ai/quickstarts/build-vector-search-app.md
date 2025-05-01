@@ -77,9 +77,10 @@ Complete the following steps to create a .NET console app that can:
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet add package System.Linq.AsyncEnumerable
     ```
 
-    The following list describes what each package is used for in the `VectorDataAI` app:
+    The following list describes each package in the `VectorDataAI` app:
 
     - [`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity) provides [`Microsoft Entra ID`](/entra/fundamentals/whatis) token authentication support across the Azure SDK using classes such as `DefaultAzureCredential`.
     - [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) is the official package for using OpenAI's .NET library with the Azure OpenAI Service.
@@ -98,9 +99,10 @@ Complete the following steps to create a .NET console app that can:
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+    dotnet add package System.Linq.AsyncEnumerable
     ```
 
-    The following list describes what each package is used for in the `VectorDataAI` app:
+    The following list describes each package in the `VectorDataAI` app:
 
     - [`Microsoft.Extensions.AI.OpenAI`](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) provides AI abstractions for OpenAI-compatible models or endpoints. This library also includes the official [`OpenAI`](https://www.nuget.org/packages/OpenAI) library for the OpenAI service API as a dependency.
     - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.

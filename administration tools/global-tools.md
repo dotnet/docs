@@ -1,12 +1,12 @@
----
-title: .NET tools
-description: How to install, use, update, and remove .NET tools. Covers global tools, tool-path tools, and local tools. 
-author: KathleenDollard
-ms.topic: how-to
-ms.date: 07/25/2023
-ms.custom: devdivchpfy22
----
-# How to manage .NET tools
+Global administration tools
+updates,.NET tools, global tools, tool-path tools, and local tools
+title: mccoylstevens/docs-1
+description: short/updates,NET tools, global tools, tool-path tools, and local tools. 
+author: mccoylstevens
+if your reading this then its too late 
+ms.date:05/02/2025
+ms.custom: mccoylstevens/docs-1
+Global administration tools
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions.
 

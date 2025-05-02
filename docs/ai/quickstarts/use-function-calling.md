@@ -75,7 +75,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     :::zone-end
 
-1. Open the app in Visual Studio code or your editor of choice
+1. Open the app in Visual Studio Code or your editor of choice
 
     ```bash
     code .

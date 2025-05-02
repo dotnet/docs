@@ -10,6 +10,9 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 In this quickstart, you create a chat app that requests a response with *structured output*. A structured output response is a chat response that's of a type you specify instead of just plain text. The chat app you create in this quickstart analyzes sentiment of various product reviews, categorizing each review according to the values of a custom enumeration.
 
+> [!NOTE]
+> The <xref:Microsoft.Extensions.AI> library, which is used in this quickstart, is currently in Preview.
+
 ## Prerequisites
 
 - [.NET 8 or a later version](https://dotnet.microsoft.com/download)

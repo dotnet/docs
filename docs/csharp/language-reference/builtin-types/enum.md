@@ -50,7 +50,7 @@ If you want an enumeration type to represent a combination of choices, define en
 
 [!code-csharp[enum flags](snippets/shared/EnumType.cs#Flags)]
 
-For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](/dotnet/fundamentals/runtime-libraries/system-enum#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
+For more information and examples, see the <xref:System.FlagsAttribute?displayProperty=nameWithType> API reference page and the [Non-exclusive members and the Flags attribute](../../../fundamentals/runtime-libraries/system-enum.md#non-exclusive-members-and-the-flags-attribute) section of the <xref:System.Enum?displayProperty=nameWithType> API reference page.
 
 ## The System.Enum type and enum constraint
 

@@ -56,7 +56,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```
@@ -67,7 +67,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet add package OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
     ```

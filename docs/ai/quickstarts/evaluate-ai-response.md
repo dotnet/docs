@@ -24,7 +24,7 @@ To provision an Azure OpenAI service and model using the Azure portal, complete 
 
 ## Create the test app
 
-Complete the following steps to create an MSTest project that connects to your local `phi3:mini` AI model.
+Complete the following steps to create an MSTest project that connects to the `gpt-4o` AI model.
 
 1. In a terminal window, navigate to the directory where you want to create your app, and create a new MSTest app with the `dotnet new` command:
 

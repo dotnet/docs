@@ -52,7 +52,7 @@ public static class Enumerable
         public static IEnumerable<TSource> Combine(IEnumerable<TSource> first, IEnumerable<TSource> second) { ... }
 
         // static extension property:
-        public static IEnumerable<TSource> Identity => yield return default;
+        public static IEnumerable<TSource> Identity => Enumerable.Empty<TSource>();
     }
 }
 ```

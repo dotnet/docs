@@ -1,0 +1,137 @@
+- name: Azure for .NET developers
+  href: index.yml
+- name: Get started on Azure with .NET
+  expanded: true
+  items:
+    - name: Introduction to Azure and .NET
+      href: intro.md
+    - name: Key Azure services for .NET developers
+      href: key-azure-services.md
+- name: Configure your development environment
+  items:
+  - name: Create an Azure account
+    href: create-azure-account.md
+  - name: Configure Visual Studio for Azure development (Windows)
+    href: configure-visual-studio.md
+  - name: Configure VS Code for Azure development (cross-platform)
+    href: configure-vs-code.md
+  - name: Install the Azure CLI
+    href: install-azure-cli.md
+  - name: Install additional tools
+    href: azure-tools.md
+  - name: Development setup checklist
+    href: dotnet-dev-env-checklist.md
+- name: Migrate to Azure
+  items:
+    - name: Azure Migrate application and code assessment
+      items:
+      - name: Overview
+        href: ./migration/appcat/app-code-assessment-toolkit.md
+      - name: Install
+        href: ./migration/appcat/install.md
+      - name: Visual Studio walkthrough
+        href: ./migration/appcat/visual-studio.md
+      - name: Visual Studio Copilot assessment
+        href: ./migration/appcat/visual-studio-copilot.md
+      - name: .NET CLI walkthrough
+        href: ./migration/appcat/dotnet-cli.md
+      - name: Interpret the results
+        href: ./migration/appcat/interpret-results.md
+      - name: Custom configuration
+        href: ./migration/appcat/custom-configuration.md
+      - name: FAQ
+        href: ./migration/appcat/faq.md
+    - name: Choose the right Azure hosting option
+      href: ./migration/choose.md
+    - name: Migrate a .NET web app or service to Azure App Service
+      href: ./migration/app-service.md
+    - name: Migrate an ASP.NET app to an Azure VM
+      href: ./migration/vm.md
+    - name: Migrate a SQL Server database to Azure
+      href: ./migration/sql.md
+- name: AI for .NET
+  href: ../ai/overview.md?toc=/dotnet/azure/toc.json&bc=/dotnet/breadcrumb/toc.json
+- name: Azure SDK for .NET
+  items:
+    - name: What is the Azure SDK for .NET?
+      href: ./sdk/azure-sdk-for-dotnet.md
+    - name: Authentication
+      items:
+      - name: Overview
+        href: ./sdk/authentication/index.md
+      - name: Auth during local development
+        items:
+        - name: Use a developer account
+          href: ./sdk/authentication/local-development-dev-accounts.md
+        - name: Use a service principal
+          href: ./sdk/authentication/local-development-service-principal.md
+      - name: Auth from Azure-hosted apps
+        items:
+        - name: Use a system-assigned managed identity
+          href: ./sdk/authentication/system-assigned-managed-identity.md
+        - name: Use a user-assigned managed identity
+          href: ./sdk/authentication/user-assigned-managed-identity.md
+      - name: Auth from on-premises apps
+        href: ./sdk/authentication/on-premises-apps.md
+      - name: Auth via configuration files
+        href: ./sdk/authentication/create-token-credentials-from-configuration.md
+      - name: Additional auth methods
+        href: ./sdk/authentication/additional-methods.md
+      - name: Credential chains
+        href: ./sdk/authentication/credential-chains.md
+      - name: Best practices
+        href: ./sdk/authentication/best-practices.md
+    - name: ASP.NET Core guidance
+      href: ./sdk/aspnetcore-guidance.md
+    - name: Resource management
+      href: ./sdk/resource-management.md
+    - name: Dependency injection
+      href: ./sdk/dependency-injection.md
+    - name: Thread safety
+      href: ./sdk/thread-safety.md
+    - name: Logging
+      href: ./sdk/logging.md
+    - name: Pagination
+      href: ./sdk/pagination.md
+    - name: Unit testing and mocking
+      href: ./sdk/unit-testing-mocking.md
+    - name: Configure a proxy
+      href: ./sdk/configure-proxy.md
+    - name: Library method types
+      href: ./sdk/protocol-convenience-methods.md
+    - name: Packages list
+      href: ./sdk/packages.md
+    - name: SDK example
+      href: /samples/dotnet/samples/azure-identity-resource-management-storage/
+- name: Sample code
+  items:
+  - name: Web apps & serverless
+    href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-functions%2Cazure-app-service%2Cazure-logic-apps
+  - name: Databases
+    href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-cosmos-db%2Cazure-sql-database
+  - name: Storage
+    items:
+      - name: Azure Storage
+        href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-storage
+      - name: Redis Cache
+        href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-redis-cache
+  - name: Identity & Security
+    href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-active-directory%2Cazure-key-vault
+  - name: IoT
+    href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-iot-hub%2Cazure-iot-edge%2Cazure-iot-central
+  - name: Data science
+    items:
+      - name: Machine learning service
+        href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-machine-learning-service
+      - name: Databricks
+        href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-databricks
+      - name: HDInsight
+        href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-hdinsight
+  - name: AI with Cognitive Services
+    href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-cognitive-services
+  - name: Search
+    href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb&products=azure-search
+  - name: All samples
+    href: /samples/browse/?languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
+- name: API reference
+  href: /dotnet/api/overview/azure/?view=azure-dotnet&preserve-view=true

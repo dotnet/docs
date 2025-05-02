@@ -1039,7 +1039,7 @@ items:
         href: runtime-libraries/system-random.md
       - name: Artificial intelligence (AI)
         displayName: microsoft.extensions.ai,ollama,ai,openai,azure inference,ichatclient
-        href: ../core/extensions/artificial-intelligence.md
+        href: ../ai/microsoft-extensions-ai.md?toc=/dotnet/fundamentals/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Dependency injection
         items:
           - name: Overview
@@ -1096,6 +1096,8 @@ items:
           - name: High-performance logging
             href: ../core/extensions/high-performance-logging.md
             displayName: high-performance logging,high-performance log,high-performance logging provider,high-performance log provider
+          - name: Log Sampling
+            href: ../core/extensions/log-sampling.md
           - name: Console log formatting
             href: ../core/extensions/console-log-formatter.md
             displayName: console log formatting,console log formatter,console log formatting provider,console log formatter provider

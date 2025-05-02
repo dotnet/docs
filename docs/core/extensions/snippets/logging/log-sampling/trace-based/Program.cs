@@ -8,16 +8,16 @@ using OpenTelemetry.Trace;
 
 using ActivitySource demoSource = new("LogSamplingTraceBased");
 
-var hostBuilder = Host.CreateApplicationBuilder(args);
+var builder = Host.CreateApplicationBuilder(args);
 
-hostBuilder.Logging.AddSimpleConsole(options =>
+builder.Logging.AddSimpleConsole(options =>
 {
     options.SingleLine = true;
     options.TimestampFormat = "hh:mm:ss";
 });
 
 // Add the Random probabilistic sampler to the logging pipeline.
-hostBuilder.Logging.AddTraceBasedSampler();
+builder.Logging.AddTraceBasedSampler();
 
 using var tracerProvider = Sdk.CreateTracerProviderBuilder()
     // Enable Tracing sampling configured with 50% probability:
@@ -26,7 +26,7 @@ using var tracerProvider = Sdk.CreateTracerProviderBuilder()
     .AddConsoleExporter()
     .Build();
 
-using var app = hostBuilder.Build();
+using var app = builder.Build();
 
 var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
 var logger = loggerFactory.CreateLogger("SamplingDemo");

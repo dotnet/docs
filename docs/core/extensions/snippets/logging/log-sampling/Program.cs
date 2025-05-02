@@ -3,18 +3,18 @@ using Microsoft.Extensions.Diagnostics.Sampling;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-var hostBuilder = Host.CreateApplicationBuilder();
-hostBuilder.Logging.AddSimpleConsole(options =>
+var builder = Host.CreateApplicationBuilder();
+builder.Logging.AddSimpleConsole(options =>
 {
     options.SingleLine = true;
     options.TimestampFormat = "hh:mm:ss";
 });
 
 // Add the Random probabilistic sampler to the logging pipeline.
-hostBuilder.Logging.AddRandomProbabilisticSampler(0.01, LogLevel.Information);
-hostBuilder.Logging.AddRandomProbabilisticSampler(0.1, LogLevel.Warning);
+builder.Logging.AddRandomProbabilisticSampler(0.01, LogLevel.Information);
+builder.Logging.AddRandomProbabilisticSampler(0.1, LogLevel.Warning);
 
-using var app = hostBuilder.Build();
+using var app = builder.Build();
 
 var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
 var logger = loggerFactory.CreateLogger("SamplingDemo");

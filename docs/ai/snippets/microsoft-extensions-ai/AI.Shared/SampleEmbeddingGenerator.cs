@@ -23,10 +23,13 @@ public sealed class SampleEmbeddingGenerator(
     }
 
     public object? GetService(Type serviceType, object? serviceKey) =>
-        serviceKey is not null ? null :
-        serviceType == typeof(EmbeddingGeneratorMetadata) ? _metadata :
-        serviceType?.IsInstanceOfType(this) is true ? this :
-        null;
+        serviceKey is not null
+        ? null
+        : serviceType == typeof(EmbeddingGeneratorMetadata)
+            ? _metadata
+            : serviceType?.IsInstanceOfType(this) is true
+                ? this
+                : null;
 
     void IDisposable.Dispose() { }
 }

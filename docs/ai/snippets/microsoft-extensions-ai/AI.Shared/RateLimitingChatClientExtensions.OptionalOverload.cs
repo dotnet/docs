@@ -7,7 +7,13 @@ using System.Threading.RateLimiting;
 
 public static class RateLimitingChatClientExtensions
 {
-    public static ChatClientBuilder UseRateLimiting(this ChatClientBuilder builder, RateLimiter? rateLimiter = null) =>
-        builder.Use((innerClient, services) => new RateLimitingChatClient(innerClient, services.GetRequiredService<RateLimiter>()));
+    public static ChatClientBuilder UseRateLimiting(
+        this ChatClientBuilder builder,
+        RateLimiter? rateLimiter = null) =>
+        builder.Use((innerClient, services) =>
+            new RateLimitingChatClient(
+                innerClient,
+                services.GetRequiredService<RateLimiter>())
+        );
 }
 // </two>

@@ -64,7 +64,7 @@ There are several ways to configure random probabilistic sampling with its rules
 
 Create a configuration section in your _appsettings.json_, for example:
 
-:::code language="json" source="snippets/logging/logging-sampling/file-config/appsettings.json" :::
+:::code language="json" source="snippets/logging/log-sampling/file-config/appsettings.json" :::
 
 The preceding configuration:
 
@@ -119,7 +119,7 @@ The preceding configuration:
 
 For basic scenarios, you can configure a single probability value that applies to all logs at or below a specified level:
 
-:::code language="csharp" source="snippets/logging/logging-sampling/Program.cs" range="14-15":::
+:::code language="csharp" source="snippets/logging/log-sampling/Program.cs" range="14-15":::
 
 The code above registers the sampler which would sample 10% of <xref:Microsoft.Extensions.Logging.LogLevel.Warning> logs and 1% of <xref:Microsoft.Extensions.Logging.LogLevel.Information> (and below) logs.
 If the configuration did not have the rule for <xref:Microsoft.Extensions.Logging.LogLevel.Information>, it would have sampled 10% of <xref:Microsoft.Extensions.Logging.LogLevel.Warning> logs and all levels below, including <xref:Microsoft.Extensions.Logging.LogLevel.Information>.

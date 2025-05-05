@@ -111,7 +111,7 @@ conceptualContent:
     # Card
     - title: Develop .NET apps
       links:
-        - url: ai/quickstarts/get-started-openai.md
+        - url: ai/quickstarts/build-chat-app.md
           itemType: quickstart
           text: Build an Azure AI chat app with .NET
         - url: /dotnet/desktop/wpf/get-started/create-app-visual-studio
@@ -316,7 +316,7 @@ additionalContent:
           links:
             - url: ai/index.yml
               text: AI for .NET developers
-            - url: ai/quickstarts/get-started-openai.md
+            - url: ai/quickstarts/build-chat-app.md
               text: Build a chat app
             - url: ai/conceptual/prompt-engineering-dotnet.md
               text: Understand prompt engineering

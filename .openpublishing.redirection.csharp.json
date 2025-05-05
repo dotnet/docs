@@ -4042,12 +4042,12 @@
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
         },
         {
-            "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings.md",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
+            "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings.yml",
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/introduction-to-classes.md",
@@ -4060,7 +4060,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/local-environment.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/",
             "redirect_document_id": true
         },
         {
@@ -4209,6 +4209,14 @@
             "redirect_url": "/dotnet/csharp/tutorials/top-level-statements"
         },
         {
+            "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings.yml",
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+        },
+        {
             "source_path_from_root": "/docs/csharp/tutorials/generate-consume-asynchronous-stream.md",
             "redirect_url": "/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream"
         },
@@ -4242,11 +4250,11 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local"
+            "redirect_url": "/dotnet/csharp/tutorials/interpolated-strings"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/interpolated-strings.yml",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
+            "redirect_url": "/dotnet/csharp/tutorials/interpolated-strings"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/introduction-to-classes.md",

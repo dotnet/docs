@@ -21,20 +21,20 @@ landingContent:
   # Card
   - title: Get started
     linkLists:
-      - linkListType: get-started
+      - linkListType: overview
         links:
           - text: Develop .NET apps with AI features
             url: overview.md
-          - text: Connect to and prompt an AI model
-            url: quickstarts/prompt-model.md
           - text: Microsoft.Extensions.AI libraries
             url: microsoft-extensions-ai.md
+      - linkListType: get-started
+        links:
+          - text: Connect to and prompt an AI model
+            url: quickstarts/prompt-model.md
           - text: Build an Azure AI chat app
-            url: quickstarts/get-started-openai.md
-          - text: Summarize text using an Azure OpenAI chat app
-            url: quickstarts/quickstart-openai-summarize-text.md
+            url: quickstarts/build-chat-app.md
           - text: Generate images using Azure AI
-            url: quickstarts/quickstart-openai-generate-images.md
+            url: quickstarts/generate-images.md
 
   # Card
   - title: Essential concepts

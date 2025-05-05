@@ -88,7 +88,7 @@ For more information about custom formatting, see the [Custom formatting with IC
 
 ## Other resources
 
-If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/interpolated-strings.md) interactive tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
+If you're new to string interpolation, see the [String interpolation in C#](../../tutorials/string-interpolation.md) interactive tutorial. That tutorial demonstrates how to use interpolated strings to produce formatted strings.
 
 ## Compilation of interpolated strings
 

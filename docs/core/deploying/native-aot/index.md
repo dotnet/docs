@@ -134,7 +134,7 @@ Native AOT apps have the following limitations:
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).
 - <xref:System.Linq.Expressions> always use their interpreted form, which is slower than run-time generated compiled code.
-- Generic interface methods and generic virtual methods substituted with structs (e.g. `public abstract M<T>(T t)` vs. `public abstract M(object o)` or `public abstract M<T>(T t) where T : class`) are slower and consume more disk space than in CoreCLR. Widespread use may cause significant performance degredation.
+- Generic parameters substituted with struct type arguments will have specialized code generated for each instantiation. In CoreCLR, many instantiations are generated on-demand. In Native AOT, all instantiations are pre-generated. This can have significant impact to the disk size of the application. Generic virtual methods and generic instance methods will also have an instantiation for every implementing or overriding type.
 - Not all the runtime libraries are fully annotated to be Native AOT compatible. That is, some warnings in the runtime libraries aren't actionable by end developers.
 - [Diagnostic support for debugging and profiling](./diagnostics.md) with some limitations.
 - Support for some ASP.NET Core features. For more information, see [ASP.NET Core support for Native AOT](/aspnet/core/fundamentals/native-aot/).

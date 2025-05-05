@@ -41,7 +41,7 @@ The following table provides an inventory of environment variables that can be s
 
 For a deep understanding of how these environment variables are processed, see [the code](https://github.com/Azure/azure-sdk-for-net/blob/9aa3b3a44f81bc0be5a4fc86607e0150ba9815d5/sdk/core/Azure.Core/src/Pipeline/Internal/HttpEnvironmentProxy.cs#L31). Be aware of the following behaviors:
 
-- Each environment variable in the preceding table, except `GATEWAY_INTERFACE`, can alternatively be defined as lowercase. The lowercase form takes precedence over the uppercase form.`
+- Each environment variable in the preceding table, except `GATEWAY_INTERFACE`, can alternatively be defined as lowercase. The lowercase form takes precedence over the uppercase form.
 - If both `http_proxy` and `GATEWAY_INTERFACE` are undefined, `HTTP_PROXY` is used.
 - `ALL_PROXY` is considered only when either an HTTP or an HTTPS proxy is undefined.
 - Protocol-specific environment variables take precedence over `ALL_PROXY`.

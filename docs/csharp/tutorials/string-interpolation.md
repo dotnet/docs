@@ -7,7 +7,7 @@ ms.date: 05/05/2025
 ---
 # String interpolation in C\#
 
-This tutorial shows you how to use [string interpolation](../language-reference/tokens/interpolated.md) to format and include expression results in a result string. The examples assume that you are familiar with basic C# concepts and .NET type formatting. For more information about formatting types in .NET, see [Formatting types in .NET](../../standard/base-types/formatting-types.md).
+This tutorial shows you how to use [string interpolation](../language-reference/tokens/interpolated.md) to format and include expression results in a result string. The examples assume that you're familiar with basic C# concepts and .NET type formatting. For more information about formatting types in .NET, see [Formatting types in .NET](../../standard/base-types/formatting-types.md).
 
 ## Introduction
 
@@ -24,7 +24,7 @@ As the example shows, you include an expression in an interpolated string by enc
 Interpolated strings support all the capabilities of the [string composite formatting](../../standard/base-types/composite-formatting.md) feature. That makes them a more readable alternative to the use of the <xref:System.String.Format%2A?displayProperty=nameWithType> method. Every interpolated string must have:
 
 - A string literal that begins with the `$` character before its opening quotation mark character. There can't be any spaces between the `$` symbol and the quotation mark character.
-- One or more *interpolation expressions*. An interpolation expression is indicated by an opening and closing brace (`{` and `}`). You can put any C# expression that returns a value (including `null`) inside the braces.
+- One or more *interpolation expressions*. You indicate an interpolation expression with an opening and closing brace (`{` and `}`). You can put any C# expression that returns a value (including `null`) inside the braces.
 
 C# evaluates the expression between the `{` and `}` characters with the following rules:
 
@@ -33,7 +33,7 @@ C# evaluates the expression between the `{` and `}` characters with the followin
 
 ## How to specify a format string for an interpolation expression
 
-To specify a format string that's supported by the type of the expression result, follow the interpolation expression with a colon (":") and the format string:
+To specify a format string supported by the type of the expression result, follow the interpolation expression with a colon (":") and the format string:
 
 ```csharp
 {<interpolationExpression>:<formatString>}
@@ -77,7 +77,7 @@ For more information, see the [Width component](../../standard/base-types/compos
 
 Interpolated strings support all escape sequences that can be used in ordinary string literals. For more information, see [String escape sequences](../programming-guide/strings/index.md#string-escape-sequences).
 
-To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with the both `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
+To interpret escape sequences literally, use a [verbatim](../language-reference/tokens/verbatim.md) string literal. An interpolated verbatim string starts with both the `$` and `@` characters. You can use `$` and `@` in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings.
 
 To include a brace, "{" or "}", in a result string, use two braces, "{{" or "}}". For more information, see the [Escaping braces](../../standard/base-types/composite-formatting.md#escaping-braces) section of the [Composite formatting](../../standard/base-types/composite-formatting.md) article.
 

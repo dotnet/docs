@@ -73,7 +73,7 @@ Instead of building unique connectors for each integration point, you can often 
 
 ### Integration with Microsoft.Extensions.AI
 
-The MCP C# SDK depends on the [Microsoft.Extensions.AI libraries](ai-extensions.md) to handle various AI interactions and tasks. These extension libraries provides core types and abstractions for working with AI services, so developers can focus on coding against conceptual AI capabilities rather than specific platforms or provider implementations.
+The MCP C# SDK depends on the [Microsoft.Extensions.AI libraries](/dotnet/ai/ai-extensions) to handle various AI interactions and tasks. These extension libraries provides core types and abstractions for working with AI services, so developers can focus on coding against conceptual AI capabilities rather than specific platforms or provider implementations.
 
 View the MCP C# SDK dependencies on the [NuGet package page](https://www.nuget.org/packages/ModelContextProtocol/0.1.0-preview.11).
 

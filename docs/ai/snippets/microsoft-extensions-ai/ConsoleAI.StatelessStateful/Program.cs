@@ -18,7 +18,7 @@ while (true)
 // </Snippet1>
 
 // <Snippet2>
-ChatOptions statefulOptions = new() { ChatThreadId = "my-conversation-id" };
+ChatOptions statefulOptions = new() { ConversationId = "my-conversation-id" };
 while (true)
 {
     Console.Write("Q: ");
@@ -38,7 +38,7 @@ while (true)
     ChatResponse response = await client.GetResponseAsync(message, options);
     Console.WriteLine(response);
 
-    options.ChatThreadId = response.ChatThreadId;
+    options.ConversationId = response.ConversationId;
 }
 // </Snippet3>
 
@@ -53,8 +53,8 @@ while (true)
     ChatResponse response = await client.GetResponseAsync(chatHistory);
     Console.WriteLine(response);
 
-    chatOptions.ChatThreadId = response.ChatThreadId;
-    if (response.ChatThreadId is not null)
+    chatOptions.ConversationId = response.ConversationId;
+    if (response.ConversationId is not null)
     {
         chatHistory.Clear();
     }

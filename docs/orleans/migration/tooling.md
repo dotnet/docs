@@ -48,4 +48,7 @@ Reminder data is also stored differently in Orleans 7.x+, and its migration foll
 5. **Adjust migration mode** to reduce or eliminate dependency on source storage. Repeat as needed until you are ready to transition fully to Orleans 7.x+.
 
 ### Runtime Migration
-_(To be continued...)_
+
+Most of the grains are accessed during the application runtime, and they will be written into the destination storage in Orleans7.x+ format. 
+
+### Offline Migration

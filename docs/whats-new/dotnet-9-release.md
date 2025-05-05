@@ -158,7 +158,7 @@ This article lists some of the major changes to docs for .NET 9.
 - [The history of C\#](../csharp/whats-new/csharp-version-history.md) - Add conceptual content for partial properties
 - [The lock statement - ensure exclusive access to a shared resource](../csharp/language-reference/statements/lock.md) - Add language reference for `lock`
 - [Type-testing operators and cast expressions - `is`, `as`, `typeof` and casts](../csharp/language-reference/operators/type-testing-and-cast.md) - Explain better conversion from collection expression
-- [Use string interpolation to construct formatted strings](../csharp/tutorials/exploration/interpolated-strings-local.md) - Add conceptual content for partial properties
+- [Use string interpolation to construct formatted strings](../csharp/tutorials/interpolated-strings.md) - Add conceptual content for partial properties
 - [Using indexers (C# Programming Guide)](../csharp/programming-guide/indexers/using-indexers.md) - Add conceptual content for partial properties
 - [Using Properties (C# Programming Guide)](../csharp/programming-guide/classes-and-structs/using-properties.md) - Add conceptual content for partial properties
 - [where (generic type constraint) (C# Reference)](../csharp/language-reference/keywords/where-generic-type-constraint.md) - Add reference and conceptual content for `ref struct` allowed in interfaces

@@ -245,7 +245,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 ## Use GitHub Copilot to customize how property names are serialized
 
-You can use GitHub Copilot with <xref:System.Text.Json> attributes to apply patterns of changes to how your code serializes without having to explicitly specify the change in each one.
+You can prompt GitHub Copilot to apply patterns of changes to how your code serializes.
 
 Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attributes to every property in your class. You can use Copilot to make these changes with a chat prompt like this:
 
@@ -258,7 +258,7 @@ Use built-in serialization attributes.
 
 Here's a more complete version of the example that includes a simple class.
 
-```copilot-prompt 
+```copilot-prompt
 Take this C# class: 
 public class WeatherForecast
 {

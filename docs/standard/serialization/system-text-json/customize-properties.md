@@ -254,7 +254,7 @@ Update #ClassName:
 when the property name contains more than one word,
 change the serialized property name to use underscores between words.
 Serialize the properties in reverse alphabetical order,
-without changing the order in which the properties are listed.
+without changing the order in which the properties are listed. Use built-in serialization attributes.
 ```
 
 Here's a more complete version of the example that includes a simple class.

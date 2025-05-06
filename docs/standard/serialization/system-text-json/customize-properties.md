@@ -247,14 +247,13 @@ By default, properties are serialized in the order in which they're defined in t
 
 You can use GitHub Copilot with `System.Text.Json` attributes to apply patterns of changes to how your code serializes without having to explicitly specify the change in each one.
 
-Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary `JsonPropertyName` attributes to every property in your class. You can use Copilot Chat to make these changes with a prompt like this (this prompt works best with the Claude 3.5 Sonnet model).
+Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary `JsonPropertyName` attributes to every property in your class. You can use Copilot Chat to make these changes with a prompt like this:
 
 ```copilot-prompt
 Update #ClassName:
 when the property name contains more than one word,
 change the serialized property name to use underscores between words.
-Serialize the properties in reverse alphabetical order,
-without changing the order in which the properties are listed. Use built-in serialization attributes.
+Use built-in serialization attributes.
 ```
 
 Here's a more complete version of the example that includes a simple class.
@@ -271,8 +270,6 @@ public class WeatherForecast
 }
 When the property name contains more than one word,
 change the serialized property name to use underscores between words.
-Serialize the properties in reverse alphabetical order,
-without changing the order in which the properties are listed.
 Use built-in serialization attributes.
 ```
 

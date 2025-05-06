@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 02/11/2025
+ms.date: 05/06/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -254,12 +254,12 @@ Update class <your class name>: when the property name contains more than one wo
 Serialize the properties in reverse alphabetical order without changing the order in which the properties are listed.
 ```
 
-Here's a more complete version of the example that includes a simple class.   
- 
+Here's a more complete version of the example that includes a simple class.
+
 ```copilot-prompt 
 Take this C# class: 
 public class WeatherForecast    
-{                  
+{
 public DateTime Date { get; set; }         
 public int TemperatureC { get; set; }                 
 public int TemperatureF { get; set; }                

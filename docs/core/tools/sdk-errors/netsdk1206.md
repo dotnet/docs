@@ -21,6 +21,8 @@ If you know your application does not actually need the specified RID&mdash;for 
 </PropertyGroup>
 ```
 
+If you specify the RID as a command-line argument, make a similar change. For example, instead of `dotnet publish --framework net8.0 --runtime win10-x64`, use the command `dotnet publish --framework net8.0 --runtime win-x64`.
+
 If you need to revert to the previous behavior of using the old, full RID graph, you can set the `UseRidGraph` MSBuild property to `true` in your project file. However, the old RID graph won't be updated in the future to attempt to handle any other distros or architectures.
 
 ```xml

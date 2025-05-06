@@ -1,7 +1,7 @@
 ---
 title: How to customize property names and values with System.Text.Json
 description: "Learn how to customize property names and values when serializing with System.Text.Json in .NET."
-ms.date: 02/11/2025
+ms.date: 05/06/2025
 no-loc: [System.Text.Json, Newtonsoft.Json]
 dev_langs:
   - "csharp"
@@ -29,7 +29,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 > The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
 
 > [!TIP]
-> You can use AI assistance to [customize property names and values with GitHub Copilot](#use-github-copilot-to-customize-property-names-and-order).
+> You can use AI assistance to [create an object with custom serialization properties with GitHub Copilot](#use-github-copilot-to-customize-how-property-names-are-serialized).
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 
@@ -243,35 +243,35 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use GitHub Copilot to customize property names and order
+## Use GitHub Copilot to customize how property names are serialized
 
-You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
+You can prompt GitHub Copilot to apply patterns of changes to how your code serializes.
 
-The following example shows you how to use Copilot to modify existing code to customize property names and order when serializing to JSON.
+Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attributes to every property in your class. You can use Copilot to make these changes with a chat prompt like this:
 
-1. Add the following C# example code to a code file `Example.cs` in your editor.
-   In Visual Studio, you can use a C# console application project to try this example.
+```copilot-prompt
+Update #ClassName:
+when the property name contains more than one word,
+change the serialized property name to use underscores between words.
+Use built-in serialization attributes.
+```
 
-   :::code language="csharp" source="snippets/how-to-6-0/csharp/copilot-example.cs":::
+Here's a more complete version of the example that includes a simple class.
 
-   `Example.cs` code does the following:
-
-   - Creates an instance of the `Person` class and initializes its properties with values.
-   - Serializes the `person` object to a JSON string using `JsonSerializer.Serialize`.
-   - Prints the following JSON string to the console:
-
-   ```json
-   {"FirstName":"John","LastName":"Doe","Age":30,"Country":"USA"}
-   ```
-
-1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
-
-    ```copilot-prompt
-    #Example.cs modify code to use System.Text.Json to customize property names and order of JSON output from serialization.
-    Set property names: FirstName to first_name, LastName to last_name.
-    Set order to: Country, FirstName, LastName, Age.
-    Provide customized serialization output.
-    ```
+```copilot-prompt
+Take this C# class: 
+public class WeatherForecast
+{
+    public DateTime Date { get; set; }
+    public int TemperatureC { get; set; }
+    public int TemperatureF { get; set; }
+    public string? Summary { get; set; }
+    public int WindSpeed { get; set; }
+}
+When the property name contains more than one word,
+change the serialized property name to use underscores between words.
+Use built-in serialization attributes.
+```
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 

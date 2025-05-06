@@ -12,7 +12,7 @@ NETSDK1206 indicates your project has assets for version-specific or distributio
 
 First, check for a newer version of any affected packages to see if they have moved to portable RIDs. Many packages have already moved to portable RIDs in their latest versions. If no such version exists, we recommend contacting the package authors to request switching the package to use only portable RIDs.
 
-If you know your application does not actually need the specified RID&mdash;for example, it is not intended to run on the platform specified by the RID&mdash;you can switch to using a more general rid. For example, change <RuntimeIdentifier>win10-x64</RuntimeIdentifier> to <RuntimeIdentifier>win-x64</RuntimeIdentifier> in your project file:
+If you know your application does not actually need the specified RID&mdash;for example, it is not intended to run on the platform specified by the RID&mdash;you can switch to using a more general RID. For example, change `<RuntimeIdentifier>win10-x64</RuntimeIdentifier>` to `<RuntimeIdentifier>win-x64</RuntimeIdentifier>` in your project file:
 
 ```xml
 <PropertyGroup>
@@ -21,7 +21,7 @@ If you know your application does not actually need the specified RID&mdash;for 
 </PropertyGroup>
 ```
 
-If you need to revert to the previous behavior of using the old, full RID graph, you can set the UseRidGraph MSBuild property to true in your project file. However, the old RID graph won't be updated in the future to attempt to handle any other distros or architectures.
+If you need to revert to the previous behavior of using the old, full RID graph, you can set the `UseRidGraph` MSBuild property to `true` in your project file. However, the old RID graph won't be updated in the future to attempt to handle any other distros or architectures.
 
 ```xml
 <PropertyGroup>

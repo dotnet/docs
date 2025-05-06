@@ -245,33 +245,38 @@ By default, properties are serialized in the order in which they're defined in t
 
 ## Use GitHub Copilot to customize property names and order
 
-You can use GitHub Copilot with `System.JSON.Text` attributes to apply patterns of changes to how your code serializes without having to explicitly specify the change in each one.
+You can use GitHub Copilot with `System.Text.Json` attributes to apply patterns of changes to how your code serializes without having to explicitly specify the change in each one.
 
 Suppose you want to change how properties are serialized—formatting property names with underscores between words and ordering them in reverse alphabetical order, while keeping the original property name. You can use Copilot Chat to make these changes with a prompt like this (this prompt works best with the Claude 3.5 Sonnet model).
 
 ```copilot-prompt
-Update class <your class name>: when the property name contains more than one word, change the serialization name for that property to have underscores between each word.
-Serialize the properties in reverse alphabetical order without changing the order in which the properties are listed.
+Update #ClassName:
+when the property name contains more than one word,
+change the serialized property name to use underscores between words.
+Serialize the properties in reverse alphabetical order,
+without changing the order in which the properties are listed.
 ```
 
 Here's a more complete version of the example that includes a simple class.
 
 ```copilot-prompt 
 Take this C# class: 
-public class WeatherForecast    
+public class WeatherForecast
 {
-public DateTime Date { get; set; }         
-public int TemperatureC { get; set; }                 
-public int TemperatureF { get; set; }                
-public string? Summary { get; set; }                  
-public int WindSpeed { get; set; }     
+    public DateTime Date { get; set; }
+    public int TemperatureC { get; set; }
+    public int TemperatureF { get; set; }
+    public string? Summary { get; set; }
+    public int WindSpeed { get; set; }
 }
-When the property name contains more than one word, change the serialization name for that property to have underscores between each word.
-Serialize the properties in reverse alphabetical order without changing the order in which the properties are listed.
+When the property name contains more than one word,
+change the serialized property name to use underscores between words.
+Serialize the properties in reverse alphabetical order,
+without changing the order in which the properties are listed.
 Use built-in serialization attributes.
 ```
 
-Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
 

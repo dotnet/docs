@@ -29,7 +29,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 > The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
 
 > [!TIP]
-> You can use AI assistance to [customize property names and values with GitHub Copilot](#use-github-copilot-to-customize-property-names-and-order).
+> You can use AI assistance to [create an object with custom serialization properties with GitHub Copilot](#use-github-copilot-to-customize-property-names-and-order).
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 
@@ -245,35 +245,33 @@ By default, properties are serialized in the order in which they're defined in t
 
 ## Use GitHub Copilot to customize property names and order
 
-You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
+You can use GitHub Copilot with `System.JSON.Text` attributes to apply patterns of changes to how your code serializes without having to explicitly specify the change in each one.
 
-The following example shows you how to use Copilot to modify existing code to customize property names and order when serializing to JSON.
+Suppose you want to change how properties are serialized—formatting property names with underscores between words and ordering them in reverse alphabetical order, while keeping the original property name. You can use Copilot Chat to make these changes with a prompt like this (this prompt works best with the Claude 3.5 Sonnet model).
 
-1. Add the following C# example code to a code file `Example.cs` in your editor.
-   In Visual Studio, you can use a C# console application project to try this example.
+```copilot-prompt
+Update class <your class name>: when the property name contains more than one word, change the serialization name for that property to have underscores between each word.
+Serialize the properties in reverse alphabetical order without changing the order in which the properties are listed.
+```
 
-   :::code language="csharp" source="snippets/how-to-6-0/csharp/copilot-example.cs":::
+Here's a more complete version of the example that includes a simple class.   
+ 
+```copilot-prompt 
+Take this C# class: 
+public class WeatherForecast    
+{                  
+public DateTime Date { get; set; }         
+public int TemperatureC { get; set; }                 
+public int TemperatureF { get; set; }                
+public string? Summary { get; set; }                  
+public int WindSpeed { get; set; }     
+}
+When the property name contains more than one word, change the serialization name for that property to have underscores between each word.
+Serialize the properties in reverse alphabetical order without changing the order in which the properties are listed.
+Use built-in serialization attributes.
+```
 
-   `Example.cs` code does the following:
-
-   - Creates an instance of the `Person` class and initializes its properties with values.
-   - Serializes the `person` object to a JSON string using `JsonSerializer.Serialize`.
-   - Prints the following JSON string to the console:
-
-   ```json
-   {"FirstName":"John","LastName":"Doe","Age":30,"Country":"USA"}
-   ```
-
-1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
-
-    ```copilot-prompt
-    #Example.cs modify code to use System.Text.Json to customize property names and order of JSON output from serialization.
-    Set property names: FirstName to first_name, LastName to last_name.
-    Set order to: Country, FirstName, LastName, Age.
-    Provide customized serialization output.
-    ```
-
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
+Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
 Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
 

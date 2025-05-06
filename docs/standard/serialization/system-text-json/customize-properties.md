@@ -243,40 +243,6 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use GitHub Copilot to customize property names and order
-
-You can use GitHub Copilot in your IDE to generate code to customize names and order of serialized properties. You can customize the prompt to output a JSON string with property names and values that suit your requirements.
-
-The following example shows you how to use Copilot to modify existing code to customize property names and order when serializing to JSON.
-
-1. Add the following C# example code to a code file `Example.cs` in your editor.
-   In Visual Studio, you can use a C# console application project to try this example.
-
-   :::code language="csharp" source="snippets/how-to-6-0/csharp/copilot-example.cs":::
-
-   `Example.cs` code does the following:
-
-   - Creates an instance of the `Person` class and initializes its properties with values.
-   - Serializes the `person` object to a JSON string using `JsonSerializer.Serialize`.
-   - Prints the following JSON string to the console:
-
-   ```json
-   {"FirstName":"John","LastName":"Doe","Age":30,"Country":"USA"}
-   ```
-
-1. In Copilot Chat, enter the following prompt to modify the code to customize names and order of the JSON serialization output.
-
-    ```copilot-prompt
-    #Example.cs modify code to use System.Text.Json to customize property names and order of JSON output from serialization.
-    Set property names: FirstName to first_name, LastName to last_name.
-    Set order to: Country, FirstName, LastName, Age.
-    Provide customized serialization output.
-    ```
-
-GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
-
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
-
 ## See also
 
 - [System.Text.Json overview](overview.md)

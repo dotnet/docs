@@ -29,7 +29,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 > The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
 
 > [!TIP]
-> You can use AI assistance to [create an object with custom serialization properties with GitHub Copilot](#use-github-copilot-to-customize-property-names-and-order).
+> You can use AI assistance to [create an object with custom serialization properties with GitHub Copilot](#use-github-copilot-to-customize-how-property-names-are-serialized).
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 
@@ -243,11 +243,11 @@ By default, properties are serialized in the order in which they're defined in t
 
 :::code language="csharp" source="snippets/how-to-6-0/csharp/PropertyOrder.cs":::
 
-## Use GitHub Copilot to customize property names and order
+##  Use GitHub Copilot to customize how property names are serialized
 
 You can use GitHub Copilot with `System.Text.Json` attributes to apply patterns of changes to how your code serializes without having to explicitly specify the change in each one.
 
-Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary `JsonPropertyName` attributes to every property in your class. You can use Copilot Chat to make these changes with a prompt like this:
+Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary `JsonPropertyName` attributes to every property in your class. You can use Copilot to make these changes with a chat prompt like this:
 
 ```copilot-prompt
 Update #ClassName:

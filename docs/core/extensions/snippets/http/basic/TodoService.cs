@@ -12,7 +12,7 @@ public sealed class TodoService(
     public async Task<Todo[]> GetUserTodosAsync(int userId)
     {
         // Create the client
-        using HttpClient client = httpClientFactory.CreateClient();
+        HttpClient client = httpClientFactory.CreateClient();
         
         try
         {

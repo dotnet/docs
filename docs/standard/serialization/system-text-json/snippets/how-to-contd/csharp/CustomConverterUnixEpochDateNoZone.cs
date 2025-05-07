@@ -7,7 +7,7 @@ namespace CustomConverterUnixEpochDateNoZone
 {
     class Program
     {
-        public static void Main(DateTime date)
+        public static void STJExample(DateTime date)
         {
             var forecast = new Forecast()
             {
@@ -26,7 +26,7 @@ namespace CustomConverterUnixEpochDateNoZone
             Console.WriteLine($"System.Text.Json deserialized date = {forecastDeserialized.Date}");
         }
 
-        public static void Main2(DateTime date)
+        public static void NewtonsoftExample(DateTime date)
         {
             var forecast = new Forecast()
             {

@@ -8,7 +8,7 @@ namespace CustomConverterUnixEpochDate
 {
     class Program
     {
-        public static void Main(DateTimeOffset date)
+        public static void STJExample(DateTimeOffset date)
         {
             var forecast = new Forecast()
             {
@@ -27,7 +27,7 @@ namespace CustomConverterUnixEpochDate
             Console.WriteLine($"System.Text.Json deserialized date = {forecastDeserialized.Date}");
         }
 
-        public static void Main2(DateTimeOffset date)
+        public static void NewtonsoftExample(DateTimeOffset date)
         {
             var forecast = new Forecast()
             {

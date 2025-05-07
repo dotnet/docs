@@ -19,7 +19,6 @@ namespace CustomConverterUnixEpochDate
 
             var options = new JsonSerializerOptions();
             options.Converters.Add(new UnixEpochDateTimeOffsetConverter());
-            //options.WriteIndented = true;
 
             string json = System.Text.Json.JsonSerializer.Serialize(forecast, options);
             Console.WriteLine($"System.Text.Json: {json}");
@@ -88,7 +87,10 @@ namespace CustomConverterUnixEpochDate
             return s_epoch.AddMilliseconds(unixTime).ToOffset(utcOffset);
         }
 
-        public override void Write(Utf8JsonWriter writer, DateTimeOffset value, JsonSerializerOptions options)
+        public override void Write(
+            Utf8JsonWriter writer,
+            DateTimeOffset value,
+            JsonSerializerOptions options)
         {
             long unixTime = value.ToUnixTimeMilliseconds();
 

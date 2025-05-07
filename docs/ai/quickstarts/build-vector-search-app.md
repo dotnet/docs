@@ -26,8 +26,6 @@ In this quickstart, you create a .NET console app to perform semantic search on 
 
 :::zone-end
 
-[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
-
 ## Interact with your data using vector stores
 
 Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
@@ -171,7 +169,7 @@ Complete the following steps to create a .NET console app that can:
 
     :::zone target="docs" pivot="openai"
 
-    :::code language="csharp" source="snippets/chat-with-data/openai/program.cs" range="49-57":::
+    :::code language="csharp" source="snippets/chat-with-data/openai/program.cs" id="EmbeddingGenerator":::
 
     :::zone-end
 
@@ -197,11 +195,10 @@ Complete the following steps to create a .NET console app that can:
 
 ## Clean up resources
 
-When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-```azdeveloper
-azd down
-```
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end
 

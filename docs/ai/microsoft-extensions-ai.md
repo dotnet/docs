@@ -259,7 +259,8 @@ For more samples, see the [dotnet/ai-samples](https://aka.ms/meai-samples) GitHu
 
 ## See also
 
+- [Request a response with structured output](./quickstarts/structured-output.md)
 - [Build an AI chat app with .NET](./quickstarts/build-chat-app.md)
-- [.NET dependency injection](../core/extensions/dependency-injection.md)
-- [Rate limit an HTTP handler in .NET](../core/extensions/http-ratelimiter.md)
+- [Dependency injection in .NET](../core/extensions/dependency-injection.md)
 - [Caching in .NET](../core/extensions/caching.md)
+- [Rate limit an HTTP handler in .NET](../core/extensions/http-ratelimiter.md)

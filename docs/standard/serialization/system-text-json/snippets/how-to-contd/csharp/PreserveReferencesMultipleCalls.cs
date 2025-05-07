@@ -68,7 +68,7 @@ namespace PreserveReferencesMultipleCalls
 
     public class Program
     {
-        public static void Main()
+        public static void Run()
         {
             Employee tyler = new()
             {

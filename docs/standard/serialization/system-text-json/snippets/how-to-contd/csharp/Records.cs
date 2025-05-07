@@ -9,7 +9,7 @@ namespace Records
 
     public class Program
     {
-        public static void Main()
+        public static void Run()
         {
             Forecast forecast = new(DateTime.Now, 40)
             {

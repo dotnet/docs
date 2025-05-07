@@ -68,7 +68,7 @@ If you attempt to read non-compliant formats with <xref:System.Text.Json.Utf8Jso
 If you want the serializer to perform custom parsing or formatting, you can implement [custom converters](xref:System.Text.Json.Serialization.JsonConverter%601). The following sections show a few examples:
 
 - [DateTime(Offset).Parse and DateTime(Offset).ToString](#datetimeoffsetparse-and-datetimeoffsettostring)
-- [<xref:System.Buffers.Text.Utf8Parser> and <xref:System.Buffers.Text.Utf8Formatter>](#xrefsystembufferstextutf8parser-and-xrefsystembufferstextutf8formatter)
+- [Utf8Parser and Utf8Formatter](#-and-)
 - [Use DateTime(Offset).Parse as a fallback](#use-datetimeoffsetparse-as-a-fallback)
 - [Use Unix epoch date format](#use-unix-epoch-date-format)
 

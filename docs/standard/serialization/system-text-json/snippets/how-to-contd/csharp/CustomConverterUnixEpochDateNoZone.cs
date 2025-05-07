@@ -2,29 +2,50 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
+using Newtonsoft.Json;
 
 namespace CustomConverterUnixEpochDateNoZone
 {
     class Program
     {
-        public static void Main()
+        public static void Main(DateTime date)
         {
             var forecast = new Forecast()
             {
-                Date = DateTime.Now,
+                Date = date,
                 TemperatureCelsius = 19,
                 Summary = "warm"
             };
 
             var options = new JsonSerializerOptions();
             options.Converters.Add(new UnixEpochDateTimeConverter());
-            options.WriteIndented = true;
 
-            string json = JsonSerializer.Serialize(forecast, options);
-            Console.WriteLine(json);
+            string json = System.Text.Json.JsonSerializer.Serialize(forecast, options);
+            Console.WriteLine($"System.Text.Json: {json}");
 
-            Forecast forecastDeserialized = JsonSerializer.Deserialize<Forecast>(json, options)!;
-            Console.WriteLine($"Deserialized date = {forecastDeserialized.Date}");
+            Forecast forecastDeserialized = System.Text.Json.JsonSerializer.Deserialize<Forecast>(json, options)!;
+            Console.WriteLine($"System.Text.Json deserialized date = {forecastDeserialized.Date}");
+        }
+
+        public static void Main2(DateTime date)
+        {
+            var forecast = new Forecast()
+            {
+                Date = date,
+                TemperatureCelsius = 19,
+                Summary = "warm"
+            };
+
+            var settings = new JsonSerializerSettings
+            {
+                DateFormatHandling = DateFormatHandling.MicrosoftDateFormat,
+            };
+
+            string json = JsonConvert.SerializeObject(forecast, settings);
+            Console.WriteLine($"{Environment.NewLine}Newtonsoft: {json}");
+
+            Forecast forecastDeserialized = JsonConvert.DeserializeObject<Forecast>(json, settings)!;
+            Console.WriteLine($"Newtonsoft deserialized date = {forecastDeserialized.Date}");
         }
     }
 
@@ -36,7 +57,7 @@ namespace CustomConverterUnixEpochDateNoZone
     }
 
     // <ConverterOnly>
-    sealed class UnixEpochDateTimeConverter : JsonConverter<DateTime>
+    sealed class UnixEpochDateTimeConverter : System.Text.Json.Serialization.JsonConverter<DateTime>
     {
         static readonly DateTime s_epoch = new(1970, 1, 1, 0, 0, 0);
         static readonly Regex s_regex = new("^/Date\\(([+-]*\\d+)\\)/$", RegexOptions.CultureInvariant);
@@ -50,7 +71,7 @@ namespace CustomConverterUnixEpochDateNoZone
                     !match.Success
                     || !long.TryParse(match.Groups[1].Value, System.Globalization.NumberStyles.Integer, CultureInfo.InvariantCulture, out long unixTime))
             {
-                throw new JsonException();
+                throw new System.Text.Json.JsonException();
             }
 
             return s_epoch.AddMilliseconds(unixTime);
@@ -58,7 +79,7 @@ namespace CustomConverterUnixEpochDateNoZone
 
         public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
         {
-            long unixTime = Convert.ToInt64((value - s_epoch).TotalMilliseconds);
+            long unixTime = (value - s_epoch).Ticks / TimeSpan.TicksPerMillisecond;
 
             string formatted = string.Create(CultureInfo.InvariantCulture, $"/Date({unixTime})/");
             writer.WriteStringValue(formatted);

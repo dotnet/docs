@@ -39,3 +39,10 @@ Updates for server operating systems are supported by WSUS and Microsoft Update 
 | .NET 6 | HKLM\SOFTWARE\Microsoft\\.NET\6.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
 | .NET 5 | HKLM\SOFTWARE\Microsoft\\.NET\5.0 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
 | .NET Core 3.1 | HKLM\SOFTWARE\Microsoft\\.NET\3.1 | AllowAUOnServerOS | REG_DWORD | 0x00000001 |
+
+#### WSUS and update classifications
+
+WSUS can be configured to provide specific updates based on their [classification](/troubleshoot/windows-client/installing-updates-features-roles/standard-terminology-software-updates). Updates for .NET are classified as either *security* or *critical*. If the latest update is classified as critical, an older security update may be offered when an older version of .NET is installed that is superseded by the latest security update. This also applies to using the offline CAB [(Wsusscan2.cab)](/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline?tabs=powershell) to scan a machine.
+
+> [!NOTE]]
+> A user installs .NET 6.0.36, the latest release of .NET 6. This version is classified as a critical (non-security) update. Another application installs an older version, 6.0.33. It is not uncommon for applications to include specific versions of .NET as a prerequisite. If an admin configured WSUS to only provide security updates, the next scan will report 6.0.35 as a missing update. The reason for this is that 6.0.35 supersedes 6.0.33 and is the latest *security* update.

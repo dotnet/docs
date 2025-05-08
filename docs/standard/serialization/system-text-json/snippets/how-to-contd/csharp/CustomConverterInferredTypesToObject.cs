@@ -35,7 +35,7 @@ namespace CustomConverterInferredTypesToObject
 
     public class Program
     {
-        public static void Main()
+        public static void Run()
         {
             string jsonString = """
                 {

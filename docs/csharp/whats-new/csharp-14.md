@@ -136,9 +136,9 @@ Only the implementing declaration of a partial constructor can include a constru
 
 The implementing declaration of a partial event must include `add` and `remove` accessors. The defining declaration declares a field-like event.
 
-## Null conditional assignment
+## Null-conditional assignment
 
-The null conditional member access operators, `?.` and ``?[]`, can now be used on the left hand side of an assignment or compound assignment.
+The null-conditional member access operators, `?.` and `?[]`, can now be used on the left hand side of an assignment or compound assignment.
 
 Before C# 14, you needed to null-check a variable before assigning to a property:
 
@@ -157,9 +157,9 @@ customer?.Order = GetCurrentOrder();
 
 The right side of the `=` operator is evaluated only when the left side isn't null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
 
-In addition to assignment, you can use null conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
+In addition to assignment, you can use null-conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
 
-You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null conditional assignment](~/_csharplang/proposals/null-conditional-assignment.md)
+You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null-conditional assignment](~/_csharplang/proposals/null-conditional-assignment.md).
 
 ## See also
 

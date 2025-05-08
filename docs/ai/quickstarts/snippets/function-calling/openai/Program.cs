@@ -11,7 +11,7 @@ IChatClient client =
     new ChatClientBuilder(new OpenAIClient(key).GetChatClient(model ?? "gpt-4o").AsIChatClient())
     .UseFunctionInvocation()
     .Build();
-// <SnippetGetChatClient>
+// </SnippetGetChatClient>
 
 // <SnippetAddOptions>
 // Add a new plugin with a local .NET function

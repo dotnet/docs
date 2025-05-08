@@ -16,7 +16,7 @@ AzureOpenAIClient azureAIClient = new(
 #pragma warning disable OPENAI001
 AssistantClient assistantClient = openAIClient.GetAssistantClient();
 OpenAIFileClient fileClient = openAIClient.GetOpenAIFileClient();
-// <SnippetCreateClient>
+// </SnippetCreateClient>
 
 // <SnippetCreateDocument>
 // Create an in-memory document to upload to the file client

@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/45911
 
 # Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
 
-In .NET 10 Preview 5, specifying <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> as the only search flag now restricts the runtime to search exclusively in the assembly directory. This change affects the behavior of P/Invokes and the <xref:System.Runtime.InteropServices.NativeLibrary> class.
+Starting in .NET 10, if you specify <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> as the only search flag, the runtime searches exclusively in the assembly directory. This change affects the behavior of P/Invokes and the <xref:System.Runtime.InteropServices.NativeLibrary> class.
 
 ## Version introduced
 

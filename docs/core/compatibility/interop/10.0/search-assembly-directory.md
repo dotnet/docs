@@ -54,7 +54,6 @@ public static extern void ExampleMethod();
 
 ## Affected APIs
 
-
 - P/Invokes using <xref:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute>
 - <xref:System.Runtime.InteropServices.NativeLibrary.Load*?displayProperty=fullName>
 - <xref:System.Runtime.InteropServices.NativeLibrary.TryLoad*?displayProperty=fullName>

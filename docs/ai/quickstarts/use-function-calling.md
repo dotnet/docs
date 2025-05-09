@@ -31,8 +31,6 @@ In this quickstart, you create a .NET console AI chat app to connect to an AI mo
 
 [!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
-[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
-
 ## Create the app
 
 Complete the following steps to create a .NET console app to connect to an AI model.
@@ -111,7 +109,7 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone target="docs" pivot="azure-openai"
 
-    :::code language="csharp" source="snippets/function-calling/azure-openai/program.cs" range="1-16":::
+    :::code language="csharp" source="snippets/function-calling/azure-openai/program.cs" id="GetChatClient":::
 
     > [!NOTE]
     > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
@@ -120,17 +118,17 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
     :::zone target="docs" pivot="openai"
 
-    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="1-14":::
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" id="GetChatClient":::
 
     :::zone-end
 
 1. Create a new `ChatOptions` object that contains an inline function the AI model can call to get the current weather. The function declaration includes a delegate to run logic, and name and description parameters to describe the purpose of the function to the AI model.
 
-    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="16-26":::
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" id="AddOptions":::
 
 1. Add a system prompt to the `chatHistory` to provide context and instructions to the model. Send a user prompt with a question that requires the AI model to call the registered function to properly answer the question.
 
-    :::code language="csharp" source="snippets/function-calling/openai/program.cs" range="28-40":::
+    :::code language="csharp" source="snippets/function-calling/openai/program.cs" id="PromptModel":::
 
 1. Use the `dotnet run` command to run the app:
 
@@ -144,11 +142,10 @@ The app uses the [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Micr
 
 ## Clean up resources
 
-When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-```azdeveloper
-azd down
-```
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end
 

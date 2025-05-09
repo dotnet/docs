@@ -111,6 +111,13 @@ Complete the following steps to create a console app that connects to the `gpt-4
    Sentiment: Neutral
    ```
 
+## Clean up resources
+
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
+
 ## See also
 
 - [Structured outputs (Azure OpenAI Service)](/azure/ai-services/openai/how-to/structured-outputs)

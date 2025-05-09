@@ -114,13 +114,13 @@ For additional mutation types, see the [Stryker.NET: Mutations](https://stryker-
 
 After running Stryker.NET, you’ll receive a report that categorizes mutants as **killed**, **survived**, or **timeout**. Here's how to interpret and act on these results:
 
--  **Killed Mutants**: These are changes that your tests successfully caught. A high number of killed mutants indicates that your test suite effectively detects logic errors.
+- **Killed Mutants**: These are changes that your tests successfully caught. A high number of killed mutants indicates that your test suite effectively detects logic errors.
 
--  **Survived Mutants**: These changes were not caught by your tests. Review them to identify gaps in test coverage or assertions that are too weak. Focus on adding targeted unit tests that would fail if the mutant were real.
+- **Survived Mutants**: These changes were not caught by your tests. Review them to identify gaps in test coverage or assertions that are too weak. Focus on adding targeted unit tests that would fail if the mutant were real.
 
--  **Timeout Mutants**: These mutations caused your code to hang or exceed the allowed time. This can happen with infinite loops or unoptimized paths. Investigate the code logic or increase the timeout threshold if needed.
+- **Timeout Mutants**: These mutations caused your code to hang or exceed the allowed time. This can happen with infinite loops or unoptimized paths. Investigate the code logic or increase the timeout threshold if needed.
 
->  **Note**: Don't chase a 100% mutation score. Focus instead on high risk or business critical areas where undetected bugs would be most costly.
+> **Note**: Don't chase a 100% mutation score. Focus instead on high risk or business critical areas where undetected bugs would be most costly.
 
 ## Incremental improvement
 

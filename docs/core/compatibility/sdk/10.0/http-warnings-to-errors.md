@@ -46,7 +46,7 @@ Migrate to HTTPS sources to avoid the error. To continue using HTTP sources, upd
 
 ## Affected APIs
 
--`dotnet package list`
+- `dotnet package list`
 - `dotnet package search`
 - `NuGet.Protocol.Core.Types.PackageUpdateResource.PushAsync`
 - `NuGet.Protocol.Core.Types.PackageUpdateResource.Delete`

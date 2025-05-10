@@ -1,4 +1,5 @@
-﻿using OpenAI;
+﻿// <SnippetCreateClient>
+using OpenAI;
 using OpenAI.Assistants;
 using OpenAI.Files;
 using Azure.AI.OpenAI;
@@ -15,7 +16,9 @@ AzureOpenAIClient azureAIClient = new(
 #pragma warning disable OPENAI001
 AssistantClient assistantClient = openAIClient.GetAssistantClient();
 OpenAIFileClient fileClient = openAIClient.GetOpenAIFileClient();
+// </SnippetCreateClient>
 
+// <SnippetCreateDocument>
 // Create an in-memory document to upload to the file client
 using Stream document = BinaryData.FromBytes("""
     {
@@ -51,7 +54,9 @@ OpenAIFile salesFile = fileClient.UploadFile(
     document,
     "monthly_sales.json",
     FileUploadPurpose.Assistants);
+// </SnippetCreateDocument>
 
+// <SnippetEnableTools>
 // Configure the assistant options
 AssistantCreationOptions assistantOptions = new()
 {
@@ -76,7 +81,9 @@ AssistantCreationOptions assistantOptions = new()
         }
     },
 };
+// </SnippetEnableTools>
 
+// <SnippetCreateAssistant>
 // Create the assistant
 Assistant assistant = assistantClient.CreateAssistant("gpt-4o", assistantOptions);
 
@@ -100,10 +107,13 @@ while (!threadRun.Status.IsTerminal);
 var messages = assistantClient.GetMessagesAsync(
     threadRun.ThreadId,
     new MessageCollectionOptions()
-    { 
+    {
         Order = MessageCollectionOrder.Ascending
     });
+// </SnippetCreateAssistant>
 
+// <SnippetProcessMessages>
+// Process the messages from the assistant
 await foreach (ThreadMessage message in messages)
 {
     // Print out the messages from the assistant
@@ -145,3 +155,4 @@ await foreach (ThreadMessage message in messages)
     }
     Console.WriteLine();
 }
+// </SnippetProcessMessages>

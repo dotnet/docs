@@ -96,6 +96,13 @@ Complete the following steps to create an MSTest project that connects to the `g
 
 Run the test using your preferred test workflow, for example, by using the CLI command `dotnet test` or through [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).
 
+## Clean up resources
+
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
+
 ## Next steps
 
 - Evaluate the responses from different OpenAI models.

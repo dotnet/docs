@@ -10,7 +10,7 @@ This tutorial teaches you how to use pattern matching to inspect data in C#. You
 > [!TIP]
 > When a code snippet block includes the "Run" button, that button opens the interactive window, or replaces the existing code in the interactive window. When the snippet doesn't include a "Run" button, you can copy the code and add it to the current interactive window.
 
-The preceding tutorials demonstrated built-in types and types you define as tuples or records. Instances of these types can be checked against a *pattern*. Whether an instance matches a pattern determines the actions your program takes. In the examples below, you'll notice `?` after type names. This symbol allows the value of this type to be null (e.g., `bool?` can be `true`, `false` or `null`). For more information, see [Nullable value types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types).  Let's start to explore how you can use patterns.
+The preceding tutorials demonstrated built-in types and types you define as tuples or records. Instances of these types can be checked against a *pattern*. Whether an instance matches a pattern determines the actions your program takes. In the examples below, you'll notice `?` after type names. This symbol allows the value of this type to be null (e.g., `bool?` can be `true`, `false` or `null`). For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).  Let's start to explore how you can use patterns.
 
 ## Match a value
 

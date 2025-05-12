@@ -1,12 +1,12 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 08/22/2024
+ms.date: 05/12/2025
 ms.topic: reference
 ---
 # dotnet-trace performance analysis utility
 
-**This article applies to:** ✔️ `dotnet-trace` 3.0.47001 and later versions
+**This article applies to:** ✔️ `dotnet-trace` 9.0.625801 and later versions
 
 ## Install
 
@@ -76,6 +76,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 
 ```dotnetcli
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
+    [--dsrouter <ios|ios-sim|android|android-emu>]
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [--duration dd:hh:mm:ss]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
@@ -152,6 +153,10 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   | `typediagnostic` | `0x8000000000` |
 
   You can read about the CLR provider more in detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
+
+- **`--dsrouter {ios|ios-sim|android|android-emu}**
+
+ Starts a `dotnet-dsrouter` and connects to it. Require `dotnet-dsrouter` to be installed. Run `dotnet-dsrouter -h` for more information.
 
 - **`--format {Chromium|NetTrace|Speedscope}`**
 

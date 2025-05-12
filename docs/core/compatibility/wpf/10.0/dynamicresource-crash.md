@@ -6,7 +6,7 @@ ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/46089
 ---
 
-# Incorrect usage of DynamicResource causes application crash"
+# Incorrect usage of DynamicResource causes application crash
 
 Beginning with .NET 10 Preview 4, applications using `DynamicResource` incorrectly now crash at runtime.
 

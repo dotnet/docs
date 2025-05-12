@@ -35,7 +35,7 @@ The evaluation libraries were built in collaboration with data science researche
 | Equivalence  | Evaluates the similarity between the generated text and its ground truth with respect to a query | <xref:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator> |
 | Groundedness | Evaluates how well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator><br />`GroundednessProEvaluator` |
 | Protected material | Evaluates response for the presence of protected material | `ProtectedMaterialEvaluator` |
-| Ungroundedness | Evaluates a response for the presence of content that indicates ungrounded inference of human attributes | `UngroundedAttributesEvaluator` |
+| Ungrounded human attributes | Evaluates a response for the presence of content that indicates ungrounded inference of human attributes | `UngroundedAttributesEvaluator` |
 | Hate content | Evaluates a response for the presence of content that's hateful or unfair | `HateAndUnfairnessEvaluator`† |
 | Self-harm content | Evaluates a response for the presence of content that indicates self harm | `SelfHarmEvaluator`† |
 | Violent content | Evaluates a response for the presence of violent content | `ViolenceEvaluator`† |

@@ -15,9 +15,9 @@ This article shows you how to deploy and run the [Chat with your own data sample
 
 By following the instructions in this article, you will:
 
-* Deploy a chat app to Azure.
-* Get answers about employee benefits.
-* Change settings to change behavior of responses.
+- Deploy a chat app to Azure.
+- Get answers about employee benefits.
+- Change settings to change behavior of responses.
 
 Once you complete this procedure, you can start modifying the new project with your custom code.
 
@@ -25,9 +25,9 @@ This article is part of a collection of articles that show you how to build a ch
 
 Other articles in the collection include:
 
-* [Python](/azure/developer/python/get-started-app-chat-template)
-* [JavaScript](/azure/developer/javascript/get-started-app-chat-template)
-* [Java](/azure/developer/java/quickstarts/get-started-app-chat-template)
+- [Python](/azure/developer/python/get-started-app-chat-template)
+- [JavaScript](/azure/developer/javascript/get-started-app-chat-template)
+- [Java](/azure/developer/java/quickstarts/get-started-app-chat-template)
 
 ## Architectural overview
 
@@ -37,10 +37,10 @@ The architecture of the chat app is shown in the following diagram:
 
 :::image type="content" source="./media/get-started-app-chat-template/simple-architecture-diagram.png" lightbox="./media/get-started-app-chat-template/simple-architecture-diagram.png" alt-text="Diagram showing architecture from client to backend app.":::
 
-* **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes request to the application backend, and displays generated responses.
-* **Backend** - The application backend is an [ASP.NET Core Minimal API](/aspnet/core/fundamentals/minimal-apis/overview). The backend hosts the Blazor static web application and is what orchestrates the interactions among the different services. Services used in this application include:
-  * [**Azure Cognitive Search**](/azure/search/search-what-is-azure-search) – Indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](/azure/search/search-get-started-vector) capabilities.
-  * [**Azure OpenAI Service**](/azure/ai-services/openai/overview) – Provides the Large Language Models (LLM) to generate responses. [Semantic Kernel](/semantic-kernel/whatissk) is used in conjunction with the Azure OpenAI Service to orchestrate the more complex AI workflows.
+- **User interface** - The application's chat interface is a [Blazor WebAssembly](/aspnet/core/blazor/) application. This interface is what accepts user queries, routes request to the application backend, and displays generated responses.
+- **Backend** - The application backend is an [ASP.NET Core Minimal API](/aspnet/core/fundamentals/minimal-apis/overview). The backend hosts the Blazor static web application and is what orchestrates the interactions among the different services. Services used in this application include:
+  - [**Azure Cognitive Search**](/azure/search/search-what-is-azure-search) – Indexes documents from the data stored in an Azure Storage Account. This makes the documents searchable using [vector search](/azure/search/search-get-started-vector) capabilities.
+  - [**Azure OpenAI Service**](/azure/ai-services/openai/overview) – Provides the Large Language Models (LLM) to generate responses. [Semantic Kernel](/semantic-kernel/whatissk) is used in conjunction with the Azure OpenAI Service to orchestrate the more complex AI workflows.
 
 ## Cost
 
@@ -283,8 +283,8 @@ If your issue isn't addressed, log your issue to the repository's [Issues](https
 
 ## Next steps
 
-* [Get the source code for the sample used in this article](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
-* [Build a chat app with Azure OpenAI](https://aka.ms/azai/chat) best practice solution architecture
-* [Access control in Generative AI Apps with Azure AI Search](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/access-control-in-generative-ai-applications-with-azure/ba-p/3956408)
-* [Build an Enterprise ready OpenAI solution with Azure API Management](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/build-an-enterprise-ready-azure-openai-solution-with-azure-api/bc-p/3935407)
-* [Outperforming vector search with hybrid retrieval and ranking capabilities](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167)
+- [Get the source code for the sample used in this article](https://github.com/Azure-Samples/azure-search-openai-demo-csharp)
+- [Build a chat app with Azure OpenAI](https://aka.ms/azai/chat) best practice solution architecture
+- [Access control in Generative AI Apps with Azure AI Search](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/access-control-in-generative-ai-applications-with-azure/ba-p/3956408)
+- [Build an Enterprise ready OpenAI solution with Azure API Management](https://techcommunity.microsoft.com/t5/apps-on-azure-blog/build-an-enterprise-ready-azure-openai-solution-with-azure-api/bc-p/3935407)
+- [Outperforming vector search with hybrid retrieval and ranking capabilities](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167)

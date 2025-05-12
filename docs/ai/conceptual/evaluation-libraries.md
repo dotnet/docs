@@ -29,7 +29,7 @@ You can also customize to add your own evaluations by implementing the <xref:Mic
 
 ### Quality evaluators
 
-Quality evaluators measure response quality use an LLM to perform the evaluation.
+Quality evaluators measure response quality. They use an LLM to perform the evaluation.
 
 | Metric       | Description                                            | Evaluator type |
 |--------------|--------------------------------------------------------|----------------|
@@ -50,10 +50,10 @@ Safety evaluators check for presence of harmful, inappropriate, or unsafe conten
 
 | Metric             | Description                                                           | Evaluator type               |
 |--------------------|-----------------------------------------------------------------------|------------------------------|
-| Groundedness       | Evaluates how well a generated response aligns with the given context | `GroundednessProEvaluator`   |
+| Groundedness Pro       | Uses a fine-tuned model hosted behind the Azure AI Foundry Evaluation service to evaluate how well a generated response aligns with the given context | `GroundednessProEvaluator`   |
 | Protected material | Evaluates response for the presence of protected material             | `ProtectedMaterialEvaluator` |
-| Ungrounded human attributes | Evaluates a response for the presence of content that indicates ungrounded inference of human attributes | `UngroundedAttributesEvaluator` |
-| Hate content | Evaluates a response for the presence of content that's hateful or unfair | `HateAndUnfairnessEvaluator`† |
+| Ungrounded attributes | Evaluates a response for the presence of content that indicates ungrounded inference of human attributes | `UngroundedAttributesEvaluator` |
+| Hate and unfairness | Evaluates a response for the presence of content that's hateful or unfair | `HateAndUnfairnessEvaluator`† |
 | Self-harm content | Evaluates a response for the presence of content that indicates self harm | `SelfHarmEvaluator`† |
 | Violent content | Evaluates a response for the presence of violent content | `ViolenceEvaluator`† |
 | Sexual content | Evaluates a response for the presence of sexual content | `SexualEvaluator`† |

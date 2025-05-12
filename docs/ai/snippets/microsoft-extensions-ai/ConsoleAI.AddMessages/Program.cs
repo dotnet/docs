@@ -29,6 +29,7 @@ while (true)
         client.GetStreamingResponseAsync(history))
     {
         Console.Write(update);
+        updates.Add(update);
     }
     Console.WriteLine();
 

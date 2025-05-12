@@ -50,15 +50,15 @@ Safety evaluators check for presence of harmful, inappropriate, or unsafe conten
 
 | Metric             | Description                                                           | Evaluator type               |
 |--------------------|-----------------------------------------------------------------------|------------------------------|
-| Groundedness Pro       | Uses a fine-tuned model hosted behind the Azure AI Foundry Evaluation service to evaluate how well a generated response aligns with the given context | `GroundednessProEvaluator`   |
+| Groundedness Pro   | Uses a fine-tuned model hosted behind the Azure AI Foundry Evaluation service to evaluate how well a generated response aligns with the given context | `GroundednessProEvaluator`   |
 | Protected material | Evaluates response for the presence of protected material             | `ProtectedMaterialEvaluator` |
 | Ungrounded attributes | Evaluates a response for the presence of content that indicates ungrounded inference of human attributes | `UngroundedAttributesEvaluator` |
 | Hate and unfairness | Evaluates a response for the presence of content that's hateful or unfair | `HateAndUnfairnessEvaluator`† |
-| Self-harm content | Evaluates a response for the presence of content that indicates self harm | `SelfHarmEvaluator`† |
-| Violent content | Evaluates a response for the presence of violent content | `ViolenceEvaluator`† |
-| Sexual content | Evaluates a response for the presence of sexual content | `SexualEvaluator`† |
-| Code vulnerability content | Evaluates a response for the presence of vulnerable code | `CodeVulnerabilityEvaluator` |
-| Indirect attack content | Evaluates a response for the presence of indirect attacks, such as manipulated content, intrusion, and information gathering | `IndirectAttackEvaluator` |
+| Self-harm | Evaluates a response for the presence of content that indicates self harm | `SelfHarmEvaluator`† |
+| Violent | Evaluates a response for the presence of violent content | `ViolenceEvaluator`† |
+| Sexual | Evaluates a response for the presence of sexual content | `SexualEvaluator`† |
+| Code vulnerability | Evaluates a response for the presence of vulnerable code | `CodeVulnerabilityEvaluator` |
+| Indirect attack | Evaluates a response for the presence of indirect attacks, such as manipulated content, intrusion, and information gathering | `IndirectAttackEvaluator` |
 
 † In addition, the `ContentHarmEvaluator` provides single-shot evaluation for the four metrics supported by `HateAndUnfairnessEvaluator`, `SelfHarmEvaluator`, `ViolenceEvaluator`, and `SexualEvaluator`.
 

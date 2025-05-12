@@ -33,7 +33,7 @@ The tools now treat HTTP sources as errors by default. To allow HTTP sources, ex
 This is both a [behavioral change](../../categories.md#behavioral-change) and a [source incompatible change](../../categories.md#source-compatibility).
 
 > [!NOTE]
-> While this change primarily affects the behavior of the `dotnet package`, it can also be considered a source incompatible change because it has the potential to break builds that rely on the previous behavior. 
+> While this change primarily affects the behavior of the `dotnet package`, it can also be considered a source incompatible change because it has the potential to break builds that rely on the previous behavior.
 
 ## Reason for change
 

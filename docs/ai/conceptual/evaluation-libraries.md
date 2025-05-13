@@ -25,22 +25,22 @@ The libraries are designed to integrate smoothly with existing .NET apps, allowi
 
 The evaluation libraries were built in collaboration with data science researchers from Microsoft and GitHub, and were tested on popular Microsoft Copilot experiences. The following sections show the built-in [quality](#quality-evaluators) and [safety](#safety-evaluators) evaluators and the metrics they measure.
 
-You can also customize to add your own evaluations by implementing the <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator> interface or extending the base classes such as <xref:Microsoft.Extensions.AI.Evaluation.Quality.ChatConversationEvaluator> and <xref:Microsoft.Extensions.AI.Evaluation.Quality.SingleNumericMetricEvaluator>.
+You can also customize to add your own evaluations by implementing the <xref:Microsoft.Extensions.AI.Evaluation.IEvaluator> interface.
 
 ### Quality evaluators
 
 Quality evaluators measure response quality. They use an LLM to perform the evaluation.
 
-| Metric       | Description                                            | Evaluator type |
-|--------------|--------------------------------------------------------|----------------|
-| Relevance    | Evaluates how relevant a response is to a query        | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceEvaluator> |
-| Completeness | Evaluates how comprehensive and accurate a response is | <xref:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator> |
-| Retrieval    | Evaluates performance in retrieving information for additional context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluator> |
-| Fluency      | Evaluates grammatical accuracy, vocabulary range, sentence complexity, and overall readability| <xref:Microsoft.Extensions.AI.Evaluation.Quality.FluencyEvaluator> |
-| Coherence    | Evaluates the logical and orderly presentation of ideas | <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> |
-| Equivalence  | Evaluates the similarity between the generated text and its ground truth with respect to a query | <xref:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator> |
-| Groundedness | Evaluates how well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator> |
-| Relevance (RTC), Truth (RTC), and Completeness (RTC) | Evaluates how relevant, truthful, and complete a response is | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator>† |
+| Metric         | Description                                            | Evaluator type |
+|----------------|--------------------------------------------------------|----------------|
+| `Relevance`    | Evaluates how relevant a response is to a query        | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceEvaluator> |
+| `Completeness` | Evaluates how comprehensive and accurate a response is | <xref:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator> |
+| `Retrieval`    | Evaluates performance in retrieving information for additional context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluator> |
+| `Fluency`      | Evaluates grammatical accuracy, vocabulary range, sentence complexity, and overall readability| <xref:Microsoft.Extensions.AI.Evaluation.Quality.FluencyEvaluator> |
+| `Coherence`    | Evaluates the logical and orderly presentation of ideas | <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> |
+| `Equivalence`  | Evaluates the similarity between the generated text and its ground truth with respect to a query | <xref:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator> |
+| `Groundedness` | Evaluates how well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator> |
+| `Relevance (RTC)`, `Truth (RTC)`, and `Completeness (RTC)` | Evaluates how relevant, truthful, and complete a response is | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator>† |
 
 † This evaluator is marked [experimental](../../fundamentals/syslib-diagnostics/experimental-overview.md).
 
@@ -50,15 +50,15 @@ Safety evaluators check for presence of harmful, inappropriate, or unsafe conten
 
 | Metric             | Description                                                           | Evaluator type               |
 |--------------------|-----------------------------------------------------------------------|------------------------------|
-| Groundedness Pro   | Uses a fine-tuned model hosted behind the Azure AI Foundry Evaluation service to evaluate how well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Safety.GroundednessProEvaluator> |
-| Protected material | Evaluates response for the presence of protected material             | <xref:Microsoft.Extensions.AI.Evaluation.Safety.ProtectedMaterialEvaluator> |
-| Ungrounded attributes | Evaluates a response for the presence of content that indicates ungrounded inference of human attributes | <xref:Microsoft.Extensions.AI.Evaluation.Safety.UngroundedAttributesEvaluator> |
-| Hate and unfairness | Evaluates a response for the presence of content that's hateful or unfair | <xref:Microsoft.Extensions.AI.Evaluation.Safety.HateAndUnfairnessEvaluator>† |
-| Self-harm | Evaluates a response for the presence of content that indicates self harm | <xref:Microsoft.Extensions.AI.Evaluation.Safety.SelfHarmEvaluator>† |
-| Violent | Evaluates a response for the presence of violent content | <xref:Microsoft.Extensions.AI.Evaluation.Safety.ViolenceEvaluator>† |
-| Sexual | Evaluates a response for the presence of sexual content | <xref:Microsoft.Extensions.AI.Evaluation.Safety.SexualEvaluator>† |
-| Code vulnerability | Evaluates a response for the presence of vulnerable code | <xref:Microsoft.Extensions.AI.Evaluation.Safety.CodeVulnerabilityEvaluator> |
-| Indirect attack | Evaluates a response for the presence of indirect attacks, such as manipulated content, intrusion, and information gathering | <xref:Microsoft.Extensions.AI.Evaluation.Safety.IndirectAttackEvaluator> |
+| `Groundedness Pro`   | Uses a fine-tuned model hosted behind the Azure AI Foundry Evaluation service to evaluate how well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Safety.GroundednessProEvaluator> |
+| `Protected Material` | Evaluates response for the presence of protected material             | <xref:Microsoft.Extensions.AI.Evaluation.Safety.ProtectedMaterialEvaluator> |
+| `Ungrounded Attributes` | Evaluates a response for the presence of content that indicates ungrounded inference of human attributes | <xref:Microsoft.Extensions.AI.Evaluation.Safety.UngroundedAttributesEvaluator> |
+| `Hate And Unfairness` | Evaluates a response for the presence of content that's hateful or unfair | <xref:Microsoft.Extensions.AI.Evaluation.Safety.HateAndUnfairnessEvaluator>† |
+| `Self Harm` | Evaluates a response for the presence of content that indicates self harm | <xref:Microsoft.Extensions.AI.Evaluation.Safety.SelfHarmEvaluator>† |
+| `Violence` | Evaluates a response for the presence of violent content | <xref:Microsoft.Extensions.AI.Evaluation.Safety.ViolenceEvaluator>† |
+| `Sexual` | Evaluates a response for the presence of sexual content | <xref:Microsoft.Extensions.AI.Evaluation.Safety.SexualEvaluator>† |
+| `Code Vulnerability` | Evaluates a response for the presence of vulnerable code | <xref:Microsoft.Extensions.AI.Evaluation.Safety.CodeVulnerabilityEvaluator> |
+| `Indirect Attack` | Evaluates a response for the presence of indirect attacks, such as manipulated content, intrusion, and information gathering | <xref:Microsoft.Extensions.AI.Evaluation.Safety.IndirectAttackEvaluator> |
 
 † In addition, the <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentHarmEvaluator> provides single-shot evaluation for the four metrics supported by `HateAndUnfairnessEvaluator`, `SelfHarmEvaluator`, `ViolenceEvaluator`, and `SexualEvaluator`.
 

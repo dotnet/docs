@@ -94,8 +94,8 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-    dotnet user-secrets set ModelName <your-openai-model-name>
+    dotnet user-secrets set OpenAIKey <your-OpenAI-key>
+    dotnet user-secrets set ModelName <your-OpenAI-model-name>
     ```
 
 :::zone-end

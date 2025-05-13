@@ -78,6 +78,10 @@ items:
                 href: windows-forms/10.0/treeview-text-location.md
               - name: StatusStrip uses System RenderMode by default
                 href: windows-forms/10.0/statusstrip-renderer.md
+          - name: WPF
+            items:
+              - name: Incorrect usage of DynamicResource causes application crash
+                href: wpf/10.0/dynamicresource-crash.md         
       - name: .NET 9
         items:
           - name: Overview
@@ -2290,6 +2294,10 @@ items:
             href: winforms.md
       - name: WPF
         items:
+          - name: .NET 10
+            items:
+              - name: Incorrect usage of DynamicResource causes application crash
+                href: wpf/10.0/dynamicresource-crash.md        
           - name: .NET 9
             items:
               - name: "'GetXmlNamespaceMaps' type change"

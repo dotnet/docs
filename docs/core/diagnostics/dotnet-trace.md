@@ -156,7 +156,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--dsrouter {ios|ios-sim|android|android-emu}**
 
- Starts a `dotnet-dsrouter` and connects to it. Require `dotnet-dsrouter` to be installed. Run `dotnet-dsrouter -h` for more information.
+ Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
 
 - **`--format {Chromium|NetTrace|Speedscope}`**
 

@@ -42,6 +42,10 @@ items:
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
                 href: globalization/10.0/version-override.md
+          - name: Interop
+            items:
+              - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
+                href: interop/10.0/search-assembly-directory.md
           - name: Networking
             items:
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
@@ -60,6 +64,8 @@ items:
                 href: sdk/10.0/msbuild-custom-culture.md
               - name: NU1510 is raised for direct references pruned by NuGet
                 href: sdk/10.0/nu1510-pruned-references.md
+              - name: HTTP warnings promoted to errors in 'dotnet package list' and 'dotnet package search'
+                href: sdk/10.0/http-warnings-to-errors.md
           - name: Windows Forms
             items:
               - name: API obsoletions
@@ -72,6 +78,10 @@ items:
                 href: windows-forms/10.0/treeview-text-location.md
               - name: StatusStrip uses System RenderMode by default
                 href: windows-forms/10.0/statusstrip-renderer.md
+          - name: WPF
+            items:
+              - name: Incorrect usage of DynamicResource causes application crash
+                href: wpf/10.0/dynamicresource-crash.md         
       - name: .NET 9
         items:
           - name: Overview
@@ -1808,6 +1818,10 @@ items:
             href: globalization.md
       - name: Interop
         items:
+          - name: .NET 10
+            items:
+              - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
+                href: interop/10.0/search-assembly-directory.md
           - name: .NET 9
             items:
               - name: CET supported by default
@@ -1944,6 +1958,8 @@ items:
                 href: sdk/10.0/msbuild-custom-culture.md
               - name: NU1510 is raised for direct references pruned by NuGet
                 href: sdk/10.0/nu1510-pruned-references.md
+              - name: HTTP warnings promoted to errors in dotnet package list and dotnet package search
+                href: sdk/10.0/http-warnings-to-errors.md
           - name: .NET 9
             items:
               - name: "`dotnet sln add` doesn't allow invalid file names"
@@ -2278,6 +2294,10 @@ items:
             href: winforms.md
       - name: WPF
         items:
+          - name: .NET 10
+            items:
+              - name: Incorrect usage of DynamicResource causes application crash
+                href: wpf/10.0/dynamicresource-crash.md        
           - name: .NET 9
             items:
               - name: "'GetXmlNamespaceMaps' type change"

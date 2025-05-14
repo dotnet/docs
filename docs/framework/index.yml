@@ -96,10 +96,10 @@ landingContent:
         links:
           - text: Desktop guide introduction
             url: /dotnet/desktop/
-          - text: .NET Framework WPF
-            url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
-          - text: .NET Framework Windows Forms
-            url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+          - text: WPF
+            url: /dotnet/desktop/wpf/
+          - text: Windows Forms
+            url: /dotnet/desktop/winforms/
 
   # Card
   - title: Create WPF apps
@@ -107,11 +107,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview of WPF
-            url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
+            url: /dotnet/desktop/wpf/
       - linkListType: tutorial
         links:
           - text: Create your first WPF app in Visual Studio
-            url: /dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application/?view=netframeworkdesktop-4.8
+            url: /dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application/
 
   # Card
   - title: Work with data using ADO.NET

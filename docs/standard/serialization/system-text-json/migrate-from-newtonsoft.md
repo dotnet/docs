@@ -23,8 +23,8 @@ The `System.Text.Json` namespace provides functionality for serializing to and d
 * .NET Framework 4.6.2 and later versions
 * .NET Core 2.0, 2.1, and 2.2
 
->[!TIP]
-> You can use AI assistance to [migrate from `Newtonsoft.Json` with GitHub Copilot](#use-github-copilot-to-migrate).
+> [!TIP]
+> You can use AI assistance to [migrate from `Newtonsoft.Json`](#use-github-copilot-to-migrate).
 
 `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` currently has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical.
 
@@ -380,7 +380,7 @@ Starting in .NET 7, you can use the C# `required` modifier or the <xref:System.T
 * The `DateTimeZoneHandling` setting can be used to serialize all `DateTime` values as UTC dates.
 * The `DateFormatString` setting and `DateTime` converters can be used to customize the format of date strings.
 
-<xref:System.Text.Json?displayProperty=fullName> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
+<xref:System.Text.Json> supports ISO 8601-1:2019, including the RFC 3339 profile. This format is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For example, the following converters serialize and deserialize JSON that uses Unix epoch format with or without a time zone offset (values such as `/Date(1590863400000-0700)/` or `/Date(1590863400000)/`):
 
 :::code language="csharp" source="snippets/how-to-contd/csharp/CustomConverterUnixEpochDate.cs" id="ConverterOnly":::
 

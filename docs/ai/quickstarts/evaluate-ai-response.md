@@ -11,7 +11,9 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 In this quickstart, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
 
 > [!NOTE]
-> This quickstart demonstrates the simplest usage of the evaluation API. Notably, it doesn't demonstrate use of the [response caching](../conceptual/evaluation-libraries.md#cached-responses) and [reporting](../conceptual/evaluation-libraries.md#reporting) functionality, which are important if you're authoring unit tests that run as part of an "offline" evaluation pipeline. The scenario shown in this quickstart is suitable in use cases such as "online" evaluation of AI responses within production code and logging scores to telemetry, where caching and reporting aren't relevant. For a tutorial that demonstrates the caching and reporting functionality, see [Tutorial: Evaluate a model's response with response caching and reporting](../tutorials/evaluate-with-reporting.md)
+>
+> - The `Microsoft.Extensions.AI.Evaluation` library is currently in Preview.
+> - This quickstart demonstrates the simplest usage of the evaluation API. Notably, it doesn't demonstrate use of the [response caching](../conceptual/evaluation-libraries.md#cached-responses) and [reporting](../conceptual/evaluation-libraries.md#reporting) functionality, which are important if you're authoring unit tests that run as part of an "offline" evaluation pipeline. The scenario shown in this quickstart is suitable in use cases such as "online" evaluation of AI responses within production code and logging scores to telemetry, where caching and reporting aren't relevant. For a tutorial that demonstrates the caching and reporting functionality, see [Tutorial: Evaluate a model's response with response caching and reporting](../tutorials/evaluate-with-reporting.md)
 
 ## Prerequisites
 
@@ -93,6 +95,13 @@ Complete the following steps to create an MSTest project that connects to the `g
 ## Run the test/evaluation
 
 Run the test using your preferred test workflow, for example, by using the CLI command `dotnet test` or through [Test Explorer](/visualstudio/test/run-unit-tests-with-test-explorer).
+
+## Clean up resources
+
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 ## Next steps
 

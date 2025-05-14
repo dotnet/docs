@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿// <SnippetGetChatClient>
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.AI;
 using Azure.AI.OpenAI;
 using Azure.Identity;
@@ -13,6 +14,7 @@ IChatClient client =
         .GetChatClient(deployment).AsIChatClient())
     .UseFunctionInvocation()
     .Build();
+// </SnippetGetChatClient>
 
 // Add a new plugin with a local .NET function that should be available to the AI model
 var chatOptions = new ChatOptions

@@ -10,6 +10,9 @@ ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 
 In this quickstart, you create a chat app that requests a response with *structured output*. A structured output response is a chat response that's of a type you specify instead of just plain text. The chat app you create in this quickstart analyzes sentiment of various product reviews, categorizing each review according to the values of a custom enumeration.
 
+> [!NOTE]
+> The <xref:Microsoft.Extensions.AI> library, which is used in this quickstart, is currently in Preview.
+
 ## Prerequisites
 
 - [.NET 8 or a later version](https://dotnet.microsoft.com/download)
@@ -107,6 +110,13 @@ Complete the following steps to create a console app that connects to the `gpt-4
    Response text: Certainly, I have analyzed the sentiment of the review you provided.
    Sentiment: Neutral
    ```
+
+## Clean up resources
+
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 ## See also
 

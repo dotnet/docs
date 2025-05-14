@@ -28,8 +28,6 @@ In this quickstart, you learn how to create a .NET console app to generate image
 
 [!INCLUDE [semantic-kernel](includes/semantic-kernel.md)]
 
-[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
-
 ## Create the app
 
 Complete the following steps to create a .NET console app to connect to an AI model.
@@ -98,7 +96,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 ## Add the app code
 
-1. In the **Program.cs** file, add the following code to connect and authenticate to the AI model.
+1. In the `Program.cs` file, add the following code to connect and authenticate to the AI model.
 
     :::zone target="docs" pivot="azure-openai"
 
@@ -117,12 +115,12 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     The preceding code:
 
-    - Reads essential configuration values from the project user secrets to connect to the AI model
-    - Creates an `ImageClient` to connect to the AI model
-    - Sends a prompt to the model that describes the desired image
-    - Prints the URL of the generated image to the console output
+    - Reads essential configuration values from the project user secrets to connect to the AI model.
+    - Creates an `OpenAI.Images.ImageClient` to connect to the AI model.
+    - Sends a prompt to the model that describes the desired image.
+    - Prints the URL of the generated image to the console output.
 
-1. Use the `dotnet run` command to run the app:
+1. Run the app:
 
     ```dotnetcli
     dotnet run
@@ -134,11 +132,10 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
 ## Clean up resources
 
-When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-```azdeveloper
-azd down
-```
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end
 

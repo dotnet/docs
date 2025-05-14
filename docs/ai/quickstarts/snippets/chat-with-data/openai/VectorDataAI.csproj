@@ -11,9 +11,9 @@
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.4.3-preview.1.25230.7" />
     <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="9.0.0-preview.1.25229.1" />
     <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.48.0-preview" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-preview.3.25171.5" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.0-preview.3.25171.5" />
-    <PackageReference Include="System.Linq.AsyncEnumerable" Version="10.0.0-preview.3.25171.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-preview.4.25258.110" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.0-preview.4.25258.110" />
+    <PackageReference Include="System.Linq.AsyncEnumerable" Version="10.0.0-preview.4.25258.110" />
   </ItemGroup>
 
 </Project>

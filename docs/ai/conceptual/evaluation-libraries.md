@@ -12,7 +12,7 @@ The evaluation libraries, which are built on top of the [Microsoft.Extensions.AI
 
 - [📦 Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) – Defines the core abstractions and types for supporting evaluation.
 - [📦 Microsoft.Extensions.AI.Evaluation.Quality](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality) – Contains evaluators that assess the quality of LLM responses in an app according to metrics such as relevance and completeness. These evaluators use the LLM directly to perform evaluations.
-- [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) – Contains evaluators, such as the `ProtectedMaterialEvaluator` and `ContentHarmEvaluator`, that use the [Azure AI Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
+- [📦 Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) – Contains evaluators, such as the `ProtectedMaterialEvaluator` and `ContentHarmEvaluator`, that use the [Azure AI Foundry](/azure/ai-foundry/) Evaluation Service to perform evaluations.
 - [📦 Microsoft.Extensions.AI.Evaluation.Reporting](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Reporting) – Contains support for caching LLM responses, storing the results of evaluations, and generating reports from that data.
 - [📦 Microsoft.Extensions.AI.Evaluation.Reporting.Azure](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Reporting.Azure) - Supports the reporting library with an implementation for caching LLM responses and storing the evaluation results in an [Azure Storage](/azure/storage/common/storage-introduction) container.
 - [📦 Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) – A command-line tool for generating reports and managing evaluation data.
@@ -31,16 +31,16 @@ You can also customize to add your own evaluations by implementing the <xref:Mic
 
 Quality evaluators measure response quality. They use an LLM to perform the evaluation.
 
-| Metric         | Description                                            | Evaluator type |
-|----------------|--------------------------------------------------------|----------------|
-| `Relevance`    | Evaluates how relevant a response is to a query        | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceEvaluator> |
-| `Completeness` | Evaluates how comprehensive and accurate a response is | <xref:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator> |
-| `Retrieval`    | Evaluates performance in retrieving information for additional context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluator> |
-| `Fluency`      | Evaluates grammatical accuracy, vocabulary range, sentence complexity, and overall readability| <xref:Microsoft.Extensions.AI.Evaluation.Quality.FluencyEvaluator> |
-| `Coherence`    | Evaluates the logical and orderly presentation of ideas | <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> |
-| `Equivalence`  | Evaluates the similarity between the generated text and its ground truth with respect to a query | <xref:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator> |
-| `Groundedness` | Evaluates how well a generated response aligns with the given context | <xref:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator> |
-| `Relevance (RTC)`, `Truth (RTC)`, and `Completeness (RTC)` | Evaluates how relevant, truthful, and complete a response is | <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator>† |
+| Evaluator type | Metric         | Description                                            |
+|----------------|----------------|--------------------------------------------------------|
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceEvaluator> | `Relevance` | Evaluates how relevant a response is to a query |
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.CompletenessEvaluator> | `Completeness` | Evaluates how comprehensive and accurate a response is |
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.RetrievalEvaluator> | `Retrieval` | Evaluates performance in retrieving information for additional context |
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.FluencyEvaluator> | `Fluency` | Evaluates grammatical accuracy, vocabulary range, sentence complexity, and overall readability|
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.CoherenceEvaluator> | `Coherence` | Evaluates the logical and orderly presentation of ideas |
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.EquivalenceEvaluator> | `Equivalence` | Evaluates the similarity between the generated text and its ground truth with respect to a query |
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.GroundednessEvaluator> | `Groundedness` | Evaluates how well a generated response aligns with the given context |
+| <xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator>† | `Relevance (RTC)`, `Truth (RTC)`, and `Completeness (RTC)` | Evaluates how relevant, truthful, and complete a response is |
 
 † This evaluator is marked [experimental](../../fundamentals/syslib-diagnostics/experimental-overview.md).
 

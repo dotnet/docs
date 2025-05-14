@@ -68,10 +68,53 @@ Complete the following steps to create an MSTest project that connects to the `g
 
 ## Add the test app code
 
-1. Rename the `Test1.cs` file to `MyTests.cs`, and then open the file and rename the class to `MyTests`.
+1. Rename the `Test1.cs` file to `MyTests.cs`, and then open the file and rename the class to `MyTests`. Delete the empty `TestMethod1` method.
 1. Add the necessary `using` directives to the top of the file.
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="UsingDirectives":::
+
+1. Add the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> property to the class.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="TestContext":::
+
+1. Add the scenario and execution name fields to the class.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ScenarioName":::
+
+   The [scenario name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun.ScenarioName) is set to the fully qualified name of the current test method. However, you can set it to any string of your choice. Here are some considerations for choosing a scenario name:
+
+   - When using disk-based storage, the scenario name is used as the name of the folder under which the corresponding evaluation results are stored.
+   - By default, the generated evaluation report splits scenario names on `.` so that the results can be displayed in a hierarchical view with appropriate grouping, nesting, and aggregation.
+
+  The [execution name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.ExecutionName) is used to group evaluation results that are part of the same evaluation run (or test run) when the evaluation results are stored. If you don't provide an execution name when creating a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>, all evaluation runs will use the same default execution name of `Default`. In this case, results from one run will be overwritten by the next.
+
+1. Add a method to gather the safety evaluators to use in the evaluation.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="GetEvaluators":::
+
+1. Add a <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration> object, which configures the connection parameters that the safety evaluators need to communicate with the Azure AI Foundry Evaluation Service.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ServiceConfig":::
+
+1. Set up the reporting functionality. Convert the <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration> to a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration>, and then use that to create the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ReportingConfig":::
+
+   Response caching functionality is supported and works the same way regardless of whether the evaluators talk to an LLM or to the Azure AI Foundry Evaluation Service (as is the case for the below evaluators that are part of the Microsoft.Extensions.AI.Evaluation.Safety NuGet package).
+
+1. Add a method to add a system prompt <xref:Microsoft.Extensions.AI.ChatMessage>, define the [chat options](xref:Microsoft.Extensions.AI.ChatOptions), and ask the model for a response to a given question.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="GetResponse":::
+
+   The test in this tutorial evaluates the LLM's response to an astronomy question. Since the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration> has response caching enabled, and since the supplied <xref:Microsoft.Extensions.AI.IChatClient> is always fetched from the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun> created using this reporting configuration, the LLM response for the test is cached and reused. The response will be reused until the corresponding cache entry expires (in 14 days by default), or until any request parameter, such as the the LLM endpoint or the question being asked, is changed.
+
+1. Add a method to validate the response.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="Validate":::
+
+1. Finally, add the [test method](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) itself.
+
+   :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="TestMethod":::
 
 ## Run the test/evaluation
 
@@ -79,7 +122,7 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 
 ## Generate a report
 
-??
+You might choose to generate a report to view the evaluation results. For information about how to do so, see [Generate a report](evaluate-with-reporting.md#generate-a-report).
 
 ## Next steps
 

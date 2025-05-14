@@ -181,15 +181,15 @@ When working with a stateless service, callers maintain a list of all messages. 
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet1":::
 
-For stateful services, you might already know the identifier used for the relevant conversation. You can put that identifier into <xref:Microsoft.Extensions.AI.ChatOptions.ChatThreadId?displayProperty=nameWithType>. Usage then follows the same pattern, except there's no need to maintain a history manually.
+For stateful services, you might already know the identifier used for the relevant conversation. You can put that identifier into <xref:Microsoft.Extensions.AI.ChatOptions.ConversationId?displayProperty=nameWithType>. Usage then follows the same pattern, except there's no need to maintain a history manually.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet2":::
 
-Some services might support automatically creating a thread ID for a request that doesn't have one. In such cases, you can transfer the <xref:Microsoft.Extensions.AI.ChatResponse.ChatThreadId?displayProperty=nameWithType> over to the `ChatOptions.ChatThreadId` for subsequent requests. For example:
+Some services might support automatically creating a thread ID for a request that doesn't have one. In such cases, you can transfer the <xref:Microsoft.Extensions.AI.ChatResponse.ConversationId?displayProperty=nameWithType> over to the `ChatOptions.ConversationId` for subsequent requests. For example:
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet3":::
 
-If you don't know ahead of time whether the service is stateless or stateful, you can check the response <xref:Microsoft.Extensions.AI.ChatResponse.ChatThreadId> and act based on its value. If it's set, then that value is propagated to the options and the history is cleared so as to not resend the same history again. If the response `ChatThreadId` isn't set, then the response message is added to the history so that it's sent back to the service on the next turn.
+If you don't know ahead of time whether the service is stateless or stateful, you can check the response <xref:Microsoft.Extensions.AI.ChatResponse.ConversationId> and act based on its value. If it's set, then that value is propagated to the options and the history is cleared so as to not resend the same history again. If the response `ConversationId` isn't set, then the response message is added to the history so that it's sent back to the service on the next turn.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet4":::
 

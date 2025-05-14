@@ -222,6 +222,8 @@ Use the following settings to manage the garbage collector's memory and processo
 - [Heap hard limit percent](#heap-hard-limit-percent)
 - [Per-object-heap hard limits](#per-object-heap-hard-limits)
 - [Per-object-heap hard limit percents](#per-object-heap-hard-limit-percents)
+- [Region range](#region-range)
+- [Region size](#region-size)
 - [High memory percent](#high-memory-percent)
 - [Retain VM](#retain-vm)
 
@@ -561,6 +563,41 @@ These configuration settings don't have specific MSBuild properties. However, yo
 
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the values would be 30 for the JSON file and 0x1E or 1E for the environment variable.
+
+### Region range
+
+Starting with .NET 7.0 the GC heap switched its physical representation from segments to regions for 64-bit Windows and Linux. See [Maoni Stephens' blog article](https://itnext.io/how-segments-and-regions-differ-in-decommitting-memory-in-the-net-7-gc-68c58465ab5a) for more details. With this change the GC reserves a range of virtual memory during initialization. Note that this is only reserving memory, not committing (the GC heap size is committed memory). It's merely a range to define the maximum range the GC heap can commit. For most applications they don't need to commit nearly this much.
+
+If you don't have any other configurations and aren't running in a memory constraint environment (which would cause some GC configs to be set), by default we reserve 256GB. If you have more than 256GB physical memory available, it will be twice that amount. 
+
+If the per heap hard limits are set, the reserve range will be the same as the total hard limit. If a single hard limit config is set, this range will be 5x that amount.
+
+This range is limited by the amount of total virtual memory. Normally on 64-bit this is never a problem but there could be a virtual memory limit set on a process. This range will be limited by half that amount. For example, if you set the HeapHardLimit config to 1GB and have a 4GB virtual memory limit set on the process, this range will be min (5x1GB, 4GB/2) which is 2GB.
+
+You can use the `GC.GetConfigurationVariables` API to see the value of this range under the name `GCRegionRange`. If you do get `E_OUTOFMEMORY` during the runtime intialization and want to see if it's due to reserving this range, you can look at the `VirtualAlloc`call with `MEM_RESERVE` on Windows and the `mmap` call with `PROT_NONE` on Linux during GC initialization and see if the OOM is from that call. If this reserve call is failing you can change it via this config.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.RegionRange` | *decimal value* | .NET 10 |
+| **Environment variable** | `DOTNET_GCRegionRange` | *hexadecimal value* | .NET 7 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
+
+### Region size
+
+Starting with .NET 7.0 the GC heap switched its physical representation from segments to regions for 64-bit Windows and Linux. See [Maoni Stephens' blog article](https://itnext.io/how-segments-and-regions-differ-in-decommitting-memory-in-the-net-7-gc-68c58465ab5a) for more details. By default each region is 4MB for SOH. For UOH (LOH and POH), it's 8 times the SOH region size. You can use this config to change the SOH region size and the UOH regions will be adjusted accordingly. 
+
+Regions are only allocated when needed so in general you don't need to care about the region size. However there are 2 cases where you might want to adjust this size and use 
+
+- For processes that have very small GC heaps, changing the region size to be smaller would be beneficial for native memory usage from GC's own bookkeeping. The recommendation is 1MB.
+- If you are on Linux and need to reduce the number of memory mappings, you can change this to be larger, eg, 32MB.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.RegionSize` | *decimal value* | .NET 10 |
+| **Environment variable** | `DOTNET_GCRegionSize` | *hexadecimal value* | .NET 7 |
+
+[!INCLUDE [runtimehostconfigurationoption](includes/runtimehostconfigurationoption.md)]
 
 ### High memory percent
 

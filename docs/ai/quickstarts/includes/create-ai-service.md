@@ -8,6 +8,6 @@
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME <your-Azure-OpenAI-model-name>
+    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
+    dotnet user-secrets set AZURE_OPENAI_GPT_NAME <your-azure-openai-model-name>
     ```

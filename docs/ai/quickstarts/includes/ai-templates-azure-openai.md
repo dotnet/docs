@@ -114,7 +114,7 @@ The **AI Chat Web App** app is almost ready to go as soon as it's created. Howev
 # [.NET CLI](#tab/configure-dotnet-cli)
 
 ```dotnetcli
-dotnet user-secrets set AzureOpenAi:Endpoint <your-Azure-OpenAI-endpoint>
+dotnet user-secrets set AzureOpenAi:Endpoint <your-azure-openai-endpoint>
 ```
 
 ---

@@ -12,9 +12,8 @@ In this tutorial, you create an MSTest app to evaluate the safety of a response 
 
 ## Prerequisites
 
-[!INCLUDE [prerequisites-azure-openai](../quickstarts/includes/prerequisites-azure-openai.md)]
-
-In addition, to use
+- .NET 8.0 SDK or higher - [Install the .NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
+- An Azure subscription - [Create one for free](https://azure.microsoft.com/free).
 
 ## Configure the AI service
 
@@ -86,7 +85,7 @@ Complete the following steps to create an MSTest project that connects to the `g
    - When using disk-based storage, the scenario name is used as the name of the folder under which the corresponding evaluation results are stored.
    - By default, the generated evaluation report splits scenario names on `.` so that the results can be displayed in a hierarchical view with appropriate grouping, nesting, and aggregation.
 
-  The [execution name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.ExecutionName) is used to group evaluation results that are part of the same evaluation run (or test run) when the evaluation results are stored. If you don't provide an execution name when creating a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>, all evaluation runs will use the same default execution name of `Default`. In this case, results from one run will be overwritten by the next.
+   The [execution name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.ExecutionName) is used to group evaluation results that are part of the same evaluation run (or test run) when the evaluation results are stored. If you don't provide an execution name when creating a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>, all evaluation runs will use the same default execution name of `Default`. In this case, results from one run will be overwritten by the next.
 
 1. Add a method to gather the safety evaluators to use in the evaluation.
 
@@ -100,14 +99,14 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ChatConfig":::
 
-1. Set up the reporting functionality. Convert the <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration> to a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration>, and then pass that to the methods that creates a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>.
+1. Set up the reporting functionality. Convert the <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration> to a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration>, and then pass that to the method that creates a <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>.
 
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ReportingConfig":::
 
    > [!NOTE]
    > When you call <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>, it's important to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> as an additional chat configuration. If you don't, you'll get a <xref:System.NotSupportedException> when you call <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>.
    >
-   > Similarly, if you configure both [LLM-based evaluators](../conceptual/evaluation-libraries.md#quality-evaluators) and [Azure AI Foundry Evaluation Service&mdash;based evaluators](../conceptual/evaluation-libraries.md#safety-evaluators) in the reporting configuration, you also need to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>. Then it returns a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> that can talk to both types of evaluators.
+   > Similarly, if you configure both [LLM-based evaluators](../conceptual/evaluation-libraries.md#quality-evaluators) and [Azure AI Foundry Evaluation Service&ndash;based evaluators](../conceptual/evaluation-libraries.md#safety-evaluators) in the reporting configuration, you also need to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>. Then it returns a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> that can talk to both types of evaluators.
 
    Response caching functionality is supported and works the same way regardless of whether the evaluators talk to an LLM or to the Azure AI Foundry Evaluation Service. The response will be reused until the corresponding cache entry expires (in 14 days by default), or until any request parameter, such as the the LLM endpoint or the question being asked, is changed.
 
@@ -145,3 +144,5 @@ You might choose to generate a report to view the evaluation results. For inform
 
 ## Next steps
 
+- Configure additional evaluators, such as the [quality evaluators](../conceptual/evaluation-libraries.md#quality-evaluators).
+- In real-world evaluations, you might not want to validate individual results, since the LLM responses and evaluation scores can vary over time as your product (and the models used) evolve. You might not want individual evaluation tests to fail and block builds in your CI/CD pipelines when this happens. Instead, in such cases, it might be better to rely on the generated report and track the overall trends for evaluation scores across different scenarios over time (and only fail individual builds in your CI/CD pipelines when there's a significant drop in evaluation scores across multiple different tests).

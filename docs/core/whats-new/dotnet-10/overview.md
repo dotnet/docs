@@ -2,14 +2,14 @@
 title: What's new in .NET 10
 description: Learn about the new features introduced in .NET 10 for the runtime, libraries, and SDK. Also find links to what's new in other areas, such as ASP.NET Core.
 titleSuffix: ""
-ms.date: 04/09/2025
+ms.date: 05/15/2025
 ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
 # What's new in .NET 10
 
-Learn about the new features in .NET 10 and find links to further documentation. This page is updated for Preview 3.
+Learn about the new features in .NET 10 and find links to further documentation. This page is updated for Preview 4.
 
 .NET 10, the successor to [.NET 9](../dotnet-9/overview.md), is [supported for three years](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) as a long-term support (LTS) release. You can [download .NET 10 here](https://get.dot.net/10).
 
@@ -49,7 +49,7 @@ For more information, see [What's new in the .NET 10 libraries](libraries.md).
 
 ## .NET SDK
 
-The .NET 10 SDK introduces the following new features and enhancements, including:
+The .NET 10 SDK introduces the following new features and enhancements:
 
 - **Pruning of framework-provided package references**: Automatically removes unused framework-provided package references, reducing build times and disk usage.
 - **More consistent command order**: New noun-first aliases for `dotnet` CLI commands improve readability and consistency.
@@ -63,9 +63,7 @@ For more information, see [What's new in the SDK for .NET 10](sdk.md).
 
 ## .NET Aspire
 
-.NET Aspire releases version 9.1, which focuses on quality-of-life fixes.
-
-For details, see [What's new in .NET Aspire 9.1](/dotnet/aspire/whats-new/dotnet-aspire-9.1).
+For information about what's new in .NET Aspire, see [.NET Aspire — what's new?](/dotnet/aspire/whats-new/).
 
 ## ASP.NET Core
 
@@ -78,7 +76,7 @@ For details, see [What's new in ASP.NET Core for .NET 10](/aspnet/core/release-n
 C# 14 introduces several new features and enhancements to improve developer productivity and code quality. Key updates include:
 
 - **Field-backed properties**: Provides a smoother path from auto-implemented properties to writing custom `get` and `set` accessors. The compiler-generated backing field can now be accessed using the `field` contextual keyword.
-- **Unbound generic support for `nameof`**: The `nameof` expression now supports unbound generic types, such as `List<>`, returning the name of the type without requiring type arguments.
+- **Unbound generic support for `nameof`**: The `nameof` expression now supports unbound generic types, such as `List<>`, where it returns the name of the type without requiring a type argument.
 - **Implicit span conversions**: Introduces first-class support for `Span<T>` and `ReadOnlySpan<T>` with new implicit conversions, enabling more natural programming with these types.
 - **Modifiers on simple lambda parameters**: Allows parameter modifiers like `ref`, `in`, or `out` in lambda expressions without specifying parameter types.
 - **Partial events and constructors**: Adds support for partial instance constructors and partial events, complementing partial methods and properties introduced in C# 13.
@@ -93,13 +91,16 @@ For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp
 The F# updates in .NET 10 include several new features and improvements across the language, standard library, and compiler service. Key updates include:
 
 - **F# Language**:
-  - New language features require enabling the `<LangVersion>preview</LangVersion>` project property in `.fsproj` files. These features become the default with the .NET 10 release.
+
+  New language features require enabling the `<LangVersion>preview</LangVersion>` project property in `.fsproj` files. These features become the default with the .NET 10 release.
 
 - **FSharp.Core Standard Library**:
-  - Changes to the `FSharp.Core` standard library are applied automatically to projects compiled with the new SDK unless a lower `FSharp.Core` version is explicitly pinned.
+
+  Changes to the `FSharp.Core` standard library are applied automatically to projects compiled with the new SDK unless a lower `FSharp.Core` version is explicitly pinned.
 
 - **FSharp.Compiler.Service**:
-  - General improvements and bug fixes in the compiler implementation.
+
+  General improvements and bug fixes in the compiler implementation.
 
 For more information, see the [F# release notes](https://fsharp.github.io/fsharp-compiler-docs/release-notes/About.html).
 

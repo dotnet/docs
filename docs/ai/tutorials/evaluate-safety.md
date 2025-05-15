@@ -8,7 +8,7 @@ ms.custom: devx-track-dotnet-ai
 
 # Tutorial: Evaluate the safety of a model's response
 
-In this tutorial, you create an MSTest app to evaluate the safety of a response from an OpenAI model. The test app uses the evaluators from the [Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package to perform the evaluations. These safety evaluators use the [Azure AI Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
+In this tutorial, you create an MSTest app to evaluate the *safety* of a response from an OpenAI model. Safety evaluators check for presence of harmful, inappropriate, or unsafe content in a response. The test app uses the safety evaluators from the [Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package to perform the evaluations. These safety evaluators use the [Azure AI Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
 
 ## Prerequisites
 
@@ -104,7 +104,7 @@ Complete the following steps to create an MSTest project.
    :::code language="csharp" source="./snippets/evaluate-safety/MyTests.cs" id="ReportingConfig":::
 
    > [!NOTE]
-   > When you call <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>, it's important to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> as an additional chat configuration. If you don't, you'll get a <xref:System.NotSupportedException> when you call <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync(System.Collections.Generic.IEnumerable{Microsoft.Extensions.AI.ChatMessage},Microsoft.Extensions.AI.ChatOptions,System.Threading.CancellationToken)?displayProperty=nameWithType>.
+   > When you call <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>, you pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> as an additional chat configuration to enable getting a chat response.
    >
    > Similarly, if you configure both [LLM-based evaluators](../conceptual/evaluation-libraries.md#quality-evaluators) and [Azure AI Foundry Evaluation service&ndash;based evaluators](../conceptual/evaluation-libraries.md#safety-evaluators) in the reporting configuration, you also need to pass the LLM <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> to <xref:Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfigurationExtensions.ToChatConfiguration(Microsoft.Extensions.AI.Evaluation.Safety.ContentSafetyServiceConfiguration,Microsoft.Extensions.AI.Evaluation.ChatConfiguration)>. Then it returns a <xref:Microsoft.Extensions.AI.Evaluation.ChatConfiguration> that can talk to both types of evaluators.
 

@@ -150,10 +150,10 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 
 ## Generate a report
 
-1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window (update the version as necessary):
+1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window:
 
    ```dotnetcli
-   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console --version 9.3.0-preview.1.25164.6
+   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console --prerelease
    ```
 
 1. Generate a report by running the following command:

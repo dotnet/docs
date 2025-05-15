@@ -206,9 +206,9 @@ Out-of-proc trace data aggregators can enable and configure this sampling by spe
 
 .NET 10 improves the performance and memory usage of <xref:System.IO.Compression.ZipArchive>.
 
-First, the way entries are written to a `ZipArchive` when in `Update` mode has been optimized. Previously, all <xref:System.IO.Compression.ZipArchiveEntry> instances were loaded into memory and rewritten, which could lead to high memory usage and performance bottlenecks. The optimization reduces memory usage and improves performance by avoiding the need to load all entries into memory. For more information, see [dotnet/runtime#102704](https://github.com/dotnet/runtime/pull/102704).
+First, the way entries are written to a `ZipArchive` when in `Update` mode has been optimized. Previously, all <xref:System.IO.Compression.ZipArchiveEntry> instances were loaded into memory and rewritten, which could lead to high memory usage and performance bottlenecks. The optimization reduces memory usage and improves performance by avoiding the need to load all entries into memory.
 
-Second, the extraction of <xref:System.IO.Compression.ZipArchive> entries is now parallelized, and internal data structures are optimized for better memory usage. These improvements address issues related to performance bottlenecks and high memory usage, making `ZipArchive` more efficient and faster, especially when dealing with large archives. For more information, see [dotnet/runtime#103153](https://github.com/dotnet/runtime/pull/103153#issue-2339713028).
+Second, the extraction of <xref:System.IO.Compression.ZipArchive> entries is now parallelized, and internal data structures are optimized for better memory usage. These improvements address issues related to performance bottlenecks and high memory usage, making `ZipArchive` more efficient and faster, especially when dealing with large archives.
 
 ### New async ZIP APIs
 

@@ -56,10 +56,12 @@ The new <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Expo
 
 If you want even more control, you can use [the overload](xref:System.Security.Cryptography.X509Certificates.X509Certificate.ExportPkcs12(System.Security.Cryptography.PbeParameters,System.String)) that accepts a <xref:System.Security.Cryptography.PbeParameters>.
 
-## Globalization
+## Globalization and date/time
 
 - [New method overloads in ISOWeek for DateOnly type](#new-method-overloads-in-isoweek-for-dateonly-type)
 - [Numeric ordering for string comparison](#numeric-ordering-for-string-comparison)
+
+- [New `TimeSpan.FromMilliseconds` overload with single parameter](#new-timespanfrommilliseconds-overload-with-single-parameter)
 
 ### New method overloads in ISOWeek for DateOnly type
 
@@ -77,6 +79,18 @@ Numerical string comparison is a highly requested feature for comparing strings 
 
 This option isn't valid for the following index-based string operations: `IndexOf`, `LastIndexOf`, `StartsWith`, `EndsWith`, `IsPrefix`, and `IsSuffix`.
 
+### New `TimeSpan.FromMilliseconds` overload with single parameter
+
+The <xref:System.TimeSpan.FromMilliseconds(System.Int64,System.Int64)?displayProperty=nameWithType> method was introduced previously without adding an overload that takes a single parameter.
+
+Although this works since the second parameter is optional, it causes a compilation error when used in a LINQ expression like:
+
+```csharp
+Expression<Action> a = () => TimeSpan.FromMilliseconds(1000);
+```
+
+The issue arises because LINQ expressions can't handle optional parameters. To address this, .NET 10 introduces [a new overload](xref:System.TimeSpan.FromMilliseconds(System.Int64)) takes a single parameter. It also modifies [the existing method](xref:System.TimeSpan.FromMilliseconds(System.Int64,System.Int64)) to make the second parameter mandatory.
+
 ## Strings
 
 - [String normalization APIs to work with span of characters](#string-normalization-apis-to-work-with-span-of-characters)
@@ -90,18 +104,6 @@ Unicode string normalization has been supported for a long time, but existing AP
 - <xref:System.StringNormalizationExtensions.GetNormalizedLength(System.ReadOnlySpan{System.Char},System.Text.NormalizationForm)?displayProperty=nameWithType>
 - <xref:System.StringNormalizationExtensions.IsNormalized(System.ReadOnlySpan{System.Char},System.Text.NormalizationForm)?displayProperty=nameWithType>
 - <xref:System.StringNormalizationExtensions.TryNormalize(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Int32@,System.Text.NormalizationForm)?displayProperty=nameWithType>
-
-## New `TimeSpan.FromMilliseconds` overload with single parameter
-
-The <xref:System.TimeSpan.FromMilliseconds(System.Int64,System.Int64)?displayProperty=nameWithType> method was introduced previously without adding an overload that takes a single parameter.
-
-Although this works since the second parameter is optional, it causes a compilation error when used in a LINQ expression like:
-
-```csharp
-Expression<Action> a = () => TimeSpan.FromMilliseconds(1000);
-```
-
-The issue arises because LINQ expressions can't handle optional parameters. To address this, .NET 10 introduces [a new overload](xref:System.TimeSpan.FromMilliseconds(System.Int64)) takes a single parameter. It also modifies [the existing method](xref:System.TimeSpan.FromMilliseconds(System.Int64,System.Int64)) to make the second parameter mandatory.
 
 ## Collections
 

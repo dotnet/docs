@@ -14,9 +14,6 @@ zone_pivot_groups: openai-library
 
 In this quickstart, you create a .NET console AI chat app to connect to an AI model with local function calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
-> [!NOTE]
-> The [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) library is currently in Preview.
-
 :::zone target="docs" pivot="openai"
 
 [!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]
@@ -54,7 +51,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI --prerelease
+    dotnet add package Microsoft.Extensions.AI
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -65,7 +62,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package Microsoft.Extensions.AI --prerelease
+    dotnet add package Microsoft.Extensions.AI
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets

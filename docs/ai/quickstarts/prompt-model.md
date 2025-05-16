@@ -14,9 +14,6 @@ zone_pivot_groups: openai-library
 
 In this quickstart, you learn how to create a .NET console chat app to connect to and prompt an OpenAI or Azure OpenAI model. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
 
-> [!NOTE]
-> The <xref:Microsoft.Extensions.AI> library is currently in Preview.
-
 :::zone target="docs" pivot="openai"
 
 [!INCLUDE [openai-prereqs](includes/prerequisites-openai.md)]

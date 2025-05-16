@@ -568,7 +568,7 @@ These configuration settings don't have specific MSBuild properties. However, yo
 
 Starting in .NET 7, the GC heap switched its physical representation from segments to regions for 64-bit Windows and Linux. (For more information, see [Maoni Stephens' blog article](https://itnext.io/how-segments-and-regions-differ-in-decommitting-memory-in-the-net-7-gc-68c58465ab5a).) With this change, the GC reserves a range of virtual memory during initialization. Note that this is only reserving memory, not committing (the GC heap size is committed memory). It's merely a range to define the maximum range the GC heap can commit. Most applications don't need to commit nearly this much.
 
-If you don't have any other configurations and aren't running in a memory constraint environment (which would cause some GC configs to be set), by default we reserve 256GB. If you have more than 256GB physical memory available, it will be twice that amount. 
+If you don't have any other configurations and aren't running in a memory-constrained environment (which would cause some GC configs to be set), by default 256 GB is reserved. If you have more than 256 GB physical memory available, it will be twice that amount.
 
 If the per heap hard limits are set, the reserve range will be the same as the total hard limit. If a single hard limit config is set, this range will be 5x that amount.
 

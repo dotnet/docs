@@ -572,7 +572,7 @@ If you don't have any other configurations and aren't running in a memory-constr
 
 If the per heap hard limits are set, the reserve range is the same as the total hard limit. If a single hard limit config is set, this range is five times that amount.
 
-This range is limited by the amount of total virtual memory. Normally on 64-bit this is never a problem but there could be a virtual memory limit set on a process. This range will be limited by half that amount. For example, if you set the HeapHardLimit config to 1GB and have a 4GB virtual memory limit set on the process, this range will be min (5x1GB, 4GB/2) which is 2GB.
+This range is limited by the amount of total virtual memory. Normally on 64-bit this is never a problem, but there could be a virtual memory limit set on a process. This range is limited by half that amount. For example, if you set the `HeapHardLimit` config to 1 GB and have a 4 GB virtual memory limit set on the process, this range is `min (5x1GB, 4GB/2)`, which is 2 GB.
 
 You can use the `GC.GetConfigurationVariables` API to see the value of this range under the name `GCRegionRange`. If you do get `E_OUTOFMEMORY` during the runtime intialization and want to see if it's due to reserving this range, you can look at the `VirtualAlloc`call with `MEM_RESERVE` on Windows and the `mmap` call with `PROT_NONE` on Linux during GC initialization and see if the OOM is from that call. If this reserve call is failing you can change it via this config.
 

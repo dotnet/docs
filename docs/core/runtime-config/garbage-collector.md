@@ -589,7 +589,7 @@ Starting with .NET 7, the GC heap switched its physical representation from segm
 
 Regions are only allocated when needed, so in general you don't need to worry about the region size. However, there are two cases where you might want to adjust this size:
 
-- For processes that have very small GC heaps, changing the region size to be smaller would be beneficial for native memory usage from GC's own bookkeeping. The recommendation is 1MB.
+- For processes that have very small GC heaps, changing the region size to be smaller is beneficial for native memory usage from GC's own bookkeeping. The recommendation is 1 MB.
 - If you are on Linux and need to reduce the number of memory mappings, you can change this to be larger, eg, 32MB.
 
 | | Setting name | Values | Version introduced |

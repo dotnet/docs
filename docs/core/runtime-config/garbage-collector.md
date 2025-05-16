@@ -587,7 +587,7 @@ You can use the `GC.GetConfigurationVariables` API to see the value of this rang
 
 Starting with .NET 7, the GC heap switched its physical representation from segments to regions for 64-bit Windows and Linux. (For more information, see [Maoni Stephens' blog article](https://itnext.io/how-segments-and-regions-differ-in-decommitting-memory-in-the-net-7-gc-68c58465ab5a).) By default, each region is 4 MB for SOH. For UOH (LOH and POH), it's eight times the SOH region size. You can use this config to change the SOH region size, and the UOH regions will be adjusted accordingly.
 
-Regions are only allocated when needed so in general you don't need to care about the region size. However there are 2 cases where you might want to adjust this size and use 
+Regions are only allocated when needed, so in general you don't need to worry about the region size. However, there are two cases where you might want to adjust this size:
 
 - For processes that have very small GC heaps, changing the region size to be smaller would be beneficial for native memory usage from GC's own bookkeeping. The recommendation is 1MB.
 - If you are on Linux and need to reduce the number of memory mappings, you can change this to be larger, eg, 32MB.

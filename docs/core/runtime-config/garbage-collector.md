@@ -570,7 +570,7 @@ Starting in .NET 7, the GC heap switched its physical representation from segmen
 
 If you don't have any other configurations and aren't running in a memory-constrained environment (which would cause some GC configs to be set), by default 256 GB is reserved. If you have more than 256 GB physical memory available, it will be twice that amount.
 
-If the per heap hard limits are set, the reserve range will be the same as the total hard limit. If a single hard limit config is set, this range will be 5x that amount.
+If the per heap hard limits are set, the reserve range is the same as the total hard limit. If a single hard limit config is set, this range is five times that amount.
 
 This range is limited by the amount of total virtual memory. Normally on 64-bit this is never a problem but there could be a virtual memory limit set on a process. This range will be limited by half that amount. For example, if you set the HeapHardLimit config to 1GB and have a 4GB virtual memory limit set on the process, this range will be min (5x1GB, 4GB/2) which is 2GB.
 

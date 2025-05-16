@@ -2,7 +2,7 @@
 title: What's new in ML.NET
 titleSuffix: ""
 description: Discover what's new in ML.NET.
-ms.date: 05/15/2024
+ms.date: 05/15/2025
 ms.topic: whats-new
 
 #Customer intent: As a developer, I want to know what the new features are in ML.NET.
@@ -58,6 +58,27 @@ The following examples show how to use the `CodeGen` tokenizer.
 The following example demonstrates how to use the tokenizer with `Span<char>` and how to disable normalization or pretokenization on the encoding calls.
 
 :::code language="csharp" source="./snippets/csharp/Llama.cs" id="Span":::
+
+## Byte-level support in BPE tokenizer
+
+The <xref:Microsoft.ML.Tokenizers.BpeTokenizer> now supports byte-level encoding, enabling compatibility with models like DeepSeek. This enhancement processes vocabulary as UTF-8 bytes. In addition, the new `BpeOptions` type simplifies tokenizer configuration.
+
+```csharp
+BpeOptions bpeOptions = new BpeOptions(vocabs);
+BpeTokenizer tokenizer = BpeTokenizer.Create(bpeOptions);
+```
+
+## Deterministic option for LightGBM trainer
+
+LightGBM trainers now expose options for deterministic training, ensuring consistent results with the same data and random seed. These options include `deterministic`, `force_row_wise`, and `force_col_wise`.
+
+```csharp
+LightGbmBinaryTrainer trainer = ML.BinaryClassification.Trainers.LightGbm(new LightGbmBinaryTrainer.Options
+{
+    Deterministic = true,
+    ForceRowWise = true
+});
+```
 
 ## Model Builder (Visual Studio extension)
 

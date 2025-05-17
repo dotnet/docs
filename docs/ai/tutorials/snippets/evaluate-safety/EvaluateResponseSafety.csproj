@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <UserSecretsId>07aae6fc-a2ea-407b-b1e1-83d0de270091</UserSecretsId>
+    <UserSecretsId>c69479bd-026d-40f4-8040-8ae7088538d2</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,13 +13,13 @@
     <PackageReference Include="Azure.Identity" Version="1.13.2" />
     <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.5.0" />
     <PackageReference Include="Microsoft.Extensions.AI.Evaluation" Version="9.5.0" />
-    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Quality" Version="9.5.0" />
     <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Reporting" Version="9.5.0" />
-    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.4.3-preview.1.25230.7" />
-    <PackageReference Include="microsoft.extensions.configuration" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Safety" Version="9.5.0-preview.1.25265.7" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.5.0-preview.1.25265.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.4" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.4" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
-    <PackageReference Include="MSTest" Version="3.8.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="MSTest" Version="3.6.4" />
   </ItemGroup>
 
   <ItemGroup>

@@ -133,7 +133,7 @@ public sealed class MyTests
         await using ScenarioRun scenarioRun =
             await s_defaultReportingConfiguration.CreateScenarioRunAsync(
                 ScenarioName,
-                additionalTags: ["Moon"]););
+                additionalTags: ["Moon"]);
 
         // Use the <see cref="IChatClient"/> that's included in the
         // <see cref="ScenarioRun.ChatConfiguration"/> to get the LLM response.

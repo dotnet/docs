@@ -44,6 +44,10 @@ The default `enum` function works with type `int32`. Therefore, it cannot be use
 
 Additionally, cases for enums are always emitted as `public`. This is so that they align with C# and the rest of the .NET platform.
 
+To enable [exhaustive matching](match-expressions.md) for only the defined enum cases, you can suppress warning FS0104 using the directive `#nowarn "104"`. This allows the compiler to treat only declared enum values as valid during pattern matching, avoiding the need for a catch-all case — useful when you're certain all values are covered.
+
+The warning FS0104 (`Enums may take values outside known cases.`) exists because enums can be assigned arbitrary underlying values, e.g. directly or as a result of [bitwise operations](https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/enum#enumeration-types-as-bit-flags)
+
 ## See also
 
 - [F# Language Reference](index.md)

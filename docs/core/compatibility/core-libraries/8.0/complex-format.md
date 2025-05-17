@@ -36,3 +36,7 @@ If you need the previous format, you can use a custom string formatting mechanis
 ## Affected APIs
 
 - <xref:System.Numerics.Complex.ToString%2A?displayProperty=fullName>
+
+## See also
+
+- [Format a complex number](../../../../fundamentals/runtime-libraries/system-numerics-complex.md#format-a-complex-number)

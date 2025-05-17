@@ -4,7 +4,7 @@ Option Strict On
 Imports System.Numerics
 
 Module Example3
-    Public Sub Main()
+    Public Sub Run()
         ' <Snippet5>
         Dim value As New Complex(Double.MinValue / 2, Double.MinValue / 2)
         Dim value2 As Complex = Complex.Exp(Complex.Log(value))

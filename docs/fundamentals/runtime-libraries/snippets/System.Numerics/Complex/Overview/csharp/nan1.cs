@@ -4,7 +4,7 @@ using System.Numerics;
 
 public class NaNEx
 {
-    public static void Main()
+    public static void Run()
     {
         Complex c1 = new Complex(Double.MaxValue / 2, Double.MaxValue / 2);
 

@@ -34,10 +34,10 @@ Complete the following steps to create an MSTest project that connects to the `g
    ```dotnetcli
    dotnet add package Azure.AI.OpenAI
    dotnet add package Azure.Identity
-   dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation.Quality --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
+   dotnet add package Microsoft.Extensions.AI.Abstractions
+   dotnet add package Microsoft.Extensions.AI.Evaluation
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Quality
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting
    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
    dotnet add package Microsoft.Extensions.Configuration
    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -153,7 +153,7 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window:
 
    ```dotnetcli
-   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console --prerelease
+   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console
    ```
 
 1. Generate a report by running the following command:

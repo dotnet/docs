@@ -19,7 +19,7 @@ EventPipe aggregates events emitted by runtime components - for example, the Jus
 
 The events are then serialized in the `.nettrace` file format and can be written directly to a file or streamed through a [diagnostic port](./diagnostic-port.md) for out-of-process consumption.
 
-To learn more about the EventTrace format, refer to the [EventTrace format documentation](https://github.com/microsoft/perfview/blob/main/src/TraceEvent/EventPipe/NetTraceFormat.md).
+To learn more about the NetTrace format, see the [NetTrace format documentation](https://github.com/microsoft/perfview/blob/main/src/TraceEvent/EventPipe/NetTraceFormat.md).
 
 ## EventPipe vs. ETW/perf_events
 

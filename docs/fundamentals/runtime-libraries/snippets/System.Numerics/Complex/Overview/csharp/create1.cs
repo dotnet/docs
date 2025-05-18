@@ -4,7 +4,7 @@ using System.Numerics;
 
 public class CreateEx
 {
-    public static void Main()
+    public static void Run()
     {
         // Create a complex number by calling its class constructor.
         Complex c1 = new Complex(12, 6);

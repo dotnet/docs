@@ -44,9 +44,9 @@ Complete the following steps to create a console app that connects to the `gpt-4
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
+    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
     dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
-    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-id>
+    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
     ```
 
    > [!NOTE]

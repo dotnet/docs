@@ -37,13 +37,11 @@ The following steps install the Visual Studio extension.
 01. Type **GitHub Copilot App Modernization** into the search box.
 01. Select the **GitHub Copilot App Modernization** item, and then select **Install**.
 
-    :::image type="content" source="media/upgrade-assistant-install/visual-studio-manage-extensions.png" alt-text="The manage extensions window in Visual Studio, showing the GitHub Copilot App Modernization.":::
+    :::image type="content" source="media/github-copilot-app-modernization-install/visual-studio-manage-extensions.png" alt-text="The manage extensions window in Visual Studio, showing the GitHub Copilot App Modernization.":::
 
 01. Once the extension finishes downloading, close Visual Studio to automatically start the installation.
 
-    TODO IMAGE UPGRADE
-
-    :::image type="content" source="media/upgrade-assistant-install/install-prompt.png" alt-text="A prompt to install the GitHub Copilot App Modernization extension.":::
+    :::image type="content" source="media/github-copilot-app-modernization-install/install-prompt.png" alt-text="A prompt to install the GitHub Copilot App Modernization extension.":::
 
 01. Select **Modify** and follow the instructions to install the extension.
 

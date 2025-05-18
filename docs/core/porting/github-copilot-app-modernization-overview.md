@@ -63,6 +63,11 @@ The first step to upgrading is generating a plan by interacting with GitHub Copi
 
 - [Enable GitHub Copilot agent mode](/visualstudio/ide/copilot-agent-mode?view=vs-2022&preserve-view=true), and ask a new Copilot chat to upgrade the solution or project.
 
+  > [!IMPORTANT]
+  > After enabling GitHub Copilot agent mode, set the chat mode to **Agent** and enable the **upgrade_start** tool.
+  >
+  > :::image type="content" source="media/github-copilot-app-modernization-overview/copilot-agent-tools.png" alt-text="The GitHub Copilot chat window. The Agent Mode dropdown and Tool selection dropdown are both highlighted.":::
+
 ## Generate a plan
 
 Once the process starts, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade. After you answer these questions, an upgrade plan is written in the form of a markdown file. If you tell Copilot to proceed with the upgrade, this plan describes the steps of the upgrade process.

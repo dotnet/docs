@@ -1,3 +1,4 @@
+<!-- filepath: /Users/yufeih/docs/docs/csharp/language-reference/statements/declarations.md -->
 ---
 title: "Declaration statements - local variables and constants, var, local reference variables (ref locals)"
 description: "Declaration statements introduce a new local variable, local constant, or local reference variable (ref local). Local variables can be explicitly or implicitly typed. A declaration statement can also include initialization of a variable's value."
@@ -5,6 +6,8 @@ ms.date: 06/21/2023
 f1_keywords: 
   - "var"
   - "var_CSharpKeyword"
+  - "scoped"
+  - "scoped_CSharpKeyword"
 helpviewer_keywords: 
   - "var keyword [C#]"
 ---

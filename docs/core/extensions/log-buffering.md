@@ -26,7 +26,7 @@ There are two buffering strategies available:
 > [!NOTE]
 > Log buffering is available in .NET 9 and later versions.
 
-Log buffering works with all logging providers. If a logging provider you use does not implement the <xref:Microsoft.Extensions.Logging.Abstractions.IBufferedLogger> interface, log buffering will be calling log methods directly on every single buffered log record when flushing the buffer.
+Log buffering works with all logging providers. If a logging provider you use does not implement the <xref:Microsoft.Extensions.Logging.Abstractions.IBufferedLogger> interface, log buffering will call log methods directly on every single buffered log record when flushing the buffer.
 
 Log buffering extends [filtering capabilities](logging.md#configure-logging-with-code) by allowing you to capture and store logs temporarily. Rather than making an immediate emit-or-discard decision, buffering lets you hold logs in memory and decide later whether to emit them.
 

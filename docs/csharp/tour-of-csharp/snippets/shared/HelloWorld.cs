@@ -1,5 +1,5 @@
 ﻿using System;
-using TourOfCsharp;
+namespace TourOfCsharp;
 
 class Program
 {

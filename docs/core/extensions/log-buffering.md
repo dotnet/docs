@@ -16,7 +16,7 @@ Buffered logs are stored in temporary circular buffers in process memory, and th
 
 - If the buffer is full, the oldest logs will be dropped and never emitted.
 - If you want to emit the buffered logs, you can call `Flush()` on the `GlobalLogBuffer` or `PerRequestLogBuffer` class.
-- If you never flush buffers, the buffered logs will eventually be dropped as application runs, so it effectively behaves like those logs are disabled.
+- If you never flush the buffers, the buffered logs will eventually be dropped as the application runs, so it effectively behaves like those logs are disabled.
 
 There are two buffering strategies available:
 

@@ -42,7 +42,7 @@ h2: Type of breaking change
 
    If the type of breaking change is "source incompatible" or "binary incompatible", add the following sentence (without the backticks): `This change can affect [source compatibility](../../categories.md#source-compatibility).` or `This change can affect [binary compatibility](../../categories.md#binary-compatibility).`
 
-   If the issue lists multiple types of breaking changes, create a single sentence that links to each applicable type, such as "This is both a []() and []() change.". If there is not type of breaking change selected in the issue, write "TODO: Add type of breaking change."
+   If the issue lists multiple types of breaking changes, create a single sentence that links to each applicable type, such as "This is both a []() and []() change.". If there is no type of breaking change selected in the issue, write "TODO: Add type of breaking change."
 
 h2: Reason for change
 

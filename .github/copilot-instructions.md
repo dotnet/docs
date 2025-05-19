@@ -34,7 +34,7 @@ Include links to related topics and resources where appropriate. Use relative li
 
 When mentioning APIs, use cross-references to the API documentation. These links are formatted as <xref:api-doc-ID>. You can find the API doc ID in the XML files in the https://github.com/dotnet/dotnet-api-docs repository. For types, the doc ID is the value of the `Value` attribute of the `<TypeSignature>` element where the `Language` attribute value is `DocId`. For other (member) APIs, the doc ID is the value of the `Value` attribute of the `<MemberSignature>` element where the `Language` attribute value is `DocId`. Omit the first two characters of the DocId. For example, the xref link for System.String is <xref:System.String>.
 
-If you're assigned a GitHub issue that's labeled "breaking-change", include the prompt directions in the prompts/breaking-change.md file in this repo.
+If you're assigned a GitHub issue that's labeled "breaking-change", include the prompt directions in the .github/prompts/breaking-change.md file in this repo.
 
 If you include a code snippet that's more than 6 lines long, put it in a separate .cs file in a folder named "snippets" in the same folder as the document. Within the "snippets" folder, add a new directory with the name of the document. For example, if the document is named "my-doc.md", create a folder named "snippets/my-doc" folder. Also add a simple .csproj file to the same directory that targets the latest version of .NET. It can be a library or executable project.
 

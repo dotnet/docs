@@ -121,7 +121,6 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS8983**](#constructors-in-struct-types): *A 'struct' with field initializers must include an explicitly declared constructor.*
 - [**CS9105**](#primary-constructor-declaration): *Cannot use primary constructor parameter in this context.*
 - [**CS9106**](#primary-constructor-declaration): *Identifier is ambiguous between type and parameter in this context.*
-class as well.*
 - [**CS9108**](#primary-constructor-declaration): *Cannot use parameter that has ref-like type inside an anonymous method, lambda expression, query expression, or local function.*
 - [**CS9109**](#primary-constructor-declaration): *Cannot use `ref`, `out`, or `in` primary constructor parameter inside an instance member.*
 - [**CS9110**](#primary-constructor-declaration): *Cannot use primary constructor parameter that has ref-like type inside an instance member.*

@@ -5,7 +5,6 @@ ms.date: 03/13/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
-ms.author: frbouche
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code how to extend the model using Tools.
 ---
@@ -13,9 +12,6 @@ zone_pivot_groups: openai-library
 # Invoke .NET functions using an AI model
 
 In this quickstart, you create a .NET console AI chat app to connect to an AI model with local function calling enabled. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
-
-> [!NOTE]
-> The [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) library is currently in Preview.
 
 :::zone target="docs" pivot="openai"
 
@@ -54,7 +50,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI --prerelease
+    dotnet add package Microsoft.Extensions.AI
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -65,7 +61,7 @@ Complete the following steps to create a .NET console app to connect to an AI mo
     :::zone target="docs" pivot="openai"
 
     ```bash
-    dotnet add package Microsoft.Extensions.AI --prerelease
+    dotnet add package Microsoft.Extensions.AI
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -95,8 +91,8 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-    dotnet user-secrets set ModelName <your-openai-model-name>
+    dotnet user-secrets set OpenAIKey <your-OpenAI-key>
+    dotnet user-secrets set ModelName <your-OpenAI-model-name>
     ```
 
 :::zone-end

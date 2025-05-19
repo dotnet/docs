@@ -130,7 +130,7 @@ The preceding configuration:
 - Buffers logs from categories starting with `PerRequestLogBufferingFileBased.` with level <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> and below.
 - Sets an auto-flush duration of 5 seconds after manual flushing.
 
-To register the log buffering with the configuration, consider the following code::
+To register the log buffering with the configuration, consider the following code:
 
 :::code language="cs" source="snippets/logging/log-buffering/per-request/file-based/program.cs" range="16" :::
 

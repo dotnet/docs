@@ -24,8 +24,8 @@ This change allows applications that depend on [Microsoft.Extensions.Logging.Abs
 
 In most scenarios, no action is required. The type is [type-forwarded](../../../../standard/assembly/type-forwarding.md) from `Microsoft.Extensions.Logging` to `Microsoft.Extensions.Logging.Abstractions`, which allows existing code to continue to work without modification.
 
-The only potential breaking scenario occurs when your project references an older version of `Microsoft.Extensions.Logging` alongside the .NET 10 version of `Microsoft.Extensions.Logging.Abstractions`. In this situation, a compilation error might occur due to <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> being defined in both assemblies.
+The only potential breaking scenario occurs when your project references an older version of `Microsoft.Extensions.Logging` alongside the .NET 10 version of `Microsoft.Extensions.Logging.Abstractions`. In this situation, a compilation error might occur due to <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> being defined in both assemblies. To resolve this, upgrade to the .NET 10 version of Microsoft.Extensions.Logging.
 
 ## Affected APIs
 
-- <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute?displayProperty=fullName> 
+- <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute?displayProperty=fullName>

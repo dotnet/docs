@@ -63,6 +63,10 @@ If you want to share your custom classification taxonomy with other apps, this c
 
 <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet> lets you compose multiple data classifications into a single set. This allows you classify your data with multiple data classifications. In addition, the .NET redaction APIs make use of a <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet>.
 
+> [!NOTE]
+> Multiple data classifications going together as a <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet> are treated as a single classification. You can think of it as a logical `AND` operation. For example,
+if you configured redaction for data classified as a <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet> of `PrivateInformation` and `SocialSecurityNumber`, it will not apply to data classified as only `PrivateInformation` or only `SocialSecurityNumber`.
+
 ## Create custom classification attributes
 
 Create custom attributes based on your custom classifications. Use these attributes to tag your data with the right classification. Consider the following custom attribute class definition:

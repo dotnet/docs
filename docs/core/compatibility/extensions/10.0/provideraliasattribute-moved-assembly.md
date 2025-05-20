@@ -6,11 +6,19 @@ ms.date: 05/19/2025
 
 # ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions
 
-In previous versions of .NET, <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> was defined in the `Microsoft.Extensions.Logging` assembly. Starting in .NET 10, this attribute has been moved to the `Microsoft.Extensions.Logging.Abstractions` assembly.
+The <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> attribute has been moved from the `Microsoft.Extensions.Logging` assembly to the `Microsoft.Extensions.Logging.Abstractions` assembly.
 
 ## Version introduced
 
 .NET 10 Preview 4
+
+## Previous behavior
+
+In previous versions of .NET, <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> was defined in the `Microsoft.Extensions.Logging` assembly. 
+
+## New behavior
+
+<xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> is defined in `Microsoft.Extensions.Logging.Abstractions` and, to maintain compatibility, is type-forwarded from `Microsoft.Extensions.Logging`.
 
 ## Type of breaking change
 

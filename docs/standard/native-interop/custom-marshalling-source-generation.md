@@ -45,20 +45,34 @@ public struct Example
 }
 ```
 
-`ExampleMarshaller`, the entry-point marshaller type, is marked with <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute>, pointing at a [marshaller implementation](#marshaller-implementation) type. In this example, `ExampleMarshaller` is both the entry point and the implementation. It conforms to [marshaller shapes][value_shapes] expected for custom marshalling of a value.
+`ExampleMarshaller`, the entry-point marshaller type, is marked with <xref:System.Runtime.InteropServices.Marshalling.CustomMarshallerAttribute>, pointing at a [marshaller implementation](#marshaller-implementation) type. In this example, `ExampleMarshaller` is both the entry point and the implementation. It conforms to [marshaller shapes][value_shapes] expected for custom marshalling of a value. Note that `ExampleMarshaller` assumes UTF-8 string encoding.
 
 ```csharp
 [CustomMarshaller(typeof(Example), MarshalMode.Default, typeof(ExampleMarshaller))]
-internal static class ExampleMarshaller
+internal static unsafe class ExampleMarshaller
 {
     public static ExampleUnmanaged ConvertToUnmanaged(Example managed)
-        => throw new NotImplementedException();
+    {
+        return new ExampleUnmanaged()
+        {
+            Message = (IntPtr)Utf8StringMarshaller.ConvertToUnmanaged(managed.Message),
+            Flags = managed.Flags
+        };
+    }
 
     public static Example ConvertToManaged(ExampleUnmanaged unmanaged)
-        => throw new NotImplementedException();
+    {
+        return new Example()
+        {
+            Message = Utf8StringMarshaller.ConvertToManaged((byte*)unmanaged.Message),
+            Flags = unmanaged.Flags
+        };
+    }
 
     public static void Free(ExampleUnmanaged unmanaged)
-        => throw new NotImplementedException();
+    {
+        Utf8StringMarshaller.Free((byte*)unmanaged.Message);
+    }
 
     internal struct ExampleUnmanaged
     {
@@ -89,7 +103,7 @@ internal static partial Example ConvertExample(Example example);
 
 Apply the <xref:System.Runtime.InteropServices.Marshalling.ContiguousCollectionMarshallerAttribute> to a marshaller entry-point type to indicate that it's for contiguous collections. The type must have one more type parameter than the associated managed type. The last type parameter is a placeholder and will be filled in by the source generator with the unmanaged type for the collection's element type.
 
-For example, you can specify custom marshalling for a <xref:System.Collections.Generic.List%601>. In the following code, `ListMarshaller` is both the entry point and the implementation. It conforms to [marshaller shapes][collection_shapes] expected for custom marshalling of a collection.
+For example, you can specify custom marshalling for a <xref:System.Collections.Generic.List%601>. In the following code, `ListMarshaller` is both the entry point and the implementation. It conforms to [marshaller shapes][collection_shapes] expected for custom marshalling of a collection. Note that it is an incomplete example.
 
 ```csharp
 [ContiguousCollectionMarshaller]
@@ -97,25 +111,29 @@ For example, you can specify custom marshalling for a <xref:System.Collections.G
 public unsafe static class ListMarshaller<T, TUnmanagedElement> where TUnmanagedElement : unmanaged
 {
     public static byte* AllocateContainerForUnmanagedElements(List<T> managed, out int numElements)
-        => throw new NotImplementedException();
+    {
+        numElements = managed.Count;
+        nuint collectionSizeInBytes = managed.Count * /* size of T */;
+        return (byte*)NativeMemory.Alloc(collectionSizeInBytes);
+    }
 
     public static ReadOnlySpan<T> GetManagedValuesSource(List<T> managed)
-        => throw new NotImplementedException();
+        => CollectionsMarshal.AsSpan(managed);
 
     public static Span<TUnmanagedElement> GetUnmanagedValuesDestination(byte* unmanaged, int numElements)
-        => throw new NotImplementedException();
+        => new Span<TUnmanagedElement>((TUnmanagedElement*)unmanaged, numElements);
 
     public static List<T> AllocateContainerForManagedElements(byte* unmanaged, int length)
-        => throw new NotImplementedException();
+        => new List<T>(length);
 
     public static Span<T> GetManagedValuesDestination(List<T> managed)
-        => throw new NotImplementedException();
+        => CollectionsMarshal.AsSpan(managed);
 
     public static ReadOnlySpan<TUnmanagedElement> GetUnmanagedValuesSource(byte* nativeValue, int numElements)
-        => throw new NotImplementedException();
+        => new ReadOnlySpan<TUnmanagedElement>((TUnmanagedElement*)nativeValue, numElements);
 
     public static void Free(byte* unmanaged)
-        => throw new NotImplementedException();
+        => NativeMemory.Free(unmanaged);
 }
 ```
 

@@ -18,7 +18,7 @@ This change can affect [source compatibility](../../categories.md#source-incompa
 
 ## Reason for change
 
-This change allows applications that depend on [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions) and use <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> to avoid taking a dependency on the full [Microsoft.Extensions.Logging package](https://www.nuget.org/packages/Microsoft.Extensions.Logging).
+This change allows applications that depend on [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions) and that use <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> to avoid taking a dependency on the full [Microsoft.Extensions.Logging package](https://www.nuget.org/packages/Microsoft.Extensions.Logging).
 
 ## Recommended action
 
@@ -26,8 +26,6 @@ In most scenarios, no action is required. The type is [type-forwarded](../../../
 
 The only potential breaking scenario occurs when your project references an older version of `Microsoft.Extensions.Logging` alongside the .NET 10 version of `Microsoft.Extensions.Logging.Abstractions`. In this situation, a compilation error might occur due to <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> being defined in both assemblies.
 
-
-
 ## Affected APIs
 
-- `Microsoft.Extensions.Logging.ProviderAliasAttribute` 
+- <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute?displayProperty=fullName> 

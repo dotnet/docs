@@ -14,7 +14,7 @@ The <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> attribute has bee
 
 ## Previous behavior
 
-In previous versions of .NET, <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> was defined in the `Microsoft.Extensions.Logging` assembly. 
+In previous versions of .NET, <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> was defined in the `Microsoft.Extensions.Logging` assembly.
 
 ## New behavior
 

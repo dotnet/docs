@@ -2,7 +2,6 @@
 title: Use .NET IoT Libraries on Windows, Linux, and macOS computers
 description: Learn how to develop GPIO, I2C, and SPI code with .NET on PCs.
 author: camsoper
-ms.author: casoper
 ms.date: 07/31/2024
 ms.topic: how-to
 ms.custom: linux-related-content

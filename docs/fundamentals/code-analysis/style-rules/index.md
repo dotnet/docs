@@ -136,6 +136,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0280](ide0280.md) | Use `nameof` | |
 > | [IDE0290](ide0290.md) | Use primary constructor | [csharp_style_prefer_primary_constructors](ide0290.md#csharp_style_prefer_primary_constructors) |
 > | [IDE0300](ide0300.md) | Use collection expression for array | [dotnet_style_prefer_collection_expression](ide0300.md#dotnet_style_prefer_collection_expression) |
+> | [IDE3000](ide3000.md) | Implement method with Copilot | |
 > | [IDE0301](ide0301.md) | Use collection expression for empty | [dotnet_style_prefer_collection_expression](ide0301.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0302](ide0302.md) | Use collection expression for stackalloc | [dotnet_style_prefer_collection_expression](ide0302.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0303](ide0303.md) | Use collection expression for `Create()` | [dotnet_style_prefer_collection_expression](ide0303.md#dotnet_style_prefer_collection_expression) |

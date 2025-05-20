@@ -14,6 +14,9 @@ Common reasons to upgrade to a new .NET version:
 - The new version supports a new operating system
 - The new version has an important API, performance, or security feature
 
+> [!TIP]
+> The [GitHub Copilot app modernization - upgrade](../porting/github-copilot-app-modernization-overview.md) capability can make these changes automatically.
+
 ## Upgrade development environment
 
 To upgrade to a new .NET version, the .NET SDK is the primary component to install. It includes an updated .NET CLI, build system, and runtime version.
@@ -37,8 +40,6 @@ Here's how to do it:
 * Open the project file (the `*.csproj`, `*.vbproj`, or `*.fsproj` file).
 * Change the `<TargetFramework>` property value from, for example, `net6.0` to `net8.0`.
 * The same pattern applies for the `<TargetFrameworks>` property if it is being used.
-
-The [Upgrade Assistant](../porting/upgrade-assistant-overview.md) can make these changes automatically.
 
 The next step is to build the project (or solution) with the new SDK. If additional changes are needed, the SDK will provide warnings and errors that guide you.
 

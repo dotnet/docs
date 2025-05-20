@@ -338,8 +338,8 @@ items:
             href: /ef/core/what-is-new/ef-core-8.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Extensions
             items:
-              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions"
-                href: extensions/10.0/provider-alias-attribute-moved-namespace.md
+              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+                href: extensions/10.0/provideraliasattribute-moved-assembly.md
               - name: ActivatorUtilities.CreateInstance behaves consistently
                 href: extensions/8.0/activatorutilities-createinstance-behavior.md
               - name: ActivatorUtilities.CreateInstance requires non-null provider
@@ -1748,6 +1748,10 @@ items:
             href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
+          - name: .NET 10
+            items:
+              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+                href: extensions/10.0/provideraliasattribute-moved-assembly.md
           - name: .NET 8
             items:
               - name: ActivatorUtilities.CreateInstance behaves consistently

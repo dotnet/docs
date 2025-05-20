@@ -57,7 +57,7 @@ To control the configuration of the `ColorConsoleLogger`, you define an alias on
 The `ColorConsoleLoggerProvider` class defines two class-scoped attributes:
 
 - <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute>: The `ColorConsoleLogger` type is _not supported_ in the `"browser"`.
-- <xref:Microsoft.Extensions.Logging.Abstractions.ProviderAliasAttribute>: Configuration sections can define options using the `"ColorConsole"` key.
+- <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute>: Configuration sections can define options using the `"ColorConsole"` key.
 
 The configuration can be specified with any valid [configuration provider](configuration-providers.md). Consider the following _appsettings.json_ file:
 

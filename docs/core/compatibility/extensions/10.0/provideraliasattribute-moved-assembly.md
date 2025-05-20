@@ -18,7 +18,7 @@ In previous versions of .NET, <xref:Microsoft.Extensions.Logging.ProviderAliasAt
 
 ## New behavior
 
-<xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> is defined in `Microsoft.Extensions.Logging.Abstractions` and, to maintain compatibility, is type-forwarded from `Microsoft.Extensions.Logging`.
+Starting in .NET 10, <xref:Microsoft.Extensions.Logging.ProviderAliasAttribute> is defined in `Microsoft.Extensions.Logging.Abstractions` and, to maintain compatibility, is type-forwarded from `Microsoft.Extensions.Logging`.
 
 ## Type of breaking change
 

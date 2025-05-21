@@ -3,6 +3,7 @@ description: "Learn more about: Contract First Workflow Service Development"
 title: "Contract First Workflow Service Development"
 ms.date: "03/30/2017"
 ms.assetid: e5dbaa7b-005f-4330-848d-58ac4f42f093
+ms.topic: article
 ---
 # Contract First Workflow Service Development
 

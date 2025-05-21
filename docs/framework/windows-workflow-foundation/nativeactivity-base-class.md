@@ -3,6 +3,7 @@ description: "Learn more about: NativeActivity Base Class"
 title: "NativeActivity Base Class"
 ms.date: "03/30/2017"
 ms.assetid: 254a4c50-425b-426d-a32f-0f7234925bac
+ms.topic: article
 ---
 # NativeActivity Base Class
 

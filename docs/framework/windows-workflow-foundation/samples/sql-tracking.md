@@ -3,6 +3,7 @@ description: "Learn more about: SQL tracking"
 title: "SQL Tracking"
 ms.date: "03/30/2017"
 ms.assetid: bcaebeb1-b9e5-49e8-881b-e49af66fd341
+ms.topic: article
 ---
 # SQL tracking
 

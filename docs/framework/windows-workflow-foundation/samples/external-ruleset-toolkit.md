@@ -3,6 +3,7 @@ description: "Learn more about: External Ruleset Toolkit"
 title: "External Ruleset Toolkit"
 ms.date: "03/30/2017"
 ms.assetid: a306d283-a031-475e-aa01-9ae86e7adcb0
+ms.topic: article
 ---
 
 # External Ruleset Toolkit

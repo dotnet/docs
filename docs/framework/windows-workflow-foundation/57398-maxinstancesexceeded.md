@@ -3,6 +3,7 @@ description: "Learn more about: 57398 - MaxInstancesExceeded"
 title: "57398 - MaxInstancesExceeded"
 ms.date: "03/30/2017"
 ms.assetid: f943d209-dfeb-43e5-b572-c9a06217936e
+ms.topic: article
 ---
 # 57398 - MaxInstancesExceeded
 

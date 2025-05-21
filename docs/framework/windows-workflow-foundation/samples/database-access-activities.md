@@ -2,6 +2,7 @@
 description: "Learn more about database access activities, which allow you to access a database within a workflow to retrieve or modify information."
 title: "Database Access Activities"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Database access activities
 

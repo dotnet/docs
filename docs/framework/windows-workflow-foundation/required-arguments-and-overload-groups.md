@@ -2,6 +2,7 @@
 description: "Learn more about required arguments and overload groups. You can configure an activity so that certain arguments are required for it to be valid for execution."
 title: "Required Arguments and Overload Groups"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Required arguments and overload groups
 

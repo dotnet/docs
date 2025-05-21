@@ -3,6 +3,7 @@ description: "Learn more about: 107 -- BookmarkResumptionRecord"
 title: "107 -- BookmarkResumptionRecord"
 ms.date: "03/30/2017"
 ms.assetid: aa2d37ed-2bfa-439b-89e8-a9354027f155
+ms.topic: article
 ---
 # 107 -- BookmarkResumptionRecord
 

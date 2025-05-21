@@ -3,6 +3,7 @@ title: "Windows Workflow Architecture"
 description: Windows Workflow Foundation encapsulates units of work as activities, which run in an environment with flow control, exception handling, and other features.
 ms.date: "03/30/2017"
 ms.assetid: 1d4c6495-d64a-46d0-896a-3a01fac90aa9
+ms.topic: article
 ---
 # Windows Workflow Architecture
 

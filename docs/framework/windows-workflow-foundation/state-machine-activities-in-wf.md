@@ -3,6 +3,7 @@ description: "Learn more about: State Machine Activities in WF"
 title: "State Machine Activities in WF"
 ms.date: "03/30/2017"
 ms.assetid: 93312eaf-07e0-4a55-b4f7-4cdbbc4dee2d
+ms.topic: article
 ---
 # State Machine Activities in WF
 

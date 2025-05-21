@@ -3,6 +3,7 @@ description: "Learn more about: Using Editing Scope"
 title: "Using Editing Scope"
 ms.date: "03/30/2017"
 ms.assetid: 79306f9e-318b-4687-9863-8b93d1841716
+ms.topic: how-to
 ---
 # Using Editing Scope
 

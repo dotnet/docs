@@ -3,6 +3,7 @@ description: "Learn more about: Declarative Constraints"
 title: "Declarative Constraints"
 ms.date: "03/30/2017"
 ms.assetid: 67001ed1-7f4d-4ada-ae57-a31176901a53
+ms.topic: article
 ---
 # Declarative Constraints
 

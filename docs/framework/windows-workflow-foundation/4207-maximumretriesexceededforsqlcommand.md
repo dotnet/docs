@@ -3,6 +3,7 @@ description: "Learn more about: 4207 - MaximumRetriesExceededForSqlCommand"
 title: "4207 - MaximumRetriesExceededForSqlCommand"
 ms.date: "03/30/2017"
 ms.assetid: 8c8bee26-9ad4-4e01-bd16-0e1fd510fb6b
+ms.topic: article
 ---
 # 4207 - MaximumRetriesExceededForSqlCommand
 

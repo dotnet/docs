@@ -3,6 +3,7 @@ description: "Learn more about: 3550 - BufferOutOfOrderMessageNoInstance"
 title: "3550 - BufferOutOfOrderMessageNoInstance"
 ms.date: "03/30/2017"
 ms.assetid: 1299d294-99b8-430e-98b1-55f5f17002f3
+ms.topic: article
 ---
 # 3550 - BufferOutOfOrderMessageNoInstance
 

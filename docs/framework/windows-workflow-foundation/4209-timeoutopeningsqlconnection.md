@@ -3,6 +3,7 @@ description: "Learn more about: 4209 - TimeoutOpeningSqlConnection"
 title: "4209 - TimeoutOpeningSqlConnection"
 ms.date: "03/30/2017"
 ms.assetid: f0e56518-9758-41dc-a760-50d1a10fba6e
+ms.topic: article
 ---
 # 4209 - TimeoutOpeningSqlConnection
 

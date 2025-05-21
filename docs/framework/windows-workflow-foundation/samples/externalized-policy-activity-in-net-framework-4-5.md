@@ -3,6 +3,7 @@ description: "Learn more about: Externalized Policy Activity in .NET Framework 4
 title: "Externalized Policy Activity in .NET Framework 4.5"
 ms.date: "03/30/2017"
 ms.assetid: 92fd6f92-23a1-4adf-b96a-2754ea93ad3e
+ms.topic: article
 ---
 # Externalized Policy Activity in .NET Framework 4.5
 

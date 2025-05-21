@@ -3,6 +3,7 @@ description: "Learn more about: Consuming OData feeds from a workflow"
 title: "Consuming OData feeds from a workflow - WF"
 ms.date: "03/30/2017"
 ms.assetid: 1b26617c-53e9-476a-81af-675c36d95919
+ms.topic: concept-article
 ---
 # Consuming OData feeds from a workflow
 

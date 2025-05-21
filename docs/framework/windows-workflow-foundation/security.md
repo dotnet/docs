@@ -3,6 +3,7 @@ description: "Learn more about security in Windows Workflow Foundation"
 title: "Security (WF)"
 ms.date: "03/30/2017"
 ms.assetid: 737ec121-bfc5-4b75-a504-2d53c2c8af39
+ms.topic: article
 ---
 # Security (WF)
 

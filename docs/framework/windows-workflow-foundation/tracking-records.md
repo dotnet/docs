@@ -3,6 +3,7 @@ description: "Learn more about: Tracking Records"
 title: "Tracking Records"
 ms.date: "03/30/2017"
 ms.assetid: 51adbda3-bd8b-4892-a8ea-d343186472d2
+ms.topic: how-to
 ---
 # Tracking Records
 

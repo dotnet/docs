@@ -3,6 +3,7 @@ description: "Learn more about: 1148 - FlowchartSwitchCaseNotFound"
 title: "1148 - FlowchartSwitchCaseNotFound"
 ms.date: "03/30/2017"
 ms.assetid: 9ee7fcee-e040-4306-968e-ed840a1cb00c
+ms.topic: article
 ---
 # 1148 - FlowchartSwitchCaseNotFound
 

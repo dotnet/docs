@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], hosting workflows"
 ms.assetid: a99a5990-b53b-419b-9538-b1c3d1ba5db3
+ms.topic: concept-article
 ---
 # Hosting Workflows
 

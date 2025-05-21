@@ -3,6 +3,7 @@ description: "Learn more about: 114 - WorkflowInstanceRecordWithId"
 title: "114 - WorkflowInstanceRecordWithId"
 ms.date: "03/30/2017"
 ms.assetid: 2bd8b4a1-b210-4c07-8156-f19392318c08
+ms.topic: article
 ---
 # 114 - WorkflowInstanceRecordWithId
 

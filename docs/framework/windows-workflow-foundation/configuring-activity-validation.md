@@ -3,6 +3,7 @@ description: "Learn more about: Configuring Activity Validation"
 title: "Configuring Activity Validation"
 ms.date: "03/30/2017"
 ms.assetid: 25a4eccb-b8fc-4857-a01d-2683b6341219
+ms.topic: concept-article
 ---
 # Configuring Activity Validation
 

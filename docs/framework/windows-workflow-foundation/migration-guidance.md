@@ -3,6 +3,7 @@ title: "Migration Guidance"
 description: "Learn more about: Migration Guidance"
 ms.date: "03/30/2017"
 ms.assetid: cb65c132-58c9-4028-b3d4-1efc71d5e60e
+ms.topic: article
 ---
 # Migration guidance
 

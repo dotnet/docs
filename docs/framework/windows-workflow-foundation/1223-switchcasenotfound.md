@@ -3,6 +3,7 @@ description: "Learn more about: 1223 - SwitchCaseNotFound"
 title: "1223 - SwitchCaseNotFound"
 ms.date: "03/30/2017"
 ms.assetid: 332ace82-2d9e-4fd9-a9a8-f077f43b4a08
+ms.topic: article
 ---
 # 1223 - SwitchCaseNotFound
 

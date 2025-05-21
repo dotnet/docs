@@ -3,6 +3,7 @@ description: "Learn more about: Custom Tracking Records"
 title: "Custom Tracking Records"
 ms.date: "03/30/2017"
 ms.assetid: 24284565-c68b-40bf-b7f1-e148d151a6fc
+ms.topic: article
 ---
 
 # Custom Tracking Records

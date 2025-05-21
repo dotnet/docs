@@ -3,6 +3,7 @@ description: "Learn more about: Using the Pick Activity"
 title: "Using the Pick Activity"
 ms.date: "03/30/2017"
 ms.assetid: b89be812-a247-4025-b0e3-ffb20db027a6
+ms.topic: how-to
 ---
 # Using the Pick Activity
 

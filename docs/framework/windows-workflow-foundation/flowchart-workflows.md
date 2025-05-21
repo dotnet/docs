@@ -3,6 +3,7 @@ title: "Flowchart Workflows"
 description: This article describes the Flowchart activity, which is typically used to implement non-sequential workflows in Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: b0a3475c-d22f-49eb-8912-973c960aebf5
+ms.topic: article
 ---
 # Flowchart Workflows
 

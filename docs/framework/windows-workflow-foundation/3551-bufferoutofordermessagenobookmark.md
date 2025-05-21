@@ -3,6 +3,7 @@ description: "Learn more about: 3551 - BufferOutOfOrderMessageNoBookmark"
 title: "3551 - BufferOutOfOrderMessageNoBookmark"
 ms.date: "03/30/2017"
 ms.assetid: 7930d6c4-c843-4a83-933a-cecd71b80d1e
+ms.topic: article
 ---
 # 3551 - BufferOutOfOrderMessageNoBookmark
 

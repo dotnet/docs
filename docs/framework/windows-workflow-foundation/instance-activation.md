@@ -3,6 +3,7 @@ description: "Learn more about: Instance Activation"
 title: "Instance Activation"
 ms.date: "03/30/2017"
 ms.assetid: 134c3f70-5d4e-46d0-9d49-469a6643edd8
+ms.topic: article
 ---
 # Instance Activation
 

@@ -3,6 +3,7 @@ description: "Learn more about: Using Activity Delegates"
 title: "Using Activity Delegates"
 ms.date: "03/30/2017"
 ms.assetid: e33cf876-8979-440b-9b23-4a12d1139960
+ms.topic: concept-article
 ---
 # Using Activity Delegates
 

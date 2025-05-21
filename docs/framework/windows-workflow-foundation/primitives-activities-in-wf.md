@@ -3,6 +3,7 @@ description: "Learn more about: Primitives Activities in WF"
 title: "Primitives Activities in WF"
 ms.date: "03/30/2017"
 ms.assetid: 8e9009d1-236e-4d8e-86fc-e43132bf6dfc
+ms.topic: article
 ---
 # Primitives Activities in WF
 

@@ -2,6 +2,7 @@
 title: "Windows Workflow Foundation (WF) sample documentation"
 description: Learn about the samples that demonstrate various aspects of Windows Workflow Foundation, including application, basic, and scenario samples.
 ms.date: 07/09/2021
+ms.topic: article
 ---
 # Windows Workflow Foundation (WF) samples
 

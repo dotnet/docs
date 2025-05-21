@@ -3,6 +3,7 @@ description: "Learn more about: Designer Rehosting"
 title: "Designer ReHosting"
 ms.date: "03/30/2017"
 ms.assetid: b676ad31-5f64-4d84-9a36-b4d7113a2f4d
+ms.topic: article
 ---
 # Designer Rehosting
 

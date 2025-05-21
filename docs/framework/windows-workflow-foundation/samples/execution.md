@@ -3,6 +3,7 @@ description: "Learn more about: Execution"
 title: "Execution"
 ms.date: "03/30/2017"
 ms.assetid: a9dcedcc-9f4c-45c2-8222-6bcbf48f3534
+ms.topic: article
 ---
 # Execution
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1038 - EnterNoPersistBlock"
 title: "1038 - EnterNoPersistBlock"
 ms.date: "03/30/2017"
 ms.assetid: 64f3e60a-614d-46a5-8d30-fa63417c3d91
+ms.topic: article
 ---
 # 1038 - EnterNoPersistBlock
 

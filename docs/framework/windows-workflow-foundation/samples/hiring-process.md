@@ -3,6 +3,7 @@ description: "Learn more about: Hiring Process"
 title: "Hiring Process"
 ms.date: "03/30/2017"
 ms.assetid: d5fcacbb-c884-4b37-a5d6-02b1b8eec7b4
+ms.topic: how-to
 ---
 # Hiring Process
 

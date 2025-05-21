@@ -3,6 +3,7 @@ description: "Learn more about: 1140 - FlowchartStart"
 title: "1140 - FlowchartStart"
 ms.date: "03/30/2017"
 ms.assetid: 9aa2c71e-a4ab-4aed-b76d-4795e8493b70
+ms.topic: article
 ---
 # 1140 - FlowchartStart
 

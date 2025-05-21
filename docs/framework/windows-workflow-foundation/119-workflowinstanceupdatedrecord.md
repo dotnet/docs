@@ -3,6 +3,7 @@ description: "Learn more about: 119 - WorkflowInstanceUpdatedRecord"
 title: "119 - WorkflowInstanceUpdatedRecord"
 ms.date: "03/30/2017"
 ms.assetid: 32485d0a-dcdb-45bc-b1e3-79fa9ad9439b
+ms.topic: article
 ---
 # 119 - WorkflowInstanceUpdatedRecord
 

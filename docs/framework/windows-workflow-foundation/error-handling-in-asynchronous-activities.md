@@ -3,6 +3,7 @@ description: "Learn more about: Error handling in asynchronous activities"
 title: "Error handling in asynchronous activities"
 ms.date: "03/30/2017"
 ms.assetid: e8f8ce2b-50c9-4e44-b187-030e0cf30a5d
+ms.topic: article
 ---
 # Error handling in asynchronous activities
 

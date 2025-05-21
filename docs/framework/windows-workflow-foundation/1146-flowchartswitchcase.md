@@ -3,6 +3,7 @@ description: "Learn more about: 1146 - FlowchartSwitchCase"
 title: "1146 - FlowchartSwitchCase"
 ms.date: "03/30/2017"
 ms.assetid: 274e9209-1720-4512-a615-e742f00895f4
+ms.topic: article
 ---
 # 1146 - FlowchartSwitchCase
 

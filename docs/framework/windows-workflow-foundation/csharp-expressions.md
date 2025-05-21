@@ -3,6 +3,7 @@ description: "Learn more about: C# Expressions"
 title: "C# Expressions"
 ms.date: "03/30/2017"
 ms.assetid: 29110be7-f4e3-407e-8dbe-78102eb21115
+ms.topic: article
 ---
 # C# Expressions
 

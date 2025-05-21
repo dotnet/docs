@@ -3,6 +3,7 @@ description: "Learn more about: Non-Generic ForEach"
 title: "Non-Generic ForEach"
 ms.date: "03/30/2017"
 ms.assetid: 576cd07a-d58d-4536-b514-77bad60bff38
+ms.topic: article
 ---
 # Non-Generic ForEach
 

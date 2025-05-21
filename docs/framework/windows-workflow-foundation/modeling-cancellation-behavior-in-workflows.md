@@ -3,6 +3,7 @@ description: "Learn more about: Modeling Cancellation Behavior in Workflows"
 title: "Modeling Cancellation Behavior in Workflows"
 ms.date: "03/30/2017"
 ms.assetid: d48f6cf3-cdde-4dd3-8265-a665acf32a03
+ms.topic: concept-article
 ---
 # Modeling Cancellation Behavior in Workflows
 

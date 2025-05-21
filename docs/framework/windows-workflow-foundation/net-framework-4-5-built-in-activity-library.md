@@ -3,6 +3,7 @@ title: ".NET Framework 4.5 Built-In Activity Library"
 description: This article describes the new activity library with expanded functionality that is part of .NET Framework 4.5.
 ms.date: "03/30/2017"
 ms.assetid: e559e87b-6aed-491d-9546-e92bcec16fdf
+ms.topic: article
 ---
 
 # .NET Framework 4.5 Built-In Activity Library

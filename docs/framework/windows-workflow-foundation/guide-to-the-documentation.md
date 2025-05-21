@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "WF [WF], guide to"
   - "Windows Workflow Foundation [WF], guide to"
 ms.assetid: a75025be-f225-430f-90cf-98f7022db436
+ms.topic: article
 ---
 # Guide to the Windows Workflow Documentation
 

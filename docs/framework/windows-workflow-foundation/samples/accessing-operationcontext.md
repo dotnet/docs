@@ -3,6 +3,7 @@ description: "Learn more about: Accessing OperationContext"
 title: "Accessing OperationContext"
 ms.date: "03/30/2017"
 ms.assetid: 4e92efe8-7e79-41f3-b50e-bdc38b9f41f8
+ms.topic: how-to
 ---
 # Accessing OperationContext
 

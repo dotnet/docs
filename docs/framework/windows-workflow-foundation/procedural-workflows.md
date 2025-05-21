@@ -3,6 +3,7 @@ title: "Procedural Workflows"
 description: In Workflow Foundation, procedural workflows use flow-control methods similar to those found in procedural languages.
 ms.date: "03/30/2017"
 ms.assetid: 52401de9-9115-472d-8fd9-047af6a072b9
+ms.topic: article
 ---
 # Procedural Workflows
 

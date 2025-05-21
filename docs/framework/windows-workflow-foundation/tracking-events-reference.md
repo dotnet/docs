@@ -3,6 +3,7 @@ description: "Learn more about: Tracking Events Reference"
 title: "Tracking Events Reference"
 ms.date: "03/30/2017"
 ms.assetid: c1c1ee87-f80a-449b-acd0-50d81eef116e
+ms.topic: concept-article
 ---
 # Tracking Events Reference
 

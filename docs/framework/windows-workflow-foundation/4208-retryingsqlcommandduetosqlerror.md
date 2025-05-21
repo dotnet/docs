@@ -3,6 +3,7 @@ description: "Learn more about: 4208 - RetryingSqlCommandDueToSqlError"
 title: "4208 - RetryingSqlCommandDueToSqlError"
 ms.date: "03/30/2017"
 ms.assetid: a8e6483a-a6e4-4bbf-82ec-cd8b6e711aad
+ms.topic: article
 ---
 # 4208 - RetryingSqlCommandDueToSqlError
 

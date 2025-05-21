@@ -3,6 +3,7 @@ description: "Learn more about: Persistence Participants"
 title: "Persistence Participants"
 ms.date: "03/30/2017"
 ms.assetid: f84d2d5d-1c1b-4f19-be45-65b552d3e9e3
+ms.topic: article
 ---
 # Persistence Participants
 

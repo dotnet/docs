@@ -3,6 +3,7 @@ description: "Learn more about: 1101 - WorkflowActivityStart"
 title: "1101 - WorkflowActivityStart"
 ms.date: "03/30/2017"
 ms.assetid: 831cd386-b9b5-47a9-9690-aff6292ff348
+ms.topic: article
 ---
 # 1101 - WorkflowActivityStart
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "programming [WF], error handling"
 ms.assetid: 694db4f9-7387-4b13-8f9f-b923b18c7490
+ms.topic: article
 ---
 # Exceptions, Transactions, and Compensation
 

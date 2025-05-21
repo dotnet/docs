@@ -3,6 +3,7 @@ description: "Learn more about: Creating custom flow control activities"
 title: "Creating custom flow control activities"
 ms.date: "03/30/2017"
 ms.assetid: 27f409f6-2d1d-4cfb-9765-93eb2ad667d5
+ms.topic: concept-article
 ---
 # Creating custom flow control activities
 

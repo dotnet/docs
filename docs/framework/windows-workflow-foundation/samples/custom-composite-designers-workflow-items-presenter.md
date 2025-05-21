@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 70055c4b-1173-47a3-be80-b5bce6f59e9a
+ms.topic: article
 ---
 # Custom Composite Designers - Workflow Items Presenter
 

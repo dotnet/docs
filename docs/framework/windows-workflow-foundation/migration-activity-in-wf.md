@@ -3,6 +3,7 @@ description: "Learn more about: Migration Activity in WF"
 title: "Migration Activity in WF"
 ms.date: "03/30/2017"
 ms.assetid: 4ad46db7-5744-410e-8fac-6c3b325b1dd0
+ms.topic: article
 ---
 # Migration Activity in WF
 

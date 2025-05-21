@@ -3,6 +3,7 @@ description: "Learn more about: 4213 - RunnableInstancesDetectionError"
 title: "4213 - RunnableInstancesDetectionError"
 ms.date: "03/30/2017"
 ms.assetid: 979ec935-bd9f-4798-be9a-25e08c4b94cf
+ms.topic: article
 ---
 # 4213 - RunnableInstancesDetectionError
 

@@ -3,6 +3,7 @@ title: "State Machine Workflows"
 description: This article provides an overview of creating state machine workflows using the StateMachine activity.
 ms.date: "03/30/2017"
 ms.assetid: 344caacd-bf3b-4716-bd5a-eca74fc5a61d
+ms.topic: article
 ---
 # State Machine Workflows
 

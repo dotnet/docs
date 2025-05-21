@@ -3,6 +3,7 @@ title: "Pick Activity"
 description: In Workflow Foundation, the Pick activity simplifies the modeling of a set of event triggers followed by their corresponding handlers.
 ms.date: "03/30/2017"
 ms.assetid: b3e49b7f-0285-4720-8c09-11ae18f0d53e
+ms.topic: how-to
 ---
 # Pick Activity
 

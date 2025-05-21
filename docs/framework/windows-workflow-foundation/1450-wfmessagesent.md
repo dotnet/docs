@@ -3,6 +3,7 @@ description: "Learn more about: 1450 - WfMessageSent"
 title: "1450 - WfMessageSent"
 ms.date: "03/30/2017"
 ms.assetid: 1acc8b92-a76d-479b-a6fe-328affff5f3d
+ms.topic: article
 ---
 # 1450 - WfMessageSent
 

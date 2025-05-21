@@ -3,6 +3,7 @@ description: "Learn more about: Tracking Profiles"
 title: "Tracking Profiles"
 ms.date: "03/30/2017"
 ms.assetid: 22682566-1cd9-4672-9791-fb3523638e18
+ms.topic: concept-article
 ---
 
 # Tracking Profiles

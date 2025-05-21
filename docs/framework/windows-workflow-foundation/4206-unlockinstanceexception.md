@@ -3,6 +3,7 @@ description: "Learn more about: 4206 - UnlockInstanceException"
 title: "4206 - UnlockInstanceException"
 ms.date: "03/30/2017"
 ms.assetid: 5a46dc5f-d517-4135-8905-25a42f01206b
+ms.topic: article
 ---
 # 4206 - UnlockInstanceException
 

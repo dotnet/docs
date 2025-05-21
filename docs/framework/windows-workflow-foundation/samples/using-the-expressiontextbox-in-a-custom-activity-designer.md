@@ -3,6 +3,7 @@ description: "Learn more about: Using the ExpressionTextBox in a Custom Activity
 title: "Using the ExpressionTextBox in a Custom Activity Designer"
 ms.date: "03/30/2017"
 ms.assetid: f82e73e7-a256-4a4d-82b7-c0d62f4ab5e7
+ms.topic: how-to
 ---
 # Using the ExpressionTextBox in a Custom Activity Designer
 

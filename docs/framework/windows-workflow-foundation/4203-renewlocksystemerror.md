@@ -3,6 +3,7 @@ description: "Learn more about: 4203 - RenewLockSystemError"
 title: "4203 - RenewLockSystemError"
 ms.date: "03/30/2017"
 ms.assetid: 6ec9ec6f-4ae2-45cf-b99b-02cdb9dc9ec9
+ms.topic: article
 ---
 # 4203 - RenewLockSystemError
 

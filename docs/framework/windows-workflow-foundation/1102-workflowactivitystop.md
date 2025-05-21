@@ -3,6 +3,7 @@ description: "Learn more about: 1102 - WorkflowActivityStop"
 title: "1102 - WorkflowActivityStop"
 ms.date: "03/30/2017"
 ms.assetid: 285e5cb8-e90d-4914-ac06-e9b176ffefa2
+ms.topic: article
 ---
 # 1102 - WorkflowActivityStop
 

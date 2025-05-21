@@ -3,6 +3,7 @@ title: "Serializing Workflows and Activities to and from XAML"
 description: This article is an overview of serializing workflow definitions and working with XAML workflow definitions in Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: 37685b32-24e3-4d72-88d8-45d5fcc49ec2
+ms.topic: how-to
 ---
 # Serialize Workflows and Activities to and from XAML
 

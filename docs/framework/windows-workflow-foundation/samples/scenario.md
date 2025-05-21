@@ -3,6 +3,7 @@ title: "Windows Workflow scenarios"
 description: View samples of Windows Workflow Foundation scenarios, such as scenarios using the built-in activity library and scenarios using workflow services activities.
 ms.date: "03/30/2017"
 ms.assetid: cb678fda-79aa-4495-833b-ef570539d4c3
+ms.topic: article
 ---
 # Scenario
 

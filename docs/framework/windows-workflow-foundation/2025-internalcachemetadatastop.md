@@ -3,6 +3,7 @@ description: "Learn more about: 2025 - InternalCacheMetadataStop"
 title: "2025 - InternalCacheMetadataStop"
 ms.date: "03/30/2017"
 ms.assetid: 88e6dbcd-1c41-40a3-9800-4c60eca7d11d
+ms.topic: article
 ---
 # 2025 - InternalCacheMetadataStop
 

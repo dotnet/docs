@@ -3,6 +3,7 @@ description: "Learn more about: 1124 - InvokeMethodIsStatic"
 title: "1124 - InvokeMethodIsStatic"
 ms.date: "03/30/2017"
 ms.assetid: b9643641-fb52-4fa8-b354-4dd6617d68f6
+ms.topic: article
 ---
 # 1124 - InvokeMethodIsStatic
 

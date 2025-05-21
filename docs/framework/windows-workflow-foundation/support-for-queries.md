@@ -3,6 +3,7 @@ description: "Learn more about: Support for Queries"
 title: "Support for Queries"
 ms.date: "03/30/2017"
 ms.assetid: 093c22f5-3294-4642-857a-5252233d6796
+ms.topic: how-to
 ---
 # Support for Queries
 

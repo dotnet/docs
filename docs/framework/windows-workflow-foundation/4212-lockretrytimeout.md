@@ -3,6 +3,7 @@ description: "Learn more about: 4212 - LockRetryTimeout"
 title: "4212 - LockRetryTimeout"
 ms.date: "03/30/2017"
 ms.assetid: d4ad415a-9871-49fc-85b8-8ee2ea149b1d
+ms.topic: article
 ---
 # 4212 - LockRetryTimeout
 

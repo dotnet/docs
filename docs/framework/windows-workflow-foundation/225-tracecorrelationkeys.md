@@ -3,6 +3,7 @@ description: "Learn more about: 225 - TraceCorrelationKeys"
 title: "225 - TraceCorrelationKeys"
 ms.date: "03/30/2017"
 ms.assetid: d9083aaf-3816-4c1c-bae0-2d7f49628345
+ms.topic: article
 ---
 # 225 - TraceCorrelationKeys
 

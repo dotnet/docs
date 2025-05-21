@@ -3,6 +3,7 @@ title: "Creating an Activity at Runtime with DynamicActivity"
 description: DynamicActivity is a concrete, sealed class with a public constructor. Use the class to assemble activity functionality at run time using an activity DOM.
 ms.date: "03/30/2017"
 ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
+ms.topic: how-to
 ---
 # Creating an Activity at Runtime with DynamicActivity
 

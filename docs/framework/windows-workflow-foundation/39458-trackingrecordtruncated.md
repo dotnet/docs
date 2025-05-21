@@ -3,6 +3,7 @@ description: "Learn more about: 39458 - TrackingRecordTruncated"
 title: "39458 - TrackingRecordTruncated"
 ms.date: "03/30/2017"
 ms.assetid: 5352f0eb-d571-454a-bab5-e2162888b218
+ms.topic: article
 ---
 # 39458 - TrackingRecordTruncated
 

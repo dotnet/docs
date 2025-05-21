@@ -3,6 +3,7 @@ description: "Learn more about: 1150 - CompensationState"
 title: "1150 - CompensationState"
 ms.date: "03/30/2017"
 ms.assetid: eb015842-cc5a-47be-bce5-6af39e567723
+ms.topic: article
 ---
 # 1150 - CompensationState
 

@@ -3,6 +3,7 @@ description: "Learn more about: Asynchronous Communication"
 title: "Asynchronous Communication"
 ms.date: "03/30/2017"
 ms.assetid: 128dc092-9eb2-4e33-9470-9a7f62b60df6
+ms.topic: article
 ---
 # Asynchronous Communication
 

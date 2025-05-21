@@ -3,6 +3,7 @@ description: "Learn more about: 2578 - TryCatchExceptionFromCatchOrFinally"
 title: "2578 - TryCatchExceptionFromCatchOrFinally"
 ms.date: "03/30/2017"
 ms.assetid: 4803fee6-b8d8-4937-9907-d5c5fd5299db
+ms.topic: article
 ---
 # 2578 - TryCatchExceptionFromCatchOrFinally
 

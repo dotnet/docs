@@ -3,6 +3,7 @@ description: "Learn more about: Bookmark Resolver for WorkflowHostingEndpoint"
 title: "Bookmark Resolver for WorkflowHostingEndpoint"
 ms.date: "03/30/2017"
 ms.assetid: 97fd5816-935e-4625-ad04-e6f6befa07de
+ms.topic: article
 ---
 # Bookmark Resolver for WorkflowHostingEndpoint
 

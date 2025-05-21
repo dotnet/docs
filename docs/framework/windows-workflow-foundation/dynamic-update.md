@@ -2,6 +2,7 @@
 description: "Learn more about Dynamic Update, which provides a mechanism for workflow app developers to update the workflow definition of a persisted workflow instance"
 title: "Dynamic Update"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 
 # Dynamic update

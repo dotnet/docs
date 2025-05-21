@@ -3,6 +3,7 @@ description: "Learn more about: Activity Library"
 title: "Activity Library"
 ms.date: "03/30/2017"
 ms.assetid: 5323e9d4-71d6-47eb-bfa6-31feac62044d
+ms.topic: article
 ---
 # Activity Library
 

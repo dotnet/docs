@@ -3,6 +3,7 @@ description: "Learn more about: 441- StopSignpostEvent1"
 title: "441- StopSignpostEvent1"
 ms.date: "03/30/2017"
 ms.assetid: fc9850a5-0dc3-4b84-a09a-744301c7c18e
+ms.topic: article
 ---
 # 441- StopSignpostEvent1
 

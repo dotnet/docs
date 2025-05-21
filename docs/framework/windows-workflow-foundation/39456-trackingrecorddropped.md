@@ -3,6 +3,7 @@ description: "Learn more about: 39456 - TrackingRecordDropped"
 title: "39456 - TrackingRecordDropped"
 ms.date: "03/30/2017"
 ms.assetid: da13d5bc-1736-47a4-b3fd-064ca8040326
+ms.topic: article
 ---
 # 39456 - TrackingRecordDropped
 

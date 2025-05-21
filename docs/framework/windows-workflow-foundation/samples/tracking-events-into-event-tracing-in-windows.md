@@ -3,6 +3,7 @@ description: "Learn more about: Tracking Events into Event Tracing in Windows"
 title: "Tracking Events into Event Tracing in Windows"
 ms.date: "03/30/2017"
 ms.assetid: f812659b-0943-45ff-9430-4defa733182b
+ms.topic: how-to
 ---
 # Tracking Events into Event Tracing in Windows
 

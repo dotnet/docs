@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "programming [WF], activities"
 ms.assetid: 2a69f32e-007f-47d0-ab96-535311641428
+ms.topic: concept-article
 ---
 # Using and Creating Activities
 

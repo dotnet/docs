@@ -3,6 +3,7 @@ description: "Learn more about: 4205 - FoundProcessingError"
 title: "4205 - FoundProcessingError"
 ms.date: "03/30/2017"
 ms.assetid: f2235a15-dd87-439e-8cb9-8b1b89a3dacf
+ms.topic: article
 ---
 # 4205 - FoundProcessingError
 

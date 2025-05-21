@@ -3,6 +3,7 @@ description: "Learn more about: Throttled Parallel ForEach"
 title: "Throttled Parallel ForEach"
 ms.date: "03/30/2017"
 ms.assetid: f2855b5f-e9a7-433d-96a4-40fc31025215
+ms.topic: article
 ---
 # Throttled Parallel ForEach
 

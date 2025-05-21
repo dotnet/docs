@@ -2,6 +2,7 @@
 title: "Suspended Instance Management"
 description: "Learn more about: Suspended Instance Management"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Suspended Instance Management
 

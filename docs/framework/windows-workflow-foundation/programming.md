@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "programming [WF]"
   - "WF [WF], programming"
 ms.assetid: f62354e2-6a2b-4e8c-a4bc-533fb96267a4
+ms.topic: article
 ---
 # Windows Workflow Foundation Programming
 

@@ -3,6 +3,7 @@ title: "Fundamental Windows Workflow Concepts"
 description: This article describes some of the concepts in workflow development in the .NET Framework 4.6.1 that may be unfamiliar to some developers.
 ms.date: "03/30/2017"
 ms.assetid: 0e930e80-5060-45d2-8a7a-95c0690105d4
+ms.topic: concept-article
 ---
 # Fundamental Windows Workflow Concepts
 

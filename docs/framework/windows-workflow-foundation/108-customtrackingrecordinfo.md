@@ -3,6 +3,7 @@ description: "Learn more about: 108 - CustomTrackingRecordInfo"
 title: "108 - CustomTrackingRecordInfo"
 ms.date: "03/30/2017"
 ms.assetid: 5bee501e-4e00-42cd-b949-e88009c3d4e8
+ms.topic: article
 ---
 # 108 - CustomTrackingRecordInfo
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Windows Workflow Foundation [WF], concepts"
   - "WF [WF], concepts"
 ms.assetid: 2a5c0ac2-813f-4a7b-83ac-9e5cb85e0640
+ms.topic: concept-article
 ---
 # Windows Workflow Conceptual Overview
 

@@ -3,6 +3,7 @@ title: "Designing and Implementing Custom Activities"
 description: This article provides resources for creating custom activities in Workflow Foundation by creating composite activities or creating new activity types.
 ms.date: "03/30/2017"
 ms.assetid: 4e30e63d-6e33-4842-a7a4-ce807cef1fad
+ms.topic: concept-article
 ---
 # Designing and Implementing Custom Activities
 

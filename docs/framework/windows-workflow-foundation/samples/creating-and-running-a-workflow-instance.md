@@ -3,6 +3,7 @@ description: "Learn more about: Creating and Running a Workflow Instance"
 title: "Creating and Running a Workflow Instance"
 ms.date: "03/30/2017"
 ms.assetid: 19d27f47-0491-4569-8f53-51bc1d940e80
+ms.topic: concept-article
 ---
 # Creating and Running a Workflow Instance
 

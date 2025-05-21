@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Windows Workflow Foundation [WF], extending"
   - "extending [WF]"
 ms.assetid: d6861f28-9c8c-4225-872d-9a80e2e59034
+ms.topic: concept-article
 ---
 # Extending Windows Workflow Foundation
 

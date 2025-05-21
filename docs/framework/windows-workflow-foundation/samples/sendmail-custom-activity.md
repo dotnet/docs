@@ -3,6 +3,7 @@ description: "Learn more about: SendMail Custom Activity"
 title: "SendMail Custom Activity"
 ms.date: "03/30/2017"
 ms.assetid: 947a9ae6-379c-43a3-9cd5-87f573a5739f
+ms.topic: article
 ---
 # SendMail Custom Activity
 

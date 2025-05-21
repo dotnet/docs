@@ -3,6 +3,7 @@ description: "Learn more about: Custom Composite using Native Activity"
 title: "Custom Composite using Native Activity"
 ms.date: "03/30/2017"
 ms.assetid: ef9e739c-8a8a-4d11-9e25-cb42c62e3c76
+ms.topic: article
 ---
 # Custom Composite using Native Activity
 

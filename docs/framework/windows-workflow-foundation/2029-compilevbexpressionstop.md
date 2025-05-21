@@ -3,6 +3,7 @@ description: "Learn more about: 2029 - CompileVbExpressionStop"
 title: "2029 - CompileVbExpressionStop"
 ms.date: "03/30/2017"
 ms.assetid: f0752c88-61f9-4579-81a1-d804fbc000a9
+ms.topic: article
 ---
 # 2029 - CompileVbExpressionStop
 

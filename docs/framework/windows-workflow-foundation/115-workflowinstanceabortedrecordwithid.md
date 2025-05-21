@@ -3,6 +3,7 @@ description: "Learn more about: 115 - WorkflowInstanceAbortedRecordWithId"
 title: "115 - WorkflowInstanceAbortedRecordWithId"
 ms.date: "03/30/2017"
 ms.assetid: 0293dd4e-e6ae-473a-b3d6-c2d38f9bd875
+ms.topic: article
 ---
 # 115 - WorkflowInstanceAbortedRecordWithId
 

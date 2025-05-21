@@ -3,6 +3,7 @@ description: "Learn more about: 4201 - EndSqlCommandExecute"
 title: "4201 - EndSqlCommandExecute"
 ms.date: "03/30/2017"
 ms.assetid: ae0dbc15-f98c-4096-a8d9-fbe4dc36f1cd
+ms.topic: article
 ---
 # 4201 - EndSqlCommandExecute
 

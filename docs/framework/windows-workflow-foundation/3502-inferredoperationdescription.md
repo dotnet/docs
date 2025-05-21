@@ -3,6 +3,7 @@ description: "Learn more about: 3502 - InferredOperationDescription"
 title: "3502 - InferredOperationDescription"
 ms.date: "03/30/2017"
 ms.assetid: 6aebb614-3c72-4537-ba11-3cc7200ef1f1
+ms.topic: article
 ---
 # 3502 - InferredOperationDescription
 

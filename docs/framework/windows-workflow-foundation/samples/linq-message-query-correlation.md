@@ -3,6 +3,7 @@ description: "Learn more about: LINQ Message Query Correlation"
 title: "LINQ Message Query Correlation"
 ms.date: "03/30/2017"
 ms.assetid: b746872e-57b1-4514-b337-53398a0e0deb
+ms.topic: article
 ---
 # LINQ Message Query Correlation
 

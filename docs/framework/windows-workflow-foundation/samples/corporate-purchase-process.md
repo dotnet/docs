@@ -3,6 +3,7 @@ description: "Learn more about: Corporate Purchase Process"
 title: "Corporate Purchase Process"
 ms.date: "03/30/2017"
 ms.assetid: a5e57336-4290-41ea-936d-435593d97055
+ms.topic: article
 ---
 # Corporate Purchase Process
 

@@ -3,6 +3,7 @@ description: "Learn more about: Non-generic ParallelForEach"
 title: "Non-generic ParallelForEach"
 ms.date: "03/30/2017"
 ms.assetid: de17e7a2-257b-48b3-91a1-860e2e9bf6e6
+ms.topic: article
 ---
 # Non-generic ParallelForEach
 

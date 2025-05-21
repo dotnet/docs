@@ -3,6 +3,7 @@ title: "Windows Workflow Foundation Feature Specifics"
 description: This article describes new features that .NET Framework 4 adds to Windows Workflow Foundation and scenarios in which the features might be useful.
 ms.date: "03/30/2017"
 ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
+ms.topic: article
 ---
 
 # Windows Workflow Foundation Feature Specifics

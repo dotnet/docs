@@ -3,6 +3,7 @@ description: "Learn more about: 2026 - CompileVbExpressionStart"
 title: "2026 - CompileVbExpressionStart"
 ms.date: "03/30/2017"
 ms.assetid: daad57eb-8198-49b5-9920-aa0e7428ccf1
+ms.topic: article
 ---
 # 2026 - CompileVbExpressionStart
 

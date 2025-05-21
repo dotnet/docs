@@ -3,6 +3,7 @@ description: "Learn more about: 1449 - WfMessageReceived"
 title: "1449 - WfMessageReceived"
 ms.date: "03/30/2017"
 ms.assetid: 93f4562b-eb7e-4dd5-a208-9b6420f198fa
+ms.topic: article
 ---
 # 1449 - WfMessageReceived
 

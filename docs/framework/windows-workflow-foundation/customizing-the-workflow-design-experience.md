@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "extending [WF], Workflow Designer"
 ms.assetid: 98135077-0f5d-4d16-9337-01094e843537
+ms.topic: concept-article
 ---
 # Customizing the Workflow Design Experience
 

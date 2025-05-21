@@ -3,6 +3,7 @@ description: "Learn more about: 3508 - TrackingProfileNotFound"
 title: "3508 - TrackingProfileNotFound"
 ms.date: "03/30/2017"
 ms.assetid: 4cee3c4a-0490-4c94-aa19-ef7ce7287c02
+ms.topic: article
 ---
 # 3508 - TrackingProfileNotFound
 

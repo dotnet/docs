@@ -3,6 +3,7 @@ title: "Windows Workflow Overview"
 description: This article describes Workflow Foundation workflows, which are models that describe real-world processes.
 ms.date: "03/30/2017"
 ms.assetid: fc44adbe-1412-49ae-81af-0298be44aae6
+ms.topic: concept-article
 ---
 # Windows Workflow Overview
 

@@ -3,6 +3,7 @@ description: "Learn more about: Exposing data with CacheMetadata"
 title: "Exposing data with CacheMetadata"
 ms.date: "03/30/2017"
 ms.assetid: 34832f23-e93b-40e6-a80b-606a855a00d9
+ms.topic: concept-article
 ---
 
 # Exposing data with CacheMetadata

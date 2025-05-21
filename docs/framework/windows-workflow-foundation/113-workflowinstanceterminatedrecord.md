@@ -3,6 +3,7 @@ description: "Learn more about: 113 - WorkflowInstanceTerminatedRecord"
 title: "113 - WorkflowInstanceTerminatedRecord"
 ms.date: "03/30/2017"
 ms.assetid: f53204ee-4ea2-45e1-8859-e86d07305efd
+ms.topic: article
 ---
 # 113 - WorkflowInstanceTerminatedRecord
 

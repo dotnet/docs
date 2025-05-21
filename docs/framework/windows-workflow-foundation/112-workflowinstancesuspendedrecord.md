@@ -3,6 +3,7 @@ description: "Learn more about: 112 - WorkflowInstanceSuspendedRecord"
 title: "112 - WorkflowInstanceSuspendedRecord"
 ms.date: "03/30/2017"
 ms.assetid: bc825c7c-8c90-48f7-9336-9a978a8246c6
+ms.topic: article
 ---
 # 112 - WorkflowInstanceSuspendedRecord
 

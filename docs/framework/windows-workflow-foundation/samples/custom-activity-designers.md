@@ -3,6 +3,7 @@ description: "Learn more about: Custom Activity Designers"
 title: "Custom Activity Designers"
 ms.date: "03/30/2017"
 ms.assetid: dcf14dca-ce6d-4278-96ba-062f0a679075
+ms.topic: article
 ---
 # Custom Activity Designers
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1039 - ExitNoPersistBlock"
 title: "1039 - ExitNoPersistBlock"
 ms.date: "03/30/2017"
 ms.assetid: 3b46ea28-3ee0-43eb-96ff-a6d696da87f8
+ms.topic: article
 ---
 # 1039 - ExitNoPersistBlock
 

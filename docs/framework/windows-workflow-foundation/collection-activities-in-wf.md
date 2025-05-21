@@ -3,6 +3,7 @@ description: "Learn more about: Collection Activities in WF"
 title: "Collection Activities in WF"
 ms.date: "03/30/2017"
 ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
+ms.topic: article
 ---
 # Collection Activities in WF
 

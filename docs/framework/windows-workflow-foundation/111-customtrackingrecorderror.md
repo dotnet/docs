@@ -3,6 +3,7 @@ description: "Learn more about: 111 - CustomTrackingRecordError"
 title: "111 - CustomTrackingRecordError"
 ms.date: "03/30/2017"
 ms.assetid: d469fb12-e094-4d6c-9b4d-abd7ce0d17da
+ms.topic: article
 ---
 # 111 - CustomTrackingRecordError
 

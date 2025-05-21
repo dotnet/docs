@@ -3,6 +3,7 @@ description: "Learn more about: 39459 - TrackingDataExtracted"
 title: "39459 - TrackingDataExtracted"
 ms.date: "03/30/2017"
 ms.assetid: fcf7be96-8a7b-4ae1-bf38-b77ea9ebfb6b
+ms.topic: article
 ---
 # 39459 - TrackingDataExtracted
 

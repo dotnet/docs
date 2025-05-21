@@ -3,6 +3,7 @@ description: "Learn more about: 2576 - TryCatchExceptionFromTry"
 title: "2576 - TryCatchExceptionFromTry"
 ms.date: "03/30/2017"
 ms.assetid: 47e48973-b17c-4a16-8338-c84b54aa0a6e
+ms.topic: article
 ---
 # 2576 - TryCatchExceptionFromTry
 

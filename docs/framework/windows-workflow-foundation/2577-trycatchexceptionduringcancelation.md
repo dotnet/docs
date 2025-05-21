@@ -3,6 +3,7 @@ description: "Learn more about: 2577 - TryCatchExceptionDuringCancelation"
 title: "2577 - TryCatchExceptionDuringCancelation"
 ms.date: "03/30/2017"
 ms.assetid: 35ee9f55-227f-4566-bcb4-4c7c75dea85b
+ms.topic: article
 ---
 # 2577 - TryCatchExceptionDuringCancelation
 

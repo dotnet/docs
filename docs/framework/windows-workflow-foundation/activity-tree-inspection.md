@@ -3,6 +3,7 @@ description: "Learn more about: Activity Tree Inspection"
 title: "Activity Tree Inspection"
 ms.date: "03/30/2017"
 ms.assetid: 100d00e4-8c1d-4233-8fbb-dd443a01155d
+ms.topic: article
 ---
 # Activity Tree Inspection
 

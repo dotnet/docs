@@ -3,6 +3,7 @@ description: "Learn more about: Compensation"
 title: "Compensation"
 ms.date: "03/30/2017"
 ms.assetid: 722e9766-48d7-456c-9496-d7c5c8f0fa76
+ms.topic: article
 ---
 # Compensation
 

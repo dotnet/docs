@@ -3,6 +3,7 @@ description: "Learn more about: 105 - FaultPropagationRecord"
 title: "105 - FaultPropagationRecord"
 ms.date: "03/30/2017"
 ms.assetid: 168473b1-b1e5-4e9f-8a2a-35bbdb2ef531
+ms.topic: article
 ---
 # 105 - FaultPropagationRecord
 

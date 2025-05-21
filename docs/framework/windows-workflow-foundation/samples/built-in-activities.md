@@ -3,6 +3,7 @@ description: "Learn more about: Built-in Activities"
 title: "Built-in Activities"
 ms.date: "03/30/2017"
 ms.assetid: 31e1b8c2-7f74-458a-b2e2-fddc5b10eac1
+ms.topic: article
 ---
 # Built-in activities
 

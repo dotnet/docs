@@ -3,6 +3,7 @@ description: "Learn more about: 4214 - InstanceLocksRecoveryError"
 title: "4214 - InstanceLocksRecoveryError"
 ms.date: "03/30/2017"
 ms.assetid: d28fb2d5-bf15-4648-8d20-8141ad16f04b
+ms.topic: article
 ---
 # 4214 - InstanceLocksRecoveryError
 

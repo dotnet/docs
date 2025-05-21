@@ -3,6 +3,7 @@ description: "Learn more about: 1132 - InvokeMethodDoesNotUseAsyncPattern"
 title: "1132 - InvokeMethodDoesNotUseAsyncPattern"
 ms.date: "03/30/2017"
 ms.assetid: 436b3767-4460-46b0-9ea3-fc2963260c11
+ms.topic: article
 ---
 # 1132 - InvokeMethodDoesNotUseAsyncPattern
 

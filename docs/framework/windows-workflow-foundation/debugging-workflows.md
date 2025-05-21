@@ -3,6 +3,7 @@ description: "Learn more about: Debugging Workflows"
 title: "Debugging Workflows"
 ms.date: "03/30/2017"
 ms.assetid: b23b4814-ebb1-4c51-b7a9-469f4da7a96d
+ms.topic: concept-article
 ---
 # Debugging Workflows
 

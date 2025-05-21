@@ -3,6 +3,7 @@ description: "Learn more about: Fault Handling in a Flowchart Activity Using Try
 title: "Fault Handling in a Flowchart Activity Using TryCatch"
 ms.date: "03/30/2017"
 ms.assetid: 50922964-bfe0-4ba8-9422-0e7220d514fd
+ms.topic: how-to
 ---
 # Fault Handling in a Flowchart Activity Using TryCatch
 

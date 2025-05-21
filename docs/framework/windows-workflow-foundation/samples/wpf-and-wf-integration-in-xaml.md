@@ -3,6 +3,7 @@ description: "Learn more about: WPF and Windows Workflow Foundation integration 
 title: "WPF and WF Integration in XAML"
 ms.date: "03/30/2017"
 ms.assetid: a4f53b48-fc90-4315-bca0-ba009562f488
+ms.topic: article
 ---
 # WPF and Windows Workflow Foundation integration in XAML
 

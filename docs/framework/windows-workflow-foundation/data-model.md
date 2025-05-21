@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], data model"
 ms.assetid: d5752e51-cfc9-4499-af71-53b6daae9879
+ms.topic: article
 ---
 # Windows Workflow Foundation Data Model
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1040 - InArgumentBound"
 title: "1040 - InArgumentBound"
 ms.date: "03/30/2017"
 ms.assetid: 7dfaad1b-36c0-4575-84c1-31d63b0eaf5d
+ms.topic: article
 ---
 # 1040 - InArgumentBound
 

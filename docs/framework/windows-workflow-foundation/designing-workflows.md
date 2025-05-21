@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], designing workflows"
 ms.assetid: 41f727b5-b142-4c1b-b046-492b96135ae6
+ms.topic: concept-article
 ---
 # Designing Workflows
 

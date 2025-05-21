@@ -3,6 +3,7 @@ description: "Learn more about: Non-Persisted Workflow Instances"
 title: "Non-Persisted Workflow Instances"
 ms.date: "03/30/2017"
 ms.assetid: 5e01af77-6b14-4964-91a5-7dfd143449c0
+ms.topic: article
 ---
 # Non-Persisted Workflow Instances
 

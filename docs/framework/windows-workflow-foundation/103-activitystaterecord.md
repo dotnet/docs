@@ -3,6 +3,7 @@ description: "Learn more about: 103 - ActivityStateRecord"
 title: "103 - ActivityStateRecord"
 ms.date: "03/30/2017"
 ms.assetid: 57636a9a-561e-44aa-aef9-1f1894aaa6dd
+ms.topic: article
 ---
 # 103 - ActivityStateRecord
 

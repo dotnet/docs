@@ -3,6 +3,7 @@ description: "Learn more about: 1126 - InvokedMethodThrewException"
 title: "1126 - InvokedMethodThrewException"
 ms.date: "03/30/2017"
 ms.assetid: 0d3cff1a-97e6-4b6c-be18-108c6881bfc0
+ms.topic: article
 ---
 # 1126 - InvokedMethodThrewException
 

@@ -3,6 +3,7 @@ description: "Learn more about: 2027 - CacheRootMetadataStart"
 title: "2027 - CacheRootMetadataStart"
 ms.date: "03/30/2017"
 ms.assetid: 1421a473-c99e-45bb-b1ab-6a9f8da6fcd2
+ms.topic: article
 ---
 # 2027 - CacheRootMetadataStart
 

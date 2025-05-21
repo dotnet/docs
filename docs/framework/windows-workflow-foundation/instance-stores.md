@@ -3,6 +3,7 @@ description: "Learn more about: Instance Stores"
 title: "Instance Stores"
 ms.date: "03/30/2017"
 ms.assetid: f2629668-0923-4987-b943-67477131c1e0
+ms.topic: how-to
 ---
 # Instance Stores
 

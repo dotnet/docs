@@ -3,6 +3,7 @@ title: "Application"
 description: This article refers to samples with detailed procedures for workflow applications in Windows Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: 22d27e12-ab04-432b-9695-9f74e098cff3
+ms.topic: article
 ---
 # Application
 

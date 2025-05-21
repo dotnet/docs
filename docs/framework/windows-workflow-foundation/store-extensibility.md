@@ -2,6 +2,7 @@
 description: "Learn more about store extensibility. SqlWorkflowInstanceStore lets you promote custom, app-specific properties to query for instances in the persistence DB."
 title: "Store Extensibility"
 ms.date: "03/30/2017"
+ms.topic: how-to
 ---
 
 # Store extensibility

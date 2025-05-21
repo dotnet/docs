@@ -3,6 +3,7 @@ description: "Learn more about: Tracking Participants"
 title: "Tracking Participants"
 ms.date: "03/30/2017"
 ms.assetid: f13e360c-eeb7-4a49-98a0-8f6a52d64f68
+ms.topic: how-to
 ---
 # Tracking Participants
 

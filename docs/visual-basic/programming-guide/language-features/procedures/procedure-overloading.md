@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "procedure overloading"
   - "procedures [Visual Basic], parameter lists"
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
+ms.topic: article
 ---
 # Procedure Overloading (Visual Basic)
 

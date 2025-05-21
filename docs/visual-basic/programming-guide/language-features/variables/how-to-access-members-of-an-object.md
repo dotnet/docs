@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "members [Visual Basic], accessing"
   - "object variables [Visual Basic], accessing members"
 ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
+ms.topic: how-to
 ---
 # How to: Access Members of an Object (Visual Basic)
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], creating XML"
   - "XML literals [Visual Basic], creating"
 ms.assetid: 8ae29ec5-e5fb-4137-9df5-60a288df7045
+ms.topic: concept-article
 ---
 # Creating XML in Visual Basic
 

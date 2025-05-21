@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "examples [Visual Basic], arrays"
   - "examples [Visual Basic], Char data type"
 ms.assetid: 69f94e85-d57c-4ccc-a62a-426e829f5c5e
+ms.topic: how-to
 ---
 # How to: Create a String from An Array of Char Values (Visual Basic)
 

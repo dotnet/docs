@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "procedure declarations"
   - "procedures [Visual Basic], about procedures"
 ms.assetid: 4f779247-0b50-47e8-9e5c-ab5cf39ac0d2
+ms.topic: how-to
 ---
 # How to: Create a Procedure (Visual Basic)
 

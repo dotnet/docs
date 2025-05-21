@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "properties [Visual Basic], property procedures"
   - "procedure calls [Visual Basic], property procedures"
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
+ms.topic: how-to
 ---
 # How to: Call a Property Procedure (Visual Basic)
 

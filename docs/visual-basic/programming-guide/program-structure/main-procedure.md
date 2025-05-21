@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Main method [Visual Basic]"
   - "main function"
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
+ms.topic: article
 ---
 # Main Procedure in Visual Basic
 

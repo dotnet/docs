@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Visual Basic code, procedures"
   - "arguments [Visual Basic], modifiable"
 ms.assetid: 87b2df69-e1f7-4657-9caf-b3f48d693428
+ms.topic: article
 ---
 # Differences Between Modifiable and Nonmodifiable Arguments (Visual Basic)
 

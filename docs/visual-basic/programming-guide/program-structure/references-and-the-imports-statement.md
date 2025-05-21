@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "Imports statement [Visual Basic], referencing assemblies"
   - "assemblies [Visual Basic], references"
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
+ms.topic: article
 ---
 # References and the Imports Statement (Visual Basic)
 

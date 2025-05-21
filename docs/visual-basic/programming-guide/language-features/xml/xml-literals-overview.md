@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], XML literals"
   - "literals [Visual Basic], XML"
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
+ms.topic: concept-article
 ---
 # XML Literals Overview (Visual Basic)
 

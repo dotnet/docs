@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], Nothing"
 ms.assetid: 261380af-2024-4ecf-823b-43b1034d92cd
+ms.topic: concept-article
 ---
 # Nothing and Strings in Visual Basic
 

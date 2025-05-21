@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "comments"
   - "code comments"
 ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
+ms.topic: article
 ---
 # Comments in Code (Visual Basic)
 

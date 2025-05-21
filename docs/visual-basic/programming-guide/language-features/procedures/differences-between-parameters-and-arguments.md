@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "procedure parameters"
   - "parameters [Visual Basic], definition"
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
+ms.topic: article
 ---
 # Differences Between Parameters and Arguments (Visual Basic)
 

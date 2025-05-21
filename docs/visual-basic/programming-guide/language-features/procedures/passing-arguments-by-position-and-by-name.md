@@ -23,6 +23,7 @@ helpviewer_keywords:
   - "argument passing [Visual Basic], by position"
   - "arguments [Visual Basic], listing by name"
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
+ms.topic: concept-article
 ---
 # Passing Arguments by Position and by Name (Visual Basic)
 

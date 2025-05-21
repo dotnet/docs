@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "names [Visual Basic], naming conventions"
   - "naming conventions [Visual Basic], classes"
 ms.assetid: 164949a4-2a7c-4736-9d82-9c3078e2e56c
+ms.topic: concept-article
 ---
 # Visual Basic Naming Conventions
 

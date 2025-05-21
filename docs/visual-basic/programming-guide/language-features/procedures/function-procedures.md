@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], Function procedures"
   - "syntax [Visual Basic], function procedures"
 ms.assetid: 1b9f632c-553b-4cb6-920a-ded117ead8c0
+ms.topic: how-to
 ---
 # Function procedures (Visual Basic)
 

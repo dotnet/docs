@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "procedure overloading [Visual Basic], overload resolution"
   - "signatures [Visual Basic], procedure"
   - "overloads [Visual Basic], resolution"
+ms.topic: how-to
 ---
 # Overload resolution (Visual Basic)
 

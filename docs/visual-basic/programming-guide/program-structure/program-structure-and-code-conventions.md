@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "Visual Basic code"
   - "programming [Visual Basic], Visual Basic coding conventions"
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
+ms.topic: article
 ---
 # Program Structure and Code Conventions (Visual Basic)
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Dim statement [Visual Basic]"
   - "variables [Visual Basic], creating"
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
+ms.topic: how-to
 ---
 # How to: Create a New Variable (Visual Basic)
 

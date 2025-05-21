@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Boolean values [Visual Basic]"
   - "paths [Visual Basic], validating"
 ms.assetid: f673462d-57b7-4120-b13a-6a7592f7ab2c
+ms.topic: how-to
 ---
 # How to: Validate File Names and Paths in Visual Basic
 

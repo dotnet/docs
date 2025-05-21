@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Visual Basic code, procedures"
   - "procedure parameters [Visual Basic], defining"
 ms.assetid: 7962808d-407e-4e84-984e-43e9857c53c9
+ms.topic: how-to
 ---
 # How to: Define a Parameter for a Procedure (Visual Basic)
 

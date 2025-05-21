@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
+ms.topic: how-to
 ---
 # How to: Put a Value in a Property (Visual Basic)
 

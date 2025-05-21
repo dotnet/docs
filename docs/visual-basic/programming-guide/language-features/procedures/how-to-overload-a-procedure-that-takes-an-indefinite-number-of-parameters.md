@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], overloading"
   - "procedures [Visual Basic], multiple versions"
 ms.assetid: c7042de2-2422-4039-94e8-ac298896af69
+ms.topic: how-to
 ---
 # How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)
 

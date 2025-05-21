@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "operator overloading"
   - "operator procedures"
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b
+ms.topic: article
 ---
 # Operator Procedures (Visual Basic)
 

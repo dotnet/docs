@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: 3954423e-6ab7-4a4c-b55c-a8d27be47891
+ms.topic: how-to
 ---
 # How to: Get a Value from a Property (Visual Basic)
 

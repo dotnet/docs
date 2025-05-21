@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], multiple versions"
   - "procedure calls [Visual Basic], overloaded"
 ms.assetid: 3bb331fb-f6bc-406f-9ca0-9609b497014c
+ms.topic: how-to
 ---
 # How to: Call an Overloaded Procedure (Visual Basic)
 

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "properties [Visual Basic], access levels"
   - "Property statement [Visual Basic], declaring mixed access levels"
 ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
+ms.topic: how-to
 ---
 # How to: Declare a Property with Mixed Access Levels (Visual Basic)
 

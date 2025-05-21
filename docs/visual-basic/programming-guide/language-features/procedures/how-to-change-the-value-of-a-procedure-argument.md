@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "arguments [Visual Basic], ByRef"
   - "arguments [Visual Basic], changing value"
 ms.assetid: 6fad2368-5da7-4c07-8bf8-0f4e65a1be67
+ms.topic: how-to
 ---
 # How to: Change the Value of a Procedure Argument (Visual Basic)
 

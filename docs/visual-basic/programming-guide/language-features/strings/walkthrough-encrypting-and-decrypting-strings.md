@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "decryption [Visual Basic], strings"
   - "strings [Visual Basic], decrypting"
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
+ms.topic: how-to
 ---
 # Walkthrough: Encrypting and Decrypting Strings in Visual Basic
 

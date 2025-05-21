@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "objects [Visual Basic], accessing"
   - "object variables [Visual Basic]"
 ms.assetid: 6169a196-2b13-4ba5-a205-154bc1b87844
+ms.topic: how-to
 ---
 
 # Object Variables in Visual Basic

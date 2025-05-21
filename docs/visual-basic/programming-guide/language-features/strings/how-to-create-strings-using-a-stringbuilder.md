@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "StringBuilder class"
   - "strings [Visual Basic], using StringBuilder"
 ms.assetid: 9c042880-aa16-432e-9ccb-cd00abda9ae3
+ms.topic: how-to
 ---
 # How to: create strings using a StringBuilder in Visual Basic
 

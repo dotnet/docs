@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "declaring classes [Visual Basic]"
   - "late binding [Visual Basic]"
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
+ms.topic: how-to
 ---
 # Object Variable Declaration (Visual Basic)
 

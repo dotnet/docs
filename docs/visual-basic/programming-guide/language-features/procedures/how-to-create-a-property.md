@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic]"
 ms.assetid: 4d229712-6be8-4c5c-bac5-06995ce9185a
+ms.topic: how-to
 ---
 # How to: Create a Property (Visual Basic)
 

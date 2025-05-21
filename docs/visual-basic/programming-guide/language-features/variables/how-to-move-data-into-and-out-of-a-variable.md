@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], retrieving values"
   - "variables [Visual Basic], storing data"
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
+ms.topic: how-to
 ---
 # How to: Move Data Into and Out of a Variable (Visual Basic)
 

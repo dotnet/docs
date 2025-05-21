@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "XML axis [Visual Basic], attribute"
   - "XML [Visual Basic], accessing"
 ms.assetid: 66cd704f-990c-4f8d-9b49-2b6aa76ca8fd
+ms.topic: how-to
 ---
 # How to: Access XML Attributes (Visual Basic)
 

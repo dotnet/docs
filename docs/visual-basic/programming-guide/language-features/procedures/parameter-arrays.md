@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], indefinite number of argument values"
   - "arrays [Visual Basic], parameter arrays"
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
+ms.topic: article
 ---
 # Parameter Arrays (Visual Basic)
 

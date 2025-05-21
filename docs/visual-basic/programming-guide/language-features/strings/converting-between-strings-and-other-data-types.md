@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "conversions [Visual Basic], Visual Basic"
   - "string conversion [Visual Basic], Visual Basic"
 ms.assetid: 06085ed5-191d-4930-8fbc-da63930da400
+ms.topic: concept-article
 ---
 # Converting between strings and other data types in Visual Basic
 

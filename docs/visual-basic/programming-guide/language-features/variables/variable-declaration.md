@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "local variables [Visual Basic], declarations"
   - "scope [Visual Basic], variables"
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
+ms.topic: article
 ---
 # Variable Declaration in Visual Basic
 

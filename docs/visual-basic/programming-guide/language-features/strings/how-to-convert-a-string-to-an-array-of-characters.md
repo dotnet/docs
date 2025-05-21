@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], converting to arrays"
   - "string conversion [Visual Basic], arrays"
 ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
+ms.topic: how-to
 ---
 # How to: Convert a String to an Array of Characters in Visual Basic
 

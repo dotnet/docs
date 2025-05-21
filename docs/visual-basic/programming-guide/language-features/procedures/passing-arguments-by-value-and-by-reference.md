@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "arguments [Visual Basic], passing by value or by reference"
   - "argument passing [Visual Basic], by value or by reference"
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
+ms.topic: concept-article
 ---
 # Passing Arguments by Value and by Reference (Visual Basic)
 

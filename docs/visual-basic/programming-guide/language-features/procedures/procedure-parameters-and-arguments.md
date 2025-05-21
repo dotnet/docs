@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "Visual Basic code, parameter lists"
   - "argument lists [Visual Basic]"
   - "procedures [Visual Basic], parameter lists"
+ms.topic: article
 ---
 # Procedure Parameters and Arguments (Visual Basic)
 

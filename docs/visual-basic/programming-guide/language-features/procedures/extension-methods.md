@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "extending data types [Visual Basic]"
   - "extension methods [Visual Basic]"
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
+ms.topic: article
 ---
 # Extension Methods (Visual Basic)
 

@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], calling"
   - "argument passing [Visual Basic], procedures"
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
+ms.topic: how-to
 ---
 # How to: Pass Arguments to a Procedure (Visual Basic)
 

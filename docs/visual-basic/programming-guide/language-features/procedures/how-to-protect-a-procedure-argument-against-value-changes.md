@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "arguments [Visual Basic], ByRef"
   - "arguments [Visual Basic], changing value"
 ms.assetid: d2b7c766-ce16-4d2c-8d79-3fc0e7ba2227
+ms.topic: how-to
 ---
 # How to: Protect a Procedure Argument Against Value Changes (Visual Basic)
 

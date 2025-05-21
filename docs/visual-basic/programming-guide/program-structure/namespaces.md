@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "naming conventions [Visual Basic], naming conflicts"
   - "namespaces"
 ms.assetid: cffac744-ab8c-4f1f-ba50-732c22ab4b88
+ms.topic: article
 ---
 # Namespaces in Visual Basic
 

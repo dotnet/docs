@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "Visual Basic code, line continuation in"
   - "statements [Visual Basic], line breaks in"
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
+ms.topic: how-to
 ---
 # How to: Break and Combine Statements in Code (Visual Basic)
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Visual Basic code, walkthroughs"
   - "walkthroughs [Visual Basic]"
 ms.assetid: e4e1f849-e1ce-4cf7-8483-d9b4c4887a8e
+ms.topic: article
 ---
 # Visual Basic Language Walkthroughs
 

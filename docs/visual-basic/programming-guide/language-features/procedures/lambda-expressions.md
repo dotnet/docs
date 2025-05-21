@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "expressions [Visual Basic], lambda"
   - "inline functions [Visual Basic]"
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
+ms.topic: article
 ---
 # Lambda Expressions (Visual Basic)
 

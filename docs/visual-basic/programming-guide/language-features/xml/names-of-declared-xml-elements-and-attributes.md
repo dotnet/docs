@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "attribute names [XML in Visual Basic]"
   - "XML literals [Visual Basic], element names"
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
+ms.topic: article
 ---
 # Names of Declared XML Elements and Attributes (Visual Basic)
 

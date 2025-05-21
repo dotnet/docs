@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "variables [Visual Basic]"
   - "values [Visual Basic], storing"
 ms.assetid: 4cfaa06d-4ae3-4307-897b-cf599dc24caa
+ms.topic: article
 ---
 # Variables in Visual Basic
 

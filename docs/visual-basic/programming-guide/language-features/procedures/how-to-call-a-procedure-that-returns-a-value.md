@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], calling"
   - "procedures [Visual Basic], returning a value"
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
+ms.topic: how-to
 ---
 # How to: Call a Procedure That Returns a Value (Visual Basic)
 

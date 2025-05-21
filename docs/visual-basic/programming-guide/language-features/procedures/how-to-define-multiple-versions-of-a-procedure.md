@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], multiple versions"
   - "procedure overloading [Visual Basic], multiple versions"
 ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
+ms.topic: how-to
 ---
 # How to: Define Multiple Versions of a Procedure (Visual Basic)
 

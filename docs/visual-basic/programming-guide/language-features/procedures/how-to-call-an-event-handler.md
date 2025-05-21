@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], calling"
 no-loc: [WithEvents]
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
+ms.topic: how-to
 ---
 # How to call an event handler in Visual Basic
 

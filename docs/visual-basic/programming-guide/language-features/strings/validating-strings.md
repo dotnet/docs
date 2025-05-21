@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], validating"
   - "validation [Visual Basic], strings"
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
+ms.topic: concept-article
 ---
 # Validating Strings in Visual Basic
 

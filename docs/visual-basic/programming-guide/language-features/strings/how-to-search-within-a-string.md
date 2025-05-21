@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], searching"
   - "examples [Visual Basic], strings"
 ms.assetid: ae4c79e0-08ea-489f-bdb2-5eb6d355f284
+ms.topic: how-to
 ---
 # How to: search within a string (Visual Basic)
 

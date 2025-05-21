@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], overloading"
   - "procedures [Visual Basic], multiple versions"
 ms.assetid: 825f9d56-4cde-43fd-993a-b9171717e2eb
+ms.topic: how-to
 ---
 # How to: Overload a Procedure that Takes Optional Parameters (Visual Basic)
 

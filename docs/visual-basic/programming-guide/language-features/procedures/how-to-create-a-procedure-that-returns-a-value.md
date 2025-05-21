@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Visual Basic code, procedures"
   - "procedures [Visual Basic], returning a value"
 ms.assetid: 8ee19f95-a9ef-4033-963b-d224dca207c4
+ms.topic: how-to
 ---
 # How to: Create a Procedure that Returns a Value (Visual Basic)
 

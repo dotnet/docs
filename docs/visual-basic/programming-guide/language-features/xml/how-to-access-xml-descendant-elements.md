@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "descendent axis property [Visual Basic]"
   - "XML [Visual Basic], accessing"
 ms.assetid: aabfa258-4112-4e7e-bab9-403f96072ef7
+ms.topic: how-to
 ---
 # How to: Access XML Descendant Elements (Visual Basic)
 

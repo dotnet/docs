@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], about LINQ to XML"
   - "LINQ [Visual Basic], LINQ to XML"
 ms.assetid: 01c62a79-6d58-468e-84fb-039c05947701
+ms.topic: concept-article
 ---
 # Overview of LINQ to XML in Visual Basic
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "decimals [Visual Basic], hexadecimals"
   - "string conversion [Visual Basic], hexadecimal to numbers"
 ms.assetid: 76675807-eadb-4c08-bd50-e6c6ff4b8ced
+ms.topic: how-to
 ---
 # How to: Convert Hexadecimal Strings to Numbers (Visual Basic)
 

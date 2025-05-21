@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "String data type [Visual Basic], validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
+ms.topic: concept-article
 ---
 # Walkthrough: Validating That Passwords Are Complex (Visual Basic)
 

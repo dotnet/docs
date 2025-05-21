@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "white space [XML in Visual Basic]"
   - "XML literals [Visual Basic], white space"
 ms.assetid: dfe3a9ff-d69a-418e-a6b5-476f4ed84219
+ms.topic: article
 ---
 # White Space in XML Literals (Visual Basic)
 

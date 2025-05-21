@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Visual Basic code, strings"
   - "strings [Visual Basic], Visual Basic"
 ms.assetid: 7e4c777c-ad69-46e2-8b9e-9be4033b1c96
+ms.topic: article
 ---
 # Strings in Visual Basic
 

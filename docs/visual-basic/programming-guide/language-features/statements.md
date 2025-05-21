@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], defining"
   - "statements [Visual Basic], about statements"
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
+ms.topic: article
 ---
 # Statements in Visual Basic
 

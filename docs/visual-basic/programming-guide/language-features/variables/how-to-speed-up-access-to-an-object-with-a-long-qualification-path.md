@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "With block"
   - "object variables [Visual Basic], accessing"
 ms.assetid: 3eb7657f-c9fe-4e05-8bc3-4bb14d5ae585
+ms.topic: how-to
 ---
 # How to: Speed Up Access to an Object with a Long Qualification Path (Visual Basic)
 

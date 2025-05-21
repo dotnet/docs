@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "overloaded operators [Visual Basic], calling"
   - "operator overloading"
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
+ms.topic: how-to
 ---
 # How to: Call an Operator Procedure (Visual Basic)
 

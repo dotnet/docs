@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], regular expressions"
   - "strings [Visual Basic], masked edit"
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
+ms.topic: concept-article
 ---
 # Using Regular Expressions with the MaskedTextBox Control in Visual Basic
 

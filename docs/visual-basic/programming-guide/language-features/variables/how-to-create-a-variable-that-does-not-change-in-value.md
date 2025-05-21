@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], read-only"
   - "variables [Visual Basic], constant value"
 ms.assetid: 86b59266-25df-4635-ae15-9b59c411d036
+ms.topic: how-to
 ---
 # How to: Create a Variable that Does Not Change in Value (Visual Basic)
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], structure"
   - "Visual Basic code, program structure"
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
+ms.topic: how-to
 ---
 # Structure of a Visual Basic Program
 

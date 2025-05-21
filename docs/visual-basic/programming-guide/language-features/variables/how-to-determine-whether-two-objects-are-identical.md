@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "objects [Visual Basic], comparing"
   - "object variables [Visual Basic], determining identity"
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
+ms.topic: how-to
 ---
 # How to: Determine Whether Two Objects Are Identical (Visual Basic)
 

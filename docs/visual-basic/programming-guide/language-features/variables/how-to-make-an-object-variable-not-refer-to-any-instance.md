@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Nothing keyword [Visual Basic], variable assignment"
   - "object variables [Visual Basic], null reference"
 ms.assetid: e6d30578-bdae-4142-a3ac-a10697bf696a
+ms.topic: how-to
 ---
 # How to: Make an Object Variable Not Refer to Any Instance (Visual Basic)
 

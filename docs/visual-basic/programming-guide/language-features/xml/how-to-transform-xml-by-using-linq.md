@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "XML [Visual Basic], transforming"
   - "LINQ to XML [Visual Basic], transforming XML"
 ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
+ms.topic: how-to
 ---
 # How to: Transform XML by Using LINQ (Visual Basic)
 

@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "current instance [Visual Basic], Me keyword"
   - "MyBase keyword [Visual Basic], relationship to similar programming elements"
 ms.assetid: f8e241ae-b1ed-4886-9aa0-08c632154029
+ms.topic: article
 ---
 # Me, My, MyBase, and MyClass in Visual Basic
 

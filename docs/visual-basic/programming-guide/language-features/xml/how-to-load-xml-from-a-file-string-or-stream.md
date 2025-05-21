@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "XML [Visual Basic], loading"
   - "LINQ to XML [Visual Basic], loading XML from files"
 ms.assetid: 2b02dcec-4cca-4575-b4ad-89ceb87b984c
+ms.topic: how-to
 ---
 # How to: Load XML from a File, String, or Stream (Visual Basic)
 

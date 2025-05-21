@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "structured code [Visual Basic], procedures"
   - "procedures"
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
+ms.topic: article
 ---
 # Procedures in Visual Basic
 

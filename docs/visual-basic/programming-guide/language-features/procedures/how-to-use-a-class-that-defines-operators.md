@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "return values [Visual Basic], Operator procedures"
   - "operator overloading"
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
+ms.topic: how-to
 ---
 # How to: Use a Class that Defines Operators (Visual Basic)
 

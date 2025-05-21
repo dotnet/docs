@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML comments [Visual Basic], parsing [Visual Basic]"
 ms.assetid: 78a15cd0-7708-4e79-85d1-c154b7a14a8c
+ms.topic: concept-article
 ---
 # Processing the XML File (Visual Basic)
 

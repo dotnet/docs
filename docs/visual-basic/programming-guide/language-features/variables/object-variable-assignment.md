@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "assignment statements [Visual Basic], object variable assignment"
   - "Me keyword [Visual Basic], as object variable"
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
+ms.topic: how-to
 ---
 # Object Variable Assignment (Visual Basic)
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], indexing"
 ms.assetid: 0ed39f35-d68e-421d-ae14-460a5c0373b8
+ms.topic: article
 ---
 # Zero-based vs. One-based String Access in Visual Basic
 

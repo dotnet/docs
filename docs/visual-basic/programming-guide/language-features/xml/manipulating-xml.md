@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Visual Basic code, XML"
   - "XML [Visual Basic], manipulating"
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
+ms.topic: concept-article
 ---
 # Manipulating XML in Visual Basic
 

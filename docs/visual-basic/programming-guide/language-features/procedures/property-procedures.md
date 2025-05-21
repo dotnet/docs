@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "property procedures"
   - "Get statement [Visual Basic], property procedures"
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
+ms.topic: article
 ---
 # Property Procedures (Visual Basic)
 

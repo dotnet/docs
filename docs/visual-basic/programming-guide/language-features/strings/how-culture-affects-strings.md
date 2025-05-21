@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "locale [Visual Basic], effect on strings"
   - "strings [Visual Basic], locale dependence"
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
+ms.topic: article
 ---
 # How Culture Affects Strings in Visual Basic
 

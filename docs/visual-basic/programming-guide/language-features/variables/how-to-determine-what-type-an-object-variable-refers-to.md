@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], object"
   - "object variables [Visual Basic], determining type"
 ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
+ms.topic: how-to
 ---
 # How to: Determine What Type an Object Variable Refers To (Visual Basic)
 

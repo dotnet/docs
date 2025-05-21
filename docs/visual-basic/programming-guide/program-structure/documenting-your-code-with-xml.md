@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "XML comments, Visual Basic"
   - "Visual Basic code, documenting with XML"
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
+ms.topic: concept-article
 ---
 # Document your code with XML (Visual Basic)
 

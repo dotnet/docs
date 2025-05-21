@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "writing extension methods [Visual Basic]"
   - "extension methods [Visual Basic]"
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
+ms.topic: how-to
 ---
 # How to: Write an Extension Method (Visual Basic)
 

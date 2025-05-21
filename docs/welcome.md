@@ -3,6 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 ms.date: 11/22/2024
 ms.custom: "updateeachrelease"
+ms.topic: article
 ---
 # Welcome to .NET
 

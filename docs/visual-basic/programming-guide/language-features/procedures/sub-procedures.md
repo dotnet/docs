@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "procedures [Visual Basic], Sub"
   - "syntax [Visual Basic], Sub procedures"
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
+ms.topic: how-to
 ---
 # Sub procedures (Visual Basic)
 

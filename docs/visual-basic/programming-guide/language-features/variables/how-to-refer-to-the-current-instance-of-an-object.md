@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "current instance"
   - "object variables [Visual Basic]"
 ms.assetid: 7f9b2c77-03cd-428f-adc2-b18070226e7c
+ms.topic: how-to
 ---
 # How to: Refer to the Current Instance of an Object (Visual Basic)
 

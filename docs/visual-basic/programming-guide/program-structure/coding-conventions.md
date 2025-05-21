@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "examples [Visual Basic], coding conventions"
   - "Visual Basic code, conventions"
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
+ms.topic: concept-article
 ---
 # Visual Basic Coding Conventions
 

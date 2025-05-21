@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "XML comments"
   - "XML documentation [Visual Basic], creating"
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
+ms.topic: how-to
 ---
 # How to: Create XML Documentation in Visual Basic
 

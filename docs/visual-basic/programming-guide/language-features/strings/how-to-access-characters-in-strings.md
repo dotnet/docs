@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], accessing characters"
   - "characters [Visual Basic], accessing in strings"
 ms.assetid: 02c5206c-ffab-494d-b648-3b2ea358dc34
+ms.topic: how-to
 ---
 # How to: Access Characters in Strings in Visual Basic
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "XML literals [Visual Basic], creating"
 ms.assetid: 573a6db5-b14d-4e42-b356-8cc7e2d77745
+ms.topic: how-to
 ---
 # How to: Create XML Literals (Visual Basic)
 

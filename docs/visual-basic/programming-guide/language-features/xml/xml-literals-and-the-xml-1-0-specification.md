@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML literals [Visual Basic], XML 1.0 specification"
 ms.assetid: 46f046e5-293c-41a3-b893-4e5f6e32e78a
+ms.topic: article
 ---
 # XML Literals and the XML 1.0 Specification (Visual Basic)
 

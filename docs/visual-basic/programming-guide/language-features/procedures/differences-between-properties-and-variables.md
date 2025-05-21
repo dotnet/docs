@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], and properties"
   - "properties [Visual Basic], and variables"
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
+ms.topic: article
 ---
 # Differences Between Properties and Variables in Visual Basic
 

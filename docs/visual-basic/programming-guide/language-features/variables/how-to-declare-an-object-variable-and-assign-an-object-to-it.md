@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "object variables [Visual Basic], declaring"
   - "declaring object variables [Visual Basic]"
 ms.assetid: 2fa77dde-1fb2-439a-80d4-3e9787649fad
+ms.topic: how-to
 ---
 # How to: Declare an Object Variable and Assign an Object to It in Visual Basic
 

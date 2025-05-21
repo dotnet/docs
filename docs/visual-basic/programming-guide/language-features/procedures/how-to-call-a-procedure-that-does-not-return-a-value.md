@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Visual Basic code, procedures"
   - "procedures [Visual Basic], calling"
 ms.assetid: 259b49a3-a3c1-4254-ba8c-73cdc4127703
+ms.topic: how-to
 ---
 # How to: Call a Procedure that Does Not Return a Value (Visual Basic)
 

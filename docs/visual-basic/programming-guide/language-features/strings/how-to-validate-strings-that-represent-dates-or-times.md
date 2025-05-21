@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], validating"
   - "String data type [Visual Basic], validation"
 ms.assetid: ae7d4b29-3436-4032-bdbf-4650eb1c8e19
+ms.topic: how-to
 ---
 # How to: Validate Strings That Represent Dates or Times (Visual Basic)
 

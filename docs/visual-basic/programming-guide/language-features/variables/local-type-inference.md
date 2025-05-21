@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "inference [Visual Basic]"
   - "type inference [Visual Basic]"
 ms.assetid: b8307f18-2e56-4ab3-a45a-826873f400f6
+ms.topic: article
 ---
 # Local Type Inference (Visual Basic)
 

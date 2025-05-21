@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "procedure arguments [Visual Basic], in parentheses"
   - "arguments [Visual Basic], changing value"
 ms.assetid: 77b4f2d2-1055-4c2f-a521-874d1db86946
+ms.topic: how-to
 ---
 # How to: Force an Argument to Be Passed by Value (Visual Basic)
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], embedded expressions"
   - "XML literals [Visual Basic], embedded expressions"
 ms.assetid: bf2eb779-b751-4b7c-854f-9f2161482352
+ms.topic: article
 ---
 # Embedded Expressions in XML (Visual Basic)
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Visual Basic, code hiding"
   - "Visual Basic code, collapsing and hiding"
 ms.assetid: b770e8f5-e07d-491a-ab4b-a977980f9ba2
+ms.topic: how-to
 ---
 # How to: Collapse and Hide Sections of Code (Visual Basic)
 

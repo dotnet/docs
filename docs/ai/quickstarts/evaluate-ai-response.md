@@ -6,7 +6,7 @@ ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
-# Evaluate the quality of a model's response
+# Quickstart: Evaluate response quality
 
 In this quickstart, you create an MSTest app to evaluate the quality of a chat response from an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
 

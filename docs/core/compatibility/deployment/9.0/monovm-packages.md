@@ -2,6 +2,7 @@
 title: "Breaking change: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages"
 description: Learn about the breaking change in .NET 9 where the desktop Windows, macOS, and Linux MonoVM runtime packages are deprecated.
 ms.date: 08/05/2024
+ms.topic: concept-article
 ---
 # Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
 

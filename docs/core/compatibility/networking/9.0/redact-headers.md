@@ -2,6 +2,7 @@
 title: "HttpClientFactory logging redacts header values by default"
 description: Learn about the .NET 9 breaking change in networking where HttpClientFactory logging redacts all header values by default.
 ms.date: 09/05/2024
+ms.topic: article
 ---
 # HttpClientFactory logging redacts header values by default
 

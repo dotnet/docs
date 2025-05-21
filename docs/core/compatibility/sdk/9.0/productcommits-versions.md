@@ -2,6 +2,7 @@
 title: "Breaking change: `installer` repo version no longer included in `productcommits` files"
 description: Learn about a breaking change in the .NET 9 SDK where the `installer` repo commit and version are no longer included in the `productcommits` files.
 ms.date: 07/09/2024
+ms.topic: concept-article
 ---
 # `installer` repo version no longer included in `productcommits` files
 

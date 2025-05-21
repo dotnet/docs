@@ -2,6 +2,7 @@
 title: "Breaking change: Version requirements for .NET 9 SDK"
 description: Learn about the breaking change in the .NET 9 SDK where specific versions of Visual Studio and MSBuild are required.
 ms.date: 11/06/2024
+ms.topic: concept-article
 ---
 # Version requirements for .NET 9 SDK
 

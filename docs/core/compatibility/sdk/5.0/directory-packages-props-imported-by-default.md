@@ -2,6 +2,7 @@
 title: "Breaking change: Directory.Packages.props files is imported by default"
 description: Learn about the breaking change in .NET 5 where NuGet's .props files automatically import a file named Directory.Packages.props if it's found in the project folder.
 ms.date: 09/17/2020
+ms.topic: concept-article
 ---
 # Directory.Packages.props files is imported by default
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Adding a ZipArchiveEntry with CompressionLevel sets ZIP central directory header general-purpose bit flags"
 description: Learn about the .NET 9 breaking change in core .NET libraries where adding a ZipArchiveEntry with a specified CompressionLevel sets the ZIP central directory header general-purpose bit flags.
 ms.date: 06/03/2024
+ms.topic: concept-article
 ---
 # Adding a ZipArchiveEntry with CompressionLevel sets ZIP central directory header general-purpose bit flags
 

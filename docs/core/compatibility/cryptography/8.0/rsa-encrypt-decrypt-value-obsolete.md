@@ -2,6 +2,7 @@
 title: "RSA.EncryptValue and RSA.DecryptValue are obsolete"
 description: Learn about the .NET 8 breaking change in cryptography where RSA.EncryptValue and RSA.DecryptValue are marked obsolete.
 ms.date: 01/24/2023
+ms.topic: article
 ---
 # RSA.EncryptValue and RSA.DecryptValue are obsolete
 

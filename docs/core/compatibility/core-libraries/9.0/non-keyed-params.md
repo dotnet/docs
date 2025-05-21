@@ -2,6 +2,7 @@
 title: FromKeyedServicesAttribute no longer injects non-keyed parameter
 description: Learn about the .NET 9 breaking change in core .NET libraries (dependency injection) where FromKeyedServicesAttribute no longer injects a non-keyed parameter.
 ms.date: 09/05/2024
+ms.topic: article
 ---
 # FromKeyedServicesAttribute no longer injects non-keyed parameter
 

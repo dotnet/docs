@@ -2,6 +2,7 @@
 title: "Breaking change: .version file includes build version"
 description: Learn about a breaking change in the .NET SDK where the .version file now includes the specific build version.
 ms.date: 09/16/2022
+ms.topic: concept-article
 ---
 # .version file includes build version
 

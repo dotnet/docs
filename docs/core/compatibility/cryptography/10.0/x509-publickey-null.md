@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 10 Preview 3 where key par
 ms.date: 3/13/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45325
+ms.topic: concept-article
 ---
 
 # X509Certificate and PublicKey key parameters can be null

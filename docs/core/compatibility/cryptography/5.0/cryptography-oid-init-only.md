@@ -2,6 +2,7 @@
 title: "Breaking change: Cryptography.Oid is functionally init-only"
 description: Learn about the breaking change in .NET 5 where property setters on the Cryptography.Oid class now throw an exception if you attempt to change a value.
 ms.date: 08/16/2020
+ms.topic: concept-article
 ---
 # System.Security.Cryptography.Oid is functionally init-only
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Generate error for duplicate files in publish output"
 description: Learn about the breaking change in .NET 6 where the .NET SDK generates an error when files from different source paths would be copied to the same location in the publish output.
 ms.date: 11/15/2021
+ms.topic: concept-article
 ---
 # Generate error for duplicate files in publish output
 

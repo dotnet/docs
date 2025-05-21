@@ -2,6 +2,7 @@
 title: "Breaking change: InMemoryDirectoryInfo prepends rootDir to files"
 description: Learn about the .NET 9 breaking change in core .NET libraries where InMemoryDirectoryInfo prepends the root directory to its file paths.
 ms.date: 02/12/2024
+ms.topic: concept-article
 ---
 # InMemoryDirectoryInfo prepends rootDir to files
 

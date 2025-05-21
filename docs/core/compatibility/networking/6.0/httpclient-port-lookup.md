@@ -2,6 +2,7 @@
 title: "Breaking change: Port removed from SPN for Kerberos and Negotiate"
 description: Learn about the .NET 6 breaking change where service principal names don't include a port component for Kerberos and Negotiate authentication.
 ms.date: 10/21/2021
+ms.topic: concept-article
 ---
 # Port removed from SPN for Kerberos and Negotiate
 

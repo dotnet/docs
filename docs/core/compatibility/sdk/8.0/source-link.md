@@ -2,6 +2,7 @@
 title: "Breaking change: Source Link included in the .NET SDK"
 description: Learn about a breaking change in the .NET 8 SDK where Source Link is included, and commit information is included in InformationalVersion.
 ms.date: 11/08/2023
+ms.topic: concept-article
 ---
 # Source Link included in the .NET SDK
 

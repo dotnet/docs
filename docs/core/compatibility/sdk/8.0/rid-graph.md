@@ -2,6 +2,7 @@
 title: "Breaking change: .NET SDK uses a smaller RID graph"
 description: Learn about a breaking change in the .NET 8 SDK where the SDK uses a smaller, portable RID graph for projects that target .NET 8 or later.
 ms.date: 04/01/2024
+ms.topic: concept-article
 ---
 # .NET SDK uses a smaller RID graph
 

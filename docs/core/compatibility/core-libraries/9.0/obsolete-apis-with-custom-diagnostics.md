@@ -3,6 +3,7 @@ title: "Breaking change: .NET 9 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the APIs that have been marked as obsolete in .NET 9 with a custom diagnostic ID.
 ms.date: 11/06/2024
+ms.topic: concept-article
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 9)
 

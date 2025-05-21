@@ -2,6 +2,7 @@
 title: "Breaking change: Trimming may not be used with .NET Standard or .NET Framework"
 description: Learn about a breaking change in the .NET 8 SDK where trimming settings produce new warnings or errors in .NET Standard or .NET Framework projects.
 ms.date: 08/21/2023
+ms.topic: concept-article
 ---
 # Trimming may not be used with .NET Standard or .NET Framework
 

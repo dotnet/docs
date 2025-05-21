@@ -2,6 +2,7 @@
 title: "Breaking change: New TimeSpan.From*() overloads that take integers"
 description: Learn about the .NET 9 breaking change in core .NET libraries where new TimeSpan.From*() overloads were introduced that take integer arguments.
 ms.date: 10/03/2024
+ms.topic: concept-article
 ---
 # New TimeSpan.From*() overloads that take integers
 

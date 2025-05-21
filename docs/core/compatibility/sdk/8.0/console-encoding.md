@@ -2,6 +2,7 @@
 title: "Breaking change: CLI console output uses UTF-8"
 description: Learn about a breaking change in the .NET 8 SDK where the encoding for console input and output is now UTF-8.
 ms.date: 04/04/2023
+ms.topic: concept-article
 ---
 # CLI console output uses UTF-8
 

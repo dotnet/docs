@@ -2,6 +2,7 @@
 title: "Floating point-to-integer conversions are saturating"
 description: Learn about the breaking change in .NET 9 where floating point-to-integer conversions have saturating behavior.
 ms.date: 09/03/2024
+ms.topic: concept-article
 ---
 # Floating point-to-integer conversions are saturating
 

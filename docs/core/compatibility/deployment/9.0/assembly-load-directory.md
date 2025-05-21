@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 9 where the assembly load 
 ms.date: 4/3/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45584
+ms.topic: concept-article
 ---
 
 # Assembly load directory resolves through symbolic links on Windows

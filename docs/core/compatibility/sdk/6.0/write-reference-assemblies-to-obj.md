@@ -2,6 +2,7 @@
 title: "Breaking change: Write reference assemblies to IntermediateOutputPath"
 description: Learn about the breaking change in .NET 6 where reference assemblies are written to the IntermediateOutputPath by default.
 ms.date: 07/13/2021
+ms.topic: concept-article
 ---
 # Write reference assemblies to intermediate output
 

@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 9 where certain APIs were 
 ms.date: 3/11/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45186
+ms.topic: concept-article
 ---
 
 # APIs Removed from System.Security.Cryptography.Pkcs netstandard2.0

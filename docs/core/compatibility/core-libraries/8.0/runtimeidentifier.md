@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: RuntimeIdentifier returns platform for which the runtime was built"
 description: Learn about the .NET 8 breaking change in core .NET libraries where RuntimeInformation.RuntimeIdentifier returns the platform for which the runtime was built.
 ms.date: 09/06/2023
+ms.topic: article
 ---
 # RuntimeIdentifier returns platform for which the runtime was built
 

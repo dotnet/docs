@@ -2,6 +2,7 @@
 title: "Breaking change: Use WindowsSdkPackageVersion to override Windows SDK version"
 description: Learn about the breaking change in .NET 5 where the WindowsSdkPackageVersion property replaces the FrameworkReference item for overriding the version of the Windows SDK targeting package.
 ms.date: 08/04/2021
+ms.topic: concept-article
 ---
 # FrameworkReference replaced with WindowsSdkPackageVersion for Windows SDK
 

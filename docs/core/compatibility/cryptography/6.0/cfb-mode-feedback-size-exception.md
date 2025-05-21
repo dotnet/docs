@@ -2,6 +2,7 @@
 title: "Breaking change: CreateEncryptor methods throw exception for incorrect feedback size"
 description: Learn about the breaking change in .NET 6 where the `CreateEncryptor` and `CreateDecryptor` methods for `AesCng` and `TripleDESCng` throw an exception for an incorrect feedback size when used with a persisted key for CFB mode.
 ms.date: 10/01/2021
+ms.topic: concept-article
 ---
 # CreateEncryptor methods throw exception for incorrect feedback size
 

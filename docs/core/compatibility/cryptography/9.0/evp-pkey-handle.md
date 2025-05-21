@@ -2,6 +2,7 @@
 title: "Breaking change: SafeEvpPKeyHandle.DuplicateHandle up-refs the handle"
 description: Learn about the .NET 9 breaking change in cryptography where SafeEvpPKeyHandle.DuplicateHandle now increments the reference count of the EVP_PKEY handle instead of creating a new instance.
 ms.date: 08/05/2024
+ms.topic: concept-article
 ---
 # SafeEvpPKeyHandle.DuplicateHandle up-refs the handle
 

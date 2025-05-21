@@ -2,6 +2,7 @@
 title: "Breaking change: Windows private key lifetime simplified"
 description: Learn about the .NET 9 breaking change in cryptography where the lifetime of a Windows private key has been simplified.
 ms.date: 10/04/2024
+ms.topic: concept-article
 ---
 # Windows private key lifetime simplified
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Optional parameter on UpdateBackground"
 description: Learn about the .NET 7 breaking change in .NET MAUI where an optional parameter was added to the UpdateBackground method.
 ms.date: 11/14/2022
+ms.topic: concept-article
 ---
 # New UpdateBackground parameter
 

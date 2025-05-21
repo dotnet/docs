@@ -2,6 +2,7 @@
 title: "Breaking change: String.Trim*(params ReadOnlySpan<char>) overloads removed"
 description: Learn about the breaking change in core .NET libraries where the String.Trim*(params ReadOnlySpan<char>) methods have been removed due to potential behavioral changes.
 ms.date: 11/5/2024
+ms.topic: concept-article
 ---
 
 # String.Trim*(params ReadOnlySpan\<char>) overloads removed

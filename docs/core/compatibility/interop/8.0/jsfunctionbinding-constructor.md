@@ -2,6 +2,7 @@
 title: "Breaking change: JSFunctionBinding implicit public default constructor removed"
 description: Learn about the breaking change in interop in .NET 8 where the implicit public default constructor for System.Runtime.InteropServices.JavaScript.JSFunctionBinding was removed.
 ms.date: 11/02/2023
+ms.topic: concept-article
 ---
 # JSFunctionBinding implicit public default constructor removed
 

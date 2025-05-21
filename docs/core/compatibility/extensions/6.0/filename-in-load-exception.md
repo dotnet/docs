@@ -2,6 +2,7 @@
 title: "Breaking change: FileConfigurationProvider.Load throws InvalidDataException"
 description: Learn about the .NET 6 breaking change in .NET extensions where Load can throw an InvalidDataException with the file path that failed to load.
 ms.date: 11/05/2021
+ms.topic: concept-article
 ---
 # FileConfigurationProvider.Load throws InvalidDataException
 

@@ -2,6 +2,7 @@
 title: "Breaking change: All assemblies trimmed by default"
 description: Learn about the .NET 7 breaking change in deployment where all assemblies in a console app are trimmed by default.
 ms.date: 07/28/2022
+ms.topic: concept-article
 ---
 # All assemblies trimmed by default
 

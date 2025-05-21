@@ -2,6 +2,7 @@
 title: "Breaking change: Casting RCW to InterfaceIsIInspectable throws exception"
 description: Learn about the interop breaking change in .NET 5 where casting an RCW to an InterfaceIsIInspectable interface throws a PlatformNotSupportedException.
 ms.date: 09/13/2020
+ms.topic: concept-article
 ---
 # Casting RCW to an `InterfaceIsIInspectable` interface throws PlatformNotSupportedException
 

@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: FileStream writes when pipe is closed"
 description: Learn about the .NET 8 breaking change in core .NET libraries where an exception is thrown if you write to a FileStream whose underlying pipe is closed.
 ms.date: 01/27/2023
+ms.topic: article
 ---
 # FileStream writes when pipe is closed
 

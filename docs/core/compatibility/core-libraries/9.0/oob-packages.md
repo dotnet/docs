@@ -4,6 +4,7 @@ description: Learn about the breaking change in core .NET libraries where update
 ms.date: 12/4/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43564
+ms.topic: article
 ---
 
 # New version of some OOB packages

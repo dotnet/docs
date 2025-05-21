@@ -2,6 +2,7 @@
 title: "Breaking change: WinForms and WPF apps use Microsoft.NET.Sdk"
 description: Learn about the breaking change in .NET 5 where Windows Forms and Windows Presentation Framework apps now use the .NET SDK instead of the .NET Core WinForms and WPF SDK.
 ms.date: 09/18/2020
+ms.topic: concept-article
 ---
 # WinForms and WPF apps use Microsoft.NET.Sdk
 

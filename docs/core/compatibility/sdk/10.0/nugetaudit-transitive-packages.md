@@ -2,6 +2,7 @@
 title: "Breaking change: 'dotnet restore' audits transitive packages"
 description: Learn about a breaking change in the .NET 10 SDK where 'dotnet restore' also produces security vulnerability warnings for transitive packages by default.
 ms.date: 03/28/2025
+ms.topic: concept-article
 ---
 # 'dotnet restore' audits transitive packages
 

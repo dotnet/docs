@@ -2,6 +2,7 @@
 title: "Breaking change: BigInteger maximum length"
 description: Learn about the .NET 9 breaking change in core .NET libraries where a maximum length for BigInteger is enforced.
 ms.date: 08/06/2024
+ms.topic: concept-article
 ---
 # BigInteger maximum length
 

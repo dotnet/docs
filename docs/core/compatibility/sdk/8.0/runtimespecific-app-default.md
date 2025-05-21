@@ -2,6 +2,7 @@
 title: "Breaking change: Runtime-specific apps no longer self-contained"
 description: Learn about a breaking change in the .NET 8 SDK where apps that specify a runtime identifier are no longer self-contained by default.
 ms.date: 06/05/2023
+ms.topic: concept-article
 ---
 # Runtime-specific apps no longer self-contained
 

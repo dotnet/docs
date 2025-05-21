@@ -2,6 +2,7 @@
 title: "Breaking change: Default FeedbackSize value for instances created by TripleDES.Create changed"
 description: Learn about the breaking change in .NET 5 where the default value for the FeedbackSize property on the TripleDES instance returned from TripleDES.Create() has changed from 64 to 8.
 ms.date: 10/16/2020
+ms.topic: concept-article
 ---
 # Default FeedbackSize value for instances created by TripleDES.Create changed
 

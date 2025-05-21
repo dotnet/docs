@@ -4,6 +4,7 @@ description: "Learn about the breaking change in MSBuild 17.14 where custom cult
 ms.date: 3/26/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45501
+ms.topic: how-to
 ---
 
 # MSBuild custom culture resource handling

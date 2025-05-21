@@ -2,6 +2,7 @@
 title: "Breaking change: Option -p for 'dotnet run' deprecated"
 description: Learn about the breaking change in .NET 6 where the '-p' option is deprecated for 'dotnet run'.
 ms.date: 07/13/2021
+ms.topic: concept-article
 ---
 # `-p` option for `dotnet run` is deprecated
 

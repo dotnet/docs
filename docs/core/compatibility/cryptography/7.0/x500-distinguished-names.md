@@ -3,6 +3,7 @@ title: "Breaking change: X500DistinguishedName parsing of friendly names"
 description: Learn about the .NET 7 breaking change in cryptography where X500DistinguishedName parsing doesn't permit friendly names where OIDs are expected on MacOS and Linux.
 ms.date: 05/19/2022
 ms.custom: linux-related-content
+ms.topic: concept-article
 ---
 # X500DistinguishedName parsing of friendly names
 

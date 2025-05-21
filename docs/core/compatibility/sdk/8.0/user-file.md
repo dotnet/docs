@@ -2,6 +2,7 @@
 title: "Breaking change: .user file imported in outer builds"
 description: Learn about the breaking change in the .NET 8 SDK where the .user configuration file is now imported in outer builds.
 ms.date: 02/09/2024
+ms.topic: concept-article
 ---
 # .user file imported in outer builds
 

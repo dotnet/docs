@@ -2,6 +2,7 @@
 title: "Breaking change: MSBuild respects DOTNET_CLI_UI_LANGUAGE"
 description: Learn about a breaking change in the .NET 8 SDK where MSBuild now respects the 'DOTNET_CLI_UI_LANGUAGE' environment variable.
 ms.date: 06/07/2023
+ms.topic: concept-article
 ---
 # MSBuild respects DOTNET_CLI_UI_LANGUAGE
 

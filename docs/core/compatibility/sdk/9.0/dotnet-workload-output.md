@@ -2,6 +2,7 @@
 title: "Breaking change: `dotnet workload` commands output change"
 description: Learn about a breaking change in the .NET 9 SDK where the `dotnet workload` commands output only the JSON body.
 ms.date: 01/09/2024
+ms.topic: concept-article
 ---
 # `dotnet workload` commands output change
 

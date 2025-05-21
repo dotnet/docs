@@ -4,6 +4,7 @@ description: "Learn about the breaking change in the .NET 9 SDK where a new defa
 ms.date: 12/5/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43692
+ms.topic: how-to
 ---
 
 # Default RID used when targeting .NET Framework

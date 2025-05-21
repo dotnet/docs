@@ -2,6 +2,7 @@
 title: "Breaking change: SDK no longer changes console encoding after completion"
 description: Learn about a breaking change where the .NET 8 SDK no longer changes the console encoding after running a command.
 ms.date: 04/04/2023
+ms.topic: concept-article
 ---
 # Console encoding doesn't remain UTF-8 after completion
 

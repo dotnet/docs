@@ -2,6 +2,7 @@
 title: "Breaking change: TwoDigitYearMax default is 2049"
 description: Learn about the globalization breaking change in .NET 8 where the default value of the TwoDigitYearMax property for Gregorian calendars has changed from 2029 to 2049.
 ms.date: 01/25/2023
+ms.topic: concept-article
 ---
 # TwoDigitYearMax default is 2049
 

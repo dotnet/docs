@@ -2,6 +2,7 @@
 title: "Breaking change: DirectoryServices package no longer references System.Security.Permissions"
 description: Learn about the .NET 8 breaking change in .NET extensions where the System.DirectoryServices package no longer references the System.Security.Permissions package.
 ms.date: 08/22/2023
+ms.topic: concept-article
 ---
 # DirectoryServices package no longer references System.Security.Permissions
 

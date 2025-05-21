@@ -2,6 +2,7 @@
 title: "Breaking change: Containers default to use the 'latest' tag"
 description: Learn about the breaking change in containers where .NET SDK-built containers default to use the 'latest' tag instead of '$(Version)'.
 ms.date: 07/27/2023
+ms.topic: concept-article
 ---
 # Containers default to use the 'latest' tag
 

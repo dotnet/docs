@@ -4,6 +4,7 @@ description: "Learn about the breaking change where the MSBUILDCUSTOMBUILDEVENTW
 ms.date: 2/25/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44998
+ms.topic: concept-article
 ---
 
 # MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed

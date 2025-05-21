@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 10 Preview 3 where the --i
 ms.date: 4/3/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45548
+ms.topic: concept-article
 ---
 
 # .NET CLI `--interactive` defaults to `true` in user scenarios

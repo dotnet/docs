@@ -2,6 +2,7 @@
 title: "Breaking change: Dynamic X509ChainPolicy verification time"
 description: Learn about the .NET 7 breaking change in cryptography where the X509ChainPolicy verification time is the time when Build is invoked.
 ms.date: 07/20/2022
+ms.topic: concept-article
 ---
 # Dynamic X509ChainPolicy verification time
 

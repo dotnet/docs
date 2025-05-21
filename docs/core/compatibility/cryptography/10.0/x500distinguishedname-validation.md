@@ -3,6 +3,7 @@ title: "Breaking change: X500DistinguishedName validation is stricter"
 description: Learn about the .NET 10 breaking change in cryptography where X500DistinguishedName validation is stricter.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 # X500DistinguishedName validation is stricter
 

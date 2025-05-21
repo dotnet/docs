@@ -2,6 +2,7 @@
 title: "Breaking change: PublishDepsFilePath behavior change"
 description: Learn about the breaking change in .NET 5 where the PublishDepsFilePath MSBuild property is empty for single-file applications.
 ms.date: 09/17/2020
+ms.topic: concept-article
 ---
 # PublishDepsFilePath behavior change
 

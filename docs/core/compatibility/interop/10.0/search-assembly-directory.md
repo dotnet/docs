@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 10 Preview 5 where specify
 ms.date: 5/9/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45911
+ms.topic: concept-article
 ---
 
 # Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory

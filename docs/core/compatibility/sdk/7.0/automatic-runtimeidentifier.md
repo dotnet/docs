@@ -2,6 +2,7 @@
 title: "Breaking change: Automatic RuntimeIdentifier"
 description: Learn about a breaking change in the .NET 7 SDK where a RuntimeIdentifier is automatically added to projects that use certain publish properties.
 ms.date: 12/05/2022
+ms.topic: concept-article
 ---
 # Automatic RuntimeIdentifier for certain projects
 

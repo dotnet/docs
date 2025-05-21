@@ -2,6 +2,7 @@
 title: "Breaking change: HttpListenerRequest.UserAgent is nullable"
 description: Learn about the .NET 9 breaking change in networking where the HttpListenerRequest.UserAgent property is annotated as being nullable.
 ms.date: 01/18/2024
+ms.topic: concept-article
 ---
 # HttpListenerRequest.UserAgent is nullable
 

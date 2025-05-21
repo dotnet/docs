@@ -3,6 +3,7 @@ title: "Breaking change: Environment variable renamed to DOTNET_ICU_VERSION_OVER
 description: Learn about the .NET 10 breaking change in globalization where the environment variable CLR_ICU_VERSION_OVERRIDE was renamed to DOTNET_ICU_VERSION_OVERRIDE.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE

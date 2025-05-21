@@ -2,6 +2,7 @@
 title: "ZipArchiveEntry names and comments respect UTF8 flag"
 description: Learn about the .NET 9 breaking change in core .NET libraries where ZipArchiveEntry names and comments now respect the UTF8 flag when decoding.
 ms.date: 09/04/2024
+ms.topic: article
 ---
 # ZipArchiveEntry names and comments respect UTF8 flag
 

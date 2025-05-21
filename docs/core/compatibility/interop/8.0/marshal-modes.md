@@ -2,6 +2,7 @@
 title: "Breaking change: Custom marshallers require additional members"
 description: Learn about the breaking change in interop in .NET 8 where custom marshallers with MarshalMode.ElementIn or MarshalMode.ElementOut now must have both managed-to-unmanaged and unmanaged-to-managed shapes.
 ms.date: 09/06/2023
+ms.topic: concept-article
 ---
 # Custom marshallers require additional members
 

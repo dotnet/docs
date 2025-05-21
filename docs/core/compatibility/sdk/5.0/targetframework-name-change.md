@@ -2,6 +2,7 @@
 title: "Breaking change: TargetFramework change from netcoreapp to net"
 description: Learn about the breaking change in .NET 5 where the value for the MSBuild TargetFramework property changed from netcoreapp3.1 to net5.0.
 ms.date: 10/17/2020
+ms.topic: concept-article
 ---
 # TargetFramework change from netcoreapp to net
 

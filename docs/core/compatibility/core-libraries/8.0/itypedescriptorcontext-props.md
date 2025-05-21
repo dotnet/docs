@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: ITypeDescriptorContext nullable annotations"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the nullable annotations on three ITypeDescriptorContext properties have changed.
 ms.date: 01/31/2023
+ms.topic: article
 ---
 # ITypeDescriptorContext nullable annotations
 

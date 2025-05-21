@@ -2,6 +2,7 @@
 title: "Breaking change: Constructors accept base interface instead of concrete type"
 description: Learn about the .NET 7 breaking change in .NET MAUI where the `MauiWebChromeClient` and `MauiWebViewNavigationDelegate` constructors accept the base interface instead of a specific concrete type.
 ms.date: 11/14/2022
+ms.topic: concept-article
 ---
 # Constructors accept base interface instead of concrete type
 

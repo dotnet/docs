@@ -2,6 +2,7 @@
 title: "Breaking change: System.Formats.Cbor DateTimeOffset formatting change"
 description: Learn about the .NET 8 breaking change in .NET extensions where System.Formats.Cbor always formats and parses DateTimeOffset values using the invariant culture.
 ms.date: 11/02/2023
+ms.topic: concept-article
 ---
 # System.Formats.Cbor DateTimeOffset formatting change
 

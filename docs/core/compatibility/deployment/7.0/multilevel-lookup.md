@@ -2,6 +2,7 @@
 title: "Breaking change: Multi-level lookup is disabled"
 description: Learn about the .NET 7 breaking change in deployment where multi-level lookup is disabled.
 ms.date: 04/08/2022
+ms.topic: concept-article
 ---
 # Multi-level lookup is disabled
 

@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Backslash mapping in Unix file paths"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the CoreCLR native runtime no longer maps backslashes to forward slashes in file paths on Unix.
 ms.date: 01/30/2023
+ms.topic: article
 ---
 # Backslash mapping in Unix file paths
 

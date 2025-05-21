@@ -2,6 +2,7 @@
 title: "Breaking change: 'dotnet watch' incompatible with Hot Reload for old frameworks"
 description: Learn about a breaking change in the .NET 9 SDK where 'dotnet watch' requires disabling Hot Reload for projects targeting .NET 5 or earlier.
 ms.date: 11/08/2024
+ms.topic: concept-article
 ---
 # 'dotnet watch' incompatible with Hot Reload for old frameworks
 

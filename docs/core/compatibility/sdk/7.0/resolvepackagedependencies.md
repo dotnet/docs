@@ -2,6 +2,7 @@
 title: "Breaking change: ResolvePackageDependencies no longer called"
 description: Learn about a breaking change in SDK for .NET 7 where the .NET SDK no longer calls the ResolvePackageDependencies target to get package information.
 ms.date: 07/14/2023
+ms.topic: concept-article
 ---
 # SDK no longer calls ResolvePackageDependencies
 

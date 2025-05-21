@@ -2,6 +2,7 @@
 title: "Breaking change: ScrollToRequest property renamed"
 description: Learn about the .NET 7 breaking change in .NET MAUI where the property for horizontal offset was renamed.
 ms.date: 11/14/2022
+ms.topic: concept-article
 ---
 # ScrollToRequest property renamed
 

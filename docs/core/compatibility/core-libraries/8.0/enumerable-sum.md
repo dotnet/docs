@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Enumerable.Sum throws new OverflowException for some inputs"
 description: Learn about the .NET 8 breaking change in core .NET libraries where Enumerable.Sum can throw new OverflowException exceptions for certain inputs.
 ms.date: 11/08/2023
+ms.topic: article
 ---
 # Enumerable.Sum throws new OverflowException for some inputs
 

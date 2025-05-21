@@ -2,6 +2,7 @@
 title: "Breaking change: WebRequest, WebClient, and ServicePoint are obsolete"
 description: Learn about the breaking change in .NET 6 where WebRequest, WebClient, and ServicePoint are deprecated in favor of HttpClient.
 ms.date: 04/26/2021
+ms.topic: concept-article
 ---
 # WebRequest, WebClient, and ServicePoint are obsolete
 

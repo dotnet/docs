@@ -2,6 +2,7 @@
 title: "Solution-level `--output` option no longer valid for build-related commands"
 description: Learn about a breaking change in the .NET 7.0.200 SDK where using the `--output` option is no longer valid when using a solution file
 ms.date: 02/15/2023
+ms.topic: article
 ---
 # Solution-level `--output` option no longer valid for build-related commands
 

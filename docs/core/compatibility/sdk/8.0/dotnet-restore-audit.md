@@ -2,6 +2,7 @@
 title: "Breaking change: 'dotnet restore' produces security vulnerability warnings"
 description: Learn about a breaking change in the .NET 8 SDK where 'dotnet restore' produces security vulnerability warnings by default.
 ms.date: 08/15/2023
+ms.topic: concept-article
 ---
 # 'dotnet restore' produces security vulnerability warnings
 

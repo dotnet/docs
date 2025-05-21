@@ -3,6 +3,7 @@ title: "Breaking change: Setting DebugSymbols to false disables PDB generation"
 description: Learn about the breaking change in the .NET SDK where setting DebugSymbols to false disables PDB generation.
 no-loc: [DebugSymbols]
 ms.date: 07/30/2024
+ms.topic: concept-article
 ---
 # Setting DebugSymbols to false disables PDB generation
 

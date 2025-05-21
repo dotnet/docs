@@ -2,6 +2,7 @@
 title: "Breaking change: Globalization APIs use ICU libraries on Windows 10"
 description: Learn about the globalization breaking change in .NET 5 where ICU libraries are used for globalization functionality instead of NLS on Windows 10.
 ms.date: 02/15/2022
+ms.topic: concept-article
 ---
 # Globalization APIs use ICU libraries on Windows 10
 

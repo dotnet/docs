@@ -2,6 +2,7 @@
 title: "Breaking change: Binding config to dictionary extends values"
 description: Learn about the .NET 7 breaking change in .NET extensions where binding a configuration to a dictionary extends collection values instead of replacing the entire collection for a key.
 ms.date: 08/02/2023
+ms.topic: concept-article
 ---
 # Binding config to dictionary extends values
 

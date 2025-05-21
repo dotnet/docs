@@ -2,6 +2,7 @@
 title: "Breaking change: Built-in support for WinRT is removed from .NET"
 description: Learn about the interop breaking change in .NET 5 where built-in support for WinRT is removed from .NET.
 ms.date: 03/29/2022
+ms.topic: concept-article
 ---
 # Built-in support for WinRT is removed from .NET
 

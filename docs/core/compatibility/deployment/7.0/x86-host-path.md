@@ -2,6 +2,7 @@
 title: "Breaking change: x86 host path on 64-bit Windows"
 description: Learn about the breaking change in deployment where the 32-bit .NET host isn't added to PATH on 64-bit Windows platforms.
 ms.date: 06/22/2022
+ms.topic: concept-article
 ---
 # x86 host path on 64-bit Windows
 

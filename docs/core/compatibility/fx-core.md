@@ -3,6 +3,7 @@ title: Breaking changes - .NET Framework to .NET Core
 titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core 1.0 - 3.1.
 ms.date: 05/01/2024
+ms.topic: concept-article
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 

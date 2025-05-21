@@ -2,6 +2,7 @@
 title: "Breaking change: Globalization APIs use ICU libraries on Windows Server 2019"
 description: Learn about the globalization breaking change in .NET 7 where ICU libraries are used for globalization functionality instead of NLS on Windows Server.
 ms.date: 09/01/2022
+ms.topic: concept-article
 ---
 # Globalization APIs use ICU libraries on Windows Server 2019
 

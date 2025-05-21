@@ -2,6 +2,7 @@
 title: "Breaking change: RuntimeHelpers.GetSubArray returns different type"
 description: Learn about the .NET 9 breaking change in core .NET libraries where the type of array instance returned by RuntimeHelpers.GetSubArray matches the source array.
 ms.date: 01/18/2024
+ms.topic: concept-article
 ---
 # RuntimeHelpers.GetSubArray returns different type
 

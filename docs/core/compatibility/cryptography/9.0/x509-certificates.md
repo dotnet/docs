@@ -2,6 +2,7 @@
 title: "Some X509Certificate2 and X509Certificate constructors are obsolete"
 description: Learn about the .NET 9 breaking change in cryptography where X509Certificate2 and X509Certificate constructors for binary and file content are obsolete.
 ms.date: 08/01/2024
+ms.topic: article
 ---
 # Some X509Certificate2 and X509Certificate constructors are obsolete
 

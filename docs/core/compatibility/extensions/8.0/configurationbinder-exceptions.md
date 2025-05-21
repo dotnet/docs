@@ -2,6 +2,7 @@
 title: "Breaking change: ConfigurationBinder throws for mismatched value"
 description: Learn about the .NET 8 breaking change in .NET extensions where ConfigurationBinder throws an exception if ErrorOnUnknownConfiguration is true and a config value doesn't match the model value.
 ms.date: 01/27/2023
+ms.topic: concept-article
 ---
 # ConfigurationBinder throws for mismatched value
 

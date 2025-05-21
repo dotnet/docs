@@ -2,6 +2,7 @@
 title: "Breaking change: Socket.End methods don't throw ObjectDisposedException"
 description: Learn about the .NET 7 breaking change in networking where Socket.End methods no longer throw ObjectDisposedException when the socket is closed.
 ms.date: 09/14/2022
+ms.topic: concept-article
 ---
 # Socket.End methods don't throw ObjectDisposedException
 

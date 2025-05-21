@@ -2,6 +2,7 @@
 title: Networking breaking changes
 description: Lists the breaking changes in networking in .NET Core 2.0 and 3.0.
 ms.date: 05/05/2020
+ms.topic: concept-article
 ---
 # Networking breaking changes in .NET Core 2.0 and 3.0
 

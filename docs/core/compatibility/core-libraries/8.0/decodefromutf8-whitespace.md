@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Base64.DecodeFromUtf8 methods ignore whitespace"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the Base64.DecodeFromUtf8 and Base64.DecodeFromUtf8InPlace methods ignore whitespace in the input.
 ms.date: 06/08/2023
+ms.topic: article
 ---
 # Base64.DecodeFromUtf8 methods ignore whitespace
 

@@ -3,6 +3,7 @@ title: "Breaking change: Custom ping payloads on Linux"
 description: Learn about the .NET 7 breaking change in networking where an exception is thrown on non-privileged Linux processes when a custom payload is passed to the Ping method.
 ms.date: 03/23/2022
 ms.custom: linux-related-content
+ms.topic: concept-article
 ---
 # Custom ping payloads on Linux
 

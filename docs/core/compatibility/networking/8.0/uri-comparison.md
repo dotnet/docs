@@ -2,6 +2,7 @@
 title: "Breaking change: User info in `mailto:` URIs is compared"
 description: Learn about the .NET 8 breaking change in networking where URI comparison now considers user info for `mailto:` URIs.
 ms.date: 10/03/2024
+ms.topic: concept-article
 ---
 # User info in `mailto:` URIs is compared
 

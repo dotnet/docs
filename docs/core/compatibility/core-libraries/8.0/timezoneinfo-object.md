@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: FindSystemTimeZoneById doesn't return new object"
 description: Learn about the .NET 8 breaking change in core .NET libraries where TimeZoneInfo.FindSystemTimeZoneById doesn't return a new TimeZoneInfo object.
 ms.date: 03/06/2024
+ms.topic: article
 ---
 # FindSystemTimeZoneById doesn't return new object
 

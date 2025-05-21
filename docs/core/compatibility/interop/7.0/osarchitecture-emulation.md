@@ -2,6 +2,7 @@
 title: "Breaking change: RuntimeInformation.OSArchitecture under emulation"
 description: Learn about the breaking change in interop in .NET 7 where RuntimeInformation.OSArchitecture now returns the correct value under emulation.
 ms.date: 09/13/2022
+ms.topic: concept-article
 ---
 # RuntimeInformation.OSArchitecture under emulation
 

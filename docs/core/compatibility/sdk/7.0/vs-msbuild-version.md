@@ -2,6 +2,7 @@
 title: "Breaking change: Version requirements for .NET 7 SDK"
 description: Learn about the breaking change in the .NET 7 SDK where specific versions of Visual Studio and MSBuild are required.
 ms.date: 01/09/2023
+ms.topic: concept-article
 ---
 # Version requirements for .NET 7 SDK
 

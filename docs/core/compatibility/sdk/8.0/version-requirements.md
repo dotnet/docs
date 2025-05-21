@@ -2,6 +2,7 @@
 title: "Breaking change: Version requirements for .NET 8 SDK"
 description: Learn about the breaking change in the .NET 8 SDK where specific versions of Visual Studio and MSBuild are required.
 ms.date: 02/09/2024
+ms.topic: concept-article
 ---
 # Version requirements for .NET 8 SDK
 

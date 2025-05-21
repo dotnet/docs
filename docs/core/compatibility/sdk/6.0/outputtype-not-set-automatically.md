@@ -2,6 +2,7 @@
 title: "Breaking change: `OutputType` no longer automatically set to WinExe"
 description: Learn about the breaking change in .NET 6 where `OutputType` for WPF and Windows Forms projects is no longer automatically set to `WinExe`.
 ms.date: 08/17/2021
+ms.topic: concept-article
 ---
 # OutputType not changed from Exe to WinExe for Windows Forms and WPF projects
 

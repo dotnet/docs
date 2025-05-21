@@ -2,6 +2,7 @@
 title: "Breaking change: StripSymbols defaults to true"
 description: Learn about the breaking change in deployment where the default value for 'StripSymbols' is now 'true' for 'PublishAOT'.
 ms.date: 05/02/2023
+ms.topic: concept-article
 ---
 # StripSymbols defaults to true
 

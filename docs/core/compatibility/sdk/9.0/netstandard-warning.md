@@ -2,6 +2,7 @@
 title: "Breaking change: Warning emitted for .NET Standard 1.x targets"
 description: Learn about a breaking change in the .NET 9 SDK where the a build warning is produced if your project targets any .NET Standard version below 2.0.
 ms.date: 07/09/2024
+ms.topic: concept-article
 ---
 # Warning emitted for .NET Standard 1.x targets
 

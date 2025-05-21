@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 8 where Linux applications
 ms.date: 4/10/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45777
+ms.topic: concept-article
 ---
 
 # Linux native library resolution no longer uses `netcoredeps`

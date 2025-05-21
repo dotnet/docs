@@ -2,6 +2,7 @@
 title: MSBuild breaking changes
 description: Lists the breaking changes in MSBuild for .NET Core 2.1 - 3.1.
 ms.date: 02/22/2021
+ms.topic: article
 ---
 # MSBuild breaking changes in .NET Core 2.1 - 3.1
 

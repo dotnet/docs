@@ -2,6 +2,7 @@
 title: "Breaking change: No A/W suffix probing on non-Windows platforms"
 description: Learn about the interop breaking change in .NET 5 where suffixes are no longer added to function export names during probing for P/Invokes on non-Windows platforms.
 ms.date: 08/13/2020
+ms.topic: concept-article
 ---
 # No A/W suffix probing on non-Windows platforms
 

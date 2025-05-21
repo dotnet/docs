@@ -2,6 +2,7 @@
 title: "Breaking change: Default `Equals()` and `GetHashCode()` throw for types marked with `InlineArrayAttribute`"
 description: Learn about the .NET 9 breaking change in core .NET libraries where the default implementations of `Equals()` and `GetHashCode()` throw an exception for types marked with `InlineArrayAttribute`.
 ms.date: 07/10/2024
+ms.topic: concept-article
 ---
 # Default `Equals()` and `GetHashCode()` throw for types marked with `InlineArrayAttribute`
 

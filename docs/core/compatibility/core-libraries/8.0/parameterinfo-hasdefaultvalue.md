@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Method builders generate parameters with HasDefaultValue set to false"
 description: Learn about the .NET 8 breaking change in core .NET libraries where ConstructorBuilder and MethodBuilder now generate method parameters with HasDefaultValue set to false.
 ms.date: 08/22/2023
+ms.topic: article
 ---
 # Method builders generate parameters with HasDefaultValue set to false
 

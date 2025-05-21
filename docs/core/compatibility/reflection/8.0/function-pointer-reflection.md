@@ -2,6 +2,7 @@
 title: "Breaking change: IntPtr no longer used for function pointer types"
 description: Learn about a breaking change in .NET 8 SDK where System.Reflection uses a System.Type instance to represent a function pointer.
 ms.date: 03/17/2023
+ms.topic: concept-article
 ---
 # IntPtr no longer used for function pointer types
 

@@ -4,6 +4,7 @@ description: Learn about the breaking change in the .NET SDK where the CLI comma
 ms.date: 12/10/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43882
+ms.topic: article
 ---
 
 # `dotnet sln add` no longer allows invalid file names

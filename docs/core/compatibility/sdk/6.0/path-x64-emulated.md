@@ -2,6 +2,7 @@
 title: "Breaking change: Install location for x64 emulated on Arm64"
 description: Learn about the breaking change in .NET 6 where the installation location for the x64 version of .NET when installed on Arm64 hardware has changed.
 ms.date: 10/12/2021
+ms.topic: install-set-up-deploy
 ---
 # Install location for x64 emulated on Arm64
 

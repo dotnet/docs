@@ -2,6 +2,7 @@
 title: "Breaking change: Unicode category changed for some Latin-1 characters"
 description: Learn about the globalization breaking change in .NET 5 where Char methods now return the correct Unicode category for characters in the Latin-1 range.
 ms.date: 04/07/2020
+ms.topic: concept-article
 ---
 # Unicode category changed for some Latin-1 characters
 

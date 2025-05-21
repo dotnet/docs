@@ -2,6 +2,7 @@
 title: "Breaking change: Date and time converters honor culture argument"
 description: Learn about the globalization breaking change in .NET 8 where the type converters for date and time types use the argument-specified culture to format the date and time.
 ms.date: 05/03/2023
+ms.topic: how-to
 ---
 # Date and time converters honor culture argument
 

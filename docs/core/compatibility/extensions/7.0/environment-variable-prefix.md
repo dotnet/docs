@@ -2,6 +2,7 @@
 title: "Breaking change: Environment variable prefixes"
 description: Learn about the .NET 7 breaking change in .NET extensions where the comparison of normalized prefixes and environment variables has changed.
 ms.date: 10/12/2022
+ms.topic: concept-article
 ---
 # Environment variable prefixes
 

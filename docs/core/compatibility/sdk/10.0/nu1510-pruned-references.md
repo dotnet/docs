@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 10 where NU1510 is raised 
 ms.date: 3/25/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45462
+ms.topic: concept-article
 ---
 
 # NU1510 is raised for direct references pruned by NuGet

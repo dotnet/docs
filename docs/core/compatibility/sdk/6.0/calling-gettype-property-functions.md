@@ -2,6 +2,7 @@
 title: "Breaking change: MSBuild 17 doesn't support GetType()"
 description: Learn about the breaking change in the .NET 6 SDK where it's no longer supported to call GetType() within MSBuild property functions.
 ms.date: 09/13/2021
+ms.topic: concept-article
 ---
 # MSBuild no longer supports calling GetType()
 

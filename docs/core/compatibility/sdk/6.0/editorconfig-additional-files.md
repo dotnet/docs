@@ -2,6 +2,7 @@
 title: "Breaking change: EditorConfig files implicitly included"
 description: Learn about the breaking change in .NET 6 where .editorconfig files can no longer be AdditionalFiles items.
 ms.date: 11/17/2021
+ms.topic: concept-article
 ---
 # EditorConfig files implicitly included
 

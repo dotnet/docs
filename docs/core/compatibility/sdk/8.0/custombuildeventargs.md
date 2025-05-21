@@ -2,6 +2,7 @@
 title: "Breaking change: MSBuild custom derived build events deprecated"
 description: Learn about the breaking change in MSBuild where custom derived build events have been deprecated.
 ms.date: 09/05/2023
+ms.topic: concept-article
 ---
 # MSBuild custom derived build events deprecated
 

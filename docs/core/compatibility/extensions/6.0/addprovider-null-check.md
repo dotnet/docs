@@ -2,6 +2,7 @@
 title: "Breaking change: AddProvider validates provider isn't null"
 description: Learn about the .NET 6 breaking change in .NET extensions where AddProvider now validates that the provider argument is not null.
 ms.date: 11/05/2021
+ms.topic: concept-article
 ---
 # AddProvider checks for non-null provider
 

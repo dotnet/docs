@@ -2,6 +2,7 @@
 title: "Breaking change: AesGcm authentication tag size on macOS"
 description: Learn about the .NET 8 breaking change in cryptography where AesGcm on macOS only supports 16-byte (128-bit) authentication tags.
 ms.date: 01/24/2023
+ms.topic: concept-article
 ---
 # AesGcm authentication tag size on macOS
 

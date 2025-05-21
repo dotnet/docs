@@ -2,6 +2,7 @@
 title: "Breaking change: AllowRenegotiation default is false"
 description: Learn about the .NET 7 breaking change in networking where the default value of SslServerAuthenticationOptions.AllowRenegotiation has been changed to false.
 ms.date: 03/16/2022
+ms.topic: concept-article
 ---
 # AllowRenegotiation default is false
 

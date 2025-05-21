@@ -3,6 +3,7 @@ title: "Breaking change: Ambiguous overload resolution affecting StringValues im
 description: Learn about the .NET 9 breaking change in core .NET libraries where ambiguous overload resolution now throws error CS0121.
 ms.date: 02/24/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Ambiguous overload resolution affecting StringValues implicit operators

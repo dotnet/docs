@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: GetFolderPath behavior on Unix"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the behavior of Environment.GetFolderPath has changed on Unix.
 ms.date: 11/18/2022
+ms.topic: article
 ---
 # GetFolderPath behavior on Unix
 

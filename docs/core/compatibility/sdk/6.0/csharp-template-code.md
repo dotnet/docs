@@ -2,6 +2,7 @@
 title: "Breaking change: C# code in templates not supported by earlier versions"
 description: Learn about the breaking change in .NET 6 where project templates use new C# features that aren't available in previous versions.
 ms.date: 07/30/2021
+ms.topic: concept-article
 ---
 # C# code in templates not supported by earlier versions
 

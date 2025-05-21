@@ -2,6 +2,7 @@
 title: "Breaking change: Coerce call arguments according to ECMA-335"
 description: Learn about the breaking change in .NET 6 where call arguments are coerced according to ECMA-335.
 ms.date: 06/22/2021
+ms.topic: concept-article
 ---
 # Coerce call arguments according to ECMA-335
 

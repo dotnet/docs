@@ -2,6 +2,7 @@
 title: "Breaking change: C# overload resolution prefers `params` span-type overloads"
 description: Learn about the breaking change in .NET 9 where C# overload resolution prefers `params` span-type overloads, which can't be used in `Expression` lambdas.
 ms.date: 12/16/2024
+ms.topic: concept-article
 ---
 
 # C# overload resolution prefers `params` span-type overloads

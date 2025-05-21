@@ -2,6 +2,7 @@
 title: "Breaking change: Culture creation and case mapping in globalization-invariant mode"
 description: Learn about the globalization breaking change in .NET 6 where the creation of new cultures is restricted and case mapping support extends to all characters in globalization-invariant mode.
 ms.date: 07/23/2021
+ms.topic: how-to
 ---
 # Culture creation and case mapping in globalization-invariant mode
 

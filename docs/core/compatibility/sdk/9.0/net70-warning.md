@@ -2,6 +2,7 @@
 title: "Breaking change: Warning emitted when targeting net7.0"
 description: Learn about the breaking change in the .NET SDK where a warning is issued for apps that target net7.0, which is out of support.
 ms.date: 11/6/2024
+ms.topic: concept-article
 ---
 
 # Warning emitted when targeting net7.0

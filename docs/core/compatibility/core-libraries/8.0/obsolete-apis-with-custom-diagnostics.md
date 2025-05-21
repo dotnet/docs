@@ -3,6 +3,7 @@ title: "Breaking change: .NET 8 obsoletions with custom IDs"
 titleSuffix: ""
 description: Learn about the .NET 8 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 10/09/2023
+ms.topic: concept-article
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 8)
 

@@ -2,6 +2,7 @@
 title: "Breaking change: NETCOREAPP3_1 preprocessor symbol is not defined when targeting .NET 5"
 description: Learn about the breaking change in .NET 5 where projects no longer define preprocessor symbols for earlier versions.
 ms.date: 09/17/2020
+ms.topic: concept-article
 ---
 # NETCOREAPP3_1 preprocessor symbol is not defined when targeting .NET 5
 

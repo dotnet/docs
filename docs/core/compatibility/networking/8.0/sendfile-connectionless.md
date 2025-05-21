@@ -2,6 +2,7 @@
 title: "Breaking change: SendFile throws NotSupportedException for connectionless sockets"
 description: Learn about the .NET 8 breaking change in networking where the SendFile, SendFileAsync, and EndSendFile methods now throw a NotSupportedException for connectionless sockets on all platforms.
 ms.date: 11/03/2023
+ms.topic: concept-article
 ---
 # SendFile throws NotSupportedException for connectionless sockets
 

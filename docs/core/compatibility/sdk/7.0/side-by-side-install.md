@@ -2,6 +2,7 @@
 title: "Breaking change: Side-by-side SDK installations"
 description: Learn about a breaking change in the .NET 7 SDK where having a preview version of the SDK installed alongside the GA version causes projects with certain workloads to fail to build, load, or run.
 ms.date: 12/05/2022
+ms.topic: concept-article
 ---
 # Side-by-side SDK installations
 

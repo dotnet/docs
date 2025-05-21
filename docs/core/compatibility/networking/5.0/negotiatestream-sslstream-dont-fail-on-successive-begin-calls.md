@@ -2,6 +2,7 @@
 title: "Breaking change: NegotiateStream and SslStream allow successive Begin operations"
 description: Learn about the breaking change in .NET 5 where error cases on security streams are handled differently, and successive calls to BeginAuthenticateAsServer or BeginAuthenticateAsClient may no longer fail.
 ms.date: 10/18/2020
+ms.topic: concept-article
 ---
 # NegotiateStream and SslStream allow successive Begin operations
 

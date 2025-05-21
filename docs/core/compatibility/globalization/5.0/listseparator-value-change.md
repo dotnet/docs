@@ -2,6 +2,7 @@
 title: "Breaking change: TextInfo.ListSeparator value change"
 description: Learn about the .NET 5 breaking change where the default value of TextInfo.ListSeparator was changed between versions 5.0 and 5.0.1.
 ms.date: 12/10/2020
+ms.topic: concept-article
 ---
 # TextInfo.ListSeparator values changed
 

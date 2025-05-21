@@ -2,6 +2,7 @@
 title: "Breaking change: Error generated when executable references executable"
 description: Learn about the breaking change in .NET 5 where compile-time errors are generated when an executable references an executable whose SelfContained value is different.
 ms.date: 05/26/2021
+ms.topic: concept-article
 ---
 # Error generated when executable project references mismatched executable
 

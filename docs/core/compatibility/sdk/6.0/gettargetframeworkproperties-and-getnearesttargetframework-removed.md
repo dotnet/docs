@@ -2,6 +2,7 @@
 title: "Breaking change: GetTargetFrameworkProperties and GetNearestTargetFramework removed"
 description: Learn about the breaking change in .NET 6 where the GetTargetFrameworkProperties target and the GetNearestTargetFramework task have been removed from the MSBuild ProjectReference protocol.
 ms.date: 05/19/2021
+ms.topic: concept-article
 ---
 # GetTargetFrameworkProperties and GetNearestTargetFramework removed from ProjectReference protocol
 

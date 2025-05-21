@@ -2,6 +2,7 @@
 title: "Breaking change: Drive's current directory path enumeration"
 description: Learn about the .NET 8 breaking change in core .NET libraries where files are enumerated without a separator after the path when the path is the drive's current directory.
 ms.date: 02/09/2024
+ms.topic: concept-article
 ---
 # Drive's current directory path enumeration
 

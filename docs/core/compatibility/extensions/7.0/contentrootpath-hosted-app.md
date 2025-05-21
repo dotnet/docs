@@ -2,6 +2,7 @@
 title: "Breaking change: ContentRootPath for apps launched by Windows Shell"
 description: Learn about the .NET 7 breaking change in .NET extensions where the 'ContentRootPath' property no longer defaults to the current directory for apps launched by Windows Shell or services.exe.
 ms.date: 06/22/2022
+ms.topic: concept-article
 ---
 # ContentRootPath for apps launched by Windows Shell
 

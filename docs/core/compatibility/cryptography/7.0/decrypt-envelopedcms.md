@@ -2,6 +2,7 @@
 title: "Breaking change: Decrypting EnvelopedCms doesn't double unwrap"
 description: Learn about the .NET 7 breaking change in cryptography where decrypting EnvelopedCms no longer removes extra data that was introduced by a bug in .NET Core 2.0.
 ms.date: 05/24/2022
+ms.topic: concept-article
 ---
 # Decrypting EnvelopedCms doesn't double unwrap
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Altered UnsafeAccessor support for closed generics"
 description: Learn about the .NET 9 breaking change in core .NET libraries where support for UnsafeAccessor with closed generics has been altered.
 ms.date: 07/29/2024
+ms.topic: concept-article
 ---
 # Altered UnsafeAccessor support for closed generics
 

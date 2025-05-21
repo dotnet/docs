@@ -2,6 +2,7 @@
 title: "Breaking change: Creating type of array of System.Void not allowed"
 description: Learn about the .NET 9 breaking change in core .NET libraries where it's no longer allowed to create a type of array of System.Void.
 ms.date: 01/18/2024
+ms.topic: concept-article
 ---
 # Creating type of array of System.Void not allowed
 

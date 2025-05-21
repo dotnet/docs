@@ -3,6 +3,7 @@ title: "Breaking change: Default TLS cipher suites for .NET on Linux"
 description: Learn about the breaking change in .NET 5 where .NET, on Linux, now respects the OpenSSL configuration for default cipher suites when doing TLS/SSL.
 ms.date: 12/01/2022
 ms.custom: linux-related-content
+ms.topic: how-to
 ---
 # Default TLS cipher suites for .NET on Linux
 

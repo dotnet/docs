@@ -2,6 +2,7 @@
 title: "Breaking change: Some SVE APIs removed"
 description: Learn about the breaking change in .NET 9 where some SVE APIs that take 32-bit address have been removed.
 ms.date: 10/02/2024
+ms.topic: concept-article
 ---
 # Some SVE APIs removed
 

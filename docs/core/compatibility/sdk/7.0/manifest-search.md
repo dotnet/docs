@@ -2,6 +2,7 @@
 title: "Breaking change: Tool manifests in root folder"
 description: Learn about a breaking change where the .NET SDK no longer looks for local tool manifests in the root folder on Windows.
 ms.date: 07/28/2023
+ms.topic: concept-article
 ---
 # Tool manifests in root folder
 

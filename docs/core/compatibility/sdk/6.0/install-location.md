@@ -2,6 +2,7 @@
 title: "Breaking change: .NET can't be installed to custom location"
 description: Learn about the breaking change in .NET 6 where .NET can no longer be installed to a custom location using the MSI installer on Windows.
 ms.date: 08/02/2023
+ms.topic: concept-article
 ---
 # .NET can't be installed to custom location
 

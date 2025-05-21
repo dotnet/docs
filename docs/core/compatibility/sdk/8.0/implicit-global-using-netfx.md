@@ -2,6 +2,7 @@
 title: "Breaking change: Implicit `using` for System.Net.Http no longer added"
 description: Learn about a breaking change in the .NET 8 SDK where an implicit global using directive for System.Net.Http is no longer added to .NET Framework projects.
 ms.date: 11/07/2023
+ms.topic: concept-article
 ---
 # Implicit `using` for System.Net.Http no longer added
 

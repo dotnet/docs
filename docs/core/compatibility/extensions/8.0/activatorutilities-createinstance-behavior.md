@@ -2,6 +2,7 @@
 title: "Breaking change: ActivatorUtilities.CreateInstance behaves consistently"
 description: Learn about the .NET 8 breaking change in .NET extensions where ActivatorUtilities.CreateInstance behaves consistently regardless of the order of constructor overloads.
 ms.date: 02/28/2023
+ms.topic: concept-article
 ---
 # ActivatorUtilities.CreateInstance behaves consistently
 

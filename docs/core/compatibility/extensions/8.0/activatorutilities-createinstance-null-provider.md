@@ -2,6 +2,7 @@
 title: "Breaking change: ActivatorUtilities.CreateInstance requires non-null provider"
 description: Learn about the .NET 8 breaking change in .NET extensions where ActivatorUtilities.CreateInstance throws an ArgumentNullException if the provider is null.
 ms.date: 02/28/2023
+ms.topic: concept-article
 ---
 # ActivatorUtilities.CreateInstance requires non-null provider
 

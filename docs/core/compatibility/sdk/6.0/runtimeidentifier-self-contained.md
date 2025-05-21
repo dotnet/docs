@@ -2,6 +2,7 @@
 title: "Breaking change: `RuntimeIdentifier` warning if self-contained is unspecified"
 description: Learn about the breaking change in .NET 6 where specifying a `RuntimeIdentifier` without specifying whether an app is self-contained results in a warning.
 ms.date: 09/20/2021
+ms.topic: concept-article
 ---
 # RuntimeIdentifier warning if self-contained is unspecified
 

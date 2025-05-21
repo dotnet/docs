@@ -2,6 +2,7 @@
 title: "Breaking change: SafeHandle types must have public constructor"
 description: Learn about the breaking change in interop in .NET 8 where SafeHandle-derived types used as 'ref' or 'out' parameters or as return types in 'LibraryImport' or 'GeneratedComInterface' methods must have a public constructor.
 ms.date: 06/06/2023
+ms.topic: concept-article
 ---
 # SafeHandle types must have public constructor
 

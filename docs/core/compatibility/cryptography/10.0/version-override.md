@@ -3,6 +3,7 @@ title: "Breaking change: Environment variable renamed to DOTNET_OPENSSL_VERSION_
 description: Learn about the .NET 10 breaking change in .NET cryptography where the environment variable CLR_OPENSSL_VERSION_OVERRIDE was renamed to DOTNET_OPENSSL_VERSION_OVERRIDE.
 ms.date: 02/05/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE

@@ -3,6 +3,7 @@ title: "Breaking change: Serialization of custom types in .NET 7"
 description: Learn about a breaking change in MSBuild for .NET 7 where serialization using BinaryFormatter of certain user-defined types is removed.
 author: baronfel
 ms.date: 05/06/2022
+ms.topic: concept-article
 ---
 
 # BinaryFormatter serialization of custom BuildEventArgs and ITaskItems removed for .NET 7

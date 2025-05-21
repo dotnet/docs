@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: GetSystemVersion no longer returns ImageRuntimeVersion"
 description: Learn about the .NET 8 breaking change in core .NET libraries where RuntimeEnvironment.GetSystemVersion no longer returns ImageRuntimeVersion, which is a .NET Framework-oriented value.
 ms.date: 09/06/2023
+ms.topic: article
 ---
 # GetSystemVersion no longer returns ImageRuntimeVersion
 

@@ -2,6 +2,7 @@
 title: "Breaking change: ManagementDateTimeConverter.ToDateTime returns a local time"
 description: Learn about the .NET 8 breaking change in .NET extensions where the DateTime returned by ManagementDateTimeConverter.ToDateTime is based on local time.
 ms.date: 10/05/2023
+ms.topic: concept-article
 ---
 # ManagementDateTimeConverter.ToDateTime returns a local time
 

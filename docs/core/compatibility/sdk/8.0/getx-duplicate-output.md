@@ -2,6 +2,7 @@
 title: "Breaking change: Duplicate output for -getItem, -getProperty, and -getTargetResult"
 description: Learn about a breaking change in the .NET 8 SDK where using property, item, and result-returning MSBuild flags in combination with a framework-specific build causes duplicate output of the requested properties, items, and results.
 ms.date: 12/05/2023
+ms.topic: how-to
 ---
 # Duplicate output for -getItem, -getProperty, and -getTargetResult
 

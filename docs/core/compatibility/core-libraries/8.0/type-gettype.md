@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: 'Type.GetType' throws exception for all invalid element types"
 description: Learn about the .NET 8 breaking change in core .NET libraries where 'Type.GetType' throws a TypeLoadException for all invalid element types.
 ms.date: 03/12/2024
+ms.topic: article
 ---
 # `Type.GetType` throws exception for all invalid element types
 

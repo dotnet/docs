@@ -2,6 +2,7 @@
 title: Interpret Expressions
 description: Learn how to write code to examine the structure of an expression tree.
 ms.date: 03/06/2023
+ms.topic: how-to
 ---
 # Interpret expressions
 

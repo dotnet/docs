@@ -9,6 +9,7 @@ api_location:
   - "corprof.idl"
 api_type:
   - "COM"
+ms.topic: reference
 ---
 # COR_PRF_HANDLE_TYPE enumeration
 

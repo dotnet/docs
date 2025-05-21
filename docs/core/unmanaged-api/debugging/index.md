@@ -2,6 +2,7 @@
 description: "Learn more about unmanaged APIs for debugging .NET"
 title: .NET debugging (unmanaged API reference)
 ms.date: 09/19/2023
+ms.topic: article
 ---
 # .NET debugging (unmanaged API reference)
 

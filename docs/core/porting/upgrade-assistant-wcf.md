@@ -4,6 +4,7 @@ description: Use .NET Upgrade Assistant to upgrade an existing WCF Server-side p
 author: SimonaLiao
 ms.date: 10/08/2024
 
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade a WCF Server-side Project to CoreWCF

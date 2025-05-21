@@ -4,6 +4,7 @@ description: Learn about the MSTest runner, a lightweight way to run tests witho
 author: nohwnd
 ms.author: jajares
 ms.date: 12/15/2023
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform support in MSTest (MSTest runner)

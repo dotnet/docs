@@ -5,6 +5,7 @@ author: adegeo
 ms.date: 07/23/2024
 ms.custom: devdivchpfy22, updateeachrelease
 no-loc: ["package.config", PackageReference]
+ms.topic: concept-article
 ---
 # Overview of porting from .NET Framework to .NET
 

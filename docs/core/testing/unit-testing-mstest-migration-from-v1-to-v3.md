@@ -4,6 +4,7 @@ description: Learn about migrating from legacy MSTest (MSTest v1) to latest MSTe
 author: engyebrahim
 ms.author: enjieid
 ms.date: 11/06/2024
+ms.topic: upgrade-and-migration-article
 ---
 
 # MSTest v3 migration guide

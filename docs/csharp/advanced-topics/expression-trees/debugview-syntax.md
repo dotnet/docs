@@ -6,6 +6,7 @@ ms.date: 03/06/2023
 helpviewer_keywords:
 - "expression trees"
 - "debugview"
+ms.topic: article
 ---
 # DebugView syntax
 

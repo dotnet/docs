@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: a6ac2531-ddfe-46fd-88fe-8b1eabe0b255
 topic_type:
   - "apiref"
+ms.topic: reference
 ---
 # LIBRARY_PROVIDER_INDEX_TYPE enumeration
 

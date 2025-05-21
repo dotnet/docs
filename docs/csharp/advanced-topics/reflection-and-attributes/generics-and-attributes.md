@@ -5,6 +5,7 @@ ms.date: 03/15/2023
 helpviewer_keywords: 
   - "generics [C#], attributes"
   - "attributes [C#], with generics"
+ms.topic: article
 ---
 # Generics and Attributes
 

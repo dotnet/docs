@@ -6,6 +6,7 @@ dev_langs:
 author: adegeo
 ms.author: adegeo
 ms.date: 07/07/2022
+ms.topic: whats-new
 ---
 
 # What's new in .NET Core 3.1

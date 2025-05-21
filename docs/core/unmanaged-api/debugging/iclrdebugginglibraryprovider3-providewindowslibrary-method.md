@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
 topic_type:
   - "apiref"
+ms.topic: article
 ---
 # ICLRDebuggingLibraryProvider3::ProvideWindowsLibrary method
 

@@ -4,6 +4,7 @@ description: Learn about the various Microsoft.Testing.Platform VSTest bridge ex
 author: evangelink
 ms.author: amauryleve
 ms.date: 04/10/2024
+ms.topic: article
 ---
 
 # VSTest Bridge extension

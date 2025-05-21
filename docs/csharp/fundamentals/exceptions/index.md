@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "exception handling [C#]"
   - "exceptions [C#]"
   - "C# language, exceptions"
+ms.topic: article
 ---
 # Exceptions and Exception Handling
 

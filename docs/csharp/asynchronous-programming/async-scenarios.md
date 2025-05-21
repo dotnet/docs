@@ -4,6 +4,7 @@ description: Learn about the C# language-level asynchronous programming model pr
 author: BillWagner
 ms.date: 03/12/2025
 ms.subservice: async-task-programming
+ms.topic: article
 ---
 # Asynchronous programming scenarios
 

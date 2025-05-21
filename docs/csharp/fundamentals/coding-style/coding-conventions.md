@@ -6,6 +6,7 @@ helpviewer_keyword:
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
   - "C# language, coding conventions"
+ms.topic: article
 ---
 # Common C# code conventions
 

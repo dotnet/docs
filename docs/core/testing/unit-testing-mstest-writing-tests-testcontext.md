@@ -4,6 +4,7 @@ description: Learn about the TestContext class of MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 11/12/2024
+ms.topic: article
 ---
 
 # The `TestContext` class

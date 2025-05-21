@@ -3,6 +3,7 @@ title: Common Patterns for Delegates
 description: Learn about common patterns for using delegates in your code to avoid strong coupling between your components.
 ms.date: 06/20/2016
 ms.assetid: 0ff8fdfd-6a11-4327-b061-0f2526f35b43
+ms.topic: article
 ---
 
 # Common patterns for delegates

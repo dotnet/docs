@@ -4,6 +4,7 @@ description: Learn about the various Microsoft.Testing.Platform hosting extensio
 author: evangelink
 ms.author: amauryleve
 ms.date: 04/10/2024
+ms.topic: concept-article
 ---
 
 # Hosting extensions

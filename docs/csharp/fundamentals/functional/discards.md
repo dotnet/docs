@@ -4,6 +4,7 @@ description: Describes C#'s support for discards, which are unassigned, discarda
 ms.date: 02/19/2025
 f1_keywords:
   - "discard_CSharpKeyword"
+ms.topic: article
 ---
 # Discards - C# Fundamentals
 

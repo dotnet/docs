@@ -4,6 +4,7 @@ description: Learn unit test concepts in C# and .NET through an interactive expe
 author: ncarandini
 ms.author: wiwagn
 ms.date: 03/09/2022
+ms.topic: article
 ---
 # Unit testing C# with MSTest and .NET
 

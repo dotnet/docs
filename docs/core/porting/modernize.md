@@ -5,6 +5,7 @@ author: adegeo
 ms.date: 05/25/2023
 dev_langs: ["csharp", "vb"]
 no-loc: ["package.config", PackageReference]
+ms.topic: upgrade-and-migration-article
 ---
 
 # Modernize after upgrading to .NET from .NET Framework

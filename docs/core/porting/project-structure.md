@@ -3,6 +3,7 @@ title: Organize projects for .NET Framework and .NET
 description: Help for project owners who want to compile their solution against .NET Framework and .NET side by side.
 author: conniey
 ms.date: 07/02/2021
+ms.topic: article
 ---
 # Organize your project to support both .NET Framework and .NET
 

@@ -4,6 +4,7 @@ description: Learn about the new features found in .NET Core 2.2.
 dev_langs:
   - "csharp"
 ms.date: 12/04/2018
+ms.topic: whats-new
 ---
 
 # What's new in .NET Core 2.2

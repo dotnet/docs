@@ -2,6 +2,7 @@
 title: Upgrade to a new .NET version
 description: Learn how to upgrade an app to a new .NET version. Upgrade .NET when the current version goes out of support or when you want to use new features of .NET.
 ms.date: 11/11/2024
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade to a new .NET version

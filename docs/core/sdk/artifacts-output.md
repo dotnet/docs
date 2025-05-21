@@ -2,6 +2,7 @@
 title: Artifacts output layout
 description: Learn about a .NET SDK feature that centralizes and simplifies the layout of project outputs.
 ms.date: 10/31/2023
+ms.topic: article
 ---
 # Artifacts output layout
 

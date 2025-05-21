@@ -4,6 +4,7 @@ description: Learn about the Microsoft.Testing.Platform available services.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024
+ms.topic: concept-article
 ---
 
 # Microsoft.Testing.Platform Services

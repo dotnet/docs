@@ -4,6 +4,7 @@ description: Learn about compiler-generated exceptions. Review a list of automat
 ms.date: 05/14/2021
 helpviewer_keywords: 
   - "exceptions [C#], compiler-generated"
+ms.topic: article
 ---
 # Compiler-generated exceptions
 

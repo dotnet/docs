@@ -4,6 +4,7 @@ description: Get answers to frequently asked questions about Microsoft.Testing.P
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/09/2024
+ms.topic: faq
 ---
 
 # Microsoft.Testing.Platform and extensions FAQ

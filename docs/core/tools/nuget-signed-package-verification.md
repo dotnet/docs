@@ -4,6 +4,7 @@ description: Learn about how NuGet performs signed-package verification using ro
 author: DTivel
 ms.date: 11/07/2022
 ms.custom: linux-related-content
+ms.topic: article
 ---
 # NuGet signed-package verification
 

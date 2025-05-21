@@ -2,6 +2,7 @@
 title: Translate Expression Trees
 description: Learn how to visit each node in an expression tree while building a modified copy of that expression tree.
 ms.date: 03/07/2023
+ms.topic: how-to
 ---
 # Translate expression trees
 

@@ -2,6 +2,7 @@
 title: Introduction to events
 description: Learn about events in .NET and our language design goals for events in this overview.
 ms.date: 03/11/2025
+ms.topic: concept-article
 ---
 # Introduction to events
 

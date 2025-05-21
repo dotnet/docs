@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 5e3c3958-80bb-43b1-a96b-dd3e6dbd9cd7
 topic_type:
   - "apiref"
+ms.topic: article
 ---
 # CloseResumeHandle function
 

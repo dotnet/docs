@@ -4,6 +4,7 @@ description: Learn about how to run MSTest tests.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/24/2024
+ms.topic: article
 ---
 
 # Run tests with MSTest

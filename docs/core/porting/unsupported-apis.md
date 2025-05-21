@@ -4,6 +4,7 @@ description: Learn about how to find unsupported APIs your app might be using, a
 author: StephenBonikowsky
 ms.author: stebon
 ms.date: 06/10/2021
+ms.topic: article
 ---
 # Find unsupported APIs in your code
 

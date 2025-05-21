@@ -4,6 +4,7 @@ description: Learn how to run Microsoft.Testing.Platform tests through dotnet te
 author: nohwnd
 ms.author: jajares
 ms.date: 03/26/2025
+ms.topic: how-to
 ---
 
 # Use Microsoft.Testing.Platform in the VSTest mode of `dotnet test`

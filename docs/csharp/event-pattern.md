@@ -3,6 +3,7 @@ title: Standard .NET event patterns
 description: Learn about .NET event patterns and how to create standard event sources and subscribe and process standard events in your code.
 ms.date: 03/13/2025
 ms.subservice: fundamentals
+ms.topic: article
 ---
 # Standard .NET event patterns
 

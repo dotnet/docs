@@ -5,6 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 12/15/2023
 ms.custom: devdivchpfy22
+ms.topic: concept-article
 ---
 
 # Testing in .NET

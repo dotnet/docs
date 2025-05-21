@@ -7,6 +7,7 @@ ms.date: 05/14/2024
 ms.custom: linux-related-content
 zone_pivot_groups: operating-systems-set-one
 no-loc: ['dotnet new', 'dotnet nuget add source']
+ms.topic: install-set-up-deploy
 ---
 
 # Manage .NET project and item templates

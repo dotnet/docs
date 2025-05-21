@@ -5,6 +5,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.date: 10/10/2018
+ms.topic: whats-new
 ---
 # What's new in .NET Core 2.1
 

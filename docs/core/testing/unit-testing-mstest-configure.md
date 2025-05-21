@@ -4,6 +4,7 @@ description: Learn how to configure MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 04/16/2024
+ms.topic: how-to
 ---
 
 # Configure MSTest

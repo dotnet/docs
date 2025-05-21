@@ -4,6 +4,7 @@ description: Learn about the various Microsoft.Testing.Platform Fakes extension 
 author: drognanar
 ms.author: arturs
 ms.date: 06/21/2024
+ms.topic: article
 ---
 
 # Fakes extension

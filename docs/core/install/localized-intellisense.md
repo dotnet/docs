@@ -2,6 +2,7 @@
 title: Install localized IntelliSense files
 description: Learn how to set up your development machine to use localized IntelliSense files for .NET projects (including .NET Core) in Visual Studio.
 ms.date: 11/11/2024
+ms.topic: install-set-up-deploy
 ---
 # How to install localized IntelliSense files for .NET
 

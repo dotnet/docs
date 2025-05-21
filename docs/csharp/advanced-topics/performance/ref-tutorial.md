@@ -3,6 +3,7 @@ title: "Tutorial: Reduce memory allocations using struct data types and ref lang
 description: Learn to remove allocations from your code. Make use of `struct` types for fewer allocations. Use the `ref` and `in` modifiers to avoid copies and enable or disable modification. Use `ref struct` types like `Span<T>` to directly use memory efficiently.
 ms.date: 10/13/2023
 ms.subservice: advanced-concepts
+ms.topic: tutorial
 ---
 # Tutorial: Reduce memory allocations with `ref` safety
 

@@ -3,6 +3,7 @@ title: "Tutorial: Define and read custom attributes."
 description: Learn how attributes work in C#. You define custom attributes to add metadata to your code. You read those attributes to learn about the code at runtime
 author: mgroves
 ms.date: 03/15/2023
+ms.topic: tutorial
 ---
 
 # Define and read custom attributes

@@ -2,6 +2,7 @@
 title: Async return types
 description: Learn about the return types that async methods can have in C# with code examples for each type.
 ms.date: 11/22/2024
+ms.topic: article
 ---
 
 # Async return types (C#)

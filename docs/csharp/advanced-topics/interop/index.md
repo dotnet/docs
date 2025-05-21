@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "C++ Interop"
   - "interoperability, about interoperability"
   - "platform invoke"
+ms.topic: article
 ---
 # Interoperability Overview
 

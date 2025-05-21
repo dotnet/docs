@@ -4,6 +4,7 @@ description: Learn about MSTest assertions.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/24/2024
+ms.topic: article
 ---
 
 # MSTest assertions

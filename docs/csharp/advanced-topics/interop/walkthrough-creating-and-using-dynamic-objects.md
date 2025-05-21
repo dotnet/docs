@@ -5,6 +5,7 @@ ms.date: 02/17/2023
 helpviewer_keywords:
   - "dynamic objects"
   - "dynamic objects [C#]"
+ms.topic: article
 ---
 # Walkthrough: Creating and Using Dynamic Objects in C\#
 

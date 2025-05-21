@@ -2,6 +2,7 @@
 description: "Learn more about unmanaged APIs for profiling .NET apps"
 title: .NET profiling (unmanaged API reference)
 ms.date: 09/19/2023
+ms.topic: article
 ---
 # .NET profiling (unmanaged API reference)
 

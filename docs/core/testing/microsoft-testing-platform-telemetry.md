@@ -5,6 +5,7 @@ author: nohwnd
 ms.author: jajares
 ms.date: 12/15/2023
 ms.custom: 
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform telemetry

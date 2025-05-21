@@ -5,6 +5,7 @@ ms.date: 05/14/2021
 helpviewer_keywords: 
   - "C# language, polymorphism"
   - "polymorphism [C#]"
+ms.topic: article
 ---
 # Polymorphism
 

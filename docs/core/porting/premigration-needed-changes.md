@@ -4,6 +4,7 @@ description: Before porting your code from .NET Framework to .NET, you must use 
 author: StephenBonikowsky
 ms.author: stebon
 ms.date: 06/10/2021
+ms.topic: article
 ---
 # Prerequisites to porting code
 

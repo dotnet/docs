@@ -4,6 +4,7 @@ description: Learn how to configure Microsoft.Testing.Platform using configurati
 author: Evangelink
 ms.author: amauryleve
 ms.date: 08/15/2024
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform configuration settings

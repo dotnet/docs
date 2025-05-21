@@ -4,6 +4,7 @@ description: Learn about how to install MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/24/2024
+ms.topic: get-started
 ---
 
 # Get started with MSTest

@@ -4,6 +4,7 @@ description: Learn how to use generic delegate types to declare custom types whe
 ms.date: 06/20/2016
 ms.subservice: fundamentals
 ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
+ms.topic: article
 ---
 
 # Strongly Typed Delegates

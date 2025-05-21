@@ -2,6 +2,7 @@
 title: .NET Runtime support for expression trees
 description: Learn about .NET runtime types supporting expression trees, creating expression trees, and techniques for working with expression tree APIs.
 ms.date: 03/06/2023
+ms.topic: article
 ---
 
 # .NET Runtime support for expression trees

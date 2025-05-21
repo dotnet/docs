@@ -3,6 +3,7 @@ title: Mutation testing
 author: sigmade
 description: Learn about the Stryker.net tool for mutation testing, to evaluate the quality of your unit tests.
 ms.date: 03/11/2025
+ms.topic: article
 ---
 
 # Mutation testing

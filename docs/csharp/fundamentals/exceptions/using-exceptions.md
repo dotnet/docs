@@ -5,6 +5,7 @@ ms.date: 05/14/2021
 helpviewer_keywords: 
   - "exception handling [C#], about exception handling"
   - "exceptions [C#], about exceptions"
+ms.topic: concept-article
 ---
 # Use exceptions
 

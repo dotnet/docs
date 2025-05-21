@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "throwing exceptions [C#]"
   - "exceptions [C#], creating"
   - "exceptions [C#], throwing"
+ms.topic: concept-article
 ---
 # Create and throw exceptions
 

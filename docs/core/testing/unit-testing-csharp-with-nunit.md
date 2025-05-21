@@ -4,6 +4,7 @@ description: Learn unit test concepts in C# and .NET Core through an interactive
 author: rprouse
 ms.date: 03/27/2024
 ms.custom: devdivchpfy22
+ms.topic: article
 ---
 # Unit testing C# with NUnit and .NET Core
 

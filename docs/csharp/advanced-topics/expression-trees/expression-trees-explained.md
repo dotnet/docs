@@ -2,6 +2,7 @@
 title: Expression tree data structures
 description: Learn about expression trees and how they're useful in translating algorithms for external execution and inspecting code before executing it.
 ms.date: 03/06/2023
+ms.topic: article
 ---
 # Expression trees - data that defines code
 

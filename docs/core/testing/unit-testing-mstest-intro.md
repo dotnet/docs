@@ -4,6 +4,7 @@ description: Learn about MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 03/17/2024
+ms.topic: concept-article
 ---
 
 # MSTest overview

@@ -4,6 +4,7 @@ description: How to handle notarization and certificate problems with macOS when
 author: adegeo
 ms.author: adegeo
 ms.date: 11/11/2024
+ms.topic: concept-article
 ---
 
 # macOS Catalina Notarization and the impact on .NET downloads and projects

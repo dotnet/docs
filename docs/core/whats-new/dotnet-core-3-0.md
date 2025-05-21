@@ -7,6 +7,7 @@ ms.custom: linux-related-content
 author: adegeo
 ms.author: adegeo
 ms.date: 01/27/2020
+ms.topic: whats-new
 ---
 
 # What's new in .NET Core 3.0

@@ -2,6 +2,7 @@
 title: Executing Expression Trees
 description: Learn about executing expression trees by converting them into executable Intermediate Language (IL) instructions.
 ms.date: 03/06/2023
+ms.topic: concept-article
 ---
 
 # Execute expression trees

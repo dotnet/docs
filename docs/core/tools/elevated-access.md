@@ -3,6 +3,7 @@ title: Elevated access for dotnet commands
 description: Learn the best practices for dotnet commands that require elevated access.
 author: wli3
 ms.date: 06/26/2019
+ms.topic: article
 ---
 # Elevated access for dotnet commands
 

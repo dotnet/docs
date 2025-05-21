@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "C# language, objects"
   - "objects [C#]"
   - "C# language, classes"
+ms.topic: concept-article
 ---
 # Overview of object oriented techniques in C\#
 

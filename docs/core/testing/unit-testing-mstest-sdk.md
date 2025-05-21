@@ -4,6 +4,7 @@ author: MarcoRossignoli
 description: Learn about the MSTest.Sdk and how to configure profiles and extensions with MSBuild properties.
 ms.author: mrossignoli
 ms.date: 02/13/2024
+ms.topic: concept-article
 ---
 
 # MSTest SDK overview

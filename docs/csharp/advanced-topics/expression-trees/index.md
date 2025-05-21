@@ -3,6 +3,7 @@ title: "Expression Trees"
 description: Learn about expression trees. See how to compile and run code represented by these data structures, where each node is an expression.
 ms.date: 05/29/2024
 ms.custom: updateeachrelease
+ms.topic: article
 ---
 # Expression Trees
 

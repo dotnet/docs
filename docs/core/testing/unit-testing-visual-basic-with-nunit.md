@@ -3,6 +3,7 @@ title: Unit testing Visual Basic in .NET Core with dotnet test and NUnit
 description: Learn unit test concepts in .NET Core through an interactive experience building a sample Visual Basic solution step-by-step using NUnit.
 author: rprouse
 ms.date: 03/27/2024
+ms.topic: article
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and NUnit
 

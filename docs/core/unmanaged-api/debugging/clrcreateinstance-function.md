@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type:
   - "apiref"
+ms.topic: article
 ---
 # CLRCreateInstance function
 

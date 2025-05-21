@@ -4,6 +4,7 @@ description: Learn unit test concepts in .NET Core through an interactive experi
 author: billwagner
 ms.author: wiwagn
 ms.date: 05/18/2020
+ms.topic: article
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and xUnit
 

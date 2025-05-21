@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "virtual methods [C#]"
   - "C# language, inheritance"
 ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
+ms.topic: article
 ---
 # Inheritance - derive types to create more specialized behavior
 

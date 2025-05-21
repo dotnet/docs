@@ -2,6 +2,7 @@
 title: Safely update interfaces using default interface methods
 description: This advanced tutorial explores how you can safely add new capabilities to existing interface definitions without breaking all classes and structs that implement that interface.
 ms.date: 03/17/2023
+ms.topic: tutorial
 ---
 # Tutorial: Update interfaces with default interface methods
 

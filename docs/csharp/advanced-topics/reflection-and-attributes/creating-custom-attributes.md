@@ -4,6 +4,7 @@ description: Learn how to create custom attributes in C# by defining an attribut
 ms.date: 03/15/2023
 f1_keywords:
   - "attributeNamedArgument_CSharpKeyword"
+ms.topic: article
 ---
 # Create custom attributes
 

@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "PSTARTUP_CALLBACK function pointer [.NET Core debugging]"
 topic_type:
   - "apiref"
+ms.topic: reference
 ---
 # PSTARTUP_CALLBACK function Pointer
 

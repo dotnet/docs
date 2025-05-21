@@ -4,6 +4,7 @@ description: Create a porting plan that best reflects your project and context.
 author: StephenBonikowsky
 ms.author: stebon
 ms.date: 06/10/2021
+ms.topic: how-to
 ---
 # Create a porting plan
 

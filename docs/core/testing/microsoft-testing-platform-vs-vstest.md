@@ -4,6 +4,7 @@ description: Learn the differences between Microsoft.Testing.Platform and VSTest
 author: nohwnd
 ms.author: jajares
 ms.date: 12/15/2023
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform and VSTest comparison

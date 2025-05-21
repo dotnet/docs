@@ -4,6 +4,7 @@ description: Learn about Microsoft.Testing.Platform, a lightweight way to run te
 author: Evangelink
 ms.author: amauryleve
 ms.date: 03/17/2024
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform overview

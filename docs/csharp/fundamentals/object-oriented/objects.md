@@ -5,6 +5,7 @@ ms.date: 05/14/2021
 helpviewer_keywords: 
   - "objects [C#], about objects"
   - "variables [C#]"
+ms.topic: article
 ---
 # Objects - create instances of types
 

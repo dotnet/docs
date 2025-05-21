@@ -4,6 +4,7 @@ description: Breaking changes can occur when porting your code from .NET framewo
 author: StephenBonikowsky
 ms.author: stebon
 ms.date: 12/22/2022
+ms.topic: concept-article
 ---
 # Breaking changes may occur when porting code
 

@@ -5,6 +5,7 @@ ms.date: 02/17/2023
 helpviewer_keywords: 
   - "dynamic [C#], about dynamic type"
   - "dynamic type [C#]"
+ms.topic: concept-article
 ---
 # Using type dynamic
 

@@ -2,6 +2,7 @@
 title: Create mixin types using default interface methods
 description: Using default interface members you can extend interfaces with optional default implementations for implementors.
 ms.date: 07/31/2024
+ms.topic: tutorial
 ---
 # Tutorial: Mix functionality in when creating classes using interfaces with default interface methods
 

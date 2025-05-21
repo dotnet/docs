@@ -4,6 +4,7 @@ title: "ICorProfilerInfo9 Interface"
 ms.date: "08/06/2019"
 author: "davmason"
 ms.author: "davmason"
+ms.topic: article
 ---
 # ICorProfilerInfo9 interface
 

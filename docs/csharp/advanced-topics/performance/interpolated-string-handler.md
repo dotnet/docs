@@ -2,6 +2,7 @@
 title: Explore C# string interpolation handlers
 description: This advanced tutorial shows how you can write a custom string interpolation handler that hooks into the runtime processing of an interpolated string.
 ms.date: 11/22/2024
+ms.topic: tutorial
 ---
 # Tutorial: Write a custom string interpolation handler
 

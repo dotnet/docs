@@ -5,6 +5,7 @@ ms.date: 03/05/2023
 helpviewer_keywords:
   - "generics [C#], reflection"
   - "reflection [C#], generic types"
+ms.topic: article
 ---
 # Generics and reflection
 

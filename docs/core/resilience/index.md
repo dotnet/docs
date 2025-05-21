@@ -4,6 +4,7 @@ description: Learn about resiliency as it relates to .NET and how to build a res
 author: IEvangelist
 ms.author: dapine
 ms.date: 11/29/2023
+ms.topic: concept-article
 ---
 
 # Introduction to resilient app development

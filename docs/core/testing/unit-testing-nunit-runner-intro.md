@@ -4,6 +4,7 @@ description: Learn about the NUnit runner, a lightweight way to run tests withou
 author: Evangelink
 ms.author: amauryleve
 ms.date: 05/21/2024
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform support in NUnit (NUnit runner)

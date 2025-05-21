@@ -9,6 +9,7 @@ api_location:
   - "corprof.idl"
 api_type:
   - "COM"
+ms.topic: article
 ---
 # ICorProfilerInfo13::CreateHandle method
 

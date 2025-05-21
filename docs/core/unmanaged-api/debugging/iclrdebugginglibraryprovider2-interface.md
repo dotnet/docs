@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
 topic_type:
   - "apiref"
+ms.topic: article
 ---
 # ICLRDebuggingLibraryProvider2 interface
 

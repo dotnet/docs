@@ -4,6 +4,7 @@ description: Learn how to build resilient HTTP apps using the Microsoft.Extensio
 author: IEvangelist
 ms.author: dapine
 ms.date: 07/01/2024
+ms.topic: how-to
 ---
 
 # Build resilient HTTP apps: Key development patterns

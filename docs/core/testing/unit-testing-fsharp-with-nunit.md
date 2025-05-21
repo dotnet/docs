@@ -5,6 +5,7 @@ author: rprouse
 ms.date: 10/04/2018
 dev_langs:
   - "fsharp"
+ms.topic: article
 ---
 # Unit testing F# libraries using dotnet test and NUnit
 

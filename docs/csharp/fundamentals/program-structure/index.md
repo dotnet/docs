@@ -5,6 +5,7 @@ ms.date: 08/01/2024
 helpviewer_keywords: 
   - "C# language, program structure"
 ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
+ms.topic: article
 ---
 # General Structure of a C# Program
 

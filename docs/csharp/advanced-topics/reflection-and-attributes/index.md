@@ -2,6 +2,7 @@
 title: Attributes and reflection
 description: Use attributes to associate metadata or declarative information in C#. Query attributes at run time with reflection APIs that describe assemblies, modules, and types.
 ms.date: 03/14/2025
+ms.topic: article
 ---
 # Attributes
 

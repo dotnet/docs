@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type:
   - "apiref"
+ms.topic: article
 ---
 # GetStartupNotificationEvent function
 

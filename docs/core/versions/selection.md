@@ -4,6 +4,7 @@ description: Learn how .NET automatically finds and chooses runtime versions for
 author: adegeo
 ms.author: adegeo
 ms.date: 07/08/2021
+ms.topic: how-to
 ---
 
 # Select the .NET version to use

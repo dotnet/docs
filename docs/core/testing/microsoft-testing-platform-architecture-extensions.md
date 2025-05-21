@@ -4,6 +4,7 @@ description: Learn about how to extend Microsoft.Testing.Platform.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform extensibility

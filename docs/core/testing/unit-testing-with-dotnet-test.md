@@ -4,6 +4,7 @@ description: Learn more about how 'dotnet test' works and its support for VSTest
 author: Youssef1313
 ms.author: ygerges
 ms.date: 03/26/2025
+ms.topic: concept-article
 ---
 
 # Testing with 'dotnet test'

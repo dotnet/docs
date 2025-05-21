@@ -4,6 +4,7 @@ description: Learn how to write tests using MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/18/2024
+ms.topic: article
 ---
 
 # Write tests with MSTest

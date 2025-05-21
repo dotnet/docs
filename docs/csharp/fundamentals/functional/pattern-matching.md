@@ -2,6 +2,7 @@
 title: Pattern matching overview
 description: "Learn about pattern matching expressions in C#"
 ms.date: 01/27/2025
+ms.topic: concept-article
 ---
 
 # Pattern matching overview

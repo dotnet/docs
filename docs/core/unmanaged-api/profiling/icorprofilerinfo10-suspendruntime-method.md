@@ -12,6 +12,7 @@ api_type:
   - "COM"
 author: "davmason"
 ms.author: "davmason"
+ms.topic: article
 ---
 # ICorProfilerInfo10::SuspendRuntime method
 

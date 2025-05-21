@@ -4,6 +4,7 @@ description: Learn about Microsoft.Testing.Platform capabilities concept.
 author: MarcoRossignoli
 ms.author: mrossignoli
 ms.date: 07/11/2024
+ms.topic: article
 ---
 
 # Microsoft.Testing.Platform capabilities

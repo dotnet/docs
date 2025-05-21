@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 21271167-fe7f-46ba-a81f-a6812ea649d4
 author: "jkoritzinsky"
 ms.author: "jekoritz"
+ms.topic: how-to
 ---
 
 # Expose .NET Core components to COM

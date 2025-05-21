@@ -2,6 +2,7 @@
 title: Building Expression Trees
 description: Learn about techniques for building expression trees.
 ms.date: 03/07/2023
+ms.topic: concept-article
 ---
 # Build expression trees
 

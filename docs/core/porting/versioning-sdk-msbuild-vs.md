@@ -5,6 +5,7 @@ author: StephenBonikowsky
 ms.author: stebon
 ms.custom: updateeachrelease
 ms.date: 11/06/2024
+ms.topic: article
 ---
 # .NET SDK, MSBuild, and Visual Studio versioning
 

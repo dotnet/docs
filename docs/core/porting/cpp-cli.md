@@ -3,6 +3,7 @@ title: Migrate C++/CLI projects to .NET
 description: Learn about porting C++/CLI projects to .NET.
 author: mjrousos
 ms.date: 01/23/2024
+ms.topic: upgrade-and-migration-article
 ---
 
 # How to port a C++/CLI project to .NET

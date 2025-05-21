@@ -2,6 +2,7 @@
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
 ms.date: 11/22/2024
+ms.topic: concept-article
 ---
 # Deconstructing tuples and other types
 

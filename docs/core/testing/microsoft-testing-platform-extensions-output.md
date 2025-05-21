@@ -4,6 +4,7 @@ description: Learn about the various Microsoft.Testing.Platform output extension
 author: nohwnd
 ms.author: jajares
 ms.date: 08/26/2024
+ms.topic: article
 ---
 
 # Output extensions

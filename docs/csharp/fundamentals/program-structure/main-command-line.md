@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "arguments [C#], command-line"
   - "command line [C#], arguments"
   - "command-line arguments [C#], Main method"
+ms.topic: article
 ---
 # Main() and command-line arguments
 

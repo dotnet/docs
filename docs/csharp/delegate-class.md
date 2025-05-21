@@ -4,6 +4,7 @@ description: Learn about the classes in .NET that support delegates and how thos
 ms.date: 06/20/2016
 ms.subservice: fundamentals
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
+ms.topic: article
 ---
 
 # System.Delegate and the `delegate` keyword

@@ -4,6 +4,7 @@ description: Learn about the various attributes of MSTest.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 07/24/2024
+ms.topic: article
 ---
 
 # MSTest attributes

@@ -4,6 +4,7 @@ description: Learn about the diagnostics in Microsoft.Testing.Platform.
 author: Evangelink
 ms.author: amauryleve
 ms.date: 05/30/2024
+ms.topic: concept-article
 ---
 
 # Microsoft.Testing.Platform diagnostics overview

@@ -16,6 +16,7 @@ topic_type:
   - "apiref"
 author: "davmason"
 ms.author: "davmason"
+ms.topic: reference
 ---
 # COR_PRF_REJIT_FLAGS enumeration
 

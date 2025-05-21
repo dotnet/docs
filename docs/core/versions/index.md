@@ -3,6 +3,7 @@ title: How the .NET Runtime and SDK are versioned
 description: This article explains how the .NET SDK and Runtime are versioned (similar to semantic versioning).
 ms.custom: updateeachrelease
 ms.date: 04/26/2023
+ms.topic: article
 ---
 
 # How .NET is versioned

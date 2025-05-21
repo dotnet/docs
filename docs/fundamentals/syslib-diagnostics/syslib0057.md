@@ -19,7 +19,7 @@ While this method was easy to use, it created issues where user-supplied data wa
 
 Use a different API to load certificate content, depending on the intended content type.
 
-A new class called `X509CertificateLoader` <!--<xref:System.Security.Cryptography.X509Certificates.X509CertificateLoader>--> can be used to load X.509 or PKCS12 content:
+A new class called <xref:System.Security.Cryptography.X509Certificates.X509CertificateLoader>can be used to load X.509 or PKCS12 content:
 
 - If you're loading X.509 content, use `X509CertificateLoader.LoadCertificate` or `X509CertificateLoader.LoadCertificateFromFile`.
 - If you're loading PKCS12 content, use `X509CertificateLoader.LoadPkcs12`, `X509CertificateLoader.LoadPkcs12FromFile`, `X509CertificateLoader.LoadPkcs12Collection`, or `X509CertificateLoader.LoadPkcs12CollectionFromFile`.

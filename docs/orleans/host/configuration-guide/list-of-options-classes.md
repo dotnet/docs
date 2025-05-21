@@ -10,17 +10,17 @@ All options classes used to configure Orleans are found in the `Orleans.Configur
 
 ## Common core options for `IClientBuilder` and `ISiloHostBuilder`
 
-| Option type | Used for |
-|--|--|
-| <xref:Orleans.Configuration.ClusterOptions> | Setting the `ClusterId` and the `ServiceId` |
-| <xref:Orleans.Configuration.NetworkingOptions> | Setting timeout values for sockets and opened connections |
-| <xref:Orleans.Configuration.SerializationProviderOptions>` | Setting the serialization providers |
-| <xref:Orleans.Configuration.TypeManagementOptions> | Setting the refresh period of the Type Map (see Heterogeneous silos and Versioning) |
+| Option type                                                | Used for                                                  |
+|------------------------------------------------------------|-----------------------------------------------------------|
+| <xref:Orleans.Configuration.ClusterOptions>                | Setting the `ClusterId` and the `ServiceId`               |
+| <xref:Orleans.Configuration.NetworkingOptions>             | Setting timeout values for sockets and opened connections |
+| <xref:Orleans.Configuration.SerializationProviderOptions>` | Setting the serialization providers                       |
+| <xref:Orleans.Configuration.TypeManagementOptions>         | Setting the refresh period of the Type Map (see Heterogeneous silos and Versioning) |
 
 ## `IClientBuilder` specific options
 
-| Option type | Used for |
-|--|--|
+| Option type                                    | Used for                              |
+|------------------------------------------------|---------------------------------------|
 | <xref:Orleans.Configuration.ClientMessagingOptions> | Setting the number of connections to keep open, and specify what network interface to use |
 | <xref:Orleans.Configuration.StatisticsOptions> | Settings related to statistics output |
 | <xref:Orleans.Configuration.GatewayOptions> | Setting the refresh period of the list of available gateways |
@@ -28,8 +28,8 @@ All options classes used to configure Orleans are found in the `Orleans.Configur
 
 ## `ISiloHostBuilder` specific options
 
-| Option type | Used for |
-|--|--|
+| Option type                                           | Used for                        |
+|-------------------------------------------------------|---------------------------------|
 | <xref:Orleans.Configuration.ClusterMembershipOptions> | Settings for cluster membership |
 | <xref:Orleans.Configuration.ConsistentRingOptions> | Configuration options for consistent hashing algorithm, used to balance resource allocations across the cluster. |
 | <xref:Orleans.Configuration.EndpointOptions> | Setting the Silo endpoint options |

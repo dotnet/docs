@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "data storage using isolated storage, options"
   - "isolation"
 ms.assetid: aff939d7-9e49-46f2-a8cd-938d3020e94e
+ms.topic: article
 ---
 # Isolated storage
 

@@ -3,6 +3,7 @@ title: Annotations - LINQ to XML
 description: Learn how to use annotations in LINQ to XML to associate any arbitrary object of any arbitrary type with any XML component in an XML tree.
 ms.date: 07/20/2015
 ms.assetid: 54e7b9d0-07f5-488f-9065-b6e6b870f810
+ms.topic: article
 ---
 # LINQ to XML annotations (LINQ to XML)
 

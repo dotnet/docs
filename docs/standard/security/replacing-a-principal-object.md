@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "security [.NET], replacing principal objects"
   - "security [.NET], principals"
 ms.assetid: c323687e-b196-487b-beba-f38f9b3f961b
+ms.topic: how-to
 ---
 # Replacing a Principal Object
 

@@ -2,6 +2,7 @@
 title: Get started creating high-quality .NET libraries
 description: Getting started building .NET libraries.
 ms.date: 10/02/2018
+ms.topic: get-started
 ---
 # Get started
 

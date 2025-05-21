@@ -2,6 +2,7 @@
 title: Disabled runtime marshalling - .NET
 description: Learn how .NET marshals your types to a native representation when runtime marshalling is disabled.
 ms.date: 04/08/2024
+ms.topic: article
 ---
 
 # Disabled runtime marshalling

@@ -2,6 +2,7 @@
 title: ComWrappers source generation
 description: Learn about compile-time source generation for ComWrappers in .NET.
 ms.date: 08/25/2023
+ms.topic: how-to
 ---
 
 # Source generation for ComWrappers

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "member design guidelines, properties"
   - "properties [.NET Framework], design guidelines"
 ms.assetid: 127cbc0c-cbed-48fd-9c89-7c5d4f98f163
+ms.topic: article
 ---
 # Property Design
 

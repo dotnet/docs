@@ -2,6 +2,7 @@
 title: Valid content of XElement and XDocument objects - LINQ to XML
 description: The XElement and XDocument constructors accept many argument types, including collections returned from queries. There are other constructors and functions for adding XML content.
 ms.date: 07/20/2015
+ms.topic: article
 ---
 
 # Valid content of XElement and XDocument objects (LINQ to XML)

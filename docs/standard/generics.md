@@ -4,6 +4,7 @@ description: Learn how generics act as code templates that allow you to define t
 author: kuhlenh
 ms.author: wiwagn
 ms.date: 10/09/2018
+ms.topic: concept-article
 ---
 # Generic types overview
 

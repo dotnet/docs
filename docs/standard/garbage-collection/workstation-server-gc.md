@@ -7,6 +7,7 @@ helpviewer_keywords:
   - garbage collection, server
   - workstation garbage collection
   - server garbage collection
+ms.topic: article
 ---
 # Workstation and server garbage collection
 

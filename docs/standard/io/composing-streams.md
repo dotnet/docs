@@ -15,6 +15,7 @@ helpviewer_keywords:
 
 #customer intent: As a developer, I want to transform data through a stream so that I can read or write the data in a different way/
 
+ms.topic: article
 ---
 # Compose streams
 

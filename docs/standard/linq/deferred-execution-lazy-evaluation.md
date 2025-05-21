@@ -3,6 +3,7 @@ title: Deferred execution and lazy evaluation - LINQ to XML
 description: Learn the advantages and requirements of deferred execution, and how to implement it using query and axis operations.
 ms.date: 07/20/2015
 ms.assetid: 8683d1b4-b7ec-407b-be12-906ebe958a09
+ms.topic: article
 ---
 
 # Deferred execution and lazy evaluation (LINQ to XML)

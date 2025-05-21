@@ -6,6 +6,7 @@ ms.subservice: standard-library
 helpviewer_keywords:
   - "cryptography, cross-platform"
   - "encryption, cross-platform"
+ms.topic: article
 ---
 # Cross-Platform Cryptography in .NET
 

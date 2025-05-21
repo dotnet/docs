@@ -2,6 +2,7 @@
 title: Versioning and .NET libraries
 description: Best practice recommendations for versioning .NET libraries.
 ms.date: 01/26/2021
+ms.topic: concept-article
 ---
 # Versioning
 

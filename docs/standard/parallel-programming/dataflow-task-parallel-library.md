@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library"
 ms.assetid: 643575d0-d26d-4c35-8de7-a9c403e97dd6
+ms.topic: article
 ---
 # Dataflow (Task Parallel Library)
 

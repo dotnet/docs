@@ -3,6 +3,7 @@ title: Applicability of functional transformation - LINQ to XML
 description: Learn when you can make use of functional transformations.
 ms.date: 07/20/2015
 ms.assetid: c78107bd-b006-4574-a3d4-bbf808388ff3
+ms.topic: article
 ---
 
 # Applicability of functional transformation (LINQ to XML)

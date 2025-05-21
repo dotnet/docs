@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "equality comparisons [.NET]"
   - "generics [.NET], interfaces"
   - "ordering comparisons [.NET]"
+ms.topic: article
 ---
 # Generic interfaces in .NET
 

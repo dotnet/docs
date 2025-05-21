@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "cryptography [.NET], about"
   - "random number generation"
 ms.assetid: f96284bc-7b73-44b5-ac59-fac613ad09f8
+ms.topic: concept-article
 ---
 
 # Overview of encryption, digital signatures, and hash algorithms in .NET

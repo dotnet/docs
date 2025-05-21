@@ -7,6 +7,7 @@ ms.date: 06/20/2016
 dev_langs:
   - "csharp"
   - "vb"
+ms.topic: concept-article
 ---
 
 # LINQ overview

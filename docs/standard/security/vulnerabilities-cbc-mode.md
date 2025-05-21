@@ -3,6 +3,7 @@ title: CBC decryption vulnerability
 description: Learn how to detect and mitigate timing vulnerabilities with Cipher-Block-Chaining (CBC) mode symmetric decryption using padding.
 ms.date: 07/15/2020
 author: blowdart
+ms.topic: concept-article
 ---
 # Timing vulnerabilities with CBC-mode symmetric decryption using padding
 

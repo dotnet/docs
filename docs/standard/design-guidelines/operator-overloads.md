@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "member design guidelines, operators"
   - "overloaded operators"
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
+ms.topic: article
 ---
 # Operator Overloads
 

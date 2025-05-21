@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "preventing customization"
   - "sealed classes"
 ms.assetid: cc42267f-bb7a-427a-845e-df97408528d4
+ms.topic: concept-article
 ---
 # Sealing
 

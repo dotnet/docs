@@ -3,6 +3,7 @@ title: XML Literals in Visual Basic - LINQ to XML
 description: You can create an XML tree in Visual Basic using XML literals and embedded expressions. Embedded expressions enable you to evaluate an expression and insert the results of the expression into the XML tree.
 ms.date: 07/20/2015
 ms.assetid: 94fc0e03-978e-4c08-ab6c-0dc3c1e64f10
+ms.topic: article
 ---
 
 # XML Literals in Visual Basic (LINQ to XML)

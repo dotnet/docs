@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "PE files, metadata"
   - "components [.NET], metadata"
 ms.assetid: 3dd13c5d-a508-455b-8dce-0a852882a5a7
+ms.topic: article
 ---
 # Metadata and Self-Describing Components
 

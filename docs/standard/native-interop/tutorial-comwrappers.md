@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "CCW"
   - "interoperation with unmanaged code, COM wrappers"
   - "NativeAOT"
+ms.topic: tutorial
 ---
 # Tutorial: Use the `ComWrappers` API
 

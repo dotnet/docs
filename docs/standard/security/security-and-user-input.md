@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "secure coding, user input"
   - "code security, user input"
 ms.assetid: 9141076a-96c9-4b01-93de-366bb1d858bc
+ms.topic: article
 ---
 # Security and User Input
 

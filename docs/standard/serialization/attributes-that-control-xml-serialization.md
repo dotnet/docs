@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "attributes [.NET], XML serialization"
   - "serialization, attributes"
   - "XML Schema, serializing"
+ms.topic: article
 ---
 # Attributes That Control XML Serialization
 

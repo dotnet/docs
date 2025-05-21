@@ -9,6 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "parallelism, task"
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
+ms.topic: article
 ---
 # Task-based asynchronous programming
 

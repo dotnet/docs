@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "generics [.NET], collections"
   - "generic collections [.NET]"
   - "generic types [.NET]"
+ms.topic: article
 ---
 # Generic collections in .NET
 

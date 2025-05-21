@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "lists [.NET], generic delegates"
   - "generics [.NET], delegates"
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
+ms.topic: article
 ---
 # Generic Delegates for Manipulating Arrays and Lists
 

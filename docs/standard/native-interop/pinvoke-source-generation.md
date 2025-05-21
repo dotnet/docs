@@ -2,6 +2,7 @@
 title: P/Invoke source generation
 description: Learn about compile-time source generation for platform invokes in .NET.
 ms.date: 07/25/2022
+ms.topic: how-to
 ---
 
 # Source generation for platform invokes

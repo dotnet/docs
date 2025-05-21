@@ -3,6 +3,7 @@ title: "Sample XML file: Multiple purchase orders in a namespace- LINQ to XML"
 description: This XML file—which is used in examples—has data, in a namespace, about purchase orders.
 ms.date: 07/20/2015
 ms.assetid: 595024f2-374a-4615-acb5-64fa1600f377
+ms.topic: article
 ---
 # Sample XML file: Multiple purchase orders in a namespace (LINQ to XML)
 

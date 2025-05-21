@@ -2,6 +2,7 @@
 title: Breaking changes and .NET libraries
 description: Best practice recommendations for navigating breaking changes when creating .NET libraries.
 ms.date: 05/13/2021
+ms.topic: concept-article
 ---
 # Breaking changes
 

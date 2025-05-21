@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "parallelism, data"
 ms.assetid: 3f05f33f-f1da-4b16-81c2-9ceff1bef449
+ms.topic: article
 ---
 # Data Parallelism (Task Parallel Library)
 

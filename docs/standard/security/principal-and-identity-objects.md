@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "security [.NET], principals"
   - "WindowsPrincipal objects"
 ms.assetid: aa5930ad-f3d7-40aa-b6f6-c6edcd5c64f7
+ms.topic: article
 ---
 # Principal and Identity Objects
 

@@ -7,6 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "exceptions, best practices"
+ms.topic: best-practice
 ---
 
 # Best practices for exceptions

@@ -5,6 +5,7 @@ ms.date: "10/22/2008"
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], usage guidelines"
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
+ms.topic: article
 ---
 # Usage guidelines
 

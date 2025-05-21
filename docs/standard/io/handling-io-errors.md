@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.workload: 
   - "dotnet"
   - "dotnetcore"
+ms.topic: concept-article
 ---
 # Handling I/O errors in .NET
 

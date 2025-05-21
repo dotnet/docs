@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "secure coding, race conditions"
   - "code security, race conditions"
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
+ms.topic: article
 ---
 # Security and Race Conditions
 

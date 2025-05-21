@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "parallel programming, debugging and profiling tools"
 ms.assetid: 38f7302a-ddf6-4179-ba19-f49e00395b9f
+ms.topic: article
 ---
 # Parallel Diagnostic Tools
 

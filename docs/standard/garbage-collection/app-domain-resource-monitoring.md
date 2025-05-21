@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "memory use, monitoring"
   - "application domains, resource monitoring"
 ms.assetid: 318bedf8-7f35-4f00-b34a-2b7b8e3fa315
+ms.topic: article
 ---
 # Application Domain Resource Monitoring
 

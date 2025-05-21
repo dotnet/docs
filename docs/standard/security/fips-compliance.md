@@ -3,6 +3,7 @@ title: FIPS compliance - .NET Core
 description: Explains .NET Core Federal Information Processing Standard (FIPS) compliance.
 ms.date: 11/20/2019
 author: Rick-Anderson
+ms.topic: article
 ---
 
 # .NET Core Federal Information Processing Standard (FIPS) compliance

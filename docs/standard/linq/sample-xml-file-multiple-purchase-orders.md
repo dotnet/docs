@@ -3,6 +3,7 @@ title: "Sample XML file: Multiple purchase orders - LINQ to XML"
 description: This XML file—which is used in examples—has data about purchase orders.
 ms.date: 07/20/2015
 ms.assetid: 2d29fcaa-60df-43d4-8ccc-6cdba7c013e9
+ms.topic: article
 ---
 # Sample XML file: Multiple purchase orders (LINQ to XML)
 

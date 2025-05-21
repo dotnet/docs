@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0a8064d5-e02f-4315-ad48-6deaa443a2f0
+ms.topic: how-to
 ---
 
 # Work with global namespaces in Visual Basic (LINQ to XML)

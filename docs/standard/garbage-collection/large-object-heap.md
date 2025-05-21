@@ -7,6 +7,7 @@ helpviewer_keywords:
   - LOH
   - "garbage collection, large object heap"
   - "GC [.NET ], large object heap"
+ms.topic: article
 ---
 # The large object heap on Windows systems
 

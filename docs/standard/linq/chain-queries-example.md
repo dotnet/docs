@@ -3,6 +3,7 @@ title: Chain queries example (C#) - LINQ to XML
 description: Learn what happens when you chain together two queries that both use deferred execution and lazy evaluation.
 ms.date: 07/20/2015
 ms.assetid: abbca162-d95e-43af-b92c-e46e6aa2540e
+ms.topic: how-to
 ---
 
 # Chain queries example (C#) (LINQ to XML)

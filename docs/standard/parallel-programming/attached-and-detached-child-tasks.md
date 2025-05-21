@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, child tasks"
 ms.assetid: c95788bf-90a6-4e96-b7bc-58e36a228cc5
+ms.topic: article
 ---
 # Attached and Detached Child Tasks
 

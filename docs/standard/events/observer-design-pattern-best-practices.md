@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "observer design pattern [.NET], best practices"
   - "best practices [.NET], observer design pattern"
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
+ms.topic: best-practice
 ---
 # Observer Design Pattern Best Practices
 

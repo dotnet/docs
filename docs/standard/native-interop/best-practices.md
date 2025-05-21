@@ -2,6 +2,7 @@
 title: Native interoperability best practices - .NET
 description: Learn the best practices for interfacing with native components in .NET.
 ms.date: 04/08/2024
+ms.topic: best-practice
 ---
 # Native interoperability best practices
 

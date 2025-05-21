@@ -2,6 +2,7 @@
 title: Strong naming and .NET libraries
 description: Best practice recommendations for strong naming .NET libraries.
 ms.date: 10/16/2018
+ms.topic: article
 ---
 # Strong naming
 

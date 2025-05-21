@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: upgrade-and-migration-article
 ---
 
 # BinaryFormatter functionality reference

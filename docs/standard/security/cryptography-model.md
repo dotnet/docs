@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "cryptography [.NET], model"
   - "encryption [.NET], model"
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
+ms.topic: article
 ---
 # .NET cryptography model
 

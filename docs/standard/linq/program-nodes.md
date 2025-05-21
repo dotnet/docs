@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c38df0f2-c805-431a-93ff-9103a4284c2f
+ms.topic: concept-article
 ---
 
 # Programming with nodes (LINQ to XML)

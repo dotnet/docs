@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "unsealed classes"
   - "inheritance, classes"
 ms.assetid: 9a3bd505-90f5-4053-9f0d-3cf5fa3d3ebf
+ms.topic: article
 ---
 # Unsealed Classes
 

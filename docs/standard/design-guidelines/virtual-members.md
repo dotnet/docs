@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "virtual members"
   - "members [.NET Framework], virtual"
 ms.assetid: 8ff4eb97-0364-43ec-8a02-934b5cd94d19
+ms.topic: article
 ---
 # Virtual Members
 

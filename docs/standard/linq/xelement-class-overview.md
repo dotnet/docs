@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2b9f0cd8-a1d1-4037-accf-0f38a410fa11
+ms.topic: concept-article
 ---
 
 # XElement class overview

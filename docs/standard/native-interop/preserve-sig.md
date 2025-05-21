@@ -2,6 +2,7 @@
 title: Implicit native signature translations and PreserveSig in .NET native interop
 description: Learn how managed signatures translate to native signatures for interop methods in .NET
 ms.date: 9/21/2023
+ms.topic: article
 ---
 
 # Implicit method signature translations in .NET interop

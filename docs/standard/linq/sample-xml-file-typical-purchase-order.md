@@ -3,6 +3,7 @@ title: "Sample XML file: Typical purchase order - LINQ to XML"
 description: This XML file—which is used in examples—has data about a purchase order.
 ms.date: 07/20/2015
 ms.assetid: dcbfb859-24fc-4758-b01c-51d1b6f644e6
+ms.topic: article
 ---
 # Sample XML file: Typical purchase order (LINQ to XML)
 

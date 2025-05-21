@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "exceptions, Exception class"
   - "Exception class"
+ms.topic: article
 ---
 # Exception class and properties
 

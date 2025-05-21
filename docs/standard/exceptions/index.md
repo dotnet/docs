@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "exceptions [.NET]"
   - "common language runtime, exceptions"
 ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
+ms.topic: concept-article
 ---
 # Handling and throwing exceptions in .NET
 

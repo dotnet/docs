@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Span<T>"
   - buffers"
   - "pipeline processing"
+ms.topic: article
 ---
 # Memory-related and span types
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "unauthorized access"
   - "permissions [.NET]"
   - "security [.NET], about security"
+ms.topic: concept-article
 ---
 # Key security concepts
 

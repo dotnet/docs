@@ -3,6 +3,7 @@ title: Basic Queries (LINQ to XML)
 description: View examples of basic queries for LINQ to XML, such as how to find an element with a specific attribute.
 ms.date: 07/20/2015
 ms.assetid: d333bb7d-20c1-448a-95b7-e5ba07915744
+ms.topic: article
 ---
 # Basic Queries (LINQ to XML)
 

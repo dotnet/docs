@@ -3,6 +3,7 @@ title: "Sample XML file: Typical purchase order in a namespace - LINQ to XML"
 description: This XML file—which is used in examples—has data, in a namespace, about a purchase order.
 ms.date: 07/20/2015
 ms.assetid: 84dc3339-ea32-4ccc-9af6-ab38ddfecced
+ms.topic: article
 ---
 # Sample XML file: Typical purchase order in a namespace (LINQ to XML)
 

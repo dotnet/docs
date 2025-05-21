@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 6cd37055-89b4-42e8-bf27-5a29717e35f3
+ms.topic: article
 ---
 
 # Example that outputs Office Open XML document parts (LINQ to XML)

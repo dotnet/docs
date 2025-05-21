@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "garbage collection, optimizing"
   - "garbage collection, shared Web hosting"
 ms.assetid: be98c0ab-7ef8-409f-8a0d-cb6e5b75ff20
+ms.topic: article
 ---
 # Optimization for Shared Web Hosting
 

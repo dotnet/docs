@@ -5,6 +5,7 @@ ms.date: 04/09/2025
 helpviewer_keywords:
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
   - "using Memory&lt;T&gt; and Span&lt;T&gt;"
+ms.topic: article
 ---
 # Memory\<T> and Span\<T> usage guidelines
 

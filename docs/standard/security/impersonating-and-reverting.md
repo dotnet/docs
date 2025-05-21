@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "security [.NET], impersonating Windows accounts"
   - "impersonating Windows accounts"
 ms.assetid: b93d402c-6c28-4f50-b2bc-d9607dc3e470
+ms.topic: how-to
 ---
 # Impersonating and Reverting
 

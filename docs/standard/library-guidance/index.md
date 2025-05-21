@@ -2,6 +2,7 @@
 title: Library guidance
 description: Best practice recommendations for developers to create high quality .NET libraries.
 ms.date: 08/19/2021
+ms.topic: article
 ---
 # Library guidance
 

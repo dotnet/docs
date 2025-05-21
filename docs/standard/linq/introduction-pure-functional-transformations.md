@@ -3,6 +3,7 @@ title: Introduction to pure functional transformations - LINQ to XML
 description: Get acquainted with functional transformations, including the underlying concepts and supporting language constructs.
 ms.date: 07/20/2015
 ms.assetid: 8495c9d9-2d02-4aa0-8a10-9e8794b985fe
+ms.topic: concept-article
 ---
 # Introduction to pure functional transformations (LINQ to XML)
 

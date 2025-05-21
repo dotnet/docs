@@ -3,6 +3,7 @@ title: "Sample XML file: Consolidated purchase orders - LINQ to XML"
 description: This XML file—which is used in examples—has data about consolidated purchase orders.
 ms.date: 07/20/2015
 ms.assetid: 9d9698a5-95f2-4564-813b-ba536cdf3bfb
+ms.topic: article
 ---
 # Sample XML file: Consolidated purchase orders (LINQ to XML)
 

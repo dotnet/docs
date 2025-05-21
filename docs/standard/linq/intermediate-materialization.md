@@ -3,6 +3,7 @@ title: Intermediate materialization (C#)
 description: Learn how the use of some standard query operators can cause materialization of collections in a query, and drastically alter the memory and performance profile of your application.
 ms.date: 07/20/2015
 ms.assetid: 7922d38f-5044-41cf-8e17-7173d6553a5e
+ms.topic: how-to
 ---
 
 # Intermediate materialization (C#)

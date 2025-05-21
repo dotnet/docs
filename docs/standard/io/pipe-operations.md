@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "interprocess communication [.NET], pipes"
   - "I/O [.NET], pipes"
 ms.assetid: 7b964ebd-7a4f-4d28-8194-7841f9e4c702
+ms.topic: article
 ---
 # Pipe Operations in .NET
 

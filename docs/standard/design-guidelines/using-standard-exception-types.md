@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "exceptions, catching"
   - "exceptions, throwing"
 ms.assetid: ab22ce03-78f9-4dca-8824-c7ed3bdccc27
+ms.topic: concept-article
 ---
 # Using Standard Exception Types
 

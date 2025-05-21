@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "domain identity"
   - "isolated storage, types"
   - "user authentication, isolated storage"
+ms.topic: article
 ---
 # Types of isolation
 

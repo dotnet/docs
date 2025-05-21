@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a5b21433-b49d-415c-b00e-bcbfb0d267d7
+ms.topic: article
 ---
 
 # Atomized XName and XNamespace objects (LINQ to XML)

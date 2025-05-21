@@ -3,6 +3,7 @@ title: Functional vs. procedural programming
 description: LINQ to XML supports both functional construction and procedural techniques for creating XML applications. Functional construction is a declarative approach. The procedural techniques support in-memory modification of XML trees.
 ms.date: 07/20/2015
 ms.assetid: fc64e39c-a487-4882-9169-da4de97917d9
+ms.topic: article
 ---
 
 # Functional vs. procedural programming (LINQ to XML)

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "type design guidelines, structures"
   - "structures [.NET Framework], design guidelines"
 ms.assetid: 1f48b2d8-608c-4be6-9ba4-d8f203ed9f9f
+ms.topic: article
 ---
 # Struct Design
 

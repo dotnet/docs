@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 716b94d3-0091-4de1-8e05-41bc069fa9dd
+ms.topic: concept-article
 ---
 
 # LINQ to XML overview

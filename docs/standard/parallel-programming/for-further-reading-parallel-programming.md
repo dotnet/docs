@@ -5,6 +5,7 @@ ms.date: "04/26/2018"
 helpviewer_keywords: 
   - "tasks, further reading"
 ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f
+ms.topic: article
 ---
 # For Further Reading (Parallel Programming)
 

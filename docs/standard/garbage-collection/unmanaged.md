@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "unmanaged resource cleanup"
   - "Finalize method"
 ms.assetid: a17b0066-71c2-4ba4-9822-8e19332fc213
+ms.topic: concept-article
 ---
 
 # Cleaning up unmanaged resources

@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "parallel programming, pitfalls"
 ms.assetid: 1e357177-e699-4b8f-9e49-56d3513ed128
+ms.topic: article
 ---
 # Potential Pitfalls in Data and Task Parallelism
 

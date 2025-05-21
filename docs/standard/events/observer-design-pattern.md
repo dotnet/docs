@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "IObservable(Of T) interface"
   - "observer design pattern [.NET]"
 ms.assetid: 3680171f-f522-453c-aa4a-54f755a78f88
+ms.topic: article
 ---
 
 # Observer design pattern

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5a630f24-f9ad-400e-831e-c14ebfc9e142
+ms.topic: concept-article
 ---
 
 # XAttribute class overview

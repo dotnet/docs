@@ -3,6 +3,7 @@ title: LINQ to XML axes overview - LINQ to XML
 description: Use axis methods from the XElement, XDocument, and IEnumerable classes to find elements in an XML tree and retrieve their values.
 ms.date: 07/20/2015
 ms.assetid: 516792fb-461d-40a8-8a50-9993a51258fc
+ms.topic: concept-article
 ---
 # LINQ to XML axes overview
 

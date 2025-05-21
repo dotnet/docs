@@ -3,6 +3,7 @@ title: Concepts and terminology (functional transformation) - LINQ to XML
 description: Learn the concepts and terminology of pure functional transformations.
 ms.date: 07/20/2015
 ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
+ms.topic: concept-article
 ---
 
 # Concepts and terminology (functional transformation) (LINQ to XML)

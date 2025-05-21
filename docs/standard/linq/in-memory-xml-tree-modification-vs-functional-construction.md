@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b5afc31d-a325-4ec6-bf17-0ff90a20ffca
+ms.topic: article
 ---
 
 # In-memory XML tree modification vs. functional construction (LINQ to XML)

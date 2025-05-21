@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, sample data"
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
+ms.topic: article
 ---
 # PLINQ Data Sample
 

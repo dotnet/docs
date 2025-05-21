@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "managed execution process"
   - "common language runtime, managed execution process"
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
+ms.topic: article
 ---
 # Managed execution process
 

@@ -7,6 +7,7 @@ ms.custom: updateeachrelease
 ms.subservice: standard-library
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#TargetFramework
+ms.topic: how-to
 ---
 # Target frameworks in SDK-style projects
 

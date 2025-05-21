@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, merge options"
 ms.assetid: e8f7be3b-88de-4f33-ab14-dc008e76c1ba
+ms.topic: article
 ---
 # Merge Options in PLINQ
 

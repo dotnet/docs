@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 51c0e3d2-c047-4e6a-a423-d61a882400b7
+ms.topic: article
 ---
 
 # LINQ to XML vs. DOM

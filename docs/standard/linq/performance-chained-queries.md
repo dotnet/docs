@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b2f1d715-8946-4dc0-8d56-fb3d1bba54a6
+ms.topic: article
 ---
 
 # Performance of chained queries (LINQ to XML)

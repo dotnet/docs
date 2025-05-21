@@ -2,6 +2,7 @@
 title: Type marshalling - .NET
 description: Learn how .NET marshals your types to a native representation.
 ms.date: 04/08/2024
+ms.topic: how-to
 ---
 
 # Type marshalling

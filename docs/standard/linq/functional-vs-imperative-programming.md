@@ -3,6 +3,7 @@ title: Functional programming vs. imperative programming - LINQ to XML
 description: Learn about functional programming and how it differs from traditional imperative (procedural) programming.
 ms.date: 07/20/2015
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
+ms.topic: article
 ---
 
 # Functional programming vs. imperative programming (LINQ to XML)

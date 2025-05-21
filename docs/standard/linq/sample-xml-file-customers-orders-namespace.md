@@ -3,6 +3,7 @@ title: "Sample XML file: Customers and orders in a namespace- LINQ to XML"
 description: This XML file—which is used in examples—has data, in a namespace, about customers and orders.
 ms.date: 07/20/2015
 ms.assetid: 2da1c474-f658-4dca-a457-c35ef5ba4aff
+ms.topic: article
 ---
 # Sample XML file: Customers and orders in a namespace (LINQ to XML)
 

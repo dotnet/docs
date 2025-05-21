@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "covariance and contravariance in generics"
   - "generic type parameters"
 ms.assetid: 2678dc63-c7f9-4590-9ddc-0a4df684d42e
+ms.topic: article
 ---
 # Covariance and contravariance in generics
 

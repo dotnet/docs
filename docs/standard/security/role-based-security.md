@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "authentication [.NET], principals"
   - "role-based security, principals"
 ms.assetid: 578cc32b-5654-4d8b-9d8c-ebcbc5c75390
+ms.topic: article
 ---
 # Role-Based Security
 

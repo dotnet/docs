@@ -3,6 +3,7 @@ description: "Learn more about interfaces for generic math in .NET."
 title: Generic math
 titleSuffix: .NET
 ms.date: 08/12/2022
+ms.topic: article
 ---
 # Generic math
 

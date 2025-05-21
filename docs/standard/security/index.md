@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "application development [.NET], security"
   - "security [.NET]"
 ms.assetid: 9a9621d7-8883-4a4f-a874-65e8e09e20a6
+ms.topic: article
 ---
 # Security in .NET
 

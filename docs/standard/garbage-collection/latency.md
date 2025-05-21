@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "garbage collection, intrusiveness"
   - "garbage collection, latency modes"
 ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
+ms.topic: article
 ---
 # Latency modes
 

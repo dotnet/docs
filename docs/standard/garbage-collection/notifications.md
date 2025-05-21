@@ -7,6 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "garbage collection, notifications"
+ms.topic: article
 ---
 # Garbage collection notifications
 

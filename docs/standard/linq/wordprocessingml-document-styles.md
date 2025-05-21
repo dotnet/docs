@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 40e35de6-ac93-4bba-88ab-a018cbe93873
+ms.topic: article
 ---
 
 # WordprocessingML document with styles (LINQ to XML)

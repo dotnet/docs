@@ -3,6 +3,7 @@ title: Query XML trees overview - LINQ to XML
 description: Learn how to query an XML tree, and how to combine querying and functional construction to reshape a tree.
 ms.date: 07/20/2015
 ms.assetid: 2e35c1ab-08c8-4378-9ca8-8ff344756eda
+ms.topic: concept-article
 ---
 
 # Query XML trees overview (LINQ to XML)

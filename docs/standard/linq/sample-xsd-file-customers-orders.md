@@ -3,6 +3,7 @@ title: "Sample XSD file: Customers and orders - LINQ to XML"
 description: "This XSD file—which is used in examples—has a schema definition for 'Sample XML file: Customers and orders'."
 ms.date: 07/20/2015
 ms.assetid: ef9911a3-7ac4-44fd-b36e-a0c0ad0a157d
+ms.topic: article
 ---
 # Sample XSD file: Customers and orders (LINQ to XML)
 

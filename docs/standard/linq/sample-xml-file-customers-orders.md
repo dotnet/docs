@@ -3,6 +3,7 @@ title: "Sample XML file: Customers and orders- LINQ to XML"
 description: This XML file—which is used in examples—has data about customers and orders.
 ms.date: 07/20/2015
 ms.assetid: d6d1c9ea-be74-4e6d-bfdd-d4bcc2d301cf
+ms.topic: article
 ---
 # Sample XML file: Customers and orders (LINQ to XML)
 

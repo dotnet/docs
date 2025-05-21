@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Interop"
   - "Marshalling"
   - "NativeAOT"
+ms.topic: tutorial
 ---
 
 # Tutorial: Use custom marshallers in source-generated P/Invokes

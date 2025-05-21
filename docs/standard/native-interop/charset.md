@@ -2,6 +2,7 @@
 title: Charsets and marshalling - .NET
 description: Learn how different values of CharSet can change how .NET marshals your data to native code.
 ms.date: 04/08/2024
+ms.topic: article
 ---
 
 # Charsets and marshalling

@@ -5,6 +5,7 @@ ms.date: 04/21/2020
 helpviewer_keywords:
   - garbage collection, background
   - background garbage collection
+ms.topic: article
 ---
 # Background garbage collection
 

@@ -3,6 +3,7 @@ title: Reference - LINQ to XML
 description: Find LINQ to XML reference articles.
 ms.date: 07/20/2015
 ms.assetid: 815b45e2-3527-4dee-9986-b1277a693cde
+ms.topic: article
 ---
 
 # Reference (LINQ to XML)

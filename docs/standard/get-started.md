@@ -2,6 +2,7 @@
 title: Tutorials for getting started with .NET
 description: Choose a tutorial for learning .NET app development or one of the .NET programming languages.
 ms.date: 09/30/2020
+ms.topic: get-started
 ---
 # Tutorials for getting started with .NET
 

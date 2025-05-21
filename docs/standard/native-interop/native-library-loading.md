@@ -3,6 +3,7 @@ title: Native library loading
 description: Learn which paths the runtime will search when loading native libraries via P/Invoke. Also learn how to use SetDllImportResolver.
 author: saul
 ms.date: 03/14/2022
+ms.topic: article
 ---
 
 # Native library loading

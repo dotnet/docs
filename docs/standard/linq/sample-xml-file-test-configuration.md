@@ -3,6 +3,7 @@ title: "Sample XML file: Test configuration - LINQ to XML"
 description: This XML file—which is used in examples—has test configuration data.
 ms.date: 07/20/2015
 ms.assetid: 45bfb509-c1d4-4b4f-9690-1cb0c9816516
+ms.topic: article
 ---
 # Sample XML file: Test configuration (LINQ to XML)
 

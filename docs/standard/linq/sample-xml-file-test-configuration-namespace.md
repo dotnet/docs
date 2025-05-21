@@ -3,6 +3,7 @@ title: "Sample XML file: Test configuration in a namespace - LINQ to XML"
 description: This XML file—which is used in examples—has test configuration data in a namespace.
 ms.date: 07/20/2015
 ms.assetid: e75ad1bc-5636-4623-9a34-a286a8c485d6
+ms.topic: article
 ---
 # Sample XML file: Test configuration in a namespace (LINQ to XML)
 

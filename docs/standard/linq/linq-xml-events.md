@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 dev_langs:
   - "csharp"
   - "vb"
+ms.topic: article
 ---
 
 # LINQ to XML Events (LINQ to XML)

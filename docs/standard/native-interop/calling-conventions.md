@@ -3,6 +3,7 @@ title: Unmanaged calling conventions
 description: Learn how to specify unmanaged calling conventions in .NET
 author: jkotas
 ms.date: 08/19/2023
+ms.topic: article
 ---
 
 # Unmanaged calling conventions

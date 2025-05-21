@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, performance tuning"
 ms.assetid: 53706c7e-397d-467a-98cd-c0d1fd63ba5e
+ms.topic: how-to
 ---
 # Speedup in PLINQ
 

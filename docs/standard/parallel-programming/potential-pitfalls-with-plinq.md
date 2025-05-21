@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "PLINQ queries, pitfalls"
 ms.assetid: 75a38b55-4bc4-488a-87d5-89dbdbdc76a2
+ms.topic: article
 ---
 
 # Potential pitfalls with PLINQ

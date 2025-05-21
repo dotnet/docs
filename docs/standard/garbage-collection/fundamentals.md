@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "garbage collection, workstation"
   - "garbage collection, managed heap"
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
+ms.topic: article
 ---
 # Fundamentals of garbage collection
 

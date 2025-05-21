@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "tasks, partitioners"
 ms.assetid: 96153688-9a01-47c4-8430-909cee9a2887
+ms.topic: article
 ---
 # Custom Partitioners for PLINQ and TPL
 

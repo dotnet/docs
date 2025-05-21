@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 57bcefe3-8433-4d3b-935a-511c9bcbdfa8
+ms.topic: how-to
 ---
 
 # How to work with dictionaries using LINQ to XML

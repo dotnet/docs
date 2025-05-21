@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 63305603-ab54-49fc-84e4-f76eecc59549
+ms.topic: concept-article
 ---
 
 # XDocument class overview

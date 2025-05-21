@@ -2,6 +2,7 @@
 title: Runtime libraries overview
 description: Learn what is included in the Runtime libraries section of the table of contents.
 ms.date: 05/30/2024
+ms.topic: concept-article
 ---
 # Runtime libraries overview
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "exceptions, unmanaged code"
   - "interop, exceptions"
   - "exceptions, interop"
+ms.topic: concept-article
 ---
 # Working with Interop Exceptions in Unmanaged Code
 

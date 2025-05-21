@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 50f4fbac-81fe-4f26-aedf-506e21419b19
+ms.topic: article
 ---
 
 # Deferred execution example (LINQ to XML)

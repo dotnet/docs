@@ -6,6 +6,7 @@ ms.service: dotnet
 ms.subservice: standard-library
 ms.custom: "updateeachrelease"
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
+ms.topic: article
 ---
 # .NET Standard
 

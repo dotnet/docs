@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "XML serialization, attributes"
   - "attributes [.NET], XML serialization"
   - "serialization, attributes"
+ms.topic: article
 ---
 # Attributes That Control Encoded SOAP Serialization
 

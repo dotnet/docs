@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fe826236-830f-457a-9027-7ad62c909fae
+ms.topic: article
 ---
 
 # Scope of default namespaces (LINQ to XML)

@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, exposing .NET components"
   - "COM interop, exposing COM components"
 ms.assetid: 4b8afb52-fb8d-4e65-b47c-fd82956a3cdd
+ms.topic: how-to
 ---
 # Qualify .NET types for COM interoperation
 

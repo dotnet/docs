@@ -3,6 +3,7 @@ title: LINQ to XML classes overview
 description: This article provides a list of the LINQ to XML classes, with descriptions of each.
 ms.date: 07/20/2015
 ms.assetid: bf666100-5392-4968-97f4-f6b9d3287d7b
+ms.topic: concept-article
 ---
 
 # LINQ to XML classes overview

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
+ms.topic: how-to
 ---
 
 # How to find a list of child elements (LINQ to XML)

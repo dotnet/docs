@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
+ms.topic: article
 ---
 
 # The XML shape of WordprocessingML documents (LINQ to XML)

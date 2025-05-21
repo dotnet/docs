@@ -3,6 +3,7 @@ title: "Sample XML file: Numerical data - LINQ to XML"
 description: This XML file—which is used in examples—has numerical data.
 ms.date: 07/20/2015
 ms.assetid: 365cae86-a166-46df-b56a-0209d9771c27
+ms.topic: article
 ---
 # Sample XML file: Numerical data (LINQ to XML)
 

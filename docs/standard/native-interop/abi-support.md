@@ -2,6 +2,7 @@
 title: Native interoperability ABI support - .NET
 description: Defines the current support for interoperability with various ABIs.
 ms.date: 10/28/2024
+ms.topic: article
 ---
 # Native interoperability ABI support
 

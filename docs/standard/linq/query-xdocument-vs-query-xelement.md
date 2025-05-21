@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 46221ff5-62ee-4de8-93ba-66465facb5c1
+ms.topic: how-to
 ---
 
 # Query an `XDocument` vs. query an `XElement` (LINQ to XML)

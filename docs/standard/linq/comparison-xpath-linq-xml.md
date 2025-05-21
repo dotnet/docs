@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 87d361b1-daa9-4fd4-a53a-cbfa40111ad3
+ms.topic: article
 ---
 
 # Comparison of XPath and LINQ to XML

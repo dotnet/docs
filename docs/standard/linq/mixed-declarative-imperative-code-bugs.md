@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fada62d0-0680-4e73-945a-2b00d7a507af
+ms.topic: article
 ---
 
 # Mixed declarative/imperative code bugs (LINQ to XML)

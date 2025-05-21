@@ -2,6 +2,7 @@
 title: Custom marshalling source generation
 description: Learn about compile-time source generation for custom marshalling for interop in .NET.
 ms.date: 08/09/2022
+ms.topic: how-to
 ---
 
 # Source generation for custom marshalling

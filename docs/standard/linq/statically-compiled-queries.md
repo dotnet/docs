@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 3bf558fe-0705-479d-86d4-00188f5fcf9c
+ms.topic: article
 ---
 # Statically compiled queries (LINQ to XML)
 

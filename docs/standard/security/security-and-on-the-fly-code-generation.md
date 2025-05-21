@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "security [.NET], on-the-fly code generation"
   - "secure coding, on-the-fly code generation"
 ms.assetid: 6d221724-bb21-4d76-90c3-0ee2a2e69be2
+ms.topic: article
 ---
 # Security and On-the-Fly Code Generation
 

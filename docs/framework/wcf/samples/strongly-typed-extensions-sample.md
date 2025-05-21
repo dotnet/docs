@@ -3,6 +3,7 @@ description: "Learn more about: Strongly typed extensions sample"
 title: "Strongly typed Extensions Sample"
 ms.date: "03/30/2017"
 ms.assetid: 02220f11-1a83-441c-9e5a-85f9a9367572
+ms.topic: article
 ---
 # Strongly typed extensions sample
 

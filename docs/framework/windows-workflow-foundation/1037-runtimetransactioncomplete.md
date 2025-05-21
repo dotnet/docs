@@ -3,6 +3,7 @@ description: "Learn more about: 1037 - RuntimeTransactionComplete"
 title: "1037 - RuntimeTransactionComplete"
 ms.date: "03/30/2017"
 ms.assetid: 2c8c31e0-42a9-4f46-865b-2da9ab16a0ba
+ms.topic: article
 ---
 # 1037 - RuntimeTransactionComplete
 

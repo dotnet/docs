@@ -3,6 +3,7 @@ description: "Learn more about: Windows Communication Foundation to Message Queu
 title: "Windows Communication Foundation to Message Queuing"
 ms.date: "03/30/2017"
 ms.assetid: 78d0d0c9-648e-4d4a-8f0a-14d9cafeead9
+ms.topic: article
 ---
 # Windows Communication Foundation to Message Queuing
 

@@ -3,6 +3,7 @@ description: "Learn more about: OperationContextScope"
 title: "OperationContextScope"
 ms.date: "03/30/2017"
 ms.assetid: 11c11108-8eb4-4d49-95a0-83285a812262
+ms.topic: article
 ---
 # OperationContextScope
 

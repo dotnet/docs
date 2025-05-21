@@ -3,6 +3,7 @@ description: "Learn more about: 1018 - StartCancelActivityWorkItem"
 title: "1018 - StartCancelActivityWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 68b4fa1d-eee6-4a2a-8c16-7e9d89f08ab9
+ms.topic: article
 ---
 # 1018 - StartCancelActivityWorkItem
 

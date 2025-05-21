@@ -3,6 +3,7 @@ description: "Learn more about: One-Way"
 title: "One-Way"
 ms.date: "03/30/2017"
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
+ms.topic: article
 ---
 # One-Way
 

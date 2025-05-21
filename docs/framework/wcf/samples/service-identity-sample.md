@@ -3,6 +3,7 @@ description: "Learn more about: Service Identity Sample"
 title: "Service Identity Sample"
 ms.date: "03/30/2017"
 ms.assetid: 79fa8c1c-85bb-4b67-bc67-bfaf721303f8
+ms.topic: how-to
 ---
 # Service Identity Sample
 

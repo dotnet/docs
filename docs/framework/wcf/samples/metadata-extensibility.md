@@ -3,6 +3,7 @@ description: "Learn more about: Metadata Extensibility"
 title: "Metadata Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: f92fcc76-0806-4c84-9d63-7aae0d3899de
+ms.topic: article
 ---
 # Metadata Extensibility
 

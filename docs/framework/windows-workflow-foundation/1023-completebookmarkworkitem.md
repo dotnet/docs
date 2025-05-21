@@ -3,6 +3,7 @@ description: "Learn more about: 1023 - CompleteBookmarkWorkItem"
 title: "1023 - CompleteBookmarkWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: fc5dac57-b3eb-4826-b505-c6d269e4774d
+ms.topic: article
 ---
 # 1023 - CompleteBookmarkWorkItem
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - ".NET Framework 4.5, obsolete types"
   - "types, obsolete in .NET Framework 4.5"
   - "obsolete types [.NET Framework]"
+ms.topic: article
 ---
 # Obsolete types in .NET Framework
 

@@ -3,6 +3,7 @@ description: "Learn more about: Syndication Extensibility Samples"
 title: "Syndication Extensibility Samples"
 ms.date: "03/30/2017"
 ms.assetid: b2c34ae5-62ed-4c2d-b2fa-2d4d0802099c
+ms.topic: article
 ---
 # Syndication Extensibility Samples
 

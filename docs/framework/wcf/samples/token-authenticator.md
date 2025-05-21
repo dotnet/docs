@@ -3,6 +3,7 @@ description: "Learn more about: Token Authenticator"
 title: "Token Authenticator"
 ms.date: "03/30/2017"
 ms.assetid: 84382f2c-f6b1-4c32-82fa-aebc8f6064db
+ms.topic: article
 ---
 # Token Authenticator
 

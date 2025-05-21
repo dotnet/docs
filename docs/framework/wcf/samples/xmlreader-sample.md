@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "XML Reader"
 ms.assetid: 60e5848d-7d9c-4ea5-bed9-22758c9ac16c
+ms.topic: article
 ---
 # XmlReader Sample
 

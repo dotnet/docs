@@ -3,6 +3,7 @@ description: "Learn more about: Management"
 title: "Management"
 ms.date: "03/30/2017"
 ms.assetid: 52f4825b-91a2-4f23-94f4-cfd76a7980cf
+ms.topic: article
 ---
 # Management
 

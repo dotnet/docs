@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "WCF security"
   - "WCF, security"
 ms.assetid: f0ecc6f7-f4b5-42a4-9cb1-b02e28e26620
+ms.topic: concept-article
 ---
 # Securing Services
 

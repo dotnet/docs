@@ -2,6 +2,7 @@
 title: "WCF Service Host (WcfSvcHost.exe)"
 description: Use WCF Service Host to host and test a service you have implemented. You can test the service using WCF Test Client or your own client.
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # WCF Service Host (WcfSvcHost.exe)
 

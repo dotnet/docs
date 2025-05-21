@@ -3,6 +3,7 @@ description: "Learn more about: Trusted Facade Service"
 title: "Trusted Facade Service"
 ms.date: "03/30/2017"
 ms.assetid: c34d1a8f-e45e-440b-a201-d143abdbac38
+ms.topic: article
 ---
 # Trusted Facade Service
 

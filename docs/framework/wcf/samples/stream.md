@@ -3,6 +3,7 @@ description: "Learn more about: Stream"
 title: "Stream"
 ms.date: "03/30/2017"
 ms.assetid: 58a3db81-20ab-4627-bf31-39d30b70b4fe
+ms.topic: how-to
 ---
 # Stream
 

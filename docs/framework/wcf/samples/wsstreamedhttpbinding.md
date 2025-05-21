@@ -3,6 +3,7 @@ description: "Learn more about: WSStreamedHttpBinding"
 title: "WSStreamedHttpBinding"
 ms.date: "03/30/2017"
 ms.assetid: 97ce4d3d-ca6f-45fa-b33b-2429bb84e65b
+ms.topic: how-to
 ---
 # WSStreamedHttpBinding
 

@@ -3,6 +3,7 @@ description: "Learn more about: Streaming Feeds Sample"
 title: "Streaming Feeds Sample"
 ms.date: "03/30/2017"
 ms.assetid: 1f1228c0-daaa-45f0-b93e-c4a158113744
+ms.topic: how-to
 ---
 # Streaming Feeds Sample
 

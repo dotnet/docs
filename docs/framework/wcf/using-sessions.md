@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "sessions [WCF]"
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
+ms.topic: how-to
 ---
 # Using Sessions
 

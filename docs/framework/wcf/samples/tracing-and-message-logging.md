@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Tracing and logging"
 ms.assetid: a4f39bfc-3c5e-4d51-a312-71c5c3ce0afd
+ms.topic: how-to
 ---
 # Tracing and Message Logging
 

@@ -3,6 +3,7 @@ description: "Learn more about: Message Correlation"
 title: "Message Correlation"
 ms.date: "03/30/2017"
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
+ms.topic: how-to
 ---
 # Message Correlation
 

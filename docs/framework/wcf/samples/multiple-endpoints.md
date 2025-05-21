@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Multiple EndPoints"
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412
+ms.topic: article
 ---
 # Multiple Endpoints
 

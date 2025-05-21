@@ -3,6 +3,7 @@ description: "Learn more about: WCF Error Handling"
 title: "WCF Error Handling"
 ms.date: "03/30/2017"
 ms.assetid: 1e4b1e0f-9598-449d-9d73-90bda62305b8
+ms.topic: article
 ---
 # WCF Error Handling
 

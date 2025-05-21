@@ -3,6 +3,7 @@ description: "Learn more about: 1013 - CompleteExecuteActivityWorkItem"
 title: "1013 - CompleteExecuteActivityWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 31fc57b3-ef2f-48f0-a5de-b4e2c5c9ded7
+ms.topic: article
 ---
 # 1013 - CompleteExecuteActivityWorkItem
 

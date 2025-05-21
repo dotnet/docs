@@ -3,6 +3,7 @@ description: "Learn more about: 1035 - RuntimeTransactionSet"
 title: "1035 - RuntimeTransactionSet"
 ms.date: "03/30/2017"
 ms.assetid: 03b37de9-778c-4beb-b0e3-de73ece6088e
+ms.topic: article
 ---
 # 1035 - RuntimeTransactionSet
 

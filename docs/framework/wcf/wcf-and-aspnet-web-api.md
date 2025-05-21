@@ -3,6 +3,7 @@ title: "WCF and ASP.NET Web API"
 description: Learn whether WCF or the ASP.NET Web API is better suited to your needs by comparing the major features of each technology.
 ms.date: "03/30/2017"
 ms.assetid: 08ceded3-fd9a-4467-9715-c4cbd9c7228e
+ms.topic: article
 ---
 # WCF and ASP.NET Web API
 

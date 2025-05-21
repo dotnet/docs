@@ -3,6 +3,7 @@ description: "Learn more about: XmlSerializer Faults"
 title: "XmlSerializer Faults"
 ms.date: "03/30/2017"
 ms.assetid: c6b80f14-64f4-4162-ae76-71664cf42fd3
+ms.topic: article
 ---
 # XmlSerializer Faults
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1021 - ScheduleBookmarkWorkItem"
 title: "1021 - ScheduleBookmarkWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 2e0da311-b219-4637-9460-90cdafcc4ecd
+ms.topic: article
 ---
 # 1021 - ScheduleBookmarkWorkItem
 

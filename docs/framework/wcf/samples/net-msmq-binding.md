@@ -3,6 +3,7 @@ description: "Learn more about: Net MSMQ Binding"
 title: "Net MSMQ Binding"
 ms.date: "03/30/2017"
 ms.assetid: fe4bb696-f57c-4cb3-9b7e-9d95fe6b8323
+ms.topic: article
 ---
 # Net MSMQ Binding
 

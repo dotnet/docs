@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "behaviors [WCF], system-provided client"
 ms.assetid: d16d3405-be70-4edb-8f62-b5f614ddeca5
+ms.topic: concept-article
 ---
 # Specifying Client Run-Time Behavior
 

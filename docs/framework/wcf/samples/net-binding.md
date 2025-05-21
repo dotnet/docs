@@ -3,6 +3,7 @@ description: "Learn more about: Net Binding"
 title: "Net Binding"
 ms.date: "03/30/2017"
 ms.assetid: 4d10072a-ae0a-486a-b713-49703e26d9bf
+ms.topic: article
 ---
 # Net Binding
 

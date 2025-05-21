@@ -3,6 +3,7 @@ description: "Learn more about: UriTemplate Table Dispatcher Sample"
 title: "UriTemplate Table Dispatcher Sample"
 ms.date: "03/30/2017"
 ms.assetid: 3b32975d-ba90-4c5c-83bc-2fbb48f11c0c
+ms.topic: article
 ---
 # UriTemplate Table Dispatcher Sample
 

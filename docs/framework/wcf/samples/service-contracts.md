@@ -3,6 +3,7 @@ description: "Learn more about: Service Contracts"
 title: "Service Contracts"
 ms.date: "03/30/2017"
 ms.assetid: 9e34b694-aa56-45b3-8dd1-2616705b4fc5
+ms.topic: article
 ---
 # Service Contracts
 

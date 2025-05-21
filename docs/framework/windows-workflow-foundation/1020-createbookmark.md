@@ -3,6 +3,7 @@ description: "Learn more about: 1020 - CreateBookmark"
 title: "1020 - CreateBookmark"
 ms.date: "03/30/2017"
 ms.assetid: 4bee948d-816f-4803-85cc-3883b5e23d10
+ms.topic: article
 ---
 # 1020 - CreateBookmark
 

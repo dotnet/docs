@@ -3,6 +3,7 @@ description: "Learn more about: WCF Analytic Tracing"
 title: "WCF Analytic Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 6029c7c7-3515-4d36-9d43-13e8f4971790
+ms.topic: article
 ---
 # WCF Analytic Tracing
 

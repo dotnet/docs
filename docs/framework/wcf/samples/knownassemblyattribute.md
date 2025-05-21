@@ -3,6 +3,7 @@ description: "Learn more about: KnownAssemblyAttribute"
 title: "KnownAssemblyAttribute"
 ms.date: "03/30/2017"
 ms.assetid: b3bc7f31-95ff-46e1-8308-d206ec426f6e
+ms.topic: article
 ---
 # KnownAssemblyAttribute
 

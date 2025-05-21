@@ -3,6 +3,7 @@ description: "Learn more about: Security in WCF"
 title: "Security in WCF"
 ms.date: "03/30/2017"
 ms.assetid: 05d73638-30a9-43b4-8c86-f27f57b6eef1
+ms.topic: article
 ---
 # Security in WCF
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1027 - StartTransactionContextWorkItem"
 title: "1027 - StartTransactionContextWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 116ae5ec-b9d5-4231-824e-270d00eea7b8
+ms.topic: article
 ---
 # 1027 - StartTransactionContextWorkItem
 

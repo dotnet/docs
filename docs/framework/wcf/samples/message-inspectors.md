@@ -3,6 +3,7 @@ title: "Message Inspectors"
 description: Learn how to implement and configure WCF client and service message inspectors, which provide a message validation mechanism.
 ms.date: "03/30/2017"
 ms.assetid: 9bd1f305-ad03-4dd7-971f-fa1014b97c9b
+ms.topic: how-to
 ---
 # Message Inspectors
 

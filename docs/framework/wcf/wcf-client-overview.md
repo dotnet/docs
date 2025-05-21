@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "clients [WCF], architecture"
 ms.assetid: f60d9bc5-8ade-4471-8ecf-5a07a936c82d
+ms.topic: article
 ---
 # WCF client overview
 

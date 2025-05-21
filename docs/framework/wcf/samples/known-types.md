@@ -3,6 +3,7 @@ description: "Learn more about: Known Types"
 title: "Known Types"
 ms.date: "03/30/2017"
 ms.assetid: 88d83720-ca38-4b2c-86a6-f149ed1d89ec
+ms.topic: article
 ---
 # Known Types
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WS Profile binding"
 ms.assetid: 22d85b19-0135-4141-9179-a0e9c343ad73
+ms.topic: how-to
 ---
 # WSHttpBinding
 

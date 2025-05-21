@@ -3,6 +3,7 @@ description: "Learn more about: WS Dual Http"
 title: "WS Dual Http"
 ms.date: "03/30/2017"
 ms.assetid: 9997eba5-29ec-48db-86f3-fa77b241fb1a
+ms.topic: article
 ---
 # WS Dual Http
 

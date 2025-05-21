@@ -3,6 +3,7 @@ description: "Learn more about: Security validation"
 title: "Security Validation"
 ms.date: "03/30/2017"
 ms.assetid: 48dcd496-0c4f-48ce-8b9b-0e25b77ffa58
+ms.topic: article
 ---
 # Security validation
 

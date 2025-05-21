@@ -3,6 +3,7 @@ description: "Learn more about: Setting the Use and Style Properties"
 title: "Setting the Use and Style properties samples"
 ms.date: "03/30/2017"
 ms.assetid: c09a0600-116f-41cf-900a-1b7e4ea4e300
+ms.topic: how-to
 ---
 # Setting the Use and Style Properties
 

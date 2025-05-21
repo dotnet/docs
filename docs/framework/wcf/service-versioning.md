@@ -3,6 +3,7 @@ description: "Learn more about: Service Versioning"
 title: "Service Versioning"
 ms.date: "03/30/2017"
 ms.assetid: 37575ead-d820-4a67-8059-da11a2ab48e2
+ms.topic: how-to
 ---
 # Service Versioning
 

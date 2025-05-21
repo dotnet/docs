@@ -3,6 +3,7 @@ description: "Learn more about: 1028 - CompleteTransactionContextWorkItem"
 title: "1028 - CompleteTransactionContextWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 95423f9d-d29a-460e-bcd8-096e80af5bd0
+ms.topic: article
 ---
 # 1028 - CompleteTransactionContextWorkItem
 

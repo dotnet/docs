@@ -3,6 +3,7 @@ description: "Learn more about: Typed Client"
 title: "Typed Client"
 ms.date: "03/30/2017"
 ms.assetid: 62c40e8f-e9b4-4b1a-939a-93c37393d343
+ms.topic: article
 ---
 # Typed Client
 

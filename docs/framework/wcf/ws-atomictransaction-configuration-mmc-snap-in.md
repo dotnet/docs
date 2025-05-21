@@ -3,6 +3,7 @@ description: "Learn more about: WS-AtomicTransaction Configuration MMC snap-in"
 title: "WS-AtomicTransaction Configuration MMC Snap-in"
 ms.date: "03/30/2017"
 ms.assetid: 23592973-1d51-44cc-b887-bf8b0d801e9e
+ms.topic: article
 ---
 # WS-AtomicTransaction Configuration MMC snap-in
 

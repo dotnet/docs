@@ -3,6 +3,7 @@ description: "Learn more about: 102 - WorkflowInstanceAbortedRecord"
 title: "102 - WorkflowInstanceAbortedRecord"
 ms.date: "03/30/2017"
 ms.assetid: bde4378d-4eea-4907-aaf2-c1a2bc770a37
+ms.topic: article
 ---
 # 102 - WorkflowInstanceAbortedRecord
 

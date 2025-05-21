@@ -3,6 +3,7 @@ description: "Learn more about: Weakly-typed JSON Serialization Sample"
 title: "Weakly-typed JSON Serialization Sample"
 ms.date: "03/30/2017"
 ms.assetid: 0b30e501-4ef5-474d-9fad-a9d559cf9c52
+ms.topic: article
 ---
 # Weakly-typed JSON Serialization Sample
 

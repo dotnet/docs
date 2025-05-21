@@ -3,6 +3,7 @@ description: "Learn more about: 1036 - RuntimeTransactionCompletionRequested"
 title: "1036 - RuntimeTransactionCompletionRequested"
 ms.date: "03/30/2017"
 ms.assetid: d36b9f44-7c0f-4083-9d3a-9034dd2b98de
+ms.topic: article
 ---
 # 1036 - RuntimeTransactionCompletionRequested
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1003 - WorkflowInstanceCanceled"
 title: "1003 - WorkflowInstanceCanceled"
 ms.date: "03/30/2017"
 ms.assetid: 64754dc2-c160-4bf3-869a-13d56694e2dc
+ms.topic: article
 ---
 # 1003 - WorkflowInstanceCanceled
 

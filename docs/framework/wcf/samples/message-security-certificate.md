@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WS Security"
 ms.assetid: 909333b3-35ec-48f0-baff-9a50161896f6
+ms.topic: how-to
 ---
 # Message Security Certificate
 

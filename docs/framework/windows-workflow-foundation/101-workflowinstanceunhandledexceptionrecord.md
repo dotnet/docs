@@ -3,6 +3,7 @@ description: "Learn more about: 101 - WorkflowInstanceUnhandledExceptionRecord"
 title: "101 - WorkflowInstanceUnhandledExceptionRecord"
 ms.date: "03/30/2017"
 ms.assetid: ab7d50a0-5347-4390-8445-1def4dfdff6a
+ms.topic: article
 ---
 # 101 - WorkflowInstanceUnhandledExceptionRecord
 

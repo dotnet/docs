@@ -3,6 +3,7 @@ description: "Learn more about: WCF Services and Event Tracing for Windows"
 title: "WCF Services and Event Tracing for Windows"
 ms.date: "03/30/2017"
 ms.assetid: eda4355d-0bd0-4dc9-80a2-d2c832152272
+ms.topic: article
 ---
 # WCF Services and Event Tracing for Windows
 

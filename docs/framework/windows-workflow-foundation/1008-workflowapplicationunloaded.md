@@ -3,6 +3,7 @@ description: "Learn more about: 1008 - WorkflowApplicationUnloaded"
 title: "1008 - WorkflowApplicationUnloaded"
 ms.date: "03/30/2017"
 ms.assetid: a605b780-4a7e-43ab-92e7-0a3b01d053b0
+ms.topic: article
 ---
 # 1008 - WorkflowApplicationUnloaded
 

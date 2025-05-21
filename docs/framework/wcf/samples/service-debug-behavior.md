@@ -3,6 +3,7 @@ description: "Learn more about: Service Debug Behavior"
 title: "Service Debug Behavior"
 ms.date: "03/30/2017"
 ms.assetid: 9d8fd3fb-dc39-427a-8235-336a7e7162ba
+ms.topic: how-to
 ---
 # Service Debug Behavior
 

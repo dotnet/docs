@@ -3,6 +3,7 @@ description: "Learn more about: 1024 - CreateBookmarkScope"
 title: "1024 - CreateBookmarkScope"
 ms.date: "03/30/2017"
 ms.assetid: e1ed8fc2-2a31-4878-a851-5db8b869283a
+ms.topic: article
 ---
 # 1024 - CreateBookmarkScope
 

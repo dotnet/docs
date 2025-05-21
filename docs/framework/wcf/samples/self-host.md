@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Self hosted service"
   - "Self Host Sample [Windows Communication Foundation]"
 ms.assetid: 05e68661-1ddf-4abf-a899-9bb1b8272a5b
+ms.topic: article
 ---
 # Self-Host
 

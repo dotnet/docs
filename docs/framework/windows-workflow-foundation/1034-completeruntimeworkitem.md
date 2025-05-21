@@ -3,6 +3,7 @@ description: "Learn more about: 1034 - CompleteRuntimeWorkItem"
 title: "1034 - CompleteRuntimeWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 45620011-8b04-4f87-ab5a-65b24145e17d
+ms.topic: article
 ---
 # 1034 - CompleteRuntimeWorkItem
 

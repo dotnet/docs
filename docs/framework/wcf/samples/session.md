@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Sessions"
 ms.assetid: 36e1db50-008c-4b32-8d09-b56e790b8417
+ms.topic: article
 ---
 # Session
 

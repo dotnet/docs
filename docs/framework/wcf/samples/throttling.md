@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "service behaviors, throttling sample"
   - "Throttling Sample [Windows Communication Foundation]"
 ms.assetid: 40bb3582-8ae9-4410-96f0-6c515bfaf47c
+ms.topic: how-to
 ---
 # Throttling
 

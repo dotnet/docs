@@ -3,6 +3,7 @@ description: "Learn more about: Object References"
 title: "Object References"
 ms.date: "03/30/2017"
 ms.assetid: 7a93d260-91c3-4448-8f7a-a66fb562fc23
+ms.topic: how-to
 ---
 # Object References
 

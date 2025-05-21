@@ -3,6 +3,7 @@ description: "Learn more about: 1012 - StartExecuteActivityWorkItem"
 title: "1012 - StartExecuteActivityWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 29e9b1c6-c5d7-4b58-b59d-a06a923d3c80
+ms.topic: article
 ---
 # 1012 - StartExecuteActivityWorkItem
 

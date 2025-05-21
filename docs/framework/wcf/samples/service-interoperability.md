@@ -3,6 +3,7 @@ description: "Learn more about: Service Interoperability"
 title: "Service Interoperability"
 ms.date: "03/30/2017"
 ms.assetid: 3628557f-b8b3-47fc-8fdc-0c7d2e4268bd
+ms.topic: article
 ---
 # Service Interoperability
 

@@ -3,6 +3,7 @@ description: "Learn more about: Multiple Contracts"
 title: "Multiple Contracts"
 ms.date: "03/30/2017"
 ms.assetid: 2bef319b-fe9c-4d49-ac6c-dfb23eb35099
+ms.topic: article
 ---
 # Multiple Contracts
 

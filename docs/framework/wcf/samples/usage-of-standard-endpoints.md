@@ -3,6 +3,7 @@ description: "Learn more about: Usage of Standard Endpoints"
 title: "Usage of Standard Endpoints"
 ms.date: "03/30/2017"
 ms.assetid: ecd6a62f-9619-4778-a497-6f888087a9ea
+ms.topic: article
 ---
 # Usage of Standard Endpoints
 

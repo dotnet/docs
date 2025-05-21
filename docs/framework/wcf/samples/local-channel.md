@@ -3,6 +3,7 @@ description: "Learn more about: Local Channel"
 title: "Local Channel"
 ms.date: "03/30/2017"
 ms.assetid: fa1917a4-f701-4e82-a439-14a16282c7cc
+ms.topic: article
 ---
 # Local Channel
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1025 - BookmarkScopeInitialized"
 title: "1025 - BookmarkScopeInitialized"
 ms.date: "03/30/2017"
 ms.assetid: 63584434-e709-471d-9e96-97d3d99e70d6
+ms.topic: article
 ---
 # 1025 - BookmarkScopeInitialized
 

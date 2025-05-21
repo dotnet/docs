@@ -3,6 +3,7 @@ description: "Learn more about: Transport: Custom Transactions over UDP Sample"
 title: "Transport: Custom Transactions over UDP Sample"
 ms.date: "03/30/2017"
 ms.assetid: 6cebf975-41bd-443e-9540-fd2463c3eb23
+ms.topic: how-to
 ---
 # Transport: Custom Transactions over UDP Sample
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1029 - ScheduleFaultWorkItem"
 title: "1029 - ScheduleFaultWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 3a56b29e-f740-459d-8576-d81e58bf5a03
+ms.topic: article
 ---
 # 1029 - ScheduleFaultWorkItem
 

@@ -3,6 +3,7 @@ description: "Learn more about: Message Queueing Integration"
 title: "Message Queueing Integration"
 ms.date: "03/30/2017"
 ms.assetid: 8d2b47a0-5d51-45b5-9633-b62e064e8ea4
+ms.topic: article
 ---
 # Message Queueing Integration
 

@@ -3,6 +3,7 @@ description: "Learn more about: 1019 - CompleteCancelActivityWorkItem"
 title: "1019 - CompleteCancelActivityWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 75a4a1ab-e5a3-4f4e-88e4-d19806e671d7
+ms.topic: article
 ---
 # 1019 - CompleteCancelActivityWorkItem
 

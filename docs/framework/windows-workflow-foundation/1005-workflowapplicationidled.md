@@ -3,6 +3,7 @@ description: "Learn more about: 1005 - WorkflowApplicationIdled"
 title: "1005 - WorkflowApplicationIdled"
 ms.date: "03/30/2017"
 ms.assetid: 74d77dfa-f20d-4fe9-a6ae-e6d1b5fe4182
+ms.topic: article
 ---
 # 1005 - WorkflowApplicationIdled
 

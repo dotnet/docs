@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "technology overview [WCF]"
   - "WCF [WCF], technology overview"
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
+ms.topic: concept-article
 ---
 # What Is Windows Communication Foundation
 

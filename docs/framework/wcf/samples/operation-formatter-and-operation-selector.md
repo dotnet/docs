@@ -3,6 +3,7 @@ description: "Learn more about: Operation Formatter and Operation Selector"
 title: "Operation Formatter and Operation Selector"
 ms.date: "03/30/2017"
 ms.assetid: 1c27e9fe-11f8-4377-8140-828207b98a0e
+ms.topic: article
 ---
 # Operation Formatter and Operation Selector
 

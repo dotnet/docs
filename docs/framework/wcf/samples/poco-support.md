@@ -3,6 +3,7 @@ description: "Learn more about: POCO Support"
 title: "POCO Support"
 ms.date: "03/30/2017"
 ms.assetid: 3846ca73-2819-4ca2-8367-dc739dde5a5b
+ms.topic: article
 ---
 # POCO Support
 

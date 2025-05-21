@@ -3,6 +3,7 @@ description: "Learn more about: XMLSerializer Sample"
 title: "XMLSerializer Sample"
 ms.date: "03/30/2017"
 ms.assetid: 7d134453-9a35-4202-ba77-9ca3a65babc3
+ms.topic: article
 ---
 # XMLSerializer Sample
 

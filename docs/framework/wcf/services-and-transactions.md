@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "service contracts [WCF], designing services and transactions"
 ms.assetid: 864813ff-2709-4376-912d-f5c8d318c460
+ms.topic: article
 ---
 # Services and Transactions
 

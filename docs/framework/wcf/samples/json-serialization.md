@@ -3,6 +3,7 @@ description: "Learn more about: DataContractJsonSerializer sample"
 title: "DataContractJsonSerializer sample"
 ms.date: "03/30/2017"
 ms.assetid: 3c2c4747-7510-4bdf-b4fe-64f98428ef4a
+ms.topic: article
 ---
 # DataContractJsonSerializer sample
 

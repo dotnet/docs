@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF, tools"
   - "Windows Communication Foundation, tools"
+ms.topic: article
 ---
 # Windows Communication Foundation Tools
 

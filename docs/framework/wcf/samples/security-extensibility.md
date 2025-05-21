@@ -3,6 +3,7 @@ description: "Learn more about: Security Extensibility"
 title: "Security Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 2afe044d-df4a-49a4-9865-38700474c3dd
+ms.topic: article
 ---
 # Security Extensibility
 

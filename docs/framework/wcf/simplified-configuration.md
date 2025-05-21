@@ -2,6 +2,7 @@
 title: "Simplified Configuration"
 description: Learn about simplified configuration for WCF services. .NET Framework 4.6.1 provides a way to reduce the size and complexity of service configuration.
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Simplified Configuration
 

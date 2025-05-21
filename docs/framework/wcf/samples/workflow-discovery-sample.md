@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Discovery Sample"
 title: "Workflow Discovery Sample"
 ms.date: "03/30/2017"
 ms.assetid: 82cc43f1-3c8f-4771-ac19-a75ac936e2c3
+ms.topic: article
 ---
 # Workflow Discovery Sample
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WS Security"
 ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
+ms.topic: how-to
 ---
 # Message Security Windows
 

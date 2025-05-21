@@ -3,6 +3,7 @@ description: "Learn more about: WMI Provider"
 title: "WMI Provider"
 ms.date: "03/30/2017"
 ms.assetid: 462f0db3-f4a4-4a4b-ac26-41fc25c670a4
+ms.topic: article
 ---
 # WMI Provider
 

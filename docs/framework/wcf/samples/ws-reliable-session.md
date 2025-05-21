@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Reliable session"
 ms.assetid: 86e914f2-060b-432b-bd17-333695317745
+ms.topic: article
 ---
 # WS Reliable Session
 

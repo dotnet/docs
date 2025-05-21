@@ -3,6 +3,7 @@ description: "Learn more about: X.509 Certificate Validator"
 title: "X.509 Certificate Validator"
 ms.date: "03/30/2017"
 ms.assetid: 3b042379-02c4-4395-b927-e57c842fd3e0
+ms.topic: article
 ---
 # X.509 Certificate Validator
 

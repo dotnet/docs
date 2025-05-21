@@ -3,6 +3,7 @@ description: "Learn more about: Service Auditing Behavior"
 title: "Service Auditing Behavior"
 ms.date: "03/30/2017"
 ms.assetid: 59bf0cda-e496-4418-a3a1-2f0f6e85f8ce
+ms.topic: how-to
 ---
 # Service Auditing Behavior
 

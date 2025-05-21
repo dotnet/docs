@@ -3,6 +3,7 @@ description: "Learn more about: 1009 - ActivityScheduled"
 title: "1009 - ActivityScheduled"
 ms.date: "03/30/2017"
 ms.assetid: 307e38b6-d47e-47a4-9708-e74d8314b1a1
+ms.topic: article
 ---
 # 1009 - ActivityScheduled
 

@@ -3,6 +3,7 @@ title: "Simplified Configuration for WCF Services"
 description: Learn how to implement and configure a typical service and client using WCF. The service communicates by using an endpoint specified in a configuration file.
 ms.date: "03/30/2017"
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
+ms.topic: article
 ---
 # Simplified Configuration for WCF Services
 

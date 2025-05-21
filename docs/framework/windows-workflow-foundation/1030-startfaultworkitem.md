@@ -3,6 +3,7 @@ description: "Learn more about: 1030 - StartFaultWorkItem"
 title: "1030 - StartFaultWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: e1601fb9-0bc6-4dbe-816f-f24914063d34
+ms.topic: article
 ---
 # 1030 - StartFaultWorkItem
 

@@ -3,6 +3,7 @@ description: "Learn more about: Transport Extensibility"
 title: "Transport Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 3c9108be-f60f-4035-9f57-1da58c325420
+ms.topic: article
 ---
 # Transport Extensibility
 

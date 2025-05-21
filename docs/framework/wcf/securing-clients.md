@@ -4,6 +4,7 @@ description: "Learn more about: Securing Clients"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "clients [WCF], security considerations"
+ms.topic: how-to
 ---
 # Securing Clients
 

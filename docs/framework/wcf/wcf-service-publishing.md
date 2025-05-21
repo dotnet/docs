@@ -3,6 +3,7 @@ title: "WCF Service Publishing"
 description: WCF Service Publishing helps you deploy your application to a production environment for testing purposes. 
 ms.date: "03/30/2017"
 ms.assetid: c806b253-cd47-4b96-b831-e73cbf08808f
+ms.topic: article
 ---
 # WCF Service Publishing
 

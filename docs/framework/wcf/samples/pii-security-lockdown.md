@@ -3,6 +3,7 @@ description: "Learn more about: PII Security Lockdown"
 title: "PII Security Lockdown"
 ms.date: "03/30/2017"
 ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
+ms.topic: article
 ---
 # PII Security Lockdown
 

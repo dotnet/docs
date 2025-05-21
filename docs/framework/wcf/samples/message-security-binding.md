@@ -3,6 +3,7 @@ description: "Learn more about: Message Security Binding"
 title: "Message Security Binding"
 ms.date: "03/30/2017"
 ms.assetid: a4570ce7-864e-461b-85d8-0f7bcc53c2c8
+ms.topic: article
 ---
 # Message Security Binding
 

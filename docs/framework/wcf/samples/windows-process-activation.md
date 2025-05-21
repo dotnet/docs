@@ -3,6 +3,7 @@ description: "Learn more about: Windows Process Activation"
 title: "Windows Process Activation"
 ms.date: "03/30/2017"
 ms.assetid: 37b79642-1e6f-44b3-9777-98af57443bfa
+ms.topic: article
 ---
 # Windows Process Activation
 

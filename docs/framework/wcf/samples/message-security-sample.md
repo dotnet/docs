@@ -3,6 +3,7 @@ description: "Learn more about: Message Security Sample"
 title: "Message Security Sample"
 ms.date: "03/30/2017"
 ms.assetid: 82444166-6288-493a-85d4-85f43f134d19
+ms.topic: how-to
 ---
 # Message Security Sample
 

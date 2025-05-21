@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Transactions"
 ms.assetid: f8eecbcf-990a-4dbb-b29b-c3f9e3b396bd
+ms.topic: article
 ---
 # WS Transaction Flow
 

@@ -3,6 +3,7 @@ description: "Learn more about: Routing Services"
 title: "Routing Services"
 ms.date: "03/30/2017"
 ms.assetid: 9a430b4c-46eb-4d15-afbc-8834f0e985ab
+ms.topic: concept-article
 ---
 # Routing Services
 

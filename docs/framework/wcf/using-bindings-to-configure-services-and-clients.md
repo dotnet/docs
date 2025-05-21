@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "bindings [WCF], using"
 ms.assetid: c39479c3-0766-4a17-ba4c-97a74607f392
+ms.topic: how-to
 ---
 # Using Bindings to Configure Services and Clients
 

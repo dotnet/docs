@@ -3,6 +3,7 @@ description: "Learn more about: MSMQ Activation"
 title: "MSMQ Activation"
 ms.date: "03/30/2017"
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
+ms.topic: article
 ---
 # MSMQ Activation
 

@@ -3,6 +3,7 @@ description: "Learn more about: Route by Body"
 title: "Route by Body"
 ms.date: "03/30/2017"
 ms.assetid: 07a6fc3b-c360-42e0-b663-3d0f22cf4502
+ms.topic: how-to
 ---
 # Route by Body
 

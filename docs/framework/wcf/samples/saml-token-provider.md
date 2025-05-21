@@ -3,6 +3,7 @@ description: "Learn more about: SAML Token Provider"
 title: "SAML Token Provider"
 ms.date: "03/30/2017"
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
+ms.topic: article
 ---
 # SAML Token Provider
 

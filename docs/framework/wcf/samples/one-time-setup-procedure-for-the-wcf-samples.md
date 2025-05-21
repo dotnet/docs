@@ -3,6 +3,7 @@ description: "Learn more about: One-Time Setup Procedure for the Windows Communi
 title: "One-Time Setup Procedure for the Windows Communication Foundation Samples"
 ms.date: "03/30/2017"
 ms.assetid: a5848ffd-3eb5-432d-812e-bd948ccb6bca
+ms.topic: install-set-up-deploy
 ---
 # One-Time Setup Procedure for the Windows Communication Foundation Samples
 

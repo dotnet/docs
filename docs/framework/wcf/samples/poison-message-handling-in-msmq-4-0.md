@@ -3,6 +3,7 @@ description: "Learn more about: Poison Message Handling in MSMQ 4.0"
 title: "Poison Message Handling in MSMQ 4.0"
 ms.date: "03/30/2017"
 ms.assetid: ec8d59e3-9937-4391-bb8c-fdaaf2cbb73e
+ms.topic: how-to
 ---
 # Poison Message Handling in MSMQ 4.0
 

@@ -3,6 +3,7 @@ description: "Learn more about: Service Description"
 title: "Service Description"
 ms.date: "03/30/2017"
 ms.assetid: 7034b5d6-d608-45f3-b57d-ec135f83ff24
+ms.topic: how-to
 ---
 # Service Description
 

@@ -3,6 +3,7 @@ description: "Learn more about: WS 2007 Federation HTTP Binding"
 title: "WS 2007 Federation HTTP Binding"
 ms.date: "03/30/2017"
 ms.assetid: 91c1b477-a96e-4bf5-9330-5e9312113371
+ms.topic: article
 ---
 # WS 2007 Federation HTTP Binding
 

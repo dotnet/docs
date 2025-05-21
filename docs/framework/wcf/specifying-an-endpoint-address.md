@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "endpoints [WCF], addressing"
 ms.assetid: ac24f5ad-9558-4298-b168-c473c68e819b
+ms.topic: concept-article
 ---
 # Specifying an Endpoint Address
 

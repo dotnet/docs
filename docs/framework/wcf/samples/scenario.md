@@ -3,6 +3,7 @@ description: "Learn more about the WCF scenario samples."
 title: "Scenario samples"
 ms.date: "03/30/2017"
 ms.assetid: 816557e0-f676-4731-95c5-b02cbef3d8d7
+ms.topic: article
 ---
 # Scenario samples
 

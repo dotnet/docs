@@ -3,6 +3,7 @@ description: "Learn more about: Message Queuing to Windows Communication Foundat
 title: "Message Queuing to Windows Communication Foundation"
 ms.date: "03/30/2017"
 ms.assetid: 6d718eb0-9f61-4653-8a75-d2dac8fb3520
+ms.topic: how-to
 ---
 # Message Queuing to Windows Communication Foundation
 

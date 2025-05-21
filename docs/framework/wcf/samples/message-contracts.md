@@ -3,6 +3,7 @@ description: "Learn more about: Message Contracts"
 title: "Message Contracts"
 ms.date: "03/30/2017"
 ms.assetid: e3df7c11-c653-4796-be47-26b09c35b691
+ms.topic: article
 ---
 # Message Contracts
 

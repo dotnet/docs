@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "Win32ShareProcess service type"
   - "Windows Service applications, lifetime"
 ms.assetid: 1b1b5e67-3ff3-40c0-8154-322cfd6ef0ae
+ms.topic: concept-article
 ---
 # Introduction to Windows Service Applications
 

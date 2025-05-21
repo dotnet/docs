@@ -3,6 +3,7 @@ description: "Learn more about: Token Provider"
 title: "Token Provider"
 ms.date: "03/30/2017"
 ms.assetid: 947986cf-9946-4987-84e5-a14678d96edb
+ms.topic: article
 ---
 # Token Provider
 

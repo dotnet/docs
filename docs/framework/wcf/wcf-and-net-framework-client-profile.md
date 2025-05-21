@@ -3,6 +3,7 @@ description: "Learn more about: WCF and .NET Framework Client Profile"
 title: "WCF and .NET Framework Client Profile"
 ms.date: "03/30/2017"
 ms.assetid: b9f836a7-68f4-4e7e-a3cc-a1bae5d775d6
+ms.topic: article
 ---
 # WCF and .NET Framework Client Profile
 

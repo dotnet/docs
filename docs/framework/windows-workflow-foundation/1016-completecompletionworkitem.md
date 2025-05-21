@@ -3,6 +3,7 @@ description: "Learn more about: 1016 - CompleteCompletionWorkItem"
 title: "1016 - CompleteCompletionWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 246929fb-6f14-440a-814b-cd8349350644
+ms.topic: article
 ---
 # 1016 - CompleteCompletionWorkItem
 

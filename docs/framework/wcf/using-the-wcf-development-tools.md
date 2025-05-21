@@ -3,6 +3,7 @@ description: "Learn more about: Using the WCF Development Tools"
 title: "Using the WCF Development Tools"
 ms.date: "03/30/2017"
 ms.assetid: 054adb87-c244-4d5a-83d1-0b2b44bd454b
+ms.topic: concept-article
 ---
 # Using the WCF Development Tools
 

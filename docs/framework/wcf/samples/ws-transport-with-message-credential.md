@@ -3,6 +3,7 @@ description: "Learn more about: WS Transport With Message Credential"
 title: "WS Transport With Message Credential"
 ms.date: "03/30/2017"
 ms.assetid: 0d092f3a-b309-439b-920b-66d8f46a0e3c
+ms.topic: article
 ---
 # WS Transport With Message Credential
 

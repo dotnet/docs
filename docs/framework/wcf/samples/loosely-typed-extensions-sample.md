@@ -3,6 +3,7 @@ description: "Learn more about: Loosely-Typed Extensions Sample"
 title: "Loosely-Typed Extensions Sample"
 ms.date: "03/30/2017"
 ms.assetid: 56ce265b-8163-4b85-98e7-7692a12c4357
+ms.topic: article
 ---
 # Loosely typed extensions sample
 

@@ -3,6 +3,7 @@ description: "Learn more about: Net.TCP Port Sharing Sample"
 title: "Net.TCP Port Sharing Sample"
 ms.date: "03/30/2017"
 ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
+ms.topic: article
 ---
 # Net.TCP Port Sharing Sample
 

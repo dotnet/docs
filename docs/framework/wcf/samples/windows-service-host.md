@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "NT Service"
   - "NT Service Host Sample [Windows Communication Foundation]"
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
+ms.topic: article
 ---
 # Windows Service Host
 

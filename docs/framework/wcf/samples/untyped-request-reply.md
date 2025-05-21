@@ -3,6 +3,7 @@ description: "Learn more about: Untyped Request/Reply"
 title: "Untyped Request-Reply"
 ms.date: "03/30/2017"
 ms.assetid: 0bf0f9d9-7caf-4d3d-8c9e-2d468cca16a5
+ms.topic: article
 ---
 # Untyped Request/Reply
 

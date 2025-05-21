@@ -3,6 +3,7 @@ description: "Learn more about: MTOM Encoding"
 title: "MTOM Encoding"
 ms.date: "03/30/2017"
 ms.assetid: 820e316f-4ee1-4eb5-ae38-b6a536e8a14f
+ms.topic: article
 ---
 # MTOM Encoding
 

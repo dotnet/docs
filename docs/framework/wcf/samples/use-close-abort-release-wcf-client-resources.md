@@ -3,6 +3,7 @@ title: "Use Close and Abort to release WCF client resources"
 description: "Dispose can fail and throw exceptions when the network fails. That can cause unwanted behavior. Instead, use Close and Abort to release client resources when the network has failed."
 ms.date: "11/12/2018"
 ms.assetid: aff82a8d-933d-4bdc-b0c2-c2f7527204fb
+ms.topic: how-to
 ---
 
 # Close and Abort release resources safely when network connections have dropped

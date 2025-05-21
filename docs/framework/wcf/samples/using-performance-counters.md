@@ -3,6 +3,7 @@ description: "Learn more about: Using Performance Counters"
 title: "Using Performance Counters"
 ms.date: "03/30/2017"
 ms.assetid: 00a787af-1876-473c-a48d-f52b51e28a3f
+ms.topic: how-to
 ---
 # Using Performance Counters
 

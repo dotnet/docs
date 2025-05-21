@@ -3,6 +3,7 @@ description: "Learn more about: 1017 - ScheduleCancelActivityWorkItem"
 title: "1017 - ScheduleCancelActivityWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 864546ab-d65c-4989-8fcb-537ba03a3cdd
+ms.topic: article
 ---
 # 1017 - ScheduleCancelActivityWorkItem
 

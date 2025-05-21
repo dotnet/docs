@@ -3,6 +3,7 @@ description: "Learn more about: Tool Samples"
 title: "Tool Samples"
 ms.date: "03/30/2017"
 ms.assetid: ccf90c64-31de-4a18-9208-28887735ce80
+ms.topic: article
 ---
 # Tool Samples
 

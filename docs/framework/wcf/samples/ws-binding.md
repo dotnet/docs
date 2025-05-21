@@ -3,6 +3,7 @@ description: "Learn more about: WS Binding"
 title: "WS Binding"
 ms.date: "03/30/2017"
 ms.assetid: 629945b2-d771-46d7-a87b-5df3b2e460da
+ms.topic: article
 ---
 # WS Binding
 

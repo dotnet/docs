@@ -3,6 +3,7 @@ description: "Learn more about: Running the Windows Communication Foundation Sam
 title: "Running the Windows Communication Foundation Samples"
 ms.date: "03/30/2017"
 ms.assetid: db8a83da-95c1-4a21-a9d2-48caeb6398ea
+ms.topic: how-to
 ---
 # Running the Windows Communication Foundation Samples
 

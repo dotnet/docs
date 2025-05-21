@@ -3,6 +3,7 @@ description: "Learn more about: UriTemplate Table Sample"
 title: "UriTemplate Table Sample"
 ms.date: "03/30/2017"
 ms.assetid: 5dd1d38f-1989-4c64-820d-821f5a02216a
+ms.topic: article
 ---
 # UriTemplate Table Sample
 

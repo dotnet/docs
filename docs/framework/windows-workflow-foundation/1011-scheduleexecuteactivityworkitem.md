@@ -3,6 +3,7 @@ description: "Learn more about: 1011 - ScheduleExecuteActivityWorkItem"
 title: "1011 - ScheduleExecuteActivityWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: e503ae46-ad6b-4fcb-8c0e-146d59a8eff1
+ms.topic: article
 ---
 # 1011 - ScheduleExecuteActivityWorkItem
 

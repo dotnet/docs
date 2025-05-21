@@ -3,6 +3,7 @@ title: "WCF Test Client (WcfTestClient.exe)"
 description: Learn about WCF Test Client, which provides seamless service testing when combined with WCF Service Host. Submit client test values and view service responses.
 ms.date: "03/30/2017"
 ms.assetid: d4302855-677f-4640-aa90-c5d785d72fb7
+ms.topic: article
 ---
 # WCF Test Client (WcfTestClient.exe)
 

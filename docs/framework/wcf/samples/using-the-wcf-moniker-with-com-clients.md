@@ -3,6 +3,7 @@ description: "Learn more about: Using the WCF Moniker with COM Clients"
 title: "Using the WCF Moniker with COM Clients"
 ms.date: "03/30/2017"
 ms.assetid: e2799bfe-88bd-49d7-9d6d-ac16a9b16b04
+ms.topic: how-to
 ---
 # Using the WCF Moniker with COM Clients
 

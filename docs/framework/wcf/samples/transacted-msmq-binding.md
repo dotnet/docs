@@ -3,6 +3,7 @@ description: "Learn more about: Transacted MSMQ Binding"
 title: "Transacted MSMQ Binding"
 ms.date: "03/30/2017"
 ms.assetid: 71f5cb8d-f1df-4e1e-b8a2-98e734a75c37
+ms.topic: article
 ---
 
 # Transacted MSMQ Binding

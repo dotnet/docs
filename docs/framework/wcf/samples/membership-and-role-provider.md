@@ -2,6 +2,7 @@
 description: "Learn about a sample that demonstrates how a service can use the ASP.NET membership and role providers to authenticate and authorize clients."
 title: "Membership and Role Provider"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Membership and Role Provider
 

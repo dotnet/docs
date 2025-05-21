@@ -3,6 +3,7 @@ description: "Learn more about: 1031 - CompleteFaultWorkItem"
 title: "1031 - CompleteFaultWorkItem"
 ms.date: "03/30/2017"
 ms.assetid: 95f4ccb0-6be4-41f3-9330-fae43165828f
+ms.topic: article
 ---
 # 1031 - CompleteFaultWorkItem
 

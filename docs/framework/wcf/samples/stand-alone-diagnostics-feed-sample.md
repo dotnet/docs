@@ -3,6 +3,7 @@ description: "Learn more about: Stand-Alone Diagnostics Feed Sample"
 title: "Stand-Alone Diagnostics Feed Sample"
 ms.date: "03/30/2017"
 ms.assetid: d31c6c1f-292c-4d95-8e23-ed8565970ea5
+ms.topic: article
 ---
 # Stand-Alone Diagnostics Feed Sample
 

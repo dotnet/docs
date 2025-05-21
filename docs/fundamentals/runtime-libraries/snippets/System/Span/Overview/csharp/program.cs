@@ -6,13 +6,13 @@ class Program
 {
     static void Main()
     {
-        //CreateSpanFromArray();
-        //Console.WriteLine("-----");
-        //CreateSpanFromNativeMemory();
-        //Console.WriteLine("-----");
-        //CreateSpanFromStack();
-        //WorkWithSpans();
-        //Console.WriteLine("-----");
+        CreateSpanFromArray();
+        Console.WriteLine("-----");
+        CreateSpanFromNativeMemory();
+        Console.WriteLine("-----");
+        CreateSpanFromStack();
+        WorkWithSpans();
+        Console.WriteLine("-----");
         ProgramB.WorkWithSpans();
     }
 

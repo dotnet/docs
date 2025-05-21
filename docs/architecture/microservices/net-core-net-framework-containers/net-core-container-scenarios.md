@@ -2,6 +2,7 @@
 title: When to choose .NET 8 for Docker containers
 description: .NET Microservices Architecture for Containerized .NET Applications | When to choose .NET for Docker containers
 ms.date: 11/19/2021
+ms.topic: article
 ---
 # When to choose .NET for Docker containers
 

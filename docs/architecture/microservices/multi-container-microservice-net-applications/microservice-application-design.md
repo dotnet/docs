@@ -2,6 +2,7 @@
 title: Designing a microservice-oriented application
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the benefits and downsides of a microservice-oriented application, so you can take an informed decision.
 ms.date: 01/13/2021
+ms.topic: concept-article
 ---
 
 # Design a microservice-oriented application

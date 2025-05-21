@@ -4,6 +4,7 @@ description: Learn how to use the Microsoft.Extensions.AI libraries to integrate
 author: IEvangelist
 ms.author: dapine
 ms.date: 04/29/2025
+ms.topic: article
 ---
 
 # Microsoft.Extensions.AI libraries

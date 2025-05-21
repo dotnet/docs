@@ -4,6 +4,7 @@ description: Learn about gRPC, its role in cloud-native applications, and how it
 author: robvet
 no-loc: [Blazor, "Blazor WebAssembly"]
 ms.date: 12/14/2023
+ms.topic: article
 ---
 
 # gRPC

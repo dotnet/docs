@@ -2,6 +2,7 @@
 title: Seedwork (reusable base classes and interfaces for your domain model)
 description: .NET Microservices Architecture for Containerized .NET Applications | Use the seedwork concept as a starting point to start implementation for a DDD-oriented domain model.
 ms.date: 10/08/2018
+ms.topic: article
 ---
 # Seedwork (reusable base classes and interfaces for your domain model)
 

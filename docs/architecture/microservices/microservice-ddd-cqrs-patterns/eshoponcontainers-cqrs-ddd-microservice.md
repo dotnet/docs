@@ -2,6 +2,7 @@
 title: Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the way CQRS is implemented in the ordering microservice in eShopOnContainers.
 ms.date: 01/13/2021
+ms.topic: concept-article
 ---
 # Apply CQRS and CQS approaches in a DDD microservice in eShopOnContainers
 

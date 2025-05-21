@@ -2,6 +2,7 @@
 title: Designing the infrastructure persistence layer
 description: .NET Microservices Architecture for Containerized .NET Applications | Explore the repository pattern in the design of the infrastructure persistence layer.
 ms.date: 10/08/2018
+ms.topic: how-to
 ---
 # Design the infrastructure persistence layer
 

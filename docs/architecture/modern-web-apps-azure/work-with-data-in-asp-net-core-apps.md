@@ -5,6 +5,7 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 12/12/2021
 no-loc: [Blazor, WebAssembly]
+ms.topic: how-to
 ---
 # Working with Data in ASP.NET Core Apps
 

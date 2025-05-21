@@ -1,7 +1,7 @@
 ---
 title: Interpret the analysis results from the Azure Migrate application and code assessment for .NET
 description: Learn how to interpret the results the analysis of .NET applications with the Azure Migrate application and code assessment tool.
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 11/13/2023
 author: codemillmatt
 ms.author: masoucou

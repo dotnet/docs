@@ -3,6 +3,7 @@ title: Candidate apps for cloud native
 description: Learn which types of applications benefit from a cloud-native approach
 author: robvet
 ms.date: 12/14/2023
+ms.topic: article
 ---
 
 # Candidate apps for cloud native

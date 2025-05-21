@@ -3,6 +3,7 @@ title: Cloud-native resiliency
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Resiliency
 author: robvet
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Cloud-native resiliency

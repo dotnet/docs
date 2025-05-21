@@ -2,6 +2,7 @@
 title: Implement background tasks in microservices with IHostedService and the BackgroundService class
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the new options to use IHostedService and BackgroundService to implement background tasks in microservices .NET Core.
 ms.date: 01/13/2021
+ms.topic: how-to
 ---
 # Implement background tasks in microservices with IHostedService and the BackgroundService class
 

@@ -2,6 +2,7 @@
 title: Centralized configuration
 description: Centralizing configuration for cloud-native applications using Azure App Configuration and AzureKey Vault.
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Centralized configuration

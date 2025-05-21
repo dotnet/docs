@@ -3,6 +3,7 @@ title: Application resiliency patterns
 description: Architecting Cloud Native .NET Apps for Azure | Application Resiliency Patterns
 author: robvet
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Application resiliency patterns

@@ -3,6 +3,7 @@ title: Securing .NET Microservices and Web Applications
 description: Security in .NET Microservices and Web Applications - Get to know the authentication options in ASP.NET Core web applications.
 author: mjrousos
 ms.date: 01/13/2021
+ms.topic: how-to
 ---
 # Make secure .NET Microservices and Web Applications
 

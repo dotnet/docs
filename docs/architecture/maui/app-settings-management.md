@@ -4,6 +4,7 @@ description: Managing persistent configurations in .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # Application settings management

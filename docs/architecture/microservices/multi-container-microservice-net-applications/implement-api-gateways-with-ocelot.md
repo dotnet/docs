@@ -2,6 +2,7 @@
 title: Implementing API Gateways with Ocelot
 description: Learn how to implement API Gateways with Ocelot and how to use Ocelot in a container-based environment.
 ms.date: 06/23/2021
+ms.topic: how-to
 ---
 
 # Implement API Gateways with Ocelot

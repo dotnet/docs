@@ -2,6 +2,7 @@
 title: Testing ASP.NET Core services and web apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Explore an architecture for testing ASP.NET Core services and web apps in containers.
 ms.date: 01/13/2021
+ms.topic: how-to
 ---
 
 # Testing ASP.NET Core services and web apps

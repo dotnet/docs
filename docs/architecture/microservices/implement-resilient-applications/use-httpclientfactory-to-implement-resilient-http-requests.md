@@ -2,6 +2,7 @@
 title: Use IHttpClientFactory to implement resilient HTTP requests
 description: Learn how to use IHttpClientFactory, available since .NET Core 2.1, for creating `HttpClient` instances, making it easy for you to use it in your applications.
 ms.date: 01/13/2021
+ms.topic: how-to
 ---
 # Use IHttpClientFactory to implement resilient HTTP requests
 

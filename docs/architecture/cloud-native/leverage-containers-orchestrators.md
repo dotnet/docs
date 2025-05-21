@@ -2,6 +2,7 @@
 title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Leveraging containers and orchestrators

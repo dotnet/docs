@@ -2,6 +2,7 @@
 title: Client-side validation (validation in the presentation layers)
 description: .NET Microservices Architecture for Containerized .NET Applications | Explore the key concepts of client-side validation.
 ms.date: 10/08/2018
+ms.topic: article
 ---
 # Client-side validation (validation in the presentation layers)
 

@@ -2,6 +2,7 @@
 title: Creating composite UI based on microservices
 description: Microservices architecture is not only for the back end. Get a peek view at using it in the front end.
 ms.date: 01/13/2021
+ms.topic: concept-article
 ---
 # Creating composite UI based on microservices
 

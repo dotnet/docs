@@ -4,6 +4,7 @@ description: Provide feedback and checks to ensure data is correct at runtime
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # Validation

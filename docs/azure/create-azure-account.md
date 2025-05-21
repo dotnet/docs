@@ -1,7 +1,7 @@
 ---
 title: Create an Azure account
 description: To use Azure, you need an Azure account.  This article covers the three most common ways to sign up for an Azure account.
-ms.topic: conceptual
+ms.topic: article
 ms.custom: devx-track-dotnet, engagement-fy23
 ms.date: 8/15/2024
 author: alexwolfmsft

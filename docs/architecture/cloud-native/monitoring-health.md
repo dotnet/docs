@@ -2,6 +2,7 @@
 title: Monitoring and health
 description: Monitoring and Health
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Monitoring and health

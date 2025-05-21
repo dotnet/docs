@@ -2,6 +2,7 @@
 title: Implementing the microservice application layer using the Web API
 description: Understand the Dependency Injection and the Mediator patterns and their implementation details in the Web API application layer.
 ms.date: 01/13/2021
+ms.topic: how-to
 ---
 
 # Implement the microservice application layer using the Web API

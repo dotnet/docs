@@ -4,6 +4,7 @@ description: Learn how to design adaptable, maintainable, and testable MAUI appl
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # Enterprise Application Patterns Using .NET MAUI

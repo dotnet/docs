@@ -2,6 +2,7 @@
 title: Data sovereignty per microservice
 description: Data sovereignty per microservice is one of the key points of microservices. Each microservice must be the sole owner of its database, sharing it with no other. Of course all instances of a microservice connect to the same high availability database. 
 ms.date: 09/20/2018
+ms.topic: article
 ---
 # Data sovereignty per microservice
 

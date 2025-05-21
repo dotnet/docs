@@ -4,6 +4,7 @@ description: Learn how to define the startup logic for your app.
 author: csharpfritz
 ms.author: jefritz
 ms.date: 04/11/2022
+ms.topic: article
 ---
 # App startup
 

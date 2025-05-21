@@ -2,6 +2,7 @@
 title: Mapping eShopOnContainers to Azure Services
 description: Mapping eShopOnContainers to Azure Services like Azure Kubernetes Service, API Gateway, and Azure Service Bus.
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Mapping eShopOnContainers to Azure Services

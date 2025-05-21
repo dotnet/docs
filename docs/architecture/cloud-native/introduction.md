@@ -3,6 +3,7 @@ title: Introduction to cloud-native applications
 description: Learn about cloud-native computing
 author: robvet
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Introduction to cloud-native applications

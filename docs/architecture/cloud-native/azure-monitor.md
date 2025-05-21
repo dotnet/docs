@@ -2,6 +2,7 @@
 title: Azure Monitor
 description: Using Azure Monitor to gain visibility into your system is running.
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Azure Monitor

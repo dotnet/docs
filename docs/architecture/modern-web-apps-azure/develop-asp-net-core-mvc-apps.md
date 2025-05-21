@@ -5,6 +5,7 @@ author: ardalis
 ms.author: wiwagn
 ms.date: 12/12/2021
 no-loc: [Blazor, WebAssembly]
+ms.topic: how-to
 ---
 # Develop ASP.NET Core MVC apps
 

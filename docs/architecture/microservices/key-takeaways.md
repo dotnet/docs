@@ -2,6 +2,7 @@
 title: .NET Microservices Architecture key takeaways
 description: Get the key takeaways from the .NET Microservices Architecture for Containerized .NET Applications guide/e-book, to have a quick look at the high-level issues involved when using a microservices architecture, like benefits and drawbacks, DDD patterns for design and development, as well as resiliency, security, and the use of orchestrators.
 ms.date: 10/19/2018
+ms.topic: article
 ---
 # .NET Microservices Architecture key takeaways
 

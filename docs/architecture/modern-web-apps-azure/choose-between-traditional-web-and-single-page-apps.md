@@ -5,6 +5,7 @@ author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor, WebAssembly]
 ms.date: 12/12/2021
+ms.topic: article
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)

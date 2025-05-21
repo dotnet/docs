@@ -4,6 +4,7 @@ description: A guide that provides end-to-end guidance on building monolithic we
 author: ardalis
 ms.author: wiwagn
 ms.date: 01/10/2022
+ms.topic: article
 ---
 
 # Architect Modern Web Applications with ASP.NET Core and Azure

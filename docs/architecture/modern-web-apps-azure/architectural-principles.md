@@ -4,6 +4,7 @@ description: Architect Modern Web Applications with ASP.NET Core and Azure | Arc
 author: ardalis
 ms.author: wiwagn
 ms.date: 12/12/2021
+ms.topic: article
 ---
 # Architectural principles
 

@@ -5,6 +5,7 @@ author: csharpfritz
 ms.author: jefritz
 no-loc: [Blazor]
 ms.date: 04/11/2022
+ms.topic: how-to
 ---
 
 # Work with data

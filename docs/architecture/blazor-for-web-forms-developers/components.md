@@ -5,6 +5,7 @@ author: danroth27
 ms.author: daroth
 no-loc: [Blazor]
 ms.date: 04/11/2022
+ms.topic: how-to
 ---
 # Build reusable UI components with Blazor
 

@@ -2,6 +2,7 @@
 title: Defining your multi-container application with docker-compose.yml
 description: How to specify  microservices composition for a multicontainer application with docker-compose.yml.
 ms.date: 11/19/2021
+ms.topic: concept-article
 ---
 
 # Defining your multi-container application with docker-compose.yml

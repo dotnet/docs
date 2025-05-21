@@ -2,6 +2,7 @@
 title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the details and options to implement value objects using new Entity Framework features.
 ms.date: 04/11/2022
+ms.topic: how-to
 ---
 
 # Implement value objects

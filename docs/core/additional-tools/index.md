@@ -4,6 +4,7 @@ description: An overview of the additional tools you can install that support an
 author: mlacouture
 ms.date: 02/13/2020
 ms.custom: "mvc"
+ms.topic: concept-article
 ---
 # .NET additional tools overview
 

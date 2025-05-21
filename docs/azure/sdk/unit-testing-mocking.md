@@ -3,6 +3,7 @@ title: Unit testing and mocking with the Azure SDK for .NET
 description: Learn techniques and tools for unit testing and mocking the Azure SDK for .NET
 ms.custom: devx-track-dotnet, engagement-fy23, devx-track-arm-template
 ms.date: 04/25/2025
+ms.topic: article
 ---
 
 # Unit testing and mocking with the Azure SDK for .NET

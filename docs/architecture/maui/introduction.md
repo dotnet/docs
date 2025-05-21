@@ -4,6 +4,7 @@ description: Introduction to enterprise architecture for .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: concept-article
 ---
 
 # Introduction to .NET MAUI

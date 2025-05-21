@@ -3,6 +3,7 @@ title: Service Mesh communication infrastructure
 description: Learn about how service mesh technologies streamline cloud-native microservice communication
 author: robvet
 ms.date: 12/14/2023
+ms.topic: article
 ---
 
 # Service Mesh communication infrastructure

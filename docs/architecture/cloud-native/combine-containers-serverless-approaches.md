@@ -2,6 +2,7 @@
 title: Combining containers and serverless approaches for cloud-native services
 description: Combining containers and Kubernetes with serverless approaches
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Combining containers and serverless approaches

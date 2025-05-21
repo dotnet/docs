@@ -2,6 +2,7 @@
 title: Implementing an event bus with RabbitMQ for the development or test environment
 description: .NET Microservices Architecture for Containerized .NET Applications | Use RabbitMQ to implement an event bus messaging for integration events for the development or test environments.
 ms.date: 01/13/2021
+ms.topic: concept-article
 ---
 # Implementing an event bus with RabbitMQ for the development or test environment
 

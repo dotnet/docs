@@ -2,6 +2,7 @@
 title: Designing and Developing Multi Container and Microservice Based .NET Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the external architecture for Designing and Developing Multi Container and Microservice Based .NET Applications.
 ms.date: 10/02/2018
+ms.topic: concept-article
 ---
 # Designing and Developing Multi-Container and Microservice-Based .NET Applications
 

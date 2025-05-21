@@ -3,6 +3,7 @@ title: Cloud-native communication patterns
 description: Learn about key service communication concerns in cloud-native applications
 author: robvet
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Cloud-native communication patterns

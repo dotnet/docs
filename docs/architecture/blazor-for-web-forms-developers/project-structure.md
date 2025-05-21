@@ -5,6 +5,7 @@ author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
 ms.date: 04/11/2022
+ms.topic: how-to
 ---
 # Project structure for Blazor apps
 

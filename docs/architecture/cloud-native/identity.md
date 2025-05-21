@@ -2,6 +2,7 @@
 title: Cloud-native identity
 description: Architecting Cloud Native .NET Apps for Azure | Identity
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Cloud-native identity

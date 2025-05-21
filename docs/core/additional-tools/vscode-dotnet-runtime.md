@@ -3,6 +3,7 @@ title: .NET install tool for VS Code extension authors
 description: An overview of the .NET install tool for extension authors, a Visual Studio Code extension for installing the .NET runtime.
 author: sfoslund
 ms.date: 11/18/2020
+ms.topic: install-set-up-deploy
 ---
 # .NET install tool for extension authors
 

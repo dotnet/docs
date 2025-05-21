@@ -2,6 +2,7 @@
 title: Cloud-native security
 description: Architecting Cloud Native .NET Apps for Azure | Security
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Cloud-native security

@@ -5,6 +5,7 @@ author: adegeo
 ms.custom: devdivchpfy22
 ms.date: 08/04/2024
 zone_pivot_groups: operating-systems-set-three
+ms.topic: article
 ---
 
 # .NET uninstall tool overview

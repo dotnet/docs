@@ -3,6 +3,7 @@ title: Build apps with .NET
 description: .NET can be used for building many kinds of apps.
 ms.date: 1/3/2024
 ms.custom: "updateeachrelease"
+ms.topic: article
 ---
 
 # Build apps with .NET

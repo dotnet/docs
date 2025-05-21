@@ -3,6 +3,7 @@ title: Feature flags
 description: Implement feature flags in cloud-native applications leveraging Azure App Config
 author: robvet
 ms.date: 04/06/2022
+ms.topic: how-to
 ---
 
 # Feature flags

@@ -3,6 +3,7 @@ title: Using dotnet-svcutil.xmlserializer
 description: Learn how you can use the `dotnet-svcutil.xmlserializer` NuGet package to pre-generate a serialization assembly for .NET Core projects.
 author: huanwu
 ms.date: 11/27/2018
+ms.topic: how-to
 ---
 # Using dotnet-svcutil.xmlserializer on .NET Core
 

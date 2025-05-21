@@ -2,6 +2,7 @@
 title: Implement resilient applications
 description: Learn about resilience, a core concept in a microservices architecture. You must know how to handle transient failures gracefully when they occur.
 ms.date: 01/30/2020
+ms.topic: article
 ---
 # Implement resilient applications
 

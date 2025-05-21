@@ -2,6 +2,7 @@
 title: Service-oriented architecture
 description: Learn the fundamental differences between microservices and a Service-oriented architecture (SOA).
 ms.date: 09/20/2018
+ms.topic: article
 ---
 # Service-oriented architecture
 

@@ -2,6 +2,7 @@
 title: Logging with Elastic Stack
 description: Logging using Elastic Stack, Logstash, and Kibana
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Logging with Elastic Stack

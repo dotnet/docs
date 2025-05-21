@@ -4,6 +4,7 @@ description:  Learn how to provide application testing and improve code quality 
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # Unit testing

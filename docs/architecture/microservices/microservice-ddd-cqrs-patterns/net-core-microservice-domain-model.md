@@ -2,6 +2,7 @@
 title: Implementing a microservice domain model with .NET
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the implementation details of a DDD-oriented domain model.
 ms.date: 02/02/2021
+ms.topic: how-to
 ---
 
 # Implement a microservice domain model with .NET

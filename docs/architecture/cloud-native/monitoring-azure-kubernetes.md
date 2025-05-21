@@ -2,6 +2,7 @@
 title: Monitoring in Azure Kubernetes Services
 description: Monitoring in Azure Kubernetes Services
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Monitoring in Azure Kubernetes Services

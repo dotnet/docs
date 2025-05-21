@@ -4,6 +4,7 @@ description: Strategies for developing scalable back-end architecture
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # Containerized microservices

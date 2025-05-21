@@ -2,6 +2,7 @@
 title: Other container deployment options
 description: Other Container Deployment Options using Azure
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Other container deployment options

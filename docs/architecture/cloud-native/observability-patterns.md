@@ -2,6 +2,7 @@
 title: Observability patterns
 description: Observability patterns for cloud-native applications
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Observability patterns

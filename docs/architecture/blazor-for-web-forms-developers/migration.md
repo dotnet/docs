@@ -5,6 +5,7 @@ author: twsouthwick
 ms.author: tasou
 no-loc: [Blazor, WebAssembly]
 ms.date: 04/11/2022
+ms.topic: upgrade-and-migration-article
 ---
 # Migrate from ASP.NET Web Forms to Blazor
 

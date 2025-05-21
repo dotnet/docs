@@ -4,6 +4,7 @@ description: Learn different approaches for managing state in ASP.NET Web Forms 
 author: csharpfritz
 ms.author: jefritz
 ms.date: 04/11/2022
+ms.topic: how-to
 ---
 # State management
 

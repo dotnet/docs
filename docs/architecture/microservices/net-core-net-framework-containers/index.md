@@ -2,6 +2,7 @@
 title: Choosing Between .NET and .NET Framework for Docker Containers
 description: .NET Microservices Architecture for Containerized .NET Applications | Choosing Between .NET and .NET Framework for Docker Containers
 ms.date: 11/19/2021
+ms.topic: concept-article
 ---
 # Choosing Between .NET and .NET Framework for Docker Containers
 

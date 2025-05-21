@@ -3,6 +3,7 @@ title: Generate Self-Signed Certificates Overview
 description: An overview of the dotnet dev-certs tool that adds functionality for .NET and ASP.NET Core projects, and other options for using self-signed certificates.
 author: angee
 ms.date: 12/06/2021
+ms.topic: concept-article
 ---
 
 # Generate self-signed certificates with the .NET CLI

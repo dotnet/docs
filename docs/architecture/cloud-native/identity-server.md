@@ -2,6 +2,7 @@
 title: IdentityServer for Cloud Native Apps
 description: Architecting Cloud Native .NET Apps for Azure | IdentityServer
 ms.date: 02/06/2025
+ms.topic: article
 ---
 
 # IdentityServer for cloud-native applications

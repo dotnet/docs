@@ -2,6 +2,7 @@
 title: Health monitoring
 description: Explore one way of implementing health monitoring.
 ms.date: 09/10/2024
+ms.topic: article
 ---
 # Health monitoring
 

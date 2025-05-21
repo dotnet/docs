@@ -5,6 +5,7 @@ author: danroth27
 ms.author: daroth
 no-loc: [Blazor, WebAssembly]
 ms.date: 01/10/2022
+ms.topic: article
 ---
 # Blazor for ASP.NET Web Forms Developers
 

@@ -3,6 +3,7 @@ title: Service-to-service communication
 description: Learn how back-end cloud-native microservices communicate with other back-end microservices.
 author: robvet
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Service-to-service communication

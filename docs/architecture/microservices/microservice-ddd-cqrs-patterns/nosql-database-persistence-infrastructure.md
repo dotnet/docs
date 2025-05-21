@@ -2,6 +2,7 @@
 title: Using NoSQL databases as a persistence infrastructure
 description: Understand the use of NoSql databases in general, and Azure Cosmos DB in particular, as an option to implement persistence.
 ms.date: 09/10/2024
+ms.topic: how-to
 ---
 # Use NoSQL databases as a persistence infrastructure
 

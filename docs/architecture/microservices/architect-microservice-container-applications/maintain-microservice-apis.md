@@ -2,6 +2,7 @@
 title: Creating, evolving, and versioning microservice APIs and contracts
 description: Create microservice APIs and contracts considering evolution and versioning because needs change.
 ms.date: 01/13/2021
+ms.topic: article
 ---
 # Creating, evolving, and versioning microservice APIs and contracts
 

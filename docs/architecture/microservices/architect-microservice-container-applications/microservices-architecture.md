@@ -2,6 +2,7 @@
 title: Microservices architecture
 description: .NET Microservices Architecture for Containerized .NET Applications | 30.000 feet view of Microservices architecture.
 ms.date: 09/20/2018
+ms.topic: article
 ---
 # Microservices architecture
 

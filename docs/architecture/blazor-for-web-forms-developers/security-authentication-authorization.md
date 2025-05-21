@@ -5,6 +5,7 @@ author: ardalis
 ms.author: daroth
 no-loc: [Blazor]
 ms.date: 04/11/2022
+ms.topic: article
 ---
 # Security: Authentication and Authorization in ASP.NET Web Forms and Blazor
 

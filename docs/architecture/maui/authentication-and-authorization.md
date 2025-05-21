@@ -4,6 +4,7 @@ description: Providing security and identity management for .NET MAUI applicatio
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 09/10/2024
+ms.topic: article
 ---
 
 # Authentication and authorization

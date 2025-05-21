@@ -2,6 +2,7 @@
 title: Implement retries with exponential backoff
 description: Learn how to implement retries with exponential backoff.
 ms.date: 10/16/2018
+ms.topic: article
 ---
 # Implement retries with exponential backoff
 

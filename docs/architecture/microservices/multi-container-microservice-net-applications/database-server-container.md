@@ -2,6 +2,7 @@
 title: Use a database server running as a container
 description: Understand the importance of using a database server running as a container only for development. Never for production.
 ms.date: 01/13/2021
+ms.topic: how-to
 ---
 # Use a database server running as a container
 

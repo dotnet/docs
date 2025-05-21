@@ -2,6 +2,7 @@
 title: Strategies for handling partial failure
 description: Get to know several strategies for handling partial failures gracefully.
 ms.date: 10/16/2018
+ms.topic: article
 ---
 # Strategies to handle partial failure
 

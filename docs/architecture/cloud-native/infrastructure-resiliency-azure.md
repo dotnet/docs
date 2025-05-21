@@ -3,6 +3,7 @@ title: Azure platform resiliency
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Infrastructure Resiliency with Azure
 author: robvet
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # Azure platform resiliency

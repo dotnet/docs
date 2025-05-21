@@ -5,6 +5,7 @@ author: ardalis
 ms.author: wiwagn
 no-loc: [Blazor]
 ms.date: 12/12/2021
+ms.topic: article
 ---
 # Common client-side web technologies
 

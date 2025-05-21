@@ -4,6 +4,7 @@ description: Providing loosely-coupled messaging for a .NET MAUI application
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: concept-article
 ---
 
 # Communicating between loosely coupled components

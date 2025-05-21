@@ -2,6 +2,7 @@
 title: Decision table. .NET implementations to use for Docker
 description: .NET Microservices Architecture for Containerized .NET Applications | Decision table, .NET implementations to use for Docker
 ms.date: 11/19/2021
+ms.topic: article
 ---
 # Decision table: .NET implementations to use for Docker
 

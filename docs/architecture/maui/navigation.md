@@ -4,6 +4,7 @@ description: Managing Navigation in a .NET MAUI Application
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # Navigation

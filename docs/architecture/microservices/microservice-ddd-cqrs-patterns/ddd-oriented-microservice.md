@@ -2,6 +2,7 @@
 title: Designing a DDD-oriented microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the design of the DDD-oriented ordering microservice and its application layers.
 ms.date: 01/13/2021
+ms.topic: concept-article
 ---
 # Design a DDD-oriented microservice
 

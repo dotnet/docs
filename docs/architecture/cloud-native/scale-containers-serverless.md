@@ -2,6 +2,7 @@
 title: Scaling containers and serverless applications
 description: Scaling cloud-native applications with Azure Kubernetes Service to meet user demand.
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Scaling containers and serverless applications

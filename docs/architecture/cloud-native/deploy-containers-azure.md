@@ -2,6 +2,7 @@
 title: Deploying containers in Azure
 description: Deploying Containers in Azure with Azure Container Registry, Azure Kubernetes Service, and Azure Dev Spaces.
 ms.date: 12/14/2023
+ms.topic: concept-article
 ---
 
 # Deploying containers in Azure

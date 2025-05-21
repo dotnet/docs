@@ -4,6 +4,7 @@ description: The dotnet-core-uninstall dry-run command simulates uninstalling th
 author: adegeo
 ms.date: 08/04/2024
 zone_pivot_groups: operating-systems-set-three
+ms.topic: article
 ---
 
 # dotnet-core-uninstall dry-run

@@ -1,7 +1,7 @@
 ---
 title: Use Azure Migrate application and code assessment for .NET with Visual Studio
 description: Learn how to assess .NET applications to evaluate their readiness to migrate to Azure with Visual Studio.
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 11/09/2023
 author: codemillmatt
 ms.author: masoucou

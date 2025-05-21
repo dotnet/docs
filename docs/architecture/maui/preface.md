@@ -4,6 +4,7 @@ description: Guidance for what the book will cover, reference materials, and how
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # Purpose

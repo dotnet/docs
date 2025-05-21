@@ -4,6 +4,7 @@ description: Helper components to simplify app development and maintenance
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: article
 ---
 
 # MVVM Toolkit Features

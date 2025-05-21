@@ -2,6 +2,7 @@
 title: DevOps
 description: DevOps considerations for cloud-native applications
 ms.date: 04/06/2022
+ms.topic: article
 ---
 
 # DevOps

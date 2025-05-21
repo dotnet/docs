@@ -4,6 +4,7 @@ description: Communicating with Web APIs in .NET MAUI
 author: michaelstonis
 no-loc: [MAUI]
 ms.date: 05/30/2024
+ms.topic: concept-article
 ---
 
 # Accessing remote data

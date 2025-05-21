@@ -2,6 +2,7 @@
 title: Scaling cloud-native applications
 description: Scaling cloud-native applications with Azure Kubernetes Service and Azure Functions to meet user demand in a cost effective way.
 ms.date: 04/06/2022
+ms.topic: concept-article
 ---
 
 # Scaling cloud-native applications

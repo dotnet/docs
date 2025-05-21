@@ -2,6 +2,7 @@
 title: Designing the microservice application layer and Web API
 description: .NET Microservices Architecture for Containerized .NET Applications | A brief mention of the SOLID principles for designing the application layer.
 ms.date: 10/08/2018
+ms.topic: concept-article
 ---
 
 # Design the microservice application layer and Web API

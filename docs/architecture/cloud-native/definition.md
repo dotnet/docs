@@ -3,6 +3,7 @@ title: What is Cloud Native?
 description: Learn about the foundational pillars that provide the bedrock for cloud-native systems
 author: robvet
 ms.date: 12/14/2023
+ms.topic: article
 ---
 
 # What is Cloud Native?

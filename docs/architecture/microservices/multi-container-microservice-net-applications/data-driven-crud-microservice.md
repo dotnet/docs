@@ -2,6 +2,7 @@
 title: Creating a simple data-driven CRUD microservice
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the creation of a simple CRUD (data-driven) microservice within the context of a microservices application.
 ms.date: 09/10/2024
+ms.topic: concept-article
 ---
 
 # Creating a simple data-driven CRUD microservice

@@ -3,6 +3,7 @@ description: "Learn more about: The source folder does not exist"
 title: "The source folder does not exist"
 ms.date: 07/20/2015
 ms.assetid: c891d006-b721-4d93-b57d-ce51d91fca00
+ms.topic: article
 ---
 # The source folder does not exist
 

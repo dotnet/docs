@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID446"
 ms.assetid: f4812db8-e85d-4d5b-b7c9-d54a1f850034
+ms.topic: article
 ---
 # Object doesn't support named arguments
 

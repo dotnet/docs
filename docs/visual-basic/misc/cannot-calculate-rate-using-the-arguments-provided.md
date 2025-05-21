@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFinancial_CannotCalculateRate"
 ms.assetid: 17d5c8eb-4716-4b72-977f-a640c02e630d
+ms.topic: article
 ---
 # Cannot calculate rate using the arguments provided
 

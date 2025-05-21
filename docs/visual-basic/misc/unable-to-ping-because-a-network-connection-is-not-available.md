@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNetwork_NetworkNotAvailable"
 ms.assetid: 8d2bac12-bc6a-42ae-b28b-80b026dfabce
+ms.topic: article
 ---
 # Unable to ping because a network connection is not available
 

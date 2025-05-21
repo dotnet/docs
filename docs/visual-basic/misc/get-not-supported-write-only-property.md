@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID394"
 ms.assetid: bbe0b526-d6b6-430a-92e2-9e8051847595
+ms.topic: how-to
 ---
 # Get not supported (write-only property)
 

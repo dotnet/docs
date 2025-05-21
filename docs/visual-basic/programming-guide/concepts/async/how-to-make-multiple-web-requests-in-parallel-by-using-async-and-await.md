@@ -3,6 +3,7 @@ description: "Learn more about: How to: Make Multiple Web Requests in Parallel b
 title: "How to: Make Multiple Web Requests in Parallel by Using Async and Await"
 ms.date: 07/20/2015
 ms.assetid: a894b99b-7cfd-4a38-adfb-20d24f986730
+ms.topic: how-to
 ---
 # How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)
 

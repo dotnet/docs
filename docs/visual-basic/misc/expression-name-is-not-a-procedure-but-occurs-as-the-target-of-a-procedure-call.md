@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrExpressionNotProcedure"
 ms.assetid: 59169d44-a279-4aca-8f14-fba8d69d8959
+ms.topic: article
 ---
 # Expression '\<name>' is not a procedure, but occurs as the target of a procedure call
 

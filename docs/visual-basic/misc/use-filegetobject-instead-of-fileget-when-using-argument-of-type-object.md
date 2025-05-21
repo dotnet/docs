@@ -3,6 +3,7 @@ description: "Learn more about: Use 'FileGetObject' instead of 'FileGet' when us
 title: "Use 'FileGetObject' instead of 'FileGet' when using argument of type 'Object'"
 ms.date: 07/20/2015
 ms.assetid: 090b8088-895a-482a-9362-606596bac304
+ms.topic: how-to
 ---
 # Use 'FileGetObject' instead of 'FileGet' when using argument of type 'Object'
 

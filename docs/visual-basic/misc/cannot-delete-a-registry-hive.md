@@ -3,6 +3,7 @@ description: "Learn more about: Cannot delete a registry hive"
 title: "Cannot delete a registry hive"
 ms.date: 07/20/2015
 ms.assetid: 53ed771c-83f8-4657-a70d-5f9252cd448e
+ms.topic: article
 ---
 # Cannot delete a registry hive
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_InvalidNamedArg2"
 ms.assetid: b4346b6a-87da-4e65-a2de-ee5239c671f8
+ms.topic: article
 ---
 # Method '\<methodname>' has no parameter named '\<parametername>'
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_EndCharsInDelimiter"
 ms.assetid: 0701f3b6-635b-468e-b908-867df00dd5db
+ms.topic: article
 ---
 # TextFieldParser does not support delimiters that contain endline characters
 

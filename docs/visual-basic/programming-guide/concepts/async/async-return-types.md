@@ -3,6 +3,7 @@ description: "Learn more about: Async Return Types (Visual Basic)"
 title: "Async Return Types"
 ms.date: 07/20/2015
 ms.assetid: 07890291-ee72-42d3-932a-fa4d312f2c60
+ms.topic: article
 ---
 # Async Return Types (Visual Basic)
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_CollectionIndex"
 ms.assetid: feee4d55-0754-40fe-9ce9-288ef543f569
+ms.topic: article
 ---
 # Collection index must be in the range 1 to the size of the collection
 

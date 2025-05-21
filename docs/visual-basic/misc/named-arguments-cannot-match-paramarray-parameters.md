@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNamedArgumentOnParamArray"
 ms.assetid: ba35fb86-329a-4ceb-864b-045c07661482
+ms.topic: article
 ---
 # Named arguments cannot match ParamArray parameters
 

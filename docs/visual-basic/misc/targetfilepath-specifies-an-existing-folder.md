@@ -3,6 +3,7 @@ description: "Learn more about: TargetFilePath specifies an existing folder"
 title: "TargetFilePath specifies an existing folder"
 ms.date: 07/20/2015
 ms.assetid: 2334f49e-d080-4ee2-b036-f95c7f76c3ec
+ms.topic: article
 ---
 # TargetFilePath specifies an existing folder
 

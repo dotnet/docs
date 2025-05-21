@@ -3,6 +3,7 @@ description: "Learn more about: The folder cannot be created since a file alread
 title: "The folder cannot be created since a file already exists with the same path"
 ms.date: 07/20/2015
 ms.assetid: 1085c60d-4d38-4d67-a149-d3923eef0cfd
+ms.topic: article
 ---
 # The folder cannot be created since a file already exists with the same path
 

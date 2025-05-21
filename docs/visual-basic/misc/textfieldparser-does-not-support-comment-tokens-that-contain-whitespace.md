@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_WhitespaceInToken"
 ms.assetid: 55107656-270e-4bbb-841a-478904df8e07
+ms.topic: article
 ---
 # TextFieldParser does not support comment tokens that contain white space
 

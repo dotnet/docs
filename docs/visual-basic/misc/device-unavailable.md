@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID68"
 ms.assetid: 9a89beda-140e-4b32-8d0a-2dc598ef279a
+ms.topic: article
 ---
 # Device unavailable
 

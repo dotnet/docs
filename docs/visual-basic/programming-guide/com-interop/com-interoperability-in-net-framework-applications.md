@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "COM interop [Visual Basic]"
   - "shared components"
 ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d
+ms.topic: article
 ---
 # COM Interoperability in .NET Framework Applications (Visual Basic)
 

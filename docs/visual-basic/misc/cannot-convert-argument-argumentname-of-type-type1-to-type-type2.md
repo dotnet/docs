@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrForLoop_ConvertToType3"
 ms.assetid: fdf6c571-9c6c-4db2-8960-f394720b01e5
+ms.topic: article
 ---
 # Cannot convert argument '\<argumentname>' of type '\<type1>' to type '\<type2>'
 

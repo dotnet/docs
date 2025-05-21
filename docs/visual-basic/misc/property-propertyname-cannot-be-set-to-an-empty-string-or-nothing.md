@@ -3,6 +3,7 @@ description: "Learn more about: Property <propertyname> cannot be set to an empt
 title: "Property <propertyname> cannot be set to an empty string or Nothing"
 ms.date: 07/20/2015
 ms.assetid: c4f6ceb2-cee0-4e79-9cc6-cb20276d24f8
+ms.topic: article
 ---
 # Property \<propertyname> cannot be set to an empty string or Nothing
 

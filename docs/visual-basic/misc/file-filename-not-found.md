@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_FileNotFound1"
 ms.assetid: b45bffc9-5b16-4b9b-a413-98a8d726e226
+ms.topic: how-to
 ---
 # File '\<filename>' not found
 

@@ -3,6 +3,7 @@ description: "Learn more about: File information cannot be queried if the file d
 title: "File information cannot be queried if the file does not exist"
 ms.date: 07/20/2015
 ms.assetid: 2bf50d79-2a74-403f-833c-6cabd2c213ce
+ms.topic: article
 ---
 # File information cannot be queried if the file does not exist
 

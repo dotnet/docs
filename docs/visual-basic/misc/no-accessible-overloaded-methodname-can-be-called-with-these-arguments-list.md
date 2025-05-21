@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrAmbiguousCall_ExactMatch2"
 ms.assetid: 78d4c7ed-5e18-47d4-948d-fa8b24e47214
+ms.topic: article
 ---
 # No accessible overloaded '\<methodname>' can be called with these arguments: \<list>
 

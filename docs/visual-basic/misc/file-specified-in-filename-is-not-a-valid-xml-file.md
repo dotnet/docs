@@ -3,6 +3,7 @@ description: "Learn more about: File specified in FileName is not a valid XML fi
 title: "File specified in FileName is not a valid XML file"
 ms.date: 07/20/2015
 ms.assetid: c4c30bf3-e0ad-4bc8-89e0-2c3e49e9793b
+ms.topic: article
 ---
 # File specified in FileName is not a valid XML file
 

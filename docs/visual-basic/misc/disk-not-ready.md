@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID71"
 ms.assetid: 5e2528f5-81b3-4e5e-a294-a43cc738a42e
+ms.topic: how-to
 ---
 # Disk not ready
 

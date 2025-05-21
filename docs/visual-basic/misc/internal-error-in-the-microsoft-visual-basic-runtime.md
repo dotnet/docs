@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrInternalError"
 ms.assetid: 1a106880-dec8-4e75-a935-de3ec2096b25
+ms.topic: article
 ---
 # Internal error in the Microsoft Visual Basic runtime
 

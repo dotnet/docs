@@ -3,6 +3,7 @@ description: "Learn more about: DataBits must be greater than 0"
 title: "DataBits must be greater than 0"
 ms.date: 07/20/2015
 ms.assetid: b0e1d53f-ed19-47bf-b7ef-06479aa76338
+ms.topic: article
 ---
 # DataBits must be greater than 0
 

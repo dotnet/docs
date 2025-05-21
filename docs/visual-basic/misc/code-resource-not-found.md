@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID454"
 ms.assetid: f0e53e96-c3de-41e2-bf98-e72f93802dfa
+ms.topic: article
 ---
 # Code resource not found
 

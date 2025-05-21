@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrApplicationLogNumberTooSmall"
 ms.assetid: 81aed143-1abb-41c2-9922-8e83711100e3
+ms.topic: article
 ---
 # The value of \<argumentname> must be greater than or equal to 1000
 

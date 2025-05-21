@@ -3,6 +3,7 @@ description: "Learn more about: You must specify a name"
 title: "You must specify a name"
 ms.date: 07/20/2015
 ms.assetid: 9056bc12-951c-4b86-a44a-473d7c8d5f75
+ms.topic: article
 ---
 # You must specify a name
 

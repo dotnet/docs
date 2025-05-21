@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrInvalidCast_FromStringTo"
 ms.assetid: a7382c0a-e8a4-4125-9690-db3fa030a06a
+ms.topic: how-to
 ---
 # Cast from string &quot;\<string>&quot; to type '\<typename>' is not valid
 

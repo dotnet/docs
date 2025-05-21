@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrForLoop_CommonType3"
 ms.assetid: 21c45bcf-539c-488a-9cae-221558c37146
+ms.topic: article
 ---
 # Cannot convert start value of type '\<type1>', limit value of '\<type2>' and step value of '\<type3>' to a common type
 

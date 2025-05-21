@@ -3,6 +3,7 @@ description: "Learn more about: You must specify a file name"
 title: "You must specify a file name"
 ms.date: 07/20/2015
 ms.assetid: e011825a-019f-4c01-8d5b-3194f172e495
+ms.topic: article
 ---
 # You must specify a file name
 

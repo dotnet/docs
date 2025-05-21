@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrApplicationLog_FileExceedsMaximumSize"
 ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
+ms.topic: article
 ---
 # Unable to write to log file because writing to it would cause it to exceed MaximumSize value
 

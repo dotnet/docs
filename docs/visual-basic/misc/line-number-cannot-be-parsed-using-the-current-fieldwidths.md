@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedFixedWidthLine"
 ms.assetid: 84e14245-dfdf-4b62-8b84-e83a31608899
+ms.topic: article
 ---
 # Line \<number> cannot be parsed using the current FieldWidths
 

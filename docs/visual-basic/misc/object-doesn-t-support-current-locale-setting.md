@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID447"
 ms.assetid: 580a26bc-479a-4569-9246-10dcf0251bcb
+ms.topic: article
 ---
 # Object doesn't support current locale setting (Visual Basic)
 

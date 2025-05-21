@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID11"
 ms.assetid: 5b9bc5d6-792e-48bc-a974-012e07ad95f3
+ms.topic: article
 ---
 # Division by zero (Visual Basic Run-Time Error)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Control Flow in Async Programs (Visual Basic)"
 title: "Control Flow in Async Programs"
 ms.date: 07/20/2015
 ms.assetid: b0443af7-c586-4cb0-b476-742ae4098a96
+ms.topic: how-to
 ---
 # Control Flow in Async Programs (Visual Basic)
 

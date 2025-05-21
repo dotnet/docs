@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID97"
 ms.assetid: b9d821f0-8565-4f15-bb35-184789c69662
+ms.topic: article
 ---
 # Cannot call friend function on object which is not an instance of defining class
 

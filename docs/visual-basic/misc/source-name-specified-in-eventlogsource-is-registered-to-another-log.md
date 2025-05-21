@@ -3,6 +3,7 @@ description: "Learn more about: Source name specified in EventLogSource is regis
 title: "Source name specified in EventLogSource is registered to a log other than that specified in EventLogName"
 ms.date: 07/20/2015
 ms.assetid: 7317e100-098b-408d-86e5-7c74cf8558c7
+ms.topic: article
 ---
 # Source name specified in EventLogSource is registered to a log other than that specified in EventLogName
 

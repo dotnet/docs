@@ -3,6 +3,7 @@ description: "Learn more about: The specified path does not exist"
 title: "The specified path does not exist"
 ms.date: 07/20/2015
 ms.assetid: b0855f92-03c2-446b-94c1-856c87359c54
+ms.topic: article
 ---
 # The specified path does not exist
 

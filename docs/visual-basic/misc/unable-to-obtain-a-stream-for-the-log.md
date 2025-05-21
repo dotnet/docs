@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrApplicationLog_ExhaustedPossibleStreamNames"
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
+ms.topic: article
 ---
 # Unable to obtain a stream for the log
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_TCNotSupported"
 ms.assetid: 95bace92-c7b9-4641-b71f-c088ddb418c9
+ms.topic: article
 ---
 # This system does not contain support for the Traditional Chinese locale
 

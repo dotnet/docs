@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID481"
 ms.assetid: 6ac18c39-042b-423a-9d95-25a7745c84dd
+ms.topic: how-to
 ---
 # Picture is not valid
 

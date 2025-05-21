@@ -3,6 +3,7 @@ description: "Learn more about: Key cannot be deleted because it has subkeys"
 title: "Key cannot be deleted because it has subkeys"
 ms.date: 07/20/2015
 ms.assetid: 71d7f28f-42ef-4eb7-a39e-512c40b79977
+ms.topic: article
 ---
 # Key cannot be deleted because it has subkeys
 

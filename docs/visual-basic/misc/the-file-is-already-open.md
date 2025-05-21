@@ -3,6 +3,7 @@ description: "Learn more about: The file is already open"
 title: "The file is already open"
 ms.date: 07/20/2015
 ms.assetid: bbde8390-05cf-4ca4-9c24-073f656bd935
+ms.topic: article
 ---
 # The file is already open
 

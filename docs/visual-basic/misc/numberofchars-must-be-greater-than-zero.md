@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_NumberOfCharsMustBePositive"
 ms.assetid: 3eea4bbf-cd49-4d19-adfb-0e2adf087065
+ms.topic: article
 ---
 # NumberOfChars must be greater than zero
 

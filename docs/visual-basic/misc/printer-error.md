@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID482"
 ms.assetid: 0ce0c4b3-3604-4638-9363-6c9333d0cc9d
+ms.topic: article
 ---
 # Printer error
 

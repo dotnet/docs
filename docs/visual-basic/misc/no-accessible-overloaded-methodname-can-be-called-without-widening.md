@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrAmbiguousCall_WideningConversion2"
 ms.assetid: 5e74f5cf-80bd-4b48-b58a-465f981ec694
+ms.topic: article
 ---
 # No accessible overloaded '\<methodname>' can be called with these arguments without a widening conversion: \<list>
 

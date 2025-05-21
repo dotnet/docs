@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileIO_StringLengthExceeded"
 ms.assetid: 4044ae87-9984-400c-b247-20f9c1b1a0c0
+ms.topic: how-to
 ---
 # String length exceeds maximum length of 32767 characters for 'FileSystem' APIs
 

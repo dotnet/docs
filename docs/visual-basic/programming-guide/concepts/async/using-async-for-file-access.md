@@ -3,6 +3,7 @@ description: "Learn more about: Using Async for File Access (Visual Basic)"
 title: "Using Async for File Access"
 ms.date: 07/20/2015
 ms.assetid: c989305f-08e3-4687-95c3-948465cda202
+ms.topic: concept-article
 ---
 # Using Async for File Access (Visual Basic)
 

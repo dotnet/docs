@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNoMethodTakingXArguments2"
 ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
+ms.topic: article
 ---
 # Method '\<methodname>' cannot be called with \<number> arguments
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_PathNotFound1"
 ms.assetid: 184d09ab-771f-4298-bd71-94b33efc325b
+ms.topic: article
 ---
 # Path '\<pathname>' not found
 

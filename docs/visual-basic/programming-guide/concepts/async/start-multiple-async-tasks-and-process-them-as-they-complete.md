@@ -3,6 +3,7 @@ description: "Learn more about: Start Multiple Async Tasks and Process Them As T
 title: "Start Multiple Async Tasks and Process Them As They Complete"
 ms.date: 07/20/2015
 ms.assetid: 57ffb748-af40-4794-bedd-bdb7fea062de
+ms.topic: how-to
 ---
 # Start Multiple Async Tasks and Process Them As They Complete (Visual Basic)
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_IComparable2"
 ms.assetid: 8dba1270-380a-4f05-8bad-1031e6a9cc90
+ms.topic: how-to
 ---
 # Loop control variable of type '\<typename>' does not implement the 'System.IComparable' interface
 

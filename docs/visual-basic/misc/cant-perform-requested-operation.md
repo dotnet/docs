@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID17"
 ms.assetid: eeab237c-4110-4abd-b601-bbb025c5d204
+ms.topic: article
 ---
 # Can't perform requested operation (Visual Basic)
 

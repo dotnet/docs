@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID455"
 ms.assetid: 67a269bf-f436-4913-bc3c-af7f68116b7d
+ms.topic: troubleshooting-error-codes
 ---
 # Code resource lock error
 

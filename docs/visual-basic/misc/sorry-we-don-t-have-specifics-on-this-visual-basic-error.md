@@ -3045,6 +3045,7 @@ f1_keywords:
   - "bc30233"
   - "bc30829"
 ms.assetid: 0938efc2-e205-450b-9314-99951fcbd702
+ms.topic: article
 ---
 # Sorry, we don't have specifics on this Visual Basic error
 

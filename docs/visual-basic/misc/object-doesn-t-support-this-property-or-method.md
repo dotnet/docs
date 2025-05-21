@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID438"
 ms.assetid: d6b1a52b-47bc-4391-b5a4-5c359b2169b9
+ms.topic: article
 ---
 # Object doesn't support this property or method (Visual Basic)
 

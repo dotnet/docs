@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_DelimitersNothing"
 ms.assetid: 94f64c48-8e17-449d-b92a-0426efec879c
+ms.topic: article
 ---
 # Unable to read delimited fields because Delimiters is Nothing or empty
 

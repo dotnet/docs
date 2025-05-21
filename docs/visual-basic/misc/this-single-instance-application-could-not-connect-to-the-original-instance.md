@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrAppModel_SingleInstanceCantConnect"
 ms.assetid: 7c2c0cee-02a1-4157-be03-39d18e18408f
+ms.topic: article
 ---
 # This single-instance application could not connect to the original instance
 

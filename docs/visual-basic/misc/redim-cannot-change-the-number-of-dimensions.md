@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArray_RankMismatch"
 ms.assetid: 52505298-9985-4682-8f6e-ff7d56077f34
+ms.topic: article
 ---
 # 'ReDim' cannot change the number of dimensions
 

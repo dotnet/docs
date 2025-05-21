@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_FileAlreadyOpen1"
 ms.assetid: e1cbc46a-1db0-412d-8109-31342ec9d327
+ms.topic: article
 ---
 # File '\<filename>' cannot be deleted because it is open
 

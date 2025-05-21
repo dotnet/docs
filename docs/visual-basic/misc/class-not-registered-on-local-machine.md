@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID463"
 ms.assetid: 40c4c622-41d8-4005-9303-c30abe0707bb
+ms.topic: article
 ---
 # Class not registered on local machine
 

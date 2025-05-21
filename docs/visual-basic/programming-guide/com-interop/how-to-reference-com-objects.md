@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "COM objects, referencing"
   - "interop assemblies"
 ms.assetid: 9c518fb4-27d9-4112-9e6a-5a7d0210af6f
+ms.topic: how-to
 ---
 # How to: Reference COM Objects from Visual Basic
 

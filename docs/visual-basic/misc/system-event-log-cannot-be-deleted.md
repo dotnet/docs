@@ -3,6 +3,7 @@ description: "Learn more about: System event log cannot be deleted"
 title: "System event log cannot be deleted"
 ms.date: 07/20/2015
 ms.assetid: 26ca8819-4ce5-49c6-98f3-27fe9e2e8e3d
+ms.topic: article
 ---
 # System event log cannot be deleted
 

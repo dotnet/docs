@@ -2,6 +2,7 @@
 title: "Walkthrough: Accessing the Web by Using Async and Await"
 description: "Learn more about: Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)"
 ms.date: 07/20/2015
+ms.topic: article
 ---
 # Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)
 

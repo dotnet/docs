@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID325"
 ms.assetid: e986ab45-e3ce-430e-8704-5882e5da1104
+ms.topic: how-to
 ---
 # Format not valid in resource file
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID11"
 ms.assetid: 7dc22e29-8baa-4d82-a1a6-2de64ba9b25d
+ms.topic: article
 ---
 # Division by zero (Visual Basic Error)
 

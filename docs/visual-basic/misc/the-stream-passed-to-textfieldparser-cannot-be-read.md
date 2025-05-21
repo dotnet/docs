@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_StreamNotReadable"
 ms.assetid: b6ac8043-b939-441c-822f-de6f16f45525
+ms.topic: article
 ---
 # The stream passed to TextFieldParser cannot be read
 

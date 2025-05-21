@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID383"
 ms.assetid: 0b97b683-6626-42ec-af0b-aaa3c973a76b
+ms.topic: how-to
 ---
 # Set not supported (read-only property)
 

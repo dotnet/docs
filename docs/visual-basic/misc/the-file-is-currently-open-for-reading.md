@@ -3,6 +3,7 @@ description: "Learn more about: The file is currently open for reading"
 title: "The file is currently open for reading"
 ms.date: 07/20/2015
 ms.assetid: 7f662a68-021a-4432-947a-6bde48061257
+ms.topic: article
 ---
 # The file is currently open for reading
 

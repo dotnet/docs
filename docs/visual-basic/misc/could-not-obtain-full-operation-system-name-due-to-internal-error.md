@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrDiagnosticInfo_FullOSName"
 ms.assetid: f69da02b-eb9a-4284-bb9e-3025517ae6c1
+ms.topic: article
 ---
 # Could not obtain full operation system name due to internal error
 

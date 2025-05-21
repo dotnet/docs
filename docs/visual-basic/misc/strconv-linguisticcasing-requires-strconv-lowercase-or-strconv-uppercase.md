@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrLinguisticRequirements"
 ms.assetid: 99cdb11d-9488-460b-84fb-a27f43da8be4
+ms.topic: article
 ---
 # 'StrConv.LinguisticCasing' requires 'StrConv.LowerCase' or 'StrConv.UpperCase'
 

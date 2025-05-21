@@ -3,6 +3,7 @@ description: "Learn more about: Some files and folders caused exceptions during 
 title: "Some files and folders caused exceptions during the operation"
 ms.date: 07/20/2015
 ms.assetid: b0471302-907c-42a6-a326-8d3d805ebe98
+ms.topic: article
 ---
 # Some files and folders caused exceptions during the operation
 

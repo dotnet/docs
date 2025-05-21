@@ -3,6 +3,7 @@ description: "Learn more about: Use of Default Instance of a class in the class 
 title: "Use of Default Instance of a class in the class constructor could lead to infinite recursive call"
 ms.date: 07/20/2015
 ms.assetid: 9645b47f-7de5-46d0-bb45-d5fdaa8aaa2a
+ms.topic: article
 ---
 # Use of Default Instance of a class in the class constructor could lead to infinite recursive call
 

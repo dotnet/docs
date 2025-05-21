@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrUseFilePutObject"
 ms.assetid: d207b9b7-5898-4c13-8b03-9feefac5f726
+ms.topic: article
 ---
 # Use 'FilePutObject' instead of 'FilePut' when using argument of type 'Object'
 

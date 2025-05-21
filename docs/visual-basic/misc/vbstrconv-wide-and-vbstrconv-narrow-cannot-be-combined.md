@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_IllegalWideNarrow"
 ms.assetid: a53b4e6a-36b1-4e36-b2c5-8196313ec599
+ms.topic: article
 ---
 # VbStrConv.Wide and VbStrConv.Narrow cannot be combined
 

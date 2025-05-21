@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNetwork_UploadAddressNeedsFilename"
 ms.assetid: 0ee11749-0432-4ccb-8c08-1663a4a55ad0
+ms.topic: article
 ---
 # The address for UploadFile needs to include a filename
 

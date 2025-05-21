@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_DriveNotFound1"
 ms.assetid: 0250e9f2-3470-4fe4-8fda-be4fbf2e2a30
+ms.topic: how-to
 ---
 # Drive '\<drivename>' not found
 

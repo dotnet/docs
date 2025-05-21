@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrProcessNotFound"
 ms.assetid: d6095a7f-6168-4b00-8639-11fb64dd2ebe
+ms.topic: how-to
 ---
 # Process '\<processname>' was not found
 

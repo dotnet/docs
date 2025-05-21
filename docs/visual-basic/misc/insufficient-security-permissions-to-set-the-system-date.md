@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrSetLocalDateFailure"
 ms.assetid: ea2fe85a-a198-4c12-8754-ab38c36bef4c
+ms.topic: article
 ---
 # Insufficient security permissions to set the system date
 

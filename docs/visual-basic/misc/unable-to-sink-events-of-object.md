@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID96"
 ms.assetid: e40b19a2-8100-43ff-a1a4-0ddee3cc7f9a
+ms.topic: article
 ---
 # Unable to sink events of object because the object is already firing events to the maximum number of event receivers it supports
 

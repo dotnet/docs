@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID382"
 ms.assetid: cb7285d3-778f-423d-a2be-88573be8ad48
+ms.topic: how-to
 ---
 # Set not supported at run time
 

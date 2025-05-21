@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrMaxErrNumber"
 ms.assetid: c5cb5753-516e-4568-9d63-0e9a2a4c5812
+ms.topic: article
 ---
 # Error number must be within the range 0 and 65535
 

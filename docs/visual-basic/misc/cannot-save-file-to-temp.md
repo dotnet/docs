@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID735"
 ms.assetid: 1055fc15-9641-43b2-a40c-a0a9fbbb34b2
+ms.topic: article
 ---
 # Cannot save file to TEMP
 

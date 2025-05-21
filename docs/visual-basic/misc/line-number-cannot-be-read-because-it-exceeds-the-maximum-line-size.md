@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_MaxLineSizeExceeded"
 ms.assetid: c59116d9-9856-47af-b32d-616d8f2d10d3
+ms.topic: article
 ---
 # Line \<number> cannot be read because it exceeds the maximum line size.
 

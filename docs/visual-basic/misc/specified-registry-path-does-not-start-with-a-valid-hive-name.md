@@ -3,6 +3,7 @@ description: "Learn more about: Specified registry path does not start with a va
 title: "Specified registry path does not start with a valid hive name"
 ms.date: 07/20/2015
 ms.assetid: afb1a03b-4516-450b-aab1-827a93f9e99d
+ms.topic: article
 ---
 # Specified registry path does not start with a valid hive name
 

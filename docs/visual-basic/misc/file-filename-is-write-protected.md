@@ -3,6 +3,7 @@ description: "Learn more about: File '<filename>' is write protected"
 title: "File '<filename>' is write protected"
 ms.date: 07/20/2015
 ms.assetid: 6e5105b1-a634-4cde-a753-5bf1ae85a55a
+ms.topic: how-to
 ---
 # File '\<filename>' is write protected
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_WideNarrowNotApplicable"
 ms.assetid: 5811098c-b124-4caf-8a2b-f81f12f1d5f5
+ms.topic: article
 ---
 # VbStrConv.Wide and VbStrConv.Narrow are not applicable to the locale specified
 

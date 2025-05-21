@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Toolbox, adding controls"
   - "ActiveX controls, adding to Toolbox"
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
+ms.topic: how-to
 ---
 # How to: Work with ActiveX Controls (Visual Basic)
 

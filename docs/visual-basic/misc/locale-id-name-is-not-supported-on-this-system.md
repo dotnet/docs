@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_LCIDNotSupported1"
 ms.assetid: 62701434-0ac2-45b8-8b40-a9adc09ae6df
+ms.topic: article
 ---
 # Locale ID '\<name>' is not supported on this system
 

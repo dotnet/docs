@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "inheritance [Visual Basic], walkthroughs"
   - "derived classes [Visual Basic], COM reusability"
 ms.assetid: f8e7263a-de13-48d1-b67c-ca1adf3544d9
+ms.topic: article
 ---
 # Walkthrough: Implementing Inheritance with COM Objects (Visual Basic)
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrInvalidCast_FromTo"
 ms.assetid: 4e6a8957-63ca-461f-a833-f48a1ff2eba6
+ms.topic: how-to
 ---
 # Cast from type '\<typename1>' to type '\<typename2>' is not valid
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID321"
 ms.assetid: d41e6286-6e4a-463b-87fa-e140723e5c7e
+ms.topic: how-to
 ---
 # File format not valid
 

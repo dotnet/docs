@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID74"
 ms.assetid: eddb087d-b2e9-4bc7-a567-0bb6c45e0d42
+ms.topic: article
 ---
 # Cannot rename with different drive
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID51"
 ms.assetid: 21266dbb-f4a1-4c5d-a646-27909cf53248
+ms.topic: article
 ---
 # Internal error (Visual Basic)
 

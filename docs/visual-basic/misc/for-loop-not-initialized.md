@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID92"
 ms.assetid: 7f5b8b87-1a28-474d-8639-9de97922ceab
+ms.topic: article
 ---
 # For loop not initialized (Visual Basic)
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_JPNNotSupported"
 ms.assetid: 986d0379-c9d1-4004-b9ac-8d3bd95dfe85
+ms.topic: article
 ---
 # This system does not contain support for the Japanese locale
 

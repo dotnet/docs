@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedDelimitedLine"
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
+ms.topic: article
 ---
 # Line \<number> cannot be parsed using the current Delimiters
 

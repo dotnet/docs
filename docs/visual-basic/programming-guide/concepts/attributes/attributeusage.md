@@ -3,6 +3,7 @@ description: "Learn more about: AttributeUsage (Visual Basic)"
 title: "AttributeUsage"
 ms.date: 07/20/2015
 ms.assetid: 48757216-c21d-4051-86d5-8a3e03c39d2c
+ms.topic: article
 ---
 # AttributeUsage (Visual Basic)
 

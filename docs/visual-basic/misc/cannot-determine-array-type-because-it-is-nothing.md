@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_ArrayNotInitialized"
 ms.assetid: de70697d-e2aa-4661-bfbb-f7ba34539516
+ms.topic: article
 ---
 # Cannot determine array type because it is Nothing
 

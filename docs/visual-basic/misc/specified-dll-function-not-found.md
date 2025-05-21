@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID453"
 ms.assetid: c0a308ee-5876-40af-be4b-1979397835df
+ms.topic: article
 ---
 # Specified DLL function not found
 

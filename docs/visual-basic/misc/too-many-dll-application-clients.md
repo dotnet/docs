@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID47"
 ms.assetid: 4b87780b-67ad-4c96-9253-db954a751dad
+ms.topic: article
 ---
 # Too many DLL application clients
 

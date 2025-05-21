@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_FieldWidthsNothing"
 ms.assetid: 623e0825-5640-4e47-8341-7eeec80fc145
+ms.topic: article
 ---
 # Unable to read fixed width fields because FieldWidths is Nothing or empty
 

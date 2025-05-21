@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrInteraction_ResKeyNotCreated1"
 ms.assetid: 465ccd53-dfdc-47ec-8b3f-9a65ba739314
+ms.topic: article
 ---
 # Registry key '\<keyname>' could not be created
 

@@ -3,6 +3,7 @@ description: "Learn more about: Source folder and target folder are the same"
 title: "Source folder and target folder are the same"
 ms.date: 07/20/2015
 ms.assetid: d4e6f996-8bbe-45f2-b662-f26b4474f44d
+ms.topic: article
 ---
 # Source folder and target folder are the same
 

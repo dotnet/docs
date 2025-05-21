@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords:
   - "vbrLateboundCallToInheritedComClass"
 ms.assetid: 7bc16e84-8d29-4f8e-bc4f-002c65c71099
+ms.topic: article
 ---
 # Managed classes derived from a COM class cannot be called late-bound.
 

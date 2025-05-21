@@ -8,6 +8,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "Off keyword [Visual Basic]"
 ms.assetid: e0b5aa68-bde1-4cdd-b9e4-152798ae1b8b
+ms.topic: article
 ---
 # Off (Visual Basic)
 

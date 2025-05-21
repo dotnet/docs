@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrDiagnosticInfo_Memory"
 ms.assetid: 1ba8f774-5858-438e-914e-99fddc9e5e7e
+ms.topic: article
 ---
 # Could not obtain memory information due to internal error
 

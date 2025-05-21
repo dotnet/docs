@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrMissingMember_NoDefaultMemberFound1"
 ms.assetid: 1869ecb8-7c6a-422f-86ac-5da96c6adc66
+ms.topic: article
 ---
 # No default member found for type '\<typename>'
 

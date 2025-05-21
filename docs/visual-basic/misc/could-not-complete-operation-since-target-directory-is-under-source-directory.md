@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrIO_CyclicOperation"
 ms.assetid: 850d3a24-5d51-4ac8-a912-630efcd75278
+ms.topic: article
 ---
 # Could not complete operation since target directory is under source directory
 

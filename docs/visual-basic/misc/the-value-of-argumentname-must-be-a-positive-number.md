@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrApplicationLog_NegativeNumber"
 ms.assetid: 597c412c-499e-49d2-b656-af2d90c292a5
+ms.topic: article
 ---
 # The value of \<argumentname> must be a positive number
 

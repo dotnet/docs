@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrApplicationLog_FreeSpaceError"
 ms.assetid: 7f0ce827-6afc-4d59-ac58-6729e1c01c4c
+ms.topic: article
 ---
 # My.Application.Log cannot determine the amount of free disk space
 

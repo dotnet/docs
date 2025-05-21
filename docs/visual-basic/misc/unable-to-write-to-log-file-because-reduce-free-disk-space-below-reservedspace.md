@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrApplicationLog_ReservedSpaceEncroached"
 ms.assetid: 95832e70-4ecc-47aa-90c1-f35c4d468151
+ms.topic: article
 ---
 # Unable to write to log file because writing to it would reduce free disk space below ReservedSpace value
 

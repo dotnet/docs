@@ -3,6 +3,7 @@ description: "Learn more about: Target folder is a file"
 title: "Target folder is a file"
 ms.date: 07/20/2015
 ms.assetid: c5e40bcb-2414-4484-b2b9-a9c391ad0029
+ms.topic: article
 ---
 # Target folder is a file
 

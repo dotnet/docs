@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_NotNumericType2"
 ms.assetid: 6eca32a6-9a44-4f05-8791-abdb4cb316d2
+ms.topic: article
 ---
 # Type of argument '\<argumentname>' is '\<typename>', which is not numeric
 

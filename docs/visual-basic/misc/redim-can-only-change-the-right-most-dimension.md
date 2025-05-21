@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArray_TypeMismatch"
 ms.assetid: d53cf41b-7a7a-466c-a29a-920d99698fa9
+ms.topic: article
 ---
 # 'ReDim' can only change the right-most dimension
 

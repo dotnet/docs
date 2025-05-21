@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "object creation [Visual Basic], COM objects"
   - "COM objects, walkthroughs"
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
+ms.topic: article
 ---
 # Walkthrough: Creating COM Objects with Visual Basic
 

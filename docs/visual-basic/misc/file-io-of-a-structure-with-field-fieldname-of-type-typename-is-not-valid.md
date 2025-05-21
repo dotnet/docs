@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_UnsupportedFieldType2"
 ms.assetid: 028e936f-6210-4290-adb2-46298e13e160
+ms.topic: article
 ---
 # File I/O of a structure with field '\<fieldname>' of type '\<typename>' is not valid
 

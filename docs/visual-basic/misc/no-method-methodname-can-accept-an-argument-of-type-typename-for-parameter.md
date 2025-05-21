@@ -3,6 +3,7 @@ description: "Learn more about: No method '<methodname>' can accept an argument 
 title: "No method '<methodname>' can accept an argument of type '<typename>' for parameter '<parametername>'"
 ms.date: 07/20/2015
 ms.assetid: 175c01dc-279c-4996-8501-d19a6671fdeb
+ms.topic: article
 ---
 # No method '\<methodname>' can accept an argument of type '\<typename>' for parameter '\<parametername>'
 

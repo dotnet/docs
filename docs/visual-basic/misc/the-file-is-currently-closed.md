@@ -3,6 +3,7 @@ description: "Learn more about: The file is currently closed"
 title: "The file is currently closed"
 ms.date: 07/20/2015
 ms.assetid: 095c38ae-a741-4b46-b099-bc6826a49c83
+ms.topic: article
 ---
 # The file is currently closed
 

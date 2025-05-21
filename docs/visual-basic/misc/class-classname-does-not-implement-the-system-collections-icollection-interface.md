@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID100"
 ms.assetid: cc73bbc6-a283-41e0-b750-61ef553e83b3
+ms.topic: how-to
 ---
 # Class '\<classname>' does not implement the System.Collections.ICollection interface
 

@@ -3,6 +3,7 @@ description: "Learn more about: Attributes overview (Visual Basic)"
 title: "Attributes overview"
 ms.date: 07/20/2015
 ms.assetid: 1449f69b-c063-41de-8d89-f0bbdcf96ac6
+ms.topic: concept-article
 ---
 # Attributes overview (Visual Basic)
 

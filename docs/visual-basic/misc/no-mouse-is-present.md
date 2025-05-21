@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrMouse_NoMouseIsPresent"
 ms.assetid: 4472fd57-4217-4463-9d3c-dc4a8fe88f1b
+ms.topic: article
 ---
 # No mouse is present
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_SCNotSupported"
 ms.assetid: 197d17cb-2904-4e12-8e45-aba23bddec8c
+ms.topic: article
 ---
 # This system does not contain support for the SimplifiedChinese locale
 

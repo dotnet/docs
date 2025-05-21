@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "compiler errors"
   - "errors [Visual Basic], compiler"
 ms.assetid: d50addfb-0683-45e5-8c3c-69a2eb510a19
+ms.topic: article
 ---
 # Visual Basic Compiler Messages
 

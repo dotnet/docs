@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID744"
 ms.assetid: 145f0a6d-7fdd-4d73-9dc6-5fea39a52896
+ms.topic: how-to
 ---
 # Search text not found
 

@@ -3,6 +3,7 @@ description: "Learn more about: The path has not been set"
 title: "The path has not been set"
 ms.date: 07/20/2015
 ms.assetid: 2e61146f-1b42-4798-b823-bd1041d9d248
+ms.topic: article
 ---
 # The path has not been set
 

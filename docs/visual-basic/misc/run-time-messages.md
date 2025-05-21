@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "errors [Visual Basic], run-time"
   - "run-time errors [Visual Basic], Visual Basic"
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
+ms.topic: article
 ---
 # Visual Basic Run-Time Messages
 

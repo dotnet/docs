@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_LengthGTZero1"
 ms.assetid: 709bc232-f8fe-4864-9842-e064795da0f5
+ms.topic: article
 ---
 # Length of argument '\<argumentname>' must be greater than zero
 

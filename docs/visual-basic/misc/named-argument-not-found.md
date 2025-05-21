@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID448"
 ms.assetid: b7d63962-9cac-466b-8bee-41debd7d79c7
+ms.topic: article
 ---
 # Named argument not found (Visual Basic)
 

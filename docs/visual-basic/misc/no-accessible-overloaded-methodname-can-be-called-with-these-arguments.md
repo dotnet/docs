@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrAmbiguousMatch_NarrowingConversion1"
 ms.assetid: 2fdbadb9-8ef1-404a-a2ed-ce5f5e55cfcb
+ms.topic: article
 ---
 # No accessible overloaded '\<methodname>' can be called with these arguments without a narrowing conversion
 

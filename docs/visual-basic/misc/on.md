@@ -8,6 +8,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "On keyword [Visual Basic]"
 ms.assetid: 8619c328-1637-4f41-b466-cbe693f4fe73
+ms.topic: article
 ---
 # On (Visual Basic)
 

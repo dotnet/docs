@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNetwork_BadConnectionTimeout"
 ms.assetid: 15ac09a7-47f0-44f3-9e84-5bd10bd07450
+ms.topic: article
 ---
 # The ConnectionTimeout must be greater than 0
 

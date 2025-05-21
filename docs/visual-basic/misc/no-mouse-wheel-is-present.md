@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrMouse_NoWheelIsPresent"
 ms.assetid: e924ffba-4af1-4247-9a6f-d19a03738f62
+ms.topic: article
 ---
 # No mouse wheel is present
 

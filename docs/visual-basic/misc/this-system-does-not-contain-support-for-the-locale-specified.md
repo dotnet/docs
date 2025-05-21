@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_LocalNotSupported"
 ms.assetid: 59bfa215-556b-4bfa-8f25-b090ea83298d
+ms.topic: article
 ---
 # This system does not contain support for the Locale specified
 

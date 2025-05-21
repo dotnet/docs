@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrMissingMember_MemberNotFoundOnType2"
 ms.assetid: 6300feb8-78ac-4dd0-9653-1d03e1f5bc20
+ms.topic: article
 ---
 # Public member '\<membername>' on type '\<typename>' not found
 

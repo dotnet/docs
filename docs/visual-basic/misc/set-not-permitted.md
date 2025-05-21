@@ -4,6 +4,7 @@ description: "Learn more about: Set not permitted"
 ms.date: 07/20/2015
 f1_keywords:
   - "vbrID387"
+ms.topic: how-to
 ---
 # Set not permitted
 

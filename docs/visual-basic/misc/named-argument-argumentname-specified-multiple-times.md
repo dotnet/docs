@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrNamedArgumentAlreadyUsed1"
 ms.assetid: a5113d23-ca66-4961-909f-74f97a0eaf87
+ms.topic: article
 ---
 # Named argument '\<argumentname>' specified multiple times
 

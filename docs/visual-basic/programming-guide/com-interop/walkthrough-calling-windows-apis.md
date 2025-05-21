@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "DllImport attribute, calling Windows API"
   - "Declare statement [Visual Basic], declaring DLL functions"
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
+ms.topic: article
 ---
 # Walkthrough: Calling Windows APIs (Visual Basic)
 

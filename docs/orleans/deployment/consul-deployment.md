@@ -8,7 +8,7 @@ ms.date: 07/03/2024
 
 [Consul](https://www.consul.io) is a distributed, highly available, and data center-aware service discovery platform that includes simple service registration, health checking, failure detection, and key-value storage. It's built on the premise that every node in the data center is running a Consul agent that is either acting as a server or client. Each agent communicates via a scalable gossip protocol.
 
-There's a detailed overview of Consul including comparisons with similar solutions [here](https://www.consul.io/intro/index.html).
+There's a detailed overview of Consul including comparisons with similar solutions at [What is Consul?](https://www.consul.io/intro/index.html).
 
 Consul is written in [Go](https://go.dev) and is [open source](https://github.com/hashicorp/consul); compiled downloads are available for [macOS X, FreeBSD, Linux, Solaris, and Windows](https://www.consul.io/downloads.html).
 

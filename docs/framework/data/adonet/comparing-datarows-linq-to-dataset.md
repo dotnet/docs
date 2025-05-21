@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8fe0eadf-297b-487c-8d4b-7816753c2883
+ms.topic: concept-article
 ---
 # Comparing DataRows (LINQ to DataSet)
 

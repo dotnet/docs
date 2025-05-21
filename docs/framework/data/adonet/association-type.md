@@ -3,6 +3,7 @@ description: "Learn more about: association type"
 title: "association type"
 ms.date: "03/30/2017"
 ms.assetid: 26c409f6-06e8-4441-ac78-1b1076a3c005
+ms.topic: article
 ---
 # association type
 

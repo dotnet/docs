@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "application domains, shadow copying assemblies"
   - "shadow copying assemblies"
 ms.assetid: de8b8759-fca7-4260-896b-5a4973157672
+ms.topic: article
 ---
 # Shadow Copying Assemblies
 

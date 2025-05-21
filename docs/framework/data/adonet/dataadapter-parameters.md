@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f21e6aba-b76d-46ad-a83e-2ad8e0af1e12
+ms.topic: article
 ---
 # DataAdapter Parameters
 

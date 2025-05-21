@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords:
   - "properties [C#]"
   - "C# language, properties"
+ms.topic: article
 ---
 # Properties (C# Programming Guide)
 

@@ -4,6 +4,7 @@ description: Learn how to use delegates. Delegates are an object-oriented, type 
 ms.date: 12/20/2024
 helpviewer_keywords:
   - "delegates [C#], how to use"
+ms.topic: concept-article
 ---
 # Using Delegates (C# Programming Guide)
 

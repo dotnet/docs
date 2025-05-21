@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "methods [C#]"
   - "C# language, methods"
 ms.assetid: cc738f07-e8cd-4683-9585-9f40c0667c37
+ms.topic: article
 ---
 # Methods (C# Programming Guide)
 

@@ -3,6 +3,7 @@ description: "Learn more about: association end multiplicity"
 title: "association end multiplicity"
 ms.date: "03/30/2017"
 ms.assetid: 340926ee-aefb-4bef-92cc-453e5251fd03
+ms.topic: article
 ---
 # association end multiplicity
 

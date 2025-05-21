@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords:
   - "anonymous types [C#]"
   - "C# Language, anonymous types"
+ms.topic: article
 ---
 # Anonymous types
 

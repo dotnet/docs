@@ -3,6 +3,7 @@ title: "Quantifier Operations"
 titleSuffix: LINQ
 description: Learn about quantifier operations in LINQ. These methods, `All`, `Any`, and `Contains`, return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
 ms.date: 05/29/2024
+ms.topic: article
 ---
 # Quantifier operations in LINQ (C#)
 

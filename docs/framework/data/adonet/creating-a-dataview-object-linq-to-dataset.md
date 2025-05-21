@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 76057508-e12d-4779-a707-06a4c2568acf
+ms.topic: concept-article
 ---
 # Creating a DataView Object (LINQ to DataSet)
 

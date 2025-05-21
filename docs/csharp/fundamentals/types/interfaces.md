@@ -5,6 +5,7 @@ ms.date: 05/14/2021
 helpviewer_keywords: 
   - "interfaces [C#]"
   - "C# language, interfaces"
+ms.topic: article
 ---
 # Interfaces - define behavior for multiple types
 

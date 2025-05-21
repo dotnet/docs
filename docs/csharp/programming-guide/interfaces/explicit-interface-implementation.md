@@ -5,6 +5,7 @@ ms.date: 03/24/2021
 helpviewer_keywords: 
   - "explicit interfaces [C#]"
   - "interfaces [C#], explicit"
+ms.topic: article
 ---
 # Explicit Interface Implementation (C# Programming Guide)
 

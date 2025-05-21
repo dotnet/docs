@@ -5,6 +5,7 @@ ms.date: 11/24/2024
 helpviewer_keywords: 
   - "C# language, namespaces"
   - "namespaces [C#]"
+ms.topic: concept-article
 ---
 # Declare namespaces to organize types
 

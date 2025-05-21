@@ -3,6 +3,7 @@ description: "Learn more about: ADO.NET Technology Options and Guidelines"
 title: "Technology Options and Guidelines"
 ms.date: "03/30/2017"
 ms.assetid: c8577281-38e6-4ce5-b036-572039a4c3d8
+ms.topic: article
 ---
 # ADO.NET Technology Options and Guidelines
 

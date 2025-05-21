@@ -3,6 +3,7 @@ description: "Learn more about: Deriving DataSet Relational Structure from XML S
 title: "Deriving DataSet Relational Structure from XML Schema (XSD)"
 ms.date: "03/30/2017"
 ms.assetid: 8f6cd04d-6197-4bc4-9096-8c51c7e4acae
+ms.topic: concept-article
 ---
 # Deriving DataSet Relational Structure from XML Schema (XSD)
 

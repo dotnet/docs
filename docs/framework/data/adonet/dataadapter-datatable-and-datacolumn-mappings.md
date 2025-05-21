@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d023260a-a66a-4c39-b8f4-090cd130e730
+ms.topic: article
 ---
 # DataAdapter DataTable and DataColumn Mappings
 

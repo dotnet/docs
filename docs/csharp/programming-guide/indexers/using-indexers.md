@@ -4,6 +4,7 @@ description: Learn how to declare and use an indexer for a class, struct, or int
 ms.date: 08/20/2024
 helpviewer_keywords:
   - "indexers [C#], about indexers"
+ms.topic: concept-article
 ---
 
 # Using indexers (C# Programming Guide)

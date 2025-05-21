@@ -3,6 +3,7 @@ title: "DataSets"
 description: Learn about DataSet, a memory-resident data representation that provides a consistent relational programming model regardless of the data source in ADO.NET.
 ms.date: "03/30/2017"
 ms.assetid: 82b641bb-6001-4512-bf1a-2830acdd92ab
+ms.topic: article
 ---
 # ADO.NET DataSets
 

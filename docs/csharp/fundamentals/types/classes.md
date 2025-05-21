@@ -5,6 +5,7 @@ ms.date: 08/15/2024
 helpviewer_keywords: 
   - "classes [C#]"
   - "C# language, classes"
+ms.topic: concept-article
 ---
 # Introduction to classes
 

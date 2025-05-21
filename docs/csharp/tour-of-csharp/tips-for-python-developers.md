@@ -2,6 +2,7 @@
 title: Tips for Python Developers
 description: New to C#, but know Python? Here's a roadmap of what's familiar, features in C# that aren't in Python, and alternatives for Python features that aren't in C#.
 ms.date: 03/17/2025
+ms.topic: article
 ---
 # Roadmap for Python developers learning C\#
 

@@ -3,6 +3,7 @@ description: "Learn more about: complex type"
 title: "complex type"
 ms.date: "03/30/2017"
 ms.assetid: 63efbd23-11d4-4871-bc88-ad01b9837553
+ms.topic: article
 ---
 # complex type
 

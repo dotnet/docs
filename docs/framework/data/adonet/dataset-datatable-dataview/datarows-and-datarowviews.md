@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8f5eec26-b809-4aca-8778-7e202356d856
+ms.topic: article
 ---
 # DataRows and DataRowViews
 

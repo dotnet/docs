@@ -2,6 +2,7 @@
 title: Classes and objects tutorial
 description: Create your first C# program and explore object oriented concepts
 ms.date: 02/25/2022
+ms.topic: tutorial
 ---
 # Explore object oriented programming with classes and objects
 

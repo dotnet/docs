@@ -3,6 +3,7 @@ title: Work with the .NET Compiler Platform SDK semantic model
 description: This overview provides an understanding of the type you use to understand and manipulate the semantic model of your code.
 ms.date: 10/15/2017
 ms.custom: mvc
+ms.topic: article
 ---
 
 # Work with semantics

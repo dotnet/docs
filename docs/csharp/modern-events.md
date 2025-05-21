@@ -3,6 +3,7 @@ title: The Updated .NET Core Event Pattern
 description: Learn how the .NET Core event pattern enables flexibility with backwards compatibility and how to implement safe event processing with async subscribers.
 ms.date: 03/11/2025
 ms.subservice: fundamentals
+ms.topic: article
 ---
 # The updated .NET Core event pattern
 

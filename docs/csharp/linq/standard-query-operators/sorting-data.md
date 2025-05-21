@@ -2,6 +2,7 @@
 title: "Sorting Data"
 description: Learn about sort operations and the standard query operator methods that perform sort operations in LINQ in C#.  
 ms.date: 05/29/2024
+ms.topic: concept-article
 ---
 # Sorting Data (C#)
 

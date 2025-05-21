@@ -2,6 +2,7 @@
 title: "Connection String Syntax"
 description: Learn about syntax of connection strings in ADO.NET. The syntax for each provider is documented in its ConnectionString property.
 ms.date: "05/22/2018"
+ms.topic: article
 ---
 # Connection string syntax
 

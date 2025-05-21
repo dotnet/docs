@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0ce3793d-54b2-47e4-8cf7-b0591cc4dd21
+ms.topic: article
 ---
 # DataSet and XmlDataDocument Synchronization
 

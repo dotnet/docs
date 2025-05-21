@@ -2,6 +2,7 @@
 title: Overview
 description: New to C#? Learn the basics of the language. Start with this overview.
 ms.date: 03/17/2025
+ms.topic: concept-article
 ---
 
 # A tour of the C# language

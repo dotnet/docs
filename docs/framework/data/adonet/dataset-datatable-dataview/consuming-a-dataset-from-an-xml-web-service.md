@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
+ms.topic: how-to
 ---
 # Consume a DataSet from an XML web service
 

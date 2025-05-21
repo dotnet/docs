@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1b97afeb-03f8-41e2-8eb3-58aff65f7d18
+ms.topic: how-to
 ---
 # Creating a DataTable From a Query (LINQ to DataSet)
 

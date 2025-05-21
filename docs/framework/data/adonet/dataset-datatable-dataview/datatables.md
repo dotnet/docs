@@ -3,6 +3,7 @@ title: "DataTables"
 description: Learn about an ADO.NET DataTable, which represents one table of in-memory relational data, local to the .NET-based application where it resides.
 ms.date: "03/30/2017"
 ms.assetid: 52ff0e32-3e5a-41de-9a3b-7b04ea52b83e
+ms.topic: article
 ---
 # DataTables
 

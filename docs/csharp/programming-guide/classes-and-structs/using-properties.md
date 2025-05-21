@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "set accessor [C#]"
   - "get accessor [C#]"
   - "properties [C#], about properties"
+ms.topic: concept-article
 ---
 # Using Properties (C# Programming Guide)
 

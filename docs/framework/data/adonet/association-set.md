@@ -3,6 +3,7 @@ description: "Learn more about: association set"
 title: "association set"
 ms.date: "03/30/2017"
 ms.assetid: a65247b6-ce59-44ea-974c-14ae20a7995f
+ms.topic: article
 ---
 # association set
 

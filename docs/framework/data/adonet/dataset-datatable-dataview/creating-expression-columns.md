@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0af3bd64-92a2-4b47-ae62-f5df35f131a6
+ms.topic: concept-article
 ---
 # Creating Expression Columns
 

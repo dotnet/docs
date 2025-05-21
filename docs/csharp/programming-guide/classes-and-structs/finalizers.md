@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "~ [C#], in finalizers"
   - "C# language, finalizers"
   - "finalizers [C#]"
+ms.topic: article
 ---
 # Finalizers (C# Programming Guide)
 

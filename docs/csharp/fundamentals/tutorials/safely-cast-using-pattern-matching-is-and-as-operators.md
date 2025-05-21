@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "cast operators [C#], as and is operators"
   - "as operator [C#]"
   - "is operator [C#]"
+ms.topic: how-to
 ---
 # How to safely cast by using pattern matching and the is and as operators
 

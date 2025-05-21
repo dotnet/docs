@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
   - "methods [C#], extension"
+ms.topic: article
 ---
 
 # Extension members (C# Programming Guide)

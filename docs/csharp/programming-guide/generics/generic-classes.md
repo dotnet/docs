@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "C# language, generic classes"
   - "generics [C#], classes"
+ms.topic: article
 ---
 # Generic Classes (C# Programming Guide)
 

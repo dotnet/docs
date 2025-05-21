@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 49d4422a-7464-4ab8-8ec7-90185fde3ecf
+ms.topic: concept-article
 ---
 # Creating a DataReader
 

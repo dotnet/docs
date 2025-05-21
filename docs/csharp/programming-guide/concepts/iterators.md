@@ -3,6 +3,7 @@ title: Iterate through collections
 description: Learn how to use an iterator to step through collections like lists and arrays. Iterators are consumed from client code using a foreach statement or LINQ query.
 ms.date: 08/14/2018
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
+ms.topic: how-to
 ---
 # Iterators (C#)
 

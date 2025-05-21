@@ -5,6 +5,7 @@ ms.date: 05/29/2024
 helpviewer_keywords:
   - "constructors [C#], instance constructors"
   - "instance constructors [C#]"
+ms.topic: article
 ---
 # Instance constructors (C# programming guide)
 

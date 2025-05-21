@@ -3,6 +3,7 @@ title: "Overview"
 description: Read an overview of ADO.NET in .NET Framework and read about resources for more detailed explanations and examples.
 ms.date: "03/30/2017"
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
+ms.topic: concept-article
 ---
 # ADO.NET Overview
 

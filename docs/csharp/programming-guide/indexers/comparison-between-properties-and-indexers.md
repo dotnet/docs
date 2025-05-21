@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "properties [C#], vs. indexers"
   - "indexers [C#], vs. properties"
 ms.assetid: 3358a89f-44a0-4a4d-bf8c-07237a90af39
+ms.topic: article
 ---
 # Comparison Between Properties and Indexers (C# Programming Guide)
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d475d356-6abb-4701-8fd1-2906fb93dfba
+ms.topic: article
 ---
 # ChildViews and Relations
 

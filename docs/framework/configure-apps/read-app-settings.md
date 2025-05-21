@@ -4,6 +4,7 @@ description: Learn how to read application settings from an app.config file in .
 ms.author: gewarren
 author: gewarren
 ms.date: 03/10/2022
+ms.topic: how-to
 ---
 # How to: Read application settings
 

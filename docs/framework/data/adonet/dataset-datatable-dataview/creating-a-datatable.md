@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: eecf9d78-60e3-4fdc-8de0-e56c13a89414
+ms.topic: concept-article
 ---
 # Creating a DataTable
 

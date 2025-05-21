@@ -3,6 +3,7 @@ description: "Learn more about: DiffGrams"
 title: "DiffGrams"
 ms.date: "03/30/2017"
 ms.assetid: 037f3991-7bbc-424b-b52e-8b03585d3e34
+ms.topic: article
 ---
 # DiffGrams
 

@@ -4,6 +4,7 @@ description: Learn how the C# language has changed over its many releases. Learn
 author: erikdietrich
 ms.date: 12/20/2024
 ms.custom: "updateeachrelease, UpdateFrequency1"
+ms.topic: article
 ---
 
 # The history of C\#

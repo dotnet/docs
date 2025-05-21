@@ -3,6 +3,7 @@ title: "Tutorial: Introduction to Inheritance"
 description: Learn to use inheritance in C# libraries and applications.
 ms.date: 02/25/2022
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
+ms.topic: tutorial
 ---
 # Inheritance in C# and .NET
 

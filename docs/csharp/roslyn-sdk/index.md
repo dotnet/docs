@@ -3,6 +3,7 @@ title: The .NET Compiler Platform SDK (Roslyn APIs)
 description: Learn to use the .NET Compiler Platform SDK (also called the Roslyn APIs) to understand .NET code, spot errors, and fix those errors.
 ms.date: 10/25/2024
 ms.custom: mvc
+ms.topic: article
 ---
 # The .NET Compiler Platform SDK
 

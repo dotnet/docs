@@ -3,6 +3,7 @@ description: "Learn more about: association end"
 title: "association end"
 ms.date: "03/30/2017"
 ms.assetid: 2c345213-0296-4d90-ac6d-cef179798a75
+ms.topic: article
 ---
 # association end
 

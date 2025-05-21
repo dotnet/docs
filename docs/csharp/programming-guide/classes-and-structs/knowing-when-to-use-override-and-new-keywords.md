@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "new keyword [C#]"
   - "polymorphism [C#], using override and new [C#]"
 ms.assetid: 323db184-b136-46fc-8839-007886e7e8b0
+ms.topic: concept-article
 ---
 # Knowing When to Use Override and New Keywords (C# Programming Guide)
 

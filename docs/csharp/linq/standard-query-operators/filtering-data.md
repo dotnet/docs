@@ -2,6 +2,7 @@
 title: "Filtering Data with LINQ"
 description: Filtering, also known as selection, restricts results based on a condition. Learn about the standard query operator methods in LINQ in C# that perform filtering.
 ms.date: 05/29/2024
+ms.topic: concept-article
 ---
 # Filtering Data in C# with LINQ
 

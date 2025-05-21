@@ -5,6 +5,7 @@ ms.date: 12/20/2024
 helpviewer_keywords: 
   - "delegates [C#], with named vs. anonymous methods"
   - "methods [C#], in delegates"
+ms.topic: article
 ---
 # Delegates with Named vs. Anonymous Methods (C# Programming Guide)
 

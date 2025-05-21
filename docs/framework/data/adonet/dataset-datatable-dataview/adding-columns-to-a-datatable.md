@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e85c4a0e-4f3f-458c-b58b-0ddbc06bf974
+ms.topic: concept-article
 ---
 # Adding Columns to a DataTable
 

@@ -5,6 +5,7 @@ ms.date: 07/31/2024
 helpviewer_keywords: 
   - "static constructors [C#]"
   - "constructors [C#], static"
+ms.topic: article
 ---
 # Static Constructors (C# Programming Guide)
 

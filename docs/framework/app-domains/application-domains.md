@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "code, verification process"
   - "verification testing code"
 ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
+ms.topic: article
 ---
 # Application domains
 

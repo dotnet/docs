@@ -2,6 +2,7 @@
 title: Choosing diagnostic IDs
 description: This overview provides an understanding of how to choose a diagnostic ID
 ms.date: 11/2/2023
+ms.topic: concept-article
 ---
 
 # Choose diagnostic IDs

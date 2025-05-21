@@ -3,6 +3,7 @@ title: Update your codebase to use nullable reference types
 description: Learn nullable contexts, how to enable or disable warnings and annotations, and how to diagnose and fix possible null dereferencing issues.
 ms.subservice: null-safety
 ms.date: 09/15/2021
+ms.topic: how-to
 ---
 # Update a codebase with nullable reference types to improve null diagnostic warnings
 

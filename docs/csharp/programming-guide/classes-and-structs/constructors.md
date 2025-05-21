@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "constructors [C#]"
   - "classes [C#], constructors"
   - "C# language, constructors"
+ms.topic: article
 ---
 # Constructors (C# programming guide)
 

@@ -1,7 +1,7 @@
 ---
 title: Language Integrated Query (LINQ)
 description: Introduces Language Integrated Query (LINQ) in C#.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/14/2023
 ---
 # Language Integrated Query (LINQ)

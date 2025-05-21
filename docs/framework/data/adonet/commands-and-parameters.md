@@ -3,6 +3,7 @@ title: "Commands and Parameters"
 description: Learn how to use Command objects for each .NET Framework data provider to run commands and return results from a data source.
 ms.date: "03/30/2017"
 ms.assetid: b623f810-d871-49a5-b0f5-078cc3c34db6
+ms.topic: article
 ---
 # Commands and Parameters
 

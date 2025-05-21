@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "C# language, abstract classes"
   - "C# language, sealed"
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
+ms.topic: article
 ---
 # Abstract and Sealed Classes and Class Members (C# Programming Guide)
 

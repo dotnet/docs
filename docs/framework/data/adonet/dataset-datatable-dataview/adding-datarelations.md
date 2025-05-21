@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a4a564fb-c1c4-4135-b6c2-b030e51195e4
+ms.topic: concept-article
 ---
 # Adding DataRelations
 

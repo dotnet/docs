@@ -2,6 +2,7 @@
 title: "Asynchronous Programming"
 description: Learn about asynchronous programming in .NET Framework Data Provider for SQL Server, including enhancements introduced in .NET Framework 4.5.
 ms.date: "10/18/2018"
+ms.topic: article
 ---
 
 # Asynchronous programming

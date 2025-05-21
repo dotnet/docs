@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords:
   - "C# language, generics"
   - "generics [C#]"
+ms.topic: article
 ---
 # Generic classes and methods
 

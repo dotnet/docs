@@ -3,6 +3,7 @@ description: "Learn more about: DataViews"
 title: "DataViews"
 ms.date: "03/30/2017"
 ms.assetid: 0fe5dfa2-c1cd-435f-90b6-b4dd2e3ef34b
+ms.topic: article
 ---
 # DataViews
 

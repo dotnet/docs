@@ -3,6 +3,7 @@ title: Work with the .NET Compiler Platform SDK workspace model
 description: This overview provides an understanding of the type you use to query and manipulate the workspace and projects for your code.
 ms.date: 10/15/2017
 ms.custom: mvc
+ms.topic: article
 ---
 
 # Work with a workspace

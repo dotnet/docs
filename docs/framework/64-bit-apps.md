@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "applications [C++], 64-bit"
   - "64-bit applications [C++]"
   - "64-bit programming [C++]"
+ms.topic: article
 ---
 # 64-bit applications
 

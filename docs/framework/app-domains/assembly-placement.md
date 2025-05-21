@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], placement"
   - "assemblies [.NET Framework], location"
 ms.assetid: ff8d48bc-f606-484f-9fe1-d0af264269fb
+ms.topic: article
 ---
 # Assembly Placement
 

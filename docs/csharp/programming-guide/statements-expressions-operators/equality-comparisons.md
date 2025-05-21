@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "object equality [C#]"
 ms.assetid: 10b865ea-4e7b-4127-9242-c9b8f57d9f04
+ms.topic: article
 ---
 # Equality comparisons (C# Programming Guide)
 

@@ -4,6 +4,7 @@ description: Local functions in C# are private methods that are nested in anothe
 ms.date: 11/22/2024
 helpviewer_keywords:
   - "local functions [C#]"
+ms.topic: article
 ---
 # Local functions (C# Programming Guide)
 

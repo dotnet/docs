@@ -2,6 +2,7 @@
 title: "Feature specifications"
 description: "Understand the relationships among the ECMA C# standard and the feature specifications for newer language features implemented in roslyn."
 ms.date: 05/08/2024
+ms.topic: article
 ---
 # Feature specifications
 

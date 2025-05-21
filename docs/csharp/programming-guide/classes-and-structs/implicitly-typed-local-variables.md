@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "implicitly-typed local variables [C#]"
   - "var [C#]"
 ms.assetid: b9218fb2-ef5d-4814-8a8e-2bc29b0bbc9b
+ms.topic: article
 ---
 # Implicitly typed local variables (C# Programming Guide)
 

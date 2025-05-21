@@ -2,6 +2,7 @@
 title: Tips for JavaScript and TypeScript Developers
 description: "New to C#, but know JavaScript or TypeScript? Here's a roadmap of what's familiar, features in C# that aren't in JavaScript or TypeScript, and alternatives for features you use that aren't in C#"
 ms.date: 03/17/2025
+ms.topic: article
 ---
 # Roadmap for JavaScript and TypeScript developers learning C\#
 

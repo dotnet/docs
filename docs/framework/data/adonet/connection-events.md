@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5a29de74-acfc-4134-8616-829dd7ce0710
+ms.topic: article
 ---
 # Connection Events
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "generics [C#], vs. C++ templates"
 ms.assetid: 1da6beeb-d4a4-4da0-87b7-0cfbe04920b7
+ms.topic: article
 ---
 # Differences Between C++ Templates and C# Generics (C# Programming Guide)
 

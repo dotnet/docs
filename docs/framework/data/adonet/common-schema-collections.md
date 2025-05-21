@@ -3,6 +3,7 @@ description: "Learn more about: Common Schema Collections"
 title: "Common Schema Collections"
 ms.date: "03/30/2017"
 ms.assetid: 50127ced-2ac8-4d7a-9cd1-5c98c655ff03
+ms.topic: article
 ---
 # Common Schema Collections
 

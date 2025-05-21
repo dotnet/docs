@@ -2,6 +2,7 @@
 title: Tips for Java Developers
 description: Are you new to C#, but experienced in Java? Here's a roadmap of what's familiar, and new features to learn in C#, and features in Java that aren't in C#.
 ms.date: 04/17/2025
+ms.topic: article
 ---
 # Roadmap for Java developers learning C\#
 

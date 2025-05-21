@@ -3,6 +3,7 @@ title: "DataAdapters and DataReaders"
 description: Learn about the ADO.NET DataReader, which retrieves data from a database, and DataAdapter, which retrieves data from a data source and populates a DataSet.
 ms.date: "03/30/2017"
 ms.assetid: cc952ca2-ec19-46ab-9189-15174b52cb74
+ms.topic: article
 ---
 # DataAdapters and DataReaders
 

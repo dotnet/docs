@@ -3,6 +3,7 @@ description: "Learn more about: Generating DataSet Relations from XML Schema (XS
 title: "Generating DataSet Relations from XML Schema (XSD)"
 ms.date: "03/30/2017"
 ms.assetid: 1c9a1413-c0d2-4447-88ba-9a2b0cbc0aa8
+ms.topic: concept-article
 ---
 # Generating DataSet Relations from XML Schema (XSD)
 

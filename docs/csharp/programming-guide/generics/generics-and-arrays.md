@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "generics [C#], arrays"
   - "arrays [C#], generics"
 ms.assetid: 7d956536-3851-41b5-94ad-3e7c0a5fe485
+ms.topic: article
 ---
 # Generics and Arrays (C# Programming Guide)
 

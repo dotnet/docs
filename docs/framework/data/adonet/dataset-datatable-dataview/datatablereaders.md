@@ -3,6 +3,7 @@ description: "Learn more about: DataTableReaders"
 title: "DataTableReaders"
 ms.date: "03/30/2017"
 ms.assetid: 97546ae2-0e42-4d26-961d-e0b244d81ded
+ms.topic: article
 ---
 # DataTableReaders
 

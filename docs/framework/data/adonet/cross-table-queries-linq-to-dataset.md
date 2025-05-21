@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 6819a16f-8656-41af-a54d-dfec0cb66366
+ms.topic: article
 ---
 # Cross-Table Queries (LINQ to DataSet)
 

@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "indexers [C#]"
   - "C# language, indexers"
+ms.topic: article
 ---
 # Indexers
 

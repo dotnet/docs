@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 09f2e4ee-1d08-4ba8-8936-83394fee319d
+ms.topic: concept-article
 ---
 # Applying an XSLT Transform to a DataSet
 

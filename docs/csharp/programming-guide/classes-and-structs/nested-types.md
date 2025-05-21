@@ -5,6 +5,7 @@ ms.date: 02/08/2020
 helpviewer_keywords: 
   - "nested types [C#]"
 ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
+ms.topic: article
 ---
 # Nested Types (C# Programming Guide)
 

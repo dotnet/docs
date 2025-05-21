@@ -5,6 +5,7 @@ description: Learn how to use the analyzers in the .NET Framework Analyzers pack
 author: billwagner
 ms.author: wiwagn
 ms.date: 10/23/2020
+ms.topic: article
 ---
 # Code analysis
 

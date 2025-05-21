@@ -2,6 +2,7 @@
 title: "Partitioning data"
 description: Learn how to partition data in LINQ. View an illustration showing the results of partitioning operations.
 ms.date: 05/29/2024
+ms.topic: concept-article
 ---
 # Partitioning data (C#)
 

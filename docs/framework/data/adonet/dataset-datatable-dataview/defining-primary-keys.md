@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2ea85959-e763-4669-8bd9-46a9dab894bd
+ms.topic: concept-article
 ---
 # Defining Primary Keys
 

@@ -2,6 +2,7 @@
 title: "Connection Strings"
 description: Learn about connection strings in ADO.NET, which contain initialization information passed as a parameter from a data provider to a data source.
 ms.date: "10/10/2018"
+ms.topic: article
 ---
 
 # Connection Strings in ADO.NET

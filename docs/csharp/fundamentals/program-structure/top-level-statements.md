@@ -5,6 +5,7 @@ ms.date: 11/22/2024
 helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
+ms.topic: article
 ---
 # Top-level statements - programs without `Main` methods
 

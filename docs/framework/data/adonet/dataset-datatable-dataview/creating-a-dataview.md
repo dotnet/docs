@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b1cc02d1-23b1-4439-a998-0da1899f3442
+ms.topic: concept-article
 ---
 # Creating a DataView
 

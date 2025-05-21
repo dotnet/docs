@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "data transformations [LINQ in C#]"
   - "LINQ [C#], type relationships"
 ms.assetid: 99118938-d47c-4d7e-bb22-2657a9f95268
+ms.topic: how-to
 ---
 # Type Relationships in LINQ Query Operations (C#)
 

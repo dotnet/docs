@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "C# language, private constructors"
   - "private constructors [C#]"
 ms.assetid: 29eeaa7d-8d81-453c-94b9-0e2800172621
+ms.topic: article
 ---
 # Private Constructors (C# Programming Guide)
 

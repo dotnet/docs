@@ -4,6 +4,7 @@ description: Learn about C# features to use with LINQ queries and in other conte
 ms.date: 04/22/2024
 helpviewer_keywords:
   - "LINQ [C#], features supporting LINQ"
+ms.topic: article
 ---
 # C# Features That Support LINQ
 

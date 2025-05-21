@@ -4,6 +4,7 @@ description: A field in C# is a variable of any type that is declared directly i
 ms.date: 05/25/2023
 helpviewer_keywords:
   - "fields [C#]"
+ms.topic: article
 ---
 # Fields (C# Programming Guide)
 

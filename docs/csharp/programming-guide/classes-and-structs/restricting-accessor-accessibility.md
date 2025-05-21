@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "properties [C#], read-only"
   - "asymmetric accessor accessibility [C#]"
   - "indexers [C#], read-only"
+ms.topic: concept-article
 ---
 # Restricting Accessor Accessibility (C# Programming Guide)
 

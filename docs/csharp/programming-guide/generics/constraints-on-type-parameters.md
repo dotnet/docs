@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "type constraints [C#]"
   - "type parameters [C#], constraints"
   - "unbound type parameter [C#]"
+ms.topic: article
 ---
 # Constraints on type parameters (C# Programming Guide)
 

@@ -5,6 +5,7 @@ ms.date: 08/20/2024
 helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
+ms.topic: article
 ---
 # Access Modifiers (C# Programming Guide)
 

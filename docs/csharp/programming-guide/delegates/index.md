@@ -5,6 +5,7 @@ ms.date: 03/11/2025
 helpviewer_keywords: 
   - "C# language, delegates"
   - "delegates [C#]"
+ms.topic: article
 ---
 # Delegates (C# Programming Guide)
 

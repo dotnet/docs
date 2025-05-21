@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "parameters [C#], optional"
   - "named and optional arguments [C#]"
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
+ms.topic: article
 ---
 # Named and Optional Arguments (C# Programming Guide)
 

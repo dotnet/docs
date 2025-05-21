@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 57629d8f-393e-4677-8b83-29ffde27f5fc
+ms.topic: concept-article
 ---
 # Creating a DataSet
 

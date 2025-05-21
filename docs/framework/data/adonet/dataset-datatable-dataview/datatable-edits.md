@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f08008a9-042e-4de9-94f3-4f0e502b1eb5
+ms.topic: article
 ---
 # DataTable Edits
 

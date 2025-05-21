@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "global assembly cache, about"
   - "access control lists [.NET Framework]"
 ms.assetid: cf5eacd0-d3ec-4879-b6da-5fd5e4372202
+ms.topic: article
 ---
 # Global Assembly Cache
 

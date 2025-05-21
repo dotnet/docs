@@ -4,6 +4,7 @@ description: This example shows how a class is instantiated by using the new ope
 ms.date: 01/15/2025
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
+ms.topic: how-to
 ---
 # Use constructors (C# programming guide)
 

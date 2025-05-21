@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "common language runtime, application domains"
   - "runtime, application domains"
 ms.assetid: c6d99815-e022-4d2c-9420-1d7ab5b9d504
+ms.topic: concept-article
 ---
 # Using Application Domains
 

@@ -3,6 +3,7 @@ title: Nullable reference types
 description: This article provides an overview of nullable reference types. Learn how the feature provides safety against null reference exceptions, for new and existing projects.
 ms.subservice: null-safety
 ms.date: 12/09/2024
+ms.topic: article
 ---
 # Nullable reference types
 

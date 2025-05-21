@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "LINQ, queries"
   - "LINQ, deferred execution"
   - "queries [LINQ], about LINQ queries"
+ms.topic: article
 ---
 # Introduction to LINQ Queries in C\#
 

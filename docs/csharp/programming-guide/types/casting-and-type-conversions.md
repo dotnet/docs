@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "conversions [C#], type"
   - "casting [C#]"
   - "converting types [C#]"
+ms.topic: concept-article
 ---
 
 # Casting and type conversions (C# Programming Guide)

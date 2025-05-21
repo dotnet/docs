@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "generics [C#], delegates"
   - "delegates [C#], generic"
 ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
+ms.topic: article
 ---
 # Generic Delegates (C# Programming Guide)
 

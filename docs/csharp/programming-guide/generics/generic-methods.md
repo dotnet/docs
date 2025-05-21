@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], methods"
 ms.assetid: 673eeea2-4b48-4faa-9c4e-2e89449221b9
+ms.topic: article
 ---
 # Generic methods (C# programming guide)
 

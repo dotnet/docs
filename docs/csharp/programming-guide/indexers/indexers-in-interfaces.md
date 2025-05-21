@@ -5,6 +5,7 @@ ms.date: 08/20/2024
 helpviewer_keywords: 
   - "indexers [C#], in interfaces"
   - "accessors [C#], indexers"
+ms.topic: article
 ---
 # Indexers in Interfaces (C# Programming Guide)
 

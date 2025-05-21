@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f82aaa62-321e-4c8a-b51b-9d1114700170
+ms.topic: concept-article
 ---
 # Annotating Typed DataSets
 

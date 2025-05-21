@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
+ms.topic: article
 ---
 # Automatically implemented properties
 

@@ -2,6 +2,7 @@
 title: "Projection operations in LINQ"
 description: Learn about projection operations. These operations transform an object into a new form that often consists only of properties used later.
 ms.date: 05/29/2024
+ms.topic: article
 ---
 # Projection operations (C#)
 

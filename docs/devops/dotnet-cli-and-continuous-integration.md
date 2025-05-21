@@ -2,6 +2,7 @@
 title: Use the .NET SDK in Continuous Integration (CI) environments
 description: Learn how to use the .NET SDK and its tools on a build server with continuous integration.
 ms.date: 07/13/2022
+ms.topic: how-to
 ---
 
 # Use the .NET SDK in continuous integration (CI) environments

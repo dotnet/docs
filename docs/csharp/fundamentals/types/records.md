@@ -5,6 +5,7 @@ ms.date: 05/24/2023
 helpviewer_keywords: 
   - "records [C#]"
   - "C# language, records"
+ms.topic: concept-article
 ---
 # Introduction to record types in C\#
 

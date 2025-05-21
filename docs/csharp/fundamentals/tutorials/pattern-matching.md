@@ -2,6 +2,7 @@
 title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
 ms.date: 02/25/2022
+ms.topic: tutorial
 ---
 # Tutorial: Use pattern matching to build type-driven and data-driven algorithms
 

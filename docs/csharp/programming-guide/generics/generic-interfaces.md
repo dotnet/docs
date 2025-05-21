@@ -5,6 +5,7 @@ ms.date: 07/08/2022
 helpviewer_keywords: 
   - "C# language, generic interfaces"
   - "generics [C#], interfaces"
+ms.topic: article
 ---
 # Generic Interfaces (C# Programming Guide)
 

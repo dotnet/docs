@@ -2,6 +2,7 @@
 title: "Grouping Data"
 description: Grouping puts data into groups of elements that share an attribute. Learn about the standard query operator methods in LINQ in C# that group data elements.
 ms.date: 05/29/2024
+ms.topic: concept-article
 ---
 # Grouping Data (C#)
 

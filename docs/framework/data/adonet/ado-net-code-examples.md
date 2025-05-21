@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c119657a-9ce6-4940-91e4-ac1d5f0d9584
+ms.topic: how-to
 ---
 # ADO.NET code examples
 

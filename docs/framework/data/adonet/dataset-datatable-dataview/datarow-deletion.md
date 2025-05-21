@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c34f531d-4b9b-4071-b2d7-342c402aa586
+ms.topic: article
 ---
 # DataRow Deletion
 

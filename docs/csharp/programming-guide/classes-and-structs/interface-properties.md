@@ -5,6 +5,7 @@ ms.date: 08/20/2024
 helpviewer_keywords: 
   - "properties [C#], on interfaces"
   - "interfaces [C#], properties"
+ms.topic: article
 ---
 # Interface Properties (C# Programming Guide)
 

@@ -5,6 +5,7 @@ ms.date: 05/17/2024
 helpviewer_keywords: 
   - "object initializers [C#]"
   - "collection initializers [C#]"
+ms.topic: how-to
 ---
 # Object and Collection Initializers (C# Programming Guide)
 

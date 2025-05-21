@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "application domains, programming"
   - "programming application domains"
 ms.assetid: 96d3b8e3-bef8-4da0-9a81-9841e23a94e9
+ms.topic: concept-article
 ---
 # Programming with Application Domains and Assemblies
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 27c9f2fd-f64d-4b4e-bbf6-1d24f47067cb
+ms.topic: article
 ---
 # DataTable Constraints
 

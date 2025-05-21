@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "partial members [C#]"
   - "partial classes [C#]"
   - "C# language, partial classes and methods"
+ms.topic: article
 ---
 # Partial Classes and Members (C# Programming Guide)
 

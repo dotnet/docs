@@ -3,6 +3,7 @@ description: "Learn more about: DataTable Schema Definition"
 title: "DataTable Schema Definition"
 ms.date: "03/30/2017"
 ms.assetid: efbcdda4-f5a9-421d-8be2-4c194c74552f
+ms.topic: article
 ---
 # DataTable Schema Definition
 

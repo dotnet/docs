@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: cb846617-2b1a-44ff-bd7f-5835f5ea37fa
+ms.topic: concept-article
 ---
 # Copying DataSet Contents
 

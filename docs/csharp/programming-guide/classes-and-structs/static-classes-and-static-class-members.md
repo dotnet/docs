@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "C# language, static classes"
   - "static class members [C#]"
 ms.assetid: 235614b5-1371-4dbd-9abd-b406a8b0298b
+ms.topic: article
 ---
 # Static Classes and Static Class Members (C# Programming Guide)
 

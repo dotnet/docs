@@ -3,6 +3,7 @@ title: "Variance in Generic Interfaces"
 description: View variance support information for generic interfaces, including updated information for existing interfaces in .NET Framework 4 and 4.5.
 ms.date: 06/06/2019
 ms.assetid: 4828a8f9-48c0-4128-9749-7fcd6bf19a06
+ms.topic: article
 ---
 
 # Variance in Generic Interfaces (C#)

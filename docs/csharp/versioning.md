@@ -3,6 +3,7 @@ title: Versioning
 description: Understand how versioning works in C# and .NET
 ms.date: 09/17/2024
 ms.subservice: advanced-concepts
+ms.topic: concept-article
 ---
 
 # Versioning in C\#

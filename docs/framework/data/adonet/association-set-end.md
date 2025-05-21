@@ -3,6 +3,7 @@ description: "Learn more about: association set end"
 title: "association set end"
 ms.date: "03/30/2017"
 ms.assetid: fe4bf1d3-047a-4a37-98c5-a66e70811346
+ms.topic: article
 ---
 # association set end
 

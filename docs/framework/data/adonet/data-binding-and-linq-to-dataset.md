@@ -3,6 +3,7 @@ description: "Learn more about: Data Binding and LINQ to DataSet"
 title: "Data Binding and LINQ to DataSet"
 ms.date: "03/30/2017"
 ms.assetid: 310bff4a-32dd-4f20-a271-6dbd82912631
+ms.topic: article
 ---
 # Data Binding and LINQ to DataSet
 

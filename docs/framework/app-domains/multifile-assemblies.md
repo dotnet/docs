@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "code modules"
   - "multifile assemblies"
 ms.assetid: 13509e73-db77-4645-8165-aad8dfaedff6
+ms.topic: article
 ---
 # Multifile assemblies
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "application configuration [.NET Framework]"
   - "assemblies [.NET Framework], specifying location"
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
+ms.topic: concept-article
 ---
 # Specifying an Assembly's Location
 

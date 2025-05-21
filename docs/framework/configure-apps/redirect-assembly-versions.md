@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "configuration [.NET Framework], applications"
   - "application configuration [.NET Framework]"
   - "assemblies [.NET Framework], binding redirection"
+ms.topic: how-to
 ---
 # Redirect assembly versions
 

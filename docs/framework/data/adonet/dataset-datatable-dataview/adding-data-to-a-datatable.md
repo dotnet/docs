@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d6aa8474-7bde-48f7-949d-20dc38a1625b
+ms.topic: concept-article
 ---
 # Adding Data to a DataTable
 

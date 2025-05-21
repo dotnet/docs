@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "classes [C#], events"
   - "C# language, events"
   - "events [C#]"
+ms.topic: article
 ---
 # Events (C# Programming Guide)
 

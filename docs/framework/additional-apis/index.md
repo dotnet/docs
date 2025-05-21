@@ -8,7 +8,7 @@ helpviewer_keywords:
   - ".NET Framework out-of-band releases"
   - "out-of-band releases"
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
-ms.topic: conceptual
+ms.topic: article
 ---
 # Additional class libraries and APIs
 

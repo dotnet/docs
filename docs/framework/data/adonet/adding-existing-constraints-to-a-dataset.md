@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 307d2809-208b-4cf8-b6a9-5d16f15fc16c
+ms.topic: concept-article
 ---
 # Adding Existing Constraints to a DataSet
 

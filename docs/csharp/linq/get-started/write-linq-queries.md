@@ -2,6 +2,7 @@
 title: Write LINQ queries
 description: Learn how to write LINQ queries in C#.
 ms.date: 01/16/2025
+ms.topic: how-to
 ---
 # Write C# LINQ queries to query data
 

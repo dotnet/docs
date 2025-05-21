@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "data types [C#]"
   - "C# language, types"
   - "strong typing [C#]"
+ms.topic: article
 ---
 # The C# type system
 

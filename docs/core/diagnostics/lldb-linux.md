@@ -2,6 +2,7 @@
 title: Install and use LLDB on Linux
 description: Instructions for installing and using LLDB to debug a .NET application on Linux
 ms.date: 02/13/2025
+ms.topic: install-set-up-deploy
 ---
 
 # Install and use LLDB on Linux

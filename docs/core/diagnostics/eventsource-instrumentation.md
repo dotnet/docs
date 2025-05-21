@@ -2,6 +2,7 @@
 title: Instrument Code to Create EventSource Events
 description: A tutorial for instrumenting code with EventSource
 ms.date: 03/03/2022
+ms.topic: how-to
 ---
 
 # Instrument Code to Create EventSource Events

@@ -2,6 +2,7 @@
 title: "Breaking change: WinForms methods now throw ArgumentNullException"
 description: Learn about the breaking change in .NET 5 where some Windows Forms methods now throw an ArgumentNullException for null arguments.
 ms.date: 09/18/2020
+ms.topic: concept-article
 ---
 # WinForms methods now throw ArgumentNullException
 

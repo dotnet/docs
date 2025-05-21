@@ -2,6 +2,7 @@
 title: Diagnostic resource monitoring
 description: Learn how to use the diagnostic resource monitoring library in .NET.
 ms.date: 11/29/2023
+ms.topic: article
 ---
 
 # Resource monitoring

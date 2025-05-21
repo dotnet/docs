@@ -2,6 +2,7 @@
 title: "Breaking change: TreeNodeCollection.Item(Int32) throws ArgumentException for in-use node"
 description: Learn about the breaking change in .NET 6 where TreeNodeCollection.Item(Int32) now throws an ArgumentException if the node being assigned is already assigned to a TreeView.
 ms.date: 01/19/2021
+ms.topic: concept-article
 ---
 # TreeNodeCollection.Item throws exception if node is assigned elsewhere
 

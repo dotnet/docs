@@ -4,6 +4,7 @@ description: Learn how to use and implement custom console log formatting in you
 author: IEvangelist
 ms.author: dapine
 ms.date: 04/11/2024
+ms.topic: how-to
 ---
 
 # Console log formatting

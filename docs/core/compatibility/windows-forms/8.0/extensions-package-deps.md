@@ -2,6 +2,7 @@
 title: "Breaking change: System.Windows.Extensions doesn't reference System.Drawing.Common"
 description: Learn about the breaking change in .NET 8 where the System.Windows.Extensions package no longer references System.Drawing.Common.
 ms.date: 11/03/2023
+ms.topic: concept-article
 ---
 # System.Windows.Extensions doesn't reference System.Drawing.Common
 

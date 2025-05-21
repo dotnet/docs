@@ -3,6 +3,7 @@ title: "Breaking change: .NET 10 obsoletions in Windows Forms"
 titleSuffix: ""
 description: Learn about the .NET 10 breaking change where some Windows Forms APIs have been marked as obsolete.
 ms.date: 03/10/2025
+ms.topic: concept-article
 ---
 # Windows Forms obsoletions (.NET 10)
 

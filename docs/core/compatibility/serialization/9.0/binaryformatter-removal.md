@@ -2,6 +2,7 @@
 title: "Breaking change: In-box BinaryFormatter implementation removed and always throws"
 description: Learn about the .NET 9 breaking change in serialization where the in-box BinaryFormatter implementation was removed and always throws exceptions.
 ms.date: 08/06/2024
+ms.topic: concept-article
 ---
 # In-box BinaryFormatter implementation removed and always throws
 

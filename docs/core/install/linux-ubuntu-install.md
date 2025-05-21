@@ -6,6 +6,7 @@ ms.author: adegeo
 ms.date: 12/13/2024
 ms.custom: linux-related-content
 zone_pivot_groups: ubuntu-install-set-one
+ms.topic: install-set-up-deploy
 ---
 
 # Install .NET SDK or .NET Runtime on Ubuntu

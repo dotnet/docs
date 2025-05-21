@@ -2,6 +2,7 @@
 title: "Breaking change: DefaultValueAttribute removed from some properties"
 description: Learn about the breaking change in .NET 8 for Windows Forms where DefaultValueAttribute was removed from properties whose default values must be dynamically calculated.
 ms.date: 03/13/2023
+ms.topic: concept-article
 ---
 # DefaultValueAttribute removed from some properties
 

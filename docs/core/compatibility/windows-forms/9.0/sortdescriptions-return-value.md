@@ -2,6 +2,7 @@
 title: "Breaking change: BindingSource.SortDescriptions doesn't return null"
 description: Learn about the breaking change in .NET 9 for Windows Forms where BindingSource.SortDescriptions no longer returns null if the data source is not an IBindingListView.
 ms.date: 01/16/2024
+ms.topic: concept-article
 ---
 # BindingSource.SortDescriptions doesn't return null
 

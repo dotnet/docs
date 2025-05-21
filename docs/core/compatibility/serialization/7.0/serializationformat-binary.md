@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: SerializationFormat.Binary is obsolete"
 description: Learn about the .NET 7 breaking change in core .NET libraries where binary serialization and deserialization of DataSet and DataTable objects is obsolete.
 ms.date: 03/18/2022
+ms.topic: article
 ---
 # SerializationFormat.Binary is obsolete
 

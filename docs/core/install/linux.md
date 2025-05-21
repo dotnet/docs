@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.custom: updateeachrelease, linux-related-content
 ms.date: 11/04/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Install .NET on Linux

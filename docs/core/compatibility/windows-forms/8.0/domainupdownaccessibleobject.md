@@ -2,6 +2,7 @@
 title: "Breaking change: WFDEV002 obsoletion is now an error"
 description: Learn about the breaking change in .NET 8 for Windows Forms where the compile-time diagnostic WFDEV002 has been promoted from a warning to an error.
 ms.date: 01/30/2023
+ms.topic: concept-article
 ---
 # WFDEV002 obsoletion is now an error
 

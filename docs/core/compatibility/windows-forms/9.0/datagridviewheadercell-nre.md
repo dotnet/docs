@@ -2,6 +2,7 @@
 title: "Breaking change: No exception if DataGridView is null"
 description: Learn about the breaking change in .NET 9 for Windows Forms where DataGridViewHeaderCell methods no longer throw an exception if the DataGridView property is null.
 ms.date: 01/16/2024
+ms.topic: concept-article
 ---
 # No exception if DataGridView is null
 

@@ -2,6 +2,7 @@
 title: "Breaking change: WinForms properties now throw ArgumentOutOfRangeException"
 description: Learn about the breaking change in .NET 5 where Some Windows Forms properties now throw an ArgumentOutOfRangeException for invalid arguments.
 ms.date: 06/18/2020
+ms.topic: concept-article
 ---
 # WinForms properties now throw ArgumentOutOfRangeException
 

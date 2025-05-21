@@ -2,6 +2,7 @@
 title: Log sampling
 description: Learn how to fine-tune the volume of logs emitted by your application using log sampling.
 ms.date: 04/29/2025
+ms.topic: how-to
 ---
 
 # Log sampling in .NET

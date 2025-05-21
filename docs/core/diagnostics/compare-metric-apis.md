@@ -2,6 +2,7 @@
 title: Understanding different metric APIs
 description: A guide to the different metric APIs offered by .NET and third parties.
 ms.date: 11/04/2021
+ms.topic: concept-article
 ---
 
 # Metric APIs comparison

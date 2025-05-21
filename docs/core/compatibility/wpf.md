@@ -2,6 +2,7 @@
 title: Windows Presentation Foundation for .NET Core 3.0
 description: Lists the breaking changes in Windows Presentation Foundation for .NET Core 3.0
 ms.date: 11/05/2024
+ms.topic: concept-article
 ---
 # Breaking changes in Windows Presentation Foundation for .NET Core 3.0
 

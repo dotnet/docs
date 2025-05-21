@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "global applications, localizability"
   - "localizing resources"
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
+ms.topic: article
 ---
 
 # Localizability review

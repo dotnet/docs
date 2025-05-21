@@ -2,6 +2,7 @@
 title: "Breaking change: Removed status bar controls"
 description: Learn about the breaking change in .NET 5 where some Windows Forms controls are no longer available.
 ms.date: 07/18/2020
+ms.topic: concept-article
 ---
 # Removed status bar controls
 

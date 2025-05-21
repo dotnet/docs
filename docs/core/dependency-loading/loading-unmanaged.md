@@ -3,6 +3,7 @@ title: Unmanaged library loading algorithm - .NET
 description: Description of the details of the unmanaged assembly loading algorithm in .NET.
 ms.date: 10/09/2019
 author: sdmaclea
+ms.topic: article
 ---
 # Unmanaged (native) library loading algorithm
 

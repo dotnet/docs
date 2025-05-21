@@ -2,6 +2,7 @@
 title: Data classification in .NET
 description: Learn how to use .NET data classification libraries to categorize your application's data.
 ms.date: 03/21/2025
+ms.topic: article
 ---
 
 # Data classification in .NET

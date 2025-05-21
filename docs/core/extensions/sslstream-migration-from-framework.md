@@ -4,6 +4,7 @@ description: Learn how to migrate code that uses SslStream in .NET Framework to 
 author: rzikm
 ms.author: radekzikmund
 ms.date: 03/13/2023
+ms.topic: upgrade-and-migration-article
 ---
 
 # Migrate SslStream code from .NET Framework to .NET

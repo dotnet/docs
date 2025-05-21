@@ -2,6 +2,7 @@
 title: "Breaking change: Reflection-based deserializer resolves metadata eagerly"
 description: Learn about the .NET 8 breaking change in System.Text.Json serialization where the reflection-based deserializer resolves property metadata eagerly.
 ms.date: 09/13/2023
+ms.topic: concept-article
 ---
 # Reflection-based deserializer resolves metadata eagerly
 

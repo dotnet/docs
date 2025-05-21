@@ -4,6 +4,7 @@ description: Learn how to troubleshoot and investigate issues when performing au
 author: rzikm
 ms.author: radekzikmund
 ms.date: 03/13/2023
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot `SslStream` authentication issues

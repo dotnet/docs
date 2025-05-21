@@ -2,6 +2,7 @@
 title: "Breaking change: Virtual method call optimized"
 description: Learn about the breaking change in .NET 6 for Windows Forms where ScaleControl is only called if scaling is needed.
 ms.date: 02/08/2022
+ms.topic: concept-article
 ---
 # ScaleControl called only when needed
 

@@ -4,6 +4,7 @@ description: Learn how the tooling recognizes certain patterns in calls to APIs 
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 09/09/2024
+ms.topic: article
 ---
 
 # Intrinsic APIs marked RequiresDynamicCode

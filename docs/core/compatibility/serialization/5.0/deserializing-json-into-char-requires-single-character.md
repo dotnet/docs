@@ -2,6 +2,7 @@
 title: "Breaking change: Deserialize char requires single-character string"
 description: Learn about the breaking change in .NET 5 where System.Text.Json requires a single-char string in the JSON when deserializing to a char target.
 ms.date: 12/15/2020
+ms.topic: concept-article
 ---
 # System.Text.Json requires single-char string to deserialize a char
 

@@ -2,6 +2,7 @@
 title: "Breaking change: JsonSerializerOptions copy constructor includes JsonSerializerContext"
 description: Learn about the .NET 7 breaking change in serialization where the JsonSerializerOptions copy constructor now includes JsonSerializerContext.
 ms.date: 09/12/2022
+ms.topic: concept-article
 ---
 # JsonSerializerOptions copy constructor includes JsonSerializerContext
 

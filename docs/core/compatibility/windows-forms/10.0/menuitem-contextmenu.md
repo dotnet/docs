@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 10 Preview 1 where applica
 ms.date: 3/11/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44738
+ms.topic: concept-article
 ---
 
 # Applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types

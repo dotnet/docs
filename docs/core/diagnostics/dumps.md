@@ -2,6 +2,7 @@
 title: Dumps - .NET
 description: An introduction to dumps in .NET.
 ms.date: 01/11/2023
+ms.topic: article
 ---
 
 # Dumps

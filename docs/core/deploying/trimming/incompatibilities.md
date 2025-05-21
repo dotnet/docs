@@ -4,6 +4,7 @@ description: Identify patterns and frameworks that are known to have problems wi
 author: agocke
 ms.author: angocke
 ms.date: 11/8/2023
+ms.topic: article
 ---
 # Known trimming incompatibilities
 

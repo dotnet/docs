@@ -2,6 +2,7 @@
 title: "Breaking change: NotifyIcon.Text maximum text length increased"
 description: Learn about the breaking change in .NET 6 where some the maximum text length for the NotifyIcon.Text property increased.
 ms.date: 01/19/2021
+ms.topic: concept-article
 ---
 # NotifyIcon.Text maximum text length increased
 

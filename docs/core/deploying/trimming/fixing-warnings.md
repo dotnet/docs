@@ -4,6 +4,7 @@ description: Learn about why warnings might be produced when publishing a trimme
 author: agocke
 ms.author: angocke
 ms.date: 10/30/2023
+ms.topic: article
 ---
 # Introduction to trim warnings
 

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "packaging application resources"
   - "localizing resources"
 ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
+ms.topic: article
 ---
 
 # Resources in .NET apps

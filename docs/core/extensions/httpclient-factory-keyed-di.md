@@ -4,6 +4,7 @@ description: Learn how to integrate IHttpClientFactory with Keyed Services.
 author: CarnaViire
 ms.author: knatalia
 ms.date: 01/27/2025
+ms.topic: article
 ---
 
 # Keyed DI support in `IHttpClientFactory`

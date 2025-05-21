@@ -2,6 +2,7 @@
 title: Data redaction in .NET
 description: Learn how to use .NET data redaction libraries to protect your application's sensitive data.
 ms.date: 03/21/2025
+ms.topic: article
 ---
 
 # Data redaction in .NET

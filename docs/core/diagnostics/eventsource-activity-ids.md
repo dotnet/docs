@@ -2,6 +2,7 @@
 title: EventSource Activity IDs
 description: Understand how to use EventSource Activity IDs
 ms.date: 03/24/2022
+ms.topic: article
 ---
 
 # EventSource Activity IDs

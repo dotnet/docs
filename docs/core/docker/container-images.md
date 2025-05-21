@@ -3,6 +3,7 @@ title: .NET container images
 description: Learn about the various .NET container images available on Docker Hub and how they're used for different scenarios.
 ms.date: 08/28/2024
 ms.custom: linux-related-content
+ms.topic: article
 ---
 
 # .NET container images

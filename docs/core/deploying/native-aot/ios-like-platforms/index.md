@@ -4,6 +4,7 @@ description: Learn how Native AOT supports iOS-like platforms
 author: ivanpovazan
 ms.author: ivanpovazan
 ms.date: 11/21/2024
+ms.topic: article
 ---
 
 # Native AOT support for iOS-like platforms

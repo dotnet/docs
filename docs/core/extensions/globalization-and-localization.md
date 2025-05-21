@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "application development [.NET], globalization"
   - "multilingual application development"
 ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
+ms.topic: article
 ---
 
 # Globalize and localize .NET applications

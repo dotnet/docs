@@ -2,6 +2,7 @@
 title: "Breaking change: TableLayoutStyleCollection throws ArgumentException"
 description: Learn about the breaking change in .NET 8 for Windows Forms where inserting or removing an object that's not a TableLayoutStyle throws an exception.
 ms.date: 02/06/2023
+ms.topic: concept-article
 ---
 # TableLayoutStyleCollection throws ArgumentException
 

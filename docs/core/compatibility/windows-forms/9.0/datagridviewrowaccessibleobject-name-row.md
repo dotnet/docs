@@ -2,6 +2,7 @@
 title: "Breaking change: DataGridViewRowAccessibleObject.Name starting row index"
 description: Learn about the breaking change in .NET 9 for Windows Forms where the starting index for the DataGridViewRowAccessibleObject.Name property is now 1 instead of 0.
 ms.date: 01/16/2024
+ms.topic: concept-article
 ---
 # DataGridViewRowAccessibleObject.Name starting row index
 

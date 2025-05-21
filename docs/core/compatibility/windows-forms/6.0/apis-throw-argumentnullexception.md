@@ -2,6 +2,7 @@
 title: "Breaking change: Some APIs throw ArgumentNullException"
 description: Learn about the breaking change in .NET 6 where some APIs validate arguments and now throw an ArgumentNullException.
 ms.date: 11/04/2021
+ms.topic: concept-article
 ---
 # Some APIs throw ArgumentNullException
 

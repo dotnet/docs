@@ -4,6 +4,7 @@ description: Learn why warnings might be produced when publishing an application
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 09/06/2022
+ms.topic: concept-article
 ---
 # Introduction to AOT warnings
 

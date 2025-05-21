@@ -2,6 +2,7 @@
 title: Create a NuGet package with the .NET CLI
 description: Learn how to create a NuGet package with the 'dotnet pack' command.
 ms.date: 06/20/2016
+ms.topic: how-to
 ---
 # How to create a NuGet package with the .NET CLI
 

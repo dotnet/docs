@@ -2,6 +2,7 @@
 title: "Breaking change: WinForms objects not accessible from native code"
 description: Learn about the breaking change in .NET 5 where Windows Forms objects are no longer accessible from native code.
 ms.date: 01/29/2021
+ms.topic: concept-article
 ---
 # Native code can't access Windows Forms objects
 

@@ -2,6 +2,7 @@
 title: Source-generated metrics with strongly-typed tags
 description: Learn how to use a source generator to create strongly-typed metric tags in .NET, reducing boilerplate and ensuring consistent.
 ms.date: 03/07/2025
+ms.topic: article
 ---
 
 # Source-generated metrics with strongly-typed tags

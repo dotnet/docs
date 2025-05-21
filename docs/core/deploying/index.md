@@ -2,6 +2,7 @@
 title: Application publishing
 description: Learn about the ways to publish a .NET application. .NET can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as framework-dependent. Each mode affects how a user runs your app.
 ms.date: 03/18/2024
+ms.topic: concept-article
 ---
 
 # .NET application publishing overview

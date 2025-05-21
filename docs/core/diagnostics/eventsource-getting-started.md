@@ -2,6 +2,7 @@
 title: Getting Started with EventSource
 description: A tutorial to create a basic EventSource and understand key concepts
 ms.date: 02/17/2022
+ms.topic: get-started
 ---
 # Getting Started with EventSource
 

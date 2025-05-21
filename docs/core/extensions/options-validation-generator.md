@@ -4,6 +4,7 @@ author: tarekgh
 description: Learn how to utilize compile-time source generation for validating options.
 ms.author: tarekms
 ms.date: 12/18/2023
+ms.topic: article
 ---
 
 # Compile-time options validation source generation

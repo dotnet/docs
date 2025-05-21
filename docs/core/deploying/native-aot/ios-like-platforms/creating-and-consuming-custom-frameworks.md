@@ -4,6 +4,7 @@ description: How to create and consume custom frameworks with Native AOT for iOS
 author: ivanpovazan
 ms.author: ivanpovazan
 ms.date: 11/21/2024
+ms.topic: how-to
 ---
 
 # Create and consume custom frameworks for iOS-like platforms

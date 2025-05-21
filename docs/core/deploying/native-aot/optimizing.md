@@ -4,6 +4,7 @@ description: Learn about optimizing the outputs of AOT compilation for size and 
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 04/21/2023
+ms.topic: how-to
 ---
 # Optimize AOT deployments
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Non-public, parameterless constructors not used for deserialization"
 description: Learn about the breaking change in .NET 5 where non-public, parameterless constructors are no longer used for deserialization with JsonSerializer.
 ms.date: 10/18/2020
+ms.topic: concept-article
 ---
 # Non-public, parameterless constructors not used for deserialization
 

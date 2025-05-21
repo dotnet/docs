@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "globalization [.NET], best practices"
   - "international applications [.NET], best practices"
 ms.assetid: f08169c7-aad8-4ec3-9a21-9ebd3b89986c
+ms.topic: best-practice
 ---
 
 # Best practices for developing world-ready applications

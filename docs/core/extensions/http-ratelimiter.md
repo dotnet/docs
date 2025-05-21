@@ -4,6 +4,7 @@ description: Learn how to create a client-side HTTP handler that limits the numb
 author: IEvangelist
 ms.author: dapine
 ms.date: 12/16/2024
+ms.topic: article
 ---
 
 # Rate limit an HTTP handler in .NET

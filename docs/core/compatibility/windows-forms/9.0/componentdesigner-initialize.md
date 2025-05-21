@@ -2,6 +2,7 @@
 title: "Breaking change: ComponentDesigner.Initialize throws ArgumentNullException"
 description: Learn about the breaking change in .NET 9 for Windows Forms where ComponentDesigner.Initialize now throws ArgumentNullException if the component argument is null.
 ms.date: 01/16/2024
+ms.topic: concept-article
 ---
 # ComponentDesigner.Initialize throws ArgumentNullException
 

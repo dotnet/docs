@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 03/27/2025
 ms.custom: updateeachrelease, linux-related-content
+ms.topic: concept-article
 ---
 
 # Install .NET on Ubuntu decision guide

@@ -2,6 +2,7 @@
 title: "Breaking change: DateTimePicker.Text is empty string"
 description: Learn about the breaking change in .NET 8 for Windows Forms where the DateTimePicker.Text property is the empty string until a handle to the control is created.
 ms.date: 06/06/2024
+ms.topic: concept-article
 ---
 # DateTimePicker.Text is empty string
 

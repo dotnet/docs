@@ -2,6 +2,7 @@
 title: "Breaking change: PublishedTrimmed projects fail reflection-based serialization"
 description: Learn about the .NET 8 breaking change in System.Text.Json serialization where projects with PublishTrimmed enabled now fail reflection-based serialization by default.
 ms.date: 11/08/2023
+ms.topic: concept-article
 ---
 # PublishedTrimmed projects fail reflection-based serialization
 

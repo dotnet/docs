@@ -4,6 +4,7 @@ description: Learn How to control Server Name Indication TLS extension in HTTP r
 author: rzikm
 ms.author: radekzikmund
 ms.date: 9/5/2023
+ms.topic: how-to
 ---
 
 # Customize SNI in HTTP requests

@@ -3,6 +3,7 @@ title: Introduction to Docker
 description: This article provides an introduction and overview to Docker containers in the context of a .NET application.
 ms.date: 09/25/2023
 ms.custom: "mvc"
+ms.topic: concept-article
 ---
 
 # Introduction to .NET and Docker

@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 11/11/2024
 ms.custom: linux-related-content
+ms.topic: install-set-up-deploy
 ---
 
 # Install .NET on Linux by using an install script or by extracting binaries

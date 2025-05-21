@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: XmlSecureResolver is obsolete"
 description: Learn about the .NET 7 breaking change in XML/XSLT where XmlSecureResolver was obsoleted and XmlSecureResolver.GetEntity unconditionally throws a run-time exception.
 ms.date: 09/08/2022
+ms.topic: article
 ---
 # XmlSecureResolver is obsolete
 

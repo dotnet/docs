@@ -2,6 +2,7 @@
 title: Logging and tracing - .NET
 description: An introduction to .NET logging and tracing.
 ms.date: 4/29/2022
+ms.topic: concept-article
 ---
 # .NET logging and tracing
 

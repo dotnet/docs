@@ -4,6 +4,7 @@ description: Learn how to use the HttpClient and IHttpClientFactory implementati
 author: IEvangelist
 ms.author: dapine
 ms.date: 05/06/2025
+ms.topic: how-to
 ---
 
 # IHttpClientFactory with .NET

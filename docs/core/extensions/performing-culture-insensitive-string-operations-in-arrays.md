@@ -7,6 +7,7 @@ helpviewer_keywords:
     - "arrays [.NET], culture-insensitive string operations"
     - "comparer parameter"
 ms.assetid: f12922e1-6234-4165-8896-63f0653ab478
+ms.topic: article
 ---
 
 # Perform culture-insensitive string operations in arrays

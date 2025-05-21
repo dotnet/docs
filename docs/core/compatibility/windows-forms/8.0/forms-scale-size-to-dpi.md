@@ -2,6 +2,7 @@
 title: "Breaking change: Top-level forms scale to DPI"
 description: Learn about the breaking change in .NET 8 for Windows Forms where top-level forms scale their minimum and maximum size values according to the DPI of the monitor.
 ms.date: 01/19/2023
+ms.topic: concept-article
 ---
 # Top-level forms scale minimum and maximum size to DPI
 

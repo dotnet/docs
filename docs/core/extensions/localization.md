@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "user interface blocks"
   - "localization [.NET], about localization"
   - "localizing resources"
+ms.topic: article
 ---
 
 # Localization in .NET

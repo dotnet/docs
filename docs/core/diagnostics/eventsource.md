@@ -2,6 +2,7 @@
 title: EventSource
 description: A guide to logging with EventSource
 ms.date: 02/17/2022
+ms.topic: article
 ---
 # EventSource
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Forms scale according to AutoScaleMode"
 description: Learn about the breaking change in .NET 8 for Windows Forms where top-level windows in PerMonitorV2-mode apps scale according to AutoScaleMode.
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 # Forms scale according to AutoScaleMode
 

@@ -3,6 +3,7 @@ title: "Breaking change: Renamed parameter in HtmlElement.InsertAdjacentElement"
 description: Learn about the .NET 10 Preview 1 breaking change in Windows Forms where the parameter `orient` was renamed to `orientation`.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Renamed parameter in HtmlElement.InsertAdjacentElement

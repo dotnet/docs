@@ -2,6 +2,7 @@
 title: Compliance libraries in .NET
 description: Learn how to use compliance libraries to implement compliance features in .NET applications.
 ms.date: 03/21/2025
+ms.topic: article
 ---
 
 # Compliance libraries in .NET

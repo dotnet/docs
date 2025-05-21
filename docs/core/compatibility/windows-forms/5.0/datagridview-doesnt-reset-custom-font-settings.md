@@ -2,6 +2,7 @@
 title: "Breaking change: DataGridView no longer resets fonts for customized cell styles"
 description: Learn about the breaking change in .NET 5 where DataGridView no longer resets default cell style fonts to match the ambient font if the cell style font has been customized.
 ms.date: 10/18/2020
+ms.topic: concept-article
 ---
 # DataGridView no longer resets fonts for customized cell styles
 

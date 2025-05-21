@@ -2,6 +2,7 @@
 title: Windows Forms breaking changes
 description: Lists the breaking changes in Windows Forms for .NET Core 3.0 and 3.1.
 ms.date: 09/08/2020
+ms.topic: concept-article
 ---
 # Breaking changes in Windows Forms for .NET Core 3.0 and 3.1
 

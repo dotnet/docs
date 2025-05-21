@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.custom: vs-dotnet
+ms.topic: install-set-up-deploy
 ---
 # Deploy .NET Core apps with Visual Studio
 

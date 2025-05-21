@@ -3,6 +3,7 @@ title: "Breaking change: 'Revert behavior with text drag-and-drop operations'"
 description: Learn about a breaking change in Windows Presentation Foundation (WPF) and .NET 7. Drag-and-drop behavior was reverted to .NET Framework behavior when dragging text from a text editor control.
 ms.date: 11/4/2024
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # Drag-and-drop operations in text editors

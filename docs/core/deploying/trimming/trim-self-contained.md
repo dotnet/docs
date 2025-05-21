@@ -4,6 +4,7 @@ description: Learn how to trim self-contained apps to reduce their size. .NET Co
 author: jamshedd
 ms.author: jamshedd
 ms.date: 04/03/2020
+ms.topic: how-to
 ---
 # Trim self-contained deployments and executables
 

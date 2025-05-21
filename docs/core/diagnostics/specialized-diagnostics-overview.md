@@ -2,6 +2,7 @@
 title: Specialized Diagnostics
 description: A guide to more advanced diagnostics support in .NET
 ms.date: 05/19/2023
+ms.topic: article
 ---
 # Specialized diagnostics
 

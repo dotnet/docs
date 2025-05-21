@@ -3,6 +3,7 @@ title: Unsupported APIs on .NET Core and .NET 5+
 titleSuffix: ""
 description: Learn which .NET APIs always throw an exception on .NET Core and .NET 5 and later versions.
 ms.date: 11/22/2024
+ms.topic: article
 ---
 # APIs that always throw exceptions on .NET Core and .NET 5+
 

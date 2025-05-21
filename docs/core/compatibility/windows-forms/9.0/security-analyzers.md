@@ -2,6 +2,7 @@
 title: "Breaking change: New security analyzers"
 description: Learn about the .NET 9 breaking change in Windows Forms where new security analyzers have been introduced to prevent accidental leaks of sensitive data.
 ms.date: 10/04/2024
+ms.topic: concept-article
 ---
 # New security analyzers
 

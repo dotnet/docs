@@ -2,6 +2,7 @@
 title: Collect diagnostics in Linux containers
 description: Learn how .NET diagnostics tools for gathering performance traces and collecting dumps can be used in Linux containers.
 ms.date: 04/16/2025
+ms.topic: how-to
 ---
 
 # Collect diagnostics in Linux containers

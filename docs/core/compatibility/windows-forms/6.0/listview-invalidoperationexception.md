@@ -2,6 +2,7 @@
 title: "Breaking change: ListViewGroupCollection methods throw new InvalidOperationException"
 description: Learn about the breaking change in .NET 6 where some ListViewGroupCollection methods throw a new InvalidOperationException if the ListView is in virtual mode.
 ms.date: 09/23/2021
+ms.topic: concept-article
 ---
 # ListViewGroupCollection methods throw new InvalidOperationException
 

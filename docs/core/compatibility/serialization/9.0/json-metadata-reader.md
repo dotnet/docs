@@ -4,6 +4,7 @@ description: System.Text.Json now unescapes metadata property names, affecting r
 ms.date: 2/13/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44748
+ms.topic: concept-article
 ---
 
 # System.Text.Json metadata reader now unescapes metadata property names

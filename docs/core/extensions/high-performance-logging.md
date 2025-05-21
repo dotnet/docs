@@ -4,6 +4,7 @@ author: IEvangelist
 description: Learn how to use LoggerMessage to create cacheable delegates that require fewer object allocations for high-performance logging scenarios.
 ms.author: dapine
 ms.date: 04/11/2024
+ms.topic: article
 ---
 
 # High-performance logging in .NET

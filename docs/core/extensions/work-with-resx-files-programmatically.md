@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "resource files, .resx files"
   - ".resx files"
 ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
+ms.topic: how-to
 ---
 
 # Work with .resx files programmatically

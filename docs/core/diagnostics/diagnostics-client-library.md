@@ -4,6 +4,7 @@ description: In this article, you'll learn how to use Microsoft.Diagnostics.NETC
 ms.date: 06/22/2021
 author: tommcdon
 ms.author: tommcdon
+ms.topic: article
 ---
 
 # Diagnostics client library

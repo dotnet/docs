@@ -8,6 +8,7 @@ ms.custom: updateeachrelease
 dev_langs:
   - "csharp"
   - "vb"
+ms.topic: how-to
 ---
 
 # Publish .NET apps with the .NET CLI

@@ -2,6 +2,7 @@
 title: "Breaking change: BinaryFormatter.Deserialize rewraps some exceptions"
 description: Learn about the breaking change in .NET 5 where BinaryFormatter.Deserialize rewraps some exception objects inside a SerializationException.
 ms.date: 08/18/2020
+ms.topic: concept-article
 ---
 # BinaryFormatter.Deserialize rewraps some exceptions in SerializationException
 

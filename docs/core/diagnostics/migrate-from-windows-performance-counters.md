@@ -2,6 +2,7 @@
 title: Migrate from .NET Windows Performance Counters to .NET Core metrics
 description: Learn how to migrate from .NET Framework Windows Performance Counters to .NET Core/NET 5+ metrics using EventCounters and Meters.
 ms.date: 04/27/2025
+ms.topic: upgrade-and-migration-article
 ---
 
 # Migrate from .NET Framework Windows Performance Counters to .NET metrics

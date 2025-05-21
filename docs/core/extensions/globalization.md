@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "application development [.NET], globalization"
   - "culture, globalization"
 ms.assetid: 4e919934-6b19-42f2-b770-275a4fae87c9
+ms.topic: article
 ---
 
 # Globalization

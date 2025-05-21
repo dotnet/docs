@@ -2,6 +2,7 @@
 title: "Breaking change: Some TableLayoutSettings properties throw InvalidEnumArgumentException"
 description: Learn about the breaking change in .NET 6 where some TableLayoutSettings APIs now throw an InvalidEnumArgumentException for invalid arguments.
 ms.date: 01/18/2021
+ms.topic: concept-article
 ---
 # Selected TableLayoutSettings properties throw InvalidEnumArgumentException
 

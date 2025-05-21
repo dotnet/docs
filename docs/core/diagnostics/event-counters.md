@@ -2,6 +2,7 @@
 title: EventCounters in .NET Core
 description: In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
 ms.date: 08/27/2024
+ms.topic: article
 ---
 
 # EventCounters in .NET

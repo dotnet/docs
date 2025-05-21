@@ -4,6 +4,7 @@ description: Learn about the breaking change in serialization in .NET 9 where nu
 ms.date: 12/5/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43869
+ms.topic: concept-article
 ---
 
 # Nullable JsonDocument properties deserialize to JsonValueKind.Null

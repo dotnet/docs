@@ -2,6 +2,7 @@
 title: Visual Basic breaking changes
 description: Lists the breaking changes in Visual Basic used with .NET Core 3.0.
 ms.date: "05/25/2021"
+ms.topic: article
 ---
 # Visual Basic breaking changes in .NET Core 3.0
 

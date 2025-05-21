@@ -4,6 +4,7 @@ description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
 ms.date: 06/23/2023
+ms.topic: how-to
 ---
 
 # Logging providers in .NET

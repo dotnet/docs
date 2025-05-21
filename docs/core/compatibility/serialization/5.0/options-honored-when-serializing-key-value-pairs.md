@@ -2,6 +2,7 @@
 title: "Breaking change: PropertyNamingPolicy, PropertyNameCaseInsensitive, and Encoder options are honored for key-value pairs"
 description: Learn about the breaking change in .NET 5 where the PropertyNamingPolicy, PropertyNameCaseInsensitive, and Encoder options are honored when serializing and deserializing the Key and Value property names of a key-value pair instance.
 ms.date: 10/18/2020
+ms.topic: concept-article
 ---
 # PropertyNamingPolicy, PropertyNameCaseInsensitive, and Encoder options are honored when serializing and deserializing key-value pairs
 

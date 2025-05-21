@@ -4,6 +4,7 @@ description: Learn how to troubleshoot common HttpClient and IHttpClientFactory 
 author: CarnaViire
 ms.author: knatalia
 ms.date: 08/21/2024
+ms.topic: troubleshooting-general
 ---
 
 # Common `IHttpClientFactory` usage issues

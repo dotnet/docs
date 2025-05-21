@@ -2,6 +2,7 @@
 title: "Breaking change: ASP.NET Core apps allow deserializing quoted numbers"
 description: Learn about the breaking change in .NET 5 where ASP.NET Core apps will successfully deserialize numbers that are represented as JSON strings instead of throwing an exception.
 ms.date: 10/21/2020
+ms.topic: concept-article
 ---
 # ASP.NET Core apps allow deserializing quoted numbers
 

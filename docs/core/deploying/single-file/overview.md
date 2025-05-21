@@ -4,6 +4,7 @@ description: Learn what single file application is and why you should consider u
 author: lakshanf
 ms.date: 06/21/2022
 ms.custom: kr2b-contr-experiment
+ms.topic: how-to
 ---
 
 # Single-file deployment

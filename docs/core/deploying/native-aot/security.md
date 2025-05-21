@@ -4,6 +4,7 @@ description: Learn about security features available with native AOT.
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 09/11/2024
+ms.topic: article
 ---
 
 # Security features

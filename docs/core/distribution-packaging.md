@@ -3,6 +3,7 @@ title: .NET distribution packaging
 description: Learn how to package, name, and version .NET for distribution.
 author: tmds
 ms.date: 12/01/2021
+ms.topic: article
 ---
 # .NET distribution packaging
 

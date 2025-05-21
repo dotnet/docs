@@ -5,6 +5,7 @@ author: agocke
 ms.author: angocke
 ms.date: 10/10/2023
 ms.custom: linux-related-content
+ms.topic: article
 ---
 
 # Cross-compilation

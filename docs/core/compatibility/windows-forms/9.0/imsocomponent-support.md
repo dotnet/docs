@@ -2,6 +2,7 @@
 title: "Breaking change: IMsoComponent support is opt-in"
 description: Learn about the breaking change in .NET 9 for Windows Forms where IMsoComponent support is now opt-in.
 ms.date: 09/05/2024
+ms.topic: concept-article
 ---
 # IMsoComponent support is opt-in
 

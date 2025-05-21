@@ -2,6 +2,7 @@
 title: "Breaking change: ExceptionCollection constructor throws ArgumentException"
 description: Learn about the breaking change in .NET 8 for Windows Forms where the ExceptionCollection constructor now throws an exception if the input is not of type Exception.
 ms.date: 02/06/2023
+ms.topic: concept-article
 ---
 # ExceptionCollection ctor throws ArgumentException
 

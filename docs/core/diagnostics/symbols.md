@@ -2,6 +2,7 @@
 title: Symbols in .NET
 description: An introduction to symbols and portable PDBs in .NET
 ms.date: 02/08/2021
+ms.topic: article
 ---
 
 # Symbols

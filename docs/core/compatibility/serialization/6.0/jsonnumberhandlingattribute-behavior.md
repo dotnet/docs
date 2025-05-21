@@ -2,6 +2,7 @@
 title: "Breaking change: JsonNumberHandlingAttribute on non-number collection properties"
 description: Learn about the .NET 6 breaking change where JsonNumberHandlingAttribute can now only be applied to properties that are collections of numbers.
 ms.date: 11/05/2021
+ms.topic: concept-article
 ---
 # JsonNumberHandlingAttribute on collection properties
 

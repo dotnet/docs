@@ -3,6 +3,7 @@ title: Debug Linux dumps
 description: In this article, you'll learn how to collect and analyze dumps from Linux environments.
 ms.date: 01/11/2023
 ms.custom: linux-related-content
+ms.topic: how-to
 ---
 
 # Debug Linux dumps

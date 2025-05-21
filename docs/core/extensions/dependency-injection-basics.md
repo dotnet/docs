@@ -5,6 +5,7 @@ author: IEvangelist
 ms.author: dapine
 ms.date: 01/22/2025
 no-loc: [Transient, Scoped, Singleton, Example]
+ms.topic: concept-article
 ---
 
 # Understand dependency injection basics in .NET

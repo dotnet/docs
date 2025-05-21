@@ -3,6 +3,7 @@ title: About AssemblyLoadContext - .NET
 description: Key concepts to understand the purpose and behavior of AssemblyLoadContext in .NET.
 ms.date: 08/18/2022
 author: sdmaclea
+ms.topic: article
 ---
 # About System.Runtime.Loader.AssemblyLoadContext
 

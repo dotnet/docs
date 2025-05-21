@@ -4,6 +4,7 @@ description: Learn about the breaking change in WCF 8 where the APIs that accept
 ms.date: 11/13/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43111
+ms.topic: article
 ---
 
 # Removal of WCF APIs with a `configurationName` parameter

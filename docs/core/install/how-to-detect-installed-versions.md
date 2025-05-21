@@ -6,6 +6,7 @@ ms.author: adegeo
 ms.date: 11/11/2024
 ms.custom: updateeachrelease, linux-related-content
 zone_pivot_groups: operating-systems-set-one
+ms.topic: how-to
 ---
 
 # How to check that .NET is already installed

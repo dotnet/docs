@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "application development [.NET], globalization"
   - "culture, globalization"
   - "icu, icu on windows, ms-icu"
+ms.topic: article
 ---
 
 # .NET globalization and ICU

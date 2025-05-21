@@ -4,6 +4,7 @@ description: Learn what ReadyToRun deployments are and why you should consider u
 author: davidwrighton
 ms.author: davidwr
 ms.date: 08/23/2021
+ms.topic: article
 ---
 # ReadyToRun Compilation
 

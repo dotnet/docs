@@ -2,6 +2,7 @@
 title: dotnet-stack diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-stack CLI tool which captures and prints the managed stacks for all threads in the target .NET process.
 ms.date: 04/21/2021
+ms.topic: how-to
 ---
 # Inspect managed stack traces (dotnet-stack)
 

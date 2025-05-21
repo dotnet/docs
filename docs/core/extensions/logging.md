@@ -4,6 +4,7 @@ author: IEvangelist
 description: Learn about app logging provided by the Microsoft.Extensions.Logging NuGet package in C#.
 ms.author: dapine
 ms.date: 07/17/2024
+ms.topic: concept-article
 ---
 
 # Logging in C# and .NET

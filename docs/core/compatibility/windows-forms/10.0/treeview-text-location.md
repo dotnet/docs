@@ -2,6 +2,7 @@
 title: "Breaking change: TreeView checkbox image truncation"
 description: Learn about the .NET 10 breaking change in Windows Forms where the TreeView checkbox image is truncated under certain conditions.
 ms.date: 01/30/2025
+ms.topic: concept-article
 ---
 # TreeView checkbox image truncation
 

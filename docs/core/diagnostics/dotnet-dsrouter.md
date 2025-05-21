@@ -2,6 +2,7 @@
 title: dotnet-dsrouter - .NET
 description: An introduction to dotnet-dsrouter in .NET.
 ms.date: 11/26/2021
+ms.topic: article
 ---
 # dotnet-dsrouter
 

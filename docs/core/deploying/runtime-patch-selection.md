@@ -3,6 +3,7 @@ title: Runtime roll forward for .NET Core self-contained app deployments.
 description: Learn about dotnet publish changes for self-contained deployments.
 author: KathleenDollard
 ms.date: 05/31/2018
+ms.topic: article
 ---
 # Self-contained deployment runtime roll forward
 

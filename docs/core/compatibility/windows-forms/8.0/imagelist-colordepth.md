@@ -2,6 +2,7 @@
 title: "Breaking change: ImageList.ColorDepth default is Depth32Bit"
 description: Learn about the breaking change in .NET 8 for Windows Forms where the default value of ImageList.ColorDepth has changed from Depth8Bit to Depth32Bit.
 ms.date: 01/31/2023
+ms.topic: concept-article
 ---
 # ImageList.ColorDepth default is Depth32Bit
 

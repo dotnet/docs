@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: DataGridView-related APIs throw InvalidOperationException"
 description: Learn about the breaking change in .NET 6 where some APIs related to DataGridView throw an exception if the object's DataGridViewCellAccessibleObject.Owner value is null.
 ms.date: 03/29/2021
+ms.topic: article
 ---
 # DataGridView-related APIs now throw InvalidOperationException
 

@@ -2,6 +2,7 @@
 title: "Breaking change: New JsonSerializer source generator overloads"
 description: Learn about the .NET 6 breaking change where new JsonSerializer source generator overloads were added that might affect source compatibility.
 ms.date: 09/10/2021
+ms.topic: concept-article
 ---
 # New JsonSerializer source generator overloads
 

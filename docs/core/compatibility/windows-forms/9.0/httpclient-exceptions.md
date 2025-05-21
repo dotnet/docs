@@ -2,6 +2,7 @@
 title: "Breaking change: PictureBox raises HttpClient exceptions"
 description: Learn about the breaking change in .NET 9 for Windows Forms where `PictureBox` raises HttpClient exceptions for network errors when loading an image from a URL.
 ms.date: 07/09/2024
+ms.topic: concept-article
 ---
 # PictureBox raises HttpClient exceptions
 

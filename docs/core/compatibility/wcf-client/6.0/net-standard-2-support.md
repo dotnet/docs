@@ -2,6 +2,7 @@
 title: "Breaking change: WCF Client support for .NET Standard"
 description: Learn about the breaking change in WCF Client 6.0 where it no longer supports .NET Standard 2.0.
 ms.date: 01/17/2023
+ms.topic: concept-article
 ---
 # WCF Client doesn't support .NET Standard
 

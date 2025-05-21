@@ -2,6 +2,7 @@
 title: Collect Dumps on Crash - .NET
 description: How to collect a dump on a crash
 ms.date: 12/13/2022
+ms.topic: article
 ---
 
 # Collect dumps on crash

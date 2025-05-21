@@ -2,6 +2,7 @@
 title: Exception summarization in C#
 description: Learn the value proposition of exception summarization within diagnostic metrics for .NET app development.
 ms.date: 11/29/2023
+ms.topic: article
 ---
 
 # Exception summarization

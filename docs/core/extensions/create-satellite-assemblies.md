@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "compiling satellite assemblies"
   - "re-signing assemblies"
 ms.assetid: 8d5c6044-2919-41d2-8321-274706b295ac
+ms.topic: how-to
 ---
 
 # Create satellite assemblies for .NET apps

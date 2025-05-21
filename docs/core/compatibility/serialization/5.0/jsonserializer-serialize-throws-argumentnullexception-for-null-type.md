@@ -2,6 +2,7 @@
 title: "Breaking change: Serialize throws exception when type parameter is null"
 description: Learn about the breaking change in .NET 5 where JsonSerialize serialization methods that have a Type parameter now throw an exception whenever null is passed for that parameter.
 ms.date: 10/18/2020
+ms.topic: concept-article
 ---
 # JsonSerializer.Serialize throws ArgumentNullException when type parameter is null
 

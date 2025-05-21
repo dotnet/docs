@@ -4,6 +4,7 @@ description: Learn about the various primitive types from the Microsoft.Extensio
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/13/2023
+ms.topic: how-to
 ---
 
 # Primitives: The extensions library for .NET

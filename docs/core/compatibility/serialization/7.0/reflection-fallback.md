@@ -2,6 +2,7 @@
 title: "Breaking change: System.Text.Json source generator fallback"
 description: Learn about the .NET 7 breaking change in serialization where the System.Text.Json source generator no longer fall backs to reflection-based serialization for unrecognized types.
 ms.date: 09/12/2022
+ms.topic: concept-article
 ---
 # System.Text.Json source generator fallback
 

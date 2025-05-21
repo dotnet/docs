@@ -4,6 +4,7 @@ description: How to build native libraries with Native AOT
 author: agocke
 ms.author: angocke
 ms.date: 04/17/2024
+ms.topic: concept-article
 ---
 
 # Building native libraries

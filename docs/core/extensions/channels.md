@@ -4,6 +4,7 @@ description: Learn the official synchronization data structures in System.Thread
 author: IEvangelist
 ms.author: dapine
 ms.date: 06/26/2023
+ms.topic: article
 ---
 
 # System.Threading.Channels library

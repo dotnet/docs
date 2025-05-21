@@ -2,6 +2,7 @@
 title: Debug Windows dumps
 description: In this article, you'll learn how to analyze dumps from Windows environments.
 ms.date: 01/11/2023
+ms.topic: article
 ---
 
 # Debug Windows dumps

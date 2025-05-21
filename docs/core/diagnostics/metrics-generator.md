@@ -2,6 +2,7 @@
 title: Compile-time metric source generation
 description: Learn how to use a source generator to create metrics in .NET
 ms.date: 04/11/2025
+ms.topic: article
 ---
 
 # Compile-time metric source generation

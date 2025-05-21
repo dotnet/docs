@@ -2,6 +2,7 @@
 title: Distributed tracing - .NET
 description: An introduction to .NET distributed tracing.
 ms.date: 03/15/2021
+ms.topic: article
 ---
 # .NET distributed tracing
 

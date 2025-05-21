@@ -2,6 +2,7 @@
 title: DiagnosticSource and DiagnosticListener
 description: An overview of DiagnosticSource/DiagnosticListener including guidance on logging events, instrumenting code, and consuming data.
 ms.date: 05/12/2022
+ms.topic: article
 ---
 # DiagnosticSource and DiagnosticListener
 

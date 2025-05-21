@@ -7,6 +7,7 @@ ms.date: 11/04/2024
 ms.custom: linux-related-content
 no-loc: ['usr','lib64','share','dotnet','libhostfxr.so', 'fxr', 'FrameworkList.xml', 'System.IO.FileNotFoundException']
 zone_pivot_groups: operating-systems-set-two
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot .NET errors related to missing files on Linux

@@ -4,6 +4,7 @@ description: Discover effective ways to implement in-memory and distributed cach
 author: IEvangelist
 ms.author: dapine
 ms.date: 04/11/2024
+ms.topic: concept-article
 ---
 
 # Caching in .NET

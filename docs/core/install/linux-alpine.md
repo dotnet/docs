@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 12/13/2024
 ms.custom: linux-related-content
+ms.topic: install-set-up-deploy
 ---
 
 # Install the .NET SDK or the .NET Runtime on Alpine

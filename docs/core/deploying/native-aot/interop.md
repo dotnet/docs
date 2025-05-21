@@ -4,6 +4,7 @@ description: Learn about native code interop with Native AOT.
 author: MichalStrehovsky
 ms.author: michals
 ms.date: 05/17/2023
+ms.topic: article
 ---
 # Native code interop with Native AOT
 

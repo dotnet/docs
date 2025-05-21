@@ -4,6 +4,7 @@ description: Learn how to use the configuration source generator to intercept sp
 author: IEvangelist
 ms.author: dapine
 ms.date: 10/09/2024
+ms.topic: article
 ---
 
 # Configuration source generator

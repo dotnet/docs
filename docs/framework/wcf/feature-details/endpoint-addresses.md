@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], addresses"
   - "WCF [WCF], addresses"
 ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
+ms.topic: article
 ---
 # Endpoint Addresses
 

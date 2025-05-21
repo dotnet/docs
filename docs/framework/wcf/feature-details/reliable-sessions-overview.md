@@ -3,6 +3,7 @@ description: "Learn more about: Reliable Sessions Overview"
 title: "Reliable Sessions Overview"
 ms.date: "03/30/2017"
 ms.assetid: a7fc4146-ee2c-444c-82d4-ef6faffccc2d
+ms.topic: concept-article
 ---
 
 # Reliable Sessions Overview

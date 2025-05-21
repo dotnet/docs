@@ -3,6 +3,7 @@ description: "Learn more about: Correlation Overview"
 title: "Correlation Overview"
 ms.date: "03/30/2017"
 ms.assetid: edcc0315-5d26-44d6-a36d-ea554c418e9f
+ms.topic: concept-article
 ---
 # Correlation Overview
 

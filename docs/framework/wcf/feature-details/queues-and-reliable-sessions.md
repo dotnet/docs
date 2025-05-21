@@ -3,6 +3,7 @@ description: "Learn more about: Queues and Reliable Sessions"
 title: "Queues and Reliable Sessions"
 ms.date: "03/30/2017"
 ms.assetid: 7e794d03-141c-45ed-b6b1-6c0e104c1464
+ms.topic: article
 ---
 # Queues and Reliable Sessions
 

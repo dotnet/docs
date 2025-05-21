@@ -3,6 +3,7 @@ description: "Learn more about: Hosting in a Windows Service Application"
 title: "Hosting in a Windows Service Application"
 ms.date: "03/30/2017"
 ms.assetid: f4199998-27f3-4dd9-aee4-0a4addfa9f24
+ms.topic: how-to
 ---
 # Hosting in a Windows Service Application
 

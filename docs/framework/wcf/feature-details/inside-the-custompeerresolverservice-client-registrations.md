@@ -3,6 +3,7 @@ description: "Learn more about: Inside the CustomPeerResolverService: Client Reg
 title: "Inside the CustomPeerResolverService: Client Registrations"
 ms.date: "03/30/2017"
 ms.assetid: 40236953-a916-4236-84a6-928859e1331a
+ms.topic: article
 ---
 # Inside the CustomPeerResolverService: Client Registrations
 

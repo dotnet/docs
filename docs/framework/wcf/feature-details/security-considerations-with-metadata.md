@@ -3,6 +3,7 @@ description: "Learn more about: Security Considerations with Metadata"
 title: "Security Considerations with Metadata"
 ms.date: "03/30/2017"
 ms.assetid: e78ef8ab-4f63-4656-ab93-b1deab2666d5
+ms.topic: article
 ---
 # Security Considerations with Metadata
 

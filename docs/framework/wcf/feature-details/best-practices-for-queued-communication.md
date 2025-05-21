@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "queues [WCF], best practices"
   - "best practices [WCF], queued communication"
 ms.assetid: 446a6383-cae3-4338-b193-a33c14a49948
+ms.topic: best-practice
 ---
 # Best Practices for Queued Communication
 

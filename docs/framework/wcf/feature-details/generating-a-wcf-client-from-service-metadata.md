@@ -3,6 +3,7 @@ title: "Generating a WCF Client from Service Metadata"
 description: Discover the various switches in Svcutil.exe used to generate WFC clients from service metadata documents based on WSDL or a policy file from the service.
 ms.date: "03/30/2017"
 ms.assetid: 27f8f545-cc44-412a-b104-617e0781b803
+ms.topic: concept-article
 ---
 # Generating a WCF Client from Service Metadata
 

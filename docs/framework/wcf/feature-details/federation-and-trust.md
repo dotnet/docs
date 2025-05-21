@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "federation [WCF], and trust"
 ms.assetid: 4bdec4f2-f8a2-4512-bdcf-14ef54b5877a
+ms.topic: article
 ---
 # Federation and Trust
 

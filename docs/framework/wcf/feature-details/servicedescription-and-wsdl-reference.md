@@ -3,6 +3,7 @@ description: "Learn more about: ServiceDescription and WSDL Reference"
 title: "ServiceDescription and WSDL Reference"
 ms.date: "03/30/2017"
 ms.assetid: eedc025d-abd9-46b1-bf3b-61d2d5c95fd6
+ms.topic: article
 ---
 # ServiceDescription and WSDL Reference
 

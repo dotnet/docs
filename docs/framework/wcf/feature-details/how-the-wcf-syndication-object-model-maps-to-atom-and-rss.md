@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0365eb37-98cc-4b13-80fb-f1e78847a748
+ms.topic: article
 ---
 # How the WCF Syndication Object Model Maps to Atom and RSS
 

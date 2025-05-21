@@ -3,6 +3,7 @@ description: "Learn more about: Migrating ASP.NET Web Services to WCF"
 title: "Migrating ASP.NET Web Services to WCF"
 ms.date: "03/30/2017"
 ms.assetid: 1adbb931-f0b1-47f3-9caf-169e4edc9907
+ms.topic: concept-article
 ---
 # Migrating ASP.NET Web Services to WCF
 

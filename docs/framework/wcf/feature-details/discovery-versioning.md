@@ -3,6 +3,7 @@ description: "Learn more about: Discovery Versioning"
 title: "Discovery Versioning"
 ms.date: "03/30/2017"
 ms.assetid: f91c6d0a-3af2-45c5-9a5c-e75390619836
+ms.topic: article
 ---
 # Discovery Versioning
 

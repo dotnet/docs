@@ -3,6 +3,7 @@ description: "Learn more about: Secure Sessions"
 title: "Secure Sessions"
 ms.date: "03/30/2017"
 ms.assetid: 7b50602f-d7b5-42e9-8e92-1f0413df0d8b
+ms.topic: article
 ---
 # Secure Sessions
 

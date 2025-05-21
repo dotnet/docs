@@ -3,6 +3,7 @@ description: "Learn more about: Hosting in a Managed Application"
 title: "Hosting in a Managed Application"
 ms.date: "03/30/2017"
 ms.assetid: af70132d-e9e1-4f32-b20f-f0014629758a
+ms.topic: concept-article
 ---
 # Hosting in a Managed Application
 

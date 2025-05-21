@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: cad53e1a-b7c9-4064-bc87-508c3d1dce49
+ms.topic: how-to
 ---
 
 # Message Security with an Anonymous Client

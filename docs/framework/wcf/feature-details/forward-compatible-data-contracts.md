@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "data contracts [WCF], forward compatibility"
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9
+ms.topic: article
 ---
 # Forward-Compatible Data Contracts
 

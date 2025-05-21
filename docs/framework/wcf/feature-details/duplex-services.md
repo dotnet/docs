@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 396b875a-d203-4ebe-a3a1-6a330d962e95
+ms.topic: how-to
 ---
 # Duplex Services
 

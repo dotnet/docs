@@ -3,6 +3,7 @@ description: "Learn more about: Request-Reply Correlation"
 title: "Request-Reply Correlation"
 ms.date: "03/30/2017"
 ms.assetid: cf4379bf-2d08-43f3-9584-dfa30ffcb1f6
+ms.topic: article
 ---
 # Request-Reply Correlation
 

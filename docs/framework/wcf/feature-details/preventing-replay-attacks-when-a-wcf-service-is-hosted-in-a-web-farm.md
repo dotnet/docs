@@ -3,6 +3,7 @@ description: "Learn more about: Preventing Replay Attacks When a WCF Service is 
 title: "Preventing Replay Attacks When a WCF Service is Hosted in a Web Farm"
 ms.date: "03/30/2017"
 ms.assetid: 1c2ed695-7a31-4257-92bd-9e9731b886a5
+ms.topic: concept-article
 ---
 # Preventing Replay Attacks When a WCF Service is Hosted in a Web Farm
 

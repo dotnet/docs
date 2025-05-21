@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a7eb98da-4a93-4692-8b59-9d670c79ffb2
+ms.topic: article
 ---
 
 # Security Considerations for Data

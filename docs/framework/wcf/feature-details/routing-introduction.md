@@ -2,6 +2,7 @@
 title: "Routing Introduction"
 description: "Learn more about: Routing Introduction"
 ms.date: "03/30/2017"
+ms.topic: concept-article
 ---
 # Routing Introduction
 

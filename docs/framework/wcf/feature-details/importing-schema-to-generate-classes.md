@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "WCF, schema import and export"
   - "XsdDataContractImporter class"
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
+ms.topic: how-to
 ---
 # Importing Schema to Generate Classes
 

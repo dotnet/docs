@@ -3,6 +3,7 @@ description: "Learn more about: Queuing in WCF"
 title: "Queuing in WCF"
 ms.date: "03/30/2017"
 ms.assetid: e98d76ba-1acf-42cd-b137-0f8214661112
+ms.topic: concept-article
 ---
 # Queuing in WCF
 

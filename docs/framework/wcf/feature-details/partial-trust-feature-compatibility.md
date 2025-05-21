@@ -3,6 +3,7 @@ description: "Learn more about: Partial Trust Feature Compatibility"
 title: "Partial Trust Feature Compatibility"
 ms.date: "03/30/2017"
 ms.assetid: a36a540b-1606-4e63-88e0-b7c59e0e6ab7
+ms.topic: article
 ---
 # Partial Trust Feature Compatibility
 

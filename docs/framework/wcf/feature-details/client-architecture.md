@@ -3,6 +3,7 @@ description: "Learn more about: Client Architecture"
 title: "Client Architecture"
 ms.date: "03/30/2017"
 ms.assetid: 02624403-0d77-41cb-9a86-ab55e98c7966
+ms.topic: article
 ---
 # Client Architecture
 

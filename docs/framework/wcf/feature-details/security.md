@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "security [WCF]"
   - "Windows Communication Foundation, security"
 ms.assetid: 7ea87fcb-dcfb-4a4a-8b03-6b954575d45b
+ms.topic: article
 ---
 # Windows Communication Foundation Security
 

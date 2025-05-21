@@ -3,6 +3,7 @@ description: "Learn more about: Peer Channel Scenarios"
 title: "Peer Channel Scenarios"
 ms.date: "03/30/2017"
 ms.assetid: dae6e0f7-900c-45ee-8be9-3647698382fb
+ms.topic: article
 ---
 # Peer Channel Scenarios
 

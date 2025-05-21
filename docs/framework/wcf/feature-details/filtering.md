@@ -3,6 +3,7 @@ description: "Learn more about: Filtering"
 title: "Filtering"
 ms.date: "03/30/2017"
 ms.assetid: 4002946c-e34a-4356-8cfb-e25912a4be63
+ms.topic: how-to
 ---
 # Filtering
 

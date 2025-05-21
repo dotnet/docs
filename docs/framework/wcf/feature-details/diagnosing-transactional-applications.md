@@ -3,6 +3,7 @@ description: "Learn more about: Diagnosing Transactional Applications"
 title: "Diagnosing Transactional Applications"
 ms.date: "03/30/2017"
 ms.assetid: 4a993492-1088-4d10-871b-0c09916af05f
+ms.topic: concept-article
 ---
 # Diagnosing Transactional Applications
 

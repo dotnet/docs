@@ -3,6 +3,7 @@ description: "Learn more about: Comparing ASP.NET Web Services to WCF Based on P
 title: "Comparing ASP.NET Web Services to WCF Based on Purpose and Standards Used"
 ms.date: "03/30/2017"
 ms.assetid: d3890278-fa9b-4902-91ea-8da73b7143cc
+ms.topic: concept-article
 ---
 # Comparing ASP.NET Web Services to WCF Based on Purpose and Standards Used
 

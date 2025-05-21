@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
+ms.topic: how-to
 ---
 # Message Security with a User Name Client
 

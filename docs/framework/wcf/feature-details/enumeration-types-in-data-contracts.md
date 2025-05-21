@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "data contracts [WCF], enumeration types"
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
+ms.topic: article
 ---
 # Enumeration Types in Data Contracts
 

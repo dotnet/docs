@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "claims [WCF], denying access to resources"
 ms.assetid: 145ebb41-680e-4256-b14c-1efb4af1e982
+ms.topic: article
 ---
 # Claims and Denying Access to Resources
 

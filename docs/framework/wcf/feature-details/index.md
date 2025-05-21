@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "WCF, features"
   - "Windows Communication Foundation, features"
 ms.assetid: 9b4368ca-0bd3-40dc-a539-bcd5779cee5f
+ms.topic: article
 ---
 # WCF Feature Details
 

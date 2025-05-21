@@ -3,6 +3,7 @@ description: "Learn more about: Partial Trust"
 title: "Partial Trust"
 ms.date: "03/30/2017"
 ms.assetid: 489b1587-9909-4d0e-8c1a-5e83c8f8292b
+ms.topic: article
 ---
 # Partial trust
 

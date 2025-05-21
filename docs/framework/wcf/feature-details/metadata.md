@@ -6,6 +6,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "metadata [WCF]"
 ms.assetid: 66a61bd0-18d3-4e7e-bf8b-177a10ac2f60
+ms.topic: article
 ---
 # Metadata (WCF)
 

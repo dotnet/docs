@@ -3,6 +3,7 @@ description: "Learn more about: Interoperability with Web Services Enhancements 
 title: "Interoperability with Web Services Enhancements 3.0"
 ms.date: "03/30/2017"
 ms.assetid: e8e589d2-12c6-4794-8a11-1ee90b47dfaa
+ms.topic: article
 ---
 # Interoperability with Web Services Enhancements 3.0
 

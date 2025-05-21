@@ -2,6 +2,7 @@
 description: "Learn more about: Security Behaviors in WCF"
 title: "Security Behaviors in WCF"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Security Behaviors in WCF
 

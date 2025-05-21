@@ -3,6 +3,7 @@ description: "Learn more about: Partial Trust Best Practices"
 title: "Partial Trust Best Practices"
 ms.date: "03/30/2017"
 ms.assetid: 0d052bc0-5b98-4c50-8bb5-270cc8a8b145
+ms.topic: best-practice
 ---
 # Partial trust best practices
 

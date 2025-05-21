@@ -3,6 +3,7 @@ description: "Learn more about: Channel Factory and Caching"
 title: "Channel Factory and Caching"
 ms.date: "03/30/2017"
 ms.assetid: 954f030e-091c-4c0e-a7a2-10f9a6b1f529
+ms.topic: how-to
 ---
 # Channel Factory and Caching
 

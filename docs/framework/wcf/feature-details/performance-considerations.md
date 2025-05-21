@@ -3,6 +3,7 @@ description: "Learn more about: Performance Considerations"
 title: "Performance Considerations"
 ms.date: "03/30/2017"
 ms.assetid: 83082d4a-7350-4b04-ab2d-1fa5ffd643f5
+ms.topic: article
 ---
 # Performance Considerations
 

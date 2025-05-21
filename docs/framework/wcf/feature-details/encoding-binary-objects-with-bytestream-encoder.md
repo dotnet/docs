@@ -3,6 +3,7 @@ description: "Learn more about: Encoding Binary Objects with ByteStream Encoder"
 title: "Encoding Binary Objects with ByteStream Encoder"
 ms.date: "03/30/2017"
 ms.assetid: 020ee981-c889-4b12-a3ea-91823ef46444
+ms.topic: concept-article
 ---
 # Encoding Binary Objects with ByteStream Encoder
 

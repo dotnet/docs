@@ -3,6 +3,7 @@ description: "Learn more about: Choosing a Filter"
 title: "Choosing a Filter"
 ms.date: "03/30/2017"
 ms.assetid: 67ab5af9-b9d9-4300-b3b1-41abb5a1fd10
+ms.topic: concept-article
 ---
 # Choosing a Filter
 

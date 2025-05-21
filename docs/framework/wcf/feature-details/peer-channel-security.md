@@ -3,6 +3,7 @@ description: "Learn more about: Peer Channel Security"
 title: "Peer Channel Security"
 ms.date: "03/30/2017"
 ms.assetid: 2c59b164-3729-44f0-a967-f247c42de662
+ms.topic: article
 ---
 # Peer Channel Security
 

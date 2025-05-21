@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "data transfer [WCF], architectural overview"
 ms.assetid: 343c2ca2-af53-4936-a28c-c186b3524ee9
+ms.topic: article
 ---
 # Data Transfer Architectural Overview
 

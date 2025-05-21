@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "queues [WCF]"
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
+ms.topic: article
 ---
 # Queues in Windows Communication Foundation
 

@@ -3,6 +3,7 @@ description: "Learn more about: Creating Multicasting Applications using the UDP
 title: "Creating Multicasting Applications using the UDP Transport"
 ms.date: "03/30/2017"
 ms.assetid: 7485154a-6e85-4a67-a9d4-9008e741d4df
+ms.topic: concept-article
 ---
 # Creating Multicasting Applications using the UDP Transport
 

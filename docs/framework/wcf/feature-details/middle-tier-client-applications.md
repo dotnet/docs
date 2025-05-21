@@ -3,6 +3,7 @@ description: "Learn more about: Middle-Tier Client Applications"
 title: "Middle-Tier Client Applications"
 ms.date: "03/30/2017"
 ms.assetid: f9714a64-d0ae-4a98-bca0-5d370fdbd631
+ms.topic: article
 ---
 # Middle-Tier Client Applications
 

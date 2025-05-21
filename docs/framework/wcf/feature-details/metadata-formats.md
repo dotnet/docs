@@ -3,6 +3,7 @@ description: "Learn more about: Metadata formats"
 title: "Metadata Formats"
 ms.date: "03/30/2017"
 ms.assetid: baad1e68-28fc-4a6a-8a43-75e47e7fa871
+ms.topic: article
 ---
 # Metadata formats
 

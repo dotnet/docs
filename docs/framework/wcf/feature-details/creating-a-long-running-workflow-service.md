@@ -2,6 +2,7 @@
 description: "Learn more about creating a long-running workflow service, which might go idle waiting for additional information."
 title: "Creating a Long-running Workflow Service"
 ms.date: "03/30/2017"
+ms.topic: how-to
 ---
 # Create a long-running workflow service
 

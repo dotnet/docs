@@ -3,6 +3,7 @@ description: "Learn more about: Peer Nodes"
 title: "Peer Nodes"
 ms.date: "03/30/2017"
 ms.assetid: 0732b314-6006-4ec6-999d-ec9476c9e5bb
+ms.topic: article
 ---
 # Peer Nodes
 

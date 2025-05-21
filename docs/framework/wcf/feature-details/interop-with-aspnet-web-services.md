@@ -3,6 +3,7 @@ description: "Learn more about: Interoperability with ASP.NET Web Services"
 title: "Interoperability with ASP.NET Web Services"
 ms.date: "03/30/2017"
 ms.assetid: 622422f8-6651-442f-b8be-e654a4aabcac
+ms.topic: article
 ---
 # Interoperability with ASP.NET Web Services
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "data members [WCF], default values"
   - "data members [WCF]"
 ms.assetid: 53a3b505-4b27-444b-b079-0eb84a97cfd8
+ms.topic: article
 ---
 # Data Member Default Values
 

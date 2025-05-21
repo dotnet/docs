@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "versioning [WCF]"
   - "data contracts [WCF], versioning"
 ms.assetid: 4a0700cb-5f5f-4137-8705-3a3ecf06461f
+ms.topic: article
 ---
 # Data Contract Versioning
 

@@ -3,6 +3,7 @@ description: "Learn more about: Comparing ASP.NET Web Services to WCF Based on D
 title: "Comparing ASP.NET Web Services to WCF Based on Development"
 ms.date: "03/30/2017"
 ms.assetid: f362d00e-ce82-484f-9d4f-27e579d5c320
+ms.topic: how-to
 ---
 
 # Comparing ASP.NET Web Services to WCF Based on Development

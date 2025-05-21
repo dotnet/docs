@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [WCF], scenarios"
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
+ms.topic: article
 ---
 # Common Security Scenarios
 

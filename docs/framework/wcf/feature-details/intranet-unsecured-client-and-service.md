@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f450f5d4-3547-47ec-9320-2809e6a12634
+ms.topic: article
 ---
 # Intranet Unsecured Client and Service
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transactions [WCF], enabling flow"
 ms.assetid: a03f5041-5049-43f4-897c-e0292d4718f7
+ms.topic: concept-article
 ---
 # Enabling Transaction Flow
 

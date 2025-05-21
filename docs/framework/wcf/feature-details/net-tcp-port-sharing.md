@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "port activation [WCF]"
   - "port sharing [WCF]"
 ms.assetid: f13692ee-a179-4439-ae72-50db9534eded
+ms.topic: article
 ---
 # Net.TCP Port Sharing
 

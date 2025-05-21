@@ -2,6 +2,7 @@
 description: "Learn more about: Caching Support for WCF Web HTTP Services"
 title: "Caching Support for WCF Web HTTP Services"
 ms.date: "03/30/2017"
+ms.topic: concept-article
 ---
 # Caching support for WCF web HTTP services
 

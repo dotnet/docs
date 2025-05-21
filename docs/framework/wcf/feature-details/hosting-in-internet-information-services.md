@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting services [WCF], IIS"
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
+ms.topic: concept-article
 ---
 # Host in Internet Information Services
 

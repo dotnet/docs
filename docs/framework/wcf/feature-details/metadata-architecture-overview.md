@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "metadata [WCF], overview"
 ms.assetid: 1d37645e-086d-4d68-a358-f3c5b6e8205e
+ms.topic: concept-article
 ---
 # Metadata Architecture Overview
 

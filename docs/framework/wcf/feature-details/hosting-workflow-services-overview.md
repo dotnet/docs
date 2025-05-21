@@ -3,6 +3,7 @@ description: "Learn more about: Hosting Workflow Services Overview"
 title: "Hosting Workflow Services Overview"
 ms.date: "03/30/2017"
 ms.assetid: 19f3704f-06bf-4eeb-8724-5224e02d7ead
+ms.topic: concept-article
 ---
 # Hosting Workflow Services Overview
 

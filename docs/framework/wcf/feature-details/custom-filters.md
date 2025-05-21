@@ -3,6 +3,7 @@ description: "Learn more about: Custom Filters"
 title: "Custom Filters"
 ms.date: "03/30/2017"
 ms.assetid: 97cf247d-be0a-4057-bba9-3be5c45029d5
+ms.topic: article
 ---
 # Custom Filters
 

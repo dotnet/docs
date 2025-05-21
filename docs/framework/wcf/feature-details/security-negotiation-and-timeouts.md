@@ -3,6 +3,7 @@ description: "Learn more about: Security Negotiation and Timeouts"
 title: "Security Negotiation and Timeouts"
 ms.date: "03/30/2017"
 ms.assetid: 02a428f1-84e5-4d28-a11f-53ce31d63196
+ms.topic: article
 ---
 # Security Negotiation and Timeouts
 

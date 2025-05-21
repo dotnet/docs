@@ -3,6 +3,7 @@ description: "Learn more about: ReadMe for Extended Protection Authentication Sa
 title: "ReadMe for Extended Protection Authentication Sample"
 ms.date: "03/30/2017"
 ms.assetid: 80bf2e97-398d-4db5-9040-d96478a2ccab
+ms.topic: article
 ---
 # ReadMe for Extended Protection Authentication Sample
 

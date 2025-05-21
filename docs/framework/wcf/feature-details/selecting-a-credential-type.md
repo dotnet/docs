@@ -3,6 +3,7 @@ title: "Selecting a Credential Type"
 description: Learn about credentials, how they are used in WCF, and how to select the right credential for your application to establish a claimed identity or capabilities.
 ms.date: "03/30/2017"
 ms.assetid: bf707063-3f30-4304-ab53-0e63413728a8
+ms.topic: concept-article
 ---
 # Selecting a Credential Type
 

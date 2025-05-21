@@ -3,6 +3,7 @@ description: "Learn more about: Replay Attacks"
 title: "Replay Attacks"
 ms.date: "03/30/2017"
 ms.assetid: 7a17e040-93cd-4432-81b9-9f62fec78c8f
+ms.topic: article
 ---
 # Replay Attacks
 

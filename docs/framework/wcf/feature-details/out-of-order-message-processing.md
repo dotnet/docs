@@ -3,6 +3,7 @@ description: "Learn more about: Out-of-Order Message Processing"
 title: "Out-of-Order Message Processing"
 ms.date: "03/30/2017"
 ms.assetid: 33fc62a5-5d59-461c-a37a-0e1b51ac763d
+ms.topic: article
 ---
 # Out-of-Order Message Processing
 

@@ -3,6 +3,7 @@ description: "Learn more about: Integrating Enterprise Services Transactional Co
 title: "Integrating Enterprise Services Transactional Components"
 ms.date: "03/30/2017"
 ms.assetid: 05dab277-b8b2-48cf-b40c-826be128b175
+ms.topic: concept-article
 ---
 # Integrating Enterprise Services Transactional Components
 

@@ -3,6 +3,7 @@ description: "Learn more about: Service Endpoints and Queue Addressing"
 title: "Service Endpoints and Queue Addressing"
 ms.date: "03/30/2017"
 ms.assetid: 7d2d59d7-f08b-44ed-bd31-913908b83d97
+ms.topic: article
 ---
 # Service Endpoints and Queue Addressing
 

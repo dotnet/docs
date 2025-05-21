@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "issued tokens"
   - "SAML token"
 ms.assetid: 930b6e34-9eab-4e95-826c-4e06659bb977
+ms.topic: article
 ---
 # SAML Tokens and Claims
 

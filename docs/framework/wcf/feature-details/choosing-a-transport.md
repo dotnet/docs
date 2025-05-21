@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "choosing transports [WCF]"
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
+ms.topic: concept-article
 ---
 # Choosing a Transport
 

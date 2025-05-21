@@ -3,6 +3,7 @@ description: "Learn more about: Configuration-Based Activation in IIS and WAS"
 title: "Configuration-Based Activation in IIS and WAS"
 ms.date: "03/30/2017"
 ms.assetid: 6a927e1f-b905-4ee5-ad0f-78265da38238
+ms.topic: article
 ---
 # Configuration-Based Activation in IIS and WAS
 

@@ -3,6 +3,7 @@ description: "Learn more about: Choose a Message Encoder"
 title: "Choosing a Message Encoder"
 ms.date: "03/30/2017"
 ms.assetid: 2204d82d-d962-4922-a79e-c9a231604f19
+ms.topic: how-to
 ---
 # Choose a Message Encoder
 

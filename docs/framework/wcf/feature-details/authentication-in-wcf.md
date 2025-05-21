@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "authentication [WCF]"
   - "security [WCF], authentication"
 ms.assetid: 9254d873-843d-4c6e-bea4-8184ac3e44f4
+ms.topic: article
 ---
 # Authentication in WCF
 

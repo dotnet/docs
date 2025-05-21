@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "routing [WCF], message filters"
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
+ms.topic: how-to
 ---
 # Message Filters
 

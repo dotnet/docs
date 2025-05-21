@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "WCF, data"
   - "DataContractSerializer"
 ms.assetid: 3d64837e-0a0c-4cc8-90ff-a5c6f313c63a
+ms.topic: article
 ---
 # Data Contract Serializer
 

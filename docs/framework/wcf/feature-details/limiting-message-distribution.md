@@ -3,6 +3,7 @@ description: "Learn more about: Limiting Message Distribution"
 title: "Limiting Message Distribution"
 ms.date: "03/30/2017"
 ms.assetid: 8b5ec4b8-1ce9-45ef-bb90-2c840456bcc1
+ms.topic: concept-article
 ---
 # Limiting Message Distribution
 

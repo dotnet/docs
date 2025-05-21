@@ -3,6 +3,7 @@ title: "Calling a REST-style service from a WCF service"
 description: Learn how to make a WCF service use the right context with a REST-style service by creating a scope and calling the REST-style service from that scope.
 ms.date: "03/30/2017"
 ms.assetid: 77df81d8-7f53-4daf-8d2d-bf7996e94d5a
+ms.topic: concept-article
 ---
 
 # Calling a REST-style service from a WCF service

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation, security"
   - "bindings [WCF]"
 ms.assetid: 4de03dd3-968a-4e65-af43-516e903d7f95
+ms.topic: article
 ---
 # Bindings and Security
 

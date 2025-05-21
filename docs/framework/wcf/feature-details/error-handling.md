@@ -3,6 +3,7 @@ description: "Learn more about: Error handling in Windows Communication Foundati
 title: "Error handling"
 ms.date: "03/30/2017"
 ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
+ms.topic: article
 ---
 # Error handling in Windows Communication Foundation (WCF)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Peer Channel Concepts"
 title: "Peer Channel Concepts"
 ms.date: "03/30/2017"
 ms.assetid: 379c2c0b-a44f-4423-9480-4739e7f18614
+ms.topic: concept-article
 ---
 # Peer Channel Concepts
 

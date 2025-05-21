@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "best practices [WCF], security"
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
+ms.topic: best-practice
 ---
 # Best Practices for Security in WCF
 

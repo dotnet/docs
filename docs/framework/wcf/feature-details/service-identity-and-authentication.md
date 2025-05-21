@@ -7,6 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "authentication [WCF], specifying the identity of a service"
+ms.topic: article
 ---
 # Service Identity and Authentication
 

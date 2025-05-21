@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "COM+ [WCF]"
   - "WCF, COM+ integration"
 ms.assetid: 98bf7dc4-d49a-4129-a59b-db7a7ec8c241
+ms.topic: concept-article
 ---
 # Integrating with COM+ Applications
 

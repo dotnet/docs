@@ -3,6 +3,7 @@ title: "Deploying an Internet Information Services-Hosted WCF Service"
 description: Learn about the tasks necessary to develop and deploy a WCF service that is hosted in IIS, beginning with verifying that component installation
 ms.date: "03/30/2017"
 ms.assetid: 04ebd329-3fbd-44c3-b3ab-1de3517e27d7
+ms.topic: concept-article
 ---
 # Deploying an Internet Information Services-Hosted WCF Service
 

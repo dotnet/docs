@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "elevation of privilege [WCF]"
   - "security [WCF], elevation of privilege"
 ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
+ms.topic: article
 ---
 # Elevation of Privilege
 

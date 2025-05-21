@@ -3,6 +3,7 @@ description: "Learn more about: Correlation"
 title: "Correlation"
 ms.date: "03/30/2017"
 ms.assetid: 60151f6c-19b7-47af-9cdc-76c2ac95f301
+ms.topic: article
 ---
 # Correlation
 

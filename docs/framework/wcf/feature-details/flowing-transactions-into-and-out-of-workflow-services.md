@@ -3,6 +3,7 @@ description: "Learn more about: Flowing Transactions into and out of Workflow Se
 title: "Flowing Transactions into and out of Workflow Services"
 ms.date: "03/30/2017"
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
+ms.topic: how-to
 ---
 # Flowing Transactions into and out of Workflow Services
 

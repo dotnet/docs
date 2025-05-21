@@ -3,6 +3,7 @@ title: "Large Data and Streaming"
 description: Learn about considerations for WCF XML-based communication, encoders, and streaming data, including the transfer of binary data.
 ms.date: "03/30/2017"
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
+ms.topic: article
 ---
 # Large Data and Streaming
 

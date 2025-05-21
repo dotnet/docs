@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "claims [WCF]"
   - "authorization [WCF], managing with the Identity Model"
 ms.assetid: 099defbb-5d35-434e-9336-1a49b9ec7663
+ms.topic: concept-article
 ---
 # Managing Claims and Authorization with the Identity Model
 

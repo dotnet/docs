@@ -4,6 +4,7 @@ description: "Learn more about: Claims and Tokens"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "claims [WCF], and tokens"
+ms.topic: article
 ---
 # Claims and Tokens
 

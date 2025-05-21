@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 12300bf4-c730-4405-9f65-d286f68b5a43
+ms.topic: article
 ---
 # SecurityBindingElement Authentication Modes
 

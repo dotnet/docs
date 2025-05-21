@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "metadata [WCF], publishing"
 ms.assetid: 3a56831a-cabc-45c0-bd02-12e2e9bd7313
+ms.topic: concept-article
 ---
 # Publishing Metadata
 

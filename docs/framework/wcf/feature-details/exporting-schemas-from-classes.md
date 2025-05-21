@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "XsdDataContractExporter class"
   - "XsdDataContractImporter class"
 ms.assetid: bb57b962-70c1-45a9-93d5-e721e340a13f
+ms.topic: how-to
 ---
 # Exporting Schemas from Classes
 

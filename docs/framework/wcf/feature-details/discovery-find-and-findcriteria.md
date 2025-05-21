@@ -3,6 +3,7 @@ description: "Learn more about: Discovery Find and FindCriteria"
 title: "Discovery Find and FindCriteria"
 ms.date: "03/30/2017"
 ms.assetid: 99016fa4-1778-495b-b4cc-0e22fbec42c6
+ms.topic: article
 ---
 # Discovery Find and FindCriteria
 

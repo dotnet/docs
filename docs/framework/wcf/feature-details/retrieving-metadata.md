@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "metadata [WCF], retrieving"
 ms.assetid: 18d8ba4c-af0f-4827-a50b-4202d767bacc
+ms.topic: concept-article
 ---
 # Retrieving Metadata
 

@@ -3,6 +3,7 @@ description: "Learn more about: Mapping Between JSON and XML"
 title: "Mapping Between JSON and XML"
 ms.date: "03/30/2017"
 ms.assetid: 22ee1f52-c708-4024-bbf0-572e0dae64af
+ms.topic: concept-article
 ---
 # Mapping Between JSON and XML
 

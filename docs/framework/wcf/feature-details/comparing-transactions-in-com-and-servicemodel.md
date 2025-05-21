@@ -3,6 +3,7 @@ description: "Learn more about: Comparing Transactions in COM+ and ServiceModel"
 title: "Comparing Transactions in COM+ and ServiceModel"
 ms.date: "03/30/2017"
 ms.assetid: e493bcdd-b91a-4486-853f-83dbcd1931b7
+ms.topic: concept-article
 ---
 # Comparing Transactions in COM+ and ServiceModel
 

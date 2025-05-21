@@ -3,6 +3,7 @@ description: "Learn more about: Security Capabilities with Custom Bindings"
 title: "Security Capabilities with Custom Bindings"
 ms.date: "03/30/2017"
 ms.assetid: a2425679-484a-4e6c-9c98-7da7304f1516
+ms.topic: article
 ---
 # Security Capabilities with Custom Bindings
 

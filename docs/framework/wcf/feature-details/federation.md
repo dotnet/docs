@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "WCF, federation"
   - "federation [WCF]"
 ms.assetid: 2f1e646f-8361-48d4-9d5d-1b961f31ede4
+ms.topic: article
 ---
 # Federation
 

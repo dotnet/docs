@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ",NET remoting [WCF]"
 ms.assetid: 24793465-65ae-4308-8c12-dce4fd12a583
+ms.topic: concept-article
 ---
 # Migrating .NET Remoting Applications to WCF
 

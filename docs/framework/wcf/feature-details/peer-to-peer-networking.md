@@ -3,6 +3,7 @@ description: "Learn more about: Peer-to-Peer Networking"
 title: "Peer-to-Peer Networking"
 ms.date: "03/30/2017"
 ms.assetid: ad6cb67b-fd1c-4ca1-a767-b410da2e16ca
+ms.topic: article
 ---
 # Peer-to-Peer Networking
 

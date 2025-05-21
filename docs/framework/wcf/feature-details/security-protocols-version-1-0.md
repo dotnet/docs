@@ -3,6 +3,7 @@ description: "Learn more about: Security Protocols version 1.0"
 title: "Security Protocols version 1.0"
 ms.date: "03/30/2017"
 ms.assetid: ee3402d2-1076-410b-a3cb-fae0372bd7af
+ms.topic: article
 ---
 # Security Protocols version 1.0
 

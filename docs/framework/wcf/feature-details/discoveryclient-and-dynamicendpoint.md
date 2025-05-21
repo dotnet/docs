@@ -3,6 +3,7 @@ description: "Learn more about: DiscoveryClient and DynamicEndpoint"
 title: "DiscoveryClient and DynamicEndpoint"
 ms.date: "03/30/2017"
 ms.assetid: 7cd418f0-0eab-48d1-a493-7eb907867ec3
+ms.topic: article
 ---
 # DiscoveryClient and DynamicEndpoint
 

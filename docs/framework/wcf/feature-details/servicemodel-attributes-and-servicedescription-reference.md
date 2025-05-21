@@ -3,6 +3,7 @@ description: "Learn more about: ServiceModel Attributes and ServiceDescription R
 title: "ServiceModel Attributes and ServiceDescription Reference"
 ms.date: "03/30/2017"
 ms.assetid: 4ab86b17-eab9-4846-a881-0099f9a7cc64
+ms.topic: article
 ---
 # ServiceModel Attributes and ServiceDescription Reference
 

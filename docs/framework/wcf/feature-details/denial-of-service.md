@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "denial of service [WCF]"
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
+ms.topic: article
 ---
 # Denial of Service
 

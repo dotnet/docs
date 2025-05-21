@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "transactions [WCF], ServiceModel attributes"
 ms.assetid: 1e0d2436-6ae5-439b-9765-a448d6f60000
+ms.topic: article
 ---
 # ServiceModel Transaction Attributes
 

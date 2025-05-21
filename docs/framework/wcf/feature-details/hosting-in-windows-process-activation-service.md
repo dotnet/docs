@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting services [WCF], WAS"
 ms.assetid: d2b9d226-15b7-41fc-8c9a-cb651ac20ecd
+ms.topic: concept-article
 ---
 # Hosting in Windows Process Activation Service
 

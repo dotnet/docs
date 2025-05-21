@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
+ms.topic: how-to
 ---
 # Message Security with a Windows Client without Credential Negotiation
 

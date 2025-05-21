@@ -3,6 +3,7 @@ description: "Learn more about: Interoperability and Integration"
 title: "Interoperability and Integration"
 ms.date: "03/30/2017"
 ms.assetid: 0d925119-01a1-45c2-9ea0-23061323ad33
+ms.topic: article
 ---
 # Interoperability and Integration
 

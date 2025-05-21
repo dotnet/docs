@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "claims [WCF], creation and resource values"
 ms.assetid: 30431f76-cbe7-4bad-bad7-8e43e23a82d4
+ms.topic: article
 ---
 # Claim Creation and Resource Values
 

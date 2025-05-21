@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "message security [WCF], programming overview"
 ms.assetid: 739ec222-4eda-4cc9-a470-67e64a7a3f10
+ms.topic: how-to
 ---
 # Programming WCF Security
 

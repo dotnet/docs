@@ -3,6 +3,7 @@ description: "Learn more about: Best Practices for Reliable Sessions"
 title: "Best Practices for Reliable Sessions"
 ms.date: "03/30/2017"
 ms.assetid: b94f6e01-8070-40b6-aac7-a2cb7b4cb4f2
+ms.topic: best-practice
 ---
 
 # Best Practices for Reliable Sessions

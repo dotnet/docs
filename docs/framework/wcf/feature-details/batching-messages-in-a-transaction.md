@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "batching messages [WCF]"
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
+ms.topic: how-to
 ---
 # Batching Messages in a Transaction
 

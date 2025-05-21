@@ -3,6 +3,7 @@ description: "Learn more about: Extended Protection for Authentication Overview"
 title: "Extended Protection for Authentication Overview"
 ms.date: "03/30/2017"
 ms.assetid: 3d2ceffe-a7bf-4bd9-a5a2-9406423bd7f8
+ms.topic: concept-article
 ---
 # Extended Protection for Authentication Overview
 

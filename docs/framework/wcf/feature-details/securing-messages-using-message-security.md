@@ -3,6 +3,7 @@ description: "Learn more about: Securing Messages Using Message Security"
 title: "Securing Messages Using Message Security"
 ms.date: "03/30/2017"
 ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
+ms.topic: concept-article
 ---
 # Securing Messages Using Message Security
 

@@ -3,6 +3,7 @@ description: "Learn more about: Routing Contracts"
 title: "Routing Contracts"
 ms.date: "03/30/2017"
 ms.assetid: 9ceea7ae-ea19-4cf9-ba4f-d071e236546d
+ms.topic: concept-article
 ---
 # Routing Contracts
 

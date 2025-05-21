@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "message security [WCF]"
 ms.assetid: e681f3bd-0c09-4a58-b0e4-0ecbdf1aa6c7
+ms.topic: concept-article
 ---
 # Securing Services and Clients
 

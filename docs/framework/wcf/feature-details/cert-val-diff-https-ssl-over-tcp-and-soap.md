@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "certificates [WCF], validation differences"
 ms.assetid: 953a219f-4745-4019-9894-c70704f352e6
+ms.topic: article
 ---
 # Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security
 

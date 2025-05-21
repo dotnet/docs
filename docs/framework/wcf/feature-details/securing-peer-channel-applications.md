@@ -3,6 +3,7 @@ description: "Learn more about: Securing Peer Channel Applications"
 title: "Securing Peer Channel Applications"
 ms.date: "03/30/2017"
 ms.assetid: d4a0311d-3f78-4525-9c4b-5c93c4492f28
+ms.topic: concept-article
 ---
 # Securing Peer Channel Applications
 

@@ -3,6 +3,7 @@ title: "Message Security in WCF"
 description: Learn about TransportWithMessageCredential, a type of WCF message security that uses a combination of transport and message security modes.
 ms.date: "03/30/2017"
 ms.assetid: a80efb59-591a-4a37-bb3c-8fffa6ca0b7d
+ms.topic: article
 ---
 
 # Message Security in WCF

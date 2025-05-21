@@ -3,6 +3,7 @@ description: "Learn more about: Creating WCF Services for ASP.NET AJAX"
 title: "Creating WCF Services for ASP.NET AJAX"
 ms.date: "03/30/2017"
 ms.assetid: 04c0402c-e617-4ba5-aedf-d17692234776
+ms.topic: concept-article
 ---
 # Creating WCF Services for ASP.NET AJAX
 

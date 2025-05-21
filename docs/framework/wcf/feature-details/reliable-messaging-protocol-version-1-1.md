@@ -3,6 +3,7 @@ description: "Learn more about: Reliable Messaging Protocol version 1.1"
 title: "Reliable Messaging Protocol version 1.1"
 ms.date: "03/30/2017"
 ms.assetid: 0da47b82-f8eb-42da-8bfe-e56ce7ba6f59
+ms.topic: article
 ---
 # Reliable Messaging Protocol version 1.1
 

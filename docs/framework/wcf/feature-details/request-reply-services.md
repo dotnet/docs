@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "WCF [WCF], request-reply services"
   - "request-reply contracts [WCF]"
 ms.assetid: 2fa710f1-47f4-4598-b063-3ab3bd22ebba
+ms.topic: article
 ---
 # Request-Reply Services
 

@@ -3,6 +3,7 @@ description: "Learn more about hosting services."
 title: "Service hosting"
 ms.date: "03/30/2017"
 ms.assetid: 0820c7e5-0b50-4cde-80e7-74e346513002
+ms.topic: concept-article
 ---
 # Hosting
 

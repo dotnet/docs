@@ -3,6 +3,7 @@ description: "Learn more about: Serializable Types"
 title: "Serializable Types"
 ms.date: "03/30/2017"
 ms.assetid: f1c8539a-6a79-4413-b294-896f0957b2cd
+ms.topic: article
 ---
 # Serializable Types
 

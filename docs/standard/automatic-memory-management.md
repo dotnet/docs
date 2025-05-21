@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "managed heap"
   - "runtime, automatic memory management"
 ms.assetid: d4850de5-fa63-4936-a250-5678d118acba
+ms.topic: article
 ---
 # Automatic Memory Management
 

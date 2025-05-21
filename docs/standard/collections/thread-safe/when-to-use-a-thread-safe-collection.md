@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "thread-safe collections, when to upgrade"
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
+ms.topic: article
 ---
 # When to use a thread-safe collection
 

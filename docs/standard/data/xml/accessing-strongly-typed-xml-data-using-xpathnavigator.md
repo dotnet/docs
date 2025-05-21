@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 898e0f52-8a7c-4d1f-afcd-6ffb28b050b4
+ms.topic: how-to
 ---
 # Accessing Strongly Typed XML Data Using XPathNavigator
 

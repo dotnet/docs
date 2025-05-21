@@ -2,6 +2,7 @@
 title: Transactions
 ms.date: 09/08/2020
 description: Learn how to use transactions.
+ms.topic: article
 ---
 # Transactions
 

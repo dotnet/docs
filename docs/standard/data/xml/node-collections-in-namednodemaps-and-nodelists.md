@@ -3,6 +3,7 @@ description: "Learn more about: Node Collections in NamedNodeMaps and NodeLists"
 title: "Node Collections in NamedNodeMaps and NodeLists"
 ms.date: "03/30/2017"
 ms.assetid: 025954b8-7aa8-47c5-a1c1-f81064fb4d65
+ms.topic: article
 ---
 # Node Collections in NamedNodeMaps and NodeLists
 

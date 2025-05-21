@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "adjustment rule [.NET]"
   - "time zones [.NET], terminology"
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
+ms.topic: concept-article
 ---
 # Time zone overview
 

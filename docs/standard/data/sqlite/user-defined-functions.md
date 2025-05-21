@@ -2,6 +2,7 @@
 title: User-defined functions
 ms.date: 12/13/2019
 description: Learn how to create user-defined scalar and aggregate functions.
+ms.topic: article
 ---
 # User-defined functions
 

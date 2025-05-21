@@ -3,7 +3,7 @@ title: "Quantifiers in Regular Expressions"
 description: Learn about regular expression quantifiers, which specify how many instances of a character, group, or character class must be present in the input to match.
 ms.date: "08/09/2022"
 ms.custom: devdivchpfy22
-ms.topic: conceptual
+ms.topic: article
 dev_langs: 
   - "csharp"
   - "vb"

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
+ms.topic: concept-article
 ---
 # Mapping the Object Hierarchy to XML Data
 

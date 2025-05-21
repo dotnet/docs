@@ -3,6 +3,7 @@ description: "Learn more about: Entity References are Expanded and Not Preserved
 title: "Entity References are Expanded and Not Preserved"
 ms.date: "03/30/2017"
 ms.assetid: ffd97806-ab43-4538-8de2-5828bfbbde57
+ms.topic: article
 ---
 # Entity References are Expanded and Not Preserved
 

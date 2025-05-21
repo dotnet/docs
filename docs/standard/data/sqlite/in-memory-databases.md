@@ -2,6 +2,7 @@
 title: In-memory databases
 ms.date: 12/13/2019
 description: Learn how to use in-memory SQLite databases.
+ms.topic: article
 ---
 # In-memory databases
 

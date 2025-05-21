@@ -3,6 +3,7 @@ description: "Learn more about: Dependency Properties"
 title: "Dependency Properties"
 ms.date: "10/22/2008"
 ms.assetid: 212cfb1e-cec4-4047-94a6-47209b387f6f
+ms.topic: article
 ---
 # Dependency Properties
 

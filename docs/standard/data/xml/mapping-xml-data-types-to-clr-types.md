@@ -3,6 +3,7 @@ description: "Learn more about: Mapping XML Data Types to CLR Types"
 title: "Mapping XML Data Types to CLR Types"
 ms.date: "03/30/2017"
 ms.assetid: cabdfcad-f359-479b-b71c-8b2fad42ca49
+ms.topic: concept-article
 ---
 
 # Mapping XML Data Types to CLR Types

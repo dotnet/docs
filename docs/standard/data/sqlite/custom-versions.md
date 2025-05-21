@@ -2,6 +2,7 @@
 title: Custom SQLite versions
 ms.date: 09/04/2020
 description: Learn how to use a custom version of the native SQLite library.
+ms.topic: article
 ---
 
 # Custom SQLite versions

@@ -35,6 +35,7 @@ helpviewer_keywords:
   - "integer value type"
   - "base types, class library"
 ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
+ms.topic: concept-article
 ---
 # .NET class library overview
 

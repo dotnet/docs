@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "SortedList collection type"
   - "collections [.NET], SortedList collection type"
 ms.assetid: 3db965b2-36a6-4b12-b76e-7f074ff7275a
+ms.topic: article
 ---
 
 # Sorted Collection Types

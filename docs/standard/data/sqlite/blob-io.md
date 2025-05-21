@@ -2,6 +2,7 @@
 title: Blob I/O
 ms.date: 12/08/2020
 description: Learn how to use SQLite's BLOB I/O feature.
+ms.topic: article
 ---
 # Blob I/O
 

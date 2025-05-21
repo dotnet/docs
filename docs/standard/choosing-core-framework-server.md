@@ -3,6 +3,7 @@ title: Choose between .NET and .NET Framework for server apps
 description: A guide to help you decide which implementation of .NET to use when building a server app.
 ms.date: 11/22/2024
 ms.custom: updateeachrelease
+ms.topic: article
 ---
 # .NET vs. .NET Framework for server apps
 

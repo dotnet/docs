@@ -3,6 +3,7 @@ description: "Learn more about: Process XML Data Using LINQ to XML"
 title: "Process XML Data Using LINQ to XML"
 ms.date: "03/30/2017"
 ms.assetid: 059d6b9d-63f7-4011-9ba8-8406f0bbae7d
+ms.topic: article
 ---
 # Process XML Data Using LINQ to XML
 

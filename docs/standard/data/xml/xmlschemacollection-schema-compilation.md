@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 76f28770-7126-428f-9ed5-7b5ae8bad5ee
+ms.topic: article
 ---
 # XmlSchemaCollection Schema Compilation
 

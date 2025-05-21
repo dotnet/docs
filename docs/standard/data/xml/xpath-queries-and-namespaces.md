@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ef6402be-2f8e-4be2-8d3e-a80891cdef8b
+ms.topic: article
 ---
 # XPath Queries and Namespaces
 

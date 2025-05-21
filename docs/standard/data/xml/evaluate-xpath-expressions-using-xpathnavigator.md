@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2913ccf3-f932-4363-8028-9e2d22ce6093
+ms.topic: how-to
 ---
 # Evaluate XPath Expressions using XPathNavigator
 

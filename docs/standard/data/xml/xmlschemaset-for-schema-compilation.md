@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 55c4b175-3170-4071-9d60-dd5a42f79b54
+ms.topic: article
 ---
 # XmlSchemaSet for Schema Compilation
 

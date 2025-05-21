@@ -2,6 +2,7 @@
 title: Bulk insert
 ms.date: 12/13/2019
 description: Performance tips you can use when making numerous changes to the database.
+ms.topic: article
 ---
 # Bulk insert
 

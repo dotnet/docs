@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e25dd95f-b64c-4d8b-a3a4-379e1aa0ad55
+ms.topic: article
 ---
 # Compiled XPath Expressions
 

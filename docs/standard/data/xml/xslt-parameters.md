@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fe60aaa0-ae43-4b1c-9be1-426af66ba757
+ms.topic: article
 ---
 # XSLT Parameters
 

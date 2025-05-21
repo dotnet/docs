@@ -2,7 +2,7 @@
 title: Best practices for displaying and persisting formatted data in .NET
 description: Learn how to display and persist numeric and date data effectively in .NET applications.
 ms.date: 05/01/2019
-ms.topic: conceptual
+ms.topic: best-practice
 dev_langs:
   - "csharp"
   - "vb"

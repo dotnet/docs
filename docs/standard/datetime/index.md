@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "times [.NET], time zones"
   - "time [.NET], time zones"
 ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
+ms.topic: article
 ---
 # Dates, times, and time zones
 

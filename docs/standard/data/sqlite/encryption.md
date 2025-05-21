@@ -2,6 +2,7 @@
 title: Encryption
 ms.date: 09/08/2020
 description: Learn how to encrypt your database file.
+ms.topic: article
 ---
 # Encryption
 

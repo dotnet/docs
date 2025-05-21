@@ -3,6 +3,7 @@ description: "Learn more about: Namespace Support in the DOM"
 title: "Namespace Support in the DOM"
 ms.date: "03/30/2017"
 ms.assetid: f0548ead-0fed-41ee-b33e-117ba900d3bc
+ms.topic: article
 ---
 # Namespace Support in the DOM
 

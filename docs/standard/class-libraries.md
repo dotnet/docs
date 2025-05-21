@@ -4,6 +4,7 @@ description: Learn how .NET class libraries enable you to group useful functiona
 author: richlander
 ms.date: 06/20/2016
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880
+ms.topic: article
 ---
 # .NET class libraries
 

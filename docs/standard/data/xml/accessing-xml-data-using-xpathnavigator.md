@@ -3,6 +3,7 @@ description: "Learn more about: Accessing XML Data using XPathNavigator"
 title: "Accessing XML Data using XPathNavigator"
 ms.date: "03/30/2017"
 ms.assetid: c57b46e6-5c77-408f-bc4e-67a5dcc9cc05
+ms.topic: concept-article
 ---
 # Accessing XML Data using XPathNavigator
 

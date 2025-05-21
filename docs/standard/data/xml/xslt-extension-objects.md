@@ -3,6 +3,7 @@ description: "Learn more about: XSLT Extension Objects"
 title: "XSLT Extension Objects"
 ms.date: "03/30/2017"
 ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
+ms.topic: article
 ---
 # XSLT Extension Objects
 

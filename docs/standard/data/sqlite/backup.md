@@ -2,6 +2,7 @@
 title: Online backup
 ms.date: 12/13/2019
 description: Learn how to use SQLite's online backup feature.
+ms.topic: article
 ---
 # Online backup
 

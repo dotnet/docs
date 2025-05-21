@@ -1,7 +1,7 @@
 ---
 title: ".NET regular expression source generators"
 description: Learn how to use regular expression source generators to optimize the performance of matching algorithms in .NET.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 05/29/2024
 author: IEvangelist
 ms.author: dapine

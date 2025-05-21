@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "abstractions [.NET Framework]"
   - "base classes, abstractions"
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
+ms.topic: article
 ---
 # Base Classes for Implementing Abstractions
 

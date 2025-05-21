@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e6848c47-ee5d-401a-89a5-50b5eed40f30
+ms.topic: concept-article
 ---
 # Matching Nodes using XPathNavigator
 

@@ -3,6 +3,7 @@ description: "Learn more about: Inferring an XML Schema"
 title: "Inferring an XML Schema"
 ms.date: "03/30/2017"
 ms.assetid: b18e7ffd-3c04-482d-9934-ba2f6a59b2c9
+ms.topic: concept-article
 ---
 # Inferring an XML Schema
 

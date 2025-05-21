@@ -3,6 +3,7 @@ description: "Learn more about: Copy Existing Nodes"
 title: "Copy Existing Nodes"
 ms.date: "03/30/2017"
 ms.assetid: 2aa8f65c-cc62-4638-9c46-129dc15be786
+ms.topic: article
 ---
 # Copy Existing Nodes
 

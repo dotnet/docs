@@ -3,6 +3,7 @@ description: "Learn more about: Process XML Data Using the DOM Model"
 title: "Process XML Data Using the DOM Model"
 ms.date: "03/30/2017"
 ms.assetid: 56b6e9c7-ed82-4a65-a647-7be32c83bcc8
+ms.topic: article
 ---
 # Process XML Data Using the DOM Model
 

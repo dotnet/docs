@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ce2df341-a1a4-4e97-8e1b-cd45b8e3e71e
+ms.topic: concept-article
 ---
 
 # Accessing Attributes in the DOM

@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "AttributeUsageAttribute class, custom attributes"
   - "Inherited property"
   - "attribute classes, declaring"
+ms.topic: concept-article
 ---
 # Write custom attributes
 

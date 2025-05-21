@@ -3,7 +3,7 @@ title: Best Practices for Regular Expressions in .NET
 description: Learn how to create efficient, effective regular expressions in .NET.
 ms.date: 06/11/2024
 ms.custom: devdivchpfy22
-ms.topic: conceptual
+ms.topic: best-practice
 dev_langs:
   - "csharp"
   - "vb"

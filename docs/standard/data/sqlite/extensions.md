@@ -2,6 +2,7 @@
 title: Extensions
 ms.date: 12/08/2020
 description: Learn how to load SQLite extensions.
+ms.topic: article
 ---
 # Extensions
 

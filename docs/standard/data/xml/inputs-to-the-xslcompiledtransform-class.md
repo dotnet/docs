@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 834049f1-ab41-449e-9f10-4a1d0701bc48
+ms.topic: article
 ---
 # Inputs to the XslCompiledTransform Class
 

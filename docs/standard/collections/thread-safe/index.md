@@ -5,6 +5,7 @@ ms.date: 01/23/2023
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "thread-safe collections, overview"
+ms.topic: article
 ---
 # Thread-safe collections
 

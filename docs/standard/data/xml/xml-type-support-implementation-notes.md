@@ -3,6 +3,7 @@ description: "Learn more about: XML Type Support Implementation Notes"
 title: "XML Type Support Implementation Notes"
 ms.date: "03/30/2017"
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
+ms.topic: article
 ---
 # XML Type Support Implementation Notes
 

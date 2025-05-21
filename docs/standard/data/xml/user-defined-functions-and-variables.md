@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 4772f20e-1e7f-496e-93c2-1484473be555
+ms.topic: article
 ---
 # User Defined Functions and Variables
 

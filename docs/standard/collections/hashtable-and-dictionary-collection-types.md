@@ -10,6 +10,7 @@ ms.date: "03/30/2017"
   - "hash function"
   - "collections [.NET], Hashtable collection type"
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
+ms.topic: article
 ---
 # Hashtable and Dictionary Collection Types
 

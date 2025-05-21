@@ -3,6 +3,7 @@ description: "Learn more about: Copying Existing Nodes from One Document to Anot
 title: "Copying Existing Nodes from One Document to Another"
 ms.date: "03/30/2017"
 ms.assetid: 3caa78c1-3448-4b7b-b83c-228ee857635e
+ms.topic: concept-article
 ---
 # Copying Existing Nodes from One Document to Another
 

@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "TAP, .NET support for"
   - "Task-based Asynchronous Pattern, .NET support for"
   - ".NET, asynchronous design patterns"
+ms.topic: concept-article
 ---
 # Task-based asynchronous pattern (TAP) in .NET: Introduction and overview
 

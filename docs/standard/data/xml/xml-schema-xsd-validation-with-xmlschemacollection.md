@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ad0b5717-3d32-41ad-a4d7-072c3e492b82
+ms.topic: article
 ---
 # XML Schema (XSD) Validation with XmlSchemaCollection
 

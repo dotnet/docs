@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], arrays"
   - "arrays [.NET Framework], usage guidelines"
   - "empty arrays"
+ms.topic: article
 ---
 # Arrays (.NET Framework design guidelines)
 

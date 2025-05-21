@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "Collections classes"
   - "grouping data in collections, selecting collection class"
 ms.assetid: ba049f9a-ce87-4cc4-b319-3f75c8ddac8a
+ms.topic: concept-article
 ---
 
 # Selecting a Collection Class

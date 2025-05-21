@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2038a90b-92af-4a0a-baaa-08e688d95194
+ms.topic: article
 ---
 # Unordered Node Retrieval by Name or Index
 

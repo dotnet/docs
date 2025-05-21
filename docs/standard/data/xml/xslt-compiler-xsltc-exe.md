@@ -3,6 +3,7 @@ description: "Learn more about: XSLT Compiler (xsltc.exe)"
 title: "XSLT Compiler (xsltc.exe)"
 ms.date: "03/30/2017"
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
+ms.topic: article
 ---
 # XSLT Compiler (xsltc.exe)
 

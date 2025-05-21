@@ -3,6 +3,7 @@ description: "Learn more about: Working with XML Schemas"
 title: "Working with XML Schemas"
 ms.date: "03/30/2017"
 ms.assetid: bbbcc70c-bf9a-4f6a-af72-1bab5384a187
+ms.topic: concept-article
 ---
 # Working with XML Schemas
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 911d4460-dd91-4958-85b2-2ca3299f9ec6
+ms.topic: article
 ---
 # XmlSchemaValidator Push-Based Validation
 

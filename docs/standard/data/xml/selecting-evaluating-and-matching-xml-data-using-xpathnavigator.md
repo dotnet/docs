@@ -3,6 +3,7 @@ description: "Learn more about: Selecting, Evaluating and Matching XML Data usin
 title: "Selecting, Evaluating and Matching XML Data using XPathNavigator"
 ms.date: "03/30/2017"
 ms.assetid: 46e059f8-4dc8-4185-9236-784be95228ed
+ms.topic: article
 ---
 # Selecting, Evaluating and Matching XML Data using XPathNavigator
 

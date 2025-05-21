@@ -3,6 +3,7 @@ description: "Learn more about: Attribute and Namespace Node Navigation Using XP
 title: "Attribute and Namespace Node Navigation Using XPathNavigator"
 ms.date: "03/30/2017"
 ms.assetid: 23975f88-e0af-4b88-93de-9e20e11880ad
+ms.topic: how-to
 ---
 # Attribute and Namespace Node Navigation Using XPathNavigator
 

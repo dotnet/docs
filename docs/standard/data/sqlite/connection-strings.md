@@ -3,6 +3,7 @@ title: Connection strings
 ms.date: 06/06/2023
 no-loc: Command Timeout,Default Timeout,Data Source,Recursive Triggers,Pooling
 description: The supported keywords and values of connection strings.
+ms.topic: article
 ---
 # Connection strings
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 095b0987-ee4b-4595-a160-da1c956ad576
+ms.topic: how-to
 ---
 # Extract XML Data Using XPathNavigator
 

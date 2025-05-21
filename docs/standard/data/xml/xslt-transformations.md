@@ -3,6 +3,7 @@ description: "Learn more about: XSLT Transformations"
 title: "XSLT Transformations"
 ms.date: "03/30/2017"
 ms.assetid: 202f8820-224c-494f-b61e-cd127eac6e03
+ms.topic: article
 ---
 # XSLT Transformations
 

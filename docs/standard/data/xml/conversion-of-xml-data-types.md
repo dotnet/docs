@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
+ms.topic: article
 ---
 # Conversion of XML Data Types
 

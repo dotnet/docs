@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "JSON Serializer, JSON Reader, JSON Writer"
   - "Converter, JSON Converter, DateTime Converter"
   - "ISO, ISO 8601, ISO 8601-1:2019"
+ms.topic: article
 ---
 # DateTime and DateTimeOffset support in System.Text.Json
 

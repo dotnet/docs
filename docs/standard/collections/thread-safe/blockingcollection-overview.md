@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "BlockingCollection, overview"
 ms.assetid: 987ea3d7-0ad5-4238-8b64-331ce4eb3f0b
+ms.topic: concept-article
 ---
 # BlockingCollection Overview
 

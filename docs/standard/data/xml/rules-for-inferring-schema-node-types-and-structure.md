@@ -2,6 +2,7 @@
 description: "Learn more about: Rules for Inferring Schema Node Types and Structure"
 title: "Rules for Inferring Schema Node Types and Structure"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Rules for Inferring Schema Node Types and Structure
 

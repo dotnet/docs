@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8d94e041-d340-4ddf-9a2c-d7319e3f4f86
+ms.topic: how-to
 ---
 # Object Comparison Using XmlNameTable
 

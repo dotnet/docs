@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Equals method"
   - "== operator (equality) [.NET Framework]"
 ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
+ms.topic: article
 ---
 # Equality Operators
 

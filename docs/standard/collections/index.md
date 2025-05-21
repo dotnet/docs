@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "Collections classes"
   - "collections [.NET]"
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
+ms.topic: article
 ---
 
 # Collections and Data Structures

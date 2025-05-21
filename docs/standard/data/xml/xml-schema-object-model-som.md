@@ -3,6 +3,7 @@ description: "Learn more about: XML Schema Object Model (SOM)"
 title: "XML Schema Object Model (SOM)"
 ms.date: "03/30/2017"
 ms.assetid: a897a599-ffd1-43f9-8807-e58c8a7194cd
+ms.topic: article
 ---
 # XML Schema Object Model (SOM)
 

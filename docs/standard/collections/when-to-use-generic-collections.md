@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "collections [.NET], generic"
   - "generic collections [.NET]"
 ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
+ms.topic: article
 ---
 
 # When to use generic collections

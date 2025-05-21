@@ -3,6 +3,7 @@ description: "Learn more about: Namespace Affect on Entity Reference Expansion f
 title: "Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes"
 ms.date: "03/30/2017"
 ms.assetid: 64359aee-aab0-4042-9a32-d19789af6ca7
+ms.topic: article
 ---
 # Namespace Affect on Entity Reference Expansion for New Nodes Containing Elements and Attributes
 

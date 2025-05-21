@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a2758f40-e497-4964-8d8d-1bb68af14dcd
+ms.topic: concept-article
 ---
 # Changing Namespace Declarations in an XML Document
 

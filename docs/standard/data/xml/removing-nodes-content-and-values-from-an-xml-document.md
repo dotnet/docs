@@ -3,6 +3,7 @@ description: "Learn more about: Removing Nodes, Content, and Values from an XML 
 title: "Removing Nodes, Content, and Values from an XML Document"
 ms.date: "03/30/2017"
 ms.assetid: d818a29a-6ee5-4725-97c4-78cf60a156b6
+ms.topic: concept-article
 ---
 # Removing Nodes, Content, and Values from an XML Document
 

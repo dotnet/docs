@@ -2,6 +2,7 @@
 title: Data types
 ms.date: 12/13/2019
 description: Describes the supported data types and some of the limitations around them.
+ms.topic: article
 ---
 # Data types
 

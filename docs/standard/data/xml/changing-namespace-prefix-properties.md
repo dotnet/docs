@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d5c87cbe-4d69-429f-aad5-3103c2ca2770
+ms.topic: concept-article
 ---
 # Changing Namespace Prefix Properties
 

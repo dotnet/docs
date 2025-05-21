@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], names"
   - "DLLs, names"
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
+ms.topic: article
 ---
 # Names of Assemblies and DLLs
 

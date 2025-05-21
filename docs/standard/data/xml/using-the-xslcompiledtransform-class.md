@@ -3,6 +3,7 @@ description: "Learn more about: Using the XslCompiledTransform Class"
 title: "Using the XslCompiledTransform Class"
 ms.date: "03/30/2017"
 ms.assetid: f9b074f6-d6f4-49dd-a093-df510bf0cf7b
+ms.topic: concept-article
 ---
 # Using the XslCompiledTransform Class
 

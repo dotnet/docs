@@ -3,6 +3,7 @@ description: "Learn more about: Process XML Data Using the XPath Data Model"
 title: "Process XML Data Using the XPath Data Model"
 ms.date: "03/30/2017"
 ms.assetid: 536c6fce-1453-4654-9c72-bca54d47e081
+ms.topic: article
 ---
 # Process XML Data Using the XPath Data Model
 

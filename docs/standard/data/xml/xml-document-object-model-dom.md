@@ -3,6 +3,7 @@ description: "Learn more about: XML Document Object Model (DOM)"
 title: "XML Document Object Model (DOM)"
 ms.date: "03/30/2017"
 ms.assetid: b5e52844-4820-47c0-a61d-de2da33e9f54
+ms.topic: article
 ---
 # XML Document Object Model (DOM)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Extension Methods"
 title: "Extension Methods"
 ms.date: "10/22/2008"
 ms.assetid: 5de945cb-88f4-49d7-b0e6-f098300cf357
+ms.topic: article
 ---
 # Extension Methods
 

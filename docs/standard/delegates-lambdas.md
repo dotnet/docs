@@ -5,6 +5,7 @@ author: richlander
 ms.author: wiwagn
 ms.date: 06/20/2016
 ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
+ms.topic: article
 ---
 # Delegates and lambdas
 

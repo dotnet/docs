@@ -3,6 +3,7 @@ description: "Learn more about: Modifying Nodes, Content, and Values in an XML D
 title: "Modifying Nodes, Content, and Values in an XML Document"
 ms.date: "03/30/2017"
 ms.assetid: 761773e0-db72-4986-b9f5-a522213d8397
+ms.topic: concept-article
 ---
 # Modifying Nodes, Content, and Values in an XML Document
 

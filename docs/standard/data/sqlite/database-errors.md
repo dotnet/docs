@@ -2,6 +2,7 @@
 title: Database errors
 ms.date: 06/06/2023
 description: Describes how database errors and retries are handled by the library.
+ms.topic: article
 ---
 # Database errors
 

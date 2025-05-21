@@ -2,6 +2,7 @@
 title: Overview
 ms.date: 12/13/2019
 description: An overview of Microsoft.Data.Sqlite
+ms.topic: concept-article
 ---
 # Microsoft.Data.Sqlite overview
 

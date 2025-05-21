@@ -3,6 +3,7 @@ description: "Learn more about: Node Set Navigation Using XPathNavigator"
 title: "Node Set Navigation Using XPathNavigator"
 ms.date: "03/30/2017"
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
+ms.topic: article
 ---
 # Node Set Navigation Using XPathNavigator
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "namespaces [.NET Framework], names"
   - "names [.NET Framework], type names"
 ms.assetid: a49058d2-0276-43a7-9502-04adddf857b2
+ms.topic: article
 ---
 # Names of Namespaces
 

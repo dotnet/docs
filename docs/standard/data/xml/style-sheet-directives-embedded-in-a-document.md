@@ -3,6 +3,7 @@ description: "Learn more about: Style Sheet Directives Embedded in a Document"
 title: "Style Sheet Directives Embedded in a Document"
 ms.date: "03/30/2017"
 ms.assetid: d79fb295-ebc7-438d-ba1b-05be7d534834
+ms.topic: article
 ---
 # Style Sheet Directives Embedded in a Document
 

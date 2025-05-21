@@ -3,6 +3,7 @@ description: "Learn more about: XML Documents and Data"
 title: "XML Documents and Data"
 ms.date: "03/30/2017"
 ms.assetid: e695047f-3c0f-4045-8708-5baea91cc380
+ms.topic: article
 ---
 # XML Documents and Data
 

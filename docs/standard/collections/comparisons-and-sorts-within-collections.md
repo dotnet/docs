@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "Equals method"
   - "collections [.NET], comparisons"
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
+ms.topic: article
 ---
 
 # Comparisons and sorts within collections

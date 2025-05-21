@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0fe844e3-5b6f-4fe7-ad15-22459501738b
+ms.topic: article
 ---
 # Event Handling in an XML Document Using the XmlNodeChangedEventArgs
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5711b225-6aa2-4e4f-9898-19f2d518ad1a
+ms.topic: concept-article
 ---
 # Reading XML Data using XPathDocument and XmlDocument
 

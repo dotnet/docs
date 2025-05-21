@@ -1,7 +1,7 @@
 ---
 title: Behavior changes when comparing strings on .NET 5+
 description: Learn about string-comparison behavior changes in .NET 5 and later versions on Windows.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/15/2022
 ---
 

@@ -2,6 +2,7 @@
 title: Async limitations
 ms.date: 06/01/2023
 description: Explains the limitations of the async APIs and some alternatives that you can use instead.
+ms.topic: article
 ---
 # Async limitations
 

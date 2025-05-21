@@ -2,6 +2,7 @@
 description: "Learn more about: Node Types Recognized with XPath Queries"
 title: "Node Types Recognized with XPath Queries"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Node Types Recognized with XPath Queries
 

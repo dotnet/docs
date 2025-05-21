@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a4fb291f-5630-49ba-a49a-5b66c3b71e49
+ms.topic: concept-article
 ---
 # Reading an XML Document into the DOM
 

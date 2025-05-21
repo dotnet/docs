@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "exceptions, performance"
   - "throwing exceptions, performance"
 ms.assetid: 3ad6aad9-08e6-4232-b336-0e301f2493e6
+ms.topic: article
 ---
 # Exceptions and Performance
 

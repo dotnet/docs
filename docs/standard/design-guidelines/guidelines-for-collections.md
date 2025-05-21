@@ -3,6 +3,7 @@ description: "Learn more about: Guidelines for Collections"
 title: "Guidelines for Collections"
 ms.date: "10/22/2008"
 ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
+ms.topic: article
 ---
 # Guidelines for Collections
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], extensibility"
   - "class library extensibility [.NET Framework]"
 ms.assetid: 1cdb8740-871a-456c-9bd9-db96ca8d79b3
+ms.topic: concept-article
 ---
 # Designing for Extensibility
 

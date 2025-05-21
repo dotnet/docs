@@ -3,6 +3,7 @@ description: "Learn more about: Removing Nodes from the DOM"
 title: "Removing Nodes from the DOM"
 ms.date: "03/30/2017"
 ms.assetid: 0a98e0ca-0555-45c1-ab69-0d8d20ca1abd
+ms.topic: concept-article
 ---
 # Removing Nodes from the DOM
 

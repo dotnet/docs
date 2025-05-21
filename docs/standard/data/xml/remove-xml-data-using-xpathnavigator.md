@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9f436bca-1b96-494b-a6d2-e102c7551752
+ms.topic: how-to
 ---
 # Remove XML Data using XPathNavigator
 

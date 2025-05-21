@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: dd6dc920-b011-418a-b3db-f1580a7d9251
+ms.topic: how-to
 ---
 # Create new attributes for elements in the DOM
 

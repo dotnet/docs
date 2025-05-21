@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 00833027-1428-4586-83c1-42f5de3323d1
+ms.topic: article
 ---
 # XDR Validation with XmlSchemaCollection
 

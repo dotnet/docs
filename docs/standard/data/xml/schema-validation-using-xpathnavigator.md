@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 81fa0e41-d9c9-46f0-b22b-50da839c77f5
+ms.topic: article
 ---
 # Schema Validation using XPathNavigator
 

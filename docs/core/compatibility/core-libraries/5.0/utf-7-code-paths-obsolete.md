@@ -2,6 +2,7 @@
 title: "Breaking change: UTF-7 code paths are obsolete"
 description: Learn about the .NET 5 breaking change in core .NET libraries where the UTF7 and UTF7Encoding constructors are obsolete.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # UTF-7 code paths are obsolete
 

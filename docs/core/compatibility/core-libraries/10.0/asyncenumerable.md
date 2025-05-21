@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 10 where the AsyncEnumerab
 ms.date: 2/21/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44886
+ms.topic: concept-article
 ---
 
 # System.Linq.AsyncEnumerable in .NET 10

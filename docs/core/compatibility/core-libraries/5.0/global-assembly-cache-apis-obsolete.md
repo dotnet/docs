@@ -2,6 +2,7 @@
 title: "Breaking change: Global assembly cache APIs are obsolete"
 description: Learn about the .NET 5 breaking change in core .NET libraries where APIs that deal with the GAC either fail or perform no operation.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Global assembly cache APIs are obsolete
 

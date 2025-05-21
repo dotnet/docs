@@ -2,6 +2,7 @@
 title: "Breaking change: Dev cert export no longer creates folder"
 description: Learn about the breaking change in ASP.NET Core 9 where exporting the development certificate no longer creates the target directory if it doesn't exist.
 ms.date: 11/6/2024
+ms.topic: concept-article
 ---
 
 # Dev cert export no longer creates folder

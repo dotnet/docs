@@ -2,6 +2,7 @@
 title: "Breaking change: Most code access security APIs are obsolete"
 description: Learn about the .NET 5 breaking change in core .NET libraries where most code access security (CAS)-related types in .NET are now obsolete as warning.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Most code access security APIs are obsolete
 

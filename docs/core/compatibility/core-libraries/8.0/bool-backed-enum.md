@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Boolean-backed enum type support removed"
 description: Learn about the .NET 8 breaking change in core .NET libraries where support for parsing, formatting, and conversions of Boolean-backed enumeration types has been removed.
 ms.date: 08/02/2023
+ms.topic: article
 ---
 # Boolean-backed enum type support removed
 

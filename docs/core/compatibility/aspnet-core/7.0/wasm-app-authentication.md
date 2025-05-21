@@ -2,6 +2,7 @@
 title: "Breaking change: Authentication in WebAssembly apps"
 description: Learn about the breaking change in ASP.NET Core 7.0 where authentication in WebAssembly apps relies on the history state instead of the URL query string.
 ms.date: 10/20/2022
+ms.topic: concept-article
 ---
 # Authentication in WebAssembly apps
 

@@ -3,6 +3,7 @@ title: "Breaking change: Azure: Microsoft-prefixed Azure integration packages re
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Azure: Microsoft-prefixed Azure integration packages removed"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.topic: concept-article
 ---
 # Azure: Microsoft-prefixed Azure integration packages removed
 

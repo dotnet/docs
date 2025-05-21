@@ -4,6 +4,7 @@ description: "Learn about the breaking change in ASP.NET Core 6.0 titled Blazor:
 no-loc: [ Blazor ]
 ms.author: scaddie
 ms.date: 02/09/2021
+ms.topic: concept-article
 ---
 # Blazor: Parameter name changed in RequestImageFileAsync method
 

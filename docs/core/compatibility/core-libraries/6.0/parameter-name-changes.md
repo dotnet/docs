@@ -2,6 +2,7 @@
 title: "Breaking change: Parameter names changed in .NET 6"
 description: Learn about the .NET 6 breaking change in core .NET libraries where some parameter names have changed to be consistent between reference and implementation assemblies.
 ms.date: 10/15/2021
+ms.topic: concept-article
 ---
 # Parameter names changed in .NET 6
 

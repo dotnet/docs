@@ -2,6 +2,7 @@
 title: "Breaking change: PrincipalPermissionAttribute is obsolete as error"
 description: Learn about the .NET 5 breaking change in core .NET libraries where the PrincipalPermissionAttribute constructor is obsolete and produces a compile-time error.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # PrincipalPermissionAttribute is obsolete as error
 

@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: File.Replace exceptions on Unix"
 description: Learn about the .NET 6 breaking change in core .NET libraries where File.Replace throws exceptions in more cases on Unix-based operating systems.
 ms.date: 10/13/2021
+ms.topic: article
 ---
 # File.Replace on Unix throws exceptions to match Windows implementation
 

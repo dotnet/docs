@@ -2,6 +2,7 @@
 title: "Breaking change: CA2014: Do not use stackalloc in loops"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA2014.
 ms.date: 09/03/2020
+ms.topic: concept-article
 ---
 # Warning CA2014: Do not use stackalloc in loops
 

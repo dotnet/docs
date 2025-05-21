@@ -2,6 +2,7 @@
 title: "Breaking change: System.Security.SecurityContext is marked obsolete"
 description: Learn about the .NET 6 breaking change where the System.Security.SecurityContext type is marked obsolete.
 ms.date: 08/16/2021
+ms.topic: concept-article
 ---
 # System.Security.SecurityContext is marked obsolete
 

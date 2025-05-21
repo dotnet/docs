@@ -2,6 +2,7 @@
 title: "Breaking change: MVC's detection of an empty body in model binding changed"
 description: Learn about the breaking change in ASP.NET Core 7.0 where MVC's detection of an empty body in model binding changed.
 ms.date: 04/04/2022
+ms.topic: concept-article
 ---
 
 # MVC's detection of an empty body in model binding changed

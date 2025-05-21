@@ -2,6 +2,7 @@
 title: "Breaking change: Kestrel: Default HTTPS binding removed"
 description: Learn about the breaking change in ASP.NET Core 7.0 where the default HTTPS binding on Kestrel was removed.
 ms.date: 06/24/2022
+ms.topic: concept-article
 ---
 # Kestrel: Default HTTPS binding removed
 

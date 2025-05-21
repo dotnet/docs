@@ -2,6 +2,7 @@
 title: "Breaking change: Maximum precision for numeric format strings"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the maximum precision for numeric format strings was changed to 999,999,999.
 ms.date: 09/02/2022
+ms.topic: concept-article
 ---
 # Maximum precision for numeric format strings
 

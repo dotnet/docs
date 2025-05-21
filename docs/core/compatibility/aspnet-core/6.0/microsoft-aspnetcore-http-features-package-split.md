@@ -2,6 +2,7 @@
 title: "Breaking change: Microsoft.AspNetCore.Http.Features split up"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the Microsoft.AspNetCore.Http.Features package has been split, and no longer ships as a package."
 ms.date: 05/06/2021
+ms.topic: concept-article
 ---
 # Microsoft.AspNetCore.Http.Features split
 

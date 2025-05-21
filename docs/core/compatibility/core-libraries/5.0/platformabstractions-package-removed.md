@@ -2,6 +2,7 @@
 title: "Breaking change: Microsoft.DotNet.PlatformAbstractions package removed"
 description: Learn about the .NET 5 breaking change in core .NET libraries where the Microsoft.DotNet.PlatformAbstractions package has been removed.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Microsoft.DotNet.PlatformAbstractions package removed
 

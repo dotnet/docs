@@ -2,6 +2,7 @@
 title: "Breaking change: Middleware no longer defers to endpoint with null request delegate"
 description: Learn about the breaking change in ASP.NET Core 7.0 where the file-serving middleware no longer no-op when the active endpoint has a null request delegate.
 ms.date: 07/18/2022
+ms.topic: concept-article
 ---
 # Middleware no longer defers to endpoint with null request delegate
 

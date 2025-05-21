@@ -2,6 +2,7 @@
 title: "Breaking change: Assembly-related API behavior changes for single-file publishing format"
 description: Learn about the .NET 5 breaking change in core .NET libraries where multiple APIs related to an assembly's file location have behavior changes when they're invoked in a single-file publishing format.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Assembly-related API behavior changes for single-file publishing format
 

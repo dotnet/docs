@@ -2,6 +2,7 @@
 title: "Breaking change: AddDataAnnotationsValidation method obsoleted"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the AddDataAnnotationsValidation method is replaced with EnableDataAnnotationsValidation."
 ms.date: 04/21/2021
+ms.topic: concept-article
 ---
 # AddDataAnnotationsValidation method made obsolete
 

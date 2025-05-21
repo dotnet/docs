@@ -3,6 +3,7 @@ title: "Breaking change: Consistent shift behavior in generic math"
 description: Learn about the .NET 10 breaking change in core .NET libraries where shift operations in generic math now have consistent behavior.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 # Consistent shift behavior in generic math
 

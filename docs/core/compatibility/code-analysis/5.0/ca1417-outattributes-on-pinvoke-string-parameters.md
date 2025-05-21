@@ -2,6 +2,7 @@
 title: "Breaking change: CA1417: OutAttribute on string parameter for P/Invoke"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA1417.
 ms.date: 09/29/2020
+ms.topic: concept-article
 ---
 # Warning CA1417: OutAttribute on string parameter for P/Invoke
 

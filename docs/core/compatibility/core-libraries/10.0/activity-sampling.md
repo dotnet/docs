@@ -3,6 +3,7 @@ title: "Breaking change: ActivitySource.CreateActivity and ActivitySource.StartA
 description: Learn about the .NET 10.0 breaking change in core .NET libraries where ActivitySource.CreateActivity and ActivitySource.StartActivity behavior is modified.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 # ActivitySource.CreateActivity and ActivitySource.StartActivity behavior change
 

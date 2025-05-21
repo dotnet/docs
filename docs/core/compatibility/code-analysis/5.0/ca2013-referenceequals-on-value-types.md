@@ -2,6 +2,7 @@
 title: "Breaking change: CA2013: Do not use ReferenceEquals with value types"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA2013.
 ms.date: 09/03/2020
+ms.topic: concept-article
 ---
 # Warning CA2013: Do not use ReferenceEquals with value types
 

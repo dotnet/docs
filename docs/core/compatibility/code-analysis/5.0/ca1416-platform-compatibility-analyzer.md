@@ -2,6 +2,7 @@
 title: "Breaking change: CA1416: Platform compatibility"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA1416.
 ms.date: 05/04/2021
+ms.topic: concept-article
 ---
 # Warning CA1416: Platform compatibility
 

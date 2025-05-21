@@ -4,6 +4,7 @@ description: "Learn about the breaking change in ASP.NET Core 6.0 where the WebE
 ms.author: scaddie
 ms.date: 02/24/2021
 no-loc: [ Blazor ]
+ms.topic: concept-article
 ---
 # Blazor: :::no-loc text="WebEventDescriptor.EventArgsType"::: property replaced
 

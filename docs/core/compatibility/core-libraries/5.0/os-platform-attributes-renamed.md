@@ -2,6 +2,7 @@
 title: "Breaking change: OSPlatform attributes renamed or removed"
 description: Learn about the .NET 5 breaking change in core .NET libraries where OS platform attributes that were introduced in a preview version have been removed or renamed.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # OSPlatform attributes renamed or removed
 

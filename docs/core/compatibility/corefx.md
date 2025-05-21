@@ -2,6 +2,7 @@
 title: .NET library breaking changes
 description: Lists the breaking changes in core .NET libraries for .NET Core versions 1.0-3.0.
 ms.date: 07/27/2020
+ms.topic: article
 ---
 # Core .NET libraries breaking changes in .NET Core 1.0-3.0
 

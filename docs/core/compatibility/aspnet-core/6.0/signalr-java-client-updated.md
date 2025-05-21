@@ -2,6 +2,7 @@
 title: "Breaking change: SignalR Java Client updated to RxJava3"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the SignalR Java Client was updated to RxJava3."
 ms.date: 04/21/2021
+ms.topic: concept-article
 ---
 # SignalR: Java Client updated to RxJava3
 

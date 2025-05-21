@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: Default console logger formatting in container images"
 description: Learn about the .NET 6 breaking change in .NET containers where the default formatting for the console logger in aspnet container images is no longer JSON.
 ms.date: 05/02/2022
+ms.topic: how-to
 ---
 # Default console logger formatting in container images
 

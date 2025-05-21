@@ -2,6 +2,7 @@
 title: "Breaking change: Microsoft.Data.SqlClient updated to 4.0.1"
 description: Learn about the breaking change in ASP.NET Core 7.0 where Microsoft.Data.SqlClient has been updated to 4.0.1.
 ms.date: 03/07/2022
+ms.topic: concept-article
 ---
 
 # Microsoft.Data.SqlClient updated to 4.0.1

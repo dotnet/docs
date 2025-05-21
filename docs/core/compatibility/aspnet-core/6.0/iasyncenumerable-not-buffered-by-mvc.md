@@ -2,6 +2,7 @@
 title: "Breaking change: MVC no longer buffers IAsyncEnumerable types when using System.Text.Json"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where MVC no longer buffers IAsyncEnumerable return types when formatting using System.Text.Json."
 ms.date: 05/17/2021
+ms.topic: concept-article
 ---
 # MVC doesn't buffer IAsyncEnumerable types when using System.Text.Json
 

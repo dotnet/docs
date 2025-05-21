@@ -2,6 +2,7 @@
 title: "Breaking change: Rate-limiting middleware requires AddRateLimiter"
 description: Learn about the breaking change in ASP.NET Core 8.0 where rate-limiting middleware now requires AddRateLimiter to be called on app startup.
 ms.date: 05/30/2023
+ms.topic: concept-article
 ---
 # Rate-limiting middleware requires AddRateLimiter
 

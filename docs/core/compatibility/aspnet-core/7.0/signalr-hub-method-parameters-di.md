@@ -2,6 +2,7 @@
 title: "Breaking change: SignalR Hub methods try to resolve parameters from DI"
 description: Learn about the breaking change in ASP.NET Core 7.0 where SignalR Hub methods try to resolve parameters from DI.
 ms.date: 03/03/2022
+ms.topic: concept-article
 ---
 
 # SignalR Hub methods try to resolve parameters from DI

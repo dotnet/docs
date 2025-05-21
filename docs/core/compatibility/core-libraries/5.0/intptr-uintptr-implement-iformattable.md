@@ -2,6 +2,7 @@
 title: "Breaking change: IntPtr and UIntPtr implement IFormattable"
 description: Learn about the .NET 5 breaking change in core .NET libraries where IntPtr and UIntPtr now implement IFormattable.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # IntPtr and UIntPtr implement IFormattable
 

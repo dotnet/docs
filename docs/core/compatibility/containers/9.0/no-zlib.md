@@ -2,6 +2,7 @@
 title: ".NET 9 container images no longer install `zlib`"
 description: Learn about the breaking change in containers where .NET 9 container images no longer install the zlib package.
 ms.date: 08/29/2024
+ms.topic: install-set-up-deploy
 ---
 # .NET 9 container images no longer install zlib
 

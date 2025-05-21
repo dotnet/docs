@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: Exception handling in hosting"
 description: Learn about the .NET 6 breaking change in core .NET libraries where unhandled exceptions from a BackgroundService are logged instead of lost.
 ms.date: 05/06/2022
+ms.topic: article
 ---
 # Unhandled exceptions from a BackgroundService
 

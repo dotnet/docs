@@ -2,6 +2,7 @@
 title: "Default .NET container tags now use Ubuntu"
 description: Learn about the breaking change where the default .NET container tags, like `10.0`, use Ubuntu.
 ms.date: 2/26/2025
+ms.topic: article
 ---
 
 # Default .NET images use Ubuntu

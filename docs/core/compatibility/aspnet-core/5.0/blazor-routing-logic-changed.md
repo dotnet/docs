@@ -3,6 +3,7 @@ title: "Breaking change: Blazor: Changes to routing logic in Blazor apps"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Blazor: Changes to routing logic in Blazor apps"
 ms.author: scaddie
 ms.date: 12/14/2020
+ms.topic: concept-article
 ---
 # Blazor: Route precedence logic changed in Blazor apps
 

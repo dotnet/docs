@@ -2,6 +2,7 @@
 title: "Breaking change: Partial and zero-byte reads in DeflateStream, GZipStream, and CryptoStream"
 description: Learn about the .NET 6 breaking change in core .NET libraries where DeflateStream, GZipStream, and CryptoStream handle partial and zero-byte reads differently.
 ms.date: 03/18/2024
+ms.topic: concept-article
 ---
 # Partial and zero-byte reads in DeflateStream, GZipStream, and CryptoStream
 

@@ -3,6 +3,7 @@ title: "Breaking change: ClientCertificate property no longer triggers renegotia
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the ClientCertificate property no longer triggers renegotiation for HttpSys."
 ms.date: 07/20/2021
 no-loc: [ Kestrel ]
+ms.topic: concept-article
 ---
 # ClientCertificate property no longer triggers renegotiation for HttpSys
 

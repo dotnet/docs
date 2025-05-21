@@ -2,6 +2,7 @@
 title: "Breaking change: Task.FromResult may return singleton"
 description: Learn about the .NET 6 breaking change where Task.FromResult may return a singleton.
 ms.date: 10/01/2021
+ms.topic: concept-article
 ---
 # Task.FromResult may return singleton
 

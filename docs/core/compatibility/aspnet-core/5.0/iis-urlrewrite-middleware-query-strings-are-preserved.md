@@ -3,6 +3,7 @@ title: "Breaking change: IIS: UrlRewrite middleware query strings are preserved"
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled IIS: UrlRewrite middleware query strings are preserved"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.topic: concept-article
 ---
 # IIS: UrlRewrite middleware query strings are preserved
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Remoting APIs are obsolete"
 description: Learn about the .NET 5 breaking change in core .NET libraries where some remoting-related APIs are marked as obsolete and generate a warning with a custom diagnostic ID.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Remoting APIs are obsolete
 

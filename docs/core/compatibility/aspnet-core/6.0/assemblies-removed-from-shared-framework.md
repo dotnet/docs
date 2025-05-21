@@ -2,6 +2,7 @@
 title: "Breaking change: Assemblies removed from Microsoft.AspNetCore.App shared framework"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where some assemblies where removed from the Microsoft.AspNetCore.App shared framework."
 ms.date: 04/02/2021
+ms.topic: concept-article
 ---
 # Assemblies removed from Microsoft.AspNetCore.App shared framework
 

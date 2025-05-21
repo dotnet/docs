@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Generic type constraint on PatternContext<T>"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the generic type parameter on PatternContext<T> is constrained to be a struct type.
 ms.date: 03/16/2022
+ms.topic: article
 ---
 # Generic type constraint on PatternContext\<T>
 

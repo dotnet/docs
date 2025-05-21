@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Activity operation name when null"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the operation name of an Activity is stored as an empty string if it's specified as null when the activity is created.
 ms.date: 01/26/2023
+ms.topic: article
 ---
 # Activity operation name when null
 

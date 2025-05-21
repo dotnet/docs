@@ -2,6 +2,7 @@
 title: "Breaking change: URI paths with non-ASCII characters parse correctly on Unix"
 description: Learn about the .NET 5 breaking change in core .NET libraries where absolute URI paths that contain non-ASCII characters now parse correctly on Unix platforms.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # URI paths with non-ASCII characters parse correctly on Unix
 

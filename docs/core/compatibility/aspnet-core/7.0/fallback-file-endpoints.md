@@ -2,6 +2,7 @@
 title: "Breaking change: Fallback file endpoints"
 description: Learn about the breaking change in ASP.NET Core 7.0 where endpoints configured with 'MapFallbackToFile()' now only match 'HEAD' and 'GET' requests.
 ms.date: 10/10/2022
+ms.topic: concept-article
 ---
 # Fallback file endpoints
 

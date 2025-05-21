@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Equals method behavior change for NaN"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the behavior of some Equals(T other) instance methods changed for NaN values.
 ms.date: 05/18/2022
+ms.topic: article
 ---
 # Equals method behavior change for NaN
 

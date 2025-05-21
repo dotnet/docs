@@ -2,6 +2,7 @@
 title: "Breaking change: Uri recognition of UNC paths on Unix"
 description: Learn about the .NET 5 breaking change in core .NET libraries where the Uri class now recognizes strings that start with two forward slashes as UNC paths on Unix.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Uri recognition of UNC paths on Unix
 

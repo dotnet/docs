@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Validate CompressionLevel for BrotliStream"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the CompressionLevel parameter to BrotliStream constructors is now validated.
 ms.date: 01/04/2022
+ms.topic: article
 ---
 # Validate CompressionLevel for BrotliStream
 

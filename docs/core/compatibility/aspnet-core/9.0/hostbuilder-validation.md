@@ -2,6 +2,7 @@
 title: "Breaking change: HostBuilder enables ValidateOnBuild/ValidateScopes in development environment"
 description: Learn about the breaking change in .NET 9 where HostBuilder now enables ValidateOnBuild and ValidateScopes in the development environment.
 ms.date: 08/05/2024
+ms.topic: concept-article
 ---
 # HostBuilder enables ValidateOnBuild/ValidateScopes in development environment
 

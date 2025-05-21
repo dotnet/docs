@@ -2,6 +2,7 @@
 title: "Breaking change: EndpointName metadata no longer automatically set"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where EndpointName metadata is no longer automatically set for minimal endpoints."
 ms.date: 10/18/2021
+ms.topic: concept-article
 ---
 # EndpointName metadata not set automatically
 

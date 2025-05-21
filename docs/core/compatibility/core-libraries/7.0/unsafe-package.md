@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: System.Runtime.CompilerServices.Unsafe NuGet package"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the 'Unsafe' type implementations have been unified and the System.Runtime.CompilerServices.Unsafe NuGet package is no longer produced.
 ms.date: 10/12/2022
+ms.topic: article
 ---
 # System.Runtime.CompilerServices.Unsafe NuGet package
 

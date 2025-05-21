@@ -2,6 +2,7 @@
 title: "Kerberos package removed from Alpine and Debian images"
 description: Learn about the breaking change in containers where the 'krb5-libs' package was removed from .NET container images.
 ms.date: 08/01/2023
+ms.topic: article
 ---
 # Kerberos package removed from Alpine and Debian images
 

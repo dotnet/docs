@@ -2,6 +2,7 @@
 title: "Breaking change: CA2247: Argument to TaskCompletionSource constructor should be TaskCreationOptions value"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA2247.
 ms.date: 09/03/2020
+ms.topic: concept-article
 ---
 # Warning CA2247: Argument to TaskCompletionSource constructor should be TaskCreationOptions value
 

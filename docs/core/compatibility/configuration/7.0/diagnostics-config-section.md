@@ -2,6 +2,7 @@
 title: "Breaking change: System.diagnostics entry in app.config"
 description: Learn about the .NET 7 breaking change in configuration where the `<section name="system.diagnostics">` entry is no longer allowed in an app.config file.
 ms.date: 11/03/2022
+ms.topic: concept-article
 ---
 # System.diagnostics entry in app.config
 

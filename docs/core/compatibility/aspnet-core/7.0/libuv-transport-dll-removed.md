@@ -2,6 +2,7 @@
 title: "Breaking change: Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed"
 description: Learn about the breaking change in ASP.NET Core 7.0 where Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll have been removed.
 ms.date: 01/17/2022
+ms.topic: concept-article
 ---
 
 # Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv and libuv.dll removed

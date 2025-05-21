@@ -2,6 +2,7 @@
 title: "Breaking change: CreateCounterSetInstance throws InvalidOperationException if instance already exists"
 description: Learn about the .NET 5 breaking change in core .NET libraries where CounterSet.CreateCounterSetInstance throws a different exception if the counter already exists.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # CounterSet.CreateCounterSetInstance now throws InvalidOperationException if instance already exists
 

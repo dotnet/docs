@@ -2,6 +2,7 @@
 title: "Breaking change: System.Drawing.Common config switch removed"
 description: Learn about the .NET 7 breaking change where the EnableUnixSupport switch to enable System.Drawing.Common support on non-Windows operating systems was removed.
 ms.date: 05/18/2023
+ms.topic: concept-article
 ---
 # System.Drawing.Common config switch removed
 

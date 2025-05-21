@@ -2,6 +2,7 @@
 title: "Breaking change: API controller actions try to infer parameters from DI"
 description: Learn about the breaking change in ASP.NET Core 7.0 where API controller actions try to infer parameters from DI.
 ms.date: 03/04/2022
+ms.topic: how-to
 ---
 
 # API controller actions try to infer parameters from DI

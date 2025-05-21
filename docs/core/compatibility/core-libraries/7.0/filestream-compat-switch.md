@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Legacy FileStream strategy removed"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the ability to use the legacy `FileStream` implementation has been removed.
 ms.date: 10/04/2022
+ms.topic: article
 ---
 # Legacy FileStream strategy removed
 

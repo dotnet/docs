@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: Complex.ToString format changed to `<a; b>`"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the Complex.ToString() format changed from `(a, b)` to `<a; b>`.
 ms.date: 08/06/2024
+ms.topic: concept-article
 ---
 # Complex.ToString format changed to `<a; b>`
 

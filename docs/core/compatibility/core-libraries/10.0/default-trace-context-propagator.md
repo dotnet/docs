@@ -4,6 +4,7 @@ description: "Learn about the breaking change in .NET 10 where the default trace
 ms.date: 4/21/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45793
+ms.topic: how-to
 ---
 
 # Default trace context propagator updated to W3C standard

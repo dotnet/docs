@@ -2,6 +2,7 @@
 title: "Breaking change: ISystemClock is obsolete"
 description: Learn about the breaking change in ASP.NET Core 8.0 where ISystemClock and constructors that use it have been marked obsolete.
 ms.date: 05/30/2023
+ms.topic: concept-article
 ---
 # ISystemClock is obsolete
 

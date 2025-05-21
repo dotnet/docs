@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: EventSource callback behavior"
 description: Learn about the .NET 6 servicing breaking change in core .NET libraries where the 'EventSource' is marked as disabled before the callback is issue for an 'EventCommand.Disable'.
 ms.date: 06/15/2023
+ms.topic: article
 ---
 # EventSource callback behavior
 

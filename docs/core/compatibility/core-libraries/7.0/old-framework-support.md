@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Library support for older frameworks"
 description: Learn about the .NET 7 breaking change in core .NET libraries where core libraries packages are no longer supported on some older frameworks.
 ms.date: 09/29/2022
+ms.topic: article
 ---
 # Library support for older frameworks
 

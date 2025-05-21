@@ -2,6 +2,7 @@
 title: "Breaking change: ActionResult<T> sets StatusCode to 200"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where ActionResult<T> always sets the status code to 200, even if it was set manually."
 ms.date: 05/23/2022
+ms.topic: concept-article
 ---
 # ActionResult\<T> sets StatusCode to 200
 

@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: FileStream doesn't synchronize file offset with OS"
 description: Learn about the .NET 6 breaking change in core .NET libraries where FileStream doesn't synchronize the file offset with the operating system.
 ms.date: 10/04/2022
+ms.topic: article
 ---
 # FileStream no longer synchronizes file offset with OS
 

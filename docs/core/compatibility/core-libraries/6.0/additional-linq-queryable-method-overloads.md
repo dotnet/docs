@@ -2,6 +2,7 @@
 title: ".NET 6 breaking change: Additional overloads of LINQ Queryable methods"
 description: Learn about the .NET 6 breaking change in core .NET libraries where additional method overloads were added to the System.Linq.Queryable type.
 ms.date: 03/31/2021
+ms.topic: article
 ---
 # New System.Linq.Queryable method overloads
 

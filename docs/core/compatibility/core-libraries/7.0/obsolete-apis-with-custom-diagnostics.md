@@ -3,6 +3,7 @@ title: "Breaking change: .NET 7 obsoletions with non-default diagnostic IDs"
 titleSuffix: ""
 description: Learn about the .NET 7 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 11/07/2022
+ms.topic: concept-article
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 7)
 

@@ -4,6 +4,7 @@ description: Learn about the breaking change in ASP.NET Core 9 where legacy Mono
 ms.date: 12/4/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/aspnet/Announcements/issues/516
+ms.topic: article
 ---
 
 # Legacy Mono and Emscripten JavaScript APIs not exported to global namespace

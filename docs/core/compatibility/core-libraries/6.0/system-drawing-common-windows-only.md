@@ -2,6 +2,7 @@
 title: "Breaking change: System.Drawing.Common only supported on Windows"
 description: Learn about the .NET 6 breaking change where the System.Drawing.Common package is no longer supported on non-Windows operating systems.
 ms.date: 11/08/2022
+ms.topic: concept-article
 ---
 # System.Drawing.Common only supported on Windows
 

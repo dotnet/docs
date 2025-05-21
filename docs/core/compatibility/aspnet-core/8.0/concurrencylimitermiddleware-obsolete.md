@@ -2,6 +2,7 @@
 title: "Breaking change: ConcurrencyLimiterMiddleware is obsolete"
 description: Learn about the breaking change in ASP.NET Core 8.0 where ConcurrencyLimiterMiddleware has been obsoleted.
 ms.date: 05/03/2023
+ms.topic: concept-article
 ---
 # ConcurrencyLimiterMiddleware is obsolete
 

@@ -3,6 +3,7 @@ title: "Breaking change: Debian container images upgraded to Debian 12"
 description: Learn about the breaking change in containers where .NET container images for Linux have been upgraded to Debian 12 (Bookworm).
 ms.date: 07/11/2023
 ms.custom: linux-related-content
+ms.topic: upgrade-and-migration-article
 ---
 # Debian container images upgraded to Debian 12
 

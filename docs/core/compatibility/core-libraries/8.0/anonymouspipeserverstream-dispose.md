@@ -2,6 +2,7 @@
 title: ".NET 8 breaking change: AnonymousPipeServerStream.Dispose behavior for HandleInheritability.Inheritable"
 description: Learn about the .NET 8 breaking change in core .NET libraries where the behavior of AnonymousPipeServerStream.Dispose has changed for servers that are created for out-of-proc communication.
 ms.date: 01/30/2023
+ms.topic: article
 ---
 # AnonymousPipeServerStream.Dispose behavior for HandleInheritability.Inheritable
 

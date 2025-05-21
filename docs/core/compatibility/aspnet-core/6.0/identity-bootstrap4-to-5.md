@@ -2,6 +2,7 @@
 title: "Breaking change: Default version of Bootstrap used with Identity now 5"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the default version of Bootstrap used with Identity changes from 4 to 5."
 ms.date: 02/15/2022
+ms.topic: concept-article
 ---
 # Identity: Default Bootstrap version of UI changed
 

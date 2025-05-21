@@ -4,6 +4,7 @@ description: Learn about the breaking change in core .NET libraries in .NET 7 wh
 ms.date: 11/25/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/42598
+ms.topic: how-to
 ---
 
 # Asterisk no longer accepted for assembly name attributes

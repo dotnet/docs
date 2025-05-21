@@ -2,6 +2,7 @@
 title: "Breaking change: 'libintl' package removed from Alpine images"
 description: Learn about the breaking change in containers where the 'libintl' package was removed from Alpine container images.
 ms.date: 07/11/2023
+ms.topic: concept-article
 ---
 # 'libintl' package removed from Alpine images
 

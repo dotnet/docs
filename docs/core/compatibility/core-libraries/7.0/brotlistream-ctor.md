@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: BrotliStream no longer allows undefined CompressionLevel values"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the BrotliStream constructors no longer allow undefined CompressionLevel values.
 ms.date: 11/18/2022
+ms.topic: article
 ---
 # BrotliStream no longer allows undefined CompressionLevel values
 

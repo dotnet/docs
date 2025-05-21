@@ -3,6 +3,7 @@ title: "Breaking change: Kestrel: Default supported TLS protocol versions change
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Kestrel: Default supported TLS protocol versions changed"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.topic: concept-article
 ---
 # Kestrel: Default supported TLS protocol versions changed
 

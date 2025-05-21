@@ -2,6 +2,7 @@
 title: "Breaking change: 'ca-certificates' package removed from Alpine images"
 description: Learn about the breaking change in containers where the 'ca-certificates' package was removed from Alpine container images.
 ms.date: 08/01/2023
+ms.topic: concept-article
 ---
 # 'ca-certificates' package removed from Alpine images
 

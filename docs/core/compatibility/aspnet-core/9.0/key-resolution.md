@@ -2,6 +2,7 @@
 title: "Breaking change: DefaultKeyResolution.ShouldGenerateNewKey has altered meaning"
 description: Learn about the breaking change in ASP.NET Core 9.0 where DefaultKeyResolution.ShouldGenerateNewKey has a slightly altered meaning.
 ms.date: 04/01/2024
+ms.topic: concept-article
 ---
 # DefaultKeyResolution.ShouldGenerateNewKey has altered meaning
 

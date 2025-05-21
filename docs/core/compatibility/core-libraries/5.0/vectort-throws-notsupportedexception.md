@@ -2,6 +2,7 @@
 title: "Breaking change: Vector<T> throws NotSupportedException"
 description: Learn about the .NET 5 breaking change in core .NET libraries where Vector<T> always throws an exception for unsupported type parameters.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Vector\<T> always throws NotSupportedException for unsupported types
 

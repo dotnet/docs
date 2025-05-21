@@ -2,6 +2,7 @@
 title: "Breaking change: ASPNET-prefixed environment variable precedence"
 description: Learn about the breaking change in ASP.NET Core 7.0 where ASPNET-prefixed environment variables now have the lowest precedence for WebApplicationBuilder.
 ms.date: 12/02/2022
+ms.topic: concept-article
 ---
 # ASPNET-prefixed environment variable precedence
 

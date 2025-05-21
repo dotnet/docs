@@ -3,6 +3,7 @@ title: "Breaking change: C# 14 overload resolution with span parameters"
 description: Learn about the .NET 10 breaking change in core .NET libraries where overloads with span parameters are applicable in more scenarios.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 # C# 14 overload resolution with span parameters
 

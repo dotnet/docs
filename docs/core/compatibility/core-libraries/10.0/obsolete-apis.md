@@ -4,6 +4,7 @@ titleSuffix: ""
 description: Learn about the APIs that have been marked as obsolete in .NET 10 with a custom diagnostic ID.
 ms.date: 03/28/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 10)
 

@@ -2,6 +2,7 @@
 title: "Breaking change: Middleware types with multiple constructors"
 description: Learn about the breaking change in ASP.NET Core 9 where having multiple constructors in a middleware type can cause an exception at run time.
 ms.date: 11/6/2024
+ms.topic: concept-article
 ---
 
 # Middleware types with multiple constructors

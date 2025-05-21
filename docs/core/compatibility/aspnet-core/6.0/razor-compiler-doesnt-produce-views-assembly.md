@@ -3,6 +3,7 @@ title: "Breaking change: Razor: Compiler now produces a single assembly"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the Razor compiler no longer uses a two-step compilation process to produce two separate assemblies."
 no-loc: [ Razor ]
 ms.date: 04/08/2021
+ms.topic: concept-article
 ---
 # Razor: Compiler no longer produces a Views assembly
 

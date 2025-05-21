@@ -3,6 +3,7 @@ title: "Breaking change: PreserveCompilationContext not configured by default"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where the PreserveCompilationContext property is no longer configured by default."
 no-loc: [ Razor ]
 ms.date: 04/22/2021
+ms.topic: concept-article
 ---
 # PreserveCompilationContext not configured by default
 

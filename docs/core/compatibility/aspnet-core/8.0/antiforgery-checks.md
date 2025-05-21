@@ -2,6 +2,7 @@
 title: "Breaking change: IFormFile parameters require anti-forgery checks"
 description: Learn about the breaking change in ASP.NET Core 8.0 where minimal APIs that consume IFormFile or IFormFileCollection parameters require anti-forgery checks.
 ms.date: 12/05/2023
+ms.topic: concept-article
 ---
 # Minimal APIs: IFormFile parameters require anti-forgery checks
 

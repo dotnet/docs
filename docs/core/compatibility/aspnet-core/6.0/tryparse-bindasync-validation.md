@@ -2,6 +2,7 @@
 title: "Breaking change: TryParse and BindAsync methods are validated"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where `TryParse` and `BindAsync` methods on parameter types for `Map*` methods are validated at startup."
 ms.date: 09/22/2021
+ms.topic: concept-article
 ---
 # TryParse and BindAsync methods are validated
 

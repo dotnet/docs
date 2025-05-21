@@ -2,6 +2,7 @@
 title: "Breaking change: Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed"
 description: Learn about the breaking change in ASP.NET Core 7.0 where event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed.
 ms.date: 03/23/2022
+ms.topic: concept-article
 ---
 
 # Event IDs for some Microsoft.AspNetCore.Mvc.Core log messages changed

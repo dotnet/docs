@@ -3,6 +3,7 @@ title: "Breaking change: Razor: Logging ID changes"
 description: "Learn about the breaking change in ASP.NET Core 6.0 where some Razor pages logging IDs were changed."
 no-loc: [ Razor ]
 ms.date: 09/01/2021
+ms.topic: concept-article
 ---
 # Razor: Logging ID changes
 

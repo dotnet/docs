@@ -4,6 +4,7 @@ description: Learn about the breaking change in containers where the .NET Monito
 ms.date: 12/4/2024
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/43379
+ms.topic: article
 ---
 
 # .NET Monitor images simplified to version-only tags

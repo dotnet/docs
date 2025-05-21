@@ -2,6 +2,7 @@
 title: "Breaking change: FileStream locks files with shared lock on Unix"
 description: Learn about the .NET 6 breaking change where FileStream.Lock now locks files with a read lock when they're opened with read permissions on Unix.
 ms.date: 10/15/2021
+ms.topic: concept-article
 ---
 # FileStream locks files with shared lock on Unix
 

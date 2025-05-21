@@ -2,6 +2,7 @@
 title: "Breaking change: Tracking linked cache entries"
 description: Learn about the .NET 7 breaking change in .NET where MemoryCache no longer tracks linked cache entries by default.
 ms.date: 10/13/2022
+ms.topic: concept-article
 ---
 # Tracking linked cache entries
 

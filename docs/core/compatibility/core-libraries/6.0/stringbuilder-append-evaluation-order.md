@@ -2,6 +2,7 @@
 title: "Breaking change: New StringBuilder.Append overloads"
 description: Learn about the .NET 6 breaking change where new overloads were added to StringBuilder.Append and StringBuilder.AppendLine that may result in different run-time behavior.
 ms.date: 10/14/2021
+ms.topic: concept-article
 ---
 # StringBuilder.Append overloads and evaluation order
 

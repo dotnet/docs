@@ -3,6 +3,7 @@ title: "Breaking change: LDAP DirectoryControl parsing is now more stringent"
 description: Learn about the .NET 10 breaking change in core .NET libraries where LDAP DirectoryControl parsing is now more stringent.
 ms.date: 01/30/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # LDAP DirectoryControl parsing is now more stringent

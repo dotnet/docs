@@ -2,6 +2,7 @@
 title: "Breaking change: Older framework versions dropped from packages"
 description: Learn about the .NET 6 breaking change in core .NET libraries where older framework versions have been dropped from the core libraries packages.
 ms.date: 06/23/2021
+ms.topic: concept-article
 ---
 # Older framework versions dropped from package
 

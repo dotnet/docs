@@ -2,6 +2,7 @@
 title: "Breaking change: Conditional string evaluation in Debug methods"
 description: Learn about the .NET 6 breaking change where strings are conditionally evaluated in Debug.Assert, Debug.WriteIf, and Debug.WriteLineIf.
 ms.date: 10/15/2021
+ms.topic: concept-article
 ---
 # Conditional string evaluation in Debug methods
 

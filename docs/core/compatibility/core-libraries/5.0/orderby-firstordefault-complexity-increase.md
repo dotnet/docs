@@ -2,6 +2,7 @@
 title: "Breaking change: Complexity of LINQ OrderBy.First{OrDefault} increased"
 description: Learn about the .NET 5 breaking change in core .NET libraries where the implementation of OrderBy.First has changed.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # Complexity of LINQ OrderBy.First{OrDefault} increased
 

@@ -2,6 +2,7 @@
 title: "Breaking change: CA1831: Use AsSpan instead of Range-based indexers for string"
 description: Learn about the breaking change in .NET 5 caused by the enablement of code analysis rule CA1831.
 ms.date: 08/21/2020
+ms.topic: concept-article
 ---
 # Warning CA1831: Use AsSpan instead of Range-based indexers for string
 

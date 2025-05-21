@@ -3,6 +3,7 @@ title: "Breaking change: .NET 6 obsoletions with non-default diagnostic IDs"
 titleSuffix: ""
 description: Learn about the .NET 6 breaking change in core .NET libraries where some APIs have been marked as obsolete with a custom diagnostic ID.
 ms.date: 09/07/2021
+ms.topic: concept-article
 ---
 # API obsoletions with non-default diagnostic IDs (.NET 6)
 

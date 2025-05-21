@@ -2,6 +2,7 @@
 title: "Breaking change: LastIndexOf has improved handling of empty search strings"
 description: Learn about the .NET 5 breaking change in core .NET libraries where LastIndexOf and related APIs now return correct values when searching for a zero-length substring.
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # LastIndexOf has improved handling of empty search strings
 

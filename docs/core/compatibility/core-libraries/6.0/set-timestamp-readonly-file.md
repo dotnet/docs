@@ -2,6 +2,7 @@
 title: "Breaking change: Set timestamp on read-only file on Windows"
 description: Learn about the .NET 6 servicing release breaking change where you can now set the timestamp on a read-only file on Windows.
 ms.date: 01/11/2022
+ms.topic: concept-article
 ---
 # Set timestamp on read-only file on Windows
 

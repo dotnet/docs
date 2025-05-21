@@ -3,6 +3,7 @@ title: "Breaking change: Kestrel: Configuration changes at run time detected by 
 description: "Learn about the breaking change in ASP.NET Core 5.0 titled Kestrel: Configuration changes at run time detected by default"
 ms.author: scaddie
 ms.date: 10/01/2020
+ms.topic: concept-article
 ---
 # Kestrel: Configuration changes at run time detected by default
 

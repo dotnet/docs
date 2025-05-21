@@ -3,6 +3,7 @@ title: "Breaking change: MacCatalyst version normalization"
 description: Learn about the .NET 10 breaking change in core .NET libraries where MacCatalyst version components are normalized.
 ms.date: 01/01/2025
 ai-usage: ai-assisted
+ms.topic: concept-article
 ---
 
 # MacCatalyst version normalization

@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: DateTime addition methods precision change"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the precision of the value that's added in DateTime addition methods has increased.
 ms.date: 02/01/2023
+ms.topic: article
 ---
 # DateTime addition methods precision change
 

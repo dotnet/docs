@@ -2,6 +2,7 @@
 title: ".NET 7 breaking change: Reflection invoke API exception changes"
 description: Learn about the .NET 7 breaking change in core .NET libraries where the exceptions thrown by reflection invoke APIs have changed.
 ms.date: 04/29/2022
+ms.topic: article
 ---
 # Changes to reflection invoke API exceptions
 

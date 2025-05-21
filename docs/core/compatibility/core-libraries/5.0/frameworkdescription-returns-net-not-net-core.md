@@ -2,6 +2,7 @@
 title: "Breaking change: FrameworkDescription's value is .NET instead of .NET Core"
 description: Learn about the .NET 5 breaking change in core .NET libraries where RuntimeInformation.FrameworkDescription now returns ".NET" instead of ".NET Core".
 ms.date: 11/01/2020
+ms.topic: concept-article
 ---
 # FrameworkDescription's value is .NET instead of .NET Core
 

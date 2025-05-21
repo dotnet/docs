@@ -4,6 +4,7 @@ titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core 3.0 and 3.1.
 ms.date: 11/03/2020
 ms.author: scaddie
+ms.topic: article
 ---
 # ASP.NET Core breaking changes for versions 3.0 and 3.1
 

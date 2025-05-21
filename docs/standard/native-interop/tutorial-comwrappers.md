@@ -477,7 +477,6 @@ Aside from the lifetime, type system, and functional features that are discussed
 
 [doc_comapartments]:/windows/win32/com/processes--threads--and-apartments
 [doc_comsecurity]:/windows/win32/com/security-in-com
-[doc_idynamicinterfacecastable]:https://devblogs.microsoft.com/dotnet/improvements-in-native-code-interop-in-net-5-0/#idynamicinterfacecastable
 [doc_garbage_collection]:../garbage-collection/index.md
 [doc_globalinterfacetable]:/windows/win32/com/when-to-use-the-global-interface-table
 [doc_impliunknown]:/windows/win32/com/using-and-implementing-iunknown

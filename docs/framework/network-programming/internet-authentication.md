@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "NetworkCredential class, about NetworkCredential class"
   - "client authentication, classes for authentication"
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
+ms.topic: article
 ---
 # Internet Authentication
 

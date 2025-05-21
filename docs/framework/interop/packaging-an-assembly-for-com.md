@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "COM interop, exposing COM components"
   - "Reqasm.exe"
 ms.assetid: 39dc55aa-f2a1-4093-87bb-f1c0edb6e761
+ms.topic: concept-article
 ---
 # Packaging a .NET Framework Assembly for COM
 

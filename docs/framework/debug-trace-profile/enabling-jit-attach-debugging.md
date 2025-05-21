@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "JIT-attach debugging"
   - "debugging [.NET Framework], JIT-attach debugging"
 ms.assetid: f91fc5f7-de5a-4f23-b6ac-f450e63c662e
+ms.topic: concept-article
 ---
 # Enabling JIT-Attach Debugging
 

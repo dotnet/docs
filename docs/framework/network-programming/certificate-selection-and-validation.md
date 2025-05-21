@@ -3,6 +3,7 @@ title: "Certificate Selection and Validation"
 description: Find out about  several ways System.Net classes offer to select and validate certificates for SSL/TLS connections.
 ms.date: "03/30/2017"
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
+ms.topic: how-to
 ---
 # Certificate Selection and Validation
 

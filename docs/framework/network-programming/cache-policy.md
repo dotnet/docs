@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "content cache policies"
   - "expired content"
 ms.assetid: 1a7e04ec-7872-41c2-96c6-52566dcb412b
+ms.topic: article
 ---
 # Cache Policy
 

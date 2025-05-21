@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "marshaling, platform invoke"
   - "sample applications [.NET Framework], marshalling strings"
 ms.assetid: e21b078b-70fb-4905-be26-c097ab2433ff
+ms.topic: concept-article
 ---
 # Marshalling Strings
 

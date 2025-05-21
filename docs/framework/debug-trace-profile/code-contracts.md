@@ -9,6 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - "Code contracts"
 ms.assetid: 84526045-496f-489d-8517-a258cf76f040
+ms.topic: how-to
 ---
 # Code contracts (.NET Framework)
 

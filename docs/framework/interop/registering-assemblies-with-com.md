@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, registering assemblies"
   - "registering assemblies"
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
+ms.topic: concept-article
 ---
 # Registering Assemblies with COM
 

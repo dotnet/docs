@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "side-by-side execution"
 ms.assetid: 649f1342-766b-49e6-a90d-5b019a751e11
+ms.topic: article
 ---
 # Side-by-Side Execution in the .NET Framework
 

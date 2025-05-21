@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "Internet, security"
   - "security [.NET Framework], Internet"
   - "permissions [.NET Framework], Internet"
+ms.topic: best-practice
 ---
 # Transport Layer Security (TLS) best practices with .NET Framework
 

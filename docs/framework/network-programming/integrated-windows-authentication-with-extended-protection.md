@@ -3,6 +3,7 @@ description: "Learn more about: Integrated Windows Authentication with Extended 
 title: "Integrated Windows Authentication with Extended Protection"
 ms.date: "03/30/2017"
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
+ms.topic: article
 ---
 # Integrated Windows Authentication with Extended Protection
 

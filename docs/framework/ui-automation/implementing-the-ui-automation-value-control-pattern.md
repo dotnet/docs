@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "control patterns, Value"
   - "UI Automation, Value control pattern"
   - "Value control pattern"
+ms.topic: concept-article
 ---
 # Implementing the UI Automation Value Control Pattern
 

@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "platform invoke"
   - "DLL functions"
 ms.assetid: eca7606e-ebfb-4f47-b8d9-289903fdc045
+ms.topic: how-to
 ---
 # Consuming Unmanaged DLL Functions
 

@@ -3,6 +3,7 @@ title: "Mitigation: WPF Window Rendering"
 description: Learn about the impact and mitigation for WPF window rendering in .NET Framework 4.6 running on Windows 8 or later.
 ms.date: "03/30/2017"
 ms.assetid: 28ed6bf8-141b-4b73-a4e3-44a99fae5084
+ms.topic: article
 ---
 # Mitigation: WPF Window Rendering
 

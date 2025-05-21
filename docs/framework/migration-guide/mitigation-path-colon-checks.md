@@ -3,6 +3,7 @@ title: "Mitigation: Path Colon Checks"
 description: Learn about the changes made in .NET Framework 4.6.2 to support checks for the proper drive separator syntax (the colon).
 ms.date: "03/30/2017"
 ms.assetid: a0bb52de-d279-419d-8f23-4b12d1a3f36e
+ms.topic: article
 ---
 # Mitigation: Path Colon Checks
 

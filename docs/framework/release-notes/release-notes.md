@@ -2,6 +2,7 @@
 title: .NET Framework release information
 description: Improvements in the .NET Framework servicing cumulative updates.
 ms.date: 01/28/2025
+ms.topic: release-notes
 ---
 # .NET Framework release notes
 

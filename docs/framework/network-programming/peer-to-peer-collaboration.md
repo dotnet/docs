@@ -3,6 +3,7 @@ description: "Learn more about: Peer-to-peer collaboration"
 title: "Peer-to-Peer Collaboration"
 ms.date: "03/30/2017"
 ms.assetid: b6216d88-bccb-4a59-9f1c-9f751708e811
+ms.topic: article
 ---
 # Peer-to-peer collaboration
 

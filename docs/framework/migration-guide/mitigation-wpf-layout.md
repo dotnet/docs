@@ -3,6 +3,7 @@ title: "Mitigation: WPF Layout"
 description: Learn how to mitigate issues that result from a change in the WPF controls layout, like the placement of an object moving by one pixel.
 ms.date: "03/30/2017"
 ms.assetid: 805ffd7f-8d1e-427e-a648-601ca8ec37a5
+ms.topic: article
 ---
 # Mitigation: WPF Layout
 

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "host protection attributes"
   - "HostProtectionAttribute class, reliability"
 ms.assetid: 7dfa36b4-e773-4c75-a3ff-ff1af3ce4c4f
+ms.topic: article
 ---
 # SQL Server Programming and Host Protection Attributes
 

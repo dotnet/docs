@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "minimum freshness policy"
   - "age of cached resources"
 ms.assetid: 6567d451-ecec-496c-95a3-a415b99ba52a
+ms.topic: article
 ---
 # Cache Policy Interaction—Maximum Age and Minimum Freshness
 

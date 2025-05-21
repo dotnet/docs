@@ -3,6 +3,7 @@ description: "Learn more about: PNRP Clouds"
 title: "PNRP Clouds"
 ms.date: "03/30/2017"
 ms.assetid: a82e2bf1-62ab-4c2d-83f3-3217a6aead2e
+ms.topic: article
 ---
 # PNRP Clouds
 

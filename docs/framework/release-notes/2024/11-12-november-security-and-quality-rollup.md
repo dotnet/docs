@@ -2,6 +2,7 @@
 title: November 2024 security and quality rollup
 description: Learn about the improvements in the .NET Framework November 2024 security and quality rollup.
 ms.date: 11/12/2024
+ms.topic: article
 ---
 # November 2024 security and quality rollup
 

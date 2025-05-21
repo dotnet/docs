@@ -3,6 +3,7 @@ title: "Mitigation: X509CertificateClaimSet.FindClaims Method"
 description: Learn how the X509CertificateClaimSet.FindClaims method has changed for apps that target .NET Framework 4.6.1.
 ms.date: "03/30/2017"
 ms.assetid: ee356e3b-f932-48f5-875a-5e42340bee63
+ms.topic: article
 ---
 # Mitigation: X509CertificateClaimSet.FindClaims Method
 

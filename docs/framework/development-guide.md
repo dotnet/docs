@@ -5,6 +5,7 @@ ms.date: 08/23/2022
 helpviewer_keywords:
   - ".NET Framework, development guide"
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
+ms.topic: article
 ---
 # .NET Framework development guide
 

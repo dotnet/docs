@@ -4,6 +4,7 @@ description: Learn about key features in each version of .NET Framework, includi
 ms.date: 04/24/2024
 helpviewer_keywords:
   - "versions, .NET Framework"
+ms.topic: article
 ---
 # .NET Framework versions and dependencies
 

@@ -2,6 +2,7 @@
 title: Repair the .NET Framework
 description: Learn how to repair the .NET Framework
 ms.date: 08/03/2017
+ms.topic: article
 ---
 
 # Repair .NET Framework

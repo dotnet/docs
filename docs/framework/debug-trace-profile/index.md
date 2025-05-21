@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "troubleshooting applications [.NET Framework]"
   - "application development [.NET Framework], profiling"
 ms.assetid: 4a04863e-2475-46f4-bc3f-3c11510c2a4b
+ms.topic: article
 ---
 # Debugging, tracing, and profiling
 

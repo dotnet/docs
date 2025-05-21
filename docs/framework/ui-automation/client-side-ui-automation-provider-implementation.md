@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "client-side UI Automation provider, implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
+ms.topic: article
 ---
 # Client-Side UI Automation Provider Implementation
 

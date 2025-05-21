@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "emitting dynamic assemblies,partial trust scenarios"
   - "dynamic assemblies, security"
 ms.assetid: 0f8bf8fa-b993-478f-87ab-1a1a7976d298
+ms.topic: article
 ---
 # Security Issues in Reflection Emit
 

@@ -3,6 +3,7 @@ title: "Mitigation: Pool Blocking Period"
 description: Learn how to mitigate issues caused by the connection pool blocking period being removed for connections to Azure SQL databases.
 ms.date: "03/30/2017"
 ms.assetid: 92d2de20-79be-4df1-b182-144143a8866a
+ms.topic: article
 ---
 # Mitigation: Pool Blocking Period
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "dock control pattern"
   - "UI Automation, dock control pattern"
 ms.assetid: ea3d2212-7c8e-4dd7-bf08-73141ca2d4fb
+ms.topic: concept-article
 ---
 # Implementing the UI Automation Dock Control Pattern
 

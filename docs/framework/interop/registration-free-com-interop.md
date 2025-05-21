@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "object activation"
   - "registration-free COM interop, about registration-free COM interop"
 ms.assetid: 90f308b9-82dc-414a-bce1-77e0155e56bd
+ms.topic: article
 ---
 # Registration-Free COM Interop
 

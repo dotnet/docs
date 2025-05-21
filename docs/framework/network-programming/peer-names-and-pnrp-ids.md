@@ -3,6 +3,7 @@ description: "Learn more about: Peer Names and PNRP IDs"
 title: "Peer Names and PNRP IDs"
 ms.date: "03/30/2017"
 ms.assetid: afa538e8-948f-4a98-aa9f-305134004115
+ms.topic: article
 ---
 # Peer Names and PNRP IDs
 

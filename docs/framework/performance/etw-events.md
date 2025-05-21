@@ -6,6 +6,7 @@ helpviewer_keywords:
   - ".NET Framework ETW events"
   - "ETW events in the .NET Framework"
 ms.assetid: d186276f-6afb-4dfd-bf3c-4251edc2c299
+ms.topic: article
 ---
 # ETW Events in the .NET Framework
 

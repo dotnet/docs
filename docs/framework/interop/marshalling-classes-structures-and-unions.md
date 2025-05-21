@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "data marshalling, platform invoke"
   - "marshaling, platform invoke"
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
+ms.topic: concept-article
 ---
 # Marshalling Classes, Structures, and Unions
 

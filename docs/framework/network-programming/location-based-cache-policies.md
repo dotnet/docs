@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "Cache Or Next Cache Only policy"
   - "Refresh policy"
 ms.assetid: e41d7f1a-0a6a-4dee-97d1-c6a8b6a07fc2
+ms.topic: article
 ---
 # Location-Based Cache Policies
 

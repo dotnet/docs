@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "classes [.NET Framework], authentication"
   - "client authentication, NTLM"
 ms.assetid: 9ef65560-f596-4469-bcce-f4d5407b55cd
+ms.topic: article
 ---
 # NTLM and Kerberos Authentication
 

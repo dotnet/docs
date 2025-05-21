@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "interop marshalling, blittable types"
   - "blittable types, interop marshalling"
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
+ms.topic: article
 ---
 # Blittable and Non-Blittable Types
 

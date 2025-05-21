@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "best practices, data requests"
   - "receiving data, best practices"
 ms.assetid: 716decc6-5952-47b7-9c5a-ba6fc5698684
+ms.topic: best-practice
 ---
 # Best practices for System.Net classes
 

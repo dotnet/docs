@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, platform invoke"
   - "DLL functions"
 ms.assetid: 15926806-f0b7-487e-93a6-4e9367ec689f
+ms.topic: article
 ---
 # Platform Invoke Examples
 

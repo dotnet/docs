@@ -3,6 +3,7 @@ description: "Learn more about: About the System.Net.PeerToPeer.Collaboration Na
 title: "About the System.Net.PeerToPeer.Collaboration Namespace"
 ms.date: "03/30/2017"
 ms.assetid: b5d8c1c1-6844-4947-9759-c7f1b564bded
+ms.topic: concept-article
 ---
 # About the System.Net.PeerToPeer.Collaboration Namespace
 

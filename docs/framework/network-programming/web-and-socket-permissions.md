@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "security [.NET Framework], Internet"
   - "positions [.NET Framework], granting"
 ms.assetid: d51ad8cb-03ae-4a51-bfcd-cfcf6b98afa9
+ms.topic: article
 ---
 # Web and Socket Permissions
 

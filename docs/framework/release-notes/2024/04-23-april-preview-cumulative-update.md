@@ -2,6 +2,7 @@
 title: April 2024 cumulative update preview
 description: Learn about the improvements in the .NET Framework April 2024 cumulative update preview.
 ms.date: 04/23/2024
+ms.topic: article
 ---
 # April 2024 cumulative update preview
 

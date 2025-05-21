@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "installing .NET Framework"
   - "installation [.NET Framework]"
 ms.assetid: 7aa8cb72-dee9-4716-ac54-b17b9ae8218f
+ms.topic: concept-article
 ---
 # Reducing System Restarts During .NET Framework 4.5 Installations
 

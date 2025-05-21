@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "UI Automation caching in clients"
   - "caching, UI Automation clients"
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
+ms.topic: concept-article
 ---
 # Caching in UI Automation Clients
 

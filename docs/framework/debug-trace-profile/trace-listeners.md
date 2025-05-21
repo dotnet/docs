@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "tracing [.NET Framework], trace listeners"
   - "logs, trace listeners"
 ms.assetid: 444b0d33-67ea-4c36-9e94-79c50f839025
+ms.topic: how-to
 ---
 # Trace Listeners
 

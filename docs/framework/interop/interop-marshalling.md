@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "interop marshalling"
   - "interop marshalling, about interop marshalling"
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
+ms.topic: article
 ---
 # Interop Marshaling
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - ".NET Framework 4.6.1 retargeting changes"
   - "retargeting changes"
 ms.assetid: 8d575722-4fb6-49a2-8a06-f72d62dc3766
+ms.topic: article
 ---
 # Mitigation: ZipArchiveEntry.FullName Path Separator
 

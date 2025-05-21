@@ -7,6 +7,7 @@ helpviewer_keywords:
   - ".NET Framework, compatibility with earlier versions"
   - ".NET Framework versions, compatibility"
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
+ms.topic: article
 ---
 # Version compatibility
 

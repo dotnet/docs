@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "LoadWithPartialName method"
   - "load-from context"
 ms.assetid: 68d1c539-6a47-4614-ab59-4b071c9d4b4c
+ms.topic: best-practice
 ---
 # Best Practices for Assembly Loading
 

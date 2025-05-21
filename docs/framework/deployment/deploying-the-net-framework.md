@@ -6,6 +6,7 @@ helpviewer_keywords:
   - ".NET Framework, deploying"
   - "deployment [.NET Framework]"
 ms.assetid: 19df26c5-4008-461d-a7d7-18f4506312d2
+ms.topic: concept-article
 ---
 # Deploying the .NET Framework
 

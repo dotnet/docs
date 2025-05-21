@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "marshaling, MsgBox sample"
   - "data marshalling, MsgBox sample"
 ms.assetid: 9e0edff6-cc0d-4d5c-a445-aecf283d9c3a
+ms.topic: article
 ---
 # MsgBox Sample
 

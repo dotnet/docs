@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "source code in multiple languages"
   - "languages, multiple language support by CodeDOM"
 ms.assetid: d077a3e8-bd81-4bdf-b6a3-323857ea30fb
+ms.topic: article
 ---
 # Compile and generate dynamic source code
 

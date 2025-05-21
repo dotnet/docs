@@ -6,6 +6,7 @@ helpviewer_keywords:
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
 ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b
+ms.topic: upgrade-and-migration-article
 ---
 # Migrate to .NET Framework 4.8, 4.7, and 4.6.2
 

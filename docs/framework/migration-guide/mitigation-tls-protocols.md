@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 33f97d13-3022-43da-8b18-cdb5c88df9c2
+ms.topic: article
 ---
 # Mitigation: TLS Protocols
 

@@ -2,6 +2,7 @@
 title: Install .NET Framework on Windows
 description: Learn how to install .NET Framework on Windows 11, Windows 10, and Windows Server. This article also includes information about .NET Framework and unsupported versions of Windows, such as Windows 8, Windows Vista, and Windows XP.
 ms.date: 02/12/2025
+ms.topic: install-set-up-deploy
 ---
 # Install .NET Framework on Windows and Windows Server
 

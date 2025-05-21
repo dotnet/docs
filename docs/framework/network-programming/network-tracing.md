@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "output, network tracing"
   - "method invocations"
 ms.assetid: e993b7c3-087f-45d8-9c02-9dded936d804
+ms.topic: article
 ---
 # Network Tracing in the .NET Framework
 

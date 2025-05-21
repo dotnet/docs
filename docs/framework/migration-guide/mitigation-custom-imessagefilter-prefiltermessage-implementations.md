@@ -3,6 +3,7 @@ title: "Mitigation: Custom IMessageFilter.PreFilterMessage Implementations"
 description: Learn about the custom IMessageFilter.PreFilterMessage implementation included in Windows Forms apps that target .NET Framework 4.6.1 and later.
 ms.date: "03/30/2017"
 ms.assetid: 9cf47c5b-0bb2-45df-9437-61cd7e7c2f4d
+ms.topic: article
 ---
 # Mitigation: Custom IMessageFilter.PreFilterMessage Implementations
 

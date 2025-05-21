@@ -3,6 +3,7 @@ title: "Mitigation: PNG Frames in Icon Objects"
 description: Learn how to configure the behavior of PNG frames in icon objects if the new behavior included in .NET Framework 4.6 and later is undesirable.
 ms.date: "03/30/2017"
 ms.assetid: ca87fefb-7144-4b4e-8832-5a939adbb4b2
+ms.topic: article
 ---
 # Mitigation: PNG Frames in Icon Objects
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "performance [.NET Framework]"
   - "reliability [.NET Framework]"
 ms.assetid: c1676cca-3f1a-41ec-b469-9029566074fc
+ms.topic: article
 ---
 # .NET Framework performance
 

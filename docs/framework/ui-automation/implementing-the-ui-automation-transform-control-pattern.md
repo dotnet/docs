@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Transform control pattern"
   - "UI Automation, Transform control pattern"
 ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
+ms.topic: concept-article
 ---
 # Implementing the UI Automation Transform Control Pattern
 

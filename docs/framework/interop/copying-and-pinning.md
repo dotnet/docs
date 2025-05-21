@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "interop marshalling, copying"
   - "interop marshalling, pinning"
 ms.assetid: 0059f576-e460-4e70-b257-668870e420b8
+ms.topic: concept-article
 ---
 # Copying and Pinning
 

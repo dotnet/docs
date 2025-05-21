@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "code generators"
   - "CodeDOM, graphs"
 ms.assetid: 0444ddf3-c3f6-44ed-a999-f710d9c3e0cf
+ms.topic: concept-article
 ---
 # Use the CodeDOM
 

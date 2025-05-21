@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "Visual C#, creating applications"
   - "client/server applications, Windows applications"
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
+ms.topic: concept-article
 ---
 # Develop client applications with .NET Framework
 

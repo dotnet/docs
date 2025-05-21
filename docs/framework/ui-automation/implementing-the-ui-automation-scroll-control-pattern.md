@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "UI Automation, Scroll control pattern"
   - "control patterns, Scroll"
   - "Scroll control pattern"
+ms.topic: concept-article
 ---
 # Implement the UI Automation scroll control pattern
 

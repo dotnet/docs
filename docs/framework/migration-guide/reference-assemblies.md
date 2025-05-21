@@ -4,6 +4,7 @@ description: "Learn how to reference the .NET Framework Reference Assemblies in 
 ms.date: 04/26/2024
 helpviewer_keywords:
   - ".NET Framework, targeting"
+ms.topic: how-to
 ---
 # Build apps against Microsoft.NETFramework.ReferenceAssemblies
 

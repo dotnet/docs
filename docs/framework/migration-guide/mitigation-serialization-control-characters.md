@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "DataContractJsonSerializer changes"
   - "serialization changes"
 ms.assetid: e065d458-a128-44f2-9f17-66af9d5be954
+ms.topic: article
 ---
 # Mitigation: Serialization of control characters with the DataContractJsonSerializer
 

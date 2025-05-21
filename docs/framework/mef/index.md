@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Managed Extensibility Framework, overview"
   - "MEF, overview"
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
+ms.topic: article
 ---
 
 # Managed Extensibility Framework (MEF)

@@ -3,6 +3,7 @@ title: "Peer Name Resolution Protocol"
 description: Learn about the Peer Name Resolution Protocol (PNRP), a secure, scalable, and dynamic name registration and name resolution protocol.
 ms.date: "03/30/2017"
 ms.assetid: 11940511-c124-4d91-ae31-d4ed6e81ee58
+ms.topic: article
 ---
 # Peer Name Resolution Protocol
 

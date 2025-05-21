@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "DLL functions"
   - "object fields in platform invoke"
 ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
+ms.topic: concept-article
 ---
 
 # Creating Prototypes in Managed Code

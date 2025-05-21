@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: ae275793-857d-4102-9095-b4c2a02d57f4
 author: "BillWagner"
 ms.author: "wiwagn"
+ms.topic: article
 ---
 # .NET Performance Tips
 

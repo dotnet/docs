@@ -7,6 +7,7 @@ helpviewer_keywords:
   - ".NET Framework 1.1, migrating to .NET Framework 4.5"
 ms.assetid: 7ead0cb3-3b19-414a-8417-a1c1fa198d9e
 no-loc: [".config", "MyExecutable.exe", "MyExecutable.exe.config"]
+ms.topic: upgrade-and-migration-article
 ---
 # Migrate from .NET Framework 1.1, 2.0, and 3.5 to .NET Framework 4
 

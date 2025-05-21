@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "control patterns, Invoke"
   - "Invoke control pattern"
 ms.assetid: e5b1e239-49f8-468e-bfec-1fba02ec9ac4
+ms.topic: concept-article
 ---
 # Implementing the UI Automation Invoke Control Pattern
 

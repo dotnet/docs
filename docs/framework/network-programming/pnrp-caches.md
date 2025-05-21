@@ -3,6 +3,7 @@ description: "Learn more about: PNRP Caches"
 title: "PNRP Caches"
 ms.date: "03/30/2017"
 ms.assetid: 270068d9-1b6b-4eb9-9e14-e02326bb88df
+ms.topic: article
 ---
 # PNRP Caches
 

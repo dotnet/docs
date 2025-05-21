@@ -2,6 +2,7 @@
 title: March 2025 cumulative update preview
 description: Learn about the improvements in the .NET Framework March 2025 cumulative update preview.
 ms.date: 03/27/2025
+ms.topic: article
 ---
 # March 2025 cumulative update preview
 

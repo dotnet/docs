@@ -3,6 +3,7 @@ title: "Mitigation: WCF Services and Certificate Authentication"
 description: Learn how to mitigate certificate authentication issues from the changes to the WCF SSL protocol default list in .NET Framework 4.6.
 ms.date: "03/30/2017"
 ms.assetid: ef19c91a-b9df-4bf0-a28e-eb1e99c4bc95
+ms.topic: article
 ---
 # Mitigation: WCF Services and Certificate Authentication
 

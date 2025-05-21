@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b73dd4f4-f2dc-47a2-9425-3896e92321fb
+ms.topic: article
 ---
 # Mitigation: XML Schema Validation
 

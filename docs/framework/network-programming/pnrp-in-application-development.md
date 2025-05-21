@@ -3,6 +3,7 @@ description: "Learn more about: PNRP in Application Development"
 title: "PNRP in Application Development"
 ms.date: "03/30/2017"
 ms.assetid: 265615d6-4423-4b5d-8626-752e456f4f4e
+ms.topic: article
 ---
 # PNRP in Application Development
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "IronPython"
   - "DLR"
   - "IronRuby"
+ms.topic: concept-article
 ---
 # Dynamic language runtime overview
 

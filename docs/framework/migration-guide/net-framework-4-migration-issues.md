@@ -6,6 +6,7 @@ helpviewer_keywords:
   - ".NET Framework 4, migration"
   - "application compatibility"
 ms.assetid: df478548-8c05-4de2-8ba7-adcdbe1c2a60
+ms.topic: article
 ---
 # .NET Framework 4 migration issues
 

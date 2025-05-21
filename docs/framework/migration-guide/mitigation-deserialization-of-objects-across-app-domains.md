@@ -3,6 +3,7 @@ title: "Mitigation: Deserialization of Objects Across App Domains"
 description: Learn how to diagnose and mitigate an issue where an attempt to deserialize objects in the logical call context across app domains throws an exception.
 ms.date: "03/30/2017"
 ms.assetid: 30c2d66c-04a8-41a5-ad31-646b937f61b5
+ms.topic: article
 ---
 # Mitigation: Deserialization of Objects Across App Domains
 

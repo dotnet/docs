@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "JIT compilation, 64-bit"
   - "RyuJIT compiler"
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
+ms.topic: article
 ---
 # Mitigation: New 64-bit JIT Compiler
 

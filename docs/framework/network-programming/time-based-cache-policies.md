@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "minimum freshness policy"
   - "age of cached resources"
 ms.assetid: 74f0bcaf-5c95-40c1-9967-f3bbf1d2360a
+ms.topic: article
 ---
 # Time-Based Cache Policies
 

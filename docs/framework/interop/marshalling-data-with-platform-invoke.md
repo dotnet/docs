@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "data marshalling, platform invoke"
   - "marshaling, platform invoke"
 ms.assetid: dc5c76cf-7b12-406f-b79c-d1a023ec245d
+ms.topic: concept-article
 ---
 # Marshalling Data with Platform Invoke
 

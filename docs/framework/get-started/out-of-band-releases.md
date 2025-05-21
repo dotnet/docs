@@ -3,6 +3,7 @@ title: .NET Framework and Out-of-Band Releases
 description: Learn about .NET and out-of-band releases. New features are released out of band (OOB) to improve cross-platform development or to introduce new functionality.
 ms.date: 10/10/2018
 ms.assetid: 721f10fa-3189-4124-a00d-56ddabd889b3
+ms.topic: article
 ---
 # .NET Framework and out-of-band releases
 

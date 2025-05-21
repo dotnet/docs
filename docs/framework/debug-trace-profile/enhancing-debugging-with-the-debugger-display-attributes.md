@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "display attributes for debugger"
   - "DebuggerBrowsableAttribute attribute"
 ms.assetid: 72bb7aa9-459b-42c4-9163-9312fab4c410
+ms.topic: concept-article
 ---
 # Enhancing Debugging with the Debugger Display Attributes
 

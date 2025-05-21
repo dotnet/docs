@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "text, network tracing output"
   - "includehex"
 ms.assetid: ad22b4b8-00af-4778-9cca-cb609ce1f8ff
+ms.topic: concept-article
 ---
 # Interpreting Network Tracing
 

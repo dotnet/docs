@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "performance,.NET Framework applications"
   - "performance monitoring,counters"
 ms.assetid: 6888f9be-c65b-4b03-a07b-df7ebdee2436
+ms.topic: article
 ---
 # Performance Counters and In-Process Side-By-Side Applications
 

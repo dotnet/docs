@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "network resources, caching"
   - "Internet, caching"
 ms.assetid: fc258a40-f370-434f-ae09-4a8cb11ddaeb
+ms.topic: article
 ---
 # Cache Management for Network Applications
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "CLR ETW events, logging"
 ms.assetid: ce13088e-3095-4f0e-9f6b-fad30bbd3d41
+ms.topic: how-to
 ---
 # Controlling .NET Framework Logging
 

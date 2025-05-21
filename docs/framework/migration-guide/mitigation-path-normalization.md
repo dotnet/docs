@@ -3,6 +3,7 @@ title: "Mitigation: Path Normalization"
 description: Learn how path normalization in .NET Framework has changed beginning with apps that target .NET Framework 4.6.2.
 ms.date: "03/30/2017"
 ms.assetid: 158d47b1-ba6d-4fa6-8963-a012666bdc31
+ms.topic: article
 ---
 # Mitigation: Path Normalization
 

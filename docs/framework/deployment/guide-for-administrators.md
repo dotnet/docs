@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "administrator's guide, deploying .NET Framework"
   - "deployment [.NET Framework], administrator's guide"
 ms.assetid: bee14036-0436-44e8-89f5-4bc61317977a
+ms.topic: article
 ---
 # .NET Framework Deployment Guide for Administrators
 

@@ -2,6 +2,7 @@
 title: .NET Framework installation guide
 description: Learn about how to install the .NET Framework on Windows, and which versions of Windows support .NET Framework.
 ms.date: 02/14/2025
+ms.topic: article
 ---
 # Installation guide
 

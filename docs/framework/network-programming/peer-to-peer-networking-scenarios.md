@@ -3,6 +3,7 @@ description: "Learn more about: Peer-to-Peer Networking Scenarios"
 title: "Peer-to-Peer Networking Scenarios"
 ms.date: "03/30/2017"
 ms.assetid: d23b1a64-2e08-4014-882a-c1dd766bdcc2
+ms.topic: article
 ---
 # Peer-to-Peer Networking Scenarios
 

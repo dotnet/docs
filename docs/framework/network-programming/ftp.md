@@ -6,6 +6,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "FTP"
 ms.assetid: 9b43f8b4-89d7-46a7-89fc-71aca916dd32
+ms.topic: article
 ---
 # FTP
 

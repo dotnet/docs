@@ -5,6 +5,7 @@ ms.date: "09/07/2017"
 helpviewer_keywords: 
   - "COM interop, data marshalling"
   - "marshaling data, COM interop"
+ms.topic: concept-article
 ---
 # Marshalling Data with COM Interop
 

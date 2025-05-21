@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "installing .NET Framework"
   - "installation [.NET Framework]"
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
+ms.topic: install-set-up-deploy
 ---
 # Install .NET Framework for developers
 

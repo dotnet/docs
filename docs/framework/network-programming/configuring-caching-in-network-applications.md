@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "cache [.NET Framework], configuring"
 ms.assetid: 3f694a1c-de5d-47cf-a6eb-cfc369fb8a9f
+ms.topic: concept-article
 ---
 # Configuring Caching in Network Applications
 

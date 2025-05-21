@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "control patterns, for UI Automation clients"
   - "UI Automation, clients, control patterns for"
 ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
+ms.topic: article
 ---
 # Control Pattern Mapping for UI Automation Clients
 

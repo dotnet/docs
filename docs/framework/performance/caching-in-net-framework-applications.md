@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "caching [.NET Framework]"
   - "caching [ASP.NET]"
 ms.assetid: c4b47ee0-4b82-4124-9bce-818088385e34
+ms.topic: concept-article
 ---
 # Caching in .NET Framework Applications
 

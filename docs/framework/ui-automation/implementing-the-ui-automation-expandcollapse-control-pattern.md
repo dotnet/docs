@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "ExpandCollapse control pattern"
   - "control patterns, ExpandCollapse"
 ms.assetid: 1dbabb8c-0d68-47c1-a35e-1c01cb01af26
+ms.topic: concept-article
 ---
 # Implementing the UI Automation ExpandCollapse Control Pattern
 

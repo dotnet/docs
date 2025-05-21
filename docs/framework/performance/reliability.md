@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "writing reliable code"
   - "code, reliability"
 ms.assetid: 294aa306-0afe-4cbe-b397-86ba9f1860f8
+ms.topic: article
 ---
 # Reliability
 

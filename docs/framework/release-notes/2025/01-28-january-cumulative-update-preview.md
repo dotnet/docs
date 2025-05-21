@@ -2,6 +2,7 @@
 title: January 2025 cumulative update preview
 description: Learn about the improvements in the .NET Framework January 2025 cumulative update preview.
 ms.date: 01/28/2025
+ms.topic: article
 ---
 # January 2025 cumulative update preview
 

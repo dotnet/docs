@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "common language runtime, about"
   - "common language runtime, overview"
 ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
+ms.topic: concept-article
 ---
 # Overview of .NET Framework
 

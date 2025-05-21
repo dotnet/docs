@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "platform invoke, attribute fields"
   - "attribute fields in platform invoke, EntryPoint"
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
+ms.topic: concept-article
 ---
 # Specifying an Entry Point
 

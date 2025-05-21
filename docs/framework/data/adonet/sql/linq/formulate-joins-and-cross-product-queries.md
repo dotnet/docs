@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d8072ede-0521-4670-9bec-1778ceeb875b
+ms.topic: article
 ---
 # Formulate Joins and Cross-Product Queries
 

@@ -3,6 +3,7 @@ description: "Learn more about: Samples"
 title: "Samples"
 ms.date: "03/30/2017"
 ms.assetid: 3fcc0c4a-b952-4cfe-9e09-0c0cf874ba2c
+ms.topic: article
 ---
 # Samples
 

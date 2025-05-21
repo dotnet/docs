@@ -3,6 +3,7 @@ title: "Bulk Copy Operations in SQL Server"
 description: Learn to use the SqlBulkCopy class to write managed code solutions that bulk copy large files into tables or views in SQL Server databases. 
 ms.date: "03/30/2017"
 ms.assetid: 83a7a0d2-8018-4354-97b9-0b1d99f8342b
+ms.topic: article
 ---
 # Bulk Copy Operations in SQL Server
 

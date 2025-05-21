@@ -3,6 +3,7 @@ description: "Learn more about: Stored Procedures"
 title: "Stored Procedures"
 ms.date: "03/30/2017"
 ms.assetid: 4d23dd7a-a85f-44ff-a717-af7d0950c0fc
+ms.topic: article
 ---
 # Stored Procedures
 

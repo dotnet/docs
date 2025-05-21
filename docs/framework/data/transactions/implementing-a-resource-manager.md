@@ -3,6 +3,7 @@ title: "Implementing a Resource Manager"
 description: Implement a resource manager in .NET. A resource manager manages resources used in transactions. A transaction manager coordinates resource manager actions.
 ms.date: "03/30/2017"
 ms.assetid: d5c153f6-4419-49e3-a5f1-a50ae4c81bf3
+ms.topic: concept-article
 ---
 # Implementing a Resource Manager
 

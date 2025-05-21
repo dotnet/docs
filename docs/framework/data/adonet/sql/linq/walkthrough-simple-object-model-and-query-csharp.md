@@ -3,6 +3,7 @@ title: "Walkthrough: Simple Object Model and Query (C#)"
 description: Follow this walkthrough to create an entity class that models a table in a sample database. Then create a simple query to list customers in a certain location.
 ms.date: "03/30/2017"
 ms.assetid: 419961cc-92d6-45f5-ae8a-d485bdde3a37
+ms.topic: article
 ---
 # Walkthrough: Simple Object Model and Query (C#)
 

@@ -2,6 +2,7 @@
 description: "Learn more about FILESTREAM data. The FILESTREAM storage attribute is for binary (BLOB) data stored in a `varbinary(max)` column."
 title: "FILESTREAM Data"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 
 # FILESTREAM data

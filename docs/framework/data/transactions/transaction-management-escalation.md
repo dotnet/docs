@@ -3,6 +3,7 @@ title: "Transaction Management Escalation"
 description: Learn about transaction management escalation in .NET, which is the process of migrating a transaction from one transaction manager's components to another.
 ms.date: "03/30/2017"
 ms.assetid: 1e96331e-31b6-4272-bbbd-29ed1e110460
+ms.topic: article
 ---
 # Transaction Management Escalation
 

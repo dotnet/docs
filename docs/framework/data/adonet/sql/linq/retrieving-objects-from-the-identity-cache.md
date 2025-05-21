@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 96c13903-ccb6-4a0e-ab6a-8ca955ca314d
+ms.topic: concept-article
 ---
 # Retrieving Objects from the Identity Cache
 

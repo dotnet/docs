@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "vb"
 ms.assetid: a7da43e3-769f-4e07-bcd6-552b8bde66f4
+ms.topic: article
 ---
 # Walkthrough: Querying Across Relationships (Visual Basic)
 

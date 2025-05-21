@@ -3,6 +3,7 @@ description: "Learn more about: SQL-CLR Custom Type Mappings"
 title: "SQL-CLR Custom Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: d916c7fb-4b56-4214-acbe-5e23365047b2
+ms.topic: article
 ---
 # SQL-CLR Custom Type Mappings
 

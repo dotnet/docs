@@ -3,6 +3,7 @@ description: "Learn more about: Querying DataSets (LINQ to DataSet)"
 title: "Querying DataSets (LINQ to DataSet)"
 ms.date: "03/30/2017"
 ms.assetid: bb68d2e4-623d-4d60-85e3-965254f6fee7
+ms.topic: concept-article
 ---
 # Querying DataSets (LINQ to DataSet)
 

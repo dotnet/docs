@@ -3,6 +3,7 @@ title: "Query Notifications in SQL Server"
 description: Learn how to use query notifications to notify applications when data has changed in a SQL Server database, for instance, to refresh application displays.
 ms.date: "03/30/2017"
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
+ms.topic: how-to
 ---
 # Query Notifications in SQL Server
 

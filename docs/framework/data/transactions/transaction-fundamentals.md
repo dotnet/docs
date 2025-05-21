@@ -3,6 +3,7 @@ title: "Transaction Fundamentals"
 description: Review transaction fundamentals in .NET. All transactions must possess the basic ACID properties (atomic, consistent, isolated, and durable).
 ms.date: "03/30/2017"
 ms.assetid: 353f4ee2-e6bf-4b1c-b1c8-385fc8a486c0
+ms.topic: article
 ---
 # Transaction Fundamentals
 

@@ -3,6 +3,7 @@ description: "Learn more about: Using Commands to Modify Data"
 title: "Using Commands to Modify Data"
 ms.date: "03/30/2017"
 ms.assetid: f4160389-b9ff-4b74-b655-437c76dcd586
+ms.topic: concept-article
 ---
 # Using Commands to Modify Data
 

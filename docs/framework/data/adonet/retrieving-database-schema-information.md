@@ -3,6 +3,7 @@ description: "Learn more about: Retrieving Database Schema Information"
 title: "Retrieving Database Schema Information"
 ms.date: "03/30/2017"
 ms.assetid: 79038d52-f122-4fd4-9bfb-aaa22d6a114b
+ms.topic: concept-article
 ---
 # Retrieving Database Schema Information
 

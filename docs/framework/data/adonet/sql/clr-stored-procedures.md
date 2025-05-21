@@ -3,6 +3,7 @@ description: "Learn more about: CLR Stored Procedures"
 title: "CLR Stored Procedures"
 ms.date: "03/30/2017"
 ms.assetid: fd7eea9b-218a-4988-8c9a-8abcc6031c66
+ms.topic: article
 ---
 # CLR Stored Procedures
 

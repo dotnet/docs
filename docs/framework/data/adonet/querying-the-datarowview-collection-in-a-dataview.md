@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b9070a12-1094-44d6-bb87-a23b50bcb0af
+ms.topic: concept-article
 ---
 # Querying the DataRowView Collection in a DataView
 

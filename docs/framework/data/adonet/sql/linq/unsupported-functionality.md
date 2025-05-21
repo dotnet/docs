@@ -3,6 +3,7 @@ description: "Learn more about: Unsupported Functionality"
 title: "Unsupported Functionality"
 ms.date: "03/30/2017"
 ms.assetid: e480cfb5-697e-42c8-bed5-9264c945c4f9
+ms.topic: article
 ---
 # Unsupported Functionality
 

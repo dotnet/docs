@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 694ea153-e4db-41ae-96ac-9ac66dcb69a9
+ms.topic: concept-article
 ---
 # Committing a Transaction in Single-Phase and Multi-Phase
 

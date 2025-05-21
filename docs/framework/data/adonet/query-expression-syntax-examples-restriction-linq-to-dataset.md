@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1daf42c2-c9f4-4cda-b291-7641b9c6d3fe
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Restriction (LINQ to DataSet)
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1d50c8b4-f550-4775-bbb6-eab6e874cb43
+ms.topic: article
 ---
 # Group Elements in a Sequence
 

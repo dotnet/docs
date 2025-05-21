@@ -3,6 +3,7 @@ title: "LINQ to SQL"
 description: LINQ to SQL is a component of the .NET Framework that provides a run-time infrastructure for managing relational data as objects.
 ms.date: "03/30/2017"
 ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
+ms.topic: article
 ---
 # LINQ to SQL
 

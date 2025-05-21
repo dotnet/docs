@@ -3,6 +3,7 @@ description: "Learn more about: Side-by-Side Execution in ADO.NET"
 title: "Side-by-Side Execution"
 ms.date: "03/30/2017"
 ms.assetid: 9f9ba96d-9f89-4f65-bb2f-6860879f4393
+ms.topic: article
 ---
 # Side-by-Side Execution in ADO.NET
 

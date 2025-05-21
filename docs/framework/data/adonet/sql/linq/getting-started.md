@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: db8a557a-fef8-4f4f-bb91-8cff7250ee25
+ms.topic: get-started
 ---
 # Getting Started
 

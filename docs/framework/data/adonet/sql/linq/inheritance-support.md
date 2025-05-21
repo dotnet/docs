@@ -3,6 +3,7 @@ description: "Learn more about: Inheritance Support"
 title: "Inheritance Support"
 ms.date: "03/30/2017"
 ms.assetid: 19bb2794-b4e7-402e-8307-1d1517381a08
+ms.topic: article
 ---
 # Inheritance Support
 

@@ -3,6 +3,7 @@ title: "Managing Concurrency with DependentTransaction"
 description: Manage transaction concurrency, including asynchronous tasks, by using the DependentTransaction class in .NET.
 ms.date: "03/30/2017"
 ms.assetid: b85a97d8-8e02-4555-95df-34c8af095148
+ms.topic: concept-article
 ---
 # Managing Concurrency with DependentTransaction
 

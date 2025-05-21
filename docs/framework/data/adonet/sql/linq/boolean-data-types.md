@@ -3,6 +3,7 @@ description: "Learn more about: Boolean Data Types"
 title: "Boolean Data Types"
 ms.date: "03/30/2017"
 ms.assetid: 57f7376b-4b11-4b35-98a9-780382053ceb
+ms.topic: article
 ---
 # Boolean Data Types
 

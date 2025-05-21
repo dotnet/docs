@@ -4,6 +4,7 @@ title: "SQL Server Data Types and ADO.NET"
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: 81b43550-23e8-43bb-b460-7eb8ac825c33
+ms.topic: article
 ---
 # SQL Server Data Types and ADO.NET
 

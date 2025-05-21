@@ -3,6 +3,7 @@ description: "Learn more about: Debugging Support"
 title: "Debugging Support"
 ms.date: "03/30/2017"
 ms.assetid: 262d8e60-8e71-42d7-8340-1b5276a0ad35
+ms.topic: concept-article
 ---
 # Debugging Support
 

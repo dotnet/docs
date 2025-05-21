@@ -3,6 +3,7 @@ title: "Transaction Processing"
 description: Review transaction processing in .NET. Transactions ensure that data-oriented resources aren't permanently updated unless all operations complete successfully.
 ms.date: "03/30/2017"
 ms.assetid: effdc8e6-accf-41eb-98a5-431603ba218b
+ms.topic: article
 ---
 # Transaction Processing
 

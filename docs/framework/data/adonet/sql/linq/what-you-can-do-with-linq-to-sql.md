@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 061d98b2-baa7-4336-8ad2-c14de8134d91
+ms.topic: article
 ---
 # What You Can Do With LINQ to SQL
 

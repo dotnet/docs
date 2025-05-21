@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1776f48f-9bea-41f6-83a4-c990c7a2c991
+ms.topic: article
 ---
 
 # SqlCommand Execution with a SqlNotificationRequest

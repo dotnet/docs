@@ -3,6 +3,7 @@ description: "Learn more about: Responsibilities of the Developer In Overriding 
 title: "Responsibilities of the Developer In Overriding Default Behavior"
 ms.date: "03/30/2017"
 ms.assetid: c6909ddd-e053-46a8-980c-0e12a9797be1
+ms.topic: article
 ---
 # Responsibilities of the Developer In Overriding Default Behavior
 

@@ -3,6 +3,7 @@ description: "Learn more about: Security (LINQ to DataSet)"
 title: "Security (LINQ to DataSet)"
 ms.date: "03/30/2017"
 ms.assetid: 6116b2b8-75f4-4d8b-aea6-c13e55cda50b
+ms.topic: article
 ---
 # Security (LINQ to DataSet)
 

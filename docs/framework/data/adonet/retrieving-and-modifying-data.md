@@ -3,6 +3,7 @@ title: "Retrieving and Modifying Data"
 description: In the .NET Framework, data providers in ADO.NET serve as a bridge between an application and a data source to read and update data.
 ms.date: "03/30/2017"
 ms.assetid: 722e7f87-3691-46c6-87e8-7d159722d675
+ms.topic: concept-article
 ---
 # Retrieving and Modifying Data in ADO.NET
 

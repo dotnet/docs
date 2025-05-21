@@ -3,6 +3,7 @@ description: "Learn more about: Programming Guide"
 title: "Programming Guide"
 ms.date: "03/30/2017"
 ms.assetid: ed1012d4-3ff2-4877-af27-93125c4180ea
+ms.topic: concept-article
 ---
 # Programming Guide
 

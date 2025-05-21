@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs:
   - "vb"
 ms.assetid: c878e457-f715-46e4-a136-ff14d6c86018
+ms.topic: article
 ---
 # Walkthrough: Simple Object Model and Query (Visual Basic)
 

@@ -4,6 +4,7 @@ title: "SQL Server In-Process-Specific Behavior of ADO.NET"
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: 4f223948-ae8f-4c16-bdc2-4acc6debed3f
+ms.topic: article
 ---
 # SQL Server In-Process-Specific Behavior of ADO.NET
 

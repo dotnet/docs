@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "vb"
 ms.assetid: 1f6a54f6-ec33-452a-a37d-48122207bf14
+ms.topic: article
 ---
 # Walkthrough: Manipulating Data (Visual Basic)
 

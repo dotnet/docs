@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ccdc3777-b2c2-44e3-a627-abef8d79a555
+ms.topic: article
 ---
 # Return the First Element in a Sequence
 

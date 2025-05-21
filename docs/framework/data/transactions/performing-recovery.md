@@ -2,6 +2,7 @@
 title: "Performing Recovery"
 description: Perform recovery in .NET. The resource manager helps resolve durable transaction enlistments by reenlisting the transaction participant after resource failure.
 ms.date: "03/30/2017"
+ms.topic: concept-article
 ---
 # Performing Recovery
 

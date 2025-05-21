@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8b8bd3cb-86d4-4a3b-9906-61f68726dd1f
+ms.topic: article
 ---
 # Return the Set Union of Two Sequences
 

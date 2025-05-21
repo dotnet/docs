@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
+ms.topic: article
 ---
 # SQL Server connection pooling (ADO.NET)
 

@@ -3,6 +3,7 @@ description: "Learn more about: System.String Methods"
 title: "System.String Methods"
 ms.date: "03/30/2017"
 ms.assetid: ce307f14-87e6-4816-8694-8a4147f6b784
+ms.topic: concept-article
 ---
 # System.String Methods
 

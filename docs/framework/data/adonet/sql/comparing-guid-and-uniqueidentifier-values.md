@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: aababd75-2335-43e3-ace8-4b7ae84191a8
+ms.topic: concept-article
 ---
 # Comparing GUID and uniqueidentifier Values
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ee3b8673-a2e7-4b2d-9b5c-4972ff9e665d
+ms.topic: article
 ---
 # Return the Average Value From a Numeric Sequence
 

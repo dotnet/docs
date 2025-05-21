@@ -3,6 +3,7 @@ description: "Learn more about: Creating the Object Model"
 title: "Creating the Object Model"
 ms.date: "03/30/2017"
 ms.assetid: 27afce86-9b1d-45fb-8e0b-636bf671a236
+ms.topic: concept-article
 ---
 # Creating the Object Model
 

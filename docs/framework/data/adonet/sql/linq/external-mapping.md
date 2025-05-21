@@ -3,6 +3,7 @@ description: "Learn more about: External Mapping"
 title: "External Mapping"
 ms.date: "03/30/2017"
 ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
+ms.topic: article
 ---
 # External Mapping
 

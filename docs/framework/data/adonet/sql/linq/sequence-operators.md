@@ -3,6 +3,7 @@ description: "Learn more about: Sequence Operators"
 title: "Sequence Operators"
 ms.date: "03/30/2017"
 ms.assetid: 4d332d32-3806-4451-b7af-25af269194ae
+ms.topic: article
 ---
 # Sequence Operators
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d97ce4da-f09c-4d1e-85b7-a0ccedd7246a
+ms.topic: article
 ---
 # SQL XML Column Values
 

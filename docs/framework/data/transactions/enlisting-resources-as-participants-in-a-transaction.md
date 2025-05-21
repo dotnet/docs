@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 786a12c2-d530-49f4-9c59-5c973e15a11d
+ms.topic: concept-article
 ---
 
 # Enlisting Resources as Participants in a Transaction

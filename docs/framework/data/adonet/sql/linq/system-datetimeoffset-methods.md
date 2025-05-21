@@ -3,6 +3,7 @@ description: "Learn more about: System.DateTimeOffset Methods"
 title: "System.DateTimeOffset Methods"
 ms.date: "03/30/2017"
 ms.assetid: 25b3e5c0-7603-4a70-b3e5-2149e3da69a2
+ms.topic: article
 ---
 # System.DateTimeOffset Methods
 

@@ -3,6 +3,7 @@ description: "Learn more about: XML Data in SQL Server"
 title: "XML Data in SQL Server"
 ms.date: "03/30/2017"
 ms.assetid: 9849d319-f518-4e3d-a7cd-f8fdcaaa1d4d
+ms.topic: article
 ---
 # XML Data in SQL Server
 

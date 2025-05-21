@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2b224a84-bad5-4843-adcc-14e784d280f5
+ms.topic: article
 ---
 # Eliminate Duplicate Elements from a Sequence
 

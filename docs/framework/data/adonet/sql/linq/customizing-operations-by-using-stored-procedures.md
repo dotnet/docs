@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a
+ms.topic: concept-article
 ---
 # Customizing Operations By Using Stored Procedures
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7ab76d93-6898-4e75-b76f-290a66ecead8
+ms.topic: article
 ---
 # Convert a Sequence to a Generic List
 

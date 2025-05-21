@@ -4,6 +4,7 @@ title: "REF CURSOR Parameters in an OracleDataReader"
 ms.date: "03/30/2017"
 dev_langs:
   - "vb"
+ms.topic: article
 ---
 # REF CURSOR Parameters in an OracleDataReader
 

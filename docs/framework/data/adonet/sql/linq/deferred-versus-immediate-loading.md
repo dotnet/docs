@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d1d7247f-a3b7-460b-b342-5c1a2365aa1a
+ms.topic: article
 ---
 # Deferred versus Immediate Loading
 

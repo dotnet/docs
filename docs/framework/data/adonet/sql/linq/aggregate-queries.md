@@ -3,6 +3,7 @@ description: "Learn more about: Aggregate Queries"
 title: "Aggregate Queries"
 ms.date: "03/30/2017"
 ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
+ms.topic: article
 ---
 # Aggregate Queries
 

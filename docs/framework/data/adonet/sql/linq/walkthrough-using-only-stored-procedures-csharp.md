@@ -3,6 +3,7 @@ description: "Learn more about: Walkthrough: Using Only Stored Procedures (C#)"
 title: "Walkthrough: Using Only Stored Procedures (C#)"
 ms.date: "03/30/2017"
 ms.assetid: ecde4bf2-fa4d-4252-b5e4-96a46b9e097d
+ms.topic: article
 ---
 # Walkthrough: Using Only Stored Procedures (C#)
 

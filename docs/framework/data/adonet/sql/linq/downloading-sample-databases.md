@@ -3,6 +3,7 @@ title: "Get the sample SQL Server databases for ADO.NET code samples"
 description: "Download the sample SQL Server databases used in the code samples in the ADO.NET documentation, as well as SQL Server and management tools"
 ms.date: "01/11/2019"
 ms.assetid: ef9d69a1-9461-43fe-94bb-7c836754bcb5
+ms.topic: how-to
 ---
 # Get the sample databases for ADO.NET code samples
 

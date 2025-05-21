@@ -3,6 +3,7 @@ description: "Learn more about: SQL Server Binary and Large-Value Data"
 title: "SQL Server Binary and Large-Value Data"
 ms.date: "03/30/2017"
 ms.assetid: e00827b3-7511-4b2d-91d7-851ca86cc6b5
+ms.topic: article
 ---
 # SQL Server Binary and Large-Value Data
 

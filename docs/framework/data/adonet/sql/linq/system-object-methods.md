@@ -3,6 +3,7 @@ description: "Learn more about: System.Object Methods"
 title: "System.Object Methods"
 ms.date: "03/30/2017"
 ms.assetid: 5397fca0-689e-443e-802f-e1cbdc866427
+ms.topic: article
 ---
 # System.Object Methods
 

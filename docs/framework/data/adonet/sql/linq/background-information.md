@@ -3,6 +3,7 @@ description: "Learn more about: Background Information"
 title: "Background Information"
 ms.date: "03/30/2017"
 ms.assetid: 724888f2-d3f1-4bea-b9a1-a0adb8a00f3b
+ms.topic: article
 ---
 # Background Information
 

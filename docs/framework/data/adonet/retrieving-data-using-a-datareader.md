@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 97afc121-fb8b-465b-bab3-6d844420badb
+ms.topic: how-to
 ---
 # Retrieve data using a DataReader
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "data access [.NET Framework], about .NET Framework data access"
   - "data [.NET Framework], accessing"
 ms.assetid: 8c37635d-e2c1-4b64-a258-61d9e87405e6
+ms.topic: article
 ---
 # Data and modeling in .NET
 

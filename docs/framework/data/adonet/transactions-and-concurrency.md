@@ -3,6 +3,7 @@ description: "Learn more about: Transactions and Concurrency"
 title: "Transactions and Concurrency"
 ms.date: "03/30/2017"
 ms.assetid: f46570de-9e50-4fe6-8710-a8c31fa8569b
+ms.topic: article
 ---
 # Transactions and Concurrency
 

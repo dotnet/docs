@@ -3,6 +3,7 @@ description: "Learn more about: Asynchronous Operations"
 title: "Asynchronous Operations"
 ms.date: "03/30/2017"
 ms.assetid: e7d32c3c-bf78-4bfc-a357-c9e82e4a4b3c
+ms.topic: article
 ---
 # Asynchronous Operations
 

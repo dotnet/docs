@@ -3,6 +3,7 @@ description: "Learn more about: Learning by Walkthroughs"
 title: "Learning by Walkthroughs"
 ms.date: "03/30/2017"
 ms.assetid: a8ae2965-6a49-4155-89b0-7fab2c488ab1
+ms.topic: how-to
 ---
 # Learning by Walkthroughs
 

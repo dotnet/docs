@@ -3,6 +3,7 @@ description: "Learn more about: System.TimeSpan Methods"
 title: "System.TimeSpan Methods"
 ms.date: "03/30/2017"
 ms.assetid: 9333fee8-1454-4374-855b-8c14c002f48f
+ms.topic: article
 ---
 # System.TimeSpan Methods
 

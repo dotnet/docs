@@ -3,6 +3,7 @@ description: "Learn more about: Basic Data Types"
 title: "Basic Data Types"
 ms.date: "03/30/2017"
 ms.assetid: eca2c472-9548-4800-bd31-5d8d9f11752b
+ms.topic: article
 ---
 # Basic Data Types
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "vb"
 ms.assetid: 5a736a30-ba66-4adb-b87c-57d19476e862
+ms.topic: article
 ---
 # Walkthrough: Using Only Stored Procedures (Visual Basic)
 

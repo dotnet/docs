@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 81dd0c37-e2a4-4694-83b0-f2e49e693810
+ms.topic: article
 ---
 # The LINQ to SQL Object Model
 

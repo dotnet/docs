@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a60c30fa-1e68-45fe-b984-f6abb9ede40e
+ms.topic: article
 ---
 # Standard Query Operator Translation
 

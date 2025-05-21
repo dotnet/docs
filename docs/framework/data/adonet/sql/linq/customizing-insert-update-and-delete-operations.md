@@ -3,6 +3,7 @@ description: "Learn more about: Customizing Insert, Update, and Delete Operation
 title: "Customizing Insert, Update, and Delete Operations"
 ms.date: "03/30/2017"
 ms.assetid: 07eef055-8f6c-414d-850e-d323ff946cd0
+ms.topic: concept-article
 ---
 # Customizing Insert, Update, and Delete Operations
 

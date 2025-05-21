@@ -3,6 +3,7 @@ description: "Learn more about: LINQ to SQL N-Tier with ASP.NET"
 title: "LINQ to SQL N-Tier with ASP.NET"
 ms.date: "03/30/2017"
 ms.assetid: f6cc863a-d6a6-4281-ba8b-197c01cf6c6f
+ms.topic: article
 ---
 # LINQ to SQL N-Tier with ASP.NET
 

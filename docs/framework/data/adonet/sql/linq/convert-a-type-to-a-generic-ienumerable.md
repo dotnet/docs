@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 64774fb5-7447-4296-ad3b-8a94346f99a1
+ms.topic: article
 ---
 # Convert a Type to a Generic IEnumerable
 

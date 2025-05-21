@@ -3,6 +3,7 @@ description: "Learn more about: Securing ADO.NET applications"
 title: "Securing Applications"
 ms.date: "03/30/2017"
 ms.assetid: 005a1d43-6ee5-471e-ad98-1d30a44d49d5
+ms.topic: concept-article
 ---
 # Securing ADO.NET applications
 

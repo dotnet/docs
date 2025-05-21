@@ -4,6 +4,7 @@ title: "Retrieving Data from Multiple REF CURSORs Using an OracleDataReader"
 ms.date: "03/30/2017"
 dev_langs:
   - "vb"
+ms.topic: concept-article
 ---
 # Retrieving Data from Multiple REF CURSORs Using an OracleDataReader
 

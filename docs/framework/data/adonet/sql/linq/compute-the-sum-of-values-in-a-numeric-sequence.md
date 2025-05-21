@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 24e335b0-984e-4825-8721-0a91b533b7c3
+ms.topic: article
 ---
 # Compute the Sum of Values in a Numeric Sequence
 

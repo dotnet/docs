@@ -3,6 +3,7 @@ description: "Learn more about: CLR User-Defined Types"
 title: "CLR User-Defined Types"
 ms.date: "03/30/2017"
 ms.assetid: 9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2
+ms.topic: article
 ---
 # CLR User-Defined Types
 

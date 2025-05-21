@@ -3,6 +3,7 @@ description: "Learn more about: Data Types and Functions"
 title: "Data Types and Functions"
 ms.date: "03/30/2017"
 ms.assetid: 683413c5-0312-4e60-8619-9a97bdc6e62a
+ms.topic: article
 ---
 # Data Types and Functions
 

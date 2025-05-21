@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d09c344e-3548-4944-a3ed-051880e3f5b8
+ms.topic: article
 ---
 # Return the Set Intersection of Two Sequences
 

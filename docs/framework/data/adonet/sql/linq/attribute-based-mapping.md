@@ -3,6 +3,7 @@ description: "Learn more about: Attribute-Based Mapping"
 title: "Attribute-Based Mapping"
 ms.date: "03/30/2017"
 ms.assetid: 6dd89999-f415-4d61-b8c8-237d23d7924e
+ms.topic: article
 ---
 # Attribute-Based Mapping
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 49d1706a-1e0c-4c85-9704-75c908372eb9
+ms.topic: concept-article
 ---
 # Implementing an Implicit Transaction using Transaction Scope
 

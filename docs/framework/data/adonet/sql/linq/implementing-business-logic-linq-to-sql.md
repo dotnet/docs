@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c4577590-7b12-42e1-84a6-95aa2562727e
+ms.topic: concept-article
 ---
 # Implementing Business Logic (LINQ to SQL)
 

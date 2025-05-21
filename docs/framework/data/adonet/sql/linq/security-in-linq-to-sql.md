@@ -3,6 +3,7 @@ description: "Learn more about: Security in LINQ to SQL"
 title: "Security in LINQ to SQL"
 ms.date: "03/30/2017"
 ms.assetid: d49787f7-414e-4c71-aa33-80a5895536b1
+ms.topic: article
 ---
 # Security in LINQ to SQL
 

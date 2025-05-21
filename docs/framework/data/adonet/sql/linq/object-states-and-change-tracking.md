@@ -3,6 +3,7 @@ description: "Learn more about: Object States and Change-Tracking"
 title: "Object States and Change-Tracking"
 ms.date: "03/30/2017"
 ms.assetid: 7a808b00-9c3c-479a-aa94-717280fefd71
+ms.topic: article
 ---
 # Object States and Change-Tracking
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 29efe5e5-897b-46c2-a35f-e599a273acc8
+ms.topic: concept-article
 ---
 # Implementing an Explicit Transaction using CommittableTransaction
 

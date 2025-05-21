@@ -3,6 +3,7 @@ title: "Introduction to SQL Server CLR Integration"
 description: CLR integration with SQL Server supports stored procedures, triggers, user-defined functions, user-defined types, and user-defined aggregates in managed code.
 ms.date: "03/30/2017"
 ms.assetid: 551d2290-ed80-49be-b377-44b32444da1c
+ms.topic: article
 ---
 # Introduction to SQL Server CLR Integration
 

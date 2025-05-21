@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: cbec8b02-a1e8-4ae8-a83b-bb5190413ac5
+ms.topic: article
 ---
 
 # Data Binding

@@ -3,6 +3,7 @@ description: "Learn more about: Transaction Support"
 title: "Transaction Support"
 ms.date: "03/30/2017"
 ms.assetid: 8cceb26e-8d36-4365-8967-58e2e89e0187
+ms.topic: article
 ---
 # Transaction Support
 

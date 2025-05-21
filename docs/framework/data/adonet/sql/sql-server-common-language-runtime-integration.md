@@ -3,6 +3,7 @@ description: "Learn more about: SQL Server Common Language Runtime Integration"
 title: "SQL Server Common Language Runtime Integration"
 ms.date: "03/30/2017"
 ms.assetid: c7a324c4-160d-44c2-b593-641af06eca61
+ms.topic: article
 ---
 # SQL Server Common Language Runtime Integration
 

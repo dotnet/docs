@@ -3,6 +3,7 @@ description: "Learn more about: Bulk Copy Example Setup"
 title: "Bulk Copy Example Setup"
 ms.date: "03/30/2017"
 ms.assetid: d4dde6ac-b8b6-4593-965a-635c8fb2dadb
+ms.topic: install-set-up-deploy
 ---
 # Bulk Copy Example Setup
 

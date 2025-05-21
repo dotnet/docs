@@ -3,6 +3,7 @@ title: "SQL Server Data Type Mappings"
 description: Learn about mapping between the different type systems for SQL Server and the .NET Framework. This article summarizes how the systems interact in ADO.NET.
 ms.date: "03/30/2017"
 ms.assetid: fafdc31a-f435-4cd3-883f-1dfadd971277
+ms.topic: article
 ---
 # SQL Server Data Type Mappings
 

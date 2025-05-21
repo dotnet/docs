@@ -2,6 +2,7 @@
 title: "SqlClient Support for High Availability, Disaster Recovery"
 description: Learn about SqlClient application support for high availability and disaster recovery in SQL Server.
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # SqlClient Support for high availability and disaster recovery
 

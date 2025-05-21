@@ -2,6 +2,7 @@
 description: "Learn more about streaming support between SQL Server and an application, which supports unstructured data on the server."
 title: "SqlClient Streaming Support"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 
 # SqlClient streaming support

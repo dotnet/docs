@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 76767e7c-0607-4e1d-9ca2-a94f311f45eb
+ms.topic: article
 ---
 # Concatenate Two Sequences
 

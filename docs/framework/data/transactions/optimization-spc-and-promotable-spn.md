@@ -3,6 +3,7 @@ title: "Optimization using Single Phase Commit and Promotable Single Phase Notif
 description: Optimize performance using single phase commit and promotable single phase notification. Learn about the System.Transactions infrastructure in .NET.
 ms.date: "03/30/2017"
 ms.assetid: 57beaf1a-fb4d-441a-ab1d-bc0c14ce7899
+ms.topic: article
 ---
 
 # Optimization using Single Phase Commit and Promotable Single Phase Notification

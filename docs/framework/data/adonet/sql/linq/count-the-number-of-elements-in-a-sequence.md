@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ccbe5d54-c9eb-4b14-b0ab-f628483c5f99
+ms.topic: article
 ---
 # Count the Number of Elements in a Sequence
 

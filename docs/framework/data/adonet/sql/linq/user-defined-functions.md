@@ -3,6 +3,7 @@ description: "Learn more about: User-Defined Functions"
 title: "User-Defined Functions"
 ms.date: "03/30/2017"
 ms.assetid: 3304c9b2-5c7a-4a95-9d45-4f260dcb606e
+ms.topic: article
 ---
 # User-Defined Functions
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 3a73991e-fd4e-4610-93fb-7ced4dc6b7f9
+ms.topic: concept-article
 ---
 # Add Business Logic By Using Partial Methods
 

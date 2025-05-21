@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 81a31acd-e0f1-4bca-9a12-fa1ad5752374
+ms.topic: article
 ---
 # Return Or Skip Elements in a Sequence
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: bf0af444-890d-43e2-aeca-98589dd74ddf
+ms.topic: article
 ---
 # Convert a Sequence to an Array
 

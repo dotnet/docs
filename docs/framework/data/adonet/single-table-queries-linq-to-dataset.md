@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0b74bcf8-3f87-449f-bff7-6bcb0d69d212
+ms.topic: article
 ---
 # Single-Table Queries (LINQ to DataSet)
 

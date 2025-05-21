@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 62efb546-c898-408f-af21-36e7c6fed217
+ms.topic: article
 ---
 # Return the Set Difference Between Two Sequences
 

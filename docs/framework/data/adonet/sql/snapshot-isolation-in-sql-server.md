@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
+ms.topic: article
 ---
 # Snapshot Isolation in SQL Server
 

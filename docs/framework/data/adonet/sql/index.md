@@ -4,6 +4,7 @@ description: Learn about features and behaviors of the .NET Framework Data Provi
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: c18b1fb1-2af1-4de7-80a4-95e56fd976cb
+ms.topic: article
 ---
 # SQL Server and ADO.NET
 

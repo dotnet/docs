@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
+ms.topic: how-to
 ---
 # Update data sources with DataAdapters
 

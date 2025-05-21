@@ -3,6 +3,7 @@ title: "Writing a Transactional Application"
 description: Write a transactional application in .NET. Use an explicit or implicit programming model with the Transaction class or TransactionScope class, respectively.
 ms.date: "03/30/2017"
 ms.assetid: a4d891f2-6fc8-4395-93c6-6819492406e0
+ms.topic: concept-article
 ---
 # Writing a Transactional Application
 

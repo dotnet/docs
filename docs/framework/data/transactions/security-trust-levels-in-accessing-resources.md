@@ -3,6 +3,7 @@ title: "Security Trust Levels in Accessing Resources"
 description: Understand security trust levels in accessing resources in .NET. There are 3 main levels of trust for System.Transactions.
 ms.date: "03/30/2017"
 ms.assetid: fb5be924-317d-4d69-b33a-3d18ecfb9d6e
+ms.topic: article
 ---
 # Security Trust Levels in Accessing Resources
 

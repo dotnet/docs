@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f6f0cbc9-f7bf-4d6e-875f-ad1ba0b4aa62
+ms.topic: article
 ---
 # Transaction and Bulk Copy Operations
 

@@ -3,6 +3,7 @@ description: "Learn more about: Walkthrough: Manipulating Data (C#)"
 title: "Walkthrough: Manipulating Data (C#)"
 ms.date: "03/30/2017"
 ms.assetid: 24adfbe0-0ad6-449f-997d-8808e0770d2e
+ms.topic: article
 ---
 # Walkthrough: Manipulating Data (C#)
 

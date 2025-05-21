@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a15ae411-8dc2-4ca3-84d2-01c9d5f1972a
+ms.topic: article
 ---
 # Serialization in LINQ to SQL
 

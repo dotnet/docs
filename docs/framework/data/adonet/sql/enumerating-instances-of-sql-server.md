@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ddf1c83c-9d40-45e6-b04d-9828c6cbbfdc
+ms.topic: concept-article
 ---
 # Enumerating Instances of SQL Server (ADO.NET)
 

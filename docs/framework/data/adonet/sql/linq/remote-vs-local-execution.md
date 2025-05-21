@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ee50e943-9349-4c84-ab1c-c35d3ada1a9c
+ms.topic: article
 ---
 # Remote vs. Local Execution
 

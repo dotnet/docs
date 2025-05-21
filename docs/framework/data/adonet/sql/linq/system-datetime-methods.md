@@ -3,6 +3,7 @@ description: "Learn more about: System.DateTime Methods"
 title: "System.DateTime Methods"
 ms.date: "03/30/2017"
 ms.assetid: 4f80700c-e83f-4ab6-af0f-1c9a606e1133
+ms.topic: article
 ---
 # System.DateTime Methods
 

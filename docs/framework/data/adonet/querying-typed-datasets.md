@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ad712fa1-2baf-462a-b163-574cce6d376a
+ms.topic: how-to
 ---
 # Query typed DataSets
 

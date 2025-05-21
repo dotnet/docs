@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d59b93a9-50c8-4770-a114-d902f6a0ea76
+ms.topic: article
 ---
 # Sort Elements in a Sequence
 

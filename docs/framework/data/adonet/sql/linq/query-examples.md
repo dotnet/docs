@@ -3,6 +3,7 @@ description: "Learn more about: Query Examples"
 title: "Query Examples"
 ms.date: "03/30/2017"
 ms.assetid: 137f8677-494c-4d49-95ce-c17742f2d01f
+ms.topic: article
 ---
 # Query Examples
 

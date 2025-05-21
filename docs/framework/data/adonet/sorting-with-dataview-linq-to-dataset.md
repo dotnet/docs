@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 885b3b7b-51c1-42b3-bb29-b925f4f69a6f
+ms.topic: concept-article
 ---
 # Sorting with DataView (LINQ to DataSet)
 

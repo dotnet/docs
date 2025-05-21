@@ -7,6 +7,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 49ac6da0-f2e1-46fa-963e-1b6dcb63fef7
+ms.topic: article
 ---
 # ADO.NET and LINQ to SQL
 

@@ -3,6 +3,7 @@ title: "Using System.Transactions in ASP.NET"
 description: Use System.Transactions inside of an ASP.NET application. Enable distributed transaction permissions, and work with dynamic compilation.
 ms.date: "03/30/2017"
 ms.assetid: 1982c300-7ea6-4242-95ed-dc28ccfacac9
+ms.topic: concept-article
 ---
 # Using System.Transactions in ASP.NET
 

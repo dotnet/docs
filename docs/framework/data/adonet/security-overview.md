@@ -3,6 +3,7 @@ description: "Learn more about: Security overview"
 title: Security overview
 ms.date: "03/30/2017"
 ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
+ms.topic: concept-article
 ---
 # Security overview
 

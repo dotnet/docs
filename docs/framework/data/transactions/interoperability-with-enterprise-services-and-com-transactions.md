@@ -3,6 +3,7 @@ title: "Interoperability with Enterprise Services and COM+ Transactions"
 description: Understand interoperability with enterprise services and COM+ transactions in .NET using the System.Transactions namespace.
 ms.date: "03/30/2017"
 ms.assetid: d0fd0d26-fe86-443b-b208-4d57d39fa4aa
+ms.topic: article
 ---
 # Interoperability with Enterprise Services and COM+ Transactions
 

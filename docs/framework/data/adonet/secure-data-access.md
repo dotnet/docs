@@ -3,6 +3,7 @@ description: "Learn more about secure data access and understand the security me
 title: "Secure Data Access"
 ms.date: "03/30/2017"
 ms.assetid: 473ebd69-21a3-4627-b95e-4e04d035c56f
+ms.topic: article
 ---
 # Secure data access
 

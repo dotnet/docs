@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 26a43a4f-83c9-4732-806d-bb23aad0ff6b
+ms.topic: article
 ---
 # Insert, Update, and Delete Operations
 

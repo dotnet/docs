@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 78203093-f242-4572-9b31-9495b10926aa
+ms.topic: article
 ---
 # Find the Minimum Value in a Numeric Sequence
 

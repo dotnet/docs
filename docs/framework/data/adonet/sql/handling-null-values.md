@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f18b288f-b265-4bbe-957f-c6833c0645ef
+ms.topic: how-to
 ---
 # Handling Null Values
 

@@ -3,6 +3,7 @@ description: "Learn more about: Query Concepts"
 title: "Query Concepts"
 ms.date: "03/30/2017"
 ms.assetid: 9a125749-ccb5-49d5-999d-d2db7171d74d
+ms.topic: concept-article
 ---
 # Query Concepts
 

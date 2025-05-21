@@ -3,6 +3,7 @@ description: "Learn more about: The Context Connection"
 title: "The Context Connection"
 ms.date: "03/30/2017"
 ms.assetid: e443ca86-9243-4234-a822-ed10a53a9de0
+ms.topic: article
 ---
 # The Context Connection
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9172c20a-9876-4b3b-9c97-1963c02b1993
+ms.topic: article
 ---
 # SqlTypes and the DataSet
 

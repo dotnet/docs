@@ -3,6 +3,7 @@ description: "Learn more about: Multiple Active Result Sets (MARS)"
 title: "Multiple Active Result Sets (MARS)"
 ms.date: "03/30/2017"
 ms.assetid: c90ef863-bac7-44cf-adc1-f05c36fcf57d
+ms.topic: article
 ---
 # Multiple Active Result Sets (MARS)
 

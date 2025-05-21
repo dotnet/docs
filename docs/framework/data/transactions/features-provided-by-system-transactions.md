@@ -3,6 +3,7 @@ title: "Features Provided by System.Transactions"
 description: Review the features that are provided by the System.Transactions namespace in .NET to write your own transaction application and resource manager.
 ms.date: "03/30/2017"
 ms.assetid: e458cef9-63b5-4401-b448-1536dcd9d9e5
+ms.topic: article
 ---
 # Features Provided by System.Transactions
 

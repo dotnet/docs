@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 370c16d5-db7b-43e3-945b-ccaab35b739b
+ms.topic: article
 ---
 # Table-Valued Parameters
 

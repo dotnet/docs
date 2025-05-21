@@ -3,6 +3,7 @@ description: "Learn more about: LINQ to SQL N-Tier with Web Services"
 title: "LINQ to SQL N-Tier with Web Services"
 ms.date: "03/30/2017"
 ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
+ms.topic: article
 ---
 # LINQ to SQL N-Tier with Web Services
 

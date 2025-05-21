@@ -3,6 +3,7 @@ description: "Learn more about: System.Convert Methods"
 title: "System.Convert Methods"
 ms.date: "03/30/2017"
 ms.assetid: 3ca6c5b6-ea5d-4ab0-b675-f082135b342c
+ms.topic: article
 ---
 # System.Convert Methods
 

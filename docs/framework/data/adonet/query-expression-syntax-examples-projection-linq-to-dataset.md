@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 48c9f5ed-76bf-4228-ab10-5217bbb295a3
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Projection  (LINQ to DataSet)
 

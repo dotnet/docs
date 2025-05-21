@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5ad12f94-7459-4a93-a421-4160d1a90715
+ms.topic: article
 ---
 # Multiple Bulk Copy Operations
 

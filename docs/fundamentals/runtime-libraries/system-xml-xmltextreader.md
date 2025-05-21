@@ -2,6 +2,7 @@
 title: System.Xml.XmlTextReader class
 description: Learn about the System.Xml.XmlTextReader class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Xml.XmlTextReader class
 

@@ -2,6 +2,7 @@
 title: The .NET Portability Analyzer - .NET
 description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations, including .NET Core, .NET Standard, and UWP.
 ms.date: 01/19/2025
+ms.topic: article
 ---
 
 # The .NET Portability Analyzer

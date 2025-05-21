@@ -2,6 +2,7 @@
 title: Background Services and Startup Tasks
 description: Learn how to configure and manage background services and startup tasks in .NET Orleans.
 ms.date: 11/19/2024
+ms.topic: how-to
 ---
 
 # Background Services and Startup Tasks

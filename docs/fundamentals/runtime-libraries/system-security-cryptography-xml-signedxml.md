@@ -2,6 +2,7 @@
 title: System.Security.Cryptography.Xml.SignedXml class
 description: Learn about the System.Security.Cryptography.Xml.SignedXml class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Security.Cryptography.Xml.SignedXml class
 

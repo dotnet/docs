@@ -2,6 +2,7 @@
 title: System.StringComparer class
 description: Learn about the System.StringComparer class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.StringComparer class
 

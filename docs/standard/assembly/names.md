@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "names [.NET], assemblies"
   - "assemblies [.NET], names"
 ms.assetid: 8f8c2c90-f15d-400e-87e7-a757e4f04d0e
+ms.topic: article
 ---
 # Assembly names
 

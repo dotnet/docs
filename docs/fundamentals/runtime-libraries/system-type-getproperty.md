@@ -2,6 +2,7 @@
 title: System.Type.GetProperty methods
 description: Learn about the System.Type.GetProperty methods.
 ms.date: 03/30/2025
+ms.topic: article
 ---
 # System.Type.GetProperty methods
 

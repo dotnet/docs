@@ -3,6 +3,7 @@ title: Orleans stream providers
 description: Learn about the available stream providers for .NET Orleans.
 ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
+ms.topic: article
 ---
 
 # Orleans stream providers

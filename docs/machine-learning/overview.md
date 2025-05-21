@@ -2,6 +2,7 @@
 title: Overview of ML.NET
 description: Learn about the components that make up ML.NET.
 ms.date: 04/15/2024
+ms.topic: concept-article
 ---
 
 # Overview of ML.NET

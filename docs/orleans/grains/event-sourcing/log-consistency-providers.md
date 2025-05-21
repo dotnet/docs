@@ -2,6 +2,7 @@
 title: Log-consistency providers
 description: Learn about log-consistency providers in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Log-consistency providers

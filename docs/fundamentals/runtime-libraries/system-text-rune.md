@@ -5,6 +5,7 @@ ms.date: 12/31/2023
 dev_langs:
   - CSharp
   - FSharp
+ms.topic: article
 ---
 # System.Text.Rune struct
 

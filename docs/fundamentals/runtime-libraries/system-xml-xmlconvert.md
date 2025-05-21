@@ -2,6 +2,7 @@
 title: System.Xml.XmlConvert class
 description: Learn about the System.Xml.XmlConvert class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Xml.XmlConvert class
 

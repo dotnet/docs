@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "security [.NET], assemblies"
   - "integrity with assemblies"
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
+ms.topic: article
 ---
 # Assembly security considerations
 

@@ -3,6 +3,7 @@ title: Streaming with Orleans
 description: Learn how to work with streaming in .NET Orleans.
 ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
+ms.topic: how-to
 ---
 
 # Streaming with Orleans

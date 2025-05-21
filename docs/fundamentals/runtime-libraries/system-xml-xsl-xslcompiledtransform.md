@@ -2,6 +2,7 @@
 title: System.Xml.Xsl.XslCompiledTransform class
 description: Learn about the System.Xml.Xsl.XslCompiledTransform class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Xml.Xsl.XslCompiledTransform class
 

@@ -2,6 +2,7 @@
 title: Multi-cluster configuration
 description: Learn about multi-cluster configuration in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Multi-cluster configuration

@@ -2,6 +2,7 @@
 title: Heterogeneous silos overview
 description: Learn an overview of the supported heterogeneous silos in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: concept-article
 ---
 
 # Heterogeneous silos overview

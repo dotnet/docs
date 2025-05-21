@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: a00046aa-785d-4f7f-a8e5-d06475ea50da
+ms.topic: concept-article
 ---
 # Deciding When to Implement the Event-based Asynchronous Pattern
 

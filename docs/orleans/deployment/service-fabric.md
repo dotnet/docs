@@ -2,6 +2,7 @@
 title: Host with Service Fabric
 description: Learn how to host an Orleans app with Service Fabric.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Host with Service Fabric

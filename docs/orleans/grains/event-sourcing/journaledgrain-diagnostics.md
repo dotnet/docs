@@ -2,6 +2,7 @@
 title: JournaledGrain diagnostics
 description: Learn how to use JournaledGrain diagnostics in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # JournaledGrain diagnostics

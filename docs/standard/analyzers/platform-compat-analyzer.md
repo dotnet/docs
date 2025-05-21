@@ -3,6 +3,7 @@ title: Platform compatibility analyzer
 description: A Roslyn analyzer that can help detect platform compatibility issues in cross-platform apps and libraries.
 author: buyaa-n
 ms.date: 09/20/2021
+ms.topic: article
 ---
 
 # Platform compatibility analyzer

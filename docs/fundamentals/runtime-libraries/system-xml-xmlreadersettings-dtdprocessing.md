@@ -2,6 +2,7 @@
 title: System.Xml.XmlReaderSettings.DtdProcessing property
 description: Learn about the System.Xml.XmlReaderSettings.DtdProcessing property.
 ms.date: 01/24/2024
+ms.topic: concept-article
 ---
 # System.Xml.XmlReaderSettings.DtdProcessing property
 

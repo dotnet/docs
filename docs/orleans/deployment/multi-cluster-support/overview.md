@@ -2,6 +2,7 @@
 title: Multi-cluster support
 description: Learn about multi-cluster support in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Multi-cluster support

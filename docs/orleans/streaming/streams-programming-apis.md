@@ -3,6 +3,7 @@ title: Orleans streaming APIs
 description: Learn about the available streaming APIs for .NET Orleans.
 ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
+ms.topic: article
 ---
 
 # Orleans streaming APIs

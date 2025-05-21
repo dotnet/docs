@@ -2,6 +2,7 @@
 title: Troubleshoot Azure Cloud Service deployments
 description: Learn how to troubleshoot an Orleans app with Azure Cloud Service deployment.
 ms.date: 07/03/2024
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot Azure Cloud Service deployments

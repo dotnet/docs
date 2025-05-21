@@ -3,6 +3,7 @@ title: Server configuration
 description: Learn how to configure .NET Orleans server settings.
 ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
+ms.topic: article
 ---
 
 # Server configuration

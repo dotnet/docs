@@ -2,6 +2,7 @@
 title: System.Xml.XmlReaderSettings.Schemas property
 description: Learn about the System.Xml.XmlReaderSettings.Schemas property.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Xml.XmlReaderSettings.Schemas property
 

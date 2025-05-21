@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "assemblies [.NET Core]"
   - "single-file assemblies"
 ms.assetid: 28116714-da77-45f7-826d-fa035d121948
+ms.topic: article
 ---
 # Assembly contents
 

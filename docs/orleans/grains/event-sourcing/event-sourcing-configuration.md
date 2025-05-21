@@ -2,6 +2,7 @@
 title: Event sourcing configuration
 description: Learn about event sourcing configuration in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Event sourcing configuration

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "stopping asynchronous operations"
   - "asynchronous programming, beginning operations"
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
+ms.topic: article
 ---
 # Asynchronous Programming Model (APM)
 

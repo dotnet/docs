@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "synchronous calling in asynchronous manner"
   - "waiting for asynchronous calls"
   - "status information [.NET], asynchronous operations"
+ms.topic: concept-article
 ---
 # Calling Synchronous Methods Asynchronously
 

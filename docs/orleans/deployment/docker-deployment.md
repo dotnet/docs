@@ -2,6 +2,7 @@
 title: Docker deployment
 description: Learn how to deploy Orleans apps with Docker.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Docker deployment

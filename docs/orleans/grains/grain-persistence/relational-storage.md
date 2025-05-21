@@ -2,6 +2,7 @@
 title: ADO.NET grain persistence
 description: Learn about ADO.NET grain persistence in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # ADO.NET grain persistence

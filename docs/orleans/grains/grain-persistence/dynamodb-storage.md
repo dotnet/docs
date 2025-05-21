@@ -2,6 +2,7 @@
 title: Amazon DynamoDB grain persistence
 description: Learn about Azure DynamoDB grain persistence in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Amazon DynamoDB grain persistence

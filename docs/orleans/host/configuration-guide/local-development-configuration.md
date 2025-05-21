@@ -3,6 +3,7 @@ title: Local development configuration
 description: Learn how to configure .NET Orleans for local development.
 ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
+ms.topic: article
 ---
 
 # Local development configuration

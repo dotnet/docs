@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "asynchronous design patterns, .NET"
   - ".NET, asynchronous design patterns"
 ms.assetid: 4ece5c0b-f8fe-4114-9862-ac02cfe5a5d7
+ms.topic: article
 ---
 # Asynchronous programming patterns
 

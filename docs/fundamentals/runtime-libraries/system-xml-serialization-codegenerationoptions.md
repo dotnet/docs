@@ -2,6 +2,7 @@
 title: System.Xml.Serialization.CodeGenerationOptions enum
 description: Learn about the System.Xml.Serialization.CodeGenerationOptions enum.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Xml.Serialization.CodeGenerationOptions enum
 

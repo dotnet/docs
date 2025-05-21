@@ -2,6 +2,7 @@
 title: Streams implementation details
 description: Learn the stream implementation details in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Orleans streams implementation details

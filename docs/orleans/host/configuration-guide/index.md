@@ -2,6 +2,7 @@
 title: Orleans configuration guide
 description: Explore a guide on how to configure .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Orleans configuration guide

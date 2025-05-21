@@ -2,6 +2,7 @@
 title: Request context
 description: Learn about request context in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Request context

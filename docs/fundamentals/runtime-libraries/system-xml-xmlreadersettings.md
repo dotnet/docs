@@ -2,6 +2,7 @@
 title: System.Xml.XmlReaderSettings class
 description: Learn about the System.Xml.XmlReaderSettings class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Xml.XmlReaderSettings class
 

@@ -3,6 +3,7 @@ title: Orleans streaming quickstart
 description: Learn from the streaming quickstart in .NET Orleans.
 ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
+ms.topic: quickstart
 ---
 
 # Orleans streaming quickstart

@@ -2,6 +2,7 @@
 title: Data transformations
 description: Explore the feature engineering components supported in ML.NET.
 ms.date: 09/14/2022
+ms.topic: article
 ---
 
 # Data transformations

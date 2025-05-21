@@ -2,6 +2,7 @@
 title: Configure ADO.NET providers
 description: Learn how to configure ADO.NET providers in .NET Orleans.
 ms.date: 09/10/2024
+ms.topic: how-to
 ---
 
 # Configure ADO.NET providers

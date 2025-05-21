@@ -2,6 +2,7 @@
 title: The JournaledGrain API
 description: Learn the concepts of the JournaledGrain API in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # JournaledGrain Basics

@@ -2,6 +2,7 @@
 title: System.Xml.Linq.XName class
 description: Learn about the System.Xml.Linq.XName class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Xml.Linq.XName class
 

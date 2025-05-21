@@ -3,6 +3,7 @@ title: Grain lifecycle overview
 description: Learn about grain lifecycles in .NET Orleans.
 ms.date: 07/03/2024
 zone_pivot_groups: orleans-version
+ms.topic: concept-article
 ---
 
 # Grain lifecycle overview

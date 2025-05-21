@@ -13,6 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
+ms.topic: how-to
 ---
 
 # Resolve assembly loads

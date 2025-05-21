@@ -2,6 +2,7 @@
 title: System.Text.Encoding.Default property
 description: Learn about the System.Text.Encoding.Default property.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Text.Encoding.Default property
 

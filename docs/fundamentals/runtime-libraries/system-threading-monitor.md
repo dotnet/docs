@@ -5,6 +5,7 @@ ms.date: 12/31/2023
 dev_langs:
   - CSharp
   - VB
+ms.topic: article
 ---
 # System.Threading.Monitor class
 

@@ -3,6 +3,7 @@ title: Grain persistence
 description: Learn about persistence in .NET Orleans.
 ms.date: 09/10/2024
 zone_pivot_groups: orleans-version
+ms.topic: how-to
 ---
 
 # Grain persistence

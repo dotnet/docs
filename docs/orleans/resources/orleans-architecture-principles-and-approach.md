@@ -2,6 +2,7 @@
 title: Orleans architecture design principles
 description: Explore the architecture design principles for .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Orleans architecture design principles

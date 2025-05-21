@@ -2,6 +2,7 @@
 title: PowerShell client module
 description: Learn about the PowerShell client module in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # PowerShell client module

@@ -4,6 +4,7 @@ description: Learn about serialization and custom serializers in .NET Orleans.
 ms.date: 07/03/2024
 uid: orleans-serialization
 zone_pivot_groups: orleans-version
+ms.topic: article
 ---
 
 # Serialization in Orleans

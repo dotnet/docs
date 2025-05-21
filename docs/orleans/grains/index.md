@@ -2,6 +2,7 @@
 title: Develop a grain
 description: Learn how to develop a grain in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Develop a grain

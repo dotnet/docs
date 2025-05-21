@@ -2,6 +2,7 @@
 title: Azure Storage grain persistence
 description: Learn about Azure Storage grain persistence in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Azure Storage grain persistence

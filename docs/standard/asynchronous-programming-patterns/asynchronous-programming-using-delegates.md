@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "delegates [.NET], asynchronous"
   - "synchronous calling in asynchronous manner"
 ms.assetid: 38a345ca-6963-4436-9608-5c9defef9c64
+ms.topic: article
 ---
 # Asynchronous Programming Using Delegates
 

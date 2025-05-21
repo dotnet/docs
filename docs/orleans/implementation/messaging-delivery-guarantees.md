@@ -2,6 +2,7 @@
 title: Messaging delivery guarantees
 description: Learn about messaging delivery guarantees in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: concept-article
 ---
 
 # Messaging delivery guarantees

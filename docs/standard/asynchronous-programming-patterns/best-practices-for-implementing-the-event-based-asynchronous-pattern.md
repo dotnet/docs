@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 4acd2094-4f46-4eff-9190-92d0d9ff47db
+ms.topic: best-practice
 ---
 # Best Practices for Implementing the Event-based Asynchronous Pattern
 

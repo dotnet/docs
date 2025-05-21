@@ -4,6 +4,7 @@ description: Learn about the .NET assembly file format, which is used to describ
 author: richlander
 ms.date: 08/20/2019
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6
+ms.topic: article
 ---
 
 # .NET assembly file format

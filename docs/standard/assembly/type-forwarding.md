@@ -9,6 +9,7 @@ ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
 dev_langs:
   - "csharp"
   - "cpp"
+ms.topic: how-to
 ---
 
 # Type forwarding in the common language runtime

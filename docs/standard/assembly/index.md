@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "assemblies [.NET Framework]"
   - "version boundaries"
   - "type boundaries"
+ms.topic: article
 ---
 
 # Assemblies in .NET

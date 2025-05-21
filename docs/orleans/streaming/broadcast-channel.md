@@ -2,6 +2,7 @@
 title: Broadcast channels
 description: Learn how to work with Orleans broadcast channels.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Broadcast channels in Orleans

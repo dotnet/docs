@@ -2,6 +2,7 @@
 title: System.Threading.Monitor.Wait methods
 description: Learn about the System.Threading.Monitor.Wait methods.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Threading.Monitor.Wait methods
 

@@ -2,6 +2,7 @@
 title: "Set assembly attributes in project files"
 description: Learn how you can set assembly attributes using a project file.
 ms.date: 01/19/2024
+ms.topic: how-to
 ---
 
 # Set assembly attributes in a project file

@@ -2,6 +2,7 @@
 title: Adventure game sample project
 description: Explore the Adventure sample project written with .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Adventure game sample project

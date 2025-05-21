@@ -2,6 +2,7 @@
 title: Unit testing
 description: Learn how to unit test with .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Unit testing with Orleans

@@ -2,6 +2,7 @@
 title: Troubleshoot deployments
 description: Learn how to troubleshoot an Orleans app deployment.
 ms.date: 07/03/2024
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot deployments

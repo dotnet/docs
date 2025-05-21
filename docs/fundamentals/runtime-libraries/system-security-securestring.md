@@ -2,6 +2,7 @@
 title: System.Security.SecureString class
 description: Learn about the System.Security.SecureString class.
 ms.date: 12/31/2023
+ms.topic: concept-article
 ---
 # System.Security.SecureString class
 

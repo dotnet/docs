@@ -2,6 +2,7 @@
 title: Failure handling
 description: Learn how to handle failures in Orleans apps.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Failure handling

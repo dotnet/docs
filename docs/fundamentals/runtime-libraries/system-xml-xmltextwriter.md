@@ -2,6 +2,7 @@
 title: System.Xml.XmlTextWriter class
 description: Learn about the System.Xml.XmlTextWriter class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Xml.XmlTextWriter class
 

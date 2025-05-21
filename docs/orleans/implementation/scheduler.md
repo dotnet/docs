@@ -2,6 +2,7 @@
 title: Scheduling overview
 description: Explore the scheduling overview in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Scheduling overview

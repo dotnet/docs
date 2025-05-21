@@ -13,6 +13,7 @@ dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
+ms.topic: article
 ---
 # Delay-sign an assembly
 

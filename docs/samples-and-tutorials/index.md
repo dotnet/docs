@@ -4,6 +4,7 @@ description: Information on samples and tutorials for .NET Core, ASP.NET Core, a
 author: BillWagner
 ms.author: wiwagn
 ms.date: 02/01/2021
+ms.topic: tutorial
 ---
 
 # .NET samples and tutorials

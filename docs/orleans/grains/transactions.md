@@ -1,7 +1,8 @@
-﻿---
+---
 title: Transactions in Orleans
 description: Learn how to use transactions in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Orleans transactions

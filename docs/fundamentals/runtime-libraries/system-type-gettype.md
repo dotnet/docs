@@ -5,6 +5,7 @@ ms.date: 01/24/2024
 dev_langs:
   - CSharp
   - FSharp
+ms.topic: article
 ---
 # System.Type.GetType methods
 

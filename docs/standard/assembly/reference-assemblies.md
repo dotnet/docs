@@ -3,6 +3,7 @@ title: "Reference assemblies"
 description: "Learn about reference assemblies, a special type of assemblies in .NET that contain only the library's public API surface"
 author: MSDN-WhiteKnight
 ms.date: 09/12/2019
+ms.topic: article
 ---
 # Reference assemblies
 

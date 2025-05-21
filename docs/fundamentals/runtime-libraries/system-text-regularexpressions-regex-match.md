@@ -2,6 +2,7 @@
 title: System.Text.RegularExpressions.Regex.Match method
 description: Learn about the System.Text.RegularExpressions.Regex.Match method.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Text.RegularExpressions.Regex.Match method
 

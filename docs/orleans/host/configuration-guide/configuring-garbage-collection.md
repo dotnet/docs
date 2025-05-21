@@ -2,6 +2,7 @@
 title: Configure .NET garbage collection
 description: Learn how to configure .NET garbage collection in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Configure .NET garbage collection

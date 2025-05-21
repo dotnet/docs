@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 792aa8da-918b-458e-b154-9836b97735f3
+ms.topic: concept-article
 ---
 # Event-based Asynchronous Pattern Overview
 

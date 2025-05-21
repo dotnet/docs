@@ -2,6 +2,7 @@
 title: Orleans sample projects
 description: Explore the various sample projects written with .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Orleans sample projects

@@ -2,6 +2,7 @@
 title: Request scheduling
 description: Learn about request scheduling in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Request scheduling

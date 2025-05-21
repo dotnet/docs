@@ -2,6 +2,7 @@
 title: Silo configuration
 description: Learn about silo configuration in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Orleans silo configuration

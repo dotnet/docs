@@ -2,6 +2,7 @@
 title: Typical configurations
 description: Learn about typical configurations in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: article
 ---
 
 # Typical configurations

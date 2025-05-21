@@ -5,6 +5,7 @@ ms.date: 01/24/2024
 dev_langs:
   - CSharp
   - FSharp
+ms.topic: concept-article
 ---
 # System.String constructor
 

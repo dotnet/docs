@@ -2,6 +2,7 @@
 title: Ecma standards for .NET
 description: Learn about standards used in .NET, including for C# and the common language infrastructure.
 ms.date: 01/05/2022
+ms.topic: article
 ---
 # Ecma standards
 

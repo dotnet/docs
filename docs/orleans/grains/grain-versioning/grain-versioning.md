@@ -2,6 +2,7 @@
 title: Grain interface versioning
 description: Learn how to use grain interface versioning in .NET Orleans.
 ms.date: 07/03/2024
+ms.topic: how-to
 ---
 
 # Grain interface versioning

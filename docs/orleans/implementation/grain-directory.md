@@ -2,6 +2,7 @@
 title: Grain Directory Implementation
 description: Explore the implementation of the grain directory in .NET Orleans.
 ms.date: 11/22/2024
+ms.topic: how-to
 ---
 
 # Grain directory implementation

@@ -34,7 +34,7 @@ The following example uses the C# [stackalloc](/dotnet/csharp/language-reference
 :::code language="csharp" source="./snippets/System/Span/Overview/csharp/program.cs" id="Snippet3":::
 :::code language="fsharp" source="./snippets/System/Span/Overview/fsharp/program.fs" id="Snippet3":::
 
-Because `Span<T>` is an abstraction over an arbitrary block of memory, methods of the `Span<T>` type and methods with `Span<T>` parameters operate on any `Span<T>` object regardless of the kind of memory it encapsulates. For example, each of the separate sections of code that initialize the span and calculate the sum of its elements can be refactored into single initialization and calculation methods, as the following example illustrates.
+Because `Span<T>` is an abstraction over an arbitrary block of memory, methods of the `Span<T>` type and methods with `Span<T>` parameters operate on any `Span<T>` object regardless of the kind of memory it encapsulates. For example, each of the separate sections of code that initialize the span and calculate the sum of its elements can be refactored into single initialization and calculation methods, as the following example illustrates:
 
 :::code language="csharp" source="./snippets/System/Span/Overview/csharp/program.cs" id="Snippet4":::
 :::code language="fsharp" source="./snippets/System/Span/Overview/fsharp/program.fs" id="Snippet4":::

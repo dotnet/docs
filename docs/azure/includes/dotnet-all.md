@@ -386,7 +386,7 @@
 | Functions Extension MCP | NuGet [1.0.0-preview.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Mcp/1.0.0-preview.6) |  |  |
 | Functions Worker Extension MCP | NuGet [1.0.0-preview.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.0.0-preview.6) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
-| HTTP ASPNETCore Analyzers | NuGet [1.0.3](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.3) |  |  |
+| HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
 | IoT Operations MQTT | NuGet [0.10.1](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.1) |  |  |
 | IoT Operations Protocol | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.11.0) |  |  |
 | IoT Operations Services | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.11.0) |  |  |
@@ -530,7 +530,7 @@
 | Functions Extensions - Cosmos DB ChangeProcessor | NuGet [1.0.2](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.CosmosDb.ChangeProcessor/1.0.2) |  |  |
 | Functions Extensions - Dapr | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Dapr/1.0.1) |  |  |
 | Functions Extensions - Dapr Core | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Extensions.Dapr.Core/1.0.1) |  |  |
-| Functions Extensions - HTTP AspNet Core | NuGet [2.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/2.0.1) |  |  |
+| Functions Extensions - HTTP AspNet Core | NuGet [2.0.2](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore/2.0.2) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Redis | NuGet [1.0.0](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.Redis/1.0.0) |  |  |
 | Functions Extensions - Worker Extentions | NuGet [1.0.1](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Dapr/1.0.1) |  |  |

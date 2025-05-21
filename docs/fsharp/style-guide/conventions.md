@@ -545,9 +545,9 @@ let data =
             logic ()
             // ...
             if someCondition then
-                completed <- true   
+                completed <- true
     ]
-```  
+```
 
 No code can access the mutable `completed` that was used only to initialize `data` let bound value.
 
@@ -714,7 +714,7 @@ let getLineFromStream (stream: System.IO.StreamReader) : string | null =
     stream.ReadLine()
 ```
 
-**Instead**, use idiomatic F# means (e.g., options):
+**Instead**, use idiomatic F# means (for example, options):
 
 ```fsharp
 let getLineFromStream (stream: System.IO.StreamReader) =

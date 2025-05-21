@@ -22,7 +22,7 @@ This change is intended to provide a more flexible extensibility architecture.
 
 #### Recommended action
 
-Convert any implementations of `IConnectionAdapter` to use the new middleware pattern as shown [here](https://github.com/dotnet/aspnetcore/pull/11412/files#diff-89acc06acf1b2e96bbdb811ce523619f).
+Convert any implementations of `IConnectionAdapter` to use the new middleware pattern as shown in [dotnet/aspnetcore#11412](https://github.com/dotnet/aspnetcore/pull/11412/files#diff-89acc06acf1b2e96bbdb811ce523619f).
 
 #### Category
 
@@ -32,7 +32,7 @@ ASP.NET Core
 
 `Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.IConnectionAdapter`
 
-<!-- 
+<!--
 
 #### Affected APIs
 

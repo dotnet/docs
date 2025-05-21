@@ -33,7 +33,7 @@ The following table shows event information.
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |`WaitSource`|`win:UInt8`|`0x0` - Other sources.<br /><br /> `0x1` - The wait originated from managed code through the `Monitor.Wait` method.|
-|`AssociatedObjectID`|`win:Pointer`|Address of the associated object (e.g. address of `obj` in the code `lock(obj) {}`).|
+|`AssociatedObjectID`|`win:Pointer`|Address of the associated object (for example, address of `obj` in the code `lock(obj) {}`).|
 |`ClrInstanceID`|`win:UInt16`|Unique ID for the instance of CoreCLR.|
 
 ## WaitHandleWaitStop event

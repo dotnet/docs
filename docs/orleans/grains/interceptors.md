@@ -376,7 +376,7 @@ One may argue that this is pretty okay since the client would never handle the `
 
 But what if the client wants at least to log the exception? The problem is that the original error message is lost. One way to work around this issue is to intercept server-side exceptions and replace them with plain exceptions of type `Exception` if the exception type is presumably unknown on the client-side.
 
-However, there is one important thing we have to keep in mind: we only want to replace an exception **if the caller is the grain client**. We don't want to replace an exception if the caller is another grain (or the Orleans infrastructure which is making grain calls, too; e.g. on the `GrainBasedReminderTable` grain).
+However, there is one important thing we have to keep in mind: we only want to replace an exception **if the caller is the grain client**. We don't want to replace an exception if the caller is another grain (or the Orleans infrastructure which is making grain calls, too; for example, on the `GrainBasedReminderTable` grain).
 
 On the server-side this can be done with a silo-level interceptor:
 

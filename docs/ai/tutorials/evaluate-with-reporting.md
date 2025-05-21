@@ -8,7 +8,7 @@ ms.custom: devx-track-dotnet-ai
 
 # Tutorial: Evaluate a model's response with response caching and reporting
 
-In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both built-in and custom evaluators.
+In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both built-in and custom evaluators. The built-in quality evaluators (from the [Microsoft.Extensions.AI.Evaluation.Quality package](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality)) use an LLM to perform evaluations; the custom evaluator does not use AI.
 
 ## Prerequisites
 

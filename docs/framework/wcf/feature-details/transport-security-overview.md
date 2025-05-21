@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
+ms.topic: concept-article
 ---
 # Transport Security Overview
 

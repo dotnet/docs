@@ -3,6 +3,7 @@ description: "Learn more about: Instancing Initialization"
 title: "Instancing Initialization"
 ms.date: "03/30/2017"
 ms.assetid: 154d049f-2140-4696-b494-c7e53f6775ef
+ms.topic: how-to
 ---
 # Instancing Initialization
 

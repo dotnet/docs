@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "fundamentals [WCF]"
   - "Windows Communication Foundation [WCF], concepts"
 ms.assetid: 3e7e0afd-7913-499d-bafb-eac7caacbc7a
+ms.topic: concept-article
 ---
 
 # Fundamental Windows Communication Foundation Concepts

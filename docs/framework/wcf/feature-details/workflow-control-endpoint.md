@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Control Endpoint"
 title: "Workflow Control Endpoint"
 ms.date: "03/30/2017"
 ms.assetid: 1b883334-1590-4fbb-b0d6-65197efe0700
+ms.topic: article
 ---
 # Workflow Control Endpoint
 

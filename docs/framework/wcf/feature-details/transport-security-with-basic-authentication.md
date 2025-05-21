@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
+ms.topic: how-to
 ---
 # Transport Security with Basic Authentication
 

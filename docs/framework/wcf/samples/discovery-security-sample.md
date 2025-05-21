@@ -3,6 +3,7 @@ description: "Learn more about: Discovery Security Sample"
 title: "Discovery Security Sample"
 ms.date: "03/30/2017"
 ms.assetid: b8db01f4-b4a1-43fe-8e31-26d4e9304a65
+ms.topic: article
 ---
 # Discovery Security Sample
 

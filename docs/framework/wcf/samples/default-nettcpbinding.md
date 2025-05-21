@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Net profile TCP"
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
+ms.topic: how-to
 ---
 # Default NetTcpBinding
 

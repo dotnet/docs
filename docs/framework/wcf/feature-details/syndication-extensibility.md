@@ -3,6 +3,7 @@ description: "Learn more about: Syndication Extensibility"
 title: "Syndication Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 4d941175-74a2-4b15-81b3-086e8a95d25f
+ms.topic: article
 ---
 # Syndication Extensibility
 

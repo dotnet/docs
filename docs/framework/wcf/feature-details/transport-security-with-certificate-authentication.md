@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
+ms.topic: how-to
 ---
 # Transport Security with Certificate Authentication
 

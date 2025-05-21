@@ -3,6 +3,7 @@ description: "Learn more about: JSONP"
 title: "JSONP"
 ms.date: "03/30/2017"
 ms.assetid: c13b4d7b-dac7-4ffd-9f84-765c903511e1
+ms.topic: article
 ---
 # JSONP
 

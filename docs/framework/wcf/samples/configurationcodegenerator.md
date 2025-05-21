@@ -3,6 +3,7 @@ description: "Learn more about: ConfigurationCodeGenerator"
 title: "ConfigurationCodeGenerator"
 ms.date: "03/30/2017"
 ms.assetid: 3913aae8-165f-4014-9262-7fe426f90cb2
+ms.topic: article
 ---
 # ConfigurationCodeGenerator
 

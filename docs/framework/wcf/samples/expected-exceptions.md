@@ -3,6 +3,7 @@ description: "Learn more about: Expected Exceptions"
 title: "Expected Exceptions"
 ms.date: "03/30/2017"
 ms.assetid: 299a6987-ae6b-43c6-987f-12b034b583ae
+ms.topic: article
 ---
 # Expected Exceptions
 

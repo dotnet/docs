@@ -3,6 +3,7 @@ description: "Learn more about: Internet Information Service Hosting Instruction
 title: "Internet Information Service Hosting Instructions"
 ms.date: "03/30/2017"
 ms.assetid: 959a21c8-9d9d-4757-b255-4e57793ae9d6
+ms.topic: article
 ---
 # Internet Information Service Hosting Instructions
 

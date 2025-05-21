@@ -3,6 +3,7 @@ description: "Learn more about: Federation Sample"
 title: "Federation Sample"
 ms.date: "03/30/2017"
 ms.assetid: 7e9da0ca-e925-4644-aa96-8bfaf649d4bb
+ms.topic: article
 ---
 # Federation Sample
 

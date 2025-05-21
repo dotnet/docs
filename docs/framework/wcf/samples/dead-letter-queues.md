@@ -3,6 +3,7 @@ description: "Learn more about: Dead Letter Queues"
 title: "Dead Letter Queues"
 ms.date: "03/30/2017"
 ms.assetid: ff664f33-ad02-422c-9041-bab6d993f9cc
+ms.topic: article
 ---
 # Dead Letter Queues
 

@@ -3,6 +3,7 @@ description: "Learn more about: Discovery (Samples)"
 title: "Discovery (Samples)"
 ms.date: "03/30/2017"
 ms.assetid: 522a00b4-a789-4e8c-b8d7-a4c3d863a182
+ms.topic: article
 ---
 # Discovery (Samples)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Extended Protection Policy"
 title: "Extended Protection Policy"
 ms.date: "03/30/2017"
 ms.assetid: e2616a10-317e-4c34-8023-0c015a80a82f
+ms.topic: article
 ---
 # Extended Protection Policy
 

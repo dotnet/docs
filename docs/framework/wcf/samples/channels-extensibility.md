@@ -3,6 +3,7 @@ description: "Learn more about: Channels Extensibility"
 title: "Channels Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 4cc3b20b-778a-4ae8-b58c-a3822fb13065
+ms.topic: article
 ---
 # Channels Extensibility
 

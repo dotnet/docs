@@ -3,6 +3,7 @@ description: "Learn more about: Custom Channel Dispatcher"
 title: "Custom Channel Dispatcher"
 ms.date: "03/30/2017"
 ms.assetid: 813acf03-9661-4d57-a3c7-eeab497321c6
+ms.topic: article
 ---
 # Custom Channel Dispatcher
 

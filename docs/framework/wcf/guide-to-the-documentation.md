@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "WCF [WCF], documentation"
   - "Windows Communication Foundation [WCF], documentation"
 ms.assetid: 2aa18c85-a4fd-4bb9-986a-a8249e4f8e0e
+ms.topic: article
 ---
 # Guide to the Documentation
 

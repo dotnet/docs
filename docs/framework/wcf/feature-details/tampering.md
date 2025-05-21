@@ -3,6 +3,7 @@ description: "Learn more about: Tampering"
 title: "Tampering"
 ms.date: "03/30/2017"
 ms.assetid: 3bad93be-60bb-4f89-96ab-a1c3dc7c0fad
+ms.topic: concept-article
 ---
 # Tampering
 

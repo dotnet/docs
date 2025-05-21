@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Duplex Service Contract"
 ms.assetid: bc5de6b6-1a63-42a3-919a-67d21bae24e0
+ms.topic: how-to
 ---
 # Duplex
 

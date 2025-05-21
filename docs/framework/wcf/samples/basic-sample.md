@@ -3,6 +3,7 @@ description: "Learn more about: Basic Sample"
 title: "Basic Sample"
 ms.date: "03/30/2017"
 ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
+ms.topic: article
 ---
 # Basic Sample
 

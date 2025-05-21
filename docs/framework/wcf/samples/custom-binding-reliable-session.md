@@ -3,6 +3,7 @@ description: "Learn more about: Custom Binding Reliable Session"
 title: "Custom Binding Reliable Session"
 ms.date: "03/30/2017"
 ms.assetid: c5fcd409-246f-4f3e-b3f1-629506ca4c04
+ms.topic: article
 ---
 # Custom Binding Reliable Session
 

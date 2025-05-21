@@ -3,6 +3,7 @@ description: "Learn more about: AJAX Service with JSON and XML Sample"
 title: "AJAX Service with JSON and XML Sample"
 ms.date: "03/30/2017"
 ms.assetid: 8ea5860d-0c42-4ae9-941a-e07efdd8e29c
+ms.topic: article
 ---
 # AJAX Service with JSON and XML Sample
 

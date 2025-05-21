@@ -3,6 +3,7 @@ description: "Learn more about: Operating System Resources Required by WCF"
 title: "Operating System Resources Required by WCF"
 ms.date: "03/30/2017"
 ms.assetid: cdd9a331-53fe-4e0d-bdfe-782264aec5c9
+ms.topic: concept-article
 ---
 # Operating System Resources Required by WCF
 

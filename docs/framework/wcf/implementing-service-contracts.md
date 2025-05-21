@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "implementing service contracts [WCF]"
 ms.assetid: aefb6f56-47e3-4f24-ab0a-9bc07bf9885f
+ms.topic: concept-article
 ---
 # Implementing Service Contracts
 

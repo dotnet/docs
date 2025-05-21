@@ -3,6 +3,7 @@ description: "Learn more about: Chunking Channel"
 title: "Chunking Channel"
 ms.date: "03/30/2017"
 ms.assetid: e4d53379-b37c-4b19-8726-9cc914d5d39f
+ms.topic: how-to
 ---
 # Chunking Channel
 

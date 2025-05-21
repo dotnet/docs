@@ -7,6 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "message contracts [WCF]"
+ms.topic: concept-article
 ---
 # Using Message Contracts
 

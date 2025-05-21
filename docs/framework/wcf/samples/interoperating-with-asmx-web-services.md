@@ -3,6 +3,7 @@ description: "Learn more about: Interoperating with ASMX Web Services"
 title: "Interoperating with ASMX Web Services"
 ms.date: "03/30/2017"
 ms.assetid: a7c11f0a-9e68-4f03-a6b1-39cf478d1a89
+ms.topic: how-to
 ---
 # Interoperating with ASMX Web Services
 

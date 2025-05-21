@@ -3,6 +3,7 @@ description: "Learn more about: WCF Web HTTP Error Handling"
 title: "WCF Web HTTP Error Handling"
 ms.date: "03/30/2017"
 ms.assetid: 02891563-0fce-4c32-84dc-d794b1a5c040
+ms.topic: article
 ---
 # WCF Web HTTP Error Handling
 

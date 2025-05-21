@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "service behaviors, instancing sample"
   - "Instancing Sample [Windows Communication Foundation]"
 ms.assetid: c290fa54-f6ae-45a1-9186-d9504ebc6ee6
+ms.topic: how-to
 ---
 # Instancing
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9e891c6a-d960-45ea-904f-1a00e202d61a
+ms.topic: concept-article
 ---
 # Using Dead-Letter Queues to Handle Message Transfer Failures
 

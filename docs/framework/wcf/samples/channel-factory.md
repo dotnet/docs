@@ -3,6 +3,7 @@ description: "Learn more about: Channel Factory"
 title: "Channel Factory"
 ms.date: "03/30/2017"
 ms.assetid: 09b53aa1-b13c-476c-a461-e82fcacd2a8b
+ms.topic: how-to
 ---
 # Channel Factory
 

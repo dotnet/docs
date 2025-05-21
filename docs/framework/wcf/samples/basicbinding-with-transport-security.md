@@ -3,6 +3,7 @@ description: "Learn more about: BasicBinding with Transport Security"
 title: "BasicBinding with Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: f49b1de6-0254-4362-8ef2-fccd8ff9688b
+ms.topic: how-to
 ---
 # BasicBinding with Transport Security
 

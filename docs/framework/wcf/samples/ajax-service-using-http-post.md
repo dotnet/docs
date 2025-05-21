@@ -3,6 +3,7 @@ description: "Learn more about: AJAX Service Using HTTP POST"
 title: "AJAX Service Using HTTP POST"
 ms.date: "03/30/2017"
 ms.assetid: 1ac80f20-ac1c-4ed1-9850-7e49569ff44e
+ms.topic: article
 ---
 # AJAX Service Using HTTP POST
 

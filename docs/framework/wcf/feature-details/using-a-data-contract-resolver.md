@@ -3,6 +3,7 @@ description: "Learn more about: Using a Data Contract Resolver"
 title: "Using a Data Contract Resolver"
 ms.date: "03/30/2017"
 ms.assetid: 2e68a16c-36f0-4df4-b763-32021bff2b89
+ms.topic: concept-article
 ---
 # Using a Data Contract Resolver
 

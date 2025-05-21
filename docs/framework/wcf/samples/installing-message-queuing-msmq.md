@@ -3,6 +3,7 @@ title: "Installing Message Queuing (MSMQ)"
 description: Learn how to install Message Queuing 4.0 and Message Queuing 3.0 to use with WFC samples as part of a one-time setup procedure.
 ms.date: "03/30/2017"
 ms.assetid: 7ddcd497-3e04-427e-bc04-3610ad98b01e
+ms.topic: how-to
 ---
 # Installing Message Queuing (MSMQ)
 

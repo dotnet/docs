@@ -3,6 +3,7 @@ description: "Learn more about: Publishing Metadata Endpoints"
 title: "Publishing Metadata Endpoints"
 ms.date: "03/30/2017"
 ms.assetid: 29cd8a60-dfb7-460c-bf5a-c2b31b782671
+ms.topic: concept-article
 ---
 # Publishing Metadata Endpoints
 

@@ -3,6 +3,7 @@ description: "Learn more about: CustomChannelsTester"
 title: "CustomChannelsTester"
 ms.date: "03/30/2017"
 ms.assetid: ee1fa307-98b1-4647-8860-2e9217ba6082
+ms.topic: article
 ---
 # CustomChannelsTester
 

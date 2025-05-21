@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c2ce8461-3c15-4c41-8c81-1cb78f5b59a6
+ms.topic: article
 ---
 # XML and ADO.NET Types in Data Contracts
 

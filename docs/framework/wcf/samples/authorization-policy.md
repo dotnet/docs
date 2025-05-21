@@ -3,6 +3,7 @@ description: "Learn more about: Authorization Policy"
 title: "Authorization Policy"
 ms.date: "03/30/2017"
 ms.assetid: 1db325ec-85be-47d0-8b6e-3ba2fdf3dda0
+ms.topic: article
 ---
 # Authorization Policy
 

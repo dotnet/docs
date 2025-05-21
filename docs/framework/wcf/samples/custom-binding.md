@@ -3,6 +3,7 @@ description: "Learn more about: Custom Binding"
 title: "Custom Binding"
 ms.date: "03/30/2017"
 ms.assetid: 3c9537ea-9708-4ebc-b861-219f2e2db53d
+ms.topic: article
 ---
 # Custom Binding
 

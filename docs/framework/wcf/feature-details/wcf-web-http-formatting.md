@@ -3,6 +3,7 @@ description: "Learn more about: WCF Web HTTP formatting"
 title: "WCF Web HTTP formatting"
 ms.date: "03/30/2017"
 ms.assetid: e2414896-5463-41cd-b0a6-026a713eac2c
+ms.topic: article
 ---
 # WCF Web HTTP formatting
 

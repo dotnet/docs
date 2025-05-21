@@ -3,6 +3,7 @@ description: "Learn more about: Durable Issued Token Provider"
 title: "Durable Issued Token Provider"
 ms.date: "03/30/2017"
 ms.assetid: 76fb27f5-8787-4b6a-bf4c-99b4be1d2e8b
+ms.topic: article
 ---
 # Durable Issued Token Provider
 

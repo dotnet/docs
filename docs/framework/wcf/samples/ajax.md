@@ -3,6 +3,7 @@ description: "Learn more about: AJAX"
 title: "AJAX"
 ms.date: "03/30/2017"
 ms.assetid: 9e0eb40a-69ef-4821-bdc3-45a9b71a58c3
+ms.topic: article
 ---
 # AJAX
 

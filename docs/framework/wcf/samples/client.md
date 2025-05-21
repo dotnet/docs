@@ -3,6 +3,7 @@ description: "Learn more about: Client"
 title: "Client"
 ms.date: "03/30/2017"
 ms.assetid: fabb0c70-b79b-4e58-a5d3-9705de85ee5b
+ms.topic: article
 ---
 # Client
 

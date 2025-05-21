@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "WS-protocols"
   - "Web services protocols"
   - "Windows Communication Foundation, Web service protocols"
+ms.topic: article
 ---
 # Web Services Protocols Supported by System-Provided Interoperability Bindings
 

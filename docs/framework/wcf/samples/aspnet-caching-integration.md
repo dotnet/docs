@@ -3,6 +3,7 @@ description: "Learn more about: ASP.NET Caching Integration"
 title: "ASP.NET Caching Integration"
 ms.date: "03/30/2017"
 ms.assetid: f581923a-8a72-42fc-bd6a-46de2aaeecc1
+ms.topic: article
 ---
 # ASP.NET Caching Integration
 

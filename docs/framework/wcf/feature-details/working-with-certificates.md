@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "certificates [WCF]"
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
+ms.topic: how-to
 ---
 # Working with certificates
 

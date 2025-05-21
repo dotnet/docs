@@ -3,6 +3,7 @@ description: "Learn more about: Custom lifetime"
 title: "Custom lifetime"
 ms.date: "08/20/2018"
 ms.assetid: 52806c07-b91c-48fe-b992-88a41924f51f
+ms.topic: article
 ---
 # Custom lifetime
 

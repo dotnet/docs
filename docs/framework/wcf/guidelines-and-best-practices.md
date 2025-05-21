@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "WCF, best practices"
   - "Windows Communication Foundation, guidelines"
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
+ms.topic: best-practice
 ---
 # Guidelines and Best Practices
 

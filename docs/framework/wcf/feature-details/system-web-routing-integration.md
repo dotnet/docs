@@ -3,6 +3,7 @@ description: "Learn more about: System.Web.Routing Integration"
 title: "System.Web.Routing Integration"
 ms.date: "03/30/2017"
 ms.assetid: 31fe2a4f-5c47-4e5d-8ee1-84c524609d41
+ms.topic: concept-article
 ---
 # System.Web.Routing Integration
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], discovery"
   - "discovery [WCF]"
 ms.assetid: 462c4913-f388-45a9-9042-28ae96a4e735
+ms.topic: article
 ---
 # WCF Discovery
 

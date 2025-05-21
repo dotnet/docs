@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Services"
 title: "Workflow Services"
 ms.date: "03/30/2017"
 ms.assetid: 7b05c766-f181-425d-9a3d-2a5e150c85f7
+ms.topic: article
 ---
 # Workflow Services
 

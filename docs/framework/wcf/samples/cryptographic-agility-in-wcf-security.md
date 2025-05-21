@@ -3,6 +3,7 @@ description: "Learn more about: Cryptographic agility in WCF security"
 title: "Cryptographic agility in WCF security"
 ms.date: "03/30/2017"
 ms.assetid: c2c549e5-ac19-40c5-b686-8f67f52b6dbf
+ms.topic: article
 ---
 # Cryptographic agility in WCF security
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
+ms.topic: how-to
 ---
 # Transport Security with Windows Authentication
 

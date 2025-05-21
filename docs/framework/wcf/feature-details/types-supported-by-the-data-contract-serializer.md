@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "serialization [WCF], supported types"
 ms.assetid: 7381b200-437a-4506-9556-d77bf1bc3f34
+ms.topic: article
 ---
 # Types Supported by the Data Contract Serializer
 

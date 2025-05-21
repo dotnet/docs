@@ -3,6 +3,7 @@ description: "Learn more about: Basic HTTP Service"
 title: "Basic HTTP Service"
 ms.date: "03/30/2017"
 ms.assetid: 27048b43-8a54-4f2a-9952-594bbfab10ad
+ms.topic: article
 ---
 # Basic HTTP Service
 

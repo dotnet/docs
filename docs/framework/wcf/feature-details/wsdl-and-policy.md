@@ -3,6 +3,7 @@ description: "Learn more about: WSDL and Policy"
 title: "WSDL and Policy"
 ms.date: "03/30/2017"
 ms.assetid: cea87440-3519-4640-8494-b8a2b0e88c84
+ms.topic: article
 ---
 # WSDL and Policy
 

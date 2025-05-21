@@ -3,6 +3,7 @@ description: "Learn more about: Custom Binding Reliable Session over HTTPS"
 title: "Custom Binding Reliable Session over HTTPS"
 ms.date: "03/30/2017"
 ms.assetid: 16aaa80d-3ffe-47c4-8b16-ec65c4d25f8d
+ms.topic: article
 ---
 # Custom Binding Reliable Session over HTTPS
 

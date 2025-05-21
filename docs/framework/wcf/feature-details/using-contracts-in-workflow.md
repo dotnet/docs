@@ -3,6 +3,7 @@ description: "Learn more about: Using Contracts in Workflow"
 title: "Using Contracts in Workflow"
 ms.date: "03/30/2017"
 ms.assetid: 939c64e9-e7cc-4abc-b41e-27cfce1d7e50
+ms.topic: concept-article
 ---
 # Using Contracts in Workflow
 

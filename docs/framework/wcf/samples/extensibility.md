@@ -3,6 +3,7 @@ description: "Learn more about: Extensibility"
 title: "Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: cd7ddffc-a261-44aa-bd50-33c1c74f0df0
+ms.topic: article
 ---
 # Extensibility
 

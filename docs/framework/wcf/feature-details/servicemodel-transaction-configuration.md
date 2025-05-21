@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transactions [WCF], ServiceModel configuration"
 ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
+ms.topic: article
 ---
 # ServiceModel Transaction Configuration
 

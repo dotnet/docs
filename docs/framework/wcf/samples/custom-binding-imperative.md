@@ -3,6 +3,7 @@ description: "Learn more about: Custom Binding Imperative"
 title: "Custom Binding Imperative"
 ms.date: "03/30/2017"
 ms.assetid: 6e13bf96-5de0-4476-b646-5f150774418d
+ms.topic: article
 ---
 # Custom Binding Imperative
 

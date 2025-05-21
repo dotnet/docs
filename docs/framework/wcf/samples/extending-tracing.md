@@ -3,6 +3,7 @@ description: "Learn more about: Extend tracing"
 title: "Extending Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 2b971a99-16ec-4949-ad2e-b0c8731a873f
+ms.topic: how-to
 ---
 # Extend tracing
 

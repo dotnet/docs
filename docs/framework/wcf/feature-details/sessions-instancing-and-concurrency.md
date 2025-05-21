@@ -3,6 +3,7 @@ title: "Sessions, Instancing, and Concurrency"
 description: Learn about sessions, instancing, and concurrency, how to use them, and the interactions between them in WFC.
 ms.date: "03/30/2017"
 ms.assetid: 50797a3b-7678-44ed-8138-49ac1602f35b
+ms.topic: article
 ---
 # Sessions, Instancing, and Concurrency
 

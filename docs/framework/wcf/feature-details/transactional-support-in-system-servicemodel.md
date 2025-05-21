@@ -3,6 +3,7 @@ description: "Learn more about: Transactional Support in System.ServiceModel"
 title: "Transactional Support in System.ServiceModel"
 ms.date: "03/30/2017"
 ms.assetid: e7e54ed3-d1e5-4aa7-a653-1300c6b304eb
+ms.topic: article
 ---
 # Transactional Support in System.ServiceModel
 

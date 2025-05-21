@@ -3,6 +3,7 @@ description: "Learn more about: Dispatch by Body Element"
 title: "Dispatch by Body Element"
 ms.date: "03/30/2017"
 ms.assetid: f64a3c04-62b4-47b2-91d9-747a3af1659f
+ms.topic: how-to
 ---
 # Dispatch by Body Element
 

@@ -3,6 +3,7 @@ description: "Learn more about: Imperative"
 title: "Imperative"
 ms.date: "03/30/2017"
 ms.assetid: 4f7ce807-c0e4-407a-92a6-22abafb40b51
+ms.topic: article
 ---
 # Imperative
 

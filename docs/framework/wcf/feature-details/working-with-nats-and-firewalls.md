@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "firewalls [WCF]"
   - "NATs [WCF]"
 ms.assetid: 74db0632-1bf0-428b-89c8-bd53b64332e7
+ms.topic: how-to
 ---
 # Working with NATs and Firewalls
 

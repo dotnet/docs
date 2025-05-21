@@ -3,6 +3,7 @@ description: "Learn more about: AJAX Service Without Configuration"
 title: "AJAX Service Without Configuration"
 ms.date: "03/30/2017"
 ms.assetid: e6db7acd-5679-45d4-b98a-8449c6873838
+ms.topic: article
 ---
 # AJAX Service Without Configuration
 

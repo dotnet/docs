@@ -3,6 +3,7 @@ title: "Transport Security"
 description: Use these references to understand the transport security mechanisms in WFC, how they are implemented, and their options.
 ms.date: "03/30/2017"
 ms.assetid: 86c94153-e48d-4539-b6cf-cd8060582e7f
+ms.topic: article
 ---
 # Transport Security
 

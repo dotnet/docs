@@ -5,6 +5,7 @@ ms.date: "12/04/2017"
 helpviewer_keywords:
   - "FindPrivateKey"
 ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
+ms.topic: article
 ---
 # FindPrivateKey sample
 

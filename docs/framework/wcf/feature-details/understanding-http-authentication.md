@@ -3,6 +3,7 @@ title: "Understanding HTTP Authentication"
 description: Review this introduction to HTTP authentication in WCF, including HTTP authentication schemes and choosing an authentication scheme.
 ms.date: "03/30/2017"
 ms.assetid: 9376309a-39e3-4819-b47b-a73982b57620
+ms.topic: concept-article
 ---
 # Understanding HTTP Authentication
 

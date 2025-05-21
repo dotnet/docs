@@ -3,6 +3,7 @@ description: "Learn more about: Client Validation"
 title: "Client Validation"
 ms.date: "03/30/2017"
 ms.assetid: f0c1f805-1a81-4d0d-a112-bf5e2e87a631
+ms.topic: article
 ---
 # Client Validation
 

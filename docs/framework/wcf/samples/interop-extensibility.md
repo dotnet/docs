@@ -3,6 +3,7 @@ description: "Learn more about: Interop Extensibility"
 title: "Interop Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: 384a012a-d92d-40d1-b1a5-9c18ca932fcc
+ms.topic: article
 ---
 # Interop Extensibility
 

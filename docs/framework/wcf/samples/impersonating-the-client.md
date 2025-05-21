@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Impersonating the Client Sample [Windows Communication Foundation]"
   - "impersonation, Windows Communication Foundation sample"
 ms.assetid: 8bd974e1-90db-4152-95a3-1d4b1a7734f8
+ms.topic: how-to
 ---
 # Impersonating the Client
 

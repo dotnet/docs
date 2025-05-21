@@ -3,6 +3,7 @@ description: "Learn more about: WCF Discovery Overview"
 title: "WCF Discovery Overview"
 ms.date: "03/30/2017"
 ms.assetid: 84fad0e4-23b1-45b5-a2d4-c9cdf90bbb22
+ms.topic: article
 ---
 # WCF Discovery Overview
 

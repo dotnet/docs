@@ -3,6 +3,7 @@ description: "Learn more about: Custom Binding Security"
 title: "Custom Binding Security"
 ms.date: "03/30/2017"
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
+ms.topic: article
 ---
 # Custom Binding Security
 

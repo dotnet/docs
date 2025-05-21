@@ -3,6 +3,7 @@ title: "Firewall Instructions"
 description: Learn how to enable ports or programs in the firewall for WCF samples. Use one of these procedures, depending on your requirements and security environment.
 ms.date: "03/30/2017"
 ms.assetid: a7dc429f-65ac-4faf-974a-77d5fb977fe1
+ms.topic: article
 ---
 # Firewall instructions
 

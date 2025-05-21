@@ -3,6 +3,7 @@ description: "Learn more about: BasicBinding"
 title: "BasicBinding"
 ms.date: "03/30/2017"
 ms.assetid: 86fbeb87-4d89-4b61-9577-867e0ac12945
+ms.topic: how-to
 ---
 # BasicBinding
 

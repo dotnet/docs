@@ -3,6 +3,7 @@ description: "Learn more about: Discovery with Scopes Sample"
 title: "Discovery with Scopes Sample"
 ms.date: "03/30/2017"
 ms.assetid: 6a37a754-6b8c-4ebe-bdf2-d4f0520271d5
+ms.topic: article
 ---
 # Discovery with Scopes Sample
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 6c0b353d-79ee-4e61-b348-be49ad0e9a16
+ms.topic: article
 ---
 # Custom Binding Transport and Encoding
 

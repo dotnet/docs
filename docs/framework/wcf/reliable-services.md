@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], reliable sessions"
   - "service contracts [WCF], reliable services"
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
+ms.topic: article
 ---
 # Reliable Services
 

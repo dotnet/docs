@@ -3,6 +3,7 @@ description: "Learn more about: Configuration Channel Factory"
 title: "Configuration Channel Factory"
 ms.date: "03/30/2017"
 ms.assetid: 3b749493-bd8a-4ccb-893e-5948901a1486
+ms.topic: article
 ---
 # Configuration Channel Factory
 

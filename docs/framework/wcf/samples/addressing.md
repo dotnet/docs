@@ -3,6 +3,7 @@ description: "Learn more about: Addressing"
 title: "Addressing"
 ms.date: "03/30/2017"
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
+ms.topic: how-to
 ---
 # Addressing
 

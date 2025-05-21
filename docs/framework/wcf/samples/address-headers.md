@@ -3,6 +3,7 @@ description: "Learn more about: Address Headers"
 title: "Address Headers"
 ms.date: "03/30/2017"
 ms.assetid: b0c94d4a-3bde-4b4d-bb6d-9f12bc3a6940
+ms.topic: how-to
 ---
 
 # Address Headers

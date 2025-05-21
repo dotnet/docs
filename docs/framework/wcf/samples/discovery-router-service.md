@@ -3,6 +3,7 @@ description: "Learn more about: Discovery Router Service"
 title: "Discovery Router Service"
 ms.date: "03/30/2017"
 ms.assetid: 3d30af47-b24f-40e5-833a-24d77125c9e6
+ms.topic: article
 ---
 # Discovery Router Service
 

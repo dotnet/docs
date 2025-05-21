@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF]"
   - "WCF [WCF]"
 ms.assetid: 149348a6-bf82-4ccc-9604-fa7cc88c0749
+ms.topic: article
 ---
 # Develop Service-Oriented Applications with WCF
 

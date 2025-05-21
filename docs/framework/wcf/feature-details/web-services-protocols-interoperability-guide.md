@@ -3,6 +3,7 @@ description: "Learn more about: Web services protocols interoperability guide"
 title: Web services protocols interoperability guide
 ms.date: 03/30/2017
 ms.assetid: f2981678-ebdb-433d-899b-467f7df95fb2
+ms.topic: article
 ---
 # Web services protocols interoperability guide
 

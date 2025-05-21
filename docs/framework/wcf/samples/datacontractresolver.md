@@ -3,6 +3,7 @@ description: "Learn more about: DataContractResolver"
 title: "DataContractResolver"
 ms.date: "03/30/2017"
 ms.assetid: 6c200c02-bc14-4b8d-bbab-9da31185b805
+ms.topic: article
 ---
 # DataContractResolver
 

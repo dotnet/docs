@@ -3,6 +3,7 @@ description: "Learn more about: Client Interoperability"
 title: "Client Interoperability"
 ms.date: "03/30/2017"
 ms.assetid: e890e40a-b76a-48c4-9e5b-a4b385fac847
+ms.topic: article
 ---
 # Client Interoperability
 

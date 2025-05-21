@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "WCF, privacy information"
   - "privacy information [WCF]"
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
+ms.topic: article
 ---
 # Windows Communication Foundation privacy information
 

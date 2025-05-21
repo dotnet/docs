@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "POX"
   - "REST"
 ms.assetid: 2312a8d3-b66e-4623-ba42-978434300c7f
+ms.topic: article
 ---
 # WCF Web HTTP Programming Model
 

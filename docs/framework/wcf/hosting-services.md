@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting services [WCF]"
 ms.assetid: 192be927-6be2-4fda-98f0-e513c4881acc
+ms.topic: concept-article
 ---
 # Hosting services
 

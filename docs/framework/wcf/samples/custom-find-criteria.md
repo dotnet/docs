@@ -3,6 +3,7 @@ description: "Learn more about: Custom Find Criteria"
 title: "Custom Find Criteria"
 ms.date: "03/30/2017"
 ms.assetid: b2723929-8829-424d-8015-a37ba2ab4f68
+ms.topic: article
 ---
 # Custom Find Criteria
 

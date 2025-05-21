@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "basic samples [WCF], getting started"
 ms.assetid: 967a3d94-0261-49ff-b85a-20bb07f1af20
+ms.topic: get-started
 ---
 
 # Getting Started Sample

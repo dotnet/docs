@@ -2,6 +2,7 @@
 title: "Windows Communication Foundation (WCF) samples"
 description: Download Windows Communication Foundation (WCF) samples for .NET Framework. The samples provide instruction on various aspects of WCF.
 ms.date: 09/24/2018
+ms.topic: article
 ---
 # Windows Communication Foundation (WCF) samples
 

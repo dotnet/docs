@@ -3,6 +3,7 @@ description: "Learn more about: Custom Message Encoder: Compression Encoder"
 title: "Custom Message Encoder: Compression Encoder"
 ms.date: "03/30/2017"
 ms.assetid: 57450b6c-89fe-4b8a-8376-3d794857bfd7
+ms.topic: article
 ---
 # Custom Message Encoder: Compression Encoder
 

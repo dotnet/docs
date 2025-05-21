@@ -3,6 +3,7 @@ description: "Learn more about: WCF Web HTTP Service Help Page"
 title: "WCF Web HTTP Service Help Page"
 ms.date: "03/30/2017"
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
+ms.topic: article
 ---
 # WCF Web HTTP Service Help Page
 

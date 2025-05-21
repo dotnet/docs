@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
+ms.topic: how-to
 ---
 # Side by Side Versioning in WorkflowServiceHost
 

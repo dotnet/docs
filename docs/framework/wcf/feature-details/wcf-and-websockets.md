@@ -3,6 +3,7 @@ description: "Learn more about: WCF and WebSockets"
 title: "WCF and WebSockets"
 ms.date: "03/30/2017"
 ms.assetid: 1e53b49e-022c-49c7-8984-4b21b53c05b3
+ms.topic: article
 ---
 # WCF and WebSockets
 

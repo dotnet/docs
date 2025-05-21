@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 056653a5-384e-4a02-ae3c-1b0157d2ccb4
+ms.topic: how-to
 ---
 # Transport security with an anonymous client
 

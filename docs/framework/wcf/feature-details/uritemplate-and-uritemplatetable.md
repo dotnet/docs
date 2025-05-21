@@ -3,6 +3,7 @@ description: "Learn more about: UriTemplate and UriTemplateTable"
 title: "UriTemplate and UriTemplateTable"
 ms.date: "03/30/2017"
 ms.assetid: 5cbbe03f-4a9e-4d44-9e02-c5773239cf52
+ms.topic: article
 ---
 # UriTemplate and UriTemplateTable
 

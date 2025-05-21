@@ -3,6 +3,7 @@ description: "Learn more about: Using JSONP"
 title: "Using JSONP"
 ms.date: "03/30/2017"
 ms.assetid: f386718c-b4ba-4931-a610-40c27a46672a
+ms.topic: concept-article
 ---
 
 # Using JSONP

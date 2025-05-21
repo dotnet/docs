@@ -3,6 +3,7 @@ description: "Learn more about: Transaction Protocols"
 title: "Transaction Protocols"
 ms.date: "03/30/2017"
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
+ms.topic: article
 ---
 # Transaction Protocols
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Message Contract"
 ms.assetid: 5a200b78-1a46-4104-b7fb-da6dbab33893
+ms.topic: how-to
 ---
 # Default Message Contract
 

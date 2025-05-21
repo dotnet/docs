@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WS-AT protocol [WCF]"
 ms.assetid: 04a4c200-0af0-4c5d-a3d9-87cb7339e054
+ms.topic: concept-article
 ---
 # Using WS-AtomicTransaction
 

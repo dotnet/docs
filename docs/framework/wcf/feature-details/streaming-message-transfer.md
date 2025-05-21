@@ -3,6 +3,7 @@ description: "Learn more about: Streaming Message Transfer"
 title: "Streaming Message Transfer"
 ms.date: "03/30/2017"
 ms.assetid: 72a47a51-e5e7-4b76-b24a-299d51e0ae5a
+ms.topic: concept-article
 ---
 # Streaming Message Transfer
 

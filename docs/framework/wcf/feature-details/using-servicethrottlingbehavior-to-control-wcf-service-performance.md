@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "behavior [WCF], service performance"
 ms.assetid: f9dc120c-dc24-49d5-930e-b22f5bc73423
+ms.topic: concept-article
 ---
 # Using ServiceThrottlingBehavior to Control WCF Service Performance
 

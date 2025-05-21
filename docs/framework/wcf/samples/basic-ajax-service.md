@@ -3,6 +3,7 @@ description: "Learn more about: Basic AJAX Service"
 title: "Basic AJAX Service"
 ms.date: "03/30/2017"
 ms.assetid: d66d0c91-0109-45a0-a901-f3e4667c2465
+ms.topic: article
 ---
 # Basic AJAX Service
 

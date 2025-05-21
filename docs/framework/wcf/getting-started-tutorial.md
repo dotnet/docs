@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], get started"
   - "get started [WCF]"
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
+ms.topic: get-started
 ---
 # Tutorial: Get started with Windows Communication Foundation applications
 

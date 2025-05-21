@@ -3,6 +3,7 @@ title: "Migrating from .NET Remoting to WCF"
 description: Learn how to migrate an application that uses .NET Remoting to use WCF. You can accomplish several common remoting scenarios in WCF.
 ms.date: "03/30/2017"
 ms.assetid: 16902a42-ef80-40e9-8c4c-90e61ddfdfe5
+ms.topic: how-to
 ---
 # Migrating from .NET Remoting to WCF
 

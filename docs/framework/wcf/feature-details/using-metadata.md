@@ -3,6 +3,7 @@ description: "Learn more about: Using Metadata"
 title: "Using Metadata"
 ms.date: "03/30/2017"
 ms.assetid: 05cf53a1-b92d-4d8e-a87e-79f6e51c4a8d
+ms.topic: concept-article
 ---
 # Using Metadata
 

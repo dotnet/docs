@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "XML Formatter"
 ms.assetid: e0a2fe89-3534-48c8-aa3c-819862224571
+ms.topic: article
 ---
 # DataContractSerializer Sample
 

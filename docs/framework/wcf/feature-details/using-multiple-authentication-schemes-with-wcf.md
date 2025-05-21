@@ -3,6 +3,7 @@ description: "Learn more about: Using Multiple Authentication Schemes with WCF"
 title: "Using Multiple Authentication Schemes with WCF"
 ms.date: "03/30/2017"
 ms.assetid: f32a56a0-e2b2-46bf-a302-29e1275917f9
+ms.topic: concept-article
 ---
 # Using Multiple Authentication Schemes with WCF
 

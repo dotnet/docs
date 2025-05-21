@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "service behaviors, concurency sample"
   - "Concurrency Sample [Windows Communication Foundation]"
 ms.assetid: f8dbdfb3-6858-4f95-abe3-3a1db7878926
+ms.topic: article
 ---
 # Concurrency
 

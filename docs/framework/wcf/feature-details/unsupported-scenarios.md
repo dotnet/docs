@@ -3,6 +3,7 @@ description: "Learn more about: Unsupported scenarios"
 title: "Unsupported Scenarios"
 ms.date: "03/30/2017"
 ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
+ms.topic: article
 ---
 # Unsupported scenarios
 

@@ -3,6 +3,7 @@ description: "Learn more about the WCF samples for endpoint binding."
 title: "Binding WCF Samples"
 ms.date: "03/30/2017"
 ms.assetid: 324fa627-d012-465a-b266-95594a09dac2
+ms.topic: concept-article
 ---
 # Endpoint binding samples
 

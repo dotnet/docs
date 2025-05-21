@@ -3,6 +3,7 @@ description: "Learn more about: Web Hosting a Queued Application"
 title: "Web Hosting a Queued Application"
 ms.date: "03/30/2017"
 ms.assetid: c7a539fa-e442-4c08-a7f1-17b7f5a03e88
+ms.topic: article
 ---
 # Web Hosting a Queued Application
 

@@ -3,6 +3,7 @@ description: "Learn more about: AJAX Service Using Complex Types Sample"
 title: "AJAX Service Using Complex Types Sample"
 ms.date: "03/30/2017"
 ms.assetid: 88242b99-4811-4cbe-8201-52ddf48fb174
+ms.topic: article
 ---
 # AJAX Service Using Complex Types Sample
 

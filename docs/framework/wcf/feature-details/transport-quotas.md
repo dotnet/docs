@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transport quotas [WCF]"
 ms.assetid: 3e71dd3d-f981-4d9c-9c06-ff8abb61b717
+ms.topic: how-to
 ---
 # Transport Quotas
 

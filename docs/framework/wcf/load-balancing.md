@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "load balancing [WCF]"
 ms.assetid: 148e0168-c08d-4886-8769-776d0953b80f
+ms.topic: how-to
 ---
 # Load Balancing
 

@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Service Host Extensibility"
 title: "Workflow Service Host Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: c0e8f7bb-cb13-49ec-852f-b85d7c23972f
+ms.topic: article
 ---
 # Workflow Service Host Extensibility
 

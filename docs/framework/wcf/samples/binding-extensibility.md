@@ -3,6 +3,7 @@ description: "Learn more about: Binding Extensibility"
 title: "Binding Extensibility"
 ms.date: "03/30/2017"
 ms.assetid: cabdd583-ddf5-493e-9dba-c6c31cde8f65
+ms.topic: concept-article
 ---
 # Binding Extensibility
 

@@ -3,6 +3,7 @@ description: "Learn more about: Supported deployment scenarios"
 title: "Supported deployment scenarios"
 ms.date: "03/30/2017"
 ms.assetid: 3399f208-3504-4c70-a22e-a7c02a8b94a6
+ms.topic: article
 ---
 # Supported deployment scenarios
 

@@ -3,6 +3,7 @@ description: "Learn more about: Using Impersonation with Transport Security"
 title: "Using Impersonation with Transport Security"
 ms.date: "03/30/2017"
 ms.assetid: 426df8cb-6337-4262-b2c0-b96c2edf21a9
+ms.topic: concept-article
 ---
 # Using Impersonation with Transport Security
 

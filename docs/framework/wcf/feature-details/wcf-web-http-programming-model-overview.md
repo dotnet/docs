@@ -3,6 +3,7 @@ description: "Learn more about: WCF Web HTTP Programming Model Overview"
 title: "WCF Web HTTP Programming Model Overview"
 ms.date: "03/30/2017"
 ms.assetid: 381fdc3a-6e6c-4890-87fe-91cca6f4b476
+ms.topic: concept-article
 ---
 # WCF Web HTTP Programming Model Overview
 

@@ -3,6 +3,7 @@ description: "Learn more about: WCF Discovery Object Model"
 title: "WCF Discovery Object Model"
 ms.date: "03/30/2017"
 ms.assetid: 8365a152-eacd-4779-9130-bbc48fa5c5d9
+ms.topic: article
 ---
 # WCF Discovery Object Model
 

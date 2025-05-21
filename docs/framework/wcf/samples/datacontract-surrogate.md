@@ -3,6 +3,7 @@ description: "Learn more about: DataContract Surrogate"
 title: "DataContract Surrogate"
 ms.date: "03/30/2017"
 ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
+ms.topic: article
 ---
 # DataContract Surrogate
 

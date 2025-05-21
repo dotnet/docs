@@ -3,6 +3,7 @@ description: "Learn more about: WAS Activation Architecture"
 title: "WAS Activation Architecture"
 ms.date: "03/30/2017"
 ms.assetid: 58aeffb0-8f3f-4b40-80c8-15f3f1652fd3
+ms.topic: article
 ---
 # WAS Activation Architecture
 

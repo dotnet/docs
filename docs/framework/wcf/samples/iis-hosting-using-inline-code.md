@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Web hosted service"
   - "IIS Hosting Using Inline Code Sample [Windows Communication Foundation]"
 ms.assetid: 56fe3687-a34b-4661-8e30-b33770f413fa
+ms.topic: article
 ---
 # IIS Hosting Using Inline Code
 

@@ -3,6 +3,7 @@ description: "Learn more about: Using the NetHttpBinding"
 title: "Using the NetHttpBinding"
 ms.date: "03/30/2017"
 ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
+ms.topic: how-to
 ---
 # Using the NetHttpBinding
 

@@ -3,6 +3,7 @@ title: "Custom Message Encoder: Custom Text Encoder"
 description: Use this sample to implement a custom text message encoder using WCF. This encoder supports all platform-supported character encodings for interoperability.
 ms.date: "03/30/2017"
 ms.assetid: 68ff5c74-3d33-4b44-bcae-e1d2f5dea0de
+ms.topic: article
 ---
 # Custom Message Encoder: Custom Text Encoder
 

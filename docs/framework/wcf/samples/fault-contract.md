@@ -3,6 +3,7 @@ description: "Learn more about: Fault Contract"
 title: "Fault Contract"
 ms.date: "03/30/2017"
 ms.assetid: b31b140e-dc3b-408b-b3c7-10b6fe769725
+ms.topic: how-to
 ---
 # Fault Contract
 

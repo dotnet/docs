@@ -3,6 +3,7 @@ description: "Learn more about: Behaviors"
 title: "Behaviors"
 ms.date: "03/30/2017"
 ms.assetid: b0885b65-4e74-4bc9-bbf0-eb7ebe566da1
+ms.topic: article
 ---
 # Behaviors
 

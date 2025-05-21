@@ -3,6 +3,7 @@ description: "Learn more about: ASMX Client with a WCF Service"
 title: "ASMX Client with a WCF Service"
 ms.date: "03/30/2017"
 ms.assetid: 3ea381ee-ac7d-4d62-8c6c-12dc3650879f
+ms.topic: article
 ---
 # ASMX Client with a WCF Service
 

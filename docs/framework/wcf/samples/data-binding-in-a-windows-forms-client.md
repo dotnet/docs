@@ -3,6 +3,7 @@ description: "Learn more about: Data Binding in a Windows Forms Client"
 title: "Data Binding in a Windows Forms Client"
 ms.date: "03/30/2017"
 ms.assetid: a2a30b37-d6e2-4552-820e-e60b2bbe8829
+ms.topic: article
 ---
 # Data Binding in a Windows Forms Client
 

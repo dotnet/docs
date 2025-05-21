@@ -3,6 +3,7 @@ description: "Learn more about: Behavior Security"
 title: "Behavior Security"
 ms.date: "03/30/2017"
 ms.assetid: 19710ae3-f197-4d28-ba9d-52e465006819
+ms.topic: article
 ---
 # Behavior Security
 

@@ -3,6 +3,7 @@ description: "Learn more about: Data Binding in an ASP.NET Client"
 title: "Data Binding in an ASP.NET Client"
 ms.date: "03/30/2017"
 ms.assetid: 68b49fa6-94e7-4d4c-a34e-902a2b3770b6
+ms.topic: article
 ---
 # Data Binding in an ASP.NET Client
 

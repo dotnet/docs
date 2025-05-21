@@ -3,6 +3,7 @@ description: "Learn more about: Custom Message Filter"
 title: "Custom Message Filter"
 ms.date: "03/30/2017"
 ms.assetid: 98dd0af8-fce6-4255-ac32-42eb547eea67
+ms.topic: article
 ---
 # Custom Message Filter
 

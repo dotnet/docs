@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "WCF, transports"
   - "Windows Communication Foundation, transports"
 ms.assetid: 005c894b-af70-48aa-a1c1-c99338083c27
+ms.topic: article
 ---
 # Transports in Windows Communication Foundation
 

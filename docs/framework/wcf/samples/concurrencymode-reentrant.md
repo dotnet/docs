@@ -3,6 +3,7 @@ description: "Learn more about: ConcurrencyMode Reentrant"
 title: "ConcurrencyMode Reentrant"
 ms.date: "03/30/2017"
 ms.assetid: b2046c38-53d8-4a6c-a084-d6c7091d92b1
+ms.topic: article
 ---
 # ConcurrencyMode Reentrant
 

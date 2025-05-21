@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "service contracts [WCF], data transfer"
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
+ms.topic: how-to
 ---
 # Specifying Data Transfer in Service Contracts
 

@@ -3,6 +3,7 @@ description: "Learn more about: Feed Formatter (JSON)"
 title: "Feed Formatter (JSON)"
 ms.date: "03/30/2017"
 ms.assetid: f9c0b295-55e7-48ea-b308-ba51c7d31143
+ms.topic: how-to
 ---
 # Feed Formatter (JSON)
 

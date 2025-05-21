@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "syndication [WCF]"
 ms.assetid: ebf80384-0fc9-4919-a1e8-23ca2a13e300
+ms.topic: article
 ---
 # WCF Syndication
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], extensibility"
   - "extensibility [WCF]"
 ms.assetid: ef56c251-d63c-4b3f-944f-b0c67bfb0f68
+ms.topic: concept-article
 ---
 # Introduction to Extensibility
 

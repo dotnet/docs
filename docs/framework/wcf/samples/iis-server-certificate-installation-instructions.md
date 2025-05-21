@@ -3,6 +3,7 @@ description: "Learn more about: Internet Information Services (IIS) Server Certi
 title: "Internet Information Services (IIS) Server Certificate Installation Instructions"
 ms.date: "03/30/2017"
 ms.assetid: 11281490-d2ac-4324-8f33-e7714611a34b
+ms.topic: article
 ---
 # Internet Information Services (IIS) Server Certificate Installation Instructions
 

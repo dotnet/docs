@@ -3,6 +3,7 @@ description: "Learn more about: Using the Discovery Client Channel"
 title: "Using the Discovery Client Channel"
 ms.date: "03/30/2017"
 ms.assetid: 1494242a-1d64-4035-8ecd-eb4f06c8d2ba
+ms.topic: how-to
 ---
 # Using the Discovery Client Channel
 

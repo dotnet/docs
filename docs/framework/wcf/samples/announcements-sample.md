@@ -3,6 +3,7 @@ description: "Learn more about: Announcements Sample"
 title: "Announcements Sample"
 ms.date: "03/30/2017"
 ms.assetid: 954a75e4-9a97-41d6-94fc-43765d4205a9
+ms.topic: article
 ---
 # Announcements Sample
 

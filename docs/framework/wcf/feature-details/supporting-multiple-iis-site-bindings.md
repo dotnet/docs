@@ -3,6 +3,7 @@ title: "Supporting Multiple IIS Site Bindings"
 description: Learn how to provide multiple base addresses that are using the same protocol on the same site when hosting a WCF service in IIS.
 ms.date: "03/30/2017"
 ms.assetid: 40440495-254d-45c8-a8c6-b29f364892ba
+ms.topic: concept-article
 ---
 # Supporting Multiple IIS Site Bindings
 

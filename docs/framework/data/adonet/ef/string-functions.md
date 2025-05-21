@@ -3,6 +3,7 @@ description: "Learn more about: String Functions"
 title: "String Functions"
 ms.date: "03/30/2017"
 ms.assetid: 338f0c26-8aee-43eb-bd1a-ec0849a376b9
+ms.topic: concept-article
 ---
 # String Functions
 

@@ -3,6 +3,7 @@ description: "Learn more about: Modeling and Mapping"
 title: "Modeling and Mapping"
 ms.date: "03/30/2017"
 ms.assetid: ec8a9515-3708-4cde-a688-4d8e6975f150
+ms.topic: concept-article
 ---
 # Modeling and Mapping
 

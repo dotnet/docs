@@ -4,6 +4,7 @@ description: Learn how to form set-based queries in application code using Langu
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: bf0c8f93-3ff7-49f3-8aed-f2b7ac938dec
+ms.topic: article
 ---
 # LINQ and ADO.NET
 

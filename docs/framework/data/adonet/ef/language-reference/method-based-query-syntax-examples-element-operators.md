@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8438b995-bd07-4223-b22d-13adadef33fb
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Element Operators
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d729120c-4c1b-4f34-bbe9-33694fca2dde
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Aggregate Operators
 

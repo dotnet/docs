@@ -3,6 +3,7 @@ title: "Supported and Unsupported LINQ Methods (LINQ to Entities)"
 description: This article summarizes the standard query operators that are supported and unsupported in LINQ to Entities queries.
 ms.date: "03/30/2017"
 ms.assetid: 7f3ffa5f-f819-4730-bcdb-09b23de3b6d0
+ms.topic: article
 ---
 # Supported and unsupported LINQ methods (LINQ to Entities)
 

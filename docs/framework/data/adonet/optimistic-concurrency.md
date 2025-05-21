@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e380edac-da67-4276-80a5-b64decae4947
+ms.topic: article
 ---
 # Optimistic Concurrency
 

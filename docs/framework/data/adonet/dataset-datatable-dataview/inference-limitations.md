@@ -3,6 +3,7 @@ description: "Learn more about: Inference Limitations"
 title: "Inference Limitations"
 ms.date: "03/30/2017"
 ms.assetid: 78517994-5d57-44f8-9d20-38812977de09
+ms.topic: article
 ---
 # Inference Limitations
 

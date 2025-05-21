@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e60f542f-6271-495b-a9e4-48553481c2a3
+ms.topic: concept-article
 ---
 # Performing Catalog Operations
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d00f0efa-9084-4c17-843f-54904fcb4204
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Join Operators
 

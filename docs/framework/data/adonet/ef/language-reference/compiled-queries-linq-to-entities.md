@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8025ba1d-29c7-4407-841b-d5a3bed40b7a
+ms.topic: article
 ---
 # Compiled queries  (LINQ to Entities)
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a0bfa4b1-99e5-4dd1-9912-4b825a9dc25c
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Navigating Relationships
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0e306067-5720-4782-9719-2286570a7e47
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Aggregate Operators
 

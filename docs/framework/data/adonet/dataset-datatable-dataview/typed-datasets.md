@@ -3,6 +3,7 @@ description: "Learn more about: Typed DataSets"
 title: "Typed DataSets"
 ms.date: "03/30/2017"
 ms.assetid: 033d2548-cf24-4c05-8179-67d8b009c048
+ms.topic: article
 ---
 # Typed DataSets
 

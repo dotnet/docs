@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8f9ce4fd-e84f-48c0-bb64-89e217236d3e
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Ordering (LINQ to DataSet)
 

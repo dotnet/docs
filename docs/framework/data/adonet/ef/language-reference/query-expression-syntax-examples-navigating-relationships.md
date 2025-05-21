@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0d4a7f41-c758-4059-8f83-d2e9c2745593
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Navigating Relationships
 

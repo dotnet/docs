@@ -2,6 +2,7 @@
 description: "Learn more about security considerations that are specific to developing, deploying, and running Entity Framework applications."
 title: "Security Considerations (Entity Framework)"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Security Considerations (Entity Framework)
 

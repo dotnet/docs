@@ -3,6 +3,7 @@ description: "Learn more about: SqlClient for Entity Framework Functions"
 title: "SqlClient for Entity Framework Functions"
 ms.date: "03/30/2017"
 ms.assetid: 71a3613c-b94e-494c-8ad8-90cf86ae0b87
+ms.topic: article
 ---
 # SqlClient for Entity Framework Functions
 

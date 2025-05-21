@@ -3,6 +3,7 @@ description: "Learn more about: Bitwise Canonical Functions"
 title: "Bitwise Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 993868ca-16e3-47b6-9915-c29cd63b0a21
+ms.topic: article
 ---
 # Bitwise Canonical Functions
 

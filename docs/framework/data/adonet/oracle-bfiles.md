@@ -3,6 +3,7 @@ description: "Learn more about: Oracle BFILEs"
 title: "Oracle BFILEs"
 ms.date: "03/30/2017"
 ms.assetid: 341bbf84-4734-4d44-8723-ccedee954e21
+ms.topic: article
 ---
 # Oracle BFILEs
 

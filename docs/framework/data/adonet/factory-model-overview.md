@@ -3,6 +3,7 @@ description: "Learn more about: Factory Model Overview"
 title: "Factory Model Overview"
 ms.date: "03/30/2017"
 ms.assetid: b5dc81c4-7554-44b9-b513-769bd61e2e7b
+ms.topic: concept-article
 ---
 # Factory Model Overview
 

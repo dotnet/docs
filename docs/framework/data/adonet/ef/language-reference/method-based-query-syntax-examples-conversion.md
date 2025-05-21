@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 19f66872-d5ab-49f8-969f-e53f9632a13d
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Conversion
 

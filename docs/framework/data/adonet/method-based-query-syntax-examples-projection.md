@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0fc2c8f0-1967-4f30-8b20-39b8dccfb82f
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Projection (LINQ to DataSet)
 

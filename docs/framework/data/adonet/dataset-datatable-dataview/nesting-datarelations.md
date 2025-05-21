@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab
+ms.topic: concept-article
 ---
 # Nesting DataRelations
 

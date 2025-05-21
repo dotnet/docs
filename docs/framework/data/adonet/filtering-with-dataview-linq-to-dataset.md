@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5632d74a-ff53-4ea7-9fe7-4a148eeb1c68
+ms.topic: concept-article
 ---
 # Filtering with DataView (LINQ to DataSet)
 

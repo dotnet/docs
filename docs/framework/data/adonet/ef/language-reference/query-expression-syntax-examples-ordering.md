@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: bcbc9625-7cf7-476e-85d2-058f12682f54
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Ordering
 

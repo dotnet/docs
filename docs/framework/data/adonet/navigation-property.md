@@ -3,6 +3,7 @@ description: "Learn more about: Navigation property"
 title: "Navigation property"
 ms.date: "03/30/2017"
 ms.assetid: d0bf1a6a-1d84-484c-b7c3-b410fd8dc0b1
+ms.topic: article
 ---
 # Navigation property
 

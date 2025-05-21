@@ -3,6 +3,7 @@ description: "Learn more about: Oracle Data Type Mappings"
 title: "Oracle Data Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: ec34ae21-bbbb-4adb-b672-83865e2a8451
+ms.topic: article
 ---
 # Oracle Data Type Mappings
 

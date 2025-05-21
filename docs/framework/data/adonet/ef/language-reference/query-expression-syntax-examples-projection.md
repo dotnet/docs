@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 079926c5-e6b5-4fb9-b4cf-9c63886dd626
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Projection
 

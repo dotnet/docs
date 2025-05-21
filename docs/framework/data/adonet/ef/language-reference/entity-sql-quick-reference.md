@@ -3,6 +3,7 @@ description: "Learn more about: Entity SQL Quick Reference"
 title: "Entity SQL Quick Reference"
 ms.date: "03/30/2017"
 ms.assetid: e53dad9e-5e83-426e-abb4-be3e78e3d6dc
+ms.topic: article
 ---
 # Entity SQL Quick Reference
 

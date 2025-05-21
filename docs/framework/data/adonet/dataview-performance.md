@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 90820e49-9d46-41f6-9a3d-6c0741bbd8eb
+ms.topic: article
 ---
 # DataView Performance
 

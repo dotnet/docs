@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5ed5f01d-acb2-4dd4-be60-f04c2d570fa8
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Aggregate Operators (LINQ to DataSet)
 

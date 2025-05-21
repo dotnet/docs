@@ -3,6 +3,7 @@ description: "Learn more about: Floating-Point Numbers"
 title: "Floating-Point Numbers"
 ms.date: "03/30/2017"
 ms.assetid: 73c218c6-1c44-4402-a167-4f6262629a91
+ms.topic: article
 ---
 # Floating-Point Numbers
 

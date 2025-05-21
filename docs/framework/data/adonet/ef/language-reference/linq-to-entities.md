@@ -3,6 +3,7 @@ title: "LINQ to Entities"
 description: Learn how to create and run LINQ to Entities queries, which let you write queries against the Entity Framework conceptual model using Visual Basic or Visual C#.
 ms.date: "03/30/2017"
 ms.assetid: 641f9b68-9046-47a1-abb0-1c8eaeda0e2d
+ms.topic: article
 ---
 # LINQ to Entities
 

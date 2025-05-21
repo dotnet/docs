@@ -3,6 +3,7 @@ description: "Learn more about: Inferring Relationships"
 title: "Inferring Relationships"
 ms.date: "03/30/2017"
 ms.assetid: 8fa86a9d-6545-4a9d-b1f5-58d9742179c7
+ms.topic: concept-article
 ---
 # Inferring Relationships
 

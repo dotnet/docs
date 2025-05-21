@@ -3,6 +3,7 @@ description: "Learn more about: Method-Based Query Examples (LINQ to DataSet)"
 title: "Method-Based Query Examples (LINQ to DataSet)"
 ms.date: "03/30/2017"
 ms.assetid: d340775c-7f39-4087-a290-5cbec6cfa68e
+ms.topic: article
 ---
 # Method-Based Query Examples (LINQ to DataSet)
 

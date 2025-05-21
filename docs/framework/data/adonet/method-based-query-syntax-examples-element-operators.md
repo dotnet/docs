@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: eedf2fbd-f407-4f62-bb1a-c00eb001b1dd
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Element Operators (LINQ to DataSet)
 

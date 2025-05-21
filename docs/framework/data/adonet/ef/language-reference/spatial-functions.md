@@ -3,6 +3,7 @@ description: "Learn more about: Spatial Functions"
 title: "Spatial Functions"
 ms.date: "03/30/2017"
 ms.assetid: 90cb177d-88a0-45be-97e8-3b306283c6e0
+ms.topic: article
 ---
 # Spatial Functions
 

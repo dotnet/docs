@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8ae3712f-ef5e-41a1-9ea9-b3d0399439f1
+ms.topic: article
 ---
 # Local Transactions
 

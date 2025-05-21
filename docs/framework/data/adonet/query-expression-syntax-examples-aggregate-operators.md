@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 85dafa07-e102-46e7-ab78-37bf06f257a6
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Aggregate Operators (LINQ to DataSet)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Entity Data Model: Namespaces"
 title: "Entity Data Model: Namespaces"
 ms.date: "03/30/2017"
 ms.assetid: 98ab4226-bb9f-44e7-af46-61a9b1a4e47c
+ms.topic: article
 ---
 # Entity Data Model: Namespaces
 

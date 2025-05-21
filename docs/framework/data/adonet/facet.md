@@ -3,6 +3,7 @@ description: "Learn more about: facet"
 title: "facet"
 ms.date: "03/30/2017"
 ms.assetid: 91c4e6aa-3e54-4b6c-a38a-abf27808cc85
+ms.topic: article
 ---
 # facet
 

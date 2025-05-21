@@ -3,6 +3,7 @@ title: "DataSets, DataTables, and DataViews"
 description: Learn several ways to work with an ADO.NET DataSet, a memory-resident representation of data that provides a consistent relational programming model.
 ms.date: "03/30/2017"
 ms.assetid: 6d4c4b69-8919-4224-8a65-6cca1c61b48f
+ms.topic: article
 ---
 # DataSets, DataTables, and DataViews
 

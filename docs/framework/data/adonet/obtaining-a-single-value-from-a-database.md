@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b38526cd-a62a-48cb-822a-e91dfa68e02d
+ms.topic: concept-article
 ---
 # Obtaining a Single Value from a Database
 

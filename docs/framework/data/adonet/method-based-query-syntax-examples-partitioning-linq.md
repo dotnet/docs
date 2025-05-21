@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a582c53f-f203-44ae-a797-d7f169a4fbb5
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Partitioning (LINQ
 

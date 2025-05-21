@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 505491fa-5920-43ce-8a96-c25389e125d8
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Projection
 

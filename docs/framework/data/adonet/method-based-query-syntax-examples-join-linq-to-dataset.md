@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 4fd5ed2c-b03a-4054-a3ed-3ddb380d7d9d
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Join (LINQ to DataSet)
 

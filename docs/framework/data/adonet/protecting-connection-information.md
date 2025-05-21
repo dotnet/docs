@@ -2,6 +2,7 @@
 title: "Protecting Connection Information"
 description: Learn about security vulnerabilities in connection strings, which can arise due to how connection strings are constructed and persisted and authentication type.
 ms.date: "03/30/2017"
+ms.topic: concept-article
 ---
 # Protect connection information
 

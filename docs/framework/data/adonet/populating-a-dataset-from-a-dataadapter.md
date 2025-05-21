@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 3fa0ac7d-e266-4954-bfac-3fbe2f913153
+ms.topic: concept-article
 ---
 # Populating a DataSet from a DataAdapter
 

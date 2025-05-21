@@ -2,6 +2,7 @@
 title: "CLR Method to Canonical Function Mapping"
 description: "Learn more about: CLR Method to Canonical Function Mapping"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 
 # CLR Method to Canonical Function Mapping

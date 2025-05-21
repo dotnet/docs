@@ -3,6 +3,7 @@ description: "Learn more about: Debugging LINQ to DataSet Queries"
 title: "Debugging LINQ to DataSet Queries"
 ms.date: "03/30/2017"
 ms.assetid: f4c54015-8ce2-4c5c-8d18-7038144cc66d
+ms.topic: concept-article
 ---
 # Debugging LINQ to DataSet Queries
 

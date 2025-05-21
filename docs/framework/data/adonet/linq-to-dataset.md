@@ -3,6 +3,7 @@ description: "Learn more about: LINQ to DataSet"
 title: "LINQ to DataSet"
 ms.date: "03/30/2017"
 ms.assetid: 743e3755-3ecb-45a2-8d9b-9ed41f0dcf17
+ms.topic: article
 ---
 # LINQ to DataSet
 

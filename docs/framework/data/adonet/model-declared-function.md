@@ -3,6 +3,7 @@ description: "Learn more about: model-declared function"
 title: "model-declared function"
 ms.date: "03/30/2017"
 ms.assetid: aba87f13-5685-4f6b-ad14-918e8a7d5c2a
+ms.topic: article
 ---
 # model-declared function
 

@@ -3,6 +3,7 @@ description: "Learn more about: entity key"
 title: "entity key"
 ms.date: "03/30/2017"
 ms.assetid: 0d447a6d-fa7a-4db0-8e7a-fd45e385fca0
+ms.topic: article
 ---
 # entity key
 

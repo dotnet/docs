@@ -3,6 +3,7 @@ description: "Learn more about: Data Tracing in ADO.NET"
 title: "Data Tracing"
 ms.date: "03/30/2017"
 ms.assetid: a6a752a5-d2a9-4335-a382-b58690ccb79f
+ms.topic: article
 ---
 
 # Data Tracing in ADO.NET

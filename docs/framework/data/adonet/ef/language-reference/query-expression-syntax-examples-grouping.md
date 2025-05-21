@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2d83d7c0-b3be-4c92-a630-25cd1285de31
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Grouping
 

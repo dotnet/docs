@@ -2,6 +2,7 @@
 description: "Learn more about the structures you can use to work with Oracle data types, including OracleNumber and OracleString."
 title: "OracleTypes"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # OracleTypes
 

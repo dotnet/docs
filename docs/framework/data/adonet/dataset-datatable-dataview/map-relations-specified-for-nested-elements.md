@@ -3,6 +3,7 @@ description: "Learn more about: Map Relations Specified for Nested Elements"
 title: "Map Relations Specified for Nested Elements"
 ms.date: "03/30/2017"
 ms.assetid: 24a2d3e5-4af7-4f9a-ab7a-fe6684c9e4fe
+ms.topic: how-to
 ---
 # Map Relations Specified for Nested Elements
 

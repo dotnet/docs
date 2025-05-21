@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1d26e0fb-f6e0-4afa-9a9c-b8d55b8f20dc
+ms.topic: concept-article
 ---
 
 # Viewing Data in a DataTable

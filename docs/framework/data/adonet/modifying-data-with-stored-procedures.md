@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7d8e9a46-1af6-4a02-bf61-969d77ae07e0
+ms.topic: concept-article
 ---
 # Modifying Data with Stored Procedures
 

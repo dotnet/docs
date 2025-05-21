@@ -3,6 +3,7 @@ description: "Learn more about: Aggregate Canonical Functions"
 title: "Aggregate Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 3bcff826-ca90-41b3-a791-04d6ff0e5085
+ms.topic: how-to
 ---
 
 # Aggregate Canonical Functions

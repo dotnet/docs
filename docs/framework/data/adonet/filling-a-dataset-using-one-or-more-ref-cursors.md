@@ -4,6 +4,7 @@ title: "Filling a DataSet Using One or More REF CURSORs"
 ms.date: "03/30/2017"
 dev_langs:
   - "vb"
+ms.topic: concept-article
 ---
 # Fill a DataSet Using One or More REF CURSORs
 

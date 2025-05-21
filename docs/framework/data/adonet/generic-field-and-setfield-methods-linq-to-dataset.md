@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 1883365f-9d6c-4ccb-9187-df309f47706d
+ms.topic: article
 ---
 # Generic Field and SetField Methods (LINQ to DataSet)
 

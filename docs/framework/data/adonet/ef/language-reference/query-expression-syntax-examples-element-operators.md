@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 32268fe2-de18-4065-8060-f250def83837
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Element Operators
 

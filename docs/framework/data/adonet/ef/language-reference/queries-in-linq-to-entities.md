@@ -3,6 +3,7 @@ title: "Queries in LINQ to Entities"
 description: Learn about how LINQ offers a simple, consistent model for working with data across various kinds of data sources and formats using programming objects.
 ms.date: "03/30/2017"
 ms.assetid: c015a609-29eb-4e95-abb1-2ca721c6e2ad
+ms.topic: article
 ---
 # Queries in LINQ to Entities
 

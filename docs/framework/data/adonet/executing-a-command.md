@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 40494916-c25a-4cb8-8f7c-fcb8d378464e
+ms.topic: concept-article
 ---
 # Executing a Command
 

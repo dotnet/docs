@@ -3,6 +3,7 @@ description: "Learn more about: Oracle REF CURSORs"
 title: "Oracle REF CURSORs"
 ms.date: "03/30/2017"
 ms.assetid: c6b25b8b-0bdd-41b2-9c7c-661f070c2247
+ms.topic: article
 ---
 # Oracle REF CURSORs
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 58aab611-7e6f-4749-b983-28ab7ae87dbe
+ms.topic: article
 ---
 # DbConnection, DbCommand and DbException
 

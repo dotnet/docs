@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a084c16b-9b55-4690-aefd-f8e0810a92c3
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Conversion Operators (LINQ to DataSet)
 

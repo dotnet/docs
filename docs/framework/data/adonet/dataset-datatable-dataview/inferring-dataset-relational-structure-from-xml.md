@@ -3,6 +3,7 @@ description: "Learn more about: Inferring DataSet Relational Structure from XML"
 title: "Inferring DataSet Relational Structure from XML"
 ms.date: "03/30/2017"
 ms.assetid: cd2f41c6-6785-420e-aa43-3ceb0bdccdce
+ms.topic: concept-article
 ---
 # Inferring DataSet Relational Structure from XML
 

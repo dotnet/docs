@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e40e314c-eb30-4f44-a054-41e511e35832
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Filtering
 

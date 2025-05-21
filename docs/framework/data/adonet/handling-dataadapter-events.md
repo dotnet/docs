@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
+ms.topic: concept-article
 ---
 # Handling DataAdapter Events
 

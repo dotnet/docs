@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ca392dda-16e3-45c7-8d87-12d8d4ee0578
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Element Operators (LINQ to DataSet)
 

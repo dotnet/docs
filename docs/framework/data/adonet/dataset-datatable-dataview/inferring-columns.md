@@ -3,6 +3,7 @@ description: "Learn more about: Inferring Columns"
 title: "Inferring Columns"
 ms.date: "03/30/2017"
 ms.assetid: 0e022699-c922-454c-93e2-957dd7e7247a
+ms.topic: concept-article
 ---
 # Inferring Columns
 

@@ -3,6 +3,7 @@ description: "Learn more about: Data Type Mappings in ADO.NET"
 title: "Data Type Mappings"
 ms.date: "03/30/2017"
 ms.assetid: d4afab94-ada6-4c77-a73c-41f17bae6b5a
+ms.topic: article
 ---
 # Data Type Mappings in ADO.NET
 

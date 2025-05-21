@@ -3,6 +3,7 @@ description: "Learn more about: Migration Considerations (Entity Framework)"
 title: "Migration Considerations (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: c85b6fe8-cc32-4642-8f0a-dc0e5a695936
+ms.topic: article
 ---
 # Migration Considerations (Entity Framework)
 

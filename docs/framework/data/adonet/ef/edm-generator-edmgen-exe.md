@@ -2,6 +2,7 @@
 title: "EDM Generator (EdmGen.exe)"
 description: "Learn more about the EDM Generator tool (EdmGen.exe), which is a command-line tool used for working with Entity Framework model and mapping files."
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 
 # EDM Generator (EdmGen.exe)

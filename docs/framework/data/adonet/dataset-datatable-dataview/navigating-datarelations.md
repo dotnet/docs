@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e5e673f4-9b44-45ae-aaea-c504d1cc5d3e
+ms.topic: concept-article
 ---
 # Navigating DataRelations
 

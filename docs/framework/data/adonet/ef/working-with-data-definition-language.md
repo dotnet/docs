@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ec50083d-44f4-4093-9b23-5eacd601f96e
+ms.topic: how-to
 ---
 # Working with Data Definition Language
 

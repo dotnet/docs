@@ -3,6 +3,7 @@ title: "Entity Data Model"
 description: The Entity Data Model describes the structure of data, regardless of its stored form, which addresses challenges resulting from storing data in many forms.
 ms.date: "03/30/2017"
 ms.assetid: 2dda3d5b-4582-4ba0-a91d-fcd7a1498137
+ms.topic: article
 ---
 # Entity Data Model
 

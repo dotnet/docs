@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: f4d86667-3392-470d-a076-5ca6cbb660f6
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Join Operators (LINQ to DataSet)
 

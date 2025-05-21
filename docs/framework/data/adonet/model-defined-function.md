@@ -3,6 +3,7 @@ description: "Learn more about: model-defined function"
 title: "model-defined function"
 ms.date: "03/30/2017"
 ms.assetid: 8bb2edc8-e8e7-44c2-adc7-f44e11bda4f0
+ms.topic: article
 ---
 # model-defined function
 

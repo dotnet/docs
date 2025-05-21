@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: bcd7b699-4e50-4523-8c33-2f54a103d94e
+ms.topic: article
 ---
 # Query Results
 

@@ -3,6 +3,7 @@ description: "Learn more about: ADO.NET Entity Framework"
 title: "ADO.NET Entity Framework"
 ms.date: "03/30/2017"
 ms.assetid: a437041f-6899-4ae7-96ce-aabf528d7205
+ms.topic: article
 ---
 # ADO.NET Entity Framework
 

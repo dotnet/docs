@@ -3,6 +3,7 @@ description: "Learn more about: Standard Query Operators in LINQ to Entities Que
 title: "Standard Query Operators in LINQ to Entities Queries"
 ms.date: "08/21/2018"
 ms.assetid: 7fa55a9b-6219-473d-b1e5-2884a32dcdff
+ms.topic: article
 ---
 # Standard Query Operators in LINQ to Entities Queries
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 697a3991-b660-4a5a-8a54-1a2304ff158e
+ms.topic: concept-article
 ---
 # Modifying DataViews
 

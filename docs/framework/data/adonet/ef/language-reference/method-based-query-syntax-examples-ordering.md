@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5d21b178-d731-471a-8534-1f8184a2ef06
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Ordering
 

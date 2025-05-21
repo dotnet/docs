@@ -3,6 +3,7 @@ description: "Learn more about: Entity Framework Data Providers"
 title: "Entity Framework Data Providers"
 ms.date: "03/30/2017"
 ms.assetid: 5252e639-ff11-4818-82e7-07221ed6ae23
+ms.topic: article
 ---
 # Entity Framework Data Providers
 

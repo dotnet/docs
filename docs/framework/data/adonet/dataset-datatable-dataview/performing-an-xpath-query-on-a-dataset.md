@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 7e828566-fffe-4d38-abb2-4d68fd73f663
+ms.topic: concept-article
 ---
 # Performing an XPath Query on a DataSet
 

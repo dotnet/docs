@@ -4,6 +4,7 @@ title: "The Load Method"
 ms.date: "03/30/2017"
 dev_langs:
   - "vb"
+ms.topic: article
 ---
 # The Load method
 

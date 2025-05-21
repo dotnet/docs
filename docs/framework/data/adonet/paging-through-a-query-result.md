@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fa360c46-e5f8-411e-a711-46997771133d
+ms.topic: concept-article
 ---
 # Paging Through a Query Result
 

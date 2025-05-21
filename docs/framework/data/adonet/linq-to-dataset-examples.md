@@ -3,6 +3,7 @@ description: "Learn more about: LINQ to DataSet Examples"
 title: "LINQ to DataSet Examples"
 ms.date: "03/30/2017"
 ms.assetid: dfd91658-8d8a-45a4-a356-e327e809f21d
+ms.topic: article
 ---
 # LINQ to DataSet Examples
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e5e9309a-3ebb-4a9c-9d78-21c4e2bafc5b
+ms.topic: concept-article
 ---
 
 # Merging DataSet Contents

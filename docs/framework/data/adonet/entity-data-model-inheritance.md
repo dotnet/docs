@@ -3,6 +3,7 @@ description: "Learn more about: Entity Data Model: Inheritance"
 title: "Entity Data Model: Inheritance"
 ms.date: "03/30/2017"
 ms.assetid: 42c7ef24-710a-4af9-8493-cd41c399ecb0
+ms.topic: article
 ---
 # Entity Data Model: Inheritance
 

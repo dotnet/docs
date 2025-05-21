@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 54edefe0-bc38-419b-b486-3d8a0c356f13
+ms.topic: concept-article
 ---
 # Handling DataSet Events
 

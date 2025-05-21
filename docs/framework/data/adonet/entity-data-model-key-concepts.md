@@ -3,6 +3,7 @@ description: "Learn more about: Entity Data Model Key Concepts"
 title: "Entity Data Model Key Concepts"
 ms.date: "03/30/2017"
 ms.assetid: c635a16d-6674-45aa-9344-dcb7df992bab
+ms.topic: concept-article
 ---
 # Entity Data Model Key Concepts
 

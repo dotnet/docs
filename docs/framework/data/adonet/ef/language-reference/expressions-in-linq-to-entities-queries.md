@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d70b502f-6a15-4120-b4fe-500b173ad9cc
+ms.topic: article
 ---
 # Expressions in LINQ to Entities Queries
 

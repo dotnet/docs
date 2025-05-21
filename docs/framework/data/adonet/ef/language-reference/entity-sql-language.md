@@ -3,6 +3,7 @@ description: "Learn more about: Entity SQL Language"
 title: "Entity SQL Language"
 ms.date: "03/30/2017"
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
+ms.topic: article
 ---
 # Entity SQL language
 

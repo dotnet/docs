@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a53e5dc1-9669-49d4-828d-efa633237066
+ms.topic: concept-article
 ---
 # Loading Data Into a DataSet
 

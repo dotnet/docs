@@ -2,6 +2,7 @@
 description: "Learn more about EntityClient Provider for Entity Framework, a data provider used by Entity Framework apps to access data described in a conceptual model."
 title: "EntityClient Provider for the Entity Framework"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # EntityClient Provider for Entity Framework
 

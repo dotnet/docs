@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ef88af8c-8dfe-4556-8b56-81df960a900b
+ms.topic: article
 ---
 # Null Comparisons
 

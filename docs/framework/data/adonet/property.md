@@ -3,6 +3,7 @@ description: "Learn more about: property"
 title: "property"
 ms.date: "03/30/2017"
 ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
+ms.topic: article
 ---
 # property
 

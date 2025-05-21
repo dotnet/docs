@@ -3,6 +3,7 @@ description: "Learn more about: Oracle LOBs"
 title: "Oracle LOBs"
 ms.date: "03/30/2017"
 ms.assetid: 272e8e1e-a31f-475a-8c2a-ae8e1286bdab
+ms.topic: article
 ---
 # Oracle LOBs
 

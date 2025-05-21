@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e5675663-fc91-4e0d-87a9-481b25b64c0f
+ms.topic: concept-article
 ---
 # Handling DataView Events
 

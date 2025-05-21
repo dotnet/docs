@@ -3,6 +3,7 @@ title: "Calling Functions in LINQ to Entities Queries"
 description: Use these articles to see how the EntityFunctions and SqlFunctions classes provide access to canonical and database functions as part of the Entity Framework.
 ms.date: "03/30/2017"
 ms.assetid: 12a525a9-727c-4464-a0c7-71a0ef541792
+ms.topic: how-to
 ---
 # Calling Functions in LINQ to Entities Queries
 

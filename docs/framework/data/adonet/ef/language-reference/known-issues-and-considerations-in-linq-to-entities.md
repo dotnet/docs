@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: acd71129-5ff0-4b4e-b266-c72cc0c53601
+ms.topic: troubleshooting-known-issue
 ---
 # Known Issues and Considerations in LINQ to Entities
 

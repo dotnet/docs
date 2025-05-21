@@ -3,6 +3,7 @@ description: "Learn more about: Entity Framework Resources"
 title: "Entity Framework Resources"
 ms.date: "03/30/2017"
 ms.assetid: 0bb04c18-4a14-42a4-baa9-a63d556c9f49
+ms.topic: article
 ---
 # Entity Framework Resources
 

@@ -3,6 +3,7 @@ description: "Learn more about: String Canonical Functions"
 title: "String Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 5e2cbebd-5df3-47c7-b0e2-49a17ab22bfb
+ms.topic: concept-article
 ---
 # String Canonical Functions
 

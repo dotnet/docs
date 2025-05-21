@@ -3,6 +3,7 @@ description: "Learn more about: SqlClient for the Entity Framework"
 title: "SqlClient for the Entity Framework"
 ms.date: "03/30/2017"
 ms.assetid: 9a5d6d39-d955-43a5-a5c2-931c239398f1
+ms.topic: article
 ---
 # SqlClient for the Entity Framework
 

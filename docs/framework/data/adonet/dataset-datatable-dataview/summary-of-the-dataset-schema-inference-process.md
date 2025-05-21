@@ -3,6 +3,7 @@ description: "Learn more about: Summary of the DataSet Schema Inference Process"
 title: "Summary of the DataSet Schema Inference Process"
 ms.date: "03/30/2017"
 ms.assetid: fd0891c8-d068-4e30-a76f-7c375f078bf7
+ms.topic: article
 ---
 # Summary of the DataSet Schema Inference Process
 

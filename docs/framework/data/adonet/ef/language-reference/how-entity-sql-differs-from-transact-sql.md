@@ -3,6 +3,7 @@ description: "Learn more about: How Entity SQL differs from Transact-SQL"
 title: "How Entity SQL Differs from Transact-SQL"
 ms.date: "03/30/2017"
 ms.assetid: 9c9ee36d-f294-4c8b-a196-f0114c94f559
+ms.topic: article
 ---
 # How Entity SQL differs from Transact-SQL
 

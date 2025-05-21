@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: cb23c25c-1075-4cc3-a8ff-4db72e536c0d
+ms.topic: article
 ---
 # Method-Based Query Syntax Examples: Grouping
 

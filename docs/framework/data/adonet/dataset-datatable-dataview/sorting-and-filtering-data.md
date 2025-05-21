@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
+ms.topic: concept-article
 ---
 # Sorting and Filtering Data
 

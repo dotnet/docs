@@ -3,6 +3,7 @@ description: "Learn more about: Privacy and Data Security"
 title: "Privacy and Data Security"
 ms.date: "03/30/2017"
 ms.assetid: 46fa5839-adf7-4c7c-bce3-71e941fa7de9
+ms.topic: article
 ---
 # Privacy and Data Security
 

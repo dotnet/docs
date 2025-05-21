@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 4e530831-695e-49ff-8f0b-e5b0c526b8eb
+ms.topic: concept-article
 ---
 # Writing DataSet Schema Information as XSD
 

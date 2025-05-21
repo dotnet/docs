@@ -3,6 +3,7 @@ description: "Learn more about: Entity SQL reference"
 title: "Entity SQL reference"
 ms.date: "03/30/2017"
 ms.assetid: 61ce7ee1-ffe2-477d-8a9f-835b0a11d900
+ms.topic: article
 ---
 # Entity SQL reference
 

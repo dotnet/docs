@@ -3,6 +3,7 @@ description: "Learn more about: Inferring Element Text"
 title: "Inferring Element Text"
 ms.date: "03/30/2017"
 ms.assetid: 789799e5-716f-459f-a168-76c5cf22178b
+ms.topic: concept-article
 ---
 # Inferring Element Text
 

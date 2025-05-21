@@ -4,6 +4,7 @@ title: DataSet and DataTable security guidance
 ms.date: 07/14/2020
 dev_langs:
   - "csharp"
+ms.topic: article
 ---
 # DataSet and DataTable security guidance
 

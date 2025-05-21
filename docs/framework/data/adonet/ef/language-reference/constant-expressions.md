@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9d98a7be-b110-4edb-8eba-bed10f250b6d
+ms.topic: article
 ---
 # Constant Expressions
 

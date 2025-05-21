@@ -3,6 +3,7 @@ description: "Learn more about: System Functions"
 title: "System Functions"
 ms.date: "03/30/2017"
 ms.assetid: b7c71b58-09e6-44ce-a3e5-a0fdb892fb86
+ms.topic: article
 ---
 # System Functions
 

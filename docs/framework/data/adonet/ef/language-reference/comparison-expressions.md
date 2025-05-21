@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ec7637a9-01d5-4a95-8bb0-478311cd263b
+ms.topic: article
 ---
 # Comparison Expressions
 

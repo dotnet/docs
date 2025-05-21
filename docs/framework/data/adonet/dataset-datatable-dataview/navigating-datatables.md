@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 202026a1-ec79-435e-b507-12a77f5011b2
+ms.topic: concept-article
 ---
 # Navigating DataTables
 

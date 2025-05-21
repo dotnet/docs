@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c27cb89c-1c1d-4988-9f38-950eda3cb275
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Filtering
 

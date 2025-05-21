@@ -3,6 +3,7 @@ description: "Learn more about: Date and Time Canonical Functions"
 title: "Date and Time Canonical Functions"
 ms.date: "03/30/2017"
 ms.assetid: 9628b74f-1585-436a-b385-8b02ed0cdd63
+ms.topic: article
 ---
 # Date and Time Canonical Functions
 

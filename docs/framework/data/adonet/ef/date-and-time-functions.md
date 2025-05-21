@@ -3,6 +3,7 @@ description: "Learn more about: Date and Time Functions"
 title: "Date and Time Functions"
 ms.date: "03/30/2017"
 ms.assetid: 971762d0-663b-4b64-8c61-352a8e6d3949
+ms.topic: article
 ---
 # Date and Time Functions
 

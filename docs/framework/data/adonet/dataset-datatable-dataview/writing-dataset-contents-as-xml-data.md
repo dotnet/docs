@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fd15f8a5-3b4c-46d0-a561-4559ab2a4705
+ms.topic: concept-article
 ---
 # Writing DataSet Contents as XML Data
 

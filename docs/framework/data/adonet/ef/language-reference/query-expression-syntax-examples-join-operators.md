@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 343e8dda-70b2-409d-9334-ce9a880c3cea
+ms.topic: article
 ---
 # Query Expression Syntax Examples: Join Operators
 

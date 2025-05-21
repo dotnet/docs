@@ -3,6 +3,7 @@ description: "Learn more about: Deployment Considerations (Entity Framework)"
 title: "Deployment Considerations (Entity Framework)"
 ms.date: "03/30/2017"
 ms.assetid: 3a847a22-4eb8-4565-b18b-453bbca070db
+ms.topic: article
 ---
 # Deployment Considerations (Entity Framework)
 

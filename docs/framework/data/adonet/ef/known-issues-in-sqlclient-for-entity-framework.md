@@ -3,6 +3,7 @@ description: "Learn more about: Known Issues in SqlClient for Entity Framework"
 title: "Known Issues in SqlClient for Entity Framework"
 ms.date: "03/30/2017"
 ms.assetid: 48fe4912-4d0f-46b6-be96-3a42c54780f6
+ms.topic: troubleshooting-known-issue
 ---
 # Known Issues in SqlClient for Entity Framework
 

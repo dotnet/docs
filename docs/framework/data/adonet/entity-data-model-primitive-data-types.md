@@ -3,6 +3,7 @@ description: "Learn more about: Entity Data Model: Primitive Data Types"
 title: "Entity Data Model: Primitive Data Types"
 ms.date: "03/30/2017"
 ms.assetid: 7635168e-0566-4fdd-8391-7941b0d9f787
+ms.topic: article
 ---
 # Entity Data Model: Primitive Data Types
 

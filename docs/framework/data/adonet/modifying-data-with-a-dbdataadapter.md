@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: e35c7f9e-648b-4fcc-9361-d365c3e42c9a
+ms.topic: concept-article
 ---
 # Modifying Data with a DbDataAdapter
 

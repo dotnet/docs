@@ -3,6 +3,7 @@ title: "Entity Framework Overview"
 description: The Entity Framework in ADO.NET supports development of data-oriented applications that work at a higher level of abstraction than traditional applications.
 ms.date: 09/17/2018
 ms.assetid: a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0
+ms.topic: concept-article
 ---
 # Entity Framework overview
 

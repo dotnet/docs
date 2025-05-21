@@ -3,6 +3,7 @@ description: "Learn more about: Using XML in a DataSet"
 title: "Using XML in a DataSet"
 ms.date: "03/30/2017"
 ms.assetid: 35138159-e199-49ec-baf7-1ec6777e171e
+ms.topic: concept-article
 ---
 # Using XML in a DataSet
 

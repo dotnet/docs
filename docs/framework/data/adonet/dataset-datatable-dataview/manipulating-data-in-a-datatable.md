@@ -3,6 +3,7 @@ description: "Learn more about: Manipulating Data in a DataTable"
 title: "Manipulating Data in a DataTable"
 ms.date: "03/30/2017"
 ms.assetid: 5cb86d48-a987-4af4-80e0-8cc2c8373d62
+ms.topic: concept-article
 ---
 # Manipulating Data in a DataTable
 

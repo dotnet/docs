@@ -3,6 +3,7 @@ description: "Learn more about: Query Expression Examples (LINQ to DataSet)"
 title: "Query Expression Examples (LINQ to DataSet)"
 ms.date: "03/30/2017"
 ms.assetid: f743fbc7-faff-45e5-af1e-61577d87f0cc
+ms.topic: article
 ---
 # Query Expression Examples (LINQ to DataSet)
 

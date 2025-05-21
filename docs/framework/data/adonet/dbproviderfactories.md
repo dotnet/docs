@@ -3,6 +3,7 @@ description: "Learn more about: DbProviderFactories"
 title: "DbProviderFactories"
 ms.date: "03/30/2017"
 ms.assetid: 2a8e2640-3a49-42a1-a3a9-b43026907ae1
+ms.topic: article
 ---
 # DbProviderFactories
 

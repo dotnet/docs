@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8fdd64af-6ad0-46cd-91c8-dbe26620eeb1
+ms.topic: article
 ---
 # DataSet-Specific Operator Examples (LINQ to DataSet)
 

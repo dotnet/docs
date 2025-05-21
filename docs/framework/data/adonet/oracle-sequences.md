@@ -2,6 +2,7 @@
 description: "Learn more about retrieving the server-generated key Oracle Sequence values after performing inserts."
 title: "Oracle Sequences"
 ms.date: "03/30/2017"
+ms.topic: article
 ---
 # Oracle Sequences
 

@@ -30,7 +30,7 @@ Even if you’re satisfied with your current MSTest setup, upgrading to MSTest v
 
 - **Increased Code Reliability with New Analyzers**: MSTest v3 built-in code analyzers enforce best practices, helping to catch issues early and promoting cleaner, more maintainable test code:
   - **Proactive Issue Detection**: The analyzers provide real-time feedback, suggesting improvements and flagging potential issues as you write your tests.
-  
+
   - **Stronger Type-Safe Assertions**: Replacing ambiguous overloads, MSTest v3 enforces type-safe assertions, reducing the risk of incorrect test behavior and making tests more reliable.
   - **Cleaner Code, Less Maintenance**: By aligning your tests with MSTest standards and best practices, MSTest v3 helps you maintain a cleaner, more manageable codebase, reducing technical debt over time.
 
@@ -146,7 +146,7 @@ In cases where types don’t match exactly, MSTest v3 will now raise an error ra
 
 In MSTest v3, the handling of `Timeout` settings has been standardized to ensure consistent behavior across different .NET environments. This change may impact tests that rely on specific timeout values, especially if those tests are asynchronous or run under different frameworks.
 
-- In MSTest v1 or v2, certain timeout settings might have been interpreted differently depending on the framework (e.g., .NET Framework vs. .NET Core).
+- In MSTest v1 or v2, certain timeout settings might have been interpreted differently depending on the framework (for example, .NET Framework vs. .NET Core).
 - MSTest v3 enforces consistent timeout behavior, which might mean that tests configured with timeouts in previous versions may fail or behave differently if the timeout values are too short under the new standard.
 
 **What This Means**:
@@ -166,7 +166,7 @@ public void TestMethod() { ... }
 // New (v3) - Unified handling of timeout
 [TestMethod]
 [Timeout(2000)] // Verify this value still works under MSTest v3
-public async Task TestMethod() { ... } 
+public async Task TestMethod() { ... }
 ```
 
 ## Configuration changes

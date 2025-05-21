@@ -249,17 +249,17 @@ You can define the characteristics of your own computation expressions by creati
 
 The following table describes methods that can be used in a workflow builder class.
 
-|**Method**|**Typical signature(s)**|**Description**|
-|----|----|----|
-|`Bind`|`M<'T> * ('T -> M<'U>) -> M<'U>`|Called for `let!` and `do!` in computation expressions.|
-|`BindN`|`(M<'T1> * M<'T2> * ... * M<'TN> * ('T1 * 'T2 ... * 'TN -> M<'U>)) -> M<'U>`|Called for efficient `let!` and `and!` in computation expressions without merging inputs.<br /><br />e.g. `Bind3`, `Bind4`.|
+| **Method** | **Typical signature(s)**         | **Description**                                         |
+|------------|----------------------------------|---------------------------------------------------------|
+| `Bind`     | `M<'T> * ('T -> M<'U>) -> M<'U>` | Called for `let!` and `do!` in computation expressions. |
+|`BindN`|`(M<'T1> * M<'T2> * ... * M<'TN> * ('T1 * 'T2 ... * 'TN -> M<'U>)) -> M<'U>`|Called for efficient `let!` and `and!` in computation expressions without merging inputs.<br /><br />for example, `Bind3`, `Bind4`.|
 |`Delay`|`(unit -> M<'T>) -> Delayed<'T>`|Wraps a computation expression as a function. `Delayed<'T>` can be any type, commonly `M<'T>` or `unit -> M<'T>` are used. The default implementation returns a `M<'T>`.|
 |`Return`|`'T -> M<'T>`|Called for `return` in computation expressions.|
 |`ReturnFrom`|`M<'T> -> M<'T>`|Called for `return!` in computation expressions.|
 |`BindReturn`|`(M<'T1> * ('T1 -> 'T2)) -> M<'T2>`|Called for an efficient `let! ... return` in computation expressions.|
-|`BindNReturn`|`(M<'T1> * M<'T2> * ... * M<'TN> * ('T1 * 'T2 ... * 'TN -> M<'U>)) -> M<'U>`|Called for efficient `let! ... and! ... return` in computation expressions without merging inputs.<br /><br />e.g. `Bind3Return`, `Bind4Return`.|
+|`BindNReturn`|`(M<'T1> * M<'T2> * ... * M<'TN> * ('T1 * 'T2 ... * 'TN -> M<'U>)) -> M<'U>`|Called for efficient `let! ... and! ... return` in computation expressions without merging inputs.<br /><br />for example, `Bind3Return`, `Bind4Return`.|
 |`MergeSources`|`(M<'T1> * M<'T2>) -> M<'T1 * 'T2>`|Called for `and!` in computation expressions.|
-|`MergeSourcesN`|`(M<'T1> * M<'T2> * ... * M<'TN>) -> M<'T1 * 'T2 * ... * 'TN>`|Called for `and!` in computation expressions, but improves efficiency by reducing the number of tupling nodes.<br /><br />e.g. `MergeSources3`, `MergeSources4`.|
+|`MergeSourcesN`|`(M<'T1> * M<'T2> * ... * M<'TN>) -> M<'T1 * 'T2 * ... * 'TN>`|Called for `and!` in computation expressions, but improves efficiency by reducing the number of tupling nodes.<br /><br />for example, `MergeSources3`, `MergeSources4`.|
 |`Run`|`Delayed<'T> -> M<'T>` or<br /><br />`M<'T> -> 'T`|Executes a computation expression.|
 |`Combine`|`M<'T> * Delayed<'T> -> M<'T>` or<br /><br />`M<unit> * M<'T> -> M<'T>`|Called for sequencing in computation expressions.|
 |`For`|`seq<'T> * ('T -> M<'U>) -> M<'U>` or<br /><br />`seq<'T> * ('T -> M<'U>) -> seq<M<'U>>`|Called for `for...do` expressions in computation expressions.|
@@ -274,7 +274,7 @@ The following table describes methods that can be used in a workflow builder cla
 
 Many of the methods in a builder class use and return an `M<'T>` construct, which is typically a separately defined type that characterizes the kind of computations being combined, for example, `Async<'T>` for async expressions and `Seq<'T>` for sequence workflows. The signatures of these methods enable them to be combined and nested with each other, so that the workflow object returned from one construct can be passed to the next.
 
-Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally`, and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`. See [here](https://fsharpforfunandprofit.com/posts/computation-expressions-builder-part3/#understanding-the-type-constraints) for a more in-depth look.
+Many functions use the result of `Delay` as an argument: `Run`, `While`, `TryWith`, `TryFinally`, and `Combine`. The `Delayed<'T>` type is the return type of `Delay` and consequently the parameter to these functions. `Delayed<'T>` can be an arbitrary type that does not need to be related to `M<'T>`; commonly `M<'T>` or `(unit -> M<'T>)` are used. The default implementation is `M<'T>`. For a more in-depth look, see [Understanding the type constraints](https://fsharpforfunandprofit.com/posts/computation-expressions-builder-part3/#understanding-the-type-constraints).
 
 The compiler, when it parses a computation expression, translates the expression into a series of nested function calls by using the methods in the preceding table and the code in the computation expression. The nested expression is of the following form:
 
@@ -452,7 +452,7 @@ type QueryBuilder with
     member _.any (source: QuerySource<'T, 'Q>, predicate) =
         System.Linq.Enumerable.Any (source.Source, Func<_,_>(predicate))
 
-    [<CustomOperation("singleSafe")>] // you can specify your own operation name in the constructor 
+    [<CustomOperation("singleSafe")>] // you can specify your own operation name in the constructor
     member _.singleOrDefault (source: QuerySource<'T, 'Q>, predicate) =
         System.Linq.Enumerable.SingleOrDefault (source.Source, Func<_,_>(predicate))
 ```

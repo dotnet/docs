@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "I/O [Visual Basic], My.Computer.FileSystem.WriteAllText method"
   - "I/O [Visual Basic], WriteAllText method"
 ms.assetid: bbbd7fb5-f169-41a9-b53f-520ea9613913
+ms.topic: how-to
 ---
 # How to: Append to Text Files in Visual Basic
 

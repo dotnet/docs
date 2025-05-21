@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "custom log listeners"
   - "My.Application.Log object, custom log listeners"
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
+ms.topic: how-to
 ---
 # Walkthrough: Creating Custom Log Listeners (Visual Basic)
 

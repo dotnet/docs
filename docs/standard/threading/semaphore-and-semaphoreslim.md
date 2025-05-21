@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "SemaphoreSlim class, about SemaphoreSlim class"
   - "threading [.NET], Semaphore class"
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
+ms.topic: article
 ---
 # Semaphore and SemaphoreSlim
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: article
 ---
 
 # Source-generation modes in System.Text.Json

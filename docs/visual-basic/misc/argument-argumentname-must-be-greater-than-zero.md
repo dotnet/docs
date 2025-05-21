@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_GTZero1"
 ms.assetid: f9939fbd-6c4f-4871-9452-9ea0267e948e
+ms.topic: article
 ---
 # Argument '\<argumentname>' must be greater than zero
 

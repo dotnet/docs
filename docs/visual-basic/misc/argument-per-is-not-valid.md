@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrPPMT_PerGT0AndLTNPer"
 ms.assetid: 5f3fadba-d32c-4e52-b949-85a907e6c12f
+ms.topic: article
 ---
 # Argument 'Per' is not valid
 

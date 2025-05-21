@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "pattern matching"
   - "patterns, matching"
 ms.assetid: 25e3b71d-b844-4293-9e4e-f06c5836b5cc
+ms.topic: how-to
 ---
 # How to: Find Files with a Specific Pattern in Visual Basic
 

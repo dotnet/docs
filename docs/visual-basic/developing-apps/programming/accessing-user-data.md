@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "login names [Visual Basic]"
   - "examples [Visual Basic], accessing user data"
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
+ms.topic: concept-article
 ---
 # Accessing User Data (Visual Basic)
 

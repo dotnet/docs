@@ -3,6 +3,7 @@ title: Visual Basic support for System.Text.Json
 description: Learn which parts of the System.Text.Json namespace aren't supported in Visual Basic.
 ms.date: 09/21/2022
 no-loc: [System.Text.Json, Newtonsoft.Json]
+ms.topic: article
 ---
 
 # Visual Basic support

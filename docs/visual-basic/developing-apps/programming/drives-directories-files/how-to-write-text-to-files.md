@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "writing to files [Visual Basic]"
   - "examples [Visual Basic], text files"
 ms.assetid: 304956eb-530d-4df7-b48f-9b4d1f2581a0
+ms.topic: how-to
 ---
 # How to: Write Text to Files in Visual Basic
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_RangeTwoBytes1"
 ms.assetid: d1ab6767-8334-4d7c-bb99-c837a793ed69
+ms.topic: article
 ---
 # Argument '\<argumentname>' must be in the range of -32768 to 65535
 

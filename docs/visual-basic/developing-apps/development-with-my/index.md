@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "My feature"
   - "Visual Basic, programming in"
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
+ms.topic: article
 ---
 # Development with My (Visual Basic)
 

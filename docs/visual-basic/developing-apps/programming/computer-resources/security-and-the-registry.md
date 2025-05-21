@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "security [Visual Basic], registry"
   - "registry [Visual Basic], security issues"
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
+ms.topic: article
 ---
 # Security and the Registry (Visual Basic)
 

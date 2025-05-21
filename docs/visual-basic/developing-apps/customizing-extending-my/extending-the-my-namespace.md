@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "My namespace"
   - "My namespace [Visual Basic], extending"
 ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
+ms.topic: concept-article
 ---
 # Extending the `My` Namespace in Visual Basic
 

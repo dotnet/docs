@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "WriteAllBytes method [Visual Basic]"
   - "binary files [Visual Basic], writing in Visual Basic"
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
+ms.topic: how-to
 ---
 # How to: Write to Binary Files in Visual Basic
 

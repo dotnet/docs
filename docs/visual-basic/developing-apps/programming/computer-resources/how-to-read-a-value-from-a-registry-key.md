@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "registry keys [Visual Basic], reading from"
   - "registry [Visual Basic], reading"
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
+ms.topic: how-to
 ---
 # How to: Read a Value from a Registry Key in Visual Basic
 

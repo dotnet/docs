@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFinancial_LifeNEZero"
 ms.assetid: c402da97-a2b2-4219-a83a-0cebbfdffef2
+ms.topic: article
 ---
 # Argument 'Life' cannot be zero
 

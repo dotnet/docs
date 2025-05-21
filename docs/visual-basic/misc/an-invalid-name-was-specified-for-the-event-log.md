@@ -3,6 +3,7 @@ description: "Learn more about: An invalid name was specified for the event log"
 title: "An invalid name was specified for the event log"
 ms.date: 07/20/2015
 ms.assetid: b1b158bd-f13f-4371-a8af-31c0e86ae6be
+ms.topic: article
 ---
 # An invalid name was specified for the event log
 

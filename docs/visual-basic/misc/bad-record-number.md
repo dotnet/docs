@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID63"
 ms.assetid: 1fcc33f8-822a-4de9-a6e3-228ddb5824a6
+ms.topic: article
 ---
 # Bad record number
 

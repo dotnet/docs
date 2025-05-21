@@ -4,6 +4,7 @@ description: Learn about security vulnerabilities of BinaryFormatter, SoapFormat
 ms.date: 03/02/2022
 ms.author: levib
 author: GrabYourPitchforks
+ms.topic: article
 ---
 # Deserialization risks in use of BinaryFormatter and related types
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Unicode, file encoding"
   - "file encoding"
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
+ms.topic: article
 ---
 # File Encodings (Visual Basic)
 

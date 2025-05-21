@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "exceptions, logging"
   - "exceptions, tracking"
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
+ms.topic: how-to
 ---
 # How to: Log Exceptions in Visual Basic
 

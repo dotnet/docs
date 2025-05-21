@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "My.Settings object [Visual Basic], changing user settings"
   - "examples [Visual Basic], changing user settings"
 ms.assetid: 41250181-c594-4854-9988-8183b9eb03cf
+ms.topic: how-to
 ---
 # How to: Change User Settings in Visual Basic
 

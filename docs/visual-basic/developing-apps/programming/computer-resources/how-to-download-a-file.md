@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "files [Visual Basic], downloading"
   - "files [Visual Basic], transferring"
 ms.assetid: ac479f81-c0e2-4b99-af73-217f446b73da
+ms.topic: how-to
 ---
 # How to: Download a File in Visual Basic
 

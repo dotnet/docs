@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_IllegalOutputAccess"
 ms.assetid: 29a40d2d-10d7-476b-b7c5-d10ab6a3bcce
+ms.topic: article
 ---
 # Argument 'Access' is not valid. Valid values for Output mode are 'OpenAccess.Write' and 'OpenAccess.Default'
 

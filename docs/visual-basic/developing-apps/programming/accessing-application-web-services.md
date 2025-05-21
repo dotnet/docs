@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "My.WebServices object"
   - "applications [Visual Basic], Web services"
 ms.assetid: 8ad5405b-e771-42b1-82d3-ce97af2cea9e
+ms.topic: concept-article
 ---
 # Accessing Application Web Services (Visual Basic)
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "My.Forms object"
   - "forms [Visual Basic], accessing all open"
 ms.assetid: 9aaf5aaf-2012-4f97-89c7-6e62b9d17863
+ms.topic: concept-article
 ---
 # Accessing Application Forms (Visual Basic)
 

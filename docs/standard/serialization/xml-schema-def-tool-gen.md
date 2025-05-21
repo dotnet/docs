@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "XML Schema Definition tool, using to generate classes that conform to specific schema"
   - "XML Schema Definition tool, using to generate XML Schema Document"
 ms.assetid: 51f0edc3-993d-4051-b7f2-77753694d3d1
+ms.topic: how-to
 ---
 # How to: Use the XML Schema Definition Tool to Generate Classes and XML Schema Documents
 

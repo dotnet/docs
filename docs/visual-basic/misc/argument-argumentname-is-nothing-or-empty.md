@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_PathNullOrEmpty1"
 ms.assetid: 4a742518-30ce-4054-b1bb-df6978f15c06
+ms.topic: article
 ---
 # Argument '\<argumentname>' is Nothing or empty
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "My.Computer.Ports object"
   - "ports, serial port availability"
 ms.assetid: eaf2ee5a-8103-4e10-a205-ed1d4db120ba
+ms.topic: how-to
 ---
 # How to: Show Available Serial Ports in Visual Basic
 

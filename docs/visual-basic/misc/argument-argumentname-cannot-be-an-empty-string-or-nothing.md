@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrGeneral_ArgumentEmptyOrNothing_Name"
 ms.assetid: 2c458944-1bdf-4ea7-9caf-560ca7582cc0
+ms.topic: article
 ---
 # Argument \<argumentname> cannot be an empty string or Nothing
 

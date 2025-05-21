@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFinancial_ArgGEZero1"
 ms.assetid: 7b901c2a-3447-4afc-91f8-8fa5f6f961d7
+ms.topic: article
 ---
 # Argument '\<argumentname>' must be greater than or equal to zero
 

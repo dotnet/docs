@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My Documents directory"
 ms.assetid: 26560d01-7dda-4457-8e95-21db23d71aea
+ms.topic: how-to
 ---
 # How to: Retrieve the Contents of the My Documents Directory in Visual Basic
 

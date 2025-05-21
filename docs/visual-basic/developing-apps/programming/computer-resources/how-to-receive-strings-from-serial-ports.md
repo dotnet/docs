@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], retrieving from serial ports"
   - "My.Resources object"
 ms.assetid: 8371ce2c-e1c7-476b-a86d-9afc2614b6b7
+ms.topic: how-to
 ---
 # How to: Receive Strings From Serial Ports in Visual Basic
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "directories [Visual Basic], creating"
   - "folders [Visual Basic], creating"
 ms.assetid: 0351a2ca-24d8-43b5-bb39-9b99e6401cff
+ms.topic: how-to
 ---
 # How to: Create a Directory in Visual Basic
 

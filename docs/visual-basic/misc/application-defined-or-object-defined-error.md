@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID95"
 ms.assetid: 02b8e145-7988-48ad-abad-ed7656b4933c
+ms.topic: article
 ---
 # Application-defined or object-defined error
 

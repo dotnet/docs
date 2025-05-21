@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrGeneral_ArgumentNullException"
 ms.assetid: 2abd995b-36a5-45f0-b3c1-6e0c3b31a875
+ms.topic: article
 ---
 # Argument cannot be Nothing
 

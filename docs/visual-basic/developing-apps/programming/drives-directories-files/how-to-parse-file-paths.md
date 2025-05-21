@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "file names [Visual Basic], parsing [Visual Basic]"
   - "parsing, file paths [Visual Basic]"
 ms.assetid: c1bd99c9-8160-456a-b5ab-60a49139b923
+ms.topic: how-to
 ---
 # How to: Parse File Paths in Visual Basic
 

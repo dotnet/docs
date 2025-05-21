@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFinancial_CannotCalculateNPer"
 ms.assetid: a96fed1c-73e6-4a2b-9906-0190bc3d4c3c
+ms.topic: article
 ---
 # Cannot calculate number of periods using the arguments provided
 

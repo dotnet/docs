@@ -3,6 +3,7 @@ title: "XML Schema Definition Tool (Xsd.exe)"
 description: The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly, which improves the startup performance of XmlSerializer.
 ms.date: "03/30/2017"
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
+ms.topic: article
 ---
 # XML Schema Definition Tool (Xsd.exe)
 

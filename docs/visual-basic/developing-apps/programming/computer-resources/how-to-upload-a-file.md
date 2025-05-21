@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "UploadFile method [Visual Basic]"
   - "My.Computer.Network.UploadFile method"
 ms.assetid: a8b37924-c523-4fd3-b5ca-cb0074df29cd
+ms.topic: how-to
 ---
 # How to: Upload a File in Visual Basic
 

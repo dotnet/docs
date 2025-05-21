@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "I/O [Visual Basic], reading text files"
   - "text files [Visual Basic], reading"
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
+ms.topic: how-to
 ---
 # How to: Read from text files with multiple formats in Visual Basic
 

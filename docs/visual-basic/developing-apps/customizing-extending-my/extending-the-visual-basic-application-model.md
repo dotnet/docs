@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "Visual Basic Application Model, extending"
 ms.assetid: e91d3bed-4c27-40e3-871d-2be17467c72c
+ms.topic: how-to
 ---
 # Extending the Visual Basic Application Model
 

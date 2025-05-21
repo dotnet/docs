@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "threading [.NET],exceptions in managed threads"
   - "managed threading"
 ms.assetid: 11294769-2e89-43cb-890e-ad4ad79cfbee
+ms.topic: article
 ---
 # Exceptions in managed threads
 

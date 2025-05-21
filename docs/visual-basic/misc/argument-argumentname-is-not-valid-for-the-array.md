@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_InvalidRank1"
 ms.assetid: 2c931ede-9c41-4ad3-8dfd-d649617f567c
+ms.topic: article
 ---
 # Argument '\<argumentname>' is not valid for the array
 

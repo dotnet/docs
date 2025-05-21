@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "rapid application development (RAD), My.Forms"
   - "rapid application development (RAD), My.WebServices"
 ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79
+ms.topic: article
 ---
 # Default Object Instances Provided by My.Forms and My.WebServices (Visual Basic)
 

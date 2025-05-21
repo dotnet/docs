@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "writing to files [Visual Basic]"
   - "Visual Basic, writing to files"
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
+ms.topic: concept-article
 ---
 # Writing to Files in Visual Basic
 

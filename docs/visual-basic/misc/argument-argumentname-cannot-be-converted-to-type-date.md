@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_InvalidDateValue1"
 ms.assetid: 928b8d75-f523-40c3-819a-03a1eb596ccc
+ms.topic: article
 ---
 # Argument '\<argumentname>' cannot be converted to type 'Date'
 

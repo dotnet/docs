@@ -5,6 +5,7 @@ ms.date: 01/19/2025
 dev_langs:
   - CSharp
   - VB
+ms.topic: article
 ---
 # Serialization extension methods on HttpClient
 

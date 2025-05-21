@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_MinusOneOrGTZero1"
 ms.assetid: 22c6bf5f-5194-43ec-8a8c-88f781801927
+ms.topic: article
 ---
 # Argument '\<argumentname>' must be greater than 0 or equal to -1
 

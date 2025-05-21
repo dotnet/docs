@@ -5,6 +5,7 @@ ms.date: 01/15/2025
 no-loc: [System.Text.Json]
 dev_langs:
   - "csharp"
+ms.topic: article
 ---
 
 # Handle unmapped members during deserialization

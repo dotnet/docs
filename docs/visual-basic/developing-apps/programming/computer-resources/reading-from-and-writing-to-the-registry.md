@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "registry [Visual Basic], writing to"
   - "registry [Visual Basic], reading"
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
+ms.topic: concept-article
 ---
 # Reading from and Writing to the Registry (Visual Basic)
 

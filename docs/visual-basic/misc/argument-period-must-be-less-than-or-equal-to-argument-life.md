@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFinancial_PeriodLELife"
 ms.assetid: dc575d41-b376-4b05-bbbe-6de1e98385f1
+ms.topic: article
 ---
 # Argument 'Period' must be less than or equal to argument 'Life'
 

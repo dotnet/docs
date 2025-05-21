@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "examples [Visual Basic], text files"
   - "writing to files [Visual Basic], in My Documents"
 ms.assetid: 1c726124-781d-4976-9baa-ed46814ff3fe
+ms.topic: how-to
 ---
 # How to: Write Text to Files in the My Documents Directory in Visual Basic
 

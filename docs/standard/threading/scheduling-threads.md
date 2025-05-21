@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "threading [.NET], scheduling"
   - "scheduling threads"
 ms.assetid: 67e4a0eb-3095-4ea7-b20f-908faa476277
+ms.topic: concept-article
 ---
 # Scheduling threads
 

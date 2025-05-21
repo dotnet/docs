@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "threads, cancellation"
 ms.assetid: d2d6d5fd-e263-4fa0-847b-2fc3e0d82337
+ms.topic: concept-article
 ---
 # Canceling threads cooperatively
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID443"
 ms.assetid: 162641f6-5a19-4c37-8c92-17929885e87e
+ms.topic: article
 ---
 # Automation object does not have a default value
 

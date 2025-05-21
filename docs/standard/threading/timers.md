@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "threading [.NET], timers"
   - "timers, about timers"
 author: "pkulikov"
+ms.topic: article
 ---
 # Timers
 

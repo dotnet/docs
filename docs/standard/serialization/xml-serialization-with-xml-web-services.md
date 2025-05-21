@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "literal XML serialization"
   - "serialization, attributes"
 ms.assetid: a416192f-8102-458e-bc0a-0b8f3f784da9
+ms.topic: article
 ---
 # XML Serialization with XML Web Services
 

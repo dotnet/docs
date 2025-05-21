@@ -6,6 +6,7 @@ helpviewer_keywords:
 - "I/O [Visual Basic], renaming files"
 - "files [Visual Basic], renaming"
 ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
+ms.topic: how-to
 ---
 # How to: Rename a File in Visual Basic
 

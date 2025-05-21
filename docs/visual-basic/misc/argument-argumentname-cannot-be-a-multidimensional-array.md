@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_RankEQOne1"
 ms.assetid: 3b44521a-44e3-4cbe-9a99-1e0ac6ccf537
+ms.topic: article
 ---
 # Argument '\<argumentname>' cannot be a multidimensional array
 

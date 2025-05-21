@@ -3,6 +3,7 @@ title: Respect nullable annotations
 description: "Learn how to configure serialization and deserialization to respect nullable annotations."
 ms.date: 10/22/2024
 no-loc: [System.Text.Json, Newtonsoft.Json]
+ms.topic: how-to
 ---
 # Respect nullable annotations
 

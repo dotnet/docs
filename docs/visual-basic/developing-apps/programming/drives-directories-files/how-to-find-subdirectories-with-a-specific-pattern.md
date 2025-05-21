@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "pattern matching"
   - "folders, finding"
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
+ms.topic: how-to
 ---
 # How to: Find Subdirectories with a Specific Pattern in Visual Basic
 

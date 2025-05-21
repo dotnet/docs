@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "My namespace [Visual Basic], customizing"
   - "My namespace"
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
+ms.topic: concept-article
 ---
 # Customizing Which Objects are Available in My (Visual Basic)
 

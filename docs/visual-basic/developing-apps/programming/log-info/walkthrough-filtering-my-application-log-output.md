@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "My.Application.Log object, filtering output"
   - "application event logs, output filtering"
 ms.assetid: 2c0a457a-38a4-49e1-934d-a51320b7b4ca
+ms.topic: how-to
 ---
 # Walkthrough: Filtering My.Application.Log Output (Visual Basic)
 

@@ -2,6 +2,7 @@
 title: Visual Basic language strategy
 description: Learn about the .NET team's strategy for development and maintenance of the Visual Basic programming language.
 ms.date: 02/06/2023
+ms.topic: article
 ---
 # Annotated Visual Basic language strategy
 

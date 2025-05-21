@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "XML Schema Definition tool"
   - "serialization, XML Schema Definition tool"
 ms.assetid: 3c03f855-f931-47ff-bbc6-50c0367a16e4
+ms.topic: article
 ---
 # The XML Schema Definition Tool and XML Serialization
 

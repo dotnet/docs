@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "Clipboard"
   - "Drag-and-drop"
   - "OLE"
+ms.topic: upgrade-and-migration-article
 ---
 
 # Windows Forms and Windows Presentation Foundation BinaryFormatter OLE guidance

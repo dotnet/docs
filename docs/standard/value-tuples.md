@@ -2,6 +2,7 @@
 title: Value tuples
 description: Learn about value tuple structures in .NET.
 ms.date: 01/03/2024
+ms.topic: article
 ---
 # Value tuples
 

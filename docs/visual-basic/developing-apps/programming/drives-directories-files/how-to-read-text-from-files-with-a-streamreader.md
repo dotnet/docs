@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "reading text from files [Visual Basic]"
   - "files [Visual Basic], reading"
 ms.assetid: 384033c6-18f9-4d59-9610-36371226558f
+ms.topic: how-to
 ---
 # How to: Read Text from Files with a StreamReader (Visual Basic)
 

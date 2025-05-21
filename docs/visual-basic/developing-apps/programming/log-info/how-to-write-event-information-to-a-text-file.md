@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "text files [Visual Basic], writing event information to a text file"
   - "events [Visual Basic], writing event information to a text file"
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
+ms.topic: how-to
 ---
 # How to: Write Event Information to a Text File (Visual Basic)
 

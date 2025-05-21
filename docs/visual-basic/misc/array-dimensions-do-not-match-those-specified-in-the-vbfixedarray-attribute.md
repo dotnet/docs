@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_ArrayDimensionsDontMatch"
 ms.assetid: 71809e3b-8147-4314-9c4c-e4a5bc9a5530
+ms.topic: article
 ---
 # Array dimensions do not match those specified in the 'VBFixedArray' attribute
 

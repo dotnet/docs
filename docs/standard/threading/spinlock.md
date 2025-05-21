@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "synchronization primitives, SpinLock"
 ms.assetid: f9af93bb-7a0d-4ba5-afe8-74f48b6b6958
+ms.topic: article
 ---
 # SpinLock
 

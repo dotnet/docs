@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "examples [Visual Basic], reading text files"
   - "text files [Visual Basic], reading"
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
+ms.topic: how-to
 ---
 # How to: Read From Text Files in Visual Basic
 

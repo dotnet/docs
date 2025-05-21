@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "persistence [Visual Basic], persisting user settings [Visual Basic]"
   - "user settings [Visual Basic], persisting"
 ms.assetid: 0e5e6415-b6e2-4602-9be0-a65fa167d007
+ms.topic: how-to
 ---
 # How to: Persist User Settings in Visual Basic
 

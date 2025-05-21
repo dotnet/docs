@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "processes, starting and sending keystrokes"
   - "SendKeys.SendWait examples"
 ms.assetid: f1303184-fce4-44fb-88b4-aac5f42d5d77
+ms.topic: how-to
 ---
 # How to: start an application and send it keystrokes (Visual Basic)
 

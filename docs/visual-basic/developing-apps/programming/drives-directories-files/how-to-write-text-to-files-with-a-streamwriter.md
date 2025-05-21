@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "text, writing to files"
   - "writing to files [Visual Basic], StreamWriter"
 ms.assetid: 99762e57-ef46-4dcc-8959-a8f79c22f067
+ms.topic: how-to
 ---
 # How to: Write Text to Files with a StreamWriter in Visual Basic
 

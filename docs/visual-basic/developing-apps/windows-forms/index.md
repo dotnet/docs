@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Windows applications"
   - "Windows Forms, Visual Basic"
 ms.assetid: 0b919d30-7fd6-42db-85c8-543d15312441
+ms.topic: article
 ---
 # Windows Forms Application Basics (Visual Basic)
 

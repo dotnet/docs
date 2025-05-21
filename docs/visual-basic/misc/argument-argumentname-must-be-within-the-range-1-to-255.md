@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_Range1toFF1"
 ms.assetid: a447f9a6-1c90-4c71-abff-81170331e4c5
+ms.topic: article
 ---
 # Argument '\<argumentname>' must be within the range 1 to 255
 

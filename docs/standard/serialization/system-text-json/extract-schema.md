@@ -4,6 +4,7 @@ description: Learn how to use the JsonSchemaExporter class to extract JSON schem
 ms.date: 10/15/2024
 dev_langs:
   - "csharp"
+ms.topic: article
 ---
 
 # JSON schema exporter

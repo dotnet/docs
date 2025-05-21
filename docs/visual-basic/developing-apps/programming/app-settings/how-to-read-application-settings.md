@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "My.Settings object [Visual Basic], reading application settings"
   - "application settings [Visual Basic], reading"
 ms.assetid: eb3428ef-115e-49a8-a878-e0613183fee0
+ms.topic: how-to
 ---
 # How to: Read Application Settings in Visual Basic
 

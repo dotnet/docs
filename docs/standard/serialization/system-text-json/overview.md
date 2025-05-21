@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+ms.topic: concept-article
 ---
 
 # JSON serialization and deserialization in .NET - overview

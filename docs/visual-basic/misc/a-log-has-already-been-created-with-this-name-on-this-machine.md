@@ -3,6 +3,7 @@ description: "Learn more about: A log has already been created with this name on
 title: "A log has already been created with this name on this machine"
 ms.date: 07/20/2015
 ms.assetid: 3dd78d9f-890e-4409-bebb-048fdf34711b
+ms.topic: article
 ---
 # A log has already been created with this name on this machine
 

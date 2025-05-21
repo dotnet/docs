@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "folders [Visual Basic], copying"
   - "directories [Visual Basic], copying"
 ms.assetid: 2a370bd7-10ba-4219-afc4-4519d031eb6c
+ms.topic: how-to
 ---
 # How to: Copy a Directory to Another Directory in Visual Basic
 

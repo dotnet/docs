@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "serial ports [Visual Basic], dialing"
   - "My.Computer.Ports object"
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
+ms.topic: how-to
 ---
 # How to: Dial Modems Attached to Serial Ports in Visual Basic
 

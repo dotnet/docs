@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "serial ports"
   - "My.Computer.Ports object [Visual Basic], tasks"
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
+ms.topic: concept-article
 ---
 # Accessing the Computer's Ports (Visual Basic)
 

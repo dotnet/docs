@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "property grids [Visual Basic], creating for user settings"
   - "property grids"
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
+ms.topic: how-to
 ---
 # How to: Create Property Grids for User Settings in Visual Basic
 

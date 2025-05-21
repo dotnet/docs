@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_PathNullOrEmpty"
 ms.assetid: ba8aed14-2543-4c8e-ad88-c35b49078dd6
+ms.topic: article
 ---
 # Argument 'Path' is Nothing or empty
 

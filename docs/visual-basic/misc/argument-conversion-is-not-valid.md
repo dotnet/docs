@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_InvalidVbStrConv"
 ms.assetid: a5497ad5-25be-4ac7-91fb-ad117d683efe
+ms.topic: article
 ---
 # Argument 'Conversion' is not valid
 

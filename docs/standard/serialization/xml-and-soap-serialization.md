@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "XML serialization"
   - "serialization"
 ms.assetid: 832ac524-21bc-419a-a27b-ca8bfc45840f
+ms.topic: article
 ---
 # XML and SOAP serialization
 

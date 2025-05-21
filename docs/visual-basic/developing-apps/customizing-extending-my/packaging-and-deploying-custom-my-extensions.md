@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "My namespace"
   - "My namespace [Visual Basic], extending"
 ms.assetid: fd89c54b-0290-4c50-95a3-ff17d4487a21
+ms.topic: install-set-up-deploy
 ---
 # Package and deploy custom My extensions (Visual Basic)
 

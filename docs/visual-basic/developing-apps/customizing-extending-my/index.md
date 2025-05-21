@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "My namespace"
   - "My namespace [Visual Basic], extending"
 ms.assetid: 06ca80b9-1192-4eb5-8537-8ef5edfb9be0
+ms.topic: concept-article
 ---
 # Customizing Projects and Extending My with Visual Basic
 

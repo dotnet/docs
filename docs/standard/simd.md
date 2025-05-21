@@ -4,6 +4,7 @@ description: This article describes SIMD-enable types in .NET and demonstrates h
 author: FIVIL
 ms.author: tagoo
 ms.date: 04/28/2020
+ms.topic: how-to
 ---
 
 # Use SIMD-accelerated numeric types

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Visual Basic, developing applications"
   - "applications [Visual Basic]"
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
+ms.topic: concept-article
 ---
 # Developing Applications with Visual Basic
 

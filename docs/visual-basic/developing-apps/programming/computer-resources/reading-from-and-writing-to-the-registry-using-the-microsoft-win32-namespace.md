@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry [Visual Basic]"
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
+ms.topic: concept-article
 ---
 # Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)
 

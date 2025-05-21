@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "rapid application development (RAD), My.Settings"
   - "My.Resources object [Visual Basic], developing applications"
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
+ms.topic: article
 ---
 # Rapid Application Development with My.Resources and My.Settings (Visual Basic)
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "files [Visual Basic], manipulating"
   - "File object"
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
+ms.topic: how-to
 ---
 # How to: Delete a File in Visual Basic
 

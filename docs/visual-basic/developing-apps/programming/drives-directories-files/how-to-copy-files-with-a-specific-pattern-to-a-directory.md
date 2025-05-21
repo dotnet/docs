@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "CopyFile method [Visual Basic], copying files in Visual Basic"
   - "I/O [Visual Basic], copying files"
 ms.assetid: f205d2ad-bbe5-4d55-8a40-acda21aa82dd
+ms.topic: how-to
 ---
 # How to: Copy Files with a Specific Pattern to a Directory in Visual Basic
 

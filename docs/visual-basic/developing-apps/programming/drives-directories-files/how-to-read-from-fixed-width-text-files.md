@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "text files [Visual Basic], tasks"
   - "text files [Visual Basic], reading"
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
+ms.topic: how-to
 ---
 # How to: read from fixed-width text files in Visual Basic
 

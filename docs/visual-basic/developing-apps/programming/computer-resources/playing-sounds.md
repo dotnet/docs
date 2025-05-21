@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "sounds, background"
   - "playing sounds"
 ms.assetid: f0d9e4ab-57c7-47b6-86d3-99ff07078040
+ms.topic: concept-article
 ---
 # Playing Sounds (Visual Basic)
 

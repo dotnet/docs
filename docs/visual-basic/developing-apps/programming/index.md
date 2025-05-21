@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "programming [Visual Basic], Visual Basic"
   - "programming"
 ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
+ms.topic: concept-article
 ---
 # Programming in Visual Basic
 

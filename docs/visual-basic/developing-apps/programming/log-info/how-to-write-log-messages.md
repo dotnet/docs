@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "My.Application.Log object, writing log messages"
 ms.assetid: 972a3e0c-2996-4623-a7a9-d7ebc4d207f8
+ms.topic: how-to
 ---
 
 # How to: Write Log Messages (Visual Basic)

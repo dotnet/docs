@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "files [Visual Basic], reading"
   - "reading files [Visual Basic]"
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
+ms.topic: concept-article
 ---
 # Reading from Files in Visual Basic
 

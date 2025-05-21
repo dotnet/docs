@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "synchronization primitives, CountdownEvent"
 ms.assetid: eec3812a-e20f-4ecd-bfef-6921d508b708
+ms.topic: article
 ---
 # CountdownEvent
 

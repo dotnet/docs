@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "connections [Visual Basic], checking status"
   - "connection status [Visual Basic]"
 ms.assetid: 4d9ee8ab-9a6f-4279-ace4-b75afc976a74
+ms.topic: how-to
 ---
 # How to: Check Connection Status in Visual Basic
 

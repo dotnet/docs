@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "I/O [Visual Basic]"
   - "sequential access"
 ms.assetid: 231533bf-d049-4345-befa-3fb78fe6517d
+ms.topic: article
 ---
 # File Access with Visual Basic
 

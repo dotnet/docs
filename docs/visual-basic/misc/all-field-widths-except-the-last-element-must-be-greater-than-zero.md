@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrTextFieldParser_FieldWidthsMustPositive"
 ms.assetid: 41d8c661-a749-4c89-be56-905c6e7c3c9d
+ms.topic: article
 ---
 # All field widths, except the last element, must be greater than zero
 

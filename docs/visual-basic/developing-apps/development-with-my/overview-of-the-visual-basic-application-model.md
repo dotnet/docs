@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "My.Application object [Visual Basic], Visual Basic application model"
   - "Visual Basic application model"
 ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
+ms.topic: concept-article
 ---
 # Overview of the Visual Basic Application Model
 

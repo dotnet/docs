@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "My.Computer object [Visual Basic], developing applications"
   - "My.User object [Visual Basic], developing applications"
 ms.assetid: c8af61bd-4dd3-4a0f-9af5-795b594b240b
+ms.topic: concept-article
 ---
 # Performing Tasks with My.Application, My.Computer, and My.User (Visual Basic)
 

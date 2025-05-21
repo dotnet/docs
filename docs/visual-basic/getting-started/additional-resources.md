@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Help, Visual Basic Web sites"
   - "Visual Basic, videos"
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
+ms.topic: article
 ---
 # Additional resources
 

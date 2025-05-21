@@ -3,6 +3,7 @@ title: Require properties for deserialization
 description: "Learn how to mark properties as required for deserialization to succeed."
 ms.date: 10/22/2024
 no-loc: [System.Text.Json, Newtonsoft.Json]
+ms.topic: how-to
 ---
 # Required properties
 

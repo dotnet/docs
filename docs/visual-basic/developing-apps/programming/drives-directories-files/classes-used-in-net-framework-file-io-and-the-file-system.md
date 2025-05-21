@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file I/O classes"
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
+ms.topic: article
 ---
 # Classes Used in .NET Framework File I/O and the File System (Visual Basic)
 

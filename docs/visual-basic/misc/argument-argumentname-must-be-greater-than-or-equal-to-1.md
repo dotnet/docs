@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_GEOne1"
 ms.assetid: e7769937-5227-4530-89ca-3d6ffc505005
+ms.topic: article
 ---
 # Argument '\<argumentname>' must be greater than or equal to 1
 

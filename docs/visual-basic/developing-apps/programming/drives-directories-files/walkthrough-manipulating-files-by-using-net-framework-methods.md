@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "text files [Visual Basic], reading"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: 7d2109eb-f98a-4389-b43d-30f384aaa7d5
+ms.topic: how-to
 ---
 # Walkthrough: Manipulating Files by Using .NET Framework Methods (Visual Basic)
 

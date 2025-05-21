@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "My.Computer.Mouse object [Visual Basic], tasks"
   - "mouse [Visual Basic], accessing [Visual Basic]"
 ms.assetid: 6d31a3d2-d860-459d-9d13-3aa192d62ba2
+ms.topic: concept-article
 ---
 # Accessing the Mouse (Visual Basic)
 

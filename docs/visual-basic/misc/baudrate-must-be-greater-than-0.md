@@ -3,6 +3,7 @@ description: "Learn more about: BaudRate must be greater than 0"
 title: "BaudRate must be greater than 0"
 ms.date: 07/20/2015
 ms.assetid: 5d26c4b1-45ca-459b-9b96-907dbc6ea25c
+ms.topic: article
 ---
 # BaudRate must be greater than 0
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "My.Computer.Info object [Visual Basic], tasks"
 ms.assetid: 13c145bc-5c85-4fea-a5dd-2ca8681a0252
+ms.topic: concept-article
 ---
 # Getting Information about the Computer (Visual Basic)
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "CopyFile method [Visual Basic], copying files in Visual Basic"
   - "I/O [Visual Basic], copying files"
 ms.assetid: 88e2145c-d414-45a5-ad03-6f5d58ecca26
+ms.topic: how-to
 ---
 # How to: Create a Copy of a File in a Different Directory in Visual Basic
 

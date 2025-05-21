@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "My.Settings object [Visual Basic], application settings"
   - "examples [Visual Basic], application settings"
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
+ms.topic: concept-article
 ---
 # Accessing application settings (Visual Basic)
 

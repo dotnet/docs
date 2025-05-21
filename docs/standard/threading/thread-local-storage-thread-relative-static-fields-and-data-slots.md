@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "local thread storage"
   - "TLS"
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
+ms.topic: article
 ---
 # Thread Local Storage: Thread-Relative Static Fields and Data Slots
 

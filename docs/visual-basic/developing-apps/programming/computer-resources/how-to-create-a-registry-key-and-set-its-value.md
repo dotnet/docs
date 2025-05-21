@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "registry keys [Visual Basic], setting values"
   - "examples [Visual Basic], registry"
 ms.assetid: d3e40f74-c283-480c-ab18-e5e9052cd814
+ms.topic: how-to
 ---
 # How to: Create a Registry Key and Set Its Value in Visual Basic
 

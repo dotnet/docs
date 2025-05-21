@@ -2,6 +2,7 @@
 title: Custom serialization and deserialization contracts
 description: "Learn how to write your own contract resolution logic to customize the JSON contract for a type."
 ms.date: 06/15/2023
+ms.topic: article
 ---
 # Customize a JSON contract
 

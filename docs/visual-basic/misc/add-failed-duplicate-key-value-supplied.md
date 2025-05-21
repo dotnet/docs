@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrCollection_DuplicateKey"
 ms.assetid: 7b1d6e6c-a69d-4713-a19d-ae1534a60464
+ms.topic: article
 ---
 # Add failed. Duplicate key value supplied
 

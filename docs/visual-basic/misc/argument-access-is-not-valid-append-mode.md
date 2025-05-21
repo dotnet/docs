@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_IllegalAppendAccess"
 ms.assetid: f584056e-5eb7-401f-b43d-d08252e66d1c
+ms.topic: article
 ---
 # Argument 'Access' is not valid. Valid values for Append mode are 'OpenAccess.Write' and 'OpenAccess.Default'
 

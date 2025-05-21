@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "synchronization primitives, SpinWait"
 ms.assetid: 36012f42-34e5-4f86-adf4-973f433ed6c6
+ms.topic: article
 ---
 # SpinWait
 

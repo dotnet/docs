@@ -3,6 +3,7 @@ description: "Learn more about: Another event log has already registered a sourc
 title: "Another event log has already registered a source with this name"
 ms.date: 07/20/2015
 ms.assetid: e6f5cd95-bb3f-4845-84fb-ae623a9bd44e
+ms.topic: article
 ---
 # Another event log has already registered a source with this name
 

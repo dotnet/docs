@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "text files [Visual Basic], creating"
   - "files [Visual Basic], creating"
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
+ms.topic: how-to
 ---
 # How to: Create a File in Visual Basic
 

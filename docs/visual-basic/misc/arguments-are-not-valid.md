@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_InvalidValue"
 ms.assetid: dc0be8ab-b2b7-40b7-8c94-7ac9eadb5e94
+ms.topic: article
 ---
 # Arguments are not valid
 

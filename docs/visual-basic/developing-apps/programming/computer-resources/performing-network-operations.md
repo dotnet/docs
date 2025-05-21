@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "network operations, performing"
   - "My.Computer.Network object, tasks"
 ms.assetid: 8ecc47ce-7730-49cd-b21d-3a13477eec6b
+ms.topic: concept-article
 ---
 # Performing Network Operations (Visual Basic)
 

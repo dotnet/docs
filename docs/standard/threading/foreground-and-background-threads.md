@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "foreground threads"
   - "background threads"
 ms.assetid: cfe0d632-dd35-47e0-91ad-f742a444005e
+ms.topic: article
 ---
 # Foreground and background threads
 

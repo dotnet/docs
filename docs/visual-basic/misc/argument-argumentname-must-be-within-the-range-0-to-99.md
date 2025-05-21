@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrArgument_Range0to99_1"
 ms.assetid: d9d9a15e-c5ee-4104-9504-b48a4a191415
+ms.topic: article
 ---
 # Argument '\<argumentname>' must be within the range 0 to 99
 

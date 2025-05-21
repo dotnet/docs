@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "ports, Visual Basic"
 ms.assetid: 1eba223b-7bd3-401a-b097-982bce96df1b
+ms.topic: article
 ---
 # Port Operations in the .NET Framework with Visual Basic
 

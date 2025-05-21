@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "My.Computer object [Visual Basic], tasks"
   - "computer resources [Visual Basic], accessing"
 ms.assetid: 75b81c88-f7c0-46e0-95c8-0c006d2120f9
+ms.topic: concept-article
 ---
 
 # Accessing computer resources (Visual Basic)

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "DataSet class, serializing"
   - "XML Schema, serializing"
 ms.assetid: 8c63200d-db63-4a03-a93d-21641623df62
+ms.topic: article
 ---
 # XML serialization
 

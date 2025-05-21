@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "Shutdown event [Visual Basic]"
   - "My.Log object, logging"
 ms.assetid: 67624d05-cddf-48b7-8c36-5c99baa4c621
+ms.topic: how-to
 ---
 # How to: Log Messages When the Application Starts or Shuts Down (Visual Basic)
 

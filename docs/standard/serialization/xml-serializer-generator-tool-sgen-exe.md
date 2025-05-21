@@ -2,6 +2,7 @@
 title: "XML Serializer Generator tool (Sgen.exe)"
 description: The XML Serializer Generator creates an XML serialization assembly for types in an assembly, which improves the startup performance of XmlSerializer.
 ms.date: 04/23/2024
+ms.topic: article
 ---
 # XML Serializer Generator tool (Sgen.exe)
 

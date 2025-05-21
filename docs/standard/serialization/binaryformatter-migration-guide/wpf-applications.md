@@ -6,6 +6,7 @@ no-loc: [BinaryFormatter, WPF]
 helpviewer_keywords:
   - "BinaryFormatter"
   - "WPF"
+ms.topic: upgrade-and-migration-article
 ---
 
 # Windows Presentation Foundation(WPF) migration guide for BinaryFormatter

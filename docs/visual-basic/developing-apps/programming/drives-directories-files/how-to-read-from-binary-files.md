@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "ReadAllBytes method [Visual Basic], reading from binary files"
   - "My.Computer.FileSystem object, reading from binary files"
 ms.assetid: d2b1269e-24b6-42e0-9414-ae708db282d8
+ms.topic: how-to
 ---
 # How to: Read From Binary Files in Visual Basic
 

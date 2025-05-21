@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "threading [.NET], best practices"
   - "managed threading"
 ms.assetid: e51988e7-7f4b-4646-a06d-1416cee8d557
+ms.topic: best-practice
 ---
 # Managed threading best practices
 

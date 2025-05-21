@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "serialization"
   - "objects, serializing"
 ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
+ms.topic: article
 ---
 
 # Serialization in .NET

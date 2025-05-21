@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "registry [Visual Basic], deleting keys"
   - "examples [Visual Basic], registry"
 ms.assetid: ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2
+ms.topic: how-to
 ---
 # How to: Delete a Registry Key in Visual Basic
 

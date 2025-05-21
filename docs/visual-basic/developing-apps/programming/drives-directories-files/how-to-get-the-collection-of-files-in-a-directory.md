@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "folders, working with"
   - "files [Visual Basic], accessing"
 ms.assetid: 6c8ba7e8-dd37-4853-92bf-762b67c98160
+ms.topic: how-to
 ---
 # How to: Get the Collection of Files in a Directory in Visual Basic
 

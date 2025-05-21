@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrApplicationLogBaseNameNull"
 ms.assetid: 8e7665e3-5343-45fa-bc79-64e235a0477f
+ms.topic: article
 ---
 # BaseLogName cannot be Nothing or an empty String
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "event wait handles [.NET]"
   - "threading [.NET], cross-process synchronization"
 ms.assetid: 11ee0b38-d663-4617-b793-35eb6c64e9fc
+ms.topic: article
 ---
 # EventWaitHandle
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "BinaryFormatter"
   - "WinForms"
   - "Windows Forms"
+ms.topic: upgrade-and-migration-article
 ---
 
 # Windows Forms migration guide for BinaryFormatter

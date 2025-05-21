@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vbrFileSystem_IllegalInputAccess"
 ms.assetid: 60929c62-b9dc-4a9c-9363-2325238f744d
+ms.topic: article
 ---
 # Argument 'Access' is not valid. Valid values for Input mode are 'OpenAccess.Read' and 'OpenAccess.Default'
 

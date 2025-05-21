@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "writing to files [Visual Basic], walkthroughs"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
+ms.topic: how-to
 ---
 # Walkthrough: Manipulating Files and Directories in Visual Basic
 

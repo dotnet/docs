@@ -46,7 +46,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 Replace the contents of `Program.cs` with the following code to implement a minimal MCP server that exposes simple echo tools. The AI model invokes these tools as necessary to generate responses to user prompts.
 
-    :::code language="csharp" source="snippets/mcp-server/program.cs" :::
+:::code language="csharp" source="snippets/mcp-server/program.cs" :::
 
 ## Configure the MCP server in Visual Studio Code
 

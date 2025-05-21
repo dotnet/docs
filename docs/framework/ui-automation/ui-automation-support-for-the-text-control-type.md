@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "UI Automation, Text control type"
   - "control types, Text"
 ms.assetid: ab0d0ada-8a71-4547-9c03-aadf675938f2
+ms.topic: article
 ---
 # UI Automation Support for the Text Control Type
 

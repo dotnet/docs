@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "user-defined bindings [WCF]"
 ms.assetid: c4960675-d701-4bc9-b400-36a752fdd08b
+ms.topic: concept-article
 ---
 # Creating User-Defined Bindings
 

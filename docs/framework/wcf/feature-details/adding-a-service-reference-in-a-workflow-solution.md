@@ -3,6 +3,7 @@ description: "Learn more about: Add a Service Reference in a Workflow Solution"
 title: "Adding a Service Reference in a Workflow Solution"
 ms.date: "03/30/2017"
 ms.assetid: 83574cf3-9803-49bc-837f-432936dc9c76
+ms.topic: concept-article
 ---
 # Add a Service Reference in a Workflow Solution
 

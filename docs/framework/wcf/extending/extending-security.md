@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [WCF], extending"
 ms.assetid: a015a040-9fdf-4147-9ea9-f83b570be1d4
+ms.topic: concept-article
 ---
 # Extending Security
 

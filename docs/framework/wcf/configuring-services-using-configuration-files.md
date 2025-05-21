@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "configuring services [WCF]"
 ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
+ms.topic: concept-article
 ---
 # Configuring Services Using Configuration Files
 

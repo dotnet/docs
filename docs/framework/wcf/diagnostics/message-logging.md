@@ -3,6 +3,7 @@ description: "Learn more about: Message Logging"
 title: "Message Logging"
 ms.date: "03/30/2017"
 ms.assetid: 6bce0682-75ef-4d65-a659-b328fba4a8b5
+ms.topic: article
 ---
 # Message Logging
 

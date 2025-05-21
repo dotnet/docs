@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "binding elements [WCF]"
 ms.assetid: 765ff77b-7682-4ea3-90eb-e4d751e37379
+ms.topic: article
 ---
 # Bindings and Binding Elements
 

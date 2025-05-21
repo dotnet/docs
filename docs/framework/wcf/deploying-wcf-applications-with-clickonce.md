@@ -3,6 +3,7 @@ description: "Learn more about: Deploying WCF Applications with ClickOnce"
 title: "Deploying WCF Applications with ClickOnce"
 ms.date: "03/30/2017"
 ms.assetid: 1a11feee-2a47-4d3e-a28a-ad69d5ff93e0
+ms.topic: concept-article
 ---
 # Deploying WCF Applications with ClickOnce
 

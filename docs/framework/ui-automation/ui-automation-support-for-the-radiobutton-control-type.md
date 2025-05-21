@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "UI Automation, Radio Button control type"
   - "RadioButton control type"
 ms.assetid: 87170464-7857-41f1-bcf7-bb41be31cb53
+ms.topic: article
 ---
 # UI Automation Support for the RadioButton Control Type
 

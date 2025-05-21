@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Windows Communication Foundation, endpoints"
   - "Windows Communication Foundation, configuration"
 ms.assetid: 58532b6d-4eea-4a4f-854f-a1c8c842564d
+ms.topic: article
 ---
 # Custom Bindings
 

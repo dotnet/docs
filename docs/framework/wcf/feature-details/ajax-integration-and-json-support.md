@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "AJAX integration and JSON support [WCF]"
 ms.assetid: 3851a8fc-d861-4ac1-873c-96af0343d3a7
+ms.topic: article
 ---
 # AJAX Integration and JSON Support
 

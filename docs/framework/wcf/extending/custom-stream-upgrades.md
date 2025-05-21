@@ -3,6 +3,7 @@ description: "Learn more about: Custom Stream Upgrades"
 title: "Custom Stream Upgrades"
 ms.date: "03/30/2017"
 ms.assetid: e3da85c8-57f3-4e32-a4cb-50123f30fea6
+ms.topic: upgrade-and-migration-article
 ---
 # Custom Stream Upgrades
 

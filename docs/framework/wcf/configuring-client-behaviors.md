@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: df5b32fa-e73b-4e8e-b66f-357c748e0173
+ms.topic: concept-article
 ---
 # Configuring Client Behaviors
 

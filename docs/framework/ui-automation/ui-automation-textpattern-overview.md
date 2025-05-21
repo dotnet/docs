@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "UI Automation, TextPattern class"
   - "TextPattern class"
   - "classes, TextPattern"
+ms.topic: concept-article
 ---
 
 # UI Automation TextPattern Overview

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Menu Item control type"
   - "UI Automation, Menu Item control type"
 ms.assetid: 54bce311-3d23-40b9-ba90-1bdbdaf8fbba
+ms.topic: article
 ---
 
 # UI Automation Support for the MenuItem Control Type

@@ -3,6 +3,7 @@ description: "Learn more about: Choosing a Message Exchange Pattern"
 title: "Choosing a Message Exchange Pattern"
 ms.date: "03/30/2017"
 ms.assetid: 0f502ca1-6a8e-4607-ba15-59198c0e6146
+ms.topic: concept-article
 ---
 # Choosing a Message Exchange Pattern
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "ToolTip control type"
   - "control types, ToolTip"
 ms.assetid: c3779d78-3164-43ae-8dae-bfaeafffdd65
+ms.topic: article
 ---
 # UI Automation Support for the ToolTip Control Type
 

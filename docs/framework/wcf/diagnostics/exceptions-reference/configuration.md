@@ -3,6 +3,7 @@ description: "Learn more about: Configuration"
 title: "Configuration"
 ms.date: "03/30/2017"
 ms.assetid: 86a6e12f-73b5-450e-8725-f4ca5fe0702c
+ms.topic: article
 ---
 # Configuration
 

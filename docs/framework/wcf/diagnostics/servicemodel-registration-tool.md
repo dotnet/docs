@@ -3,6 +3,7 @@ description: "Learn more about: ServiceModel Registration Tool"
 title: "ServiceModel Registration Tool"
 ms.date: "03/30/2017"
 ms.assetid: 55204da3-fb36-4ab0-9d23-73e533ba8969
+ms.topic: article
 ---
 # ServiceModel Registration Tool
 

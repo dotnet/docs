@@ -3,6 +3,7 @@ description: "Learn more about: Core Communications: TCP Transport Channels"
 title: "Core Communications: TCP Transport Channels"
 ms.date: "03/30/2017"
 ms.assetid: d5cd057f-faec-4e21-ae0e-18bbc22bcfb1
+ms.topic: article
 ---
 # Core Communications: TCP Transport Channels
 

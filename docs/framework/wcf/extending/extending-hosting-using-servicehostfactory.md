@@ -3,6 +3,7 @@ description: "Learn more about: Extending Hosting Using ServiceHostFactory"
 title: "Extending Hosting Using ServiceHostFactory"
 ms.date: "03/30/2017"
 ms.assetid: bcc5ae1b-21ce-4e0e-a184-17fad74a441e
+ms.topic: concept-article
 ---
 # Extending Hosting Using ServiceHostFactory
 

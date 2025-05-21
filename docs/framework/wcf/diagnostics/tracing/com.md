@@ -3,6 +3,7 @@ description: "Learn more about: COM+"
 title: "COM+"
 ms.date: "03/30/2017"
 ms.assetid: 6665a2d3-7e11-4cce-8968-3fcf3426d362
+ms.topic: article
 ---
 # COM+
 

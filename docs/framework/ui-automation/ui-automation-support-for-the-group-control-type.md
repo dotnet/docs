@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Group control type"
   - "control types, Group"
 ms.assetid: 18e01bab-01f8-4567-b867-88dce9c4a435
+ms.topic: article
 ---
 # UI Automation Support for the Group Control Type
 

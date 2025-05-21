@@ -3,6 +3,7 @@ description: "Learn more about: MSMQ Integration Transport"
 title: "MSMQ Integration Transport"
 ms.date: "03/30/2017"
 ms.assetid: 2bf9893a-fbd1-41fc-b6de-a41a44279936
+ms.topic: article
 ---
 # MSMQ Integration Transport
 

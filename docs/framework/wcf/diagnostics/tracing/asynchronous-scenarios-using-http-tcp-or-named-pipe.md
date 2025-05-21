@@ -3,6 +3,7 @@ description: "Learn more about: Asynchronous Scenarios using HTTP, TCP, or Named
 title: "Asynchronous Scenarios using HTTP, TCP, or Named-Pipe"
 ms.date: "03/30/2017"
 ms.assetid: a4d62402-43a4-48a4-9ced-220633ebc4ce
+ms.topic: article
 ---
 # Asynchronous Scenarios using HTTP, TCP, or Named-Pipe
 

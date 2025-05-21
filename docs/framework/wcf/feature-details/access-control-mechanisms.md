@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "WCF security"
   - "access control [WCF]"
 ms.assetid: 9d576122-3f55-4425-9acf-b23d0781e966
+ms.topic: article
 ---
 # Access Control Mechanisms
 

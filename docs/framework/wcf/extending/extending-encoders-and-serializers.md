@@ -3,6 +3,7 @@ description: "Learn more about: Extending Encoders and Serializers"
 title: "Extending Encoders and Serializers"
 ms.date: "03/30/2017"
 ms.assetid: 97aec970-d73c-469c-9b93-8b86be701c44
+ms.topic: concept-article
 ---
 # Extending Encoders and Serializers
 

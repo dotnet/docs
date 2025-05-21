@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "control types, Image"
   - "Image control type"
 ms.assetid: 4e0eeefb-e09b-46d2-b83b-0a7e35543ab8
+ms.topic: article
 ---
 # UI Automation Support for the Image Control Type
 

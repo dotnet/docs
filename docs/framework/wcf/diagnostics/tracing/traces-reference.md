@@ -3,6 +3,7 @@ description: "Learn more about: Traces Reference"
 title: "Traces Reference"
 ms.date: "03/30/2017"
 ms.assetid: bd960851-162d-4dcc-8c0c-0ec8f455d56d
+ms.topic: article
 ---
 # Traces Reference
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "embedded objects, accessing"
   - "accessing embedded objects"
   - "embedded objects, UI Automation"
+ms.topic: article
 ---
 # TextPattern and Embedded Objects Overview
 

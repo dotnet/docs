@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "UI Automation, control patterns for clients"
   - "control patterns, UI Automation clients"
+ms.topic: article
 ---
 # UI Automation Control Patterns for Clients
 

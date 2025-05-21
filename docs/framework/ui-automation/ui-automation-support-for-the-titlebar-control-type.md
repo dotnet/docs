@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Title Bar control type"
   - "UI Automation, Title Bar control type"
 ms.assetid: 3b7a4e13-0305-45d5-bc33-1f4133c50782
+ms.topic: article
 ---
 # UI Automation Support for the TitleBar Control Type
 

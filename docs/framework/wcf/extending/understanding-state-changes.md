@@ -3,6 +3,7 @@ description: "Learn more about: Understanding State Changes"
 title: "Understanding State Changes"
 ms.date: "03/30/2017"
 ms.assetid: a79ed2aa-e49a-47a8-845a-c9f436ec9987
+ms.topic: concept-article
 ---
 # Understanding State Changes
 

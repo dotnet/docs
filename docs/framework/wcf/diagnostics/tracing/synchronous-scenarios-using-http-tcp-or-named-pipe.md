@@ -3,6 +3,7 @@ description: "Learn more about: Synchronous Scenarios using HTTP, TCP or Named-P
 title: "Synchronous Scenarios using HTTP, TCP or Named-Pipe"
 ms.date: "03/30/2017"
 ms.assetid: 7e90af1b-f8f6-41b9-a63a-8490ada502b1
+ms.topic: article
 ---
 # Synchronous Scenarios using HTTP, TCP or Named-Pipe
 

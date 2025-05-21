@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "extending metadata [WCF]"
 ms.assetid: 8c6b3b00-61b8-4589-8fa5-546cc33719bf
+ms.topic: concept-article
 ---
 # Extending the Metadata System
 

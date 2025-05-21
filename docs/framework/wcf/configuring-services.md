@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "configuration [WCF]"
 ms.assetid: beac771e-f28e-4f84-9ff1-ad9251c726d3
+ms.topic: concept-article
 ---
 # Configuring WCF services
 

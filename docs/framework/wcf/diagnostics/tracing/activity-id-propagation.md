@@ -3,6 +3,7 @@ description: "Learn more about: Activity ID Propagation"
 title: "Activity ID Propagation"
 ms.date: "03/30/2017"
 ms.assetid: cd1c1ae5-cc8a-4f51-90c9-f7b476bcfe70
+ms.topic: article
 ---
 # Activity ID Propagation
 

@@ -3,6 +3,7 @@ description: "Learn more about: Core Communications: Webhost Support"
 title: "Core Communications: Webhost Support"
 ms.date: "03/30/2017"
 ms.assetid: 034c501f-96f9-4ef7-9602-3ac21788fd3e
+ms.topic: article
 ---
 # Core Communications: Webhost Support
 

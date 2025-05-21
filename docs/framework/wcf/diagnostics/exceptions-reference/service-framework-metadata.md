@@ -3,6 +3,7 @@ description: "Learn more about: Service Framework Metadata"
 title: "Service Framework Metadata"
 ms.date: "03/30/2017"
 ms.assetid: 76afc73a-0770-4084-93f3-6701a757911e
+ms.topic: article
 ---
 # Service Framework Metadata
 

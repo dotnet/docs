@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d613a22b-07d7-41a4-bada-1adc653b9b5d
+ms.topic: concept-article
 ---
 # Override the identity of a service for authentication
 

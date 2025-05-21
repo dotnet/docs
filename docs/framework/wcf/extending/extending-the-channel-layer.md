@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "extending channels [WCF]"
 ms.assetid: 4238db74-2fb6-4dc8-a326-f58527230810
+ms.topic: concept-article
 ---
 # Extending the Channel Layer
 

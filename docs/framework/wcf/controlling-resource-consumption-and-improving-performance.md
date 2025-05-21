@@ -3,6 +3,7 @@ description: "Learn more about: Controlling Resource Consumption and Improving P
 title: "Controlling Resource Consumption and Improving Performance"
 ms.date: "03/30/2017"
 ms.assetid: 9a829669-5f76-4c88-80ec-92d0c62c0660
+ms.topic: concept-article
 ---
 # Controlling Resource Consumption and Improving Performance
 

@@ -3,6 +3,7 @@ title: "Configuring WCF Services in Code"
 description: Learn how you can configure WCF services by using code rather than configuration files for both self-hosted and web hosted services.
 ms.date: "03/30/2017"
 ms.assetid: 193c725d-134f-4d31-a8f8-4e575233bff6
+ms.topic: concept-article
 ---
 # Configuring WCF Services in Code
 

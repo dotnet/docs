@@ -3,6 +3,7 @@ description: "Learn more about: Security Concerns and Useful Tips for Tracing"
 title: "Security Concerns and Useful Tips for Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 88bc2880-ecb9-47cd-9816-39016a07076f
+ms.topic: article
 ---
 # Security Concerns and Useful Tips for Tracing
 

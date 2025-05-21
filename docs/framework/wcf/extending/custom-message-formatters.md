@@ -3,6 +3,7 @@ description: "Learn more about: Custom Message Formatters"
 title: "Custom Message Formatters"
 ms.date: "03/30/2017"
 ms.assetid: c07435f3-5214-4791-8961-2c2b61306d71
+ms.topic: article
 ---
 # Custom Message Formatters
 

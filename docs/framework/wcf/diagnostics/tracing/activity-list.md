@@ -3,6 +3,7 @@ description: "Learn more about: Activity List"
 title: "Activity List"
 ms.date: "03/30/2017"
 ms.assetid: 5540e185-ce8e-4db3-83b0-2b9f5bf71829
+ms.topic: article
 ---
 # Activity List
 

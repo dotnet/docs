@@ -3,6 +3,7 @@ description: "Learn more about: Access WCF Services with a Windows Store Client 
 title: "Accessing WCF Services with a Windows Store Client App"
 ms.date: "03/30/2017"
 ms.assetid: e2002ef4-5dee-4a54-9d87-03b33d35fc52
+ms.topic: how-to
 ---
 # Access WCF Services with a Windows Store Client App
 

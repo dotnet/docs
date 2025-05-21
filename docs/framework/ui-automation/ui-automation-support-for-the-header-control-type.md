@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Header control type"
   - "control types, Header"
 ms.assetid: d2e48891-2dbe-409e-8655-2f753908e29b
+ms.topic: article
 ---
 # UI Automation Support for the Header Control Type
 

@@ -3,6 +3,7 @@ description: "Learn more about: Best Practices: Intermediaries"
 title: "Best Practices: Intermediaries"
 ms.date: "03/30/2017"
 ms.assetid: 2d41b337-8132-4ac2-bea2-6e9ae2f00f8d
+ms.topic: best-practice
 ---
 # Best Practices: Intermediaries
 

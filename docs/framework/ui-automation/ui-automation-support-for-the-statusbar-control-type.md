@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "UI Automation, Status Bar control type"
   - "control types, Status Bar"
 ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
+ms.topic: article
 ---
 # UI Automation Support for the StatusBar Control Type
 

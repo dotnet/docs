@@ -3,6 +3,7 @@ description: "Learn more about: Hosting Exceptions"
 title: "Hosting Exceptions"
 ms.date: "03/30/2017"
 ms.assetid: ad9e14f8-fa17-4d59-b365-fe0e7ec17c98
+ms.topic: concept-article
 ---
 # Hosting Exceptions
 

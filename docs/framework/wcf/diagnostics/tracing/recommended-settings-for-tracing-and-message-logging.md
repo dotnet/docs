@@ -3,6 +3,7 @@ title: "Recommended Settings for Tracing and Message Logging"
 description: Learn about recommended tracing and message logging settings for different operating environments in WCF.
 ms.date: "03/30/2017"
 ms.assetid: c6aca6e8-704e-4779-a9ef-50c46850249e
+ms.topic: article
 ---
 # Recommended Settings for Tracing and Message Logging
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "List control type"
   - "UI Automation, List control type"
 ms.assetid: 0e959fcb-50f2-413b-948d-7167d279bc11
+ms.topic: article
 ---
 # UI Automation Support for the List Control Type
 

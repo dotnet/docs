@@ -3,6 +3,7 @@ description: "Learn more about: Reliable Messaging"
 title: "Reliable Messaging"
 ms.date: "03/30/2017"
 ms.assetid: 46d41fdf-b1f8-4968-8e54-c896848885fa
+ms.topic: article
 ---
 # Reliable Messaging
 

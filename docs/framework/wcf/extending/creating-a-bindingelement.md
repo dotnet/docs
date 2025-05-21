@@ -3,6 +3,7 @@ description: "Learn more about: Creating a BindingElement"
 title: "Creating a BindingElement"
 ms.date: "03/30/2017"
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
+ms.topic: concept-article
 ---
 # Creating a BindingElement
 

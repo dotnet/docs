@@ -3,6 +3,7 @@ description: "Learn more about: COM+ Integration"
 title: "COM+ Integration"
 ms.date: "03/30/2017"
 ms.assetid: 6a687c1b-d0be-42fb-8f9b-20fea1317411
+ms.topic: article
 ---
 # COM+ Integration
 

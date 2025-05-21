@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "control types, Data Grid"
   - "UI Automation, Data Grid control type"
 ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
+ms.topic: article
 ---
 # UI Automation Support for the DataGrid Control Type
 

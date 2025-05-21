@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "TextPattern class"
   - "classes, TextPattern"
 ms.assetid: ca6ac045-7b21-4487-9379-59aa20909670
+ms.topic: article
 ---
 # UI Automation Text Pattern-How-to Topics
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c8329832-bf66-4064-9034-bf39f153fc2d
+ms.topic: how-to
 ---
 # Accessing Services Using a Client
 

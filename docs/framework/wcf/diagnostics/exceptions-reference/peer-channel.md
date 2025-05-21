@@ -3,6 +3,7 @@ description: "Learn more about: Peer Channel"
 title: "Peer Channel"
 ms.date: "03/30/2017"
 ms.assetid: e06a2efb-8e70-4299-8b0f-bfb37efb074b
+ms.topic: article
 ---
 # Peer Channel
 

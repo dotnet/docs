@@ -3,6 +3,7 @@ description: "Learn more about: Add Service Reference in a Portable Subset Proje
 title: "Add Service Reference in a Portable Subset Project"
 ms.date: "03/30/2017"
 ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
+ms.topic: article
 ---
 # Add Service Reference in a Portable Subset Project
 

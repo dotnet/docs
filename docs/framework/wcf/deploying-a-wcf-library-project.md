@@ -3,6 +3,7 @@ description: "Learn more about: Deploying a WCF Library Project"
 title: "Deploying a WCF Library Project"
 ms.date: "03/30/2017"
 ms.assetid: 9f9222fe-d358-443c-9a49-12c5498e35e7
+ms.topic: concept-article
 ---
 # Deploying a WCF Library Project
 

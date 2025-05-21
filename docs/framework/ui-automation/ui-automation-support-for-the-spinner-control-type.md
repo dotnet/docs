@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Spinner control type"
   - "control types, Spinner"
 ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
+ms.topic: article
 ---
 # UI Automation Support for the Spinner Control Type
 

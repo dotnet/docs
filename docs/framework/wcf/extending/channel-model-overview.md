@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "channel model [WCF]"
 ms.assetid: 07a81e11-3911-4632-90d2-cca99825b5bd
+ms.topic: concept-article
 ---
 # Channel Model Overview
 

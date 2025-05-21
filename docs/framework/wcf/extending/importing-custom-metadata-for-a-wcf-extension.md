@@ -3,6 +3,7 @@ description: "Learn more about: Importing Custom Metadata for a WCF Extension"
 title: "Importing Custom Metadata for a WCF Extension"
 ms.date: "03/30/2017"
 ms.assetid: 78beb28f-408a-4c75-9c3c-caefe9595b1a
+ms.topic: how-to
 ---
 # Importing Custom Metadata for a WCF Extension
 

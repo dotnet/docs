@@ -3,6 +3,7 @@ description: "Learn more about: Architecture of Syndication"
 title: "Architecture of Syndication"
 ms.date: "03/30/2017"
 ms.assetid: ed4ca86e-e3d8-4acb-87aa-1921fbc353be
+ms.topic: article
 ---
 # Architecture of Syndication
 

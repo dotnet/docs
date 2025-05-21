@@ -3,6 +3,7 @@ description: "Learn more about: Handling Exceptions and Faults"
 title: "Handling Exceptions and Faults"
 ms.date: "03/30/2017"
 ms.assetid: a64d01c6-f221-4f58-93e5-da4e87a5682e
+ms.topic: how-to
 ---
 # Handling Exceptions and Faults
 

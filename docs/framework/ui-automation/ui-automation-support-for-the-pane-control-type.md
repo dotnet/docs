@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Pane control type"
   - "control types, Pane"
 ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
+ms.topic: article
 ---
 # UI Automation Support for the Pane Control Type
 

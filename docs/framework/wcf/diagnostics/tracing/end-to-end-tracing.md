@@ -3,6 +3,7 @@ description: "Learn more about: End-to-End Tracing"
 title: "End-to-End Tracing"
 ms.date: "03/30/2017"
 ms.assetid: f5ac7fc7-f97c-4313-b068-54e0c471b2aa
+ms.topic: article
 ---
 # End-to-End Tracing
 

@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "administration [WCF]"
   - "WCF, administration"
 ms.assetid: 34c81c08-0e0f-4fbc-9ae8-91948640ee43
+ms.topic: article
 ---
 # Administration and Diagnostics
 

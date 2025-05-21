@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "UI Automation, Slider control type"
   - "Slider control type"
 ms.assetid: 045ea62f-7b50-46cf-a5a9-8eb97704355f
+ms.topic: article
 ---
 # UI Automation Support for the Slider Control Type
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Calendar control type"
   - "control types, Calendar"
 ms.assetid: e91a7393-a7f9-4838-a1a6-857438b24bc9
+ms.topic: article
 ---
 # UI Automation Support for the Calendar Control Type
 

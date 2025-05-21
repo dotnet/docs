@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data contracts [WCF], surrogates"
 ms.assetid: 8c31134c-46c5-4ed7-94af-bab0ac0dfce5
+ms.topic: article
 ---
 # Data Contract Surrogates
 

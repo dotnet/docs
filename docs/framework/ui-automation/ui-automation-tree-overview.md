@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "automation tree"
   - "UI Automation, tree"
 ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
+ms.topic: concept-article
 ---
 # UI Automation Tree Overview
 

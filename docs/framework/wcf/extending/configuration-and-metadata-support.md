@@ -3,6 +3,7 @@ description: "Learn more about: Configuration and Metadata Support"
 title: "Configuration and Metadata Support"
 ms.date: "03/30/2017"
 ms.assetid: 27c240cb-8cab-472c-87f8-c864f4978758
+ms.topic: article
 ---
 # Configuration and Metadata Support
 

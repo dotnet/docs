@@ -3,6 +3,7 @@ description: "Learn more about: Trace Type Summary"
 title: "Trace Type Summary"
 ms.date: "03/30/2017"
 ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
+ms.topic: article
 ---
 # Trace Type Summary
 

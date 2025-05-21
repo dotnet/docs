@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "testing, UI Automation"
   - "UI Automation, automated testing"
 ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
+ms.topic: concept-article
 ---
 # Using UI Automation for Automated Testing
 

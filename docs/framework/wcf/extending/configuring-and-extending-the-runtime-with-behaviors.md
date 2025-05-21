@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "attaching extensions using behaviors [WCF]"
 ms.assetid: 149b99b6-6eb6-4f45-be22-c967279677d9
+ms.topic: how-to
 ---
 # Configuring and Extending the Runtime with Behaviors
 

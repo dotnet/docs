@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "best practices [WCF], data contract versioning"
   - "Windows Communication Foundation, data contracts"
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
+ms.topic: best-practice
 ---
 # Best Practices: Data Contract Versioning
 

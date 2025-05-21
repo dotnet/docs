@@ -3,6 +3,7 @@ description: "Learn more about: Security Concerns for Message Logging"
 title: "Security Concerns for Message Logging"
 ms.date: "03/30/2017"
 ms.assetid: 21f513f2-815b-47f3-85a6-03c008510038
+ms.topic: article
 ---
 # Security Concerns for Message Logging
 

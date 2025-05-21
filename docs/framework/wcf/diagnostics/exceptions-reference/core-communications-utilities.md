@@ -3,6 +3,7 @@ description: "Learn more about: Core Communications: Utilities"
 title: "Core Communications: Utilities"
 ms.date: "03/30/2017"
 ms.assetid: b9e4f873-e26a-4ed1-9766-3541082dc999
+ms.topic: article
 ---
 # Core Communications: Utilities
 

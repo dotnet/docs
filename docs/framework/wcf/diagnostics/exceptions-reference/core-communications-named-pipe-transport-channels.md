@@ -3,6 +3,7 @@ description: "Learn more about: Core Communications: Named Pipe Transport Channe
 title: "Core Communications: Named Pipe Transport Channels"
 ms.date: "03/30/2017"
 ms.assetid: 14ab8f84-ab3e-47cd-8ac5-dd68af940175
+ms.topic: article
 ---
 # Core Communications: Named Pipe Transport Channels
 

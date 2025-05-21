@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "bindings [WCF]"
 ms.assetid: 845df323-be53-4848-92ef-ba67a406484d
+ms.topic: article
 ---
 # Windows Communication Foundation Bindings
 

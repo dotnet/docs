@@ -3,6 +3,7 @@ description: "Learn more about: Developing Channels"
 title: "Developing Channels"
 ms.date: "03/30/2017"
 ms.assetid: 0513af9f-a0c2-457b-9a50-5b6bfee48513
+ms.topic: how-to
 ---
 # Developing Channels
 

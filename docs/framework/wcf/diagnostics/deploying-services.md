@@ -3,6 +3,7 @@ description: "Learn more about: Deploying Services"
 title: "Deploying Services"
 ms.date: "03/30/2017"
 ms.assetid: ac361bfb-017d-4da9-a2d7-fc0fb72d65bb
+ms.topic: concept-article
 ---
 # Deploying Services
 

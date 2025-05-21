@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "endpoints [WCF], overview"
 ms.assetid: f4dce0fb-6f54-47e6-8054-86d7f574b91c
+ms.topic: concept-article
 ---
 # Endpoint Creation Overview
 

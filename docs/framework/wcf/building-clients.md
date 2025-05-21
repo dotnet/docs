@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "clients [WCF], building"
   - "clients [WCF]"
 ms.assetid: 28dfff47-d95b-4cc2-9d5c-b3b9ba71fd50
+ms.topic: concept-article
 ---
 # Building Clients
 

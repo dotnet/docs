@@ -3,6 +3,7 @@ description: "Learn more about: Using Service Trace Viewer for Viewing Correlate
 title: "Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting"
 ms.date: "03/30/2017"
 ms.assetid: 05d2321c-8acb-49d7-a6cd-8ef2220c6775
+ms.topic: troubleshooting-general
 ---
 # Using Service Trace Viewer for Viewing Correlated Traces and Troubleshooting
 

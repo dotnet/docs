@@ -3,6 +3,7 @@ description: "Learn more about: Tracing"
 title: "Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 2649eae2-dbf8-421c-9cfb-cfa9e01de87f
+ms.topic: concept-article
 ---
 # Tracing
 

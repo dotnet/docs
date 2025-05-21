@@ -3,6 +3,7 @@ description: "Learn more about: Activity"
 title: "Activity"
 ms.date: "03/30/2017"
 ms.assetid: 70471705-f55f-4da1-919f-4b580f172665
+ms.topic: article
 ---
 # Activity
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Window control type"
   - "control types, Window"
 ms.assetid: 53be78a6-cdcc-4af3-a464-5927d19c54e8
+ms.topic: article
 ---
 # UI Automation Support for the Window Control Type
 

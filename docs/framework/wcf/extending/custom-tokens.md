@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [WCF], custom tokens"
 ms.assetid: 8b2dbe29-dec2-4652-8e34-fb21bc1437b5
+ms.topic: article
 ---
 # Custom Tokens
 

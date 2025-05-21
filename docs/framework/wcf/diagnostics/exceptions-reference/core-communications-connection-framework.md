@@ -3,6 +3,7 @@ description: "Learn more about: Core Communications: Connection Framework"
 title: "Core Communications: Connection Framework"
 ms.date: "03/30/2017"
 ms.assetid: 61ee00e1-896d-47c8-942f-1db28ac89cdc
+ms.topic: article
 ---
 # Core Communications: Connection Framework
 

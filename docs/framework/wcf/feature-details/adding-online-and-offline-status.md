@@ -3,6 +3,7 @@ description: "Learn more about: Adding Online and Offline Status"
 title: "Adding Online and Offline Status"
 ms.date: "03/30/2017"
 ms.assetid: 05e5f51d-81b6-4c17-b364-9dda447a5fce
+ms.topic: concept-article
 ---
 # Adding Online and Offline Status
 

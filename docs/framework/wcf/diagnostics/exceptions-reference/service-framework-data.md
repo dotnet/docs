@@ -3,6 +3,7 @@ description: "Learn more about: Service Framework Data"
 title: "Service Framework Data"
 ms.date: "03/30/2017"
 ms.assetid: 2a2c8ddc-4e82-4e7f-a79f-97085c469517
+ms.topic: article
 ---
 # Service Framework Data
 

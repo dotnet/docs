@@ -3,6 +3,7 @@ description: "Learn more about: Client: Channel Factories and Channels"
 title: "Client: Channel Factories and Channels"
 ms.date: "03/30/2017"
 ms.assetid: ef245191-fdab-4468-a0da-7c6f25d2110f
+ms.topic: article
 ---
 # Client: Channel Factories and Channels
 

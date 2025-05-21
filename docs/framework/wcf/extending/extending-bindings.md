@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "extending bindings [WCF]"
 ms.assetid: 5e40d306-b3c1-4429-80c4-fbb1d956856c
+ms.topic: concept-article
 ---
 # Extending Bindings
 

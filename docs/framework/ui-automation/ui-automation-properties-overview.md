@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "UI Automation, properties"
   - "properties, UI Automation"
 ms.assetid: a6c31d7b-b33e-49b3-b5c1-31a345f9b7c8
+ms.topic: concept-article
 ---
 # UI Automation Properties Overview
 

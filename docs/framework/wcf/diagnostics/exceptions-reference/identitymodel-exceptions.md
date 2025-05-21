@@ -3,6 +3,7 @@ description: "Learn more about: IdentityModel Exceptions"
 title: "IdentityModel Exceptions"
 ms.date: "03/30/2017"
 ms.assetid: 4ef34497-8ff5-4621-b773-7731cc721231
+ms.topic: article
 ---
 # IdentityModel Exceptions
 

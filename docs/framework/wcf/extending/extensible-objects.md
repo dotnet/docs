@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "extensible objects [WCF]"
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
+ms.topic: article
 ---
 # Extensible Objects
 

@@ -6,6 +6,7 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 3b787719-4e77-4e77-96a6-5b15a11b995a
+ms.topic: article
 ---
 # Client Channel-Level Programming
 

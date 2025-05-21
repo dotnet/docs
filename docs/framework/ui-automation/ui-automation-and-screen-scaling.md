@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "screens, scaling"
   - "UI (user interface), automation"
   - "UI Automation"
+ms.topic: article
 ---
 # UI Automation and Screen Scaling
 

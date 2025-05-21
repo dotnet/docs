@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "control types, CheckBox"
   - "UI Automation, CheckBox control type"
 ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
+ms.topic: article
 ---
 # UI Automation Support for the CheckBox Control Type
 

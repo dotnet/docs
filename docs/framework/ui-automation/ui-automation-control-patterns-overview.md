@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "control patterns"
   - "UI Automation, control patterns"
 ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
+ms.topic: concept-article
 ---
 # UI Automation Control Patterns Overview
 

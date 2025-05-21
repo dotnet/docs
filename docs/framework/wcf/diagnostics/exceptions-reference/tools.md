@@ -3,6 +3,7 @@ description: "Learn more about: Tools"
 title: "Tools"
 ms.date: "03/30/2017"
 ms.assetid: 89c907f9-313f-408c-992a-631f1eadf1da
+ms.topic: article
 ---
 # Tools
 

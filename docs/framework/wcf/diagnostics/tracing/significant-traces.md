@@ -3,6 +3,7 @@ description: "Learn more about: Significant Traces"
 title: "Significant Traces"
 ms.date: "03/30/2017"
 ms.assetid: 40a1770e-3b09-4142-b0dd-f9ef73642074
+ms.topic: article
 ---
 # Significant Traces
 

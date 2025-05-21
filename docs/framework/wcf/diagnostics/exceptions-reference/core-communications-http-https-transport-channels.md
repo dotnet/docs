@@ -3,6 +3,7 @@ description: "Learn more about: Core Communications: HTTP/HTTPS Transport Channe
 title: "Core Communications: HTTP-HTTPS Transport Channels"
 ms.date: "03/30/2017"
 ms.assetid: 6c0a23c9-a663-461c-bdab-58b4d3e23642
+ms.topic: article
 ---
 # Core Communications: HTTP/HTTPS Transport Channels
 

@@ -3,6 +3,7 @@ description: "Learn more about: Transaction Formatter"
 title: "Transaction Formatter"
 ms.date: "03/30/2017"
 ms.assetid: 727b3f1c-fffa-4753-bc76-713e331c631a
+ms.topic: article
 ---
 # Transaction Formatter
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "UI Automation, custom user interface (UI) elements"
   - "providers, UI Automation"
 ms.assetid: 88bc4212-3f4e-4bac-bae0-faef31944b71
+ms.topic: article
 ---
 # UI Automation Providers for Managed Code How-to Topics
 

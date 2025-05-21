@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "endpoints [WCF]"
 ms.assetid: bd0c310f-dd9f-4081-9be2-3db5909850b6
+ms.topic: article
 ---
 # Windows Communication Foundation Endpoints
 

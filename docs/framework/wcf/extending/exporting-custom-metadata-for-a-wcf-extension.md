@@ -3,6 +3,7 @@ description: "Learn more about: Exporting Custom Metadata for a WCF Extension"
 title: "Exporting Custom Metadata for a WCF Extension"
 ms.date: "03/30/2017"
 ms.assetid: 53c93882-f8ba-4192-965b-787b5e3f09c0
+ms.topic: how-to
 ---
 # Exporting Custom Metadata for a WCF Extension
 

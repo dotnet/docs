@@ -3,6 +3,7 @@ description: "Learn more about: Using Tracing to Troubleshoot Your Application"
 title: "Using Tracing to Troubleshoot Your Application"
 ms.date: "03/30/2017"
 ms.assetid: 7676b9bb-cbd1-41fd-9a93-cc615af6e2d0
+ms.topic: troubleshooting-general
 ---
 # Using Tracing to Troubleshoot Your Application
 

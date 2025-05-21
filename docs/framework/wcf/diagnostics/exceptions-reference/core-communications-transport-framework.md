@@ -3,6 +3,7 @@ description: "Learn more about: Core Communications: Transport Framework"
 title: "Core Communications: Transport Framework"
 ms.date: "03/30/2017"
 ms.assetid: 9fae1728-1377-4cc1-8fc3-d5d9a23546bd
+ms.topic: article
 ---
 # Core Communications: Transport Framework
 

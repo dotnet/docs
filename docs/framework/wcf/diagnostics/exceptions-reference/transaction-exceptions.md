@@ -3,6 +3,7 @@ description: "Learn more about: Transaction Exceptions"
 title: "Transaction Exceptions"
 ms.date: "03/30/2017"
 ms.assetid: 1d27ed51-7eda-477f-9eca-94fa129f3e07
+ms.topic: article
 ---
 # Transaction Exceptions
 

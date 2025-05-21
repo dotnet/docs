@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "extending service models [WCF]"
 ms.assetid: 954c138a-1cd0-45a0-8abe-e4d2b8ff5400
+ms.topic: concept-article
 ---
 # Extending ServiceHost and the Service Model Layer
 

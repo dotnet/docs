@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "binding configuration [WCF]"
 ms.assetid: 99a85fd8-f7eb-4a84-a93e-7721b37d415c
+ms.topic: concept-article
 ---
 # Configuring Bindings for Windows Communication Foundation Services
 

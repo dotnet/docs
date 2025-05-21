@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "service creation [WCF]"
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76
+ms.topic: article
 ---
 # Basic Programming Lifecycle
 

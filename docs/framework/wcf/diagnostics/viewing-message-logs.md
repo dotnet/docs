@@ -3,6 +3,7 @@ description: "Learn more about: Viewing Message Logs"
 title: "Viewing Message Logs"
 ms.date: "03/30/2017"
 ms.assetid: 3012fa13-f650-45fb-aaea-c5cca8c7d372
+ms.topic: concept-article
 ---
 # Viewing Message Logs
 

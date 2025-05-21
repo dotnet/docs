@@ -3,6 +3,7 @@ description: "Learn more about: Configuring Your Application"
 title: "Configuring Your Application"
 ms.date: "03/30/2017"
 ms.assetid: a2f995b0-669d-4721-b00f-4561ec7eb6a4
+ms.topic: concept-article
 ---
 # Configuring Your Application
 

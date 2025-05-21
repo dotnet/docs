@@ -3,6 +3,7 @@ description: "Learn more about: LINQ and Reflection (Visual Basic)"
 title: "LINQ and Reflection"
 ms.date: 07/20/2015
 ms.assetid: 2548a731-0cd8-48de-8d48-664d1b7d7526
+ms.topic: article
 ---
 # LINQ and Reflection (Visual Basic)
 

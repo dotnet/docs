@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "OrElse operator [Visual Basic]"
   - "logical operators [Visual Basic], unary"
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
+ms.topic: article
 ---
 # Logical and Bitwise Operators in Visual Basic
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "interface implementation [Visual Basic], walkthrough"
   - "interfaces [Visual Basic], creating"
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
+ms.topic: how-to
 ---
 # Walkthrough: Creating and Implementing Interfaces (Visual Basic)
 

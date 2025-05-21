@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Visual Basic code, data types"
   - "data types [Visual Basic], improving speed with"
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
+ms.topic: article
 ---
 # Data Types in Visual Basic
 

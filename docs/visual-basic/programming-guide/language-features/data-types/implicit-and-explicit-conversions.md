@@ -21,6 +21,7 @@ helpviewer_keywords:
   - "data type conversion [Visual Basic], implicit"
   - "implicit data type conversions [Visual Basic]"
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
+ms.topic: article
 ---
 # Implicit and Explicit Conversions (Visual Basic)
 

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "declared elements [Visual Basic], referencing"
   - "declared elements [Visual Basic], about declared elements"
 ms.assetid: e39c0752-f19f-4d2e-a453-00df1b5fc7ee
+ms.topic: how-to
 ---
 # How to: Hide a Variable with the Same Name as Your Variable (Visual Basic)
 

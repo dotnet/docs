@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "objects [Visual Basic], variables referring to same"
   - "Visual Basic code, operators"
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
+ms.topic: how-to
 ---
 # How to: Test Whether Two Objects Are the Same (Visual Basic)
 

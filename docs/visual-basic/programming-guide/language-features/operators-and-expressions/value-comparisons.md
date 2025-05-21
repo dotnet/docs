@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "operators [Visual Basic], comparison"
   - "expressions [Visual Basic], comparing"
 ms.assetid: 60da0c76-9458-4afc-97e9-44a7939c064c
+ms.topic: article
 ---
 # Value Comparisons (Visual Basic)
 

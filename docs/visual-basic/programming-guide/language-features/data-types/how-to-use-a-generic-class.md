@@ -22,6 +22,7 @@ helpviewer_keywords:
   - "type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], type"
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
+ms.topic: how-to
 ---
 # How to: Use a Generic Class (Visual Basic)
 

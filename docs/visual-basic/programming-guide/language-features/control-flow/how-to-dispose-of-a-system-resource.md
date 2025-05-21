@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "Using statement [Visual Basic], Using...End Using"
   - "Using block"
 ms.assetid: 8be2b239-8090-419b-8e7e-bcaa75b0ecc8
+ms.topic: how-to
 ---
 # How to: Dispose of a System Resource (Visual Basic)
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], structure variables"
   - "structure variables [Visual Basic]"
 ms.assetid: 156872f8-aabc-4454-8e2d-f2253c3c13c9
+ms.topic: how-to
 ---
 # Structure Variables (Visual Basic)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Enabling a Data Source for LINQ Querying"
 title: "Enabling a Data Source for LINQ Querying2"
 ms.date: 07/20/2015
 ms.assetid: c412f0cf-ff0e-4993-ab3d-1b49e23f00f8
+ms.topic: concept-article
 ---
 # Enabling a Data Source for LINQ Querying (Visual Basic)
 

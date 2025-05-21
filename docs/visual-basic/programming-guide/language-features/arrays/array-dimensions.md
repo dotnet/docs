@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "rectangular arrays"
   - "ranking, arrays"
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
+ms.topic: how-to
 ---
 # Array Dimensions in Visual Basic
 

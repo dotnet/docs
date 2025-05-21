@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "scope [Visual Basic], Visual Basic"
   - "procedure scope [Visual Basic]"
 ms.assetid: 208106fe-79c9-4eec-93c6-55f08548895f
+ms.topic: article
 ---
 # Scope in Visual Basic
 

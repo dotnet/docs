@@ -3,6 +3,7 @@ description: "Learn more about: Partitioning Data (Visual Basic)"
 title: Partitioning data
 ms.date: 12/20/2021
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
+ms.topic: concept-article
 ---
 # Partitioning Data (Visual Basic)
 

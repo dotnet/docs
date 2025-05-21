@@ -27,6 +27,7 @@ helpviewer_keywords:
   - "type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], type"
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
+ms.topic: how-to
 ---
 # How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)
 

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"
 ms.assetid: e6e47b5b-3ed9-452d-a481-9c3fed88519a
+ms.topic: article
 ---
 # When to Use an Enumeration (Visual Basic)
 

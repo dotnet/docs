@@ -3,6 +3,7 @@ description: "Learn more about: Filtering Data (Visual Basic)"
 title: "Filtering Data"
 ms.date: 07/20/2015
 ms.assetid: 7749519a-7edc-49fe-aef9-6a353864af6c
+ms.topic: concept-article
 ---
 # Filtering Data (Visual Basic)
 

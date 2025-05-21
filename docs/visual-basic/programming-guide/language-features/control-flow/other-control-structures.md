@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "statements [Visual Basic], control flow"
   - "control structures [Visual Basic]"
 ms.assetid: 24b811f7-98ba-40ec-8dd3-4d528cfa4574
+ms.topic: article
 ---
 # Other Control Structures (Visual Basic)
 

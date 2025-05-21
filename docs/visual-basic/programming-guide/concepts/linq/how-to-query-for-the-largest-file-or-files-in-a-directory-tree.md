@@ -3,6 +3,7 @@ description: "Learn more about: How to: Query for the Largest File or Files in a
 title: "How to: Query for the Largest File or Files in a Directory Tree (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 8c1c9f0c-95dd-4222-9be2-9ec026a13e81
+ms.topic: how-to
 ---
 # How to: Query for the Largest File or Files in a Directory Tree (LINQ) (Visual Basic)
 

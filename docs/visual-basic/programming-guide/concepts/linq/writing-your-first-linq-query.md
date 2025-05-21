@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "LINQ queries [Visual Basic]"
   - "LINQ [Visual Basic], writing queries"
 ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
+ms.topic: how-to
 ---
 # Writing Your First LINQ Query (Visual Basic)
 

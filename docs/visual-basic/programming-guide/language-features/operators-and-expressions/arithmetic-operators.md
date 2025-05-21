@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "Visual Basic code, operators"
   - "arithmetic operators [Visual Basic], about arithmetic operators"
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
+ms.topic: article
 ---
 # Arithmetic Operators in Visual Basic
 

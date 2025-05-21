@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "arrays [Visual Basic]"
   - "Visual Basic, arrays"
 ms.assetid: dbf29737-b589-4443-bee6-a27588d9c67e
+ms.topic: article
 ---
 
 # Arrays in Visual Basic

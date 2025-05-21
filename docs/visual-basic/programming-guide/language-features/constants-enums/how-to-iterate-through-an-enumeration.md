@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "enumerations [Visual Basic], iterating"
   - "ListBox control [Windows Forms], populating from an enumeration"
 ms.assetid: e5aa10eb-cfcd-4a3b-8e76-f06b8f2002be
+ms.topic: how-to
 ---
 # How to: Iterate Through An Enumeration in Visual Basic
 

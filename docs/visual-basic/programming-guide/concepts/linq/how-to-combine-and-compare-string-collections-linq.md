@@ -3,6 +3,7 @@ description: "Learn more about: How to: Combine and Compare String Collections (
 title: "How to: Combine and Compare String Collections (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 243cfafc-9eaa-4354-a9df-d329f1d39913
+ms.topic: how-to
 ---
 # How to: Combine and Compare String Collections (LINQ) (Visual Basic)
 

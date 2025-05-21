@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "data types [Visual Basic], optimizing"
   - "ChrW function [Visual Basic], preferred to Chr"
 ms.assetid: 28f5e4ba-ec24-4f37-b90a-e8ee822f778a
+ms.topic: article
 ---
 # Efficient Use of Data Types (Visual Basic)
 

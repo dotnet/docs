@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "structures [Visual Basic], control"
   - "conditional statements [Visual Basic], control flow"
 ms.assetid: 5623ef47-52b1-4202-befd-9af36422ec6f
+ms.topic: article
 ---
 # Control Flow in Visual Basic
 

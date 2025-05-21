@@ -3,6 +3,7 @@ description: "Learn more about: How to: Query for Characters in a String (LINQ) 
 title: "How to: Query for Characters in a String (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 499ebbe0-746c-4235-9dba-ce722c12b50e
+ms.topic: how-to
 ---
 # How to: Query for Characters in a String (LINQ) (Visual Basic)
 

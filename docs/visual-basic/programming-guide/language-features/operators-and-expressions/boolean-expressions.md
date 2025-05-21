@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "operators [Visual Basic], Boolean"
   - "Visual Basic code, expressions"
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
+ms.topic: article
 ---
 # Boolean Expressions (Visual Basic)
 

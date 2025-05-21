@@ -3,6 +3,7 @@ description: "Learn more about: Visual Studio IDE and Tools Support for LINQ (Vi
 title: "Visual Studio IDE and Tools Support for LINQ"
 ms.date: 07/20/2015
 ms.assetid: e3bfe0d9-4a79-49cf-a31c-93297c688829
+ms.topic: article
 ---
 # Visual Studio IDE and Tools Support for LINQ (Visual Basic)
 

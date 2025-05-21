@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "collection initializers [Visual Basic]"
 ms.assetid: c858db10-424d-47e0-92cd-e08087cc5ebc
+ms.topic: how-to
 ---
 # How to: Create a Collection Used by a Collection Initializer (Visual Basic)
 

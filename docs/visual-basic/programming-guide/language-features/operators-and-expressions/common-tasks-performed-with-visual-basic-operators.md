@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "operators [Visual Basic], comparison"
   - "operators [Visual Basic], short-circuiting logical"
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
+ms.topic: article
 ---
 # Common Tasks Performed with Visual Basic Operators
 

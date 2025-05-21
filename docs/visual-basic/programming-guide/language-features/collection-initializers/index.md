@@ -7,6 +7,7 @@ f1_keywords:
 helpviewer_keywords:
   - "collection initializers [Visual Basic]"
 ms.assetid: a9290329-77b0-4fdf-ae75-8fc17287f469
+ms.topic: article
 ---
 
 # Collection Initializers (Visual Basic)

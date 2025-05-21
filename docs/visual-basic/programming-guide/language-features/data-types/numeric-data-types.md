@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "Single data type [Visual Basic], numeric types"
   - "Decimal data type [Visual Basic], numeric data types"
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
+ms.topic: article
 ---
 # Numeric Data Types (Visual Basic)
 

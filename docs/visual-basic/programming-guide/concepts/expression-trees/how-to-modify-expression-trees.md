@@ -3,6 +3,7 @@ description: "Learn more about: How to: Modify Expression Trees (Visual Basic)"
 title: "How to: Modify Expression Trees"
 ms.date: 07/20/2015
 ms.assetid: d1309fff-28bd-4d8e-a2cf-75725999e8f2
+ms.topic: how-to
 ---
 # How to: Modify Expression Trees (Visual Basic)
 

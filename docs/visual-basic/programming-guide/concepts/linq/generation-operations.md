@@ -3,6 +3,7 @@ description: "Learn more about: Generation Operations (Visual Basic)"
 title: "Generation Operations"
 ms.date: 07/20/2015
 ms.assetid: 22b8e380-8eb0-4c93-b4ff-7ac21caf27d5
+ms.topic: article
 ---
 # Generation Operations (Visual Basic)
 

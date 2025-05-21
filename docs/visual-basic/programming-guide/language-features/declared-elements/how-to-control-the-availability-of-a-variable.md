@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "declared elements [Visual Basic], access level"
   - "Protected keyword [Visual Basic], accessing variables"
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
+ms.topic: how-to
 ---
 # How to: Control the Availability of a Variable (Visual Basic)
 

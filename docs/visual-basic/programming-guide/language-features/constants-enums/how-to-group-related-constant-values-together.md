@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "enumerations [Visual Basic], constants"
   - "constants [Visual Basic], grouping together"
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
+ms.topic: how-to
 ---
 # How to: Group Related Constant Values Together (Visual Basic)
 

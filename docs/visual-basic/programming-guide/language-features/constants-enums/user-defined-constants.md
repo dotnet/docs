@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "constants [Visual Basic], user-defined"
   - "circular references between constants [Visual Basic]"
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
+ms.topic: article
 ---
 # User-Defined Constants (Visual Basic)
 

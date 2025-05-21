@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "TypeName function"
   - "objects [Visual Basic], type determining"
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
+ms.topic: how-to
 ---
 # Determining Object Type (Visual Basic)
 

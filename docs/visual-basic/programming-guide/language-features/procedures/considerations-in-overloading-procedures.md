@@ -26,6 +26,7 @@ helpviewer_keywords:
   - "restrictions [Visual Basic], overloading procedures"
   - "procedures [Visual Basic], parameter lists"
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
+ms.topic: article
 ---
 # Considerations in Overloading Procedures (Visual Basic)
 

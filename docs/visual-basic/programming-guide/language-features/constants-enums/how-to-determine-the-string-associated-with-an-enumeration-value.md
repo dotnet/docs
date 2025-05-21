@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "strings [Visual Basic], enumeration values"
   - "values [Visual Basic], enumeration members"
 ms.assetid: 9253e7c8-579c-49a2-8f26-392b20ea99eb
+ms.topic: how-to
 ---
 # How to: Determine the String Associated with an Enumeration Value (Visual Basic)
 

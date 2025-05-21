@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "anonymous types [Visual Basic], inferring property names and types"
   - "inferring property types [Visual Basic]"
 ms.assetid: 7c748b22-913f-4d9d-b747-6b7bf296a0bc
+ms.topic: how-to
 ---
 # How to: Infer Property Names and Types in Anonymous Type Declarations (Visual Basic)
 

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "references [Visual Basic], declared elements"
   - "qualified names [Visual Basic]"
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
+ms.topic: article
 ---
 # References to Declared Elements (Visual Basic)
 

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "initializers [Visual Basic]"
   - "named types [Visual Basic]"
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
+ms.topic: article
 ---
 # Object Initializers: Named and Anonymous Types (Visual Basic)
 

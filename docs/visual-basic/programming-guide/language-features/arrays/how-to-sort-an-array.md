@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "arrays [Visual Basic], sorting"
   - "examples [Visual Basic], arrays"
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
+ms.topic: how-to
 ---
 # How to: sort an array in Visual Basic
 

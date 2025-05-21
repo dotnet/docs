@@ -3,6 +3,7 @@ description: "Learn more about: How to: Compare the Contents of Two Folders (LIN
 title: "How to: Compare the Contents of Two Folders (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 903c7e9a-f48d-4a07-a8a8-5450d2646efa
+ms.topic: how-to
 ---
 # How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)
 

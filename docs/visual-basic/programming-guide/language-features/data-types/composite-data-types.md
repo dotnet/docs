@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "classes [Visual Basic], composite types"
   - "types [Visual Basic], composite"
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
+ms.topic: article
 ---
 # Composite Data Types (Visual Basic)
 

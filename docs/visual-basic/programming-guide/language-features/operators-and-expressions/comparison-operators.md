@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "comparison operators [Visual Basic], comparing numeric values"
   - "operators [Visual Basic], comparison"
 ms.assetid: 0b570339-5407-474f-8421-e183a8b303ee
+ms.topic: article
 ---
 # Comparison Operators in Visual Basic
 

@@ -3,6 +3,7 @@ description: "Learn more about: Using Variance in Delegates (Visual Basic)"
 title: "Using Variance in Delegates"
 ms.date: 07/20/2015
 ms.assetid: 7b5c20f1-6416-46a3-94b6-f109c31c842c
+ms.topic: concept-article
 ---
 
 # Using Variance in Delegates (Visual Basic)

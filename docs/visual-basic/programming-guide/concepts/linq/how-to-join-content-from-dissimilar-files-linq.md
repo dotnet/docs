@@ -3,6 +3,7 @@ description: "Learn more about: How to: Join Content from Dissimilar Files (LINQ
 title: "How to: Join Content from Dissimilar Files (LINQ)"
 ms.date: 06/27/2018
 ms.assetid: e7530857-c467-41ea-9730-84e6b1065a4d
+ms.topic: how-to
 ---
 # How to: Join Content from Dissimilar Files (LINQ) (Visual Basic)
 

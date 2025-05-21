@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "base classes [Visual Basic], inheritance"
   - "abstract classes [Visual Basic], inheritance"
   - "overriding, Overrides keyword"
+ms.topic: article
 ---
 # Inheritance Basics (Visual Basic)
 

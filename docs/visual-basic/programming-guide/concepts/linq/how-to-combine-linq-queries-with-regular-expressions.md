@@ -3,6 +3,7 @@ description: "Learn more about: How to combine LINQ queries with regular express
 title: "How to combine LINQ queries with regular expressions"
 ms.date: 07/20/2015
 ms.assetid: 3da1bd10-b0d8-4d5b-a637-966891c13592
+ms.topic: how-to
 ---
 # How to combine LINQ queries with regular expressions (Visual Basic)
 

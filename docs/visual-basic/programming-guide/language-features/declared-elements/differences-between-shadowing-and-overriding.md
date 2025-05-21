@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "shadowing, vs. overriding"
   - "overriding, vs. shadowing"
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
+ms.topic: article
 ---
 # Differences Between Shadowing and Overriding (Visual Basic)
 

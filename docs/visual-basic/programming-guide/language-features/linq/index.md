@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "what's new [Visual Basic]"
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
+ms.topic: article
 ---
 # LINQ in Visual Basic
 

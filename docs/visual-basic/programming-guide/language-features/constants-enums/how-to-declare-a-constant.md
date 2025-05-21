@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "module-level constants and variables"
   - "Object data type [Visual Basic], declaring constants"
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
+ms.topic: how-to
 ---
 # How to: Declare A Constant (Visual Basic)
 

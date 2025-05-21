@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "enumerations [Visual Basic], declaring"
   - "declaring enumerations [Visual Basic]"
 ms.assetid: db4ca1c3-f429-4c81-ae81-29e0157b29fd
+ms.topic: how-to
 ---
 # How to: Declare Enumerations (Visual Basic)
 

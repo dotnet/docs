@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "naming conventions [Visual Basic], naming conflicts"
   - "declarations [Visual Basic], namespaces"
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
+ms.topic: article
 ---
 # Enumerations and Name Qualification (Visual Basic)
 

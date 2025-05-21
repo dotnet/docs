@@ -3,6 +3,7 @@ title: "Querying based on runtime state (Visual Basic)"
 description: Describes various techniques your code can use to query dynamically depending on runtime state, by varying either LINQ method calls or the expression trees passed into those methods.
 ms.date: 02/14/2021
 ms.assetid: 16278787-7532-4b65-98b2-7a412406c4ee
+ms.topic: concept-article
 ---
 # Querying based on runtime state (Visual Basic)
 

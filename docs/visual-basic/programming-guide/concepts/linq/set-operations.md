@@ -3,6 +3,7 @@ description: "Learn more about: Set Operations (Visual Basic)"
 title: "Set Operations"
 ms.date: 07/20/2015
 ms.assetid: 2b06e822-e030-438f-9db7-ee402bd3a706
+ms.topic: article
 ---
 # Set Operations (Visual Basic)
 

@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "inferring type information [LINQ in Visual Basic]"
   - "relationships [LINQ in Visual Basic]"
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
+ms.topic: how-to
 ---
 # Type Relationships in Query Operations (Visual Basic)
 

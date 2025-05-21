@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "arrays [Visual Basic], compilation errors"
   - "types [Visual Basic], composite"
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
+ms.topic: how-to
 ---
 # How to: Hold More Than One Value in a Variable (Visual Basic)
 

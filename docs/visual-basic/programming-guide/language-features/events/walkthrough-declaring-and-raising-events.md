@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "events [Visual Basic], raising"
   - "raising events [Visual Basic], walkthroughs"
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
+ms.topic: how-to
 ---
 # Walkthrough: Declaring and Raising Events (Visual Basic)
 

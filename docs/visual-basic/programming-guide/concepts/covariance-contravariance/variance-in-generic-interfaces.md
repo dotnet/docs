@@ -3,6 +3,7 @@ description: "Learn more about: Variance in Generic Interfaces (Visual Basic)"
 title: "Variance in Generic Interfaces"
 ms.date: 07/20/2015
 ms.assetid: cf4096d0-4bb3-45a9-9a6b-f01e29a60333
+ms.topic: article
 ---
 # Variance in Generic Interfaces (Visual Basic)
 

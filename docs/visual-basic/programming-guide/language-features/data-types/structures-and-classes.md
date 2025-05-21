@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "structures [Visual Basic], structure variables"
   - "structure variables [Visual Basic]"
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
+ms.topic: article
 ---
 # Structures and Classes (Visual Basic)
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Visual Basic code, enumerations"
   - "enumerations [Visual Basic], about enumerations"
 ms.assetid: b42a38ee-5e77-4f99-a037-e3a127ead89c
+ms.topic: concept-article
 ---
 # Enumerations Overview (Visual Basic)
 

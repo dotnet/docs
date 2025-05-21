@@ -3,6 +3,7 @@ description: "Learn more about: Expression Trees (Visual Basic)"
 title: "Expression Trees"
 ms.date: 07/20/2015
 ms.assetid: 8bbbb02d-7ffc-476b-8c25-118d82bf5d46
+ms.topic: article
 ---
 # Expression Trees (Visual Basic)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Language-Integrated Query (LINQ) (Visual Basic)"
 title: "Language-Integrated Query (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: a99371f7-097c-49a0-b62b-0e31c34aad0e
+ms.topic: article
 ---
 # Language-Integrated Query (LINQ) (Visual Basic)
 

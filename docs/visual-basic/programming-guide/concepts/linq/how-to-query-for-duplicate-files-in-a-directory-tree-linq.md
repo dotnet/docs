@@ -3,6 +3,7 @@ description: "Learn more about: How to: Query for Duplicate Files in a Directory
 title: "How to: Query for Duplicate Files in a Directory Tree (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 387d7c97-95dd-4a50-9761-7e9cf8ae9e6a
+ms.topic: how-to
 ---
 # How to: Query for Duplicate Files in a Directory Tree (LINQ) (Visual Basic)
 

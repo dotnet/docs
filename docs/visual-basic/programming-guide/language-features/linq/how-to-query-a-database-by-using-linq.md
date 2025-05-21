@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], how-to topics"
   - "query samples [Visual Basic]"
 ms.assetid: bcf5e9c3-a236-4399-9a7f-3991eca7cf56
+ms.topic: how-to
 ---
 # How to: Query a Database by Using LINQ (Visual Basic)
 

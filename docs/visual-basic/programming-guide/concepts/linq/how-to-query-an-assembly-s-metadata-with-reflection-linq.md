@@ -3,6 +3,7 @@ description: "Learn more about: How to: Query An Assembly's Metadata with Reflec
 title: "How to: Query An Assembly's Metadata with Reflection (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 53caa336-ab83-4181-b0f6-5c87c5f9e4ee
+ms.topic: how-to
 ---
 # How to: Query An Assembly's Metadata with Reflection (LINQ) (Visual Basic)
 

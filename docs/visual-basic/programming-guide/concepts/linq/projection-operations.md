@@ -3,6 +3,7 @@ description: "Learn more about: Projection Operations (Visual Basic)"
 title: "Projection Operations"
 ms.date: 07/20/2015
 ms.assetid: b8d38e6d-21cf-4619-8dbb-94476f4badc7
+ms.topic: article
 ---
 # Projection Operations (Visual Basic)
 

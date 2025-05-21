@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Char data type [Visual Basic], character data types"
   - "data types [Visual Basic], choosing"
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
+ms.topic: article
 ---
 # Character Data Types (Visual Basic)
 

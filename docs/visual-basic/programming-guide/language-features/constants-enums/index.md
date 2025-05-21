@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "naming conventions [Visual Basic], constants"
   - "Visual Basic code, improving readability with constants"
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
+ms.topic: article
 ---
 # Constants and Enumerations in Visual Basic
 

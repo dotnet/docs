@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords:
   - "anonymous types [Visual Basic], type definition"
 ms.assetid: 7a8a0ddc-55ba-4d67-869e-87a84d938bac
+ms.topic: article
 ---
 # Anonymous Type Definition (Visual Basic)
 

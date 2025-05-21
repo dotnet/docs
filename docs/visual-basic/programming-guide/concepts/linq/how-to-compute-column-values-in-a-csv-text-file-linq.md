@@ -3,6 +3,7 @@ description: "Learn more about: How to: Compute Column Values in a CSV Text File
 title: "How to: Compute Column Values in a CSV Text File (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 88b2b9f3-c82e-41f3-b1b4-26ede5973a02
+ms.topic: how-to
 ---
 # How to: Compute Column Values in a CSV Text File (LINQ) (Visual Basic)
 

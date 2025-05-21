@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "data types [Visual Basic], value types"
   - "data types [Visual Basic], reference types"
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
+ms.topic: article
 ---
 # Value Types and Reference Types
 

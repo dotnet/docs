@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "pattern matching, empty strings"
   - "operators [Visual Basic], comparison"
 ms.assetid: 19a83804-b5af-4739-928b-ac93e64e457f
+ms.topic: how-to
 ---
 # How to: Match a String against a Pattern (Visual Basic)
 

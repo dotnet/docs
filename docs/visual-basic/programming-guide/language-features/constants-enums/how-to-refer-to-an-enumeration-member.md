@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "enumeration members"
   - "constants [Visual Basic], enumerated"
 ms.assetid: bbb5c3cc-7cdb-4814-8d6a-a6d91546ed1e
+ms.topic: how-to
 ---
 # How to: Refer to an Enumeration Member (Visual Basic)
 

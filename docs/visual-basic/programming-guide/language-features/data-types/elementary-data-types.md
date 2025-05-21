@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "elementary data types [Visual Basic]"
   - "data types [Visual Basic], elementary"
 ms.assetid: dfad6fe9-2da6-49a4-b0b1-2d7ae0283de5
+ms.topic: article
 ---
 # Elementary Data Types (Visual Basic)
 

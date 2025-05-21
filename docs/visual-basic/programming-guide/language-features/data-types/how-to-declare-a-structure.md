@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "statements [Visual Basic], structure"
   - "structures [Visual Basic], declaring"
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
+ms.topic: how-to
 ---
 # How to: Declare a Structure (Visual Basic)
 

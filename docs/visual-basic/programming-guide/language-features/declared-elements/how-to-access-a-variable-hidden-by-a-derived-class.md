@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "declared elements [Visual Basic], referencing"
   - "variables [Visual Basic], accessing hidden"
 ms.assetid: ae21a8ac-9cd4-4fba-a3ec-ecc4321ef93c
+ms.topic: how-to
 ---
 # How to: Access a Variable Hidden by a Derived Class (Visual Basic)
 

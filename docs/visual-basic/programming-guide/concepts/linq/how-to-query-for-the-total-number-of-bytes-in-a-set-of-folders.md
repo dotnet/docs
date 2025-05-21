@@ -3,6 +3,7 @@ description: "Learn more about: How to: Query for the Total Number of Bytes in a
 title: "How to: Query for the Total Number of Bytes in a Set of Folders (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: bfe85ed2-44dc-4ef1-aac7-241622b80a69
+ms.topic: how-to
 ---
 # How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (Visual Basic)
 

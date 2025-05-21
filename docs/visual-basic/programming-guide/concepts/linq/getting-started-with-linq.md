@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "LINQ [Visual Basic]"
   - "LINQ, Visual Basic"
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
+ms.topic: get-started
 ---
 # Getting Started with LINQ in Visual Basic
 

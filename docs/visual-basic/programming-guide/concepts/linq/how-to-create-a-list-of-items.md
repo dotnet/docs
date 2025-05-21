@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "list [LINQ in Visual Basic]"
   - "objects [Visual Basic], list of items"
 ms.assetid: fe941aba-6340-455c-8b1f-ffd9c3eb1ac5
+ms.topic: how-to
 ---
 # How to: Create a List of Items
 

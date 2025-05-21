@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "type promotion"
   - "declared elements [Visual Basic], visibility"
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
+ms.topic: article
 ---
 # Type Promotion (Visual Basic)
 

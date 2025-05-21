@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "arrays [Visual Basic], assigning"
   - "arrays [Visual Basic], covariance"
 ms.assetid: 1ae89ea5-f292-4282-bcfc-e9b06b37fbd5
+ms.topic: how-to
 ---
 # How to: Assign One Array to Another Array (Visual Basic)
 

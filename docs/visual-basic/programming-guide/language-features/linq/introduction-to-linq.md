@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "deferred execution"
   - "iteration variables [Visual Basic]"
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
+ms.topic: concept-article
 ---
 # Introduction to LINQ in Visual Basic
 

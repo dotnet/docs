@@ -3,6 +3,7 @@ description: "Learn more about: How to: Reorder the Fields of a Delimited File (
 title: "How to: Reorder the Fields of a Delimited File (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: c451c7db-663b-4daf-b8ba-a2093095d672
+ms.topic: how-to
 ---
 # How to: Reorder the Fields of a Delimited File (LINQ) (Visual Basic)
 

@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "decision structures [Visual Basic]"
   - "conditional statements [Visual Basic], decision structures"
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
+ms.topic: article
 ---
 # Decision Structures (Visual Basic)
 

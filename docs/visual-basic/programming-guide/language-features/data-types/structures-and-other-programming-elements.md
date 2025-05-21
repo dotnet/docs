@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "arrays [Visual Basic], structure elements"
   - "nested structures [Visual Basic]"
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
+ms.topic: article
 ---
 # Structures and Other Programming Elements (Visual Basic)
 

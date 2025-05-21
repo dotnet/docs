@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "WithEvents keyword [Visual Basic], walkthroughs"
   - "event handlers [Visual Basic], walkthroughs"
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
+ms.topic: how-to
 ---
 # Walkthrough: Handling Events (Visual Basic)
 

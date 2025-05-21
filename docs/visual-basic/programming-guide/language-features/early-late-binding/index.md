@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "late binding [Visual Basic]"
   - "late binding [Visual Basic], Visual Basic compiler"
 ms.assetid: d6ff7f1e-b94f-4205-ab8d-5cfa91758724
+ms.topic: article
 ---
 # Early and Late Binding (Visual Basic)
 

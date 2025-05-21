@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "lifetime [Visual Basic], Visual Basic"
   - "lifetime [Visual Basic]"
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
+ms.topic: article
 ---
 # Lifetime in Visual Basic
 

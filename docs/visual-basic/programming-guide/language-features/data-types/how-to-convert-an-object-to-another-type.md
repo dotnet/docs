@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "objects [Visual Basic], converting"
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
+ms.topic: how-to
 ---
 # How to: Convert an Object to Another Type in Visual Basic
 

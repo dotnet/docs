@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], data changes in database"
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: cf52635f-0c1b-46c3-aff1-bdf181cf19b1
+ms.topic: how-to
 ---
 # How to: Modify Data in a Database by Using LINQ (Visual Basic)
 

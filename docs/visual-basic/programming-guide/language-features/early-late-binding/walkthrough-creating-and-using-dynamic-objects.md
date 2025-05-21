@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords:
   - "dynamic objects [Visual Basic]"
   - "dynamic objects"
+ms.topic: article
 ---
 # Walkthrough: Creating and Using Dynamic Objects in Visual Basic
 

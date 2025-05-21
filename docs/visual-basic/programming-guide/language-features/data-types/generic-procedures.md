@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "generics [Visual Basic], procedures"
   - "generic procedures [Visual Basic], type inference"
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
+ms.topic: article
 ---
 # Generic Procedures in Visual Basic
 

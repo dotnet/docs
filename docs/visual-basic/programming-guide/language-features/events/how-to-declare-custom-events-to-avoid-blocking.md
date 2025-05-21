@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "events [Visual Basic], custom"
   - "custom events [Visual Basic]"
 ms.assetid: 998b6a90-67c5-4d2c-8b11-366d3e355505
+ms.topic: how-to
 ---
 # How to: Declare Custom Events To Avoid Blocking (Visual Basic)
 

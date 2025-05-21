@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "events [Visual Basic], custom"
   - "custom events [Visual Basic]"
 ms.assetid: 87ebee87-260c-462f-979c-407874debd19
+ms.topic: how-to
 ---
 # How to: Declare Custom Events To Conserve Memory (Visual Basic)
 

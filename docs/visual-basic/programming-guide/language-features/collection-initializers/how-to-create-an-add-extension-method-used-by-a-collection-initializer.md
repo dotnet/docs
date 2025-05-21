@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "collection initializers [Visual Basic]"
 ms.assetid: f64b52c7-8b11-4410-93a6-cb3aeebcc772
+ms.topic: how-to
 ---
 # How to: Create an Add Extension Method Used by a Collection Initializer (Visual Basic)
 

@@ -3,6 +3,7 @@ description: "Learn more about: How to: Split a File Into Many Files by Using Gr
 title: "How to: Split a File Into Many Files by Using Groups (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 5e8b2a2b-0b1d-4933-8a2b-03e91dfaf77f
+ms.topic: how-to
 ---
 # How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)
 

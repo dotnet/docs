@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Visual Basic, LINQ features"
   - "LINQ [Visual Basic], features supporting LINQ"
 ms.assetid: c821bb50-b6f6-4cf9-8aba-2717e465bd3a
+ms.topic: article
 ---
 # Visual Basic Features That Support LINQ
 

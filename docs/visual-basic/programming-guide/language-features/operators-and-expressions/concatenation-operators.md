@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "+ operator [Visual Basic], concatenation"
   - "concatenation operators [Visual Basic]"
 ms.assetid: e59908c3-89e0-41ae-933d-3e8826c16a04
+ms.topic: article
 ---
 # Concatenation Operators in Visual Basic
 

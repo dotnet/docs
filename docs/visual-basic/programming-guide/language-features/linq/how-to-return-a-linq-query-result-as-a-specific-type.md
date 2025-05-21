@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "queries [LINQ in Visual Basic], how-to topics"
   - "query samples [Visual Basic]"
 ms.assetid: 621bb10a-e5d7-44fb-a025-317964b19d92
+ms.topic: how-to
 ---
 # How to: Return a LINQ Query Result as a Specific Type (Visual Basic)
 

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "structures [Visual Basic], nested control"
   - "nested control statements [Visual Basic]"
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
+ms.topic: article
 ---
 # Nested Control Structures (Visual Basic)
 

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "declared elements [Visual Basic], visibility"
   - "visibility [Visual Basic], variables"
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
+ms.topic: how-to
 ---
 # How to: Control the Scope of a Variable (Visual Basic)
 

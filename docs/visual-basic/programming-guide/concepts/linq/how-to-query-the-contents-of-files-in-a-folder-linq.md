@@ -3,6 +3,7 @@ description: "Learn more about: How to query the contents of files in a folder (
 title: "How to query the contents of files in a folder (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: edacbcd3-f3e4-4429-a8be-28a58dc0dd70
+ms.topic: how-to
 ---
 # How to query the contents of files in a folder (LINQ) (Visual Basic)
 

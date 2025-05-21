@@ -4,6 +4,7 @@ title: "Introduction to LINQ (Visual Basic)"
 titleSuffix: ""
 ms.date: 07/20/2015
 ms.assetid: c6339c12-9b2d-433e-961c-0d2b7f0091c2
+ms.topic: concept-article
 ---
 # Introduction to LINQ (Visual Basic)
 

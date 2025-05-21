@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "delegates [Visual Basic], relaxed conversion"
   - "conversions [Visual Basic], relaxed delegate"
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
+ms.topic: article
 ---
 # Relaxed Delegate Conversion (Visual Basic)
 

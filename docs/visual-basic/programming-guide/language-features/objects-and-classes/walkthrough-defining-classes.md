@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "Terminate event [Visual Basic]"
   - "execution [Visual Basic], stopping"
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
+ms.topic: how-to
 ---
 # Walkthrough: Defining Classes (Visual Basic)
 

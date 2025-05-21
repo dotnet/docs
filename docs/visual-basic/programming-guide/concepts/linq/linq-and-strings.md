@@ -3,6 +3,7 @@ description: "Learn more about: LINQ and Strings (Visual Basic)"
 title: "LINQ and Strings"
 ms.date: 07/20/2015
 ms.assetid: 75ddb201-d97a-4f98-8cdf-4ad51714529a
+ms.topic: article
 ---
 # LINQ and Strings (Visual Basic)
 

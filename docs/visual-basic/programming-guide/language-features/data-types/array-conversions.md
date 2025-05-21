@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "conversions [Visual Basic], array types"
   - "object arrays"
 ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
+ms.topic: how-to
 ---
 # Array Conversions (Visual Basic)
 

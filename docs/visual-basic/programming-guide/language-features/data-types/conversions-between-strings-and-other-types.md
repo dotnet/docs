@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "type conversion [Visual Basic], string"
   - "regional options"
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
+ms.topic: article
 ---
 # Conversions Between Strings and Other Types (Visual Basic)
 

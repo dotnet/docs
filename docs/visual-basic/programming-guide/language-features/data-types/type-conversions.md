@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "changing data types [Visual Basic]"
   - "data type conversion [Visual Basic]"
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
+ms.topic: article
 ---
 # Type Conversions in Visual Basic
 

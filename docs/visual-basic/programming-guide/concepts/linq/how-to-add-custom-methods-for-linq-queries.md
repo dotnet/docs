@@ -3,6 +3,7 @@ description: "Learn more about: How to: Add custom methods for LINQ queries (Vis
 title: "How to: Add custom methods for LINQ Queries"
 ms.date: 08/28/2020
 ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
+ms.topic: how-to
 ---
 # How to: Add custom methods for LINQ queries (Visual Basic)
 

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "Do statement [Visual Basic], Do loops"
   - "conditional statements [Visual Basic], loop structures"
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
+ms.topic: article
 ---
 # Loop Structures (Visual Basic)
 

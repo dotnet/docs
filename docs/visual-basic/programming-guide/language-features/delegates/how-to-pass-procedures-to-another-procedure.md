@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "AddressOf operator [Visual Basic]"
   - "delegates [Visual Basic], passing procedures"
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
+ms.topic: how-to
 ---
 # How to: Pass Procedures to Another Procedure in Visual Basic
 

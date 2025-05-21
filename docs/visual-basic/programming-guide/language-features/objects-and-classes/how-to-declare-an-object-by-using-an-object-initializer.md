@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "initializers [Visual Basic]"
   - "Video How tos, Visual Basic"
 ms.assetid: 0f53a553-efd6-466d-80bf-6b679e5cd174
+ms.topic: how-to
 ---
 # How to: Declare an Object by Using an Object Initializer (Visual Basic)
 

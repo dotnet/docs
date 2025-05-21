@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "run-time errors [Visual Basic], types of errors"
   - "syntax errors [Visual Basic], Visual Basic"
 ms.assetid: 3048aabf-8c97-4e13-9150-853769cb5f6f
+ms.topic: article
 ---
 # Error Types (Visual Basic)
 

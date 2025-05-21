@@ -3,6 +3,7 @@ description: "Learn more about: How to: Count Occurrences of a Word in a String 
 title: "How to: Count Occurrences of a Word in a String (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: bc367e46-f7cc-45f9-936f-754e661b7bb9
+ms.topic: how-to
 ---
 # How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)
 

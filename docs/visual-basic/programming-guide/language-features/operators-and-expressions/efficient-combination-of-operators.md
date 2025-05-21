@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "parentheses [Visual Basic], complex expressions"
   - "numeric expressions"
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
+ms.topic: article
 ---
 # Efficient Combination of Operators (Visual Basic)
 

@@ -3,6 +3,7 @@ description: "Learn more about: Quantifier Operations (Visual Basic)"
 title: "Quantifier Operations"
 ms.date: 07/20/2015
 ms.assetid: ae1a2b73-503c-4f4b-a3fd-31b5adbee67c
+ms.topic: article
 ---
 # Quantifier Operations (Visual Basic)
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Visual Basic code, elements of"
   - "Visual Basic code"
 ms.assetid: b0b21730-298c-47e6-9a2f-cc81f628067b
+ms.topic: article
 ---
 # Visual Basic Language Features
 

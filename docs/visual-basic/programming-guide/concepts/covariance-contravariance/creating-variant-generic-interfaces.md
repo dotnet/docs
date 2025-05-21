@@ -3,6 +3,7 @@ description: "Learn more about: Creating Variant Generic Interfaces (Visual Basi
 title: "Creating Variant Generic Interfaces"
 ms.date: 07/20/2015
 ms.assetid: d4037dd2-dfe9-4811-9150-93d4e8b20113
+ms.topic: concept-article
 ---
 
 # Creating Variant Generic Interfaces (Visual Basic)

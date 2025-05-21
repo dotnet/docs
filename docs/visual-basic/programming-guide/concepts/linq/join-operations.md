@@ -3,6 +3,7 @@ description: "Learn more about: Join Operations (Visual Basic)"
 title: "Join Operations"
 ms.date: 07/20/2015
 ms.assetid: 39ab4854-ac84-4738-9d0b-3cb79be84db4
+ms.topic: article
 ---
 # Join Operations (Visual Basic)
 

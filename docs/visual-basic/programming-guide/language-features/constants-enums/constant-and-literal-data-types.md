@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "literals [Visual Basic], coercing data type"
   - "declarations [Visual Basic], data types"
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
+ms.topic: article
 ---
 # Constant and Literal Data Types (Visual Basic)
 

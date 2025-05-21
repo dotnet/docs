@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "Visual Basic code, expressions"
   - "numeric expressions"
 ms.assetid: ba6bf43d-bd96-49b8-b1de-4a7797551372
+ms.topic: how-to
 ---
 # How to: Calculate Numeric Values (Visual Basic)
 

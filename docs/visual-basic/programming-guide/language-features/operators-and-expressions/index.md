@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "operands"
   - "expressions [Visual Basic]"
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
+ms.topic: article
 ---
 # Operators and Expressions in Visual Basic
 

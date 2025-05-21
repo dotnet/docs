@@ -36,6 +36,7 @@ helpviewer_keywords:
   - "data type parameters [Visual Basic], defining"
   - "type arguments [Visual Basic], defining"
   - "arguments [Visual Basic], type"
+ms.topic: article
 ---
 # Generic types in Visual Basic (Visual Basic)
 

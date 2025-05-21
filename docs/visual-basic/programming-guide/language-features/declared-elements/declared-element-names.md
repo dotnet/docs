@@ -24,6 +24,7 @@ helpviewer_keywords:
   - "names [Visual Basic], naming conventions"
   - "identifiers [Visual Basic], elements"
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
+ms.topic: article
 ---
 # Declared Element Names (Visual Basic)
 

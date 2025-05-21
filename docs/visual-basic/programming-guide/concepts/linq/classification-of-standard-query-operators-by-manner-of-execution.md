@@ -3,6 +3,7 @@ description: "Learn more about: Classification of Standard Query Operators by Ma
 title: "Classification of Standard Query Operators by Manner of Execution"
 ms.date: 07/20/2015
 ms.assetid: 7f55b0be-9f6e-44f8-865c-6afbea50cc54
+ms.topic: article
 ---
 # Classification of standard query operators by manner of execution (Visual Basic)
 

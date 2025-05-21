@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 helpviewer_keywords: 
   - "dynamic objects [Visual Basic]"
 ms.assetid: bdee2a00-07ff-46f9-86dd-fdac9b99cc97
+ms.topic: concept-article
 ---
 # Working with Dynamic Objects (Visual Basic)
 

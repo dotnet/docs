@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "data type conversion [Visual Basic], exceptions during conversion"
   - "conversions [Visual Basic], widening"
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
+ms.topic: concept-article
 ---
 # Widening and Narrowing Conversions (Visual Basic)
 

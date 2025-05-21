@@ -37,6 +37,7 @@ helpviewer_keywords:
   - "UL literal type characters [Visual Basic]"
   - "literal types [Visual Basic], default"
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
+ms.topic: how-to
 ---
 # Type characters (Visual Basic)
 

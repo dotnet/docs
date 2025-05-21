@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "loop structures [Visual Basic], optimizing performance"
   - "control flow [Visual Basic]"
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
+ms.topic: how-to
 ---
 # Walkthrough: Implementing IEnumerable(Of T) in Visual Basic
 

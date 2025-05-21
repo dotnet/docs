@@ -86,7 +86,7 @@ The F# compiler supports several opt-in warnings:
 | 3390  | Malformed XML doc comments      |  n/a  | Warn when XML doc comments are malformed in various ways. |
 
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
-(You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, e.g. `<WarnOn>FS3388</WarnOn>`.)
+(You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, for example, `<WarnOn>FS3388</WarnOn>`.)
 Note that if the `WarnOn` property is specified multiple times, only the last occurrence is used. To specify multiple warnings, provide the `WarnOn` property once with a comma-separated string as its contents: `<WarnOn>3388,3559</WarnOn>`.
 
 ## Related articles

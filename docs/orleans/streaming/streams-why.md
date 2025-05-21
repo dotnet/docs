@@ -6,7 +6,7 @@ ms.date: 07/03/2024
 
 # Why streams in Orleans?
 
-There are already a wide range of technologies that allow you to build stream processing systems. Those include systems to **durably store stream data** (e.g., [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Kafka](https://kafka.apache.org/)) and systems to express **compute operations** over stream data (e.g., [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), and [Apache Spark Streaming](https://spark.apache.org/streaming/)). Those are great systems that allow you to build efficient data stream processing pipelines.
+There are already a wide range of technologies that allow you to build stream processing systems. Those include systems to **durably store stream data** (for example, [Event Hubs](https://azure.microsoft.com/services/event-hubs/) and [Kafka](https://kafka.apache.org/)) and systems to express **compute operations** over stream data (for example, [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/), [Apache Storm](https://storm.apache.org/), and [Apache Spark Streaming](https://spark.apache.org/streaming/)). Those are great systems that allow you to build efficient data stream processing pipelines.
 
 ### Limitations of existing systems
 
@@ -55,7 +55,7 @@ The unit of abstraction and flexibility argument is similar to a comparison of S
 
 #### Distribution
 
-And of course, our system should have all the properties of a **"good distributed system"**. That includes:
+And of course, the system should have all the properties of a **"good distributed system"**. That includes:
 
 1. _Scalability_ - supports large number of streams and compute elements.
 2. _Elasticity_ - allows to add/remove resources to grow/shrink based on load.
@@ -63,9 +63,9 @@ And of course, our system should have all the properties of a **"good distribute
 4. _Efficiency_ - use the underlying resources efficiently
 5. _Responsiveness_ - enable near real time scenarios.
 
-These were the requirements we had in mind for building [**Orleans Streaming**](index.md).
+These were the requirements for building [**Orleans Streaming**](index.md).
 
-_Clarification_: Orleans currently does not directly support writing declarative dataflow expressions like in the example above. The current Orleans Streaming APIs are more low-level building blocks, as described [here](streams-programming-apis.md). Providing declarative dataflow expressions is our future goal.
+_Clarification_: Orleans currently does not directly support writing declarative dataflow expressions like in the example above. The current Orleans Streaming APIs are more low-level building blocks, as described [here](streams-programming-apis.md).
 
 ## See also
 

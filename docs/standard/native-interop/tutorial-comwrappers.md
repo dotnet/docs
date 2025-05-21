@@ -248,7 +248,7 @@ return new DemoNativeStaticWrapper()
 
 #### Dynamic Native Object Wrapper
 
-Dynamic wrappers are more flexible because they provide a way for types to be queried at run time instead of statically. In order to provide this support, you'll utilize [`IDynamicInterfaceCastable`][api_idynamicinterfacecastable] &ndash; further details can be found [here][doc_idynamicinterfacecastable]. Observe that `DemoNativeDynamicWrapper` only implements this interface. The functionality that the interface provides is a chance to determine what type is supported at run time. The source for this tutorial does a static check during creation but that is simply for code sharing since the check could be deferred until a call is made to `DemoNativeDynamicWrapper.IsInterfaceImplemented()`.
+Dynamic wrappers are more flexible because they provide a way for types to be queried at run time instead of statically. To provide this support, you'll use [`IDynamicInterfaceCastable`][api_idynamicinterfacecastable]. Observe that `DemoNativeDynamicWrapper` only implements this interface. The functionality that the interface provides is a chance to determine what type is supported at run time. The source for this tutorial does a static check during creation but that is simply for code sharing since the check could be deferred until a call is made to `DemoNativeDynamicWrapper.IsInterfaceImplemented()`.
 
 ```csharp
 // See referenced sample for implementation.

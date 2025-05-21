@@ -2,6 +2,7 @@
 title: System.Data.DataColumn.Expression property
 description: Learn about the System.Data.DataColumn.Expression property.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Data.DataColumn.Expression property
 

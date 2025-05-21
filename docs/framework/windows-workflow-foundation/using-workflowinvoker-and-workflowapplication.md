@@ -3,6 +3,7 @@ title: "Using WorkflowInvoker and WorkflowApplication"
 description: This article describes workflow hosting using WorkflowInvoker and WorkflowApplication in Windows Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: cd0e583c-a3f9-4fa2-b247-c7b3368c48a7
+ms.topic: concept-article
 ---
 # Using WorkflowInvoker and WorkflowApplication
 

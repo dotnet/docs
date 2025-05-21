@@ -2,6 +2,7 @@
 title: System.Reflection.Emit.PersistedAssemblyBuilder class
 description: Learn about the System.Reflection.Emit.PersistedAssemblyBuilder class.
 ms.date: 05/10/2024
+ms.topic: article
 ---
 # Persisted dynamic assemblies in .NET
 

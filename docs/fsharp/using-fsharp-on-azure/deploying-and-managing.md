@@ -4,6 +4,7 @@ description: Learn how to deploy and manage Azure resources with F\#
 author: dsyme
 ms.date: 11/04/2021
 ms.custom: "devx-track-fsharp"
+ms.topic: concept-article
 ---
 
 # Deploying and Managing Azure Resources with F\#

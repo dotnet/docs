@@ -2,6 +2,7 @@
 title: System.GC class
 description: Learn about the System.GC class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.GC class
 

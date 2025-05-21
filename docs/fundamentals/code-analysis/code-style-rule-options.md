@@ -4,6 +4,7 @@ description: Learn how to specify .NET code style options.
 ms.date: 04/26/2024
 author: gewarren
 ms.author: gewarren
+ms.topic: article
 ---
 # Code-style rule options
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "events [.NET], adding event handlers with reflection"
   - "reflection, adding event-handler delegates"
   - "delegates [.NET], adding event handlers with reflection"
+ms.topic: how-to
 ---
 # How to: Hook up a delegate using reflection
 

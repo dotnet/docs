@@ -2,6 +2,7 @@
 title: System.AppDomain.UnhandledException event
 description: Learn about the System.AppDomain.UnhandledException event.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.AppDomain.UnhandledException event
 

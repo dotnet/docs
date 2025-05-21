@@ -2,6 +2,7 @@
 title: System.Net.Http.HttpClientHandler class
 description: Learn about the System.Net.Http.HttpClientHandler class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Net.Http.HttpClientHandler class
 

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "programming [WF], workflow security"
 ms.assetid: d712a566-f435-44c0-b8c0-49298e84b114
+ms.topic: article
 ---
 # Workflow Security
 

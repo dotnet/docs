@@ -2,6 +2,7 @@
 title: System.Linq.Expressions.Expression.Add methods
 description: Learn about the System.Linq.Expressions.Expression.Add methods.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Linq.Expressions.Expression.Add methods
 

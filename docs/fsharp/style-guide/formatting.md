@@ -2,6 +2,7 @@
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
 ms.date: 11/01/2023
+ms.topic: article
 ---
 # F# code formatting guidelines
 

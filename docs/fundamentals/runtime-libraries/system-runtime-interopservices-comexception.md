@@ -2,6 +2,7 @@
 title: System.Runtime.InteropServices.COMException class
 description: Learn about the System.Runtime.InteropServices.COMException class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Runtime.InteropServices.COMException class
 

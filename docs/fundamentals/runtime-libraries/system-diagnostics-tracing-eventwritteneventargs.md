@@ -2,6 +2,7 @@
 title: System.Diagnostics.Tracing.EventWrittenEventArgs class
 description: Learn about the System.Diagnostics.Tracing.EventWrittenEventArgs class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Diagnostics.Tracing.EventWrittenEventArgs class
 

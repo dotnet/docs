@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "generics [.NET], reflection emit"
   - "generics [.NET], dynamic types"
   - "reflection emit, generic types"
+ms.topic: how-to
 ---
 # How to: Define a generic type with reflection emit
 

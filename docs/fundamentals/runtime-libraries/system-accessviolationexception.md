@@ -2,6 +2,7 @@
 title: System.AccessViolationException class
 description: Learn about the System.AccessViolationException class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.AccessViolationException class
 

@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "receiving data, sockets"
   - "protocols, sockets"
   - "Internet, sockets"
+ms.topic: article
 ---
 
 # Sockets in .NET

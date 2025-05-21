@@ -2,6 +2,7 @@
 title: System.MidpointRounding enum
 description: Learn about the System.MidpointRounding enum.
 ms.date: 12/31/2023
+ms.topic: concept-article
 ---
 # System.MidpointRounding enum
 

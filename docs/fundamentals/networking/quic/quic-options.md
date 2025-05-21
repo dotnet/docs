@@ -2,6 +2,7 @@
 title: QUIC configuration options in .NET
 description: Learn details about the configuration for QUIC protocol in .NET.
 ms.date: 01/11/2025
+ms.topic: article
 ---
 # QUIC configuration options
 

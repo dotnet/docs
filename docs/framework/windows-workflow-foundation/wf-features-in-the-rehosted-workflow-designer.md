@@ -3,6 +3,7 @@ description: "Learn more about: Support for New Workflow Foundation 4.5 Features
 title: "Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer"
 ms.date: "03/30/2017"
 ms.assetid: 1a4a4038-d8e6-41dd-99ea-93bd76286772
+ms.topic: how-to
 ---
 # Support for New Workflow Foundation 4.5 Features in the Rehosted Workflow Designer
 

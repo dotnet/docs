@@ -33,6 +33,7 @@ helpviewer_keywords:
 - "IPv6, routing"
 - "IPv6, unicast addresses"
 - "Neighbor Discovery"
+ms.topic: concept-article
 ---
 
 # Internet Protocol version 6 (IPv6) overview

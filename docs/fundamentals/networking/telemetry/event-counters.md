@@ -4,6 +4,7 @@ description: Learn how to consume .NET networking event counters.
 author: MihaZupan
 ms.author: mizupan
 ms.date: 10/18/2022
+ms.topic: concept-article
 ---
 
 # Networking event counters in .NET

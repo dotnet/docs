@@ -2,6 +2,7 @@
 title: System.Object class
 description: Learn about the System.Object class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Object class
 

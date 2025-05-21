@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "special characters"
   - "IDENTIFIER"
 ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
+ms.topic: how-to
 ---
 
 # Specify fully qualified type names

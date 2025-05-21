@@ -2,6 +2,7 @@
 title: Functional Programming Concepts in F#
 description: Learn the concepts of functional programming in F#.
 ms.date: 10/29/2021
+ms.topic: concept-article
 ---
 
 # Introduction to Functional Programming Concepts in F\#

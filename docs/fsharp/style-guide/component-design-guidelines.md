@@ -2,6 +2,7 @@
 title: F# component design guidelines
 description: Learn the guidelines for writing F# components intended for consumption by other callers.
 ms.date: 05/14/2018
+ms.topic: article
 ---
 # F# component design guidelines
 

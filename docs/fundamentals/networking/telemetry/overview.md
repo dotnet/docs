@@ -4,6 +4,7 @@ description: Overview of networking telemetry tools in .NET.
 author: MihaZupan
 ms.author: mizupan
 ms.date: 10/18/2022
+ms.topic: concept-article
 ---
 
 # Networking telemetry in .NET

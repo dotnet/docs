@@ -2,6 +2,7 @@
 title: System.IO.FileStream class
 description: Learn about the System.IO.FileStream class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.IO.FileStream class
 

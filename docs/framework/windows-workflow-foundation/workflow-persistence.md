@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], persistence"
 ms.assetid: 39e69d1f-b771-4c16-9e18-696fa43b65b2
+ms.topic: article
 ---
 # Workflow Persistence
 

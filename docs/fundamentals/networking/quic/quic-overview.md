@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "receiving data, QUIC"
   - "application protocols, QUIC"
   - "Internet, QUIC"
+ms.topic: article
 ---
 # QUIC protocol
 

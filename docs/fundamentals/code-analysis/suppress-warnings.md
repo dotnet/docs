@@ -9,6 +9,7 @@ dev_langs:
 helpviewer_keywords:
   - code analysis, suppress warnings
   - suppress code analysis warnings
+ms.topic: how-to
 ---
 # How to suppress code analysis warnings
 

@@ -2,6 +2,7 @@
 title: System.Exception.Data property
 description: Learn about the System.Exception.Data property.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Exception.Data property
 

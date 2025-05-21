@@ -5,6 +5,7 @@ ms.date: 05/15/2025
 dev_langs:
   - CSharp
   - VB
+ms.topic: article
 ---
 # System.Numerics.Complex struct
 

@@ -2,6 +2,7 @@
 title: F# Tools for JavaScript
 description: Learn about F# tools for executing your code as JavaScript.
 ms.date: 11/03/2021
+ms.topic: article
 ---
 # F# for JavaScript
 

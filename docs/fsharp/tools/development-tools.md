@@ -2,6 +2,7 @@
 title: F# Development Tools
 description: Learn about development tools for F#.
 ms.date: 11/03/2021
+ms.topic: article
 ---
 # F# Development Tools
 

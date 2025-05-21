@@ -2,6 +2,7 @@
 title: F# Notebooks
 description: Learn about developing notebooks with F#.
 ms.date: 11/03/2021
+ms.topic: article
 ---
 # F# notebooks
 

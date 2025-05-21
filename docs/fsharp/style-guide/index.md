@@ -2,6 +2,7 @@
 title: F# style guide
 description: Learn the five principles of good F# code.
 ms.date: 12/10/2018
+ms.topic: article
 ---
 # F# style guide
 

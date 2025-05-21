@@ -4,6 +4,7 @@ description: Learn how to consume .NET networking Tracing.
 author: samsp-msft
 ms.author: samsp
 ms.date: 10/4/2024
+ms.topic: how-to
 ---
 
 # Distributed tracing in System.Net libraries

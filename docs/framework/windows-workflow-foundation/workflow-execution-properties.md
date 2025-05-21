@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Execution Properties"
 title: "Workflow Execution Properties"
 ms.date: "03/30/2017"
 ms.assetid: a50e088e-3a45-4267-bd51-1a3e6c2d246d
+ms.topic: article
 ---
 # Workflow Execution Properties
 

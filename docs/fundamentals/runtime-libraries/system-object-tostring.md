@@ -6,6 +6,7 @@ dev_langs:
   - CSharp
   - FSharp
   - VB
+ms.topic: concept-article
 ---
 # System.Object.ToString method
 

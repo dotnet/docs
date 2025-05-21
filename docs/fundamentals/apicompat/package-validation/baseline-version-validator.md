@@ -2,6 +2,7 @@
 title: Baseline Package Validator
 description: Learn about the package validator that validates the latest version of a package with the previous, stable version.
 ms.date: 09/29/2021
+ms.topic: how-to
 ---
 
 # Validate against a baseline package version

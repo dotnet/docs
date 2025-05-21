@@ -2,6 +2,7 @@
 title: Microsoft.Win32.Registry class
 description: Learn about the Microsoft.Win32.Registry class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # The Microsoft.Win32.Registry class
 

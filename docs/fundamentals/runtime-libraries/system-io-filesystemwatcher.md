@@ -2,6 +2,7 @@
 title: System.IO.FileSystemWatcher class
 description: Learn about the System.IO.FileSystemWatcher class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.IO.FileSystemWatcher class
 

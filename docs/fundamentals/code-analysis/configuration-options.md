@@ -3,6 +3,7 @@ title: Configure code analysis rules
 description: Learn how to configure code analysis rules in an analyzer configuration file.
 ms.date: 12/06/2021
 no-loc: ["EditorConfig"]
+ms.topic: how-to
 ---
 # Configuration options for code analysis
 

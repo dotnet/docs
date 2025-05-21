@@ -4,6 +4,7 @@ description: Learn how to consume .NET networking Metrics.
 author: antonfirsov
 ms.author: anfirszo
 ms.date: 11/14/2023
+ms.topic: how-to
 ---
 
 # Networking metrics in .NET

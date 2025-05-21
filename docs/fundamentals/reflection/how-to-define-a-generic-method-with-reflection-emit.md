@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "reflection emit, generic methods"
   - "generics [.NET], dynamic types"
 ms.assetid: 93892fa4-90b3-4ec4-b147-4bec9880de2b
+ms.topic: how-to
 ---
 # How to: Define a generic method with reflection emit
 

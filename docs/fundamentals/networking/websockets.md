@@ -3,6 +3,7 @@ title: WebSockets support in .NET
 description: Learn how to web sockets with the ClientWebSockets in .NET.
 author: greenEkatherine
 ms.date: 10/27/2022
+ms.topic: article
 ---
 
 # WebSockets support in .NET

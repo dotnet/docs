@@ -2,6 +2,7 @@
 title: Validating Different Runtimes
 description: Learn about validating the run-time and compile-time assemblies applicable for supported target frameworks and runtimes.
 ms.date: 09/29/2021
+ms.topic: how-to
 ---
 
 # Validate packages against different runtimes

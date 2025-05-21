@@ -2,6 +2,7 @@
 title: Troubleshooting Type Providers
 description: Discover potential solutions for the problems that you are most likely to encounter when you use type providers in F#.
 ms.date: 05/16/2016
+ms.topic: troubleshooting-general
 ---
 # Troubleshooting Type Providers
 

@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "protocols, sockets"
   - "Internet, sockets"
   - "client sockets"
+ms.topic: how-to
 ---
 
 # Use Sockets to send and receive data over TCP

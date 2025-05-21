@@ -4,6 +4,7 @@ description: Learn how to detect changes in network availability and ping a host
 author: IEvangelist
 ms.author: dapine
 ms.date: 08/24/2022
+ms.topic: article
 ---
 
 # Network availability

@@ -3,6 +3,7 @@ description: "Learn more about: Using the ModelItem Editing Context"
 title: "Using the ModelItem Editing Context"
 ms.date: "03/30/2017"
 ms.assetid: 7f9f1ea5-0147-4079-8eca-be94f00d3aa1
+ms.topic: how-to
 ---
 # Using the ModelItem Editing Context
 

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "network resources, HTTP"
   - "HTTP, about HTTP"
   - "HttpWebRequest class, sending and receiving data"
+ms.topic: article
 ---
 
 # HTTP support in .NET

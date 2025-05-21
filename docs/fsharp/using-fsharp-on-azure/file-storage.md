@@ -4,6 +4,7 @@ description: Store file data in the cloud with Azure Files and mount your cloud 
 author: sylvanc
 ms.date: 09/17/2024
 ms.custom: "devx-track-fsharp"
+ms.topic: get-started
 ---
 # Get started with Azure Files using F\#
 

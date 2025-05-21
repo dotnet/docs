@@ -5,6 +5,7 @@ ms.date: 01/02/2024
 dev_langs:
   - CSharp
   - VB
+ms.topic: article
 ---
 # System.Data.DataTable class
 

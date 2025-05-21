@@ -2,6 +2,7 @@
 title: System.IAsyncDisposable interface
 description: Learn about the System.IAsyncDisposable interface.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.IAsyncDisposable interface
 

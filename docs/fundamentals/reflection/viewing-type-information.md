@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "Type object"
   - "viewing type information"
   - "reflection, viewing type information"
+ms.topic: concept-article
 ---
 # View type information
 

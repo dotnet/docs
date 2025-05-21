@@ -3,6 +3,7 @@ description: "Learn more about: Variable and Argument Tracking"
 title: "Variable and Argument Tracking"
 ms.date: "03/30/2017"
 ms.assetid: 8f3d9d30-d899-49aa-b7ce-a8d0d32c4ff0
+ms.topic: article
 ---
 # Variable and Argument Tracking
 

@@ -4,6 +4,7 @@ description: Guide to using other Azure services with F#
 author: sylvanc
 ms.date: 11/04/2021
 ms.custom: "devx-track-fsharp"
+ms.topic: how-to
 ---
 
 # Using other Azure services with F\#

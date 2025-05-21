@@ -2,6 +2,7 @@
 title: System.Globalization.CultureAndRegionInfoBuilder constructor
 description: Learn about the System.Globalization.CultureAndRegionInfoBuilder constructor.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Globalization.CultureAndRegionInfoBuilder constructor
 

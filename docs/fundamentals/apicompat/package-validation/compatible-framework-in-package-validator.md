@@ -2,6 +2,7 @@
 title: Validate Compatible Frameworks Inside a Package
 description: Learn how to detect issues with API surface, identity, and compatibility across different target frameworks in a package.
 ms.date: 09/29/2021
+ms.topic: how-to
 ---
 
 # Validate compatible frameworks

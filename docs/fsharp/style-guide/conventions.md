@@ -2,6 +2,7 @@
 title: F# coding conventions
 description: Learn general guidelines and idioms when writing F# code.
 ms.date: 01/5/2021
+ms.topic: article
 ---
 # F# coding conventions
 

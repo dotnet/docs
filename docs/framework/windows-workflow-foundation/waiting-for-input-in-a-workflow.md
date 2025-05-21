@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "programming [WF], bookmarks"
 ms.assetid: 50a007c5-8ab7-4b9a-a7ec-1b7e2f4930fe
+ms.topic: concept-article
 ---
 # Waiting for Input in a Workflow
 

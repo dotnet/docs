@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Tracing"
 title: "Workflow Tracing"
 ms.date: "03/30/2017"
 ms.assetid: 18737989-0502-4367-b5f6-617ebfb77c96
+ms.topic: article
 ---
 # Workflow Tracing
 

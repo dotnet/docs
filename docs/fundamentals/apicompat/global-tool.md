@@ -2,6 +2,7 @@
 title: Microsoft.DotNet.ApiCompat.Tool global tool
 description: Learn about the Microsoft.DotNet.ApiCompat.Tool global tool, which performs API compatibility checks on assemblies and packages.
 ms.date: 11/29/2023
+ms.topic: article
 ---
 
 # Microsoft.DotNet.ApiCompat.Tool global tool

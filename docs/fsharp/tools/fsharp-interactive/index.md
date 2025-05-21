@@ -4,6 +4,7 @@ description: Learn how F# Interactive (dotnet fsi) is used to run F# code intera
 ms.date: 11/29/2020
 f1_keywords:
  - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
+ms.topic: article
 ---
 # Interactive programming with F\#
 

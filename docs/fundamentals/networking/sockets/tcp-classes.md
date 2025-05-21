@@ -17,6 +17,7 @@ helpviewer_keywords:
   - "data requests, TCP"
   - "requesting data from Internet, TCP"
   - "Internet, TCP"
+ms.topic: concept-article
 ---
 
 # TCP overview

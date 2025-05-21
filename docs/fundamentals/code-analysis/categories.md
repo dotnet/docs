@@ -4,6 +4,7 @@ description: Learn the different .NET code analysis rule categories.
 ms.date: 10/04/2021
 helpviewer_keywords:
   - code analysis, categories
+ms.topic: article
 ---
 # Rule categories
 

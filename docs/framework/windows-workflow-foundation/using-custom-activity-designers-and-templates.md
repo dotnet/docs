@@ -3,6 +3,7 @@ description: "Learn more about: Using Custom Activity Designers and Templates"
 title: "Using Custom Activity Designers and Templates"
 ms.date: "03/30/2017"
 ms.assetid: 1aab82e7-7f89-4255-be46-526b09ceeb8b
+ms.topic: concept-article
 ---
 # Using Custom Activity Designers and Templates
 

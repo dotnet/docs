@@ -2,6 +2,7 @@
 title: System.Net.FtpWebRequest.Proxy property
 description: Learn about the System.Net.FtpWebRequest.Proxy property.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Net.FtpWebRequest.Proxy property
 

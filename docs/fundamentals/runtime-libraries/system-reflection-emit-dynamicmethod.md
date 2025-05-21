@@ -2,6 +2,7 @@
 title: System.Reflection.Emit.DynamicMethod class
 description: Learn about the System.Reflection.Emit.DynamicMethod class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Reflection.Emit.DynamicMethod class
 

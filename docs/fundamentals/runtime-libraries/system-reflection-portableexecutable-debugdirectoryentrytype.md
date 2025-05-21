@@ -2,6 +2,7 @@
 title: System.Reflection.PortableExecutable.DebugDirectoryEntryType enum
 description: Learn about the System.Reflection.PortableExecutable.DebugDirectoryEntryType enum.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Reflection.PortableExecutable.DebugDirectoryEntryType enum
 

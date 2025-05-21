@@ -2,6 +2,7 @@
 title: System.Diagnostics.ProcessStartInfo.UseShellExecute property
 description: Learn about the System.Diagnostics.ProcessStartInfo.UseShellExecute property.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Diagnostics.ProcessStartInfo.UseShellExecute property
 

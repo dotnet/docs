@@ -3,6 +3,7 @@ title: "Variables and Arguments"
 description: This article describes variables, which represent storage of data, and arguments, which represent flow of data to/from an activity in Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: d03dbe34-5b2e-4f21-8b57-693ee49611b8
+ms.topic: article
 ---
 # Variables and Arguments
 

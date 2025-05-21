@@ -4,6 +4,7 @@ description: Learn about using HttpClient instances to send HTTP requests and ho
 author: gewarren
 ms.author: gewarren
 ms.date: 03/08/2024
+ms.topic: article
 ---
 
 # Guidelines for using HttpClient

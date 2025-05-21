@@ -2,6 +2,7 @@
 title: Install F#
 description: Learn how to install F# in various different ways.
 ms.date: 10/29/2021
+ms.topic: install-set-up-deploy
 ---
 # Install F\#
 

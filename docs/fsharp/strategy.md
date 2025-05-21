@@ -2,6 +2,7 @@
 title: F# language strategy
 description: We will drive F# evolution and support the F# ecosystem with language leadership and governance. We will encourage community contributions to improve the F# language and developer experience.
 ms.date: 02/06/2023
+ms.topic: article
 ---
 # Annotated F# strategy
 

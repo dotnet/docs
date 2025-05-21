@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Activity Authoring Using the Activity C
 title: "Workflow Activity Authoring Using the Activity Class"
 ms.date: "03/30/2017"
 ms.assetid: 7b7b1c66-f093-43c3-b4d1-7173b46516da
+ms.topic: article
 ---
 # Workflow Activity Authoring Using the Activity Class
 

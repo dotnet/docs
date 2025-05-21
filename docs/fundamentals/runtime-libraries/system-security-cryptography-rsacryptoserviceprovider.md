@@ -2,6 +2,7 @@
 title: System.Security.Cryptography.RSACryptoServiceProvider class
 description: Learn about the System.Security.Cryptography.RSACryptoServiceProvider class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Security.Cryptography.RSACryptoServiceProvider class
 

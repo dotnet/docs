@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "reflection, generic types"
   - "generics [.NET], reflection"
+ms.topic: how-to
 ---
 # How to: Examine and instantiate generic types with reflection
 

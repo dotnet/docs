@@ -2,6 +2,7 @@
 title: System.Runtime.Serialization.IExtensibleDataObject interface
 description: Learn about the System.Runtime.Serialization.IExtensibleDataObject interface.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Runtime.Serialization.IExtensibleDataObject interface
 

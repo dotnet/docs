@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "type information, viewing"
   - "types, generic"
   - "type parameters"
+ms.topic: article
 ---
 # Reflection and generic types
 

@@ -3,6 +3,7 @@ title: Configuration files for code analysis rules
 description: Learn about different configuration files, including editorconfig and global config files, to configure code analysis rules.
 ms.date: 07/07/2021
 no-loc: ["EditorConfig"]
+ms.topic: article
 ---
 # Configuration files for code analysis rules
 

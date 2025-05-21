@@ -2,6 +2,7 @@
 title: System.Reflection.Emit.MethodBuilder class
 description: Learn about the System.Reflection.Emit.MethodBuilder class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Reflection.Emit.MethodBuilder class
 

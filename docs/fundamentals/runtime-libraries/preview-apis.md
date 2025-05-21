@@ -2,6 +2,7 @@
 title: Preview APIs
 description: Learn how to mark .NET APIs as preview.
 ms.date: 01/27/2025
+ms.topic: article
 ---
 
 # Preview APIs

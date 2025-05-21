@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "dynamically loading and using types"
   - "implicit late binding"
   - "reflection, dynamically using types"
+ms.topic: article
 ---
 # Dynamically load and use types
 

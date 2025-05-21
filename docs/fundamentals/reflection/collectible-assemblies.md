@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "reflection, dynamic assembly"
   - "assemblies, collectible"
   - "collectible assemblies, retrieving"
+ms.topic: article
 ---
 # Collectible assemblies for dynamic type generation
 

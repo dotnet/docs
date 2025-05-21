@@ -4,6 +4,7 @@ description: Azure Queues provide reliable, asynchronous messaging between appli
 author: sylvanc
 ms.date: 09/17/2024
 ms.custom: "devx-track-fsharp"
+ms.topic: get-started
 ---
 # Get started with Azure Queue Storage using F\#
 

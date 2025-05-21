@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "custom attributes, accessibility"
   - "attributes [.NET], accessing"
   - "reflection, custom attributes"
+ms.topic: how-to
 ---
 # Access custom attributes
 

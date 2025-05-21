@@ -2,6 +2,7 @@
 title: System.DateTime.TryParse method
 description: Learn about the System.DateTime.TryParse method.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.DateTime.TryParse method
 

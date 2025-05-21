@@ -2,6 +2,7 @@
 title: System.Runtime.Serialization.DataContractSerializer class
 description: Learn about the System.Runtime.Serialization.DataContractSerializer class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Runtime.Serialization.DataContractSerializer class
 

@@ -2,6 +2,7 @@
 title: Get started with F#
 description: Find out how to get started with the F# programming language.
 ms.date: 10/29/2021
+ms.topic: get-started
 ---
 # Get Started with F\#
 

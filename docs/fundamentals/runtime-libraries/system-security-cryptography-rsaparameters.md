@@ -2,6 +2,7 @@
 title: System.Security.Cryptography.RSAParameters structure
 description: Learn about the System.Security.Cryptography.RSAParameters structure.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Security.Cryptography.RSAParameters structure
 

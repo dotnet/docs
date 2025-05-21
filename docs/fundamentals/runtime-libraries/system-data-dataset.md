@@ -2,6 +2,7 @@
 title: System.Data.DataSet class
 description: Learn about the System.Data.DataSet class through these additional API remarks.
 ms.date: 01/02/2024
+ms.topic: article
 ---
 # System.Data.DataSet class
 

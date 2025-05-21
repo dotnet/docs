@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "reflection emit, dynamic methods"
   - "dynamic methods"
+ms.topic: how-to
 ---
 # How to: Define and execute dynamic methods
 

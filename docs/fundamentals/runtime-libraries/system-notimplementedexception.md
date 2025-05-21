@@ -2,6 +2,7 @@
 title: System.NotImplementedException class
 description: Learn about the System.NotImplementedException class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.NotImplementedException class
 

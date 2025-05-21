@@ -2,6 +2,7 @@
 title: System.Environment.GetEnvironmentVariable methods
 description: Learn about the System.Environment.GetEnvironmentVariable methods.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Environment.GetEnvironmentVariable methods
 

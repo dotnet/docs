@@ -2,6 +2,7 @@
 title: F# Machine Learning Tools
 description: Learn about machine learning with F#.
 ms.date: 11/03/2021
+ms.topic: article
 ---
 # Machine Learning with F\#
 

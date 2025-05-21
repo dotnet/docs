@@ -6,6 +6,7 @@ dev_langs:
   - CSharp
   - FSharp
   - VB
+ms.topic: article
 ---
 # System.Decimal struct
 

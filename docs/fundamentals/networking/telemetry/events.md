@@ -4,6 +4,7 @@ description: Learn how to consume and correlate .NET networking telemetry events
 author: MihaZupan
 ms.author: mizupan
 ms.date: 10/18/2022
+ms.topic: how-to
 ---
 
 # Networking events in .NET

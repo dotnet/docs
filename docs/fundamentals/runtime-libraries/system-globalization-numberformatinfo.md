@@ -2,7 +2,7 @@
 title: System.Globalization.NumberFormatInfo class
 description: Learn more about the System.Globalization.NumberFormatInfo class.
 ms.date: 12/28/2023
-ms.topic: conceptual
+ms.topic: article
 ---
 # <xref:System.Globalization.NumberFormatInfo> class
 

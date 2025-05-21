@@ -6,6 +6,7 @@ dev_langs:
   - CSharp
   - VB
   - FSharp
+ms.topic: article
 ---
 # System.NotSupportedException class
 

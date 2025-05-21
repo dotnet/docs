@@ -3,6 +3,7 @@ title: .NET implementations
 description: Describes the various .NET implementations, including .NET 5+, .NET Framework, Mono, and UWP.
 ms.date: 11/22/2024
 ms.custom: updateeachrelease
+ms.topic: article
 ---
 # .NET implementations
 

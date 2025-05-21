@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "metadata, emit interfaces"
   - "reflection emit, overview"
   - "assemblies [.NET], emitting dynamic assemblies"
+ms.topic: concept-article
 ---
 # Emit dynamic methods and assemblies
 

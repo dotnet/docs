@@ -3,6 +3,7 @@ description: "Learn more about: Using Tracking to Troubleshoot Applications"
 title: "Using Tracking to Troubleshoot Applications"
 ms.date: "03/30/2017"
 ms.assetid: 8851adde-c3c2-4391-9523-d8eb831490af
+ms.topic: troubleshooting-general
 ---
 # Using Tracking to Troubleshoot Applications
 

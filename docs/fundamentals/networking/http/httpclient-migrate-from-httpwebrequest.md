@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "HttpClient class, about HttpClient class"
   - "data requests, HTTP"
   - "Internet, HTTP"
+ms.topic: upgrade-and-migration-article
 ---
 
 # HttpWebRequest to HttpClient migration guide

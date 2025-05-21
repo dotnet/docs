@@ -2,6 +2,7 @@
 title: System.Data.CommandBehavior enum
 description: Learn about the System.Data.CommandBehavior enum through these additional API remarks.
 ms.date: 01/02/2024
+ms.topic: article
 ---
 # System.Data.CommandBehavior enum
 

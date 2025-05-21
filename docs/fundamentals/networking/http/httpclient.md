@@ -4,6 +4,7 @@ description: Learn how to make HTTP requests and handle responses with the HttpC
 author: IEvangelist
 ms.author: dapine
 ms.date: 03/09/2025
+ms.topic: how-to
 ---
 
 # Make HTTP requests with the HttpClient class

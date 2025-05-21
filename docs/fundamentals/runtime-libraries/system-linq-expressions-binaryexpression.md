@@ -2,6 +2,7 @@
 title: System.Linq.Expressions.BinaryExpression class
 description: Learn about the System.Linq.Expressions.BinaryExpression class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Linq.Expressions.BinaryExpression class
 

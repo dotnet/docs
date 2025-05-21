@@ -3,6 +3,7 @@ description: "Learn more about: Workflow Hosting Options"
 title: "Workflow Hosting Options"
 ms.date: "03/30/2017"
 ms.assetid: 37bcd668-9c5c-4e7c-81da-a1f1b3a16514
+ms.topic: article
 ---
 # Workflow Hosting Options
 

@@ -2,6 +2,7 @@
 title: F# for Web Development
 description: Learn about web development options with F#.
 ms.date: 11/03/2021
+ms.topic: article
 ---
 # F# for Web Development
 

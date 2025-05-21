@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "programming [WF], tracking and tracing"
 ms.assetid: b965ded6-370a-483d-8790-f794f65b137e
+ms.topic: article
 ---
 # Workflow Tracking and Tracing
 

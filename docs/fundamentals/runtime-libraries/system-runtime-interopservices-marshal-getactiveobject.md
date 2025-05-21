@@ -2,6 +2,7 @@
 title: System.Runtime.InteropServices.Marshal.GetActiveObject method
 description: Learn about the System.Runtime.InteropServices.Marshal.GetActiveObject method.
 ms.date: 01/24/2024
+ms.topic: article
 ---
 # System.Runtime.InteropServices.Marshal.GetActiveObject method
 

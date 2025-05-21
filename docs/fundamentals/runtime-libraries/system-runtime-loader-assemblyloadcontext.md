@@ -2,6 +2,7 @@
 title: System.Runtime.Loader.AssemblyLoadContext class
 description: Learn about the System.Runtime.Loader.AssemblyLoadContext class.
 ms.date: 12/31/2023
+ms.topic: article
 ---
 # System.Runtime.Loader.AssemblyLoadContext class
 

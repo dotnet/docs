@@ -5,6 +5,7 @@ ms.date: 01/24/2024
 dev_langs:
   - CSharp
   - VB
+ms.topic: article
 ---
 # System.Globalization.CultureInfo.CurrentUICulture property
 

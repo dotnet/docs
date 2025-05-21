@@ -2,6 +2,7 @@
 title: Using functions in F#
 description: Learn about functions and how they are important for programming in F#.
 ms.date: 10/29/2021
+ms.topic: concept-article
 ---
 # Using functions in F\#
 

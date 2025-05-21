@@ -2,6 +2,7 @@
 title: What is F#
 description: Learn about what the F# programming language is and what F# programming is like. Learn about rich types, functions, and how they fit together.
 ms.date: 11/04/2021
+ms.topic: concept-article
 ---
 # What is F\#
 

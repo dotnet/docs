@@ -6,6 +6,7 @@ dev_langs:
   - CSharp
   - FSharp
   - VB
+ms.topic: article
 ---
 # System.Exception.Message property
 

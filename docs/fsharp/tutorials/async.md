@@ -2,6 +2,7 @@
 title: Async and Task Programming
 description: Learn how F# provides clean support for asynchrony based on a language-level programming model derived from core functional programming concepts.
 ms.date: 03/02/2022
+ms.topic: article
 ---
 # Async programming in F\#
 

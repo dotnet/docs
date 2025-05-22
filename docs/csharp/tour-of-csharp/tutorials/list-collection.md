@@ -83,14 +83,10 @@ With each iteration of the loop, you're taking the last two integers in the list
 </details>
 <!-- markdownlint-disable MD033 -->
 
-You completed the list interactive tutorial, the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+You completed the list interactive tutorial, the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials. Or, you can continue with the [Explore object oriented programming with classes and objects](../../fundamentals/tutorials/classes.md) tutorial.
 
 You can learn more about [.NET collections](../../../standard/collections/index.md) in the following articles:
 
 - [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
 - [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
 - [When to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)
-
-Congratulations, you completed the list tutorial. You can continue with [more](../../fundamentals/tutorials/classes.md) tutorials in your own development environment.
-
-You can learn more about working with the `List` type in the .NET fundamentals article on [collections](../../../standard/collections/index.md). You also learn about many other collection types.

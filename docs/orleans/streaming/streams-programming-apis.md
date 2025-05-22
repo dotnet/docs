@@ -11,7 +11,7 @@ Applications interact with streams via APIs that are very similar to the well-kn
 
 ### Async stream
 
-An application starts by using a *stream provider* to get a handle to a stream. You can read more about stream providers [here](stream-providers.md), but for now, you can think of it as a stream factory that allows implementers to customize streams behavior and semantics:
+An application starts by using a [*stream provider*](stream-providers.md) to get a handle to a stream. You can think of a stream provider as a stream factory that allows implementers to customize streams behavior and semantics:
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
@@ -224,7 +224,7 @@ public async override Task OnActivateAsync(CancellationToken cancellationToken)
     foreach (var handle in subscriptionHandles)
     {
        await handle.ResumeAsync(this);
-    } 
+    }
 }
 ```
 
@@ -318,7 +318,7 @@ That way Pub-Sub data will be durably stored in Azure Table. For initial develop
 
 ### Configuration
 
-To use streams you need to enable stream providers via the silo host or cluster client builders. You can read more about stream providers [here](stream-providers.md). Sample stream provider setup:
+To use streams, you need to enable [stream providers](stream-providers.md) via the silo host or cluster client builders. Sample stream provider setup:
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"

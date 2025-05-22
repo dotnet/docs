@@ -1,12 +1,12 @@
 ---
-title: Tutorial - Evaluate the content safety of a model's response
-description: Create an MSTest app that evaluates the content safety of a model's response using the evaluators in the Microsoft.Extensions.AI.Evaluation.Safety package.
+title: Tutorial - Evaluate response safety with caching and reporting
+description: Create an MSTest app that evaluates the content safety of a model's response using the evaluators in the Microsoft.Extensions.AI.Evaluation.Safety package and with caching and reporting.
 ms.date: 05/12/2025
 ms.topic: tutorial
 ms.custom: devx-track-dotnet-ai
 ---
 
-# Tutorial: Evaluate the content safety of a model's response
+# Tutorial: Evaluate response safety with caching and reporting
 
 In this tutorial, you create an MSTest app to evaluate the *content safety* of a response from an OpenAI model. Safety evaluators check for presence of harmful, inappropriate, or unsafe content in a response. The test app uses the safety evaluators from the [Microsoft.Extensions.AI.Evaluation.Safety](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Safety) package to perform the evaluations. These safety evaluators use the [Azure AI Foundry](/azure/ai-foundry/) Evaluation service to perform evaluations.
 

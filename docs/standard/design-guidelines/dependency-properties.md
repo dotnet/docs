@@ -10,7 +10,7 @@ ms.assetid: 212cfb1e-cec4-4047-94a6-47209b387f6f
 
 A dependency property (DP) is a regular property that stores its value in a property store instead of storing it in a type variable (field), for example.
 
- An attached dependency property is a kind of dependency property modeled as static Get and Set methods representing "properties" describing relationships between objects and their containers (e.g., the position of a `Button` object on a `Panel` container).
+ An attached dependency property is a kind of dependency property modeled as static Get and Set methods representing "properties" describing relationships between objects and their containers (for example, the position of a `Button` object on a `Panel` container).
 
  ✔️ DO provide the dependency properties, if you need the properties to support WPF features such as styling, triggers, data binding, animations, dynamic resources, and inheritance.
 

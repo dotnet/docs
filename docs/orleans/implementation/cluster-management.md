@@ -65,7 +65,7 @@ In addition to the <xref:Orleans.IMembershipTable> each silo participates in a f
     3. When silo S updates the status of silo P:
        - S first reads the latest table state
        - In a single atomic operation, it updates both P's row and increments the version number
-       - If the atomic update fails (e.g., due to concurrent modifications), the operation is retried with exponential backoff
+       - If the atomic update fails (for example, due to concurrent modifications), the operation is retried with exponential backoff
 
     **Scalability considerations**:
 

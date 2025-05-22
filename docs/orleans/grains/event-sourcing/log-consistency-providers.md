@@ -51,6 +51,6 @@ The consistency provider expects these to behave a certain way. Programmers shou
 
 * <xref:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface%602.ApplyUpdatesToStorage%2A> must return false if the expected version does not match the actual version (this is analogous to an e-tag check).
 
-* If `ApplyUpdatesToStorage` fails with an exception, the consistency provider retries. This means some events could be duplicated if such an exception is thrown, but the event was persisted. The developer is responsible to make sure this is safe: e.g. either avoid this case by not throwing an exception, or ensure duplicated events are harmless for the application logic, or add some extra mechanism to filter duplicates.
+* If `ApplyUpdatesToStorage` fails with an exception, the consistency provider retries. This means some events could be duplicated if such an exception is thrown, but the event was persisted. The developer is responsible to make sure this is safe: for example, either avoid this case by not throwing an exception, or ensure duplicated events are harmless for the application logic, or add some extra mechanism to filter duplicates.
 
 This provider does not support `RetrieveConfirmedEvents`. Of course, since the developer controls the storage interface anyway, they don't need to call this in the first place, but can implement their event retrieval.

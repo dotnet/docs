@@ -10,7 +10,7 @@ Relational storage backend code in Orleans is built on generic ADO.NET functiona
 
 To make Orleans code function with a given relational database backend, the following is required:
 
-1. The appropriate ADO.NET library must be loaded into the process. This should be defined as usual, e.g. via the [DbProviderFactories](../../../framework/data/adonet/obtaining-a-dbproviderfactory.md) element in the application configuration.
+1. The appropriate ADO.NET library must be loaded into the process. This should be defined as usual, for example, via the [DbProviderFactories](../../../framework/data/adonet/obtaining-a-dbproviderfactory.md) element in the application configuration.
 2. Configure the ADO.NET invariant via the `Invariant` property in the options.
 3. The database needs to exist and be compatible with the code. This is done by running a vendor-specific database creation script. For more information, see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md).
 
@@ -119,13 +119,13 @@ In practice, this means adhering to ADO.NET implementation goals, and some added
 
 In addition to the usual storage provider capabilities, the ADO.NET provider has built-in capability to:
 
-1. Change storage data from one format to another (e.g. from JSON to binary) when round-tripping state.
+1. Change storage data from one format to another (for example, from JSON to binary) when round-tripping state.
 2. Shape the type to be saved or read from the storage in arbitrary ways. This allows the version of the state to evolve.
 3. Stream data out of the database.
 
 Both `1.` and `2.` can be applied based on arbitrary decision parameters, such as *grain ID*, *grain type*, *payload data*.
 
-This is the case so that you can choose a serialization format, e.g. [Simple Binary Encoding (SBE)](https://github.com/real-logic/simple-binary-encoding) and implements <xref:Orleans.Storage.IStorageDeserializer> and <xref:Orleans.Storage.IStorageSerializer>. The built-in serializers have been built using this method:
+This is the case so that you can choose a serialization format, for example, [Simple Binary Encoding (SBE)](https://github.com/real-logic/simple-binary-encoding) and implements <xref:Orleans.Storage.IStorageDeserializer> and <xref:Orleans.Storage.IStorageSerializer>. The built-in serializers have been built using this method:
 
 - <xref:Orleans.Storage.OrleansStorageDefaultXmlSerializer>
 - <xref:Orleans.Storage.OrleansStorageDefaultXmlDeserializer>
@@ -155,7 +155,7 @@ Vendors have implemented different extensions and features within their products
 
 ### 4. Make it possible to optimize hardware resources
 
-When designing an application, it is often possible to anticipate which data needs to be inserted faster than other data, and which data could more likely be put into *cold storage*, which is cheaper (e.g. splitting data between SSD and HDD). Additional considerations include the physical location of the data (some data could be more expensive (e.g. SSD RAID viz HDD RAID), or more secured), or some other decision basis. Related to *point 3.*, some databases offer special partitioning schemes, such as SQL Server [Partitioned Tables and Indexes](/sql/relational-databases/partitions/partitioned-tables-and-indexes).
+When designing an application, it is often possible to anticipate which data needs to be inserted faster than other data, and which data could more likely be put into *cold storage*, which is cheaper (for example, splitting data between SSD and HDD). Additional considerations include the physical location of the data (some data could be more expensive (for example, SSD RAID viz HDD RAID), or more secured), or some other decision basis. Related to *point 3.*, some databases offer special partitioning schemes, such as SQL Server [Partitioned Tables and Indexes](/sql/relational-databases/partitions/partitioned-tables-and-indexes).
 
 These principles apply throughout the application life-cycle. Considering that one of the principles of Orleans itself is high availability, it should be possible to adjust the storage system without interruption to the Orleans deployment, or it should be possible to adjust the queries according to data and other application parameters. An example of dynamic changes may be seen in Brian Harry's [blog post](https://devblogs.microsoft.com/bharry/a-bit-more-on-the-feb-3-and-4-incidents/):
 
@@ -171,7 +171,7 @@ This is both fast and has less surface exposed to the ADO.NET library implementa
 
 ### 7. Make the design shardable
 
-When it makes sense, for instance in a relational storage provider, make the design readily shardable. For instance, this means using no database-dependent data (e.g. `IDENTITY`). Information that distinguishes row data should build on only data from the actual parameters.
+When it makes sense, for instance in a relational storage provider, make the design readily shardable. For instance, this means using no database-dependent data (for example, `IDENTITY`). Information that distinguishes row data should build on only data from the actual parameters.
 
 ### 8. Make the design easy to test
 
@@ -227,5 +227,5 @@ The altered scripts can be tested by running the Orleans test suite, or straight
 ## Guidelines for adding new ADO.NET providers
 
 1. Add a new database setup script according to the [Realization of the goals](#realization-of-the-goals) section above.
-2. Add the vendor ADO invariant name to <xref:Orleans.SqlUtils.AdoNetInvariants> and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are (potentially) used in some query operations. e.g. to select the correct statistics insert mode (i.e. the `UNION ALL` with or without `FROM DUAL`).
+2. Add the vendor ADO invariant name to <xref:Orleans.SqlUtils.AdoNetInvariants> and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are (potentially) used in some query operations. for example, to select the correct statistics insert mode (i.e. the `UNION ALL` with or without `FROM DUAL`).
 3. Orleans has comprehensive tests for all system stores: membership, reminders and statistics. Adding tests for the new database script is done by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/RelationalUtilities/RelationalStorageForTesting.cs) in order to define test functionality for the ADO invariant.

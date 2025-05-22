@@ -37,7 +37,7 @@ myapp sub1 sub1a
 
 ## Define options
 
-A command handler method typically has parameters, and the values can come from command-line [options](syntax.md#options). The following example creates two options and adds them to the root command. The option names include double-hyphen prefixes, which is [typical for POSIX CLIs](syntax.md#options). The command handler code displays the values of those options:
+A command action typically has parameters, and the values can come from command-line [options](syntax.md#options). The following example creates two options and adds them to the root command. The option names include double-hyphen prefixes, which is [typical for POSIX CLIs](syntax.md#options). The command action code displays the values of those options:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="defineoptions" :::
 
@@ -52,17 +52,17 @@ myapp --delay 21 --message "Hello world!"
 --message = Hello world!
 ```
 
-### Global options
+### Recursive options
 
-To add an option to one command at a time, use the `Add` or `AddOption` method as shown in the preceding example. To add an option to a command and recursively to all of its subcommands, use the `AddGlobalOption` method, as shown in the following example:
+To add an option to a command and recursively to all of its subcommands, use the <xref:System.CommandLine.Symbol.Recursive> property, as shown in the following example:
 
-:::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="defineglobal" highlight="7" :::
+:::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="definerecursive" highlight="4" :::
 
-The preceding code adds `--delay` as a global option to the root command, and it's available in the handler for `subCommand1a`.
+The preceding code adds `--delay` as a recursive option to the root command, and it's available in the action for all subcommands. A great example of a recursive option is `--help`, which is available for all commands and subcommands of the root command.
 
 ## Define arguments
 
-[Arguments](syntax.md#arguments) are defined and added to commands like options. The following example is like the options example, but it defines arguments instead of options:
+[Arguments](syntax.md#arguments) are defined and added to commands via `Add` or `Arguments.Add`. The following example is using collection initializer syntax, and it defines arguments instead of options:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="definearguments" :::
 
@@ -77,15 +77,21 @@ myapp 42 "Hello world!"
 <message> argument = Hello world!
 ```
 
-An argument that is defined without a default value, such as `messageArgument` in the preceding example, is treated as a required argument.  An error message is displayed, and the command handler isn't called, if a required argument isn't provided.
+An argument that is defined without a default value, such as `messageArgument` in the preceding example, is treated as a required argument. An error message is displayed, and the command action isn't called, if a required argument isn't provided.
 
 ## Define aliases
 
-Both commands and options support [aliases](syntax.md#aliases). You can add an alias to an option by calling `AddAlias`:
+Both commands and options support [aliases](syntax.md#aliases). You can modify the aliases by using the <xref:System.CommandLine.Symbol.Aliases> property that exposes a collection of aliases:
 
 ```csharp
-var option = new Option("--framework");
-option.AddAlias("-f");
+Command command = new("serialize");
+option.Aliases.Add("serialise");
+```
+
+In case of options, you can also use a dedicated constructor (the name is followed by aliases):
+
+```csharp
+Option<string> option = new("--framework", "-f");
 ```
 
 Given this alias, the following command lines are equivalent:
@@ -95,25 +101,11 @@ myapp -f net6.0
 myapp --framework net6.0
 ```
 
-Command aliases work the same way.
-
-```csharp
-var command = new Command("serialize");
-command.AddAlias("serialise");
-```
-
-This code makes the following command lines equivalent:
-
-```console
-myapp serialize
-myapp serialise
-```
-
 We recommend that you minimize the number of option aliases that you define, and avoid defining certain aliases in particular. For more information, see [Short-form aliases](syntax.md#short-form-aliases).
 
 ## Required options
 
-To make an option required, set its `IsRequired` property to `true`, as shown in the following example:
+To make an option required, set its <xref:System.CommandLine.Symbol.Required> property to `true`, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="requiredoption" :::
 
@@ -126,7 +118,7 @@ Options:
   -?, -h, --help          Show help and usage information
 ```
 
-If the command line for this example app doesn't include `--endpoint`, an error message is displayed and the command handler isn't called:
+If the command line for this example app doesn't include `--endpoint`, an error message is displayed and the command action isn't called:
 
 ```output
 Option '--endpoint' is required.
@@ -136,7 +128,7 @@ If a required option has a default value, the option doesn't have to be specifie
 
 ## Hidden commands, options, and arguments
 
-You might want to support a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the <xref:System.CommandLine.Symbol.IsHidden> property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
+You might want to support a command, option, or argument, but avoid making it easy to discover. For example, it might be a deprecated or administrative or preview feature. Use the <xref:System.CommandLine.Symbol.Hidden> property to prevent users from discovering such features by using tab completion or help, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="hiddenoption" :::
 
@@ -180,7 +172,7 @@ myapp --item one --item two --item three
 
 ## List valid argument values
 
-To specify a list of valid values for an option or argument, specify an enum as the option type or use <xref:System.CommandLine.OptionExtensions.FromAmong%2A>, as shown in the following example:
+To specify a list of valid values for an option or argument, specify an enum as the option type or use <xref:System.CommandLine.Option{T}.AcceptOnlyFromAmong%2A>, as shown in the following example:
 
 :::code language="csharp" source="snippets/define-commands/csharp/Program2.cs" id="staticlist" :::
 
@@ -192,18 +184,16 @@ myapp --language not-a-language
 
 ```output
 Argument 'not-a-language' not recognized. Must be one of:
-        'csharp'
-        'fsharp'
-        'vb'
-        'pwsh'
-        'sql'
+    'csharp'
+    'fsharp'
+    'vb'
 ```
 
 The options section of command help shows the valid values:
 
 ```output
 Options:
-  --language <csharp|fsharp|vb|pwsh|sql>  An option that must be one of the values of a static list.
+  --language <csharp|fsharp|vb>  An option that must be one of the values of a static list.
   --version                               Show version information
   -?, -h, --help                          Show help and usage information
 ```

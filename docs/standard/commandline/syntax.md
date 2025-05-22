@@ -106,7 +106,7 @@ dotnet tool update dotnet-suggest --global true
 
 Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails.
 
-Arguments can have expected types, and `System.CommandLine` displays an error message if an argument can't be parsed into the expected type. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
+Arguments have expected types, and `System.CommandLine` displays an error message if an argument can't be parsed into the expected type. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
 
 ```dotnetcli
 dotnet build --verbosity silent
@@ -401,10 +401,10 @@ Here are syntax rules that determine how the text in a response file is interpre
 
 ## Directives
 
-`System.CommandLine` introduces a syntactic element called a *directive*. The `[parse]` directive is an example. When you include `[parse]` after the app's name, `System.CommandLine` displays a diagram of the parse result instead of invoking the command-line app:
+`System.CommandLine` introduces a syntactic element called a *directive*. The `[diagram]` directive is an example. When you include `[diagram]` after the app's name, `System.CommandLine` displays a diagram of the parse result instead of invoking the command-line app:
 
 ```dotnetcli
-dotnet [parse] build --no-restore --output ./build-output/
+dotnet [diagram] build --no-restore --output ./build-output/
        ^-----^
 ```
 
@@ -426,15 +426,15 @@ A directive can include an argument, separated from the directive name by a colo
 
  The following directives are built in:
 
-* [`[parse]`](#the-parse-directive)
+* [`[diagram]`](#the-diagram-directive)
 * [`[suggest]`](#the-suggest-directive)
 
-### The `[parse]` directive
+### The `[diagram]` directive
 
-Both users and developers may find it useful to see how an app will interpret a given input. One of the default features of a `System.CommandLine` app is the `[parse]` directive, which lets you preview the result of parsing command input. For example:
+Both users and developers may find it useful to see how an app will interpret a given input. One of the default features of a `System.CommandLine` app is the `[diagram]` directive, which lets you preview the result of parsing command input. For example:
 
 ```console
-myapp [parse] --delay not-an-int --interactive --file filename.txt extra
+myapp [diagram] --delay not-an-int --interactive --file filename.txt extra
 ```
 
 ```output
@@ -514,7 +514,7 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 * `-r` for `--runtime`
 
-  If your application can run on different runtimes, or has runtime-specific logic, consider supporting this option as a way of specifying a [Runtime Identifier](../../core/rid-catalog.md). If your app supports --runtime, consider supporting `--os` and `--arch` also. These options let you specify just the OS or the architecture parts of the RID, leaving the part not specified to be determined from the current platform. For more information, see [dotnet publish](../../core/tools/dotnet-publish.md).
+  If your application can run on different runtimes, or has runtime-specific logic, consider supporting this option as a way of specifying a [Runtime Identifier](../../core/rid-catalog.md). If your app supports `--runtime`, consider supporting `--os` and `--arch` also. These options let you specify just the OS or the architecture parts of the RID, leaving the part not specified to be determined from the current platform. For more information, see [dotnet publish](../../core/tools/dotnet-publish.md).
 
 ### Short names
 
@@ -604,7 +604,7 @@ The .NET CLI doesn't accept multiple arguments for one option without repeating 
 
 ### Boolean options
 
-In the .NET CLI, some Boolean options result in the same behavior when you pass `false` as when you pass `true`. This behavior results when .NET CLI code that implements the option only checks for the presence or absence of the option, ignoring the value. An example is `--no-restore` for the `dotnet build` command. Pass `no-restore false` and the restore operation will be skipped the same as when you specify `no-restore true` or `no-restore`.
+In the .NET CLI, some Boolean options result in the same behavior when you pass `false` as when you pass `true`. This behavior results when .NET CLI code that implements the option only checks for the presence or absence of the option, ignoring the value. An example is `--no-restore` for the `dotnet build` command. Pass `--no-restore false` and the restore operation will be skipped the same as when you specify `--no-restore true` or `--no-restore`.
 
 ### Kebab case
 

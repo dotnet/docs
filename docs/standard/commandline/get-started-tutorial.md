@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 > * Work with multiple levels of nested subcommands.
 > * Create aliases for commands and options.
 > * Work with `string`, `string[]`, `int`, `bool`, `FileInfo` and enum option types.
-> * Bind option values to command handler code.
+> * Read option values in command action code.
 > * Use custom code for parsing and validating options.
 
 ## Prerequisites
@@ -39,14 +39,14 @@ Or
 
 ## Create the app
 
-Create a .NET 6 console app project named "scl".
+Create a .NET 9 console app project named "scl".
 
 1. Create a folder named *scl* for the project, and then open a command prompt in the new folder.
 
 1. Run the following command:
 
    ```dotnetcli
-   dotnet new console --framework net6.0
+   dotnet new console --framework net9.0
    ```
 
 ## Install the System.CommandLine package
@@ -77,28 +77,28 @@ The preceding code:
 
 * Specifies that `ReadFile` is the method that will be called when the root command is invoked:
 
-  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="sethandler" :::
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="setaction" :::
 
 * Displays the contents of the specified file when the root command is invoked:
 
-  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="handler" :::
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="action" :::
 
 ## Test the app
 
 You can use any of the following ways to test while developing a command-line app:
 
-* Run the `dotnet build` command, and then open a command prompt in the *scl/bin/Debug/net6.0* folder to run the executable:
+* Run the `dotnet build` command, and then open a command prompt in the *scl/bin/Debug/net9.0* folder to run the executable:
 
   ```console
   dotnet build
-  cd bin/Debug/net6.0
+  cd bin/Debug/net9.0
   scl --file scl.runtimeconfig.json
   ```
 
 * Use `dotnet run` and pass option values to the app instead of to the `run` command by including them after `--`, as in the following example:
 
   ```dotnetcli
-  dotnet run -- --file bin/Debug/net6.0/scl.runtimeconfig.json
+  dotnet run -- --file bin/Debug/net9.0/scl.runtimeconfig.json
   ```
 
 The working directory is the project folder (the folder that has the .csproj  file), so the relative path to `scl.runtimeconfig.json` is from the project folder.
@@ -126,10 +126,10 @@ When you run the app, it displays the contents of the file specified by the `--f
 ```output
 {
   "runtimeOptions": {
-    "tfm": "net6.0",
+    "tfm": "net9.0",
     "framework": {
       "name": "Microsoft.NETCore.App",
-      "version": "6.0.0"
+      "version": "9.0.0"
     }
   }
 }
@@ -190,13 +190,13 @@ The new options will let you configure the foreground and background text colors
    </ItemGroup>
    ```
 
-   Adding this markup causes the text file to be copied to the *bin/debug/net6.0* folder when you build the app. So when you run the executable in that folder, you can access the file by name without specifying a folder path.
+   Adding this markup causes the text file to be copied to the *bin/debug/net9.0* folder when you build the app. So when you run the executable in that folder, you can access the file by name without specifying a folder path.
 
 1. In *Program.cs*, after the code that creates the `--file` option, create options to control the readout speed and text colors:
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="options" :::
 
-1. After the line that creates the root command, delete the line that adds the `--file` option to it. You're removing it here because you'll add it to a new subcommand.
+1. After the line that creates the root command, delete the code that adds the `--file` option to it. You're removing it here because you'll add it to a new subcommand.
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="rootcommand" :::
 
@@ -204,15 +204,15 @@ The new options will let you configure the foreground and background text colors
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="subcommand" :::
 
-1. Replace the `SetHandler` code with the following `SetHandler` code for the new subcommand:
+1. Replace the `SetAction` code with the following `SetAction` code for the new subcommand:
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="sethandler" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="setaction" :::
 
-   You're no longer calling `SetHandler` on the root command because the root command no longer needs a handler. When a command has subcommands, you typically have to specify one of the subcommands when invoking a command-line app.
+   You're no longer calling `SetAction` on the root command because the root command no longer needs an action. When a command has subcommands, you typically have to specify one of the subcommands when invoking a command-line app.
 
 1. Replace the `ReadFile` handler method with the following code:
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="handler" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="action" :::
 
 The app now looks like this:
 
@@ -309,20 +309,20 @@ scl read --file nofile
 
 ```output
 Unhandled exception: System.IO.FileNotFoundException:
-Could not find file 'C:\bin\Debug\net6.0\nofile'.
+Could not find file 'C:\bin\Debug\net9.0\nofile'.
 ```
 
 ## Add subcommands and custom validation
 
 This section creates the final version of the app. When finished, the app will have the following commands and options:
 
-* root command with a global\* option named `--file`
+* root command with a recursive\* option named `--file`
   * `quotes` command
     * `read` command with options named `--delay`, `--fgcolor`, and `--light-mode`
     * `add` command with arguments named `quote` and `byline`
     * `delete` command with option named `--search-terms`
 
-\* A global option is available to the command it's assigned to and recursively to all its subcommands.
+\* A recursive option is available to the command it's assigned to and recursively to all its subcommands.
 
 Here's sample command line input that invokes each of the available commands with its options and arguments:
 
@@ -336,11 +336,11 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="fileoption" :::
 
-   This code uses <xref:System.CommandLine.Parsing.ParseArgument%601> to provide custom parsing, validation, and error handling.
+   This code uses <xref:System.CommandLine.Parsing.ArgumentResult%601> to provide custom parsing, validation, and error handling.
 
    Without this code, missing files are reported with an exception and stack trace. With this code just the specified error message is displayed.
 
-   This code also specifies a default value, which is why it sets `isDefault` to `true`. If you don't set `isDefault` to `true`, the `parseArgument` delegate doesn't get called when no input is provided for `--file`.
+   This code also specifies a default value, which is why it sets `DefaultValueFactory` to custom parsing method.
 
 1. After the code that creates `lightModeOption`, add options and arguments for the `add` and `delete` commands:
 
@@ -360,7 +360,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
    This code makes the following changes:
 
    * Removes the `--file` option from the `read` command.
-   * Adds the `--file` option as a global option to the root command.
+   * Adds the `--file` option as a recursive option to the root command.
 
    * Creates a `quotes` command and adds it to the root command.
    * Adds the `read` command to the `quotes` command instead of to the root command.
@@ -376,17 +376,17 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    The app now implements the recommended pattern where the parent command (`quotes`) specifies an area or group, and its children commands (`read`, `add`, `delete`) are actions.
 
-   Global options are applied to the command and recursively to subcommands. Since `--file` is on the root command, it will be available automatically in all subcommands of the app.
+   Recursive options are applied to the command and recursively to subcommands. Since `--file` is on the root command, it will be available automatically in all subcommands of the app.
 
-1. After the `SetHandler` code, add new `SetHandler` code for the new subcommands:
+1. After the `SetAction` code, add new `SetAction` code for the new subcommands:
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="sethandlers" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="setactions" :::
 
-   Subcommand `quotes` doesn't have a handler because it isn't a leaf command. Subcommands `read`, `add`, and `delete` are leaf commands under `quotes`, and `SetHandler` is called for each of them.
+   Subcommand `quotes` doesn't have an action because it isn't a leaf command. Subcommands `read`, `add`, and `delete` are leaf commands under `quotes`, and `SetAction` is called for each of them.
 
-1. Add the handlers for `add` and `delete`.
+1. Add the actions for `add` and `delete`.
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="handlers" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="actions" :::
 
 The finished app looks like this:
 
@@ -442,7 +442,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 ```
 
 > [!NOTE]
-> If you're running in the *bin/debug/net6.0* folder, that folder is where you'll find the file with changes from the `add` and `delete` commands. The copy of the file in the project folder remains unchanged.
+> If you're running in the *bin/debug/net9.0* folder, that folder is where you'll find the file with changes from the `add` and `delete` commands. The copy of the file in the project folder remains unchanged.
 
 ## Next steps
 

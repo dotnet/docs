@@ -1,38 +1,39 @@
 ﻿// <all>
 using System.CommandLine;
+using System.IO;
 
 namespace scl;
 
 class Program
 {
-    static async Task<int> Main(string[] args)
+    static int Main(string[] args)
     {
         // <option>
-        var fileOption = new Option<FileInfo?>(
-            name: "--file",
-            description: "The file to read and display on the console.");
-
-        var rootCommand = new RootCommand("Sample app for System.CommandLine");
-        rootCommand.AddOption(fileOption);
+        Option<FileInfo> fileOption = new("--file")
+        {
+            Description = "The file to read and display on the console."
+        };
+        RootCommand rootCommand = new("Sample app for System.CommandLine")
+        {
+            fileOption
+        };
         // </option>
 
-        // <sethandler>
-        rootCommand.SetHandler((file) => 
-            { 
-                ReadFile(file!); 
-            },
-            fileOption);
-        // </sethandler>
+        // <setaction>
+        rootCommand.SetAction(parseResult => ReadFile(parseResult.GetValue(fileOption)));
+        // </setaction>
 
-        return await rootCommand.InvokeAsync(args);
+        return rootCommand.Parse(args).Invoke();
     }
 
-    // <handler>
+    // <action>
     static void ReadFile(FileInfo file)
     {
-        File.ReadLines(file.FullName).ToList()
-            .ForEach(line => Console.WriteLine(line));
+        foreach (string line in File.ReadLines(file.FullName))
+        {
+            Console.WriteLine(line);
+        }
     }
-    // </handler>
+    // </action>
 }
 // </all>

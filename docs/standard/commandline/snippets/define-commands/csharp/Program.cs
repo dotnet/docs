@@ -5,14 +5,14 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        var rootCommand = new RootCommand("Sample command-line app");
+        RootCommand rootCommand = new("Sample command-line app");
 
-        rootCommand.SetHandler(() =>
+        rootCommand.SetAction(parseResult =>
         {
             Console.WriteLine("Hello world!");
         });
 
-        await rootCommand.InvokeAsync(args);
+        await rootCommand.Parse(args).InvokeAsync();
     }
 }
 // </all>

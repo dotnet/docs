@@ -6,7 +6,7 @@ class Program2
     {
         await DefineCommands(args);
         await DefineOptions(args);
-        await GlobalOption(args);
+        await RecursiveOption(args);
         await RequiredOption(args);
         await HiddenOption(args);
         await FromAmong(args);
@@ -16,177 +16,185 @@ class Program2
     static async Task DefineArguments(string[] args)
     {
         // <definearguments>
-        var delayArgument = new Argument<int>
-            (name: "delay",
-            description: "An argument that is parsed as an int.",
-            getDefaultValue: () => 42);
-        var messageArgument = new Argument<string>
-            ("message", "An argument that is parsed as a string.");
+        Argument<int> delayArgument = new(name: "delay")
+        {
+            Description = "An argument that is parsed as an int.",
+            DefaultValueFactory = parseResult => 42
+        };
+        Argument<string> messageArgument = new("message")
+        {
+            Description = "An argument that is parsed as a string."
+        };
 
-        var rootCommand = new RootCommand();
-        rootCommand.Add(delayArgument);
-        rootCommand.Add(messageArgument);
+        RootCommand rootCommand = new()
+        {
+            delayArgument,
+            messageArgument
+        };
 
-        rootCommand.SetHandler((delayArgumentValue, messageArgumentValue) =>
-            {
-                Console.WriteLine($"<delay> argument = {delayArgumentValue}");
-                Console.WriteLine($"<message> argument = {messageArgumentValue}");
-            },
-            delayArgument, messageArgument);
+        rootCommand.SetAction(parseResult =>
+        {
+            Console.WriteLine($"<delay> argument = {parseResult.GetValue(delayArgument)}");
+            Console.WriteLine($"<message> argument = {parseResult.GetValue(messageArgument)}");
+        });
 
-        await rootCommand.InvokeAsync(args);
+        await rootCommand.Parse(args).InvokeAsync();
         // </definearguments>
         Console.WriteLine("Sample command line.");
-        await rootCommand.InvokeAsync("21 \"Hello world!\"");
+        await rootCommand.Parse("21 \"Hello world!\"").InvokeAsync();
     }
 
-    static async Task DefineCommands(string[] args)
+    static Task DefineCommands(string[] args)
     {
         // <definecommands>
-        var rootCommand = new RootCommand();
-        var sub1Command = new Command("sub1", "First-level subcommand");
+        RootCommand rootCommand = new();
+        Command sub1Command = new("sub1", "First-level subcommand");
         rootCommand.Add(sub1Command);
-        var sub1aCommand = new Command("sub1a", "Second level subcommand");
+        Command sub1aCommand = new("sub1a", "Second level subcommand");
         sub1Command.Add(sub1aCommand);
         // </definecommands>
 
-        sub1aCommand.SetHandler(() =>
-            {
-                Console.WriteLine(sub1aCommand.Description);
-            });
+        sub1aCommand.SetAction(parseResult =>
+        {
+            Console.WriteLine(sub1aCommand.Description);
+        });
 
-        await rootCommand.InvokeAsync(args);
+        return rootCommand.Parse(args).InvokeAsync();
     }
 
     static async Task DefineOptions(string[] args)
     {
         // <defineoptions>
-        var delayOption = new Option<int>
-            (name: "--delay",
-            description: "An option whose argument is parsed as an int.",
-            getDefaultValue: () => 42);
-        var messageOption = new Option<string>
-            ("--message", "An option whose argument is parsed as a string.");
+        Option<int> delayOption = new("--delay")
+        {
+            Description = "An option whose argument is parsed as an int.",
+            DefaultValueFactory = parseResult => 42
+        };
+        Option<string> messageOption = new("--message")
+        {
+            Description = "An option whose argument is parsed as a string."
+        };
 
-        var rootCommand = new RootCommand();
+        RootCommand rootCommand = new();
         rootCommand.Add(delayOption);
         rootCommand.Add(messageOption);
 
-        rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
-            {
-                Console.WriteLine($"--delay = {delayOptionValue}");
-                Console.WriteLine($"--message = {messageOptionValue}");
-            },
-            delayOption, messageOption);
+        rootCommand.SetAction(parseResult =>
+        {
+            Console.WriteLine($"--delay = {parseResult.GetValue(delayOption)}");
+            Console.WriteLine($"--message = {parseResult.GetValue(messageOption)}");
+        });
         // </defineoptions>
 
-        await rootCommand.InvokeAsync(args);
+        await rootCommand.Parse(args).InvokeAsync();
         Console.WriteLine("Sample command line.");
-        await rootCommand.InvokeAsync("--delay 21 --message \"Hello world!\"");
+        await rootCommand.Parse("--delay 21 --message \"Hello world!\"").InvokeAsync();
     }
 
-    static async Task GlobalOption(string[] args)
+    static async Task RecursiveOption(string[] args)
     {
-        // <defineglobal>
-        var delayOption = new Option<int>
-            ("--delay", "An option whose argument is parsed as an int.");
-        var messageOption = new Option<string>
-            ("--message", "An option whose argument is parsed as a string.");
+        // <definerecursive>
+        Option<int> delayOption = new("--delay")
+        {
+            Description = "An option whose argument is parsed as an int.",
+            Recursive = true
+        };
+        Option<string> messageOption = new("--message")
+        {
+            Description = "An option whose argument is parsed as a string."
+        };
 
-        var rootCommand = new RootCommand();
-        rootCommand.AddGlobalOption(delayOption);
-        rootCommand.Add(messageOption);
+        RootCommand rootCommand = new();
+        rootCommand.Options.Add(delayOption);
+        rootCommand.Options.Add(messageOption);
 
-        var subCommand1 = new Command("sub1", "First level subcommand");
+        Command subCommand1 = new("sub1", "First level subcommand");
         rootCommand.Add(subCommand1);
 
-        var subCommand1a = new Command("sub1a", "Second level subcommand");
+        Command subCommand1a = new("sub1a", "Second level subcommand");
         subCommand1.Add(subCommand1a);
 
-        subCommand1a.SetHandler((delayOptionValue) =>
-            {
-                Console.WriteLine($"--delay = {delayOptionValue}");
-            },
-            delayOption);
+        subCommand1a.SetAction(parseResult =>
+        {
+            Console.WriteLine($"--delay = {parseResult.GetValue(delayOption)}");
+        });
 
-        await rootCommand.InvokeAsync(args);
-        // </defineglobal>
+        await rootCommand.Parse(args).InvokeAsync();
+        // </definerecursive>
 
         Console.WriteLine("Request help for second level subcommand.");
-        await rootCommand.InvokeAsync("sub1 sub1a -h");
+        await rootCommand.Parse("sub1 sub1a -h").InvokeAsync();
         Console.WriteLine("Global option in second level subcommand.");
-        await rootCommand.InvokeAsync("sub1 sub1a --delay 42");
+        await rootCommand.Parse("sub1 sub1a --delay 42").InvokeAsync();
     }
 
     static async Task RequiredOption(string[] args)
     {
         // <requiredoption>
-        var endpointOption = new Option<Uri>("--endpoint") { IsRequired = true };
-        var command = new RootCommand();
-        command.Add(endpointOption);
+        Option<Uri> endpointOption = new("--endpoint")
+        {
+            Required = true
+        };
+        RootCommand command = new() { endpointOption };
+        command.SetAction(parseResult =>
+        {
+            Uri uri = parseResult.GetValue(endpointOption)!;
 
-        command.SetHandler((uri) =>
-            {
-                Console.WriteLine(uri?.GetType());
-                Console.WriteLine(uri?.ToString());
-            },
-            endpointOption);
+            Console.WriteLine(uri.GetType());
+            Console.WriteLine(uri.ToString());
+        });
 
-        await command.InvokeAsync(args);
+        await command.Parse(args).InvokeAsync();
         // </requiredoption>
         Console.WriteLine("Provide required option");
-        await command.InvokeAsync("--endpoint https://contoso.com");
+        await command.Parse("--endpoint https://contoso.com").InvokeAsync();
     }
 
     static async Task HiddenOption(string[] args)
     {
         // <hiddenoption>
-        var endpointOption = new Option<Uri>("--endpoint") { IsHidden = true };
-        var command = new RootCommand();
-        command.Add(endpointOption);
+        Option<Uri> endpointOption = new("--endpoint")
+        {
+            Hidden = true
+        };
+        RootCommand command = new() { endpointOption };
 
-        command.SetHandler((uri) =>
-            {
-                Console.WriteLine(uri?.GetType());
-                Console.WriteLine(uri?.ToString());
-            },
-            endpointOption);
+        command.SetAction(parseResult =>
+        {
+            Uri? uri = parseResult.GetValue(endpointOption);
 
-        await command.InvokeAsync(args);
+            Console.WriteLine(uri?.GetType());
+            Console.WriteLine(uri?.ToString());
+        });
+
+        await command.Parse(args).InvokeAsync();
         // </hiddenoption>
         Console.WriteLine("Request help for hidden option.");
-        await command.InvokeAsync("-h");
+        await command.Parse("-h").InvokeAsync();
         Console.WriteLine("Provide hidden option.");
-        await command.InvokeAsync("--endpoint https://contoso.com");
+        await command.Parse("--endpoint https://contoso.com").InvokeAsync();
     }
 
     static async Task FromAmong(string[] args)
     {
         // <staticlist>
-        var languageOption = new Option<string>(
-            "--language",
-            "An option that that must be one of the values of a static list.")
-                .FromAmong(
-                    "csharp",
-                    "fsharp",
-                    "vb",
-                    "pwsh",
-                    "sql");
+        Option<string> languageOption = new("--language")
+        {
+            Description = "An option that that must be one of the values of a static list."
+        };
+        languageOption.AcceptOnlyFromAmong("csharp", "fsharp", "vb");
         // </staticlist>
 
-        var rootCommand = new RootCommand("Static list example");
-        rootCommand.Add(languageOption);
+        RootCommand rootCommand = new("Static list example") { languageOption };
+        rootCommand.SetAction(parseResult =>
+        {
+            Console.WriteLine($"--language = {parseResult.GetValue(languageOption)}");
+        });
 
-        rootCommand.SetHandler((languageOptionValue) =>
-            {
-                Console.WriteLine($"--language = {languageOptionValue}");
-            },
-            languageOption);
-
-        await rootCommand.InvokeAsync(args);
+        await rootCommand.Parse(args).InvokeAsync();
         Console.WriteLine("Request help, provide a valid language, provide an invalid language.");
-        await rootCommand.InvokeAsync("-h");
-        await rootCommand.InvokeAsync("--language csharp");
-        await rootCommand.InvokeAsync("--language not-a-language");
+        await rootCommand.Parse("-h").InvokeAsync();
+        await rootCommand.Parse("--language csharp").InvokeAsync();
+        await rootCommand.Parse("--language not-a-language").InvokeAsync();
     }
 }

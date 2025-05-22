@@ -464,7 +464,7 @@ namespace Microsoft.Examples.Cryptography
                 byte[] generatedTag = tagGenerator.GetHashAndReset();
 
                 // The time it took to get to this point has so far been a function only
-                // of the length of the data, or of non-encrypted values (e.g. it could
+                // of the length of the data, or of non-encrypted values (for example, it could
                 // take longer to prepare the *key* for the HMACSHA384 MAC than the
                 // HMACSHA256 MAC, but the algorithm choice wasn't a secret).
                 //

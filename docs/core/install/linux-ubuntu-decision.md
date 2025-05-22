@@ -93,7 +93,7 @@ If you want to source the .NET packages from an Ubuntu feed, you need to deprior
 
 ### I want to create a .NET app
 
-Use the same package sources for the SDK as you use for the runtime. It is recommended that you install .NET through an Ubuntu feed. If, however you want to install .NET from another source (e.g. the [Microsoft package repository](#register-the-microsoft-package-repository) to access higher SDK feature bands), you should uninstall .NET, configure your package manager to ignore .NET packages from the Ubuntu feed and reinstall it from the other source.
+Use the same package sources for the SDK as you use for the runtime. It is recommended that you install .NET through an Ubuntu feed. If, however you want to install .NET from another source (for example, the [Microsoft package repository](#register-the-microsoft-package-repository) to access higher SDK feature bands), you should uninstall .NET, configure your package manager to ignore .NET packages from the Ubuntu feed and reinstall it from the other source.
 
 Review the other suggestions in the [Decide how to install .NET](#decide-how-to-install-net) section.
 
@@ -228,7 +228,7 @@ sudo apt update
 ```
 
 > [!TIP]
-> The previous script was written for Ubuntu and might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$ID` and `$VERSION_ID` variables won't be assigned the correct values, making the URI for the `wget` command invalid. The `$ID` corresponds to the distribution (e.g., `ubuntu`), while `$VERSION_ID` maps to the specific version of Ubuntu you want to get packages for, such as 22.04 or 23.10.
+> The previous script was written for Ubuntu and might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$ID` and `$VERSION_ID` variables won't be assigned the correct values, making the URI for the `wget` command invalid. The `$ID` corresponds to the distribution (for example, `ubuntu`), while `$VERSION_ID` maps to the specific version of Ubuntu you want to get packages for, such as 22.04 or 23.10.
 >
 > For example, on Ubuntu 22.04 `$ID` would be `ubuntu` and `$VERSION_ID` would be `22.04`. The URL would look like:
 > `https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb`.

@@ -4,16 +4,18 @@ using Microsoft.Extensions.Logging;
 using ModelContextProtocol.Server;
 using System.ComponentModel;
 
-// Create a generic host builder for dependency injection, logging, and configuration.
+// Create a generic host builder for
+// dependency injection, logging, and configuration.
 var builder = Host.CreateApplicationBuilder(args);
 
-// Configure logging to write all logs to standard error for better integration with MCP clients.
+// Configure logging for better integration with MCP clients.
 builder.Logging.AddConsole(consoleLogOptions =>
 {
-    consoleLogOptions.LogToStandardErrorThreshold = LogLevel.Trace;
+consoleLogOptions.LogToStandardErrorThreshold = LogLevel.Trace;
 });
 
-// Register the MCP server, configure it to use stdio transport, and scan the assembly for tool definitions.
+// Register the MCP server and configure it to use stdio transport.
+// Scan the assembly for tool definitions.
 builder.Services
     .AddMcpServer()
     .WithStdioServerTransport()

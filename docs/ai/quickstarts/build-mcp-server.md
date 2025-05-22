@@ -48,6 +48,14 @@ Replace the contents of `Program.cs` with the following code to implement a mini
 
 :::code language="csharp" source="snippets/mcp-server/program.cs" :::
 
+The preceding code:
+
+- Creates a generic host builder for dependency injection, logging, and configuration.
+- Configures logging for better integration with MCP clients.
+- Registers the MCP server, configures it to use stdio transport, and scans the assembly for tool definitions.
+- Builds and runs the host, which starts the MCP server.
+- Defines a static class to hold two MCP tools that echo values back to the client.
+
 ## Configure the MCP server in Visual Studio Code
 
 Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
@@ -82,7 +90,12 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
     :::image type="content" source="../media/mcp/available-tools.png" alt-text="A screenshot showing the available MCP tools.":::
 
-1. Enter a prompt to run the **ReverseEcho** tool, such as *Reverse the following: "Hello, minimal MCP server!"*
+1. Enter a prompt to run the **ReverseEcho** tool:
+
+    ```
+    Reverse the following: "Hello, minimal MCP server!"
+    ```
+
 1. GitHub Copilot requests permission to run the **ReverseEcho** tool for your prompt. Select **Continue** or use the arrow to select a more specific behavior:
 
     - **Current session** always runs the operation in the current GitHub Copilot Agent Mode session.

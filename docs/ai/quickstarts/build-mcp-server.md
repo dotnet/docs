@@ -92,7 +92,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 1. Enter a prompt to run the **ReverseEcho** tool:
 
-    ```
+    ```console
     Reverse the following: "Hello, minimal MCP server!"
     ```
 

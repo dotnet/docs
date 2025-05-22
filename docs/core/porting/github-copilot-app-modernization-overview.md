@@ -1,5 +1,5 @@
 ---
-title: GitHub Copilot app modernization - upgrade for .NET Overview
+title: GitHub Copilot app modernization - upgrade for .NET overview
 description: "Learn more about GitHub Copilot app modernization - upgrade for .NET. This Visual Studio extension helps you upgrade your code and projects. Upgrades can include .NET versioning or migrating code from one technology to another."
 titleSuffix: ""
 author: adegeo
@@ -13,7 +13,7 @@ ms.date: 05/16/2025
 
 # What is GitHub Copilot app modernization - upgrade for .NET?
 
-GitHub Copilot app modernization - upgrade for .NET is a powerful Visual Studio extension that works with you to upgrade projects to newer versions of .NET, upgrade your dependencies, and applies code fixes.
+GitHub Copilot app modernization - upgrade for .NET is a powerful Visual Studio extension that works with you to upgrade projects to newer versions of .NET, upgrade your dependencies, and apply code fixes.
 
 GitHub Copilot app modernization is distributed as a Visual Studio extension, and is an interactive upgrade process.
 
@@ -70,12 +70,12 @@ The first step to upgrading is generating a plan by interacting with GitHub Copi
 
 ## Generate a plan
 
-Once the process starts, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade. After you answer these questions, an upgrade plan is written in the form of a markdown file. If you tell Copilot to proceed with the upgrade, this plan describes the steps of the upgrade process.
+Once the process starts, Copilot analyzes your projects and their dependencies, and then asks you a series of questions about the upgrade. After you answer these questions, an upgrade plan is written in the form of a Markdown file. If you tell Copilot to proceed with the upgrade, this plan describes the steps of the upgrade process.
 
-You can adjust the plan by editing the markdown file to change the upgrade steps or add more context.
+You can adjust the plan by editing the Markdown file to change the upgrade steps or add more context.
 
 > [!CAUTION]
-> The plan is generated based on the inter-dependencies of your projects. You can prevent the upgrade from succeeding if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
+> The plan is generated based on the inter-dependencies of your projects. The upgrade won't succeed if you modify the plan in such a way that the migration path can't complete. For example, if **Project A** depends on **Project B** and you remove **Project B** from the upgrade plan, upgrading **Project A** might fail.
 
 The following snippet demonstrates the structure of a plan:
 
@@ -114,7 +114,7 @@ NuGet packages used across all selected projects or their dependencies that need
 
 ## Perform the upgrade
 
-Once an upgrade plan is ready, tell the Copilot to start the upgrade. Once the upgrade process starts, Copilot lets you know what it's doing in the chat window and it opens the **Upgrade Progress Details** document, which lists the status of every step. If it runs into a problem, Copilot pauses and asks for your direction or help in fixing these problems.
+Once an upgrade plan is ready, tell Copilot to start the upgrade. Once the upgrade process starts, Copilot lets you know what it's doing in the chat window and it opens the **Upgrade Progress Details** document, which lists the status of every step. If it runs into a problem, Copilot pauses and asks for your direction or help in fixing these problems.
 
 The tool differs in experience based on whether or not Copilot _agent mode_ is enabled.
 

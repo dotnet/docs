@@ -57,7 +57,8 @@ You'll find the eShopOnContainers helm charts in the /k8s/helm folder. Figure 2-
 
 Each individual component is installed using a `helm install` command. eShop includes a "deploy all" script that loops through and installs the components using their respective helm charts. The result is a repeatable process, versioned with the application in source control, that anyone on the team can deploy to an AKS cluster with a one-line script command.
 
-> Note that version 3 of Helm officially removes the need for the Tiller server component. More information on this enhancement can be found [here](https://medium.com/better-programming/why-is-tiller-missing-in-helm-3-2347c446714).
+> [!NOTE]
+> Version 3 of Helm officially removes the need for the Tiller server component. For more information on this enhancement, see [Why is Tiller Missing in Helm 3?](https://medium.com/better-programming/why-is-tiller-missing-in-helm-3-2347c446714).
 
 ## Azure Functions and Logic Apps (Serverless)
 

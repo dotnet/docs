@@ -12,6 +12,17 @@ items:
             href: ../../core/porting/versioning-sdk-msbuild-vs.md
           - name: Choose between .NET and .NET Framework for server apps
             href: ../../standard/choosing-core-framework-server.md
+      - name: GitHub Copilot app modernization
+        items:
+          - name: Overview
+            href: ../../core/porting/github-copilot-app-modernization-overview.md
+            displayName: copilot, upgrade
+          - name: Install
+            href: ../../core/porting/github-copilot-app-modernization-install.md
+            displayName: copilot, upgrade
+          - name: FAQ
+            href: ../../core/porting/github-copilot-app-modernization-faq.yml
+            displayName: copilot, upgrade, faq
       - name: .NET Upgrade Assistant tool
         items:
           - name: Overview

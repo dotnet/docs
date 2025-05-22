@@ -5,7 +5,6 @@ ms.date: 12/06/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: fboucher
-ms.author: frbouche
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
@@ -25,8 +24,6 @@ In this quickstart, you create a .NET console app to perform semantic search on 
 [!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
-
-[!INCLUDE [clone-sample-repo](includes/clone-sample-repo.md)]
 
 ## Interact with your data using vector stores
 
@@ -134,8 +131,8 @@ Complete the following steps to create a .NET console app that can:
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-    dotnet user-secrets set ModelName <your-openai-model-name>
+    dotnet user-secrets set OpenAIKey <your-OpenAI-key>
+    dotnet user-secrets set ModelName <your-OpenAI-model-name>
     ```
 
     > [!NOTE]
@@ -171,7 +168,7 @@ Complete the following steps to create a .NET console app that can:
 
     :::zone target="docs" pivot="openai"
 
-    :::code language="csharp" source="snippets/chat-with-data/openai/program.cs" range="49-57":::
+    :::code language="csharp" source="snippets/chat-with-data/openai/program.cs" id="EmbeddingGenerator":::
 
     :::zone-end
 
@@ -197,11 +194,10 @@ Complete the following steps to create a .NET console app that can:
 
 ## Clean up resources
 
-When you no longer need the sample application or resources, remove the corresponding deployment and all resources.
+If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
 
-```azdeveloper
-azd down
-```
+1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
+1. Select the Azure OpenAI resource, and then select **Delete**.
 
 :::zone-end
 

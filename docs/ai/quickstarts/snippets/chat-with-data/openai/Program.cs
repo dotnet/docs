@@ -45,6 +45,7 @@ IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>()
 string model = config["ModelName"];
 string key = config["OpenAIKey"];
 
+// <SnippetEmbeddingGenerator>
 // Create the embedding generator.
 IEmbeddingGenerator<string, Embedding<float>> generator =
     new OpenAIClient(new ApiKeyCredential(key))
@@ -55,6 +56,7 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
 var vectorStore = new InMemoryVectorStore();
 IVectorStoreRecordCollection<int, CloudService> cloudServicesStore = vectorStore.GetCollection<int, CloudService>("cloudServices");
 await cloudServicesStore.CreateCollectionIfNotExistsAsync();
+// </SnippetEmbeddingGenerator>
 
 foreach (CloudService service in cloudServices)
 {

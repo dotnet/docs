@@ -81,12 +81,14 @@ items:
   items:
   - name: The Microsoft.Extensions.AI.Evaluation libraries
     href: conceptual/evaluation-libraries.md
-  - name: "Quickstart: Evaluate a model's response"
-    href: quickstarts/evaluate-ai-response.md
-  - name: "Tutorial: Evaluate a response with response caching and reporting"
-    href: tutorials/evaluate-with-reporting.md
-  - name: "Tutorial: Evaluate LLM prompt completions"
-    href: tutorials/llm-eval.md
+  - name: Tutorials
+    items:
+    - name: "Quickstart: Evaluate the quality of a response"
+      href: quickstarts/evaluate-ai-response.md
+    - name: "Evaluate response quality with caching and reporting"
+      href: tutorials/evaluate-with-reporting.md
+    - name: "Evaluate response safety with caching and reporting"
+      href: tutorials/evaluate-safety.md
 - name: Resources
   items:
   - name: API reference

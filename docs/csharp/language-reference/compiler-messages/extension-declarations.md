@@ -13,6 +13,24 @@ f1_keywords:
   - "CS1110"
   - "CS1112"
   - "CS1113"
+  - "CS9281"
+  - "CS9282"
+  - "CS9283"
+  - "CS9284"
+  - "CS9285"
+  - "CS9287"
+  - "CS9288"
+  - "CS9289"
+  - "CS9290"
+  - "CS9292"
+  - "CS9293"
+  - "CS9295"
+  - "CS9300"
+  - "CS9301"
+  - "CS9302"
+  - "CS9303"
+  - "CS9304"
+  - "CS9305"
 helpviewer_keywords: 
   - "CS1100"
   - "CS1101"
@@ -24,31 +42,66 @@ helpviewer_keywords:
   - "CS1110"
   - "CS1112"
   - "CS1113"
+  - "CS9281"
+  - "CS9282"
+  - "CS9283"
+  - "CS9284"
+  - "CS9285"
+  - "CS9287"
+  - "CS9288"
+  - "CS9289"
+  - "CS9290"
+  - "CS9291"
+  - "CS9292"
+  - "CS9293"
+  - "CS9294"
+  - "CS9295"
+  - "CS9300"
+  - "CS9301"
+  - "CS9302"
+  - "CS9303"
+  - "CS9304"
+  - "CS9305"
 ---
 # Errors and warnings related to extension methods declared with `this` parameters or `extension` blocks
 
+- **CS1100**: *Method has a parameter modifier '`this`' which is not on the first parameter*
+- **CS1101**: *The parameter modifier '`ref`' cannot be used with '`this`'.*
+- **CS1102**: *The parameter modifier '`out`' cannot be used with '`this`'.*
+- **CS1103**: *The first parameter of an extension method cannot be of a pointer type.*
+- **CS1105**: *Extension methods must be static.*
+- **CS1106**: *Extension methods must be defined in a non generic static class.*
+- **CS1109**: *Extension Methods must be defined on top level static classes, 'name' is a nested class.*
+- **CS1110**: *Cannot define a new extension because the compiler required type <xref:System.Runtime.CompilerServices.ExtensionAttribute> cannot be found. Are you missing a reference to System.Core.dll?*
 - **CS1112**: *Do not use '<xref:System.Runtime.CompilerServices.ExtensionAttribute>'. Use the '`this`' keyword instead.*
+- **CS1113**: *Extension method defined on a value type cannot be used to create delegates.*
+- **CS9281**: *Extension declarations may not have a name.*
+- **CS9282**: *Extension declarations can include only methods or properties.*
+- **CS9283**: *Extensions must be declared in a top-level, non-generic, static class.*
+- **CS9284**: *The receiver parameter of an extension cannot have a default value.*
+- **CS9285**: *An extension container can have only one receiver parameter.*
+- **CS9287**: *A receiver parameter cannot have the same name as an extension container type parameter.*
+- **CS9288**: *A parameter, local variable, or local function cannot have the same name as an extension container type parameter.*
+- **CS9289**: *Member type parameter has the same name as an extension container type parameter.*
+- **CS9290**: *A parameter, local variable, or local function cannot have the same name as an extension parameter.*
+- **CS9291**: *'`value`': an automatically-generated parameter name conflicts with an extension parameter name.*
+- **CS9292**: *A type parameter has the same name as an extension parameter.*
+- **CS9293**: *Cannot use an extension parameter in this context.*
+- **CS9294**: *'`value`': an automatically-generated parameter name conflicts with an extension type parameter name.*
+- **CS9295**: *The extended type must reference all the type parameters declared by the extension, but a type parameter is not referenced.*
+- **CS9300**: *The '`ref`' receiver parameter of an extension block must be a value type or a generic type constrained to struct.*
+- **CS9301**: *The '`in`' or '`ref readonly`' receiver parameter of extension must be a concrete (non-generic) value type.*
+- **CS9302**: *new protected member declared in an extension block.*
+- **CS9303**: *Cannot declare instance members in an extension block with an unnamed receiver parameter.*
+- **CS9304**: *Cannot declare init-only accessors in an extension block.*
+- **CS9305**: *Cannot use modifiers on the unnamed receiver parameter of extension block.*
 
-## CS1112
-
-This error is generated when the <xref:System.Runtime.CompilerServices.ExtensionAttribute> is used on a non-static class that contains extension methods. If this attribute is used on a static class, another error, such as CS0708: "Cannot declare instance members in a static class," might occur.
-
-In C#, extension methods must be defined in a static class and the first parameter of the method is modified with the `this` keyword. Do not use the attribute at all in the source code. For more information, see [Extension Methods](../../../programming-guide/classes-and-structs/extension-methods.md). To correct this error remove the attribute and apply the `this` modifier to the first parameter of the method. The following example generates CS1112:
-
-```csharp
-// cs1112.cs  
-[System.Runtime.CompilerServices.ExtensionAttribute] // CS1112
-public class Extensions
-{
-    public bool A(bool b) { return b; }
-}
-
-class A { }
-```
 
 ## Compiler Error CS1100
 
-Method 'name' has a parameter modifier 'this' which is not on the first parameter. The `this` modifier is allowed only on the first parameter of a method, which indicates to the compiler that the method is an extension method. To correct this error remove the `this` modifier from all except the first parameter of the method. The following code generates CS1100 because a `this` parameter is modifying the second parameter:
+Method 'name' has a parameter modifier 'this' which is not on the first parameter.
+
+The `this` modifier is allowed only on the first parameter of a method, which indicates to the compiler that the method is an extension method. To correct this error remove the `this` modifier from all except the first parameter of the method. The following code generates CS1100 because a `this` parameter is modifying the second parameter:
 
 ```csharp
 // cs1100.cs
@@ -101,7 +154,7 @@ public static class Extensions
 
 ## Compiler Error CS1103
 
-The first parameter of an extension method cannot be of type 'type'.
+The first parameter of an extension method cannot be of type.
 
 The first parameter of an extension method cannot be a pointer type. The following example generates CS1103:
 
@@ -179,7 +232,7 @@ static class Out
 
 ## Compiler Error CS1110
 
-Cannot use 'this' modifier on first parameter of method declaration without a reference to System.Core.dll. Add a reference to System.Core.dll or remove 'this' modifier from the method declaration.
+Cannot define a new extension because the compiler required type '{0}' cannot be found. Are you missing a reference to System.Core.dll?
 
 Extension methods are supported on version 3.5 and later of .NET Framework. Extension methods generate metadata which marks the method with an attribute. The attribute class is in system.core.dll. To correct this error, as the message states, add a reference to System.Core.dll or remove the `this` modifier from the method declaration. The following example generates CS1110 if the file is not compiled with a reference to System.Core.dll:
 
@@ -191,6 +244,25 @@ public static class Extensions
 {
     public static bool Test(this bool b) { return b; }
 }
+```
+
+## CS1112
+
+Do not use 'System.Runtime.CompilerServices.ExtensionAttribute'. Use the 'this' keyword instead.
+
+This error is generated when the <xref:System.Runtime.CompilerServices.ExtensionAttribute> is used on a non-static class that contains extension methods. If this attribute is used on a static class, another error, such as CS0708: "Cannot declare instance members in a static class," might occur.
+
+In C#, extension methods must be defined in a static class and the first parameter of the method is modified with the `this` keyword. Do not use the attribute at all in the source code. For more information, see [Extension Methods](../../../programming-guide/classes-and-structs/extension-methods.md). To correct this error remove the attribute and apply the `this` modifier to the first parameter of the method. The following example generates CS1112:
+
+```csharp
+// cs1112.cs  
+[System.Runtime.CompilerServices.ExtensionAttribute] // CS1112
+public class Extensions
+{
+    public bool A(bool b) { return b; }
+}
+
+class A { }
 ```
 
 ## Compiler Error CS1113

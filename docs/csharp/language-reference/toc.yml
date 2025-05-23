@@ -505,7 +505,7 @@ items:
       CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
   - name: Extension declarations
     href: ./compiler-messages/extension-declarations.md
-    displayName: 
+    displayName: CS1100, CS1101, CS1102, CS1103, CS1105, CS1106, CS1109, CS1110, CS1113, CS1112
   - name: Partial declarations
     href: ./compiler-messages/partial-declarations.md
     displayName: >
@@ -530,7 +530,7 @@ items:
     href: ./compiler-messages/pattern-matching-warnings.md
     displayName: CS8509, CS9134, CS9135
   - name: String literal declarations
-    href: ./compiler-messages/string-literal-errors.md
+    href: ./compiler-messages/string-literal.md
     displayName: CS9274
   - name: Array declarations
     href: ./compiler-messages/array-declaration-errors.md
@@ -1473,30 +1473,10 @@ items:
       href: ./compiler-messages/cs1061.md
     - name: CS1065
       href: ./compiler-messages/cs1065.md
-    - name: CS1100
-      href: ../misc/cs1100.md
-    - name: CS1101
-      href: ../misc/cs1101.md
-    - name: CS1102
-      href: ../misc/cs1102.md
-    - name: CS1103
-      href: ../misc/cs1103.md
-    - name: CS1105
-      href: ../misc/cs1105.md
-    - name: CS1106
-      href: ../misc/cs1106.md
     - name: CS1107
       href: ../misc/cs1107.md
     - name: CS1108
       href: ../misc/cs1108.md
-    - name: CS1109
-      href: ../misc/cs1109.md
-    - name: CS1110
-      href: ../misc/cs1110.md
-    - name: CS1112
-      href: ./compiler-messages/cs1112.md
-    - name: CS1113
-      href: ../misc/cs1113.md
     - name: CS1502
       href: ../misc/cs1503.md
     - name: CS1503

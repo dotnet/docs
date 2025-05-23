@@ -112,9 +112,9 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
     In addition to heartbeats sent between silos, each silo periodically updates an "I Am Alive" timestamp in its table row. This serves two purposes:
 
-    1.  **Diagnostics**: Provides system administrators a simple way to check cluster liveness and determine when a silo was last active. The timestamp is typically updated every 5 minutes.
+    1. **Diagnostics**: Provides system administrators a simple way to check cluster liveness and determine when a silo was last active. The timestamp is typically updated every 5 minutes.
 
-    2.  **Disaster recovery**: If a silo hasn't updated its timestamp for several periods (configured via `NumMissedTableIAmAliveLimit`), new silos ignore it during startup connectivity checks. This allows the cluster to recover from scenarios where silos crashed without proper cleanup.
+    2. **Disaster recovery**: If a silo hasn't updated its timestamp for several periods (configured via `NumMissedTableIAmAliveLimit`), new silos ignore it during startup connectivity checks. This allows the cluster to recover from scenarios where silos crashed without proper cleanup.
 
 ### Membership table
 

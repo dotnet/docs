@@ -95,11 +95,11 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 11. **Indirect probing**: Another [Lifeguard](https://arxiv.org/abs/1707.00788)-inspired feature improving failure detection accuracy by reducing the chance that an unhealthy or partitioned silo incorrectly declares a healthy silo dead. When a monitoring silo has two probe attempts remaining for a target silo before casting a vote to declare it dead, it employs indirect probing:
 
-   - The monitoring silo randomly selects another silo as an intermediary and asks it to probe the target.
-   - The intermediary attempts to contact the target silo.
-   - If the target fails to respond within the timeout period, the intermediary sends a negative acknowledgment.
-   - If the monitoring silo receives a negative acknowledgment from the intermediary, and the intermediary declares itself healthy (through self-monitoring, described above), the monitoring silo casts a vote to declare the target dead.
-   - With the default configuration of two required votes, a negative acknowledgment from an indirect probe counts as both votes, allowing faster declaration of dead silos when multiple perspectives confirm the failure.
+    - The monitoring silo randomly selects another silo as an intermediary and asks it to probe the target.
+    - The intermediary attempts to contact the target silo.
+    - If the target fails to respond within the timeout period, the intermediary sends a negative acknowledgment.
+    - If the monitoring silo receives a negative acknowledgment from the intermediary, and the intermediary declares itself healthy (through self-monitoring, described above), the monitoring silo casts a vote to declare the target dead.
+    - With the default configuration of two required votes, a negative acknowledgment from an indirect probe counts as both votes, allowing faster declaration of dead silos when multiple perspectives confirm the failure.
 
 12. **Enforcing perfect failure detection**: Once a silo is declared dead in the table, everyone considers it dead, even if it isn't truly dead (e.g., just temporarily partitioned or heartbeat messages were lost). Everyone stops communicating with it. Once the silo learns it's dead (by reading its new status from the table), it terminates its process. Consequently, an infrastructure must be in place to restart the silo as a new process (a new epoch number is generated upon start). When hosted in Azure, this happens automatically. Otherwise, another infrastructure is required, such as a Windows Service configured to auto-restart on failure or a Kubernetes deployment.
 

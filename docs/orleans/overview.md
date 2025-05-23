@@ -3,7 +3,6 @@ title: Orleans overview
 description: An introduction to .NET Orleans.
 ms.date: 03/30/2025
 ms.topic: overview
-ms.service: orleans
 ---
 
 # Microsoft Orleans

@@ -3,7 +3,6 @@ title: Minimal Orleans app sample project
 description: Explore the minimal Orleans app sample project.
 ms.date: 03/30/2025
 ms.topic: tutorial
-ms.service: orleans
 ---
 
 # Tutorial: Create a minimal Orleans application

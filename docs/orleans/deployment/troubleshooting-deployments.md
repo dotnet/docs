@@ -3,7 +3,6 @@ title: Troubleshoot deployments
 description: Learn how to troubleshoot common Orleans deployment issues.
 ms.date: 05/23/2025
 ms.topic: troubleshooting
-ms.service: orleans
 ms.custom: devops
 ---
 

@@ -3,7 +3,6 @@ title: Notifications
 description: Learn the concepts of notifications in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: conceptual
-ms.service: orleans
 ---
 
 # Notifications

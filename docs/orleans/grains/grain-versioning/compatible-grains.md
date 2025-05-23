@@ -3,7 +3,6 @@ title: Compatible grains
 description: Learn about compatible grains in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: conceptual
-ms.service: orleans
 ---
 
 # Compatible grains

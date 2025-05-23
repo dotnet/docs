@@ -3,7 +3,6 @@ title: ADO.NET database configuration
 description: Learn about ADO.NET database configurations in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: how-to
-ms.service: orleans
 ---
 
 # ADO.NET database configuration

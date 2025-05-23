@@ -3,7 +3,6 @@ title: Shut down Orleans silos
 description: Learn how to shut down .NET Orleans silos.
 ms.date: 05/23/2025
 ms.topic: how-to
-ms.service: orleans
 ---
 
 # Shut down Orleans silos

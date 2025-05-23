@@ -3,7 +3,6 @@ title: Orleans clients
 description: Learn how to write .NET Orleans clients.
 ms.date: 05/23/2025
 ms.topic: conceptual
-ms.service: orleans
 zone_pivot_groups: orleans-version
 ---
 

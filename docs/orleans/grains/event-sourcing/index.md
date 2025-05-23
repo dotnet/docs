@@ -3,7 +3,6 @@ title: Event sourcing overview
 description: Learn an overview of event sourcing in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: overview
-ms.service: orleans
 ---
 
 # Event sourcing overview

@@ -3,7 +3,6 @@ title: List of options classes
 description: Explore a listing of options classes in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: reference
-ms.service: orleans
 ---
 
 # List of options classes

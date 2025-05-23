@@ -3,7 +3,6 @@ title: Grain cancellation tokens
 description: Learn how to use grain cancellation tokens in .NET Orleans.
 ms.date: 03/31/2025
 ms.topic: conceptual
-ms.service: orleans
 ---
 
 # Grain cancellation tokens

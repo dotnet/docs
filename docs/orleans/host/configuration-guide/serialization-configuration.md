@@ -3,7 +3,6 @@ title: Serialization configuration in Orleans
 description: Learn how to configure serialization in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: how-to
-ms.service: orleans
 uid: orleans-serialization-configuration
 zone_pivot_groups: orleans-version
 ---

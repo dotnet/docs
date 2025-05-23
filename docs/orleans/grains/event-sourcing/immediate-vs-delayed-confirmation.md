@@ -3,7 +3,6 @@ title: Immediate and delayed confirmation
 description: Learn the differences between immediate and delayed confirmation in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: conceptual
-ms.service: orleans
 ---
 
 # Immediate and delayed confirmations

@@ -3,7 +3,6 @@ title: "Tutorial: Hello world"
 description: Explore the hello world tutorial project written with .NET Orleans.
 ms.date: 03/30/2025
 ms.topic: tutorial
-ms.service: orleans
 ---
 
 # Tutorial: Hello world

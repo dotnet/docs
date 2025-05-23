@@ -3,7 +3,6 @@ title: Deploy Orleans to Azure App Service
 description: Learn how to deploy an Orleans shopping cart app to Azure App Service.
 ms.date: 05/23/2025
 ms.topic: tutorial
-ms.service: orleans
 ms.custom: devx-track-bicep
 ---
 

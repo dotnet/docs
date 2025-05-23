@@ -3,7 +3,6 @@ title: Orleans benefits
 description: Learn the many benefits of .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: overview
-ms.service: orleans
 ---
 
 # Orleans benefits

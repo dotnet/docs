@@ -3,7 +3,6 @@ title: Why streams in Orleans?
 description: Learn why you'd want to use streams in .NET Orleans.
 ms.date: 03/30/2025
 ms.topic: conceptual
-ms.service: orleans
 ---
 
 # Why streams in Orleans?

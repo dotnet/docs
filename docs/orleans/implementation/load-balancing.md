@@ -3,7 +3,6 @@ title: Load balancing
 description: Learn how .NET Orleans manages load balancing.
 ms.date: 05/23/2025
 ms.topic: conceptual
-ms.service: orleans
 ---
 
 # Load balancing

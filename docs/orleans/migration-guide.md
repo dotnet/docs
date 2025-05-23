@@ -3,7 +3,6 @@ title: Migrate from Orleans 3.x to 7.0
 description: Learn about the new features in Orleans 7.0 and how to migrate your application from version 3.x.
 ms.date: 03/30/2025
 ms.topic: how-to
-ms.service: orleans
 ms.custom: migration-guide
 ---
 

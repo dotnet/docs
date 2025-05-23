@@ -2,7 +2,6 @@
 title: Azure Cosmos DB grain persistence
 description: Use the Azure Cosmos DB grain persistence provider to persist Azure Cosmos DB for NoSQL data in a .NET Orleans application.
 ms.topic: how-to
-ms.service: orleans
 ms.devlang: csharp
 ms.date: 05/23/2025
 ---

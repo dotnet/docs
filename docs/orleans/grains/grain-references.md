@@ -3,7 +3,6 @@ title: Grain references
 description: Learn about grain references in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: conceptual
-ms.service: orleans
 ---
 
 # Grain references

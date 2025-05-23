@@ -3,7 +3,6 @@ title: Implementation details
 description: Explore the various implementation details in .NET Orleans.
 ms.date: 05/23/2025
 ms.topic: overview
-ms.service: orleans
 ---
 
 # Implementation details overview

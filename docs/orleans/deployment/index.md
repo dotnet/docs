@@ -3,7 +3,6 @@ title: Run an Orleans application
 description: Learn how to run an Orleans app in .NET.
 ms.date: 05/23/2025
 ms.topic: overview
-ms.service: orleans
 ---
 
 # Run an Orleans application

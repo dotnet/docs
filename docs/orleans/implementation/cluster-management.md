@@ -28,19 +28,19 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 5. In more detail:
 
-    1.  Suspicion is written to the `IMembershipTable`, in a special column in the row corresponding to P. When S suspects P, it writes: "at time TTT S suspected P".
+   1.  Suspicion is written to the `IMembershipTable`, in a special column in the row corresponding to P. When S suspects P, it writes: "at time TTT S suspected P".
 
-    2.  One suspicion isn't enough to declare P dead. You need Z suspicions from different silos within a configurable time window T (typically 3 minutes) to declare P dead. The suspicion is written using optimistic concurrency control provided by the `IMembershipTable`.
+   2.  One suspicion isn't enough to declare P dead. You need Z suspicions from different silos within a configurable time window T (typically 3 minutes) to declare P dead. The suspicion is written using optimistic concurrency control provided by the `IMembershipTable`.
 
-    3.  The suspecting silo S reads P's row.
+   3.  The suspecting silo S reads P's row.
 
-    4.  If `S` is the last suspecter (there have already been Z-1 suspecters within period T, as recorded in the suspicion column), S decides to declare P dead. In this case, S adds itself to the list of suspecters and also writes in P's Status column that P is Dead.
+   4.  If `S` is the last suspecter (there have already been Z-1 suspecters within period T, as recorded in the suspicion column), S decides to declare P dead. In this case, S adds itself to the list of suspecters and also writes in P's Status column that P is Dead.
 
-    5.  Otherwise, if S isn't the last suspecter, S just adds itself to the suspecter's column.
+   5.  Otherwise, if S isn't the last suspecter, S just adds itself to the suspecter's column.
 
-    6.  In either case, the write-back uses the version number or ETag read previously, serializing updates to this row. If the write fails due to a version/ETag mismatch, S retries (reads again and tries to write, unless P was already marked dead).
+   6.  In either case, the write-back uses the version number or ETag read previously, serializing updates to this row. If the write fails due to a version/ETag mismatch, S retries (reads again and tries to write, unless P was already marked dead).
 
-    7.  At a high level, this sequence of "read, local modify, write back" is a transaction. However, storage transactions aren't necessarily used. The "transaction" code executes locally on a server, and optimistic concurrency provided by the `IMembershipTable` ensures isolation and atomicity.
+   7.  At a high level, this sequence of "read, local modify, write back" is a transaction. However, storage transactions aren't necessarily used. The "transaction" code executes locally on a server, and optimistic concurrency provided by the `IMembershipTable` ensures isolation and atomicity.
 
 6. Every silo periodically reads the entire membership table for its deployment. This way, silos learn about new silos joining and about other silos being declared dead.
 
@@ -48,26 +48,27 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 8. **Ordered membership views**: The membership protocol ensures all membership configurations are globally totally ordered. This ordering provides two key benefits:
 
-    1.  **Guaranteed connectivity**: When a new silo joins the cluster, it must validate two-way connectivity to every other active silo. If any existing silo doesn't respond (potentially indicating a network connectivity problem), the new silo isn't allowed to join. This ensures full connectivity between all silos in the cluster at startup time. See the note about `IAmAlive` below for an exception in disaster recovery scenarios.
+   1. **Guaranteed connectivity**: When a new silo joins the cluster, it must validate two-way connectivity to every other active silo. If any existing silo doesn't respond (potentially indicating a network connectivity problem), the new silo isn't allowed to join. This ensures full connectivity between all silos in the cluster at startup time. See the note about `IAmAlive` below for an exception in disaster recovery scenarios.
 
-    2.  **Consistent directory updates**: Higher-level protocols, such as the distributed grain directory, rely on all silos having a consistent, monotonic view of membership. This enables smarter resolution of duplicate grain activations. For more details, see the [Grain directory](grain-directory.md) documentation.
+   2. **Consistent directory updates**: Higher-level protocols, such as the distributed grain directory, rely on all silos having a consistent, monotonic view of membership. This enables smarter resolution of duplicate grain activations. For more details, see the [Grain directory](grain-directory.md) documentation.
 
-    **Implementation details**:
+   **Implementation details**:
 
-    1.  The `IMembershipTable` requires atomic updates to guarantee a global total order of changes:
+   1. The `IMembershipTable` requires atomic updates to guarantee a global total order of changes:
   - Implementations must update both the table entries (list of silos) and the version number atomically.
   - Achieve this using database transactions (as in SQL Server) or atomic compare-and-swap operations using ETags (as in Azure Table Storage).
   - The specific mechanism depends on the capabilities of the underlying storage system.
 
-    2.  A special membership-version row in the table tracks changes:
+   2. A special membership-version row in the table tracks changes:
   - Every write to the table (suspicions, death declarations, joins) increments this version number.
   - All writes are serialized through this row using atomic updates.
   - The monotonically increasing version ensures a total ordering of all membership changes.
 
-    3.  When silo S updates the status of silo P:
-  - S first reads the latest table state.
-  - In a single atomic operation, it updates both P's row and increments the version number.
-  - If the atomic update fails (for example, due to concurrent modifications), the operation retries with exponential backoff.
+   3. When silo S updates the status of silo P:
+
+      - S first reads the latest table state.
+      - In a single atomic operation, it updates both P's row and increments the version number.
+      - If the atomic update fails (for example, due to concurrent modifications), the operation retries with exponential backoff.
 
     **Scalability considerations**:
 

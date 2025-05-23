@@ -4,15 +4,15 @@ namespace VectorDataAI;
 
 internal class CloudService
 {
-    [VectorStoreRecordKey]
+    [VectorStoreKey]
     public int Key { get; set; }
 
-    [VectorStoreRecordData]
+    [VectorStoreData]
     public string Name { get; set; }
 
-    [VectorStoreRecordData]
+    [VectorStoreData]
     public string Description { get; set; }
 
-    [VectorStoreRecordVector(Dimensions: 384, DistanceFunction = DistanceFunction.CosineSimilarity)]
+    [VectorStoreVector(Dimensions: 384, DistanceFunction = DistanceFunction.CosineSimilarity)]
     public ReadOnlyMemory<float> Vector { get; set; }
 }

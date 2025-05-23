@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "Pipelines I/O"
   - "I/O [.NET], Pipelines"
 author: rick-anderson
-ms.author: riande
 ---
 
 # System.IO.Pipelines in .NET

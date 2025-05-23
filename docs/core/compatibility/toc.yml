@@ -38,6 +38,10 @@ items:
                 href: cryptography/10.0/x509-publickey-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
+          - name: Extensions
+            items:
+              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+                href: extensions/10.0/provideraliasattribute-moved-assembly.md
           - name: Globalization
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
@@ -1746,6 +1750,10 @@ items:
             href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
+          - name: .NET 10
+            items:
+              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+                href: extensions/10.0/provideraliasattribute-moved-assembly.md
           - name: .NET 8
             items:
               - name: ActivatorUtilities.CreateInstance behaves consistently

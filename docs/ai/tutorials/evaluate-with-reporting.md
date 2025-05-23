@@ -1,14 +1,14 @@
 ---
-title: Tutorial - Evaluate a model's response
-description: Create an MSTest app and add a custom evaluator to evaluate the AI chat response of a language model, and learn how to use the caching and reporting features of Microsoft.Extensions.AI.Evaluation.
+title: Tutorial - Evaluate response quality with caching and reporting
+description: Create an MSTest app to evaluate the response quality of a language model, add a custom evaluator, and learn how to use the caching and reporting features of Microsoft.Extensions.AI.Evaluation.
 ms.date: 05/09/2025
 ms.topic: tutorial
 ms.custom: devx-track-dotnet-ai
 ---
 
-# Tutorial: Evaluate a model's response with response caching and reporting
+# Tutorial: Evaluate response quality with caching and reporting
 
-In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both built-in and custom evaluators.
+In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both built-in and custom evaluators. The built-in quality evaluators (from the [Microsoft.Extensions.AI.Evaluation.Quality package](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality)) use an LLM to perform evaluations; the custom evaluator does not use AI.
 
 ## Prerequisites
 
@@ -34,10 +34,10 @@ Complete the following steps to create an MSTest project that connects to the `g
    ```dotnetcli
    dotnet add package Azure.AI.OpenAI
    dotnet add package Azure.Identity
-   dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation.Quality --prerelease
-   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
+   dotnet add package Microsoft.Extensions.AI.Abstractions
+   dotnet add package Microsoft.Extensions.AI.Evaluation
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Quality
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting
    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
    dotnet add package Microsoft.Extensions.Configuration
    dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -47,9 +47,9 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    ```bash
    dotnet user-secrets init
-   dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
+   dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
-   dotnet user-secrets set AZURE_TENANT_ID <your-tenant-id>
+   dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
    ```
 
    (Depending on your environment, the tenant ID might not be needed. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)
@@ -150,10 +150,10 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 
 ## Generate a report
 
-1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window (update the version as necessary):
+1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window:
 
    ```dotnetcli
-   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console --version 9.3.0-preview.1.25164.6
+   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console
    ```
 
 1. Generate a report by running the following command:

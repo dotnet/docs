@@ -1,19 +1,17 @@
 ---
-title: Quickstart - Evaluate a model's response
+title: Quickstart - Evaluate the quality of a model's response
 description: Learn how to create an MSTest app to evaluate the AI chat response of a language model.
 ms.date: 03/18/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
-# Evaluate a model's response
+# Quickstart: Evaluate response quality
 
-In this quickstart, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
+In this quickstart, you create an MSTest app to evaluate the quality of a chat response from an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries.
 
 > [!NOTE]
->
-> - The `Microsoft.Extensions.AI.Evaluation` library is currently in Preview.
-> - This quickstart demonstrates the simplest usage of the evaluation API. Notably, it doesn't demonstrate use of the [response caching](../conceptual/evaluation-libraries.md#cached-responses) and [reporting](../conceptual/evaluation-libraries.md#reporting) functionality, which are important if you're authoring unit tests that run as part of an "offline" evaluation pipeline. The scenario shown in this quickstart is suitable in use cases such as "online" evaluation of AI responses within production code and logging scores to telemetry, where caching and reporting aren't relevant. For a tutorial that demonstrates the caching and reporting functionality, see [Tutorial: Evaluate a model's response with response caching and reporting](../tutorials/evaluate-with-reporting.md)
+> This quickstart demonstrates the simplest usage of the evaluation API. Notably, it doesn't demonstrate use of the [response caching](../conceptual/evaluation-libraries.md#cached-responses) and [reporting](../conceptual/evaluation-libraries.md#reporting) functionality, which are important if you're authoring unit tests that run as part of an "offline" evaluation pipeline. The scenario shown in this quickstart is suitable in use cases such as "online" evaluation of AI responses within production code and logging scores to telemetry, where caching and reporting aren't relevant. For a tutorial that demonstrates the caching and reporting functionality, see [Tutorial: Evaluate a model's response with response caching and reporting](../tutorials/evaluate-with-reporting.md)
 
 ## Prerequisites
 
@@ -39,9 +37,9 @@ Complete the following steps to create an MSTest project that connects to the `g
     ```dotnetcli
     dotnet add package Azure.AI.OpenAI
     dotnet add package Azure.Identity
-    dotnet add package Microsoft.Extensions.AI.Abstractions --prerelease
-    dotnet add package Microsoft.Extensions.AI.Evaluation --prerelease
-    dotnet add package Microsoft.Extensions.AI.Evaluation.Quality --prerelease
+    dotnet add package Microsoft.Extensions.AI.Abstractions
+    dotnet add package Microsoft.Extensions.AI.Evaluation
+    dotnet add package Microsoft.Extensions.AI.Evaluation.Quality
     dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.Configuration
     dotnet add package Microsoft.Extensions.Configuration.UserSecrets
@@ -51,9 +49,9 @@ Complete the following steps to create an MSTest project that connects to the `g
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
+    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
     dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
-    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-id>
+    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
     ```
 
    (Depending on your environment, the tenant ID might not be needed. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)

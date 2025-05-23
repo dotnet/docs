@@ -56,7 +56,7 @@ The `mlnet` ML task commands (`classification`, `regression`, `recommendation`, 
 
 ### Classification options
 
-Running `mlnet classification` will train a classification model. Choose this command if you want an ML Model to categorize data into 2 or more classes (e.g. sentiment analysis).
+Running `mlnet classification` will train a classification model. Choose this command if you want an ML Model to categorize data into 2 or more classes (for example, sentiment analysis).
 
 ```console
 mlnet classification
@@ -90,7 +90,7 @@ mlnet classification
 
 ### Regression options
 
-Running `mlnet regression` will train a regression model. Choose this command if you want an ML Model to predict a numeric value (e.g. price prediction).
+Running `mlnet regression` will train a regression model. Choose this command if you want an ML Model to predict a numeric value (for example, price prediction).
 
 ```console
 mlnet regression
@@ -125,7 +125,7 @@ mlnet regression
 
 ### Recommendation options
 
-Running `mlnet recommendation` will train a recommendation model. Choose this command if you want an ML Model to recommend items to users based on ratings (e.g. product recommendation).
+Running `mlnet recommendation` will train a recommendation model. Choose this command if you want an ML Model to recommend items to users based on ratings (for example, product recommendation).
 
 ```console
 mlnet recommendation
@@ -291,7 +291,7 @@ This argument is used only for the *recommendation* task.
 
 With this argument, you can ignore existing columns in the dataset file so they are not loaded and used by the training processes.
 
-Specify the columns names that you want to ignore. Use ', ' (comma with space) or ' ' (space) to separate multiple column names. You can use quotes for column names containing whitespace (e.g. "logged in").
+Specify the columns names that you want to ignore. Use ', ' (comma with space) or ' ' (space) to separate multiple column names. You can use quotes for column names containing whitespace (for example, "logged in").
 
 Example:
 

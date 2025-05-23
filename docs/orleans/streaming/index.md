@@ -104,7 +104,7 @@ The [Orleans Streams Implementation](../implementation/streams-implementation/in
 
 ## Code samples
 
-More examples of how to use streaming APIs within a grain can be found [here](https://github.com/dotnet/orleans/blob/main/test/Grains/TestGrains/SampleStreamingGrain.cs). We plan to create more samples in the future.
+You can find more examples of how to use streaming APIs within a grain at [SampleStreamingGrain.cs](https://github.com/dotnet/orleans/blob/main/test/Grains/TestGrains/SampleStreamingGrain.cs).
 
 ## See also
 

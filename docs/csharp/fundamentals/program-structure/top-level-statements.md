@@ -42,7 +42,7 @@ In a project with top-level statements, you can't use the [-main](../../language
 
 ## `using` directives
 
-If you include `using` directives, they must come first in the file, as in this example:
+For the single file containing top-level statements `using` directives must come first in that file, as in this example:
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 

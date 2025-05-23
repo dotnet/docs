@@ -28,11 +28,11 @@ Extensive documentation on setting up a stable Consul cluster is available in th
 3. [Download](https://developer.hashicorp.com/consul/install) and unzip _Consul.exe_ into _C:\Consul_.
 4. Open a command prompt at _C:\Consul_ and run the following command:
 
-   ```powershell
-   ./consul.exe agent -server -bootstrap -data-dir "C:\Consul\Data" -client='0.0.0.0'
-   ```
-
-   In the preceding command:
+  ```powershell
+  ./consul.exe agent -server -bootstrap -data-dir "C:\Consul\Data" -client='0.0.0.0'
+  ```
+  
+  In the preceding command:
 
   - `agent`: Instructs Consul to run the agent process hosting the services. Without this switch, the Consul process attempts to use RPC to configure a running agent.
   - `-server`: Defines the agent as a server, not a client. (A Consul _client_ is an agent hosting services and data but lacks voting rights and cannot become the cluster leader).
@@ -40,7 +40,7 @@ Extensive documentation on setting up a stable Consul cluster is available in th
   - `-data-dir [path]`: Specifies the path where all Consul data, including the cluster membership table, is stored.
   - `-client='0.0.0.0'`: Informs Consul which IP address to open the service on.
 
-    Many other parameters exist, including the option to use a JSON configuration file. See the Consul documentation for a full listing.
+  Many other parameters exist, including the option to use a JSON configuration file. See the Consul documentation for a full listing.
 
 5. Verify Consul is running and ready to accept membership requests from Orleans by opening the services endpoint in your browser at `http://localhost:8500/v1/catalog/services`. When functioning correctly, the browser displays the following JSON:
 

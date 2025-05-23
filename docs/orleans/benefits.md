@@ -26,7 +26,7 @@ The runtime guarantees a grain never executes on more than one thread at a time.
 
 ### Transparent activation
 
-The runtime activates a grain only when there's a message for it to process. This cleanly separates creating a grain reference (controlled by application code) and physical activation of the grain in memory (transparent to the application). This is similar to virtual memory: with virtual memory, the OS decides when to bring pages into memory and when to evict pages from memory. Similarly, in Orleans, the runtime decides when to activate a grain (bringing it into memory) and when to deactivate a grain (evicting it from memory). The application has uninterrupted access to the full "memory space" of logically created grains, whether they are in physical memory at any given time.
+The runtime activates a grain only when there's a message for it to process. This cleanly separates creating a grain reference (controlled by application code) and physical activation of the grain in memory (transparent to the application). This is similar to [virtual memory](https://wikipedia.org/wiki/Virtual_memory) where the OS decides when to bring pages into memory and when to evict pages from memory. Similarly, in Orleans, the runtime decides when to activate a grain (bringing it into memory) and when to deactivate a grain (evicting it from memory). The application has uninterrupted access to the full "memory space" of logically created grains, whether they are in physical memory at any given time.
 
 Transparent activation enables dynamic, adaptive load balancing via placement and migration of grains across the pool of hardware resources. This feature significantly improves on the traditional actor model, where actor lifetime is application-managed.
 

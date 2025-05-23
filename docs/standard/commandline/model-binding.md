@@ -1,5 +1,5 @@
 ---
-title: How to bind arguments to handlers in System.CommandLine
+title: How to bind arguments to actions in System.CommandLine
 description: "Learn how to do model-binding in apps that are built with the System.Commandline library."
 ms.date: 05/24/2022
 no-loc: [System.CommandLine]
@@ -9,11 +9,11 @@ helpviewer_keywords:
   - "System.CommandLine"
 ms.topic: how-to
 ---
-# How to bind arguments to handlers in System.CommandLine
+# How to bind arguments to actions in System.CommandLine
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-The process of parsing arguments and providing them to command handler code is called *parameter binding*. `System.CommandLine` has the ability to bind many argument types built in. For example, integers, enums, and file system objects such as <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> can be bound. Several `System.CommandLine` types can also be bound.
+The process of parsing arguments and providing them to command action code is called *parameter binding*. `System.CommandLine` has the ability to parse many argument types built in. For example, integers, enums, and file system objects such as <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> can be parsed and exposed to the command action via `ParseResult` type.
 
 ## Built-in argument validation
 
@@ -45,68 +45,41 @@ This behavior can be overridden by setting <xref:System.CommandLine.Option.Allow
 myapp --item one --item two --item three
 ```
 
-## Parameter binding up to 8 options and arguments
+## Explicit parameter binding
 
-The following example shows how to bind options to command handler parameters, by calling <xref:System.CommandLine.Handler.SetHandler%2A>:
+The following example shows how to bind options to command action, by calling <xref:System.CommandLine.ParseResult.GetValue%2A>:
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="10-15" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="13-16" :::
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstringhandler" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstringaction" :::
 
-The lambda parameters are variables that represent the values of options and arguments:
+The lambda parameter is just the `ParseResult` are option and argument values are obtained via `GetValue` method call:
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="lambda" :::
 
-The variables that follow the lambda represent the option and argument objects that are the sources of the option and argument values:
+### Complex types
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="services" :::
+There are two ways to bind complex types. The first is to create a custom type from parsed values in the command action. The second is to use a custom parser.
 
- The options and arguments must be declared in the same order in the lambda and in the parameters that follow the lambda. If the order is not consistent, one of the following scenarios will result:
-
-* If the out-of-order options or arguments are of different types, a run-time exception is thrown. For example, an `int` might appear where a `string` should be in the list of sources.
-* If the out-of-order options or arguments are of the same type, the handler silently gets the wrong values in the parameters provided to it. For example, `string` option `x` might appear where `string` option `y` should be in the list of sources. In that case, the variable for the option `y` value gets the option `x` value.
-
-There are overloads of <xref:System.CommandLine.Handler.SetHandler%2A> that support up to 8 parameters, with both synchronous and asynchronous signatures.
-
-## Parameter binding more than 8 options and arguments
-
-To handle more than 8 options, or to construct a custom type from multiple options, you can use `InvocationContext` or a custom binder.
-
-### Use `InvocationContext`
-
-A <xref:System.CommandLine.Handler.SetHandler%2A> overload provides access to the <xref:System.CommandLine.Invocation.InvocationContext> object, and you can use `InvocationContext` to get any number of option and argument values. For examples, see [Set exit codes](#set-exit-codes) and [Handle termination](handle-termination.md).
-
-### Use a custom binder
-
-A custom binder lets you combine multiple option or argument values into a complex type and pass that into a single handler parameter. Suppose you have a `Person` type:
+Suppose you have a `Person` type:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="persontype" :::
 
-Create a class derived from <xref:System.CommandLine.Binding.BinderBase%601>, where `T` is the type to construct based on command line input:
+Just read the values and create an instance of `Person` in the command action:
 
-:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="personbinder" :::
+:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="setaction" :::
 
-With the custom binder, you can get your custom type passed to your handler the same way you get values for options and arguments:
+With the custom parser, you can get a custom type the same way you get primitive values:
 
-:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="sethandler" :::
-
-Here's the complete program that the preceding examples are taken from:
-
-:::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="all" :::
+:::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="personoption" :::
 
 ## Set exit codes
 
-There are <xref:System.Threading.Tasks.Task>-returning [Func](xref:System.Func%601) overloads of <xref:System.CommandLine.Handler.SetHandler%2A>. If your handler is called from async code, you can return a [`Task<int>`](xref:System.Threading.Tasks.Task%601) from a handler that uses one of these, and use the `int` value to set the process exit code, as in the following example:
+There are `void` and <xref:System.Threading.Tasks.Task>-returning [Func](xref:System.Func%601) overloads of <xref:System.CommandLine.Command.SetAction%2A>. If your action is called from async code, you can return an `int` or a [`Task<int>`](xref:System.Threading.Tasks.Task%601) from the delegate that uses one of these, and just return the exit code, as in the following example:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ReturnExitCode.cs" id="returnexitcode" :::
 
-However, if the lambda itself needs to be async, you can't return a `Task<int>`. In that case, use <xref:System.CommandLine.Invocation.InvocationContext.ExitCode?displayProperty=nameWithType>. You can get the `InvocationContext` instance injected into your lambda by using a SetHandler overload that specifies the `InvocationContext` as the sole parameter. This `SetHandler` overload doesn't let you specify `IValueDescriptor<T>` objects, but you can get option and argument values from the [ParseResult](#parseresult) property of `InvocationContext`, as shown in the following example:
-
-:::code language="csharp" source="snippets/model-binding/csharp/ContextExitCode.cs" id="contextexitcode" :::
-
-If you don't have asynchronous work to do, you can use the <xref:System.Action> overloads. In that case, set the exit code by using `InvocationContext.ExitCode` the same way you would with an async lambda.
-
-The exit code defaults to 1. If you don't set it explicitly, its value is set to 0 when your handler exits normally. If an exception is thrown, it keeps the default value.
+The exit code defaults to 1. If you don't set it explicitly, its value is set to 0 when your action exits normally. If an exception is thrown, it keeps the default value.
 
 ## Supported types
 
@@ -134,7 +107,7 @@ Red
 
 Many common types that implement <xref:System.Collections.IEnumerable> are supported. For example:
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="ienumerable" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="arrays" :::
 
 Here's sample command-line input and resulting output from the preceding example:
 
@@ -143,7 +116,6 @@ Here's sample command-line input and resulting output from the preceding example
 ```
 
 ```output
-System.Collections.Generic.List`1[System.String]
 one
 two
 three
@@ -171,48 +143,30 @@ Many types that have a constructor that takes a single string parameter can be b
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="uri" :::
 
-Besides the file system types and `Uri`, the following types are supported:
+Besides the file system types and `string`, the following types are supported:
 
 * `bool`
-* `byte`
-* `DateTime`
-* `DateTimeOffset`
+* `byte` and `sbyte`
+* `short` and `ushort`
+* `int` and `uint`
+* `long` and`
+* `float` and `double`
 * `decimal`
-* `double`
-* `float`
+* `DateTime` and `DateTimeOffset`
+* `DateOnly`and `TimeOnly`
 * `Guid`
-* `int`
-* `long`
-* `sbyte`
-* `short`
-* `uint`
-* `ulong`
-* `ushort`
-
-## Use System.CommandLine objects
-
-There's a `SetHandler` overload that gives you access to the <xref:System.CommandLine.Invocation.InvocationContext> object. That object can then be used to access other `System.CommandLine` objects. For example, you have access to the following objects:
-
-* <xref:System.CommandLine.Invocation.InvocationContext>
-* <xref:System.Threading.CancellationToken>
-* <xref:System.CommandLine.IConsole>
-* <xref:System.CommandLine.Parsing.ParseResult>
-
-### `InvocationContext`
-
-For examples, see [Set exit codes](#set-exit-codes) and [Handle termination](handle-termination.md).
 
 ### `CancellationToken`
 
 For information about how to use <xref:System.Threading.CancellationToken>, see [How to handle termination](handle-termination.md).
 
-### `IConsole`
+### `CommandLineConfiguration`
 
-<xref:System.CommandLine.IConsole> makes testing as well as many extensibility scenarios easier than using `System.Console`. It's available in the <xref:System.CommandLine.Invocation.InvocationContext.Console?displayProperty=nameWithType> property.
+<xref:System.CommandLine.CommandLineConfiguration> makes testing as well as many extensibility scenarios easier than using `System.Console`. It exposes two `TextWriter` properties: `Output` and `Error`. They can be set to any `TextWriter` instance, such as a `StringWriter`, which can be used to capture output for testing. An instance of `CommandLineConfiguration` can be obtained from `ParseResult`.
 
 ### `ParseResult`
 
-The <xref:System.CommandLine.Parsing.ParseResult> object is available in the <xref:System.CommandLine.Invocation.InvocationContext.ParseResult?displayProperty=nameWithType> property. It's a singleton structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get the <xref:System.CommandLine.Parsing.ParseResult.UnmatchedTokens?displayProperty=nameWithType> property. This property contains a list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
+The <xref:System.CommandLine.Parsing.ParseResult> object is available in the command action. It's a structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get the <xref:System.CommandLine.Parsing.ParseResult.UnmatchedTokens?displayProperty=nameWithType> property. This property contains a list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
 
 The list of unmatched tokens is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
 
@@ -222,21 +176,19 @@ sudo -u admin apt update
 
 This command line would run the `apt update` command as the user `admin`.
 
-To implement a wrapper command like this one, set the command property <xref:System.CommandLine.Command.TreatUnmatchedTokensAsErrors> to `false`. Then the `ParseResult.UnmatchedTokens` property will contain all of the arguments that don't explicitly belong to the command. In the preceding example, `ParseResult.UnmatchedTokens` would contain the `apt` and `update` tokens. Your command handler could then forward the `UnmatchedTokens` to a new shell invocation, for example.
+To implement a wrapper command like this one, set the command property <xref:System.CommandLine.Command.TreatUnmatchedTokensAsErrors> to `false`. Then the `ParseResult.UnmatchedTokens` property will contain all of the arguments that don't explicitly belong to the command. In the preceding example, `ParseResult.UnmatchedTokens` would contain the `apt` and `update` tokens. Your command action could then forward the `UnmatchedTokens` to a new shell invocation, for example.
 
-## Custom validation and binding
+## Custom validation and parsing
 
-To provide custom validation code, call <xref:System.CommandLine.Option.AddValidator%2A> on your command, option, or argument, as shown in the following example:
+To provide custom validation code, call <xref:System.CommandLine.Option.Validators.Add%2A> on your command, option, or argument, as shown in the following example:
 
 :::code language="csharp" source="snippets/model-binding/csharp/AddValidator.cs" id="delayOption" :::
 
-If you want to parse as well as validate the input, use a <xref:System.CommandLine.Parsing.ParseArgument%601> delegate, as shown in the following example:
+If you want to parse as well as validate the input, use a `CustomParser` delegate, as shown in the following example:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="delayOption" :::
 
-The preceding code sets `isDefault` to `true` so that the `parseArgument` delegate will be called even if the user didn't enter a value for this option.
-
-Here are some examples of what you can do with `ParseArgument<T>` that you can't do with `AddValidator`:
+Here are some examples of what you can do with `CustomParser` that you can't do with `AddValidator`:
 
 * Parsing of custom types, such as the `Person` class in the following example:
 

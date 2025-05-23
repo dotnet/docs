@@ -2,39 +2,45 @@
 
 // <all>
 using System.CommandLine;
-using System.CommandLine.Binding;
 
 public class Program
 {
-    internal static async Task Main(string[] args)
+    internal static void Main(string[] args)
     {
-        var fileOption = new Option<FileInfo?>(
-              name: "--file",
-              description: "An option whose argument is parsed as a FileInfo",
-              getDefaultValue: () => new FileInfo("scl.runtimeconfig.json"));
+        Option<FileInfo?> fileOption = new("--file")
+        {
+            Description = "An option whose argument is parsed as a FileInfo",
+            DefaultValueFactory = result => new FileInfo("scl.runtimeconfig.json"),
+        };
+        Option<string> firstNameOption = new("--first-name")
+        {
+            Description = "Person.FirstName"
+        };
+        Option<string> lastNameOption = new("--last-name")
+        {
+            Description = "Person.LastName"
+        };
 
-        var firstNameOption = new Option<string>(
-              name: "--first-name",
-              description: "Person.FirstName");
+        RootCommand rootCommand = new()
+        {
+            fileOption,
+            firstNameOption,
+            lastNameOption
+        };
 
-        var lastNameOption = new Option<string>(
-              name: "--last-name",
-              description: "Person.LastName");
-
-        var rootCommand = new RootCommand();
-        rootCommand.Add(fileOption);
-        rootCommand.Add(firstNameOption);
-        rootCommand.Add(lastNameOption);
-
-        // <sethandler>
-        rootCommand.SetHandler((fileOptionValue, person) =>
+        // <setaction>
+        rootCommand.SetAction(parseResult =>
+        {
+            Person person = new()
             {
-                DoRootCommand(fileOptionValue, person);
-            },
-            fileOption, new PersonBinder(firstNameOption, lastNameOption));
-        // </sethandler>
+                FirstName = parseResult.GetValue(firstNameOption),
+                LastName = parseResult.GetValue(lastNameOption)
+            };
+            DoRootCommand(parseResult.GetValue(fileOption), person);
+        });
+        // </setaction>
 
-        await rootCommand.InvokeAsync(args);
+        rootCommand.Parse(args).Invoke();
     }
 
     public static void DoRootCommand(FileInfo? aFile, Person aPerson)
@@ -50,26 +56,5 @@ public class Program
         public string? LastName { get; set; }
     }
     // </persontype>
-
-    // <personbinder>
-    public class PersonBinder : BinderBase<Person>
-    {
-        private readonly Option<string> _firstNameOption;
-        private readonly Option<string> _lastNameOption;
-
-        public PersonBinder(Option<string> firstNameOption, Option<string> lastNameOption)
-        {
-            _firstNameOption = firstNameOption;
-            _lastNameOption = lastNameOption;
-        }
-
-        protected override Person GetBoundValue(BindingContext bindingContext) =>
-            new Person
-            {
-                FirstName = bindingContext.ParseResult.GetValueForOption(_firstNameOption),
-                LastName = bindingContext.ParseResult.GetValueForOption(_lastNameOption)
-            };
-    }
-    // </personbinder>
 }
 // </all>

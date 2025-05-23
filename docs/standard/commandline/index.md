@@ -50,5 +50,4 @@ To learn more, see the following resources:
 * [How to enable and customize tab completion](tab-completion.md)
 * [How to customize help](customize-help.md)
 * [How to handle termination](handle-termination.md)
-* [How to write middleware and directives](use-middleware.md)
 * [System.CommandLine API reference](xref:System.CommandLine)

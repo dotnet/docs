@@ -46,22 +46,3 @@ The simple message stream provider, also known as the SMS provider, delivers eve
 ## See also
 
 - [Orleans streams implementation details](../implementation/streams-implementation/index.md)
-
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-7-0"
-<!-- markdownlint-enable MD044 -->
-:::zone-end
-
-<!-- markdownlint-disable MD044 -->
-:::zone target="docs" pivot="orleans-3-x"
-<!-- markdownlint-enable MD044 -->
-
-## Simple message stream provider
-
-The simple message stream provider, also known as the SMS provider, delivers events over TCP by utilizing regular Orleans grain messaging. Since events in SMS are delivered over unreliable TCP links, SMS does _not_ guarantee reliable event delivery and does not automatically resend failed messages for SMS streams. By default, the producer's call to <xref:Orleans.Streams.IAsyncObserver%601.OnNextAsync%2A> returns a `Task` that represents the processing status of the stream consumer, which tells the producer whether the consumer successfully received and processed the event. If this task fails, the producer can decide to send the same event again, thus achieving reliability on the application level. Although stream message delivery is the best effort, SMS streams themselves are reliable. That is, the subscriber-to-producer binding performed by Pub-Sub is fully reliable.
-
-:::zone-end
-
-## See also
-
-[Orleans Streams Implementation Details](../implementation/streams-implementation/index.md)

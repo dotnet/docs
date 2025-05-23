@@ -58,8 +58,8 @@ These examples demonstrate using the <xref:Orleans.GenerateCodeForDeclaringAssem
 
 The preferred method for code generation is at build time. Enable build-time code generation using one of the following packages:
 
-+   `Microsoft.Orleans.OrleansCodeGenerator.Build`: A package using Roslyn for code generation and .NET Reflection for analysis.
-+   `Microsoft.Orleans.CodeGenerator.MSBuild`: A newer code generation package leveraging Roslyn for both code generation and analysis. It doesn't load application binaries, avoiding issues caused by clashing dependency versions and differing target frameworks. This code generator also improves support for incremental builds, resulting in shorter build times.
+- `Microsoft.Orleans.OrleansCodeGenerator.Build`: A package using Roslyn for code generation and .NET Reflection for analysis.
+- `Microsoft.Orleans.CodeGenerator.MSBuild`: A newer code generation package leveraging Roslyn for both code generation and analysis. It doesn't load application binaries, avoiding issues caused by clashing dependency versions and differing target frameworks. This code generator also improves support for incremental builds, resulting in shorter build times.
 
 Install one of these packages into all projects containing grains, grain interfaces, custom serializers, or types sent between grains. Installing a package injects a target into the project that generates code at build time.
 

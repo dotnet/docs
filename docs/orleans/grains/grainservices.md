@@ -117,6 +117,7 @@ A <xref:Orleans.Runtime.GrainService> is a special grain: it has no stable ident
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
+
 4. Create the grain service client. Clients typically act as proxies for the grain services they target, so you usually add a method for each method on the target service. These methods need to get a reference to the target grain service so they can call into it. The `GrainServiceClient<T>` base class provides several overloads of the `GetGrainService` method that can return a grain reference corresponding to a `GrainId`, a numeric hash (`uint`), or a `SiloAddress`. The latter two overloads are for advanced cases where you want to use a different mechanism to map responsibility to hosts or address a host directly. In the sample code below, we define a property, `GrainService`, which returns the `IDataService` for the grain calling the `DataServiceClient`. To do that, we use the `GetGrainService(GrainId)` overload in conjunction with the `CurrentGrainReference` property.
 
     ```csharp

@@ -42,7 +42,7 @@ Extensive documentation on setting up a stable Consul cluster is available in th
 
     Many other parameters exist, including the option to use a JSON configuration file. See the Consul documentation for a full listing.
 
-5.  Verify Consul is running and ready to accept membership requests from Orleans by opening the services endpoint in your browser at `http://localhost:8500/v1/catalog/services`. When functioning correctly, the browser displays the following JSON:
+5. Verify Consul is running and ready to accept membership requests from Orleans by opening the services endpoint in your browser at `http://localhost:8500/v1/catalog/services`. When functioning correctly, the browser displays the following JSON:
 
     ```json
     {
@@ -145,7 +145,7 @@ This warning message appears due to a lack of focus on testing when running in a
 
 ## Potential future enhancements
 
-1.  Prove the Consul KV replication project can support an Orleans cluster in a WAN environment between multiple Consul data centers.
-2.  Implement the Reminder Table in Consul.
-3.  Implement the Extended Membership Protocol.
+1. Prove the Consul KV replication project can support an Orleans cluster in a WAN environment between multiple Consul data centers.
+2. Implement the Reminder Table in Consul.
+3. Implement the Extended Membership Protocol.
 The team behind Consul plans to implement atomic operations. Once this functionality is available, removing the limitations in the provider might be possible.

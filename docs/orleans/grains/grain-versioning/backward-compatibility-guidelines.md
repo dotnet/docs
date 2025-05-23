@@ -131,7 +131,7 @@ public interface MyGrain : IMyGrain
 
 Unless you're sure they're no longer used, don't remove methods from the grain interface. If you want to remove methods, do it in two steps:
 
-1.  Deploy V2 grains, with the V1 method marked as `Obsolete`.
+1. Deploy V2 grains, with the V1 method marked as `Obsolete`.
 
     ```csharp
     [Version(1)]
@@ -155,7 +155,7 @@ Unless you're sure they're no longer used, don't remove methods from the grain i
     }
     ```
 
-2.  When you're sure no V1 calls are being made (effectively, V1 is no longer deployed in the running cluster), deploy V3 with the V1 method removed.
+2. When you're sure no V1 calls are being made (effectively, V1 is no longer deployed in the running cluster), deploy V3 with the V1 method removed.
 
     ```csharp
     [Version(3)]

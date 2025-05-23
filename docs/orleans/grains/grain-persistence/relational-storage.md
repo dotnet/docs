@@ -12,9 +12,9 @@ Relational storage backend code in Orleans builds on generic ADO.NET functionali
 
 To make Orleans code function with a given relational database backend, you need the following:
 
-1.  Load the appropriate ADO.NET library into the process. Define this as usual, for example, via the [DbProviderFactories](../../../framework/data/adonet/obtaining-a-dbproviderfactory.md) element in the application configuration.
-2.  Configure the ADO.NET invariant via the `Invariant` property in the options.
-3.  Ensure the database exists and is compatible with the code. Do this by running a vendor-specific database creation script. For more information, see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md).
+1. Load the appropriate ADO.NET library into the process. Define this as usual, for example, via the [DbProviderFactories](../../../framework/data/adonet/obtaining-a-dbproviderfactory.md) element in the application configuration.
+2. Configure the ADO.NET invariant via the `Invariant` property in the options.
+3. Ensure the database exists and is compatible with the code. Do this by running a vendor-specific database creation script. For more information, see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md).
 
 The ADO.NET grain storage provider allows you to store grain state in relational databases. Currently, the following databases are supported:
 
@@ -182,12 +182,12 @@ Creating a new backend should ideally be as simple as translating an existing de
 
 The Orleans framework doesn't know about deployment-specific hardware (which might change during active deployment), data changes during the deployment lifecycle, or certain vendor-specific features usable only in specific situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, ensure robustness against misuse, and facilitate testing. See [Runtime tables](../implementation/runtime-tables.md), [Cluster management](../implementation/cluster-management.md), and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contains SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
 
-1.  The general idea is that data is read and written through Orleans-specific queries. Orleans operates on column names and types when reading, and on parameter names and types when writing.
-2.  Implementations **must** preserve input and output names and types. Orleans uses these parameters to read query results by name and type. Vendor-specific and deployment-specific tuning is allowed, and contributions are encouraged as long as the interface contract is maintained.
-3.  Implementations across vendor-specific scripts **should** preserve constraint names. This simplifies troubleshooting through uniform naming across concrete implementations.
-4.  **Version** – or **ETag** in application code – represents a unique version for Orleans. The type of its actual implementation isn't important as long as it represents a unique version. In the implementation, Orleans code expects a signed 32-bit integer.
-5.  To be explicit and remove ambiguity, Orleans expects some queries to return either **TRUE as > 0** value or **FALSE as = 0** value. The number of affected or returned rows doesn't matter. If an error is raised or an exception is thrown, the query **must** ensure the entire transaction rolls back and can either return FALSE or propagate the exception.
-6.  Currently, all but one query are single-row inserts or updates (note: you could replace `UPDATE` queries with `INSERT`, provided the associated `SELECT` queries performed the last write).
+1. The general idea is that data is read and written through Orleans-specific queries. Orleans operates on column names and types when reading, and on parameter names and types when writing.
+2. Implementations **must** preserve input and output names and types. Orleans uses these parameters to read query results by name and type. Vendor-specific and deployment-specific tuning is allowed, and contributions are encouraged as long as the interface contract is maintained.
+3. Implementations across vendor-specific scripts **should** preserve constraint names. This simplifies troubleshooting through uniform naming across concrete implementations.
+4. **Version** – or **ETag** in application code – represents a unique version for Orleans. The type of its actual implementation isn't important as long as it represents a unique version. In the implementation, Orleans code expects a signed 32-bit integer.
+5. To be explicit and remove ambiguity, Orleans expects some queries to return either **TRUE as > 0** value or **FALSE as = 0** value. The number of affected or returned rows doesn't matter. If an error is raised or an exception is thrown, the query **must** ensure the entire transaction rolls back and can either return FALSE or propagate the exception.
+6. Currently, all but one query are single-row inserts or updates (note: you could replace `UPDATE` queries with `INSERT`, provided the associated `SELECT` queries performed the last write).
 
 Database engines support in-database programming. This is similar to loading an executable script and invoking it to execute database operations. In pseudocode, it could be depicted as:
 
@@ -207,8 +207,8 @@ These principles are also [included in the database scripts](../../host/configur
 
 ## Ideas for applying customized scripts
 
-1.  Alter scripts in `OrleansQuery` for grain persistence using `IF ELSE` so that some state saves using the default `INSERT`, while other grain states might use [memory-optimized tables](/sql/relational-databases/in-memory-oltp/memory-optimized-tables). Alter the `SELECT` queries accordingly.
-2.  Use the idea in `1.` to take advantage of other deployment- or vendor-specific aspects, such as splitting data between `SSD` and `HDD`, putting some data in encrypted tables, or perhaps inserting statistics data via SQL Server-to-Hadoop or even [linked servers](/sql/relational-databases/linked-servers/linked-servers-database-engine).
+1. Alter scripts in `OrleansQuery` for grain persistence using `IF ELSE` so that some state saves using the default `INSERT`, while other grain states might use [memory-optimized tables](/sql/relational-databases/in-memory-oltp/memory-optimized-tables). Alter the `SELECT` queries accordingly.
+2. Use the idea in `1.` to take advantage of other deployment- or vendor-specific aspects, such as splitting data between `SSD` and `HDD`, putting some data in encrypted tables, or perhaps inserting statistics data via SQL Server-to-Hadoop or even [linked servers](/sql/relational-databases/linked-servers/linked-servers-database-engine).
 
 You can test the altered scripts by running the Orleans test suite or directly in the database using, for instance, a [SQL Server Unit Test Project](/previous-versions/sql/sql-server-data-tools/jj851212(v=vs.103)).
 

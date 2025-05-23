@@ -45,5 +45,5 @@ await RefreshNow();
 
 This call does two things:
 
-1.  Confirms all unconfirmed events.
-2.  Loads the latest version from storage.
+1. Confirms all unconfirmed events.
+2. Loads the latest version from storage.

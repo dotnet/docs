@@ -24,8 +24,8 @@ The distributed grain directory in Orleans offers strong consistency, even load 
 
 Directory partitions have two modes of operation:
 
-1.  **Normal operation**: Partitions process requests locally without coordination with other hosts.
-2.  **View change**: Hosts coordinate with each other to transfer ownership of directory ranges.
+1. **Normal operation**: Partitions process requests locally without coordination with other hosts.
+2. **View change**: Hosts coordinate with each other to transfer ownership of directory ranges.
 
 The directory leverages Orleans' strong consistency cluster membership system, where configurations called "views" have monotonically increasing version numbers. As silos join and leave the cluster, successive views are created, resulting in changes to range ownership.
 
@@ -57,18 +57,18 @@ When a view change occurs, a partition can either grow or shrink:
 
 Directory registrations must transfer from the old owner to the new owner before requests can be served. The transfer process follows these steps:
 
-1.  The previous owner seals the range and creates a snapshot of its directory entries.
-2.  The new owner requests and applies the snapshot.
-3.  The new owner begins servicing requests for the range.
-4.  The previous owner is notified and deletes the snapshot.
+1. The previous owner seals the range and creates a snapshot of its directory entries.
+2. The new owner requests and applies the snapshot.
+3. The new owner begins servicing requests for the range.
+4. The previous owner is notified and deletes the snapshot.
 
 ### Recovery process
 
 When a host crashes without properly handing off its directory partitions, the subsequent partition owners must perform recovery. This involves:
 
-1.  Querying all active silos in the cluster for their grain registrations.
-2.  Rebuilding the directory state for affected ranges.
-3.  Ensuring no duplicate grain activations occur.
+1. Querying all active silos in the cluster for their grain registrations.
+2. Rebuilding the directory state for affected ranges.
+3. Ensuring no duplicate grain activations occur.
 
 Recovery is also necessary when cluster membership changes rapidly. While cluster membership guarantees monotonicity, it's possible for silos to miss intermediate membership views. In such cases:
 

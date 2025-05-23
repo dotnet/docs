@@ -28,10 +28,10 @@ It goes almost without saying that such a system must run on several network-con
 
 Four basic requirements were identified for a Stream Processing system to target the scenarios above:
 
-1.  Flexible stream processing logic
-2.  Support for highly dynamic topologies
-3.  Fine-grained stream granularity
-4.  Distribution
+1. Flexible stream processing logic
+2. Support for highly dynamic topologies
+3. Fine-grained stream granularity
+4. Distribution
 
 #### Flexible stream processing logic
 
@@ -59,11 +59,11 @@ The unit of abstraction and flexibility argument is similar to comparing SoA (Se
 
 And of course, the system should have all the properties of a **"good distributed system"**. That includes:
 
-1.  _Scalability_: Supports a large number of streams and compute elements.
-2.  _Elasticity_: Allows adding/removing resources to grow/shrink based on load.
-3.  _Reliability_: Resilient to failures.
-4.  _Efficiency_: Uses underlying resources efficiently.
-5.  _Responsiveness_: Enables near-real-time scenarios.
+1. _Scalability_: Supports a large number of streams and compute elements.
+2. _Elasticity_: Allows adding/removing resources to grow/shrink based on load.
+3. _Reliability_: Resilient to failures.
+4. _Efficiency_: Uses underlying resources efficiently.
+5. _Responsiveness_: Enables near-real-time scenarios.
 
 These were the requirements for building [**Orleans Streaming**](index.md).
 

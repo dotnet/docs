@@ -73,13 +73,13 @@ A negative `timeSpan` value means "cancel the previous setting of the `DelayDeac
 
 **Scenarios:**
 
-1.  Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(20))`. This causes the activation not to be collected for at least 20 minutes.
+1. Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(20))`. This causes the activation not to be collected for at least 20 minutes.
 
-2.  Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(5))`. The activation will be collected after 10 minutes if no further calls are made.
+2. Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(5))`. The activation will be collected after 10 minutes if no further calls are made.
 
-3.  Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(5))`. After 7 minutes, another call arrives for this grain. The activation will be collected after 17 minutes from time zero if no further calls are made.
+3. Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(5))`. After 7 minutes, another call arrives for this grain. The activation will be collected after 17 minutes from time zero if no further calls are made.
 
-4.  Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(20))`. After 7 minutes, another call arrives for this grain. The activation will be collected after 20 minutes from time zero if no further calls are made.
+4. Activation collection settings specify an age limit of 10 minutes, and the grain calls `DelayDeactivation(TimeSpan.FromMinutes(20))`. After 7 minutes, another call arrives for this grain. The activation will be collected after 20 minutes from time zero if no further calls are made.
 
 `DelayDeactivation` doesn't 100% guarantee the grain activation won't be deactivated before the specified time expires. Certain failure cases might cause 'premature' deactivation of grains. This means `DelayDeactivation` **cannot be used as a means to 'pin' a grain activation in memory forever or to a specific silo**. `DelayDeactivation` is merely an optimization mechanism that can help reduce the aggregate cost of a grain being deactivated and reactivated over time. In most cases, you shouldn't need to use `DelayDeactivation` at all.
 

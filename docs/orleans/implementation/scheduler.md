@@ -10,8 +10,8 @@ ms.service: orleans
 
 Two forms of scheduling in Orleans are relevant to grains:
 
-1.  **Request scheduling**: Scheduling incoming grain calls for execution according to rules discussed in [Request scheduling](../grains/request-scheduling.md).
-2.  **Task scheduling**: Scheduling synchronous blocks of code to execute in a *single-threaded* manner.
+1. **Request scheduling**: Scheduling incoming grain calls for execution according to rules discussed in [Request scheduling](../grains/request-scheduling.md).
+2. **Task scheduling**: Scheduling synchronous blocks of code to execute in a *single-threaded* manner.
 
 All grain code executes on the grain's task scheduler, meaning requests also execute on the grain's task scheduler. Even if request scheduling rules allow multiple requests to execute *concurrently*, they won't execute *in parallel* because the grain's task scheduler always executes tasks one by one and never executes multiple tasks in parallel.
 
@@ -44,8 +44,8 @@ public class MyGrain : Grain, IMyGrain
 
 When this method executes, the method body executes in two parts:
 
-1.  The first `_logger.LogInformation(...)` call and the call to `Task.Delay(1_000)`.
-2.  The second `_logger.LogInformation(...)` call.
+1. The first `_logger.LogInformation(...)` call and the call to `Task.Delay(1_000)`.
+2. The second `_logger.LogInformation(...)` call.
 
 The second task isn't scheduled on the grain's task scheduler until the `Task.Delay(1_000)` call completes. At that point, it schedules the *continuation* of the grain method.
 
@@ -55,8 +55,8 @@ Here's a graphical representation of how a request is scheduled and executed as 
 
 The description above isn't specific to Orleans; it describes how task scheduling works in .NET. The C# compiler converts asynchronous methods into an asynchronous state machine, and execution progresses through this state machine in discrete steps. Each step schedules on the current <xref:System.Threading.Tasks.TaskScheduler> (accessed via <xref:System.Threading.Tasks.TaskScheduler.Current?displayProperty=nameWithType>, defaulting to <xref:System.Threading.Tasks.TaskScheduler.Default?displayProperty=nameWithType>) or the current <xref:System.Threading.SynchronizationContext>. If a `TaskScheduler` is used, each step in the method represents a `Task` instance passed to that `TaskScheduler`. Therefore, a `Task` in .NET can represent two conceptual things:
 
-1.  An asynchronous operation that can be awaited. The execution of the `DelayExecution()` method above is represented by a `Task` that can be awaited.
-2.  A synchronous block of work. Each stage within the `DelayExecution()` method above is represented by a `Task`.
+1. An asynchronous operation that can be awaited. The execution of the `DelayExecution()` method above is represented by a `Task` that can be awaited.
+2. A synchronous block of work. Each stage within the `DelayExecution()` method above is represented by a `Task`.
 
 When `TaskScheduler.Default` is used, continuations schedule directly onto the .NET <xref:System.Threading.ThreadPool> and aren't wrapped in a `Task` object. The wrapping of continuations in `Task` instances occurs transparently, so developers rarely need to be aware of these implementation details.
 

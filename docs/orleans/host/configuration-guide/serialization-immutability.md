@@ -45,7 +45,7 @@ public class MyImmutableType
 
 Sometimes, you might not control the object; for example, it might be a `List<int>` you're sending between grains. Other times, parts of your objects might be immutable while others aren't. For these cases, Orleans supports additional options.
 
-1.  Method signatures can include <xref:Orleans.ImmutableAttribute> on a per-parameter basis:
+1. Method signatures can include <xref:Orleans.ImmutableAttribute> on a per-parameter basis:
 
     ```csharp
     public interface ISummerGrain : IGrain
@@ -55,7 +55,7 @@ Sometimes, you might not control the object; for example, it might be a `List<in
     }
     ```
 
-2.  Mark individual properties and fields as <xref:Orleans.ImmutableAttribute> to prevent copies when instances of the containing type are copied.
+2. Mark individual properties and fields as <xref:Orleans.ImmutableAttribute> to prevent copies when instances of the containing type are copied.
 
     ```csharp
     [GenerateSerializer]

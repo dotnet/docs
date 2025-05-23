@@ -18,7 +18,7 @@ The Orleans programming model raises productivity, regardless of expertise level
 
 ### Familiar object-oriented programming (OOP) paradigm
 
-Grains are .NET classes implementing declared .NET grain interfaces with asynchronous methods. Grains appear as remote objects whose methods can be directly invoked. This provides the familiar OOP paradigm by turning method calls into messages, routing them to the right endpoints, invoking the target grain's methods, and transparently handling failures and corner cases.
+Grains are .NET classes that implement declared .NET grain interfaces with asynchronous methods. Grains appear as remote objects whose methods can be directly invoked. This provides the familiar OOP paradigm by turning method calls into messages, routing them to the right endpoints, invoking the target grain's methods, and transparently handling failures and corner cases.
 
 ### Single-threaded execution of grains
 
@@ -26,7 +26,7 @@ The runtime guarantees a grain never executes on more than one thread at a time.
 
 ### Transparent activation
 
-The runtime activates a grain only when there's a message for it to process. This cleanly separates creating a grain reference (controlled by application code) and physical activation of the grain in memory (transparent to the application). This is similar to virtual memory deciding when to "page out" (deactivate) or "page in" (activate) a grain. The application has uninterrupted access to the full "memory space" of logically created grains, whether they are in physical memory at any given time.
+The runtime activates a grain only when there's a message for it to process. This cleanly separates creating a grain reference (controlled by application code) and physical activation of the grain in memory (transparent to the application). This is similar to virtual memory where the OS (runtime) decides when to "page out" (deactivate) or "page in" (activate) a grain. The application has uninterrupted access to the full "memory space" of logically created grains, whether they are in physical memory at any given time.
 
 Transparent activation enables dynamic, adaptive load balancing via placement and migration of grains across the pool of hardware resources. This feature significantly improves on the traditional actor model, where actor lifetime is application-managed.
 

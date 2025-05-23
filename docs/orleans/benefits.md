@@ -32,7 +32,7 @@ Transparent activation enables dynamic, adaptive load balancing via placement an
 
 ### Location transparency
 
-A grain reference (proxy object) used to invoke a grain's methods or pass to other components contains only the grain's logical identity. The Orleans runtime transparently handles translating the grain's logical identity to its physical location and routing messages accordingly.
+A grain reference (proxy object) that's used to invoke a grain's methods or pass to other components contains only the grain's logical identity. The Orleans runtime transparently handles translating the grain's logical identity to its physical location and routing messages accordingly.
 
 Application code communicates with grains without knowing their physical location. This location might change over time due to failures, resource management, or because a grain is deactivated when called.
 

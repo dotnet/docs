@@ -326,9 +326,8 @@ Optionally, you can verify that the cluster and state data is stored as expected
 
 1. Expand the **Tables** navigation item to discover two tables created by Orleans:
 
-  - **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
-
-  - **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
+   - **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
+   - **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
 
 1. Select the **OrleansGrainState** table. The table holds a row entry for every URL redirect persisted by the app during your testing.
 

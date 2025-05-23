@@ -2,6 +2,7 @@
 title: "Breaking change: ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
 description: Learn about the breaking change in .NET 10 where the ProviderAliasAttribute class moved from the Microsoft.Extensions.Logging assembly to the Microsoft.Extensions.Logging.Abstractions assembly.
 ms.date: 05/19/2025
+ai-usage: ai-assisted
 ---
 
 # ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions

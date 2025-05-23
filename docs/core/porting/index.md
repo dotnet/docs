@@ -27,7 +27,7 @@ Consider the following dependencies before you migrate a Windows Forms or WPF ap
 
 For tutorials on migrating your desktop application to .NET, see one of the following articles:
 
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [How to upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/)
 
 ## Windows-specific APIs
@@ -173,6 +173,6 @@ When porting your application to .NET, consider the following suggestions in ord
 
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [How to upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/)
 - [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

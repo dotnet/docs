@@ -17,21 +17,21 @@ sections:
     questions:
       - question: What can the tool do?
         answer: |
-          Currently, app modernization - upgrade for .NET helps you upgrade your .NET projects to newer versions of .NET. The tool is an extension for Visual Studio that performs the following steps in a GitHub Copilot chat session:
+          Currently, GitHub Copilot app modernization - upgrade for .NET helps you upgrade your .NET projects to newer versions of .NET. The tool is an extension for Visual Studio that performs the following steps in a GitHub Copilot chat session:
 
-          - Analyze your projects and proposes an upgrade plan.
+          - Analyzes your projects and proposes an upgrade plan.
           - According to the plan, runs a series of tasks to upgrade your projects.
           - Operates in a working branch under a local Git repository.
-          - Automatically fix issues during the code transformation.
-          - Report progress and allow access to code changes & logs.
+          - Automatically fixes issues during the code transformation.
+          - Reports progress and allow access to code changes & logs.
           - Learns from the interactive experience with you (within the context of the session) to improve subsequent transformations.
 
       - question: What can the tool upgrade?
         answer: |
-          App modernization - upgrade for .NET currently focuses on migrating your projects from one version of .NET to another. For example, upgrading from .NET Core 3.1 or .NET 6, to .NET 9. It also upgrades dependencies and fixes errors in the code post-migration.
+          GitHub Copilot app modernization - upgrade for .NET currently focuses on migrating your projects from one version of .NET to another. For example, upgrading from .NET Core 3.1 or .NET 6, to .NET 9. It also upgrades dependencies and fixes errors in the code post-migration.
 
           Besides upgrading the target framework, the tool can work with the following types of projects:
-          
+
           - Azure Functions.
           - Console apps and class libraries.
           - Web technologies such as:
@@ -44,10 +44,11 @@ sections:
 
       - question: What limitations are there?
         answer: |
-          - It doesn't support .NET Framework projects. (First upgrade the project to .NET with the [Upgrade Assistant tool](upgrade-assistant-overview.md))
+          - It doesn't support .NET Framework projects. (First upgrade the project to .NET with the [Upgrade Assistant tool](upgrade-assistant-overview.md).)
           - Only Git repositories are supported.
           - There's no guarantee that the upgrade suggestions are considered best practices.
           - The LLM doesn't persist learning from the upgrade. Meaning, code fixes and corrections you provide during the upgrade process don't persist and can't be remembered for future upgrades.
+          - It only runs on Windows.
 
       - question: What data is collected?
         answer: |
@@ -55,13 +56,13 @@ sections:
 
       - question: Can I disable telemetry?
         answer: |
-          Yes, you can disable telemetry through Visual Studio itself. In Visual Studio, select **Help** > **Privacy** > **Privacy Settings** > **"No, I would not like to participate."**
+          Yes, you can disable telemetry. In Visual Studio, select **Help** > **Privacy** > **Privacy Settings** > **"No, I would not like to participate."**
 
       - question: Can I train the model based on my code base?
         answer: |
-          No. Unlike traditional AI tools where you might enter freeform prompts, the tool operates in a more structured way. The AI is embedded within the build-and-fix process, meaning, the prompts it uses are predefined and tied to the upgrade plan. So it's not something you can train on your codebase, and it's not something you can manually steer with custom instructions, beyond the changes you can make to the plan markdown file.
+          No. Unlike traditional AI tools where you might enter freeform prompts, the tool operates in a more structured way. The AI is embedded within the build-and-fix process, meaning the prompts it uses are predefined and tied to the upgrade plan. So it's not something you can train on your codebase, and it's not something you can manually steer with custom instructions, beyond the changes you can make to the plan Markdown file.
 
-          However, the tool does have some adaptability within a session. If you manually adjust a fix, it learns from that interaction in the short term and applies similar corrections if it encounters the same issue again. Think of it as refining its approach within the scope of that upgrade. We never store a user's codebase and never use your code for training the model. Once an upgrade is complete, session data is deleted and not stored. 
+          However, the tool does have some adaptability within a session. If you manually adjust a fix, it learns from that interaction in the short term and applies similar corrections if it encounters the same issue again. Think of it as refining its approach within the scope of that upgrade. We never store a user's codebase and never use your code for training the model. Once an upgrade is complete, session data is deleted and not stored.
 
 additionalContent: |
     ## Related content

@@ -28,19 +28,19 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 5. In more detail:
 
-   1.  Suspicion is written to the `IMembershipTable`, in a special column in the row corresponding to P. When S suspects P, it writes: "at time TTT S suspected P".
+   1. Suspicion is written to the `IMembershipTable`, in a special column in the row corresponding to P. When S suspects P, it writes: "at time TTT S suspected P".
 
-   2.  One suspicion isn't enough to declare P dead. You need Z suspicions from different silos within a configurable time window T (typically 3 minutes) to declare P dead. The suspicion is written using optimistic concurrency control provided by the `IMembershipTable`.
+   2. One suspicion isn't enough to declare P dead. You need Z suspicions from different silos within a configurable time window T (typically 3 minutes) to declare P dead. The suspicion is written using optimistic concurrency control provided by the `IMembershipTable`.
 
-   3.  The suspecting silo S reads P's row.
+   3. The suspecting silo S reads P's row.
 
-   4.  If `S` is the last suspecter (there have already been Z-1 suspecters within period T, as recorded in the suspicion column), S decides to declare P dead. In this case, S adds itself to the list of suspecters and also writes in P's Status column that P is Dead.
+   4. If `S` is the last suspecter (there have already been Z-1 suspecters within period T, as recorded in the suspicion column), S decides to declare P dead. In this case, S adds itself to the list of suspecters and also writes in P's Status column that P is Dead.
 
-   5.  Otherwise, if S isn't the last suspecter, S just adds itself to the suspecter's column.
+   5. Otherwise, if S isn't the last suspecter, S just adds itself to the suspecter's column.
 
-   6.  In either case, the write-back uses the version number or ETag read previously, serializing updates to this row. If the write fails due to a version/ETag mismatch, S retries (reads again and tries to write, unless P was already marked dead).
+   6. In either case, the write-back uses the version number or ETag read previously, serializing updates to this row. If the write fails due to a version/ETag mismatch, S retries (reads again and tries to write, unless P was already marked dead).
 
-   7.  At a high level, this sequence of "read, local modify, write back" is a transaction. However, storage transactions aren't necessarily used. The "transaction" code executes locally on a server, and optimistic concurrency provided by the `IMembershipTable` ensures isolation and atomicity.
+   7. At a high level, this sequence of "read, local modify, write back" is a transaction. However, storage transactions aren't necessarily used. The "transaction" code executes locally on a server, and optimistic concurrency provided by the `IMembershipTable` ensures isolation and atomicity.
 
 6. Every silo periodically reads the entire membership table for its deployment. This way, silos learn about new silos joining and about other silos being declared dead.
 
@@ -55,14 +55,16 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
    **Implementation details**:
 
    1. The `IMembershipTable` requires atomic updates to guarantee a global total order of changes:
-  - Implementations must update both the table entries (list of silos) and the version number atomically.
-  - Achieve this using database transactions (as in SQL Server) or atomic compare-and-swap operations using ETags (as in Azure Table Storage).
-  - The specific mechanism depends on the capabilities of the underlying storage system.
+
+      - Implementations must update both the table entries (list of silos) and the version number atomically.
+      - Achieve this using database transactions (as in SQL Server) or atomic compare-and-swap operations using ETags (as in Azure Table Storage).
+      - The specific mechanism depends on the capabilities of the underlying storage system.
 
    2. A special membership-version row in the table tracks changes:
-  - Every write to the table (suspicions, death declarations, joins) increments this version number.
-  - All writes are serialized through this row using atomic updates.
-  - The monotonically increasing version ensures a total ordering of all membership changes.
+
+      - Every write to the table (suspicions, death declarations, joins) increments this version number.
+      - All writes are serialized through this row using atomic updates.
+      - The monotonically increasing version ensures a total ordering of all membership changes.
 
    3. When silo S updates the status of silo P:
 
@@ -78,26 +80,27 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 10. **Self-monitoring**: The fault detector incorporates ideas from Hashicorp's _Lifeguard_ research ([paper](https://arxiv.org/abs/1707.00788), [talk](https://www.youtube.com/watch?v=u-a7rVJ6jZY), [blog](https://www.hashicorp.com/blog/making-gossip-more-robust-with-lifeguard)) to improve cluster stability during catastrophic events where a large portion of the cluster experiences partial failure. The `LocalSiloHealthMonitor` component scores each silo's health using multiple heuristics:
 
-  - Active status in the membership table
-  - No suspicions from other silos
-  - Recent successful probe responses
-  - Recent probe requests received
-  - Thread pool responsiveness (work items executing within 1 second)
-  - Timer accuracy (firing within 3 seconds of schedule)
+   - Active status in the membership table
+   - No suspicions from other silos
+   - Recent successful probe responses
+   - Recent probe requests received
+   - Thread pool responsiveness (work items executing within 1 second)
+   - Timer accuracy (firing within 3 seconds of schedule)
 
     A silo's health score affects its probe timeouts: unhealthy silos (scoring 1-8) have increased timeouts compared to healthy silos (score 0). This provides two benefits:
-  - Gives more time for probes to succeed when the network or system is under stress.
-  - Makes it more likely that unhealthy silos are voted dead before they can incorrectly vote out healthy silos.
+
+    - Gives more time for probes to succeed when the network or system is under stress.
+    - Makes it more likely that unhealthy silos are voted dead before they can incorrectly vote out healthy silos.
 
     This is particularly valuable during scenarios like thread pool starvation, where slow nodes might otherwise incorrectly suspect healthy nodes simply because they cannot process responses quickly enough.
 
 11. **Indirect probing**: Another [Lifeguard](https://arxiv.org/abs/1707.00788)-inspired feature improving failure detection accuracy by reducing the chance that an unhealthy or partitioned silo incorrectly declares a healthy silo dead. When a monitoring silo has two probe attempts remaining for a target silo before casting a vote to declare it dead, it employs indirect probing:
 
-  - The monitoring silo randomly selects another silo as an intermediary and asks it to probe the target.
-  - The intermediary attempts to contact the target silo.
-  - If the target fails to respond within the timeout period, the intermediary sends a negative acknowledgment.
-  - If the monitoring silo receives a negative acknowledgment from the intermediary, and the intermediary declares itself healthy (through self-monitoring, described above), the monitoring silo casts a vote to declare the target dead.
-  - With the default configuration of two required votes, a negative acknowledgment from an indirect probe counts as both votes, allowing faster declaration of dead silos when multiple perspectives confirm the failure.
+   - The monitoring silo randomly selects another silo as an intermediary and asks it to probe the target.
+   - The intermediary attempts to contact the target silo.
+   - If the target fails to respond within the timeout period, the intermediary sends a negative acknowledgment.
+   - If the monitoring silo receives a negative acknowledgment from the intermediary, and the intermediary declares itself healthy (through self-monitoring, described above), the monitoring silo casts a vote to declare the target dead.
+   - With the default configuration of two required votes, a negative acknowledgment from an indirect probe counts as both votes, allowing faster declaration of dead silos when multiple perspectives confirm the failure.
 
 12. **Enforcing perfect failure detection**: Once a silo is declared dead in the table, everyone considers it dead, even if it isn't truly dead (e.g., just temporarily partitioned or heartbeat messages were lost). Everyone stops communicating with it. Once the silo learns it's dead (by reading its new status from the table), it terminates its process. Consequently, an infrastructure must be in place to restart the silo as a new process (a new epoch number is generated upon start). When hosted in Azure, this happens automatically. Otherwise, another infrastructure is required, such as a Windows Service configured to auto-restart on failure or a Kubernetes deployment.
 
@@ -108,7 +111,9 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 14. **`IAmAlive` writes for diagnostics and disaster recovery**:
 
     In addition to heartbeats sent between silos, each silo periodically updates an "I Am Alive" timestamp in its table row. This serves two purposes:
+
     1.  **Diagnostics**: Provides system administrators a simple way to check cluster liveness and determine when a silo was last active. The timestamp is typically updated every 5 minutes.
+
     2.  **Disaster recovery**: If a silo hasn't updated its timestamp for several periods (configured via `NumMissedTableIAmAliveLimit`), new silos ignore it during startup connectivity checks. This allows the cluster to recover from scenarios where silos crashed without proper cleanup.
 
 ### Membership table
@@ -135,45 +140,45 @@ A natural question might be why not rely completely on [Apache ZooKeeper](https:
 
 1. **Deployment/Hosting in the cloud**:
 
-    Zookeeper isn't a hosted service. This means in a Cloud environment, Orleans customers would have to deploy, run, and manage their instance of a ZK cluster. This is an unnecessary burden that wasn't forced on customers. By using Azure Table, Orleans relies on a hosted, managed service, making customers' lives much simpler. _Basically, in the Cloud, use Cloud as a Platform, not Infrastructure._ On the other hand, when running on-premises and managing your servers, relying on ZK as an implementation of `IMembershipTable` is a viable option.
+   Zookeeper isn't a hosted service. This means in a Cloud environment, Orleans customers would have to deploy, run, and manage their instance of a ZK cluster. This is an unnecessary burden that wasn't forced on customers. By using Azure Table, Orleans relies on a hosted, managed service, making customers' lives much simpler. _Basically, in the Cloud, use Cloud as a Platform, not Infrastructure._ On the other hand, when running on-premises and managing your servers, relying on ZK as an implementation of `IMembershipTable` is a viable option.
 
 2. **Direct failure detection**:
 
-    When using ZK's group membership with ephemeral nodes, failure detection occurs between the Orleans servers (ZK clients) and ZK servers. This might not necessarily correlate with actual network problems between Orleans servers. _The desire was that failure detection accurately reflects the intra-cluster state of communication._ Specifically, in this design, if an Orleans silo can't communicate with `IMembershipTable`, it isn't considered dead and can continue working. In contrast, if ZK group membership with ephemeral nodes were used, a disconnection from a ZK server might cause an Orleans silo (ZK client) to be declared dead, while it might be alive and fully functional.
+   When using ZK's group membership with ephemeral nodes, failure detection occurs between the Orleans servers (ZK clients) and ZK servers. This might not necessarily correlate with actual network problems between Orleans servers. _The desire was that failure detection accurately reflects the intra-cluster state of communication._ Specifically, in this design, if an Orleans silo can't communicate with `IMembershipTable`, it isn't considered dead and can continue working. In contrast, if ZK group membership with ephemeral nodes were used, a disconnection from a ZK server might cause an Orleans silo (ZK client) to be declared dead, while it might be alive and fully functional.
 
 3. **Portability and flexibility**:
 
-    As part of Orleans's philosophy, Orleans doesn't force a strong dependence on any particular technology but rather provides a flexible design where different components can be easily switched with different implementations. This is exactly the purpose the `IMembershipTable` abstraction serves.
+   As part of Orleans's philosophy, Orleans doesn't force a strong dependence on any particular technology but rather provides a flexible design where different components can be easily switched with different implementations. This is exactly the purpose the `IMembershipTable` abstraction serves.
 
 ### Properties of the membership protocol
 
 1. **Can handle any number of failures**:
 
-    This algorithm can handle any number of failures (f<=n), including full cluster restart. This contrasts with "traditional" [Paxos](https://en.wikipedia.org/wiki/Paxos_(computer_science))-based solutions, which require a quorum (usually a majority). Production situations have shown scenarios where more than half of the silos were down. This system stayed functional, while Paxos-based membership wouldn't be able to make progress.
+   This algorithm can handle any number of failures (f<=n), including full cluster restart. This contrasts with "traditional" [Paxos](https://en.wikipedia.org/wiki/Paxos_(computer_science))-based solutions, which require a quorum (usually a majority). Production situations have shown scenarios where more than half of the silos were down. This system stayed functional, while Paxos-based membership wouldn't be able to make progress.
 
 2. **Traffic to the table is very light**:
 
-    Actual probes go directly between servers, not to the table. Routing probes through the table would generate significant traffic and be less accurate from a failure detection perspective – if a silo couldn't reach the table, it would miss writing its "I am alive" heartbeat, and others would declare it dead.
+   Actual probes go directly between servers, not to the table. Routing probes through the table would generate significant traffic and be less accurate from a failure detection perspective – if a silo couldn't reach the table, it would miss writing its "I am alive" heartbeat, and others would declare it dead.
 
 3. **Tunable accuracy versus completeness**:
 
-    While you can't achieve both perfect and accurate failure detection, you usually want the ability to trade off accuracy (not wanting to declare a live silo dead) with completeness (wanting to declare a dead silo dead as soon as possible). The configurable votes to declare dead and missed probes allow trading these two aspects. For more information, see [Yale University: Computer Science Failure Detectors](https://www.cs.yale.edu/homes/aspnes/pinewiki/FailureDetectors.html).
+   While you can't achieve both perfect and accurate failure detection, you usually want the ability to trade off accuracy (not wanting to declare a live silo dead) with completeness (wanting to declare a dead silo dead as soon as possible). The configurable votes to declare dead and missed probes allow trading these two aspects. For more information, see [Yale University: Computer Science Failure Detectors](https://www.cs.yale.edu/homes/aspnes/pinewiki/FailureDetectors.html).
 
 4. **Scale**:
 
-    The protocol can handle thousands, probably even tens of thousands, of servers. This contrasts with traditional Paxos-based solutions, such as group communication protocols, which are known not to scale beyond tens of nodes.
+   The protocol can handle thousands, probably even tens of thousands, of servers. This contrasts with traditional Paxos-based solutions, such as group communication protocols, which are known not to scale beyond tens of nodes.
 
 5. **Diagnostics**:
 
-    The table is also very convenient for diagnostics and troubleshooting. System administrators can instantaneously find the current list of alive silos in the table, as well as see the history of all killed silos and suspicions. This is especially useful when diagnosing problems.
+   The table is also very convenient for diagnostics and troubleshooting. System administrators can instantaneously find the current list of alive silos in the table, as well as see the history of all killed silos and suspicions. This is especially useful when diagnosing problems.
 
 6. **Why is reliable persistent storage needed for the implementation of `IMembershipTable`**:
 
-    Persistent storage is used for `IMembershipTable` for two purposes. First, it serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. Second, reliable storage helps coordinate agreement on the membership view. While failure detection occurs directly peer-to-peer between silos, the membership view is stored in reliable storage, and the concurrency control mechanism provided by this storage is used to reach an agreement on who is alive and who is dead. In a sense, this protocol outsources the hard problem of distributed consensus to the cloud. In doing so, the full power of the underlying cloud platform is utilized, using it truly as Platform as a Service (PaaS).
+   Persistent storage is used for `IMembershipTable` for two purposes. First, it serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. Second, reliable storage helps coordinate agreement on the membership view. While failure detection occurs directly peer-to-peer between silos, the membership view is stored in reliable storage, and the concurrency control mechanism provided by this storage is used to reach an agreement on who is alive and who is dead. In a sense, this protocol outsources the hard problem of distributed consensus to the cloud. In doing so, the full power of the underlying cloud platform is utilized, using it truly as Platform as a Service (PaaS).
 
 7. **Direct `IAmAlive` writes into the table for diagnostics only**:
 
-    In addition to heartbeats sent between silos, each silo also periodically updates an "I Am Alive" column in its table row. This "I Am Alive" column is only used **for manual troubleshooting and diagnostics** and isn't used by the membership protocol itself. It's usually written at a much lower frequency (once every 5 minutes) and serves as a very useful tool for system administrators to check the liveness of the cluster or easily find out when the silo was last alive.
+   In addition to heartbeats sent between silos, each silo also periodically updates an "I Am Alive" column in its table row. This "I Am Alive" column is only used **for manual troubleshooting and diagnostics** and isn't used by the membership protocol itself. It's usually written at a much lower frequency (once every 5 minutes) and serves as a very useful tool for system administrators to check the liveness of the cluster or easily find out when the silo was last alive.
 
 ### Acknowledgements
 

@@ -118,7 +118,6 @@ When using the `LoggerMessageAttribute` on logging methods, some constraints mus
 - Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
 - Parameter names of logging methods must *not* start with an underscore.
-- Logging methods may *not* be defined in a nested type.
 - Logging methods *cannot* be generic.
 - If a logging method is `static`, the `ILogger` instance is required as a parameter.
 

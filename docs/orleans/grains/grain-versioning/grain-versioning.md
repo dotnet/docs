@@ -42,8 +42,8 @@ When a call from a versioned grain arrives in a cluster:
 
 - If no activation exists, Orleans creates a compatible activation.
 - If an activation exists:
-   - If the current activation isn't compatible, Orleans deactivates it and creates a new compatible one (see [Version selector strategy](version-selector-strategy.md)).
-   - If the current activation is compatible (see [Compatible grains](compatible-grains.md)), Orleans handles the call normally.
+  - If the current activation isn't compatible, Orleans deactivates it and creates a new compatible one (see [Version selector strategy](version-selector-strategy.md)).
+  - If the current activation is compatible (see [Compatible grains](compatible-grains.md)), Orleans handles the call normally.
 
 By default:
 

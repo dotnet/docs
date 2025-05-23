@@ -55,19 +55,19 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
     **Implementation details**:
 
     1.  The `IMembershipTable` requires atomic updates to guarantee a global total order of changes:
-        -   Implementations must update both the table entries (list of silos) and the version number atomically.
-        -   Achieve this using database transactions (as in SQL Server) or atomic compare-and-swap operations using ETags (as in Azure Table Storage).
-        -   The specific mechanism depends on the capabilities of the underlying storage system.
+  - Implementations must update both the table entries (list of silos) and the version number atomically.
+  - Achieve this using database transactions (as in SQL Server) or atomic compare-and-swap operations using ETags (as in Azure Table Storage).
+  - The specific mechanism depends on the capabilities of the underlying storage system.
 
     2.  A special membership-version row in the table tracks changes:
-        -   Every write to the table (suspicions, death declarations, joins) increments this version number.
-        -   All writes are serialized through this row using atomic updates.
-        -   The monotonically increasing version ensures a total ordering of all membership changes.
+  - Every write to the table (suspicions, death declarations, joins) increments this version number.
+  - All writes are serialized through this row using atomic updates.
+  - The monotonically increasing version ensures a total ordering of all membership changes.
 
     3.  When silo S updates the status of silo P:
-        -   S first reads the latest table state.
-        -   In a single atomic operation, it updates both P's row and increments the version number.
-        -   If the atomic update fails (for example, due to concurrent modifications), the operation retries with exponential backoff.
+  - S first reads the latest table state.
+  - In a single atomic operation, it updates both P's row and increments the version number.
+  - If the atomic update fails (for example, due to concurrent modifications), the operation retries with exponential backoff.
 
     **Scalability considerations**:
 
@@ -77,26 +77,26 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 10. **Self-monitoring**: The fault detector incorporates ideas from Hashicorp's _Lifeguard_ research ([paper](https://arxiv.org/abs/1707.00788), [talk](https://www.youtube.com/watch?v=u-a7rVJ6jZY), [blog](https://www.hashicorp.com/blog/making-gossip-more-robust-with-lifeguard)) to improve cluster stability during catastrophic events where a large portion of the cluster experiences partial failure. The `LocalSiloHealthMonitor` component scores each silo's health using multiple heuristics:
 
-    -   Active status in the membership table
-    -   No suspicions from other silos
-    -   Recent successful probe responses
-    -   Recent probe requests received
-    -   Thread pool responsiveness (work items executing within 1 second)
-    -   Timer accuracy (firing within 3 seconds of schedule)
+  - Active status in the membership table
+  - No suspicions from other silos
+  - Recent successful probe responses
+  - Recent probe requests received
+  - Thread pool responsiveness (work items executing within 1 second)
+  - Timer accuracy (firing within 3 seconds of schedule)
 
     A silo's health score affects its probe timeouts: unhealthy silos (scoring 1-8) have increased timeouts compared to healthy silos (score 0). This provides two benefits:
-    -   Gives more time for probes to succeed when the network or system is under stress.
-    -   Makes it more likely that unhealthy silos are voted dead before they can incorrectly vote out healthy silos.
+  - Gives more time for probes to succeed when the network or system is under stress.
+  - Makes it more likely that unhealthy silos are voted dead before they can incorrectly vote out healthy silos.
 
     This is particularly valuable during scenarios like thread pool starvation, where slow nodes might otherwise incorrectly suspect healthy nodes simply because they cannot process responses quickly enough.
 
 11. **Indirect probing**: Another [Lifeguard](https://arxiv.org/abs/1707.00788)-inspired feature improving failure detection accuracy by reducing the chance that an unhealthy or partitioned silo incorrectly declares a healthy silo dead. When a monitoring silo has two probe attempts remaining for a target silo before casting a vote to declare it dead, it employs indirect probing:
 
-    -   The monitoring silo randomly selects another silo as an intermediary and asks it to probe the target.
-    -   The intermediary attempts to contact the target silo.
-    -   If the target fails to respond within the timeout period, the intermediary sends a negative acknowledgment.
-    -   If the monitoring silo receives a negative acknowledgment from the intermediary, and the intermediary declares itself healthy (through self-monitoring, described above), the monitoring silo casts a vote to declare the target dead.
-    -   With the default configuration of two required votes, a negative acknowledgment from an indirect probe counts as both votes, allowing faster declaration of dead silos when multiple perspectives confirm the failure.
+  - The monitoring silo randomly selects another silo as an intermediary and asks it to probe the target.
+  - The intermediary attempts to contact the target silo.
+  - If the target fails to respond within the timeout period, the intermediary sends a negative acknowledgment.
+  - If the monitoring silo receives a negative acknowledgment from the intermediary, and the intermediary declares itself healthy (through self-monitoring, described above), the monitoring silo casts a vote to declare the target dead.
+  - With the default configuration of two required votes, a negative acknowledgment from an indirect probe counts as both votes, allowing faster declaration of dead silos when multiple perspectives confirm the failure.
 
 12. **Enforcing perfect failure detection**: Once a silo is declared dead in the table, everyone considers it dead, even if it isn't truly dead (e.g., just temporarily partitioned or heartbeat messages were lost). Everyone stops communicating with it. Once the silo learns it's dead (by reading its new status from the table), it terminates its process. Consequently, an infrastructure must be in place to restart the silo as a new process (a new epoch number is generated upon start). When hosted in Azure, this happens automatically. Otherwise, another infrastructure is required, such as a Windows Service configured to auto-restart on failure or a Kubernetes deployment.
 

@@ -69,7 +69,7 @@ Activation-count-based placement also has a random element, relying on the Power
 - Available memory, total physical memory, and memory usage.
 - CPU usage.
 - Total activation count and recent active activation count.
-   - A sliding window of activations active in the last few seconds, sometimes referred to as the activation working set.
+  - A sliding window of activations active in the last few seconds, sometimes referred to as the activation working set.
 
 From these statistics, only activation counts are currently used to determine the load on a given silo.
 

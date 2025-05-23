@@ -34,11 +34,11 @@ Extensive documentation on setting up a stable Consul cluster is available in th
 
    In the preceding command:
 
-   - `agent`: Instructs Consul to run the agent process hosting the services. Without this switch, the Consul process attempts to use RPC to configure a running agent.
-   - `-server`: Defines the agent as a server, not a client. (A Consul _client_ is an agent hosting services and data but lacks voting rights and cannot become the cluster leader).
-   - `-bootstrap`: The first (and only the first!) node in a cluster must be bootstrapped to assume cluster leadership.
-   - `-data-dir [path]`: Specifies the path where all Consul data, including the cluster membership table, is stored.
-   - `-client='0.0.0.0'`: Informs Consul which IP address to open the service on.
+  - `agent`: Instructs Consul to run the agent process hosting the services. Without this switch, the Consul process attempts to use RPC to configure a running agent.
+  - `-server`: Defines the agent as a server, not a client. (A Consul _client_ is an agent hosting services and data but lacks voting rights and cannot become the cluster leader).
+  - `-bootstrap`: The first (and only the first!) node in a cluster must be bootstrapped to assume cluster leadership.
+  - `-data-dir [path]`: Specifies the path where all Consul data, including the cluster membership table, is stored.
+  - `-client='0.0.0.0'`: Informs Consul which IP address to open the service on.
 
     Many other parameters exist, including the option to use a JSON configuration file. See the Consul documentation for a full listing.
 

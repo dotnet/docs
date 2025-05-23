@@ -10,10 +10,10 @@ ms.service: orleans
 
 Orleans supports distributed ACID transactions against persistent grain state. Transactions are implemented using the [Microsoft.Orleans.Transactions](https://www.nuget.org/packages/Microsoft.Orleans.Transactions) NuGet package. The source code for the sample app in this article consists of four projects:
 
-- **_Abstractions_**: A class library containing the grain interfaces and shared classes.
-- **_Grains_**: A class library containing the grain implementations.
-- **_Server_**: A console app that consumes the abstractions and grains class libraries and acts as the Orleans silo.
-- **_Client_**: A console app that consumes the abstractions class library that represents the Orleans client.
+- **Abstractions**: A class library containing the grain interfaces and shared classes.
+- **Grains**: A class library containing the grain implementations.
+- **Server**: A console app that consumes the abstractions and grains class libraries and acts as the Orleans silo.
+- **Client**: A console app that consumes the abstractions class library that represents the Orleans client.
 
 ## Setup
 

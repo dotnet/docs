@@ -30,9 +30,9 @@ A canonical shopping cart sample application built using Microsoft Orleans. This
 
 - **Shopping cart**: A simple shopping cart application using Orleans for its cross-platform framework support and scalable distributed application capabilities.
 
-    -   **Inventory management**: Edit and/or create product inventory.
-    -   **Shop inventory**: Explore purchasable products and add them to your cart.
-    -   **Cart**: View a summary of all items in your cart and manage these items by removing or changing the quantity of each item.
+  - **Inventory management**: Edit and/or create product inventory.
+  - **Shop inventory**: Explore purchasable products and add them to your cart.
+  - **Cart**: View a summary of all items in your cart and manage these items by removing or changing the quantity of each item.
 
 ### Shopping cart demonstrates
 

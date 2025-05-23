@@ -29,10 +29,10 @@ Orleans includes an advanced and extensible serialization framework referred to 
 - **High-fidelity**: The serializer faithfully represents most of .NET's type system, including support for generics, polymorphism, inheritance hierarchies, object identity, and cyclic graphs. Pointers aren't supported since they aren't portable across processes.
 - **Flexibility**: You can customize the serializer to support third-party libraries by creating [*surrogates*](#surrogates-for-serializing-foreign-types) or delegating to external serialization libraries such as **System.Text.Json**, **Newtonsoft.Json**, and **Google.Protobuf**.
 - **Version-tolerance**: The serializer allows application types to evolve over time, supporting:
-    -   Adding and removing members
-    -   Subclassing
-    -   Numeric widening and narrowing (e.g., `int` to/from `long`, `float` to/from `double`)
-    -   Renaming types
+  - Adding and removing members
+  - Subclassing
+  - Numeric widening and narrowing (e.g., `int` to/from `long`, `float` to/from `double`)
+  - Renaming types
 
 High-fidelity representation of types is fairly uncommon for serializers, so some points warrant further explanation:
 
@@ -271,13 +271,13 @@ Version tolerance is supported provided you follow a set of rules when modifying
 ### Numerics
 
 - You cannot change the *signedness* of a numeric field.
-    -   Conversions between `int` & `uint` are invalid.
+  - Conversions between `int` & `uint` are invalid.
 - You can change the *width* of a numeric field.
-    -   E.g., conversions from `int` to `long` or `ulong` to `ushort` are supported.
-    -   Conversions narrowing the width throw an exception if the field's runtime value causes an overflow.
-        -   Conversion from `ulong` to `ushort` is only supported if the runtime value is less than `ushort.MaxValue`.
-        -   Conversions from `double` to `float` are only supported if the runtime value is between `float.MinValue` and `float.MaxValue`.
-        -   Similarly for `decimal`, which has a narrower range than both `double` and `float`.
+  - E.g., conversions from `int` to `long` or `ulong` to `ushort` are supported.
+  - Conversions narrowing the width throw an exception if the field's runtime value causes an overflow.
+  - Conversion from `ulong` to `ushort` is only supported if the runtime value is less than `ushort.MaxValue`.
+  - Conversions from `double` to `float` are only supported if the runtime value is between `float.MinValue` and `float.MaxValue`.
+  - Similarly for `decimal`, which has a narrower range than both `double` and `float`.
 
 ## Copiers
 
@@ -308,7 +308,7 @@ Orleans promotes safety by default, including safety from some classes of concur
     ```
 
 - ✅ **Do** widen numeric member types as needed. You can widen `sbyte` to `short` to `int` to `long`.
-   - You can narrow numeric member types, but it results in a runtime exception if observed values cannot be represented correctly by the narrowed type. For example, `int.MaxValue` cannot be represented by a `short` field, so narrowing an `int` field to `short` can result in a runtime exception if such a value is encountered.
+  - You can narrow numeric member types, but it results in a runtime exception if observed values cannot be represented correctly by the narrowed type. For example, `int.MaxValue` cannot be represented by a `short` field, so narrowing an `int` field to `short` can result in a runtime exception if such a value is encountered.
 - ❌ **Do not** change the signedness of a numeric type member. You must not change a member's type from `uint` to `int` or `int` to `uint`, for example.
 
 ## Grain storage serializers

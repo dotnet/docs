@@ -54,7 +54,7 @@ For testing purposes, you can use the <xref:Orleans.Configuration.GrainClassOpti
 ## Limitations
 
 - Connected clients aren't notified if the set of supported grain types changes. In the previous example:
-    -   If Silo 4 leaves the cluster, the client still tries to make calls to grains of type `E`. It fails at runtime with an <xref:Orleans.Runtime.OrleansException>.
-    -   If the client connected to the cluster before Silo 4 joined, the client cannot make calls to grains of type `E`. It fails with an <xref:System.ArgumentException>.
+  - If Silo 4 leaves the cluster, the client still tries to make calls to grains of type `E`. It fails at runtime with an <xref:Orleans.Runtime.OrleansException>.
+  - If the client connected to the cluster before Silo 4 joined, the client cannot make calls to grains of type `E`. It fails with an <xref:System.ArgumentException>.
 - Stateless grains aren't supported in heterogeneous deployments: all silos in the cluster must support the same set of stateless grains.
 - <xref:Orleans.ImplicitStreamSubscriptionAttribute> isn't supported; thus, you can only use [Explicit subscriptions](../streaming/streams-programming-apis.md) in Orleans Streams with heterogeneous silos.

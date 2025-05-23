@@ -62,7 +62,7 @@ The sample application is available as an Azure Developer CLI template. Through 
     Deploying services (azd deploy)
 
       (✓) Done: Deploying service web
-    - Endpoint: <https://[container-app-sub-domain].azurecontainerapps.io>
+  - Endpoint: <https://[container-app-sub-domain].azurecontainerapps.io>
 
     SUCCESS: Your application was provisioned and deployed to Azure in 5 minutes 0 seconds.
     ```
@@ -195,12 +195,12 @@ The sample app is currently configured to create a localhost cluster and persist
 
 1. Replace the `builder` configuration with the example here, which implements these key concepts:
 
-    - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
-    - The `UseAzureStorageClustering` method configures the Orleans cluster to use Azure Table Storage and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
-    - Use the `Configure` method to assign IDs for the Orleans cluster.
-        - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
-        - The `ClusterID` can change across deployments.
-        - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
+  - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
+  - The `UseAzureStorageClustering` method configures the Orleans cluster to use Azure Table Storage and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
+  - Use the `Configure` method to assign IDs for the Orleans cluster.
+  - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
+  - The `ClusterID` can change across deployments.
+  - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
 
     ```csharp
     if (builder.Environment.IsDevelopment())
@@ -243,12 +243,12 @@ The sample app is currently configured to create a localhost cluster and persist
 
 1. Replace the `builder` configuration with the example here, which implements these key concepts:
 
-    - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
-    - The `UseCosmosClustering` method configures the Orleans cluster to use Azure Cosmos DB for NoSQL and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
-    - Use the `Configure` method to assign IDs for the Orleans cluster.
-        - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
-        - The `ClusterID` can change across deployments.
-        - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
+  - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
+  - The `UseCosmosClustering` method configures the Orleans cluster to use Azure Cosmos DB for NoSQL and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
+  - Use the `Configure` method to assign IDs for the Orleans cluster.
+  - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
+  - The `ClusterID` can change across deployments.
+  - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
 
     ```csharp
     if (builder.Environment.IsDevelopment())
@@ -326,9 +326,9 @@ Optionally, you can verify that the cluster and state data is stored as expected
 
 1. Expand the **Tables** navigation item to discover two tables created by Orleans:
 
-    - **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
+  - **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
 
-    - **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
+  - **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
 
 1. Select the **OrleansGrainState** table. The table holds a row entry for every URL redirect persisted by the app during your testing.
 
@@ -344,9 +344,9 @@ Optionally, you can verify that the cluster and state data is stored as expected
 
 1. Observe the following containers you created earlier in this guide:
 
-    - **OrleansStorage**: This table stores the persistent state grain data used by the application to handle the URL redirects.
+  - **OrleansStorage**: This table stores the persistent state grain data used by the application to handle the URL redirects.
 
-    - **OrleansCluster**: This table tracks essential silo data for the Orleans cluster.
+  - **OrleansCluster**: This table tracks essential silo data for the Orleans cluster.
 
 ::: zone-end
 

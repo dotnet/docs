@@ -13,9 +13,9 @@ In this tutorial, learn how to deploy an Orleans shopping cart app to Azure App 
 
 - **Shopping cart**: A simple shopping cart application using Orleans for its cross-platform framework support and scalable distributed application capabilities.
 
-   - **Inventory management**: Edit and/or create product inventory.
-   - **Shop inventory**: Explore purchasable products and add them to the cart.
-   - **Cart**: View a summary of all items in the cart and manage these items by removing or changing the quantity of each item.
+  - **Inventory management**: Edit and/or create product inventory.
+  - **Shop inventory**: Explore purchasable products and add them to the cart.
+  - **Cart**: View a summary of all items in the cart and manage these items by removing or changing the quantity of each item.
 
 With an understanding of the app and its features, learn how to deploy the app to Azure App Service using GitHub Actions, the .NET and Azure CLIs, and Azure Bicep. Additionally, learn how to configure the virtual network for the app within Azure.
 
@@ -243,7 +243,7 @@ The preceding GitHub workflow does the following:
 - Logs in to Azure using credentials from the [Create a service principal](#create-a-service-principal) step.
 - Evaluates the _main.bicep_ file and starts a deployment group using [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create).
 - Deploys the _silo.zip_ file to Azure App Service using [az webapp deploy](/cli/azure/webapp#az-webapp-deploy).
-   - An additional deployment to staging is also configured.
+  - An additional deployment to staging is also configured.
 
 The workflow triggers on a push to the `main` branch. For more information, see [GitHub Actions and .NET](../../devops/github-actions-overview.md).
 

@@ -7,7 +7,7 @@ ms.topic: how-to
 
 # ADO.NET grain persistence
 
-Relational storage backend code in Orleans builds on generic ADO.NET functionality and is consequently database vendor agnostic. The Orleans data storage layout is explained in [Runtime tables](../implementation/runtime-tables.md). Set up connection strings as explained in the [Orleans Configuration Guide](../../host/configuration-guide/index.md).
+Relational storage backend code in Orleans builds on generic ADO.NET functionality and is consequently database vendor agnostic. Set up connection strings as explained in the [Orleans Configuration Guide](../../host/configuration-guide/index.md).
 
 To make Orleans code function with a given relational database backend, you need the following:
 
@@ -179,7 +179,7 @@ Creating a new backend should ideally be as simple as translating an existing de
 
 ## Realization of the goals
 
-The Orleans framework doesn't know about deployment-specific hardware (which might change during active deployment), data changes during the deployment lifecycle, or certain vendor-specific features usable only in specific situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, ensure robustness against misuse, and facilitate testing. See [Runtime tables](../implementation/runtime-tables.md), [Cluster management](../implementation/cluster-management.md), and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contains SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
+The Orleans framework doesn't know about deployment-specific hardware (which might change during active deployment), data changes during the deployment lifecycle, or certain vendor-specific features usable only in specific situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, ensure robustness against misuse, and facilitate testing. See [Cluster management](../../implementation/cluster-management.md) and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contains SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
 
 1. The general idea is that data is read and written through Orleans-specific queries. Orleans operates on column names and types when reading, and on parameter names and types when writing.
 2. Implementations **must** preserve input and output names and types. Orleans uses these parameters to read query results by name and type. Vendor-specific and deployment-specific tuning is allowed, and contributions are encouraged as long as the interface contract is maintained.

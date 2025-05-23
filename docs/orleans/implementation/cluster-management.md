@@ -80,12 +80,12 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 10. **Self-monitoring**: The fault detector incorporates ideas from Hashicorp's _Lifeguard_ research ([paper](https://arxiv.org/abs/1707.00788), [talk](https://www.youtube.com/watch?v=u-a7rVJ6jZY), [blog](https://www.hashicorp.com/blog/making-gossip-more-robust-with-lifeguard)) to improve cluster stability during catastrophic events where a large portion of the cluster experiences partial failure. The `LocalSiloHealthMonitor` component scores each silo's health using multiple heuristics:
 
-   - Active status in the membership table
-   - No suspicions from other silos
-   - Recent successful probe responses
-   - Recent probe requests received
-   - Thread pool responsiveness (work items executing within 1 second)
-   - Timer accuracy (firing within 3 seconds of schedule)
+    - Active status in the membership table
+    - No suspicions from other silos
+    - Recent successful probe responses
+    - Recent probe requests received
+    - Thread pool responsiveness (work items executing within 1 second)
+    - Timer accuracy (firing within 3 seconds of schedule)
 
     A silo's health score affects its probe timeouts: unhealthy silos (scoring 1-8) have increased timeouts compared to healthy silos (score 0). This provides two benefits:
 

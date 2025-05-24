@@ -181,7 +181,7 @@ While the app is running, you can update the _appsettings.json_ with the followi
 
 :::code language="json" source="snippets/logging/log-buffering/per-request/file-based/appsettingsUpdated.json" range="1-17" highlight="9-13" :::
 
-The new rules will be applied automatically, for instance, with the preceding configuration, all logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> level will be buffered.
+The new rules are applied automatically. For example, with the preceding configuration, all logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> level will be buffered.
 
 ## Performance considerations
 

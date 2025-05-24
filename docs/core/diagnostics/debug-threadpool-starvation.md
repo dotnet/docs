@@ -29,7 +29,7 @@ The tutorial uses:
 - [dotnet-counters](dotnet-counters.md) to observe performance counters
 - [dotnet-stack](dotnet-stack.md) to examine thread stacks
 - [dotnet-trace](dotnet-trace.md) to collect wait events
-- Optional: [PerfView](https://github.com/microsoft/perfview/releases) to analyze .nettrace files
+- Optional: [PerfView](https://github.com/microsoft/perfview/releases) to analyze the wait events
 
 ## Running the sample app
 
@@ -177,9 +177,9 @@ On .NET 6 you should observe the pool increase the thread count more quickly tha
 
 ## Resolving ThreadPool starvation
 
-To eliminate ThreadPool starvation, ThreadPool threads need to remain unblocked so that they're available to handle incoming work items. There are multiple ways to determine what each thread was doing: using the [dotnet-stack](dotnet-stack.md) tool, capturing a dump with [dotnet-dump](dotnet-dump.md) that can be viewed in [Visual Studio](/visualstudio/debugger/using-dump-files), or collecting wait events with [dotnet-trace](dotnet-trace.md). dotnet-stack can be faster because it shows the thread stacks immediately on the console, but Visual Studio dump debugging offers better visualizations that map frames to source, Just My Code can filter out runtime implementation frames, and the Parallel Stacks feature can help group large numbers of threads with similar stacks. This tutorial first shows the dotnet-stack option, then demonstrates how to use dotnet-trace. See the [diagnosing ThreadPool starvation tutorial video](/shows/on-net/diagnosing-thread-pool-exhaustion-issues-in-net-core-apps) for an example of investigating the thread stacks using Visual Studio.
+To eliminate ThreadPool starvation, ThreadPool threads need to remain unblocked so that they're available to handle incoming work items. There are multiple ways to determine what each thread was doing. If the issue occurs only occasionally then collecting a trace with [dotnet-trace](dotnet-trace.md) is best to record application behavior over a period of time. If the issue is constantly occurring then you can use the [dotnet-stack](dotnet-stack.md) tool or capture a dump with [dotnet-dump](dotnet-dump.md) that can be viewed in [Visual Studio](/visualstudio/debugger/using-dump-files). dotnet-stack can be faster because it shows the thread stacks immediately on the console, but Visual Studio dump debugging offers better visualizations that map frames to source, Just My Code can filter out runtime implementation frames, and the Parallel Stacks feature can help group large numbers of threads with similar stacks. This tutorial shows the dotnet-stack and dotnet-trace options. See the [diagnosing ThreadPool starvation tutorial video](/shows/on-net/diagnosing-thread-pool-exhaustion-issues-in-net-core-apps) for an example of investigating the thread stacks using Visual Studio.
 
-### dotnet-stack
+### Diagnose a continuous issue with dotnet-stack
 
 Run Bombardier again to put the web server under load:
 
@@ -262,11 +262,11 @@ Thread (0x25968):
   DiagnosticScenarios!testwebapi.Controllers.DiagScenarioController.TaskWait()
 ```
 
-### dotnet-trace
+### Diagnose an intermittent issue with dotnet-trace
 
 The dotnet-stack approach is effective only for obvious, consistent blocking operations that occur in every request. In some scenarios, the blocking could happen sporadically only every few minutes, making dotnet-stack less useful for diagnosing the issue. dotnet-trace can be used to collect events over a period of time and save them in a nettrace file that can be analyzed later.
 
-There is one particular event that helps diagnosing thread pool starvation that was introduced in .NET 9, it's the WaitHandleWait event. It's emitted when a thread pool thread becomes blocked by operations such as sync-over-async calls (e.g. `Task.Result`, `Task.Wait`, `Task.GetAwaiter().GetResult()`) or by other locking operations like `lock`, `Monitor.Enter`, `ManualResetEventSlim.Wait`, or `SemaphoreSlim.Wait`.
+There is one particular event that helps diagnosing thread pool starvation that was introduced in .NET 9, the WaitHandleWait event. It's emitted when a thread becomes blocked by operations such as sync-over-async calls (e.g. `Task.Result`, `Task.Wait`, `Task.GetAwaiter().GetResult()`) or by other locking operations like `lock`, `Monitor.Enter`, `ManualResetEventSlim.Wait`, or `SemaphoreSlim.Wait`.
 
 Run Bombardier again to put the web server under load:
 
@@ -286,7 +286,7 @@ That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettr
 
 Let's see how to use each tool to read the nettrace file.
 
-### Analyze a nettrace with Perfview
+#### Analyze a nettrace with Perfview
 
 1. Download [PerfView](https://github.com/microsoft/perfview/releases) and run it
 2. Open the nettrace file by double-clicking it
@@ -300,7 +300,7 @@ Let's see how to use each tool to read the nettrace file.
 ![Screenshot of the expanded any stacks view for wait events in PerfView](./media/perfview-any-stacks-waithandle-expanded.png)
 7. This stack trace can be read as: `Task<T>.Result` emitted a WaitHandleWait event with a WaitSource MonitorWait (`Task<T>.Result` uses `Monitor.Wait` to perform a wait). It was called by `DiagScenarioController.TaskWait`, which was called by some lambda, which was called by some ASP.NET code
 
-### Analyze a nettrace with .NET Events Viewer
+#### Analyze a nettrace with .NET Events Viewer
 
 1. Go to [verdie-g.github.io/dotnet-events-viewer](https://verdie-g.github.io/dotnet-events-viewer)
 2. Drag-and-drop the nettrace file

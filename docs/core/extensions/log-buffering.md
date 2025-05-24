@@ -164,7 +164,7 @@ Log buffering rules evaluation is performed on each log record. The following al
 For each log record, the algorithm checks:
 
 - If the log level matches (is equal to or lower than) the rule's log level.
-- If the category name starts with the rule's CategoryName prefix.
+- If the category name starts with the rule's `CategoryName` prefix.
 - If the event ID matches the rule's EventId.
 - If the event name matches the rule's EventName.
 - If any attributes match the rule's Attributes.

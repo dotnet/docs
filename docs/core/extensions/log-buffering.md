@@ -187,7 +187,7 @@ The new rules will be applied automatically, for instance, with the preceding co
 
 Log buffering offers a trade-off between memory usage and log storage costs. Buffering logs in memory allows you to:
 
-1. Selectively emit logs based on runtime conditions.
+1. Selectively emit logs based on run-time conditions.
 1. Drop unnecessary logs without writing them to storage.
 
 However, be mindful of the memory consumption, especially in high-throughput applications. Configure appropriate buffer size limits to prevent excessive memory usage.

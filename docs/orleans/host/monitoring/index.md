@@ -1,17 +1,18 @@
 ---
 title: Orleans observability
 description: Explore the various runtime monitoring, logging, distributed tracing, and metrics options available in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: overview
 zone_pivot_groups: orleans-version
 ---
 
 # Orleans observability
 
-One of the most important aspects of a distributed system is observability. Observability is the ability to understand the state of the system at any given time. There are various ways to achieve this, including logging, metrics, and distributed tracing.
+Observability is one of the most important aspects of a distributed system. It's the ability to understand the system's state at any given time. You can achieve this in various ways, including logging, metrics, and distributed tracing.
 
 ## Logging
 
-Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider that is compatible with `Microsoft.Extensions.Logging`. Your app code would rely on [dependency injection](../../../core/extensions/dependency-injection.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and use it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging.md).
+Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) for all silo and client logs. You can use any logging provider compatible with `Microsoft.Extensions.Logging`. Your app code relies on [dependency injection](../../../core/extensions/dependency-injection.md) to get an instance of <xref:Microsoft.Extensions.Logging.ILogger%601> and uses it to log messages. For more information, see [Logging in .NET](../../../core/extensions/logging.md).
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
@@ -19,15 +20,15 @@ Orleans uses [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Micro
 
 ## Metrics
 
-Metrics are numerical measurements reported over time. They're most often used to monitor the health of an application and generate alerts. For more information, see [Metrics in .NET](../../../core/diagnostics/metrics.md). Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. The metrics are exposed to the [OpenTelemetry](https://opentelemetry.io) project, which exports the metrics to various monitoring systems.
+Metrics are numerical measurements reported over time. You most often use them to monitor an application's health and generate alerts. For more information, see [Metrics in .NET](../../../core/diagnostics/metrics.md). Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. These metrics are exposed to the [OpenTelemetry](https://opentelemetry.io) project, which exports them to various monitoring systems.
 
-To monitor your app without making any code changes at all, you can use the `dotnet counters` .NET diagnostic tool. To monitor Orleans <xref:System.Diagnostics.ActivitySource> counters, given your desired `<ProcessName>` to monitor, use the `dotnet counters monitor` command as shown:
+To monitor your app without making any code changes, use the `dotnet counters` .NET diagnostic tool. To monitor Orleans <xref:System.Diagnostics.ActivitySource> counters for a specific `<ProcessName>`, use the `dotnet counters monitor` command as shown:
 
 ```dotnetcli
 dotnet counters monitor -n <ProcessName> --counters Microsoft.Orleans
 ```
 
-Imagine that you're running the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), and in a separate terminal, you're monitoring it with the `dotnet counters monitor` command. The following output is typical:
+Imagine you're running the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample) and monitoring it in a separate terminal with the `dotnet counters monitor` command. The following output is typical:
 
 ```dotnetcli
 Press p to pause, r to resume, q to quit.
@@ -81,11 +82,11 @@ For more information, see [Investigate performance counters (dotnet-counters)](.
 
 ### Orleans meters
 
-Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. Orleans categorizes each meter into domain-centric concerns, such as networking, messaging, gateway, and so on. The following subsections describe the meters that Orleans uses.
+Orleans uses the [System.Diagnostics.Metrics](../../../core/diagnostics/compare-metric-apis.md#systemdiagnosticsmetrics) APIs to collect metrics. Orleans categorizes each meter into domain-centric concerns, such as networking, messaging, gateway, etc. The following subsections describe the meters Orleans uses.
 
 #### Networking
 
-The following table represents a collection of networking meters that are used to monitor the Orleans networking layer.
+The following table shows a collection of networking meters used to monitor the Orleans networking layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -94,7 +95,7 @@ The following table represents a collection of networking meters that are used t
 
 #### Messaging
 
-The following table represents a collection of messaging meters that are used to monitor the Orleans messaging layer.
+The following table shows a collection of messaging meters used to monitor the Orleans messaging layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -121,7 +122,7 @@ The following table represents a collection of messaging meters that are used to
 
 #### Gateway
 
-The following table represents a collection of gateway meters that are used to monitor the Orleans gateway layer.
+The following table shows a collection of gateway meters used to monitor the Orleans gateway layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -132,7 +133,7 @@ The following table represents a collection of gateway meters that are used to m
 
 #### Runtime
 
-The following table represents a collection of runtime meters that are used to monitor the Orleans runtime layer.
+The following table shows a collection of runtime meters used to monitor the Orleans runtime layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -142,7 +143,7 @@ The following table represents a collection of runtime meters that are used to m
 
 #### Catalog
 
-The following table represents a collection of catalog meters that are used to monitor the Orleans catalog layer.
+The following table shows a collection of catalog meters used to monitor the Orleans catalog layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -158,7 +159,7 @@ The following table represents a collection of catalog meters that are used to m
 
 #### Directory
 
-The following table represents a collection of directory meters that are used to monitor the Orleans directory layer.
+The following table shows a collection of directory meters used to monitor the Orleans directory layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -193,7 +194,7 @@ The following table represents a collection of directory meters that are used to
 
 #### Consistent ring
 
-The following table represents a collection of consistent ring meters that are used to monitor the Orleans consistent ring layer.
+The following table shows a collection of consistent ring meters used to monitor the Orleans consistent ring layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -203,7 +204,7 @@ The following table represents a collection of consistent ring meters that are u
 
 #### Watchdog
 
-The following table represents a collection of watchdog meters that are used to monitor the Orleans watchdog layer.
+The following table shows a collection of watchdog meters used to monitor the Orleans watchdog layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -212,7 +213,7 @@ The following table represents a collection of watchdog meters that are used to 
 
 #### Client
 
-The following table represents a collection of client meters that are used to monitor the Orleans client layer.
+The following table shows a collection of client meters used to monitor the Orleans client layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -220,7 +221,7 @@ The following table represents a collection of client meters that are used to mo
 
 #### Miscellaneous
 
-The following table represents a collection of miscellaneous meters that are used to monitor various layers.
+The following table shows a collection of miscellaneous meters used to monitor various layers.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -229,7 +230,7 @@ The following table represents a collection of miscellaneous meters that are use
 
 #### App requests
 
-The following table represents a collection of app request meters that are used to monitor the Orleans app request layer.
+The following table shows a collection of app request meters used to monitor the Orleans app request layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -238,7 +239,7 @@ The following table represents a collection of app request meters that are used 
 
 #### Reminders
 
-The following table represents a collection of reminder meters that are used to monitor the Orleans reminder layer.
+The following table shows a collection of reminder meters used to monitor the Orleans reminder layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -248,7 +249,7 @@ The following table represents a collection of reminder meters that are used to 
 
 #### Storage
 
-The following table represents a collection of storage meters that are used to monitor the Orleans storage layer.
+The following table shows a collection of storage meters used to monitor the Orleans storage layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -261,7 +262,7 @@ The following table represents a collection of storage meters that are used to m
 
 #### Streams
 
-The following table represents a collection of stream meters that are used to monitor the Orleans stream layer.
+The following table shows a collection of stream meters used to monitor the Orleans stream layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -306,7 +307,7 @@ The following table represents a collection of stream meters that are used to mo
 
 #### Transactions
 
-The following table represents a collection of transaction meters that are used to monitor the Orleans transaction layer.
+The following table shows a collection of transaction meters used to monitor the Orleans transaction layer.
 
 | Meter name | Type | Description |
 |--|--|--|
@@ -317,7 +318,7 @@ The following table represents a collection of transaction meters that are used 
 
 ### Prometheus
 
-There are various third-party metrics providers that you can use with Orleans. One popular example is [Prometheus](https://prometheus.io), which can be used to collect metrics from your app with OpenTelemetry.
+Various third-party metrics providers are available for use with Orleans. One popular example is [Prometheus](https://prometheus.io), which you can use to collect metrics from your app with OpenTelemetry.
 
 To use OpenTelemetry and Prometheus with Orleans, call the following `IServiceCollection` extension method:
 
@@ -334,9 +335,9 @@ builder.Services.AddOpenTelemetry()
 > [!IMPORTANT]
 > Both the [OpenTelemetry.Exporter.Prometheus](https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus) and [OpenTelemetry.Exporter.Prometheus.AspNetCore](https://www.nuget.org/packages/OpenTelemetry.Exporter.Prometheus.AspNetCore) NuGet packages are currently in preview as release candidates. They're not recommended for production use.
 
-The `AddPrometheusExporter` method ensures that the `PrometheusExporter` is added to the `builder`. Orleans makes use of a <xref:System.Diagnostics.Metrics.Meter> named `"Microsoft.Orleans"` to create <xref:System.Diagnostics.Metrics.Counter%601> instances for many Orleans-specific metrics. The `AddMeter` method is used to specify the name of the meter to subscribe to, in this case `"Microsoft.Orleans"`.
+The `AddPrometheusExporter` method ensures the `PrometheusExporter` is added to the `builder`. Orleans uses a <xref:System.Diagnostics.Metrics.Meter> named `"Microsoft.Orleans"` to create <xref:System.Diagnostics.Metrics.Counter%601> instances for many Orleans-specific metrics. Use the `AddMeter` method to specify the name of the meter to subscribe to, in this case, `"Microsoft.Orleans"`.
 
-After the exporter has been configured, and your app has been built, you must call `MapPrometheusScrapingEndpoint` on the `IEndpointRouteBuilder` (the `app` instance) to expose the metrics to Prometheus. For example:
+After configuring the exporter and building your app, call `MapPrometheusScrapingEndpoint` on the `IEndpointRouteBuilder` (the `app` instance) to expose the metrics to Prometheus. For example:
 
 ```csharp
 WebApplication app = builder.Build();
@@ -347,14 +348,14 @@ app.Run();
 
 ## Distributed tracing
 
-Distributed tracing is a set of tools and practices to monitor and troubleshoot distributed applications. Distributed tracing is a key component of observability, and it's a critical tool for developers to understand the behavior of their apps. Orleans also supports distributed tracing with [OpenTelemetry](https://opentelemetry.io).
+Distributed tracing is a set of tools and practices for monitoring and troubleshooting distributed applications. It's a key component of observability and a critical tool for understanding your app's behavior. Orleans supports distributed tracing with [OpenTelemetry](https://opentelemetry.io).
 
-Regardless of the distributed tracing exporter you choose, you call:
+Regardless of the distributed tracing exporter you choose, call:
 
 - <xref:Orleans.Hosting.CoreHostingExtensions.AddActivityPropagation(Orleans.Hosting.ISiloBuilder)>: which enables distributed tracing for the silo.
 - <xref:Orleans.Hosting.ClientBuilderExtensions.AddActivityPropagation(Orleans.Hosting.IClientBuilder)>: which enables distributed tracing for the client.
 
-Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating the _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
+Referring back to the [Orleans GPS Tracker sample app](/samples/dotnet/samples/orleans-gps-device-tracker-sample), you can use the [Zipkin](https://zipkin.io) distributed tracing system to monitor the app by updating _Program.cs_. To use OpenTelemetry and Zipkin with Orleans, call the following `IServiceCollection` extension method:
 
 ```csharp
 builder.Services.AddOpenTelemetry()
@@ -378,7 +379,7 @@ builder.Services.AddOpenTelemetry()
 > [!IMPORTANT]
 > The [OpenTelemetry.Exporter.Zipkin](https://www.nuget.org/packages/OpenTelemetry.Exporter.Zipkin) NuGet package is currently in preview as a release candidate. It is not recommended for production use.
 
-The Zipkin trace is shown in the Jaeger UI (which is an alternative to Zipkin but uses the same data format):
+The Zipkin trace is shown in the Jaeger UI (an alternative to Zipkin that uses the same data format):
 
 :::image type="content" source="../media/jaeger-ui.png" lightbox="../media/jaeger-ui.png" alt-text="Orleans GPS Tracker sample app: Jaeger UI trace.":::
 
@@ -390,17 +391,17 @@ For more information, see [Distributed tracing](../../../core/diagnostics/distri
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-Orleans outputs its runtime statistics and metrics through the <xref:Orleans.Runtime.ITelemetryConsumer> interface. The application can register one or more telemetry consumers for their silos and clients, to receive statistics and metrics that the Orleans runtime periodically publishes. These can be consumers for popular telemetry analytics solutions or custom ones for any other destination and purpose. Three telemetry consumers are currently included in the Orleans codebase.
+Orleans outputs its runtime statistics and metrics through the <xref:Orleans.Runtime.ITelemetryConsumer> interface. Your application can register one or more telemetry consumers for its silos and clients to receive statistics and metrics the Orleans runtime periodically publishes. These can be consumers for popular telemetry analytics solutions or custom ones for any other destination and purpose. Three telemetry consumers are currently included in the Orleans codebase.
 
 They're released as separate NuGet packages:
 
-- `Microsoft.Orleans.OrleansTelemetryConsumers.AI` for publishing to [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview).
+- `Microsoft.Orleans.OrleansTelemetryConsumers.AI`: For publishing to [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview).
 
-- `Microsoft.Orleans.OrleansTelemetryConsumers.Counters` for publishing to Windows performance counters. The Orleans runtime continually updates many them. The _CounterControl.exe_ tool, included in the [`Microsoft.Orleans.CounterControl`](https://www.nuget.org/packages/Microsoft.Orleans.CounterControl/) NuGet package, helps register necessary performance counter categories. It has to run with elevated privileges. The performance counters can be monitored using any of the standard monitoring tools.
+- `Microsoft.Orleans.OrleansTelemetryConsumers.Counters`: For publishing to Windows performance counters. The Orleans runtime continually updates many of them. The _CounterControl.exe_ tool, included in the [`Microsoft.Orleans.CounterControl`](https://www.nuget.org/packages/Microsoft.Orleans.CounterControl/) NuGet package, helps register necessary performance counter categories. It must run with elevated privileges. Monitor the performance counters using any standard monitoring tools.
 
-- `Microsoft.Orleans.OrleansTelemetryConsumers.NewRelic`, for publishing to [New Relic](https://newrelic.com/).
+- `Microsoft.Orleans.OrleansTelemetryConsumers.NewRelic`: For publishing to [New Relic](https://newrelic.com/).
 
-To configure your silo and client to use telemetry consumers, silo configuration code looks like this:
+To configure your silo and client to use telemetry consumers, the silo configuration code looks like this:
 
 ```csharp
 var siloHostBuilder = new HostBuilder()
@@ -410,14 +411,14 @@ var siloHostBuilder = new HostBuilder()
     });
 ```
 
-Client configuration code look like this:
+The client configuration code looks like this:
 
 ```csharp
 var clientBuilder = new ClientBuilder();
 clientBuilder.AddApplicationInsightsTelemetryConsumer("INSTRUMENTATION_KEY");
 ```
 
-To use a custom defined <xref:Orleans.Runtime.Configuration.TelemetryConfiguration> (which may have <xref:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.TelemetryProcessors>, <xref:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.TelemetrySinks>, and so on), silo configuration code looks like this:
+To use a custom-defined <xref:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration> (which might have <xref:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.TelemetryProcessors>, <xref:Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration.TelemetrySinks>, etc.), the silo configuration code looks like this:
 
 ```csharp
 var telemetryConfiguration = TelemetryConfiguration.CreateDefault();

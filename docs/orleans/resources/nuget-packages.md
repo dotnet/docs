@@ -131,7 +131,7 @@ Add it to your projects that define grain interfaces and classes.
 
 ### Orleans build-time code generation
 
-* [Microsoft.Orleans.OrleansCodeGenerator.Build](https://www.nuget.org/packages/Microsoft.Orleans.OrleansCodeGenerator.Build/).
+- [Microsoft.Orleans.OrleansCodeGenerator.Build](https://www.nuget.org/packages/Microsoft.Orleans.OrleansCodeGenerator.Build/).
 
     ```powershell
     Install-Package Microsoft.Orleans.OrleansCodeGenerator.Build
@@ -140,7 +140,7 @@ Add it to your projects that define grain interfaces and classes.
     Appeared in Orleans 1.2.0. Build time support for grain interfaces and implementation projects.
     Add it to your grain interfaces and implementation projects to enable code generation of grain references and serializers.
 
-* [Microsoft.Orleans.CodeGenerator.MSBuild](https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator.MSBuild/).
+- [Microsoft.Orleans.CodeGenerator.MSBuild](https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator.MSBuild/).
 
     ```powershell
     Install-Package Microsoft.Orleans.CodeGenerator.MSBuild
@@ -156,10 +156,10 @@ Install-Package Microsoft.Orleans.Server
 
 A meta-package for easily building and starting a silo. Includes the following packages:
 
-* `Microsoft.Orleans.Core.Abstractions`
-* `Microsoft.Orleans.Core`
-* `Microsoft.Orleans.OrleansRuntime`
-* `Microsoft.Orleans.OrleansProviders`
+- `Microsoft.Orleans.Core.Abstractions`
+- `Microsoft.Orleans.Core`
+- `Microsoft.Orleans.OrleansRuntime`
+- `Microsoft.Orleans.OrleansProviders`
 
 ### [Orleans Client Libraries](https://www.nuget.org/packages/Microsoft.Orleans.Client/)
 
@@ -169,9 +169,9 @@ Install-Package Microsoft.Orleans.Client
 
 A meta-package for easily building and starting an Orleans client (frontend). Includes the following packages:
 
-* `Microsoft.Orleans.Core.Abstractions`
-* `Microsoft.Orleans.Core`
-* `Microsoft.Orleans.OrleansProviders`
+- `Microsoft.Orleans.Core.Abstractions`
+- `Microsoft.Orleans.Core`
+- `Microsoft.Orleans.OrleansProviders`
 
 ### [Orleans Core Library](https://www.nuget.org/packages/Microsoft.Orleans.Core/)
 

@@ -1,13 +1,14 @@
 ---
 title: Orleans streaming quickstart
 description: Learn from the streaming quickstart in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 03/30/2025
+ms.topic: quickstart
 zone_pivot_groups: orleans-version
 ---
 
 # Orleans streaming quickstart
 
-This guide will show you a quick way to set up and use Orleans Streams. To learn more about the details of the streaming features, read other parts of this documentation.
+This guide shows you a quick way to set up and use Orleans Streams. To learn more about the details of streaming features, read other parts of this documentation.
 
 ## Required configurations
 
@@ -15,7 +16,7 @@ This guide will show you a quick way to set up and use Orleans Streams. To learn
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-In this guide, you'll use a memory-based stream that uses grain messaging to send stream data to subscribers. You will use the in-memory storage provider to store lists of subscriptions. Using memory-based mechanisms for streaming and storage is only intended for local development and testing, and isn't intended for production environments.
+In this guide, you use a memory-based stream that uses grain messaging to send stream data to subscribers. You use the in-memory storage provider to store lists of subscriptions. Using memory-based mechanisms for streaming and storage is intended only for local development and testing, not for production environments.
 
 On the silo, where `silo` is an <xref:Orleans.Hosting.ISiloBuilder>, call <xref:Orleans.Hosting.SiloBuilderExtensions.AddMemoryStreams%2A>:
 
@@ -35,7 +36,7 @@ client.AddMemoryStreams("StreamProvider");
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-In this guide, we'll use a simple message-based stream that uses grain messaging to send stream data to subscribers. We will use the in-memory storage provider to store lists of subscriptions, so it is not a wise choice for real production applications.
+In this guide, use a simple message-based stream that uses grain messaging to send stream data to subscribers. Use the in-memory storage provider to store lists of subscriptions; this isn't a wise choice for real production applications.
 
 On the silo, where `hostBuilder` is an `ISiloHostBuilder`, call <xref:Orleans.Hosting.StreamHostingExtensions.AddSimpleMessageStreamProvider%2A>:
 
@@ -51,7 +52,7 @@ clientBuilder.AddSimpleMessageStreamProvider("SMSProvider");
 ```
 
 > [!NOTE]
-> By default, messages that are passed over the Simple Message Stream are considered immutable, and may be passed by reference to other grains.  To turn off this behavior, you must config the SMS provider to turn off <xref:Orleans.Configuration.SimpleMessageStreamProviderOptions.OptimizeForImmutableData?displayProperty=nameWithType>
+> By default, messages passed over the Simple Message Stream are considered immutable and might be passed by reference to other grains. To turn off this behavior, configure the SMS provider to turn off <xref:Orleans.Configuration.SimpleMessageStreamProviderOptions.OptimizeForImmutableData?displayProperty=nameWithType>.
 
 ```csharp
 siloBuilder
@@ -62,7 +63,7 @@ siloBuilder
 
 :::zone-end
 
-You can create streams, send data using them as producers and also receive data as subscribers.
+You can create streams, send data using them as producers, and receive data as subscribers.
 
 ## Produce events
 
@@ -70,7 +71,7 @@ You can create streams, send data using them as producers and also receive data 
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-It's relatively easy to produce events for streams. You should first get access to the stream provider that you defined in the config previously (`"StreamProvider"`), and then choose a stream and push data to it.
+It's relatively easy to produce events for streams. First, get access to the stream provider defined in the config previously (`"StreamProvider"`), then choose a stream and push data to it.
 
 ```csharp
 // Pick a GUID for a chat room grain and chat room stream
@@ -88,7 +89,7 @@ var stream = streamProvider.GetStream<int>(streamId);
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-It's relatively easy to produce events for streams. You should first get access to the stream provider that you defined in the config previously (`"SMSProvider"`), and then choose a stream and push data to it.
+It's relatively easy to produce events for streams. First, get access to the stream provider defined in the config previously (`"SMSProvider"`), then choose a stream and push data to it.
 
 ```csharp
 // Pick a GUID for a chat room grain and chat room stream
@@ -101,9 +102,9 @@ var stream = streamProvider.GetStream<int>(guid, "RANDOMDATA");
 
 :::zone-end
 
-As you can see, our stream has a GUID and a namespace. This will make it easy to identify unique streams. For example, the namespace for a chat room can be "Rooms" and the GUID can be the owning RoomGrain's GUID.
+As you can see, the stream has a GUID and a namespace. This makes it easy to identify unique streams. For example, the namespace for a chat room could be "Rooms", and the GUID could be the owning `RoomGrain`'s GUID.
 
-Here we use the GUID of some known chat room. Using the `OnNextAsync` method of the stream we can push data to it. Let's do it inside a timer, using random numbers. You could use any other data type for the stream as well.
+Here, use the GUID of a known chat room. Using the `OnNextAsync` method of the stream, push data to it. Let's do this inside a timer using random numbers. You could use any other data type for the stream as well.
 
 ```csharp
 RegisterTimer(_ =>
@@ -117,7 +118,7 @@ TimeSpan.FromMilliseconds(1_000));
 
 ## Subscribe to and receive streaming data
 
-For receiving data, you can use implicit and explicit subscriptions, which are described in more detail at [Explicit and implicit subscriptions](streams-programming-apis.md#explicit-and-implicit-subscriptions). This example uses implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute [[ImplicitStreamSubscription(namespace)]](xref:Orleans.ImplicitStreamSubscriptionAttribute).
+For receiving data, you can use implicit and explicit subscriptions, described in more detail at [Explicit and implicit subscriptions](streams-programming-apis.md#explicit-and-implicit-subscriptions). This example uses implicit subscriptions, which are easier. When a grain type wants to implicitly subscribe to a stream, it uses the attribute `[ImplicitStreamSubscription(namespace)]`.
 
 For your case, define a `ReceiverGrain` like this:
 
@@ -126,9 +127,9 @@ For your case, define a `ReceiverGrain` like this:
 public class ReceiverGrain : Grain, IRandomReceiver
 ```
 
-Whenever data is pushed to the streams of the namespace `RANDOMDATA`, as we have in the timer, a grain of type `ReceiverGrain` with the same `Guid` of the stream will receive the message. Even if no activations of the grain currently exist, the runtime will automatically create a new one and send the message to it.
+Whenever data is pushed to streams in the `RANDOMDATA` namespace (as in the timer example), a grain of type `ReceiverGrain` with the same `Guid` as the stream receives the message. Even if no activations of the grain currently exist, the runtime automatically creates a new one and sends the message to it.
 
-For this to work, we need to complete the subscription process by setting our `OnNextAsync` method for receiving data. To do so, our `ReceiverGrain` should call something like this in its `OnActivateAsync`
+For this to work, complete the subscription process by setting the `OnNextAsync` method for receiving data. To do so, the `ReceiverGrain` should call something like this in its `OnActivateAsync`:
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
@@ -185,11 +186,11 @@ await stream.SubscribeAsync<int>(
 
 :::zone-end
 
-You're all set! Now the only requirement is that something triggers the producer grain's creation, and then it will register the timer and start sending random ints to all interested parties.
+You're all set! Now, the only requirement is that something triggers the producer grain's creation. Then, it registers the timer and starts sending random integers to all interested parties.
 
-Again, this guide skips lots of details and is only good for showing the big picture. Read other parts of this manual and other resources on RX to gain a good understanding of what is available and how.
+Again, this guide skips many details and only provides a high-level overview. Read other parts of this manual and other resources on Rx to gain a good understanding of what's available and how it works.
 
-Reactive programming can be a very powerful approach to solving many problems. You could for example use LINQ in the subscriber to filter numbers and do all sorts of interesting stuff.
+Reactive programming can be a powerful approach to solving many problems. For example, you could use LINQ in the subscriber to filter numbers and perform various interesting operations.
 
 ## See also
 

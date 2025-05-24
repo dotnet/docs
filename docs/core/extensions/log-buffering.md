@@ -55,7 +55,7 @@ dotnet add package Microsoft.AspNetCore.Diagnostics.Middleware
 
 ---
 
-For more information, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
+For more information about adding packages, see [dotnet add package](../tools/dotnet-package-add.md) or [Manage package dependencies in .NET applications](../tools/dependencies.md).
 
 ## Global buffering
 

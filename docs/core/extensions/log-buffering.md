@@ -157,7 +157,7 @@ To flush the buffered logs for the current request, inject the `PerRequestLogBuf
 Log buffering rules evaluation is performed on each log record. The following algorithm is used for each log record:
 
 1. If a log entry matches any rule, it is buffered instead of being emitted immediately.
-1. If a log entry does not match any rule, it will be emitted normally.
+1. If a log entry does not match any rule, it is emitted normally.
 1. If the buffer size limit is reached, the oldest buffered log entries will be dropped (not emitted!) to make room for new ones.
 1. If a log entry size is greater than the maximum log record size, it will not be buffered and will be emitted normally.
 

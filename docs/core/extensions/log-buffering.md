@@ -206,7 +206,7 @@ However, be mindful of the memory consumption, especially in high-throughput app
 - The order of logs is not guaranteed to be preserved. However, original timestamps are preserved.
 - Custom configuration per each logging provider is not supported. The same configuration is used for all providers.
 - Log scopes are not supported. This means that if you use the <xref:Microsoft.Extensions.Logging.ILogger.BeginScope%2A> method, the buffered log records will not be associated with the scope.
-- Not all information of the original log record is preserved. Log buffering internally uses <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord> class when flushing, and its following properties are always empty:
+- Not all information of the original log record is preserved. Log buffering internally uses <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord> class when flushing, and the following of its properties are always empty:
   - <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord.ActivitySpanId>
   - <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord.ActivityTraceId>
   - <xref:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord.ManagedThreadId>

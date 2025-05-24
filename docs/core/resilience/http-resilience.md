@@ -203,6 +203,9 @@ The preceding code:
 
 There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies). For more information about configuring `ShouldHandle` delegates, see [Polly docs: Fault handling in reactive strategies](https://www.pollydocs.org/strategies#fault-handling).
 
+> [!WARNING]
+> If you have retry and attempt timeout strategies, and you also want to configure the `ShouldHandle` delegate in retry strategy, please consider if `ShouldHandle` needs to cover Polly timeout exception. The Polly timeout exception is `TimeoutRejectedException` that inherit the <xref:System.Exception>, which is different with the <xref:System.TimeoutException>.
+
 ### Dynamic reload
 
 Polly supports dynamic reloading of the configured resilience strategies. This means that you can change the configuration of the resilience strategies at run time. To enable dynamic reload, use the appropriate `AddResilienceHandler` overload that exposes the `ResilienceHandlerContext`. Given the context, call `EnableReloads` of the corresponding resilience strategy options:

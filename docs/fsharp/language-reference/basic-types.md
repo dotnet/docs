@@ -10,12 +10,12 @@ This topic lists the basic types that are defined in F#. These types are the mos
 |Type|.NET type|Description|Example|
 |----|---------|-----------|-------|
 |`bool`|<xref:System.Boolean>|Possible values are `true` and `false`.|`true`/`false`|
-|`byte`|<xref:System.Byte>|Values from 0 to 255.|`1uy`|
-|`sbyte`|<xref:System.SByte>|Values from -128 to 127.|`1y`|
+|`uint8`, `byte`|<xref:System.Byte>|Values from 0 to 255.|`1uy`|
+|`int8`, `sbyte`|<xref:System.SByte>|Values from -128 to 127.|`1y`|
 |`int16`|<xref:System.Int16>|Values from -32768 to 32767.|`1s`|
 |`uint16`|<xref:System.UInt16>|Values from 0 to 65535.|`1us`|
-|`int`|<xref:System.Int32>|Values from -2,147,483,648 to 2,147,483,647.|`1`|
-|`uint`|<xref:System.UInt32>|Values from 0 to 4,294,967,295.|`1u`|
+|`int32`, `int`|<xref:System.Int32>|Values from -2,147,483,648 to 2,147,483,647.|`1`|
+|`uint32`, `uint`|<xref:System.UInt32>|Values from 0 to 4,294,967,295.|`1u`|
 |`int64`|<xref:System.Int64>|Values from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.|`1L`|
 |`uint64`|<xref:System.UInt64>|Values from 0 to 18,446,744,073,709,551,615.|`1UL`|
 |`nativeint`|<xref:System.IntPtr>|A native pointer as a signed integer.|`nativeint 1`|

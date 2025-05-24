@@ -76,7 +76,7 @@ If using the Azure table-based gossip channel, operators can inject a new config
 |-----------------|----------|---------------------------------------------------------|
 | PartitionKey    | String   | the ServiceId                                           |
 | RowKey          | String   | "CONFIG"                                                |
-| Clusters        | String   | comma-separated list of cluster IDs, e.g. "us1,eu1,us2" |
+| Clusters        | String   | comma-separated list of cluster IDs, for example, "us1,eu1,us2" |
 | Comment         | String   | optional comment                                        |
 | GossipTimestamp | DateTime | UTC timestamp for the configuration                     |
 

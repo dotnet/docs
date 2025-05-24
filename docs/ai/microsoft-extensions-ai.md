@@ -1,20 +1,20 @@
 ---
-title: Microsoft.Extensions.AI libraries (Preview)
+title: Microsoft.Extensions.AI libraries
 description: Learn how to use the Microsoft.Extensions.AI libraries to integrate and interact with various AI services in your .NET applications.
 author: IEvangelist
 ms.author: dapine
 ms.date: 04/29/2025
 ---
 
-# Microsoft.Extensions.AI libraries (Preview)
+# Microsoft.Extensions.AI libraries
 
-.NET developers need a way to integrate and interact with a growing variety of artificial intelligence (AI) services in their apps. The `Microsoft.Extensions.AI` libraries provide a unified approach for representing generative AI components, and enables seamless integration and interoperability with various AI services. This article introduces the libraries and provides in-depth usage examples to help you get started.
+.NET developers need to integrate and interact with a growing variety of artificial intelligence (AI) services in their apps. The `Microsoft.Extensions.AI` libraries provide a unified approach for representing generative AI components, and enable seamless integration and interoperability with various AI services. This article introduces the libraries and provides in-depth usage examples to help you get started.
 
 ## The packages
 
-The [📦 Microsoft.Extensions.AI.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) package provides the core exchange types: <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>. Any .NET library that provides an AI client can implement the `IChatClient` interface to enable seamless integration with consuming code.
+The [📦 Microsoft.Extensions.AI.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.AI.Abstractions) package provides the core exchange types, including <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>. Any .NET library that provides an LLM client can implement the `IChatClient` interface to enable seamless integration with consuming code.
 
-The [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) package has an implicit dependency on the `Microsoft.Extensions.AI.Abstractions` package. This package enables you to easily integrate components such as telemetry and caching into your applications using familiar dependency injection and middleware patterns. For example, it provides the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClientBuilderExtensions.UseOpenTelemetry(Microsoft.Extensions.AI.ChatClientBuilder,Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.Action{Microsoft.Extensions.AI.OpenTelemetryChatClient})> extension method, which adds OpenTelemetry support to the chat client pipeline.
+The [📦 Microsoft.Extensions.AI](https://www.nuget.org/packages/Microsoft.Extensions.AI) package has an implicit dependency on the `Microsoft.Extensions.AI.Abstractions` package. This package enables you to easily integrate components such as automatic function tool invocation, telemetry, and caching into your applications using familiar dependency injection and middleware patterns. For example, it provides the <xref:Microsoft.Extensions.AI.OpenTelemetryChatClientBuilderExtensions.UseOpenTelemetry(Microsoft.Extensions.AI.ChatClientBuilder,Microsoft.Extensions.Logging.ILoggerFactory,System.String,System.Action{Microsoft.Extensions.AI.OpenTelemetryChatClient})> extension method, which adds OpenTelemetry support to the chat client pipeline.
 
 ### Which package to reference
 
@@ -84,11 +84,11 @@ Helpers like <xref:Microsoft.Extensions.AI.ChatResponseExtensions.AddMessages*> 
 
 #### Tool calling
 
-Some models and services support _tool calling_. To gather additional information, you can configure the <xref:Microsoft.Extensions.AI.ChatOptions> with information about tools (usually .NET methods) that the model can request the client to invoke. Instead of sending a final response, the model requests a function invocation with specific arguments. The client then invokes the function and sends the results back to the model with the conversation history. The `Microsoft.Extensions.AI` library includes abstractions for various message content types, including function call requests and results. While `IChatClient` consumers can interact with this content directly, `Microsoft.Extensions.AI` automates these interactions pro. It provides the following types:
+Some models and services support _tool calling_. To gather additional information, you can configure the <xref:Microsoft.Extensions.AI.ChatOptions> with information about tools (usually .NET methods) that the model can request the client to invoke. Instead of sending a final response, the model requests a function invocation with specific arguments. The client then invokes the function and sends the results back to the model with the conversation history. The `Microsoft.Extensions.AI.Abstractions` library includes abstractions for various message content types, including function call requests and results. While `IChatClient` consumers can interact with this content directly, `Microsoft.Extensions.AI` provides helpers that can enable automatically invoking the tools in response to corresponding requests. The `Microsoft.Extensions.AI.Abstractions` and `Microsoft.Extensions.AI` libraries provide the following types:
 
 - <xref:Microsoft.Extensions.AI.AIFunction>: Represents a function that can be described to an AI model and invoked.
 - <xref:Microsoft.Extensions.AI.AIFunctionFactory>: Provides factory methods for creating `AIFunction` instances that represent .NET methods.
-- <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient>: Wraps an `IChatClient` to add automatic function-invocation capabilities.
+- <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient>: Wraps an `IChatClient` as another `IChatClient` that adds automatic function-invocation capabilities.
 
 The following example demonstrates a random function invocation (this example depends on the [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama) NuGet package):
 
@@ -121,7 +121,7 @@ Alternatively, the <xref:Microsoft.Extensions.AI.LoggingChatClient> and correspo
 
 #### Provide options
 
-Every call to <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner, via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary.
+Every call to <xref:Microsoft.Extensions.AI.IChatClient.GetResponseAsync*> or <xref:Microsoft.Extensions.AI.IChatClient.GetStreamingResponseAsync*> can optionally supply a <xref:Microsoft.Extensions.AI.ChatOptions> instance containing additional parameters for the operation. The most common parameters among AI models and services show up as strongly typed properties on the type, such as <xref:Microsoft.Extensions.AI.ChatOptions.Temperature?displayProperty=nameWithType>. Other parameters can be supplied by name in a weakly typed manner, via the <xref:Microsoft.Extensions.AI.ChatOptions.AdditionalProperties?displayProperty=nameWithType> dictionary, or via an options instance that the underlying provider understands, via the <xref:Microsoft.Extensions.AI.ChatOptions.RawRepresentationFactory?displayProperty=nameWithType> property.
 
 You can also specify options when building an `IChatClient` with the fluent <xref:Microsoft.Extensions.AI.ChatClientBuilder> API by chaining a call to the <xref:Microsoft.Extensions.AI.ConfigureOptionsChatClientBuilderExtensions.ConfigureOptions(Microsoft.Extensions.AI.ChatClientBuilder,System.Action{Microsoft.Extensions.AI.ChatOptions})> extension method. This delegating client wraps another client and invokes the supplied delegate to populate a `ChatOptions` instance for every call. For example, to ensure that the <xref:Microsoft.Extensions.AI.ChatOptions.ModelId?displayProperty=nameWithType> property defaults to a particular model name, you can use code like the following:
 
@@ -181,15 +181,15 @@ When working with a stateless service, callers maintain a list of all messages. 
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet1":::
 
-For stateful services, you might already know the identifier used for the relevant conversation. You can put that identifier into <xref:Microsoft.Extensions.AI.ChatOptions.ChatThreadId?displayProperty=nameWithType>. Usage then follows the same pattern, except there's no need to maintain a history manually.
+For stateful services, you might already know the identifier used for the relevant conversation. You can put that identifier into <xref:Microsoft.Extensions.AI.ChatOptions.ConversationId?displayProperty=nameWithType>. Usage then follows the same pattern, except there's no need to maintain a history manually.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet2":::
 
-Some services might support automatically creating a thread ID for a request that doesn't have one. In such cases, you can transfer the <xref:Microsoft.Extensions.AI.ChatResponse.ChatThreadId?displayProperty=nameWithType> over to the `ChatOptions.ChatThreadId` for subsequent requests. For example:
+Some services might support automatically creating a conversation ID for a request that doesn't have one, or creating a new conversation ID that represents the current state of the conversation after incorporating the last round of messages. In such cases, you can transfer the <xref:Microsoft.Extensions.AI.ChatResponse.ConversationId?displayProperty=nameWithType> over to the `ChatOptions.ConversationId` for subsequent requests. For example:
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet3":::
 
-If you don't know ahead of time whether the service is stateless or stateful, you can check the response <xref:Microsoft.Extensions.AI.ChatResponse.ChatThreadId> and act based on its value. If it's set, then that value is propagated to the options and the history is cleared so as to not resend the same history again. If the response `ChatThreadId` isn't set, then the response message is added to the history so that it's sent back to the service on the next turn.
+If you don't know ahead of time whether the service is stateless or stateful, you can check the response <xref:Microsoft.Extensions.AI.ChatResponse.ConversationId> and act based on its value. If it's set, then that value is propagated to the options and the history is cleared so as to not resend the same history again. If the response `ConversationId` isn't set, then the response message is added to the history so that it's sent back to the service on the next turn.
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.StatelessStateful/Program.cs" id="Snippet4":::
 
@@ -251,7 +251,7 @@ In this way, the `RateLimitingEmbeddingGenerator` can be composed with other `IE
 You can start building with `Microsoft.Extensions.AI` in the following ways:
 
 - **Library developers**: If you own libraries that provide clients for AI services, consider implementing the interfaces in your libraries. This allows users to easily integrate your NuGet package via the abstractions.
-- **Service consumers**: If you're developing libraries that consume AI services, use the abstractions instead of hardcoding to a specific AI service. This approach gives your consumers the flexibility to choose their preferred service.
+- **Service consumers**: If you're developing libraries that consume AI services, use the abstractions instead of hardcoding to a specific AI service. This approach gives your consumers the flexibility to choose their preferred provider.
 - **Application developers**: Use the abstractions to simplify integration into your apps. This enables portability across models and services, facilitates testing and mocking, leverages middleware provided by the ecosystem, and maintains a consistent API throughout your app, even if you use different services in different parts of your application.
 - **Ecosystem contributors**: If you're interested in contributing to the ecosystem, consider writing custom middleware components.
 

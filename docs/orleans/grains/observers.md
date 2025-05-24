@@ -16,7 +16,7 @@ For this reason, the `ObserverManager<T>` utility removes subscriptions after a 
 
 To subscribe to a notification, the client must first create a local object that implements the observer interface. It then calls a method on the observer factory, <xref:Orleans.IGrainFactory.CreateObjectReference%2A>`, to turn the object into a grain reference, which can then be passed to the subscription method on the notifying grain.
 
-This model can also be used by other grains to receive asynchronous notifications. Grains can also implement <xref:Orleans.IGrainObserver> interfaces. Unlike in the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (e.g. `this.AsReference<IMyGrainObserverInterface>()`). There is no need for `CreateObjectReference()` because grains are already addressable.
+This model can also be used by other grains to receive asynchronous notifications. Grains can also implement <xref:Orleans.IGrainObserver> interfaces. Unlike in the client subscription case, the subscribing grain simply implements the observer interface and passes in a reference to itself (for example, `this.AsReference<IMyGrainObserverInterface>()`). There is no need for `CreateObjectReference()` because grains are already addressable.
 
 ## Code example
 

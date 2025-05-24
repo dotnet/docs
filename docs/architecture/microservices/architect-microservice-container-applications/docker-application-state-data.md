@@ -21,7 +21,7 @@ From the Docker host, as [Docker Volumes](https://docs.docker.com/engine/admin/v
 
 From remote storage:
 
-- [Azure Storage](https://azure.microsoft.com/documentation/services/storage/), which provides geo-distributable storage, providing a good long-term persistence solution for containers.
+- [Azure Storage](/azure/storage/common/storage-introduction), which provides geo-distributable storage, providing a good long-term persistence solution for containers.
 
 - Remote relational databases like [Azure SQL Database](https://azure.microsoft.com/services/sql-database/) or NoSQL databases like [Azure Cosmos DB](/azure/cosmos-db/introduction), or cache services like [Redis](https://redis.io/).
 

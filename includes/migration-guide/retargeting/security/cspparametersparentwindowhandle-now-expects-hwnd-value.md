@@ -20,7 +20,7 @@ cspParameters.ParentWindowHandle = form.Handle;
 
 Users who had identified that the correct value to pass was the address of a memory location which held the value `form.Handle` can opt out of the behavior change by setting the AppContext switch `Switch.System.Security.Cryptography.DoNotAddrOfCspParentWindowHandle` to `true`:
 
-- By programmatically setting compat switches on the AppContext, as explained [here](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).
+- By programmatically setting compat switches on the AppContext, as explained in [.NET Announcements at Build 2015](https://devblogs.microsoft.com/dotnet/net-announcements-at-build-2015/#dotnet46).
 - By adding the following line to the `<runtime>` section of the app.config file:
 
 ```xml

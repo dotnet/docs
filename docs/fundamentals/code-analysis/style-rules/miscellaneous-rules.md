@@ -11,6 +11,7 @@ This section contains code-style rules that don't fit in any other category. The
 
 - [Remove invalid global 'SuppressMessageAttribute' (IDE0076)](ide0076.md)
 - [Avoid legacy format target in global 'SuppressMessageAttribute' (IDE0077)](ide0077.md)
+- [Implement with Copilot (IDE3000)](ide3000.md)
 
 ## See also
 

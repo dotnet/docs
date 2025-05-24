@@ -1,12 +1,12 @@
 ---
 title: dotnet-trace diagnostic tool - .NET CLI
 description: Learn how to install and use the dotnet-trace CLI tool to collect .NET traces of a running process without the native profiler, by using the .NET EventPipe.
-ms.date: 08/22/2024
+ms.date: 05/12/2025
 ms.topic: reference
 ---
 # dotnet-trace performance analysis utility
 
-**This article applies to:** ✔️ `dotnet-trace` 3.0.47001 and later versions
+**This article applies to:** ✔️ `dotnet-trace` 9.0.625801 and later versions
 
 ## Install
 
@@ -53,7 +53,7 @@ The `dotnet-trace` tool:
 - **`--version`**
 
   Displays the version of the dotnet-trace utility.
-  
+
 - **`--duration`**
 
   How long to run the trace. `--duration 00:00:00:05` will run it for 5 seconds.
@@ -76,6 +76,7 @@ Collects a diagnostic trace from a running process or launches a child process a
 
 ```dotnetcli
 dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
+    [--dsrouter <ios|ios-sim|android|android-emu>]
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [--duration dd:hh:mm:ss]
     [-n, --name <name>] [--diagnostic-port] [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
@@ -99,7 +100,7 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
   Verbosity of CLR events to be emitted.
   The following table shows the available event levels.
-  
+
   | String value    | Numeric value |
   | --------------- | :-----------: |
   | `logalways`     |      `0`      |
@@ -150,8 +151,13 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   | `compilationdiagnostic` | `0x2000000000` |
   | `methoddiagnostic` | `0x4000000000` |
   | `typediagnostic` | `0x8000000000` |
+  | `waithandle` | `0x40000000000` |
 
   You can read about the CLR provider more in detail on the [.NET runtime provider reference documentation](../../fundamentals/diagnostics/runtime-events.md).
+
+- **`--dsrouter {ios|ios-sim|android|android-emu}**
+
+ Starts [dotnet-dsrouter](dotnet-dsrouter.md) and connects to it. Requires [dotnet-dsrouter](dotnet-dsrouter.md) to be installed. Run `dotnet-dsrouter -h` for more information.
 
 - **`--format {Chromium|NetTrace|Speedscope}`**
 
@@ -173,18 +179,18 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
   - Linux and macOS - a path to a Unix domain socket such as `/foo/tool1.socket`.
   - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`.
   - Android, iOS, and tvOS - an IP:port such as `127.0.0.1:9000`.
-  
+
   By default, `dotnet-trace` listens at the specified address. You can request `dotnet-trace` to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that is listening to the `/foo/tool1.socket` Unix domain socket.
-  
+
   To learn how to use this option to collect a trace from app startup, see [Use diagnostic port to collect a trace from app startup](#use-diagnostic-port-to-collect-a-trace-from-app-startup).
-  
+
 - **`--duration <time-to-run>`**
 
   The time for the trace to run. Use the `dd:hh:mm:ss` format. For example `00:00:00:05` will run it for 5 seconds.
 
 - **`-o|--output <trace-file-path>`**
 
-  The output path for the collected trace data. If not specified it defaults to `<appname>_<yyyyMMdd>_<HHmmss>.nettrace`, e.g., `myapp_20210315_111514.nettrace``.
+  The output path for the collected trace data. If not specified it defaults to `<appname>_<yyyyMMdd>_<HHmmss>.nettrace`, for example, `myapp_20210315_111514.nettrace``.
 
 - **`-p|--process-id <PID>`**
 
@@ -232,15 +238,15 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
 
 - **`--stopping-event-provider-name`**
 
-  A string, parsed as-is, that will stop the trace upon hitting an event with the matching provider name. For a more specific stopping event, additionally provide `--stopping-event-event-name` and/or `--stopping-event-payload-filter`. e.g. `--stopping-event-provider-name Microsoft-Windows-DotNETRuntime` to stop the trace upon hitting the first event emitted by the `Microsoft-Windows-DotNETRuntime` event provider.
+  A string, parsed as-is, that will stop the trace upon hitting an event with the matching provider name. For a more specific stopping event, additionally provide `--stopping-event-event-name` and/or `--stopping-event-payload-filter`. for example, `--stopping-event-provider-name Microsoft-Windows-DotNETRuntime` to stop the trace upon hitting the first event emitted by the `Microsoft-Windows-DotNETRuntime` event provider.
 
 - **`--stopping-event-event-name`**
 
-  A string, parsed as-is, that will stop the trace upon hitting an event with the matching event name. Requires `--stopping-event-provider-name` to be set. For a more specific stopping event, additionally provide `--stopping-event-payload-filter`. e.g. `--stopping-event-provider-name Microsoft-Windows-DotNETRuntime --stopping-event-event-name Method/JittingStarted` to stop the trace upon hitting the first `Method/JittingStarted` event emitted by the `Microsoft-Windows-DotNETRuntime` event provider.
+  A string, parsed as-is, that will stop the trace upon hitting an event with the matching event name. Requires `--stopping-event-provider-name` to be set. For a more specific stopping event, additionally provide `--stopping-event-payload-filter`. for example, `--stopping-event-provider-name Microsoft-Windows-DotNETRuntime --stopping-event-event-name Method/JittingStarted` to stop the trace upon hitting the first `Method/JittingStarted` event emitted by the `Microsoft-Windows-DotNETRuntime` event provider.
 
 - **`--stopping-event-payload-filter`**
 
-  A string, parsed as [payload_field_name]:[payload_field_value] pairs separated by commas, that will stop the trace upon hitting an event containing all specified payload pairs. Requires `--stopping-event-provider-name` and `--stopping-event-event-name` to be set. e.g. `--stopping-event-provider-name Microsoft-Windows-DotNETRuntime --stopping-event-event-name Method/JittingStarted --stopping-event-payload-filter MethodNameSpace:Program,MethodName:OnButtonClick` to stop the trace upon the first `Method/JittingStarted` event for the method `OnButtonClick` in the `Program` namespace emitted by the `Microsoft-Windows-DotNETRuntime` event provider.
+  A string, parsed as [payload_field_name]:[payload_field_value] pairs separated by commas, that will stop the trace upon hitting an event containing all specified payload pairs. Requires `--stopping-event-provider-name` and `--stopping-event-event-name` to be set. for example, `--stopping-event-provider-name Microsoft-Windows-DotNETRuntime --stopping-event-event-name Method/JittingStarted --stopping-event-payload-filter MethodNameSpace:Program,MethodName:OnButtonClick` to stop the trace upon the first `Method/JittingStarted` event for the method `OnButtonClick` in the `Program` namespace emitted by the `Microsoft-Windows-DotNETRuntime` event provider.
 
 > [!NOTE]
 
@@ -301,7 +307,7 @@ Suppose you start a long-running app using the command ```dotnet run --configura
 
 ```dotnetcli
 > dotnet-trace ps
-  
+
   21932 dotnet     C:\Program Files\dotnet\dotnet.exe   run --configuration Release
   36656 dotnet     C:\Program Files\dotnet\dotnet.exe
 ```

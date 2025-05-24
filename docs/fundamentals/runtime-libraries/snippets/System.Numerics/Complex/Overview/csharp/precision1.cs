@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 using System.Numerics;
 
 public class PrecisionEx
 {
-    public static void Main()
+    public static void Run()
     {
         // <Snippet5>
         Complex value = new Complex(Double.MinValue / 2, Double.MinValue / 2);

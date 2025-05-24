@@ -14,7 +14,7 @@ Creating an Orleans app involves configuring the silo, configuring the client, a
 ## Configure the silo
 
 Silos are configured programmatically via `SiloHostBuilder` and several supplemental option classes.
-A list of all of the options can be found [here](../host/configuration-guide/list-of-options-classes.md).
+A list of all of the options can be found at [List of options classes](../host/configuration-guide/list-of-options-classes.md).
 
 ```csharp
 static async Task<ISiloHost> StartSilo()

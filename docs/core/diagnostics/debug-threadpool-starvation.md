@@ -97,32 +97,45 @@ dotnet-counters monitor -n DiagnosticScenarios
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name Current Value
 [System.Runtime]
-    % Time in GC since last GC (%)                                 0
-    Allocation Rate (B / 1 sec)                                    0
-    CPU Usage (%)                                                  0
-    Exception Count (Count / 1 sec)                                0
-    GC Committed Bytes (MB)                                        0
-    GC Fragmentation (%)                                           0
-    GC Heap Size (MB)                                             34
-    Gen 0 GC Count (Count / 1 sec)                                 0
-    Gen 0 Size (B)                                                 0
-    Gen 1 GC Count (Count / 1 sec)                                 0
-    Gen 1 Size (B)                                                 0
-    Gen 2 GC Count (Count / 1 sec)                                 0
-    Gen 2 Size (B)                                                 0
-    IL Bytes Jitted (B)                                      279,021
-    LOH Size (B)                                                   0
-    Monitor Lock Contention Count (Count / 1 sec)                  0
-    Number of Active Timers                                        0
-    Number of Assemblies Loaded                                  121
-    Number of Methods Jitted                                   3,223
-    POH (Pinned Object Heap) Size (B)                              0
-    ThreadPool Completed Work Item Count (Count / 1 sec)           0
-    ThreadPool Queue Length                                        0
-    ThreadPool Thread Count                                        1
-    Time spent in JIT (ms / 1 sec)                                 0.387
-    Working Set (MB)                                              87
+    dotnet.assembly.count ({assembly}) 115
+    dotnet.gc.collections ({collection})
+        gc.heap.generation
+        gen0 2
+        gen1 1
+        gen2 1
+    dotnet.gc.heap.total_allocated (By) 64,329,632
+    dotnet.gc.last_collection.heap.fragmentation.size (By)
+        gc.heap.generation
+        gen0 199,920
+        gen1 29,208
+        gen2 0
+        loh 32
+        poh 0
+    dotnet.gc.last_collection.heap.size (By)
+        gc.heap.generation
+        gen0 208,712
+        gen1 3,456,000
+        gen2 5,065,600
+        loh 98,384
+        poh 3,147,488
+    dotnet.gc.last_collection.memory.committed_size (By) 31,096,832
+    dotnet.gc.pause.time (s) 0.024
+    dotnet.jit.compilation.time (s) 1.285
+    dotnet.jit.compiled_il.size (By) 565,249
+    dotnet.jit.compiled_methods ({method}) 5,831
+    dotnet.monitor.lock_contentions ({contention}) 148
+    dotnet.process.cpu.count ({cpu}) 16
+    dotnet.process.cpu.time (s)
+        cpu.mode
+        system 2.156
+        user 2.734
+    dotnet.process.memory.working_set (By) 1.3217e+08
+    dotnet.thread_pool.queue.length ({work_item}) 0
+    dotnet.thread_pool.thread.count ({thread}) 0
+    dotnet.thread_pool.work_item.count ({work_item}) 32,267
+    dotnet.timer.count ({timer}) 0
 ```
 
 The counters above are an example while the web server wasn't serving any requests. Run Bombardier again with the `api/diagscenario/tasksleepwait` endpoint and sustained load for 2 minutes so there's plenty of time to observe what happens to the performance counters.
@@ -131,38 +144,47 @@ The counters above are an example while the web server wasn't serving any reques
 bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait -d 120s
 ```
 
-ThreadPool starvation occurs when there are no free threads to handle the queued work items and the runtime responds by increasing the number of ThreadPool threads. You should observe the `ThreadPool Thread Count` rapidly increase to 2-3x the number of processor cores on your machine and then further threads are added 1-2 per second until eventually stabilizing somewhere above 125. The slow and steady increase of ThreadPool threads combined with CPU Usage much less than 100% are the key signals that ThreadPool starvation is currently a performance bottleneck. The thread count increase will continue until either the pool hits the maximum number of threads, enough threads have been created to satisfy all the incoming work items, or the CPU has been saturated. Often, but not always, ThreadPool starvation will also show large values for `ThreadPool Queue Length` and low values for `ThreadPool Completed Work Item Count`, meaning that there's a large amount of pending work and little work being completed. Here's an example of the counters while the thread count is still rising:
+ThreadPool starvation occurs when there are no free threads to handle the queued work items and the runtime responds by increasing the number of ThreadPool threads. You should observe the `dotnet.thread_pool.thread.count` rapidly increase to 2-3x the number of processor cores on your machine and then further threads are added 1-2 per second until eventually stabilizing somewhere above 125. The slow and steady increase of ThreadPool threads combined with CPU Usage much less than 100% are the key signals that ThreadPool starvation is currently a performance bottleneck. The thread count increase will continue until either the pool hits the maximum number of threads, enough threads have been created to satisfy all the incoming work items, or the CPU has been saturated. Often, but not always, ThreadPool starvation will also show large values for `dotnet.thread_pool.queue.length` and low values for `dotnet.thread_pool.work_item.count`, meaning that there's a large amount of pending work and little work being completed. Here's an example of the counters while the thread count is still rising:
 
 ```dotnetcli
-Press p to pause, r to resume, q to quit.
-    Status: Running
-
 [System.Runtime]
-    % Time in GC since last GC (%)                                 0
-    Allocation Rate (B / 1 sec)                               24,480
-    CPU Usage (%)                                                  0
-    Exception Count (Count / 1 sec)                                0
-    GC Committed Bytes (MB)                                       56
-    GC Fragmentation (%)                                          40.603
-    GC Heap Size (MB)                                             89
-    Gen 0 GC Count (Count / 1 sec)                                 0
-    Gen 0 Size (B)                                         6,306,160
-    Gen 1 GC Count (Count / 1 sec)                                 0
-    Gen 1 Size (B)                                         8,061,400
-    Gen 2 GC Count (Count / 1 sec)                                 0
-    Gen 2 Size (B)                                               192
-    IL Bytes Jitted (B)                                      279,263
-    LOH Size (B)                                              98,576
-    Monitor Lock Contention Count (Count / 1 sec)                  0
-    Number of Active Timers                                      124
-    Number of Assemblies Loaded                                  121
-    Number of Methods Jitted                                   3,227
-    POH (Pinned Object Heap) Size (B)                      1,197,336
-    ThreadPool Completed Work Item Count (Count / 1 sec)           2
-    ThreadPool Queue Length                                       29
-    ThreadPool Thread Count                                       96
-    Time spent in JIT (ms / 1 sec)                                 0
-    Working Set (MB)                                             152
+    dotnet.assembly.count ({assembly}) 115
+    dotnet.gc.collections ({collection})
+        gc.heap.generation
+        gen0 5
+        gen1 1
+        gen2 1
+    dotnet.gc.heap.total_allocated (By) 1.6947e+08
+    dotnet.gc.last_collection.heap.fragmentation.size (By)
+        gc.heap.generation
+        gen0 0
+        gen1 348,248
+        gen2 0
+        loh 32
+        poh 0
+    dotnet.gc.last_collection.heap.size (By)
+        gc.heap.generation
+        gen0 0
+        gen1 18,010,920
+        gen2 5,065,600
+        loh 98,384
+        poh 3,407,048
+    dotnet.gc.last_collection.memory.committed_size (By) 66,842,624
+    dotnet.gc.pause.time (s) 0.05
+    dotnet.jit.compilation.time (s) 1.317
+    dotnet.jit.compiled_il.size (By) 574,886
+    dotnet.jit.compiled_methods ({method}) 6,008
+    dotnet.monitor.lock_contentions ({contention}) 194
+    dotnet.process.cpu.count ({cpu}) 16
+    dotnet.process.cpu.time (s)
+        cpu.mode
+        system 4.953
+        user 6.266
+    dotnet.process.memory.working_set (By) 1.3217e+08
+    dotnet.thread_pool.queue.length ({work_item}) 0
+    dotnet.thread_pool.thread.count ({thread}) 133
+    dotnet.thread_pool.work_item.count ({work_item}) 71,188
+    dotnet.timer.count ({timer}) 124
 ```
 
 Once the count of ThreadPool threads stabilizes, the pool is no longer starving. But if it stabilizes at a high value (more than about three times the number of processor cores), that usually indicates the application code is blocking some ThreadPool threads and the ThreadPool is compensating by running with more threads. Running steady at high thread counts won't necessarily have large impacts on request latency, but if load varies dramatically over time or the app will be periodically restarted, then each time the ThreadPool is likely to enter a period of starvation where it's slowly increasing threads and delivering poor request latency. Each thread also consumes memory, so reducing the total number of threads needed provides another benefit.

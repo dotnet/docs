@@ -214,6 +214,6 @@ However, be mindful of the memory consumption, especially in high-throughput app
 
 ## See also
 
-- [Log Sampling](log-sampling.md)
+- [Log sampling](log-sampling.md)
 - [Logging in .NET](logging.md)
 - [High-performance logging in .NET](high-performance-logging.md)

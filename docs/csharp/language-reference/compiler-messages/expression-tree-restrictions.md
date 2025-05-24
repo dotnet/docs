@@ -47,6 +47,8 @@ f1_keywords:
  - "CS9170"
  - "CS9175"
  - "CS9226"
+ - "CS9296"
+ - "CS9307"
 helpviewer_keywords:
  - "CS0765"
  - "CS0831"
@@ -94,7 +96,9 @@ helpviewer_keywords:
  - "CS9170"
  - "CS9175"
  - "CS9226"
-ms.date: 09/06/2023
+ - "CS9296"
+ - "CS9307"
+ms.date: 05/27/2025
 ---
 # Resolve errors and warnings generated from expressions prohibited in expression trees
 
@@ -149,6 +153,8 @@ That's by design. The text closely matches the text of the compiler error / warn
 - **CS9170** - *An expression tree may not contain an inline array access or conversion.*
 - **CS9175** - *An expression tree may not contain a collection expression.*
 - **CS9226** - *An expression tree may not contain an expanded form of non-array params collection parameter.*
+- **CS9296** - *An expression tree may not contain an extension property access*.
+- **CS9307** - *An expression tree may not contain a named argument specification out of position*.
 
 ## Expression tree restrictions
 
@@ -184,6 +190,7 @@ The following expressions are prohibited:
 
 Other restrictions are:
 
+- Extension properties can't be accessed as extensions.
 - Attributes can't be applied to the lambda expression, its parameters or return.
 - The lambda expression must be convertible to a type derived from <xref:System.Linq.Expressions.Expression?displayProperty=fullName> whose type parameter is a delegate type.
 - [named and optional parameters](../../programming-guide/classes-and-structs/named-and-optional-arguments.md) are restricted. The expression can't call a method specifying named arguments, and it can't use the default value of an optional parameter.

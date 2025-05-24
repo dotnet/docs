@@ -1,7 +1,7 @@
 ---
 title: "Sorry, we don't have specifics on this error"
 description: "List of possible resources for compiler errors and warnings that haven't been documented yet."
-ms.date: 02/20/2025
+ms.date: 05/23/2025
 f1_keywords:
   - "CS0190"
   - "CS0224"
@@ -621,14 +621,25 @@ f1_keywords:
   - "CS9234"
   - "CS9235"
   - "CS9236"
-# C# 13 errors begin here
-  - "CS9268"
-  - "CS9269"
-  - "CS9270"
-  - "CS9271"
 # C# 14 errors begin here
-  - "CS9273"
-  - "CS9274"
+## "Are you missing a using or assembly reference?"
+  - "CS9286"
+## Shebang
+  - "CS9297"
+  - "CS9298"
+  - "CS9299"
+## using `extension` as type name. (valid identifiers).
+  - "CS9306"
+## User defined operators
+  - "CS9308"
+  - "CS9310"
+  - "CS9311"
+  - "CS9312"
+  - "CS9313"
+## Shebang
+  - "CS9314"
+## Strings in the data section:
+  - "CS9315"
 helpviewer_keywords:
   - "errors [C#], additional information"
 ---

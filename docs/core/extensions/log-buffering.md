@@ -15,7 +15,7 @@ ms.date: 05/16/2025
 Buffered logs are stored in temporary circular buffers in process memory, and the following conditions apply:
 
 - If the buffer is full, the oldest logs are dropped and never emitted.
-- If you want to emit the buffered logs, you can call `Flush()` on the `GlobalLogBuffer` or `PerRequestLogBuffer` class.
+- If you want to emit the buffered logs, you can call <xref:Microsoft.Extensions.Diagnostics.Buffering.LogBuffer.Flush> on the <xref:Microsoft.Extensions.Diagnostics.Buffering.GlobalLogBuffer> or <xref:Microsoft.Extensions.Diagnostics.Buffering.PerRequestLogBuffer> class.
 - If you never flush the buffers, the buffered logs will eventually be dropped as the application runs, so it effectively behaves like those logs are disabled.
 
 There are two buffering strategies available:

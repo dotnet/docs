@@ -150,7 +150,7 @@ To flush the buffered logs for the current request, inject the `PerRequestLogBuf
 :::code language="cs" source="snippets/logging/log-buffering/per-request/basic/homecontroller.cs" range="8-48" highlight="8,11,34" :::
 
 > [!NOTE]
-> Flushing the per-request buffer will also flush the global buffer.
+> Flushing the per-request buffer also flushes the global buffer.
 
 ## How buffering rules are applied
 

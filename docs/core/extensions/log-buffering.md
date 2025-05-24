@@ -167,7 +167,7 @@ For each log record, the algorithm checks:
 - If the category name starts with the rule's `CategoryName` prefix.
 - If the event ID matches the rule's `EventId`.
 - If the event name matches the rule's `EventName`.
-- If any attributes match the rule's Attributes.
+- If any attributes match the rule's `Attributes`.
 
 ### Change buffer filtering rules in a running app
 

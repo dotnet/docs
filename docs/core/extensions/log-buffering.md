@@ -21,7 +21,7 @@ Buffered logs are stored in temporary circular buffers in process memory, and th
 There are two buffering strategies available:
 
 - Global buffering: Buffers logs across the entire application.
-- Per-request buffering: Buffers logs for each individual HTTP request if available, otherwise - buffers to the global buffer.
+- Per-request buffering: Buffers logs for each individual HTTP request if available; otherwise, buffers to the global buffer.
 
 > [!NOTE]
 > Log buffering is available in .NET 9 and later versions.

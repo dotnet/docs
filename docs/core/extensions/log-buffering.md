@@ -197,7 +197,7 @@ However, be mindful of the memory consumption, especially in high-throughput app
 - Set appropriate buffer size limits based on your application's memory constraints.
 - Use per-request buffering for web applications to isolate logs by request.
 - Configure auto-flush duration carefully to balance memory usage and log availability.
-- Implement explicit flush triggers for important events (errors, warnings, etc.).
+- Implement explicit flush triggers for important events (such as errors and warnings).
 - Monitor buffer memory usage in production to ensure it remains within acceptable limits.
 
 ## Limitations

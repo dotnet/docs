@@ -171,7 +171,7 @@ For each log record, the algorithm checks:
 
 ### Change buffer filtering rules in a running app
 
-Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support runtime configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](configuration-providers.md#file-configuration-provider)—you can update filtering rules at runtime without restarting the application.
+Both [global buffering](#global-buffering) and [per-request buffering](#per-request-buffering) support run-time configuration updates via the <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> interface. If you're using a configuration provider that supports reloads—such as the [File Configuration Provider](configuration-providers.md#file-configuration-provider)—you can update filtering rules at run time without restarting the application.
 
 For example, you can start your application with the following _appsettings.json_, which enables log buffering for logs with the <xref:Microsoft.Extensions.Logging.LogLevel.Information?displayProperty=nameWithType> level and category starting with `PerRequestLogBufferingFileBased.`:
 

@@ -32,7 +32,7 @@ Log buffering extends [filtering capabilities](logging.md#configure-logging-with
 
 ## Get started
 
-To get started, install the [📦 Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry) NuGet package for [Global buffering](#global-buffering)
+To get started, install the [📦 Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry) NuGet package for [global buffering](#global-buffering).
 and/or install the [📦 Microsoft.AspNetCore.Diagnostics.Middleware](https://www.nuget.org/packages/Microsoft.AspNetCore.Diagnostics.Middleware) NuGet package for [Per-request buffering](#per-request-buffering):
 
 ### [.NET CLI](#tab/dotnet-cli)

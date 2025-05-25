@@ -1,7 +1,7 @@
 ---
 title: Task expressions
 description: Learn about support in the F# programming language for writing task expressions, which author .NET tasks directly.
-ms.date: 10/29/2021
+ms.date: 05/25/2025
 ---
 # Task expressions
 

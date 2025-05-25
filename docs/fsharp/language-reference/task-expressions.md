@@ -3,7 +3,7 @@ title: Task expressions
 description: Learn about support in the F# programming language for writing task expressions, which author .NET tasks directly.
 ms.date: 10/29/2021
 ---
-# Tasks expressions
+# Task expressions
 
 This article describes support in F# for task expressions, which are similar to [async expressions](async-expressions.md) but allow you to author .NET tasks directly. Like async expressions, task expressions execute code asynchronously, that is, without blocking execution of other work.
 
@@ -54,6 +54,35 @@ Task expressions can include the control-flow constructs `for .. in .. do`, `whi
 Within task expressions, `use` bindings can bind to values of type <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. For the latter, the disposal cleanup operation is executed asynchronously.
 
 In addition to `let!`, you can use `use!` to perform asynchronous bindings. The difference between `let!` and `use!` is the same as the difference between `let` and `use`. For `use!`, the object is disposed of at the close of the current scope. Note that in F# 6, `use!` does not allow a value to be initialized to null, even though `use` does.
+
+```fsharp
+open System
+open System.IO
+open System.Security.Cryptography
+task {
+    // use IDisposable
+    use httpClient = new Net.Http.HttpClient()
+    // use! Task<IDisposable>
+    use! exampleDomain = httpClient.GetAsync "https://example.com/data.enc"
+   
+    // use IDisposable
+    use aes = Aes.Create()
+    aes.KeySize <- 256
+    aes.GenerateIV()
+    aes.GenerateKey()
+    // do! Task
+    do! File.WriteAllTextAsync("key.iv.txt", $"Key: {Convert.ToBase64String aes.Key}\nIV: {Convert.ToBase64String aes.IV}")
+
+    // use IAsyncDisposable
+    use outputStream = File.Create "secret.enc"
+    // use IDisposable
+    use encryptor = aes.CreateEncryptor()
+    // use IAsyncDisposable
+    use cryptoStream = new CryptoStream(outputStream, encryptor, CryptoStreamMode.Write)
+    // do! Task
+    do! exampleDomain.Content.CopyToAsync cryptoStream
+}
+```
 
 ## Value Tasks
 

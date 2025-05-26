@@ -48,7 +48,7 @@ Options:
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-To customize the name of an option's argument, use the option's <xref:System.CommandLine.Option.ArgumentHelpName> property. And <xref:System.CommandLine.Help.HelpBuilder.CustomizeSymbol%2A?displayProperty=nameWithType> lets you customize several parts of the help output for a command, option, or argument (<xref:System.CommandLine.Symbol> is the base class for all three types). With `CustomizeSymbol`, you can specify:
+To customize the name of an option's argument, use the option's <xref:System.CommandLine.Option.HelpName> property. And <xref:System.CommandLine.Help.HelpBuilder.CustomizeSymbol%2A?displayProperty=nameWithType> lets you customize several parts of the help output for a command, option, or argument (<xref:System.CommandLine.Symbol> is the base class for all three types). With `CustomizeSymbol`, you can specify:
 
 * The first column text.
 * The second column text.
@@ -56,7 +56,7 @@ To customize the name of an option's argument, use the option's <xref:System.Com
 
 In the sample app, `--light-mode` is explained adequately, but changes to the `--file` and `--color` option descriptions will be helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead of `<file>`. For the `--color` option, you can shorten the list of available colors in column one, and in column two you can add a warning that some colors won't work with some backgrounds.
 
-To make these changes, delete the `await rootCommand.InvokeAsync(args);` line shown in the preceding code and add in its place the following code:
+To make these changes, delete the `rootCommand.Parse(args).Invoke();` line shown in the preceding code and add in its place the following code:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="first2columns" :::
 
@@ -65,7 +65,6 @@ The updated code requires additional `using` directives:
 ```csharp
 using System.CommandLine.Builder;
 using System.CommandLine.Help;
-using System.CommandLine.Parsing;
 ```
 
 The app now produces the following help output:
@@ -93,7 +92,7 @@ This output shows that the `firstColumnText` and `secondColumnText` parameters s
 
 You can add or replace a whole section of the help output. For example, suppose you want to add some ASCII art to the description section by using the [Spectre.Console](https://www.nuget.org/packages/Spectre.Console/) NuGet package.
 
-Change the layout by adding a call to <xref:System.CommandLine.Help.HelpBuilder.CustomizeLayout%2A?displayProperty=nameWithType> in the lambda passed to the <xref:System.CommandLine.Builder.CommandLineBuilderExtensions.UseHelp%2A> method:
+Change the layout by adding a call to <xref:System.CommandLine.Help.HelpBuilder.CustomizeLayout%2A?displayProperty=nameWithType>:
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="description" highlight="14-22" :::
 
@@ -131,8 +130,11 @@ Options:
 If you want to just use a string as the replacement section text instead of formatting it with `Spectre.Console`, replace the `Prepend` code in the preceding example with the following code:
 
 ```csharp
-.Prepend(
-    _ => _.Output.WriteLine("**New command description section**")
+.Prepend(helpContext =>
+{
+    helpContext.Output.WriteLine("**New command description section**");
+    return true;
+})
 ```
 
 ## See also

@@ -149,7 +149,7 @@ Besides the file system types and `string`, the following types are supported:
 * `byte` and `sbyte`
 * `short` and `ushort`
 * `int` and `uint`
-* `long` and`
+* `long` and `ulong`
 * `float` and `double`
 * `decimal`
 * `DateTime` and `DateTimeOffset`

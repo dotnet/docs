@@ -1,6 +1,6 @@
 ---
 title: How to customize help in System.CommandLine
-description: "Learn how to customize help in apps that are built with the System.Commandline library."
+description: "Learn how to use and customize help in apps that are built with the System.Commandline library."
 ms.date: 04/07/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -9,7 +9,47 @@ helpviewer_keywords:
   - "System.CommandLine"
 ms.topic: how-to
 ---
-# How to customize help in apps that are built with the System.Commandline library
+
+## Help option
+
+Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides <xref:System.CommandLine.Help.HelpOption> that is by default included in the [RootCommand](syntax.md#root-command) options. It generates help output.
+ For example:
+
+```dotnetcli
+dotnet list --help
+```
+
+```output
+Description:
+  List references or packages of a .NET project.
+
+Usage:
+  dotnet [options] list [<PROJECT | SOLUTION>] [command]
+
+Arguments:
+  <PROJECT | SOLUTION>  The project or solution file to operate on. If a file is not specified, the command will search the current directory for one.
+
+Options:
+  -?, -h, --help  Show command line help.
+
+Commands:
+  package    List all package references of the project or solution.
+  reference  List all project-to-project references of the project.
+```
+
+App users might be accustomed to different ways to request help on different platforms, so apps built on `System.CommandLine` respond to many ways of requesting help. The following commands are all equivalent:
+
+```dotnetcli
+dotnet --help
+dotnet -h
+dotnet /h
+dotnet -?
+dotnet /?
+```
+
+Help output doesn't necessarily show all available commands, arguments, and options. Some of them may be *hidden* via the <xref:System.CommandLine.Symbol.Hidden> property, which means they don't show up in help output (and completions) but they can be specified on the command line.
+
+## How to customize help in apps that are built with the System.Commandline library
 
 You can customize help for a specific command, option, or argument, and you can add or replace whole help sections.
 

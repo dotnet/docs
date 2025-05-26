@@ -1,6 +1,6 @@
 ---
 title: Command-line syntax overview for System.CommandLine
-description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Mentions exceptions where syntax in the .NET CLI differs. Provides guidance for designing a command-line interface."
+description: "An introduction to the command-line syntax that the System.CommandLine library recognizes by default. Shows how to define commands, options, and arguments."
 ms.date: 05/24/2022
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.topic: conceptual
 ---
 
-# Command-line syntax overview for System.CommandLine
+# Syntax overview: How to define commands, options, and arguments
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
@@ -54,11 +54,23 @@ A *command* in command-line input is a token that specifies an action or defines
 
 The *root command* is the one that specifies the name of the app's executable. For example, the `dotnet` command specifies the *dotnet.exe* executable.
 
+<xref:System.CommandLine.Command> is the general-purpose class for any command or subcommand, while <xref:System.CommandLine.RootCommand> is a specialized version intended for the application's root entry point, inheriting all features of <xref:System.CommandLine.Command> but adding root-specific behavior and defaults, such as [Help option](help.md#help-option), [Version option](#version-option) and [Suggest directive](#suggest-directive).
+
 ### Subcommands
 
 Most command-line apps support *subcommands*, also known as *verbs*. For example, the `dotnet` command has a `run` subcommand that you invoke by entering `dotnet run`.
 
 Subcommands can have their own subcommands. In `dotnet tool install`, `install` is a subcommand of `tool`.
+
+You can add subcommands as shown in the following example:
+
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definesubcommands" :::
+
+The innermost subcommand in this example can be invoked like this:
+
+```console
+myapp sub1 sub1a
+```
 
 ## Options
 
@@ -78,23 +90,38 @@ msbuild /version
         ^------^
 ```
 
-`System.CommandLine` supports both POSIX and Windows prefix conventions. When you [configure an option](define-commands.md#define-options), you specify the option name including the prefix.
+`System.CommandLine` supports both POSIX and Windows prefix conventions.
+
+When you configure an option, you specify the option name including the prefix:
+
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="defineoptions" :::
+
+To add an option to a command and recursively to all of its subcommands, use the <xref:System.CommandLine.Symbol.Recursive> property.
+
+### Required Options
+
+Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails. To make an option required, set its <xref:System.CommandLine.Symbol.Required> property to `true`, as shown in the following example:
+
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="requiredoption" :::
+
+If a required option has a default value (specified via `DefaultValueFactory` property), the option doesn't have to be specified on the command line. In that case, the default value provides the required option value.
 
 ## Arguments
 
-An argument is a value passed to an option or a command. The following examples show an argument for the `verbosity` option and an argument for the `build` command.
-
-```console
-dotnet tool update dotnet-suggest --verbosity quiet --global
-                                              ^---^
-```
+An argument is an unnamed parameter that can be passed to a command. The following example shows an argument for the `build` command.
 
 ```console
 dotnet build myapp.csproj
              ^----------^
 ```
 
-Arguments can have default values that apply if no argument is explicitly provided. For example, many options are implicitly Boolean parameters with a default of `true` when the option name is in the command line. The following command-line examples are equivalent:
+When you configure an argument, you specify the argument name (it's not used for parsing, but it can be used for getting parsed values by name or displaying help) and type:
+
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definearguments" :::
+
+## Default Values
+
+Both arguments and options can have default values that apply if no argument is explicitly provided. For example, many options are implicitly Boolean parameters with a default of `true` when the option name is in the command line. The following command-line examples are equivalent:
 
 ```dotnetcli
 dotnet tool update dotnet-suggest --global
@@ -104,21 +131,25 @@ dotnet tool update dotnet-suggest --global true
                                   ^-----------^
 ```
 
-Some options have required arguments. For example in the .NET CLI, `--output` requires a folder name argument. If the argument is not provided, the command fails.
+An argument that is defined without a default value is treated as a required argument.
 
-Arguments have expected types, and `System.CommandLine` displays an error message if an argument can't be parsed into the expected type. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
+## Parse Errors
+
+Options and arguments have expected types, and an error is produced when the value can't be parsed. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
 
 ```dotnetcli
 dotnet build --verbosity silent
 ```
 
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="parseerrors" :::
+
 ```output
-Cannot parse argument 'silent' for option '-v' as expected type 'Microsoft.DotNet.Cli.VerbosityOptions'. Did you mean one of the following?
-Detailed
-Diagnostic
-Minimal
-Normal
-Quiet
+Argument 'silent' not recognized. Must be one of:
+        'quiet'
+        'minimal'
+        'normal'
+        'detailed'
+        'diagnostic'
 ```
 
 Arguments also have expectations about how many values can be provided. Examples are provided in the [section on argument arity](#argument-arity).
@@ -139,18 +170,16 @@ dotnet add package System.CommandLine --prerelease --no-restore --source https:/
 dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease
 ```
 
-When there are multiple arguments, the order does matter. The following commands are not necessarily equivalent:
+When there are multiple arguments, the order does matter. The following commands are not equivalent, they differ in the order of the values, which could lead to different results:
 
 ```console
 myapp argument1 argument2
 myapp argument2 argument1
 ```
 
-These commands pass a list with the same values to the command handler code, but they differ in the order of the values, which could lead to different results.
-
 ## Aliases
 
-In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. Aliases can also be used for other purposes, such as to [simulate case-insensitivity](#case-sensitivity) and to [support alternate spellings of a word](define-commands.md#define-aliases).
+In both POSIX and Windows, it's common for some commands and options to have aliases. These are usually short forms that are easier to type. Aliases can also be used for other purposes, such as to [simulate case-insensitivity](#case-sensitivity) and to support alternate spellings of a word.
 
 POSIX short forms typically have a single leading hyphen followed by a single character. The following commands are equivalent:
 
@@ -170,7 +199,11 @@ dotnet publish --ou ./publish
 dotnet publish --o ./publish
 ```
 
-`System.CommandLine` doesn't support automatic aliases.
+`System.CommandLine` doesn't support automatic aliases, each alias needs to be specified in explicit way. Both commands and options expose `Aliases` property, but `Option` has a constructor that accepts aliases as parameters, so you can define an option with multiple aliases in a single line:
+
+:::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definealiases" :::
+
+We recommend that you minimize the number of option aliases that you define, and avoid defining certain aliases in particular. For more information, see [Short-form aliases](design-guidance.md#short-form-aliases).
 
 ## Case sensitivity
 
@@ -253,7 +286,13 @@ Arity is expressed with a minimum value and a maximum value, as the following ta
 * <xref:System.CommandLine.ArgumentArity.ZeroOrMore> - May have one value, multiple values, or no values.
 * <xref:System.CommandLine.ArgumentArity.OneOrMore> - May have multiple values, must have at least one value.
 
-Arity can often be inferred from the type. For example, an `int` option has arity of `ExactlyOne`, and a `List<int>` option has arity `OneOrMore`.
+You can explicitly set arity by using the `Arity` property, but in most cases that is not necessary. `System.CommandLine` automatically determines the argument arity based on the argument type:
+
+| Argument type    | Default arity              |
+|------------------|----------------------------|
+| `Boolean`        | `ArgumentArity.ZeroOrOne`  |
+| Collection types | `ArgumentArity.ZeroOrMore` |
+| Everything else  | `ArgumentArity.ExactlyOne` |
 
 ### Option overrides
 
@@ -265,12 +304,22 @@ myapp --delay 3 --message example --delay 2
 
 ### Multiple arguments
 
-If the arity maximum is more than one, `System.CommandLine` can be configured to accept multiple arguments for one option without repeating the option name.
-
-In the following example, the list passed to the `myapp` command would contain "a", "b", "c", and "d":
+By default, when you call a command, you can repeat an option name to specify multiple arguments for an option that has maximum [arity](#argument-arity) greater than one.
 
 ```console
-myapp --list a b c --list d
+myapp --items one --items two --items three
+```
+
+To allow multiple arguments without repeating the option name, set <xref:System.CommandLine.Option.AllowMultipleArgumentsPerToken?displayProperty=nameWithType> to `true`. This setting lets you enter the following command line.
+
+```console
+myapp --items one two three
+```
+
+The same setting has a different effect if maximum argument arity is 1. It allows you to repeat an option but takes only the last value on the line. In the following example, the value `three` would be passed to the app.
+
+```console
+myapp --item one --item two --item three
 ```
 
 ## Option bundling
@@ -309,45 +358,7 @@ False
 True
 ```
 
-## The --help option
-
-Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` automatically generates help output. For example:
-
-```dotnetcli
-dotnet list --help
-```
-
-```output
-Description:
-  List references or packages of a .NET project.
-
-Usage:
-  dotnet [options] list [<PROJECT | SOLUTION>] [command]
-
-Arguments:
-  <PROJECT | SOLUTION>  The project or solution file to operate on. If a file is not specified, the command will search the current directory for one.
-
-Options:
-  -?, -h, --help  Show command line help.
-
-Commands:
-  package    List all package references of the project or solution.
-  reference  List all project-to-project references of the project.
-```
-
-App users might be accustomed to different ways to request help on different platforms, so apps built on `System.CommandLine` respond to many ways of requesting help. The following commands are all equivalent:
-
-```dotnetcli
-dotnet --help
-dotnet -h
-dotnet /h
-dotnet -?
-dotnet /?
-```
-
-Help output doesn't necessarily show all available commands, arguments, and options. Some of them may be *hidden*, which means they don't show up in help output but they can be specified on the command line.
-
-## The --version option
+## Version option
 
 Apps built on `System.CommandLine` automatically provide the version number in response to the `--version` option used with the root command. For example:
 
@@ -448,7 +459,7 @@ In the preceding example:
 * For the option result `*[ --fgcolor <White> ]`, the option wasn't specified on the command line, so the configured default was used. `White` is the effective value for this option. The asterisk indicates that the value is the default.
 * `???-->` points to input that wasn't matched to any of the app's commands or options.
 
-### The `[suggest]` directive
+### Suggest directive
 
 The `[suggest]` directive lets you search for commands when you don't know the exact command.
 

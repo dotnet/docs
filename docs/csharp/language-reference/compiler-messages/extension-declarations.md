@@ -79,25 +79,25 @@ helpviewer_keywords:
 - [**CS1113**](#errors-related-to-this-parameter-extension-methods): *Extension method defined on a value type cannot be used to create delegates.*
 - [**CS1743**](#common-errors-on-extension-declarations): *Cannot specify a default value for the 'this' parameter.*
 - [**CS9281**](#errors-related-to-extension-block-declarations): *Extension declarations may not have a name.*
-- [**CS9282**](#errors-related-to-extension-container-declarations): *Extension declarations can include only methods or properties.*
+- [**CS9282**](#errors-related-to-extension-block-declarations): *Extension declarations can include only methods or properties.*
 - [**CS9283**](#common-errors-on-extension-declarations): *Extensions must be declared in a top-level, non-generic, static class.*
 - [**CS9284**](#common-errors-on-extension-declarations): *The receiver parameter of an extension cannot have a default value.*
 - [**CS9285**](#common-errors-on-extension-declarations): *An extension container can have only one receiver parameter.*
-- [**CS9287**](#errors-related-to-extension-container-declarations): *A receiver parameter cannot have the same name as an extension container type parameter.*
-- [**CS9288**](#errors-related-to-extension-container-declarations): *A parameter, local variable, or local function cannot have the same name as an extension container type parameter.*
-- [**CS9289**](#errors-related-to-extension-container-declarations): *Member type parameter has the same name as an extension container type parameter.*
-- [**CS9290**](#errors-related-to-extension-container-declarations): *A parameter, local variable, or local function cannot have the same name as an extension parameter.*
-- [**CS9291**](#errors-related-to-extension-container-declarations): *'`value`': an automatically-generated parameter name conflicts with an extension parameter name.*
-- [**CS9292**](#errors-related-to-extension-container-declarations): *A type parameter has the same name as an extension parameter.*
-- [**CS9293**](#errors-related-to-extension-container-declarations): *Cannot use an extension parameter in this context.*
-- [**CS9294**](#errors-related-to-extension-container-declarations): *'`value`': an automatically-generated parameter name conflicts with an extension type parameter name.*
-- [**CS9295**](#errors-related-to-extension-container-declarations): *The extended type must reference all the type parameters declared by the extension, but a type parameter is not referenced.*
-- [**CS9300**](#errors-related-to-extension-container-declarations): *The '`ref`' receiver parameter of an extension block must be a value type or a generic type constrained to struct.*
-- [**CS9301**](#errors-related-to-extension-container-declarations): *The '`in`' or '`ref readonly`' receiver parameter of extension must be a concrete (non-generic) value type.*
-- [**CS9302**](#errors-related-to-extension-container-declarations): *new protected member declared in an extension block.*
-- [**CS9303**](#errors-related-to-extension-container-declarations): *Cannot declare instance members in an extension block with an unnamed receiver parameter.*
-- [**CS9304**](#errors-related-to-extension-container-declarations): *Cannot declare init-only accessors in an extension block.*
-- [**CS9305**](#errors-related-to-extension-container-declarations): *Cannot use modifiers on the unnamed receiver parameter of extension block.*
+- [**CS9287**](#errors-related-to-extension-block-declarations): *A receiver parameter cannot have the same name as an extension container type parameter.*
+- [**CS9288**](#errors-related-to-extension-block-declarations): *A parameter, local variable, or local function cannot have the same name as an extension container type parameter.*
+- [**CS9289**](#errors-related-to-extension-block-declarations): *Member type parameter has the same name as an extension container type parameter.*
+- [**CS9290**](#errors-related-to-extension-block-declarations): *A parameter, local variable, or local function cannot have the same name as an extension parameter.*
+- [**CS9291**](#errors-related-to-extension-block-declarations): *'`value`': an automatically-generated parameter name conflicts with an extension parameter name.*
+- [**CS9292**](#errors-related-to-extension-block-declarations): *A type parameter has the same name as an extension parameter.*
+- [**CS9293**](#errors-related-to-extension-block-declarations): *Cannot use an extension parameter in this context.*
+- [**CS9294**](#errors-related-to-extension-block-declarations): *'`value`': an automatically-generated parameter name conflicts with an extension type parameter name.*
+- [**CS9295**](#errors-related-to-extension-block-declarations): *The extended type must reference all the type parameters declared by the extension, but a type parameter is not referenced.*
+- [**CS9300**](#errors-related-to-extension-block-declarations): *The '`ref`' receiver parameter of an extension block must be a value type or a generic type constrained to struct.*
+- [**CS9301**](#errors-related-to-extension-block-declarations): *The '`in`' or '`ref readonly`' receiver parameter of extension must be a concrete (non-generic) value type.*
+- [**CS9302**](#errors-related-to-extension-block-declarations): *new protected member declared in an extension block.*
+- [**CS9303**](#errors-related-to-extension-block-declarations): *Cannot declare instance members in an extension block with an unnamed receiver parameter.*
+- [**CS9304**](#errors-related-to-extension-block-declarations): *Cannot declare init-only accessors in an extension block.*
+- [**CS9305**](#errors-related-to-extension-block-declarations): *Cannot use modifiers on the unnamed receiver parameter of extension block.*
 
 ## Common errors on extension declarations
 

@@ -2,14 +2,14 @@
 description: "Learn more about: Usage guidelines"
 title: "Usage guidelines"
 ms.date: "10/22/2008"
-helpviewer_keywords:
+helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], usage guidelines"
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
 ---
 # Usage guidelines
 
-This section contains guidelines for using common types in publicly accessible APIs. It deals with direct usage of built-in Framework types (for example, serialization attributes) and overloading common operators.
-
+This section contains guidelines for using common types in publicly accessible APIs. It deals with direct usage of built-in Framework types (e.g., serialization attributes) and overloading common operators.
+  
 The <xref:System.IDisposable?displayProperty=nameWithType> interface is not covered in this section, but is discussed in the [Dispose Pattern](dispose-pattern.md) section.
 
 > [!NOTE]
@@ -27,7 +27,7 @@ The <xref:System.IDisposable?displayProperty=nameWithType> interface is not cove
 *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 
 *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*
-
+  
 ## See also
 
 - [Framework Design Guidelines](index.md)

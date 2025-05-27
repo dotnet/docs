@@ -9,7 +9,7 @@ author: alexwolfmsft
 
 # Create a minimal MCP client using .NET
 
-In this quickstart, you create a minimal [Model Context Protocol (MCP)](../get-started-mcp.md) client using the [C# SDK for MCP](https://github.com/modelcontextprotocol/csharp-sdk). You also learn how to configure the MCP client to connect to the MCP server you create in the [Build a minimal MCP server](../get-started-mcp.md) quickstart.
+In this quickstart, you build a minimal [Model Context Protocol (MCP)](../get-started-mcp.md) client using the [C# SDK for MCP](https://github.com/modelcontextprotocol/csharp-sdk). You also learn how to configure the client to connect to an MCP server, such as the one created in the [Build a minimal MCP server](build-mcp-server.md) quickstart.
 
 ## Prerequisites
 

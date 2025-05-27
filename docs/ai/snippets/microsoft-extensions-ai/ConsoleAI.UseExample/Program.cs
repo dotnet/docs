@@ -8,8 +8,10 @@ RateLimiter rateLimiter = new ConcurrencyLimiter(new()
     QueueLimit = int.MaxValue
 });
 
-IChatClient client = new OllamaApiClient(new Uri("http://localhost:11434"), "llama3.1")
-    .AsBuilder()
+IChatClient client = new OllamaApiClient(new Uri("http://localhost:11434"), "llama3.1");
+
+client = ChatClientBuilderChatClientExtensions
+    .AsBuilder(client)
     .UseDistributedCache()
     .Use(async (messages, options, nextAsync, cancellationToken) =>
     {

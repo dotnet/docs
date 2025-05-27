@@ -36,7 +36,6 @@ Complete the following steps to create a .NET console app. The app acts as a hos
    cd MCPHostApp
    ```
 
-
 1. Run the following commands to add the necessary NuGet packages:
 
    ```console

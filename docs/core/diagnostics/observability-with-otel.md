@@ -2,7 +2,7 @@
 title: .NET Observability with OpenTelemetry
 description: An introduction to observing .NET apps with OpenTelemetry
 ms.date: 6/14/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # .NET observability with OpenTelemetry

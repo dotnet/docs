@@ -2,7 +2,7 @@
 title: Composite formatting
 description: Learn about .NET composite formatting, which takes as input a list of objects and a composite format string, containing fixed text with indexed placeholders.
 ms.date: 08/07/2023
-ms.topic: conceptual
+ms.topic: concept-article
 dev_langs:
   - "csharp"
   - "vb"

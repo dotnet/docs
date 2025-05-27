@@ -2,7 +2,7 @@
 title: "Convert strings to types"
 description: Understand string parsing in .NET. Parsing converts a string representing a .NET base type into that base type. Parsing is the reverse operation to formatting.
 ms.date: "03/30/2017"
-ms.topic: conceptual
+ms.topic: concept-article
 helpviewer_keywords:
   - "parsing strings, about parsing strings"
   - "IFormatProvider interface, parsing strings"

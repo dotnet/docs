@@ -1,7 +1,7 @@
 ---
 title: "The Regular Expression Object Model"
 description: Review the regular expression object model in .NET. Work with the regular expression engine, & objects & collections related to matching, grouping, & capturing.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

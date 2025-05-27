@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.AI;
+using OllamaSharp;
 
-IChatClient client = new OllamaChatClient(new Uri("http://localhost:11434"))
+IChatClient client = new OllamaApiClient(new Uri("http://localhost:11434"))
     .AsBuilder()
     .ConfigureOptions(options => options.ModelId ??= "phi3")
     .Build();

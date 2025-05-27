@@ -13,5 +13,5 @@ foreach (Embedding<float> embedding in
 // </Snippet1>
 
 // <Snippet2>
-ReadOnlyMemory<float> vector = await generator.GenerateEmbeddingVectorAsync("What is AI?");
+ReadOnlyMemory<float> vector = await generator.GenerateVectorAsync("What is AI?");
 // </Snippet2>

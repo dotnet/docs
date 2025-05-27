@@ -1,11 +1,12 @@
 ﻿using Microsoft.Extensions.AI;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OllamaSharp;
 
 // App setup.
 var builder = Host.CreateApplicationBuilder();
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddChatClient(new OllamaChatClient(new Uri("http://localhost:11434"), "llama3.1"))
+builder.Services.AddChatClient(new OllamaApiClient(new Uri("http://localhost:11434"), "llama3.1"))
     .UseDistributedCache();
 var host = builder.Build();
 

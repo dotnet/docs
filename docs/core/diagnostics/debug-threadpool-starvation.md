@@ -97,45 +97,45 @@ dotnet-counters monitor -n DiagnosticScenarios
 Press p to pause, r to resume, q to quit.
     Status: Running
 
-Name Current Value
+Name                                                       Current Value
 [System.Runtime]
-    dotnet.assembly.count ({assembly}) 115
+    dotnet.assembly.count ({assembly})                               115
     dotnet.gc.collections ({collection})
         gc.heap.generation
-        gen0 2
-        gen1 1
-        gen2 1
-    dotnet.gc.heap.total_allocated (By) 64,329,632
+        gen0                                                           2
+        gen1                                                           1
+        gen2                                                           1
+    dotnet.gc.heap.total_allocated (By)                       64,329,632
     dotnet.gc.last_collection.heap.fragmentation.size (By)
         gc.heap.generation
-        gen0 199,920
-        gen1 29,208
-        gen2 0
-        loh 32
-        poh 0
+        gen0                                                     199,920
+        gen1                                                      29,208
+        gen2                                                           0
+        loh                                                           32
+        poh                                                            0
     dotnet.gc.last_collection.heap.size (By)
         gc.heap.generation
-        gen0 208,712
-        gen1 3,456,000
-        gen2 5,065,600
-        loh 98,384
-        poh 3,147,488
-    dotnet.gc.last_collection.memory.committed_size (By) 31,096,832
-    dotnet.gc.pause.time (s) 0.024
-    dotnet.jit.compilation.time (s) 1.285
-    dotnet.jit.compiled_il.size (By) 565,249
-    dotnet.jit.compiled_methods ({method}) 5,831
-    dotnet.monitor.lock_contentions ({contention}) 148
-    dotnet.process.cpu.count ({cpu}) 16
+        gen0                                                     208,712
+        gen1                                                   3,456,000
+        gen2                                                   5,065,600
+        loh                                                       98,384
+        poh                                                    3,147,488
+    dotnet.gc.last_collection.memory.committed_size (By)      31,096,832
+    dotnet.gc.pause.time (s)                                           0.024
+    dotnet.jit.compilation.time (s)                                    1.285
+    dotnet.jit.compiled_il.size (By)                             565,249
+    dotnet.jit.compiled_methods ({method})                         5,831
+    dotnet.monitor.lock_contentions ({contention})                   148
+    dotnet.process.cpu.count ({cpu})                                  16
     dotnet.process.cpu.time (s)
         cpu.mode
-        system 2.156
-        user 2.734
-    dotnet.process.memory.working_set (By) 1.3217e+08
-    dotnet.thread_pool.queue.length ({work_item}) 0
-    dotnet.thread_pool.thread.count ({thread}) 0
-    dotnet.thread_pool.work_item.count ({work_item}) 32,267
-    dotnet.timer.count ({timer}) 0
+        system                                                         2.156
+        user                                                           2.734
+    dotnet.process.memory.working_set (By)                             1.3217e+08
+    dotnet.thread_pool.queue.length ({work_item})                      0
+    dotnet.thread_pool.thread.count ({thread})                         0
+    dotnet.thread_pool.work_item.count ({work_item})              32,267
+    dotnet.timer.count ({timer})                                       0
 ```
 
 The counters above are an example while the web server wasn't serving any requests. Run Bombardier again with the `api/diagscenario/tasksleepwait` endpoint and sustained load for 2 minutes so there's plenty of time to observe what happens to the performance counters.
@@ -148,43 +148,43 @@ ThreadPool starvation occurs when there are no free threads to handle the queued
 
 ```dotnetcli
 [System.Runtime]
-    dotnet.assembly.count ({assembly}) 115
+    dotnet.assembly.count ({assembly})                               115
     dotnet.gc.collections ({collection})
         gc.heap.generation
-        gen0 5
-        gen1 1
-        gen2 1
-    dotnet.gc.heap.total_allocated (By) 1.6947e+08
+        gen0                                                           5
+        gen1                                                           1
+        gen2                                                           1
+    dotnet.gc.heap.total_allocated (By)                       1.6947e+08
     dotnet.gc.last_collection.heap.fragmentation.size (By)
         gc.heap.generation
-        gen0 0
-        gen1 348,248
-        gen2 0
-        loh 32
-        poh 0
+        gen0                                                           0
+        gen1                                                     348,248
+        gen2                                                           0
+        loh                                                           32
+        poh                                                            0
     dotnet.gc.last_collection.heap.size (By)
         gc.heap.generation
-        gen0 0
-        gen1 18,010,920
-        gen2 5,065,600
-        loh 98,384
-        poh 3,407,048
-    dotnet.gc.last_collection.memory.committed_size (By) 66,842,624
-    dotnet.gc.pause.time (s) 0.05
-    dotnet.jit.compilation.time (s) 1.317
-    dotnet.jit.compiled_il.size (By) 574,886
-    dotnet.jit.compiled_methods ({method}) 6,008
-    dotnet.monitor.lock_contentions ({contention}) 194
-    dotnet.process.cpu.count ({cpu}) 16
+        gen0                                                           0
+        gen1                                                  18,010,920
+        gen2                                                   5,065,600
+        loh                                                       98,384
+        poh                                                    3,407,048
+    dotnet.gc.last_collection.memory.committed_size (By)      66,842,624
+    dotnet.gc.pause.time (s)                                           0.05
+    dotnet.jit.compilation.time (s)                                    1.317
+    dotnet.jit.compiled_il.size (By)                             574,886
+    dotnet.jit.compiled_methods ({method})                         6,008
+    dotnet.monitor.lock_contentions ({contention})                   194
+    dotnet.process.cpu.count ({cpu})                                  16
     dotnet.process.cpu.time (s)
         cpu.mode
-        system 4.953
-        user 6.266
-    dotnet.process.memory.working_set (By) 1.3217e+08
-    dotnet.thread_pool.queue.length ({work_item}) 0
-    dotnet.thread_pool.thread.count ({thread}) 133
-    dotnet.thread_pool.work_item.count ({work_item}) 71,188
-    dotnet.timer.count ({timer}) 124
+        system                                                         4.953
+        user                                                           6.266
+    dotnet.process.memory.working_set (By)                             1.3217e+08
+    dotnet.thread_pool.queue.length ({work_item})                      0
+    dotnet.thread_pool.thread.count ({thread})                       133
+    dotnet.thread_pool.work_item.count ({work_item})              71,188
+    dotnet.timer.count ({timer})                                     124
 ```
 
 Once the count of ThreadPool threads stabilizes, the pool is no longer starving. But if it stabilizes at a high value (more than about three times the number of processor cores), that usually indicates the application code is blocking some ThreadPool threads and the ThreadPool is compensating by running with more threads. Running steady at high thread counts won't necessarily have large impacts on request latency, but if load varies dramatically over time or the app will be periodically restarted, then each time the ThreadPool is likely to enter a period of starvation where it's slowly increasing threads and delivering poor request latency. Each thread also consumes memory, so reducing the total number of threads needed provides another benefit.

@@ -18,7 +18,6 @@ f1_keywords:
   - "CS1669"
   - "CS1734"
   - "CS1735"
-  - "CS1743"
   - "CS1745"
   - "CS1747"
   - "CS1748"
@@ -622,8 +621,6 @@ f1_keywords:
   - "CS9235"
   - "CS9236"
 # C# 14 errors begin here
-## "Are you missing a using or assembly reference?"
-  - "CS9286"
 ## Shebang
   - "CS9297"
   - "CS9298"

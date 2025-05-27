@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.topic: conceptual
 ---
 
-# Syntax overview: How to define commands, options, and arguments
+# Syntax overview: commands, options, and arguments
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 

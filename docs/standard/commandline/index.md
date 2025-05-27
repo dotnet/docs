@@ -40,13 +40,13 @@ The library is available in a NuGet package:
 To get started with System.CommandLine, see the following resources:
 
 * [Tutorial: Get started with System.CommandLine](get-started-tutorial.md)
-* [Syntax overview: How to define commands, options, and arguments](syntax.md)
+* [Syntax overview: commands, options, and arguments](syntax.md)
 
 To learn more, see the following resources:
 
 * [How to bind arguments to handlers](model-binding.md)
 * [How to configure dependency injection](dependency-injection.md)
+* [How to configure help in System.CommandLine](Help.md)
 * [How to enable and customize tab completion](tab-completion.md)
-* [Help](Help.md)
 * [How to handle termination](handle-termination.md)
 * [System.CommandLine API reference](xref:System.CommandLine)

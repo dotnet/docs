@@ -49,7 +49,7 @@ Create a .NET 9 console app project named "scl".
    dotnet new console --framework net9.0
    ```
 
-## Install the System.CommandLine package
+### Install the System.CommandLine package
 
 * Run the following command:
 
@@ -65,23 +65,29 @@ Create a .NET 9 console app project named "scl".
 
   The `--prerelease` option is necessary because the library is still in beta.
 
+### Parse the arguments
+
 1. Replace the contents of *Program.cs* with the following code:
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="all" :::
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="all" :::
 
 The preceding code:
 
-* Creates an [option](syntax.md#options) named `--file` of type <xref:System.IO.FileInfo> and assigns it to the [root command](syntax.md#commands):
+* Creates an [option](syntax.md#options) named `--file` of type <xref:System.IO.FileInfo> and adds it to the [root command](syntax.md#root-commands):
 
-  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="option" :::
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="symbols" :::
 
-* Specifies that `ReadFile` is the method that will be called when the root command is invoked:
+* Parses the `args` and checks whether any value was provided for `--file` option. If so, it calls the `ReadFile` method using parsed value and returns `0` exit code:
 
-  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="setaction" :::
+:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="parse" :::
 
-* Displays the contents of the specified file when the root command is invoked:
+* If no value was provided for `--file`, it prints available parse errors and returns `1` exit code:
 
-  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="action" :::
+:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="errors" :::
+
+* The `ReadFile` method reads the specified file and displays its contents on the console:
+
+:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="action" :::
 
 ## Test the app
 
@@ -101,24 +107,6 @@ You can use any of the following ways to test while developing a command-line ap
   dotnet run -- --file bin/Debug/net9.0/scl.runtimeconfig.json
   ```
 
-The working directory is the project folder (the folder that has the .csproj  file), so the relative path to `scl.runtimeconfig.json` is from the project folder.
-
-  In .NET 7.0.100 SDK Preview, you can use the `commandLineArgs` of a *launchSettings.json* file by running the command `dotnet run --launch-profile <profilename>`.
-
-* [Publish the project to a folder](../../core/tutorials/publishing-with-visual-studio-code.md), open a command prompt to that folder, and run the executable:
-
-  ```console
-  dotnet publish -o publish
-  cd ./publish
-  scl --file scl.runtimeconfig.json
-  ```
-
-* In Visual Studio 2022, select **Debug** > **Debug Properties** from the menu, and enter the options and arguments in the **Command line arguments** box. For example:
-
-  :::image type="content" source="media/get-started-tutorial/cmd-line-args.png" alt-text="Command line arguments in Visual Studio 2022":::
-
-  Then run the app, for example by pressing Ctrl+F5.
-
 This tutorial assumes you're using the first of these options.
 
 When you run the app, it displays the contents of the file specified by the `--file` option.
@@ -135,13 +123,35 @@ When you run the app, it displays the contents of the file specified by the `--f
 }
 ```
 
-### Help output
+But what happens if you ask it to display the help by providing `--help`? Nothing gets printed to the console, because the app doesn't yet handle a scenario, where `--file` is not provided and there are no parse errors.
 
-`System.CommandLine` automatically provides help output:
+## Parse the arguments and invoke the ParseResult
+
+System.CommandLine allows the users to specify an action that is invoked when given symbol (command, option, directive or even argument) is parsed successfully. The action is a delegate that takes a <xref:System.CommandLine.ParseResult> parameter and returns an `int` exit code. The exit code is returned by the `ParseResult.Invoke` method and can be used to indicate whether the command was executed successfully or not.
+
+1. Replace the contents of *Program.cs* with the following code:
+
+   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="all" :::
+
+The preceding code:
+
+* Specifies that `ReadFile` is the method that will be called when the root command is **invoked**:
+
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="setaction" :::
+
+* Parses the `args` and **invokes** the result:
+
+  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="invoke" :::
+
+When you run the app, it displays the contents of the file specified by the `--file` option.
+
+What happens if you ask it to display the help by providing `--help`?
 
 ```console
 scl --help
 ```
+
+Following output gets printed:
 
 ```output
 Description:
@@ -151,21 +161,20 @@ Usage:
   scl [options]
 
 Options:
-  --file <file>   The file to read and display on the console.
-  --version       Show version information
   -?, -h, --help  Show help and usage information
+  --version       Show version information
+  --file          The file to read and display on the conso
 ```
 
-### Version output
-
-`System.CommandLine` automatically provides version output:
+<xref:System.CommandLine.RootCommand> by default provides [Help option](help.md#help-option), [Version option](syntax.md#version-option) and [Suggest directive](syntax.md#suggest-directive). `ParseResult.Invoke` method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for our command, or the help action defined by `System.CommandLine` for <xref:System.CommandLine.Help.HelpOption>. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output and returns `1` exit code:
 
 ```console
-scl --version
+scl --invalid bla
 ```
 
 ```output
-1.0.0
+Unrecognized command or argument '--invalid'.
+Unrecognized command or argument 'bla'.
 ```
 
 ## Add a subcommand and options
@@ -198,9 +207,7 @@ The new options will let you configure the foreground and background text colors
 
 1. After the line that creates the root command, delete the code that adds the `--file` option to it. You're removing it here because you'll add it to a new subcommand.
 
-   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="rootcommand" :::
-
-1. After the line that creates the root command, create a `read` subcommand. Add the options to this subcommand, and add the subcommand to the root command.
+1. After the line that creates the root command, create a `read` subcommand. Add the options to this subcommand (by using collection initializer syntax rather than `Options` property), and add the subcommand to the root command.
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="subcommand" :::
 
@@ -210,7 +217,7 @@ The new options will let you configure the foreground and background text colors
 
    You're no longer calling `SetAction` on the root command because the root command no longer needs an action. When a command has subcommands, you typically have to specify one of the subcommands when invoking a command-line app.
 
-1. Replace the `ReadFile` handler method with the following code:
+1. Replace the `ReadFile` action method with the following code:
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="action" :::
 
@@ -218,7 +225,7 @@ The app now looks like this:
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage2/Program.cs" id="all" :::
 
-## Test the new subcommand
+### Test the new subcommand
 
 Now if you try to run the app without specifying the subcommand, you get an error message followed by a help message that specifies the subcommand that is available.
 
@@ -229,6 +236,7 @@ scl --file sampleQuotes.txt
 ```output
 '--file' was not matched. Did you mean one of the following?
 --help
+
 Required command was not provided.
 Unrecognized command or argument '--file'.
 Unrecognized command or argument 'sampleQuotes.txt'.
@@ -240,8 +248,8 @@ Usage:
   scl [command] [options]
 
 Options:
-  --version       Show version information
   -?, -h, --help  Show help and usage information
+  --version       Show version information
 
 Commands:
   read  Read and display the file.
@@ -308,8 +316,8 @@ scl read --file nofile
 ```
 
 ```output
-Unhandled exception: System.IO.FileNotFoundException:
-Could not find file 'C:\bin\Debug\net9.0\nofile'.
+Unhandled exception: System.IO.FileNotFoundException: Could not find file 'C:\bin\Debug\net9.0\nofile''.
+File name: 'C:\bin\Debug\net9.0\nofile''
 ```
 
 ## Add subcommands and custom validation
@@ -336,7 +344,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
 
    :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage3/Program.cs" id="fileoption" :::
 
-   This code uses <xref:System.CommandLine.Parsing.ArgumentResult%601> to provide custom parsing, validation, and error handling.
+   This code uses <xref:System.CommandLine.Parsing.ArgumentResult> to provide custom parsing, validation, and error handling.
 
    Without this code, missing files are reported with an exception and stack trace. With this code just the specified error message is displayed.
 
@@ -374,7 +382,7 @@ scl quotes delete --search-terms David "You can do" Antoine "Perfection is achie
        * `add`
        * `delete`
 
-   The app now implements the recommended pattern where the parent command (`quotes`) specifies an area or group, and its children commands (`read`, `add`, `delete`) are actions.
+   The app now implements the [recommended](design-guidance.md#symbols) pattern where the parent command (`quotes`) specifies an area or group, and its children commands (`read`, `add`, `delete`) are actions.
 
    Recursive options are applied to the command and recursively to subcommands. Since `--file` is on the root command, it will be available automatically in all subcommands of the app.
 

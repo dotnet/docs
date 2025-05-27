@@ -28,7 +28,7 @@ The naming guidelines that follow apply to general type naming.
 
  Nouns and noun phrases should be used rarely and they might indicate that the type should be an abstract class, and not an interface.
 
- ❌ DO NOT give class names a prefix (e.g., "C").
+ ❌ DO NOT give class names a prefix (for example, "C").
 
  ✔️ CONSIDER ending the name of derived classes with the name of the base class.
 
@@ -94,7 +94,7 @@ public interface ISessionChannel<TSession> where TSession : ISession {
 
  ❌ DO NOT use "Flag" or "Flags" suffixes in enum type names.
 
- ❌ DO NOT use a prefix on enumeration value names (e.g., "ad" for ADO enums, "rtf" for rich text enums, etc.).
+ ❌ DO NOT use a prefix on enumeration value names (for example, "ad" for ADO enums, "rtf" for rich text enums, etc.).
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

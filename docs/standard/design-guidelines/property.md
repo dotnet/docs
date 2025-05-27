@@ -53,7 +53,7 @@ Although properties are technically very similar to methods, they are quite diff
 
  If the design requires other types of parameters, strongly reevaluate whether the API really represents an accessor to a logical collection. If it does not, use a method. Consider starting the method name with `Get` or `Set`.
 
- ✔️ DO use the name `Item` for indexed properties unless there is an obviously better name (e.g., see the <xref:System.String.Chars%2A> property on `System.String`).
+ ✔️ DO use the name `Item` for indexed properties unless there is an obviously better name (for example, see the <xref:System.String.Chars%2A> property on `System.String`).
 
  In C#, indexers are by default named Item. The <xref:System.Runtime.CompilerServices.IndexerNameAttribute> can be used to customize this name.
 

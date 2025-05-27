@@ -29,7 +29,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
 
  ❌ DO NOT use organizational hierarchies as the basis for names in namespace hierarchies, because group names within corporations tend to be short-lived. Organize the hierarchy of namespaces around groups of related technologies.
 
- ✔️ DO use PascalCasing, and separate namespace components with periods (e.g., `Microsoft.Office.PowerPoint`). If your brand employs nontraditional casing, you should follow the casing defined by your brand, even if it deviates from normal namespace casing.
+ ✔️ DO use PascalCasing, and separate namespace components with periods (for example, `Microsoft.Office.PowerPoint`). If your brand employs nontraditional casing, you should follow the casing defined by your brand, even if it deviates from normal namespace casing.
 
  ✔️ CONSIDER using plural namespace names where appropriate.
 

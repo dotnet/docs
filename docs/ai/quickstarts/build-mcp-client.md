@@ -15,7 +15,9 @@ In this quickstart, you create a minimal [Model Context Protocol (MCP)](../get-s
 
 - [.NET 8.0 SDK or higher](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- An MCP server to connect to, such as the [Minimal MCP server](build-mcp-server.md) sample
+
+> [!NOTE]
+> The MCP client you build in the sections ahead connects to the sample MCP server from the [Build a minimal MCP server](build-mcp-server.md) quickstart. You can also use your own MCP server if you provide your own connection configuration.
 
 ## Create the .NET host app
 
@@ -60,7 +62,7 @@ Replace the contents of `Program.cs` with the following code:
 The preceding code accomplishes the following tasks:
 
 - Initializes an `IChatClient` abstraction using the [`Microsoft.Extensions.AI`](/dotnet/ai/microsoft-extensions-ai) libraries.
-- Creates an MCP client and configures it to connect to your Azure MCP server
+- Creates an MCP client and configures it to connect to your MCP server
 - Retrieves and displays a list of available tools from the MCP server, which is a standard MCP function.
 - Implements a conversational loop that processes user prompts and utilizes the tools for responses.
 

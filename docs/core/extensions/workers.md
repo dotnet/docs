@@ -155,7 +155,7 @@ For more information, see:
 
 For a short-lived app that needs dependency injection, logging, and configuration, use the [.NET Generic Host](generic-host.md) instead of the Worker template. This lets you use these features without the `Worker` class. A simple example of a short-lived app using the generic host might define a project file like the following:
 
-:::code language="xml" source="snippets/hosts/ShortLived.App.csproj":::
+:::code language="xml" source="snippets/hosts/ShortLived.App/ShortLived.App.csproj":::
 
 It's `Program` class might look something like the following:
 

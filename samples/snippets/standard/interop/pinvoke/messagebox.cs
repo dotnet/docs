@@ -5,7 +5,7 @@ public partial class Program
 {
     // Import user32.dll (containing the function we need) and define
     // the method corresponding to the native function.
-    [LibraryImport("user32.dll", StringMarshalling = StringMarshalling.Utf16, SetLastError = true)]
+    [LibraryImport("user32.dll", EntryPoint = "MessageBoxW", StringMarshalling = StringMarshalling.Utf16, SetLastError = true)]
     private static partial int MessageBox(IntPtr hWnd, string lpText, string lpCaption, uint uType);
 
     public static void Main(string[] args)

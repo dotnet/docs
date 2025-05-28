@@ -167,7 +167,7 @@ In this simple scenario, the `JobRunner` class could look like this:
 
 :::code language="csharp" source="snippets/hosts/ShortLived.App/JobRunner.cs":::
 
-You'd obviously need to add real logic to the `RunAsync` method, but this example demonstrates how to use the generic host for a short-lived app without the need for a `Worker` class, and withot the need for explicitly signaling the completion of the host.
+You'd obviously need to add real logic to the `RunAsync` method, but this example demonstrates how to use the generic host for a short-lived app without the need for a `Worker` class, and without the need for explicitly signaling the completion of the host.
 
 ## See also
 

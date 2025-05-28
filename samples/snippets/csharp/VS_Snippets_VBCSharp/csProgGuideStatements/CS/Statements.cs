@@ -536,6 +536,7 @@ namespace CsCsrefProgrammingStatements
                 area = 3.14 * (radius * radius);
 
                 // Expression statement (result discarded).
+                int x = 0;
                 x++;
 
                 // Expression statement (method invocation).

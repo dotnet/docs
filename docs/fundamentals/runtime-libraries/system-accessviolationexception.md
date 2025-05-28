@@ -30,9 +30,7 @@ In either case, you can identify and correct the cause of the <xref:System.Acces
 
 <xref:System.AccessViolationException> exceptions thrown by the .NET runtime aren't handled by the `catch` statement in a structured exception handler if the exception occurs outside of the memory reserved by the runtime.
 
-**.NET Framework only**
-
-To handle such an <xref:System.AccessViolationException> exception, apply the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to the method in which the exception is thrown. This change does not affect <xref:System.AccessViolationException> exceptions thrown by user code, which can continue to be caught by a `catch` statement.
+**.NET Framework only**: To handle such an <xref:System.AccessViolationException> exception, apply the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to the method in which the exception is thrown. This change does not affect <xref:System.AccessViolationException> exceptions thrown by user code, which can continue to be caught by a `catch` statement.
 
 > [!CAUTION]
 > The [HandleProcessCorruptedStateExceptions attribute](xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute) is obsolete in current .NET versions. Recovery from corrupted process state&ndash;exceptions isn't supported, and the attribute, if present, is ignored.

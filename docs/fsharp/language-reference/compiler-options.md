@@ -80,7 +80,6 @@ The F# compiler supports several opt-in warnings:
 | 3180  | Implicit heap allocations       |  n/a  | Warn when a mutable local is implicitly allocated as a reference cell because it has been captured by a closure. |
 | 3366  | Index notation                  |  n/a  | Warn when the F# 5 index notation `expr.[idx]` is used. |
 | 3517  | InlineIfLambda failure          |  n/a  | Warn when the F# optimizer fails to inline an `InlineIfLambda` value, for example if a computed function value has been provided instead of an explicit lambda. |
-| 3387  | `op_Implicit` conversion        |  n/a  | Warn when a .NET implicit conversion is used at a method argument. |
 | 3388  | Additional implicit upcast      |  n/a  | Warn when an additional upcast is implicitly used, added in F# 6. |
 | 3389  | Implicit widening               |  n/a  | Warn when an implicit numeric widening is used. |
 | 3390  | Malformed XML doc comments      |  n/a  | Warn when XML doc comments are malformed in various ways. |

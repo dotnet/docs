@@ -90,14 +90,14 @@ Some models and services support _tool calling_. To gather additional informatio
 - <xref:Microsoft.Extensions.AI.AIFunctionFactory>: Provides factory methods for creating `AIFunction` instances that represent .NET methods.
 - <xref:Microsoft.Extensions.AI.FunctionInvokingChatClient>: Wraps an `IChatClient` as another `IChatClient` that adds automatic function-invocation capabilities.
 
-The following example demonstrates a random function invocation (this example depends on the [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama) NuGet package):
+The following example demonstrates a random function invocation (this example depends on the [📦 OllamaSharp](https://www.nuget.org/packages/OllamaSharp) NuGet package):
 
 :::code language="csharp" source="snippets/microsoft-extensions-ai/ConsoleAI.ToolCalling/Program.cs":::
 
 The preceding code:
 
 - Defines a function named `GetCurrentWeather` that returns a random weather forecast.
-- Instantiates a <xref:Microsoft.Extensions.AI.ChatClientBuilder> with an <xref:Microsoft.Extensions.AI.OllamaChatClient> and configures it to use function invocation.
+- Instantiates a <xref:Microsoft.Extensions.AI.ChatClientBuilder> with an `OllamaSharp.OllamaApiClient` and configures it to use function invocation.
 - Calls `GetStreamingResponseAsync` on the client, passing a prompt and a list of tools that includes a function created with <xref:Microsoft.Extensions.AI.AIFunctionFactory.Create*>.
 - Iterates over the response, printing each update to the console.
 
@@ -213,10 +213,7 @@ The preceding code:
 - Has a primary constructor that accepts an endpoint and model ID, which are used to identify the generator.
 - Implements the `GenerateAsync` method to generate embeddings for a collection of input values.
 
-The sample implementation just generates random embedding vectors. You can find actual concrete implementations in the following packages:
-
-- [📦 Microsoft.Extensions.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI)
-- [📦 Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama)
+The sample implementation just generates random embedding vectors. You can find a concrete implementation in the [📦 Microsoft.Extensions.AI.OpenAI](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) package.
 
 #### Create embeddings
 

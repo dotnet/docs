@@ -18,7 +18,7 @@ helpviewer_keywords:
 
  ✔️ CONSIDER using jagged arrays instead of multidimensional arrays.
 
- A jagged array is an array with elements that are also arrays. The arrays that make up the elements can be of different sizes, leading to less wasted space for some sets of data (for example, sparse matrix) compared to multidimensional arrays. Furthermore, the CLR optimizes index operations on jagged arrays, so they might exhibit better runtime performance in some scenarios.
+ A jagged array is an array with elements that are also arrays. The arrays that make up the elements can be of different sizes, leading to less wasted space for some sets of data (e.g., sparse matrix) compared to multidimensional arrays. Furthermore, the CLR optimizes index operations on jagged arrays, so they might exhibit better runtime performance in some scenarios.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

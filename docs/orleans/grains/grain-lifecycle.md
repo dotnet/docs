@@ -1,17 +1,18 @@
 ---
 title: Grain lifecycle overview
 description: Learn about grain lifecycles in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 03/31/2025
+ms.topic: conceptual
 zone_pivot_groups: orleans-version
 ---
 
 # Grain lifecycle overview
 
-Orleans grains use an observable lifecycle (See [Orleans Lifecycle](../implementation/orleans-lifecycle.md)) for ordered activation and deactivation. This allows grain logic, system components, and application logic to be started and stopped in an ordered manner during grain activation and collection.
+Orleans grains use an observable lifecycle (see [Orleans Lifecycle](../implementation/orleans-lifecycle.md)) for ordered activation and deactivation. This allows grain logic, system components, and application logic to start and stop in an ordered manner during grain activation and collection.
 
 ## Stages
 
-The pre-defined grain lifecycle stages are as follows.
+The predefined grain lifecycle stages are as follows:
 
 ```csharp
 public static class GrainLifecycleStage
@@ -24,21 +25,21 @@ public static class GrainLifecycleStage
 ```
 
 - `First`: First stage in a grain's lifecycle.
-- `SetupState`: Setup grain state, before activation. For stateful grains, this is the stage where <xref:Orleans.Core.IStorage%601.State?displayProperty=nameWithType> is loaded from storage, when <xref:Orleans.Core.IStorage.RecordExists?displayProperty=nameWithType> is `true`.
-- `Activate`: Stage where <xref:Orleans.Grain.OnActivateAsync%2A?displayProperty=nameWithType> and <xref:Orleans.Grain.OnDeactivateAsync%2A?displayProperty=nameWithType> are called.
+- `SetupState`: Set up grain state before activation. For stateful grains, this is the stage where Orleans loads <xref:Orleans.Core.IStorage%601.State?displayProperty=nameWithType> from storage if <xref:Orleans.Core.IStorage.RecordExists?displayProperty=nameWithType> is `true`.
+- `Activate`: Stage where Orleans calls <xref:Orleans.Grain.OnActivateAsync%2A?displayProperty=nameWithType> and <xref:Orleans.Grain.OnDeactivateAsync%2A?displayProperty=nameWithType>.
 - `Last`: Last stage in a grain's lifecycle.
 
-While the grain lifecycle will be used during grain activation, since grains are not always deactivated during some error cases (such as silo crashes), applications should not rely on the grain lifecycle always being executed during grain deactivations.
+While Orleans uses the grain lifecycle during grain activation, grains aren't always deactivated during some error cases (such as silo crashes). Therefore, applications shouldn't rely on the grain lifecycle always executing during grain deactivations.
 
 ## Grain lifecycle participation
 
-Application logic can participate with a grain's lifecycle in two ways:
+Application logic can participate in a grain's lifecycle in two ways:
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-- The grain can participate in its lifecycle.
+- The grain can participate in its own lifecycle.
 - Components can access the lifecycle via the grain activation context (see <xref:Orleans.Runtime.IGrainContext.ObservableLifecycle?displayProperty=nameWithType>).
 
 :::zone-end
@@ -47,8 +48,8 @@ Application logic can participate with a grain's lifecycle in two ways:
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-- The grain can participate in its lifecycle.
-- Components can access the lifecycle via the grain activation context (see <xref:Orleans.Runtime.IGrainActivationContext.ObservableLifecycle%2A?displayProperty=nameWithType>).
+- The grain can participate in its own lifecycle.
+- Components can access the lifecycle via the grain activation context (see <xref:Orleans.Runtime.IGrainActivationContext.ObservableLifecycle?displayProperty=nameWithType>).
 
 :::zone-end
 
@@ -67,13 +68,13 @@ public override void Participate(IGrainLifecycle lifecycle)
 }
 ```
 
-In the above example, <xref:Orleans.Grain%601> overrides the <xref:Orleans.Grain.Participate%2A?displayProperty=nameWithType> method to tell the lifecycle to call its `OnSetupState` method during the <xref:Orleans.Runtime.GrainLifecycleStage.SetupState?displayProperty=nameWithType> stage of the lifecycle.
+In the preceding example, <xref:Orleans.Grain%601> overrides the <xref:Orleans.Grain.Participate%2A?displayProperty=nameWithType> method to tell the lifecycle to call its `OnSetupState` method during the <xref:Orleans.Runtime.GrainLifecycleStage.SetupState?displayProperty=nameWithType> stage of the lifecycle.
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
 <!-- markdownlint-enable MD044 -->
 
-Components created during a grain's construction can take part in the lifecycle as well, without the addition of any special grain logic. Since the grain's context (<xref:Orleans.Runtime.IGrainContext>), including the grain's lifecycle (<xref:Orleans.Runtime.IGrainContext.ObservableLifecycle?displayProperty=nameWithType>), is created before the grain is created, any component injected into the grain by the container can participate in the grain's lifecycle.
+Components created during a grain's construction can also participate in the lifecycle without adding any special grain logic. Since Orleans creates the grain's context (<xref:Orleans.Runtime.IGrainContext>), including its lifecycle (<xref:Orleans.Runtime.IGrainContext.ObservableLifecycle?displayProperty=nameWithType>), before creating the grain, any component injected into the grain by the container can participate in the grain's lifecycle.
 
 :::zone-end
 
@@ -81,13 +82,13 @@ Components created during a grain's construction can take part in the lifecycle 
 :::zone target="docs" pivot="orleans-3-x"
 <!-- markdownlint-enable MD044 -->
 
-Components created during a grain's construction can take part in the lifecycle as well, without the addition of any special grain logic. Since the grain's activation context (<xref:Orleans.Runtime.IGrainActivationContext>), including the grain's lifecycle (<xref:Orleans.Runtime.IGrainActivationContext.ObservableLifecycle?displayProperty=nameWithType>), is created before the grain is created, any component injected into the grain by the container can participate in the grain's lifecycle.
+Components created during a grain's construction can also participate in the lifecycle without adding any special grain logic. Since Orleans creates the grain's activation context (<xref:Orleans.Runtime.IGrainActivationContext>), including its lifecycle (<xref:Orleans.Runtime.IGrainActivationContext.ObservableLifecycle?displayProperty=nameWithType>), before creating the grain, any component injected into the grain by the container can participate in the grain's lifecycle.
 
 :::zone-end
 
-### Example participation, creation, and activation
+### Example: Component participation
 
-The following component participates in the grain's lifecycle when created using its factory function `Create(...)`. This logic could exist in the component's constructor, but that risks the component being added to the lifecycle before it's fully constructed, which may not be safe.
+The following component participates in the grain's lifecycle when created using its factory function `Create(...)`. This logic could exist in the component's constructor, but that risks adding the component to the lifecycle before it's fully constructed, which might not be safe.
 
 <!-- markdownlint-disable MD044 -->
 :::zone target="docs" pivot="orleans-7-0"
@@ -145,7 +146,7 @@ public class MyComponent : ILifecycleParticipant<IGrainLifecycle>
 
 :::zone-end
 
-By registering the example component in the service container using its `Create(...)` factory function, any grain constructed with the component as a dependency will have the component taking part in its lifecycle without any special logic in the grain.
+By registering the example component in the service container using its `Create(...)` factory function, any grain constructed with the component as a dependency has the component participate in its lifecycle without requiring any special logic in the grain itself.
 
 #### Register component in container
 

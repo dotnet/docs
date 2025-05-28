@@ -62,10 +62,10 @@ Complete the following steps to create a .NET console app that connects to your 
     dotnet new console -o LocalAI
     ```
 
-1. Add the [Microsoft.Extensions.AI.Ollama](https://www.nuget.org/packages/Microsoft.Extensions.AI.Ollama/) package to your app:
+1. Add the [OllamaSharp](https://www.nuget.org/packages/OllamaSharp) package to your app:
 
     ```dotnetcli
-    dotnet add package Microsoft.Extensions.AI.Ollama --prerelease
+    dotnet add package OllamaSharp
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.

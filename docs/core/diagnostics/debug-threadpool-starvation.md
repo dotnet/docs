@@ -316,7 +316,7 @@ The following sections show how to use each tool to read the nettrace file.
    ![Screenshot of the opening of a nettrace in PerfView](./media/perfview-open-nettrace.png)
 1. Double click on **Advanced Group** > **Any Stacks**. A new window opens.
 
-   ![Screenshot of the any stacks view in PerfView](./media/perfview-any-stacks.png)
+   :::image type="content" source="./media/perfview-any-stacks.png" lightbox="./media/perfview-any-stacks.png" alt-text="Screenshot of the any stacks view in PerfView.":::
 1. Double click on the line "Event Microsoft-Windows-DotNETRuntime/WaitHandleWait/Start".
 
    Now you should see the stack traces where the WaitHandleWait events were emitted. They are split by "WaitSource". Currently there are two sources: `MonitorWait` for events emitted through [Monitor.Wait](xref:System.Threading.Monitor), and `Unknown` for all the others.

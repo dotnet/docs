@@ -35,4 +35,4 @@ In either case, you can identify and correct the cause of the <xref:System.Acces
 To handle such an <xref:System.AccessViolationException> exception, apply the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to the method in which the exception is thrown. This change does not affect <xref:System.AccessViolationException> exceptions thrown by user code, which can continue to be caught by a `catch` statement.
 
 > [!CAUTION]
-> The [HandleProcessCorruptedStateExceptions attribute](xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute) is obsolete in current .NET versions, and the attribute, if present, is ignored.
+> The [HandleProcessCorruptedStateExceptions attribute](xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute) is obsolete in current .NET versions. Recovery from corrupted process state&ndash;exceptions isn't supported, and the attribute, if present, is ignored.

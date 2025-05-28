@@ -1,36 +1,37 @@
 ---
 title: The JournaledGrain API
 description: Learn the concepts of the JournaledGrain API in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: conceptual
 ---
 
-# JournaledGrain Basics
+# JournaledGrain basics
 
 Journaled grains derive from <xref:Orleans.EventSourcing.JournaledGrain%602>, with the following type parameters:
 
-* The `TGrainState` represents the state of the grain. It must be a class with a public default constructor.
-* `TEventBase` is a common supertype for all the events that can be raised for this grain, and can be any class or interface.
+- `TGrainState` represents the state of the grain. It must be a class with a public default constructor.
+- `TEventBase` is a common supertype for all events that can be raised for this grain and can be any class or interface.
 
-All state and event objects should be serializable (because the log-consistency providers may need to persist them, and/or send them in notification messages).
+All state and event objects should be serializable because log-consistency providers might need to persist them and/or send them in notification messages.
 
-For grains whose events are POCOs (plain old C# objects), <xref:Orleans.EventSourcing.JournaledGrain%601> can be used as a shorthand for <xref:Orleans.EventSourcing.JournaledGrain%602>.
+For grains whose events are POCOs (plain old C# objects), you can use <xref:Orleans.EventSourcing.JournaledGrain%601> as a shorthand for <xref:Orleans.EventSourcing.JournaledGrain%602>.
 
 ## Reading the grain state
 
-To read the current grain state, and determine its version number, the JournaledGrain has properties
+To read the current grain state and determine its version number, `JournaledGrain` has these properties:
 
 ```csharp
 GrainState State { get; }
 int Version { get; }
 ```
 
-The version number is always equal to the total number of confirmed events, and the state is the result of applying all the confirmed events to the initial state. The initial state, which has version 0 (because no events have been applied to it), is determined by the default constructor of the GrainState class.
+The version number always equals the total number of confirmed events, and the state is the result of applying all confirmed events to the initial state. The default constructor of the `GrainState` class determines the initial state, which has version 0 (because no events have been applied to it).
 
-_Important:_ The application should never directly modify the object returned by `State`. It is meant for reading only. Rather, when the application wants to modify the state, it must do so indirectly by raising events.
+_Important:_ Your application should never directly modify the object returned by `State`. It's meant for reading only. When your application needs to modify the state, it must do so indirectly by raising events.
 
 ## Raise events
 
-Raising events is accomplished by calling the <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%2A> function. For example, a grain representing a chat can raise a `PostedEvent` to indicate that a user-submitted a post:
+Raise events by calling the <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%2A> function. For example, a grain representing a chat can raise a `PostedEvent` to indicate that a user submitted a post:
 
 ```csharp
 RaiseEvent(new PostedEvent()
@@ -42,7 +43,7 @@ RaiseEvent(new PostedEvent()
 });
 ```
 
-Note that `RaiseEvent` kicks off a write to storage access, but does not wait for the write to complete. For many applications, it is important to wait until we have confirmation that the event has been persisted. In that case, we always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A>:
+Note that `RaiseEvent` initiates a write to storage but doesn't wait for the write to complete. For many applications, it's important to wait for confirmation that the event has been persisted. In that case, always follow up by waiting for <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A>:
 
 ```csharp
 RaiseEvent(new DepositTransaction()
@@ -53,13 +54,13 @@ RaiseEvent(new DepositTransaction()
 await ConfirmEvents();
 ```
 
-Note that even if you don't explicitly call `ConfirmEvents`, the events will eventually be confirmed - it happens automatically in the background.
+Note that even if you don't explicitly call `ConfirmEvents`, the events eventually get confirmed automatically in the background.
 
 ## State transition methods
 
-The runtime updates the grain state _automatically_ whenever events are raised. There is no need for the application to explicitly update the state after raising an event. However, the application still has to provide the code that specifies _how_ to update the state in response to an event. This can be done in two ways.
+The runtime updates the grain state _automatically_ whenever events are raised. Your application doesn't need to explicitly update the state after raising an event. However, your application still needs to provide the code specifying _how_ to update the state in response to an event. You can do this in two ways:
 
-**(a)** The <xref:Orleans.GrainState> class can implement one or more  `Apply` methods on the `StateType`. Typically, one would create multiple overloads, and the closest match is chosen for the runtime type of the event:
+**(a)** The `GrainState` class can implement one or more `Apply` methods on the `StateType`. Typically, you create multiple overloads, and the runtime chooses the closest match for the runtime type of the event:
 
 ```csharp
 class GrainState
@@ -86,15 +87,15 @@ protected override void TransitionState(
 }
 ```
 
-The transition methods are assumed to have no side effects other than modifying the state object, and should be deterministic (otherwise, the effects are unpredictable).  If the transition code throws an exception, that exception is caught and included in a warning in the Orleans log, issued by the log-consistency provider.
+Assume transition methods have no side effects other than modifying the state object and should be deterministic (otherwise, the effects are unpredictable). If the transition code throws an exception, Orleans catches it and includes it in a warning in the Orleans log, issued by the log-consistency provider.
 
-When, exactly, the runtime calls the transition methods depends on the chosen log consistency provider and its configuration. Applications shouldn't rely on a particular timing, except when specifically guaranteed by the log consistency provider.
+When exactly the runtime calls the transition methods depends on the chosen log-consistency provider and its configuration. Applications shouldn't rely on specific timing unless the log-consistency provider explicitly guarantees it.
 
-Some providers, such as the <xref:Orleans.EventSourcing.LogStorage> log-consistency provider, replay the event sequence every time the grain is loaded. Therefore, as long as the event objects can still be properly deserialized from storage, it is possible to radically modify the `GrainState` class and the transition methods. But for other providers, such as the <xref:Orleans.EventSourcing.StateStorage> log-consistency provider, only the `GrainState` object is persisted, so developers must ensure that it can be deserialized correctly when read from storage.
+Some providers, like the <xref:Orleans.EventSourcing.LogStorage> log-consistency provider, replay the event sequence every time the grain loads. Therefore, as long as the event objects can still be properly deserialized from storage, you can radically modify the `GrainState` class and the transition methods. However, for other providers, such as the <xref:Orleans.EventSourcing.StateStorage> log-consistency provider, only the `GrainState` object is persisted. In this case, you must ensure it can be deserialized correctly when read from storage.
 
 ## Raise multiple events
 
-It is possible to make multiple calls to `RaiseEvent` before calling `ConfirmEvents`:
+You can make multiple calls to `RaiseEvent` before calling `ConfirmEvents`:
 
 ```csharp
 RaiseEvent(e1);
@@ -102,17 +103,17 @@ RaiseEvent(e2);
 await ConfirmEvents();
 ```
 
-However, this is likely to cause two successive storage accesses, and it incurs a risk that the grain fails after writing only the first event. Thus, it is usually better to raise multiple events at once, using
+However, this likely causes two successive storage accesses and incurs a risk that the grain fails after writing only the first event. Thus, it's usually better to raise multiple events at once using:
 
 ```csharp
 RaiseEvents(IEnumerable<EventType> events)
 ```
 
-This guarantees that the given sequence of events is written to storage atomically. Note that since the version number always matches the length of the event sequence, raising multiple events increases the version number by more than one at a time.
+This guarantees the given sequence of events is written to storage atomically. Note that since the version number always matches the length of the event sequence, raising multiple events increases the version number by more than one at a time.
 
 ## Retrieve the event sequence
 
-The following method from the base `JournaledGrain` class allows the application to retrieve a specified segment of the sequence of all confirmed events:
+The following method from the base `JournaledGrain` class allows your application to retrieve a specified segment of the sequence of all confirmed events:
 
 ```csharp
 Task<IReadOnlyList<EventType>> RetrieveConfirmedEvents(
@@ -120,14 +121,14 @@ Task<IReadOnlyList<EventType>> RetrieveConfirmedEvents(
     int toVersion);
 ```
 
-However, it is not supported by all log consistency providers. If not supported, or if the specified segment of the sequence is no longer available, a <xref:System.NotSupportedException> is thrown.
+However, not all log-consistency providers support this method. If it's not supported, or if the specified segment of the sequence is no longer available, a <xref:System.NotSupportedException> is thrown.
 
-To retrieve all events up to the latest confirmed version, one would call
+To retrieve all events up to the latest confirmed version, call:
 
 ```csharp
 await RetrieveConfirmedEvents(0, Version);
 ```
 
-Only confirmed events can be retrieved: an exception is thrown if `toVersion` is larger than the current value of the property `Version`.
+You can only retrieve confirmed events: an exception is thrown if `toVersion` is larger than the current value of the `Version` property.
 
-Since confirmed events never change, there are no races to worry about, even in the presence of multiple instances or delayed confirmation. However, in such situations, the value of the property `Version` may be larger by the time the `await` resumes than at the time `RetrieveConfirmedEvents` is called, so it may be advisable to save its value in a variable. See also the section on Concurrency Guarantees.
+Since confirmed events never change, there are no races to worry about, even with multiple instances or delayed confirmation. However, in such situations, the value of the `Version` property might be larger by the time the `await` resumes than when `RetrieveConfirmedEvents` was called. Therefore, it might be advisable to save its value in a variable. See also the section on [Concurrency Guarantees](immediate-vs-delayed-confirmation.md#concurrency-guarantees).

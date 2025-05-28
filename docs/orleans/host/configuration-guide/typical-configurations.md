@@ -1,12 +1,13 @@
 ---
 title: Typical configurations
 description: Learn about typical configurations in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 05/23/2025
+ms.topic: reference
 ---
 
 # Typical configurations
 
-Below are examples of typical configurations that can be used for development and production deployments.
+Below are examples of typical configurations you can use for development and production deployments.
 
 ## Local development
 
@@ -14,9 +15,9 @@ For more information, see [Local development configuration](local-development-co
 
 ## Reliable production deployment using Azure
 
-For a reliable production deployment using Azure, you need to use the Azure Table option for cluster membership. This configuration is typical of deployments to either on-premises servers, containers, or Azure virtual machine instances.
+For a reliable production deployment using Azure, use the Azure Table option for cluster membership. This configuration is typical for deployments to on-premises servers, containers, or Azure virtual machine instances.
 
- The format of the `DataConnection` string is a `;` separated list of `Key=Value` pairs. The following options are supported:
+ The format of the `DataConnection` string is a semicolon-separated list of `Key=Value` pairs. The following options are supported:
 
 | Key                        | Value                               |
 |----------------------------|-------------------------------------|
@@ -69,7 +70,7 @@ using var host = Host.CreateDefaultBuilder(args)
 
 ## Reliable production deployment using SQL Server
 
-For a reliable production deployment using SQL server, a SQL server connection string needs to be supplied.
+For a reliable production deployment using SQL Server, supply a SQL Server connection string.
 
 Silo configuration:
 
@@ -116,7 +117,7 @@ using var host = Host.CreateDefaultBuilder(args)
 
 ## Unreliable deployment on a cluster of dedicated servers
 
-For testing on a cluster of dedicated servers when reliability isn't a concern you can leverage `MembershipTableGrain` and avoid dependency on Azure Table. You just need to designate one of the nodes as a primary.
+For testing on a cluster of dedicated servers where reliability isn't a concern, you can leverage `MembershipTableGrain` and avoid dependency on Azure Table. You just need to designate one of the nodes as primary.
 
 On the silos:
 

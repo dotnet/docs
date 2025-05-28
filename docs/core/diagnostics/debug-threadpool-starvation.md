@@ -31,28 +31,28 @@ The tutorial uses:
 - [dotnet-trace](dotnet-trace.md) to collect wait events
 - Optional: [PerfView](https://github.com/microsoft/perfview/releases) to analyze the wait events
 
-## Running the sample app
+## Run the sample app
 
 Download the code for the [sample app](/samples/dotnet/samples/diagnostic-scenarios) and run it using the .NET SDK:
 
-    ```dotnetcli
-    E:\demo\DiagnosticScenarios>dotnet run
-    Using launch settings from E:\demo\DiagnosticScenarios\Properties\launchSettings.json...
-    info: Microsoft.Hosting.Lifetime[14]
-          Now listening on: https://localhost:5001
-    info: Microsoft.Hosting.Lifetime[14]
-          Now listening on: http://localhost:5000
-    info: Microsoft.Hosting.Lifetime[0]
-          Application started. Press Ctrl+C to shut down.
-    info: Microsoft.Hosting.Lifetime[0]
-          Hosting environment: Development
-    info: Microsoft.Hosting.Lifetime[0]
-          Content root path: E:\demo\DiagnosticScenarios
-    ```
+```dotnetcli
+E:\demo\DiagnosticScenarios>dotnet run
+Using launch settings from E:\demo\DiagnosticScenarios\Properties\launchSettings.json...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\demo\DiagnosticScenarios
+```
 
 If you use a web browser and send requests to `https://localhost:5001/api/diagscenario/taskwait`, you should see the response `success:taskwait` returned after about 500 ms. This shows that the web server is serving traffic as expected.
 
-## Observing slow performance
+## Observe slow performance
 
 The demo web server has several endpoints which mock doing a database request and then returning a response to the user. Each of these endpoints has a delay of approximately 500 ms when serving requests one at a time but the performance is much worse when the web server is subjected to some load. Download the [Bombardier](https://github.com/codesenberg/bombardier/releases) load testing tool and observe the difference in latency when 125 concurrent requests are sent to each endpoint.
 

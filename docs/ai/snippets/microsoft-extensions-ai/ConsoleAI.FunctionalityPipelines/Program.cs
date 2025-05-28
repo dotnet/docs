@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
+using OllamaSharp;
 using OpenTelemetry.Trace;
 
 // Configure OpenTelemetry exporter.
@@ -13,7 +14,7 @@ var tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
 
 // <Snippet1>
 // Explore changing the order of the intermediate "Use" calls.
-IChatClient client = new ChatClientBuilder(new OllamaChatClient(new Uri("http://localhost:11434"), "llama3.1"))
+IChatClient client = new ChatClientBuilder(new OllamaApiClient(new Uri("http://localhost:11434"), "llama3.1"))
     .UseDistributedCache(new MemoryDistributedCache(Options.Create(new MemoryDistributedCacheOptions())))
     .UseFunctionInvocation()
     .UseOpenTelemetry(sourceName: sourceName, configure: c => c.EnableSensitiveData = true)

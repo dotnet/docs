@@ -12,8 +12,8 @@ Relational storage backend code in Orleans builds on generic ADO.NET functionali
 To make Orleans code function with a given relational database backend, you need the following:
 
 1. Load the appropriate ADO.NET library into the process. Define this as usual, for example, via the [DbProviderFactories](../../../framework/data/adonet/obtaining-a-dbproviderfactory.md) element in the application configuration.
-2. Configure the ADO.NET invariant via the `Invariant` property in the options.
-3. Ensure the database exists and is compatible with the code. Do this by running a vendor-specific database creation script. For more information, see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md).
+1. Configure the ADO.NET invariant via the `Invariant` property in the options.
+1. Ensure the database exists and is compatible with the code. Do this by running a vendor-specific database creation script. For more information, see [ADO.NET Configuration](../../host/configuration-guide/adonet-configuration.md).
 
 The ADO.NET grain storage provider allows you to store grain state in relational databases. Currently, the following databases are supported:
 
@@ -112,15 +112,15 @@ The ADO.NET persistence provider can version data and define arbitrary (de)seria
 The principles for ADO.NET-backed persistence storage are:
 
 1. Keep business-critical data safe and accessible while data, data format, and code evolve.
-2. Take advantage of vendor-specific and storage-specific functionality.
+1. Take advantage of vendor-specific and storage-specific functionality.
 
 In practice, this means adhering to ADO.NET implementation goals and including some added implementation logic in ADO.NET-specific storage providers that allow the shape of the data in storage to evolve.
 
 In addition to the usual storage provider capabilities, the ADO.NET provider has built-in capability to:
 
 1. Change storage data from one format to another (e.g., from JSON to binary) when round-tripping state.
-2. Shape the type to be saved or read from storage in arbitrary ways. This allows the state version to evolve.
-3. Stream data out of the database.
+1. Shape the type to be saved or read from storage in arbitrary ways. This allows the state version to evolve.
+1. Stream data out of the database.
 
 You can apply both `1.` and `2.` based on arbitrary decision parameters, such as *grain ID*, *grain type*, or *payload data*.
 
@@ -182,11 +182,11 @@ Creating a new backend should ideally be as simple as translating an existing de
 The Orleans framework doesn't know about deployment-specific hardware (which might change during active deployment), data changes during the deployment lifecycle, or certain vendor-specific features usable only in specific situations. For this reason, the interface between the database and Orleans should adhere to the minimum set of abstractions and rules to meet these goals, ensure robustness against misuse, and facilitate testing. See [Cluster management](../../implementation/cluster-management.md) and the concrete [membership protocol implementation](https://github.com/dotnet/orleans/blob/main/src/Orleans.Core/SystemTargetInterfaces/IMembershipTable.cs). Also, the SQL Server implementation contains SQL Server edition-specific tuning. The interface contract between the database and Orleans is defined as follows:
 
 1. The general idea is that data is read and written through Orleans-specific queries. Orleans operates on column names and types when reading, and on parameter names and types when writing.
-2. Implementations **must** preserve input and output names and types. Orleans uses these parameters to read query results by name and type. Vendor-specific and deployment-specific tuning is allowed, and contributions are encouraged as long as the interface contract is maintained.
-3. Implementations across vendor-specific scripts **should** preserve constraint names. This simplifies troubleshooting through uniform naming across concrete implementations.
-4. **Version** – or **ETag** in application code – represents a unique version for Orleans. The type of its actual implementation isn't important as long as it represents a unique version. In the implementation, Orleans code expects a signed 32-bit integer.
-5. To be explicit and remove ambiguity, Orleans expects some queries to return either **TRUE as > 0** value or **FALSE as = 0** value. The number of affected or returned rows doesn't matter. If an error is raised or an exception is thrown, the query **must** ensure the entire transaction rolls back and can either return FALSE or propagate the exception.
-6. Currently, all but one query are single-row inserts or updates (note: you could replace `UPDATE` queries with `INSERT`, provided the associated `SELECT` queries performed the last write).
+1. Implementations **must** preserve input and output names and types. Orleans uses these parameters to read query results by name and type. Vendor-specific and deployment-specific tuning is allowed, and contributions are encouraged as long as the interface contract is maintained.
+1. Implementations across vendor-specific scripts **should** preserve constraint names. This simplifies troubleshooting through uniform naming across concrete implementations.
+1. **Version** – or **ETag** in application code – represents a unique version for Orleans. The type of its actual implementation isn't important as long as it represents a unique version. In the implementation, Orleans code expects a signed 32-bit integer.
+1. To be explicit and remove ambiguity, Orleans expects some queries to return either **TRUE as > 0** value or **FALSE as = 0** value. The number of affected or returned rows doesn't matter. If an error is raised or an exception is thrown, the query **must** ensure the entire transaction rolls back and can either return FALSE or propagate the exception.
+1. Currently, all but one query are single-row inserts or updates (note: you could replace `UPDATE` queries with `INSERT`, provided the associated `SELECT` queries performed the last write).
 
 Database engines support in-database programming. This is similar to loading an executable script and invoking it to execute database operations. In pseudocode, it could be depicted as:
 
@@ -207,12 +207,12 @@ These principles are also [included in the database scripts](../../host/configur
 ## Ideas for applying customized scripts
 
 1. Alter scripts in `OrleansQuery` for grain persistence using `IF ELSE` so that some state saves using the default `INSERT`, while other grain states might use [memory-optimized tables](/sql/relational-databases/in-memory-oltp/memory-optimized-tables). Alter the `SELECT` queries accordingly.
-2. Use the idea in `1.` to take advantage of other deployment- or vendor-specific aspects, such as splitting data between `SSD` and `HDD`, putting some data in encrypted tables, or perhaps inserting statistics data via SQL Server-to-Hadoop or even [linked servers](/sql/relational-databases/linked-servers/linked-servers-database-engine).
+1. Use the idea in `1.` to take advantage of other deployment- or vendor-specific aspects, such as splitting data between `SSD` and `HDD`, putting some data in encrypted tables, or perhaps inserting statistics data via SQL Server-to-Hadoop or even [linked servers](/sql/relational-databases/linked-servers/linked-servers-database-engine).
 
 You can test the altered scripts by running the Orleans test suite or directly in the database using, for instance, a [SQL Server Unit Test Project](/previous-versions/sql/sql-server-data-tools/jj851212(v=vs.103)).
 
 ## Guidelines for adding new ADO.NET providers
 
 1. Add a new database setup script according to the [Realization of the goals](#realization-of-the-goals) section above.
-2. Add the vendor ADO invariant name to <xref:Orleans.SqlUtils.AdoNetInvariants> and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are potentially used in some query operations, for example,, to select the correct statistics insert mode (i.e., `UNION ALL` with or without `FROM DUAL`).
-3. Orleans has comprehensive tests for all system stores: membership, reminders, and statistics. Add tests for the new database script by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/RelationalUtilities/RelationalStorageForTesting.cs) to define test functionality for the ADO invariant.
+1. Add the vendor ADO invariant name to <xref:Orleans.SqlUtils.AdoNetInvariants> and ADO.NET provider-specific data to [DbConstantsStore](https://github.com/dotnet/orleans/blob/main/src/AdoNet/Shared/Storage/DbConstantsStore.cs). These are potentially used in some query operations, for example,, to select the correct statistics insert mode (i.e., `UNION ALL` with or without `FROM DUAL`).
+1. Orleans has comprehensive tests for all system stores: membership, reminders, and statistics. Add tests for the new database script by copy-pasting existing test classes and changing the ADO invariant name. Also, derive from [RelationalStorageForTesting](https://github.com/dotnet/orleans/blob/main/test/Extensions/TesterAdoNet/RelationalUtilities/RelationalStorageForTesting.cs) to define test functionality for the ADO invariant.

@@ -30,20 +30,20 @@ For this tutorial, create four projects as part of the same solution:
 Replace the default code with the code provided for each project.
 
 1. Start by creating a Console App project in a new solution. Call the project `Silo` and name the solution `OrleansHelloWorld`. For more information on creating a console app, see [Tutorial: Create a .NET console application using Visual Studio](../../core/tutorials/with-visual-studio.md).
-2. Add another Console App project and name it `Client`.
-3. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library using Visual Studio](../../core/tutorials/library-with-visual-studio.md).
-4. Add another Class Library and name it `Grains`.
+1. Add another Console App project and name it `Client`.
+1. Add a Class Library and name it `GrainInterfaces`. For information on creating a class library, see [Tutorial: Create a .NET class library using Visual Studio](../../core/tutorials/library-with-visual-studio.md).
+1. Add another Class Library and name it `Grains`.
 
 #### Delete default source files
 
 1. Delete _Class1.cs_ from **Grains**.
-2. Delete _Class1.cs_ from **GrainInterfaces**.
+1. Delete _Class1.cs_ from **GrainInterfaces**.
 
 ### Add references
 
 1. **Grains** references **GrainInterfaces**.
-2. **Silo** references **Grains**.
-3. **Client** references **GrainInterfaces**.
+1. **Silo** references **Grains**.
+1. **Client** references **GrainInterfaces**.
 
 ## Add Orleans NuGet packages
 

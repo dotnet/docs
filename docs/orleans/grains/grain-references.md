@@ -34,8 +34,8 @@ IPlayerGrain player = client.GetGrain<IPlayerGrain>(playerId);
 Grain references contain three pieces of information:
 
 1. The grain _type_, which uniquely identifies the grain class.
-2. The grain _key_, which uniquely identifies a logical instance of that grain class.
-3. The _interface_ which the grain reference must implement.
+1. The grain _key_, which uniquely identifies a logical instance of that grain class.
+1. The _interface_ which the grain reference must implement.
 
 > [!NOTE]
 > The grain _type_ and _key_ form the [grain identity](grain-identity.md).

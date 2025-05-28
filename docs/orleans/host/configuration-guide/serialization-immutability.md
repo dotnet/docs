@@ -54,7 +54,7 @@ Sometimes, you might not control the object; for example, it might be a `List<in
     }
     ```
 
-2. Mark individual properties and fields as <xref:Orleans.ImmutableAttribute> to prevent copies when instances of the containing type are copied.
+1. Mark individual properties and fields as <xref:Orleans.ImmutableAttribute> to prevent copies when instances of the containing type are copied.
 
     ```csharp
     [GenerateSerializer]

@@ -12,10 +12,10 @@ This sample is a simple multiplayer text adventure game inspired by old-fashione
 ## Instructions
 
 1. Navigate to the [Orleans Text Adventure Game](/samples/dotnet/samples/orleans-text-adventure-game) in the samples browser experience.
-2. Select **Browse code** to view the source code.
-3. Clone the source code and build the solution.
-4. Start the _AdventureServer_ first, then the _AdventureClient_.
-5. You are then prompted to enter your name on the command line. Enter it and begin the game.
+1. Select **Browse code** to view the source code.
+1. Clone the source code and build the solution.
+1. Start the _AdventureServer_ first, then the _AdventureClient_.
+1. You are then prompted to enter your name on the command line. Enter it and begin the game.
 
 For more information, see [Building the sample](/samples/dotnet/samples/orleans-text-adventure-game#building-the-sample).
 
@@ -44,6 +44,6 @@ Things such as keys are modeled as plain old objects—they are just simple immu
 ## Possible improvements
 
 1. Make the map much, much bigger.
-2. Make the brass key unlock something.
-3. Allow players to message each other.
-4. Make eating food and drinking water possible and meaningful.
+1. Make the brass key unlock something.
+1. Allow players to message each other.
+1. Make eating food and drinking water possible and meaningful.

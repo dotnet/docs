@@ -83,10 +83,10 @@ Consider a less fortunate series of events where the same code results in a *dea
 In this example:
 
 1. The `CallOther` calls arrive at their respective grains and are processed simultaneously.
-2. Both grains log `"1"` and proceed to `await other.Ping()`.
-3. Since both grains are still *busy* (processing the `CallOther` request, which hasn't finished yet), the `Ping()` requests wait.
-4. After a while, Orleans determines that the call has **timed out**, and each `Ping()` call results in an exception being thrown.
-5. The `CallOther` method body doesn't handle the exception, and it bubbles up to the original caller.
+1. Both grains log `"1"` and proceed to `await other.Ping()`.
+1. Since both grains are still *busy* (processing the `CallOther` request, which hasn't finished yet), the `Ping()` requests wait.
+1. After a while, Orleans determines that the call has **timed out**, and each `Ping()` call results in an exception being thrown.
+1. The `CallOther` method body doesn't handle the exception, and it bubbles up to the original caller.
 
 The following section describes how to prevent deadlocks by allowing multiple requests to interleave their execution.
 

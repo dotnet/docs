@@ -154,7 +154,7 @@ Unless you're sure they're no longer used, don't remove methods from the grain i
     }
     ```
 
-2. When you're sure no V1 calls are being made (effectively, V1 is no longer deployed in the running cluster), deploy V3 with the V1 method removed.
+1. When you're sure no V1 calls are being made (effectively, V1 is no longer deployed in the running cluster), deploy V3 with the V1 method removed.
 
     ```csharp
     [Version(3)]

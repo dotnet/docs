@@ -23,8 +23,8 @@ protected override void OnStateChanged()
 `OnStateChanged` is called whenever the confirmed state updates, i.e., the version number increases. This can happen when:
 
 1. A newer version of the state was loaded from storage.
-2. An event raised by this instance has been successfully written to storage.
-3. A notification message was received from some other instance.
+1. An event raised by this instance has been successfully written to storage.
+1. A notification message was received from some other instance.
 
 Note that since all grains initially have version zero, `OnStateChanged` is called whenever the initial load from storage completes with a version larger than zero.
 

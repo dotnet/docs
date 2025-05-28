@@ -137,9 +137,9 @@ Sometimes, generated code cannot be included in a particular assembly at build t
 To enable this for an assembly:
 
 1. Create a C# project.
-2. Install the `Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build` package.
-3. Add a reference to the target assembly.
-4. Add `[assembly: KnownAssembly("OtherAssembly")]` at the top level of a C# file.
+1. Install the `Microsoft.Orleans.CodeGenerator.MSBuild` or `Microsoft.Orleans.OrleansCodeGenerator.Build` package.
+1. Add a reference to the target assembly.
+1. Add `[assembly: KnownAssembly("OtherAssembly")]` at the top level of a C# file.
 
 The <xref:Orleans.CodeGeneration.KnownAssemblyAttribute> instructs the code generator to inspect the specified assembly and generate code for the types within it. This attribute can be used multiple times within a project.
 

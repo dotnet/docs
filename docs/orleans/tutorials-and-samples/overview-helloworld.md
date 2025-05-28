@@ -18,7 +18,7 @@ Configure silos programmatically via `ISiloBuilder` and several supplemental opt
 ```csharp
 static async Task<ISiloHost> StartSilo(string[] args)
 {
-    var builder = Host.CreateApplicationbuilder(args)
+    var builder = Host.CreateApplicationBuilder(args)
         UseOrleans(c =>
         {
             c.UseLocalhostClustering()

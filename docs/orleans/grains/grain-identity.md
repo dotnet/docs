@@ -10,7 +10,7 @@ ms.topic: conceptual
 Grains in Orleans each have a single, unique, user-defined identifier consisting of two parts:
 
 1. The grain _type_ name, uniquely identifying the grain class.
-2. The grain _key_, uniquely identifying a logical instance of that grain class.
+1. The grain _key_, uniquely identifying a logical instance of that grain class.
 
 Orleans represents both grain type and key as human-readable strings. By convention, write the grain identity with the grain type and key separated by a `/` character. For example, `shoppingcart/bob65` represents the grain type named `shoppingcart` with the key `bob65`.
 

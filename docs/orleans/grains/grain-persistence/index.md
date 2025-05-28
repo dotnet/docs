@@ -17,9 +17,9 @@ In the preceding diagram, UserGrain has a *Profile* state and a *Cart* state, ea
 ## Goals
 
 1. Support multiple named persistent data objects per grain.
-2. Allow multiple configured storage providers, each potentially having a different configuration and backed by a different storage system.
-3. Enable the community to develop and publish storage providers.
-4. Give storage providers complete control over how they store grain state data in the persistent backing store. Corollary: Orleans doesn't provide a comprehensive ORM storage solution but allows custom storage providers to support specific ORM requirements as needed.
+1. Allow multiple configured storage providers, each potentially having a different configuration and backed by a different storage system.
+1. Enable the community to develop and publish storage providers.
+1. Give storage providers complete control over how they store grain state data in the persistent backing store. Corollary: Orleans doesn't provide a comprehensive ORM storage solution but allows custom storage providers to support specific ORM requirements as needed.
 
 ## Packages
 
@@ -218,7 +218,7 @@ Now that you've configured a storage provider named `"profileStore"`, you can ac
 You can add persistent state to a grain in two primary ways:
 
 1. By injecting `IPersistentState<TState>` into the grain's constructor.
-2. By inheriting from <xref:Orleans.Grain%601>.
+1. By inheriting from <xref:Orleans.Grain%601>.
 
 The recommended way to add storage to a grain is by injecting `IPersistentState<TState>` into the grain's constructor with an associated `[PersistentState("stateName", "providerName")]` attribute. For details on `Grain<TState>`, see [Using `Grain<TState>` to add storage to a grain](#using-graintstate-to-add-storage-to-a-grain) below. Using `Grain<TState>` is still supported but considered a legacy approach.
 

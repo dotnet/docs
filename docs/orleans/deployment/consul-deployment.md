@@ -23,9 +23,9 @@ As an [Orleans Membership Provider](../implementation/cluster-management.md), Co
 Extensive documentation on setting up a stable Consul cluster is available in the [Consul documentation](https://developer.hashicorp.com/consul), so that information won't be repeated here. However, for convenience, this guide shows how to quickly get Orleans running with a standalone Consul agent.
 
 1. Create a folder to install Consul into (for example _C:\Consul_).
-2. Create a subfolder: _C:\Consul\Data_ (Consul doesn't create this directory if it doesn't exist).
-3. [Download](https://developer.hashicorp.com/consul/install) and unzip _Consul.exe_ into _C:\Consul_.
-4. Open a command prompt at _C:\Consul_ and run the following command:
+1. Create a subfolder: _C:\Consul\Data_ (Consul doesn't create this directory if it doesn't exist).
+1. [Download](https://developer.hashicorp.com/consul/install) and unzip _Consul.exe_ into _C:\Consul_.
+1. Open a command prompt at _C:\Consul_ and run the following command:
 
    ```powershell
    ./consul.exe agent -server -bootstrap -data-dir "C:\Consul\Data" -client='0.0.0.0'
@@ -41,7 +41,7 @@ Extensive documentation on setting up a stable Consul cluster is available in th
 
    Many other parameters exist, including the option to use a JSON configuration file. See the Consul documentation for a full listing.
 
-5. Verify Consul is running and ready to accept membership requests from Orleans by opening the services endpoint in your browser at `http://localhost:8500/v1/catalog/services`. When functioning correctly, the browser displays the following JSON:
+1. Verify Consul is running and ready to accept membership requests from Orleans by opening the services endpoint in your browser at `http://localhost:8500/v1/catalog/services`. When functioning correctly, the browser displays the following JSON:
 
    ```json
    {
@@ -145,6 +145,6 @@ This warning message appears due to a lack of focus on testing when running in a
 ## Potential future enhancements
 
 1. Prove the Consul KV replication project can support an Orleans cluster in a WAN environment between multiple Consul data centers.
-2. Implement the Reminder Table in Consul.
-3. Implement the Extended Membership Protocol.
+1. Implement the Reminder Table in Consul.
+1. Implement the Extended Membership Protocol.
 The team behind Consul plans to implement atomic operations. Once this functionality is available, removing the limitations in the provider might be possible.

@@ -14,8 +14,8 @@ In this article, you learn the differences between immediate and delayed confirm
 For many applications, you want to ensure events are confirmed immediately. This prevents the persisted version from lagging behind the current version in memory and avoids the risk of losing the latest state if the grain fails. You can guarantee this by following these rules:
 
 1. Confirm all <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseEvent%2A> calls using <xref:Orleans.EventSourcing.JournaledGrain%602.ConfirmEvents%2A> before the grain method returns.
-2. Ensure tasks returned by <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent%2A> complete before the grain method returns.
-3. Avoid <xref:Orleans.Concurrency.ReentrantAttribute> or <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> attributes, so only one grain call processes at a time.
+1. Ensure tasks returned by <xref:Orleans.EventSourcing.JournaledGrain%602.RaiseConditionalEvent%2A> complete before the grain method returns.
+1. Avoid <xref:Orleans.Concurrency.ReentrantAttribute> or <xref:Orleans.Concurrency.AlwaysInterleaveAttribute> attributes, so only one grain call processes at a time.
 
 If you follow these rules, it means that after an event is raised, no other grain code can execute until the event has been written to storage. Therefore, it's impossible to observe inconsistencies between the in-memory version and the stored version. While this is often exactly what you want, it also has some potential disadvantages.
 

@@ -52,12 +52,17 @@ In the following table, ❌ represents an unsupported version of Windows 11 and 
 |-----------------------|-------------------------|---------------------------------|
 | ✔️ 24H2 (October 2024)   | 4.8.1                   | 4.8.1                           |
 | ✔️ 23H2 (October 2023)   | 4.8.1                   | 4.8.1                           |
-| ✔️ 22H2 (September 2022) | 4.8.1                   | 4.8.1                           |
+| ❌ 22H2 (September 2022) | 4.8.1                   | 4.8.1                           |
 | ❌ 21H2 (October 2021)   | 4.8                     | 4.8.1                           |
 
 For more information about Windows 11 end-of-support dates, see [Windows 11 Home and Pro Lifecycle](/lifecycle/products/windows-11-home-and-pro) and [Windows Lifecycle FAQ](/lifecycle/faq/windows).
 
 ### Install .NET Framework on Windows 11
+
+If you're using Windows 11 21H2, install .NET Framework 4.8.1 by downloading and running the installer. If you're using any other version of Windows 11, the latest .NET Framework is already installed.
+
+> [!div class="button"]
+> [Download .NET Framework 4.8.1](https://dotnet.microsoft.com/download/dotnet-framework/net481)
 
 If you need to install .NET Framework 3.5, which supports .NET Framework apps 1.0 through 3.5, refer to the [.NET Framework 3.5 section](#net-framework-35).
 
@@ -73,20 +78,20 @@ In the following table, ❌ represents an unsupported version of Windows 10 and 
 
 | Windows 10 version   | .NET Framework included | Latest .NET Framework supported |
 |----------------------|-------------------------|---------------------------------|
-| ✔️ 22H2 (October 2022)  | 4.8                  | 4.8.1                           |
-| ✔️ 21H2 (November 2021) | 4.8                  | 4.8.1                           |
-| ❌ 21H1 (May 2021)      | 4.8                  | 4.8.1                           |
-| ❌ 20H2 (October 2020)  | 4.8                  | 4.8.1                           |
-| ❌ 2004 (May 2020)      | 4.8                  | 4.8                             |
-| ❌ 1909 (November 2019) | 4.8                  | 4.8                             |
-| ❌ 1903 (May 2019)      | 4.8                  | 4.8                             |
-| ✔️ 1809 (October 2018)  | 4.7.2                | 4.8                             |
-| ❌ 1803 (April 2018)    | 4.7.2                | 4.8                             |
-| ❌ 1709 (October 2017)  | 4.7.1                | 4.8                             |
-| ❌ 1703 (April 2017)    | 4.7                  | 4.8                             |
-| ✔️ 1607 (August 2016)   | 4.6.2                | 4.8                             |
-| ❌ 1511 (November 2015) | 4.6.1                | 4.6.2                           |
-| ✔️ 1507 (July 2015)     | 4.6                  | 4.6.2                           |
+| ✔️ 22H2 (October 2022)  | 4.8                     | 4.8.1                           |
+| ❌ 21H2 (November 2021) | 4.8                     | 4.8.1                           |
+| ❌ 21H1 (May 2021)      | 4.8                     | 4.8.1                           |
+| ❌ 20H2 (October 2020)  | 4.8                     | 4.8.1                           |
+| ❌ 2004 (May 2020)      | 4.8                     | 4.8                             |
+| ❌ 1909 (November 2019) | 4.8                     | 4.8                             |
+| ❌ 1903 (May 2019)      | 4.8                     | 4.8                             |
+| ❌ 1809 (October 2018)  | 4.7.2                   | 4.8                             |
+| ❌ 1803 (April 2018)    | 4.7.2                   | 4.8                             |
+| ❌ 1709 (October 2017)  | 4.7.1                   | 4.8                             |
+| ❌ 1703 (April 2017)    | 4.7                     | 4.8                             |
+| ❌ 1607 (August 2016)   | 4.6.2                   | 4.8                             |
+| ❌ 1511 (November 2015) | 4.6.1                   | 4.6.2                           |
+| ❌ 1507 (July 2015)     | 4.6                     | 4.6.2                           |
 
 ### Install .NET Framework on Windows 10
 
@@ -115,15 +120,15 @@ In the following table, ❌ represents an unsupported version of Windows Server 
 |------------------------------|-------------------------|---------------------------------|
 | ✔️ Windows Server 2025          | 4.8.1                   | 4.8.1                           |
 | ✔️ Windows Server 2022          | 4.8                     | 4.8.1                           |
-| ✔️ Windows Server 2019          | 4.7.2                   | 4.8                             |
-| ✔️ Windows Server, version 1809 | 4.7.2                   | 4.8                             |
+| ❌ Windows Server 2019          | 4.7.2                   | 4.8                             |
+| ❌ Windows Server, version 1809 | 4.7.2                   | 4.8                             |
 | ❌ Windows Server, version 1803 | 4.7.2                   | 4.8                             |
 | ❌ Windows Server, version 1709 | 4.7.1                   | 4.7.2                           |
-| ✔️ Windows Server 2016          | 4.6.2                   | 4.8                             |
-| ✔️ Windows Server 2012 R2       | 4.5.1                   | 4.8                             |
-| ✔️ Windows Server 2012          | 4.5                     | 4.8                             |
-| ✔️ Windows Server 2008 R2 SP1   | 3.5                     | 4.8                             |
-| ✔️ Windows Server 2008 SP2      | 2.0                     | 4.6.2                           |
+| ❌ Windows Server 2016          | 4.6.2                   | 4.8                             |
+| ❌ Windows Server 2012 R2       | 4.5.1                   | 4.8                             |
+| ❌ Windows Server 2012          | 4.5                     | 4.8                             |
+| ❌ Windows Server 2008 R2 SP1   | 3.5                     | 4.8                             |
+| ❌ Windows Server 2008 SP2      | 2.0                     | 4.6                             |
 | ❌ Windows Server 2003          | 2.0                     | 4.0                             |
 
 ### Install .NET Framework on Windows Server

@@ -1,7 +1,7 @@
 ---
 title: "Get started with the 'chat using your own data sample' for .NET"
 description: Get started with .NET and search across your own data using a chat app sample implemented using Azure OpenAI Service and Retrieval Augmented Generation (RAG) in Azure AI Search. Easily deploy with Azure Developer CLI. This article uses the Azure AI Reference Template sample.
-ms.date: 12/19/2024
+ms.date: 05/28/2025
 ms.topic: get-started
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 # CustomerIntent: As a .NET developer new to Azure OpenAI, I want deploy and use sample code to interact with app infused with my own business data so that learn from the sample code.

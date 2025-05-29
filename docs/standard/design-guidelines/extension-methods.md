@@ -36,7 +36,7 @@ Extension methods are a language feature that allows static methods to be called
 
  ❌ DO NOT define extension methods implementing a feature in namespaces normally associated with other features. Instead, define them in the namespace associated with the feature they belong to.
 
- ❌ AVOID generic naming of namespaces dedicated to extension methods (for example, "Extensions"). Use a descriptive name (for example, "Routing") instead.
+ ❌ AVOID generic naming of namespaces dedicated to extension methods (e.g., "Extensions"). Use a descriptive name (e.g., "Routing") instead.
 
  *Portions &copy; 2005, 2009 Microsoft Corporation. All rights reserved.*
 

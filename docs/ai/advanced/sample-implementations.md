@@ -1,6 +1,6 @@
 ---
 title: "Sample implementations of IChatClient and IEmbeddingGenerator"
-description:
+description: Learn more about the IChatClient and IEmbeddingGenerator interfaces, see simple implementations, and find links to concrete implementations.
 ms.topic: article
 ms.date: 05/28/2025
 ---

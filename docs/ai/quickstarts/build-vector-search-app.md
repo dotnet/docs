@@ -4,7 +4,6 @@ description: Create an AI powered app to search and integrate with vector stores
 ms.date: 12/06/2024
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: fboucher
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---

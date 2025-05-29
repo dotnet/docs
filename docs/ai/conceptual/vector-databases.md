@@ -1,7 +1,6 @@
 ---
 title: "Using Vector Databases to Extend LLM Capabilities"
 description: "Learn how vector databases extend LLM capabilities by storing and processing embeddings in .NET."
-author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 11/24/2024
 

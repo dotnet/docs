@@ -1,7 +1,6 @@
 ---
 title: "Understanding OpenAI Function Calling"
 description: "Understand how function calling enables you to integrate external tools with your OpenAI application."
-author: haywoodsloan
 ms.topic: concept-article
 ms.date: 12/19/2024
 

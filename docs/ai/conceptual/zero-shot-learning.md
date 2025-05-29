@@ -1,7 +1,6 @@
 ---
 title: "Zero-shot and few-shot learning"
 description: "Learn the use cases for zero-shot and few-shot learning in prompt engineering."
-author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 11/25/2024
 

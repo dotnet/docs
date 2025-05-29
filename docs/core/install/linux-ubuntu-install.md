@@ -411,7 +411,7 @@ rm packages-microsoft-prod.deb
 
 # [.NET 9](#tab/dotnet9)
 
-Because Ubuntu 20.04 reaches end of life in April 2025, Microsoft has decided not to support .NET 9 on Ubuntu 20.04.
+Because Ubuntu 20.04 reached end of life in April 2025, Microsoft doesn't support .NET 9 on Ubuntu 20.04.
 
 # [.NET 8](#tab/dotnet8)
 

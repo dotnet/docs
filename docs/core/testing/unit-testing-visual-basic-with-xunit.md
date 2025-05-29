@@ -38,7 +38,7 @@ The following instructions provide the steps to create the test solution. See [C
 * Run the following command:
 
   ```dotnetcli
-  dotnet new classlib -o PrimeService --lang VB
+  dotnet new classlib -o PrimeService -lang VB
   ```
 
    The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.

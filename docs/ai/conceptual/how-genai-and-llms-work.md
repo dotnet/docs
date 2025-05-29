@@ -2,7 +2,7 @@
 title: "How Generative AI and LLMs work"
 description: "Understand how Generative AI and large language models (LLMs) work and how they might be useful in your .NET projects."
 ms.topic: concept-article
-ms.date: 11/24/2024
+ms.date: 05/29/2025
 
 #customer intent: As a .NET developer, I want to understand how Generative AI and large language models (LLMs) work and how they may be useful in my .NET projects.
 

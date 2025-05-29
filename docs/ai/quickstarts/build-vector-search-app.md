@@ -1,7 +1,7 @@
 ---
 title: Quickstart - Build a minimal .NET AI RAG app
 description: Create an AI powered app to search and integrate with vector stores using embeddings and the Microsoft.Extensions.VectorData package for .NET
-ms.date: 12/06/2024
+ms.date: 05/29/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 zone_pivot_groups: openai-library

@@ -4,8 +4,6 @@ description: Set up a local AI model and chat with it using a .NET console app a
 ms.date: 05/28/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Chat with a local AI model using .NET

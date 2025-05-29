@@ -2,7 +2,7 @@
 title: "Chain of Thought Prompting - .NET"
 description: "Learn how chain of thought prompting can simplify prompt engineering."
 ms.topic: concept-article #Don't change.
-ms.date: 11/24/2024
+ms.date: 05/29/2025
 
 #customer intent: As a .NET developer, I want to understand what chain-of-thought prompting is and how it can help me save time and get better completions out of prompt engineering.
 

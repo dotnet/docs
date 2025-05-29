@@ -4,7 +4,6 @@ description: Create a simple chat app using Microsoft.Extensions.AI to summarize
 ms.date: 05/02/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: fboucher
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to OpenAI, I want deploy and use sample code to interact to learn from the sample code to summarize text.
 ---

@@ -11,7 +11,7 @@ ms.custom: linux-related-content
 
 # Install .NET Runtime with Snap
 
-This article describes how to install the .NET Runtime snap package. .NET Runtime snap packages are provided by and maintained by Canonical. Snaps are a great alternative to the package manager built into your Linux distribution.
+This article describes how to install the .NET Runtime snap package. .NET Runtime snap packages are provided by and maintained by Canonical. Snaps are a great alternative to the package manager built into your Linux distribution. If you need to install the SDK, see [Install .NET SDK with Snap](linux-snap-sdk.md).
 
 A snap is a bundle of an app and its dependencies that works across many different Linux distributions. Snaps are discoverable and installable from the Snap Store. For more information about Snap, see [Quickstart tour](https://snapcraft.io/docs/quickstart-tour).
 

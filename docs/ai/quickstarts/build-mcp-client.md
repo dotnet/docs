@@ -21,7 +21,7 @@ In this quickstart, you build a minimal [Model Context Protocol (MCP)](../get-st
 
 ## Create the .NET host app
 
-Complete the following steps to create a .NET console app. The app acts as a host for an MCP client that connects to an MCP Server.
+Complete the following steps to create a .NET console app. The app acts as a host for an MCP client that connects to an MCP server.
 
 ### Create the project
 
@@ -42,7 +42,7 @@ Complete the following steps to create a .NET console app. The app acts as a hos
    ```console
    dotnet add package Azure.AI.OpenAI --prerelease
    dotnet add package Azure.Identity
-   dotnet add package Microsoft.Extensions.AI --prerelease
+   dotnet add package Microsoft.Extensions.AI
    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
    dotnet add package ModelContextProtocol --prerelease
    ```
@@ -62,7 +62,7 @@ Replace the contents of `Program.cs` with the following code:
 The preceding code accomplishes the following tasks:
 
 - Initializes an `IChatClient` abstraction using the [`Microsoft.Extensions.AI`](/dotnet/ai/microsoft-extensions-ai) libraries.
-- Creates an MCP client and configures it to connect to your MCP server
+- Creates an MCP client and configures it to connect to your MCP server.
 - Retrieves and displays a list of available tools from the MCP server, which is a standard MCP function.
 - Implements a conversational loop that processes user prompts and utilizes the tools for responses.
 

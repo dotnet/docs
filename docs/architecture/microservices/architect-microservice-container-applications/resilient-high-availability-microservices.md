@@ -69,6 +69,8 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 - **Splunk** Official site. \
   <https://www.splunk.com/>
+- **Middleware** Official site. \
+  <https://middleware.io/>
 
 - **EventSource Class** API for events tracing for Windows (ETW) \
   [https://learn.microsoft.com/dotnet/api/system.diagnostics.tracing.eventsource](xref:System.Diagnostics.Tracing.EventSource)

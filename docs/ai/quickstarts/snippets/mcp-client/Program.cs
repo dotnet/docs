@@ -4,7 +4,7 @@ using Microsoft.Extensions.AI;
 using ModelContextProtocol.Client;
 using ModelContextProtocol.Protocol.Transport;
 
-// Create an IChatClient using Azure OpenAI
+// Create an IChatClient using Azure OpenAI.
 IChatClient client =
     new ChatClientBuilder(
         new AzureOpenAIClient(new Uri("<your-azure-openai-endpoint>"),
@@ -14,7 +14,7 @@ IChatClient client =
     .Build();
 
 // Create the MCP client
-// Configure it to start and connect to your MCP server
+// Configure it to start and connect to your MCP server.
 var mcpClient = await McpClientFactory.CreateAsync(
     new StdioClientTransport(new()
     {
@@ -23,7 +23,7 @@ var mcpClient = await McpClientFactory.CreateAsync(
         Name = "Minimal MCP Server",
     }));
 
-// List all available tools from the MCP server
+// List all available tools from the MCP server.
 Console.WriteLine("Available tools:");
 var tools = await mcpClient.ListToolsAsync();
 foreach (var tool in tools)
@@ -32,7 +32,7 @@ foreach (var tool in tools)
 }
 Console.WriteLine();
 
-// Conversational loop that can utilize the tools via prompts
+// Conversational loop that can utilize the tools via prompts.
 List<ChatMessage> messages = [];
 while (true)
 {

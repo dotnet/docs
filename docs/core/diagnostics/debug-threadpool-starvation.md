@@ -313,18 +313,23 @@ The following sections show how to use each tool to read the nettrace file.
 
 1. Download [PerfView](https://github.com/microsoft/perfview/releases) and run it.
 1. Open the nettrace file by double-clicking it.
+
    ![Screenshot of the opening of a nettrace in PerfView](./media/perfview-open-nettrace.png)
+
 1. Double click on **Advanced Group** > **Any Stacks**. A new window opens.
 
    :::image type="content" source="./media/perfview-any-stacks.png" lightbox="./media/perfview-any-stacks.png" alt-text="Screenshot of the any stacks view in PerfView.":::
+
 1. Double click on the line "Event Microsoft-Windows-DotNETRuntime/WaitHandleWait/Start".
 
    Now you should see the stack traces where the WaitHandleWait events were emitted. They are split by "WaitSource". Currently there are two sources: `MonitorWait` for events emitted through [Monitor.Wait](xref:System.Threading.Monitor), and `Unknown` for all the others.
 
-   ![Screenshot of the any stacks view for wait events in PerfView.](./media/perfview-any-stacks-waithandle.png)
+   :::image type="content" source="./media/perfview-any-stacks-waithandle.png" lightbox="./media/perfview-any-stacks-waithandle.png" alt-text="Screenshot of the any stacks view for wait events in PerfView.":::
+
 1. Start with MonitorWait as it represents 64.8% of the events. You can check the checkboxes to expand the stack traces responsible for emitting this event.
 
-   ![Screenshot of the expanded any stacks view for wait events in PerfView](./media/perfview-any-stacks-waithandle-expanded.png)
+   :::image type="content" source="./media/perfview-any-stacks-waithandle-expanded.png" lightbox="./media/perfview-any-stacks-waithandle-expanded.png" alt-text="Screenshot of the expanded any stacks view for wait events in PerfView.":::
+
    This stack trace can be read as: `Task<T>.Result` emitted a WaitHandleWait event with a WaitSource MonitorWait (`Task<T>.Result` uses `Monitor.Wait` to perform a wait). It was called by `DiagScenarioController.TaskWait`, which was called by some lambda, which was called by some ASP.NET code
 
 #### Analyze a nettrace with .NET Events Viewer
@@ -340,13 +345,13 @@ The following sections show how to use each tool to read the nettrace file.
 
 1. You should see the stack traces where the WaitHandleWait events were emitted. Click on the arrows to expand the stack traces responsible for emitting this event.
 
-   ![Screenshot of the tree view in .NET Events Viewer.](./media/dotnet-events-viewer-expanded-wait-events.png)
+   :::image type="content" source="./media/dotnet-events-viewer-expanded-wait-events.png" lightbox="./media/dotnet-events-viewer-expanded-wait-events.png" alt-text="Screenshot of the tree view in .NET Events Viewer.":::
 
    This stack trace can be read as: `ManualResetEventSlim.Wait` emitted a WaitHandleWait event. It was called by `Task.SpinThenBlockWait`, which was called by `Task.InternalWaitCore`, which was called by `Task<T>.Result`, which was called by `DiagScenario.TaskWait`, which was called by some lambda, which was called by some ASP.NET code
 
 In real world scenarios, you might find a lot of wait events emitted from threads outside the thread pool. Here, you're investigating a *thread pool* starvation, so all waits on dedicated thread outside of the thread pool aren't relevant. You can tell if a stack trace is from a thread pool thread by looking at the first methods, which should contain a mention of the thread pool (for example, `WorkerThread.WorkerThreadStart` or `ThreadPoolWorkQueue`).
 
-![Top of a thread pool thread stack trace](./media/dotnet-events-viewer-tp-stack-trace-top.png)
+:::image type="content" source="./media/dotnet-events-viewer-tp-stack-trace-top.png" lightbox="./media/dotnet-events-viewer-tp-stack-trace-top.png" alt-text="Top of a thread pool thread stack trace.":::
 
 ### Code fix
 

@@ -1,8 +1,8 @@
 ---
-title: "Chain of thought prompting"
+title: "Chain of Thought Prompting - .NET"
 description: "Learn how chain of thought prompting can simplify prompt engineering."
 author: catbutler
-ms.topic: concept-article
+ms.topic: concept-article #Don't change.
 ms.date: 11/24/2024
 
 #customer intent: As a .NET developer, I want to understand what chain-of-thought prompting is and how it can help me save time and get better completions out of prompt engineering.
@@ -23,7 +23,7 @@ To use an instruction for chain of thought prompting, include a directive that t
 
 ```csharp
 prompt= """Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles.
-Break the task into steps, and output the result of each step as you perform it.""";
+Break the task into steps, and output the result of each step as you perform it."""; 
 ```
 
 ## Use chain of thought prompting in examples
@@ -35,16 +35,16 @@ prompt= """
         Instructions: Compare the pros and cons of EVs and petroleum-fueled vehicles.
 
         Differences between EVs and petroleum-fueled vehicles:
-        -
+        - 
 
-        Differences ordered according to overall impact, highest-impact first:
-        1.
-
+        Differences ordered according to overall impact, highest-impact first: 
+        1. 
+        
         Summary of vehicle type differences as pros and cons:
         Pros of EVs
         1.
         Pros of petroleum-fueled vehicles
-        1.
+        1. 
         """;
 ```
 

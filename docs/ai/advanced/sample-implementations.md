@@ -13,8 +13,6 @@ ms.date: 05/28/2025
 
 The <xref:Microsoft.Extensions.AI.IChatClient> interface defines a client abstraction responsible for interacting with AI services that provide chat capabilities. It includes methods for sending and receiving messages with multi-modal content (such as text, images, and audio), either as a complete set or streamed incrementally. Additionally, it allows for retrieving strongly typed services provided by the client or its underlying services.
 
-.NET libraries that provide clients for language models and services can provide an implementation of the `IChatClient` interface. Any consumers of the interface are then able to interoperate seamlessly with these models and services via the abstractions.
-
 The following sample implements `IChatClient` to show the general structure.
 
 :::code language="csharp" source="./snippets/sample-implementations/SampleChatClient.cs":::

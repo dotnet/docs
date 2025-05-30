@@ -46,7 +46,7 @@ To learn more, see the following resources:
 
 * [How to bind arguments to handlers](model-binding.md)
 * [How to configure dependency injection](dependency-injection.md)
-* [How to configure help in System.CommandLine](Help.md)
+* [How to configure help in System.CommandLine](help.md)
 * [How to enable and customize tab completion](tab-completion.md)
 * [How to handle termination](handle-termination.md)
 * [System.CommandLine API reference](xref:System.CommandLine)

@@ -1,6 +1,7 @@
 ﻿// <all>
 using System.CommandLine;
 using System.CommandLine.Help;
+using System.CommandLine.Invocation;
 using Spectre.Console;
 
 class Program
@@ -8,8 +9,8 @@ class Program
     static void Main(string[] args)
     {
         Original(args);
-        First2Columns(args);
-        DescriptionSection(args);
+        AllowedValues(args);
+        Sections(args);
     }
 
     static void Original(string[] args)
@@ -35,26 +36,11 @@ class Program
             lightModeOption,
             foregroundColorOption
         };
-
-        rootCommand.SetAction(parseResult =>
-        {
-            if (parseResult.GetValue(fileOption) is FileInfo file)
-            {
-                Console.BackgroundColor = parseResult.GetValue(lightModeOption) ? ConsoleColor.White : ConsoleColor.Black;
-                Console.ForegroundColor = parseResult.GetValue(foregroundColorOption);
-
-                Console.WriteLine($"--file = {file.FullName}");
-                Console.WriteLine($"File contents:\n{file.OpenText().ReadToEnd()}");
-            }
-        });
-
-        rootCommand.Parse(args).Invoke();
+        rootCommand.Parse("-h").Invoke();
         // </original>
-        Console.WriteLine("Default help");
-        rootCommand.Parse("-h").Invoke();
     }
 
-    static void First2Columns(string[] args)
+    static void AllowedValues(string[] args)
     {
         Option<FileInfo> fileOption = new("--file")
         {
@@ -67,8 +53,18 @@ class Program
         Option<ConsoleColor> foregroundColorOption = new("--color")
         {
             Description = "Specifies the foreground color of console output",
-            DefaultValueFactory = _ => ConsoleColor.White
+            DefaultValueFactory = _ => ConsoleColor.White,
         };
+
+        // <allowedvalues>
+        fileOption.HelpName = "FILEPATH";
+        foregroundColorOption.AcceptOnlyFromAmong(
+            ConsoleColor.Black.ToString(),
+            ConsoleColor.White.ToString(),
+            ConsoleColor.Red.ToString(),
+            ConsoleColor.Yellow.ToString()
+        );
+        // </allowedvalues>
 
         RootCommand rootCommand = new("Read a file")
         {
@@ -76,54 +72,10 @@ class Program
             lightModeOption,
             foregroundColorOption
         };
-
-        rootCommand.SetAction(parseResult =>
-        {
-            if (parseResult.GetValue(fileOption) is FileInfo file)
-            {
-                Console.BackgroundColor = parseResult.GetValue(lightModeOption) ? ConsoleColor.White : ConsoleColor.Black;
-                Console.ForegroundColor = parseResult.GetValue(foregroundColorOption);
-
-                Console.WriteLine($"--file = {file.FullName}");
-                Console.WriteLine($"File contents:\n{file.OpenText().ReadToEnd()}");
-            }
-        });
-
-        // <first2columns>
-        fileOption.HelpName = "FILEPATH";
-
-        HelpBuilder helpBuilder = new();
-        helpBuilder.CustomizeSymbol(foregroundColorOption,
-            firstColumnText: "--color <Black, White, Red, or Yellow>",
-            secondColumnText: "Specifies the foreground color. " +
-                "Choose a color that provides enough contrast " +
-                "with the background color. " +
-                "For example, a yellow foreground can't be read " +
-                "against a light mode background.");
-
-        for (int i = 0; i < rootCommand.Options.Count; i++)
-        {
-            // RootCommand has a default HelpOption, we need to replace it.
-            if (rootCommand.Options[i] is HelpOption defaultHelpOption)
-            {
-                rootCommand.Options[i] = new HelpOption
-                {
-                    Action = new HelpAction
-                    {
-                        Builder = helpBuilder
-                    }
-                };
-                break;
-            }
-        }
-
-        rootCommand.Parse(args).Invoke();
-        // </first2columns>
-        Console.WriteLine("First two columns customized.");
         rootCommand.Parse("-h").Invoke();
     }
 
-    static void DescriptionSection(string[] args)
+    static void Sections(string[] args)
     {
         Option<FileInfo> fileOption = new("--file")
         {
@@ -136,71 +88,70 @@ class Program
         Option<ConsoleColor> foregroundColorOption = new("--color")
         {
             Description = "Specifies the foreground color of console output",
-            DefaultValueFactory = _ => ConsoleColor.White
+            DefaultValueFactory = _ => ConsoleColor.White,
         };
 
-        RootCommand rootCommand = new("Read a file")
-        {
-            fileOption,
-            lightModeOption,
-            foregroundColorOption
-        };
-
-        rootCommand.SetAction(parseResult =>
-        {
-            if (parseResult.GetValue(fileOption) is FileInfo file)
-            {
-                Console.BackgroundColor = parseResult.GetValue(lightModeOption) ? ConsoleColor.White : ConsoleColor.Black;
-                Console.ForegroundColor = parseResult.GetValue(foregroundColorOption);
-
-                Console.WriteLine($"--file = {file.FullName}");
-                Console.WriteLine($"File contents:\n{file.OpenText().ReadToEnd()}");
-            }
-        });
-
-        // <description>
         fileOption.HelpName = "FILEPATH";
-
-        HelpBuilder helpBuilder = new();
-        helpBuilder.CustomizeSymbol(foregroundColorOption,
-            firstColumnText: "--color <Black, White, Red, or Yellow>",
-            secondColumnText: "Specifies the foreground color. " +
-                "Choose a color that provides enough contrast " +
-                "with the background color. " +
-                "For example, a yellow foreground can't be read " +
-                "against a light mode background.");
-
-        helpBuilder.CustomizeLayout(_ =>
-            HelpBuilder.Default
-                .GetLayout()
-                .Skip(1) // Skip the default command description section.
-                .Prepend(_ =>
-                {
-                    Spectre.Console.AnsiConsole.Write(new FigletText(rootCommand.Description!));
-                    return true;
-                })
+        foregroundColorOption.AcceptOnlyFromAmong(
+            ConsoleColor.Black.ToString(),
+            ConsoleColor.White.ToString(),
+            ConsoleColor.Red.ToString(),
+            ConsoleColor.Yellow.ToString()
         );
 
+        RootCommand rootCommand = new("Read a file")
+        {
+            fileOption,
+            lightModeOption,
+            foregroundColorOption
+        };
+
+        rootCommand.SetAction(parseResult =>
+        {
+            if (parseResult.GetValue(fileOption) is FileInfo file)
+            {
+                Console.BackgroundColor = parseResult.GetValue(lightModeOption) ? ConsoleColor.White : ConsoleColor.Black;
+                Console.ForegroundColor = parseResult.GetValue(foregroundColorOption);
+
+                Console.WriteLine($"--file = {file.FullName}");
+                Console.WriteLine($"File contents:\n{file.OpenText().ReadToEnd()}");
+            }
+        });
+
+        // <setcustomaction>
         for (int i = 0; i < rootCommand.Options.Count; i++)
         {
-            // RootCommand has a default HelpOption, we need to replace it.
+            // RootCommand has a default HelpOption, we need to update its Action.
             if (rootCommand.Options[i] is HelpOption defaultHelpOption)
             {
-                rootCommand.Options[i] = new HelpOption
-                {
-                    Action = new HelpAction
-                    {
-                        Builder = helpBuilder
-                    }
-                };
+                defaultHelpOption.Action = new CustomHelpAction((HelpAction)defaultHelpOption.Action!);
                 break;
             }
         }
+        // </setcustomaction>
 
-        rootCommand.Parse(args).Invoke();
-        // </description>
-        Console.WriteLine("Description section customized");
         rootCommand.Parse("-h").Invoke();
     }
+
+    // <customaction>
+    internal class CustomHelpAction : SynchronousCommandLineAction
+    {
+        private readonly HelpAction _defaultHelp;
+
+        public CustomHelpAction(HelpAction action) => _defaultHelp = action;
+
+        public override int Invoke(ParseResult parseResult)
+        {
+            Spectre.Console.AnsiConsole.Write(new FigletText(parseResult.RootCommandResult.Command.Description!));
+
+            int result = _defaultHelp.Invoke(parseResult);
+
+            Spectre.Console.AnsiConsole.WriteLine("Sample usage: --file input.txt");
+
+            return result;
+
+        }
+    }
+    // </customaction>
 }
 // </all>

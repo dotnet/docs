@@ -12,29 +12,27 @@ ms.topic: how-to
 
 ## Help option
 
-Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides <xref:System.CommandLine.Help.HelpOption> that is by default included in the [RootCommand](syntax.md#root-command) options. It generates help output.
- For example:
+Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides <xref:System.CommandLine.Help.HelpOption> that is by default included in the [RootCommand](syntax.md#root-command) options. <xref:System.CommandLine.Help.HelpOption> generates help output for defined symbols by using the information exposed by <xref:System.CommandLine.Symbol.Name>, <xref:System.CommandLine.Symbol.HelpName>, <xref:System.CommandLine.Symbol.Description>, and other properties like default value or completion sources.
+
+:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="original" :::
 
 ```dotnetcli
-dotnet list --help
-```
-
-```output
 Description:
-  List references or packages of a .NET project.
+  Read a file
 
 Usage:
-  dotnet [options] list [<PROJECT | SOLUTION>] [command]
-
-Arguments:
-  <PROJECT | SOLUTION>  The project or solution file to operate on. If a file is not specified, the command will search the current directory for one.
+  scl [options]
 
 Options:
-  -?, -h, --help  Show command line help.
-
-Commands:
-  package    List all package references of the project or solution.
-  reference  List all project-to-project references of the project.
+  -?, -h, --help                                            Show help and usage information
+  --version                                                 Show version information
+  --file                                                    The file to print out.
+  --light-mode                                              Determines whether the background color will be black
+                                                            or white
+  --color                                                   Specifies the foreground color of console output
+  <Black|Blue|Cyan|DarkBlue|DarkCyan|DarkGray|DarkGreen|Da  [default: White]
+  rkMagenta|DarkRed|DarkYellow|Gray|Green|Magenta|Red|Whit
+  e|Yellow>
 ```
 
 App users might be accustomed to different ways to request help on different platforms, so apps built on `System.CommandLine` respond to many ways of requesting help. The following commands are all equivalent:
@@ -49,63 +47,17 @@ dotnet /?
 
 Help output doesn't necessarily show all available commands, arguments, and options. Some of them may be *hidden* via the <xref:System.CommandLine.Symbol.Hidden> property, which means they don't show up in help output (and completions) but they can be specified on the command line.
 
-## How to customize help in apps that are built with the System.Commandline library
+## Help customization
 
-You can customize help for a specific command, option, or argument, and you can add or replace whole help sections.
+ You can customize help output for commands by defining specific help text for each symbol, providing further clarity to users regarding their usage.
 
-The examples in this article work with the following command-line application:
+To customize the name of an option's argument, use the option's <xref:System.CommandLine.Option.HelpName> property.
 
-This code requires a `using` directive:
+In the sample app, `--light-mode` is explained adequately, but changes to the `--file` and `--color` option descriptions will be helpful. For `--file`, the argument can be identified as a `<FILEPATH>`. For the `--color` option, you can shorten the list of available colors.
 
-```csharp
-using System.CommandLine;
-```
+To make these changes, extend the previous code with the following code:
 
-:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="original" :::
-
-Without customization, the following help output is produced:
-
-```output
-Description:
-  Read a file
-
-Usage:
-  scl [options]
-
-Options:
-  --file <file>                                               The file to print out. [default: scl.runtimeconfig.json]
-  --light-mode                                                Determines whether the background color will be black or
-                                                              white
-  --color                                                     Specifies the foreground color of console output
-  <Black|Blue|Cyan|DarkBlue|DarkCyan|DarkGray|DarkGreen|Dark  [default: White]
-  Magenta|DarkRed|DarkYellow|Gray|Green|Magenta|Red|White|Ye
-  llow>
-  --version                                                   Show version information
-  -?, -h, --help                                              Show help and usage information
-```
-
-## Customize help for a single option or argument
-
-[!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
-
-To customize the name of an option's argument, use the option's <xref:System.CommandLine.Option.HelpName> property. And <xref:System.CommandLine.Help.HelpBuilder.CustomizeSymbol%2A?displayProperty=nameWithType> lets you customize several parts of the help output for a command, option, or argument (<xref:System.CommandLine.Symbol> is the base class for all three types). With `CustomizeSymbol`, you can specify:
-
-* The first column text.
-* The second column text.
-* The way a default value is described.
-
-In the sample app, `--light-mode` is explained adequately, but changes to the `--file` and `--color` option descriptions will be helpful. For `--file`, the argument can be identified as a `<FILEPATH>` instead of `<file>`. For the `--color` option, you can shorten the list of available colors in column one, and in column two you can add a warning that some colors won't work with some backgrounds.
-
-To make these changes, delete the `rootCommand.Parse(args).Invoke();` line shown in the preceding code and add in its place the following code:
-
-:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="first2columns" :::
-
-The updated code requires additional `using` directives:
-
-```csharp
-using System.CommandLine.Builder;
-using System.CommandLine.Help;
-```
+:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="allowedvalues" :::
 
 The app now produces the following help output:
 
@@ -117,32 +69,24 @@ Usage:
   scl [options]
 
 Options:
-  --file <FILEPATH>                       The file to print out. [default: CustomHelp.runtimeconfig.json]
-  --light-mode                            Determines whether the background color will be black or white
-  --color <Black, White, Red, or Yellow>  Specifies the foreground color. Choose a color that provides enough contrast
-                                          with the background color. For example, a yellow foreground can't be read
-                                          against a light mode background.
-  --version                               Show version information
-  -?, -h, --help                          Show help and usage information
+  -?, -h, --help                    Show help and usage information
+  --version                         Show version information
+  --file <FILEPATH>                 The file to print out.
+  --light-mode                      Determines whether the background color will be black or white
+  --color <Black|Red|White|Yellow>  Specifies the foreground color of console output [default: White]
 ```
 
-This output shows that the `firstColumnText` and `secondColumnText` parameters support word wrapping within their columns.
+## Add sections to help output
 
-## Add or replace help sections
+You can add first or last sections to the help output. For example, suppose you want to add some ASCII art to the description section by using the [Spectre.Console](https://www.nuget.org/packages/Spectre.Console/) NuGet package.
 
-You can add or replace a whole section of the help output. For example, suppose you want to add some ASCII art to the description section by using the [Spectre.Console](https://www.nuget.org/packages/Spectre.Console/) NuGet package.
+Define a custom action that performs some extra logic before and after calling the default `HelpAction`:
 
-Change the layout by adding a call to <xref:System.CommandLine.Help.HelpBuilder.CustomizeLayout%2A?displayProperty=nameWithType>:
+:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="customaction" :::
 
-:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="description" highlight="14-22" :::
+Update the `HelpAction` defined by `RootCommand` to use the custom action:
 
-The preceding code requires an additional `using` directive:
-
-```csharp
-using Spectre.Console;
-```
-
-The <xref:System.CommandLine.Help.HelpBuilder.Default?displayProperty=nameWithType> class lets you reuse pieces of existing help formatting functionality and compose them into your custom help.
+:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="setcustomaction" highlight="5" :::
 
 The help output now looks like this:
 
@@ -153,28 +97,20 @@ The help output now looks like this:
  |  _ <  |  __/ | (_| | | (_| |   | (_| |   |  _| | | | | |  __/
  |_| \_\  \___|  \__,_|  \__,_|    \__,_|   |_|   |_| |_|  \___|
 
+Description:
+  Read a file
 
 Usage:
   scl [options]
 
 Options:
-  --file <FILEPATH>                       The file to print out. [default: CustomHelp.runtimeconfig.json]
-  --light-mode                            Determines whether the background color will be black or white
-  --color <Black, White, Red, or Yellow>  Specifies the foreground color. Choose a color that provides enough contrast
-                                          with the background color. For example, a yellow foreground can't be read
-                                          against a light mode background.
-  --version                               Show version information
-  -?, -h, --help                          Show help and usage information
-```
+  -?, -h, --help                    Show help and usage information
+  --version                         Show version information
+  --file <FILEPATH>                 The file to print out.
+  --light-mode                      Determines whether the background color will be black or white
+  --color <Black|Red|White|Yellow>  Specifies the foreground color of console output [default: White]
 
-If you want to just use a string as the replacement section text instead of formatting it with `Spectre.Console`, replace the `Prepend` code in the preceding example with the following code:
-
-```csharp
-.Prepend(helpContext =>
-{
-    helpContext.Output.WriteLine("**New command description section**");
-    return true;
-})
+Sample usage: --file input.txt
 ```
 
 ## See also

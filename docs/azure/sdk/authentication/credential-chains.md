@@ -99,7 +99,7 @@ As more `Exclude`-prefixed properties are set to `true` (credential exclusions a
 
 #### Exclude a credential type category
 
-To exclude all developer tool or deployed service credentials, set environment variable `AZURE_TOKEN_CREDENTIALS` to `prod` or `dev`, respectively. When a value of `prod` is used, the underlying credential chain looks as follows:
+To exclude all `Developer tool` or `Deployed service` credentials, set environment variable `AZURE_TOKEN_CREDENTIALS` to `prod` or `dev`, respectively. When a value of `prod` is used, the underlying credential chain looks as follows:
 
 :::image type="content" source="../media/mermaidjs/DefaultAzureCredentialEnvVarProd.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'prod'":::
 

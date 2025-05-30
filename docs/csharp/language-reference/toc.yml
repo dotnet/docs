@@ -466,12 +466,12 @@ items:
       CS0171, CS0188, CS0843, CS8904, CS1738, CS8022, CS8023, CS8024, CS8025, CS8026, CS8058, CS8059, CS8107, CS8192, CS8302,
       CS8303, CS8304, CS8305, CS8306, CS8314, CS8320, CS8370, CS8371, CS8400, CS8401, CS8511, CS8627, CS8630, CS8652, CS8703,
       CS8704, CS8706, CS8773, CS8912, CS8919, CS8929, CS8936, CS8957, CS8967, CS9014, CS9015, CS9016, CS9017, CS9058, CS9064,
-      CS9103, CS9171, CS9194, CS9202, CS9204, CS9240, CS9260
+      CS9103, CS9171, CS9194, CS9202, CS9204, CS9240, CS9260, CS9268, CS9269, CS9271
   - name: Assembly references
     href: ./compiler-messages/assembly-references.md
     displayName: >
       CS0012, CS0234, CS0246, CS0400, CS1068, CS1069, CS1070, CS1704, CS1683, CS1714, CS1760, CS7008, CS7068, CS7069,
-      CS7071, CS7079, CS8090, CS8203
+      CS7071, CS7079, CS8090, CS8203, CS9286
   - name: Constructor declarations
     href: ./compiler-messages/constructor-errors.md
     displayName: >
@@ -503,6 +503,12 @@ items:
     displayName: >
       yield return, yield break,
       CS1622, CS1624, CS1625, CS1626, CS1627, CS1629, CS1631, CS1637, CS4013, CS8154, CS8176, CS9237, CS9238, CS9239
+  - name: Extension declarations
+    href: ./compiler-messages/extension-declarations.md
+    displayName: >
+      CS1100, CS1101, CS1102, CS1103, CS1105, CS1106, CS1109, CS1110, CS1113, CS1112, CS1100, CS1101, CS1102, CS1103,
+      CS1105, CS1106, CS1109, CS1110, CS1112, CS1113, CS1754, CS9281, CS9282, CS9283, CS9284, CS9285, CS9287, CS9288,
+      CS9289, CS9290, CS9292, CS9293, CS9295, CS9300, CS9301, CS9302, CS9303, CS9304, CS9305
   - name: Partial declarations
     href: ./compiler-messages/partial-declarations.md
     displayName: >
@@ -510,11 +516,12 @@ items:
       CS0260, CS0261, CS0262, CS0263, CS0264, CS0265, CS0267, CS0282, CS0501, CS0750, CS0751, CS0754, CS0755, CS0756, CS0757,
       CS0759, CS0761, CS0762, CS0763, CS0764, CS1067, CS8142, CS8663, CS8795, CS8796, CS8797, CS8798, CS8799, CS8800, CS8817,
       CS8818, CS8863, CS8988, CS9248, CS9249, CS9250, CS9251, CS9252, CS9253, CS9254, CS9255, CS9256, CS9257, CS9258, CS9263,
-      CS9264, CS9266
+      CS9264, CS9266, CS9273, CS9275, CS9276, CS9277, CS9278, CS9279, CS9280
   - name: Params modifier
     href: ./compiler-messages/params-arrays.md
     displayName: >
-      CS0225, CS0231, CS0466, CS0674, CS0758, CS1104, CS1611, CS1670, CS1751, CS9218, CS9223, CS9224, CS9225, CS9227, CS9228
+      CS0225, CS0231, CS0466, CS0674, CS0758, CS1104, CS1611, CS1670, CS1751, CS9218, CS9223, CS9224, CS9225, CS9227, CS9228,
+      CS9272
   - name: Nullable warnings
     href: ./compiler-messages/nullable-warnings.md
     displayName: >
@@ -525,6 +532,9 @@ items:
   - name: Pattern matching warnings
     href: ./compiler-messages/pattern-matching-warnings.md
     displayName: CS8509, CS9134, CS9135
+  - name: String literal declarations
+    href: ./compiler-messages/string-literal.md
+    displayName: CS9274
   - name: Array declarations
     href: ./compiler-messages/array-declaration-errors.md
     displayName: >
@@ -560,7 +570,7 @@ items:
     href: ./compiler-messages/source-generator-errors.md
     displayName: >
       CS9137, CS9138, CS9139, CS9140, CS9141, CS9142, CS9143, CS9144, CS9145, CS9146, CS9147, CS9148, CS9149, CS9150, CS9151,
-      CS9152, CS9153, CS9154, CS9155, CS9156, CS9157, CS9158, CS9159, CS9160, CS9161, CS9177, CS9178, CS9206, CS9207
+      CS9152, CS9153, CS9154, CS9155, CS9156, CS9157, CS9158, CS9159, CS9160, CS9161, CS9177, CS9178, CS9206, CS9207, CS9270
   - name: static abstract interface members
     href: ./compiler-messages/static-abstract-interfaces.md
     displayName: CS8920, CS8921, CS8922, CS8923, CS8924, CS8925, CS8926, CS8928, CS8930, 8931, 8932
@@ -1466,30 +1476,10 @@ items:
       href: ./compiler-messages/cs1061.md
     - name: CS1065
       href: ./compiler-messages/cs1065.md
-    - name: CS1100
-      href: ../misc/cs1100.md
-    - name: CS1101
-      href: ../misc/cs1101.md
-    - name: CS1102
-      href: ../misc/cs1102.md
-    - name: CS1103
-      href: ../misc/cs1103.md
-    - name: CS1105
-      href: ../misc/cs1105.md
-    - name: CS1106
-      href: ../misc/cs1106.md
     - name: CS1107
       href: ../misc/cs1107.md
     - name: CS1108
       href: ../misc/cs1108.md
-    - name: CS1109
-      href: ../misc/cs1109.md
-    - name: CS1110
-      href: ../misc/cs1110.md
-    - name: CS1112
-      href: ./compiler-messages/cs1112.md
-    - name: CS1113
-      href: ../misc/cs1113.md
     - name: CS1502
       href: ../misc/cs1503.md
     - name: CS1503

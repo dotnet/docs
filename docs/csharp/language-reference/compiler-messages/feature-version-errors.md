@@ -55,6 +55,9 @@ f1_keywords:
   - "CS9211"
   - "CS9240"
   - "CS9260"
+  - "CS9268"
+  - "CS9269"
+  - "CS9271"
 helpviewer_keywords:
   - "CS0171"
   - "CS0188"
@@ -109,7 +112,10 @@ helpviewer_keywords:
   - "CS9211"
   - "CS9240"
   - "CS9260"
-ms.date: 11/06/2024
+  - "CS9268"
+  - "CS9269"
+  - "CS9271"
+ms.date: 05/23/2025
 ---
 # Resolve warnings related to language features and versions
 
@@ -152,6 +158,9 @@ That's be design. The text closely matches the text of the compiler error / warn
 - **CS9211**: *The diagnosticId argument to the 'Experimental' attribute must be a valid identifier.*
 - **CS9240**: *Target runtime doesn't support by-ref-like generics.*
 - **CS9260**: *Feature is not available in C# 13.0. Please use newer language version**
+- **CS9268**: *Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.*
+- **CS9269**: *UnscopedRefAttribute is only valid in C# 11 or later or when targeting net7.0 or later.*
+- [**CS9271**](#implementation-specific-attributes): *The type '`Microsoft.CodeAnalysis.EmbeddedAttribute`' must be non-generic, internal, sealed, non-static, have a parameterless constructor, inherit from System.Attribute, and be able to be applied to any type.*
 
 In addition, the following errors and warnings relate to struct initialization changes in recent versions:
 
@@ -224,3 +233,9 @@ class Test
     }
 }
 ```
+
+## Implementation specific attributes
+
+- **CS9271**: *The type '`Microsoft.CodeAnalysis.EmbeddedAttribute`' must be non-generic, internal, sealed, non-static, have a parameterless constructor, inherit from System.Attribute, and be able to be applied to any type.*
+
+The compiler generates the source for this attribute when needed for your source code. You shouldn't declare this type.

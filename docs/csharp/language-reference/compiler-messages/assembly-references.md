@@ -20,6 +20,7 @@ f1_keywords:
  - "CS7079"
  - "CS8090"
  - "CS8203"
+ - "CS9286"
 helpviewer_keywords:
  - "CS0012"
  - "CS0234"
@@ -39,7 +40,8 @@ helpviewer_keywords:
  - "CS7079"
  - "CS8090"
  - "CS8203"
-ms.date: 02/28/2024
+ - "CS9286"
+ms.date: 05/27/2025
 ---
 # Resolve errors and warnings related to assembly references
 
@@ -64,6 +66,7 @@ That's by design. The text closely matches the text of the compiler error / warn
 - [**CS7079**](#invalid-assembly-reference): *The type is defined in a module that has not been added. You must add the module.*
 - [**CS8090**](#invalid-assembly-reference): *There is an error in a referenced assembly.*
 - [**CS8203**](#invalid-assembly-reference): *Invalid assembly name.*
+- [**CS9286**](#missing-references): *Type does not contain a definition and no accessible extension member for receiver type could be found (are you missing a using directive or an assembly reference?)*
 
 In addition, the following warnings are covered in this article:
 
@@ -76,6 +79,7 @@ The following errors and warnings indicate that you're missing an assembly refer
 - **CS0012**: *The type 'type' is defined in an assembly that is not referenced. You must add a reference to assembly 'assembly'.*
 - **CS0234**: *The type or namespace name does not exist in the namespace (are you missing an assembly reference?)*
 - **CS0246**: *The type or namespace name could not be found (are you missing a using directive or an assembly reference?)*
+- **CS9286**: *Type does not contain a definition and no accessible extension member for receiver type could be found (are you missing a using directive or an assembly reference?)*
 
 These compiler errors indicate one of these problems in your code:
 
@@ -83,6 +87,7 @@ These compiler errors indicate one of these problems in your code:
 - You misspelled the name of a type. Check the name of the type.
 - You used a variable name where the name of a <xref:System.Type?displayProperty=nameWithType> was expected, such as in the [`typeof` operator](../operators/type-testing-and-cast.md#the-typeof-operator) or the [`is` operator](../operators/type-testing-and-cast.md#the-is-operator).
 - You used the [global scope operator, (`::`)](../operators/namespace-alias-qualifier.md) when the type isn't in the global namespace.
+- You're accessing an extension member and either the namespace isn't specified in a `using` directive, or you're not referencing the assembly that contains the extension.
 
 ## Type forwarding
 

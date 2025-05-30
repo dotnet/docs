@@ -38,7 +38,7 @@ The following instructions provide the steps to create the test solution. See [C
 * Run the following command:
 
   ```dotnetcli
-  dotnet new classlib -o PrimeService --lang VB
+  dotnet new classlib -o PrimeService -lang VB
   ```
 
    The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
@@ -72,7 +72,7 @@ The following instructions provide the steps to create the test solution. See [C
 * Create the *PrimeService.Tests* project by running the following command:
 
   ```dotnetcli
-  dotnet new xunit -o PrimeService.Tests
+  dotnet new xunit -o PrimeService.Tests -lang VB
   ```
 
 * The preceding command:
@@ -108,7 +108,7 @@ cd unit-testing-using-dotnet-test
 dotnet new classlib -o PrimeService
 ren .\PrimeService\Class1.vb PrimeService.vb
 dotnet sln add ./PrimeService/PrimeService.vbproj
-dotnet new xunit -o PrimeService.Tests
+dotnet new xunit -o PrimeService.Tests -lang VB
 dotnet add ./PrimeService.Tests/PrimeService.Tests.vbproj reference ./PrimeService/PrimeService.vbproj
 dotnet sln add ./PrimeService.Tests/PrimeService.Tests.vbproj
 ```

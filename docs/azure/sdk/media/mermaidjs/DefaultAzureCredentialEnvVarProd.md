@@ -21,7 +21,7 @@ ms.date: 08/07/2024
 }%%
 
 flowchart LR;
-    accTitle: DefaultAzureCredential authentication flow optimized for production environments;
+    accTitle: DefaultAzureCredential authentication flow without developer tool credentials;
     accDescr: Flowchart showing the credential chain implemented by DefaultAzureCredential when AZURE_TOKEN_CREDENTIALS is set to "prod";
 
     A(Environment):::deployed --> B(Workload Identity):::deployed --> C(Managed Identity):::deployed;

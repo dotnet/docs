@@ -208,44 +208,16 @@ additionalContent:
       summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
       items:
         # Card
-        - title: Web
+        - title: Machine learning and AI
           links:
-            - url: /aspnet/core/tutorials
-              text: ASP.NET Core tutorials
-            - url: /aspnet/core
-              text: What is ASP.NET Core?
-            - url: /aspnet/core/tutorials/first-mvc-app/start-mvc
-              text: ASP.NET Core in Visual Studio
-            - url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
-              text: ASP.NET MVC apps in Windows containers
-            - url: /aspnet/core/blazor/
-              text: "Blazor: Interactive client-side web UI with .NET"
-            - url: ../fsharp/scenarios/web-development.md
-              text: F# for web development
-        # Card
-        - title: Mobile and Desktop
-          links:
-            - url: /dotnet/desktop/wpf/
-              text: Windows Presentation Foundation
-            - url: /dotnet/desktop/winforms/
-              text: Windows Forms
-            - url: /dotnet/maui
-              text: .NET Multi-platform App UI (.NET MAUI)
-            - url: /azure/developer/mobile-apps
-              text: Develop mobile apps with Azure
-        # Card
-        - title: Microservices
-          links:
-            - url: ../architecture/dapr-for-net-developers/index.md
-              text: Dapr for .NET developers
-            - url: ../architecture/cloud-native/index.md
-              text: Cloud native .NET apps
-            - url: ../architecture/serverless/index.md
-              text: Serverless apps with Azure
-            - url: ../architecture/microservices/index.md
-              text: Architecture for containerized .NET apps
-            - url: ../core/extensions/cloud-service.md
-              text: Deploy a Worker Service to Azure
+            - url: ../machine-learning/index.yml
+              text: Build custom AI solutions with ML.NET
+            - url: /azure/cognitive-services/
+              text: Azure Cognitive Services
+            - url: /azure/machine-learning
+              text: Azure Machine Learning
+            - url: ../fsharp/scenarios/machine-learning.md
+              text: F# for machine learning
         # Card
         - title: Cloud
           links:
@@ -264,16 +236,52 @@ additionalContent:
             - url: ../fsharp/using-fsharp-on-azure/deploying-and-managing.md
               text: Deploy Azure resources with F#
         # Card
-        - title: Machine learning and AI
+        - title: Web
           links:
-            - url: ../machine-learning/index.yml
-              text: Build custom AI solutions with ML.NET
-            - url: /azure/cognitive-services/
-              text: Azure Cognitive Services
-            - url: /azure/machine-learning
-              text: Azure Machine Learning
-            - url: ../fsharp/scenarios/machine-learning.md
-              text: F# for machine learning
+            - url: /aspnet/core/tutorials
+              text: ASP.NET Core tutorials
+            - url: /aspnet/core
+              text: What is ASP.NET Core?
+            - url: /aspnet/core/tutorials/first-mvc-app/start-mvc
+              text: ASP.NET Core in Visual Studio
+            - url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
+              text: ASP.NET MVC apps in Windows containers
+            - url: /aspnet/core/blazor/
+              text: "Blazor: Interactive client-side web UI with .NET"
+            - url: ../fsharp/scenarios/web-development.md
+              text: F# for web development
+        # Card
+        - title: Microservices
+          links:
+            - url: ../architecture/dapr-for-net-developers/index.md
+              text: Dapr for .NET developers
+            - url: ../architecture/cloud-native/index.md
+              text: Cloud native .NET apps
+            - url: ../architecture/serverless/index.md
+              text: Serverless apps with Azure
+            - url: ../architecture/microservices/index.md
+              text: Architecture for containerized .NET apps
+            - url: ../core/extensions/cloud-service.md
+              text: Deploy a Worker Service to Azure
+        # Card
+        - title: Mobile, Desktop and IoT
+          links:
+            - url: /dotnet/desktop/wpf/
+              text: Windows Presentation Foundation
+            - url: /dotnet/desktop/winforms/
+              text: Windows Forms
+            - url: /dotnet/maui
+              text: .NET Multi-platform App UI (.NET MAUI)
+            - url: /azure/developer/mobile-apps
+              text: Develop mobile apps with Azure
+            - url: ../iot/index.yml
+              text: .NET IoT libraries
+            - url: ../iot/quickstarts/sensehat.md
+              text: Get started in 5 minutes
+            - url: ../iot/tutorials/blink-led.md
+              text: Blink an LED
+            - url: https://aka.ms/dotnet/beginnervideos/youtube/iot
+              text: .NET IoT 101 video series
         # Card
         - title: Game development
           links:
@@ -285,17 +293,6 @@ additionalContent:
               text: Build games with C# using the MonoGame library
             - url: https://docs.unity3d.com/Manual/index.html
               text: Learn how to use Unity to build 2D and 3D games with C#
-        # Card
-        - title: Internet of things (IoT)
-          links:
-            - url: ../iot/index.yml
-              text: .NET IoT libraries
-            - url: ../iot/quickstarts/sensehat.md
-              text: Get started in 5 minutes
-            - url: ../iot/tutorials/blink-led.md
-              text: Blink an LED
-            - url: https://aka.ms/dotnet/beginnervideos/youtube/iot
-              text: .NET IoT 101 video series
 
     - title: API and language reference # < 60 chars (optional)
       summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
@@ -311,7 +308,7 @@ additionalContent:
         # Card
         - title: ".NET Aspire API reference"
           summary: Reference documentation for .NET Aspire
-          url: ../../api/index.md?view=dotnet-aspire-9.0&preserve-view=true
+          url: ../api/index.md?view=dotnet-aspire-9.0&preserve-view=true
         # Card
         - title: "ML.NET API reference"
           summary: API reference documentation for ML.NET

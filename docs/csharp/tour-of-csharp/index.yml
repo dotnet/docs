@@ -109,7 +109,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: C# language strategy
-            url: ../tour-of-csharp/strategy.md
+            url: ./strategy.md
           - text: "Programming concepts"
             url: ../programming-guide/concepts/index.md
       - linkListType: concept
@@ -121,11 +121,11 @@ landingContent:
       - linkListType: learn
         links:
           - text: Learn C# for Java developers
-            url: tour-of-csharp/tips-for-java-developers.md
+            url: ./tips-for-java-developers.md
           - text: Learn C# for JavaScript developers
-            url: tour-of-csharp/tips-for-javascript-developers.md
+            url: ./tips-for-javascript-developers.md
           - text: Learn C# for Python developers
-            url: tour-of-csharp/tips-for-python-developers.md
+            url: ./tips-for-python-developers.md
 
   - title: "Advanced concepts"
     linkLists:
@@ -147,26 +147,26 @@ landingContent:
       - linkListType: reference
         links:
           - text: "Language reference"
-            url: ./language-reference/index.yml
+            url: ../language-reference/index.yml
           - text: "Keywords"
-            url: ./language-reference/keywords/index.md
+            url: ../language-reference/keywords/index.md
           - text: "Operators and expressions"
-            url: ./language-reference/operators/index.md
+            url: ../language-reference/operators/index.md
           - text: Statements
-            url: ./language-reference/statements/index.md
+            url: ../language-reference/statements/index.md
           - text: "Tokens"
-            url: ./language-reference/tokens/index.md
+            url: ../language-reference/tokens/index.md
   
   - title: "C# language standard"
     linkLists:
       - linkListType: reference
         links:
           - text: "Overview"
-            url: ./specification/overview.md
+            url: ../specification/overview.md
           - text: "C# language specification"
             url: ../../../_csharpstandard/standard/README.md
           - text: "Feature specifications"
-            url: ./specification/feature-spec-overview.md
+            url: ../specification/feature-spec-overview.md
 
   - title: "Stay in touch"
     linkLists:

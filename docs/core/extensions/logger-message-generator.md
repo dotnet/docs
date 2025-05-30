@@ -422,7 +422,7 @@ The output should be like this:
 This approach ensures that only redacted data is logged, even when using compile-time generated logging APIs. You can use different redactors for different data types or classifications, and update your redaction logic centrally.
 
 For more details about how to classify your data, see [Data classification in .NET](data-classification.md).
-For more details about redaction and redactors, see [Data redaction in .NET](data-redaction.md) and [Data classification in .NET](data-classification.md).
+For more details about redaction and redactors, see [Data redaction in .NET](data-redaction.md).
 
 ## Summary
 

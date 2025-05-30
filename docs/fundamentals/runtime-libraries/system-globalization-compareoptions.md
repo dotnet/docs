@@ -2,7 +2,7 @@
 title: System.Globalization.CompareOptions enum
 description: Learn more about the System.Globalization.CompareOptions enum.
 ms.date: 12/28/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # <xref:System.Globalization.CompareOptions> enum
 

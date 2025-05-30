@@ -2,7 +2,7 @@
 title: System.Globalization.CultureInfo class
 description: Learn more about the System.Globalization.CultureInfo class.
 ms.date: 12/28/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # <xref:System.Globalization.CultureInfo> class
 

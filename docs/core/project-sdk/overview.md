@@ -3,7 +3,7 @@ title: .NET project SDK overview
 titleSuffix: ""
 description: Learn about the .NET project SDKs.
 ms.date: 10/15/2024
-ms.topic: conceptual
+ms.topic: concept-article
 no-loc: ["EmbeddedResource", "Compile", "None", "Blazor"]
 ---
 # .NET project SDKs

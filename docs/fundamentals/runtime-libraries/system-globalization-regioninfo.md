@@ -2,7 +2,7 @@
 title: System.Globalization.RegionInfo class
 description: Learn more about the System.Globalization.RegionInfo class.
 ms.date: 12/28/2023
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # <xref:System.Globalization.RegionInfo> class
 

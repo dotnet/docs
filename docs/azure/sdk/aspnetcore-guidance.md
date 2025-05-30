@@ -1,7 +1,7 @@
 ---
 title: Best practices for using the Azure SDK with ASP.NET Core
 description: Learn best practices and the steps to properly implement the Azure SDK for .NET in your ASP.NET Core apps.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: devx-track-dotnet
 ms.date: 10/22/2024
 ---

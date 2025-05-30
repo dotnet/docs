@@ -1,7 +1,7 @@
 ---
 title: ".NET Regular Expressions"
 description: Use regular expressions to find specific character patterns, validate text, work with text substrings, & add extracted strings to a collection in .NET.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: "07/26/2022"
 ms.custom: devdivchpfy22
 dev_langs: 

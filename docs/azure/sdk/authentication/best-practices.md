@@ -1,7 +1,7 @@
 ---
 title: Authentication best practices with the Azure Identity library for .NET
 description: This article describes authentication best practices to follow when using the Azure Identity library for .NET.
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 02/14/2025
 ---
 

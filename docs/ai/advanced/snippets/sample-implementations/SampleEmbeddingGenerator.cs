@@ -16,10 +16,10 @@ public sealed class SampleEmbeddingGenerator(
         await Task.Delay(100, cancellationToken);
 
         // Create random embeddings.
-        return new GeneratedEmbeddings<Embedding<float>>(
-            from value in values
+        return [.. from value in values
             select new Embedding<float>(
-                Enumerable.Range(0, 384).Select(_ => Random.Shared.NextSingle()).ToArray()));
+                Enumerable.Range(0, 384)
+                .Select(_ => Random.Shared.NextSingle()).ToArray())];
     }
 
     public object? GetService(Type serviceType, object? serviceKey) =>

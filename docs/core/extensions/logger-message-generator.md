@@ -379,8 +379,8 @@ To use redaction with source-generated logging methods, you should:
 
 1. Classify your sensitive data using a data classification system.
 2. Register and configure redactors for each classification in your DI container.
-3. Add `Microsoft.Extensions.Telemetry` to enable redaction in the logging pipeline.
-4. Redact sensitive values before passing them to the logger, or rely on the telemetry integration to do so automatically.
+3. Enable redaction in the logging pipeline.
+4. Check your logs to ensure no sensitive data is exposed.
 
 For example, if you have a log message that has a parameter that is considered private:
 

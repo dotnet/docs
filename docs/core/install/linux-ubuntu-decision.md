@@ -24,7 +24,6 @@ The following table is a list of currently supported .NET releases and the versi
 | [24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410)       | 9.0, 8.0                | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
 | [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 9.0, 8.0                | 8.0                                  | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
 | [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 9.0, 8.0                | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
-| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 9.0, 8.0                | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
 
@@ -79,9 +78,7 @@ If you're going to install the Microsoft repository to use other Microsoft packa
 
 ### I'm using a version of Ubuntu prior to 22.04
 
-Use the instructions on the version-specific Ubuntu page.
-
-- [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004)
+Use the instructions in the version-specific section of [Install .NET SDK or .NET Runtime on Ubuntu](linux-ubuntu-install.md?pivots=os-linux-ubuntu-other).
 
 Review the [Supported distributions](#supported-distributions) section for more information about what versions of .NET are supported for your version of Ubuntu. If you're installing a version that isn't supported, see [Register the Microsoft package repository](#register-the-microsoft-package-repository).
 

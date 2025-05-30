@@ -110,4 +110,5 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 ## Related content
 
+[Build a minimal MCP client](build-mcp-client.md)
 [Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)

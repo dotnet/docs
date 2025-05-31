@@ -15,23 +15,20 @@ Orleans automatically generates cancellation support when you add a `Cancellatio
 - Regular grain methods returning `Task` or `Task<T>`
 - Streaming methods returning `IAsyncEnumerable<T>`
 - Both client-to-grain and grain-to-grain calls
-- Cross-silo scenarios in distributed clusters
 
 The cancellation feature is cooperative, meaning your grain implementation must observe the token and respond appropriately.
 
 ## How cancellation works
 
-Orleans handles cancellation through a multi-step process:
+Orleans provides comprehensive support for cooperative cancellation. When you use a `CancellationToken` with a grain method, several aspects of the system work together to enable timely and efficient cancellation:
 
-1. **Pre-call validation**: If the token is already canceled when you make the call, the generated proxy throws <xref:System.OperationCanceledException> immediately without sending a request.
+-   **Client-side optimization**: Before a grain call is made, the Orleans-generated proxy checks if the provided `CancellationToken` is already canceled. If so, it immediately throws an <xref:System.OperationCanceledException> without sending a network request, saving resources.
 
-1. **Cancellation propagation**: Orleans tracks active `CancellationToken` instances and sends cancellation messages to target grains when cancellation is requested.
+-   **Runtime signal propagation**: If a call is in flight and its associated token is canceled, the Orleans runtime propagates a cancellation signal to the target grain activation. This ensures that the grain is notified even if it's already started processing.
 
-1. **Grain-side handling**: The grain method receives the cancellation signal and can respond by checking `cancellationToken.IsCancellationRequested` or calling `cancellationToken.ThrowIfCancellationRequested()`.
+-   **Grain implementation responsibility**: Inside your grain method, you are responsible for observing the `CancellationToken`. You can do this by periodically checking the `cancellationToken.IsCancellationRequested` property or by calling `cancellationToken.ThrowIfCancellationRequested()`. Responding to cancellation often involves cleaning up any resources and throwing an <xref:System.OperationCanceledException>.
 
-1. **Cleanup**: Canceled operations clean up resources and typically throw <xref:System.OperationCanceledException> to indicate the work was stopped.
-
-For streaming scenarios with `IAsyncEnumerable<T>`, cancellation stops enumeration and prevents further items from being yielded.
+-   **Streaming integration**: For grain methods returning `IAsyncEnumerable<T>`, cancellation is tightly integrated. If the token is canceled, it stops the enumeration and prevents further items from being yielded, typically resulting in an <xref:System.OperationCanceledException> on the consumer's side.
 
 ## Basic usage
 
@@ -243,6 +240,16 @@ public static class AsyncEnumerableExtensions
 ```
 
 This method creates a wrapper that passes the provided cancellation token to the underlying enumerable's `GetAsyncEnumerator(CancellationToken)` method. When combined with `[EnumeratorCancellation]`, both tokens (the one from the method parameter and the one from `WithCancellation`) are merged into a composite token that cancels when either source is canceled.
+
+## Backward compatibility
+
+One of the key advantages of Orleans's cancellation token support is its backward compatibility. You can modify your grain interfaces and implementations to include or remove `CancellationToken` parameters without breaking existing clients or other grains that call these methods.
+
+*   **Adding a `CancellationToken`**: You can add a `CancellationToken` parameter to an existing grain interface method. If an older client, compiled against the previous interface, calls this method without providing the token, the grain method will receive `CancellationToken.None` from the Orleans runtime. For C# source compatibility with existing grain *implementations* of the interface, it's recommended to define this new parameter as optional in the interface (e.g., `CancellationToken cancellationToken = default`). New callers can provide a specific token.
+
+*   **Removing a `CancellationToken`**: If you remove a `CancellationToken` parameter from a grain method, callers that were previously passing a token will still have their calls succeed. The Orleans runtime will simply ignore the extra token parameter that the caller is sending, and the grain method will execute without it. The caller might still observe its own token's cancellation and could potentially time out or throw an `OperationCanceledException` on the calling side if its token is canceled, but the grain method itself won't receive the token.
+
+This flexibility allows you to incrementally adopt cancellation in your Orleans applications without forcing a coordinated update across all components.
 
 ## Configuration
 

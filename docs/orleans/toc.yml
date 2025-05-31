@@ -32,6 +32,8 @@ items:
         href: grains/timers-and-reminders.md
       - name: Observers
         href: grains/observers.md
+      - name: Cancellation
+        href: grains/cancellation-tokens.md
       - name: Request scheduling
         href: grains/request-scheduling.md
       - name: Request context
@@ -78,8 +80,6 @@ items:
             href: grains/grainservices.md
           - name: Stateless worker grains
             href: grains/stateless-worker-grains.md
-          - name: Cancellation tokens
-            href: grains/cancellation-tokens.md
           - name: Transactions
             href: grains/transactions.md
           - name: One-way requests

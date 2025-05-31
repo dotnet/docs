@@ -226,21 +226,6 @@ catch (OperationCanceledException)
 }
 ```
 
-#### WithCancellation extension method
-
-The `WithCancellation` extension method is part of the .NET runtime and provides a way to pass a cancellation token to `GetAsyncEnumerator()` when you have an existing `IAsyncEnumerable<T>` instance:
-
-```csharp
-public static class AsyncEnumerableExtensions
-{
-    public static IAsyncEnumerable<T> WithCancellation<T>(
-        this IAsyncEnumerable<T> source, 
-        CancellationToken cancellationToken);
-}
-```
-
-This method creates a wrapper that passes the provided cancellation token to the underlying enumerable's `GetAsyncEnumerator(CancellationToken)` method. When combined with `[EnumeratorCancellation]`, both tokens (the one from the method parameter and the one from `WithCancellation`) are merged into a composite token that cancels when either source is canceled.
-
 ## Backward compatibility
 
 One of the key advantages of Orleans's cancellation token support is its backward compatibility. You can modify your grain interfaces and implementations to include or remove `CancellationToken` parameters without breaking existing clients or other grains that call these methods.

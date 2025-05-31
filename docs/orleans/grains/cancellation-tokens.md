@@ -470,19 +470,19 @@ A <xref:Orleans.GrainCancellationTokenSource> provides a `GrainCancellationToken
 
 To use the legacy `GrainCancellationToken`:
 
-1.  Instantiate a `GrainCancellationTokenSource` object. This object manages and sends cancellation notifications to individual grain cancellation tokens.
+1. Instantiate a `GrainCancellationTokenSource` object. This object manages and sends cancellation notifications to individual grain cancellation tokens.
 
     ```csharp
     var tcs = new GrainCancellationTokenSource();
     ```
 
-2.  Pass the token returned by the <xref:Orleans.GrainCancellationTokenSource.Token%2A?displayProperty=nameWithType> property to each grain method that should listen for cancellation.
+1. Pass the token returned by the <xref:Orleans.GrainCancellationTokenSource.Token%2A?displayProperty=nameWithType> property to each grain method that should listen for cancellation.
 
     ```csharp
     var waitTask = grain.LongIoWork(tcs.Token, TimeSpan.FromSeconds(10));
     ```
 
-3.  A cancellable grain operation needs to handle the underlying `CancellationToken` property of `GrainCancellationToken` just like in any other .NET code.
+1. A cancellable grain operation needs to handle the underlying `CancellationToken` property of `GrainCancellationToken` just like in any other .NET code.
 
     ```csharp
     public async Task LongIoWork(GrainCancellationToken tc, TimeSpan delay)
@@ -499,14 +499,14 @@ To use the legacy `GrainCancellationToken`:
     }
     ```
 
-4.  Call the `GrainCancellationTokenSource.Cancel()` method to initiate cancellation. This signals all `GrainCancellationToken` instances created from this source.
+1. Call the `GrainCancellationTokenSource.Cancel()` method to initiate cancellation. This signals all `GrainCancellationToken` instances created from this source.
 
     ```csharp
     // Request cancellation
     await tcs.Cancel();
     ```
 
-5.  Call the `GrainCancellationTokenSource.Dispose()` method when finished with the `GrainCancellationTokenSource` object to release its resources.
+1. Call the `GrainCancellationTokenSource.Dispose()` method when finished with the `GrainCancellationTokenSource` object to release its resources.
 
     ```csharp
     tcs.Dispose();

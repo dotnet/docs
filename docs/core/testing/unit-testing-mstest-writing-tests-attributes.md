@@ -3,7 +3,7 @@ title: MSTest attributes
 description: Learn about the various attributes of MSTest.
 author: Evangelink
 ms.author: amauryleve
-ms.date: 07/24/2024
+ms.date: 05/30/2025
 ---
 
 # MSTest attributes
@@ -73,7 +73,7 @@ Use the following elements to set up data-driven tests. For more information, se
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute>
 
 > [!TIP]
-> While combinatorial testing isn't directly supported by MSTest, an external [Combinatorial.MSTest NuGet packages](https://www.nuget.org/packages/Combinatorial.MSTest/) adds that support. The package is open source maintained on [Combinatorial.MSTest GitHub repository](https://github.com/Youssef1313/Combinatorial.MSTest). This package is not maintained by Microsoft.
+> MSTest doesn't natively support combinatorial testing, but you can add this capability using the open-source [Combinatorial.MSTest](https://www.nuget.org/packages/Combinatorial.MSTest) NuGet package. It's actively maintained by the [community and available on GitHub](https://github.com/Youssef1313/Combinatorial.MSTest). This package isn't maintained by Microsoft.
 
 ### `DataRowAttribute`
 

@@ -524,11 +524,11 @@ To use the legacy `GrainCancellationToken`:
 - <xref:System.OperationCanceledException>
 - <xref:System.Collections.Generic.IAsyncEnumerable`1>
 - <xref:System.Runtime.CompilerServices.EnumeratorCancellationAttribute>
-- <xref:Orleans.SiloMessagingOptions>
-- <xref:Orleans.ClientMessagingOptions>
-- [Cancellation in managed threads](https://learn.microsoft.com/dotnet/standard/threading/cancellation-in-managed-threads)
-- [Task cancellation](https://learn.microsoft.com/dotnet/standard/parallel-programming/task-cancellation)
-- [Async streams](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams)
+- <xref:Orleans.Configuration.SiloMessagingOptions>
+- <xref:Orleans.Configuration.ClientMessagingOptions>
+- [Cancellation in managed threads](/dotnet/standard/threading/cancellation-in-managed-threads)
+- [Task cancellation](/dotnet/standard/parallel-programming/task-cancellation)
+- [Async streams](/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams)
 - [Orleans timers and reminders](timers-and-reminders.md)
 - [Orleans streaming](../streaming/index.md)
 - [Orleans GitHub repository](<https://github.com/dotnet/orleans>)

@@ -72,6 +72,9 @@ Use the following elements to set up data-driven tests. For more information, se
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DynamicDataAttribute>
 
+> [!TIP]
+> While combinatorial testing isn't directly supported by MSTest, an external [Combinatorial.MSTest NuGet packages](https://www.nuget.org/packages/Combinatorial.MSTest/) adds that support. The package is open source maintained on [Combinatorial.MSTest GitHub repository](https://github.com/Youssef1313/Combinatorial.MSTest). This package is not maintained by Microsoft.
+
 ### `DataRowAttribute`
 
 The [DataRow](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute) attribute allows you to run the same test method with multiple different inputs. It can appear one or multiple times on a test method. It should be combined with the [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) attribute.

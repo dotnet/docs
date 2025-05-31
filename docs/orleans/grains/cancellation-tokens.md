@@ -127,7 +127,7 @@ catch (OperationCanceledException)
 }
 ```
 
-## Streaming with IAsyncEnumerable&lt;T&lt;
+## Streaming with IAsyncEnumerable&lt;T&gt;
 
 Cancellation is particularly useful for streaming scenarios where you might want to stop enumeration early. Orleans supports cancellation tokens in async enumerable grain methods.
 

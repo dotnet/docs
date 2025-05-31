@@ -22,13 +22,13 @@ The cancellation feature is cooperative, meaning your grain implementation must 
 
 Orleans provides comprehensive support for cooperative cancellation. When you use a `CancellationToken` with a grain method, several aspects of the system work together to enable timely and efficient cancellation:
 
--   **Client-side optimization**: Before a grain call is made, the Orleans-generated proxy checks if the provided `CancellationToken` is already canceled. If so, it immediately throws an <xref:System.OperationCanceledException> without sending a network request, saving resources.
+- **Client-side optimization**: Before a grain call is made, the Orleans-generated proxy checks if the provided `CancellationToken` is already canceled. If so, it immediately throws an <xref:System.OperationCanceledException> without sending a network request, saving resources.
 
--   **Runtime signal propagation**: If a call is in flight and its associated token is canceled, the Orleans runtime propagates a cancellation signal to the target grain activation. This ensures that the grain is notified even if it's already started processing.
+- **Runtime signal propagation**: If a call is in flight and its associated token is canceled, the Orleans runtime propagates a cancellation signal to the target grain activation. This ensures that the grain is notified even if it's already started processing.
 
--   **Grain implementation responsibility**: Inside your grain method, you are responsible for observing the `CancellationToken`. You can do this by periodically checking the `cancellationToken.IsCancellationRequested` property or by calling `cancellationToken.ThrowIfCancellationRequested()`. Responding to cancellation often involves cleaning up any resources and throwing an <xref:System.OperationCanceledException>.
+- **Grain implementation responsibility**: Inside your grain method, you are responsible for observing the `CancellationToken`. You can do this by periodically checking the `cancellationToken.IsCancellationRequested` property or by calling `cancellationToken.ThrowIfCancellationRequested()`. Responding to cancellation often involves cleaning up any resources and throwing an <xref:System.OperationCanceledException>.
 
--   **Streaming integration**: For grain methods returning `IAsyncEnumerable<T>`, cancellation is tightly integrated. If the token is canceled, it stops the enumeration and prevents further items from being yielded, typically resulting in an <xref:System.OperationCanceledException> on the consumer's side.
+- **Streaming integration**: For grain methods returning `IAsyncEnumerable<T>`, cancellation is tightly integrated. If the token is canceled, it stops the enumeration and prevents further items from being yielded, typically resulting in an <xref:System.OperationCanceledException> on the consumer's side.
 
 ## Basic usage
 
@@ -127,7 +127,7 @@ catch (OperationCanceledException)
 }
 ```
 
-## Streaming with IAsyncEnumerable<T>
+## Streaming with IAsyncEnumerable&lt;T&lt;
 
 Cancellation is particularly useful for streaming scenarios where you might want to stop enumeration early. Orleans supports cancellation tokens in async enumerable grain methods.
 
@@ -275,6 +275,7 @@ Orleans code generation enforces that only one `CancellationToken` parameter is 
 > The type `YourGrainInterface` contains method `YourMethod` which has multiple CancellationToken parameters. Only a single CancellationToken parameter is supported.
 
 **Incorrect:**
+
 ```csharp
 public interface IMyGrain : IGrainWithGuidKey
 {
@@ -284,6 +285,7 @@ public interface IMyGrain : IGrainWithGuidKey
 ```
 
 **Correct:**
+
 ```csharp
 public interface IMyGrain : IGrainWithGuidKey
 {
@@ -415,7 +417,7 @@ public async Task<ProcessingResult> ProcessWithFallbackAsync(
 
 When handling `OperationCanceledException`, always check if the cancellation is from the expected token using the `when` clause. This pattern distinguishes between expected cancellation (from your operation's token) and unexpected cancellation (from other sources).
 
-### IAsyncEnumerable<T> behavior
+### IAsyncEnumerable&lt;T&gt; behavior
 
 For streaming scenarios with `IAsyncEnumerable<T>`:
 

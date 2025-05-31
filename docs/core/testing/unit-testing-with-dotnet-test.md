@@ -90,12 +90,12 @@ To address the issues encountered when running `dotnet test` with MTP in VSTest 
 To enable this mode, add a `dotnet.config` file to the root of the repository or solution.
 
 ```ini
-[dotnet.test:runner]
+[dotnet.test.runner]
 name = "Microsoft.Testing.Platform"
 ```
 
-> [!NOTE]
-> The format will change from `dotnet.test:runner` to `dotnet.test.runner` in .NET 10 SDK Preview 4.
+> [!IMPORTANT]
+> The `dotnet test` experience for MTP is only supported in Microsoft.Testing.Platform version 1.7 and later.
 
 Since this mode is specifically designed for Microsoft.Testing.Platform, neither `TestingPlatformDotnetTestSupport` nor the additional `--` are required.
 

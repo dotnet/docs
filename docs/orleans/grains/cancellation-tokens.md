@@ -218,18 +218,6 @@ catch (OperationCanceledException)
 }
 ```
 
-## How cancellation works
-
-When you use a <xref:System.Threading.CancellationToken> with a grain method, several aspects of the system work together to enable timely and efficient cancellation:
-
-- **Client-side optimization**: 
-
-- **Runtime signal propagation**: If a call is in flight and its associated token is canceled, the Orleans runtime propagates a cancellation signal to the target grain activation. This ensures that the grain is notified even if it's already started processing.
-
-- **Grain implementation responsibility**: Inside your grain method, you are responsible for observing the <xref:System.Threading.CancellationToken>. You can do this by periodically checking the `cancellationToken.IsCancellationRequested` property or by calling `cancellationToken.ThrowIfCancellationRequested()`. Responding to cancellation often involves cleaning up any resources and throwing an <xref:System.OperationCanceledException>.
-
-- **Streaming integration**: For grain methods returning `IAsyncEnumerable<T>`, cancellation is tightly integrated. If the token is canceled, it stops the enumeration and prevents further items from being yielded, typically resulting in an <xref:System.OperationCanceledException> on the consumer's side.
-
 ## Backward compatibility
 
 One of the key advantages of Orleans's cancellation token support is its backward compatibility. You can modify your grain interfaces and implementations to include or remove <xref:System.Threading.CancellationToken> parameters without breaking existing clients or other grains that call these methods.
@@ -331,11 +319,7 @@ Orleans optimizes performance by batching cancellation requests when many cancel
 
 ### Callback execution context
 
-Callbacks registered on a <xref:System.Threading.CancellationToken> within a grain execute on the grain's scheduler. This ensures:
-
-- **Thread safety**: Callbacks run within Orleans' single-threaded grain execution model
-- **Consistency**: No additional synchronization is needed when accessing grain state from cancellation callbacks
-- **Performance**: Callbacks don't require context switching to different threads
+Callbacks registered on a <xref:System.Threading.CancellationToken> within a grain execute on the grain's scheduler. This lets you safely perform operations in the context of the grain from cancellation callbacks.
 
 ```csharp
 public async Task ExampleWithCancellationCallbackAsync(CancellationToken cancellationToken = default)

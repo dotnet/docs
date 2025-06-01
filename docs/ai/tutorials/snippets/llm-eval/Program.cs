@@ -1,1 +1,0 @@
-KernelFactoryExamples.Examples();

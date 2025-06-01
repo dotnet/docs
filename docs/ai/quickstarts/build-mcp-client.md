@@ -61,7 +61,7 @@ Replace the contents of `Program.cs` with the following code:
 
 The preceding code accomplishes the following tasks:
 
-- Initializes an `IChatClient` abstraction using the [`Microsoft.Extensions.AI`](/dotnet/ai/microsoft-extensions-ai) libraries.
+- Initializes an `IChatClient` abstraction using the [`Microsoft.Extensions.AI`](../microsoft-extensions-ai.md) libraries.
 - Creates an MCP client and configures it to connect to your MCP server.
 - Retrieves and displays a list of available tools from the MCP server, which is a standard MCP function.
 - Implements a conversational loop that processes user prompts and utilizes the tools for responses.

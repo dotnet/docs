@@ -112,7 +112,7 @@ For additional mutation types, see the [Stryker.NET: Mutations](https://stryker-
 
 ## Interpret mutation testing results
 
-After running Stryker.NET, you’ll receive a report that categorizes mutants as **killed**, **survived**, or **timeout**. Here's how to interpret and act on these results:
+After running Stryker.NET, you'll receive a report that categorizes mutants as **killed**, **survived**, or **timeout**. Here's how to interpret and act on these results:
 
 - **Killed Mutants**: These are changes that your tests successfully caught. A high number of killed mutants indicates that your test suite effectively detects logic errors.
 

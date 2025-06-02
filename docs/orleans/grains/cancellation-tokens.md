@@ -409,11 +409,11 @@ When handling `OperationCanceledException`, always check if the cancellation is 
 
 For streaming scenarios with `IAsyncEnumerable<T>`:
 
-- **Pre-enumeration cancellation**: If the token is canceled before enumeration starts, no items are yielded and an `OperationCanceledException` is thrown immediately
-- **Mid-enumeration cancellation**: If canceled during enumeration, the stream stops at the next cancellation check point (typically the next `yield` or `await` operation)
-- **Exception propagation**: An `OperationCanceledException` is thrown to the consumer when cancellation occurs
-- **Resource cleanup**: The async enumerator's `DisposeAsync()` method is called automatically by `await foreach` to clean up resources
-- **Partial results**: Items yielded before cancellation are preserved and delivered to the consumer
+- **Pre-enumeration cancellation**: If the token is canceled before enumeration starts, no items are yielded and an `OperationCanceledException` is thrown immediately.
+- **Mid-enumeration cancellation**: If canceled during enumeration, the stream stops at the next cancellation check point (typically the next `yield` or `await` operation).
+- **Exception propagation**: An `OperationCanceledException` is thrown to the consumer when cancellation occurs.
+- **Resource cleanup**: The async enumerator's `DisposeAsync()` method is called automatically by `await foreach` to clean up resources.
+- **Partial results**: Items yielded before cancellation are preserved and delivered to the consumer.
 
 #### Cancellation timing considerations
 

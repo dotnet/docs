@@ -118,7 +118,7 @@ After running Stryker.NET, you'll receive a report that categorizes mutants as *
 
 - **Survived**: These changes weren't caught by your tests. Review them to identify gaps in test coverage or assertions that are too weak. Focus on adding targeted unit tests that would fail if the mutant were real.
 
-- **Timeout Mutants**: These mutations caused your code to hang or exceed the allowed time. This can happen with infinite loops or unoptimized paths. Investigate the code logic or increase the timeout threshold if needed.
+- **Timeout**: These mutations caused your code to hang or exceed the allowed time. This can happen with infinite loops or unoptimized paths. Investigate the code logic or increase the timeout threshold if needed.
 
 > **Note**: Don't chase a 100% mutation score. Focus instead on high risk or business critical areas where undetected bugs would be most costly.
 

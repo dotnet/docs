@@ -360,9 +360,9 @@ await grain.LongRunningOperationAsync(cancellationToken);
 
 Cancellation works across silo boundaries in distributed Orleans clusters:
 
-- Client-to-grain calls can be canceled regardless of which silo hosts the grain
-- Grain-to-grain calls support cancellation even when grains are on different silos
-- Network partitions might delay cancellation signal delivery
+- Client-to-grain calls can be canceled regardless of which silo hosts the grain.
+- Grain-to-grain calls support cancellation even when grains are on different silos.
+- Network partitions might delay cancellation signal delivery.
 
 ### Error handling patterns
 

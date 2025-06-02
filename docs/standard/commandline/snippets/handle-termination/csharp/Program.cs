@@ -2,13 +2,13 @@
 
 class Program
 {
-    // <mainandhandler>
+    // <asyncaction>
     static Task<int> Main(string[] args)
     {
         Option<string> urlOption = new("--url", "A URL.");
         RootCommand rootCommand = new("Handle termination example") { urlOption };
 
-        rootCommand.SetAction((parseResult, cancellationToken) =>
+        rootCommand.SetAction((ParseResult parseResult, CancellationToken cancellationToken) =>
         {
             string? urlOptionValue = parseResult.GetValue(urlOption);
             return DoRootCommand(urlOptionValue, cancellationToken);
@@ -29,9 +29,9 @@ class Program
         }
         catch (OperationCanceledException)
         {
-            Console.Error.WriteLine("The operation was aborted");
+            await Console.Error.WriteLineAsync("The operation was aborted");
             return 1;
         }
     }
-    // </mainandhandler>
+    // </asyncaction>
 }

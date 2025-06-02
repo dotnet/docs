@@ -44,9 +44,10 @@ To get started with System.CommandLine, see the following resources:
 
 To learn more, see the following resources:
 
+* [How to parse and invoke the result](parse-and-invoke.md)
 * [How to bind arguments to handlers](model-binding.md)
-* [How to configure dependency injection](dependency-injection.md)
 * [How to configure help in System.CommandLine](help.md)
 * [How to enable and customize tab completion](tab-completion.md)
-* [How to handle termination](handle-termination.md)
+* [How to configure dependency injection](dependency-injection.md)
+* [Command-line design guidance](design-guidance.md)
 * [System.CommandLine API reference](xref:System.CommandLine)

@@ -5,6 +5,7 @@ class Program
     static void Main(string[] args)
     {
         IntAndString(args);
+        IntAndStringName(args);
         Enum(args);
         Arrays(args);
         FileSystemInfoExample(args);
@@ -33,21 +34,64 @@ class Program
             delayOption,
             messageOption
         };
+        // </intandstring>
 
         // <lambda>
         rootCommand.SetAction(parseResult =>
         {
-            DisplayIntAndString(parseResult.GetValue(delayOption), parseResult.GetValue(messageOption));
+            // <getvalue>
+            int integer = parseResult.GetValue(delayOption);
+            string? message = parseResult.GetValue(messageOption);
+            // </getvalue>
+
+            DisplayIntAndString(parseResult.GetValue(delayOption), message);
         });
         // </lambda>
 
-        rootCommand.Parse(args).Invoke();
-        // </intandstring>
+        // <invoke>
+        ParseResult parseResult = rootCommand.Parse(args);
+        int exitCode = parseResult.Invoke();
+        // </invoke>
+        rootCommand.Parse("--delay 42 --message \"Hello world!\"").Invoke();
+    }
+
+    static void IntAndStringName(string[] args)
+    {
+        // <collectioninitializersyntax>
+        RootCommand rootCommand = new("Parameter binding example")
+        {
+            new Option<int>("--delay")
+            {
+                Description = "An option whose argument is parsed as an int."
+            },
+            new Option<string>("--message")
+            {
+                Description = "An option whose argument is parsed as a string."
+            }
+        };
+        // </collectioninitializersyntax>
+
+        // <lambdanames>
+        rootCommand.SetAction(parseResult =>
+        {
+            // <getvaluebyname>
+            int integer = parseResult.GetValue<int>("--delay");
+            string? message = parseResult.GetValue<string>("--message");
+            // </getvaluebyname>
+
+            DisplayIntAndString(integer, message);
+        });
+        // </lambdanames>
+
+        // <invoke>
+        ParseResult parseResult = rootCommand.Parse(args);
+        int exitCode = parseResult.Invoke();
+        // </invoke>
         rootCommand.Parse("--delay 42 --message \"Hello world!\"").Invoke();
     }
 
     // <intandstringaction>
-    public static void DisplayIntAndString(int delayOptionValue, string messageOptionValue)
+    public static void DisplayIntAndString(int delayOptionValue, string? messageOptionValue)
     {
         Console.WriteLine($"--delay = {delayOptionValue}");
         Console.WriteLine($"--message = {messageOptionValue}");

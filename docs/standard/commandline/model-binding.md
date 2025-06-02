@@ -15,47 +15,33 @@ ms.topic: how-to
 
 The process of parsing arguments and providing them to command action code is called *parameter binding*. `System.CommandLine` has the ability to parse many argument types built in. For example, integers, enums, and file system objects such as <xref:System.IO.FileInfo> and <xref:System.IO.DirectoryInfo> can be parsed and exposed to the command action via `ParseResult` type.
 
-## Built-in argument validation
-
-Arguments have expected types and [arity](syntax.md#argument-arity). `System.CommandLine` rejects arguments that don't match these expectations.
-
-For example, a parse error is displayed if the argument for an integer option isn't an integer.
-
-```console
-myapp --delay not-an-int
-```
-
-```output
-Cannot parse argument 'not-an-int' as System.Int32.
-```
-
-An arity error is displayed if multiple arguments are passed to an option that has maximum arity of one:
-
-```console
-myapp --delay-option 1 --delay-option 2
-```
-
-```output
-Option '--delay' expects a single argument but 2 were provided.
-```
-
-This behavior can be overridden by setting <xref:System.CommandLine.Option.AllowMultipleArgumentsPerToken?displayProperty=nameWithType> to `true`. In that case you can repeat an option that has maximum arity of one, but only the last value on the line is accepted. In the following example, the value `three` would be passed to the app.
-
-```console
-myapp --item one --item two --item three
-```
-
 ## Explicit parameter binding
 
-The following example shows how to bind options to command action, by calling <xref:System.CommandLine.ParseResult.GetValue%2A>:
+Before we bind options and arguments to command actions, we need to define a command. The following example shows how to define a command with options and arguments:
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" highlight="13-16" :::
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstring" :::
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="intandstringaction" :::
-
-The lambda parameter is just the `ParseResult` are option and argument values are obtained via `GetValue` method call:
+Now we can bind options to command action, by calling `SetAction` method with a delegate that takes `ParseResult` as an argument and uses <xref:System.CommandLine.ParseResult.GetValue%2A> to obtain parsed values:
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="lambda" :::
+
+After the action is defined, we can parse the command line input and invoke the action:
+
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="invoke" :::
+
+### Getting values by name
+
+You can also get values by name, but this requires you to specify the type of the value you want to get.
+
+The following example uses C# collection initializers to create a root command:
+
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="collectioninitializersyntax" :::
+
+And then it uses the `GetValue` method to get the values by name:
+
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="lambdanames" :::
+
+This overload of `GetValue` gets the parsed or default value for the specified symbol name, in the context of parsed command (not entire symbol tree). It accepts the symbol name, not an [alias](syntax.md#aliases).
 
 ### Complex types
 
@@ -72,14 +58,6 @@ Just read the values and create an instance of `Person` in the command action:
 With the custom parser, you can get a custom type the same way you get primitive values:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="personoption" :::
-
-## Set exit codes
-
-There are `void` and <xref:System.Threading.Tasks.Task>-returning [Func](xref:System.Func%601) overloads of <xref:System.CommandLine.Command.SetAction%2A>. If your action is called from async code, you can return an `int` or a [`Task<int>`](xref:System.Threading.Tasks.Task%601) from the delegate that uses one of these, and just return the exit code, as in the following example:
-
-:::code language="csharp" source="snippets/model-binding/csharp/ReturnExitCode.cs" id="returnexitcode" :::
-
-The exit code defaults to 1. If you don't set it explicitly, its value is set to 0 when your action exits normally. If an exception is thrown, it keeps the default value.
 
 ## Supported types
 
@@ -156,27 +134,9 @@ Besides the file system types and `string`, the following types are supported:
 * `DateOnly`and `TimeOnly`
 * `Guid`
 
-### `CancellationToken`
-
-For information about how to use <xref:System.Threading.CancellationToken>, see [How to handle termination](handle-termination.md).
-
 ### `CommandLineConfiguration`
 
 <xref:System.CommandLine.CommandLineConfiguration> makes testing as well as many extensibility scenarios easier than using `System.Console`. It exposes two `TextWriter` properties: `Output` and `Error`. They can be set to any `TextWriter` instance, such as a `StringWriter`, which can be used to capture output for testing. An instance of `CommandLineConfiguration` can be obtained from `ParseResult`.
-
-### `ParseResult`
-
-The <xref:System.CommandLine.Parsing.ParseResult> object is available in the command action. It's a structure that represents the results of parsing the command line input. You can use it to check for the presence of options or arguments on the command line or to get the <xref:System.CommandLine.Parsing.ParseResult.UnmatchedTokens?displayProperty=nameWithType> property. This property contains a list of the [tokens](syntax.md#tokens) that were parsed but didn't match any configured command, option, or argument.
-
-The list of unmatched tokens is useful in commands that behave like wrappers. A wrapper command takes a set of [tokens](syntax.md#tokens) and forwards them to another command or app.  The `sudo` command in Linux is an example. It takes the name of a user to impersonate followed by a command to run. For example:
-
-```console
-sudo -u admin apt update
-```
-
-This command line would run the `apt update` command as the user `admin`.
-
-To implement a wrapper command like this one, set the command property <xref:System.CommandLine.Command.TreatUnmatchedTokensAsErrors> to `false`. Then the `ParseResult.UnmatchedTokens` property will contain all of the arguments that don't explicitly belong to the command. In the preceding example, `ParseResult.UnmatchedTokens` would contain the `apt` and `update` tokens. Your command action could then forward the `UnmatchedTokens` to a new shell invocation, for example.
 
 ## Custom validation and parsing
 

@@ -193,7 +193,7 @@ catch (OperationCanceledException)
 }
 ```
 
-#### Approach 2: Using WithCancellation extension method
+#### Approach 2: Using the `WithCancellation` extension method
 
 For scenarios where you have an existing `IAsyncEnumerable<T>` instance or need to override the cancellation token:
 

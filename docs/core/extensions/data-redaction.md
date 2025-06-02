@@ -191,8 +191,8 @@ Logging is a common source of accidental data exposure. Sensitive information su
 ### Steps for logging sensitive data
 
 1. **Install logging extensions package**: Install [Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry) to be able to use the extended logger to enable redaction feature.
-2. **Setup redaction**: Integrate redactors with your logging pipeline by calling <xref:Microsoft.Extensions.DependencyInjection.RedactionServiceCollectionExtensions.AddRedaction(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method, to automatically sanitize or mask sensitive fields before they are written to logs.
-3. **Identify sensitive fields**: Know which data in your application is sensitive and requires protection, mark them with appropriate data classification.
+2. **Set up redaction**: Integrate redactors with your logging pipeline by calling the <xref:Microsoft.Extensions.DependencyInjection.RedactionServiceCollectionExtensions.AddRedaction(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method, to automatically sanitize or mask sensitive fields before they are written to logs.
+3. **Identify sensitive fields**: Know which data in your application is sensitive and requires protection, and mark them with appropriate data classification.
 4. **Review log output**: Regularly audit your logs to ensure no sensitive data is exposed.
 
 ### Example: Redacting data in logs

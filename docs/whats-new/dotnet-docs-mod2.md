@@ -56,11 +56,6 @@ Welcome to what's new in the .NET docs for May 2025. This article lists some of 
 - [Errors and warnings related to extension methods declared with `this` parameters or `extension` blocks](../csharp/language-reference/compiler-messages/extension-declarations.md)
 - [Match data against patterns](../csharp/tour-of-csharp/tutorials/pattern-matching.md)
 
-## Azure SDK for .NET
-
-### New articles
-
-
 ## Community contributors
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).

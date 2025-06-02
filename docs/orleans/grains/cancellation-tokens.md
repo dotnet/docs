@@ -446,7 +446,7 @@ public async IAsyncEnumerable<DataPoint> StreamDataAsync(
 
 Prior to the direct support for `System.Threading.CancellationToken` in grain methods, Orleans provided a specific mechanism using `GrainCancellationToken` and `GrainCancellationTokenSource`. **This approach is now considered legacy, and `System.Threading.CancellationToken` is the recommended method for implementing cancellation in Orleans grains.**
 
-The information below is provided for context on older systems or for specific backward compatibility needs. For new development, please refer to the <xref:System.Threading.CancellationToken> usage described earlier in this article.
+The following information is provided for context on older systems or for specific backward compatibility needs. For new development, see the <xref:System.Threading.CancellationToken> usage described earlier in this article.
 
 ### Overview of GrainCancellationToken
 

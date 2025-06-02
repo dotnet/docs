@@ -163,7 +163,7 @@ public record DataPoint(int Index, double Value);
 
 ### Consuming the stream
 
-When consuming async enumerables, you have two approaches for passing cancellation tokens:
+When you consume async enumerables, you have two approaches for passing cancellation tokens: [Direct method call with cancellation](#approach-1-direct-method-call-with-cancellation) and [using the WithCancellation extension method](#approach-2-using-the-withcancellation-extension-method).
 
 #### Approach 1: Direct method call with cancellation
 

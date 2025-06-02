@@ -343,9 +343,9 @@ public async Task ExampleWithCancellationCallbackAsync(CancellationToken cancell
 
 Cancellation in Orleans is cooperative, which means:
 
-- The grain method must actively check the <xref:System.Threading.CancellationToken> and respond to cancellation requests
-- Simply passing a canceled token doesn't automatically stop a running operation
-- For best results, check cancellation at regular intervals during long-running work
+- The grain method must actively check the <xref:System.Threading.CancellationToken> and respond to cancellation requests.
+- Simply passing a canceled token doesn't automatically stop a running operation.
+- For best results, check cancellation at regular intervals during long-running work.
 
 ### Timeout integration
 

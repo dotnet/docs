@@ -26,6 +26,8 @@ items:
         href: grains/grain-identity.md
       - name: Grain placement
         href: grains/grain-placement.md
+      - name: Grain placement filtering
+        href: grains/grain-placement-filtering.md
       - name: Grain extensions
         href: grains/grain-extensions.md
       - name: Timers and reminders
@@ -138,6 +140,8 @@ items:
             href: host/configuration-guide/typical-configurations.md
           - name: Options classes
             href: host/configuration-guide/list-of-options-classes.md
+          - name: Silo metadata
+            href: host/configuration-guide/silo-metadata.md
           - name: Activation collection
             href: host/configuration-guide/activation-collection.md
           - name: Configure .NET garbage collection

@@ -16,7 +16,7 @@ Orleans supports passing <xref:System.Threading.CancellationToken> instances to 
 - Streaming methods that return `IAsyncEnumerable<T>`
 - Both client-to-grain and grain-to-grain calls
 
-Cancellation is cooperative, meaning your grain implementation must observe the token and respond appropriately for it to be effective. If a cancellation token is not observed, the runtime will not automatically stop a method from executing. This is behavior is consistent with the majority of libraries which support <xref:System.Threading.CancellationToken>. In other words, .NET uses cooperative cancellation. The major benefit of this approach is that cancellation can only occur at clearly identifiable points, not at any given instruction. This lets you run cleanup logic when cancellation is signalled.
+Cancellation is cooperative, meaning your grain implementation must observe the token and respond appropriately for it to be effective. If a cancellation token is not observed, the runtime will not automatically stop a method from executing. This behavior is consistent with the majority of libraries that support <xref:System.Threading.CancellationToken>. In other words, .NET uses cooperative cancellation. The major benefit of this approach is that cancellation can only occur at clearly identifiable points, not at any given instruction. This lets you run cleanup logic when cancellation is signalled.
 
 Before a grain call is made, the runtime checks if the provided <xref:System.Threading.CancellationToken> is already canceled. If so, it immediately throws an <xref:System.OperationCanceledException> without issuing the request. Similarly, if an enqueued request is canceled before a grain begins executing it, it is cancelled without being executed.
 

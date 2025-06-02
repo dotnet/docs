@@ -110,7 +110,7 @@ Stryker supports several types of mutations:
 
 For additional mutation types, see the [Stryker.NET: Mutations](https://stryker-mutator.io/docs/stryker-net/mutations) documentation.
 
-## Interpreting Mutation Testing Results
+## Interpret mutation testing results
 
 After running Stryker.NET, you’ll receive a report that categorizes mutants as **killed**, **survived**, or **timeout**. Here's how to interpret and act on these results:
 

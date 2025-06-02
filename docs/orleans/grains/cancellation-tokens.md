@@ -289,8 +289,8 @@ public interface IMyGrain : IGrainWithGuidKey
 
 Orleans provides metrics to help you monitor cancellation behavior in your application:
 
-- **`orleans-app-requests-canceled`**: Tracks the number of canceled requests
-- Monitor this metric to understand cancellation patterns and identify potential issues
+- **`orleans-app-requests-canceled`**: Tracks the number of canceled requests.
+- Monitor this metric to understand cancellation patterns and identify potential issues.
 
 ```csharp
 // Example: Custom logging for cancellation tracking

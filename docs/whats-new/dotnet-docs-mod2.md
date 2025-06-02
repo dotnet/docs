@@ -33,13 +33,13 @@ Welcome to what's new in the .NET docs for May 2025. This article lists some of 
 
 ### New articles
 
-- [.NET runtime wait handle events](../fundamentals/diagnostics/runtime-wait-handle-events.md)
 - [GitHub Copilot app modernization - upgrade for .NET FAQ](../core/porting/github-copilot-app-modernization-faq.yml)
-- [Implement with Copilot (IDE3000)](../fundamentals/code-analysis/style-rules/ide3000.md)
 - [Install GitHub Copilot app modernization - upgrade for .NET](../core/porting/github-copilot-app-modernization-install.md)
+- [What is GitHub Copilot app modernization - upgrade for .NET?](../core/porting/github-copilot-app-modernization-overview.md)
 - [Log buffering in .NET](../core/extensions/log-buffering.md)
 - [Log sampling in .NET](../core/extensions/log-sampling.md)
-- [What is GitHub Copilot app modernization - upgrade for .NET?](../core/porting/github-copilot-app-modernization-overview.md)
+- [Implement with Copilot (IDE3000)](../fundamentals/code-analysis/style-rules/ide3000.md)
+- [.NET runtime wait handle events](../fundamentals/diagnostics/runtime-wait-handle-events.md)
 
 ### Updated articles
 
@@ -60,7 +60,6 @@ Welcome to what's new in the .NET docs for May 2025. This article lists some of 
 
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
-- [CamSoper](https://github.com/CamSoper) - Cam Soper ![3 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-3-green)
 - [BartoszKlonowski](https://github.com/BartoszKlonowski) - Bartosz Klonowski ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [copilot-swe-agent](https://github.com/copilot-swe-agent) -  ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)
 - [Rageking8](https://github.com/Rageking8) -  ![2 pull requests.](https://img.shields.io/badge/Merged%20Pull%20Requests-2-green)

@@ -27,7 +27,7 @@ The execution of the lifecycle events occurs from the highest level (assembly) t
 ## Assembly-level Lifecycle
 
 The assembly lifecycle describes the lifecycle of the entire assembly, which includes all test classes and methods.
-To manage the assembly lifecycle, MSTest provides the `AssemblyInitialize` and `AssemblyCleanup` attributes.
+To manage the assembly lifecycle, MSTest provides the [AssemblyInitialize](xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyInitializeAttribute) and [AssemblyCleanup](xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssemblyCleanupAttribute) attributes.
 To learn more about these attributes, refer to the [AssemblyInitialize and AssemblyCleanup](./unit-testing-mstest-writing-tests-attributes.md#assembly-level) documentation.
 
 ## Class-level Lifecycle
@@ -54,7 +54,7 @@ The setup phase of the test level lifecycle is responsible for preparing the tes
 The execution phase is the phase where the actual test method is executed. If a test method returns a Task or ValueTask, the test method will be awaited.
 
 > [!WARNING]
-> In the case of asynchronous test methods, no SynchronizationContext is provided. This means any async code is being run on a ThreadPool thread, and not on the main thread resulting in undefined execution order of async code.
+> In the case of asynchronous test methods, no [SynchronizationContext](xref:system.threading.synchronizationcontext) is provided. This means any async code is being run on a ThreadPool thread, and not on the main thread. This does not apply to `UITestMethod` tests for UWP and WinUI as they run on the UI thread which has a [SynchronizationContext](xref:system.threading.synchronizationcontext).
 
 #### Cleanup
 

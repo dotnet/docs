@@ -1,7 +1,7 @@
 ---
 title: "How to parse and invoke the result"
 description: "Learn how to get parsed values and define actions for your commands."
-ms.date: 04/07/2022
+ms.date: 16/06/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "System.CommandLine"
 ---
 
-# Parsing and invocation
+# Parsing and invocation in System.CommandLine
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
@@ -37,9 +37,17 @@ The <xref:System.CommandLine.Parsing.ParseResult.GetValue%2A> method allows you 
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="getvalue" :::
 
-You can also get values by name, but this requires you to specify the type of the value you want to get:
+You can also get values by name, but this requires you to specify the type of the value you want to get.
 
-:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="getvaluebyname" :::
+The following example uses C# collection initializers to create a root command:
+
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="collectioninitializersyntax" :::
+
+And then it uses the `GetValue` method to get the values by name:
+
+:::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="lambdanames" :::
+
+This overload of `GetValue` gets the parsed or default value for the specified symbol name, in the context of parsed command (not entire symbol tree). It accepts the symbol name, not an [alias](syntax.md#aliases).
 
 ### Parse errors
 
@@ -108,3 +116,8 @@ The exit code is an integer value returned by an action indicating its success o
 Every `SetAction` method has an overload that accepts a delegate returning an `int` exit code where the exit code needs to be provided in explicit way and an overload that returns `0`.
 
 :::code language="csharp" source="snippets/model-binding/csharp/ReturnExitCode.cs" id="returnexitcode" :::
+
+## See also
+
+[How to customize parsing and validation in System.CommandLine](parsing-and-validation.md)
+[System.CommandLine overview](index.md)

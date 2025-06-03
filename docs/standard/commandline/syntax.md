@@ -475,8 +475,8 @@ msbuild
 
 ## See also
 
+* [Design guidance](design-guidance.md)
 * [Open-source CLI design guidance](https://clig.dev/)
 * [GNU standards](https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html)
 * [System.CommandLine overview](index.md)
 * [Tutorial: Get started with System.CommandLine](get-started-tutorial.md)
-* [Design guidance](design-guidance.md)

@@ -1,7 +1,7 @@
 ---
 title: How to customize parsing and validation in System.CommandLine
-description: "Learn how to customize parsing and validation with the System.Commandline library."
 ms.date: 06/16/2025
+description: "Learn how to customize parsing and validation with the System.CommandLine library."
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "System.CommandLine"
 ms.topic: how-to
 ---
+
 # How to customize parsing and validation in System.CommandLine
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
@@ -54,11 +55,11 @@ Suppose you have a `Person` type:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="persontype" :::
 
-You can just read the values and create an instance of `Person` in the command action:
+You can read the values and create an instance of `Person` in the command action:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ComplexType.cs" id="setaction" :::
 
-With the custom parser, you can get a custom type the same way you get primitive values:
+With a custom parser, you can get a custom type the same way you get primitive values:
 
 :::code language="csharp" source="snippets/model-binding/csharp/ParseArgument.cs" id="personoption" :::
 
@@ -68,11 +69,10 @@ If you want to parse as well as validate the input, use the `CustomParser` deleg
 
 Here are some examples of what you can do with `CustomParser` that you can't do with a validator:
 
-* Parsing of other kinds of input strings (for example, parse "1,2,3" into `int[]`).
-
-* Dynamic arity. For example, you have two arguments that are defined as string arrays, and you have to handle a sequence of strings in the command line input. The <xref:System.CommandLine.Parsing.ArgumentResult.OnlyTake%2A?displayProperty=nameWithType> method enables you to dynamically divide up the input strings between the arguments.
+* Parse other kinds of input strings (for example, parse "1,2,3" into `int[]`).
+* Dynamic arity. For example, if you have two arguments that are defined as string arrays, and you have to handle a sequence of strings in the command-line input, the <xref:System.CommandLine.Parsing.ArgumentResult.OnlyTake%2A?displayProperty=nameWithType> method enables you to dynamically divide up the input strings between the arguments.
 
 ## See also
 
-[How to parse and invoke the result](parse-and-invoke.md)
-[System.CommandLine overview](index.md)
+- [How to parse and invoke the result](parse-and-invoke.md)
+- [System.CommandLine overview](index.md)

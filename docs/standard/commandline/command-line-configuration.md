@@ -14,21 +14,21 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-<xref:System.CommandLine.CommandLineConfiguration> is a class that provides properties to configure the parser. It's an optional argument for every `Parse` method such as <xref:System.CommandLine.Command.Parse> or <xref:System.CommandLine.Parsing.CommandLineParser.Parse>. When it's not provided, default configuration is used. 
+<xref:System.CommandLine.CommandLineConfiguration> is a class that provides properties to configure the parser. It is an optional argument for every `Parse` method, such as <xref:System.CommandLine.Command.Parse> or <xref:System.CommandLine.Parsing.CommandLineParser.Parse>. When it is not provided, the default configuration is used.
 
 Every <xref:System.CommandLine.ParseResult> instance has a <xref:System.CommandLine.ParseResult.Configuration> property that returns the configuration used for parsing.
 
 ## Standard output and error
 
-<xref:System.CommandLine.CommandLineConfiguration> makes testing as well as many extensibility scenarios easier than using `System.Console`. It exposes two `TextWriter` properties: `Output` and `Error`. They can be set to any `TextWriter` instance, such as a `StringWriter`, which can be used to capture output for testing.
+<xref:System.CommandLine.CommandLineConfiguration> makes testing, as well as many extensibility scenarios, easier than using `System.Console`. It exposes two `TextWriter` properties: `Output` and `Error`. These can be set to any `TextWriter` instance, such as a `StringWriter`, which can be used to capture output for testing.
 
 Let's define a simple command that writes to standard output:
 
-:::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="setaction" :::
+:::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="setaction":::
 
-And let's use `CommandLineConfiguration` to capture the output:
+Now, let's use `CommandLineConfiguration` to capture the output:
 
-:::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="captureoutput" :::
+:::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="captureoutput":::
 
 ## EnablePosixBundling
 
@@ -44,7 +44,7 @@ And let's use `CommandLineConfiguration` to capture the output:
 
 ## EnableDefaultExceptionHandler
 
-By default, all unhandled exceptions thrown during invocation of a command are caught and reported to the user. This behavior can be disabled by setting the <xref:System.CommandLine.CommandLineConfiguration.EnableDefaultExceptionHandler> property to `false`. This is useful when you want to handle exceptions in a custom way, such as logging them or providing a different user experience.
+By default, all unhandled exceptions thrown during the invocation of a command are caught and reported to the user. This behavior can be disabled by setting the <xref:System.CommandLine.CommandLineConfiguration.EnableDefaultExceptionHandler> property to `false`. This is useful when you want to handle exceptions in a custom way, such as logging them or providing a different user experience.
 
 ## Derived classes
 
@@ -52,4 +52,4 @@ By default, all unhandled exceptions thrown during invocation of a command are c
 
 ## See also
 
-[System.CommandLine overview](index.md)
+- [System.CommandLine overview](index.md)

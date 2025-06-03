@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-This tutorial shows how to create a .NET command-line app that uses the [`System.CommandLine` library](index.md). You'll begin by creating a simple root command that has one option. Then you'll add to that base, creating a more complex app that contains multiple subcommands and different options for each command.
+This tutorial shows how to create a .NET command-line app that uses the [`System.CommandLine` library](index.md). You'll begin by creating a simple root command that has one option. Then you'll build on that base, creating a more complex app that contains multiple subcommands and different options for each command.
 
 In this tutorial, you learn how to:
 
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 > * Assign an option recursively to all subcommands under a command.
 > * Work with multiple levels of nested subcommands.
 > * Create aliases for commands and options.
-> * Work with `string`, `string[]`, `int`, `bool`, `FileInfo` and enum option types.
+> * Work with `string`, `string[]`, `int`, `bool`, `FileInfo`, and enum option types.
 > * Read option values in command action code.
 > * Use custom code for parsing and validating options.
 

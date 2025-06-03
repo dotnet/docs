@@ -13,21 +13,21 @@ ms.topic: conceptual
 
 The following sections present guidance that we recommend you follow when designing a CLI. Think of what your app expects on the command line as similar to what a REST API server expects in the URL. Consistent rules for REST APIs are what make them readily usable to client app developers. In the same way, users of your command-line apps will have a better experience if the CLI design follows common patterns.
 
-Once you create a CLI it is hard to change, especially if your users have used your CLI in scripts they expect to keep running. The guidelines here were developed after the .NET CLI, and it doesn't always follow these guidelines. We are updating the .NET CLI where we can do it without introducing breaking changes. An example of this work is the new design for `dotnet new` in .NET 7.
+Once you create a CLI, it is hard to change, especially if your users have used your CLI in scripts they expect to keep running. The guidelines here were developed after the .NET CLI, and it doesn't always follow these guidelines. We are updating the .NET CLI where we can do so without introducing breaking changes. An example of this work is the new design for `dotnet new` in .NET 7.
 
 ## Symbols
 
 ### Commands and subcommands
 
-If a command has subcommands, the command should function as an area, or a grouping identifier for the subcommands, rather than specify an action. When you invoke the app, you specify the grouping command and one of its subcommands. For example, try to run `dotnet tool`, and you get an error message because the `tool` command only identifies a group of tool-related subcommands, such as `install` and `list`. You can run `dotnet tool install`, but `dotnet tool` by itself would be incomplete.
+If a command has subcommands, the command should function as an area or a grouping identifier for the subcommands, rather than specify an action. When you invoke the app, you specify the grouping command and one of its subcommands. For example, try to run `dotnet tool`, and you get an error message because the `tool` command only identifies a group of tool-related subcommands, such as `install` and `list`. You can run `dotnet tool install`, but `dotnet tool` by itself would be incomplete.
 
 One of the ways that defining areas helps your users is that it organizes the help output.
 
-Within a CLI there is often an implicit area. For example, in the .NET CLI, the implicit area is the project and in the Docker CLI it is the image. As a result, you can use `dotnet build` without including an area. Consider whether your CLI has an implicit area. If it does, consider whether to allow the user to optionally include or omit it as in `docker build` and `docker image build`. If you optionally allow the implicit area to be typed by your user, you also automatically have help and tab completion for this grouping of commands. Supply the optional use of the implicit group by defining two commands that perform the same operation.
+Within a CLI, there is often an implicit area. For example, in the .NET CLI, the implicit area is the project, and in the Docker CLI, it is the image. As a result, you can use `dotnet build` without including an area. Consider whether your CLI has an implicit area. If it does, consider whether to allow the user to optionally include or omit it, as in `docker build` and `docker image build`. If you optionally allow the implicit area to be typed by your user, you also automatically have help and tab completion for this grouping of commands. Supply the optional use of the implicit group by defining two commands that perform the same operation.
 
 ### Options as parameters
 
-Options should provide parameters to commands, rather than specifying actions themselves. This is a recommended design principle although it isn't always followed by `System.CommandLine` (`--help` displays help information).
+Options should provide parameters to commands, rather than specifying actions themselves. This is a recommended design principle, although it isn't always followed by `System.CommandLine` (`--help` displays help information).
 
 ## Naming
 
@@ -39,7 +39,7 @@ In particular, avoid using any of the following aliases differently than their c
 
 * `-i` for `--interactive`.
 
-  This option signals to the user that they may be prompted for inputs to questions that the command needs answered. For example, prompting for a username. Your CLI may be used in scripts, so use caution in prompting users that have not specified this switch.
+  This option signals to the user that they may be prompted for inputs to questions that the command needs answered. For example, prompting for a username. Your CLI may be used in scripts, so use caution in prompting users who have not specified this switch.
 
 * `-o` for `--output`.
 
@@ -69,11 +69,11 @@ There are also some aliases with common usage limited to the .NET CLI. You can u
 
 ### Short names
 
-Make names for commands, options, and arguments as short and easy to spell as possible. For example, if `class` is clear enough don't make the command `classification`.
+Make names for commands, options, and arguments as short and easy to spell as possible. For example, if `class` is clear enough, don't make the command `classification`.
 
 ### Lowercase names
 
-Define names in lowercase only, except you can make uppercase aliases to make commands or options case insensitive.
+Define names in lowercase only, except you can make uppercase aliases to make commands or options case-insensitive.
 
 ### Kebab case names
 
@@ -85,10 +85,10 @@ Within an app, be consistent in pluralization. For example, don't mix plural and
 
 | Option names                                 | Consistency  |
 |----------------------------------------------|--------------|
-| `--additional-probing-paths` and `--sources` | ✔️          |
-| `--additional-probing-path` and `--source`   | ✔️          |
-| `--additional-probing-paths` and `--source`  | ❌          |
-| `--additional-probing-path` and `--sources`  | ❌          |
+| `--additional-probing-paths` and `--sources` | ✔️           |
+| `--additional-probing-path` and `--source`   | ✔️           |
+| `--additional-probing-paths` and `--source`  | ❌           |
+| `--additional-probing-path` and `--sources`  | ❌           |
 
 ### Verbs vs. nouns
 
@@ -106,7 +106,7 @@ Use verbs rather than nouns for commands that refer to actions (those without su
 
 These are the standard names, but existing apps sometimes use `Silent` in place of `Quiet`, and `Trace`, `Debug`, or `Verbose` in place of `Diagnostic`.
 
-Each app defines its own criteria that determine what gets displayed at each level. Typically an app only needs three levels:
+Each app defines its own criteria that determine what gets displayed at each level. Typically, an app only needs three levels:
 
 * Quiet
 * Normal
@@ -114,12 +114,12 @@ Each app defines its own criteria that determine what gets displayed at each lev
 
 If an app doesn't need five different levels, the option should still define the same five settings. In that case, `Minimal` and `Normal` will produce the same output, and `Detailed` and `Diagnostic` will likewise be the same. This allows your users to just type what they are familiar with, and the best fit will be used.
 
-The expectation for `Quiet` is that no output is displayed on the console. However, if an app offers an interactive mode, the app should do one of the following alternatives:
+The expectation for `Quiet` is that no output is displayed on the console. However, if an app offers an interactive mode, the app should do one of the following:
 
 * Display prompts for input when `--interactive` is specified, even if `--verbosity` is `Quiet`.
 * Disallow the use of `--verbosity Quiet` and `--interactive` together.
 
-Otherwise the app will wait for input without telling the user what it's waiting for. It will appear that your application froze and the user will have no idea the application is waiting for input.
+Otherwise, the app will wait for input without telling the user what it's waiting for. It will appear that your application froze, and the user will have no idea the application is waiting for input.
 
 If you define aliases, use `-v` for `--verbosity` and make `-v` without an argument an alias for `--verbosity Diagnostic`. Use `-q` for `--verbosity Quiet`.
 

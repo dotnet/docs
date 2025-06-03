@@ -13,9 +13,9 @@ helpviewer_keywords:
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-System.CommandLine provides a clear separation of command line parsing and action invocation. The parsing process is responsible for parsing command-line input and creating a <xref:System.CommandLine.ParseResult> object that contains the parsed values (and parse errors). The action invocation process is responsible for invoking the action associated with the parsed command, option, or directive (arguments can't have actions).
+System.CommandLine provides a clear separation between command-line parsing and action invocation. The parsing process is responsible for parsing command-line input and creating a <xref:System.CommandLine.ParseResult> object that contains the parsed values (and parse errors). The action invocation process is responsible for invoking the action associated with the parsed command, option, or directive (arguments can't have actions).
 
-In the following example from our [Get started with System.CommandLine](get-started-tutorial.md) tutorial, the `ParseResult` is created by parsing the command-line input. No actions are being defined or invoked:
+In the following example from our [Get started with System.CommandLine](get-started-tutorial.md) tutorial, the `ParseResult` is created by parsing the command-line input. No actions are defined or invoked:
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="all" :::
 
@@ -25,11 +25,11 @@ In the following example from our [Get started with System.CommandLine](get-star
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="all" :::
 
-Some of the built-in symbols, such as <xref:System.CommandLine.Help.HelpOption>, <xref:System.CommandLine.VersionOption> or <xref:System.CommandLine.Completions.SuggestDirective> come with predefined actions. These symbols are automatically added to the root command when you create it, and when you invoke the <xref:System.CommandLine.Parsing.ParseResult>, they "just work". So using actions allows you to focus on your app logic, while the library takes care of parsing and invoking actions for built-in symbols. If you don't like it, you can just stick to the parsing process and not define any actions (like in the first example above).
+Some built-in symbols, such as <xref:System.CommandLine.Help.HelpOption>, <xref:System.CommandLine.VersionOption>, or <xref:System.CommandLine.Completions.SuggestDirective>, come with predefined actions. These symbols are automatically added to the root command when you create it, and when you invoke the <xref:System.CommandLine.Parsing.ParseResult>, they "just work." Using actions allows you to focus on your app logic, while the library takes care of parsing and invoking actions for built-in symbols. If you prefer, you can stick to the parsing process and not define any actions (as in the first example above).
 
 ## ParseResult
 
-The <xref:System.CommandLine.Parsing.ParseResult> type is a class that represents the results of parsing the command line input. You need to use it to get the parsed values for options, and arguments (no matter if you are using actions or not). You can also check if there were any parse errors or unmatched [tokens](syntax.md#tokens).
+The <xref:System.CommandLine.Parsing.ParseResult> type is a class that represents the results of parsing the command-line input. You need to use it to get the parsed values for options and arguments (no matter if you are using actions or not). You can also check if there were any parse errors or unmatched [tokens](syntax.md#tokens).
 
 ### GetValue
 
@@ -43,19 +43,19 @@ The following example uses C# collection initializers to create a root command:
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="collectioninitializersyntax" :::
 
-And then it uses the `GetValue` method to get the values by name:
+Then it uses the `GetValue` method to get the values by name:
 
 :::code language="csharp" source="snippets/model-binding/csharp/Program.cs" id="lambdanames" :::
 
-This overload of `GetValue` gets the parsed or default value for the specified symbol name, in the context of parsed command (not entire symbol tree). It accepts the symbol name, not an [alias](syntax.md#aliases).
+This overload of `GetValue` gets the parsed or default value for the specified symbol name, in the context of the parsed command (not the entire symbol tree). It accepts the symbol name, not an [alias](syntax.md#aliases).
 
 ### Parse errors
 
-The <xref:System.CommandLine.Parsing.ParseResult.Errors?displayProperty=nameWithType> property contains a list of parse errors that occurred during the parsing process. Each error is represented by an <xref:System.CommandLine.Parsing.ParseError> object, which contains information about the error, such as the error message and the token that caused the error.
+The <xref:System.CommandLine.Parsing.ParseResult.Errors?displayProperty=nameWithType> property contains a list of parse errors that occurred during the parsing process. Each error is represented by a <xref:System.CommandLine.Parsing.ParseError> object, which contains information about the error, such as the error message and the token that caused the error.
 
-When you call the <xref:System.CommandLine.Parsing.ParseResult.Invoke%2A> method, it returns an exit code that indicates whether the parsing was successful or not. If there were any parse errors, the exit code is non-zero, and all the parse errors get printed to the standard error.
+When you call the <xref:System.CommandLine.Parsing.ParseResult.Invoke%2A> method, it returns an exit code that indicates whether the parsing was successful or not. If there were any parse errors, the exit code is non-zero, and all the parse errors are printed to the standard error.
 
-If you are not invoking the <xref:System.CommandLine.Parsing.ParseResult.Invoke%2A> method, you need to handle the errors on your own. For example by printing them:
+If you are not invoking the <xref:System.CommandLine.Parsing.ParseResult.Invoke%2A> method, you need to handle the errors on your own, for example, by printing them:
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="errors" :::
 

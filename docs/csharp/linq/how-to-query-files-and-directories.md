@@ -130,4 +130,3 @@ The following text shows how to use the <xref:System.String.Split%2A> method to 
 :::code language="csharp" source="./snippets/HowToFilesAndDirectories/SumColumns.cs" id="SumColumns":::
 
 If your file is a tab-separated file, just update the argument in the `SumColumns.ProcessColumns` method to `\t`.
-  

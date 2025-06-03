@@ -21,6 +21,17 @@ This article guides you through installing GitHub Copilot app modernization - up
 - [Visual Studio 2022 version 17.14 or newer](https://visualstudio.microsoft.com/downloads/)
 - [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#change-workloads-or-individual-components)
 
+While not required to install the extension, you must [sign in to Visual Studio using a GitHub account](/visualstudio/ide/work-with-github-accounts) with [Copilot access](https://docs.github.com/copilot/about-github-copilot/what-is-github-copilot#getting-access-to-copilot) to use the extension.
+
+Supported GitHub Copilot subscription plans are:
+
+- Copilot Pro
+- Copilot Pro+
+- Copilot Business
+- Copilot Enterprise
+
+Visual Studio must be restarted if you change subscriptions.
+
 ## Visual Studio extension
 
 The following steps install the Visual Studio extension.

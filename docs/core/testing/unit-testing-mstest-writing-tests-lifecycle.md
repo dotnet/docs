@@ -54,7 +54,7 @@ The setup phase of the test level lifecycle is responsible for preparing the tes
 The execution phase is the phase where the actual test method is executed. If a test method returns a Task or ValueTask, the test method will be awaited.
 
 > [!WARNING]
-> In the case of asynchronous test methods, no [SynchronizationContext](xref:system.threading.synchronizationcontext) is provided. This means any async code is being run on a ThreadPool thread, and not on the main thread. This does not apply to `UITestMethod` tests for UWP and WinUI as they run on the UI thread which has a [SynchronizationContext](xref:system.threading.synchronizationcontext).
+> In the case of asynchronous test methods, no [SynchronizationContext](xref:System.Threading.SynchronizationContext) is provided. This means any async code is being run on a ThreadPool thread, and not on the main thread. This does not apply to `UITestMethod` tests for UWP and WinUI as they run on the UI thread which has a [SynchronizationContext](xref:System.Threading.SynchronizationContext).
 
 #### Cleanup
 

@@ -1,9 +1,9 @@
 ---
-title: MSTest Test Lifecycle
+title: MSTest test lifecycle
 description: Learn about the creation and lifecycle of test classes and test methods in MSTest.
 author: marcelwgn
 ms.author: marcelwagner
-ms.date: 07/24/2024
+ms.date: 06/03/2025
 ---
 
 # MSTest lifecycle
@@ -32,7 +32,7 @@ To learn more about these attributes, refer to the [AssemblyInitialize and Assem
 
 ## Class-level Lifecycle
 
-The test class lifecycle refers to the lifecycle of individual test classes within the assembly and can be implemented using the [ClassInitialize] and [ClassCleanup] attributes.
+The test class lifecycle refers to the lifecycle of individual test classes within the assembly and can be implemented using the [ClassInitialize](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute) and [ClassCleanup](xref:Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute) attributes.
 These attributes allow you to define setup and teardown methods that are executed before and after all tests in a class, respectively.
 For more information on these attributes, refer to the [ClassInitialize and ClassCleanup](./unit-testing-mstest-writing-tests-attributes.md#class-level) documentation.
 The class level lifecycle is only run once per class, regardless of the number of tests in a class.
@@ -69,10 +69,10 @@ To learn more about the `TestInitialize` attribute, refer to the [test level att
 The complete order of the test level lifecycle is as follows:
 
 1. Create instance of test class
-1. Set TestContext if present
+1. Set `TestContext` property if present
 1. Run TestInitialize (if implemented)
 1. Test method execution
-1. Update TestContext with test results
+1. Update `TestContext` with test results (such as `Outcome` property)
 1. Run TestCleanup if implemented
 1. Run DisposeAsync if implemented
 1. Run Dispose if implemented

@@ -44,7 +44,7 @@ Test level lifecycle can be grouped into setup, execution and cleanup with setup
 
 #### Setup
 
-The setup phase of the test level lifecycle is responsible for preparing the test environment before the execution of each test method. This can be achieved using the `TestInitialize` attribute or by implementing a constructor in the test class. In the case of inheritance, execution of `TestInitialize` methods follows the order from the base class to the derived class. If a test class implements a constructor, it is executed before the `TestInitialize` method.
+The setup phase of the test level lifecycle is responsible for preparing the test environment before the execution of each test method. This can be achieved using the `TestInitialize` attribute or by implementing a constructor in the test class. In the case of inheritance, execution of `TestInitialize` methods follows the order from the base class to the derived class. If a test class implements a constructor, it is executed before the `TestInitialize` method. To learn more about the `TestInitialize` attribute, refer to the [test level attribute](./unit-testing-mstest-writing-tests-attributes.md#test-level) documentation.
 
 > [!NOTE]
 > Unlike the class constructor, `TestInitialize` methods can be async and also support attribute usage such as the `TimeoutAttribute`.
@@ -53,12 +53,16 @@ The setup phase of the test level lifecycle is responsible for preparing the tes
 
 The execution phase is the phase where the actual test method is executed. If a test method returns a Task or ValueTask, the test method will be awaited.
 
-> [!NOTE]
-> In the case of asynchronous test methods, no SynchronizationContext is provided. This means any async code is being run on a ThreadPool thread, and not on the main thread.
+> [!WARNING]
+> In the case of asynchronous test methods, no SynchronizationContext is provided. This means any async code is being run on a ThreadPool thread, and not on the main thread resulting in undefined execution order of async code.
 
 #### Cleanup
 
-The cleanup phase of the test level lifecycle is responsible for cleaning up the test environment after the execution of each test method. This can be achieved using the `TestCleanup` attribute or by implementing the `IDisposable`/`IAsyncDisposable` interface in the test class. If a test class implements `IDisposable` or `IAsyncDisposable`, its `Dispose`/`DisposeAsync` method is executed after the `TestCleanup` method. In case of inheritance, execution of `TestCleanup` methods follows the order from the derived class to the base class.
+The cleanup phase of the test level lifecycle is responsible for cleaning up the test environment after the execution of each test method.
+This can be achieved using the `TestCleanup` attribute or by implementing the `IDisposable`/`IAsyncDisposable` interface in the test class.
+If a test class implements `IDisposable` or `IAsyncDisposable`, its `Dispose`/`DisposeAsync` method is executed after the `TestCleanup` method.
+In case of inheritance, execution of `TestCleanup` methods follows the order from the derived class to the base class.
+To learn more about the `TestInitialize` attribute, refer to the [test level attribute](./unit-testing-mstest-writing-tests-attributes.md#test-level) documentation.
 
 #### Order
 

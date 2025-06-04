@@ -197,7 +197,7 @@ Logging is a common source of accidental data exposure. Sensitive information su
 
 ### Example: Redacting data in logs
 
-When using Microsoft.Extensions.Logging, you can combine redaction with logging as follows:
+When using [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging), you can combine redaction with logging as follows:
 
 ```csharp
 using Microsoft.Extensions.Telemetry;

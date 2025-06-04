@@ -51,3 +51,4 @@ To learn more, see the following resources:
 - [How to enable and customize tab completion](tab-completion.md)
 - [Command-line design guidance](design-guidance.md)
 - [System.CommandLine API reference](xref:System.CommandLine)
+- [How to update to beta5](beta5.md)

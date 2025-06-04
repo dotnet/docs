@@ -78,13 +78,13 @@ Prints out the version of the .NET SDK used by `dotnet` commands, which may be a
 
   Prints out a list of the installed .NET runtimes for the architecture of the invoked `dotnet`. An x86 version of `dotnet` lists only x86 runtimes, and an x64 version of `dotnet` lists only x64 runtimes.
 
-  .NET 10 and above supports the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any runtimes installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
+  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any runtimes installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
 
 - **`--list-sdks [--arch <ARCH>]`**
 
   Prints out a list of the installed .NET SDKs for the architecture of the invoked `dotnet`. An x86 version of `dotnet` lists only x86 SDKs, and an x64 version of `dotnet` lists only x64 SDKs.
 
-  .NET 10 and above supports the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any SDKs installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
+  .NET 10 and later versions support the `--arch` argument. If specified and not the same as the `dotnet` architecture, searches for a .NET installation of the specified architecture and prints out any SDKs installed there. Allowed values include arm64, x64, and x86. The dotnet/runtime repo has the full [list of valid architecture values](https://github.com/dotnet/runtime/blob/1713d65316467e3eaf23514b6642eba5869f1b70/src/native/corehost/hostmisc/utils.cpp#L194-L205).
 
 - **`-?|-h|--help`**
 

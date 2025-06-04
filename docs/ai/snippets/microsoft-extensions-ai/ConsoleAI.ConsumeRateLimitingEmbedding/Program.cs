@@ -1,9 +1,10 @@
 ﻿using Microsoft.Extensions.AI;
+using OllamaSharp;
 using System.Threading.RateLimiting;
 
 IEmbeddingGenerator<string, Embedding<float>> generator =
     new RateLimitingEmbeddingGenerator(
-        new SampleEmbeddingGenerator(new Uri("http://coolsite.ai"), "target-ai-model"),
+        new OllamaApiClient(new Uri("http://localhost:11434/"), "phi3:mini"),
         new ConcurrencyLimiter(new()
         {
             PermitLimit = 1,

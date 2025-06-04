@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
+using OllamaSharp;
 using OpenTelemetry.Trace;
 
 // Configure OpenTelemetry exporter
@@ -14,7 +15,7 @@ TracerProvider tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
 // Explore changing the order of the intermediate "Use" calls to see
 // what impact that has on what gets cached and traced.
 IEmbeddingGenerator<string, Embedding<float>> generator = new EmbeddingGeneratorBuilder<string, Embedding<float>>(
-        new SampleEmbeddingGenerator(new Uri("http://coolsite.ai"), "target-ai-model"))
+        new OllamaApiClient(new Uri("http://localhost:11434/"), "phi3:mini"))
     .UseDistributedCache(
         new MemoryDistributedCache(
             Options.Create(new MemoryDistributedCacheOptions())))

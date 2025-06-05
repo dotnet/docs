@@ -406,6 +406,7 @@ services.AddLogging(builder =>
 
 services.AddRedaction(builder =>
 {
+    // configure redactors for your data classifications
     builder.SetRedactor<StarRedactor>(MyTaxonomyClassifications.Private);
 });
 

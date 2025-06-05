@@ -26,7 +26,7 @@ In this quickstart, you create a .NET console app to perform semantic search on 
 
 ## Interact with your data using vector stores
 
-Vector stores or vector databases are essential for tasks like semantic search, Retrieval Augmented Generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
+Vector stores or vector databases are essential for tasks like semantic search, retrieval augmented generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
 
 ### Explore Microsoft.Extensions.VectorData.Abstractions
 
@@ -34,8 +34,8 @@ Vector stores or vector databases are essential for tasks like semantic search, 
 
 The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
 
-- Perform Create-Read-Update-Delete (CRUD) operations on vector stores
-- Use vector and text search on vector stores
+- Perform create-read-update-delete (CRUD) operations on vector stores.
+- Use vector and text search on vector stores.
 
 > [!NOTE]
 > The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in preview.
@@ -44,10 +44,10 @@ The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide libra
 
 Complete the following steps to create a .NET console app that can:
 
-- Create and populate a vector store by generating embeddings for a data set
-- Generate an embedding for the user prompt
-- Query the vector store using the user prompt embedding
-- Display the relevant results from the vector search
+- Create and populate a vector store by generating embeddings for a data set.
+- Generate an embedding for the user prompt.
+- Query the vector store using the user prompt embedding.
+- Display the relevant results from the vector search.
 
 1. In an empty directory on your computer, use the `dotnet new` command to create a new console app:
 
@@ -68,7 +68,6 @@ Complete the following steps to create a .NET console app that can:
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
-    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
@@ -80,8 +79,8 @@ Complete the following steps to create a .NET console app that can:
 
     - [`Azure.Identity`](https://www.nuget.org/packages/Azure.Identity) provides [`Microsoft Entra ID`](/entra/fundamentals/whatis) token authentication support across the Azure SDK using classes such as `DefaultAzureCredential`.
     - [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) is the official package for using OpenAI's .NET library with the Azure OpenAI Service.
-    - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
+    - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides an implementation of key-value pair&mdash;based configuration.
     - [`Microsoft.Extensions.Configuration.UserSecrets`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.UserSecrets) is a user secrets configuration provider implementation for `Microsoft.Extensions.Configuration`.
 
@@ -101,8 +100,8 @@ Complete the following steps to create a .NET console app that can:
     The following list describes each package in the `VectorDataAI` app:
 
     - [`Microsoft.Extensions.AI.OpenAI`](https://www.nuget.org/packages/Microsoft.Extensions.AI.OpenAI) provides AI abstractions for OpenAI-compatible models or endpoints. This library also includes the official [`OpenAI`](https://www.nuget.org/packages/OpenAI) library for the OpenAI service API as a dependency.
-    - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [`Microsoft.Extensions.VectorData.Abstractions`](https://www.nuget.org/packages/Microsoft.Extensions.AI) enables Create-Read-Update-Delete (CRUD) and search operations on vector stores.
+    - [`Microsoft.SemanticKernel.Connectors.InMemory`](https://www.nuget.org/packages/Microsoft.SemanticKernel.Connectors.InMemory) provides an in-memory vector store class to hold queryable vector data records.
     - [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) provides an implementation of key-value pair&mdash;based configuration.
     - [`Microsoft.Extensions.Configuration.UserSecrets`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.UserSecrets) is a user secrets configuration provider implementation for `Microsoft.Extensions.Configuration`.
 
@@ -134,10 +133,10 @@ Complete the following steps to create a .NET console app that can:
     dotnet user-secrets set ModelName <your-OpenAI-model-name>
     ```
 
-    > [!NOTE]
-    > For the `ModelName` value, you need to specify an OpenAI text embedding model such as `text-embedding-3-small` or `text-embedding-3-large` to generate embeddings for vector search in the sections that follow.
-
 :::zone-end
+
+> [!NOTE]
+> For the model name, you need to specify a text embedding model such as `text-embedding-3-small` or `text-embedding-3-large` to generate embeddings for vector search in the sections that follow. For more information about embedding models, see [Embeddings](/azure/ai-services/openai/concepts/models#embeddings).
 
 ## Add the app code
 
@@ -145,10 +144,7 @@ Complete the following steps to create a .NET console app that can:
 
    :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
 
-    In the preceding code:
-
-    - The C# attributes provided by `Microsoft.Extensions.VectorData` influence how each property is handled when used in a vector store.
-    - The `Vector` property stores a generated embedding that represents the semantic meaning of the `Name` and `Description` for vector searches.
+    The <xref:Microsoft.Extensions.VectorData> attributes, such as <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>, influence how each property is handled when used in a vector store. The `Vector` property stores a generated embedding that represents the semantic meaning of the `Name` and `Description` values for vector searches.
 
 1. In the `Program.cs` file, add the following code to create a data set that describes a collection of cloud services:
 
@@ -161,7 +157,7 @@ Complete the following steps to create a .NET console app that can:
     :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGen":::
 
     > [!NOTE]
-    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. If you aren't using the `azd` template to provision the Azure OpenAI resource, you'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
+    > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).
 
     :::zone-end
 
@@ -193,7 +189,7 @@ Complete the following steps to create a .NET console app that can:
 
 ## Clean up resources
 
-If you no longer need them, delete the Azure OpenAI resource and GPT-4 model deployment.
+If you no longer need them, delete the Azure OpenAI resource and model deployment.
 
 1. In the [Azure Portal](https://aka.ms/azureportal), navigate to the Azure OpenAI resource.
 1. Select the Azure OpenAI resource, and then select **Delete**.

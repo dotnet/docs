@@ -4,6 +4,7 @@ using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.InMemory;
+using System.Linq;
 using VectorDataAI;
 
 // <SnippetDataSet>
@@ -64,8 +65,8 @@ await cloudServicesStore.EnsureCollectionExistsAsync();
 
 foreach (CloudService service in cloudServices)
 {
-    service.Vector = await generator.GenerateVectorAsync(service.Description);
-    await cloudServicesStore.UpsertAsync(service);
+        service.Vector = await generator.GenerateVectorAsync(service.Description);
+        await cloudServicesStore.UpsertAsync(service);
 }
 // </SnippetVectorStore>
 
@@ -74,13 +75,13 @@ foreach (CloudService service in cloudServices)
 string query = "Which Azure service should I use to store my Word documents?";
 ReadOnlyMemory<float> queryEmbedding = await generator.GenerateVectorAsync(query);
 
-List<VectorSearchResult<CloudService>> results =
-    await cloudServicesStore.SearchAsync(queryEmbedding, top: 1).ToListAsync();
+IAsyncEnumerable<VectorSearchResult<CloudService>> results =
+    cloudServicesStore.SearchAsync(queryEmbedding, top: 1);
 
-foreach (VectorSearchResult<CloudService> result in results)
+await foreach (VectorSearchResult<CloudService> result in results)
 {
-    Console.WriteLine($"Name: {result.Record.Name}");
-    Console.WriteLine($"Description: {result.Record.Description}");
-    Console.WriteLine($"Vector match score: {result.Score}");
+        Console.WriteLine($"Name: {result.Record.Name}");
+        Console.WriteLine($"Description: {result.Record.Description}");
+        Console.WriteLine($"Vector match score: {result.Score}");
 }
 // </SnippetSearch>

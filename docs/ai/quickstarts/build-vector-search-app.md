@@ -26,13 +26,11 @@ In this quickstart, you create a .NET console app to perform semantic search on 
 
 ## Interact with your data using vector stores
 
-Vector stores or vector databases are essential for tasks like semantic search, retrieval augmented generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
+Vector stores, or vector databases, are essential for tasks like semantic search, retrieval augmented generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
 
-### Explore Microsoft.Extensions.VectorData.Abstractions
+## About the library
 
-[Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores.
-
-The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
+[📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores. The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
 
 - Perform create-read-update-delete (CRUD) operations on vector stores.
 - Use vector and text search on vector stores.
@@ -145,7 +143,7 @@ Complete the following steps to create a .NET console app that can:
 
    :::code language="csharp" source="snippets/chat-with-data/azure-openai/CloudService.cs" :::
 
-    The <xref:Microsoft.Extensions.VectorData> attributes, such as <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>, influence how each property is handled when used in a vector store. The `Vector` property stores a generated embedding that represents the semantic meaning of the `Name` and `Description` values for vector searches.
+    The <xref:Microsoft.Extensions.VectorData> attributes, such as <xref:Microsoft.Extensions.VectorData.VectorStoreKeyAttribute>, influence how each property is handled when used in a vector store. The `Vector` property stores a generated embedding that represents the semantic meaning of the `Description` value for vector searches.
 
 1. In the `Program.cs` file, add the following code to create a data set that describes a collection of cloud services:
 

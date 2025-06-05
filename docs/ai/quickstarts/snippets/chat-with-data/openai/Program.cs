@@ -54,7 +54,7 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
 // </SnippetEmbeddingGenerator>
 
 // <SnippetVectorStore>
-// Create and populate the vector store
+// Create and populate the vector store.
 var vectorStore = new InMemoryVectorStore();
 VectorStoreCollection<int, CloudService> cloudServicesStore =
     vectorStore.GetCollection<int, CloudService>("cloudServices");
@@ -68,7 +68,8 @@ foreach (CloudService service in cloudServices)
 // </SnippetVectorStore>
 
 // <SnippetSearch>
-// Convert a search query to a vector and search the vector store
+// Convert a search query to a vector
+// and search the vector store.
 string query = "Which Azure service should I use to store my Word documents?";
 ReadOnlyMemory<float> queryEmbedding = await generator.GenerateVectorAsync(query);
 

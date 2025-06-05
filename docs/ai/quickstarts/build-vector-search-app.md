@@ -10,7 +10,23 @@ zone_pivot_groups: openai-library
 
 # Build a .NET AI vector search app
 
-In this quickstart, you create a .NET console app to perform semantic search on a vector store to find relevant results for the user's query. You learn how to generate embeddings for user prompts and use those embeddings to query the vector data store. Vector search functionality is also a key component for Retrieval Augmented Generation (RAG) scenarios. The app uses the <xref:Microsoft.Extensions.AI> and [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions) libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
+In this quickstart, you create a .NET console app to perform semantic search on a _vector store_ to find relevant results for the user's query. You learn how to generate embeddings for user prompts and use those embeddings to query the vector data store.
+
+Vector stores, or vector databases, are essential for tasks like semantic search, retrieval augmented generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
+
+## About the libraries
+
+The app uses the <xref:Microsoft.Extensions.AI> and <xref:Microsoft.Extensions.VectorData> libraries so you can write code using AI abstractions rather than a specific SDK. AI abstractions help create loosely coupled code that allows you to change the underlying AI model with minimal app changes.
+
+[📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores. The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
+
+- Perform create-read-update-delete (CRUD) operations on vector stores.
+- Use vector and text search on vector stores.
+
+> [!NOTE]
+> The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in preview.
+
+<!--Prerequisites section-->
 
 :::zone target="docs" pivot="openai"
 
@@ -23,20 +39,6 @@ In this quickstart, you create a .NET console app to perform semantic search on 
 [!INCLUDE [azure-openai-prereqs](includes/prerequisites-azure-openai.md)]
 
 :::zone-end
-
-## Interact with your data using vector stores
-
-Vector stores, or vector databases, are essential for tasks like semantic search, retrieval augmented generation (RAG), and other scenarios that require grounding generative AI responses. While relational databases and document databases are optimized for structured and semi-structured data, vector databases are built to efficiently store, index, and manage data represented as embedding vectors. As a result, the indexing and search algorithms used by vector databases are optimized to efficiently retrieve data that can be used downstream in your applications.
-
-## About the library
-
-[📦 Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) is a .NET library developed in collaboration with Semantic Kernel and the broader .NET ecosystem to provide a unified layer of abstractions for interacting with vector stores. The abstractions in `Microsoft.Extensions.VectorData.Abstractions` provide library authors and developers with the following functionality:
-
-- Perform create-read-update-delete (CRUD) operations on vector stores.
-- Use vector and text search on vector stores.
-
-> [!NOTE]
-> The [Microsoft.Extensions.VectorData.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.VectorData.Abstractions/) library is currently in preview.
 
 ## Create the app
 

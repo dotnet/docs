@@ -31,7 +31,7 @@ GitHub Copilot app modernization is distributed as a Visual Studio extension, an
   - Copilot Business
   - Copilot Enterprise
 
-  Visual Studio must be restarted if you change subscriptions.
+(If you change subscriptions, you must restart Visual Studio.)
 
 - Code must be in a local Git repository.
 - Code must be written in C#.

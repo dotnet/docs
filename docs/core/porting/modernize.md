@@ -12,7 +12,7 @@ no-loc: ["package.config", PackageReference]
 In this article, you'll learn about different ways you can modernize your app after it's been upgraded from .NET Framework to .NET. Use the [.NET Upgrade Assistant](upgrade-assistant-overview.md) tool to upgrade your app to .NET.
 
 > [!TIP]
-> GitHub Copilot can be used to modernize your application after migrating from .NET Framework. For more information, see [What is GitHub Copilot app modernization - upgrade for .NET?](github-copilot-app-modernization-overview.md).
+> You can use GitHub Copilot to modernize your application after migrating from .NET Framework. For more information, see [What is GitHub Copilot app modernization - upgrade for .NET?](github-copilot-app-modernization-overview.md).
 
 ## Missing APIs
 

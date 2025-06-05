@@ -68,6 +68,7 @@ Complete the following steps to create a .NET console app that can:
     ```bash
     dotnet add package Azure.Identity
     dotnet add package Azure.AI.OpenAI
+    dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
     dotnet add package Microsoft.Extensions.VectorData.Abstractions --prerelease
     dotnet add package Microsoft.SemanticKernel.Connectors.InMemory --prerelease
     dotnet add package Microsoft.Extensions.Configuration
@@ -154,7 +155,7 @@ Complete the following steps to create a .NET console app that can:
 
     :::zone target="docs" pivot="azure-openai"
 
-    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGen":::
+    :::code language="csharp" source="snippets/chat-with-data/azure-openai/program.cs" id="EmbeddingGenerator":::
 
     > [!NOTE]
     > <xref:Azure.Identity.DefaultAzureCredential> searches for authentication credentials from your local tooling. You'll need to assign the `Azure AI Developer` role to the account you used to sign in to Visual Studio or the Azure CLI. For more information, see [Authenticate to Azure AI services with .NET](../azure-ai-services-authentication.md).

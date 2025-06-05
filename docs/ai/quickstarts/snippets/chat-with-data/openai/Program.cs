@@ -40,6 +40,7 @@ List<CloudService> cloudServices =
     }
 ];
 
+// <SnippetEmbeddingGenerator>
 // Load the configuration values.
 IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string model = config["ModelName"];
@@ -50,6 +51,7 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
     new OpenAIClient(new ApiKeyCredential(key))
       .GetEmbeddingClient(model: model)
       .AsIEmbeddingGenerator();
+// </SnippetEmbeddingGenerator>
 
 // <SnippetVectorStore>
 // Create and populate the vector store

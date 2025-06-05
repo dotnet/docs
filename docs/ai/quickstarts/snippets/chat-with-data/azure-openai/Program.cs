@@ -43,7 +43,7 @@ List<CloudService> cloudServices =
 ];
 // </SnippetDataSet>
 
-// <SnippetEmbeddingGen>
+// <SnippetEmbeddingGenerator>
 // Load the configuration values
 IConfigurationRoot config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 string endpoint = config["AZURE_OPENAI_ENDPOINT"];
@@ -54,7 +54,7 @@ IEmbeddingGenerator<string, Embedding<float>> generator =
     new AzureOpenAIClient(new Uri(endpoint), new DefaultAzureCredential())
         .GetEmbeddingClient(deploymentName: model)
         .AsIEmbeddingGenerator();
-// </SnippetEmbeddingGen>
+// </SnippetEmbeddingGenerator>
 
 // <SnippetVectorStore>
 // Create and populate the vector store
@@ -65,8 +65,8 @@ await cloudServicesStore.EnsureCollectionExistsAsync();
 
 foreach (CloudService service in cloudServices)
 {
-        service.Vector = await generator.GenerateVectorAsync(service.Description);
-        await cloudServicesStore.UpsertAsync(service);
+    service.Vector = await generator.GenerateVectorAsync(service.Description);
+    await cloudServicesStore.UpsertAsync(service);
 }
 // </SnippetVectorStore>
 
@@ -80,8 +80,8 @@ IAsyncEnumerable<VectorSearchResult<CloudService>> results =
 
 await foreach (VectorSearchResult<CloudService> result in results)
 {
-        Console.WriteLine($"Name: {result.Record.Name}");
-        Console.WriteLine($"Description: {result.Record.Description}");
-        Console.WriteLine($"Vector match score: {result.Score}");
+    Console.WriteLine($"Name: {result.Record.Name}");
+    Console.WriteLine($"Description: {result.Record.Description}");
+    Console.WriteLine($"Vector match score: {result.Score}");
 }
 // </SnippetSearch>

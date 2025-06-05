@@ -50,7 +50,7 @@ A *command* in command-line input is a token that specifies an action or defines
 * In `dotnet run`, `run` is a command that specifies an action.
 * In `dotnet tool install`, `install` is a command that specifies an action, and `tool` is a command that specifies a group of related commands. There are other tool-related commands, such as `tool uninstall`, `tool list`, and `tool update`.
 
-### Root commands
+### Root command
 
 The *root command* is the one that specifies the name of the app's executable. For example, the `dotnet` command specifies the *dotnet.exe* executable.
 
@@ -412,7 +412,7 @@ Here are syntax rules that determine how the text in a response file is interpre
 
 ## Directives
 
-`System.CommandLine` introduces a syntactic element called a *directive*. The `[diagram]` directive is an example. When you include `[diagram]` after the app's name, `System.CommandLine` displays a diagram of the parse result instead of invoking the command-line app:
+`System.CommandLine` introduces a syntactic element called a *directive* represented by <xref:System.CommandLine.Directive> type. The `[diagram]` directive is an example. When you include `[diagram]` after the app's name, `System.CommandLine` displays a diagram of the parse result instead of invoking the command-line app:
 
 ```dotnetcli
 dotnet [diagram] build --no-restore --output ./build-output/

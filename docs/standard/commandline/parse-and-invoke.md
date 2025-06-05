@@ -81,7 +81,7 @@ System.CommandLine provides an abstract base class <xref:System.CommandLine.Comm
 
 You don't need to create a derived type to define an action. You can use the <xref:System.CommandLine.Command.SetAction%2A> method to set an action for a command. The synchronous action can be a delegate that takes a <xref:System.CommandLine.ParseResult> parameter and returns an `int` exit code. The asynchronous action can be a delegate that takes a <xref:System.CommandLine.ParseResult> and <xref:System.Threading.CancellationToken> parameters and returns a `Task<int>`.
 
-:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="lambda" :::
+:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="setaction" :::
 
 ### Asynchronous actions
 

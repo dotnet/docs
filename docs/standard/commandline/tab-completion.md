@@ -40,7 +40,9 @@ For other command-line apps built on `System.CommandLine`:
     echo $profile
     ```
 
-Once the user's shell is set up, completions will work for all apps that are built by using `System.CommandLine`.
+* Register the app by calling  `dotnet-suggest register --command-path $executableFilePath`, where `$executableFilePath` is the path to the app's executable file.
+
+Once the user's shell is set up and the executable is registered, completions will work for all apps that are built by using `System.CommandLine`.
 
 For *cmd.exe* on Windows (the Windows Command Prompt) there is no pluggable tab completion mechanism, so no shim script is available. For other shells, [look for a GitHub issue that is labeled `Area-Completions`](https://github.com/dotnet/command-line-api/issues?q=is%3Aissue+is%3Aopen+label%3A%22Area-Completions%22). If you don't find an issue, you can [open a new one](https://github.com/dotnet/command-line-api/issues).
 

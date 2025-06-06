@@ -24,14 +24,14 @@ items:
                 href: core-libraries/10.0/generic-math.md
               - name: Default trace context propagator updated to W3C Standard
                 href: core-libraries/10.0/default-trace-context-propagator.md
-              - name: GnuTarEntry and PaxTarEntry no longer includes atime and ctime by default
+              - name: GnuTarEntry and PaxTarEntry exclude atime and ctime by default
                 href: core-libraries/10.0/tar-atime-ctime-default.md
               - name: LDAP DirectoryControl parsing is now more stringent
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
               - name: System.Linq.AsyncEnumerable included in core libraries
-                href: core-libraries/10.0/asyncenumerable.md         
+                href: core-libraries/10.0/asyncenumerable.md
           - name: Cryptography
             items:
               - name: X500DistinguishedName validation is stricter
@@ -87,7 +87,7 @@ items:
           - name: WPF
             items:
               - name: Incorrect usage of DynamicResource causes application crash
-                href: wpf/10.0/dynamicresource-crash.md         
+                href: wpf/10.0/dynamicresource-crash.md
       - name: .NET 9
         items:
           - name: Overview
@@ -117,7 +117,7 @@ items:
               - name: Altered UnsafeAccessor support for non-open generics
                 href: core-libraries/9.0/unsafeaccessor-generics.md
               - name: Ambiguous overload resolution affecting StringValues implicit operators
-                href: core-libraries/9.0/ambiguous-overload.md         
+                href: core-libraries/9.0/ambiguous-overload.md
               - name: API obsoletions with custom diagnostic IDs
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
@@ -221,7 +221,7 @@ items:
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
               - name: System.Text.Json metadata reader now unescapes metadata property names
-                href: serialization/9.0/json-metadata-reader.md         
+                href: serialization/9.0/json-metadata-reader.md
           - name: Windows Forms
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -1410,6 +1410,8 @@ items:
                 href: core-libraries/10.0/generic-math.md
               - name: Default trace context propagator updated to W3C Standard
                 href: core-libraries/10.0/default-trace-context-propagator.md
+              - name: GnuTarEntry and PaxTarEntry exclude atime and ctime by default
+                href: core-libraries/10.0/tar-atime-ctime-default.md
               - name: LDAP DirectoryControl parsing is now more stringent
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
@@ -1423,7 +1425,7 @@ items:
               - name: Altered UnsafeAccessor support for non-open generics
                 href: core-libraries/9.0/unsafeaccessor-generics.md
               - name: Ambiguous overload resolution affecting StringValues implicit operators
-                href: core-libraries/9.0/ambiguous-overload.md    
+                href: core-libraries/9.0/ambiguous-overload.md
               - name: API obsoletions with custom diagnostic IDs
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
@@ -2127,7 +2129,7 @@ items:
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
               - name: System.Text.Json metadata reader now unescapes metadata property names
-                href: serialization/9.0/json-metadata-reader.md    
+                href: serialization/9.0/json-metadata-reader.md
           - name: .NET 8
             items:
               - name: BinaryFormatter disabled for most projects
@@ -2307,7 +2309,7 @@ items:
           - name: .NET 10
             items:
               - name: Incorrect usage of DynamicResource causes application crash
-                href: wpf/10.0/dynamicresource-crash.md        
+                href: wpf/10.0/dynamicresource-crash.md
           - name: .NET 9
             items:
               - name: "'GetXmlNamespaceMaps' type change"

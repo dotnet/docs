@@ -45,7 +45,7 @@ No action required for most users&mdash;most archives have no use for these time
 If you require these fields to be set, you can use the following APIs:
 
 - For `GnuTarEntry`: Use the <xref:System.Formats.Tar.GnuTarEntry.AccessTime?displayProperty=nameWithType> and <xref:System.Formats.Tar.GnuTarEntry.ChangeTime?displayProperty=nameWithType> properties.
-- For `PaxTarEntry`: Use the constructor that accepts extended attributes: <xref:System.Formats.Tar.PaxTarEntry.#23ctor(System.Formats.Tar.TarEntryType,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})>.
+- For `PaxTarEntry`: Use the constructor that accepts extended attributes: <xref:System.Formats.Tar.PaxTarEntry.%23ctor(System.Formats.Tar.TarEntryType,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})>.
 
 However, be aware that setting these fields creates a tar file that isn't readable by many tar clients.
 

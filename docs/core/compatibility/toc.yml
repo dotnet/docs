@@ -30,6 +30,8 @@ items:
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
+              - name: YMM embedded rounding removed from AVX10.2
+                href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
               - name: X500DistinguishedName validation is stricter
@@ -1334,6 +1336,16 @@ items:
                 href: aspnet-core/5.0/static-files-csv-content-type-changed.md
               - name: .NET Core 3.0-3.1
                 href: aspnetcore.md
+      - name: .NET Aspire
+        items:
+          - name: Aspire 9.3
+            href: /dotnet/aspire/compatibility/9.3/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Aspire 9.2
+            href: /dotnet/aspire/compatibility/9.2/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Aspire 9.1
+            href: /dotnet/aspire/compatibility/9.1/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Aspire 9.0
+            href: /dotnet/aspire/compatibility/9.0/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Code analysis
         items:
           - name: .NET 5
@@ -1414,6 +1426,8 @@ items:
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
+              - name: YMM embedded rounding removed from AVX10.2
+                href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -1736,6 +1750,8 @@ items:
                 href: deployment/7.0/x86-host-path.md
       - name: Entity Framework Core
         items:
+          - name: EF Core 10
+            href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: EF Core 9
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: EF Core 8

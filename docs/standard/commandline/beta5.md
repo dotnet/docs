@@ -14,11 +14,11 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-Our main focus for beta5 was to improve the APIs to make a step toward releasing a stable version of System.CommandLine. We have simplified the APIs and made them more consistent and coherent with [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in beta5 and the reasoning behind them.
+Our main focus for beta5 was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. We have simplified the APIs and made them more consistent and coherent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in beta5 and the reasoning behind them.
 
 ## Renaming
 
-In beta4, not all of the types and properties were following the [Framework design guidelines](../design-guidelines/index.md). Some of them were not consistent with the naming conventions, such as using `Is` prefix for boolean properties. In beta5, we made a lot of changes to the API to make it more consistent and coherent with the guidelines. The following table shows the old and new names:
+In beta4, not all types and properties followed the [naming guidelines](../design-guidelines/naming-guidelines.md). Some were not consistent with the naming conventions, such as using the `Is` prefix for boolean properties. In beta5, we have renamed some types and properties. The following table shows the old and new names:
 
 | Old name                                                    | New name                                                       |
 |-------------------------------------------------------------|----------------------------------------------------------------|
@@ -35,9 +35,9 @@ In case of the `ErrorMessage` property, we changed the name to `AddError` and ma
 
 ## Exposing mutable collections
 
-In beta4, we had a lot of `Add` methods that were used to add items to collections, such as arguments, options, subcommands, validators, and completions. Some of these collections, were exposed via property as readonly collections. Because of that, it was impossible to remove items from those collections.
+In beta4, we had many `Add` methods that were used to add items to collections, such as arguments, options, subcommands, validators, and completions. Some of these collections were exposed via properties as read-only collections. Because of that, it was impossible to remove items from those collections.
 
-In beta5, we changed the APIs to expose mutable collections instead of `Add` methods and (sometimes) readonly collections. This allows you to not only add items or enumerate them, but also remove them. The following table shows the old method and new property names:
+In beta5, we changed the APIs to expose mutable collections instead of `Add` methods and (sometimes) read-only collections. This allows you to not only add items or enumerate them, but also remove them. The following table shows the old method and new property names:
 
 | Old method name                                             | New property                                                   |
 |-------------------------------------------------------------|----------------------------------------------------------------|
@@ -57,19 +57,16 @@ The `RemoveAlias` and `HasAlias` methods were also removed, as the `Aliases` pro
 
 ## Names and aliases
 
-Before beta5, there was no clear separation between the name and [aliases](syntax.md#aliases) of a symbol. When `name` was not provided for `Option<T>` constructor, the symbol was reporting its name as the longest alias with prefixes like `--`, `-` or `/` removed. That was confusing.
+Before beta5, there was no clear separation between the name and [aliases](syntax.md#aliases) of a symbol. When `name` was not provided for the `Option<T>` constructor, the symbol reported its name as the longest alias with prefixes like `--`, `-`, or `/` removed. That was confusing.
 
-Moreover, in order to get the parsed value, users had to store a reference to an option or an argument and then use it to get the value from `ParseResult`.
+Moreover, to get the parsed value, users had to store a reference to an option or an argument and then use it to get the value from `ParseResult`.
 
-To promote simplicity and explicitness, we decided to make the name of a symbol a mandatory parameter for every symbol constructor (including `Argument<T>`). We have also separated the concept of a name and aliases, now aliases are just aliases and do not include the name of the symbol. Of course, they are optional. As a result, we made the following changes:
+To promote simplicity and explicitness, we decided to make the name of a symbol a mandatory parameter for every symbol constructor (including `Argument<T>`). We have also separated the concept of a name and aliases; now aliases are just aliases and do not include the name of the symbol. Of course, they are optional. As a result, we made the following changes:
 
-
-This made it difficult to work with symbols that had no aliases or had multiple aliases.
-
-- `name` is now a mandatory argument for every public constructor of `Argument<T>`, `Option<T>`, and `Command`. In case of `Argument<T>`, it is not used for parsing, but to generate the help and completions text. In case of `Option<T>` and `Command`, it is used to identify the symbol during parsing and also for help and completions.
-- `Symbol.Name` property is no longer `virtual`, it's also readonly now and it returns the name as it was provided when the symbol was created. Because of that, `Symbol.DefaultName` was removed and `Option.Name` no longer removes the `--`, `-` or `/` or any other prefix from the longest alias.
-- The `Aliases` property exposed by `Option` and `Command` is now exposing a mutable collection. This collection no longer includes the name of the symbol.
-- `System.CommandLine.Parsing.IdentifierSymbol` was removed.
+- `name` is now a mandatory argument for every public constructor of `Argument<T>`, `Option<T>`, and `Command`. In the case of `Argument<T>`, it is not used for parsing, but to generate the help and completions text. In the case of `Option<T>` and `Command`, it is used to identify the symbol during parsing and also for help and completions.
+- The `Symbol.Name` property is no longer `virtual`; it's now read-only and returns the name as it was provided when the symbol was created. Because of that, `Symbol.DefaultName` was removed and `Option.Name` no longer removes the `--`, `-`, or `/` or any other prefix from the longest alias.
+- The `Aliases` property exposed by `Option` and `Command` is now a mutable collection. This collection no longer includes the name of the symbol.
+- `System.CommandLine.Parsing.IdentifierSymbol` was removed (it was a base type for both `Command` and `Option`).
 
 Having the name always present allows for [getting the parsed value by name](parse-and-invoke.md#getvalue):
 
@@ -233,12 +230,6 @@ To summarize these changes:
 - `InvocationContext` was removed. The `ParseResult` is now passed directly to the action.
 
 For more details about how to use actions, see the [How to parse and invoke commands in System.CommandLine](parse-and-invoke.md) document.
-
-## Libraries
-
-Rendering -> Spectre.Console
-Dragonfruit -> the new lib
-System.CommandLine.NamingConventionBinder -> stop using reflection to bind symbols to properties
 
 ## The benefits of the simplified API
 

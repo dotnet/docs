@@ -934,20 +934,22 @@ items:
             href: ../standard/commandline/index.md
           - name: Get started tutorial
             href: ../standard/commandline/get-started-tutorial.md
-          - name: Command-line syntax and defining commands, options and arguments
+          - name: Command-line syntax overview
             href: ../standard/commandline/syntax.md
-          - name: Model binding
-            href: ../standard/commandline/model-binding.md
-          - name: Tab completion
+          - name: How to parse and invoke the result
+            href: ../standard/commandline/parse-and-invoke.md
+          - name: How to customize parsing and validation
+            href: ../standard/commandline/parsing-and-validation.md
+          - name: How to configure the parser
+            href: ../standard/commandline/command-line-configuration.md
+          - name: How to enable and customize tab completion
             href: ../standard/commandline/tab-completion.md
-          - name: Dependency injection
-            href: ../standard/commandline/dependency-injection.md
-          - name: Help
+          - name: How to customize help
             href: ../standard/commandline/help.md
-          - name: Handle termination
-            href: ../standard/commandline/handle-termination.md
           - name: Design guidance
             href: ../standard/commandline/design-guidance.md
+          - name: Breaking changes in beta5
+            href: ../standard/commandline/beta5.md
       - name: File and stream I/O
         items:
           - name: Overview

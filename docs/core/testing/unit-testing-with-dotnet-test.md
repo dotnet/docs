@@ -95,7 +95,7 @@ name = "Microsoft.Testing.Platform"
 ```
 
 > [!IMPORTANT]
-> The `dotnet test` experience for MTP is only supported in Microsoft.Testing.Platform version 1.7 and later.
+> The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
 
 Since this mode is specifically designed for Microsoft.Testing.Platform, neither `TestingPlatformDotnetTestSupport` nor the additional `--` are required.
 

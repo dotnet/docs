@@ -26,7 +26,7 @@ Some examples of the `dotnet.config` file:
   ```
 
 > [!IMPORTANT]
-> The `dotnet test` experience for MTP is only supported in Microsoft.Testing.Platform version 1.7 and later.
+> The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
 
 > [!TIP]
 > For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).

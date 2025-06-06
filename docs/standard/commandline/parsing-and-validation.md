@@ -43,6 +43,7 @@ To provide custom validation code, call <xref:System.CommandLine.Option.Validato
 :::code language="csharp" source="snippets/model-binding/csharp/AddValidator.cs" id="delayOption" :::
 
 System.CommandLine provides a set of built-in validators that can be used to validate common types:
+
 - `AcceptExistingOnly` - configures given option or argument to accept only values corresponding to an existing file or directory.
 - `AcceptLegalFileNamesOnly` - configures given option or argument to accept only values representing legal file names.
 - `AcceptOnlyFromAmong` - configures given option or argument to accept only values from a specified set of values.

@@ -19,7 +19,7 @@ In the following example from our [Get started with System.CommandLine](get-star
 
 :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage0/Program.cs" id="all" :::
 
-An action is invoked when a given command (or directive, or option) is parsed successfully. The action is a delegate that takes a <xref:System.CommandLine.ParseResult> parameter and returns an `int` exit code (async actions are also [available](#async)). The exit code is returned by the <xref:System.CommandLine.Parsing.ParseResult.Invoke> method and can be used to indicate whether the command was executed successfully or not.
+An action is invoked when a given command (or directive, or option) is parsed successfully. The action is a delegate that takes a <xref:System.CommandLine.ParseResult> parameter and returns an `int` exit code (async actions are also [available](#asynchronous-actions))). The exit code is returned by the <xref:System.CommandLine.Parsing.ParseResult.Invoke> method and can be used to indicate whether the command was executed successfully or not.
 
 In the following example from our [Get started with System.CommandLine](get-started-tutorial.md) tutorial, the action is defined for the root command and invoked after parsing the command-line input:
 

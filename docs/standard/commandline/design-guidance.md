@@ -161,7 +161,6 @@ In the .NET CLI, some Boolean options result in the same behavior when you pass 
 
 In some cases, the .NET CLI doesn't use kebab case for command, option, or argument names. For example, there is a .NET CLI option that is named [`--additionalprobingpath`](../../core/tools/dotnet.md#additionalprobingpath) instead of `--additional-probing-path`.
 
-
 ## See also
 
 * [Open-source CLI design guidance](https://clig.dev/)

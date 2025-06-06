@@ -438,7 +438,7 @@ A directive can include an argument, separated from the directive name by a colo
  The following directives are built in:
 
 * [`[diagram]`](#the-diagram-directive)
-* [`[suggest]`](#the-suggest-directive)
+* [`[suggest]`](#suggest-directive)
 
 ### The `[diagram]` directive
 

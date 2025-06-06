@@ -73,7 +73,7 @@ Create a .NET 9 console app project named "scl".
 
 The preceding code:
 
-* Creates an [option](syntax.md#options) named `--file` of type <xref:System.IO.FileInfo> and adds it to the [root command](syntax.md#root-commands):
+* Creates an [option](syntax.md#options) named `--file` of type <xref:System.IO.FileInfo> and adds it to the [root command](syntax.md#root-command):
 
   :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="symbols" :::
 

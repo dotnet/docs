@@ -32,7 +32,7 @@ Now, let's use `CommandLineConfiguration` to capture the output:
 
 ## EnablePosixBundling
 
-[Bundling](syntax.md#bundling-options) of single-character options is enabled by default, but you can disable it by setting the <xref:System.CommandLine.CommandLineConfiguration.EnablePosixBundling> property to `false`.
+[Bundling](syntax.md#option-bundling) of single-character options is enabled by default, but you can disable it by setting the <xref:System.CommandLine.CommandLineConfiguration.EnablePosixBundling> property to `false`.
 
 ## ProcessTerminationTimeout
 

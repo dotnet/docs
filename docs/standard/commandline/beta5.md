@@ -178,6 +178,7 @@ if (result.Action is ParseErrorAction parseError)
     parseError.ShowHelp = false;
 }
 ```
+
 - `UseLocalizationResources` and `LocalizationResources` were removed. This feature was used mostly by the `dotnet` CLI to add missing translations to `System.CommandLine`. All those translations were moved to the System.CommandLine itself, so this feature is no longer needed. If we are missing support for your language, please [report an issue](https://github.com/dotnet/command-line-api/issues/new/choose).
 - `UseTokenReplacer` was removed. [Response files](syntax.md#response-files) are enabled by default, but you can disable them by setting the <xref:System.CommandLine.CommandLineConfiguration.ResponseFileTokenReplacer> property to `null`. You can also provide a custom implementation to customize how response files are processed.
 
@@ -210,7 +211,7 @@ rootCommand.SetHandler(async (InvocationCotnext context) =>
 });
 ```
 
-Majority of our users were not obtaining this token and passing it further. We made `CancellationToken` mandatory argument for asynchronous actions, in order for the compiler to produce a warning when it's not passed further ([CA2016](../../fundamentals/code-analysis/quality-rules/ca2016)).
+Majority of our users were not obtaining this token and passing it further. We made `CancellationToken` mandatory argument for asynchronous actions, in order for the compiler to produce a warning when it's not passed further ([CA2016](../../fundamentals/code-analysis/quality-rules/ca2016.md)).
 
 ```csharp
 rootCommand.SetAction((ParseResult parseResult, CancellationToken token) =>

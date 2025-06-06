@@ -1,4 +1,4 @@
-When you're assigned an issue that's labeled "breaking-change", or when you're given a link to an issue with this prompt file as context and asked to create a new breaking change document, follow the following guidelines:
+When you're assigned an issue that's labeled "breaking-change", or when you're given a link to an issue with this prompt file as context and asked to create a new breaking change document, follow these guidelines:
 
 The document should be in Markdown format.
 

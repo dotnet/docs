@@ -1,5 +1,6 @@
 ﻿// <all>
 using System.CommandLine;
+using System.CommandLine.Parsing;
 
 namespace scl;
 
@@ -7,7 +8,7 @@ class Program
 {
     static int Main(string[] args)
     {
-        // <option>
+        // <symbols>
         Option<FileInfo> fileOption = new("--file")
         {
             Description = "The file to read and display on the console."
@@ -15,21 +16,23 @@ class Program
 
         RootCommand rootCommand = new("Sample app for System.CommandLine");
         rootCommand.Options.Add(fileOption);
-        // </option>
+        // </symbols>
 
-        // <setaction>
-        rootCommand.SetAction(parseResult =>
+        // <parse>
+        ParseResult parseResult = rootCommand.Parse(args);
+        if (parseResult.GetValue(fileOption) is FileInfo parsedFile)
         {
-            FileInfo parsedFile = parseResult.GetValue(fileOption);
             ReadFile(parsedFile);
             return 0;
-        });
-        // </setaction>
-
-        // <invoke>
-        ParseResult parseResult = rootCommand.Parse(args);
-        return parseResult.Invoke();
-        // </invoke>
+        }
+        // </parse>
+        // <errors>
+        foreach (ParseError parseError in parseResult.Errors)
+        {
+            Console.Error.WriteLine(parseError.Message);
+        }
+        return 1;
+        // </errors>
     }
 
     // <action>

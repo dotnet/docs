@@ -16,6 +16,7 @@ This article describes new features in the .NET libraries for .NET 10. It's upda
 - [Find certificates by thumbprints other than SHA-1](#find-certificates-by-thumbprints-other-than-sha-1)
 - [Find PEM-encoded data in ASCII/UTF-8](#find-pem-encoded-data-in-asciiutf-8)
 - [Encryption algorithm for PKCS#12/PFX export](#encryption-algorithm-for-pkcs12pfx-export)
+- [Post-quantum cryptography (PQC)](#post-quantum-cryptography-pqc)
 
 ### Find certificates by thumbprints other than SHA-1
 
@@ -55,6 +56,46 @@ The new <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Expo
 - <xref:System.Security.Cryptography.X509Certificates.Pkcs12ExportPbeParameters.Pbes2Aes256Sha256?displayProperty=nameWithType> indicates that AES should be used instead of 3DES (and SHA-2-256 instead of SHA-1), but the output might not be understood by all readers (such as Windows XP).
 
 If you want even more control, you can use [the overload](xref:System.Security.Cryptography.X509Certificates.X509Certificate.ExportPkcs12(System.Security.Cryptography.PbeParameters,System.String)) that accepts a <xref:System.Security.Cryptography.PbeParameters>.
+
+### Post-quantum cryptography (PQC)
+
+.NET 10 includes support for three new asymmetric algorithms: ML-KEM (FIPS 202), ML-DSA (FIPS 203), and SLH-DSA (FIPS 204). The new types are:
+
+- `System.Security.Cryptography.MLKem` <!--xref:System.Security.Cryptography.MLKem-->
+- `System.Security.Cryptography.MLDsa` <!--xref:System.Security.Cryptography.MLDsa-->
+- `System.Security.Cryptography.SlhDsa` <!--xref:System.Security.Cryptography.SlhDsa-->
+
+Because it adds little benefit, these new types don't derive from <xref:System.Security.Cryptography.AsymmetricAlgorithm>. Rather than the `AsymmetricAlgorithm` approach of creating an object and then importing a key into it, or generating a fresh key, the new types all use static methods to generate or import a key:
+
+```csharp
+using System;
+using System.IO;
+using System.Security.Cryptography;
+
+private static bool ValidateMLDsaSignature(ReadOnlySpan<byte> data, ReadOnlySpan<byte> signature, string publicKeyPath)
+{
+    string publicKeyPem = File.ReadAllText(publicKeyPath);
+
+    using (MLDsa key = MLDsa.ImportFromPem(publicKeyPem))
+    {
+        return key.VerifyData(data, signature);
+    }
+}
+```
+
+And rather than setting object properties and having a key materialize, key generation on these new types takes in all of the options it needs.
+
+```csharp
+using (MLKem key = MLKem.GenerateKey(MLKemAlgorithm.MLKem768))
+{
+    string publicKeyPem = key.ExportSubjectPublicKeyInfoPem();
+    ...
+}
+```
+
+These algorithms all continue with the pattern of having a static `IsSupported` property to indicate if the algorithm is supported on the current system.
+
+Currently, the PQC algorithms are only available on systems where the system cryptographic libraries are OpenSSL 3.5 (or newer). Windows CNG support will be added soon. Also, the new classes are all marked as [`[Experimental]`](../../../fundamentals/syslib-diagnostics/experimental-overview.md) under diagnostic `SYSLIB5006` until development is complete.
 
 ## Globalization and date/time
 

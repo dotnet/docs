@@ -79,13 +79,29 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   The ID of the process to collect counter data from.
 
+  > [!NOTE]
+  > On Linux and macOS, using this option requires the target application and `dotnet-counters` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
+
 - **`-n|--name <name>`**
 
   The name of the process to collect counter data from.
 
-- **`--diagnostic-port`**
+  > [!NOTE]
+  > On Linux and macOS, using this option requires the target application and `dotnet-counters` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
-  The name of the diagnostic port to create. See [using diagnostic port](#using-diagnostic-port) for how to use this option to start monitoring counters from app startup.
+- **`--diagnostic-port <port-address[,(listen|connect)]>`**
+
+  Sets the [diagnostic port](diagnostic-port.md) used to communicate with the process to be monitored. dotnet-counters and the .NET runtime inside the target process must agree on the port-address, with one listening and the other connecting. dotnet-counters automatically determines the correct port when attaching using the `--process-id` or `--name` options, or when launching a process using the `-- <command>` option. It's usually only necessary to specify the port explicitly when waiting for a process that will start in the future or communicating to a process that is running inside a container that isn't part of the current process namespace.
+
+  The `port-address` differs by OS:
+
+  - Linux and macOS - a path to a Unix domain socket such as `/foo/tool1.socket`.
+  - Windows - a path to a named pipe such as `\\.\pipe\my_diag_port1`.
+  - Android, iOS, and tvOS - an IP:port such as `127.0.0.1:9000`.
+  
+  By default, dotnet-counters listens at the specified address. You can request dotnet-counters to connect instead by appending `,connect` after the address. For example, `--diagnostic-port /foo/tool1.socket,connect` will connect to a .NET runtime process that's listening to the `/foo/tool1.socket` Unix domain socket.
+
+  For information about how to use this option to start monitoring counters from app startup, see [using diagnostic port](#using-diagnostic-port).
 
 - **`--refresh-interval <SECONDS>`**
 
@@ -112,9 +128,6 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [-n|--name] [--diagnostic-
 
   > [!NOTE]
   > Launching a .NET executable via dotnet-counters will redirect its input/output and you won't be able to interact with its stdin/stdout. Exiting the tool via CTRL+C or SIGTERM will safely end both the tool and the child process. If the child process exits before the tool, the tool will exit as well. If you need to use stdin/stdout, you can use the `--diagnostic-port` option. See [Using diagnostic port](#using-diagnostic-port) for more information.
-
-> [!NOTE]
-> On Linux and macOS, this command expects the target application and `dotnet-counters` to share the same `TMPDIR` environment variable. Otherwise, the command will time out.
 
 > [!NOTE]
 > To collect metrics using `dotnet-counters`, it needs to be run as the same user as the user running target process or as root. Otherwise, the tool will fail to establish a connection with the target process.

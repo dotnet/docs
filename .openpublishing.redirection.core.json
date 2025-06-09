@@ -661,6 +661,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path_from_root": "/docs/core/diagnostics/built-in-metrics-aspnetcore.md",
+            "redirect_url": "/aspnet/core/log-mon/metrics/built-in"
+        },
+        {
             "source_path_from_root": "/docs/core/docker/build-docker-netcore-container.md",
             "redirect_url": "/dotnet/core/docker/build-container"
         },
@@ -687,6 +691,10 @@
         {
             "source_path_from_root": "/docs/core/dotnet-five.md",
             "redirect_url": "/dotnet/core/whats-new/dotnet-5"
+        },
+        {
+            "source_path_from_root": "/docs/core/extensions/artificial-intelligence.md",
+            "redirect_url": "/dotnet/ai/microsoft-extensions-ai"
         },
         {
             "source_path_from_root": "/docs/core/extensions/culture-insensitive-string-operations.md",

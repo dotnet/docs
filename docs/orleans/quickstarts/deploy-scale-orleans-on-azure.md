@@ -27,58 +27,58 @@ At the end of this quickstart, you have a scalable app running in Azure to provi
 
 ## Get and deploy the sample application
 
-The sample application is available as an Azure Developer CLI template. Through this quickstart; you pull the template application, deploy the template and sample code to Azure, change the template to implement your preferred persistence grain, deploy the necessary resources, and then deploy the final application.
+The sample application is available as an Azure Developer CLI template. Through this quickstart: you pull the template application, deploy the template and sample code to Azure, change the template to implement your preferred persistence grain, deploy the necessary resources, and then deploy the final application.
 
 1. Open a terminal in an empty directory.
 
 1. Authenticate to the Azure Developer CLI using `azd auth login`. Follow the steps specified by the tool to authenticate to the CLI using your preferred Azure credentials.
 
-    ```azuredeveloper
-    azd auth login
-    ```
+   ```azuredeveloper
+   azd auth login
+   ```
 
 1. Get the sample application using the AZD template `orleans-url-shortener` and the `azd init` command.
 
-    ```azuredeveloper
-    azd init --template orleans-url-shortener
-    ```
+   ```azuredeveloper
+   azd init --template orleans-url-shortener
+   ```
 
 1. During initialization, configure a unique environment name.
 
-    > [!TIP]
-    > The environment name will also be used as the target resource group name. For this quickstart, consider using `msdocs-orleans-url-shortener`.
+   > [!TIP]
+   > The environment name will also be used as the target resource group name. For this quickstart, consider using `msdocs-orleans-url-shortener`.
 
 1. Deploy the Azure Cosmos DB for NoSQL account using `azd up`. The Bicep templates also deploy a sample web application.
 
-    ```azuredeveloper
-    azd up
-    ```
+   ```azuredeveloper
+   azd up
+   ```
 
 1. During the provisioning process, select your subscription and desired location. Wait for the provisioning and deployment process to complete. The process can take **approximately five minutes**.
 
 1. Once the provisioning of your Azure resources is done, a URL to the running web application is included in the output.
 
-    ```output
-    Deploying services (azd deploy)
+   ```output
+   Deploying services (azd deploy)
 
-      (✓) Done: Deploying service web
-    - Endpoint: <https://[container-app-sub-domain].azurecontainerapps.io>
+     (✓) Done: Deploying service web
+   - Endpoint: <https://[container-app-sub-domain].azurecontainerapps.io>
 
-    SUCCESS: Your application was provisioned and deployed to Azure in 5 minutes 0 seconds.
-    ```
+   SUCCESS: Your application was provisioned and deployed to Azure in 5 minutes 0 seconds.
+   ```
 
 1. Use the URL in the console to navigate to your web application in the browser.
 
-    :::image type="content" source="media/deploy-scale-Orleans-on-azure/web-application.png" alt-text="Screenshot of the running URL shortener web application.":::
+   :::image type="content" source="media/deploy-scale-Orleans-on-azure/web-application.png" alt-text="Screenshot of the running URL shortener web application.":::
 
 1. In the browser address bar, test the `shorten` endpoint by adding a URL path such as `/shorten?url=https://www.microsoft.com`. The page should reload and provide a new URL with a shortened path at the end. Copy the new URL to your clipboard.
 
-    ```output
-    {
-      "original": "https://www.microsoft.com",
-      "shortened": "http://<container-app-name>.<deployment-name>.<region>.azurecontainerapps.io:<port>/go/<generated-id>"
-    }
-    ```
+   ```output
+   {
+     "original": "https://www.microsoft.com",
+     "shortened": "http://<container-app-name>.<deployment-name>.<region>.azurecontainerapps.io:<port>/go/<generated-id>"
+   }
+   ```
 
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to the URL you specified.
 
@@ -90,9 +90,9 @@ The original deployment only deployed the minimal services necessary to host the
 
 1. Using the terminal, run `azd env set` to configure the `DEPLOY_AZURE_TABLE_STORAGE` environment variable to enable deployment of Azure Cosmos DB for NoSQL.
 
-    ```azuredeveloper
-    azd env set DEPLOY_AZURE_TABLE_STORAGE true
-    ```
+   ```azuredeveloper
+   azd env set DEPLOY_AZURE_TABLE_STORAGE true
+   ```
 
 ::: zone-end
 
@@ -100,72 +100,72 @@ The original deployment only deployed the minimal services necessary to host the
 
 1. Using the terminal, run `azd env set` to configure the `DEPLOY_AZURE_COSMOS_DB_NOSQL` environment variable to enable deployment of Azure Cosmos DB for NoSQL.
 
-    ```azuredeveloper
-    azd env set DEPLOY_AZURE_COSMOS_DB_NOSQL true
-    ```
+   ```azuredeveloper
+   azd env set DEPLOY_AZURE_COSMOS_DB_NOSQL true
+   ```
 
 ::: zone-end
 
 1. Run `azd provision` to redeploy your application architecture with the new configuration. Wait for the provisioning process to complete. The process can take **approximately two minutes**.
 
-    ```azuredeveloper
-    azd provision
-    ```
+   ```azuredeveloper
+   azd provision
+   ```
 
-    > [!TIP]
-    > Alternatively, you can run `azd up` again which will both provision your architecture and redeploy your application.
+   > [!TIP]
+   > Alternatively, you can run `azd up` again which will both provision your architecture and redeploy your application.
 
 ## Install NuGet packages
 
-Prior to using the grain, you must install the corresponding `Microsoft.Orleans.Clustering.*` and `Microsoft.Orleans.Persistence.*` NuGet packages. These services are using role-based access control for passwordless authentication, so you must also import the `Azure.Identity` NuGet package.
+Prior to using the grain, you must install the corresponding `Microsoft.Orleans.Clustering.*` and `Microsoft.Orleans.Persistence.*` NuGet packages. These services use role-based access control for passwordless authentication, so you must also import the `Azure.Identity` NuGet package.
 
 ::: zone pivot="azure-storage"
 
 1. Change your current working directory to _./src/web/_.
 
-    ```bash
-    cd ./src/web
-    ```
+   ```bash
+   cd ./src/web
+   ```
 
-1. Import the `Azure.Identity` package from NuGet using `dotnet package add`.
+1. Import the `Azure.Identity` package from NuGet:
 
-    ```dotnetcli
-    dotnet package add Azure.Identity --version 1.*
-    ```
+   ```dotnetcli
+   dotnet add package Azure.Identity --version 1.*
+   ```
 
 1. Import the `Microsoft.Orleans.Clustering.AzureStorage` and `Microsoft.Orleans.Persistence.AzureStorage` packages.
 
-    | | NuGet package |
-    | --- | --- |
-    | **Clustering** | `Microsoft.Orleans.Clustering.AzureStorage` |
-    | **Persistence** | `Microsoft.Orleans.Persistence.AzureStorage` |
+   | Feature         | NuGet package                                |
+   |-----------------|----------------------------------------------|
+   | **Clustering**  | `Microsoft.Orleans.Clustering.AzureStorage`  |
+   | **Persistence** | `Microsoft.Orleans.Persistence.AzureStorage` |
 
-    ```dotnetcli
-    dotnet package add Microsoft.Orleans.Clustering.AzureStorage --version 8.*
-    dotnet package add Microsoft.Orleans.Persistence.AzureStorage --version 8.*
-    ```
+   ```dotnetcli
+   dotnet add package Microsoft.Orleans.Clustering.AzureStorage --version 8.*
+   dotnet add package Microsoft.Orleans.Persistence.AzureStorage --version 8.*
+   ```
 
 ::: zone-end
 
 ::: zone pivot="azure-cosmos-db-nosql"
 
-1. Import the `Azure.Identity` package from NuGet using `dotnet package add`.
+1. Import the `Azure.Identity` package from NuGet:
 
-    ```dotnetcli
-    dotnet package add Azure.Identity --version 1.*
-    ```
+   ```dotnetcli
+   dotnet add package Azure.Identity --version 1.*
+   ```
 
 1. Import the `Microsoft.Orleans.Clustering.Cosmos` and `Microsoft.Orleans.Persistence.Cosmos` packages.
 
-    | | NuGet package |
-    | --- | --- |
-    | **Clustering** | `Microsoft.Orleans.Clustering.Cosmos` |
-    | **Persistence** | `Microsoft.Orleans.Persistence.Cosmos` |
+   | Feature         | NuGet package                          |
+   |-----------------|----------------------------------------|
+   | **Clustering**  | `Microsoft.Orleans.Clustering.Cosmos`  |
+   | **Persistence** | `Microsoft.Orleans.Persistence.Cosmos` |
 
-    ```dotnetcli
-    dotnet package add Microsoft.Orleans.Clustering.Cosmos --version 8.*
-    dotnet package add Microsoft.Orleans.Persistence.Cosmos --version 8.*
-    ```
+   ```dotnetcli
+   dotnet add package Microsoft.Orleans.Clustering.Cosmos --version 8.*
+   dotnet add package Microsoft.Orleans.Persistence.Cosmos --version 8.*
+   ```
 
 ::: zone-end
 
@@ -175,32 +175,32 @@ The sample app is currently configured to create a localhost cluster and persist
 
 1. Add the following `using` directives:
 
-    ```csharp
-    using Azure.Identity;
-    using Orleans.Configuration;
-    ```
+   ```csharp
+   using Azure.Identity;
+   using Orleans.Configuration;
+   ```
 
 1. Find and remove the current `builder` configuration code in the _src/web/Program.cs_ file.
 
-    ```csharp
-    builder.Host.UseOrleans(static siloBuilder =>
-    {
-        siloBuilder
-            .UseLocalhostClustering()
-            .AddMemoryGrainStorage("urls");
-    });
-    ```
+   ```csharp
+   builder.Host.UseOrleans(static siloBuilder =>
+   {
+       siloBuilder
+           .UseLocalhostClustering()
+           .AddMemoryGrainStorage("urls");
+   });
+   ```
 
 ::: zone pivot="azure-storage"
 
 1. Replace the `builder` configuration with the example here, which implements these key concepts:
 
-    - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
-    - The `UseAzureStorageClustering` method configures the Orleans cluster to use Azure Table Storage and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
-    - Use the `Configure` method to assign IDs for the Orleans cluster.
-        - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
-        - The `ClusterID` can change across deployments.
-        - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
+   - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
+   - The `UseAzureStorageClustering` method configures the Orleans cluster to use Azure Table Storage and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
+   - Use the `Configure` method to assign IDs for the Orleans cluster.
+   - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
+   - The `ClusterID` can change across deployments.
+   - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
 
     ```csharp
     if (builder.Environment.IsDevelopment())
@@ -243,58 +243,58 @@ The sample app is currently configured to create a localhost cluster and persist
 
 1. Replace the `builder` configuration with the example here, which implements these key concepts:
 
-    - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
-    - The `UseCosmosClustering` method configures the Orleans cluster to use Azure Cosmos DB for NoSQL and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
-    - Use the `Configure` method to assign IDs for the Orleans cluster.
-        - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
-        - The `ClusterID` can change across deployments.
-        - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
+   - A conditional environment check is added to ensure the app runs properly in both local development and Azure hosted scenarios.
+   - The `UseCosmosClustering` method configures the Orleans cluster to use Azure Cosmos DB for NoSQL and authenticates using the <xref:Azure.Identity.DefaultAzureCredential> class.
+   - Use the `Configure` method to assign IDs for the Orleans cluster.
+   - The `ClusterID` is a unique ID for the cluster that allows clients and silos to talk to one another.
+   - The `ClusterID` can change across deployments.
+   - The `ServiceID` is a unique ID for the application that is used internally by Orleans and should remain consistent across deployments.
 
-    ```csharp
-    if (builder.Environment.IsDevelopment())
-    {
-        builder.Host.UseOrleans(static siloBuilder =>
-        {
-            siloBuilder
-                .UseLocalhostClustering()
-                .AddMemoryGrainStorage("urls");
-        });
-    }
-    else
-    {
-        builder.Host.UseOrleans(siloBuilder =>
-        {
-            var endpoint = builder.Configuration["AZURE_COSMOS_DB_NOSQL_ENDPOINT"]!;
-            var credential = new DefaultAzureCredential();
+   ```csharp
+   if (builder.Environment.IsDevelopment())
+   {
+       builder.Host.UseOrleans(static siloBuilder =>
+       {
+           siloBuilder
+               .UseLocalhostClustering()
+               .AddMemoryGrainStorage("urls");
+       });
+   }
+   else
+   {
+       builder.Host.UseOrleans(siloBuilder =>
+       {
+           var endpoint = builder.Configuration["AZURE_COSMOS_DB_NOSQL_ENDPOINT"]!;
+           var credential = new DefaultAzureCredential();
 
-            siloBuilder
-                .UseCosmosClustering(options =>
-                {
-                    options.ConfigureCosmosClient(endpoint, credential);
-                })
-                .AddCosmosGrainStorage(name: "urls", options =>
-                {
-                    options.ConfigureCosmosClient(endpoint, credential);
-                })
-                .Configure<ClusterOptions>(options =>
-                {
-                    options.ClusterId = "url-shortener";
-                    options.ServiceId = "urls";
-                });
-        });
-    }
-    ```
+           siloBuilder
+               .UseCosmosClustering(options =>
+               {
+                   options.ConfigureCosmosClient(endpoint, credential);
+               })
+               .AddCosmosGrainStorage(name: "urls", options =>
+               {
+                   options.ConfigureCosmosClient(endpoint, credential);
+               })
+               .Configure<ClusterOptions>(options =>
+               {
+                   options.ClusterId = "url-shortener";
+                   options.ServiceId = "urls";
+               });
+       });
+   }
+   ```
 
 ::: zone-end
 
 1. Run `azd deploy` to redeploy your application code as a Docker container. Wait for the deployment process to complete. The process can take **approximately one minute**.
 
-    ```azuredeveloper
-    azd deploy
-    ```
+   ```azuredeveloper
+   azd deploy
+   ```
 
-    > [!TIP]
-    > Alternatively, you can run `azd up` again which will both provision your architecture and redeploy your application.
+   > [!TIP]
+   > Alternatively, you can run `azd up` again which will both provision your architecture and redeploy your application.
 
 ## Verify the app's behavior
 
@@ -302,12 +302,12 @@ Validate that your updated code works by using the deployed application again an
 
 1. In the browser address bar, test the `shorten` endpoint again by adding a URL path such as `/shorten?url=https://learn.microsoft.com/dotnet/orleans`. The page should reload and provide a new URL with a shortened path at the end. Copy the new URL to your clipboard.
 
-    ```output
-    {
-      "original": "https://learn.microsoft.com/dotnet/orleans",
-      "shortened": "http://<container-app-name>.<deployment-name>.<region>.azurecontainerapps.io:<port>/go/<generated-id>"
-    }
-    ```
+   ```output
+   {
+     "original": "https://learn.microsoft.com/dotnet/orleans",
+    "shortened": "http://<container-app-name>.<deployment-name>.<region>.azurecontainerapps.io:<port>/go/<generated-id>"
+   }
+   ```
 
 1. Paste the shortened URL into the address bar and press enter. The page should reload and redirect you to the URL you specified.
 
@@ -315,8 +315,8 @@ Optionally, you can verify that the cluster and state data is stored as expected
 
 1. In the Azure portal, navigate to the resource group that was deployed in this quickstart.
 
-    > [!IMPORTANT]
-    > The environment name specified earlier in this quickstart is also the target resource group name.
+   > [!IMPORTANT]
+   > The environment name specified earlier in this quickstart is also the target resource group name.
 
 ::: zone pivot="azure-storage"
 
@@ -326,13 +326,12 @@ Optionally, you can verify that the cluster and state data is stored as expected
 
 1. Expand the **Tables** navigation item to discover two tables created by Orleans:
 
-    - **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
-
-    - **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
+   - **OrleansGrainState**: This table stores the persistent state grain data used by the application to handle the URL redirects.
+   - **OrleansSiloInstances**: This table tracks essential silo data for the Orleans cluster.
 
 1. Select the **OrleansGrainState** table. The table holds a row entry for every URL redirect persisted by the app during your testing.
 
-    :::image type="content" source="media/deploy-scale-Orleans-on-azure/storage-table-entities.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
+   :::image type="content" source="media/deploy-scale-Orleans-on-azure/storage-table-entities.png" alt-text="A screenshot showing Orleans data in Azure Table Storage.":::
 
 ::: zone-end
 
@@ -344,9 +343,9 @@ Optionally, you can verify that the cluster and state data is stored as expected
 
 1. Observe the following containers you created earlier in this guide:
 
-    - **OrleansStorage**: This table stores the persistent state grain data used by the application to handle the URL redirects.
+   - **OrleansStorage**: This table stores the persistent state grain data used by the application to handle the URL redirects.
 
-    - **OrleansCluster**: This table tracks essential silo data for the Orleans cluster.
+   - **OrleansCluster**: This table tracks essential silo data for the Orleans cluster.
 
 ::: zone-end
 
@@ -366,7 +365,7 @@ Orleans is designed for distributed applications. Even an app as simple as the U
 
 1. Select **Create** to deploy the new revision.
 
-    :::image type="content" source="media/deploy-scale-Orleans-on-azure/scale-containers.png" alt-text="A screenshot showing how to scale the Azure Container Apps app.":::
+   :::image type="content" source="media/deploy-scale-Orleans-on-azure/scale-containers.png" alt-text="A screenshot showing how to scale the Azure Container Apps app.":::
 
 1. After the deployment is finished, repeat the testing steps from the previous section. The app continues to work as expected across several instances and can now handle a higher number of requests.
 

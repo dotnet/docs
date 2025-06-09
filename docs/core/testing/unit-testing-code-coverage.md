@@ -83,7 +83,7 @@ dotnet add XUnit.Coverlet.Collector\XUnit.Coverlet.Collector.csproj reference Nu
 dotnet add XUnit.Coverlet.MSBuild\XUnit.Coverlet.MSBuild.csproj reference Numbers\Numbers.csproj
 ```
 
-The *MSBuild* project is named appropriately, as it will depend on the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild) NuGet package. Add this package dependency by running the [`dotnet package add`](../tools/dotnet-package-add.md) command:
+The *MSBuild* project is named appropriately, as it will depend on the [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild) NuGet package. Add this package dependency by running the [`dotnet package add`](../tools/dotnet-package-add.md) command. (If you're using an SDK version of .NET 9 or earlier, use the `dotnet add package` form instead.)
 
 ```dotnetcli
 cd XUnit.Coverlet.MSBuild && dotnet package add coverlet.msbuild && cd ..
@@ -271,7 +271,7 @@ Below is the example *coverage.cobertura.xml* file.
 > ```
 >
 > The resulting *coverage.cobertura.xml* file is output.
-> You can follow MSBuild integration guide [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
+> For more information, see [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
 
 ## Generate reports
 

@@ -1,26 +1,29 @@
 ---
-title: Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`
+title: Use Microsoft.Testing.Platform in the VSTest mode of `dotnet test`
 description: Learn how to run Microsoft.Testing.Platform tests through dotnet test.
 author: nohwnd
 ms.author: jajares
 ms.date: 03/26/2025
 ---
 
-# Use Microsoft.Testing.Platform with VSTest mode of `dotnet test`
+# Use Microsoft.Testing.Platform in the VSTest mode of `dotnet test`
 
-This article describes `dotnet test` integration for Microsoft.Testing.Platform that is provided by Microsoft.Testing.Platform.MSBuild when running with VSTest mode of `dotnet test`.
+This article explains the integration of `dotnet test` for Microsoft.Testing.Platform, which is provided by Microsoft.Testing.Platform.MSBuild when running in the VSTest mode of `dotnet test`.
 
-Before reading this article, it's advised to read [Testing with dotnet test](unit-testing-with-dotnet-test.md) first.
+Before diving into this article, it's recommended to first read [Testing with dotnet test](unit-testing-with-dotnet-test.md), which explains the two modes of `dotnet test` (VSTest and MTP modes).
 
-By default, `dotnet test` is using VSTest behavior to run tests. To enable support for `Microsoft.Testing.Platform` in `dotnet test`, there are two options:
+By default, `dotnet test` uses VSTest to run tests. To enable support for `Microsoft.Testing.Platform` in `dotnet test`, you have two options:
 
-1. Use `dotnet test` in VSTest mode, and specify `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` MSBuild property in your project file.
-2. Use `dotnet test` in MTP mode, and enjoy more native support of MTP in `dotnet test`. This is only supported starting with .NET 10 SDK.
+1. Use `dotnet test` in VSTest mode and specify `<TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>` MSBuild property in your project file.
+2. Use `dotnet test` in MTP mode for more native support of MTP in `dotnet test`, which is only supported starting with the .NET 10 SDK.
 
-Both of these options are explained in details in the [Testing with dotnet test](unit-testing-with-dotnet-test.md) article.
+Both options are explained in detail in the [Testing with dotnet test](unit-testing-with-dotnet-test.md) article.
 
 > [!IMPORTANT]
-> The remaining of this article is specific to the first option.
+> The rest of this article is specific to the VSTest mode of `dotnet test`.
+>
+> [!CAUTION]
+> Starting with .NET 10 SDK, it's recommended to not use the VSTest mode of `dotnet test` when running with Microsoft.Testing.Platform.
 
 ## Show failure per test
 

@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "buffers [.NET]"
   - "I/O [.NET], buffers"
 author: rick-anderson
-ms.author: riande
 ---
 # Work with Buffers in .NET
 

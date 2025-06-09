@@ -1,8 +1,16 @@
 {
     "redirections": [
         {
+            "source_path_from_root": "/docs/ai/ai-extensions.md",
+            "redirect_url": "/dotnet/ai/microsoft-extensions-ai"
+        },
+        {
             "source_path_from_root": "/docs/ai/conceptual/agents.md",
             "redirect_url": "/dotnet/ai"
+        },
+        {
+            "source_path_from_root": "/docs/ai/get-started/dotnet-ai-overview.md",
+            "redirect_url": "/dotnet/ai/overview"
         },
         {
             "source_path_from_root": "/docs/ai/how-to/app-service-db-auth.md",
@@ -47,6 +55,10 @@
         {
             "source_path_from_root": "/docs/ai/quickstarts/quickstart-openai-summarize-text.md",
             "redirect_url": "/dotnet/ai/quickstarts/prompt-model"
+        },
+        {
+            "source_path_from_root": "/docs/ai/tutorials/llm-eval.md",
+            "redirect_url": "/dotnet/ai/quickstarts/evaluate-ai-response"
         }
     ]
 }

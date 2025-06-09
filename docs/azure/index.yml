@@ -12,7 +12,7 @@ metadata:
   ms.date: 08/15/2024
 
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
   items:
     - itemType: overview
       title: Introduction to Azure and .NET
@@ -42,7 +42,7 @@ highlightedContent:
 conceptualContent:
   title: Featured content
   summary: Learn to develop .NET apps leveraging a variety of Azure services.
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     - title: Create web apps
       links:
@@ -96,14 +96,14 @@ conceptualContent:
     - title: Create intelligent apps with AI
       links:
         - itemType: overview
-          url: ../ai/get-started/dotnet-ai-overview.md
+          url: ../ai/overview.md
           text: AI for .NET overview
         - itemType: quickstart
-          url: ../ai/quickstarts/get-started-openai.md
+          url: ../ai/quickstarts/build-chat-app.md
           text: Build a chat app
         - itemType: quickstart
           text: Generate images
-          url: ../ai/quickstarts/quickstart-openai-generate-images.md
+          url: ../ai/quickstarts/generate-images.md
         - itemType: concept
           text: Understand prompt engineering
           url: ../ai/conceptual/prompt-engineering-dotnet.md
@@ -262,11 +262,11 @@ additionalContent:
         - title: Webcasts and shows
           links:
             - text: Azure Friday
-              url: https://azure.microsoft.com/resources/videos/azure-friday/
+              url: /shows/azure-friday/
             - text: The Cloud Native Show
-              url: /Shows/The-Cloud-Native-Show
+              url: /shows/The-Cloud-Native-Show
             - text: On .NET
-              url: /Shows/On-NET
+              url: /shows/On-NET
             - text: .NET Community Standup
               url: https://dotnet.microsoft.com/platform/community/standup
             - text: On .NET Live

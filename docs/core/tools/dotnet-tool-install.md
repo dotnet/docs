@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET tool on your machine.
-ms.date: 03/15/2024
+ms.date: 04/07/2025
 ---
 # dotnet tool install
 
@@ -15,7 +15,7 @@ ms.date: 03/15/2024
 
 ```dotnetcli
 dotnet tool install <PACKAGE_NAME> -g|--global
-    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -23,7 +23,7 @@ dotnet tool install <PACKAGE_NAME> -g|--global
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
-    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
     [--no-cache] [--prerelease]
@@ -31,7 +31,7 @@ dotnet tool install <PACKAGE_NAME> --tool-path <PATH>
     [--version <VERSION_NUMBER>]
 
 dotnet tool install <PACKAGE_NAME> [--local]
-    [--allow-downgrade] [-a|--arch <ARCHITECTURE>]
+    [--allow-downgrade] [--allow-roll-forward] [-a|--arch <ARCHITECTURE>]
     [--add-source <SOURCE>] [--configfile <FILE>]
     [--create-manifest-if-needed] [--disable-parallel]
     [--framework <FRAMEWORK>] [--ignore-failed-sources] [--interactive]
@@ -95,6 +95,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 [!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
 
+- **`--allow-roll-forward`**
+
+  Allow tool to use a newer version of the .NET runtime if the runtime it targets isn't installed.
+
 - **`-a|--arch <ARCHITECTURE>`**
 
   Specifies the target architecture. This is a shorthand syntax for setting the [Runtime Identifier (RID)](../../../docs/core/rid-catalog.md), where the provided value is combined with the default RID. For example, on a `win-x64` machine, specifying `--arch x86` sets the RID to `win-x86`.
@@ -129,6 +133,10 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
+- **`--source <SOURCE>`**
+
+  Specifies the source for NuGet packages. This source replaces all NuGet package sources.
+
 [!INCLUDE [help](../../../includes/cli-help.md)]
 
 - **`--ignore-failed-sources`**
@@ -141,7 +149,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
 
-- **`--no-cache`**
+- **`--no-cache` or `--no-http-cache`**
 
   Don't cache packages and HTTP requests.
 
@@ -155,7 +163,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`--tool-path <PATH>`**
 
-  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
+  Specifies the location to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
 [!INCLUDE [verbosity](../../../includes/cli-verbosity.md)]
 
@@ -163,7 +171,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
   The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
 
-  Starting with .NET 8.0, `--version Major.Minor.Patch` refers to a specific major/minor/patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use `--version Major.Minor.*`.
+  Starting with .NET 8, `--version Major.Minor.Patch` refers to a specific major/minor/patch version, including unlisted versions. To get the latest version of a certain major/minor version instead, use `--version Major.Minor.*`.
 
 ## Examples
 

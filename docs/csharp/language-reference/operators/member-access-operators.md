@@ -1,7 +1,7 @@
 ---
 title: "Member access and null-conditional operators and expressions:"
 description: "C# operators that you use to access type members or null-conditionally access type members. These operators include the dot operator - `.`, indexers - `[`, `]`, `^` and `..`, and invocation - `(`, `)`."
-ms.date: 07/31/2024
+ms.date: 05/29/2025
 author: pkulikov
 f1_keywords:
   - "._CSharpKeyword"
@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Member access operators and expressions - the dot, indexer, and invocation operators.
 
-You use several operators and expressions to access a type member. These operators include member access (`.`), array element or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`). These include the *null-conditional* member access (`?.`), and indexer access (`?[]`) operators.
+You use several operators and expressions to access a type member. Member access operators include member access (`.`), array element, or indexer access (`[]`), index-from-end (`^`), range (`..`), null-conditional operators (`?.` and `?[]`), and method invocation (`()`). These operators include the *null-conditional* member access (`?.`), and indexer access (`?[]`) operators.
 
 - [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
@@ -138,7 +138,7 @@ The following examples demonstrate the usage of the `?.` and `?[]` operators:
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="SnippetNullConditional" interactive="try-dotnet-method":::
 :::code language="csharp" source="snippets/shared/MemberAccessOperators2.cs" interactive="try-dotnet":::
 
-The first of the preceding two examples also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
+The first preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
 
 If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of the corresponding [nullable value type](../builtin-types/nullable-value-types.md) `T?`. If you need an expression of type `T`, apply the null-coalescing operator `??` to a null-conditional expression, as the following example shows:
 
@@ -147,9 +147,23 @@ If `a.x` or `a[x]` is of a non-nullable value type `T`, `a?.x` or `a?[x]` is of 
 In the preceding example, if you don't use the `??` operator, `numbers?.Length < 2` evaluates to `false` when `numbers` is `null`.
 
 > [!NOTE]
-> The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it cannot be changed to `null` after being verified as non-null.
+> The `?.` operator evaluates its left-hand operand no more than once, guaranteeing that it can't be changed to `null` after being verified as non-null.
 
-The null-conditional member access operator `?.` is also known as the Elvis operator.
+Beginning in C# 14, assignment is permissible with a null conditional access expression (`?.` and `?[]`) on reference types. For example, see the following method:
+
+:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="NullForgivingAssignment":::
+
+The preceding example shows assignment to a property and an indexed element on a reference type that might be null. An important behavior for this assignment is that the expression on the right-hand side of the `=` is evaluated only when the left-hand side is known to be non-null. For example, in the following code, the function `GenerateNextIndex` is called only when the `values` array isn't null. If the `values` array is null, `GenerateNextIndex` isn't called:
+
+:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="NullForgivingAssignment":::
+
+In other words, the preceding code is equivalent to the following code using an `if` statement for the null check:
+
+:::code language="csharp" source="snippets/shared/NullCoalescingOperator.cs" id="EquivalentIfStatement":::
+
+In addition to assignment, any form of [compound assignment](./assignment-operator.md#compound-assignment), such as `+=` or `-=`, are allowed. However, increment (`++`) and decrement (`--`) aren't allowed.
+
+This enhancement doesn't classify a null conditional expression as a variable. It can't be `ref` assigned, nor can it be assigned to a `ref` variable or passed to a method as a `ref` or `out` argument.
 
 ### Thread-safe delegate invocation
 
@@ -175,7 +189,7 @@ The preceding example is a thread-safe way to ensure that only a non-null `handl
 
 Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-structs/methods.md) or invoke a [delegate](../../programming-guide/delegates/index.md).
 
-The following example demonstrates how to call a method, with or without arguments, and invoke a delegate:
+The following code demonstrates how to call a method, with or without arguments, and invoke a delegate:
 
 :::code language="csharp" source="snippets/shared/MemberAccessOperators.cs" id="Invocation" interactive="try-dotnet-method":::
 
@@ -190,6 +204,9 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 ## Index from end operator ^
 
 Index and range operators can be used with a type that is *countable*. A *countable* type is a type that has an `int` property named either `Count` or `Length` with an accessible `get` accessor. [Collection expressions](./collection-expressions.md) also rely on *countable* types.
+
+> [!NOTE]
+> Single dimensional arrays are *countable*. Multi-dimensional arrays aren't. The `^` and `..` (range) operators can't be used in multi-dimensional arrays.
 
 The `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
 

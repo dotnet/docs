@@ -363,6 +363,10 @@ items:
         href: ../../core/diagnostics/logging-tracing.md
       - name: ILogger Logging
         href: ../../core/extensions/logging.md
+      - name: Log sampling
+        href: ../../core/extensions/log-sampling.md
+      - name: Log buffering
+        href: ../../core/extensions/log-buffering.md
       - name: Observability with OpenTelemetry
         items:
           - name: Overview
@@ -391,7 +395,9 @@ items:
             displayName: exception summarization,exception summary,exception summarizer,ExceptionSummary
           - name: Collection
             href: ../../core/diagnostics/metrics-collection.md
-          - name: Source-generated metrics
+          - name: Compile-time metric source generation
+            href: ../../core/diagnostics/metrics-generator.md
+          - name: Strongly typed source-generated metrics
             displayName: strongly-typed tags,dimensions
             href: ../../core/diagnostics/metrics-strongly-typed.md
           - name: Built-in metrics
@@ -403,7 +409,7 @@ items:
               - name: .NET extensions metrics
                 href: ../../core/diagnostics/built-in-metrics-diagnostics.md
               - name: ASP.NET Core metrics
-                href: ../../core/diagnostics/built-in-metrics-aspnetcore.md
+                href: /aspnet/core/log-mon/metrics/built-in?toc=/dotnet/navigate/tools-diagnostics/toc.json&bc=/dotnet/breadcrumb/toc.json
               - name: System.Net metrics
                 href: ../../core/diagnostics/built-in-metrics-system-net.md
           - name: EventCounters
@@ -417,6 +423,8 @@ items:
                 href: ../../core/diagnostics/event-counter-perf.md
           - name: Compare metric APIs
             href: ../../core/diagnostics/compare-metric-apis.md
+          - name: Migrate from Windows Performance Counters
+            href: ../../core/diagnostics/migrate-from-windows-performance-counters.md
       - name: Distributed tracing
         items:
           - name: Overview
@@ -471,6 +479,8 @@ items:
                     href: ../../fundamentals/diagnostics/runtime-type-events.md
                   - name: Tiered compilation events
                     href: ../../fundamentals/diagnostics/runtime-tiered-compilation-events.md
+                  - name: Wait-handle events
+                    href: ../../fundamentals/diagnostics/runtime-wait-handle-events.md
           - name: Collect diagnostics in containers
             href: ../../core/diagnostics/diagnostics-in-containers.md
           - name: Dumps
@@ -1691,6 +1701,8 @@ items:
                     href: ../../fundamentals/code-analysis/style-rules/ide0076.md
                   - name: IDE0077
                     href: ../../fundamentals/code-analysis/style-rules/ide0077.md
+                  - name: IDE3000
+                    href: ../../fundamentals/code-analysis/style-rules/ide3000.md
               - name: Formatting rules
                 items:
                   - name: IDE0055

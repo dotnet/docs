@@ -1,7 +1,7 @@
 ---
 title: Tips for Java Developers
 description: Are you new to C#, but experienced in Java? Here's a roadmap of what's familiar, and new features to learn in C#, and features in Java that aren't in C#.
-ms.date: 03/17/2025
+ms.date: 04/17/2025
 ---
 # Roadmap for Java developers learning C\#
 
@@ -20,7 +20,7 @@ You can work productively in C# almost immediately because of the similarities. 
 1. [***Pattern matching***](../fundamentals/functional/pattern-matching.md): Pattern matching enables concise conditional statements and expressions based on the shape of complex data structures. The [`is` statement](../language-reference/operators/is.md) checks if a variable "is" some pattern. The pattern-based [`switch` expression](../language-reference/operators/switch-expression.md) provides a rich syntax to inspect a variable and make decisions based on its characteristics.
 1. [***String interpolation***](../language-reference/tokens/interpolated.md) and [***raw string literals***](../language-reference/builtin-types/reference-types.md#string-literals): String interpolation enables you to insert evaluated expressions in a string, rather than using positional identifiers. Raw string literals provide a way to minimize escape sequences in text.
 1. [***Nullable and non-nullable types***](../nullable-references.md): C# supports *nullable value types*, and *nullable reference types* by appending the `?` suffix to a type. For nullable types, the compiler warns you if you don't check for `null` before dereferencing the expression. For non-nullable types, the compiler warns you if you might be assigning a `null` value to that variable. Non-nullable reference types minimize programming errors that throw a <xref:System.NullReferenceException?displayProperty=nameWithType>.
-1. [***Extension methods***](../programming-guide/classes-and-structs/extension-methods.md):  In C#, you can create methods that *extend* a class or interface. Extension methods extend the behavior of a type from a library, or all types that implement a given interface.
+1. [***Extensions***](../programming-guide/classes-and-structs/extension-methods.md):  In C#, you can create members that *extend* a class or interface. Extensions provide new behavior for a type from a library, or all types that implement a given interface.
 1. [***LINQ***](../linq/index.md): Language integrated query (LINQ) provides a common syntax to query and transform data, regardless of its storage.
 1. [***Local functions***](../programming-guide/classes-and-structs/local-functions.md): In C#, you can nest functions inside methods, or other local functions. Local functions provide yet another layer of encapsulation.
 

@@ -251,7 +251,7 @@ The list below described only the platform options. To see the specific options 
 
   Prints out a description of how to use the command.
 
-- **`-ignore-exit-code`**
+- **`--ignore-exit-code`**
 
   Allows some non-zero exit codes to be ignored, and instead returned as `0`. For more information, see [Ignore specific exit codes](./microsoft-testing-platform-exit-codes.md#ignore-specific-exit-codes).
 

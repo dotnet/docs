@@ -1,13 +1,13 @@
 ### Create a service principal
 
-To automate the deployment of the app, you'll need to create a service principal. This is a Microsoft account that has permission to manage Azure resources on your behalf.
+To automate the app's deployment, you need to create a service principal. This is a Microsoft account that has permission to manage Azure resources on your behalf.
 
 ```azurecli
 az ad sp create-for-rbac --sdk-auth --role Contributor \
   --name "<display-name>"  --scopes /subscriptions/<your-subscription-id>
 ```
 
-The JSON credentials created will look similar to the following, but with actual values for your client, subscription, and tenant:
+The JSON credentials created look similar to the following, but with actual values for your client, subscription, and tenant:
 
 ```json
 {

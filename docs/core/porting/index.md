@@ -1,8 +1,8 @@
 ---
-title: Port from .NET Framework to .NET 7
-description: Understand the porting process and discover tools you might find helpful when porting a .NET Framework project to .NET 7.
+title: Port from .NET Framework to .NET
+description: Understand the porting process and discover tools you might find helpful when porting a .NET Framework project to .NET.
 author: adegeo
-ms.date: 07/23/2024
+ms.date: 06/03/2025
 ms.custom: devdivchpfy22, updateeachrelease
 no-loc: ["package.config", PackageReference]
 ---
@@ -27,7 +27,7 @@ Consider the following dependencies before you migrate a Windows Forms or WPF ap
 
 For tutorials on migrating your desktop application to .NET, see one of the following articles:
 
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [How to upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/)
 
 ## Windows-specific APIs
@@ -173,6 +173,6 @@ When porting your application to .NET, consider the following suggestions in ord
 
 - [Overview of the .NET Upgrade Assistant](upgrade-assistant-overview.md)
 - [ASP.NET to ASP.NET Core migration](/aspnet/core/migration/proper-to-2x)
-- [Migrate .NET Framework WPF apps to .NET](/dotnet/desktop/wpf/migration/convert-project-from-net-framework)
+- [How to upgrade a WPF desktop app to .NET](/dotnet/desktop/wpf/migration/)
 - [Migrate .NET Framework Windows Forms apps to .NET](/dotnet/desktop/winforms/migration/)
 - [.NET 5 vs. .NET Framework for server apps](../../standard/choosing-core-framework-server.md)

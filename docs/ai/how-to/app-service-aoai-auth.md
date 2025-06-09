@@ -1,17 +1,18 @@
 ---
 title: "Authenticate an Azure hosted .NET app to Azure OpenAI using Microsoft Entra ID"
 description: "Learn how to authenticate your Azure hosted .NET app to an Azure OpenAI resource using Microsoft Entra ID."
-author: haywoodsloan
+author: alexwolfmsft
+ms.author: alexwolf
 ms.topic: how-to
 ms.custom: devx-track-azurecli
-ms.date: 01/29/2025
+ms.date: 05/29/2025
 zone_pivot_groups: azure-interface
 #customer intent: As a .NET developer, I want authenticate and authorize my App Service to Azure OpenAI by using Microsoft Entra so that I can securely use AI in my .NET application.
 ---
 
 # Authenticate to Azure OpenAI from an Azure hosted app using Microsoft Entra ID
 
-This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) and the [Microsoft.Extensions.AI library](../ai-extensions.md) to authenticate an Azure hosted app to an Azure OpenAI resource.
+This article demonstrates how to use [Microsoft Entra ID managed identities](/azure/app-service/overview-managed-identity) and the [Microsoft.Extensions.AI library](../microsoft-extensions-ai.md) to authenticate an Azure hosted app to an Azure OpenAI resource.
 
 A managed identity from Microsoft Entra ID allows your app to easily access other Microsoft Entra protected resources such as Azure OpenAI. The identity is managed by the Azure platform and doesn't require you to provision, manage, or rotate any secrets.
 
@@ -153,11 +154,11 @@ az role assignment create --assignee "<managedIdentityObjectID>" \
 1. Add the following NuGet packages to your app:
 
     ```dotnetcli
-    dotnet package add Azure.Identity
-    dotnet package add Azure.AI.OpenAI
-    dotnet package add Microsoft.Extensions.Azure
-    dotnet package add Microsoft.Extensions.AI
-    dotnet package add Microsoft.Extensions.AI.OpenAI
+    dotnet add package Azure.Identity
+    dotnet add package Azure.AI.OpenAI
+    dotnet add package Microsoft.Extensions.Azure
+    dotnet add package Microsoft.Extensions.AI
+    dotnet add package Microsoft.Extensions.AI.OpenAI
     ```
 
     The preceding packages each handle the following concerns for this scenario:

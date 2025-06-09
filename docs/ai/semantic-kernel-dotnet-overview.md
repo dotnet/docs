@@ -1,7 +1,7 @@
 ---
 title: Semantic Kernel overview for .NET
 description: Learn how to add the Semantic Kernel SDK to your .NET projects and explore fundamental concepts
-ms.date: 06/07/2024
+ms.date: 04/09/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 author: alexwolfmsft
@@ -25,6 +25,12 @@ This article serves as an introductory overview of Semantic Kernel specifically 
 The Semantic Kernel SDK is available as a NuGet package for .NET and integrates with standard app configurations.
 
 Install the [`Microsoft.SemanticKernel`](https://www.nuget.org/packages/Microsoft.SemanticKernel) package using the following command:
+
+```dotnetcli
+dotnet add package Microsoft.SemanticKernel
+```
+
+Or, in .NET 10+:
 
 ```dotnetcli
 dotnet package add Microsoft.SemanticKernel

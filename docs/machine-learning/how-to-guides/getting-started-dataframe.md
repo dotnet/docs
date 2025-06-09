@@ -16,6 +16,12 @@ Learn how to get started with [DataFrames](/dotnet/api/microsoft.data.analysis.d
 In most cases, accessing <xref:Microsoft.Data.Analysis.DataFrame> is as simple as referencing the [Microsoft.Data.Analysis](https://www.nuget.org/packages/Microsoft.Data.Analysis/) NuGet package.
 
 ```dotnetcli
+dotnet add package Microsoft.Data.Analysis
+```
+
+Or, in .NET 10+:
+
+```dotnetcli
 dotnet package add Microsoft.Data.Analysis
 ```
 

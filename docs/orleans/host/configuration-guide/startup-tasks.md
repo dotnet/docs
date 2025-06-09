@@ -1,24 +1,24 @@
 ---
 title: Background Services and Startup Tasks
 description: Learn how to configure and manage background services and startup tasks in .NET Orleans.
-ms.date: 11/19/2024
+ms.date: 05/23/2025
 ---
 
-# Background Services and Startup Tasks
+# Background services and startup tasks
 
 When building Orleans applications, you often need to perform background operations or initialize components when the application starts.
 
-Startup tasks can be used to perform initialization work when a silo starts, before or after it begins accepting requests. Common use cases include:
+Use startup tasks to perform initialization work when a silo starts, either before or after it begins accepting requests. Common use cases include:
 
-* Initializing grain state or preloading data
-* Setting up external service connections
-* Performing database migrations
-* Validating configuration
-* Warming up caches
+- Initializing grain state or preloading data
+- Setting up external service connections
+- Performing database migrations
+- Validating configuration
+- Warming up caches
 
-## Using BackgroundService (Recommended)
+## Using `BackgroundService` (Recommended)
 
-The recommended approach is to use .NET [BackgroundService or `IHostedService`](/aspnet/core/fundamentals/host/hosted-services). See the [Background tasks with hosted services in ASP.NET Core](/aspnet/core/fundamentals/host/hosted-services) documentation for more information.
+The recommended approach is to use .NET [`BackgroundService` or `IHostedService`](/aspnet/core/fundamentals/host/hosted-services). See the [Background tasks with hosted services in ASP.NET Core](/aspnet/core/fundamentals/host/hosted-services) documentation for more information.
 
 Here's an example that pings a grain every 5 seconds:
 
@@ -69,7 +69,7 @@ public class GrainPingService : BackgroundService
 }
 ```
 
-Registration order is significant, since services added to the host builder are started one-by-one, in the order they are registered. You can register the background service as follows:
+Registration order is significant because services added to the host builder start one by one in the order they are registered. Register the background service as follows:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -86,11 +86,11 @@ builder.Services.AddHostedService<GrainPingService>();
 var app = builder.Build();
 ```
 
-The background service will start automatically when the application starts and will gracefully shut down when the application stops.
+The background service starts automatically when the application starts and gracefully shuts down when the application stops.
 
-## Using IHostedService
+## Using `IHostedService`
 
-For simpler scenarios where you don't need continuous background operation, you can implement `IHostedService` directly:
+For simpler scenarios where you don't need continuous background operation, implement `IHostedService` directly:
 
 ```csharp
 public class GrainInitializerService : IHostedService
@@ -126,19 +126,19 @@ Register it the same way:
 builder.Services.AddHostedService<GrainInitializerService>();
 ```
 
-## Orleans' Startup Tasks
+## Orleans startup tasks
 
 > [!NOTE]
-> While startup tasks are still supported, we recommend using `BackgroundService` or `IHostedService` instead as they are the common .NET hosting mechanism for running background tasks.
+> While startup tasks are still supported, we recommend using `BackgroundService` or `IHostedService` instead, as they are the standard .NET hosting mechanism for running background tasks.
 
 > [!WARNING]
-> Any exceptions thrown from a startup task will be reported in the silo log and will stop the silo. This fail-fast approach helps detect configuration and bootstrap issues during testing rather than having them cause unexpected problems later, but it can also mean that transient failures in a startup task will cause unavailability of the host.
+> Any exceptions thrown from a startup task are reported in the silo log and stop the silo. This fail-fast approach helps detect configuration and bootstrap issues during testing rather than causing unexpected problems later. However, it can also mean that transient failures in a startup task cause host unavailability.
 
-If you need to use the built-in startup task system, you can configure them as follows:
+If you need to use the built-in startup task system, configure them as follows:
 
 ### Register a delegate
 
-A delegate can be registered as a startup task using the appropriate <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
+Register a delegate as a startup task using the appropriate <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
 
 ```csharp
 siloBuilder.AddStartupTask(
@@ -152,7 +152,7 @@ siloBuilder.AddStartupTask(
 
 ### Register an `IStartupTask` implementation
 
-The <xref:Orleans.Runtime.IStartupTask> interface can be implemented and registered as a startup task using the <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
+Implement the <xref:Orleans.Runtime.IStartupTask> interface and register it as a startup task using the <xref:Orleans.Hosting.SiloBuilderStartupExtensions.AddStartupTask*> extension method on <xref:Orleans.Hosting.ISiloBuilder>.
 
 ```csharp
 public class CallGrainStartupTask : IStartupTask

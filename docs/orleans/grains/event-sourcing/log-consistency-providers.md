@@ -1,38 +1,39 @@
 ---
 title: Log-consistency providers
 description: Learn about log-consistency providers in .NET Orleans.
-ms.date: 07/03/2024
+ms.date: 03/29/2025
+ms.topic: conceptual
 ---
 
 # Log-consistency providers
 
-The `Microsoft.Orleans.EventSourcing` package includes several log-consistency providers that cover basic scenarios suitable to get started, and allow some extensibility.
+The `Microsoft.Orleans.EventSourcing` package includes several log-consistency providers covering basic scenarios suitable for getting started and allowing some extensibility.
 
 ### State storage
 
-The <xref:Orleans.EventSourcing.StateStorage.LogConsistencyProvider?displayProperty=nameWithType> stores *grain state snapshots*, using a standard storage provider that can be configured independently.
+The <xref:Orleans.EventSourcing.StateStorage.LogConsistencyProvider?displayProperty=nameWithType> stores *grain state snapshots* using a standard storage provider that you can configure independently.
 
-The data that is kept in storage is an object that contains both the grain state (as specified by the first type parameter to `JournaledGrain`) and some meta-data (the version number, and a special tag that is used to avoid duplication of events when storage accesses fail).
+The data kept in storage is an object containing both the grain state (specified by the first type parameter to `JournaledGrain`) and some metadata (the version number and a special tag used to avoid event duplication when storage accesses fail).
 
-Since the entire grain state is read/written every time we access storage, this provider is not suitable for objects whose grain state is very large.
+Since the entire grain state is read/written every time storage is accessed, this provider isn't suitable for objects with very large grain states.
 
-This provider does not support <xref:Orleans.EventSourcing.JournaledGrain%602.RetrieveConfirmedEvents%2A>, it cannot retrieve the events from storage because the events are not persisted.
+This provider doesn't support <xref:Orleans.EventSourcing.JournaledGrain%602.RetrieveConfirmedEvents%2A>. It cannot retrieve events from storage because the events aren't persisted.
 
 ### Log storage
 
-The <xref:Orleans.EventSourcing.LogStorage.LogConsistencyProvider?displayProperty=nameWithType> stores *the complete event sequence as a single object*, using a standard storage provider that can be configured independently.
+The <xref:Orleans.EventSourcing.LogStorage.LogConsistencyProvider?displayProperty=nameWithType> stores *the complete event sequence as a single object* using a standard storage provider that you can configure independently.
 
-The data that is kept in storage is an object that contains a `List<EventType> object`, and some meta-data (a special tag that is used to avoid duplication of events when storage accesses fail).
+The data kept in storage is an object containing a `List<EventType>` object and some metadata (a special tag used to avoid event duplication when storage accesses fail).
 
-This provider does support <xref:Orleans.EventSourcing.JournaledGrain%602.RetrieveConfirmedEvents%2A>. All events are always available and kept in memory.
+This provider supports <xref:Orleans.EventSourcing.JournaledGrain%602.RetrieveConfirmedEvents%2A>. All events are always available and kept in memory.
 
-Since the whole event sequence is read/written every time we access storage, this provider is *not suitable for use in production*, unless the event sequences are guaranteed to remain pretty short. The main purpose of this provider is to illustrate the semantics of the event sourcing, and for samples/testing environments.
+Since the entire event sequence is read/written every time storage is accessed, this provider is *not suitable for production use* unless the event sequences are guaranteed to remain fairly short. The main purpose of this provider is to illustrate the semantics of event sourcing and for use in samples/testing environments.
 
 ### Custom storage
 
-This <xref:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider?displayProperty=nameWithType> allows the developer to plug in their storage interface, which is then called by the consistency protocol at appropriate times. This provider does not make specific assumptions about whether what is stored are state snapshots or events - the programmer assumes control over that choice (and may store either or both).
+This <xref:Orleans.EventSourcing.CustomStorage.LogConsistencyProvider?displayProperty=nameWithType> allows you to plug in your storage interface, which the consistency protocol then calls at appropriate times. This provider doesn't make specific assumptions about whether the stored data consists of state snapshots or events – you assume control over that choice (and can store either or both).
 
-To use this provider, a grain must derive from <xref:Orleans.EventSourcing.JournaledGrain%602>, as before, but additionally must also implement the following interface:
+To use this provider, a grain must derive from <xref:Orleans.EventSourcing.JournaledGrain%602>, as before, but must also implement the following interface:
 
 ```csharp
 public interface ICustomStorageInterface<StateType, EventType>
@@ -45,12 +46,12 @@ public interface ICustomStorageInterface<StateType, EventType>
 }
 ```
 
-The consistency provider expects these to behave a certain way. Programmers should be aware that:
+The consistency provider expects these methods to behave in a certain way. Be aware that:
 
-* The first method, <xref:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface%602.ReadStateFromStorage%2A>, is expected to return both the version and the state read. If there is nothing stored yet, it should return zero for the version, and a state that matches corresponds to the default constructor for `StateType`.
+- The first method, <xref:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface%602.ReadStateFromStorage%2A>, is expected to return both the version and the state read. If nothing is stored yet, it should return zero for the version and a state corresponding to the default constructor for `StateType`.
 
-* <xref:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface%602.ApplyUpdatesToStorage%2A> must return false if the expected version does not match the actual version (this is analogous to an e-tag check).
+- <xref:Orleans.EventSourcing.CustomStorage.ICustomStorageInterface%602.ApplyUpdatesToStorage%2A> must return `false` if the expected version doesn't match the actual version (this is analogous to an e-tag check).
 
-* If `ApplyUpdatesToStorage` fails with an exception, the consistency provider retries. This means some events could be duplicated if such an exception is thrown, but the event was persisted. The developer is responsible to make sure this is safe: e.g. either avoid this case by not throwing an exception, or ensure duplicated events are harmless for the application logic, or add some extra mechanism to filter duplicates.
+- If `ApplyUpdatesToStorage` fails with an exception, the consistency provider retries. This means some events could be duplicated if such an exception is thrown but the event was persisted. You are responsible for ensuring this is safe: for example,, either avoid this case by not throwing an exception, ensure duplicated events are harmless for the application logic, or add an extra mechanism to filter duplicates.
 
-This provider does not support `RetrieveConfirmedEvents`. Of course, since the developer controls the storage interface anyway, they don't need to call this in the first place, but can implement their event retrieval.
+This provider doesn't support `RetrieveConfirmedEvents`. Of course, since you control the storage interface anyway, you don't need to call this method in the first place but can implement your event retrieval logic.

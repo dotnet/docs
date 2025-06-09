@@ -1,21 +1,21 @@
 ---
-title: Overview of the .NET + AI ecosystem
+title: .NET + AI ecosystem tools and SDKs
 description: This article provides an overview of the ecosystem of SDKs and tools available to .NET developers integrating AI into their applications.
-ms.date: 11/24/2024
+ms.date: 05/29/2025
 ms.topic: overview
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
 ---
 
-# Overview of the .NET + AI ecosystem
+# .NET + AI ecosystem tools and SDKs
 
 The .NET ecosystem provides many powerful tools, libraries, and services to develop AI applications. .NET supports both cloud and local AI model connections, many different SDKs for various AI and vector database services, and other tools to help you build intelligent apps of varying scope and complexity.
 
 > [!IMPORTANT]
-> Not all of the SDKs and services presented in this doc are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support, and compatibility to ensure they meet your requirements.
+> Not all of the SDKs and services presented in this article are maintained by Microsoft. When considering an SDK, make sure to evaluate its quality, licensing, support, and compatibility to ensure they meet your requirements.
 
 ## Microsoft.Extensions.AI libraries
 
-[`Microsoft.Extensions.AI`](ai-extensions.md) is a set of core .NET libraries that provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware. These APIs were created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. The low-level APIs, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, were extracted from Semantic Kernel and moved into the <xref:Microsoft.Extensions.AI> namespace.
+[`Microsoft.Extensions.AI`](microsoft-extensions-ai.md) is a set of core .NET libraries that provide a unified layer of C# abstractions for interacting with AI services, such as small and large language models (SLMs and LLMs), embeddings, and middleware. These APIs were created in collaboration with developers across the .NET ecosystem, including Semantic Kernel. The low-level APIs, such as <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2>, were extracted from Semantic Kernel and moved into the <xref:Microsoft.Extensions.AI> namespace.
 
 `Microsoft.Extensions.AI` provides abstractions that can be implemented by various services, all adhering to the same core concepts. This library is not intended to provide APIs tailored to any specific provider's services. The goal of `Microsoft.Extensions.AI` is to act as a unifying layer within the .NET ecosystem, enabling developers to choose their preferred frameworks and libraries while ensuring seamless integration and collaboration across the ecosystem.
 
@@ -76,10 +76,6 @@ For example, you can use [Ollama](https://ollama.com/) to [connect to local AI m
 ## Connect to vector databases and services
 
 [!INCLUDE [vector-databases](includes/vector-databases.md)]
-
-## Other options
-
-This article summarized the tools and SDKs in the .NET ecosystem, with a focus on services that provide official support for .NET. Depending on your needs and stage of app development, you might also want to take a look at the open-source options for the ecosystem in [the unofficial list of .NET + AI resources](https://github.com/jmatthiesen/dotnet-ai-resources?tab=readme-ov-file#models). Microsoft is not the maintainer of many of these projects, so be sure to review their quality, licensing, and support.
 
 ## Next steps
 

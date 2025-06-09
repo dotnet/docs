@@ -51,9 +51,11 @@ The following sections are organized by namespace and show which types are suppo
 
 | Type                                                                                            | Serialization | Deserialization |
 |-------------------------------------------------------------------------------------------------|---------------|-----------------|
-| [Single-dimensional arrays](../../../csharp/language-reference/builtin-types/arrays.md#single-dimensional-arrays) | ✔️           | ✔️              |
-| [Multi-dimensional arrays](../../../csharp/language-reference/builtin-types/arrays.md#multidimensional-arrays)    | ❌           | ❌              |
-| [Jagged arrays](../../../csharp/language-reference/builtin-types/arrays.md#jagged-arrays)                         | ✔️           | ✔️              |
+| [Single-dimensional arrays](../../../csharp/language-reference/builtin-types/arrays.md#single-dimensional-arrays)* | ✔️ | ✔️     |
+| [Multi-dimensional arrays](../../../csharp/language-reference/builtin-types/arrays.md#multidimensional-arrays)    | ❌  | ❌     |
+| [Jagged arrays](../../../csharp/language-reference/builtin-types/arrays.md#jagged-arrays)                         | ✔️  | ✔️     |
+
+\* `byte[]` is handled specially and serializes as a base64 string, not a JSON array.
 
 ### System.Collections namespace
 

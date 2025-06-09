@@ -1,14 +1,14 @@
 ---
-title: Tutorial - Evaluate a model's response
-description: Create an MSTest app and add a custom evaluator to evaluate the AI chat response of a language model, and learn how to use the caching and reporting features of Microsoft.Extensions.AI.Evaluation.
-ms.date: 03/14/2025
+title: Tutorial - Evaluate response quality with caching and reporting
+description: Create an MSTest app to evaluate the response quality of a language model, add a custom evaluator, and learn how to use the caching and reporting features of Microsoft.Extensions.AI.Evaluation.
+ms.date: 05/09/2025
 ms.topic: tutorial
 ms.custom: devx-track-dotnet-ai
 ---
 
-# Tutorial: Evaluate a model's response with response caching and reporting
+# Tutorial: Evaluate response quality with caching and reporting
 
-In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both a [built-in evaluator](xref:Microsoft.Extensions.AI.Evaluation.Quality.RelevanceTruthAndCompletenessEvaluator) and a custom evaluator.
+In this tutorial, you create an MSTest app to evaluate the chat response of an OpenAI model. The test app uses the [Microsoft.Extensions.AI.Evaluation](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation) libraries to perform the evaluations, cache the model responses, and create reports. The tutorial uses both built-in and custom evaluators. The built-in quality evaluators (from the [Microsoft.Extensions.AI.Evaluation.Quality package](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Quality)) use an LLM to perform evaluations; the custom evaluator does not use AI.
 
 ## Prerequisites
 
@@ -25,32 +25,32 @@ Complete the following steps to create an MSTest project that connects to the `g
 
 1. In a terminal window, navigate to the directory where you want to create your app, and create a new MSTest app with the `dotnet new` command:
 
-    ```dotnetcli
-    dotnet new mstest -o TestAIWithReporting
-    ```
+   ```dotnetcli
+   dotnet new mstest -o TestAIWithReporting
+   ```
 
 1. Navigate to the `TestAIWithReporting` directory, and add the necessary packages to your app:
 
-    ```dotnetcli
-    dotnet package add Azure.AI.OpenAI
-    dotnet package add Azure.Identity
-    dotnet package add Microsoft.Extensions.AI.Abstractions --prerelease
-    dotnet package add Microsoft.Extensions.AI.Evaluation --prerelease
-    dotnet package add Microsoft.Extensions.AI.Evaluation.Quality --prerelease
-    dotnet package add Microsoft.Extensions.AI.Evaluation.Reporting --prerelease
-    dotnet package add Microsoft.Extensions.AI.OpenAI --prerelease
-    dotnet package add Microsoft.Extensions.Configuration
-    dotnet package add Microsoft.Extensions.Configuration.UserSecrets
-    ```
+   ```dotnetcli
+   dotnet add package Azure.AI.OpenAI
+   dotnet add package Azure.Identity
+   dotnet add package Microsoft.Extensions.AI.Abstractions
+   dotnet add package Microsoft.Extensions.AI.Evaluation
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Quality
+   dotnet add package Microsoft.Extensions.AI.Evaluation.Reporting
+   dotnet add package Microsoft.Extensions.AI.OpenAI --prerelease
+   dotnet add package Microsoft.Extensions.Configuration
+   dotnet add package Microsoft.Extensions.Configuration.UserSecrets
+   ```
 
 1. Run the following commands to add [app secrets](/aspnet/core/security/app-secrets) for your Azure OpenAI endpoint, model name, and tenant ID:
 
-    ```bash
-    dotnet user-secrets init
-    dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-azure-openai-endpoint>
-    dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
-    dotnet user-secrets set AZURE_TENANT_ID <your-tenant-id>
-    ```
+   ```bash
+   dotnet user-secrets init
+   dotnet user-secrets set AZURE_OPENAI_ENDPOINT <your-Azure-OpenAI-endpoint>
+   dotnet user-secrets set AZURE_OPENAI_GPT_NAME gpt-4o
+   dotnet user-secrets set AZURE_TENANT_ID <your-tenant-ID>
+   ```
 
    (Depending on your environment, the tenant ID might not be needed. In that case, remove it from the code that instantiates the <xref:Azure.Identity.DefaultAzureCredential>.)
 
@@ -77,7 +77,7 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    **Scenario name**
 
-   The [scenario name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun.ScenarioName) is set to the fully qualified name of the current test method. However, you can set it to any string of your choice when you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>. Here are some considerations for choosing a scenario name:
+   The [scenario name](xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun.ScenarioName) is set to the fully qualified name of the current test method. However, you can set it to any string of your choice when you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>. Here are some considerations for choosing a scenario name:
 
    - When using disk-based storage, the scenario name is used as the name of the folder under which the corresponding evaluation results are stored. So it's a good idea to keep the name reasonably short and avoid any characters that aren't allowed in file and directory names.
    - By default, the generated evaluation report splits scenario names on `.` so that the results can be displayed in a hierarchical view with appropriate grouping, nesting, and aggregation. This is especially useful in cases where the scenario name is set to the fully qualified name of the corresponding test method, since it allows the results to be grouped by namespaces and class names in the hierarchy. However, you can also take advantage of this feature by including periods (`.`) in your own custom scenario names to create a reporting hierarchy that works best for your scenarios.
@@ -94,7 +94,7 @@ Complete the following steps to create an MSTest project that connects to the `g
 
    A <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration> identifies:
 
-   - The set of evaluators that should be invoked for each <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun> that's created by calling <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>.
+   - The set of evaluators that should be invoked for each <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ScenarioRun> that's created by calling <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>.
    - The LLM endpoint that the evaluators should use (see <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.ChatConfiguration?displayProperty=nameWithType>).
    - How and where the results for the scenario runs should be stored.
    - How LLM responses related to the scenario runs should be cached.
@@ -150,10 +150,10 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 
 ## Generate a report
 
-1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window (update the version as necessary):
+1. Install the [Microsoft.Extensions.AI.Evaluation.Console](https://www.nuget.org/packages/Microsoft.Extensions.AI.Evaluation.Console) .NET tool by running the following command from a terminal window:
 
    ```dotnetcli
-   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console --version 9.3.0-preview.1.25164.6
+   dotnet tool install --local Microsoft.Extensions.AI.Evaluation.Console
    ```
 
 1. Generate a report by running the following command:
@@ -171,4 +171,4 @@ Run the test using your preferred test workflow, for example, by using the CLI c
 - Navigate to the directory where the test results are stored (which is `C:\TestReports`, unless you modified the location when you created the <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration>). In the `results` subdirectory, notice that there's a folder for each test run named with a timestamp (`ExecutionName`). Inside each of those folders is a folder for each scenario name&mdash;in this case, just the single test method in the project. That folder contains a JSON file with the all the data including the messages, response, and evaluation result.
 - Expand the evaluation. Here are a couple ideas:
   - Add an additional custom evaluator, such as [an evaluator that uses AI to determine the measurement system](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/evaluation/Evaluators/MeasurementSystemEvaluator.cs) that's used in the response.
-  - Add another test method, for example, [a method that evaluates multiple responses](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example02_SamplingAndEvaluatingMultipleResponses.cs) from the LLM. Since each response can be different, it's good to sample and evaluate at least a few responses to a question. In this case, you specify an iteration name each time you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>.
+  - Add another test method, for example, [a method that evaluates multiple responses](https://github.com/dotnet/ai-samples/blob/main/src/microsoft-extensions-ai-evaluation/api/reporting/ReportingExamples.Example02_SamplingAndEvaluatingMultipleResponses.cs) from the LLM. Since each response can be different, it's good to sample and evaluate at least a few responses to a question. In this case, you specify an iteration name each time you call <xref:Microsoft.Extensions.AI.Evaluation.Reporting.ReportingConfiguration.CreateScenarioRunAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)>.

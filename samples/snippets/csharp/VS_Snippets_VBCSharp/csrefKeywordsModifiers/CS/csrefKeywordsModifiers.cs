@@ -785,7 +785,7 @@ namespace csrefKeywordsModifiers
             protected Shape(string color)
             {
                 Color = color;
-                Console.WriteLine("Created a shape with color {color}.");
+                Console.WriteLine($"Created a shape with color {color}.");
             }
 
             // Abstract method that must be implemented by derived classes
@@ -813,9 +813,51 @@ namespace csrefKeywordsModifiers
             public static void Main(string[] args)
              {
                     Square square = new Square("red", 5);
-                    Console.WriteLine("Area of the square: {square.CalculateArea()}");            
+                    Console.WriteLine($"Area of the square: {square.CalculateArea()}");            
              }
         }
         //</snippet27>
     } 
+
+      //<snippet28>
+  class Calc1
+  {
+      public void CalculateSum()
+      {
+          int a = 3;
+          int b = 7;
+
+          // Static local function - cannot access 'a' or 'b' directly
+          static int Add(int x, int y)
+          {
+              return x + y;
+          }
+
+          int result = Add(a, b); 
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+    /*
+   Output:
+   Sum: 10
+   */
+  //</snippet28>
+
+
+  //<snippet29>
+  class Calc2
+  {
+      static void Main()
+      {
+          Func<int, int, int> add = static (a, b) => a + b;
+
+          int result = add(5, 10);
+          Console.WriteLine($"Sum: {result}");
+      }
+  }
+  /*
+  Output:
+  Sum: 15
+  */
+  //</snippet29>
 }

@@ -1,7 +1,7 @@
 ---
 title: Code-style rules overview
 description: Learn about the different .NET code-style rules and categories.
-ms.date: 03/25/2025
+ms.date: 05/20/2025
 author: gewarren
 ms.author: gewarren
 ---
@@ -57,7 +57,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0025](ide0025.md) | Use expression body for properties | [csharp_style_expression_bodied_properties](ide0025.md#csharp_style_expression_bodied_properties) |
 > | [IDE0026](ide0026.md) | Use expression body for indexers | [csharp_style_expression_bodied_indexers](ide0026.md#csharp_style_expression_bodied_indexers) |
 > | [IDE0027](ide0027.md) | Use expression body for accessors | [csharp_style_expression_bodied_accessors](ide0027.md#csharp_style_expression_bodied_accessors) |
-> | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer)<br/>[dotnet_style_prefer_collection_expression (C# only)](ide0028.md#dotnet_style_prefer_collection_expression-c-only) |
+> | [IDE0028](ide0028.md) | Use collection initializers | [dotnet_style_collection_initializer](ide0028.md#dotnet_style_collection_initializer)<br/>[dotnet_style_prefer_collection_expression](ide0028.md#dotnet_style_prefer_collection_expression) |
 > | [IDE0029](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0030](ide0029-ide0030-ide0270.md) | Null check can be simplified | [dotnet_style_coalesce_expression](ide0029-ide0030-ide0270.md#dotnet_style_coalesce_expression) |
 > | [IDE0031](ide0031.md) | Use null propagation | [dotnet_style_null_propagation](ide0031.md#dotnet_style_null_propagation) |
@@ -148,6 +148,7 @@ The following table list all the code-style rules by ID and [options](../code-st
 > | [IDE0350](ide0350.md) | Use implicitly typed lambda | [csharp_style_prefer_implicitly_typed_lambda_expression](ide0350.md#csharp_style_prefer_implicitly_typed_lambda_expression) |
 > | [IDE1005](ide1005.md) | Use conditional delegate call | [csharp_style_conditional_delegate_call](ide1005.md#csharp_style_conditional_delegate_call) |
 > | [IDE1006](naming-rules.md) | Naming styles | |
+> | [IDE3000](ide3000.md) | Implement with Copilot | |
 
 > [!NOTE]
 > There are some rules that only surface in the Visual Studio IDE, and these regard JSON and regular expression pattern strings. For more information, see [JSON001](/visualstudio/ide/reference/json001), [JSON002](/visualstudio/ide/reference/json002), and [RE0001](/visualstudio/ide/reference/re0001).

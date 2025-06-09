@@ -3,7 +3,7 @@ title: Use scoped services within a BackgroundService
 description: Learn how to use scoped services within a BackgroundService in .NET.
 author: IEvangelist
 ms.author: dapine
-ms.date: 11/06/2024
+ms.date: 05/27/2025
 ms.topic: tutorial
 ---
 
@@ -15,7 +15,7 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> - Resolve scoped dependencies in a singleton <xref:Microsoft.Extensions.Hosting.BackgroundService>.
+> - Correctly resolve scoped dependencies in a singleton <xref:Microsoft.Extensions.Hosting.BackgroundService>.
 > - Delegate work to a scoped service.
 > - Implement an `override` of <xref:Microsoft.Extensions.Hosting.BackgroundService.StopAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>.
 

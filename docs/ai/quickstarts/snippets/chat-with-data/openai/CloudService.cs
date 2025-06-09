@@ -1,19 +1,20 @@
 ﻿using Microsoft.Extensions.VectorData;
 
-namespace VectorDataAI
+namespace VectorDataAI;
+
+internal class CloudService
 {
-    internal class CloudService
-    {
-        [VectorStoreRecordKey]
-        public int Key { get; set; }
+    [VectorStoreKey]
+    public int Key { get; set; }
 
-        [VectorStoreRecordData]
-        public string Name { get; set; }
+    [VectorStoreData]
+    public string Name { get; set; }
 
-        [VectorStoreRecordData]
-        public string Description { get; set; }
+    [VectorStoreData]
+    public string Description { get; set; }
 
-        [VectorStoreRecordVector(384, DistanceFunction.CosineSimilarity)]
-        public ReadOnlyMemory<float> Vector { get; set; }
-    }
+    [VectorStoreVector(
+        Dimensions: 384,
+        DistanceFunction = DistanceFunction.CosineSimilarity)]
+    public ReadOnlyMemory<float> Vector { get; set; }
 }

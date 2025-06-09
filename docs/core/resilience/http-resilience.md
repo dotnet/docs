@@ -17,7 +17,7 @@ To use resilience-patterns in HTTP apps, install the [Microsoft.Extensions.Http.
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
-dotnet package add Microsoft.Extensions.Http.Resilience --version 8.0.0
+dotnet add package Microsoft.Extensions.Http.Resilience --version 8.0.0
 ```
 
 ### [PackageReference](#tab/package-reference)
@@ -202,6 +202,9 @@ The preceding code:
 - Adds a timeout strategy with a timeout of five seconds to the resilience builder.
 
 There are many options available for each of the resilience strategies. For more information, see the [Polly docs: Strategies](https://www.pollydocs.org/strategies). For more information about configuring `ShouldHandle` delegates, see [Polly docs: Fault handling in reactive strategies](https://www.pollydocs.org/strategies#fault-handling).
+
+> [!WARNING]
+> If you're using both retry and timeout strategies, and you want to configure the `ShouldHandle` delegate in your retry strategy, make sure to consider whether it should handle Polly's timeout exception. Polly throws a `TimeoutRejectedException` (which inherits from <xref:System.Exception>), not the standard <xref:System.TimeoutException>.
 
 ### Dynamic reload
 

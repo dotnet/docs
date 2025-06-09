@@ -52,7 +52,7 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
 
 ## Deployment
 
- The Web Deployment tool has been created to make the job of deployment easier. The tool allows you to migrate applications between IIS 6.0 and IIS 7.0, synchronize server farms, and package, archive and deploy Web applications. For more information, see [MS Deployment Tool](https://iis-umbraco.azurewebsites.net/downloads/microsoft/web-deploy).
+ The Web Deployment tool has been created to make the job of deployment easier. The tool allows you to migrate applications between IIS 6.0 and IIS 7.0, synchronize server farms, and package, archive, and deploy Web applications. For more information, see [Web Deploy Tool](https://iis-umbraco.azurewebsites.net/downloads/microsoft/web-deploy).
 
 ## See also
 

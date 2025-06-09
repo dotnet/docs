@@ -1,7 +1,7 @@
 ---
 title: System.Numerics.Complex struct
 description: Learn about the System.Numerics.Complex struct.
-ms.date: 12/31/2023
+ms.date: 05/15/2025
 dev_langs:
   - CSharp
   - VB
@@ -85,11 +85,11 @@ Note that this applies to any intermediate calculations performed by a method. F
 
 ## Format a complex number
 
-By default, the string representation of a complex number takes the form `(`*real*`,` *imaginary*`)`, where *real* and *imaginary* are the string representations of the <xref:System.Double> values that form the complex number's real and imaginary components. Some overloads of the <xref:System.Numerics.Complex.ToString%2A> method allow customization of the string representations of these <xref:System.Double> values to reflect the formatting conventions of a particular culture or to appear in a particular format defined by a standard or custom numeric format string. (For more information, see [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md).)
+By default, the string representation of a complex number takes the form `<`*real*`;` *imaginary*`>`, where *real* and *imaginary* are the string representations of the <xref:System.Double> values that form the complex number's real and imaginary components. Some overloads of the <xref:System.Numerics.Complex.ToString%2A> method allow customization of the string representations of these <xref:System.Double> values to reflect the formatting conventions of a particular culture or to appear in a particular format defined by a standard or custom numeric format string. (For more information, see [Standard Numeric Format Strings](../../standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../standard/base-types/custom-numeric-format-strings.md).)
 
-One of the more common ways of expressing the string representation of a complex number takes the form a + bi, where a is the complex number's real component, and b is the complex number's imaginary component. In electrical engineering, a complex number is most commonly expressed as a + bj. You can return the string representation of a complex number in either of these two forms. To do this, define a custom format provider by implementing the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces, and then call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method.
+One of the more common ways of expressing the string representation of a complex number takes the form `a + bi`, where `a` is the complex number's real component, and `b` is the complex number's imaginary component. In electrical engineering, a complex number is most commonly expressed as `a + bj`. You can return the string representation of a complex number in either of these two forms. To do this, define a custom format provider by implementing the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces, and then call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> method.
 
-The following example defines a `ComplexFormatter` class that represents a complex number as a string in the form of either a + bi or a + bj.
+The following example defines a `ComplexFormatter` class that represents a complex number as a string in the form of either `a + bi` or `a + bj`.
 
 :::code language="csharp" source="./snippets/System.Numerics/Complex/Overview/csharp/customfmt1.cs" id="Snippet1":::
 :::code language="vb" source="./snippets/System.Numerics/Complex/Overview/vb/customfmt1.vb" id="Snippet1":::

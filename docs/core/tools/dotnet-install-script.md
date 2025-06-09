@@ -155,13 +155,11 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-Quality|--quality <QUALITY>`**
 
-  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `signed`, `validated`, `preview`, and `GA`. Most users should use `daily`, `preview`, or `GA` qualities.
+  Downloads the latest build of the specified quality in the channel. The possible values are: `daily`, `preview`, and `GA`.
 
   The different quality values signal different stages of the release process of the SDK or Runtime installed.
 
   * `daily`: The latest builds of the SDK or Runtime. They're built every day and aren't tested. They aren't recommended for production use but can often be used to test specific features or fixes immediately after they are merged into the product. These builds are from the `dotnet/installer` repo, and so if you're looking for fixes from `dotnet/sdk` you must wait for code to flow and be merged from SDK to Installer before it appears in a daily build.
-  * `signed`: Microsoft-signed builds that aren't validated or publicly released. Signed builds are candidates for validation, preview, and GA release. This quality level is not intended for public use.
-  * `validated`: Builds that have had some internal testing done on them but are not yet released as preview or GA. This quality level is not intended for public use.
   * `preview`: The monthly public releases of the next version of .NET, intended for public use. Not recommended for production use. Intended to allow users to experiment and test the new major version before release.
   * `GA`: The final stable releases of the .NET SDK and Runtime. Intended for public use as well as production support.
 
@@ -209,7 +207,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-ZipPath|--zip-path <PATH>`**
 
- If set, the downloaded SDK archive is stored at the specified path.
+  If set, the downloaded SDK archive is stored at the specified path.
 
 - **`-Verbose|--verbose`**
 

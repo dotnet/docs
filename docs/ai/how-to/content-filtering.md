@@ -2,10 +2,8 @@
 title: "Manage OpenAI Content Filtering in a .NET app"
 description: "Learn how to manage OpenAI content filtering programmatically in a .NET app using the OpenAI client library."
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: alexwolfmsft
-ms.author: alexwolf
 ms.topic: how-to
-ms.date: 12/19/2024
+ms.date: 05/29/2025
 
 #customer intent: As a .NET developer, I want to manage OpenAI Content Filtering in a .NET app
 
@@ -31,9 +29,15 @@ To use the sample code in this article, you need to create and assign a content 
 
 1. Add the [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI) NuGet package to your project.
 
-    ```dotnetcli
-    dotnet package add Azure.AI.OpenAI
-    ```
+   ```dotnetcli
+   dotnet add package Azure.AI.OpenAI
+   ```
+
+   Or, in .NET 10+:
+
+   ```dotnetcli
+   dotnet package add Azure.AI.OpenAI
+   ```
 
 1. Create a simple chat completion flow in your .NET app using the `AzureOpenAiClient`. Replace the `YOUR_MODEL_ENDPOINT` and `YOUR_MODEL_DEPLOYMENT_NAME` values with your own.
 

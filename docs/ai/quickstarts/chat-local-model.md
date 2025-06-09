@@ -1,11 +1,9 @@
 ---
 title: Quickstart - Connect to and chat with a local AI using .NET
 description: Set up a local AI model and chat with it using a .NET console app and the Microsoft.Extensions.AI libraries
-ms.date: 12/19/2024
+ms.date: 05/28/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Chat with a local AI model using .NET
@@ -62,10 +60,10 @@ Complete the following steps to create a .NET console app that connects to your 
     dotnet new console -o LocalAI
     ```
 
-1. Add the [Microsoft.Extensions.AI.Ollama](https://aka.ms/meai-ollama-nuget) packages to your app:
+1. Add the [OllamaSharp](https://www.nuget.org/packages/OllamaSharp) package to your app:
 
     ```dotnetcli
-    dotnet package add Microsoft.Extensions.AI.Ollama --prerelease
+    dotnet add package OllamaSharp
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.
@@ -84,12 +82,12 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
 
     The preceding code accomplishes the following:
 
-    - Creates an `OllamaChatClient` that implements the `IChatClient` interface.
-        - This interface provides a loosely coupled abstraction you can use to chat with AI Models.
-        - You can later change the underlying chat client implementation to another model, such as Azure OpenAI, without changing any other code.
-    - Creates a `ChatHistory` object to store the messages between the user and the AI model.
-    - Retrieves a prompt from the user and stores it in the `ChatHistory`.
-    - Sends the chat data to the AI model to generate a response.
+    * Creates an `OllamaChatClient` that implements the `IChatClient` interface.
+        * This interface provides a loosely coupled abstraction you can use to chat with AI Models.
+        * You can later change the underlying chat client implementation to another model, such as Azure OpenAI, without changing any other code.
+    * Creates a `ChatHistory` object to store the messages between the user and the AI model.
+    * Retrieves a prompt from the user and stores it in the `ChatHistory`.
+    * Sends the chat data to the AI model to generate a response.
 
     > [!NOTE]
     > Ollama runs on port 11434 by default, which is why the AI model endpoint is set to `http://localhost:11434`.
@@ -146,4 +144,4 @@ The Semantic Kernel SDK provides many services and features to connect to AI mod
 
 ## Next steps
 
-- [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)
+* [Generate text and conversations with .NET and Azure OpenAI Completions](/training/modules/open-ai-dotnet-text-completions/)

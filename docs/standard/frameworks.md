@@ -1,7 +1,7 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET apps and libraries.
-ms.date: 11/11/2024
+ms.date: 04/07/2025
 ms.service: dotnet
 ms.custom: updateeachrelease
 ms.subservice: standard-library
@@ -42,6 +42,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0<br>netstandard2.1 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472<br>net48<br>net481 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
+| .NET nanoFramework         | netnano1.0 |
 | .NET Micro Framework       | netmf |
 | Silverlight                | sl4<br>sl5 |
 | Windows Phone              | wp [wp7]<br>wp7<br>wp75<br>wp8<br>wp81<br>wpa81 |
@@ -109,27 +110,27 @@ Use these guidelines to determine which TFM to use in your app:
 
 You can also specify an optional OS version at the end of an OS-specific TFM, for example, `net6.0-ios15.0`. The version indicates which APIs are available to your app or library. It doesn't control the OS version that your app or library supports at run time. It's used to select the reference assemblies that your project compiles against, and to select assets from NuGet packages. Think of this version as the "platform version" or "OS API version" to disambiguate it from the run-time OS version.
 
-When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform value for Android in .NET 6 is `31.0`, which means that `net6.0-android` is shorthand for the canonical `net6.0-android31.0` TFM. The implied platform version for a newer base TFM may be higher, for example, a future `net8.0-android` TFM could map to `net8.0-android34.0`. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
+The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 32 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-android32.0`.
 
-The following table shows the default target platform values (TPV) for each .NET release.
+When an OS-specific TFM doesn't specify the platform version explicitly, it has an implied value that can be inferred from the base TFM and platform name. For example, the default platform version for Android in .NET 9 is `35.0`, which means that `net9.0-android` is shorthand for the canonical `netp.0-android35.0` TFM. The shorthand form is intended for use in project files only, and is expanded to the canonical form by the .NET SDK's MSBuild targets before being passed to other tools, such as NuGet.
+
+The following table shows the *default* target platform version (TPV) for each .NET release. **If you want to use the latest bindings, use the default (that is, don't specify an OS version).**
 
 | .NET version | Android | iOS  | Mac Catalyst | macOS | tvOS | Tizen | Windows |
 |--------------|--------:|-----:|-------------:|------:|-----:|------:|--------:|
-| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |  10.0 |    10.0 |
-| .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |  10.0 |    10.0 |
+| .NET 8       |    34.0 | 17.2 |         17.2 | 14.2  | 17.1 |  10.0 |     7.0 |
+| .NET 9       |    35.0 | 18.0 |         18.0 | 15.0  |      |  10.0 |     7.0 |
+
+Starting in .NET 9, when service releases introduce support for a later TPV (which will always have the same *major* version number as when the .NET version was initially released), the earliest supported TPV for that .NET version will remain supported. For example, for .NET 9, the earliest supported iOS version, 18.0, will remain supported, even when a service release adds support for the latest iOS 18.x version. **If you need to use the earliest bindings for a .NET release, use a specific OS version number in your TFM.**
 
 > [!NOTE]
 > On Apple platforms (iOS, macOS, tvOS, and Mac Catalyst) in .NET 8 and earlier,
 > the default TPV is the latest supported version in the currently installed workload.
 > That means that updating the iOS workload in .NET 8, for example, might result in a higher default
 > TPV, if support for a new version of iOS has been added in that workload. In the preceding table,
-> the default TPV is the one in the initial release for the stated .NET version.
+> the default TPV is the version in the initial release for the stated .NET version.
 >
-> Starting in .NET 9, this special behavior only applies to executable projects.
-> The default TPV for library projects now stays the same for the entirety of
-> a major .NET release, like all other platforms.
-
-The .NET SDK is designed to be able to support newly released APIs for an individual platform without a new version of the base TFM. This enables you to access platform-specific functionality without waiting for a major release of .NET. You can gain access to these newly released APIs by incrementing the platform version in the TFM. For example, if the Android platform added API level 32 APIs in a .NET 6.0.x SDK update, you could access them by using the TFM `net6.0-android32.0`.
+> Starting in .NET 9, this special behavior only applies to *executable* projects. The default TPV for library projects now stays the same for the entirety of a major .NET release, like all other platforms.
 
 #### Precedence
 
@@ -243,10 +244,6 @@ The following target frameworks are deprecated. Packages that target these targe
 ## See also
 
 - [Target framework names in .NET 5](https://github.com/dotnet/designs/blob/main/accepted/2020/net5/net5.md)
-- [Call Windows Runtime APIs in desktop apps](/windows/apps/desktop/modernize/desktop-to-uwp-enhance)
-- [Developing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)
 - [.NET Standard](net-standard.md)
-- [.NET Core Versioning](../core/versions/index.md)
-- [NuGet Tools GitHub Repository](https://github.com/joelverhagen/NuGetTools)
-- [Framework Profiles in .NET](https://blog.stephencleary.com/2012/05/framework-profiles-in-net.html)
-- [Platform compatibility analyzer](analyzers/platform-compat-analyzer.md)
+- [.NET versioning](../core/versions/index.md)
+- [Windows 11 release information](/windows/release-health/windows11-release-information)

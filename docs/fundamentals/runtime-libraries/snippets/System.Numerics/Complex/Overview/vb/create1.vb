@@ -5,7 +5,7 @@ Option Strict On
 Imports System.Numerics
 
 Module Example
-   Public Sub Main()
+   Public Sub Run()
       ' Create a complex number by calling its class constructor.
       Dim c1 As New Complex(12, 6)
       Console.WriteLine(c1)

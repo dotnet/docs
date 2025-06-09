@@ -93,6 +93,8 @@ items:
                       href: ../../core/testing/unit-testing-fsharp-with-mstest.md
                     - name: VB example
                       href: ../../core/testing/unit-testing-visual-basic-with-mstest.md
+                  - name: Lifecycle
+                    href: ../../core/testing/unit-testing-mstest-writing-tests-lifecycle.md
                   - name: Attributes
                     href: ../../core/testing/unit-testing-mstest-writing-tests-attributes.md
                   - name: Assertions
@@ -207,6 +209,10 @@ items:
                         href: ../../core/testing/mstest-analyzers/mstest0040.md
                       - name: MSTEST0041
                         href: ../../core/testing/mstest-analyzers/mstest0041.md
+                      - name: MSTEST0042
+                        href: ../../core/testing/mstest-analyzers/mstest0042.md
+                      - name: MSTEST0043
+                        href: ../../core/testing/mstest-analyzers/mstest0043.md
       - name: Test platforms
         items:
           - name: Microsoft.Testing.Platform

@@ -20,6 +20,12 @@ To get started, install the [📦 Microsoft.Extensions.Compliance.Abstractions](
 ### [.NET CLI](#tab/dotnet-cli)
 
 ```dotnetcli
+dotnet add package Microsoft.Extensions.Compliance.Abstractions
+```
+
+Or, if you're using .NET 10+ SDK:
+
+```dotnetcli
 dotnet package add Microsoft.Extensions.Compliance.Abstractions
 ```
 
@@ -56,6 +62,10 @@ internal static class MyTaxonomyClassifications
 If you want to share your custom classification taxonomy with other apps, this class and its members should be `public` instead of `internal`. For example, you can have a shared library containing custom classifications, that you can use in multiple applications.
 
 <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet> lets you compose multiple data classifications into a single set. This allows you classify your data with multiple data classifications. In addition, the .NET redaction APIs make use of a <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet>.
+
+> [!NOTE]
+> Multiple data classifications going together as a <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet> are treated as a single classification. You can think of it as a logical `AND` operation. For example,
+if you configured redaction for data classified as a <xref:Microsoft.Extensions.Compliance.Classification.DataClassificationSet> of `PrivateInformation` and `SocialSecurityNumber`, it will not apply to data classified as only `PrivateInformation` or only `SocialSecurityNumber`.
 
 ## Create custom classification attributes
 

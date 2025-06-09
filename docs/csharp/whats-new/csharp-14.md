@@ -1,13 +1,15 @@
 ---
 title: What's new in C# 14
 description: Get an overview of the new features in C# 14. C# 14 ships with .NET 10.
-ms.date: 02/19/2025
+ms.date: 04/17/2025
 ms.topic: whats-new
 ---
 # What's new in C# 14
 
 C# 14 includes the following new features. You can try these features using the latest [Visual Studio 2022](https://visualstudio.microsoft.com/vs/preview/) version or the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet):
 
+- [Extension members](#extension-members)
+- [Null-conditional assignment](#null-conditional-assignment)
 - [`nameof` supports unbound generic types](#unbound-generic-types-and-nameof)
 - [More implicit conversions for `Span<T>` and `ReadOnlySpan<T>`](#implicit-span-conversions)
 - [Modifiers on simple lambda parameters](#simple-lambda-parameters-with-modifiers)
@@ -23,6 +25,41 @@ New features are added to the "What's new in C#" page when they're available in 
 You can find any breaking changes introduced in C# 14 in our article on [breaking changes](~/_roslyn/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20DotNet%2010.md).
 
 [!INCLUDE [released-version-feedback](./includes/released-feedback.md)]
+
+## Extension members
+
+C# 14 adds new syntax to define *extension members*. The new syntax enables you to declare *extension properties* in addition to extension methods. You can also declare extension members that extend the type, rather than an instance of the type. In other words, these new extension members can appear as static members of the type you extend. The following code example shows an example of the different kinds of extension members you can declare:
+
+```csharp
+public static class Enumerable
+{
+    // Extension block
+    extension<TSource>(IEnumerable<TSource> source) // extension members for IEnumerable<TSource>
+    {
+        // Extension property:
+        public bool IsEmpty => !source.Any();
+        // Extension indexer:
+        public TSource this[int index] => source.Skip(index).First();
+
+        // Extension method:
+        public IEnumerable<TSource> Where(Func<TSource, bool> predicate) { ... }
+    }
+
+    // extension block, with a receiver type only
+    extension<TSource>(IEnumerable<TSource>) // static extension members for IEnumerable<Source>
+    {
+        // static extension method:
+        public static IEnumerable<TSource> Combine(IEnumerable<TSource> first, IEnumerable<TSource> second) { ... }
+
+        // static extension property:
+        public static IEnumerable<TSource> Identity => Enumerable.Empty<TSource>();
+    }
+}
+```
+
+The members in the first extension block are called as though they're instance members of `IEnumerable<TSource>`, for example `sequence.IsEmpty`. The members in the second extension block are called as though they're static members of `IEnumerable<TSource>`, for example `IEnumerable<int>.Identity`.
+
+You can learn more details by reading the article on [extension members](../programming-guide/classes-and-structs/extension-methods.md) in the programming guide, the language reference article on the [`extension` keyword](../language-reference/keywords/extension.md), and the [feature specification](~/_csharplang/proposals/extensions.md) for the new extension members feature.
 
 ## The `field` keyword
 
@@ -98,6 +135,31 @@ Partial constructors and partial events must include exactly one *defining decla
 Only the implementing declaration of a partial constructor can include a constructor initializer: `this()` or `base()`. Only one partial type declaration can include the primary constructor syntax.
 
 The implementing declaration of a partial event must include `add` and `remove` accessors. The defining declaration declares a field-like event.
+
+## Null-conditional assignment
+
+The null-conditional member access operators, `?.` and `?[]`, can now be used on the left hand side of an assignment or compound assignment.
+
+Before C# 14, you needed to null-check a variable before assigning to a property:
+
+```csharp
+if (customer is not null)
+{
+    customer.Order = GetCurrentOrder();
+}
+```
+
+You can simplify the preceding code using the `?.` operator:
+
+```csharp
+customer?.Order = GetCurrentOrder();
+```
+
+The right side of the `=` operator is evaluated only when the left side isn't null. If `customer` is null, the code doesn't call `GetCurrentOrder`.
+
+In addition to assignment, you can use null-conditional member access operators with compound assignment operators (`+=`, `-=`, and others). However, increment and decrement, `++` and `--`, aren't allowed.
+
+You can learn more in the language reference article on the [conditional member access](../language-reference/operators/member-access-operators.md#null-conditional-operators--and-) and the feature specification for [null-conditional assignment](~/_csharplang/proposals/null-conditional-assignment.md).
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: Artifacts output layout
 description: Learn about a .NET SDK feature that centralizes and simplifies the layout of project outputs.
-ms.date: 10/31/2023
+ms.date: 05/28/2025
 ---
 # Artifacts output layout
 
@@ -18,23 +18,25 @@ By default, the common location is a directory named *artifacts* next to the *Di
 
 The following table shows the default values for each level in the folder structure. You can override the values, as well as the default location, using properties in the *Directory.build.props* file.
 
-| Folder level | Description | Examples |
-|--|--|--|
-| Type of output | Categories of build outputs, such as binaries, intermediate/generated files, published applications, and NuGet packages. |`bin`, `obj`, `publish`, `package` |
-| Project name | Separates output by each project. | `MyApp` |
-| Pivot | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). Can be customized using the `ArtifactsPivots` MSBuild property. | `debug`, `debug_net8.0`, `release`, `release_linux-x64` |
+| Folder level   | Description                       | Examples                           |
+|----------------|-----------------------------------|------------------------------------|
+| Type of output | Categories of build outputs, such as binaries, intermediate/generated files, published applications, and NuGet packages. | `bin`, `obj`, `publish`, `package` |
+| Project name†  | Separates output by each project. | `MyApp`                            |
+| Pivot†         | Distinguishes between builds of a project for different configurations, target frameworks, and runtime identifiers. If multiple elements are needed, they're joined by an underscore (`_`). Can be [customized](#how-to-configure) using the `ArtifactsPivots` MSBuild property. | `debug`, `debug_net8.0`, `release`, `release_linux-x64` |
+
+† The project name subfolder is omitted for package output paths. In addition, the pivot subfolder includes only the configuration.
 
 ## Examples
 
 The following table shows examples of paths that might be created.
 
-| Path                                        | Description                                                                    |
-|---------------------------------------------|--------------------------------------------------------------------------------|
-| *artifacts\bin\MyApp\debug*                 | The build output path for a simple project when you run `dotnet build`.        |
-| *artifacts\obj\MyApp\debug*                 | The intermediate output path for a simple project when you run `dotnet build`. |
-| *artifacts\bin\MyApp\debug_net8.0*          | The build output path for the `net8.0` build of a multi-targeted project.      |
-| *artifacts\publish\MyApp\release_linux-x64* | The publish path for a simple app when publishing for `linux-x64`.             |
-| *artifacts\package\MyApp\release*           | The folder where the release *.nupkg* is created for a project.                |
+| Path                               | Description                                                                    |
+|------------------------------------|--------------------------------------------------------------------------------|
+| *artifacts\bin\MyApp\debug*        | The build output path for a simple project when you run `dotnet build`.        |
+| *artifacts\obj\MyApp\debug*        | The intermediate output path for a simple project when you run `dotnet build`. |
+| *artifacts\bin\MyApp\debug_net8.0* | The build output path for the `net8.0` build of a multi-targeted project.      |
+| *artifacts\publish\MyApp\release_linux-x64* | The publish path for a simple app when publishing for `linux-x64`.    |
+| *artifacts\package\release*        | The folder where the release *.nupkg* is created for a project.                |
 
 ## How to configure
 

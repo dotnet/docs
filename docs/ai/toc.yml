@@ -2,21 +2,25 @@ items:
 - name: AI for .NET developers
   href: index.yml
 - name: Overview
-  href: get-started/dotnet-ai-overview.md
+  href: overview.md
 - name: "Quickstart: Connect to and prompt an AI model"
   href: quickstarts/prompt-model.md
-- name: AI frameworks and SDKs
+- name: AI tools and SDKs
   items:
   - name: Overview
     href: dotnet-ai-ecosystem.md
   - name: Microsoft.Extensions.AI
-    href: ai-extensions.md
+    href: microsoft-extensions-ai.md
   - name: Semantic Kernel
     href: semantic-kernel-dotnet-overview.md
+  - name: C# SDK for MCP
+    href: get-started-mcp.md
 - name: Quickstarts
   items:
   - name: Build a chat app
     href: quickstarts/build-chat-app.md
+  - name: Request structured output
+    href: quickstarts/structured-output.md
   - name: Build a .NET AI vector search app
     href: quickstarts/build-vector-search-app.md
   - name: Execute a local .NET function
@@ -29,6 +33,10 @@ items:
     href: quickstarts/create-assistant.md
   - name: Get started using the AI app templates
     href: quickstarts/ai-templates.md
+  - name: Build a minimal MCP server
+    href: quickstarts/build-mcp-server.md
+  - name: Build a minimal MCP client
+    href: quickstarts/build-mcp-client.md
 - name: Concepts
   items:
   - name: How generative AI and LLMs work
@@ -77,13 +85,23 @@ items:
   items:
   - name: The Microsoft.Extensions.AI.Evaluation libraries
     href: conceptual/evaluation-libraries.md
-  - name: "Quickstart: Evaluate a model's response"
-    href: quickstarts/evaluate-ai-response.md
-  - name: "Tutorial: Evaluate a response with response caching and reporting"
-    href: tutorials/evaluate-with-reporting.md
-  - name: "Tutorial: Evaluate LLM prompt completions"
-    href: tutorials/llm-eval.md
+  - name: Tutorials
+    items:
+    - name: "Quickstart: Evaluate the quality of a response"
+      href: quickstarts/evaluate-ai-response.md
+    - name: "Evaluate response quality with caching and reporting"
+      href: tutorials/evaluate-with-reporting.md
+    - name: "Evaluate response safety with caching and reporting"
+      href: tutorials/evaluate-safety.md
 - name: Resources
   items:
+  - name: API reference
+    items:
+    - name: ChatClientBuilder
+      href: /dotnet/api/microsoft.extensions.ai.chatclientbuilder
+    - name: IChatClient
+      href: /dotnet/api/microsoft.extensions.ai.ichatclient
+    - name: IEmbeddingGenerator
+      href: /dotnet/api/microsoft.extensions.ai.iembeddinggenerator
   - name: Azure AI samples and docs
     href: azure-ai-for-dotnet-developers.md

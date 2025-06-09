@@ -208,6 +208,34 @@ additionalContent:
       summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
       items:
         # Card
+        - title: Machine learning and AI
+          links:
+            - url: ../machine-learning/index.yml
+              text: Build custom AI solutions with ML.NET
+            - url: /azure/cognitive-services/
+              text: Azure Cognitive Services
+            - url: /azure/machine-learning
+              text: Azure Machine Learning
+            - url: ../fsharp/scenarios/machine-learning.md
+              text: F# for machine learning
+        # Card
+        - title: Cloud
+          links:
+            - url: ../azure/index.yml
+              text: Azure for .NET developers
+            - url: /dotnet/aspire
+              text: .NET Aspire
+            - url: /dotnet/aspire/get-started/quickstart-build-your-first-aspire-app
+              text: Build cloud-native apps with .NET Aspire
+            - url: ../azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
+              text: Migrate on-premises .NET web apps or services
+            - url: ../azure/key-azure-services.md
+              text: Azure services for .NET developers
+            - url: ../azure/sdk/azure-sdk-for-dotnet.md
+              text: Azure SDK for .NET
+            - url: ../fsharp/using-fsharp-on-azure/deploying-and-managing.md
+              text: Deploy Azure resources with F#
+        # Card
         - title: Web
           links:
             - url: /aspnet/core/tutorials
@@ -223,21 +251,6 @@ additionalContent:
             - url: ../fsharp/scenarios/web-development.md
               text: F# for web development
         # Card
-        - title: Mobile and Desktop
-          links:
-            - url: /dotnet/desktop/wpf/
-              text: Windows Presentation Foundation (.NET 5+)
-            - url: /dotnet/desktop/winforms/
-              text: Windows Forms (.NET 5+)
-            - url: /dotnet/maui
-              text: .NET Multi-platform App UI (.NET MAUI)
-            - url: /azure/developer/mobile-apps
-              text: Develop mobile apps with Azure
-            - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8&preserve-view=true
-              text: Windows Presentation Foundation (.NET Framework)
-            - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8&preserve-view=true
-              text: Windows Forms (.NET Framework)
-        # Card
         - title: Microservices
           links:
             - url: ../architecture/dapr-for-net-developers/index.md
@@ -251,31 +264,24 @@ additionalContent:
             - url: ../core/extensions/cloud-service.md
               text: Deploy a Worker Service to Azure
         # Card
-        - title: Cloud
+        - title: Mobile, Desktop, and IoT
           links:
-            - url: ../azure/index.yml
-              text: Azure for .NET developers
-            - url: /dotnet/aspire
-              text: .NET Aspire
-            - url: ../azure/migration/app-service.md?preserve-view=true&view=azure-dotnet
-              text: Migrate on-premises .NET web apps or services
-            - url: ../azure/key-azure-services.md
-              text: Azure services for .NET developers
-            - url: ../azure/sdk/azure-sdk-for-dotnet.md
-              text: Azure SDK for .NET
-            - url: ../fsharp/using-fsharp-on-azure/deploying-and-managing.md
-              text: Deploy Azure resources with F#
-        # Card
-        - title: Machine learning and AI
-          links:
-            - url: ../machine-learning/index.yml
-              text: Build custom AI solutions with ML.NET
-            - url: /azure/cognitive-services/
-              text: Azure Cognitive Services
-            - url: /azure/machine-learning
-              text: Azure Machine Learning
-            - url: ../fsharp/scenarios/machine-learning.md
-              text: F# for machine learning
+            - url: /dotnet/desktop/wpf/
+              text: Windows Presentation Foundation
+            - url: /dotnet/desktop/winforms/
+              text: Windows Forms
+            - url: /dotnet/maui
+              text: .NET Multi-platform App UI (.NET MAUI)
+            - url: /azure/developer/mobile-apps
+              text: Develop mobile apps with Azure
+            - url: ../iot/index.yml
+              text: .NET IoT libraries
+            - url: ../iot/quickstarts/sensehat.md
+              text: Get started with IOT in 5 minutes
+            - url: ../iot/tutorials/blink-led.md
+              text: Blink an LED
+            - url: https://aka.ms/dotnet/beginnervideos/youtube/iot
+              text: .NET IoT 101 video series
         # Card
         - title: Game development
           links:
@@ -287,17 +293,6 @@ additionalContent:
               text: Build games with C# using the MonoGame library
             - url: https://docs.unity3d.com/Manual/index.html
               text: Learn how to use Unity to build 2D and 3D games with C#
-        # Card
-        - title: Internet of things (IoT)
-          links:
-            - url: ../iot/index.yml
-              text: .NET IoT libraries
-            - url: ../iot/quickstarts/sensehat.md
-              text: Get started in 5 minutes
-            - url: ../iot/tutorials/blink-led.md
-              text: Blink an LED
-            - url: https://aka.ms/dotnet/beginnervideos/youtube/iot
-              text: .NET IoT 101 video series
 
     - title: API and language reference # < 60 chars (optional)
       summary: Search the .NET API and language reference documentation. # < 160 chars (optional)
@@ -307,17 +302,21 @@ additionalContent:
           summary: API reference documentation for .NET
           url: ../../api/index.md
         # Card
-        - title: ".NET Framework API reference"
-          summary: API reference documentation for .NET Framework
-          url: ../../api/index.md?view=netframework-4.8&preserve-view=true
-        # Card
         - title: "ASP.NET Core API reference"
           summary: API reference documentation for ASP.NET Core
           url: ../../api/index.md
         # Card
+        - title: ".NET Aspire API reference"
+          summary: Reference documentation for .NET Aspire
+          url: ../../api/index.md?view=dotnet-aspire-9.0&preserve-view=true
+        # Card
         - title: "ML.NET API reference"
           summary: API reference documentation for ML.NET
           url: ../../api/index.md
+        # Card
+        - title: ".NET Framework API reference"
+          summary: API reference documentation for .NET Framework
+          url: ../../api/index.md?view=netframework-4.8&preserve-view=true
 
   # footer (Optional; Remove if not applicable.)
   footer: "Are you interested in contributing to the .NET docs? For more information, see our [contributor guide](/contribute/dotnet/dotnet-contribute)."

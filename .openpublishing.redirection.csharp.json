@@ -117,6 +117,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#164127-stackalloc"
         },
         {
+            "source_path_from_root": "/redirections/proposals/csharp-8.0/readonly-instance-members.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#16411-properties"
+        },
+        {
             "source_path_from_root": "/redirections/proposals/csharp-9.0/nullable-reference-types-specification.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
         },
@@ -342,6 +346,10 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0260.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1112.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1683.md",
@@ -1819,12 +1827,48 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs1100.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1101.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1102.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1103.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs1104.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/params-arrays"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs1105.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1106.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs1007.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1109.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1110.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1113.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1502.md",
@@ -4042,12 +4086,12 @@
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
         },
         {
-            "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings.md",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
+            "source_path_from_root": "/docs/csharp/quick-starts/interpolated-strings.yml",
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation",
+            "redirect_document_id": true
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/introduction-to-classes.md",
@@ -4060,7 +4104,7 @@
         },
         {
             "source_path_from_root": "/docs/csharp/quick-starts/local-environment.md",
-            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials",
+            "redirect_url": "/dotnet/csharp/tour-of-csharp/tutorials/",
             "redirect_document_id": true
         },
         {
@@ -4209,6 +4253,14 @@
             "redirect_url": "/dotnet/csharp/tutorials/top-level-statements"
         },
         {
+            "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings-local.md",
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/tutorials/exploration/interpolated-strings.yml",
+            "redirect_url": "/dotnet/csharp/tutorials/string-interpolation"
+        },
+        {
             "source_path_from_root": "/docs/csharp/tutorials/generate-consume-asynchronous-stream.md",
             "redirect_url": "/dotnet/csharp/asynchronous-programming/generate-consume-asynchronous-stream"
         },
@@ -4242,11 +4294,11 @@
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/interpolated-strings-local.md",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings-local"
+            "redirect_url": "/dotnet/csharp/tutorials/interpolated-strings"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/interpolated-strings.yml",
-            "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings"
+            "redirect_url": "/dotnet/csharp/tutorials/interpolated-strings"
         },
         {
             "source_path_from_root": "/docs/csharp/tutorials/intro-to-csharp/introduction-to-classes.md",

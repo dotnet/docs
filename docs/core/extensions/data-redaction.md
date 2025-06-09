@@ -183,3 +183,53 @@ public sealed class StarRedactorProvider : IRedactorProvider
     public Redactor GetRedactor(DataClassificationSet classifications) => _starRedactor;
 }
 ```
+
+## Logging sensitive information
+
+Logging is a common source of accidental data exposure. Sensitive information such as personal data, credentials, or financial details should never be written to logs in plain text. To prevent this, always use redaction when logging potentially sensitive data.
+
+### Steps for logging sensitive data
+
+1. **Install the telemetry extensions package**: Install [Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry) to be able to use the extended logger to enable redaction feature.
+2. **Set up redaction**: Integrate redactors with your logging pipeline by calling the <xref:Microsoft.Extensions.DependencyInjection.RedactionServiceCollectionExtensions.AddRedaction(Microsoft.Extensions.DependencyInjection.IServiceCollection)> method, to automatically sanitize or mask sensitive fields before they are written to logs.
+3. **Identify sensitive fields**: Know which data in your application is sensitive and requires protection, and mark them with appropriate data classification.
+4. **Review log output**: Regularly audit your logs to ensure no sensitive data is exposed.
+
+### Example: Redacting data in logs
+
+When using [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging), you can combine redaction with logging as follows:
+
+```csharp
+using Microsoft.Extensions.Telemetry;
+using Microsoft.Extensions.Compliance.Redaction;
+
+var services = new ServiceCollection();
+services.AddLogging(builder =>
+{
+    // Enable redaction.
+    builder.EnableRedaction();
+});
+
+services.AddRedaction(builder =>
+{
+    // configure redactors for your data classifications
+    builder.SetRedactor<StarRedactor>(MyTaxonomyClassifications.Private);
+});
+// Use annotations to mark sensitive data.
+// For example, apply the Private classification to SSN data.
+[LoggerMessage(0, LogLevel.Information, "User SSN: {SSN}")]
+public static partial void LogPrivateInformation(
+    this ILogger logger,
+    [MyTaxonomyClassifications.Private] string SSN);
+
+public void TestLogging()
+{
+    LogPrivateInformation("MySSN");
+}
+```
+
+The output should be like this:
+
+`User SSN: *****`
+
+This ensures that sensitive data is redacted before being logged, reducing the risk of data leaks.

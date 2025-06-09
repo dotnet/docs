@@ -101,7 +101,6 @@ Currently, the PQC algorithms are only available on systems where the system cry
 
 - [New method overloads in ISOWeek for DateOnly type](#new-method-overloads-in-isoweek-for-dateonly-type)
 - [Numeric ordering for string comparison](#numeric-ordering-for-string-comparison)
-
 - [New `TimeSpan.FromMilliseconds` overload with single parameter](#new-timespanfrommilliseconds-overload-with-single-parameter)
 
 ### New method overloads in ISOWeek for DateOnly type

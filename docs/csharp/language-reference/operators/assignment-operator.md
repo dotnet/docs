@@ -1,7 +1,7 @@
 ---
 title: "Assignment operators - assign an expression to a variable"
 description: "C# Assignment sets the value of the expression. Alternatively, `ref` assignment sets the reference of a reference variable."
-ms.date: 04/04/2025
+ms.date: 06/11/2025
 f1_keywords:
   - "=_CSharpKeyword"
 helpviewer_keywords:
@@ -77,11 +77,11 @@ You can use the null-coalescing assignment operator `??=` to assign the value of
 
 A user-defined type can't [overload](operator-overloading.md) the assignment operator. However, a user-defined type can define an implicit conversion to another type. That way, the value of a user-defined type can be assigned to a variable, a property, or an indexer element of another type. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
 
-A user-defined type can't explicitly overload a compound assignment operator. However, if a user-defined type overloads a binary operator `op`, the `op=` operator, if it exists, is also implicitly overloaded.
+If a user-defined type overloads a binary operator `op`, the `op=` operator, if it exists, is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the compound assignment operators (`op=`) to provide a more efficient implementation. Typically, a type overloads these operators because the value can be updated in place, rather than allocating performing the addition and return a new instance. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
 
 ## C# language specification
 
-For more information, see the [Assignment operators](~/_csharpstandard/standard/expressions.md#1221-assignment-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md).
+For more information, see the [Assignment operators](~/_csharpstandard/standard/expressions.md#1221-assignment-operators) section of the [C# language specification](~/_csharpstandard/standard/README.md) and the [User defined compound assignment](~/_csharplang/proposals/user-defined-compound-assignment.md) feature specification.
 
 ## See also
 

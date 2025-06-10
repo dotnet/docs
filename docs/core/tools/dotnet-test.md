@@ -16,17 +16,17 @@ The `dotnet test` command builds the solution and runs the tests with either VST
 Some examples of the `dotnet.config` file:
 
   ```ini
-  [dotnet.test:runner]
+  [dotnet.test.runner]
   name = "Microsoft.Testing.Platform"
   ```
 
   ```ini
-  [dotnet.test:runner]
+  [dotnet.test.runner]
   name = "VSTest"
   ```
 
-> [!NOTE]
-> The format will change from `dotnet.test:runner` to `dotnet.test.runner` in .NET 10 SDK Preview 4.
+> [!IMPORTANT]
+> The `dotnet test` experience for MTP is only supported in `Microsoft.Testing.Platform` version 1.7 and later.
 
 > [!TIP]
 > For conceptual documentation about `dotnet test`, see [Testing with dotnet test](../testing/unit-testing-with-dotnet-test.md).

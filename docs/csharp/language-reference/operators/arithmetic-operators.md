@@ -292,7 +292,6 @@ For more information, see the following sections of the [C# language specificati
 - [Numeric promotions](~/_csharpstandard/standard/expressions.md#1247-numeric-promotions)
 - [User defined compound assignment](~/_csharplang/proposals/user-defined-compound-assignment.md)
 
-
 ## See also
 
 - [C# operators and expressions](index.md)

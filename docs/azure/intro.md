@@ -22,10 +22,4 @@ You can incorporate Azure into your application in different ways depending on y
 
 ## Access Azure services from .NET applications
 
-Whether your app is hosted in Azure or on-premises, access to most Azure services is provided through the **Azure SDK for .NET**.  The Azure SDK for .NET is provided as a series of NuGet packages and can be used in both .NET Core (2.1 and higher) and .NET Framework (4.6.1 and higher) applications. The Azure SDK for .NET makes incorporating Azure services into your application as easy as installing the correct NuGet package, instantiating a client object and calling the appropriate methods. More information on the Azure SDK for .NET can be found in the [Azure SDK for .NET Overview](./sdk/azure-sdk-for-dotnet.md).
-
-![Diagram showing how .NET applications use the Azure SDK to access Azure services](./media/azure-sdk-for-dotnet-overview.png)
-
-## Next steps
-
-Next, learn about the most [commonly used Azure services](./key-azure-services.md) for .NET development.
+[!INCLUDE [azure-sdk-for-dotnet-overview](sdk/includes/azure-sdk-for-dotnet-overview.md)]

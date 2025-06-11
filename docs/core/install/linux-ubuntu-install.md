@@ -58,7 +58,6 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
@@ -115,7 +114,6 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
@@ -173,7 +171,6 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
@@ -254,7 +251,6 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
@@ -305,7 +301,6 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
@@ -354,7 +349,6 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]

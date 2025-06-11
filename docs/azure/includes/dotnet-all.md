@@ -117,6 +117,7 @@
 | Text Translation | NuGet [1.0.0](https://www.nuget.org/packages/Azure.AI.Translation.Text/1.0.0) | [docs](/dotnet/api/overview/azure/AI.Translation.Text-readme) | GitHub [1.0.0](https://github.com/Azure/azure-sdk-for-net/tree/Azure.AI.Translation.Text_1.0.0/sdk/translation/Azure.AI.Translation.Text/) |
 | Time Series Insights | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.IoT.TimeSeriesInsights/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/IoT.TimeSeriesInsights-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.IoT.TimeSeriesInsights_1.0.0-beta.1/sdk/timeseriesinsights/Azure.IoT.TimeSeriesInsights/) |
 | TimeZone | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Maps.TimeZones/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Maps.TimeZones-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Maps.TimeZones_1.0.0-beta.1/sdk/maps/Azure.Maps.TimeZones/) |
+| unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Analytics.OnlineExperimentation/1.0.0-beta.1) |  | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Analytics.OnlineExperimentation_1.0.0-beta.1/sdk/onlineexperimentation/Azure.Analytics.OnlineExperimentation/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects.AI/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects.AI-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects.AI_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects.AI/) |
 | unknown | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/Azure.Projects.Provisioning/1.0.0-beta.1) | [docs](/dotnet/api/overview/azure/Projects.Provisioning-readme?view=azure-dotnet-preview&amp;preserve-view=true) | GitHub [1.0.0-beta.1](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Projects.Provisioning_1.0.0-beta.1/sdk/cloudmachine/Azure.Projects.Provisioning/) |
@@ -391,7 +392,7 @@
 | Functions Worker Extension MCP | NuGet [1.0.0-preview.6](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Mcp/1.0.0-preview.6) |  |  |
 | Functions Worker Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.MySql/1.0.129) |  |  |
 | HTTP ASPNETCore Analyzers | NuGet [1.0.4](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore.Analyzers/1.0.4) |  |  |
-| IoT Operations MQTT | NuGet [0.10.3-akri](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.3-akri) |  |  |
+| IoT Operations MQTT | NuGet [0.10.4-akri](https://www.nuget.org/packages/Azure.Iot.Operations.Mqtt/0.10.4-akri) |  |  |
 | IoT Operations Protocol | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Protocol/0.11.0) |  |  |
 | IoT Operations Services | NuGet [0.11.0](https://www.nuget.org/packages/Azure.Iot.Operations.Services/0.11.0) |  |  |
 | Item Templates NetCore | NuGet [4.0.5086](https://www.nuget.org/packages/Microsoft.Azure.Functions.Worker.ItemTemplates.NetCore/4.0.5086) |  |  |
@@ -405,7 +406,7 @@
 | Speech Extension ONNX Runtime | NuGet [1.44.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.ONNX.Runtime/1.44.0) |  |  |
 | Speech Extension Telemetry | NuGet [1.44.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.Telemetry/1.44.0) |  |  |
 | System Net Client Model | NuGet [1.0.0-beta.1](https://www.nuget.org/packages/System.Net.ClientModel/1.0.0-beta.1) |  |  |
-| Unknown Display Name | NuGet [0.10.5-akri](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.10.5-akri) |  |  |
+| Unknown Display Name | NuGet [0.10.6-akri](https://www.nuget.org/packages/Azure.Iot.Operations.Connector/0.10.6-akri) |  |  |
 | Unknown Display Name | NuGet [1.1.0-preview](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.AzureCosmosDb.Mongo/1.1.0-preview) |  |  |
 | Unknown Display Name | NuGet [1.44.0](https://www.nuget.org/packages/Microsoft.CognitiveServices.Speech.Extension.MAS/1.44.0) |  |  |
 | WebJobs Extension MySQL | NuGet [1.0.129](https://www.nuget.org/packages/Microsoft.Azure.WebJobs.Extensions.MySql/1.0.129) |  |  |

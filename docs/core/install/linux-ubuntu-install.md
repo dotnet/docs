@@ -58,14 +58,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -119,14 +114,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -181,14 +171,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 
@@ -266,14 +251,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 <!--
 ===== Ubuntu 23.04
@@ -321,14 +301,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 <!--
 ===== Ubuntu 22.10
@@ -374,14 +349,9 @@ When you install with a package manager, these libraries are installed for you. 
 - liblttng-ust1
 - libssl3
 - libstdc++6
-- libunwind8
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 <!--
 ===== Ubuntu 20.04
@@ -440,10 +410,6 @@ When you install with a package manager, these libraries are installed for you. 
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of _libgdiplus_ by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ::: zone-end
 

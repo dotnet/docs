@@ -68,7 +68,8 @@ Before C# 14, the compound operators can't be overloaded. Overloading the corres
 
 ## Operator overload resolution
 
-> [!IMPORTANT] This section applies to C# 14 and later. Before C# 14, compound assignment operators and instance increment and decrement operators aren't allowed.
+> [!IMPORTANT]
+> This section applies to C# 14 and later. Before C# 14, compound assignment operators and instance increment and decrement operators aren't allowed.
 
 If `x` is classified as a variable in a compound assignment expression such as `x «op»= y`, instance operators are preferred over any static operator for `«op»`. If an overloaded `«op»=` operator isn't declared for the type of `x` or `x` isn't classified as a variable, the static operators are used.
 

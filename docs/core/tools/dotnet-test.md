@@ -521,6 +521,10 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 
   Disables reporting progress to screen.
 
+- **`--output <VERBOSITY_LEVEL>`**
+
+  Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. The default is `Normal`.
+
 - **`--no-launch-profile`**
 
   Do not attempt to use launchSettings.json to configure the application. By default, `launchSettings.json` is used, which can apply environment variables and command-line arguments to the test executable.
@@ -528,10 +532,6 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - **`--no-launch-profile-arguments`**
 
   Do not use arguments specified by `commandLineArgs` in launch profile to run the application.
-
-- **`--output <VERBOSITY_LEVEL>`**
-
-  Specifies the output verbosity when reporting tests. Valid values are `Normal` and `Detailed`. The default is `Normal`.
 
 - **`--property:<NAME>=<VALUE>`**
 

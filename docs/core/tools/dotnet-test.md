@@ -436,9 +436,9 @@ dotnet test
     [--no-restore]
     [--no-ansi]
     [--no-progress]
+    [--output <VERBOSITY_LEVEL>]
     [--no-launch-profile]
     [--no-launch-profile-arguments]
-    [--output <VERBOSITY_LEVEL>]
     [<args>...]
 
 dotnet test -h|--help

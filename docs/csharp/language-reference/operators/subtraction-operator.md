@@ -65,7 +65,7 @@ You also use the `-=` operator to specify an event handler method to remove when
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the `-` operator. When a binary `-` operator is overloaded, the `-=` operator is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the `-=` operator to provide a more efficient implementation. Typically, a type overloads the `-=` operator because the value can be updated in place, rather than allocating performing the addition and return a new instance. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
+A user-defined type can [overload](operator-overloading.md) the `-` operator. When a binary `-` operator is overloaded, the `-=` operator is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the `-=` operator to provide a more efficient implementation. Typically, a type overloads the `-=` operator because the value can be updated in place, rather than allocating a new instance to store the result of the subtraction. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
 
 ## C# language specification
 

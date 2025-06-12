@@ -247,7 +247,7 @@ For more information, see remarks at the [System.Double](/dotnet/api/system.doub
 
 ## Operator overloadability
 
-A user-defined type can [overload](operator-overloading.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the compound assignment operators (`op=`) to provide a more efficient implementation. Typically, a type overloads these operators because the value can be updated in place, rather than allocating performing the addition and return a new instance. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
+A user-defined type can [overload](operator-overloading.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. Beginning with C# 14, a user-defined type can explicitly overload the compound assignment operators (`op=`) to provide a more efficient implementation. Typically, a type overloads these operators because the value can be updated in place, rather than allocating a new instance to store the result of the operation. If a type doesn't provide an explicit overload, the compiler generates the implicit overload.
 
 ### User-defined checked operators
 

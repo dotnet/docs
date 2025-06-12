@@ -436,6 +436,8 @@ dotnet test
     [--no-restore]
     [--no-ansi]
     [--no-progress]
+    [--no-launch-profile]
+    [--no-launch-profile-arguments]
     [--output <VERBOSITY_LEVEL>]
     [<args>...]
 
@@ -518,6 +520,14 @@ With Microsoft Testing Platform, `dotnet test` operates faster than with VSTest.
 - **`--no-progress`**
 
   Disables reporting progress to screen.
+
+- **`--no-launch-profile`**
+
+  Do not attempt to use launchSettings.json to configure the application. By default, `launchSettings.json` is used, which can apply environment variables and command-line arguments to the test executable.
+
+- **`--no-launch-profile-arguments`**
+
+  Do not use arguments specified by `commandLineArgs` in launch profile to run the application.
 
 - **`--output <VERBOSITY_LEVEL>`**
 

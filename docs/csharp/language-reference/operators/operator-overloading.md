@@ -15,7 +15,7 @@ A user-defined type can overload a predefined C# operator. That is, a type can p
 
 Use the `operator` keyword to declare an operator. An operator declaration must satisfy the following rules:
 
-- It includes both a `public` modifier.
+- It includes a `public` modifier.
 - A unary operator has one input parameter. A binary operator has two input parameters. In each case, at least one parameter must have type `T` or `T?` where `T` is the type that contains the operator declaration.
 - It includes the `static` modifier, except for the compound assignment operators, such as `+=`.
 - The increment (`++`) and decrement (`--`) operators can be implemented as either static or instance methods.
@@ -39,14 +39,14 @@ The following table shows the operators that can be overloaded:
 |[`x == y`](equality-operators.md#equality-operator-), [`x != y`](equality-operators.md#inequality-operator-), [`x < y`](comparison-operators.md#less-than-operator-), [`x > y`](comparison-operators.md#greater-than-operator-), [`x <= y`](comparison-operators.md#less-than-or-equal-operator-), [`x >= y`](comparison-operators.md#greater-than-or-equal-operator-)|Must be overloaded in pairs as follows:  `==` and `!=`, `<` and `>`, `<=` and `>=`.|
 |[`+=`](arithmetic-operators.md#compound-assignment), [`-=`](arithmetic-operators.md#compound-assignment), [`*=`](arithmetic-operators.md#compound-assignment), [`/=`](arithmetic-operators.md#compound-assignment), [`%=`](arithmetic-operators.md#compound-assignment), [`&=`](boolean-logical-operators.md#compound-assignment), [`\|=`](boolean-logical-operators.md#compound-assignment), [`^=`](boolean-logical-operators.md#compound-assignment), [`<<=`](bitwise-and-shift-operators.md#compound-assignment), [`>>=`](bitwise-and-shift-operators.md#compound-assignment), [`>>>=`](bitwise-and-shift-operators.md#compound-assignment)|The compound assignment operators can be overloaded in C# 14 and later.|
 
-The compound assignment overloaded operators must follow these rules:
+A compound assignment overloaded operator must follow these rules:
 
 - It must include the `public` modifier.
 - It can't include the `static` modifier.
 - The return type must be `void`.
 - The declaration must include one parameter, which represents the right hand side of the compound assignment.
 
-Beginning with C# 14, the increment (`++`) and decrement (`--`) operators can be overloaded as instance members. Instance operators can improve performance by avoiding the creation of a new instance. The instance operators must follow these rules:
+Beginning with C# 14, the increment (`++`) and decrement (`--`) operators can be overloaded as instance members. Instance operators can improve performance by avoiding the creation of a new instance. An instance operator must follow these rules:
 
 - It must include the `public` modifier.
 - It can't include the `static` modifier.

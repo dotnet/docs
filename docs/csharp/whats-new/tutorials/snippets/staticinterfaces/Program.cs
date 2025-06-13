@@ -9,6 +9,12 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine(str++);
 // </TestRepeat>
 
+// <TestDuplication>
+var num = new Duplicate(2);
+num++;
+Console.WriteLine(num.ToString());
+// </TestDuplication>
+
 // <TestAddition>
 var pt = new Point<int>(3, 4);
 

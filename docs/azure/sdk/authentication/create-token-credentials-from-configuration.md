@@ -67,7 +67,7 @@ Add the wildcard value `*` to allow the credential to acquire tokens for any Mic
 
 ### Create an instance of `ManagedIdentityCredential`
 
-You can use a managed identity in the following ways using configuration values:
+You can configure a credential to utilize a managed identity in the following ways using configuration values:
 
 - System-assigned managed identity
 - User-assigned managed identity

@@ -124,7 +124,7 @@ The resource ID takes the form
 
 #### Managed identity as a federated identity credential
 
-The [managed identity as a federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center%2Cdotnet) feature is supported in `Microsoft.Extensions.Azure` versions 1.12.0 and later. The feature doesn't work with system-assigned managed identity. A user-assigned managed identity can be used by providing a client ID, resource ID, or object ID.
+The [managed identity as a federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center%2Cdotnet) feature is supported in `Microsoft.Extensions.Azure` versions 1.12.0 and later. The feature doesn't work with system-assigned managed identity. The credential can be configured with a user-assigned managed identity by providing a client ID, resource ID, or object ID.
 
 ## [Client ID](#tab/client-id)
 

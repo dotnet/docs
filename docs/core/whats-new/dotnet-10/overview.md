@@ -54,6 +54,8 @@ C# 14 introduces several new features and enhancements to improve developer prod
 - Support for partial instance constructors and partial events, complementing partial methods and properties introduced in C# 13.
 - New `extension` blocks add support for static extension methods, and static and instance extension properties.
 - Null-conditional assignment using the `?.` operator.
+- User-defined compound assignment operators like `+=` and `-=`.
+- User-defined increment (`++`) and decrement (`--`) operators.
 
 For more information, see [What's new in C# 14](../../../csharp/whats-new/csharp-14.md).
 

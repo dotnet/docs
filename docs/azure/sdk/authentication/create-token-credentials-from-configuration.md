@@ -124,7 +124,7 @@ The resource ID takes the form
 
 #### Managed identity as a federated identity credential
 
-This [managed identity as a federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center%2Cdotnet) feature is supported in `Microsoft.Extensions.Azure` versions 1.12.0 and later. The feature doesn't work with system-assigned managed identity. A user-assigned managed identity can be used by providing a client ID, resource ID, or object ID.
+The [managed identity as a federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center%2Cdotnet) feature is supported in `Microsoft.Extensions.Azure` versions 1.12.0 and later. The feature doesn't work with system-assigned managed identity. A user-assigned managed identity can be used by providing a client ID, resource ID, or object ID.
 
 ## [Client ID](#tab/client-id)
 
@@ -167,7 +167,7 @@ The resource ID takes the form
 
 ---
 
-The `azureCloud` key value is used to set the Microsoft Entra token scope. It can be one of the following values:
+The `azureCloud` key value is used to set the Microsoft Entra access token scope. It can be one of the following values:
 
 - `public` for Azure Public Cloud
 - `usgov` for Azure US Government Cloud

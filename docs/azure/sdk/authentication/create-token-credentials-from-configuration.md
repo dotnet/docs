@@ -3,7 +3,7 @@ title: Create Azure Identity library credentials via configuration files
 description: Learn how to create token credentials from configuration files.
 ms.topic: how-to
 ms.custom: devx-track-dotnet, engagement-fy23
-ms.date: 03/14/2025
+ms.date: 06/13/2025
 ---
 
 # Create Azure Identity library credentials via configuration files
@@ -67,9 +67,23 @@ Add the wildcard value `*` to allow the credential to acquire tokens for any Mic
 
 ### Create an instance of `ManagedIdentityCredential`
 
-You can create both user-assigned and system-assigned managed identities using configuration values. To create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file.
+You can configure a credential to utilize a managed identity in the following ways using configuration values:
 
-#### User-assigned managed identities
+- System-assigned managed identity
+- User-assigned managed identity
+- Managed identity as a federated identity credential
+
+To create an instance of <xref:Azure.Identity.ManagedIdentityCredential?displayProperty=fullName>, add the following key-value pairs to your _appsettings.json_ file.
+
+#### System-assigned managed identity
+
+```json
+{
+    "credential": "managedidentity"
+}
+```
+
+#### User-assigned managed identity
 
 A user-assigned managed identity can be used by providing a client ID, resource ID, or object ID.
 
@@ -78,7 +92,7 @@ A user-assigned managed identity can be used by providing a client ID, resource 
 ```json
 {
     "credential": "managedidentity",
-    "clientId": "<client_id>"
+    "managedIdentityClientId": "<managed_identity_client_id>"
 }
 ```
 
@@ -91,7 +105,7 @@ A user-assigned managed identity can be used by providing a client ID, resource 
 }
 ```
 
-The resource ID takes the form:
+The resource ID takes the form
 `/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`
 
 ## [Object ID](#tab/object-id)
@@ -108,13 +122,56 @@ The resource ID takes the form:
 
 ---
 
-#### System-assigned managed identities
+#### Managed identity as a federated identity credential
+
+The [managed identity as a federated identity credential](/entra/workload-id/workload-identity-federation-config-app-trust-managed-identity?tabs=microsoft-entra-admin-center%2Cdotnet) feature is supported in `Microsoft.Extensions.Azure` versions 1.12.0 and later. The feature doesn't work with system-assigned managed identity. The credential can be configured with a user-assigned managed identity by providing a client ID, resource ID, or object ID.
+
+## [Client ID](#tab/client-id)
 
 ```json
 {
-    "credential": "managedidentity"
+    "credential": "managedidentityasfederatedidentity",
+    "azureCloud": "<azure_cloud>",
+    "tenantId": "<tenant_id>",
+    "clientId": "<client_id>",
+    "managedIdentityClientId": "<managed_identity_client_id>"
 }
 ```
+
+## [Resource ID](#tab/resource-id)
+
+```json
+{
+    "credential": "managedidentityasfederatedidentity",
+    "azureCloud": "<azure_cloud>",
+    "tenantId": "<tenant_id>",
+    "clientId": "<client_id>",
+    "managedIdentityResourceId": "<managed_identity_resource_id>"
+}
+```
+
+The resource ID takes the form
+`/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}`
+
+## [Object ID](#tab/object-id)
+
+```json
+{
+    "credential": "managedidentityasfederatedidentity",
+    "azureCloud": "<azure_cloud>",
+    "tenantId": "<tenant_id>",
+    "clientId": "<client_id>",
+    "managedIdentityObjectId": "<managed_identity_object_id>"
+}
+```
+
+---
+
+The `azureCloud` key value is used to set the Microsoft Entra access token scope. It can be one of the following values:
+
+- `public` for Azure Public Cloud
+- `usgov` for Azure US Government Cloud
+- `china` for Azure operated by 21Vianet
 
 ### Create an instance of `AzurePipelinesCredential`
 

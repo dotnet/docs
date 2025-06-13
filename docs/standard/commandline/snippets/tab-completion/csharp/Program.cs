@@ -3,24 +3,28 @@ using System.CommandLine;
 using System.CommandLine.Completions;
 using System.CommandLine.Parsing;
 
-await new DateCommand().InvokeAsync(args);
+new DateCommand().Parse(args).Invoke();
 
 class DateCommand : Command
 {
-    private Argument<string> subjectArgument = 
-        new ("subject", "The subject of the appointment.");
-    private Option<DateTime> dateOption = 
-        new ("--date", "The day of week to schedule. Should be within one week.");
-    
+    private Argument<string> subjectArgument = new("subject")
+    {
+        Description = "The subject of the appointment."
+    };
+    private Option<DateTime> dateOption = new("--date")
+    {
+        Description = "The day of week to schedule. Should be within one week."
+    };
+
     public DateCommand() : base("schedule", "Makes an appointment for sometime in the next week.")
     {
-        this.AddArgument(subjectArgument);
-        this.AddOption(dateOption);
+        this.Arguments.Add(subjectArgument);
+        this.Options.Add(dateOption);
 
         // <dateoption>
-        dateOption.AddCompletions((ctx) => {
+        dateOption.CompletionSources.Add(ctx => {
             var today = System.DateTime.Today;
-            var dates = new List<CompletionItem>();
+            List<CompletionItem> dates = new();
             foreach (var i in Enumerable.Range(1, 7))
             {
                 var date = today.AddDays(i);
@@ -34,11 +38,10 @@ class DateCommand : Command
         });
         // </dateoption>
 
-        this.SetHandler((subject, date) =>
-            {
-                Console.WriteLine($"Scheduled \"{subject}\" for {date}");
-            },
-            subjectArgument, dateOption);
+        this.SetAction(parseResult =>
+        {
+            Console.WriteLine($"Scheduled \"{parseResult.GetValue(subjectArgument)}\" for {parseResult.GetValue(dateOption)}");
+        });
     }
 }
 // </all>

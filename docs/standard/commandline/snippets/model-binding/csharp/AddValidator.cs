@@ -5,29 +5,26 @@ using System.CommandLine;
 
 class Program
 {
-    internal static async Task Main(string[] args)
+    internal static void Main(string[] args)
     {
         // <delayOption>
-        var delayOption = new Option<int>("--delay");
-        delayOption.AddValidator(result =>
+        Option<int> delayOption = new("--delay");
+        delayOption.Validators.Add(result =>
         {
-            if (result.GetValueForOption(delayOption) < 1)
+            if (result.GetValue(delayOption) < 1)
             {
-                result.ErrorMessage = "Must be greater than 0";
+                result.AddError("Must be greater than 0");
             }
         });
         // </delayoption>
 
-        var rootCommand = new RootCommand();
-        rootCommand.Add(delayOption);
+        RootCommand rootCommand = new() { delayOption };
+        rootCommand.SetAction((parseResult) =>
+        {
+            Console.WriteLine($"--delay = {parseResult.GetValue(delayOption)}");
+        });
 
-        rootCommand.SetHandler((delayOptionValue) =>
-            {
-                Console.WriteLine($"--delay = {delayOptionValue}");
-            },
-            delayOption);
-
-        await rootCommand.InvokeAsync(args);
+        rootCommand.Parse(args).Invoke();
     }
 }
 // </all>

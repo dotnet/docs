@@ -38,9 +38,9 @@ Defines an element that is used to configure a cache that is based on the <xref:
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`CacheMemoryLimitMegabytes`|The maximum memory size, in megabytes, that an instance of a <xref:System.Runtime.Caching.MemoryCache> object can grow to. The default value is 0, which means that the <xref:System.Runtime.Caching.MemoryCache> class's autosize heuristics are used by default.|  
+|`CacheMemoryLimitMegabytes`|The maximum memory size, in megabytes, that an instance of a <xref:System.Runtime.Caching.MemoryCache> object can grow to. The default value is 0, which means that the <xref:System.Runtime.Caching.MemoryCache> class's autosize heuristics are used by default. (This setting is only effective on .Net Framework.)|  
 |`Name`|The name of the cache configuration.|  
-|`PhysicalMemoryLimitPercentage`|The percentage of physical memory that can be used by the cache. The default value is 0, which means that the <xref:System.Runtime.Caching.MemoryCache> class's autosize heuristics are used by default.|  
+|`PhysicalMemoryLimitPercentage`|percentage of total physical memory usage on the system (by all processes) at which the cache will begin to evict entries. The default value is 0, which means that the <xref:System.Runtime.Caching.MemoryCache> class's autosize heuristics are used by default.|  
 |`PollingInterval`|A value that indicates the time interval after which the cache implementation compares the current memory load against the absolute and percentage-based memory limits that are set for the cache instance. The value is entered in "HH:MM:SS" format.|  
   
 ### Child Elements  

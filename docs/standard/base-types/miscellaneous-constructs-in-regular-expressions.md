@@ -2,7 +2,7 @@
 description: "Learn more about: Miscellaneous Constructs in Regular Expressions"
 title: "Miscellaneous Constructs in Regular Expressions"
 ms.date: "03/30/2017"
-ms.topic: concept-article
+ms.topic: article
 dev_langs:
   - "csharp"
   - "vb"

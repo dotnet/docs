@@ -3,7 +3,7 @@ title: API removal in .NET
 titleSuffix: ""
 description: Learn about .NET's policy for obsoleting and removing APIs.
 ms.date: 04/27/2023
-ms.topic: concept-article
+ms.topic: article
 ---
 # API removal in .NET
 

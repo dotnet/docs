@@ -2,7 +2,7 @@
 title: Compatibility
 description: Learn about the ways in which code changes can affect compatibility in .NET.
 ms.date: 06/10/2019
-ms.topic: concept-article
+ms.topic: article
 ---
 # How code changes can affect compatibility
 

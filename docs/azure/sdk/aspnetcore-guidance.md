@@ -20,7 +20,7 @@ The Azure SDK for .NET enables ASP.NET Core apps to integrate with many differen
 ASP.NET Core apps that connect to Azure services generally depend on the following Azure SDK client libraries:
 
 - [Microsoft.Extensions.Azure](https://www.nuget.org/packages/Microsoft.Extensions.Azure) provides helper methods to register clients with the dependency injection service collection and handles various concerns for you, such as setting up logging, handling DI service lifetimes, and authentication credential management.
-- [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) enables Microsoft Entra ID authentication support across the Azure SDK. It provides a set of [TokenCredential](/dotnet/api/azure.core.tokencredential?view=azure-dotnet) implementations to construct Azure SDK clients that support Microsoft Entra authentication.
+- [Azure.Identity](https://www.nuget.org/packages/Azure.Identity) enables Microsoft Entra ID authentication support across the Azure SDK. It provides a set of <xref:Azure.Core.TokenCredential> implementations to construct Azure SDK clients that support Microsoft Entra authentication.
 - `Azure.<service-namespace>` libraries, such as [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.Blobs) and [Azure.Messaging.ServiceBus](https://www.nuget.org/packages/Azure.Messaging.ServiceBus), provide service clients and other types to help you connect to and consume specific Azure services. For a complete inventory of these libraries, see [Libraries using Azure.Core](packages.md#libraries-using-azurecore).
 
 In the sections ahead, you'll explore how to implement an ASP.NET Core application that uses these libraries.

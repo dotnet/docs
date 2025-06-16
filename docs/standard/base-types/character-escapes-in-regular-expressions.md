@@ -2,7 +2,7 @@
 title: Character Escapes in .NET Regular Expressions
 description: Learn about special characters and escaped characters in .NET regular expressions.
 ms.date: "03/30/2017"
-ms.topic: concept-article
+ms.topic: article
 dev_langs: 
   - "csharp"
   - "vb"

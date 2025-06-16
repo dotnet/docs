@@ -135,7 +135,7 @@ This section lists the available configuration options for code analyzers. For m
 
 | Description | Allowable values | Default value | Configurable rules |
 |-------------|------------------|---------------|--------------------|
-| Specifies that code in a project that generates this type of assembly should be analyzed | One or more fields of the <xref:Microsoft.CodeAnalysis.OutputKind> enumeration<br/><br/>Separate multiple values with a comma (,) | All output kinds | [CA2007](quality-rules/ca2007.md) |
+| Specifies that code in a project that generates this type of assembly should be analyzed | One or more fields of the <xref:Microsoft.CodeAnalysis.OutputKind> enumeration<br/><br/>Separate multiple values with a comma (,) | All output kinds | [CA1515](quality-rules/ca1515.md) [CA2007](quality-rules/ca2007.md) |
 
 ### required_modifiers
 

@@ -130,10 +130,6 @@ Dependencies can be installed with the `apt install` command. The following snip
 sudo apt install libc6
 ```
 
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-debian).
-
 ## Next steps
 
 - [.NET CLI overview](../tools/index.md)

@@ -95,6 +95,6 @@ Learn more about .NET and MCP using these resources:
 
 ## Related content
 
-- [Overview of the .NET + AI ecosystem](/dotnet/ai/dotnet-ai-ecosystem)
+- [Overview of the .NET + AI ecosystem](dotnet-ai-ecosystem.md)
 - [Microsoft.Extensions.AI](/dotnet/ai/ai-extensions)
-- [Semantic Kernel overview for .NET](/dotnet/ai/semantic-kernel-dotnet-overview)
+- [Semantic Kernel overview for .NET](semantic-kernel-dotnet-overview.md)

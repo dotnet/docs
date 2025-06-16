@@ -32,7 +32,7 @@ JoinDissimilarFiles();
 
 Console.WriteLine();
 Console.WriteLine("Sum Spreadsheet columns");
-SumColumns.SumCSVColumns("scores.csv");
+SumColumns.ProcessColumns("scores.csv", ",");
 
 static void FindFilesByExtension()
 {

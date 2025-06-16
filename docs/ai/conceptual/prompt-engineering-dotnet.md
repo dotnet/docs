@@ -1,7 +1,6 @@
 ---
 title: Prompt Engineering concepts
 description: Learn basic prompt engineering concepts and how to implement them using .NET tools such as the Semantic Kernel SDK
-author: catbutler
 ms.topic: concept-article #Don't change.
 ms.date: 04/09/2025
 

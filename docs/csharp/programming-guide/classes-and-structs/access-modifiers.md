@@ -65,7 +65,7 @@ Normally, the accessibility of a member isn't greater than the accessibility of 
 
 The type of any member field, property, or event must be at least as accessible as the member itself. Similarly, the return type and the parameter types of any method, indexer, or delegate must be at least as accessible as the member itself. For example, you can't have a `public` method `M` that returns a class `C` unless `C` is also `public`. Likewise, you can't have a `protected` property of type `A` if `A` is declared as `private`.
 
-User-defined operators must always be declared as `public` and `static`. For more information, see [Operator overloading](../../language-reference/operators/operator-overloading.md).
+User-defined operators must always be declared as `public`. For more information, see [Operator overloading](../../language-reference/operators/operator-overloading.md).
 
 To set the access level for a `class` or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
 

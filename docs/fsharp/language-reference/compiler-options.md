@@ -78,12 +78,18 @@ The F# compiler supports several opt-in warnings:
 | 1178  | Implicit equality/comparison    |  5    | Warn when an F# type declaration is implicitly inferred to be `NoEquality` or `NoComparison` but the attribute is not present on the type. |
 | 1182  | Unused variables                |  n/a  | Warn for unused variables. |
 | 3180  | Implicit heap allocations       |  n/a  | Warn when a mutable local is implicitly allocated as a reference cell because it has been captured by a closure. |
+| 3186  | Missing metadata declaration     |  n/a  | Warn when an F# metadata node has no matching declaration. May indicate a broken assembly; recompilation might be required. |
 | 3366  | Index notation                  |  n/a  | Warn when the F# 5 index notation `expr.[idx]` is used. |
-| 3517  | InlineIfLambda failure          |  n/a  | Warn when the F# optimizer fails to inline an `InlineIfLambda` value, for example if a computed function value has been provided instead of an explicit lambda. |
-| 3387  | `op_Implicit` conversion        |  n/a  | Warn when a .NET implicit conversion is used at a method argument. |
 | 3388  | Additional implicit upcast      |  n/a  | Warn when an additional upcast is implicitly used, added in F# 6. |
 | 3389  | Implicit widening               |  n/a  | Warn when an implicit numeric widening is used. |
 | 3390  | Malformed XML doc comments      |  n/a  | Warn when XML doc comments are malformed in various ways. |
+| 3395  | Implicit method argument conversion |  n/a  | Warn when an implicit conversion is used to match the type of a method argument. |
+| 3517  | InlineIfLambda failure          |  n/a  | Warn when the F# optimizer fails to inline an `InlineIfLambda` value, for example if a computed function value has been provided instead of an explicit lambda. |
+| 3559  | Type inferred as obj             |  n/a  | Warn when a type is implicitly inferred as 'obj'. Suggest adding explicit type annotations. |
+| 3560  | All fields changed in record copy |  n/a  | Warn when a record copy-and-update expression changes all fields. Recommend using record construction syntax. |
+| 3570  | Ambiguous discard or shorthand   |  n/a  | Warn when '_' is ambiguously used both as a discard and a function shorthand in the same scope. |
+| 3579  | Untyped string interpolation     |  n/a  | Warn when interpolated strings contain untyped values. Typed format specifiers are recommended. |
+| 3582  | Function shadows union case      |  n/a  | Warn when a function definition unintentionally shadows a union case. Use parentheses to disambiguate. |
 
 You can enable these warnings by using  `/warnon:NNNN` or `<WarnOn>NNNN</WarnOn>` where `NNNN` is the relevant warning number.
 (You may also use the syntax `<WarnOn>FSNNNN</WarnOn>`, for example, `<WarnOn>FS3388</WarnOn>`.)

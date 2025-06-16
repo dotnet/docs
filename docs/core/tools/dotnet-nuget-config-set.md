@@ -1,6 +1,6 @@
 ---
-title: 'dotnet nuget config set' command
-description: The 'dotnet nuget config set' command helps manage NuGet configuration files.
+title: "'dotnet nuget config set' command"
+description: "The 'dotnet nuget config set' command helps manage NuGet configuration files."
 author: martinrrm
 ms.date: 05/14/2024
 ---

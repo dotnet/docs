@@ -1,6 +1,6 @@
 ---
-title: 'dotnet nuget config get' command
-description: The 'dotnet nuget config get' command helps manage NuGet configuration files.
+title: "'dotnet nuget config get' command"
+description: "The 'dotnet nuget config get' command helps manage NuGet configuration files."
 author: martinrrm
 ms.date: 05/14/2024
 ---

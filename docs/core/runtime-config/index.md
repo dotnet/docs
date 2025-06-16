@@ -1,7 +1,7 @@
 ---
 title: .NET Runtime config options
 description: Learn how to configure the .NET runtime using configuration settings.
-ms.topic: concept-article
+ms.topic: article
 ms.date: 07/23/2021
 ---
 # .NET runtime configuration settings

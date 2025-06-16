@@ -1,6 +1,6 @@
 ---
-title: dotnet nuget config unset command
-description: The dotnet-nuget-config command helps manage nuget configuration files.
+title: 'dotnet nuget config unset' command
+description: The 'dotnet nuget config unset' command helps manage NuGet configuration files.
 author: martinrrm
 ms.date: 05/14/2024
 ---
@@ -27,7 +27,7 @@ The `dotnet nuget config unset` unsets the values for NuGet configuration settin
 ## Arguments
 
 - **`CONFIG_KEY`**
-  
+
   The key of the settings that are to be removed.
 
 ## Options

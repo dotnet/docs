@@ -1,6 +1,6 @@
 ---
-title: dotnet nuget config get command
-description: The dotnet-nuget-config command helps manage nuget configuration files.
+title: 'dotnet nuget config get' command
+description: The 'dotnet nuget config get' command helps manage NuGet configuration files.
 author: martinrrm
 ms.date: 05/14/2024
 ---
@@ -31,7 +31,7 @@ The `dotnet nuget config get` Gets the NuGet configuration settings that will be
   Get all merged NuGet configuration settings from multiple NuGet configuration files that will be applied, when invoking NuGet command from the working directory path.
 
 - **`CONFIG_KEY`**
-  
+
   Get the effective value of the specified configuration settings of the config section.
 
 ## Options

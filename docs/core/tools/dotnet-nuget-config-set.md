@@ -1,6 +1,6 @@
 ---
-title: dotnet nuget config set command
-description: The dotnet-nuget-config command helps manage nuget configuration files.
+title: 'dotnet nuget config set' command
+description: The 'dotnet nuget config set' command helps manage NuGet configuration files.
 author: martinrrm
 ms.date: 05/14/2024
 ---
@@ -27,7 +27,7 @@ The `dotnet nuget config set` sets the values for NuGet configuration settings t
 ## Arguments
 
 - **`CONFIG_KEY`**
-  
+
   The key of the settings that are to be set.
 
 - **`CONFIG-VALUE`**

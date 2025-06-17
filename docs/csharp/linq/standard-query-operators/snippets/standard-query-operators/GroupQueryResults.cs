@@ -51,7 +51,7 @@ public class GroupQueryResults
     public static void GroupByPropertyMethod()
     {
         // <GroupByPropertyMethod>
-        // Variable groupByLastNamesQuery is an IEnumerable<IGrouping<string,
+        // Variable groupByYearQuery is an IEnumerable<IGrouping<GradeLevel,
         // DataClass.Student>>.
         var groupByYearQuery = students
             .GroupBy(student => student.Year)

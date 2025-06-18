@@ -15,6 +15,7 @@ ms.date: 03/15/2024
 
 ```dotnetcli
 dotnet tool update <PACKAGE_ID> -g|--global
+    [--all]
     [--add-source <SOURCE>] [--allow-downgrade]
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
@@ -23,6 +24,7 @@ dotnet tool update <PACKAGE_ID> -g|--global
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
+    [--all]
     [--add-source <SOURCE>] [--allow-downgrade]
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
@@ -31,6 +33,7 @@ dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
+    [--all]
     [--add-source <SOURCE>] [--allow-downgrade]
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
@@ -57,6 +60,10 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
   Name/ID of the NuGet package that contains the .NET global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
+
+- **`--all`**
+
+  Update all tools.
 
 [!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 

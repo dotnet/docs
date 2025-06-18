@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.topic: overview
 ---
 
-# System.CommandLine Overview
+# System.CommandLine overview
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
@@ -35,7 +35,7 @@ The library is available as a NuGet package:
 
 - [System.CommandLine](https://www.nuget.org/packages/System.CommandLine)
 
-## Next Steps
+## Next steps
 
 To get started with System.CommandLine, see the following resources:
 

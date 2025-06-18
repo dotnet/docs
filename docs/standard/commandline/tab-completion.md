@@ -28,7 +28,7 @@ For other command-line apps built on `System.CommandLine`:
 
 * Install the [`dotnet-suggest`](https://nuget.org/packages/dotnet-suggest) global tool.
 
-* Add the appropriate shim script to your shell profile. You may need to create a shell profile file. The shim script forwards completion requests from your shell to the `dotnet-suggest` tool, which delegates them to the appropriate `System.CommandLine`-based app.
+* Add the appropriate shim script to your shell profile. You might need to create a shell profile file. The shim script forwards completion requests from your shell to the `dotnet-suggest` tool, which delegates them to the appropriate `System.CommandLine`-based app.
 
   * For `bash`, add the contents of [*dotnet-suggest-shim.bash*](https://github.com/dotnet/command-line-api/blob/main/src/System.CommandLine.Suggest/dotnet-suggest-shim.bash) to *~/.bash_profile*.
 

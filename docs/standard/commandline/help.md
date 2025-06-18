@@ -45,7 +45,7 @@ dotnet -?
 dotnet /?
 ```
 
-Help output doesn't necessarily show all available commands, arguments, and options. Some of them may be *hidden* via the <xref:System.CommandLine.Symbol.Hidden> property, which means they don't show up in help output (and completions) but they can be specified on the command line.
+Help output doesn't necessarily show all available commands, arguments, and options. Some of them might be *hidden* via the <xref:System.CommandLine.Symbol.Hidden> property, which means they don't show up in help output (and completions) but can be specified on the command line.
 
 ## Help customization
 

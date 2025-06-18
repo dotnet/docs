@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.topic: conceptual
 ---
 
-# Syntax overview: commands, options, and arguments
+# Syntax overview: Commands, options, and arguments
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
@@ -133,7 +133,7 @@ dotnet tool update dotnet-suggest --global true
 
 An argument that is defined without a default value is treated as a required argument.
 
-## Parse Errors
+## Parse errors
 
 Options and arguments have expected types, and an error is produced when the value can't be parsed. For example, the following command errors because "silent" isn't one of the valid values for `--verbosity`:
 
@@ -170,7 +170,7 @@ dotnet add package System.CommandLine --prerelease --no-restore --source https:/
 dotnet add package System.CommandLine --source https://api.nuget.org/v3/index.json --no-restore --prerelease
 ```
 
-When there are multiple arguments, the order does matter. The following commands are not equivalent, they differ in the order of the values, which could lead to different results:
+When there are multiple arguments, the order does matter. The following commands are not equivalent; they differ in the order of the values, which could lead to different results:
 
 ```console
 myapp argument1 argument2
@@ -199,7 +199,7 @@ dotnet publish --ou ./publish
 dotnet publish --o ./publish
 ```
 
-`System.CommandLine` doesn't support automatic aliases, each alias needs to be specified in explicit way. Both commands and options expose `Aliases` property, but `Option` has a constructor that accepts aliases as parameters, so you can define an option with multiple aliases in a single line:
+`System.CommandLine` doesn't support automatic aliases. Each alias must be specified explicitly. Both commands and options expose an `Aliases` property. `Option` has a constructor that accepts aliases as parameters, so you can define an option with multiple aliases in a single line:
 
 :::code language="csharp" source="snippets/define-symbols/csharp/Program.cs" id="definealiases" :::
 
@@ -442,7 +442,7 @@ A directive can include an argument, separated from the directive name by a colo
 
 ### The `[diagram]` directive
 
-Both users and developers may find it useful to see how an app will interpret a given input. One of the default features of a `System.CommandLine` app is the `[diagram]` directive, which lets you preview the result of parsing command input. For example:
+Both users and developers might find it useful to see how an app will interpret a given input. One of the default features of a `System.CommandLine` app is the `[diagram]` directive, which lets you preview the result of parsing command input. For example:
 
 ```console
 myapp [diagram] --delay not-an-int --interactive --file filename.txt extra

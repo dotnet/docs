@@ -14,11 +14,11 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-Our main focus for beta5 was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. We have simplified the APIs and made them more consistent and coherent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in beta5 and the reasoning behind them.
+The main focus for the beta5 release was to improve the APIs and take a step toward releasing a stable version of System.CommandLine. The APIs have been simplified and made more coherent and consistent with the [Framework design guidelines](../design-guidelines/index.md). This article describes the breaking changes that were made in beta5 and the reasoning behind them.
 
 ## Renaming
 
-In beta4, not all types and properties followed the [naming guidelines](../design-guidelines/naming-guidelines.md). Some were not consistent with the naming conventions, such as using the `Is` prefix for boolean properties. In beta5, we have renamed some types and properties. The following table shows the old and new names:
+In beta4, not all types and members followed the [naming guidelines](../design-guidelines/naming-guidelines.md). Some were not consistent with the naming conventions, such as using the `Is` prefix for Boolean properties. In beta5, some types and members have been renamed. The following table shows the old and new names:
 
 | Old name                                                    | New name                                                       |
 |-------------------------------------------------------------|----------------------------------------------------------------|
@@ -31,11 +31,11 @@ In beta4, not all types and properties followed the [naming guidelines](../desig
 | `System.CommandLine.Parsing.ParseResult.FindResultFor` | `System.CommandLine.Parsing.ParseResult.GetResult`         |
 | `System.CommandLine.Parsing.SymbolResult.ErrorMessage` | `System.CommandLine.Parsing.SymbolResult.AddError`         |
 
-In case of the `ErrorMessage` property, we changed the name to `AddError` and made it a method. The goal was to allow to report multiple errors for the same symbol, which so far was impossible.
+To allow multiple errors for the same symbol to be reported, the `ErrorMessage` property was converted to a method and renamed to `AddError`.
 
 ## Exposing mutable collections
 
-In beta4, we had many `Add` methods that were used to add items to collections, such as arguments, options, subcommands, validators, and completions. Some of these collections were exposed via properties as read-only collections. Because of that, it was impossible to remove items from those collections.
+beta4 had numerous `Add` methods that were used to add items to collections, such as arguments, options, subcommands, validators, and completions. Some of these collections were exposed via properties as read-only collections. Because of that, it was impossible to remove items from those collections.
 
 In beta5, we changed the APIs to expose mutable collections instead of `Add` methods and (sometimes) read-only collections. This allows you to not only add items or enumerate them, but also remove them. The following table shows the old method and new property names:
 
@@ -53,7 +53,7 @@ In beta5, we changed the APIs to expose mutable collections instead of `Add` met
 | `System.CommandLine.Command.AddAlias`                   | `System.CommandLine.Command.Aliases`             |
 | `System.CommandLine.Option.AddAlias`                    | `System.CommandLine.Option.Aliases`             |
 
-The `RemoveAlias` and `HasAlias` methods were also removed, as the `Aliases` property is now a mutable collection. You can use the `Remove` method to remove an alias from the collection, and `Contains` method to check if an alias exists.
+The `RemoveAlias` and `HasAlias` methods were also removed, as the `Aliases` property is now a mutable collection. You can use the `Remove` method to remove an alias from the collection. Use the `Contains` method to check if an alias exists.
 
 ## Names and aliases
 
@@ -61,7 +61,7 @@ Before beta5, there was no clear separation between the name and [aliases](synta
 
 Moreover, to get the parsed value, users had to store a reference to an option or an argument and then use it to get the value from `ParseResult`.
 
-To promote simplicity and explicitness, we decided to make the name of a symbol a mandatory parameter for every symbol constructor (including `Argument<T>`). We have also separated the concept of a name and aliases; now aliases are just aliases and do not include the name of the symbol. Of course, they are optional. As a result, we made the following changes:
+To promote simplicity and explicitness, the name of a symbol is now a mandatory parameter for every symbol constructor (including `Argument<T>`). We also separated the concept of a name and aliases; now aliases are just aliases and don't include the name of the symbol. Of course, they are optional. As a result, the following changes were made:
 
 - `name` is now a mandatory argument for every public constructor of `Argument<T>`, `Option<T>`, and `Command`. In the case of `Argument<T>`, it is not used for parsing, but to generate the help and completions text. In the case of `Option<T>` and `Command`, it is used to identify the symbol during parsing and also for help and completions.
 - The `Symbol.Name` property is no longer `virtual`; it's now read-only and returns the name as it was provided when the symbol was created. Because of that, `Symbol.DefaultName` was removed and `Option.Name` no longer removes the `--`, `-`, or `/` or any other prefix from the longest alias.
@@ -82,7 +82,7 @@ int number = parseResult.GetValue<int>("--number");
 
 ### Creating options with aliases
 
-In the past, `Option<T>` was exposing plenty of constructors, some of which were accepting the name or not. Since the name is now mandatory and we expect aliases to be frequetly provided for `Option<T>`, we provide only a single constrtor. It accepts the name and a `params` array of aliases.
+In the past, `Option<T>` exposed many constructors, some of which accepted the name. Since the name is now mandatory and we expect aliases to be frequently provided for `Option<T>`, there's only a single constructor. It accepts the name and a `params` array of aliases.
 
 Before beta5, `Option<T>` had a constructor that took a name and a description. Because of that, the second argument might now be treated as an alias rather than a description. It's the only known breaking change in the API that is not going to cause a compiler error.
 
@@ -99,9 +99,9 @@ Option<bool> beta5 = new("--help", "-h", "/h")
 };
 ```
 
-## Default values
+## Default values and custom parsing
 
-In beta4, users could set default values for options and arguments by using the `SetDefaultValue` methods. Those methods were accepting an `object` value, which was not type-safe and could lead to runtime errors if the value was not compatible with the option or argument type:
+In beta4, users could set default values for options and arguments by using the `SetDefaultValue` methods. Those methods accepted an `object` value, which was not type-safe and could lead to run-time errors if the value was not compatible with the option or argument type:
 
 ```csharp
 Option<int> option = new("--number");
@@ -110,7 +110,7 @@ option.SetDefaultValue("text"); // This is not type-safe, as the value is a stri
 
 Moreover, some of the `Option` and `Argument` constructors accepted a parse delegate and a boolean indicating whether the delegate was a custom parser or a default value provider. This was confusing.
 
-`Option<T>` and `Argument<T>` classes now have a `DefaultValueFactory` property that can be used to set the default value for the symbol. This property is invoked when the symbol is not provided in the command line input.
+`Option<T>` and `Argument<T>` classes now have a `DefaultValueFactory` property that can be used to set a delegate that can be called to get the default value for the option or argument. This delegate is invoked when the option or argument is not found in the parsed command line input.
 
 ```csharp
 Option<int> number = new("--number")
@@ -137,47 +137,47 @@ Argument<Uri> uri = new("arg")
 };
 ```
 
-Moreover, `CustomParser` accepts  `Func<ParseResult, T>` delegate, rather than dedicated `ParseArgument` delegate. This and few other custom delegates were removed to simplify the API and reduce the number of types exposed by the API and compiled at startup time by the JIT compiler.
+Moreover, `CustomParser` accepts a delegate of type `Func<ParseResult, T>`, rather than the previous `ParseArgument` delegate. This and a few other custom delegates were removed to simplify the API and reduce the number of types exposed by the API, which reduces startup time spent during JIT compilation.
 
-For more examples of how to use `DefaultValueFactory` and `CustomParser`, see the [How to customize parsing and validation in System.CommandLine](parsing-and-validation.md) document.
+For more examples of how to use `DefaultValueFactory` and `CustomParser`, see [How to customize parsing and validation in System.CommandLine](parsing-and-validation.md).
 
-## The separation of parsing and invoking
+## The separation of parsing and invocation
 
-In beta4, it was possible to separate the parsing and invoking of commands, but it was quite unclear how to do it. The `Command` was not exposing a `Parse` method, but `CommandExtensions` was providing `Parse`, `Invoke`, and `InvokeAsync` extension methods for `Command`. This was confusing, as it was not clear which method to use and when. Following changes were made to simplify the API:
+In beta4, it was possible to separate the parsing and invoking of commands, but it was quite unclear how to do it. `Command` did not expose a `Parse` method, but `CommandExtensions` provided `Parse`, `Invoke`, and `InvokeAsync` extension methods for `Command`. This was confusing, as it was not clear which method to use and when. The following changes were made to simplify the API:
 
-- `Command` now exposes a `Parse` method that returns a `ParseResult` object. This method is used to parse the command line input and return the result of the parsing. Moreover, it makes it clear that the command is not invoked, but only parsed and only in synchronous manner.
+- `Command` now exposes a `Parse` method that returns a `ParseResult` object. This method is used to parse the command line input and return the result of the parse operation. Moreover, it makes it clear that the command is not invoked, but only parsed and only in synchronous manner.
 - `ParseResult` now exposes both `Invoke` and `InvokeAsync` methods that can be used to invoke the command. This makes it clear that the command is invoked after parsing, and allows for both synchronous and asynchronous invocation.
-- `CommandExtensions` class was removed, as it was not needed anymore.
+- The `CommandExtensions` class was removed, as it's no longer needed.
 
 ### Configuration
 
-Before beta5, it was possible to customize the parsing, but only with some of the public `Parse` methods. There was a `Parser` class that was exposing two public constructors: one accepting a `Command` and another accepting a `CommandLineConfiguration`. `CommandLineConfiguration` was immutable and in order to create it, the users had to use a builder pattern exposed by the `CommandLineBuilder` class. Following changes were made to simplify the API:
+Before beta5, it was possible to customize the parsing, but only with some of the public `Parse` methods. There was a `Parser` class that exposed two public constructors: one accepting a `Command` and another accepting a `CommandLineConfiguration`. `CommandLineConfiguration` was immutable, and to create it, you had to use a builder pattern exposed by the `CommandLineBuilder` class. The following changes were made to simplify the API:
 
 - `CommandLineConfiguration` was made mutable and `CommandLineBuilder` was removed. Creating a configuration is now as simple as creating an instance of `CommandLineConfiguration` and setting the properties you want to customize. Moreover, creating a new instance of configuration is the equivalent of calling `CommandLineBuilder`'s `UseDefaults` method.
 - Every `Parse` method now accepts an optional `CommandLineConfiguration` parameter that can be used to customize the parsing. When it's not provided, the default configuration is used.
 - `Parser` was renamed to `CommandLineParser` to disambiguate from other parser types to avoid name conflicts. Since it's stateless, it's now a static class with only static methods. It exposes two `Parse` parse methods: one accepting a `IReadOnlyList<string> args` and another accepting a `string args`. The latter uses `CommandLineParser.SplitCommandLine` (also public) to split the command line input into [tokens](syntax.md#tokens) before parsing it.
 
-`CommandLineBuilderExtensions` was also removed, here is how you can map the its methods to the new APIs:
+`CommandLineBuilderExtensions` was also removed. Here is how you can map its methods to the new APIs:
 
 - `CancelOnProcessTermination` is now a property of `CommandLineConfiguration` called [ProcessTerminationTimeout](parse-and-invoke.md#process-termination-timeout). It's enabled by default, with a 2s timeout. Set it to `null` to disable it.
-- `EnableDirectives`, `UseEnvironmentVariableDirective`, `UseParseDirective` and `UseSuggestDirective` were removed. A new [Directive](syntax.md#directives) type was introduced and the [RootCommand](syntax.md#root-command) now exposes <xref:System.CommandLine.RootCommand.Directives> property. You can add, remove and iterate directives by using this collection. [Suggest directive](syntax.md#suggest-directive) is included by default, you can also use other directives like [DiagramDirective](syntax.md#the-diagram-directive) or `EnvironmentVariablesDirective`.
+- `EnableDirectives`, `UseEnvironmentVariableDirective`, `UseParseDirective`, and `UseSuggestDirective` were removed. A new [Directive](syntax.md#directives) type was introduced and the [RootCommand](syntax.md#root-command) now exposes <xref:System.CommandLine.RootCommand.Directives> property. You can add, remove, and iterate directives by using this collection. [Suggest directive](syntax.md#suggest-directive) is included by default; you can also use other directives like [DiagramDirective](syntax.md#the-diagram-directive) or `EnvironmentVariablesDirective`.
 - `EnableLegacyDoubleDashBehavior` was removed. All unmatched tokens are now exposed by the [ParseResult.UnmatchedTokens](parse-and-invoke.md#unmatched-tokens) property.
 - `EnablePosixBundling` was removed. The bundling is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableBundling](command-line-configuration.md#enableposixbundling) property to `false`.
-- `RegisterWithDotnetSuggest` was removed as it was performing very expensive operation, typically during application startup. The users are now required to register their commands with `dotnet suggest` [manually](tab-completion.md#enable-tab-completion).
+- `RegisterWithDotnetSuggest` was removed as it performed an expensive operation, typically during application startup. Now you must register commands with `dotnet suggest` [manually](tab-completion.md#enable-tab-completion).
 - `UseExceptionHandler` was removed. The default exception handler is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableDefaultExceptionHandler](command-line-configuration.md#enabledefaultexceptionhandler) property to `false`. This is useful when you want to handle exceptions in a custom way, by just wrapping the `Invoke` or `InvokeAsync` methods in a try-catch block.
 - `UseHelp` and `UseVersion` were removed. The help and version are now exposed by the [HelpOption](help.md#help-option) and [VersionOption](syntax.md#version-option) public types. They are both included by default in the options defined by [RootCommand](syntax.md#root-command).
-- `UseHelpBuilder` was removed. Please read the [How to customize help in System.CommandLine](help.md) document for more information on how to customize the help output.
-- `AddMiddleware` was removed. It was slowing down the application startup a lot, and since we were able to express all the features without it, we decided to remove it.
+- `UseHelpBuilder` was removed. For more information on how to customize the help output, see [How to customize help in System.CommandLine](help.md).
+- `AddMiddleware` was removed. It slowed down the application startup, and features can be expressed without it.
 - `UseParseErrorReporting` and `UseTypoCorrections` were removed. The parse errors are now reported by default when invoking `ParseResult`. You can configure it by using the `ParseErrorAction` exposed by `ParseResult.Action` property.
 
-```csharp
-ParseResult result = rootCommand.Parse("myArgs", config);
-if (result.Action is ParseErrorAction parseError)
-{
-    parseError.ShowTypoCorrections = true;
-    parseError.ShowHelp = false;
-}
-```
+  ```csharp
+  ParseResult result = rootCommand.Parse("myArgs", config);
+  if (result.Action is ParseErrorAction parseError)
+  {
+      parseError.ShowTypoCorrections = true;
+      parseError.ShowHelp = false;
+  }
+  ```
 
 - `UseLocalizationResources` and `LocalizationResources` were removed. This feature was used mostly by the `dotnet` CLI to add missing translations to `System.CommandLine`. All those translations were moved to the System.CommandLine itself, so this feature is no longer needed. If we are missing support for your language, please [report an issue](https://github.com/dotnet/command-line-api/issues/new/choose).
 - `UseTokenReplacer` was removed. [Response files](syntax.md#response-files) are enabled by default, but you can disable them by setting the <xref:System.CommandLine.CommandLineConfiguration.ResponseFileTokenReplacer> property to `null`. You can also provide a custom implementation to customize how response files are processed.
@@ -186,9 +186,9 @@ Last but not least, the `IConsole` and all related interfaces (`IStandardOut`, `
 
 ### Invocation
 
-In beta4, the `ICommandHandler` interface was exposing `Invoke` and `InvokeAsync` methods that were used to invoke the parsed command. This was making it easy to mix synchronous and asynchronous code, for example by defining a synchronous handler for a command and then invoking it asynchronously (which could lead to a [deadlock](../../csharp/asynchronous-programming/index.md#dont-block-await-instead)). Moreover, it was possible to define a handler only for a command. Not for an option (like help, which displays help) or a directive.
+In beta4, the `ICommandHandler` interface exposed `Invoke` and `InvokeAsync` methods that were used to invoke the parsed command. This made it easy to mix synchronous and asynchronous code, for example by defining a synchronous handler for a command and then invoking it asynchronously (which could lead to a [deadlock](../../csharp/asynchronous-programming/index.md#dont-block-await-instead)). Moreover, it was possible to define a handler only for a command, but not for an option (like help, which displays help) or a directive.
 
-We decided to introduce a new abstract base class <xref:System.CommandLine.CommandLineAction> and two derived classes: <xref:System.CommandLine.SynchronousCommandLineAction> and <xref:System.CommandLine.AsynchronousCommandLineAction>. The former is used for synchronous actions that return an `int` exit code, while the latter is used for asynchronous actions that return a `Task<int>` exit code.
+A new abstract base class <xref:System.CommandLine.CommandLineAction> and two derived classes: <xref:System.CommandLine.SynchronousCommandLineAction> and <xref:System.CommandLine.AsynchronousCommandLineAction> have been introduced. The former is used for synchronous actions that return an `int` exit code, while the latter is used for asynchronous actions that return a `Task<int>` exit code.
 
 You don't need to create a derived type to define an action. You can use the <xref:System.CommandLine.Command.SetAction%2A> method to set an action for a command. The synchronous action can be a delegate that takes a <xref:System.CommandLine.ParseResult> parameter and returns an `int` exit code (or nothing, and then a default `0` exit code is returned). The asynchronous action can be a delegate that takes a <xref:System.CommandLine.ParseResult> and <xref:System.Threading.CancellationToken> parameters and returns a `Task<int>` (or `Task` to get default exit code returned).
 
@@ -227,18 +227,18 @@ To summarize these changes:
 
 - The `ICommandHandler` interface was removed. `SynchronousCommandLineAction` and `AsynchronousCommandLineAction` were introduced.
 - The `Command.SetHandler` method was renamed to `SetAction`.
-- The `Command.Handler` property was renamed to `Command.Action`. Option got extended with `Option.Action`.
+- The `Command.Handler` property was renamed to `Command.Action`. `Option` was extended with `Option.Action`.
 - `InvocationContext` was removed. The `ParseResult` is now passed directly to the action.
 
-For more details about how to use actions, see the [How to parse and invoke commands in System.CommandLine](parse-and-invoke.md) document.
+For more details about how to use actions, see [How to parse and invoke commands in System.CommandLine](parse-and-invoke.md).
 
 ## The benefits of the simplified API
 
 We hope that the changes made in beta5 will make the API more consistent, futureproof and easier to use for existing and new users.
 
-The new users will need to learn fewer concepts and types, as the number of public interfaces dropped from 11 to 0, public classes (and structs) from 56 to 38. Public method count dropped from 378 to 235, and public properties from 118 to 99.
+New users need to learn fewer concepts and types, as the number of public interfaces decreased from 11 to 0, and public classes (and structs) decreased from 56 to 38. The public method count dropped from 378 to 235, and public properties from 118 to 99.
 
-We have also reduced the number of assemblies referenced by System.CommandLine from 11 to 6:
+The number of assemblies referenced by System.CommandLine is reduced from 11 to 6:
 
 ```diff
 System.Collections
@@ -299,9 +299,9 @@ static void Run(bool boolean, string text)
 }
 ```
 
-Simplicity has also improved the performance of the library (it's a side effect of our work, not the main goal of it). The [benchmarks](https://github.com/adamsitnik/commandline-perf/tree/update) show that the parsing and invoking of commands is now faster than in beta4, especially for large commands with many options and arguments. The performance improvements are visible in both synchronous and asynchronous scenarios.
+Simplicity has also improved the performance of the library (it's a side effect of the work, not the main goal of it). The [benchmarks](https://github.com/adamsitnik/commandline-perf/tree/update) show that the parsing and invoking of commands is now faster than in beta4, especially for large commands with many options and arguments. The performance improvements are visible in both synchronous and asynchronous scenarios.
 
-For the simplest app presented above, we got the following results:
+For the simplest app presented previously, we got the following results:
 
 ```ini
 BenchmarkDotNet v0.15.0, Windows 11 (10.0.26100.4061/24H2/2024Update/HudsonValley)

@@ -25,10 +25,10 @@ By default, System.CommandLine provides a set of built-in parsers that can parse
 * `decimal`
 * `DateTime` and `DateTimeOffset`
 * `DateOnly`and `TimeOnly`
-* `Guid`,
+* `Guid`
 * <xref:System.IO.FileSystemInfo>, <xref:System.IO.FileInfo>, and <xref:System.IO.DirectoryInfo>
 * enums
-* **arrays and lists** of the above types
+* **arrays and lists** of the listed types
 
 Other types are not supported, but you can create custom parsers for them. You can also validate the parsed values, which is useful when you want to ensure that the input meets certain criteria.
 

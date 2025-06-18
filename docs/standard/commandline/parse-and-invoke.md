@@ -93,7 +93,7 @@ The preceding code uses a `SetAction` overload that gets a [ParseResult](#parser
 
 :::code language="csharp" source="snippets/handle-termination/csharp/Program.cs" id="asyncaction" :::
 
-#### Process Termination Timeout
+#### Process termination timeout
 
 <xref:System.CommandLine.CommandLineConfiguration.ProcessTerminationTimeout?displayProperty=nameWithType> enables signaling and handling of process termination (<kbd>Ctrl</kbd>+<kbd>C</kbd>, `SIGINT`, `SIGTERM`) via a <xref:System.Threading.CancellationToken> that is passed to every async action during invocation. It's enabled by default (2 seconds), but you can set it to `null` to disable it.
 
@@ -111,7 +111,7 @@ The operation was aborted
 
 ### Exit codes
 
-The exit code is an integer value returned by an action indicating its success or failure. By convention, an exit code of `0` signifies success, while any non-zero value indicates an error. It’s important to define meaningful exit codes in your application to communicate the status of command execution clearly.
+The exit code is an integer value returned by an action indicating its success or failure. By convention, an exit code of `0` signifies success, while any non-zero value indicates an error. It's important to define meaningful exit codes in your application to communicate the status of command execution clearly.
 
 Every `SetAction` method has an overload that accepts a delegate returning an `int` exit code where the exit code needs to be provided in explicit way and an overload that returns `0`.
 

@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Core" Version="1.46.2" />
-    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.7.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.8.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
     <PackageReference Include="Moq" Version="[4.20.72]" /> <!-- Context: https://github.com/Azure/azure-sdk-for-net/issues/38111 -->
     <PackageReference Include="NSubstitute" Version="5.3.0" />

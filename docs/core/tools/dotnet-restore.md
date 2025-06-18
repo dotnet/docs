@@ -218,6 +218,6 @@ To retrieve the known vulnerability dataset, ensure that you have the NuGet.org 
 
 You can configure the level at which auditing will fail by setting the `<NuGetAuditLevel>` MSBuild property. Possible values are `low`, `moderate`, `high`, and `critical`. For example if you only want to see moderate, high, and critical advisories, you can set the property to `moderate`.
 
-Starting in .NET 9, NuGet audits both *direct* and *transitive* package references, by default. In .NET 8, only *direct* package references are audited. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
+In .NET 8 and .NET 9, only *direct* package references are audited by default. Starting in .NET 10, NuGet audits both *direct* and *transitive* package references by default. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
 
 For more information, see [Auditing package dependencies for security vulnerabilities](/nuget/concepts/auditing-packages).

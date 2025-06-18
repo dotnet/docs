@@ -2,7 +2,7 @@
 title: "Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger"
 description: An walkthrough of how to use OpenTelemetry in .NET to export telemetry to Prometheus, Grafana, and Jaeger
 ms.date: 6/14/2023
-ms.topic: conceptual
+ms.topic: article
 ---
 
 # Example: Use OpenTelemetry with Prometheus, Grafana, and Jaeger
@@ -13,7 +13,7 @@ This example uses Prometheus for metrics collection, Grafana for creating a dash
 
 Create a simple web API project by using the **ASP.NET Core Empty** template in Visual Studio or the following .NET CLI command:
 
-``` dotnetcli
+```dotnetcli
 dotnet new web
 ```
 
@@ -36,7 +36,7 @@ The following code defines a new metric (`greetings.count`) for the number of ti
 
 Use the NuGet Package Manager or command line to add the following NuGet packages:
 
-``` xml
+```xml
 <ItemGroup>
     <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.9.0" />
     <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.9.0" />
@@ -65,7 +65,7 @@ The code uses the Prometheus exporter for metrics, which uses ASP.NET Core to ho
 
 Run the project and then access the API with the browser or curl.
 
-``` dotnetcli
+```dotnetcli
 curl -k http://localhost:7275
 ```
 
@@ -85,7 +85,7 @@ There are a couple of options for how logs can be egressed from .NET:
 
 You can access the metrics using the `/metrics` endpoint.
 
-``` dotnetcli
+```dotnetcli
 curl -k https://localhost:7275/
 Hello World!
 
@@ -102,13 +102,13 @@ current_connections{endpoint="[::1]:5212"} 1 1686894204856
 ...
 ```
 
-The metrics output is a snapshot of the metrics at the time the endpoint is requested. The results are provided in [Prometheus exposition format](https://github.com/prometheus/docs/blob/main/content/docs/instrumenting/exposition_formats.md), which is human readable but better understood by Prometheus. That topic is covered in the next stage.
+The metrics output is a snapshot of the metrics at the time the endpoint is requested. The results are provided in [Prometheus exposition format](https://github.com/prometheus/docs/blob/main/docs/instrumenting/exposition_formats.md), which is human readable but better understood by Prometheus. That topic is covered in the next stage.
 
 ### 6.3 Access the tracing
 
 If you look at the console for the server, you'll see the output from the console trace exporter, which outputs the information in a human readable format. This should show two activities, one from your custom `ActivitySource`, and the other from ASP.NET Core:
 
-``` dotnetcli
+```dotnetcli
 Activity.TraceId:            2e00dd5e258d33fe691b965607b91d18
 Activity.SpanId:             3b7a891f55b97f1a
 Activity.TraceFlags:         Recorded
@@ -171,7 +171,7 @@ Download Prometheus for your platform from [https://prometheus.io/download/](htt
 
 Look at the top of the output of your running server to get the port number for the **http** endpoint. For example:
 
-``` dotnetcli
+```dotnetcli
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: https://localhost:7275
 info: Microsoft.Hosting.Lifetime[14]
@@ -180,7 +180,7 @@ info: Microsoft.Hosting.Lifetime[14]
 
 Modify the Prometheus YAML configuration file to specify the port for your HTTP scraping endpoint and set a lower scraping interval. For example:
 
-``` yaml
+```yaml
   scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: "prometheus"
@@ -195,7 +195,7 @@ Modify the Prometheus YAML configuration file to specify the port for your HTTP 
 
 Start Prometheus, and look in the output for the port it's running on, typically 9090:
 
-``` dotnetcli
+```dotnetcli
 >prometheus.exe
 ...
 ts=2023-06-16T05:29:02.789Z caller=web.go:562 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
@@ -260,13 +260,13 @@ Download the latest binary distribution archive of Jaeger for your platform from
 
 Then, extract the download to a local location that's easy to access. Run the *jaeger-all-in-one(.exe)* executable:
 
-``` dotnetcli
+```dotnetcli
 ./jaeger-all-in-one --collector.otlp.enabled
 ```
 
 Look through the console output to find the port where it's listening for OTLP traffic via gRPC. For example:
 
-``` json
+```json
 {"level":"info","ts":1686963686.3854616,"caller":"otlpreceiver@v0.78.2/otlp.go:83","msg":"Starting GRPC server","endpoint":"0.0.0.0:4317"}
 ```
 
@@ -274,7 +274,7 @@ This output tells you it's listening on `0.0.0.0:4317`, so you can configure tha
 
 Open the `AppSettings.json` file for our project, and add the following line, changing the port if applicable.
 
-``` json
+```json
 "OTLP_ENDPOINT_URL" :  "http://localhost:4317/"
 ```
 

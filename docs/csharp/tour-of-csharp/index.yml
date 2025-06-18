@@ -7,7 +7,7 @@ metadata:
   title: "C# docs - get started, tutorials, reference."
   description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
   ms.topic: landing-page # Required
-  ms.date: 05/08/2024
+  ms.date: 05/29/2025
 
 
 landingContent:
@@ -17,6 +17,8 @@ landingContent:
         links:
           - text: Learn C# | Tutorials, courses, videos, and more 
             url: https://dotnet.microsoft.com/learn/csharp
+          - text: Beginner C# tutorials in your browser
+            url: ./tutorials/index.md
       - linkListType: video
         links:
           - text: "C# beginner video series"
@@ -48,6 +50,8 @@ landingContent:
             url: ../fundamentals/program-structure/index.md
           - text: "C# highlights video series"
             url: https://youtube.com/playlist?list=PLdo4fOcmZ0oU3ZLx6Ul1_HPrr6lFPIn9O
+          - text: C# Language development strategy
+            url: ./strategy.md
       - linkListType: concept
         links:
           - text: "Type system"
@@ -105,7 +109,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: C# language strategy
-            url: ../tour-of-csharp/strategy.md
+            url: ./strategy.md
           - text: "Programming concepts"
             url: ../programming-guide/concepts/index.md
       - linkListType: concept
@@ -114,6 +118,14 @@ landingContent:
             url: ../linq/index.md
           - text: "Asynchronous programming"
             url: ../programming-guide/concepts/async/index.md
+      - linkListType: learn
+        links:
+          - text: Learn C# for Java developers
+            url: ./tips-for-java-developers.md
+          - text: Learn C# for JavaScript developers
+            url: ./tips-for-javascript-developers.md
+          - text: Learn C# for Python developers
+            url: ./tips-for-python-developers.md
 
   - title: "Advanced concepts"
     linkLists:
@@ -129,6 +141,30 @@ landingContent:
             url: ../advanced-topics/performance/index.md
           - text: ".NET Compiler Platform SDK"
             url: ../roslyn-sdk/index.md
+
+  - title: "C# language reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Language reference"
+            url: ../language-reference/index.yml
+          - text: "Keywords"
+            url: ../language-reference/keywords/index.md
+          - text: "Operators and expressions"
+            url: ../language-reference/operators/index.md
+          - text: "Tokens"
+            url: ../language-reference/tokens/index.md
+  
+  - title: "C# language standard"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Overview"
+            url: ../specification/overview.md
+          - text: "C# language specification"
+            url: ../../../_csharpstandard/standard/README.md
+          - text: "Feature specifications"
+            url: ../specification/feature-spec-overview.md
 
   - title: "Stay in touch"
     linkLists:

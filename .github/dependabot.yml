@@ -911,6 +911,28 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/ai/quickstarts/snippets/mcp-client" #MinimalMCPClient.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/ai/quickstarts/snippets/mcp-server" #MinimalMcpServer.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/ai/quickstarts/snippets/prompt-completion/azure-openai" #ExtensionsAzureOpenAI.csproj
     schedule:
       interval: "weekly"
@@ -1087,7 +1109,7 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
-    directory: "/docs/ai/tutorials/snippets/evaluate-with-reporting" #TestAIWithReporting.csproj
+    directory: "/docs/ai/tutorials/snippets/evaluate-safety" #EvaluateResponseSafety.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1098,7 +1120,7 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
-    directory: "/docs/ai/tutorials/snippets/llm-eval" #llm-eval.csproj
+    directory: "/docs/ai/tutorials/snippets/evaluate-with-reporting" #TestAIWithReporting.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1659,6 +1681,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/hosts/ShortLived.App" #ShortLived.App.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/http/basic" #basic.csproj
     schedule:
       interval: "weekly"
@@ -1836,6 +1869,72 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/core/extensions/snippets/logging/library-authors" #library-authors.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/logging/log-buffering/global/basic" #GlobalLogBufferingBasic.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/logging/log-buffering/global/code-based" #GlobalLogBufferingCodeBased.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/logging/log-buffering/global/file-based" #GlobalLogBufferingFileBased.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/logging/log-buffering/per-request/basic" #PerRequestLogBufferingBasic.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/logging/log-buffering/per-request/code-based" #PerRequestLogBufferingCodeBased.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/core/extensions/snippets/logging/log-buffering/per-request/file-based" #PerRequestLogBufferingFileBased.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -2089,105 +2188,6 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibraryTest" #StringLibraryTest.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibraryTestNet8" #StringLibraryTest.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/tutorials/snippets/library-with-visual-studio/vb/StringLibraryTest" #StringLibraryTest.vbproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/whats-new/snippets/dotnet-8/csharp/ConsoleApp" #Project.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/whats-new/snippets/dotnet-9/csharp" #Project.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/csharp/advanced-topics/interop/snippets/dynamic-iron-python-walkthrough" #ironpythonsample.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/csharp/asynchronous-programming/snippets/async-scenarios" #async-scenarios.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/finished" #IssuePRreport.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/csharp/asynchronous-programming/snippets/generate-consume-asynchronous-streams/start" #IssuePRreport.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/csharp/language-reference/compiler-messages/snippets/null-warnings" #null-warnings.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

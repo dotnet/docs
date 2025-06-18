@@ -90,7 +90,7 @@ internal class SelectProjectionExamples
         // <SelectManyMethod>
         List<string> phrases = ["an apple a day", "the quick brown fox"];
 
-        var query = phrases.SelectMany(phrases => phrases.Split(' '));
+        var query = phrases.SelectMany(phrase => phrase.Split(' '));
 
         foreach (string s in query)
         {

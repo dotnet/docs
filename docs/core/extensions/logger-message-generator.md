@@ -118,7 +118,6 @@ When using the `LoggerMessageAttribute` on logging methods, some constraints mus
 - Logging methods must be `partial` and return `void`.
 - Logging method names must *not* start with an underscore.
 - Parameter names of logging methods must *not* start with an underscore.
-- Logging methods may *not* be defined in a nested type.
 - Logging methods *cannot* be generic.
 - If a logging method is `static`, the `ILogger` instance is required as a parameter.
 
@@ -368,6 +367,64 @@ Consider the example logging output when using the `JsonConsole` formatter:
 }
 ```
 
+## Redacting sensitive information in logs
+
+When logging sensitive data, it's important to prevent accidental exposure. Even with compile-time generated logging methods, logging raw sensitive values can lead to data leaks and compliance issues.
+
+The [Microsoft.Extensions.Telemetry](https://www.nuget.org/packages/Microsoft.Extensions.Telemetry) library provides advanced logging and telemetry enrichment capabilities for .NET applications. It extends the logging pipeline to automatically apply redaction to classified data when writing logs. It enables you to enforce data protection policies throughout your application by integrating redaction into your logging workflow. It is built for applications needing sophisticated telemetry and logging insights.
+
+To enable redaction, use the [Microsoft.Extensions.Compliance.Redaction](https://www.nuget.org/packages/Microsoft.Extensions.Compliance.Redaction) library. This library provides **redactors**—components that transform sensitive data (for example, by erasing, masking, or hashing it) so that it is safe to output. Redactors are selected based on **data classification**, which lets you label data according to its sensitivity (such as personal, private, or public).
+
+To use redaction with source-generated logging methods, you should:
+
+1. Classify your sensitive data using a data classification system.
+2. Register and configure redactors for each classification in your DI container.
+3. Enable redaction in the logging pipeline.
+4. Check your logs to ensure no sensitive data is exposed.
+
+For example, if you have a log message that has a parameter that is considered private:
+
+```csharp
+[LoggerMessage(0, LogLevel.Information, "User SSN: {SSN}")]
+public static partial void LogPrivateInformation(
+    this ILogger logger,
+    [MyTaxonomyClassifications.Private] string SSN);
+```
+
+You will need to have a setting similar to this:
+
+```csharp
+using Microsoft.Extensions.Telemetry;
+using Microsoft.Extensions.Compliance.Redaction;
+
+var services = new ServiceCollection();
+services.AddLogging(builder =>
+{
+    // Enable redaction.
+    builder.EnableRedaction();
+});
+
+services.AddRedaction(builder =>
+{
+    // configure redactors for your data classifications
+    builder.SetRedactor<StarRedactor>(MyTaxonomyClassifications.Private);
+});
+
+public void TestLogging()
+{
+    LogPrivateInformation("MySSN");
+}
+```
+
+The output should be like this:
+
+`User SSN: *****`
+
+This approach ensures that only redacted data is logged, even when using compile-time generated logging APIs. You can use different redactors for different data types or classifications, and update your redaction logic centrally.
+
+For more details about how to classify your data, see [Data classification in .NET](data-classification.md).
+For more details about redaction and redactors, see [Data redaction in .NET](data-redaction.md).
+
 ## Summary
 
 With the advent of C# source generators, writing highly performant logging APIs is much easier. Using the source generator approach has several key benefits:
@@ -389,4 +446,6 @@ Additionally, there are benefits over manually using <xref:Microsoft.Extensions.
 - [Logging in .NET](logging.md)
 - [High-performance logging in .NET](high-performance-logging.md)
 - [Console log formatting](console-log-formatter.md)
+- [Data redaction in .NET](data-redaction.md)
+- [Data classification in .NET](data-classification.md)
 - [NuGet: Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/microsoft.extensions.logging.abstractions)

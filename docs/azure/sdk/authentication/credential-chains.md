@@ -1,8 +1,8 @@
 ---
 title: 'Credential chains in the Azure Identity library for .NET'
 description: 'This article describes the DefaultAzureCredential and ChainedTokenCredential classes in the Azure Identity library.'
-ms.topic: conceptual
-ms.date: 02/13/2025
+ms.topic: concept-article
+ms.date: 05/30/2025
 ---
 
 # Credential chains in the Azure Identity library for .NET
@@ -70,7 +70,11 @@ In its simplest form, you can use the parameterless version of `DefaultAzureCred
 
 ### How to customize DefaultAzureCredential
 
-To remove a credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
+The following sections describe strategies for omitting credentials from the chain.
+
+#### Exclude an individual credential
+
+To exclude an individual credential from `DefaultAzureCredential`, use the corresponding `Exclude`-prefixed property in [DefaultAzureCredentialOptions](/dotnet/api/azure.identity.defaultazurecredentialoptions?view=azure-dotnet&preserve-view=true#properties). For example:
 
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_DacExcludes" highlight="11-13":::
 
@@ -92,6 +96,19 @@ As more `Exclude`-prefixed properties are set to `true` (credential exclusions a
 :::code language="csharp" source="../snippets/authentication/credential-chains/Program.cs" id="snippet_CtcEquivalents":::
 
 ---
+
+#### Exclude a credential type category
+
+To exclude all `Developer tool` or `Deployed service` credentials, set environment variable `AZURE_TOKEN_CREDENTIALS` to `prod` or `dev`, respectively. When a value of `prod` is used, the underlying credential chain looks as follows:
+
+:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialEnvVarProd.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'prod'":::
+
+When a value of `dev` is used, the chain looks as follows:
+
+:::image type="content" source="../media/mermaidjs/DefaultAzureCredentialEnvVarDev.svg" alt-text="DefaultAzureCredential with AZURE_TOKEN_CREDENTIALS set to 'dev'":::
+
+> [!IMPORTANT]
+> The `AZURE_TOKEN_CREDENTIALS` environment variable is supported in `Azure.Identity` package versions 1.14.0 and later.
 
 ## ChainedTokenCredential overview
 

@@ -46,10 +46,10 @@ The Cosmos Recipe Guide app allows you to perform vector and AI driven searches 
 
     ```json
     "OpenAIEndpoint": "https://<your-service-name>.openai.azure.com/",
-    "OpenAIKey": "<your-api-key>",
-    "OpenAIEmbeddingDeployment": "<your-ada-deployment-name>",
-    "OpenAIcompletionsDeployment": "<your-gpt-deployment-name>",
-    "MongoVcoreConnection": "<your-mongo-connection-string>"
+    "OpenAIKey": "<your-API-key>",
+    "OpenAIEmbeddingDeployment": "<your-ADA-deployment-name>",
+    "OpenAIcompletionsDeployment": "<your-GPT-deployment-name>",
+    "MongoVcoreConnection": "<your-Mongo-connection-string>"
     ```
 
 1. Launch the app by pressing the **Start** button at the top of Visual Studio.
@@ -74,7 +74,7 @@ When you run the app for the first time, it connects to Azure Cosmos DB and repo
                 var jsonString= System.IO.File.ReadAllText(f);
                 Recipe recipe = JsonConvert.DeserializeObject<Recipe>(jsonString);
                 recipe.id = recipe.name.ToLower().Replace(" ", "");
-                ret.Add(recipe);
+                recipes.Add(recipe);
             }
         );
 

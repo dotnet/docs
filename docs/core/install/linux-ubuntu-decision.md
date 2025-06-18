@@ -24,7 +24,6 @@ The following table is a list of currently supported .NET releases and the versi
 | [24.10](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2410)       | 9.0, 8.0                | 9.0, 8.0                             | None                                                                                                   | None                                                                         |
 | [24.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2404) | 9.0, 8.0                | 8.0                                  | 9.0, 7.0, 6.0                                                                                          | None                                                                         |
 | [22.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2204) | 9.0, 8.0                | 8.0, 7.0, 6.0                        | 9.0                                                                                                    | 8.0, 7.0, 6.0, 3.1                                                           |
-| [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004) | 9.0, 8.0                | None                                 | None                                                                                                   | 8.0, 7.0. 6.0, 5.0, 3.1, 2.1                                                 |
 
 When an [Ubuntu version](https://wiki.ubuntu.com/Releases) reaches the end of its support period, .NET is no longer supported with that particular Ubuntu version.
 
@@ -79,9 +78,7 @@ If you're going to install the Microsoft repository to use other Microsoft packa
 
 ### I'm using a version of Ubuntu prior to 22.04
 
-Use the instructions on the version-specific Ubuntu page.
-
-- [20.04 (LTS)](linux-ubuntu-install.md?pivots=os-linux-ubuntu-2004)
+Use the instructions in the version-specific section of [Install .NET SDK or .NET Runtime on Ubuntu](linux-ubuntu-install.md?pivots=os-linux-ubuntu-other).
 
 Review the [Supported distributions](#supported-distributions) section for more information about what versions of .NET are supported for your version of Ubuntu. If you're installing a version that isn't supported, see [Register the Microsoft package repository](#register-the-microsoft-package-repository).
 
@@ -93,7 +90,7 @@ If you want to source the .NET packages from an Ubuntu feed, you need to deprior
 
 ### I want to create a .NET app
 
-Use the same package sources for the SDK as you use for the runtime. It is recommended that you install .NET through an Ubuntu feed. If, however you want to install .NET from another source (e.g. the [Microsoft package repository](#register-the-microsoft-package-repository) to access higher SDK feature bands), you should uninstall .NET, configure your package manager to ignore .NET packages from the Ubuntu feed and reinstall it from the other source.
+Use the same package sources for the SDK as you use for the runtime. It is recommended that you install .NET through an Ubuntu feed. If, however you want to install .NET from another source (for example, the [Microsoft package repository](#register-the-microsoft-package-repository) to access higher SDK feature bands), you should uninstall .NET, configure your package manager to ignore .NET packages from the Ubuntu feed and reinstall it from the other source.
 
 Review the other suggestions in the [Decide how to install .NET](#decide-how-to-install-net) section.
 
@@ -228,7 +225,7 @@ sudo apt update
 ```
 
 > [!TIP]
-> The previous script was written for Ubuntu and might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$ID` and `$VERSION_ID` variables won't be assigned the correct values, making the URI for the `wget` command invalid. The `$ID` corresponds to the distribution (e.g., `ubuntu`), while `$VERSION_ID` maps to the specific version of Ubuntu you want to get packages for, such as 22.04 or 23.10.
+> The previous script was written for Ubuntu and might not work if you're using a derived distribution, such as Linux Mint. It's likely that the `$ID` and `$VERSION_ID` variables won't be assigned the correct values, making the URI for the `wget` command invalid. The `$ID` corresponds to the distribution (for example, `ubuntu`), while `$VERSION_ID` maps to the specific version of Ubuntu you want to get packages for, such as 22.04 or 23.10.
 >
 > For example, on Ubuntu 22.04 `$ID` would be `ubuntu` and `$VERSION_ID` would be `22.04`. The URL would look like:
 > `https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb`.
@@ -342,14 +339,9 @@ When you install with a package manager, these libraries are installed for you. 
 - libssl1.1 (for 18.x, 20.x)
 - libssl3 (for 22.x or later)
 - libstdc++6
-- libunwind8 (for 22.x or later)
 - zlib1g
 
 [!INCLUDE [linux-ubuntu-deps-example](includes/linux-ubuntu-deps-example.md)]
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin-ubuntu).
 
 ## Next steps
 

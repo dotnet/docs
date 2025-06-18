@@ -43,3 +43,6 @@ These events collect information about the type system.
 
 [Tiered compilation events](runtime-tiered-compilation-events.md)\
 These events collect information about tiered compilation.
+
+[Wait handle events](runtime-wait-handle-events.md)\
+These events collect information about wait handles. They help to diagnostic thread pool starvations.

@@ -535,8 +535,9 @@ namespace CsCsrefProgrammingStatements
                 // Expression statement (assignment).
                 area = 3.14 * (radius * radius);
 
-                // Error. Not  statement because no assignment:
-                //circ * 2;
+                // Expression statement (result discarded).
+                int x = 0;
+                x++;
 
                 // Expression statement (method invocation).
                 System.Console.WriteLine();

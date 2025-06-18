@@ -58,5 +58,5 @@ Most application performance monitoring (APM) vendors such as [AppDynamics](http
 [Application Insights](/azure/azure-monitor/app/app-insights-overview),
 [DataDog](https://www.datadoghq.com/), [DynaTrace](https://www.dynatrace.com/), and
 [NewRelic](https://newrelic.com/) include metrics APIs as part of their instrumentation libraries.
-[Prometheus](https://github.com/prometheus-net/prometheus-net) and [AppMetrics](https://www.app-metrics.io/) are also popular .NET OSS projects.
+[Prometheus](https://github.com/prometheus-net/prometheus-net) and [AppMetrics](https://github.com/AppMetrics/AppMetrics) are also popular .NET OSS projects.
 To learn more about these projects, check the various project websites.

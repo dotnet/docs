@@ -5,9 +5,9 @@ ms.topic: tutorial
 ms.date: 04/19/2022
 ---
 
-# Debug ThreadPool Starvation
+# Debug ThreadPool starvation
 
-**This article applies to: ✔️** .NET Core 3.1 and later versions
+**This article applies to: ✔️** .NET 9.0 and later versions
 
 In this tutorial, you'll learn how to debug a ThreadPool starvation scenario. ThreadPool starvation occurs when the pool has no available threads to process new work items and it often causes applications to respond slowly. Using the provided example [ASP.NET Core web app](/samples/dotnet/samples/diagnostic-scenarios), you can cause ThreadPool starvation intentionally and learn how to diagnose it.
 
@@ -17,57 +17,42 @@ In this tutorial, you will:
 >
 > - Investigate an app that is responding to requests slowly
 > - Use the dotnet-counters tool to identify ThreadPool starvation is likely occurring
-> - Use the dotnet-stack tool to determine what work is keeping the ThreadPool threads busy
+> - Use the dotnet-stack and dotnet-trace tools to determine what work is keeping the ThreadPool threads busy
 
 ## Prerequisites
 
 The tutorial uses:
 
-- [.NET Core 6.0 SDK](https://dotnet.microsoft.com/download/dotnet) to build and run the sample app
+- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet) to build and run the sample app
 - [Sample web app](/samples/dotnet/samples/diagnostic-scenarios) to demonstrate ThreadPool starvation behavior
 - [Bombardier](https://github.com/codesenberg/bombardier/releases) to generate load for the sample web app
 - [dotnet-counters](dotnet-counters.md) to observe performance counters
 - [dotnet-stack](dotnet-stack.md) to examine thread stacks
+- [dotnet-trace](dotnet-trace.md) to collect wait events
+- Optional: [PerfView](https://github.com/microsoft/perfview/releases) to analyze the wait events
 
-## Running the sample app
+## Run the sample app
 
-1. Download the code for the [sample app](/samples/dotnet/samples/diagnostic-scenarios) and build it using the .NET SDK:
+Download the code for the [sample app](/samples/dotnet/samples/diagnostic-scenarios) and run it using the .NET SDK:
 
-    ```dotnetcli
-    E:\demo\DiagnosticScenarios>dotnet build
-    Microsoft (R) Build Engine version 17.1.1+a02f73656 for .NET
-    Copyright (C) Microsoft Corporation. All rights reserved.
-    
-      Determining projects to restore...
-      All projects are up-to-date for restore.
-      DiagnosticScenarios -> E:\demo\DiagnosticScenarios\bin\Debug\net6.0\DiagnosticScenarios.dll
-    
-    Build succeeded.
-        0 Warning(s)
-        0 Error(s)
-    
-    Time Elapsed 00:00:01.26
-    ```
-
-1. Run the app:
-
-    ```dotnetcli
-    E:\demo\DiagnosticScenarios>bin\Debug\net6.0\DiagnosticScenarios.exe
-    info: Microsoft.Hosting.Lifetime[14]
-          Now listening on: http://localhost:5000
-    info: Microsoft.Hosting.Lifetime[14]
-          Now listening on: https://localhost:5001
-    info: Microsoft.Hosting.Lifetime[0]
-          Application started. Press Ctrl+C to shut down.
-    info: Microsoft.Hosting.Lifetime[0]
-          Hosting environment: Production
-    info: Microsoft.Hosting.Lifetime[0]
-          Content root path: E:\demo\DiagnosticScenarios
-    ```
+```dotnetcli
+E:\demo\DiagnosticScenarios>dotnet run
+Using launch settings from E:\demo\DiagnosticScenarios\Properties\launchSettings.json...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: E:\demo\DiagnosticScenarios
+```
 
 If you use a web browser and send requests to `https://localhost:5001/api/diagscenario/taskwait`, you should see the response `success:taskwait` returned after about 500 ms. This shows that the web server is serving traffic as expected.
 
-## Observing slow performance
+## Observe slow performance
 
 The demo web server has several endpoints which mock doing a database request and then returning a response to the user. Each of these endpoints has a delay of approximately 500 ms when serving requests one at a time but the performance is much worse when the web server is subjected to some load. Download the [Bombardier](https://github.com/codesenberg/bombardier/releases) load testing tool and observe the difference in latency when 125 concurrent requests are sent to each endpoint.
 
@@ -103,7 +88,7 @@ Statistics        Avg      Stdev        Max
 
 Both of these endpoints show dramatically more than the 500-ms average latency when load is high (3.48 s and 15.42 s respectively). If you run this example on an older version of .NET Core, you're likely to see both examples perform equally badly. .NET 6 has updated ThreadPool heuristics that reduce the performance impact of the bad coding pattern used in the first example.
 
-## Detecting ThreadPool starvation
+## Detect ThreadPool starvation
 
 If you observed the behavior above on a real world service, you would know it's responding slowly under load but you wouldn't know the cause. [dotnet-counters](dotnet-counters.md) is a tool that can show live performance counters. These counters can provide clues about certain problems and are often easy to get. In production environments, you might have similar counters provided by remote monitoring tools and web dashboards. Install dotnet-counters and begin monitoring the web service:
 
@@ -112,72 +97,94 @@ dotnet-counters monitor -n DiagnosticScenarios
 Press p to pause, r to resume, q to quit.
     Status: Running
 
+Name                                                       Current Value
 [System.Runtime]
-    % Time in GC since last GC (%)                                 0
-    Allocation Rate (B / 1 sec)                                    0
-    CPU Usage (%)                                                  0
-    Exception Count (Count / 1 sec)                                0
-    GC Committed Bytes (MB)                                        0
-    GC Fragmentation (%)                                           0
-    GC Heap Size (MB)                                             34
-    Gen 0 GC Count (Count / 1 sec)                                 0
-    Gen 0 Size (B)                                                 0
-    Gen 1 GC Count (Count / 1 sec)                                 0
-    Gen 1 Size (B)                                                 0
-    Gen 2 GC Count (Count / 1 sec)                                 0
-    Gen 2 Size (B)                                                 0
-    IL Bytes Jitted (B)                                      279,021
-    LOH Size (B)                                                   0
-    Monitor Lock Contention Count (Count / 1 sec)                  0
-    Number of Active Timers                                        0
-    Number of Assemblies Loaded                                  121
-    Number of Methods Jitted                                   3,223
-    POH (Pinned Object Heap) Size (B)                              0
-    ThreadPool Completed Work Item Count (Count / 1 sec)           0
-    ThreadPool Queue Length                                        0
-    ThreadPool Thread Count                                        1
-    Time spent in JIT (ms / 1 sec)                                 0.387
-    Working Set (MB)                                              87
+    dotnet.assembly.count ({assembly})                               115
+    dotnet.gc.collections ({collection})
+        gc.heap.generation
+        gen0                                                           2
+        gen1                                                           1
+        gen2                                                           1
+    dotnet.gc.heap.total_allocated (By)                       64,329,632
+    dotnet.gc.last_collection.heap.fragmentation.size (By)
+        gc.heap.generation
+        gen0                                                     199,920
+        gen1                                                      29,208
+        gen2                                                           0
+        loh                                                           32
+        poh                                                            0
+    dotnet.gc.last_collection.heap.size (By)
+        gc.heap.generation
+        gen0                                                     208,712
+        gen1                                                   3,456,000
+        gen2                                                   5,065,600
+        loh                                                       98,384
+        poh                                                    3,147,488
+    dotnet.gc.last_collection.memory.committed_size (By)      31,096,832
+    dotnet.gc.pause.time (s)                                           0.024
+    dotnet.jit.compilation.time (s)                                    1.285
+    dotnet.jit.compiled_il.size (By)                             565,249
+    dotnet.jit.compiled_methods ({method})                         5,831
+    dotnet.monitor.lock_contentions ({contention})                   148
+    dotnet.process.cpu.count ({cpu})                                  16
+    dotnet.process.cpu.time (s)
+        cpu.mode
+        system                                                         2.156
+        user                                                           2.734
+    dotnet.process.memory.working_set (By)                             1.3217e+08
+    dotnet.thread_pool.queue.length ({work_item})                      0
+    dotnet.thread_pool.thread.count ({thread})                         0
+    dotnet.thread_pool.work_item.count ({work_item})              32,267
+    dotnet.timer.count ({timer})                                       0
 ```
 
-The counters above are an example while the web server wasn't serving any requests. Run Bombardier again with the `api/diagscenario/tasksleepwait` endpoint and sustained load for 2 minutes so there's plenty of time to observe what happens to the performance counters.
+The preceding counters are an example while the web server wasn't serving any requests. Run Bombardier again with the `api/diagscenario/tasksleepwait` endpoint and sustained load for 2 minutes so there's plenty of time to observe what happens to the performance counters.
 
 ```dotnetcli
 bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/tasksleepwait -d 120s
 ```
 
-ThreadPool starvation occurs when there are no free threads to handle the queued work items and the runtime responds by increasing the number of ThreadPool threads. You should observe the `ThreadPool Thread Count` rapidly increase to 2-3x the number of processor cores on your machine and then further threads are added 1-2 per second until eventually stabilizing somewhere above 125. The slow and steady increase of ThreadPool threads combined with CPU Usage much less than 100% are the key signals that ThreadPool starvation is currently a performance bottleneck. The thread count increase will continue until either the pool hits the maximum number of threads, enough threads have been created to satisfy all the incoming work items, or the CPU has been saturated. Often, but not always, ThreadPool starvation will also show large values for `ThreadPool Queue Length` and low values for `ThreadPool Completed Work Item Count`, meaning that there's a large amount of pending work and little work being completed. Here's an example of the counters while the thread count is still rising:
+ThreadPool starvation occurs when there are no free threads to handle the queued work items and the runtime responds by increasing the number of ThreadPool threads. The `dotnet.thread_pool.thread.count` value increases rapidly to 2-3x the number of processor cores on your machine, and then further threads are added 1-2 per second until stabilizing somewhere above 125. The key signals that ThreadPool starvation is currently a performance bottleneck are the slow and steady increase of ThreadPool threads and CPU Usage much less than 100%. The thread count increase will continue until either the pool hits the maximum number of threads, enough threads have been created to satisfy all the incoming work items, or the CPU has been saturated. Often, but not always, ThreadPool starvation will also show large values for `dotnet.thread_pool.queue.length` and low values for `dotnet.thread_pool.work_item.count`, meaning that there's a large amount of pending work and little work being completed. Here's an example of the counters while the thread count is still rising:
 
 ```dotnetcli
-Press p to pause, r to resume, q to quit.
-    Status: Running
-
 [System.Runtime]
-    % Time in GC since last GC (%)                                 0
-    Allocation Rate (B / 1 sec)                               24,480
-    CPU Usage (%)                                                  0
-    Exception Count (Count / 1 sec)                                0
-    GC Committed Bytes (MB)                                       56
-    GC Fragmentation (%)                                          40.603
-    GC Heap Size (MB)                                             89
-    Gen 0 GC Count (Count / 1 sec)                                 0
-    Gen 0 Size (B)                                         6,306,160
-    Gen 1 GC Count (Count / 1 sec)                                 0
-    Gen 1 Size (B)                                         8,061,400
-    Gen 2 GC Count (Count / 1 sec)                                 0
-    Gen 2 Size (B)                                               192
-    IL Bytes Jitted (B)                                      279,263
-    LOH Size (B)                                              98,576
-    Monitor Lock Contention Count (Count / 1 sec)                  0
-    Number of Active Timers                                      124
-    Number of Assemblies Loaded                                  121
-    Number of Methods Jitted                                   3,227
-    POH (Pinned Object Heap) Size (B)                      1,197,336
-    ThreadPool Completed Work Item Count (Count / 1 sec)           2
-    ThreadPool Queue Length                                       29
-    ThreadPool Thread Count                                       96
-    Time spent in JIT (ms / 1 sec)                                 0
-    Working Set (MB)                                             152
+    dotnet.assembly.count ({assembly})                               115
+    dotnet.gc.collections ({collection})
+        gc.heap.generation
+        gen0                                                           5
+        gen1                                                           1
+        gen2                                                           1
+    dotnet.gc.heap.total_allocated (By)                       1.6947e+08
+    dotnet.gc.last_collection.heap.fragmentation.size (By)
+        gc.heap.generation
+        gen0                                                           0
+        gen1                                                     348,248
+        gen2                                                           0
+        loh                                                           32
+        poh                                                            0
+    dotnet.gc.last_collection.heap.size (By)
+        gc.heap.generation
+        gen0                                                           0
+        gen1                                                  18,010,920
+        gen2                                                   5,065,600
+        loh                                                       98,384
+        poh                                                    3,407,048
+    dotnet.gc.last_collection.memory.committed_size (By)      66,842,624
+    dotnet.gc.pause.time (s)                                           0.05
+    dotnet.jit.compilation.time (s)                                    1.317
+    dotnet.jit.compiled_il.size (By)                             574,886
+    dotnet.jit.compiled_methods ({method})                         6,008
+    dotnet.monitor.lock_contentions ({contention})                   194
+    dotnet.process.cpu.count ({cpu})                                  16
+    dotnet.process.cpu.time (s)
+        cpu.mode
+        system                                                         4.953
+        user                                                           6.266
+    dotnet.process.memory.working_set (By)                             1.3217e+08
+    dotnet.thread_pool.queue.length ({work_item})                      0
+    dotnet.thread_pool.thread.count ({thread})                       133
+    dotnet.thread_pool.work_item.count ({work_item})              71,188
+    dotnet.timer.count ({timer})                                     124
 ```
 
 Once the count of ThreadPool threads stabilizes, the pool is no longer starving. But if it stabilizes at a high value (more than about three times the number of processor cores), that usually indicates the application code is blocking some ThreadPool threads and the ThreadPool is compensating by running with more threads. Running steady at high thread counts won't necessarily have large impacts on request latency, but if load varies dramatically over time or the app will be periodically restarted, then each time the ThreadPool is likely to enter a period of starvation where it's slowly increasing threads and delivering poor request latency. Each thread also consumes memory, so reducing the total number of threads needed provides another benefit.
@@ -190,9 +197,11 @@ bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d
 
 On .NET 6 you should observe the pool increase the thread count more quickly than before and then stabilize at a high number of threads. ThreadPool starvation is occurring while the thread count is climbing.
 
-## Resolving ThreadPool starvation
+## Resolve ThreadPool starvation
 
-To eliminate ThreadPool starvation, ThreadPool threads need to remain unblocked so that they're available to handle incoming work items. There are two ways to determine what each thread was doing, either using the [dotnet-stack](dotnet-stack.md) tool or capturing a dump with [dotnet-dump](dotnet-dump.md) that can be viewed in [Visual Studio](/visualstudio/debugger/using-dump-files). dotnet-stack can be faster because it shows the thread stacks immediately on the console, but Visual Studio dump debugging offers better visualizations that map frames to source, Just My Code can filter out runtime implementation frames, and the Parallel Stacks feature can help group large numbers of threads with similar stacks. This tutorial shows the dotnet-stack option. See the [diagnosing ThreadPool starvation tutorial video](/shows/on-net/diagnosing-thread-pool-exhaustion-issues-in-net-core-apps) for an example of investigating the thread stacks using Visual Studio.
+To eliminate ThreadPool starvation, ThreadPool threads need to remain unblocked so that they're available to handle incoming work items. There are multiple ways to determine what each thread was doing. If the issue occurs only occasionally, then collecting a trace with [dotnet-trace](dotnet-trace.md) is best to record application behavior over a period of time. If the issue occurs constantly, then you can use the [dotnet-stack](dotnet-stack.md) tool or capture a dump with [dotnet-dump](dotnet-dump.md) that can be viewed in [Visual Studio](/visualstudio/debugger/using-dump-files). dotnet-stack can be faster because it shows the thread stacks immediately on the console. But Visual Studio dump debugging offers better visualizations that map frames to source, Just My Code can filter out runtime implementation frames, and the Parallel Stacks feature can help group large numbers of threads with similar stacks. This tutorial shows the dotnet-stack and dotnet-trace options. For an example of investigating the thread stacks using Visual Studio, see the [Diagnosing ThreadPool starvation tutorial video](/shows/on-net/diagnosing-thread-pool-exhaustion-issues-in-net-core-apps).
+
+### Diagnose a continuous issue with dotnet-stack
 
 Run Bombardier again to put the web server under load:
 
@@ -275,6 +284,77 @@ Thread (0x25968):
   DiagnosticScenarios!testwebapi.Controllers.DiagScenarioController.TaskWait()
 ```
 
+### Diagnose an intermittent issue with dotnet-trace
+
+The dotnet-stack approach is effective only for obvious, consistent blocking operations that occur in every request. In some scenarios, the blocking happens sporadically only every few minutes, making dotnet-stack less useful for diagnosing the issue. In this case, you can use dotnet-trace to collect events over a period of time and save them in a nettrace file that can be analyzed later.
+
+There's one particular event that helps diagnosing thread pool starvation: the WaitHandleWait event, which was introduced in .NET 9. It's emitted when a thread becomes blocked by operations such as sync-over-async calls (for example, `Task.Result`, `Task.Wait`, and `Task.GetAwaiter().GetResult()`) or by other locking operations like `lock`, `Monitor.Enter`, `ManualResetEventSlim.Wait`, and `SemaphoreSlim.Wait`.
+
+Run Bombardier again to put the web server under load:
+
+```dotnetcli
+bombardier-windows-amd64.exe https://localhost:5001/api/diagscenario/taskwait -d 120s
+```
+
+Then run dotnet-trace to collect wait events:
+
+```dotnetcli
+dotnet trace collect -n DiagnosticScenarios --clrevents waithandle --clreventlevel verbose --duration 00:00:30
+```
+
+That should generate a file named `DiagnosticScenarios.exe_yyyyddMM_hhmmss.nettrace` containing the events. This nettrace can be analyzed using two different tools:
+
+- [PerfView](https://github.com/microsoft/perfview/releases): A performance analysis tool developed by Microsoft for Windows only.
+- [.NET Events Viewer](https://verdie-g.github.io/dotnet-events-viewer): A nettrace analysis [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web tool developed by the community.
+
+The following sections show how to use each tool to read the nettrace file.
+
+#### Analyze a nettrace with Perfview
+
+1. Download [PerfView](https://github.com/microsoft/perfview/releases) and run it.
+1. Open the nettrace file by double-clicking it.
+
+   ![Screenshot of the opening of a nettrace in PerfView](./media/perfview-open-nettrace.png)
+
+1. Double click on **Advanced Group** > **Any Stacks**. A new window opens.
+
+   :::image type="content" source="./media/perfview-any-stacks.png" lightbox="./media/perfview-any-stacks.png" alt-text="Screenshot of the any stacks view in PerfView.":::
+
+1. Double click on the line "Event Microsoft-Windows-DotNETRuntime/WaitHandleWait/Start".
+
+   Now you should see the stack traces where the WaitHandleWait events were emitted. They are split by "WaitSource". Currently there are two sources: `MonitorWait` for events emitted through [Monitor.Wait](xref:System.Threading.Monitor), and `Unknown` for all the others.
+
+   :::image type="content" source="./media/perfview-any-stacks-waithandle.png" lightbox="./media/perfview-any-stacks-waithandle.png" alt-text="Screenshot of the any stacks view for wait events in PerfView.":::
+
+1. Start with MonitorWait as it represents 64.8% of the events. You can check the checkboxes to expand the stack traces responsible for emitting this event.
+
+   :::image type="content" source="./media/perfview-any-stacks-waithandle-expanded.png" lightbox="./media/perfview-any-stacks-waithandle-expanded.png" alt-text="Screenshot of the expanded any stacks view for wait events in PerfView.":::
+
+   This stack trace can be read as: `Task<T>.Result` emitted a WaitHandleWait event with a WaitSource MonitorWait (`Task<T>.Result` uses `Monitor.Wait` to perform a wait). It was called by `DiagScenarioController.TaskWait`, which was called by some lambda, which was called by some ASP.NET code
+
+#### Analyze a nettrace with .NET Events Viewer
+
+1. Go to [verdie-g.github.io/dotnet-events-viewer](https://verdie-g.github.io/dotnet-events-viewer).
+1. Drag-and-drop the nettrace file.
+
+   ![Screenshot of the opening of a nettrace in .NET Events Viewer.](./media/dotnet-events-viewer-open-nettrace.png)
+
+1. Go to the **Events Tree** page, select the event "WaitHandleWaitStart", and then select **Run query**.
+
+   ![Screenshot of an events query in .NET Events Viewer.](./media/dotnet-events-viewer-query-wait-events.png)
+
+1. You should see the stack traces where the WaitHandleWait events were emitted. Click on the arrows to expand the stack traces responsible for emitting this event.
+
+   :::image type="content" source="./media/dotnet-events-viewer-expanded-wait-events.png" lightbox="./media/dotnet-events-viewer-expanded-wait-events.png" alt-text="Screenshot of the tree view in .NET Events Viewer.":::
+
+   This stack trace can be read as: `ManualResetEventSlim.Wait` emitted a WaitHandleWait event. It was called by `Task.SpinThenBlockWait`, which was called by `Task.InternalWaitCore`, which was called by `Task<T>.Result`, which was called by `DiagScenario.TaskWait`, which was called by some lambda, which was called by some ASP.NET code
+
+In real world scenarios, you might find a lot of wait events emitted from threads outside the thread pool. Here, you're investigating a *thread pool* starvation, so all waits on dedicated thread outside of the thread pool aren't relevant. You can tell if a stack trace is from a thread pool thread by looking at the first methods, which should contain a mention of the thread pool (for example, `WorkerThread.WorkerThreadStart` or `ThreadPoolWorkQueue`).
+
+:::image type="content" source="./media/dotnet-events-viewer-tp-stack-trace-top.png" lightbox="./media/dotnet-events-viewer-tp-stack-trace-top.png" alt-text="Top of a thread pool thread stack trace.":::
+
+### Code fix
+
 Now you can navigate to the code for this controller in the sample app's *Controllers/DiagnosticScenarios.cs* file to see that it's calling an async API without using `await`. This is the [sync-over-async](https://devblogs.microsoft.com/pfxteam/should-i-expose-synchronous-wrappers-for-asynchronous-methods/) code pattern, which is known to block threads and is the most common cause of ThreadPool starvation.
 
 ```csharp
@@ -286,7 +366,7 @@ public ActionResult<string> TaskWait()
 }
 ```
 
-In this case the code can be readily changed to use the async/await instead as shown in the `TaskAsyncWait()` endpoint. Using await allows the current thread to service other workitems while the database query is in progress. When the database lookup is complete a ThreadPool thread will resume execution. This way no thread is blocked in the code during each request:
+In this case the code can be readily changed to use the async/await instead as shown in the `TaskAsyncWait()` endpoint. Using await allows the current thread to service other workitems while the database query is in progress. When the database lookup is complete, a ThreadPool thread will resume execution. This way no thread is blocked in the code during each request.
 
 ```csharp
 public async Task<ActionResult<string>> TaskAsyncWait()

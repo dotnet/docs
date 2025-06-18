@@ -1,7 +1,7 @@
 ---
 title: Telemetry collection by ML.NET CLI
 description: Learn about ML.NET CLI telemetry features that collect usage information for analysis, which data is collected, and how to disable it. Also, find links to the .NET license agreement and information about Microsoft GDPR compliance.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/03/2020
 ms.custom: mlnet-tooling
 ---

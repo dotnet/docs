@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "command line interface"
   - "command line"
   - "System.CommandLine"
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Command-line syntax overview for System.CommandLine

@@ -1,11 +1,9 @@
 ---
 title: Quickstart - Connect to and chat with a local AI using .NET
 description: Set up a local AI model and chat with it using a .NET console app and the Microsoft.Extensions.AI libraries
-ms.date: 12/19/2024
+ms.date: 05/28/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: alexwolfmsft
-ms.author: alexwolf
 ---
 
 # Chat with a local AI model using .NET
@@ -62,10 +60,10 @@ Complete the following steps to create a .NET console app that connects to your 
     dotnet new console -o LocalAI
     ```
 
-1. Add the [Microsoft.Extensions.AI.Ollama](https://aka.ms/meai-ollama-nuget) packages to your app:
+1. Add the [OllamaSharp](https://www.nuget.org/packages/OllamaSharp) package to your app:
 
     ```dotnetcli
-    dotnet add package Microsoft.Extensions.AI.Ollama --prerelease
+    dotnet add package OllamaSharp
     ```
 
 1. Open the new app in your editor of choice, such as Visual Studio Code.

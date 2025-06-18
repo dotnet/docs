@@ -3,7 +3,7 @@ title: Worker Services
 description: Learn how to implement a custom IHostedService and use existing implementations in C#. Discover various worker implementations, templates, and service patterns.
 author: IEvangelist
 ms.author: dapine
-ms.date: 12/13/2023
+ms.date: 05/28/2025
 ms.topic: overview
 ---
 
@@ -136,20 +136,38 @@ These two methods serve as *lifecycle* methods - they're called during host star
 
 ## Signal completion
 
-In most common scenarios, you don't need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you may need to signal the completion of the entire host application when the service completes. To signal the completion, consider the following `Worker` class:
+In most common scenarios, you don't need to explicitly signal the completion of a hosted service. When the host starts the services, they're designed to run until the host is stopped. In some scenarios, however, you might need to signal the completion of the entire host application when the service completes. To signal the completion, consider the following `Worker` class:
 
 :::code source="snippets/workers/signal-completion-service/App.SignalCompletionService/Worker.cs":::
 
-In the preceding code, the `ExecuteAsync` method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
+In the preceding code, the <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> method doesn't loop, and when it's complete it calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication?displayProperty=nameWithType>.
 
 > [!IMPORTANT]
-> This will signal to the host that it should stop, and without this call to `StopApplication` the host will continue to run indefinitely.
+> This will signal to the host that it should stop, and without this call to `StopApplication` the host will continue to run indefinitely. If you intend to run a short-lived hosted service (run once scenario), and you want to use the Worker template, you must call `StopApplication` to signal the host to stop.
 
 For more information, see:
 
 - [.NET Generic Host: IHostApplicationLifetime](generic-host.md#ihostapplicationlifetime)
 - [.NET Generic Host: Host shutdown](generic-host.md#host-shutdown)
 - [.NET Generic Host: Hosting shutdown process](generic-host.md#hosting-shutdown-process)
+
+### Alternative approach
+
+For a short-lived app that needs dependency injection, logging, and configuration, use the [.NET Generic Host](generic-host.md) instead of the Worker template. This lets you use these features without the `Worker` class. A simple example of a short-lived app using the generic host might define a project file like the following:
+
+:::code language="xml" source="snippets/hosts/ShortLived.App/ShortLived.App.csproj":::
+
+It's `Program` class might look something like the following:
+
+:::code language="csharp" source="snippets/hosts/ShortLived.App/Program.cs":::
+
+The preceding code creates a `JobRunner` service, which is a custom class that contains the logic for the job to run. The `RunAsync` method is called on the `JobRunner`, and if it completes successfully, the app returns `0`. If an unhandled exception occurs, it logs the error and returns `1`.
+
+In this simple scenario, the `JobRunner` class could look like this:
+
+:::code language="csharp" source="snippets/hosts/ShortLived.App/JobRunner.cs":::
+
+You'd obviously need to add real logic to the `RunAsync` method, but this example demonstrates how to use the generic host for a short-lived app without the need for a `Worker` class, and without the need for explicitly signaling the completion of the host.
 
 ## See also
 

@@ -76,7 +76,7 @@ The third overload accepts a `Func<TFirst, TSecond, TResult>` argument that acts
 
 :::code source="./snippets/standard-query-operators/SelectProjectionExamples.cs" id="ZipResultSelector":::
 
-With the preceding `Zip` overload, the specified function is applied to the corresponding elements `numbers` and `letter`, producing a sequence of the `string` results.
+With the preceding `Zip` overload, the specified function is applied to the corresponding elements `number` and `letter`, producing a sequence of the `string` results.
 
 ## `Select` versus `SelectMany`
 

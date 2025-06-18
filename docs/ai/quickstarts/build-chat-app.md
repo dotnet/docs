@@ -4,8 +4,6 @@ description: Create a simple AI powered chat app using Microsoft.Extensions.AI a
 ms.date: 04/09/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: fboucher
-ms.author: frbouche
 zone_pivot_groups: openai-library
 # CustomerIntent: As a .NET developer new to AI, I want deploy and use sample code to interact to learn from the sample code.
 ---
@@ -13,9 +11,6 @@ zone_pivot_groups: openai-library
 # Build an AI chat app with .NET
 
 In this quickstart, you learn how to create a conversational .NET console chat app using an OpenAI or Azure OpenAI model. The app uses the <xref:Microsoft.Extensions.AI> library so you can write code using AI abstractions rather than a specific SDK. AI abstractions enable you to change the underlying AI model with minimal code changes.
-
-> [!NOTE]
-> The [`Microsoft.Extensions.AI`](https://www.nuget.org/packages/Microsoft.Extensions.AI/) library is currently in Preview.
 
 :::zone target="docs" pivot="openai"
 
@@ -94,8 +89,8 @@ Complete the following steps to create a .NET console app to connect to an AI mo
 
     ```bash
     dotnet user-secrets init
-    dotnet user-secrets set OpenAIKey <your-openai-key>
-    dotnet user-secrets set ModelName <your-openai-model-name>
+    dotnet user-secrets set OpenAIKey <your-OpenAI-key>
+    dotnet user-secrets set ModelName <your-OpenAI-model-name>
     ```
 
 :::zone-end

@@ -2,7 +2,7 @@
 title: System.Globalization.PersianCalendar class
 description: Learn more about the System.Globalization.PersianCalendar class.
 ms.date: 04/09/2025
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # <xref:System.Globalization.PersianCalendar> class
 

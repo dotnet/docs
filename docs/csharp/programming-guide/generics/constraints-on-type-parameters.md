@@ -169,7 +169,7 @@ The preceding syntax would require implementers to use [explicit interface imple
 The `allows ref struct` anti-constraint declares that the corresponding type argument can be a [`ref struct`](../../language-reference/builtin-types/ref-struct.md) type. Instances of that type parameter must obey the following rules:
 
 - It can't be boxed.
-- It participates in [ref safety rules](~/_csharpstandard/standard/structs.md#16412-safe-context-constraint).
+- It participates in [ref safety rules](~/_csharpstandard/standard/structs.md#16415-safe-context-constraint).
 - Instances can't be used where a `ref struct` type isn't allowed, such as `static` fields.
 - Instances can be marked with the `scoped` modifier.
 

@@ -28,8 +28,12 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: No default SIGTERM signal handler
+                href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
-                href: core-libraries/10.0/asyncenumerable.md         
+                href: core-libraries/10.0/asyncenumerable.md
+              - name: YMM embedded rounding removed from AVX10.2
+                href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: Cryptography
             items:
               - name: X500DistinguishedName validation is stricter
@@ -38,6 +42,10 @@ items:
                 href: cryptography/10.0/x509-publickey-null.md
               - name: Environment variable renamed to DOTNET_OPENSSL_VERSION_OVERRIDE
                 href: cryptography/10.0/version-override.md
+          - name: Extensions
+            items:
+              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+                href: extensions/10.0/provideraliasattribute-moved-assembly.md
           - name: Globalization
             items:
               - name: Environment variable renamed to DOTNET_ICU_VERSION_OVERRIDE
@@ -58,13 +66,15 @@ items:
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
+              - name: "`dotnet package list` performs restore"
+                href: sdk/10.0/dotnet-package-list-restore.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling
                 href: sdk/10.0/msbuild-custom-culture.md
               - name: NU1510 is raised for direct references pruned by NuGet
                 href: sdk/10.0/nu1510-pruned-references.md
-              - name: HTTP warnings promoted to errors in 'dotnet package list' and 'dotnet package search'
+              - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
           - name: Windows Forms
             items:
@@ -81,7 +91,7 @@ items:
           - name: WPF
             items:
               - name: Incorrect usage of DynamicResource causes application crash
-                href: wpf/10.0/dynamicresource-crash.md         
+                href: wpf/10.0/dynamicresource-crash.md
       - name: .NET 9
         items:
           - name: Overview
@@ -111,11 +121,13 @@ items:
               - name: Altered UnsafeAccessor support for non-open generics
                 href: core-libraries/9.0/unsafeaccessor-generics.md
               - name: Ambiguous overload resolution affecting StringValues implicit operators
-                href: core-libraries/9.0/ambiguous-overload.md         
+                href: core-libraries/9.0/ambiguous-overload.md
               - name: API obsoletions with custom diagnostic IDs
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
                 href: core-libraries/9.0/biginteger-limit.md
+              - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
+                href: core-libraries/9.0/binaryreader.md
               - name: C# overload resolution prefers `params` span-type overloads
                 href: core-libraries/9.0/params-overloads.md
               - name: Creating type of array of System.Void not allowed
@@ -158,8 +170,6 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
-              - name: Assembly load directory resolves through symbolic links on Windows
-                href: deployment/9.0/assembly-load-directory.md
           - name: Entity Framework Core
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: Interop
@@ -196,8 +206,6 @@ items:
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
-              - name: MSBuild custom culture resource handling
-                href: sdk/10.0/msbuild-custom-culture.md
               - name: New default RID used when targeting .NET Framework
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
@@ -215,7 +223,7 @@ items:
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
               - name: System.Text.Json metadata reader now unescapes metadata property names
-                href: serialization/9.0/json-metadata-reader.md         
+                href: serialization/9.0/json-metadata-reader.md
           - name: Windows Forms
             items:
               - name: BindingSource.SortDescriptions doesn't return null
@@ -288,8 +296,6 @@ items:
                 href: core-libraries/8.0/file-path-backslash.md
               - name: Base64.DecodeFromUtf8 methods ignore whitespace
                 href: core-libraries/8.0/decodefromutf8-whitespace.md
-              - name: BinaryReader.GetString() returns "/uFFFD" on malformed sequences
-                href: core-libraries/9.0/binaryreader.md
               - name: Boolean-backed enum type support removed
                 href: core-libraries/8.0/bool-backed-enum.md
               - name: Complex.ToString format changed to `<a; b>`
@@ -492,6 +498,10 @@ items:
                 href: aspnet-core/7.0/output-caching-renames.md
               - name: SignalR Hub methods try to resolve parameters from DI
                 href: aspnet-core/7.0/signalr-hub-method-parameters-di.md
+          - name: Configuration
+            items:
+              - name: System.diagnostics entry in app.config
+                href: configuration/7.0/diagnostics-config-section.md
           - name: Core .NET libraries
             items:
               - name: API obsoletions with default diagnostic ID
@@ -534,10 +544,6 @@ items:
                 href: core-libraries/7.0/memorycache-tracking.md
               - name: Validate CompressionLevel for BrotliStream
                 href: core-libraries/7.0/compressionlevel-validation.md
-          - name: Configuration
-            items:
-              - name: System.diagnostics entry in app.config
-                href: configuration/7.0/diagnostics-config-section.md
           - name: Cryptography
             items:
               - name: Dynamic X509ChainPolicy verification time
@@ -1330,6 +1336,16 @@ items:
                 href: aspnet-core/5.0/static-files-csv-content-type-changed.md
               - name: .NET Core 3.0-3.1
                 href: aspnetcore.md
+      - name: .NET Aspire
+        items:
+          - name: Aspire 9.3
+            href: /dotnet/aspire/compatibility/9.3/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Aspire 9.2
+            href: /dotnet/aspire/compatibility/9.2/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Aspire 9.1
+            href: /dotnet/aspire/compatibility/9.1/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+          - name: Aspire 9.0
+            href: /dotnet/aspire/compatibility/9.0/?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Code analysis
         items:
           - name: .NET 5
@@ -1408,8 +1424,12 @@ items:
                 href: core-libraries/10.0/ldap-directorycontrol-parsing.md
               - name: MacCatalyst version normalization
                 href: core-libraries/10.0/maccatalyst-version-normalization.md
+              - name: No default SIGTERM signal handler
+                href: core-libraries/10.0/sigterm-signal-handler.md
               - name: System.Linq.AsyncEnumerable included in core libraries
                 href: core-libraries/10.0/asyncenumerable.md
+              - name: YMM embedded rounding removed from AVX10.2
+                href: core-libraries/10.0/ymm-embedded-rounding.md
           - name: .NET 9
             items:
               - name: Adding a ZipArchiveEntry sets header general-purpose bit flags
@@ -1417,7 +1437,7 @@ items:
               - name: Altered UnsafeAccessor support for non-open generics
                 href: core-libraries/9.0/unsafeaccessor-generics.md
               - name: Ambiguous overload resolution affecting StringValues implicit operators
-                href: core-libraries/9.0/ambiguous-overload.md    
+                href: core-libraries/9.0/ambiguous-overload.md
               - name: API obsoletions with custom diagnostic IDs
                 href: core-libraries/9.0/obsolete-apis-with-custom-diagnostics.md
               - name: BigInteger maximum length
@@ -1702,8 +1722,6 @@ items:
             items:
               - name: Deprecated desktop Windows/macOS/Linux MonoVM runtime packages
                 href: deployment/9.0/monovm-packages.md
-              - name: Assembly load directory resolves through symbolic links on Windows
-                href: deployment/9.0/assembly-load-directory.md
           - name: .NET 8
             items:
               - name: Host determines RID-specific assets
@@ -1732,6 +1750,8 @@ items:
                 href: deployment/7.0/x86-host-path.md
       - name: Entity Framework Core
         items:
+          - name: EF Core 10
+            href: /ef/core/what-is-new/ef-core-10.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: EF Core 9
             href: /ef/core/what-is-new/ef-core-9.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
           - name: EF Core 8
@@ -1746,6 +1766,10 @@ items:
             href: /ef/core/what-is-new/ef-core-3.x/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
       - name: Extensions
         items:
+          - name: .NET 10
+            items:
+              - name: "ProviderAliasAttribute moved to Microsoft.Extensions.Logging.Abstractions assembly"
+                href: extensions/10.0/provideraliasattribute-moved-assembly.md
           - name: .NET 8
             items:
               - name: ActivatorUtilities.CreateInstance behaves consistently
@@ -1952,13 +1976,15 @@ items:
                 href: sdk/10.0/nugetaudit-transitive-packages.md
               - name: Default workload configuration from 'loose manifests' to 'workload sets' mode
                 href: sdk/10.0/default-workload-config.md
+              - name: "`dotnet package list` performs restore"
+                href: sdk/10.0/dotnet-package-list-restore.md
               - name: MSBUILDCUSTOMBUILDEVENTWARNING escape hatch removed
                 href: sdk/10.0/custom-build-event-warning.md
               - name: MSBuild custom culture resource handling
                 href: sdk/10.0/msbuild-custom-culture.md
               - name: NU1510 is raised for direct references pruned by NuGet
                 href: sdk/10.0/nu1510-pruned-references.md
-              - name: HTTP warnings promoted to errors in dotnet package list and dotnet package search
+              - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
           - name: .NET 9
             items:
@@ -1970,8 +1996,6 @@ items:
                 href: sdk/9.0/dotnet-workload-output.md
               - name: "`installer` repo version no longer documented"
                 href: sdk/9.0/productcommits-versions.md
-              - name: MSBuild custom culture resource handling
-                href: sdk/10.0/msbuild-custom-culture.md
               - name: New default RID used when targeting .NET Framework
                 href: sdk/9.0/default-rid.md
               - name: Terminal logger is default
@@ -2117,7 +2141,7 @@ items:
               - name: Nullable JsonDocument properties deserialize to JsonValueKind.Null
                 href: serialization/9.0/jsondocument-props.md
               - name: System.Text.Json metadata reader now unescapes metadata property names
-                href: serialization/9.0/json-metadata-reader.md    
+                href: serialization/9.0/json-metadata-reader.md
           - name: .NET 8
             items:
               - name: BinaryFormatter disabled for most projects
@@ -2297,7 +2321,7 @@ items:
           - name: .NET 10
             items:
               - name: Incorrect usage of DynamicResource causes application crash
-                href: wpf/10.0/dynamicresource-crash.md        
+                href: wpf/10.0/dynamicresource-crash.md
           - name: .NET 9
             items:
               - name: "'GetXmlNamespaceMaps' type change"

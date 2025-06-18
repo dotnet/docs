@@ -936,20 +936,22 @@ items:
             href: ../standard/commandline/get-started-tutorial.md
           - name: Command-line syntax overview
             href: ../standard/commandline/syntax.md
-          - name: How to parse and invoke the result
-            href: ../standard/commandline/parse-and-invoke.md
-          - name: How to customize parsing and validation
-            href: ../standard/commandline/parsing-and-validation.md
-          - name: How to configure the parser
-            href: ../standard/commandline/command-line-configuration.md
-          - name: How to enable and customize tab completion
-            href: ../standard/commandline/tab-completion.md
-          - name: How to customize help
-            href: ../standard/commandline/help.md
+          - name: How to
+            items:
+            - name: Parse and invoke the result
+              href: ../standard/commandline/parse-and-invoke.md
+            - name: Customize parsing and validation
+              href: ../standard/commandline/parsing-and-validation.md
+            - name: Configure the parser
+              href: ../standard/commandline/command-line-configuration.md
+            - name: Enable and customize tab completion
+              href: ../standard/commandline/tab-completion.md
+            - name: Customize help
+              href: ../standard/commandline/help.md
           - name: Design guidance
             href: ../standard/commandline/design-guidance.md
-          - name: Breaking changes in beta5
-            href: ../standard/commandline/beta5.md
+          - name: Breaking changes in 2.0.0-beta5
+            href: ../standard/commandline/2.0.0-beta5.md
       - name: File and stream I/O
         items:
           - name: Overview

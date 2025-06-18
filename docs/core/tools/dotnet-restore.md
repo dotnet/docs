@@ -220,7 +220,4 @@ You can configure the level at which auditing will fail by setting the `<NuGetAu
 
 In .NET 8 and .NET 9, only *direct* package references are audited by default. Starting in .NET 10, NuGet audits both *direct* and *transitive* package references by default. You can change the mode by setting the `<NuGetAuditMode>` MSBuild property to `direct` or `all`.
 
-> [!NOTE]
-> In .NET 9 preview 6, the default was temporarily changed to audit both direct and transitive packages, but this change was reverted back to direct-only auditing in the .NET 9.0.101 SDK. For more information, see ['dotnet restore' audits transitive packages](../compatibility/sdk/10.0/nugetaudit-transitive-packages.md).
-
 For more information, see [Auditing package dependencies for security vulnerabilities](/nuget/concepts/auditing-packages).

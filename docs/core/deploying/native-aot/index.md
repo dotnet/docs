@@ -17,7 +17,7 @@ The Native AOT deployment model uses an ahead-of-time compiler to compile IL to 
 
 # [Windows](#tab/windows)
 
-[Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload with all default components.
+The [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/), or you can install [[Visual Studio 2022](https://visualstudio.microsoft.com/vs/), including the **Desktop development with C++** workload. Open a **Native Tools Command Prompt** to ensure the required tools are on the PATH.
 
 # [Alpine](#tab/linux-alpine)
 
@@ -129,7 +129,7 @@ Native AOT apps have the following limitations:
 - No dynamic loading, for example, `Assembly.LoadFile`.
 - No run-time code generation, for example, `System.Reflection.Emit`.
 - No C++/CLI.
-- Windows: No built-in COM.
+- Windows: No built-in COM (use [COM wrappers instead](../../standard/native-interop/comwrappers-source-generation.md)
 - Requires trimming, which has [limitations](../trimming/incompatibilities.md).
 - Implies compilation into a single file, which has known [incompatibilities](../single-file/overview.md#api-incompatibility).
 - Apps include required runtime libraries (just like [self-contained apps](../index.md#publish-self-contained), increasing their size as compared to framework-dependent apps).

@@ -19,6 +19,37 @@ You can also create a static method named [`Main`](main-command-line.md) as the 
 
 In that case the program will start in the first line of `Main` method, which is `Console.WriteLine("Hello world!");`
 
+## Expressions and statements
+
+Understanding the distinction between expressions and statements is fundamental to C# programming:
+
+### Expressions
+
+An **expression** is a combination of values, variables, operators, and method calls that evaluates to a single value. Expressions produce a result and can be used wherever a value is expected.
+
+Examples of expressions:
+
+- `42` (literal value)
+- `x + y` (arithmetic operation)
+- `Math.Max(a, b)` (method call)
+- `condition ? trueValue : falseValue` (conditional expression)
+- `new Person("John")` (object creation)
+
+### Statements
+
+A **statement** is a complete instruction that performs an action. Statements don't return values; instead, they control program flow, declare variables, or perform operations.
+
+Examples of statements:
+
+- `int x = 42;` (declaration statement)
+- `Console.WriteLine("Hello");` (expression statement - wraps a method call expression)
+- `if (condition) { /* code */ }` (selection statement)
+- `return result;` (jump statement)
+
+The key distinction: expressions evaluate to values, while statements perform actions. Some constructs, like method calls, can be both—`Math.Max(a, b)` is an expression when used in `int result = Math.Max(a, b);`, but becomes an expression statement when written alone as `Math.Max(a, b);`.
+
+For detailed information about statements, see [Statements](../../programming-guide/statements-expressions-operators/statements.md). For information about expression-bodied members and other expression features, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
+
 ## Related Sections
 
 You learn about these program elements in the [types](../types/index.md) section of the fundamentals guide:

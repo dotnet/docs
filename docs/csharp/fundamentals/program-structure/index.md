@@ -21,13 +21,9 @@ In that case the program will start in the first line of `Main` method, which is
 
 ## Expressions and statements
 
-Understanding the distinction between expressions and statements is fundamental to C# programming:
+C# programs are built using **expressions** and **statements**. Expressions produce a value, and statements perform an action:
 
-### Expressions
-
-An **expression** is a combination of values, variables, operators, and method calls that evaluates to a single value. Expressions produce a result and can be used wherever a value is expected.
-
-Examples of expressions:
+An **expression** is a combination of values, variables, operators, and method calls that evaluates to a single value. Expressions produce a result and can be used wherever a value is expected:
 
 - `42` (literal value)
 - `x + y` (arithmetic operation)
@@ -35,11 +31,7 @@ Examples of expressions:
 - `condition ? trueValue : falseValue` (conditional expression)
 - `new Person("John")` (object creation)
 
-### Statements
-
-A **statement** is a complete instruction that performs an action. Statements don't return values; instead, they control program flow, declare variables, or perform operations.
-
-Examples of statements:
+A **statement** is a complete instruction that performs an action. Statements don't return values; instead, they control program flow, declare variables, or perform operations:
 
 - `int x = 42;` (declaration statement)
 - `Console.WriteLine("Hello");` (expression statement - wraps a method call expression)

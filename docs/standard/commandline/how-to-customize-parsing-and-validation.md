@@ -38,7 +38,7 @@ Every option, argument, and command can have one or more validators. Validators 
 
 Every symbol type in System.CommandLine has a `Validators` property that contains a list of validators. The validators are executed after the input is parsed, and they can report an error if the validation fails.
 
-To provide custom validation code, call <xref:System.CommandLine.Option.Validators.Add%2A> on your option or argument (or command), as shown in the following example:
+To provide custom validation code, call `System.CommandLine.Option.Validators.Add` on your option or argument (or command), as shown in the following example:
 
 :::code language="csharp" source="snippets/model-binding/csharp/AddValidator.cs" id="delayOption" :::
 
@@ -71,7 +71,7 @@ If you want to parse as well as validate the input, use the `CustomParser` deleg
 Here are some examples of what you can do with `CustomParser` that you can't do with a validator:
 
 * Parse other kinds of input strings (for example, parse "1,2,3" into `int[]`).
-* Dynamic arity. For example, if you have two arguments that are defined as string arrays, and you have to handle a sequence of strings in the command-line input, the <xref:System.CommandLine.Parsing.ArgumentResult.OnlyTake%2A?displayProperty=nameWithType> method enables you to dynamically divide up the input strings between the arguments.
+* Dynamic arity. For example, if you have two arguments that are defined as string arrays, and you have to handle a sequence of strings in the command-line input, the `System.CommandLine.Parsing.ArgumentResult.OnlyTake` method enables you to dynamically divide up the input strings between the arguments.
 
 ## See also
 

@@ -12,7 +12,7 @@ ms.topic: how-to
 
 # Customize help output
 
-Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides <xref:System.CommandLine.Help.HelpOption> that is by default included in the [RootCommand](syntax.md#root-command) options. <xref:System.CommandLine.Help.HelpOption> generates help output for defined symbols by using the information exposed by <xref:System.CommandLine.Symbol.Name>, <xref:System.CommandLine.Symbol.HelpName>, <xref:System.CommandLine.Symbol.Description>, and other properties like default value or completion sources.
+Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides `System.CommandLine.Help.HelpOption` that is by default included in the [RootCommand](syntax.md#root-command) options. System.CommandLine.Help.HelpOption generates help output for defined symbols by using the information exposed by `System.CommandLine.Symbol.Name`, `System.CommandLine.Symbol.HelpName`, `System.CommandLine.Symbol.Description`, and other properties like default value or completion sources.
 
 :::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="original" :::
 
@@ -45,13 +45,13 @@ dotnet -?
 dotnet /?
 ```
 
-Help output doesn't necessarily show all available commands, arguments, and options. Some of them might be *hidden* via the <xref:System.CommandLine.Symbol.Hidden> property, which means they don't show up in help output (and completions) but can be specified on the command line.
+Help output doesn't necessarily show all available commands, arguments, and options. Some of them might be *hidden* via the `System.CommandLine.Symbol.Hidden` property, which means they don't show up in help output (and completions) but can be specified on the command line.
 
 ## Help customization
 
  You can customize help output for commands by defining specific help text for each symbol, providing further clarity to users regarding their usage.
 
-To customize the name of an option's argument, use the option's <xref:System.CommandLine.Option.HelpName> property.
+To customize the name of an option's argument, use the option's `System.CommandLine.Option.HelpName` property.
 
 In the sample app, `--light-mode` is explained adequately, but changes to the `--file` and `--color` option descriptions will be helpful. For `--file`, the argument can be identified as a `<FILEPATH>`. For the `--color` option, you can shorten the list of available colors.
 

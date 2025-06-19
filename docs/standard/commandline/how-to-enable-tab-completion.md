@@ -14,7 +14,7 @@ ms.topic: how-to
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
-Apps that use `System.CommandLine` have built-in support for tab completion in certain shells. To enable it, the end user must take a few steps once per shell. Once this is done, tab completion is automatic for static values in your app, such as enum values or values defined by calling <xref:System.CommandLine.Option%601.AcceptOnlyFromAmong>. You can also customize tab completion by providing values dynamically at runtime.
+Apps that use `System.CommandLine` have built-in support for tab completion in certain shells. To enable it, the end user must take a few steps once per shell. Once this is done, tab completion is automatic for static values in your app, such as enum values or values defined by calling `System.CommandLine.Option<T>.AcceptOnlyFromAmong`. You can also customize tab completion by providing values dynamically at runtime.
 
 ## Enable tab completion
 

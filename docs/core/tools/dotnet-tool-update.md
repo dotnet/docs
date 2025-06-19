@@ -15,8 +15,7 @@ ms.date: 03/15/2024
 
 ```dotnetcli
 dotnet tool update <PACKAGE_ID> -g|--global
-    [--all]
-    [--add-source <SOURCE>] [--allow-downgrade]
+    [--add-source <SOURCE>] [--all] [--allow-downgrade]
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
@@ -24,8 +23,7 @@ dotnet tool update <PACKAGE_ID> -g|--global
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --tool-path <PATH>
-    [--all]
-    [--add-source <SOURCE>] [--allow-downgrade]
+    [--add-source <SOURCE>] [--all] [--allow-downgrade]
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive] 
@@ -33,8 +31,7 @@ dotnet tool update <PACKAGE_ID> --tool-path <PATH>
     [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update <PACKAGE_ID> --local
-    [--all]
-    [--add-source <SOURCE>] [--allow-downgrade]
+    [--add-source <SOURCE>] [--all] [--allow-downgrade]
     [--configfile <FILE>]
     [--disable-parallel] [--framework <FRAMEWORK>]
     [--ignore-failed-sources] [--interactive]
@@ -61,11 +58,11 @@ The `dotnet tool update` command provides a way for you to update .NET tools on 
 
 ## Options
 
+[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
+
 - **`--all`**
 
   Update all tools.
-
-[!INCLUDE [add-source](../../../includes/cli-add-source.md)]
 
 [!INCLUDE [allow-downgrade](../../../includes/cli-allow-downgrade.md)]
 

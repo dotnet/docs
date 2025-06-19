@@ -2,75 +2,69 @@
 
 // <all>
 using System.CommandLine;
-using System.Security.AccessControl;
 
 class Program
 {
-    internal static async Task Main(string[] args)
+    internal static void Main(string[] args)
     {
         // <delayOption>
-        var delayOption = new Option<int>(
-              name: "--delay",
-              description: "An option whose argument is parsed as an int.",
-              isDefault: true,
-              parseArgument: result =>
-              {
-                  if (!result.Tokens.Any())
-                  {
-                      return 42;
-                  }
+        Option<int> delayOption = new("--delay")
+        {
+            Description = "An option whose argument is parsed as an int.",
+            CustomParser = result =>
+            {
+                if (!result.Tokens.Any())
+                {
+                    return 42;
+                }
 
-                  if (int.TryParse(result.Tokens.Single().Value, out var delay))
-                  {
-                      if (delay < 1)
-                      {
-                          result.ErrorMessage = "Must be greater than 0";
-                      }
-                      return delay;
-                  }
-                  else
-                  {
-                      result.ErrorMessage = "Not an int.";
-                      return 0; // Ignored.
-                  }
-              });
+                if (int.TryParse(result.Tokens.Single().Value, out var delay))
+                {
+                    if (delay < 1)
+                    {
+                        result.AddError("Must be greater than 0");
+                    }
+                    return delay;
+                }
+                else
+                {
+                    result.AddError("Not an int.");
+                    return 0; // Ignored.
+                }
+            }
+        };
         // </delayoption>
 
         // <personoption>
-        var personOption = new Option<Person?>(
-              name: "--person",
-              description: "An option whose argument is parsed as a Person",
-              parseArgument: result =>
-              {
-                  if (result.Tokens.Count != 2)
-                  {
-                      result.ErrorMessage = "--person requires two arguments";
-                      return null;
-                  }
-                  return new Person
-                  {
-                      FirstName = result.Tokens.First().Value,
-                      LastName = result.Tokens.Last().Value
-                  };
-              })
+        Option<Person?> personOption = new("--person")
         {
-            Arity = ArgumentArity.OneOrMore,
-            AllowMultipleArgumentsPerToken = true
+            Description = "An option whose argument is parsed as a Person",
+            CustomParser = result =>
+            {
+                if (result.Tokens.Count != 2)
+                {
+                    result.AddError("--person requires two arguments");
+                    return null;
+                }
+                return new Person
+                {
+                    FirstName = result.Tokens.First().Value,
+                    LastName = result.Tokens.Last().Value
+                };
+            }
         };
         // </personoption>
 
-        var rootCommand = new RootCommand();
-        rootCommand.Add(delayOption);
-        rootCommand.Add(personOption);
+        RootCommand rootCommand = new() { delayOption, personOption };
 
-        rootCommand.SetHandler((delayOptionValue, personOptionValue) =>
-            {
-                Console.WriteLine($"Delay = {delayOptionValue}");
-                Console.WriteLine($"Person = {personOptionValue?.FirstName} {personOptionValue?.LastName}");
-            },
-            delayOption, personOption);
+        rootCommand.SetAction((parseResult) =>
+        {
+            Console.WriteLine($"Delay = {parseResult.GetValue(delayOption)}");
+            Person? person = parseResult.GetValue(personOption);
+            Console.WriteLine($"Person = {person?.FirstName} {person?.LastName}");
+        });
 
-        await rootCommand.InvokeAsync(args);
+        rootCommand.Parse(args).Invoke();
     }
 
     // <persontype>

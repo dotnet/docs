@@ -61,6 +61,7 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
 |<xref:System.Globalization.NumberStyles.AllowThousands?displayProperty=nameWithType>|The group separator is permitted. The group separator character is determined by the <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=nameWithType> or <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A?displayProperty=nameWithType> property.|
 |<xref:System.Globalization.NumberStyles.AllowCurrencySymbol?displayProperty=nameWithType>|The currency symbol is permitted. The currency symbol is defined by the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A?displayProperty=nameWithType> property.|
 |<xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>|The string to be parsed is interpreted as a hexadecimal number. It can include the hexadecimal digits 0-9, A-F, and a-f. This flag can be used only to parse integer values.|
+|<xref:System.Globalization.NumberStyles.AllowBinarySpecifier?displayProperty=nameWithType>|The string to be parsed is interpreted as a binary number. It can include the binary digits 0 and 1. This flag can be used only to parse integer values.|
 
  In addition, the <xref:System.Globalization.NumberStyles> enumeration provides the following composite styles, which include multiple <xref:System.Globalization.NumberStyles> flags.
 
@@ -72,6 +73,13 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
 |<xref:System.Globalization.NumberStyles.Currency?displayProperty=nameWithType>|Includes all styles except <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> and <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>.|
 |<xref:System.Globalization.NumberStyles.Any?displayProperty=nameWithType>|Includes all styles except <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType>.|
 |<xref:System.Globalization.NumberStyles.HexNumber?displayProperty=nameWithType>|Includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>, <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>, and <xref:System.Globalization.NumberStyles.AllowHexSpecifier?displayProperty=nameWithType> styles.|
+|<xref:System.Globalization.NumberStyles.BinaryNumber?displayProperty=nameWithType>|Includes the <xref:System.Globalization.NumberStyles.AllowLeadingWhite?displayProperty=nameWithType>, <xref:System.Globalization.NumberStyles.AllowTrailingWhite?displayProperty=nameWithType>, and <xref:System.Globalization.NumberStyles.AllowBinarySpecifier?displayProperty=nameWithType> styles.|
+
+## Parsing binary and hexadecimal BigIntegers
+
+When parsing <xref:System.Numerics.BigInteger> with the <xref:System.Globalization.NumberStyles.AllowHexSpecifier> or <xref:System.Globalization.NumberStyles.AllowBinarySpecifier> flags, the input string is interpreted as a hexadecimal/binary number of exactly the length the string has.
+For instance, parsing `"11"` as a binary BigInteger yields `-1`, because that is the interpretation of `11` as a signed two's complement value with exactly 2 digits.
+If you want a positive result, add a leading `0`, such as `"011"` which is parsed as `3`.
 
 ## Parsing and Unicode Digits
 

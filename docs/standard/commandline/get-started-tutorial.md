@@ -166,7 +166,7 @@ Options:
   --file          The file to read and display on the conso
 ```
 
-<xref:System.CommandLine.RootCommand> by default provides [Help option](how-to-customize-help.md#help-option), [Version option](syntax.md#version-option) and [Suggest directive](syntax.md#suggest-directive). `ParseResult.Invoke` method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for our command, or the help action defined by `System.CommandLine` for <xref:System.CommandLine.Help.HelpOption>. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output and returns `1` exit code:
+<xref:System.CommandLine.RootCommand> by default provides [Help option](how-to-customize-help.md#customize-help-output), [Version option](syntax.md#version-option) and [Suggest directive](syntax.md#suggest-directive). `ParseResult.Invoke` method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for our command, or the help action defined by `System.CommandLine` for <xref:System.CommandLine.Help.HelpOption>. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output and returns `1` exit code:
 
 ```console
 scl --invalid bla

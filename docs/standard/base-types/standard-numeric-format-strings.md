@@ -98,8 +98,7 @@ The binary ("B") format specifier converts a number to a string of binary digits
 
 The precision specifier indicates the minimum number of digits desired in the resulting string. If required, the number is padded with zeros to its left to produce the number of digits given by the precision specifier.
 
-For <xref:System.Numerics.BigInteger>, positive values always have a leading zero to distinguish them from negative values. This ensures the output round-trips to the original value when parsed.
-For instance, the number `3` converted with the format specifier `"B2"` is `011` because the binary number `11` represents the negative value `-1`.
+For <xref:System.Numerics.BigInteger>, positive values always have a leading zero to distinguish them from negative values. This ensures the output round-trips to the original value when parsed. For instance, the number `3` converted with the format specifier `"B2"` is `"011"`. That's because the binary number `"11"` represents the negative value `-1`, as it is interpreted as a number with exactly `2` bits due to the `"B2"` format.
 
 The result string is not affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object.
 

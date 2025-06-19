@@ -1,7 +1,7 @@
 ---
 description: "Learn the different C# preprocessor directives that control conditional compilation, warnings, nullable analysis, and more"
 title: "Preprocessor directives"
-ms.date: 01/14/2025
+ms.date: 06/19/2025
 f1_keywords:
   - "cs.preprocessor"
   - "#nullable"
@@ -20,6 +20,10 @@ f1_keywords:
   - "#pragma warning"
   - "#pragma checksum"
   - "defaultline_CSharpKeyword"
+  - "#!"
+  - "#:sdk"
+  - "#:property"
+  - "#:package"
 helpviewer_keywords:
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
@@ -42,6 +46,63 @@ helpviewer_keywords:
 # C# preprocessor directives
 
 Although the compiler doesn't have a separate preprocessor, the directives described in this section are processed as if there were one. You use them to help in conditional compilation. Unlike C and C++ directives, you can't use these directives to create macros. A preprocessor directive must be the only instruction on a line.
+
+## File based programs
+
+*File based programs* are programs that are compiled and run using `dotnet run Program.cs` (or any `*.cs` file). The C# compiler ignores these preprocessor directives, but the build system parses them to produce the output. These directives generate warnings when encountered in a project-based compilation.
+
+The C# compiler ignores any preprocessor directive that starts with `#:` or `#!`.
+
+The `#!` preprocessor directive enables unix shells to directly execute a C# file using `dotnet run`. For example:
+
+```csharp
+#!/usr/bin/dotnet run
+Console.WriteLine("Hello");
+```
+
+The preceding code snippet informs a unix shell to execute the file using `/usr/bin/dotnet run`. The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
+
+The `#:` directives that are used in file based programs include:
+
+- `#:sdk`:
+
+  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify `<Sdk Name="value" Version="version" />` node. The version can be omitted. For example:
+
+  ```csharp
+  #:sdk Microsoft.NET.Sdk.Web
+  ```
+
+- `#:property`:
+
+  Instances of `#:property` are translated into property elements in a `<PropertyGroup>`. A token of the form `Name=value` must follow the `property` token. The following are valid `property` tokens:
+
+  ```csharp
+  #:property TargetFramework=net11.0
+  #:property LangVersion=preview
+  ```
+
+  The preceding two properties are translated into:
+
+  ```xml
+  <TargetFramework>net11.0</TargetFramework>
+  <LangVersion>preview</LangVersion>
+  ```
+
+- `#:package`:
+
+  Instances `#:package` are translated into `PackageReference` elements to include NuGet packages with the specified version to your file. For example:
+
+  ```csharp
+  #:package System.CommandLine@2.0.0-*
+  ```
+
+  The preceding preprocessor token is translated into:
+
+  ```xml
+  <PackageReference Include="System.CommandLine" Version="2.0.0-*">
+  ```
+  
+Tools can add new tokens following the `#:` convention.
 
 ## Nullable context
 

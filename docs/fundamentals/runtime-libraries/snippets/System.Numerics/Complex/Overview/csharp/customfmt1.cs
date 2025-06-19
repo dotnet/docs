@@ -73,3 +73,30 @@ public class CustomFormatEx
 //    Custom formatting with I0:        12 + 15i
 //    Custom formatting with J3:        12.100 + 15.400j
 // </Snippet4>
+
+public class TestNegativeImaginary
+{
+    public static void Run()
+    {
+        // Test with positive imaginary part
+        Complex c1 = new(12.1, 15.4);
+        Console.WriteLine("=== Positive imaginary part ===");
+        Console.WriteLine($"Complex number: {c1}");
+        Console.WriteLine($"Custom formatting with I0: {string.Format(new ComplexFormatter(), "{0:I0}", c1)}");
+        Console.WriteLine($"Custom formatting with J3: {string.Format(new ComplexFormatter(), "{0:J3}", c1)}");
+        
+        // Test with negative imaginary part - this should demonstrate the bug
+        Complex c2 = new(12.1, -15.4);
+        Console.WriteLine("\n=== Negative imaginary part ===");
+        Console.WriteLine($"Complex number: {c2}");
+        Console.WriteLine($"Custom formatting with I0: {string.Format(new ComplexFormatter(), "{0:I0}", c2)}");
+        Console.WriteLine($"Custom formatting with J3: {string.Format(new ComplexFormatter(), "{0:J3}", c2)}");
+        
+        // Test with zero imaginary part
+        Complex c3 = new(12.1, 0.0);
+        Console.WriteLine("\n=== Zero imaginary part ===");
+        Console.WriteLine($"Complex number: {c3}");
+        Console.WriteLine($"Custom formatting with I0: {string.Format(new ComplexFormatter(), "{0:I0}", c3)}");
+        Console.WriteLine($"Custom formatting with J3: {string.Format(new ComplexFormatter(), "{0:J3}", c3)}");
+    }
+}

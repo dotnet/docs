@@ -22,8 +22,18 @@ namespace CustomConverterInferredTypesToObject
         public override void Write(
             Utf8JsonWriter writer,
             object objectToWrite,
-            JsonSerializerOptions options) =>
-            JsonSerializer.Serialize(writer, objectToWrite, objectToWrite.GetType(), options);
+            JsonSerializerOptions options)
+        {
+            var valueType = objectToWrite.GetType();
+            if (valueType == typeof(object))
+            {
+                writer.WriteStartObject();
+                writer.WriteEndObject();
+                return;
+            }
+
+            JsonSerializer.Serialize(writer, objectToWrite, valueType, options);
+        }
     }
 
     public class WeatherForecast

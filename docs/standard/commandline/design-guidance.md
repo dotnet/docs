@@ -1,7 +1,7 @@
 ---
 title: Command-line design guidance for System.CommandLine
 description: "Provides guidance for designing a command-line interface."
-ms.date: 06/16/2025
+ms.date: 06/19/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line"

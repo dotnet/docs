@@ -54,7 +54,7 @@ A *command* in command-line input is a token that specifies an action or defines
 
 The *root command* is the one that specifies the name of the app's executable. For example, the `dotnet` command specifies the *dotnet.exe* executable.
 
-<xref:System.CommandLine.Command> is the general-purpose class for any command or subcommand, while <xref:System.CommandLine.RootCommand> is a specialized version intended for the application's root entry point, inheriting all features of <xref:System.CommandLine.Command> but adding root-specific behavior and defaults, such as [Help option](help.md#help-option), [Version option](#version-option) and [Suggest directive](#suggest-directive).
+<xref:System.CommandLine.Command> is the general-purpose class for any command or subcommand, while <xref:System.CommandLine.RootCommand> is a specialized version intended for the application's root entry point, inheriting all features of <xref:System.CommandLine.Command> but adding root-specific behavior and defaults, such as [Help option](how-to-customize-help.md#help-option), [Version option](#version-option) and [Suggest directive](#suggest-directive).
 
 ### Subcommands
 

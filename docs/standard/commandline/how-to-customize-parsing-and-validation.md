@@ -1,6 +1,6 @@
 ---
 title: How to customize parsing and validation in System.CommandLine
-ms.date: 06/16/2025
+ms.date: 06/19/2025
 description: "Learn how to customize parsing and validation with the System.CommandLine library."
 no-loc: [System.CommandLine]
 helpviewer_keywords:
@@ -75,5 +75,5 @@ Here are some examples of what you can do with `CustomParser` that you can't do 
 
 ## See also
 
-- [How to parse and invoke the result](parse-and-invoke.md)
+- [How to parse and invoke the result](how-to-parse-and-invoke.md)
 - [System.CommandLine overview](index.md)

@@ -1,7 +1,7 @@
 ---
 title: How to customize help in System.CommandLine
 description: "Learn how to use and customize help in apps that are built with the System.Commandline library."
-ms.date: 04/07/2022
+ms.date: 06/19/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.topic: how-to
 ---
 
-## Help option
+# Customize help output
 
 Command-line apps typically provide an option to display a brief description of the available commands, options, and arguments. `System.CommandLine` provides <xref:System.CommandLine.Help.HelpOption> that is by default included in the [RootCommand](syntax.md#root-command) options. <xref:System.CommandLine.Help.HelpOption> generates help output for defined symbols by using the information exposed by <xref:System.CommandLine.Symbol.Name>, <xref:System.CommandLine.Symbol.HelpName>, <xref:System.CommandLine.Symbol.Description>, and other properties like default value or completion sources.
 
@@ -86,7 +86,7 @@ Define a custom action that performs some extra logic before and after calling t
 
 Update the `HelpAction` defined by `RootCommand` to use the custom action:
 
-:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="setcustomaction" highlight="5" :::
+:::code language="csharp" source="snippets/customize-help/csharp/Program.cs" id="setcustomaction" highlight="6" :::
 
 The help output now looks like this:
 

@@ -1,7 +1,7 @@
 ---
 title: "How to parse and invoke the result"
 description: "Learn how to get parsed values and define actions for your commands."
-ms.date: 16/06/2025
+ms.date: 06/19/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -119,5 +119,5 @@ Every `SetAction` method has an overload that accepts a delegate returning an `i
 
 ## See also
 
-[How to customize parsing and validation in System.CommandLine](parsing-and-validation.md)
+[How to customize parsing and validation in System.CommandLine](how-to-customize-parsing-and-validation.md)
 [System.CommandLine overview](index.md)

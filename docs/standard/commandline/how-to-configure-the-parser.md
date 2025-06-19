@@ -1,7 +1,7 @@
 ---
 title: How to configure the parser in System.CommandLine
 description: "Learn how to configure the parser in System.CommandLine."
-ms.date: 16/06/2025
+ms.date: 06/19/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
@@ -36,7 +36,7 @@ Now, let's use `CommandLineConfiguration` to capture the output:
 
 ## ProcessTerminationTimeout
 
-[Process termination timeout](parse-and-invoke.md#process-termination-timeout) can be configured via the <xref:System.CommandLine.CommandLineConfiguration.ProcessTerminationTimeout> property. The default value is 2 seconds.
+[Process termination timeout](how-to-parse-and-invoke.md#process-termination-timeout) can be configured via the <xref:System.CommandLine.CommandLineConfiguration.ProcessTerminationTimeout> property. The default value is 2 seconds.
 
 ## ResponseFileTokenReplacer
 

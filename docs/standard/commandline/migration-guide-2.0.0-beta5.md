@@ -1,16 +1,15 @@
 ---
-title: System.CommandLine 2.0.0-beta5 breaking changes
-description: "Learn about the breaking changes introduced in System.CommandLine 2.0.0-beta5."
+title: System.CommandLine migration guide to 2.0.0-beta5
+description: "Learn about how to migrate to System.CommandLine 2.0.0-beta5."
 ms.date: 06/19/2025
 no-loc: [System.CommandLine]
 helpviewer_keywords:
   - "command line interface"
   - "command line"
   - "System.CommandLine"
-ms.topic: how-to
 ---
 
-# Breaking changes in System.CommandLine 2.0.0-beta5
+# System.CommandLine 2.0.0-beta5 migration guide
 
 [!INCLUDE [scl-preview](../../../includes/scl-preview.md)]
 
@@ -68,7 +67,7 @@ To promote simplicity and explicitness, the name of a symbol is now a mandatory 
 - The `Aliases` property exposed by `Option` and `Command` is now a mutable collection. This collection no longer includes the name of the symbol.
 - `System.CommandLine.Parsing.IdentifierSymbol` was removed (it was a base type for both `Command` and `Option`).
 
-Having the name always present allows for [getting the parsed value by name](parse-and-invoke.md#getvalue):
+Having the name always present allows for [getting the parsed value by name](how-to-parse-and-invoke.md#getvalue):
 
 ```csharp
 RootCommand command = new("The description.")
@@ -139,7 +138,7 @@ Argument<Uri> uri = new("arg")
 
 Moreover, `CustomParser` accepts a delegate of type `Func<ParseResult, T>`, rather than the previous `ParseArgument` delegate. This and a few other custom delegates were removed to simplify the API and reduce the number of types exposed by the API, which reduces startup time spent during JIT compilation.
 
-For more examples of how to use `DefaultValueFactory` and `CustomParser`, see [How to customize parsing and validation in System.CommandLine](parsing-and-validation.md).
+For more examples of how to use `DefaultValueFactory` and `CustomParser`, see [How to customize parsing and validation in System.CommandLine](how-to-customize-parsing-and-validation.md).
 
 ## The separation of parsing and invocation
 
@@ -159,14 +158,14 @@ Before 2.0.0-beta5, it was possible to customize the parsing, but only with some
 
 `CommandLineBuilderExtensions` was also removed. Here is how you can map its methods to the new APIs:
 
-- `CancelOnProcessTermination` is now a property of `CommandLineConfiguration` called [ProcessTerminationTimeout](parse-and-invoke.md#process-termination-timeout). It's enabled by default, with a 2s timeout. Set it to `null` to disable it.
+- `CancelOnProcessTermination` is now a property of `CommandLineConfiguration` called [ProcessTerminationTimeout](how-to-parse-and-invoke.md#process-termination-timeout). It's enabled by default, with a 2s timeout. Set it to `null` to disable it.
 - `EnableDirectives`, `UseEnvironmentVariableDirective`, `UseParseDirective`, and `UseSuggestDirective` were removed. A new [Directive](syntax.md#directives) type was introduced and the [RootCommand](syntax.md#root-command) now exposes <xref:System.CommandLine.RootCommand.Directives> property. You can add, remove, and iterate directives by using this collection. [Suggest directive](syntax.md#suggest-directive) is included by default; you can also use other directives like [DiagramDirective](syntax.md#the-diagram-directive) or `EnvironmentVariablesDirective`.
-- `EnableLegacyDoubleDashBehavior` was removed. All unmatched tokens are now exposed by the [ParseResult.UnmatchedTokens](parse-and-invoke.md#unmatched-tokens) property.
-- `EnablePosixBundling` was removed. The bundling is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableBundling](command-line-configuration.md#enableposixbundling) property to `false`.
-- `RegisterWithDotnetSuggest` was removed as it performed an expensive operation, typically during application startup. Now you must register commands with `dotnet suggest` [manually](tab-completion.md#enable-tab-completion).
-- `UseExceptionHandler` was removed. The default exception handler is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableDefaultExceptionHandler](command-line-configuration.md#enabledefaultexceptionhandler) property to `false`. This is useful when you want to handle exceptions in a custom way, by just wrapping the `Invoke` or `InvokeAsync` methods in a try-catch block.
-- `UseHelp` and `UseVersion` were removed. The help and version are now exposed by the [HelpOption](help.md#help-option) and [VersionOption](syntax.md#version-option) public types. They are both included by default in the options defined by [RootCommand](syntax.md#root-command).
-- `UseHelpBuilder` was removed. For more information on how to customize the help output, see [How to customize help in System.CommandLine](help.md).
+- `EnableLegacyDoubleDashBehavior` was removed. All unmatched tokens are now exposed by the [ParseResult.UnmatchedTokens](how-to-parse-and-invoke.md#unmatched-tokens) property.
+- `EnablePosixBundling` was removed. The bundling is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableBundling](how-to-configure-the-parser.md#enableposixbundling) property to `false`.
+- `RegisterWithDotnetSuggest` was removed as it performed an expensive operation, typically during application startup. Now you must register commands with `dotnet suggest` [manually](how-to-enable-tab-completion.md#enable-tab-completion).
+- `UseExceptionHandler` was removed. The default exception handler is now enabled by default, you can disable it by setting the [CommandLineConfiguration.EnableDefaultExceptionHandler](how-to-configure-the-parser.md#enabledefaultexceptionhandler) property to `false`. This is useful when you want to handle exceptions in a custom way, by just wrapping the `Invoke` or `InvokeAsync` methods in a try-catch block.
+- `UseHelp` and `UseVersion` were removed. The help and version are now exposed by the [HelpOption](how-to-customize-help.md#help-option) and [VersionOption](syntax.md#version-option) public types. They are both included by default in the options defined by [RootCommand](syntax.md#root-command).
+- `UseHelpBuilder` was removed. For more information on how to customize the help output, see [How to customize help in System.CommandLine](how-to-customize-help.md).
 - `AddMiddleware` was removed. It slowed down the application startup, and features can be expressed without it.
 - `UseParseErrorReporting` and `UseTypoCorrections` were removed. The parse errors are now reported by default when invoking `ParseResult`. You can configure it by using the `ParseErrorAction` exposed by `ParseResult.Action` property.
 
@@ -230,7 +229,7 @@ To summarize these changes:
 - The `Command.Handler` property was renamed to `Command.Action`. `Option` was extended with `Option.Action`.
 - `InvocationContext` was removed. The `ParseResult` is now passed directly to the action.
 
-For more details about how to use actions, see [How to parse and invoke commands in System.CommandLine](parse-and-invoke.md).
+For more details about how to use actions, see [How to parse and invoke commands in System.CommandLine](how-to-parse-and-invoke.md).
 
 ## The benefits of the simplified API
 

@@ -27,9 +27,9 @@ For app developers, the library:
 Use of the library also benefits app users:
 
 - It ensures that command-line input is parsed consistently according to [POSIX](https://en.wikipedia.org/wiki/POSIX) or Windows conventions.
-- It automatically supports [tab completion](tab-completion.md) and [response files](syntax.md#response-files).
+- It automatically supports [tab completion](how-to-enable-tab-completion.md) and [response files](syntax.md#response-files).
 
-## NuGet Package
+## NuGet package
 
 The library is available as a NuGet package:
 
@@ -44,11 +44,11 @@ To get started with System.CommandLine, see the following resources:
 
 To learn more, see the following resources:
 
-- [How to parse and invoke the result](parse-and-invoke.md)
-- [How to customize parsing and validation](parsing-and-validation.md)
-- [How to configure the parser](command-line-configuration.md)
-- [How to customize help](help.md)
-- [How to enable and customize tab completion](tab-completion.md)
+- [How to parse and invoke the result](how-to-parse-and-invoke.md)
+- [How to customize parsing and validation](how-to-customize-parsing-and-validation.md)
+- [How to configure the parser](how-to-configure-the-parser.md)
+- [How to customize help](how-to-customize-help.md)
+- [How to enable and customize tab completion](how-to-enable-tab-completion.md)
 - [Command-line design guidance](design-guidance.md)
-- [Breaking changes in 2.0.0-beta5](2.0.0-beta5.md)
+- [Migration guide to 2.0.0-beta5](migration-guide-2.0.0-beta5.md)
 - [System.CommandLine API reference](xref:System.CommandLine)

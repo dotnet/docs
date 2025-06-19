@@ -127,7 +127,7 @@ But what happens if you ask it to display the help by providing `--help`? Nothin
 
 ## Parse the arguments and invoke the ParseResult
 
-System.CommandLine allows you to specify an action that's invoked when a given symbol (command, directive, or option) is parsed successfully. The action is a delegate that takes a <xref:System.CommandLine.ParseResult> parameter and returns an `int` exit code (async actions are also [available](parse-and-invoke.md#asynchronous-actions)). The exit code is returned by the <xref:System.CommandLine.Parsing.ParseResult.Invoke> method and can be used to indicate whether the command was executed successfully or not.
+System.CommandLine allows you to specify an action that's invoked when a given symbol (command, directive, or option) is parsed successfully. The action is a delegate that takes a <xref:System.CommandLine.ParseResult> parameter and returns an `int` exit code (async actions are also [available](how-to-parse-and-invoke.md#asynchronous-actions)). The exit code is returned by the <xref:System.CommandLine.Parsing.ParseResult.Invoke> method and can be used to indicate whether the command was executed successfully or not.
 
 1. Replace the contents of *Program.cs* with the following code:
 
@@ -166,7 +166,7 @@ Options:
   --file          The file to read and display on the conso
 ```
 
-<xref:System.CommandLine.RootCommand> by default provides [Help option](help.md#help-option), [Version option](syntax.md#version-option) and [Suggest directive](syntax.md#suggest-directive). `ParseResult.Invoke` method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for our command, or the help action defined by `System.CommandLine` for <xref:System.CommandLine.Help.HelpOption>. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output and returns `1` exit code:
+<xref:System.CommandLine.RootCommand> by default provides [Help option](how-to-customize-help.md#help-option), [Version option](syntax.md#version-option) and [Suggest directive](syntax.md#suggest-directive). `ParseResult.Invoke` method is responsible for invoking the action of parsed symbol. It could be the action explicitly defined for our command, or the help action defined by `System.CommandLine` for <xref:System.CommandLine.Help.HelpOption>. Moreover, when it detects any parse errors, it prints them to the standard error, prints help to standard output and returns `1` exit code:
 
 ```console
 scl --invalid bla

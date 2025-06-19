@@ -21,9 +21,9 @@ In that case the program will start in the first line of `Main` method, which is
 
 ## Expressions and statements
 
-C# programs are built using **expressions** and **statements**. Expressions produce a value, and statements perform an action:
+C# programs are built using *expressions* and *statements*. Expressions produce a value, and statements perform an action:
 
-An **expression** is a combination of values, variables, operators, and method calls that evaluates to a single value. Expressions produce a result and can be used wherever a value is expected:
+An *expression* is a combination of values, variables, operators, and method calls that evaluates to a single value. Expressions produce a result and can be used wherever a value is expected. The following examples are expressions:
 
 - `42` (literal value)
 - `x + y` (arithmetic operation)
@@ -31,14 +31,14 @@ An **expression** is a combination of values, variables, operators, and method c
 - `condition ? trueValue : falseValue` (conditional expression)
 - `new Person("John")` (object creation)
 
-A **statement** is a complete instruction that performs an action. Statements don't return values; instead, they control program flow, declare variables, or perform operations:
+A *statement* is a complete instruction that performs an action. Statements don't return values; instead, they control program flow, declare variables, or perform operations. The following examples are statements:
 
 - `int x = 42;` (declaration statement)
 - `Console.WriteLine("Hello");` (expression statement - wraps a method call expression)
-- `if (condition) { /* code */ }` (selection statement)
-- `return result;` (jump statement)
+- `if (condition) { /* code */ }` (conditional statement)
+- `return result;` (return statement)
 
-The key distinction: expressions evaluate to values, while statements perform actions. Some constructs, like method calls, can be both—`Math.Max(a, b)` is an expression when used in `int result = Math.Max(a, b);`, but becomes an expression statement when written alone as `Math.Max(a, b);`.
+The key distinction: expressions evaluate to values, while statements perform actions. Some constructs, like method calls, can be both. For example, `Math.Max(a, b)` is an expression when used in `int result = Math.Max(a, b);`, but becomes an expression statement when written alone as `Math.Max(a, b);`.
 
 For detailed information about statements, see [Statements](../../programming-guide/statements-expressions-operators/statements.md). For information about expression-bodied members and other expression features, see [Expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 

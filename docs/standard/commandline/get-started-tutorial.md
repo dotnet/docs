@@ -75,7 +75,7 @@ The preceding code:
 
 * Creates an [option](syntax.md#options) named `--file` of type <xref:System.IO.FileInfo> and adds it to the [root command](syntax.md#root-command):
 
-  :::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="symbols" :::
+:::code language="csharp" source="snippets/get-started-tutorial/csharp/Stage1/Program.cs" id="option" :::
 
 * Parses the `args` and checks whether any value was provided for `--file` option. If so, it calls the `ReadFile` method using parsed value and returns `0` exit code:
 

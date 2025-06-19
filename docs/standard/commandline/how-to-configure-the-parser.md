@@ -24,7 +24,7 @@ Every `System.CommandLine.ParseResult` instance has a `System.CommandLine.ParseR
 
 Let's define a simple command that writes to standard output:
 
-:::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="setaction":::
+:::code language="csharp" source="snippets/configuration/csharp/Program.cs" id="rootcommand":::
 
 Now, let's use `CommandLineConfiguration` to capture the output:
 

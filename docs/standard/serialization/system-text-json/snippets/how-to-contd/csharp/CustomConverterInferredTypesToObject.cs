@@ -24,14 +24,15 @@ namespace CustomConverterInferredTypesToObject
             object objectToWrite,
             JsonSerializerOptions options)
         {
-            if (objectToWrite.GetType() == typeof(object))
+            var runtimeType = objectToWrite.GetType();
+            if (runtimeType == typeof(object))
             {
                 writer.WriteStartObject();
                 writer.WriteEndObject();
                 return;
             }
 
-            JsonSerializer.Serialize(writer, objectToWrite, objectToWrite.GetType(), options);
+            JsonSerializer.Serialize(writer, objectToWrite, runtimeType, options);
         }
     }
 

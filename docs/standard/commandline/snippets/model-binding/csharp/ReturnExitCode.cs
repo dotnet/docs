@@ -5,24 +5,26 @@ namespace ReturnExitCode;
 class Program
 {
     // <returnexitcode>
-    static async Task<int> Main(string[] args)
+    static int Main(string[] args)
     {
-        var delayOption = new Option<int>("--delay");
-        var messageOption = new Option<string>("--message");
+        Option<int> delayOption = new("--delay");
+        Option<string> messageOption = new("--message");
 
-        var rootCommand = new RootCommand("Parameter binding example");
-        rootCommand.Add(delayOption);
-        rootCommand.Add(messageOption);
+        RootCommand rootCommand = new("Parameter binding example")
+        {
+            delayOption,
+            messageOption
+        };
 
-        rootCommand.SetHandler((delayOptionValue, messageOptionValue) =>
-            {
-                Console.WriteLine($"--delay = {delayOptionValue}");
-                Console.WriteLine($"--message = {messageOptionValue}");
-                return Task.FromResult(100);
-            },
-            delayOption, messageOption);
+        rootCommand.SetAction(parseResult =>
+        {
+            Console.WriteLine($"--delay = {parseResult.GetValue(delayOption)}");
+            Console.WriteLine($"--message = {parseResult.GetValue(messageOption)}");
+            // Value returned from the action delegate is the exit code.
+            return 100;
+        });
 
-        return await rootCommand.InvokeAsync(args);
+        return rootCommand.Parse(args).Invoke();
     }
 // </returnexitcode>
 }

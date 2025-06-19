@@ -33,9 +33,19 @@ public class ComplexFormatter : IFormatProvider, ICustomFormatter
                 fmtString = "N" + precision.ToString();
             }
             if (format.Substring(0, 1).Equals("I", StringComparison.OrdinalIgnoreCase))
-                return c1.Real.ToString(fmtString) + " + " + c1.Imaginary.ToString(fmtString) + "i";
+            {
+                // Determine the sign to display
+                char sign = c1.Imaginary < 0 ? '-' : '+';
+                // Display the determined sign and the absolute value of the imaginary part
+                return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "i";
+            }
             else if (format.Substring(0, 1).Equals("J", StringComparison.OrdinalIgnoreCase))
-                return c1.Real.ToString(fmtString) + " + " + c1.Imaginary.ToString(fmtString) + "j";
+            {
+                // Determine the sign to display
+                char sign = c1.Imaginary < 0 ? '-' : '+';
+                // Display the determined sign and the absolute value of the imaginary part
+                return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "j";
+            }
             else
                 return c1.ToString(format, provider);
         }
@@ -73,30 +83,3 @@ public class CustomFormatEx
 //    Custom formatting with I0:        12 + 15i
 //    Custom formatting with J3:        12.100 + 15.400j
 // </Snippet4>
-
-public class TestNegativeImaginary
-{
-    public static void Run()
-    {
-        // Test with positive imaginary part
-        Complex c1 = new(12.1, 15.4);
-        Console.WriteLine("=== Positive imaginary part ===");
-        Console.WriteLine($"Complex number: {c1}");
-        Console.WriteLine($"Custom formatting with I0: {string.Format(new ComplexFormatter(), "{0:I0}", c1)}");
-        Console.WriteLine($"Custom formatting with J3: {string.Format(new ComplexFormatter(), "{0:J3}", c1)}");
-        
-        // Test with negative imaginary part - this should demonstrate the bug
-        Complex c2 = new(12.1, -15.4);
-        Console.WriteLine("\n=== Negative imaginary part ===");
-        Console.WriteLine($"Complex number: {c2}");
-        Console.WriteLine($"Custom formatting with I0: {string.Format(new ComplexFormatter(), "{0:I0}", c2)}");
-        Console.WriteLine($"Custom formatting with J3: {string.Format(new ComplexFormatter(), "{0:J3}", c2)}");
-        
-        // Test with zero imaginary part
-        Complex c3 = new(12.1, 0.0);
-        Console.WriteLine("\n=== Zero imaginary part ===");
-        Console.WriteLine($"Complex number: {c3}");
-        Console.WriteLine($"Custom formatting with I0: {string.Format(new ComplexFormatter(), "{0:I0}", c3)}");
-        Console.WriteLine($"Custom formatting with J3: {string.Format(new ComplexFormatter(), "{0:J3}", c3)}");
-    }
-}

@@ -34,16 +34,16 @@ public class ComplexFormatter : IFormatProvider, ICustomFormatter
             }
             if (format.Substring(0, 1).Equals("I", StringComparison.OrdinalIgnoreCase))
             {
-                // Determine the sign to display
+                // Determine the sign to display.
                 char sign = c1.Imaginary < 0 ? '-' : '+';
-                // Display the determined sign and the absolute value of the imaginary part
+                // Display the determined sign and the absolute value of the imaginary part.
                 return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "i";
             }
             else if (format.Substring(0, 1).Equals("J", StringComparison.OrdinalIgnoreCase))
             {
-                // Determine the sign to display
+                // Determine the sign to display.
                 char sign = c1.Imaginary < 0 ? '-' : '+';
-                // Display the determined sign and the absolute value of the imaginary part
+                // Display the determined sign and the absolute value of the imaginary part.
                 return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "j";
             }
             else

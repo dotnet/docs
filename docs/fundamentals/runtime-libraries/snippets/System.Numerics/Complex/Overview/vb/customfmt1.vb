@@ -32,9 +32,9 @@ Public Class ComplexFormatter
                 End Try
                 fmtString = "N" + precision.ToString()
             End If
-            ' Determine the sign to display
+            ' Determine the sign to display.
             Dim sign As Char = If(c1.Imaginary < 0.0, "-"c, "+"c)
-            ' Display the determined sign and the absolute value of the imaginary part
+            ' Display the determined sign and the absolute value of the imaginary part.
             If fmt.Substring(0, 1).Equals("I", StringComparison.OrdinalIgnoreCase) Then
                 Return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "i"
             ElseIf fmt.Substring(0, 1).Equals("J", StringComparison.OrdinalIgnoreCase) Then

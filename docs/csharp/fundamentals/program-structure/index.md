@@ -1,10 +1,9 @@
 ---
 title: "General Structure of a Program"
 description: Learn about the structure of a C# program by using a skeleton program that contains all the required elements for a program.
-ms.date: 08/01/2024
+ms.date: 06/20/2025
 helpviewer_keywords: 
   - "C# language, program structure"
-ms.assetid: 5ae964a5-0ef0-40fe-88fb-6d1793371d0d
 ---
 # General Structure of a C# Program
 
@@ -12,18 +11,34 @@ C# programs consist of one or more files. Each file contains zero or more namesp
 
 :::code language="csharp" source="snippets/toplevel-structure/Program.cs":::
 
-The preceding example uses [*top-level statements*](top-level-statements.md) for the program's entry point. Only one file can have top-level statements. The program's entry point is the first line of program text in that file. In this case, it's the `Console.WriteLine("Hello world!");`.
+The preceding example uses [*top-level statements*](top-level-statements.md) for the program's entry point. Only one file can have top-level statements. The program's entry point is the first text line of program text in that file. In this case, it's the `Console.WriteLine("Hello world!");`.
 You can also create a static method named [`Main`](main-command-line.md) as the program's entry point, as shown in the following example:
 
 :::code language="csharp" source="snippets/structure/Program.cs":::
 
-In that case the program will start in the first line of `Main` method, which is `Console.WriteLine("Hello world!");`
+In that case the program starts in the opening brace of `Main` method, which is `Console.WriteLine("Hello world!");`
+
+## Building and running C# programs
+
+C# is a *compiled* language. In most C# programs, you use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile a group of source files into a binary package. Then, you use the [`dotnet run`](../../../core/tools/dotnet-run.md) command to run the program. (You can simplify this process because `dotnet run` compiles the program before running it if necessary.) These tools support a rich language of configuration options and command line switches. The `dotnet` command line interpreter (CLI), which is included in the .NET SDK, provides many [tools](../../../core/tools/index.md) to generate and modify these files.  
+
+Beginning with C# 14 and .NET 10, you can create *file based programs*, which simplifies building and running csharp programs. You use the `dotnet run` command to run a program contained in a single `*.cs` file. For example, you run the following snippet, when stored in the file `hello-world.cs`, by typing `dotnet run hello-world.cs`:
+
+:::code language="csharp" source="./snippets/file-based-program/hello-world.cs":::
+
+The first line of the program contains the `#!` sequence for unix shells. The location of the `dotnet` CLI can vary on different distributions. On any unix system, if you set the *execute* (`+x`) permission on a C# file, you can run the C# file from the command line:
+
+```bash
+./hello-world.cs
+```
+
+The source for these programs must be a single file, but otherwise all C# syntax is valid. You can use file based programs for small command-line utilities, prototypes, or other experiments. File based programs allow [preprocessor directives](../../language-reference/preprocessor-directives.md#file-based-programs) that configure the build system.
 
 ## Expressions and statements
 
 C# programs are built using *expressions* and *statements*. Expressions produce a value, and statements perform an action:
 
-An *expression* is a combination of values, variables, operators, and method calls that evaluates to a single value. Expressions produce a result and can be used wherever a value is expected. The following examples are expressions:
+An *expression* is a combination of values, variables, operators, and method calls that evaluate to a single value. Expressions produce a result and can be used wherever a value is expected. The following examples are expressions:
 
 - `42` (literal value)
 - `x + y` (arithmetic operation)

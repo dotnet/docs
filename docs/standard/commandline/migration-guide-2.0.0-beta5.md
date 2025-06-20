@@ -202,7 +202,7 @@ rootCommand.SetAction(ParseResult parseResult =>
 In the past, the `CancellationToken` passed to `InvokeAsync` was exposed to handler via a method of `InvocationContext`:
 
 ```csharp
-rootCommand.SetHandler(async (InvocationCotnext context) =>
+rootCommand.SetHandler(async (InvocationContext context) =>
 {
     string? urlOptionValue = context.ParseResult.GetValueForOption(urlOption);
     var token = context.GetCancellationToken();

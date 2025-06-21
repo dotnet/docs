@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="OllamaSharp" Version="5.1.19" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AI.Shared\AI.Shared.csproj" />
   </ItemGroup>
 

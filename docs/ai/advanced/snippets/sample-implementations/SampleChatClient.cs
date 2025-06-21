@@ -1,9 +1,11 @@
 ﻿using System.Runtime.CompilerServices;
 using Microsoft.Extensions.AI;
 
-public sealed class SampleChatClient(Uri endpoint, string modelId) : IChatClient
+public sealed class SampleChatClient(Uri endpoint, string modelId)
+    : IChatClient
 {
-    public ChatClientMetadata Metadata { get; } = new(nameof(SampleChatClient), endpoint, modelId);
+    public ChatClientMetadata Metadata { get; } =
+        new(nameof(SampleChatClient), endpoint, modelId);
 
     public async Task<ChatResponse> GetResponseAsync(
         IEnumerable<ChatMessage> chatMessages,

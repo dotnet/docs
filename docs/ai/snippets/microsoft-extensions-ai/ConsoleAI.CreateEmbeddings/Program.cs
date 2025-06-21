@@ -1,9 +1,9 @@
 ﻿// <Snippet1>
 using Microsoft.Extensions.AI;
+using OllamaSharp;
 
 IEmbeddingGenerator<string, Embedding<float>> generator =
-    new SampleEmbeddingGenerator(
-        new Uri("http://coolsite.ai"), "target-ai-model");
+    new OllamaApiClient(new Uri("http://localhost:11434/"), "phi3:mini");
 
 foreach (Embedding<float> embedding in
     await generator.GenerateAsync(["What is AI?", "What is .NET?"]))

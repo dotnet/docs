@@ -479,6 +479,8 @@ items:
                     href: ../../fundamentals/diagnostics/runtime-type-events.md
                   - name: Tiered compilation events
                     href: ../../fundamentals/diagnostics/runtime-tiered-compilation-events.md
+                  - name: Wait-handle events
+                    href: ../../fundamentals/diagnostics/runtime-wait-handle-events.md
           - name: Collect diagnostics in containers
             href: ../../core/diagnostics/diagnostics-in-containers.md
           - name: Dumps
@@ -1168,6 +1170,8 @@ items:
                     href: ../../fundamentals/code-analysis/quality-rules/ca2022.md
                   - name: CA2024
                     href: ../../fundamentals/code-analysis/quality-rules/ca2024.md
+                  - name: CA2025
+                    href: ../../fundamentals/code-analysis/quality-rules/ca2025.md
               - name: Security rules
                 items:
                   - name: Overview

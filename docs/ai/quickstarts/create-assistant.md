@@ -4,8 +4,6 @@ description: Learn to create a minimal AI assistant with tooling capabilities us
 ms.date: 01/25/2025
 ms.topic: quickstart
 ms.custom: devx-track-dotnet, devx-track-dotnet-ai
-author: alexwolfmsft
-ms.author: alexwolf
 zone_pivot_groups: openai-library
 ---
 

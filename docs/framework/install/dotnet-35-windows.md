@@ -8,7 +8,7 @@ ms.date: 02/10/2025
 You might need .NET Framework 3.5 to run an app on Windows or Windows Server. Windows and Windows Server come with .NET Framework 4, which doesn't support apps built with .NET Framework 1.1 through 3.5. To run these apps, install .NET Framework 3.5. If you're a developer that requires .NET Framework 3.5, see the section [Developers and .NET Framework 3.5](#developers-and-net-framework-35).
 
 > [!TIP]
-> You might be able to use a config file to force the app to run on .NET Framework 4. For more information, see [Migration: Retarget or Recompile](../migration-guide/migrating-from-the-net-framework-1-1.md#retarget-or-recompile).
+> You might be able to use a config file to force the app to run on .NET Framework 4. For more information, see [Migration: Retarget or recompile](../migration-guide/migrating-from-the-net-framework-1-1.md#retarget-or-recompile).
 
 ## Install .NET Framework 3.5 on demand
 
@@ -47,9 +47,9 @@ You don't need to select the child items for **Windows Communication Foundation 
 
 ## Download the offline installer
 
-The .NET Framework 3.5 SP1 offline installer is available for Windows versions **prior to Windows 10 and Windows Server 2016**. For more information, see [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
+The .NET Framework 3.5 SP1 offline installer is available for Windows versions **prior to Windows 10 and Windows Server 2016**. For more information, see [.NET Framework 3.5 SP1 download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1?wt.mc_id=install-docs).
 
-Starting with Windows 10 and Windows Server 2016 operating systems, the only supported way of installing .NET Framework 3.5 in an offline mode is by using the original installation media's _:::no-loc text="cab":::_ files. For more information, see [Microsoft .NET Framework 3.5 Deployment Considerations](/windows-hardware/manufacture/desktop/microsoft-net-framework-35-deployment-considerations?view=windows-10).
+Starting with Windows 10 and Windows Server 2016 operating systems, the only supported way of installing .NET Framework 3.5 in an offline mode is by using the original installation media's _:::no-loc text="cab":::_ files. For more information, see [Microsoft .NET Framework 3.5 deployment considerations](/windows-hardware/manufacture/desktop/microsoft-net-framework-35-deployment-considerations).
 
 ## Troubleshoot the installation
 

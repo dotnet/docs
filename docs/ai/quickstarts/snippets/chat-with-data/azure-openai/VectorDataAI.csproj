@@ -5,18 +5,17 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <UserSecretsId>5981f38c-e59c-46cc-80bb-463f8c3f1691</UserSecretsId>
+    <UserSecretsId>8565c67c-c4b8-4824-a3e7-7f6e352adb33</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.14.0" />
     <PackageReference Include="Azure.AI.OpenAI" Version="2.1.0" />
+    <PackageReference Include="Azure.Identity" Version="1.14.0" />
     <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.5.0-preview.1.25265.7" />
-    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="9.5.0" />
-    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.53.1-preview" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.0-preview.4.25258.110" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.0-preview.4.25258.110" />
-    <PackageReference Include="System.Linq.AsyncEnumerable" Version="10.0.0-preview.4.25258.110" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" Version="9.6.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.55.0-preview" />
   </ItemGroup>
 
 </Project>

@@ -5,34 +5,41 @@ namespace scl;
 
 class Program
 {
-    static async Task<int> Main(string[] args)
+    static int Main(string[] args)
     {
         // <option>
-        var fileOption = new Option<FileInfo?>(
-            name: "--file",
-            description: "The file to read and display on the console.");
+        Option<FileInfo> fileOption = new("--file")
+        {
+            Description = "The file to read and display on the console."
+        };
 
-        var rootCommand = new RootCommand("Sample app for System.CommandLine");
-        rootCommand.AddOption(fileOption);
+        RootCommand rootCommand = new("Sample app for System.CommandLine");
+        rootCommand.Options.Add(fileOption);
         // </option>
 
-        // <sethandler>
-        rootCommand.SetHandler((file) => 
-            { 
-                ReadFile(file!); 
-            },
-            fileOption);
-        // </sethandler>
+        // <setaction>
+        rootCommand.SetAction(parseResult =>
+        {
+            FileInfo parsedFile = parseResult.GetValue(fileOption);
+            ReadFile(parsedFile);
+            return 0;
+        });
+        // </setaction>
 
-        return await rootCommand.InvokeAsync(args);
+        // <invoke>
+        ParseResult parseResult = rootCommand.Parse(args);
+        return parseResult.Invoke();
+        // </invoke>
     }
 
-    // <handler>
+    // <action>
     static void ReadFile(FileInfo file)
     {
-        File.ReadLines(file.FullName).ToList()
-            .ForEach(line => Console.WriteLine(line));
+        foreach (string line in File.ReadLines(file.FullName))
+        {
+            Console.WriteLine(line);
+        }
     }
-    // </handler>
+    // </action>
 }
 // </all>

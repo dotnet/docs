@@ -22,7 +22,7 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.0/pattern-matching.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/patterns.md"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/patterns"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-7.0/task-types.md",
@@ -110,15 +110,27 @@
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-8.0/nullable-reference-types.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-8.0/nested-stackalloc.md",
             "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#164127-stackalloc"
         },
         {
+            "source_path_from_root": "/redirections/proposals/csharp-8.0/readonly-instance-members.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/structs#16411-properties"
+        },
+        {
+            "source_path_from_root": "/redirections/proposals/csharp-8.0/null-coalescing-assignment.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/expressions#1221-assignment-operators"
+        },
+        {
+            "source_path_from_root": "/redirections/proposals/csharp-8.0/async-streams.md",
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/statements#13953-await-foreach"
+        },
+        {
             "source_path_from_root": "/redirections/proposals/csharp-9.0/nullable-reference-types-specification.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/redirections/proposals/csharp-10.0/generic-attributes.md",
@@ -342,6 +354,10 @@
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs0260.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/partial-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1112.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1683.md",
@@ -1384,27 +1400,27 @@
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-8.0/index.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-8.0/static-local-functions.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/statements.md#1364-local-function-declarations"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/statements#1364-local-function-declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-9.0/nullable-reference-types-specification.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-9.0/nullable-constructor-analysis.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-9.0/nullable-parameter-default-value-analysis.md",
-            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types.md#893-nullable-reference-types"
+            "redirect_url": "/dotnet/csharp/language-reference/language-specification/types#893-nullable-reference-types"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/proposals/csharp-9.0/index.md",
@@ -1819,12 +1835,48 @@
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs1100.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1101.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1102.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1103.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs1104.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/params-arrays"
         },
         {
+            "source_path_from_root": "/docs/csharp/misc/cs1105.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1106.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
             "source_path_from_root": "/docs/csharp/misc/cs1007.md",
             "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/overload-resolution"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1109.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1110.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
+        },
+        {
+            "source_path_from_root": "/docs/csharp/misc/cs1113.md",
+            "redirect_url": "/dotnet/csharp/language-reference/compiler-messages/extension-declarations"
         },
         {
             "source_path_from_root": "/docs/csharp/language-reference/compiler-messages/cs1502.md",

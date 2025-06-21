@@ -934,22 +934,25 @@ items:
             href: ../standard/commandline/index.md
           - name: Get started tutorial
             href: ../standard/commandline/get-started-tutorial.md
-          - name: Command-line syntax
+          - name: Command-line syntax overview
             href: ../standard/commandline/syntax.md
-          - name: Define commands
-            href: ../standard/commandline/define-commands.md
-          - name: Model binding
-            href: ../standard/commandline/model-binding.md
-          - name: Tab completion
-            href: ../standard/commandline/tab-completion.md
-          - name: Dependency injection
-            href: ../standard/commandline/dependency-injection.md
-          - name: Customize help
-            href: ../standard/commandline/customize-help.md
-          - name: Handle termination
-            href: ../standard/commandline/handle-termination.md
-          - name: Use middleware
-            href: ../standard/commandline/use-middleware.md
+          - name: How to
+            expanded: true
+            items:
+            - name: Parse and invoke the result
+              href: ../standard/commandline/how-to-parse-and-invoke.md
+            - name: Customize parsing and validation
+              href: ../standard/commandline/how-to-customize-parsing-and-validation.md
+            - name: Configure the parser
+              href: ../standard/commandline/how-to-configure-the-parser.md
+            - name: Enable and customize tab completion
+              href: ../standard/commandline/how-to-enable-tab-completion.md
+            - name: Customize help
+              href: ../standard/commandline/how-to-customize-help.md
+          - name: Design guidance
+            href: ../standard/commandline/design-guidance.md
+          - name: Migration guide to 2.0.0-beta5
+            href: ../standard/commandline/migration-guide-2.0.0-beta5.md
       - name: File and stream I/O
         items:
           - name: Overview

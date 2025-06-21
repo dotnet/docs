@@ -65,12 +65,6 @@ If your distribution wasn't previously listed, and is debian-based, you may need
 - libstdc++6
 - zlib1g
 
-### Common dependencies
-
-[!INCLUDE [linux-libgdiplus-general](includes/linux-libgdiplus-general.md)]
-
-You can usually install a recent version of *libgdiplus* by [adding the Mono repository to your system](https://www.mono-project.com/download/stable/#download-lin).
-
 ## Scripted install
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the **SDK** and **Runtime**. You can download the script from <https://dot.net/v1/dotnet-install.sh>. When .NET is installed in this way, you must install the dependencies required by your Linux distribution. Use the links in the [Install .NET on Linux](linux.md) article for your specific Linux distribution.

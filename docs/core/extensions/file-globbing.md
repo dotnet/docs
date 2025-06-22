@@ -145,7 +145,7 @@ The additional `Match` overloads work in similar ways.
 
 By default, the matcher evaluates **all** include patterns first, then applies **all** exclude patterns—regardless of the order in which you added them. This means you cannot re-include files that were previously excluded.
 
-Starting in .NET 10, you can opt into *ordered* evaluation so that includes and excludes are processed exactly in the sequence they were added:
+Starting with version 10, you can opt into *ordered* evaluation so that includes and excludes are processed exactly in the sequence they were added:
 
 ```csharp
 using Microsoft.Extensions.FileSystemGlobbing;

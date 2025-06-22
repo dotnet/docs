@@ -153,9 +153,9 @@ using Microsoft.Extensions.FileSystemGlobbing;
 // preserve the order of patterns when matching
 Matcher matcher = new(preserveFilterOrder: true);
 
-matcher.AddInclude("**/*");                                   // include everything
-matcher.AddExclude("logs/**/*");                              // exclude logs
-matcher.AddInclude("logs/important/**/*");                    // re-include important logs
+matcher.AddInclude("**/*");                // include everything
+matcher.AddExclude("logs/**/*");           // exclude logs
+matcher.AddInclude("logs/important/**/*"); // re-include important logs
 
 var result = matcher.Execute(new DirectoryInfoWrapper(new DirectoryInfo(root)));
 foreach (var file in result.Files)

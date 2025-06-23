@@ -143,14 +143,14 @@ The additional `Match` overloads work in similar ways.
 
 ### Ordered evaluation of include/exclude
 
-By default, the matcher evaluates **all** include patterns first, then applies **all** exclude patterns—regardless of the order in which you added them. This means you cannot re-include files that were previously excluded.
+By default, the matcher evaluates **all** include patterns first, then applies **all** exclude patterns, regardless of the order in which you added them. This means you can't re-include files that were previously excluded.
 
-Starting with version 10, you can opt into *ordered* evaluation so that includes and excludes are processed exactly in the sequence they were added:
+Starting in .NET 10, you can opt into *ordered* evaluation, where includes and excludes are processed exactly in the sequence they were added:
 
 ```csharp
 using Microsoft.Extensions.FileSystemGlobbing;
 
-// preserve the order of patterns when matching
+// Preserve the order of patterns when matching.
 Matcher matcher = new(preserveFilterOrder: true);
 
 matcher.AddInclude("**/*");                // include everything
@@ -165,11 +165,12 @@ foreach (var file in result.Files)
 ```
 
 In this mode, patterns are applied one after another:  
-- `**/*` adds all files  
-- `logs/**/*` filters out anything in `logs/`  
-- `logs/important/**/*` adds back only files under `logs/important/`  
 
-Existing code that uses the default constructor will continue to run with the original “all includes, then all excludes” behavior.
+- `**/*` adds all files.
+- `logs/**/*` filters out anything in `logs/`.
+- `logs/important/**/*` adds back only files under `logs/important/`.
+
+Existing code that uses the default constructor will continue to run with the original "all includes, then all excludes" behavior.
 
 ## Pattern formats
 

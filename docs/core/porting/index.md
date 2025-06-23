@@ -1,8 +1,8 @@
 ---
-title: Port from .NET Framework to .NET 7
-description: Understand the porting process and discover tools you might find helpful when porting a .NET Framework project to .NET 7.
+title: Port from .NET Framework to .NET
+description: Understand the porting process and discover tools you might find helpful when porting a .NET Framework project to .NET.
 author: adegeo
-ms.date: 07/23/2024
+ms.date: 06/03/2025
 ms.custom: devdivchpfy22, updateeachrelease
 no-loc: ["package.config", PackageReference]
 ---

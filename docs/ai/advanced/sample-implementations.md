@@ -7,7 +7,7 @@ ms.date: 05/28/2025
 
 # Sample implementations of IChatClient and IEmbeddingGenerator
 
-.NET libraries that provide clients for language models and services can provide an implementations of the <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> interfaces. Any consumers of the interfaces are then able to interoperate seamlessly with these models and services via the abstractions.
+.NET libraries that provide clients for language models and services can provide implementations of the <xref:Microsoft.Extensions.AI.IChatClient> and <xref:Microsoft.Extensions.AI.IEmbeddingGenerator`2> interfaces. Any consumers of the interfaces are then able to interoperate seamlessly with these models and services via the abstractions.
 
 ## The `IChatClient` interface
 

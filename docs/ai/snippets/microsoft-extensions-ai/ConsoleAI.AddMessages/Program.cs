@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.AI;
+using OllamaSharp;
 
-IChatClient client = new SampleChatClient(
-    new Uri("http://coolsite.ai"), "target-ai-model");
+IChatClient client = new OllamaApiClient(
+    new Uri("http://localhost:11434/"), "phi3:mini");
 
 // <Snippet1>
 List<ChatMessage> history = [];

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.AI;
+using OllamaSharp;
 using OpenTelemetry.Trace;
 
 // Configure OpenTelemetry exporter.
@@ -8,10 +9,10 @@ TracerProvider tracerProvider = OpenTelemetry.Sdk.CreateTracerProviderBuilder()
     .AddConsoleExporter()
     .Build();
 
-var sampleChatClient = new SampleChatClient(
-    new Uri("http://coolsite.ai"), "target-ai-model");
+IChatClient ollamaClient = new OllamaApiClient(
+    new Uri("http://localhost:11434/"), "phi3:mini");
 
-IChatClient client = new ChatClientBuilder(sampleChatClient)
+IChatClient client = new ChatClientBuilder(ollamaClient)
     .UseOpenTelemetry(
         sourceName: sourceName,
         configure: c => c.EnableSensitiveData = true)

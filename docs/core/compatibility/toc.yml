@@ -1912,8 +1912,6 @@ items:
         items:
           - name: .NET 10
             items:
-              - name: HttpClient/SslStream default certificate revocation check mode changed to Online
-                href: networking/10.0/ssl-certificate-revocation-check-default.md
               - name: Streaming HTTP responses enabled by default in browser HTTP clients
                 href: networking/10.0/default-http-streaming.md
           - name: .NET 9

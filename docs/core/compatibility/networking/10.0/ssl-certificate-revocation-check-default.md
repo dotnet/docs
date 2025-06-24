@@ -1,14 +1,14 @@
 ---
 title: "Breaking change - HttpClient/SslStream default certificate revocation check mode changed to Online"
-description: "Learn about the breaking change in .NET 10 Preview 6 where the default certificate revocation check mode changed from NoCheck to Online."
+description: "Learn about the breaking change in .NET 10 where the default certificate revocation check mode changed from 'NoCheck' to 'Online'."
 ms.date: 06/23/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/46824
 ---
 
-# HttpClient/SslStream default certificate revocation check mode changed to Online
+# HttpClient/SslStream default certificate revocation check mode changed to `Online`
 
-<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> default values have changed from `NoCheck` to `Online`. This change enhances security and makes the behavior consistent with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy?displayProperty=nameWithType>.
+The default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> have changed from `NoCheck` to `Online`. This change enhances security and makes the behavior consistent with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy?displayProperty=nameWithType>.
 
 ## Version introduced
 
@@ -16,43 +16,15 @@ ms.custom: https://github.com/dotnet/docs/issues/46824
 
 ## Previous behavior
 
-<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> default values were `NoCheck`, meaning certificate revocation lists weren't checked by default.
-
-```csharp
-var clientOptions = new SslClientAuthenticationOptions
-{
-    TargetHost = "example.com"
-    // CertificateRevocationCheckMode defaults to NoCheck
-};
-
-var serverOptions = new SslServerAuthenticationOptions
-{
-    ServerCertificate = serverCertificate
-    // CertificateRevocationCheckMode defaults to NoCheck  
-};
-```
+Previously, the default value of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> default values was `NoCheck`, meaning certificate revocation lists weren't checked by default.
 
 ## New behavior
 
-<xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> default values are `Online`, meaning certificate revocation lists are checked online by default.
-
-```csharp
-var clientOptions = new SslClientAuthenticationOptions
-{
-    TargetHost = "example.com"
-    // CertificateRevocationCheckMode defaults to Online
-};
-
-var serverOptions = new SslServerAuthenticationOptions
-{
-    ServerCertificate = serverCertificate
-    // CertificateRevocationCheckMode defaults to Online
-};
-```
+Starting in .NET 10, the default value of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> is `Online`, meaning certificate revocation lists are checked online by default.
 
 ## Type of breaking change
 
-This is a [behavioral change](../../categories.md#behavioral-change).
+This change is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
@@ -60,7 +32,7 @@ This change enhances security and ensures consistency between APIs related to X.
 
 ## Recommended action
 
-If certificate revocation checking is not desired, specify `X509RevocationMode.NoCheck` explicitly:
+If certificate revocation checking is not desired, specify <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType> explicitly:
 
 ```csharp
 var clientOptions = new SslClientAuthenticationOptions
@@ -76,10 +48,10 @@ var serverOptions = new SslServerAuthenticationOptions
 };
 ```
 
-In situations where the code might not be modified, previous behavior can be enabled by setting either:
+In situations where you can't modify the code, you can enable the previous behavior with one of the following settings:
 
-- `System.Net.Security.NoRevocationCheckByDefault` AppContext switch to `true`
-- `DOTNET_SYSTEM_NET_SECURITY_NOREVOCATIONCHECKBYDEFAULT` environment variable to `true`
+- Set `System.Net.Security.NoRevocationCheckByDefault` AppContext switch to `true`.
+- Set `DOTNET_SYSTEM_NET_SECURITY_NOREVOCATIONCHECKBYDEFAULT` environment variable to `true`.
 
 ## Affected APIs
 
@@ -87,4 +59,5 @@ In situations where the code might not be modified, previous behavior can be ena
 - <xref:System.Net.Security.SslStream.AuthenticateAsClientAsync%2A?displayProperty=fullName>
 - <xref:System.Net.Security.SslStream.AuthenticateAsServer%2A?displayProperty=fullName>
 - <xref:System.Net.Security.SslStream.AuthenticateAsServerAsync%2A?displayProperty=fullName>
-- <xref:System.Net.Http.HttpClient?displayProperty=fullName>
+- <xref:System.Net.Http.HttpClient.Send*?displayProperty=fullName> (when using either <xref:System.Net.Http.WinHttpHandler> or <xref:System.Net.Http.SocketsHttpHandler>)
+- <xref:System.Net.Http.HttpClient.SendAsync*?displayProperty=fullName> (when using either <xref:System.Net.Http.WinHttpHandler> or <xref:System.Net.Http.SocketsHttpHandler>)

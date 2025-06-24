@@ -16,7 +16,7 @@ The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 > [!TIP]
-> You can use AI assistance to [split a string](#use-AI-to-split-a-string).
+> You can use AI assistance to [split a string](#use-ai-to-split-a-string).
 
 ## Split a string into words
 

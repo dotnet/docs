@@ -74,6 +74,8 @@ items:
                 href: sdk/10.0/msbuild-custom-culture.md
               - name: NU1510 is raised for direct references pruned by NuGet
                 href: sdk/10.0/nu1510-pruned-references.md
+              - name: PackageReference without a version raises error
+                href: sdk/10.0/nu1015-packagereference-version.md
               - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
           - name: Windows Forms
@@ -1984,6 +1986,8 @@ items:
                 href: sdk/10.0/msbuild-custom-culture.md
               - name: NU1510 is raised for direct references pruned by NuGet
                 href: sdk/10.0/nu1510-pruned-references.md
+              - name: PackageReference without a version raises error
+                href: sdk/10.0/nu1015-packagereference-version.md
               - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
           - name: .NET 9

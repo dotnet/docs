@@ -42,7 +42,7 @@ You can start by updating the code so the thread doesn't block while tasks are r
 
 :::code language="csharp" source="snippets/index/AsyncBreakfast-V2/Program.cs" ID="SnippetMain":::
 
-The code updates the original method bodies of `FryEggs`, `FryBacon`, and `ToastBread` to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` objects, respectively. The updated method names include the "Async" suffix: `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync`. The `Main` method returns the `Task` object, although it doesn't have a `return` expression, which is by design. For more information, see [Evaluation of a void-returning async function](/dotnet/csharp/language-reference/language-specification/classes#14153-evaluation-of-a-void-returning-async-function).
+The code updates the original method bodies of `FryEggs`, `FryBacon`, and `ToastBread` to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` objects, respectively. The updated method names include the "Async" suffix: `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync`. The `Main` method returns the `Task` object, although it doesn't have a `return` expression, which is by design. For more information, see [Evaluation of a void-returning async function](/dotnet/csharp/language-reference/language-specification/classes#15144-evaluation-of-a-void-returning-async-function).
 
 > [!NOTE]
 > The updated code doesn't yet take advantage of key features of asynchronous programming, which can result in shorter completion times. The code processes the tasks in roughly the same amount of time as the initial synchronous version. For the full method implementations, see the [final version of the code](#review-final-code) later in this article.

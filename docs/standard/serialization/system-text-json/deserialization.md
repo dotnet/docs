@@ -22,7 +22,7 @@ This article shows how to use the <xref:System.Text.Json?displayProperty=fullNam
 A common way to deserialize JSON is to have (or create) a .NET class with properties and fields that represent one or more of the JSON properties. Then, to deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method. For the generic overloads, the generic type parameter is the .NET class. For the non-generic overloads, you pass the type of the class as a method parameter. You can deserialize either synchronously or asynchronously.
 
 > [!TIP]
-> You can use AI assistance to [deserialize a JSON string](#use-AI-to-deserialize-json).
+> You can use AI assistance to [deserialize a JSON string](#use-ai-to-deserialize-json).
 
 Any JSON properties that aren't represented in your class are ignored [by default](missing-members.md). Also, if any properties on the type are [required](required-properties.md) but not present in the JSON payload, deserialization will fail.
 

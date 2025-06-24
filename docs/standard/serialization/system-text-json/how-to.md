@@ -21,7 +21,7 @@ adobe-target: true
 This article shows how to use the <xref:System.Text.Json?displayProperty=fullName> namespace to serialize to JavaScript Object Notation (JSON). If you're porting existing code from `Newtonsoft.Json`, see [How to migrate to `System.Text.Json`](migrate-from-newtonsoft.md).
 
 > [!TIP]
-> You can use AI assistance to [serialize to JSON](#use-AI-to-serialize-to-json).
+> You can use AI assistance to [serialize to JSON](#use-ai-to-serialize-to-json).
 
 To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method.
 

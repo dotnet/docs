@@ -21,7 +21,7 @@ It's slightly more efficient and straightforward to call a `TryParse` method (fo
 You use `Parse` or `TryParse` methods on the numeric type you expect the string contains, such as the <xref:System.Int32?displayProperty=nameWithType> type. The <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method uses <xref:System.Int32.Parse%2A> internally. The `Parse` method returns the converted number; the `TryParse` method returns a boolean value that indicates whether the conversion succeeded, and returns the converted number in an `out` parameter. If the string isn't in a valid format, `Parse` throws an exception, but `TryParse` returns `false`. When calling a `Parse` method, you should always use exception handling to catch a <xref:System.FormatException> when the parse operation fails.
 
 > [!TIP]
-> You can use AI assistance to [convert a string to a number](#use-AI-to-convert-a-string-to-a-number).
+> You can use AI assistance to [convert a string to a number](#use-ai-to-convert-a-string-to-a-number).
 
 ## Call Parse or TryParse methods
 

@@ -82,10 +82,10 @@ Generate C# code to use String.Format to build an output string "Hi x, today's d
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
-
 ## See also
 
 - <xref:System.String>
 - <xref:System.Text.StringBuilder>
 - [Strings](../programming-guide/strings/index.md)
+- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

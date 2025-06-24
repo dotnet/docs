@@ -17,7 +17,7 @@ For cgroup file systems, `DriveFormat` returned `cgroupfs`/`cgroup2fs`. For the 
 
 Starting in .NET 10, .NET returns the string representation used by the Linux kernel for the filesystem type.
 
-For cgroup file systems, `DriveFormat` returns `cgroup`/`cgroups`. For the SELinux filesystem, the value is `selinuxfs`.
+For cgroup file systems, `DriveFormat` returns `cgroup`/`cgroup2`. For the SELinux filesystem, the value is `selinuxfs`.
 
 ## Version introduced
 

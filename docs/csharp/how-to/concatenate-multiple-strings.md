@@ -15,7 +15,7 @@ ms.custom: copilot-scenario-highlight
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 > [!TIP]
-> You can use AI assistance to [concatenate strings](#use-AI-to-concatenate-strings).
+> You can use AI assistance to [concatenate strings](#use-ai-to-concatenate-strings).
 
 ## String literals
 

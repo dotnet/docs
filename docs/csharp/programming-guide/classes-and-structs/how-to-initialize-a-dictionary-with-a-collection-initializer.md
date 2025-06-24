@@ -24,7 +24,7 @@ A <xref:System.Collections.Generic.Dictionary%602> contains a collection of key/
 > while the second part of example, the public read / write indexer method, quietly overwrites the already existing entry with the same key.
 
 > [!TIP]
-> You can use AI assistance to [initialize a dictionary](#use-AI-to-initialize-a-dictionary).
+> You can use AI assistance to [initialize a dictionary](#use-ai-to-initialize-a-dictionary).
 
 ## Example
 

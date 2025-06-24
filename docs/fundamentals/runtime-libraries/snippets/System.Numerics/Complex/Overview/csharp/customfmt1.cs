@@ -33,9 +33,19 @@ public class ComplexFormatter : IFormatProvider, ICustomFormatter
                 fmtString = "N" + precision.ToString();
             }
             if (format.Substring(0, 1).Equals("I", StringComparison.OrdinalIgnoreCase))
-                return c1.Real.ToString(fmtString) + " + " + c1.Imaginary.ToString(fmtString) + "i";
+            {
+                // Determine the sign to display.
+                char sign = c1.Imaginary < 0 ? '-' : '+';
+                // Display the determined sign and the absolute value of the imaginary part.
+                return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "i";
+            }
             else if (format.Substring(0, 1).Equals("J", StringComparison.OrdinalIgnoreCase))
-                return c1.Real.ToString(fmtString) + " + " + c1.Imaginary.ToString(fmtString) + "j";
+            {
+                // Determine the sign to display.
+                char sign = c1.Imaginary < 0 ? '-' : '+';
+                // Display the determined sign and the absolute value of the imaginary part.
+                return c1.Real.ToString(fmtString) + " " + sign + " " + Math.Abs(c1.Imaginary).ToString(fmtString) + "j";
+            }
             else
                 return c1.ToString(format, provider);
         }

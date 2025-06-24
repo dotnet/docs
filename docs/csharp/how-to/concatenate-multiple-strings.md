@@ -15,7 +15,7 @@ ms.custom: copilot-scenario-highlight
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 > [!TIP]
-> You can use AI assistance to [concatenate strings with GitHub Copilot](#use-github-copilot-to-concatenate-strings).
+> You can use AI assistance to [concatenate strings](#use-AI-to-concatenate-strings).
 
 ## String literals
 
@@ -70,9 +70,9 @@ combines an array of words, adding a space between each word in the array:
 
 This option can cause more allocations than other methods for concatenating collections, as it creates an intermediate string for each iteration. If optimizing performance is critical, consider the [`StringBuilder`](#stringbuilder) class or the [`String.Concat` or `String.Join`](#stringconcat-or-stringjoin) method to concatenate a collection, instead of `Enumerable.Aggregate`.
 
-## Use GitHub Copilot to concatenate strings
+## Use AI to concatenate strings
 
-You can use GitHub Copilot in your IDE to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
+You can use AI tools, such as GitHub Copilot to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 

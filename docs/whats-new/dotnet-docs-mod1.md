@@ -14,7 +14,6 @@ Welcome to what's new in the .NET docs for April 2025. This article lists some o
 ### New articles
 
 - [.NET CLI `--interactive` defaults to `true` in user scenarios](../core/compatibility/sdk/10.0/dotnet-cli-interactive.md)
-- [Assembly load directory resolves through symbolic links on Windows](../core/compatibility/deployment/9.0/assembly-load-directory.md)
 - [Default trace context propagator updated to W3C standard](../core/compatibility/core-libraries/10.0/default-trace-context-propagator.md)
 - [Linux native library resolution no longer uses `netcoredeps`](../core/compatibility/interop/8.0/linux-netcoredeps.md)
 - [Streaming HTTP responses enabled by default in browser HTTP clients](../core/compatibility/networking/10.0/default-http-streaming.md)

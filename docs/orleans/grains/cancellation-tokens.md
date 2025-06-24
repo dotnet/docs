@@ -20,7 +20,7 @@ Cancellation is cooperative, meaning your grain implementation must observe the 
 
 Before a grain call is made, the runtime checks if the provided <xref:System.Threading.CancellationToken> is already canceled. If so, it immediately throws an <xref:System.OperationCanceledException> without issuing the request. Similarly, if an enqueued request is canceled before a grain begins executing it, it is cancelled without being executed.
 
-While the grain call is executing, the runtime listens for cancellation, propagating the cancellation signal to the remote caller. Cancellation signals are only propagated while the call is active. Once the call completes (either normally or with an error), any subsequent cancellation signal will not be propagated to the remote caller even if it is still executing. These semantics are similar to how cancellation with remote calls works with other APIs such as `HttpClient`, gRPC, or Azure API clients.  
+While the grain call is executing, the runtime listens for cancellation, propagating the cancellation signal to the remote caller. Cancellation signals are only propagated while the call is active. Once the call completes (either normally or with an error), any subsequent cancellation signal will not be propagated to the remote caller even if it is still executing. These semantics are similar to how cancellation with remote calls works with other APIs such as `HttpClient`, gRPC, or Azure API clients.
 
 ## Basic usage
 
@@ -48,25 +48,25 @@ public class ProcessingGrain : Grain, IProcessingGrain
     {
         // Check cancellation before starting work
         cancellationToken.ThrowIfCancellationRequested();
-        
+
         var results = new List<string>();
-        
+
         for (int i = 0; i < chunks; i++)
         {
             // Check cancellation before each chunk
             cancellationToken.ThrowIfCancellationRequested();
-            
+
             // Process each chunk
             var chunkResult = await ProcessChunkAsync(data, i);
             results.Add(chunkResult);
-            
+
             // Use cancellation token with async operations when possible
             await Task.Delay(100, cancellationToken);
         }
-        
+
         return string.Join(", ", results);
     }
-    
+
     private async Task<string> ProcessChunkAsync(string data, int chunkIndex)
     {
         // Simulate processing work
@@ -134,22 +134,22 @@ public interface IDataStreamGrain : IGrainWithGuidKey
 public class DataStreamGrain : Grain, IDataStreamGrain
 {
     public async IAsyncEnumerable<DataPoint> StreamDataAsync(
-        int count, 
+        int count,
         [EnumeratorCancellation] CancellationToken cancellationToken = default)
     {
         for (int i = 0; i < count; i++)
         {
             // Check cancellation before each yield
-            cancellationToken.ThrowIfCancellationRequested();            
+            cancellationToken.ThrowIfCancellationRequested();
             // Generate or fetch data
             var dataPoint = await GenerateDataPointAsync(i, cancellationToken);
             yield return dataPoint;
-            
+
             // Optional: add delay with cancellation support
             await Task.Delay(100, cancellationToken);
         }
     }
-    
+
     private async Task<DataPoint> GenerateDataPointAsync(int index, CancellationToken cancellationToken)
     {
         // Simulate data generation
@@ -182,7 +182,7 @@ try
     await foreach (var dataPoint in grain.StreamDataAsync(1000, cts.Token))
     {
         Console.WriteLine($"Received: {dataPoint}");
-        
+
         // Process the data point
         // Cancellation will stop the enumeration automatically
     }
@@ -238,7 +238,7 @@ siloBuilder.Configure<SiloMessagingOptions>(options =>
 {
     // Send cancellation signal when requests timeout (default: true)
     options.CancelRequestOnTimeout = true;
-    
+
     // Wait for callee to acknowledge cancellation (default: false)
     // Setting this to true provides stronger cancellation guarantees but may impact performance
     options.WaitForCancellationAcknowledgement = false;
@@ -297,7 +297,7 @@ Orleans provides metrics to help you monitor cancellation behavior in your appli
 public async Task MonitoredOperationAsync(CancellationToken cancellationToken = default)
 {
     var stopwatch = Stopwatch.StartNew();
-    
+
     try
     {
         await DoWorkAsync(cancellationToken);
@@ -331,7 +331,7 @@ public async Task ExampleWithCancellationCallbackAsync(CancellationToken cancell
         // Safe to access grain state here
         logger.LogInformation("Operation was canceled for grain {GrainId}", this.GetPrimaryKey());
     });
-    
+
     // Continue with work...
     await DoWorkAsync(cancellationToken);
 }
@@ -370,7 +370,7 @@ Handle cancellation gracefully with proper error handling patterns:
 
 ```csharp
 public async Task<ProcessingResult> ProcessWithFallbackAsync(
-    string data, 
+    string data,
     CancellationToken cancellationToken = default)
 {
     try
@@ -396,7 +396,7 @@ public async Task<ProcessingResult> ProcessWithFallbackAsync(
         {
             throw new OperationCanceledException(cancellationToken);
         }
-        
+
         logger.LogWarning(ex, "Primary processing failed, trying fallback");
         return await ProcessFallbackAsync(data, cancellationToken);
     }
@@ -421,21 +421,21 @@ The effectiveness of cancellation depends on how frequently the async iterator c
 
 ```csharp
 public async IAsyncEnumerable<DataPoint> StreamDataAsync(
-    int count, 
+    int count,
     [EnumeratorCancellation] CancellationToken cancellationToken = default)
 {
     for (int i = 0; i < count; i++)
     {
         // Good: Check before each item
         cancellationToken.ThrowIfCancellationRequested();
-        
+
         var data = await ProcessItemAsync(i);
-        
+
         // Good: Check after long-running operations
         cancellationToken.ThrowIfCancellationRequested();
-        
+
         yield return data;
-        
+
         // Good: Use cancellation-aware operations
         await Task.Delay(100, cancellationToken);
     }
@@ -480,7 +480,7 @@ To use the legacy `GrainCancellationToken`:
         {
             // Perform a portion of the work
             await IoOperation(tc.CancellationToken);
-            
+
             // Example: tc.CancellationToken.ThrowIfCancellationRequested();
         }
         // Perform cleanup if necessary and then exit or throw OperationCanceledException
@@ -516,7 +516,7 @@ To use the legacy `GrainCancellationToken`:
 - <xref:Orleans.Configuration.ClientMessagingOptions>
 - [Cancellation in managed threads](/dotnet/standard/threading/cancellation-in-managed-threads)
 - [Task cancellation](/dotnet/standard/parallel-programming/task-cancellation)
-- [Async streams](/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams)
+- [Async streams](/dotnet/csharp/language-reference/language-specification/statements#13953-await-foreach)
 - [Orleans timers and reminders](timers-and-reminders.md)
 - [Orleans streaming](../streaming/index.md)
 - [Orleans GitHub repository](<https://github.com/dotnet/orleans>)

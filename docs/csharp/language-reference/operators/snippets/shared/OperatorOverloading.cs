@@ -1,7 +1,7 @@
-﻿public readonly struct Fraction
+﻿public struct Fraction
 {
-    private readonly int num;
-    private readonly int den;
+    private int numerator;
+    private int denominator;
 
     public Fraction(int numerator, int denominator)
     {
@@ -9,32 +9,78 @@
         {
             throw new ArgumentException("Denominator cannot be zero.", nameof(denominator));
         }
-        num = numerator;
-        den = denominator;
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
-    public static Fraction operator +(Fraction a) => a;
-    public static Fraction operator -(Fraction a) => new Fraction(-a.num, a.den);
+    public static Fraction operator +(Fraction operand) => operand;
+    public static Fraction operator -(Fraction operand) => new Fraction(-operand.numerator, operand.denominator);
 
-    public static Fraction operator +(Fraction a, Fraction b)
-        => new Fraction(a.num * b.den + b.num * a.den, a.den * b.den);
+    public static Fraction operator +(Fraction left, Fraction right)
+        => new Fraction(left.numerator * right.denominator + right.numerator * left.denominator, left.denominator * right.denominator);
 
-    public static Fraction operator -(Fraction a, Fraction b)
-        => a + (-b);
+    public static Fraction operator -(Fraction left, Fraction right)
+        => left + (-right);
 
-    public static Fraction operator *(Fraction a, Fraction b)
-        => new Fraction(a.num * b.num, a.den * b.den);
+    public static Fraction operator *(Fraction left, Fraction right)
+        => new Fraction(left.numerator * right.numerator, left.denominator * right.denominator);
 
-    public static Fraction operator /(Fraction a, Fraction b)
+    public static Fraction operator /(Fraction left, Fraction right)
     {
-        if (b.num == 0)
+        if (right.numerator == 0)
         {
             throw new DivideByZeroException();
         }
-        return new Fraction(a.num * b.den, a.den * b.num);
+        return new Fraction(left.numerator * right.denominator, left.denominator * right.numerator);
     }
 
-    public override string ToString() => $"{num} / {den}";
+    // Define increment and decrement to add 1/den, rather than 1/1.
+    public static Fraction operator ++(Fraction operand)
+        => new Fraction(operand.numerator++, operand.denominator);
+
+    public static Fraction operator --(Fraction operand) =>
+        new Fraction(operand.numerator--, operand.denominator);
+
+    public override string ToString() => $"{numerator} / {denominator}";
+
+    // New operators allowed in C# 14:
+    public void operator +=(Fraction operand) =>
+        (numerator, denominator ) =
+        (
+            numerator * operand.denominator + operand.numerator * denominator,
+            denominator * operand.denominator
+        );
+
+    public void operator -=(Fraction operand) =>
+        (numerator, denominator) =
+        (
+            numerator * operand.denominator - operand.numerator * denominator,
+            denominator * operand.denominator
+        );
+
+    public void operator *=(Fraction operand) =>
+        (numerator, denominator) =
+        (
+            numerator * operand.numerator,
+            denominator * operand.denominator
+        );
+
+    public void operator /=(Fraction operand)
+    {
+        if (operand.numerator == 0)
+        {
+            throw new DivideByZeroException();
+        }
+        (numerator, denominator) =
+        (
+            numerator * operand.denominator,
+            denominator * operand.numerator
+        );
+    }
+
+    public void operator ++() => numerator++;
+
+    public void operator --() => numerator--;
 }
 
 public static class OperatorOverloading

@@ -1,7 +1,7 @@
 ---
 title: "Breaking change: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed"
 description: "Learn about the breaking change in .NET 10 where NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable no longer disables exponential retry."
-ms.date: 12/23/2024
+ms.date: 06/24/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/46537
 ---
@@ -15,7 +15,7 @@ The `NUGET_ENABLE_ENHANCED_HTTP_RETRY` environment variable no longer has any ef
 
 ## Previous behavior
 
-When the `NUGET_ENABLE_ENHANCED_HTTP_RETRY` environment variable was set to `false`, NuGet would use the old retry behavior with a fixed 200ms delay between failed HTTP calls instead of exponential back-off.
+When the `NUGET_ENABLE_ENHANCED_HTTP_RETRY` environment variable was set to `false`, NuGet used the old retry behavior with a fixed 200ms delay between failed HTTP calls instead of exponential back-off.
 
 ## New behavior
 
@@ -27,11 +27,11 @@ This is a [behavioral change](../../categories.md#behavioral-change).
 
 ## Reason for change
 
-Exponential retry back-off has been the default behavior for nearly 4 years since .NET SDK 6.0.300. The feature was introduced to help when restores would overwhelm servers that couldn't handle all package requests, and exponential retry allowed these requests to succeed. Since there has been no feedback indicating issues with this approach, the fallback option has outlived its utility.
+Exponential retry back-off has been the default behavior for nearly 4 years since .NET SDK 6.0.300. The feature was introduced to help when restores overwhelmed servers that couldn't handle all package requests, and exponential retry allowed these requests to succeed. Since there has been no feedback indicating issues with this approach, the fallback option has outlived its utility.
 
 ## Recommended action
 
-No action is required. The exponential retry behavior is more resilient and should provide better performance in most scenarios.
+No action is required.
 
 ## Affected APIs
 

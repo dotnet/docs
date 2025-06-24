@@ -8,7 +8,7 @@ ms.custom: https://github.com/dotnet/docs/issues/46386
 
 # PackageReference without a version will raise an error
 
-Starting in .NET 10, NuGet raises a [`NU1015` error](/nuget/reference/errors-and-warnings/nu1015) when a `PackageReference` item doesn't have a version specified, instead of the previous [`NU1604` warning](/nuget/reference/errors-and-warnings/nu1604).
+Starting in .NET 10, NuGet raises a `NU1015` error when a `PackageReference` item doesn't have a version specified, instead of the previous [`NU1604` warning](/nuget/reference/errors-and-warnings/nu1604).
 
 There's no change when using Central Package Management, since by design the PackageReference XML should not have a version in that scenario.
 

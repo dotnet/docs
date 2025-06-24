@@ -16,11 +16,11 @@ The default values of <xref:System.Net.Security.SslClientAuthenticationOptions.C
 
 ## Previous behavior
 
-Previously, the default value of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> default values was `NoCheck`, meaning certificate revocation lists weren't checked by default.
+Previously, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> were <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck?displayProperty=nameWithType>, meaning revocation status of peer certificates wasn't checked by default.
 
 ## New behavior
 
-Starting in .NET 10, the default value of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> is `Online`, meaning certificate revocation lists are checked online by default.
+Starting in .NET 10, the default values of <xref:System.Net.Security.SslClientAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> and <xref:System.Net.Security.SslServerAuthenticationOptions.CertificateRevocationCheckMode?displayProperty=nameWithType> are <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.Online?displayProperty=nameWithType>, meaning revocation status of peer certificates are checked online by default.
 
 ## Type of breaking change
 
@@ -48,7 +48,7 @@ var serverOptions = new SslServerAuthenticationOptions
 };
 ```
 
-In situations where you can't modify the code, you can enable the previous behavior with one of the following settings:
+In situations where you can't modify the code, you can restore the previous behavior with one of the following settings:
 
 - Set `System.Net.Security.NoRevocationCheckByDefault` AppContext switch to `true`.
 - Set `DOTNET_SYSTEM_NET_SECURITY_NOREVOCATIONCHECKBYDEFAULT` environment variable to `true`.

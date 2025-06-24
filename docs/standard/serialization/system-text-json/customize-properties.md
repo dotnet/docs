@@ -29,7 +29,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 > The [web default](configure-options.md#web-defaults-for-jsonserializeroptions) naming policy is camel case.
 
 > [!TIP]
-> You can use AI assistance to [create an object with custom serialization properties](#use-AI-to-customize-how-property-names-are-serialized).
+> You can use AI assistance to [create an object with custom serialization properties](#use-ai-to-customize-how-property-names-are-serialized).
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](converters-how-to.md).
 

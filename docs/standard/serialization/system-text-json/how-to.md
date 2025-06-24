@@ -49,7 +49,7 @@ The preceding examples use type inference for the type being serialized. An over
 :::code language="csharp" source="snippets/how-to/csharp/SerializeWithGenericParameter.cs" highlight="23":::
 :::code language="vb" source="snippets/how-to/vb/RoundtripToString.vb" id="SerializeWithGenericParameter":::
 
-You can also use GitHub Copilot to generate serialization code for you. For instructions, see the [Use GitHub Copilot](#use-github-copilot-to-serialize-to-json) section in this article.
+You can also use AI to generate serialization code for you. For instructions, see the [Use AI](#use-ai-to-serialize-to-json) section in this article.
 
 ## Serialization behavior
 

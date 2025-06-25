@@ -57,7 +57,7 @@ The following example calls the <xref:System.Convert.ToInt32%28System.String%29?
 
 ## Use AI to convert a string to a number
 
-You can use AI tools, such as GitHub Copilot to generate C# code to convert a string to a number. You can customize the prompt to use a string per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate C# code to convert a string to a number. You can customize the prompt to use a string per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 

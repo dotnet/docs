@@ -245,7 +245,7 @@ By default, properties are serialized in the order in which they're defined in t
 
 ## Use AI to customize how property names are serialized
 
-You can use AI tools, such as GitHub Copilot to apply patterns of changes to how your code serializes.
+You can use AI tools, such as GitHub Copilot, to apply patterns of changes to how your code serializes.
 
 Suppose your class declaration has properties that follow `PascalCasing`, and the JSON standard for your project is `snake_casing`. You can use AI to add the necessary [[JsonPropertyName]](xref:System.Text.Json.Serialization.JsonPropertyNameAttribute) attributes to every property in your class. You can use Copilot to make these changes with a chat prompt like this:
 

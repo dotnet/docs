@@ -78,7 +78,7 @@ The untrimmed entries have extra whitespace before the numerals.
 
 ## Use AI to split a string
 
-You can use AI tools, such as GitHub Copilot to generate code to split strings using `String.Split` in C#. You can customize the prompt to use strings and delimiters per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code to split strings using `String.Split` in C#. You can customize the prompt to use strings and delimiters per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 

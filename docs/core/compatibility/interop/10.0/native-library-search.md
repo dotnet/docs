@@ -9,7 +9,7 @@ ms.custom: https://github.com/dotnet/docs/issues/46356
 
 Previously, in [single-file .NET applications](../../../deploying/single-file/overview.md), the directory of the single-file executable was added to the `NATIVE_DLL_SEARCH_DIRECTORIES` property during startup. Consequently, .NET always [probed](../../../dependency-loading/default-probing.md#unmanaged-native-library-probing) the application directory when unmanaged libraries were loaded. On non-Windows with [NativeAOT](../../../deploying/native-aot/index.md), the `rpath` was set to the application directory by default, such that it also always looked for native libraries in the application directory.
 
-The application directory is no longer added to `NATIVE_DLL_SEARCH_DIRECTORIES` in single-file apps, and the `rpath` setting has been removed in NativeAOT. In both cases, <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> (included in the default behaviour for p/invokes) means the application directory - specifying that flag or leaving the default will look in the application directory. Specifying flags without that value will no longer look in the application directory.
+The application directory is no longer added to `NATIVE_DLL_SEARCH_DIRECTORIES` in single-file apps, and the `rpath` setting has been removed in NativeAOT. In both cases, <xref:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory?displayProperty=nameWithType> (included in the default behaviour for P/Invokes) means the application directory. If you specify that value or leave the default, .NET looks in the application directory. If you specify flags without that value, .NET no longer looks in the application directory.
 
 ## Version introduced
 

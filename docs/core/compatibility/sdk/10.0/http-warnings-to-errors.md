@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - HTTP warnings promoted to errors in dotnet package list and dotnet package search"
-description: "Learn about the breaking change in .NET 10 Preview 4 where HTTP warnings are promoted to errors in dotnet package operations."
+description: "Learn about the breaking change in .NET 10 where HTTP warnings are promoted to errors in dotnet package operations."
 ms.date: 5/9/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45985

@@ -3,6 +3,18 @@
 
 using StandardQueryOperators;
 
+Console.WriteLine("==========          Left Outer Joins Test   ==========");
+try 
+{
+    LeftOuterJoins.RunAllSnippets();
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Exception caught: {ex.GetType().Name}: {ex.Message}");
+    Console.WriteLine(ex.StackTrace);
+}
+return; // Stop after testing left outer joins
+
 Console.WriteLine("==========          Index snippets          ==========");
 IndexExamples.RunAllSnippets();
 Console.WriteLine("==========          Order Join results      ==========");

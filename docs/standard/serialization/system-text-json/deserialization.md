@@ -89,7 +89,7 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 
 ## Use AI to deserialize JSON
 
-You can use AI tools, such as GitHub Copilot to generate code that uses `System.Text.Json` to deserialize from JSON. You can customize the prompt to use a JSON string with property names and values that suit your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to deserialize from JSON. You can customize the prompt to use a JSON string with property names and values that suit your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 

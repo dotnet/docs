@@ -2,6 +2,7 @@
 title: What's new in C# 11
 description: Get an overview of the new features added in C# 11.
 ms.date: 03/15/2024
+ms.update-cycle: 365-days
 ms.custom: UpdateFrequency1
 ms.topic: whats-new
 ---

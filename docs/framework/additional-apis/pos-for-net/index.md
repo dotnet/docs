@@ -2,6 +2,7 @@
 title: POS for .NET v1.14.1 SDK Documentation
 description: POS for .NET v1.14.1 SDK Documentation (POS for .NET v1.14 SDK Documentation)
 ms.date: 04/21/2017
+ms.update-cycle: 1825-days
 ms.topic: how-to
 ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---

@@ -909,6 +909,12 @@
                 "docs/ai/**/**.md": "ce-skilling-ai-copilot",
                 "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
             },
+            "ms.update-cycle": {
+                "docs/ai/**/**.md": "180-days",
+                "docs/ai/**/**.yml": "180-days",
+                "docs/framework/**/*.md": "1825-days",
+                "docs/visual-basic/**/*.md": "1825-days"
+            },
             "no-loc": {
                 "docs/orleans/**/**.md": [
                     "Grain",

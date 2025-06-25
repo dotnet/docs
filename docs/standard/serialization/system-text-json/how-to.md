@@ -110,7 +110,7 @@ Starting in .NET 9, you can also customize the indent character and size using <
 
 ## Use AI to serialize to JSON
 
-You can use AI tools, such as GitHub Copilot to generate code that uses `System.Text.Json` to serialize to JSON. You can customize the prompt to use object fields that suit your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code that uses `System.Text.Json` to serialize to JSON. You can customize the prompt to use object fields that suit your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 

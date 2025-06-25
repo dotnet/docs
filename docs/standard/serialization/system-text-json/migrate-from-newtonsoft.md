@@ -632,7 +632,7 @@ Newtonsoft parses `NaN`, `Infinity`, and `-Infinity` JSON string tokens. With Sy
 
 ## Use AI to migrate
 
-You can use AI tools, such as GitHub Copilot to migrate your code from `Newtonsoft.Json` to `System.Text.Json` within your IDE. You can customize the prompt per your requirements.
+You can use AI tools, such as GitHub Copilot, to migrate your code from `Newtonsoft.Json` to `System.Text.Json` within your IDE. You can customize the prompt per your requirements.
 
 **Example prompt for Copilot Chat**
 

@@ -72,7 +72,7 @@ This option can cause more allocations than other methods for concatenating coll
 
 ## Use AI to concatenate strings
 
-You can use AI tools, such as GitHub Copilot to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate C# code to concatenate multiple strings. You can customize the prompt to specify strings and the method to use per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 

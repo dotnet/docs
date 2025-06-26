@@ -33,7 +33,7 @@ Manages a list of assemblies that are loaded by the common language runtime (CLR
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

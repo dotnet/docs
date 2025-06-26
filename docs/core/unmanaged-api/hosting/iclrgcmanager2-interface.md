@@ -34,7 +34,7 @@ Provides methods that allow a host to interact with the common language runtime'
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

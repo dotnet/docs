@@ -37,7 +37,7 @@ Provides methods that allow the host to configure custom stack dumps for error r
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

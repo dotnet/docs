@@ -84,7 +84,7 @@ Values that are stored in the *heap* (that is, `IsHeapType == true`) can be read
 
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

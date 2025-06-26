@@ -60,7 +60,7 @@ HRESULT SetTimeout (
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

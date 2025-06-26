@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CLRCreateInstance Function"
-title: "CLRCreateInstance Function"
+description: "Learn more about: CLRCreateInstance Function for debugging"
+title: "CLRCreateInstance Function (debugging)"
 ms.date: "03/25/2022"
 api_name:
   - "CLRCreateInstance"
@@ -19,7 +19,7 @@ helpviewer_keywords:
 topic_type:
   - "apiref"
 ---
-# CLRCreateInstance function
+# CLRCreateInstance function (debugging)
 
 Provides the [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md) interface.
 

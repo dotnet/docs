@@ -52,7 +52,7 @@ HRESULT AddFile(
 
 ## Return Value
 
- Returns S_OK if the method succeeds.
+ Returns `S_OK` if the method succeeds.
 
 ## Requirements
 

@@ -18,9 +18,9 @@ topic_type:
 ---
 # CreateDebuggingInterfaceFromVersion Function (.NET Framework)
 
-Creates an [ICorDebug](../../../framework/debugging/icordebug-interface.md) object based on the specified version information.
+Creates an [ICorDebug](../debugging/icordebug-interface.md) object based on the specified version information.
 
- This function is obsolete in the .NET Framework 4. Instead, to get an interface for the common language runtime (CLR) 2.0, use the [ICLRRuntimeInfo::GetInterface](iclrruntimeinfo-getinterface-method.md) method and specify the class identifier CLSID_CLRDebuggingLegacy and the interface identifier IID_ICorDebug. To get an interface for CLR 4 or later, call the [CLRCreateInstance](clrcreateinstance-function.md) function and specify the class identifier CLSID_CLRDebugging and the interface identifier IID_ICLRDebugging.
+ This function is obsolete starting in .NET Framework 4. Instead, to get an interface for the common language runtime (CLR) 2.0, use the [ICLRRuntimeInfo::GetInterface](iclrruntimeinfo-getinterface-method.md) method and specify the class identifier `CLSID_CLRDebuggingLegacy` and the interface identifier `IID_ICorDebug`. To get an interface for CLR 4 or later, call the [CLRCreateInstance](clrcreateinstance-function.md) function and specify the class identifier `CLSID_CLRDebugging` and the interface identifier `IID_ICLRDebugging`.
 
 ## Syntax
 

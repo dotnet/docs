@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: CLRCreateInstance Function (.NET Framework)"
-title: "CLRCreateInstance Function for .NET Framework"
+description: "Learn more about: CLRCreateInstance Function (hosting)"
+title: "CLRCreateInstance Function for hosting"
 ms.date: "03/30/2017"
 api_name:
   - "CLRCreateInstance"
@@ -19,7 +19,7 @@ helpviewer_keywords:
 topic_type:
   - "apiref"
 ---
-# CLRCreateInstance Function (.NET Framework)
+# CLRCreateInstance Function (hosting)
 
 Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md).
 
@@ -48,20 +48,20 @@ HRESULT CLRCreateInstance(
 
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.
 
-|HRESULT|Description|
-|-------------|-----------------|
-|S_OK|The method completed successfully.|
-|E_POINTER|`ppInterface` is null.|
+| HRESULT   | Description                        |
+|-----------|------------------------------------|
+| S_OK      | The method completed successfully. |
+| E_POINTER | `ppInterface` is null.             |
 
 ## Remarks
 
  The following table shows the supported combinations for `clsid` and `riid`.
 
-|`clsid`|`riid`|
-|--------------|------------|
-|CLSID_CLRMetaHost|IID_ICLRMetaHost|
-|CLSID_CLRMetaHostPolicy|IID_ICLRMetaHostPolicy|
-|CLSID_CLRDebugging|IID_ICLRDebugging|
+| `clsid`                 | `riid`                 |
+|-------------------------|------------------------|
+| CLSID_CLRMetaHost       | IID_ICLRMetaHost       |
+| CLSID_CLRMetaHostPolicy | IID_ICLRMetaHostPolicy |
+| CLSID_CLRDebugging      | IID_ICLRDebugging      |
 
  The following code shows how to use `CLRCreateInstance` to get all three interfaces:
 

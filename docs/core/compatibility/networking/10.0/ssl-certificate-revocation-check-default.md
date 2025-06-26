@@ -50,6 +50,7 @@ var serverOptions = new SslServerAuthenticationOptions
 
 > [!NOTE]
 > Due to a bug on the OSX platform, you might encounter certificate validation failures with <xref:System.Security.Cryptography.X509Certificates.X509ChainStatusFlags.RevocationStatusUnknown?displayProperty=nameWithType> in scenarios where the certificate doesn't support revocation checking via OCSP. This is a bug in the underlying platform crypto implementation. To avoid failing the certificate validation if revocation status can't be retrieved, either disable certificate revocation checking as per the previous instructions, or set <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy> with <xref:System.Security.Cryptography.X509Certificates.X509ChainPolicy.VerificationFlags?displayProperty=nameWithType> set to `X509VerificationFlags.IgnoreEndRevocationUnknown | X509VerificationFlags.IgnoreCertificateAuthorityRevocationUnknown`.
+
 In situations where you can't modify the code, you can restore the previous behavior with one of the following settings:
 
 - Set `System.Net.Security.NoRevocationCheckByDefault` AppContext switch to `true`.

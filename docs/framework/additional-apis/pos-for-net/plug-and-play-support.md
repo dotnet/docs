@@ -2,7 +2,6 @@
 title: Plug and Play Support
 description: Plug and Play Support (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
-ms.update-cycle: 1825-days
 ms.topic: how-to
 ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---

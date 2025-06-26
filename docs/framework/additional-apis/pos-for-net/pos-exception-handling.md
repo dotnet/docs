@@ -2,7 +2,6 @@
 title: POS Exception Handling
 description: POS Exception Handling (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
-ms.update-cycle: 1825-days
 ms.topic: how-to
 ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---

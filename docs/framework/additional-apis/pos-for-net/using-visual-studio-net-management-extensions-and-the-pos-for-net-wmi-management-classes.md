@@ -2,7 +2,6 @@
 title: Using Visual Studio .NET Management Extensions and the POS for .NET WMI Management Classes
 description: Using Visual Studio .NET Management Extensions and the POS for .NET WMI Management Classes (POS for .NET v1.14 SDK Documentation)
 ms.date: 03/03/2014
-ms.update-cycle: 1825-days
 ms.topic: how-to
 ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---

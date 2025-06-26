@@ -2,7 +2,6 @@
 title: POS for .NET Class Tree
 description: POS for .NET Class Tree (POS for .NET v1.14 SDK Documentation)
 ms.date: 02/27/2008
-ms.update-cycle: 1825-days
 ms.topic: how-to
 ms.custom: "pos-restored-from-archive,UpdateFrequency5"
 ---

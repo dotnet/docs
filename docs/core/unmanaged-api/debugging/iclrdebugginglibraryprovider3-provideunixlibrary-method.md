@@ -15,6 +15,7 @@ f1_keywords:
 helpviewer_keywords:
   - "ProvideUnixLibrary method [.NET Core debugging]"
   - "ICLRDebuggingLibraryProvider3::ProvideUnixLibrary method [.NET Core debugging]"
+ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
 topic_type:
   - "apiref"
 ---

@@ -14,6 +14,7 @@ f1_keywords:
   - "LIBRARY_PROVIDER_INDEX_TYPE"
 helpviewer_keywords:
   - "LIBRARY_PROVIDER_INDEX_TYPE enumeration [.NET Core debugging]"
+ms.assetid: a6ac2531-ddfe-46fd-88fe-8b1eabe0b255
 topic_type:
   - "apiref"
 ---

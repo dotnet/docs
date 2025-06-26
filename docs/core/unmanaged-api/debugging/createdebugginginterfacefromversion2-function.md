@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "CreateDebuggingInterfaceFromVersion2 function"
   - "debugging API [.NET Core]"
   - ".NET Core, debugging"
+ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
 ---
 # CreateDebuggingInterfaceFromVersion2 function
 

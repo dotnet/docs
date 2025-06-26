@@ -117,7 +117,7 @@ If fragmentation of virtual memory is preventing the garbage collector from addi
 - Holding too many references to COM objects when interoperating with unmanaged code.
 - Creation of large transient objects, which causes the large object heap to allocate and free heap segments frequently.
 
-  When hosting the CLR, an application can request that the garbage collector retain its segments. This reduces the frequency of segment allocations. This is accomplished by using the STARTUP_HOARD_GC_VM flag in the [STARTUP_FLAGS Enumeration](../../core/unmanaged-api/hosting/startup-flags-enumeration.md).
+  When hosting the CLR, an application can request that the garbage collector retain its segments. This reduces the frequency of segment allocations. This is accomplished by using the STARTUP_HOARD_GC_VM flag in the [STARTUP_FLAGS Enumeration](../../framework/unmanaged-api/hosting/startup-flags-enumeration.md).
 
 |Performance checks|
 |------------------------|

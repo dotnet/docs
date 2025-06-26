@@ -124,7 +124,7 @@ You can retrieve a number of property values that provide information about a th
 - A thread ID. The value of the read-only <xref:System.Threading.Thread.ManagedThreadId> property is assigned by the runtime and uniquely identifies a thread within its process.
 
     > [!NOTE]
-    > An operating-system [ThreadId](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadid) has no fixed relationship to a managed thread, because an unmanaged host can control the relationship between managed and unmanaged threads. Specifically, a sophisticated host can use the [CLR Hosting API](../../core/unmanaged-api/hosting/index.md) to schedule many managed threads against the same operating system thread, or to move a managed thread between different operating system threads.
+    > An operating-system [ThreadId](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadid) has no fixed relationship to a managed thread, because an unmanaged host can control the relationship between managed and unmanaged threads. Specifically, a sophisticated host can use the [CLR Hosting API](../../framework/unmanaged-api/hosting/index.md) to schedule many managed threads against the same operating system thread, or to move a managed thread between different operating system threads.
 
 - The thread's current state. For the duration of its existence, a thread is always in one or more of the states defined by the <xref:System.Threading.ThreadState> property.
 

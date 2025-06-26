@@ -25,7 +25,7 @@ As soon as ARM is enabled, it begins collecting data on all application domains 
 
 - You can enable ARM at CLR startup by adding the [\<appDomainResourceMonitoring>](../../framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md) element to the configuration file, and setting the `enabled` attribute to `true`. A value of `false` (the default) means only that ARM is not enabled at startup; you can activate it later by using one of the other activation mechanisms.
 
-- The host can enable ARM by requesting the [ICLRAppDomainResourceMonitor](../../core/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) hosting interface. Once this interface is successfully obtained, ARM is enabled.
+- The host can enable ARM by requesting the [ICLRAppDomainResourceMonitor](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) hosting interface. Once this interface is successfully obtained, ARM is enabled.
 
 - Managed code can enable ARM by setting the static (`Shared` in Visual Basic) <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> property to `true`. As soon as the property is set, ARM is enabled.
 
@@ -39,7 +39,7 @@ ARM provides the total processor time that is used by an application domain and 
 
   - Managed API: <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=nameWithType> property.
 
-  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentCpuTime](../../core/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentcputime-method.md) method.
+  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentCpuTime](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentcputime-method.md) method.
 
   - ETW events: `ThreadCreated`, `ThreadAppDomainEnter`, and `ThreadTerminated` events. For information about providers and keywords, see "AppDomain Resource Monitoring Events" in [CLR ETW Events](../../framework/performance/clr-etw-events.md).
 
@@ -47,7 +47,7 @@ ARM provides the total processor time that is used by an application domain and 
 
   - Managed API: <xref:System.AppDomain.MonitoringTotalAllocatedMemorySize%2A?displayProperty=nameWithType> property.
 
-  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentAllocated](../../core/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentallocated-method.md) method.
+  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentAllocated](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentallocated-method.md) method.
 
   - ETW events: `AppDomainMemAllocated` event, `Allocated` field.
 
@@ -55,7 +55,7 @@ ARM provides the total processor time that is used by an application domain and 
 
   - Managed API: <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=nameWithType> property.
 
-  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentSurvived](../../core/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentsurvived-method.md) method, `pAppDomainBytesSurvived` parameter.
+  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentSurvived](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentsurvived-method.md) method, `pAppDomainBytesSurvived` parameter.
 
   - ETW events: `AppDomainMemSurvived` event, `Survived` field.
 
@@ -63,7 +63,7 @@ ARM provides the total processor time that is used by an application domain and 
 
   - Managed API: <xref:System.AppDomain.MonitoringSurvivedProcessMemorySize%2A?displayProperty=nameWithType> property.
 
-  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentSurvived](../../core/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentsurvived-method.md) method, `pTotalBytesSurvived` parameter.
+  - Hosting API: [ICLRAppDomainResourceMonitor::GetCurrentSurvived](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-getcurrentsurvived-method.md) method, `pTotalBytesSurvived` parameter.
 
   - ETW events: `AppDomainMemSurvived` event, `ProcessSurvived` field.
 
@@ -79,11 +79,11 @@ Alternatively, you can call the <xref:System.GC.CollectionCount%2A?displayProper
 
 #### Hosting API
 
-If you use the unmanaged hosting API, your host must pass the CLR an implementation of the [IHostGCManager](../../core/unmanaged-api/hosting/ihostgcmanager-interface.md) interface. The CLR calls the [IHostGCManager::SuspensionEnding](../../core/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) method when it resumes execution of threads that have been suspended while a collection occurs. The CLR passes the generation of the completed collection as a parameter of the method, so the host can determine whether the collection was full or partial. Your implementation of the [IHostGCManager::SuspensionEnding](../../core/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) method can query for survived memory, to ensure that the counts are retrieved as soon as they are updated.
+If you use the unmanaged hosting API, your host must pass the CLR an implementation of the [IHostGCManager](../../framework/unmanaged-api/hosting/ihostgcmanager-interface.md) interface. The CLR calls the [IHostGCManager::SuspensionEnding](../../framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) method when it resumes execution of threads that have been suspended while a collection occurs. The CLR passes the generation of the completed collection as a parameter of the method, so the host can determine whether the collection was full or partial. Your implementation of the [IHostGCManager::SuspensionEnding](../../framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md) method can query for survived memory, to ensure that the counts are retrieved as soon as they are updated.
 
 ## See also
 
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
-- [ICLRAppDomainResourceMonitor Interface](../../core/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
+- [ICLRAppDomainResourceMonitor Interface](../../framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
 - [\<appDomainResourceMonitoring>](../../framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md)
 - [CLR ETW Events](../../framework/performance/clr-etw-events.md)

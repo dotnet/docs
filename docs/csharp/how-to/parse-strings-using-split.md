@@ -16,7 +16,7 @@ The <xref:System.String.Split%2A?displayProperty=nameWithType> method creates an
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
 > [!TIP]
-> You can use AI assistance to [split a string with GitHub Copilot](#use-github-copilot-to-split-a-string).
+> You can use AI assistance to [split a string](#use-ai-to-split-a-string).
 
 ## Split a string into words
 
@@ -76,9 +76,9 @@ The following example shows the effect of trimming entries:
 
 The untrimmed entries have extra whitespace before the numerals.
 
-## Use GitHub Copilot to split a string
+## Use AI to split a string
 
-You can use GitHub Copilot in your IDE to generate code to split strings using `String.Split` in C#. You can customize the prompt to use strings and delimiters per your requirements.
+You can use AI tools, such as GitHub Copilot, to generate code to split strings using `String.Split` in C#. You can customize the prompt to use strings and delimiters per your requirements.
 
 The following text shows an example prompt for Copilot Chat:
 
@@ -90,10 +90,10 @@ Provide example output.
 
 GitHub Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://aka.ms/copilot-general-use-faqs).
 
-Learn more about [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states) and [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview).
-
 ## See also
 
 - [Extract elements from a string](../../standard/base-types/divide-up-strings.md)
 - [Strings](../programming-guide/strings/index.md)
 - [.NET regular expressions](../../standard/base-types/regular-expressions.md)
+- [GitHub Copilot in Visual Studio](/visualstudio/ide/visual-studio-github-copilot-install-and-states)
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)

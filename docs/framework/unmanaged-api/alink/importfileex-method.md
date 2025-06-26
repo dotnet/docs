@@ -46,13 +46,13 @@ HRESULT ImportFileEx(
  If TRUE, ImportTypes is used, otherwise importing must be performed manually.
 
  `dwOpenFlags`
- Flags to be passed along to [OpenScope Method](../../../core/unmanaged-apis/metadata/imetadatadispenser-openscope-method.md).
+ Flags to be passed along to [OpenScope Method](../../../core/unmanaged-api/metadata/imetadatadispenser-openscope-method.md).
 
  `pImportToken`
  Receives ID of the file being imported.
 
  `ppAssemblyScope`
- Receives assembly import scope [IMetaDataAssemblyImport Interface](../../../core/unmanaged-apis/metadata/imetadataassemblyimport-interface.md) interface. Is set to NULL if file is not an assembly.
+ Receives assembly import scope [IMetaDataAssemblyImport Interface](../../../core/unmanaged-api/metadata/imetadataassemblyimport-interface.md) interface. Is set to NULL if file is not an assembly.
 
  `pdwCountOfScopes`
  Receives count of imported files and/or scopes.

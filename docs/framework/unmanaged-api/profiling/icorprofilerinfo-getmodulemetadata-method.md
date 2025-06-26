@@ -37,10 +37,10 @@ HRESULT GetModuleMetaData(
  [in] The ID of the module to which the interface instance will be mapped.
 
  `dwOpenFlags`
- [in] A value of the [CorOpenFlags](../../../core/unmanaged-apis/metadata/coropenflags-enumeration.md) enumeration that specifies the mode for opening manifest files. Only the `ofRead`, `ofWrite` and `ofNoTransform` bits are valid.
+ [in] A value of the [CorOpenFlags](../../../core/unmanaged-api/metadata/coropenflags-enumeration.md) enumeration that specifies the mode for opening manifest files. Only the `ofRead`, `ofWrite` and `ofNoTransform` bits are valid.
 
  `riid`
- [in] The reference ID (GUID) of the metadata interface whose instance will be retrieved. See [Metadata Interfaces](../../../core/unmanaged-apis/metadata/metadata-interfaces.md) for a list of the interfaces.
+ [in] The reference ID (GUID) of the metadata interface whose instance will be retrieved. See [Metadata Interfaces](../../../core/unmanaged-api/metadata/metadata-interfaces.md) for a list of the interfaces.
 
  `ppOut`
  [out] A pointer to the address of the metadata interface instance.

@@ -48,7 +48,7 @@ HRESULT ImportFile(
  Pointer to token where a unique file ID will be stored. The file can be an assembly or a file.
 
  `ppAssemblyScope`
- Receives pointer to [IMetaDataAssemblyImport Interface](../../../core/unmanaged-apis/metadata/imetadataassemblyimport-interface.md). Can be NULL if the file is not an assembly.
+ Receives pointer to [IMetaDataAssemblyImport Interface](../../../core/unmanaged-api/metadata/imetadataassemblyimport-interface.md). Can be NULL if the file is not an assembly.
 
  `pdwCountOfScopes`
  Pointer to the count of files and/or scopes that have been imported.

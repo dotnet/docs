@@ -41,7 +41,7 @@ HRESULT AddImport(
  Unique ID, retrieved from [ImportFile Method](importfile-method.md), of file to be imported.
 
  `dwFlags`
- COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../core/unmanaged-apis/metadata/imetadataassemblyemit-definefile-method.md).
+ COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../core/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md).
 
  `pFileToken`
  Pointer to token that receives the ID for the resulting file.

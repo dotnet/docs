@@ -42,10 +42,10 @@ HRESULT AddFile2(
  Name of the file to be added.
 
  `dwFlags`
- COM+ `FileDef` flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../core/unmanaged-apis/metadata/imetadataassemblyemit-definefile-method.md).
+ COM+ `FileDef` flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../core/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md).
 
  `pEmitter`
- Interface to [IMetaDataEmit2 Interface](../../../core/unmanaged-apis/metadata/imetadataemit2-interface.md) interface.
+ Interface to [IMetaDataEmit2 Interface](../../../core/unmanaged-api/metadata/imetadataemit2-interface.md) interface.
 
  `pFileToken`
  Receives ID for the file being added.

@@ -48,7 +48,7 @@ HRESULT ExportType(
  Fully qualified type name to be made exportable.
 
  `dwFlags`
- `ComType` flags such as `tdPublic` or `tdNested`. This parameter may be passed to [DefineExportedType Method](../../../core/unmanaged-apis/metadata/imetadataassemblyemit-defineexportedtype-method.md).
+ `ComType` flags such as `tdPublic` or `tdNested`. This parameter may be passed to [DefineExportedType Method](../../../core/unmanaged-api/metadata/imetadataassemblyemit-defineexportedtype-method.md).
 
  `pType`
  Receives token for exported type.

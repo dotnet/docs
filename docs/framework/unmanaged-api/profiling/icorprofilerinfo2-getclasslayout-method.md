@@ -38,7 +38,7 @@ HRESULT GetClassLayout(
  [in] The ID of the class for which the layout will be retrieved.
 
  `rFieldOffset`
- [in, out] An array of [COR_FIELD_OFFSET](../../../core/unmanaged-apis/metadata/cor-field-offset-structure.md) structures, each of which contains the tokens and offsets of the class's fields.
+ [in, out] An array of [COR_FIELD_OFFSET](../../../core/unmanaged-api/metadata/cor-field-offset-structure.md) structures, each of which contains the tokens and offsets of the class's fields.
 
  `cFieldOffset`
  [in] The size of the `rFieldOffset` array.

@@ -54,7 +54,7 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
 
 ## Remarks
 
-Certain methods like IL Stubs or LCG do not have associated metadata that can be retrieved using the [IMetaDataImport](../../../core/unmanaged-apis/metadata/imetadataimport-interface.md) and [IMetaDataImport2](../../../core/unmanaged-apis/metadata/imetadataimport2-interface.md) APIs. Such methods can be encountered by profilers through instruction pointers or by listening to [ICorProfilerCallback8::DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md).
+Certain methods like IL Stubs or LCG do not have associated metadata that can be retrieved using the [IMetaDataImport](../../../core/unmanaged-api/metadata/imetadataimport-interface.md) and [IMetaDataImport2](../../../core/unmanaged-api/metadata/imetadataimport2-interface.md) APIs. Such methods can be encountered by profilers through instruction pointers or by listening to [ICorProfilerCallback8::DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md).
 
 This API can be used to retrieve information about dynamic methods, including a friendly name, if available.
 

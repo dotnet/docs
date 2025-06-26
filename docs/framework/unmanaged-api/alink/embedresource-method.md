@@ -48,7 +48,7 @@ HRESULT EmbedResource(
  Offset of resource from RVA.
 
  `dwFlags`
- Accessibility flags such as `mrPublic` and `mrPrivate`. These flags may be passed to [DefineExportedType Method](../../../core/unmanaged-apis/metadata/imetadataassemblyemit-defineexportedtype-method.md).
+ Accessibility flags such as `mrPublic` and `mrPrivate`. These flags may be passed to [DefineExportedType Method](../../../core/unmanaged-api/metadata/imetadataassemblyemit-defineexportedtype-method.md).
 
 ## Return Value
 

@@ -43,7 +43,7 @@ HRESULT GetScope2(
  Zero-based scope to import.
 
  `ppImportScope`
- Receives pointer to [IMetaDataImport2 Interface](../../../core/unmanaged-apis/metadata/imetadataimport2-interface.md) interface for indicated scope.
+ Receives pointer to [IMetaDataImport2 Interface](../../../core/unmanaged-api/metadata/imetadataimport2-interface.md) interface for indicated scope.
 
 ## Return Value
 

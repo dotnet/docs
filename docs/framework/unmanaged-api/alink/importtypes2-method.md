@@ -48,7 +48,7 @@ HRESULT ImportTypes2(
  Receives enumerator handle for the types in the given scope.
 
  `ppImportScope`
- Optionally receives [IMetaDataImport2 Interface](../../../core/unmanaged-apis/metadata/imetadataimport2-interface.md) interface.
+ Optionally receives [IMetaDataImport2 Interface](../../../core/unmanaged-api/metadata/imetadataimport2-interface.md) interface.
 
  `pdwCountOfTypes`
  Optionally receives count of types in the specified scope.

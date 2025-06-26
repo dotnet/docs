@@ -38,7 +38,7 @@ HRESULT EnumerateTypeParameters (
 
 ## Remarks
 
- Use the [IMetaDataImport2::EnumGenericParams](../../../core/unmanaged-apis/metadata/imetadataimport2-enumgenericparams-method.md) method to determine how many class type parameters and method type parameters this list contains.
+ Use the [IMetaDataImport2::EnumGenericParams](../../../core/unmanaged-api/metadata/imetadataimport2-enumgenericparams-method.md) method to determine how many class type parameters and method type parameters this list contains.
 
  The type parameters are not always available.
 

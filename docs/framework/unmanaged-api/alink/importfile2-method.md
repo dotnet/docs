@@ -43,7 +43,7 @@ HRESULT ImportFile2(
  Optional output file name that can be used to rename the file as it is linked into the assembly.
 
  `pAssemblyScopeIn`
- Optional scope [IMetaDataAssemblyImport Interface](../../../core/unmanaged-apis/metadata/imetadataassemblyimport-interface.md) interface.
+ Optional scope [IMetaDataAssemblyImport Interface](../../../core/unmanaged-api/metadata/imetadataassemblyimport-interface.md) interface.
 
  `fSmartImport`
  If TRUE, ImportTypes is used, otherwise importing must be performed manually.
@@ -52,7 +52,7 @@ HRESULT ImportFile2(
  Receives the ID for the file or assembly.
 
  `ppAssemblyScope`
- Receives the [IMetaDataAssemblyImport Interface](../../../core/unmanaged-apis/metadata/imetadataassemblyimport-interface.md) interface. NULL if the file is not an assembly.
+ Receives the [IMetaDataAssemblyImport Interface](../../../core/unmanaged-api/metadata/imetadataassemblyimport-interface.md) interface. NULL if the file is not an assembly.
 
  `pdwCountOfScopes`
  Receives the found of files and/or scopes imported.

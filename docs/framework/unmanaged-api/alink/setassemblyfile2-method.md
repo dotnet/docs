@@ -37,10 +37,10 @@ HRESULT SetAssemblyFile2(
  Name of manifest file.
 
  `pEmitter`
- [IMetaDataEmit2 Interface](../../../core/unmanaged-apis/metadata/imetadataemit2-interface.md) interface for this file.
+ [IMetaDataEmit2 Interface](../../../core/unmanaged-api/metadata/imetadataemit2-interface.md) interface for this file.
 
  `afFlags`
- Options represented by [AssemblyFlags Enumeration](../../../core/unmanaged-apis/metadata/assemblyflags-enumeration.md).
+ Options represented by [AssemblyFlags Enumeration](../../../core/unmanaged-api/metadata/assemblyflags-enumeration.md).
 
  `pAssemblyID`
  Receives unique ID for the assembly being constructed.

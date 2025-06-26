@@ -58,4 +58,4 @@ HRESULT FindExportedTypeByName (
 ## See also
 
 - [IMetaDataAssemblyImport Interface](imetadataassemblyimport-interface.md)
-- [How the Runtime Locates Assemblies](../../deployment/how-the-runtime-locates-assemblies.md)
+- [How the Runtime Locates Assemblies](../../../framework/deployment/how-the-runtime-locates-assemblies.md)

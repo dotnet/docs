@@ -53,7 +53,7 @@ HRESULT ExportNestedType(
  Fully qualified type name to export.
 
  `dwFlags`
- `ComType` flags such as `tdPublic` or `tdNested`. This value may be passed to [DefineExportedType Method](../../../core/unmanaged-apis/metadata/imetadataassemblyemit-defineexportedtype-method.md).
+ `ComType` flags such as `tdPublic` or `tdNested`. This value may be passed to [DefineExportedType Method](../../../core/unmanaged-api/metadata/imetadataassemblyemit-defineexportedtype-method.md).
 
  `pType`
  Receives token for exported type.

@@ -46,4 +46,4 @@ HRESULT GetToken (
 
 ## See also
 
-- [Metadata Interfaces](../../../core/unmanaged-apis/metadata/metadata-interfaces.md)
+- [Metadata Interfaces](../../../core/unmanaged-api/metadata/metadata-interfaces.md)

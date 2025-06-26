@@ -37,23 +37,23 @@ HRESULT ApplyMetaData(
 
  `ApplyMetaData` only supports adding the following types of metadata:
 
-- `AssemblyRef` records, which you create by calling the [IMetaDataAssemblyEmit::DefineAssemblyRef](../../../core/unmanaged-apis/metadata/imetadataassemblyemit-defineassemblyref-method.md). method.
+- `AssemblyRef` records, which you create by calling the [IMetaDataAssemblyEmit::DefineAssemblyRef](../../../core/unmanaged-api/metadata/imetadataassemblyemit-defineassemblyref-method.md). method.
 
-- `TypeRef` records, which you create by calling the [IMetaDataEmit::DefineTypeRefByName](../../../core/unmanaged-apis/metadata/imetadataemit-definetyperefbyname-method.md) method.
+- `TypeRef` records, which you create by calling the [IMetaDataEmit::DefineTypeRefByName](../../../core/unmanaged-api/metadata/imetadataemit-definetyperefbyname-method.md) method.
 
-- `TypeSpec` records, which you create by calling the [IMetaDataEmit::GetTokenFromTypeSpec](../../../core/unmanaged-apis/metadata/imetadataemit-gettokenfromtypespec-method.md) method.
+- `TypeSpec` records, which you create by calling the [IMetaDataEmit::GetTokenFromTypeSpec](../../../core/unmanaged-api/metadata/imetadataemit-gettokenfromtypespec-method.md) method.
 
-- `MemberRef` records, which you create by calling the [IMetaDataEmit::DefineMemberRef](../../../core/unmanaged-apis/metadata/imetadataemit-definememberref-method.md) method.
+- `MemberRef` records, which you create by calling the [IMetaDataEmit::DefineMemberRef](../../../core/unmanaged-api/metadata/imetadataemit-definememberref-method.md) method.
 
-- `MemberSpec` records, which you create by calling the [IMetaDataEmit2::DefineMethodSpec](../../../core/unmanaged-apis/metadata/imetadataemit2-definemethodspec-method.md) method.
+- `MemberSpec` records, which you create by calling the [IMetaDataEmit2::DefineMethodSpec](../../../core/unmanaged-api/metadata/imetadataemit2-definemethodspec-method.md) method.
 
-- `UserString` records, which you create by calling the [IMetaDataEmit::DefineUserString](../../../core/unmanaged-apis/metadata/imetadataemit-defineuserstring-method.md) method.
+- `UserString` records, which you create by calling the [IMetaDataEmit::DefineUserString](../../../core/unmanaged-api/metadata/imetadataemit-defineuserstring-method.md) method.
 
 Starting with .NET Core 3.0, `ApplyMetaData` also supports the following types:
 
-- `TypeDef` records, which you create by calling the [IMetaDataEmit::DefineTypeDef](../../../core/unmanaged-apis/metadata/imetadataemit-definetypedef-method.md) method.
+- `TypeDef` records, which you create by calling the [IMetaDataEmit::DefineTypeDef](../../../core/unmanaged-api/metadata/imetadataemit-definetypedef-method.md) method.
 
-- `MethodDef` records, which you create by calling the [IMetaDataEmit::DefineMethod](../../../core/unmanaged-apis/metadata/imetadataemit-definemethod-method.md) method. However, adding virtual methods to an existing type is not supported. Virtual methods must be added before the [ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md) callback.
+- `MethodDef` records, which you create by calling the [IMetaDataEmit::DefineMethod](../../../core/unmanaged-api/metadata/imetadataemit-definemethod-method.md) method. However, adding virtual methods to an existing type is not supported. Virtual methods must be added before the [ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md) callback.
 
 ## Requirements
 

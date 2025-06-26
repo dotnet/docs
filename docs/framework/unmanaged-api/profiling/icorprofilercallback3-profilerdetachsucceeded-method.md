@@ -51,7 +51,7 @@ HRESULT ProfilerDetachSucceeded();
 
 ## See also
 
-- [Metadata Interfaces](../../../core/unmanaged-apis/metadata/metadata-interfaces.md)
+- [Metadata Interfaces](../../../core/unmanaged-api/metadata/metadata-interfaces.md)
 - [ICorProfilerInfo3 Interface](icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](profiling-interfaces.md)
 - [Profiling](index.md)

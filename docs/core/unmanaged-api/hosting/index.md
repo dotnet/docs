@@ -11,6 +11,8 @@ helpviewer_keywords:
 
 The hosting API enables unmanaged hosts to integrate the common language runtime (CLR) into their applications.
 
+These APIs that can be used with both .NET Framework and .NET.
+
 ## In This Section
 
  [Hosting Coclasses](hosting-coclasses.md)\

@@ -47,7 +47,7 @@ HRESULT LinkResource(
  Name of the resource.
 
  `dwFlags`
- Accessibility flags such as `mrPublic` and `mrPrivate`. This parameter may be passed to [DefineManifestResource Method](../../../core/unmanaged-apis/metadata/imetadataassemblyemit-definemanifestresource-method.md).
+ Accessibility flags such as `mrPublic` and `mrPrivate`. This parameter may be passed to [DefineManifestResource Method](../../../core/unmanaged-api/metadata/imetadataassemblyemit-definemanifestresource-method.md).
 
 ## Return Value
 

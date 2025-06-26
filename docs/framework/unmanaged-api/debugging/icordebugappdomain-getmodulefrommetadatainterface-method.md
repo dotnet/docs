@@ -33,7 +33,7 @@ HRESULT GetModuleFromMetaDataInterface (
 ## Parameters
 
  `pIMetaData`
- [in] A pointer to an object that is one of the [Metadata interfaces](../../../core/unmanaged-apis/metadata/metadata-interfaces.md).
+ [in] A pointer to an object that is one of the [Metadata interfaces](../../../core/unmanaged-api/metadata/metadata-interfaces.md).
 
  `ppModule`
  [out] A pointer to the address of an ICorDebugModule object that represents the module corresponding to the given metadata interface.

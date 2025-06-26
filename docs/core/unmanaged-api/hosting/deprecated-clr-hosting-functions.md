@@ -2,17 +2,12 @@
 description: "Learn more about: Deprecated CLR Hosting Functions"
 title: "Deprecated CLR Hosting Functions"
 ms.date: "03/30/2017"
-helpviewer_keywords:
-  - ".NET Framework 1.1, hosting global static functions"
-  - "global static functions [.NET Framework hosting], version 2.0"
-  - ".NET Framework 2.0, hosting global static functions"
-  - "hosting global static functions [.NET Framework], version 2.0"
 ---
 # Deprecated CLR Hosting Functions
 
 This section describes the unmanaged global static functions that earlier versions of the hosting API used.
 
- With the exception of the infrastructure functions (`_Cor*` functions), which are used only by the .NET Framework, these functions have been deprecated in the .NET Framework 4.
+ With the exception of the infrastructure functions (`_Cor*` functions), which are used only by .NET Framework, these functions are deprecated starting in .NET Framework 4.
 
 ## Activation functions
 
@@ -98,7 +93,7 @@ This section describes the unmanaged global static functions that earlier versio
  Obsolete.
 
  [CreateDebuggingInterfaceFromVersion Function](createdebugginginterfacefromversion-function.md)
- Deprecated. Creates an [ICorDebug](../../../framework/debuggingicordebug-interface.md) object based on the specified version information.
+ Deprecated. Creates an [ICorDebug](../../../framework/debugging/icordebug-interface.md) object based on the specified version information.
 
  [CreateICeeFileGen Function](createiceefilegen-function.md)
  Deprecated. Creates an [ICeeFileGen](iceefilegen-class.md) object.

@@ -4,26 +4,26 @@ description: Learn how to migrate an application that uses .NET Remoting to use 
 ms.date: "03/30/2017"
 ms.assetid: 16902a42-ef80-40e9-8c4c-90e61ddfdfe5
 ---
-# Migrating from .NET Remoting to WCF
+# Migrate from .NET Remoting to WCF
 
 This article describes how to migrate an application that uses .NET Remoting to use Windows Communication Foundation (WCF). It compares similar concepts between these products and then describes how to accomplish several common Remoting scenarios in WCF.
 
- .NET Remoting is a legacy product that is supported only for backward compatibility. It is not secure across mixed-trust environments because it cannot maintain the separate trust levels between client and server. For example, you should never expose a .NET Remoting endpoint to the Internet or to untrusted clients. We recommend existing Remoting applications be migrated to newer and more secure technologies. If the application’s design uses only HTTP and is RESTful, we recommend ASP.NET Web API. For more information, see ASP.NET Web API. If the application is based on SOAP or requires non-Http protocols such as TCP, we recommend WCF.
+ .NET Remoting is a legacy product that is supported only for backward compatibility. It is not secure across mixed-trust environments because it cannot maintain the separate trust levels between client and server. For example, you should never expose a .NET Remoting endpoint to the Internet or to untrusted clients. We recommend existing Remoting applications be migrated to newer and more secure technologies. If the application's design uses only HTTP and is RESTful, we recommend ASP.NET Web API. For more information, see ASP.NET Web API. If the application is based on SOAP or requires non-Http protocols such as TCP, we recommend WCF.
 
 ## Comparing .NET Remoting to WCF
 
  This section compares the basic building blocks of .NET Remoting with their WCF equivalents. We will use these building blocks later to create some common client-server scenarios in WCF. The following chart summarizes the main similarities and differences between .NET Remoting and WCF.
 
-|                          | .NET Remoting                                                                         | WCF                                                                            |
-|--------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| **Server type**          | Subclass `MarshalByRefObject`                                                           | Mark with `[ServiceContract]` attribute                                          |
-| **Service operations**   | Public methods on server type                                                         | Mark with `[OperationContract]` attribute                                        |
-| **Serialization**        | `ISerializable` or `[Serializable]`                                                   | `DataContractSerializer` or `XmlSerializer`                                        |
-| **Objects passed**       | By-value or by-reference                                                              | By-value only                                                                  |
-| **Errors/exceptions**    | Any serializable exception                                                            | `FaultContract<TDetail>`                                                        |
-| **Client proxy objects** | Strongly typed transparent proxies are created automatically from MarshalByRefObjects | Strongly typed proxies are generated on-demand using ChannelFactory\<TChannel> |
-| **Platform required**    | Both client and server must use Microsoft OS and .NET                                 | Cross-platform                                                                 |
-| **Message format**       | Private                                                                               | Industry standards (for example, SOAP and WS-*)                                |
+|                        | .NET Remoting                       | WCF                                             |
+|------------------------|-------------------------------------|-------------------------------------------------|
+| **Server type**        | Subclass `MarshalByRefObject`       | Mark with `[ServiceContract]` attribute         |
+| **Service operations** | Public methods on server type       | Mark with `[OperationContract]` attribute       |
+| **Serialization**      | `ISerializable` or `[Serializable]` | `DataContractSerializer` or `XmlSerializer`     |
+| **Objects passed**     | By-value or by-reference            | By-value only                                   |
+| **Errors/exceptions**  | Any serializable exception          | `FaultContract<TDetail>`                        |
+| **Client proxy objects** | Strongly typed transparent proxies are created automatically from MarshalByRefObjects | Strongly typed proxies are generated on-demand using ChannelFactory\<TChannel>                               |
+| **Platform required**  | Both client and server must use Microsoft OS and .NET | Cross-platform            |
+| **Message format**     | Private                             | Industry standards (for example, SOAP and WS-*) |
 
 ### Server Implementation Comparison
 
@@ -68,7 +68,7 @@ public interface IWCFServer
 }
 ```
 
- The server’s implementation is defined in a separate concrete class, like in the following example:
+ The server's implementation is defined in a separate concrete class, like in the following example:
 
 ```csharp
 public class WCFServer : IWCFServer
@@ -188,7 +188,7 @@ public class RemotingCustomerReference : MarshalByRefObject
 }
 ```
 
- It is extremely important to understand the implications of Remoting’s by-reference objects. If either tier (client or server) sends a by-reference object to the other tier, all method calls execute back on the tier owning the object. For example, a client calling methods on a by-reference object returned by the server will execute code on the server. Similarly, a server calling methods on a by-reference object provided by the client will execute code back on the client. For this reason, the use of .NET Remoting is recommended only within fully-trusted environments. Exposing a public .NET Remoting endpoint to untrusted clients will make a Remoting server vulnerable to attack.
+ It is extremely important to understand the implications of Remoting's by-reference objects. If either tier (client or server) sends a by-reference object to the other tier, all method calls execute back on the tier owning the object. For example, a client calling methods on a by-reference object returned by the server will execute code on the server. Similarly, a server calling methods on a by-reference object provided by the client will execute code back on the client. For this reason, the use of .NET Remoting is recommended only within fully-trusted environments. Exposing a public .NET Remoting endpoint to untrusted clients will make a Remoting server vulnerable to attack.
 
 #### Serialization in WCF
 
@@ -318,7 +318,7 @@ catch (FaultException<CustomerServiceFault> fault)
 
 ### Migration Scenarios
 
- Now let’s see how to accomplish the following common Remoting scenarios in WCF:
+ Now let's see how to accomplish the following common Remoting scenarios in WCF:
 
 1. Server returns an object by-value to the client
 
@@ -405,7 +405,7 @@ public class RemotingServer : MarshalByRefObject
    }
    ```
 
-4. To run the WCF service, we need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. This is typically done by adding the following sections to the server project’s web.config file.
+4. To run the WCF service, we need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. This is typically done by adding the following sections to the server project's web.config file.
 
     ```xml
     <configuration>
@@ -428,26 +428,26 @@ public class RemotingServer : MarshalByRefObject
        customerServiceHost.Open();
    ```
 
-     When this ServiceHost is started, it uses the web.config file to establish the proper contract, binding and endpoint. For more information about configuration files, see [Configuring Services Using Configuration Files](./configuring-services-using-configuration-files.md). This style of starting the server is known as self-hosting. To learn more about other choices for hosting WCF services, see [Hosting Services](../../core/unmanaged-api/hosting-services.md).
+   When this ServiceHost is started, it uses the web.config file to establish the proper contract, binding and endpoint. For more information about configuration files, see [Configuring Services Using Configuration Files](./configuring-services-using-configuration-files.md). This style of starting the server is known as self-hosting. To learn more about other choices for hosting WCF services, see [Hosting Services](./hosting-services.md).
 
-6. The client project’s app.config must declare matching binding information for the service’s endpoint. The easiest way to do this in Visual Studio is to use **Add Service Reference**, which will automatically update the app.config file. Alternatively, these same changes can be added manually.
+6. The client project's app.config must declare matching binding information for the service's endpoint. The easiest way to do this in Visual Studio is to use **Add Service Reference**, which automatically updates the app.config file. Alternatively, these same changes can be added manually:
 
-    ```xml
-    <configuration>
-      <system.serviceModel>
-        <client>
-          <endpoint name="customerservice"
-                    address="http://localhost:8083/CustomerService"
-                    binding="basicHttpBinding"
-                    contract="Shared.ICustomerService"/>
-        </client>
-      </system.serviceModel>
-    </configuration>
-    ```
+   ```xml
+   <configuration>
+     <system.serviceModel>
+       <client>
+         <endpoint name="customerservice"
+                   address="http://localhost:8083/CustomerService"
+                   binding="basicHttpBinding"
+                   contract="Shared.ICustomerService"/>
+       </client>
+     </system.serviceModel>
+   </configuration>
+   ```
 
-     For more information about using **Add Service Reference**, see [How to: Add, Update, or Remove a Service Reference](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference).
+   For more information about using **Add Service Reference**, see [How to: Add, Update, or Remove a Service Reference](/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference).
 
-7. Now we can call the WCF service from the client. We do this by creating a channel factory for that service, asking it for a channel, and directly calling the method we want on that channel. We can do this because the channel implements the service’s interface and handles the underlying request/reply logic for us. The return value from that method call is the deserialized copy of the server’s response.
+7. Now you can call the WCF service from the client. We do this by creating a channel factory for that service, asking it for a channel, and directly calling the method we want on that channel. We can do this because the channel implements the service's interface and handles the underlying request/reply logic for us. The return value from that method call is the deserialized copy of the server's response.
 
    ```csharp
    ChannelFactory<ICustomerService> factory =
@@ -534,7 +534,7 @@ public class RemotingServer : MarshalByRefObject
 
      This implementation maintains a singleton channel factory to create sessionful objects. When GetInstanceAddress() is called, it creates a channel and creates an EndpointAddress10 object that effectively points to the remote address associated with this channel. EndpointAddress10 is simply a data type that can be returned to the client by-value.
 
-4. We need to modify the server’s configuration file by doing the following two things as shown in the example below:
+4. We need to modify the server's configuration file by doing the following two things as shown in the example below:
 
     1. Declare a \<client> section that describes the endpoint for the sessionful object. This is necessary because the server also acts as a client in this situation.
 
@@ -580,7 +580,7 @@ public class RemotingServer : MarshalByRefObject
    sessionHost.Open();
    ```
 
-5. We configure the client by declaring these same endpoints in its project’s app.config file.
+5. We configure the client by declaring these same endpoints in its project's app.config file.
 
     ```xml
     <configuration>
@@ -673,4 +673,4 @@ public class RemotingServer : MarshalByRefObject
 
 ## Summary
 
- .NET Remoting is a communication framework intended to be used only within fully-trusted environments. It is a legacy product and supported only for backward compatibility. It should not be used to build new applications. Conversely, WCF was designed with security in mind and is recommended for new and existing applications. Microsoft recommends that existing Remoting applications be migrated to use WCF or ASP.NET Web API instead.
+.NET Remoting is a communication framework intended to be used only within fully-trusted environments. It is a legacy product and supported only for backward compatibility. It should not be used to build new applications. Conversely, WCF was designed with security in mind and is recommended for new and existing applications. Microsoft recommends that existing Remoting applications be migrated to use WCF or ASP.NET Web API instead.

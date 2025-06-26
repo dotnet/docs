@@ -31,7 +31,7 @@ Provides methods for obtaining information about the garbage collection system a
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   

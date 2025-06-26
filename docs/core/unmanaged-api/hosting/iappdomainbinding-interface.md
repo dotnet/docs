@@ -28,7 +28,7 @@ Provides a method that is called by the common language runtime (CLR) to notify 
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

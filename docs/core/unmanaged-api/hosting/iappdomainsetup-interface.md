@@ -43,7 +43,7 @@ Provides properties that allow the host to configure an <xref:System.AppDomain?d
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

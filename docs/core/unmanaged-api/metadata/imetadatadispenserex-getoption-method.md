@@ -58,7 +58,7 @@ HRESULT GetOption (
   
 ## Requirements  
 
- **Platform:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

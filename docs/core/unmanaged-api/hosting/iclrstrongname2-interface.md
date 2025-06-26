@@ -31,7 +31,7 @@ Provides the ability to create strong names using the SHA-2 group of Secure Hash
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   

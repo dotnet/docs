@@ -15,7 +15,7 @@ The .NET Framework 4 introduces one new exported method in MSCorEE.dll: [CLRCrea
 ## In This Section  
 
  [CLRCreateInstance Function](clrcreateinstance-function.md)  
- Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
+ Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
   
 ## See also
 

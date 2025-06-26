@@ -30,7 +30,7 @@ Provides methods that notify the host of the actions the common language runtime
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

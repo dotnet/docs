@@ -29,7 +29,7 @@ Enables the host to block specific managed classes, methods, properties, and fie
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

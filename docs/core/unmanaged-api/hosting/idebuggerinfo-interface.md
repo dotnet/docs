@@ -28,7 +28,7 @@ Provides methods for obtaining information about the state of the debugging serv
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

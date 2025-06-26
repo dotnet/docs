@@ -42,7 +42,7 @@ typedef struct _COR_GC_THREAD_STATS {
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** GCHost.idl  
   

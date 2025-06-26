@@ -46,7 +46,7 @@ Provides methods for the storage and retrieval of metadata information in tables
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

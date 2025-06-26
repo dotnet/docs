@@ -22,7 +22,7 @@ topic_type:
 ---
 # CLRCreateInstance Function (.NET Framework)
 
-Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).
+Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md).
 
 ## Syntax
 
@@ -43,7 +43,7 @@ HRESULT CLRCreateInstance(
  [in] One of three interface identifiers (IIDs): IID_ICLRMetaHost, IID_ICLRMetaHostPolicy, or IID_ICLRDebugging.
 
  `ppInterface`\
- [out] One of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).
+ [out] One of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../framework/unmanaged-api/debugging/iclrdebugging-interface.md).
 
 ## Return Value
 
@@ -95,7 +95,7 @@ hr = createInterface (CLSID_CLRDebugging, IID_ICLRDebugging,  (LPVOID*)&pCLRDebu
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
 
  **Header:** MetaHost.h
 

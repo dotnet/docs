@@ -31,7 +31,7 @@ Enables the host to specify the application domain manager that will be used to 
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   

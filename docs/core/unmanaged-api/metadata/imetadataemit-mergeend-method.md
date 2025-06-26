@@ -59,7 +59,7 @@ The following special conditions apply to the merge:
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
 
 **Header:** Cor.h
 

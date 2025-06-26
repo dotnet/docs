@@ -31,7 +31,7 @@ Provides a callback mechanism for reporting errors during the metadata merge.
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../../../framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

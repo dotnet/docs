@@ -14,7 +14,6 @@ helpviewer_keywords:
   - "debugging API [.NET Core]"
   - ".NET Core, debugging"
   - "CreateVersionStringFromModule function"
-ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type:
   - "apiref"
 ---

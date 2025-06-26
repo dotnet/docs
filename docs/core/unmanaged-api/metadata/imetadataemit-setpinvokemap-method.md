@@ -2,60 +2,59 @@
 description: "Learn more about: IMetaDataEmit::SetPinvokeMap Method"
 title: "IMetaDataEmit::SetPinvokeMap Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataEmit.SetPinvokeMap"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataEmit::SetPinvokeMap"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataEmit::SetPinvokeMap method [.NET Framework metadata]"
   - "SetPinvokeMap method [.NET Framework metadata]"
-ms.assetid: c6bfd574-1da3-4ba7-82f2-46ca5efcbaba
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetPinvokeMap Method
 
-Sets or changes features of a method's PInvoke signature, as defined by a prior call to [IMetaDataEmit::DefinePinvokeMap](imetadataemit-definepinvokemap-method.md).  
-  
-## Syntax  
-  
-```cpp  
+Sets or changes features of a method's PInvoke signature, as defined by a prior call to [IMetaDataEmit::DefinePinvokeMap](imetadataemit-definepinvokemap-method.md).
+
+## Syntax
+
+```cpp
 HRESULT SetPinvokeMap (
     [in]  mdToken      tk,
-    [in]  DWORD        dwMappingFlags,  
+    [in]  DWORD        dwMappingFlags,
     [in]  LPCWSTR      szImportName,
     [in]  mdModuleRef  mrImportDLL
-);  
-```  
-  
-## Parameters  
+);
+```
 
- `tk`  
- [in] The `mdToken` to which mapping information applies.  
-  
- `dwMappingFlags`  
- [in] Flags used by PInvoke to do the mapping. This is a bitmask of `CorPinvokeMap` values.  
-  
- `szImportName`  
- [in] The name of the target export in the native DLL.  
-  
- `mrImportDLL`  
- [in] The `mdModuleRef` token for the target unmanaged DLL.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `tk`
+ [in] The `mdToken` to which mapping information applies.
+
+ `dwMappingFlags`
+ [in] Flags used by PInvoke to do the mapping. This is a bitmask of `CorPinvokeMap` values.
+
+ `szImportName`
+ [in] The name of the target export in the native DLL.
+
+ `mrImportDLL`
+ [in] The `mdModuleRef` token for the target unmanaged DLL.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

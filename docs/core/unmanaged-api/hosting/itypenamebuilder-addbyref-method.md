@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "ITypeNameBuilder::AddByRef method [.NET Framework hosting]"
   - "AddByRef method [.NET Framework hosting]"
-ms.assetid: 3f1b6bc4-6efb-4b90-8be0-b1ba8d856ca0
 topic_type:
   - "apiref"
 ---
@@ -36,7 +35,7 @@ HRESULT AddByRef ( );
 
 **Library:** Included as a resource in MSCorEE.dll
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**.NET versions:** Available since .NET Framework 2.0
 
 ## See also
 

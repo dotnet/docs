@@ -12,7 +12,6 @@ f1_keywords:
   - "ValidatorFlags"
 helpviewer_keywords:
   - "ValidatorFlags enumeration [.NET Framework hosting]"
-ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
 topic_type:
   - "apiref"
 ---
@@ -50,7 +49,7 @@ enum ValidatorFlags {
 
  **Library:** MSCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET versions:** Available since .NET Framework 2.0
 
 ## See also
 

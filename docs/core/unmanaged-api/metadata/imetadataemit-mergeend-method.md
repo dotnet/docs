@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "MergeEnd method [.NET Framework metadata]"
   - "IMetaDataEmit::MergeEnd method [.NET Framework metadata]"
-ms.assetid: 2d64315a-1af1-4c60-aedf-f8a781914aea
 topic_type:
   - "apiref"
 ---
@@ -65,7 +64,7 @@ The following special conditions apply to the merge:
 
 **Library:** Used as a resource in MSCorEE.dll
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
+**.NET versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]
 
 ## See also
 

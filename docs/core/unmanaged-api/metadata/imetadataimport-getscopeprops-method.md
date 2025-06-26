@@ -2,64 +2,63 @@
 description: "Learn more about: IMetaDataImport::GetScopeProps Method"
 title: "IMetaDataImport::GetScopeProps Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataImport.GetScopeProps"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataImport::GetScopeProps"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataImport::GetScopeProps method [.NET Framework metadata]"
   - "GetScopeProps method [.NET Framework metadata]"
-ms.assetid: c8ba42d2-d9fa-43cb-bbc0-f33e1e592cb6
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetScopeProps Method
 
-Gets the name and optionally the version identifier of the assembly or module in the current metadata scope.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetScopeProps (  
-   [out] LPWSTR           szName,  
-   [in]  ULONG            cchName,  
-   [out] ULONG            *pchName,  
-   [out, optional] GUID   *pmvid  
-);  
-```  
-  
-## Parameters  
+Gets the name and optionally the version identifier of the assembly or module in the current metadata scope.
 
- `szName`  
- [out] A buffer for the assembly or module name.  
-  
- `cchName`  
- [in] The size in wide characters of `szName`.  
-  
- `pchName`  
- [out] The number of wide characters returned in `szName`.  
-  
- `pmvid`  
- [out, optional] A pointer to a GUID that uniquely identifies the version of the assembly or module.  
-  
-## Remarks  
+## Syntax
 
- The [IMetaDataEmit::SetModuleProps](imetadataemit-setmoduleprops-method.md) method is used to set these properties.  
-  
-## Requirements  
+```cpp
+HRESULT GetScopeProps (
+   [out] LPWSTR           szName,
+   [in]  ULONG            cchName,
+   [out] ULONG            *pchName,
+   [out, optional] GUID   *pmvid
+);
+```
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Included as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+## Parameters
+
+ `szName`
+ [out] A buffer for the assembly or module name.
+
+ `cchName`
+ [in] The size in wide characters of `szName`.
+
+ `pchName`
+ [out] The number of wide characters returned in `szName`.
+
+ `pmvid`
+ [out, optional] A pointer to a GUID that uniquely identifies the version of the assembly or module.
+
+## Remarks
+
+ The [IMetaDataEmit::SetModuleProps](imetadataemit-setmoduleprops-method.md) method is used to set these properties.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Included as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataImport Interface](imetadataimport-interface.md)

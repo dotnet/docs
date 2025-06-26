@@ -2,64 +2,63 @@
 description: "Learn more about: IHostThreadPoolManager::SetMinThreads Method"
 title: "IHostThreadPoolManager::SetMinThreads Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IHostThreadPoolManager.SetMinThreads"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IHostThreadPoolManager::SetMinThreads"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "SetMinThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
   - "IHostThreadPoolManager::SetMinThreads method [.NET Framework hosting]"
-ms.assetid: 10409db9-9fd2-4e4d-b8cd-cf6fec0afaa2
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IHostThreadPoolManager::SetMinThreads Method
 
-Sets the minimum number of idle threads that the host must maintain in anticipation of requests.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT SetMinThreads (  
-    [in] DWORD MinThreads  
-);  
-```  
-  
-## Parameters  
+Sets the minimum number of idle threads that the host must maintain in anticipation of requests.
 
- `MinThreads`  
- [in] The new minimum number of threads that the host must maintain.  
-  
-## Return Value  
-  
-|HRESULT|Description|  
-|-------------|-----------------|  
-|S_OK|`SetMinThreads` returned successfully.|  
-|HOST_E_CLRNOTAVAILABLE|The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
-|HOST_E_TIMEOUT|The call timed out.|  
-|HOST_E_NOT_OWNER|The caller does not own the lock.|  
-|HOST_E_ABANDONED|An event was canceled while a blocked thread or fiber was waiting on it.|  
-|E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
-|E_NOTIMPL|The host does not provide an implementation of `SetMinThreads`.|  
-  
-## Remarks  
+## Syntax
 
- A host is not required to provide an implementation of `SetMinThreads`. In this case, it should return an HRESULT value of E_NOTIMPL.  
-  
-## Requirements  
+```cpp
+HRESULT SetMinThreads (
+    [in] DWORD MinThreads
+);
+```
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** MSCorEE.h  
-  
- **Library:** Included as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
+## Parameters
+
+ `MinThreads`
+ [in] The new minimum number of threads that the host must maintain.
+
+## Return Value
+
+|HRESULT|Description|
+|-------------|-----------------|
+|S_OK|`SetMinThreads` returned successfully.|
+|HOST_E_CLRNOTAVAILABLE|The common language runtime (CLR) has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|
+|HOST_E_TIMEOUT|The call timed out.|
+|HOST_E_NOT_OWNER|The caller does not own the lock.|
+|HOST_E_ABANDONED|An event was canceled while a blocked thread or fiber was waiting on it.|
+|E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|
+|E_NOTIMPL|The host does not provide an implementation of `SetMinThreads`.|
+
+## Remarks
+
+ A host is not required to provide an implementation of `SetMinThreads`. In this case, it should return an HRESULT value of E_NOTIMPL.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** MSCorEE.h
+
+ **Library:** Included as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 2.0
+
 ## See also
 
 - <xref:System.Threading.ThreadPool.SetMinThreads%2A>

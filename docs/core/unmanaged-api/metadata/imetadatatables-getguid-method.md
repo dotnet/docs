@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "GetGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetGuid method [.NET Framework metadata]"
-ms.assetid: a3546316-e24d-417f-9909-e45d42c9d471
 topic_type:
   - "apiref"
 ---
@@ -50,7 +49,7 @@ HRESULT GetGuid (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET versions:** Available since .NET Framework 1.0
 
 ## See also
 

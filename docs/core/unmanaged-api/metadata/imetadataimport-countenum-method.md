@@ -2,56 +2,55 @@
 description: "Learn more about: IMetaDataImport::CountEnum Method"
 title: "IMetaDataImport::CountEnum Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataImport.CountEnum"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataImport::CountEnum"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CountEnum method [.NET Framework metadata]"
   - "IMetaDataImport::CountEnum method [.NET Framework metadata]"
-ms.assetid: d1de53ad-9435-4b5f-9df7-07f21210e5b5
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataImport::CountEnum Method
 
-Gets the number of elements in the enumeration that was retrieved by the specified enumerator.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT CountEnum (  
+Gets the number of elements in the enumeration that was retrieved by the specified enumerator.
+
+## Syntax
+
+```cpp
+HRESULT CountEnum (
    [in]  HCORENUM    hEnum,
-   [out] ULONG       *pulCount  
-);  
-```  
-  
-## Parameters  
+   [out] ULONG       *pulCount
+);
+```
 
- `hEnum`  
- [in] The handle for the enumerator.  
-  
- `pulCount`  
- [out] The number of elements enumerated.  
-  
-## Remarks  
+## Parameters
 
- The handle specified by `hEnum` is obtained from a previous `Enum`*Name* call (for example, [IMetaDataImport::EnumTypeDefs](imetadataimport-enumtypedefs-method.md)).  
-  
-## Requirements  
+ `hEnum`
+ [in] The handle for the enumerator.
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Included as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `pulCount`
+ [out] The number of elements enumerated.
+
+## Remarks
+
+ The handle specified by `hEnum` is obtained from a previous `Enum`*Name* call (for example, [IMetaDataImport::EnumTypeDefs](imetadataimport-enumtypedefs-method.md)).
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Included as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataImport Interface](imetadataimport-interface.md)

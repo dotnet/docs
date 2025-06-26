@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "GetStartupNotificationEvent function"
   - "debugging API [.NET Core]"
   - ".NET Core, debugging"
-ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type:
   - "apiref"
 ---

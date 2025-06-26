@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "GetNextGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetNextGuid method [.NET Framework metadata]"
-ms.assetid: 68f6ea4d-9112-4d6b-93d9-e34f1e2f2496
 topic_type:
   - "apiref"
 ---
@@ -50,7 +49,7 @@ HRESULT GetNextGuid (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET versions:** Available since .NET Framework 2.0
 
 ## See also
 

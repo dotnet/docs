@@ -12,7 +12,6 @@ f1_keywords:
   - "ICLRValidator"
 helpviewer_keywords:
   - "ICLRValidator interface [.NET Framework hosting]"
-ms.assetid: 2edd0a10-77fb-4173-91eb-f2970cc364d0
 topic_type:
   - "apiref"
 ---
@@ -35,7 +34,7 @@ Provides methods for validating portable executable (PE) images and reporting va
 
  **Library:** Included as a resource in MSCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET versions:** Available since .NET Framework 2.0
 
 ## See also
 

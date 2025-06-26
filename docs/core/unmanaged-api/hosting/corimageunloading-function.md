@@ -2,49 +2,48 @@
 description: "Learn more about: _CorImageUnloading Function"
 title: "_CorImageUnloading Function"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "_CorImageUnloading"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "_CorImageUnloading"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "_CorImageUnloading function [.NET Framework hosting]"
-ms.assetid: b4367214-6dac-4280-aa11-fd487ff30bc4
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # _CorImageUnloading Function
 
-Notifies the loader when the managed module images are unloaded.  
-  
- This function is not implemented. If called, it returns E_NOTIMPL.  
-  
-## Syntax  
-  
-```cpp  
+Notifies the loader when the managed module images are unloaded.
+
+ This function is not implemented. If called, it returns E_NOTIMPL.
+
+## Syntax
+
+```cpp
 STDAPI (VOID) _CorImageUnloading(
-   [in] PVOID* ImageBase  
-);  
-```  
-  
-## Parameters  
+   [in] PVOID* ImageBase
+);
+```
 
- `ImageBase`  
- [in] A pointer to the starting location of the image to unload.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Included as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `ImageBase`
+ [in] A pointer to the starting location of the image to unload.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Included as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

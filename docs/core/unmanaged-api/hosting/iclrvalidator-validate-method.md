@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "Validate method, ICLRValidator interface [.NET Framework hosting]"
   - "ICLRValidator::Validate method [.NET Framework hosting]"
-ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
 topic_type:
   - "apiref"
 ---
@@ -81,7 +80,7 @@ HRESULT Validate (
 
  **Library:** Included as a resource in MSCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET versions:** Available since .NET Framework 2.0
 
 ## See also
 

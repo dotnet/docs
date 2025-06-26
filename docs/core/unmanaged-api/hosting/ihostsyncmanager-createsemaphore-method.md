@@ -2,72 +2,71 @@
 description: "Learn more about: IHostSyncManager::CreateSemaphore Method"
 title: "IHostSyncManager::CreateSemaphore Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IHostSyncManager.CreateSemaphore"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IHostSyncManager::CreateSemaphore"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CreateSemaphore method [.NET Framework hosting]"
   - "IHostSyncManager::CreateSemaphore method [.NET Framework hosting]"
-ms.assetid: 37679e94-5ff9-4173-8fa5-457febeb89bf
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IHostSyncManager::CreateSemaphore Method
 
-Creates an [IHostSemaphore](ihostsemaphore-interface.md) object for the common language runtime (CLR) to use as a semaphore for wait events.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT CreateSemaphore (  
-    [in]  DWORD dwInitial,  
-    [in]  DWORD dwMax,  
-    [out] IHostSemaphore **ppSemaphore  
-);  
-```  
-  
-## Parameters  
+Creates an [IHostSemaphore](ihostsemaphore-interface.md) object for the common language runtime (CLR) to use as a semaphore for wait events.
 
- `dwInitial`  
- [in] The initial count for `ppSemaphore`.  
-  
- `dwMax`  
- [in] The maximum count for `ppSemaphore`.  
-  
- `ppSemaphore`  
- [out] A pointer to the address of an `IHostSemaphore` instance, or null if the semaphore could not be created.  
-  
-## Return Value  
-  
-|HRESULT|Description|  
-|-------------|-----------------|  
-|S_OK|`CreateSemaphore` returned successfully.|  
-|HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
-|HOST_E_TIMEOUT|The call timed out.|  
-|HOST_E_NOT_OWNER|The caller does not own the lock.|  
-|HOST_E_ABANDONED|An event was canceled while a blocked thread or fiber was waiting on it.|  
-|E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
-|E_OUTOFMEMORY|Not enough memory was available to create the requested event object.|  
-  
-## Remarks  
+## Syntax
 
- `CreateSemaphore` mirrors the Win32 function that has the same name. The `dwInitial` and `dwMax` parameters use the same semantics for the semaphore count as the Win32 `lInitialCount` and `lMaximumCount` parameters, respectively. `dwInitial` must be between zero and `dwMax`, inclusive. `dwMax` must be greater than zero.  
-  
-## Requirements  
+```cpp
+HRESULT CreateSemaphore (
+    [in]  DWORD dwInitial,
+    [in]  DWORD dwMax,
+    [out] IHostSemaphore **ppSemaphore
+);
+```
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** MSCorEE.h  
-  
- **Library:** Included as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
+## Parameters
+
+ `dwInitial`
+ [in] The initial count for `ppSemaphore`.
+
+ `dwMax`
+ [in] The maximum count for `ppSemaphore`.
+
+ `ppSemaphore`
+ [out] A pointer to the address of an `IHostSemaphore` instance, or null if the semaphore could not be created.
+
+## Return Value
+
+|HRESULT|Description|
+|-------------|-----------------|
+|S_OK|`CreateSemaphore` returned successfully.|
+|HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|
+|HOST_E_TIMEOUT|The call timed out.|
+|HOST_E_NOT_OWNER|The caller does not own the lock.|
+|HOST_E_ABANDONED|An event was canceled while a blocked thread or fiber was waiting on it.|
+|E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|
+|E_OUTOFMEMORY|Not enough memory was available to create the requested event object.|
+
+## Remarks
+
+ `CreateSemaphore` mirrors the Win32 function that has the same name. The `dwInitial` and `dwMax` parameters use the same semantics for the semaphore count as the Win32 `lInitialCount` and `lMaximumCount` parameters, respectively. `dwInitial` must be between zero and `dwMax`, inclusive. `dwMax` must be greater than zero.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** MSCorEE.h
+
+ **Library:** Included as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 2.0
+
 ## See also
 
 - [ICLRSyncManager Interface](iclrsyncmanager-interface.md)

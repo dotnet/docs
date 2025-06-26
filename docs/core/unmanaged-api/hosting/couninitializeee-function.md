@@ -2,37 +2,36 @@
 description: "Learn more about: CoUninitializeEE Function"
 title: "CoUninitializeEE Function"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "CoUninitializeEE"
-api_location: 
+api_location:
   - "mscoree.dll"
   - "mscorsvr.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "CoUninitializeEE"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CoUninitializeEE function [.NET Framework hosting]"
-ms.assetid: 5f5a311a-839a-465f-89d9-ff1c74da9736
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # CoUninitializeEE Function
 
-`CoUninitializeEE` is obsolete and provides no functionality.  
-  
-## Syntax  
-  
-```cpp  
-void CoUninitializeEE (  
-    BOOL fFlags  
-);  
-```  
-  
-## Remarks  
+`CoUninitializeEE` is obsolete and provides no functionality.
 
- The common language runtime execution engine cannot be unloaded from a process. To shut down the execution engine call [CorExitProcess](corexitprocess-function.md).  
-  
+## Syntax
+
+```cpp
+void CoUninitializeEE (
+    BOOL fFlags
+);
+```
+
+## Remarks
+
+ The common language runtime execution engine cannot be unloaded from a process. To shut down the execution engine call [CorExitProcess](corexitprocess-function.md).
+
 ## See also
 
 - [CoInitializeEE Function](coinitializeee-function.md)

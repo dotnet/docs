@@ -2,52 +2,51 @@
 description: "Learn more about: IMetaDataEmit2::SaveDelta Method"
 title: "IMetaDataEmit2::SaveDelta Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataEmit2.SaveDelta"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataEmit2::SaveDelta"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataEmit2::SaveDelta method [.NET Framework metadata]"
   - "SaveDelta method [.NET Framework metadata]"
-ms.assetid: b95739fe-d2fa-4776-ae0d-31d9707ef799
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataEmit2::SaveDelta Method
 
-Saves changes from the current edit-and-continue session to the specified file.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT SaveDelta (  
+Saves changes from the current edit-and-continue session to the specified file.
+
+## Syntax
+
+```cpp
+HRESULT SaveDelta (
     [in] LPCWSTR     szFile,
-    [in] DWORD       dwSaveFlags  
-);  
-```  
-  
-## Parameters  
+    [in] DWORD       dwSaveFlags
+);
+```
 
- `szFile`  
- [in] The file name under which to save changes.  
-  
- `dwSaveFlags`  
- [in] Reserved. Must be zero.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
+ `szFile`
+ [in] The file name under which to save changes.
+
+ `dwSaveFlags`
+ [in] Reserved. Must be zero.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 2.0
+
 ## See also
 
 - [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

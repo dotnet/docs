@@ -2,52 +2,51 @@
 description: "Learn more about: IMetaDataEmit::SetFieldRVA Method"
 title: "IMetaDataEmit::SetFieldRVA Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataEmit.SetFieldRVA"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataEmit::SetFieldRVA"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataEmit::SetFieldRVA method [.NET Framework metadata]"
   - "SetFieldRVA method [.NET Framework metadata]"
-ms.assetid: 6dc37f9d-87ee-4cb3-9216-ced600184ce8
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetFieldRVA Method
 
-Sets a global variable value for the relative virtual address of the field referenced by the specified token.  
-  
-## Syntax  
-  
-```cpp  
+Sets a global variable value for the relative virtual address of the field referenced by the specified token.
+
+## Syntax
+
+```cpp
 HRESULT SetFieldRVA (
     [in]  mdFieldDef  fd,
     [in]  ULONG       ulRVA
-);  
-```  
-  
-## Parameters  
+);
+```
 
- `fd`  
- [in] The token for the target field.  
-  
- `ulRVA`  
- [in] The address of a code or data area.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `fd`
+ [in] The token for the target field.
+
+ `ulRVA`
+ [in] The address of a code or data area.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

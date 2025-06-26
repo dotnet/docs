@@ -2,46 +2,45 @@
 description: "Learn more about: ICLRGCManager2 Interface"
 title: "ICLRGCManager2 Interface"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICLRGCManager2"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICLRGCManager2"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICLRGCManager2 interface [.NET Framework hosting]"
-ms.assetid: 4b5ffd7b-9ad7-41cd-9bba-34030ae3da7e
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICLRGCManager2 Interface
 
-Provides methods that allow a host to interact with the common language runtime's garbage collection system.  
-  
-## Methods  
-  
-|Method|Description|  
-|------------|-----------------|  
-|[SetGCStartupLimitsEx Method](iclrgcmanager2-setgcstartuplimitsex-method.md)|Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0. Enables generation 0 and segment sizes larger than `DWORD`.|  
-  
-## Remarks  
+Provides methods that allow a host to interact with the common language runtime's garbage collection system.
 
- This interface inherits from the [ICLRGCManager Interface](iclrgcmanager-interface.md).  
-  
- The common language runtime (CLR) implements its garbage collection mechanism with the managed <xref:System.GC> type. For more information about the garbage collection system, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
-  
-## Requirements  
+## Methods
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** MSCorEE.h  
-  
- **Library:** Included as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
-  
+|Method|Description|
+|------------|-----------------|
+|[SetGCStartupLimitsEx Method](iclrgcmanager2-setgcstartuplimitsex-method.md)|Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0. Enables generation 0 and segment sizes larger than `DWORD`.|
+
+## Remarks
+
+ This interface inherits from the [ICLRGCManager Interface](iclrgcmanager-interface.md).
+
+ The common language runtime (CLR) implements its garbage collection mechanism with the managed <xref:System.GC> type. For more information about the garbage collection system, see [Garbage Collection](../../../standard/garbage-collection/index.md).
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** MSCorEE.h
+
+ **Library:** Included as a resource in MSCorEE.dll
+
+ **.NET versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]
+
 ## See also
 
 - [Automatic Memory Management](../../../standard/automatic-memory-management.md)

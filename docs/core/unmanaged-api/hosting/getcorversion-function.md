@@ -18,41 +18,41 @@ topic_type:
 ---
 # GetCORVersion Function
 
-Returns the version number of the common language runtime (CLR) that is running in the current process.  
-  
- This function has been deprecated in the .NET Framework 4.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetCORVersion (  
-    [in] LPWSTR  pbuffer,  
+Returns the version number of the common language runtime (CLR) that is running in the current process.
+
+ This function has been deprecated in the .NET Framework 4.
+
+## Syntax
+
+```cpp
+HRESULT GetCORVersion (
+    [in] LPWSTR  pbuffer,
     [in]  DWORD   cchBuffer,
-    [out] DWORD*  dwlength  
+    [out] DWORD*  dwlength
 );
-```  
-  
-## Parameters  
+```
 
- `pbuffer`  
- A pointer to a buffer in which the CLR returns a string specifying the version of the runtime that is currently loaded into the process. The returned string takes the same form as strings passed to [CorBindToRuntimeEx](corbindtoruntimeex-function.md), for example, "v1.0.1216". If the runtime has not yet been loaded into the process, the function returns the appropriate directory information for the latest version of the runtime installed on the computer.  
-  
- `cchBuffer`  
- The number of characters (`WCHAR`s) that can be held in `pbuffer`.  
-  
- `dwLength`  
- A pointer to the number of characters actually returned in `pbuffer`. If `pbuffer` is a null pointer, the runtime returns E_POINTER. If the number of characters is greater then the length of `pbuffer`, the runtime returns ERROR_INSUFFICIENT_BUFFER.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** MSCorEE.h  
-  
- **Library:** MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `pbuffer`
+ A pointer to a buffer in which the CLR returns a string specifying the version of the runtime that is currently loaded into the process. The returned string takes the same form as strings passed to [CorBindToRuntimeEx](corbindtoruntimeex-function.md), for example, "v1.0.1216". If the runtime has not yet been loaded into the process, the function returns the appropriate directory information for the latest version of the runtime installed on the computer.
+
+ `cchBuffer`
+ The number of characters (`WCHAR`s) that can be held in `pbuffer`.
+
+ `dwLength`
+ A pointer to the number of characters actually returned in `pbuffer`. If `pbuffer` is a null pointer, the runtime returns E_POINTER. If the number of characters is greater then the length of `pbuffer`, the runtime returns ERROR_INSUFFICIENT_BUFFER.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** MSCorEE.h
+
+ **Library:** MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

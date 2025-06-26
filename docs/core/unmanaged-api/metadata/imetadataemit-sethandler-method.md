@@ -2,54 +2,53 @@
 description: "Learn more about: IMetaDataEmit::SetHandler Method"
 title: "IMetaDataEmit::SetHandler Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataEmit.SetHandler"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataEmit::SetHandler"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataEmit::SetHandler method [.NET Framework metadata]"
   - "SetHandler method [.NET Framework metadata]"
-ms.assetid: c6c1aaaf-e2cd-407c-b73e-fbe6ffd83bb3
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SetHandler Method
 
-Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.  
-  
-## Syntax  
-  
-```cpp  
+Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.
+
+## Syntax
+
+```cpp
 HRESULT SetHandler (
-    [in]  IUnknown    *pUnk  
-);  
-```  
-  
-## Parameters  
+    [in]  IUnknown    *pUnk
+);
+```
 
- `pUnk`  
- [in] The handler to register.  
-  
-## Remarks  
+## Parameters
 
- The metadata engine sends notification by using the method that is provided by `SetHandler`, to compilers that do not generate records in an optimized way and that would like to optimize saved records.  
-  
- If the callback method is not provided through `SetHandler`, no optimization will be performed on save except where several import scopes have been merged using `IMapToken` on merge for each scope.  
-  
-## Requirements  
+ `pUnk`
+ [in] The handler to register.
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+## Remarks
+
+ The metadata engine sends notification by using the method that is provided by `SetHandler`, to compilers that do not generate records in an optimized way and that would like to optimize saved records.
+
+ If the callback method is not provided through `SetHandler`, no optimization will be performed on save except where several import scopes have been merged using `IMapToken` on merge for each scope.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

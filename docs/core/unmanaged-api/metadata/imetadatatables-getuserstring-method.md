@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "IMetaDataTables::GetUserString method [.NET Framework metadata]"
   - "GetUserString method, IMetaDataTables interface [.NET Framework metadata]"
-ms.assetid: 35b8f0d6-9aba-4714-adb2-62020a38fb7e
 topic_type:
   - "apiref"
 ---
@@ -51,7 +50,7 @@ HRESULT GetUserString (
 
 **Library:** Used as a resource in MsCorEE.dll
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+**.NET versions:** Available since .NET Framework 2.0
 
 ## See also
 

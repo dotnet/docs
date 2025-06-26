@@ -2,42 +2,41 @@
 description: "Learn more about: IHostManualEvent Interface"
 title: "IHostManualEvent Interface"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IHostManualEvent"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IHostManualEvent"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IHostManualEvent interface [.NET Framework hosting]"
-ms.assetid: 300c2661-b7d1-4c39-b080-9ebdef0fd523
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IHostManualEvent Interface
 
-Provides the host's implementation of a representation of a manual reset event.  
-  
-## Methods  
-  
-|Method|Description|  
-|------------|-----------------|  
-|[Reset Method](ihostmanualevent-reset-method.md)|Resets the current `IHostManualEvent` instance to a non-signaled state.|  
-|[Set Method](ihostmanualevent-set-method.md)|Sets the current `IHostManualEvent` instance to a signaled state.|  
-|[Wait Method](ihostmanualevent-wait-method.md)|Causes the current `IHostManualEvent` instance to wait until it is owned, or a specified amount of time elapses.|  
-  
-## Requirements  
+Provides the host's implementation of a representation of a manual reset event.
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** MSCorEE.h  
-  
- **Library:** Included as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
-  
+## Methods
+
+|Method|Description|
+|------------|-----------------|
+|[Reset Method](ihostmanualevent-reset-method.md)|Resets the current `IHostManualEvent` instance to a non-signaled state.|
+|[Set Method](ihostmanualevent-set-method.md)|Sets the current `IHostManualEvent` instance to a signaled state.|
+|[Wait Method](ihostmanualevent-wait-method.md)|Causes the current `IHostManualEvent` instance to wait until it is owned, or a specified amount of time elapses.|
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** MSCorEE.h
+
+ **Library:** Included as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 2.0
+
 ## See also
 
 - [ICLRSyncManager Interface](iclrsyncmanager-interface.md)

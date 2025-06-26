@@ -2,31 +2,30 @@
 description: "Learn more about: ICatalogServices::Autodone Method"
 title: "ICatalogServices::Autodone Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICatalogServices.Autodone"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "Autodone"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICatalogServices::Autodone method [.NET Framework hosting]"
   - "Autodone method [.NET Framework hosting]"
-ms.assetid: 3002f051-7aaa-4669-9314-cbc65b3a1772
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ICatalogServices::Autodone Method
 
-This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT Autodone ( );  
-```  
-  
+This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.
+
+## Syntax
+
+```cpp
+HRESULT Autodone ( );
+```
+
 ## See also
 
 - [Hosting Interfaces](hosting-interfaces.md)

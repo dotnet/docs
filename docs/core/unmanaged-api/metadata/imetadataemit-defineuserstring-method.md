@@ -2,56 +2,55 @@
 description: "Learn more about: IMetaDataEmit::DefineUserString Method"
 title: "IMetaDataEmit::DefineUserString Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataEmit.DefineUserString"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataEmit::DefineUserString"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DefineUserString method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineUserString method [.NET Framework metadata]"
-ms.assetid: 88fb7ef3-bbdf-429c-b678-c9c153456461
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineUserString Method
 
-Gets a metadata token for the specified literal string.  
-  
-## Syntax  
-  
-```cpp  
+Gets a metadata token for the specified literal string.
+
+## Syntax
+
+```cpp
 HRESULT DefineUserString (
     [in]  LPCWSTR     szString,
     [in]  ULONG       cchString,
     [out] mdString    *pstk
-);  
-```  
-  
-## Parameters  
+);
+```
 
- `szString`  
- [in] The user string to store.  
-  
- `cchString`  
- [in] The count of wide characters in `szString`.  
-  
- `pstk`  
- [out] The string token assigned.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `szString`
+ [in] The user string to store.
+
+ `cchString`
+ [in] The count of wide characters in `szString`.
+
+ `pstk`
+ [out] The string token assigned.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

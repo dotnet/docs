@@ -12,7 +12,6 @@ f1_keywords:
   - "CorMethodImpl"
 helpviewer_keywords:
   - "CorMethodImpl enumeration [.NET Framework metadata]"
-ms.assetid: ffbb3caf-20da-4a4b-8983-77376e72b990
 topic_type:
   - "apiref"
 ---
@@ -75,7 +74,7 @@ typedef enum CorMethodImpl {
 
  **Header:** CorHdr.h
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET versions:** Available since .NET Framework 1.0
 
 ## See also
 

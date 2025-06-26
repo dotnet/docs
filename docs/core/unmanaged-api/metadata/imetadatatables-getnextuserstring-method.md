@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "GetNextUserString method [.NET Framework metadata]"
   - "IMetaDataTables::GetNextUserString method [.NET Framework metadata]"
-ms.assetid: b7cb40ee-67b7-4f4e-8dcc-ee7ac8bc986b
 topic_type:
   - "apiref"
 ---
@@ -50,7 +49,7 @@ HRESULT GetNextUserString (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET versions:** Available since .NET Framework 1.0
 
 ## See also
 

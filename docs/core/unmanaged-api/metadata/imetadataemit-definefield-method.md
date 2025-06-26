@@ -2,28 +2,27 @@
 description: "Learn more about: IMetaDataEmit::DefineField Method"
 title: "IMetaDataEmit::DefineField Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataEmit.DefineField"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataEmit::DefineField"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataEmit::DefineField method [.NET Framework metadata]"
   - "DefineField method, IMetaDataEmit interface [.NET Framework metadata"
-ms.assetid: 6b5be4fc-2e86-499c-8b09-833160bca767
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::DefineField Method
 
-Creates a definition for a field with the specified metadata signature, and gets a token to that field definition.  
-  
-## Syntax  
-  
-```cpp  
+Creates a definition for a field with the specified metadata signature, and gets a token to that field definition.
+
+## Syntax
+
+```cpp
 HRESULT DefineField (
     [in]  mdTypeDef   td,
     [in]  LPCWSTR     szName,
@@ -34,48 +33,48 @@ HRESULT DefineField (
     [in]  void const  *pValue,
     [in]  ULONG       cchValue,
     [out] mdFieldDef  *pmd
-);  
-```  
-  
-## Parameters  
+);
+```
 
- `td`  
- [in] The `mdTypeDef` token for the enclosing class or interface.  
-  
- `szName`  
- [in] The field name in Unicode.  
-  
- `dwFieldFlags`  
- [in] The field attributes. This is a bitmask of `CorFieldAttr` values.  
-  
- `pvSigBlob`  
- [in] The field signature as a BLOB.  
-  
- `cbSigBlob`  
- [in] The count of bytes in `pvSigBlob`.  
-  
- `dwCPlusTypeFlag`  
- [in] The `ELEMENT_TYPE_`*\** for the constant value. This is a `CorElementType` value. If not defining a constant value for the field, use `ELEMENT_TYPE_END`.  
-  
- `pValue`  
- [in] The constant value for the field.  
-  
- `cchValue`  
- [in] The size in (Unicode) characters of `pValue`.  
-  
- `pmd`  
- [out] The `mdFieldDef` token assigned.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `td`
+ [in] The `mdTypeDef` token for the enclosing class or interface.
+
+ `szName`
+ [in] The field name in Unicode.
+
+ `dwFieldFlags`
+ [in] The field attributes. This is a bitmask of `CorFieldAttr` values.
+
+ `pvSigBlob`
+ [in] The field signature as a BLOB.
+
+ `cbSigBlob`
+ [in] The count of bytes in `pvSigBlob`.
+
+ `dwCPlusTypeFlag`
+ [in] The `ELEMENT_TYPE_`*\** for the constant value. This is a `CorElementType` value. If not defining a constant value for the field, use `ELEMENT_TYPE_END`.
+
+ `pValue`
+ [in] The constant value for the field.
+
+ `cchValue`
+ [in] The size in (Unicode) characters of `pValue`.
+
+ `pmd`
+ [out] The `mdFieldDef` token assigned.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

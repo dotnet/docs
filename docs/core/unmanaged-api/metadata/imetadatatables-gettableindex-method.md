@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "GetTableIndex method [.NET Framework metadata]"
   - "IMetaDataTables::GetTableIndex method [.NET Framework metadata]"
-ms.assetid: c6ec3800-e0d9-4387-afb8-ddc0b818114c
 topic_type:
   - "apiref"
 ---
@@ -50,7 +49,7 @@ HRESULT GetTableIndex (
 
  **Library:** Used as a resource in MsCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ **.NET versions:** Available since .NET Framework 1.0
 
 ## See also
 

@@ -12,7 +12,6 @@ f1_keywords:
   - "CorElementType"
 helpviewer_keywords:
   - "CorElementType enumeration [.NET Framework metadata]"
-ms.assetid: c3809c8f-1737-4f0f-9442-0c01ee689871
 topic_type:
   - "apiref"
 ---
@@ -139,7 +138,7 @@ The type modifiers form the basis for representing more complex types. A `CorEle
 
 **Header:** CorHdr.h
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+**.NET versions:** Available since .NET Framework 1.0
 
 ## See also
 

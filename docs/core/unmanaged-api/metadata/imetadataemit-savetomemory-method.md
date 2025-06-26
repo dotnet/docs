@@ -2,52 +2,51 @@
 description: "Learn more about: IMetaDataEmit::SaveToMemory Method"
 title: "IMetaDataEmit::SaveToMemory Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataEmit.SaveToMemory"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataEmit::SaveToMemory"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataEmit::SaveToMemory method [.NET Framework metadata]"
   - "SaveToMemory method [.NET Framework metadata]"
-ms.assetid: d5237628-2675-45ed-a39e-65c0731b6a56
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataEmit::SaveToMemory Method
 
-Saves all metadata in the current scope to the specified area of memory.  
-  
-## Syntax  
-  
-```cpp  
+Saves all metadata in the current scope to the specified area of memory.
+
+## Syntax
+
+```cpp
 HRESULT SaveToMemory (
     [out]  void        *pbData,
     [in]   ULONG       cbData
-);  
-```  
-  
-## Parameters  
+);
+```
 
- `pbData`  
- [out] The address at which to begin writing metadata.  
-  
- `cbData`  
- [in] The size, in bytes, of the allocated memory.  
-  
-## Requirements  
+## Parameters
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ `pbData`
+ [out] The address at which to begin writing metadata.
+
+ `cbData`
+ [in] The size, in bytes, of the allocated memory.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataEmit Interface](imetadataemit-interface.md)

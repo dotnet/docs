@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "IValidator::Validate method [.NET Framework hosting]"
   - "Validate method, IValidator interface [.NET Framework hosting]"
-ms.assetid: 7d68666a-fb73-4455-bebd-908d49a16abc
 topic_type:
   - "apiref"
 ---
@@ -70,4 +69,4 @@ HRESULT Validate (
 
  **Library:** Included as a resource in MSCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET versions:** Available since .NET Framework 2.0

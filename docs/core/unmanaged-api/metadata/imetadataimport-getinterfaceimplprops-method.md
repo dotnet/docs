@@ -2,45 +2,44 @@
 description: "Learn more about: IMetaDataImport::GetInterfaceImplProps Method"
 title: "IMetaDataImport::GetInterfaceImplProps Method"
 ms.date: "02/25/2019"
-api_name: 
+api_name:
   - "IMetaDataImport.GetInterfaceImplProps"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataImport::GetInterfaceImplProps"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataImport::GetInterfaceImplProps method [.NET Framework metadata]"
   - "GetInterfaceImpProps method [.NET Framework metadata]"
-ms.assetid: be3f5985-b1e4-4036-8602-c16e8508d4af
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataImport::GetInterfaceImplProps Method
 
 Gets a pointer to the metadata tokens for the <xref:System.Type> that implements the specified method, and for the interface that declares that method.
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetInterfaceImplProps (  
-   [in]  mdInterfaceImpl        iiImpl,  
-   [out] mdTypeDef              *pClass,  
-   [out] mdToken                *ptkIface  
-);  
-```  
-  
-## Parameters  
 
- `iiImpl`  
- [in] The metadata token representing the method to return the class and interface tokens for.  
-  
- `pClass`  
- [out] The metadata token representing the class that implements the method.  
-  
- `ptkIface`  
- [out] The metadata token representing the interface that defines the implemented method.  
+## Syntax
+
+```cpp
+HRESULT GetInterfaceImplProps (
+   [in]  mdInterfaceImpl        iiImpl,
+   [out] mdTypeDef              *pClass,
+   [out] mdToken                *ptkIface
+);
+```
+
+## Parameters
+
+ `iiImpl`
+ [in] The metadata token representing the method to return the class and interface tokens for.
+
+ `pClass`
+ [out] The metadata token representing the class that implements the method.
+
+ `ptkIface`
+ [out] The metadata token representing the interface that defines the implemented method.
 
 ## Remarks
 
@@ -69,17 +68,17 @@ Recall, the token is a 4-byte value:
 - The upper byte holds the token type – 0x09 for `mdtInterfaceImpl`.
 
 `GetInterfaceImplProps` returns the information held in the row whose token you provide in the `iImpl` argument.
-  
-## Requirements  
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Included as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Included as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataImport Interface](imetadataimport-interface.md)

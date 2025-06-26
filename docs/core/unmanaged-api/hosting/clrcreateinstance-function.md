@@ -16,7 +16,6 @@ f1_keywords:
 helpviewer_keywords:
   - "CLRCreateInstance function [.NET Framework hosting]"
   - "CreateInterface function"
-ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type:
   - "apiref"
 ---
@@ -101,7 +100,7 @@ hr = createInterface (CLSID_CLRDebugging, IID_ICLRDebugging,  (LPVOID*)&pCLRDebu
 
  **Library:** Included as a resource in MSCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
+ **.NET versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
 
 ## See also
 

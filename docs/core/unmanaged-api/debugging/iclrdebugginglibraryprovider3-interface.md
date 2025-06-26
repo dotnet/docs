@@ -14,7 +14,6 @@ f1_keywords:
   - "ICLRDebuggingLibraryProvider3"
 helpviewer_keywords:
   - "ICLRDebuggingLibraryProvider3 interface [.NET Core debugging]"
-ms.assetid: 67739617-6add-41a9-9de5-a3200c3109ce
 topic_type:
   - "apiref"
 ---

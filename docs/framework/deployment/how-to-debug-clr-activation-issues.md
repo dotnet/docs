@@ -101,7 +101,7 @@ In the following example of an activation log, the most useful information is hi
     532,205950.382,Installed Runtime: v4.0.30319. VERSION_ARCHITECTURE: 0
     ```
 
-- **built with version** is the version of the CLR that was used to build the binary that was provided to a method such as [ICLRMetaHostPolicy::GetRequestedRuntime](../unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md).
+- **built with version** is the version of the CLR that was used to build the binary that was provided to a method such as [ICLRMetaHostPolicy::GetRequestedRuntime](../../core/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md).
 
     ```output
     532,205950.382,C:\Tests\myapp.exe was built with version: v2.0.50727

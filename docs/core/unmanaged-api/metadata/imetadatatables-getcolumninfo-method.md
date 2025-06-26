@@ -2,59 +2,58 @@
 description: "Learn more about: IMetaDataTables::GetColumnInfo Method"
 title: "IMetaDataTables::GetColumnInfo Method"
 ms.date: "10/10/2019"
-api_name: 
+api_name:
   - "IMetaDataTables.GetColumnInfo"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataTables::GetColumnInfo"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "IMetaDataTables::GetColumnInfo method [.NET Framework metadata]"
   - "GetColumnInfo method [.NET Framework metadata]"
-ms.assetid: 68c160ea-ae7d-4750-985d-a038b2c8e7d9
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetColumnInfo Method
 
-Gets data about the specified column in the specified table.  
-  
-## Syntax  
-  
-```cpp  
+Gets data about the specified column in the specified table.
+
+## Syntax
+
+```cpp
 HRESULT GetColumnInfo (
-    [in]  ULONG        ixTbl,  
-    [in]  ULONG        ixCol,  
-    [out] ULONG        *poCol,  
-    [out] ULONG        *pcbCol,  
-    [out] ULONG        *pType,  
-    [out] const char   **ppName  
-);  
-```  
-  
+    [in]  ULONG        ixTbl,
+    [in]  ULONG        ixCol,
+    [out] ULONG        *poCol,
+    [out] ULONG        *pcbCol,
+    [out] ULONG        *pType,
+    [out] const char   **ppName
+);
+```
+
 ## Parameters
 
 =======
 
- `ixTbl`  
- [in] The index of the desired table.  
-  
- `ixCol`  
- [in] The index of the desired column.  
-  
- `poCol`  
- [out] A pointer to the offset of the column in the row.  
-  
- `pcbCol`  
- [out] A pointer to the size, in bytes, of the column.  
-  
- `pType`  
- [out] A pointer to the type of the values in the column.  
-  
- `ppName`  
- [out] A pointer to a pointer to the column name.  
+ `ixTbl`
+ [in] The index of the desired table.
+
+ `ixCol`
+ [in] The index of the desired column.
+
+ `poCol`
+ [out] A pointer to the offset of the column in the row.
+
+ `pcbCol`
+ [out] A pointer to the size, in bytes, of the column.
+
+ `pType`
+ [out] A pointer to the type of the values in the column.
+
+ `ppName`
+ [out] A pointer to a pointer to the column name.
 
 ## Remarks
 
@@ -82,16 +81,16 @@ Values that are stored in the *heap* (that is, `IsHeapType == true`) can be read
 > [!IMPORTANT]
 > To use the constants defined in the table above, include the directive `#define _DEFINE_META_DATA_META_CONSTANTS` provided by the *cor.h* header file.
 
-## Requirements  
+## Requirements
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataTables Interface](imetadatatables-interface.md)

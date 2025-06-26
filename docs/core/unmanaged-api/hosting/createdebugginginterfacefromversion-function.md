@@ -13,13 +13,12 @@ f1_keywords:
   - "CreateDebuggingInterfaceFromVersion"
 helpviewer_keywords:
   - "CreateDebuggingInterfaceFromVersion function [.NET Framework hosting]"
-ms.assetid: a746a849-463c-44f5-a2f0-9e812ed8bcc3
 topic_type:
   - "apiref"
 ---
 # CreateDebuggingInterfaceFromVersion Function (.NET Framework)
 
-Creates an [ICorDebug](../debugging/icordebug-interface.md) object based on the specified version information.
+Creates an [ICorDebug](../../../framework/debuggingicordebug-interface.md) object based on the specified version information.
 
  This function is obsolete in the .NET Framework 4. Instead, to get an interface for the common language runtime (CLR) 2.0, use the [ICLRRuntimeInfo::GetInterface](iclrruntimeinfo-getinterface-method.md) method and specify the class identifier CLSID_CLRDebuggingLegacy and the interface identifier IID_ICorDebug. To get an interface for CLR 4 or later, call the [CLRCreateInstance](clrcreateinstance-function.md) function and specify the class identifier CLSID_CLRDebugging and the interface identifier IID_ICLRDebugging.
 
@@ -36,7 +35,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 ## Parameters
 
  `iDebuggerVersion`\
- [in] The version of `ICorDebug` that is expected by the debugger. See the [CorDebugInterfaceVersion](../debugging/cordebuginterfaceversion-enumeration.md) enumeration for valid values.
+ [in] The version of `ICorDebug` that is expected by the debugger. See the [CorDebugInterfaceVersion](../../../framework/debuggingcordebuginterfaceversion-enumeration.md) enumeration for valid values.
 
  `szDebuggeeVersion`\
  [in] The common language runtime version associated with the application or process to be debugged. See the [GetVersionFromProcess](getversionfromprocess-function.md) or [GetRequestedRuntimeVersion](getrequestedruntimeversion-function.md) method for information on retrieving this value.
@@ -65,7 +64,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 
  **Library:** MSCorEE.dll
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]
+ **.NET versions:** Available since .NET Framework 2.0
 
 ## See also
 

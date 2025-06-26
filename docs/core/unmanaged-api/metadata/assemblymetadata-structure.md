@@ -2,66 +2,65 @@
 description: "Learn more about: ASSEMBLYMETADATA Structure"
 title: "ASSEMBLYMETADATA Structure"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ASSEMBLYMETADATA"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ASSEMBLYMETADATA"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ASSEMBLYMETADATA structure [.NET Framework metadata]"
-ms.assetid: 1af98e57-9145-4d35-bb78-77d1da7c91a5
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # ASSEMBLYMETADATA Structure
 
-Contains information about the referenced assembly, including its version and its level of support for locales, processors, and operating systems.  
-  
-## Syntax  
-  
-```cpp  
-typedef struct {  
-    USHORT  usMajorVersion;  
-    USHORT  usMinorVersion;  
-    USHORT  usBuildNumber;  
-    USHORT  usRevisionNumber;  
-    LPWSTR  szLocale;  
-    ULONG   cbLocale;  
-    DWORD*  rdwProcessor[];  
-    ULONG   ulProcessor  
-    OSINFO* rOS[];  
-    ULONG   ulOS;  
-} ASSEMBLYMETADATA;  
-```  
-  
-## Members  
-  
-|Member|Description|  
-|------------|-----------------|  
-|`usMajorVersion`|The major version number of the referenced assembly. This value cannot be zero. If all the bits of `usMajorVersion` are set, the major version is not specified.|  
-|`usMinorVersion`|The minor version number of the referenced assembly. This value cannot be zero. If all the bits of `usMinorVersion` are set, the minor version is not specified.|  
-|`usBuildNumber`|The build number of the referenced assembly. This value cannot be zero. If all the bits of `usBuildNumber` are set, the build number is not specified.|  
-|`usRevisionNumber`|The revision number of the referenced assembly. This value cannot be zero. If all the bits of `usRevisionNumber` are set, the revision number is not specified.|  
-|`szLocale`|A list of locale names conforming to the RFC1766 specification, separated by semicolons, specifying the locales supported by the referenced assembly. A null value indicates locale independence. **Note:**  In the .NET Framework version 1.0 you cannot specify more than one locale.|  
-|`cbLocale`|The size in wide characters of `szLocale`.|  
-|`rdwProcessor`|An array of identifiers, as defined in Winnt.h, for the processor types that are supported by the referenced assembly. A NULL value indicates processor independence.|  
-|`ulProcessor`|The length of the `rdwProcessor` array.|  
-|`rOS`|An array of [OSINFO](osinfo-structure.md) instances specifying the operating systems that are supported by the referenced assembly. A NULL value indicates operating-system independence.|  
-|`ulOS`|The length of the `rOS` array.|  
-  
-## Requirements  
+Contains information about the referenced assembly, including its version and its level of support for locales, processors, and operating systems.
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+## Syntax
+
+```cpp
+typedef struct {
+    USHORT  usMajorVersion;
+    USHORT  usMinorVersion;
+    USHORT  usBuildNumber;
+    USHORT  usRevisionNumber;
+    LPWSTR  szLocale;
+    ULONG   cbLocale;
+    DWORD*  rdwProcessor[];
+    ULONG   ulProcessor
+    OSINFO* rOS[];
+    ULONG   ulOS;
+} ASSEMBLYMETADATA;
+```
+
+## Members
+
+|Member|Description|
+|------------|-----------------|
+|`usMajorVersion`|The major version number of the referenced assembly. This value cannot be zero. If all the bits of `usMajorVersion` are set, the major version is not specified.|
+|`usMinorVersion`|The minor version number of the referenced assembly. This value cannot be zero. If all the bits of `usMinorVersion` are set, the minor version is not specified.|
+|`usBuildNumber`|The build number of the referenced assembly. This value cannot be zero. If all the bits of `usBuildNumber` are set, the build number is not specified.|
+|`usRevisionNumber`|The revision number of the referenced assembly. This value cannot be zero. If all the bits of `usRevisionNumber` are set, the revision number is not specified.|
+|`szLocale`|A list of locale names conforming to the RFC1766 specification, separated by semicolons, specifying the locales supported by the referenced assembly. A null value indicates locale independence. **Note:**  In the .NET Framework version 1.0 you cannot specify more than one locale.|
+|`cbLocale`|The size in wide characters of `szLocale`.|
+|`rdwProcessor`|An array of identifiers, as defined in Winnt.h, for the processor types that are supported by the referenced assembly. A NULL value indicates processor independence.|
+|`ulProcessor`|The length of the `rdwProcessor` array.|
+|`rOS`|An array of [OSINFO](osinfo-structure.md) instances specifying the operating systems that are supported by the referenced assembly. A NULL value indicates operating-system independence.|
+|`ulOS`|The length of the `rOS` array.|
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [Metadata Structures](metadata-structures.md)

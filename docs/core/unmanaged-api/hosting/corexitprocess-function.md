@@ -2,58 +2,57 @@
 description: "Learn more about: CorExitProcess Function"
 title: "CorExitProcess Function"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "CorExitProcess"
-api_location: 
+api_location:
   - "mscoree.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
   - "mscorsvr.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "CorExitProcess"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CorExitProcess function [.NET Framework hosting]"
-ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # CorExitProcess Function
 
-Shuts down the current unmanaged process.  
-  
- This function has been deprecated in the .NET Framework 4. Use the [ICLRMetaHost::ExitProcess](iclrmetahost-exitprocess-method.md) method instead.  
-  
-## Syntax  
-  
-```cpp  
+Shuts down the current unmanaged process.
+
+ This function has been deprecated in the .NET Framework 4. Use the [ICLRMetaHost::ExitProcess](iclrmetahost-exitprocess-method.md) method instead.
+
+## Syntax
+
+```cpp
 void STDMETHODCALLTYPE CorExitProcess (
-  int  exitCode  
-);  
-```  
-  
-## Parameters  
+  int  exitCode
+);
+```
 
- `exitCode`  
- An integer that specifies the process exit code.  
-  
-## Remarks  
-  
+## Parameters
+
+ `exitCode`
+ An integer that specifies the process exit code.
+
+## Remarks
+
 > [!NOTE]
-> Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.  
-  
-## Requirements  
+> Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** MSCorEE.h  
-  
- **Library:** MSCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** MSCorEE.h
+
+ **Library:** MSCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

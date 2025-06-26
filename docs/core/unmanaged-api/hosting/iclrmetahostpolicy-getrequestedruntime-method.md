@@ -13,7 +13,6 @@ f1_keywords:
 helpviewer_keywords:
   - "GetRequestedRuntime method [.NET Framework hosting]"
   - "ICLRMetaHostPolicy::GetRequestedRuntime method [.NET Framework hosting]"
-ms.assetid: 59ec1832-9cc1-4b5c-983d-03407e51de56
 topic_type:
   - "apiref"
 ---
@@ -49,7 +48,7 @@ HRESULT GetRequestedRuntime(
 |`pcchVersion`|[in, out] Required. Specifies the expected size of `pwzVersion` as input, to avoid buffer overruns. If `pwzVersion` is null, `pcchVersion` contains the expected size of `pwzVersion` when `GetRequestedRuntime` returns, to allow pre-allocation; otherwise, `pcchVersion` contains the number of characters written to `pwzVersion`.|
 |`pwzImageVersion`|[out] Optional. When `GetRequestedRuntime` returns, contains the CLR version corresponding to the [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface that is returned.|
 |`pcchImageVersion`|[in, out] Optional. Specifies the size of `pwzImageVersion` as input to avoid buffer overruns. If `pwzImageVersion` is null, `pcchImageVersion` contains the required size of `pwzImageVersion` when `GetRequestedRuntime` returns, to allow pre-allocation.|
-|`pdwConfigFlags`|[out] Optional. If `GetRequestedRuntime` uses a configuration file during the binding process, when it returns, `pdwConfigFlags` contains a [METAHOST_CONFIG_FLAGS](metahost-config-flags-enumeration.md) value that indicates whether the [\<startup>](../../configure-apps/file-schema/startup/startup-element.md) element has the `useLegacyV2RuntimeActivationPolicy` attribute set, and the value of the attribute. Apply the [METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_MASK](metahost-config-flags-enumeration.md) mask to `pdwConfigFlags` to get the values relevant to `useLegacyV2RuntimeActivationPolicy`.|
+|`pdwConfigFlags`|[out] Optional. If `GetRequestedRuntime` uses a configuration file during the binding process, when it returns, `pdwConfigFlags` contains a [METAHOST_CONFIG_FLAGS](metahost-config-flags-enumeration.md) value that indicates whether the [\<startup>](../../../framework/configure-apps/file-schema/startup/startup-element.md) element has the `useLegacyV2RuntimeActivationPolicy` attribute set, and the value of the attribute. Apply the [METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_MASK](metahost-config-flags-enumeration.md) mask to `pdwConfigFlags` to get the values relevant to `useLegacyV2RuntimeActivationPolicy`.|
 |`riid`|[in] Specifies the interface identifier IID_ICLRRuntimeInfo for the requested [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface.|
 |`ppRuntime`|[out] When `GetRequestedRuntime` returns, contains a pointer to the corresponding [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface.|
 
@@ -85,7 +84,7 @@ This method returns the following specific HRESULTs as well as HRESULT errors th
 
 **Library:** Included as a resource in MSCorEE.dll
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
+**.NET versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]
 
 ## See also
 

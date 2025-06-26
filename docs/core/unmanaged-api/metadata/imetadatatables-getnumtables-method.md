@@ -2,48 +2,47 @@
 description: "Learn more about: IMetaDataTables::GetNumTables Method"
 title: "IMetaDataTables::GetNumTables Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IMetaDataTables.GetNumTables"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "IMetaDataTables::GetNumTables"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GetNumTables method [.NET Framework metadata]"
   - "IMetaDataTables::GetNumTables method [.NET Framework metadata]"
-ms.assetid: 8196f2a3-bbf2-45d3-a6cd-74502c356644
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # IMetaDataTables::GetNumTables Method
 
-Gets the number of tables in the scope of the current `IMetaDataTables` instance.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetNumTables (  
-    [out]  ULONG   *pcTables  
-);  
-```  
-  
-## Parameters  
+Gets the number of tables in the scope of the current `IMetaDataTables` instance.
 
- `pcTables`  
- [out] A pointer to the number of tables in the current instance scope.  
-  
-## Requirements  
+## Syntax
 
- **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).  
-  
- **Header:** Cor.h  
-  
- **Library:** Used as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+```cpp
+HRESULT GetNumTables (
+    [out]  ULONG   *pcTables
+);
+```
+
+## Parameters
+
+ `pcTables`
+ [out] A pointer to the number of tables in the current instance scope.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../../framework/get-started/system-requirements.md).
+
+ **Header:** Cor.h
+
+ **Library:** Used as a resource in MsCorEE.dll
+
+ **.NET versions:** Available since .NET Framework 1.0
+
 ## See also
 
 - [IMetaDataTables Interface](imetadatatables-interface.md)

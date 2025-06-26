@@ -21,15 +21,10 @@ The CLR provides logging infrastructure to help you debug CLR activation issues,
 The CLR activation APIs return HRESULT codes to report the result of an activation operation to a host. CLR hosts should always consult these return values before proceeding with additional operations.
 
 - CLR_E_SHIM_RUNTIMELOAD
-
 - CLR_E_SHIM_RUNTIMEEXPORT
-
 - CLR_E_SHIM_INSTALLROOT
-
 - CLR_E_SHIM_INSTALLCOMP
-
 - CLR_E_SHIM_LEGACYRUNTIMEALREADYBOUND
-
 - CLR_E_SHIM_SHUTDOWNINPROGRESS
 
 ## UI for initialization errors
@@ -52,15 +47,15 @@ To resolve the underlying issues and provide the best user experience (fewer err
 
 Displaying an error message to communicate that a requested .NET Framework version was not found can be viewed as either a helpful service or a minor annoyance to users. In either case, you can control this UI by passing flags to the activation APIs.
 
-The [ICLRMetaHostPolicy::GetRequestedRuntime](../unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method accepts a [METAHOST_POLICY_FLAGS](../unmanaged-api/hosting/metahost-policy-flags-enumeration.md) enumeration member as input. You can include the METAHOST_POLICY_SHOW_ERROR_DIALOG flag to request an error message if the requested version of the CLR is not found. By default, the error message is not displayed. (The [ICLRMetaHost::GetRuntime](../unmanaged-api/hosting/iclrmetahost-getruntime-method.md) method does not accept this flag, and does not provide any other way to display the error message.)
+The [ICLRMetaHostPolicy::GetRequestedRuntime](../../core/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method accepts a [METAHOST_POLICY_FLAGS](../../core/unmanaged-api/hosting/metahost-policy-flags-enumeration.md) enumeration member as input. You can include the METAHOST_POLICY_SHOW_ERROR_DIALOG flag to request an error message if the requested version of the CLR is not found. By default, the error message is not displayed. (The [ICLRMetaHost::GetRuntime](../../core/unmanaged-api/hosting/iclrmetahost-getruntime-method.md) method does not accept this flag, and does not provide any other way to display the error message.)
 
 Windows provides a [SetErrorMode](/windows/win32/api/errhandlingapi/nf-errhandlingapi-seterrormode) function that you can use to declare whether you want error messages to be shown as a result of code that runs within your process. You can specify the SEM_FAILCRITICALERRORS flag to prevent the error message from being displayed.
 
 However, in some scenarios, it is important to override the SEM_FAILCRITICALERRORS setting set by an application process. For example, if you have a native COM component that hosts the CLR and that is hosted in a process where SEM_FAILCRITICALERRORS is set, you may want to override the flag, depending on the impact of displaying error messages within that particular application process. In this case, you can use one of the following flags to override SEM_FAILCRITICALERRORS:
 
-- Use METAHOST_POLICY_IGNORE_ERROR_MODE with the [ICLRMetaHostPolicy::GetRequestedRuntime](../unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method.
+- Use METAHOST_POLICY_IGNORE_ERROR_MODE with the [ICLRMetaHostPolicy::GetRequestedRuntime](../../core/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method.
 
-- Use RUNTIME_INFO_IGNORE_ERROR_MODE with the [GetRequestedRuntimeInfo](../unmanaged-api/hosting/getrequestedruntimeinfo-function.md) function.
+- Use RUNTIME_INFO_IGNORE_ERROR_MODE with the [GetRequestedRuntimeInfo](../../core/unmanaged-api/hosting/getrequestedruntimeinfo-function.md) function.
 
 ## UI policy for CLR-provided hosts
 

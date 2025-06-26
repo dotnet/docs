@@ -1,16 +1,18 @@
 ---
-description: "Learn more about: Hosting (Unmanaged API Reference)"
-title: "Hosting (Unmanaged API Reference)"
-ms.date: "03/30/2017"
+description: "Learn more about unmanaged APIs for .NET hosting"
+title: ".NET hosting (unmanaged API reference)"
+ms.date: "09/19/2023"
 helpviewer_keywords: 
-  - "unmanaged API reference [.NET Framework], hosting"
-  - "native API reference [.NET Framework], hosting"
-  - "hosting [.NET Framework], using the unmanaged API"
+  - "unmanaged API reference [.NET], hosting"
+  - "native API reference [.NET], hosting"
+  - "hosting [.NET], using the unmanaged API"
 ms.assetid: 14295c28-1da8-408b-a656-9584abcd9896
 ---
-# Hosting (Unmanaged API Reference)
+# .NET hosting (unmanaged API reference)
 
-The hosting API enables unmanaged hosts to integrate the common language runtime (CLR) into their applications.  
+The hosting API enables unmanaged hosts to integrate the common language runtime (CLR) into their applications.
+
+These articles describe APIs that can be used with both .NET Framework and .NET. For .NET Framework-specific unmanaged APIs, see [.NET Framework hosting](../../../framework/unmanaged-api/hosting/index.md).
   
 ## In This Section  
 

@@ -1,6 +1,6 @@
 ---
-description: "Learn more about: Unmanaged API Reference"
-title: "Unmanaged API Reference"
+description: "Learn more about: .NET Framework unmanaged API reference"
+title: ".NET Framework unmanaged API reference"
 ms.date: "11/06/2017"
 helpviewer_keywords:
   - "runtime, unmanaged APIs"
@@ -9,9 +9,11 @@ helpviewer_keywords:
   - "unmanaged API reference [.NET Framework]"
 ms.assetid: 9aa000ee-c04c-492c-ae4f-83ecdf4fdbbe
 ---
-# Unmanaged API Reference
+# .NET Framework unmanaged API reference
 
 This section includes information on unmanaged APIs that can be used by managed-code-related applications, such as runtime hosts, compilers, disassemblers, obfuscators, debuggers, and profilers.
+
+For unmanaged APIs that can be used with both .NET Framework and .NET, see [.NET unmanaged API reference](../../core/unmanaged-api/index.md).
 
 ## In This Section
 
@@ -39,11 +41,11 @@ This section includes information on unmanaged APIs that can be used by managed-
  [Fusion](./fusion/index.md)
  Describes the fusion API, which enables a runtime host to access the properties of an application's resources in order to locate the correct versions of those resources for the application.
 
- [Hosting](./hosting/index.md)
- Describes the hosting API, which enables unmanaged hosts to integrate the CLR into their applications.
+ [Hosting](../../core/unmanaged-api/hosting/index.md)
+ For hosting APIs that can be used with both .NET Framework and .NET, see the .NET unmanaged API reference.
 
- [Metadata](./metadata/index.md)
- Describes the metadata API, which enables a client such as a compiler to generate or access a component's metadata without the types being loaded by the CLR.
+ [Metadata](../../core/unmanaged-api/metadata/index.md)
+ For metadata APIs that can be used with both .NET Framework and .NET, see the .NET unmanaged API reference.
 
  [Profiling](./profiling/index.md)
  Describes the profiling API, which enables a profiler to monitor a program's execution by the CLR.

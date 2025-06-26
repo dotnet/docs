@@ -54,6 +54,8 @@ items:
                 href: globalization/10.0/version-override.md
           - name: Interop
             items:
+              - name: Single-file apps no longer look for native libraries in executable directory
+                href: interop/10.0/native-library-search.md
               - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
                 href: interop/10.0/search-assembly-directory.md
           - name: Networking

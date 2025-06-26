@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - X509Certificate and PublicKey key parameters can be null"
-description: "Learn about the breaking change in .NET 10 Preview 3 where key parameters in X509Certificate and PublicKey can be null."
+description: "Learn about the breaking change in .NET 10 where key parameters in X509Certificate and PublicKey can be null."
 ms.date: 3/13/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/45325

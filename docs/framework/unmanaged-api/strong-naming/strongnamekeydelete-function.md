@@ -21,7 +21,7 @@ topic_type:
 
 Deletes the specified key container.
 
-This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyDelete](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamekeydelete-method.md) method instead.
+This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyDelete](../hosting/iclrstrongname-strongnamekeydelete-method.md) method instead.
 
 ## Syntax
 
@@ -58,6 +58,6 @@ If the `StrongNameKeyDelete` function does not complete successfully, call the [
 
 ## See also
 
-- [StrongNameKeyDelete Method](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamekeydelete-method.md)
-- [StrongNameKeyInstall Method](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md)
-- [ICLRStrongName Interface](../../../core/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameKeyDelete Method](../hosting/iclrstrongname-strongnamekeydelete-method.md)
+- [StrongNameKeyInstall Method](../hosting/iclrstrongname-strongnamekeyinstall-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

@@ -21,7 +21,7 @@ topic_type:
 
 Imports a public/private key pair into a container.
 
-This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyInstall](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md) method instead.
+This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyInstall](../hosting/iclrstrongname-strongnamekeyinstall-method.md) method instead.
 
 ## Syntax
 
@@ -66,6 +66,6 @@ If the `StrongNameKeyInstall` function does not complete successfully, call the 
 
 ## See also
 
-- [StrongNameKeyInstall Method](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md)
-- [StrongNameKeyDelete Method](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamekeydelete-method.md)
-- [ICLRStrongName Interface](../../../core/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [StrongNameKeyInstall Method](../hosting/iclrstrongname-strongnamekeyinstall-method.md)
+- [StrongNameKeyDelete Method](../hosting/iclrstrongname-strongnamekeydelete-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

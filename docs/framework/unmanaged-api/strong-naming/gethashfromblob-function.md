@@ -21,7 +21,7 @@ topic_type:
 
 Gets a hash of the assembly at the specified memory address, using the specified hash algorithm.
 
-This function has been deprecated. Use the [ICLRStrongName::GetHashFromBlob](../../../core/unmanaged-api/hosting/iclrstrongname-gethashfromblob-method.md) method instead.
+This function has been deprecated. Use the [ICLRStrongName::GetHashFromBlob](../hosting/iclrstrongname-gethashfromblob-method.md) method instead.
 
 ## Syntax
 
@@ -68,5 +68,5 @@ HRESULT GetHashFromBlob (
 
 ## See also
 
-- [GetHashFromBlob Method](../../../core/unmanaged-api/hosting/iclrstrongname-gethashfromblob-method.md)
-- [ICLRStrongName Interface](../../../core/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [GetHashFromBlob Method](../hosting/iclrstrongname-gethashfromblob-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

@@ -40,7 +40,7 @@ typedef enum CorDebugThreadState {
 
  The debugger uses the `CorDebugThreadState` enumeration to control a thread's execution. The state of a thread can be set by using the [ICorDebugThread::SetDebugState](icordebugthread-setdebugstate-method.md) or [ICorDebugController::SetAllThreadsDebugState](icordebugcontroller-setallthreadsdebugstate-method.md) method.
 
- A callback provided to the [hosting API](../../../core/unmanaged-api/hosting/index.md) enables message pumping, so an interrupted state is not needed.
+ A callback provided to the [hosting API](../hosting/index.md) enables message pumping, so an interrupted state is not needed.
 
 ## Requirements
 

@@ -52,7 +52,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
 
 ## Remarks
 
- Application domain resource monitoring is available through the managed application domain class, the hosting [ICLRAppDomainResourceMonitor](../../../../core/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) interface, and event tracing for Windows (ETW). When monitoring is enabled, statistics are collected for all application domains in the process for the life of the process.
+ Application domain resource monitoring is available through the managed application domain class, the hosting [ICLRAppDomainResourceMonitor](../../../unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) interface, and event tracing for Windows (ETW). When monitoring is enabled, statistics are collected for all application domains in the process for the life of the process.
 
  To enable monitoring from managed code, use the <xref:System.AppDomain.MonitoringIsEnabled%2A> property.
 

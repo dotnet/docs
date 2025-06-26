@@ -29,7 +29,7 @@ Provides methods that handle loading and unloading modules for debugging.
 
 ## Remarks
 
- You can obtain an instance of the `ICLRDebugging` interface by using the [CLRCreateInstance](../../../core/unmanaged-api/hosting/clrcreateinstance-function.md) function.
+ You can obtain an instance of the `ICLRDebugging` interface by using the [CLRCreateInstance](../hosting/clrcreateinstance-function.md) function.
 
 ## Requirements
 

@@ -26,10 +26,10 @@ This section describes the unmanaged enumerations that the metadata API uses.
  Provides values to influence the type of `reloc` instruction emitted in a call to the [ICeeGen::AddSectionReloc](iceegen-addsectionreloc-method.md) method.
 
  [COINITICOR Enumeration](coiniticor-enumeration.md)
- Specifies constants used by [CoInitializeCor](../hosting/coinitializecor-function.md) when initializing the common language runtime.
+ Specifies constants used by [CoInitializeCor](../../../framework/unmanaged-api/hosting/coinitializecor-function.md) when initializing the common language runtime.
 
  [COINITIEE Enumeration](coinitiee-enumeration.md)
- Specifies constants used by [CoInitializeEE](../hosting/coinitializeee-function.md) when initializing the common language runtime.
+ Specifies constants used by [CoInitializeEE](../../../framework/unmanaged-api/hosting/coinitializeee-function.md) when initializing the common language runtime.
 
  [CorArgType Enumeration](corargtype-enumeration.md)
  Contains values that describe the native type of a runtime handle.
@@ -149,7 +149,7 @@ This section describes the unmanaged enumerations that the metadata API uses.
  Provides values used by the [IMetaDataValidate](imetadatavalidate-interface.md) interface to specify the type of the module (PE file vs. .obj file).
 
  [COUNINITIEE Enumeration](couninitiee-enumeration.md)
- Specifies constants used by [CoUninitializeEE](../hosting/couninitializeee-function.md) when initializing the common language runtime.
+ Specifies constants used by [CoUninitializeEE](../../../framework/unmanaged-api/hosting/couninitializeee-function.md) when initializing the common language runtime.
 
 ## Related Sections
 

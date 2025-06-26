@@ -61,7 +61,7 @@ None.
  Applications built to support only version 1.0 of the runtime must use the `<requiredRuntime>` element. Applications built using version 1.1 or later of the runtime must use the `<supportedRuntime>` element.
 
 > [!NOTE]
-> If you use the [CorBindToRuntimeByCfg](../../../../core/unmanaged-api/hosting/corbindtoruntimebycfg-function.md) function to specify the configuration file, you must use the `<requiredRuntime>` element for all versions of the runtime. The `<supportedRuntime>` element is ignored when you use [CorBindToRuntimeByCfg](../../../../core/unmanaged-api/hosting/corbindtoruntimebycfg-function.md).
+> If you use the [CorBindToRuntimeByCfg](../../../unmanaged-api/hosting/corbindtoruntimebycfg-function.md) function to specify the configuration file, you must use the `<requiredRuntime>` element for all versions of the runtime. The `<supportedRuntime>` element is ignored when you use [CorBindToRuntimeByCfg](../../../unmanaged-api/hosting/corbindtoruntimebycfg-function.md).
 
  The `version` attribute string must match the installation folder name for the specified version of the .NET Framework. This string is not interpreted. If the runtime startup code does not find a matching folder, the runtime is not loaded; the startup code shows an error message and quits.
 

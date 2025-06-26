@@ -40,7 +40,7 @@ HRESULT DestroyConnection (
 
 ## Remarks
 
- A `DestroyConnection` callback will be fired when a host calls [ICLRDebugManager::EndConnection](../../../core/unmanaged-api/hosting/iclrdebugmanager-endconnection-method.md) in the [Hosting API](../../../core/unmanaged-api/hosting/index.md).
+ A `DestroyConnection` callback will be fired when a host calls [ICLRDebugManager::EndConnection](../hosting/iclrdebugmanager-endconnection-method.md) in the [Hosting API](../hosting/index.md).
 
 ## Requirements
 

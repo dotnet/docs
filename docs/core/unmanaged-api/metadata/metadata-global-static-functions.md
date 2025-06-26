@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Metadata Global Static Functions
 
-Beginning with the .NET Framework 4, the documentation for the `_Cor*`, `CoInitialize*`, `CoUninitialize*`, and `CoEEShutDownCOM` functions, which pertain to hosting, is located in [Deprecated CLR Hosting Functions](../hosting/deprecated-clr-hosting-functions.md). There are no global static functions that pertain to metadata.
+Beginning with the .NET Framework 4, the documentation for the `_Cor*`, `CoInitialize*`, `CoUninitialize*`, and `CoEEShutDownCOM` functions, which pertain to hosting, is located in [Deprecated CLR Hosting Functions](../../../framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md). There are no global static functions that pertain to metadata.
 
 ## Related Sections
 

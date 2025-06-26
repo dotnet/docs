@@ -41,7 +41,7 @@ Provides methods that allow developers to debug applications in the common langu
 
  `ICorDebug` represents an event processing loop for a debugger process. The debugger must wait for the [ICorDebugManagedCallback::ExitProcess](icordebugmanagedcallback-exitprocess-method.md) callback from all processes being debugged before releasing this interface.
 
- The `ICorDebug` object is the initial object to control all further managed debugging. In the .NET Framework versions 1.0 and 1.1, this object was a `CoClass` object created from COM. In .NET Framework version 2.0, this object is no longer a `CoClass` object. It must be created by the [CreateDebuggingInterfaceFromVersion](../../../core/unmanaged-api/hosting/createdebugginginterfacefromversion-function.md) function, which is more version-aware. This new creation function enables clients to get a specific implementation of `ICorDebug`, which also emulates a specific version of the debugging API.
+ The `ICorDebug` object is the initial object to control all further managed debugging. In the .NET Framework versions 1.0 and 1.1, this object was a `CoClass` object created from COM. In .NET Framework version 2.0, this object is no longer a `CoClass` object. It must be created by the [CreateDebuggingInterfaceFromVersion](../hosting/createdebugginginterfacefromversion-function.md) function, which is more version-aware. This new creation function enables clients to get a specific implementation of `ICorDebug`, which also emulates a specific version of the debugging API.
 
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.

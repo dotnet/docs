@@ -59,7 +59,7 @@ Operating systems and runtime environments typically provide some form of isolat
 
 - If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded. However, the assembly can be unloaded from the process by unloading all the application domains in which it is loaded.
 
- The runtime host determines whether to load assemblies as domain-neutral when it loads the runtime into a process. For managed applications, apply the <xref:System.LoaderOptimizationAttribute> attribute to the entry-point method for the process, and specify a value from the associated <xref:System.LoaderOptimization> enumeration. For unmanaged applications that host the common language runtime, specify the appropriate flag when you call the [CorBindToRuntimeEx Function](../../core/unmanaged-api/hosting/corbindtoruntimeex-function.md) method.
+ The runtime host determines whether to load assemblies as domain-neutral when it loads the runtime into a process. For managed applications, apply the <xref:System.LoaderOptimizationAttribute> attribute to the entry-point method for the process, and specify a value from the associated <xref:System.LoaderOptimization> enumeration. For unmanaged applications that host the common language runtime, specify the appropriate flag when you call the [CorBindToRuntimeEx Function](../unmanaged-api/hosting/corbindtoruntimeex-function.md) method.
 
  There are three options for loading domain-neutral assemblies:
 

@@ -17,7 +17,7 @@ topic_type:
 ---
 # COINITIEE Enumeration
 
-Specifies constants used by [CoInitializeEE](../hosting/coinitializeee-function.md) when initializing the common language runtime.
+Specifies constants used by [CoInitializeEE](../../../framework/unmanaged-api/hosting/coinitializeee-function.md) when initializing the common language runtime.
 
 ## Syntax
 

@@ -17,7 +17,7 @@ topic_type:
 ---
 # COINITICOR Enumeration
 
-Specifies constants used by [CoInitializeCor](../hosting/coinitializecor-function.md) when it initializes the common language runtime.
+Specifies constants used by [CoInitializeCor](../../../framework/unmanaged-api/hosting/coinitializecor-function.md) when it initializes the common language runtime.
 
 ## Syntax
 

@@ -70,5 +70,5 @@ HRESULT CertVerifyAuthenticodeLicense (
 ## See also
 
 - [Authenticode](index.md)
-- [GetHashFromHandle Method](../../../core/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)
-- [ICLRStrongName Interface](../../../core/unmanaged-api/hosting/iclrstrongname-interface.md)
+- [GetHashFromHandle Method](../hosting/iclrstrongname-gethashfromhandle-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

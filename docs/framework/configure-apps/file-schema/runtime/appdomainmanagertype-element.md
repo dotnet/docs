@@ -79,4 +79,4 @@ Specifies the type that serves as the application domain manager for the default
 - [\<appDomainManagerAssembly> Element](appdomainmanagerassembly-element.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
-- [SetAppDomainManagerType Method](../../../../core/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)
+- [SetAppDomainManagerType Method](../../../unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

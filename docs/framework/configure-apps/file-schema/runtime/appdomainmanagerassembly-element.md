@@ -79,4 +79,4 @@ Specifies the assembly that provides the application domain manager for the defa
 - [\<appDomainManagerType> Element](appdomainmanagertype-element.md)
 - [Runtime Settings Schema](index.md)
 - [Configuration File Schema](../index.md)
-- [SetAppDomainManagerType Method](../../../../core/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)
+- [SetAppDomainManagerType Method](../../../unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

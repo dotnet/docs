@@ -22,7 +22,7 @@ Reflection emit provides the following capabilities:
 - Define types in modules at run time, create instances of these types, and invoke their methods.
 - Define symbolic information for defined modules that can be used by tools such as debuggers and code profilers.
 
-In addition to the managed types in the <xref:System.Reflection.Emit> namespace, there are unmanaged metadata interfaces that are described in the [Metadata Interfaces](../../framework/unmanaged-api/metadata/metadata-interfaces.md) reference documentation. Managed reflection emit provides stronger semantic error checking and a higher level of abstraction of the metadata than the unmanaged metadata interfaces.
+In addition to the managed types in the <xref:System.Reflection.Emit> namespace, there are unmanaged metadata interfaces that are described in the [Metadata Interfaces](../../core/unmanaged-api/metadata/metadata-interfaces.md) reference documentation. Managed reflection emit provides stronger semantic error checking and a higher level of abstraction of the metadata than the unmanaged metadata interfaces.
 
 Another useful resource for working with metadata and CIL is the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online at the [Ecma Web site](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/).
 

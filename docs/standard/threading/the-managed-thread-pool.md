@@ -38,7 +38,7 @@ The number of operations that can be queued to the thread pool is limited only b
 You can control the maximum number of threads by using the <xref:System.Threading.ThreadPool.GetMaxThreads%2A?displayProperty=nameWithType> and <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> methods.  
 
 > [!NOTE]
-> Code that hosts the common language runtime can set the size using the [`ICorThreadpool::CorSetMaxThreads`](../../framework/unmanaged-api/hosting/icorthreadpool-corsetmaxthreads-method.md) method.  
+> Code that hosts the common language runtime can set the size using the [`ICorThreadpool::CorSetMaxThreads`](../../core/unmanaged-api/hosting/icorthreadpool-corsetmaxthreads-method.md) method.  
   
 ### Thread pool minimums
 
@@ -56,7 +56,7 @@ When a minimum is reached, the thread pool can create additional threads or wait
 
 The easiest way to use the thread pool is to use the [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md). By default, TPL types like <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> use thread pool threads to run tasks.
 
-You can also use the thread pool by calling <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=nameWithType> from managed code (or [`ICorThreadpool::CorQueueUserWorkItem`](../../framework/unmanaged-api/hosting/icorthreadpool-corqueueuserworkitem-method.md) from unmanaged code) and passing a <xref:System.Threading.WaitCallback?displayProperty=nameWithType> delegate representing the method that performs the task.
+You can also use the thread pool by calling <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=nameWithType> from managed code (or [`ICorThreadpool::CorQueueUserWorkItem`](../../core/unmanaged-api/hosting/icorthreadpool-corqueueuserworkitem-method.md) from unmanaged code) and passing a <xref:System.Threading.WaitCallback?displayProperty=nameWithType> delegate representing the method that performs the task.
 
 Another way to use the thread pool is to queue work items that are related to a wait operation by using the <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A?displayProperty=nameWithType> method and passing a <xref:System.Threading.WaitHandle?displayProperty=nameWithType> that, when signaled or when timed out, calls the method represented by the <xref:System.Threading.WaitOrTimerCallback?displayProperty=nameWithType> delegate. Thread pool threads are used to invoke callback methods.  
 

@@ -910,8 +910,7 @@
                 "docs/ai/**/**.yml": "ce-skilling-ai-copilot"
             },
             "ms.update-cycle": {
-                "docs/ai/**/**.md": "180-days",
-                "docs/ai/**/**.yml": "180-days",
+                "docs/ai/**/**.{md,yml}": "180-days",
                 "docs/framework/**/*.md": "1825-days",
                 "docs/visual-basic/**/*.md": "1825-days"
             },

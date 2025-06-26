@@ -40,7 +40,7 @@ HRESULT GetThreadForTaskID (
 
 ## Remarks
 
- The host can set the task identifier by using the [ICLRTask::SetTaskIdentifier](../hosting/iclrtask-settaskidentifier-method.md) method.
+ The host can set the task identifier by using the [ICLRTask::SetTaskIdentifier](../../../core/unmanaged-api/hosting/iclrtask-settaskidentifier-method.md) method.
 
 ## Requirements
 

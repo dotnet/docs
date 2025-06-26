@@ -2,62 +2,62 @@
 description: "Learn more about: StrongNameHashSize Function"
 title: "StrongNameHashSize Function"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "StrongNameHashSize"
-api_location: 
+api_location:
   - "mscoree.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "StrongNameHashSize"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "StrongNameHashSize function [.NET Framework strong naming]"
 ms.assetid: 738c98d7-a60c-45fe-a296-220af05e6991
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # StrongNameHashSize Function
 
-Gets the buffer size required for a hash, using the specified hash algorithm.  
-  
- This function has been deprecated. Use the [ICLRStrongName::StrongNameHashSize](../hosting/iclrstrongname-strongnamehashsize-method.md) method instead.  
-  
-## Syntax  
-  
-```cpp  
-BOOLEAN StrongNameHashSize (  
-    [in]  ULONG   ulHashAlg,  
-    [out] DWORD   *pcbSize  
-);  
-```  
-  
-## Parameters  
+Gets the buffer size required for a hash, using the specified hash algorithm.
 
- `ulHashAlg`  
- [in] The hash algorithm used to compute the buffer size.  
-  
- `pcbSize`  
- [out] The returned buffer size, in bytes.  
-  
-## Return Value  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameHashSize](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md) method instead.
 
- `true` on successful completion; otherwise, `false`.  
-  
-## Remarks  
+## Syntax
 
- If the `StrongNameHashSize` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
-  
-## Requirements  
+```cpp
+BOOLEAN StrongNameHashSize (
+    [in]  ULONG   ulHashAlg,
+    [out] DWORD   *pcbSize
+);
+```
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
-  
- **Header:** StrongName.h  
-  
- **Library:** Included as a resource in MsCorEE.dll  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
+## Parameters
+
+ `ulHashAlg`
+ [in] The hash algorithm used to compute the buffer size.
+
+ `pcbSize`
+ [out] The returned buffer size, in bytes.
+
+## Return Value
+
+ `true` on successful completion; otherwise, `false`.
+
+## Remarks
+
+ If the `StrongNameHashSize` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** StrongName.h
+
+ **Library:** Included as a resource in MsCorEE.dll
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+
 ## See also
 
-- [StrongNameHashSize Method](../hosting/iclrstrongname-strongnamehashsize-method.md)
-- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)
+- [StrongNameHashSize Method](../../../core/unmanaged-api/hosting/iclrstrongname-strongnamehashsize-method.md)
+- [ICLRStrongName Interface](../../../core/unmanaged-api/hosting/iclrstrongname-interface.md)

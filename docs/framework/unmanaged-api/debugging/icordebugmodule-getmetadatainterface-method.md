@@ -36,11 +36,11 @@ HRESULT GetMetaDataInterface (
  [in] The reference ID that specifies the metadata interface.
 
  `ppObj`
- [out] A pointer to the address of an `T:IUnknown` object that is one of the [metadata interfaces](../metadata/metadata-interfaces.md).
+ [out] A pointer to the address of an `T:IUnknown` object that is one of the [metadata interfaces](../../../core/unmanaged-apis/metadata/metadata-interfaces.md).
 
 ## Remarks
 
- The debugger can use the `GetMetaDataInterface` method to make a copy of the original metadata for a module, which it must do in order to edit that module. The debugger calls `GetMetaDataInterface` to get an [IMetaDataEmit](../metadata/imetadataemit-interface.md) interface object for the module, then calls [IMetaDataEmit::SaveToMemory](../metadata/imetadataemit-savetomemory-method.md) to save a copy of the module's metadata to memory.
+ The debugger can use the `GetMetaDataInterface` method to make a copy of the original metadata for a module, which it must do in order to edit that module. The debugger calls `GetMetaDataInterface` to get an [IMetaDataEmit](../../../core/unmanaged-apis/metadata/imetadataemit-interface.md) interface object for the module, then calls [IMetaDataEmit::SaveToMemory](../../../core/unmanaged-apis/metadata/imetadataemit-savetomemory-method.md) to save a copy of the module's metadata to memory.
 
 ## Requirements
 
@@ -54,4 +54,4 @@ HRESULT GetMetaDataInterface (
 
 ## See also
 
-- [Metadata](../metadata/index.md)
+- [Metadata](../../../core/unmanaged-apis/metadata/index.md)

@@ -9,7 +9,7 @@ api_location:
 api_type:
   - "DLLExport"
 ms.assetid: 00118de7-33c6-41c4-8e1f-5d5e35e0da83
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # CertVerifyAuthenticodeLicense Function
@@ -70,5 +70,5 @@ HRESULT CertVerifyAuthenticodeLicense (
 ## See also
 
 - [Authenticode](index.md)
-- [GetHashFromHandle Method](../hosting/iclrstrongname-gethashfromhandle-method.md)
-- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)
+- [GetHashFromHandle Method](../../../core/unmanaged-api/hosting/iclrstrongname-gethashfromhandle-method.md)
+- [ICLRStrongName Interface](../../../core/unmanaged-api/hosting/iclrstrongname-interface.md)

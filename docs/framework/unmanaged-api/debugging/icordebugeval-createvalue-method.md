@@ -36,7 +36,7 @@ HRESULT CreateValue (
 ## Parameters
 
  `elementType`
- [in] A value of the [CorElementType](../metadata/corelementtype-enumeration.md) enumeration that specifies the type of the value.
+ [in] A value of the [CorElementType](../../../core/unmanaged-apis/metadata/corelementtype-enumeration.md) enumeration that specifies the type of the value.
 
  `pElementClass`
  [in] Pointer to an [ICorDebugClass](icordebugclass-interface.md) object that specifies the class of the value, if the type is not a primitive type.

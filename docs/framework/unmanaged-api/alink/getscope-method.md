@@ -2,57 +2,57 @@
 description: "Learn more about: GetScope Method"
 title: "GetScope Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "IALink.GetScope"
-api_location: 
+api_location:
   - "alink.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "GetScope"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GetScope method"
 ms.assetid: e1555328-2c71-4ece-b357-9eb6d3a8efc4
-topic_type: 
+topic_type:
   - "apiref"
 ---
 # GetScope Method
 
-Gets an import scope.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetScope(  
-    mdAssembly AssemblyID,  
-    mdToken FileToken,  
-    DWORD dwScope,  
-    IMetaDataImport** ppImportScope  
-) PURE;  
-```  
-  
-## Parameters  
+Gets an import scope.
 
- `AssemblyID`  
- Unique ID of assembly to import to.  
-  
- `FileToken`  
- Unique ID of the file to import from.  
-  
- `dwScope`  
- Zero-based scope to import.  
-  
- `ppImportScope`  
- Receives [IMetaDataImport Interface](../metadata/imetadataimport-interface.md) interface for the scope.  
-  
-## Return Value  
+## Syntax
 
- Returns S_OK if the method succeeds.  
-  
-## Requirements  
+```cpp
+HRESULT GetScope(
+    mdAssembly AssemblyID,
+    mdToken FileToken,
+    DWORD dwScope,
+    IMetaDataImport** ppImportScope
+) PURE;
+```
 
- Requires alink.h  
-  
+## Parameters
+
+ `AssemblyID`
+ Unique ID of assembly to import to.
+
+ `FileToken`
+ Unique ID of the file to import from.
+
+ `dwScope`
+ Zero-based scope to import.
+
+ `ppImportScope`
+ Receives [IMetaDataImport Interface](../../../core/unmanaged-apis/metadata/imetadataimport-interface.md) interface for the scope.
+
+## Return Value
+
+ Returns S_OK if the method succeeds.
+
+## Requirements
+
+ Requires alink.h
+
 ## See also
 
 - [IALink Interface](ialink-interface.md)

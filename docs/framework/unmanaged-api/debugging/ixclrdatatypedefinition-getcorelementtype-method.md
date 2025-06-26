@@ -51,4 +51,4 @@ The provided method is part of the `IXCLRDataTypeDefinition` interface and corre
 
 - [Debugging](index.md)
 - [IXCLRDataTypeDefinition Interface](ixclrdatatypedefinition-interface.md)
-- [CorElementType Enumeration](../metadata/corelementtype-enumeration.md)
+- [CorElementType Enumeration](../../../core/unmanaged-apis/metadata/corelementtype-enumeration.md)

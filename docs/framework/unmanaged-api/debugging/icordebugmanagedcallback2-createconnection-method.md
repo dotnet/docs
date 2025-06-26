@@ -48,7 +48,7 @@ HRESULT CreateConnection (
 
 - When a debugger attaches to a process that contains connections. In this case, the runtime will generate and dispatch a `CreateConnection` event and a [ICorDebugManagedCallback2::ChangeConnection](icordebugmanagedcallback2-changeconnection-method.md) event for each connection in the process.
 
-- When a host calls [ICLRDebugManager::BeginConnection](../hosting/iclrdebugmanager-beginconnection-method.md) in the [Hosting API](../hosting/index.md).
+- When a host calls [ICLRDebugManager::BeginConnection](../../../core/unmanaged-api/hosting/iclrdebugmanager-beginconnection-method.md) in the [Hosting API](../../../core/unmanaged-api/hosting/index.md).
 
 ## Requirements
 

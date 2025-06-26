@@ -56,7 +56,7 @@ HRESULT DefineFile (
   
 ## Requirements  
 
- **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

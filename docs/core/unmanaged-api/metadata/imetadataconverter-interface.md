@@ -30,7 +30,7 @@ Provides methods to map type libraries to their metadata signatures, and to conv
   
 ## Requirements  
 
- **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

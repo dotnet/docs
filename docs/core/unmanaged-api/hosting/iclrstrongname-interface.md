@@ -56,7 +56,7 @@ Provides basic global static functions for signing assemblies with strong names.
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   

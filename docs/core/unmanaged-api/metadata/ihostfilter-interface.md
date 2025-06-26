@@ -31,7 +31,7 @@ Provides a method to indicate that a specified token will be processed.
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

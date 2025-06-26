@@ -76,7 +76,7 @@ Provides methods to create, modify, and save metadata about the assembly in the 
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

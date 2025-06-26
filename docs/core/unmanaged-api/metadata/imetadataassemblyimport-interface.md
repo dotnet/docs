@@ -41,7 +41,7 @@ Provides methods to access and examine the contents of an assembly manifest.
   
 ## Requirements  
 
- **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

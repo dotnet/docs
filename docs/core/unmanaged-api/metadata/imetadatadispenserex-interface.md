@@ -33,7 +33,7 @@ Extends the [IMetaDataDispenser Interface](imetadatadispenser-interface.md) inte
   
 ## Requirements  
 
- **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

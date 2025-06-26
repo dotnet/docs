@@ -49,7 +49,7 @@ Provides methods that allow the common language runtime (CLR) to work with tasks
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

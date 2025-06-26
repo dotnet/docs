@@ -30,7 +30,7 @@ Provides methods for notifying the host about the blocking and unblocking of thr
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

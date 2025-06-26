@@ -29,7 +29,7 @@ Extends [IMetaDataTables](imetadatatables-interface.md) to include methods for w
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   

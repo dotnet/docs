@@ -41,7 +41,7 @@ Provides all the functionality of the [ICLRTask](iclrtask-interface.md) interfac
   
 ## Requirements  
 
- **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../../docs/framework/get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   

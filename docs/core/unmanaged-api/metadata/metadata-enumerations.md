@@ -7,11 +7,11 @@ helpviewer_keywords:
   - "metadata enumerations [.NET Framework]"
   - "unmanaged enumerations [.NET Framework], metadata"
 ---
-# Metadata Enumerations
+# Metadata enumerations
 
 This section describes the unmanaged enumerations that the metadata API uses.
 
-## In This Section
+## In this section
 
  [AssemblyFlags Enumeration](assemblyflags-enumeration.md)
  Contains values that describe the run-time features of an assembly.
@@ -151,12 +151,8 @@ This section describes the unmanaged enumerations that the metadata API uses.
  [COUNINITIEE Enumeration](couninitiee-enumeration.md)
  Specifies constants used by [CoUninitializeEE](../../../framework/unmanaged-api/hosting/couninitializeee-function.md) when initializing the common language runtime.
 
-## Related Sections
+## Related sections
 
- [Metadata Interfaces](metadata-interfaces.md)
-
- [Metadata Global Static Functions](metadata-global-static-functions.md)
-
- [Metadata Structures](metadata-structures.md)
-
- [Metadata Unions](metadata-unions.md)
+- [Metadata Interfaces](metadata-interfaces.md)
+- [Metadata Structures](metadata-structures.md)
+- [Metadata Unions](metadata-unions.md)

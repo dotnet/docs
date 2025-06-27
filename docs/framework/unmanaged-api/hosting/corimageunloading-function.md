@@ -44,7 +44,3 @@ STDAPI (VOID) _CorImageUnloading(
  **Library:** Included as a resource in MsCorEE.dll
 
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
-
-## See also
-
-- [Metadata Global Static Functions](../../../core/unmanaged-api/metadata/metadata-global-static-functions.md)

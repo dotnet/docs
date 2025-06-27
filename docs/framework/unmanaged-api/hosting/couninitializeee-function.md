@@ -36,4 +36,3 @@ void CoUninitializeEE (
 ## See also
 
 - [CoInitializeEE Function](coinitializeee-function.md)
-- [Metadata Global Static Functions](../../../core/unmanaged-api/metadata/metadata-global-static-functions.md)

@@ -7,11 +7,11 @@ helpviewer_keywords:
   - "unmanaged structures [.NET Framework], metadata"
   - "metadata structures [.NET Framework]"
 ---
-# Metadata Structures
+# Metadata structures
 
 This section describes the unmanaged structures that the metadata API uses.
 
-## In This Section
+## In this section
 
  ASSEMBLYMETADATA
  Stores assembly metadata for later use.
@@ -28,12 +28,8 @@ This section describes the unmanaged structures that the metadata API uses.
  [OSINFO Structure](osinfo-structure.md)
  Contains information about the operating system.
 
-## Related Sections
+## Related sections
 
- [Metadata Interfaces](metadata-interfaces.md)
-
- [Metadata Global Static Functions](metadata-global-static-functions.md)
-
- [Metadata Enumerations](metadata-enumerations.md)
-
- [Metadata Unions](metadata-unions.md)
+- [Metadata Interfaces](metadata-interfaces.md)
+- [Metadata Enumerations](metadata-enumerations.md)
+- [Metadata Unions](metadata-unions.md)

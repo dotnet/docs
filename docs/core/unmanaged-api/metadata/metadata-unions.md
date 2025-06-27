@@ -7,21 +7,17 @@ helpviewer_keywords:
   - "unions [.NET Framework metadata]"
   - "metadata unions [.NET Framework]"
 ---
-# Metadata Unions
+# Metadata unions
 
 This section describes the unmanaged unions that the metadata API uses.
 
-## In This Section
+## In this section
 
  [CeeSectionRelocExtra Union](ceesectionrelocextra-union.md)
  Represents an address offset that is used by the [ICeeGen](iceegen-interface.md) interface to relocate a section
 
-## Related Sections
+## Related sections
 
- [Metadata Interfaces](metadata-interfaces.md)
-
- [Metadata Global Static Functions](metadata-global-static-functions.md)
-
- [Metadata Enumerations](metadata-enumerations.md)
-
- [Metadata Structures](metadata-structures.md)
+- [Metadata Interfaces](metadata-interfaces.md)
+- [Metadata Enumerations](metadata-enumerations.md)
+- [Metadata Structures](metadata-structures.md)

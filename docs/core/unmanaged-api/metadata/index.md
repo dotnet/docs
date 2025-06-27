@@ -18,9 +18,6 @@ These APIs that can be used with both .NET Framework and .NET.
 [Metadata Interfaces](metadata-interfaces.md)\
 Describes the unmanaged interfaces that provide access to the metadata exposed by the .NET types, methods, fields, and so on.
 
-[Metadata Global Static Functions](metadata-global-static-functions.md)\
-Describes the unmanaged global static functions that the metadata API uses.
-
 [Metadata Enumerations](metadata-enumerations.md)\
 Describes the unmanaged enumerations that the metadata API uses.
 

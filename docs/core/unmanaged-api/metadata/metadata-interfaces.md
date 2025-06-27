@@ -7,11 +7,11 @@ helpviewer_keywords:
   - "metadata interfaces [.NET Framework]"
   - "interfaces (.NET Framework metadata]"
 ---
-# Metadata Interfaces
+# Metadata interfaces
 
 This section describes the unmanaged interfaces that provide access to the metadata exposed by the .NET Framework types, methods, fields, and so on.
 
-## In This Section
+## In this section
 
  [ICeeGen Interface](iceegen-interface.md)
  Provides methods for dynamic code compilation.
@@ -67,12 +67,8 @@ This section describes the unmanaged interfaces that provide access to the metad
  [IMetaDataValidate Interface](imetadatavalidate-interface.md)
  Provides methods to use for validation of metadata signatures.
 
-## Related Sections
+## Related sections
 
- [Metadata Global Static Functions](metadata-global-static-functions.md)
-
- [Metadata Enumerations](metadata-enumerations.md)
-
- [Metadata Structures](metadata-structures.md)
-
- [Metadata Unions](metadata-unions.md)
+- [Metadata Enumerations](metadata-enumerations.md)
+- [Metadata Structures](metadata-structures.md)
+- [Metadata Unions](metadata-unions.md)

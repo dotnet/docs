@@ -1,6 +1,6 @@
 ---
 title: "Breaking change - Applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types"
-description: "Learn about the breaking change in .NET 10 Preview 1 where applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types."
+description: "Learn about the breaking change in .NET 10 where applications referencing both WPF and WinForms must disambiguate MenuItem and ContextMenu types."
 ms.date: 3/11/2025
 ai-usage: ai-assisted
 ms.custom: https://github.com/dotnet/docs/issues/44738

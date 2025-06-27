@@ -54,6 +54,8 @@ items:
                 href: globalization/10.0/version-override.md
           - name: Interop
             items:
+              - name: Single-file apps no longer look for native libraries in executable directory
+                href: interop/10.0/native-library-search.md
               - name: Specifying DllImportSearchPath.AssemblyDirectory only searches the assembly directory
                 href: interop/10.0/search-assembly-directory.md
           - name: Networking
@@ -80,6 +82,8 @@ items:
                 href: sdk/10.0/nu1015-packagereference-version.md
               - name: HTTP warnings promoted to errors in package list and search
                 href: sdk/10.0/http-warnings-to-errors.md
+              - name: NUGET_ENABLE_ENHANCED_HTTP_RETRY environment variable removed
+                href: sdk/10.0/nuget-enhanced-http-retry-removed.md
           - name: Windows Forms
             items:
               - name: API obsoletions

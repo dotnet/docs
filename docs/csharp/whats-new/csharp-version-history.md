@@ -3,6 +3,7 @@ title: The history of C#
 description: Learn how the C# language has changed over its many releases. Learn when different features were introduced in the language.
 author: erikdietrich
 ms.date: 12/20/2024
+ms.update-cycle: 365-days
 ms.custom: "updateeachrelease, UpdateFrequency1"
 ---
 

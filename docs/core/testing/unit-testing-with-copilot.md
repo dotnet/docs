@@ -3,6 +3,7 @@ title: Generate Unit Tests with Copilot
 author: sigmade
 description: How to generate unit tests and test projects in C# using the xUnit framework with the help of Visual Studio commands and GitHub Copilot
 ms.date: 01/12/2025
+ms.update-cycle: 180-days
 ms.collection: ce-skilling-ai-copilot
 ---
 

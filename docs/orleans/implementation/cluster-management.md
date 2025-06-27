@@ -12,14 +12,14 @@ Orleans provides cluster management via a built-in membership protocol, sometime
 The protocol relies on an external service to provide an abstraction of <xref:Orleans.IMembershipTable>. `IMembershipTable` is a flat, durable table used for two purposes. First, it serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. Second, it stores the current membership view (list of alive silos) and helps coordinate agreement on this view.
 
 The following official implementations of `IMembershipTable` are currently available:
-* [ADO.NET](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet) (PostgreSQL, MySQL/MariaDB, SQL Server, Oracle)
-* [AWS DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB)
-* [Apache Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra)
-* [Apache ZooKeeper](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.ZooKeeper)
-* [Azure Cosmos DB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos)
-* [Azure Table Storage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage)
-* [HashiCorp Consul](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Consul)
-* [Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis)
+* [ADO.NET](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet) (PostgreSQL, MySQL/MariaDB, SQL Server, Oracle),
+* [AWS DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB),
+* [Apache Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra),
+* [Apache ZooKeeper](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.ZooKeeper),
+* [Azure Cosmos DB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos),
+* [Azure Table Storage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage),
+* [HashiCorp Consul](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Consul),
+* [Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis),
 * and an in-memory implementation for development.
 
 > [!IMPORTANT]

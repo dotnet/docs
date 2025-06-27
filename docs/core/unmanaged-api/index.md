@@ -7,7 +7,9 @@ ms.date: 09/19/2023
 
 This section includes information on unmanaged APIs that can be used by managed-code-related applications, such as runtime hosts, compilers, disassemblers, obfuscators, debuggers, and profilers.
 
-These articles describe APIs that were introduced in .NET Core 2.0 and later versions, or APIs that can be used with both .NET Framework and .NET. For .NET Framework-specific unmanaged APIs, see [.NET Framework unmanaged API reference](../../framework/unmanaged-api/index.md).
+These articles describe APIs that were introduced in .NET Core 2.0 and later versions, or APIs that can be used with both .NET Framework and .NET.
+
+For .NET Framework-specific unmanaged APIs, see [.NET Framework unmanaged API reference](../../framework/unmanaged-api/index.md).
 
 ## In this section
 

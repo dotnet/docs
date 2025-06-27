@@ -29,9 +29,6 @@ For unmanaged APIs that can be used with both .NET Framework and .NET, see [.NET
  [Constants](constants-unmanaged-api-reference.md)\
  Describes the constants that are defined in CorSym.idl.
 
- [Custom Interface Attributes](/previous-versions/dotnet/netframework-4.0/ms231946(v=vs.100))\
- Describes component object model (COM) custom interface attributes.
-
  [Debugging](./debugging/index.md)\
  Describes the debugging API, which enables a debugger to debug code that runs in the common language runtime (CLR) environment.
 

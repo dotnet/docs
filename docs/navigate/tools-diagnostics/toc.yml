@@ -641,10 +641,10 @@ items:
             items:
             - name: Overview
               href: ../../core/unmanaged-api/metadata/index.md
-            - name: Metadata Interfaces
+            - name: Interfaces
               href: ../../core/unmanaged-api/metadata/metadata-interfaces.md
               items:
-              - name: ICeeGen Interface
+              - name: ICeeGen interface
                 href: ../../core/unmanaged-api/metadata/iceegen-interface.md
                 items:
                 - name: AddSectionReloc Method
@@ -677,17 +677,17 @@ items:
                   href: ../../core/unmanaged-api/metadata/iceegen-getstringsection-method.md
                 - name: TruncateSection Method
                   href: ../../core/unmanaged-api/metadata/iceegen-truncatesection-method.md
-              - name: IHostFilter Interface
+              - name: IHostFilter interface
                 href: ../../core/unmanaged-api/metadata/ihostfilter-interface.md
                 items:
                 - name: MarkToken Method
                   href: ../../core/unmanaged-api/metadata/ihostfilter-marktoken-method.md
-              - name: IMapToken Interface
+              - name: IMapToken interface
                 href: ../../core/unmanaged-api/metadata/imaptoken-interface.md
                 items:
                 - name: Map Method
                   href: ../../core/unmanaged-api/metadata/imaptoken-map-method.md
-              - name: IMetaDataAssemblyEmit Interface
+              - name: IMetaDataAssemblyEmit interface
                 href: ../../core/unmanaged-api/metadata/imetadataassemblyemit-interface.md
                 items:
                 - name: DefineAssembly Method
@@ -710,7 +710,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadataassemblyemit-setfileprops-method.md
                 - name: SetManifestResourceProps Method
                   href: ../../core/unmanaged-api/metadata/imetadataassemblyemit-setmanifestresourceprops-method.md
-              - name: IMetaDataAssemblyImport Interface
+              - name: IMetaDataAssemblyImport interface
                 href: ../../core/unmanaged-api/metadata/imetadataassemblyimport-interface.md
                 items:
                 - name: CloseEnum Method
@@ -741,7 +741,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadataassemblyimport-getfileprops-method.md
                 - name: GetManifestResourceProps Method
                   href: ../../core/unmanaged-api/metadata/imetadataassemblyimport-getmanifestresourceprops-method.md
-              - name: IMetaDataConverter Interface
+              - name: IMetaDataConverter interface
                 href: ../../core/unmanaged-api/metadata/imetadataconverter-interface.md
                 items:
                 - name: GetMetaDataFromTypeInfo Method
@@ -750,7 +750,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadataconverter-getmetadatafromtypelib-method.md
                 - name: GetTypeLibFromMetaData Method
                   href: ../../core/unmanaged-api/metadata/imetadataconverter-gettypelibfrommetadata-method.md
-              - name: IMetaDataDispenser Interface
+              - name: IMetaDataDispenser interface
                 href: ../../core/unmanaged-api/metadata/imetadatadispenser-interface.md
                 items:
                 - name: DefineScope Method
@@ -759,7 +759,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadatadispenser-openscope-method.md
                 - name: OpenScopeOnMemory Method
                   href: ../../core/unmanaged-api/metadata/imetadatadispenser-openscopeonmemory-method.md
-              - name: IMetaDataDispenserEx Interface
+              - name: IMetaDataDispenserEx interface
                 href: ../../core/unmanaged-api/metadata/imetadatadispenserex-interface.md
                 items:
                 - name: FindAssembly Method
@@ -774,7 +774,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadatadispenserex-openscopeonitypeinfo-method.md
                 - name: SetOption Method
                   href: ../../core/unmanaged-api/metadata/imetadatadispenserex-setoption-method.md
-              - name: IMetaDataEmit Interface
+              - name: IMetaDataEmit interface
                 href: ../../core/unmanaged-api/metadata/imetadataemit-interface.md
                 items:
                 - name: ApplyEditAndContinue Method
@@ -875,7 +875,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadataemit-settypedefprops-method.md
                 - name: TranslateSigWithScope Method
                   href: ../../core/unmanaged-api/metadata/imetadataemit-translatesigwithscope-method.md
-              - name: IMetaDataEmit2 Interface
+              - name: IMetaDataEmit2 interface
                 href: ../../core/unmanaged-api/metadata/imetadataemit2-interface.md
                 items:
                 - name: DefineGenericParam Method
@@ -894,12 +894,12 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadataemit2-savedeltatostream-method.md
                 - name: SetGenericParamProps Method
                   href: ../../core/unmanaged-api/metadata/imetadataemit2-setgenericparamprops-method.md
-              - name: IMetaDataError Interface
+              - name: IMetaDataError interface
                 href: ../../core/unmanaged-api/metadata/imetadataerror-interface.md
                 items:
                 - name: OnError Method
                   href: ../../core/unmanaged-api/metadata/imetadataerror-onerror-method.md
-              - name: IMetaDataFilter Interface
+              - name: IMetaDataFilter interface
                 href: ../../core/unmanaged-api/metadata/imetadatafilter-interface.md
                 items:
                 - name: IsTokenMarked Method
@@ -908,7 +908,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadatafilter-marktoken-method.md
                 - name: UnmarkAll Method
                   href: ../../core/unmanaged-api/metadata/imetadatafilter-unmarkall-method.md
-              - name: IMetaDataImport Interface
+              - name: IMetaDataImport interface
                 href: ../../core/unmanaged-api/metadata/imetadataimport-interface.md
                 items:
                 - name: CloseEnum Method
@@ -1035,7 +1035,7 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadataimport-resetenum-method.md
                 - name: ResolveTypeRef Method
                   href: ../../core/unmanaged-api/metadata/imetadataimport-resolvetyperef-method.md
-              - name: IMetaDataImport2 Interface
+              - name: IMetaDataImport2 interface
                 href: ../../core/unmanaged-api/metadata/imetadataimport2-interface.md
                 items:
                 - name: EnumGenericParamConstraints Method
@@ -1054,12 +1054,12 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadataimport2-getpekind-method.md
                 - name: GetVersionString Method
                   href: ../../core/unmanaged-api/metadata/imetadataimport2-getversionstring-method.md
-              - name: IMetaDataInfo Interface
+              - name: IMetaDataInfo interface
                 href: ../../core/unmanaged-api/metadata/imetadatainfo-interface.md
                 items:
                 - name: GetFileMapping Method
                   href: ../../core/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md
-              - name: IMetaDataTables Interface
+              - name: IMetaDataTables interface
                 href: ../../core/unmanaged-api/metadata/imetadatatables-interface.md
                 items:
                 - name: GetBlob Method
@@ -1100,134 +1100,132 @@ items:
                   href: ../../core/unmanaged-api/metadata/imetadatatables-getuserstring-method.md
                 - name: GetUserStringHeapSize Method
                   href: ../../core/unmanaged-api/metadata/imetadatatables-getuserstringheapsize-method.md
-              - name: IMetaDataTables2 Interface
+              - name: IMetaDataTables2 interface
                 href: ../../core/unmanaged-api/metadata/imetadatatables2-interface.md
                 items:
                 - name: GetMetaDataStorage Method
                   href: ../../core/unmanaged-api/metadata/imetadatatables2-getmetadatastorage-method.md
                 - name: GetMetaDataStreamInfo Method
                   href: ../../core/unmanaged-api/metadata/imetadatatables2-getmetadatastreaminfo-method.md
-              - name: IMetaDataValidate Interface
+              - name: IMetaDataValidate interface
                 href: ../../core/unmanaged-api/metadata/imetadatavalidate-interface.md
                 items:
                 - name: ValidateMetaData Method
                   href: ../../core/unmanaged-api/metadata/imetadatavalidate-validatemetadata-method.md
                 - name: ValidatorInit Method
                   href: ../../core/unmanaged-api/metadata/imetadatavalidate-validatorinit-method.md
-            - name: Metadata Global Static Functions
-              href: ../../core/unmanaged-api/metadata/metadata-global-static-functions.md
-            - name: Metadata Enumerations
+            - name: Enumerations
               href: ../../core/unmanaged-api/metadata/metadata-enumerations.md
               items:
-              - name: AssemblyFlags Enumeration
+              - name: AssemblyFlags enumeration
                 href: ../../core/unmanaged-api/metadata/assemblyflags-enumeration.md
-              - name: AssemblyRefFlags Enumeration
+              - name: AssemblyRefFlags enumeration
                 href: ../../core/unmanaged-api/metadata/assemblyrefflags-enumeration.md
-              - name: CeeSectionAttr Enumeration
+              - name: CeeSectionAttr enumeration
                 href: ../../core/unmanaged-api/metadata/ceesectionattr-enumeration.md
-              - name: CeeSectionRelocType Enumeration
+              - name: CeeSectionRelocType enumeration
                 href: ../../core/unmanaged-api/metadata/ceesectionreloctype-enumeration.md
-              - name: COINITICOR Enumeration
+              - name: COINITICOR enumeration
                 href: ../../core/unmanaged-api/metadata/coiniticor-enumeration.md
-              - name: COINITIEE Enumeration
+              - name: COINITIEE enumeration
                 href: ../../core/unmanaged-api/metadata/coinitiee-enumeration.md
-              - name: CorArgType Enumeration
+              - name: CorArgType enumeration
                 href: ../../core/unmanaged-api/metadata/corargtype-enumeration.md
-              - name: CorAssemblyFlags Enumeration
+              - name: CorAssemblyFlags enumeration
                 href: ../../core/unmanaged-api/metadata/corassemblyflags-enumeration.md
-              - name: CorAttributeTargets Enumeration
+              - name: CorAttributeTargets enumeration
                 href: ../../core/unmanaged-api/metadata/corattributetargets-enumeration.md
-              - name: CorCallingConvention Enumeration
+              - name: CorCallingConvention enumeration
                 href: ../../core/unmanaged-api/metadata/corcallingconvention-enumeration.md
-              - name: CorCheckDuplicatesFor Enumeration
+              - name: CorCheckDuplicatesFor enumeration
                 href: ../../core/unmanaged-api/metadata/corcheckduplicatesfor-enumeration.md
-              - name: CorDeclSecurity Enumeration
+              - name: CorDeclSecurity enumeration
                 href: ../../core/unmanaged-api/metadata/cordeclsecurity-enumeration.md
-              - name: CorElementType Enumeration1
+              - name: CorElementType enumeration1
                 href: ../../core/unmanaged-api/metadata/corelementtype-enumeration.md
-              - name: CorErrorIfEmitOutOfOrder Enumeration
+              - name: CorErrorIfEmitOutOfOrder enumeration
                 href: ../../core/unmanaged-api/metadata/corerrorifemitoutoforder-enumeration.md
-              - name: CorEventAttr Enumeration
+              - name: CorEventAttr enumeration
                 href: ../../core/unmanaged-api/metadata/coreventattr-enumeration.md
-              - name: CorFieldAttr Enumeration
+              - name: CorFieldAttr enumeration
                 href: ../../core/unmanaged-api/metadata/corfieldattr-enumeration.md
-              - name: CorFileFlags Enumeration
+              - name: CorFileFlags enumeration
                 href: ../../core/unmanaged-api/metadata/corfileflags-enumeration.md
-              - name: CorFileMapping Enumeration
+              - name: CorFileMapping enumeration
                 href: ../../core/unmanaged-api/metadata/corfilemapping-enumeration.md
-              - name: CorGenericParamAttr Enumeration
+              - name: CorGenericParamAttr enumeration
                 href: ../../core/unmanaged-api/metadata/corgenericparamattr-enumeration.md
-              - name: CorImportOptions Enumeration
+              - name: CorImportOptions enumeration
                 href: ../../core/unmanaged-api/metadata/corimportoptions-enumeration.md
-              - name: CorLinkerOptions Enumeration
+              - name: CorLinkerOptions enumeration
                 href: ../../core/unmanaged-api/metadata/corlinkeroptions-enumeration.md
-              - name: CorLocalRefPreservation Enumeration
+              - name: CorLocalRefPreservation enumeration
                 href: ../../core/unmanaged-api/metadata/corlocalrefpreservation-enumeration.md
-              - name: CorManifestResourceFlags Enumeration
+              - name: CorManifestResourceFlags enumeration
                 href: ../../core/unmanaged-api/metadata/cormanifestresourceflags-enumeration.md
-              - name: CorMethodAttr Enumeration
+              - name: CorMethodAttr enumeration
                 href: ../../core/unmanaged-api/metadata/cormethodattr-enumeration.md
-              - name: CorMethodImpl Enumeration
+              - name: CorMethodImpl enumeration
                 href: ../../core/unmanaged-api/metadata/cormethodimpl-enumeration.md
-              - name: CorMethodSemanticsAttr Enumeration
+              - name: CorMethodSemanticsAttr enumeration
                 href: ../../core/unmanaged-api/metadata/cormethodsemanticsattr-enumeration.md
-              - name: CorNativeLinkFlags Enumeration
+              - name: CorNativeLinkFlags enumeration
                 href: ../../core/unmanaged-api/metadata/cornativelinkflags-enumeration.md
-              - name: CorNativeLinkType Enumeration
+              - name: CorNativeLinkType enumeration
                 href: ../../core/unmanaged-api/metadata/cornativelinktype-enumeration.md
-              - name: CorNativeType Enumeration
+              - name: CorNativeType enumeration
                 href: ../../core/unmanaged-api/metadata/cornativetype-enumeration.md
-              - name: CorNotificationForTokenMovement Enumeration
+              - name: CorNotificationForTokenMovement enumeration
                 href: ../../core/unmanaged-api/metadata/cornotificationfortokenmovement-enumeration.md
-              - name: CorOpenFlags Enumeration
+              - name: CorOpenFlags enumeration
                 href: ../../core/unmanaged-api/metadata/coropenflags-enumeration.md
-              - name: CorParamAttr Enumeration
+              - name: CorParamAttr enumeration
                 href: ../../core/unmanaged-api/metadata/corparamattr-enumeration.md
-              - name: CorPEKind Enumeration
+              - name: CorPEKind enumeration
                 href: ../../core/unmanaged-api/metadata/corpekind-enumeration.md
-              - name: CorPinvokeMap Enumeration
+              - name: CorPinvokeMap enumeration
                 href: ../../core/unmanaged-api/metadata/corpinvokemap-enumeration.md
-              - name: CorPropertyAttr Enumeration
+              - name: CorPropertyAttr enumeration
                 href: ../../core/unmanaged-api/metadata/corpropertyattr-enumeration.md
-              - name: CorRefToDefCheck Enumeration
+              - name: CorRefToDefCheck enumeration
                 href: ../../core/unmanaged-api/metadata/correftodefcheck-enumeration.md
-              - name: CorRegFlags Enumeration
+              - name: CorRegFlags enumeration
                 href: ../../core/unmanaged-api/metadata/corregflags-enumeration.md
-              - name: CorSaveSize Enumeration
+              - name: CorSaveSize enumeration
                 href: ../../core/unmanaged-api/metadata/corsavesize-enumeration.md
-              - name: CorSerializationType Enumeration
+              - name: CorSerializationType enumeration
                 href: ../../core/unmanaged-api/metadata/corserializationtype-enumeration.md
-              - name: CorSetENC Enumeration
+              - name: CorSetENC enumeration
                 href: ../../core/unmanaged-api/metadata/corsetenc-enumeration.md
-              - name: CorThreadSafetyOptions Enumeration
+              - name: CorThreadSafetyOptions enumeration
                 href: ../../core/unmanaged-api/metadata/corthreadsafetyoptions-enumeration.md
-              - name: CorTokenType Enumeration
+              - name: CorTokenType enumeration
                 href: ../../core/unmanaged-api/metadata/cortokentype-enumeration.md
-              - name: CorTypeAttr Enumeration
+              - name: CorTypeAttr enumeration
                 href: ../../core/unmanaged-api/metadata/cortypeattr-enumeration.md
-              - name: CorUnmanagedCallingConvention Enumeration
+              - name: CorUnmanagedCallingConvention enumeration
                 href: ../../core/unmanaged-api/metadata/corunmanagedcallingconvention-enumeration.md
-              - name: CorValidatorModuleType Enumeration
+              - name: CorValidatorModuleType enumeration
                 href: ../../core/unmanaged-api/metadata/corvalidatormoduletype-enumeration.md
-              - name: COUNINITIEE Enumeration
+              - name: COUNINITIEE enumeration
                 href: ../../core/unmanaged-api/metadata/couninitiee-enumeration.md
-            - name: Metadata Structures
+            - name: Structures
               href: ../../core/unmanaged-api/metadata/metadata-structures.md
               items:
-              - name: ASSEMBLYMETADATA Structure
+              - name: ASSEMBLYMETADATA structure
                 href: ../../core/unmanaged-api/metadata/assemblymetadata-structure.md
-              - name: COR_FIELD_OFFSET Structure
+              - name: COR_FIELD_OFFSET structure
                 href: ../../core/unmanaged-api/metadata/cor-field-offset-structure.md
-              - name: COR_NATIVE_LINK Structure
+              - name: COR_NATIVE_LINK structure
                 href: ../../core/unmanaged-api/metadata/cor-native-link-structure.md
-              - name: CVStruct Structure
+              - name: CVStruct structure
                 href: ../../core/unmanaged-api/metadata/cvstruct-structure.md
-              - name: OSINFO Structure
+              - name: OSINFO structure
                 href: ../../core/unmanaged-api/metadata/osinfo-structure.md
-            - name: Metadata Unions
+            - name: Unions
               href: ../../core/unmanaged-api/metadata/metadata-unions.md
               items:
-              - name: CeeSectionRelocExtra Union
+              - name: CeeSectionRelocExtra union
                 href: ../../core/unmanaged-api/metadata/ceesectionrelocextra-union.md
           - name: Profiling
             items:

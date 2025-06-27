@@ -11,7 +11,19 @@ Orleans provides cluster management via a built-in membership protocol, sometime
 
 The protocol relies on an external service to provide an abstraction of <xref:Orleans.IMembershipTable>. `IMembershipTable` is a flat, durable table used for two purposes. First, it serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. Second, it stores the current membership view (list of alive silos) and helps coordinate agreement on this view.
 
-Currently, there are several implementations of `IMembershipTable`: based on [Azure Table Storage](/azure/storage/storage-dotnet-how-to-use-tables), [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db), ADO.NET (PostgreSQL, MySQL/MariaDB, SQL Server, Oracle), [Apache ZooKeeper](https://ZooKeeper.apache.org/), [Consul IO](https://www.consul.io), [AWS DynamoDB](https://aws.amazon.com/dynamodb/), [MongoDB](https://www.mongodb.com/), [Redis](https://redis.io), [Apache Cassandra](https://cassandra.apache.org), and an in-memory implementation for development.
+The following official implementations of `IMembershipTable` are currently available:
+* [ADO.NET](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AdoNet) (PostgreSQL, MySQL/MariaDB, SQL Server, Oracle)
+* [AWS DynamoDB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.DynamoDB)
+* [Apache Cassandra](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cassandra)
+* [Apache ZooKeeper](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.ZooKeeper)
+* [Azure Cosmos DB](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Cosmos)
+* [Azure Table Storage](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage)
+* [HashiCorp Consul](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Consul)
+* [Redis](https://www.nuget.org/packages/Microsoft.Orleans.Clustering.Redis)
+* and an in-memory implementation for development.
+
+> [!IMPORTANT]
+> Implementations of the `IMembershipTable` interface must use a durable data store. For example, if you are using Redis, ensure that persistence is explicitely enabled. Volatile configurations may result in cluster unavailability.
 
 In addition to `IMembershipTable`, each silo participates in a fully distributed peer-to-peer membership protocol that detects failed silos and reaches an agreement on the set of alive silos. The internal implementation of Orleans's membership protocol is described below.
 
@@ -117,7 +129,9 @@ In addition to `IMembershipTable`, each silo participates in a fully distributed
 
 ### Membership table
 
-As mentioned, `IMembershipTable` serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. It also helps coordinate agreement on the membership view. The main Orleans repository contains implementations for many systems, including Azure Table Storage, Azure Cosmos DB, PostgreSQL, MySQL/MariaDB, SQL Server, Apache ZooKeeper, Consul IO, Apache Cassandra, MongoDB, Redis, AWS DynamoDB, and an in-memory implementation for development.
+As mentioned, `IMembershipTable` serves as a rendezvous point for silos to find each other and for Orleans clients to find silos. It also helps coordinate agreement on the membership view.
+
+The following listing contains implementation notes for some of the official implementations of the `IMembershipTable`:
 
 1. **[Azure Table Storage](/azure/storage/storage-dotnet-how-to-use-tables)**: In this implementation, the Azure deployment ID serves as the partition key, and the silo identity (`ip:port:epoch`) acts as the row key. Together, they guarantee a unique key per silo. For concurrency control, optimistic concurrency control based on [Azure Table ETags](/rest/api/storageservices/Update-Entity2) is used. Every time data is read from the table, the ETag for each read row is stored and used when trying to write back. The Azure Table service automatically assigns and checks ETags on every write. For multi-row transactions, the support for [batch transactions provided by Azure Table](/rest/api/storageservices/Performing-Entity-Group-Transactions) is utilized, guaranteeing serializable transactions over rows with the same partition key.
 
@@ -125,7 +139,7 @@ As mentioned, `IMembershipTable` serves as a rendezvous point for silos to find 
 
 1. **[Apache ZooKeeper](https://zookeeper.apache.org/)**: In this implementation, the configured deployment ID is used as a root node, and the silo identity (`ip:port@epoch`) as its child node. Together, they guarantee a unique path per silo. For concurrency control, optimistic concurrency control based on the [node version](https://zookeeper.apache.org/doc/r3.4.6/zookeeperOver.html#Nodes+and+ephemeral+nodes) is used. Every time data is read from the deployment root node, the version for every read child silo node is stored and used when trying to write back. Each time a node's data changes, the ZooKeeper service atomically increases the version number. For multi-row transactions, the [multi method](https://zookeeper.apache.org/doc/r3.4.6/api/org/apache/zookeeper/ZooKeeper.html#multi(java.lang.Iterable)) is utilized, guaranteeing serializable transactions over silo nodes with the same parent deployment ID node.
 
-1. **[Consul IO](https://www.consul.io)**: Consul's Key/Value store was used to implement the membership table. See [Consul Deployment](../deployment/consul-deployment.md) for more details.
+1. **[HashiCorp Consul](https://www.consul.io)**: Consul's Key/Value store was used to implement the membership table. See [Consul Deployment](../deployment/consul-deployment.md) for more details.
 
 1. **[AWS DynamoDB](https://aws.amazon.com/dynamodb/)**: In this implementation, the cluster Deployment ID is used as the Partition Key and Silo Identity (`ip-port-generation`) as the RangeKey, making the record unique. Optimistic concurrency is achieved using the `ETag` attribute by making conditional writes on DynamoDB. The implementation logic is quite similar to Azure Table Storage.
 

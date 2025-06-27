@@ -311,8 +311,7 @@ The hexadecimal ("X") format specifier converts a number to a string of hexadeci
 
 The precision specifier indicates the minimum number of digits desired in the resulting string. If required, the number is padded with zeros to its left to produce the number of digits given by the precision specifier.
 
-For <xref:System.Numerics.BigInteger>, positive values always have a leading zero to distinguish them from negative values. This ensures the output round-trips to the original value when parsed.
-For instance, the number `F` converted with the format specifier `"X1"` is `0F` because the hexadecimal number `F` represents the negative value `-1`.
+For <xref:System.Numerics.BigInteger>, positive values always have a leading zero to distinguish them from negative values. This ensures the output round-trips to the original value when parsed. For example, the number `F` converted with the format specifier `"X1"` is `0F` because the hexadecimal number `F` represents the negative value `-1`.
 
 The result string is not affected by the formatting information of the current <xref:System.Globalization.NumberFormatInfo> object.
 

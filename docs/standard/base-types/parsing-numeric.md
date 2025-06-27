@@ -77,9 +77,7 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
 
 ## Parsing binary and hexadecimal BigIntegers
 
-When parsing <xref:System.Numerics.BigInteger> with the <xref:System.Globalization.NumberStyles.AllowHexSpecifier> or <xref:System.Globalization.NumberStyles.AllowBinarySpecifier> flags, the input string is interpreted as a hexadecimal/binary number of exactly the length the string has.
-For instance, parsing `"11"` as a binary BigInteger yields `-1`, because that is the interpretation of `11` as a signed two's complement value with exactly 2 digits.
-If you want a positive result, add a leading `0`, such as `"011"` which is parsed as `3`.
+When parsing <xref:System.Numerics.BigInteger> with the <xref:System.Globalization.NumberStyles.AllowHexSpecifier> or <xref:System.Globalization.NumberStyles.AllowBinarySpecifier> flags, the input string is interpreted as a hexadecimal/binary number of exactly the length the string has. For instance, parsing `"11"` as a binary BigInteger yields `-1`, because that is the interpretation of `11` as a signed two's complement value with exactly 2 digits. If you want a positive result, add a leading `0`, such as `"011"` which is parsed as `3`.
 
 ## Parsing and Unicode Digits
 

@@ -1,7 +1,7 @@
 ---
 title: "Top-level statements - programs without Main methods"
 description: Learn about top-level statements. You can create programs without the ceremony of a Program class and a Main method.
-ms.date: 11/22/2024
+ms.date: 06/23/2025
 helpviewer_keywords:
   - "C# language, top-level statements"
   - "C# language, Main method"
@@ -84,6 +84,8 @@ The compiler generates a method to serve as the program entry point for a projec
 | `await`                 | `static async Task Main(string[] args)`      |
 | `return`                | `static int Main(string[] args)`             |
 | No `await` or `return`  | `static void Main(string[] args)`            |
+
+Beginning with C# 14, programs can be [*file based programs*](./index.md#building-and-running-c-programs), where a single file contains the program. You run *file based programs* with the command `dotnet run <file.cs>`, or using the `#!/usr/local/share/dotnet/dotnet run` directive as the first line (unix shells only).
 
 ## C# language specification
 

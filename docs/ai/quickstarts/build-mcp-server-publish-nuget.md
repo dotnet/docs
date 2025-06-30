@@ -213,6 +213,7 @@ See [Publish a package](https://learn.microsoft.com/nuget/nuget-org/publish-a-pa
 [Build a minimal MCP server](build-mcp-server.md)
 [Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)
 [Use agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+[Use agent mode in Visual Studio](https://learn.microsoft.com/visualstudio/ide/copilot-agent-mode)
 [Model Context Protocol .NET Samples](https://github.com/microsoft/mcp-dotnet-samples)
 [What's New in .NET 10](https://learn.microsoft.com/dotnet/whats-new/dotnet-10)
 [Find and evaluate NuGet packages for your project](https://learn.microsoft.com/en-us/nuget/consume-packages/finding-and-choosing-packages)

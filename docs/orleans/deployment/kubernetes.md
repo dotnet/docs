@@ -99,7 +99,7 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: status.podIP
-          - name: DOTNET_SHUTDOWNTIMEOUTSECONDS
+          - name: ASPNETCORE_SHUTDOWNTIMEOUTSECONDS # See .NET Generic Host in ASP.NET Core ShutdownTimeout https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-9.0#shutdowntimeout
             value: "120"
           request:
             # Set resource requests

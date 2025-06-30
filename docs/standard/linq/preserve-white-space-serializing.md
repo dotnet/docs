@@ -25,3 +25,81 @@ The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xm
 If the method doesn't take <xref:System.Xml.Linq.SaveOptions> as an argument, then the method will format (indent) the serialized XML. In this case, all insignificant white space in the XML tree is discarded.
 
 If the method does take <xref:System.Xml.Linq.SaveOptions> as an argument, then you can specify that the method not format (indent) the serialized XML. In this case, all white space in the XML tree is preserved.
+
+## Roundtripping XML with carriage return entities
+
+The whitespace preservation discussed in this article is different from XML roundtripping. When XML contains carriage return entities (`&#xD;`), LINQ to XML's standard serialization might not preserve them in a way that allows perfect roundtripping.
+
+Consider the following example XML that contains carriage return entities:
+
+```xml
+<x xml:space="preserve">a&#xD;
+b
+c&#xD;</x>
+```
+
+When you parse this XML with `XDocument.Parse()`, the root element's value becomes `"a\r\nb\nc\r"`. However, if you reserialize it using LINQ to XML methods, the carriage returns are not entitized:
+
+```csharp
+string xmlWithCR = """<x xml:space="preserve">a&#xD;
+b
+c&#xD;</x>""";
+
+XDocument doc = XDocument.Parse(xmlWithCR);
+Console.WriteLine($"Original parsed value: {string.Join("", doc.Root.Value.Select(c => c == '\r' ? "\\r" : c == '\n' ? "\\n" : c.ToString()))}");
+// Output: a\r\nb\nc\r
+
+string reserialized = doc.ToString(SaveOptions.DisableFormatting);
+Console.WriteLine($"Reserialized XML: {reserialized}");
+// Output: <x xml:space="preserve">a
+// b
+// c</x>
+
+XDocument reparsed = XDocument.Parse(reserialized);
+Console.WriteLine($"Reparsed value: {string.Join("", reparsed.Root.Value.Select(c => c == '\r' ? "\\r" : c == '\n' ? "\\n" : c.ToString()))}");
+// Output: a\nb\nc\n
+```
+
+The values are different: the original was `"a\r\nb\nc\r"` but after roundtripping it becomes `"a\nb\nc\n"`.
+
+### Solution: Use XmlWriter with NewLineHandling.Entitize
+
+To achieve true XML roundtripping that preserves carriage return entities, use <xref:System.Xml.XmlWriter> with <xref:System.Xml.XmlWriterSettings.NewLineHandling> set to <xref:System.Xml.NewLineHandling.Entitize>:
+
+```csharp
+string xmlWithCR = """<x xml:space="preserve">a&#xD;
+b
+c&#xD;</x>""";
+
+XDocument doc = XDocument.Parse(xmlWithCR);
+
+// Create XmlWriter settings with NewLineHandling.Entitize
+XmlWriterSettings settings = new XmlWriterSettings
+{
+    NewLineHandling = NewLineHandling.Entitize,
+    OmitXmlDeclaration = true
+};
+
+// Serialize using XmlWriter
+using StringWriter stringWriter = new StringWriter();
+using (XmlWriter writer = XmlWriter.Create(stringWriter, settings))
+{
+    doc.WriteTo(writer);
+}
+
+string roundtrippedXml = stringWriter.ToString();
+Console.WriteLine($"Roundtripped XML: {roundtrippedXml}");
+// Output: <x xml:space="preserve">a&#xD;
+// b
+// c&#xD;</x>
+
+// Verify roundtripping preserves the original value
+XDocument roundtrippedDoc = XDocument.Parse(roundtrippedXml);
+bool valuesMatch = doc.Root.Value == roundtrippedDoc.Root.Value;
+Console.WriteLine($"Values match after roundtripping: {valuesMatch}");
+// Output: True
+```
+
+When you need to preserve carriage return entities for XML roundtripping, use <xref:System.Xml.XmlWriter> with the appropriate <xref:System.Xml.XmlWriterSettings> instead of LINQ to XML's built-in serialization methods.
+
+For more information about <xref:System.Xml.XmlWriter> and its settings, see <xref:System.Xml.XmlWriter?displayProperty=fullName>.

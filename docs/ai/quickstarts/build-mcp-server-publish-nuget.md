@@ -17,7 +17,7 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 - [.NET 10.0 SDK or higher](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for Visual Studio Code
-- [NuGet account](https://www.nuget.org/account/login)
+- [NuGet account](https://www.nuget.org/users/account/LogOn)
 
 ## Create the project
 

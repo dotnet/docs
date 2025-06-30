@@ -82,7 +82,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 2. Select the **Select tools** icon to verify your **MinimalMcpServer** is available with both tools listed.
 
-    :::image type="content" source="../media/mcp/available-tools.png" alt-text="A screenshot showing the available MCP tools.":::
+    :::image type="content" source="../media/mcp/available-tools-nuget.png" alt-text="A screenshot showing the available MCP tools.":::
 
 3. Enter a prompt to run the **GetRandomNumber** tool:
 

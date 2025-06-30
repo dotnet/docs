@@ -20,7 +20,7 @@ In that case the program starts in the opening brace of `Main` method, which is 
 
 ## Building and running C# programs
 
-C# is a *compiled* language. In most C# programs, you use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile a group of source files into a binary package. Then, you use the [`dotnet run`](../../../core/tools/dotnet-run.md) command to run the program. (You can simplify this process because `dotnet run` compiles the program before running it if necessary.) These tools support a rich language of configuration options and command-line switches. The `dotnet` command line interpreter (CLI), which is included in the .NET SDK, provides many [tools](../../../core/tools/index.md) to generate and modify C# files.  
+C# is a *compiled* language. In most C# programs, you use the [`dotnet build`](../../../core/tools/dotnet-build.md) command to compile a group of source files into a binary package. Then, you use the [`dotnet run`](../../../core/tools/dotnet-run.md) command to run the program. (You can simplify this process because `dotnet run` compiles the program before running it if necessary.) These tools support a rich language of configuration options and command-line switches. The `dotnet` command line interface (CLI), which is included in the .NET SDK, provides many [tools](../../../core/tools/index.md) to generate and modify C# files.  
 
 Beginning with C# 14 and .NET 10, you can create *file based programs*, which simplifies building and running C# programs. You use the `dotnet run` command to run a program contained in a single `*.cs` file. For example, if the following snippet is stored in a file named `hello-world.cs`, you can run it by typing `dotnet run hello-world.cs`:
 

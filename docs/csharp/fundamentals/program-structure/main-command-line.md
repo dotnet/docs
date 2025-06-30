@@ -20,7 +20,7 @@ There can only be one entry point in a C# program. If you have more than one cla
 
 :::code language="csharp" source="snippets/main-command-line/TestClass.cs":::
 
-You can also use Top-level statements in one file as the entry point for your application. Just as the `Main` method, top-level statements can also [return values](#main-return-values) and access [command-line arguments](#command-line-arguments). For more information, see [Top-level statements](top-level-statements.md). The following example uses a `foreach` loop to display the command line arguments using the `args` variable, and at the end of the program returns a success code (`0`):
+You can also use top-level statements in one file as the entry point for your application. Just as the `Main` method, top-level statements can also [return values](#main-return-values) and access [command-line arguments](#command-line-arguments). For more information, see [Top-level statements](top-level-statements.md). The following example uses a `foreach` loop to display the command-line arguments using the `args` variable, and at the end of the program returns a success code (`0`):
 
 :::code language="csharp" source="snippets/top-level-statements-1/Program.cs":::
 

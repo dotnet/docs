@@ -60,13 +60,13 @@ The `#!` preprocessor directive enables unix shells to directly execute a C# fil
 Console.WriteLine("Hello");
 ```
 
-The preceding code snippet informs a unix shell to execute the file using `/usr/local/share/dotnet/dotnet run`. (Your installation directory for the `dotnet` CLI can be different on different unix or Mac distributions). The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
+The preceding code snippet informs a Unix shell to execute the file using `/usr/local/share/dotnet/dotnet run`. (Your installation directory for the `dotnet` CLI can be different on different Unix or macOS distributions). The `#!` line must be the first line in the file, and the following tokens are the program to run. You need to enable the *execute* (`x`) permission on the C# file for that feature.
 
 The `#:` directives that are used in file based programs include:
 
 - `#:sdk`:
 
-  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify `<Sdk Name="value" Version="version" />` node. The version can be omitted. For example:
+  The first instance specifies the value for the `<Project Sdk="value" />` node. Subsequent instances specify the `<Sdk Name="value" Version="version" />` node. The version can be omitted. For example:
 
   ```csharp
   #:sdk Microsoft.NET.Sdk.Web
@@ -74,7 +74,7 @@ The `#:` directives that are used in file based programs include:
 
 - `#:property`:
 
-  Instances of `#:property` are translated into property elements in a `<PropertyGroup>`. A token of the form `Name=value` must follow the `property` token. The following are valid `property` tokens:
+  Instances of `#:property` are translated into property elements in a `<PropertyGroup>`. A token of the form `Name=value` must follow the `property` token. The following example directives are valid `property` tokens:
 
   ```csharp
   #:property TargetFramework=net11.0
@@ -90,7 +90,7 @@ The `#:` directives that are used in file based programs include:
 
 - `#:package`:
 
-  Instances `#:package` are translated into `PackageReference` elements to include NuGet packages with the specified version to your file. For example:
+  Instances of `#:package` are translated into `PackageReference` elements to include NuGet packages with the specified version to your file. For example:
 
   ```csharp
   #:package System.CommandLine@2.0.0-*

@@ -26,7 +26,7 @@ A protected member of a base class is accessible in a derived class only if the 
 
 [!code-csharp[csrefKeywordsModifiers#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#11)]
 
-The statement `a.x = 10` generates an error because it is made within the static method Main, and not an instance of class B.
+The statement `a.x = 10` generates an error because it accesses the protected member through a base class reference (`a` is of type `A`). Protected members can only be accessed through the derived class type or types derived from it.
 
 Struct members cannot be protected because the struct cannot be inherited.
 

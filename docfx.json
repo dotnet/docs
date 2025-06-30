@@ -911,6 +911,7 @@
             },
             "ms.update-cycle": {
                 "docs/ai/**/**.{md,yml}": "180-days",
+                "docs/csharp/whats-new/**/*.md": "1825-days",
                 "docs/framework/**/*.md": "1825-days",
                 "docs/visual-basic/**/*.md": "1825-days",
                 "docs/framework/additional-apis/pos-for-net/**/**.md": "1825-days"

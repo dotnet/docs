@@ -30,6 +30,20 @@ The next example shows the order of execution of constructor and member initiali
 
 :::code language="csharp" source="snippets/object-collection-initializers/ObjectInitializersExecutionOrder.cs" id="ObjectInitializersExecutionOrder":::
 
+## Object initializers without the `new` keyword
+
+You can also use object initializer syntax without the `new` keyword to initialize properties of nested objects. This syntax is particularly useful with read-only properties:
+
+```csharp
+var person = new Person
+{
+    Name = "Alice",
+    Address = { Street = "123 Main St", City = "Anytown" }  // No 'new' keyword needed
+};
+```
+
+This approach modifies the existing instance of the nested object rather than creating a new one. For more details and examples, see [Object Initializers with class-typed properties](object-and-collection-initializers.md#object-initializers-with-class-typed-properties).
+
 ## See also
 
 - [Object and Collection Initializers](object-and-collection-initializers.md)

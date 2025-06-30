@@ -19,7 +19,7 @@ With BinaryFormatter's removal, it's expected that many Windows Forms applicatio
 
 ## How BinaryFormatter affects Windows Forms
 
-Prior to .NET 9, Windows Forms used [BinaryFormatter] to serialize and deserialize data for scenarios such clipboard, drag-and-drop, and storing or loading resources at design time. Starting with .NET 9, Windows Forms and WPF use a subset of the [BinaryFormatter] implementation internally for these scenarios. While BinaryFormatter's risks cannot be addressed in general-purpose serialization/deserialization, measures have been taken to mitigate the risks in these very specific use cases with a known set of types. A fall-back to [BinaryFormatter] is still in place for unknown or unsupported types, which will throw exceptions unless migration steps are taken in the application.
+Prior to .NET 9, Windows Forms used [BinaryFormatter] to serialize and deserialize data for scenarios such as clipboard, drag-and-drop, and storing or loading resources at design time. Starting with .NET 9, Windows Forms and WPF use a subset of the [BinaryFormatter] implementation internally for these scenarios. While BinaryFormatter's risks cannot be addressed in general-purpose serialization/deserialization, measures have been taken to mitigate the risks in these very specific use cases with a known set of types. A fall-back to [BinaryFormatter] is still in place for unknown or unsupported types, which will throw exceptions unless migration steps are taken in the application.
 
 Windows Forms and WPF apps both handle the following types, along with arrays and lists of these types. Clipboard, drag-and-drop, and design-time resources will continue to work with these types without any migration steps needed.
 

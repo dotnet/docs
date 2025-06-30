@@ -768,6 +768,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per solution update.
   - package-ecosystem: "nuget"
+    directory: "/docs/ai/advanced/snippets/sample-implementations" #Implementations.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/ai/how-to/snippets/content-filtering" #AIContentFiltering.csproj
     schedule:
       interval: "weekly"
@@ -977,6 +988,17 @@ updates:
         patterns:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
+    directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.AddMessages" #ConsoleAI.AddMessages.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
     directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.CacheResponses" #ConsoleAI.CacheResponses.csproj
     schedule:
       interval: "weekly"
@@ -989,6 +1011,28 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.ConsumeClientMiddleware" #ConsoleAI.ConsumeClientMiddleware.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.ConsumeRateLimitingEmbedding" #ConsoleAI.ConsumeRateLimitingEmbedding.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.CreateEmbeddings" #ConsoleAI.CreateEmbeddings.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -1033,6 +1077,28 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.FunctionalityPipelines" #ConsoleAI.FunctionalityPipelines.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.GetResponseAsyncArgs" #ConsoleAI.GetResponseAsyncArgs.csproj
+    schedule:
+      interval: "weekly"
+      day: "wednesday"
+    open-pull-requests-limit: 5
+    groups:
+      # Group .NET updates together for projects.
+      dotnet:
+        patterns:
+          - "*" # Prefer a single PR per project update.
+  - package-ecosystem: "nuget"
+    directory: "/docs/ai/snippets/microsoft-extensions-ai/ConsoleAI.GetStreamingResponseAsync" #ConsoleAI.GetStreamingResponseAsync.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"
@@ -2122,72 +2188,6 @@ updates:
           - "*" # Prefer a single PR per project update.
   - package-ecosystem: "nuget"
     directory: "/docs/core/resilience/snippets/resilience" #resilience.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/testing/snippets/order-unit-tests/csharp/MSTest.Project" #MSTest.Project.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/testing/snippets/order-unit-tests/csharp/NUnit.TestProject" #NUnit.Project.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/testing/snippets/order-unit-tests/csharp/XUnit.TestProject" #XUnit.Project.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/testing/snippets/testcontext/csharp" #project.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/testing/snippets/unit-testing-using-mstest/csharp/PrimeService.Tests" #PrimeService.Tests.csproj
-    schedule:
-      interval: "weekly"
-      day: "wednesday"
-    open-pull-requests-limit: 5
-    groups:
-      # Group .NET updates together for projects.
-      dotnet:
-        patterns:
-          - "*" # Prefer a single PR per project update.
-  - package-ecosystem: "nuget"
-    directory: "/docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibraryTest" #StringLibraryTest.csproj
     schedule:
       interval: "weekly"
       day: "wednesday"

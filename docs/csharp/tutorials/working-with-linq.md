@@ -47,6 +47,9 @@ using System.Linq;
 
 If these three lines (`using` directives) aren't at the top of the file, your program might not compile.
 
+> [!TIP]
+> For this tutorial, you can organize your code in a namespace called `LinqFaroShuffle` to match the sample code, or you can use the default global namespace. If you choose to use a namespace, make sure all your classes and methods are consistently within the same namespace, or add appropriate `using` statements as needed.
+
 Now that you have all of the references that you'll need, consider what constitutes a deck of cards. Commonly, a deck of playing cards has four suits, and each suit has thirteen values. Normally, you might consider creating a `Card` class right off the bat and populating a collection of `Card` objects by hand. With LINQ, you can be more concise than the usual way of dealing with creating a deck of cards. Instead of creating a `Card` class, you can create two sequences to represent suits and ranks, respectively. You'll create a really simple pair of [*iterator methods*](../iterators.md#enumeration-sources-with-iterator-methods) that will generate the ranks and suits as <xref:System.Collections.Generic.IEnumerable%601>s of strings:
 
 ```csharp
@@ -159,6 +162,9 @@ namespace LinqFaroShuffle
     }
 }
 ```
+
+> [!NOTE]
+> If you're using an editor other than Visual Studio (such as Visual Studio Code), you might need to add `using LinqFaroShuffle;` to the top of your `Program.cs` file for the extension methods to be accessible. Visual Studio automatically adds this using statement, but other editors might not.
 
 Look at the method signature for a moment, specifically the parameters:
 

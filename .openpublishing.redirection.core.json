@@ -66,6 +66,10 @@
             "redirect_url": "/dotnet/core/compatibility/7.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/aspnetcore.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/code-analysis.md",
             "redirect_url": "/dotnet/core/compatibility/code-analysis/5.0/ca1416-platform-compatibility-analyzer"
         },
@@ -110,6 +114,10 @@
             "redirect_url": "/dotnet/core/compatibility/8.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/cryptography.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/deployment/9.0/assembly-load-directory.md",
             "redirect_url": "/dotnet/core/compatibility/9.0"
         },
@@ -120,6 +128,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/framework-core.md",
             "redirect_url": "/dotnet/core/compatibility/fx-core"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/globalization.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/index.md",
@@ -154,6 +166,10 @@
             "source_path_from_root": "/docs/core/compatibility/msbuild/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed.md",
             "redirect_url": "/dotnet/core/compatibility/sdk/6.0/gettargetframeworkproperties-and-getnearesttargetframework-removed",
             "redirect_document_id": true
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/networking.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/networking/7.0/connectasync-argumentexception.md",
@@ -345,6 +361,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/windows-forms/8.0/anchor-layout.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/wpf.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path_from_root": "/docs/core/deploying/applications.md",

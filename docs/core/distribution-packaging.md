@@ -109,8 +109,8 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (18) **Microsoft.NETCore.App.Runtime.\<rid>/\<runtime version>,Microsoft.AspNetCore.App.Runtime.\<rid>/\<aspnetcore version>** These files enable building self-contained applications. These directories contain symbolic links to files in (2), (5) and (6).
 
-- (19) **runtime.\<rid>.Microsoft.DotNet.ILCompiler/\<runtime version>** These files enable building NativeAOT applications on the target platform.
-- (20) **Microsoft.NETCore.App.Runtime.NativeAOT.\<rid>/\<runtime version>** These files enable building NativeAOT applications for the target platform.
+- (19) **runtime.\<rid>.Microsoft.DotNet.ILCompiler/\<runtime version>** These files enable building NativeAOT applications on the target platform. In .NET 9, enables building NativeAOT applications for the target platform as well. May be present in .NET 9 and newer.
+- (20) **Microsoft.NETCore.App.Runtime.NativeAOT.\<rid>/\<runtime version>** These files enable building NativeAOT applications for the target platform. May be present in .NET 10 and newer.
 
 - (21) **library-packs** contains NuGet package files. The SDK is configured to use this folder as a NuGet source. The list of NuGet packages provided by a .NET build is described below.
 

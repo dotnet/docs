@@ -1156,6 +1156,18 @@ items:
         href: 3.0.md
       - name: .NET Core 2.1
         href: 2.1.md
+  - name: WCF Client breaking changes
+    items:
+    - name: "Version 8.0"
+      items:
+      - name: Removal of APIs with `configurationName` parameter
+        href: wcf-client/8.0/configurationname-apis.md
+    - name: "Version 6.0"
+      items:
+      - name: Duplex contract captures synchronization context
+        href: wcf-client/6.0/duplex-synchronization-context.md
+      - name: No .NET Standard support
+        href: wcf-client/6.0/net-standard-2-support.md
   - name: Resources
     expanded: true
     items:

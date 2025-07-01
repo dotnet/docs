@@ -97,4 +97,3 @@ If `EmbeddedResourceUseDependentUponConvention` is set to `false` in the project
 
 - [How Manifest Resource Naming Works](https://gist.github.com/BenVillalobos/041673b9a73bec60fdc3bf0f86fae62a)
 - [MSBuild properties for .NET SDK projects](../project-sdk/msbuild-props.md)
-- [MSBuild breaking changes](../compatibility/msbuild.md)

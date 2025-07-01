@@ -133,6 +133,11 @@ The compiler verifies the syntax of the elements followed by a single \* in the 
   - [`<c>`](#c)
   - [`<code>`](#code)
   - [`<example>`](#example) \*\*
+  - [`<b>`](#b)
+  - [`<i>`](#i)
+  - [`<u>`](#u)
+  - [`<br/>`](#br)
+  - [`<a>`](#a)
 - [Reuse documentation text](#reuse-documentation-text) - These tags provide tools that make it easier to reuse XML comments.
   - [`<inheritdoc>`](#inheritdoc) \*\*
   - [`<include>`](#include) \*
@@ -302,6 +307,49 @@ This shows how to increment an integer.
 ```
 
 The `<example>` tag lets you specify an example of how to use a method or other library member. An example commonly involves using the [\<code>](#code) tag.
+
+### \<b>
+
+```xml
+<b>text</b>
+```
+
+The `<b>` tag is used to make text bold within documentation comments. This HTML formatting tag is validated by the compiler and Visual Studio, and the formatted text appears in IntelliSense and generated documentation.
+
+### \<i>
+
+```xml
+<i>text</i>
+```
+
+The `<i>` tag is used to make text italic within documentation comments. This HTML formatting tag is validated by the compiler and Visual Studio, and the formatted text appears in IntelliSense and generated documentation.
+
+### \<u>
+
+```xml
+<u>text</u>
+```
+
+The `<u>` tag is used to underline text within documentation comments. This HTML formatting tag is validated by the compiler and Visual Studio, and the formatted text appears in IntelliSense and generated documentation.
+
+### \<br/>
+
+```xml
+Line one<br/>Line two
+```
+
+The `<br/>` tag is used to insert a line break within documentation comments. Use this tag when you want a single spaced paragraph, as opposed to the `<para>` tag which creates double spaced paragraphs.
+
+### \<a>
+
+```xml
+<a href="https://example.com">Link text</a>
+```
+
+The `<a>` tag is used to create hyperlinks within documentation comments. The `href` attribute specifies the URL to link to. This HTML formatting tag is validated by the compiler and Visual Studio.
+
+> [!NOTE]
+> The compiler also validates the `<tt>` tag, which is deprecated HTML. Use the [`<c>`](#c) tag instead for inline code formatting.
 
 ## Reuse documentation text
 

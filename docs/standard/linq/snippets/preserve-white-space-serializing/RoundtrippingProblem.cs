@@ -6,6 +6,21 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("XML Roundtripping Examples");
+        Console.WriteLine("==========================");
+        
+        Console.WriteLine("\n1. Roundtripping Problem:");
+        RoundtrippingProblem.Example();
+        
+        Console.WriteLine("\n2. Roundtripping Solution:");
+        RoundtrippingSolution.Example();
+    }
+}
+
+public static class RoundtrippingProblem
+{
+    public static void Example()
+    {
         string xmlWithCR = """
             <x xml:space="preserve">a&#xD;
             b

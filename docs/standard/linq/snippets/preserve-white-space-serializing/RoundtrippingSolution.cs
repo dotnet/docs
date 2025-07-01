@@ -3,9 +3,9 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 
-class Program
+public static class RoundtrippingSolution
 {
-    static void Main()
+    public static void Example()
     {
         string xmlWithCR = """
             <x xml:space="preserve">a&#xD;

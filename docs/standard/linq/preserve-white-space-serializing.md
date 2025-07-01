@@ -40,7 +40,7 @@ c&#xD;</x>
 
 When you parse this XML with `XDocument.Parse()`, the root element's value becomes `"a\r\nb\nc\r"`. However, if you reserialize it using LINQ to XML methods, the carriage returns are not entitized:
 
-:::code language="csharp" source="snippets/preserve-white-space-serializing/RoundtrippingProblem.cs":::
+:::code language="csharp" source="snippets/preserve-white-space-serializing/RoundtrippingProblem.cs" Id="XmlRoundTrip":::
 
 The values are different: the original was `"a\r\nb\nc\r"` but after roundtripping it becomes `"a\nb\nc\n"`.
 
@@ -48,7 +48,7 @@ The values are different: the original was `"a\r\nb\nc\r"` but after roundtrippi
 
 To achieve true XML roundtripping that preserves carriage return entities, use <xref:System.Xml.XmlWriter> with <xref:System.Xml.XmlWriterSettings.NewLineHandling> set to <xref:System.Xml.NewLineHandling.Entitize>:
 
-:::code language="csharp" source="snippets/preserve-white-space-serializing/RoundtrippingSolution.cs":::
+:::code language="csharp" source="snippets/preserve-white-space-serializing/RoundtrippingSolution.cs" Id="XmlRoundTripFix":::
 
 When you need to preserve carriage return entities for XML roundtripping, use <xref:System.Xml.XmlWriter> with the appropriate <xref:System.Xml.XmlWriterSettings> instead of LINQ to XML's built-in serialization methods.
 

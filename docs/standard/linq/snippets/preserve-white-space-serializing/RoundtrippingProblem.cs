@@ -21,6 +21,7 @@ public static class RoundtrippingProblem
 {
     public static void Example()
     {
+        // <XmlRoundTrip>
         string xmlWithCR = """
             <x xml:space="preserve">a&#xD;
             b
@@ -40,5 +41,6 @@ public static class RoundtrippingProblem
         XDocument reparsed = XDocument.Parse(reserialized);
         Console.WriteLine($"Reparsed value: {string.Join("", reparsed.Root!.Value.Select(c => c == '\r' ? "\\r" : c == '\n' ? "\\n" : c.ToString()))}");
         // Output: a\nb\nc\n
+        // </XmlRoundTrip>
     }
 }

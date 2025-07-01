@@ -7,6 +7,7 @@ public static class RoundtrippingSolution
 {
     public static void Example()
     {
+        // <XmlRoundTripFix>
         string xmlWithCR = """
             <x xml:space="preserve">a&#xD;
             b
@@ -39,6 +40,7 @@ public static class RoundtrippingSolution
         XDocument roundtrippedDoc = XDocument.Parse(roundtrippedXml);
         bool valuesMatch = doc.Root!.Value == roundtrippedDoc.Root!.Value;
         Console.WriteLine($"Values match after roundtripping: {valuesMatch}");
+        // </XmlRoundTripFix>
         // Output: True
     }
 }

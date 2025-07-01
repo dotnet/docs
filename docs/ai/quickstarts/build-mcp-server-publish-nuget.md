@@ -102,7 +102,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
     Your random number is 9.
     ```
 
-## Pack and Publish to NuGet
+## Pack and publish to NuGet
 
 1. Update the `<PackageId>` in the `.csproj` file to be unique on NuGet.org.
 

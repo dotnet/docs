@@ -51,43 +51,41 @@ class Program
 
 This example demonstrates how delegates can be used with methods that have parameters whose types are base types of the delegate signature parameter type. With contravariance, you can use one event handler instead of separate handlers. The following example makes use of two delegates:
 
-- A <xref:System.Windows.Forms.KeyEventHandler> delegate that defines the signature of the [Button.KeyDown](xref:System.Windows.Forms.Control.KeyDown) event. Its signature is:
+- A `KeyEventHandler` delegate that defines the signature of a key event. Its signature is:
 
    ```csharp
    public delegate void KeyEventHandler(object sender, KeyEventArgs e)
    ```
 
-- A <xref:System.Windows.Forms.MouseEventHandler> delegate that defines the signature of the [Button.MouseClick](xref:System.Windows.Forms.Control.MouseDown) event. Its signature is:
+- A `MouseEventHandler` delegate that defines the signature of a mouse event. Its signature is:
 
    ```csharp
    public delegate void MouseEventHandler(object sender, MouseEventArgs e)
    ```
 
-The example defines an event handler with an <xref:System.EventArgs> parameter and uses it to handle both the `Button.KeyDown` and `Button.MouseClick` events. It can do this because <xref:System.EventArgs> is a base type of both <xref:System.Windows.Forms.KeyEventArgs>  and <xref:System.Windows.Forms.MouseEventArgs>.
+The example defines an event handler with an <xref:System.EventArgs> parameter and uses it to handle both key and mouse events. This works because <xref:System.EventArgs> is a base type of both `KeyEventArgs` and `MouseEventArgs`. Contravariance allows a method that accepts a base type parameter to be used for events that provide derived type parameters.
+
+### How contravariance works in this example
+
+When you subscribe to an event, the compiler checks if your event handler method is compatible with the event's delegate signature. With contravariance:
+
+1. The `KeyDown` event expects a method that takes `KeyEventArgs`
+1. The `MouseClick` event expects a method that takes `MouseEventArgs`  
+1. Your `MultiHandler` method takes the base type `EventArgs`
+1. Since `KeyEventArgs` and `MouseEventArgs` both inherit from `EventArgs`, they can be safely passed to a method expecting `EventArgs`
+1. The compiler allows this assignment because it's safe - the `MultiHandler` can work with any `EventArgs` instance
+
+This is contravariance in action: you can use a method with a "less specific" (base type) parameter where a "more specific" (derived type) parameter is expected.
   
 ### Code  
-  
-```csharp  
-// Event handler that accepts a parameter of the EventArgs type.  
-private void MultiHandler(object sender, System.EventArgs e)  
-{  
-    label1.Text = System.DateTime.Now.ToString();  
-}  
-  
-public Form1()  
-{  
-    InitializeComponent();  
-  
-    // You can use a method that has an EventArgs parameter,  
-    // although the event expects the KeyEventArgs parameter.  
-    this.button1.KeyDown += this.MultiHandler;  
-  
-    // You can use the same method
-    // for an event that expects the MouseEventArgs parameter.  
-    this.button1.MouseClick += this.MultiHandler;  
-  
-}  
-```  
+
+[!code-csharp[Contravariance example](snippets/using-variance-in-delegates/ContravarianceExample.cs#snippet1)]
+
+### Key points about contravariance
+
+[!code-csharp[Contravariance explanation](snippets/using-variance-in-delegates/ContravarianceExample.cs#snippet2)]
+
+When you run this example, you'll see that the same `MultiHandler` method successfully handles both key and mouse events, demonstrating how contravariance enables more flexible and reusable event handling code.  
   
 ## See also
 

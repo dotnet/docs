@@ -164,7 +164,7 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 1. Browse for your MCP Server package on [NuGet.org](https://www.nuget.org/packages?q=&includeComputedFrameworks=true&packagetype=mcpserver&prerel=true&sortby=relevance).
 
-2. View the MCP Server details and copy the json.
+2. View the MCP Server details and copy the JSON.
 
 3. In your `mcp.json` file in the `.vscode` folder, add the following:
 

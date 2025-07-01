@@ -117,17 +117,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
           "registry_name": "nuget",
           "name": "<your package ID here>",
           "version": "0.1.0-beta",
-          "package_arguments": [
-            {
-              "description": "Start the MCP server tool in server mode",
-              "is_required": true,
-              "format": "string",
-              "value": "start-mcp",
-              "default": "start-mcp",
-              "type": "positional",
-              "value_hint": "start-mcp"
-            }
-          ],
+          "package_arguments": [],
           "environment_variables": [
             {
               "description": "The maximum number to return from the random number generator",

@@ -8,7 +8,7 @@ author: jondouglas
 ms.author: jondouglas
 ---
 
-# Create, connect and publish a minimal MCP server using .NET to NuGet
+# Create, connect, and publish a minimal MCP server to NuGet
 
 In this quickstart, you create a minimal Model Context Protocol (MCP) server using the [C# SDK for MCP](https://github.com/modelcontextprotocol/csharp-sdk), connect to it using GitHub Copilot, and publish it to NuGet. MCP servers are services that expose capabilities to clients through the Model Context Protocol (MCP).
 

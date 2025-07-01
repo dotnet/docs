@@ -210,11 +210,11 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 ## Related content
 
-[Build a minimal MCP server](build-mcp-server.md)
-[Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)
-[Use agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
-[Use agent mode in Visual Studio](/visualstudio/ide/copilot-agent-mode)
-[Model Context Protocol .NET Samples](https://github.com/microsoft/mcp-dotnet-samples)
-[What's New in .NET 10](../../core/whats-new/dotnet-10/overview.md)
-[Find and evaluate NuGet packages for your project](/nuget/consume-packages/finding-and-choosing-packages)
-[Publish a package](/nuget/nuget-org/publish-a-package)
+- [Build a minimal MCP server](build-mcp-server.md)
+- [Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)
+- [Use agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+- [Use agent mode in Visual Studio](/visualstudio/ide/copilot-agent-mode)
+- [Model Context Protocol .NET Samples](https://github.com/microsoft/mcp-dotnet-samples)
+- [What's New in .NET 10](../../core/whats-new/dotnet-10/overview.md)
+- [Find and evaluate NuGet packages for your project](/nuget/consume-packages/finding-and-choosing-packages)
+- [Publish a package](/nuget/nuget-org/publish-a-package)

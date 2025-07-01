@@ -273,34 +273,34 @@ Because the `string.IndexOf(string)` method uses a linguistic search by default,
 
 The following table lists the default search and comparison types for various string and string-like APIs. If the caller provides an explicit `CultureInfo` or `StringComparison` parameter, that parameter will be honored over any default.
 
-| API | Default behavior | Remarks |
-|---|---|---|
-| `string.Compare` | CurrentCulture | |
-| `string.CompareTo` | CurrentCulture | |
-| `string.Contains` | Ordinal | |
-| `string.EndsWith` | Ordinal | (when the first parameter is a `char`) |
-| `string.EndsWith` | CurrentCulture | (when the first parameter is a `string`) |
-| `string.Equals` | Ordinal | |
-| `string.GetHashCode` | Ordinal | |
-| `string.IndexOf` | Ordinal | (when the first parameter is a `char`) |
-| `string.IndexOf` | CurrentCulture | (when the first parameter is a `string`) |
-| `string.IndexOfAny` | Ordinal | |
-| `string.LastIndexOf` | Ordinal | (when the first parameter is a `char`) |
-| `string.LastIndexOf` | CurrentCulture | (when the first parameter is a `string`) |
-| `string.LastIndexOfAny` | Ordinal | |
-| `string.Replace` | Ordinal | |
-| `string.Split` | Ordinal | |
-| `string.StartsWith` | Ordinal | (when the first parameter is a `char`) |
-| `string.StartsWith` | CurrentCulture | (when the first parameter is a `string`) |
-| `string.ToLower` | CurrentCulture | |
-| `string.ToLowerInvariant` | InvariantCulture | |
-| `string.ToUpper` | CurrentCulture | |
-| `string.ToUpperInvariant` | InvariantCulture | |
-| `string.Trim` | Ordinal | |
-| `string.TrimEnd` | Ordinal | |
-| `string.TrimStart` | Ordinal | |
-| `string == string` | Ordinal | |
-| `string != string` | Ordinal | |
+| API                       | Default behavior | Remarks                                  |
+|---------------------------|------------------|------------------------------------------|
+| `string.Compare`          | CurrentCulture   |                                          |
+| `string.CompareTo`        | CurrentCulture   |                                          |
+| `string.Contains`         | Ordinal          |                                          |
+| `string.EndsWith`         | Ordinal          | (when the first parameter is a `char`)   |
+| `string.EndsWith`         | CurrentCulture   | (when the first parameter is a `string`) |
+| `string.Equals`           | Ordinal          |                                          |
+| `string.GetHashCode`      | Ordinal          |                                          |
+| `string.IndexOf`          | Ordinal          | (when the first parameter is a `char`)   |
+| `string.IndexOf`          | CurrentCulture   | (when the first parameter is a `string`) |
+| `string.IndexOfAny`       | Ordinal          |                                          |
+| `string.LastIndexOf`      | Ordinal          | (when the first parameter is a `char`)   |
+| `string.LastIndexOf`      | CurrentCulture   | (when the first parameter is a `string`) |
+| `string.LastIndexOfAny`   | Ordinal          |                                          |
+| `string.Replace`          | Ordinal          |                                          |
+| `string.Split`            | Ordinal          |                                          |
+| `string.StartsWith`       | Ordinal          | (when the first parameter is a `char`)   |
+| `string.StartsWith`       | CurrentCulture   | (when the first parameter is a `string`) |
+| `string.ToLower`          | CurrentCulture   |                                          |
+| `string.ToLowerInvariant` | InvariantCulture |                                          |
+| `string.ToUpper`          | CurrentCulture   |                                          |
+| `string.ToUpperInvariant` | InvariantCulture |                                          |
+| `string.Trim`             | Ordinal          |                                          |
+| `string.TrimEnd`          | Ordinal          |                                          |
+| `string.TrimStart`        | Ordinal          |                                          |
+| `string == string`        | Ordinal          |                                          |
+| `string != string`        | Ordinal          |                                          |
 
 Unlike `string` APIs, all `MemoryExtensions` APIs perform *Ordinal* searches and comparisons by default, with the following exceptions.
 
@@ -333,7 +333,7 @@ if (span.StartsWith("Hello", StringComparison.Ordinal)) { /* do something */ } /
 
 ## See also
 
-- [Globalization breaking changes](../../core/compatibility/globalization.md)
+- [Globalization breaking changes in .NET 5](../../core/compatibility/5.0.md#globalization)
 - [Best practices for comparing strings in .NET](best-practices-strings.md)
 - [How to compare strings in C#](../../csharp/how-to/compare-strings.md)
 - [.NET globalization and ICU](../../core/extensions/globalization-icu.md)

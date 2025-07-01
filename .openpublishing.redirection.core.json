@@ -114,6 +114,10 @@
             "redirect_url": "/dotnet/core/compatibility/8.0"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/corefx.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/cryptography.md",
             "redirect_url": "/dotnet/core/compatibility/3.0"
         },
@@ -141,6 +145,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/interop.md",
             "redirect_url": "/dotnet/core/compatibility/interop/5.0/built-in-support-for-winrt-removed"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/msbuild.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/msbuild/5.0/directory-packages-props-imported-by-default.md",
@@ -349,6 +357,10 @@
             "redirect_url": "/dotnet/fundamentals/syslib-diagnostics/syslib0012"
         },
         {
+            "source_path_from_root": "/docs/core/compatibility/visualbasic.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
+        },
+        {
             "source_path_from_root": "/docs/core/compatibility/windows-forms/5.0/automatically-infer-winexe-output-type.md",
             "redirect_url": "/dotnet/core/compatibility/sdk/5.0/automatically-infer-winexe-output-type",
             "redirect_document_id": true
@@ -361,6 +373,10 @@
         {
             "source_path_from_root": "/docs/core/compatibility/windows-forms/8.0/anchor-layout.md",
             "redirect_url": "/dotnet/core/compatibility/8.0"
+        },
+        {
+            "source_path_from_root": "/docs/core/compatibility/winforms.md",
+            "redirect_url": "/dotnet/core/compatibility/3.0"
         },
         {
             "source_path_from_root": "/docs/core/compatibility/wpf.md",

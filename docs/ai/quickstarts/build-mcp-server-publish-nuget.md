@@ -158,7 +158,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
     dotnet nuget push <path-to-nupkg-file> --source nuget.org --api-key <your-api-key>
     ```
 
-See [Publish a package](https://learn.microsoft.com/nuget/nuget-org/publish-a-package) for more information.
+For more information, see [Publish a package](/nuget/nuget-org/publish-a-package).
 
 ## Discover MCP servers on NuGet.org
 

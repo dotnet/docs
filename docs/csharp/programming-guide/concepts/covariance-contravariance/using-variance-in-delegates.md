@@ -51,29 +51,29 @@ class Program
 
 This example demonstrates how delegates can be used with methods that have parameters whose types are base types of the delegate signature parameter type. With contravariance, you can use one event handler instead of separate handlers. The following example makes use of two delegates:
 
-- A `KeyEventHandler` delegate that defines the signature of a key event. Its signature is:
+- A custom `KeyEventHandler` delegate that defines the signature of a key event. Its signature is:
 
    ```csharp
    public delegate void KeyEventHandler(object sender, KeyEventArgs e)
    ```
 
-- A `MouseEventHandler` delegate that defines the signature of a mouse event. Its signature is:
+- A custom `MouseEventHandler` delegate that defines the signature of a mouse event. Its signature is:
 
    ```csharp
    public delegate void MouseEventHandler(object sender, MouseEventArgs e)
    ```
 
-The example defines an event handler with an <xref:System.EventArgs> parameter and uses it to handle both key and mouse events. This works because <xref:System.EventArgs> is a base type of both `KeyEventArgs` and `MouseEventArgs`. Contravariance allows a method that accepts a base type parameter to be used for events that provide derived type parameters.
+The example defines an event handler with an <xref:System.EventArgs> parameter and uses it to handle both key and mouse events. This works because <xref:System.EventArgs> is a base type of both the custom `KeyEventArgs` and `MouseEventArgs` classes defined in the example. Contravariance allows a method that accepts a base type parameter to be used for events that provide derived type parameters.
 
 ### How contravariance works in this example
 
 When you subscribe to an event, the compiler checks if your event handler method is compatible with the event's delegate signature. With contravariance:
 
-1. The `KeyDown` event expects a method that takes `KeyEventArgs`
-1. The `MouseClick` event expects a method that takes `MouseEventArgs`  
-1. Your `MultiHandler` method takes the base type `EventArgs`
-1. Since `KeyEventArgs` and `MouseEventArgs` both inherit from `EventArgs`, they can be safely passed to a method expecting `EventArgs`
-1. The compiler allows this assignment because it's safe - the `MultiHandler` can work with any `EventArgs` instance
+1. The `KeyDown` event expects a method that takes `KeyEventArgs`.
+1. The `MouseClick` event expects a method that takes `MouseEventArgs`.  
+1. Your `MultiHandler` method takes the base type `EventArgs`.
+1. Since `KeyEventArgs` and `MouseEventArgs` both inherit from `EventArgs`, they can be safely passed to a method expecting `EventArgs`.
+1. The compiler allows this assignment because it's safe - the `MultiHandler` can work with any `EventArgs` instance.
 
 This is contravariance in action: you can use a method with a "less specific" (base type) parameter where a "more specific" (derived type) parameter is expected.
   

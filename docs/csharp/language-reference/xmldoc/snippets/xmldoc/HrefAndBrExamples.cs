@@ -10,8 +10,8 @@ namespace XmlDocumentationExamples
         //<UrlLinkingExample>
         /// <summary>
         /// This method demonstrates URL linking:
-        /// <see cref="https://docs.microsoft.com/dotnet/csharp"/> (won't create clickable link)
-        /// <see href="https://docs.microsoft.com/dotnet/csharp">C# documentation</see> (creates clickable link)
+        /// <see cref="https://learn.microsoft.com/dotnet/csharp"/> (won't create clickable link)
+        /// <see href="https://learn.microsoft.com/dotnet/csharp">C# documentation</see> (creates clickable link)
         /// </summary>
         public void UrlLinkingExample()
         {

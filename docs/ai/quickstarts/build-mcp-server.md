@@ -111,7 +111,7 @@ In this example, enhance the MCP server to use a configuration value set in an e
    ```csharp
    [McpServerTool(Name = "get_city_weather")]
    [Description("Describes random weather in the provided city.")]
-   public string GetRandomWeather(
+   public string GetCityWeather(
        [Description("Name of the city to return weather for")] string city)
    {
        // Read the environment variable during tool execution.

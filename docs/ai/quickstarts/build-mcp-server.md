@@ -13,7 +13,7 @@ ms.author: alexwolf
 In this quickstart, you create a minimal Model Context Protocol (MCP) server using the [C# SDK for MCP](https://github.com/modelcontextprotocol/csharp-sdk), connect to it using GitHub Copilot, and publish it to NuGet. MCP servers are services that expose capabilities to clients through the Model Context Protocol (MCP).
 
 > [!NOTE]
-> This experience is currently in preview. The reference template uses the [ModelContextProtocol](https://www.nuget.org/packages/ModelContextProtocol/) library and the [MCP registry `server.json` schema](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md), which are both in preview.
+> This experience is currently in preview. The referenced template uses the [ModelContextProtocol](https://www.nuget.org/packages/ModelContextProtocol/) library and the [MCP registry `server.json` schema](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md), which are both in preview.
 
 ## Prerequisites
 
@@ -24,10 +24,10 @@ In this quickstart, you create a minimal Model Context Protocol (MCP) server usi
 
 ## Create the project
 
-1. In a terminal window, install the `dotnet new mcpserver` template:
+1. In a terminal window, install the MCP Server template:
 
    ```bash
-   dotnet new install Microsoft.Extensions.AI.Templates::9.6.0-preview.2.25310.2
+   dotnet new install Microsoft.Extensions.AI.Templates::9.6.0-TBD
    ```
 
 1. Create a new MCP server app with the `dotnet new mcpserver` command:
@@ -78,7 +78,7 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 
 ## Test the MCP server
 
-1. Open GitHub Copilot in Visual Studio Code and switch to agent mode.
+1. Open GitHub Copilot in Visual Studio Code and switch to chat mode.
 
 1. Select the **Select tools** icon to verify your **SampleMcpServer** is available with both tools listed.
 
@@ -99,14 +99,14 @@ Configure GitHub Copilot for Visual Studio Code to use your custom MCP server:
 1. Verify that the server responds with a random number:
 
     ```output
-    Your random number is 23.
+    Your random number is 42.
     ```
 
 ## Adding inputs and configuration options (optional)
 
-In this example, enhance the MCP server to use a value set in an environment variable. This could be a configuration needed for the functioning of your MCP server such as an API key, an endpoint to connect to, or local directory path depending on the purpose of your MCP server.
+In this example, enhance the MCP server to use a configuration value set in an environment variable. This could be configuration needed for the functioning of your MCP server such as an API key, an endpoint to connect to, or a local directory path depending on the purpose of your MCP server.
 
-1. Update the tool code to use an environment variable. Update the `GetRandomNumber` method in `Tools/RandomNumberTools.cs` to the following:
+1. Update the tool code to use an environment variable. Replace the `GetRandomNumber` method in `Tools/RandomNumberTools.cs` to the following:
 
    ```csharp
    [McpServerTool(Name = "get_random_number")]
@@ -153,9 +153,11 @@ In this example, enhance the MCP server to use a value set in an environment var
     Give me a random number greater than 500.
     ```
 
-1. Update the `.mcp/server.json` to declare your environment variable input for MCP clients. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md) and is used by NuGet.org to generate VS Code MCP configuration.
+    VS Code should return a random number between 500 and 1000.
 
-   Use `environment_variables` to declare environment variables used by your app and that will be set by the tool (for example, VS Code) using the MCP server. Use `package_arguments` to define CLI arguments that will be passed to your app. See the MCP Registry project for [more examples](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
+1. Update the `.mcp/server.json` to declare your environment variable input. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md) and is used by NuGet.org to generate VS Code MCP configuration.
+
+   Use the `environment_variables` property to declare environment variables used by your app and that will be set by the tool (for example, VS Code) using the MCP server. You can use `package_arguments` to define CLI arguments that will be passed to your app. See the MCP Registry project for [more examples](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
 
    ```json
    {
@@ -241,6 +243,8 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
    }
    ```
 
+   This will use the package from NuGet.org instead of your local build.
+
 1. Save the file.
 
 1. In GitHub Copilot, select the **Select tools** icon to verify your **SampleMcpServer** is available with the tools listed.
@@ -263,17 +267,17 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 ### The command "dnx" needed to run SampleMcpServer was not found.
 
+If VS Code shows this error when starting the MCP server, then you need to install a compatible version of the .NET SDK.
+
 :::image type="content" source="../media/mcp/missing-dnx.png" alt-text="A screenshot showing the missing dnx command in VS Code.":::
 
 The `dnx` command is shipped as part of the .NET SDK, starting with version 10 preview 6. [Install the .NET 10 SDK](https://dotnet.microsoft.com/download/dotnet) to resolve this issue.
 
 ## Related content
 
-- [Build a minimal MCP client](build-mcp-client.md)
 - [Get started with .NET AI and the Model Context Protocol](../get-started-mcp.md)
-- [Use agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
-- [Use agent mode in Visual Studio](/visualstudio/ide/copilot-agent-mode)
 - [Model Context Protocol .NET Samples](https://github.com/microsoft/mcp-dotnet-samples)
-- [What's new in .NET 10](../../core/whats-new/dotnet-10/overview.md)
-- [Find and evaluate NuGet packages for your project](/nuget/consume-packages/finding-and-choosing-packages)
+- [Build a minimal MCP client](build-mcp-client.md)
 - [Publish a package](/nuget/nuget-org/publish-a-package)
+- [Find and evaluate NuGet packages for your project](/nuget/consume-packages/finding-and-choosing-packages)
+- [What's new in .NET 10](../../core/whats-new/dotnet-10/overview.md)

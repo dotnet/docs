@@ -156,7 +156,7 @@ In this example, enhance the MCP server to use a value set in an environment var
 1. Update the `.mcp/server.json` to declare your environment variable input for MCP clients. The `server.json` file schema is defined by the [MCP Registry project](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/README.md) and is used by NuGet.org to generate VS Code MCP configuration.
 
    Use `environment_variables` to declare environment variables used by your app and that will be set by the tool (for example, VS Code) using the MCP server. Use `package_arguments` to define CLI arguments that will be passed to your app. See the MCP Registry project for [more examples](https://github.com/modelcontextprotocol/registry/blob/main/docs/server-json/examples.md).
-   
+
    ```json
    {
      "description": "<your description here>",
@@ -263,9 +263,9 @@ For more information, see [Publish a package](/nuget/nuget-org/publish-a-package
 
 ### The command "dnx" needed to run SampleMcpServer was not found.
 
-    :::image type="content" source="../media/mcp/missing-dnx.png" alt-text="A screenshot showing the missing dnx command.":::
+:::image type="content" source="../media/mcp/missing-dnx.png" alt-text="A screenshot showing the missing dnx command in VS Code.":::
 
-The `dnx` command is shipped as part of the .NET SDK, starting with version 10 preview 6. [Install the .NET 10 SDK](https://dotnet.microsoft.com/download/dotnet) to resolve this issue. 
+The `dnx` command is shipped as part of the .NET SDK, starting with version 10 preview 6. [Install the .NET 10 SDK](https://dotnet.microsoft.com/download/dotnet) to resolve this issue.
 
 ## Related content
 

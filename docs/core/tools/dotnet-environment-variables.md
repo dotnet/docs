@@ -202,7 +202,10 @@ Specifies the location of the .NET runtimes, if they are not installed in the de
 These environment variables are used only when running apps via generated executables (apphosts). The order in which the environment variables are considered is:
 
 1. `DOTNET_ROOT_<ARCH>`, where `<ARCH>` is the architecture of the running executable (apphost).
-    - For example, if running 64-bit executable on ARM64 OS or 64-bit OS, `DOTNET_ROOT_X64` is used. 
+    - For example: 
+        -  `DOTNET_ROOT_ARM64` is used for an arm64 process
+        -  `DOTNET_ROOT_X64`  is used for an x64 process. This may be running on x64 or arm64 architecture.
+        - `DOTNET_ROOT_X86`  is used for an x86 process. This may be running on x86 or x64 architecture.
 2. If running 32-bit executable on 64-bit OS, `DOTNET_ROOT(x86)` is considered.
 3. `DOTNET_ROOT` is used as a fallback.
 
